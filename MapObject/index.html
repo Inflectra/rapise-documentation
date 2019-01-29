@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://www.inflectra.com/Rapise/MapObject/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Map Object - Rapise Visual Language</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Rapise Visual Language</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Overview/">About</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Columns/">Columns</a>
+</li>
+                                    
+<li >
+    <a href="../Comments/">Comments</a>
+</li>
+                                    
+<li >
+    <a href="../Conditions/">Conditions</a>
+</li>
+                                    
+<li >
+    <a href="../Actions/">Actions</a>
+</li>
+                                    
+<li >
+    <a href="../Variables/">Variables</a>
+</li>
+                                    
+<li >
+    <a href="../Assertions/">Assertions</a>
+</li>
+                                    
+<li >
+    <a href="../IfElse/">If-Else</a>
+</li>
+                                    
+<li >
+    <a href="../Params/">Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../Maps/">Maps</a>
+</li>
+                                    
+<li >
+    <a href="../Loops/">Loops</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../RVLObject/">RVL Object</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Map Object</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../RVLObject/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.inflectra.com">Rapise</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#actions">Actions</a></li>
+            <li><a href="#domovetorow">DoMoveToRow</a></li>
+            <li><a href="#dosequential">DoSequential</a></li>
+            <li><a href="#domovetocolumn">DoMoveToColumn</a></li>
+            <li><a href="#domovetofirstcolumn">DoMoveToFirstColumn</a></li>
+            <li><a href="#domovetofirstrow">DoMoveToFirstRow</a></li>
+            <li><a href="#domovetolastcolumn">DoMoveToLastColumn</a></li>
+            <li><a href="#domovetolastrow">DoMoveToLastRow</a></li>
+        <li class="main "><a href="#properties">Properties</a></li>
+            <li><a href="#cell">Cell</a></li>
+            <li><a href="#columncell">ColumnCell</a></li>
+            <li><a href="#columncount">ColumnCount</a></li>
+            <li><a href="#columnindexbyname">ColumnIndexByName</a></li>
+            <li><a href="#columnname">ColumnName</a></li>
+            <li><a href="#rowcount">RowCount</a></li>
+            <li><a href="#rowindexbyname">RowIndexByName</a></li>
+            <li><a href="#currentrowindex">CurrentRowIndex</a></li>
+            <li><a href="#eof">EOF</a></li>
+            <li><a href="#rowcell">RowCell</a></li>
+            <li><a href="#rowname">RowName</a></li>
+            <li><a href="#value">Value</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Map Object</p>
+<p>Represents an RVL Map object and all its operations. The same operations are used by the RVL runtime implicitly to read the cell value or iterate through the Map.</p>
+<h2 id="actions">Actions</h2>
+<h3 id="domovetorow">DoMoveToRow</h3>
+<p><strong><code>DoMoveToRow(/**Number*/ colInd)</code> </strong></p>
+<p>Moves to a given row.</p>
+<p><code>rowInd</code> Row index (or name) to set active.</p>
+<h3 id="dosequential">DoSequential</h3>
+<p><strong><code>DoSequential()</code> </strong></p>
+<p>Advances to the next row in the range. The range is either set by SetRange or it is the default range that includes all rows on the sheet except first row which is considered to contain column names. When the end of the range is reached, DoSequential rewinds back to the first row in the range and returns 'false'.</p>
+<p>Returns 'false' if being called when active row is the last row or the spreadsheet is not attached, 'true' - otherwise.</p>
+<h3 id="domovetocolumn">DoMoveToColumn</h3>
+<p><strong><code>DoMoveToColumn(/**Number|String*/colInd)</code> </strong></p>
+<p>Moves to a given column.</p>
+<p><code>colInd</code> Column index (or name) to set active.</p>
+<h3 id="domovetofirstcolumn">DoMoveToFirstColumn</h3>
+<p><strong><code>DoMoveToFirstColumn()</code> </strong></p>
+<p>Moves to a first column in the map.</p>
+<h3 id="domovetofirstrow">DoMoveToFirstRow</h3>
+<p><strong><code>DoMoveToFirstRow()</code> </strong></p>
+<p>Moves to a first row in the map.</p>
+<h3 id="domovetolastcolumn">DoMoveToLastColumn</h3>
+<p><strong><code>DoMoveToLastColumn()</code> </strong></p>
+<p>Moves to a last column in the map.</p>
+<h3 id="domovetolastrow">DoMoveToLastRow</h3>
+<p><strong><code>DoMoveToLastRow()</code> </strong></p>
+<p>Moves to a last row in the map.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="cell">Cell</h3>
+<p><strong> <code>GetCell(/**Number|String*/ columnId, /**Number*/ rowId)</code> </strong></p>
+<p>Gets a cell value by its coordinates. It returns the current cell value after DoSequental or DoRandom if the parameters are not set.</p>
+<p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
+<p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
+<h3 id="columncell">ColumnCell</h3>
+<p><strong> <code>GetColumnCell(/**Number*/ rowId)</code> </strong></p>
+<p>Gets cell value by its coordinates. Returns current cell value after DoSequental. If not set ActiveColumn is used.</p>
+<p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
+<h3 id="columncount">ColumnCount</h3>
+<p><strong> <code>GetColumnCount()</code> </strong></p>
+<p>Gets columns count.</p>
+<p>Returns Number of columns in the spreadsheet.</p>
+<h3 id="columnindexbyname">ColumnIndexByName</h3>
+<p><strong> <code>GetColumnIndexByName(/**String*/name)</code> </strong></p>
+<p>Gets column name.</p>
+<p><code>name</code> Column name.</p>
+<p>Returns column index if found, or -1.</p>
+<h3 id="columnname">ColumnName</h3>
+<p><strong> <code>GetColumnName(/**Number*/ ind)</code> </strong></p>
+<p>Gets column name.</p>
+<p><code>ind</code> Column index.</p>
+<p>Returns Name of column in the spreadsheet.</p>
+<h3 id="rowcount">RowCount</h3>
+<p><strong> <code>GetRowCount()</code> </strong></p>
+<p>Gets rows count.</p>
+<p>Returns Number of rows in the spreadsheet.</p>
+<h3 id="rowindexbyname">RowIndexByName</h3>
+<p><strong> <code>GetRowIndexByName(/**String*/name)</code> </strong></p>
+<p>Gets row name.</p>
+<p><code>name</code> Row name.</p>
+<p>Returns row index if found, or -1.</p>
+<h3 id="currentrowindex">CurrentRowIndex</h3>
+<p><strong> <code>GetCurrentRowIndex()</code> </strong></p>
+<p>Get zero based current row index.</p>
+<h3 id="eof">EOF</h3>
+<p><strong> <code>GetEOF()</code> </strong></p>
+<p>Is current position is beyond the map boundaries range.</p>
+<h3 id="rowcell">RowCell</h3>
+<p><strong> <code>GetRowCell(/**Number|String*/ columnId)</code> </strong></p>
+<p>Gets cell value for current row. Returns current cell value after DoSequental. ActiveRow is used.</p>
+<p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
+<h3 id="rowname">RowName</h3>
+<p><strong> <code>GetRowName(/**Number*/ ind)</code> </strong></p>
+<p>Gets row name.</p>
+<p><code>ind</code> Row index.</p>
+<p>Returns Name of row in the map.</p>
+<h3 id="value">Value</h3>
+<p><strong> <code>GetValue(/**Number|String*/ rowOrColumnNameOrId)</code> </strong></p>
+<p>Gets cell value by its name or id. Returns current cell value after DoSequental. If it is Rows or Table then the parameter needs to be a column name or index, and ActiveRow is used. If it is Columns then the parameter needs to be a row name or index, and ActiveRow is used.</p>
+<p><code>[rowOrColumnNameOrId]</code> Row or Column index or Name.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2007-2017, All Rights Reserved, Inflectra Corporation</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://www.inflectra.com/Rapise/Params/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Parameters - Rapise Visual Language</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Rapise Visual Language</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Overview/">About</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Columns/">Columns</a>
+</li>
+                                    
+<li >
+    <a href="../Comments/">Comments</a>
+</li>
+                                    
+<li >
+    <a href="../Conditions/">Conditions</a>
+</li>
+                                    
+<li >
+    <a href="../Actions/">Actions</a>
+</li>
+                                    
+<li >
+    <a href="../Variables/">Variables</a>
+</li>
+                                    
+<li >
+    <a href="../Assertions/">Assertions</a>
+</li>
+                                    
+<li >
+    <a href="../IfElse/">If-Else</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../Maps/">Maps</a>
+</li>
+                                    
+<li >
+    <a href="../Loops/">Loops</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../RVLObject/">RVL Object</a>
+</li>
+                                    
+<li >
+    <a href="../MapObject/">Map Object</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../IfElse/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../Maps/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.inflectra.com">Rapise</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#param-rows">Param Rows</a></li>
+        <li class="main "><a href="#param-arrays">Param Arrays</a></li>
+        <li class="main "><a href="#mixed-rows">Mixed Rows</a></li>
+        <li class="main "><a href="#map-params">Map Params</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>The last 3 columns in the RVL table are used for passing parameters:</p>
+<table>
+<thead>
+<tr>
+<th>...</th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>...</td>
+<td align="left">text</td>
+<td align="left">string</td>
+<td align="left">John Smith</td>
+</tr>
+<tr>
+<td>...</td>
+<td align="left">x</td>
+<td align="left">number</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td>...</td>
+<td align="left">y</td>
+<td align="left">number</td>
+<td align="left">7</td>
+</tr>
+<tr>
+<td>...</td>
+<td align="left">forceEvent</td>
+<td align="left">boolean</td>
+<td align="left">true</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>5th column - <em>ParamName</em> - name of the parameter. This column's intention is readability and it does not affect execution. However it names input parameters and makes it easier to understand each provided input option.</li>
+<li>6th column - <em>ParamType</em> - value type. This may be a basic scalar type (<code>number</code>, <code>string</code>, <code>boolean</code>, <code>object</code>) as well as one of the following additionals 'special' types:</li>
+<li>
+<ul>
+<li><code>expression</code> - any valid JavaScript expression that may involve global variables and functions and local variables.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>variable</code> - the parameter value is read from a variable.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>objectid</code> - ID of one of the learned Objects.</li>
+</ul>
+</li>
+<li>7th column - <em>ParamValue</em> - a value that is acceptable for the specified <em>ParamType</em>. For <code>boolean</code> it is <code>true</code> or <code>false</code>. For <code>number</code> is is any floating point number (i.e. <code>3.14</code>). For <code>string</code>, any text without quotes or escape signs.</li>
+</ul>
+<h2 id="param-rows">Param Rows</h2>
+<p>In RVL each parameter takes one row:</p>
+<table>
+<thead>
+<tr>
+<th>...</th>
+<th><em>Type</em></th>
+<th>...</th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>...</td>
+<td>Param</td>
+<td></td>
+<td align="left">text</td>
+<td align="left">string</td>
+<td align="left">John Smith</td>
+</tr>
+<tr>
+<td>...</td>
+<td>Param</td>
+<td></td>
+<td align="left">x</td>
+<td align="left">number</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td>...</td>
+<td>Param</td>
+<td></td>
+<td align="left">y</td>
+<td align="left">number</td>
+<td align="left">7</td>
+</tr>
+<tr>
+<td>...</td>
+<td>Param</td>
+<td></td>
+<td align="left">forceEvent</td>
+<td align="left">boolean</td>
+<td align="left">true</td>
+</tr>
+</tbody>
+</table>
+<h2 id="param-arrays">Param Arrays</h2>
+<p>Some methods accept arrays of values as input values. For example <code>Tester.Message</code> may take its 1st <code>message</code> parameter as an array and prints them combined. Making an array is easy, several consequent parameters having the same name are combined into an array, i.e.:</p>
+<table>
+<thead>
+<tr>
+<th align="left"><em>Flow</em></th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">Action</td>
+<td align="left">Tester</td>
+<td align="left">Message</td>
+<td align="left"><strong>message</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left">MyVar1 value:</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>message</strong></td>
+<td align="left"><strong>variable</strong></td>
+<td align="left"><strong>MyVar1</strong></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>message</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left">MyVar2 value:</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>message</strong></td>
+<td align="left"><strong>variable</strong></td>
+<td align="left"><strong>MyVar2</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Should report a message like:</p>
+<pre><code>MyVar1 value: 25 MyVar2 value: 33
+</code></pre>
+<h2 id="mixed-rows">Mixed Rows</h2>
+<p>In some cases it is convenient to mix parameter cells with an <em>Action</em> or <em>Condition</em>. </p>
+<p>For example, the 1st parameter of an <em>Action</em> may share the <code>Action</code> row:</p>
+<table>
+<thead>
+<tr>
+<th align="left"><em>Flow</em></th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">Action</td>
+<td align="left">MyButton</td>
+<td align="left">DoClick</td>
+<td align="left"><strong>x</strong></td>
+<td align="left"><strong>number</strong></td>
+<td align="left"><strong>5</strong></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">y</td>
+<td align="left">number</td>
+<td align="left">7</td>
+</tr>
+</tbody>
+</table>
+<p>And this is equivalent to putting it in the next row:</p>
+<table>
+<thead>
+<tr>
+<th align="left"><em>Flow</em></th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">Action</td>
+<td align="left">MyButton</td>
+<td align="left">DoClick</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>x</strong></td>
+<td align="left"><strong>number</strong></td>
+<td align="left"><strong>5</strong></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">y</td>
+<td align="left">number</td>
+<td align="left">7</td>
+</tr>
+</tbody>
+</table>
+<p>Or <code>param2</code> of the <a href="../Conditions/">condition</a> may be on the same row:</p>
+<table>
+<thead>
+<tr>
+<th align="left">...</th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">param1</td>
+<td align="left">string</td>
+<td align="left">Text1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Condition</td>
+<td align="left"></td>
+<td align="left">param1!=param2</td>
+<td align="left"><strong>param2</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><strong>Text2</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Which is equivalent to:</p>
+<table>
+<thead>
+<tr>
+<th align="left">...</th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">param1</td>
+<td align="left">string</td>
+<td align="left">Text1</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Condition</td>
+<td align="left"></td>
+<td align="left">param1!=param2</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>param2</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><strong>Text2</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This allows saving space while keeping same readability.</p>
+<h2 id="map-params">Map Params</h2>
+<p>If map is defined in the script it may be used directly as a parameter. <em>ParamType</em> should be set to Map Name and <em>ParamValue</em> is a column (or row) name:</p>
+<p><img alt="Map Param" src="../img/Params_MapValue.png" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2007-2017, All Rights Reserved, Inflectra Corporation</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

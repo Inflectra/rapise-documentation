@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://www.inflectra.com/Rapise/Columns/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Columns - Rapise Visual Language</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Rapise Visual Language</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Overview/">About</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Columns</a>
+</li>
+                                    
+<li >
+    <a href="../Comments/">Comments</a>
+</li>
+                                    
+<li >
+    <a href="../Conditions/">Conditions</a>
+</li>
+                                    
+<li >
+    <a href="../Actions/">Actions</a>
+</li>
+                                    
+<li >
+    <a href="../Variables/">Variables</a>
+</li>
+                                    
+<li >
+    <a href="../Assertions/">Assertions</a>
+</li>
+                                    
+<li >
+    <a href="../IfElse/">If-Else</a>
+</li>
+                                    
+<li >
+    <a href="../Params/">Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../Maps/">Maps</a>
+</li>
+                                    
+<li >
+    <a href="../Loops/">Loops</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../RVLObject/">RVL Object</a>
+</li>
+                                    
+<li >
+    <a href="../MapObject/">Map Object</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../Overview/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../Comments/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.inflectra.com">Rapise</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>RVL script is a spreadsheet containing set of 7 columns in fixed order:</p>
+<p><img alt="Columns" src="../img/Columns.png" />
+<em>Column View</em></p>
+<ul>
+<li>
+<p>1st <em>Flow</em> -- Control flow. This column dedicated to specifying structural information such blocks, Branches (If-Else), loops.</p>
+<p>Also it contains information about single row and multi row comments. Possible values are limited by the list:
+  *   <code>\#</code> or <code>//</code> - single row  comment
+  * <code>/*</code> - begin of multi row comment (comment is valid up to line starting with <code>*/</code>)
+  * <code>*/</code> - end of multi row comment started earlier from <code>/*</code>
+  * <code>If</code> - conditional branch. Row type must be <code>Condition</code>. The row may be followed with one or more <code>ElseIf</code> statements, zero or one <code>Else</code> statement and then should end with <code>End</code>.</p>
+</li>
+<li>
+<p>2nd <em>Type</em> -  Type of operation specified in this row. One of: </p>
+</li>
+<li><code>Action</code> - row defines an action. Action is a call for operation for one of the objects. Object is defined in the next column. See <a href="../Actions/">Actions</a>.</li>
+<li><code>Param</code> - signals that this row contains action parameter or condition parameter defined in last 3 columns (<code>ParamName</code>, <code>ParamType</code> and <code>ParamValue</code>).</li>
+<li><code>Output</code> - this type of row must go after last Param for an action and defines a variable that should accept output value retured from the call to the Action.</li>
+<li><code>Variable</code> - this row defines or assigns value to a local or global variable. See <a href="../Variables/">Variables</a>.</li>
+<li><code>Assert</code> - first row for the Assertion. See <a href="../Assertions/">Assertions</a>.</li>
+<li><code>Condition</code></li>
+<li>3rd <em>Object</em> - Id of the object to be used for action. Rapise provides set of predefined global objects and objects recorded/learned from the AUT.</li>
+<li>4th <em>Action</em> - One of the actions. <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code> etc.</li>
+<li>5th <em>ParamName</em> - see <a href="../Params/">Params</a> for more information on last 3 columns</li>
+<li>6th <em>ParamType</em> </li>
+<li>7th <em>ParamValue</em> </li>
+</ul>
+<p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2007-2017, All Rights Reserved, Inflectra Corporation</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://www.inflectra.com/Rapise/RVLObject/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>RVL Object - Rapise Visual Language</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Rapise Visual Language</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Overview/">About</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Columns/">Columns</a>
+</li>
+                                    
+<li >
+    <a href="../Comments/">Comments</a>
+</li>
+                                    
+<li >
+    <a href="../Conditions/">Conditions</a>
+</li>
+                                    
+<li >
+    <a href="../Actions/">Actions</a>
+</li>
+                                    
+<li >
+    <a href="../Variables/">Variables</a>
+</li>
+                                    
+<li >
+    <a href="../Assertions/">Assertions</a>
+</li>
+                                    
+<li >
+    <a href="../IfElse/">If-Else</a>
+</li>
+                                    
+<li >
+    <a href="../Params/">Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../Maps/">Maps</a>
+</li>
+                                    
+<li >
+    <a href="../Loops/">Loops</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Objects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">RVL Object</a>
+</li>
+                                    
+<li >
+    <a href="../MapObject/">Map Object</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../Loops/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../MapObject/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.inflectra.com">Rapise</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#actions">Actions</a></li>
+            <li><a href="#doplayscript">DoPlayScript</a></li>
+            <li><a href="#exit">Exit</a></li>
+            <li><a href="#return">Return</a></li>
+            <li><a href="#doplaysheet">DoPlaySheet</a></li>
+            <li><a href="#locatoropts">LocatorOpts</a></li>
+            <li><a href="#formatstring">FormatString</a></li>
+        <li class="main "><a href="#properties">Properties</a></li>
+            <li><a href="#currentscriptpath">CurrentScriptPath</a></li>
+            <li><a href="#currentscriptsheet">CurrentScriptSheet</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>RVL Object</p>
+<p>Some common tasks related to script execution, such as calling scripts, executing separate sheets, returning, exiting and bailing out is served by RVL.</p>
+<h2 id="actions">Actions</h2>
+<h3 id="doplayscript">DoPlayScript</h3>
+<p><strong><code>DoPlayScript(/**String*/scriptPath, /**String*/sheetName)</code> </strong></p>
+<p>Play RVL script using specified</p>
+<ul>
+<li>
+<p><code>scriptPath</code> {<code>/**string*/</code>}: Path to script</p>
+</li>
+<li>
+<p><code>sheetName</code> {<code>/**string*/</code>}: Excel sheet containing the script</p>
+</li>
+</ul>
+<h3 id="exit">Exit</h3>
+<p><strong><code>Exit(/**String*/ message, /**Boolean*/isError)</code> </strong></p>
+<p>Break execution at the specified line</p>
+<ul>
+<li>
+<p><code>message</code> {<code>/**string*/</code>}: Exit message</p>
+</li>
+<li>
+<p><code>isError</code> {<code>/**boolean*/</code>}: Specify 'false' if you want just exit without exit message</p>
+</li>
+</ul>
+<h3 id="return">Return</h3>
+<p><strong><code>Return(/**String*/ message)</code> </strong></p>
+<p>Return from specified line. This method should be called from within RVL</p>
+<ul>
+<li><code>message</code> {<code>/**string*/</code>}: Return message</li>
+</ul>
+<h3 id="doplaysheet">DoPlaySheet</h3>
+<p><strong><code>DoPlaySheet(/**String*/sheetName)</code> </strong></p>
+<p>Run current script from specified sheet</p>
+<ul>
+<li><code>sheetName</code> {<code>/**string*/</code>}: Sheet Name</li>
+</ul>
+<h3 id="locatoropts">LocatorOpts</h3>
+<p><strong><code>SetLocatorOpts(/**objectid*/objectid, {optname:optvalue,...})</code> </strong></p>
+<p>Set additional locator options for specified object. This is a way to modify various script parameters such as <code>locator</code>, <code>xpath</code>, <code>url</code> and thus find different objects.</p>
+<ul>
+<li><code>objectid</code> {<code>/**objectid*/</code>}: Object ID</li>
+</ul>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th align="left"><em>Flow</em></th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">Action</td>
+<td align="left">RVL</td>
+<td align="left">SetLocatorOpts</td>
+<td align="left"><strong>objectid</strong></td>
+<td align="left"><strong>objectid</strong></td>
+<td align="left">MyButton</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>locator_param1</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><strong>new value1</strong></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>locator_param2</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><strong>new value2</strong></td>
+</tr>
+</tbody>
+</table>
+<p>All params going after <code>objectid</code> are optional and depend on specified object's locator.</p>
+<p>If you want to reset all values to default value call this method with just <code>objectid</code> and no additional parameters.</p>
+<h3 id="formatstring">FormatString</h3>
+<p><strong><code>FormatString(/**string*/fmtString, {optname:optvalue,...})</code> </strong></p>
+<p>Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: <code>My name is {name}</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><em>Flow</em></th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">Action</td>
+<td align="left">RVL</td>
+<td align="left">FormatString</td>
+<td align="left"><strong>fmtString</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><code>{first} plus {second} equals to {result}</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>first</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><code>one</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>second</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><code>five</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Param</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><strong>result</strong></td>
+<td align="left"><strong>string</strong></td>
+<td align="left"><code>6</code></td>
+</tr>
+</tbody>
+</table>
+<p>This Action should put string value <code>one plus five equals to 6</code> into the variable LastResult.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="currentscriptpath">CurrentScriptPath</h3>
+<p><strong> <code>GetCurrentScriptPath()</code> </strong></p>
+<p>Return path to currently executed .rvl.xls file</p>
+<h3 id="currentscriptsheet">CurrentScriptSheet</h3>
+<p><strong> <code>GetCurrentScriptSheet()</code> </strong></p>
+<p>Return sheet name of the currently executed .rvl.xls file</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2007-2017, All Rights Reserved, Inflectra Corporation</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
