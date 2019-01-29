@@ -20,7 +20,7 @@ pages:
 - Objects:
   - RVL Object: RVLObject.md
   - Map Object: MapObject.md
-theme: material
+theme: mkdocs
 extra:
   logo: 'img/RapiseLogo.ico'
   palette:
