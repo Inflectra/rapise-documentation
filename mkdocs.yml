@@ -1,0 +1,28 @@
+site_name: Rapise Visual Language
+copyright: Copyright © 2007-2017, All Rights Reserved, Inflectra Corporation
+repo_name: Rapise
+repo_url: http://www.inflectra.com
+site_url: http://www.inflectra.com/Rapise
+pages:
+- Overview:
+  - About: Overview.md 
+- Features:
+  - Columns: Columns.md
+  - Comments: Comments.md
+  - Conditions: Conditions.md
+  - Actions: Actions.md
+  - Variables: Variables.md
+  - Assertions: Assertions.md
+  - If-Else: IfElse.md
+  - Parameters: Params.md
+  - Maps: Maps.md
+  - Loops: Loops.md
+- Objects:
+  - RVL Object: RVLObject.md
+  - Map Object: MapObject.md
+theme: material
+extra:
+  logo: 'img/RapiseLogo.ico'
+  palette:
+    primary: 'deep purple'
+    accent: 'purple'
