@@ -1,2 +1,2 @@
-# rapise
+# rapise-documentation
 Rapise Documentation
