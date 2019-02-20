@@ -2,7 +2,7 @@ site_name: Rapise Visual Language
 copyright: Copyright © 2007-2017, All Rights Reserved, Inflectra Corporation
 repo_name: Rapise
 repo_url: http://www.inflectra.com
-site_url: http://www.inflectra.com/rapise-documentation
+site_url: http://http://rapisedoc.inflectra.com
 pages:
 - Overview:
   - About: Overview.md 
