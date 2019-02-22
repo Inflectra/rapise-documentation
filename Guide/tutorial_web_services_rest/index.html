@@ -1,0 +1,3375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/tutorial_web_services_rest/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Tutorial: REST Web Services - Rapise</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Rapise</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rapise User's Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../company__copyright/">Company & Copyright</a>
+</li>
+                                    
+<li >
+    <a href="../about_this_guide/">About this Guide</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Getting Started</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../getting_started/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../sample_tests/">Samples Index</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tutorial: Web Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorial_record_and_playback/">Using Rapise Visual Language</a>
+</li>
+            
+<li >
+    <a href="../tutorial_web_using_javascript/">Using JavaScript</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tutorial: Windows Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../twodialogs_sample/">Using Rapise Visual Language</a>
+</li>
+            
+<li >
+    <a href="../tutorial_windows_using_javascript/">Using JavaScript</a>
+</li>
+    </ul>
+  </li>
+            
+<li class="active">
+    <a href="./">Tutorial: REST Web Services</a>
+</li>
+            
+<li >
+    <a href="../tutorial_soap_web_services/">Tutorial: SOAP Web Services</a>
+</li>
+            
+<li >
+    <a href="../mobile_testing_android/">Tutorial: Mobile Testing</a>
+</li>
+            
+<li >
+    <a href="../tutorial_exploratory_testing/">Tutorial: Manual Testing</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tutorial: Java Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorial_java_testing/">Using Rapise Visual Language</a>
+</li>
+            
+<li >
+    <a href="../tutorial_java_using_javascript/">Using JavaScript</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tutorial: Qt Framework</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorial_qt_framework/">Using Rapise Visual Language</a>
+</li>
+            
+<li >
+    <a href="../tutorial_qt_using_javascript/">Using JavaScript</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../features/">Features</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Recording and Learning</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../object_types/">Recording and Learning</a>
+</li>
+            
+<li >
+    <a href="../recording/">Recording</a>
+</li>
+            
+<li >
+    <a href="../object_learning/">Learning</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Analog Recording</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../analog_recording/">Analog Recording</a>
+</li>
+            
+<li >
+    <a href="../absolute_analog_learning/">Absolute Analog Recording</a>
+</li>
+            
+<li >
+    <a href="../relative_analog_learning/">Relative Analog Recording</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../simulated_objects/">Simulated Objects</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Object Libraries</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../recording_library/">Object Libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Custom Libraries</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../custom_libraries/">Custom Libraries</a>
+</li>
+            
+<li >
+    <a href="../actions/">Actions</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../multiple_recordings/">Multiple Recordings</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Object Spy</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../object_spy/">Object Spy</a>
+</li>
+            
+<li >
+    <a href="../object_spy_accessible/">Accessible (MSAA) Spy</a>
+</li>
+            
+<li >
+    <a href="../object_spy_java/">Java Spy</a>
+</li>
+            
+<li >
+    <a href="../object_spy_mobile/">Mobile Spy</a>
+</li>
+            
+<li >
+    <a href="../object_spy_managed/">Managed (.NET) Spy</a>
+</li>
+            
+<li >
+    <a href="../object_spy_uiautomation/">UI Automation Spy</a>
+</li>
+            
+<li >
+    <a href="../web_spy/">Web Spy</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../object_manager/">Object Manager</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Playback</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../playback/">Playback</a>
+</li>
+            
+<li >
+    <a href="../command_line/">Command Line</a>
+</li>
+            
+<li >
+    <a href="../object_locator/">Object Locator</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Automated Reporting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../automated_reporting/">Automated Reporting</a>
+</li>
+            
+<li >
+    <a href="../writing_to_the_report/">Writing to the Report</a>
+</li>
+            
+<li >
+    <a href="../report_filtering/">Report Filtering</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../visual_language/">Visual Language (RVL)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Scripting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../scripting/">Scripting</a>
+</li>
+            
+<li >
+    <a href="../understanding_the_script/">Understanding the Script</a>
+</li>
+            
+<li >
+    <a href="../naming_conventions/">Naming Conventions</a>
+</li>
+            
+<li >
+    <a href="../defining_functions/">Defining Functions</a>
+</li>
+            
+<li >
+    <a href="../global_variables/">Global Variables</a>
+</li>
+            
+<li >
+    <a href="../including_other_files/">Including other Files</a>
+</li>
+            
+<li >
+    <a href="../regular_expressions/">Regular Expressions</a>
+</li>
+            
+<li >
+    <a href="../assertions/">Assert Statements</a>
+</li>
+            
+<li >
+    <a href="../data_driven_testing/">Data Driven Testing</a>
+</li>
+            
+<li >
+    <a href="../customizable_engine/">Customizable Engine</a>
+</li>
+            
+<li >
+    <a href="../scenarios/">Scenarios</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Javascript IDE</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../javascript_ide/">Javascript IDE</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Internal Debugger</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../internal_debugger/">Internal Debugger</a>
+</li>
+            
+<li >
+    <a href="../tooltips/">Tooltips</a>
+</li>
+            
+<li >
+    <a href="../control_execution/">Control Execution</a>
+</li>
+            
+<li >
+    <a href="../breakpoints/">Breakpoints</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../verbosity_levels/">Verbosity Levels</a>
+</li>
+            
+<li >
+    <a href="../syntax_highlighting/">Syntax Highlighting</a>
+</li>
+            
+<li >
+    <a href="../code_folding/">Code Folding</a>
+</li>
+            
+<li >
+    <a href="../syntax_checking/">Syntax Checking</a>
+</li>
+            
+<li >
+    <a href="../code_helper/">Code Completion</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Unit Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../unit_testing/">Unit Testing</a>
+</li>
+            
+<li >
+    <a href="../visual_studio/">Visual Studio</a>
+</li>
+            
+<li >
+    <a href="../nunit/">NUnit</a>
+</li>
+            
+<li >
+    <a href="../dll_testing/">DLL Testing</a>
+</li>
+            
+<li >
+    <a href="../com_testing_support/">COM Testing Support</a>
+</li>
+            
+<li >
+    <a href="../tap/">TAP Results</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Web Service Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../web_service_testing/">Web Service Testing</a>
+</li>
+            
+<li >
+    <a href="../rest_web_service/">Testing REST Web Services</a>
+</li>
+            
+<li >
+    <a href="../soap_web_services/">Testing SOAP Web Services</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../mobile_testing2/">Mobile Testing</a>
+</li>
+            
+<li >
+    <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing Environment for iOS Mobile Testing</a>
+</li>
+            
+<li >
+    <a href="../mobile_testing_ios/">Mobile Testing using iOS</a>
+</li>
+            
+<li >
+    <a href="../../Manuals/Preparing_for_Android_Testing/">Preparing Environment for Android Mobile Testing</a>
+</li>
+            
+<li >
+    <a href="../mobile_testing_android/">Mobile Testing using Android</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Manual Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../manual_testing/">Manual Testing</a>
+</li>
+            
+<li >
+    <a href="../manual_testing_recording/">Manual Recording</a>
+</li>
+            
+<li >
+    <a href="../manual_testing_playback/">Manual Playback</a>
+</li>
+            
+<li >
+    <a href="../semi_manual_testing/">Semi-Manual Testing</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../spiratest_integration/">SpiraTest Integration</a>
+</li>
+            
+<li >
+    <a href="../checkpoints/">Checkpoints</a>
+</li>
+            
+<li >
+    <a href="../tests_and_sub_tests/">Tests and Sub-Tests</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NeoLoad Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../neoload_integration/">NeoLoad Integration</a>
+</li>
+            
+<li >
+    <a href="../convert_functional_to_load_tes/">Convert Functional to Load Test</a>
+</li>
+            
+<li >
+    <a href="../client_performance_monitoring/">Client Performance Monitoring</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Dialogs, Views, and Menus</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dialogs_views_menus/">Dialogs, Views, and Menus</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">A - I</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dialog_add_web_service/">Add Web Service Dialog</a>
+</li>
+            
+<li >
+    <a href="../browser_settings/">Browser Settings Dialog</a>
+</li>
+            
+<li >
+    <a href="../content_view/">Content View</a>
+</li>
+            
+<li >
+    <a href="../create_new_test_dialog/">Create New Test Dialog</a>
+</li>
+            
+<li >
+    <a href="../create_sub_test_dialog/">Create Sub-Test Dialog</a>
+</li>
+            
+<li >
+    <a href="../enter_filter_criteria_for____d/">Enter Filter Criteria For... Dialog</a>
+</li>
+            
+<li >
+    <a href="../errors_view/">Errors View</a>
+</li>
+            
+<li >
+    <a href="../find_and_replace_dialog/">Find and Replace Dialog</a>
+</li>
+            
+<li >
+    <a href="../find_results_view/">Find Results View</a>
+</li>
+            
+<li >
+    <a href="../find_text_dialog/">Find Text dialog</a>
+</li>
+            
+<li >
+    <a href="../image_capture/">Image Capture</a>
+</li>
+            
+<li >
+    <a href="../incident_logging/">Incident Logging</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">M - R</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../manual_playback/">Manual Playback</a>
+</li>
+            
+<li >
+    <a href="../manual_test_editor/">Manual Test Editor</a>
+</li>
+            
+<li >
+    <a href="../menu_and_toolbars/">Main Menu</a>
+</li>
+            
+<li >
+    <a href="../mobile_settings_dialog/">Mobile Settings Dialog</a>
+</li>
+            
+<li >
+    <a href="../mobile_test_locator_dialog/">Mobile Test Locator Dialog</a>
+</li>
+            
+<li >
+    <a href="../namevalue_collection_editor_di/">NameValue Collection Editor Dialog</a>
+</li>
+            
+<li >
+    <a href="../neoload_convertor_dialog/">NeoLoad Convertor Dialog</a>
+</li>
+            
+<li >
+    <a href="../neoload_settings_dialog/">NeoLoad Settings Dialog</a>
+</li>
+            
+<li >
+    <a href="../object_tree/">Object Tree Dialog</a>
+</li>
+            
+<li >
+    <a href="../options_dialog/">Options Dialog</a>
+</li>
+            
+<li >
+    <a href="../output_view/">Output View</a>
+</li>
+            
+<li >
+    <a href="../properties/">Properties Dialog</a>
+</li>
+            
+<li >
+    <a href="../recording_activity_dialog/">Recording Activity Dialog</a>
+</li>
+            
+<li >
+    <a href="../replace_text_dialog/">Replace Text Dialog</a>
+</li>
+            
+<li >
+    <a href="../report_viewer/">Report Viewer</a>
+</li>
+            
+<li >
+    <a href="../rest_definition_editor/">REST Definition Editor</a>
+</li>
+            
+<li >
+    <a href="../rvl_editor/">RVL Editor</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">S - Z</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../scripting_choice_dialog/">Scripting Choice Dialog</a>
+</li>
+            
+<li >
+    <a href="../select_an_application_to_record_dialog/">Select an Application to Record... Dialog</a>
+</li>
+            
+<li >
+    <a href="../selenium_settings_dialog/">Selenium Settings Dialog</a>
+</li>
+            
+<li >
+    <a href="../settings_dialog/">Settings Dialog</a>
+</li>
+            
+<li >
+    <a href="../soap_definition_editor/">SOAP Definition Editor</a>
+</li>
+            
+<li >
+    <a href="../source_editor/">Source Editor</a>
+</li>
+            
+<li >
+    <a href="../spira_dashboard/">Spira Dashboard</a>
+</li>
+            
+<li >
+    <a href="../spira_properties_dialog/">Spira Properties Dialog</a>
+</li>
+            
+<li >
+    <a href="../spreadsheet_editor/">Spreadsheet Viewer</a>
+</li>
+            
+<li >
+    <a href="../ses_spy_dialog/">Spy Dialog</a>
+</li>
+            
+<li >
+    <a href="../start_page/">Start Page</a>
+</li>
+            
+<li >
+    <a href="../test_files_dialog/">Test Files Dialog</a>
+</li>
+            
+<li >
+    <a href="../toolbar_rest/">Toolbar: REST</a>
+</li>
+            
+<li >
+    <a href="../toolbar_soap/">Toolbar: SOAP</a>
+</li>
+            
+<li >
+    <a href="../toolbar_spreadsheet/">Toolbar: Spreadsheet</a>
+</li>
+            
+<li >
+    <a href="../variable_call_stack_view/">Variable/Call Stack View</a>
+</li>
+            
+<li >
+    <a href="../verify_object_properties/">Verify Object Properties Dialog</a>
+</li>
+            
+<li >
+    <a href="../warning_view/">Warning View</a>
+</li>
+            
+<li >
+    <a href="../watch_view/">Watch View</a>
+</li>
+            
+<li >
+    <a href="../web_settings/">Web Spy Settings</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HowTos</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../howtos/">HowTos</a>
+</li>
+            
+<li >
+    <a href="../accessing_files_and_i_o_functi/">Accessing Files and I/O Functions</a>
+</li>
+            
+<li >
+    <a href="../change_test_entry_point/">Change Test Entry Point</a>
+</li>
+            
+<li >
+    <a href="../change_the_libraries_being_use/">Change the Libraries Being Used</a>
+</li>
+            
+<li >
+    <a href="../changing_the_url_of_website_be/">Changing the URL of Website being Tested</a>
+</li>
+            
+<li >
+    <a href="../create_a_new_test/">Create a New Test</a>
+</li>
+            
+<li >
+    <a href="../deal_with_a_simulated_object/">Deal with a Simulated Object</a>
+</li>
+            
+<li >
+    <a href="../detecting_the_presence_of_an_o/">Detecting the Presence of an Object</a>
+</li>
+            
+<li >
+    <a href="../do_absolute_analog_recording/">Do Absolute Analog Recording</a>
+</li>
+            
+<li >
+    <a href="../do_relative_analog_recording/">Do Relative Analog Recording</a>
+</li>
+            
+<li >
+    <a href="../extracting_test_data_from_an_e/">Extracting Test Data From an Excel Spreadsheet</a>
+</li>
+            
+<li >
+    <a href="../learn_object/">Learn an Object</a>
+</li>
+            
+<li >
+    <a href="../object_not_found/">Object Not Found - How to Fix</a>
+</li>
+            
+<li >
+    <a href="../open_a_test/">Open a Test</a>
+</li>
+            
+<li >
+    <a href="../restoring_the_default_layout/">Restoring the Default Layout</a>
+</li>
+            
+<li >
+    <a href="../sending_special_keys_to_the_c/">Sending Special Keys to the Current Application</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Technologies</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../technologies/">Technologies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Web Testing</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../web_testing/">Web Testing</a>
+</li>
+            
+<li >
+    <a href="../cross_browser_testing/">Cross Browser Testing</a>
+</li>
+            
+<li >
+    <a href="../setting_up_web_browsers/">Setting Up Web Browsers</a>
+</li>
+            
+<li >
+    <a href="../xpath/">XPath</a>
+</li>
+            
+<li >
+    <a href="../css/">CSS</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Selenium WebDriver</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../selenium_webdriver/">Selenium WebDriver</a>
+</li>
+            
+<li >
+    <a href="../setting_up_selenium/">Setting Up Selenium</a>
+</li>
+            
+<li >
+    <a href="../using_native_selenium_code/">Using Native Selenium Code</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../mobile_testing2/">Mobile Testing</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Microsoft Dynamics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../microsoft_dynamics/">Microsoft Dynamics</a>
+</li>
+            
+<li >
+    <a href="../dynamics_ax/">Dynamics AX</a>
+</li>
+            
+<li >
+    <a href="../dynamics_nav/">Dynamics NAV</a>
+</li>
+            
+<li >
+    <a href="../dynamics_crm/">Dynamics CRM/365 for Sales</a>
+</li>
+            
+<li >
+    <a href="../dynamics_365/">Dynamics 365 for Operations</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../windows_applications/">Windows Applications</a>
+</li>
+            
+<li >
+    <a href="../salesforce_com/">Salesforce.com</a>
+</li>
+            
+<li >
+    <a href="../qt_framework_testing/">Qt Framework</a>
+</li>
+            
+<li >
+    <a href="../java_awt_swing_testing/">Java AWT/Swing</a>
+</li>
+            
+<li >
+    <a href="../java_swt/">Java SWT</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Extensibility</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../extensibility/">Extensibility</a>
+</li>
+            
+<li >
+    <a href="../tutorial_custom_library/">Tutorial: Custom Library</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../glossary/">Glossary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../RVL/Overview/">About</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../RVL/Columns/">Columns</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Comments/">Comments</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Conditions/">Conditions</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Actions/">Actions</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Variables/">Variables</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Assertions/">Assertions</a>
+</li>
+            
+<li >
+    <a href="../../RVL/IfElse/">If_Else</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Maps/">Maps</a>
+</li>
+            
+<li >
+    <a href="../../RVL/Loops/">Loops</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../RVL/RVLObject/">RVL Object</a>
+</li>
+            
+<li >
+    <a href="../../RVL/MapObject/">Map Object</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Libraries <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Global</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_global/">Global</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Android/">Android</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Database/">Database</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/File/">File</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Global/">Global</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOS/">iOS</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Navigator/">Navigator</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/NeoLoad/">NeoLoad</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Ocr/">Ocr</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Screenshot/">Screenshot</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SeSReportException/">SeSReportException</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SeSReportImage/">SeSReportImage</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SeSReportLink/">SeSReportLink</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SeSReportText/">SeSReportText</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Spreadsheet/">Spreadsheet</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Tester/">Tester</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/WebDriver/">WebDriver</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Desktop</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Generic</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_generic/">Generic</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SeSSimulatedObject/">SeSSimulatedObject</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32Button/">Win32Button</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32CheckButton/">Win32CheckButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32ComboBox/">Win32ComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32ComboBoxEdit/">Win32ComboBoxEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32ContextMenu/">Win32ContextMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32Link/">Win32Link</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32List/">Win32List</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32ListCheckable/">Win32ListCheckable</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32MenuBar/">Win32MenuBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32Outline/">Win32Outline</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32PopupMenu/">Win32PopupMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32RadioButton/">Win32RadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32StaticText/">Win32StaticText</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32Text/">Win32Text</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Win32TreeCheckable/">Win32TreeCheckable</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">UIAutomation</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_uiautomation/">UIAutomation</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAButton/">UIAButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIACheckBox/">UIACheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAComboBox/">UIAComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAComboBoxEdit/">UIAComboBoxEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAHyperlink/">UIAHyperlink</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIALabel/">UIALabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAList/">UIAList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAMenu/">UIAMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAObject/">UIAObject</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAProgressBar/">UIAProgressBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIARadioButton/">UIARadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIASlider/">UIASlider</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIATabControl/">UIATabControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIATextBlock/">UIATextBlock</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIATextBox/">UIATextBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIATree/">UIATree</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAutomationMenuDropDown/">UIAutomationMenuDropDown</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAutomationMenuDropDownList/">UIAutomationMenuDropDownList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UIAutomationMenuItem/">UIAutomationMenuItem</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Managed</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_managed/">Managed</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedButton/">ManagedButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedCheckBox/">ManagedCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedCheckedListBox/">ManagedCheckedListBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedComboBox/">ManagedComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedDataGridView/">ManagedDataGridView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedLabel/">ManagedLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedLinkLabel/">ManagedLinkLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedListBox/">ManagedListBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedListView/">ManagedListView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedMenuPopupItem/">ManagedMenuPopupItem</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedMenuStrip/">ManagedMenuStrip</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedObject/">ManagedObject</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedPopupListBox/">ManagedPopupListBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedPropertyGrid/">ManagedPropertyGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedRadioButton/">ManagedRadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedTextBox/">ManagedTextBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ManagedTreeView/">ManagedTreeView</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">DevExpress</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_devexpress/">DevExpress</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXButtonEdit/">DXButtonEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXCalcEdit/">DXCalcEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXCheckButton/">DXCheckButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXCheckedComboBoxEdit/">DXCheckedComboBoxEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXCheckEdit/">DXCheckEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXCheckedListBoxControl/">DXCheckedListBoxControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXColorEdit/">DXColorEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXComboBoxEdit/">DXComboBoxEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXDateEdit/">DXDateEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXDockedBarControl/">DXDockedBarControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXDockPanel/">DXDockPanel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXDocumentsHost/">DXDocumentsHost</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXDropDownButton/">DXDropDownButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXFontEdit/">DXFontEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXGridControl/">DXGridControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXHyperLinkEdit/">DXHyperLinkEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXImageComboBoxEdit/">DXImageComboBoxEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXImageEdit/">DXImageEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXImageListBoxControl/">DXImageListBoxControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXListBoxControl/">DXListBoxControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXLookUpEdit/">DXLookUpEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXMarqueeProgressBarControl/">DXMarqueeProgressBarControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXMaskBox/">DXMaskBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXMemoEdit/">DXMemoEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXMemoExEdit/">DXMemoExEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXMRUEdit/">DXMRUEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXNavBarControl/">DXNavBarControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXPopupBarControl/">DXPopupBarControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXPopupContainerEdit/">DXPopupContainerEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXPopupLookUpEditForm/">DXPopupLookUpEditForm</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXProgressBarControl/">DXProgressBarControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXPropertyGridControl/">DXPropertyGridControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXRadioGroup/">DXRadioGroup</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXRangeTrackBarControl/">DXRangeTrackBarControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXRibbon/">DXRibbon</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXSimpleButton/">DXSimpleButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXSpinEdit/">DXSpinEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXTabControl/">DXTabControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXTextEdit/">DXTextEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXTextEditMasked/">DXTextEditMasked</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXTimeEdit/">DXTimeEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXTrackBarControl/">DXTrackBarControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXTreeList/">DXTreeList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DXZoomTrackBarControl/">DXZoomTrackBarControl</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Infragistics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_infragistics/">Infragistics</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AnimationControl/">AnimationControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraAppMenu/">UltraAppMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraButton/">UltraButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraCheckEditor/">UltraCheckEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraColorPicker/">UltraColorPicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraComboEditor/">UltraComboEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraCurrencyEditor/">UltraCurrencyEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraDropDownButton/">UltraDropDownButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraFontNameEditor/">UltraFontNameEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraFormattedLinkLabel/">UltraFormattedLinkLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraFormattedTextEditor/">UltraFormattedTextEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraGrid/">UltraGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraLabel/">UltraLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraListBar/">UltraListBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraListView/">UltraListView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraMaskedEdit/">UltraMaskedEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraMdiTabGroupControl/">UltraMdiTabGroupControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraNumericEditor/">UltraNumericEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraOptionSet/">UltraOptionSet</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraPopupMenu/">UltraPopupMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraProgressBar/">UltraProgressBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraRibbon/">UltraRibbon</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraTabControl/">UltraTabControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraTextEditor/">UltraTextEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraTimeZoneEditor/">UltraTimeZoneEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/UltraTree/">UltraTree</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ValueListDropDownUnsafe/">ValueListDropDownUnsafe</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Syncfusion</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_syncfusion/">Syncfusion</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SyncfusionGrouping/">SyncfusionGrouping</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SyncfusionRibbon/">SyncfusionRibbon</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Telerik</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_telerik/">Telerik</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikDropDownPopupForm/">TelerikDropDownPopupForm</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadApplicationMenu/">TelerikRadApplicationMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadApplicationMenuDropDown/">TelerikRadApplicationMenuDropDown</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadButton/">TelerikRadButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadCheckBox/">TelerikRadCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadDateTimePicker/">TelerikRadDateTimePicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadDropDownButton/">TelerikRadDropDownButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadDropDownButtonPopup/">TelerikRadDropDownButtonPopup</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadDropDownList/">TelerikRadDropDownList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadDropDownMenu/">TelerikRadDropDownMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadGridView/">TelerikRadGridView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadLabel/">TelerikRadLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadListControl/">TelerikRadListControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadMaskedEditBox/">TelerikRadMaskedEditBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadMenu/">TelerikRadMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadProgressBar/">TelerikRadProgressBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadRadioButton/">TelerikRadRadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadRibbonBar/">TelerikRadRibbonBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadSpinEditor/">TelerikRadSpinEditor</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadTextBox/">TelerikRadTextBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadTitleBar/">TelerikRadTitleBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadToggleButton/">TelerikRadToggleButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadToolStrip/">TelerikRadToolStrip</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadTrackBar/">TelerikRadTrackBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TelerikRadTreeView/">TelerikRadTreeView</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Advanced Acessibility</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_advaac/">Advanced Acessibility</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleButton/">SimpleButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleButtonDropdown/">SimpleButtonDropdown</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleCheckButton/">SimpleCheckButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleComboBox/">SimpleComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleGraphics/">SimpleGraphics</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleLink/">SimpleLink</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleLinkText/">SimpleLinkText</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleList/">SimpleList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleOutline/">SimpleOutline</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleRadioButton/">SimpleRadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SimpleText/">SimpleText</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ActiveX</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_activex/">ActiveX</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/ActiveXObject/">ActiveXObject</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/MSComCtlSlider20/">MSComCtlSlider20</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/MSComCtlToolbar/">MSComCtlToolbar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/MSComCtlTreeView20/">MSComCtlTreeView20</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/MSComList/">MSComList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/MSFlexGrid/">MSFlexGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SSTab/">SSTab</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/TabStrip20/">TabStrip20</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ActiveXC1</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_activex/">ActiveXC1</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/C1TrueDBGrid/">C1TrueDBGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/C1TrueDBList/">C1TrueDBList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/C1TrueDBListCombo/">C1TrueDBListCombo</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ActiveXSft</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_activex/">ActiveXSft</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SftTree/">SftTree</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">FarPoint</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_farpoint/">FarPoint</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/FarPointGrid/">FarPointGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/FarPointGridAX/">FarPointGridAX</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">VSFlexGrid</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_vsflexgrid/">VSFlexGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/VSFlexGrid/">VSFlexGrid</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Java</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_java/">Java</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaButton/">JavaButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaCheckBox/">JavaCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaChoice/">JavaChoice</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaLabel/">JavaLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaList/">JavaList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaObject/">JavaObject</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingButton/">JavaSwingButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingCheckBox/">JavaSwingCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingComboBox/">JavaSwingComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingLabel/">JavaSwingLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingList/">JavaSwingList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingMenuBar/">JavaSwingMenuBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingPasswordField/">JavaSwingPasswordField</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingPopupMenu/">JavaSwingPopupMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingProgressBar/">JavaSwingProgressBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingRadioButton/">JavaSwingRadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingSlider/">JavaSwingSlider</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingTable/">JavaSwingTable</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingTextArea/">JavaSwingTextArea</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingTextField/">JavaSwingTextField</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingToggleButton/">JavaSwingToggleButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaSwingTree/">JavaSwingTree</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaTextArea/">JavaTextArea</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JavaTextField/">JavaTextField</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">SWT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_swt/">SWT</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SWTComboBox/">SWTComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SWTComboBoxEdit/">SWTComboBoxEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SWTList/">SWTList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SWTTree/">SWTTree</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Qt</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_qt/">Qt</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QCheckBox/">QCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QComboBox/">QComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QDateTimeEdit/">QDateTimeEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QFontComboBox/">QFontComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QLabel/">QLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QLineEdit/">QLineEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QListBox/">QListBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QMenuBar/">QMenuBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QPopup/">QPopup</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QPopupMenu/">QPopupMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QPushButton/">QPushButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QRadioButton/">QRadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QSimulated/">QSimulated</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QTabPage/">QTabPage</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QToolButton/">QToolButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/QWidget/">QWidget</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_html/">HTML</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/HTMLObject/">HTMLObject</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">HTML5</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_html5/">HTML5</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/HTML5Number/">HTML5Number</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/HTML5Progress/">HTML5Progress</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/HTML5Range/">HTML5Range</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Selenium</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_selenium/">Selenium</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Actions/">Actions</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Capabilities/">Capabilities</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Cookies/">Cookies</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Screenshot/">Screenshot</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/WebElement/">WebElement</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">jQuery</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_jquery/">jQuery</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQueryAccordion/">JQueryAccordion</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQueryDatepicker/">JQueryDatepicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQueryMenu/">JQueryMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQueryProgressbar/">JQueryProgressbar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQuerySliderH/">JQuerySliderH</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQuerySliderV/">JQuerySliderV</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQuerySpinner/">JQuerySpinner</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/JQueryTabs/">JQueryTabs</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">GWT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_gwt/">GWT</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTCheckBox/">GWTCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTDatePicker/">GWTDatePicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTDecoratedStackPanel/">GWTDecoratedStackPanel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTMenuBar/">GWTMenuBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTPushButton/">GWTPushButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTRadio/">GWTRadio</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTStackPanel/">GWTStackPanel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTToggleButton/">GWTToggleButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTTree/">GWTTree</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">GWTExt</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_gwtext/">GWTExt</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtComboBox/">GWTExtComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtDatePicker/">GWTExtDatePicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtGrid/">GWTExtGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtMenuBar/">GWTExtMenuBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtTabPanel/">GWTExtTabPanel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtToggleButton/">GWTExtToggleButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtToolbar/">GWTExtToolbar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/GWTExtTree/">GWTExtTree</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSmartGwt</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_smartgwt/">DomSmartGwt</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SmartGwtDatePicker/">SmartGwtDatePicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SmartGwtTabControl/">SmartGwtTabControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SmartGwtToolbar/">SmartGwtToolbar</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">YUI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_yui/">YUI</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUIButtonMenu/">YUIButtonMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUICalendar/">YUICalendar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUICheckButton/">YUICheckButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUIMenu/">YUIMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUIMenuBar/">YUIMenuBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUIMenuButton/">YUIMenuButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUIPushButton/">YUIPushButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUIRadioButton/">YUIRadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUISliderH/">YUISliderH</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUISliderV/">YUISliderV</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUISplitButton/">YUISplitButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/YUITree/">YUITree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Services</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Web Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_webservices/">Web Services</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/RESTService/">RESTService</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/SOAPService/">SOAPService</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Mobile</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_mobile/">Mobile</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidButton/">AndroidButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidCheckBox/">AndroidCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidEditBox/">AndroidEditBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidImageButton/">AndroidImageButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidImageView/">AndroidImageView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidLabel/">AndroidLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidListView/">AndroidListView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidObject/">AndroidObject</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidProgressBar/">AndroidProgressBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidRadioButton/">AndroidRadioButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidRatingBar/">AndroidRatingBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidSeekBar/">AndroidSeekBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidSpinner/">AndroidSpinner</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidSwitch/">AndroidSwitch</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AndroidToggleButton/">AndroidToggleButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AppiumCapabilities/">AppiumCapabilities</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AppiumDriver/">AppiumDriver</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/AppiumWebElement/">AppiumWebElement</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSButton/">iOSButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSEditBox/">iOSEditBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSImage/">iOSImage</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSLabel/">iOSLabel</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSObject/">iOSObject</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSPageIndicator/">iOSPageIndicator</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSPicker/">iOSPicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSScrollView/">iOSScrollView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSSearch/">iOSSearch</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSSlider/">iOSSlider</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSSwitch/">iOSSwitch</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSTabBar/">iOSTabBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSTable/">iOSTable</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSTextView/">iOSTextView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/iOSWebView/">iOSWebView</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/MobileWebObject/">MobileWebObject</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Dynamics</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DynamicsAX</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_dynamicsax/">DynamicsAX</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXAddressBar/">DynamicsAXAddressBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXComboBox/">DynamicsAXComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXComboBoxEdit/">DynamicsAXComboBoxEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXComboBoxEditExpanded/">DynamicsAXComboBoxEditExpanded</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXFastTabs/">DynamicsAXFastTabs</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXMenu/">DynamicsAXMenu</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXMenuDropDown/">DynamicsAXMenuDropDown</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXMenuDropDownList/">DynamicsAXMenuDropDownList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXMenuItem/">DynamicsAXMenuItem</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXTable/">DynamicsAXTable</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsAXTextBox/">DynamicsAXTextBox</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">DynamicsNAV</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_dynamicsnav/">DynamicsNAV</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsNAVFastTabs/">DynamicsNAVFastTabs</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsNAVTable/">DynamicsNAVTable</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DynamicsNAVToolBar/">DynamicsNAVToolBar</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NavPOSControls</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_navposcontrols/">NavPOSControls</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/NavButtonPad/">NavButtonPad</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomDynamicsNAV</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_domdynamicsnav/">DomDynamicsNAV</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsNAVEdit/">DomDynamicsNAVEdit</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsNAVGrid/">DomDynamicsNAVGrid</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomDynamicsAX</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_dynamics365/">DomDynamicsAX</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXActionSearch/">DomDynamicsAXActionSearch</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXCheckBox/">DomDynamicsAXCheckBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXComboBox/">DomDynamicsAXComboBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXCrumbList/">DomDynamicsAXCrumbList</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXDatePicker/">DomDynamicsAXDatePicker</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXGrid/">DomDynamicsAXGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXMenuBar/">DomDynamicsAXMenuBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXMessageBar/">DomDynamicsAXMessageBar</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXNavigationSearch/">DomDynamicsAXNavigationSearch</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXTabControl/">DomDynamicsAXTabControl</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsAXTextBox/">DomDynamicsAXTextBox</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomDynamicsCrm</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_dynamicscrm/">DomDynamicsCrm</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsCrmGrid/">DomDynamicsCrmGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsCrmUnifiedInterfaceGrid/">DomDynamicsCrmUnifiedInterfaceGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomDynamicsCrmUnifiedInterfaceList/">DomDynamicsCrmUnifiedInterfaceList</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Salesforce</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSalesforce</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_salesforce/">DomSalesforce</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomLightningGrid/">DomLightningGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomLightningListBox/">DomLightningListBox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSalesforceGrid/">DomSalesforceGrid</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manuals <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Manuals/Preparing_for_Android_Testing/">Preparing for Android Testing</a>
+</li>
+                                    
+<li >
+    <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing for iOS Testing</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../Manuals/kb/">Knowledge Base</a>
+                            </li>
+                            <li >
+                                <a href="http://www.uitestingplayground.com/">UITAP</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../tutorial_windows_using_javascript/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../tutorial_soap_web_services/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tutorial-rest-web-services">Tutorial: REST Web Services</a></li>
+            <li><a href="#what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#1-using-the-rest-query-builder">1. Using the REST Query Builder</a></li>
+            <li><a href="#2-saving-the-rest-requests-as-objects">2. Saving the REST Requests as Objects</a></li>
+            <li><a href="#3a-generating-rest-test-scripts">3a. Generating REST Test Scripts</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tutorial-rest-web-services">Tutorial: REST Web Services</h1>
+<p>In this section you shall learn how to test a RESTful web services API using Rapise. We shall be using a demo application called <strong>Library Information System</strong> that has a dummy RESTful web service API available for learning purposes. You can access this sample application at
+<a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a>, and its RESTful web service
+API can be found at:
+<a href="http://www.libraryinformationsystem.org/Services/RestService.aspx">www.libraryinformationsystem.org/Services/RestService.aspx</a>.</p>
+<h3 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?</h3>
+<p><strong>RE</strong>presentational <strong>S</strong>tate <strong>T</strong>ransfer (<strong>REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.</p>
+<p>A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
+<h2 id="overview">Overview</h2>
+<p>Creating a REST web service test in Rapise consists of the following
+steps:</p>
+<ol>
+<li>
+<p>Using the REST query builder to create the various REST web service requests and verify that they return the expected data in the expected format.</p>
+</li>
+<li>
+<p>Parameterizing these REST web service requests into reusable templates and saving as Rapise learned objects.</p>
+</li>
+<li>
+<p>Generating the test script in Javascript that uses the learned Rapise web service objects.</p>
+</li>
+</ol>
+<p>We shall discuss each of these steps in turn.</p>
+<h2 id="1-using-the-rest-query-builder">1. Using the REST Query Builder</h2>
+<p>Create a new test in Rapise called <code>MyRestTest1.sstest</code>. For methodology, choose <strong>Basic: Windows Desktop Application (Windows Native, .NET, Java, WPF etc)</strong> and Rapise will create a new blank test project.</p>
+<p><img alt="Test Type" src="../img/tutorial_web_services_rest_testtype.png" /></p>
+<p>Language selection prompt is shown. For Web Services it is recommended to use <code>JavaScript</code>. </p>
+<p><img alt="Test Language" src="../img/scripting_language_javascript.png" /></p>
+<p>Once you have created it, choose  <code>Tools &gt; Web Services</code> menu to add a new web service definition to your test project:</p>
+<p><img alt="Tools-&gt;Web Services" src="../img/tutorial_web_services_rest1.png" /></p>
+<p>This will display the Add New Web Service dialog box:</p>
+<p><img alt="tutorial_web_services_pic2" src="../img/tutorial_web_services_rest2.png" /></p>
+<p>Choose <code>REST</code> as the type of web service you want to create.</p>
+<p>Then, enter the name of the web service that you're going to add, in this case enter <code>LibraryInformationSystem.rest</code> and click <code>Create</code>.</p>
+<p>This will add the REST web services definition file to your test project:</p>
+<p><img alt="tutorial_web_services_pic3" src="../img/tutorial_web_services_rest3.png" /></p>
+<p>You will see on the right hand side, there is a new document editor for the <code>.rest</code> file. This is the REST web services query form. It lets you send test HTTP requests to the web service under test and inspect the output being returned.</p>
+<p>If you open up API documentation for our sample application
+(<a href="http://www.libraryinformationsystem.org/Services/RestService.aspx">www.libraryinformationsystem.org/Services/RestService.aspx</a>) you will see that it exposes several operations for retrieving, adding, updating and deleting books and authors in the system. For this tutorial we shall perform the following operations:</p>
+<ol>
+<li>
+<p>Get the special SessionID to identify our test session</p>
+</li>
+<li>
+<p>Get a list of books in the system</p>
+</li>
+<li>
+<p>Add a new book to the system and verify that it was added</p>
+</li>
+</ol>
+<p>According to the documentation that means we will need to send the following requests:</p>
+<ul>
+<li>
+<h3 id="i-get-a-unique-session">(i) Get a Unique Session</h3>
+</li>
+<li>
+<ul>
+<li><strong>URL:</strong> http://www.libraryinformationsystem.org/Services/RestService.svc/session</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Method:</strong> GET</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Returns:</strong> Unique session ID that is passed to other requests to keep data separate for different demo users</li>
+</ul>
+</li>
+<li>
+<h3 id="ii-get-this-list-of-books">(ii) Get this list of books</h3>
+</li>
+<li>
+<ul>
+<li><strong>URL:</strong> http://www.libraryinformationsystem.org/Services/RestService.svc/book?session_id={session_id}</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Method:</strong> GET</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Returns:</strong> Array of book objects</li>
+</ul>
+</li>
+<li>
+<h3 id="iii-add-a-new-book-to-the-list">(iii) Add a new book to the list</h3>
+</li>
+<li>
+<ul>
+<li><strong>URL:</strong>
+http://www.libraryinformationsystem.org/Services/RestService.svc/book?session_id={session_id}</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Method:</strong> POST</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Body:</strong> Pass a populated book object:</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">    {
+        &quot;Name&quot;: &quot;Book Name&quot;,
+        &quot;AuthorId&quot;: 1,
+        &quot;GenreId&quot;: 1
+    }
+</code></pre>
+
+<ul>
+<li>
+<ul>
+<li><strong>Returns:</strong> Single book object that has its BookId populated</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>The first request will be to get the unique session ID that we will need to pass to the other requests. This is needed by our sample application to prevent testing by different users interfering with each other. To create this request, simply enter the following information on the REST Request form:</p>
+<ul>
+<li>
+<p><strong>Name:</strong> Get_Session</p>
+</li>
+<li>
+<p><strong>Method:</strong> GET</p>
+</li>
+<li>
+<p><strong>URL:</strong>
+http://www.libraryinformationsystem.org/Services/RestService.svc/session</p>
+</li>
+</ul>
+<p>You should now have it populated as illustrated below:</p>
+<p><img alt="tutorial_web_services_pic4" src="../img/tutorial_web_services_rest4.png" /></p>
+<p>This web service request requires that we pass credentials by means of HTTP Basic authentication. So click on the <code>Add Credentials</code> button in the toolbar.</p>
+<p><img alt="tutorial_web_services_pic5" src="../img/tutorial_web_services_rest5.png" /></p>
+<p>This will display the <code>Add Credentials</code> dialog box:</p>
+<p><img alt="tutorial_web_services_pic6" src="../img/tutorial_web_services_rest6.png" /></p>
+<p>Enter <strong>librarian</strong> as both the username and password and click <code>Add</code>.</p>
+<p>Now click the <code>Send</code> button and the request will get sent to the web service:</p>
+<p><img alt="tutorial_web_services_pic7" src="../img/tutorial_web_services_rest7.png" /></p>
+<p>The <code>Response Header</code> tab will display the headers coming back from the web service. The Status Code <strong>200 OK</strong> means that the request succeeded and that data was returned. If you click on the "<strong>Response Body - XML</strong>" tab, you will see the XML serialized data returned from the web service:</p>
+<p><img alt="tutorial_web_services_pic8" src="../img/tutorial_web_services_rest8.png" /></p>
+<p>Since Rapise uses JavaScript as its scripting language, it is usually easier to work with <strong>JSON</strong> (<strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation) serialized data rather than XML. In the case of the sample Library Information System web service, you can change the format that it accepts and retrieves by sending two special HTTP headers:</p>
+<ul>
+<li>
+<p><strong>Content-Type</strong>: <code>application/json</code></p>
+</li>
+<li>
+<p><strong>Accept</strong>: <code>application/json</code></p>
+</li>
+</ul>
+<p>To add these headers to the request, simply click on the <code>Add Header</code> button in toolbar:</p>
+<p><img alt="Add Header" src="../img/tutorial_web_services_rest_addheader.png" /></p>
+<p>This will display the following dialog box:</p>
+<p><img alt="tutorial_web_services_pic9" src="../img/tutorial_web_services_rest9.png" /></p>
+<p>Choose the HTTP Header <strong>"Accept"</strong> from the list and enter
+<code>application/json</code> as the value. Repeat for the <strong>"Content-Type"</strong> header. You should now have the following populated request:</p>
+<p><img alt="tutorial_web_services_pic10" src="../img/tutorial_web_services_rest10.png" /></p>
+<p>Now click the <code>Send</code> button and the request will get sent to the web service:</p>
+<p><img alt="tutorial_web_services_pic11" src="../img/tutorial_web_services_rest11.png" /></p>
+<p>The Response Header tab will display the headers coming back from the web service. Note that the returned Content-Type is listed as <code>application/json</code> as requested. If you click on <code>Response Body - JSON</code> tab, you will see the JSON serialized data returned from the web service:</p>
+<p><img alt="tutorial_web_services_pic12" src="../img/tutorial_web_services_rest12.png" /></p>
+<p>We have now completed the creation of our first test operation. Click on the "Save Requests" button in the Rapise REST Ribbon to make sure our changes have been saved.</p>
+<p>Now click on the <code>Clone request</code> icon in the REST request explorer in the left-hand side of the screen:</p>
+<p><img alt="tutorial_web_services_pic13" src="../img/tutorial_web_services_rest13.png" /></p>
+<p>This will display the Clone Request dialog box. This lets us create a new REST request that contains the headers and authentication already defined on our existing request. This will save time over creating a new REST request from scratch:</p>
+<p><img alt="tutorial_web_services_pic14" src="../img/tutorial_web_services_rest14.png" /></p>
+<p>Enter the name <strong>"Get_Books"</strong> in the dialog box and click the <code>Clone</code> button. This will create a new REST request with this name:</p>
+<p><img alt="tutorial_web_services_pic15" src="../img/tutorial_web_services_rest15.png" /></p>
+<p>For this request we need to pass through the SessionID in the
+query string. Rather than hardcoding it in the URL, we can make use of the parameterization feature of Rapise. Click on the <code>Add Parameter</code> button in the toolbar. This will display the <code>Add Request Parameter</code> dialog box:</p>
+<p><img alt="tutorial_web_services_pic16" src="../img/tutorial_web_services_rest16.png" /></p>
+<p>Enter in the following:</p>
+<ul>
+<li>
+<p><strong>Name:</strong> <code>session_id</code></p>
+</li>
+<li>
+<p><strong>Value:</strong> <code>7404f584-7200-4c37-b813-d5994eb45d12</code> (you can also copy and paste the value returned by the <code>Get_Session</code>
+command)</p>
+</li>
+</ul>
+<p>Click the <code>Add</code> button and the parameter will be added to the request. Now change the URL to:</p>
+<ul>
+<li><strong>URL:</strong> http://www.libraryinformationsystem.org/Services/RestService.svc/book?session_id=</li>
+</ul>
+<p>Then position the caret at the end of this URL and click the <code>Insert in URL</code> button. This will insert the parameter token in the URL at the specified point:</p>
+<p><img alt="tutorial_web_services_pic17" src="../img/tutorial_web_services_rest17.png" /></p>
+<p>Now click the <code>Send</code> button and the request will get sent to the web service. This will return the list of books serialized as a JSON array of objects:</p>
+<p><img alt="tutorial_web_services_pic18" src="../img/tutorial_web_services_rest18.png" /></p>
+<p>We have now completed the creation of our second test operation. Click on the <code>Save Requests</code> toolbar button to make sure our changes have been saved:</p>
+<p><img alt="Save Requests" src="../img/tutorial_web_services_rest_saverequests.png" /></p>
+<p>Now click on the <code>Clone request</code> icon in the REST request explorer in the right-hand side of the screen. Enter the name <strong>"Add_Book"</strong> in the dialog box and click the <code>Clone</code> button. This will create a new REST request with this name:</p>
+<p><img alt="tutorial_web_services_pic19" src="../img/tutorial_web_services_rest19.png" /></p>
+<p>This operation will add a new book to the system, so it's a POST request. Change the Method type in the dropdown list from <strong>"GET"</strong> to <strong>"POST"</strong>.</p>
+<p>Expand the "Body" field on the form. This is where you can enter in an XML or JSON serialized Book record that will get added to the system. For now we'll leave this blank and let Rapise serialize the body for us later on when we actually write our test script. So we should now have:</p>
+<p><img alt="tutorial_web_services_pic20" src="../img/tutorial_web_services_rest20.png" /></p>
+<p>We have now completed the creation of our third test operation. Click on the <code>Save Requests</code> toolbar button.</p>
+<h2 id="2-saving-the-rest-requests-as-objects">2. Saving the REST Requests as Objects</h2>
+<p>Now that we have created our three REST requests, the next step is to actually create the Rapise objects that we can use in our JavaScript test scripts. Click on the <code>Update Object Tree</code> button in the toolbar to update the Object Tree with our new requests:</p>
+<p><img alt="tutorial_web_services_pic21" src="../img/tutorial_web_services_rest21.png" /></p>
+<p>Rapise will now take you REST requests and use that to update the main <a href="../object_tree/">Object tree</a>. Click on the <code>Object</code> tab of the main Rapise explorer, click the <code>Refresh</code> icon and you will see the "LibraryInformationSystem" heading displayed, with the three saved REST request listed underneath:</p>
+<p><img alt="tutorial_web_services_pic22" src="../img/tutorial_web_services_rest22.png" /></p>
+<p>If you expand one of the REST requests (e.g. <code>Add_Book</code>), you'll see that it has a single operation <strong>"DoExecute"</strong> that executes the web services and a series of properties available for inspecting or updating any part of the REST request prior to it being sent to the server.</p>
+<p>In the next section we shall illustrate how you can write a test script using these learned objects.</p>
+<p>a. You can either have Rapise <strong>generate test scripts</strong> and verification points automatically (described in section 3a), or</p>
+<p>b. You can manually <strong>write the test scripts</strong> using the objects and the Rapise code editor (described in section 3b)</p>
+<h2 id="3a-generating-rest-test-scripts">3a. Generating REST Test Scripts</h2>
+<p>Inside the REST request explorer, double-click on the <strong>Get_Session</strong>
+function to open up the request:</p>
+<p><img alt="tutorial_web_services_pic31" src="../img/tutorial_web_services_rest23.png" /></p>
+<p>Click on the <strong>Send</strong> button to send the sample request. Once that has succeeded, you will see the <strong>Record</strong> button appear to the right:</p>
+<p><img alt="tutorial_web_services_pic32" src="../img/tutorial_web_services_rest24.png" /></p>
+<p>Click that button and the request will get added to the list of recorded steps:</p>
+<p><img alt="tutorial_web_services_pic33" src="../img/tutorial_web_services_rest25.png" /></p>
+<p>Now open up the <strong>Get_Book</strong> request and follow the same procedure:</p>
+<ol>
+<li>
+<p>Click on the <code>Send</code> button to execute the request</p>
+</li>
+<li>
+<p>Click on the <code>Record</code> button to record the action as a script step</p>
+</li>
+</ol>
+<p>This time we also want to verify the result. You will see a list of books returned in the <strong>Verify</strong> box underneath the Body section:</p>
+<p><img alt="clip0115" src="../img/tutorial_web_services_rest26.png" /></p>
+<p>If you select the overall array <strong>response[14]</strong> and click the main <code>Verify</code> button next to the <code>Record</code> button, the system will automatically add a verification step that verifies all of the values. To try this, click the <code>Verify</code> button. This will add a bold verification step to the recorded script:</p>
+<p><img alt="clip0116" src="../img/rest_script_steps.png" /></p>
+<p>You will see a script step recorded with a verification test added (it's shown in bold with an asterisk <code>*</code>):</p>
+<p>However, in many cases you only want to verify certain properties. For example, we might want to just verify that 14 books are returned, and that the first book has the right name.</p>
+<p>To do this, right-click on the <strong>response[14]</strong> entry to display the verification content menu:</p>
+<p><img alt="clip0117" src="../img/tutorial_web_services_rest28.png" /></p>
+<p>Choose the option ‘<strong>Verify Response length=14’</strong>. This adds the following step to the recorded script:</p>
+<p><img alt="clip0118" src="../img/tutorial_web_services_rest29.png" /></p>
+<p>Now we want to verify the name of the first book returned. To do that, expand the “0” index entry and then right-click on the “Name” property returned:</p>
+<p><img alt="clip0119" src="../img/tutorial_web_services_rest30.png" /></p>
+<p>Choose the option to <strong>Verify Repsonse[0].Name = Hound of the Baskervilles</strong>. This will add a verification step for this specific property:</p>
+<p><img alt="clip0120" src="../img/tutorial_web_services_rest31.png" /></p>
+<p>Now we add the last two requests - adding a book and verifying that it was added. To do that open up the two requests and click <code>Send</code> then <code>Record</code>:</p>
+<ul>
+<li>
+<p><strong>Add_Book</strong> (POST)</p>
+</li>
+<li>
+<p><strong>Get_Book</strong> (GET)</p>
+</li>
+</ul>
+<p>The <strong>Add_Book</strong> won't actually work at this point because we've not populated the body, but it will be good enough to create the test script. For the second instance of <strong>Get_Book</strong> don't use the Verify option since we will want to code that by hand to match the book we actually added.</p>
+<p>Once you are done, you should have:</p>
+<p><img alt="tutorial_web_services_pic36" src="../img/tutorial_web_services_rest32.png" /></p>
+<p>Now click on the <code>Create Script</code> button and Rapise will generate the following code for you:</p>
+<pre><code class="javascript">function Test()
+{
+    var LibraryInformationSystem_Get_Session=SeS('LibraryInformationSystem_Get_Session');
+    LibraryInformationSystem_Get_Session.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
+    LibraryInformationSystem_Get_Session.DoExecute();
+
+    var LibraryInformationSystem_Get_Book=SeS('LibraryInformationSystem_Get_Book');
+    LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
+    LibraryInformationSystem_Get_Book.DoExecute();
+
+    Tester.AssertEqual('http://www.libraryinformationsystem.org/Services/RestService.svc/book?session_id={session_id} Response Body Text Comparison Result', LibraryInformationSystem_Get_Book.GetResponseBodyText(), &quot;...long response body...&quot;);
+    LibraryInformationSystem_Get_Book.DoVerify('LibraryInformationSystem_Get_Book Response', &quot;length&quot;, 14);
+    LibraryInformationSystem_Get_Book.DoVerify('LibraryInformationSystem_Get_Book Response', &quot;[0].Name&quot;, &quot;Hound of the Baskervilles&quot;);
+    var LibraryInformationSystem_Add_Book=SeS('LibraryInformationSystem_Add_Book');
+    LibraryInformationSystem_Add_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
+    LibraryInformationSystem_Add_Book.DoExecute();
+
+    LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
+    LibraryInformationSystem_Get_Book.DoExecute();
+}
+</code></pre>
+
+<p>If you click <code>Play</code> on this script as written, you will see that the tests to retrieve the books work correctly, but the test of adding a new book fails:</p>
+<p><img alt="tutorial_web_services_pic37" src="../img/tutorial_web_services_rest33.png" /></p>
+<p>This is as we'd expect since we've not populated the new book yet!</p>
+<p>To make the template test script more useful, we should make the following changes:</p>
+<ul>
+<li>
+<p>Add comments to each of the sections to describe the purpose</p>
+</li>
+<li>
+<p>Add code to get the <strong>session ID</strong> from the first call and pass to the subsequent calls</p>
+</li>
+<li>
+<p>Create a JavaScript object to contain the new book information, and pass that to the <strong>Add Book</strong> function</p>
+</li>
+<li>
+<p>Get the new book ID from the result of the <strong>Add Book</strong> function and use it later on.</p>
+</li>
+<li>
+<p>Change the <code>Tester.Assert</code> code to check just specific properties rather than the entire object list.</p>
+</li>
+</ul>
+<p>The complete updated test script looks like the following. We have highlighted the new/changed lines in yellow:</p>
+<p>```javascript m=1
+function Test(params)
+{
+    //First get the session
+    var LibraryInformationSystem_Get_Session=SeS('LibraryInformationSystem_Get_Session');
+    LibraryInformationSystem_Get_Session.SetRequestHeaders([{"Name":"Accept","Value":"application/json"},{"Name":"Content-Type","Value":"application/json"}]);
+    LibraryInformationSystem_Get_Session.DoExecute();</p>
+<p>//  CODE: READ SESSIONID
+    var sessionId = LibraryInformationSystem_Get_Session.GetResponseBodyObject();
+    Tester.Message('Session ID: ' + sessionId);
+//  /CODE</p>
+<pre><code>var LibraryInformationSystem_Get_Book=SeS('LibraryInformationSystem_Get_Book');
+LibraryInformationSystem_Get_Book.SetRequestHeaders([{"Name":"Accept","Value":"application/json"},{"Name":"Content-Type","Value":"application/json"}]);
+LibraryInformationSystem_Get_Book.DoExecute({ "session_id": sessionId });
+</code></pre>
+<p>//  CODE/                                         ^^^^^^^^^^^^^^^^^^^^^^^</p>
+<pre><code>LibraryInformationSystem_Get_Book.DoVerify('LibraryInformationSystem_Get_Book Response', "length", 14);
+LibraryInformationSystem_Get_Book.DoVerify('LibraryInformationSystem_Get_Book Response', "[0].Name", "Hound of the Baskervilles");
+</code></pre>
+<p>// CODE: Define new book
+    //Add a book
+    var newBook = {
+        Name: "A Christmas Carol",
+        AuthorId: 2,
+        GenreId: 3
+    };
+// /CODE</p>
+<pre><code>var LibraryInformationSystem_Add_Book=SeS('LibraryInformationSystem_Add_Book');
+LibraryInformationSystem_Add_Book.SetRequestHeaders([{"Name":"Accept","Value":"application/json"},{"Name":"Content-Type","Value":"application/json"}]);
+</code></pre>
+<p>// CODE: Supply newBook as a POST method body
+    LibraryInformationSystem_Add_Book.SetRequestBodyObject(newBook)
+// /CODE
+    LibraryInformationSystem_Add_Book.DoExecute({ "session_id": sessionId });
+//  CODE/                                         ^^^^^^^^^^^^^^^^^^^^^^^</p>
+<p>// CODE: Read added book
+    //Get the ID of the new book
+    newBook = LibraryInformationSystem_Add_Book.GetResponseBodyObject();
+    Tester.Message("New Book ID: " + newBook.Id);
+// /CODE</p>
+<pre><code>LibraryInformationSystem_Get_Book.SetRequestHeaders([{"Name":"Accept","Value":"application/json"},{"Name":"Content-Type","Value":"application/json"}]);
+LibraryInformationSystem_Get_Book.DoExecute({ "session_id": sessionId });
+</code></pre>
+<p>//  CODE/                                         ^^^^^^^^^^^^^^^^^^^^^^^
+// CODE: Check book count increased
+    Tester.AssertEqual("Book Count", 15, LibraryInformationSystem_Get_Book.GetResponseBodyObject().length);
+// /CODE
+}</p>
+<pre><code>
+## 3b. Writing REST Test Scripts
+
+Open up the main `Main.js` file in the Rapise editor. It will initially consist of a single empty function `Test()`:
+
+![tutorial_web_services_pic24](./img/tutorial_web_services_rest34.png)
+
+The first task is to get a new SessionId from the server using the **Get_Session** operation. To do this, drag the **&quot;DoExecute&quot;** operation from under the **&quot;LibraryInformationSystem_Get_Session&quot;** object into the script editor, in between the opening and closing braces of the `Test()` function:
+
+![tutorial_web_services_pic25](./img/tutorial_web_services_rest35.png)
+
+This will execute the web serviced and return the SessionId. To actually access the retrieved value, you need to drag the **&quot;GetResponseBodyObject&quot;** property to the script editor, under the previous line. Then add the JavaScript code 
+
+```javascript
+var sessionId =
+</code></pre>
+
+<p>to actually store the value. We will also add a </p>
+<pre><code class="javascript">Tester.Message(sessionId);
+</code></pre>
+
+<p>line afterwards to write out the value of the sessionId to the test report. This will help us make sure we are getting back a valid response from the web service. You should now have the following code:</p>
+<p><img alt="tutorial_web_services_pic26" src="../img/tutorial_web_services_rest36.png" /></p>
+<p>Save this test and click <code>Play</code> to execute the test. You should now see a report similar to the following:</p>
+<p><img alt="tutorial_web_services_pic27" src="../img/tutorial_web_services_rest37.png" /></p>
+<p>Now we need to add the code to get the list of books. To do that, simply drag the <strong>"DoExecute"</strong> operation from under the <strong>"LibraryInformationSystem_Get_Book"</strong> object into the script editor. Then change the (<code>null</code>) argument to instead provide the session id as a JavaScript dictionary:</p>
+<pre><code class="javascript">SeS('LibraryInformationSystem_Get_Book').DoExecute({&quot;session_id&quot;:sessionId});
+</code></pre>
+
+<p>To get the list of books as a JavaScript array, drag the <strong>"GetResponseBodyObject"</strong> property to the script editor, under the previous line. Then assign the value of this property to a variable such as "books":</p>
+<pre><code class="javascript">var books = SeS('LibraryInformationSystem_Get_Book').GetResponseBodyObject();
+</code></pre>
+
+<p>Now we can add code to test that the number of books returned matches the expected value. Type in the following code:</p>
+<pre><code class="javascript">Tester.AssertEqual('Book count matches', 14, books.length);
+</code></pre>
+
+<p>You should now have the following code:</p>
+<p><img alt="tutorial_web_services_pic28" src="../img/tutorial_web_services_rest38.png" /></p>
+<p>Finally we need to add the code to add a new book to the system. To do that, simply drag the <strong>"DoExecute"</strong> operation from under the <strong>"Add_Book"</strong> object into the script editor. Then change the (<code>null</code>) argument to instead provide the session id as a Javascript dictionary:</p>
+<pre><code class="javascript">SeS('LibraryInformationSystem_Add_Book').DoExecute({&quot;session_id&quot;:sessionId});
+</code></pre>
+
+<p>To provide the data for a new book, we will need to drag the <strong>"SetRequestBodyObject"</strong> property of the <strong>"Add_Book"</strong> object to the line <strong>above</strong> the DoExecute and pass in a populated JavaScript object:</p>
+<pre><code class="javascript">var newBook = {};
+newBook.Name = 'A Christmas Carol';
+newBook.AuthorId = 2;
+newBook.GenreId = 3;
+
+SeS('LibraryInformationSystem_Add_Book').SetRequestBodyObject(newBook);
+</code></pre>
+
+<p>Finally Add code to test that our new book was added correctly and the count has increased by one:</p>
+<pre><code class="javascript">SeS('LibraryInformationSystem_Get_Books').DoExecute({&quot;session_id&quot;:sessionId});
+books = SeS('LibraryInformationSystem_Get_Books').GetResponseBodyObject();
+Tester.AssertEqual('Book count matches', 15, books.length);
+</code></pre>
+
+<p>You should now have the following code:</p>
+<p><img alt="tutorial_web_services_pic29" src="../img/tutorial_web_services_rest39.png" /></p>
+<p>Save this test and click "Play" to execute the test. You should now see a report similar to the following:</p>
+<p><img alt="tutorial_web_services_pic30" src="../img/tutorial_web_services_rest40.png" /></p>
+<p>Congratulations! You have just created your first test script that tests a RESTful web service.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2007-2019, All Rights Reserved, Inflectra</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"next": 78, "search": 83, "previous": 80, "help": 191};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
