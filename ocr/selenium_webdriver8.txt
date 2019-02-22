@@ -1,0 +1,22 @@
+GstatPace — BMainrvixisx  @ WebTest 2019-02-04 1220p
+
+Drag a column header here to group by that column.
+
+ 
+
+ 
+
+2 Type Stat + Name Status Comment
+yo @ - a o o
+Message 12:20:26.445 _ Starting scenario: Test, Info
+Assert 12:20:31.775 —_Log_In.DoClick({]) Pass Retumed Value: true
+Assert sername_.DoClick(E) Pass Retumed Value: true
+Assert Username_DoSetText({"librarian"]) Pass Retumed Value: true
+Assert Password_.DoSetText(("ibrarian’) Pass Retumed Value: true
+Assert Logingutton.Doclick(1}) Pass Retumed Value: true
+Assert Log_tn.DeClick({)) Pass Retumed Value: true
+ef test Wain Pass Passed:6 Failed:0 Time:11 6585
+Test Pass
+
+Total:8 Pass:7 Fail:0 Info:
+

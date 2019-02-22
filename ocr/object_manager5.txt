@@ -1,0 +1,70 @@
+ 
+
+ 
+
+ 
+
+2 sa)
+
+Ud Object Manager
+
+ 
+
+Source Destination
+C:SpiraRepository\Rapise Web Demo 1 TC88\Rapi_|... [p>] F:\SpraReposton/\Conference Web Test 1 TC42\Confere}
+
+> Copy Objectto the Right (FS) %X Remove ftom Destination (CuleD) SE Copy Allto Destination,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘Source 1D Destination
+ptt = Log_In tt
+
+Od = Usemame_ )
+
+rtd = Password_ it
+
+rtd = ctl00_. it
+
+rtd = Book Management {..)
+
+rtd = Amsterdam
+
+rtd = Log_Out ut
+
+> = Hound of the Bas. (.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

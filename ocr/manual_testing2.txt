@@ -1,0 +1,52 @@
+ 
+
+G Stort Page QB] ManualSteps.rmt
+©) Aaly to cate new book
+
+ 
+
+‘Stepld Description
+
+Bstep1_ | call
+
+(rs:1]
+
+(step 2__| User clicks link to create book
+(rs:2]
+
+@step3_| User enters books name and author, then clicks Next
+(1s3]
+
+@step 4 | User chooses book's genre and sub-genre from lst
+TS:4]
+
+@step 5 | User clicks submit button
+
+11s]
+
+Expected Result
+User taken to first screen in wizard
+
+User taken to next screen in wizard
+
+ 
+
+User sees screen displaying all entered
+information
+
+ 
+
+Confirmation sereen is displayed
+
+ 
+
+‘Sample Data
+
+| Play, Tragedy
+
+‘Macbeth, William Shakespeare
+
+ 
+
+ 
+

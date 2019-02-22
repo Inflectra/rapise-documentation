@@ -1,0 +1,85 @@
+ 
+
+© Rapise Spy
+Spy FEY Get Snapshot CirG) Leann Object (Ct-2) TestLocator [Z Ealt Profiles @ Profile: i0S AppSimula |~ Context: NATIVE APP
+Tap Swipe + Shake Precise Tap + ScrollTo —Acceptlert Dismiss Alert Change Orientation
+
+TF ts cts
+
+ 
+
+' (0) XCUIElementTypeApplication(0,0[375.812]
+4 (0) XCUIElementTypeWindow{0.0]375.812] XCUIElement TypeWindow/XCUIEte
+4 (0) XCUIElementlypeOther10,0][375,812] eemare <auTios Basic
+> (0) XCUIElementTypeNavigationBari0 44[375.88]
+4 (1) XCUIElementTypeOther{0.0]1375.812] J peeestipeesics SI
+4 (0) XCUlElementTypeOther{0.0]1375.812] (@)xCUIBenert ypeTeahadls 124
+4 (0) XCUIElementTypeOther(0.0]1375.812] 7XCUlElement TypeApplcation/XCUI
+(©) XCUlElementTypeTextField[5,721228,102]
+(1) XCUIElementTypeButton[255,71]1301,101]
+(2) XCUlElementTypeTextField[5.121]228,151]
+(8) XCUlElementTypeSecureTextField[5.169]2
+(4) XCUlElementTypeButton|255, 16811301198]
+(©) XCUlElementTypeStaticText.21211128.233
+> (6) XCUIElementTypePicker-227,234]509,396]
+(7 XCUlElementTypeStaticText5.404](222.425
+(@)XCUIElementTypeSwitch{S 4621156,493]
+(®) XCUIElementTypeSlideri82.455](200,486)
+(10) XCUIElementTypelmage220.452]256 487
+> (1) XCUIElementTypeWindow(0,0]375.812]
+> 2) XCUIElementTypeWindow{0,0]375.812]
+
+m0
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+login data
+
+ 
+
+ 
+
+Mercury
+
+ 
+
+Mercury
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+tein
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

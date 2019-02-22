@@ -1,0 +1,52 @@
+ 
+
+Recording Activity for "7Microsoft Dynamics AX? - 72Contoso? [?”WIN-DR7HHFSESQT??: ??Session ID? - 773
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Object Action Data Comment
+
+renew wo... Lick 28,30 User clicks at: 28, 30'n Hire new worker’
+
+Fistname —LClck 208, User clicks a: 20, 8in Fist name!
+
+First name SetText John ‘Do SetText("John") on First name
+
+Middlename Lick 26,11 User clicks at: 26, 11 in Middle name’
+
+Middle name — SetText A Do SetText("A") on Middle name
+
+Lastname LClck 22,10 User cicks at: 22, 10in ‘Lastname’
+
+Last name SetText Smith ‘Do SetText("Smith") on Last name
+
+Job Selecth... CTO tem selected CTO"
+[Verity (Crist) | [Learn (Ctrs2) | [Sm Spy(Cries) | [Fick Object... |[ Resume |
+[- Arateg (Cx) | | “Simulated F][__ comet || Finish (cua) |
+
+ 
+
+ 
+
+Paused [FI Transparent |
+
+ 
+
+ 
+

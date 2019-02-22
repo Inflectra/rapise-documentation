@@ -1,0 +1,27 @@
+4 SearchText GstatPace MB Mainjs*
+Bivins lh | //Use ‘Record/Learn’ button to begin test recording
+
+  
+ 
+ 
+  
+  
+
+function Test ()
+4
+function Logic(searchterm)
+4
+//Sev Text searchterm in g
+Se5('Ob31') .DoSetText (searchterm)
+//Click on btnG
+5e5('0b32") .DoClick()
+2
+
+Spreadsheet. DoAttach (" SHORKDIRG/searchterns.xisx");]
+
+g_load_librarie:
+
+ 
+
+"$g_browserLibrary:Chrome HTML")
+

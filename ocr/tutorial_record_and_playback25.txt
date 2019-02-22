@@ -1,0 +1,34 @@
+LIBRARY INFORMATION SYSTEM
+
+Home Book Management Author Manag
+
+ 
+
+WELCOME TO THE LIBRARY INFORMATION SYSTEM
+
+‘This sample application lets
+
+ 
+
+s view, create and edit books in the libary catalog as well 3s view, create and edit authors,
+
+  
+
+To view the library catalog or the authors list you wil
+vill need to login as a librarian,
+
+eed to login as a borrower and to make changes tothe list of books
+
+ 
+
+9 authors
+
+ 
+
+Note: This snot a real application, but i just a sample application used inthe popular SpiraTest test management system and Rapise
+test automation system, Both ofthese products are marketed by inflectra Corporation
+
+Test Rapise _ inflectra?
+
+Test Management Test automation Inflectra Corporation
+

@@ -1,0 +1,18 @@
+ 
+
+ 
+
+[Add New Web Service
+
+This wizard will create 2 new web service definition file inside the current test
+
+ 
+
+ 
+
+[cAsesiniecrDocurensiy Rapise TesslWebSenvoeT ural
+
+ 
+
+ 
+

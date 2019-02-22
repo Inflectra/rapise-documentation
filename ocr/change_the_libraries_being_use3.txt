@@ -1,0 +1,42 @@
+ 
+
+D Sclect an Application to Record.
+
+ 
+
+‘Select From Run!
+
+ 
+
+ 
+
+9 Applications
+
+Drag the Finder Tool over a window or select it from the list below
+
+ 
+
+«
+
++ Libraries
+Cancel
+
+ 
+
+= Applications
+‘Available Applications PID Path
+
+IBC: \Windows\system32\cmd exe 18132 CAWindows\System32\omd.exe
+
+A Inflectra Rapise Two Dialogs Sample 9244 ‘C:\Users\Public\Documents \Rapise\Samples|
+{Pubrary information System | Author Manage... 10960 C:\Program Files\Intemet Explorer\iexplore. exe
+© Library information System | Book Manage... 14982 C:\Program Files 86)\Google Chrome Applic
+FSales invoices - Microsoft Dynamics NAV 5108 C.\Program Files &86)\Microsoft Dynamics Ni
+L MwoDilogs 4488 C\Windows \explorerexe
+
+®@ Refresh Select
+
+ 
+
+ 
+

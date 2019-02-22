@@ -1,0 +1,31 @@
+Drag a column header here to group by that column.
+
+ 
+
+   
+
+2 Type Stat + Name Status Comment
+yo @ - a o o
+
+Assert 11:55:21,255 Book Management.DoClick([) Pass Retumed Value: true
+
++ Assert 11:55:21.411 Check that the name matches, Pass
+Assert 11:55:22.673 Edit. Doclick({}) Pass Retumed Value: true
+Assert Book Management.DoClick(E) Pass Retumed Value: true
+Assert __Create_new_book_DoClick([) Pass Retumed Value: true
+Assert Home.Dodiick((]) Pass Retumed Value: true
+Assert Author_Management.DoClick([)) Pass Retumed Value: true
+Assert __Create_new_book_DoClick([) Pass Retumed Value: true
+Assert Home.Dodiick((]) Pass Retumed Value: true
+Assert Log_In.DoGlick({]) Pass Retumed Value: true
+
++ Assert Failed assertion demo Fail
+
++ Assert Failure in Test Fail
+
+>) Test Wain Fail Passed:i5 Failed:2 Tim:
+
+Test Fail
+
+Total:19 Pass:15 Fail:3 Info:
+

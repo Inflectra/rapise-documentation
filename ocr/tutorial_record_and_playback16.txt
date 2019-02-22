@@ -1,0 +1,35 @@
+ 
+
+Recording Activity for "Internet Explorer HTML"
+
+ 
+
+# Object Action Data Comment
+WI Login Click Glick on Log In
+
+w2 Usemame: SetText librarian ‘Set Test librarian in Usemame:
+
+w3 Password: SetText librarian ‘Set Test librarian in Password:
+
+4 tiOOsMainC..__Clck Click on cl00SMainContentSLoginUserSLoginBution
+
+ 
+
+    
+
+ 
+
+VE al =o
+
+< >
+Verity Lean SPY Finish
+(Ces) (Ctri#2) cory (eee (Cris3) Cancel
+
+ 
+
+ 
+
+Paused Advanced>> Transparent
+
+ 
+

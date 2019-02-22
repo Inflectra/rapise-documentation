@@ -1,0 +1,7 @@
+regex: Microsoft Dynamics AX”
+
+ 
+
+CacheObjects False
+Commandinterval 100.
+

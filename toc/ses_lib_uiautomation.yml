@@ -1,0 +1,45 @@
+
+
+
+- 'UIAutomation':
+    - 'UIAutomation': 'Libraries/ses_lib_uiautomation.md'
+
+    - 'UIAButton': 'Libraries/UIAButton.md'
+
+    - 'UIACheckBox': 'Libraries/UIACheckBox.md'
+
+    - 'UIAComboBox': 'Libraries/UIAComboBox.md'
+
+    - 'UIAComboBoxEdit': 'Libraries/UIAComboBoxEdit.md'
+
+    - 'UIAHyperlink': 'Libraries/UIAHyperlink.md'
+
+    - 'UIALabel': 'Libraries/UIALabel.md'
+
+    - 'UIAList': 'Libraries/UIAList.md'
+
+    - 'UIAMenu': 'Libraries/UIAMenu.md'
+
+    - 'UIAObject': 'Libraries/UIAObject.md'
+
+    - 'UIAProgressBar': 'Libraries/UIAProgressBar.md'
+
+    - 'UIARadioButton': 'Libraries/UIARadioButton.md'
+
+    - 'UIASlider': 'Libraries/UIASlider.md'
+
+    - 'UIATabControl': 'Libraries/UIATabControl.md'
+
+    - 'UIATextBlock': 'Libraries/UIATextBlock.md'
+
+    - 'UIATextBox': 'Libraries/UIATextBox.md'
+
+    - 'UIATree': 'Libraries/UIATree.md'
+
+    - 'UIAutomationMenuDropDown': 'Libraries/UIAutomationMenuDropDown.md'
+
+    - 'UIAutomationMenuDropDownList': 'Libraries/UIAutomationMenuDropDownList.md'
+
+    - 'UIAutomationMenuItem': 'Libraries/UIAutomationMenuItem.md'
+
+

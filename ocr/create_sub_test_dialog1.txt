@@ -1,0 +1,43 @@
+ 
+
+ 
+
+Create Sub-Test x
+
+You are about to create another Test inside the folder of current Test. Please. provide Test folder na.
+
+ 
+
+I
+C:\Spira\New Test Case
+
+Use Methodology:
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc) -
+
+Rapise supports multiple testing methodologies. Select one to be used for newly created
+Test,
+
+ 
+
+ 
+
+New Test should have own set of Objects.
+
+lfunchecked the test will re-use objects from containing Test Le. itwill not have own file
+*<tesiname> objeciss" and will refer one from its parent,
+
+ 
+
+ 
+
+New test should have own User-defined functions
+
+Ifunchecked the test will re-use functions from containing Test... itwill not have own fle
+*<testname> user js” and will refer one from its parent.
+
+Create Cancel
+
+ 
+
+ 
+

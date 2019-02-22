@@ -1,0 +1,82 @@
+GstatPace EB Mainis
+
+“ LibrarylnformationSystem soap
+
+Drag a column header here to group by that column.
+
+# Type
+
+xo @
+Assert
+Assert
+Assert
+Assert
+Assert
+Assert
+Assert
+Assert
+Assert
+Assert
+
+> Test
+
+ 
+
+ 
+
+ 
+
+ 
+
+221.189
+15:34:21,783,
+15:34:21,798
+15:34:21,923,
+15:34:22,314
+15:34:22,689
+15:34:22,705
+
+15:34:22,830
+15:34:23,205
+15:34:23,220
+
+ 
+
+Name
+@
+
+Last Response Verification Result
+LibraryInformationSystem.DoVerify(["LastResponse Verificat
+LibraryInformationSystem.DoExecute(["Book Retrieve",Q])
+Last Response Verification Result
+LibraryInformationSystem.DoVerify(["LastResponse Verificat
+LibraryInformationSystem.DoExecute(["Book_Insert”,{"book’
+LibraryInformationSystem.DoExecute(["Book Retrieve",Q])
+Last Response Verification Result
+LibraryInformationSystem.DoVerify(["LastResponse Verificat
+LibraryInformationSystem.DoExecute(["Connection_Disconne
+‘iain
+
+Test Pass
+Total:13 Pass:12 Fail:0 Info:1
+
+@ mySoapTestt_2019-02-10_1534.p *
+
+‘Comment
+@
+
+Returned Value: true
+Returned Value: true
+
+Returned Value: true
+Returned Value: true
+Returned Value: true
+
+Returned Value: true
+Returned Value:
+Passed:1i Failed:0 Time:3.4685
+
+ 
+
+ 
+

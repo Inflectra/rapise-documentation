@@ -1,0 +1,36 @@
+4 Library Information System | Log In
+> @ ctl00SMainContentSLoginUser$Logi
+
+ 
+
+> Password
+> Username -
+Object Tree [Files]
+XPATH roest(@rameei00sManCorten A
+¥ Locators
+> Locators (a)
+Y Object
+TERI <0:5orconensogntbosa
+Veron
+Recognition
+Class Chrome_WidgetWin_1
+Favor Baton
+Ignore Object Name Fae
+Lira Grrome HTML
+Name 20s MainCortertsLoginUsersLog
+Role ROLE_SYSTEM_WINDOW
+Text Library Information System | Log In
+Type HTMLObject
+Y Window
+
+_—Windaw Class __[—1 naram-ohiect class
+1D
+
+ 
+
+ 
+
+ 
+
+ 
+

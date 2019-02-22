@@ -1,0 +1,24 @@
+awn
+
+ 
+
+Flow
+
+Type
+Action
+
+Object
+® Global
+
+Action
+DoLaunch
+
+ParamName
+cmdline
+
+|
+
+= wrkDir
+
+ParamValue
+

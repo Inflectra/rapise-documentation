@@ -1,0 +1,41 @@
+ 
+
+@& Load/Synchronize - a x
+
+ 
+
+ 
+
+ 
+
+Server: hitips:/dev-eu spiraservice.net! Change Refresh
+Project:
+Library Information System .
+Test Case Folders:
+4(Gi Library Information System «
+
+‘Common Tests
+Functional Tests
+Pa Rearessinn Tests
+
+ 
+
+Test Cases:
+Name iD Repository Path *
+
+BY Ability to create new author Ted Click to view.
+
+BY Ability to create new book TC2 Click to view.
+
+®) Ability to edit existing author TCS Click to view.
+
+BY Ability to edit existing book TC3 Click to view.
+
+P)Ability to reassign book to different author TC6__—_ New Test Case\New Test Case sstest
+
+Load/Synchronize Cancel
+
+ 
+
+ 
+

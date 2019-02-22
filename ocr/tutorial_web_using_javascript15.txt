@@ -1,0 +1,34 @@
+GstatPage MB Mainis GH Web Testing 2 2019-0208 1415p X
+
+Drag a column header here to group by that column.
+
+ 
+
+   
+
+# Type Start * Name Status ‘Comment
+*o @ - @ @ @
+Message 14:15:37.501 Starting scenario: Test Info
+Assert TE Process Created Pass Path:"C:\Program Files\Internet Explor
+Assert Log_In.Doclick([1) Pass Returned Value: true
+Assert Usermame_DoSetText({["librarian’) Pass Returned Value: true
+Assert Password_.DoSetText(["librarian’) Pass Returned Value: true
+Assert tl00gMmainContent$LoginUser$Logi.DoClick(() Pass Returned Value: true
+Assert Verify that: InnerText Pass
+Assert Book Management.DoClick({]) Pass Returned Value: true
+Assert The values match Pass
+Assert Edit.Doclick({]) Pass Returned Value: true
+Assert Book Management.DoClick({]) Pass Returned Value: true
+Assert __Create_new_book_.DoClick({]) Pass Returned Value: true
+Assert Home.DoClick({]) Pass Returned Value: true
+Assert ‘Author_Management-DoClick([]) Pass Returned Value: true
+Assert __Create_new_book_.DoClick({]) Pass Returned Value: true
+Assert Home.DoClick({]) Pass Returned Value: true
+Assert 14:15:56,456 Log_In.DoClick([1) Pass Returned Value: true
+> oo test 14:15:56.456 ‘iain Bass Passed:i6 Falled:0 Time:i9.064s
+
+     
+
+Test Pass
+Total:18 Pass:17 Fail:0 Info:
+

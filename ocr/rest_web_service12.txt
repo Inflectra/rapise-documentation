@@ -1,0 +1,87 @@
++x
+
+4 [9] LibraryinformationSystem.rest
+
+© Get_ Session
+“© Get_Book
+-© Add_Book
+
+Object Tree | Files REST
+
+ 
+
+ 
+
+ 
+
+Properties
+Credential ‘System Net NetworkCredential
+Headers (Collection)
+
+‘Method GET
+Name Get_Session V
+Name
+
+ 
+
+ 
+
+ 
+
+GstetPase HM Mainjs  [d]LibraryinformationSystem-est_ J WebServiceTutorial_2019-02-04_18-22tp ~
+fh A
+2 //#tettEtEtt Script Steps ###FFtestEeETE
+lp
+ls function Test (params)
+ls me
+6 SeS('LibraryInformationSystem_Get_Session') .DoExecute (null) ;
+bp var sessionId =SeS ('LibraryInformationSystem Get_Session') .GetResponseBodyObject () ;
+le Tester Message (sessionId) ;
+
+5
+
+lho SeS("LibraryInformationSystem_Get_Book') .DoExecute ({"session_id":sessionId});
+
+hha var books = SeS('LibraryInformationSystem Get_Book') .GetResponseBodyObject () 7
+
+h2 Tester .AssertEqual (‘Book count matches’, 14, books-length);
+
+lbs
+
+hs var newBook = (7
+
+lbs newBook.Name = 'A Christmas Carol’;
+
+lhe newBook.AuthorId = 27
+
+h7 newBook.Genzeld = 3
+
+he
+
+lho Se5(*LibrazyInformationSystem Add Book") .SetRequestBodyObject (newook) 7
+
+ko SeS("LibraryInformationSystem_Add_Book') .DoExecute ({"session_id":sessionId})
+
+le y
+<i ee ~~ >
+
+BB Create Script “@ Remove Step YX Clean REST Script Steps. Hide
+Get_ Session GET
+
+4*Get_Books GET
+
+Verify Response length=14
+\Verify Response[0]. Name=Hound of the Baskervilles
+
+  
+
+ 
+
+REST Script Steps | Response Body | Response Headers | Output Wamings| Errors] Find Results
+
+ 
+
+Passed Inflectra Corporation
+
+ 
+

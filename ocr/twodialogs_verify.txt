@@ -1,0 +1,39 @@
+ 
+
+Verify Object Properties
+
+ 
+
+# Name + Value
+O Bitmap
+oO is
+
+o
+
+o
+
+o
+
+(1 IndexinPar. 6
+
+C1 Name:
+
+(1 ObjectType UlAObject
+
+C1 state 1048576
+
+(1 TypeName Document
+
+Value Thank you. Your name is.
+
+ 
+
+Width evry
+0k Cancel
+
+ 
+
+ 
+
+ 
+

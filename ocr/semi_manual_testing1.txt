@@ -1,0 +1,22 @@
+Stepld
+Q@step 1
+TS:45]
+step 2
+[TS:46]
+
+Description
+
+@LaunchMsPaint ();
+User starts up the MS-Paint Application
+
+User clicks the main ‘Application menu’
+
+ 
+
+Expected Result
+
+The application loads with a blank
+canvas
+
+ 
+

@@ -1,0 +1,39 @@
+4 3) LibraryinformationSystem «
+4-© BasicHttpBinding_ISoapService
+
+Author_Retrieve
+
+Author_RetrieveByld
+
+Book_Delete
+
+Book_Insert
+
+Book_Retrieve
+
+Book_RetrieveByDateRange
+
+Book_RetrieveByld
+
+Book_Update
+
+Book_Uploadimage
+
+Connection_Authenticate
+
+Connection_Disconnect
+
+4-© BasicHttpBinding_ISoapService
+
+Author_Retrieve
+
+Author_RetrieveByld
+
+Book Delete ca
+
+‘Object Tree | Files SOAP
+
+ 
+
+ 
+

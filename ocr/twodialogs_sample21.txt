@@ -1,0 +1,24 @@
+ 
+
+ 
+
+© Rapise Spy
+OF start Tracking (CHG)
+
+= UlAutomation Object
+~ Tree
+
+— HWND
+
+Lear Object
+
+= Properties
+
+ 
+
+ 
+
+ 
+
+ 
+

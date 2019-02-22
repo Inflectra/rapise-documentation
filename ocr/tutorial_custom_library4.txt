@@ -1,0 +1,91 @@
+ 
+
+ 
+
+© Rapise Spy
+SP StartTracking (Cit)
+~ Accessible
+~ Tree
+4 [ROLE_SYSTEM_WINDOW,]
+‘System[ROLE_SYSTEM_MENUBAR,]
+> [ROLE_SYSTEM_TITLEBAR]
+Application[ROLE_SYSTEM_MENUBAR,]
+4 [ROLE_SYSTEM_LIST]
+‘String 1[ROLE_SYSTEM_SLIDER.0]
+‘String 2JROLE_SYSTEM_SLIDER.0]
+
+String 3[ROLE_SYSTEM_SLIDER.2]
+‘String 4[ROLE_SYSTEM_SLIDER,0]
+
+— HWND
+~ Tree
+[CustomListboxControl]
+
+ 
+
+ 
+
+ 
+
+(CHILDID_SELF
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[CustomlistboxControl)
+
+ 
+
+ 
+
+3
+
+ 
+
+ 
+ 
+
+ 
+
+  
+
+[X24 Y=235 Width=484 Height=
+
+ 
+
+ 
+
+ 
+
+ 
+
+AcoessibleObject [ROLE_SYSTEM_WINDOW]
+[ClassName |CustomListboxContral
+
+Rect 224, 235, 484, 261
+
+Text
+
+Visible Tue
+
+ 
+
+ 
+
+WS_VISIBLE, WS_CHILD
+
+ 
+
+ 
+
+ 
+

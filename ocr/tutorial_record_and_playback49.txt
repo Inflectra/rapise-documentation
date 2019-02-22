@@ -1,0 +1,59 @@
+10
+iL
+12
+13
+14
+15
+16
+7
+18
+19
+20
+
+|
+
+Action
+Action
+Action
+
+‘Action
+Action
+Action
+Action
+Action
+Action
+
+‘@ Book_Management
+(Amsterdam
+
+Edit
+
+(O book Management
+“Create new book
+O Home
+
+(@ Author_Management
+@ _Create_new_book_
+O Home
+
+@og_In
+
+    
+
+ 
+
+DoClick
+GetinnerText
+Doclick
+
+  
+
+Baclick
+Doclick
+Doclick
+Doclick
+Doclick
+Doclick
+
+ 
+

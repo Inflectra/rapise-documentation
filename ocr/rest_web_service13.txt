@@ -1,0 +1,21 @@
+Drag a column header here to group by that column.
+
+ 
+
+ 
+
+# Type Start + Name Status ‘Comment
+*o @ - @ a @
+Message Starting scenario: Test Info
+Assert LibraryInformationSystem_Get_Session.DoExecute([nul Pass Returned Value: true
+Message 66a7ca64-9e9d-4fd4-8841-0fb72938106= Info
+Assert LibraryInformationSystem_Get_Book.DoExecute(({'ses Pass _Retumed Value: true
+Assert Book count matches Pass
+Assert LibraryInformationSystem_Add_Book.DoExecute([{‘ses Pass _Retumed Value: true
+Assert ——-12:53:42.118 _LibraryInformationSystem_Get_Book.DoExecute(([{'ses Pass _Retumed Value: true
+Assert _12:53:42.134 Book count matches Pass
+a>) Test 12:53:42,149” Main Bass Passed:6 Falled:0 Time:1.885s
+Test Pass
+
+Total:9 Pass:7 Fail:0 Info:2
+

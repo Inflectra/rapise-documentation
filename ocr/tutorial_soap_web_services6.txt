@@ -1,0 +1,57 @@
+(| http//wwwlibraryinformationsystem.org/Services/SoapSe | Get WSDL http://www libraryinformationsystem.org/Services/SoapService | *P
+
+Tnvoke | Request/Response |
+
+Input Vel
+> @} Connection_Authenticate
+0) Headers
+44) Body
+‘String userName
+
+ 
+
+ 
+
+ 
+
+brarian
+
+ 
+
+ 
+
+ 
+
+Output Value | tavoke Record
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4+ {@) Connection_Authenticate
+() Headers
+44) Body
+
+Exon corer Aeron TRE
+Beclean Connection, AhententeReastpae
+
+ 
+
+True
+
+ 
+
+ 
+
+ 
+
+ 
+

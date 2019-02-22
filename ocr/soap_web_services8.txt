@@ -1,0 +1,45 @@
+ 
+
+ 
+
+GB Stan Page [B] WebSericesSOAP js se WebSericesSOAP soap |QjJ WebServicesSOAP_2016-1229 13:36
+Drag a column header here to group by that column.
+
+   
+
+   
+
+ 
+
+# ‘Type ‘Start a Name ‘Status ‘Comment Iteration +
+row -| q q «| :
+Assert 13:36:57.357 _WebServicesSOAP.DoVerfy["\'Bdyresuit-Author.Name\"R Pass Returned Value: true °
+Assert 13:36:57.368, "Body.result.Genre.Name" Response Pass oO
+Assert 13:36:57.480 ‘WebServicesSOAP.DoVerify({"\"Body.result.Genre.Name\" Re Pass Retumed Value: true oO
+Assert "Body.result.Name" Response Pass oO
+Assert WebServicesSOAP.DoVerify({"\"Body.result.Name\" Respons Pass Returned Value: true oO
+Assert WebServicesSOAP.DoExecute({"Book_Delete",{"id":15,"dSpe Pass Oo
+Assert WebServicesSOAP. DoExecute(["Book_Retrieve"]) Pass Returned Value: true oO
+Assert “Body.result.length" Response Pass oO
+Assert 121 WebServicesSOAP.DoVerify(["\"Body.result.length\" Respons Pass oO
+Assert 13:36:58.840, WebServicesSOAP.DoExecute(["Book_Uploadimage",{"id":1, Pass Returned Value: true oO
+Assert 13:36:58.846 "Body. Book_UoadimageResult” Response Pass °
+Assert 13:36:58.967, WebServicesSOAP.DoVerify(["\"Body.Book_UploadimageRes Pass Returned Value: true oO
+Assert 13:36:59.196 ‘WebServicesSOAP.DoExecute(["Connection_Authenticate”,{" Pass Returned Value: true o
+Assert 13:26:59.203 "Body. Connection AuthenticateResult” Response Pass °
+Assert 13:36:59.309 WebServicesSOAP.DoVerify({"\"Body.Connection_Authenticat Pass Returned Value: true oO
++>[D Test 12:96:50.314 Pass Passed: Faled:0
+
+ 
+
+ 
+
+Test Pass
+© Totar:s4 Pass:33 Feito info. .
+
+ 
+
+ 
+
+ 
+

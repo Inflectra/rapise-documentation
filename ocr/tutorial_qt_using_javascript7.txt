@@ -1,0 +1,39 @@
+File Edit View Test Tools Settings Help
+
+TE) QQ @ Record p> Play G Accessible Spy + MD Debvoger Gy Ge gp Tet GH User OD AV
+
+fi» tr) stat Page
+
+ 
+
+Qt Sample Test
+4) Sample Qtwidget Application
+> chidctve_
+> @oK_
+> ® radOption2_
+> eaNiame_
+> Global
+% User Functions
+{User Variables
+
+Properties
+
+Bi mainjss
+
+(//#48282482% Script Steps ###4S8S#8#88#%
+
+function Test (params)
+4
+
+//Do SevText ("Adam") on txtName_
+SeS(‘txtName_') .DoSetText ("Adam");
+//Do SetCheck(true) on radOption2_
+SeS(‘radOption2_') .DoSetCheck (true) z
+//Do SetCheck (true) on chkActive_
+SeS('chkActive_') .DoSetCheck (true) :
+//Press button ‘OK!
+
+SeS('OK_') DoAction();
+
+g_load_libraries=["Qt Framework")
+

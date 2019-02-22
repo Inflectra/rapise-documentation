@@ -1,0 +1,30 @@
+function Test (params)
+4
+SeS(‘LibraryInformationSystem_Get_Session') .DoExecute (null);
+eS ('LibraryInformationSystem Get_Session') .GetResponseBodyObject ()
+Tester.Message (sessionId) ;
+
+var sessionId
+
+ 
+
+SeS(‘LibraryInformationSystem_Get_Book") .DoExecute ({"session_id":sessionId});
+var books = SeS(*LibraryInformationSystem_Get_Book') .GetResponseBodyObject ()
+Tester.AssertEqual('Bock count matches’, 14, books.length);
+
+var newBook = (};
+newBook.Name = 'A Christmas Carol’
+newBook.AuthorId = 2
+newBook.Genreld = 3;
+
+ 
+
+  
+
+SeS(‘LibraryInformationSystem Add_Book") .SetRequestBodyObject (newBook) ;
+SeS(‘LibraryInformationSystem_Add_Book") .DoExecute ({"session_id":sessionId});
+
+Se5 (‘LibraryinformationSystem Get_Book") .DoExecute (("session_id" sessionId);
+books = Se5('Libraryinformationsystem Get_Book") .GetResponseBodyObject ()
+Tester AssertEqual (*Book count matches", 18, books.tengeh);]
+

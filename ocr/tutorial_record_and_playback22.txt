@@ -1,0 +1,37 @@
+LIBRARY INFORMATION SYSTEM
+
+brarian! [ Log Out
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AUTHOR MANAGEMENT
+‘The following authors exis inthe system: (Create new authon
+
+ID Name Age Eat
+1 ___[tan Mcéwan a2 Edit
+2 | Charles Dickens 105 Edit
+3 [ arthur Conan Doyle 1s it
+[a [Agatha Christie 8 Edit
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

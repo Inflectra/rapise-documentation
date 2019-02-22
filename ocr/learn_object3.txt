@@ -1,0 +1,23 @@
+ 
+
+TwoDialogsLearn -
+41 Infiectra Rapise Two Dialogs
+@oK
+ DoAction
+¢- GetToggleState
+“4 SetToggleState
+> Generic
+4 UIAObject
+# DoClick
+# DoDumpWwidget
+ DoFindByText
+# DoGetwidgetProperty
+4 GeiChildat
+> GetChildrenCount
+4 GetHeight
+> GetindexinParent
+4 GeiName
+4+ GetNextSibling
+4 GeiParent
+4+ GetPrevSibling 7
+

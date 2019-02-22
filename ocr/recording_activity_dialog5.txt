@@ -1,0 +1,12 @@
+(Sy Action Editor
+
+Object ID: a
+
+Action: Dasicton()
+
+Comment Press button ‘OK’
+
+ea col
+
+ 
+

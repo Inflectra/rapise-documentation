@@ -1,0 +1,31 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Page Title Microsoft Dynamics CRM
+URL.
+
+XPATH Iiframe{@id-'contentFrame'}@¢
+© Locators
+> Locators a
+~ Object
+1D Grid
+Version 0
+¥ Recognition
+Class Intemet Explorer_Server
+Flavor Grid
+Ignore Object Name False
+Name Grid
+Role ROLE_SYSTEM_CLIENT
+
+ 
+   
+
+DomDynamicscimard
+

@@ -1,0 +1,30 @@
+DOM Element
+
+xpath
+xpath_aria
+xpath full
+xpath_indexed
+xpath_min
+xpath_std
+xpath_text
+
+ 
+
+(Create new book)
+
+BookEdt aspx
+
+7
+103
+408.
+234
+
+him > body fst-oFtype > form > divrnth-oFtype(2) > dvinth-oFtype(2
+//al@href="BookEdt. aspx")
+
+ipl
+
+Aimifoody{ fom /dvi3Vav2VertValt)
+
+|//alnomalize-space()="(Create new book)']
+

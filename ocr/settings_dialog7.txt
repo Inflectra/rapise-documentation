@@ -1,0 +1,15 @@
+& Settings
+
+ 
+
+Metadsta C.\Usere\Publc\Documents\Shared
+ObjectsPath TwoDialogs Test objects js
+ReportPath TwoDialogs Test trp
+ScrptPath ‘TwoDialogsTest js
+
+C.\Users\Publc\ Documents \Shared
+
+UserFunctionsPath  TwoDialogsTest.user js
+
+ 
+

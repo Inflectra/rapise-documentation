@@ -1,0 +1,67 @@
+ 
+
+ 
+
+'R) Create New Test - x
+
+Server: bitps://dev-eu spiraservice net/
+
+Pie
+[Library nfrmaton System :
+
+ 
+
+ 
+
+“Test Cases: NewFolder New Test Case
+
+ 
+
+ 
+
+‘Open Up Web Browser
+
+“Da Functional Tests
+6.) Renracsian Taste
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Test Steps
+‘Step Description Expected Resuit ‘Actual Result “
+» [Cick on the Create new author I... | The new author page is displ.
+2 Enterin the new author informatio... |The data is accepted<br>
+5 Tene ton tana bestan chew Tin now thar in che 4
+« >
+
+ 
+
+ 
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+Manual: Manual-only testing
+Mobile: Mobile Support
+
+Web: Cross-Browser Testing Support
+
+Create Locally. Cancel
+
+ 
+
+ 
+

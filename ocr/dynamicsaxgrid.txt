@@ -1,0 +1,15 @@
+Users * Type to filter
+
+ 
+
+F] Account type Alias Networkdomain UserID Username Company Enabled
+Active Directory user Administrator CONTOSO DAT
+DAT
+
+ 
+
+Active Directory user
+Active Directory user | squirrel contoso.com squirrel squirrel «== DAT
+
+ 
+

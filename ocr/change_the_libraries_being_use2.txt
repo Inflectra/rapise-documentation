@@ -1,0 +1,84 @@
+ 
+
+ 
+
+1D Select Libraries for Record and Playback... = a x
+
+Library
+Ol Web Service
+
+1 Internet Explorer HTML
+CO Selenium
+Firefox HTML,
+
+Oi User
+
+Chrome HTML,
+
+0 DOM jQuery UL
+
+Ci Console
+
+C0 pom ewt
+
+OO HTMLS:
+
+Co Dom Gwr-ext
+
+CO pom yur
+
+Co DOM Smartt
+Dom spire
+
+0 UlAutomation
+
+0 ves
+
+CO Activex
+
+1 DynamicsNAV
+
+M1 DomDynamicsAX
+Oi DomDynamicsCrm
+
+Cancel
+
+Description
+Used for testing RESTiul web services
+
+HTML DOM-based recorder for Internet Explorer
+‘Selenium based playback engine
+
+HTML DOM-based recorder for Mozilla Firefox
+Default user-defined library
+
+HTML DOM-based recorder for Google Chrome
+DOM-based recorder for jQuery UI widgets
+Console Application
+
+DOM-based recorder for GWT
+
+‘Support for HTML5 new elements
+
+DOM-based recorder for GWT-Ext
+
+DOM-based recorder for YUL
+
+DOM-based recorder for SmartGWT
+DOM-based recorder for Spira Ul widgets
+
+Tests NET, WPF and Silverlight Applications
+‘Support for VB6 Targets
+
+‘Support for ActiveX Libraries
+
+Dynamics NAV controls
+
+Dynamics AX7+ support library
+
+Dynamics CRM support library
+
+ 
+
+ 
+

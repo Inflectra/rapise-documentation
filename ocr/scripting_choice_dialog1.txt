@@ -1,0 +1,19 @@
+ 
+
+ 
+
+ 
+
+Choose preferred scripting language:
+
+RVL (Rapise Visual Language)
+
+JavaScript (Advanced Users)
+
+Don't ask (may be changed later in Settings > Global > Default Scripting
+Language)
+
+ 
+
+ 
+

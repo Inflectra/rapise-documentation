@@ -1,0 +1,39 @@
+Cc
+
+NeoLoad - [DemoProject]
+
+File Edit Share Record Run Tools Help
+aeUlever|-eeRag|0
+
+a tine Gl Resaits
+
+6 Virtual Users Populations /& Monitors
+
+ 
+
+°
+
+ 
+
+Recording
+Record a Virtual User profile © Start Recording
+
+Flags
+Flag requests:
+@ none
+
+with the variable:
+ies variable extractor V/used in request
+whose definition contains:
+‘whose recorded response contains:
+‘with response validations
+\with variable extractors defined on:
+requests |V/ parameters
+is link/form extractor,
+‘with parameters
+is @ POST Form
+disabled
+‘whose type is: Adobe Flex/AMF
+‘with SLA Profle: Any
+‘whose content has not been decoded
+

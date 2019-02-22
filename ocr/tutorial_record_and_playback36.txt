@@ -1,0 +1,90 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+© Rapise Spy [http/libraryinformationsystem.org/Books.aspx] - ao x
+Spy BBY Get Snapshot (Ctrl-G) G& Track (Ctr-T) @ Lean
+xPath| Test Lear
+ee
+DOM Tree DOM Element
+4 <html xml:lang="en" xmins="http/www.w3.org/1999/xhtm!"> “
+> <head>...</Ihead>
+4 <body>
+
+4 <form id="cll01" action=" Books.aspx’ method="post">
+
+ 
+
+> <div class="aspNethidden’>..<Idiv>
+
+ 
+
+<script type="text /avascript >IIKI[CDATAIvar theForm = docume...<
+
+ 
+
+ 
+
+<script ero="/WebResource.axd?d=9_D5u0u-Rawwi.” typer"textija
+> <div class="aspNetHidden’>..<Idiv>
+4 <div class="page">
+
+  
+
+   
+
+[him > body frst-of ype > fomfistofype > divrth-oftype(3) > div:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+> <div class="header’>..</div> = = eee
+4 <div class="main”> xpath ful riod on /av[S/ av za able body AgTAA]
+<<h2>Book Management<h2> xpath_indeed Vadis]
+4 <p> [xpath_min /AbodyArl4]Ad[2]
+‘The folowing books exist in the caine Tater sca sear]
+<a href="BookEditaspx">(Create new book)</a> =
+4 dive
+4 <table class="dataGrid” id="MainContent_grdBooks' style="b
+4 tbody> Test Results|
+> ate
+> te
+> <tr style="background-color. whitesmoke;">...</tr>
+4a
+td>ac>
+<td> Amsterdam<hd>
+
+(Current Node
+1: htipilibraryinformationsystem.org/Books.aspx html body form div div div table tbody tr td
+
+ 
+
+ 
+

@@ -1,0 +1,96 @@
+ 
+
+ 
+
+Find and Replace a
+
+ 
+
+ 
+
+(@ Find | Replace
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ind what:
+‘Search x
+
+emer Test And Subt I
+Find options
+
+(Match case Include sub-folders
+
+CO Match whole word | Include hidden
+
+Look at these filetypes: [ "js .
+
+Use: | Standard Search x
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Find Next || Find All
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

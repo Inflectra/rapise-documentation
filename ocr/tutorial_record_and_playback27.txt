@@ -1,0 +1,28 @@
+ 
+
+GstatPage EB Mainsvixix X
+RVL [*Add New
+Flow Type Object Action ParamName Paramtype Paramvalue H
+2 Action GP og_In DoClick
+3 Action [@ Username_ DoSetText tet string librarian
+4 Action (@ Password. DoSetText tet string librarian
+5 Action @ ctloosMainconte.. DoClick
+6 ‘Assert message string Verify that: InnerText=librarian
+7 Action librarian Getinnertext
+8 Condition output1 == param2
+9 Param param2 string librarian
+10 Action @ Book Manageme... DoClick
+Fry Action @ _Create_new_bo.. DoClick
+2 Action @ Home DoClick
+13 Action @Author_Manage.._ DoClick
+14 Action @ _Create_new_bo.. DoClick
+15 Action @ Home DoClick
+16 Action GO log_in DoClick
+v
+
+18
+
+ 
+
+ 
+

@@ -1,0 +1,18 @@
+Ca
+
+ 
+
+Overview Work Security Alerts Version Control Agent queues Service Hooks Service
+
+ 
+
+New queue. Agents for pool Default
+
+Manage poots Agents Roles
+
+4 All Queues Enabled Name State Current Status
+~ | & Default (Default) AMSTERDAM —offine tale
+
+& Hosted (Hosted)
+I HASWELL Offine Idle
+

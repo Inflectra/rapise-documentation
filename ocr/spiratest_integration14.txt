@@ -1,0 +1,20 @@
+ 
+
+ 
+
+ 
+
+Create Test Repository in Spira - ag x
+
+FRapise will create a new folderin the selected Spira project to store the test script and associated fies:
+
+eee
+ee eee
+ee aracrenaos
+
+Greate. Cancel
+
+ 
+
+ 
+

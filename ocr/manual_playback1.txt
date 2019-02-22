@@ -1,0 +1,42 @@
+ 
+
+ 
+
+[F Executing Ability to create new book
+
+ 
+
+‘) Ability to create new book
+
+Tests thatthe user can create a new book inthe system
+WB IU \Adl ~ a+ Ay Yr SS
+Step 1 Step 2 Step 3 Step 4 Step 5 Step 6
+
+©) Step 1 of 6 - Please follow the directions outlined in the box below:
+User opens up Internet Explorer and enters application URL: http:/www libraryinformationsystem.comibeta
+
+ 
+
+Expected Result: Sample Data:
+‘The browser loads the login web page ‘nttp:/iwaw libraryinformationsystem comibeta
+
+‘Actual Result Pesce enter the actus text rezult fit lifer then click the appropriate button:
+
+ 
+
+HBIU AA ~ ate Ay > Sis
+
+errs)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

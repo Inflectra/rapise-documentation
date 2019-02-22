@@ -1,0 +1,14 @@
+Function/Var Value
+
+Type
+a Test C:\Users\inflectra\Documents\My Rapise Tests\Web Testing 2\Main.js:10
+4 params object
+password “Librarian” String
+userName “Librarian” String
+
+» JScript global code C:\Program Files (x86) \Inflectra\Rapise\Engine\Player.js:668
+
+ 
+
+Variables { Watch | Output] Warnings] Errors] Find Results
+

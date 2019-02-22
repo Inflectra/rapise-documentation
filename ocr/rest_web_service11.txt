@@ -1,0 +1,41 @@
+//Fixst get the session id so that the site can track our changes
+var LibraryInformationsystem_Get_Session = SeS(*LibraryInformationsystem Get_Session")
+Librarytnformationsysten_Get_Session.DoBxecute ();
+
+‘Tester.AssertEqual ("Error Executing led Service’, Librarytnformationsystem_Get_Session.GetResponseTsErrorstatus(), false)
+var sessionId = LibraryInfornationsysten_Get_Session. GetResponseBody0bject ()
+
+‘Tester.Message("Unigue session 1D: ' + sessionid):
+
+ 
+
+JI Specify ‘session_id' as a session-level parameter - so it will be added to every ongoing call
+Session. SetParameter ("session _id', sessionId) ;
+
+WGet the List of books
+Libraryinformationsystem_Get_Books = SeS(*Libraryinformationsystem_Get_Books")
+‘Libraryinformationsystem_Get_Books.DoBxecute () +
+LibraryInformationsysten_Get_Books.DoVerify('Tests that we have 14 books", "length", 14);
+
+//exeate a new book and get its new 1D
+var book = ();
+
+book.Nane = 'A Christmas Carol's
+
+book.AuthorId = 2;
+
+book.Genretd = 3;
+
+var Libraryinformationsystem_Insert_Book = SeS("LibraryinformationSystem_insert_Book');
+LibraryInformationsysten_Insert_Book.SetRequestBodyobject (book) +
+LibraryInformationsysten_Insert_Book. DoExecute ()
+
+var bookid = LibraryinformationSystem_Insert_Book.GetResponseBodyObject ("1d");
+‘Tester.Message('New Book ID: ' + bookid);
+
+ 
+
+ 
+
+ 
+

@@ -1,0 +1,53 @@
+GstatPage FB Mainsvixisx i) Web Testing 1_2019-02.07_16.361mp *
+
+Drag a column header here to group by that column.
+
+ 
+
+ 
+
+ 
+
+     
+
+2 Type Stat + Name Status Comment
+yo @ - a o o
+
+Message 16:35:45.145 Starting scenario: Test Info
+
+Assert 16:35:46.630 Log_In.DoCiick({]) Pass Retumed Value: true
+
+Assert Username_.DoSetText("librarian’D) Pass Retumed Value: true
+
+Assert Pass Retumed Value: true
+
+Assert «tl00gMainContent$LoginUser$Logi.DoClick(T) Pass Retumed Value: true
+
+Assert Verify that: InnerText=librarian Pass
+
+Assert Book Management.DoClick({) Pass Retumed Value: true
+
+Assert Check that the name matches Pass
+
+Assert Edit.DoGick({]) Pass Retumed Value: true
+
+Assert Book Management.DoClick(E) Pass Retumed Value: true
+
+Assert _Create_new_book_.Doclick({) Pass Retumed Value: true
+
+Assert Home.Dodiick((]) Pass Retumed Value: true
+
+Assert Author_Management.DoClick([)) Pass Retumed Value: true
+
+Assert _Create_new_book_.Doclick(E) Pass Retumed Value: true
+
+Assert Home.Dodiick((]) Pass Retumed Value: true
+
+Assert Log_In.DoGlick({]) Pass Retumed Value: true
+» (et ain Pass Passed:i5 Failed:0 Timesi7.7375
+
+ 
+
+Test Pass
+Total:17 Pass:16 Fail:0 Info:
+

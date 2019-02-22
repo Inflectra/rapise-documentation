@@ -1,0 +1,53 @@
+® Rapise 6.0.15.11 [C:\Users\inflectra\Documents\My Rapise Tests\Web Testing 2\Web Testing 2.sstest]
+File Edit View Test Tools Settings Help
+BQ @ Record p> Play €) WebSpy - MD Debugger GB Qe <p Test SH User FB RV
+
+——__| [l= iol sanrage Manis *
+
+    
+   
+
+ 
+
+# GetClass
+$+ GetCliend
+
+> GetClientY (// #4444844 Script Steps $4#4¢#4¢045#4
+$+ GetEnabied
+
++ cotieight function Test (params)
+
+$+ Gottret ‘
+
+focus //e1ick on Log In
+
+- SeS(*Log_In') .DoCLick():
+
+Sees //Set Text Librarian in Username:
+feta Se5(\Usessane.') .Dosettent (*lnsasian"
+
+//Set Text librarian in Password:
+SeS('Password_') .DoSetText ("librarian”:
+//Click on ctl00$MainContent$LoginUser$LoginButton
+SeS ("ct100SMainContent$LoginUser$Logi') .DoClick() +
+
+4+ GetNodeText
+4+ GeiPageTitle
+4+ GeiPageURL
+
+ 
+
+ 
+
+4 Geisivie //Verity that: InnerText=librarian
+4 Gettag Tester.AssertEqual ("Verify that: InnerText=librarian",
+4 Getfext //Click on Book Management
+> Getfitle Se5(*Book Management") .DoClick()
+4 GetValue
+$+ cetwiath bo 5e5 ("Amsterdam") .GetInnerText ();|
+a ka
+_ , 22 //Click on (Create new book)
+Object Tree [Files] bs Se5(*_Create new book_').DoClick();
+bs 7/Click on Hone
+es 25, SeS('Home') .DoClick();
+

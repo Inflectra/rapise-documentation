@@ -1,0 +1,31 @@
+ 
+
+ 
+
+ 
+
+Spira Connection Settings...
+
+ 
+
+URL:
+User Name: | administrator
+
+ 
+
+Password:
+Default Repository Path: | C:\Temp\RapiseTests
+Token (read only):
+
+Test ‘Save Cancel
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

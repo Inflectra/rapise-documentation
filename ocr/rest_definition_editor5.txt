@@ -1,0 +1,22 @@
+‘Auto Raw [XML | JSON
+count versicn=M"1.0% encoding=tuct-2"2>
+GArrayOfBook minsw*hetp://schenas datacontract .crg/2004/01/ inf iectra, Senplespplicetions. LAbraryinformationSysven.tieb. DateOb
+<Bock>
+<Author>
+cage>i28</Age>
+crapac/ta>
+<Nene>archur Conan Doyle</Mene>
+</auchor>
+<authortd>3</auchorra>
+lo | <baenddeds2018-01-18724:24:12</Dateadded>
+
+ 
+
+  
+
+ 
+
+ 
+
+REST ScriptSteps _ Response Body | Response Headers | Output] wamings | Errors] Find Results
+

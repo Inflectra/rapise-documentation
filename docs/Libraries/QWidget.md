@@ -1,0 +1,8 @@
+
+
+# QWidget
+
+Extends SeSSimulatedObject.
+
+
+

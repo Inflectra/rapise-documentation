@@ -1,0 +1,26 @@
+ 
+
+ 
+
+\® Scripting Language -
+
+Choose preferred scripting language:
+
+ 
+
+VL (Repise Visual Lenguage)
+
+ 
+
+ 
+
+ 
+
+JavaScript (Advanced Users)
+
+| Don't ask (may be changed later in Options|Setings\Defeult Scripting Language)
+
+ 
+
+ 
+

@@ -1,0 +1,56 @@
+ 
+
+(© Ropise 60.15.15 [C:\Users\Public\Documents\Rapise\Samples\SampleATM\SampleATM.sstest]
+File Edit View Test Tools Settings Help
+
+TQ. @ Record > Play € Mobile Spy + MD Debugger Se GG op Test gH User HB av
+
+ 
+
+4B SampleATM GstatPase El SampleATMjs x
+> I Application
+> Ba Data function Test ()
+[Ba Reports ‘
+> I Scripts i
+* efileoverview
+* This example shows how you can test an MFC application and organize your
+* script as a set of functions. The test was recorded and then split into
++ parts, such as Dologin, DoDeposit, ete.
++ The AUT being used in this test is SampleATM. This is a version of ATM
+lea * terminal. It reads data from ATMDatabase.mdb database.
+2 * To become familiar with SampleATM you may launch it by double clicking
+ObjectTee Files bs * it in the project tree.
+
+ 
+
+ 
+
+DoLogin();
+DoWithdrawal () 7
+DoDeposit ()
+DoTransfex()
+DoBalance ()
+DoExSt () ¢
+
+ 
+
+ 
+
+g_load_libraries=["Generic"];
+
+ 
+
+ 
+
+ 
+
+ 
+
+>
+
+Inflectra Corporation
+
+ 
+
+ 
+

@@ -1,0 +1,59 @@
+ 
+
+® Select an Application to Record.
+
+9 Applications
+
+AUTJAVA (C:\Program Files (x86)\Common Files\Oraclelavaljavapath_target_17475497;
+
+ 
+
+‘Select From Run!
+
+  
+ 
+ 
+
+ 
+
+= Applications
+
+ 
+
+IHC \Windows\system32\cmd exe
+IHC \Windows\System32\omd exe
+
+G iirfectra | Library Information System - Goog.
+Pubrary information System | Author Manage. C:\Program Files\intemet Explorer explore exe
+Fffisales invoices - Microsoft Dynamics NAV 5108 C:\Program Files &¢86)\Microsoft Dynamics NAV\1
+
+ 
+
+= Libraries
+Library Description 5
+CO Auto Detect library automatically
+
+i Java Java support for AWTISWING
+
+Ol Managed Managed support for NET 2.0, 3.0, 3.5, 4x
+
+OO Devexpress DevExpress DXperience v10 support
+
+( NavPosControls NavPOSControls - Support for LSRetail NAV POSC..
+
+O Infragistics Infragistics support
+
+0 Telerik Telerik RadControls for Winforms @3 2010
+
+C0 Syncfusion ‘Syncfusion for Windows Forms controls support
+
+CO @tFramework Used for applications written using the Qt Framework S
+
+Cancel Refresh Select
+
+ 
+
+ 
+
+ 
+

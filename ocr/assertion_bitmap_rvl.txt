@@ -1,0 +1,35 @@
+14 %9[#"77] Compare Customer bitmap to Images\Checkpoint0001.png
+
+15
+16
+7
+18
+
+e
+
+e
+e
+e
+
+Assert
+Action
+Condition
+Param
+
+[} customer
+
+GetBitmap
+Cmpimage output, param?
+
+message
+
+param2
+
+string
+
+image
+
+‘Compare Customer bitmap to Images\Checkpoint0001.pna
+
+Images\Checkpoint0001.png
+

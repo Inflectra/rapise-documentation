@@ -1,0 +1,29 @@
+ 
+
+Recording Activity for "Test Java SWT Application”
+
+ 
+
+ 
+
+ 
+
+# Object ‘ation Data Comment
+V1 image Button Clk Press bution mage Button’
+w2 OK Click Press button OK
+3 Simple Button Click Press bution ‘Simple Bution’
+wa OK Click Press button OK
+ws Open Click Press button Open’
+WS List Selecttem 0 Select tems:0'n ”
+W7 Slider SetValue 10 Set vale: 10'n *
+<
+Verity Lean SPY Finish
+
+(Ces) (Ctri#2) cory (eee (Cris3) Cancel
+
+Paused Advanced>> (Transparent.
+
+ 
+
+ 
+

@@ -1,0 +1,111 @@
+ 
+
+Find and Replace a
+@® Find [Ma Replace
+Eind wht
+[Replace wth:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+‘Spire RestService 40 Project |~
+Look in: [Current Document
+Find options
+
+(Match case Include sub-folders
+
+CO Match whole word | Include hidden
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Use: | Standard Search
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Find Next || Replace |) Replace All
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

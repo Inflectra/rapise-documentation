@@ -1,0 +1,23 @@
+“gym NuGet restore *\"sin
+NuGet instaler
+
+Build solution *\*sIn
+Visual Studio Build
+
+B Test Assemblies **\$(BuildConfiguration)\“test.l::**\obj\"
+
+ 
+
+Visuel Studio Test
+
+Publish symbols path:
+Index Sources & Publish Symbols
+
+Copy Files to: S(buildartfactstagingdirectory)
+Copy Fle
+
+Publish Artifact: drop
+Publish Build Artifocts
+
+ 
+

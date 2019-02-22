@@ -1,0 +1,37 @@
+ 
+
+ 
+
+ 
+
+ 
+
+  
+  
+    
+ 
+  
+
+ 
+
+Microsoft Dynamics CRM
+[html/body/div[5\/div[@id="crmA\,
+qa
+
+Contacts
+0
+
+Intemet Explorer_Server
+Link
+
+  
+
+prover
+Contacts
+
+ROLE_SYSTEM_CLIENT
+( param:object_name
+HTMLObject
+
+ 
+

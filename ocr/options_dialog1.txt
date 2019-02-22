@@ -1,0 +1,72 @@
+ 
+
+ 
+
+ 
+
+@ Options
+
+ 
+
+ 
+
+General | Tools
+
+ee! |S
+
+4 Directories B
+Help Files. ‘CAUsers\Public\Documents\Rapise\Help |]
+Samples ‘C:\ProgramData\Documents\Rapise\Sample:
+User Lirares C:\ProgamData\Documents\Rapse\Scipis\Lb |
+User Scpts ‘C:\ProgramData\Documents\Rapise\Scripts
+
+4 Mise
+SplashScreen Tre LY
+
+4 Settings
+‘AsoReloadModtiedFies
+Pers (CAler adam sacinan\Documerts\My (2)
+Enable Execution Mentor True
+
+| FrameSide nde
+Default Folder
+Defauit folder for creating new tests.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+OK ‘Cancel
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

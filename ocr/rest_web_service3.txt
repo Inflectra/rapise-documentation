@@ -1,0 +1,57 @@
+1 idfn]
+
+ 
+
+4( LibraryinformationSystem
+
+>" LibraryinformationSystem_Delete_Book
+> S¥ LibraryinformationSystem_Get_BookByld
+4%" LibraryinformationSystem_Get_Books
+
+# DoExecute
+
+# DoVerify
+
+4 GetCredential
+
+4 GeiMethod
+
+4 GeiParameters
+
+4 GetRequestBodyObject
+
+> GetRequestBodyText
+
+> GetRequesttleaders
+
+4 GetResponseBodyObject
+
+4+ GetResponseBodyText
+
+4+ GeiResponseHeaders
+
+4 GetResponselsErrorStatus
+
+4 GetUr
+
+~¢ SetCredential
+
+~# SetMethod
+
++ SetParameters
+
+~# SetRequestBodyObject
+
+“6 SetRequestBodyText
+
+“4 SetRequestHeaders
+
+=4# SetUrl
+> LibraryinformationSystem_Get_Session
+>" LibraryinformationSystem_Insert_Book
+> SS LibraryinformationSystem_Update_Book
+
+Object Tree [Files] REST
+
+   
+

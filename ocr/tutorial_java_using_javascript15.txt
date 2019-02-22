@@ -1,0 +1,30 @@
+GstetPasce Mains @ Java Test2_ 2019.02.21 11-11.
+
+Drag a column header here to group by that column.
+
+ 
+
+ 
+
+# Type Start + Name Status ‘Comment
+*o @ - @ @ @
+
+Assert Image_Button.DoClick([]) Pass Returned Value: true
+
+Assert OK.Dodlick({]) Pass Returned Value: true
+
+Assert ‘Simple_Button.DoClick([]) Pass Returned Value: true
+
+Assert OK.Dodlick({]) Pass Returned Value: true
+
+Assert Open. DoClick({]) Pass Returned Value: true
+
+Assert List.DoSelectitem({0)) Pass Returned Value: true
+
+Assert Slider. DoSetvalue([10]) Pass Returned Value: true
+» Test 11:11:59.028 Main Pass Passed:7 Failed:0 Time:1.5945
+
+Test Pass
+
+Total:9 Pass:8 Fail:0 Info:
+

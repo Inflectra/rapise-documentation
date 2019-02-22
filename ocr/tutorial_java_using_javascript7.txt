@@ -1,0 +1,51 @@
+File Edit View Test Tools Settings Help
+
+BQ. @ Record > Play GQ UiAutomation Spy ~ MD Debugger Ge GQ ef Test Bp User FB av
+
+[fl ® tel stat Pace
+
+ 
+
+4G) auTuava,
+> @ advAwtControls
+> @ buttont
+» @ jeuton2
+» D) iTabbedPenet
+4G Advanced AWT
+> Bisa
+> Global
+% User Functions
+{User Variables
+
+ 
+
+Object Tree | Files]
+
+g_load_libraries=["Java"
+
+ 
+
+3
+
+Bimainis x
+
+function Test (params)
+
+//Press button "button!
+SeS("buttoni") .DoAction() 7
+
+//Press button 'advAwtControls*
+Se5('advAweControls") .DoAction()+
+
+//Do SelectItem(false) on 1istO
+SeS(‘1ist0") DoSelectItem (false);
+
+//Press button *3Button2"
+
+SeS(*3Button2") .DoAction();
+
+//Usex clicks at: 2, 13 in 'jTabbedPanel'
+SeS('3TabbedPanei') .DoLClick(52, 13);
+
+ 
+

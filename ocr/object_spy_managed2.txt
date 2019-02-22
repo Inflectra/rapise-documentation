@@ -1,0 +1,27 @@
+~ Managed Object
+
+~ Tree
+
+4 MainForm[AUTDotNet MainForm]
+> propertyGrid’ [System Windows. Forms.PropertyGrid]
+
+ 
+
+   
+   
+  
+   
+
+Parent
+
+Highlight idView]
+Refresh
+
+Save To Fil
+
+ 
+
+Save Type Information...
+
+contextMenuHolder[System. Windows Forms Label]
+

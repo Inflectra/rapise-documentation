@@ -1,0 +1,21 @@
+Fig Edit View Test Tools
+
+cfe ef
+
+Open
+Openan existing Test
+
+Open Test from Spira
+Save to Spire
+
+Open File
+
+Recent Tests >
+
+Save All
+
+Save As
+Save curent Test As
+
+exit
+

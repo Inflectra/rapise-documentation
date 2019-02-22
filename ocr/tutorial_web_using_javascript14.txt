@@ -1,0 +1,88 @@
+fi» etm) stan Page
+
+> (J Library Information System| =
+
+> (2 Library Information System |
+4 Global
+
+> Android
+
+> & Database
+
+>B File
+
+> ios
+
+> fim Navigator
+
+> © NeoLoad
+
+>FBRVL
+
+>" Session
+
+> Hi Spreadsheet
+
+40 Tester
+
+Se
+
+AssertEqual
+=<
+BeginTest
+Sees
+4 - 7 . >
+
+Object Tree [Files]
+
+  
+ 
+
+ 
+
+ 
+
+  
+
+Bimainjss
+
+function Test (params)
+
+//Click on Log In
+SeS(*Log_In') .DoClick()+
+
+//Sev Text librarian in Username:
+SeS(‘Username_') .DoSetText ("librarian":
+//Set Text librarian in Password:
+SeS('Password_') .DoSetText ("librarian");
+
+//Click on ctl00$MainContent$LoginUser$LoginButton
+SeS ("ct100SMainContent$LoginUser$Logi') .DoClick() +
+//Verify that: InnerText=librarian
+Tester-AssertEqual ("Verify that: InnerTex!
+//Click on Book Management
+
+SeS (‘Book Management") .DoClick() +
+
+ 
+
+ 
+
+ibrarian",
+
+Tester-Assertiqual (*', mali, mali) |
+seS("ansverdan') .GetianerText ():
+$eS("Edit") .DoClick(
+
+5e5('Book Managenent") -Doczick ()#
+
+ 
+
+//Click on (Create new book)
+Se5('_Create new book_') .DoClick()?
+//Click on Home
+
+ 
+
+ 
+

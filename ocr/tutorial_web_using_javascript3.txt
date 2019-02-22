@@ -1,0 +1,72 @@
+BCT TN el UW oR
+
+Book MANAGEMENT
+
+The following books exist in the system: (Create new book)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ID [Name Author Genre Edit
+1_| Hound of the Baskervilles _| Arthur Conan Doyle | Murder & Mystery | Edit
+2_ [The scowrers ‘Arthur Conan Doyle | Murder & Mystery | Edit
+3. [Amsterdam Tan McEwan. Contemporary Fiction | Edit
+4 [saturday Tan McEwan. Contemporary Fiction | Edit
+5_| The Comfort of Strangers _| lan Mcéwan Contemporary Fiction | Edit
+6 | Chesil Beach Tan McEwan. Contemporary Fiction | Edit
+7 [Atonement Tan McEwan. Historical Fiction Edit
+8 | Bleak House Charles Dickens _| Historical Fiction Edit
+9 [Oliver Twist Charles Dickens Historical Fiction Edit
+10 [ Nicholas Nickleby Charles Dickens _| Historical Fiction Edit
+11 | David Copperfield Charles Dickens Historical Fiction Edit
+112 [ The Pickwick Papers Charles Dickens _| Historical Fiction Edit
+13 | Death on the Nile ‘Agatha Christie Murder & Mystery | Edit
+14 | Betrams Hotel ‘Agatha Christie ‘Murder & Mystery | Edit
+
+ 
+
+ 
+
+Nara
+
+TET geek 8
+
+ 
+

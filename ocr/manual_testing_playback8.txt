@@ -1,0 +1,48 @@
+ 
+
+ 
+
+[Executing MS-Paint Test
+*) MS-Paint Test:
+
+Barua ~My | Aly My Sls f
+nS to? ss
+
+(BY) (PRERIV) [Boies ©} (Gatton) (FIX)
+
+A) Step 7 of 8- Please follow the directions outlined in the box below:
+Enters text ‘This is some text”
+
+ 
+
+    
+
+Expected Result:
+This is some text}
+
+tareteson}tel
+
+BI U\AAad~ Ay Aly > Blsis
+
+ 
+
+ 
+
+‘Sample Data:
+‘SeS(Textt’) DoSetText("This is some text\r’):
+
+Actual Result- Please enter the actual test result if it differs, then click the appropriate button:
+f ate buttons
+
+wrong
+
+ae
+
+ 
+
+ 
+
+ 
+
+ 
+

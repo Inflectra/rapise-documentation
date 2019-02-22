@@ -1,0 +1,72 @@
+BD Rapise 6.0.15.11 [CAUsers\inflectra\Documents\My Rapise Tests\iOSTest\iOSTest.sstest]
+
+File Edit View Test Tools Settings Help
+
+TQ. @ Record > Play € Mobile Spy + MD Debugger Se GG op Test gH User HB av
+
+> A Basic_Controls
+
+> @ Login
+>(@ Password
+
+> & Database
+>D File
+
+> B clobal
+>O ios
+
+> Hil Navigetor
+> © Neotoad
+> OB AVL
+
+ 
+
+ 
+
+ 
+
+ifn)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ae (}
+
+10S App Simulator
+
+ 
+
+ 
+
+Object
+
+‘A Basic_Controls
+(@ Username
+
+(@ Password
+
+@ Login
+@auTios
+
+Action
+Doclick
+DoSendkeys
+DoSendkeys
+Doclick
+Doclick
+
+ 
+
+ 
+
+Inflectra Corporation
+
+ 
+

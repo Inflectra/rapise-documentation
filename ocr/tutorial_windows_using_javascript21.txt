@@ -1,0 +1,62 @@
+ 
+
+ifn)
+
+|__|
+
+> Please_enter_your_name_ *
+> B Uautomation
+
+42 Global
+
+> Android
+
+> S database
+
+>D File
+
+4B Global
+
+DoAnalogPlay
+
+DoAppActivate
+DoClick
+DoCompareJsObjects
+DoDecrypt
+DoEncrypt
+DolnvokeTest
+DoKillByName
+DokillByPid
+DoLaunch
+DoLoadObjects
+DoMessageBox
+
+ 
+
+GstatPace MB Mainjss
+
+ 
+    
+   
+    
+  
+    
+   
+
+//#444282482 Script Steps S#4#8EESE8#88¢
+
+function Test (params)
+4
+
+/Please enter your name:: Change text to ‘chris’
+SeS('Please _enter_your_name_') .DoSetText ("chris");
+
+//Bress button '0K"
+
+SeS ("0K") .DoClick() +
+
+/ (Verify that: Value=Thank you. Your name is chris.
+Tester-AssertEqual ("Verify that: Value=Thank you. Your name
+
+g_load_libraries=["UIAutomation"] +
+

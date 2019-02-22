@@ -1,0 +1,15 @@
+ 
+
+ 
+
+‘Add Request Parameter x
+
+Parameters are used in the Request URL to genericize the REST request
+
+Vie onsuTaneTeasm ————————+d
+a) [coe
+
+ 
+
+ 
+

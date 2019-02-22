@@ -1,0 +1,12 @@
+Bl reste Script “G} Remove Step 9€ Clean
+Get_ Session GET
+4*Get_Book GET
+Verify Response length=14
+Verify Response[0] Name=Hound of the Baskervilles
+‘Add_Book POST
+Get Book GET
+
+REST Script Steps ae
+
+ 
+

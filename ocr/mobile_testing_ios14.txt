@@ -1,0 +1,27 @@
+ 
+
+ 
+
+Recording Activity for "Devi
+
+,
+
+ 
+
+ 
+
+# Object ‘Action Data Comment
+U1 Basic Controls Click Do Glick on Basic Controls
+V2 Usemame Sen... usr Do SendKeys('usr’)on Usemame
+3 Password Sen... pid Do SendKeys pwd") on Password
+Y4 Login Click. Do ick on Login
+%5 AUTOS Click Do Click on AUTIOS
+Verify Lear ‘SPY Finish
+(Crist) (Ciri#2) (CED) (eeu (Ctr+3) ore
+
+Last captured: iOSButton (AUTIOS) Advanced>> Transparent
+
+ 
+
+ 
+

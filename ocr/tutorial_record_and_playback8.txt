@@ -1,0 +1,43 @@
+eet]
+
+LIBRARY INFORMATION SYSTEM
+
+SoS Read
+
+ 
+
+WELCOME TO THE LIBRARY INFORMATION SYSTEM
+
+ 
+
+This sample application lets you view, create and edit books in the libary catalog as well as view, create and edit authors.
+
+0 view the library catalog or the authors list you will need to login as a borrower and to make changes tothe list of books or authors
+
+ou will need to
+
+ 
+
+ina a librarian.
+
+ 
+
+Note: This nota eal aplication, but is just a sample application used in the popular SpiraTest test management cystem and Raplse
+test automation system. Both ofthese products are marketed by inflectra Corporation
+
+ 
+
+Test’ Rapise _ inflectra?
+
+‘Test Management Test Automation Inflectra Corporation
+
+ 
+
+This sample application has SOAP and
+
+ 
+
+ST w
+
+b service APs that can be tested by Rapise.
+

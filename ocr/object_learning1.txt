@@ -1,0 +1,25 @@
+re)
+
+Web Testing 1
+41 Inflecra | Library Information System
+> G Author_ Management
+> G Book Management
+>G Home
+> €B librarian
+>G LogIn
+4 Library Information System | Log in
+> @ ctl00$MainContent$LoginUserSLogi
+> Password
+>(@ Username
+(2 Library Information System | Book Management
+>@ Creste_new_book_
+>€B Amsterdam
+>@eEdt
+> Global
+> Gp User Functions
+>{} User Variables
+
+Object Tree | Files
+
+ 
+

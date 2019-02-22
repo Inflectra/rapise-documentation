@@ -1,0 +1,16 @@
+ 
+
+ 
+
+ 
+
+ 
+
+Description
+
+DOM-based recorder for Spira Ul widgets
+Dynamics NAV controls
+Dynamics AX controls
+
+ 
+

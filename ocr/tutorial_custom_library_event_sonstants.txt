@@ -1,0 +1,40 @@
+ 
+
+Event Constants - Windows app) Xo
+
+€ Cs @ hitps://docs.microsoft.com/en-us/windows/desktop/winauto/event-constants
+
+Filter by title
+
+> WM_GETOBJECT
+Window Message
+
+Constants
+
+Event
+
+ 
+
+Navigation
+Constants
+
+Object Identifiers
+
+EVENT_OBJECT_UNCLOAKED
+0x8018
+
+EVENT_OBJECT_VALUECHANGE
+0x800E
+
+cloaked window still exists, but is,
+invisible to the user.
+
+An object's Value property has
+changed, The system sends this
+event for the user interface elements
+that include the scroll bar and the
+following controls: edit, header, hot
+key, progress bar, slider, and up-
+down. Server applications send this
+event for their accessible objects.
+

@@ -1,0 +1,29 @@
+ 
+
+ 
+
+ 
+
+GB Create Test Repository in Spira Lo) 8
+
+ 
+
+ 
+
+FRapise will create 2 new folderin the selected Spira project to store the test script and associated files:
+
+Local Repository Path: C:\SpiaRepositon/\MS-Paint Test TC34
+Remote Folder: Root Folder/MS-Paint Test TC34
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

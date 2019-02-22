@@ -1,0 +1,71 @@
+ 
+
+ 
+
+ 
+
+ea)
+
+Ud Object Manager
+
+ 
+
+Source Destination
+C:ASpiraRepository\Rapise Web Demo 1 TC88\Rapi_|... | []| C:\SpiraRepository\Conference Web Test 1 TC42\Conf
+Copy Object to the Right (F5) X Remove from Destination (Ctrl+D) =B Copy All to Destination =
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Source 1D Destination
+>t = Login im
+
+pf = Username_ tt
+
+>t = Password_ 1)
+
+>t = cto0. 1)
+
+>t = Book Management.)
+
+<a) Amsterdam
+
+>t = Log_Out t)
+
+> = Hound of the Bas. (.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

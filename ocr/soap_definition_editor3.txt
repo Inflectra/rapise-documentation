@@ -1,0 +1,53 @@
+GstatPage EB Mainjs _“" LibraryinformationSystemsoap
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+{el tp: fbraryinformationsystem.org/Servces/SoapService.svctwsdl GetWSDL Custom Endpoint &
+Input Value
+4°) Connection Authenticate Tipe SyaenVod
+(} Headers
+44} Body
+String userName = librarian
+‘String password = librarian
+Output Value
+49°) Connection Authenticate a
+(} Headers
+44} Body
+
+ 
+
+Boolean Connection_AuthenticateResult = True
+M1 Ranlean Cannectinn AuthentioateResultSnecified
+
+ 
+
+ 
+
+ 
+
+ 
+

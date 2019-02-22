@@ -1,0 +1,32 @@
+ 
+
+ 
+
+(3 Add New Web Service
+This wizard will create a new web service definition file inside the current test:
+@REST OSOAP
+
+ 
+
+| LibraryinformationSysterr|rest
+
+ 
+
+ 
+
+[C:\Users\adam sendmaniDocuments\My Rapise Tests\MyRestTest!
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

@@ -1,0 +1,9 @@
+EB Create Script “G} Remove Step 9€ Clean REST Script Steps.
+Get_ Session GET
+
+Hide
+
+ 
+
+REST Script Steps | Response Body | Response Headers | Output] Wamings | Errors] Find Results
+

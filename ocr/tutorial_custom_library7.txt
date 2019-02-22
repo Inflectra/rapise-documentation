@@ -1,0 +1,60 @@
+ 
+
+RQ] Acctvent - In Context [Stopped]
+
+File Events Mode Help
+
+ 
+
+TRACING
+“TRACING
+
+TRACING
+
+TRACING
+'SYS_FOREGROUND
+OBJ REORDER
+/OBJ-FOCUS
+/OBJ-FOCUS:
+|OBJ-SELECTION
+/OBJ-FOCUS
+|OBJ_VALUECHANGE
+|OBJ_VALUECHANGE
+|OBJ_VALUECHANGE
+|OBJ_VALUECHANGE
+|OBJ_VALUECHANGE
+|OBJ_VALUECHANGE
+|OBJ_VALUECHANGE
+
+Thal
+Removing ail event handlers
+
+Lstening disabled, EXIT
+
+UlAutomation Evert: No eror
+
+Name="CustomConirolApp' Role=window State=sizeable moveable focusable
+Name="Desktop” Role=clent State-focusable
+
+|Name="CustomConirolApp'” Role=client Statefocused focusable
+
+Name=fbstr=NULL] Rolewist Siste-focused focusable
+
+Name="Siring 5” Role=sider State=selected focused focusable selectable
+Name="'Sting 5” Role=sider State=selected focused focusable selectable
+Name="'Siing 5” Value="4" Role=sider State=selected focused focusable selectable
+Name="Siing 5" Value="5" Role=sider State=selected focused focusable selectable
+|Name="'Siing 5” Value="6" Role=sider State=selected focused focusable selectable
+\Name="'Siing 5" Value="7" Role=sider State=selected focused focusable selectable
+|Name="'Sting 5” Value="8" Role=sider State=selected focused focusable selectable
+Name="Siing 5" Value="3" Role=sider State=selected focused focusable selectable
+"Name="'Sting 5” Value="10" Role=slder Siate=selected focused focusable selectable
+
+ 
+
+ 
+
+ 
+
+ 
+

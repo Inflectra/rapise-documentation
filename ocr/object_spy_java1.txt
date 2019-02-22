@@ -1,0 +1,111 @@
+ 
+
+ 
+
+© Rapise Spy
+SP StartTracking (Cut-G)
+— Java Object
+
+~ Tree
+4 panelOjava.awt Panel]
+label0fjave.awtLabel]
+textArea [java swt TextArea]
+listifava.swt List)
+button fava awt Button]
+button2[java.awtButton]
+advAwtControlsjava.awt Button]
+checkbox! fjava.awt Checkbox}
+textField2|jave awt TextField]
+choice2{java.awt Choice]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+java ant Colort=200 9-220)b=255]
+
+ 
+
+ 
+
+ 
+
+3
+[iava.awt Component @8F7=2
+
+ 
+
+[Live avd event Containerlistener @889cd5,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+java avd Fontffamily=Dislog.name=Dialog sie=plain size=12]
+
+ 
+
+java awe Colorr=0.g=0=0)
+
+ 
+
+java ave. Insetsop=0,eft=0 bottom=0 ,ight=0]
+
+ 
+
+[nul
+
+ 
+
+java av Dimension|with=32767 height=32767]
+
+ 
+
+java at Dimension{width=440 height=210)
+
+ 
+
+[panelO
+
+ 
+
+java at Dimension{width=440 height=210]
+
+ 
+
+false
+
+ 
+
+ 
+
+rue
+
+ 
+
+ 
+
+ 
+
+ 
+

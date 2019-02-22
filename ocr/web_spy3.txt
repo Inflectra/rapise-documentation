@@ -1,0 +1,27 @@
+© Chrome
+DOM Tree
+4-1: hiip:llibraryinformationsystem.org/Books.aspx
+4 <html xmins="htipwww.w3.org/1999ixhtml" xmb:lang="en">
+> <head>...<thead>
+4 <body>
+4 <form method="post’ action=" Books aspx’ id="ct01">
+> <div class="aspNetHidden’>..<Idiv>
+<script type="text /avascript>IFeI[CDATAvar theForm = docume...</sc
+<script ero="/WebResource.axd?d=9_D!
+> <div class="aspNetHidden’>..<Idiv>
+4 <div class="page">
+> <div class="header’>..</div>
+4 <div class="main">
+‘<h2>Book Management<Ih2>
+4 <p>
+The following books exist in the.
+<a href="BookEditaspx’>(Create new book)</a>
+> <div>..<idiv>
+<div class="clear"><idiv>
+<div class="footer"><Idiv>
+<script type="iext/avascript>>new Sys. WebForms Menu({ element..<)
+
+  
+
+Qu-Rawwl.” type="textljavas
+

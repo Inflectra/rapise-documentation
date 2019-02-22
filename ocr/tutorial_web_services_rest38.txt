@@ -1,0 +1,14 @@
+function Test ()
+14
+SeS(‘LibraryInformationSystem _Get_Session') .DoExecute (null);
+var sessionId = SeS(*LibraryInformationSystem_Get_Session') .GetResponseBodyObject () 7
+Tester.Message (sessionId) :
+
+  
+
+SeS(‘LibraryInformationSystem_Get_Books') .DoExecute ({"session_id":sessionTd})
+var books = SeS(*LibraryInformationSystem_Get_Books') .GetResponseBodyObject () 7
+Tester.AssertEqual ("Bock count matches’, 14, books.length);
+
+g_load_libraries=["ileb Service"];
+

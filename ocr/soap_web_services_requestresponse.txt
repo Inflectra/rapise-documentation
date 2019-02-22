@@ -1,0 +1,63 @@
+(http://www libraryinformationsystem.org/Services/SoapService.svc?wsdl Get WSDL | Custom Endpoint
+
+Fike || Reaxs/ewaeo||
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—RequestPropert ones
+
+AlowhstoRedrec False =
+
+Aontnten Fa Auto [Row] xo 0M
+
+Howlite Sean <?uml version="1.0" encoding="utf-8"?><scap:Envelope xmlns:soap="nttp: //schemas.Xm A
+BasicéuthUserNs
+
+ContentType text/aml: charset -utf£
+
+‘HttpProxy_
+
+Keephive False
+
+Method Post
+
+Posined False
+
+Predutherticate False y
+SendChunked False < >
+SOAPAction “http://www iflectra
+
+Timeout 100000 aa ean
+ut bitp://www Hibraninfol = <coae- 300 OO 7m
+
+UseCookieContait True
+
+v False |Content-Length:296
+
+\Cache-Control:private
+|Content-Type:text/xml; charset=utf-8
+Date:Fri, 08 Feb 2019 11:56:05 GMT
+\Server:Microsoft-IIS/8.0
+X-AspNet-Version:4.0.30319
+\x-Powered-By:ASP.NET
+
+ 
+
+« >
+
+ 
+
+ 
+
+ 
+

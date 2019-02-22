@@ -1,0 +1,24 @@
+ 
+
+ 
+
+(& SpiraTeam v4.0 REST API Test Properties
+Spira Properties
+Spite Prot:
+TestFolder: [REST API Tests
+TestCase: [REST v4 0 API Test
+
+> Unlink from Test Case
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

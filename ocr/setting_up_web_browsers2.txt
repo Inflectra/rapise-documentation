@@ -1,0 +1,8 @@
+LR) Some features may require payment $
+
+Rapise Plugin for Firefox
+by Inflectra Corporation
+
+Allows users of our Rapise automated software testing tool to record and play Parerrer eo
+automated tests against the Firefox web browser.
+

@@ -1,0 +1,13 @@
+Contains
+(Ends with
+
+Does not start with
+Does not contain
+Does not end with
+
++Does not match
+
+Not Like
+
+ 
+

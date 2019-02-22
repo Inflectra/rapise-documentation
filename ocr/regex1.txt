@@ -1,0 +1,33 @@
+a
+
+Microsoft_Exoe!
+Pane Custom/{FBECCCF3-S4AC-4d77-SAD8-13
+0
+
+image
+
+UlAutomation|
+
+False
+
+UlAutomation|
+
+‘Microsoft Excel
+
+(J param:object_class
+
+UiADbject
+
+WindowsForns10 Window 8 app.0. 705 16.
+I] regex:.“Microsoft Dynamics NAV [a]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

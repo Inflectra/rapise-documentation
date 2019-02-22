@@ -1,0 +1,22 @@
+= Libraries
+
+ 
+
+ 
+
+Library [Descrinon Te]
+Oi Activex ‘Support for ActiveX Libraries =
+CO Qt Framework Used for applications written using the Qt Framework
+
+M) UlAutomation ‘Tests .NET, WPF and Silverlight Applications
+
+Cl Activexct ‘Support for Component One 8.0 ActiveX Libraries
+
+Cancel @ Retesh Select
+
+ 
+
+ 
+
+ 
+

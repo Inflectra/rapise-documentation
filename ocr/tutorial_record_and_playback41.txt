@@ -1,0 +1,42 @@
+10
+iL
+12
+13
+14
+15
+16
+7
+18
+19
+20
+
+ 
+
+Action
+Param
+Output
+Variable
+Assert
+Condition
+Map
+
+@ Book_Manageme.
+
+O _Create_new_bo.
+O Home
+
+@ Author_Manage.
+@ _Create_new_bo.
+O Home
+
+@og_In
+
+Doclick
+
+Doclick
+Doclick
+Doclick
+Doclick
+Doclick
+Doclick
+

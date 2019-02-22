@@ -1,0 +1,9 @@
+BB Create Script “@ Remove Step HX Clean SOAP Script Steps
+Connection_Authenticate {'userName™."librarian”."password” librarian")
+
+Hide
+
+ 
+
+SOAP Script Steps | Response Body| Response Headers | Output] Warnings | Errors | Find Results
+

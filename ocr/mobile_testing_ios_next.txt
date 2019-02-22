@@ -1,0 +1,78 @@
+ 
+
+© Rapise Spy
+Spy PRI Get Snapshot (Ctrl-G) Test Locator [@& Edit Profiles @ Profile: iOS AppSimula ~ Context: NATIVE_APP
+Tap Swipe + Shake Precise Tap + ScrollTo —Acceptalert Dismiss Alert Change Orientation
+
+TF tas cts
+
+4 (0) XCUIElementTypeApplication|0.0][375.812]
+> (0) XCUIElementTypeWindow(0.0]375.812]
+> (1) XCUIElementTypeWindow(0.0]375.812]
+> (2) XCUIElementTypeWindow(0.0]375.812]
+
+AUTOS
+0
+
+XCUiElementTypeApplication
+|AUTIOS
+
+(©) XCUlElementTypeApplcation(0,
+/XCUIElement TypeAppication
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+139
+
+<auTios: Basic
+loin data
+
+Mercury
+Mercury
+
+ 
+
+tein
+
+ 
+
+ 
+
+ 
+
+ 
+

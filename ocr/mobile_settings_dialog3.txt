@@ -1,0 +1,32 @@
+Mobile Settings =
+Select Profile: Android Adobe AIR Simulator vy] | s TestUd Duplicate Create «Rename Delete
+in
+* Connection A
+Us pu/192.168.1.47:47230wdhub
+
++ Details
++ Primary Capabilities ©
+
+‘app [Usersiequirrel/Downloadsilogintest pk
+
+browserName
+
+deviceName Android Emulator
+
+platformName Android
+
+BlatformVersion 44
+
+7 BrowserStack ©
+‘browserstack appium_version
+browserstack key
+browserstack.user
+
+device
+realtfobile
+
+ 
+
+Primary Capabilities
+Desired capabiliies area set of keys and values (le., @ map or hash) sent to the Appium server to tel the server what kind of automation ses.
+

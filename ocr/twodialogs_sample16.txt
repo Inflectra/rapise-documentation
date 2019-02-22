@@ -1,0 +1,38 @@
+ielp
+
+eb Spy ~ MD Debugger Se QQ <p> Test Mp User FB RV i)
+
+GstatPace FB Mainrixdex * GH) twoDialogsTest_2019-02-12_11-35%p
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Type Object Action Paramn
+Please enter your name:: Change text to chris”
+
+‘Action (@ Please _enter_yo. Dosettext val
+
+Press button ‘OK
+
+Action @ox DoClick
+
+Verify that: Value=Thank you. Your name is chris.
+
+ 
+
+Assert message
+‘Action [\UtAutomation GetValue
+
+Condition output == param2
+
+Param param2
+
+ 
+

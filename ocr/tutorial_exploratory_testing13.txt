@@ -1,0 +1,41 @@
+ 
+
+ 
+
+[S) Executing MS-Paint Test
+
+ 
+
+‘®) MS-Paint Test
+
+ 
+
+GBIU Ada ~My Ay Yy BSS
+es St Set
+(bas) FERNY) (Bectes) (Conon!) (DX)
+
+A) Step 7 of  - Please follow the directions outlined in the box below:
+Enters text ‘This is some text"
+
+ 
+
+Expected Rest Sample Data:
+This is some text ‘SeS( Text) DoSetText(This is some text’);
+
+‘Actual Result Please enter the actual test esl iit fers, then clk the appropriate button:
+The text didnot display correctly]
+
+BBY AA ~My Ay, Sls
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

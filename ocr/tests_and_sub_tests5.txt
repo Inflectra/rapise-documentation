@@ -1,0 +1,49 @@
+4B WebSite “
+> Is Scripts
+
+    
+
+reateNewBookis
+reateNewBook objects
+
+ 
+
+ 
+
+ 
+
+v Tag C\Users fleet
+BeautfySavedObj True
+CacheObjects False
+Capture Curser True
+Capture Executor False
+Capture Recordin: False
+‘Commandinterval 1000
+‘CommandLine
+EntryPoint Test
+Include in Report False
+Iteration Court 1
+
+Metadata C\Users\inflectr
+Methodology Web
+Name CreateNewBook
+ObjectLookupAtte 300
+ObjectLookupAite 5
+ObjectsPath CreateNewBo:
+> Options
+
+ReportPath __CreateNewBo v
+
+ 
+
+ 
+
+Tag
+Additional properties related to fle ofthis type
+
+ 
+
+ 
+
+ 
+

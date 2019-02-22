@@ -1,0 +1,35 @@
+GstatPace MB Mainjss
+
+//#444282482 Script Steps S#4#8EESE8#88¢
+
+  
+
+ls
+; function Test (params)
+le
+
+Global. DoLaunch (
+
+WOur name:: Change text to ‘chris’
+
+     
+
+ 
+
+lo SeS('Please _enter_your_name_') .DoSetText ("chris");
+
+lho //Bress button '0K"
+
+ha. SeS ("0K") .DoClick() +
+
+ha / (Verify that: Value=Thank you. Your name is chris.
+
+as Tester-AssertEqual ("Verify that: Value=Thank you. Your name
+lhe
+
+hs by
+
+he
+
+17 g_load_libraries=["UIAutomation"];
+

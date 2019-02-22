@@ -1,0 +1,25 @@
+ 
+
+ 
+
+® Rapise Spy = a x
+Spy PAI GetSnapshot (Ctr-G) Test Locator (@ Edit Profiles @ Profile: Android AppSi ~ Context: [NATIVEAPP |= Discovery Mode
+Tap Swipe > Shake Precise Tap + ScrollTo | Accept Alert Dismiss Alert Change Orientation
+
+CF tas cts
+
+4 (0) android. widget FrameLayout(0,0][1080,1794]
+> (0) android. widget LinearLayout{0,0][1080,1794)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

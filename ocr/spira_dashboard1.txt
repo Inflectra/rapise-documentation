@@ -1,0 +1,94 @@
+ 
+
+1 Start Page [IB] Web Testis F)Spira Dashboard
+
+SpiraTeam Dashboard for Test Management
+
+   
+
+RRapise Demo Project
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Test Cases MyAssioned —|V|
+vid Name Description Action
+Tc000035 Functional Tests
+CO reoo016s «= Flex 4 Test Save As.
+© rc000165 — E)Desktop Demo Test ‘Save AS.
+
+‘Tc000036 @ Regression Tests
+© 1c000037 = Library Web Test
+
+Test Sets
+via Name Description
+
+‘Greate Test Set_||_ Add to Test Set
+
+ow
+
+Action
+
+ 
+
+CI Txon012 Ey Rapise Demo Set
+1 Dx000022 #3 DH Automated Testing
+oO
+
+7x000037 44 Rapise Demo 2
+
+ 
+
+Login / Register
+
+‘Welcome, administrator!
+Logout
+
+Auto Login:
+
+Spira Connection
+
+Spira URL: _http:/idoctor/SpiraTeam
+User Name: administrator
+
+Local Folder: C:\SpiraRepository
+
+Eat Connection Settings
+
+  
+
+Automation Hosts
+
+[vewin
+
+‘Token: WIN7
+Description: null
++ Create Host fr this Machine
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

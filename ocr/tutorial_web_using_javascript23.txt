@@ -1,0 +1,15 @@
+Tester.AssertEqual ("Verify that:
+//Click on Book Management
+SeS (‘Book Management") .DoClick (
+
+InnerText=librarian",
+
+ 
+
+Se5('Amsterdam') .GetInnerText ()
+
+  
+
+laa //Click on (Create new book)
+lbs SeS(' Create new book ') .DoClick():
+

@@ -1,0 +1,54 @@
+ 
+
+ 
+
+Mobile Settings
+
+‘Select Profle: [Android App Device
+
+|S
+
+~~) S857) [testud | | Duplicate | | create || Rename || Delete
+
+ 
+
+‘saferilgnoreF raudWerning
+safariOpenLinksInBackaround
+‘screenshotWeitTimeout
+‘sendKeyStrateay
+‘showOSLog
+
+did
+
+‘weit orAppScript
+
+xcodeOraid|
+
+‘accessKey
+‘captureScreenshots
+deviceGroup
+‘sessionDescription
+‘sessionName
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Kobiton / Sauce Labs
+
+Kobiton is a mobile cloud platform that enables users to perform manual or automated testing on physical IOS and Android devices.
+
+ 
+
+ 
+
+ 
+

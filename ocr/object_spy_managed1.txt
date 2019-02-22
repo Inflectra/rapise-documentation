@@ -1,0 +1,83 @@
+ 
+
+ 
+
+© Rapise Spy
+SP Start Tracking (CH+G)
+
+~ Managed Object
+~ Tree
+4 MainForm[AUTDotNet MainForm]
+
+> propertyGrid’ [System Windows. Forms.PropertyGrid]
+checkedListBox_ [System Windows Forms.CheckedListBox]
+dateTimePicker1 [System Windows Forms DateTimePicker]
+dataGrid View! [System Windows Forms DataGridView)
+tooltip [System Windows. Forms ToolStrip}
+bitlias[System Windows Forms Button]
+listView2[System Windows Forms ListView]
+listView [System Windows Forms ListView]
+contextMenuHolder[System Windows Forms Label]
+autTabControl[System Windows Forms.TabControl]
+tree ViewNoCB|System Windows Forms TreeView)
+autLabellSystem Windows Forms Label]
+tree ViewCB [System Windows Forms TreeView)
+aut ditfSystem Windows Forms TextBox)
+radio2[System Windows Forms RadioButton]
+‘autLinkLabel[System Windows Forms.LinkLabel]
+radio [System Windows Forms RadioButton]
+‘autButton{System Windows Forms Button]
+listBox1 [System Windows Forms ListBox]
+ccheckBox{System Windows Forms. CheckBox]
+> comboBox{System Windows Forms.ComboBox}
+
+‘menuStrp 1[System Windows Forms MenuStrip]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

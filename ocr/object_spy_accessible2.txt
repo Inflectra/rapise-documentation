@@ -1,0 +1,41 @@
+= Accessible
+
+~ Tree
+
+Hexadecimal[ROLE_SYSTEM_WINDOW)]
+‘System[ROLE_SYSTEM_MENUBAR ]
+
+> [ROLE_SYSTEM_TITLEBAR.Hex]
+
+Application[ROLE_SYSTEM_MENUBAR ]
+
+Hexadi
+> Vertica
+> Horizof
+
+ROLE,
+
+ 
+
+1OBU.
+
+ 
+
+Parent
+Highlight
+Refresh
+Default Action
+Mouse Click
+Save to Fi
+
+ 
+
+ 
+
+PAR]
+LLBAR,
+
+ 
+
+ 
+

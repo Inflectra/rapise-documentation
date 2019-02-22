@@ -1,0 +1,35 @@
+ 
+
+& Save Test to Remote Repository
+
+ 
+
+ 
+
+Server: hitips:/dev-eu spiraservice.net! Change Refresh
+Project:
+Library Information System .
+Test Case Folders:
+
+4G Library Information System
+‘Common Tests
+
+Functional Tests
+
+Pa Rearessinn Tests z
+
+ 
+
+Test Cases:
+Name iD Repository Path
+
+teclPan(eadeny [
+
+‘Save/Synchronize Cancel
+
+ 
+
+ 
+
+ 
+

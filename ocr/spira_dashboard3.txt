@@ -1,0 +1,7 @@
+Login / Register
+
+Welcome, administrator!
+Logout
+
+Auto Login:
+

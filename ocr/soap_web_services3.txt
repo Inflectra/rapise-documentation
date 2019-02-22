@@ -1,0 +1,33 @@
+4 3] WebServicesSOAP “
+4-© BasicHttpBinding_lSoapService
+
+=@ Author_Retrieve.
+
+Author_RetrieveByld
+
+ 
+
+     
+    
+   
+   
+
+Book_Insert
+
+Book_RetrieveByDateRange
+=@ Book_RetrieveByld
+Book_Update
+
+=@ Book_Uploadimage
+Connection_Authenticate
+
+=@ Connection_Disconnect
+
+4-© BasicHttpBinding_ISoapService1
+
+ 
+
+=@ Author_Retrieve
+
+ 
+

@@ -1,0 +1,68 @@
+ 
+    
+    
+    
+     
+   
+
+Def Test Q User FB RV
+Stop Debugger
+
+    
+
+D Continue $  Stepin
+
+ 
+
+TP StepOut Step Over
+
+ 
+
+Mainjs *
+
+> (2) Inflectra | Library Informatio:
+> (2) Library Information System
+> (2) Library Information System
+42 Global
+
+> i Android
+> S database
+
+B Fie
+
+//#444282482 Script Steps S#4#8EESE8#88¢
+
+function Test (params)
+
+>
+>
+
+ 
+
+Se5('Username_') .DoSetText ("librarian");
+
+> Dios //Sec Text Librarian in Password:
+
+> Iii Navigator Se5(*Password_') .DoSetText ("Librarian"):
+
+> @ Neoload //Click on ct100SMainContent$LoginUser$LoginButton
+> EB RVL SeS ("ct 100$MainContent$LoginUser$Logi'") -DoClick():
+>t Session //Verity that: InnerText=librarian
+
+  
+    
+
+Tester.AssertEqual ("Verify that: InnerText=librarian", SeS('librarian') .GetInnerText ()
+LCs ck on Rook Manacement.
+
+Function/Var Value
+> Test :\Users\inflectra\Documents\My Rapise Tests\Web Testing 2\Main.j3:8
+
+» JScript global code :\Program Files (x86) \Inflectra\Rapise\Engine\Player. 3s: 668
+
+ 
+
+ 
+
+ee ee ree
+

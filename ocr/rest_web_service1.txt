@@ -1,0 +1,73 @@
++BXx G stat Page (QLibraryinformationSystemrest x
+4d LibraryinformationSystemrest ~ [Ej dig Update Object Tree %q] Add Header (5) Add Parameter “Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+cain REST Request
+© Get BookByld Name Get Books
+“© Insert Book
+me Updote Book ‘Method: [cer ¥ | [ ttpswwwjbraryinformationsystem ora/servicesitestservice svclbook7session_id=(session id)
+HO Delete Book Credentials: brarian ()
+ObjectTree | Files REST ©
+Ene Name Value Operations
+ie Accept [ppptictionison
+Credential _System_Net.NetworkG Content-Type 'applicationjson ®
+Headers Collection)
+Method = GET Parameters)
+we Name Value Operations
+im Iittp://www libraryint {session id} (12345 (Tnsertin URL) [|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+2
+3
+4
+5
+6
+7
+8 "Authorid": 3,
+9 "DateAdded": "2015-01-18T19:24:12+00:00",
+10 DateAddedIso": "2015-01-18T19:24:12",
+Name a1 A "Genren: {
+
+«<
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Script Steps _ Response Body | Response Headers | Output] Warnings | Errors] Find Results
+
+ 
+

@@ -1,0 +1,50 @@
+ 
+
+ 
+
+‘Ny SeSSamplesNUnitall - NUnit
+File View Project Test Tools Help
+
+ 
+
+T:\Adhinw/appere\Estensione\UntT esting NUnit SeSNUnit\
+
+© Jo SmateStucioSamples = SmatteStudoSamples
+IP
+
+Testlinalog_ Paint
+TestCrassBrawser
+TestDLLHandlerManaged
+TestDLLHandleiUnmanaged
+TestDatNet20
+Testimage_CheckPoint
+TestMFC_SmarteATM
+TesiMSAccess
+TesiMSExcel
+
+TesiMSWerd
+
+TestReporting
+TestSimulatedObiect Paint
+TestSpreadSheet Cale
+TestUlsingCustomStings
+TestUsinginclude
+TestUsingResisty
+TestUsinci<ML
+
+  
+
+ 
+
+ 
+
+ 
+
+4 i » | Enots and Faitres] Tests Not Run Console.Out [ Console.Etror
+
+Ready Test Cases: 17
+
+ 
+
+ 
+

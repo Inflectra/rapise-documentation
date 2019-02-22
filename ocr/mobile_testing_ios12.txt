@@ -1,0 +1,96 @@
+ 
+
+© Rapise Spy
+
+Tap Swipe > Shake —PreciseTap > Scroll To
+
+XCUIElementTypeApplication(0.0][375.812]
+0) XCUIElementTypeWindow(0,0]375.812]
+! (0) XCUIElementTypeOther(0.0][375.812]
+> (0) XCUIElementTypeNavigationBar{0.44](375.88)
+4 (1) XCUIElementTypeOther{0.0]1375.812]
+4 (0) XCULElementTypeOther{0.0]1375.812]
+4 (0) XCULElementTypeTable{0.0][375.812]
+> (0) XCUIElementTypeCell[0.88]1375.132]
+4 (1) XCUIElementTypeCell(0.132]375.176]
+(©) XCUlElementTypeStaticTexi{16,138][12 1,158)
+(1) XCUElementTypeStaticText{16,15711294,171]
+(2) XCUIElementTypeOther{15,175]375,176]
+(@) XCULElementTypeOther{16,175]1375,176]
+(4) XCULElementTypeButton[351,14711359,160]
+> (2) XCUIElementTypeCell[0,176][375.220]
+1) XCUIElementTypeWindow(0,0]375.812]
+
+ 
+
+Accept Alert
+
+Dismiss Alert Change Orientation
+
+TF ts tet
+
+XCUlElement TypeWindow/CUIEle,
+Basic Controls
+
+ 
+
+0
+
+ 
+
+XCUiBlementTypeStaticTet
+
+ 
+
+Basic Controls
+
+ 
+
+(© XCU Element TypeSiaticTed{T6 1
+
+ 
+
+/XCUlElement Type Appication/XCU
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Spy FEY Get Snapshot (Cir-G) Leann Object (Cti-2) TestLocator [Z Edit Profiles @ Profle: iOS AppSimula ~\Contert: |NATVEAPP
+
+ 
+
+ 
+
+m0
+
+ 
+
+Advanced Controls
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

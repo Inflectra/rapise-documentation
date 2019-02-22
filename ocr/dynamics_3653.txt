@@ -1,0 +1,27 @@
+   
+
+|e
+¥ HTML a
+
+ 
+
+Page Title Operations
+URL hitips://d365ty-6 tial operat
+XPATH [html/body/div[@id='mainC
+Locators.
+
+Object
+
+¥ Recognition
+Class, Internet Explorer_Server
+Flavor Link
+
+Alll purchase orders
+ROLE_SYSTEM_CLIENT
+
+( param:object_name
+
+ 
+
+ 
+

@@ -1,0 +1,115 @@
+ 
+
+© Papise Spy
+
+SP Start Tracking (Cit) Leam Object
+= Accessible
+~ Tree
+4 [ROLE_SYSTEM_CLIENT]]
+Name:{ROLE_SYSTEM_STATICTEXT]
+‘xtName[ROLE_SYSTEM_TEXT]]
+» ttDescription[ROLE_SYSTEM_TEXT.]
+Description ROLE_SYSTEM_STATICTEXT]
+> cboLocation|ROLE_SYSTEM_COMBOBOXHea
+Location{ROLE_SYSTEM_STATICTEXT]
+Options:[ROLE_SYSTEM_STATICTEXT]
+radOption1[ROLE_SYSTEM_RADIOBUTTON,]
+radOption2[ROLE_SYSTEM_RADIOBUTTON,]
+Active:[ROLE_SYSTEM_STATICTEXT]
+cchkActive[ROLE_SYSTEM_CHECKBUTTON ]
+Font {ROLE_SYSTEM_STATICTEXT]
+> cboFontIROLE SYSTEM COMBOBOX.MS Shel
+
+— HWND
+
+~ Tree
+
+4 formLayoutWwidgetiwidget]
+betNotes[QWidget]
+Notes:[aWidget]
+betDateTime[QWwidget]
+DaterTifawidget}
+betDatel Widget)
+‘beaTime[QWwidget]
+
+ 
+
+ 
+ 
+     
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(CHILDID_SELF
+
+ 
+
+    
+
+Defaultction
+
+[SetFocus
+
+ 
+
+Description
+
+ 
+
+HWND
+
+[romLayoutWidget{al
+
+ 
+
+0
+
+ 
+
+XeTAY=156 Wieth=3
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+= Properties
+FID #288
+Process:
+ProcessName [CAUsers\Puble\Deod
+'SoreenHeight 720)
+[SereenWiath 1280
+/SereenX fo
+[Seren 0
+
+ 
+
+ 
+
+ 
+
+ 
+

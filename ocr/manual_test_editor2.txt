@@ -1,0 +1,36 @@
+A) Ability to create new book
+‘Tests that the user can create a new book in the system
+
+Precondi
+
+ 
+
++ User is already logged in
++ The book does not already exist
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 [B| A Ava ~ A210 + | Ay Mv
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

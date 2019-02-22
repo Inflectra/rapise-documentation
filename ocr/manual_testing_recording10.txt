@@ -1,0 +1,115 @@
+ 
+
+(+ Test Steps
+
+ 
+
+> Insert Step | Insert Link | Delete | Copy | Refresh | Edit Parameters
+
+Q
+
+oo 0a
+
+o}o;aqgqja
+
+‘Show
+
+@
+
+ 
+
+Step #
+Wsteot
+@step2
+
+i step3
+
+Wstep 4
+@ steps
+@steos
+
+@step7
+
+steps
+
+Description
+User starts up the MS-
+Paint Application
+
+User clicks the main
+“Application menu’
+
+Seheeener oo | eee
+
+User clicks on ‘Pencil
+User clicks the Text’ tool
+User clicks at: 16, 256 in
+the canvas
+
+Enters text This is some
+text"
+
+User clicks on the ‘Bold’
+button
+
+ws per page
+
+Expected Result
+
+The application loads with a blank
+canvas
+
+a
+A
+
+This is some text]
+
+ii
+
+‘Sample Data
+
+‘SeS(Application_menu) DoLClick( 42,
+12);
+
+‘SeS(New) DoLClick(44, 13);
+
+‘SeS(Pencif) DoLCiick(15, 8);
+‘SeS(Text) DolCiick(14, 16)
+‘SeS((Simulated’) Dol Click(156, 256);
+
+‘SeS(Textt’) DoSetText("This is some
+text");
+‘SeS(Bold’) DoLClick(11, 14);
+
+Execution
+Status
+Not Run
+Not Run
+
+Not Run
+
+Not Run
+Not Run
+Not Run
+
+Not Run
+
+Not Run
+
+1D
+‘Ts000045
+
+Ts000046
+
+Ts000047
+
+Tso00048
+Ts000049
+Ts000050
+
+‘Ts000051
+
+Ts000052
+
+4 Displaying page (1) of 1» >
+

@@ -1,0 +1,42 @@
+4 CustomControl
+Ba Lib
+41m LibUser
+BB LibUseris
+BB LibUserjstib
+> Engine sstest
+BB Minis
+BB objecisis
+BB User js
+
+GS start Pase
+
+BB Libvserjsii
+
+fib X MB Libvseris
+
+SeSRegisterLibrary(
+
+4
+
+name: 'User',
+description: ‘User - Default user-defined library’,
+
+include:
+
+*Lib/LibUser/LibUser.js",
+
+info: null,
+load_order: 1000,
+
+recording.
+autoload!
+
+ 
+
+ 
+
+// Only use in playback. If it has recording rules then set it to
+true // Always load this library for this test and each subtest
+
+‘crue!
+

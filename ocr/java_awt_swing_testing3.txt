@@ -1,0 +1,30 @@
+ 
+
+ 
+
+‘System Properties
+
+ComputerName Hardware Advanced SystemProtection| Remote
+
+‘You must be logged on a8 an Administrator to make mostofthese changes.
+Performance
+Visual effects. processor scheduling. memory usage. and vital memory
+
+User Profiles
+Desktop setings related to your signin
+
+‘Settings...
+
+‘Startup and Recovery
+‘System startup. system failure, and debugging information
+
+Setings...
+
+Environment Variables.
+
+ok Cancel Apply.
+
+ 
+
+ 
+

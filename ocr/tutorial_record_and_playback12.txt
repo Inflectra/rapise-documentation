@@ -1,0 +1,38 @@
+ 
+
+ 
+
+Recording Activity for "Internet Explorer HTML"
+
+ 
+
+# Object Action Data
+WI Login Click
+w2 Usemame: SetText librarian
+
+Glick on Log In
+
+‘Set Text librarian in Usemame:
+
+ 
+
+Verity Learn SPY
+(Crist) (Crri#2) (Cirie5)
+
+Paused
+
+Resume
+
+Finish
+(Ctrie3)
+
+‘Advanced>>
+
+Cancel
+
+[Clitreneparent
+
+ 
+
+ 
+

@@ -1,0 +1,35 @@
+G@srrage Wi Msinjs _ [Sl LibraryinformationSystem-rest™
+Eh % Update Object Tree fi] Add Header (3 Add Parameter "P Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Request
+Nome: (Get Session
+Method: [cer » | [ ttpswww.jbraryinformationsystem org/Servces/RestServce sveisession
+
+ 
+
+ 
+
+Credentials: librarian
+Body: ©
+Rew XML JSON
+
+1 | <?xml version="1.0" encoding="att-8"2>
+> <sering xnins="aterf://schemas microsofe . com/2003/10/Serialization/">e7e20de7-easb-42be-229b-c8
+< >
+
+ 
+
+ 
+
+REST ScriptSteps Response Body | Response Headers] Output] wamings] Errors] Find Results
+

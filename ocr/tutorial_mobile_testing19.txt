@@ -1,0 +1,52 @@
+ 
+
+© Papise Spy
+
+Spy FEY Get Snapshot CirG) Leann Object (Cti-2) TestLocator [Z Ealt Profiles @ Profile: Android Appi ~ Context: NATIVE APP
+
+Tap Swipe. > Shake —PreciseTap -~ ScrollTo | Accept Alert Dismiss Alert. © Change Orientation
+
+ts tet
+
+) android widget Framel ayout{0,0][1080,1794]
+(0) android. widget LinearLayout(0.0][1080,1794]
+
+5
+
+[Djandroid widget FrameLayout{0) |) paca
+
+android widget FrameLayout
+
+fo.0)7080.1794)
+false
+
+false
+android widget FremeLayout
+false
+
+five
+false
+
+false
+
+0
+
+false
+
+(com inflectra autandroid
+false
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

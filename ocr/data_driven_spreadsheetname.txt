@@ -1,0 +1,27 @@
+ 
+
+ 
+
+i) Create Spreadsheet
+
+You are about to create spreadsheet inside the folder of current Test,
+
+ 
+
+| searchterms|
+
+ 
+
+(CAUsersinflectra\Documents\My Rapise Tests\SearchTextisearchterms xlsx.
+
+‘Spreadsheet type:
+Excel Workbook (xlsx)
+
+ 
+
+Create Cancel
+
+ 
+
+ 
+

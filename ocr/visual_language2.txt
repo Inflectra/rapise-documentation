@@ -1,0 +1,25 @@
+Lo file ictr) startpage Mi Mains %
+
+ 
+
+Script Testing
+41 Inflectra | Library Information System
+>G LogIn
+4 Library Information System | Log in
+> @ ctl00SMainContent$LoginUser$Logi
+> Password
+>(@ Username
+> Global
+User Functions
+{} User Variables
+
+function Test (pazams)
+Se5 ("Log_In") .DoCLick()
+$e5 (‘Username ") .DoChick (|
+$e5('Usernene_') .DoSetText ("Librarian");
+Se5('Password') .DeSetText ("ibrerien")
+$e5('cel00stainconvent#LoginUser#togi") -DoCLick ()s
+Se5 ("Log In") .DoCLick (+
+
+g_load_libraries=["tg_browserLibrary:Chrome HTML8"];
+

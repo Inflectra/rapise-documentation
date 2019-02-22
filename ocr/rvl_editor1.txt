@@ -1,0 +1,41 @@
+GB start Page
+
+RVL | Sheet0 | -AddNew
+
+FE RVLWebLogins.nixdsx
+
+ 
+
+ 
+
+ 
+
+Flow Type Object ‘Action ParamName ParamType Param\ ~
+2 7 This sample tests Login screen for Libraryinforationsystem demo website.
+3 Input data fed from the ‘Logins’ map.
+4
+5 oY
+6 Map Rows Logins
+7 User Password Success
+8 ul pl false
+9 2 21 false
+10 librarian librarian true
+11 End
+2
+1B
+14 Loop Map Logins
+is [FE Toop body
+16
+vw # Login
+18 Action Otome Dodlick
+19 Action GO Lo0_In DoClick
+20 Action (Username_ DoClick
+2 # Use credentials from Logins Map
+22 Action (@Usermame_ DosetText bt Logins User
+23 Action (@Password_ DosetText bt Logins Password
+24 Action Keep_me logged... DoSetCheck state boolean True
+25 Action @ctloosMainconte... Doclick
+26
+
+ 
+

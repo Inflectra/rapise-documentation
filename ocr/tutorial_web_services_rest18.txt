@@ -1,0 +1,72 @@
+led 4g Update Object Tree Py Add Header (19 Add Parameter “P Add Credentials
+
+ 
+
+ 
+
+ 
+
+REST Request
+Nome: (Get Book
+Method: [cer » | [http woe lbraryinformationsystem org/Services/RestService svelbook7session_id=(session id) ‘Send | Record
+
+ 
+
+Credentials: ibrarian ()
+
+ 
+ 
+
+ 
+
+Headers: (A)
+Name Value Operations
+Accept ‘2pplcationison &
+Content-Type ‘applcationison
+
+ 
+
+ 
+
+Parameters)
+
+ 
+
+  
+
+Name Value
+112 {Insert in URL} [}
+
+ 
+
+ 
+
+Auto. Raw XML [SON]
+
+t
+
+ 
+
+1
+2 4
+3 author": {
+4 "Age": 125,
+5 "ra": 3,
+
+6 Name
+»,
+
+ 
+
+: “Arthur Conan Doyle"
+
+ 
+
+ 
+
+ 
+
+REST ScriptSteps _ Response Body | Response Headers | Output | Warnings | Errors | Find Results
+
+ 
+

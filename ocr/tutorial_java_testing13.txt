@@ -1,0 +1,60 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1 DomDynamicsAX
+Oi DomDynamicsCrm
+CO DomSalesforce
+
+ 
+
+1D Select an Application to Record. = a x
+‘SelectFrom Running Applications
+
+Test Java SWT Application (C:\Program Files (x86)|Common Files\Oracle\Javaliava
+= Applications
+‘Available Applications PID Path
+IBEC\Windows\system32\emd exe 18132 CAWindows\System32\omd.exe
+IBC: \Windows\system32\omd exe 10804 CAWindows\System32\omd.exe
+© iirfectra | Library Infomation System -Goog... 14992 C:\Program Files 86)\Google Chrome Applic
+Pubrary information System | Author Manage... 10960 C:\Program Files\Intemet Explorer\iexplore.exe
+Fflisales invoices - Microsoft Dynamics NAV 5108 C.\Program Files &86)\Microsoft Dynamics Ni
+EilTest Java SWT Application 10436 C:\Program Fes x86)\Common Files\Oracle\J
+« >
+= Libraries
+Library Description a
+11 DOM Spire DOM-based recorder for Spira Ul widgets
+© UlAutomation Tests NET. WPF and Silverlight Applications
+0 ves ‘Support for VB6 Targets,
+O Activex ‘Support for ActiveX Libraries
+C0 DynamicsNAV Dynamics NAV controls
+
+Dynamics AX7+ support library
+Dynamics CRM support library
+Salesforce support library
+
+Tests common Windows Win32 controls,
+
+ 
+
+1 DynamicsAX Dynamics AX contrls
+
+C1 Generic
+
+wiswr Ul Automation support for Jave Sw
+Cancel Refresh
+
+ 
+
+Select
+
+ 
+
+ 
+

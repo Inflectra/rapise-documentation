@@ -1,0 +1,55 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GH Star Page 8) ManualSteps nt + |x|
+(©) SPantTest
+
+‘tepid __Deseription Expected Result Sample Data
+
+(ystep 1_| User starts up the MS-Paint Application The application loads with a blank | 5
+
+7 canvas
+
+2_ | User clicks the main “Application menu’ “Appiication.menw) (2,
+
+Gse Pal [=n S980 ) Dol Clic
+step 3 | User clicks the ‘New’ entry. — | SeS(New).DolClick(44, 13); 5
+(step 4 | User clicks on ‘Pencil | ‘SeS(Pencit) Dol Click(15, 9);
+
+(step 5 | User clicks the Text tool ; [sme Dol Click(14, 16); [|
+
+step 6
+
+ 
+
+ 
+
+ 
+
+User clicks at: 186, 256 in the canvas
+
+ 
+
+ 
+
+| ‘SeS(Simulated’) Dol Ciick(156, 256):
+
+ 
+
+ 
+

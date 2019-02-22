@@ -1,0 +1,54 @@
+ 
+
+ 
+
+© Rapise Spy - ag x
+
+Sp Start Tracking (CHG) Leam Object
+
+ 
+
+4 Buttons[Group]
+Image Button[Button]
+‘Simple Button[Button]
+‘Check This[CheckBox}
+Radio 1[RadioButton]
+Radio 2[RadioButton]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+— HWND
+
+macs = Properties
+Image Button[Button]
+
+ 
+
+ 
+
+ 
+
+ 
+

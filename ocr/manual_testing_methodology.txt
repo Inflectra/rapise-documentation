@@ -1,0 +1,8 @@
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+
+Manual: Manual-only testing
+
+Mobile: Mobile Support
+
+Web: Cross-Browser Testing Support
+

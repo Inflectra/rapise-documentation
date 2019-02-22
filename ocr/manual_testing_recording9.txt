@@ -1,0 +1,42 @@
+ 
+
+ 
+
+GH StarPage (8 ManualSteps mt + Ix
+©) MS Pain Tes
+Steplé Description Expected Result ‘Sample Data
+san | UE | \°
+Wstep 4 | User clicks on ‘Pencil! | th | ‘SeS(Pencil) DolCiick(15, 9): |
+(rs:48]
+Wstep 5 | User clicks the ‘Text tool | a | ‘SeS(Text) DolCiick(14, 16); by}
+(T3493)
+
+ 
+
+@Step 6 | User clicks at: 156, 266 in the canvas
+Trs50
+
+Mstep7
+(rst)
+
+W step 8_ | User clicks on the ‘Bold’ button
+
+Enters text This is some text”
+
+ 
+
+ 
+
+‘S2$(Simulated’) Dol Click( 186, 256):
+
+ 
+
+‘SeS(Text) DoSetText(This is some
+text");
+
+ 
+
+[ SeS(Bold) DoLClick(1, 14); Ee
+
+ 
+

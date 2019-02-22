@@ -1,0 +1,102 @@
+|4 23] WebServicesSOAP + GostatPage
+
+4-0 BasicHttpBinding_ISoapSe
+
+“" WebServicesSOAP.soap
+
+og huhon Revie Leh p/w ibraryinformatonsystemo1g/Services/ScapSeniceve"wsdl Gee Ws0L
+
+  
+ 
+  
+   
+   
+   
+
+ 
+
+ 
+
+ 
+
+futhor RevieweByid —_—[rvoke | Remuet/Rerponee |
+
+  
+
+Custom Endpoint
+
+?
+
+ 
+
+‘System Void
+
+ 
+
+ 
+
+Book_Insert Input Value
+=@ Book Retrieve 4@>{} Connection_Authenticate Type
+Book_RetrieveByDateRa O Headers
+=@ Book_RetrieveByld 40) Body
+Book_Update. String userName.
+=@ Book_Uploadimage String password = librarian
+Connection_Authenticate
+=@ Connection_Disconnect
+4-© BasicHttpBinding_ISoapSe
+Output Value
+
+ 
+
+ 
+
+ 
+
+«
+
+© to. Raw [XML] SON
+kexm version="1
+<eiEnvelope xains
+
+<s1Body>
+
+ 
+
++0" encoding="utf-8"2>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+“http: //schemas.xmlsoap.org/soap/envelape/">
+
+<Connection_AuthenticateResponse xmins="http: //www.inflectra.com/LibraryInformationS}
+
+<Connection_AuthenticateResult>true</Connection_AuthenticateResult>
+
+</Connection_AuthenticateResponse>
+
+</s:Body>
+
+ 
+
+ 
+
+ 
+
+‘SOAP Script Steps _ Response Body | Response Headers | Output] Warnings | Errors | Find Results
+
+ 
+
+ 
+

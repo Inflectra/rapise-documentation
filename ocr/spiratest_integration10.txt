@@ -1,0 +1,40 @@
+ 
+
+i Save Test to Remote Repository = a x
+
+ 
+
+ 
+
+Server: hitips:/dev-eu spiraservice.net! Change Refresh
+Project:
+Library Information System .
+Test Case Folders:
+
+4G Library Information System
+
+ 
+
+Gi Functional Tests
+Pa Rearessinn Tests
+
+Test Cases:
+
+Name iD Repository Path
+BY Ability to create new author Tea Click to view.
+BY Ability to create new book 02 Click to view.
+®) Ability to edit existing author Tes Click to view.
+BY Ability to edit existing book Tc3 Click to view.
+
+E}Ability to reassign book to different author TC6
+
+teclPaneadeny [|
+
+‘SavelSynchronize Cancel
+
+ 
+
+ 
+
+ 
+

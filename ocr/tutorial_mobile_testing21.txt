@@ -1,0 +1,79 @@
+D Ropise 6.0.15.11 [CAUsers\inflectra\Documents\My Rapise Tests\AndroidTest\AndroidTest.sstest]
+
+File Edit View Test Tools Settings Help
+
+TQ. @ Record > Play € Mobile Spy + MD Debugger Se GG op Test gH User HB av
+
+Bt
+
+4G AngroidTest “
+
+> @ android_widget_Button
+> @ android_widget_ImageButton
+
+>@ edit password
+>@ edit_username
+
+  
+
+> Android
+> & Database
+>D File
+
+> B clobal
+>O ios
+
+> Hil Navigetor
+> © Neotoad
+> OB AVL
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+EB Mainsvixisx
+
+ae (}
+
+Android App Simulator
+
+ 
+
+ 
+
+Object
+
+A texti
+
+@ edit_username
+(@ edit_password
+@ android_widget_
+@ android_widget_
+
+Action
+Doclick
+DoSendkeys
+DoSendkeys
+Doclick
+Doclick
+
+ 
+
+»
+
+ 
+
+Inflectra Corporation
+
+ 
+

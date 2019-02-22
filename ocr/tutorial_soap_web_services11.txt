@@ -1,0 +1,19 @@
+BB Create Script “@ Remove Step HX Clean SOAP Script Steps
+‘Connection_Authenticate {'userName™"“librarian”."password™"librarian"}
+Book_Retieve
+Book_Insert {"book”:{"Author”:{"Name"."}."Authorld™:
+Book_Retieve
+Connection_Disconnect {}
+
+Hide
+
+ 
+
+ 
+
+"AuthorldSpecified”true,DateAdded"."2018-12-01T00:00:00" "DateAddedSpecified”.true,"DateAddediso”
+
+‘
+
+SOAP Script Steps | Response Body| Response Headers | Output] Warnings | Errors | Find Results
+

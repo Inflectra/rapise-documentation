@@ -1,0 +1,64 @@
+File Edit View Test Tools Settings Help
+
+BE) QQ @ Record > Play € WebSpy ~ MD Debugger Ge BG ep Test gH User FB ave
+
+ifn)
+
+| |
+
+Web Testing 1
+> Cl Inflectra | Library Information System
+41 Library Information System | Log In
+
+> @ ctl00SMainContentSLoginUserSLogi
+
+> Password_
+
+> Usermame_
+
+ 
+
+ 
+
+Library Information System | Book Management
+>@ _Create_new_book_
+> EB Amsterdam
+> Edit
+> Global
+& User Functions
+{} User Variables
+
+ 
+
+GB start Page
+
+ 
+
+ 
+
+Internet Explorer HTML .
+‘3 & {}
+BE Mainnixtx <
+Type. Object Action ParamName ParamType. Paramvalue
+Action GP og_In DoClick
+Action [@ Username_ DoSetText tet string librarian
+Action (@ Password_ DoSetText tet string librarian
+Action @ ctloosMainconte.. DoClick
+‘Assert message string Verify that: InnerText=libre
+Action librarian Getinnertext
+Condition output == param2
+Param param2 string librarian
+Action @ Book Manageme... DoClick
+‘Assert message string Check that the name mate
+Action amsterdam Getinnertext
+Condition output == param2
+Param param2 string ‘Amsterdam
+Action @ Edit DoClick
+Action @ Book Manageme... DoClick
+Action @ _Create_new_bo.. DoClick
+Action @ Home DoClick
+Action @ Author_Manage.. DoClick
+Action @ _Create_new_bo.. DoClick
+Action @ Home DoClick
+Action GO log_in DoClick
+

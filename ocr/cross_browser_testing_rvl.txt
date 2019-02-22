@@ -1,0 +1,62 @@
+RVL | *AddNew |
+
+oaoranswn
+
+Flow
+
+Type
+
+Action
+Action
+Action
+Action
+Action
+Action
+
+Object
+
+imi Naviaator
+® Global
+Imi Naviaator
+® Global
+Imi Naviaator
+® Global
+
+Action
+
+SelectBrowserProfile
+DoInvokeTest
+SelectBrowserProfile
+DoInvokeTest
+SelectBrowserProfile
+DoInvokeTest
+
+ParamName
+
+profile
+pathToTest
+profile
+pathToTest
+profile
+pathToTest
+
+ParamType
+
+string
+string
+string
+string
+string
+string
+
+ParamValue
+
+Internet Explorer HTML
+%WORKDIR%\..\Web Testing 2\Web Testing 2.sstest
+Chrome HTML
+
+%WORKDIR%\..\Web Testing 2\Web Testing 2.sstest
+Firefox HTML
+
+SEWORKDIRG\..\Web Testing 2Web Testing 2.sstest
+

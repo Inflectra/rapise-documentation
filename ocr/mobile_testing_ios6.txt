@@ -1,0 +1,5 @@
+BS Successfuly connected to:
+http://adams-imac.corp.inflectra.com:4723/wd/hub
+
+ 
+

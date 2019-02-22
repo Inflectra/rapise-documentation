@@ -1,0 +1,52 @@
+G stat Page (QLibraryinformationSystemrest x
+(Al % Updete Object Tree P AddHeader {19 Add Parameter * Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Request
+Name (Get Book
+Method: [cer » | [ ttpsww.jbraryinformationsystem org/Services/RestServce svelbook?session_id={session id)
+Credentials: ibrarian (®)
+Headers: (A)
+Name Value Operations
+
+Accept ‘2pplicationjson 8
+
+Content-Type 'application/json ®
+Parameters: ()
+
+Value Operations
+{eession i |74048584-7200-4c57-b813-d5994eb45d12 [_ Insertin URL) (X)
+Name Value
+
+Status Code 200 0k
+Content-Length 3586
+Cache-Control private
+ContentType application/json; charset=utt8
+
+ 
+
+REST Script Steps | Response Body ResponseHeaders | Output] Warnings | Errors | Find Results,
+

@@ -1,0 +1,10 @@
+Name value
+
+params.userName “librarian”
+params.password “librarian”
+‘g_commandinterval 1000
+
+ 
+
+Variables Watch | Output wamings | Erors| Find Results
+

@@ -1,0 +1,34 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+& Load/Synchronize - x
+Server: https:idev-eu.spiraservice.net! Change Refresh
+Project.
+Library Information System
+Test Case Folders:
+
+4(@ Library Information System
+
+‘Common Tests
+
+Functional Tests
+
+Flt Rearession Tests
+Test Cases:
+Name ID Repository Path “
+
+Load/Synchronize
+
+Cancel
+
+ 
+
+ 
+

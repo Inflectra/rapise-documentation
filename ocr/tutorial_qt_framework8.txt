@@ -1,0 +1,31 @@
+File Edit View Test Tools Settings Help
+BE) Q. @ Record > Play € UiAutomation Spy ~ MD Debugger Sh GG ep Test H User BR Ge {}
+
+[a] o itt) GS stetPage FBmainnidst *
+
+ 
+
+ 
+
+ 
+
+Qt Sample Test
+eee Type Object Action ParamName ParamType
+> chkActive_
+WOK. 2% [# =] Do SetText(“Adam”) on txtame_
+>® radOption2_ 39 Action (@otame_ DoSetText val string
+> btName_ 4g # Do SetCheck(true) on radOption2_
+> Global SF Action © radoption2_ DoSetCheck bcheck boolean.
+& User Functions 6g # Do SetCheck(true) on chkActive_
+{} User Variables 7 Action WAchkActive_ DoSetCheck bcheck boolean
+8 op Press button ‘OK_"
+oF Action 0K DoAction
+
+ 
+
+Properties
+
+iL
+12
+13
+

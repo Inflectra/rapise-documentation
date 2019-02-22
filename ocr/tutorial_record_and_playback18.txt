@@ -1,0 +1,70 @@
+LIBRARY INFORMATION SYSTEM
+
+BOOK MANAGEMENT
+
+‘The following books exist in the system: (Create new book)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1D [Name ‘Author Genre Eat
+1. [Hound of the Baskervilles [Arthur Conan Doyle [Murder & Mystery | Ect
+2 | The Scowrers| ‘Arthur Conan Doyle [Murder & Mystery | Eat
+3. | Amsterdam Tan McEwan Contemporary Fiction | Eat
+(4_| Saturday Tan McEwan Contemporary Fiction | Eat)
+5. | The Comfort of Strangers _| lan McEwan Contemporary Fiction | Ect
+[6 | chesil Beach Tan McEwan Contemporary Fiction | Ect
+7 [Atonement Tan McEwan Historical Fiction | Eat)
+fa [leak House ‘Charles Dickens [Historical Fiction [Eat
+9 | Olver Twist ‘Charles Dickens | Historical Fiction [Eat
+10 [ Nicholas Nickleby ‘charles Dickens | Historical Fiction [Eat
+11 | David Copperfield ‘Charles Dickens [Historical Fiction | Eat
+12 |The Pickwick Papers ‘Charles Dickens | Historical Fiction [Eat
+13 | Death on the Nile ‘Agatha Christie [Murder & Mystery [Eat
+14 [Betrams Hotel ‘Agatha Christie | Murder & Mystery i
+
+ 
+
+ 
+
+librarian! [ Log Out
+
+ 
+

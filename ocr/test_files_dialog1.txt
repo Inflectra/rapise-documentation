@@ -1,0 +1,35 @@
+ 
+
+2d Test
+
+4D Axication
+(i SampleATM.exe
+
+4D Date
+(ATMDatabase mdb:
+
+1D Reports
+
+4D Scripts
+[Bl senpieaths
+[B| SampleATM objects is
+[Bl SampleATMusers
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Test Files | Settings Object Tree
+
+ 
+
+ 
+

@@ -1,0 +1,59 @@
+D Rapise 6.0.15.13 [C:\Users\inflectra\Documents\My Rapise Tests\WebServiceTutorial\WebServiceTutorial.sstest] - x
+File Edit View Test Tools Settings Help
+
+TQ. @ Record > Play € Mobile Spy + MD Debugger Se GG op Test gH User HB av
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++mx BB nainis (J LibraryinformationSystemsrest ¥
+4 [g] LibraryinformationSystem.rest (Eh 4% Update Object Tree fe] Add Header {qj Add Parameter "P Add Credentials
+© New_Request Request
+Name:
+Method » [ss]
+Body:
+hb a
+
+ 
+
+ 
+
+Object Tree J Files REST a 5
+
+ 
+
+ 
+
+|[Rato] Row XML ISON
+
+ 
+
+ 
+
+« >
+
+ 
+
+ 
+
+REST Script Steps Response Body | Response Headers | Output] Warnings] Errors] Find Results
+
+ 
+
+ 
+
+ 
+
+Inflectra Corporation
+

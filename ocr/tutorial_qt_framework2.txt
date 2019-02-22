@@ -1,0 +1,37 @@
+ 
+
+ 
+
+Create New Test
+
+Please specify the name of the new test
+
+ 
+
+[atsample Tesi
+
+ 
+
+‘Specify the folder where this test should be created:
+
+ 
+
+| cAvsentinfecre]DocumensilyRapise Tests
+
+ 
+
+CAUserstinflectra\Documents\My Rapise Tests\Qt Sample Testi@t Sample Test sstest
+
+Rapise supports multiple testing methodologies. Select one to be used for newly created test.
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+Manual: Manual-only testing
+Mobile: Mobile Support
+Web: Cross-Browser Testing Support
+
+Cancel
+
+ 
+
+ 
+

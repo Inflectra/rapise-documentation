@@ -1,0 +1,26 @@
+GstatPage — FBMainrvixisx  @) Java Test 1_2019-0220 13.05% *
+
+Drag a column header here to group by that column.
+
+  
+
+# Type Start * Name Status ‘Comment
+*o - @ @ @
+
+Message Starting scenario: Test Info
+
+Assert button1.DoAction({]) Pass Returned Value: true
+
+Assert advawtControls.DoAction({]) Pass Returned Value: true
+
+Assert list0.DoSelectitem({"AWT ListItem1”) Pass Returned Value: true
+
+Assert ‘jButton2.Doaction({]) Pass Returned Value: true
+
+Assert ‘JjTabbedPanet.DoLClick([48,11]) Pass Returned Value: true
+» Test Main Pass Passed:5 Failed:0 Time:1.255
+
+Test Pass
+
+Total:7 Pass:6 Fail:0 Info:
+

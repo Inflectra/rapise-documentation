@@ -1,0 +1,39 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Server: hitps://dev-eu spireservice net/
+Proect:
+ll -
+Test Cases: NewFolder New Test Case
+Test Steps
+
+‘Step Desciption Expected Resut ‘Aetual Result
+
+ 
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+‘Manual: Manual-only testing
+‘Mobile: Mobile Support
+|Web: Cross-Browser Testing Support
+
+Create Locally... Cancel
+
+ 
+
+ 
+

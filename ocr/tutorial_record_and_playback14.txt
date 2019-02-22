@@ -1,0 +1,32 @@
+LIBRARY INFORMATION SYSTEM Welcome librarian! { Log Out ]
+
+Se a
+
+ 
+
+WELCOME TO THE LIBRARY INFORMATION SYSTEM
+
+This sample application lets you view, create and edit books inthe libary catalog a
+
+ 
+
+well s view, create and edit authors
+
+To view the library catalog or the authors list you will need to login as a borrower and to make changes to thelist of books or authors
+you will need to login asa librarian
+
+Note: This snot a real application, but i usta sample application used inthe popular SpiraTest test management system and Rapise
+test automation system. Goth ofthese pr 1 marketed by inflectra Corporation,
+
+   
+
+ 
+
+ 
+
+Test Rapise _ inflectra?
+
+This sample application has SOAP and REST web service APIs that can be test
+
+ 
+

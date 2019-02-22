@@ -1,0 +1,73 @@
+@ statPage
+
+RVL [-AddNew
+
+s
+
+SSS S55 5555555
+
+Flow
+#
+
+=
+
+EB Mainsvixit
+
+‘Type ‘Object
+Action @ Image_Button
+Press button OK"
+
+Action ex
+
+Press button ‘Simple Button"
+Action @Simple_Button
+Press button OK"
+
+Action ex
+
+Press button ‘Open’
+
+rita
+
+‘Select item:
+
+os
+
+‘Set value:'10" in
+
+os
+
+ 
+
+Action
+
+Doclick
+
+Doclick
+
+Doclick
+
+Doclick
+
+Doclick
+
+DoSelectitem
+
+DosetValue
+
+ParamName
+
+items
+
+val
+
+ParamType
+
+string
+
+number
+
+10
+
+ParamValue
+

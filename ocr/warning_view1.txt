@@ -1,0 +1,12 @@
+x Waring Nee
+
+C:SpiralNew Test Case\Main(s (6, 1): no viable alternative at input
+
+ 
+
+« >
+
+ 
+
+Output Warnings | Errors | Find Results
+

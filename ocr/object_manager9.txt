@@ -1,0 +1,64 @@
+ 
+
+ 
+
+ 
+
+= (aca
+
+Ud Object Manager
+
+ 
+
+Source Destination
+C:ASpiraRepository\Rapise Web Demo 1 TC88\Rapi_|... | []| C:\SpiraRepository\Conference Web Test 1 TC42\Conf
+Copy Object to the Right (F5) YX Remove from Destination (Ctrl+D) =E Copy Allto Destination =
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘Source 1D Destination
+rtd = Log_In tt
+rtd = Usemame_ it
+rtd = Password_ it
+rtd = ctl00_. it
+rtd = Book Management —{..)
+rtd = Amsterdam it
+pt) = Log_Out tt
+> 5 Hound_of the Bas)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

@@ -1,0 +1,10 @@
+BB Create Script @ Remove Step 9€ Clean
+
+Get_Session GET
+4*Get_Books GET
+
+Verify Response length=14
+\Verify Response[0]. Name=Hound of the Baskervilles
+
+REST Script Steps ree
+

@@ -1,0 +1,32 @@
+ 
+
+Recording Activity for “Sample QtWidget Applic
+
+ 
+
+ 
+
+# Object. Action Data Comment
+
+tiName_  SetText Adam ——_Do SetTexi("Adam") on btName_
+
+ 
+
+ 
+
+radOpton.. SetCheck Tue _DoSetCheck(tue) on radOption2_
+chikAcive. SelCheck Tue Do SetCheck(tue) on chkActive_
+OK Action Press button 'OK_'
+
+Verify Leam ‘SPY Finish
+
+(Cte) (Ctrie2) (Cire5) Resume) (Cte3) Conceal
+
+ 
+
+Poused T facvence> [CET
+
+ 
+
+ 
+

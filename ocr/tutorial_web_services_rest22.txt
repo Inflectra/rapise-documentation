@@ -1,0 +1,28 @@
+Lo + ste
+vsSowcnToo :
+42 LibraryinformationSystem
+
+>" LibrarylnformationSystem_Add_Book
+
+>" LibrarylnformationSystem_Get_Book
+
+4%" LibraryinformationSystem_Get_Session
+# DoExecute
+# DoVerify
+> GetCredential
+> GetMethod
+> GetName
+> GetParameters:
+> GetRequestBodyObject
+> GetRequestBodyText
+> GetRequestHeaders
+> GetResponseBodyObject
+> GetResponseBodyText
+> GetResponseHeaders
+> GetResponselsErrorStatus
+> GetUrl +
+
+Object Tree [Files] REST
+
+ 
+

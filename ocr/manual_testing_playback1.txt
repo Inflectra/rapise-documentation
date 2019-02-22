@@ -1,0 +1,62 @@
+ 
+
+GH Stat Poge ) ManualSteps mt
+
+ 
+
+ 
+
+©) WSPent Test
+
+‘Stepld Description Expected Result ‘Sample Data
+
+san | —— | |"
+a s l _=raaares |
+[7:43]
+
+step 5 | User clicks the Text’ tool | Aw | ‘SeS(Text’) Dol Click(14, 16);
+
+TTS:49]
+
+ 
+
+(step 6 | User clicks at: 156, 256 in the canvas
+TTs50]
+
+ 
+
+SeS(Simulated’) Dol Click(156, 256);
+
+ 
+
+ 
+
+ 
+
+(step 7_ | Enters text This is some text”
+
+(T8351)
+
+ 
+
+| This is some text]
+
+| ‘SeS(Textt’) DoSetText("This is some
+text");
+
+ 
+
+ 
+
+ 
+
+(Step 8 _| User clicks on the ‘Bold’ button
+
+| SeS(Bold}) Dob Ciick(11, 14);
+
+ 
+
+ 
+
+ 
+

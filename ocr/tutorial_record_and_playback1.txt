@@ -1,0 +1,93 @@
+ 
+
+(© Ropise 60.15.11 [C\Users\nflectra\Documents\My Rapise Tests\WebTest\WebTestsstest]
+
+  
+   
+   
+  
+  
+     
+   
+
+File Edit View Test Tools Settings Help
+TQ. @ Record > Play € Mobile Spy + MD Debugger Se GG op Test gH User HB av
+
+[Bo itr) StatPage % | EB Main vixise
+“Duty nian Se aa Welcome To Rapise
+
+41 Library Information System | Log In
+> @ LoginButton
+1 Password
+»@ Username
+> Global
+> User Functions
+>} User Variables
+
+Get Started In Depth Webinars
+
+Pee ern ye
+
+Data-Driven Software Testing with Rapise
+
+Quick Start PDF
+Guide
+
+ 
+
+ 
+
+ 
+
+Online Resources Documentation &
+
+ 
+
+ 
+
+ 
+
+ 
+
+(Chrome HTML :
+
+Samples
+
+a
+
+‘etch
+
+AnalogRecorder
+FarPoint
+
+HTML5,
+
+Java
+
+JavaSWT
+
+jQuery-UI
+
+Managed
+
+QtFramework
+
+RVLCalckat
+RVLCalcwithJs,
+RVLWebLogins
+‘SampleATM
+‘SampleMaster
+
+Silverlight
+‘SimulatedObject
+UsingDatabase
+UsingDLLHandlerManaged
+
+Passed
+
+ 
+
+ 
+
+ 
+

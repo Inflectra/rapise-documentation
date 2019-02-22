@@ -1,0 +1,27 @@
+ 
+
+Infect | Library Information Sy> Xp
+
+€ > CG @© Notsecure | wwwilibraryinformationsystem.org ey mM @:
+
+TV rel Ute
+
+ 
+
+WELCOME TO THE LIBRARY INFORMATION SYSTEM
+‘This sample application lets you view, create and edit books in the libary catalog as well as view, create and edit authors.
+
+To view the library catalog or the authors list you will need to login as a borrower and to make changes to the list of books or authors
+‘you will need to login as a librarian,
+
+Note: This is not a real application, but is just 2 sample application used in the popular SpiraTest test management system and Rapise
+test automation system. Both of these products are marketed by Inflectra Corporation.
+
+— ° _ eer . ws
+spira Test Rapise. inflectra,
+‘Test Management Test Automation Inflectra Corporation
+
+This sample application has SOAP and REST web service APIs that can be tested by Rapise.
+
+OTHER SAMPLES
+

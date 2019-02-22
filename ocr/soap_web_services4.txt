@@ -1,0 +1,56 @@
+(http://www libraryinformationsystem.org/Services/SoapService.svc?wsdl Get WSDL | Custom Endpoint
+
+ 
+
+Input Value
+4@>{} Connection_Authenticate Type, System. Void
+O Headers
+40) Body
+
+ 
+
+String userName = librarian
+‘String password
+
+ 
+
+ 
+
+ 
+
+Output Value | tnvoke Record
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4+ {@) Connection_Authenticate
+() Headers
+
+40) Body
+Boolean Connection_AuthenticateResult =
+
+Boolean Connection_AuthenticateResultSp
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

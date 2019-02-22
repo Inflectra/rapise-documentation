@@ -1,0 +1,28 @@
+[vie o fa
+4 @ Object Tree C:\Users\adam.sandman\Docum |
+4 (i Inflectra | Library Information System Inte
+> EB Author_ [Author]
+> A Author_Management Author Managem
+> A Book Management [Book Management
+> @) cllO0SMainContentsbinSubmit[ctl00SM
+> A Home [Home]
+> © librarian [ibrerian]
+> A Log_In{Log In}
+> QB Name_[Name]
+4 Library information System |Log n= Intern
+> @ cll00sMainContent$LoginUserSLogi [ctl
+» RB Password_[Password!]
+> §Bi Usemme_[Usermame]
+> [Dl Library Information System | Book Manage
+> CD Global
+49) User Functions.
+“User Variables
+
+4
+
+[Objects [Files SOAP Satings
+
+ 
+
+ 
+

@@ -1,0 +1,21 @@
+ 
+
+ 
+
+‘A Step 1 of 6 - Pease follow the directions cutlined in the box below
+) User opens up niemet Exporer and enters application URL: ht: wn ibraryinfrmationystem comibsta
+
+Expected Result: Sample Data:
+‘The browser loads the login web page http:/www libraryinformationsystem.comibeta
+
+Actual Result- Please enter the actual test result it differs, then click the appropriate button:
+5888
+
+BB)Z U Aan ~ wi AY My SSS
+
+(conc
+
+ 
+
+ 
+

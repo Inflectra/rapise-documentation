@@ -1,0 +1,17 @@
+LIBRARY INFORMATION SYSTEM Malesia eee
+
+ee ed
+
+ 
+
+CREATE NEW BOOK
+Please enter the book information and click Insert
+
+Book Information
+
+aut ME
+
+(inset (ean)
+
+  
+

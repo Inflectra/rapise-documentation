@@ -1,0 +1,33 @@
+ 
+
+Properties
+
+ 
+
+> Options “
+Recording
+
+BeautfySavedObjects True
+Screen Capture
+
+eno
+
+Include in Report False
+Widget Only False
+Settings
+
+ 
+
+ 
+
+ 
+
+Capture Execution
+‘Save screen images for each recognized object into
+
+aaa
+
+ 
+
+ 
+

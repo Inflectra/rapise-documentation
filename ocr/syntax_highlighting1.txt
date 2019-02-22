@@ -1,0 +1,16 @@
+/ (4448288482 Script Steps S#SEeEEEE8888¢
+function Test ()
+4
+var success = Database. DoAttach ('Provider=SQLOLEDS.1;Integrated Security=s:
+Tester-Assert ("Successfully Connected", success)
+var count = Database.GetRowCount () 7
+Tester-Message (count) ;
+
+/[toop through the rows
+while (Database. DoSequential ())
+| ¢
+
+var projectId = Database.GetValue("PROJECT_ID");
+var name = Database.GetValue ("NAME")?
+var description = Database.GetValue ("DESCRIPTION")?
+

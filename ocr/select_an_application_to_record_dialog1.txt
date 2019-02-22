@@ -1,0 +1,39 @@
+ 
+
+     
+
+ 
+
+D Select an Application to Record. = a x
+Jocuments\Rapise\Samples\Ty
+
+= Applications
+
+‘Available Applications PID Path
+
+IHC: \Windows\system32\cmd exe 18132 CAWindows\System32\omd.exe
+
+AA irflectra Rapise Two Dialogs Sample 9416 ‘C:\Users\Public\Documents \Rapise\Samples|
+
+{Pubrary information System | Author Manage... 10960 C:\Program Files\Intemet Explorer\iexplore exe
+
+© New Tab - Google Chrome 14982 C:\Program Files x86)\Google Chrome Applic
+
+FSales invoices - Microsoft Dynamics NAV 5108 C.\Program Files &86)\Microsoft Dynamics Ni
+
+| |semples 4488 C:\Windows \explorer exe
+
+LMwoDialogs 17512 C\Windows\explorer exe
+
+« >
+
++ Libraries
+
+ 
+
+ 
+
+Cancel Refresh Select
+
+ 
+

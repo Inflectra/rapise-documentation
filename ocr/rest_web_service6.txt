@@ -1,0 +1,7 @@
+BB Create Script GJ Remove Step 9€ Clean
+
+Get_Session GET
+*Get_Books GET
+
+REST Script Steps Response Headers
+

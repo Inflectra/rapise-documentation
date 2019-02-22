@@ -1,0 +1,38 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Server: bitps://dev-eu spiraservice net/
+Project:
+“Test Cases: New Folder | New TestCase
+Test Steps
+
+‘Step Description Expected Resuit ‘Actual Resut
+
+ 
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+‘Manual: Manual-only testing
+‘Mobile: Mobile Support
+|Web: Cross-Browser Testing Support
+
+Create Locally... Cancel
+
+ 
+
+ 
+

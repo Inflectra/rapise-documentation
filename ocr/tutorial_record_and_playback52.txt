@@ -1,0 +1,32 @@
+10
+it
+
+Ry
+By
+14g
+
+Action @ 800k_Management
+‘Assert
+
+Param
+
+Condition
+
+Param
+
+ 
+
+DoClick
+message
+param
+
+param == param2
+param2
+
+string
+string
+
+string
+
+Check that the name matches
+

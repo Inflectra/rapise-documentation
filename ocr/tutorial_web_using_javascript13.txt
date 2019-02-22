@@ -1,0 +1,48 @@
+fide itr) stan Page Bi Mainier *
+
+>) Library Information System| =
+4 Library Information System |
+> @ _Create_new_book_
+
+ 
+
+function Test (params)
+
+    
+  
+   
+ 
+
+//Click on Log In
+
+ 
+
+ 
+
+   
+
+>&B Amsterdam SeS('Log_In') .DoChick():
+
+"Ocn //set Text librarian in Username:
++ soaadselecton Se5(Usernane_') -DoSetText (*iibrarian"
++ ponte //sev Text librarian in Password:
+4 Decick Se5(" Password *) -DosevText (*1ibrazian") :
+
+//Click on cti00sMainConventSLoginUsersLoginButton
+4 DoDoMchildat SeS ('ct100$MainContent$LoginUser$Logi') .DoClick();
+# DoDOMChildrenc //Verify that: InnerText=librarian
+# DoDOMConvert Tester.AssertEqual ("Verify that: InnerText=librarian",
+# DoDOMFindParentwith //Click on Book Management
+# DoDOMGetAtrribute Se5 ("Book Management") .DoClick()z
+# DoDOMGetAttributes
+# DoDOMNextSibling 20 SeS('Amsterdam').GetInnerText ();
+¢ DoDOMParent Lb S25 (1Ea1e") .Dectick() |
+# DoDOMPrevSibling j22
++ deDoMQuencss bs //click on (Create new book)
+4 DoDOMQueryXPath Ls SeS('_Create new book") .DoClick()+
+ao 25 //Click on Home
+be SeS ("Home") .DoChick
+Lb? 7/Click on Author Management
+
+   
+

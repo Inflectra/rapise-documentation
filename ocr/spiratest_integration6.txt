@@ -1,0 +1,45 @@
+ 
+
+ 
+
+Server: bitps://dev-eu spiraservice net/
+
+ 
+
+| Library Information System -
+
+ 
+
+“Test Cases: NewFolder New Test Case
+
+ 
+
+ 
+
+ 
+
+ 
+
+6.5) Renracsinn Taste
+
+ 
+
+Test Steps
+
+ 
+
+ 
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+‘Manual: Manual-only testing
+‘Mobile: Mobile Support
+|Web: Cross-Browser Testing Support
+
+Create Locally... Cancel
+
+ 
+
+ 
+
+ 
+

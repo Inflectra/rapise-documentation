@@ -1,0 +1,85 @@
+ 
+
+Ud Object Manager
+
+ 
+
+ 
+
+ea)
+
+ 
+
+Source
+
+Destination
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CASpiraRepository\Rapise Web Demo 1TC88\Rapi_ |... | [>]
+
+(C:\SpiraRepository\Conference Web Test 1 TC42\Conf
+
+ 
+
+ 
+
+> Copy Objectto the Right (5) _X Remove from Destination (Ctrl+D) = Copy Allto Destination;
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘Source 1D Destination
+>) = Log_In a
+>) = Username 1)
+>) Password_ i
+>) = ato. i
+>t = Book Management _(..)
+abd = Amsterdam
+> ot) locations
+
+Lbrary Information System |. window text
+
+lEFreme window class
+
+paramobject_name object text
+
+ROLE SYSTEM.CLIENT object role
+
+Internet Explorer_Server # object class
+
+o = version
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

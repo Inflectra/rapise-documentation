@@ -1,0 +1,18 @@
+ 
+
+ 
+
+\® Scripting Language - a x
+
+‘Choose preferred scripting language:
+
+ 
+
+JavaScript (Advanced Users)
+
+Don't ask (may be changed later in Options\Settings|Default Scripting Language)
+
+ 
+
+ 
+

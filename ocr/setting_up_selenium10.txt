@@ -1,0 +1,28 @@
+9022
+© 2600344
+
+0.2.2
+
+(BB paymana releases this on Mar 24,2015,
+
+Fix for #10,
+
+Downloads
+
+‘Doperadriver_inuxs2.2ip
+‘Boperadriver_inux64.2ip
+‘operadriver_macs4.ip
+‘Doperadriver_wins2.21p
+
+‘Boperadriver_winé4.2ip
+
+34MB,
+
+205MB
+
+345MB
+
+26666,
+
+sa7MB,
+

@@ -1,0 +1,21 @@
+  
+
+ 
+
+‘Object Tree C:\Users mies seetnDoc
+4 Operations - Intemet Explorer
+> A All_purchase_orders [All purchase
+> oO DIVO
+> 38 MenuBar [MenuBar]
+> A Procurement_and_sourcing [Procur
+4 (All purchase orders — Operations - Inte
+> 3 DIVI[DIVCOIVI)]
+> 3 DIV2[DIV(DIV2)]
+> @) New! [New]
+» (sbi) Vendor_account [Vendor account]
+4 DJ All purchase orders — Dynamics AX -|
+> [il dat [dat]
+> 3 DIV3[DIV]
+> © OK[OK]
+> [bl Vendor_account! [Vendor_account
+

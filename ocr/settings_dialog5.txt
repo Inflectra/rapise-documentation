@@ -1,0 +1,12 @@
+EL Screen Capture.
+
+‘Capture Execution
+Capture Recording
+Include in Report
+Widget Only.
+
+False
+False
+False
+False
+

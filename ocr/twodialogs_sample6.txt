@@ -1,0 +1,22 @@
+ 
+
+ 
+
+® Scripting Language -
+
+‘Choose preferred scripting language:
+
+ 
+
+VL (Rapise Visual Language)
+
+ 
+
+JavaScript (Advanced Users)
+
+Don't ask (may be changed later in Options\Settings\Default Scripting Language)
+
+ 
+
+ 
+

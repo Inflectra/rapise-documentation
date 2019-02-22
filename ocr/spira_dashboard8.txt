@@ -1,0 +1,20 @@
+ 
+
+Create Automation Host for this Machine
+
+‘Automation Host Name: TARDIS
+
+Token: TARDIS
+
+Description: i
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

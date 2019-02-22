@@ -1,0 +1,11 @@
+BB Create Script @ Remove Step 9€ Clean
+
+Get_Session GET
+4*Get_Books GET
+
+Verify Response lengt
+
+ 
+
+REST Script Steps Response Headers
+

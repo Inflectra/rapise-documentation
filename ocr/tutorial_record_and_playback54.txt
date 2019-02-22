@@ -1,0 +1,27 @@
+il
+12
+13
+14
+
+Assert
+Action
+Condition
+Param
+
+Amsterdam
+
+GetinnerText
+output == param2
+
+message
+
+param2
+
+string
+
+‘string
+
+‘Check that the name matches
+
+Amsterdam
+

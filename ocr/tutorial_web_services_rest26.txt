@@ -1,0 +1,32 @@
+[eh % Update Object Tree #3] Add Header {19 Add Parameter “P Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Request
+Name: ‘Get Book
+Method: [eer » | [ ttpswwwjbraryinformationsystem org/Services!RestServce sve. v [ ‘Send I Record | Verity |
+
+ 
+
+Credentials: ibrarian ()
+
+ 
+
+Name=Arthur Conan Doyle
+Authorl
+DateAdded=1/18/2015 7:24:12 PM
+
+DateAddediso=1/18/2015 7:24:12 PM
+
+nee
+
+ 
+

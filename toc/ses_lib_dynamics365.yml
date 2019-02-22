@@ -1,0 +1,29 @@
+
+
+
+- 'DomDynamicsAX':
+    - 'DomDynamicsAX': 'Libraries/ses_lib_dynamics365.md'
+
+    - 'DomDynamicsAXActionSearch': 'Libraries/DomDynamicsAXActionSearch.md'
+
+    - 'DomDynamicsAXCheckBox': 'Libraries/DomDynamicsAXCheckBox.md'
+
+    - 'DomDynamicsAXComboBox': 'Libraries/DomDynamicsAXComboBox.md'
+
+    - 'DomDynamicsAXCrumbList': 'Libraries/DomDynamicsAXCrumbList.md'
+
+    - 'DomDynamicsAXDatePicker': 'Libraries/DomDynamicsAXDatePicker.md'
+
+    - 'DomDynamicsAXGrid': 'Libraries/DomDynamicsAXGrid.md'
+
+    - 'DomDynamicsAXMenuBar': 'Libraries/DomDynamicsAXMenuBar.md'
+
+    - 'DomDynamicsAXMessageBar': 'Libraries/DomDynamicsAXMessageBar.md'
+
+    - 'DomDynamicsAXNavigationSearch': 'Libraries/DomDynamicsAXNavigationSearch.md'
+
+    - 'DomDynamicsAXTabControl': 'Libraries/DomDynamicsAXTabControl.md'
+
+    - 'DomDynamicsAXTextBox': 'Libraries/DomDynamicsAXTextBox.md'
+
+

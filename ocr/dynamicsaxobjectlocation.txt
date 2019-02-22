@@ -1,0 +1,19 @@
+Properties
+21 |S
+2 (Locators
+> Locators (1)
+4 Object
+1D Sylet
+Location _ regex Dimensions dp
+4 Recognition
+Gass [_] param-object flavor
+Flavor CheckBox
+
+ 
+
+ 
+
+lnvertDimParnFixed/Pane /View/
+
+ 
+

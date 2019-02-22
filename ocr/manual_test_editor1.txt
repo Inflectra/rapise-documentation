@@ -1,0 +1,57 @@
+ 
+
+GW StortPoge 8) ManualSteps sme
+) Bbiy  ceae new bok
+
+“Tests thatthe user ean ereate a new book i the systom
+HPs U Am ~ Ay ALY. aa
+
+ 
+
+ 
+
+‘Stepld Description
+
+ 
+
+Especed Rest Sampo Data
+sep | cal
+
+Ts}
+
+sep 2 | oer cick nko ereaio book | ea
+
+s:2)
+
+ 
+
+11s3)
+
+{G)step 4 | User chooses book's genre and sub-genre fom list,
+Ts]
+
+step s_| User cicks submit button
+
+1185]
+
+step 3 | User enters books name and author then clicks Next
+
+i
+
+User sees screen displaying all entered
+information
+
+ 
+
+| ‘Confirmation screen is displayed
+
+Macbeth, Wiliam Shakespeare
+
+Play, Tragedy
+
+ 
+
+ 
+
+| @ystep 4 | @MyFunctiond:
+

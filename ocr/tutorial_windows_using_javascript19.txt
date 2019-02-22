@@ -1,0 +1,30 @@
+GstatPace MB Mainjss
+
+ 
+
+ 
+
+Fi
+Is (/ (Fttttttett Script Steps ####FFFtFFFFFE
+
+i"
+
+E  eunceson Test (params)
+
+E ae
+
+Ses(vsisese ancer your mane") -DaSeetext ("ours")
+
+fo | i7eteme boston "oR!
+
+EL |. Sescrom) -pectsero
+
+a2 //Verify that: Value=Thank you. Your name is chris.
+bb
+
+he
+
+17 g_load_libraries=["UIAutomation"]
+
+ 
+

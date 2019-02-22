@@ -1,0 +1,43 @@
+GstatPage  EBMainnvixisx _@ Web Testing 12019-0207 12-01mp X
+
+Drag a column header here to group by that column.
+
+   
+
+# Type Start * Name Status ‘Comment
+*o @ - @ @ @
+
+Message 12:01:21,701 Starting scenario: Test Info
+
+Assert TE Process Created Pass Path:"C:\Program Files\Internet Explorer\
+
+Assert Log_In.Doclick([1) Pass Returned Value: true
+
+Assert Usermame_DoSetText({["librarian’) Pass Returned Value: true
+
+Assert Password_.DoSetText(["librarian’) Pass Returned Value: true
+
+Assert tl00gMmainContent$LoginUser$Logi.DoClick(() Pass Returned Value: true
+
+Assert Verify that: InnerText=librarian Pass
+
+Assert Book Management.DoClick({]) Pass Returned Value: true
+
+Assert __Create_new_book_.DoClick({]) Pass Returned Value: true
+
+Assert Home.DoClick({]) Pass Returned Value: true
+
+Assert ‘Author_Management-DoClick([]) Pass Returned Value: true
+
+Assert __Create_new_book_.DoClick({]) Pass Returned Value: true
+
+Assert Home.DoClick({]) Pass Returned Value: true
+
+Assert Log_In.DoClick([1) Pass Returned Value: true
+
+Test ‘iain Bass Bassed:13Failed:0 Time:i5.6875
+
+Test Pass
+
+Total:15 Pass:14 Fail:0 Info:
+

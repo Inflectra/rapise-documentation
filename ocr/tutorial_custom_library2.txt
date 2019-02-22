@@ -1,0 +1,24 @@
+ 
+
+Recording Activity for "CustomControlApp"
+
+ 
+
+ 
+
+ 
+
+# Object Aation Data Comment
+WI Sting2 Lick 236 User clicks at: 23, in Sting 2°
+2 Global SendKeys (DOWN) Type
+ws Global ‘SendKeys {RIGHT} ‘Type
+we Global ‘SendKeys {RIGHT} ‘Type
+<
+Verity SPY Finish
+(Ces) (Ctri#2) (Crri+5) | Resume (Cris3) Cancel
+Paused Advanced>> (Transparent.
+
+ 
+
+ 
+

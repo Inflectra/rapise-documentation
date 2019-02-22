@@ -1,0 +1,17 @@
+ 
+
+function EnterNunber (num):
+‘
+for: (var i-=-0;-4-< num, length; i++)
+‘
+digit = num.charat (i):
+Se$(' Button! + digit) .Doaction()
+
+function Operation (op}
+
+(a) >
+
+function trim( str, charlist )
+
+(a) >
+

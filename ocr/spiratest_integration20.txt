@@ -1,0 +1,17 @@
+ 
+
+Synchronize Files o
+Files To Upload
+
+Selected File Name Action Path
+Mains Download CSpiralNew Test Case
+Main.rvlxlsx Download CA\SpiralNew Test Case
+NewTestCase.sstest_ Download CA\SpiralNew Test Case
+Objects.is Download CASpiralNew Test Case
+
+Repository json CA\Spira\New Test Case
+
+ 
+
+Extensions offiles to exclu. | tap. tp, log, user, cmd, rmt, rmipng, \Reports\ Da | Apply 0k Cancel
+

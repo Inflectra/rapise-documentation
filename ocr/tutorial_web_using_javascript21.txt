@@ -1,0 +1,10 @@
+DstarPase EN Mainjs x
+|/0se *Record/Learn* button to begin test recording
+
+function Test (params)
+i
+
+g_load_libraries=["%g_browserLibrary:Internet Explorer ETML8"]
+
+ 
+

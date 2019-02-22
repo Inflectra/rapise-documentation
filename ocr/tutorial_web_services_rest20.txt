@@ -1,0 +1,48 @@
+[eh % Update Object Tree #3] Add Header {19 Add Parameter “P Add Credentials
+
+REST Request
+Name:
+
+Method:
+Credentials:
+Headers:
+
+Parameters:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+'Add_Book
+I + [seed
+Torenan
+Name Value Operations
+Accept ‘2pplicationjson &
+Content-Type ‘2pplicationison &@
+Name Value Operations
+{session_id} |74044584-7200-4c37-b813-d5994eb45d12 {Insert in URL} [}
+
+ 
+
+ 
+
+ 
+
+‘Auto| Raw XML JSON
+
+ 
+
+ 
+
+ 
+

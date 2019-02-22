@@ -1,0 +1,151 @@
+ 
+
+© Rapise Spy
+
+Spy PEI GetSnapshot (Ctr-G) Test Locator (@P Edit Profiles @ Profile: Android Appi ~|Context: | NATIVE APP
+
+Tap Swipe > Shake —PreciseTap > ScrollTo | AcceptAlert Dismiss Alert
+
+Change Orientation
+
+TF ts tts
+
+) android widget Framel ayout{0,0][1080,1794]
+(0) android. widget LinearLayout(0.0][1080,1794]
+4 (0) android. widget FrameLayout{0,63][1080,1794]
+4 (0) android view.ViewGroup[0 63][1080,1794)
+> (0) android widget FrameLayout{0,63][1080,210],
+4 (1) android. widget FrameLayout(0.210][1080,1794]
+4 (0) android. widgetLinearLayout(0.210][1080,1794]
+4 (0) android. widgetLinearLayoutl42,252][1038,894]
+4 (0) android widget ListView(42,252][1038,894]
+(0) android widget TextView(42,252][1038,378]
+(1) android widget TextView(42,381][1038,507]
+@) android widget TextView(42,510][1038,636]
+@) android widget TextView(42,639][1038,765]
+(A) android widget TextView(42,768][1038,894]
+
+   
+ 
+
+IndexinParent
+TeoName
+
+2
+
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+ 
+ 
+ 
+   
+   
+   
+ 
+  
+  
+ 
+ 
+ 
+
+  
+
+false
+false
+
+  
+  
+ 
+
+ 
+
+clickable nue
+content-dese
+
+ 
+
+five
+false
+false
+index 2
+
+long-cickable false
+package
+password false
+
+resourcesd
+
+  
+  
+   
+  
+
+  
+ 
+  
+
+ 
+
+ 
+
+andoididAed
+android widget. Tet View
+Buttons
+
+(2) android widget TexView[42.5
+android widget FrameLayout/an(
+
+(42.510][1038,636),
+
+class android widget TextView
+
+(com inflectra autandroid
+
+andoididAedt
+
+ 
+   
+ 
+  
+
+ 
+
+   
+ 
+      
+     
+
+Oo)
+
+Login
+
+DropDownselect
+
+ 
+
+Buttons
+
+ 
+
+ 
+
+ 
+
+Bare
+
+Views
+
+ 
+
+ 
+
+ 
+

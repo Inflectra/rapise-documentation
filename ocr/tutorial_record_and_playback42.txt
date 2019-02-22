@@ -1,0 +1,42 @@
+10
+iL
+12
+13
+14
+15
+16
+7
+18
+
+”
+
+Action
+Action
+Action
+Action
+Action
+Action
+Action
+Action
+
+@ Book_Manageme.
+Amsterdam
+
+O _Create_new_bo.
+O Home
+
+@ Author_Manage.
+@ _Create_new_bo.
+O Home
+
+@log_in
+
+DoClick
+GetinnerText
+Doclick
+Doclick
+Doclick
+Doclick
+Doclick
+Doclick
+

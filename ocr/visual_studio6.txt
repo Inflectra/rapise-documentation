@@ -1,0 +1,29 @@
+ 
+
+Test Assemt
+
+   
+
++ **\$(BuildConfiguration)\*test*.dll-:**\obj\** # Version 1
+
+4 Execution Options
+
+Test Assembly
+
+ 
+
+ 
+
+*"\$(BuildConfiguration)\“test*l~**\obj\"* °
+Test filter criteria, o
+Rinisetings Hie UnitTestProjectt/UnitTestProject1/RS.runsettings ©
+‘Override TestRun Parameters 4 browserLibrary=Chrome HTML. °
+Code Coverage Enabled =) °
+Run in Parallel o °
+
+ 
+
+» Advanced Execution Options
+
+» Reporting Options
+

@@ -1,0 +1,24 @@
+S08 Qux
+
+ClUserslinflectra\Documents\My Rapise TestsiWeb Testing 2\Main js(27.2):
+ClUserslinflectra\Documents\My Rapise Tests\Web Testing 2\Main js(29.2):
+ClUserslinflectra\Documents\My Rapise Tests\Web Testing 2\Main js(31.2):
+ClUserslinflectra\DocumentsiMy Rapise Tests\Web Testing 2\Main js(33.2):
+ClUserslinflectra\Documents\My Rapise Tests\Web Testing 2\Main js(35.2):
+
+C:\UsersiinflectralDocuments\My Rapise Tests\Web Testing 2\Main js(37.2):
+‘1Bentries found
+
+«
+
+Find In Files Results
+
+‘SeS("_Create_new_book_),DoClick0;
+SeS(Home’) DoClick0:
+‘SeS(Author_Management).DoClick0:
+‘SeS("_Create_new_book_).DoClick0:
+SeS(Home’) DoClick0;
+SeS(‘Log_In’) DoClick);
+
+Hide
+

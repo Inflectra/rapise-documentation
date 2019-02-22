@@ -1,0 +1,33 @@
+19
+20
+21
+22
+23
+
+tal # {| verity that: ColumnCount=11
+
+Assert
+Action
+Condition
+Param
+
+[i DataGridview
+
+GetColumncount
+
+output =)
+
+ 
+
+param2
+
+message
+
+param2
+
+string
+
+Verify that: ColurnnCount=11
+
+i
+

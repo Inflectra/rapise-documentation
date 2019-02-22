@@ -1,0 +1,86 @@
+4 23] LibraryinformationSystem * GstatPage [EB Mainjs _ LibraryinformationSystemsoap * FA
+4-© BasicHttpBinding_ISoapService
+
+ 
+
+ 
+
+ 
+
+     
+    
+   
+   
+
+ 
+
+= Authon Retions (Ei ht: /wwatbranyinformationsystem.org/Senvices/SoapService.svePwsdl Get WSDL | Custom Endpoint
+Author RevieveByid ol
+Book. Insert Input Value
+z 44°) Book RetieveByld Type Book
+Book_RetrieveByDateRange (} Headers
+= Book_RetrieveByld 44} Body
+
+Book_Update
+= Book_Uploadimage
+Connection_Authenticate
+
+=@ Connection_Disconnect
+4-© BasicHttpBinding_ISoapService
+=@ Author_Retrieve
+Author_RetrieveByld
+
+Int32 id = 0
+Boolean idSpecified = False
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-9 Book Delete x
+Object Tree | Files SOAP
+Properties Output Value [invoke
+Auto. Raw xt [SON]
+1 LabrarylInformationSystem.DoExecute (‘Connection Authenticave', "userName": "Librarian", "password" :"1iE
+2 LibraryInformationSystem.DoVerify('Last Response Verification Result’, ", {"Body": ("Connection Authe!
+3 LibraryInformationsystkm.DoExecute (‘Bock Retrieve’, (2)?
+4 LibraryInformationSystem.DoVerify('Last Response Verification Result’, "™, ("Body":("zesule":[("Authe
+5 LibraryInformationSystem.DoBxecute ("Bock Insert', ("book": ("Ruthor": ("Name":""), "RuthorId":2, "huthorl
+6 LibraryInformationSystem.DoExecute (‘Book Retrieve’, ())7
+7 LibraryInformationSystem.DoVerify('Last Response Verification Result’, "™, ("Body":("zesule":[("authe
+e LibrarylInformationSystem.DoExecute (‘Connection Disconnect", ()); ’
+< >
+‘SOAP ScriptSteps Response Body | Response Headers] Output ] Warnings] Errors | Find Results
+
+ 
+

@@ -1,0 +1,51 @@
+ 
+
+ 
+
+Visual Language Testing
+
+(J Inflectra | Library Information Syst
+>G Login
+
+412) Library information System |Log!
+> @ ctl00SMainContentSLoginUserS
+> Password
+> Username_
+
+“I Global
+
+Sp User Functions
+
+{ } User Variables
+
+ 
+
+ 
+
+object
+
+GP Log_In
+[@Username_
+[@Username_
+[@Password_
+
+@ ctloosMainconte.
+GO og_in
+
+Action
+Doclick
+Doclick
+DosetText
+DoSetText
+Doclick
+Doclick
+
+ParamType
+
+string
+string
+
+ 
+
+ 
+

@@ -1,0 +1,8 @@
+BB Create Script “@ Remove Step 9€ Clean
+
+Connection_Authenticate {userName™“Tibrarian”"password™ibrarian"}
+Book_Retrieve
+Connection_Disconnect {)
+
+‘SOAP Script Steps [ Response Body | Response Headers | Output] Warnings] Errors
+

@@ -1,0 +1,22 @@
+ 
+
+ 
+
+Rapise Debugger
+
+No Debugger Installed. Do you want to install Microsoft Script Debugger?
+
+ 
+
+ 
+
+Yes No Cancel
+
+ 
+
+ 
+
+ 
+
+ 
+

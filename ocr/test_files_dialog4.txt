@@ -1,0 +1,16 @@
+Properties a
+
+ 
+
+Sl Mise
+
+FitesPath Reports
+Fitetwidcard tp
+True &
+
+Name Reports
+
+IsFilterGroup
+twue if drectoy should show the lst of all files
+matching FiterWidcard belonging to FiterPath’
+

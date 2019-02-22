@@ -1,0 +1,58 @@
+ 
+
+GB Start Page = WebServicesSOAP 200
+levoke | [RequesdRezponee]
+RequostPrope
+
+‘AiownseRedre False
+‘AiotiteSear False
+
+BencAunPasow
+BescAuhveer
+
+ContentType text: charset
+HpProa” ‘
+Keeptive False
+
+Method POST
+
+Prpeined Fale
+
+Pronathenicate False
+SendChunked Fale
+
+SOAPActon “hip. infloca ©
+Tomeout 100000
+
+ud ap en ibranyintor
+UseCooketConta Tre
+UseDetoutred False
+
+est
+‘sto Raw BE) ON
+<oxnl version="1,0" encoding-"uct-2"7>
+<soap {amt lope sans: soap="hetp://schenas tl soap.org/soap/envelope/* sanins:xsi="http://snn.w3 .org/2001/AMLSchena-instancl
+‘csoapTBeay>
+<Connection Authenticate mins="nttp://mm. inflectra.con/Libratyinfomationsysten/services/*>
+‘userNianeD1ibrarianc/serNane>
+<passvord>librarianc/passwore>
+</connection_Authenticate>
+
+   
+
+  
+
+Response
+
+sponseCode: 200 (OK)
+ontent-Length 296
+ache-Controlprivate
+ontent-Type:text/xml charset-utf-8
+
+fe Thu, 22 Dec 2016 20:59:14 GMT
+ver Microsoft-I5/8.0,
+ASpNet-Version:4.0.30319
+Powered-By ASP.NET
+
+|<s Envelope xmins:s="http://schemas.xmisoap.org/soap envelope/"><s:Body> <Connection_ AuthenticateResponse xmlns~"http://www.inflectr.com/Libraryinformations
+

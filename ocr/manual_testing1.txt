@@ -1,0 +1,53 @@
+Debugger Ge GQ @ <p> Test MB User FB RVL eo Be ee DP
+
+GstrtPace MB Mainjs 8) ManualStepsimt x
+
+© (Crete Book
+Create a new book.
+HSB ZU A Aral v
+
+ 
+
+10 «|| Aly {| Gl cal
+
+   
+
+ 
+
+ 
+
+Stepld __ Description
+step 1 | Click on the ‘Create new book link
+(TS:39]
+(Bstep 2_| Enterin the new book information
+[TS:40]
+
+ 
+
+ 
+
+ 
+
+(@yStep 3 | Click the ‘Insert’ button
+[Ts:41]
+
+ 
+
+ 
+
+Expected Result Sample Data
+| ‘The new book page is displayed
+
+ 
+
+The data is accepted name: S{name}
+author: S{author}
+
+genre: S{genre}
+
+| ‘The new book is added |
+
+ 
+
+ 
+

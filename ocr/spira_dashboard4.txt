@@ -1,0 +1,8 @@
+Spira Connection
+
+Spira URL: _http://doctor/SpiraTeam
+User Name: administrator
+Local Folder: C:\SpiraRepository
+
+Eait Connection Settings
+

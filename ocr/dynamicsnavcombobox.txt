@@ -1,0 +1,14 @@
+Code, y City is Search City Country/... County
+
+Code
+AT-1100 Wien WIEN AT
+AT-1230 Wien WIEN aT
+AT-2355 Wr. Neudorf WR.NEUD... AT
+AT-4810  Gmunden GMUNDEN AT
+AT-5730.—Mittersll MITTERSILL AT
+AT-2850 Mura MuRAU AT
+
+New Advanced Y Set as default filter column
+
+ 
+

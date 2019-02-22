@@ -1,0 +1,42 @@
+ 
+
+ 
+
+wm
+
+Find ‘Username in Object Tree
+Rename ‘Username.’
+
+Play Ths Sheet
+
+Play Selection
+
+Play From Here
+
+cut
+
+Copy
+
+Paste
+
+CCopy Selection as JavaScript
+CCopy Selection as Text
+
+Ins Row
+
+Del Row
+
+Selec All Rows
+
+Insert Copied Rows Here
+Move Selected Rows Here
+Wrap Selection Into If
+
+Wrap Selection Into Loop
+
+Extract Selection as new Sheet
+
+ 
+
+ 
+

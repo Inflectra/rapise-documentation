@@ -1,0 +1,42 @@
+[eh % Update Object Tree #3] Add Header {19 Add Parameter “P Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Request
+Name (Get Book
+‘Method: [eer v | | httpiwwwjbraryinformationsystem org/Services/RestServce svelbook?session_id={session id)
+Credentials: tbrarian (X)
+Headers: (A)
+Name Value Operations
+Accept ‘2pplicationjson 8
+Content-Type ‘pplicationjson @
+Parameters)
+Name Value Operations
+{eession_id} |74048584-7200-4c57-b813-d5994eb45d12 [_ Insertin URL) (X)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

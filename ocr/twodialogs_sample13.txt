@@ -1,0 +1,43 @@
+@ statPage
+
+RVL [-AddNew
+
+e
+
+EB Mainsvixit
+
+Flow Type Object Action
+2 %[#__|-] Please enter your name:: Change text to ‘chris’
+‘Action [@Please_enter_yo.. DoSetText
+# Press button ‘OK’
+‘Action ex DoClick
+# Verify that: Value=Thank you. Your name is chris.
+Assert
+‘Action [\UtAutomation GetValue
+Condition
+Param
+
+SSS 5555
+
+ParamName
+
+val
+
+message
+
+ 
+
+ParamType
+
+string
+
+string
+
+string
+
+ParamValue H
+
+Verify that: Value=Thank you. Your nam
+
+‘Thank you. Your name is chris.
+

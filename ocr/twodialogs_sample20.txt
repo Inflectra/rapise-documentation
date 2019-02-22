@@ -1,0 +1,23 @@
+Gd start Page
+
+ 
+
+ 
+
+ 
+
+ 
+
+FEimainnixise XG) TwoDialogsTest_2019-02-12_11-35%
+RVL [Add New
+Flow Type Object Action ParamName ParamType ParamValue H
+L "Action @ Global Dotsunch cmdline suring ‘CalUsers Public Documents Rapise ear
+# Please enter your name:: Change text to ‘chris’
+
+g Action (@Please_enter_yo.. DoSetText val string chris
+
+ge Press button ‘OK’
+‘Action @xK Doclick
+
+auswn
+

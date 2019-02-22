@@ -1,0 +1,35 @@
+Kell %g Update Object Tree fi] Add Header (19 Add Parameter “P Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Request
+
+Nome: (Get Book
+
+Method: [cer » | [ ttpswww.jbraryinformationsystem org/Servces/RestServce sveisession
+
+Credentials: ibrarian (®)
+
+Headers: (A)
+
+Name Value Operations
+
+Accent ‘application/json ®
+Content-Type ‘2pplicationison &@
+
+ 
+
+ 
+
+Boy: =)
+

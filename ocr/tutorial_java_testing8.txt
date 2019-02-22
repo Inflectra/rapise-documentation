@@ -1,0 +1,45 @@
+8 Start Page
+
+RVL [-AddNew
+
+s
+
+SSS S555 5555
+
+Flow
+#
+
+EB Mainsvixit
+
+‘Type ‘Object Action
+Action @ button DoAction
+Press button ‘advAwtControls’
+
+Action @ advAwtControls DoAction
+
+Do SelectItem(“AWT ListItem1") on listO
+
+‘Action listo DoSelectitem
+Press button jButton2"
+
+Action @ jputton2 DoAction:
+User clicks at: 48, 11 in 'jTabbedPanel"
+
+‘Action Djitabbedpane1 DoLdlick
+=
+
+ParamName
+
+items
+
+ParamType
+
+string
+
+number
+number
+
+ParamValue
+
+AWT ListItem1
+

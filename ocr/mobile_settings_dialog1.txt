@@ -1,0 +1,76 @@
+ 
+
+ 
+
+Mobile Settings
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Sect Pele: [andidnons? (Gea) (Dxteate] (Gceaenn] (Henenes) (Soa
+ae
+Carnac
+Un ‘http://127.0.0.1:4723/wd/hub
+
+4 Detala
+4 Primary Capabilities: oO
+
+@pp C\Users\Public\Documents \Rapise \Samples \UsingMobile\AUT\AUT
+
+owcetone
+
+ewcehane Neus 7
+
+platformName- Android
+
+platformVersion 442
+
+ted Os2besaatens
+4 Common Capabilities @
+
+naolanch
+
+adonaonNane
+
+sustiebvew H
+= :
+Desired capabilities are a set of keys and values (.¢., a map or hash) sent to the Appium server to tell the server what kind of automation session
+‘we are interested in starting up. There are also various capabilities which can modify the behavior of the server during automation.
+
+Case
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

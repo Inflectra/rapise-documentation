@@ -1,0 +1,13 @@
+Freeze Panes
+Keep rows and columns visible while the rest of the worksheet scrolls (based on the current selection).
+
+  
+
+Freeze Top Row
+[keep the top row visible when scroling though the resto the worksheet.
+
+Freeze First Column
+Keep the first column visible while scrolling through the rest of the worksheet.
+
+   
+

@@ -1,0 +1,101 @@
+ 
+
+© Rapise Spy [http://libraryinformationsystem.org/Books.aspx]
+Spy BR} Get Snapshot (Ctri-G) @& Track (Ctrl-T) @ Lear
+
+ 
+
+reat
+
+ 
+
+ 
+
+ 
+
+ee
+DOM Tree
+4-1: hiip:llibraryinformationsystem.org/Books.aspx
+4 <html xmblang="en" xmins="hitp:fwnww.w3.org/1999hxhtml">
+> <head>...<Ihead>
+4 <body>
+4 <form id="cll01" action=" Books.aspx’ method="post">
+> <div class="aspNetHidden’>..<Idiv>
+<script type="text /avascript>IFeI[CDATAvar theForm = docume...</sc
+<script ero="/WebResource.axd7d=9_D5u0u-Rawul.” typer"texijavas
+> <div class="aspNetHidden’>..<Idiv>
+4 <div class="page">
+> <div class="header’>..</div>
+4 <div class="main">
+‘<h2>Book Management<Ih2>
+4 <p>
+The following books exist in the...
+<a href="BookEditaspx’>(Create new book)</a>
+> <div>..<idiv>
+<div class="clear"><idiv>
+<div class="footer"><Idiv>
+<script type="iext/avascript>>new Sys. WebForms Menu({ element..<)
+<script type="text avascript >documentwebspy. GetDomTree(false...</sc
+
+ 
+
+ 
+
+(Current Node
+1: htipillibraryinformationsystem.orgiBooks.aspx_himl body form div div p a
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+[him > body frst of ype > fomfistofype > divrth-oftype(3) > div:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+xpath //al@href=" Book Edt. aspx")
+
+xpath _aria ipl
+
+xpath full Artmifoody{ 1 om 1Vavi3/aivi2Vel Val]
+
+xpath_indexed (Val,
+
+xpath_min (al href=" Book Edt aspx"
+
+xpath_std al @href=" Book Edt aspx"
+
+xpath_text Z7alnomalize space()="(Create new book)']
+Test Results|
+
+ 
+
+ 
+
+ 
+

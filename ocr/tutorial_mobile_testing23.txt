@@ -1,0 +1,63 @@
+GstatPace FB Mainrvixtsx
+
+@ androidTest_2019-02-01_11-044p
+
+Drag a column header here to group by that column.
+
+# Type
+
+¥o @
+Message
+Assert
+Assert
+Assert
+Assert
+Assert
+
+a > Test
+
+ 
+
+ 
+
+ 
+
+Start
+11:03:36.409
+11:04:03.520
+11:04:06.738
+11:04:08,005
+11:04:09.240
+11:04:10.708
+040-768)
+
+ 
+
+“ Name
+@
+Starting scenario:
+text1.DoClick([])
+edit_username.DoSendkeys(["user")
+edit_password.DoSendkeys({"pwd")
+android_widget_Button.DoClick({])
+android_widget_ImageButton.DoClick({))
+‘iain
+
+ 
+
+rest
+
+ 
+
+Test Pass
+Total:7 Pass:6 Fail:0 Info:
+
+‘Comment
+
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Passed:5 Failed:0 Time:34.3935
+

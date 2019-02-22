@@ -1,0 +1,28 @@
+ 
+
+din] Gd statPage BB Mainjs*
+
+       
+   
+
+ 
+
+SearchText = fi | //0se *Record/tearn’ button to begin test recording
+> Cd Spreadsheets 2
+40) Global function Test ()
+> i Android Lae
+1S Detsbace Is function Logic (searchterm)
++ Doattach le ‘
+@ DeMtovera b //3et Texc searchterm ing
+le Se5('0532") .DoSetText (searchterm)
+§ oeeenen , //casex on beac
+ents! SeS('0bj2') .DoClick()
+# GetColumnCount }
+# GetColumnName
+¢ GeiColumnNiames pavabase.Deactaca('', *
+# GetCurrentRowindex
+# GotRowCount
+¢ GetValue g_load_libraries=["tg_browserLibrary:Chrome HTML")
+>D Fie bh?
+> Global he
+

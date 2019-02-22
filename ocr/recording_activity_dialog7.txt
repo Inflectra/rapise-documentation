@@ -1,0 +1,41 @@
+ 
+
+Recording Activity for “Internet Explorer HTML”
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+# Object Action Data Comment
+
+W1 Products Click Glick on Products
+
+V2 SpirTest Click fue = [cee]
+
+3 Resources Click Simulated
+
+[224 Trials and.._Click _| HTMLObject Intemet Explo_ Ra
+Verity Lear
+(caret) (cile2) \Concel
+‘Analeg (Ctt+4) |
+
+Poused =
+
+ 
+
+ 
+

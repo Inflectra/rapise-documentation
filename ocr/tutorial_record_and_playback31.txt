@@ -1,0 +1,17 @@
+ 
+
+Internet Explorer HTML
+
+(Chrome HTML
+Firefox HTML
+Internet Explorer HTML
+Selenium - Chrome
+Selenium - Edge
+Selenium - Firefox:
+Selenium - Internet Explorer
+Selenium - Opera + prer\ie
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+

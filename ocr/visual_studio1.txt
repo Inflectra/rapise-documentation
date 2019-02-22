@@ -1,0 +1,41 @@
+ 
+
+Run All | Run... ~ | Playlist: All Tests ¥
+
+4 UnitTestProject1 (5)
+
+ 
+
+© CreateNewAuthor 24 sec
+
+@ TestToFail 2sec
+
+@ CreateNewBook 18 sec
+
+@ EditExistingAuthor 16 sec
+
+@ EditExistingBook 18 sec
+TestToF.
+
+ 
+
+Source: UnitTest1.cs line 38
+
+@ Test Failed - TestToFail
+
+Message: Assert.AreEqual failed.
+Expected:<0>. Actual:<1>. Test passed: c:
+\Demo\Framework\NewTest\NewTest.sstest
+
+ 
+
+Elapsed time: 2 sec
+
+ 
+
+4 StackTrac
+Rapise.TestExecute(String path, TestContext
+UnitTest1 TestToFail()
+
+Test Explorer
+

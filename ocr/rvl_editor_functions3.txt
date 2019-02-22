@@ -1,0 +1,15 @@
+wswn
+
+Flow
+
+Type
+Action
+
+ 
+
+Paran
+
+} Test
+& UploadRecordinaToServer
+& VerifyLogsForexceptoins
+

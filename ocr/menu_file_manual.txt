@@ -1,0 +1,33 @@
+File Edit View Test Tools Settings Help
+New Test
+Create anew Test
+
+Open
+Openan existing Test
+
+(Open Test from Spira
+Save to Spira
+
+crew +
+
+Open File
+Recent Tests
+
+Save all tries
+
+Save As
+Save curent Test As
+
+exit
+
+‘Save Manual Test to Spira
+Uploads .rmt file to Spira step-by-step
+
+‘Save Manual Test Locally
+‘Save manual test as a local .rmt file
+
+Reload Manual Test from Spira
+Load manual test steps from Spira Test Case
+
+a £22 xB Bs
+

@@ -1,0 +1,22 @@
+Library
+C1 Firefox HTML
+
+M Generic
+
+OO HTMLS
+
+O Infragistics
+
+C1 Internet Explorer HTML
+O Java
+
+Description
+HTML DOM-based recorder for Mozilla Firefox
+Tests common Windows Win32 controls.
+‘Support for HTML5 new elements
+
+Infragistics support
+
+HTML DOM-based recorder for Internet Explorer
+Java support for AWTISWING.
+

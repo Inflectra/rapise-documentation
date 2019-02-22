@@ -1,0 +1,23 @@
+Gd start Page
+
+RVL [-AddNew
+
+auswn
+
+ 
+
+ 
+
+ 
+
+ 
+
+Action @oK Doclick
+
+FEimainnixise XG) TwoDialogsTest_2019-02-12_11-35%
+Flow Type object Action ParamName ParamType Paramvalue
+‘Action, @ clobal Dotaunch cmduine string
+? ‘Please enter your name:: Change text to chris”
+Action (@Please_enter_yo.. DoSetText val string chris
+# Press button ‘OK
+

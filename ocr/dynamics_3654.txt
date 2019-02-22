@@ -1,0 +1,24 @@
+>roperties
+
+m2]
+
+~ HTML. a
+Page Title Operations
+URL. https://usnconeboxaxlaos.
+XPATH IIdiv(@class-'modulesPar
+Locators
+Object
+
+~ Recognition
+Class Internet Explorer_Server
+Flavor MenuBar
+Ignore Object Ne False
+Name MenuBar
+Role ROLE_SYSTEM_CLIENT
+
+ 
+
+ 
+
+Window Class _IEFrame v
+

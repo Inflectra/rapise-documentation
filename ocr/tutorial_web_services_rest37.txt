@@ -1,0 +1,31 @@
+Gd statPage EB Mainjs [dj LibraryinformationSystem.rest
+
+Drag a column header here to group by that column.
+
+ 
+
+# Type Start * Name
+
+*o @ - w
+Message 17:53:47,889 Starting scenario: Test
+Assert 17:53:48,577 LibraryInformationSystem_Get_Session.DoExecute({null)
+Message
+
+29d67¢70-1d38-42c2-878a-a9922351578
+‘iain
+
+ 
+
+ap Test
+
+Test Pass
+Total:4 Pass:2 Fail:0 Info:2
+
+@ WebServiceTutorial_2019-02-04_17-53.4p
+
+‘Comment
+
+Returned Value: true
+
+Passed:i Failed:0 Time:0.8445
+

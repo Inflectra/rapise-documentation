@@ -1,0 +1,61 @@
+ 
+
+& Start Tracking (Cut-G)
+
+GJvava Object
+Stree
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+> panelO[java.awi Panel)
+label0fiava.awt Label]
+texthvea java aut TextAvea]
+listifjava ave List]
+
+ 
+
+ 
+
+ 
+
+ 
+
+_accessibleConte java.awt ButtonSAccesy
+actionCommand button’
+actionListeners [Lava awt event Acton)
+
+background
+enabled
+focusable
+
+foreground
+
+1198698
+
+java.awt Colorr=240.0%)
+true
+
+true
+
+java.ant Fontfamiy=Di
+java.ant Colorr=0.9=0,
+button!
+
+button!
+
+ 
+
+ 
+
+ 
+

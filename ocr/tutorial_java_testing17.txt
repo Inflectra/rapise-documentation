@@ -1,0 +1,24 @@
+GstatPage — FBMainrvixisx Java Test2_ 2019-0220 13-41mp
+
+Drag a column header here to group by that column.
+
+ 
+
+# Type Stat = Name Status ‘Comment
+
+*o @ - @ @ @
+Assert Image_Button.DoClick([]) Pass Returned Value: true
+Assert OK.Dodlick({]) Pass Returned Value: true
+Assert ‘Simple_Button.DoClick([]) Pass Returned Value: true
+Assert OK.Dodlick({]) Pass Returned Value: true
+Assert Open. DoClick({]) Pass Returned Value: true
+Assert List.DoSelectitem({0)) Pass Returned Value: true
+Assert 13:41:06.131 _Slider.DoSetvalue([10]) Pass Returned Value: true
+
+» Test 13:41:06.131 Main Pass Passed:7 Failed:
+
+     
+
+Test Pass
+Total:9 Pass:8 Fail:0 Info:1
+

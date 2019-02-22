@@ -1,0 +1,35 @@
+function my_func(/**number*/patient_index, /*#string*/patient_name)
+
+4
+
+»
+
+patient_index.|
+
+ 
+
+ 
+
+{} toFixed(x)
+
+0) toPrrecision(x)
+
+{) toSiring(radix)
+(valued)
+
+@ constructor
+@>MAX_VALUE
+@>MIN_VALUE
+@-NEGATIVE_INFINITY
+
+[cE xponentais)
+Retuns:sting
+
+[The toE yponentiall| method converts a number it
+
+ 
+
+(@-POSITIVE_INFINITY
+
+ 
+

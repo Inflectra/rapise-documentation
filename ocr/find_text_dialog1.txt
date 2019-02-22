@@ -1,0 +1,97 @@
+ 
+
+ 
+
+Find and Replace
+
+ 
+
+ 
+
+(@ Find | Replace
+
+ 
+
+ 
+
+ 
+
+ind what:
+
+ 
+
+ 
+
+ 
+
+Look in: { Current Document
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Find options
+
+(Match case Include sub-folders
+CO Match whole word | Include hidden
+
+ 
+
+ 
+
+ 
+
+ 
+
+Use: | Standard Search
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Find Next
+
+ 
+
+ 
+
+ 
+
+Find all
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

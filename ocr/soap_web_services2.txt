@@ -1,0 +1,2 @@
+(if tp://www.libraryinformationsystem.org/Services/SoapServicesvctwsdl Get WSDL CustomEndpoint
+

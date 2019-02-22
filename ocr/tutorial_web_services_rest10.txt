@@ -1,0 +1,24 @@
+lel “ig Update Object Tree ] Add Header (19 Add Parameter “P Add Credentials
+
+ 
+
+ 
+
+ 
+
+REST Request
+Nome: (Get Session
+Method: [cer » | [ ttpswww.jbraryinformationsystem org/Servces/RestServce sveisession
+
+ 
+
+ 
+
+Credentials: ibrarian ()
+
+Headers (A)
+
+ 
+
+ 
+

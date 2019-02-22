@@ -1,0 +1,64 @@
+ 
+
+ 
+
+ 
+
+(a) MS-Paint Test
+
+ 
+
+   
+
+BIU A Aral ~ Atto+ Aly
+
+et ttt
+(BY) BAY) [Beces 9) [Ceatenl)
+
+A) Step 8 of 8 - Please follow the directions outlined in the box below:
+User clicks on the ‘Bold’ button
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+Expected Result: Sample Data:
+
+R SeS(Bold’).DoLClick(11, 14);
+
+‘Actual Result- Please enter the actual test result if it differs, then click the appropriate button:
+
+ 
+
+ 
+
+ 
+
+BI U\A anal + AM + | Aly Me
+
+IN: 71] Did not display the correct text
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

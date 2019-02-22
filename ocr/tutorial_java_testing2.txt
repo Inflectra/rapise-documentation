@@ -1,0 +1,30 @@
+ 
+
+ 
+
+AR Create New Test
+
+Please specity the name ofthe new test:
+Jove Test 1
+
+‘Spc the older wher this test should be crested:
+(C\Users\adam sendman|Documens\My Rapise Tests
+
+(C\Users\adam sandmaniDocumentsMy Ropse Tests\Java Test Tava Test 1sstest
+
+Repse supports multiple testing methodologies, Select one to be used for ney created tet.
+
+ 
+
+[ ive: Windows Desi Apa Windows Nae. NET, Jove, WBF a)
+
+ 
+
+Morus: Manus testing
+Mobile: Mabie Support
+‘Web: Cross-Bronser Testing Support
+
+ 
+
+ 
+

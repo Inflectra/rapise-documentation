@@ -1,0 +1,32 @@
+AUTHOR MANAGEMENT
+
+The following authors exist in the systerr§ (Create new author)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1D Name ‘Age Edit
+1 Tan McEwan 42 Edit
+2 Charles Dickens 105 Edit
+3 ‘Arthur Conan Doyle 125 Edit
+4 ‘Agatha Christie 98 Edit
+
+ 
+
+ 
+

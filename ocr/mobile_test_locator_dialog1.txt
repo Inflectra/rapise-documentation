@@ -1,0 +1,65 @@
+ 
+
+ 
+
+Test Locator
+
+ 
+
+ 
+
+ 
+
+Element found successfully:
+1) android. widget.EditTert[42,303]11038,421]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CY
+
+ 
+
+ 
+
+ 
+
+|e
+
+True
+This element does not have
+1
+
+android widget EdtText
+User!
+
+1) android widget Edt Text
+/android. widget.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

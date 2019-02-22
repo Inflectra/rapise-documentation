@@ -1,0 +1,24 @@
+ 
+
+ 
+
+‘Create New Test
+
+Please specify the name ofthe new test:
+‘TwoDialogsTest
+
+‘Specify the folder where ths test shouldbe crested:
+\Users\adam.sandman|Documents\My Rapise Tests
+
+(C\Users\adam.sandman|Documents\My Rapise Tests\TwoDialogsTest\TwoDialogsTest sstest
+RRapise supports multiple testing methodologies. Select one to be used for newly created test.
+
+Basic: Windows Desktop Application (Windows Native,.NET. Jove, WPF ete)
+Manu Manvatony testing
+Mobile: Mobile Suppor
+Wie Cross-Bronser Testing Suppo
+
+ 
+
+ 
+

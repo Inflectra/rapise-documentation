@@ -1,0 +1,17 @@
+Action
+
+@ button
+
+ 
+
+DoAnalogPlay
+
+Doclick
+DoDumpWidget
+DoEnsureVisible
+DoGetWidgetProperty
+DoLButtonDown
+DoLButtonUp
+
+ 
+

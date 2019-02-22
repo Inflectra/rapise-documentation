@@ -1,0 +1,65 @@
+ 
+
+ 
+
+Ep Visual Studio Content Installer
+
+we
+
+Select Content to Install
+
+Which content item(s} do you want to install?
+
+ 
+
+ 
+
+/B SeSNUnit Test Project
+
+/B SeSNUnit Test Fiture Itern
+CH SeSNUnit Test Project
+
+CH SeSNUnit Test Fixture Itern
+/B SeSNUnit Test
+
+(CH SeSNUnit Test
+
+ 
+
+  
+
+ 
+
+Approject ternplate far creating a se
+
+ 
+
+ 
+
+ 
+
+ 
+
+View files in Windows Explorer
+Publisher information
+
+Publisher: (Unknown)
+
+Information URL: (Not Available)
+
+ 
+
+ 
+
+Ned >
+
+ 
+
+Cancel
+
+ 
+
+ 
+
+ 
+

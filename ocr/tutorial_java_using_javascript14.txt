@@ -1,0 +1,39 @@
+File Edit View Test Tools Settings Help
+BQ. @ Record > Play GQ UiAutomation Spy ~ MD Debugger Ge GQ ef Test Bp User FB av
+
+es) ee
+
+ 
+
+ 
+
+~ oh
+401 Test Java SWT Application k
+> @ Image_Button ls //#88888888% Script Steps #eesEEEE88888
+Bust ls
+>@oK s function Test (params)
+> @ Open je Ae
+> le. [”
++1 sion tn |]. recees morean *inage norton
+> clobat le SeS(*Image Button") .DoClick()+
+> & Uses Functions lho //Press button *0K'
+> ha Se5(*OK') .DoClick()
+hz //Press button ‘Simple Button’
+hs Se5(*Simple Button") .DoClick()?
+hs (//Press button '0K"
+lbs SeS ("OK") .DoClick () +
+lhe //eress button ‘Opent
+h7 Se5(*Open') .DoClick ()
+he //Select items:'0" in
+hh Se5(*List') .DoSelectItem(0) 7
+lo (/Set value:'10" in '*
+ba Se5(*Slidex') .DoSetValue (10) 7
+2
+ks by
+bs
+2s g load 1ibraries=["UrAutomation", "SWI"];
+ke
+7
+
+ 
+

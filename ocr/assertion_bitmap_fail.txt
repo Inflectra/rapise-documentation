@@ -1,0 +1,14 @@
+ 
+
+ 
+
+ 
+
+Assert 17:26:02.160 ‘Compare Customer bitmap to Images\Checkpoint0001.png Fail
+Link
+
+:\Users\inflectra\ Documents\My Rapise Tests\SaveFileNav\Main.rvl_xlsx(RVL.15.1
+Image
+
+A
+

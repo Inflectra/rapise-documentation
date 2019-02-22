@@ -1,0 +1,38 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘4 G Object Tree C'\Users\Public\Documents\RapiselSa_ [=
+
+ 
+
+4 Gi Microsoft Dynamics CRM
+> A Contacts [Contacts]
+4 Grd [Grid]
+=@ DoClickCell
+= DoF ullText
+> GetCell
+> GetColumnCount
+> GetColumnName
+> GetRowCount
+> GetSelectedRow
+
+ 
+
+ 
+
+> GetSelectedRowCount
+> GetSelectedRows
+
+> Generic
+
+> HTMLObject
+
+ 
+

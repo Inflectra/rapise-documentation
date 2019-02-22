@@ -1,0 +1,74 @@
+ 
+
+ 
+
+© Rapise Spy
+SP Start Tracking (Cit) Lear Object
+
+= UlAutomation Object
+
+~ Tree
+
+4 Inflectra Rapise Two Dialogs Sample[Window]
+OKIButton]
+CancelfButton]
+Please enter your name:{Texi]
+Please enter your name:|Edit]
+Please enter someone else's name:[Text]
+Please enter someone else's name:[Edit]
+[Document]
+‘Summary:Text]
+
+> TTitleBar)
+
+— HWND
+
+edit)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+o x
+= Properties
+LocalizedControlTypeProperty [dialog
+NameProperty nflecira Rapise Two Dialogs Sample
+NativeWindowHandleProperty 12519270
+| OptimizeForVisual ontentProperty Not supported
+[OrientationProperty Not supported
+ProcessidProperty 3348
+Property bid: 17532 hwnd 0BFO766 Main Microsoft
+RuntimeldProperty /A2/12519270
+
+ 
+
+Irflecira Rapise Two Dialogs Sample
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

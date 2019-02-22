@@ -1,0 +1,57 @@
+@ statPage
+
+EB Main wvixisx
+
+@ atsample Test 2019-02-21_11-30ip *
+
+Drag a column header here to group by that column.
+
+#
+*@
+
+Type
+
+a
+Message
+Assert
+Assert
+Assert
+Assert
+‘Test
+
+Start
+
+11:30:20,319
+
+ 
+
+11:30:28,618
+
+it
+
+ 
+
+28.618
+
+Name
+@
+
+Starting scenario: Test
+‘txtName_.DoSetText(["Adam"])
+radOption2_.DoSetCheck([true])
+chkActive_.DoSetCheck([true])
+‘OK_.DoAction([])
+
+‘iain
+
+Test Pass
+Total:6 Pass:5 Fail:0 Info:1
+
+‘Comment
+
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Passed:4 Failed:0 Time:8.4095
+

@@ -1,0 +1,27 @@
+4 <a] LibraryinformationSystem * GdstatPage MB Mainjs _ LibraryinformationSysiemsoap
+4-© BasicHttpBinding_ISoapService
+
+shahor Rowen [hp ibrayinforatonsystemorg/Services/ScapSe | Get WSDL
+
+‘Author RetioveByld [Invoke | Request/Responee |
+Book_Delete
+Book_Insert Input Value
+Book Retrieve 4+ {@) Connection_Authenticate
+Book RetrieveByDateRange () Headers
+Book_RetrieveByld 44) Body
+Book Update String userName
+Book_Uploadimage String password =
+Connection Authenticate
+Connection_Disconnect
+(4-© BasicHttpBinding_ISoapService
+
+Author Retrieve
+Author_RetieveByld
+Book Delete x
+
+   
+
+ 
+
+ 
+

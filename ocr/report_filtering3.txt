@@ -1,0 +1,37 @@
+Drag a column header here to group by that column.
+
+  
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+|) Submit ransactonDokstiong) 14085217 Asset Retumed Vater tue Pase 0
+@ Verify that: WindowText=Transaction | 14:09:32.48 Assert Pass 0
+
+| oxoecicxa 14095287 Assert Returned Value true Pass (0
+1 Teanser 14083287) Test | Pasieas7FaledO Pass 0
+
+| BalanceDoAction(®) 140933.14 Assert Returned Value true Pass 0
+9 oxDeckex 14083840) Assen | Returned Var tue | Pass 0
+
+|S Batance 14:09:33.40 Test Passed? Failed:0 Pass 0
+|B Aoplcaon DeMenu(AccountEit") 14093506 Asset Retumed Vale: tue Pass 0
+
+Vo ew 14:09:35.06 Test Passedt Failed:0 Pass 0
+
+» Ei ciprooam Fis 14083506] Test | Pose? Fale Pass
+
+Test Pass
+
+“Total 32 Pass23 Faii0Info.d
+
+ 
+
+ 
+

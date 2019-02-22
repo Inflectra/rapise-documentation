@@ -1,0 +1,57 @@
+ 
+
+® Rapise 6.0.15.11 [C:\Users\inflectra\ Documents\My Rapise Tests\TwoDialogsTestlS\ TwoDialogsTestIS.sstest] -
+File Edit View Test Tools Settings Help
+BE) QQ @ Record > Play € WebSpy ~ MD Debugger Ge BG ep Test gH User FB ave
+
+[fi » ete) Bostatrage BE Maings * ia
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TwoDislogsTestS ~ oh a
+47 Infiecira Rapise Two Dialogs k
+>@oK ls //#888888884 Script Steps sEEsEEEEEEETE
+> (@ Please_enter_your_name_ it
+> By uiAutomation s function Test (params)
+40 Global je Ae
+bp
+> rl
+7 toi || iye.ease ences yess saners Coange toes to tenes!
+Db sepese ls Se5('Please_enter_your_name_').DoSetText ("chris"):
+ae lho //Prese button 'OK'
+>} Global hha Se5(‘OK") .DoClick() +
+> Dios 2 //verity that: Value-Thank you. Your name is chris.
+> Hi Nevigetor lbs Tester.AssertEqual ("Verify that: Value=Thank you. Your name is chrie.", SeS('UIAutomation') .GetValue(), "Thank you.
+> © Neoload he
+> EB RVL hs by
+>t Session lhe
+> BH Spreadsheet 7 | gload_1ibraries=["UrAutomation"] +
+>S Tester he
+lho
+& User Functions 20
+PR geevnnnts °
+‘ >
+Object Tee [Files]
+Properties
+< >
+
+ 
+
+ 
+
+ 
+
+Inflectra Corporation
+

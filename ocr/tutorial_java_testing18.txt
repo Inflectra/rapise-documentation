@@ -1,0 +1,19 @@
+Action @ Image_Button a a
+
+[i Dodction -
+
+4 DoanalogPlay performs default action
+# Doclick
+
+¢ DoDumpwidget
+¢ Doénsurevisible
++
++
++
+
+DoFindByText
+DoGetWidgetProperty
+DoLButtonDown
+
+ 
+

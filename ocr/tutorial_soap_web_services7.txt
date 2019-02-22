@@ -1,0 +1,85 @@
+Gd statPage MB Mainjs _* LibraryinformationSysiemsoap ~
+El hipy/wwwibrayinformatonsystemorg/Sevi | Get WSL [UUEISSHTERRBSHESE|htr:/wvoibrayinfomationsystemor/Serces/SoapSence | *P
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+a Request
+AlowAuioRedirec False ‘Auto Raw JSON
+‘low WiteSeam False
+BasicAuthPasswo 2 <?amL version="1.0" encoding="utt-8"?> a
+BasicAuthUserNa 2 | <scap:Envelope xmins:scap="http://schemas.xmlscap.org/soap/envelope/™ x1
+ContentType text/xml: charset=utf-£ © <soap:Body>
+HitoProxy 4 <Connection Authenticate xmins="http://www.inflectra.com/LibraryInfc
+KeepAive False <userName>Librarian</usezName>
+Method PosT <password>Librarian</password>
+Pioeined False </Connection_Authenticate>
+PreAuthenticate False 8 </soap:Body> y
+SendChunked False < >
+SOAPActon “http://www inflectra.
+Timeout 100000 fee oa
+ui http://www libraninfo [5 —eCode 200 OK) a
+istoekieCotat True \Content-Lenath:296
+LseDetoutCreder False \Cache-Control:private
+|Content-Type:text/xml; charset=utf-8
+Date:Sun, 10 Feb 2019 11:24:13 GMT
+|Set-Cookie:ASP.NET_Sessionld=b24ba32hein3rftyay253nt; path=/; HttpOnly
+[Server:Microsoft-IIS/8.0 M
+< >
+‘Auto Raw
+<?uml version="1.0" encoding="utf-8"?> a
+
+ 
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s1Body>
+<Connection_AuthenticateResponse xmlns="http: //www.inflectra.com/LibraryInformationSystem/Services/">
+
+<Connection_AuthenticateResult>true</Connection_AuthenticateResult>
+
+1
+4
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+‘SOAP Script Steps _ Response Body | Response Headers | Output] Warnings | Errors | Find Results
+

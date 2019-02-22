@@ -1,0 +1,26 @@
+ 
+
+[+ Test steps:
+
+  
+
+‘RSO0OUS4 |User stars up the MS- The soplieston load wits blank “Teoo0034 /TS000045
+Paint Applicstion | carves
+[RSOOOEES User cleus the main ee -Tepoo0ss /Tso008|
+"Roplestion menu’ (Applcstion_menu’}DoLClck
+(2.12,
+‘RSOGOUSE | User ccks the New ‘Se5(New) DaLGiek(ea, 12), | To000083 /TSO0007 |
+erty
+‘RSSOOGET | Use leks on Penal (5p, S05 (Penci) DaLoiaK ts, @; | Te0s00s4 /TSo00s4s
+[RSOGOUSE | User cicks the Text S08 (Text) Del Ciex(t4, 16; | TC0000Ss /TS000088
+‘el
+‘RSOGOGEE | User clcks at 158, ‘Se5(Simulsied)\DolCick | T6000084 / TSOOODED
+258i the carves (188, 280);
+‘RSOGOGEO Enterstext This is This ssome text ‘Se5(Textt) DoSerTed(This | IGOGON4 / TSAO | Fale wih the tex being legible
+ome tea is some text"):
+Wrong
+> View incidents
+‘RSOGGOBI | User cicks onthe |g] ‘$05 (Sold) DaLGiek( tt, 14); | TE0000S4 /TSOOUDED
+
+‘Bole button
+

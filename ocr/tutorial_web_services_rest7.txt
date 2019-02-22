@@ -1,0 +1,38 @@
+G@srrage Wi Msinjs _ [Sl LibraryinformationSystem-rest™ .
+Eh % Update Object Tree Pi] Add Header 5] Add Parameter * Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Request
+Name: (Get_Session
+Method: [eer » | [ ttpswww.jbraryinformationsystem org/Servces/RestServce sveisession v| ‘Send I Record |
+
+ 
+
+Credentials: ibrarian ()
+
+Body: © .
+
+ 
+
+Name Value “
+Status Code. 200 0K
+Content-Length 113
+Cache-Control private
+Content-Type applicationxml; charset=utt-8
+Date ‘Sun, 03 Feb 2019 18:49:45 GMT
+‘Set-Cookie ASP NET_Sessionid=ogx3decndrsojkanOmfcabaf, path=/; HtipOnly
+Server MicrosoftlIS/8.0
+X-AspNetVersion 4.030319
+X-Powered-By ASP.NET
+
+REST Script Steps | Response Body Response Headers | Output] Wamings| Errors] Find Results
+

@@ -1,0 +1,68 @@
+ 
+
+ 
+
+ 
+
+[R) Select an Application to Record. =
+
+‘Select From Running Applications [ Run Application
+
+ 
+
+ 
+
+ 
+
+ 
+
+Full path to application:
+(C:Users\Public\Documents\Rapise\Samples\SampleATM'SampleATMexe ||| Browse,
+(e.9. clwindowslsystem32\calc.exe)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+C1 Use working directory:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

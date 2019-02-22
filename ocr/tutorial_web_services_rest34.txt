@@ -1,0 +1,18 @@
+@ stat Page BB mainjs* * [2 LibraryinformationSystem rest
+
+hh
+2 //#888888¢8¢ Script Steps eEeeEEEEEEETE
+ls
+
+= function Test (params)
+
+5 aK
+
+6 |
+
+a
+
+s
+
+g_load_libraries=["Web Service"]
+

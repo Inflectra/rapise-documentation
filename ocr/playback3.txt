@@ -1,0 +1,45 @@
+ 
+
+GS Siort Page [Bl CreoteNewBock is [B] CresteNewBock user is iJ CreateNewBook 2014-09-04 11-47.4p
+
+Drag a column header here to grou cijrosrandsialbocuners Raisesonoles\resteNenBookGetseibotare]
+Name
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+# ‘Type ‘Status Browser
+fe «| «|g
+Assert Username: DoSetTest(("ibrarian"}) Pass Internet Explorer HTML
+Assert Password:.DoSetText("ibraian")) Pass Internet Explorer HTML
+Assert ctl00$MainContent$LoginUser$LoginButton.DoClick( Pass Internet Explorer HTML
+Assert Book Management.D0Clck() Pass Internet Explorer HTML
+Assert 11:47:15,063 (Create new book) .DoChck(() Pass Internet Explorer HTML
+Assert 11:47:18,609 Name: DoSetTeat(("The Restaurant atthe end ofth Pass _Intemet Explorer HTML
+Assert 11:47:15,812 Author:.DoSelec(("Agatha Christe"), Pass Internet Explorer HTML
+Assert 11:47:16.015 _ Genre:.DoSelect(["Science Fiction"])_ Pass Internet Explorer HTML
+Assert 111:47:16.186 _ctl00$MainContent$btnSubmit.DoCick({]) Pass __ Internet Explorer HTML
+Assert ‘11:47:16,654 Failure in Test Fall Internet Explorer HTML
+
+Test Fai
+Total:15 Pass:11 Fait2 info:2
+
+‘Comment
+
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+Returned Value: true
+

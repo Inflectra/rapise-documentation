@@ -1,0 +1,57 @@
+ 
+
+ 
+
+'R) Create New Test - x
+
+ 
+
+ 
+
+ 
+
+Server: https://dev-eu spiraservice net/
+Project:
+[Library nfrmaton System :
+Test Coes New Folder New Test Case
+(2 Common Tests. a
+‘Sew thor
+
+ 
+
+ 
+
+Expected Resuit ‘Actual Result “
+‘The new book page is display.
+‘The data is accepted<br>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+Manual: Manual-only testing
+Mobile: Mobile Support
+
+Web: Cross-Browser Testing Support
+
+Create Locally. Cancel
+
+ 
+
+ 
+

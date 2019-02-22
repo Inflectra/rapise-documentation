@@ -1,0 +1,62 @@
+GstatPage [SI LibraryinformationSystem-est™
+Eh % Update Object Tree Pe] Add Header 5] Add Parameter * Add Credentials
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REST Request
+Name (Get Books
+Method: [GET ~ | [tw brarynformaionsystem org/servcesrestsenice svfbook?session_id(session id)
+Credentials: ibrarian (®)
+Headers: (A)
+Name Value Operations
+Accept ‘application/xml ®
+Content-Type ‘2pplicationison &
+Parameters: ()
+Name Value ‘Operations
+{ession_id} (12345 (Wesertin URL | [X]
+
+<?uml version="1.0" encoding="utf-8"2>
+
+ 
+
+<Author>
+<Age>125</Age>
+<Id>3</Ta>
+<Name>Arthur Conan Doyle</Name>
+
+</Buthor>
+
+<AuthorId>3</AuthorId>
+
+10 <DateAdded>2015-01-18T14:24:12</DateAdded>
+
+1 <DateAddedIso>2015-01-18T19:24:12</DateAddedIso>
+
+ 
+
+ 
+
+“http: //schemas .datacontract .org/2004/07/Inflectra. SampleApplications .LibraryInformationSystem.Web.Datadb)
+
+ 
+
+ 
+
+REST Script Steps Response Body | Response Headers | Output] Wamings] Errors] Find Results
+

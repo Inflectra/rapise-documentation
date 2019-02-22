@@ -1,0 +1,16 @@
+GsiatPage BA Mainjs x
+
+   
+
+//#444282482 Script Steps S#4#8EESE8#88¢
+tion Test (params)
+
+//Click on Log In
+Se5(*Log_In') .DoClick()?
+
+//set Text Librarian in Usernane:|
+SeS("Username_') .DoSevText ("1ibrazian");
+//set Text 1ibratian in Password:
+
+SeS5(' Password ') .DoSetText ("librarian")
+

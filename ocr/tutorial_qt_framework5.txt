@@ -1,0 +1,69 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Cancel
+
+ 
+
+@ Select an Application to Record. = a x
+‘SelectFrom Running Applications
+‘Sample QtWidget Application (C:\Users\Public\Documents\Rapise\Samples\@iFramey
+
+= Applications
+
+Available Applications PID Path
+
+IBEC\Windows\system32\emd exe 18132 CAWindows\System32\omd.exe
+
+IHC: \Windows\system32\cmd exe 11772 CAWindows\System32\omd.exe
+
+Efficustomers - Microsoft Dynamics NAV 5108 C:\Program Files &86)\Microsoft Dynamics Ni
+
+G irfectra | Library Infomation System -Goog... 14992 C:\Program Files 86)\Google Chrome Applic
+
+{Pubrary information System | Author Manage... 10960 C:\Program Files\Intemet Explorer\iexplore ex
+4488 C\Windows explorer.exe
+18412 C\Users\Publc\ Documents \Repse\ Samples
+C:\Program Fies (86)\Common Fies\Orace\
+
+« >
+
+= Libraries
+
+Library Description a
+
+auto Detect library automatically
+
+O deve Java support for AWTISWING.
+
+CO Managed Managed support for NET 2.0, 3.0. 35.4x
+
+C0 Devexpress DevExpress DXperience v10 support
+
+CO NavPosControls NavPOSControls - Suppor for LSRetil NAV POSC..
+
+C1 Infragistics Infragistics support
+
+O Telerik Telerik RadControls for Winforms @3 2010
+
+C1 synetusion ‘Syncfusion for Windows Forms controls support
+
+4] QtFremework Used for applications written using the GtFremework | -
+
+Refresh
+
+Select
+
+ 
+
+ 
+

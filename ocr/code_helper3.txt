@@ -1,0 +1,33 @@
+ 
+
+xed)
+
+{0 toPrecision(x)
+
+{) toStringtradix)
+
+0 value0f)
+
+@ constructor
+
+@»MAX VALUE
+@>MIN_VALUE
+(@-NEGATIVE_INFINITY
+
+(@-POSITIVE_INFINITY
+
+ 
+ 
+
+[cE xponentais)
+Retuns:sting
+
+ 
+  
+
+[The toE yponentiall| method converts a number inka an exponential notation
+
+ 
+
+ 
+

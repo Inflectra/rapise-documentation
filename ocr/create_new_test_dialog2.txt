@@ -1,0 +1,48 @@
+ 
+
+ 
+
+Server: bitps://dev-eu spiraservice net/
+
+ 
+
+ 
+
+“Test Cases: NewFolder New Test Case
+
+ 
+
+‘Create Author
+(Create Book
+
+Login to Application
+‘Open Up Web Browser
+
+“Da Functional Tests
+6.) Renmacsinn Taste
+
+ 
+
+ 
+
+ 
+
+ 
+
+Test Steps
+
+ 
+
+ 
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+‘Manual: Manual-only testing
+‘Mobile: Mobile Support
+|Web: Cross-Browser Testing Support
+
+Create Locally... Cancel
+
+ 
+
+ 
+

@@ -1,0 +1,24 @@
+Edit View Test Tools Settings
+New Test °
+Create @ new Test
+
+°®
+
+Open Test from Spire
+Save to Spire
+
+Open File
+
+Recent Tests >
+
+Save All
+
+Save As
+Save curent Test As
+
+exit
+
+ 
+
+ 
+

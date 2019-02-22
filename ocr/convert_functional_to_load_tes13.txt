@@ -1,0 +1,39 @@
+NeoLoad Integration Settings 9 - 7 Ea
+
+ 
+
+ 
+
+1a
+
+ 
+
+ 
+
+NeoLoad Proxy Address 127.0.0.1:8090
+NeoLoad REST Service URL _http://ocalhost:7400/Recording/v1/Ser
+
+ 
+
+ 
+
+ 
+
+NeoLoad Proxy Address
+Rapise automatically changes IE proxy to this value during test script
+convertion.
+
+ 
+
+ 
+
+ 
+
+OK Cancel
+
+ 
+
+ 
+
+ 
+

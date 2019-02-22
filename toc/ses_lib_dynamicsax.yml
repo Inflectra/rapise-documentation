@@ -1,0 +1,29 @@
+
+
+
+- 'DynamicsAX':
+    - 'DynamicsAX': 'Libraries/ses_lib_dynamicsax.md'
+
+    - 'DynamicsAXAddressBar': 'Libraries/DynamicsAXAddressBar.md'
+
+    - 'DynamicsAXComboBox': 'Libraries/DynamicsAXComboBox.md'
+
+    - 'DynamicsAXComboBoxEdit': 'Libraries/DynamicsAXComboBoxEdit.md'
+
+    - 'DynamicsAXComboBoxEditExpanded': 'Libraries/DynamicsAXComboBoxEditExpanded.md'
+
+    - 'DynamicsAXFastTabs': 'Libraries/DynamicsAXFastTabs.md'
+
+    - 'DynamicsAXMenu': 'Libraries/DynamicsAXMenu.md'
+
+    - 'DynamicsAXMenuDropDown': 'Libraries/DynamicsAXMenuDropDown.md'
+
+    - 'DynamicsAXMenuDropDownList': 'Libraries/DynamicsAXMenuDropDownList.md'
+
+    - 'DynamicsAXMenuItem': 'Libraries/DynamicsAXMenuItem.md'
+
+    - 'DynamicsAXTable': 'Libraries/DynamicsAXTable.md'
+
+    - 'DynamicsAXTextBox': 'Libraries/DynamicsAXTextBox.md'
+
+

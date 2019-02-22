@@ -1,0 +1,18 @@
+Name Value “
+
+‘Status Code. 200 0K
+Content-Length 38
+
+Cache-Control private
+
+Content-Type application/json; charset-utt-8
+
+Date Mon, 04 Feb 2019 04:28:43 GMT
+
+‘Set-Cookie ASP.NET_Sessionld=jp5Smdzzzq0hto4fixpegdq!: path=/: HttpOnly
+Server MicrosoftlIS/8.0
+
+X-AspNetVersion 4.030319
+
+REST Script Steps | Response Body Response Headers | Output] Warnings | Errors] Find Results
+

@@ -1,0 +1,64 @@
+ 
+
+(D Rapise 6.0.15.28 [C:\Users\inflectra\Documents\My Rapise Tests\Visual Language Testing\Visual Language Testing.sstest] - a x
+File Edit View Test Tools Settings Help Report ‘Chrome HTML ~
+BQ @ Record p> Play €) WebSpy - MD Debugger GB Qe <p Test SH User FB RV a4
+
+fle) surrage Bvt tans Tea 010221 78 % .
+
+4@ Visual Language Testing
+411 Infiectra | Library Information System
+
+ 
+
+ 
+
+Drag a column header here to group by that column.
+
+ 
+
+ 
+
+ 
+
+ 
+
+> GF Log_in = Type Stat * Name ‘Status ‘Comment:
+47 Library Information System | Log In xo - a © @
+> lainCon jn i
+7 sanconeSiartee sig ronan | 796 | saa ae i
+> Usemame. . Assert 07:43:01.465 _Log_In.DoClick([1) Pass Returned Value: true
+T Assert 07:43:02.750 _ Usemame_.DoCli Pass Retumed Value: true
+Object Tree [Files] —eciekE) .
+
+Assert _07:43:03.936_Usename_.DoSetText{["librarian’) Pass Returned Value: true
+properties Assert __07:43:05.088__Password_.DoSetText({"lbrarian’D) Pass Retumed Value: true
+= FEATH __/#rese(@nome~o0sHotrcor Assert ——07:43:06.348_ctl00$MainContent$LoginUser$Logi.DoClck(T) Pass _Retumed Value: true
+> Locators o Assert 07:43:07.625 _Log_In.DoClick({1) Pass Returned Value: true
+Y Object Assert _07:43:18.824 Object is not found: ctl00$MainContent$LoginUser$ Fail
+
+0 on catOstaiortcetsLousners Message 07:43:18.840 Error position in RVL Info
+Psa Assert —-(07:43:18.855 Failure in Test Fail
+Cass ‘Chrome _WidgetWin_1 > Test 07:43:18,871 Main Fail Passed:6 Failed:2 Time:20.35
+Favor Button
+Ignore Object Nam False Test Fail
+brary Chrome HTML Total:11 Pass:6 Fail:3 Info:2
+Name ‘tl00$MainContent sLoginUsers
+Role ROLE_SYSTEM_WINDOW
+Library infomation System |Log
+HTMLObject
+| Windaw Class [1 narambiect_class__Y |
+XPATH
+
+ 
+
+ 
+
+ 
+
+Failed Inflectra Corporation
+
+ 
+
+ 
+

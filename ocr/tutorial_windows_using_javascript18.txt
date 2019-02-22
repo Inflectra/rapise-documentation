@@ -1,0 +1,26 @@
+ 
+
+   
+   
+
+4 TwoDialogsTestdS GestatPage MB Mainjs
+BB main js
+BB Objects js
+ieee //#84448424 Script Steps #$34¢88320834
+Useris
+
+function Test (params)
+
+//Please enter your name:: Change text to ‘chris’
+SeS('Please _enter_your_name_') .DoSetText ("chris");
+//Bress button '0K"
+
+SeS ("0K") .DoClick() +
+
+/ (Verify that: Value=Thank you. Your name is chris.
+Tester-AssertEqual ("Verify that: Value=Thank you. Your
+
+g_load_libraries=["UIAutomation"]
+
+ 
+

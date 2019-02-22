@@ -1,0 +1,22 @@
+File Edit View Test Tools S
+New Test
+Creote anew Test
+
+Open
+Openan existing Test
+
+(Open Test from Spira
+Save to Spira
+
+crew +
+
+Open File
+Recent Tests »
+
+Save all tries
+
+Save As
+Save curent Test As
+
+exit
+

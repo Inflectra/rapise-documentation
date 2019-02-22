@@ -1,0 +1,62 @@
+GstatPace FB Mainrvixtsx
+
+@Diostest 2019-02-02 08-444
+
+Drag a column header here to group by that column.
+
+# Type
+
+¥o @
+Message
+Assert
+Assert
+Assert
+Assert
+Assert
+
+a > Test
+
+08:
+
+Start
+
+213.006
+
+08:44:26.663
+
+ 
+
+08:44:37.835
+
+8:
+
+ 
+
+37.835
+
+“ Name
+@
+Starting scenario: Test
+Basic_Controls.DoClick([])
+Username.DoSendkeys(["usr'])
+Password.DoSendkeys({"pwd"])
+Login.DoClick([])
+AUTIOS.DoClick([])
+‘iain
+
+Test Pass
+Total:7 Pass:6 Fail:0 Info:
+
+‘Comment
+
+Returned Value: true
+Returned Valu
+Returned Valu
+Returned Value:
+Returned Value: true
+Passed:5 Faile
+
+ 
+
+ 
+

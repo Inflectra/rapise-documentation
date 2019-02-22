@@ -1,0 +1,56 @@
+G stan Page
+
+Bimainjss
+
+//#444282482 Script Steps S#4#8EESE8#88¢
+
+function Test (params)
+
+=e
+
+ 
+
+Global.
+//Pleas +
+SeS(*P1¢
+//ezess +
+Ses(*0K +
+//verit #
+Tester. #
+
+DodinalogPlay{path, left top)
+DodppActvatetile)
+DoClck{ckckT ype)
+DeComparelsDbjects(meg, obit. <bi2)
+DaDecryptfencryptedT est]
+DoEneypt(plainT ext)
+DolnvokeTest(pathToTest, optionalParams)
+DokillbyName(processName)
+DockillyPilic)
+
+TaD
+
+ 
+
+ 
+
+ 
+
+[DoLaunch(/*sting'7 cmdline, /*sting'7 wikDir, /*boslean’? altachifEvsts, "sting"? altachT owindow)
+
+[Executes a command spected in eméLine. Optionally one map specily working di, and window name
+la attach itis aleady launched.
+
+|@param {sting} cmdline Command line to an executable with parameters,
+\Gparam {sting} [wikDi=] Werking directory, By defaut Ris a drectary of the test
+
+{Sparen (bolean} [atacifeistsFes] Ty to finda process wih he came executable path instead of
+launching i
+
+|@param {sting} [attach owindowsnull When attachifE ists is tue this parameter may be used to specify top
+window name to find a process to attach to,
+
+|@retuns {number} 1D of the new process [postive number) or an ertor code (negative number)
+
+ 
+

@@ -1,0 +1,31 @@
+
+
+
+- 'YUI':
+    - 'YUI': 'Libraries/ses_lib_yui.md'
+
+    - 'YUIButtonMenu': 'Libraries/YUIButtonMenu.md'
+
+    - 'YUICalendar': 'Libraries/YUICalendar.md'
+
+    - 'YUICheckButton': 'Libraries/YUICheckButton.md'
+
+    - 'YUIMenu': 'Libraries/YUIMenu.md'
+
+    - 'YUIMenuBar': 'Libraries/YUIMenuBar.md'
+
+    - 'YUIMenuButton': 'Libraries/YUIMenuButton.md'
+
+    - 'YUIPushButton': 'Libraries/YUIPushButton.md'
+
+    - 'YUIRadioButton': 'Libraries/YUIRadioButton.md'
+
+    - 'YUISliderH': 'Libraries/YUISliderH.md'
+
+    - 'YUISliderV': 'Libraries/YUISliderV.md'
+
+    - 'YUISplitButton': 'Libraries/YUISplitButton.md'
+
+    - 'YUITree': 'Libraries/YUITree.md'
+
+

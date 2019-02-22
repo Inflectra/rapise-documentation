@@ -1,0 +1,85 @@
+create_new_test_dialog6.txt
+	tutorial_qt_framework2.txt	0.9073024784276922
+	tutorial_record_and_playback4.txt	0.9215766518471455
+css_results.txt
+	xpath2.txt	0.9800268461895336
+errors_view3.txt
+	output_view2.txt	1.0
+internal_debugger1.txt
+	toolbar_main_debugger_enabled.txt	1.0
+java_awt_swing_testing2.txt
+	tutorial_java_testing1.txt	1.0000000000000007
+manual_testing_playback10.txt
+	tutorial_exploratory_testing19.txt	1.0000000000000004
+manual_testing_playback11.txt
+	tutorial_exploratory_testing20.txt	1.0000000000000004
+manual_testing_playback12.txt
+	tutorial_exploratory_testing21.txt	0.9999999999999999
+manual_testing_playback13.txt
+	tutorial_exploratory_testing22.txt	1.0000000000000007
+manual_testing_playback3.txt
+	tutorial_exploratory_testing12.txt	1.0000000000000004
+manual_testing_playback4.txt
+	tutorial_exploratory_testing13.txt	0.9999999999999998
+manual_testing_playback5.txt
+	tutorial_exploratory_testing14.txt	0.9999999999999998
+manual_testing_playback6.txt
+	tutorial_exploratory_testing15.txt	0.9999999999999999
+manual_testing_playback7.txt
+	tutorial_exploratory_testing16.txt	0.9999999999999997
+manual_testing_playback8.txt
+	tutorial_exploratory_testing17.txt	1.0000000000000002
+manual_testing_playback9.txt
+	tutorial_exploratory_testing18.txt	1.0000000000000007
+manual_testing_recording10.txt
+	tutorial_exploratory_testing10.txt	0.9999999999999996
+manual_testing_recording4.txt
+	tutorial_exploratory_testing4.txt	1.0000000000000009
+manual_testing_recording5.txt
+	tutorial_exploratory_testing5.txt	1.0000000000000002
+manual_testing_recording6.txt
+	tutorial_exploratory_testing6.txt	0.9999999999999998
+manual_testing_recording7.txt
+	tutorial_exploratory_testing7.txt	0.9999999999999997
+manual_testing_recording8.txt
+	tutorial_exploratory_testing8.txt	0.9999999999999998
+manual_testing_recording9.txt
+	tutorial_exploratory_testing9.txt	1.0
+namevalue_collection_editor_di1.txt
+	namevalue_collection_editor_di3.txt	1.0
+object_manager10.txt
+	object_manager8.txt	0.9582436866404594
+	object_manager9.txt	0.9237746377984516
+object_manager4.txt
+	object_manager5.txt	0.905140704237738
+options_dialog6.txt
+	options_dialog7.txt	1.0
+scripting_choice_dialog1.txt
+	tutorial_java_testing3.txt	0.92335273450193
+	tutorial_java_using_javascript3.txt	0.9150202394993682
+	tutorial_qt_using_javascript3.txt	0.9999999999999998
+	tutorial_web_services_rest_jslang.txt	0.9928794526157321
+	twodialogs_sample6.txt	0.9359820875995055
+selenium_webdriver3.txt
+	selenium_webdriver7.txt	1.0
+setting_up_selenium11.txt
+	setting_up_selenium7.txt	0.9482600642162838
+toolbar_spreadsheet7.txt
+	toolbar_spreadsheet8.txt	0.9077963247556883
+tutorial_java_testing7.txt
+	tutorial_qt_framework7.txt	0.9891061903806396
+tutorial_mobile_testing14.txt
+	tutorial_mobile_testing18.txt	0.9621580571504189
+tutorial_record_and_playback30.txt
+	tutorial_web_using_javascript15.txt	0.954919930426512
+tutorial_record_and_playback34.txt
+	tutorial_web_using_javascript3.txt	1.0000000000000009
+tutorial_record_and_playback35.txt
+	web_spy1.txt	1.0000000000000018
+tutorial_record_and_playback42.txt
+	tutorial_record_and_playback47.txt	0.9427138816596163
+	tutorial_record_and_playback48.txt	0.9772444813830031
+tutorial_soap_web_services8.txt
+	tutorial_soap_web_services9.txt	1.0000000000000004
+tutorial_web_services_rest5.txt
+	tutorial_web_services_rest_addheader.txt	0.9148727779474679

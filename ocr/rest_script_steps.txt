@@ -1,0 +1,11 @@
+BB Create Script “@ Remove Step YX Clean REST Script Steps.
+
+Get_Session GET
+*Get_Book GET
+
+Hide
+
+ 
+
+REST Script Steps | Response Body | Response Headers | Output] Warnings | Errors | Find Results
+

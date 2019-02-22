@@ -1,0 +1,6 @@
+ 
+
+(Aa) http://www. libraryinformationsystem.org/Services/SoapService.svc?wsdl Get WSDL Custom Endpoint
+
+ 
+

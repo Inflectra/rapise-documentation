@@ -1,0 +1,56 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GH Stor Poge (E) ManualSteps mt
+[2] NS Paint Test [ES — _ ee _ - ee a ee _ ee — a -
+‘tepid Description Expected Result Sample Data
+
+1. | User licks at 37, 17 in “Applicaton menu ‘Anpication menu) 7, |e
+step ‘Apa i |e )Dobclich
+Wstep2 | User ccke at 42, in Application menu" 'S08(Applcation_menu) DoLClick(42,
+step? | 12,
+step 3 | User clicks at: 44, 13 in New’ ic |snreces 13); e
+Wstep 4 | User clicks at: 15, 9 in Pencil’ | ‘SeS(Pencil) Dol Click(15, 9);
+steps | User cis at 14, 16in Text | ‘Se8(Text) DoLClick( 14, 16);
+
+ 
+
+step 6 | User clicks at: 186, 256 in™
+
+ 
+
+ 
+
+| ‘SeS(Simulated’) Dol Click(156, 256);
+
+ 
+
+ 
+

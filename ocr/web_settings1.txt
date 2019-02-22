@@ -1,0 +1,34 @@
+ 
+
+ 
+
+Web Spy Settings
+|e
+
+DOM Attributes Exclude Filter
+DOM Attributes Include Filter
+DOM Tree Loading Timeout
+
+10
+
+ 
+
+DOM Tree Max Attribute Lenath 1024
+
+Enable Universal XPath Generator True
+
+Fast DOM Tree Build False
+
+‘Show Internal ID False
+
+XPath type to learn xpath_sid
+DOM Attributes Exclude Filter
+
+List DOM element attributes to hide in the DOM Tree of the Web Spy (comma separated),
+
+ 
+
+ 
+
+ 
+

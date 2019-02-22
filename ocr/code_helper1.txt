@@ -1,0 +1,60 @@
+//e1ick on Log In
+SeS('Zog_tn") -Docas|
+
+//Set Text 1ib ¢
+SeS ("Username
+
+//Set Text 1ib¢
+SeS('Password_¢
+//Click on ctl #
+SeS(*ct100sMai #
+/WNerity that
+Tester.Asserte ?
+//CLick on Boo
+
+ 
+
+DodiddSelection{optionText)
+
+ 
+
+DaDblClck()
+
+DeDOMChidAtin)
+
+DeDOMChidrenCount()
+
+DeDOMConverttyne]
+
+4 DeDOMFindPareniwithtttibutelattNvame, matot
+
+DeDOMGetAttibute(attNvame)
+
+@ DoDOMGetAttibutest)
+
+DoDOMNentSbry
+Se5 ("Book Managtane ny Moet (7
+
+ 
+
+[Dotick(?*humber'7x, "number? y, boolean’? forceé vert)
+
+(Cicks on HTML element (button ink).
+
+|@param {number} [x] X coordinate to click.
+|@param {number fp] V coordinate to cick.
+
+ 
+
+|@retuns {boolean} tue! if successful, "tals otherwise’
+
+|@param {boolean} [loroeE vent=false] Pass "tue! to force browser event without actual mouse click
+
+ 
+
+rian", SeS(‘librarian') .GetInnerText (),
+
+librarian")?
+
+ 
+

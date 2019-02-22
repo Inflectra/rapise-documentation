@@ -1,0 +1,27 @@
+GstetPase — FMainnixisx _@d TwoDialogsTest 2019-0212 11-35 *
+
+Drag a column header here to group by that column.
+
+ 
+
+# Type Start * Name
+*o @ - a
+Message Starting scenario: Test
+Assert Please_enter_your_name_.DoSetText(["chris"])
+Assert ‘OK.DoClick([])
+Assert 11:35:58,474 Verify that: Value=Thank you. Your name is chris.
+» Test 11:35:58.474 Main
+
+   
+
+Test Pass
+Total:5 Pass:4 Fail:0 Info:
+
+‘Comment
+@
+
+Returned Value: true
+Returned Value: true
+
+Passed:3Failed:0 Time:1.3145
+

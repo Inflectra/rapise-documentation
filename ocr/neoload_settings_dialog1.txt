@@ -1,0 +1,30 @@
+ 
+
+ 
+
+NeoLoad Integration Settings = a x
+
+Ae
+
+ 
+
+NeoLoad Data Exchange URL _http:/localhost7400/DataExchange/v1/Sen,
+NeoLoad Proxy Address 1270.0.1:8090
+
+NeoLoad REST Service URL _htp//localhost7400/Recording/v1/Service.
+
+ 
+
+NeoLoad Data Exchange URL
+Rapise uses this URL to send performance metrics to NeoLoad controller.
+
+ 
+
+ 
+
+OK Cancel
+
+ 
+
+ 
+

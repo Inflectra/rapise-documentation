@@ -1,0 +1,25 @@
+ 
+
+Recording Activity for "Inflectra Rapise Two Dialogs Sample"
+
+ 
+
+# Object ‘Action Data Comment
+wl Please enter... Set... chris Please enter your name:: Change text to ‘chris’
+w2 OK Click Press button ‘OK’
+
+323 UlAutomation Verfy Thankyou. ..._ Very that: Value=Thank you. Your name is chi.
+
+ 
+
+ 
+
+Verity Lean SPY Finish
+(Ces) (Ctri#2) cory (eee (Cris3) Cancel
+
+Ready Advanced>> Transparent
+
+ 
+
+ 
+

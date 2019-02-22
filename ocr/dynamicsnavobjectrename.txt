@@ -1,0 +1,17 @@
+Recording Activity for "Customers - Microsoft Dynamics NAV"
+
+ 
+
+# Object ‘Action Data Comment
+wi ‘UlAutomation — Leam Leamed UlAutomation
+
+Verify Learn
+(Cart+1) (Cirl+2)
+
+Last captured: UIAObject ()
+204
+
+ 
+
+ 
+

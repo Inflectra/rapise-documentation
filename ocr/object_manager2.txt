@@ -1,0 +1,60 @@
+ 
+
+Ud Object Manager
+
+ 
+
+ 
+
+2 sa)
+
+ 
+
+Source
+
+ 
+
+Destination
+
+ 
+
+C:\SpiraRepository\Rapise Web Demo 1 TC88\Rapi
+
+ 
+
+ 
+
+ 
+
+E5
+
+ 
+
+ 
+
+ 
+
+ 
+
+> Copy Objectto the Right(F5)_%X Remove ftom Destination (Cri<D) SE Copy Allto Destination
+
+ 
+
+‘Source
+
+ 
+
+1D
+
+ 
+
+Destination
+
+ 
+
+ 
+
+ 
+
+ 
+

@@ -1,0 +1,27 @@
+    
+  
+  
+  
+  
+  
+  
+  
+
+Tools Settings Help
+
+D Pry cules
+Record
+
+Test Settings
+BD spice Properties
+Record Manual
+
+ 
+
+D> Execute Manual
+
+  
+
+Window
+Capture screenshot of application window only
+

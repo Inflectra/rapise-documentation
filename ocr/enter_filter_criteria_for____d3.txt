@@ -1,0 +1,44 @@
+Al of the following conditions:
+
+sae [ ((OBNuID)
+= Equals
+
++ Does not equal
+< Less than
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<< Less than or equal to
+> Greater than
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| 2 Greater than or equal to _————
+
+Uke
+=+Matches Regular Expression [+
+

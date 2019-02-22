@@ -1,0 +1,31 @@
+ 
+  
+  
+  
+  
+  
+  
+    
+   
+
+Play cinbeF5S
+Record
+
+Test Settings.
+
+Spire Properties
+
+Record Manual
+
+Execute Manual
+
+vei ev
+
+Window
+Capture screenshot of application window only
+
+Cursor
+‘Show cursor position on a screenshot
+
+ 
+

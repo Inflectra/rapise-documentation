@@ -1,0 +1,5 @@
+ 
+
+= ® SDK Manager 5
+Layout inspector
+

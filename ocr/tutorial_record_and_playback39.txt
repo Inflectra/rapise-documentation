@@ -1,0 +1,28 @@
+ 
+
+ 
+
+ 
+
+ 
+
+GstatPage FB Mainndxise * GB) web Testing 1_2019-02-07_12-01.tp
+Rv [*AddNew
+Flow Type object Action ParamName ParamType Paramvalue H
+2 Action @Log_In Doclick
+3 ‘Action [@Username_ DosetText tt string librarian
+4 ‘Action [@Password_ DosetText tt string librarian
+5 ‘Action @ ctloosMainconte.. DoClick
+6 Assert message string Verify that: InnerText=librarian
+7 ‘Action librarian GetinnerText
+8 Condition output1 == param2
+9 Param param2 string librarian
+40 Action Gee Manageme. DoClick
+1 of ‘Action, create new bo. Docick
+12 “Action — Doclick’
+13 ‘Action @Author_Manage.._ DoClick
+44 ‘Action @ _Create_new_bo.. DoClick
+45 ‘Action O Home Doclick
+16 ‘Action @Log_in Doclick
+wv
+

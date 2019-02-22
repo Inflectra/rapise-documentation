@@ -1,0 +1,33 @@
+Language Client Version Release Date
+
+Java 2.50.1
+ce 2.50.1
+Ruby 2.50.0
+python 2.50.0
+
+Javascript (Node) 2.48.2
+
+2016-01-29
+2016-01-28
+2016-01-27
+2016-01-27
+2015-10-15
+
+Download
+Download
+Download
+Download
+Download
+
+Change log
+Change log
+Change log
+Change log
+Change log
+
+Javadoc
+API docs
+API docs
+API docs
+‘API docs
+

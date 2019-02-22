@@ -1,0 +1,143 @@
+ 
+
+ 
+
+‘Ny SeSSamplesNUnitall - NUnit
+File View Project Test Tools Help
+
+8 \@ smartestuciosamples
+—|-@ SmateStudeSamples
+@ Tesinalog Paint
+ertCrossBrowser
+‘extDLLHendeManaged
+@ TesDLLHandesUnmanaged
+etDatNet20
+eslmage_CheckPoint
+@ TesMFC_SmateaTM
+extMSAecess
+extMSExcel
+@ Testa Word
+estRepoting
+‘etGimuetedDbject Paint
+@ Tes5SpreadSheet Cale
+eallsingCustomStings
+estUsingnchide
+@ TeaUsingRescty
+TestUsingXML
+
+    
+
+   
+
+   
+
+   
+
+   
+
+ 
+
+ 
+
+Completed
+
+Adin appere\Estensione\UntTesting\ NUnit SeSNUnit\
+
+Cote es)
+
+= T:\Admin\Ww/tappere\Extensione\UnitTestingNUnit\SeSN
+Unit\$e8SamplesNLnit\bin\D ebug\Se$SamplesNUnit
+
+Test Cases: 17 Tests ur: 17 Failues: 0 Ignoted: 0 Skipped: 0 Run Time: 365,731
+
+ 
+   
+   
+     
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     
+     
+   
+
+# T-\admin\Wappets\Samples\SpreadSheet_Calc\SpreadSheet_Calc.is
+1k 1 - Process started
+
+lok 2 - Leaking for abject;Buttont (1)
+
+lok 3 - Dadction(()
+
+[ok 4 - Looking for object:Buttons (5)
+
+lok § - Dadction()
+
+ok 6 - Looking for object Plus [+]
+
+lok 7 - Dadction(()
+
+[ok 8 - Leaking for abject;Buttont (1)
+
+(ok 9 - Dadcton({)
+
+‘ok 10-- Looking fr abject Button3 (3)
+
+lok 11 -Dodctionl
+
+ik 12 - Looking for object ResulButton (=)
+‘ok 13 -DoActionl)
+
+lok 14 - Looking far abject Result dt ()
+
+lok 15- 15+13=28,
+
+‘ok 18 - Locking fr abject Button (8)
+
+(ok 17 -DoActionl)
+
+lok 18- Locking far abject Multiply (*
+
+‘ok 19 - DoActionl)
+
+‘ok 20-- Locking far abject Button (6)
+
+‘ok 21 -DoActin)
+
+‘ok 22 - Looking for object ResulButton (=)
+(ok 23 -DoActinl)
+
+[ok 24 - Locking far abject Result dt ()
+
+lok 25 - 5°6=30) +
+
+   
+
+Console Enar Log
+
+ 
+
+» | Entots and Faittes] Tests Not Run Console. Out
+
+Test Cases: 17 Tests Run: 17 Faites: 0 Time : 385,731
+
+ 
+
+ 
+

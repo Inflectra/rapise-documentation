@@ -1,0 +1,26 @@
+View Test Tools Settings Hel
+Find Cirle
+
+   
+ 
+
+Findin Files Crl+Shift+F
+
+PREOD
+g
+2
+
+Paste
+Select All
+
+Undo
+Redo
+
+Toggle Breakpoint Fo
+
+ 
+
+BeqQs
+
+Save File
+

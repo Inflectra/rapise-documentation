@@ -1,0 +1,14 @@
+4 WebServicesSOAP
+
+4%" WebServicesSOAP
+# DoExecute
+# DoVerify
+4 GetCredential
+4+ GeiResponseHeaders
+4 GetResponselsErrorStatus
+¢ GetResponseObject
+¢> GetResponseText
+4 GetUr
+~¢ SetCredential
+=¢ SetUr
+

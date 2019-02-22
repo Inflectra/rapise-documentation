@@ -1,0 +1,27 @@
+ 
+
+ 
+
+Recording Activity for "Devi
+
+,
+
+ 
+
+ 
+
+# Object ‘ation Data Comment
+Wt teat Click Do Cick on textt
+w2 ‘edit_usemame Sen... user (Do SendKeys("user") on edit_usemame
+ws edit_password Sen... pwd Do SendKeys("pwd") on edit_password
+4 android.widg.. Cloke Do Ck on andrid.widget. Button
+ws android.widg... Click ‘Do Click on android. widget.ImageButton
+Verity Leam ‘SPY Finish
+(Cirlst) ——(Ctri#2) kemoyn| eas (Cris3) Cancel
+
+Last captured: AndroidimageButio.. ‘Advanced>> ___[] Transparent
+
+ 
+
+ 
+

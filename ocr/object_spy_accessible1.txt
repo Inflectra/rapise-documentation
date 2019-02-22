@@ -1,0 +1,157 @@
+ 
+
+ 
+
+© Rapise Spy
+SP Start Tracking (CH+G)
+
+= Accessible
+~ Tree
+4 Hexadecimal[ROLE_SYSTEM_WINDOW]
+‘System[ROLE_SYSTEM_MENUBAR ]
+> [ROLE_SYSTEM_TITLEBAR.Hex]
+ApplicationROLE_SYSTEM_MENUBAR,]
+Hexadecimal[ROLE_SYSTEM_RADIOBUTTON ]
+> Vertical[ROLE_SYSTEM_SCROLLBAR.0]
+> Horizontal[ROLE_SYSTEM_SCROLLBAR.O]
+IROLE_SYSTEM_GRIP])
+
+— HWND
+
+Hex(Button]
+
+ 
+
+ 
+
+ 
+
+0
+
+ 
+
+ 
+
+False
+
+ 
+
+ 
+
+False
+
+ 
+
+ 
+
+Hexadecimal[ROLE_SYSTEM_WINDO\
+
+ 
+
+ 
+
+15
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+  
+
+Pos Width 56
+Posk “31981
+
+PosY “31881
+
+RoleTaxt ek EeAAATOR 6
+‘StateTet Hocusable
+
+0
+
+ 
+
+ 
+
+ 
+
+ 
+
+[Chigla (CHILDID_SELF
+DefautAction [Check
+Desorgtion
+
+HWND- Hex[Button]
+
+ 
+
+3
+
+ 
+
+/Xe-3198 1, Y=-3186 1 Width=56 Height=
+
+ 
+
+Hexadecimal
+
+ 
+
+/ROLE_SYSTEM_RADIOBUTTON
+
+ 
+
+/STATE_SYSTEM_FOCUSABLE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AcoessibleObject Hexadecimal[ROLE_SYSTEM_WINDO\
+[ClassName Button
+
+Rect “31981, 31861, 85, 15
+
+Text Hex
+
+Visible Tue
+
+WindowSive 1342177284
+
+ 
+
+ 
+
+ 
+
+ 
+

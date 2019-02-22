@@ -1,0 +1,18 @@
+Qux Output Hide
+Microsoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+SeS Player Starting.
+
+Verbose level:
+
+Creating a locator Spreadsheet
+
+‘#i#tMain (-2)
+
+« >
+
+ 
+
+Output [Warnings | Errors] Find Results
+

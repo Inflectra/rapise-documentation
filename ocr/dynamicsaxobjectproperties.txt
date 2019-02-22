@@ -1,0 +1,32 @@
+Properties:
+
+ 
+
+ 
+
+2/8
+Ignore Object Nam Fase A
+Name AddressBarContainer
+Role (1 peramobject_class
+Tet
+Type DynamicsAXAdcressBar
+4 Window
+
+Window Class AxMainFrame E
+Window Text [_] regex: Microsoft Dynamic)
+Window Tale [2] regex: Mersoft Dynamic =
+
+ 
+
+ 
+
+Cass
+
+ 
+
+ 
+
+ 
+
+ 
+

@@ -1,0 +1,11 @@
+Java virtual machines found in common places:
+
+program files\jeva\jdkt 6.0_21\bin
+program files (x86)\javel\jreB\bin
+
+ 
+
+ 
+
+install in All| Install Search disks Cancel
+

@@ -1,0 +1,40 @@
+GB start Pase
+
+BBmainjs (2) LibraryinformationSystemrest™
+
+(Al % Updete Object Tree #9] Add Header {15 Add Parameter * Add Credentials
+
+REST Request
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+{eession_id} |7404#584-7200-4e37-b813-<5804eb46d12  [nsertin URL) (X)
+
+ 
+
+'Add_Book
+[cer » | [ ttpsww.jbraryinformationsystem org/Services/RestServce svelbook?session_id={session id) v [Send
+librarian (®)
+©
+Name Value Operations
+Accept ‘2pplicationjson 8
+Content-Type ‘2pplicationison &
+©
+Name Value Operations
+
+ 
+
+ 
+

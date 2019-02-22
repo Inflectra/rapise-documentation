@@ -1,0 +1,40 @@
+Ve ae
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+% cut citi iA BPW ter
+paste COPY ~ Bru =
++ © Format Painter ~ = Merge & Center ~
+cipboard Font 5 eon 5
+al . Flow
+AA B c D E F G
+1 [Flow |Type Object Action Param Name Param Type Param Value
+2 |f Learned t
+3) Action Log_in DoClick
+4\% — ClickonU
+5 | Action Username___DoClick
+6 |#  SetTextfi
+7 Action Username___DoSetText txt string librarian
+8 # — SetTextiil
+9 Action Password _DoSetText txt string librarian
+10/8 Clickonet
+11) Action —_ctl00$MainCon DoClick
+12% — ClickonB
+13, Action Book Manager DoClick
+14|#  Clckon(c
+15| Action _Create_new_| DoClick
+16% —_ClickonN
+17, Action Name_——_—DoClick
+15] set TetA
+19| Action Name_ DoSetText txt string ‘Adams Book
+
+20# — Clickonet
+

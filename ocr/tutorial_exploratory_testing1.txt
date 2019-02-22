@@ -1,0 +1,10 @@
+Rapise supports multiple testing methodologies. Select one to be used for newly created test.
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+
+Manual: Manual-only testing
+
+Mobile: Mobile Support
+
+Web: Cross-Browser Testing Support
+

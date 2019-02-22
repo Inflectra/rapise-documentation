@@ -1,0 +1,32 @@
+//Click on the login link
+var /*#WebElementWrapper*/logInLink = WebDriver.FindElementByld ('HeadLoginView HeadLoginStatus')?
+
+ 
+
+ 
+
+FindElementsByTagName(?sting’? tagNeme) A [GeDislavedd
+Global . Dos ij FindElementsByPath{/stina"? xpath) Retuns
+GetatributefattibuteName}
+/ [Make suxdpGetCoordinatest)
+var /*#Websp GelCseValueloroperty Name] ndElementByXPath (' //input [@id="MainContent_LoginUser,
+i", userName.GetAttribute("class"));
+
+ 
+
+ 
+
+Gets a value indicating whether or not this element is displayed
+
+ 
+
+  
+
+GetEnabled()
+(150 co = Societe snayaten.ovg/emi Test. nom)
+Wepbriver. GetLocationOnScreenOnceScrolledintoView() vy (srem.org/BemiTest htm!)
+
+//Click on the Alert box
+var /*#WebElementWrapper*/alertBtn = WebDriver.FindElementByld("benAlert");
+alertBtn.Click();
+

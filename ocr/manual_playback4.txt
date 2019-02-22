@@ -1,0 +1,51 @@
+ 
+
+ 
+
+Executing Ability to create new book
+
+ 
+
+(©) Ability to create new book
+
+(BY) BAY) [pecs] atenl) FX)
+
+‘) Step 1 of 6 - Please follow the directions outlined in the box below:
+
+User opens up Intemet Explorer and enters application URL: http://
+www libraryinformationsystem.com/beta
+
+ 
+
+Expected Result:
+The browser loads the login web page
+
+ 
+
+‘Actual Result- Please enter the actual test result if it differs, then click the appropriate button:
+SSSSS
+
+([B]Z UA anal ~ Ati0 | Aly
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

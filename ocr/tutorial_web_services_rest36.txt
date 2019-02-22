@@ -1,0 +1,10 @@
+function Test ()
+4
+SeS(‘LibraryInformationSystem _Get_Session') .DoExecute (null);
+var sessionId = SeS(*LibraryInformationSystem_Get_Session') .GetResponseBodyObject () 7
+Tester.Message (sessionId)
+
+ 
+
+g load libraries=["Web Service"):
+

@@ -1,0 +1,77 @@
+GstatPace EB Mainjs
+
+ 
+
+ 
+
+   
+
+  
+
+ 
+
+ 
+
+ 
+
+ed
+
+> function Test (params)
+
+5 aK
+
+le //Click on Log In
+
+Is Se5('Log_In') .DoClick():
+
+6 //Set Text librarian in Username:
+
+br Se5(‘Username_') .DoSetText ("librarian"!
+
+le //Set Text librarian in Password:
+
+s SeS('Password_') .DoSetText ("librarian");
+
+lto //Click on ct100SMainContent$LoginUser$LoginButton
+hha SeS ('ct100SMainContent$LoginUserSLogi') .DoClick() ?
+2 //Werify that: InnerText=librarian
+
+hs Tester.AssertEqual ("Verify that: InnerText=librarian", SeS('librarian') GetInnerText(), "librarian");
+lhe //Click on Book Management
+
+hs SeS (‘Book Management") .DoClick():
+
+he //Click on (Create new book)
+
+lh7 SeS('_Create new book_') .DoClick() +
+
+he //Click on Home
+
+hs SeS ("Home") .DoClick()
+
+ko //Click on Author Management
+
+lea SeS (‘Author Management") .DoClick()
+
+k2 //Click on (Create new author)
+
+ks SeS('_Create new book_') .DoClick() +
+
+be //Click on Home
+
+ks SeS ("Home") .DoClick ()
+
+ke //Click on Log Out
+
+a7 SeS(‘Log_In') DoClick():
+
+ke
+
+ko by
+
+Iso
+
+1 g_lead_libraries=["tg_browserLibrary:Internet Explorer HTML");
+
+ 
+

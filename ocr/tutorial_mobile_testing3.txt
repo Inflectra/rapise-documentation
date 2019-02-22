@@ -1,0 +1,16 @@
+Android Virtual Device Manager - Ee
+
+   
+
+Your Virtual Devices
+
+Andi ET
+
+Type Name Play Store | Resolution | _ APL Target CPU/ABI | Size on Disk ‘Actions
+(Nexus $x api 28 & 1080 x 1920:.. 28 Android 9.0(.. -x86.64 38GB >see
+
++ Create Virtual Device...
+
+©
+Ry
+

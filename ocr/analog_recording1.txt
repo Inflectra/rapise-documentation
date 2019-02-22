@@ -1,0 +1,15 @@
+484 TwoDialogsAnalogAbsolute @ = start Page
+4B Analog
+
+ Analog0001.art
+smite Do
+
+BB Mainjs
+BB objecisis
+BB Userjs
+
+SF Analog0001.af x
+(CilUserstinflectra\Documents\My Rapise Tests\TwoDialogsAnalogAbsolute\Analog\analog0001.arf
+
+Play
+

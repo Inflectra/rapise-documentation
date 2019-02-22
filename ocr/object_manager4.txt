@@ -1,0 +1,62 @@
+ 
+
+ 
+
+Ud Object Manager . ' ot
+
+Source Destination
+|B] | C:\SpiraRepository\Rapise Web Demo 1 TC88\Rapise
+> Copy Objectto the Right(F5)_%X Remove ftom Destination (CuleD) HE Copy Allto Destination;
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘Source 1D Destination
+ptt = Log_In tt
+Od = Usemame_ )
+rtd = Password_ it
+rtd = ctl00_. it
+rtd = Book Management —{..)
+rtd = Amsterdam it
+
+rtd = Log_Out ut
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

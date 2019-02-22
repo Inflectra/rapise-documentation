@@ -1,0 +1,6 @@
+Name Value
+params.userName “librarian”
+params.password “librarian”
+
+g_commandinterval 1000
+

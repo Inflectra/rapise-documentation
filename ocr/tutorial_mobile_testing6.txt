@@ -1,0 +1,42 @@
+ 
+
+ 
+
+bitps://dev-eu spireservice net
+
+ 
+
+ 
+
+NewFolder New Test Case
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Basic: Windows Desktop Application (Windows Native, NET, Java, WPF etc)
+
+Manual: Manual-only testing
+
+ 
+
+Web: Cross-Browser Testing Support
+
+Create Locally... Cancel
+
+ 
+
+ 
+
+ 
+

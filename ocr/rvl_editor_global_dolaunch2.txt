@@ -1,0 +1,24 @@
+Debugger GQ @ <> Test SH User MR BS {}
+GB start Page
+
+       
+ 
+ 
+          
+
+ 
+
+EB Mainsvixit
+
+ 
+
+ 
+
+Action ParamName ParamType ParamValue
+
+DoLaunch cmdline string
+
+attachifExists
+
+attachToWindow
+

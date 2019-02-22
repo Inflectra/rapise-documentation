@@ -1,0 +1,67 @@
+ 
+
+® Rapise 6.0.15.11 [CAAUsers\inflectra\ Documents\My Rapise Tests\TwoDialogsTestlS\TwoDialogsTestlS.sstest] -
+File Edit View Test Tools Settings Help
+BE) QQ @ Record > Play € WebSpy ~ MD Debugger Ge BG ep Test gH User FB ave
+
+| |
+
+TwoDialogsTesiS
+
+ 
+
+idinl Gd statPace EB Mainis * ~
+[/0se ‘Record/Learn’ button to begin test recording A
+
+ 
+
+4 Global
+> i Android
+> S database
+
+B Fie
+
+>O ios
+
+> fim Navigator
+
+> © Neoload
+>fB RVL
+
+>" Session
+
+> Bi Spreadsheet
+>So Tester
+
+function Test (params)
+
+5
+
+>
+>
+
+ 
+
+ 
+
+& User Functions
+(0 User Variables
+
+Properties
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Inflectra Corporation
+

@@ -1,0 +1,40 @@
+[TestFixture]
+Epublic class Fixturet
+
+¢
+|
+, Refactor >
+
+Insert Snippet,
+
+Surround With
+
+ 
+
+ 
+
+5B GoTo efintion
+
+Find all References
+
+ 
+
+  
+
+Breakpoint >
+Run To Cursar
+
+4 cut
+
+13, Cony
+
+(Paste
+
+ 
+
+ 
+
+outlining »
+
+ 
+

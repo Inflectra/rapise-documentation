@@ -1,0 +1,31 @@
+ 
+
+© Auto Raw [XML JSON |
+kexmt version="1.0" encoding="utt-8"?>
+<s:Envelope xmlns ‘http: //schemas.xmlsoap.org/soap/envelope/">
+vBody>
+<Connection_AuthenticaveResponse xnins wna inflectra .con/LibraryInformationsysten/Services/">
+<Connection_AuthenticaveResuit>true</ Connection AuthenticaveResult>
+</Connection, AuthenticateResponse>
+
+ 
+
+ 
+
+1
+2
+4
+
+ 
+ 
+
+7 </s:Body>
+2 L</s:Envelope>
+« >
+
+ 
+
+ 
+
+SOAP Script Steps Response Body | Response Headers | Output] Warnings | Errors | Find Results
+

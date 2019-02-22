@@ -1,0 +1,57 @@
+Drag a column header here to group by that column.
+
+# Type Start
+¥o @ -
+
+Message 18:22:31.073
+Assert
+Message
+Assert
+Assert
+Assert
+Assert
+Assert
+
+a > Test 18:33:32,808
+
+ 
+
+Name Status
+@ @
+Starting scenario: Test Info
+LibraryInformationSystem_Get_Session.DoExecute({null) Pass
+‘a360cSdb-c959-4806-a6dc-c661beaasdH2 Info
+
+LibraryInformationSystem_Get_Book.DoExecute([{"session_id'a3 Pass
+Book count matches
+
+LibraryInformationSystem_Add_Book.DoExecute([{"session_
+LibraryInformationSystem_Get_Book.DoExecute(({"session_id''a3
+Book count matches
+
+    
+ 
+
+‘iain
+
+Test Pass
+Total:9 Pass-7 Fail-0 Info:2
+
+‘Comment
+@
+
+Returned Value:
+
+ 
+
+Returned Valu
+
+ 
+
+Returned Value:
+Returned Valu
+
+ 
+
+Passed:6 Failed:0 Time:.876s
+

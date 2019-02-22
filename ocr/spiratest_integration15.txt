@@ -1,0 +1,19 @@
+ 
+
+Synchronize Files o
+
+Files To Upload:
+
+Selected File Name Action Path
+Mains Upload ClUserslinflectra\Documents\My Rapise Tests\New Test Case
+Main.rvlxlsx Upload (C\Userslinflectra\Documents\My Rapise Tests\New Test Case
+NewTestCasesstest Upload (C\Userslinflectra\Documents\My Rapise Tests\New Test Case
+New Test Case.sstestu. Upload CUserstinflectra\Documents\My Rapise Tests\New Test Case
+Objects.is Upload CUserstinflectra\Documents\My Rapise Tests\New Test Case
+
+CUserstinflectra\Documents\My Rapise Tests\New Test Case
+
+ 
+
+Extensions offiles to exclu. | tap. tp, log, user, cmd, rmt, rmipng, \Reports\ Da | Apply 0k Cancel
+

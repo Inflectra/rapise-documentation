@@ -1,0 +1,48 @@
+= Libraries
+Library
+M Auto:
+O Java
+Cl Managed
+
+O DevExpress
+Cl NavPosCentrols
+
+O Infragistics
+
+O Telerik
+
+C1 Syncfusion
+
+C1 Gt Framework
+
+Cl Web Service
+
+C1 Internet Explorer HTML
+C1 Selenium
+
+C1 Firefox HTML
+
+OF Chrome HTML
+
+Description
+Detect library automatically
+
+Java support for AWTISWING
+
+Managed support for NET 2.0, 3.0, 3.5, 4x
+
+DevExpress DXperience v10 support
+NavPOSControls - Support for LSRetail NAV POSC..
+
+Infragistics support
+Telerik RadControls for Winforms @3 2010
+‘Syncfusion for Windows Forms controls support
+Used for applications written using the Qt Framework
+Used for testing RESTiul web services
+
+HTML DOM-based recorder for Internet Explorer
+‘Selenium based playback engine
+
+HTML DOM-based recorder for Mozilla Firefox
+HTML DOM-based recorder for Google Chrome
+

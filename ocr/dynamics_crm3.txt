@@ -1,0 +1,31 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘4 @ Object Tree C\Users|Public\Documents\Rapise\Sa
+4G Microsoft Dynamics CRM
+> A Contacts [Contacts]
+> Grid [Gria)
+> A Workplace [Workplace]
+4G Contact
+> [al firstname [firstname]
+> [abl lastname [lastname]
+
+ 
+
+ 
+
+ 
+
+ 
+

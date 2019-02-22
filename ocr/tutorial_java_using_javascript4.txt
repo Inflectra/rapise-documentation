@@ -1,0 +1,28 @@
+D Rapise 6.0.15.26 [C:\Users\inflectra\Documents\My Rapise Tests\avaTest 1VavaTest 1.sstest]
+File Edit View Test Tools Settings. Help
+
+BQ. @ Record > Play GQ UiAutomation Spy ~ MD Debugger Ge GQ ef Test Bp User FB av
+
+[nt "1 BsenPoge Main *
+
+GD vavatest1 |/0se *Record/Learn* button to begin test recording
+4 Global
+
+> Android
+
+> S database
+
+>D File
+
+> B clobal
+
+>O ios
+
+> Ti Navigator 3
+
+Properties
+
+function Test (params)
+
+5
+

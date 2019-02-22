@@ -1,0 +1,82 @@
+ 
+
+© Rapise Spy
+Spy PEI Get Snapshot (Ctrl-G) Test Locator @ Edit Profiles @ Profile: iOS AppSimula ~|Context: NATIVEAPP | ~
+Tap Swipe + Shake Precise Tap + ScrollTo —Acceptalert Dismiss Alert Change Orientation
+
+TF ts tet
+
+ 
+
+XCUIElementTypeApplication(0.0][375.812]
+0) XCUIElementTypeWindow(0,0]375.812]
+
+waa
+
+ 
+
+XCUlElement TypeWindow/CUIEle,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| (0) XCULElementTypeOther0.01375.812] Bese Contes
+> (0) XCUIElementTypeNavigationBar(0.44]1375.88] a
+4 (1) XCUlElementTypeCther0.01875.8121 focus
+4 ()XCULElementTypeCther0,01[375.812] (© XCUElementTypeSiatcTed[161
+4 (0) XCUIElementTypeTable(0.0]1375.812] 7XCUIElement Type Aopication/XCU| | Men Soe anne tte: Pose
+
+> (0) XCUIElementTypeCell[0.88]1375.132]
+
+4 (1) XCUIElementTypeCell(0.132]375.176]
+(©) XCUlElementTypeStaticTexi{16,138][12 1,158)
+(1) XCUElementTypeStaticText{16,15711294,171]
+(2) XCUIElementTypeOther{15,175]375,176]
+(@) XCULElementTypeOther{16,175]1375,176]
+(4) XCULElementTypeButton[351,14711359,160]
+
+> (2) XCUIElementTypeCell[0,176][375.220]
+
+1) XCUIElementTypeWindow(0,0]375.812]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

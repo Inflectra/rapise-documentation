@@ -1,0 +1,26 @@
+‘Auto Raw [XML | JSON |
+kexmt version="1.0" encoding="utt-2"7>
+<s:Envelope xmlns: ‘http: //schemas.xmlsoap.org/soap/envelope/">
+oay>
+<Connection_AuthenticateResponse mnins="http: //m.inflectra.con/Libreryinformat
+<Connection_AuthenticateResuit>true</ Connection AuthenticaveResult>
+</Connection, AuthenticateResponse>
+5b eys:aoay>
+) Leysetnvetope>
+
+ 
+
+ 
+
+ 
+
+1
+2
+4
+
+ 
+
+ 
+
+‘SOAP ScriptSteps _ Response Body | Response Headers | Output] Warnings | Errors] Find Results
+

@@ -1,0 +1,81 @@
+ 
+
+Project types:
+
+Templates:
+
+ 
+
+2 Misual C#
+Windows
+NET Framework 3.0
+Smart Device
+Database
+Starter Kits
+Web
+Other Languages
+Other Project Types
+
+ 
+
+ 
+
+ 
+
+Visual Studio installed templates
+
+(BAwindows Application
+(FAlclass Library
+
+[BAWindows Central brary
+“lcrystal Reports Application
+“Foevice application
+
+$9, 5P.NET Web Service Application
+
+My Templates
+
+Bicanbuntrests
+{Eilseatch onine Templates
+
+ 
+
+GlWindows Application (WPF)
+GLWCF Service Library
+(PBlconsole Appation
+
+oUt v3 Test Project,
+‘QASP.NET Web Application
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+«No description available>
+
+Name: SeSNUnitTests1
+
+ 
+
+Location: | DeiMyDocstvisuel Studio 2005,
+
+) Lierse.. J
+
+ 
+
+Solution Name: | SeSNUnitTests1
+
+ 
+
+reate directory For solution
+
+[add to Source Control
+
+ 
+

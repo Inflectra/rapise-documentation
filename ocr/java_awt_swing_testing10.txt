@@ -1,0 +1,20 @@
+File Edit Format View Help
+puttoni java. awt. sutton
+accessiblecontext java. awe. ButtonSaccessibleawTButton@34alfc
+actioncommand — button
+actiontisteners [Ljava. awt. event. actionListener;@12a54F9
+background java. awt. Color [r=240, g=240, b=240]
+enabled true
+
+focusable true
+font "| Java aut, Font [fam ly-bialog,nane=oi alog,style=plain, size=t2]
+01
+
+foreground java. awt. color [r=0,g=0,b=0]
+TabeT — buttont.
+name button,
+
+visible true
+
+ 
+

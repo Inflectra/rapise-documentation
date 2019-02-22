@@ -1,0 +1,26 @@
+ 
+
+Recording Activity for "AUTIAVA"
+
+ 
+
+ 
+
+ 
+
+# Object ‘ation Data Comment
+1 buttont ‘Action Press button button”
+2 advAwtContr... Action Press bution ‘advAntControl
+ws ‘ist Sele... AWT Listlte... Do Selectltem("AWT Listltem1") on listO
+4 jButton2 ation Press bution jButon2
+YS jTabbedPane? Lick 48,11 User cicks a: 48, 11in jTabbedPaneT”
+Verity Leam SPY Finish
+
+(Ces) (Ctri#2) (rs) Fe (Cris3) Cancel
+
+Paused Advanced>> (Transparent.
+
+ 
+
+ 
+

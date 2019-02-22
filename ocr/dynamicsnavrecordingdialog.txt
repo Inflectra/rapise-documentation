@@ -1,0 +1,31 @@
+ 
+
+Recording Activity for "Customers - Microsoft Dynamics NAV"
+
+ 
+
+# Object Action Data Comment
+
+wl New — LClick 9,27 User clicks at: 9, 27 in 'New"
+
+w2 OK Action Press button ‘OK’
+
+w3 Name LClick — 29,7 User clicks at: 29, 7in 'Name"
+U4 Name SetText CONTOSO _Do SetText('CONTOSO") on Name
+ws Address LClick 109.3 User clicks at: 109, 3 in "Address"
+
+V6 — Address SetText 1200 Market St Do SetText("1200 Market St") on Address:
+
+ 
+
+Verify Learn SPY. Finish
+(Catt) (C2) (Cirl5) Resume (Cute) Cones!
+
+ 
+
+Paused [Advanced>> __|[-] Transparent
+
+ 
+
+ 
+

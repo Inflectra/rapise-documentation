@@ -1,0 +1,45 @@
+SpiraTest
+
+ 
+
+ 
+
+User 1 with
+Rapise IDE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+User 2 with
+RapiseLauncher
+
+Sa
+
+User 3 with
+RapiseLauncher
+
+>
+
+ 
+
+ 
+
+UR
+
+ 
+
+ 
+
+ 
+
+<SR
+
+ 
+
