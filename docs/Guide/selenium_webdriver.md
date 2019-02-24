@@ -75,7 +75,7 @@ Learn to Click) in which case test script code is also generated.
 
 To playback a web test using a Selenium web browser profile, simply choose the appropriate profile in the dropdown located in the top right corner of the main Rapise window:
 
-![clip0021](./img/selenium_webdriver7.png)
+![clip0021](./img/selenium_webdriver3.png)
 
 Then click the `Play` button on the main toolbar. The test will now start [execution](playback.md). Unlike recording there is nothing different in the way Rapise handles the [playback](playback.md) of a Selenium test. The only difference will be that if the test uses non-HTML technologies such as Java, etc. those parts of the test will fail.
 
