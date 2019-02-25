@@ -110,7 +110,7 @@ class TableFilter(tbl.TableProcessor):
                 words = row[i].split()
                 for word in words:
                     # Keep URLs from throwing the word length count off too badly.
-                    match = re.match(r'!?\[(.*?)\]\(.*?\)', word)
+                    match = re.match(r'\[(.*?)\]\(.*?\)', word)
                     if match:
                        word = match.group(1)
 
@@ -202,11 +202,6 @@ class TableFilter(tbl.TableProcessor):
             # Only set column width dynamicaly for non-rogue rows
             if i < len(widths):
               w = widths[i]
-            
-            # Tanur: Keep images in tables
-            match = re.match(r'\s*!?\[(.*?)\]\(.*?\)\s*', row[i])
-            if match:
-              continue
 
             tw = textwrap.TextWrapper(width=w, break_on_hyphens=False)
             # Wrap and left-justify
