@@ -2830,6 +2830,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
+    <a href="../../Manuals/Rapise_Installation_Guide/">Rapise Installation Guide</a>
+</li>
+                                    
+<li >
     <a href="../../Manuals/Preparing_for_Android_Testing/">Preparing for Android Testing</a>
 </li>
                                     
@@ -2903,22 +2907,16 @@
 </ol>
 <p>To verify that the bridge installed correctly, check that the following files have been installed inside your Java VM (typically found at <code>C:\Program Files (x86)\Java\jre1.x.x_xxx</code>):</p>
 <ul>
-<li>
-<p><code>lib\accessibility.properties</code></p>
-</li>
-<li>
-<p><code>lib\ext\jaccess.jar</code></p>
-</li>
-<li>
-<p><code>lib\ext\smartestudio-bridge.jar</code></p>
-</li>
+<li><code>lib\accessibility.properties</code></li>
+<li><code>lib\ext\jaccess.jar</code></li>
+<li><code>lib\ext\smartestudio-bridge.jar</code></li>
 </ul>
 <p>If you don't see <strong>all three of these files</strong> then it means the bridge was not installed correctly.</p>
 <h2 id="troubleshooting-the-configuration">Troubleshooting the Configuration</h2>
-<p>To help you make sure that your environment is correctly setup and also to help you try out Rapise, we have a sample application called AUTJava (AUT = <strong>A</strong>pplication <strong>U</strong>nder <strong>T</strong>est) that can be found in the folder: </p>
+<p>To help you make sure that your environment is correctly setup and also to help you try out Rapise, we have a sample application called AUTJava (AUT = <strong>A</strong>pplication <strong>U</strong>nder <strong>T</strong>est) that can be found in the folder:</p>
 <p><code>C:\Users\Public\Documents\Rapise\Samples\Java\AUTJAVA</code></p>
 <p>To run the application, right-click on the x86run.cmd file and choose <strong>Run as Administrator</strong>.</p>
-<p><img alt="AUTJava" src="../img/java_awt_swing_testing2.png" /></p>
+<p><img alt="AUTJava" src="../img/autjava.png" /></p>
 <p>If the application doesn't appear correctly then you may need to set the <code>JAVA_HOME</code> environment variable.</p>
 <p>To do this, open up the Windows control panel and choose <code>System &gt; Advanced System Settings</code>:</p>
 <p><img alt="EnvVariables" src="../img/java_awt_swing_testing3.png" /></p>
@@ -2931,7 +2929,7 @@
 </ul>
 <p><em>(you will need to match the location of your actual Java VM)</em></p>
 <p>Now you should be able to launch the AUTJava sample application.
-<img alt="AUTJava" src="../img/java_awt_swing_testing2.png" /></p>
+<img alt="AUTJava" src="../img/autjava.png" /></p>
 <p>To verify that Rapise is configured correctly, click on the SPY menu in Rapise and choose <strong>Java</strong>.</p>
 <p>Then click on the main <strong>Spy</strong> icon and the Java Spy will start up:
 <img alt="Spy1" src="../img/java_awt_swing_testing5.png" /></p>
@@ -2962,7 +2960,7 @@ You should see the following:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
