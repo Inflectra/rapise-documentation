@@ -12,7 +12,6 @@ To record a script in JavaScript mode pass first 3 chapters from [Tutorial: Web 
 
 The only thing you need to do differently is to select JavaScript mode during new test creation.
 
-
 ## Open Rapise and Create New Test
 
 Go to **Start** &gt; **All Programs** &gt; **Inflectra** &gt; **Rapise**.  The following window should appear.
@@ -178,7 +177,7 @@ Now, click on the main `Spy` tool icon and Rapise will start the [Web Spy](web_s
 
 Go back to the web page and login to the **library information system** with the same **login/password (librarian/librarian)** and click on the **Book Management** menu item so that the list of books is displayed:
 
-![book management](./img/tutorial_web_using_javascript3.png)
+![book management](./img/lis_book_management.png)
 
 Now back in the [Web Spy](web_spy.md), click on the `Get Snapshot` option to refresh the Web Spy and display the HTML elements (called the DOM tree) that make up this page:
 

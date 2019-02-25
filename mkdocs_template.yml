@@ -3,6 +3,7 @@ copyright: Copyright © 2007-2019, All Rights Reserved, Inflectra
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://rapisedoc.inflectra.com/
+site_description: Rapise Test Automation platform documentation
 theme:
     name: mkdocs
     custom_dir: inflectra_mkdocs

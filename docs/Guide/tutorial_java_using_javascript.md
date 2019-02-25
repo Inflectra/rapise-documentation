@@ -20,7 +20,7 @@ and right-click on the `x86run.cmd` file and choose **Run as Administrator**.
 
 If you have Java configured correctly, you will see:
 
-![awtswing_sample1](./img/tutorial_java_testing1.png)
+![awtswing_sample1](./img/autjava.png)
 
 If the application doesn't start correctly, make sure you have Java SE and the [Rapise Java Bridge](java_awt_swing_testing.md) installed and the JAVA_HOME environment variable correctly set to your Java Runtime (JRE). For more details on this, please refer to: [Java AWT/Swing Testing](java_awt_swing_testing.md).
 

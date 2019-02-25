@@ -174,12 +174,12 @@ Now, click on the main `Spy` tool icon and Rapise will start the [Web Spy](web_s
 
 Go back to the web page and login to the **library information system** with the same **login/password (librarian/librarian)** and click on the `Book Management` menu item so that the list of books is displayed:
 
-![book management](./img/tutorial_record_and_playback34.png)
+![book management](./img/lis_book_management.png)
 
 Now back in the [Web Spy](web_spy.md), click on the `Get Snapshot` button to refresh the Web Spy and display
 the HTML elements (called the DOM tree) that make up this page:
 
-![web spy with snapshot](./img/tutorial_record_and_playback35.png)
+![web spy with snapshot](./img/web_spy1.png)
 
 Once it has loaded the DOM tree, you can expand/collapse the elements to see how the web page is constructed. This is useful when testing an application since many of the HTML elements on a page may be used for layout purposes and will not be visible in the browser. In the example page, we have expanded some of the nodes to display the main section of the page and the table that contains the list of books.
 

@@ -126,7 +126,7 @@ The list of versions at time of writing was:
 
 When you click on the folder for the latest version you will see the various files that can be downloaded:
 
-![clip0011](./img/setting_up_selenium11.png)
+![clip0011](./img/setting_up_selenium7.png)
 
 Download the **selenium-server-standalone-X.XX.X.jar** to the Mac.
 
