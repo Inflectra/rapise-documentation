@@ -4,8 +4,8 @@ import os
 import re
 
 #src_folder = "../input"
-src_folder = "../docs/Manuals"
-dst_folder = "../docs/Manuals/pp"
+src_folder = "../temp"
+dst_folder = "../temp/pp"
 
 link_regex = re.compile(r"file:///C:\\work\\Temp\\HM\\HTML\\([a-z_\-]+)\.htm", re.IGNORECASE)
 img_regex = re.compile(r"\(([a-z0-9_\-]+)/media/image([0-9]+\.[a-z]+)", re.IGNORECASE)

@@ -4,8 +4,8 @@ import os
 import re
 import shutil
 
-src_folder = "../docs/Manuals"
-dst_folder = "../docs/Manuals/img"
+src_folder = "../temp"
+dst_folder = "../temp/img"
 
 
 def main():
