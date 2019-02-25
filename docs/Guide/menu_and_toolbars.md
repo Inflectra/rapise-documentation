@@ -4,9 +4,14 @@
 
 ## File
 
-| Default                      | Manual                              |
-| ---------------------------- | ----------------------------------- |
-| ![File](./img/menu_file.png) | ![File](./img/menu_file_manual.png) |
+*Default*:
+
+![Default](./img/menu_file.png)
+
+*Manual*:
+
+![Manual](./img/menu_file_manual.png)
+
 
 The File menu provides quick access to all the File management functions in Rapise. Many of these are also available on the main [toolbar](#main-toolbar).
 
@@ -36,7 +41,6 @@ The File menu provides quick access to all the File management functions in Rapi
 * **Save Manual Test Locally**
 * * Manual: Save manual Test Case Steps as a local .rmt file.
 
-
 * **Reload Manual Test from Spira**
 * * Manual: Reload test steps from the [Spira](spiratest_integration.md) Test Case overriding local changes.
 
@@ -44,13 +48,25 @@ The File menu provides quick access to all the File management functions in Rapi
 
 The **Edit** menu provides tools for editing currently open script file. Menu contents depend on the active editor currently open in the [content view](content_view.md).
 
-| Default                      | JavaScript                      | RVL                              | Manual                              |
-| ---------------------------- | ------------------------------- | -------------------------------- | ----------------------------------- |
-| ![File](./img/menu_edit.png) | ![File](./img/menu_edit_js.png) | ![File](./img/menu_edit_rvl.png) | ![File](./img/menu_edit_manual.png) |
+*Default*:
+
+![Default](./img/menu_edit.png)
+
+*JavaScript*:
+
+![JavaScript](./img/menu_edit_js.png)
+
+*RVL*:
+
+![RVL](./img/menu_edit_rvl.png)
+
+*Manual*:
+
+![Manual](./img/menu_edit_manual.png)
 
 * **Find**, **Find in Files** - search using the [Find and Replace Dialog](find_and_replace_dialog.md).
 
----
+-----
 
 * **Ins Row**
 
@@ -60,7 +76,7 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 
 * * RVL: Delete active Row. If several rows selected then all of them are deleted.
 
----
+-----
 
 * **Add Link**
 
@@ -78,7 +94,7 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 * **Down**
 * * Manual: Move selected step Down.
 
----
+-----
 
 * **Select All**
 * * JavaScript: select all text in the text editor.
@@ -95,26 +111,29 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 * * JavaScript: pastes from the clipboard.
 * * RVL: paste cells form the clipboard.
 
----
+-----
 
 * **Undo** (CTRL+Z) reverses the last deletion or insertion made.
 * **Redo** button (CTRL+Y) reverses the last undo action.
 
----
+-----
 
 * **Toggle Breakpoint** (Shortcut: F9) inserts or removes a breakpoint at the current cursor position.
 
 * **Save File**
 * * JavaScript: saves the script file you are editing.
 
-
 ## View
 
 The **View** menu contents depend on the active editor currently open in the [content view](content_view.md).
 
-| Default View                 | Manual Editor                       |
-| ---------------------------- | ----------------------------------- |
-| ![File](./img/menu_view.png) | ![File](./img/menu_view_manual.png) |
+*Default*:
+
+![Default](./img/menu_view.png)
+
+*Manual*:
+
+![Manual](./img/menu_view_manual.png)
 
 * **Start Page** - opens the Rapise [Start Page](start_page.md).
 
@@ -149,10 +168,13 @@ The **View** menu contents depend on the active editor currently open in the [co
 
 The **Test** menu contents depend on the active editor currently open in the [content view](content_view.md).
 
-| Default View                 | Manual Editor                                   |
-| ---------------------------- | ----------------------------------------------- |
-| ![File](./img/menu_test.png) | ![File](./img/menu_test_manual_screenshots.png) |
+*Default*:
 
+![Default](./img/menu_test.png)
+
+*Manual*:
+
+![Manual](./img/menu_test_manual_screenshots.png)
 
 * **Play** - this item [executes](playback.md) the current test.
 * **Record** - this item is used for **recording and learning**, clicking it will open the [Recording Activity Dialog](recording_activity_dialog.md).
@@ -187,9 +209,13 @@ pointer/cursor inside the image.
 
 The **Tools** menu contents depend on the active editor currently open in the [content view](content_view.md).
 
-| Default View                  | Manual                               |
-| ----------------------------- | ------------------------------------ |
-| ![File](./img/menu_tools.png) | ![File](./img/menu_tools_manual.png) |
+*Default*:
+
+![Default](./img/menu_tools.png)
+
+*Manual*:
+
+![Manual](./img/menu_tools_manual.png)
 
 * **Spy** - dropdown to select active [Spy](ses_spy_dialog.md). You use the Spy to look at the running application and find specific objects that you want to perform an [operation](actions.md) or [verification](checkpoints.md) on.
 
@@ -200,7 +226,7 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 * **Libraries** - this button opens the [Select an Application Dialog](select_an_application_to_record_dialog.md) so that you can add/change the [libraries](recording_library.md) being used to record the current test.
 
 * **Manual Steps** - displays the [manual test steps](manual_test_editor.md) associated with this test.
-* 
+
 * **Web Services** - allows you to add a new [web service](web_service_testing.md) definition to your Rapise test. Clicking on this displays the [Add Web Service](dialog_add_web_service.md) dialog box.
 
 * **Object Manager** - open the [Object Manager](object_manager.md) add-in; this add-in is used to copy recorded objects between test scripts.

@@ -155,7 +155,7 @@ pages:
             - 'Scripting Choice Dialog': 'Guide/scripting_choice_dialog.md'
             - 'Select an Application to Record... Dialog': 'Guide/select_an_application_to_record_dialog.md'
             - 'Selenium Settings Dialog': 'Guide/selenium_settings_dialog.md'
-            - 'Settings Dialog': 'Guide/settings_dialog.md'
+            - 'Test Settings Dialog': 'Guide/settings_dialog.md'
             - 'SOAP Definition Editor': 'Guide/soap_definition_editor.md'
             - 'Source Editor': 'Guide/source_editor.md'
             - 'Spira Dashboard': 'Guide/spira_dashboard.md'
