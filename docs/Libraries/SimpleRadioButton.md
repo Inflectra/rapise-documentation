@@ -1,11 +1,8 @@
-
-
 # SimpleRadioButton
 
 Static text control.
  
 Extends SeSSimulatedObject.
-
 
 
 
@@ -18,15 +15,14 @@ Extends SeSSimulatedObject.
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
-	
+
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
 	
 <!-- ============================== action detail ========================== -->
 		
-
 

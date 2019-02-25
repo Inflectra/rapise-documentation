@@ -1,11 +1,8 @@
-
-
 # iOSButton
 
 Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="iOSObject" styleclass="Normal" translate="true">iOSObject</link>.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -18,12 +15,11 @@ Extends SeSSimulatedObject.
 
 	
 <!-- ============================== action summary ========================== -->
-	
+
 
 <!-- ============================== property detail ========================== -->
 	
 	
 <!-- ============================== action detail ========================== -->
 		
-
 

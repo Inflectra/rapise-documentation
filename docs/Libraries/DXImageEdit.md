@@ -1,5 +1,3 @@
-
-
 # DXImageEdit
 
 DevXpress ImageEdit.
@@ -7,7 +5,6 @@ DevXpress ImageEdit.
 Extends ManagedObject.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -22,73 +19,25 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [Image](#Image) | 'true' if there is image loaded into the editor, 'false' otherwise. | GetImage |  |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Image">Image</a>
-		</td>
-		<td>
-			'true' if there is image loaded into the editor, 'false' otherwise.
-		</td>
-		
-		<td>
-		  GetImage
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSetText">DoSetText</a>
-			</td>
-			<td>
-				Sets text value of this object.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoSetText](#DoSetText) | Sets text value of this object. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -120,40 +69,22 @@ Accessors: GetImage
 
 Sets text value of this object.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>val</td>
-						<td>string</td>
-						<td>
-								Text value.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| val | string |	Text value. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

@@ -1,5 +1,3 @@
-
-
 # DXButtonEdit
 
 DevXpress ButtonEdit.
@@ -7,7 +5,6 @@ DevXpress ButtonEdit.
 Extends ManagedObject.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -22,73 +19,25 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Text">Text</a>
-		</td>
-		<td>
-			Text of the object, 'false' if text can not be read.
-		</td>
-		
-		<td>
-		  GetText
-		</td>
-		<td>
-		  SetText
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSetText">DoSetText</a>
-			</td>
-			<td>
-				Sets text value of this object.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoSetText](#DoSetText) | Sets text value of this object. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -120,42 +69,24 @@ Accessors: GetText, SetText
 
 Sets text value of this object.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>val</td>
-						<td>string</td>
-						<td>
-								Text value.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| val | string |	Text value. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 
 
 
@@ -169,90 +100,26 @@ boolean: 'true' if success, 'false' otherwise.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [ButtonCount](#ButtonCount) | Number of buttons in this control. | GetButtonCount |  |
+| [ButtonKind](#ButtonKind) | Kind of a button at index. | GetButtonKind |  |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ButtonCount">ButtonCount</a>
-		</td>
-		<td>
-			Number of buttons in this control.
-		</td>
-		
-		<td>
-		  GetButtonCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ButtonKind">ButtonKind</a>
-		</td>
-		<td>
-			Kind of a button at index.
-		</td>
-		
-		<td>
-		  GetButtonKind
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoClickButton">DoClickButton</a>
-			</td>
-			<td>
-				Selects an item of this object.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoClickButton](#DoClickButton) | Selects an item of this object. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -282,28 +149,10 @@ Kind of a button at index. Returns one of Glyph, Ellipsis, Delete, OK, Plus, Min
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>index</td>
-		<td>number</td>
-		<td>
-			index of button
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| index | number | index of button |
+
 
 	
 			
@@ -324,48 +173,23 @@ Accessors: GetButtonKind
 
 Selects an item of this object.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>index</td>
-						<td>number</td>
-						<td>
-								index of button to select
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>isLeft</td>
-						<td>boolean</td>
-						<td>
-								set to 'true' if buttons are at the left of the control<br>Optional, Default: false.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	index of button to select |
+| isLeft | boolean |	set to 'true' if buttons are at the left of the control<br>Optional, Default: false. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

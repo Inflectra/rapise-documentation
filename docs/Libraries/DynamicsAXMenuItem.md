@@ -1,11 +1,8 @@
-
-
 # DynamicsAXMenuItem
 
 Extends UIAObject.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -18,12 +15,11 @@ Extends SeSSimulatedObject.
 
 	
 <!-- ============================== action summary ========================== -->
-	
+
 
 <!-- ============================== property detail ========================== -->
 	
 	
 <!-- ============================== action detail ========================== -->
 		
-
 

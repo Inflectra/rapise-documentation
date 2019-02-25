@@ -1,11 +1,8 @@
-
-
 # DXDocumentsHost
 
 Extends ManagedObject.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -20,90 +17,26 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [DocName](#DocName) | Name of the doc at index | GetDocName |  |
+| [ItemsCount](#ItemsCount) | Number of items. | GetItemsCount |  |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#DocName">DocName</a>
-		</td>
-		<td>
-			Name of the doc at index
-		</td>
-		
-		<td>
-		  GetDocName
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ItemsCount">ItemsCount</a>
-		</td>
-		<td>
-			Number of items.
-		</td>
-		
-		<td>
-		  GetItemsCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSelectDoc">DoSelectDoc</a>
-			</td>
-			<td>
-				Selects a doc by name.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoSelectDoc](#DoSelectDoc) | Selects a doc by name. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -118,28 +51,10 @@ Name of the doc at index
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>index</td>
-		<td></td>
-		<td>
-			
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| index |  |  |
+
 
 	
 			
@@ -175,40 +90,22 @@ Accessors: GetItemsCount
 
 Selects a doc by name.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>docName</td>
-						<td>string</td>
-						<td>
-								Doc name to select
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| docName | string |	Doc name to select |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

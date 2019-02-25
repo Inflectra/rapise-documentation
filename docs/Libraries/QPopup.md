@@ -1,8 +1,5 @@
-
-
 # QPopup
 
 Extends SeSSimulatedObject.
-
 
 

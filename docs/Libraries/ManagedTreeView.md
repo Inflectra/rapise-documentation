@@ -1,5 +1,3 @@
-
-
 # ManagedTreeView
 
 Managed TreeView.
@@ -7,7 +5,6 @@ Managed TreeView.
 Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="ManagedObject" styleclass="Normal" translate="true">ManagedObject</link>.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -22,202 +19,34 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [Checked](#Checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked |  |
+| [ChildrenCount](#ChildrenCount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount |  |
+| [Expanded](#Expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded |  |
+| [IndexPath](#IndexPath) | Index path of the specified or selected tree node i.e. | GetIndexPath |  |
+| [NodeText](#NodeText) | Text of the selected node or a node specified by the input parameters. | GetNodeText |  |
+| [Selected](#Selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected |  |
+| [Text](#Text) | ;-combined text of all selected nodes. | GetText |  |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Checked">Checked</a>
-		</td>
-		<td>
-			Checked state of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetChecked
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ChildrenCount">ChildrenCount</a>
-		</td>
-		<td>
-			Number of children of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetChildrenCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Expanded">Expanded</a>
-		</td>
-		<td>
-			Expanded state of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetExpanded
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#IndexPath">IndexPath</a>
-		</td>
-		<td>
-			Index path of the specified or selected tree node i.e.
-		</td>
-		
-		<td>
-		  GetIndexPath
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#NodeText">NodeText</a>
-		</td>
-		<td>
-			Text of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetNodeText
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Selected">Selected</a>
-		</td>
-		<td>
-			Selected state of the selected node or a node specified by the input parameters
-		</td>
-		
-		<td>
-		  GetSelected
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Text">Text</a>
-		</td>
-		<td>
-			;-combined text of all selected nodes.
-		</td>
-		
-		<td>
-		  GetText
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoClickNode">DoClickNode</a>
-			</td>
-			<td>
-				Clicks specific node in the tree.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoCollapse">DoCollapse</a>
-			</td>
-			<td>
-				Collapses specific node in the tree.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoExpand">DoExpand</a>
-			</td>
-			<td>
-				Expands specific node in the tree.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSetCheck">DoSetCheck</a>
-			</td>
-			<td>
-				Set 'checked' state of the specified node
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoClickNode](#DoClickNode) | Clicks specific node in the tree. |
+|	[DoCollapse](#DoCollapse) | Collapses specific node in the tree. |
+|	[DoExpand](#DoExpand) | Expands specific node in the tree. |
+|	[DoSetCheck](#DoSetCheck) | Set 'checked' state of the specified node |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -232,44 +61,12 @@ Checked state of the selected node or a node specified by the input parameters.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -288,44 +85,12 @@ Number of children of the selected node or a node specified by the input paramet
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -344,44 +109,12 @@ Expanded state of the selected node or a node specified by the input parameters.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -400,44 +133,12 @@ Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -456,44 +157,12 @@ Text of the selected node or a node specified by the input parameters.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -512,44 +181,12 @@ Selected state of the selected node or a node specified by the input parameters
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -585,245 +222,99 @@ Accessors: GetText
 
 Clicks specific node in the tree.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path of the node
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>xOffset</td>
-						<td>number</td>
-						<td>
-								X offset to click within object. Default is a center.<br>Optional.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>yOffset</td>
-						<td>number</td>
-						<td>
-								Y offset to click within object. Default is a center.<br>Optional.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path of the node |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
+| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
 
 Collapses specific node in the tree.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path of the node
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path of the node |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
 
 Expands specific node in the tree.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path of the node
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path of the node |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, path, separator, pathType)
 
 Set 'checked' state of the specified node
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>bcheck</td>
-						<td>boolean</td>
-						<td>
-								Check state to set
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path of the node
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| bcheck | boolean |	Check state to set |
+| path | string |	Path of the node |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

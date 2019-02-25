@@ -1,5 +1,3 @@
-
-
 # YUIMenu
 
 YUI Menu.
@@ -12,7 +10,6 @@ Extends SeSSimulatedObject.
 
 
 
-
 **Behavior Pattern: YUIMenuBehavior**
 
 
@@ -20,51 +17,19 @@ Extends SeSSimulatedObject.
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoFindChild">DoFindChild</a>
-			</td>
-			<td>
-				Searches for specific item in the menu.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoMenu">DoMenu</a>
-			</td>
-			<td>
-				Performs click on the menu item.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoTitleMenu">DoTitleMenu</a>
-			</td>
-			<td>
-				Clicks menu title item.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoFindChild](#DoFindChild) | Searches for specific item in the menu. |
+|	[DoMenu](#DoMenu) | Performs click on the menu item. |
+|	[DoTitleMenu](#DoTitleMenu) | Clicks menu title item. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -78,166 +43,72 @@ Extends SeSSimulatedObject.
 
 Searches for specific item in the menu.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path from the menu root to a leaf item with components delimited by separator parameter.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'index'.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'index'. |
+
+
+
+
 **Returns:**
-				
+
 HTMLObject: HTMLObject of the found node
-				
-			
-			
-		
+
+
+
+
 <a name="DoMenu"></a>    
 #### DoMenu(path, separator, pathType)
 
 Performs click on the menu item.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path from the menu root to a leaf item with components delimited by separator parameter.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'index'.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'index'. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoTitleMenu"></a>    
 #### DoTitleMenu(path, separator, pathType)
 
 Clicks menu title item. Only 1 menu level currently supported.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path from the menu root to a leaf item with components delimited by separator parameter.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'index'.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'index'. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

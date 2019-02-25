@@ -1,5 +1,3 @@
-
-
 # SWTTree
 
 Java SWT Tree.
@@ -7,7 +5,6 @@ Java SWT Tree.
 Extends UIAObject.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -22,159 +19,31 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [Checked](#Checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked | SetChecked |
+| [ChildrenCount](#ChildrenCount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount | SetChildrenCount |
+| [Expanded](#Expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded | SetExpanded |
+| [NodeText](#NodeText) | Text of the selected node or a node specified by the input parameters. | GetNodeText | SetNodeText |
+| [Selected](#Selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected | SetSelected |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Checked">Checked</a>
-		</td>
-		<td>
-			Checked state of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetChecked
-		</td>
-		<td>
-		  SetChecked
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ChildrenCount">ChildrenCount</a>
-		</td>
-		<td>
-			Number of children of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetChildrenCount
-		</td>
-		<td>
-		  SetChildrenCount
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Expanded">Expanded</a>
-		</td>
-		<td>
-			Expanded state of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetExpanded
-		</td>
-		<td>
-		  SetExpanded
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#NodeText">NodeText</a>
-		</td>
-		<td>
-			Text of the selected node or a node specified by the input parameters.
-		</td>
-		
-		<td>
-		  GetNodeText
-		</td>
-		<td>
-		  SetNodeText
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Selected">Selected</a>
-		</td>
-		<td>
-			Selected state of the selected node or a node specified by the input parameters
-		</td>
-		
-		<td>
-		  GetSelected
-		</td>
-		<td>
-		  SetSelected
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoCollapse">DoCollapse</a>
-			</td>
-			<td>
-				Collapses specific node in the tree.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoExpand">DoExpand</a>
-			</td>
-			<td>
-				Expands a specific node in the tree.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSelectItem">DoSelectItem</a>
-			</td>
-			<td>
-				Selects specified item in the tree.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoCollapse](#DoCollapse) | Collapses specific node in the tree. |
+|	[DoExpand](#DoExpand) | Expands a specific node in the tree. |
+|	[DoSelectItem](#DoSelectItem) | Selects specified item in the tree. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -204,44 +73,12 @@ Number of children of the selected node or a node specified by the input paramet
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -260,44 +97,12 @@ Expanded state of the selected node or a node specified by the input parameters.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -331,44 +136,12 @@ Selected state of the selected node or a node specified by the input parameters
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>path</td>
-		<td>string</td>
-		<td>
-			Path of the node
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>pathType</td>
-		<td>string</td>
-		<td>
-			Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path of the node |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
 
 	
 			
@@ -389,134 +162,68 @@ Accessors: GetSelected, SetSelected
 
 Collapses specific node in the tree.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>path</td>
-						<td>string</td>
-						<td>
-								Path of the node
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>pathType</td>
-						<td>string</td>
-						<td>
-								Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path of the node |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoExpand"></a>    
 #### DoExpand(node)
 
 Expands a specific node in the tree.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>node</td>
-						<td>string</td>
-						<td>
-								Name of the node
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| node | string |	Name of the node |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if successful, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(value)
 
 Selects specified item in the tree.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>value</td>
-						<td>string</td>
-						<td>
-								Item to select
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if successful, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| value | string |	Item to select |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise.
+
+
+
+
+	
 

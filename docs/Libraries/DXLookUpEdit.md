@@ -1,5 +1,3 @@
-
-
 # DXLookUpEdit
 
 DevXpress LookUpEdit.
@@ -7,7 +5,6 @@ DevXpress LookUpEdit.
 Extends ManagedObject.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -22,150 +19,30 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [ItemIndex](#ItemIndex) | Index of the selected element of the object. | GetItemIndex | SetItemIndex |
+| [ItemName](#ItemName) | Name of the selected element of the object. | GetItemName |  |
+| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [SelectedText](#SelectedText) | Text of the object, 'false' if text can not be read. | GetSelectedText | SetSelectedText |
+| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ItemIndex">ItemIndex</a>
-		</td>
-		<td>
-			Index of the selected element of the object.
-		</td>
-		
-		<td>
-		  GetItemIndex
-		</td>
-		<td>
-		  SetItemIndex
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ItemName">ItemName</a>
-		</td>
-		<td>
-			Name of the selected element of the object.
-		</td>
-		
-		<td>
-		  GetItemName
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedIndex">SelectedIndex</a>
-		</td>
-		<td>
-			Index of the selected element of the object.
-		</td>
-		
-		<td>
-		  GetSelectedIndex
-		</td>
-		<td>
-		  SetSelectedIndex
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedText">SelectedText</a>
-		</td>
-		<td>
-			Text of the object, 'false' if text can not be read.
-		</td>
-		
-		<td>
-		  GetSelectedText
-		</td>
-		<td>
-		  SetSelectedText
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Text">Text</a>
-		</td>
-		<td>
-			Text of the object, 'false' if text can not be read.
-		</td>
-		
-		<td>
-		  GetText
-		</td>
-		<td>
-		  SetText
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSelectItem">DoSelectItem</a>
-			</td>
-			<td>
-				Selects an item of this object.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSetText">DoSetText</a>
-			</td>
-			<td>
-				Sets text value of this object.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
+|	[DoSetText](#DoSetText) | Sets text value of this object. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -257,79 +134,44 @@ Accessors: GetText, SetText
 
 Selects an item of this object.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>val</td>
-						<td>number</td>
-						<td>
-								index of value to select
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| val | number |	index of value to select |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoSetText"></a>    
 #### DoSetText(val)
 
 Sets text value of this object.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>val</td>
-						<td>string</td>
-						<td>
-								Text value.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| val | string |	Text value. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

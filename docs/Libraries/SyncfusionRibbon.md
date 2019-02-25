@@ -1,5 +1,3 @@
-
-
 # SyncfusionRibbon
 
 This behavior pattern implements standard behavior for Ribbon control.
@@ -7,7 +5,6 @@ This behavior pattern implements standard behavior for Ribbon control.
 Extends ManagedObject.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -22,82 +19,26 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [SelectedTab](#SelectedTab) | Text of the selected tab | GetSelectedTab | SetSelectedTab |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedTab">SelectedTab</a>
-		</td>
-		<td>
-			Text of the selected tab
-		</td>
-		
-		<td>
-		  GetSelectedTab
-		</td>
-		<td>
-		  SetSelectedTab
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoClickItem">DoClickItem</a>
-			</td>
-			<td>
-				Performs click on the ribbon item given by caption or tooltip text
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSelectTab">DoSelectTab</a>
-			</td>
-			<td>
-				Selects the tab by name.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoClickItem](#DoClickItem) | Performs click on the ribbon item given by caption or tooltip text |
+|	[DoSelectTab](#DoSelectTab) | Selects the tab by name. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -129,79 +70,44 @@ Accessors: GetSelectedTab, SetSelectedTab
 
 Performs click on the ribbon item given by caption or tooltip text
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>captionOrTooltip</td>
-						<td>string | <br>number</td>
-						<td>
-								caption or tooltip text of the item to click.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| captionOrTooltip | string \| number |	caption or tooltip text of the item to click. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoSelectTab"></a>    
 #### DoSelectTab(tabName)
 
 Selects the tab by name.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>tabName</td>
-						<td>string</td>
-						<td>
-								Tab name to select
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| tabName | string |	Tab name to select |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

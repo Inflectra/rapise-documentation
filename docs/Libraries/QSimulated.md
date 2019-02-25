@@ -1,11 +1,8 @@
-
-
 # QSimulated
 
 Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="QWidget" styleclass="Normal" translate="true">QWidget</link>.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -18,12 +15,11 @@ Extends SeSSimulatedObject.
 
 	
 <!-- ============================== action summary ========================== -->
-	
+
 
 <!-- ============================== property detail ========================== -->
 	
 	
 <!-- ============================== action detail ========================== -->
 		
-
 

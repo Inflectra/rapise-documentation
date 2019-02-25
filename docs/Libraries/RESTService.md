@@ -1,11 +1,8 @@
-
-
 # RESTService
 
 This behavior pattern implements REST service client.
  
 Extends SeSSimulatedObject.
-
 
 
 
@@ -20,269 +17,37 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [Credential](#Credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
+| [Method](#Method) | The HTTP Method being used for the request (GET, POST, etc. | GetMethod | SetMethod |
+| [Name](#Name) | The name of the request operation | GetName |  |
+| [Parameters](#Parameters) | The list of parameters available for this request url. | GetParameters | SetParameters |
+| [RequestBodyObject](#RequestBodyObject) | The body of the HTTP request as a JavaScript object. | GetRequestBodyObject | SetRequestBodyObject |
+| [RequestBodyText](#RequestBodyText) | The body of the HTTP request in raw text format | GetRequestBodyText | SetRequestBodyText |
+| [RequestHeaders](#RequestHeaders) | The list of HTTP headers that are part of this request. | GetRequestHeaders | SetRequestHeaders |
+| [ResponseBodyObject](#ResponseBodyObject) | The body of the HTTP response deserialized from JSON into a JavaScript object. | GetResponseBodyObject |  |
+| [ResponseBodyText](#ResponseBodyText) | The body of the HTTP response in raw text format | GetResponseBodyText |  |
+| [ResponseHeaders](#ResponseHeaders) | Returns the list of HTTP headers returned from the HTTP response. | GetResponseHeaders |  |
+| [ResponseIsErrorStatus](#ResponseIsErrorStatus) | Returns 'true 'if an HTTP error code came back from the web service | GetResponseIsErrorStatus |  |
+| [Url](#Url) | The URL being used to access the web service | GetUrl | SetUrl |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Credential">Credential</a>
-		</td>
-		<td>
-			The HTTP Basic Authentication Credentials (if any).
-		</td>
-		
-		<td>
-		  GetCredential
-		</td>
-		<td>
-		  SetCredential
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Method">Method</a>
-		</td>
-		<td>
-			The HTTP Method being used for the request (GET, POST, etc.
-		</td>
-		
-		<td>
-		  GetMethod
-		</td>
-		<td>
-		  SetMethod
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Name">Name</a>
-		</td>
-		<td>
-			The name of the request operation
-		</td>
-		
-		<td>
-		  GetName
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Parameters">Parameters</a>
-		</td>
-		<td>
-			The list of parameters available for this request url.
-		</td>
-		
-		<td>
-		  GetParameters
-		</td>
-		<td>
-		  SetParameters
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#RequestBodyObject">RequestBodyObject</a>
-		</td>
-		<td>
-			The body of the HTTP request as a JavaScript object.
-		</td>
-		
-		<td>
-		  GetRequestBodyObject
-		</td>
-		<td>
-		  SetRequestBodyObject
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#RequestBodyText">RequestBodyText</a>
-		</td>
-		<td>
-			The body of the HTTP request in raw text format
-		</td>
-		
-		<td>
-		  GetRequestBodyText
-		</td>
-		<td>
-		  SetRequestBodyText
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#RequestHeaders">RequestHeaders</a>
-		</td>
-		<td>
-			The list of HTTP headers that are part of this request.
-		</td>
-		
-		<td>
-		  GetRequestHeaders
-		</td>
-		<td>
-		  SetRequestHeaders
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ResponseBodyObject">ResponseBodyObject</a>
-		</td>
-		<td>
-			The body of the HTTP response deserialized from JSON into a JavaScript object.
-		</td>
-		
-		<td>
-		  GetResponseBodyObject
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ResponseBodyText">ResponseBodyText</a>
-		</td>
-		<td>
-			The body of the HTTP response in raw text format
-		</td>
-		
-		<td>
-		  GetResponseBodyText
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ResponseHeaders">ResponseHeaders</a>
-		</td>
-		<td>
-			Returns the list of HTTP headers returned from the HTTP response.
-		</td>
-		
-		<td>
-		  GetResponseHeaders
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ResponseIsErrorStatus">ResponseIsErrorStatus</a>
-		</td>
-		<td>
-			Returns 'true 'if an HTTP error code came back from the web service
-		</td>
-		
-		<td>
-		  GetResponseIsErrorStatus
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Url">Url</a>
-		</td>
-		<td>
-			The URL being used to access the web service
-		</td>
-		
-		<td>
-		  GetUrl
-		</td>
-		<td>
-		  SetUrl
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoExecute">DoExecute</a>
-			</td>
-			<td>
-				Executes a REST service operation, substitutes any of the provided parameter values if necessary.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoVerify">DoVerify</a>
-			</td>
-			<td>
-				Checks that a given part of response equals the expected value.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoExecute](#DoExecute) | Executes a REST service operation, substitutes any of the provided parameter values if necessary. |
+|	[DoVerify](#DoVerify) | Checks that a given part of response equals the expected value. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -402,36 +167,11 @@ The body of the HTTP response deserialized from JSON into a JavaScript object.<b
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>jsonPath</td>
-		<td>string</td>
-		<td>
-			Path to a sub-object within response object. E.g. 'Body.Connection_AuthenticateResult'.<br>Optional, Default: Body.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>info</td>
-		<td>object</td>
-		<td>
-			Empty object that will receive error information if any. Access as info.error in a calling function.<br>Optional.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| jsonPath | string | Path to a sub-object within response object. E.g. 'Body.Connection_AuthenticateResult'.<br>Optional, Default: Body. |
+| info | object | Empty object that will receive error information if any. Access as info.error in a calling function.<br>Optional. |
+
 
 	
 			
@@ -512,95 +252,46 @@ Accessors: GetUrl, SetUrl
 
 Executes a REST service operation, substitutes any of the provided parameter values if necessary.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>params</td>
-						<td>object</td>
-						<td>
-								JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table>
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table> |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoVerify"></a>    
 #### DoVerify(msg, jsonPath, expectedValue)
 
 Checks that a given part of response equals the expected value.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>msg</td>
-						<td>string</td>
-						<td>
-								Message to write into the report.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>jsonPath</td>
-						<td>string</td>
-						<td>
-								Path to the given node in the response object to use as a root for comparison with the expected value.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>expectedValue</td>
-						<td>object</td>
-						<td>
-								Expected value.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| msg | string |	Message to write into the report. |
+| jsonPath | string |	Path to the given node in the response object to use as a root for comparison with the expected value. |
+| expectedValue | object |	Expected value. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

@@ -1,5 +1,3 @@
-
-
 # TelerikRadApplicationMenuDropDown
 
 Telerik RadApplicationMenuDropDown.
@@ -7,6 +5,5 @@ Telerik RadApplicationMenuDropDown.
 Extends ManagedMenuPopupItem.
 
 Extends SeSSimulatedObject.
-
 
 

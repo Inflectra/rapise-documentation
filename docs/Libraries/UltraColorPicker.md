@@ -1,5 +1,3 @@
-
-
 # UltraColorPicker
 
 Infragistics UltraColorPicker
@@ -7,6 +5,5 @@ Infragistics UltraColorPicker
 Extends ManagedObject.
 
 Extends SeSSimulatedObject.
-
 
 

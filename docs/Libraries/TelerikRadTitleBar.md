@@ -1,5 +1,3 @@
-
-
 # TelerikRadTitleBar
 
 Telerik RadTitleBar.
@@ -12,7 +10,6 @@ Extends SeSSimulatedObject.
 
 
 
-
 **Behavior Pattern: TelerikLabelBehavior**
 
 
@@ -20,12 +17,11 @@ Extends SeSSimulatedObject.
 
 	
 <!-- ============================== action summary ========================== -->
-	
+
 
 <!-- ============================== property detail ========================== -->
 	
 	
 <!-- ============================== action detail ========================== -->
 		
-
 

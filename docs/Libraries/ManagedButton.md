@@ -1,5 +1,3 @@
-
-
 # ManagedButton
 
 Managed Button.
@@ -12,7 +10,6 @@ Extends SeSSimulatedObject.
 
 
 
-
 **Behavior Pattern: ManagedObjectButtonBehavior**
 
 
@@ -20,12 +17,11 @@ Extends SeSSimulatedObject.
 
 	
 <!-- ============================== action summary ========================== -->
-	
+
 
 <!-- ============================== property detail ========================== -->
 	
 	
 <!-- ============================== action detail ========================== -->
 		
-
 

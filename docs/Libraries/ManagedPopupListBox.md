@@ -1,11 +1,8 @@
-
-
 # ManagedPopupListBox
 
 Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="ManagedObject" styleclass="Normal" translate="true">ManagedObject</link>.
 
 Extends SeSSimulatedObject.
-
 
 
 
@@ -20,219 +17,35 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
+| [ItemIndexByName](#ItemIndexByName) | Returns item index by its name. | GetItemIndexByName |  |
+| [ItemNameByIndex](#ItemNameByIndex) | Returns item name by its index. | GetItemNameByIndex |  |
+| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [SelectedIndices](#SelectedIndices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetSelectedIndices |  |
+| [SelectedItems](#SelectedItems) | Text of all the selected items in a single string. | GetSelectedItems |  |
+| [SelectedText](#SelectedText) | Text of the selected item in a single string. | GetSelectedText |  |
+| [SelectionCount](#SelectionCount) | Number of selected items. | GetSelectionCount |  |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ItemCount">ItemCount</a>
-		</td>
-		<td>
-			Number of items.
-		</td>
-		
-		<td>
-		  GetItemCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ItemIndexByName">ItemIndexByName</a>
-		</td>
-		<td>
-			Returns item index by its name.
-		</td>
-		
-		<td>
-		  GetItemIndexByName
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ItemNameByIndex">ItemNameByIndex</a>
-		</td>
-		<td>
-			Returns item name by its index.
-		</td>
-		
-		<td>
-		  GetItemNameByIndex
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedIndex">SelectedIndex</a>
-		</td>
-		<td>
-			Index of the selected element of the object.
-		</td>
-		
-		<td>
-		  GetSelectedIndex
-		</td>
-		<td>
-		  SetSelectedIndex
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedIndices">SelectedIndices</a>
-		</td>
-		<td>
-			Returns string of indexes delimited by separator or array of indexes of selected elements.
-		</td>
-		
-		<td>
-		  GetSelectedIndices
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedItems">SelectedItems</a>
-		</td>
-		<td>
-			Text of all the selected items in a single string.
-		</td>
-		
-		<td>
-		  GetSelectedItems
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedText">SelectedText</a>
-		</td>
-		<td>
-			Text of the selected item in a single string.
-		</td>
-		
-		<td>
-		  GetSelectedText
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectionCount">SelectionCount</a>
-		</td>
-		<td>
-			Number of selected items.
-		</td>
-		
-		<td>
-		  GetSelectionCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoAddSelection">DoAddSelection</a>
-			</td>
-			<td>
-				Extends selection.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoClearSelection">DoClearSelection</a>
-			</td>
-			<td>
-				Clears selection.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoRemoveSelection">DoRemoveSelection</a>
-			</td>
-			<td>
-				Removes selection from specified items.
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoSelectItem">DoSelectItem</a>
-			</td>
-			<td>
-				Selects items of this object.
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoAddSelection](#DoAddSelection) | Extends selection. |
+|	[DoClearSelection](#DoClearSelection) | Clears selection. |
+|	[DoRemoveSelection](#DoRemoveSelection) | Removes selection from specified items. |
+|	[DoSelectItem](#DoSelectItem) | Selects items of this object. |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -262,28 +75,10 @@ Returns item index by its name. 'false' if name is not found.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>name</td>
-		<td>string</td>
-		<td>
-			
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| name | string |  |
+
 
 	
 			
@@ -302,28 +97,10 @@ Returns item name by its index.'false' if name is not found.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>index</td>
-		<td>number</td>
-		<td>
-			Index of the item
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| index | number | Index of the item |
+
 
 	
 			
@@ -357,36 +134,11 @@ Returns string of indexes delimited by separator or array of indexes of selected
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>asArray</td>
-		<td>boolean</td>
-		<td>
-			If set to true, function returns an array.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>separator</td>
-		<td>string</td>
-		<td>
-			Separator character.<br>Optional, Default: ;.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| asArray | boolean | If set to true, function returns an array. |
+| separator | string | Separator character.<br>Optional, Default: ;. |
+
 
 	
 			
@@ -452,180 +204,87 @@ Accessors: GetSelectionCount
 
 Extends selection.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>items</td>
-						<td>number | <br>string | <br>array</td>
-						<td>
-								Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>itemsType</td>
-						<td>string</td>
-						<td>
-								If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoClearSelection"></a>    
 #### DoClearSelection()
 
 Clears selection.
 
-			
-			
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
 
 Removes selection from specified items.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>items</td>
-						<td>number | <br>string | <br>array</td>
-						<td>
-								Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>itemsType</td>
-						<td>string</td>
-						<td>
-								If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
+
+
+
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
 
 Selects items of this object. First it clears existing selection.
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>items</td>
-						<td>number | <br>string | <br>array</td>
-						<td>
-								Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>separator</td>
-						<td>string</td>
-						<td>
-								Separator character.<br>Optional, Default: ;.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>itemsType</td>
-						<td>string</td>
-						<td>
-								If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-**Returns:**
-				
-boolean: 'true' if success, 'false' otherwise.
-				
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| separator | string |	Separator character.<br>Optional, Default: ;. |
+| itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+
+	
 

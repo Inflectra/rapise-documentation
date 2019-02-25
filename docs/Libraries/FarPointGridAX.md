@@ -1,11 +1,8 @@
-
-
 # FarPointGridAX
 
 This behavior pattern implements standard behavior for Grid control.
  
 Extends SeSSimulatedObject.
-
 
 
 
@@ -20,347 +17,43 @@ Extends SeSSimulatedObject.
 
 ### Property Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [CellComboList](#CellComboList) | Get array of dropdown values for a given cell. | GetCellComboList |  |
+| [CellInfo](#CellInfo) | <p>Returns object with following fields. | GetCellInfo |  |
+| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnHeaders](#ColumnHeaders) | Get array of column captions. | GetColumnHeaders |  |
+| [ColumnIndex](#ColumnIndex) | Get column index by name. | GetColumnIndex |  |
+| [ColumnInfo](#ColumnInfo) | <p>Returns object with following fields. | GetColumnInfo |  |
+| [GridInfo](#GridInfo) | <p>Returns object with following fields. | GetGridInfo |  |
+| [RowCount](#RowCount) | Number of rows in the table. | GetRowCount |  |
+| [RowHeaders](#RowHeaders) | Get array of row captions. | GetRowHeaders |  |
+| [RowInfo](#RowInfo) | <p>Returns object with following fields. | GetRowInfo |  |
+| [SelectedCells](#SelectedCells) | Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells. | GetSelectedCells |  |
+| [SelectedColumn](#SelectedColumn) | Index of the selected column. | GetSelectedColumn | SetSelectedColumn |
+| [SelectedRow](#SelectedRow) | Index of the selected row. | GetSelectedRow | SetSelectedRow |
+| [SelectedRowsCount](#SelectedRowsCount) | Get number of selected rows. | GetSelectedRowsCount |  |
+| [Text](#Text) | Text of the specified cell. | GetText | SetText |
 
-    <td style="width:150px; background-color:#c0c0c0;">
-      Getter
-    </td>
-    <td style="width:150px; background-color:#c0c0c0;">
-      Setter
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#CellComboList">CellComboList</a>
-		</td>
-		<td>
-			Get array of dropdown values for a given cell.
-		</td>
-		
-		<td>
-		  GetCellComboList
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#CellInfo">CellInfo</a>
-		</td>
-		<td>
-			<p>Returns object with following fields.
-		</td>
-		
-		<td>
-		  GetCellInfo
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ColumnCount">ColumnCount</a>
-		</td>
-		<td>
-			Number of columns in the grid.
-		</td>
-		
-		<td>
-		  GetColumnCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ColumnHeaders">ColumnHeaders</a>
-		</td>
-		<td>
-			Get array of column captions.
-		</td>
-		
-		<td>
-		  GetColumnHeaders
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ColumnIndex">ColumnIndex</a>
-		</td>
-		<td>
-			Get column index by name.
-		</td>
-		
-		<td>
-		  GetColumnIndex
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#ColumnInfo">ColumnInfo</a>
-		</td>
-		<td>
-			<p>Returns object with following fields.
-		</td>
-		
-		<td>
-		  GetColumnInfo
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#GridInfo">GridInfo</a>
-		</td>
-		<td>
-			<p>Returns object with following fields.
-		</td>
-		
-		<td>
-		  GetGridInfo
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#RowCount">RowCount</a>
-		</td>
-		<td>
-			Number of rows in the table.
-		</td>
-		
-		<td>
-		  GetRowCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#RowHeaders">RowHeaders</a>
-		</td>
-		<td>
-			Get array of row captions.
-		</td>
-		
-		<td>
-		  GetRowHeaders
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#RowInfo">RowInfo</a>
-		</td>
-		<td>
-			<p>Returns object with following fields.
-		</td>
-		
-		<td>
-		  GetRowInfo
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedCells">SelectedCells</a>
-		</td>
-		<td>
-			Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells.
-		</td>
-		
-		<td>
-		  GetSelectedCells
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedColumn">SelectedColumn</a>
-		</td>
-		<td>
-			Index of the selected column.
-		</td>
-		
-		<td>
-		  GetSelectedColumn
-		</td>
-		<td>
-		  SetSelectedColumn
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedRow">SelectedRow</a>
-		</td>
-		<td>
-			Index of the selected row.
-		</td>
-		
-		<td>
-		  GetSelectedRow
-		</td>
-		<td>
-		  SetSelectedRow
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#SelectedRowsCount">SelectedRowsCount</a>
-		</td>
-		<td>
-			Get number of selected rows.
-		</td>
-		
-		<td>
-		  GetSelectedRowsCount
-		</td>
-		<td>
-		  
-		</td>
-		
-	</tr>
-
-  <tr style="vertical-align:top">
-		<td>
-      <a href="#Text">Text</a>
-		</td>
-		<td>
-			Text of the specified cell.
-		</td>
-		
-		<td>
-		  GetText
-		</td>
-		<td>
-		  SetText
-		</td>
-		
-	</tr>
-
-</table>
 
 
 	
 <!-- ============================== action summary ========================== -->
-	
-	
-	
+
+
+
 ### Action Summary
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-		  <tr style="vertical-align:top">
-			<td  style="width:200px; background-color:#c0c0c0;">
-			  Action
-			</td>
-			<td style="width:450px; background-color:#c0c0c0;">
-			  Description
-			</td>
-		  </tr>
-		 
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoActivateCell">DoActivateCell</a>
-			</td>
-			<td>
-				Make specified cell active
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoClearCell">DoClearCell</a>
-			</td>
-			<td>
-				Clear specified cell range
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoClickCell">DoClickCell</a>
-			</td>
-			<td>
-				Clicks the specified cell
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoExportGrid">DoExportGrid</a>
-			</td>
-			<td>
-				Save Grid data to file
-			</td>
-		  </tr>
-		
-		  <tr style="vertical-align:top">
-			<td>
-			  <a href="#DoFullText">DoFullText</a>
-			</td>
-			<td>
-				Return whole grid as text
-			</td>
-		  </tr>
-		
-	   </table>
-	
-	
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoActivateCell](#DoActivateCell) | Make specified cell active |
+|	[DoClearCell](#DoClearCell) | Clear specified cell range |
+|	[DoClickCell](#DoClickCell) | Clicks the specified cell |
+|	[DoExportGrid](#DoExportGrid) | Save Grid data to file |
+|	[DoFullText](#DoFullText) | Return whole grid as text |
+
+
+
 
 <!-- ============================== property detail ========================== -->
 	
@@ -375,36 +68,11 @@ Get array of dropdown values for a given cell.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>row</td>
-		<td>number</td>
-		<td>
-			Row index
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>col</td>
-		<td>number</td>
-		<td>
-			Column index
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| row | number | Row index |
+| col | number | Column index |
+
 
 	
 			
@@ -477,36 +145,11 @@ col
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>row</td>
-		<td>number</td>
-		<td>
-			Row index
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>col</td>
-		<td>number</td>
-		<td>
-			Column index
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| row | number | Row index |
+| col | number | Column index |
+
 
 	
 			
@@ -555,28 +198,10 @@ Get column index by name.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>colName</td>
-		<td>string</td>
-		<td>
-			Column name
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| colName | string | Column name |
+
 
 	
 			
@@ -604,28 +229,10 @@ Visible
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>col</td>
-		<td>number</td>
-		<td>
-			Column index
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| col | number | Column index |
+
 
 	
 			
@@ -739,28 +346,10 @@ LeftCol
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>row</td>
-		<td>number</td>
-		<td>
-			Row index
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| row | number | Row index |
+
 
 	
 			
@@ -779,44 +368,12 @@ Returns string of cell coordinates delimited by separators or an array of coordi
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>asArray</td>
-		<td>boolean</td>
-		<td>
-			If set to true, function returns an array.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>rowcolSep</td>
-		<td>string</td>
-		<td>
-			row separator<br>Optional.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>cellSep</td>
-		<td>string</td>
-		<td>
-			cell ceparator<br>Optional.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| asArray | boolean | If set to true, function returns an array. |
+| rowcolSep | string | row separator<br>Optional. |
+| cellSep | string | cell ceparator<br>Optional. |
+
 
 	
 			
@@ -880,36 +437,11 @@ Text of the specified cell.
 			
 **Getter Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>row</td>
-		<td>number</td>
-		<td>
-			Zero-based index if the row.
-		</td>
-	  </tr>
-  
-	  <tr style="vertical-align:top">
-		<td>col</td>
-		<td>number</td>
-		<td>
-			Zero-based index of the column.
-		</td>
-	  </tr>
-  
-</table>
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| row | number | Zero-based index if the row. |
+| col | number | Zero-based index of the column. |
+
 
 	
 			
@@ -930,256 +462,100 @@ Accessors: GetText, SetText
 
 Make specified cell active
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>row</td>
-						<td>number</td>
-						<td>
-								Column to use
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>col</td>
-						<td>number</td>
-						<td>
-								Column to use
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-			
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| row | number |	Column to use |
+| col | number |	Column to use |
+
+
+
+
+
+
 <a name="DoClearCell"></a>    
 #### DoClearCell(col1, row1, col2, row2)
 
 Clear specified cell range
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>col1</td>
-						<td>number</td>
-						<td>
-								Column to use
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>row1</td>
-						<td>number</td>
-						<td>
-								Column to use
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>col2</td>
-						<td>number</td>
-						<td>
-								Column to use
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>row2</td>
-						<td>number</td>
-						<td>
-								Column to use
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-			
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| col1 | number |	Column to use |
+| row1 | number |	Column to use |
+| col2 | number |	Column to use |
+| row2 | number |	Column to use |
+
+
+
+
+
+
 <a name="DoClickCell"></a>    
 #### DoClickCell(col, row, clickType, xOffset, yOffset)
 
 Clicks the specified cell
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>col</td>
-						<td>number</td>
-						<td>
-								Zero-based index of the column.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>row</td>
-						<td>number</td>
-						<td>
-								Zero-based index if the row.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>clickType</td>
-						<td>string</td>
-						<td>
-								Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>xOffset</td>
-						<td>number</td>
-						<td>
-								X offset to click within object. Default is a center.<br>Optional.
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>yOffset</td>
-						<td>number</td>
-						<td>
-								Y offset to click within object. Default is a center.<br>Optional.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| col | number |	Zero-based index of the column. |
+| row | number |	Zero-based index if the row. |
+| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
+| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
+| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+
+
+
+
 **Returns:**
-				
+
 boolean: 'true' if successful, 'false' otherwise
-				
-			
-			
-		
+
+
+
+
 <a name="DoExportGrid"></a>    
 #### DoExportGrid(fileName, type)
 
 Save Grid data to file
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>fileName</td>
-						<td>string</td>
-						<td>
-								Path to destination file
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>type</td>
-						<td>string</td>
-						<td>
-								Export file format (EXCEL, HTML, XML). Empty ("") for tab-separated text<br>Optional, Default: L.
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-			
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| fileName | string |	Path to destination file |
+| type | string |	Export file format (EXCEL, HTML, XML). Empty ("") for tab-separated text<br>Optional, Default: L. |
+
+
+
+
+
+
 <a name="DoFullText"></a>    
 #### DoFullText(saveToFile, fileName)
 
 Return whole grid as text
 
-			
+
 **Parameters:**
 
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-	<td style="width:150px; background-color:#c0c0c0;">
-	  Name
-	</td>
-	<td style="width:100px; background-color:#c0c0c0;">
-	  Type
-	</td>
-	<td style="width:450px; background-color:#c0c0c0;">
-	  Description
-	</td>
-  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>saveToFile</td>
-						<td>boolean</td>
-						<td>
-								'true' if you need to have copy of the text in the file
-						</td>
-					  </tr>
-				  
-					  <tr style="vertical-align:top">
-						<td>fileName</td>
-						<td>string</td>
-						<td>
-								Path to destination file
-						</td>
-					  </tr>
-				  
-				</table>
-			
-			
-			
-		
-		
+|	** Name ** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| saveToFile | boolean |	'true' if you need to have copy of the text in the file |
+| fileName | string |	Path to destination file |
 
+
+
+
+
+
+	
 
