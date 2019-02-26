@@ -52,7 +52,7 @@ Flick action.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | endX | number |	x coordinate where swipe ends (in pixels or relative units) |
 | endY | number |	y coordinate where swipe ends (in pixels or relative units) |
@@ -78,7 +78,7 @@ Opens URL in active browser.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url | string |	 |
 
@@ -130,7 +130,7 @@ Presses key with code.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keyCode | number |	Key code: http://developer.android.com/reference/android/view/KeyEvent.html |
 
@@ -182,7 +182,7 @@ Starts activity.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | appPackage | string |	Package name. |
 | appActivity | string |	Activity name. |
@@ -235,7 +235,7 @@ Swipe action.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | endX | number |	x coordinate where swipe ends (in pixels or relative units) |
 | endY | number |	y coordinate where swipe ends (in pixels or relative units) |
@@ -262,7 +262,7 @@ Tap screen.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	x coordinate to tap (in pixels or relative units)<br>Optional. |
 | y | number |	y coordinate to tap (in pixels or relative units)<br>Optional. |
@@ -288,7 +288,7 @@ Gets capability with specified name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a capability. |
 
@@ -325,7 +325,7 @@ Sets context.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Either NATIVE_APP or WEBVIEW_1. |
 

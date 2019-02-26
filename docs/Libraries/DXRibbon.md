@@ -46,7 +46,7 @@ Clicks an application button on the ribbon.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Caption of the application button to click. |
 | xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
@@ -70,7 +70,7 @@ Clicks on an item on the ribbon.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Caption of an item to click. |
 | xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
@@ -94,7 +94,7 @@ Clicks on a tab in the ribbon.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Caption of a tab to click. |
 | xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |

@@ -38,7 +38,7 @@ Used to show a bitmap picture in the report.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | imgWrapper | ImageWrapper |	Instance of image wrapper with captured image. |
 | caption | string |	Image label.<br>Optional, Default: "Image". |

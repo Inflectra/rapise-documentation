@@ -73,7 +73,7 @@ Performs click on the ribbon item given by caption or tooltip text
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | captionOrTooltip | string \| number |	caption or tooltip text of the item to click. |
 
@@ -95,7 +95,7 @@ Selects the tab by name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tabName | string |	Tab name to select |
 

@@ -118,7 +118,7 @@ Selects a specific day in the current month.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | dateValue | number |	The day of the month to choose |
 

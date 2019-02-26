@@ -72,7 +72,7 @@ Selects an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | itemName | string |	Item name to select. |
 

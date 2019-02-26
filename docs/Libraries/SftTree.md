@@ -224,7 +224,7 @@ Clicks specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -252,7 +252,7 @@ Collapses specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -276,7 +276,7 @@ Expands specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -300,7 +300,7 @@ Returns text representation of the table.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of a file that should hold text representation of the grid.<br>Optional. |
 

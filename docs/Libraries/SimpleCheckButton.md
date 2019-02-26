@@ -68,7 +68,7 @@ Sets check state of the object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | bcheck | boolean |	Desired check state for the item. |
 

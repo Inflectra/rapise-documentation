@@ -44,7 +44,7 @@ Performs click on an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | itemName | string |	Name of the item to click |
 

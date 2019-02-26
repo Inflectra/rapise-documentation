@@ -105,7 +105,7 @@ Expands the combobox.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -129,7 +129,7 @@ Selects an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | item | string \| number |	Item index or text value  to select. |
 

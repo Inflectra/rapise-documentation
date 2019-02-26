@@ -208,7 +208,7 @@ Clicks specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -232,7 +232,7 @@ Collapses specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -256,7 +256,7 @@ Expands specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -280,7 +280,7 @@ Selects specified item in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |

@@ -62,7 +62,7 @@ Appends a column with specified name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a new column. |
 
@@ -99,7 +99,7 @@ Loads a sheet from Excel file (.xls, *.xlsx) or csv file (*.txt, *.csv).
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Path to Excel or csv file. |
 | sheetName | string |	Sheet name to load. If not specified - load the first sheet.<br>Optional. |
@@ -124,7 +124,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | spreadsheet1 | string \| Spreadsheet |	Path to a spreadsheet file or Spreadsheet object loaded via DoAttach or DoCreate actions. |
 | spreadsheet2 | string \| Spreadsheet |	Path to a spreadsheet file or Spreadsheet object loaded via DoAttach or DoCreate actions. |
@@ -150,7 +150,7 @@ Creates a new spreadsheet file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Path to a file. Extension defines file format. Supported extensions: .xls, .xlsx, *.csv, *.txt. |
 | sheetName | string |	Name of the first sheet.<br>Optional, Default: Sheet1. |
@@ -176,7 +176,7 @@ Inserts a column at index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | columnIndex | number |	Index of a new column. Zero-based. |
 | name | string |	Name of a new column. |
@@ -199,7 +199,7 @@ Inserts a new row at index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Index of a new row. Zero-based. |
 
@@ -251,7 +251,7 @@ Sets active row index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	Index to set. Zero-based. |
 
@@ -290,7 +290,7 @@ Removes a column at index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | columnIndex | number |	Index of a column to remove. Zero-based. |
 
@@ -312,7 +312,7 @@ Removes a row at index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Index of a row to remove. Zero-based. |
 
@@ -334,7 +334,7 @@ Saves the spreadsheet.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Path to a file where to save the spreadsheet.<br>Optional. |
 
@@ -375,7 +375,7 @@ Cell value by its coordinates. Refers to active cell value after DoSequental or 
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | columnId | number \| string |	Column index or name. If not set active column is used.<br>Optional, Default: 0. |
 | rowId | number |	Row index. If not set ActiveRow is used.<br>Optional, Default: 0. |
@@ -413,7 +413,7 @@ Gets column index by its name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of the column to find. |
 
@@ -435,7 +435,7 @@ Gets column name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	Index of a column in the spreadsheet. |
 
@@ -517,7 +517,7 @@ Sets cell value by its coordinates. Sets active cell value after DoSequental or 
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value | string |	Value to set. |
 | columnId | number \| string |	Column index or name. If not set active column is used.<br>Optional, Default: 0. |
@@ -541,7 +541,7 @@ Cell range used in DoSequental and in DoRandom.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | startRow | number |	Start row index. |
 | endRow | number |	Last row index. |

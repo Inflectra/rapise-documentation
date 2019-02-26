@@ -118,7 +118,7 @@ Selects a page at index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	Index of the page. |
 

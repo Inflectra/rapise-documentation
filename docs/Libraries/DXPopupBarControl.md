@@ -95,7 +95,7 @@ Performs click on the navigation item
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | nameCaptionIndex | string \| number |	index, name or caption of the item to be selected. |
 | xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |

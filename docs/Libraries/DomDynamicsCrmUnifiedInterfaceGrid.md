@@ -215,7 +215,7 @@ Clicks the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |

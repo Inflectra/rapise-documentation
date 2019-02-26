@@ -305,7 +305,7 @@ Click the cell specified by row name or index and column name or index
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowPath | string \| number |	Path of the top level node to select. If integer number is passed then the top level node is searched by index. |
 | col | number \| string |	Column index or column name |
@@ -330,7 +330,7 @@ Clicks specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -357,7 +357,7 @@ Collapses specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -381,7 +381,7 @@ Expands specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -405,7 +405,7 @@ Set 'checked' state of the specified node
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | bcheck | boolean |	Check state to set |
 | path | string |	Path of the node |

@@ -104,7 +104,7 @@ Selects Item
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	Index of the element to check |
 

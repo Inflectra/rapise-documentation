@@ -74,7 +74,7 @@ Clicks on the edit field.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X coordinate to click.<br>Optional. |
 | y | number |	Y coordinate to click.<br>Optional. |
@@ -98,7 +98,7 @@ Opens lookup table for this edit field.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X coordinate to click.<br>Optional. |
 | y | number |	Y coordinate to click.<br>Optional. |

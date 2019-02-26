@@ -73,7 +73,7 @@ Selects an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | text | string |	Text to enter into the edit box. |
 
@@ -95,7 +95,7 @@ Sets text value of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | val | string |	Text value. |
 

@@ -44,7 +44,7 @@ Clicks specified element of the ribbon
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | item | string |	Name of an item. |
 

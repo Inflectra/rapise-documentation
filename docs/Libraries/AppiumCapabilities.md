@@ -40,7 +40,7 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | capability |  |	 |
 
@@ -57,7 +57,7 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | capability |  |	 |
 
@@ -74,7 +74,7 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | capability |  |	 |
 | capabilityValue |  |	 |

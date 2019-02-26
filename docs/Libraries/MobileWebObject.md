@@ -324,7 +324,7 @@ Send a text to the object in character-by-character mode.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keys | string |	Text to type into the object. |
 

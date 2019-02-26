@@ -136,7 +136,7 @@ Selects specific date in the date picker.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | dateValue | number |	New date to select |
 

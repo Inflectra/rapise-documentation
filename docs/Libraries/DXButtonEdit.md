@@ -72,7 +72,7 @@ Sets text value of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | val | string |	Text value. |
 
@@ -176,7 +176,7 @@ Selects an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	index of button to select |
 | isLeft | boolean |	set to 'true' if buttons are at the left of the control<br>Optional, Default: false. |

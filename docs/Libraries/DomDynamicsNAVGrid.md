@@ -219,7 +219,7 @@ Clicks the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
@@ -260,7 +260,7 @@ Opens lookup table for the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
@@ -283,7 +283,7 @@ Scrolls to the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
@@ -306,7 +306,7 @@ Selects a dropdown item in the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
@@ -330,7 +330,7 @@ Sets a text value into the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |

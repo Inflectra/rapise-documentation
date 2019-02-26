@@ -442,7 +442,7 @@ Adds selection of specified option in multi-select element.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | optionText | string |	Element to select |
 
@@ -464,7 +464,7 @@ Clicks on HTML element (button, link).
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X coordinate to click.<br>Optional. |
 | y | number |	Y coordinate to click.<br>Optional. |
@@ -503,7 +503,7 @@ Returns n-th child (zero-based).
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | n | number |	n Index of the child element. |
 
@@ -540,7 +540,7 @@ Creates a clone of this object converted to a requested type.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | type | string |	Type of an object. |
 
@@ -562,7 +562,7 @@ Returns parent element (if any) with given attribute matching given string or 'r
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | attrName | string |	Name of an attribute. |
 | match | string |	Match string. |
@@ -585,7 +585,7 @@ Returns specified attribute.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | attrName | string |	Name of an attribute. |
 
@@ -667,7 +667,7 @@ Gets array of elements matching CSS selector on this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | css | string |	CSS selector. |
 
@@ -689,7 +689,7 @@ Gets array of elements matching XPath query on this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath | string |	Xpath query. |
 
@@ -726,7 +726,7 @@ Makes sure specified element is visible on the screen.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | vAlign | string |	One of "start", "center", "end", or "nearest". Defaults to "start".<br>Optional. |
 | hAlign | string |	One of "start", "center", "end", or "nearest". Defaults to "nearest".<br>Optional. |
@@ -764,7 +764,7 @@ Gets selected options text of a SELECT element. Example: 'Option1,Option2'.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | delim | string |	Separator between options.<br>Optional, Default: ,. |
 
@@ -786,7 +786,7 @@ Selects specified element in &lt;select&gt; control.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | txt | string |	Element to select |
 
@@ -808,7 +808,7 @@ Sets specified state of check box.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | bcheck | boolean |	State to set |
 
@@ -830,7 +830,7 @@ Sets text for input edit or textarea.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | txt | string |	Text to set |
 

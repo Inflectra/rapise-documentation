@@ -44,7 +44,7 @@ Performs click on the menu item.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -98,7 +98,7 @@ Perform Click on the navigation item
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | menuItemName | string |	Menuitem name to click at. |
 

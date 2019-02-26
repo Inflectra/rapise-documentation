@@ -104,7 +104,7 @@ Performs click on the option set item
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | captionIndex | string \| number |	index or caption of the item to be selected. |
 

@@ -38,7 +38,7 @@ Saves the screenshot to a file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Path to a file |
 | format | string |	Format of the image, one of bmp, emf, exif, gif, icon, jpeg, png, tiff, wmf |

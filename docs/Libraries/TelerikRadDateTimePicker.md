@@ -104,7 +104,7 @@ Selects specific date in the date picker.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | day | number |	Day to set |
 | month | number |	Month to set |

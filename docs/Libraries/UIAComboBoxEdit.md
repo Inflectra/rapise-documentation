@@ -71,7 +71,7 @@ Selects an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | item | string \| number |	Item index or text value  to select. |
 
@@ -93,7 +93,7 @@ Set text into combobox with an edit box.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | newText | string |	Text to set |
 
@@ -174,7 +174,7 @@ Sets text value of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | val | string |	Text value. |
 

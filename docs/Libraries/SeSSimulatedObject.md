@@ -271,7 +271,7 @@ Plays analog recording using coordinates relative to this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path to analog recording (usually an .arf file). |
 | left | number |	X-coordinate of top-left corner of the analog area, relative to object top-left corner<br>Optional. |
@@ -290,7 +290,7 @@ Performs left click at the center of an object. It is a customizable variant of 
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
 | xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
@@ -344,7 +344,7 @@ Performs a left click at the center of an object or at the specified location.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -367,7 +367,7 @@ Performs a left double click at the center of an object or at the specified loca
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -410,7 +410,7 @@ Performs a middle click at the center of an object or at the specified location.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -433,7 +433,7 @@ Performs a middle double click at the center of an object or at the specified lo
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -456,7 +456,7 @@ Moves mouse cursor to a location relative to this object position.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -494,7 +494,7 @@ Performs a right click at the center of an object or at the specified location.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -517,7 +517,7 @@ Performs a right double click at the center of an object or at the specified loc
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X-coordinate of location relative to object's left border |
 | y | number |	Y-coordinate of location relative to object's top border |
@@ -540,7 +540,7 @@ Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keys | string |	A sequence of keystrokes. |
 

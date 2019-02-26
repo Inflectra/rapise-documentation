@@ -38,7 +38,7 @@ Used to show link (url and text) in the report.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url | string |	Actual link. |
 | text | string |	Text to show in the report. |

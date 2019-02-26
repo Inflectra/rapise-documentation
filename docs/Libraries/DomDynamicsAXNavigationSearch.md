@@ -44,7 +44,7 @@ Performs navigation search.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | text | string |	Name of a page to search. |
 

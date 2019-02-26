@@ -106,7 +106,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | imeEngine |  |	 |
 
@@ -123,7 +123,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | seconds |  |	 |
 
@@ -160,7 +160,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | uri |  |	 |
 | caps |  |	 |
@@ -208,7 +208,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | intent |  |	 |
 | path |  |	 |
@@ -226,7 +226,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | script |  |	 |
 | args |  |	 |
@@ -244,7 +244,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | script |  |	 |
 | args |  |	 |
@@ -262,7 +262,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -279,7 +279,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -296,7 +296,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -313,7 +313,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className |  |	 |
 
@@ -330,7 +330,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector |  |	 |
 
@@ -347,7 +347,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id |  |	 |
 
@@ -364,7 +364,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -381,7 +381,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText |  |	 |
 
@@ -398,7 +398,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name |  |	 |
 
@@ -415,7 +415,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText |  |	 |
 
@@ -432,7 +432,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName |  |	 |
 
@@ -449,7 +449,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath |  |	 |
 
@@ -466,7 +466,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -483,7 +483,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -500,7 +500,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className |  |	 |
 
@@ -517,7 +517,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector |  |	 |
 
@@ -534,7 +534,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id |  |	 |
 
@@ -551,7 +551,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -568,7 +568,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText |  |	 |
 
@@ -585,7 +585,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name |  |	 |
 
@@ -602,7 +602,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText |  |	 |
 
@@ -619,7 +619,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName |  |	 |
 
@@ -636,7 +636,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath |  |	 |
 
@@ -773,7 +773,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | strategy |  |	 |
 | key |  |	 |
@@ -791,7 +791,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value |  |	 |
 
@@ -808,7 +808,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | appPath |  |	 |
 
@@ -825,7 +825,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | bundleId |  |	 |
 
@@ -882,7 +882,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keyCode |  |	 |
 
@@ -899,7 +899,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | pathOnDevice |  |	 |
 
@@ -916,7 +916,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | pathOnDevice |  |	 |
 | base64Data |  |	 |
@@ -944,7 +944,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | appId |  |	 |
 
@@ -971,7 +971,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | connectionType |  |	 |
 
@@ -988,7 +988,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name |  |	 |
 
@@ -1005,7 +1005,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | orientation |  |	 |
 
@@ -1022,7 +1022,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value |  |	 |
 
@@ -1049,7 +1049,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | appPackage |  |	 |
 | appActivity |  |	 |

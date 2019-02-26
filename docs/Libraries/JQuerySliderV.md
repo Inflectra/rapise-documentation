@@ -42,7 +42,7 @@ Changes slider position.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value | number |	Slider position to set. |
 

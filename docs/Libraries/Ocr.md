@@ -44,7 +44,7 @@ Does OCR for a given object, finds a given string and clicks on it.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | objId | SeSObject \| String |	ID of an object or SeSObject instance. |
 | text | string |	Text to find. |
@@ -68,7 +68,7 @@ Does OCR for a window that contains a given object, finds a given string and cli
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | objId | SeSObject \| String |	ID of an object or SeSObject instance. |
 | text | string |	Text to find. |
@@ -92,7 +92,7 @@ Does OCR for 'img'.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | img | SeSWrappers.Utils.ImageWrapper \| String |	Image (ImageWrapper object or path to a file) to do OCR. |
 
@@ -114,7 +114,7 @@ Does OCR for a given object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | objId | SeSObject \| String |	ID of an object or SeSObject instance. |
 
@@ -136,7 +136,7 @@ Does OCR for a given rectangle.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | left | number |	X-coordinate of the top left corner. |
 | top | number |	Y-coordinate of the top left corner. |
@@ -161,7 +161,7 @@ Does OCR for a window that contains a given object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | objId | SeSObject \| String |	ID of an object or SeSObject instance. |
 
@@ -183,7 +183,7 @@ Selects OCR engine by name. The name should point to installed OCR engine.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | ocrName | string |	Name of an OCR engine available to SmarteStudio. For example, 'Textract' or 'Tesseract'. |
 

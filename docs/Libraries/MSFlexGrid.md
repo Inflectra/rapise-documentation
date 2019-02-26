@@ -175,7 +175,7 @@ Clicks the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
@@ -201,7 +201,7 @@ Clicks on a specific text inside the grid.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | textOrRegexp | string |	Text (or regex: expression) to search in the grid. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |

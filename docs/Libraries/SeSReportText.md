@@ -38,7 +38,7 @@ Used to show long text message in the report.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | txt | string |	Message text. |
 | caption | string |	Message caption.<br>Optional. |

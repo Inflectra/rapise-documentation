@@ -93,7 +93,7 @@ Clicks this element at the specified location.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	 |
 | y | number |	 |
@@ -131,7 +131,7 @@ Finds the first element in the page that matches the CSS Class supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className | string |	CSS class name of the element. |
 
@@ -153,7 +153,7 @@ Finds the first element matching the specified CSS selector.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector | string |	The CSS selector to match. |
 
@@ -175,7 +175,7 @@ Finds the first element in the page that matches the ID supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id | string |	ID of the element. |
 
@@ -197,7 +197,7 @@ Finds the first of elements that match the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText | string |	Link text of element. |
 
@@ -219,7 +219,7 @@ Finds the first of elements that match the name supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of the element on the page. |
 
@@ -241,7 +241,7 @@ Finds the first of elements that match the part of the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText | string |	Part of the link text. |
 
@@ -263,7 +263,7 @@ Finds the first of elements that match the DOM Tag supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName | string |	DOM tag Name of the element being searched. |
 
@@ -285,7 +285,7 @@ Finds the first of elements that match the XPath supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath | string |	xpath to the element. |
 
@@ -307,7 +307,7 @@ Finds a list of elements that match the class name supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className | string |	className of the element. |
 
@@ -329,7 +329,7 @@ Finds all elements matching the specified CSS selector.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector | string |	The CSS selector to match. |
 
@@ -351,7 +351,7 @@ Finds the first element in the page that matches the ID supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id | string |	ID of the element. |
 
@@ -373,7 +373,7 @@ Finds a list of elements that match the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText | string |	Link text of element. |
 
@@ -395,7 +395,7 @@ Finds a list of elements that match the name supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of the element on the page. |
 
@@ -417,7 +417,7 @@ Finds a list of elements that match the part of the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText | string |	Part of the link text. |
 
@@ -439,7 +439,7 @@ Finds a list of elements that match the DOM Tag supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName | string |	DOM tag Name of the element being searched. |
 
@@ -461,7 +461,7 @@ Finds a list of elements that match the XPath supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath | string |	xpath to the element. |
 
@@ -483,7 +483,7 @@ Gets the value of the specified attribute for this element.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | attributeName |  |	 |
 
@@ -510,7 +510,7 @@ Gets the value of a CSS property of this element.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | propertyName |  |	 |
 
@@ -617,7 +617,7 @@ Selects option from select element.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | option |  |	 |
 
@@ -634,7 +634,7 @@ Simulates typing text into the element.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | text |  |	 |
 

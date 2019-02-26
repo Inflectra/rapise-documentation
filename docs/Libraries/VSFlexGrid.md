@@ -273,7 +273,7 @@ Clicks the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
@@ -312,7 +312,7 @@ Returns text representation of the grid.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Name of a file that should hold text representation of the grid.<br>Optional. |
 | fmt | number |	function () {

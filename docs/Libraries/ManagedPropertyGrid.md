@@ -140,7 +140,7 @@ Collapses an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | val | string \| number |	name/index of the value to Collapse. |
 
@@ -162,7 +162,7 @@ Expands an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | val | string \| number |	name/index of the value to Expand. |
 
@@ -184,7 +184,7 @@ Selects an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | indexLabel | string \| number |	name/index of the value to select. |
 
@@ -206,7 +206,7 @@ Sets value of an grid item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | label | string \| number |	Property grid row label or index |
 | val | string \| number |	value to set |
@@ -229,7 +229,7 @@ Show dropdown (or custom dialog) for an item.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | indexLabel | string \| number |	name/index of the item to show dropdown for. |
 

@@ -208,7 +208,7 @@ Clicks the specified cell.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
@@ -234,7 +234,7 @@ Clicks on column header
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | col | number \| string |	Zero-based index of the column or column name. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
@@ -254,7 +254,7 @@ Scrolls table horizontally and vertically.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | horizontalPercent | number |	Percent value from 0 to 100. -1 means no horizontal scroll. |
 | verticalPercent | number |	Percent value from 0 to 100. -1 means no vertical scroll. |

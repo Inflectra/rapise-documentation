@@ -96,7 +96,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -113,7 +113,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -130,7 +130,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className |  |	 |
 
@@ -147,7 +147,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector |  |	 |
 
@@ -164,7 +164,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id |  |	 |
 
@@ -181,7 +181,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -198,7 +198,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText |  |	 |
 
@@ -215,7 +215,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name |  |	 |
 
@@ -232,7 +232,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText |  |	 |
 
@@ -249,7 +249,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName |  |	 |
 
@@ -266,7 +266,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath |  |	 |
 
@@ -283,7 +283,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -300,7 +300,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -317,7 +317,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className |  |	 |
 
@@ -334,7 +334,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector |  |	 |
 
@@ -351,7 +351,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id |  |	 |
 
@@ -368,7 +368,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | selector |  |	 |
 
@@ -385,7 +385,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText |  |	 |
 
@@ -402,7 +402,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name |  |	 |
 
@@ -419,7 +419,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText |  |	 |
 
@@ -436,7 +436,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName |  |	 |
 
@@ -453,7 +453,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath |  |	 |
 
@@ -470,7 +470,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | attributeName |  |	 |
 
@@ -497,7 +497,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | propertyName |  |	 |
 
@@ -604,7 +604,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | text |  |	 |
 
@@ -621,7 +621,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value |  |	 |
 

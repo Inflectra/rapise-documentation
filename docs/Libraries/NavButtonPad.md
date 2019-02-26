@@ -180,7 +180,7 @@ Click button by caption or no (1-based index)
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | textOrId | string \| number |	caption or 'no' (1-based index) |
 | timeout | number |	number of milliseconds to wait for a button to appear<br>Optional, Default: 5000. |

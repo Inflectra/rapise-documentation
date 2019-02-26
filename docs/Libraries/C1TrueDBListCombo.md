@@ -313,7 +313,7 @@ Extends selection.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -352,7 +352,7 @@ Clicks the specified cell
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number |	Zero-based index if the row. |
 | col | number |	Zero-based index of the column. |
@@ -393,7 +393,7 @@ Removes selection from specified items.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -417,7 +417,7 @@ Selects items of this object. First it clears existing selection.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -532,7 +532,7 @@ Selects an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | item | string \| number |	Item index or text value  to select. |
 

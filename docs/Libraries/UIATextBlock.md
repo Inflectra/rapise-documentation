@@ -70,7 +70,7 @@ Sets text value of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | val | string |	Text value. |
 

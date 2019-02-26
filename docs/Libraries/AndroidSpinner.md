@@ -42,7 +42,7 @@ Selects an item with the specified name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | number |	Item name. |
 

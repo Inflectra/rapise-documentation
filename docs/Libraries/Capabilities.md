@@ -40,7 +40,7 @@ Gets a capability of the browser.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | capability | string |	The capability to get. |
 
@@ -62,7 +62,7 @@ Gets a value indicating whether the browser has a given capability.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | capability | string |	The capability to get. |
 
@@ -84,7 +84,7 @@ Sets a capability of the browser.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | capability | string |	The capability to get. |
 | capabilityValue | string |	The value for the capability. |

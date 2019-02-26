@@ -102,7 +102,7 @@ Sets the value of the spinner.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value | number |	The desired value of the spinner. |
 

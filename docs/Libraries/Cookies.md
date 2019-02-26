@@ -43,7 +43,7 @@ Adds a cookie to the current page.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cookie | Cookie |	Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}. |
 
@@ -80,7 +80,7 @@ Deletes the specified cookie from the page.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cookie | Cookie |	Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}. |
 
@@ -97,7 +97,7 @@ Deletes the cookie with the specified name from the page.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	The name of the cookie to be deleted. |
 
@@ -114,7 +114,7 @@ Gets a cookie with the specified name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	The name of the cookie to retrieve. |
 

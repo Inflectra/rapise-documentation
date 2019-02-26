@@ -119,7 +119,7 @@ Collapses specific tab in a tab control.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tabName | string |	Name of a tab |
 
@@ -141,7 +141,7 @@ Expands specific tab in a tab control.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tabName | string |	Name of a tab |
 

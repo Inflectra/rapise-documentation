@@ -125,7 +125,7 @@ Selects the tab by name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | panelName | string |	Panel name to select |
 

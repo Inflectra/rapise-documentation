@@ -270,7 +270,7 @@ Performs left click at the center of an object. It is a customizable variant of 
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	X offset to click within object. Default is a center.<br>Optional. |
 | y | number |	Y offset to click within object. Default is a center.<br>Optional. |
@@ -288,7 +288,7 @@ Dumps Spy data for the object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: false. |
 | maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: 0. |
@@ -316,7 +316,7 @@ Find nested element by its text (Value and Name of each element are compared wit
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | textOrRegexp | string |	plain string or regexp:... expression to match |
 | depth | number |	depth level for search (default is 3)<br>Optional, Default: 3. |
@@ -339,7 +339,7 @@ Returns the value of a property with a given name. Names of available properties
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Property name. |
 

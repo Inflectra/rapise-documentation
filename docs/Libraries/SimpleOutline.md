@@ -70,7 +70,7 @@ Selects item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | itemName | string |	This is a name of item to select. Or an array of item names in the case of multi-select. |
 
@@ -123,7 +123,7 @@ Expands an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | itemName | string |	Name of the item to expand |
 
@@ -204,7 +204,7 @@ Checks an item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | itemName | string |	Name of the item to check |
 

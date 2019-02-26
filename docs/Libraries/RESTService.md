@@ -255,7 +255,7 @@ Executes a REST service operation, substitutes any of the provided parameter val
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table> |
 
@@ -277,7 +277,7 @@ Checks that a given part of response equals the expected value.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | msg | string |	Message to write into the report. |
 | jsonPath | string |	Path to the given node in the response object to use as a root for comparison with the expected value. |

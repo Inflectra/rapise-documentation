@@ -109,7 +109,7 @@ Selects the tab by name or index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tabNameIndex | string \| number |	Tab name or index. |
 

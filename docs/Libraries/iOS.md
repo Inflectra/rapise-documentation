@@ -48,7 +48,7 @@ Flick action.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | endX | number |	x coordinate where swipe ends (in pixels or relative units) |
 | endY | number |	y coordinate where swipe ends (in pixels or relative units) |
@@ -74,7 +74,7 @@ Opens URL in active browser.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url | string |	 |
 
@@ -126,7 +126,7 @@ Swipe action.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | endX | number |	x coordinate where swipe ends (in pixels or relative units) |
 | endY | number |	y coordinate where swipe ends (in pixels or relative units) |
@@ -153,7 +153,7 @@ Tap screen.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	x coordinate to tap (in pixels or relative units)<br>Optional. |
 | y | number |	y coordinate to tap (in pixels or relative units)<br>Optional. |
@@ -179,7 +179,7 @@ Gets capability with specified name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a capability. |
 
@@ -231,7 +231,7 @@ Sets context.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Either NATIVE_APP or WEBVIEW_1. |
 
@@ -248,7 +248,7 @@ Sets device orientation.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | orientation | number |	ORIENTATION_PORTRAIT, ORIENTATION_LANDSCAPE |
 

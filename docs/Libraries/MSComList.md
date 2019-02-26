@@ -118,7 +118,7 @@ Checks items of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | nameCaptionIndex | string \| number |	index, name or caption of the item. |
 | bCheck | boolean |	Desired check state for the item. |
@@ -141,7 +141,7 @@ Clicks the specified item
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | nameCaptionIndex | string \| number |	index, name or caption of the item. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
@@ -166,7 +166,7 @@ Selects items of this object. First it clears existing selection.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | nameCaptionIndex | string \| number |	index, name or caption of the item. |
 | bSelect | boolean |	Desired selected state for the item. |

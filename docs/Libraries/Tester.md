@@ -127,7 +127,7 @@ additional data (links, images, comments) set via 'data' parameter.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
 | condition | boolean |	If 'true' - assertion is considered passed. |
@@ -149,7 +149,7 @@ additional data (links, images, comments) set via 'data' parameter.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
 | obj1 | object |	First object to compare. |
@@ -172,7 +172,7 @@ additional data (links, images, comments) set via 'data' parameter.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
 | img1 | object |	ImageWrapper object (1st image to compare). |
@@ -193,7 +193,7 @@ Marks beginning of a test with a given name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Test name |
 | path | string |	Path to the test, that is executed. This string will be shown as a comment.<br>Optional. |
@@ -211,7 +211,7 @@ Captures image of the desktop and adds it to the report.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Image title for the report. |
 
@@ -228,7 +228,7 @@ Captures image of an object and adds it to the report.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Image title for the report. |
 | objId | string \| SeSObject |	Id of an object or SeSObject instance. |
@@ -246,7 +246,7 @@ Captures image of an application window matched by title and class and adds it t
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Image title for the report. |
 | windowTitle | string |	String or regular expression to match window title. |
@@ -276,7 +276,7 @@ Stops test execution and sets it's status to failed.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Failure description.<br>Optional, Default: Test stopped on error. |
 
@@ -293,7 +293,7 @@ Gets report attribute previously set by PushReportAttribute or SetReportAttribut
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Attribute name. |
 
@@ -340,7 +340,7 @@ just for information purposes (i.e. it does not affect final test status).</p>
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | ignore | boolean |	Set to 'true' to report all messages but ignore the status (Pass/Fail) |
 
@@ -358,7 +358,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report |
 | data | SeSReportLink \| SeSReportText|SeSReportImage|Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
@@ -377,7 +377,7 @@ Shows message box to user. Use it for verbose and manual testing.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to display. |
 
@@ -396,7 +396,7 @@ Shows message box with question to the user and checks if user presses "Yes" or 
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | question | string |	Question to display. |
 
@@ -413,7 +413,7 @@ Resets an attribute to its previous value. See PushReportAttribute for more info
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Attribute name to recall from stack. |
 
@@ -459,7 +459,7 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Attribute name to recall from stack. |
 | value | string |	New attribute value. |
@@ -477,7 +477,7 @@ Removes report attribute previously set by SetReportAttribute.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Attribute name. |
 
@@ -496,7 +496,7 @@ the ResetReportAttribute function.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Attribute name to set. |
 | value | string |	New attribute value. |
@@ -522,7 +522,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | suppress | boolean |	Set to 'True' to suppress adding anything into the report. |
 

@@ -44,7 +44,7 @@ Selects specified panel.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Panel name to select. |
 

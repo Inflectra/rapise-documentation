@@ -66,7 +66,7 @@ Clicks the mouse on the specified element. If no element is specified clicks th
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | el | WebElement |	The element on which to click.<br>Optional. |
 
@@ -88,7 +88,7 @@ Clicks and holds the mouse button down on the specified element.If no element i
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | el | WebElement |	The element on which to click and hold.<br>Optional. |
 
@@ -110,7 +110,7 @@ Right-clicks the mouse on the specified element.If no element is specified righ
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | el | WebElement |	The element on which to right-click.<br>Optional. |
 
@@ -132,7 +132,7 @@ Double-clicks the mouse on the specified element.If no element is specified dou
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | el | WebElement |	The element on which to double-click.<br>Optional. |
 
@@ -154,7 +154,7 @@ Performs a drag-and-drop operation from one element to another.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | source | WebElement |	The element on which the drag operation is started. |
 | target | WebElement |	The element on which the drop is performed. |
@@ -177,7 +177,7 @@ Performs a drag-and-drop operation on one element to a specified offset.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | source | WebElement |	The element on which the drag operation is started. |
 | offsetX | number |	The horizontal offset to which to move the mouse. |
@@ -201,7 +201,7 @@ Sends a modifier key down message to the specified element in the browser.If no
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | theKey | string |	The key to be sent. Accepts "Shift", "Control" and "Alt". |
 | el | WebElement |	The element to which to send the key command.<br>Optional. |
@@ -224,7 +224,7 @@ Sends a modifier key up message to the specified element in the browser.If no e
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | theKey | string |	The key to be sent. Accepts "Shift", "Control" and "Alt". |
 | el | WebElement |	The element to which to send the key command.<br>Optional. |
@@ -247,7 +247,7 @@ Moves the mouse to the specified offset of the last known mouse coordinates.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | offsetX | number |	The horizontal offset to which to move the mouse. |
 | offsetY | number |	The vertical offset to which to move the mouse. |
@@ -270,7 +270,7 @@ Moves the mouse to the specified offset of the top-left corner of the specified 
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | el | WebElement |	The element to which to move the mouse. |
 | offsetX | number |	The horizontal offset to which to move the mouse.<br>Optional. |
@@ -304,7 +304,7 @@ Releases the mouse button on the specified element.If no element is specified r
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | el | WebElement |	The element on which to release the button.<br>Optional. |
 
@@ -326,7 +326,7 @@ Sends a sequence of keystrokes to the specified element in the browser.If no el
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keysToSend | string |	The keystrokes to send to the browser. |
 | el | WebElement |	The element to which to send the keystrokes.<br>Optional. |

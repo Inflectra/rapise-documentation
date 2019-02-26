@@ -44,7 +44,7 @@ Performs action search.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | text | string |	Name of action to search. |
 

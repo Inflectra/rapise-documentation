@@ -47,7 +47,7 @@ Attaches to a Database with given ADO connection string and SQL query.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | connection_string | string |	ADO connection string. |
 | sql |  |	SQL Query (i.e. 'select * from Customers')<br>Optional. |
@@ -70,7 +70,7 @@ Moves to a given row.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowInd | number |	Row index to set active. |
 
@@ -132,7 +132,7 @@ Gets column name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | ind | number |	Column index. |
 
@@ -194,7 +194,7 @@ Gets value by column name, and, optionally, row number. Returns current cell val
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | columnId | Number \| String |	Column index or name. If not set 1st column is used.<br>Optional. |
 | rowId | number |	Row index. If not set current row is used.<br>Optional. |

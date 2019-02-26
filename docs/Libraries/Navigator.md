@@ -124,7 +124,7 @@ Checks if object is found on the screen by its id or XPath.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpathOrObjId | string |	XPath or ID. XPath is detected by leading "." or "/". |
 
@@ -146,7 +146,7 @@ Closes browser. Finishes session.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url | string |	Not used - can leave empty |
 
@@ -173,7 +173,7 @@ Waits until browser alert with a given text. Wait timeout is 10 seconds.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | msg | string |	alert text. Can be exact text or regular expression. |
 
@@ -195,7 +195,7 @@ Waits until browser confirmation with a given text.  Wait timeout is 10 seconds.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | msg | string |	confirmation text. Can be exact text or regular expression. |
 | result | string |	Not used - can leave empty. |
@@ -218,7 +218,7 @@ Waits until browser prompt with a given text.  Wait timeout is 10 seconds.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | msg | string |	prompt text. Can be exact text or regular expression. |
 | result | string |	Not used - can leave empty. |
@@ -241,7 +241,7 @@ Looks for a web element by specific attribute value through all frames. [attrVal
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | attrName | string |	name of the attribute to check. May be @attr or attr.<br>Optional. |
 | attrValue | string |	expected attribute value.<br>Optional. |
@@ -267,7 +267,7 @@ Looks for a web element by its name through all frames. Name is checked agains @
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	expected element name to search for<br>Optional. |
 | tagName | Sring |	optional tag name, default is * (any tag)<br>Optional. |
@@ -292,7 +292,7 @@ Looks for a web element by its text contents through all frames. [text] is check
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | text | string |	expected text to search for<br>Optional. |
 | tagName | string |	optional tag name, default is * (any tag)<br>Optional. |
@@ -317,7 +317,7 @@ Looks for a web element by specific local XPath value through all frames. If XPa
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath | string |	local XPath to execute for each frame.<br>Optional. |
 | findAll | boolean |	optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional. |
@@ -341,7 +341,7 @@ Makes screenshot of the browser window.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Save the screenshot to a file if name is specified. Otherwise - add to report.<br>Optional. |
 
@@ -358,7 +358,7 @@ Set boolean value to return as a result of next browser 'confirm' request.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | expectedRes | string |	The text to be returned in the next request. |
 
@@ -375,7 +375,7 @@ Set text to return as a result of next browser 'prompt' request.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | expectedRes | string |	The text to be returned in the next request. |
 
@@ -392,7 +392,7 @@ Executes given JavaScript statement in a browser and returns results.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | scriptText | string |	JavaScript code. |
 | obj | SeSObject |	 |
@@ -415,7 +415,7 @@ Returns HTMLObject wrapping DOM element for a given 'xpath'. HTMLObject is a {S
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath | string |	location path of a DOM element. |
 | url | string |	URL. If new navigator is launched, the URL is used.<br>Optional. |
@@ -440,7 +440,7 @@ Reads performance information from currently used browser. Performance numbersa
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | resources | boolean |	optional, bool. Set to true if you want to dump information about resource timing into the report<br>Optional. |
 | dontWriteReport | boolean |	optional, Set to true if you want just return page load time and write nothing to report<br>Optional. |
@@ -463,7 +463,7 @@ Redirects browser to a specified URL.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url | string |	The URL to navigate to. |
 
@@ -480,7 +480,7 @@ Opens a browser. If URL is specified, goes to URL.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url | string |	start URL for opening browser. Can be 'null'. |
 
@@ -497,7 +497,7 @@ Selects browser profile to use for testing.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | profileName | string |	name of a browser profile. |
 

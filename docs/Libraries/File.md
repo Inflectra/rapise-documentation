@@ -52,7 +52,7 @@ Appends text to a file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file. |
 | text | string |	Text to append to the file. |
@@ -70,7 +70,7 @@ Creates a folder.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | folderPath | string |	Path to a folder. |
 
@@ -87,7 +87,7 @@ Deletes a file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to delete. |
 
@@ -104,7 +104,7 @@ Deletes a folder.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | folderPath | string |	Path to a folder. |
 
@@ -121,7 +121,7 @@ Checks if file exists or not.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to check. |
 
@@ -153,7 +153,7 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path to a folder to search in. |
 | searchPattern=* | string |	Search pattern (may include * and ? wildcards, but no regexp). |
@@ -180,7 +180,7 @@ Checks if folder exists.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | folderPath | string |	Path to a folder. |
 
@@ -202,7 +202,7 @@ Gets information about a folder.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | folderPath | string |	Path to a folder. |
 
@@ -224,7 +224,7 @@ Includes code from a file.Normally used together with eval statement, i.e.:eva
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to load. |
 
@@ -246,7 +246,7 @@ Includes code from a file if it was not included earlier.Normally used together
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to load. |
 
@@ -268,7 +268,7 @@ Gets information about a file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file. |
 
@@ -290,7 +290,7 @@ Reads text file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to read. |
 
@@ -312,7 +312,7 @@ Finds the file in test folders and calculates its absolute path.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to resolve path. |
 
@@ -334,7 +334,7 @@ Sets file modification time to current time.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to touch. |
 
@@ -351,7 +351,7 @@ Writes text file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to write. |
 | text | string |	Text to write into the file. |

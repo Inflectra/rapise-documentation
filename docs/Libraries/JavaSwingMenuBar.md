@@ -48,7 +48,7 @@ Returns text representation of the menu or saves it to a file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | filePath | string |	Name of a file that should hold text representation of the menu. |
@@ -73,7 +73,7 @@ Gets the number of submenu items for a given menu path.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -96,7 +96,7 @@ Gets submenu property.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | index | number |	Index of the submenu. |
@@ -121,7 +121,7 @@ Gets submenu text.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | index | number |	Index of the submenu. |
@@ -145,7 +145,7 @@ Performs click on the menu item.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |

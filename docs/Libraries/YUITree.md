@@ -157,7 +157,7 @@ Clicks specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -181,7 +181,7 @@ Collapses specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -205,7 +205,7 @@ Expands specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -229,7 +229,7 @@ Finds child node by its path from the current node and remembers it as the curre
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -254,7 +254,7 @@ Searches for specific node in the tree and remembers it as the current node.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -279,7 +279,7 @@ Returns path to the current node.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |

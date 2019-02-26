@@ -72,7 +72,7 @@ Sets text value of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value | string |	Text value. |
 | hitEnter | boolean |	Pass 'true' to additionaly hit enter after entering the text.<br>Optional, Default: false. |

@@ -102,7 +102,7 @@ Selects the tab by name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tabName | string |	Tab name to select |
 

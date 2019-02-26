@@ -45,7 +45,7 @@ Searches for specific item in the menu.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -69,7 +69,7 @@ Performs click on the menu item.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |

@@ -239,7 +239,7 @@ Clicks the specified cell
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Zero-based index if the row. |
 | columnIndex | number |	Zero-based index of the column. |
@@ -262,7 +262,7 @@ Returns text representation of the table.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of a file that should hold text representation of the grid.<br>Optional. |
 

@@ -102,7 +102,7 @@ Sets the value of current object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | val | number |	Value to set |
 

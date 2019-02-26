@@ -71,7 +71,7 @@ Performs Analog Playback of events recorded in a file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	This is a path to a file with recorded analog events. |
 | left | number |	X-coordinate of top-left corner of the analog area. |
@@ -91,7 +91,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | title | string |	Title of an application window. |
 
@@ -113,7 +113,7 @@ Performs mouse click at the current position.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
 
@@ -130,7 +130,7 @@ Compares two JavaScript objects and prints differences to the report.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | msg | string |	Message to write into report. |
 | obj1 | object |	First object. |
@@ -154,7 +154,7 @@ Decrypts a piece of text.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | encryptedText | string |	Text to decrypt. |
 
@@ -176,7 +176,7 @@ Encrypts a piece of text.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | plainText | string |	Text to encrypt. |
 
@@ -199,7 +199,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | pathToTest | string |	Path to .sstest file. |
 | optionalParams | object |	Parameters to pass into entry point Test() function of the subtest. I.e. it is called as Test(optionalParams).<br>Optional, Default: [object Object]. |
@@ -222,7 +222,7 @@ Terminates a given process.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | processName | string |	Executable name to kill (such as 'iexplore.exe'). |
 
@@ -244,7 +244,7 @@ Terminates a given process or the last process created by DoLaunch if 'pid' is n
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | pid | number |	ID of the process.<br>Optional. |
 
@@ -267,7 +267,7 @@ to attach if it is already launched.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cmdLine | string |	Command line to an executable with parameters. |
 | wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: .. |
@@ -292,7 +292,7 @@ Loads objects from external .objects.js file.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | objectsFilePath | string |	Path to *.objects.js file. |
 
@@ -348,7 +348,7 @@ Object: saved_script_objects or null if the load was unsuccessful.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | prompt | string |	Message to display. |
 | buttons | number |	Buttons to show.<br>Optional, Default: 0. |
@@ -371,7 +371,7 @@ Moves mouse to the specified position.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	Absolute X-coordinate of the target mouse position. |
 | y | number |	Absolute Y-coordinate of the target mouse position. |
@@ -390,7 +390,7 @@ Executes a manual test. Results are shown in the report of the calling test.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rmtFilePath | string |	Path to manual test (.rmt) file. |
 | rmtParams | object |	Additional parameters to pass to the manual test executor.<br>Optional. |
@@ -413,7 +413,7 @@ Executes a test set. Results are shown in the report of the calling test.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | testSetFilePath | string |	Path to a test set file. |
 | testSetParams | object |	Additional parameters to pass for each test in the test set.<br>Optional. |
@@ -431,7 +431,7 @@ Sends series of keystrokes to a currently focused application.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keys | string |	Keystrokes as described in the MSDN Article for SendKeys. |
 
@@ -453,7 +453,7 @@ Pauses execution for given number of milliseconds (1000 = 1 second).
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | millis=1000 | number |	Number of milliseconds to sleep. |
 
@@ -472,7 +472,7 @@ Whitespace characters are [\\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | str | string |	String to trim. |
 | global | boolean |	If 'true' then global trim is performed (whitespaces in the middle are substituted with a single space). If 'false' only ends are trimmed.<br>Optional, Default: false. |
@@ -496,7 +496,7 @@ Types encrypted password into a control which has a focus.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | encryptedPassword | string |	Password to type. Encrypted. |
 
@@ -519,7 +519,7 @@ was found or timeout.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | objectId | objectid \| string |	Id of an object to wait for. |
 | timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: 10000. |
@@ -545,7 +545,7 @@ in the case of timeout.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | obj | string \| SeSObject |	Id of an object to wait for or object itself. |
 | getterName | string |	Property getter function name. |
@@ -586,7 +586,7 @@ Reads file and returns its content as array of bytes. May be useful for binary f
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Filename to read (recommended to use absolute file name). |
 
@@ -623,7 +623,7 @@ Constructs an absolute file name using working directory (WORKDIR) of the test.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of a file. |
 
@@ -705,7 +705,7 @@ Reads property value from %WORKDIR%\Config.json.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a property |
 | defValue | string \| number|boolean |	Default value to return if property does not exist<br>Optional. |
@@ -755,7 +755,7 @@ Returns path to a special folder specified by one of possible values.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | folder=MyDocuments | string |	Folder Id. |
 
@@ -777,7 +777,7 @@ Creates or rewrites file and fills with contents of the provided byte array.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Filename to write (recommended to use absolute file name). |
 | bytes | array |	Array of bytes to write. |
@@ -800,7 +800,7 @@ Sets property value to %WORKDIR%\Config.json. If the file does not exist it will
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a property. |
 | value | string \| number|boolean |	Value to set. |

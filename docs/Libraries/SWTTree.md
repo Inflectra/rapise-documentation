@@ -165,7 +165,7 @@ Collapses specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
@@ -189,7 +189,7 @@ Expands a specific node in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | node | string |	Name of the node |
 
@@ -211,7 +211,7 @@ Selects specified item in the tree.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value | string |	Item to select |
 

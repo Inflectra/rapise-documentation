@@ -102,7 +102,7 @@ Selects a specific tab of the tab control.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tabName | string |	The name of the tab to select |
 

@@ -104,7 +104,7 @@ Selects the tab by name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string \| number |	Tab name to select |
 | x | number |	X-coordinate of location relative to object's left border |

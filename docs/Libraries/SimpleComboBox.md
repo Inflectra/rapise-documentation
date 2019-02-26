@@ -70,7 +70,7 @@ Selects item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | itemName | string |	This is a name of item to select. Or an array of item names in the case of multi-select. |
 
@@ -151,7 +151,7 @@ Selects item of this object.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | itemName | string |	This is a name of item to select. |
 

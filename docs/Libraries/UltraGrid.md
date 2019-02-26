@@ -175,7 +175,7 @@ Clicks the specified cell
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number |	Zero-based index if the row. |
 | col | number |	Zero-based index of the column. |

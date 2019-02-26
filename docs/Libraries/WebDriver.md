@@ -111,7 +111,7 @@ This will create a WebDriver for currently selected Browser profile.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | nonProfileCapsJson |  |	 |
 
@@ -143,7 +143,7 @@ Executes JavaScript in the context of the currently selected frame or window.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | script | string |	The JavaScript code to execute. |
 | args | array |	The arguments to the script. |
@@ -166,7 +166,7 @@ Finds the first element in the page that matches the CSS Class supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className | string |	CSS class name of the element. |
 
@@ -188,7 +188,7 @@ Finds the first element matching the specified CSS selector.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector | string |	The CSS selector to match. |
 
@@ -210,7 +210,7 @@ Finds the first element in the page that matches the ID supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id | string |	ID of the element. |
 
@@ -232,7 +232,7 @@ Finds the first of elements that match the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText | string |	Link text of element. |
 
@@ -254,7 +254,7 @@ Finds the first of elements that match the name supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of the element on the page. |
 
@@ -276,7 +276,7 @@ Finds the first of elements that match the part of the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText | string |	Part of the link text. |
 
@@ -298,7 +298,7 @@ Finds the first of elements that match the DOM Tag supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName | string |	DOM tag Name of the element being searched. |
 
@@ -320,7 +320,7 @@ Finds the first of elements that match the XPath supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath | string |	xpath to the element. |
 
@@ -342,7 +342,7 @@ Finds a list of elements that match the class name supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | className | string |	className of the element. |
 
@@ -364,7 +364,7 @@ Finds all elements matching the specified CSS selector.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cssSelector | string |	The CSS selector to match. |
 
@@ -386,7 +386,7 @@ Finds the first element in the page that matches the ID supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | id | string |	ID of the element. |
 
@@ -408,7 +408,7 @@ Finds a list of elements that match the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | linkText |  |	Link text of element. |
 
@@ -430,7 +430,7 @@ Finds a list of elements that match the name supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of the element on the page. |
 
@@ -452,7 +452,7 @@ Finds a list of elements that match the part of the link text supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | partialLinkText | string |	Part of the link text. |
 
@@ -474,7 +474,7 @@ Finds a list of elements that match the DOM Tag supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tagName | string |	DOM tag Name of the element being searched. |
 
@@ -496,7 +496,7 @@ Finds a list of elements that match the XPath supplied.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | xpath | string |	xpath to the element. |
 
@@ -538,7 +538,7 @@ Gets the source of the page last loaded by the browser.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name |  |	 |
 
@@ -615,7 +615,7 @@ Disconnects from the Browser.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | width |  |	 |
 | height |  |	 |
@@ -633,7 +633,7 @@ Sets the URL the browser is currently displaying.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url | string |	The URL to display |
 
@@ -670,7 +670,7 @@ Move to different frame using its element.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | el | WebElementWrapper |	Element of the frame. |
 
@@ -707,7 +707,7 @@ Switch to window specified by handle.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | windowHandle |  |	 |
 

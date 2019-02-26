@@ -91,7 +91,7 @@ Scrolls to an sub control with name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Sub control name. |
 

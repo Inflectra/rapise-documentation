@@ -73,7 +73,7 @@ Clicks the button.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | x | number |	x coordinate to click<br>Optional. |
 | y | number |	y coordinate to click<br>Optional. |

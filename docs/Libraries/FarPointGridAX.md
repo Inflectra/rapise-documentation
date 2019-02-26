@@ -465,7 +465,7 @@ Make specified cell active
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | row | number |	Column to use |
 | col | number |	Column to use |
@@ -483,7 +483,7 @@ Clear specified cell range
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | col1 | number |	Column to use |
 | row1 | number |	Column to use |
@@ -503,7 +503,7 @@ Clicks the specified cell
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | col | number |	Zero-based index of the column. |
 | row | number |	Zero-based index if the row. |
@@ -529,7 +529,7 @@ Save Grid data to file
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Path to destination file |
 | type | string |	Export file format (EXCEL, HTML, XML). Empty ("") for tab-separated text<br>Optional, Default: L. |
@@ -547,7 +547,7 @@ Return whole grid as text
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | saveToFile | boolean |	'true' if you need to have copy of the text in the file |
 | fileName | string |	Path to destination file |

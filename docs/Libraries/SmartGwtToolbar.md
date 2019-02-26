@@ -42,7 +42,7 @@ Clicks on a toolbar item.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	Zero-based index if an item. |
 

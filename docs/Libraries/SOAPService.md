@@ -176,7 +176,7 @@ Executes a SOAP service operation, substituting any of the provided parameter va
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | method | string |	Name of a SOAP method. |
 | params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation. |
@@ -200,7 +200,7 @@ Sends a SOAP request as is.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | method | string |	Name of a SOAP method. |
 | body | string |	SOAP xml string. |
@@ -224,7 +224,7 @@ Checks that a given part of response equals the expected value.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | msg | string |	Message to write into the report. |
 | jsonPath | string |	Path to the given node in the response object to use as a root for comparison with the expected value. |

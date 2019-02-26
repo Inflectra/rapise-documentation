@@ -46,7 +46,7 @@ Captures duration of loading a page and resources.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | url |  |	Node name for NeoLoad entry tree. |
 
@@ -73,7 +73,7 @@ Sends performance value to NeoLoad.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | entry |  |	Name of a group of performance metrics. Can be a transaction name. |
 | path |  |	Name of a metric to capture. |
@@ -93,7 +93,7 @@ Connects to NeoLoad.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | hardware | string |	Hardware details (Apple MacBook Pro, Sony Vaio, etc.) |
 | location | string |	Location information. |
@@ -112,7 +112,7 @@ Marks end of a transaction and sends performance metrics to NeoLoad.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a transaction. |
 
@@ -139,7 +139,7 @@ Sets current step (Init, Actions, End) during test conversion
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a step. |
 
@@ -156,7 +156,7 @@ Sets current container/business transaction during test conversion
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a container/transaction. |
 
@@ -173,7 +173,7 @@ Marks start of a transaction.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a transaction. |
 

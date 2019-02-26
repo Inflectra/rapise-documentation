@@ -109,7 +109,7 @@ Selects an item with the specified index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	Item index. |
 

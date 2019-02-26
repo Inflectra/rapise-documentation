@@ -93,7 +93,7 @@ Selects a doc by name.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | docName | string |	Doc name to select |
 

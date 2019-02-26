@@ -293,7 +293,7 @@ Ensure that a child item with the specified text is visible on screen.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | text | string |	Text to search for. |
 
@@ -315,7 +315,7 @@ Send a text to the object in character-by-character mode.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keys | string |	Text to type into the object. |
 

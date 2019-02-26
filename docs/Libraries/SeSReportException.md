@@ -38,7 +38,7 @@ Used to show exception in the report.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | e | Error |	Error object. |
 

@@ -74,7 +74,7 @@ Gets caption of the row with index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Row index |
 
@@ -96,7 +96,7 @@ Gets color of the row with index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Row index |
 
@@ -118,7 +118,7 @@ Gets rectangle of the row with index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Row index |
 
@@ -140,7 +140,7 @@ Gets value of the row with index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Row index |
 
@@ -162,7 +162,7 @@ Sets value of the row with index.
 
 **Parameters:**
 
-|	** Name ** | **Type** | **Description** |
+|	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | rowIndex | number |	Row index |
 | value | string |	Value to set |
