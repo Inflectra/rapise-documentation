@@ -535,7 +535,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="DoSendKeys"></a>    
 #### DoSendKeys(keys)
 
-Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <link displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</link>
+Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a>
 
 
 **Parameters:**

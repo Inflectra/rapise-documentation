@@ -21,7 +21,7 @@ def main():
                         output.write("- [UITAP](http://www.uitestingplayground.com/)\n")
                         continue
                     if match.group(4) is not None:
-                        link = match.group(4)
+                        link = match.group(4).replace(".md", "/")
                     if len(link) > 0:
                         output.write(indent + "- [" +  title + "](/" + link + ")\n")
                     else:
