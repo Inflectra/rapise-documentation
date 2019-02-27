@@ -2891,108 +2891,56 @@
 <!-- ============================== action summary ========================== -->
 
 <h3 id="action-summary">Action Summary</h3>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-          <tr style="vertical-align:top">
-            <td  style="width:200px; background-color:#c0c0c0;">
-              Action
-            </td>
-            <td style="width:450px; background-color:#c0c0c0;">
-              Description
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#DoAttach">DoAttach</a>
-            </td>
-            <td>
-                Attaches to a Database with given ADO connection string and SQL query.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#DoMoveToRow">DoMoveToRow</a>
-            </td>
-            <td>
-                Moves to a given row.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#DoRandom">DoRandom</a>
-            </td>
-            <td>
-                Selects random row and column in the recordset.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#DoSequential">DoSequential</a>
-            </td>
-            <td>
-                Advances to the next row in the table.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetColumnCount">GetColumnCount</a>
-            </td>
-            <td>
-                Gets columns count.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetColumnName">GetColumnName</a>
-            </td>
-            <td>
-                Gets column name.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetColumnNames">GetColumnNames</a>
-            </td>
-            <td>
-                Gets column names.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetCurrentRowIndex">GetCurrentRowIndex</a>
-            </td>
-            <td>
-                Get zero based current row index.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetRowCount">GetRowCount</a>
-            </td>
-            <td>
-                Gets rows count.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetValue">GetValue</a>
-            </td>
-            <td>
-                Gets value by column name, and, optionally, row number.
-            </td>
-          </tr>
-
-       </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#DoAttach">DoAttach</a></td>
+<td>Attaches to a Database with given ADO connection string and SQL query.</td>
+</tr>
+<tr>
+<td><a href="#DoMoveToRow">DoMoveToRow</a></td>
+<td>Moves to a given row.</td>
+</tr>
+<tr>
+<td><a href="#DoRandom">DoRandom</a></td>
+<td>Selects random row and column in the recordset.</td>
+</tr>
+<tr>
+<td><a href="#DoSequential">DoSequential</a></td>
+<td>Advances to the next row in the table.</td>
+</tr>
+<tr>
+<td><a href="#GetColumnCount">GetColumnCount</a></td>
+<td>Gets columns count.</td>
+</tr>
+<tr>
+<td><a href="#GetColumnName">GetColumnName</a></td>
+<td>Gets column name.</td>
+</tr>
+<tr>
+<td><a href="#GetColumnNames">GetColumnNames</a></td>
+<td>Gets column names.</td>
+</tr>
+<tr>
+<td><a href="#GetCurrentRowIndex">GetCurrentRowIndex</a></td>
+<td>Get zero based current row index.</td>
+</tr>
+<tr>
+<td><a href="#GetRowCount">GetRowCount</a></td>
+<td>Gets rows count.</td>
+</tr>
+<tr>
+<td><a href="#GetValue">GetValue</a></td>
+<td>Gets value by column name, and, optionally, row number.</td>
+</tr>
+</tbody>
+</table>
 <!-- ============================== property detail ========================== -->
 
 <!-- ============================== action detail ========================== -->
@@ -3002,66 +2950,49 @@
 <h4 id="doattachconnection_string-sql">DoAttach(connection_string, sql)</h4>
 <p>Attaches to a Database with given ADO connection string and SQL query.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>connection_string</td>
-                        <td>string</td>
-                        <td>
-                                ADO connection string.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>sql</td>
-                        <td></td>
-                        <td>
-                                SQL Query (i.e. 'select * from Customers')<br>Optional.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connection_string</td>
+<td>string</td>
+<td>ADO connection string.</td>
+</tr>
+<tr>
+<td>sql</td>
+<td></td>
+<td>SQL Query (i.e. 'select * from Customers')<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>true, if successfull</p>
 <p><a name="DoMoveToRow"></a>    </p>
 <h4 id="domovetorowrowind">DoMoveToRow(rowInd)</h4>
 <p>Moves to a given row.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>rowInd</td>
-                        <td>number</td>
-                        <td>
-                                Row index to set active.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowInd</td>
+<td>number</td>
+<td>Row index to set active.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="DoRandom"></a>    </p>
 <h4 id="dorandom">DoRandom()</h4>
 <p>Selects random row and column in the recordset.</p>
@@ -3082,29 +3013,22 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <h4 id="getcolumnnameind">GetColumnName(ind)</h4>
 <p>Gets column name.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>ind</td>
-                        <td>number</td>
-                        <td>
-                                Column index.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ind</td>
+<td>number</td>
+<td>Column index.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>Name of column in the spreadsheet.</p>
 <p><a name="GetColumnNames"></a>    </p>
@@ -3124,36 +3048,27 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <h4 id="getvaluecolumnid-rowid">GetValue(columnId, rowId)</h4>
 <p>Gets value by column name, and, optionally, row number. Returns current cell value after DoSequental or DoRandom if params not set.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>columnId</td>
-                        <td>Number | <br>String</td>
-                        <td>
-                                Column index or name. If not set 1st column is used.<br>Optional.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>rowId</td>
-                        <td>number</td>
-                        <td>
-                                Row index. If not set current row is used.<br>Optional.
-                        </td>
-                      </tr>
-
-                </table></div>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>columnId</td>
+<td>Number | String</td>
+<td>Column index or name. If not set 1st column is used.<br>Optional.</td>
+</tr>
+<tr>
+<td>rowId</td>
+<td>number</td>
+<td>Row index. If not set current row is used.<br>Optional.</td>
+</tr>
+</tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">
@@ -3162,7 +3077,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

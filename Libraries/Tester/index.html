@@ -2892,254 +2892,125 @@ You do not need to record or learn this object, it is always automatically avail
 <!-- ============================== property summary ========================== -->
 
 <h3 id="property-summary">Property Summary</h3>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td  style="width:200px; background-color:#c0c0c0;">
-      Property
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-
-  </tr>
-
-  <tr style="vertical-align:top">
-        <td>
-      <a href="#Fail">Fail</a>
-        </td>
-        <td>
-            Test status, test failed.
-        </td>
-
-    </tr>
-
-  <tr style="vertical-align:top">
-        <td>
-      <a href="#Info">Info</a>
-        </td>
-        <td>
-            Test status, test is neither passed nor failed.
-        </td>
-
-    </tr>
-
-  <tr style="vertical-align:top">
-        <td>
-      <a href="#Pass">Pass</a>
-        </td>
-        <td>
-            Test status, test passed.
-        </td>
-
-    </tr>
-
-  <tr style="vertical-align:top">
-        <td>
-      <a href="#Unresolved">Unresolved</a>
-        </td>
-        <td>
-            Test status, test status is unresolved, test terminated unexpectedly.
-        </td>
-
-    </tr>
-
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Fail">Fail</a></td>
+<td>Test status, test failed.</td>
+</tr>
+<tr>
+<td><a href="#Info">Info</a></td>
+<td>Test status, test is neither passed nor failed.</td>
+</tr>
+<tr>
+<td><a href="#Pass">Pass</a></td>
+<td>Test status, test passed.</td>
+</tr>
+<tr>
+<td><a href="#Unresolved">Unresolved</a></td>
+<td>Test status, test status is unresolved, test terminated unexpectedly.</td>
+</tr>
+</tbody>
 </table>
-
 <!-- ============================== action summary ========================== -->
 
 <h3 id="action-summary">Action Summary</h3>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-          <tr style="vertical-align:top">
-            <td  style="width:200px; background-color:#c0c0c0;">
-              Action
-            </td>
-            <td style="width:450px; background-color:#c0c0c0;">
-              Description
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#Assert">Assert</a>
-            </td>
-            <td>
-                Checks if condition is 'true' and saves corresponding Report entry.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#AssertEqual">AssertEqual</a>
-            </td>
-            <td>
-                Checks if obj1 equals to obj2 and saves corresponding Report entry.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#AssertImage">AssertImage</a>
-            </td>
-            <td>
-                Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#BeginTest">BeginTest</a>
-            </td>
-            <td>
-                Marks beginning of a test with a given name.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#CaptureDesktopImage">CaptureDesktopImage</a>
-            </td>
-            <td>
-                Captures image of the desktop and adds it to the report.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#CaptureObjectImage">CaptureObjectImage</a>
-            </td>
-            <td>
-                Captures image of an object and adds it to the report.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#CaptureWindowImage">CaptureWindowImage</a>
-            </td>
-            <td>
-                Captures image of an application window matched by title and class and adds it to the report.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#EndTest">EndTest</a>
-            </td>
-            <td>
-                Marks end of a currently executed test.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#FailTest">FailTest</a>
-            </td>
-            <td>
-                Stops test execution and sets it's status to failed.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetReportAttribute">GetReportAttribute</a>
-            </td>
-            <td>
-                Gets report attribute previously set by PushReportAttribute or SetReportAttribute.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetTestStatus">GetTestStatus</a>
-            </td>
-            <td>
-                Gets status of currently executed test.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#IgnoreStatus">IgnoreStatus</a>
-            </td>
-            <td>
-                <p>In IgnoreStatus mode the assertion status is always treated as "Info".
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#Message">Message</a>
-            </td>
-            <td>
-                Saves corresponding Report message.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#MessageBox">MessageBox</a>
-            </td>
-            <td>
-                Shows message box to user.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#MessageBoxPrompt">MessageBoxPrompt</a>
-            </td>
-            <td>
-                Shows message box with question to the user and checks if user presses "Yes" or "No".
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#PopReportAttribute">PopReportAttribute</a>
-            </td>
-            <td>
-                Resets an attribute to its previous value.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#PushReportAttribute">PushReportAttribute</a>
-            </td>
-            <td>
-                <p>Maintains "stacked" attributes.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#ResetReportAttribute">ResetReportAttribute</a>
-            </td>
-            <td>
-                Removes report attribute previously set by SetReportAttribute.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#SetReportAttribute">SetReportAttribute</a>
-            </td>
-            <td>
-                Set persistent attribute.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#SuppressReport">SuppressReport</a>
-            </td>
-            <td>
-                <p>In SuppressReport mode all assertions are ignored.
-            </td>
-          </tr>
-
-       </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Assert">Assert</a></td>
+<td>Checks if condition is 'true' and saves corresponding Report entry.</td>
+</tr>
+<tr>
+<td><a href="#AssertEqual">AssertEqual</a></td>
+<td>Checks if obj1 equals to obj2 and saves corresponding Report entry.</td>
+</tr>
+<tr>
+<td><a href="#AssertImage">AssertImage</a></td>
+<td>Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.</td>
+</tr>
+<tr>
+<td><a href="#BeginTest">BeginTest</a></td>
+<td>Marks beginning of a test with a given name.</td>
+</tr>
+<tr>
+<td><a href="#CaptureDesktopImage">CaptureDesktopImage</a></td>
+<td>Captures image of the desktop and adds it to the report.</td>
+</tr>
+<tr>
+<td><a href="#CaptureObjectImage">CaptureObjectImage</a></td>
+<td>Captures image of an object and adds it to the report.</td>
+</tr>
+<tr>
+<td><a href="#CaptureWindowImage">CaptureWindowImage</a></td>
+<td>Captures image of an application window matched by title and class and adds it to the report.</td>
+</tr>
+<tr>
+<td><a href="#EndTest">EndTest</a></td>
+<td>Marks end of a currently executed test.</td>
+</tr>
+<tr>
+<td><a href="#FailTest">FailTest</a></td>
+<td>Stops test execution and sets it's status to failed.</td>
+</tr>
+<tr>
+<td><a href="#GetReportAttribute">GetReportAttribute</a></td>
+<td>Gets report attribute previously set by PushReportAttribute or SetReportAttribute.</td>
+</tr>
+<tr>
+<td><a href="#GetTestStatus">GetTestStatus</a></td>
+<td>Gets status of currently executed test.</td>
+</tr>
+<tr>
+<td><a href="#IgnoreStatus">IgnoreStatus</a></td>
+<td><p>In IgnoreStatus mode the assertion status is always treated as "Info".</td>
+</tr>
+<tr>
+<td><a href="#Message">Message</a></td>
+<td>Saves corresponding Report message.</td>
+</tr>
+<tr>
+<td><a href="#MessageBox">MessageBox</a></td>
+<td>Shows message box to user.</td>
+</tr>
+<tr>
+<td><a href="#MessageBoxPrompt">MessageBoxPrompt</a></td>
+<td>Shows message box with question to the user and checks if user presses "Yes" or "No".</td>
+</tr>
+<tr>
+<td><a href="#PopReportAttribute">PopReportAttribute</a></td>
+<td>Resets an attribute to its previous value.</td>
+</tr>
+<tr>
+<td><a href="#PushReportAttribute">PushReportAttribute</a></td>
+<td><p>Maintains "stacked" attributes.</td>
+</tr>
+<tr>
+<td><a href="#ResetReportAttribute">ResetReportAttribute</a></td>
+<td>Removes report attribute previously set by SetReportAttribute.</td>
+</tr>
+<tr>
+<td><a href="#SetReportAttribute">SetReportAttribute</a></td>
+<td>Set persistent attribute.</td>
+</tr>
+<tr>
+<td><a href="#SuppressReport">SuppressReport</a></td>
+<td><p>In SuppressReport mode all assertions are ignored.</td>
+</tr>
+</tbody>
+</table>
 <!-- ============================== property detail ========================== -->
 
 <h3 id="property-detail">Property Detail</h3>
@@ -3168,323 +3039,226 @@ You do not need to record or learn this object, it is always automatically avail
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>message</td>
-                        <td>string</td>
-                        <td>
-                                Message to put in the report.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>condition</td>
-                        <td>boolean</td>
-                        <td>
-                                If 'true' - assertion is considered passed.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>data</td>
-                        <td><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportLink" styleclass="Normal" translate="true">SeSReportLink</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportText" styleclass="Normal" translate="true">SeSReportText</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportImage" styleclass="Normal" translate="true">SeSReportImage</link> | <br>object[] | <br>string</td>
-                        <td>
-                                Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>tags</td>
-                        <td>object</td>
-                        <td>
-                                Hash of attributes to set for this particular log entry.<br>Optional.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Message to put in the report.</td>
+</tr>
+<tr>
+<td>condition</td>
+<td>boolean</td>
+<td>If 'true' - assertion is considered passed.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>SeSReportLink | SeSReportText</td>
+<td>SeSReportImage</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>object</td>
+<td>Hash of attributes to set for this particular log entry.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="AssertEqual"></a>    </p>
 <h4 id="assertequalmessage-obj1-obj2-data-tags">AssertEqual(message, obj1, obj2, data, tags)</h4>
 <p>Checks if obj1 equals to obj2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>message</td>
-                        <td>string</td>
-                        <td>
-                                Message to put in the report.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>obj1</td>
-                        <td>object</td>
-                        <td>
-                                First object to compare.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>obj2</td>
-                        <td>object</td>
-                        <td>
-                                Second object to compare.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>data</td>
-                        <td><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportLink" styleclass="Normal" translate="true">SeSReportLink</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportText" styleclass="Normal" translate="true">SeSReportText</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportImage" styleclass="Normal" translate="true">SeSReportImage</link> | <br>Object[]</td>
-                        <td>
-                                Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>tags</td>
-                        <td>object</td>
-                        <td>
-                                Hash of attributes to set for this particular log entry.<br>Optional.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Message to put in the report.</td>
+</tr>
+<tr>
+<td>obj1</td>
+<td>object</td>
+<td>First object to compare.</td>
+</tr>
+<tr>
+<td>obj2</td>
+<td>object</td>
+<td>Second object to compare.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>SeSReportLink | SeSReportText</td>
+<td>SeSReportImage</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>object</td>
+<td>Hash of attributes to set for this particular log entry.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="AssertImage"></a>    </p>
 <h4 id="assertimagemessage-img1-path-data-tags">AssertImage(message, img1, path, data, tags)</h4>
 <p>Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>message</td>
-                        <td>string</td>
-                        <td>
-                                Message to put in the report.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>img1</td>
-                        <td>object</td>
-                        <td>
-                                ImageWrapper object (1st image to compare).
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>path</td>
-                        <td>string</td>
-                        <td>
-                                Path to the second image to compare.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>data</td>
-                        <td><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportLink" styleclass="Normal" translate="true">SeSReportLink</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportText" styleclass="Normal" translate="true">SeSReportText</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportImage" styleclass="Normal" translate="true">SeSReportImage</link> | <br>Object[]</td>
-                        <td>
-                                Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>tags</td>
-                        <td>object</td>
-                        <td>
-                                Hash of attributes to set for this particular log entry.<br>Optional.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Message to put in the report.</td>
+</tr>
+<tr>
+<td>img1</td>
+<td>object</td>
+<td>ImageWrapper object (1st image to compare).</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>Path to the second image to compare.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>SeSReportLink | SeSReportText</td>
+<td>SeSReportImage</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>object</td>
+<td>Hash of attributes to set for this particular log entry.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="BeginTest"></a>    </p>
 <h4 id="begintestname-path">BeginTest(name, path)</h4>
 <p>Marks beginning of a test with a given name.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>name</td>
-                        <td>string</td>
-                        <td>
-                                Test name
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>path</td>
-                        <td>string</td>
-                        <td>
-                                Path to the test, that is executed. This string will be shown as a comment.<br>Optional.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Test name</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>Path to the test, that is executed. This string will be shown as a comment.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="CaptureDesktopImage"></a>    </p>
 <h4 id="capturedesktopimagecaption">CaptureDesktopImage(caption)</h4>
 <p>Captures image of the desktop and adds it to the report.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>caption</td>
-                        <td>string</td>
-                        <td>
-                                Image title for the report.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caption</td>
+<td>string</td>
+<td>Image title for the report.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="CaptureObjectImage"></a>    </p>
 <h4 id="captureobjectimagecaption-objid">CaptureObjectImage(caption, objId)</h4>
 <p>Captures image of an object and adds it to the report.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>caption</td>
-                        <td>string</td>
-                        <td>
-                                Image title for the report.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>objId</td>
-                        <td>string | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link></td>
-                        <td>
-                                Id of an object or SeSObject instance.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caption</td>
+<td>string</td>
+<td>Image title for the report.</td>
+</tr>
+<tr>
+<td>objId</td>
+<td>string | SeSObject</td>
+<td>Id of an object or SeSObject instance.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="CaptureWindowImage"></a>    </p>
 <h4 id="capturewindowimagecaption-windowtitle-windowclass-bringtofront">CaptureWindowImage(caption, windowTitle, windowClass, bringToFront)</h4>
 <p>Captures image of an application window matched by title and class and adds it to the report.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>caption</td>
-                        <td>string</td>
-                        <td>
-                                Image title for the report.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>windowTitle</td>
-                        <td>string</td>
-                        <td>
-                                String or regular expression to match window title.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>windowClass</td>
-                        <td>string</td>
-                        <td>
-                                String or regular expression to match window class.<br>Optional, Default: regex:.*.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>bringToFront</td>
-                        <td>boolean</td>
-                        <td>
-                                Set to 'false' to not restore the window before making the image.<br>Optional, Default: true.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caption</td>
+<td>string</td>
+<td>Image title for the report.</td>
+</tr>
+<tr>
+<td>windowTitle</td>
+<td>string</td>
+<td>String or regular expression to match window title.</td>
+</tr>
+<tr>
+<td>windowClass</td>
+<td>string</td>
+<td>String or regular expression to match window class.<br>Optional, Default: regex:.*.</td>
+</tr>
+<tr>
+<td>bringToFront</td>
+<td>boolean</td>
+<td>Set to 'false' to not restore the window before making the image.<br>Optional, Default: true.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="EndTest"></a>    </p>
 <h4 id="endtest">EndTest()</h4>
 <p>Marks end of a currently executed test. Calculates test results and performs finalization of test execution.</p>
@@ -3492,56 +3266,42 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <h4 id="failtestmessage">FailTest(message)</h4>
 <p>Stops test execution and sets it's status to failed.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>message</td>
-                        <td>string</td>
-                        <td>
-                                Failure description.<br>Optional, Default: Test stopped on error.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Failure description.<br>Optional, Default: Test stopped on error.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="GetReportAttribute"></a>    </p>
 <h4 id="getreportattributename">GetReportAttribute(name)</h4>
 <p>Gets report attribute previously set by PushReportAttribute or SetReportAttribute.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>name</td>
-                        <td>string</td>
-                        <td>
-                                Attribute name.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Attribute name.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="GetTestStatus"></a>    </p>
 <h4 id="getteststatus">GetTestStatus()</h4>
 <p>Gets status of currently executed test.</p>
@@ -3568,156 +3328,115 @@ just for information purposes (i.e. it does not affect final test status).</p>
 </pre>
 
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>ignore</td>
-                        <td>boolean</td>
-                        <td>
-                                Set to 'true' to report all messages but ignore the status (Pass/Fail)
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ignore</td>
+<td>boolean</td>
+<td>Set to 'true' to report all messages but ignore the status (Pass/Fail)</td>
+</tr>
+</tbody>
+</table>
 <p><a name="Message"></a>    </p>
 <h4 id="messagemessage-data-tags">Message(message, data, tags)</h4>
 <p>Saves corresponding Report message.
 Message may contain some additional data (links, images, comments) set via 'data' parameter.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>message</td>
-                        <td>string</td>
-                        <td>
-                                Message to put in the report
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>data</td>
-                        <td><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportLink" styleclass="Normal" translate="true">SeSReportLink</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportText" styleclass="Normal" translate="true">SeSReportText</link> | <br><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSReportImage" styleclass="Normal" translate="true">SeSReportImage</link> | <br>Object[]</td>
-                        <td>
-                                Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>tags</td>
-                        <td>object</td>
-                        <td>
-                                Hash of attributes to set for this particular log entry.<br>Optional.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Message to put in the report</td>
+</tr>
+<tr>
+<td>data</td>
+<td>SeSReportLink | SeSReportText</td>
+<td>SeSReportImage</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>object</td>
+<td>Hash of attributes to set for this particular log entry.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="MessageBox"></a>    </p>
 <h4 id="messageboxmessage">MessageBox(message)</h4>
 <p>Shows message box to user. Use it for verbose and manual testing.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>message</td>
-                        <td>string</td>
-                        <td>
-                                Message to display.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Message to display.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="MessageBoxPrompt"></a>    </p>
 <h4 id="messageboxpromptquestion">MessageBoxPrompt(question)</h4>
 <p>Shows message box with question to the user and checks if user presses "Yes" or "No".
   "Yes" =&gt; "Pass" goes to the report with this message.
   "No" =&gt; "Fail" is reported.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>question</td>
-                        <td>string</td>
-                        <td>
-                                Question to display.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>question</td>
+<td>string</td>
+<td>Question to display.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="PopReportAttribute"></a>    </p>
 <h4 id="popreportattributename">PopReportAttribute(name)</h4>
 <p>Resets an attribute to its previous value. See PushReportAttribute for more information.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>name</td>
-                        <td>string</td>
-                        <td>
-                                Attribute name to recall from stack.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Attribute name to recall from stack.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>string: Previous value. Null if no such stacked attribute found.</p>
 <p><a name="PushReportAttribute"></a>    </p>
@@ -3748,101 +3467,74 @@ another scenario (scenario Login) and then continues its own test actions.</p>
  }
 </pre></p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>name</td>
-                        <td>string</td>
-                        <td>
-                                Attribute name to recall from stack.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>value</td>
-                        <td>string</td>
-                        <td>
-                                New attribute value.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Attribute name to recall from stack.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>New attribute value.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="ResetReportAttribute"></a>    </p>
 <h4 id="resetreportattributename">ResetReportAttribute(name)</h4>
 <p>Removes report attribute previously set by SetReportAttribute.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>name</td>
-                        <td>string</td>
-                        <td>
-                                Attribute name.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Attribute name.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="SetReportAttribute"></a>    </p>
 <h4 id="setreportattributename-value">SetReportAttribute(name, value)</h4>
 <p>Set persistent attribute. It will be set for all subsequent report items
 (assertions, tests, requirements, and so on). It may be changed by calling
 the ResetReportAttribute function.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>name</td>
-                        <td>string</td>
-                        <td>
-                                Attribute name to set.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>value</td>
-                        <td>string</td>
-                        <td>
-                                New attribute value.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Attribute name to set.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>New attribute value.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="SuppressReport"></a>    </p>
 <h4 id="suppressreportsuppress">SuppressReport(suppress)</h4>
 <p>In SuppressReport mode all assertions are ignored. That means no lines are added to report and all statuses are treated as "Info".
@@ -3856,28 +3548,22 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
 </pre>
 
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>suppress</td>
-                        <td>boolean</td>
-                        <td>
-                                Set to 'True' to suppress adding anything into the report.
-                        </td>
-                      </tr>
-
-                </table></div>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>suppress</td>
+<td>boolean</td>
+<td>Set to 'True' to suppress adding anything into the report.</td>
+</tr>
+</tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">
@@ -3886,7 +3572,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

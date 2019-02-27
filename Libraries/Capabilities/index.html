@@ -2893,45 +2893,28 @@ For code complete feature use class name CapabilitiesWrapper, e.g. <br><br>
 <!-- ============================== action summary ========================== -->
 
 <h3 id="action-summary">Action Summary</h3>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-          <tr style="vertical-align:top">
-            <td  style="width:200px; background-color:#c0c0c0;">
-              Action
-            </td>
-            <td style="width:450px; background-color:#c0c0c0;">
-              Description
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#GetCapability">GetCapability</a>
-            </td>
-            <td>
-                Gets a capability of the browser.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#HasCapability">HasCapability</a>
-            </td>
-            <td>
-                Gets a value indicating whether the browser has a given capability.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#SetCapability">SetCapability</a>
-            </td>
-            <td>
-                Sets a capability of the browser.
-            </td>
-          </tr>
-
-       </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#GetCapability">GetCapability</a></td>
+<td>Gets a capability of the browser.</td>
+</tr>
+<tr>
+<td><a href="#HasCapability">HasCapability</a></td>
+<td>Gets a value indicating whether the browser has a given capability.</td>
+</tr>
+<tr>
+<td><a href="#SetCapability">SetCapability</a></td>
+<td>Sets a capability of the browser.</td>
+</tr>
+</tbody>
+</table>
 <!-- ============================== property detail ========================== -->
 
 <!-- ============================== action detail ========================== -->
@@ -2941,94 +2924,71 @@ For code complete feature use class name CapabilitiesWrapper, e.g. <br><br>
 <h4 id="getcapabilitycapability">GetCapability(capability)</h4>
 <p>Gets a capability of the browser.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>capability</td>
-                        <td>string</td>
-                        <td>
-                                The capability to get.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>capability</td>
+<td>string</td>
+<td>The capability to get.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>capability value.</p>
 <p><a name="HasCapability"></a>    </p>
 <h4 id="hascapabilitycapability">HasCapability(capability)</h4>
 <p>Gets a value indicating whether the browser has a given capability.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>capability</td>
-                        <td>string</td>
-                        <td>
-                                The capability to get.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>capability</td>
+<td>string</td>
+<td>The capability to get.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>'true' if the capability is set, 'false' - otherwise.</p>
 <p><a name="SetCapability"></a>    </p>
 <h4 id="setcapabilitycapability-capabilityvalue">SetCapability(capability, capabilityValue)</h4>
 <p>Sets a capability of the browser.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>capability</td>
-                        <td>string</td>
-                        <td>
-                                The capability to get.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>capabilityValue</td>
-                        <td>string</td>
-                        <td>
-                                The value for the capability.
-                        </td>
-                      </tr>
-
-                </table></div>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>capability</td>
+<td>string</td>
+<td>The capability to get.</td>
+</tr>
+<tr>
+<td>capabilityValue</td>
+<td>string</td>
+<td>The value for the capability.</td>
+</tr>
+</tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">
@@ -3037,7 +2997,7 @@ For code complete feature use class name CapabilitiesWrapper, e.g. <br><br>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

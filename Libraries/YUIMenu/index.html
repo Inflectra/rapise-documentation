@@ -2894,45 +2894,28 @@
 <!-- ============================== action summary ========================== -->
 
 <h3 id="action-summary">Action Summary</h3>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-          <tr style="vertical-align:top">
-            <td  style="width:200px; background-color:#c0c0c0;">
-              Action
-            </td>
-            <td style="width:450px; background-color:#c0c0c0;">
-              Description
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#DoFindChild">DoFindChild</a>
-            </td>
-            <td>
-                Searches for specific item in the menu.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#DoMenu">DoMenu</a>
-            </td>
-            <td>
-                Performs click on the menu item.
-            </td>
-          </tr>
-
-          <tr style="vertical-align:top">
-            <td>
-              <a href="#DoTitleMenu">DoTitleMenu</a>
-            </td>
-            <td>
-                Clicks menu title item.
-            </td>
-          </tr>
-
-       </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#DoFindChild">DoFindChild</a></td>
+<td>Searches for specific item in the menu.</td>
+</tr>
+<tr>
+<td><a href="#DoMenu">DoMenu</a></td>
+<td>Performs click on the menu item.</td>
+</tr>
+<tr>
+<td><a href="#DoTitleMenu">DoTitleMenu</a></td>
+<td>Clicks menu title item.</td>
+</tr>
+</tbody>
+</table>
 <!-- ============================== property detail ========================== -->
 
 <!-- ============================== action detail ========================== -->
@@ -2942,135 +2925,96 @@
 <h4 id="dofindchildpath-separator-pathtype">DoFindChild(path, separator, pathType)</h4>
 <p>Searches for specific item in the menu.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>path</td>
-                        <td>string</td>
-                        <td>
-                                Path from the menu root to a leaf item with components delimited by separator parameter.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>separator</td>
-                        <td>string</td>
-                        <td>
-                                Separator character.<br>Optional, Default: ;.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>pathType</td>
-                        <td>string</td>
-                        <td>
-                                Path type. Can be one of 'name', 'index'.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>Path from the menu root to a leaf item with components delimited by separator parameter.</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>string</td>
+<td>Separator character.<br>Optional, Default: ;.</td>
+</tr>
+<tr>
+<td>pathType</td>
+<td>string</td>
+<td>Path type. Can be one of 'name', 'index'.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>HTMLObject: HTMLObject of the found node</p>
 <p><a name="DoMenu"></a>    </p>
 <h4 id="domenupath-separator-pathtype">DoMenu(path, separator, pathType)</h4>
 <p>Performs click on the menu item.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>path</td>
-                        <td>string</td>
-                        <td>
-                                Path from the menu root to a leaf item with components delimited by separator parameter.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>separator</td>
-                        <td>string</td>
-                        <td>
-                                Separator character.<br>Optional, Default: ;.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>pathType</td>
-                        <td>string</td>
-                        <td>
-                                Path type. Can be one of 'name', 'index'.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>Path from the menu root to a leaf item with components delimited by separator parameter.</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>string</td>
+<td>Separator character.<br>Optional, Default: ;.</td>
+</tr>
+<tr>
+<td>pathType</td>
+<td>string</td>
+<td>Path type. Can be one of 'name', 'index'.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="DoTitleMenu"></a>    </p>
 <h4 id="dotitlemenupath-separator-pathtype">DoTitleMenu(path, separator, pathType)</h4>
 <p>Clicks menu title item. Only 1 menu level currently supported.</p>
 <p><strong>Parameters:</strong></p>
-<table styleclass="Default" style="cell-padding:2px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#c0c0c0; border-style:solid;">
-  <tr style="vertical-align:top">
-    <td style="width:150px; background-color:#c0c0c0;">
-      Name
-    </td>
-    <td style="width:100px; background-color:#c0c0c0;">
-      Type
-    </td>
-    <td style="width:450px; background-color:#c0c0c0;">
-      Description
-    </td>
-  </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>path</td>
-                        <td>string</td>
-                        <td>
-                                Path from the menu root to a leaf item with components delimited by separator parameter.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>separator</td>
-                        <td>string</td>
-                        <td>
-                                Separator character.<br>Optional, Default: ;.
-                        </td>
-                      </tr>
-
-                      <tr style="vertical-align:top">
-                        <td>pathType</td>
-                        <td>string</td>
-                        <td>
-                                Path type. Can be one of 'name', 'index'.
-                        </td>
-                      </tr>
-
-                </table>
-
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>Path from the menu root to a leaf item with components delimited by separator parameter.</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>string</td>
+<td>Separator character.<br>Optional, Default: ;.</td>
+</tr>
+<tr>
+<td>pathType</td>
+<td>string</td>
+<td>Path type. Can be one of 'name', 'index'.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p></div>
         </div>
@@ -3081,7 +3025,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
