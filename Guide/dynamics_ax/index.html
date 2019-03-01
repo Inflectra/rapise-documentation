@@ -2886,7 +2886,17 @@
             <li><a href="#how-to-launch-dynamics-ax-client">How to Launch Dynamics AX Client</a></li>
             <li><a href="#recording-actions-and-learning-objects">Recording Actions and Learning Objects</a></li>
             <li><a href="#tips-for-interacting-with-objects">Tips for Interacting with Objects</a></li>
+            <li><a href="#text-box">Text Box</a></li>
+            <li><a href="#combobox">ComboBox</a></li>
+            <li><a href="#address-bar">Address Bar</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#infolog">Infolog</a></li>
+            <li><a href="#type-to-filter-field">Type to filter Field</a></li>
             <li><a href="#dynamics-ax-cook-book">Dynamics AX Cook Book</a></li>
+            <li><a href="#maximizeminimizerestore-window">Maximize/Minimize/Restore Window</a></li>
+            <li><a href="#scroll-to-the-bottom-of-a-grid">Scroll to the Bottom of a Grid</a></li>
+            <li><a href="#scroll-and-click-on-a-cell-in-a-grid">Scroll and Click on a Cell in a Grid</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
 </div></div>
@@ -2894,11 +2904,10 @@
 
 <h1 id="dynamics-ax">Dynamics AX</h1>
 <h2 id="overview">Overview</h2>
-<p><strong>Microsoft Dynamics AX</strong> (usually referred to as just "AX") - is an ERP system for mid-size to large enterprises. It is the most robust,
-scalable, and functionally rich enterprise resource planning system in the Microsoft Dynamics family of products. The system was originally known as Axapta, owned by the Danish software company Damgaard.</p>
+<p><strong>Microsoft Dynamics AX</strong> (usually referred to as just <strong>AX</strong>) - is an ERP system for mid-size to large enterprises. It is the most robust, scalable, and functionally rich enterprise resource planning system in the Microsoft Dynamics family of products. The system was originally known as Axapta, owned by the Danish software company Damgaard.</p>
 <p>Dynamics AX consists of a client-server architecture with a thick-client ERP interface for entering/adding data in the system:</p>
 <p><img alt="dynamics-ax-overview" src="../img/dynamics_ax1.png" /></p>
-<p>Rapise includes specialized libraries for testing Dynamics AX applications that are built-upon the standard <a href="../windows_applications/">Microsoft Windows</a> <strong>UIAutomation</strong> library with special extensions for handling unique AX controls such as tree views, the navigation explorer and the various grids used to edit data. In addition Rapise can test the following extensions to Dynamics AX:</p>
+<p>Rapise includes specialized libraries for testing Dynamics AX applications that are built-upon the standard <a href="../windows_applications/">Microsoft Windows</a> <strong>UIAutomation</strong> library with special extensions for handling <a href="/Libraries/ses_lib_dynamicsax/">unique AX controls</a> such as tree views, the navigation explorer and the various grids used to edit data. In addition Rapise can test the following extensions to Dynamics AX:</p>
 <ul>
 <li><strong>Dynamics AX Management Reporter</strong> - Rapise can test this extension using its <strong>Generic</strong> <a href="../windows_applications/">Windows library</a>.</li>
 <li><strong>Dynamics AX Web Portals</strong> - Rapise can test the various web portals using its <a href="../web_testing/">web browser libraries</a>.</li>
@@ -2915,7 +2924,7 @@ scalable, and functionally rich enterprise resource planning system in the Micro
 <p><strong>DynamicsAX</strong> library supports set of controls specific to Microsoft Dynamics AX 2012 application. </p>
 </li>
 </ul>
-<p>When recording is completed you can see attached libraries in the code of <code>test.js</code> file:</p>
+<p>When recording is completed you can see attached libraries in the code of <code>Main.js</code> file:</p>
 <pre><code class="javascript">    g_load_libraries=[&quot;UIAutomation&quot;, &quot;DynamicsAX&quot;];
 </code></pre>
 
@@ -2944,147 +2953,190 @@ scalable, and functionally rich enterprise resource planning system in the Micro
 <p>Here is updated location in the property grid:</p>
 <p><img alt="Object Location" src="../img/dynamicsaxobjectlocation.png" /></p>
 <h2 id="how-to-launch-dynamics-ax-client">How to Launch Dynamics AX Client</h2>
-<p>If in your test you want to check that Dynamics AX application is installed and running use the code:</p>
-<pre><code class="javascript">    var fso = new ActiveXObject(&quot;Scripting.FileSystemObject&quot;); 
+<p>If in your test you want to check that Dynamics AX application is installed and running place this function into <code>User.js</code>:</p>
+<pre><code class="javascript">function DynamicsAXLaunch()
+{
+    function _DaxIsRunning()
+    {
+        var windows = g_util.FindWindows(&quot;regex:.Microsoft Dynamics AX.*&quot;, &quot;AxMainFrame&quot;);
+        return windows.length &gt; 0;
+    }
+
+    if (_DaxIsRunning())
+    {
+        Tester.Message(&quot;Dynamics AX Client is already running&quot;);
+        return true;
+    }
+
+    var fso = new ActiveXObject(&quot;Scripting.FileSystemObject&quot;); 
 
     var pfFolder = Global.GetSpecialFolderPath(&quot;ProgramFilesX86&quot;);
     var dynamicsPath = pfFolder + &quot;\\Microsoft Dynamics AX\\60\\Client\\Bin\\Ax32.exe&quot;
     if(!fso.FileExists(dynamicsPath))
     {
         Tester.Message(&quot;Dynamics AX Client is not installed on this computer&quot;);
-        return;
+        return false;
     }
 
-    var windows = g_util.FindWindows(&quot;regex:.Microsoft Dynamics AX.*&quot;, &quot;AxMainFrame&quot;);
-    if (windows.length == 0)
+    Global.DoLaunch(dynamicsPath);
+
+    for(var i = 0; i &lt; 60; i++)
     {
-        Tester.Message(&quot;Dynamics AX Client is not started. Please start it manually and re-run the test.&quot;);
-        return;
+        if (_DaxIsRunning())
+        {
+            Tester.Message(&quot;Dynamics AX Client started successfully&quot;);
+            return true;
+        }
+        Global.DoSleep(1000);
     }
+
+    Tester.Message(&quot;Dynamics AX Client did not start&quot;);
+    return false;
+}
 </code></pre>
 
-<p>To start the application use</p>
-<pre><code class="javascript">    Global.DoLaunch(dynamicsPath);
+<p>You can now use this function in RVL</p>
+<p><img alt="dax launch rvl" src="../img/daxlaunchrvl.png" /></p>
+<p>and in JavaScript:</p>
+<pre><code class="javascript">    DynamicsAXLaunch();
 </code></pre>
 
 <h2 id="recording-actions-and-learning-objects">Recording Actions and Learning Objects</h2>
 <p>During recording while you interact with Dynamics AX controls Rapise captures actions and displays them in the recording dialog.</p>
 <p><img alt="Recording Dialog" src="../img/dynamicsaxrecordingdialog.png" /></p>
-<p>After this recording session corresponding UI area looks as follows:</p>
-<p><img alt="HireNewWorker" src="../img/dynamicsaxhirenewworker.png" /></p>
-<p>When recording is finished Rapise automatically generates the test code:</p>
-<pre><code class="javascript">        function Test()
-        {
-            //User clicks at: 28, 30 in 'Hire new worker'
-            SeS('Hire_new_worker').DoLClick(28, 30);
-            //User clicks at: 20, 8 in 'First name'
-            SeS('First_name').DoLClick(20, 8);
-            //Do SetText(&quot;John&quot;) on First name
-            SeS('First_name').DoSetText(&quot;John&quot;);
-            //User clicks at: 26, 11 in 'Middle name'
-            SeS('Middle_name').DoLClick(26, 11);
-            //Do SetText(&quot;A&quot;) on Middle name
-            SeS('Middle_name').DoSetText(&quot;A&quot;);
-            //User clicks at: 22, 10 in 'Last name'
-            SeS('Last_name').DoLClick(22, 10);
-            //Do SetText(&quot;Smith&quot;) on Last name
-            SeS('Last_name').DoSetText(&quot;Smith&quot;);
-            //Item selected:'CTO'
-            SeS('Job').DoSelectItem(&quot;CTO&quot;);
-        }
+<p>When recording is finished Rapise automatically generates the test.</p>
+<p>In <a href="/RVL/Overview/">Rapise Visual Language(RVL)</a> it looks like</p>
+<p><img alt="dax recorded rvl" src="../img/daxrecordedrvl.png" /></p>
+<p>In JavaScript:</p>
+<pre><code class="javascript">function Test(params)
+{
+    DynamicsAXLaunch();
+    SeS('AddressBarContainer').DoSetText(&quot;DAT/Retail essentials/Area page&quot;);
+    SeS('Tree').DoClickNode(&quot;Retail essentials;Customers&quot;);
+    SeS('Tree').DoClickNode(&quot;Retail essentials;Customers;All customers&quot;);
+    SeS('_New').DoMenu(&quot;Customer&quot;);
+    SeS('Customer_account').DoClick();
+    SeS('Customer_account').DoSetText(&quot;Google&quot;);
+    SeS('Name').DoClick();
+    SeS('Name').DoSetText(&quot;Google&quot;);
+    SeS('Customer_group').DoClick();
+    SeS('Add').DoClick();
+    SeS('Customer_group').DoClick();
+    SeS('Customer_group_lookup_button').DoClick();
+    SeS('Grid').DoClickCell(&quot;SOFTWARE&quot;, &quot;Customer group&quot;);
+    SeS('Save_and_close').DoClick();
+    SeS('List').DoMenu(&quot;Refresh&quot;);
+    SeS('ListPageGrid').DoClickCell(&quot;Google&quot;, &quot;Name&quot;);
+    SeS('Maintain').DoMenu(&quot;Delete&quot;);
+    SeS('Yes').DoClick();
+    SeS('Tree').DoClickNode(&quot;Retail essentials;Area page&quot;);
+    SeS('TabControl').DoSelectTab(&quot;Home&quot;);
+}
 </code></pre>
 
-<p>If Rapise does not capture any interaction or captures it wrongly then try to learn the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <code>Ctrl-2</code> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the Recording dialog.</p>
+<p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <code>Ctrl-2</code> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects</h2>
-<h3 id="text-box">Text Box</h3>
+<h2 id="text-box">Text Box</h2>
 <p>To allow Rapise to capture the entered text interact with a text box in two steps:</p>
 <ol>
 <li>Click into the edit box</li>
 <li>Type text using keyboard</li>
 </ol>
-<h3 id="combobox">ComboBox</h3>
+<h2 id="combobox">ComboBox</h2>
 <p>Dynamics AX has several types of combo boxes.</p>
-<ul>
-<li>Standard combo box like <code>Job</code> in the <code>Hire New Worker</code> example above. Rapise treats such combo boxes as atomic objects. To set a value in such a combo use <code>DoSelectItem</code> action:</li>
-</ul>
-<pre><code class="javascript">     SeS('Job').DoSelectItem(&quot;CTO&quot;);
+<h3 id="standard-combo-box">Standard Combo Box</h3>
+<p>Standard combo box like <code>Worker type</code> in the <code>Hire New Worker</code> form.</p>
+<p><img alt="dax simple combo" src="../img/daxsimplecombo.png" /></p>
+<p>Rapise treats such combo boxes as atomic objects abd records them as <a href="/Libraries/DynamicsAXComboBox/">DynamicsAXComboBox</a>. To record interaction with the combo box</p>
+<ol>
+<li>Click on the combo box to expand the dropwdown with choices</li>
+<li>Select a value from the list</li>
+</ol>
+<p>Generated script step looks like:</p>
+<p><strong>RVL</strong></p>
+<p><img alt="daxsimplecomborvl" src="../img/daxsimplecomborvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">     SeS('Worker_type').DoSelectItem(&quot;Employee&quot;);
 </code></pre>
 
-<ul>
-<li>Table filter combo is recognized as a pair of objects: <code>MenuItem</code> and <code>DropDown</code>. The <code>MenuItem</code> is used to open the <code>DropDown</code>.</li>
-</ul>
+<h3 id="table-filter-combo">Table Filter Combo</h3>
+<p>Table filter combo is recognized as a pair of objects: <code>Scope</code> and <code>DropDown</code>. The <code>Scope</code> is of type <a href="/Libraries/DynamicsAXMenuItem/">DynamicsAXMenuItem</a> and used to open the <code>DropDown</code> of type <a href="/Libraries/DynamicsAXMenuDropDownList/">DynamicsAXMenuDropDownList</a>.</p>
 <p><img alt="Table Filter" src="../img/dynamicsaxtablefilter.png" /></p>
-<pre><code class="javascript">    // Here is the code generated on recording:
-
-    //User clicks at: 115, 7 in 'Scope'
-    SeS('Scope').DoLClick(115, 7);
-    //DropDown item selected:'Personnel number'
-    SeS('DropDown').DoSelectItem(&quot;Personnel number&quot;);
+<p>Rcorded steps look like:</p>
+<p><strong>RVL</strong></p>
+<p><img alt="daxtablefilterrvl" src="../img/daxtablefilterrvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">//User clicks 'Scope'
+SeS('Scope').DoClick();
+//DropDown item selected:'Search name'
+SeS('DropDown').DoSelectItem(&quot;Search name&quot;);
 </code></pre>
 
-<ul>
-<li>Lookup field consists of an edit box, open button and a dropdown table. This is the case when Rapise can record edit box interaction only. To make a choice from the table learn open button and then learn the table.</li>
-</ul>
+<h3 id="lookup-field">Lookup Field</h3>
+<p>Lookup field consists of an edit box, open button and a dropdown table. Record lookup interactions in three steps:</p>
+<ol>
+<li>Click the edit field. Recorded as <a href="/Libraries/DynamicsAXTextBox/">DynamicsAXTextBox</a>.</li>
+<li>Click the open button. Recorded as <a href="/Libraries/UIAObject">UIAObject</a>.</li>
+<li>Click the value in the dropdown grid. Recorded as <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a>.</li>
+</ol>
 <p><img alt="Lookup Field" src="../img/dynamicsaxlookupfield.png" /></p>
-<pre><code class="javascript">    // This is the code to lookup a value:
-
-    // Press open button
-    SeS('Default_company_lookup_button').DoClick();
-    // In the first column select a cell with value 'DAT'
-    SeS('Grid').DoClickCell(&quot;DAT&quot;, 0);
-
-    // Or alternatively select the first row in the first column
-    SeS('Grid').DoClickCell(0, 0);
+<p><strong>RVL</strong></p>
+<p><img alt="daxlookuprvl" src="../img/daxlookuprvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">// Click on the edit box
+SeS('Customer_group').DoClick();
+// Click open button
+SeS('Customer_group_lookup_button').DoClick();
+// Select value from the dropdown grid using column name (Customer group) and value (SOFTWARE)
+SeS('Grid').DoClickCell(&quot;SOFTWARE&quot;, &quot;Customer group&quot;);
 </code></pre>
 
-<h3 id="address-bar">Address Bar</h3>
-<p>Learn the address bar control using <code>Ctrl-2</code> shortcut.</p>
+<h2 id="address-bar">Address Bar</h2>
+<p>Click in empty area of the address bar and enter the address where you want to navigate. Rapise will capture <a href="/Libraries/DynamicsAXAddressBar/">DynamicsAXAddressBar</a> object and record <code>DoSetText</code> action.</p>
 <p><img alt="Address Bar" src="../img/dynamicsaxaddressbar.png" /></p>
-<p>Set the path using <code>DoSetText</code> action in your code:</p>
-<pre><code class="javascript">    SeS('AddressBarContainer').DoSetText('DAT/Retail essentials/Employees/Users');
+<p><strong>RVL</strong></p>
+<p><img alt="daxaddressbarrvl" src="../img/daxaddressbarrvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">SeS('AddressBarContainer').DoSetText('DAT/Retail essentials/Employees/Users');
 </code></pre>
 
-<h3 id="menu">Menu</h3>
-<p>Rapise supports both recording and learning of the main menu. When recording make sure you click on every component along the path. E.g. you want to navigate to <code>File &gt; View &gt; Modules &gt; General ledger</code>. During recording click on <code>File</code>, <code>View</code>, <code>Modules</code> and <code>General ledger</code>. Generated code looks like:</p>
+<h2 id="menu">Menu</h2>
+<p>Rapise supports both recording and learning of the main menu. When recording make sure you click on every component along the path. E.g. you want to navigate to <code>File &gt; View &gt; Modules &gt; General ledger</code>. During recording click on <code>File</code>, <code>View</code>, <code>Modules</code> and <code>General ledger</code>. Captured menu object has type <a href="/Libraries/DynamicsAXMenu/">DynamicsAXMenu</a>. Generated script looks like:</p>
+<p><strong>RVL</strong></p>
+<p><img alt="daxmenurvl" src="../img/daxmenurvl.png" /></p>
+<p><strong>JavaScript</strong></p>
 <pre><code class="javascript">    //Menu item selected:'General ledger'
     SeS('File').DoMenu(&quot;File;View;Modules;General ledger&quot;);
 </code></pre>
 
-<p>Rapise captures menu as top level object (<code>File</code> in the example above). Notice that menu path components are separated with <code>;</code>. If you want for example to open menu <code>File &gt; Tools &gt; Telephone list</code> then write:</p>
-<pre><code class="javascript">    SeS('File').DoMenu(&quot;File;Tools;Telephone list&quot;);
-</code></pre>
-
-<h3 id="table">Table</h3>
-<p>To work with a table/grid learn it first and then write the code.</p>
+<p>Rapise captures menu as top level object (<code>File</code> in the example above). Notice that menu path components are separated with <code>;</code>. If you want for example to open menu <code>File &gt; Tools &gt; Telephone list</code> then use <code>File;Tools;Telephone list</code> as <code>path</code> parameter.</p>
+<h2 id="table">Table</h2>
+<p>Rapise recognizes Dynamics AX grids as <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a></p>
 <p><img alt="Grid" src="../img/dynamicsaxgrid.png" /></p>
-<pre><code class="javascript">    // To click on the cell at first column and first row
-    // First column contains checkboxes. First row is 'Administrator' record.
-    SeS('Grid').DoClickCell(0, 0);
-
-    // To click on 'contoso.com' in 'Network domain' column
-    SeS('Grid').DoClickCell(&quot;contoso.com&quot;, &quot;Network domain&quot;);
-
-    // Get column name by index (returns 'Network domain')
-    var columnName = Ses('Grid').GetColumnName(3);
-
-    // Click on column header (clicks on the checkbox to select all rows in the table)
-    SeS('Grid').DoClickColumn(0);
+<p>When you click on a cell in a table Rapise records column name and value in the cell. The generated click step looks like:</p>
+<p><strong>RVL</strong></p>
+<p><img alt="daxgridclickrvl" src="../img/daxgridclickrvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">SeS('ListPageGrid').DoClickCell(&quot;Contoso Retail Chicago&quot;, &quot;Name&quot;);
 </code></pre>
 
-<h3 id="infolog">Infolog</h3>
+<p>Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a> for more details.</p>
+<h2 id="infolog">Infolog</h2>
 <p>In some case Dynamics AX can report an error using Infolog window.</p>
 <p><img alt="Infolog" src="../img/dynamicsaxinfolog.png" /></p>
-<p>To obtain text of the messages in this window learn the Tree object - place cursor over the error text and press <code>Ctrl-2</code> shortcut. In the case of infolog tree - all tree nodes are immediate children of the root. So in the example shown on the image above the tree contains two child nodes of the tree node.</p>
-<pre><code class="javascript">    // Get the number of messages in the infolog, 0 - means the root node.
-    // For the presented example it returns 2. 
-    var messageCount = SeS('Tree').GetChildrenCount(0);
+<p>To obtain text of the messages in this window learn the Tree object - place cursor over the error text and press <code>Ctrl-2</code> shortcut. The object is learned as <a href="/Libraries/UIATree/">UIATree</a>. In the case of infolog tree - all nodes are immediate children of the root. So in the example shown on the image above the tree contains two child nodes of the tree node. To get the number of messages and read individual messages use <code>GetChildrenCount</code> and <code>GetChildAt</code> actions of <a href="/Libraries/UIATree/">UIATree</a>.</p>
+<p><strong>RVL</strong></p>
+<p><img alt="daxinfologrvl" src="../img/daxinfologrvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">// Get the number of messages in the infolog.
+// For the presented example it returns 2.
+var messageCount = SeS('InfologTree').GetChildrenCount();
 
-    // Get second message text, returns &quot;Field 'User ID' must be filled in.&quot;
-    var messageText = SeS('Tree').GetChildAt(0, 1);
-
+// Get second message text, returns &quot;Field 'User ID' must be filled in.&quot;
+var messageText = SeS('Tree').GetChildAt(0, 1);
 </code></pre>
 
-<h3 id="type-to-filter-field">Type to filter Field</h3>
+<h2 id="type-to-filter-field">Type to filter Field</h2>
 <p>Almost each standard grid in Dynamics AX has a text field for filtering grid data.</p>
 <p><img alt="Type To Filter" src="../img/dynamicsaxtypetofilter.png" /></p>
 <p>When you learn this field it has a name <code>Type to filter</code>.</p>
@@ -3092,38 +3144,59 @@ scalable, and functionally rich enterprise resource planning system in the Micro
 <p>However when this field gets focus it's name changes to <code>Text box</code>. To enable Rapise to find this field during playback set <code>Ignore Object Name</code> property of the object to <code>True</code>.</p>
 <p><img alt="Ignore Object Name" src="../img/dynamicsaxignoreobjectname.png" /></p>
 <h2 id="dynamics-ax-cook-book">Dynamics AX Cook Book</h2>
-<h3 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window</h3>
-<p>You can maximize a window using any object inside it as a starting point.</p>
-<pre><code class="javascript">    SeS('AddressBarContainer').getDesktopWindow().Maximized = true;
+<h2 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window</h2>
+<p>You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id <code>AddressBarContainer</code>.</p>
+<p>First place the following code into your <code>User.js</code>:</p>
+<pre><code class="javascript">function MaximizeWindow(/**objectId*/ objectId)
+{
+    SeS(objectId).getDesktopWindow().Maximized = true;
+}
+
+function MinimizeWindow(/**objectId*/ objectId)
+{
+    SeS(objectId).getDesktopWindow().Maximized = false;
+}
+
+function RestoreWindow(/**objectId*/ objectId)
+{
+    SeS(objectId).getDesktopWindow().Iconic = false;
+}
 </code></pre>
 
-<p>To minimize use</p>
-<pre><code class="javascript">    SeS('AddressBarContainer').getDesktopWindow().Maximized = false;
-    // or
-    SeS('AddressBarContainer').getDesktopWindow().Iconic = true;
+<p>Now you can use these functions in RVL and JavaScript.</p>
+<p><strong>RVL</strong></p>
+<p><img alt="daxmaximizervl" src="../img/daxmaximizervl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">MaximizeWindow(&quot;AddressBarContainer&quot;);
+RestoreWindow(&quot;AddressBarContainer&quot;);
+MinimizeWindow(&quot;AddressBarContainer&quot;);
 </code></pre>
 
-<p>For restoring (to go back to a smaller window from maximized or minimized state) use</p>
-<pre><code class="javascript">    SeS('AddressBarContainer').getDesktopWindow().Iconic = false;
-</code></pre>
-
-<h3 id="scroll-to-the-bottom-of-a-grid">Scroll to the Bottom of a Grid</h3>
+<h2 id="scroll-to-the-bottom-of-a-grid">Scroll to the Bottom of a Grid</h2>
 <p>If your grid looks like this and you want to scroll to the last record of it learn the <code>Last Record</code> button and click on it during test playback.</p>
 <p><img alt="Grid to Scroll" src="../img/dynamicsaxgridtoscroll.png" /></p>
-<pre><code class="javascript">    SeS('Last_Record').DoAction();
-    // or
-    SeS('Last_Record').DoClick();
+<p><strong>RVL</strong></p>
+<p><img alt="daxgridscrollrvl" src="../img/daxgridscrollrvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">SeS('Last_Record').DoClick();
 </code></pre>
 
-<h3 id="scroll-and-click-on-a-cell-in-a-grid">Scroll and Click on a Cell in a Grid</h3>
+<h2 id="scroll-and-click-on-a-cell-in-a-grid">Scroll and Click on a Cell in a Grid</h2>
 <p>If you know the value of a cell in a grid then Rapise will automatically scroll the grid before click.</p>
 <p><img alt="Scroll Before Click" src="../img/dynamicsaxscrollbeforeclick.png" />  </p>
-<p>Assume that you want to click on a cell with value <code>W9 W9</code> in a column <code>Search name</code>. This cell is not visible on the picture and requires scrolling to show up. The following code performs the click:</p>
-<pre><code class="javascript">    SeS('Grid').DoClickCell(&quot;W9 W9&quot;, &quot;Search name&quot;);
+<p>Assume that you want to click on a cell with value <code>Alen Shen</code> in a column <code>Search name</code>. This cell is not visible on the picture and requires scrolling to show up. The following script performs the click:</p>
+<p><strong>RVL</strong></p>
+<p><img alt="daxscrolltoclickrvl" src="../img/daxscrolltoclickrvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">SeS('CustomerGrid').DoClickCell(&quot;Alen Shen&quot;, &quot;Search name&quot;);
 </code></pre>
 
 <p>If you do not know the value of a cell you can get it this way</p>
-<pre><code class="javascript">    var cellValue = SeS('Grid').GetCell(9, &quot;Search name&quot;);
+<p><strong>RVL</strong></p>
+<p><img alt="daxgridgetcellrvl" src="../img/daxgridgetcellrvl.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">var cellValue = SeS('CustomerGrid').GetCell(9, &quot;Search name&quot;);
+Tester.Message(cellValue);
 </code></pre>
 
 <p>Where 9 is row number.</p>
@@ -3134,8 +3207,10 @@ scalable, and functionally rich enterprise resource planning system in the Micro
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB391.aspx">KB: Creating a Purchase Order in Dynamics AX</a></li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB273.aspx">KB: Rapise Tips, Tricks &amp; Workarounds when Testing Dynamics AX 2012</a></li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB412.aspx">KB: How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics AX</a></li>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB378.aspx">KB378 RPA - importing data into Dynamics AX</a></li>
 <li><a href="https://youtu.be/KH1-WVqHZ5k">Webinar: Testing Microsoft Dynamics AX with Rapise</a></li>
 <li><a href="https://youtu.be/L_2ibVvPTJA">Webinar: Test Automation &amp; RPA for Dynamics AX with Rapise</a></li>
+<li><a href="https://github.com/Inflectra/rapise-dynamics-samples">Dynamics AX Sample Tests with source and recording/playback video links</a></li>
 </ul></div>
         </div>
 
@@ -3145,7 +3220,7 @@ scalable, and functionally rich enterprise resource planning system in the Micro
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
