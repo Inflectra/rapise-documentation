@@ -4,11 +4,12 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description='Parse filter strings')
-parser.add_argument('--filters', metavar='f', type=str, nargs='+',
+parser.add_argument('--filters', metavar='f', type=str, nargs='*',
                    help='lines to filter')
 
 
 args = parser.parse_args()
+
 print('filters: ')
 print(args.filters)
 
@@ -24,10 +25,11 @@ def main():
             for l in input:
                 match = include_regex.match(l)
                 if match is None:
-                    if not any(substring in l for substring in args.filters):
-                      output.write(l)
-                    else:
-                      print("Skip filtered: "+l)
+                    if args.filters:
+                      if not any(substring in l for substring in args.filters):
+                        output.write(l)
+                      else:
+                        print("Skip filtered: "+l)
                 else:
                     indent = match.group(1)
                     library = match.group(2)
