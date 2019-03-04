@@ -25,8 +25,7 @@ def main():
             for l in input:
                 match = include_regex.match(l)
                 if match is None:
-                    if args.filters:
-                      if not any(substring in l for substring in args.filters):
+                      if args.filters is None or not any(substring in l for substring in args.filters):
                         output.write(l)
                       else:
                         print("Skip filtered: "+l)
