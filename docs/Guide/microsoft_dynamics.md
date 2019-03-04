@@ -22,6 +22,7 @@ Rapise provides out of the box support for the following different versions of M
 - [Dynamics NAV](dynamics_nav.md) - Rapise provides specialized support for the Dynamics NAV desktop and web core user interface including Dynamics 365 Business Central.
 - [Dynamics CRM/365 for Sales](dynamics_crm.md) - Rapise uses its native web library support for Dynamics CRM, with Dynamics-CRM specific extensions included for unique CRM components (e.g. data grids).
 - [Dynamics 365 for Finance and Operations](dynamics_365.md) - Rapise includes built-in support for Dynamics 365 ERP components.
+- [Unified Service Desk](unified_service_desk.md) - Hybrid application with IE browser components embedded into desktop interface.
 
 ## See Also
 
