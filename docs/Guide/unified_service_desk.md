@@ -105,6 +105,7 @@ The test framework created in this session is [available on GitHub](https://gith
 
 ## See Also
 
+- [Microsoft Dynamics](microsoft_dynamics.md)
 - [USD testing framework on GitHub](https://github.com/Inflectra/rapise-framework-examples/tree/master/USDFramework)
 - [Advanced example of testing USD on GitHub](https://github.com/Inflectra/rapise-dynamics365-samples/tree/master/UnifiedServiceDesk)
 - [Testing Dynamics 365 for Sales](dynamics_crm.md)
