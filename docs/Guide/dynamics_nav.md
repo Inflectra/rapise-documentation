@@ -16,23 +16,15 @@ First you need to create a new Basic test and start recording session. Choose Dy
 
 ![Application Chooser Dialog](./img/dynamicsnavappchooser.png)
 
-Then expand the list of `libraries` and select `UIAutomation` and `DynamicsNAV` libraries.
-
-![UIAutomation Library Selected](./img/dynamicsnavselectlibrary1.png)
-
-![DynamicsNAV Library Selected](./img/dynamicsnavselectlibrary2.png)
-
-Then press `Select` button to start recording.
-
-- **Microsoft UI Automation** is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by means other than standard input. UI Automation also allows automated test scripts to interact with the UI. 
-
-- **DynamicsNAV** library supports set of controls specific to Microsoft Dynamics NAV application. 
-
-When recording is completed you can see attached libraries in the code of `test.js` file:
+Then press `Select` button to start recording. When recording is completed you will see that Rapise automatically attached necessary libraries in the code of `Main.js` file:
 
 ```javascript
     g_load_libraries=["UIAutomation", "DynamicsNAV"];
 ```
+
+- **Microsoft UI Automation** is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by means other than standard input. UI Automation also allows automated test scripts to interact with the UI. 
+
+- **DynamicsNAV** library supports set of controls specific to Microsoft Dynamics NAV application.
 
 ## Automatic Adjustment of `Window Title` Object Property
 
@@ -40,15 +32,15 @@ Main window title of Dynamics NAV is dynamic by nature.
 
 ![DynamicsNAV Main Window Title Example](./img/dynamicsnavtitle1.png)
 
-It may contain not only application name but also name of currently active page or information about currently opened record. So it can be different at the time of test recording and test playback. To cope with this problem replace actual window title with a regular expression in object properties. Here it is:
-    
-        regex:.*Microsoft Dynamics NAV
-
-So recorded object properties look like this:
+It may contain not only application name but also name of currently active page or information about currently opened record. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression. You can see it in the object tree and properties of captured objects.
 
 ![Object Properties](./img/dynamicsnavobjectproperties.png)
 
-Also adjust `Record Title` in test settings to the same regular expression so you do not need to choose the Dynamics NAV main window during subsequent recording sessions.
+Here it is:
+
+        regex:.*Microsoft Dynamics NAV
+
+Also Rapise adjusts `Record Title` in test settings to the same regular expression so you do not need to choose the Dynamics NAV main window during subsequent recording sessions.
 
 ![Test Settings](./img/dynamicsnavtestsettings.png)
 
@@ -58,38 +50,62 @@ Child windows of Dynamics NAV also may have dynamic titles.
 
 ![DynamicsNAV Window Title Example](./img/dynamicsnavtitle2.png)
 
- So for child windows you need to write regular as well. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the `window title` property automatically. In other words when Rapise learns a new object and it's `window title` is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.
+Rapise tries to generate a regular expression for such titles as well. If it does not do so - write the expression yourself. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the `window title` property automatically. In other words when Rapise learns a new object and it's `window title` is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.
 
 ## How to Launch Dynamics NAV Client
 
-If in your test you want to check that Dynamics NAV application is installed and running use the code:
+If in your test you want to check that Dynamics NAV application is installed and running place this function into `User.js`:
 
 ```javascript
-var fso = new ActiveXObject("Scripting.FileSystemObject"); 
-
-var pfFolder = Global.GetSpecialFolderPath("ProgramFilesX86");
-var dynamicsPath = pfFolder + "\\Microsoft Dynamics NAV\\100\\RoleTailored Client\\Microsoft.Dynamics.Nav.Client.exe"
-if(!fso.FileExists(dynamicsPath))
+function DynamicsNAVLaunch()
 {
-    Tester.Message("Dynamics NAV Client is not installed on this computer");
-    return;
-}
+    function _NavIsRunning()
+    {
+        var windows = g_util.FindWindows("regex:.*Microsoft Dynamics NAV", "regex:WindowsForms10.*");
+        return windows.length > 0;
+    }
 
-var windows = g_util.FindWindows("regex:.*Microsoft Dynamics NAV", "regex:WindowsForms10.*");
-if (windows.length == 0)
-{
-    Tester.Message("Dynamics NAV Client is not started. Please start it manually and re-run the test.");
-    return;
+    if (_NavIsRunning())
+    {
+        Tester.Message("Dynamics NAV Client is already running");
+        return true;
+    }
+
+    var fso = new ActiveXObject("Scripting.FileSystemObject"); 
+
+    var pfFolder = Global.GetSpecialFolderPath("ProgramFilesX86");
+    var dynamicsPath = pfFolder + "\\Microsoft Dynamics NAV\\100\\RoleTailored Client\\Microsoft.Dynamics.Nav.Client.exe"
+    if(!fso.FileExists(dynamicsPath))
+    {
+        Tester.Message("Dynamics NAV Client is not installed on this computer");
+        return false;
+    }
+
+    Global.DoLaunch(dynamicsPath);
+
+    for(var i = 0; i < 60; i++)
+    {
+        if (_NavIsRunning())
+        {
+            Tester.Message("Dynamics NAV Client started successfully");
+            return true;
+        }
+        Global.DoSleep(1000);
+    }
+
+    Tester.Message("Dynamics NAV Client did not start");
+    return false;
 }
 ```
 
-To start the application use
+You can now use this function in RVL
+
+![launch nav rvl](./img/dynamicsnavlaunchrvl.png)
+
+and in JavaScript:
 
 ```javascript
-var pfFolder = Global.GetSpecialFolderPath("ProgramFilesX86");
-var dynamicsPath = pfFolder + "\\Microsoft Dynamics NAV\\100\\RoleTailored Client\\Microsoft.Dynamics.Nav.Client.exe"
-
-Global.DoLaunch(dynamicsPath);
+DynamicsNAVLaunch();
 ```
 
 ## Recording Actions and Learning Objects
@@ -102,32 +118,38 @@ After this recording session corresponding UI area looks as follows:
 
 ![Create New Customer](./img/dynamicsnavcreatenewcustomer.png)
 
-When recording is finished Rapise automatically generates the test code:
+When recording is finished Rapise automatically generates the test.
+
+In [Rapise Visual Language(RVL)](/RVL/Overview/) it looks like
+
+![test rvl](./img/dynamicsnavtestrvl.png)
+
+In JavaScript:
 
 ```javascript
 function Test()
 {
-    SeS('_New').DoLClick(9, 27);
+    SeS('_New').DoClick();
     SeS('OK').DoAction();
-    SeS('Name').DoLClick(29, 7);
+    SeS('Name').DoClick();
     SeS('Name').DoSetText("CONTOSO");
-    SeS('Address').DoLClick(109, 3);
+    SeS('Address').DoClick();
     SeS('Address').DoSetText("1200 Market St");
 }
 ```
 
-If Rapise does not capture any interaction or captures it wrongly then try to learn the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press `Ctrl-2` shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the Recording dialog.
+If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press `Ctrl+2` shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
 
 ## Tips for Interacting with Objects
 
-### Text Box
+## Text Box
 
 To allow Rapise to capture the entered text interact with a text box in two steps:
 
 1. Click into the edit box
 2. Type text using keyboard
 
-### ComboBox
+## ComboBox
 
 Dynamics NAV combo box consists of three elements:
 
@@ -145,20 +167,40 @@ For reliable recording of combo box interactions follow these steps:
 
 Rapise will record this as:
 
+**RVL**
+
+![dynamicsnavcomborvl](./img/dynamicsnavcomborvl.png)
+
+**JavaScript**
+
 ```javascript
 // Click on the edit box
-SeS('City').DoLClick(115, 10);
+SeS('City').DoClick);
 // Click on the open button
 SeS('City1').DoAction();
-// Select city in the table, choose "Gmunden" value in the column 1 (zero-based)
-SeS('DataGridView').DoClickCell("Gmunden", 1);
+// Select city in the table, choose "Gmunden" value in the column "City"
+SeS('DataGridView').DoClickCell("Gmunden", "City");
 ```
 
-### Table
+## Table
 
-Rapise has complete support for Dynamics NAV grids/tables. It can record user clicks on cells and also provides API to get the number of rows, columns, get column name by index, etc. API reference is available in the Rapise Help file.
+Rapise has complete support for Dynamics NAV grids/tables. It recognizes Dynamics NAV grids as [DynamicsNAVTable](/Libraries/DynamicsNAVTable/) object. Rapise can record user clicks on cells and also provides API to get the number of rows, columns, get column name by index.
 
-Here is an example of interacting with grid.
+When you click on a cell in a table Rapise records column name and value in the cell. The generated click step looks like:
+
+**RVL**
+
+![dynamicsnavgridclickrvl](./img/dynamicsnavgridclickrvl.png)
+
+**JavaScript**
+
+```javascript
+SeS('DataGridView').DoClickCell("Gmunden", "City");
+```
+
+Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  [DynamicsNAVTable](/Libraries/DynamicsNAVTable/) for more details.
+
+Here is an example of interacting with a grid.
 
 ```javascript
 var grid = SeS('DataGridView');
@@ -189,116 +231,56 @@ for(var i = 0; i < colCount; i++)
 
 ## Dynamics NAV Cook Book
 
-### Maximize/Minimize/Restore Window
+## Maximize/Minimize/Restore Window
 
-You can maximize a window using any object inside it as a starting point.
+You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id `ToolBar`.
 
-```javascript
-    SeS('Refresh').getDesktopWindow().Maximized = true;
-```
-
-To minimize use
+First place the following code into your `User.js`:
 
 ```javascript
-    SeS('Refresh').getDesktopWindow().Maximized = false;
-    // or
-    SeS('Refresh').getDesktopWindow().Iconic = true;
-```
-
-For restoring (to go back to a smaller window from maximized or minimized state) use
-
-```javascript
-    SeS('Refresh').getDesktopWindow().Iconic = false;
-```
-
-### Scroll to a Specific Row of a Grid
-
-Generally Dynamics NAV grids do not allow accessing cells which are not currently visible on screen. Using scrolling it is possible to make a specific row of a grid visible. This is a multi-step process.
-
-#### Step 1
-
-Scroll to the top of the grid.
-
-```javascript
-    // Get a reference to the grid
-    var grid = SeS('DataGridView');
-    // Send Ctrl+HOME combination to scroll to the top of the grid
-    grid.DoSendKeys('^{HOME}');
-```
-
-#### Step 2
-
-Scroll line by line to a given row.
-
-'Line down' scroll button is an object with dynamic location.
-
-![Line Down](./img/dynamicsnavlinedown.png)
-
-ilAfter each button click it's location changes. At the beginning it can be (... - means skipped part of the location which is not important for illustration):
-
-```javascript
-.../_GridVScrollBar/No id[1]
-```
-
-After first click it is:
-
-```javascript
-.../_GridVScrollBar/No id[2]
-```
-
-So using this button is unreliable since it won't be found second time during test playback.
-
-Instead we suggest to use scroll bar itself and click on it's low end. It is not possible to learn the scroll bar directly because under cursor we always get it's child parts (buttons, slider, etc.). Learn scroll bar using Spy.
-
-Start recording and launch Spy from `Recording Activity Dialog`.
-
-![Spy](./img/dynamicsnavspyfromrecording.png)
-
-In Spy start tracking by pressing `Ctrl-G`, place mouse over `Line down` button and press `Ctrl-G` again. `Line down` object will be displayed in the UI Automation panel.
-
-![Line down in Spy](./img/dynamicsnavspylinedown.png)
-
-Right click on it and choose `Parent`. Then click on `ScrollBar` object and press `Learn Object` button.
-
-![ScrollBar in Spy](./img/dynamicsnavspyscrollbar.png)
-
- `ScrollBar` will be added to the `Recording Activity Dialog`. Default captured name of the object is `UIAutomation`. Change it to `ScrollBar`.
-
- ![Object Rename](./img/dynamicsnavobjectrename.png)
-
-Finish recording and `ScrollBar` will be added to the object tree of the test opened in Rapise.
-
-![ScrollBar Object](./img/dynamicsnavscrollbarobject.png)
-
-Now we can write scrolling code.
-
-```javascript
-var sb = SeS('ScrollBar');
-// We want row 50 to be visible
-var scrollToRow = 50;
-for(var i = 0; i < scrollToRow; i++)
+function MaximizeWindow(/**objectId*/ objectId)
 {
-    // Click on the low end of the scroll bar, this is where line down button is located
-    // Use underscore in '_DoClick' to exclude this action from report
-    sb._DoClick(10, sb.GetHeight() - 10);
+    SeS(objectId).getDesktopWindow().Maximized = true;
+}
+
+function MinimizeWindow(/**objectId*/ objectId)
+{
+    SeS(objectId).getDesktopWindow().Maximized = false;
+}
+
+function RestoreWindow(/**objectId*/ objectId)
+{
+    SeS(objectId).getDesktopWindow().Iconic = false;
 }
 ```
 
-Sometimes it is needed to scroll through all row to the bottom. Here is complete solution.
+Now you can use these functions in RVL and JavaScript.
+
+**RVL**
+
+![dynamicsnavmaximizervl](./img/dynamicsnavmaximizervl.png)
+
+**JavaScript**
 
 ```javascript
-var grid = SeS('DataGridView');
-var sb = SeS('ScrollBar');
-grid.DoSendKeys('^{HOME}');
-var rowCount = 1;
-for(var i = 0; i < rowCount; i++)
-{
-    // Recalculate total number of rows since Dynamics NAV may sometimes report greater number in the beginning and then change its mind
-    rowCount = grid.GetRowCount();
+MaximizeWindow("ToolBar");
+RestoreWindow("ToolBar");
+MinimizeWindow("ToolBar");
+```
 
-    // Scroll one line
-    sb._DoClick(10, sb.GetHeight() - 10);
-}
+## Scroll to a Specific Row of a Grid
+
+Generally Dynamics NAV grids do not allow accessing cells which are not currently visible on screen. Using scrolling it is possible to make a specific row/column of a grid visible. If you perform [DoClickCell](/Libraries/DynamicsNAVTable/#DoClickCell) action Rapise will automatically ensure that the cell is visible on screen. There is also explicit scroll action [DoScrollTo](/Libraries/DynamicsNAVTable/#DoScrollTo).
+
+**RVL**
+
+![dynamicsnavgridscrollrvl](./img/dynamicsnavgridscrollrvl.png)
+
+**JavaScript**
+
+```javascript
+SeS('CustomerGrid').DoClickCell("Francematic", "Name");
+SeS('CustomerGrid').DoScrollTo(30, 7);
 ```
 
 ## See Also
@@ -306,7 +288,6 @@ for(var i = 0; i < rowCount; i++)
 - [Microsoft Dynamics](microsoft_dynamics.md)
 - [KB: How to start Dynamics NAV client](https://www.inflectra.com/Support/KnowledgeBase/KB314.aspx)
 - [KB: If recording of actions in Dynamics AX or Dynamics NAV does not work](https://www.inflectra.com/Support/KnowledgeBase/KB411.aspx)
-- [KB: How to scroll Dynamics NAV table vertically and horizontally](https://www.inflectra.com/Support/KnowledgeBase/KB343.aspx)
 - [KB: How to record entering of data into Dynamics NAV tables](https://www.inflectra.com/Support/KnowledgeBase/KB347.aspx)
 - [KB: How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics NAV](https://www.inflectra.com/Support/KnowledgeBase/KB366.aspx)
 - [Webinar: Testing Microsoft Dynamics NAV with Rapise](https://youtu.be/IxwxLqJZdCc)

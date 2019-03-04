@@ -28,7 +28,7 @@ Then press `Select` button to start recording. Rapise will automatically plug th
 When recording is completed you can see attached libraries in the code of `Main.js` file:
 
 ```javascript
-    g_load_libraries=["UIAutomation", "DynamicsAX"];
+g_load_libraries=["UIAutomation", "DynamicsAX"];
 ```
 
 ## Automatic Adjustment of `Window Title` Object Property
@@ -124,7 +124,7 @@ You can now use this function in RVL
 and in JavaScript:
 
 ```javascript
-    DynamicsAXLaunch();
+DynamicsAXLaunch();
 ```
 
 ## Recording Actions and Learning Objects
@@ -168,7 +168,7 @@ function Test(params)
 }
 ```
 
-If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press `Ctrl-2` shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
+If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press `Ctrl+2` shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
 
 ## Tips for Interacting with Objects
 
@@ -203,7 +203,7 @@ Generated script step looks like:
 **JavaScript**
 
 ```javascript
-     SeS('Worker_type').DoSelectItem("Employee");
+SeS('Worker_type').DoSelectItem("Employee");
 ```
 
 ### Table Filter Combo
@@ -279,8 +279,8 @@ Rapise supports both recording and learning of the main menu. When recording mak
 **JavaScript**
 
 ```javascript
-    //Menu item selected:'General ledger'
-    SeS('File').DoMenu("File;View;Modules;General ledger");
+//Menu item selected:'General ledger'
+SeS('File').DoMenu("File;View;Modules;General ledger");
 ```
 
 Rapise captures menu as top level object (`File` in the example above). Notice that menu path components are separated with `;`. If you want for example to open menu `File > Tools > Telephone list` then use `File;Tools;Telephone list` as `path` parameter.
