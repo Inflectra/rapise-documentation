@@ -210,6 +210,7 @@ pages:
             - 'Dynamics NAV': 'Guide/dynamics_nav.md'
             - 'Dynamics CRM/365 for Sales': 'Guide/dynamics_crm.md'
             - 'Dynamics 365 for Operations': 'Guide/dynamics_365.md'
+            - 'Unified Service Desk': 'Guide/unified_service_desk.md'
         - 'Windows Applications': 'Guide/windows_applications.md'
         - 'Salesforce.com': 'Guide/salesforce_com.md'
         - 'Qt Framework': 'Guide/qt_framework_testing.md'

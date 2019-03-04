@@ -211,7 +211,7 @@ Gets information about a folder.
 
 **Returns:**
 
-Folder object as described here <link displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx</link>          e.g. Path, SubFolders and Files enumeration.
+Folder object as described here <a displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx</a>          e.g. Path, SubFolders and Files enumeration.
 
 
 
@@ -277,7 +277,7 @@ Gets information about a file.
 
 **Returns:**
 
-File object as described here <link displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx</link>          e.g. DateLastModified, Size, Type, Name, Path.
+File object as described here <a displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx</a>          e.g. DateLastModified, Size, Type, Name, Path.
 
 
 
