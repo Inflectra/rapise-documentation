@@ -905,6 +905,10 @@
 <li >
     <a href="../dynamics_365/">Dynamics 365 for Operations</a>
 </li>
+            
+<li >
+    <a href="../unified_service_desk/">Unified Service Desk</a>
+</li>
     </ul>
   </li>
             
@@ -2925,7 +2929,7 @@
 </li>
 </ul>
 <p>When recording is completed you can see attached libraries in the code of <code>Main.js</code> file:</p>
-<pre><code class="javascript">    g_load_libraries=[&quot;UIAutomation&quot;, &quot;DynamicsAX&quot;];
+<pre><code class="javascript">g_load_libraries=[&quot;UIAutomation&quot;, &quot;DynamicsAX&quot;];
 </code></pre>
 
 <h2 id="automatic-adjustment-of-window-title-object-property">Automatic Adjustment of <code>Window Title</code> Object Property</h2>
@@ -2998,7 +3002,7 @@
 <p>You can now use this function in RVL</p>
 <p><img alt="dax launch rvl" src="../img/daxlaunchrvl.png" /></p>
 <p>and in JavaScript:</p>
-<pre><code class="javascript">    DynamicsAXLaunch();
+<pre><code class="javascript">DynamicsAXLaunch();
 </code></pre>
 
 <h2 id="recording-actions-and-learning-objects">Recording Actions and Learning Objects</h2>
@@ -3034,7 +3038,7 @@
 }
 </code></pre>
 
-<p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <code>Ctrl-2</code> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
+<p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <code>Ctrl+2</code> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects</h2>
 <h2 id="text-box">Text Box</h2>
 <p>To allow Rapise to capture the entered text interact with a text box in two steps:</p>
@@ -3056,7 +3060,7 @@
 <p><strong>RVL</strong></p>
 <p><img alt="daxsimplecomborvl" src="../img/daxsimplecomborvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<pre><code class="javascript">     SeS('Worker_type').DoSelectItem(&quot;Employee&quot;);
+<pre><code class="javascript">SeS('Worker_type').DoSelectItem(&quot;Employee&quot;);
 </code></pre>
 
 <h3 id="table-filter-combo">Table Filter Combo</h3>
@@ -3105,8 +3109,8 @@ SeS('Grid').DoClickCell(&quot;SOFTWARE&quot;, &quot;Customer group&quot;);
 <p><strong>RVL</strong></p>
 <p><img alt="daxmenurvl" src="../img/daxmenurvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<pre><code class="javascript">    //Menu item selected:'General ledger'
-    SeS('File').DoMenu(&quot;File;View;Modules;General ledger&quot;);
+<pre><code class="javascript">//Menu item selected:'General ledger'
+SeS('File').DoMenu(&quot;File;View;Modules;General ledger&quot;);
 </code></pre>
 
 <p>Rapise captures menu as top level object (<code>File</code> in the example above). Notice that menu path components are separated with <code>;</code>. If you want for example to open menu <code>File &gt; Tools &gt; Telephone list</code> then use <code>File;Tools;Telephone list</code> as <code>path</code> parameter.</p>
@@ -3220,7 +3224,7 @@ Tester.Message(cellValue);
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
