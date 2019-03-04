@@ -1,3 +1,5 @@
+# Maps
+
 A *Map* is designed to be an easy way to define tables of data. Items in the map may be accessed by name (if defined) or by index.
 
 The indexed dimensions in the map may also be iterated by the [Loop][Loops.md] function, thus making it useful feature for Data-Driven Testing.
@@ -33,12 +35,12 @@ In-place map data is defined right in the RVL script. In-place map rows may be s
 External maps are defined in an external spreadsheet, file or a database.
 
 ## Using Maps
-Once map is defined it may be used as a regular [Object](MapObject.md). 
+Once map is defined it may be used as a regular [Object](../Libraries/Map.md). 
 
 ![Map as Object](img/Maps_MapAsObject.png)
 
 ### Reading in a Loop
-See [Loops](Loops.md:Map) part for `Map` type of loops.
+See [Loops](Loops.md#Map) part for `Map` type of loops.
 
 ## Maps Types
 ### Rows Map

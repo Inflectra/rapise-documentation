@@ -6,7 +6,7 @@
 
 ## Purpose
 
-[Rapise Visual Language](../RVL/Overview.md) Editor
+[Rapise Visual Language](visual_language.md) Editor
 
 ## How to Open
 

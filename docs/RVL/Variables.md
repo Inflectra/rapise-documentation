@@ -1,3 +1,5 @@
+# Variables
+
 In RVL, variables are useful for storing intermediate results as well as accessing and passing global values to external *JavaScript* functions.
 
 Variables may be used in [Params](Params.md) to [Conditions](Conditions.md) and in [Actions](Actions.md).

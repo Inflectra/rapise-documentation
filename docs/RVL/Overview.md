@@ -1,4 +1,4 @@
-![Rapise](img/Rapise.png)
+# Why RVL?
 
 RVL stands for **Rapise Visual Language**. It is inspired by well known software testing methodologies *Keyword Driven Testing* and *Data Driven Testing*.
 

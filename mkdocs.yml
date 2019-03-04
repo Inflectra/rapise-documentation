@@ -1,9 +1,10 @@
 site_name: Rapise
-copyright: Copyright © 2007-2019, All Rights Reserved, Inflectra
-repo_name: Inflectra
-repo_url: https://www.inflectra.com
+copyright: © Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |
 site_url: https://rapisedoc.inflectra.com/
 site_description: Rapise Test Automation platform documentation
+plugins:
+  - search:
+      prebuild_index: True
 theme:
     name: mkdocs
     custom_dir: inflectra_mkdocs
@@ -220,6 +221,7 @@ pages:
     - 'Glossary': 'Guide/glossary.md'
 - 'RVL':
     - 'Overview':
+        - 'Overview': 'Guide/rvl_editor.md'
         - 'About': 'RVL/Overview.md'
     - 'Features':
         - 'Columns': 'RVL/Columns.md'
@@ -232,9 +234,7 @@ pages:
         - 'Parameters': 'RVL/Params.md'
         - 'Maps': 'RVL/Maps.md'
         - 'Loops': 'RVL/Loops.md'
-    - 'Objects':
-        - 'RVL Object': 'RVL/RVLObject.md'
-        - 'Map Object': 'RVL/MapObject.md'
+        - 'Objects': 'RVL/Objects.md'
 - 'Libraries':
     - 'Global':
         - 'Global': 'Libraries/ses_lib_global.md'
@@ -254,6 +254,9 @@ pages:
         - 'Spreadsheet': 'Libraries/Spreadsheet.md'
         - 'Tester': 'Libraries/Tester.md'
         - 'WebDriver': 'Libraries/WebDriver.md'
+    - 'RVL':
+      - 'RVL Object': 'Libraries/RVL.md'
+      - 'Map Object': 'Libraries/Map.md'
     - 'Desktop':
         - 'Generic':
             - 'Generic': 'Libraries/ses_lib_generic.md'
@@ -670,4 +673,3 @@ pages:
     - 'Preparing for Android Testing': 'Manuals/Preparing_for_Android_Testing.md'
     - 'Preparing for iOS Testing': 'Manuals/Preparing_for_iOS_Testing.md'
 - 'Knowledge Base': 'Manuals/kb.md'
-- 'UITAP': 'http://www.uitestingplayground.com/'

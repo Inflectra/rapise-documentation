@@ -1,4 +1,4 @@
-Map Object
+# Map Object
 
 Represents an RVL Map object and all its operations. The same operations are used by the RVL runtime implicitly to read the cell value or iterate through the Map.
 

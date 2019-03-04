@@ -1,9 +1,12 @@
 site_name: Rapise
-copyright: Copyright © 2007-2019, All Rights Reserved, Inflectra
+copyright: © Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://rapisedoc.inflectra.com/
 site_description: Rapise Test Automation platform documentation
+plugins:
+  - search:
+      prebuild_index: True
 theme:
     name: mkdocs
     custom_dir: inflectra_mkdocs
@@ -220,6 +223,7 @@ pages:
     - 'Glossary': 'Guide/glossary.md'
 - 'RVL':
     - 'Overview':
+        - 'Overview': 'Guide/rvl_editor.md'
         - 'About': 'RVL/Overview.md'
     - 'Features':
         - 'Columns': 'RVL/Columns.md'
@@ -232,11 +236,12 @@ pages:
         - 'Parameters': 'RVL/Params.md'
         - 'Maps': 'RVL/Maps.md'
         - 'Loops': 'RVL/Loops.md'
-    - 'Objects':
-        - 'RVL Object': 'RVL/RVLObject.md'
-        - 'Map Object': 'RVL/MapObject.md'
+        - 'Objects': 'RVL/Objects.md'
 - 'Libraries':
     #global
+    - 'RVL':
+      - 'RVL Object': 'Libraries/RVL.md'
+      - 'Map Object': 'Libraries/Map.md'
     - 'Desktop':
         #generic
         #uiautomation
