@@ -237,7 +237,6 @@ pages:
         - 'Parameters': 'RVL/Params.md'
         - 'Maps': 'RVL/Maps.md'
         - 'Loops': 'RVL/Loops.md'
-        - 'Objects': 'RVL/Objects.md'
 - 'Libraries':
     #global
     - 'RVL':
