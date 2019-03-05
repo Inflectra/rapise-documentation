@@ -1,7 +1,7 @@
 pushd %~dp0
 
 call version.cmd
-
+call toc.cmd
 
 python ./tools/mkdocs2pandoc.py --width 120 -o temp.pd
 

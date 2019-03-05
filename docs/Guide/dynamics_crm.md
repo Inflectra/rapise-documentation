@@ -7,7 +7,13 @@ software-as-a-service offering called **Microsoft Dynamics CRM Online**.
 
 Rapise can be used to test installations of Dynamics CRM both on-premise and online.
 
-Latest version of Dynamics CRM is called Dynamics 365 for Sales. It is also supported.
+Latest version of Dynamics CRM is called Dynamics 365 for Sales. It is also supported. Rapise can handle both Web and Unified Interface.
+
+## Dynamics 365 for Sales - Unified Interface
+
+
+## Dynamics 365 for Sales - Web Interface
+
 
 ## Dynamics CRM On-Premise
 

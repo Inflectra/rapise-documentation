@@ -6,6 +6,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Parse filter strings')
 parser.add_argument('--filters', metavar='f', type=str, nargs='*',
                    help='lines to filter')
+parser.add_argument('--output', metavar='o', type=str, default="../mkdocs.yml", help='Save output to')
 
 
 args = parser.parse_args()
@@ -14,8 +15,10 @@ print('filters: ')
 print(args.filters)
 
 template_file = "../mkdocs_template.yml"
-result_file = "../mkdocs.yml"
+result_file = args.output
 toc_folder = "../toc"
+
+print('Saving output to: '+result_file)
 
 include_regex = re.compile(r"([ \t]+)#([a-z0-9]+)", re.IGNORECASE)
 

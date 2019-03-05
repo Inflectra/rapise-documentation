@@ -1,2 +1,3 @@
-toc.cmd
+call toc.cmd
+
 mkdocs gh-deploy
