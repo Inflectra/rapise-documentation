@@ -13,6 +13,7 @@
     - 'SeSReportImage': 'Libraries/SeSReportImage.md'
     - 'SeSReportLink': 'Libraries/SeSReportLink.md'
     - 'SeSReportText': 'Libraries/SeSReportText.md'
+    - 'Session': 'Libraries/Session.md'    
     - 'Spreadsheet': 'Libraries/Spreadsheet.md'
     - 'Tester': 'Libraries/Tester.md'
     - 'WebDriver': 'Libraries/WebDriver.md'

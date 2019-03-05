@@ -28,6 +28,8 @@
 
     - 'SeSReportText': 'Libraries/SeSReportText.md'
 
+    - 'Session': 'Libraries/Session.md'
+
     - 'Spreadsheet': 'Libraries/Spreadsheet.md'
 
     - 'Tester': 'Libraries/Tester.md'
