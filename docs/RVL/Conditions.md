@@ -159,7 +159,7 @@ Here is the same condition presented in 3 rows (default) and 2 rows (short) form
 
 ![2 row condition syntax](./img/Conditions_2Row.png)
 
-2 Rows together with [If-Else](IfElse.md) may be used to mimic a `switch` statement:
+2 rows condition syntax together with [If-Else](IfElse.md) may be used to mimic a `switch` statement:
 
 ![IfElse_Switch](./img/Conditions_IfElseSwitch.png)
 
