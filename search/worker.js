@@ -84,7 +84,17 @@ function onScriptsLoaded () {
     console.log('Lunr index built, search ready');
   }
   allowSearch = true;
-  postMessage({allowSearch: allowSearch});
+  sendWorkerMessage({allowSearch: allowSearch});    
+}
+
+function sendWorkerMessage(msg)
+{
+  if(navigator.appVersion.indexOf("MSIE 9")>=0||navigator.appVersion.indexOf("MSIE 8")>=0||navigator.appVersion.indexOf("MSIE 7")>=0||navigator.appVersion.indexOf("MSIE 6")>=0)
+  {
+    onWorkerMessage({data:msg});
+  } else {
+    postMessage(msg);    
+  }  
 }
 
 function init () {

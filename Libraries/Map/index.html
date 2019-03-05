@@ -2,17 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/ses_engine/">
+        <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/Map/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Global - Rapise</title>
+        <title>Map Object - Rapise</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="/css/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,7 +21,7 @@
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="/js/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
@@ -39,7 +39,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../..">Rapise</a>
+        
+        <a class="navbar-brand" href="../..">Rapise</a>
+        
                 </div>
 
                 <!-- Expanded navigation -->
@@ -962,6 +964,10 @@
     <ul class="dropdown-menu">
             
 <li >
+    <a href="../../Guide/rvl_editor/">Overview</a>
+</li>
+            
+<li >
     <a href="../../RVL/Overview/">About</a>
 </li>
     </ul>
@@ -1012,23 +1018,9 @@
 </li>
     </ul>
   </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Objects</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../RVL/RVLObject/">RVL Object</a>
-</li>
-            
-<li >
-    <a href="../../RVL/MapObject/">Map Object</a>
-</li>
-    </ul>
-  </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Libraries <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -1093,6 +1085,10 @@
 </li>
             
 <li >
+    <a href="../Session/">Session</a>
+</li>
+            
+<li >
     <a href="../Spreadsheet/">Spreadsheet</a>
 </li>
             
@@ -1102,6 +1098,20 @@
             
 <li >
     <a href="../WebDriver/">WebDriver</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">RVL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../RVL/">RVL Object</a>
+</li>
+            
+<li class="active">
+    <a href="./">Map Object</a>
 </li>
     </ul>
   </li>
@@ -2838,16 +2848,24 @@
 </li>
                                     
 <li >
+    <a href="../../Guide/setting_up_web_browsers/">Setting Up Web Browsers</a>
+</li>
+                                    
+<li >
     <a href="../../Manuals/Preparing_for_Android_Testing/">Preparing for Android Testing</a>
 </li>
                                     
 <li >
     <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing for iOS Testing</a>
 </li>
+                                    
+<li >
+    <a href="../../Guide/setting_up_selenium/">Setting Up Selenium</a>
+</li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="../../Manuals/kb/">Knowledge Base</a>
+                                <a href="../../Manuals/kb/">KB</a>
                             </li>
                             <li >
                                 <a href="http://www.uitestingplayground.com/">UITAP</a>
@@ -2857,9 +2875,16 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                                <i class="fa fa-search"></i>
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../RVL/">
+                                    <i class="fa fa-arrow-left"></i></a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../ses_lib_generic/"><i class="fa fa-arrow-right"></i></a>
+                            </li>
                             <li>
                                 <a href="https://www.inflectra.com">Inflectra</a>
                             </li>
@@ -2871,128 +2896,101 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#global">Global</a></li>
-        <li class="main "><a href="#generic">Generic</a></li>
-        <li class="main "><a href="#html">HTML</a></li>
+        <li class="main active"><a href="#map-object">Map Object</a></li>
+            <li><a href="#actions">Actions</a></li>
+            <li><a href="#properties">Properties</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="global">Global</h1>
-<ul>
-<li>
-<p><a href="../Android/">Android</a></p>
-</li>
-<li>
-<p><a href="../Database/">Database</a></p>
-</li>
-<li>
-<p><a href="../File/">File</a></p>
-</li>
-<li>
-<p><a href="../Global/">Global</a></p>
-</li>
-<li>
-<p><a href="../iOS/">iOS</a></p>
-</li>
-<li>
-<p><a href="../Navigator/">Navigator</a></p>
-</li>
-<li>
-<p><a href="../NeoLoad/">NeoLoad</a></p>
-</li>
-<li>
-<p><a href="../Ocr/">Ocr</a></p>
-</li>
-<li>
-<p><a href="../Screenshot/">Screenshot</a></p>
-</li>
-<li>
-<p><a href="../SeSReportException/">SeSReportException</a></p>
-</li>
-<li>
-<p><a href="../SeSReportImage/">SeSReportImage</a></p>
-</li>
-<li>
-<p><a href="../SeSReportLink/">SeSReportLink</a></p>
-</li>
-<li>
-<p><a href="../SeSReportText/">SeSReportText</a></p>
-</li>
-<li>
-<p><a href="../Spreadsheet/">Spreadsheet</a></p>
-</li>
-<li>
-<p><a href="../Tester/">Tester</a></p>
-</li>
-<li>
-<p><a href="../WebDriver/">WebDriver</a></p>
-</li>
-</ul>
-<h1 id="generic">Generic</h1>
-<ul>
-<li>
-<p><a href="../SeSSimulatedObject/">SeSSimulatedObject</a></p>
-</li>
-<li>
-<p><a href="../Win32Button/">Win32Button</a></p>
-</li>
-<li>
-<p><a href="../Win32CheckButton/">Win32CheckButton</a></p>
-</li>
-<li>
-<p><a href="../Win32ComboBox/">Win32ComboBox</a></p>
-</li>
-<li>
-<p><a href="../Win32ComboBoxEdit/">Win32ComboBoxEdit</a></p>
-</li>
-<li>
-<p><a href="../Win32ContextMenu/">Win32ContextMenu</a></p>
-</li>
-<li>
-<p><a href="../Win32Link/">Win32Link</a></p>
-</li>
-<li>
-<p><a href="../Win32List/">Win32List</a></p>
-</li>
-<li>
-<p><a href="../Win32ListCheckable/">Win32ListCheckable</a></p>
-</li>
-<li>
-<p><a href="../Win32MenuBar/">Win32MenuBar</a></p>
-</li>
-<li>
-<p><a href="../Win32Outline/">Win32Outline</a></p>
-</li>
-<li>
-<p><a href="../Win32PopupMenu/">Win32PopupMenu</a></p>
-</li>
-<li>
-<p><a href="../Win32RadioButton/">Win32RadioButton</a></p>
-</li>
-<li>
-<p><a href="../Win32StaticText/">Win32StaticText</a></p>
-</li>
-<li>
-<p><a href="../Win32Text/">Win32Text</a></p>
-</li>
-<li>
-<p><a href="../Win32TreeCheckable/">Win32TreeCheckable</a></p>
-</li>
-</ul>
-<h1 id="html">HTML</h1>
-<ul>
-<li><a href="../HTMLObject/">HTMLObject</a></li>
-</ul></div>
+<h1 id="map-object">Map Object</h1>
+<p>Represents an RVL Map object and all its operations. The same operations are used by the RVL runtime implicitly to read the cell value or iterate through the Map.</p>
+<h2 id="actions">Actions</h2>
+<h3 id="domovetorow">DoMoveToRow</h3>
+<p><strong><code>DoMoveToRow(/**Number*/ colInd)</code> </strong></p>
+<p>Moves to a given row.</p>
+<p><code>rowInd</code> Row index (or name) to set active.</p>
+<h3 id="dosequential">DoSequential</h3>
+<p><strong><code>DoSequential()</code> </strong></p>
+<p>Advances to the next row in the range. The range is either set by SetRange or it is the default range that includes all rows on the sheet except first row which is considered to contain column names. When the end of the range is reached, DoSequential rewinds back to the first row in the range and returns 'false'.</p>
+<p>Returns 'false' if being called when active row is the last row or the spreadsheet is not attached, 'true' - otherwise.</p>
+<h3 id="domovetocolumn">DoMoveToColumn</h3>
+<p><strong><code>DoMoveToColumn(/**Number|String*/colInd)</code> </strong></p>
+<p>Moves to a given column.</p>
+<p><code>colInd</code> Column index (or name) to set active.</p>
+<h3 id="domovetofirstcolumn">DoMoveToFirstColumn</h3>
+<p><strong><code>DoMoveToFirstColumn()</code> </strong></p>
+<p>Moves to a first column in the map.</p>
+<h3 id="domovetofirstrow">DoMoveToFirstRow</h3>
+<p><strong><code>DoMoveToFirstRow()</code> </strong></p>
+<p>Moves to a first row in the map.</p>
+<h3 id="domovetolastcolumn">DoMoveToLastColumn</h3>
+<p><strong><code>DoMoveToLastColumn()</code> </strong></p>
+<p>Moves to a last column in the map.</p>
+<h3 id="domovetolastrow">DoMoveToLastRow</h3>
+<p><strong><code>DoMoveToLastRow()</code> </strong></p>
+<p>Moves to a last row in the map.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="cell">Cell</h3>
+<p><strong> <code>GetCell(/**Number|String*/ columnId, /**Number*/ rowId)</code> </strong></p>
+<p>Gets a cell value by its coordinates. It returns the current cell value after DoSequental or DoRandom if the parameters are not set.</p>
+<p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
+<p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
+<h3 id="columncell">ColumnCell</h3>
+<p><strong> <code>GetColumnCell(/**Number*/ rowId)</code> </strong></p>
+<p>Gets cell value by its coordinates. Returns current cell value after DoSequental. If not set ActiveColumn is used.</p>
+<p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
+<h3 id="columncount">ColumnCount</h3>
+<p><strong> <code>GetColumnCount()</code> </strong></p>
+<p>Gets columns count.</p>
+<p>Returns Number of columns in the spreadsheet.</p>
+<h3 id="columnindexbyname">ColumnIndexByName</h3>
+<p><strong> <code>GetColumnIndexByName(/**String*/name)</code> </strong></p>
+<p>Gets column name.</p>
+<p><code>name</code> Column name.</p>
+<p>Returns column index if found, or -1.</p>
+<h3 id="columnname">ColumnName</h3>
+<p><strong> <code>GetColumnName(/**Number*/ ind)</code> </strong></p>
+<p>Gets column name.</p>
+<p><code>ind</code> Column index.</p>
+<p>Returns Name of column in the spreadsheet.</p>
+<h3 id="rowcount">RowCount</h3>
+<p><strong> <code>GetRowCount()</code> </strong></p>
+<p>Gets rows count.</p>
+<p>Returns Number of rows in the spreadsheet.</p>
+<h3 id="rowindexbyname">RowIndexByName</h3>
+<p><strong> <code>GetRowIndexByName(/**String*/name)</code> </strong></p>
+<p>Gets row name.</p>
+<p><code>name</code> Row name.</p>
+<p>Returns row index if found, or -1.</p>
+<h3 id="currentrowindex">CurrentRowIndex</h3>
+<p><strong> <code>GetCurrentRowIndex()</code> </strong></p>
+<p>Get zero based current row index.</p>
+<h3 id="eof">EOF</h3>
+<p><strong> <code>GetEOF()</code> </strong></p>
+<p>Is current position is beyond the map boundaries range.</p>
+<h3 id="rowcell">RowCell</h3>
+<p><strong> <code>GetRowCell(/**Number|String*/ columnId)</code> </strong></p>
+<p>Gets cell value for current row. Returns current cell value after DoSequental. ActiveRow is used.</p>
+<p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
+<h3 id="rowname">RowName</h3>
+<p><strong> <code>GetRowName(/**Number*/ ind)</code> </strong></p>
+<p>Gets row name.</p>
+<p><code>ind</code> Row index.</p>
+<p>Returns Name of row in the map.</p>
+<h3 id="value">Value</h3>
+<p><strong> <code>GetValue(/**Number|String*/ rowOrColumnNameOrId)</code> </strong></p>
+<p>Gets cell value by its name or id. Returns current cell value after DoSequental. If it is Rows or Table then the parameter needs to be a column name or index, and ActiveRow is used. If it is Columns then the parameter needs to be a row name or index, and ActiveRow is used.</p>
+<p><code>[rowOrColumnNameOrId]</code> Row or Column index or Name.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright © 2007-2019, All Rights Reserved, Inflectra</p>
+                <p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

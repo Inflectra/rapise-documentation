@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
@@ -12,7 +12,7 @@
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="/css/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,7 +21,7 @@
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="/js/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
@@ -39,7 +39,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../..">Rapise</a>
+        
+        <a class="navbar-brand" href="../..">Rapise</a>
+        
                 </div>
 
                 <!-- Expanded navigation -->
@@ -962,6 +964,10 @@
     <ul class="dropdown-menu">
             
 <li >
+    <a href="../rvl_editor/">Overview</a>
+</li>
+            
+<li >
     <a href="../../RVL/Overview/">About</a>
 </li>
     </ul>
@@ -1009,20 +1015,6 @@
             
 <li >
     <a href="../../RVL/Loops/">Loops</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Objects</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../RVL/RVLObject/">RVL Object</a>
-</li>
-            
-<li >
-    <a href="../../RVL/MapObject/">Map Object</a>
 </li>
     </ul>
   </li>
@@ -1093,6 +1085,10 @@
 </li>
             
 <li >
+    <a href="../../Libraries/Session/">Session</a>
+</li>
+            
+<li >
     <a href="../../Libraries/Spreadsheet/">Spreadsheet</a>
 </li>
             
@@ -1102,6 +1098,20 @@
             
 <li >
     <a href="../../Libraries/WebDriver/">WebDriver</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">RVL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/RVL/">RVL Object</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Map/">Map Object</a>
 </li>
     </ul>
   </li>
@@ -2838,16 +2848,24 @@
 </li>
                                     
 <li >
+    <a href="../setting_up_web_browsers/">Setting Up Web Browsers</a>
+</li>
+                                    
+<li >
     <a href="../../Manuals/Preparing_for_Android_Testing/">Preparing for Android Testing</a>
 </li>
                                     
 <li >
     <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing for iOS Testing</a>
 </li>
+                                    
+<li >
+    <a href="../setting_up_selenium/">Setting Up Selenium</a>
+</li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="../../Manuals/kb/">Knowledge Base</a>
+                                <a href="../../Manuals/kb/">KB</a>
                             </li>
                             <li >
                                 <a href="http://www.uitestingplayground.com/">UITAP</a>
@@ -2857,18 +2875,15 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                                <i class="fa fa-search"></i>
                             </a>
                         </li>
                             <li >
                                 <a rel="next" href="../dynamics_crm/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
+                                    <i class="fa fa-arrow-left"></i></a>
                             </li>
                             <li >
-                                <a rel="prev" href="../unified_service_desk/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
+                                <a rel="prev" href="../unified_service_desk/"><i class="fa fa-arrow-right"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.inflectra.com">Inflectra</a>
@@ -2881,9 +2896,9 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#dynamics-365-for-operations">Dynamics 365 for Operations</a></li>
+        <li class="main active"><a href="#dynamics-365-for-finance-and-operations">Dynamics 365 for Finance and Operations</a></li>
             <li><a href="#overview">Overview</a></li>
-            <li><a href="#recording-a-dynamics-365-for-operations-test">Recording a Dynamics 365 for Operations Test</a></li>
+            <li><a href="#recording-a-test">Recording a Test</a></li>
             <li><a href="#recording-and-learning-objects">Recording and Learning Objects</a></li>
             <li><a href="#tips-for-interacting-with-objects">Tips for Interacting with Objects</a></li>
             <li><a href="#see-also">See Also</a></li>
@@ -2891,30 +2906,30 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="dynamics-365-for-operations">Dynamics 365 for Operations</h1>
+<h1 id="dynamics-365-for-finance-and-operations">Dynamics 365 for Finance and Operations</h1>
 <h2 id="overview">Overview</h2>
-<p>Microsoft has created a new cloud-based SaaS-only combined ERP/CRM solution called <strong>Microsoft Dynamics 365</strong>. This provides a new web-based version of <a href="../dynamics_ax/">Dynamics AX</a> (renamed Dynamics 365 for Operations), combined with a new web based version of Dynamics NAV (called Dynamics 365 for Financials) and an updated Microsoft Dynamics CRM Online.</p>
+<p>Microsoft has created a new cloud-based SaaS-only combined ERP/CRM solution called <strong>Microsoft Dynamics 365</strong>. This provides a new web-based version of <a href="../dynamics_ax/">Dynamics AX</a> (renamed Dynamics 365 for Finance and Operations) and an updated Microsoft Dynamics CRM Online.</p>
 <p>This new integrated, ERP/CRM is provided solely through Microsoft Azure and is completely web-based. There are two main modules that Rapise has specialized support for:</p>
 <ol>
-<li><strong>Dynamics 365 for Operations</strong> – this is the subject of this section, please read on if you are testing these modules.</li>
-<li><strong>Dynamics 365 for Sales</strong> – this is a rebrand of <a href="../dynamics_crm/">Dynamics CRM</a> and is covered in corresponding section.</li>
+<li><strong>Dynamics 365 for Finance and Operations</strong> – this is the subject of this section, please read on if you are testing these modules.</li>
+<li><strong>Dynamics 365 for Sales</strong> – this is a rebrand of <a href="../dynamics_crm/">Dynamics CRM</a> and is covered in <a href="../dynamics_crm/">corresponding section</a>.</li>
 </ol>
 <p><img alt="clip0142" src="../img/dynamics_3651.png" /></p>
-<h2 id="recording-a-dynamics-365-for-operations-test">Recording a Dynamics 365 for Operations Test</h2>
-<p>Dynamics 365 for Operations is completely web-based (unlike Dynamics AX) and you use a web browser to access the user interface. Therefore when recording a test using Rapise, you use the same web browser libraries that you use to record other web tests:</p>
+<h2 id="recording-a-test">Recording a Test</h2>
+<p>Dynamics 365 for Finance and Operations is completely web-based (unlike Dynamics AX) and you use a web browser to access the user interface. Therefore when recording a test using Rapise, you use the same web browser libraries that you use to record other web tests:</p>
 <ul>
-<li>Most of the Dynamics 365 user interface will be tested using the <strong>standard browser library</strong> for your web browser of choice (e.g.  Internet Explorer HTML, Firefox HTML, and Chrome HTML).</li>
-<li>In addition, there are special controls inside Dynamics 365 that Rapise has specialized support for. For that reason you'll also see the <strong>DomDynamicsAx</strong> library added to your test as well as the browser one. This <strong>DomDynamicsAx</strong> library adds additional rules that identify certain Dynamics 365 objects to make testing easier.</li>
+<li>Most of the Dynamics 365 user interface will be tested using the <a href="/Libraries/HTMLObject/">standard browser library</a> for your web browser of choice (e.g.  Internet Explorer HTML, Firefox HTML, and Chrome HTML).</li>
+<li>In addition, there are special controls inside Dynamics 365 that Rapise has specialized support for. For that reason you'll also see the <a href="/Libraries/ses_lib_dynamics365/">DomDynamicsAx</a> library added to your test as well as the browser one. This <strong>DomDynamicsAx</strong> library adds additional rules that identify certain Dynamics 365 objects to make testing easier.</li>
 </ul>
 <p>When you record your first test, you'll see the following library selection code generated automatically by Rapise:</p>
-<pre><code class="javascript">g\_load\_libraries=\[&quot;%g\_browserLibrary:Internet Explorer HTML%&quot;, &quot;DomDynamicsAx&quot;\];
+<pre><code class="javascript">g_load_libraries=[&quot;%g_browserLibrary:Internet Explorer HTML%&quot;, &quot;DomDynamicsAx&quot;];
 </code></pre>
 
 <p>If you don’t see the <strong>DomDynamicsAx</strong> library listed in your test, then you will need to <a href="../change_the_libraries_being_use/">manually add it</a>.</p>
 <h2 id="recording-and-learning-objects">Recording and Learning Objects</h2>
-<p>During recording while you interact with Dynamics 365, Rapise captures actions and displays them in the recording dialog:</p>
+<p>During recording while you interact with Dynamics 365, Rapise captures objects and displays them in the <a href="../object_learning/">object tree</a>:</p>
 <p><img alt="clip0143" src="../img/dynamics_3652.png" /></p>
-<p>Some of these objects will be standard HTML DOM objects (e.g. hyperlink):</p>
+<p>Some of these objects will be standard HTML DOM objects (e.g. button):</p>
 <p><img alt="clip0144" src="../img/dynamics_3653.png" /></p>
 <p>and others will be specific to Dynamics 365:</p>
 <p><img alt="clip0145" src="../img/dynamics_3654.png" /></p>
@@ -2922,54 +2937,50 @@
 <p>One of the most important UI elements inside Dynamics 365 is the multi-level menu bar:</p>
 <p><img alt="clip0146" src="../img/dynamics_3655.png" /></p>
 <p>The Dynamics 365 menu bar is used to quickly and easily navigate between different parts of the application and it is very common to need to interact with it in test scripts.</p>
-<p>When you click on entries in the menu bar or simply learn the entire menu using <strong>CTRL+2</strong> you will learn the <strong>DomDynamicsAXMenuBar</strong> object:</p>
+<p><a href="../object_learning/">Learn</a> the menu using <strong>CTRL+2</strong> on the menu open button:</p>
+<p><img alt="menu open button" src="../img/dynamics_3657.png" /></p>
+<p>Rapise will learn the <a href="/Libraries/DomDynamicsAXMenuBar/">DomDynamicsAXMenuBar</a> object:</p>
 <p><img alt="clip0147" src="../img/dynamics_3656.png" /></p>
 <p>In additional to the standard HTML object methods and properties, you have <a href="/Libraries/DomDynamicsAXMenuBar/">the special functions that you can perform on the menu</a>:</p>
 <ul>
 <li><strong>DoMenu(path, separator)</strong> – selects the menu entries in specified path, using the specified separator (or semicolon if none specified).</li>
 </ul>
-<p>Here is a sample test that was recorded using Dynamics 365 for Operations and Rapise:</p>
-<pre><code class="javascript">function Test()
+<p>Here is a sample test that was recorded using Dynamics 365 for Finance and Operations and Rapise.</p>
+<p><strong>RVL</strong></p>
+<p><img alt="recorded purchase order" src="../img/dynamics_3658.png" /></p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="javascript">function Test(params)
 {
-    //Get the sample data from the database
-    var conn = 'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=SampleData.accdb';
-    var sql = 'SELECT TEST\_VALUE FROM TEST\_DATA';
-    Database.DoAttach(conn, sql);
-    do
-    {
-        var testValue = Database.GetValue('TEST\_VALUE');
-        if (testValue)
-        {
-            SeS('MenuBar').DoMenu(&quot;Modules;Procurement and sourcing;Purchase orders;All purchase orders&quot;);
-            StartNewPurchaseOrder();
-            FillPurchaseOrderForm(testValue);
-        }
-    } while (Database.DoSequential());
-}
-
-g_load_libraries=[&quot;%g_browserLibrary:Internet Explorer HTML%&quot;, &quot;DomDynamicsAX&quot;];
-
-/** @scenario StartNewPurchaseOrder */
-function StartNewPurchaseOrder()
-{
-    Global.DoWaitFor('New1');
-    SeS('New1').DoClick();
-}
-
-/** @scenario FillPurchaseOrderForm */
-function FillPurchaseOrderForm(data)
-{
-    Global.DoWaitFor('DIV1');
-    SeS('DIV1').DoClick();
-    SeS('DIV2').DoClick();
-    //Click on DIV
-    SeS('DIV3').DoClick();
-    //Learned Vendor account
-    SeS('Vendor\_account1').DoClick( );
-    //Set Text
-    SeS('dat').DoSetText(data);
+    Navigator.Open(&quot;https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&amp;mi=DefaultDashboard&quot;);
+    SeS('DAT').DoClick();
+    SeS('SysCompanyChooser_DataArea_id').DoOpen();
+    SeS('SysCompanyChooserLookup_Grid').DoClickCell(&quot;USPI&quot;, 1);
+    SeS('NavigationSearchBox').DoClick();
+    SeS('NavigationSearchBox').DoClick();
+    SeS('NavigationSearchBox').DoSearch(&quot;purchase orders&quot;);
+    SeS('_New').DoClick();
+    SeS('PurchCreateOrder_PurchTable_Orde').DoOpen();
+    SeS('VendTable_SysTL_Grid').DoClickCell(&quot;Contoso Chemicals Japan&quot;, &quot;Name&quot;);
+    SeS('PurchCreateOrder_PurchTable_Inve').DoEnsureVisible();
+    SeS('PurchCreateOrder_PurchTable_Inve').DoOpen();
+    SeS('InventLocationIdLookup_GridInven').DoClickCell(&quot;Ingredients - Cleaners&quot;, &quot;Name&quot;);
     SeS('OK').DoClick();
+    SeS('purchtablelistpageopen_LineSpec').DoClickCell(0, &quot;Item number&quot;);
+    SeS('InventItemIdLookupPurchase_Grid').DoClickCell(&quot;SodiumHydroxide&quot;, &quot;Search name&quot;);
+    SeS('purchtablelistpageopen_LineSpec').DoClickCell(0, &quot;Unit&quot;);
+    SeS('UnitOfMeasureLookup_GridConverti').DoClickCell(&quot;kilogram&quot;, &quot;Translated description&quot;);
+    SeS('purchtablelistpageopen_LineSpec').DoClickCell(0, &quot;Quantity&quot;);
+    SeS('purchtablelistpageopen_LineSpec').DoSetText(&quot;5&quot;);
+    SeS('Add_line').DoEnsureVisible();
+    SeS('Add_line').DoClick();
+    SeS('purchtablelistpageopen_LineSpec').DoClickCell(1, &quot;Item number&quot;);
+    SeS('InventItemIdLookupPurchase_Grid').DoClickCell(&quot;OleicAcid&quot;, &quot;Search name&quot;);
+    SeS('purchtablelistpageopen_LineSpec').DoClickCell(1, &quot;Quantity&quot;);
+    SeS('purchtablelistpageopen_LineSpec').DoSetText(&quot;3&quot;);
+    SeS('Save').DoClick();
 }
+
+g_load_libraries=[&quot;%g_browserLibrary:Chrome HTML%&quot;, &quot;DomDynamicsAX&quot;];
 </code></pre>
 
 <h2 id="see-also">See Also</h2>
@@ -2982,11 +2993,11 @@ function FillPurchaseOrderForm(data)
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright © 2007-2019, All Rights Reserved, Inflectra</p>
+                <p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

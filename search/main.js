@@ -1,3 +1,5 @@
+var console={log:function(){}};  
+
 function getSearchTermFromLocation() {
   var sPageURL = window.location.search.substring(1);
   var sURLVariables = sPageURL.split('&');
@@ -89,6 +91,7 @@ if (!window.Worker) {
     console.error('Could not load worker.js');
   });
 } else {
+
   // Wrap search in a web worker
   var searchWorker = new Worker(joinUrl(base_url, "search/worker.js"));
   searchWorker.postMessage({init: true});

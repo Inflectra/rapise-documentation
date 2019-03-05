@@ -2,17 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/rvl_editor/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>RVL Editor - Rapise</title>
+        <title>Overview - Rapise</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="/css/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,7 +21,7 @@
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="/js/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
@@ -39,14 +39,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../..">Rapise</a>
+        
+        <a class="navbar-brand" href="../..">Rapise</a>
+        
                 </div>
 
                 <!-- Expanded navigation -->
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rapise User's Guide <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -662,7 +664,7 @@
     <a href="../rest_definition_editor/">REST Definition Editor</a>
 </li>
             
-<li class="active">
+<li >
     <a href="./">RVL Editor</a>
 </li>
     </ul>
@@ -953,13 +955,17 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
   <li class="dropdown-submenu">
     <a href="#">Overview</a>
     <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Overview</a>
+</li>
             
 <li >
     <a href="../../RVL/Overview/">About</a>
@@ -1009,20 +1015,6 @@
             
 <li >
     <a href="../../RVL/Loops/">Loops</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Objects</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../RVL/RVLObject/">RVL Object</a>
-</li>
-            
-<li >
-    <a href="../../RVL/MapObject/">Map Object</a>
 </li>
     </ul>
   </li>
@@ -1093,6 +1085,10 @@
 </li>
             
 <li >
+    <a href="../../Libraries/Session/">Session</a>
+</li>
+            
+<li >
     <a href="../../Libraries/Spreadsheet/">Spreadsheet</a>
 </li>
             
@@ -1102,6 +1098,20 @@
             
 <li >
     <a href="../../Libraries/WebDriver/">WebDriver</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">RVL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/RVL/">RVL Object</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/Map/">Map Object</a>
 </li>
     </ul>
   </li>
@@ -2838,16 +2848,24 @@
 </li>
                                     
 <li >
+    <a href="../setting_up_web_browsers/">Setting Up Web Browsers</a>
+</li>
+                                    
+<li >
     <a href="../../Manuals/Preparing_for_Android_Testing/">Preparing for Android Testing</a>
 </li>
                                     
 <li >
     <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing for iOS Testing</a>
 </li>
+                                    
+<li >
+    <a href="../setting_up_selenium/">Setting Up Selenium</a>
+</li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="../../Manuals/kb/">Knowledge Base</a>
+                                <a href="../../Manuals/kb/">KB</a>
                             </li>
                             <li >
                                 <a href="http://www.uitestingplayground.com/">UITAP</a>
@@ -2857,18 +2875,15 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                                <i class="fa fa-search"></i>
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../rest_definition_editor/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
+                                <a rel="next" href="../glossary/">
+                                    <i class="fa fa-arrow-left"></i></a>
                             </li>
                             <li >
-                                <a rel="prev" href="../scripting_choice_dialog/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
+                                <a rel="prev" href="../../RVL/Overview/"><i class="fa fa-arrow-right"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.inflectra.com">Inflectra</a>
@@ -2903,7 +2918,7 @@
 <h2 id="screenshot">Screenshot</h2>
 <p><img alt="rvl editor" src="../img/rvl_editor1.png" /></p>
 <h2 id="purpose">Purpose</h2>
-<p><a href="../../RVL/Overview/">Rapise Visual Language</a> Editor</p>
+<p><a href="../visual_language/">Rapise Visual Language</a> Editor</p>
 <h2 id="how-to-open">How to Open</h2>
 <p>Use the <strong>RVL</strong> button on the main toolbar to open an RVL (<code>.rvl.xlsx</code>) file. The file will be opened by the <strong>RVL Editor</strong> in the <a href="../content_view/">Content View</a>.</p>
 <h2 id="features">Features</h2>
@@ -3053,11 +3068,11 @@ statements.</p>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright © 2007-2019, All Rights Reserved, Inflectra</p>
+                <p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

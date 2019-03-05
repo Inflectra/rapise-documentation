@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
@@ -12,7 +12,7 @@
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="/css/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,7 +21,7 @@
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="/js/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
@@ -39,7 +39,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../..">Rapise</a>
+        
+        <a class="navbar-brand" href="../..">Rapise</a>
+        
                 </div>
 
                 <!-- Expanded navigation -->
@@ -962,6 +964,10 @@
     <ul class="dropdown-menu">
             
 <li >
+    <a href="../../Guide/rvl_editor/">Overview</a>
+</li>
+            
+<li >
     <a href="../../RVL/Overview/">About</a>
 </li>
     </ul>
@@ -1009,20 +1015,6 @@
             
 <li >
     <a href="../../RVL/Loops/">Loops</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Objects</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../RVL/RVLObject/">RVL Object</a>
-</li>
-            
-<li >
-    <a href="../../RVL/MapObject/">Map Object</a>
 </li>
     </ul>
   </li>
@@ -1093,6 +1085,10 @@
 </li>
             
 <li >
+    <a href="../Session/">Session</a>
+</li>
+            
+<li >
     <a href="../Spreadsheet/">Spreadsheet</a>
 </li>
             
@@ -1102,6 +1098,20 @@
             
 <li >
     <a href="../WebDriver/">WebDriver</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">RVL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../RVL/">RVL Object</a>
+</li>
+            
+<li >
+    <a href="../Map/">Map Object</a>
 </li>
     </ul>
   </li>
@@ -2838,16 +2848,24 @@
 </li>
                                     
 <li >
+    <a href="../../Guide/setting_up_web_browsers/">Setting Up Web Browsers</a>
+</li>
+                                    
+<li >
     <a href="../../Manuals/Preparing_for_Android_Testing/">Preparing for Android Testing</a>
 </li>
                                     
 <li >
     <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing for iOS Testing</a>
 </li>
+                                    
+<li >
+    <a href="../../Guide/setting_up_selenium/">Setting Up Selenium</a>
+</li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="../../Manuals/kb/">Knowledge Base</a>
+                                <a href="../../Manuals/kb/">KB</a>
                             </li>
                             <li >
                                 <a href="http://www.uitestingplayground.com/">UITAP</a>
@@ -2857,18 +2875,15 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                                <i class="fa fa-search"></i>
                             </a>
                         </li>
                             <li >
                                 <a rel="next" href="../ses_lib_farpoint/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
+                                    <i class="fa fa-arrow-left"></i></a>
                             </li>
                             <li >
-                                <a rel="prev" href="../FarPointGridAX/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
+                                <a rel="prev" href="../FarPointGridAX/"><i class="fa fa-arrow-right"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.inflectra.com">Inflectra</a>
@@ -3165,11 +3180,11 @@
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright © 2007-2019, All Rights Reserved, Inflectra</p>
+                <p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
