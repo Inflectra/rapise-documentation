@@ -29,7 +29,7 @@ Latest version of Dynamics CRM is called **Dynamics 365 for Sales**. It is also 
 All  versions of Dynamics CRM are completely web-based and use a web browser to access the user interface. Therefore when recording a test using Rapise, you use the same web browser libraries that you use to record other [web tests](web_testing.md):
 
 - Most of the Dynamics CRM user interface will be tested using the **standard browser library** for your web browser of choice (e.g. Internet Explorer HTML, Firefox HTML, and Chrome HTML).
-- In addition, there are special controls inside CRM that Rapise has specialized support for. For that reason you'll also see the **DomDynamicsCrm** library added to your test as well as the browser one. This **DomDynamicsCrm** library adds additional rules that identify certain CRM objects to make testing easier.
+- In addition, there are special controls inside CRM that Rapise has specialized support for. For that reason you'll also see the [DomDynamicsCrm](/Libraries/ses_lib_dynamicscrm/) library added to your test as well as the browser one. This **DomDynamicsCrm** library adds additional rules that identify certain CRM objects to make testing easier.
 
 When you record your first test, you'll get the following library selection code generated automatically by Rapise:
 
