@@ -282,7 +282,9 @@ pages:
         #salesforce
 - 'Manuals':
     - 'Rapise Installation Guide': 'Manuals/Rapise_Installation_Guide.md'
+    - 'Setting Up Web Browsers': 'Guide/setting_up_web_browsers.md'
     - 'Preparing for Android Testing': 'Manuals/Preparing_for_Android_Testing.md'
     - 'Preparing for iOS Testing': 'Manuals/Preparing_for_iOS_Testing.md'
-- 'Knowledge Base': 'Manuals/kb.md'
+    - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
+- 'KB': 'Manuals/kb.md'
 - 'UITAP': 'http://www.uitestingplayground.com/'
