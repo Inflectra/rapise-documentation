@@ -9,7 +9,12 @@ the various templates. The custom theme should only need to define a main.html
 which `{% extends "base.html" %}` and defines various blocks which will replace
 the blocks defined in base.html and its included child templates.
 #}
+
       {%- block site_name %}
+        {% if config.hide_site_name %}
+        {% else %}
+        <a class="navbar-brand" href="{{ nav.homepage.url|url }}">{{ config.site_name }}</a>
+        {% endif %}
       {%- endblock %}
                   
       {%- block site_meta %}

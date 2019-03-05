@@ -4,6 +4,7 @@ repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://rapisedoc.inflectra.com/
 site_description: Rapise Test Automation platform documentation
+hide_site_name: True
 plugins:
   - search:
       prebuild_index: True
