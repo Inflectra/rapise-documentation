@@ -1,9 +1,9 @@
 pushd %~dp0
 cd tools
-python mkdocsyml.py --filters "'UITAP'" "repo_name:" "repo_url:"
+python mkdocsyml.py --output ../mkdocslocal.yml --filters "'UITAP'" "repo_name:" "repo_url:"
 popd
 
-mkdocs build --clean
+mkdocs build --config-file mkdocslocal.yml --clean
 
 copy /y inflectra_mkdocs\search\* site\search\
 

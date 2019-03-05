@@ -1,11 +1,9 @@
 site_name: Rapise
 copyright: © Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |
+repo_name: Inflectra
+repo_url: https://www.inflectra.com
 site_url: https://rapisedoc.inflectra.com/
 site_description: Rapise Test Automation platform documentation
-hide_site_name: True
-plugins:
-  - search:
-      prebuild_index: True
 theme:
     name: mkdocs
     custom_dir: inflectra_mkdocs
@@ -674,3 +672,4 @@ pages:
     - 'Preparing for Android Testing': 'Manuals/Preparing_for_Android_Testing.md'
     - 'Preparing for iOS Testing': 'Manuals/Preparing_for_iOS_Testing.md'
 - 'Knowledge Base': 'Manuals/kb.md'
+- 'UITAP': 'http://www.uitestingplayground.com/'
