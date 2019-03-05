@@ -2901,6 +2901,7 @@
             <li><a href="#all-conditions">All Conditions</a></li>
             <li><a href="#and-or-conditions">And, Or Conditions</a></li>
             <li><a href="#examples">Examples</a></li>
+            <li><a href="#short-condition-syntax">Short Condition Syntax</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -2929,7 +2930,7 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>--</td>
 <td>Param</td>
 <td></td>
 <td></td>
@@ -2937,7 +2938,7 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>--</td>
 <td>Condition</td>
 <td></td>
 <td><em>param1 == param2</em></td>
@@ -2945,7 +2946,7 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>--</td>
 <td>Param</td>
 <td></td>
 <td></td>
@@ -2968,7 +2969,7 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>--</td>
 <td>Action</td>
 <td>MyButton</td>
 <td>GetText</td>
@@ -2976,7 +2977,7 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>--</td>
 <td>Condition</td>
 <td></td>
 <td><em>outpu1 == param2</em></td>
@@ -2984,7 +2985,7 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>--</td>
 <td>Param</td>
 <td></td>
 <td></td>
@@ -3007,7 +3008,7 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>--</td>
 <td>Action</td>
 <td>MyButton1</td>
 <td>GetText</td>
@@ -3015,7 +3016,7 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>--</td>
 <td>Condition</td>
 <td></td>
 <td><em>outpu1 != output2</em></td>
@@ -3023,7 +3024,7 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>--</td>
 <td>Action</td>
 <td>MyButton2</td>
 <td>GetText</td>
@@ -3046,7 +3047,7 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>--</td>
 <td>Param</td>
 <td></td>
 <td></td>
@@ -3054,7 +3055,7 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td>--</td>
 <td>Condition</td>
 <td></td>
 <td><em>param1 IsFalse</em></td>
@@ -3077,18 +3078,18 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
 <td>Action</td>
 <td>MyButton</td>
 <td>GetEnabled</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
-<td></td>
 <td>Condition</td>
 <td></td>
 <td><em>outpu1 IsTrue</em></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -3319,10 +3320,10 @@
 <td><code>Result1</code></td>
 </tr>
 <tr>
-<td></td>
 <td>Condition</td>
 <td></td>
 <td><em>param1 IsFalse</em></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3337,10 +3338,10 @@
 <td><code>Result2</code></td>
 </tr>
 <tr>
-<td></td>
 <td>Condition</td>
 <td></td>
 <td><em>param1 IsTrue</em></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3380,10 +3381,10 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
 <td>Condition</td>
 <td></td>
 <td><em>output1 IsFalse</em></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3398,10 +3399,10 @@
 <td><code>Result1</code></td>
 </tr>
 <tr>
-<td></td>
 <td>Condition</td>
 <td></td>
 <td><em>param1 IsTrue</em></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3419,7 +3420,44 @@
 </table>
 <p>This pice forms a condition checking that <em>MyButton</em> is Enabled OR <code>Result2</code> is true at the same time.</p>
 <h2 id="examples">Examples</h2>
-<p>Condition is never used alone. You may find examples of conditions in chapters devoted to <a href="../Assertions/">Assertions</a> and <a href="../IfElse/">If-Then-Else</a>.</p></div>
+<p>Condition is never used alone. You may find examples of conditions in chapters devoted to <a href="../Assertions/">Assertions</a> and <a href="../IfElse/">If-Then-Else</a>.</p>
+<h2 id="short-condition-syntax">Short Condition Syntax</h2>
+<p>All binary conditions with <code>param2</code> take 3 rows. Sometimes it is more convenient to use shorter 2 row syntax where <code>param2</code> value is specified on the same row as the condition itself:</p>
+<table>
+<thead>
+<tr>
+<th>...</th>
+<th><em>Type</em></th>
+<th>...</th>
+<th><em>Action</em></th>
+<th><em>ParamName</em></th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--</td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param1</td>
+<td></td>
+</tr>
+<tr>
+<td>--</td>
+<td>Condition</td>
+<td></td>
+<td><em>param1 == param2</em></td>
+<td><strong>param2</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Here is the same condition presented in 3 rows (default) and 2 rows (short) form:</p>
+<p><img alt="2 row condition syntax" src="../img/Conditions_2Row.png" /></p>
+<p>2 rows condition syntax together with <a href="../IfElse/">If-Else</a> may be used to mimic a <code>switch</code> statement:</p>
+<p><img alt="IfElse_Switch" src="../img/Conditions_IfElseSwitch.png" /></p>
+<p>If there is an <code>Action</code> result used insted of <code>param</code> then it is recommended to first save it to the <a href="../Variables/">Variable</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3428,7 +3466,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
+                shortcuts = {"previous": 80, "help": 191, "next": 78, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

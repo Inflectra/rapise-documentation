@@ -2899,6 +2899,7 @@
         <li class="main active"><a href="#playback">Playback</a></li>
             <li><a href="#purpose">Purpose</a></li>
             <li><a href="#usage">Usage</a></li>
+            <li><a href="#test-execution-monitor">Test Execution Monitor</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
 </div></div>
@@ -2927,6 +2928,16 @@
 <p><img alt="test results.zoom70" src="../img/playback3.png" /></p>
 </li>
 </ol>
+<h2 id="test-execution-monitor">Test Execution Monitor</h2>
+<p>Shows test execution status during playback.</p>
+<p><img alt="playback_execution_monitor" src="../img/playback2.png" /></p>
+<ul>
+<li>Progress bar shows test execution progress. This is just an estimate (number of actions executed compared to previous number of actions)</li>
+<li><code>Passed:</code>, <code>Failed:</code>, <code>Unresolved:</code> - number of actions with corresponding execution status.</li>
+<li><strong>Stop</strong> (Ctrl+Shift+F12) - terminate execution.</li>
+<li><strong>Pause</strong> - hold test execution until another press of the same button.</li>
+<li><strong>Hide</strong> - hide execution monitor itself. The monitor can be turned off at all in the <a href="../options_dialog/">Options</a> dialog.</li>
+</ul>
 <h2 id="see-also">See Also</h2>
 <ul>
 <li>For more information about the report, see <a href="../automated_reporting/">Automated Reporting</a>.</li>
@@ -2941,7 +2952,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
+                shortcuts = {"previous": 80, "help": 191, "next": 78, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
