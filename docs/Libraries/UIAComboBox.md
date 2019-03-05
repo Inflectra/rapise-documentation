@@ -19,6 +19,8 @@ Extends SeSSimulatedObject.
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
+| [ItemNameByIndex](#ItemNameByIndex) | Returns item name by its index. | GetItemNameByIndex |  |
+| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
 | [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
@@ -41,6 +43,43 @@ Extends SeSSimulatedObject.
 <!-- ============================== property detail ========================== -->
 	
 ### Property Detail
+		
+<a name="ItemNameByIndex"></a>
+#### ItemNameByIndex
+
+
+Returns item name by its index.'false' if name is not found.
+
+			
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| index | number | Index of the item |
+
+
+	
+			
+Type: string|boolean
+			
+			
+Accessors: GetItemNameByIndex
+			
+		
+<a name="SelectedIndex"></a>
+#### SelectedIndex
+
+
+Index of the selected element of the object.
+
+			
+	
+			
+Type: number
+			
+			
+Accessors: GetSelectedIndex, SetSelectedIndex
+			
 		
 <a name="Text"></a>
 #### Text
