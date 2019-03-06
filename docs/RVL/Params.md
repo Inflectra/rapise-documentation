@@ -80,8 +80,7 @@ Which is equivalent to:
     | Param      |            |            |  **param2**     | **string**     | **Text2**       
 
 
-
-This allows saving space while keeping same readability.
+This allows saving space while keeping same readability. See also [short condition syntax](Conditions.md#short-condition-syntax) for real live example of mixed rows usage.
 
 ## Map Params
 
