@@ -1,4 +1,4 @@
-# Properties Dialog
+# Properties View
 
 ## Screenshot
 
