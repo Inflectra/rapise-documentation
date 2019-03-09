@@ -26,7 +26,7 @@ In addition to viewing the object hierarchy and object properties, you can perfo
 - **Highlight** - This will attempt to Flash (highlight with a red rectangle) the object selected in the Spy.
 - **Refresh** - this simply refreshes the Spy view to reflect any changes that might have occurred in the application.
 - **Save to File** - this will save the properties of the currently selected object to a text file.
-- **SAve Type Information** - this will save information about UI Automation object properties and patterns to a text file.
+- **Save Type Information** - this will save information about UI Automation object properties and patterns to a text file.
 
 ![spy_dialog_uiautomation_popup](./img/object_spy_uiautomation2.png)
 

@@ -34,18 +34,11 @@ In addition, a working sample of manual testing is available from [Spira](spira_
 
 ## See Also
 
-* [Manual Recording](manual_testing_recording.md)
-
-* [Manual Playback](manual_testing_playback.md)
-
-* [Exploratory Testing Tutorial](tutorial_custom_library.md)
-
-* Dialogs, Views and Menus
-
-* * [Manual Toolbar](menu_and_toolbars.md#manual-toolbar)
-
-* * [Manual Test Editor](manual_test_editor.md)
-
-* * [Manual Playback](manual_playback.md)
-
-* * [Incident Logging](incident_logging.md)
+- [Manual Recording](manual_testing_recording.md)
+- [Manual Playback](manual_testing_playback.md)
+- [Exploratory Testing Tutorial](tutorial_custom_library.md)
+- Dialogs, Views and Menus
+    - [Manual Toolbar](menu_and_toolbars.md#manual-toolbar)
+    - [Manual Test Editor](manual_test_editor.md)
+    - [Manual Playback](manual_playback.md)
+    - [Incident Logging](incident_logging.md)
