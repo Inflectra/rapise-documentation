@@ -959,65 +959,53 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-  <li class="dropdown-submenu">
-    <a href="#">Overview</a>
-    <ul class="dropdown-menu">
-            
 <li >
-    <a href="../rvl_editor/">Overview</a>
+    <a href="../rvl_editor/">RVl Editor</a>
 </li>
-            
-<li >
-    <a href="../../RVL/Overview/">About</a>
-</li>
-    </ul>
-  </li>
                                     
-  <li class="dropdown-submenu">
-    <a href="#">Features</a>
-    <ul class="dropdown-menu">
-            
+<li >
+    <a href="../../RVL/Overview/">Why RVL</a>
+</li>
+                                    
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-            
+                                    
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-            
+                                    
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-            
+                                    
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-            
-<li >
-    <a href="../../RVL/Variables/">Variables</a>
-</li>
-            
-<li >
-    <a href="../../RVL/Assertions/">Assertions</a>
-</li>
-            
-<li >
-    <a href="../../RVL/IfElse/">If_Else</a>
-</li>
-            
+                                    
 <li >
     <a href="../../RVL/Params/">Parameters</a>
 </li>
-            
+                                    
+<li >
+    <a href="../../RVL/Variables/">Variables</a>
+</li>
+                                    
+<li >
+    <a href="../../RVL/Assertions/">Assertions</a>
+</li>
+                                    
+<li >
+    <a href="../../RVL/IfElse/">If Else</a>
+</li>
+                                    
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-            
+                                    
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
-    </ul>
-  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -2900,7 +2888,8 @@
             <li><a href="#purpose">Purpose</a></li>
             <li><a href="#usage">Usage</a></li>
             <li><a href="#locator-parameters">Locator Parameters</a></li>
-            <li><a href="#over-riding-locator-parameters">Over-riding Locator Parameters</a></li>
+            <li><a href="#over-riding-locator-parameters-rvl">Over-riding Locator Parameters (RVL)</a></li>
+            <li><a href="#over-riding-locator-parameters-js">Over-riding Locator Parameters (JS)</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
 </div></div>
@@ -2909,7 +2898,8 @@
 <h1 id="object-locator">Object Locator</h1>
 <h2 id="purpose">Purpose</h2>
 <p>Object locators are created during <a href="../recording/">Recording</a>/<a href="../object_learning/">Learning</a> and used during <a href="../playback/">Playback</a> to identify <a href="../object_learning/">learned objects</a> and <a href="../simulated_objects/">simulated objects</a>. There are many types of locators.</p>
-<p>For example <a href="/LIbraries/ses_lib_generic"><strong>Generic</strong> library</a> supports 4:</p>
+<p>In most libraries (Web, Desktop, Mobile) only one locator is generated when you record or learn an object.</p>
+<p>Legacy <a href="../../Libraries/ses_lib_generic/"><strong>Generic</strong></a> library supports 4 different locators added each time you learn or record object:</p>
 <ul>
 <li><strong>Location</strong>: This locator uses the object's index relative to encapsulating objects for identification. The location is stored as a period separated list of indexes. For instance, 1.2.3 would be "the third object in the second object in the first object."  The name, class, and role of the object are also stored.</li>
 <li><strong>LocationPath</strong>: This locator remembers name, class, and role property information for the object and all of its encapsulating objects.</li>
@@ -2917,6 +2907,9 @@
 <li><strong>Ordinal</strong>: This locator creates an array of object name/object class combinations.  Each object is assigned an index in  the array.</li>
 </ul>
 <h2 id="usage">Usage</h2>
+<p>The locator for the selected object is shown in the <a href="../properties/">Properties</a> view:</p>
+<p><img alt="properties dialog" src="../img/properties1.png" /></p>
+<h3 id="how-locators-are-stored">How Locators are Stored</h3>
 <p>The locator for each object is specified in <code>saved_script_objects</code> array in <strong>Objects.js</strong> of a test. Locator information is stored in <code>locations</code> array of each object.</p>
 <pre><code class="javascript">&quot;Simulated&quot;: {
     &quot;locations&quot;: [
@@ -2971,7 +2964,9 @@
 &quot;object_role&quot;: &quot;param:object_role&quot;
 </code></pre>
 
-<h2 id="over-riding-locator-parameters">Over-riding Locator Parameters</h2>
+<h2 id="over-riding-locator-parameters-rvl">Over-riding Locator Parameters (RVL)</h2>
+<p>See <a href="../../Libraries/RVL/#locatoropts">RVL.SetLocatorOpts</a> to override any locator parameters. See also this <a href="https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx">KB Article</a> for more detailed example.</p>
+<h2 id="over-riding-locator-parameters-js">Over-riding Locator Parameters (JS)</h2>
 <p>You can over-ride the information used to locate your object at runtime.  Normally, to refer to an object, you use the SeS function:</p>
 <pre><code class="javascript">SeS('Username')
 </code></pre>
@@ -3009,7 +3004,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"previous": 80, "help": 191, "search": 83, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
