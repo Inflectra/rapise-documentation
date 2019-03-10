@@ -82,7 +82,7 @@ If a piece of information in the locator matches a piece of object info (`object
 
 ## Over-riding Locator Parameters (RVL)
 
-See [RVL.SetLocatorOpts](../Libraries/RVL.md#locatoropts) to override any locator parameters. See also this [KB Article](https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx) for more detailed example.
+See also [RVL.SetLocatorOpts](../Libraries/RVL.md#locatoropts) and this [KB Article](https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx) for more detailed explanation and example of overriding locator parameters in RVL.
 
 ## Over-riding Locator Parameters (JS)
 
