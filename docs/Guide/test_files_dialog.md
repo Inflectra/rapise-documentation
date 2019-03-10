@@ -1,6 +1,5 @@
 # Test Files View
 
-## Screenshot
 ![test files dialog](./img/test_files_dialog1.png)
 
 ## Purpose
@@ -26,7 +25,7 @@ The **Test Files** dialog is part of the [Default Layout](restoring_the_default_
 
 Right click on a folder to see:
 
-![test files dialog, context menu 1](./img/test_files_dialog2.png)
+![test files view, context menu 1](./img/test_files_dialog2.png)
 
 * **Create...**
 * * **Text File...**: Create `.txt` file and add it to the test.
@@ -47,7 +46,7 @@ Right click on a folder to see:
 
 Right click on a file to see:
 
-![test files dialog, context menu 2](./img/test_files_dialog3.png)
+![test files view, context menu 2](./img/test_files_dialog3.png)
 
 * **Open**: Open the file in Rapise.
 * **Open Externally...**: Open the file using associated program. E.g. if a Notepad is registered in Windows to open TXT files, then TXT file will be opened by Notepad.

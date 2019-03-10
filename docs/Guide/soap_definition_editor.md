@@ -1,7 +1,5 @@
 # SOAP Definition Editor
 
-## Screenshot
-
 ![soap_definition_editor](./img/soap_definition_editor1.png)
 
 ## Purpose
@@ -26,7 +24,7 @@ The invoke tab lets you visually choose a specific SOAP operation and execute it
 
 *   `Invoke` - Once you have supplied the appropriate values, click the Invoke button send the SOAP request and get the data back from the request.
 
-*   `Record` - Clicking this button after a successful invoke of the operation will add it to the list of recorded test scripts shown in the [SOAP Script Steps](#soap-script-steps) output tab.        
+*   `Record` - Clicking this button after a successful invoke of the operation will add it to the list of recorded test scripts shown in the [SOAP Script Steps](#soap-script-steps) output tab.
 
 *   `Verify` - Clicking this button after the Record will add a `Tester.Assert(...)` [verification checkpoint](checkpoints.md) to the recorded test script. This will make Rapise automatically verify all of the returned values.
 

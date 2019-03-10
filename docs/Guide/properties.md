@@ -1,12 +1,10 @@
 # Properties View
 
-## Screenshot
-
 ![properties dialog](./img/properties1.png)
 
 ## Purpose
 
-To display the properties of the object, file, or folder you last clicked on.  Objects are in the [Object Tree Dialog](object_tree.md) and files/folders are in the [Test Files Dialog](test_files_dialog.md).
+To display the properties of the object, file, or folder you last clicked on.  Objects are in the [Object Tree View](object_tree.md) and files/folders are in the [Test Files View](test_files_dialog.md).
 
 Some properties are longer than fit into the editor field. So you may use `...` button:
 

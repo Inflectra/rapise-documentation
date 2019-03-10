@@ -1,6 +1,5 @@
 # Errors View
 
-## Screenshot
 ![errors view](./img/errors_view1.png)
 
 ## Purpose

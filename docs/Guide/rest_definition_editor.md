@@ -1,8 +1,6 @@
 # REST Definition Editor
 
-## Screenshot
-
-![rest\_definition\_editor](./img/rest_definition_editor_overview.png)
+![rest_definition_editor](./img/rest_definition_editor_overview.png)
 
 ## Purpose
 
@@ -20,7 +18,7 @@ Or, you can double-click on an existing `.rest` file in the [Test Files View](te
 
 The request form has several sections that you need to populate:
 *   **Method** - the type of HTTP request being made (GET, POST, PUT, DELETE, etc.)
-*   **URL** - the URL of the web service request with any parameter tokens included (e.g. {session\_id} in our example above)
+*   **URL** - the URL of the web service request with any parameter tokens included (e.g. {session_id} in our example above)
 *   **Credentials** - Any HTTP Basic Authentication Headers
 *   **Headers** - Any other HTTP headers (both standard and custom)
 *   **Parameters** - Any parameters that have been defined in the URL that will be called from the Rapise test script.
@@ -30,15 +28,15 @@ The request form has several sections that you need to populate:
 
 The HTTP Response Headers are displayed:
 
-![rest\_definition\_editor\_headers](./img/rest_definition_editor4.png)
+![rest_definition_editor_headers](./img/rest_definition_editor4.png)
 
 The HTTP Response in XML format is formatted and displayed:
 
-![rest\_definition\_editor\_xml](./img/rest_definition_editor5.png)
+![rest_definition_editor_xml](./img/rest_definition_editor5.png)
 
 The HTTP Response in JSON format is formatted and displayed:
 
-![rest\_definition\_editor\_json](./img/rest_definition_editor6.png)
+![rest_definition_editor_json](./img/rest_definition_editor6.png)
 
 This displays the output from the last web service request. It has several tabs:
 *   **Response Header** - Displays a list of the HTTP response headers (name and value). If the request received a `200 OK` code back, it's displayed in green, if it receives an error code back, it's displayed in red.
@@ -49,7 +47,7 @@ This displays the output from the last web service request. It has several tabs:
 
 ## Operation Explorer
 
-![rest\_definition\_editor\_explorer](./img/rest_definition_editor7.png)
+![rest_definition_editor_explorer](./img/rest_definition_editor7.png)
 
 This section lets you add, open, delete and clone REST requests in the definition file.
 

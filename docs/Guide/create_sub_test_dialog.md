@@ -1,7 +1,5 @@
 # Create Sub-Test Dialog
 
-## Screenshot
-
 ![create sub test dialog](./img/create_sub_test_dialog1.png)
 
 ## Purpose

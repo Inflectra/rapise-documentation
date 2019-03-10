@@ -18,11 +18,11 @@ Define the function inside of one of the following functions: **Test()**, **Test
 
 It is recommended to put all user functions into `User.js` file available in any test from its creation.
 
-![test files dialog, user script](./img/defining_functions1.png)
+![test files, user script](./img/defining_functions1.png)
 
 This file is automatically attached into every script. All variables and functions defined in it may be used in the test. User-defined functions are also available under the **User Functions** node in the Object Tree:
 
-![object tree dialog user functions](./img/defining_functions2.png)
+![object tree view user functions](./img/defining_functions2.png)
 
 ## In an External File
 

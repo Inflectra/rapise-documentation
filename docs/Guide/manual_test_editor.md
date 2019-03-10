@@ -1,7 +1,5 @@
 # Manual Test Editor
 
-## Screenshot
-
 ![manual_test_editor](./img/manual_test_editor1.png)
 
 ## Purpose

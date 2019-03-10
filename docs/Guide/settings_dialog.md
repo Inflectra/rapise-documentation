@@ -1,7 +1,5 @@
 # Test Settings View
 
-## Screenshot
-
 ![settings dialog](./img/settings_dialog1.png)
 
 ## Purpose

@@ -1,10 +1,7 @@
 # Toolbar: SpreadSheet Editor
 ## Ribbon Tab: Spreadsheet
 
-### Screenshot
-
 ![Spreadsheet](./img/toolbar_spreadsheet1.png)
-
 
 ### Purpose
 
@@ -121,8 +118,6 @@ The Cells section provides the following options:
 * * **Organize Sheets** - this option lets you rename the name of the sheet.
 
 ## Ribbon Tab: View
-
-### Screenshot
 
 ![toolbar-view](./img/toolbar_view1.png)
 

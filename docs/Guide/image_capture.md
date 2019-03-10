@@ -1,7 +1,5 @@
 # Image Capture
 
-## Screenshot
-
 ![image\_editor](./img/image_capture1.png)
 
 ## Purpose

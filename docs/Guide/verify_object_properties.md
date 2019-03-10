@@ -1,7 +1,5 @@
 # Verify Object Properties Dialog
 
-## Screenshot
-
 ![verify object properties dialog](./img/verify_object_properties1.png)
 
 ## Purpose

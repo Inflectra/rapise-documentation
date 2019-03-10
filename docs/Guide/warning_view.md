@@ -1,7 +1,5 @@
 # Warning View
 
-## Screenshot
-
 ![warning view](./img/warning_view1.png)
 
 ## Purpose
