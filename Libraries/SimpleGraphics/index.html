@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3138,6 +3150,7 @@
 <p><a name="DoAction"></a>    </p>
 <h4 id="doaction">DoAction()</h4>
 <p>Performs default action for an object. If the object doesn't have default action then 'LClick' is performed.</p>
+<p><a name="see.also.simplegraphics.doaction"></a></p>
 <p><a name="DoAnalogPlay"></a>    </p>
 <h4 id="doanalogplaypath-left-top">DoAnalogPlay(path, left, top)</h4>
 <p>Plays analog recording using coordinates relative to this object.</p>
@@ -3168,6 +3181,7 @@
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.simplegraphics.doanalogplay"></a></p>
 <p><a name="DoClick"></a>    </p>
 <h4 id="doclickclicktype-xoffset-yoffset">DoClick(clickType, xOffset, yOffset)</h4>
 <p>Performs left click at the center of an object. It is a customizable variant of LClick action.</p>
@@ -3200,15 +3214,19 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if operation is successful, 'false' otherwise</p>
+<p><a name="see.also.simplegraphics.doclick"></a></p>
 <p><a name="DoEnsureVisible"></a>    </p>
 <h4 id="doensurevisible">DoEnsureVisible()</h4>
 <p>Makes sure specified element is visible on the screen.</p>
+<p><a name="see.also.simplegraphics.doensurevisible"></a></p>
 <p><a name="DoLButtonDown"></a>    </p>
 <h4 id="dolbuttondown">DoLButtonDown()</h4>
 <p>Performs left mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoLButtonUp', otherwise it may lock mouse cursor.</p>
+<p><a name="see.also.simplegraphics.dolbuttondown"></a></p>
 <p><a name="DoLButtonUp"></a>    </p>
 <h4 id="dolbuttonup">DoLButtonUp()</h4>
 <p>Performs left mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoLButtonDown', otherwise it will have no effect.</p>
+<p><a name="see.also.simplegraphics.dolbuttonup"></a></p>
 <p><a name="DoLClick"></a>    </p>
 <h4 id="dolclickx-y">DoLClick(x, y)</h4>
 <p>Performs a left click at the center of an object or at the specified location.</p>
@@ -3236,6 +3254,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if operation is successful, 'false' otherwise</p>
+<p><a name="see.also.simplegraphics.dolclick"></a></p>
 <p><a name="DoLDClick"></a>    </p>
 <h4 id="doldclickx-y">DoLDClick(x, y)</h4>
 <p>Performs a left double click at the center of an object or at the specified location.</p>
@@ -3263,12 +3282,15 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if operation is successful, 'false' otherwise</p>
+<p><a name="see.also.simplegraphics.doldclick"></a></p>
 <p><a name="DoMButtonDown"></a>    </p>
 <h4 id="dombuttondown">DoMButtonDown()</h4>
 <p>Performs middle mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoMButtonUp', otherwise it may lock mouse cursor.</p>
+<p><a name="see.also.simplegraphics.dombuttondown"></a></p>
 <p><a name="DoMButtonUp"></a>    </p>
 <h4 id="dombuttonup">DoMButtonUp()</h4>
 <p>Performs middle mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoMButtonDown', otherwise it will have no effect.</p>
+<p><a name="see.also.simplegraphics.dombuttonup"></a></p>
 <p><a name="DoMClick"></a>    </p>
 <h4 id="domclickx-y">DoMClick(x, y)</h4>
 <p>Performs a middle click at the center of an object or at the specified location.</p>
@@ -3296,6 +3318,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if operation is successful, 'false' otherwise</p>
+<p><a name="see.also.simplegraphics.domclick"></a></p>
 <p><a name="DoMDClick"></a>    </p>
 <h4 id="domdclickx-y">DoMDClick(x, y)</h4>
 <p>Performs a middle double click at the center of an object or at the specified location.</p>
@@ -3323,6 +3346,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if operation is successful, 'false' otherwise</p>
+<p><a name="see.also.simplegraphics.domdclick"></a></p>
 <p><a name="DoMouseMove"></a>    </p>
 <h4 id="domousemovex-y">DoMouseMove(x, y)</h4>
 <p>Moves mouse cursor to a location relative to this object position.</p>
@@ -3348,12 +3372,15 @@
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.simplegraphics.domousemove"></a></p>
 <p><a name="DoRButtonDown"></a>    </p>
 <h4 id="dorbuttondown">DoRButtonDown()</h4>
 <p>Performs right mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoRButtonUp', otherwise it may lock mouse cursor.</p>
+<p><a name="see.also.simplegraphics.dorbuttondown"></a></p>
 <p><a name="DoRButtonUp"></a>    </p>
 <h4 id="dorbuttonup">DoRButtonUp()</h4>
 <p>Performs right mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoRButtonDown', otherwise it will have no effect.</p>
+<p><a name="see.also.simplegraphics.dorbuttonup"></a></p>
 <p><a name="DoRClick"></a>    </p>
 <h4 id="dorclickx-y">DoRClick(x, y)</h4>
 <p>Performs a right click at the center of an object or at the specified location.</p>
@@ -3381,6 +3408,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if operation is successful, 'false' otherwise</p>
+<p><a name="see.also.simplegraphics.dorclick"></a></p>
 <p><a name="DoRDClick"></a>    </p>
 <h4 id="dordclickx-y">DoRDClick(x, y)</h4>
 <p>Performs a right double click at the center of an object or at the specified location.</p>
@@ -3408,6 +3436,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if operation is successful, 'false' otherwise</p>
+<p><a name="see.also.simplegraphics.dordclick"></a></p>
 <p><a name="DoSendKeys"></a>    </p>
 <h4 id="dosendkeyskeys">DoSendKeys(keys)</h4>
 <p>Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a></p>
@@ -3427,7 +3456,8 @@
 <td>A sequence of keystrokes.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<p><a name="see.also.simplegraphics.dosendkeys"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3436,7 +3466,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

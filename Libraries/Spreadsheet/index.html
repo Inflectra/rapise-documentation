@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3035,11 +3047,13 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doaddcolumn"></a></p>
 <p><a name="DoAddRow"></a>    </p>
 <h4 id="doaddrow">DoAddRow()</h4>
 <p>Appends a new row.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doaddrow"></a></p>
 <p><a name="DoAttach"></a>    </p>
 <h4 id="doattachfilename-sheetname-separator">DoAttach(fileName, sheetName, separator)</h4>
 <p>Loads a sheet from Excel file (.xls, <em>.xlsx) or csv file (</em>.txt, *.csv).</p>
@@ -3072,6 +3086,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doattach"></a></p>
 <p><a name="DoCompare"></a>    </p>
 <h4 id="docomparespreadsheet1-spreadsheet2-strict-sheet1name-sheet2name">DoCompare(spreadsheet1, spreadsheet2, strict, sheet1Name, sheet2Name)</h4>
 <p>Compares two spreadsheets. In strict mode number of columns and rows matter 
@@ -3115,6 +3130,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if spreadsheets are equal, false otherwise.</p>
+<p><a name="see.also.spreadsheet.docompare"></a></p>
 <p><a name="DoCreate"></a>    </p>
 <h4 id="docreatefilename-sheetname-columnnames-rowcount-separator">DoCreate(fileName, sheetName, columnNames, rowCount, separator)</h4>
 <p>Creates a new spreadsheet file.</p>
@@ -3157,6 +3173,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.docreate"></a></p>
 <p><a name="DoInsertColumn"></a>    </p>
 <h4 id="doinsertcolumncolumnindex-name">DoInsertColumn(columnIndex, name)</h4>
 <p>Inserts a column at index.</p>
@@ -3184,6 +3201,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doinsertcolumn"></a></p>
 <p><a name="DoInsertRow"></a>    </p>
 <h4 id="doinsertrowrowindex">DoInsertRow(rowIndex)</h4>
 <p>Inserts a new row at index.</p>
@@ -3206,16 +3224,19 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doinsertrow"></a></p>
 <p><a name="DoMoveToFirstRow"></a>    </p>
 <h4 id="domovetofirstrow">DoMoveToFirstRow()</h4>
 <p>Moves to a first row in selected range.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.domovetofirstrow"></a></p>
 <p><a name="DoMoveToLastRow"></a>    </p>
 <h4 id="domovetolastrow">DoMoveToLastRow()</h4>
 <p>Moves to a last row in selected range.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.domovetolastrow"></a></p>
 <p><a name="DoMoveToRow"></a>    </p>
 <h4 id="domovetorowindex">DoMoveToRow(index)</h4>
 <p>Sets active row index.</p>
@@ -3238,6 +3259,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.domovetorow"></a></p>
 <p><a name="DoRandom"></a>    </p>
 <h4 id="dorandom">DoRandom()</h4>
 <p>Selects random row and column in the range. The range is either set by SetRange
@@ -3245,6 +3267,7 @@ or it is the default range that includes all rows (except first row
 which is considred to contain column names) and columns on the sheet.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: false if the spreadhseet is not attached, true otherwise.</p>
+<p><a name="see.also.spreadsheet.dorandom"></a></p>
 <p><a name="DoRemoveColumn"></a>    </p>
 <h4 id="doremovecolumncolumnindex">DoRemoveColumn(columnIndex)</h4>
 <p>Removes a column at index.</p>
@@ -3267,6 +3290,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doremovecolumn"></a></p>
 <p><a name="DoRemoveRow"></a>    </p>
 <h4 id="doremoverowrowindex">DoRemoveRow(rowIndex)</h4>
 <p>Removes a row at index.</p>
@@ -3289,6 +3313,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doremoverow"></a></p>
 <p><a name="DoSave"></a>    </p>
 <h4 id="dosavefilename">DoSave(fileName)</h4>
 <p>Saves the spreadsheet.</p>
@@ -3311,6 +3336,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.dosave"></a></p>
 <p><a name="DoSequential"></a>    </p>
 <h4 id="dosequential">DoSequential()</h4>
 <p>Advances to the next row in the range. The range is either set by SetRange
@@ -3320,6 +3346,7 @@ When the end of the range is reached DoSequential stays at the last
 row in the range and returns 'false'.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: false if being called when active row is the last row or the spreadsheet is not attached, true otherwise.</p>
+<p><a name="see.also.spreadsheet.dosequential"></a></p>
 <p><a name="GetCell"></a>    </p>
 <h4 id="getcellcolumnid-rowid">GetCell(columnId, rowId)</h4>
 <p>Cell value by its coordinates. Refers to active cell value after DoSequental or DoRandom if params not set.</p>
@@ -3347,11 +3374,13 @@ row in the range and returns 'false'.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: Getter returns string with cell value and null in the case of error. Setter returns true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.getcell"></a></p>
 <p><a name="GetColumnCount"></a>    </p>
 <h4 id="getcolumncount">GetColumnCount()</h4>
 <p>Gets columns count.</p>
 <p><strong>Returns:</strong></p>
 <p>number: Number of columns in the spreadsheet. -1 if no spreadsheet is attached.</p>
+<p><a name="see.also.spreadsheet.getcolumncount"></a></p>
 <p><a name="GetColumnIndexByName"></a>    </p>
 <h4 id="getcolumnindexbynamename">GetColumnIndexByName(name)</h4>
 <p>Gets column index by its name.</p>
@@ -3374,6 +3403,7 @@ row in the range and returns 'false'.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>number: column index if found, or -1.</p>
+<p><a name="see.also.spreadsheet.getcolumnindexbyname"></a></p>
 <p><a name="GetColumnName"></a>    </p>
 <h4 id="getcolumnnameindex">GetColumnName(index)</h4>
 <p>Gets column name.</p>
@@ -3396,26 +3426,31 @@ row in the range and returns 'false'.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: Name of a column in the spreadsheet. Null in the case of error.</p>
+<p><a name="see.also.spreadsheet.getcolumnname"></a></p>
 <p><a name="GetCurrentRowIndex"></a>    </p>
 <h4 id="getcurrentrowindex">GetCurrentRowIndex()</h4>
 <p>Gets zero-based active row index.</p>
 <p><strong>Returns:</strong></p>
 <p>number: Active row index.</p>
+<p><a name="see.also.spreadsheet.getcurrentrowindex"></a></p>
 <p><a name="GetEOF"></a>    </p>
 <h4 id="geteof">GetEOF()</h4>
 <p>Gets EOF state.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: false if spreadsheet is attached and active row and column point to existing cell, true otherwise.</p>
+<p><a name="see.also.spreadsheet.geteof"></a></p>
 <p><a name="GetRange"></a>    </p>
 <h4 id="getrange">GetRange()</h4>
 <p>Cell range used in DoSequental and in DoRandom.</p>
 <p><strong>Returns:</strong></p>
 <p>object: Spreadsheet state object: { startRow, endRow, startCol, endCol, activeRow, activeColumn }.</p>
+<p><a name="see.also.spreadsheet.getrange"></a></p>
 <p><a name="GetRowCount"></a>    </p>
 <h4 id="getrowcount">GetRowCount()</h4>
 <p>Gets row count.</p>
 <p><strong>Returns:</strong></p>
 <p>number: Number of rows in the spreadsheet including the row with column names. -1 if no spreadsheet is attached.</p>
+<p><a name="see.also.spreadsheet.getrowcount"></a></p>
 <p><a name="SetCell"></a>    </p>
 <h4 id="setcellvalue-columnid-rowid">SetCell(value, columnId, rowId)</h4>
 <p>Sets cell value by its coordinates. Sets active cell value after DoSequental or DoRandom if params not set.</p>
@@ -3448,6 +3483,7 @@ row in the range and returns 'false'.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.setcell"></a></p>
 <p><a name="SetRange"></a>    </p>
 <h4 id="setrangestartrow-endrow-startcol-endcol">SetRange(startRow, endRow, startCol, endCol)</h4>
 <p>Cell range used in DoSequental and in DoRandom.</p>
@@ -3484,7 +3520,8 @@ row in the range and returns 'false'.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>boolean: true if successfull, false otherwise.</p></div>
+<p>boolean: true if successfull, false otherwise.</p>
+<p><a name="see.also.spreadsheet.setrange"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3493,7 +3530,7 @@ row in the range and returns 'false'.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

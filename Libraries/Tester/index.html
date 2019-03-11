@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3077,6 +3089,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.assert"></a></p>
 <p><a name="AssertEqual"></a>    </p>
 <h4 id="assertequalmessage-obj1-obj2-data-tags">AssertEqual(message, obj1, obj2, data, tags)</h4>
 <p>Checks if obj1 equals to obj2 and saves corresponding Report entry.
@@ -3119,6 +3132,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.assertequal"></a></p>
 <p><a name="AssertImage"></a>    </p>
 <h4 id="assertimagemessage-img1-path-data-tags">AssertImage(message, img1, path, data, tags)</h4>
 <p>Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
@@ -3161,6 +3175,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.assertimage"></a></p>
 <p><a name="BeginTest"></a>    </p>
 <h4 id="begintestname-path">BeginTest(name, path)</h4>
 <p>Marks beginning of a test with a given name.</p>
@@ -3186,6 +3201,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.begintest"></a></p>
 <p><a name="CaptureDesktopImage"></a>    </p>
 <h4 id="capturedesktopimagecaption">CaptureDesktopImage(caption)</h4>
 <p>Captures image of the desktop and adds it to the report.</p>
@@ -3206,6 +3222,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.capturedesktopimage"></a></p>
 <p><a name="CaptureObjectImage"></a>    </p>
 <h4 id="captureobjectimagecaption-objid">CaptureObjectImage(caption, objId)</h4>
 <p>Captures image of an object and adds it to the report.</p>
@@ -3231,6 +3248,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.captureobjectimage"></a></p>
 <p><a name="CaptureWindowImage"></a>    </p>
 <h4 id="capturewindowimagecaption-windowtitle-windowclass-bringtofront">CaptureWindowImage(caption, windowTitle, windowClass, bringToFront)</h4>
 <p>Captures image of an application window matched by title and class and adds it to the report.</p>
@@ -3266,9 +3284,11 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.capturewindowimage"></a></p>
 <p><a name="EndTest"></a>    </p>
 <h4 id="endtest">EndTest()</h4>
 <p>Marks end of a currently executed test. Calculates test results and performs finalization of test execution.</p>
+<p><a name="see.also.tester.endtest"></a></p>
 <p><a name="FailTest"></a>    </p>
 <h4 id="failtestmessage">FailTest(message)</h4>
 <p>Stops test execution and sets it's status to failed.</p>
@@ -3289,6 +3309,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.failtest"></a></p>
 <p><a name="GetReportAttribute"></a>    </p>
 <h4 id="getreportattributename">GetReportAttribute(name)</h4>
 <p>Gets report attribute previously set by PushReportAttribute or SetReportAttribute.</p>
@@ -3309,6 +3330,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.getreportattribute"></a></p>
 <p><a name="GetTestStatus"></a>    </p>
 <h4 id="getteststatus">GetTestStatus()</h4>
 <p>Gets status of currently executed test.</p>
@@ -3318,6 +3340,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
     Tester.Pass - test passed;
     Tester.Fail - test failed;
     Tester.Unresolved - test status is unresolved, test terminated unexpectedly.</p>
+<p><a name="see.also.tester.getteststatus"></a></p>
 <p><a name="IgnoreStatus"></a>    </p>
 <h4 id="ignorestatusignore">IgnoreStatus(ignore)</h4>
 <p>In IgnoreStatus mode the assertion status is always treated as "Info".
@@ -3351,6 +3374,7 @@ just for information purposes (i.e. it does not affect final test status).</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.ignorestatus"></a></p>
 <p><a name="Message"></a>    </p>
 <h4 id="messagemessage-data-tags">Message(message, data, tags)</h4>
 <p>Saves corresponding Report message.
@@ -3382,6 +3406,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.message"></a></p>
 <p><a name="MessageBox"></a>    </p>
 <h4 id="messageboxmessage">MessageBox(message)</h4>
 <p>Shows message box to user. Use it for verbose and manual testing.</p>
@@ -3402,6 +3427,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.messagebox"></a></p>
 <p><a name="MessageBoxPrompt"></a>    </p>
 <h4 id="messageboxpromptquestion">MessageBoxPrompt(question)</h4>
 <p>Shows message box with question to the user and checks if user presses "Yes" or "No".
@@ -3424,6 +3450,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.messageboxprompt"></a></p>
 <p><a name="PopReportAttribute"></a>    </p>
 <h4 id="popreportattributename">PopReportAttribute(name)</h4>
 <p>Resets an attribute to its previous value. See PushReportAttribute for more information.</p>
@@ -3446,6 +3473,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: Previous value. Null if no such stacked attribute found.</p>
+<p><a name="see.also.tester.popreportattribute"></a></p>
 <p><a name="PushReportAttribute"></a>    </p>
 <h4 id="pushreportattributename-value">PushReportAttribute(name, value)</h4>
 <p>Maintains "stacked" attributes. Useful for nesting. </p>
@@ -3495,6 +3523,7 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.pushreportattribute"></a></p>
 <p><a name="ResetReportAttribute"></a>    </p>
 <h4 id="resetreportattributename">ResetReportAttribute(name)</h4>
 <p>Removes report attribute previously set by SetReportAttribute.</p>
@@ -3515,6 +3544,7 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.resetreportattribute"></a></p>
 <p><a name="SetReportAttribute"></a>    </p>
 <h4 id="setreportattributename-value">SetReportAttribute(name, value)</h4>
 <p>Set persistent attribute. It will be set for all subsequent report items
@@ -3542,6 +3572,7 @@ the ResetReportAttribute function.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.tester.setreportattribute"></a></p>
 <p><a name="SuppressReport"></a>    </p>
 <h4 id="suppressreportsuppress">SuppressReport(suppress)</h4>
 <p>In SuppressReport mode all assertions are ignored. That means no lines are added to report and all statuses are treated as "Info".
@@ -3570,7 +3601,8 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
 <td>Set to 'True' to suppress adding anything into the report.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<p><a name="see.also.tester.suppressreport"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3579,7 +3611,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

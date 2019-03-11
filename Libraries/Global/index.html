@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3080,6 +3092,7 @@ record or learn this object, it is always automatically available in any test.</
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.global.doanalogplay"></a></p>
 <p><a name="DoAppActivate"></a>    </p>
 <h4 id="doappactivatetitle">DoAppActivate(title)</h4>
 <p>Activates window with the specified title. I.e. Global.DoAppActivate("Calculator")
@@ -3103,6 +3116,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 </table>
 <p>See:</p>
 <p><a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/wzcddbek%28VS.85%29.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for AppActivate</a></p>
+<p><a name="see.also.global.doappactivate"></a></p>
 <p><a name="DoClick"></a>    </p>
 <h4 id="doclickclicktype">DoClick(clickType)</h4>
 <p>Performs mouse click at the current position.</p>
@@ -3123,6 +3137,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.global.doclick"></a></p>
 <p><a name="DoCompareJsObjects"></a>    </p>
 <h4 id="docomparejsobjectsmsg-obj1-obj2">DoCompareJsObjects(msg, obj1, obj2)</h4>
 <p>Compares two JavaScript objects and prints differences to the report.</p>
@@ -3155,6 +3170,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if two objects are equal, 'false' otherwise.</p>
+<p><a name="see.also.global.docomparejsobjects"></a></p>
 <p><a name="DoDecrypt"></a>    </p>
 <h4 id="dodecryptencryptedtext">DoDecrypt(encryptedText)</h4>
 <p>Decrypts a piece of text.</p>
@@ -3177,6 +3193,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: Decrypted text.</p>
+<p><a name="see.also.global.dodecrypt"></a></p>
 <p><a name="DoEncrypt"></a>    </p>
 <h4 id="doencryptplaintext">DoEncrypt(plainText)</h4>
 <p>Encrypts a piece of text.</p>
@@ -3199,6 +3216,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: Encrypted text.</p>
+<p><a name="see.also.global.doencrypt"></a></p>
 <p><a name="DoInvokeTest"></a>    </p>
 <h4 id="doinvoketestpathtotest-optionalparams">DoInvokeTest(pathToTest, optionalParams)</h4>
 <p>Invokes another test (aka subtest). The subtest should have the
@@ -3227,6 +3245,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if the test passed, 'false' otherwise.</p>
+<p><a name="see.also.global.doinvoketest"></a></p>
 <p><a name="DoKillByName"></a>    </p>
 <h4 id="dokillbynameprocessname">DoKillByName(processName)</h4>
 <p>Terminates a given process.</p>
@@ -3249,6 +3268,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if the process was terminated, 'false' otherwise.</p>
+<p><a name="see.also.global.dokillbyname"></a></p>
 <p><a name="DoKillByPid"></a>    </p>
 <h4 id="dokillbypidpid">DoKillByPid(pid)</h4>
 <p>Terminates a given process or the last process created by DoLaunch if 'pid' is not specified.</p>
@@ -3271,6 +3291,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if the process was terminated, 'false' otherwise.</p>
+<p><a name="see.also.global.dokillbypid"></a></p>
 <p><a name="DoLaunch"></a>    </p>
 <h4 id="dolaunchcmdline-wrkdir-attachifexists-attachtowindow">DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)</h4>
 <p>Executes a command specified in cmdLine. Optionally one may specify working dir, and window name
@@ -3309,6 +3330,7 @@ to attach if it is already launched.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>number: ID of the new process (positive number) or an error code (negative number)</p>
+<p><a name="see.also.global.dolaunch"></a></p>
 <p><a name="DoLoadObjects"></a>    </p>
 <h4 id="doloadobjectsobjectsfilepath">DoLoadObjects(objectsFilePath)</h4>
 <p>Loads objects from external .objects.js file.</p>
@@ -3331,6 +3353,7 @@ to attach if it is already launched.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>Object: saved_script_objects or null if the load was unsuccessful.</p>
+<p><a name="see.also.global.doloadobjects"></a></p>
 <p><a name="DoMessageBox"></a>    </p>
 <h4 id="domessageboxprompt-buttons">DoMessageBox(prompt, buttons)</h4>
 <p>Shows message box (popup message) to a user.</p>
@@ -3394,6 +3417,7 @@ to attach if it is already launched.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>number: A number representation of a button pressed by user.</p>
+<p><a name="see.also.global.domessagebox"></a></p>
 <p><a name="DoMouseMove"></a>    </p>
 <h4 id="domousemovex-y-duration">DoMouseMove(x, y, duration)</h4>
 <p>Moves mouse to the specified position.</p>
@@ -3424,6 +3448,7 @@ to attach if it is already launched.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.global.domousemove"></a></p>
 <p><a name="DoPlayManual"></a>    </p>
 <h4 id="doplaymanualrmtfilepath-rmtparams">DoPlayManual(rmtFilePath, rmtParams)</h4>
 <p>Executes a manual test. Results are shown in the report of the calling test.</p>
@@ -3451,6 +3476,7 @@ to attach if it is already launched.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if the manual test passed, 'false' otherwise.</p>
+<p><a name="see.also.global.doplaymanual"></a></p>
 <p><a name="DoRunTestSet"></a>    </p>
 <h4 id="doruntestsettestsetfilepath-testsetparams">DoRunTestSet(testSetFilePath, testSetParams)</h4>
 <p>Executes a test set. Results are shown in the report of the calling test.</p>
@@ -3476,6 +3502,7 @@ to attach if it is already launched.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.global.doruntestset"></a></p>
 <p><a name="DoSendKeys"></a>    </p>
 <h4 id="dosendkeyskeys">DoSendKeys(keys)</h4>
 <p>Sends series of keystrokes to a currently focused application.</p>
@@ -3498,6 +3525,7 @@ to attach if it is already launched.</p>
 </table>
 <p>See:</p>
 <p><a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a></p>
+<p><a name="see.also.global.dosendkeys"></a></p>
 <p><a name="DoSleep"></a>    </p>
 <h4 id="dosleepmillis1000">DoSleep(millis=1000)</h4>
 <p>Pauses execution for given number of milliseconds (1000 = 1 second).</p>
@@ -3518,6 +3546,7 @@ to attach if it is already launched.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.global.dosleep"></a></p>
 <p><a name="DoTrim"></a>    </p>
 <h4 id="dotrimstr-global-trimchars">DoTrim(str, global, trimChars)</h4>
 <p>Strips leading and trailing white-space from a string, replaces sequences of whitespace 
@@ -3552,6 +3581,7 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: Trimmed string.</p>
+<p><a name="see.also.global.dotrim"></a></p>
 <p><a name="DoTypePassword"></a>    </p>
 <h4 id="dotypepasswordencryptedpassword">DoTypePassword(encryptedPassword)</h4>
 <p>Types encrypted password into a control which has a focus.</p>
@@ -3574,6 +3604,7 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: 'true'</p>
+<p><a name="see.also.global.dotypepassword"></a></p>
 <p><a name="DoWaitFor"></a>    </p>
 <h4 id="dowaitforobjectid-timeout-sleeptimeiffound">DoWaitFor(objectId, timeout, sleepTimeIfFound)</h4>
 <p>Waits for object specified by objectId to become available. Function returns if object
@@ -3607,6 +3638,7 @@ was found or timeout.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link> | <br>Boolean: Found object or 'false'.</p>
+<p><a name="see.also.global.dowaitfor"></a></p>
 <p><a name="DoWaitForProperty"></a>    </p>
 <h4 id="dowaitforpropertyobj-gettername-propvalue-timeout-params">DoWaitForProperty(obj, getterName, propValue, timeout, params)</h4>
 <p>Waits for specified value of object's property. Function returns object handle
@@ -3651,11 +3683,13 @@ in the case of timeout.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link> | <br>Boolean: Found object or 'false'.</p>
+<p><a name="see.also.global.dowaitforproperty"></a></p>
 <p><a name="GetCurrentDir"></a>    </p>
 <h4 id="getcurrentdir">GetCurrentDir()</h4>
 <p>Gets current directory path.</p>
 <p><strong>Returns:</strong></p>
 <p>string: Path of the current directory.</p>
+<p><a name="see.also.global.getcurrentdir"></a></p>
 <p><a name="GetFileAsByteArray"></a>    </p>
 <h4 id="getfileasbytearrayfilename">GetFileAsByteArray(fileName)</h4>
 <p>Reads file and returns its content as array of bytes. May be useful for binary files and for passing data to web services.</p>
@@ -3678,11 +3712,13 @@ in the case of timeout.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>Object: Array of bytes.</p>
+<p><a name="see.also.global.getfileasbytearray"></a></p>
 <p><a name="GetFirstDayOfWeek"></a>    </p>
 <h4 id="getfirstdayofweek">GetFirstDayOfWeek()</h4>
 <p>Returns first day of week for current user.</p>
 <p><strong>Returns:</strong></p>
 <p>number: 0 - Sunday, 1 - Monday.</p>
+<p><a name="see.also.global.getfirstdayofweek"></a></p>
 <p><a name="GetFullPath"></a>    </p>
 <h4 id="getfullpathfilename">GetFullPath(fileName)</h4>
 <p>Constructs an absolute file name using working directory (WORKDIR) of the test.</p>
@@ -3705,26 +3741,31 @@ in the case of timeout.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: Absolute file name.</p>
+<p><a name="see.also.global.getfullpath"></a></p>
 <p><a name="GetOsOwner"></a>    </p>
 <h4 id="getosowner">GetOsOwner()</h4>
 <p>Reads OS registered owner from the registry.</p>
 <p><strong>Returns:</strong></p>
 <p>string: OS registered owner.</p>
+<p><a name="see.also.global.getosowner"></a></p>
 <p><a name="GetOsPath"></a>    </p>
 <h4 id="getospath">GetOsPath()</h4>
 <p>Returns OS root path.</p>
 <p><strong>Returns:</strong></p>
 <p>string: OS root path without the trailing backslash, e.g. 'C:\Windows'.</p>
+<p><a name="see.also.global.getospath"></a></p>
 <p><a name="GetOsType"></a>    </p>
 <h4 id="getostype">GetOsType()</h4>
 <p>Reads OS type from the registry.</p>
 <p><strong>Returns:</strong></p>
 <p>string: OS type string.</p>
+<p><a name="see.also.global.getostype"></a></p>
 <p><a name="GetOsVersion"></a>    </p>
 <h4 id="getosversion">GetOsVersion()</h4>
 <p>Reads OS service pack version from the registry.</p>
 <p><strong>Returns:</strong></p>
 <p>string: Service pack version.</p>
+<p><a name="see.also.global.getosversion"></a></p>
 <p><a name="GetProperty"></a>    </p>
 <h4 id="getpropertyname-defvalue">GetProperty(name, defValue)</h4>
 <p>Reads property value from %WORKDIR%\Config.json.</p>
@@ -3752,6 +3793,7 @@ in the case of timeout.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>string | <br>number | <br>boolean: Propery value. If a property does not exist then defValue is returned. If defValue is not set then null is returned.</p>
+<p><a name="see.also.global.getproperty"></a></p>
 <p><a name="GetSpecialFolderPath"></a>    </p>
 <h4 id="getspecialfolderpathfoldermydocuments">GetSpecialFolderPath(folder=MyDocuments)</h4>
 <p>Returns path to a special folder specified by one of possible values.
@@ -3801,6 +3843,7 @@ in the case of timeout.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>string: System specified folder path without the trailing backslash, e.g. 'C:\Program Files'.</p>
+<p><a name="see.also.global.getspecialfolderpath"></a></p>
 <p><a name="SetFileAsByteArray"></a>    </p>
 <h4 id="setfileasbytearrayfilename-bytes">SetFileAsByteArray(fileName, bytes)</h4>
 <p>Creates or rewrites file and fills with contents of the provided byte array.</p>
@@ -3828,6 +3871,7 @@ in the case of timeout.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>number: Number of bytes written.</p>
+<p><a name="see.also.global.setfileasbytearray"></a></p>
 <p><a name="SetProperty"></a>    </p>
 <h4 id="setpropertyname-value">SetProperty(name, value)</h4>
 <p>Sets property value to %WORKDIR%\Config.json. If the file does not exist it will be created.</p>
@@ -3854,7 +3898,8 @@ in the case of timeout.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>boolean: 'true' if property value set successfully, 'false' otherwise.</p></div>
+<p>boolean: 'true' if property value set successfully, 'false' otherwise.</p>
+<p><a name="see.also.global.setproperty"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3863,7 +3908,7 @@ in the case of timeout.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

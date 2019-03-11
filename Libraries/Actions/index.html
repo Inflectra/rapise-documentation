@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -2974,6 +2986,7 @@
 <p>Builds the sequence of actions.</p>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.build"></a></p>
 <p><a name="Click"></a>    </p>
 <h4 id="clickel">Click(el)</h4>
 <p>Clicks the mouse on the specified element. 
@@ -2997,6 +3010,7 @@ If no element is specified clicks the mouse at the last known mouse coordinates.
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.click"></a></p>
 <p><a name="ClickAndHold"></a>    </p>
 <h4 id="clickandholdel">ClickAndHold(el)</h4>
 <p>Clicks and holds the mouse button down on the specified element.
@@ -3020,6 +3034,7 @@ If no element is specified clicks and holds the mouse button at the last known m
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.clickandhold"></a></p>
 <p><a name="ContextClick"></a>    </p>
 <h4 id="contextclickel">ContextClick(el)</h4>
 <p>Right-clicks the mouse on the specified element.
@@ -3043,6 +3058,7 @@ If no element is specified right-clicks the mouse at the last known mouse coordi
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.contextclick"></a></p>
 <p><a name="DoubleClick"></a>    </p>
 <h4 id="doubleclickel">DoubleClick(el)</h4>
 <p>Double-clicks the mouse on the specified element.
@@ -3066,6 +3082,7 @@ If no element is specified double-clicks the mouse at the last known mouse coord
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.doubleclick"></a></p>
 <p><a name="DragAndDrop"></a>    </p>
 <h4 id="draganddropsource-target">DragAndDrop(source, target)</h4>
 <p>Performs a drag-and-drop operation from one element to another.</p>
@@ -3093,6 +3110,7 @@ If no element is specified double-clicks the mouse at the last known mouse coord
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.draganddrop"></a></p>
 <p><a name="DragAndDropToOffset"></a>    </p>
 <h4 id="draganddroptooffsetsource-offsetx-offsety">DragAndDropToOffset(source, offsetX, offsetY)</h4>
 <p>Performs a drag-and-drop operation on one element to a specified offset.</p>
@@ -3125,6 +3143,7 @@ If no element is specified double-clicks the mouse at the last known mouse coord
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.draganddroptooffset"></a></p>
 <p><a name="KeyDown"></a>    </p>
 <h4 id="keydownthekey-el">KeyDown(theKey, el)</h4>
 <p>Sends a modifier key down message to the specified element in the browser.
@@ -3153,6 +3172,7 @@ If no element is specified sends a modifier key down message to the browser.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.keydown"></a></p>
 <p><a name="KeyUp"></a>    </p>
 <h4 id="keyupthekey-el">KeyUp(theKey, el)</h4>
 <p>Sends a modifier key up message to the specified element in the browser.
@@ -3181,6 +3201,7 @@ If no element is specified sends a modifier key up message to the browser.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.keyup"></a></p>
 <p><a name="MoveByOffset"></a>    </p>
 <h4 id="movebyoffsetoffsetx-offsety">MoveByOffset(offsetX, offsetY)</h4>
 <p>Moves the mouse to the specified offset of the last known mouse coordinates.</p>
@@ -3208,6 +3229,7 @@ If no element is specified sends a modifier key up message to the browser.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.movebyoffset"></a></p>
 <p><a name="MoveToElement"></a>    </p>
 <h4 id="movetoelementel-offsetx-offsety">MoveToElement(el, offsetX, offsetY)</h4>
 <p>Moves the mouse to the specified offset of the top-left corner of the specified element.
@@ -3241,9 +3263,11 @@ If offset is not specified moves the mouse to the specified element.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.movetoelement"></a></p>
 <p><a name="Perform"></a>    </p>
 <h4 id="perform">Perform()</h4>
 <p>Performs the currently built action.</p>
+<p><a name="see.also.actions.perform"></a></p>
 <p><a name="Release"></a>    </p>
 <h4 id="releaseel">Release(el)</h4>
 <p>Releases the mouse button on the specified element.
@@ -3267,6 +3291,7 @@ If no element is specified releases the mouse button at the last known mouse coo
 </table>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
+<p><a name="see.also.actions.release"></a></p>
 <p><a name="SendKeys"></a>    </p>
 <h4 id="sendkeyskeystosend-el">SendKeys(keysToSend, el)</h4>
 <p>Sends a sequence of keystrokes to the specified element in the browser.
@@ -3294,7 +3319,8 @@ If no element is specified sends a sequence of keystrokes to the browser.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>A self-reference.</p></div>
+<p>A self-reference.</p>
+<p><a name="see.also.actions.sendkeys"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3303,7 +3329,7 @@ If no element is specified sends a sequence of keystrokes to the browser.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

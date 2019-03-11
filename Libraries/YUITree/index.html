@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3054,6 +3066,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
+<p><a name="see.also.yuitree.doclicknode"></a></p>
 <p><a name="DoCollapse"></a>    </p>
 <h4 id="docollapsepath-separator-pathtype">DoCollapse(path, separator, pathType)</h4>
 <p>Collapses specific node in the tree.</p>
@@ -3086,6 +3099,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
+<p><a name="see.also.yuitree.docollapse"></a></p>
 <p><a name="DoExpand"></a>    </p>
 <h4 id="doexpandpath-separator-pathtype">DoExpand(path, separator, pathType)</h4>
 <p>Expands specific node in the tree.</p>
@@ -3118,6 +3132,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
+<p><a name="see.also.yuitree.doexpand"></a></p>
 <p><a name="DoFindChild"></a>    </p>
 <h4 id="dofindchildpath-separator-pathtype-expand">DoFindChild(path, separator, pathType, expand)</h4>
 <p>Finds child node by its path from the current node and remembers it as the current node. If current node is not set then Root node is used.</p>
@@ -3155,6 +3170,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>HTMLObject: HTMLObject of the found node</p>
+<p><a name="see.also.yuitree.dofindchild"></a></p>
 <p><a name="DoFindNode"></a>    </p>
 <h4 id="dofindnodepath-separator-pathtype-expand">DoFindNode(path, separator, pathType, expand)</h4>
 <p>Searches for specific node in the tree and remembers it as the current node.</p>
@@ -3192,6 +3208,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>HTMLObject: HTMLObject of the found node</p>
+<p><a name="see.also.yuitree.dofindnode"></a></p>
 <p><a name="DoGetPath"></a>    </p>
 <h4 id="dogetpathpathtype-separator">DoGetPath(pathType, separator)</h4>
 <p>Returns path to the current node.</p>
@@ -3218,7 +3235,8 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>string: Path to the current node</p></div>
+<p>string: Path to the current node</p>
+<p><a name="see.also.yuitree.dogetpath"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3227,7 +3245,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

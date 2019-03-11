@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -2980,6 +2992,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>true, if successfull</p>
+<p><a name="see.also.database.doattach"></a></p>
 <p><a name="DoMoveToRow"></a>    </p>
 <h4 id="domovetorowrowind">DoMoveToRow(rowInd)</h4>
 <p>Moves to a given row.</p>
@@ -3000,22 +3013,26 @@
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.database.domovetorow"></a></p>
 <p><a name="DoRandom"></a>    </p>
 <h4 id="dorandom">DoRandom()</h4>
 <p>Selects random row and column in the recordset.</p>
 <p><strong>Returns:</strong></p>
 <p>'false' if the the DB is is not connected, 'true' - otherwise.</p>
+<p><a name="see.also.database.dorandom"></a></p>
 <p><a name="DoSequential"></a>    </p>
 <h4 id="dosequential">DoSequential()</h4>
 <p>Advances to the next row in the table. 
 When the end of the range is reached DoSequential returns 'false'.</p>
 <p><strong>Returns:</strong></p>
 <p>'false' if being called when active row is the last row or the recordset is not attached, 'true' - otherwise.</p>
+<p><a name="see.also.database.dosequential"></a></p>
 <p><a name="GetColumnCount"></a>    </p>
 <h4 id="getcolumncount">GetColumnCount()</h4>
 <p>Gets columns count.</p>
 <p><strong>Returns:</strong></p>
 <p>Number of Columns in the result set.</p>
+<p><a name="see.also.database.getcolumncount"></a></p>
 <p><a name="GetColumnName"></a>    </p>
 <h4 id="getcolumnnameind">GetColumnName(ind)</h4>
 <p>Gets column name.</p>
@@ -3038,19 +3055,23 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>Name of column in the spreadsheet.</p>
+<p><a name="see.also.database.getcolumnname"></a></p>
 <p><a name="GetColumnNames"></a>    </p>
 <h4 id="getcolumnnames">GetColumnNames()</h4>
 <p>Gets column names.</p>
 <p><strong>Returns:</strong></p>
 <p>Array of column names in the table.</p>
+<p><a name="see.also.database.getcolumnnames"></a></p>
 <p><a name="GetCurrentRowIndex"></a>    </p>
 <h4 id="getcurrentrowindex">GetCurrentRowIndex()</h4>
 <p>Get zero based current row index.</p>
+<p><a name="see.also.database.getcurrentrowindex"></a></p>
 <p><a name="GetRowCount"></a>    </p>
 <h4 id="getrowcount">GetRowCount()</h4>
 <p>Gets rows count.</p>
 <p><strong>Returns:</strong></p>
 <p>Number of rows in the result set.</p>
+<p><a name="see.also.database.getrowcount"></a></p>
 <p><a name="GetValue"></a>    </p>
 <h4 id="getvaluecolumnid-rowid">GetValue(columnId, rowId)</h4>
 <p>Gets value by column name, and, optionally, row number. Returns current cell value after DoSequental or DoRandom if params not set.</p>
@@ -3075,7 +3096,8 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <td>Row index. If not set current row is used.<br>Optional.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<p><a name="see.also.database.getvalue"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3084,7 +3106,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

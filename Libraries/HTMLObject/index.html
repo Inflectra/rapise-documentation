@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3290,6 +3302,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.doaddselection"></a></p>
 <p><a name="DoClick"></a>    </p>
 <h4 id="doclickx-y-forceevent">DoClick(x, y, forceEvent)</h4>
 <p>Clicks on HTML element (button, link).</p>
@@ -3322,11 +3335,13 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.doclick"></a></p>
 <p><a name="DoDblClick"></a>    </p>
 <h4 id="dodblclick">DoDblClick()</h4>
 <p>Double-Clicks on HTML element (button, link).</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.dodblclick"></a></p>
 <p><a name="DoDOMChildAt"></a>    </p>
 <h4 id="dodomchildatn">DoDOMChildAt(n)</h4>
 <p>Returns n-th child (zero-based).</p>
@@ -3349,11 +3364,13 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Object: n-th child.</p>
+<p><a name="see.also.htmlobject.dodomchildat"></a></p>
 <p><a name="DoDOMChildrenCount"></a>    </p>
 <h4 id="dodomchildrencount">DoDOMChildrenCount()</h4>
 <p>Returns number of children elements for this one.</p>
 <p><strong>Returns:</strong></p>
 <p>number: Number of children elements.</p>
+<p><a name="see.also.htmlobject.dodomchildrencount"></a></p>
 <p><a name="DoDOMConvert"></a>    </p>
 <h4 id="dodomconverttype">DoDOMConvert(type)</h4>
 <p>Creates a clone of this object converted to a requested type.</p>
@@ -3376,6 +3393,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Object: New Object of requested type or HTMLObject if type not found, null if error occur.</p>
+<p><a name="see.also.htmlobject.dodomconvert"></a></p>
 <p><a name="DoDOMFindParentWithAttribute"></a>    </p>
 <h4 id="dodomfindparentwithattributeattrname-match">DoDOMFindParentWithAttribute(attrName, match)</h4>
 <p>Returns parent element (if any) with given attribute matching given string or 'regex:...' expression.</p>
@@ -3403,6 +3421,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Object: Matched element or 'null'.</p>
+<p><a name="see.also.htmlobject.dodomfindparentwithattribute"></a></p>
 <p><a name="DoDOMGetAttribute"></a>    </p>
 <h4 id="dodomgetattributeattrname">DoDOMGetAttribute(attrName)</h4>
 <p>Returns specified attribute.</p>
@@ -3425,26 +3444,31 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Object: Attribute value.</p>
+<p><a name="see.also.htmlobject.dodomgetattribute"></a></p>
 <p><a name="DoDOMGetAttributes"></a>    </p>
 <h4 id="dodomgetattributes">DoDOMGetAttributes()</h4>
 <p>Returns all attributes of a node.</p>
 <p><strong>Returns:</strong></p>
 <p>array: Array of attributes.</p>
+<p><a name="see.also.htmlobject.dodomgetattributes"></a></p>
 <p><a name="DoDOMNextSibling"></a>    </p>
 <h4 id="dodomnextsibling">DoDOMNextSibling()</h4>
 <p>Returns next sibling element for this one.</p>
 <p><strong>Returns:</strong></p>
 <p>Object: Next sibling element.</p>
+<p><a name="see.also.htmlobject.dodomnextsibling"></a></p>
 <p><a name="DoDOMParent"></a>    </p>
 <h4 id="dodomparent">DoDOMParent()</h4>
 <p>Returns parent element having this element.</p>
 <p><strong>Returns:</strong></p>
 <p>Object: Parent element.</p>
+<p><a name="see.also.htmlobject.dodomparent"></a></p>
 <p><a name="DoDOMPrevSibling"></a>    </p>
 <h4 id="dodomprevsibling">DoDOMPrevSibling()</h4>
 <p>Return previous sibling element for this one.</p>
 <p><strong>Returns:</strong></p>
 <p>Object: Previous sibling element.</p>
+<p><a name="see.also.htmlobject.dodomprevsibling"></a></p>
 <p><a name="DoDOMQueryCss"></a>    </p>
 <h4 id="dodomquerycsscss">DoDOMQueryCss(css)</h4>
 <p>Gets array of elements matching CSS selector on this object.</p>
@@ -3467,6 +3491,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>array: Array of matched elements.</p>
+<p><a name="see.also.htmlobject.dodomquerycss"></a></p>
 <p><a name="DoDOMQueryXPath"></a>    </p>
 <h4 id="dodomqueryxpathxpath">DoDOMQueryXPath(xpath)</h4>
 <p>Gets array of elements matching XPath query on this object.</p>
@@ -3489,11 +3514,13 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>array: Array of matched elements.</p>
+<p><a name="see.also.htmlobject.dodomqueryxpath"></a></p>
 <p><a name="DoDOMRoot"></a>    </p>
 <h4 id="dodomroot">DoDOMRoot()</h4>
 <p>Returns Root element having this element.</p>
 <p><strong>Returns:</strong></p>
 <p>Object: Root element having this element.</p>
+<p><a name="see.also.htmlobject.dodomroot"></a></p>
 <p><a name="DoEnsureVisible"></a>    </p>
 <h4 id="doensurevisiblevalign-halign">DoEnsureVisible(vAlign, hAlign)</h4>
 <p>Makes sure specified element is visible on the screen.</p>
@@ -3521,11 +3548,13 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Object: Rectangle of the element if it became visible, 'null' otherwise.</p>
+<p><a name="see.also.htmlobject.doensurevisible"></a></p>
 <p><a name="DoGetRect"></a>    </p>
 <h4 id="dogetrect">DoGetRect()</h4>
 <p>Finds screen rectangle for this object.</p>
 <p><strong>Returns:</strong></p>
 <p>Object: Object {x, y, w, h}</p>
+<p><a name="see.also.htmlobject.dogetrect"></a></p>
 <p><a name="DoGetSelection"></a>    </p>
 <h4 id="dogetselectiondelim">DoGetSelection(delim)</h4>
 <p>Gets selected options text of a SELECT element. Example: 'Option1,Option2'.</p>
@@ -3548,6 +3577,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: String with option values separated by delim.</p>
+<p><a name="see.also.htmlobject.dogetselection"></a></p>
 <p><a name="DoSelect"></a>    </p>
 <h4 id="doselecttxt">DoSelect(txt)</h4>
 <p>Selects specified element in &lt;select&gt; control.</p>
@@ -3570,6 +3600,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.doselect"></a></p>
 <p><a name="DoSetCheck"></a>    </p>
 <h4 id="dosetcheckbcheck">DoSetCheck(bcheck)</h4>
 <p>Sets specified state of check box.</p>
@@ -3592,6 +3623,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.dosetcheck"></a></p>
 <p><a name="DoSetText"></a>    </p>
 <h4 id="dosettexttxt">DoSetText(txt)</h4>
 <p>Sets text for input edit or textarea.</p>
@@ -3613,7 +3645,8 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>boolean: 'true' if successful, 'false' otherwise'</p></div>
+<p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.dosettext"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3622,7 +3655,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

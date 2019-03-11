@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3065,6 +3077,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if browser alert had occurred, 'false' otherwise.</p>
+<p><a name="see.also.navigator.checkobjectexists"></a></p>
 <p><a name="Close"></a>    </p>
 <h4 id="closeurl">Close(url)</h4>
 <p>Closes browser. Finishes session.</p>
@@ -3085,9 +3098,11 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.navigator.close"></a></p>
 <p><a name="Detach"></a>    </p>
 <h4 id="detach">Detach()</h4>
 <p>Disconnects from a browser. Make Navigator ready for a new browser instance connection.</p>
+<p><a name="see.also.navigator.detach"></a></p>
 <p><a name="DoCheckAlert"></a>    </p>
 <h4 id="docheckalertmsg">DoCheckAlert(msg)</h4>
 <p>Waits until browser alert with a given text. Wait timeout is 10 seconds.</p>
@@ -3110,6 +3125,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if browser alert had occurred, 'false' otherwise.</p>
+<p><a name="see.also.navigator.docheckalert"></a></p>
 <p><a name="DoCheckConfirmation"></a>    </p>
 <h4 id="docheckconfirmationmsg-result">DoCheckConfirmation(msg, result)</h4>
 <p>Waits until browser confirmation with a given text.  Wait timeout is 10 seconds.</p>
@@ -3137,6 +3153,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if browser confirmation popup is shown, 'false' otherwise.</p>
+<p><a name="see.also.navigator.docheckconfirmation"></a></p>
 <p><a name="DoCheckPrompt"></a>    </p>
 <h4 id="docheckpromptmsg-result">DoCheckPrompt(msg, result)</h4>
 <p>Waits until browser prompt with a given text.  Wait timeout is 10 seconds.</p>
@@ -3164,6 +3181,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if browser prompt popup is shown, 'false' otherwise.</p>
+<p><a name="see.also.navigator.docheckprompt"></a></p>
 <p><a name="DOMFindByAttributeValue"></a>    </p>
 <h4 id="domfindbyattributevalueattrname-attrvalue-findall-timeout-timeout">DOMFindByAttributeValue(attrName, attrValue, findAll, timeout, timeout)</h4>
 <p>Looks for a web element by specific attribute value through all frames. [attrValue] is checked agains each element's [attrName] attribute.</p>
@@ -3206,6 +3224,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).</p>
+<p><a name="see.also.navigator.domfindbyattributevalue"></a></p>
 <p><a name="DOMFindByName"></a>    </p>
 <h4 id="domfindbynamename-tagname-findall-timeout">DOMFindByName(name, tagName, findAll, timeout)</h4>
 <p>Looks for a web element by its name through all frames. Name is checked agains @name and @id attribute of each element</p>
@@ -3243,6 +3262,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).</p>
+<p><a name="see.also.navigator.domfindbyname"></a></p>
 <p><a name="DOMFindByText"></a>    </p>
 <h4 id="domfindbytexttext-tagname-findall-timeout">DOMFindByText(text, tagName, findAll, timeout)</h4>
 <p>Looks for a web element by its text contents through all frames. [text] is checked agains each element text contents.</p>
@@ -3280,6 +3300,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).</p>
+<p><a name="see.also.navigator.domfindbytext"></a></p>
 <p><a name="DOMFindByXPath"></a>    </p>
 <h4 id="domfindbyxpathxpath-findall-timeout">DOMFindByXPath(xpath, findAll, timeout)</h4>
 <p>Looks for a web element by specific local XPath value through all frames. If XPath is local (i.e. //img) then search will be performed for all images in all nested frames.</p>
@@ -3312,6 +3333,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).</p>
+<p><a name="see.also.navigator.domfindbyxpath"></a></p>
 <p><a name="DoScreenshot"></a>    </p>
 <h4 id="doscreenshotfilename">DoScreenshot(fileName)</h4>
 <p>Makes screenshot of the browser window.</p>
@@ -3332,6 +3354,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.navigator.doscreenshot"></a></p>
 <p><a name="DoSetExpectedConfirmResult"></a>    </p>
 <h4 id="dosetexpectedconfirmresultexpectedres">DoSetExpectedConfirmResult(expectedRes)</h4>
 <p>Set boolean value to return as a result of next browser 'confirm' request.</p>
@@ -3352,6 +3375,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.navigator.dosetexpectedconfirmresult"></a></p>
 <p><a name="DoSetExpectedPromptResult"></a>    </p>
 <h4 id="dosetexpectedpromptresultexpectedres">DoSetExpectedPromptResult(expectedRes)</h4>
 <p>Set text to return as a result of next browser 'prompt' request.</p>
@@ -3372,6 +3396,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.navigator.dosetexpectedpromptresult"></a></p>
 <p><a name="ExecJS"></a>    </p>
 <h4 id="execjsscripttext-obj">ExecJS(scriptText, obj)</h4>
 <p>Executes given JavaScript statement in a browser and returns results.</p>
@@ -3398,6 +3423,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
+<p><a name="see.also.navigator.execjs"></a></p>
 <p><a name="Find"></a>    </p>
 <h4 id="findxpath-url-title-objinfo">Find(xpath, url, title, objInfo)</h4>
 <p>Returns HTMLObject wrapping DOM element for a given 'xpath'. HTMLObject is a 
@@ -3436,6 +3462,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </table>
 <p><strong>Returns:</strong></p>
 <p>HTMLObject wrapping DOM element for a given 'xpath', 'null' if 'xpath' is invalid.</p>
+<p><a name="see.also.navigator.find"></a></p>
 <p><a name="GetPerformance"></a>    </p>
 <h4 id="getperformanceresources-dontwritereport">GetPerformance(resources, dontWriteReport)</h4>
 <p>Reads performance information from currently used browser. Performance numbers
@@ -3465,6 +3492,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 </table>
 <p><strong>Returns:</strong></p>
 <p>number: page open time (in milliseconds)</p>
+<p><a name="see.also.navigator.getperformance"></a></p>
 <p><a name="Navigate"></a>    </p>
 <h4 id="navigateurl">Navigate(url)</h4>
 <p>Redirects browser to a specified URL.</p>
@@ -3485,6 +3513,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.navigator.navigate"></a></p>
 <p><a name="Open"></a>    </p>
 <h4 id="openurl">Open(url)</h4>
 <p>Opens a browser. If URL is specified, goes to URL.</p>
@@ -3505,6 +3534,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.navigator.open"></a></p>
 <p><a name="SelectBrowserProfile"></a>    </p>
 <h4 id="selectbrowserprofileprofilename">SelectBrowserProfile(profileName)</h4>
 <p>Selects browser profile to use for testing.</p>
@@ -3524,7 +3554,8 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 <td>name of a browser profile.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<p><a name="see.also.navigator.selectbrowserprofile"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3533,7 +3564,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

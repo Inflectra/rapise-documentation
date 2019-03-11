@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -2973,6 +2985,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if the text was found, 'false' otherwise.</p>
+<p><a name="see.also.ocr.doclicktextinobject"></a></p>
 <p><a name="DoClickTextInWindow"></a>    </p>
 <h4 id="doclicktextinwindowobjid-text-clicktype">DoClickTextInWindow(objId, text, clickType)</h4>
 <p>Does OCR for a window that contains a given object, finds a given string and clicks on it.</p>
@@ -3005,6 +3018,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if the text was found, 'false' otherwise.</p>
+<p><a name="see.also.ocr.doclicktextinwindow"></a></p>
 <p><a name="DoExtractFromImage"></a>    </p>
 <h4 id="doextractfromimageimg">DoExtractFromImage(img)</h4>
 <p>Does OCR for 'img'.</p>
@@ -3027,6 +3041,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Recognized text or empty string in the case of an error.</p>
+<p><a name="see.also.ocr.doextractfromimage"></a></p>
 <p><a name="DoExtractFromObject"></a>    </p>
 <h4 id="doextractfromobjectobjid">DoExtractFromObject(objId)</h4>
 <p>Does OCR for a given object.</p>
@@ -3049,6 +3064,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Recognized text or empty string in the case of an error.</p>
+<p><a name="see.also.ocr.doextractfromobject"></a></p>
 <p><a name="DoExtractFromScreen"></a>    </p>
 <h4 id="doextractfromscreenleft-top-right-bottom">DoExtractFromScreen(left, top, right, bottom)</h4>
 <p>Does OCR for a given rectangle.</p>
@@ -3086,6 +3102,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Recognized text or empty string in the case of an error.</p>
+<p><a name="see.also.ocr.doextractfromscreen"></a></p>
 <p><a name="DoExtractFromWindow"></a>    </p>
 <h4 id="doextractfromwindowobjid">DoExtractFromWindow(objId)</h4>
 <p>Does OCR for a window that contains a given object.</p>
@@ -3108,6 +3125,7 @@
 </table>
 <p><strong>Returns:</strong></p>
 <p>Recognized text or empty string in the case of an error.</p>
+<p><a name="see.also.ocr.doextractfromwindow"></a></p>
 <p><a name="DoSelectOcrEngine"></a>    </p>
 <h4 id="doselectocrengineocrname">DoSelectOcrEngine(ocrName)</h4>
 <p>Selects OCR engine by name. The name should point to installed OCR engine.</p>
@@ -3127,7 +3145,8 @@
 <td>Name of an OCR engine available to SmarteStudio. For example, 'Textract' or 'Tesseract'.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<p><a name="see.also.ocr.doselectocrengine"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3136,7 +3155,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

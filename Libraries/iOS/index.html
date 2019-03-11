@@ -633,7 +633,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/object_tree/">Object Tree View</a>
+    <a href="../../Guide/object_tree/">Object Tree Dialog</a>
 </li>
             
 <li >
@@ -719,7 +719,7 @@
 </li>
             
 <li >
-    <a href="../../Guide/test_files_dialog/">Test Files View</a>
+    <a href="../../Guide/test_files_dialog/">Test Files Dialog</a>
 </li>
             
 <li >
@@ -959,53 +959,65 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RVL <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Overview</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../Guide/rvl_editor/">RVl Editor</a>
+    <a href="../../Guide/rvl_editor/">Overview</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/Overview/">Why RVL</a>
+    <a href="../../RVL/Overview/">About</a>
 </li>
+    </ul>
+  </li>
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Features</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../../RVL/Columns/">Columns</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Comments/">Comments</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Conditions/">Conditions</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Actions/">Actions</a>
 </li>
-                                    
-<li >
-    <a href="../../RVL/Params/">Parameters</a>
-</li>
-                                    
+            
 <li >
     <a href="../../RVL/Variables/">Variables</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Assertions/">Assertions</a>
 </li>
-                                    
+            
 <li >
-    <a href="../../RVL/IfElse/">If Else</a>
+    <a href="../../RVL/IfElse/">If_Else</a>
 </li>
-                                    
+            
+<li >
+    <a href="../../RVL/Params/">Parameters</a>
+</li>
+            
 <li >
     <a href="../../RVL/Maps/">Maps</a>
 </li>
-                                    
+            
 <li >
     <a href="../../RVL/Loops/">Loops</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
@@ -3000,6 +3012,7 @@ record or learn this object, it is always automatically available in any test.</
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if successful, 'false' otherwise.</p>
+<p><a name="see.also.ios.doflick"></a></p>
 <p><a name="DoGoToUrl"></a>    </p>
 <h4 id="dogotourlurl">DoGoToUrl(url)</h4>
 <p>Opens URL in active browser.</p>
@@ -3022,16 +3035,19 @@ record or learn this object, it is always automatically available in any test.</
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if successful, 'false' otherwise.</p>
+<p><a name="see.also.ios.dogotourl"></a></p>
 <p><a name="DoScreenshot"></a>    </p>
 <h4 id="doscreenshot">DoScreenshot()</h4>
 <p>Makes screenshot of a device.</p>
 <p><strong>Returns:</strong></p>
 <p>'true' if successful, 'false' otherwise.</p>
+<p><a name="see.also.ios.doscreenshot"></a></p>
 <p><a name="DoShake"></a>    </p>
 <h4 id="doshake">DoShake()</h4>
 <p>Shakes device.</p>
 <p><strong>Returns:</strong></p>
 <p>'true' if successful, 'false' otherwise.</p>
+<p><a name="see.also.ios.doshake"></a></p>
 <p><a name="DoSwipe"></a>    </p>
 <h4 id="doswipeendx-endy-startx-starty-duration-touchcount">DoSwipe(endX, endY, startX, startY, duration, touchCount)</h4>
 <p>Swipe action.</p>
@@ -3079,6 +3095,7 @@ record or learn this object, it is always automatically available in any test.</
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if successful, 'false' otherwise.</p>
+<p><a name="see.also.ios.doswipe"></a></p>
 <p><a name="DoTap"></a>    </p>
 <h4 id="dotapx-y-duration-tapcount-touchcount">DoTap(x, y, duration, tapCount, touchCount)</h4>
 <p>Tap screen.</p>
@@ -3121,6 +3138,7 @@ record or learn this object, it is always automatically available in any test.</
 </table>
 <p><strong>Returns:</strong></p>
 <p>'true' if successful, 'false' otherwise.</p>
+<p><a name="see.also.ios.dotap"></a></p>
 <p><a name="GetCapability"></a>    </p>
 <h4 id="getcapabilityname">GetCapability(name)</h4>
 <p>Gets capability with specified name.</p>
@@ -3143,16 +3161,19 @@ record or learn this object, it is always automatically available in any test.</
 </table>
 <p><strong>Returns:</strong></p>
 <p>Capability string.</p>
+<p><a name="see.also.ios.getcapability"></a></p>
 <p><a name="GetContext"></a>    </p>
 <h4 id="getcontext">GetContext()</h4>
 <p>Gets current context.</p>
 <p><strong>Returns:</strong></p>
 <p>Either NATIVE_APP or WEBVIEW_1.</p>
+<p><a name="see.also.ios.getcontext"></a></p>
 <p><a name="GetDeviceOrientation"></a>    </p>
 <h4 id="getdeviceorientation">GetDeviceOrientation()</h4>
 <p>Gets device orientation.</p>
 <p><strong>Returns:</strong></p>
 <p>Device orientation.</p>
+<p><a name="see.also.ios.getdeviceorientation"></a></p>
 <p><a name="SetContext"></a>    </p>
 <h4 id="setcontextname">SetContext(name)</h4>
 <p>Sets context.</p>
@@ -3173,6 +3194,7 @@ record or learn this object, it is always automatically available in any test.</
 </tr>
 </tbody>
 </table>
+<p><a name="see.also.ios.setcontext"></a></p>
 <p><a name="SetDeviceOrientation"></a>    </p>
 <h4 id="setdeviceorientationorientation">SetDeviceOrientation(orientation)</h4>
 <p>Sets device orientation.</p>
@@ -3194,7 +3216,8 @@ record or learn this object, it is always automatically available in any test.</
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Device orientation.</p></div>
+<p>Device orientation.</p>
+<p><a name="see.also.ios.setdeviceorientation"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3203,7 +3226,7 @@ record or learn this object, it is always automatically available in any test.</
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
