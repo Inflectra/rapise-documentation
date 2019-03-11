@@ -290,6 +290,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcheckedlistbox.doaddselection"></a>
 
 <a name="DoCheckItem"></a>    
 #### DoCheckItem(items, separator, itemsType)
@@ -314,6 +315,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcheckedlistbox.docheckitem"></a>
 
 <a name="DoClearSelection"></a>    
 #### DoClearSelection()
@@ -329,6 +331,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcheckedlistbox.doclearselection"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -353,6 +356,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcheckedlistbox.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -377,6 +381,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcheckedlistbox.doselectitem"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, items, separator, itemsType)
@@ -402,6 +407,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcheckedlistbox.dosetcheck"></a>
 
 	
 

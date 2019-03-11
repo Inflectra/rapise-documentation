@@ -225,6 +225,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.dynamicsaxtable.doclickcell"></a>
 
 <a name="DoClickColumn"></a>    
 #### DoClickColumn(col, clickType, xOffset, yOffset)
@@ -245,6 +246,7 @@ Clicks on column header
 
 
 
+<a name="see.also.dynamicsaxtable.doclickcolumn"></a>
 
 <a name="DoScroll"></a>    
 #### DoScroll(horizontalPercent, verticalPercent)
@@ -263,6 +265,7 @@ Scrolls table horizontally and vertically.
 
 
 
+<a name="see.also.dynamicsaxtable.doscroll"></a>
 
 	
 

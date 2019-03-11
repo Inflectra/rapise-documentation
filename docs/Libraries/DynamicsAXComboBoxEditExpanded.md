@@ -55,6 +55,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dynamicsaxcomboboxeditexpanded.doselectitem"></a>
 
 	
 
@@ -136,6 +137,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dynamicsaxcomboboxeditexpanded.dosettext"></a>
 
 	
 

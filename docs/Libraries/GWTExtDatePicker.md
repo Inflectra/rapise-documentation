@@ -80,6 +80,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.gwtextdatepicker.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
 #### DoPrevMonth()
@@ -95,6 +96,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.gwtextdatepicker.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
 #### DoSelectDate(dateValue)
@@ -117,6 +119,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.gwtextdatepicker.doselectdate"></a>
 
 	
 

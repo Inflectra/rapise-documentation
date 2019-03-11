@@ -306,6 +306,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.javaswingtable.doclickcell"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText()
@@ -321,6 +322,7 @@ string | <br>boolean: Full text of the table (may be very long!), 'false' otherw
 
 
 
+<a name="see.also.javaswingtable.dofulltext"></a>
 
 	
 

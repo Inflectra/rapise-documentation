@@ -43,6 +43,7 @@ Presses button using mouse click or default action.
 
 
 
+<a name="see.also.simplebutton.doaction"></a>
 
 	
 

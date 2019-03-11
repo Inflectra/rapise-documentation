@@ -117,6 +117,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultrafontnameeditor.doselectitem"></a>
 
 	
 
@@ -198,6 +199,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultrafontnameeditor.dosettext"></a>
 
 	
 

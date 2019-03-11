@@ -272,6 +272,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iosobject.doaction"></a>
 
 <a name="DoClear"></a>    
 #### DoClear()
@@ -287,6 +288,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iosobject.doclear"></a>
 
 <a name="DoClick"></a>    
 #### DoClick()
@@ -302,6 +304,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iosobject.doclick"></a>
 
 <a name="DoEnsureVisible"></a>    
 #### DoEnsureVisible()
@@ -317,6 +320,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iosobject.doensurevisible"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys(keys)
@@ -339,6 +343,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iosobject.dosendkeys"></a>
 
 <a name="DoTap"></a>    
 #### DoTap()
@@ -354,6 +359,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iosobject.dotap"></a>
 
 <a name="DoTwoFingerTap"></a>    
 #### DoTwoFingerTap()
@@ -369,6 +375,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iosobject.dotwofingertap"></a>
 
 	
 

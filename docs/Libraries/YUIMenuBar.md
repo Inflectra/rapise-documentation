@@ -60,6 +60,7 @@ HTMLObject: HTMLObject of the found node
 
 
 
+<a name="see.also.yuimenubar.dofindchild"></a>
 
 <a name="DoMenu"></a>    
 #### DoMenu(path, separator, pathType)
@@ -84,6 +85,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.yuimenubar.domenu"></a>
 
 	
 

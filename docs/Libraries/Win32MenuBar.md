@@ -83,6 +83,7 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 
 
+<a name="see.also.win32menubar.doclickitem"></a>
 
 	
 
@@ -137,6 +138,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.win32menubar.domenu"></a>
 
 	
 

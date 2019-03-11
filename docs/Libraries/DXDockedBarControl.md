@@ -156,6 +156,7 @@ boolean: 'true' if successful, 'false' otherwise.
 
 
 
+<a name="see.also.dxdockedbarcontrol.doclickitem"></a>
 
 	
 

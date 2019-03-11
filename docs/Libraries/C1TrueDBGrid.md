@@ -192,6 +192,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.c1truedbgrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
 #### DoClickText(textOrRegexp, clickType)
@@ -215,6 +216,7 @@ Clicks on a specific text inside the grid.
 
 
 
+<a name="see.also.c1truedbgrid.doclicktext"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText()
@@ -230,6 +232,7 @@ string: Table's full text
 
 
 
+<a name="see.also.c1truedbgrid.dofulltext"></a>
 
 	
 

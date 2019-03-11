@@ -86,6 +86,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.syncfusionribbon.doclickitem"></a>
 
 <a name="DoSelectTab"></a>    
 #### DoSelectTab(tabName)
@@ -108,6 +109,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.syncfusionribbon.doselecttab"></a>
 
 	
 

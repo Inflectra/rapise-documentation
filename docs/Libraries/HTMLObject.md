@@ -455,6 +455,7 @@ boolean: 'true' if successful, 'false' otherwise'
 
 
 
+<a name="see.also.htmlobject.doaddselection"></a>
 
 <a name="DoClick"></a>    
 #### DoClick(x, y, forceEvent)
@@ -479,6 +480,7 @@ boolean: 'true' if successful, 'false' otherwise'
 
 
 
+<a name="see.also.htmlobject.doclick"></a>
 
 <a name="DoDblClick"></a>    
 #### DoDblClick()
@@ -494,6 +496,7 @@ boolean: 'true' if successful, 'false' otherwise'
 
 
 
+<a name="see.also.htmlobject.dodblclick"></a>
 
 <a name="DoDOMChildAt"></a>    
 #### DoDOMChildAt(n)
@@ -516,6 +519,7 @@ Object: n-th child.
 
 
 
+<a name="see.also.htmlobject.dodomchildat"></a>
 
 <a name="DoDOMChildrenCount"></a>    
 #### DoDOMChildrenCount()
@@ -531,6 +535,7 @@ number: Number of children elements.
 
 
 
+<a name="see.also.htmlobject.dodomchildrencount"></a>
 
 <a name="DoDOMConvert"></a>    
 #### DoDOMConvert(type)
@@ -553,6 +558,7 @@ Object: New Object of requested type or HTMLObject if type not found, null if er
 
 
 
+<a name="see.also.htmlobject.dodomconvert"></a>
 
 <a name="DoDOMFindParentWithAttribute"></a>    
 #### DoDOMFindParentWithAttribute(attrName, match)
@@ -576,6 +582,7 @@ Object: Matched element or 'null'.
 
 
 
+<a name="see.also.htmlobject.dodomfindparentwithattribute"></a>
 
 <a name="DoDOMGetAttribute"></a>    
 #### DoDOMGetAttribute(attrName)
@@ -598,6 +605,7 @@ Object: Attribute value.
 
 
 
+<a name="see.also.htmlobject.dodomgetattribute"></a>
 
 <a name="DoDOMGetAttributes"></a>    
 #### DoDOMGetAttributes()
@@ -613,6 +621,7 @@ array: Array of attributes.
 
 
 
+<a name="see.also.htmlobject.dodomgetattributes"></a>
 
 <a name="DoDOMNextSibling"></a>    
 #### DoDOMNextSibling()
@@ -628,6 +637,7 @@ Object: Next sibling element.
 
 
 
+<a name="see.also.htmlobject.dodomnextsibling"></a>
 
 <a name="DoDOMParent"></a>    
 #### DoDOMParent()
@@ -643,6 +653,7 @@ Object: Parent element.
 
 
 
+<a name="see.also.htmlobject.dodomparent"></a>
 
 <a name="DoDOMPrevSibling"></a>    
 #### DoDOMPrevSibling()
@@ -658,6 +669,7 @@ Object: Previous sibling element.
 
 
 
+<a name="see.also.htmlobject.dodomprevsibling"></a>
 
 <a name="DoDOMQueryCss"></a>    
 #### DoDOMQueryCss(css)
@@ -680,6 +692,7 @@ array: Array of matched elements.
 
 
 
+<a name="see.also.htmlobject.dodomquerycss"></a>
 
 <a name="DoDOMQueryXPath"></a>    
 #### DoDOMQueryXPath(xpath)
@@ -702,6 +715,7 @@ array: Array of matched elements.
 
 
 
+<a name="see.also.htmlobject.dodomqueryxpath"></a>
 
 <a name="DoDOMRoot"></a>    
 #### DoDOMRoot()
@@ -717,6 +731,7 @@ Object: Root element having this element.
 
 
 
+<a name="see.also.htmlobject.dodomroot"></a>
 
 <a name="DoEnsureVisible"></a>    
 #### DoEnsureVisible(vAlign, hAlign)
@@ -740,6 +755,7 @@ Object: Rectangle of the element if it became visible, 'null' otherwise.
 
 
 
+<a name="see.also.htmlobject.doensurevisible"></a>
 
 <a name="DoGetRect"></a>    
 #### DoGetRect()
@@ -755,6 +771,7 @@ Object: Object {x, y, w, h}
 
 
 
+<a name="see.also.htmlobject.dogetrect"></a>
 
 <a name="DoGetSelection"></a>    
 #### DoGetSelection(delim)
@@ -777,6 +794,7 @@ boolean: String with option values separated by delim.
 
 
 
+<a name="see.also.htmlobject.dogetselection"></a>
 
 <a name="DoSelect"></a>    
 #### DoSelect(txt)
@@ -799,6 +817,7 @@ boolean: 'true' if successful, 'false' otherwise'
 
 
 
+<a name="see.also.htmlobject.doselect"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck)
@@ -821,6 +840,7 @@ boolean: 'true' if successful, 'false' otherwise'
 
 
 
+<a name="see.also.htmlobject.dosetcheck"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(txt)
@@ -843,6 +863,7 @@ boolean: 'true' if successful, 'false' otherwise'
 
 
 
+<a name="see.also.htmlobject.dosettext"></a>
 
 	
 

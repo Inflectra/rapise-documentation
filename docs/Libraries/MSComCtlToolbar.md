@@ -156,6 +156,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomctltoolbar.doclickitem"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, nameCaptionIndex)
@@ -179,6 +180,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomctltoolbar.dosetcheck"></a>
 
 	
 

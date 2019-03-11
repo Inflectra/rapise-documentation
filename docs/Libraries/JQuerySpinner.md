@@ -78,6 +78,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.jqueryspinner.dopagedown"></a>
 
 <a name="DoPageUp"></a>    
 #### DoPageUp()
@@ -93,6 +94,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.jqueryspinner.dopageup"></a>
 
 <a name="DoSetValue"></a>    
 #### DoSetValue(value)
@@ -115,6 +117,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.jqueryspinner.dosetvalue"></a>
 
 	
 

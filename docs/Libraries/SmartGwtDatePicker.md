@@ -78,6 +78,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.smartgwtdatepicker.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
 #### DoPrevMonth()
@@ -93,6 +94,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.smartgwtdatepicker.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
 #### DoSelectDate(dateValue)
@@ -115,6 +117,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.smartgwtdatepicker.doselectdate"></a>
 
 	
 

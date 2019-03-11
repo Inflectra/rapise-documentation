@@ -267,6 +267,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultratree.doclickcell"></a>
 
 <a name="DoClickNode"></a>    
 #### DoClickNode(path, separator, pathType, column, clickType, xOffset, yOffset)
@@ -295,6 +296,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultratree.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -319,6 +321,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultratree.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -343,6 +346,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultratree.doexpand"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, path, separator, pathType)
@@ -368,6 +372,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultratree.dosetcheck"></a>
 
 	
 

@@ -132,6 +132,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomlist.docheckitem"></a>
 
 <a name="DoClickItem"></a>    
 #### DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset)
@@ -157,6 +158,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.mscomlist.doclickitem"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(nameCaptionIndex, bSelect)
@@ -180,6 +182,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomlist.doselectitem"></a>
 
 	
 

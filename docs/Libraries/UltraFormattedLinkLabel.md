@@ -102,6 +102,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultraformattedlinklabel.dosettext"></a>
 
 <a name="DoSetValue"></a>    
 #### DoSetValue(val)
@@ -124,6 +125,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultraformattedlinklabel.dosetvalue"></a>
 
 	
 

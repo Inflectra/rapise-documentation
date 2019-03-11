@@ -255,6 +255,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mobilewebobject.doaction"></a>
 
 <a name="DoClear"></a>    
 #### DoClear()
@@ -270,6 +271,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mobilewebobject.doclear"></a>
 
 <a name="DoClick"></a>    
 #### DoClick()
@@ -285,6 +287,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mobilewebobject.doclick"></a>
 
 <a name="DoDoubleClick"></a>    
 #### DoDoubleClick()
@@ -300,6 +303,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mobilewebobject.dodoubleclick"></a>
 
 <a name="DoEnsureVisible"></a>    
 #### DoEnsureVisible()
@@ -315,6 +319,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mobilewebobject.doensurevisible"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys(keys)
@@ -337,6 +342,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mobilewebobject.dosendkeys"></a>
 
 	
 

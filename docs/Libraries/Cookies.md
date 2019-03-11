@@ -51,6 +51,7 @@ Adds a cookie to the current page.
 
 
 
+<a name="see.also.cookies.addcookie"></a>
 
 <a name="AllCookies"></a>    
 #### AllCookies()
@@ -61,6 +62,7 @@ Gets all cookies defined for the current page.
 
 
 
+<a name="see.also.cookies.allcookies"></a>
 
 <a name="DeleteAllCookies"></a>    
 #### DeleteAllCookies()
@@ -71,6 +73,7 @@ Deletes the cookie with the specified name from the page.
 
 
 
+<a name="see.also.cookies.deleteallcookies"></a>
 
 <a name="DeleteCookie"></a>    
 #### DeleteCookie(cookie)
@@ -88,6 +91,7 @@ Deletes the specified cookie from the page.
 
 
 
+<a name="see.also.cookies.deletecookie"></a>
 
 <a name="DeleteCookieNamed"></a>    
 #### DeleteCookieNamed(name)
@@ -105,6 +109,7 @@ Deletes the cookie with the specified name from the page.
 
 
 
+<a name="see.also.cookies.deletecookienamed"></a>
 
 <a name="GetCookieNamed"></a>    
 #### GetCookieNamed(name)
@@ -122,6 +127,7 @@ Gets a cookie with the specified name.
 
 
 
+<a name="see.also.cookies.getcookienamed"></a>
 
 	
 

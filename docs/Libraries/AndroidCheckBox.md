@@ -83,6 +83,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.androidcheckbox.dosetcheck"></a>
 
 	
 

@@ -94,6 +94,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iospageindicator.donextpage"></a>
 
 <a name="DoPrevPage"></a>    
 #### DoPrevPage()
@@ -109,6 +110,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iospageindicator.doprevpage"></a>
 
 <a name="DoSelectPage"></a>    
 #### DoSelectPage(index)
@@ -131,6 +133,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.iospageindicator.doselectpage"></a>
 
 	
 

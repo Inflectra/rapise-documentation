@@ -83,6 +83,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.win32treecheckable.doselectitem"></a>
 
 	
 
@@ -159,6 +160,7 @@ Checks an item of this object.
 
 
 
+<a name="see.also.win32treecheckable.docheckitem"></a>
 
 	
 
@@ -212,6 +214,7 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 
 
+<a name="see.also.win32treecheckable.doexpand"></a>
 
 	
 

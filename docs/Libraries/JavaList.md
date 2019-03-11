@@ -231,6 +231,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javalist.doaddselection"></a>
 
 <a name="DoClearSelection"></a>    
 #### DoClearSelection()
@@ -246,6 +247,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javalist.doclearselection"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -270,6 +272,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javalist.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -294,6 +297,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javalist.doselectitem"></a>
 
 	
 

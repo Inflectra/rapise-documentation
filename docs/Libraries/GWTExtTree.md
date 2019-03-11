@@ -172,6 +172,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.gwtexttree.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -196,6 +197,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.gwtexttree.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -220,6 +222,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.gwtexttree.doexpand"></a>
 
 <a name="DoFindChild"></a>    
 #### DoFindChild(path, separator, pathType, expand)
@@ -245,6 +248,7 @@ HTMLObject: HTMLObject of the found node
 
 
 
+<a name="see.also.gwtexttree.dofindchild"></a>
 
 <a name="DoFindNode"></a>    
 #### DoFindNode(path, separator, pathType, expand)
@@ -270,6 +274,7 @@ HTMLObject: HTMLObject of the found node
 
 
 
+<a name="see.also.gwtexttree.dofindnode"></a>
 
 <a name="DoGetPath"></a>    
 #### DoGetPath(pathType, separator)
@@ -293,6 +298,7 @@ string: Path to the current node
 
 
 
+<a name="see.also.gwtexttree.dogetpath"></a>
 
 	
 

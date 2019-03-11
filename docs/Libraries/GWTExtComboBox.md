@@ -120,6 +120,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.gwtextcombobox.doexpand"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(item)
@@ -142,6 +143,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.gwtextcombobox.doselectitem"></a>
 
 	
 

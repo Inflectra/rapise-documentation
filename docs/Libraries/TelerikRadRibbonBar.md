@@ -61,6 +61,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradribbonbar.doclickapplicationbutton"></a>
 
 <a name="DoClickItem"></a>    
 #### DoClickItem(caption, xOffset, yOffset)
@@ -85,6 +86,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradribbonbar.doclickitem"></a>
 
 <a name="DoClickTab"></a>    
 #### DoClickTab(caption, xOffset, yOffset)
@@ -109,6 +111,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradribbonbar.doclicktab"></a>
 
 	
 

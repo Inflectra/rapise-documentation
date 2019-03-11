@@ -1,6 +1,6 @@
 # Session
 
-Session object.
+Session object for SOAP and REST services.
 
 
 
@@ -143,6 +143,7 @@ Enable URL replacement for all further requests. If request URL starts with oldU
 
 
 
+<a name="see.also.session.seturl"></a>
 
 	
 

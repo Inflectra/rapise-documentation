@@ -132,6 +132,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.domdynamicsaxtabcontrol.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(tabName)
@@ -154,6 +155,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.domdynamicsaxtabcontrol.doexpand"></a>
 
 	
 

@@ -223,6 +223,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uiatree.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -247,6 +248,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uiatree.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -271,6 +273,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uiatree.doexpand"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(path, separator, pathType)
@@ -295,6 +298,7 @@ boolean: 'true' if successful, 'false' otherwise.
 
 
 
+<a name="see.also.uiatree.doselectitem"></a>
 
 	
 

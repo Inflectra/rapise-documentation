@@ -238,6 +238,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomctltreeview20.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -262,6 +263,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomctltreeview20.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -286,6 +288,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomctltreeview20.doexpand"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, path, separator, pathType)
@@ -311,6 +314,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.mscomctltreeview20.dosetcheck"></a>
 
 	
 

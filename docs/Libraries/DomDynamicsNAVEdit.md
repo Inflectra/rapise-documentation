@@ -89,6 +89,7 @@ boolean: 'true' if successful, 'false' otherwise'
 
 
 
+<a name="see.also.domdynamicsnavedit.doclick"></a>
 
 <a name="DoOpen"></a>    
 #### DoOpen(x, y, forceEvent)
@@ -113,6 +114,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsnavedit.doopen"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText()
@@ -128,6 +130,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.domdynamicsnavedit.dosettext"></a>
 
 	
 

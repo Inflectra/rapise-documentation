@@ -62,6 +62,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedmenustrip.doclickitem"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText(separator, filePath, append, includeSeparators)
@@ -87,6 +88,7 @@ number | <br>boolean: Text representation of the menu, 'true' if the file was su
 
 
 
+<a name="see.also.managedmenustrip.dofulltext"></a>
 
 <a name="DoGetSubmenuCount"></a>    
 #### DoGetSubmenuCount(path, separator)
@@ -110,6 +112,7 @@ number | <br>boolean: Number of submenu items, 'false' otherwise.
 
 
 
+<a name="see.also.managedmenustrip.dogetsubmenucount"></a>
 
 <a name="DoGetSubmenuProperty"></a>    
 #### DoGetSubmenuProperty(path, index, property, separator)
@@ -135,6 +138,7 @@ string | <br>boolean: Submenu property, 'false' otherwise.
 
 
 
+<a name="see.also.managedmenustrip.dogetsubmenuproperty"></a>
 
 <a name="DoGetSubmenuText"></a>    
 #### DoGetSubmenuText(path, index, separator)
@@ -159,6 +163,7 @@ string | <br>boolean: Submenu text, 'false' otherwise.
 
 
 
+<a name="see.also.managedmenustrip.dogetsubmenutext"></a>
 
 <a name="DoMenu"></a>    
 #### DoMenu(path, separator)
@@ -182,6 +187,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedmenustrip.domenu"></a>
 
 	
 

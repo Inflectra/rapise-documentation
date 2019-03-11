@@ -115,6 +115,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.smartgwttabcontrol.doselecttab"></a>
 
 	
 

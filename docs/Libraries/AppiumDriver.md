@@ -114,6 +114,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.activateimeengine"></a>
 
 <a name="BackgroundApp"></a>    
 #### BackgroundApp(seconds)
@@ -131,6 +132,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.backgroundapp"></a>
 
 <a name="Close"></a>    
 #### Close()
@@ -141,6 +143,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.close"></a>
 
 <a name="CloseApp"></a>    
 #### CloseApp()
@@ -151,6 +154,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.closeapp"></a>
 
 <a name="CreateAppiumDriver"></a>    
 #### CreateAppiumDriver(uri, caps)
@@ -169,6 +173,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.createappiumdriver"></a>
 
 <a name="CreateDesiredCapabilities"></a>    
 #### CreateDesiredCapabilities()
@@ -179,6 +184,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.createdesiredcapabilities"></a>
 
 <a name="DeactiveIMEEngine"></a>    
 #### DeactiveIMEEngine()
@@ -189,6 +195,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.deactiveimeengine"></a>
 
 <a name="Dispose"></a>    
 #### Dispose()
@@ -199,6 +206,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.dispose"></a>
 
 <a name="EndTestCoverage"></a>    
 #### EndTestCoverage(intent, path)
@@ -217,6 +225,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.endtestcoverage"></a>
 
 <a name="ExecuteAsyncScript"></a>    
 #### ExecuteAsyncScript(script, args)
@@ -235,6 +244,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.executeasyncscript"></a>
 
 <a name="ExecuteScript"></a>    
 #### ExecuteScript(script, args)
@@ -253,6 +263,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.executescript"></a>
 
 <a name="FindComplex"></a>    
 #### FindComplex(selector)
@@ -270,6 +281,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findcomplex"></a>
 
 <a name="FindElementByAccessibilityId"></a>    
 #### FindElementByAccessibilityId(selector)
@@ -287,6 +299,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbyaccessibilityid"></a>
 
 <a name="FindElementByAndroidUIAutomator"></a>    
 #### FindElementByAndroidUIAutomator(selector)
@@ -304,6 +317,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbyandroiduiautomator"></a>
 
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName(className)
@@ -321,6 +335,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbyclassname"></a>
 
 <a name="FindElementByCssSelector"></a>    
 #### FindElementByCssSelector(cssSelector)
@@ -338,6 +353,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbycssselector"></a>
 
 <a name="FindElementById"></a>    
 #### FindElementById(id)
@@ -355,6 +371,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbyid"></a>
 
 <a name="FindElementByIosUIAutomation"></a>    
 #### FindElementByIosUIAutomation(selector)
@@ -372,6 +389,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbyiosuiautomation"></a>
 
 <a name="FindElementByLinkText"></a>    
 #### FindElementByLinkText(linkText)
@@ -389,6 +407,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbylinktext"></a>
 
 <a name="FindElementByName"></a>    
 #### FindElementByName(name)
@@ -406,6 +425,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbyname"></a>
 
 <a name="FindElementByPartialLinkText"></a>    
 #### FindElementByPartialLinkText(partialLinkText)
@@ -423,6 +443,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbypartiallinktext"></a>
 
 <a name="FindElementByTagName"></a>    
 #### FindElementByTagName(tagName)
@@ -440,6 +461,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbytagname"></a>
 
 <a name="FindElementByXPath"></a>    
 #### FindElementByXPath(xpath)
@@ -457,6 +479,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementbyxpath"></a>
 
 <a name="FindElementsByAccessibilityId"></a>    
 #### FindElementsByAccessibilityId(selector)
@@ -474,6 +497,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbyaccessibilityid"></a>
 
 <a name="FindElementsByAndroidUIAutomator"></a>    
 #### FindElementsByAndroidUIAutomator(selector)
@@ -491,6 +515,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbyandroiduiautomator"></a>
 
 <a name="FindElementsByClassName"></a>    
 #### FindElementsByClassName(className)
@@ -508,6 +533,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbyclassname"></a>
 
 <a name="FindElementsByCssSelector"></a>    
 #### FindElementsByCssSelector(cssSelector)
@@ -525,6 +551,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbycssselector"></a>
 
 <a name="FindElementsById"></a>    
 #### FindElementsById(id)
@@ -542,6 +569,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbyid"></a>
 
 <a name="FindElementsByIosUIAutomation"></a>    
 #### FindElementsByIosUIAutomation(selector)
@@ -559,6 +587,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbyiosuiautomation"></a>
 
 <a name="FindElementsByLinkText"></a>    
 #### FindElementsByLinkText(linkText)
@@ -576,6 +605,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbylinktext"></a>
 
 <a name="FindElementsByName"></a>    
 #### FindElementsByName(name)
@@ -593,6 +623,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbyname"></a>
 
 <a name="FindElementsByPartialLinkText"></a>    
 #### FindElementsByPartialLinkText(partialLinkText)
@@ -610,6 +641,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbypartiallinktext"></a>
 
 <a name="FindElementsByTagName"></a>    
 #### FindElementsByTagName(tagName)
@@ -627,6 +659,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbytagname"></a>
 
 <a name="FindElementsByXPath"></a>    
 #### FindElementsByXPath(xpath)
@@ -644,6 +677,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.findelementsbyxpath"></a>
 
 <a name="GetConnectionType"></a>    
 #### GetConnectionType()
@@ -654,6 +688,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getconnectiontype"></a>
 
 <a name="GetContext"></a>    
 #### GetContext()
@@ -664,6 +699,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getcontext"></a>
 
 <a name="GetContexts"></a>    
 #### GetContexts()
@@ -674,6 +710,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getcontexts"></a>
 
 <a name="GetCurrentActivity"></a>    
 #### GetCurrentActivity()
@@ -684,6 +721,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getcurrentactivity"></a>
 
 <a name="GetCurrentWindowHandle"></a>    
 #### GetCurrentWindowHandle()
@@ -694,6 +732,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getcurrentwindowhandle"></a>
 
 <a name="GetIMEActiveEngine"></a>    
 #### GetIMEActiveEngine()
@@ -704,6 +743,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getimeactiveengine"></a>
 
 <a name="GetIMEAvailableEngines"></a>    
 #### GetIMEAvailableEngines()
@@ -714,6 +754,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getimeavailableengines"></a>
 
 <a name="GetOrientation"></a>    
 #### GetOrientation()
@@ -724,6 +765,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getorientation"></a>
 
 <a name="GetPageSource"></a>    
 #### GetPageSource()
@@ -734,6 +776,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getpagesource"></a>
 
 <a name="GetTitle"></a>    
 #### GetTitle()
@@ -744,6 +787,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.gettitle"></a>
 
 <a name="GetUrl"></a>    
 #### GetUrl()
@@ -754,6 +798,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.geturl"></a>
 
 <a name="GetWindowHandles"></a>    
 #### GetWindowHandles()
@@ -764,6 +809,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.getwindowhandles"></a>
 
 <a name="HideKeyboard"></a>    
 #### HideKeyboard(strategy, key)
@@ -782,6 +828,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.hidekeyboard"></a>
 
 <a name="IgnoreUnimportantViews"></a>    
 #### IgnoreUnimportantViews(value)
@@ -799,6 +846,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.ignoreunimportantviews"></a>
 
 <a name="InstallApp"></a>    
 #### InstallApp(appPath)
@@ -816,6 +864,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.installapp"></a>
 
 <a name="IsAppInstalled"></a>    
 #### IsAppInstalled(bundleId)
@@ -833,6 +882,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.isappinstalled"></a>
 
 <a name="IsIMEActive"></a>    
 #### IsIMEActive()
@@ -843,6 +893,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.isimeactive"></a>
 
 <a name="IsLocked"></a>    
 #### IsLocked()
@@ -853,6 +904,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.islocked"></a>
 
 <a name="LaunchApp"></a>    
 #### LaunchApp()
@@ -863,6 +915,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.launchapp"></a>
 
 <a name="OpenNotifications"></a>    
 #### OpenNotifications()
@@ -873,6 +926,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.opennotifications"></a>
 
 <a name="PressKeyCode"></a>    
 #### PressKeyCode(keyCode)
@@ -890,6 +944,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.presskeycode"></a>
 
 <a name="PullFile"></a>    
 #### PullFile(pathOnDevice)
@@ -907,6 +962,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.pullfile"></a>
 
 <a name="PushFile"></a>    
 #### PushFile(pathOnDevice, base64Data)
@@ -925,6 +981,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.pushfile"></a>
 
 <a name="Quit"></a>    
 #### Quit()
@@ -935,6 +992,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.quit"></a>
 
 <a name="RemoveApp"></a>    
 #### RemoveApp(appId)
@@ -952,6 +1010,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.removeapp"></a>
 
 <a name="ResetApp"></a>    
 #### ResetApp()
@@ -962,6 +1021,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.resetapp"></a>
 
 <a name="SetConnectionType"></a>    
 #### SetConnectionType(connectionType)
@@ -979,6 +1039,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.setconnectiontype"></a>
 
 <a name="SetContext"></a>    
 #### SetContext(name)
@@ -996,6 +1057,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.setcontext"></a>
 
 <a name="SetOrientation"></a>    
 #### SetOrientation(orientation)
@@ -1013,6 +1075,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.setorientation"></a>
 
 <a name="SetUrl"></a>    
 #### SetUrl(value)
@@ -1030,6 +1093,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.seturl"></a>
 
 <a name="ShakeDevice"></a>    
 #### ShakeDevice()
@@ -1040,6 +1104,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.shakedevice"></a>
 
 <a name="StartActivity"></a>    
 #### StartActivity(appPackage, appActivity, appWaitPackage, appWaitActivity)
@@ -1060,6 +1125,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.startactivity"></a>
 
 <a name="ToggleAirplaneMode"></a>    
 #### ToggleAirplaneMode()
@@ -1070,6 +1136,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.toggleairplanemode"></a>
 
 <a name="ToggleLocationServices"></a>    
 #### ToggleLocationServices()
@@ -1080,6 +1147,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.togglelocationservices"></a>
 
 <a name="ToggleWifi"></a>    
 #### ToggleWifi()
@@ -1090,6 +1158,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+<a name="see.also.appiumdriver.togglewifi"></a>
 
 	
 

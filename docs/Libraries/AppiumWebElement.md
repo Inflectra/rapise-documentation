@@ -77,6 +77,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.clear"></a>
 
 <a name="Click"></a>    
 #### Click()
@@ -87,6 +88,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.click"></a>
 
 <a name="FindElementByAccessibilityId"></a>    
 #### FindElementByAccessibilityId(selector)
@@ -104,6 +106,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbyaccessibilityid"></a>
 
 <a name="FindElementByAndroidUIAutomator"></a>    
 #### FindElementByAndroidUIAutomator(selector)
@@ -121,6 +124,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbyandroiduiautomator"></a>
 
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName(className)
@@ -138,6 +142,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbyclassname"></a>
 
 <a name="FindElementByCssSelector"></a>    
 #### FindElementByCssSelector(cssSelector)
@@ -155,6 +160,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbycssselector"></a>
 
 <a name="FindElementById"></a>    
 #### FindElementById(id)
@@ -172,6 +178,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbyid"></a>
 
 <a name="FindElementByIosUIAutomation"></a>    
 #### FindElementByIosUIAutomation(selector)
@@ -189,6 +196,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbyiosuiautomation"></a>
 
 <a name="FindElementByLinkText"></a>    
 #### FindElementByLinkText(linkText)
@@ -206,6 +214,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbylinktext"></a>
 
 <a name="FindElementByName"></a>    
 #### FindElementByName(name)
@@ -223,6 +232,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbyname"></a>
 
 <a name="FindElementByPartialLinkText"></a>    
 #### FindElementByPartialLinkText(partialLinkText)
@@ -240,6 +250,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbypartiallinktext"></a>
 
 <a name="FindElementByTagName"></a>    
 #### FindElementByTagName(tagName)
@@ -257,6 +268,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbytagname"></a>
 
 <a name="FindElementByXPath"></a>    
 #### FindElementByXPath(xpath)
@@ -274,6 +286,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementbyxpath"></a>
 
 <a name="FindElementsByAccessibilityId"></a>    
 #### FindElementsByAccessibilityId(selector)
@@ -291,6 +304,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbyaccessibilityid"></a>
 
 <a name="FindElementsByAndroidUIAutomator"></a>    
 #### FindElementsByAndroidUIAutomator(selector)
@@ -308,6 +322,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbyandroiduiautomator"></a>
 
 <a name="FindElementsByClassName"></a>    
 #### FindElementsByClassName(className)
@@ -325,6 +340,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbyclassname"></a>
 
 <a name="FindElementsByCssSelector"></a>    
 #### FindElementsByCssSelector(cssSelector)
@@ -342,6 +358,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbycssselector"></a>
 
 <a name="FindElementsById"></a>    
 #### FindElementsById(id)
@@ -359,6 +376,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbyid"></a>
 
 <a name="FindElementsByIosUIAutomation"></a>    
 #### FindElementsByIosUIAutomation(selector)
@@ -376,6 +394,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbyiosuiautomation"></a>
 
 <a name="FindElementsByLinkText"></a>    
 #### FindElementsByLinkText(linkText)
@@ -393,6 +412,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbylinktext"></a>
 
 <a name="FindElementsByName"></a>    
 #### FindElementsByName(name)
@@ -410,6 +430,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbyname"></a>
 
 <a name="FindElementsByPartialLinkText"></a>    
 #### FindElementsByPartialLinkText(partialLinkText)
@@ -427,6 +448,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbypartiallinktext"></a>
 
 <a name="FindElementsByTagName"></a>    
 #### FindElementsByTagName(tagName)
@@ -444,6 +466,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbytagname"></a>
 
 <a name="FindElementsByXPath"></a>    
 #### FindElementsByXPath(xpath)
@@ -461,6 +484,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.findelementsbyxpath"></a>
 
 <a name="GetAttribute"></a>    
 #### GetAttribute(attributeName)
@@ -478,6 +502,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getattribute"></a>
 
 <a name="GetCoordinates"></a>    
 #### GetCoordinates()
@@ -488,6 +513,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getcoordinates"></a>
 
 <a name="GetCssValue"></a>    
 #### GetCssValue(propertyName)
@@ -505,6 +531,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getcssvalue"></a>
 
 <a name="GetDisplayed"></a>    
 #### GetDisplayed()
@@ -515,6 +542,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getdisplayed"></a>
 
 <a name="GetEnabled"></a>    
 #### GetEnabled()
@@ -525,6 +553,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getenabled"></a>
 
 <a name="GetHashCode"></a>    
 #### GetHashCode()
@@ -535,6 +564,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.gethashcode"></a>
 
 <a name="GetLocation"></a>    
 #### GetLocation()
@@ -545,6 +575,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getlocation"></a>
 
 <a name="GetLocationOnScreenOnceScrolledIntoView"></a>    
 #### GetLocationOnScreenOnceScrolledIntoView()
@@ -555,6 +586,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getlocationonscreenoncescrolledintoview"></a>
 
 <a name="GetSelected"></a>    
 #### GetSelected()
@@ -565,6 +597,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getselected"></a>
 
 <a name="GetSize"></a>    
 #### GetSize()
@@ -575,6 +608,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.getsize"></a>
 
 <a name="GetTagName"></a>    
 #### GetTagName()
@@ -585,6 +619,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.gettagname"></a>
 
 <a name="GetText"></a>    
 #### GetText()
@@ -595,6 +630,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.gettext"></a>
 
 <a name="SendKeys"></a>    
 #### SendKeys(text)
@@ -612,6 +648,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.sendkeys"></a>
 
 <a name="SetImmediateValue"></a>    
 #### SetImmediateValue(value)
@@ -629,6 +666,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.setimmediatevalue"></a>
 
 <a name="Submit"></a>    
 #### Submit()
@@ -639,6 +677,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
+<a name="see.also.appiumwebelement.submit"></a>
 
 	
 

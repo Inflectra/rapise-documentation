@@ -48,6 +48,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uiaradiobutton.dosetcheck"></a>
 
 	
 

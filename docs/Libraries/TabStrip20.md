@@ -86,6 +86,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.tabstrip20.doselecttab"></a>
 
 	
 

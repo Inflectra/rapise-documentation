@@ -242,6 +242,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedtreeview.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -266,6 +267,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedtreeview.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -290,6 +292,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedtreeview.doexpand"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, path, separator, pathType)
@@ -315,6 +318,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedtreeview.dosetcheck"></a>
 
 	
 

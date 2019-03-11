@@ -109,6 +109,7 @@ boolean: 'true' if successful, 'false' otherwise.
 
 
 
+<a name="see.also.ultralistbar.doclickitem"></a>
 
 <a name="DoExpandGroup"></a>    
 #### DoExpandGroup(nameCaptionIndex)
@@ -131,6 +132,7 @@ boolean: 'true' if successful, 'false' otherwise.
 
 
 
+<a name="see.also.ultralistbar.doexpandgroup"></a>
 
 	
 

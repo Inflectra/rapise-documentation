@@ -236,6 +236,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsnavgrid.doclickcell"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText()
@@ -251,6 +252,7 @@ string | <br>boolean: Text representation of the grid, 'true' if the file was su
 
 
 
+<a name="see.also.domdynamicsnavgrid.dofulltext"></a>
 
 <a name="DoLookup"></a>    
 #### DoLookup(row, col)
@@ -274,6 +276,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsnavgrid.dolookup"></a>
 
 <a name="DoScrollTo"></a>    
 #### DoScrollTo(row, col)
@@ -297,6 +300,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsnavgrid.doscrollto"></a>
 
 <a name="DoSelect"></a>    
 #### DoSelect(row, col, item)
@@ -321,6 +325,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsnavgrid.doselect"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(row, col, text)
@@ -345,6 +350,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsnavgrid.dosettext"></a>
 
 	
 

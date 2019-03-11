@@ -48,6 +48,7 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 
 
+<a name="see.also.appiumcapabilities.getcapability"></a>
 
 <a name="HasCapability"></a>    
 #### HasCapability(capability)
@@ -65,6 +66,7 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 
 
+<a name="see.also.appiumcapabilities.hascapability"></a>
 
 <a name="SetCapability"></a>    
 #### SetCapability(capability, capabilityValue)
@@ -83,6 +85,7 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 
 
+<a name="see.also.appiumcapabilities.setcapability"></a>
 
 	
 

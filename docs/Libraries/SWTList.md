@@ -224,6 +224,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.swtlist.doaddselection"></a>
 
 <a name="DoClickItem"></a>    
 #### DoClickItem(nameCaptionIndex, xOffset, yOffset, clickType)
@@ -249,6 +250,7 @@ boolean: 'true' if successful, 'false' otherwise.
 
 
 
+<a name="see.also.swtlist.doclickitem"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -273,6 +275,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.swtlist.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -297,6 +300,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.swtlist.doselectitem"></a>
 
 	
 

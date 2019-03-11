@@ -86,6 +86,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.swtcomboboxedit.doselectitem"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(val)
@@ -108,6 +109,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.swtcomboboxedit.dosettext"></a>
 
 	
 

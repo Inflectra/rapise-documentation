@@ -154,6 +154,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsaxgrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
 #### DoClickText(text, index)
@@ -177,6 +178,7 @@ Clicks on a specific text inside the grid.
 
 
 
+<a name="see.also.domdynamicsaxgrid.doclicktext"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(text)
@@ -194,6 +196,7 @@ Enters text into the active cell. Use DoClickCell to make a cell active.
 
 
 
+<a name="see.also.domdynamicsaxgrid.dosettext"></a>
 
 	
 

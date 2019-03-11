@@ -47,6 +47,7 @@ Saves the screenshot to a file.
 
 
 
+<a name="see.also.screenshot.saveasfile"></a>
 
 	
 

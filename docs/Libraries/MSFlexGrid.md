@@ -192,6 +192,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.msflexgrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
 #### DoClickText(textOrRegexp, clickType)
@@ -215,6 +216,7 @@ Clicks on a specific text inside the grid.
 
 
 
+<a name="see.also.msflexgrid.doclicktext"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText()
@@ -230,6 +232,7 @@ string | <br>boolean: Text representation of the grid, 'true' if the file was su
 
 
 
+<a name="see.also.msflexgrid.dofulltext"></a>
 
 	
 

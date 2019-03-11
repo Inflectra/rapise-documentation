@@ -61,6 +61,7 @@ true, if successfull
 
 
 
+<a name="see.also.database.doattach"></a>
 
 <a name="DoMoveToRow"></a>    
 #### DoMoveToRow(rowInd)
@@ -78,6 +79,7 @@ Moves to a given row.
 
 
 
+<a name="see.also.database.domovetorow"></a>
 
 <a name="DoRandom"></a>    
 #### DoRandom()
@@ -93,6 +95,7 @@ Selects random row and column in the recordset.
 
 
 
+<a name="see.also.database.dorandom"></a>
 
 <a name="DoSequential"></a>    
 #### DoSequential()
@@ -108,6 +111,7 @@ Advances to the next row in the table. When the end of the range is reached DoS
 
 
 
+<a name="see.also.database.dosequential"></a>
 
 <a name="GetColumnCount"></a>    
 #### GetColumnCount()
@@ -123,6 +127,7 @@ Number of Columns in the result set.
 
 
 
+<a name="see.also.database.getcolumncount"></a>
 
 <a name="GetColumnName"></a>    
 #### GetColumnName(ind)
@@ -145,6 +150,7 @@ Name of column in the spreadsheet.
 
 
 
+<a name="see.also.database.getcolumnname"></a>
 
 <a name="GetColumnNames"></a>    
 #### GetColumnNames()
@@ -160,6 +166,7 @@ Array of column names in the table.
 
 
 
+<a name="see.also.database.getcolumnnames"></a>
 
 <a name="GetCurrentRowIndex"></a>    
 #### GetCurrentRowIndex()
@@ -170,6 +177,7 @@ Get zero based current row index.
 
 
 
+<a name="see.also.database.getcurrentrowindex"></a>
 
 <a name="GetRowCount"></a>    
 #### GetRowCount()
@@ -185,6 +193,7 @@ Number of rows in the result set.
 
 
 
+<a name="see.also.database.getrowcount"></a>
 
 <a name="GetValue"></a>    
 #### GetValue(columnId, rowId)
@@ -203,6 +212,7 @@ Gets value by column name, and, optionally, row number. Returns current cell val
 
 
 
+<a name="see.also.database.getvalue"></a>
 
 	
 

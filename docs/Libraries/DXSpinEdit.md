@@ -144,6 +144,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxspinedit.dodown"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(val)
@@ -166,6 +167,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxspinedit.dosettext"></a>
 
 <a name="DoUp"></a>    
 #### DoUp()
@@ -181,6 +183,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxspinedit.doup"></a>
 
 	
 

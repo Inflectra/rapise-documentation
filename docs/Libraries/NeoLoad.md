@@ -54,6 +54,7 @@ Captures duration of loading a page and resources.
 
 
 
+<a name="see.also.neoload.capturebrowserperformance"></a>
 
 <a name="CaptureHostPerformance"></a>    
 #### CaptureHostPerformance()
@@ -64,6 +65,7 @@ Sends host performance metrics to NeoLoad: CPU, Memory, Network, Battery.
 
 
 
+<a name="see.also.neoload.capturehostperformance"></a>
 
 <a name="CapturePerformanceValue"></a>    
 #### CapturePerformanceValue(entry, path, units, value)
@@ -84,6 +86,7 @@ Sends performance value to NeoLoad.
 
 
 
+<a name="see.also.neoload.captureperformancevalue"></a>
 
 <a name="CreateClient"></a>    
 #### CreateClient(hardware, location, networkInterface)
@@ -103,6 +106,7 @@ Connects to NeoLoad.
 
 
 
+<a name="see.also.neoload.createclient"></a>
 
 <a name="EndTransaction"></a>    
 #### EndTransaction(name)
@@ -120,6 +124,7 @@ Marks end of a transaction and sends performance metrics to NeoLoad.
 
 
 
+<a name="see.also.neoload.endtransaction"></a>
 
 <a name="GetNetworkInterfaceNames"></a>    
 #### GetNetworkInterfaceNames()
@@ -130,6 +135,7 @@ Gets names of network interfaces. Use one of them to CreateClient.
 
 
 
+<a name="see.also.neoload.getnetworkinterfacenames"></a>
 
 <a name="SetBaseContainer"></a>    
 #### SetBaseContainer(name)
@@ -147,6 +153,7 @@ Sets current step (Init, Actions, End) during test conversion
 
 
 
+<a name="see.also.neoload.setbasecontainer"></a>
 
 <a name="SetContainer"></a>    
 #### SetContainer(name)
@@ -164,6 +171,7 @@ Sets current container/business transaction during test conversion
 
 
 
+<a name="see.also.neoload.setcontainer"></a>
 
 <a name="StartTransaction"></a>    
 #### StartTransaction(name)
@@ -181,6 +189,7 @@ Marks start of a transaction.
 
 
 
+<a name="see.also.neoload.starttransaction"></a>
 
 	
 

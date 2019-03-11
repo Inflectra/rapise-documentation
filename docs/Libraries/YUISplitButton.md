@@ -87,6 +87,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.yuisplitbutton.doclick"></a>
 
 <a name="DoMenu"></a>    
 #### DoMenu()
@@ -102,6 +103,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.yuisplitbutton.domenu"></a>
 
 	
 

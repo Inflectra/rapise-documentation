@@ -117,6 +117,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.dxradiogroup.doselectitem"></a>
 
 	
 

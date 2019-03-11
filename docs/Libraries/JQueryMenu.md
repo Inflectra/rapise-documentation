@@ -58,6 +58,7 @@ HTMLObject: HTMLObject of the found node
 
 
 
+<a name="see.also.jquerymenu.dofindchild"></a>
 
 <a name="DoMenu"></a>    
 #### DoMenu(path, separator, pathType)
@@ -82,6 +83,7 @@ HTMLObject: HTMLObject of the found node
 
 
 
+<a name="see.also.jquerymenu.domenu"></a>
 
 	
 

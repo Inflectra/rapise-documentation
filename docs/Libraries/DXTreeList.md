@@ -321,6 +321,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxtreelist.doclickcell"></a>
 
 <a name="DoClickNode"></a>    
 #### DoClickNode(path, separator, pathType, column, xOffset, yOffset)
@@ -348,6 +349,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxtreelist.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -372,6 +374,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxtreelist.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -396,6 +399,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxtreelist.doexpand"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, path, separator, pathType)
@@ -421,6 +425,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxtreelist.dosetcheck"></a>
 
 	
 

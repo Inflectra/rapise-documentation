@@ -53,6 +53,7 @@ capability value.
 
 
 
+<a name="see.also.capabilities.getcapability"></a>
 
 <a name="HasCapability"></a>    
 #### HasCapability(capability)
@@ -75,6 +76,7 @@ Gets a value indicating whether the browser has a given capability.
 
 
 
+<a name="see.also.capabilities.hascapability"></a>
 
 <a name="SetCapability"></a>    
 #### SetCapability(capability, capabilityValue)
@@ -93,6 +95,7 @@ Sets a capability of the browser.
 
 
 
+<a name="see.also.capabilities.setcapability"></a>
 
 	
 

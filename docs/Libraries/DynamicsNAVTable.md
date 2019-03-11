@@ -249,6 +249,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.dynamicsnavtable.doclickcell"></a>
 
 <a name="DoClickColumn"></a>    
 #### DoClickColumn(col, clickType, xOffset, yOffset)
@@ -269,6 +270,7 @@ Clicks on column header
 
 
 
+<a name="see.also.dynamicsnavtable.doclickcolumn"></a>
 
 <a name="DoScrollTo"></a>    
 #### DoScrollTo(row, col)
@@ -287,6 +289,7 @@ Scrolls to the specified cell
 
 
 
+<a name="see.also.dynamicsnavtable.doscrollto"></a>
 
 	
 

@@ -181,6 +181,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.telerikradgridview.doclickcell"></a>
 
 	
 

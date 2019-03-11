@@ -65,6 +65,7 @@ Flick action.
 
 
 
+<a name="see.also.ios.doflick"></a>
 
 <a name="DoGoToUrl"></a>    
 #### DoGoToUrl(url)
@@ -87,6 +88,7 @@ Opens URL in active browser.
 
 
 
+<a name="see.also.ios.dogotourl"></a>
 
 <a name="DoScreenshot"></a>    
 #### DoScreenshot()
@@ -102,6 +104,7 @@ Makes screenshot of a device.
 
 
 
+<a name="see.also.ios.doscreenshot"></a>
 
 <a name="DoShake"></a>    
 #### DoShake()
@@ -117,6 +120,7 @@ Shakes device.
 
 
 
+<a name="see.also.ios.doshake"></a>
 
 <a name="DoSwipe"></a>    
 #### DoSwipe(endX, endY, startX, startY, duration, touchCount)
@@ -144,6 +148,7 @@ Swipe action.
 
 
 
+<a name="see.also.ios.doswipe"></a>
 
 <a name="DoTap"></a>    
 #### DoTap(x, y, duration, tapCount, touchCount)
@@ -170,6 +175,7 @@ Tap screen.
 
 
 
+<a name="see.also.ios.dotap"></a>
 
 <a name="GetCapability"></a>    
 #### GetCapability(name)
@@ -192,6 +198,7 @@ Capability string.
 
 
 
+<a name="see.also.ios.getcapability"></a>
 
 <a name="GetContext"></a>    
 #### GetContext()
@@ -207,6 +214,7 @@ Either NATIVE_APP or WEBVIEW_1.
 
 
 
+<a name="see.also.ios.getcontext"></a>
 
 <a name="GetDeviceOrientation"></a>    
 #### GetDeviceOrientation()
@@ -222,6 +230,7 @@ Device orientation.
 
 
 
+<a name="see.also.ios.getdeviceorientation"></a>
 
 <a name="SetContext"></a>    
 #### SetContext(name)
@@ -239,6 +248,7 @@ Sets context.
 
 
 
+<a name="see.also.ios.setcontext"></a>
 
 <a name="SetDeviceOrientation"></a>    
 #### SetDeviceOrientation(orientation)
@@ -261,6 +271,7 @@ Device orientation.
 
 
 
+<a name="see.also.ios.setdeviceorientation"></a>
 
 	
 

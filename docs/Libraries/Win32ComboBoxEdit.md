@@ -83,6 +83,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.win32comboboxedit.dosettext"></a>
 
 	
 
@@ -164,6 +165,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.win32comboboxedit.doselectitem"></a>
 
 	
 
@@ -245,6 +247,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.win32comboboxedit.doselectitem"></a>
 
 	
 

@@ -57,6 +57,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.build"></a>
 
 <a name="Click"></a>    
 #### Click(el)
@@ -79,6 +80,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.click"></a>
 
 <a name="ClickAndHold"></a>    
 #### ClickAndHold(el)
@@ -101,6 +103,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.clickandhold"></a>
 
 <a name="ContextClick"></a>    
 #### ContextClick(el)
@@ -123,6 +126,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.contextclick"></a>
 
 <a name="DoubleClick"></a>    
 #### DoubleClick(el)
@@ -145,6 +149,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.doubleclick"></a>
 
 <a name="DragAndDrop"></a>    
 #### DragAndDrop(source, target)
@@ -168,6 +173,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.draganddrop"></a>
 
 <a name="DragAndDropToOffset"></a>    
 #### DragAndDropToOffset(source, offsetX, offsetY)
@@ -192,6 +198,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.draganddroptooffset"></a>
 
 <a name="KeyDown"></a>    
 #### KeyDown(theKey, el)
@@ -215,6 +222,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.keydown"></a>
 
 <a name="KeyUp"></a>    
 #### KeyUp(theKey, el)
@@ -238,6 +246,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.keyup"></a>
 
 <a name="MoveByOffset"></a>    
 #### MoveByOffset(offsetX, offsetY)
@@ -261,6 +270,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.movebyoffset"></a>
 
 <a name="MoveToElement"></a>    
 #### MoveToElement(el, offsetX, offsetY)
@@ -285,6 +295,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.movetoelement"></a>
 
 <a name="Perform"></a>    
 #### Perform()
@@ -295,6 +306,7 @@ Performs the currently built action.
 
 
 
+<a name="see.also.actions.perform"></a>
 
 <a name="Release"></a>    
 #### Release(el)
@@ -317,6 +329,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.release"></a>
 
 <a name="SendKeys"></a>    
 #### SendKeys(keysToSend, el)
@@ -340,6 +353,7 @@ A self-reference.
 
 
 
+<a name="see.also.actions.sendkeys"></a>
 
 	
 

@@ -78,6 +78,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.yuimenubutton.doclick"></a>
 
 	
 

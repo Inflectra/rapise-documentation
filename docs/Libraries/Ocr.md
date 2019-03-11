@@ -59,6 +59,7 @@ Does OCR for a given object, finds a given string and clicks on it.
 
 
 
+<a name="see.also.ocr.doclicktextinobject"></a>
 
 <a name="DoClickTextInWindow"></a>    
 #### DoClickTextInWindow(objId, text, clickType)
@@ -83,6 +84,7 @@ Does OCR for a window that contains a given object, finds a given string and cli
 
 
 
+<a name="see.also.ocr.doclicktextinwindow"></a>
 
 <a name="DoExtractFromImage"></a>    
 #### DoExtractFromImage(img)
@@ -105,6 +107,7 @@ Recognized text or empty string in the case of an error.
 
 
 
+<a name="see.also.ocr.doextractfromimage"></a>
 
 <a name="DoExtractFromObject"></a>    
 #### DoExtractFromObject(objId)
@@ -127,6 +130,7 @@ Recognized text or empty string in the case of an error.
 
 
 
+<a name="see.also.ocr.doextractfromobject"></a>
 
 <a name="DoExtractFromScreen"></a>    
 #### DoExtractFromScreen(left, top, right, bottom)
@@ -152,6 +156,7 @@ Recognized text or empty string in the case of an error.
 
 
 
+<a name="see.also.ocr.doextractfromscreen"></a>
 
 <a name="DoExtractFromWindow"></a>    
 #### DoExtractFromWindow(objId)
@@ -174,6 +179,7 @@ Recognized text or empty string in the case of an error.
 
 
 
+<a name="see.also.ocr.doextractfromwindow"></a>
 
 <a name="DoSelectOcrEngine"></a>    
 #### DoSelectOcrEngine(ocrName)
@@ -191,6 +197,7 @@ Selects OCR engine by name. The name should point to installed OCR engine.
 
 
 
+<a name="see.also.ocr.doselectocrengine"></a>
 
 	
 

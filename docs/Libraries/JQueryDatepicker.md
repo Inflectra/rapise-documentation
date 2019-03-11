@@ -94,6 +94,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.jquerydatepicker.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
 #### DoPrevMonth()
@@ -109,6 +110,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.jquerydatepicker.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
 #### DoSelectDate(dateValue)
@@ -131,6 +133,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.jquerydatepicker.doselectdate"></a>
 
 	
 

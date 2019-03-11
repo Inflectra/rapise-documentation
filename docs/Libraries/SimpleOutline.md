@@ -83,6 +83,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.simpleoutline.doselectitem"></a>
 
 	
 
@@ -136,6 +137,7 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 
 
+<a name="see.also.simpleoutline.doexpand"></a>
 
 	
 
@@ -212,6 +214,7 @@ Checks an item of this object.
 
 
 
+<a name="see.also.simpleoutline.docheckitem"></a>
 
 	
 

@@ -222,6 +222,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uialist.doaddselection"></a>
 
 <a name="DoClickItem"></a>    
 #### DoClickItem(nameCaptionIndex, xOffset, yOffset, clickType)
@@ -247,6 +248,7 @@ boolean: 'true' if successful, 'false' otherwise.
 
 
 
+<a name="see.also.uialist.doclickitem"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -271,6 +273,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uialist.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -295,6 +298,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uialist.doselectitem"></a>
 
 	
 

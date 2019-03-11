@@ -85,6 +85,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxbuttonedit.dosettext"></a>
 
 	
 
@@ -190,6 +191,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxbuttonedit.doclickbutton"></a>
 
 	
 

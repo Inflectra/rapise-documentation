@@ -83,6 +83,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.simplecombobox.doselectitem"></a>
 
 	
 
@@ -164,6 +165,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.simplecombobox.doselectitem"></a>
 
 	
 

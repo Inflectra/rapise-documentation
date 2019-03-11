@@ -83,6 +83,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.win32combobox.doselectitem"></a>
 
 	
 

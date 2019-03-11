@@ -282,6 +282,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxcheckedlistboxcontrol.doaddselection"></a>
 
 <a name="DoCheckItem"></a>    
 #### DoCheckItem(items, separator, itemsType)
@@ -306,6 +307,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxcheckedlistboxcontrol.docheckitem"></a>
 
 <a name="DoClearSelection"></a>    
 #### DoClearSelection()
@@ -321,6 +323,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxcheckedlistboxcontrol.doclearselection"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -345,6 +348,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxcheckedlistboxcontrol.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -369,6 +373,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxcheckedlistboxcontrol.doselectitem"></a>
 
 <a name="DoSetCheck"></a>    
 #### DoSetCheck(bcheck, items, separator, itemsType)
@@ -394,6 +399,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxcheckedlistboxcontrol.dosetcheck"></a>
 
 	
 

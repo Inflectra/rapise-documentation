@@ -176,6 +176,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.domlightninggrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
 #### DoClickText(text, index)
@@ -199,6 +200,7 @@ Clicks on a specific text inside the grid.
 
 
 
+<a name="see.also.domlightninggrid.doclicktext"></a>
 
 	
 

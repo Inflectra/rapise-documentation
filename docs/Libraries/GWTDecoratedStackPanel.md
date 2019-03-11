@@ -57,6 +57,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.gwtdecoratedstackpanel.doselect"></a>
 
 	
 

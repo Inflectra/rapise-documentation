@@ -50,6 +50,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.yuibuttonmenu.doclick"></a>
 
 	
 

@@ -224,6 +224,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doaddselection"></a>
 
 <a name="DoClearSelection"></a>    
 #### DoClearSelection()
@@ -239,6 +240,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doclearselection"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -263,6 +265,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -287,6 +290,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doselectitem"></a>
 
 	
 
@@ -467,6 +471,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doaddselection"></a>
 
 <a name="DoClearSelection"></a>    
 #### DoClearSelection()
@@ -482,6 +487,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doclearselection"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -506,6 +512,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -530,6 +537,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.telerikradlistcontrol.doselectitem"></a>
 
 	
 

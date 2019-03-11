@@ -243,6 +243,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.sfttree.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -267,6 +268,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.sfttree.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -291,6 +293,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.sfttree.doexpand"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText(fileName)
@@ -313,6 +316,7 @@ string | <br>boolean: Text representation of the grid, 'true' if the file was su
 
 
 
+<a name="see.also.sfttree.dofulltext"></a>
 
 	
 

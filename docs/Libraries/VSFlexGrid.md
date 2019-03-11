@@ -288,6 +288,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.vsflexgrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
 #### DoClickText()
@@ -303,6 +304,7 @@ Clicks on a specific text inside the grid.
 
 
 
+<a name="see.also.vsflexgrid.doclicktext"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText(path, fmt)
@@ -327,6 +329,7 @@ string: Path to a file with grid text when 'path' param is defined. Otherwise re
 
 
 
+<a name="see.also.vsflexgrid.dofulltext"></a>
 
 	
 

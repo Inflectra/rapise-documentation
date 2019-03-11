@@ -117,6 +117,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultratimezoneeditor.doselectitem"></a>
 
 	
 
@@ -198,6 +199,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultratimezoneeditor.dosettext"></a>
 
 	
 

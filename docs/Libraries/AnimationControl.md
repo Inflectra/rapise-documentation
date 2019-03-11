@@ -79,6 +79,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.animationcontrol.doplay"></a>
 
 <a name="DoStop"></a>    
 #### DoStop()
@@ -94,6 +95,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.animationcontrol.dostop"></a>
 
 	
 

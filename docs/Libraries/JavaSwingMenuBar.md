@@ -64,6 +64,7 @@ number | <br>boolean: Text representation of the menu, 'true' if the file was su
 
 
 
+<a name="see.also.javaswingmenubar.dofulltext"></a>
 
 <a name="DoGetSubmenuCount"></a>    
 #### DoGetSubmenuCount(path, separator)
@@ -87,6 +88,7 @@ number | <br>boolean: Number of submenu items, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingmenubar.dogetsubmenucount"></a>
 
 <a name="DoGetSubmenuProperty"></a>    
 #### DoGetSubmenuProperty(path, index, property, separator)
@@ -112,6 +114,7 @@ string | <br>boolean: Submenu property, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingmenubar.dogetsubmenuproperty"></a>
 
 <a name="DoGetSubmenuText"></a>    
 #### DoGetSubmenuText(path, index, separator)
@@ -136,6 +139,7 @@ string | <br>boolean: Submenu text, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingmenubar.dogetsubmenutext"></a>
 
 <a name="DoMenu"></a>    
 #### DoMenu(path, separator)
@@ -159,6 +163,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingmenubar.domenu"></a>
 
 	
 

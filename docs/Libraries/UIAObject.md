@@ -279,6 +279,7 @@ Performs left click at the center of an object. It is a customizable variant of 
 
 
 
+<a name="see.also.uiaobject.doclick"></a>
 
 <a name="DoDumpWidget"></a>    
 #### DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
@@ -307,6 +308,7 @@ string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write
 
 
 
+<a name="see.also.uiaobject.dodumpwidget"></a>
 
 <a name="DoFindByText"></a>    
 #### DoFindByText(textOrRegexp, depth)
@@ -330,6 +332,7 @@ object: UIAutomationObject containing text if found, null otherwise
 
 
 
+<a name="see.also.uiaobject.dofindbytext"></a>
 
 <a name="DoGetWidgetProperty"></a>    
 #### DoGetWidgetProperty(name)
@@ -352,6 +355,7 @@ string: Property value if successful, an empty string if the property can not be
 
 
 
+<a name="see.also.uiaobject.dogetwidgetproperty"></a>
 
 	
 

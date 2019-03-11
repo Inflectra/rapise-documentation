@@ -87,6 +87,7 @@ string: Row caption
 
 
 
+<a name="see.also.dxpropertygridcontrol.dogetrowcaption"></a>
 
 <a name="DoGetRowColor"></a>    
 #### DoGetRowColor(rowIndex)
@@ -109,6 +110,7 @@ string: Row color
 
 
 
+<a name="see.also.dxpropertygridcontrol.dogetrowcolor"></a>
 
 <a name="DoGetRowRect"></a>    
 #### DoGetRowRect(rowIndex)
@@ -131,6 +133,7 @@ Object: Row rectangle {x, y, w, h}.
 
 
 
+<a name="see.also.dxpropertygridcontrol.dogetrowrect"></a>
 
 <a name="DoGetRowValue"></a>    
 #### DoGetRowValue(rowIndex)
@@ -153,6 +156,7 @@ Object: Row value
 
 
 
+<a name="see.also.dxpropertygridcontrol.dogetrowvalue"></a>
 
 <a name="DoSetRowValue"></a>    
 #### DoSetRowValue(rowIndex, value)
@@ -176,6 +180,7 @@ Boolean: 'true' if successfull
 
 
 
+<a name="see.also.dxpropertygridcontrol.dosetrowvalue"></a>
 
 	
 

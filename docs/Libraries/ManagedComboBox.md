@@ -101,6 +101,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcombobox.doselectitem"></a>
 
 	
 
@@ -182,6 +183,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.managedcombobox.dosettext"></a>
 
 	
 

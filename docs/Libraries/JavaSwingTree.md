@@ -201,6 +201,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingtree.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
 #### DoCollapse(path, separator, pathType)
@@ -225,6 +226,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingtree.docollapse"></a>
 
 <a name="DoExpand"></a>    
 #### DoExpand(path, separator, pathType)
@@ -249,6 +251,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingtree.doexpand"></a>
 
 	
 

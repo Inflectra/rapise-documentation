@@ -75,6 +75,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.doaddcolumn"></a>
 
 <a name="DoAddRow"></a>    
 #### DoAddRow()
@@ -90,6 +91,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.doaddrow"></a>
 
 <a name="DoAttach"></a>    
 #### DoAttach(fileName, sheetName, separator)
@@ -114,6 +116,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.doattach"></a>
 
 <a name="DoCompare"></a>    
 #### DoCompare(spreadsheet1, spreadsheet2, strict, sheet1Name, sheet2Name)
@@ -141,6 +144,7 @@ boolean: true if spreadsheets are equal, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.docompare"></a>
 
 <a name="DoCreate"></a>    
 #### DoCreate(fileName, sheetName, columnNames, rowCount, separator)
@@ -167,6 +171,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.docreate"></a>
 
 <a name="DoInsertColumn"></a>    
 #### DoInsertColumn(columnIndex, name)
@@ -190,6 +195,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.doinsertcolumn"></a>
 
 <a name="DoInsertRow"></a>    
 #### DoInsertRow(rowIndex)
@@ -212,6 +218,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.doinsertrow"></a>
 
 <a name="DoMoveToFirstRow"></a>    
 #### DoMoveToFirstRow()
@@ -227,6 +234,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.domovetofirstrow"></a>
 
 <a name="DoMoveToLastRow"></a>    
 #### DoMoveToLastRow()
@@ -242,6 +250,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.domovetolastrow"></a>
 
 <a name="DoMoveToRow"></a>    
 #### DoMoveToRow(index)
@@ -264,6 +273,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.domovetorow"></a>
 
 <a name="DoRandom"></a>    
 #### DoRandom()
@@ -281,6 +291,7 @@ boolean: false if the spreadhseet is not attached, true otherwise.
 
 
 
+<a name="see.also.spreadsheet.dorandom"></a>
 
 <a name="DoRemoveColumn"></a>    
 #### DoRemoveColumn(columnIndex)
@@ -303,6 +314,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.doremovecolumn"></a>
 
 <a name="DoRemoveRow"></a>    
 #### DoRemoveRow(rowIndex)
@@ -325,6 +337,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.doremoverow"></a>
 
 <a name="DoSave"></a>    
 #### DoSave(fileName)
@@ -347,6 +360,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.dosave"></a>
 
 <a name="DoSequential"></a>    
 #### DoSequential()
@@ -366,6 +380,7 @@ boolean: false if being called when active row is the last row or the spreadshee
 
 
 
+<a name="see.also.spreadsheet.dosequential"></a>
 
 <a name="GetCell"></a>    
 #### GetCell(columnId, rowId)
@@ -389,6 +404,7 @@ string: Getter returns string with cell value and null in the case of error. Set
 
 
 
+<a name="see.also.spreadsheet.getcell"></a>
 
 <a name="GetColumnCount"></a>    
 #### GetColumnCount()
@@ -404,6 +420,7 @@ number: Number of columns in the spreadsheet. -1 if no spreadsheet is attached.
 
 
 
+<a name="see.also.spreadsheet.getcolumncount"></a>
 
 <a name="GetColumnIndexByName"></a>    
 #### GetColumnIndexByName(name)
@@ -426,6 +443,7 @@ number: column index if found, or -1.
 
 
 
+<a name="see.also.spreadsheet.getcolumnindexbyname"></a>
 
 <a name="GetColumnName"></a>    
 #### GetColumnName(index)
@@ -448,6 +466,7 @@ string: Name of a column in the spreadsheet. Null in the case of error.
 
 
 
+<a name="see.also.spreadsheet.getcolumnname"></a>
 
 <a name="GetCurrentRowIndex"></a>    
 #### GetCurrentRowIndex()
@@ -463,6 +482,7 @@ number: Active row index.
 
 
 
+<a name="see.also.spreadsheet.getcurrentrowindex"></a>
 
 <a name="GetEOF"></a>    
 #### GetEOF()
@@ -478,6 +498,7 @@ boolean: false if spreadsheet is attached and active row and column point to exi
 
 
 
+<a name="see.also.spreadsheet.geteof"></a>
 
 <a name="GetRange"></a>    
 #### GetRange()
@@ -493,6 +514,7 @@ object: Spreadsheet state object: { startRow, endRow, startCol, endCol, activeRo
 
 
 
+<a name="see.also.spreadsheet.getrange"></a>
 
 <a name="GetRowCount"></a>    
 #### GetRowCount()
@@ -508,6 +530,7 @@ number: Number of rows in the spreadsheet including the row with column names. -
 
 
 
+<a name="see.also.spreadsheet.getrowcount"></a>
 
 <a name="SetCell"></a>    
 #### SetCell(value, columnId, rowId)
@@ -532,6 +555,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.setcell"></a>
 
 <a name="SetRange"></a>    
 #### SetRange(startRow, endRow, startCol, endCol)
@@ -557,6 +581,7 @@ boolean: true if successfull, false otherwise.
 
 
 
+<a name="see.also.spreadsheet.setrange"></a>
 
 	
 

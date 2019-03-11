@@ -137,6 +137,7 @@ Checks if object is found on the screen by its id or XPath.
 
 
 
+<a name="see.also.navigator.checkobjectexists"></a>
 
 <a name="Close"></a>    
 #### Close(url)
@@ -154,6 +155,7 @@ Closes browser. Finishes session.
 
 
 
+<a name="see.also.navigator.close"></a>
 
 <a name="Detach"></a>    
 #### Detach()
@@ -164,6 +166,7 @@ Disconnects from a browser. Make Navigator ready for a new browser instance conn
 
 
 
+<a name="see.also.navigator.detach"></a>
 
 <a name="DoCheckAlert"></a>    
 #### DoCheckAlert(msg)
@@ -186,6 +189,7 @@ Waits until browser alert with a given text. Wait timeout is 10 seconds.
 
 
 
+<a name="see.also.navigator.docheckalert"></a>
 
 <a name="DoCheckConfirmation"></a>    
 #### DoCheckConfirmation(msg, result)
@@ -209,6 +213,7 @@ Waits until browser confirmation with a given text.  Wait timeout is 10 seconds.
 
 
 
+<a name="see.also.navigator.docheckconfirmation"></a>
 
 <a name="DoCheckPrompt"></a>    
 #### DoCheckPrompt(msg, result)
@@ -232,6 +237,7 @@ Waits until browser prompt with a given text.  Wait timeout is 10 seconds.
 
 
 
+<a name="see.also.navigator.docheckprompt"></a>
 
 <a name="DOMFindByAttributeValue"></a>    
 #### DOMFindByAttributeValue(attrName, attrValue, findAll, timeout, timeout)
@@ -258,6 +264,7 @@ array | <br>object: If [findAll] is set to false then just first found element o
 
 
 
+<a name="see.also.navigator.domfindbyattributevalue"></a>
 
 <a name="DOMFindByName"></a>    
 #### DOMFindByName(name, tagName, findAll, timeout)
@@ -283,6 +290,7 @@ array | <br>object: If [findAll] is set to false then just first found element o
 
 
 
+<a name="see.also.navigator.domfindbyname"></a>
 
 <a name="DOMFindByText"></a>    
 #### DOMFindByText(text, tagName, findAll, timeout)
@@ -308,6 +316,7 @@ array | <br>object: If [findAll] is set to false then just first found element o
 
 
 
+<a name="see.also.navigator.domfindbytext"></a>
 
 <a name="DOMFindByXPath"></a>    
 #### DOMFindByXPath(xpath, findAll, timeout)
@@ -332,6 +341,7 @@ array | <br>object: If [findAll] is set to false then just first found element o
 
 
 
+<a name="see.also.navigator.domfindbyxpath"></a>
 
 <a name="DoScreenshot"></a>    
 #### DoScreenshot(fileName)
@@ -349,6 +359,7 @@ Makes screenshot of the browser window.
 
 
 
+<a name="see.also.navigator.doscreenshot"></a>
 
 <a name="DoSetExpectedConfirmResult"></a>    
 #### DoSetExpectedConfirmResult(expectedRes)
@@ -366,6 +377,7 @@ Set boolean value to return as a result of next browser 'confirm' request.
 
 
 
+<a name="see.also.navigator.dosetexpectedconfirmresult"></a>
 
 <a name="DoSetExpectedPromptResult"></a>    
 #### DoSetExpectedPromptResult(expectedRes)
@@ -383,6 +395,7 @@ Set text to return as a result of next browser 'prompt' request.
 
 
 
+<a name="see.also.navigator.dosetexpectedpromptresult"></a>
 
 <a name="ExecJS"></a>    
 #### ExecJS(scriptText, obj)
@@ -406,6 +419,7 @@ Executes given JavaScript statement in a browser and returns results.
 
 
 
+<a name="see.also.navigator.execjs"></a>
 
 <a name="Find"></a>    
 #### Find(xpath, url, title, objInfo)
@@ -431,6 +445,7 @@ HTMLObject wrapping DOM element for a given 'xpath', 'null' if 'xpath' is invali
 
 
 
+<a name="see.also.navigator.find"></a>
 
 <a name="GetPerformance"></a>    
 #### GetPerformance(resources, dontWriteReport)
@@ -454,6 +469,7 @@ number: page open time (in milliseconds)
 
 
 
+<a name="see.also.navigator.getperformance"></a>
 
 <a name="Navigate"></a>    
 #### Navigate(url)
@@ -471,6 +487,7 @@ Redirects browser to a specified URL.
 
 
 
+<a name="see.also.navigator.navigate"></a>
 
 <a name="Open"></a>    
 #### Open(url)
@@ -488,6 +505,7 @@ Opens a browser. If URL is specified, goes to URL.
 
 
 
+<a name="see.also.navigator.open"></a>
 
 <a name="SelectBrowserProfile"></a>    
 #### SelectBrowserProfile(profileName)
@@ -505,6 +523,7 @@ Selects browser profile to use for testing.
 
 
 
+<a name="see.also.navigator.selectbrowserprofile"></a>
 
 	
 

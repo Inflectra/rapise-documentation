@@ -80,6 +80,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.yuicalendar.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
 #### DoPrevMonth()
@@ -95,6 +96,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.yuicalendar.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
 #### DoSelectDate(dateValue)
@@ -117,6 +119,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.yuicalendar.doselectdate"></a>
 
 	
 

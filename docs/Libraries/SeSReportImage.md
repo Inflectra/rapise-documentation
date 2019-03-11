@@ -47,6 +47,7 @@ Used to show a bitmap picture in the report.
 
 
 
+<a name="see.also.sesreportimage.sesreportimage"></a>
 
 	
 

@@ -115,6 +115,7 @@ boolean: 'true' if successul, 'false' otherwise
 
 
 
+<a name="see.also.uiaprogressbar.dosetvalue"></a>
 
 	
 

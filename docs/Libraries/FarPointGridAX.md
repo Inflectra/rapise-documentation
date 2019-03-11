@@ -474,6 +474,7 @@ Make specified cell active
 
 
 
+<a name="see.also.farpointgridax.doactivatecell"></a>
 
 <a name="DoClearCell"></a>    
 #### DoClearCell(col1, row1, col2, row2)
@@ -494,6 +495,7 @@ Clear specified cell range
 
 
 
+<a name="see.also.farpointgridax.doclearcell"></a>
 
 <a name="DoClickCell"></a>    
 #### DoClickCell(col, row, clickType, xOffset, yOffset)
@@ -520,6 +522,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.farpointgridax.doclickcell"></a>
 
 <a name="DoExportGrid"></a>    
 #### DoExportGrid(fileName, type)
@@ -538,6 +541,7 @@ Save Grid data to file
 
 
 
+<a name="see.also.farpointgridax.doexportgrid"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText(saveToFile, fileName)
@@ -556,6 +560,7 @@ Return whole grid as text
 
 
 
+<a name="see.also.farpointgridax.dofulltext"></a>
 
 	
 

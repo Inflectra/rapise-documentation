@@ -117,6 +117,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultranumericeditor.dosettext"></a>
 
 	
 

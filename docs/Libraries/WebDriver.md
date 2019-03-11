@@ -82,6 +82,7 @@ WebDriver object.
 
 
 
+<a name="see.also.webdriver.actions"></a>
 
 <a name="Close"></a>    
 #### Close()
@@ -92,6 +93,7 @@ Close the Browser and Dispose of WebDriver.
 
 
 
+<a name="see.also.webdriver.close"></a>
 
 <a name="Cookies"></a>    
 #### Cookies()
@@ -102,6 +104,7 @@ Gets Actions object.
 
 
 
+<a name="see.also.webdriver.cookies"></a>
 
 <a name="CreateDriver"></a>    
 #### CreateDriver(nonProfileCapsJson)
@@ -124,6 +127,7 @@ WebDriver object.
 
 
 
+<a name="see.also.webdriver.createdriver"></a>
 
 <a name="Dispose"></a>    
 #### Dispose()
@@ -134,6 +138,7 @@ Dispose of WebDriver.
 
 
 
+<a name="see.also.webdriver.dispose"></a>
 
 <a name="ExecuteScript"></a>    
 #### ExecuteScript(script, args)
@@ -157,6 +162,7 @@ Null, string or element depending on the script.
 
 
 
+<a name="see.also.webdriver.executescript"></a>
 
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName(className)
@@ -179,6 +185,7 @@ element or null.
 
 
 
+<a name="see.also.webdriver.findelementbyclassname"></a>
 
 <a name="FindElementByCssSelector"></a>    
 #### FindElementByCssSelector(cssSelector)
@@ -201,6 +208,7 @@ element ot null.
 
 
 
+<a name="see.also.webdriver.findelementbycssselector"></a>
 
 <a name="FindElementById"></a>    
 #### FindElementById(id)
@@ -223,6 +231,7 @@ element or null.
 
 
 
+<a name="see.also.webdriver.findelementbyid"></a>
 
 <a name="FindElementByLinkText"></a>    
 #### FindElementByLinkText(linkText)
@@ -245,6 +254,7 @@ element or null.
 
 
 
+<a name="see.also.webdriver.findelementbylinktext"></a>
 
 <a name="FindElementByName"></a>    
 #### FindElementByName(name)
@@ -267,6 +277,7 @@ element or null.
 
 
 
+<a name="see.also.webdriver.findelementbyname"></a>
 
 <a name="FindElementByPartialLinkText"></a>    
 #### FindElementByPartialLinkText(partialLinkText)
@@ -289,6 +300,7 @@ element or null.
 
 
 
+<a name="see.also.webdriver.findelementbypartiallinktext"></a>
 
 <a name="FindElementByTagName"></a>    
 #### FindElementByTagName(tagName)
@@ -311,6 +323,7 @@ element or null.
 
 
 
+<a name="see.also.webdriver.findelementbytagname"></a>
 
 <a name="FindElementByXPath"></a>    
 #### FindElementByXPath(xpath)
@@ -333,6 +346,7 @@ element or null.
 
 
 
+<a name="see.also.webdriver.findelementbyxpath"></a>
 
 <a name="FindElementsByClassName"></a>    
 #### FindElementsByClassName(className)
@@ -355,6 +369,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbyclassname"></a>
 
 <a name="FindElementsByCssSelector"></a>    
 #### FindElementsByCssSelector(cssSelector)
@@ -377,6 +392,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbycssselector"></a>
 
 <a name="FindElementsById"></a>    
 #### FindElementsById(id)
@@ -399,6 +415,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbyid"></a>
 
 <a name="FindElementsByLinkText"></a>    
 #### FindElementsByLinkText(linkText)
@@ -421,6 +438,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbylinktext"></a>
 
 <a name="FindElementsByName"></a>    
 #### FindElementsByName(name)
@@ -443,6 +461,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbyname"></a>
 
 <a name="FindElementsByPartialLinkText"></a>    
 #### FindElementsByPartialLinkText(partialLinkText)
@@ -465,6 +484,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbypartiallinktext"></a>
 
 <a name="FindElementsByTagName"></a>    
 #### FindElementsByTagName(tagName)
@@ -487,6 +507,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbytagname"></a>
 
 <a name="FindElementsByXPath"></a>    
 #### FindElementsByXPath(xpath)
@@ -509,6 +530,7 @@ array of elements.
 
 
 
+<a name="see.also.webdriver.findelementsbyxpath"></a>
 
 <a name="GetCurrentWindowHandle"></a>    
 #### GetCurrentWindowHandle()
@@ -519,6 +541,7 @@ Gets the current window handle, which is an opaque handle to this window that un
 
 
 
+<a name="see.also.webdriver.getcurrentwindowhandle"></a>
 
 <a name="GetPageSource"></a>    
 #### GetPageSource()
@@ -529,6 +552,7 @@ Gets the source of the page last loaded by the browser.
 
 
 
+<a name="see.also.webdriver.getpagesource"></a>
 
 <a name="GetProfileCapability"></a>    
 #### GetProfileCapability(name)
@@ -546,6 +570,7 @@ Gets the source of the page last loaded by the browser.
 
 
 
+<a name="see.also.webdriver.getprofilecapability"></a>
 
 <a name="GetScreenshot"></a>    
 #### GetScreenshot()
@@ -556,6 +581,7 @@ Gets the screenshot of the page.
 
 
 
+<a name="see.also.webdriver.getscreenshot"></a>
 
 <a name="GetScreenshotIW"></a>    
 #### GetScreenshotIW()
@@ -566,6 +592,7 @@ Gets the screenshot of the page.
 
 
 
+<a name="see.also.webdriver.getscreenshotiw"></a>
 
 <a name="GetTitle"></a>    
 #### GetTitle()
@@ -576,6 +603,7 @@ Gets the title of the current browser window.
 
 
 
+<a name="see.also.webdriver.gettitle"></a>
 
 <a name="GetUrl"></a>    
 #### GetUrl()
@@ -586,6 +614,7 @@ Gets the URL the browser is currently displaying.
 
 
 
+<a name="see.also.webdriver.geturl"></a>
 
 <a name="GetWindowHandles"></a>    
 #### GetWindowHandles()
@@ -596,6 +625,7 @@ Gets the window handles of open browser windows.
 
 
 
+<a name="see.also.webdriver.getwindowhandles"></a>
 
 <a name="Quit"></a>    
 #### Quit()
@@ -606,6 +636,7 @@ Disconnects from the Browser.
 
 
 
+<a name="see.also.webdriver.quit"></a>
 
 <a name="SetBrowserSize"></a>    
 #### SetBrowserSize(width, height)
@@ -624,6 +655,7 @@ Disconnects from the Browser.
 
 
 
+<a name="see.also.webdriver.setbrowsersize"></a>
 
 <a name="SetUrl"></a>    
 #### SetUrl(url)
@@ -641,6 +673,7 @@ Sets the URL the browser is currently displaying.
 
 
 
+<a name="see.also.webdriver.seturl"></a>
 
 <a name="SwitchToAlert"></a>    
 #### SwitchToAlert()
@@ -651,6 +684,7 @@ Switches to the currently active modal dialog for this particular driver instanc
 
 
 
+<a name="see.also.webdriver.switchtoalert"></a>
 
 <a name="SwitchToDefaultContent"></a>    
 #### SwitchToDefaultContent()
@@ -661,6 +695,7 @@ Change the active frame to the default.
 
 
 
+<a name="see.also.webdriver.switchtodefaultcontent"></a>
 
 <a name="SwitchToFrame"></a>    
 #### SwitchToFrame(el)
@@ -678,6 +713,7 @@ Move to different frame using its element.
 
 
 
+<a name="see.also.webdriver.switchtoframe"></a>
 
 <a name="SwitchToLastWindow"></a>    
 #### SwitchToLastWindow()
@@ -688,6 +724,7 @@ Switch to last browser window.
 
 
 
+<a name="see.also.webdriver.switchtolastwindow"></a>
 
 <a name="SwitchToParentFrame"></a>    
 #### SwitchToParentFrame()
@@ -698,6 +735,7 @@ Select the parent frame of the currently selected frame.
 
 
 
+<a name="see.also.webdriver.switchtoparentframe"></a>
 
 <a name="SwitchToWindow"></a>    
 #### SwitchToWindow(windowHandle)
@@ -715,6 +753,7 @@ Switch to window specified by handle.
 
 
 
+<a name="see.also.webdriver.switchtowindow"></a>
 
 	
 

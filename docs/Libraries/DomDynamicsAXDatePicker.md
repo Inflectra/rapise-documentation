@@ -112,6 +112,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsaxdatepicker.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
 #### DoPrevMonth()
@@ -127,6 +128,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsaxdatepicker.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
 #### DoSelectDate(dateValue)
@@ -149,6 +151,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.domdynamicsaxdatepicker.doselectdate"></a>
 
 	
 

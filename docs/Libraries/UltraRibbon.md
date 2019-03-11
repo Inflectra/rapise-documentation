@@ -141,6 +141,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultraribbon.doclickapplicationbutton"></a>
 
 <a name="DoClickItem"></a>    
 #### DoClickItem(caption, xOffset, yOffset)
@@ -165,6 +166,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultraribbon.doclickitem"></a>
 
 <a name="DoClickTab"></a>    
 #### DoClickTab(caption, xOffset, yOffset)
@@ -189,6 +191,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultraribbon.doclicktab"></a>
 
 <a name="DoItemDropSelect"></a>    
 #### DoItemDropSelect(caption, item)
@@ -212,6 +215,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultraribbon.doitemdropselect"></a>
 
 <a name="DoMenu"></a>    
 #### DoMenu(path, separator)
@@ -235,6 +239,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.ultraribbon.domenu"></a>
 
 	
 

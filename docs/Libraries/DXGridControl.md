@@ -195,6 +195,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.dxgridcontrol.doclickcell"></a>
 
 <a name="DoClickColumn"></a>    
 #### DoClickColumn(col, clickType, xOffset, yOffset)
@@ -215,6 +216,7 @@ Clicks on column header
 
 
 
+<a name="see.also.dxgridcontrol.doclickcolumn"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText()
@@ -230,6 +232,7 @@ string: Table's full text
 
 
 
+<a name="see.also.dxgridcontrol.dofulltext"></a>
 
 	
 

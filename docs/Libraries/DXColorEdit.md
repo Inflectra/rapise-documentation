@@ -118,6 +118,7 @@ boolean: 'true' if successfule, 'false' otherwise
 
 
 
+<a name="see.also.dxcoloredit.doselectcolor"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(val)
@@ -140,6 +141,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxcoloredit.dosettext"></a>
 
 	
 

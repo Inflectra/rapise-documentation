@@ -138,6 +138,7 @@ additional data (links, images, comments) set via 'data' parameter.
 
 
 
+<a name="see.also.tester.assert"></a>
 
 <a name="AssertEqual"></a>    
 #### AssertEqual(message, obj1, obj2, data, tags)
@@ -161,6 +162,7 @@ additional data (links, images, comments) set via 'data' parameter.
 
 
 
+<a name="see.also.tester.assertequal"></a>
 
 <a name="AssertImage"></a>    
 #### AssertImage(message, img1, path, data, tags)
@@ -184,6 +186,7 @@ additional data (links, images, comments) set via 'data' parameter.
 
 
 
+<a name="see.also.tester.assertimage"></a>
 
 <a name="BeginTest"></a>    
 #### BeginTest(name, path)
@@ -202,6 +205,7 @@ Marks beginning of a test with a given name.
 
 
 
+<a name="see.also.tester.begintest"></a>
 
 <a name="CaptureDesktopImage"></a>    
 #### CaptureDesktopImage(caption)
@@ -219,6 +223,7 @@ Captures image of the desktop and adds it to the report.
 
 
 
+<a name="see.also.tester.capturedesktopimage"></a>
 
 <a name="CaptureObjectImage"></a>    
 #### CaptureObjectImage(caption, objId)
@@ -237,6 +242,7 @@ Captures image of an object and adds it to the report.
 
 
 
+<a name="see.also.tester.captureobjectimage"></a>
 
 <a name="CaptureWindowImage"></a>    
 #### CaptureWindowImage(caption, windowTitle, windowClass, bringToFront)
@@ -257,6 +263,7 @@ Captures image of an application window matched by title and class and adds it t
 
 
 
+<a name="see.also.tester.capturewindowimage"></a>
 
 <a name="EndTest"></a>    
 #### EndTest()
@@ -267,6 +274,7 @@ Marks end of a currently executed test. Calculates test results and performs fin
 
 
 
+<a name="see.also.tester.endtest"></a>
 
 <a name="FailTest"></a>    
 #### FailTest(message)
@@ -284,6 +292,7 @@ Stops test execution and sets it's status to failed.
 
 
 
+<a name="see.also.tester.failtest"></a>
 
 <a name="GetReportAttribute"></a>    
 #### GetReportAttribute(name)
@@ -301,6 +310,7 @@ Gets report attribute previously set by PushReportAttribute or SetReportAttribut
 
 
 
+<a name="see.also.tester.getreportattribute"></a>
 
 <a name="GetTestStatus"></a>    
 #### GetTestStatus()
@@ -320,6 +330,7 @@ One of:
 
 
 
+<a name="see.also.tester.getteststatus"></a>
 
 <a name="IgnoreStatus"></a>    
 #### IgnoreStatus(ignore)
@@ -348,6 +359,7 @@ just for information purposes (i.e. it does not affect final test status).</p>
 
 
 
+<a name="see.also.tester.ignorestatus"></a>
 
 <a name="Message"></a>    
 #### Message(message, data, tags)
@@ -368,6 +380,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 
 
 
+<a name="see.also.tester.message"></a>
 
 <a name="MessageBox"></a>    
 #### MessageBox(message)
@@ -385,6 +398,7 @@ Shows message box to user. Use it for verbose and manual testing.
 
 
 
+<a name="see.also.tester.messagebox"></a>
 
 <a name="MessageBoxPrompt"></a>    
 #### MessageBoxPrompt(question)
@@ -404,6 +418,7 @@ Shows message box with question to the user and checks if user presses "Yes" or 
 
 
 
+<a name="see.also.tester.messageboxprompt"></a>
 
 <a name="PopReportAttribute"></a>    
 #### PopReportAttribute(name)
@@ -426,6 +441,7 @@ string: Previous value. Null if no such stacked attribute found.
 
 
 
+<a name="see.also.tester.popreportattribute"></a>
 
 <a name="PushReportAttribute"></a>    
 #### PushReportAttribute(name, value)
@@ -468,6 +484,7 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 
 
 
+<a name="see.also.tester.pushreportattribute"></a>
 
 <a name="ResetReportAttribute"></a>    
 #### ResetReportAttribute(name)
@@ -485,6 +502,7 @@ Removes report attribute previously set by SetReportAttribute.
 
 
 
+<a name="see.also.tester.resetreportattribute"></a>
 
 <a name="SetReportAttribute"></a>    
 #### SetReportAttribute(name, value)
@@ -505,6 +523,7 @@ the ResetReportAttribute function.
 
 
 
+<a name="see.also.tester.setreportattribute"></a>
 
 <a name="SuppressReport"></a>    
 #### SuppressReport(suppress)
@@ -530,6 +549,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
 
 
 
+<a name="see.also.tester.suppressreport"></a>
 
 	
 

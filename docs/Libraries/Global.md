@@ -81,6 +81,7 @@ Performs Analog Playback of events recorded in a file.
 
 
 
+<a name="see.also.global.doanalogplay"></a>
 
 <a name="DoAppActivate"></a>    
 #### DoAppActivate(title)
@@ -104,6 +105,7 @@ See:
 <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/wzcddbek%28VS.85%29.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for AppActivate</a>
 
 
+<a name="see.also.global.doappactivate"></a>
 
 <a name="DoClick"></a>    
 #### DoClick(clickType)
@@ -121,6 +123,7 @@ Performs mouse click at the current position.
 
 
 
+<a name="see.also.global.doclick"></a>
 
 <a name="DoCompareJsObjects"></a>    
 #### DoCompareJsObjects(msg, obj1, obj2)
@@ -145,6 +148,7 @@ boolean: 'true' if two objects are equal, 'false' otherwise.
 
 
 
+<a name="see.also.global.docomparejsobjects"></a>
 
 <a name="DoDecrypt"></a>    
 #### DoDecrypt(encryptedText)
@@ -167,6 +171,7 @@ string: Decrypted text.
 
 
 
+<a name="see.also.global.dodecrypt"></a>
 
 <a name="DoEncrypt"></a>    
 #### DoEncrypt(plainText)
@@ -189,6 +194,7 @@ string: Encrypted text.
 
 
 
+<a name="see.also.global.doencrypt"></a>
 
 <a name="DoInvokeTest"></a>    
 #### DoInvokeTest(pathToTest, optionalParams)
@@ -213,6 +219,7 @@ boolean: 'true' if the test passed, 'false' otherwise.
 
 
 
+<a name="see.also.global.doinvoketest"></a>
 
 <a name="DoKillByName"></a>    
 #### DoKillByName(processName)
@@ -235,6 +242,7 @@ boolean: 'true' if the process was terminated, 'false' otherwise.
 
 
 
+<a name="see.also.global.dokillbyname"></a>
 
 <a name="DoKillByPid"></a>    
 #### DoKillByPid(pid)
@@ -257,6 +265,7 @@ boolean: 'true' if the process was terminated, 'false' otherwise.
 
 
 
+<a name="see.also.global.dokillbypid"></a>
 
 <a name="DoLaunch"></a>    
 #### DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)
@@ -283,6 +292,7 @@ number: ID of the new process (positive number) or an error code (negative numbe
 
 
 
+<a name="see.also.global.dolaunch"></a>
 
 <a name="DoLoadObjects"></a>    
 #### DoLoadObjects(objectsFilePath)
@@ -305,6 +315,7 @@ Object: saved_script_objects or null if the load was unsuccessful.
 
 
 
+<a name="see.also.global.doloadobjects"></a>
 
 <a name="DoMessageBox"></a>    
 #### DoMessageBox(prompt, buttons)
@@ -362,6 +373,7 @@ number: A number representation of a button pressed by user.
 
 
 
+<a name="see.also.global.domessagebox"></a>
 
 <a name="DoMouseMove"></a>    
 #### DoMouseMove(x, y, duration)
@@ -381,6 +393,7 @@ Moves mouse to the specified position.
 
 
 
+<a name="see.also.global.domousemove"></a>
 
 <a name="DoPlayManual"></a>    
 #### DoPlayManual(rmtFilePath, rmtParams)
@@ -404,6 +417,7 @@ boolean: 'true' if the manual test passed, 'false' otherwise.
 
 
 
+<a name="see.also.global.doplaymanual"></a>
 
 <a name="DoRunTestSet"></a>    
 #### DoRunTestSet(testSetFilePath, testSetParams)
@@ -422,6 +436,7 @@ Executes a test set. Results are shown in the report of the calling test.
 
 
 
+<a name="see.also.global.doruntestset"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys(keys)
@@ -444,6 +459,7 @@ See:
 <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a>
 
 
+<a name="see.also.global.dosendkeys"></a>
 
 <a name="DoSleep"></a>    
 #### DoSleep(millis=1000)
@@ -461,6 +477,7 @@ Pauses execution for given number of milliseconds (1000 = 1 second).
 
 
 
+<a name="see.also.global.dosleep"></a>
 
 <a name="DoTrim"></a>    
 #### DoTrim(str, global, trimChars)
@@ -487,6 +504,7 @@ string: Trimmed string.
 
 
 
+<a name="see.also.global.dotrim"></a>
 
 <a name="DoTypePassword"></a>    
 #### DoTypePassword(encryptedPassword)
@@ -509,6 +527,7 @@ string: 'true'
 
 
 
+<a name="see.also.global.dotypepassword"></a>
 
 <a name="DoWaitFor"></a>    
 #### DoWaitFor(objectId, timeout, sleepTimeIfFound)
@@ -534,6 +553,7 @@ was found or timeout.
 
 
 
+<a name="see.also.global.dowaitfor"></a>
 
 <a name="DoWaitForProperty"></a>    
 #### DoWaitForProperty(obj, getterName, propValue, timeout, params)
@@ -562,6 +582,7 @@ in the case of timeout.
 
 
 
+<a name="see.also.global.dowaitforproperty"></a>
 
 <a name="GetCurrentDir"></a>    
 #### GetCurrentDir()
@@ -577,6 +598,7 @@ string: Path of the current directory.
 
 
 
+<a name="see.also.global.getcurrentdir"></a>
 
 <a name="GetFileAsByteArray"></a>    
 #### GetFileAsByteArray(fileName)
@@ -599,6 +621,7 @@ Object: Array of bytes.
 
 
 
+<a name="see.also.global.getfileasbytearray"></a>
 
 <a name="GetFirstDayOfWeek"></a>    
 #### GetFirstDayOfWeek()
@@ -614,6 +637,7 @@ number: 0 - Sunday, 1 - Monday.
 
 
 
+<a name="see.also.global.getfirstdayofweek"></a>
 
 <a name="GetFullPath"></a>    
 #### GetFullPath(fileName)
@@ -636,6 +660,7 @@ string: Absolute file name.
 
 
 
+<a name="see.also.global.getfullpath"></a>
 
 <a name="GetOsOwner"></a>    
 #### GetOsOwner()
@@ -651,6 +676,7 @@ string: OS registered owner.
 
 
 
+<a name="see.also.global.getosowner"></a>
 
 <a name="GetOsPath"></a>    
 #### GetOsPath()
@@ -666,6 +692,7 @@ string: OS root path without the trailing backslash, e.g. 'C:\Windows'.
 
 
 
+<a name="see.also.global.getospath"></a>
 
 <a name="GetOsType"></a>    
 #### GetOsType()
@@ -681,6 +708,7 @@ string: OS type string.
 
 
 
+<a name="see.also.global.getostype"></a>
 
 <a name="GetOsVersion"></a>    
 #### GetOsVersion()
@@ -696,6 +724,7 @@ string: Service pack version.
 
 
 
+<a name="see.also.global.getosversion"></a>
 
 <a name="GetProperty"></a>    
 #### GetProperty(name, defValue)
@@ -719,6 +748,7 @@ string | <br>number | <br>boolean: Propery value. If a property does not exist t
 
 
 
+<a name="see.also.global.getproperty"></a>
 
 <a name="GetSpecialFolderPath"></a>    
 #### GetSpecialFolderPath(folder=MyDocuments)
@@ -768,6 +798,7 @@ string: System specified folder path without the trailing backslash, e.g. 'C:\Pr
 
 
 
+<a name="see.also.global.getspecialfolderpath"></a>
 
 <a name="SetFileAsByteArray"></a>    
 #### SetFileAsByteArray(fileName, bytes)
@@ -791,6 +822,7 @@ number: Number of bytes written.
 
 
 
+<a name="see.also.global.setfileasbytearray"></a>
 
 <a name="SetProperty"></a>    
 #### SetProperty(name, value)
@@ -814,6 +846,7 @@ boolean: 'true' if property value set successfully, 'false' otherwise.
 
 
 
+<a name="see.also.global.setproperty"></a>
 
 	
 

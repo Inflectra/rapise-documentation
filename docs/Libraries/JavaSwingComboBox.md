@@ -124,6 +124,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.javaswingcombobox.doselectitem"></a>
 
 	
 

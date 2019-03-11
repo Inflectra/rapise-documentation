@@ -74,6 +74,7 @@ Clears the content of this element.
 
 
 
+<a name="see.also.webelement.clear"></a>
 
 <a name="Click"></a>    
 #### Click()
@@ -84,6 +85,7 @@ Clicks this element.
 
 
 
+<a name="see.also.webelement.click"></a>
 
 <a name="ClickAt"></a>    
 #### ClickAt(x, y)
@@ -102,6 +104,7 @@ Clicks this element at the specified location.
 
 
 
+<a name="see.also.webelement.clickat"></a>
 
 <a name="ContextClick"></a>    
 #### ContextClick()
@@ -112,6 +115,7 @@ Opens context menu for this element.
 
 
 
+<a name="see.also.webelement.contextclick"></a>
 
 <a name="DoubleClick"></a>    
 #### DoubleClick()
@@ -122,6 +126,7 @@ Performs double click on this element.
 
 
 
+<a name="see.also.webelement.doubleclick"></a>
 
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName(className)
@@ -144,6 +149,7 @@ element or null.
 
 
 
+<a name="see.also.webelement.findelementbyclassname"></a>
 
 <a name="FindElementByCssSelector"></a>    
 #### FindElementByCssSelector(cssSelector)
@@ -166,6 +172,7 @@ element ot null.
 
 
 
+<a name="see.also.webelement.findelementbycssselector"></a>
 
 <a name="FindElementById"></a>    
 #### FindElementById(id)
@@ -188,6 +195,7 @@ element or null.
 
 
 
+<a name="see.also.webelement.findelementbyid"></a>
 
 <a name="FindElementByLinkText"></a>    
 #### FindElementByLinkText(linkText)
@@ -210,6 +218,7 @@ element or null.
 
 
 
+<a name="see.also.webelement.findelementbylinktext"></a>
 
 <a name="FindElementByName"></a>    
 #### FindElementByName(name)
@@ -232,6 +241,7 @@ element or null.
 
 
 
+<a name="see.also.webelement.findelementbyname"></a>
 
 <a name="FindElementByPartialLinkText"></a>    
 #### FindElementByPartialLinkText(partialLinkText)
@@ -254,6 +264,7 @@ element or null.
 
 
 
+<a name="see.also.webelement.findelementbypartiallinktext"></a>
 
 <a name="FindElementByTagName"></a>    
 #### FindElementByTagName(tagName)
@@ -276,6 +287,7 @@ element or null.
 
 
 
+<a name="see.also.webelement.findelementbytagname"></a>
 
 <a name="FindElementByXPath"></a>    
 #### FindElementByXPath(xpath)
@@ -298,6 +310,7 @@ element or null.
 
 
 
+<a name="see.also.webelement.findelementbyxpath"></a>
 
 <a name="FindElementsByClassName"></a>    
 #### FindElementsByClassName(className)
@@ -320,6 +333,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbyclassname"></a>
 
 <a name="FindElementsByCssSelector"></a>    
 #### FindElementsByCssSelector(cssSelector)
@@ -342,6 +356,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbycssselector"></a>
 
 <a name="FindElementsById"></a>    
 #### FindElementsById(id)
@@ -364,6 +379,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbyid"></a>
 
 <a name="FindElementsByLinkText"></a>    
 #### FindElementsByLinkText(linkText)
@@ -386,6 +402,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbylinktext"></a>
 
 <a name="FindElementsByName"></a>    
 #### FindElementsByName(name)
@@ -408,6 +425,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbyname"></a>
 
 <a name="FindElementsByPartialLinkText"></a>    
 #### FindElementsByPartialLinkText(partialLinkText)
@@ -430,6 +448,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbypartiallinktext"></a>
 
 <a name="FindElementsByTagName"></a>    
 #### FindElementsByTagName(tagName)
@@ -452,6 +471,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbytagname"></a>
 
 <a name="FindElementsByXPath"></a>    
 #### FindElementsByXPath(xpath)
@@ -474,6 +494,7 @@ array of elements.
 
 
 
+<a name="see.also.webelement.findelementsbyxpath"></a>
 
 <a name="GetAttribute"></a>    
 #### GetAttribute(attributeName)
@@ -491,6 +512,7 @@ Gets the value of the specified attribute for this element.
 
 
 
+<a name="see.also.webelement.getattribute"></a>
 
 <a name="GetCoordinates"></a>    
 #### GetCoordinates()
@@ -501,6 +523,7 @@ Gets a 'Point' object containing the coordinates of theupper-left corner of thi
 
 
 
+<a name="see.also.webelement.getcoordinates"></a>
 
 <a name="GetCssValue"></a>    
 #### GetCssValue(propertyName)
@@ -518,6 +541,7 @@ Gets the value of a CSS property of this element.
 
 
 
+<a name="see.also.webelement.getcssvalue"></a>
 
 <a name="GetDisplayed"></a>    
 #### GetDisplayed()
@@ -528,6 +552,7 @@ Gets a value indicating whether or not this element is displayed.
 
 
 
+<a name="see.also.webelement.getdisplayed"></a>
 
 <a name="GetEnabled"></a>    
 #### GetEnabled()
@@ -538,6 +563,7 @@ Gets a value indicating whether or not this element is enabled.
 
 
 
+<a name="see.also.webelement.getenabled"></a>
 
 <a name="GetHashCode"></a>    
 #### GetHashCode()
@@ -548,6 +574,7 @@ Method to get the hash code of the element.
 
 
 
+<a name="see.also.webelement.gethashcode"></a>
 
 <a name="GetLocation"></a>    
 #### GetLocation()
@@ -558,6 +585,7 @@ Gets a 'Point' object containing the coordinates of theupper-left corner of thi
 
 
 
+<a name="see.also.webelement.getlocation"></a>
 
 <a name="GetLocationOnScreenOnceScrolledIntoView"></a>    
 #### GetLocationOnScreenOnceScrolledIntoView()
@@ -568,6 +596,7 @@ Gets the point where the element would be when scrolled into view.
 
 
 
+<a name="see.also.webelement.getlocationonscreenoncescrolledintoview"></a>
 
 <a name="GetSelected"></a>    
 #### GetSelected()
@@ -578,6 +607,7 @@ Gets a value indicating whether or not this element is selected.
 
 
 
+<a name="see.also.webelement.getselected"></a>
 
 <a name="GetSize"></a>    
 #### GetSize()
@@ -588,6 +618,7 @@ Gets a 'Size' object containing the height and width of this element.
 
 
 
+<a name="see.also.webelement.getsize"></a>
 
 <a name="GetTagName"></a>    
 #### GetTagName()
@@ -598,6 +629,7 @@ Gets the tag name of this element.
 
 
 
+<a name="see.also.webelement.gettagname"></a>
 
 <a name="GetText"></a>    
 #### GetText()
@@ -608,6 +640,7 @@ Gets the innerText of this element, without any leading ortrailing whitespace, 
 
 
 
+<a name="see.also.webelement.gettext"></a>
 
 <a name="SelectOptionByText"></a>    
 #### SelectOptionByText(option)
@@ -625,6 +658,7 @@ Selects option from select element.
 
 
 
+<a name="see.also.webelement.selectoptionbytext"></a>
 
 <a name="SendKeys"></a>    
 #### SendKeys(text)
@@ -642,6 +676,7 @@ Simulates typing text into the element.
 
 
 
+<a name="see.also.webelement.sendkeys"></a>
 
 <a name="Submit"></a>    
 #### Submit()
@@ -652,6 +687,7 @@ Submits this element to the web server.
 
 
 
+<a name="see.also.webelement.submit"></a>
 
 	
 

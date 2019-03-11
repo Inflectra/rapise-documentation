@@ -57,6 +57,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.yuisliderh.dochange"></a>
 
 	
 

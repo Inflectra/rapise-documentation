@@ -328,6 +328,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.c1truedblist.doaddselection"></a>
 
 <a name="DoClearSelection"></a>    
 #### DoClearSelection()
@@ -343,6 +344,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.c1truedblist.doclearselection"></a>
 
 <a name="DoClickItem"></a>    
 #### DoClickItem(row, col, clickType, xOffset, yOffset)
@@ -369,6 +371,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.c1truedblist.doclickitem"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText()
@@ -384,6 +387,7 @@ string | <br>boolean: Full text of the table (may be very long!), 'false' otherw
 
 
 
+<a name="see.also.c1truedblist.dofulltext"></a>
 
 <a name="DoRemoveSelection"></a>    
 #### DoRemoveSelection(items, separator, itemsType)
@@ -408,6 +412,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.c1truedblist.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem(items, separator, itemsType)
@@ -432,6 +437,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.c1truedblist.doselectitem"></a>
 
 	
 

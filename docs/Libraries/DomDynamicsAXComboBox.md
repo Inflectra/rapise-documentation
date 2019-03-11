@@ -74,6 +74,7 @@ Expands combo box.
 
 
 
+<a name="see.also.domdynamicsaxcombobox.doopen"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText()
@@ -84,6 +85,7 @@ Sets text into the edit field of a combo box.
 
 
 
+<a name="see.also.domdynamicsaxcombobox.dosettext"></a>
 
 	
 

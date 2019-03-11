@@ -80,6 +80,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.dxdateedit.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
 #### DoPrevMonth()
@@ -95,6 +96,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.dxdateedit.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
 #### DoSelectDate(day, month, year)
@@ -119,6 +121,7 @@ boolean: 'true' if success, 'false' otherwise
 
 
 
+<a name="see.also.dxdateedit.doselectdate"></a>
 
 	
 

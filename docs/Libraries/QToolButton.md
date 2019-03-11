@@ -45,6 +45,7 @@ Presses the button.
 
 
 
+<a name="see.also.qtoolbutton.doaction"></a>
 
 	
 

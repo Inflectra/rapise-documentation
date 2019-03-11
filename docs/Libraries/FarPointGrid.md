@@ -253,6 +253,7 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 
+<a name="see.also.farpointgrid.doclickcell"></a>
 
 <a name="DoFullText"></a>    
 #### DoFullText(fileName)
@@ -275,6 +276,7 @@ string | <br>boolean: Text representation of the grid, 'true' if the file was su
 
 
 
+<a name="see.also.farpointgrid.dofulltext"></a>
 
 	
 

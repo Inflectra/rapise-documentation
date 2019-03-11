@@ -87,6 +87,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.qdatetimeedit.dosetdate"></a>
 
 <a name="DoSetDateTime"></a>    
 #### DoSetDateTime(value)
@@ -109,6 +110,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.qdatetimeedit.dosetdatetime"></a>
 
 <a name="DoSetTime"></a>    
 #### DoSetTime(value)
@@ -131,6 +133,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.qdatetimeedit.dosettime"></a>
 
 	
 

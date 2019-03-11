@@ -150,6 +150,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxlookupedit.doselectitem"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(val)
@@ -172,6 +173,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dxlookupedit.dosettext"></a>
 
 	
 

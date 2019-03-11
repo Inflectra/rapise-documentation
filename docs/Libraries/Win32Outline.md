@@ -83,6 +83,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.win32outline.doselectitem"></a>
 
 	
 
@@ -136,6 +137,7 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 
 
+<a name="see.also.win32outline.doexpand"></a>
 
 	
 

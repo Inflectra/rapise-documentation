@@ -254,6 +254,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.androidobject.doaction"></a>
 
 <a name="DoClear"></a>    
 #### DoClear()
@@ -269,6 +270,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.androidobject.doclear"></a>
 
 <a name="DoClick"></a>    
 #### DoClick()
@@ -284,6 +286,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.androidobject.doclick"></a>
 
 <a name="DoEnsureVisible"></a>    
 #### DoEnsureVisible(text)
@@ -306,6 +309,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.androidobject.doensurevisible"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys(keys)
@@ -328,6 +332,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.androidobject.dosendkeys"></a>
 
 	
 

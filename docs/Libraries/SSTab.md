@@ -84,6 +84,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.sstab.doselecttab"></a>
 
 	
 

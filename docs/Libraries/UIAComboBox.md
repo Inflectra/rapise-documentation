@@ -123,6 +123,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.uiacombobox.doselectitem"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(newText)
@@ -145,6 +146,7 @@ boolean: 'true' if successul, 'false' otherwise
 
 
 
+<a name="see.also.uiacombobox.dosettext"></a>
 
 	
 

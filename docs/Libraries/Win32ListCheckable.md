@@ -83,6 +83,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.win32listcheckable.doselectitem"></a>
 
 	
 
@@ -159,6 +160,7 @@ Checks an item of this object.
 
 
 
+<a name="see.also.win32listcheckable.docheckitem"></a>
 
 	
 

@@ -157,6 +157,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dximagecomboboxedit.doselectitem"></a>
 
 <a name="DoSetText"></a>    
 #### DoSetText(val)
@@ -179,6 +180,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.dximagecomboboxedit.dosettext"></a>
 
 	
 

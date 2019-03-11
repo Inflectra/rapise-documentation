@@ -194,6 +194,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
+<a name="see.also.navbuttonpad.doclick"></a>
 
 	
 

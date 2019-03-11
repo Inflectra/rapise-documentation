@@ -69,6 +69,7 @@ Flick action.
 
 
 
+<a name="see.also.android.doflick"></a>
 
 <a name="DoGoToUrl"></a>    
 #### DoGoToUrl(url)
@@ -91,6 +92,7 @@ Opens URL in active browser.
 
 
 
+<a name="see.also.android.dogotourl"></a>
 
 <a name="DoPressBack"></a>    
 #### DoPressBack()
@@ -106,6 +108,7 @@ Presses Back button.
 
 
 
+<a name="see.also.android.dopressback"></a>
 
 <a name="DoPressHome"></a>    
 #### DoPressHome()
@@ -121,6 +124,7 @@ Presses Home button.
 
 
 
+<a name="see.also.android.dopresshome"></a>
 
 <a name="DoPressKeyCode"></a>    
 #### DoPressKeyCode(keyCode)
@@ -143,6 +147,7 @@ Presses key with code.
 
 
 
+<a name="see.also.android.dopresskeycode"></a>
 
 <a name="DoPressMenu"></a>    
 #### DoPressMenu()
@@ -158,6 +163,7 @@ Presses Menu button.
 
 
 
+<a name="see.also.android.dopressmenu"></a>
 
 <a name="DoScreenshot"></a>    
 #### DoScreenshot()
@@ -173,6 +179,7 @@ Makes screenshot of a device.
 
 
 
+<a name="see.also.android.doscreenshot"></a>
 
 <a name="DoStartActivity"></a>    
 #### DoStartActivity(appPackage, appActivity)
@@ -196,6 +203,7 @@ Starts activity.
 
 
 
+<a name="see.also.android.dostartactivity"></a>
 
 <a name="DoStartVideoRecording"></a>    
 #### DoStartVideoRecording()
@@ -211,6 +219,7 @@ Starts video recording on a device.
 
 
 
+<a name="see.also.android.dostartvideorecording"></a>
 
 <a name="DoStopVideoRecording"></a>    
 #### DoStopVideoRecording()
@@ -226,6 +235,7 @@ Stops video recording on a device.
 
 
 
+<a name="see.also.android.dostopvideorecording"></a>
 
 <a name="DoSwipe"></a>    
 #### DoSwipe(endX, endY, startX, startY, duration, touchCount)
@@ -253,6 +263,7 @@ Swipe action.
 
 
 
+<a name="see.also.android.doswipe"></a>
 
 <a name="DoTap"></a>    
 #### DoTap(x, y, duration, tapCount, touchCount)
@@ -279,6 +290,7 @@ Tap screen.
 
 
 
+<a name="see.also.android.dotap"></a>
 
 <a name="GetCapability"></a>    
 #### GetCapability(name)
@@ -301,6 +313,7 @@ Capability string.
 
 
 
+<a name="see.also.android.getcapability"></a>
 
 <a name="GetContext"></a>    
 #### GetContext()
@@ -316,6 +329,7 @@ Either NATIVE_APP or WEBVIEW_1.
 
 
 
+<a name="see.also.android.getcontext"></a>
 
 <a name="SetContext"></a>    
 #### SetContext(name)
@@ -333,6 +347,7 @@ Sets context.
 
 
 
+<a name="see.also.android.setcontext"></a>
 
 	
 

@@ -61,6 +61,7 @@ Appends text to a file.
 
 
 
+<a name="see.also.file.append"></a>
 
 <a name="CreateFolder"></a>    
 #### CreateFolder(folderPath)
@@ -78,6 +79,7 @@ Creates a folder.
 
 
 
+<a name="see.also.file.createfolder"></a>
 
 <a name="Delete"></a>    
 #### Delete(fileName)
@@ -95,6 +97,7 @@ Deletes a file.
 
 
 
+<a name="see.also.file.delete"></a>
 
 <a name="DeleteFolder"></a>    
 #### DeleteFolder(folderPath)
@@ -112,6 +115,7 @@ Deletes a folder.
 
 
 
+<a name="see.also.file.deletefolder"></a>
 
 <a name="Exists"></a>    
 #### Exists(fileName)
@@ -134,6 +138,7 @@ true if file exists, false otherwise.
 
 
 
+<a name="see.also.file.exists"></a>
 
 <a name="Find"></a>    
 #### Find(path, searchPattern=*, recursive, firstOnly, files, folders)
@@ -171,6 +176,7 @@ string: \n-separated string where each line is a path to the found item.
 
 
 
+<a name="see.also.file.find"></a>
 
 <a name="FolderExists"></a>    
 #### FolderExists(folderPath)
@@ -193,6 +199,7 @@ true if folder exists, false - otherwise.
 
 
 
+<a name="see.also.file.folderexists"></a>
 
 <a name="FolderInfo"></a>    
 #### FolderInfo(folderPath)
@@ -215,6 +222,7 @@ Folder object as described here <a displaytype="text" defaultstyle="true" type="
 
 
 
+<a name="see.also.file.folderinfo"></a>
 
 <a name="Include"></a>    
 #### Include(fileName)
@@ -237,6 +245,7 @@ Contents of the source file for evaluation.
 
 
 
+<a name="see.also.file.include"></a>
 
 <a name="IncludeOnce"></a>    
 #### IncludeOnce(fileName)
@@ -259,6 +268,7 @@ Contents of the source file for evaluation.
 
 
 
+<a name="see.also.file.includeonce"></a>
 
 <a name="Info"></a>    
 #### Info(fileName)
@@ -281,6 +291,7 @@ File object as described here <a displaytype="text" defaultstyle="true" type="we
 
 
 
+<a name="see.also.file.info"></a>
 
 <a name="Read"></a>    
 #### Read(fileName)
@@ -303,6 +314,7 @@ Contents of the text file as string.
 
 
 
+<a name="see.also.file.read"></a>
 
 <a name="ResolvePath"></a>    
 #### ResolvePath(fileName)
@@ -325,6 +337,7 @@ Absolute path of the file.
 
 
 
+<a name="see.also.file.resolvepath"></a>
 
 <a name="Touch"></a>    
 #### Touch(fileName)
@@ -342,6 +355,7 @@ Sets file modification time to current time.
 
 
 
+<a name="see.also.file.touch"></a>
 
 <a name="Write"></a>    
 #### Write(fileName, text)
@@ -360,6 +374,7 @@ Writes text file.
 
 
 
+<a name="see.also.file.write"></a>
 
 	
 

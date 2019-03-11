@@ -262,6 +262,7 @@ Performs default action for an object. If the object doesn't have default action
 
 
 
+<a name="see.also.sessimulatedobject.doaction"></a>
 
 <a name="DoAnalogPlay"></a>    
 #### DoAnalogPlay(path, left, top)
@@ -281,6 +282,7 @@ Plays analog recording using coordinates relative to this object.
 
 
 
+<a name="see.also.sessimulatedobject.doanalogplay"></a>
 
 <a name="DoClick"></a>    
 #### DoClick(clickType, xOffset, yOffset)
@@ -305,6 +307,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.sessimulatedobject.doclick"></a>
 
 <a name="DoEnsureVisible"></a>    
 #### DoEnsureVisible()
@@ -315,6 +318,7 @@ Makes sure specified element is visible on the screen.
 
 
 
+<a name="see.also.sessimulatedobject.doensurevisible"></a>
 
 <a name="DoLButtonDown"></a>    
 #### DoLButtonDown()
@@ -325,6 +329,7 @@ Performs left mouse button down. This method does not change cursor coordinates.
 
 
 
+<a name="see.also.sessimulatedobject.dolbuttondown"></a>
 
 <a name="DoLButtonUp"></a>    
 #### DoLButtonUp()
@@ -335,6 +340,7 @@ Performs left mouse button up. This method does not change cursor coordinates. M
 
 
 
+<a name="see.also.sessimulatedobject.dolbuttonup"></a>
 
 <a name="DoLClick"></a>    
 #### DoLClick(x, y)
@@ -358,6 +364,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.sessimulatedobject.dolclick"></a>
 
 <a name="DoLDClick"></a>    
 #### DoLDClick(x, y)
@@ -381,6 +388,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.sessimulatedobject.doldclick"></a>
 
 <a name="DoMButtonDown"></a>    
 #### DoMButtonDown()
@@ -391,6 +399,7 @@ Performs middle mouse button down. This method does not change cursor coordinate
 
 
 
+<a name="see.also.sessimulatedobject.dombuttondown"></a>
 
 <a name="DoMButtonUp"></a>    
 #### DoMButtonUp()
@@ -401,6 +410,7 @@ Performs middle mouse button up. This method does not change cursor coordinates.
 
 
 
+<a name="see.also.sessimulatedobject.dombuttonup"></a>
 
 <a name="DoMClick"></a>    
 #### DoMClick(x, y)
@@ -424,6 +434,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.sessimulatedobject.domclick"></a>
 
 <a name="DoMDClick"></a>    
 #### DoMDClick(x, y)
@@ -447,6 +458,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.sessimulatedobject.domdclick"></a>
 
 <a name="DoMouseMove"></a>    
 #### DoMouseMove(x, y)
@@ -465,6 +477,7 @@ Moves mouse cursor to a location relative to this object position.
 
 
 
+<a name="see.also.sessimulatedobject.domousemove"></a>
 
 <a name="DoRButtonDown"></a>    
 #### DoRButtonDown()
@@ -475,6 +488,7 @@ Performs right mouse button down. This method does not change cursor coordinates
 
 
 
+<a name="see.also.sessimulatedobject.dorbuttondown"></a>
 
 <a name="DoRButtonUp"></a>    
 #### DoRButtonUp()
@@ -485,6 +499,7 @@ Performs right mouse button up. This method does not change cursor coordinates. 
 
 
 
+<a name="see.also.sessimulatedobject.dorbuttonup"></a>
 
 <a name="DoRClick"></a>    
 #### DoRClick(x, y)
@@ -508,6 +523,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.sessimulatedobject.dorclick"></a>
 
 <a name="DoRDClick"></a>    
 #### DoRDClick(x, y)
@@ -531,6 +547,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
+<a name="see.also.sessimulatedobject.dordclick"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys(keys)
@@ -548,6 +565,7 @@ Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {
 
 
 
+<a name="see.also.sessimulatedobject.dosendkeys"></a>
 
 	
 
