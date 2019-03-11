@@ -8,4 +8,4 @@ To display and edit javascript files.  The editor supports [Syntax Highlighting
 
 ## How to Open
 
-Use the [Test Files Dialog](test_files_dialog.md) to open a javascript file.  The javascript file will be opened in a **Source Editor**, in the [Content View](content_view.md).  The [Edit Popup](menu_and_toolbars.md) of the Main Menu will also be populated with text editor-specific options.
+Use the [Test Files View](test_files_dialog.md) to open a javascript file.  The javascript file will be opened in a **Source Editor**, in the [Content View](content_view.md).  The [Edit Popup](menu_and_toolbars.md) of the Main Menu will also be populated with text editor-specific options.

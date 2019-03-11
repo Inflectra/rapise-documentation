@@ -1,8 +1,6 @@
 # Scripting Choice Dialog
 
-## Screenshot
-
-![choose\_scripting\_dialog](./img/scripting_language_rvl.png)
+![choose_scripting_dialog](./img/scripting_language_rvl.png)
 
 ## Purpose
 

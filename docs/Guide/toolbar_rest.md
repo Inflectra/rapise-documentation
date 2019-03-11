@@ -1,9 +1,6 @@
 # Toolbar: REST
 
-## Screenshot
-
 ![REST Toolbar](./img/toolbar_rest1.png)
-
 
 ## Purpose
 

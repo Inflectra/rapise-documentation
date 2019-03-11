@@ -1,7 +1,5 @@
 # Manual Playback
 
-## Screenshot
-
 ![manual\_playback](./img/manual_playback1.png)
 
 ## Purpose

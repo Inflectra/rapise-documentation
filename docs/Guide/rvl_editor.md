@@ -1,7 +1,5 @@
 # RVL Editor
 
-## Screenshot
-
 ![rvl editor](./img/rvl_editor1.png)
 
 ## Purpose

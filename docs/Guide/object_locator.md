@@ -4,7 +4,9 @@
 
 Object locators are created during [Recording](recording.md)/[Learning](object_learning.md) and used during [Playback](playback.md) to identify [learned objects](object_learning.md) and [simulated objects](simulated_objects.md). There are many types of locators.
 
-For example [**Generic** library](/LIbraries/ses_lib_generic) supports 4:
+In most libraries (Web, Desktop, Mobile) only one locator is generated when you record or learn an object.
+
+Legacy [**Generic**](../Libraries/ses_lib_generic.md) library supports 4 different locators added each time you learn or record object:
 
 - **Location**: This locator uses the object's index relative to encapsulating objects for identification. The location is stored as a period separated list of indexes. For instance, 1.2.3 would be "the third object in the second object in the first object."  The name, class, and role of the object are also stored.
 - **LocationPath**: This locator remembers name, class, and role property information for the object and all of its encapsulating objects.
@@ -12,6 +14,12 @@ For example [**Generic** library](/LIbraries/ses_lib_generic) supports 4:
 - **Ordinal**: This locator creates an array of object name/object class combinations.  Each object is assigned an index in  the array.
 
 ## Usage
+
+The locator for the selected object is shown in the [Properties](properties.md) view:
+
+![properties dialog](./img/properties1.png)
+
+### How Locators are Stored
 
 The locator for each object is specified in `saved_script_objects` array in **Objects.js** of a test. Locator information is stored in `locations` array of each object.
 
@@ -72,7 +80,11 @@ If a piece of information in the locator matches a piece of object info (`object
 "object_role": "param:object_role"
 ```
 
-## Over-riding Locator Parameters
+## Over-riding Locator Parameters (RVL)
+
+See also [RVL.SetLocatorOpts](../Libraries/RVL.md#locatoropts) and this [KB Article](https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx) for more detailed explanation and example of overriding locator parameters in RVL.
+
+## Over-riding Locator Parameters (JS)
 
 You can over-ride the information used to locate your object at runtime.  Normally, to refer to an object, you use the SeS function:
 

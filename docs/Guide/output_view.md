@@ -1,7 +1,5 @@
 # Output View
 
-## Screenshot
-
 ![output view](./img/output_view1.png)
 
 ## Purpose

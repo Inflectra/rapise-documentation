@@ -1,7 +1,5 @@
 # Options Dialog
 
-## Screenshot
-
 ![options dialog, general tab](./img/options_dialog1.png)
 
 ## Purpose

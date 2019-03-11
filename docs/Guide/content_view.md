@@ -1,6 +1,5 @@
 # Content View
 
-## Screenshot
 ![content view](./img/content_view1.png)
 
 ## Purpose
@@ -21,4 +20,4 @@ To view and edit files.  This includes the following file types:
 *   Manual test steps (`.rmt`) that open in the [Manual Test Editor](manual_test_editor.md).
 
 ## How to Open
-Open a file using the [Test Files Dialog](test_files_dialog.md).  The file will open inside of the **Content View**.
+Open a file using the [Test Files View](test_files_dialog.md).  The file will open inside of the **Content View**.

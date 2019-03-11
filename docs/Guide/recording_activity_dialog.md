@@ -1,7 +1,5 @@
 # Recording Activity Dialog
 
-## Screenshot
-
 ![recording activity dialog](./img/recording_activity_dialog1.png)
 
 ## Purpose

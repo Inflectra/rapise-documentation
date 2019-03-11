@@ -1,7 +1,5 @@
 # Toolbar: SOAP
 
-## Screenshot
-
 ![toolbar-soap](./img/toolbar_soap1.png)
 
 ## Purpose
