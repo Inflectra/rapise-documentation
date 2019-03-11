@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This dialog box displays the list of native (not using [Selenium](selenium_settings_dialog.md)) web browsers that have been configured for use by Rapise and lets you create a new profile, modify a profile or make a new profile based on an existing one.
+This dialog box displays the list of native (not using [Selenium](selenium_settings_dialog.md)) web browsers that have been configured for use by Rapise and lets you create a new browser profile, modify a profile or make a new profile based on an existing one.
 
 This feature is useful if you have several different versions of a web browser on the same machine (e.g. Firefox Latest vs. Firefox ESR, or different versions of Chrome portable) or if you want to be able to run a browser with different command-line options (e.g. Chrome normal, Chrome incognito mode, Chrome with specific screen size)
 

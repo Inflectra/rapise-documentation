@@ -1,7 +1,8 @@
 # Tutorial: Web Testing (RVL)
 
-In this section, you will learn how to record and execute a Rapise script against a web application.  We will be using a demo application
-called **Library Information System**.  Our test will be simple.  It will log on to the library catalog, navigate to the main menu, and click on all of the menu options to make sure the links are working.
+In this section, you will learn how to record and execute a Rapise script against a web application.  We will be using a demo application called **Library Information System**.  Our test will be simple.  It will log on to the library catalog, navigate to the main menu, and click on all of the menu options to make sure the links are working.
+
+You are viewing the **codeless** version of the tutorial. It demonstrates usage of [Rapise Visual Language](/RVL/Overview/). To view JavaScript-based tutorial click [here](tutorial_web_using_javascript.md).
 
 ## Open Rapise and Create New Test
 
@@ -328,3 +329,8 @@ Now click **Play** to playback the new test:
 ![clip0104](./img/tutorial_record_and_playback55.png)
 
 The test should now pass successfully.
+
+## See Also
+
+- [Tutorial: Web Testing (JavaScript)](tutorial_web_using_javascript.md)
+- [Browser Profiles](browser_settings.md)

@@ -2,15 +2,7 @@
 
 This section will demonstrate how you can use Rapise to inspect the objects in a web page and Learn them for testing using the **JavaScript test script language** instead of the **Rapise Visual Language (RVL)** that was illustrated in the main [Tutorial: Web Testing (RVL)](tutorial_record_and_playback.md).
 
-This is useful in cases where you have more complex applications to test and you want to be able to use the power of a full programming language such as JavaScript to iterate over data, perform calculations and use `if…then…else` branches to follow different steps during the test.
-
-To record a script in JavaScript mode pass first 3 chapters from [Tutorial: Web Testing (RVL)](tutorial_record_and_playback.md):
-
-- Open Rapise and Create New Test
-- Open the Application Under Test
-- Record Test Steps
-
-The only thing you need to do differently is to select JavaScript mode during new test creation.
+This is useful in cases where you have more complex applications to test and you want to be able to use the power of a full programming language such as JavaScript to process data, perform calculations and implement complex flow of control.
 
 ## Open Rapise and Create New Test
 
@@ -26,7 +18,7 @@ If this is your first time using Rapise on this computer, you may see the follow
 
 ![SpiraTest connection dialog](./img/tutorial_record_and_playback3.png)
 
-If you see this, it means that Rapise is trying to [connect to a SpiraTest server](spiratest_integration.md). **SpiraTest** is our web based [test management system](spiratest_integration.md). It is a powerful tool that can store your Rapise tests and deploy them onto remote machines for automated regression testing. However, for now just click on the **\[Cancel\]** button and you will see the [new test dialog](create_new_test_dialog.md):
+If you see this, it means that Rapise is trying to [connect to a SpiraTest server](spiratest_integration.md). **SpiraTest** is our web based [test management system](spiratest_integration.md). It is a powerful tool that can store your Rapise tests and deploy them onto remote machines for automated regression testing. However, for now just click on the `Cancel` button and you will see the [new test dialog](create_new_test_dialog.md):
 
 ![New Test dialog](./img/tutorial_record_and_playback4.png)
 
@@ -45,7 +37,6 @@ Rapise will create the new test and you will see the main function of the test:
 ![test function](./img/tutorial_web_using_javascript21.png)
 
 You are now ready to record your first test.
-
 
 ## Open the Application Under Test
 
@@ -282,12 +273,20 @@ Now we need to just consolidate these two lines into the actual test. Using the 
 Tester.AssertEqual('', null, null);
 SeS('Amsterdam').GetInnerText();
 ```
+
 to
+
 ```javascript
 Tester.AssertEqual('The values match', 'Amsterdam', SeS('Amsterdam').GetInnerText());
 ```
+
 Now click **Play** to playback the new test:
 
 ![execution report](./img/tutorial_web_using_javascript15.png)
 
 The test should now pass successfully.
+
+## See Also
+
+- [Tutorial: Web Testing (RVL)](tutorial_record_and_playback.md)
+- [Browser Profiles](browser_settings.md)
