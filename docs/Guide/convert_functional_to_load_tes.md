@@ -41,7 +41,7 @@ Ensure that the Internet Explorer HTML library is set in the test parameters.
 
 From the main menu select `Tools > Convert to NeoLoad`.
 
-This will display the [NeoLoad convertor dialog](../neoload-convertor-dialog/). On this dialog box, set the following parameters:
+This will display the [NeoLoad convertor dialog](neoload_convertor_dialog.md). On this dialog box, set the following parameters:
 
 ![neoload-conversion-dialog](./img/convert_functional_to_load_tes6.png)
 

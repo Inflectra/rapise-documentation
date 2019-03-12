@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This dialog box displays the list of **Web Spy settings** and lets you change the behavior of the [Web Spy](../web-spy/) tool.
+This dialog box displays the list of **Web Spy settings** and lets you change the behavior of the [Web Spy](../web_spy/) tool.
 
 ![web_settings](./img/web_settings1.png)
 
@@ -22,7 +22,7 @@ This dialog box has the following settings:
 - **DOM Tree Loading Timeout** - this lets you extend or reduce the amount of time (in seconds) that Rapise allows for loading the DOM Tree. This can be useful for slower web browsers and/or complex web sites with lots of nested frames. The default value is 10 seconds
 - **DOM Tree Max Attribute Length** - this lets you specify the maximum length of the DOM attributes. The smaller the value, the fast the DOM tree will load. The default is 1024 characters.
 - **Enable Universal XPath Generator** - If set to 'True' it creates the XPath and CSS selectors inside the Web Spy itself rather than relying on the web browser to do the generation. This is usually much faster (especially when using Internet Explorer).
-- **Fast DOM Tree Build** - If set to 'True' then Rapise uses embedded code to get the DOM Tree when using either the Internet Explorer HTML library or any of the [Selenium libraries](../selenium-webdriver/).
+- **Fast DOM Tree Build** - If set to 'True' then Rapise uses embedded code to get the DOM Tree when using either the Internet Explorer HTML library or any of the [Selenium libraries](../selenium_webdriver/).
 - **Show Internal ID** - If 'True' then DOM Element pane shows internal ID of an element. This ID is purely internal to Rapise and is not part of the HTML web page or web application
 - **XPath Type to Learn** - *This is described in the section below:*
 

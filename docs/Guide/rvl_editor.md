@@ -13,12 +13,14 @@ Use the **RVL** button on the main toolbar to open an RVL (`.rvl.xlsx`) file. T
 ## Features
 
 Editor has support for all RVL statements including
-[Variables](../RVL/Variables.md),
-[Actions](../RVL/Actions.md),
-[Assertions](../RVL/Assertions.md),
-[Maps](../RVL/Maps.md),
-[If-Else](../RVL/IfElse.md),
-[Loops](../RVL/Loops.md)
+
+- [Variables](../RVL/Variables.md),
+- [Actions](../RVL/Actions.md),
+- [Assertions](../RVL/Assertions.md),
+- [Maps](../RVL/Maps.md),
+- [If-Else](../RVL/IfElse.md),
+- [Loops](../RVL/Loops.md)
+
 statements.
 
 RVL is a recordable language. Rapise recorder is translates captured actions to objects stored in the [object repository](object_tree.md) and a set of actions. Each recorded chunk may be inserted into desired place in the selected sheet:
@@ -156,10 +158,8 @@ RVL is designed to be a simple grid language and it may be edited in any spreads
 
 ## See Also
 
-* [RVL](../RVL/Overview.md) Language Reference
-
-* [https://www.inflectra.com/Support/KnowledgeBase/KB357.aspx](KB 357) Data-driven testing with spreadsheets and RVL
-
-* [https://www.inflectra.com/Support/KnowledgeBase/KB340.aspx](KB 340) How to Do a Nested Loop with Rapise Visual Language (RVL)
-
-* [https://www.inflectra.com/Support/KnowledgeBase/KB371.aspx](KB 371) Sample Spira-Friendly Framework with Multiple RVLs and Common Library
+- [About RVL](visual_language.md)
+- [Why RVL?](../RVL/Overview.md)
+- [KB 357](https://www.inflectra.com/Support/KnowledgeBase/KB357.aspx) Data-driven testing with spreadsheets and RVL
+- [KB 340](https://www.inflectra.com/Support/KnowledgeBase/KB340.aspx) How to Do a Nested Loop with Rapise Visual Language (RVL)
+- [KB 371](https://www.inflectra.com/Support/KnowledgeBase/KB371.aspx) Sample Spira-Friendly Framework with Multiple RVLs and Common Library

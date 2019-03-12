@@ -232,7 +232,7 @@ SeS('DropDown').DoSelectItem("Search name");
 Lookup field consists of an edit box, open button and a dropdown table. Record lookup interactions in three steps:
 
 1. Click the edit field. Recorded as [DynamicsAXTextBox](/Libraries/DynamicsAXTextBox/).
-2. Click the open button. Recorded as [UIAObject](/Libraries/UIAObject).
+2. Click the open button. Recorded as [UIAObject](/Libraries/UIAObject/).
 3. Click the value in the dropdown grid. Recorded as [DynamicsAXTable](/Libraries/DynamicsAXTable/).
 
 ![Lookup Field](./img/dynamicsaxlookupfield.png)

@@ -30,20 +30,26 @@ def process(file_name):
                     if anchor_pos != -1:
                         href = href[:anchor_pos]
 
-                    if href.startswith("/"):
+                    if href.startswith("/") and href.endswith(".md"):
+                        path = root_folder + href
+                    elif href.startswith("/") and href.endswith("/"):
                         path = root_folder + href[:-1] + ".md"
-                    elif href.startswith("../"):
+                    elif href.startswith("../") and href.endswith(".md"):
+                        path = src_folder + "/" + href
+                    elif href.startswith("../") and href.endswith("/"):
                         path = src_folder + "/" + href[3:-1] + ".md"
                     elif href.startswith("./img/"):
                         path = src_folder + "/" + href[2:]
+                    elif href.endswith(".md"):
+                        path = src_folder + "/" + href
                     else:
                         path = "?" + href
 
-                    if path.startswith("?http"):
+                    if path.startswith("?http") or path.startswith("?chrome") or path == "?":
                         continue
 
                     if not os.path.exists(path):
-                        print(file_name + ":    " + path)
+                        print(file_name + ":    " + path + "    " + line)
 
 main()
 

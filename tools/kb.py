@@ -1,4 +1,3 @@
-import urllib.request
 import lxml.etree
 import re
 
@@ -6,7 +5,7 @@ import re
 
 url = "https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx"
 list_file_name = "List.xml"
-kb_file_name = "kb.md"
+kb_file_name = "../kb.md"
 
 wspace_regex = re.compile(r"[ \t\n]+", re.IGNORECASE)
 kbno_regex = re.compile(r"KB[0-9]+", re.IGNORECASE)

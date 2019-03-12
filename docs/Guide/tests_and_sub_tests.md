@@ -63,7 +63,7 @@ Each test has its own objects, functions and scenarios.
 
 ![subtestworkspace](./img/tests_and_sub_tests2.png)
 
-The usage of such an approach is well demonstrated by example. We created a test called **SampleMaster** and put all Rapise samples into it by using **Add File** context menu in the the [Test Tree](test_files_dialog) dialog. Finally the Files tree looks like:
+The usage of such an approach is well demonstrated by example. We created a test called **SampleMaster** and put all Rapise samples into it by using **Add File** context menu in the the [Test Tree](test_files_dialog.md) dialog. Finally the Files tree looks like:
 
 ![subtest samplemaster tree](./img/tests_and_sub_tests3.png)
 
