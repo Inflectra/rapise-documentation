@@ -6,7 +6,7 @@ result_file = "../toc.md"
 
 # - 'Rapise User''s Guide':
 #       - 'Company & Copyright': 'Guide/company__copyright.md'
-entry_regex = re.compile(r"([ \t]*)\- \'([a-z0-9'\-& :]+)\':( \'([a-z0-9_/\.]+)\')?", re.IGNORECASE)
+entry_regex = re.compile(r"([ \t]*)\- \'([a-z0-9'\-& :\?]+)\':( \'([a-z0-9_/\.]+)\')?", re.IGNORECASE)
 
 def main():
     with open(result_file, "w+", encoding='utf-8') as output:

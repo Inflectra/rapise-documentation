@@ -206,6 +206,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [Dynamics AX](/Guide/dynamics_ax/)
             - [Dynamics NAV](/Guide/dynamics_nav/)
             - [Dynamics 365 for Operations](/Guide/dynamics_365/)
+            - [Unified Service Desk](/Guide/unified_service_desk/)
         - [Windows Applications](/Guide/windows_applications/)
         - [Qt Framework](/Guide/qt_framework_testing/)
         - [Java SWT](/Guide/java_swt/)
@@ -214,21 +215,19 @@ From this page you can reach different parts of the documentation. Use menu at t
         - [Tutorial: Custom Library](/Guide/tutorial_custom_library/)
     - [Glossary](/Guide/glossary/)
 - RVL
-    - Overview
-        - [About](/RVL/Overview/)
-    - Features
-        - [Columns](/RVL/Columns/)
-        - [Comments](/RVL/Comments/)
-        - [Conditions](/RVL/Conditions/)
-        - [Actions](/RVL/Actions/)
-        - [Variables](/RVL/Variables/)
-        - [Assertions](/RVL/Assertions/)
-        - [Parameters](/RVL/Params/)
-        - [Maps](/RVL/Maps/)
-        - [Loops](/RVL/Loops/)
-    - Objects
-        - [RVL Object](/RVL/RVLObject/)
-        - [Map Object](/RVL/MapObject/)
+      - [About](/Guide/visual_language/)
+      - [Why RVL?](/RVL/Overview/)
+      - [RVl Editor](/Guide/rvl_editor/)
+      - [Columns](/RVL/Columns/)
+      - [Comments](/RVL/Comments/)
+      - [Conditions](/RVL/Conditions/)
+      - [Actions](/RVL/Actions/)
+      - [Parameters](/RVL/Params/)
+      - [Variables](/RVL/Variables/)
+      - [Assertions](/RVL/Assertions/)
+      - [If Else](/RVL/IfElse/)
+      - [Maps](/RVL/Maps/)
+      - [Loops](/RVL/Loops/)
 - Libraries
     - Global
         - [Global](/Libraries/ses_lib_global/)
@@ -245,9 +244,13 @@ From this page you can reach different parts of the documentation. Use menu at t
         - [SeSReportImage](/Libraries/SeSReportImage/)
         - [SeSReportLink](/Libraries/SeSReportLink/)
         - [SeSReportText](/Libraries/SeSReportText/)
+        - [Session](/Libraries/Session/)
         - [Spreadsheet](/Libraries/Spreadsheet/)
         - [Tester](/Libraries/Tester/)
         - [WebDriver](/Libraries/WebDriver/)
+    - RVL
+      - [RVL Object](/Libraries/RVL/)
+      - [Map Object](/Libraries/Map/)
     - Desktop
         - Generic
             - [Generic](/Libraries/ses_lib_generic/)
@@ -661,7 +664,9 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [DomSalesforceGrid](/Libraries/DomSalesforceGrid/)
 - Manuals
     - [Rapise Installation Guide](/Manuals/Rapise_Installation_Guide/)
+    - [Setting Up Web Browsers](/Guide/setting_up_web_browsers/)
     - [Preparing for Android Testing](/Manuals/Preparing_for_Android_Testing/)
     - [Preparing for iOS Testing](/Manuals/Preparing_for_iOS_Testing/)
-- [Knowledge Base](/Manuals/kb/)
+    - [Setting Up Selenium](/Guide/setting_up_selenium/)
+- [KB](/Manuals/kb/)
 - [UITAP](http://www.uitestingplayground.com/)
