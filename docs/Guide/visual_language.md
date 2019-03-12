@@ -2,11 +2,10 @@
 
 Rapise includes a scriptless approach to writing automated tests as well as the option to use the built-in [JavaScript IDE](javascript_ide.md).
 
-
 This section gives an overview of the **Rapise Visual Language (RVL)**
 option and why you would use it.
 
-For more information on RVL's syntax and constructs, please refer to the separate [RVL section](/RVL/Overview/) of this user manual.
+For more information on RVL's syntax and constructs, please refer to the separate [RVL section](rvl_editor.md) of this user manual.
 
 ## What is Scriptless Testing
 

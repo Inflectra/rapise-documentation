@@ -224,8 +224,9 @@ pages:
         - 'Tutorial: Custom Library': 'Guide/tutorial_custom_library.md'
     - 'Glossary': 'Guide/glossary.md'
 - 'RVL':
+      - 'About': 'Guide/visual_language.md'
+      - 'Why RVL?': 'RVL/Overview.md'      
       - 'RVl Editor': 'Guide/rvl_editor.md'
-      - 'Why RVL': 'RVL/Overview.md'
       - 'Columns': 'RVL/Columns.md'
       - 'Comments': 'RVL/Comments.md'
       - 'Conditions': 'RVL/Conditions.md'
