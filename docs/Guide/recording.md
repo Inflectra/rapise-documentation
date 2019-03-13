@@ -34,4 +34,4 @@ For **Mobile Testing**, you will need to use the `Spy` button which then allows 
 - The RA dialog is described more thoroughly in [Recording Activity > Dialog](recording_activity_dialog.md).
 - To learn how to run the script, see [Playback](playback.md). To learn how to modify the script, see [Scripting](scripting.md).
 - For a detailed tutorial, see [Tutorial: Record and Playback](tutorial_record_and_playback.md) in the Getting Started section.
-- For more information on the Spy (ObjectSpy) capability, see [Object > Spy](../object_spy/).
+- For more information on the Spy capability, see [Object > Spy](../object_spy/).
