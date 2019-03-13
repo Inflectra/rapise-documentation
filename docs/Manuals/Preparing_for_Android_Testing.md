@@ -47,7 +47,7 @@ Once it has installed, you will use the **Android SDK Manager** to download and 
 
 ![](./img/Preparing_for_Android_Testing4.png)
 
-### Preparing Android Emulator
+## Preparing Android Emulator
 
 If you want to test using the Android Emulator, make sure you have installed it using the SDK manager.
 
@@ -61,7 +61,7 @@ Then you can launch (from the main menu of the Android Studio) the **Android Vir
 
 In this case you can just create the Android Virtual Device, Start it and then connect to it using Rapise.
 
-### Preparing a Physical Android Device
+## Preparing a Physical Android Device
 
 If you are going to be testing a physical Android device, you will need to do the following.
 
@@ -101,10 +101,13 @@ The easiest way to install it is to use Command Prompt.
 > npm install -g appium
 ```
 
-Once that is installed, you will then need to download and install the latest version of Java SE Development Kit (JDK) from the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Once that has been installed, make sure that the  **JAVA\_HOME** environment variable has been set.
+Once that is installed, you will then need to download and install the latest version of Java SE Development Kit (JDK) from the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Once that has been installed, make sure that the  **JAVA_HOME** environment variable has been set.
 
-Once that is installed, you will then need to install the Android Studio (you may already have it installed if you are doing Android
-development). You can download it from [Android Developer site](https://developer.android.com/studio/).
+Once that is installed, you will then need to install the Android Studio (you may already have it installed if you are doing Android development). You can download it from [Android Developer site](https://developer.android.com/studio/).
+
+Make sure you have **ANDROID_HOME** environment variable set to point to Android SDK. In most cases it should point to
+
+    c:\Users\<user name>\AppData\Local\Android\sdk
 
 More [about Android Studio installation](https://developer.android.com/studio/install#windows)
 
@@ -114,7 +117,7 @@ Once it has installed, you will use the **Android SDK Manager** to download and 
 
 ![](./img/Preparing_for_Android_Testing10.png)
 
-### Preparing Android Emulator
+## Preparing Android Emulator
 
 If you want to test using the Android Emulator, make sure you have installed it using the SDK manager.
 
@@ -128,6 +131,6 @@ Then you can launch (from the main menu of the Android Studio) the **Android Vir
 
 In this case you can just create the Android Virtual Device, Start it and then connect to it using Rapise.
 
-### Preparing a Physical Android Device
+## Preparing a Physical Android Device
 
-See topic with same name in **Using a Mac to Host Android Emulator and Devices** chapter.
+Steps are [the same as for Mac](#preparing-a-physical-android-device).

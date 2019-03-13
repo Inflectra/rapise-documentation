@@ -124,3 +124,6 @@ You can find the Android sample tests and sample Application in [AUTAndroid Repo
 - [Mobile Testing](mobile_testing2.md), for an overview of mobile testing with sub-sections on testing.
 - [Mobile Settings Dialog](mobile_settings_dialog.md) - for information on setting up the different **mobile profiles** for the mobile devices you will be testing.
 - [Mobile Object Spy](object_spy_mobile.md) - for information on how Rapise connects to the device and lets you view the objects in the tested application.
+- [KB382](https://www.inflectra.com/Support/KnowledgeBase/KB382.aspx) Android Testing Hints
+- [KB280](https://www.inflectra.com/Support/KnowledgeBase/KB280.aspx) How to specify Selenium or Appium capabilities which are not available through Rapise UI?
+- [KB278](https://www.inflectra.com/Support/KnowledgeBase/KB278.aspx) How to run a cross-browser test on a mobile device?

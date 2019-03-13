@@ -29,7 +29,7 @@ Simulator** if you intend to test simulated iOS devices.
 
 *(Please refer to the [Apple tutorial](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/) if you are writing your first iOS application and need an introduction into how to develop for iOS).*
 
-### Get the AUTiOS Source Code
+## Get the AUTiOS Source Code
 
 Sample iOS application is hosted in [AUTiOS Repository](https://github.com/Inflectra/AUTiOS).
 
@@ -39,7 +39,7 @@ Launch Xcode on the Mac and check out the application from the repository:
 
 Before you can actually build and deploy this project, you will need to register for an **Apple ID** and setup an Apple Developer account. You should check with your company to see if they have already joined the **Apple iOS Developer Program**, if not, you will need to join yourself and become a member. You can learn more about this at the [Apple developer website](https://developer.apple.com).
 
-### Join Your iOS Development Team
+## Join Your iOS Development Team
 
 Assuming that either you or your company already has signed up for the iOS Developer Program, you will need to ask the administrator of your account (it might be you) to send an invitation to you if you are not already a member. The link for accepting such an invitation is
 typically:
@@ -52,7 +52,7 @@ Meanwhile, back in Xcode Use the **‘Add an Account…’** to login with your 
 
 ![](./img/Preparing_for_iOS_Testing5.png)
 
-### Building and Deploying on a Simulated Device
+## Building and Deploying on a Simulated Device
 
 Now that you have signed into Xcode using your developer account, you can select a simulated device and run the project on it:
 
@@ -70,7 +70,7 @@ Assuming that this is successful, you will see the AUTiOS running in the iOS Sim
 If you are only going to use Simulated devices (not recommended) then you can skip the next section and just continue with setting up
 **Appium**, as described in the main Mobile Testing topic.
 
-### Building and Deploying on a Physical Device
+## Building and Deploying on a Physical Device
 
 Login with your **Apple ID** to <http://developer.apple.com>
 
