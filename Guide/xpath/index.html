@@ -2892,8 +2892,8 @@
             <li><a href="#purpose">Purpose</a></li>
             <li><a href="#xpath-fundamentals">XPath Fundamentals</a></li>
             <li><a href="#rapise-xpath-extensions">Rapise XPath Extensions</a></li>
+            <li><a href="#automatic-xpath-generation-on-record-and-learn">Automatic XPath Generation on Record and Learn</a></li>
             <li><a href="#using-web-spy">Using Web Spy</a></li>
-            <li><a href="#learning-objects">Learning Objects</a></li>
             <li><a href="#dynamic-queries">Dynamic Queries</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
@@ -2902,41 +2902,51 @@
 
 <h1 id="web-testing-using-xpath-queries">Web Testing - Using XPath Queries</h1>
 <h2 id="purpose">Purpose</h2>
-<p>When testing web applications you will often need to use XPath to query the browser DOM for elements based on the scenario under test. This section explains how you can use XPath queries with Rapise to make your browser testing more flexible and adaptive to changes on the screen.</p>
+<p>When testing web applications you will explicitly or implicitly use <strong>XPath</strong> expressions to query the browser <strong>DOM</strong> for elements based on the scenario under test. This section explains how XPath queries are used in Rapise and how to make your browser testing more flexible and adaptive to changes in the application you test.</p>
 <h2 id="xpath-fundamentals">XPath Fundamentals</h2>
-<p>XPath uses path expressions to select nodes in an XML document such as HTML. The node is selected by following a path or steps.</p>
-<p><a href="https://www.w3schools.com/xml/xpath_intro.asp">XPATH Tutorial</a></p>
+<p>XPath uses path expressions to select nodes in an <strong>XML</strong> document such as <strong>HTML</strong>. The node is selected by following a path or steps.</p>
+<p>Refer to <a href="https://www.w3schools.com/xml/xpath_intro.asp">XPATH Tutorial</a> for more details.</p>
 <h2 id="rapise-xpath-extensions">Rapise XPath Extensions</h2>
-<p>Web pages sometimes use HTML frames. The XPath works inside the frame contents. Rapise has a special syntax (that is not part of standard
-XPath) to combine multiple XPath statements into a single line:</p>
+<p>Web pages sometimes use <strong>HTML</strong> frames. The XPath works inside the frame contents. Rapise has a special syntax (that is not part of standard XPath) to combine multiple XPath statements into a single line:</p>
 <pre><code class="xpath">//frame[@name='main']@@@//a[3]
 </code></pre>
 
 <p>The special statement <code>@@@</code> is used as a separator for XPath statements pointing to constituent frames.</p>
-<p>The top-level frame is found by name 'main'</p>
+<p>The top-level frame is found by name <code>main</code></p>
 <pre><code class="xpath">//frame[@name='main']
 </code></pre>
 
 <p>Then the frame's contents are searched for the third <code>&lt;a&gt;</code> element (i.e. 3rd link on a page).</p>
-<p>There are several different ways to use XPath queries in Rapise</p>
+<h2 id="automatic-xpath-generation-on-record-and-learn">Automatic XPath Generation on Record and Learn</h2>
+<p>When you do a <a href="../recording/">recording</a> session, interact with web elements or <a href="../object_learning/">learn</a> them - Rapise generates XPath <a href="https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx">locators</a> for the elements. You can view XPath of an object in the property grid:</p>
+<p><img alt="xpath locator" src="../img/xpath_locator.png" /></p>
 <h2 id="using-web-spy">Using Web Spy</h2>
-<p>To most easily use XPath queries in Rapise, we recommend using the Web Spy tool:</p>
+<p>In some advanced cases you may need to construct XPath query manually. For this purpose we recommend using the <a href="../web_spy/">Web Spy</a> tool:</p>
 <p><img alt="xpath edit" src="../img/xpath1.png" /></p>
 <p>If you enter in the XPath query at the top, when you click <strong>Test</strong> it will display all of the DOM elements that match the query:</p>
 <p><img alt="xpath results" src="../img/xpath2.png" /></p>
-<p>You can now refine the query to only find the items you want to test.</p>
-<h2 id="learning-objects">Learning Objects</h2>
-<p>When you have created the query in the Web Spy that returns the HTML elements that you were expecting, you can click on the <strong>Learn</strong> button to learn that object. What this will do is create a new Rapise object in the <a href="../object_tree/">Object Tree</a> that maps to this specific XPath. That means that the "object" in Rapise is effectively a pointer to this specific XPath query.</p>
-<p>For example, if you want to find a specific book in a grid of books, you can search by its name using XPath and the text() XPath expression described above, then learn this object as <strong>Oliver_Twist</strong> so that you can access it in your code as <code>SeS("Oliver_Twist")</code>. Every time you call a function on <strong>Oliver_Twist</strong>", Rapise will use the learned XPath expression and use that to evaluate which HTML element in the web page to access.</p>
-<h2 id="dynamic-queries">Dynamic Queries</h2>
-<p>In addition to learning objects based on specific XPath, there are a set of general functions that can be used to query for objects in the web page:</p>
-<pre><code class="javascript">SeS('Book_Management').DoDOMQueryXPath('tr/td[text()=&quot;Oliver Twist&quot;]');
+<p>You can now refine the query to only find the item you want to test.</p>
+<h3 id="learning-objects-in-web-spy">Learning Objects in Web Spy</h3>
+<p>When you have created the query in the Web Spy that returns the HTML element that you were expecting, you can click on the <strong>Learn</strong> button in the Web Spy toolbar to learn that element. What this will do is create a new Rapise object in the <a href="../object_tree/">Object Tree</a> that maps to this specific XPath.</p>
+<p>For example, if you want to find a specific book in a grid of books</p>
+<p><img alt="book table" src="../img/xpath_book_table.png" /></p>
+<p>you can search by its name using <code>text()</code> XPath function:</p>
+<pre><code class="xpath">//td[text()='Oliver Twist']
 </code></pre>
 
-<p>Will dynamically query for any HTML element that is a child of the learned <strong>Book Management</strong> object that matches the XPath. In this example it will look for any table cell in a table row that has the content of the book name.</p>
+<p>Then learn this object as <strong>Oliver_Twist</strong> so that you can access it in your code as <code>SeS("Oliver_Twist")</code>. Every time you call a function on <strong>Oliver_Twist</strong>, Rapise will use the learned XPath expression and use that to evaluate which HTML element in the web page to access.</p>
+<h2 id="dynamic-queries">Dynamic Queries</h2>
+<p>In addition to learning objects based on specific XPath, there is <a href="/Libraries/HTMLObject/#DoDOMQueryXPath">HTMLObject.DoDOMQueryXPath</a> action that can be used to query for elements in the web page:</p>
+<pre><code class="javascript">var res = SeS('MainContent_grdBooks').DoDOMQueryXPath('.//td[text()=&quot;Oliver Twist&quot;]');
+Tester.Message(res.length);
+</code></pre>
+
+<p>This will dynamically query for any HTML element that is a child of the learned <strong>MainContent_grdBooks</strong> object that matches the XPath. In this example it will look for any table cell that has the content of the book name.</p>
+<p>You can also find an object dynamically without having any object in the object tree. To do this use <a href="/Libraries/Navigator/#Find">Navigator.Find</a> action.</p>
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB282.aspx">KB282</a> Elastic XPATH Expressions</li>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB363.aspx">KB363</a> How to define a profile for Web Application in Rapise</li>
 </ul></div>
         </div>
 
@@ -2946,7 +2956,7 @@ XPath) to combine multiple XPath statements into a single line:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+                shortcuts = {"search": 83, "previous": 80, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
