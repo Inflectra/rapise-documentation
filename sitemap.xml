@@ -1001,11 +1001,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://rapisedoc.inflectra.com/Libraries/Ocr/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://rapisedoc.inflectra.com/Libraries/Screenshot/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -2922,6 +2917,11 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Manuals/Rapise_Installation_Guide/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/spiratest_integration/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
