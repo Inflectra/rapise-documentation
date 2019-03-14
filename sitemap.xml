@@ -26,16 +26,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/tutorial_record_and_playback/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/tutorial_web_using_javascript/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/twodialogs_sample/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -46,17 +36,32 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing_android/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing_ios/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/tutorial_record_and_playback/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/tutorial_web_using_javascript/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/tutorial_web_services_rest/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/tutorial_soap_web_services/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing_android/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -106,6 +111,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/multiple_recordings/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/analog_recording/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -126,6 +136,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/object_manager/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/recording_library/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -137,11 +152,6 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/actions/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/multiple_recordings/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -161,12 +171,12 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/object_spy_mobile/</loc>
+     <loc>https://rapisedoc.inflectra.com/Guide/object_spy_managed/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/object_spy_managed/</loc>
+     <loc>https://rapisedoc.inflectra.com/Guide/object_spy_mobile/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -177,11 +187,6 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/web_spy/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/object_manager/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -201,6 +206,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/screenshots/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/automated_reporting/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -212,6 +222,11 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/report_filtering/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/tests_and_sub_tests/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -276,6 +291,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/checkpoints/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/javascript_ide/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -326,6 +346,26 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/manual_testing/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/manual_testing_recording/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/manual_testing_playback/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/semi_manual_testing/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/unit_testing/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -356,81 +396,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/web_service_testing/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/rest_web_service/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/soap_web_services/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing2/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Manuals/Preparing_for_iOS_Testing/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing_ios/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Manuals/Preparing_for_Android_Testing/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing_android/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/manual_testing/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/manual_testing_recording/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/manual_testing_playback/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/semi_manual_testing/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/spiratest_integration/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/checkpoints/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/tests_and_sub_tests/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/neoload_integration/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -442,6 +407,11 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/client_performance_monitoring/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/spiratest_integration/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -781,6 +751,36 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/windows_applications/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing2/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Manuals/Preparing_for_iOS_Testing/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing_ios/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Manuals/Preparing_for_Android_Testing/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing_android/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/web_testing/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
@@ -821,7 +821,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/mobile_testing2/</loc>
+     <loc>https://rapisedoc.inflectra.com/Guide/web_service_testing/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/rest_web_service/</loc>
+     <lastmod>2019-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/soap_web_services/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -852,11 +862,6 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/unified_service_desk/</loc>
-     <lastmod>2019-03-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Guide/windows_applications/</loc>
      <lastmod>2019-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
