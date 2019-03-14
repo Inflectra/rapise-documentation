@@ -7,7 +7,6 @@
     - 'iOS': 'Libraries/iOS.md'
     - 'Navigator': 'Libraries/Navigator.md'
     - 'NeoLoad': 'Libraries/NeoLoad.md'
-    - 'Ocr': 'Libraries/Ocr.md'
     - 'Screenshot': 'Libraries/Screenshot.md'
     - 'SeSReportException': 'Libraries/SeSReportException.md'
     - 'SeSReportImage': 'Libraries/SeSReportImage.md'

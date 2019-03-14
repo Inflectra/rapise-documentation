@@ -281,6 +281,7 @@ pages:
         #salesforce
 - 'Manuals':
     - 'Rapise Installation Guide': 'Manuals/Rapise_Installation_Guide.md'
+    - 'SpiraTest Integration': 'Guide/spiratest_integration.md'    
     - 'Setting Up Web Browsers': 'Guide/setting_up_web_browsers.md'
     - 'Preparing for Android Testing': 'Manuals/Preparing_for_Android_Testing.md'
     - 'Preparing for iOS Testing': 'Manuals/Preparing_for_iOS_Testing.md'
