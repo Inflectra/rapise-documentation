@@ -2889,7 +2889,8 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#variables">Variables</a></li>
-            <li><a href="#declaring-and-assigning">Declaring and Assigning</a></li>
+            <li><a href="#declaring">Declaring</a></li>
+            <li><a href="#assigning">Assigning</a></li>
             <li><a href="#using">Using</a></li>
             <li><a href="#local-variables">Local Variables</a></li>
             <li><a href="#global-variables">Global Variables</a></li>
@@ -2902,7 +2903,7 @@
 <h1 id="variables">Variables</h1>
 <p>In RVL, variables are useful for storing intermediate results as well as accessing and passing global values to external <em>JavaScript</em> functions.</p>
 <p>Variables may be used in <a href="../Params/">Params</a> to <a href="../Conditions/">Conditions</a> and in <a href="../Actions/">Actions</a>.</p>
-<h2 id="declaring-and-assigning">Declaring and Assigning</h2>
+<h2 id="declaring">Declaring</h2>
 <p>This line declares a variable without any values. Its value may be assigned later:</p>
 <table>
 <thead>
@@ -2928,6 +2929,8 @@
 </tr>
 </tbody>
 </table>
+<h2 id="assigning">Assigning</h2>
+<h3 id="assignment-expression">Assignment Expression</h3>
 <p>This line declares and assigns value <em>5</em> to a variable <code>MyVar2</code>:</p>
 <table>
 <thead>
@@ -2954,6 +2957,86 @@
 </tbody>
 </table>
 <p>If the variable is declared earlier, then assignment just changes its value. If the variable is not yet declared, then assignment is actually a declaration with assignment.</p>
+<h3 id="action-output">Action Output</h3>
+<p>If an action returns a value it can be assigned to a variable via <code>Output</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><em>Flow</em></th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><strong>Variable</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>OsVersion</code></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><strong>Action</strong></td>
+<td align="left">Global</td>
+<td align="left">GetOsVersion</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><strong>Output</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">variable</td>
+<td align="left">OsVersion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="auto-assignment">Auto Assignment</h3>
+<p>There are two auto assigned variables in RVL:  <code>LastResult</code> and <code>LastObject</code>. If an action returns some value then it is assigned to <code>LastResult</code>. <code>LastObject</code> is effectively an alias to the last used object in <strong>Object</strong> column.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><em>Flow</em></th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Object</em></th>
+<th align="left"><em>Action</em></th>
+<th align="left"><em>ParamName</em></th>
+<th align="left"><em>ParamType</em></th>
+<th align="left"><em>ParamValue</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><strong>Action</strong></td>
+<td align="left">Global</td>
+<td align="left">GetOsVersion</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><strong>Action</strong></td>
+<td align="left">Tester</td>
+<td align="left">Message</td>
+<td align="left"></td>
+<td align="left">variable</td>
+<td align="left"><strong>LastResult</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This snippet prints OS version to the report.</p>
 <h2 id="using">Using</h2>
 <p>Any <a href="../Params/">Params</a> value may accept a <em>variable</em>:</p>
 <table>
@@ -3185,7 +3268,7 @@ var globalVar = &quot;Value&quot;;
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"help": 191, "search": 83, "previous": 80, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
