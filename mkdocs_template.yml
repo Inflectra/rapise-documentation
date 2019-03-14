@@ -19,15 +19,18 @@ pages:
         - 'Getting Started': 'Guide/getting_started.md'
         - 'Overview': 'Guide/overview.md'
         - 'Samples Index': 'Guide/sample_tests.md'
+        - 'Tutorial: Desktop Testing':
+            - 'Using Rapise Visual Language': 'Guide/twodialogs_sample.md'
+            - 'Using JavaScript': 'Guide/tutorial_windows_using_javascript.md'
+        - 'Tutorial: Mobile Testing': 
+            - 'Mobile Testing using Android': 'Guide/mobile_testing_android.md'
+            - 'Mobile Testing using iOS': 'Guide/mobile_testing_ios.md'
         - 'Tutorial: Web Testing':
             - 'Using Rapise Visual Language': 'Guide/tutorial_record_and_playback.md'
             - 'Using JavaScript': 'Guide/tutorial_web_using_javascript.md'
-        - 'Tutorial: Windows Testing':
-            - 'Using Rapise Visual Language': 'Guide/twodialogs_sample.md'
-            - 'Using JavaScript': 'Guide/tutorial_windows_using_javascript.md'
-        - 'Tutorial: REST Web Services': 'Guide/tutorial_web_services_rest.md'
-        - 'Tutorial: SOAP Web Services': 'Guide/tutorial_soap_web_services.md'
-        - 'Tutorial: Mobile Testing': 'Guide/mobile_testing_android.md'
+        - 'Tutorial: Web Services Testing':
+            - 'REST Web Services': 'Guide/tutorial_web_services_rest.md'
+            - 'SOAP Web Services': 'Guide/tutorial_soap_web_services.md'
         - 'Tutorial: Manual Testing': 'Guide/tutorial_exploratory_testing.md'
         - 'Tutorial: Java Testing':
             - 'Using Rapise Visual Language': 'Guide/tutorial_java_testing.md'
@@ -41,34 +44,36 @@ pages:
             - 'Recording and Learning': 'Guide/object_types.md'
             - 'Recording': 'Guide/recording.md'
             - 'Learning': 'Guide/object_learning.md'
+            - 'Multiple Recordings': 'Guide/multiple_recordings.md'
             - 'Analog Recording':
                 - 'Analog Recording': 'Guide/analog_recording.md'
                 - 'Absolute Analog Recording': 'Guide/absolute_analog_learning.md'
                 - 'Relative Analog Recording': 'Guide/relative_analog_learning.md'
             - 'Simulated Objects': 'Guide/simulated_objects.md'
-            - 'Object Libraries':
-                - 'Object Libraries': 'Guide/recording_library.md'
-                - 'Custom Libraries':
-                    - 'Custom Libraries': 'Guide/custom_libraries.md'
-                    - 'Actions': 'Guide/actions.md'
-            - 'Multiple Recordings': 'Guide/multiple_recordings.md'
-            - 'Object Spy':
-                - 'Object Spy': 'Guide/object_spy.md'
-                - 'Accessible (MSAA) Spy': 'Guide/object_spy_accessible.md'
-                - 'Java Spy': 'Guide/object_spy_java.md'
-                - 'Mobile Spy': 'Guide/object_spy_mobile.md'
-                - 'Managed (.NET) Spy': 'Guide/object_spy_managed.md'
-                - 'UI Automation Spy': 'Guide/object_spy_uiautomation.md'
-                - 'Web Spy': 'Guide/web_spy.md'
             - 'Object Manager': 'Guide/object_manager.md'
+        - 'Object Libraries':
+            - 'Object Libraries': 'Guide/recording_library.md'
+            - 'Custom Libraries':
+                - 'Custom Libraries': 'Guide/custom_libraries.md'
+                - 'Actions': 'Guide/actions.md'
+        - 'Object Spy':
+            - 'Object Spy': 'Guide/object_spy.md'
+            - 'Accessible (MSAA) Spy': 'Guide/object_spy_accessible.md'
+            - 'Java Spy': 'Guide/object_spy_java.md'
+            - 'Managed (.NET) Spy': 'Guide/object_spy_managed.md'
+            - 'Mobile Spy': 'Guide/object_spy_mobile.md'
+            - 'UI Automation Spy': 'Guide/object_spy_uiautomation.md'
+            - 'Web Spy': 'Guide/web_spy.md'
         - 'Playback':
             - 'Playback': 'Guide/playback.md'
             - 'Command Line': 'Guide/command_line.md'
             - 'Object Locator': 'Guide/object_locator.md'
+        - 'Taking Screenshots': 'Guide/screenshots.md'
         - 'Automated Reporting':
             - 'Automated Reporting': 'Guide/automated_reporting.md'
             - 'Writing to the Report': 'Guide/writing_to_the_report.md'
             - 'Report Filtering': 'Guide/report_filtering.md'
+        - 'Tests and Sub-Tests': 'Guide/tests_and_sub_tests.md'
         - 'Visual Language (RVL)': 'Guide/visual_language.md'
         - 'Scripting':
             - 'Scripting': 'Guide/scripting.md'
@@ -82,6 +87,7 @@ pages:
             - 'Data Driven Testing': 'Guide/data_driven_testing.md'
             - 'Customizable Engine': 'Guide/customizable_engine.md'
             - 'Scenarios': 'Guide/scenarios.md'
+            - 'Checkpoints': 'Guide/checkpoints.md'
         - 'Javascript IDE':
             - 'Javascript IDE': 'Guide/javascript_ide.md'
             - 'Internal Debugger':
@@ -94,6 +100,11 @@ pages:
             - 'Code Folding': 'Guide/code_folding.md'
             - 'Syntax Checking': 'Guide/syntax_checking.md'
             - 'Code Completion': 'Guide/code_helper.md'
+        - 'Manual Testing':
+            - 'Manual Testing': 'Guide/manual_testing.md'
+            - 'Manual Recording': 'Guide/manual_testing_recording.md'
+            - 'Manual Playback': 'Guide/manual_testing_playback.md'
+            - 'Semi-Manual Testing': 'Guide/semi_manual_testing.md'
         - 'Unit Testing':
             - 'Unit Testing': 'Guide/unit_testing.md'
             - 'Visual Studio': 'Guide/visual_studio.md'
@@ -101,28 +112,11 @@ pages:
             - 'DLL Testing': 'Guide/dll_testing.md'
             - 'COM Testing Support': 'Guide/com_testing_support.md'
             - 'TAP Results': 'Guide/tap.md'
-        - 'Web Service Testing':
-            - 'Web Service Testing': 'Guide/web_service_testing.md'
-            - 'Testing REST Web Services': 'Guide/rest_web_service.md'
-            - 'Testing SOAP Web Services': 'Guide/soap_web_services.md'
-        - 'Mobile Testing':
-            - 'Mobile Testing': 'Guide/mobile_testing2.md'
-            - 'Preparing Environment for iOS Mobile Testing': 'Manuals/Preparing_for_iOS_Testing.md'
-            - 'Mobile Testing using iOS': 'Guide/mobile_testing_ios.md'
-            - 'Preparing Environment for Android Mobile Testing': 'Manuals/Preparing_for_Android_Testing.md'
-            - 'Mobile Testing using Android': 'Guide/mobile_testing_android.md'
-        - 'Manual Testing':
-            - 'Manual Testing': 'Guide/manual_testing.md'
-            - 'Manual Recording': 'Guide/manual_testing_recording.md'
-            - 'Manual Playback': 'Guide/manual_testing_playback.md'
-            - 'Semi-Manual Testing': 'Guide/semi_manual_testing.md'
-        - 'SpiraTest Integration': 'Guide/spiratest_integration.md'
-        - 'Checkpoints': 'Guide/checkpoints.md'
-        - 'Tests and Sub-Tests': 'Guide/tests_and_sub_tests.md'
-        - 'NeoLoad Integration':
+        - 'Load Testing':
             - 'NeoLoad Integration': 'Guide/neoload_integration.md'
             - 'Convert Functional to Load Test': 'Guide/convert_functional_to_load_tes.md'
             - 'Client Performance Monitoring': 'Guide/client_performance_monitoring.md'
+        - 'Test Management': 'Guide/spiratest_integration.md'
     - 'Dialogs, Views, and Menus':
         - 'Dialogs, Views, and Menus': 'Guide/dialogs_views_menus.md'
         - 'A - I':
@@ -196,6 +190,13 @@ pages:
         - 'Sending Special Keys to the Current Application': 'Guide/sending_special_keys_to_the_c.md'
     - 'Technologies':
         - 'Technologies': 'Guide/technologies.md'
+        - 'Desktop Testing': 'Guide/windows_applications.md'
+        - 'Mobile Testing':
+            - 'Mobile Testing': 'Guide/mobile_testing2.md'
+            - 'Preparing Environment for iOS Mobile Testing': 'Manuals/Preparing_for_iOS_Testing.md'
+            - 'Mobile Testing using iOS': 'Guide/mobile_testing_ios.md'
+            - 'Preparing Environment for Android Mobile Testing': 'Manuals/Preparing_for_Android_Testing.md'
+            - 'Mobile Testing using Android': 'Guide/mobile_testing_android.md'
         - 'Web Testing':
             - 'Web Testing': 'Guide/web_testing.md'
             - 'Cross Browser Testing': 'Guide/cross_browser_testing.md'
@@ -206,7 +207,10 @@ pages:
             - 'Selenium WebDriver': 'Guide/selenium_webdriver.md'
             - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
             - 'Using Native Selenium Code': 'Guide/using_native_selenium_code.md'
-        - 'Mobile Testing': 'Guide/mobile_testing2.md'
+        - 'Web Service Testing':
+            - 'Web Service Testing': 'Guide/web_service_testing.md'
+            - 'Testing REST Web Services': 'Guide/rest_web_service.md'
+            - 'Testing SOAP Web Services': 'Guide/soap_web_services.md'
         - 'Microsoft Dynamics':
             - 'Microsoft Dynamics': 'Guide/microsoft_dynamics.md'
             - 'Dynamics AX': 'Guide/dynamics_ax.md'
@@ -214,7 +218,6 @@ pages:
             - 'Dynamics CRM/365 for Sales': 'Guide/dynamics_crm.md'
             - 'Dynamics 365 for Operations': 'Guide/dynamics_365.md'
             - 'Unified Service Desk': 'Guide/unified_service_desk.md'
-        - 'Windows Applications': 'Guide/windows_applications.md'
         - 'Salesforce.com': 'Guide/salesforce_com.md'
         - 'Qt Framework': 'Guide/qt_framework_testing.md'
         - 'Java AWT/Swing': 'Guide/java_awt_swing_testing.md'
