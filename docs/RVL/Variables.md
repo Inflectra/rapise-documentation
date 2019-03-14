@@ -4,13 +4,17 @@ In RVL, variables are useful for storing intermediate results as well as accessi
 
 Variables may be used in [Params](Params.md) to [Conditions](Conditions.md) and in [Actions](Actions.md).
 
-## Declaring and Assigning
+## Declaring
 
 This line declares a variable without any values. Its value may be assigned later:
 
 *Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
 :--   |:--     |:--          |:--         |:--          |:--          |:--
       |**Variable**|         |            |   `MyVar1`   |             |            
+
+## Assigning
+
+### Assignment Expression
 
 This line declares and assigns value *5* to a variable `MyVar2`:
 
@@ -20,7 +24,29 @@ This line declares and assigns value *5* to a variable `MyVar2`:
 
 If the variable is declared earlier, then assignment just changes its value. If the variable is not yet declared, then assignment is actually a declaration with assignment.
 
+### Action Output
+
+If an action returns a value it can be assigned to a variable via `Output`.
+
+*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
+:--   |:--     |:--          |:--         |:--          |:--          |:--
+      | **Variable** |         |              | `OsVersion`   |     |      
+      | **Action**   | Global  | GetOsVersion |               |     |      
+      | **Output**   |         |              |               | variable | OsVersion
+
+### Auto Assignment
+
+There are two auto assigned variables in RVL:  `LastResult` and `LastObject`. If an action returns some value then it is assigned to `LastResult`. `LastObject` is effectively an alias to the last used object in **Object** column.
+
+*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
+:--   |:--     |:--          |:--         |:--          |:--          |:--
+      | **Action**   | Global  | GetOsVersion |               |     |      
+      | **Action**   | Tester  | Message      |               | variable | **LastResult**
+
+This snippet prints OS version to the report.
+
 ## Using
+
 Any [Params](Params.md) value may accept a *variable*:
 
 ...|*Type*| ...| *ParamName* | *ParamType*|*ParamValue*
@@ -43,9 +69,11 @@ Any [Action](Actions.md) may write its return value to a variable using the *Out
 The Output value may then be used as a param value in actions, conditions, assertions and expressions.
 
 ## Local Variables
+
 By default declared variables are assumed to be local. Local variables may be used only within the current RVL script and not visible from other RVL scripts or *JavaScript* code.
 
 ## Global Variables
+
 You may have a *JavaScript* variable defined in the user *Functions* file (`*.user.js`), i.e.:
 
 ```javascript
@@ -62,6 +90,7 @@ Then in the RVL you may declare `globalVar` as global and access it (read or ass
 Global variables are useful for exchanging and/or sharing data between different RVL scripts or between *RVL* and *JavaScript*.
 
 ## Variable Actions
+
 One may use an expression to change the value of a variable. Here are several common variable operations that may be used to modify variable values:
 
 1. *Increment* is an operation where numeric value is increased by `1` or any other specified value. The variable must have a numeric value. Otherwise the result is `NaN`.
@@ -90,7 +119,6 @@ Otherwise it is any *value*:
 In this example if `textVar` was empty and `numVar` had value `5` then the final value of `textVar` is the following text:
     `Final value: 5`
 
-
 ## Examples
 
 Variables may be declared as *Local* or *Global*. Declaration may or may not contain initial value
@@ -104,5 +132,3 @@ Variables may accept output from the *Action*:
 Variables may be used as input to the *Action*:
 
 ![Variable AsParam](img/Variables_AsParam.png)
-
-
