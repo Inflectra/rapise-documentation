@@ -2934,7 +2934,7 @@
 <p><strong>EntryPoint</strong> JavaScript function name (<code>g_entryPointName</code> variable) used as a test entry point. Normally <code>Test</code>, however it may be changed to execute a single scenario, i.e.: <code>MyScenario</code>.</p>
 </li>
 <li>
-<p><strong>WorkDir</strong> Defines test root directory (<code>%WORKDIR%</code> environment variable) relative to this test's folder. </p>
+<p><strong>WorkDir</strong> Defines test root directory (<code>%WORKDIR%</code> environment variable) relative to this test's folder.</p>
 <p>Usually it is equal to <code>.</code> (root test). In the sub-test it is <code>../.</code>, in sub-sub-test it is <code>../../.</code>. This way if you have common scenario used across tests and it refers to a data file using <code>%WORKDIR%\Data.xlsx</code> then all sub-tests will be able to find it. This feature together with a concept of <a href="../tests_and_sub_tests/">sub-tests</a> help to build test <a href="https://www.inflectra.com/support/knowledgebase/kb371.aspx">frameworks</a>.</p>
 </li>
 <li>
@@ -2969,8 +2969,8 @@
 <p><img alt="settings dialog, screen capture" src="../img/settings_dialog5.png" /></p>
 <ul>
 <li><strong>Capture Cursor</strong>: Set this to <strong>True</strong> if you want to include cursor position marker on the captured screenshot.</li>
-<li><strong>Capture Execution</strong>: Set this to <strong>True</strong> if you want to save screen images for each recognized object during playback.</li>
-<li><strong>Capture Recording</strong>: Set this to <strong>True</strong> if you want to save screen images for each action during recording.</li>
+<li><strong>Capture Execution</strong>: Set this to <strong>True</strong> if you want to save screen images after each <code>Do&lt;Action&gt;</code> during playback.</li>
+<li><strong>Capture Recording</strong>: Set this to <strong>True</strong> if you want to save screen images after each recorded action during recording.</li>
 <li><strong>Include in Report</strong>: Set this to <strong>True</strong> to include the saved images in the execution report during playback.</li>
 <li><strong>Widget Only</strong>: Set this to <strong>True</strong> to only save the widget area in the screenshot, as opposed to the whole window.</li>
 </ul>
@@ -2991,7 +2991,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+                shortcuts = {"help": 191, "search": 83, "previous": 80, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
