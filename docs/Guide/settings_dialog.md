@@ -20,12 +20,11 @@ Another way is to choose root node in the [file view](test_files_dialog.md) to s
 
 * **EntryPoint** JavaScript function name (`g_entryPointName` variable) used as a test entry point. Normally `Test`, however it may be changed to execute a single scenario, i.e.: `MyScenario`.
 
-* **WorkDir** Defines test root directory (`%WORKDIR%` environment variable) relative to this test's folder. 
+* **WorkDir** Defines test root directory (`%WORKDIR%` environment variable) relative to this test's folder.
   
     Usually it is equal to `.` (root test). In the sub-test it is `../.`, in sub-sub-test it is `../../.`. This way if you have common scenario used across tests and it refers to a data file using `%WORKDIR%\Data.xlsx` then all sub-tests will be able to find it. This feature together with a concept of [sub-tests](tests_and_sub_tests.md) help to build test [frameworks](https://www.inflectra.com/support/knowledgebase/kb371.aspx).
 
 * **CommandLine** is a freeform text box.  Use it to specify values for global variables (beginning in **g_**) to pass the [recorder](recording.md) and [player](playback.md).  You can view which global variables are available in the source files (such as **Player.js,** **SeSCommon.js**, etc).
-
 
 ## TestParams
 
@@ -36,7 +35,6 @@ Click to open the [TestParams Collection Editor Dialog](namevalue_collection_edi
 There is a build-in set of test parameters for [cross-browser testing](cross_browser_testing.md). When you open up a test that uses one of the HTML libraries it will display the following built-in test parameter that you can use to change the **playback browser**:
 
 ![settings_dialog_browser_selector](./img/settings_dialog6.png)
-
 
 ## Execution
 
@@ -63,8 +61,8 @@ There is a build-in set of test parameters for [cross-browser testing](cross_bro
 ![settings dialog, screen capture](./img/settings_dialog5.png)
 
 * **Capture Cursor**: Set this to **True** if you want to include cursor position marker on the captured screenshot.
-* **Capture Execution**: Set this to **True** if you want to save screen images for each recognized object during playback.
-* **Capture Recording**: Set this to **True** if you want to save screen images for each action during recording.
+* **Capture Execution**: Set this to **True** if you want to save screen images after each `Do<Action>` during playback.
+* **Capture Recording**: Set this to **True** if you want to save screen images after each recorded action during recording.
 * **Include in Report**: Set this to **True** to include the saved images in the execution report during playback.
 * **Widget Only**: Set this to **True** to only save the widget area in the screenshot, as opposed to the whole window.
 
