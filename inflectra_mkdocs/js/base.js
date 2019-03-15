@@ -274,17 +274,20 @@ var annotations =
         ]
     },
     {
-        name: "spreadsheet",
+        name: "spreadsheet.doattach",
         refs: [
+            {
+                text: "KB357: Data-driven testing with spreadsheets and RVL",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB357.aspx"
+            },
+            {
+                text: "KB432: Writing data to an Excel spreadsheet",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx"
+            },
             {
                 text: "KB372: How to save content of a table/grid into a spreadsheet file",
                 link: "https://www.inflectra.com/Support/KnowledgeBase/KB372.aspx"
-            }
-        ]
-    },    
-    {
-        name: "spreadsheet.doattach",
-        refs: [
+            },
             {
                 text: "KB27:  Using Rapise to extract test data from an Excelsheet",
                 link: "https://www.inflectra.com/Support/KnowledgeBase/KB27.aspx"
@@ -312,6 +315,18 @@ var annotations =
     {
         name: "spreadsheet.setrange",
         refs: [
+            {
+                text: "KB357: Data-driven testing with spreadsheets and RVL",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB357.aspx"
+            },
+            {
+                text: "KB432: Writing data to an Excel spreadsheet",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx"
+            },
+            {
+                text: "KB372: How to save content of a table/grid into a spreadsheet file",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB372.aspx"
+            },
             {
                 text: "KB27:  Using Rapise to extract test data from an Excelsheet",
                 link: "https://www.inflectra.com/Support/KnowledgeBase/KB27.aspx"
