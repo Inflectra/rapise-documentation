@@ -89,3 +89,6 @@ The function is mostly intended for internal use. Here you need information abou
       * `item.Startrow.Ext.I` - Cell `I` for the current action
       * `item.Startrow.Ext.J` - Cell `J` for the current action
 * `place` - One of `"before"` - callback just before executing row action, `"after"` - callback called after action has just been done.
+
+## See Also
+* [KB 433](http://www.inflectra.com/Support/KnowledgeBase/KB433.aspx) Using Extra Columns in RVL to add Report Attributes
