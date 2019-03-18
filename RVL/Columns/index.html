@@ -2905,6 +2905,10 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#columns">Columns</a></li>
+            <li><a href="#default-columns">Default Columns</a></li>
+            <li><a href="#adding-custom-columns">Adding Custom Columns</a></li>
+            <li><a href="#custom-column-actions">Custom Column Actions</a></li>
+            <li><a href="#onrvlscriptstep">OnRVLScriptStep</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -2912,7 +2916,8 @@
 <h1 id="columns">Columns</h1>
 <p>RVL script is a spreadsheet containing set of 7 columns in fixed order:</p>
 <p><img alt="Columns" src="../img/Columns.png" />
-<em>Column View</em></p>
+<em>RVL Columns</em></p>
+<h2 id="default-columns">Default Columns</h2>
 <ul>
 <li>
 <p>1st <em>Flow</em> -- Control flow. This column dedicated to specifying structural information such blocks, Branches (If-Else), loops.</p>
@@ -2934,10 +2939,59 @@
 <li>3rd <em>Object</em> - Id of the object to be used for action. Rapise provides set of predefined global objects and objects recorded/learned from the AUT.</li>
 <li>4th <em>Action</em> - One of the actions. <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code> etc.</li>
 <li>5th <em>ParamName</em> - see <a href="../Params/">Params</a> for more information on last 3 columns</li>
-<li>6th <em>ParamType</em> </li>
-<li>7th <em>ParamValue</em> </li>
+<li>6th <em>ParamType</em> - </li>
+<li><code>bool</code> - <em>ParamValue</em> should be <code>true</code> or <code>false</code>,</li>
+<li><code>string</code> - <em>ParamValue</em> is a text string</li>
+<li><code>number</code> - <em>ParamValue</em> is an integer or floating point number,</li>
+<li><code>variable</code> - <em>ParamValue</em> is a variable name. Actual value is read from the variable.</li>
+<li><em><code>Map Name</code></em> - <em>ParamValue</em> is a column name from the given <code>Map</code>. Usually this feature is used for data driven testing.</li>
+<li>7th <em>ParamValue</em> - Depends on the <em>ParamType</em>.</li>
 </ul>
-<p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p></div>
+<p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p>
+<h2 id="adding-custom-columns">Adding Custom Columns</h2>
+<p>By default RVL always displays column <code>H</code>. It is sometimes useful (to store temp value, add a note etc).</p>
+<p>One may show more columns. To do this open the file (i.e. <code>Main.rvl.xlsx</code>) in the spreadsheet editor or Excel and define some values in columns <code>I</code>, <code>J</code> etc respectively. Now if you open it in RVL you will see it:</p>
+<p><img alt="Excel Columns" src="../img/CustomColumnsExcel.png" /></p>
+<p>Now if you re-open this document in RVL these columns will also be displayed:</p>
+<p><img alt="Excel Columns" src="../img/CustomColumnsRVL.png" /></p>
+<p>The usage of this columns is up to you. You may use them just for information or make them 'live' by assigning custom actions as will be described in the next section.</p>
+<h2 id="custom-column-actions">Custom Column Actions</h2>
+<p>RVL is flexible and one may use more columns to implement custom script logic.</p>
+<p>The script occupies first 7 columns of the spreadsheet (<strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong>, <strong>E</strong>, <strong>F</strong>, <strong>G</strong>).</p>
+<p>By default the script also displays the column <strong>H</strong>. It may also display as many additional columns as needed (see previous <a href="#adding-custom-columns">section</a>). It may have some value but has no side effects, i.e.:</p>
+<ul>
+<li>Provide links (to requirements, documentation)</li>
+<li>Mark Status (review) and notes.</li>
+</ul>
+<p>However the script may see this value and use it for own purpose, i.e.:</p>
+<ul>
+<li>Set report attribute</li>
+<li>Assign global variable.</li>
+<li>Do Screenshot.</li>
+<li>Do custom action.</li>
+</ul>
+<p>You may have one or more custom columns defined in the script achieve necessary goals. This will require you to override <code>OnRVLScriptStep</code> function as described below.</p>
+<h2 id="onrvlscriptstep">OnRVLScriptStep</h2>
+<blockquote>
+<p>Note: The information below requires some JavaScript knowledge. In most cases all you need is to copy relevant snippet from the documentation or KB to achieve desired behavior</p>
+</blockquote>
+<p>Custom column actions are processed in the <code>OnRVLScriptStep</code> function that should be defined in the <code>User.js</code> file or in the custom library.</p>
+<pre><code class="javascript">function OnRVLScriptStep(item, place, status, ctx, stackItem)
+</code></pre>
+
+<p>The function is mostly intended for internal use. Here you need information about the following parameters:</p>
+<ul>
+<li><code>item</code> - current RVL action item. We need to use the following property of this item:</li>
+<li><code>item.Startrow</code> - First RVL row for given item (in RVL each statement takes one or more rows).<ul>
+<li><code>item.Startrow.SheetRowIndex</code> - Row index in the current sheet.</li>
+<li><code>item.Startrow.Ext</code> - The structure, containing values for rows <code>H</code>, <code>I</code> and <code>J</code>, i.e.:</li>
+<li><code>item.Startrow.Ext.H</code> - Cell <code>H</code> for the current action</li>
+<li><code>item.Startrow.Ext.I</code> - Cell <code>I</code> for the current action</li>
+<li><code>item.Startrow.Ext.J</code> - Cell <code>J</code> for the current action</li>
+</ul>
+</li>
+<li><code>place</code> - One of <code>"before"</code> - callback just before executing row action, <code>"after"</code> - callback called after action has just been done.</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -2946,7 +3000,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "search": 83, "previous": 80, "next": 78};
+                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
