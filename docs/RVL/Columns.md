@@ -39,7 +39,7 @@ In addition to these columns there may be any number of other columns used for s
 
 By default RVL always displays column `H`. It is sometimes useful (to store temp value, add a note etc).
 
-One may show more columns. To do this open the file (i.e. `Main.rvl.xlsx`) in the spreadsheet editor or Excel and define some values in columns `I`, `J` etc respectively. Now if you open it in RVL you will see it:
+One may show more columns. To do this open the file (i.e. `Main.rvl.xlsx`) in the spreadsheet editor or Excel and define some values in columns `I`, `J` etc respectively:
 
 ![Excel Columns](img/CustomColumnsExcel.png)
 
@@ -63,17 +63,17 @@ By default the script also displays the column **H**. It may also display as man
 However the script may see this value and use it for own purpose, i.e.:
 
 * Set report attribute
-* Assign global variable.
-* Do Screenshot.
+* Assign global variable
+* Do Screenshot
 * Do custom action.
 
-You may have one or more custom columns defined in the script achieve necessary goals. This will require you to override `OnRVLScriptStep` function as described below.
+You may have one or more custom columns defined in the script to achieve necessary goals. This will require you to override `OnRVLScriptStep` function as described below.
 
 ## OnRVLScriptStep
 
 > Note: The information below requires some JavaScript knowledge. In most cases all you need is to copy relevant snippet from the documentation or KB to achieve desired behavior
 
-Custom column actions are processed in the `OnRVLScriptStep` function that should be defined in the `User.js` file or in the custom library.
+Custom column actions are processed in the `OnRVLScriptStep` function that should be defined in the `User.js` file or in the [custom library](../Guide/custom_libraries.md).
 
 ```javascript
 function OnRVLScriptStep(item, place, status, ctx, stackItem)
@@ -91,4 +91,5 @@ The function is mostly intended for internal use. Here you need information abou
 * `place` - One of `"before"` - callback just before executing row action, `"after"` - callback called after action has just been done.
 
 ## See Also
+
 * [KB 433](http://www.inflectra.com/Support/KnowledgeBase/KB433.aspx) Using Extra Columns in RVL to add Report Attributes
