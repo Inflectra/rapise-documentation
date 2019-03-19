@@ -2951,7 +2951,7 @@
 <p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p>
 <h2 id="adding-custom-columns">Adding Custom Columns</h2>
 <p>By default RVL always displays column <code>H</code>. It is sometimes useful (to store temp value, add a note etc).</p>
-<p>One may show more columns. To do this open the file (i.e. <code>Main.rvl.xlsx</code>) in the spreadsheet editor or Excel and define some values in columns <code>I</code>, <code>J</code> etc respectively. Now if you open it in RVL you will see it:</p>
+<p>One may show more columns. To do this open the file (i.e. <code>Main.rvl.xlsx</code>) in the spreadsheet editor or Excel and define some values in columns <code>I</code>, <code>J</code> etc respectively:</p>
 <p><img alt="Excel Columns" src="../img/CustomColumnsExcel.png" /></p>
 <p>Now if you re-open this document in RVL these columns will also be displayed:</p>
 <p><img alt="Excel Columns" src="../img/CustomColumnsRVL.png" /></p>
@@ -2967,16 +2967,16 @@
 <p>However the script may see this value and use it for own purpose, i.e.:</p>
 <ul>
 <li>Set report attribute</li>
-<li>Assign global variable.</li>
-<li>Do Screenshot.</li>
+<li>Assign global variable</li>
+<li>Do Screenshot</li>
 <li>Do custom action.</li>
 </ul>
-<p>You may have one or more custom columns defined in the script achieve necessary goals. This will require you to override <code>OnRVLScriptStep</code> function as described below.</p>
+<p>You may have one or more custom columns defined in the script to achieve necessary goals. This will require you to override <code>OnRVLScriptStep</code> function as described below.</p>
 <h2 id="onrvlscriptstep">OnRVLScriptStep</h2>
 <blockquote>
 <p>Note: The information below requires some JavaScript knowledge. In most cases all you need is to copy relevant snippet from the documentation or KB to achieve desired behavior</p>
 </blockquote>
-<p>Custom column actions are processed in the <code>OnRVLScriptStep</code> function that should be defined in the <code>User.js</code> file or in the custom library.</p>
+<p>Custom column actions are processed in the <code>OnRVLScriptStep</code> function that should be defined in the <code>User.js</code> file or in the <a href="../../Guide/custom_libraries/">custom library</a>.</p>
 <pre><code class="javascript">function OnRVLScriptStep(item, place, status, ctx, stackItem)
 </code></pre>
 
@@ -3005,7 +3005,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "search": 83, "previous": 80, "help": 191};
+                shortcuts = {"search": 83, "previous": 80, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
