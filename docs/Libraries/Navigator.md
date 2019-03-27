@@ -15,7 +15,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 | **Property** | **Description** |
 | ------------ | --------------- |
-| [AutoOpen](#AutoOpen) | During playback when Rapise connects to a browser for the first time and can not locatean object and AutoOpen is 'true' it launches a new browser instance. |
+| [AutoOpen](#AutoOpen) | During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance. |
 | [EnsureVisibleHorizontalAlignment](#EnsureVisibleHorizontalAlignment) | One of "start", "center", "end", or "nearest". |
 | [EnsureVisibleVerticalAlignment](#EnsureVisibleVerticalAlignment) | One of "start", "center", "end", or "nearest". |
 | [QuitIfNotConnected](#QuitIfNotConnected) | If connection to browser fails - open plugin page and quit. |
@@ -47,9 +47,14 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[ExecJS](#ExecJS) | Executes given JavaScript statement in a browser and returns results. |
 |	[Find](#Find) | Returns HTMLObject wrapping DOM element for a given 'xpath'. |
 |	[GetPerformance](#GetPerformance) | Reads performance information from currently used browser. |
+|	[GetPosition](#GetPosition) | Gets position of the top-left corner of the browser window. |
+|	[GetSize](#GetSize) | Gets size of the browser window. |
+|	[Maximize](#Maximize) | Maximizes browser window. |
 |	[Navigate](#Navigate) | Redirects browser to a specified URL. |
 |	[Open](#Open) | Opens a browser. |
 |	[SelectBrowserProfile](#SelectBrowserProfile) | Selects browser profile to use for testing. |
+|	[SetPosition](#SetPosition) | Positions top-left corner of the browser window at specifid location. |
+|	[SetSize](#SetSize) | Sets size if the browser window. |
 
 
 
@@ -62,7 +67,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 #### AutoOpen
 
 
-During playback when Rapise connects to a browser for the first time and can not locatean object and AutoOpen is 'true' it launches a new browser instance. If AutoOpen is 'false' it does nothing. Default value is 'true'.Applicable to Chrome, Firefox and Internet Explorer. Selenium targets are not affected by this property.Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|false) to set the value.
+During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance.If AutoOpen is 'false' it does nothing. Default value is 'true'.Applicable to Chrome, Firefox and Internet Explorer. Selenium targets are not affected by this property.Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|false) to set the value.
 
 			
 	
@@ -471,6 +476,49 @@ number: page open time (in milliseconds)
 
 <a name="see.also.navigator.getperformance"></a>
 
+<a name="GetPosition"></a>    
+#### GetPosition()
+
+Gets position of the top-left corner of the browser window. This function is DPI aware.
+
+
+
+
+**Returns:**
+
+object: {X, Y}
+
+
+
+<a name="see.also.navigator.getposition"></a>
+
+<a name="GetSize"></a>    
+#### GetSize()
+
+Gets size of the browser window. This function is DPI aware.
+
+
+
+
+**Returns:**
+
+object: {Width, Height}
+
+
+
+<a name="see.also.navigator.getsize"></a>
+
+<a name="Maximize"></a>    
+#### Maximize()
+
+Maximizes browser window.
+
+
+
+
+
+<a name="see.also.navigator.maximize"></a>
+
 <a name="Navigate"></a>    
 #### Navigate(url)
 
@@ -524,6 +572,44 @@ Selects browser profile to use for testing.
 
 
 <a name="see.also.navigator.selectbrowserprofile"></a>
+
+<a name="SetPosition"></a>    
+#### SetPosition(x, y)
+
+Positions top-left corner of the browser window at specifid location. This function is DPI aware.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |	X-offset from the top-left corner of the screen. |
+| y | number |	Y-offset from the top-left corner of the screen. |
+
+
+
+
+
+<a name="see.also.navigator.setposition"></a>
+
+<a name="SetSize"></a>    
+#### SetSize(width, height)
+
+Sets size if the browser window. This function is DPI aware.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| width | number |	New width of the browser window. |
+| height | number |	New height of the browser window. |
+
+
+
+
+
+<a name="see.also.navigator.setsize"></a>
 
 	
 

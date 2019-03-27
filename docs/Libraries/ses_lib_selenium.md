@@ -13,4 +13,6 @@
 
 - [WebElement](WebElement.md)
 
+- [Window](Window.md)
+
 
