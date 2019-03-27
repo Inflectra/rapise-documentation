@@ -2233,6 +2233,10 @@
 <li >
     <a href="../WebElement/">WebElement</a>
 </li>
+            
+<li >
+    <a href="../Window/">Window</a>
+</li>
     </ul>
   </li>
             
@@ -2928,11 +2932,7 @@
 <tbody>
 <tr>
 <td><a href="#AutoOpen">AutoOpen</a></td>
-<td>During playback when Rapise connects to a browser for the first time and can not locate</td>
-</tr>
-<tr>
-<td>an object and AutoOpen is 'true' it launches a new browser instance.</td>
-<td></td>
+<td>During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance.</td>
 </tr>
 <tr>
 <td><a href="#EnsureVisibleHorizontalAlignment">EnsureVisibleHorizontalAlignment</a></td>
@@ -3024,6 +3024,18 @@
 <td>Reads performance information from currently used browser.</td>
 </tr>
 <tr>
+<td><a href="#GetPosition">GetPosition</a></td>
+<td>Gets position of the top-left corner of the browser window.</td>
+</tr>
+<tr>
+<td><a href="#GetSize">GetSize</a></td>
+<td>Gets size of the browser window.</td>
+</tr>
+<tr>
+<td><a href="#Maximize">Maximize</a></td>
+<td>Maximizes browser window.</td>
+</tr>
+<tr>
 <td><a href="#Navigate">Navigate</a></td>
 <td>Redirects browser to a specified URL.</td>
 </tr>
@@ -3035,6 +3047,14 @@
 <td><a href="#SelectBrowserProfile">SelectBrowserProfile</a></td>
 <td>Selects browser profile to use for testing.</td>
 </tr>
+<tr>
+<td><a href="#SetPosition">SetPosition</a></td>
+<td>Positions top-left corner of the browser window at specifid location.</td>
+</tr>
+<tr>
+<td><a href="#SetSize">SetSize</a></td>
+<td>Sets size if the browser window.</td>
+</tr>
 </tbody>
 </table>
 <!-- ============================== property detail ========================== -->
@@ -3042,8 +3062,7 @@
 <h3 id="property-detail">Property Detail</h3>
 <p><a name="AutoOpen"></a></p>
 <h4 id="autoopen">AutoOpen</h4>
-<p>During playback when Rapise connects to a browser for the first time and can not locate
-an object and AutoOpen is 'true' it launches a new browser instance. 
+<p>During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance.
 If AutoOpen is 'false' it does nothing. Default value is 'true'.
 Applicable to Chrome, Firefox and Internet Explorer. Selenium targets are not affected by this property.
 Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|false) to set the value.</p>
@@ -3501,6 +3520,22 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 <p><strong>Returns:</strong></p>
 <p>number: page open time (in milliseconds)</p>
 <p><a name="see.also.navigator.getperformance"></a></p>
+<p><a name="GetPosition"></a>    </p>
+<h4 id="getposition">GetPosition()</h4>
+<p>Gets position of the top-left corner of the browser window. This function is DPI aware.</p>
+<p><strong>Returns:</strong></p>
+<p>object: {X, Y}</p>
+<p><a name="see.also.navigator.getposition"></a></p>
+<p><a name="GetSize"></a>    </p>
+<h4 id="getsize">GetSize()</h4>
+<p>Gets size of the browser window. This function is DPI aware.</p>
+<p><strong>Returns:</strong></p>
+<p>object: {Width, Height}</p>
+<p><a name="see.also.navigator.getsize"></a></p>
+<p><a name="Maximize"></a>    </p>
+<h4 id="maximize">Maximize()</h4>
+<p>Maximizes browser window.</p>
+<p><a name="see.also.navigator.maximize"></a></p>
 <p><a name="Navigate"></a>    </p>
 <h4 id="navigateurl">Navigate(url)</h4>
 <p>Redirects browser to a specified URL.</p>
@@ -3563,7 +3598,59 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 </tr>
 </tbody>
 </table>
-<p><a name="see.also.navigator.selectbrowserprofile"></a></p></div>
+<p><a name="see.also.navigator.selectbrowserprofile"></a></p>
+<p><a name="SetPosition"></a>    </p>
+<h4 id="setpositionx-y">SetPosition(x, y)</h4>
+<p>Positions top-left corner of the browser window at specifid location. This function is DPI aware.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>X-offset from the top-left corner of the screen.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Y-offset from the top-left corner of the screen.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.navigator.setposition"></a></p>
+<p><a name="SetSize"></a>    </p>
+<h4 id="setsizewidth-height">SetSize(width, height)</h4>
+<p>Sets size if the browser window. This function is DPI aware.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>number</td>
+<td>New width of the browser window.</td>
+</tr>
+<tr>
+<td>height</td>
+<td>number</td>
+<td>New height of the browser window.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.navigator.setsize"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3572,7 +3659,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "previous": 80, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
