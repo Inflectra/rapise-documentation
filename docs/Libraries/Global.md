@@ -40,6 +40,7 @@ characters by a single space, and returns the resulting string. |
 |	[DoTypePassword](#DoTypePassword) | Types encrypted password into a control which has a focus. |
 |	[DoWaitFor](#DoWaitFor) | Waits for object specified by objectId to become available. |
 |	[DoWaitForProperty](#DoWaitForProperty) | Waits for specified value of object's property. |
+|	[GetClipboardText](#GetClipboardText) | Reads text stored in the windows clipboard. |
 |	[GetCurrentDir](#GetCurrentDir) | Gets current directory path. |
 |	[GetFileAsByteArray](#GetFileAsByteArray) | Reads file and returns its content as array of bytes. |
 |	[GetFirstDayOfWeek](#GetFirstDayOfWeek) | Returns first day of week for current user. |
@@ -50,6 +51,7 @@ characters by a single space, and returns the resulting string. |
 |	[GetOsVersion](#GetOsVersion) | Reads OS service pack version from the registry. |
 |	[GetProperty](#GetProperty) | Reads property value from %WORKDIR%\Config.json. |
 |	[GetSpecialFolderPath](#GetSpecialFolderPath) | Returns path to a special folder specified by one of possible values. |
+|	[SetClipboardText](#SetClipboardText) | Updates clipboard text |
 |	[SetFileAsByteArray](#SetFileAsByteArray) | Creates or rewrites file and fills with contents of the provided byte array. |
 |	[SetProperty](#SetProperty) | Sets property value to %WORKDIR%\Config.json. |
 
@@ -584,6 +586,22 @@ in the case of timeout.
 
 <a name="see.also.global.dowaitforproperty"></a>
 
+<a name="GetClipboardText"></a>    
+#### GetClipboardText()
+
+Reads text stored in the windows clipboard.
+
+
+
+
+**Returns:**
+
+string: Clipboard text
+
+
+
+<a name="see.also.global.getclipboardtext"></a>
+
 <a name="GetCurrentDir"></a>    
 #### GetCurrentDir()
 
@@ -799,6 +817,29 @@ string: System specified folder path without the trailing backslash, e.g. 'C:\Pr
 
 
 <a name="see.also.global.getspecialfolderpath"></a>
+
+<a name="SetClipboardText"></a>    
+#### SetClipboardText(txt)
+
+Updates clipboard text
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| txt | string |	Text to store into clipboard. |
+
+
+
+
+**Returns:**
+
+boolean: 'true' when clipboard is set.
+
+
+
+<a name="see.also.global.setclipboardtext"></a>
 
 <a name="SetFileAsByteArray"></a>    
 #### SetFileAsByteArray(fileName, bytes)
