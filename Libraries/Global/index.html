@@ -3020,6 +3020,10 @@ record or learn this object, it is always automatically available in any test.</
 <td>Waits for specified value of object's property.</td>
 </tr>
 <tr>
+<td><a href="#GetClipboardText">GetClipboardText</a></td>
+<td>Reads text stored in the windows clipboard.</td>
+</tr>
+<tr>
 <td><a href="#GetCurrentDir">GetCurrentDir</a></td>
 <td>Gets current directory path.</td>
 </tr>
@@ -3058,6 +3062,10 @@ record or learn this object, it is always automatically available in any test.</
 <tr>
 <td><a href="#GetSpecialFolderPath">GetSpecialFolderPath</a></td>
 <td>Returns path to a special folder specified by one of possible values.</td>
+</tr>
+<tr>
+<td><a href="#SetClipboardText">SetClipboardText</a></td>
+<td>Updates clipboard text</td>
 </tr>
 <tr>
 <td><a href="#SetFileAsByteArray">SetFileAsByteArray</a></td>
@@ -3696,6 +3704,12 @@ in the case of timeout.</p>
 <p><strong>Returns:</strong></p>
 <p><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link> | <br>Boolean: Found object or 'false'.</p>
 <p><a name="see.also.global.dowaitforproperty"></a></p>
+<p><a name="GetClipboardText"></a>    </p>
+<h4 id="getclipboardtext">GetClipboardText()</h4>
+<p>Reads text stored in the windows clipboard.</p>
+<p><strong>Returns:</strong></p>
+<p>string: Clipboard text</p>
+<p><a name="see.also.global.getclipboardtext"></a></p>
 <p><a name="GetCurrentDir"></a>    </p>
 <h4 id="getcurrentdir">GetCurrentDir()</h4>
 <p>Gets current directory path.</p>
@@ -3856,6 +3870,29 @@ in the case of timeout.</p>
 <p><strong>Returns:</strong></p>
 <p>string: System specified folder path without the trailing backslash, e.g. 'C:\Program Files'.</p>
 <p><a name="see.also.global.getspecialfolderpath"></a></p>
+<p><a name="SetClipboardText"></a>    </p>
+<h4 id="setclipboardtexttxt">SetClipboardText(txt)</h4>
+<p>Updates clipboard text</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>txt</td>
+<td>string</td>
+<td>Text to store into clipboard.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: 'true' when clipboard is set.</p>
+<p><a name="see.also.global.setclipboardtext"></a></p>
 <p><a name="SetFileAsByteArray"></a>    </p>
 <h4 id="setfileasbytearrayfilename-bytes">SetFileAsByteArray(fileName, bytes)</h4>
 <p>Creates or rewrites file and fills with contents of the provided byte array.</p>
@@ -3920,7 +3957,7 @@ in the case of timeout.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"previous": 80, "help": 191, "next": 78, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
