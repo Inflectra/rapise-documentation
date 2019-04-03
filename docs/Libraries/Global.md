@@ -35,8 +35,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoRunTestSet](#DoRunTestSet) | Executes a test set. |
 |	[DoSendKeys](#DoSendKeys) | Sends series of keystrokes to a currently focused application. |
 |	[DoSleep](#DoSleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
-|	[DoTrim](#DoTrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace 
-characters by a single space, and returns the resulting string. |
+|	[DoTrim](#DoTrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
 |	[DoTypePassword](#DoTypePassword) | Types encrypted password into a control which has a focus. |
 |	[DoWaitFor](#DoWaitFor) | Waits for object specified by objectId to become available. |
 |	[DoWaitForProperty](#DoWaitForProperty) | Waits for specified value of object's property. |
@@ -484,8 +483,7 @@ Pauses execution for given number of milliseconds (1000 = 1 second).
 <a name="DoTrim"></a>    
 #### DoTrim(str, global, trimChars)
 
-Strips leading and trailing white-space from a string, replaces sequences of whitespace 
-characters by a single space, and returns the resulting string. 
+Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
 Whitespace characters are [\\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 
