@@ -60,4 +60,12 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
 Utility functions
 
+* Set of **Open** buttons:
+  * **Open Web Profiles Folder**
+  * **Open Selenium Profiles Folder**
+  * **Open Mobile Profiles Folder**
+  * **Open Samples Folder**
+  * **Open User Libraries Folder**
+  * **Open Application Log Folder**
+
 * **Reset Layout** - Pressing the **Reset Layout** button restores the [default layout](restoring_the_default_layout.md).  Rapise will restart.
