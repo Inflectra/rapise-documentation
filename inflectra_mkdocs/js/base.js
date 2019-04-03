@@ -28,6 +28,10 @@ var annotations =
             {
                 text: "KB47: Executing a process and checking if it's still running", 
                 link: "https://www.inflectra.com/Support/KnowledgeBase/KB47.aspx"
+            },
+            {
+                text: "KB227: Executing a Windows .BAT Batch File from Rapise",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB227.aspx"
             }
         ]
     },
