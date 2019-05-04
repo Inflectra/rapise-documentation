@@ -1,6 +1,6 @@
 pushd %~dp0
 cd tools
-python mkdocsyml.py --output ../mkdocslocal.yml --filters "'UITAP'" "repo_name:" "repo_url:"
+python mkdocsyml.py --output ../mkdocslocal.yml --filters "'UITAP'" "repo_name:" "repo_url:" "google_analytics:"
 popd
 
 mkdocs build --config-file mkdocslocal.yml --clean
