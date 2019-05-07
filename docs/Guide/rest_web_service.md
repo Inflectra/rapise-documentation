@@ -7,6 +7,7 @@
 > A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.
 
 ## How does Rapise test REST web services?
+
 Creating a REST web service test in Rapise consists of the following steps:
 1.   Using the [REST definition builder](rest_definition_editor.md) to create the various REST web service requests and verify that they return the expected data in the expected format.
 
@@ -17,13 +18,13 @@ Creating a REST web service test in Rapise consists of the following steps:
 ## Rapise REST Definition Builder
 When you add a web service to your Rapise test project, you get a new REST definition file (`.rest`) that will store all of your prototyped requests against a specific REST web service. The various REST requests are then created in the REST definition builder:
 
-![rest\_definition\_editor](./img/rest_web_service1.png)
+![rest_definition_editor](./img/rest_web_service1.png)
 
 Each REST request can then include the following items:
 
 *   **Method** - the type of HTTP request being made (GET, POST, PUT, DELETE, etc.)
 
-*   **URL** - the URL of the web service request with any parameter tokens included (e.g. {session\_id} in our example above)
+*   **URL** - the URL of the web service request with any parameter tokens included (e.g. {session_id} in our example above)
 
 *   **Credentials** - Any HTTP Basic Authentication Headers
 
@@ -35,7 +36,7 @@ Each REST request can then include the following items:
 
 When you execute the request, it will return back the HTTP response headers and if it recognizes the MIME content-type as either XML or JSON, it will format it to make it more readable by the tester:
 
-![rest\_definition\_request](./img/rest_web_service2.png)
+![rest_definition_request](./img/rest_web_service2.png)
 
 Once you have finished with your prototyping of the web service test operations, you can then save the request definitions and use the `Update Object Tree` option to populate the main Rapise [Object Tree](object_tree.md).
 
@@ -72,7 +73,7 @@ Once all the REST operations have been defined and saved as Rapise learned objec
 
 The easiest way to do this is to click on the `Record` button in the REST definition editor (next to the `Send` button) which will add the request to list of recorded steps:
 
-![rest\_script\_steps](./img/rest_script_steps.png)
+![rest_script_steps](./img/rest_script_steps.png)
 
 Usually you need to verify the data returned as well as call the REST method. To do this, go to the **Verify** text box underneath the Body section:
 
@@ -110,8 +111,108 @@ This allows you unparalleled control over the web service request, with the abil
 
 Since the REST objects are just like any other Rapise object, you can have hybrid test scripts that call web service methods and also test GUI objects. This is very useful when you want to test how the user interface changes in response to specific web service API interactions, or when you have a user interface that connects to the sever using a web service (for example with a JSON-based AJAX web user interface).
 
-![rest\_hybrid\_test](./img/rest_web_service12.png)
+![rest_hybrid_test](./img/rest_web_service12.png)
 
 Once you have created your REST web service test, you can use the standard [Playback](playback.md) functionality in Rapise to execute your test and display the report:
 
-![tutorial\_web\_services\_pic30](./img/rest_web_service13.png)
+![tutorial_web_services_pic30](./img/rest_web_service13.png)
+
+
+## Handling File Uploads and Multipart Requests
+
+Each Request with **Content-Type** set to `multipart/form-data` is assumed to be a special request and handled in a special way.
+
+The **Body** part should be a valid `JSON` with the following structure:
+
+```javascript
+{
+    "multipart":
+    [
+        {
+            "Name": "name_of_text_field",
+            "ContentType": "text/plain",
+            "Value": "value"
+        },
+        {
+            "Name": "uploadfile",
+            "ContentType": "image/png",
+            "FileName": "image.png",
+            "FullPath": "path_to_file_for_upload"
+        }
+    ]
+}
+```
+
+![WS Multipart](./img/rest_web_service_multipart1.png)
+
+For the text fields **ContentType** is optional. By default is is set to `text/plain`.
+
+For file upload fields **ContentType** and **FileName** are optional. By default content-type and **FileName** are auto-detected form the **FilePath**.
+
+So here is an example of the minimal multipart request with one text field and one file upload:
+
+```javascript
+{
+    "multipart":
+    [
+        {
+            "Name": "name_of_text_field",
+            "Value": "value"
+        },
+        {
+            "Name": "uploadfile",
+            "FullPath": "c:\\some\\path\\to\\image.png"
+        }
+    ]
+}
+```
+
+### JSON as Field Value
+
+Here is how you can pass JSON value of the field:
+
+```javascript
+{
+    {
+      "Name": "jsonText",
+      "ContentType":"text/json",
+      "Value": {
+        "One":"Value1",
+        "Two":123
+      }
+    },
+    ...
+  ]
+}
+```
+
+### Params in Multipart Request
+
+It is typical that you want to parameterize text value or file path. It is important to make sure that you properly quote custom value. I.e.
+
+If we have a parameterized JSON Body:
+
+```javascript
+{
+  "multipart": [
+    {
+      "Name": "jsonText",
+      "ContentType":"text/json",
+      "Value": {StringParam}
+    },
+    {
+      "Name": "uploadfile",
+      "FilePath": {FilePathParam}
+    }
+  ]
+}
+```
+
+![WS Multipart](./img/rest_web_service_multipart2.png)
+
+Once parameters are defined for the `multipart` request, you should make sure that they are properly escaped. Consider using `JSON.stringify` appropriately, i.e.:
+
+```javascript
+RestMultipart_UploadFileParams.SetParameters('StringParam', JSON.stringify("Some Value"));
+RestMultipart_UploadFileParams.SetParameters('FilePathParam', JSON.stringify( Global.GetFullPath('NewAvatarImage.png') ));
+```
