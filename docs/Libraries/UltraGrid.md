@@ -40,7 +40,7 @@ Extends SeSSimulatedObject.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell |
+|	[DoClickCell](#DoClickCell) | Clicks the specified cell. |
 
 
 
@@ -170,18 +170,18 @@ Accessors: GetText
 <a name="DoClickCell"></a>    
 #### DoClickCell(row, col, clickType, xOffset, yOffset)
 
-Clicks the specified cell
+Clicks the specified cell.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| row | number |	Zero-based index if the row. |
-| col | number |	Zero-based index of the column. |
+| row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
+| col | string \| number |	Zero-based index of the column or column name. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within node. Default is a center.<br>Optional. |
+| yOffset | number |	Y offset to click within node. Default is a center.<br>Optional. |
 
 
 
