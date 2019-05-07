@@ -11,4 +11,4 @@ You use the **Choose Scripting Language** dialog to choose between writing your 
 This dialog is automatically opened after you click **Create** in the [Create New Test](create_new_test_dialog.md) dialog.
 
 ## Misc
-If you click the "Don't Ask" checkbox, Rapise will default to your last selection automatically when you create a test. You can change this options in the main [Settings dialog](settings_dialog.md).
+If you click the "Don't Ask" checkbox, Rapise will default to your last selection automatically when you create a test. You can change this options in the main [Global Settings dialog](options_dialog.md).
