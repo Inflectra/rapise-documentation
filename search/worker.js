@@ -130,7 +130,7 @@ if( 'function' === typeof importScripts ) {
     if (e.data.init) {
       init();
     } else if (e.data.query) {
-      postMessage({ results: search(e.data.query) });
+      postMessage({ results: search(e.data.query), query:e.data.query });
     } else {
       console.error("Worker - Unrecognized message: " + e);
     }

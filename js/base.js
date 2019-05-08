@@ -648,9 +648,57 @@ function getSearchTerm()
     }
 }
 
+function RegisterKeywordSearch()
+{
+    function guid() {
+      function s4() {
+        return Math.floor((1 + Math.random()) * 0x10000)
+          .toString(16)
+          .substring(1);
+      }
+      return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+        s4() + '-' + s4() + s4() + s4();
+    }	    
+    
+    var getParams = function (url) {
+        var params = {};
+        var parser = document.createElement('a');
+        parser.href = url;
+        var query = parser.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
+            params[pair[0]] = decodeURIComponent(pair[1]);
+        }
+        return params;
+    };
+
+    if (typeof ga != "undefined")
+    {
+        var params = getParams(window.location.href);
+        var kw = params["kw"];
+
+        if (typeof kw != "undefined")
+        {
+            ga('require', 'ecommerce');
+            ga('ecommerce:addItem', {
+              'id': guid(),                     // Transaction ID. Required.
+              'name': kw,                       // Product name. Required.
+              'sku': window.location.href,      // SKU/code.
+              'category': 'Keywords',           // Category or variation.
+              'price': '1.00',                  // Unit price.
+              'quantity': '1',                  // Quantity.
+              'currency': 'USD'
+            });
+            ga('ecommerce:send');
+        }
+    }   
+}
+
 $(document).ready(function() {
 
     RapiseAnnotateDocument(annotations);
+    RegisterKeywordSearch()
 
     var search_term = getSearchTerm(),
         $search_modal = $('#mkdocs_search_modal'),
