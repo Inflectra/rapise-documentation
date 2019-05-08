@@ -11,7 +11,9 @@ function getSearchTermFromLocation() {
   }
 }
 
-function joinUrl (base, path) {
+function joinUrl (base, path, query) {
+  if(query) path = path + "?kw="+encodeURI(query);
+  
   if (path.substring(0, 1) === "/") {
     // path starts with `/`. Thus it is absolute.
     return path;
@@ -29,7 +31,7 @@ function endsWith(str,suffix) {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
 };
 
-function formatResult (location, title, summary) {
+function formatResult (location, title, summary, query) {
   for(var i=0;i<filterTitles.length;i++)
   {
     if(endsWith(location, filterTitles[i]))
@@ -37,10 +39,10 @@ function formatResult (location, title, summary) {
       return undefined;
     }
   }
-  return '<article><h3><a href="' + joinUrl(base_url, location) + '">'+ title + '</a></h3><strong>'+location+'</strong><p>' + summary +'</p></article>';
+  return '<article><h3><a href="' + joinUrl(base_url, location, query) + '">'+ title + '</a></h3><strong>'+location+'</strong><p>' + summary +'</p></article>';
 }
 
-function displayResults (results) {
+function displayResults (results, query) {
   var search_results = document.getElementById("mkdocs-search-results");
   while (search_results.firstChild) {
     search_results.removeChild(search_results.firstChild);
@@ -48,7 +50,7 @@ function displayResults (results) {
   if (results.length > 0){
     for (var i=0; i < results.length; i++){
       var result = results[i];
-      var html = formatResult(result.location, result.title, result.summary);
+      var html = formatResult(result.location, result.title, result.summary, query);
       if(html)
       {
         search_results.insertAdjacentHTML('beforeend', html);        
@@ -63,7 +65,7 @@ function doSearch () {
   var query = document.getElementById('mkdocs-search-query').value;
   if (query.length > 2) {
     if (!window.Worker) {
-      displayResults(search(query));
+      displayResults(search(query),query);
     } else {
       searchWorker.postMessage({query: query});
     }
@@ -90,7 +92,7 @@ function onWorkerMessage (e) {
     initSearch();
   } else if (e.data.results) {
     var results = e.data.results;
-    displayResults(results);
+    displayResults(results, e.data.query);
   }
 }
 
