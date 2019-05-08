@@ -23,7 +23,7 @@ function joinUrl (base, path) {
   return base + "/" + path;
 }
 
-var filterTitles = ["/#property-summary", "/#action-summary", "/#property-detail", "/#action-detail"];
+var filterTitles = ["/#property-summary", "/#action-summary", "/#property-detail", "/#action-detail", "/#see-also"];
 
 function endsWith(str,suffix) {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
