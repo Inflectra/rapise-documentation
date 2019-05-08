@@ -3001,7 +3001,7 @@
 <tbody>
 <tr>
 <td><a href="#DoClickCell">DoClickCell</a></td>
-<td>Clicks the specified cell</td>
+<td>Clicks the specified cell.</td>
 </tr>
 </tbody>
 </table>
@@ -3065,7 +3065,7 @@
 <h3 id="action-detail">Action Detail</h3>
 <p><a name="DoClickCell"></a>    </p>
 <h4 id="doclickcellrow-col-clicktype-xoffset-yoffset">DoClickCell(row, col, clickType, xOffset, yOffset)</h4>
-<p>Clicks the specified cell</p>
+<p>Clicks the specified cell.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3078,13 +3078,13 @@
 <tbody>
 <tr>
 <td>row</td>
-<td>number</td>
-<td>Zero-based index if the row.</td>
+<td>number | string</td>
+<td>Zero-based index if the row or text of a cell in the specified column.</td>
 </tr>
 <tr>
 <td>col</td>
-<td>number</td>
-<td>Zero-based index of the column.</td>
+<td>string | number</td>
+<td>Zero-based index of the column or column name.</td>
 </tr>
 <tr>
 <td>clickType</td>
@@ -3094,12 +3094,12 @@
 <tr>
 <td>xOffset</td>
 <td>number</td>
-<td>X offset to click within object. Default is a center.<br>Optional.</td>
+<td>X offset to click within node. Default is a center.<br>Optional.</td>
 </tr>
 <tr>
 <td>yOffset</td>
 <td>number</td>
-<td>Y offset to click within object. Default is a center.<br>Optional.</td>
+<td>Y offset to click within node. Default is a center.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -3114,7 +3114,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"next": 78, "previous": 80, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

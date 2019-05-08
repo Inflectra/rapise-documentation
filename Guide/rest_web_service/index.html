@@ -2923,6 +2923,7 @@
             <li><a href="#rapise-rest-definition-builder">Rapise REST Definition Builder</a></li>
             <li><a href="#web-service-object-recognition">Web Service Object Recognition</a></li>
             <li><a href="#generating-rapise-rest-test-scripts">Generating Rapise REST Test Scripts</a></li>
+            <li><a href="#handling-file-uploads-and-multipart-requests">Handling File Uploads and Multipart Requests</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -3038,7 +3039,86 @@
 <p>Since the REST objects are just like any other Rapise object, you can have hybrid test scripts that call web service methods and also test GUI objects. This is very useful when you want to test how the user interface changes in response to specific web service API interactions, or when you have a user interface that connects to the sever using a web service (for example with a JSON-based AJAX web user interface).</p>
 <p><img alt="rest_hybrid_test" src="../img/rest_web_service12.png" /></p>
 <p>Once you have created your REST web service test, you can use the standard <a href="../playback/">Playback</a> functionality in Rapise to execute your test and display the report:</p>
-<p><img alt="tutorial_web_services_pic30" src="../img/rest_web_service13.png" /></p></div>
+<p><img alt="tutorial_web_services_pic30" src="../img/rest_web_service13.png" /></p>
+<h2 id="handling-file-uploads-and-multipart-requests">Handling File Uploads and Multipart Requests</h2>
+<p>Each Request with <strong>Content-Type</strong> set to <code>multipart/form-data</code> is assumed to be a special request and handled in a special way.</p>
+<p>The <strong>Body</strong> part should be a valid <code>JSON</code> with the following structure:</p>
+<pre><code class="javascript">{
+    &quot;multipart&quot;:
+    [
+        {
+            &quot;Name&quot;: &quot;name_of_text_field&quot;,
+            &quot;ContentType&quot;: &quot;text/plain&quot;,
+            &quot;Value&quot;: &quot;value&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;uploadfile&quot;,
+            &quot;ContentType&quot;: &quot;image/png&quot;,
+            &quot;FileName&quot;: &quot;image.png&quot;,
+            &quot;FullPath&quot;: &quot;path_to_file_for_upload&quot;
+        }
+    ]
+}
+</code></pre>
+
+<p><img alt="WS Multipart" src="../img/rest_web_service_multipart1.png" /></p>
+<p>For the text fields <strong>ContentType</strong> is optional. By default is is set to <code>text/plain</code>.</p>
+<p>For file upload fields <strong>ContentType</strong> and <strong>FileName</strong> are optional. By default content-type and <strong>FileName</strong> are auto-detected form the <strong>FilePath</strong>.</p>
+<p>So here is an example of the minimal multipart request with one text field and one file upload:</p>
+<pre><code class="javascript">{
+    &quot;multipart&quot;:
+    [
+        {
+            &quot;Name&quot;: &quot;name_of_text_field&quot;,
+            &quot;Value&quot;: &quot;value&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;uploadfile&quot;,
+            &quot;FullPath&quot;: &quot;c:\\some\\path\\to\\image.png&quot;
+        }
+    ]
+}
+</code></pre>
+
+<h3 id="json-as-field-value">JSON as Field Value</h3>
+<p>Here is how you can pass JSON value of the field:</p>
+<pre><code class="javascript">{
+    {
+      &quot;Name&quot;: &quot;jsonText&quot;,
+      &quot;ContentType&quot;:&quot;text/json&quot;,
+      &quot;Value&quot;: {
+        &quot;One&quot;:&quot;Value1&quot;,
+        &quot;Two&quot;:123
+      }
+    },
+    ...
+  ]
+}
+</code></pre>
+
+<h3 id="params-in-multipart-request">Params in Multipart Request</h3>
+<p>It is typical that you want to parameterize text value or file path. It is important to make sure that you properly quote custom value. I.e.</p>
+<p>If we have a parameterized JSON Body:</p>
+<pre><code class="javascript">{
+  &quot;multipart&quot;: [
+    {
+      &quot;Name&quot;: &quot;jsonText&quot;,
+      &quot;ContentType&quot;:&quot;text/json&quot;,
+      &quot;Value&quot;: {StringParam}
+    },
+    {
+      &quot;Name&quot;: &quot;uploadfile&quot;,
+      &quot;FilePath&quot;: {FilePathParam}
+    }
+  ]
+}
+</code></pre>
+
+<p><img alt="WS Multipart" src="../img/rest_web_service_multipart2.png" /></p>
+<p>Once parameters are defined for the <code>multipart</code> request, you should make sure that they are properly escaped. Consider using <code>JSON.stringify</code> appropriately, i.e.:</p>
+<pre><code class="javascript">RestMultipart_UploadFileParams.SetParameters('StringParam', JSON.stringify(&quot;Some Value&quot;));
+RestMultipart_UploadFileParams.SetParameters('FilePathParam', JSON.stringify( Global.GetFullPath('NewAvatarImage.png') ));
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
@@ -3047,7 +3127,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"next": 78, "previous": 80, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
