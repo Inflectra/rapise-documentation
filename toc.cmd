@@ -1,4 +1,4 @@
 pushd %~dp0
 cd tools
-python mkdocsyml.py --filter "hide_site_name:" "plugins:" "- search:" "prebuild_index: True"
+python mkdocsyml.py --filter "hide_site_name:" "prebuild_index: True"
 popd

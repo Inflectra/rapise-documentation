@@ -9,6 +9,7 @@ hide_site_name: True
 plugins:
   - search:
       prebuild_index: True
+      separator: '[^\w]+'
 theme:
     name: mkdocs
     custom_dir: inflectra_mkdocs
