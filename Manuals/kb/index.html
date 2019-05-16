@@ -2925,6 +2925,42 @@
 
 <h1 id="knowledge-base">Knowledge Base</h1>
 <h2 id="topics">Topics</h2>
+<h3 id="kb458-how-to-start-rapise-launcher-on-windows-boot"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB458.aspx">KB458</a> How to start Rapise Launcher on Windows Boot</h3>
+<p>Windows may reboot because of various reasons. If you use a machine to run Rapise tests on regular basis than you want Rapise Launcher to be started automatically after system reboot. The most reliable method that works with any Windows edition is to use Task Scheduler.</p>
+<h3 id="kb457-how-to-organize-custom-code-in-userjs"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB457.aspx">KB457</a> How to organize custom code in User.js</h3>
+<p>Every test has a User.js file and it is a place to put custom code and functions. This code must follow a few rules.</p>
+<h3 id="kb453-working-directory-of-a-test-and-relative-paths"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB453.aspx">KB453</a> Working Directory of a Test and Relative Paths</h3>
+<p>When Rapise starts execution of a test it sets working directory. If a test refers to a file using a relative path then the absolute path is calculated using the working directory.</p>
+<h3 id="kb448-how-to-create-a-rapise-web-object-from-xpath"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB448.aspx">KB448</a> How to create a Rapise web object from XPath</h3>
+<p>In some cases it may be convenient to construct Rapise Objects dynamically rather than capture in advance  with record/learn. In Web tests you can do it via Navigator.Find.</p>
+<h3 id="kb446-getting-browser-console-logs"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB446.aspx">KB446</a> Getting browser console logs</h3>
+<p>In some cases it may be useful to analyze browser-side logs. For example, if you are using Navigator.ExecJS action.</p>
+<h3 id="kb444-how-to-get-title-of-a-window"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB444.aspx">KB444</a> How to get title of a window</h3>
+<p>In this short topic we describe how to get the value of a window title. The way depends on the application type.</p>
+<h3 id="kb443-closing-application-under-test-from-rapise"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB443.aspx">KB443</a> Closing application under test from Rapise</h3>
+<p>There are different techniques one can use to close the application being tested from Rapise. The method to choose may depend on the application type.</p>
+<h3 id="kb442-troubleshooting-rapise-install"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB442.aspx">KB442</a> Troubleshooting Rapise Install</h3>
+<p>If you install Rapise on non-vanilla system, e.g. old workstation with a lot of other software, especially with anti-virus and development tools, it may end-up in a state when some components are not registered  successfully and some files are blocked.  In this article we describe symptoms and ways to cure.</p>
+<h3 id="kb439-troubleshooting-rapise-uninstall"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB439.aspx">KB439</a> Troubleshooting Rapise Uninstall</h3>
+<p>In the unlikely case of unsuccessful deinstallation of Rapise (e.g. if computer power switched off during deinstallation,  or Windows Installer process terminated) there is a way to manually fix the system and complete interrupted deinstallation process.. Automatic uninstall may no longer properly work and leave files in Program Files folder.</p>
+<h3 id="kb436-handling-toast-messages"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB436.aspx">KB436</a> Handling Toast Messages</h3>
+<p>The toast message is like an alert box that is only shown for a couple of seconds when something happens (i.e. when the user clicks on a button, submits a form, etc.). This article describes how to deal with toast messages in Rapise.</p>
+<h3 id="kb434-how-to-send-special-keys-to-selenium-targets"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB434.aspx">KB434</a> How to Send Special Keys to Selenium Targets</h3>
+<p>Sometimes you need to press Tab, Return, Backspace to the web page. Here is how you may do it through WebDriver.</p>
+<h3 id="kb433-using-extra-columns-in-rvl-to-add-report-attributes"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB433.aspx">KB433</a> Using Extra Columns in RVL to add Report Attributes</h3>
+<p>You may use extra RVL columns for your own purposes. In the simple case for storing additional information (notes, links). In more advanced cases extra columns may affect script behavior: add report attributes, control screenshots, control custom actions, assign variable values etc. Here we provide live example of one of such use-cases.</p>
+<h3 id="kb432-writing-data-to-an-excel-spreadsheet"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx">KB432</a> Writing data to an Excel spreadsheet</h3>
+<p>In this article we describe how to write data to an external Excel spreadsheet during test playback. Both RVL and JavaScript examples are given.</p>
+<h3 id="kb431-multiple-object-locators"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB431.aspx">KB431</a> Multiple Object Locators</h3>
+<p>Sometimes object location is unstable. The same object may be identified by different location path or XPath depending on application version or state.</p>
+<h3 id="kb430-how-to-pass-shiftcontrolf12-or-shiftcontrolf11-from-rapise"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB430.aspx">KB430</a> How To Pass Shift+Control+F12 or Shift+Control+F11 from Rapise</h3>
+<p>Global.DoSendKeys is a way to to that, but there is also a little trick required to make it happen.</p>
+<h3 id="kb429-how-to-deal-with-dynamic-window-titles"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB429.aspx">KB429</a> How to deal with dynamic window titles</h3>
+<p>Desktop applications may use window titles to show important information to a user. In some cases the title contains subject of a displayed entity or time.  Since Rapise uses window title while searching for an object during playback - the search may fail. This complication may be resolved if you replace recorded windows title with a regular expression.</p>
+<h3 id="kb428-how-to-relearn-an-object"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB428.aspx">KB428</a> How to relearn an object</h3>
+<p>If an object can not be found at playback and it is obvious that object location has changed because of application update (differs from the case when location is dynamic!) then the best way to fix the test is simply relearn the object.</p>
+<h3 id="kb427-how-to-master-a-dynamic-locator-with-rvl"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx">KB427</a> How to master a dynamic locator with RVL</h3>
+<p>There are situations when object location attribute  depends on the object data and it is not possible to record/learn all such objects in advance.  In this case it may be convenient to calculate object location at playback time using <code>FormatString</code> and <code>SetLocatorOpts</code> actions of the RVL global object.</p>
 <h3 id="kb422-how-to-saveload-dom-tree-in-web-spy"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB422.aspx">KB422</a> How to save/load DOM tree in Web Spy</h3>
 <p>Better to see something once than to hear about it a thousand times. If a Web element can not be found on the page using given XPATH expression and you do not know why - you have an option to save the DOM tree of the page and ask someone else with Rapise for assistance. Here is how.</p>
 <h3 id="kb421-how-to-save-type-information-for-ui-control-in-rapise-spy"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB421.aspx">KB421</a> How to save type information for UI control in Rapise Spy</h3>
@@ -3321,7 +3357,7 @@
 <p>An old (December 9th, 2014) security update for Microsoft Windows and Internet Explorer (KB3025390)  broke the support in IE for 'out-of-process' code execution. This effectively prevented an automated testing application such as Rapise from automating Internet Explorer (IE) applications. This was subsequently fixed by Microsoft on February 10th, 2015 with the KB 3021952 update.</p>
 <h3 id="kb102-how-to-get-rapise-trace-logging-information"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB102.aspx">KB102</a> How to Get Rapise Trace Logging Information</h3>
 <p>When using Rapise, it is often useful to see how Rapise is identifying objects in the Application Under Test (AUT) and if necessary find out why Rapise is not able to locate a specific object. This article outlines how to increase the logging level in Rapise.</p>
-<h3 id="kb101-automating-html-file-upload-boxes-with-rapise-22"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB101.aspx">KB101</a> Automating HTML File Upload Boxes with Rapise 2.2+</h3>
+<h3 id="kb101-automating-html-file-upload-boxes"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB101.aspx">KB101</a> Automating HTML File Upload Boxes</h3>
 <p>Sometimes you have to automate the uploading of files using an HTML file upload control. This article explains how to record and playback such a script.</p>
 <h3 id="kb98-code-completion-of-native-javascript-objects"><a href="https://www.inflectra.com/Support/KnowledgeBase/KB98.aspx">KB98</a> Code Completion of Native JavaScript Objects</h3>
 <p>Rapise has built-in code completion logic that lets it suggest the available list of functions for a specific object. However since JavaScript is fundamentally an un-typed language, for the code completion to work, there are some tips and tricks that you can use.</p>
@@ -3407,7 +3443,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "search": 83, "next": 78};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
