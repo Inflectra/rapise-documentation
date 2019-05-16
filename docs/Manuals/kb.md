@@ -2,6 +2,78 @@
 
 ## Topics
 
+### [KB458](https://www.inflectra.com/Support/KnowledgeBase/KB458.aspx) How to start Rapise Launcher on Windows Boot
+
+Windows may reboot because of various reasons. If you use a machine to run Rapise tests on regular basis than you want Rapise Launcher to be started automatically after system reboot. The most reliable method that works with any Windows edition is to use Task Scheduler.
+
+### [KB457](https://www.inflectra.com/Support/KnowledgeBase/KB457.aspx) How to organize custom code in User.js
+
+Every test has a User.js file and it is a place to put custom code and functions. This code must follow a few rules.
+
+### [KB453](https://www.inflectra.com/Support/KnowledgeBase/KB453.aspx) Working Directory of a Test and Relative Paths
+
+When Rapise starts execution of a test it sets working directory. If a test refers to a file using a relative path then the absolute path is calculated using the working directory.
+
+### [KB448](https://www.inflectra.com/Support/KnowledgeBase/KB448.aspx) How to create a Rapise web object from XPath
+
+In some cases it may be convenient to construct Rapise Objects dynamically rather than capture in advance  with record/learn. In Web tests you can do it via Navigator.Find.
+
+### [KB446](https://www.inflectra.com/Support/KnowledgeBase/KB446.aspx) Getting browser console logs
+
+In some cases it may be useful to analyze browser-side logs. For example, if you are using Navigator.ExecJS action.
+
+### [KB444](https://www.inflectra.com/Support/KnowledgeBase/KB444.aspx) How to get title of a window
+
+In this short topic we describe how to get the value of a window title. The way depends on the application type.
+
+### [KB443](https://www.inflectra.com/Support/KnowledgeBase/KB443.aspx) Closing application under test from Rapise
+
+There are different techniques one can use to close the application being tested from Rapise. The method to choose may depend on the application type.
+
+### [KB442](https://www.inflectra.com/Support/KnowledgeBase/KB442.aspx) Troubleshooting Rapise Install
+
+If you install Rapise on non-vanilla system, e.g. old workstation with a lot of other software, especially with anti-virus and development tools, it may end-up in a state when some components are not registered  successfully and some files are blocked.  In this article we describe symptoms and ways to cure.
+
+### [KB439](https://www.inflectra.com/Support/KnowledgeBase/KB439.aspx) Troubleshooting Rapise Uninstall
+
+In the unlikely case of unsuccessful deinstallation of Rapise (e.g. if computer power switched off during deinstallation,  or Windows Installer process terminated) there is a way to manually fix the system and complete interrupted deinstallation process.. Automatic uninstall may no longer properly work and leave files in Program Files folder.
+
+### [KB436](https://www.inflectra.com/Support/KnowledgeBase/KB436.aspx) Handling Toast Messages
+
+The toast message is like an alert box that is only shown for a couple of seconds when something happens (i.e. when the user clicks on a button, submits a form, etc.). This article describes how to deal with toast messages in Rapise.
+
+### [KB434](https://www.inflectra.com/Support/KnowledgeBase/KB434.aspx) How to Send Special Keys to Selenium Targets
+
+Sometimes you need to press Tab, Return, Backspace to the web page. Here is how you may do it through WebDriver.
+
+### [KB433](https://www.inflectra.com/Support/KnowledgeBase/KB433.aspx) Using Extra Columns in RVL to add Report Attributes
+
+You may use extra RVL columns for your own purposes. In the simple case for storing additional information (notes, links). In more advanced cases extra columns may affect script behavior: add report attributes, control screenshots, control custom actions, assign variable values etc. Here we provide live example of one of such use-cases.
+
+### [KB432](https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx) Writing data to an Excel spreadsheet
+
+In this article we describe how to write data to an external Excel spreadsheet during test playback. Both RVL and JavaScript examples are given.
+
+### [KB431](https://www.inflectra.com/Support/KnowledgeBase/KB431.aspx) Multiple Object Locators
+
+Sometimes object location is unstable. The same object may be identified by different location path or XPath depending on application version or state.
+
+### [KB430](https://www.inflectra.com/Support/KnowledgeBase/KB430.aspx) How To Pass Shift+Control+F12 or Shift+Control+F11 from Rapise
+
+Global.DoSendKeys is a way to to that, but there is also a little trick required to make it happen.
+
+### [KB429](https://www.inflectra.com/Support/KnowledgeBase/KB429.aspx) How to deal with dynamic window titles
+
+Desktop applications may use window titles to show important information to a user. In some cases the title contains subject of a displayed entity or time.  Since Rapise uses window title while searching for an object during playback - the search may fail. This complication may be resolved if you replace recorded windows title with a regular expression.
+
+### [KB428](https://www.inflectra.com/Support/KnowledgeBase/KB428.aspx) How to relearn an object
+
+If an object can not be found at playback and it is obvious that object location has changed because of application update (differs from the case when location is dynamic!) then the best way to fix the test is simply relearn the object.
+
+### [KB427](https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx) How to master a dynamic locator with RVL
+
+There are situations when object location attribute  depends on the object data and it is not possible to record/learn all such objects in advance.  In this case it may be convenient to calculate object location at playback time using `FormatString` and `SetLocatorOpts` actions of the RVL global object.
+
 ### [KB422](https://www.inflectra.com/Support/KnowledgeBase/KB422.aspx) How to save/load DOM tree in Web Spy
 
 Better to see something once than to hear about it a thousand times. If a Web element can not be found on the page using given XPATH expression and you do not know why - you have an option to save the DOM tree of the page and ask someone else with Rapise for assistance. Here is how.
@@ -794,7 +866,7 @@ An old (December 9th, 2014) security update for Microsoft Windows and Internet E
 
 When using Rapise, it is often useful to see how Rapise is identifying objects in the Application Under Test (AUT) and if necessary find out why Rapise is not able to locate a specific object. This article outlines how to increase the logging level in Rapise.
 
-### [KB101](https://www.inflectra.com/Support/KnowledgeBase/KB101.aspx) Automating HTML File Upload Boxes with Rapise 2.2+
+### [KB101](https://www.inflectra.com/Support/KnowledgeBase/KB101.aspx) Automating HTML File Upload Boxes
 
 Sometimes you have to automate the uploading of files using an HTML file upload control. This article explains how to record and playback such a script.
 
