@@ -1,17 +1,87 @@
-# Documentation for Rapise 6.0
+# Documentation for [Rapise](https://www.inflectra.com/Rapise/Highlights.aspx) 6.0+
 
-Welcome to [Rapise]([Rapise](https://www.inflectra.com/Rapise/Highlights.aspx) ) documentation center.
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+  </div>  
+  <div class="row">
+    <div class="col-sm-3">
+        <a role="button" class="btn btn-warning btn-lg btn-block" href="/web/">
+        Web Testing
+        </a>
+    </div>
+    <div class="col-sm-3">
+        <a role="button" class="btn btn-success btn-lg btn-block" href="/desktop/">
+        Desktop Testing
+        </a>
+    </div>
+    <div class="col-sm-3">
+        <a role="button" class="btn btn-info btn-lg btn-block" href="/mobile/">
+        Mobile Testing
+        </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+  </div>  
+  <div class="row">
+    <div class="col-sm-3">
+      <a role="button" class="btn btn-success btn-lg btn-block" href="/api/">
+      API Testing
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a role="button" class="btn btn-warning btn-lg btn-block" href="/codeless/">
+      Codeless Testing
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a role="button" class="btn btn-primary btn-lg btn-block" href="/manual/">
+      Manual Testing
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+  </div>   
+  <div class="row">
+    <div class="col-sm-3">
+        <a role="button" class="btn btn-info btn-lg btn-block" href="/dynamics/">
+        Microsoft Dynamics
+        </a>
+    </div>
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+  </div> 
+  <div class="row">
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+    <div class="col-sm-3">&nbsp;</div>
+  </div>          
+</div>
+
+## Featured Topics
+
+- [SpiraTest Integration](/Guide/spiratest_integration/)
+- [Jenkins Integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx)
+- [TFS Integration](/Guide/visual_studio/)
+
+## About the Docs
 
 From this page you can reach different parts of the documentation. Use menu at the top or table of contents below.
 
 - **Rapise User's Guide** explains Rapise UI, features and technologies.
-- **RVL** describes the Rapise Visual Language used for codeless test automation.
+- **RVL** describes the [Rapise Visual Language](/Guide/visual_language/) used for codeless test automation.
 - **Libraries** contains API reference.
 - **Manuals** features selected topics on how to prepare testing environments.
-- **Knowledge Base** is a list of KB articles.
-- **UITAP** is a link to UI Test Automation Playground.
-
-![Inflectra-logo\_b.zoom21](/Guide/img/company__copyright1.png)
+- **KB** is a list of [knowledge base](/Manuals/kb/) articles.
+- **UITAP** is a link to [UI Test Automation Playground](http://www.uitestingplayground.com/).
 
 ## Table of Contents
 

@@ -29,13 +29,13 @@ your Firewall.
 In order to test web applications using the Google Chrome browser, you will need to install an extension for Chrome that allows Rapise to
 interact with it:
 
-1. Launch Chrome. Navigate to the following URL: [https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc](https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc)
+1. Click the following URL to open the extension page in a new tab: <a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank">https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc</a>
 
     ![add to chrome](./img/setting_up_web_browsers6.png)
 
 2. Click on the ‘Add to Chrome’ button to install the Add-On into your instance of Chrome.
 
-3. It is recommended to set the **Allow access to file URLs** and **Allow in incognito** checkboxes so that web pages opened from the local folder (using the file:// protocol) and in incognito Chrome windows can be also accessed by Rapise when running automated browser tests. To do this navigate to [chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc](chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc) in Chrome:
+3. It is recommended to set the **Allow access to file URLs** and **Allow in incognito** checkboxes so that web pages opened from the local folder (using the file:// protocol) and in incognito Chrome windows can be also accessed by Rapise when running automated browser tests. To do this right click this link <a href="chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank">chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc</a> and choose `Copy link address`, then paste the value to a new tab in Chrome:
   
     ![checkboxes](./img/setting_up_web_browsers7.png)
 
