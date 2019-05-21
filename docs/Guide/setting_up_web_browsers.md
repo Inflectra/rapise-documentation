@@ -11,7 +11,7 @@ Unlike the other web browsers, there are actually no steps needed to configure I
 In order to test web applications using the Firefox web browser, you will need to install an extension for Firefox that allows Rapise to
 interact with it:
 
-1. Launch Firefox. Navigate to the following URL: [https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/](https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/)
+1. Click the following URL to open the extension page in a new tab: <a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/</a>
 
 2. Click on the `Add to Firefox` button to install the Add-On into your instance of Firefox.
 
