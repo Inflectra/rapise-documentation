@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/Ocr/">
+        <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/QAbstractButton/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Ocr - Rapise</title>
+        <title>QAbstractButton - Rapise</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -2907,15 +2907,17 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#ocr">Ocr</a></li>
+        <li class="main active"><a href="#qabstractbutton">QAbstractButton</a></li>
             <li><a href="#action-summary">Action Summary</a></li>
             <li><a href="#action-detail">Action Detail</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="ocr">Ocr</h1>
-<p>Optical Character Resolution (OCR) object. Use it to recognize text on the screen.</p>
+<h1 id="qabstractbutton">QAbstractButton</h1>
+<p>Extends <a href="../QWidget/">QWidget</a></p>
+<p>Extends <a href="../SeSSimulatedObject/">SeSSimulatedObject</a></p>
+<p><strong>Behavior Pattern: Win32Pressable</strong></p>
 <!-- ============================== property summary ========================== -->
 
 <!-- ============================== action summary ========================== -->
@@ -2930,32 +2932,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickTextInObject">DoClickTextInObject</a></td>
-<td>Does OCR for a given object, finds a given string and clicks on it.</td>
-</tr>
-<tr>
-<td><a href="#DoClickTextInWindow">DoClickTextInWindow</a></td>
-<td>Does OCR for a window that contains a given object, finds a given string and clicks on it.</td>
-</tr>
-<tr>
-<td><a href="#DoExtractFromImage">DoExtractFromImage</a></td>
-<td>Does OCR for 'img'.</td>
-</tr>
-<tr>
-<td><a href="#DoExtractFromObject">DoExtractFromObject</a></td>
-<td>Does OCR for a given object.</td>
-</tr>
-<tr>
-<td><a href="#DoExtractFromScreen">DoExtractFromScreen</a></td>
-<td>Does OCR for a given rectangle.</td>
-</tr>
-<tr>
-<td><a href="#DoExtractFromWindow">DoExtractFromWindow</a></td>
-<td>Does OCR for a window that contains a given object.</td>
-</tr>
-<tr>
-<td><a href="#DoSelectOcrEngine">DoSelectOcrEngine</a></td>
-<td>Selects OCR engine by name.</td>
+<td><a href="#DoAction">DoAction</a></td>
+<td>Presses the button.</td>
 </tr>
 </tbody>
 </table>
@@ -2964,200 +2942,10 @@
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail</h3>
-<p><a name="DoClickTextInObject"></a>    </p>
-<h4 id="doclicktextinobjectobjid-text-clicktype">DoClickTextInObject(objId, text, clickType)</h4>
-<p>Does OCR for a given object, finds a given string and clicks on it.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>objId</td>
-<td>SeSObject | String</td>
-<td>ID of an object or SeSObject instance.</td>
-</tr>
-<tr>
-<td>text</td>
-<td>string</td>
-<td>Text to find.</td>
-</tr>
-<tr>
-<td>clickType</td>
-<td>string</td>
-<td>Type of a click to perform.<br>Optional, Default: "L".</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<p>'true' if the text was found, 'false' otherwise.</p>
-<p><a name="see.also.ocr.doclicktextinobject"></a></p>
-<p><a name="DoClickTextInWindow"></a>    </p>
-<h4 id="doclicktextinwindowobjid-text-clicktype">DoClickTextInWindow(objId, text, clickType)</h4>
-<p>Does OCR for a window that contains a given object, finds a given string and clicks on it.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>objId</td>
-<td>SeSObject | String</td>
-<td>ID of an object or SeSObject instance.</td>
-</tr>
-<tr>
-<td>text</td>
-<td>string</td>
-<td>Text to find.</td>
-</tr>
-<tr>
-<td>clickType</td>
-<td>string</td>
-<td>Type of a click to perform.<br>Optional, Default: "L".</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<p>'true' if the text was found, 'false' otherwise.</p>
-<p><a name="see.also.ocr.doclicktextinwindow"></a></p>
-<p><a name="DoExtractFromImage"></a>    </p>
-<h4 id="doextractfromimageimg">DoExtractFromImage(img)</h4>
-<p>Does OCR for 'img'.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>img</td>
-<td>SeSWrappers.Utils.ImageWrapper | String</td>
-<td>Image (ImageWrapper object or path to a file) to do OCR.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<p>Recognized text or empty string in the case of an error.</p>
-<p><a name="see.also.ocr.doextractfromimage"></a></p>
-<p><a name="DoExtractFromObject"></a>    </p>
-<h4 id="doextractfromobjectobjid">DoExtractFromObject(objId)</h4>
-<p>Does OCR for a given object.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>objId</td>
-<td>SeSObject | String</td>
-<td>ID of an object or SeSObject instance.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<p>Recognized text or empty string in the case of an error.</p>
-<p><a name="see.also.ocr.doextractfromobject"></a></p>
-<p><a name="DoExtractFromScreen"></a>    </p>
-<h4 id="doextractfromscreenleft-top-right-bottom">DoExtractFromScreen(left, top, right, bottom)</h4>
-<p>Does OCR for a given rectangle.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>left</td>
-<td>number</td>
-<td>X-coordinate of the top left corner.</td>
-</tr>
-<tr>
-<td>top</td>
-<td>number</td>
-<td>Y-coordinate of the top left corner.</td>
-</tr>
-<tr>
-<td>right</td>
-<td>number</td>
-<td>X-coordinate of the bottom right corner.</td>
-</tr>
-<tr>
-<td>bottom</td>
-<td>number</td>
-<td>Y-coordinate of the bottomo right corner.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<p>Recognized text or empty string in the case of an error.</p>
-<p><a name="see.also.ocr.doextractfromscreen"></a></p>
-<p><a name="DoExtractFromWindow"></a>    </p>
-<h4 id="doextractfromwindowobjid">DoExtractFromWindow(objId)</h4>
-<p>Does OCR for a window that contains a given object.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>objId</td>
-<td>SeSObject | String</td>
-<td>ID of an object or SeSObject instance.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<p>Recognized text or empty string in the case of an error.</p>
-<p><a name="see.also.ocr.doextractfromwindow"></a></p>
-<p><a name="DoSelectOcrEngine"></a>    </p>
-<h4 id="doselectocrengineocrname">DoSelectOcrEngine(ocrName)</h4>
-<p>Selects OCR engine by name. The name should point to installed OCR engine.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ocrName</td>
-<td>string</td>
-<td>Name of an OCR engine available to SmarteStudio. For example, 'Textract' or 'Tesseract'.</td>
-</tr>
-</tbody>
-</table>
-<p><a name="see.also.ocr.doselectocrengine"></a></p></div>
+<p><a name="DoAction"></a>    </p>
+<h4 id="doaction">DoAction()</h4>
+<p>Presses the button.</p>
+<p><a name="see.also.qabstractbutton.doaction"></a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3166,7 +2954,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"search": 83, "previous": 80, "help": 191, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

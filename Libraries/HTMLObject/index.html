@@ -2925,7 +2925,7 @@
 
 <h1 id="htmlobject">HTMLObject</h1>
 <p>This object contains actions and properties for DOM elements of Web page.</p>
-<p>Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="SeSSimulatedObject" styleclass="Normal" translate="true">SeSSimulatedObject</link>.</p>
+<p>Extends <a href="../SeSSimulatedObject/">SeSSimulatedObject</a></p>
 <p><strong>Behavior Pattern: HTMLFirefoxBehavior</strong></p>
 <!-- ============================== property summary ========================== -->
 
@@ -3381,7 +3381,7 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Object: n-th child.</p>
+<p>SeSObject: n-th child.</p>
 <p><a name="see.also.htmlobject.dodomchildat"></a></p>
 <p><a name="DoDOMChildrenCount"></a>    </p>
 <h4 id="dodomchildrencount">DoDOMChildrenCount()</h4>
@@ -3410,7 +3410,7 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Object: New Object of requested type or HTMLObject if type not found, null if error occur.</p>
+<p>SeSObject: New Object of requested type or HTMLObject if type not found, null if error occur.</p>
 <p><a name="see.also.htmlobject.dodomconvert"></a></p>
 <p><a name="DoDOMFindParentWithAttribute"></a>    </p>
 <h4 id="dodomfindparentwithattributeattrname-match">DoDOMFindParentWithAttribute(attrName, match)</h4>
@@ -3438,7 +3438,7 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Object: Matched element or 'null'.</p>
+<p>SeSObject: Matched element or 'null'.</p>
 <p><a name="see.also.htmlobject.dodomfindparentwithattribute"></a></p>
 <p><a name="DoDOMGetAttribute"></a>    </p>
 <h4 id="dodomgetattributeattrname">DoDOMGetAttribute(attrName)</h4>
@@ -3461,7 +3461,7 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Object: Attribute value.</p>
+<p>object: Attribute value.</p>
 <p><a name="see.also.htmlobject.dodomgetattribute"></a></p>
 <p><a name="DoDOMGetAttributes"></a>    </p>
 <h4 id="dodomgetattributes">DoDOMGetAttributes()</h4>
@@ -3473,19 +3473,19 @@
 <h4 id="dodomnextsibling">DoDOMNextSibling()</h4>
 <p>Returns next sibling element for this one.</p>
 <p><strong>Returns:</strong></p>
-<p>Object: Next sibling element.</p>
+<p>SeSObject: Next sibling element.</p>
 <p><a name="see.also.htmlobject.dodomnextsibling"></a></p>
 <p><a name="DoDOMParent"></a>    </p>
 <h4 id="dodomparent">DoDOMParent()</h4>
 <p>Returns parent element having this element.</p>
 <p><strong>Returns:</strong></p>
-<p>Object: Parent element.</p>
+<p>SeSObject: Parent element.</p>
 <p><a name="see.also.htmlobject.dodomparent"></a></p>
 <p><a name="DoDOMPrevSibling"></a>    </p>
 <h4 id="dodomprevsibling">DoDOMPrevSibling()</h4>
 <p>Return previous sibling element for this one.</p>
 <p><strong>Returns:</strong></p>
-<p>Object: Previous sibling element.</p>
+<p>SeSObject: Previous sibling element.</p>
 <p><a name="see.also.htmlobject.dodomprevsibling"></a></p>
 <p><a name="DoDOMQueryCss"></a>    </p>
 <h4 id="dodomquerycsscss">DoDOMQueryCss(css)</h4>
@@ -3537,7 +3537,7 @@
 <h4 id="dodomroot">DoDOMRoot()</h4>
 <p>Returns Root element having this element.</p>
 <p><strong>Returns:</strong></p>
-<p>Object: Root element having this element.</p>
+<p>SeSObject: Root element having this element.</p>
 <p><a name="see.also.htmlobject.dodomroot"></a></p>
 <p><a name="DoEnsureVisible"></a>    </p>
 <h4 id="doensurevisiblevalign-halign">DoEnsureVisible(vAlign, hAlign)</h4>
@@ -3565,13 +3565,13 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Object: Rectangle of the element if it became visible, 'null' otherwise.</p>
+<p>object: Rectangle of the element if it became visible, 'null' otherwise.</p>
 <p><a name="see.also.htmlobject.doensurevisible"></a></p>
 <p><a name="DoGetRect"></a>    </p>
 <h4 id="dogetrect">DoGetRect()</h4>
 <p>Finds screen rectangle for this object.</p>
 <p><strong>Returns:</strong></p>
-<p>Object: Object {x, y, w, h}</p>
+<p>object: object {x, y, w, h}</p>
 <p><a name="see.also.htmlobject.dogetrect"></a></p>
 <p><a name="DoGetSelection"></a>    </p>
 <h4 id="dogetselectiondelim">DoGetSelection(delim)</h4>
@@ -3673,7 +3673,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"search": 83, "previous": 80, "help": 191, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

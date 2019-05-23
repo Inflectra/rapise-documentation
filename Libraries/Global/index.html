@@ -2966,6 +2966,10 @@ record or learn this object, it is always automatically available in any test.</
 <td>Invokes another test (aka subtest).</td>
 </tr>
 <tr>
+<td><a href="#DoInvokeTestParallel">DoInvokeTestParallel</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="#DoKillByName">DoKillByName</a></td>
 <td>Terminates a given process.</td>
 </tr>
@@ -3268,6 +3272,36 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if the test passed, 'false' otherwise.</p>
 <p><a name="see.also.global.doinvoketest"></a></p>
+<p><a name="DoInvokeTestParallel"></a>    </p>
+<h4 id="doinvoketestparalleltestpath-threads-commonparams">DoInvokeTestParallel(testPath, threads, commonParams)</h4>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>testPath</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>threads</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>commonParams</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.global.doinvoketestparallel"></a></p>
 <p><a name="DoKillByName"></a>    </p>
 <h4 id="dokillbynameprocessname">DoKillByName(processName)</h4>
 <p>Terminates a given process.</p>
@@ -3374,7 +3408,7 @@ to attach if it is already launched.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Object: saved_script_objects or null if the load was unsuccessful.</p>
+<p>object: saved_script_objects or null if the load was unsuccessful.</p>
 <p><a name="see.also.global.doloadobjects"></a></p>
 <p><a name="DoMessageBox"></a>    </p>
 <h4 id="domessageboxprompt-buttons">DoMessageBox(prompt, buttons)</h4>
@@ -3658,7 +3692,7 @@ was found or timeout.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link> | <br>Boolean: Found object or 'false'.</p>
+<p>SeSObject | <br>boolean: Found object or 'false'.</p>
 <p><a name="see.also.global.dowaitfor"></a></p>
 <p><a name="DoWaitForProperty"></a>    </p>
 <h4 id="dowaitforpropertyobj-gettername-propvalue-timeout-params">DoWaitForProperty(obj, getterName, propValue, timeout, params)</h4>
@@ -3703,7 +3737,7 @@ in the case of timeout.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p><link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link> | <br>Boolean: Found object or 'false'.</p>
+<p>SeSObject | <br>boolean: Found object or 'false'.</p>
 <p><a name="see.also.global.dowaitforproperty"></a></p>
 <p><a name="GetClipboardText"></a>    </p>
 <h4 id="getclipboardtext">GetClipboardText()</h4>
@@ -3738,7 +3772,7 @@ in the case of timeout.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>Object: Array of bytes.</p>
+<p>object: Array of bytes.</p>
 <p><a name="see.also.global.getfileasbytearray"></a></p>
 <p><a name="GetFirstDayOfWeek"></a>    </p>
 <h4 id="getfirstdayofweek">GetFirstDayOfWeek()</h4>
@@ -3958,7 +3992,7 @@ in the case of timeout.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"search": 83, "previous": 80, "help": 191, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
