@@ -2,8 +2,10 @@
 
 Telerik RadDropDownMenu.
  
-Extends ManagedMenuPopupItem.
+UI element class: Telerik.WinControls.UI.RadDropDownMenu
 
-Extends SeSSimulatedObject.
+Extends [ManagedMenuPopupItem](ManagedMenuPopupItem.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

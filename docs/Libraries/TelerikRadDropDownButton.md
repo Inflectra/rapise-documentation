@@ -2,9 +2,11 @@
 
 Telerik RadDropDownButton.
  
-Extends ManagedButton.
+UI element class: Telerik.WinControls.UI.RadDropDownButton
 
-Extends SeSSimulatedObject.
+Extends [ManagedButton](ManagedButton.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

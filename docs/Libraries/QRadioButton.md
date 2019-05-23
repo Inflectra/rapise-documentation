@@ -2,9 +2,9 @@
 
 Qt Radio button.
  
-Extends QAbstractButton.
+Extends [QAbstractButton](QAbstractButton.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

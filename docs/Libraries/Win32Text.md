@@ -2,7 +2,7 @@
 
 This is generic Win32 edit box. Use DoSetText to set the value of the edit box and GetText to read current value.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="SeSSimulatedObject" styleclass="Normal" translate="true">SeSSimulatedObject</link>.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

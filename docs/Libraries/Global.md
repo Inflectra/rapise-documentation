@@ -25,6 +25,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoDecrypt](#DoDecrypt) | Decrypts a piece of text. |
 |	[DoEncrypt](#DoEncrypt) | Encrypts a piece of text. |
 |	[DoInvokeTest](#DoInvokeTest) | Invokes another test (aka subtest). |
+|	[DoInvokeTestParallel](#DoInvokeTestParallel) |  |
 |	[DoKillByName](#DoKillByName) | Terminates a given process. |
 |	[DoKillByPid](#DoKillByPid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
 |	[DoLaunch](#DoLaunch) | Executes a command specified in cmdLine. |
@@ -222,6 +223,26 @@ boolean: 'true' if the test passed, 'false' otherwise.
 
 <a name="see.also.global.doinvoketest"></a>
 
+<a name="DoInvokeTestParallel"></a>    
+#### DoInvokeTestParallel(testPath, threads, commonParams)
+
+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| testPath |  |	 |
+| threads |  |	 |
+| commonParams |  |	 |
+
+
+
+
+
+<a name="see.also.global.doinvoketestparallel"></a>
+
 <a name="DoKillByName"></a>    
 #### DoKillByName(processName)
 
@@ -312,7 +333,7 @@ Loads objects from external .objects.js file.
 
 **Returns:**
 
-Object: saved_script_objects or null if the load was unsuccessful.
+object: saved_script_objects or null if the load was unsuccessful.
 
 
 
@@ -549,7 +570,7 @@ was found or timeout.
 
 **Returns:**
 
-<link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link> | <br>Boolean: Found object or 'false'.
+SeSObject | <br>boolean: Found object or 'false'.
 
 
 
@@ -578,7 +599,7 @@ in the case of timeout.
 
 **Returns:**
 
-<link displaytype="text" defaultstyle="true" type="topiclink" href="SeSObject" styleclass="Normal" translate="true">SeSObject</link> | <br>Boolean: Found object or 'false'.
+SeSObject | <br>boolean: Found object or 'false'.
 
 
 
@@ -633,7 +654,7 @@ Reads file and returns its content as array of bytes. May be useful for binary f
 
 **Returns:**
 
-Object: Array of bytes.
+object: Array of bytes.
 
 
 

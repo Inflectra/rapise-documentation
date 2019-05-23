@@ -2,9 +2,9 @@
 
 Behavior patterm for dropdown (popup).
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="UIAObject" styleclass="Normal" translate="true">UIAObject</link>.
+Extends [UIAObject](UIAObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

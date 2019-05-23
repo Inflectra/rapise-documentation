@@ -2,9 +2,11 @@
 
 DevXpress FontEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.FontEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

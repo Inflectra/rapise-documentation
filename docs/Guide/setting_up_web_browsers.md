@@ -39,6 +39,8 @@ interact with it:
   
     ![checkboxes](./img/setting_up_web_browsers7.png)
 
+4. When installation is complete restart Chrome.
+
 ## Chromium Applications
 
 The Rapise extension installation procedure differs in the case of testing Chromium applications. Below are the recommended steps to enable automation for such applications:

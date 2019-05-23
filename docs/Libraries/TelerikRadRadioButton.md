@@ -2,9 +2,11 @@
 
 Telerik RadRadioButton.
  
-Extends ManagedRadioButton.
+UI element class: Telerik.WinControls.UI.RadRadioButton
 
-Extends SeSSimulatedObject.
+Extends [ManagedRadioButton](ManagedRadioButton.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -1,8 +1,10 @@
 # UltraRibbon
 
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

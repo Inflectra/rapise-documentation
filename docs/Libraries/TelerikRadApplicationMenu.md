@@ -2,9 +2,11 @@
 
 Telerik RadApplicationMenu.
  
-Extends ManagedObject.
+UI element class: Telerik.WinControls.UI.RadApplicationMenu
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

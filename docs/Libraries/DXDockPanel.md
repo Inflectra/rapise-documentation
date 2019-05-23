@@ -1,8 +1,10 @@
 # DXDockPanel
 
-Extends ManagedObject.
+UI element class: regex:DevExpress.XtraBars.Docking.DockPanel
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

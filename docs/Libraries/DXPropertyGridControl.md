@@ -1,8 +1,10 @@
 # DXPropertyGridControl
 
-Extends ManagedObject.
+UI element class: DevExpress.XtraVerticalGrid.PropertyGridControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -129,7 +131,7 @@ Gets rectangle of the row with index.
 
 **Returns:**
 
-Object: Row rectangle {x, y, w, h}.
+object: Row rectangle {x, y, w, h}.
 
 
 
@@ -152,7 +154,7 @@ Gets value of the row with index.
 
 **Returns:**
 
-Object: Row value
+object: Row value
 
 
 
@@ -176,7 +178,7 @@ Sets value of the row with index.
 
 **Returns:**
 
-Boolean: 'true' if successfull
+boolean: 'true' if successfull
 
 
 

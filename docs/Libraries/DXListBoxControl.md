@@ -2,9 +2,11 @@
 
 DevXpress ListBoxControl.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.ListBoxControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

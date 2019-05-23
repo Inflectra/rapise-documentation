@@ -2,9 +2,11 @@
 
 Infragistics UltraTree.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinTree.UltraTree
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

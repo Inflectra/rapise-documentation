@@ -1,5 +1,5 @@
 # QWidget
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

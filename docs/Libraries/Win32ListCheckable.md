@@ -2,7 +2,7 @@
 
 This is generic Win32 list with a check box near each item. Use DoSelectItem to select a particular item and DoCheckItem to change corresponding check box state.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="SeSSimulatedObject" styleclass="Normal" translate="true">SeSSimulatedObject</link>.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

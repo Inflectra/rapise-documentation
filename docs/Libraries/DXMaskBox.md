@@ -2,9 +2,11 @@
 
 DevXpress MaskBox.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.TextBoxMaskBox
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

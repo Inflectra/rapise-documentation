@@ -2,9 +2,11 @@
 
 Managed MenuPopupItem.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="ManagedObject" styleclass="Normal" translate="true">ManagedObject</link>.
+UI element class: regex:System.Windows.Forms..*Strip.*
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -2,9 +2,11 @@
 
 Telerik RadToggleButton.
  
-Extends ManagedCheckBox.
+UI element class: Telerik.WinControls.UI.RadToggleButton
 
-Extends SeSSimulatedObject.
+Extends [ManagedCheckBox](ManagedCheckBox.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

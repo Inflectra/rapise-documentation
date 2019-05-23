@@ -2,9 +2,9 @@
 
 Behavior patterm for Dynamics NAV fast tabs control.
  
-Extends UIAObject.
+Extends [UIAObject](UIAObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

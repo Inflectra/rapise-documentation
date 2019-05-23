@@ -2,9 +2,11 @@
 
 Infragistics UltraTimeZoneEditor.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinEditors.UltraTimeZoneEditor
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

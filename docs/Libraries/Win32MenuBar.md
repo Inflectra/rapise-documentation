@@ -2,7 +2,7 @@
 
 This is generic WIn32 menu bar (e.g. main menu of the application). Use DoClickItem to click a particular item from the menu and DoMenu to choose a menu item at the specified path.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="SeSSimulatedObject" styleclass="Normal" translate="true">SeSSimulatedObject</link>.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

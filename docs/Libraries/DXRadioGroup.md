@@ -2,9 +2,11 @@
 
 DevXpress RadioGroup.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.RadioGroup
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -2,9 +2,11 @@
 
 Telerik RadGridView.
  
-Extends ManagedDataGridView.
+UI element class: Telerik.WinControls.UI.RadGridView
 
-Extends SeSSimulatedObject.
+Extends [ManagedDataGridView](ManagedDataGridView.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

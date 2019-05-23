@@ -2,9 +2,11 @@
 
 Infragistics UltraGrid.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinGrid.UltraGrid
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

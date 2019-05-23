@@ -2,7 +2,7 @@
 
 This behavior pattern implements standard behavior for Grid control.
  
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

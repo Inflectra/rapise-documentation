@@ -2,7 +2,7 @@
 
 Link control.
  
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

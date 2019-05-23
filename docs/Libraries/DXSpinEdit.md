@@ -2,9 +2,11 @@
 
 DevXpress SpinEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.SpinEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

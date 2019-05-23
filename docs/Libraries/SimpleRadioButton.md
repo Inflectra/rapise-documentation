@@ -2,7 +2,7 @@
 
 Static text control.
  
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

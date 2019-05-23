@@ -2,9 +2,11 @@
 
 DevXpress RangeTrackBarControl.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.RangeTrackBarControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -1,8 +1,10 @@
 # DXDocumentsHost
 
-Extends ManagedObject.
+UI element class: DevExpress.XtraBars.Docking2010.DocumentsHost
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

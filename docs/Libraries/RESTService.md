@@ -2,7 +2,7 @@
 
 This behavior pattern implements REST service client.
  
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

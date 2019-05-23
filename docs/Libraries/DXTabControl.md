@@ -1,8 +1,10 @@
 # DXTabControl
 
-Extends ManagedObject.
+UI element class: DevExpress.XtraTab.XtraTabControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

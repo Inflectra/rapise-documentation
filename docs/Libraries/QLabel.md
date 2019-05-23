@@ -2,9 +2,9 @@
 
 This is Qt read-only text label. Use GetText to read the current value of the label text.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="QWidget" styleclass="Normal" translate="true">QWidget</link>.
+Extends [QWidget](QWidget.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

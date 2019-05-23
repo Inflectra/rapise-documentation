@@ -2,7 +2,7 @@
 
 This is generic Win32 tree. Use DoSelectItem to select and DoExpand to expand/collapse a particular node.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="SeSSimulatedObject" styleclass="Normal" translate="true">SeSSimulatedObject</link>.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

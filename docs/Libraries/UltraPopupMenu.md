@@ -1,7 +1,9 @@
 # UltraPopupMenu
 
 UltraPopupMenu
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinToolbars.PopupMenuControlTrusted
+
+Extends [ManagedObject](ManagedObject.md)
 
 
 

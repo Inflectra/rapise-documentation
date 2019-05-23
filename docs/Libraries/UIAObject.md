@@ -1,6 +1,6 @@
 # UIAObject
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -17,6 +17,7 @@ Extends SeSSimulatedObject.
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
+| [AutomationId](#AutomationId) | Automation ID of UI Automation object | GetAutomationId |  |
 | [ChildAt](#ChildAt) | Object for nth child of this object's UI Automation node | GetChildAt |  |
 | [ChildrenCount](#ChildrenCount) | Number of UI Automation nodes within current node | GetChildrenCount |  |
 | [Height](#Height) | Height of the object. | GetHeight |  |
@@ -53,6 +54,21 @@ Extends SeSSimulatedObject.
 <!-- ============================== property detail ========================== -->
 	
 ### Property Detail
+		
+<a name="AutomationId"></a>
+#### AutomationId
+
+
+Automation ID of of UI Automation object
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetAutomationId
+			
 		
 <a name="ChildAt"></a>
 #### ChildAt

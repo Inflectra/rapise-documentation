@@ -2,9 +2,11 @@
 
 Telerik RadCheckButton.
  
-Extends ManagedCheckBox.
+UI element class: Telerik.WinControls.UI.RadCheckBox
 
-Extends SeSSimulatedObject.
+Extends [ManagedCheckBox](ManagedCheckBox.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

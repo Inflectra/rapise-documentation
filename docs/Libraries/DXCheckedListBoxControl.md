@@ -2,9 +2,11 @@
 
 DevXpress CheckedListBoxControl.
  
-Extends ManagedObject.
+UI element class: regex:DevExpress.XtraEditors.CheckedListBoxControl|DevExpress.XtraEditors.Popup.PopupCheckedListBoxControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

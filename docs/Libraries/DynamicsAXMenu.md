@@ -2,9 +2,9 @@
 
 Behavior patterm for Dynamics AX menu.
  
-Extends UIAObject.
+Extends [UIAObject](UIAObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

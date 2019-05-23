@@ -2,9 +2,9 @@
 
 GWT-Ext MenuBar.
  
-Extends HTMLObject.
+Extends [HTMLObject](HTMLObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

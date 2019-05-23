@@ -2,9 +2,11 @@
 
 DevXpress NavBar.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraNavBar.NavBarControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

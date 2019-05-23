@@ -2,7 +2,7 @@
 
 This is generic Win32 editable combo box. Use DoSelectItem to select a particular item and DoSetText to set a custom value.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="SeSSimulatedObject" styleclass="Normal" translate="true">SeSSimulatedObject</link>.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

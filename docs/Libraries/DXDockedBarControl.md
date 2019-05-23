@@ -2,9 +2,11 @@
 
 DevXpress Docked Bar.
  
-Extends ManagedObject.
+UI element class: regex:DevExpress.XtraBars.Controls.DockedBarControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

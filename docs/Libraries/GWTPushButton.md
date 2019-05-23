@@ -2,9 +2,9 @@
 
 GWT PushButton. Use DoClick() to push it.
  
-Extends HTMLObject.
+Extends [HTMLObject](HTMLObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

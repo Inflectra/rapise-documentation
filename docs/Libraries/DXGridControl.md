@@ -2,9 +2,11 @@
 
 DevXpress GridControl.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraGrid.GridControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

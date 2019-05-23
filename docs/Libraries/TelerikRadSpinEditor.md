@@ -2,9 +2,11 @@
 
 Telerik RadSpinEditor.
  
-Extends ManagedObject.
+UI element class: Telerik.WinControls.UI.RadSpinEditor
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

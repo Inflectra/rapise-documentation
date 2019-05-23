@@ -2,9 +2,11 @@
 
 Telerik RadTextBox.
  
-Extends ManagedTextBox.
+UI element class: Telerik.WinControls.UI.RadTextBox
 
-Extends SeSSimulatedObject.
+Extends [ManagedTextBox](ManagedTextBox.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

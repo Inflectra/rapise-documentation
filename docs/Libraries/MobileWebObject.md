@@ -1,8 +1,6 @@
 # MobileWebObject
 
 Web Mobile Object.
- 
-Extends SeSSimulatedObject.
 
 
 

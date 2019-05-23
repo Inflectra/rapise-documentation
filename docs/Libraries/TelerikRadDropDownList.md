@@ -2,9 +2,11 @@
 
 Telerik RadDropDownList.
  
-Extends ManagedComboBox.
+UI element class: Telerik.WinControls.UI.RadDropDownList
 
-Extends SeSSimulatedObject.
+Extends [ManagedComboBox](ManagedComboBox.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

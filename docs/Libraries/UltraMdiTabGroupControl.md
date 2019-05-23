@@ -1,8 +1,10 @@
 # UltraMdiTabGroupControl
 
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinTabbedMdi.MdiTabGroupControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -2,9 +2,11 @@
 
 Telerik RadRibbonBar.
  
-Extends ManagedObject.
+UI element class: Telerik.WinControls.UI.RadRibbonBar
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

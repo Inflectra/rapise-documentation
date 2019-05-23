@@ -2,9 +2,11 @@
 
 Infragistics UltraButton.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.Misc.UltraButton
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

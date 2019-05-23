@@ -2,9 +2,11 @@
 
 DevXpress DateEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.Controls.DateEditCalendarBase
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

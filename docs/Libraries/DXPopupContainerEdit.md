@@ -2,9 +2,11 @@
 
 DevXpress PopupContainerEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.PopupContainerEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -2,9 +2,11 @@
 
 Infragistics UltraMaskedEdit.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinMaskedEdit.UltraMaskedEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

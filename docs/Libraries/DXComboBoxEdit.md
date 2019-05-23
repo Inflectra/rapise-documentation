@@ -2,9 +2,11 @@
 
 DevXpress ComboBoxEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.ComboBoxEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

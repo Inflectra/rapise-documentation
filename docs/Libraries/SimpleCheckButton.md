@@ -1,6 +1,6 @@
 # SimpleCheckButton
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

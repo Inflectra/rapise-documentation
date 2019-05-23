@@ -2,9 +2,11 @@
 
 DevXpress ImageListBoxControl.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.ImageListBoxControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

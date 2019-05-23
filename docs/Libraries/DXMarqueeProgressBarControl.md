@@ -2,9 +2,11 @@
 
 DevXpress MarqueeProgressBarControl.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.MarqueeProgressBarControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -2,9 +2,11 @@
 
 Telerik DropDownPopupForm.
  
-Extends ManagedButton.
+UI element class: Telerik.WinControls.UI.DropDownPopupForm
 
-Extends SeSSimulatedObject.
+Extends [ManagedButton](ManagedButton.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

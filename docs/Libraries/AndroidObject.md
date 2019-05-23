@@ -1,8 +1,6 @@
 # AndroidObject
 
 Android Object.
- 
-Extends SeSSimulatedObject.
 
 
 

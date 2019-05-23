@@ -2,9 +2,11 @@
 
 DevXpress TreeList.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraTreeList.TreeList
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

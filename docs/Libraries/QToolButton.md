@@ -2,9 +2,9 @@
 
 This matches a Qt tool button. Use DoAction to press it.
  
-Extends QAbstractButton.
+Extends [QAbstractButton](QAbstractButton.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

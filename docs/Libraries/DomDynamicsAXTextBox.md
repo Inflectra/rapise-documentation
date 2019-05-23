@@ -2,9 +2,9 @@
 
 This behavior pattern implements standard behavior for TextBox control.
  
-Extends HTMLObject.
+Extends [HTMLObject](HTMLObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

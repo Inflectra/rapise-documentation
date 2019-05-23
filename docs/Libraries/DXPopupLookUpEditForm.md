@@ -2,9 +2,11 @@
 
 DevXpress PopupLookUpEditForm.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.Popup.PopupLookUpEditForm
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

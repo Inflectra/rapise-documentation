@@ -2,9 +2,11 @@
 
 Infragistics UltraFormattedTextEditor.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinEditors.UltraCheckEditor
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

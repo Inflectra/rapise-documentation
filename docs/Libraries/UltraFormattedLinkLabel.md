@@ -2,9 +2,11 @@
 
 Infragistics UltraTextEditor.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.FormattedLinkLabel.UltraFormattedLinkLabel
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

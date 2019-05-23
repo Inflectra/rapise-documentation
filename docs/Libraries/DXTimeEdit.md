@@ -2,9 +2,11 @@
 
 DevXpress TimeEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.TimeEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -2,9 +2,9 @@
 
 This is for testing the main Qt menu bar (e.g. main menu of the application). Use DoClickItem to click a particular item from the menu.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="QWidget" styleclass="Normal" translate="true">QWidget</link>.
+Extends [QWidget](QWidget.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

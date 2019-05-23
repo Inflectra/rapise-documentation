@@ -2,9 +2,9 @@
 
 This is Qt single-line text edit box. Use DoSetText to set the value of the edit box and GetText to read current value.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="QWidget" styleclass="Normal" translate="true">QWidget</link>.
+Extends [QWidget](QWidget.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

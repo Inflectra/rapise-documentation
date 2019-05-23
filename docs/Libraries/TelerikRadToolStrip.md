@@ -2,9 +2,11 @@
 
 Telerik RadToolStrip.
  
-Extends ManagedObject.
+UI element class: Telerik.WinControls.UI.RadToolStrip
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

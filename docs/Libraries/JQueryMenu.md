@@ -1,8 +1,8 @@
 # JQueryMenu
 
-Extends HTMLObject.
+Extends [HTMLObject](HTMLObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -54,7 +54,7 @@ Searches for specific item in the menu.
 
 **Returns:**
 
-HTMLObject: HTMLObject of the found node
+[HTMLObject](HTMLObject.md): HTMLObject of the found node
 
 
 
@@ -79,7 +79,7 @@ Performs click on the menu item.
 
 **Returns:**
 
-HTMLObject: HTMLObject of the found node
+[HTMLObject](HTMLObject.md): HTMLObject of the found node
 
 
 

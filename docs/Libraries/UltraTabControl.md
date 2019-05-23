@@ -2,9 +2,11 @@
 
 Infragistics UltraTabControl.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinTabControl.UltraTabControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

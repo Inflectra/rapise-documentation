@@ -2,9 +2,11 @@
 
 DevXpress Ribbon.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraBars.Ribbon.RibbonControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

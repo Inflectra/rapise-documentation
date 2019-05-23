@@ -1,5 +1,5 @@
 # QPopup
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

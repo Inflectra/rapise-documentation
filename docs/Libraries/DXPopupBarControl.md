@@ -2,9 +2,11 @@
 
 DevXpress DXPopupBarControl.
  
-Extends ManagedObject.
+UI element class: regex:DevExpress.XtraBars.Controls..*BarControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

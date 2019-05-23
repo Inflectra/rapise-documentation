@@ -1,8 +1,6 @@
 # AndroidCheckBox
 
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="AndroidObject" styleclass="Normal" translate="true">AndroidObject</link>.
-
-Extends SeSSimulatedObject.
+Extends [AndroidObject](AndroidObject.md)
 
 
 

@@ -2,9 +2,11 @@
 
 Infragistics UltraLabel.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.Misc.UltraLabel
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

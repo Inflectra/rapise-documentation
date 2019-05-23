@@ -2,9 +2,11 @@
 
 DevXpress HyperLinkEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.HyperLinkEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

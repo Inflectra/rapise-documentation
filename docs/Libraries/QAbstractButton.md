@@ -1,6 +1,6 @@
-# JQuerySliderV
+# QAbstractButton
 
-Extends [HTMLObject](HTMLObject.md)
+Extends [QWidget](QWidget.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
@@ -8,7 +8,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-**Behavior Pattern: JQuerySliderVBehavior**
+**Behavior Pattern: Win32Pressable**
 
 
 <!-- ============================== property summary ========================== -->
@@ -22,7 +22,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoChange](#DoChange) | Changes slider position. |
+|	[DoAction](#DoAction) | Presses the button. |
 
 
 
@@ -34,28 +34,16 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 	
 ### Action Detail
 		
-<a name="DoChange"></a>    
-#### DoChange(value)
+<a name="DoAction"></a>    
+#### DoAction()
 
-Changes slider position.
-
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| value | number |	Slider position to set. |
+Presses the button.
 
 
 
 
-**Returns:**
 
-boolean: 'true' if successful, 'false' otherwise
-
-
-
-<a name="see.also.jquerysliderv.dochange"></a>
+<a name="see.also.qabstractbutton.doaction"></a>
 
 	
 

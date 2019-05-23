@@ -18,9 +18,9 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Actions](#Actions) | This will create a WebDriver for currently selected Browser profile. |
+|	[Actions](#Actions) | Gets Actions object. |
 |	[Close](#Close) | Close the Browser and Dispose of WebDriver. |
-|	[Cookies](#Cookies) | Gets Actions object. |
+|	[Cookies](#Cookies) | Gets Cookies object. |
 |	[CreateDriver](#CreateDriver) | This will create a WebDriver for currently selected Browser profile. |
 |	[Dispose](#Dispose) | Dispose of WebDriver. |
 |	[ExecuteScript](#ExecuteScript) | Executes JavaScript in the context of the currently selected frame or window. |
@@ -57,6 +57,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[SwitchToLastWindow](#SwitchToLastWindow) | Switch to last browser window. |
 |	[SwitchToParentFrame](#SwitchToParentFrame) | Select the parent frame of the currently selected frame. |
 |	[SwitchToWindow](#SwitchToWindow) | Switch to window specified by handle. |
+|	[Window](#Window) | Gets Window object. |
 
 
 
@@ -71,14 +72,9 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 <a name="Actions"></a>    
 #### Actions()
 
-This will create a WebDriver for currently selected Browser profile.
+Gets Actions object.
 
 
-
-
-**Returns:**
-
-WebDriver object.
 
 
 
@@ -98,7 +94,7 @@ Close the Browser and Dispose of WebDriver.
 <a name="Cookies"></a>    
 #### Cookies()
 
-Gets Actions object.
+Gets Cookies object.
 
 
 
@@ -754,6 +750,17 @@ Switch to window specified by handle.
 
 
 <a name="see.also.webdriver.switchtowindow"></a>
+
+<a name="Window"></a>    
+#### Window()
+
+Gets Window object.
+
+
+
+
+
+<a name="see.also.webdriver.window"></a>
 
 	
 

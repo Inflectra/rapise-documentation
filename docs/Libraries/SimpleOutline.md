@@ -2,7 +2,7 @@
 
 Outline control.
  
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

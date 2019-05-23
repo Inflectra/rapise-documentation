@@ -2,9 +2,11 @@
 
 Infragistics UltraCurrencyEditor.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinEditors.UltraCurrencyEditor
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

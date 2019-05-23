@@ -2,9 +2,11 @@
 
 Telerik RadDateTimePicker.
  
-Extends ManagedObject.
+UI element class: Telerik.WinControls.UI.RadDateTimePicker
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

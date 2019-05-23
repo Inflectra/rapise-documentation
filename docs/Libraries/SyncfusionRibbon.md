@@ -2,9 +2,11 @@
 
 This behavior pattern implements standard behavior for Ribbon control.
  
-Extends ManagedObject.
+UI element class: Syncfusion.Windows.Forms.Tools.RibbonControlAdv
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

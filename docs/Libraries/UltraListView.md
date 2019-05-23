@@ -2,9 +2,11 @@
 
 Infragistics UltraListView.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinListView.UltraListView
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

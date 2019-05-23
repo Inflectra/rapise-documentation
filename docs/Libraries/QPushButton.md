@@ -2,9 +2,9 @@
 
 This matches a Qt push button. Use DoAction to press it.
  
-Extends QAbstractButton.
+Extends [QAbstractButton](QAbstractButton.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

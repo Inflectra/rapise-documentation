@@ -2,9 +2,11 @@
 
 DevXpress Masked TextEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.TextEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

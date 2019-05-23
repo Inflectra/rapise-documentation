@@ -2,9 +2,9 @@
 
 Behavior patterm for Dynamics NAV toolbar with menu items.
  
-Extends UIAObject.
+Extends [UIAObject](UIAObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

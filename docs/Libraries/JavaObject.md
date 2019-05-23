@@ -2,7 +2,9 @@
 
 Standard Java (AWT, Swing) Object.
  
-Extends SeSSimulatedObject.
+UI element class: regex:.*
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

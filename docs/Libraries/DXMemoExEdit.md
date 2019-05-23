@@ -2,9 +2,11 @@
 
 DevXpress MemoExEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.MemoExEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

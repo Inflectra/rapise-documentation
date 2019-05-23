@@ -2,9 +2,11 @@
 
 DevXpress ButtonEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.ButtonEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

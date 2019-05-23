@@ -1,8 +1,10 @@
 # NavButtonPad
 
-Extends ManagedObject.
+UI element class: LSRetail.NAV.POSControls.ButtonPad
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

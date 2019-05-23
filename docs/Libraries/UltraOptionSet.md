@@ -2,9 +2,11 @@
 
 Infragistics UltraOptionSet
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinEditors.UltraOptionSet
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

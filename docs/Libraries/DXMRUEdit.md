@@ -2,9 +2,11 @@
 
 DevXpress MRUEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.MRUEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

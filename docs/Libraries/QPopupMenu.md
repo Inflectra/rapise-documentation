@@ -2,9 +2,9 @@
 
 This is generic Qt popup menu. Use DoClickItem to click a particular item from the menu.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="QPopup" styleclass="Normal" translate="true">QPopup</link>.
+Extends [QPopup](QPopup.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

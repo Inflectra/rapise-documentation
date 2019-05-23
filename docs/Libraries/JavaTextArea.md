@@ -2,9 +2,11 @@
 
 Java Text Area.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="JavaObject" styleclass="Normal" translate="true">JavaObject</link>.
+UI element class: java.awt.TextArea
 
-Extends SeSSimulatedObject.
+Extends [JavaObject](JavaObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

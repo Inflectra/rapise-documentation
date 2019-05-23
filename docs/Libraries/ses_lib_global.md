@@ -14,8 +14,6 @@
 
 - [NeoLoad](NeoLoad.md)
 
-- [Ocr](Ocr.md)
-
 - [Screenshot](Screenshot.md)
 
 - [SeSReportException](SeSReportException.md)

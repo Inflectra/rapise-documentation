@@ -2,9 +2,11 @@
 
 DevXpress TrackBarControl.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.TrackBarControl
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

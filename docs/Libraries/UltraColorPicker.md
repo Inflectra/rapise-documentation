@@ -2,8 +2,10 @@
 
 Infragistics UltraColorPicker
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinEditors.UltraColorPicker
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

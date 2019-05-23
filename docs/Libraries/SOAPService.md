@@ -2,7 +2,7 @@
 
 This behavior pattern implements SOAP service client.
  
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

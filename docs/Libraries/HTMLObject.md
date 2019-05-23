@@ -2,7 +2,7 @@
 
 This object contains actions and properties for DOM elements of Web page.
  
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="SeSSimulatedObject" styleclass="Normal" translate="true">SeSSimulatedObject</link>.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -515,7 +515,7 @@ Returns n-th child (zero-based).
 
 **Returns:**
 
-Object: n-th child.
+SeSObject: n-th child.
 
 
 
@@ -554,7 +554,7 @@ Creates a clone of this object converted to a requested type.
 
 **Returns:**
 
-Object: New Object of requested type or HTMLObject if type not found, null if error occur.
+SeSObject: New Object of requested type or HTMLObject if type not found, null if error occur.
 
 
 
@@ -578,7 +578,7 @@ Returns parent element (if any) with given attribute matching given string or 'r
 
 **Returns:**
 
-Object: Matched element or 'null'.
+SeSObject: Matched element or 'null'.
 
 
 
@@ -601,7 +601,7 @@ Returns specified attribute.
 
 **Returns:**
 
-Object: Attribute value.
+object: Attribute value.
 
 
 
@@ -633,7 +633,7 @@ Returns next sibling element for this one.
 
 **Returns:**
 
-Object: Next sibling element.
+SeSObject: Next sibling element.
 
 
 
@@ -649,7 +649,7 @@ Returns parent element having this element.
 
 **Returns:**
 
-Object: Parent element.
+SeSObject: Parent element.
 
 
 
@@ -665,7 +665,7 @@ Return previous sibling element for this one.
 
 **Returns:**
 
-Object: Previous sibling element.
+SeSObject: Previous sibling element.
 
 
 
@@ -727,7 +727,7 @@ Returns Root element having this element.
 
 **Returns:**
 
-Object: Root element having this element.
+SeSObject: Root element having this element.
 
 
 
@@ -751,7 +751,7 @@ Makes sure specified element is visible on the screen.
 
 **Returns:**
 
-Object: Rectangle of the element if it became visible, 'null' otherwise.
+object: Rectangle of the element if it became visible, 'null' otherwise.
 
 
 
@@ -767,7 +767,7 @@ Finds screen rectangle for this object.
 
 **Returns:**
 
-Object: Object {x, y, w, h}
+object: object {x, y, w, h}
 
 
 

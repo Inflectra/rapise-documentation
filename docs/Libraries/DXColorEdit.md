@@ -2,9 +2,11 @@
 
 DevXpress ColorEdit.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.ColorEdit
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -1,8 +1,6 @@
 # iOSWebView
 
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="iOSObject" styleclass="Normal" translate="true">iOSObject</link>.
-
-Extends SeSSimulatedObject.
+Extends [iOSObject](iOSObject.md)
 
 
 

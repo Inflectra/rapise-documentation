@@ -2,9 +2,11 @@
 
 Telerik RadMaskedEditBox.
  
-Extends ManagedTextBox.
+UI element class: Telerik.WinControls.UI.RadMaskedEditBox
 
-Extends SeSSimulatedObject.
+Extends [ManagedTextBox](ManagedTextBox.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

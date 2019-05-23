@@ -2,9 +2,11 @@
 
 DevXpress SimpleButton.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.SimpleButton
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

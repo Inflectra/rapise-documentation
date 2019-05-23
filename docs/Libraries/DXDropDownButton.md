@@ -2,9 +2,11 @@
 
 DevXpress DropDownButton.
  
-Extends ManagedObject.
+UI element class: DevExpress.XtraEditors.DropDownButton
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

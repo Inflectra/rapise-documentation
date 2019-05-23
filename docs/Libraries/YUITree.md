@@ -2,9 +2,9 @@
 
 YUI Tree.
  
-Extends HTMLObject.
+Extends [HTMLObject](HTMLObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -244,7 +244,7 @@ Finds child node by its path from the current node and remembers it as the curre
 
 **Returns:**
 
-HTMLObject: HTMLObject of the found node
+[HTMLObject](HTMLObject.md): HTMLObject of the found node
 
 
 
@@ -270,7 +270,7 @@ Searches for specific node in the tree and remembers it as the current node.
 
 **Returns:**
 
-HTMLObject: HTMLObject of the found node
+[HTMLObject](HTMLObject.md): HTMLObject of the found node
 
 
 

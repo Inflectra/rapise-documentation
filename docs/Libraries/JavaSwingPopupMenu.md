@@ -1,8 +1,10 @@
 # JavaSwingPopupMenu
 
-Extends <link displaytype="text" defaultstyle="true" type="topiclink" href="JavaObject" styleclass="Normal" translate="true">JavaObject</link>.
+UI element class: javax.swing.JPopupMenu
 
-Extends SeSSimulatedObject.
+Extends [JavaObject](JavaObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

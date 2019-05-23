@@ -2,7 +2,9 @@
 
 Generic .NET Managed Object.
  
-Extends SeSSimulatedObject.
+UI element class: regex:.*
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -1,6 +1,6 @@
 # SimpleText
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

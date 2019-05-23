@@ -1,7 +1,5 @@
 # ActiveXObject
 
-Extends eSAutoDetectBaseRul.
-
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

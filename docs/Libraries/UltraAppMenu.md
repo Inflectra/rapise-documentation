@@ -1,7 +1,9 @@
 # UltraAppMenu
 
 UltraAppMenu
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinToolbars.ApplicationMenuControlTrusted
+
+Extends [ManagedObject](ManagedObject.md)
 
 
 

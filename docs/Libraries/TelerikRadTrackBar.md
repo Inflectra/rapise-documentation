@@ -2,9 +2,11 @@
 
 Telerik RadTrackBar (slider).
  
-Extends ManagedObject.
+UI element class: Telerik.WinControls.UI.RadTrackBar
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

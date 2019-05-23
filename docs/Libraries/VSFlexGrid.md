@@ -2,9 +2,9 @@
 
 This behavior pattern implements standard behavior for Grid control.
  
-Extends ActiveXObject.
+Extends [ActiveXObject](ActiveXObject.md)
 
-Extends SeSSimulatedObject.
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

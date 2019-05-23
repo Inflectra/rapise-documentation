@@ -2,9 +2,11 @@
 
 Infragistics UltraProgressBar.
  
-Extends ManagedObject.
+UI element class: Infragistics.Win.UltraWinProgressBar.UltraProgressBar
 
-Extends SeSSimulatedObject.
+Extends [ManagedObject](ManagedObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 

@@ -1,8 +1,6 @@
 # iOSObject
 
 iOS Object.
- 
-Extends SeSSimulatedObject.
 
 
 
