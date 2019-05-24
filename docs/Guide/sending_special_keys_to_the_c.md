@@ -2,15 +2,11 @@
 
 ## Overview
 
-You can use the 
+You can use the [Global.DoSendKeys](/Libraries/Global/#DoSendKeys) action to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. `Page Down`, or `CTRL + Key`). This article explains the way to do this.
 
-```javascript
-Global.DoSendKeys('...');
-```
+![DoSendKeys Demo](./img/global_dosendkeys.gif)
 
-command in Rapise to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. `Page Down`, or `CTRL + Key`). This article explains the way to do this.
-
-## Information and Examples
+## Special Characters
 
 To send special characters, you just use the list available in the Windows API `SendKeys.Send` function:
 
@@ -61,16 +57,62 @@ To specify characters that aren't displayed when you press a key, such as `ENTER
 | Keypad multiply                        | {MULTIPLY}                          |
 | Keypad divide                          | {DIVIDE}                            |
 
-For example, to send the `ENTER` keypress, just use:
-
-```javascript
-Global.DoSendKeys('{ENTER}');
-```
+## SHIFT, CTRL and ALT
 
 To specify keys combined with any combination of the SHIFT, CTRL, and ALT keys, precede the key code with one or more of the following codes:
 
 | **Key**   | **Code**  |
 | --------- | --------- |
 | SHIFT     | +         |
-| CTRL      | \^        |
+| CTRL      | ^         |
 | ALT       | %         |
+
+## Example
+
+In this example Rapise sends various key combinations to Windows Notepad.
+
+> Note: [Global.DoSleep](/Libraries/Global/#DoSleep) is used to slow down test execution and make test steps visible.
+
+**RVL version**
+
+![DoSendKeys in RVL](./img/dosendkeys_rvl.png)
+
+**JavaScript version**
+
+```javascript
+// Launch notepad
+Global.DoLaunch("notepad.exe");
+// Set focus to notepad
+ActivateNotepad();
+Global.DoSleep(1000);
+// Send text to the application
+Global.DoSendKeys("Hello World!");
+Global.DoSleep(1000);
+// Select all text by passing CTRL+a key combination
+Global.DoSendKeys("^a");
+Global.DoSleep(1000);
+// Send DELETE key
+Global.DoSendKeys("{DEL}");
+Global.DoSleep(1000);
+// Send two lines of text
+Global.DoSendKeys("First line{ENTER}Second line{ENTER}");
+Global.DoSleep(1000);
+// Send a series of charcaters with SHIFT key pressed
+Global.DoSendKeys("+(abcdefg)");
+Global.DoSleep(1000);
+// Close notepad
+Global.DoKillByPid();
+```
+
+To run RVL or JavaScript version of this example place the following function to User.js.
+
+```javascript
+function ActivateNotepad()
+{
+    var wnd = g_util.FindWindow("regex:.*", "Untitled - Notepad");
+    if (wnd)
+    {
+        wnd.SetFocus();
+    }
+}
+```

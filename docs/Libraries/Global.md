@@ -470,15 +470,10 @@ Sends series of keystrokes to a currently focused application.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| keys | string |	Keystrokes as described in the MSDN Article for SendKeys. |
+| keys | string |	Keystrokes, including special characters and control symbols. |
 
 
 
-
-
-See:
-
-<a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a>
 
 
 <a name="see.also.global.dosendkeys"></a>

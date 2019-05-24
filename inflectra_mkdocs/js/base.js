@@ -350,8 +350,8 @@ var annotations =
         name: "global.dosendkeys",
         refs: [
             {
-                text: "KB85:  Sending Special Keys to the Current Applications",
-                link: "https://www.inflectra.com/Support/KnowledgeBase/KB85.aspx"
+                text: "Sending Special Keys to the current applications",
+                link: "/Guide/sending_special_keys_to_the_c/"
             }
         ]
     },
