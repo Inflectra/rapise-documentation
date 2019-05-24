@@ -2916,19 +2916,18 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#sending-special-keys-to-the-current-application">Sending Special Keys to the Current Application</a></li>
             <li><a href="#overview">Overview</a></li>
-            <li><a href="#information-and-examples">Information and Examples</a></li>
+            <li><a href="#special-characters">Special Characters</a></li>
+            <li><a href="#shift-ctrl-and-alt">SHIFT, CTRL and ALT</a></li>
+            <li><a href="#example">Example</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h1 id="sending-special-keys-to-the-current-application">Sending Special Keys to the Current Application</h1>
 <h2 id="overview">Overview</h2>
-<p>You can use the </p>
-<pre><code class="javascript">Global.DoSendKeys('...');
-</code></pre>
-
-<p>command in Rapise to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. <code>Page Down</code>, or <code>CTRL + Key</code>). This article explains the way to do this.</p>
-<h2 id="information-and-examples">Information and Examples</h2>
+<p>You can use the <a href="/Libraries/Global/#DoSendKeys">Global.DoSendKeys</a> action to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. <code>Page Down</code>, or <code>CTRL + Key</code>). This article explains the way to do this.</p>
+<p><img alt="DoSendKeys Demo" src="../img/global_dosendkeys.gif" /></p>
+<h2 id="special-characters">Special Characters</h2>
 <p>To send special characters, you just use the list available in the Windows API <code>SendKeys.Send</code> function:</p>
 <p><a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send%28v=vs.110%29.aspx">http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send(v=vs.110).aspx</a></p>
 <p>To specify characters that aren't displayed when you press a key, such as <code>ENTER</code> or <code>TAB</code>, and keys that represent actions rather than characters, use the codes in the following table:</p>
@@ -3102,10 +3101,7 @@
 </tr>
 </tbody>
 </table>
-<p>For example, to send the <code>ENTER</code> keypress, just use:</p>
-<pre><code class="javascript">Global.DoSendKeys('{ENTER}');
-</code></pre>
-
+<h2 id="shift-ctrl-and-alt">SHIFT, CTRL and ALT</h2>
 <p>To specify keys combined with any combination of the SHIFT, CTRL, and ALT keys, precede the key code with one or more of the following codes:</p>
 <table>
 <thead>
@@ -3121,14 +3117,56 @@
 </tr>
 <tr>
 <td>CTRL</td>
-<td>\^</td>
+<td>^</td>
 </tr>
 <tr>
 <td>ALT</td>
 <td>%</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<h2 id="example">Example</h2>
+<p>In this example Rapise sends various key combinations to Windows Notepad.</p>
+<blockquote>
+<p>Note: <a href="/Libraries/Global/#DoSleep">Global.DoSleep</a> is used to slow down test execution and make test steps visible.</p>
+</blockquote>
+<p><strong>RVL version</strong></p>
+<p><img alt="DoSendKeys in RVL" src="../img/dosendkeys_rvl.png" /></p>
+<p><strong>JavaScript version</strong></p>
+<pre><code class="javascript">// Launch notepad
+Global.DoLaunch(&quot;notepad.exe&quot;);
+// Set focus to notepad
+ActivateNotepad();
+Global.DoSleep(1000);
+// Send text to the application
+Global.DoSendKeys(&quot;Hello World!&quot;);
+Global.DoSleep(1000);
+// Select all text by passing CTRL+a key combination
+Global.DoSendKeys(&quot;^a&quot;);
+Global.DoSleep(1000);
+// Send DELETE key
+Global.DoSendKeys(&quot;{DEL}&quot;);
+Global.DoSleep(1000);
+// Send two lines of text
+Global.DoSendKeys(&quot;First line{ENTER}Second line{ENTER}&quot;);
+Global.DoSleep(1000);
+// Send a series of charcaters with SHIFT key pressed
+Global.DoSendKeys(&quot;+(abcdefg)&quot;);
+Global.DoSleep(1000);
+// Close notepad
+Global.DoKillByPid();
+</code></pre>
+
+<p>To run RVL or JavaScript version of this example place the following function to User.js.</p>
+<pre><code class="javascript">function ActivateNotepad()
+{
+    var wnd = g_util.FindWindow(&quot;regex:.*&quot;, &quot;Untitled - Notepad&quot;);
+    if (wnd)
+    {
+        wnd.SetFocus();
+    }
+}
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
@@ -3137,7 +3175,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "previous": 80, "help": 191, "next": 78};
+                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
