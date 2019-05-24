@@ -2161,6 +2161,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Libraries/QAbstractButton/</loc>
+     <lastmod>2019-05-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Libraries/QCheckBox/</loc>
      <lastmod>2019-05-24</lastmod>
      <changefreq>daily</changefreq>
@@ -2247,6 +2252,11 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Libraries/HTMLObject/</loc>
+     <lastmod>2019-05-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Libraries/Navigator/</loc>
      <lastmod>2019-05-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -2536,6 +2546,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Libraries/Session/</loc>
+     <lastmod>2019-05-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Libraries/RESTService/</loc>
      <lastmod>2019-05-24</lastmod>
      <changefreq>daily</changefreq>
@@ -2547,6 +2562,11 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Libraries/ses_lib_mobile/</loc>
+     <lastmod>2019-05-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Libraries/Android/</loc>
      <lastmod>2019-05-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -2637,6 +2657,11 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Libraries/AppiumWebElement/</loc>
+     <lastmod>2019-05-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Libraries/iOS/</loc>
      <lastmod>2019-05-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
