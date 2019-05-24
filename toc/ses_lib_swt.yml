@@ -2,7 +2,7 @@
 
 
 - 'SWT':
-    - 'SWT': 'Libraries/ses_lib_swt.md'
+    - 'SWT Objects': 'Libraries/ses_lib_swt.md'
 
     - 'SWTComboBox': 'Libraries/SWTComboBox.md'
 

@@ -2,7 +2,7 @@
 
 
 - 'DynamicsNAV':
-    - 'DynamicsNAV': 'Libraries/ses_lib_dynamicsnav.md'
+    - 'DynamicsNAV Objects': 'Libraries/ses_lib_dynamicsnav.md'
 
     - 'DynamicsNAVFastTabs': 'Libraries/DynamicsNAVFastTabs.md'
 

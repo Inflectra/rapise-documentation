@@ -2,7 +2,7 @@
 
 
 - 'DomDynamicsAX':
-    - 'DomDynamicsAX': 'Libraries/ses_lib_dynamics365.md'
+    - 'DomDynamicsAX Objects': 'Libraries/ses_lib_dynamics365.md'
 
     - 'DomDynamicsAXActionSearch': 'Libraries/DomDynamicsAXActionSearch.md'
 

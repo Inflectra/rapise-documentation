@@ -2,7 +2,7 @@
 
 
 - 'Syncfusion':
-    - 'Syncfusion': 'Libraries/ses_lib_syncfusion.md'
+    - 'Syncfusion Objects': 'Libraries/ses_lib_syncfusion.md'
 
     - 'SyncfusionGrouping': 'Libraries/SyncfusionGrouping.md'
 

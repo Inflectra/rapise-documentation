@@ -2,7 +2,7 @@
 
 
 - 'DomDynamicsCrm':
-    - 'DomDynamicsCrm': 'Libraries/ses_lib_dynamicscrm.md'
+    - 'DomDynamicsCrm Objects': 'Libraries/ses_lib_dynamicscrm.md'
 
     - 'DomDynamicsCrmGrid': 'Libraries/DomDynamicsCrmGrid.md'
 

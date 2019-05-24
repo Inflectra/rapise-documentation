@@ -2,7 +2,7 @@
 
 
 - 'GWTExt':
-    - 'GWTExt': 'Libraries/ses_lib_gwtext.md'
+    - 'GWTExt Objects': 'Libraries/ses_lib_gwtext.md'
 
     - 'GWTExtComboBox': 'Libraries/GWTExtComboBox.md'
 

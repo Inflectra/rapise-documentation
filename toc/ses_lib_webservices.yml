@@ -2,8 +2,10 @@
 
 
 - 'Web Services':
-    - 'Web Services': 'Libraries/ses_lib_webservices.md'
+    - 'Web Services Objects': 'Libraries/ses_lib_webservices.md'
 
+    - 'Session': 'Libraries/Session.md'    
+    
     - 'RESTService': 'Libraries/RESTService.md'
 
     - 'SOAPService': 'Libraries/SOAPService.md'

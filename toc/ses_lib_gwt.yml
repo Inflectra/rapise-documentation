@@ -2,7 +2,7 @@
 
 
 - 'GWT':
-    - 'GWT': 'Libraries/ses_lib_gwt.md'
+    - 'GWT Objects': 'Libraries/ses_lib_gwt.md'
 
     - 'GWTCheckBox': 'Libraries/GWTCheckBox.md'
 

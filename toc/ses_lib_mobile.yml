@@ -2,8 +2,10 @@
 
 
 - 'Mobile':
-    - 'Mobile': 'Libraries/ses_lib_mobile.md'
+    - 'Mobile Objects': 'Libraries/ses_lib_mobile.md'
 
+    - 'Android': 'Libraries/Android.md'
+    
     - 'AndroidButton': 'Libraries/AndroidButton.md'
 
     - 'AndroidCheckBox': 'Libraries/AndroidCheckBox.md'
@@ -39,6 +41,8 @@
     - 'AppiumDriver': 'Libraries/AppiumDriver.md'
 
     - 'AppiumWebElement': 'Libraries/AppiumWebElement.md'
+    
+    - 'iOS': 'Libraries/iOS.md'
 
     - 'iOSButton': 'Libraries/iOSButton.md'
 

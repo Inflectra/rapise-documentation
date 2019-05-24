@@ -2,7 +2,7 @@
 
 
 - 'FarPoint':
-    - 'FarPoint': 'Libraries/ses_lib_farpoint.md'
+    - 'FarPoint Objects': 'Libraries/ses_lib_farpoint.md'
 
     - 'FarPointGrid': 'Libraries/FarPointGrid.md'
 

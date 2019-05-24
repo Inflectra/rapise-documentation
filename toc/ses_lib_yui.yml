@@ -2,7 +2,7 @@
 
 
 - 'YUI':
-    - 'YUI': 'Libraries/ses_lib_yui.md'
+    - 'YUI Objects': 'Libraries/ses_lib_yui.md'
 
     - 'YUIButtonMenu': 'Libraries/YUIButtonMenu.md'
 

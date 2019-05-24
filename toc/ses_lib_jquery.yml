@@ -2,7 +2,7 @@
 
 
 - 'jQuery':
-    - 'jQuery': 'Libraries/ses_lib_jquery.md'
+    - 'jQuery Objects': 'Libraries/ses_lib_jquery.md'
 
     - 'JQueryAccordion': 'Libraries/JQueryAccordion.md'
 

@@ -2,7 +2,7 @@
 
 
 - 'Managed':
-    - 'Managed': 'Libraries/ses_lib_managed.md'
+    - 'Managed Objects': 'Libraries/ses_lib_managed.md'
 
     - 'ManagedButton': 'Libraries/ManagedButton.md'
 

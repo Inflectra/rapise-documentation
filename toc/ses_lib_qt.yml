@@ -2,7 +2,9 @@
 
 
 - 'Qt':
-    - 'Qt': 'Libraries/ses_lib_qt.md'
+    - 'Qt Objects': 'Libraries/ses_lib_qt.md'
+
+    - 'QAbstractButton': 'Libraries/QAbstractButton.md'
 
     - 'QCheckBox': 'Libraries/QCheckBox.md'
 

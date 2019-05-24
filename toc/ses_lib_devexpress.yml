@@ -2,7 +2,7 @@
 
 
 - 'DevExpress':
-    - 'DevExpress': 'Libraries/ses_lib_devexpress.md'
+    - 'DevExpress Objects': 'Libraries/ses_lib_devexpress.md'
 
     - 'DXButtonEdit': 'Libraries/DXButtonEdit.md'
 

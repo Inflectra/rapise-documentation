@@ -1,5 +1,5 @@
 - 'Generic':
-    - 'Generic': 'Libraries/ses_lib_generic.md'
+    - 'Generic Objects': 'Libraries/ses_lib_generic.md'
     - 'SeSSimulatedObject': 'Libraries/SeSSimulatedObject.md'
     - 'Win32Button': 'Libraries/Win32Button.md'
     - 'Win32CheckButton': 'Libraries/Win32CheckButton.md'

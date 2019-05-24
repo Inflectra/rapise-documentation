@@ -2,7 +2,7 @@
 
 
 - 'DynamicsAX':
-    - 'DynamicsAX': 'Libraries/ses_lib_dynamicsax.md'
+    - 'DynamicsAX Objects': 'Libraries/ses_lib_dynamicsax.md'
 
     - 'DynamicsAXAddressBar': 'Libraries/DynamicsAXAddressBar.md'
 

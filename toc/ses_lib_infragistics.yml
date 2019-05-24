@@ -2,7 +2,7 @@
 
 
 - 'Infragistics':
-    - 'Infragistics': 'Libraries/ses_lib_infragistics.md'
+    - 'Infragistics Objects': 'Libraries/ses_lib_infragistics.md'
 
     - 'AnimationControl': 'Libraries/AnimationControl.md'
 

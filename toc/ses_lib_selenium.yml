@@ -2,7 +2,7 @@
 
 
 - 'Selenium':
-    - 'Selenium': 'Libraries/ses_lib_selenium.md'
+    - 'Selenium Objects': 'Libraries/ses_lib_selenium.md'
 
     - 'Actions': 'Libraries/Actions.md'
 

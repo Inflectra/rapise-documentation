@@ -2,7 +2,7 @@
 
 
 - 'UIAutomation':
-    - 'UIAutomation': 'Libraries/ses_lib_uiautomation.md'
+    - 'UIAutomation Objects': 'Libraries/ses_lib_uiautomation.md'
 
     - 'UIAButton': 'Libraries/UIAButton.md'
 

@@ -2,7 +2,7 @@
 
 
 - 'ActiveX':
-    - 'ActiveX': 'Libraries/ses_lib_activex.md'
+    - 'ActiveX Objects': 'Libraries/ses_lib_activex.md'
 
     - 'ActiveXObject': 'Libraries/ActiveXObject.md'
 
@@ -22,7 +22,7 @@
 
 
 - 'ActiveXC1':
-    - 'ActiveXC1': 'Libraries/ses_lib_activex.md'
+    - 'ActiveXC1 Objects': 'Libraries/ses_lib_activex.md'
 
     - 'C1TrueDBGrid': 'Libraries/C1TrueDBGrid.md'
 
@@ -32,7 +32,7 @@
 
 
 - 'ActiveXSft':
-    - 'ActiveXSft': 'Libraries/ses_lib_activex.md'
+    - 'ActiveXSft Objects': 'Libraries/ses_lib_activex.md'
 
     - 'SftTree': 'Libraries/SftTree.md'
 

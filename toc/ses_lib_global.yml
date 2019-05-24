@@ -1,5 +1,5 @@
 - 'Global':
-    - 'Global': 'Libraries/ses_lib_global.md'
+    - 'Global Objects': 'Libraries/ses_lib_global.md'
     - 'Android': 'Libraries/Android.md'
     - 'Database': 'Libraries/Database.md'
     - 'File': 'Libraries/File.md'

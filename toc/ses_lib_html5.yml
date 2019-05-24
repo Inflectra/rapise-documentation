@@ -2,7 +2,7 @@
 
 
 - 'HTML5':
-    - 'HTML5': 'Libraries/ses_lib_html5.md'
+    - 'HTML5 Objects': 'Libraries/ses_lib_html5.md'
 
     - 'HTML5Number': 'Libraries/HTML5Number.md'
 
