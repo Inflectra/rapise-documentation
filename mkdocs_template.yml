@@ -71,6 +71,7 @@ pages:
             - 'Command Line': 'Guide/command_line.md'
             - 'Object Locator': 'Guide/object_locator.md'
         - 'Taking Screenshots': 'Guide/screenshots.md'
+        - 'Data-Driven Testing': 'Guide/ddt.md'
         - 'Automated Reporting':
             - 'Automated Reporting': 'Guide/automated_reporting.md'
             - 'Writing to the Report': 'Guide/writing_to_the_report.md'

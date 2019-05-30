@@ -68,6 +68,7 @@
 
 ## Featured Topics
 
+- [Data-Driven Testing](/Guide/ddt/)
 - [SpiraTest Integration](/Guide/spiratest_integration/)
 - [Jenkins Integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx)
 - [TFS Integration](/Guide/visual_studio/)
