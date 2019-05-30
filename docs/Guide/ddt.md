@@ -114,7 +114,7 @@ Description of all Spreadsheet actions and properties is available [here](/Libra
 
 Open `UsingSpreadsheet` sample test from the start page to see a working example (scroll the list of samples down).
 
-<img src="/Guide/img/ddt_sampletest.png" width="1121" />
+<img src="/Guide/img/ddt_sampletest.png" width="1177" />
 
 ## See Also
 
