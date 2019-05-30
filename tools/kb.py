@@ -26,7 +26,7 @@ def extract_kbs():
                 text = wspace_regex.sub(" ", text)
             else:
                 text = ""
-            output.write("### [" + kbno + "](" + href + ") " + title + "\n\n")
+            output.write("### <a onclick=\"return RegisterKbClick('" + kbno + "', '" + title + "')\" target=\"_blank\"  href=\"" + href + "\">" + kbno + "</a> " + title + "\n\n")
             output.write(text + "\n\n")
 
 extract_kbs()

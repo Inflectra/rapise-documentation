@@ -695,6 +695,15 @@ function RegisterKeywordSearch()
     }   
 }
 
+function RegisterKbClick(id, title)
+{
+    if (typeof ga != "undefined")
+    {
+        ga('send', 'event', 'KB', 'click', id + ' ' + title);
+    }
+    return true;
+}
+
 $(document).ready(function() {
 
     RapiseAnnotateDocument(annotations);
