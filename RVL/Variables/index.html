@@ -1001,6 +1001,10 @@
 </li>
                                     
 <li >
+    <a href="../Sheets/">Sheets</a>
+</li>
+                                    
+<li >
     <a href="../Columns/">Columns</a>
 </li>
                                     
@@ -1038,6 +1042,10 @@
                                     
 <li >
     <a href="../Loops/">Loops</a>
+</li>
+                                    
+<li >
+    <a href="../Preamble/">Preamble</a>
 </li>
                                 </ul>
                             </li>
@@ -2980,6 +2988,10 @@
 </tbody>
 </table>
 <h2 id="assigning">Assigning</h2>
+<h3 id="default-value-for-global-variable">Default Value for Global Variable</h3>
+<p>Special parameter name <code>defaultValue</code> of the Global variable definition allows setting default value. This may be needed when you don't know if variable was set before calling this script. So the value will only be assigned is variable is currently undefined. Otherwise the Variable keeps its defined value.</p>
+<p><img alt="defaultValue" src="../img/RVL_Variable_DefaultValue.png" /></p>
+<p>This helps to make sheets using global variables to be executable standalone. I.e. you may use <a href="../../Guide/rvl_editor/#context-menu">Play This Sheet</a> in RVL and be sure that Global variable will have a value.</p>
 <h3 id="assignment-expression">Assignment Expression</h3>
 <p>This line declares and assigns value <em>5</em> to a variable <code>MyVar2</code>:</p>
 <table>
@@ -3318,7 +3330,7 @@ var globalVar = &quot;Value&quot;;
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"next": 78, "help": 191, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
