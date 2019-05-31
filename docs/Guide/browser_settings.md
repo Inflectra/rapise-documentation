@@ -1,10 +1,18 @@
 # Browser Settings Dialog
 
-## Purpose
+## Web Browser Profile
 
-This dialog box displays the list of native (not using [Selenium](selenium_settings_dialog.md)) web browsers that have been configured for use by Rapise and lets you create a new browser profile, modify a profile or make a new profile based on an existing one.
+Use Browser Settings Dialog to configure `Web Browser Profiles`. A browser profile specifies
 
-This feature is useful if you have several different versions of a web browser on the same machine (e.g. Firefox Latest vs. Firefox ESR, or different versions of Chrome portable) or if you want to be able to run a browser with different command-line options (e.g. Chrome normal, Chrome incognito mode, Chrome with specific screen size)
+- type of a browser (**IE**, **Chrome**, **Firefox**),
+- browser launch parameters
+- and other profile options.
+  
+Rapise uses currently [active browser profile](cross_browser_testing.md) to do recording and playback.
+
+> You may want to create additional browser profiles if you have several different versions of a web browser on the same machine (e.g. Firefox Latest vs. Firefox ESR, or different versions of Chrome portable) or if you want to be able to run a browser with different command-line options (e.g. Chrome normal, Chrome incognito mode, Chrome with specific screen size).
+
+Browser Settings Dialog box displays the list of native (not using [Selenium](selenium_settings_dialog.md)) web browsers that have been configured for use by Rapise and lets you create a new browser profile, modify a profile or make a new profile based on an existing one.
 
 ![browser_settings](./img/browser_settings1.png)
 

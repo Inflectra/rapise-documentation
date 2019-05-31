@@ -1,8 +1,10 @@
 # Mobile Settings Dialog
 
-## Purpose
+## Mobile Profiles
 
-This dialog box displays the list of mobile devices that have been configured for use by Rapise and lets you create a new profile, modify a profile or make a new profile based on an existing one.
+Use Mobile Settings Dialog to configure `Mobile Profiles`. A mobile profile specifies how to connect to a simulator or device via [Appium](http://appium.io/). You may configure as many profiles as you need to run your tests on different devices.
+
+Mobile Settings Dialog box displays the list of mobile profiles that have been configured for use by Rapise and lets you create a new profile, modify a profile or make a new profile based on an existing one.
 
 ![mobile\_settings\_dialog](./img/mobile_settings_dialog1.png)
 

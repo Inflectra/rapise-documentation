@@ -1,8 +1,10 @@
 # Selenium Settings Dialog
 
-## Purpose
+## Selenium Profiles
 
-This dialog box displays the list of Selenium targets that have been configured for use by Rapise and lets you create a new profile, modify a profile or make a new profile based on an existing one.
+Rapise can [playback web tests](cross_browser_testing.md) on Selenium nodes. Configure each Selenium node you need for testing in a separate profile using Selenium Settings Dialog.
+
+This dialog box displays the list of Selenium Profiles and lets you create a new profile, modify a profile or make a new profile based on an existing one.
 
 ![selenium\_settings](./img/selenium_webdriver2.png)
 
