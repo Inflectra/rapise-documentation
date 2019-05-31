@@ -18,8 +18,8 @@ The last 3 columns in the RVL table are used for passing parameters:
 * * `objectid` - ID of one of the learned Objects.
 * 7th column - *ParamValue* - a value that is acceptable for the specified *ParamType*. For `boolean` it is `true` or `false`. For `number` is is any floating point number (i.e. `3.14`). For `string`, any text without quotes or escape signs.
 
-
 ## Param Rows
+
 In RVL each parameter takes one row:
 
 ...|*Type*| ...| *ParamName* | *ParamType*|*ParamValue*
@@ -30,6 +30,7 @@ In RVL each parameter takes one row:
 ...|Param |    |  forceEvent | boolean    | true
 
 ## Param Arrays
+
 Some methods accept arrays of values as input values. For example `Tester.Message` may take its 1st `message` parameter as an array and prints them combined. Making an array is easy, several consequent parameters having the same name are combined into an array, i.e.:
 
 *Flow*|*Type* |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
@@ -43,41 +44,49 @@ Should report a message like:
 
     MyVar1 value: 25 MyVar2 value: 33
 
+## Extra Parameters
+
+Several functions of the [RVL Object](../Libraries/RVL.md) support variable parameters ([`RVL.DoPlaySheet`](RVL_DoPlaySheet.md), ([`RVL.DoPlayScript`](RVL_DoPlayScript.md), [`RVL.SetLocatorOpts`](RVL_SetLocatorOpts.md), `RVL.FormatString` and [`RVL.DoPlayTestParallel`](RVL_DoPlayTestParallel.md)) support extra parameters.
+
+Custom parameters added by user manually, by specifying row type `Param` and assigning any required param name.
+
+![Extra Parameters](img/Params_ExtraParams.png)
+
+There my be as many extra parameters as needed.
 
 ## Mixed Rows
+
 In some cases it is convenient to mix parameter cells with an *Action* or *Condition*. 
 
 For example, the 1st parameter of an *Action* may share the `Action` row:
 
 *Flow*|*Type* |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
 :--  |:--     |:--         |:--         |:--          |:--         |:--
-     | Action | MyButton   | DoClick    |  **x**      | **number** | **5**           
-     | Param  |            |            |  y          | number     | 7           
+     | Action | MyButton   | DoClick    |  **x**      | **number** | **5**
+     | Param  |            |            |  y          | number     | 7
 
 And this is equivalent to putting it in the next row:
 
 *Flow*|*Type* |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
 :--  |:--     |:--         |:--         |:--          |:--         |:--
-     | Action | MyButton   | DoClick    |             |            |            
-     | Param  |            |            |  **x**      | **number** | **5**           
-     | Param  |            |            |  y          | number     | 7           
-
-
+     | Action | MyButton   | DoClick    |             |            | 
+     | Param  |            |            |  **x**      | **number** | **5**
+     | Param  |            |            |  y          | number     | 7
 
 Or `param2` of the [condition](Conditions.md) may be on the same row:
 
 ... |*Type*      |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
 :-  |:--         |:--         |:--         |:--          |:--         |:--
-    | Param      |            |            |  param1     | string     | Text1           
+    | Param      |            |            |  param1     | string     | Text1
     | Condition  |            | param1!=param2  |  **param2**     | **string**     | **Text2**  
 
 Which is equivalent to:
 
 ... |*Type*      |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
 :-  |:--         |:--         |:--         |:--          |:--         |:--
-    | Param      |            |            |  param1     | string     | Text1           
-    | Condition  |            | param1!=param2  |             |            |            
-    | Param      |            |            |  **param2**     | **string**     | **Text2**       
+    | Param      |            |            |  param1     | string     | Text1
+    | Condition  |            | param1!=param2  |             |            | 
+    | Param      |            |            |  **param2**     | **string**     | **Text2**
 
 
 This allows saving space while keeping same readability. See also [short condition syntax](Conditions.md#short-condition-syntax) for real live example of mixed rows usage.

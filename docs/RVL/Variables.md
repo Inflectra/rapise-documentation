@@ -14,6 +14,14 @@ This line declares a variable without any values. Its value may be assigned late
 
 ## Assigning
 
+### Default Value for Global Variable
+
+Special parameter name `defaultValue` of the Global variable definition allows setting default value. This may be needed when you don't know if variable was set before calling this script. So the value will only be assigned is variable is currently undefined. Otherwise the Variable keeps its defined value.
+
+![defaultValue](img/RVL_Variable_DefaultValue.png)
+
+This helps to make sheets using global variables to be executable standalone. I.e. you may use [Play This Sheet](../Guide/rvl_editor.md#context-menu) in RVL and be sure that Global variable will have a value.
+
 ### Assignment Expression
 
 This line declares and assigns value *5* to a variable `MyVar2`:
