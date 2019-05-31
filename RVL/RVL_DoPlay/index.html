@@ -2949,35 +2949,23 @@
 <pre><code class="javascript">DoPlayScript(/**String*/scriptPath, /**String*/sheetName)
 </code></pre>
 
-<p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code>.</p>
-<ul>
-<li>
-<p><code>scriptPath</code> {/*<em>string</em>/}: Path to script</p>
-</li>
-<li>
-<p><code>sheetName</code> {/*<em>string</em>/}: Excel sheet containing the script</p>
-</li>
-<li>
-<p><strong>[extraParams]</strong>: default variable values</p>
-</li>
-</ul>
+<p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code>.
+-    <code>scriptPath</code> {/<strong>string*/}: Path to script
+-    <code>sheetName</code> {/</strong>string*/}: Excel sheet containing the script
+-    <strong>[extraParams]</strong>: default variable values</p>
 <pre><code class="javascript">DoPlaySheet(/**String*/sheetName)
 </code></pre>
 
 <p>Play RVL sheet <code>sheetName</code> from current workbook.</p>
 <ul>
-<li>
-<p><code>sheetName</code> {/*<em>string</em>/}: Excel sheet containing the script</p>
-</li>
-<li>
-<p><strong>[extraParams]</strong>: default variable values</p>
-</li>
+<li><code>sheetName</code> {/*<em>string</em>/}: Excel sheet containing the script</li>
+<li><strong>[extraParams]</strong>: default variable values</li>
 </ul>
 <h2 id="passing-input-parameters">Passing Input Parameters</h2>
 <p><a href="../Params/#extra-parameters">Extra parameters</a> <strong>[extraParams]</strong> used in these calls are default values for local variables defined in the destination scripts.</p>
 <p>So the following call:</p>
 <p><img alt="Extra Params Call" src="../img/RVL_DoPlay_ExtraParams.png" /></p>
-<p>passes <code>User=ExtUser</code>, <code>Password=ExtPassword</code>, <code>OtherVarName=somevalue</code> to the destination script. It may now be used as follows:</p>
+<p>Passes <code>User=ExtUser</code>, <code>Password=ExtPassword</code>, <code>OtherVarName=somevalue</code> to the destination script. It may now be used as follows:</p>
 <p><img alt="Extra Param Values" src="../img/RVL_DoPlay_ExtraParams_Values.png" /></p>
 <p>So local variable <code>User</code> is assigned to value <code>ExtUser</code> when called. However, if you play this sheet using <code>Play Sheet</code> then this variable would have value <code>DefUser</code>.</p>
 <p>This helps to make sheets more universal: it should be possible to execute the sheet or any statement in a sheet alone as well as call it from outside and pass parameters.</p></div>
@@ -2989,7 +2977,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "search": 83, "previous": 80};
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
