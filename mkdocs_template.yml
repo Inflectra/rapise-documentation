@@ -233,6 +233,7 @@ pages:
       - 'About': 'Guide/visual_language.md'
       - 'Why RVL?': 'RVL/Overview.md'      
       - 'RVl Editor': 'Guide/rvl_editor.md'
+      - 'Sheets': 'RVL/Sheets.md'
       - 'Columns': 'RVL/Columns.md'
       - 'Comments': 'RVL/Comments.md'
       - 'Conditions': 'RVL/Conditions.md'
@@ -243,6 +244,7 @@ pages:
       - 'If Else': 'RVL/IfElse.md'
       - 'Maps': 'RVL/Maps.md'
       - 'Loops': 'RVL/Loops.md'
+      - 'Preamble': 'RVL/Preamble.md'
 - 'Libraries':
     #global
     - 'RVL':
