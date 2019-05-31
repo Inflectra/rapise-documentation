@@ -2,6 +2,8 @@
 
 RVL script may contain one or more sheets distributed over one or more workbooks.
 
+![Sheets](img/Sheets.png)
+
 Sheet is an atomic building block for implementing test frameworks and sharing logic.
 
 For example, there may be a Sheet called `Login` and it may be re-used by **CreateNewBook**, **CreateExistingBook**  and other test scenarios that require **Login** logic.

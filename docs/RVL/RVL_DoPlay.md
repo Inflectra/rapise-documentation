@@ -5,8 +5,11 @@ DoPlayScript(/**String*/scriptPath, /**String*/sheetName)
 ```
 
 Play RVL sheet `sheetName` from workbook `scriptPath`.
+
 -    `scriptPath` {/**string*/}: Path to script
+
 -    `sheetName` {/**string*/}: Excel sheet containing the script
+
 -    **[extraParams]**: default variable values
 
 ```javascript
@@ -16,6 +19,7 @@ DoPlaySheet(/**String*/sheetName)
 Play RVL sheet `sheetName` from current workbook.
 
 -    `sheetName` {/**string*/}: Excel sheet containing the script
+
 -    **[extraParams]**: default variable values
 
 ## Passing Input Parameters
@@ -26,7 +30,7 @@ So the following call:
 
 ![Extra Params Call](img/RVL_DoPlay_ExtraParams.png)
 
-Passes `User=ExtUser`, `Password=ExtPassword`, `OtherVarName=somevalue` to the destination script. It may now be used as follows:
+passes `User=ExtUser`, `Password=ExtPassword`, `OtherVarName=somevalue` to the destination script. It may now be used as follows:
 
 ![Extra Param Values](img/RVL_DoPlay_ExtraParams_Values.png)
 
