@@ -2949,10 +2949,10 @@
         <li class="main active"><a href="#samples-index">Samples Index</a></li>
             <li><a href="#activex">ActiveX</a></li>
             <li><a href="#analogrecorder">AnalogRecorder</a></li>
+            <li><a href="#crossbrowser">CrossBrowser</a></li>
             <li><a href="#dynamics-ax">Dynamics AX</a></li>
             <li><a href="#dynamics-crm">Dynamics CRM</a></li>
             <li><a href="#farpoint">FarPoint</a></li>
-            <li><a href="#html5">HTML5</a></li>
             <li><a href="#java">Java</a></li>
             <li><a href="#java-swt">Java SWT</a></li>
             <li><a href="#jquery-ui">jQuery-UI</a></li>
@@ -2962,7 +2962,6 @@
             <li><a href="#silverlight">Silverlight</a></li>
             <li><a href="#simulatedobject">SimulatedObject</a></li>
             <li><a href="#sampleatm">SampleATM</a></li>
-            <li><a href="#usingcustomstrings">UsingCustomStrings</a></li>
             <li><a href="#usingdatabase">UsingDatabase</a></li>
             <li><a href="#usingdllhandlermanaged">UsingDLLHandlerManaged</a></li>
             <li><a href="#usingdllhandlerunmanaged">UsingDLLHandlerUnManaged</a></li>
@@ -2982,42 +2981,50 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="samples-index">Samples Index</h1>
-<p>Rapise includes several sample tests that you are free to read, modify, copy and use.  They are located in: <em>RapiseDataDirectory\</em>Samples.  Unless you specified otherwise, the <em>RapiseDataDirectory</em> will be:
-<em>C:\Users\Public\Documents\Rapise</em>.</p>
+<p>Rapise includes several sample tests that you are free to read, modify, copy and use.  You can open the tests from the <a href="../start_page/">Start Page</a>.</p>
+<p>Sample tests are located in:</p>
+<pre><code>RapiseDataDirectory\Samples
+</code></pre>
+
+<p>Unless you specified otherwise, the <strong>RapiseDataDirectory</strong> will be:</p>
+<pre><code class="nohighlight">C:\Users\Public\Documents\Rapise
+</code></pre>
+
 <p>The sample tests are described below.</p>
 <h2 id="activex">ActiveX</h2>
 <p>These samples demonstrate the testing of Microsoft ActiveX / COM controls used in Visual Basic applications including the MSComCtl library. The samples include the <a href="/Libraries/msflexgrid/">Microsoft FlexGrid Control</a>, <a href="/Libraries/mscomctltoolbar/">MS Common Toolbar Control</a>, <a href="/Libraries/sstab/">Microsoft Tabbed Dialog Control</a>, <a href="/Libraries/tabstrip20/">TabStrip</a>, and Microsoft Windows Common Controls 6.0 [MSCOMCTL.OCX].</p>
 <h2 id="analogrecorder">AnalogRecorder</h2>
 <p>This sample demonstrates <a href="../analog_recording/">Analog Recording</a>.</p>
+<h2 id="crossbrowser">CrossBrowser</h2>
+<p>Simple web test you can <a href="../cross_browser_testing/">run on any browser</a>.</p>
 <h2 id="dynamics-ax">Dynamics AX</h2>
-<p>This sample demonstrates using Rapise to test an installation of <a href="../dynamics_ax/">Microsoft Dynamics AX</a> 2013 to perform some basic ERP functions.</p>
+<p>This sample demonstrates using Rapise to test an installation of <a href="../dynamics_ax/">Microsoft Dynamics AX</a> 2012 to perform some basic ERP functions.</p>
 <h2 id="dynamics-crm">Dynamics CRM</h2>
 <p>This sample demonstrates using Rapise to test an installation of <a href="../dynamics_crm/">Microsoft Dynamics CRM</a> to perform some basic contact management functions.</p>
 <h2 id="farpoint">FarPoint</h2>
 <p>This sample script demonstrates using the <a href="/Libraries/farpointgrid/">FarPoint library</a> to test the FarPoint SpreadSheet Control.</p>
-<h2 id="html5">HTML5</h2>
-<p>This sample tests a HTML5 application. This sample demonstrates the capabilities of the <strong>HTML5</strong> DOM browser library. The application under test contains various HTML5 specific controls, such as: color, date, datetime, email, range, progress, etc.
-The sample is also available online at <a href="http://www.libraryinformationsystem.org/Html5/AUTHTML5.htm">http://www.libraryinformationsystem.org/Html5/AUTHTML5.htm</a></p>
 <h2 id="java">Java</h2>
-<p>This sample tests a Java AWT/SWING application. This sample demonstrates the capabilities of the <strong>Java</strong> library. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, menu, etc.</p>
+<p>This sample tests a Java AWT/SWING application. This sample demonstrates the capabilities of the <a href="/Libraries/ses_lib_java/">Java library</a>. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, menu, etc.</p>
 <h2 id="java-swt">Java SWT</h2>
-<p>This sample tests a Java SWT/RCP application. This sample demonstrates the capabilities of the <strong>SWT</strong> and <strong>UIAutomation</strong> libraries. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, menu, etc.</p>
+<p>This sample tests a Java SWT/RCP application. This sample demonstrates the capabilities of the <a href="/Libraries/ses_lib_swt/">SWT</a> and <a href="/Libraries/ses_lib_uiautomation/">UIAutomation</a> libraries. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, menu, etc.</p>
 <h2 id="jquery-ui">jQuery-UI</h2>
-<p>This sample illustrates using the jQuery HTML DOM extension library that allows you to record/playback test scripts against web applications using widgets from the jQuery Javascript library framework.</p>
+<p>This sample illustrates using the <a href="/Libraries/ses_lib_jquery/">jQuery HTML DOM extension library</a> that allows you to record/playback test scripts against web applications using widgets from the jQuery Javascript library framework.</p>
 <h2 id="library-information-system">Library Information System</h2>
-<p>These tests can be used to test the sample library information system web application hosted at http://www.libraryinformationsystem.net. This is the same sample application used by <a href="../spiratest_integration/">SpiraTest</a> and illustrates how you can use <a href="../spiratest_integration/">SpiraTest</a> to manage and execute automated Rapise tests. A copy of these tests is also available in new installations of <a href="../spiratest_integration/">SpiraTest</a> v3.2+.</p>
+<h3 id="createnewbook-editexistingbook-createnewauthor-editexistingauthor">CreateNewBook, EditExistingBook, CreateNewAuthor, EditExistingAuthor</h3>
+<p>These tests can be used to test the sample library information system web application hosted at <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a>. This is the same sample application used by <a href="../spiratest_integration/">SpiraTest</a> and illustrates how you can use <a href="../spiratest_integration/">SpiraTest</a> to manage and execute automated Rapise tests. A copy of these tests is also available in new installations of <a href="../spiratest_integration/">SpiraTest</a> v3.2+.</p>
+<blockquote>
+<p>To see these tests on the <a href="../start_page/">Start Page</a> press the <strong>Fetch</strong> button at the top of the samples list.</p>
+</blockquote>
 <h2 id="managed">Managed</h2>
-<p>This sample tests a .NET 2.0 application. This sample demonstrates the capabilities of the <strong>Managed</strong> library. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, grid, listbox, listview, menu, etc.</p>
+<p>This sample tests a .NET 2.0 application. This sample demonstrates the capabilities of the <a href="/Libraries/ses_lib_managed/">Managed library</a>. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, grid, listbox, listview, menu, etc.</p>
 <h2 id="qtframework">QtFramework</h2>
 <p>TThis sample tests a sample <a href="../qt_framework_testing/">QT Framework</a> cross-platform application. This sample demonstrates the capabilities of the <a href="/Libraries/qwidget/">QtFramework library</a>. The application under test contains various standard Qt widgets, such as: button, edit, tree, combo box, etc.</p>
 <h2 id="silverlight">Silverlight</h2>
-<p>This sample tests a Silverlight web application. This sample demonstrates the capabilities of the <strong>UIAutomation</strong> library. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, menu, etc.</p>
+<p>This sample tests a Silverlight web application. This sample demonstrates the capabilities of the <a href="/Libraries/ses_lib_uiautomation/">UIAutomation library</a>. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, menu, etc.</p>
 <h2 id="simulatedobject">SimulatedObject</h2>
 <p>This sample opens <strong>MS Paint</strong> and draws on its canvas. It uses <a href="../simulated_objects/">Simulated Objects</a> and several related methods: <strong>DoMouseMove</strong>(X,Y), <strong>DoLButtonDown</strong>(), <strong>DoLButtonUp</strong>(), and <strong>DoSendKeys</strong>(text).</p>
 <h2 id="sampleatm">SampleATM</h2>
 <p>This sample tests an <strong>MFC</strong> application. You will also learn how to organize your test script in modular form, how to launch the AUT from your test script and how to execute various actions on GUI controls.</p>
-<h2 id="usingcustomstrings">UsingCustomStrings</h2>
-<p>This sample demonstrates how to integrate Rapise tests with other tools using Custom Custom Strings. <strong>TestFinish</strong>() is used to analyze and save test results.</p>
 <h2 id="usingdatabase">UsingDatabase</h2>
 <p>This example shows how you can use a relational (SQL) <strong>database</strong> to create <a href="../data_driven_testing/">Data-Driven</a> tests.  This script reads test case data from a spreadsheet ADO datasource to test <strong>Calculator</strong>.</p>
 <h2 id="usingdllhandlermanaged">UsingDLLHandlerManaged</h2>
@@ -3029,7 +3036,7 @@ The sample is also available online at <a href="http://www.libraryinformationsys
 <h2 id="usinginclude">UsingInclude</h2>
 <p>This sample demonstrates two ways to include external files/functions:</p>
 <ol>
-<li><strong>eval(g_helper.Include(...))</strong>: include a file with utility functions.</li>
+<li><strong>eval(File.Include(...))</strong>: include a file with utility functions.</li>
 <li><strong>SeSRunJSScript(...)</strong>: include and execute external function with its own object map.</li>
 </ol>
 <h2 id="usingmsaccess-usingmsexcel-usingmsword">UsingMSAccess, UsingMSExcel, UsingMSWord</h2>
@@ -3037,15 +3044,15 @@ The sample is also available online at <a href="http://www.libraryinformationsys
 <h2 id="usingmobile">UsingMobile</h2>
 <p>These samples demonstrate how to do the <a href="../mobile_testing2/">testing of mobile devices</a> running either <a href="../mobile_testing_ios/">Apple iOS</a> or <a href="../mobile_testing_android/">Android</a>.</p>
 <h2 id="usingregistry">UsingRegistry</h2>
-<p>This sample demonstrates usage of the windows registry.   The registry is queried to determine the OS (XP/2003/Vista, etc) and owner.</p>
+<p>This sample demonstrates usage of the Windows registry. The registry is queried to determine the OS (XP/2003/Vista, etc) and owner.</p>
 <h2 id="usingreporting">UsingReporting</h2>
 <p>This sample illustrates various <a href="../automated_reporting/">reporting</a> features:</p>
 <ol>
-<li>Regular reporting (<strong>Tester.Assert, Tester.Message</strong>)</li>
-<li>Custom attributes (<strong>Tester.SetReportAttribute, Tester.ResetReportAttribute</strong>)</li>
-<li>Stacked attributes (<strong>Tester.PushReportAttribute, Tester.PopReportAttribute</strong>)</li>
-<li>Nested Tests (<strong>Tester.BeginTest, Tester.EndTest</strong>)</li>
-<li>Inserting Links, Text and Images into the report (tags parameter, <strong>SeSReportText, SeSReportLink, SeSReportImage</strong>)</li>
+<li>Regular reporting (<a href="/Libraries/Tester/#Assert">Tester.Assert</a>, <a href="/Libraries/Tester/#Message">Tester.Message</a>)</li>
+<li>Custom attributes (<a href="/Libraries/Tester/#SetReportAttribute">Tester.SetReportAttribute</a>, <a href="/Libraries/Tester/#ResetReportAttribute">Tester.ResetReportAttribute</a>)</li>
+<li>Stacked attributes (<a href="/Libraries/Tester/#PushReportAttribute">Tester.PushReportAttribute</a>, <a href="/Libraries/Tester/#PopReportAttribute">Tester.PopReportAttribute</a>)</li>
+<li>Nested Tests (<a href="/Libraries/Tester/#BeginTest">Tester.BeginTest</a>, <a href="/Libraries/Tester/#EndTest">Tester.EndTest</a>)</li>
+<li>Inserting Links, Text and Images into the report (tags parameter, <a href="/Libraries/SeSReportText/">SeSReportText</a>, <a href="/Libraries/SeSReportLink/">SeSReportLink</a>, <a href="/Libraries/SeSReportImage/">SeSReportImage</a>)</li>
 </ol>
 <h2 id="usingselenium">UsingSelenium</h2>
 <p>This sample how you can use Rapise to write <a href="../selenium_webdriver/">Selenium WebDriver</a> based web application tests using the raw Selenium WebDriver API.</p>
@@ -3065,7 +3072,7 @@ The sample is also available online at <a href="http://www.libraryinformationsys
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "help": 191, "next": 78, "previous": 80};
+                shortcuts = {"search": 83, "previous": 80, "help": 191, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
