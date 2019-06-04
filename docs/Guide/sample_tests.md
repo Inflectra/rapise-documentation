@@ -4,7 +4,7 @@ Rapise includes several sample tests that you are free to read, modify, copy and
 
 Sample tests are located in:
 
-```
+```nohighlight
 RapiseDataDirectory\Samples
 ```
 
