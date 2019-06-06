@@ -456,4 +456,5 @@ For debugging and additional options when running the program, the following com
 
 ## See Also
 
+- [Using Rapise with SpiraTest (video)](https://youtu.be/5ybrBQOzez8)
 - [Data Driven Testing with Test Configurations](https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx)
