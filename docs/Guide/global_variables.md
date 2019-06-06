@@ -12,7 +12,7 @@ You should not place variables in the `Main.js`. Use `User.js` or any other `Com
 
 ### Using User.js
 
-Any variable defined in the `User.js` is assumed to be a local variable.
+Any variable defined in the `User.js` is assumed to be a global variable.
 
 ```javascript
 // Note, the variable should be declared outside the scope of any function to be global
