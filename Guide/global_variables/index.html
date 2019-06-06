@@ -2961,7 +2961,7 @@
 <p>You should not place variables in the <code>Main.js</code>. Use <code>User.js</code> or any other <code>Common</code> file for that.</p>
 <h2 id="usage">Usage</h2>
 <h3 id="using-userjs">Using User.js</h3>
-<p>Any variable defined in the <code>User.js</code> is assumed to be a local variable.</p>
+<p>Any variable defined in the <code>User.js</code> is assumed to be a global variable.</p>
 <pre><code class="javascript">// Note, the variable should be declared outside the scope of any function to be global
 var g_myGlobalVar = 5;
 
@@ -3015,7 +3015,7 @@ if(typeof(g_myGlobalVar)=='undefined') g_myGlobalVar = 5;
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"help": 191, "search": 83, "previous": 80, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
