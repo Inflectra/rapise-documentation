@@ -6,6 +6,18 @@
 
 Display learned objects.
 
+### Filtering
+
+Object Tree has build in filtering and display mode switches.
+
+![filter](./img/object_tree_filter.png)
+
+* Filter - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box.
+* Display modes switch:
+  * `id` - show object IDs in the tree.
+  * `n` - show object names in the tree.
+  * `id[n]` - show each object in format `object_id [ object_name ]` in the tree.
+
 ## How to Open
 
 The **Objects** dialog is part of the [Default Layout](restoring_the_default_layout.md).

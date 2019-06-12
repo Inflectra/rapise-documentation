@@ -27,7 +27,7 @@ During a Recording session, you can also click on the **Spy** button inspect the
 
 ## The Object Tree
 
-Regardless of how you learn the object, it will be displayed in the Object tree:
+Regardless of how you learn the object, it will be displayed in the [Object tree](object_tree.md):
 
 ![object_tree_html](./img/object_learning1.png)
 
