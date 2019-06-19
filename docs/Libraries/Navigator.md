@@ -32,6 +32,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[CheckObjectExists](#CheckObjectExists) | Checks if object is found on the screen by its id or XPath. |
+|	[CheckObjectVisible](#CheckObjectVisible) | Checks if object is visible on the screen by its id or XPath. |
 |	[Close](#Close) | Closes browser. |
 |	[Detach](#Detach) | Disconnects from a browser. |
 |	[DoCheckAlert](#DoCheckAlert) | Waits until browser alert with a given text. |
@@ -138,11 +139,34 @@ Checks if object is found on the screen by its id or XPath.
 
 **Returns:**
 
-'true' if browser alert had occurred, 'false' otherwise.
+'true' if object exists, 'false' otherwise.
 
 
 
 <a name="see.also.navigator.checkobjectexists"></a>
+
+<a name="CheckObjectVisible"></a>    
+#### CheckObjectVisible(xpathOrObjId)
+
+Checks if object is visible on the screen by its id or XPath.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | string |	XPath or ID. XPath is detected by leading "." or "/". |
+
+
+
+
+**Returns:**
+
+'true' if object is visible, 'false' otherwise.
+
+
+
+<a name="see.also.navigator.checkobjectvisible"></a>
 
 <a name="Close"></a>    
 #### Close(url)
