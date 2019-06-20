@@ -9,6 +9,8 @@ For more information on RVL's syntax and constructs, please refer to the separat
 
 ## What is Scriptless Testing
 
+![clip0148](./img/rvl_about.png)
+
 Let's imagine we're recording a simple automated web test against the sample [http://www.libraryinformationsystem.org](http://www.libraryinformationsystem.org) website that comes with Rapise:
 
 ![clip0148](./img/visual_language1.png)

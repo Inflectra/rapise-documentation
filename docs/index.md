@@ -36,7 +36,7 @@
     </div>
     <div class="col-sm-3">
       <a role="button" class="btn btn-warning btn-lg btn-block" href="/codeless/">
-      Codeless Testing
+      Scriptless Testing
       </a>
     </div>
     <div class="col-sm-3">
@@ -71,7 +71,7 @@
 - [Data-Driven Testing](/Guide/ddt/)
 - [SpiraTest Integration](/Guide/spiratest_integration/)
 - [Jenkins Integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx)
-- [TFS Integration](/Guide/visual_studio/)
+- [Azure DevOps and TFS Integration](/Guide/visual_studio/)
 
 ## About the Docs
 
