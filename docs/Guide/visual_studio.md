@@ -202,3 +202,4 @@ You can also see an individual report of a failed test.
 - [Visual Studio Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing)
 - [Visual Studio Team System / Team Foundation Server](https://en.wikipedia.org/wiki/Team_Foundation_Server)
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
+- [TUTORIAL: Integrating Rapise and Azure DevOps (video)](https://youtu.be/iPVplfqKj50)
