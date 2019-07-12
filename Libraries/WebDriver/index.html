@@ -1121,7 +1121,7 @@
     <a href="../Tester/">Tester</a>
 </li>
             
-<li class="active">
+<li >
     <a href="./">WebDriver</a>
 </li>
     </ul>
@@ -2259,6 +2259,10 @@
     <a href="../Screenshot/">Screenshot</a>
 </li>
             
+<li class="active">
+    <a href="./">WebDriver</a>
+</li>
+            
 <li >
     <a href="../WebElement/">WebElement</a>
 </li>
@@ -2929,11 +2933,11 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../Tester/">
+                                <a rel="next" href="../Screenshot/">
                                     <i class="fa fa-arrow-left"></i></a>
                             </li>
                             <li >
-                                <a rel="prev" href="../RVL/"><i class="fa fa-arrow-right"></i></a>
+                                <a rel="prev" href="../WebElement/"><i class="fa fa-arrow-right"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.inflectra.com">Inflectra</a>
@@ -2985,8 +2989,16 @@
 <td>This will create a WebDriver for currently selected Browser profile.</td>
 </tr>
 <tr>
+<td><a href="#CreateDriverForSession">CreateDriverForSession</a></td>
+<td>Connects to active Selenium session with given URL and Id.</td>
+</tr>
+<tr>
 <td><a href="#Dispose">Dispose</a></td>
 <td>Dispose of WebDriver.</td>
+</tr>
+<tr>
+<td><a href="#DumpSessions">DumpSessions</a></td>
+<td>Prints information about active Appium sessions to output.</td>
 </tr>
 <tr>
 <td><a href="#ExecuteScript">ExecuteScript</a></td>
@@ -3057,6 +3069,10 @@
 <td>Finds a list of elements that match the XPath supplied.</td>
 </tr>
 <tr>
+<td><a href="#GetAddressOfRemoteServer">GetAddressOfRemoteServer</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="#GetCurrentWindowHandle">GetCurrentWindowHandle</a></td>
 <td>Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance.</td>
 </tr>
@@ -3077,6 +3093,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="#GetSessionId">GetSessionId</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="#GetTitle">GetTitle</a></td>
 <td>Gets the title of the current browser window.</td>
 </tr>
@@ -3093,8 +3113,16 @@
 <td>Disconnects from the Browser.</td>
 </tr>
 <tr>
+<td><a href="#ReconnectSession">ReconnectSession</a></td>
+<td>Reads session information produced by SaveSession and connects to the mobile target.</td>
+</tr>
+<tr>
+<td><a href="#SaveSession">SaveSession</a></td>
+<td>Saves session information for use by ReconnectSession.</td>
+</tr>
+<tr>
 <td><a href="#SetBrowserSize">SetBrowserSize</a></td>
-<td></td>
+<td>Sets size of a browser window.</td>
 </tr>
 <tr>
 <td><a href="#SetUrl">SetUrl</a></td>
@@ -3162,18 +3190,50 @@
 <tbody>
 <tr>
 <td>nonProfileCapsJson</td>
-<td></td>
-<td></td>
+<td>object</td>
+<td>JSON object with capabilities not available in a Browser profile.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
 <p>WebDriver object.</p>
 <p><a name="see.also.webdriver.createdriver"></a></p>
+<p><a name="CreateDriverForSession"></a>    </p>
+<h4 id="createdriverforsessionaddressofremoteserver-sessionid">CreateDriverForSession(addressOfRemoteServer, sessionId)</h4>
+<p>Connects to active Selenium session with given URL and Id.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>addressOfRemoteServer</td>
+<td></td>
+<td>Selenium server URL.</td>
+</tr>
+<tr>
+<td>sessionId</td>
+<td></td>
+<td>Id of the session to connect.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>true if successful, false otherwise.</p>
+<p><a name="see.also.webdriver.createdriverforsession"></a></p>
 <p><a name="Dispose"></a>    </p>
 <h4 id="dispose">Dispose()</h4>
 <p>Dispose of WebDriver.</p>
 <p><a name="see.also.webdriver.dispose"></a></p>
+<p><a name="DumpSessions"></a>    </p>
+<h4 id="dumpsessions">DumpSessions()</h4>
+<p>Prints information about active Appium sessions to output.</p>
+<p><a name="see.also.webdriver.dumpsessions"></a></p>
 <p><a name="ExecuteScript"></a>    </p>
 <h4 id="executescriptscript-args">ExecuteScript(script, args)</h4>
 <p>Executes JavaScript in the context of the currently selected frame or window.</p>
@@ -3570,6 +3630,11 @@
 <p><strong>Returns:</strong></p>
 <p>array of elements.</p>
 <p><a name="see.also.webdriver.findelementsbyxpath"></a></p>
+<p><a name="GetAddressOfRemoteServer"></a>    </p>
+<h4 id="getaddressofremoteserver">GetAddressOfRemoteServer()</h4>
+<p><strong>Returns:</strong></p>
+<p>URL of the remote Selenium server.</p>
+<p><a name="see.also.webdriver.getaddressofremoteserver"></a></p>
 <p><a name="GetCurrentWindowHandle"></a>    </p>
 <h4 id="getcurrentwindowhandle">GetCurrentWindowHandle()</h4>
 <p>Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance.</p>
@@ -3605,6 +3670,11 @@
 <p><a name="GetScreenshotIW"></a>    </p>
 <h4 id="getscreenshotiw">GetScreenshotIW()</h4>
 <p><a name="see.also.webdriver.getscreenshotiw"></a></p>
+<p><a name="GetSessionId"></a>    </p>
+<h4 id="getsessionid">GetSessionId()</h4>
+<p><strong>Returns:</strong></p>
+<p>Id of the current session.</p>
+<p><a name="see.also.webdriver.getsessionid"></a></p>
 <p><a name="GetTitle"></a>    </p>
 <h4 id="gettitle">GetTitle()</h4>
 <p>Gets the title of the current browser window.</p>
@@ -3621,8 +3691,17 @@
 <h4 id="quit">Quit()</h4>
 <p>Disconnects from the Browser.</p>
 <p><a name="see.also.webdriver.quit"></a></p>
+<p><a name="ReconnectSession"></a>    </p>
+<h4 id="reconnectsession">ReconnectSession()</h4>
+<p>Reads session information produced by SaveSession and connects to the mobile target.</p>
+<p><a name="see.also.webdriver.reconnectsession"></a></p>
+<p><a name="SaveSession"></a>    </p>
+<h4 id="savesession">SaveSession()</h4>
+<p>Saves session information for use by ReconnectSession.</p>
+<p><a name="see.also.webdriver.savesession"></a></p>
 <p><a name="SetBrowserSize"></a>    </p>
 <h4 id="setbrowsersizewidth-height">SetBrowserSize(width, height)</h4>
+<p>Sets size of a browser window.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3635,13 +3714,13 @@
 <tbody>
 <tr>
 <td>width</td>
-<td></td>
-<td></td>
+<td>number</td>
+<td>Window width to set</td>
 </tr>
 <tr>
 <td>height</td>
-<td></td>
-<td></td>
+<td>number</td>
+<td>Window height to set</td>
 </tr>
 </tbody>
 </table>
@@ -3737,7 +3816,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"help": 191, "search": 83, "next": 78, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
