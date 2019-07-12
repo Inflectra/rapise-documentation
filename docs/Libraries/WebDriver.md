@@ -22,7 +22,9 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[Close](#Close) | Close the Browser and Dispose of WebDriver. |
 |	[Cookies](#Cookies) | Gets Cookies object. |
 |	[CreateDriver](#CreateDriver) | This will create a WebDriver for currently selected Browser profile. |
+|	[CreateDriverForSession](#CreateDriverForSession) | Connects to active Selenium session with given URL and Id. |
 |	[Dispose](#Dispose) | Dispose of WebDriver. |
+|	[DumpSessions](#DumpSessions) | Prints information about active Appium sessions to output. |
 |	[ExecuteScript](#ExecuteScript) | Executes JavaScript in the context of the currently selected frame or window. |
 |	[FindElementByClassName](#FindElementByClassName) | Finds the first element in the page that matches the CSS Class supplied. |
 |	[FindElementByCssSelector](#FindElementByCssSelector) | Finds the first element matching the specified CSS selector. |
@@ -40,16 +42,20 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[FindElementsByPartialLinkText](#FindElementsByPartialLinkText) | Finds a list of elements that match the part of the link text supplied. |
 |	[FindElementsByTagName](#FindElementsByTagName) | Finds a list of elements that match the DOM Tag supplied. |
 |	[FindElementsByXPath](#FindElementsByXPath) | Finds a list of elements that match the XPath supplied. |
+|	[GetAddressOfRemoteServer](#GetAddressOfRemoteServer) |  |
 |	[GetCurrentWindowHandle](#GetCurrentWindowHandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
 |	[GetPageSource](#GetPageSource) | Gets the source of the page last loaded by the browser. |
 |	[GetProfileCapability](#GetProfileCapability) |  |
 |	[GetScreenshot](#GetScreenshot) | Gets the screenshot of the page. |
 |	[GetScreenshotIW](#GetScreenshotIW) |  |
+|	[GetSessionId](#GetSessionId) |  |
 |	[GetTitle](#GetTitle) | Gets the title of the current browser window. |
 |	[GetUrl](#GetUrl) | Gets the URL the browser is currently displaying. |
 |	[GetWindowHandles](#GetWindowHandles) | Gets the window handles of open browser windows. |
 |	[Quit](#Quit) | Disconnects from the Browser. |
-|	[SetBrowserSize](#SetBrowserSize) |  |
+|	[ReconnectSession](#ReconnectSession) | Reads session information produced by SaveSession and connects to the mobile target. |
+|	[SaveSession](#SaveSession) | Saves session information for use by ReconnectSession. |
+|	[SetBrowserSize](#SetBrowserSize) | Sets size of a browser window. |
 |	[SetUrl](#SetUrl) | Sets the URL the browser is currently displaying. |
 |	[SwitchToAlert](#SwitchToAlert) | Switches to the currently active modal dialog for this particular driver instance. |
 |	[SwitchToDefaultContent](#SwitchToDefaultContent) | Change the active frame to the default. |
@@ -112,7 +118,7 @@ This will create a WebDriver for currently selected Browser profile.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| nonProfileCapsJson |  |	 |
+| nonProfileCapsJson | object |	JSON object with capabilities not available in a Browser profile. |
 
 
 
@@ -125,6 +131,30 @@ WebDriver object.
 
 <a name="see.also.webdriver.createdriver"></a>
 
+<a name="CreateDriverForSession"></a>    
+#### CreateDriverForSession(addressOfRemoteServer, sessionId)
+
+Connects to active Selenium session with given URL and Id.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| addressOfRemoteServer |  |	Selenium server URL. |
+| sessionId |  |	Id of the session to connect. |
+
+
+
+
+**Returns:**
+
+true if successful, false otherwise.
+
+
+
+<a name="see.also.webdriver.createdriverforsession"></a>
+
 <a name="Dispose"></a>    
 #### Dispose()
 
@@ -135,6 +165,17 @@ Dispose of WebDriver.
 
 
 <a name="see.also.webdriver.dispose"></a>
+
+<a name="DumpSessions"></a>    
+#### DumpSessions()
+
+Prints information about active Appium sessions to output.
+
+
+
+
+
+<a name="see.also.webdriver.dumpsessions"></a>
 
 <a name="ExecuteScript"></a>    
 #### ExecuteScript(script, args)
@@ -528,6 +569,22 @@ array of elements.
 
 <a name="see.also.webdriver.findelementsbyxpath"></a>
 
+<a name="GetAddressOfRemoteServer"></a>    
+#### GetAddressOfRemoteServer()
+
+
+
+
+
+
+**Returns:**
+
+URL of the remote Selenium server.
+
+
+
+<a name="see.also.webdriver.getaddressofremoteserver"></a>
+
 <a name="GetCurrentWindowHandle"></a>    
 #### GetCurrentWindowHandle()
 
@@ -590,6 +647,22 @@ Gets the screenshot of the page.
 
 <a name="see.also.webdriver.getscreenshotiw"></a>
 
+<a name="GetSessionId"></a>    
+#### GetSessionId()
+
+
+
+
+
+
+**Returns:**
+
+Id of the current session.
+
+
+
+<a name="see.also.webdriver.getsessionid"></a>
+
 <a name="GetTitle"></a>    
 #### GetTitle()
 
@@ -634,18 +707,40 @@ Disconnects from the Browser.
 
 <a name="see.also.webdriver.quit"></a>
 
+<a name="ReconnectSession"></a>    
+#### ReconnectSession()
+
+Reads session information produced by SaveSession and connects to the mobile target.
+
+
+
+
+
+<a name="see.also.webdriver.reconnectsession"></a>
+
+<a name="SaveSession"></a>    
+#### SaveSession()
+
+Saves session information for use by ReconnectSession.
+
+
+
+
+
+<a name="see.also.webdriver.savesession"></a>
+
 <a name="SetBrowserSize"></a>    
 #### SetBrowserSize(width, height)
 
-
+Sets size of a browser window.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| width |  |	 |
-| height |  |	 |
+| width | number |	Window width to set |
+| height | number |	Window height to set |
 
 
 

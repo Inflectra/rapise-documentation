@@ -18,52 +18,52 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[ActivateIMEEngine](#ActivateIMEEngine) |  |
-|	[BackgroundApp](#BackgroundApp) |  |
-|	[Close](#Close) |  |
-|	[CloseApp](#CloseApp) |  |
+|	[ActivateIMEEngine](#ActivateIMEEngine) | Activate the given IME on the device. |
+|	[BackgroundApp](#BackgroundApp) | Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated. |
+|	[Close](#Close) | Close the Browser and Dispose of WebDriver. |
+|	[CloseApp](#CloseApp) | Close the application. |
 |	[CreateAppiumDriver](#CreateAppiumDriver) |  |
 |	[CreateDesiredCapabilities](#CreateDesiredCapabilities) |  |
-|	[DeactiveIMEEngine](#DeactiveIMEEngine) |  |
-|	[Dispose](#Dispose) |  |
-|	[EndTestCoverage](#EndTestCoverage) |  |
-|	[ExecuteAsyncScript](#ExecuteAsyncScript) |  |
-|	[ExecuteScript](#ExecuteScript) |  |
-|	[FindComplex](#FindComplex) |  |
-|	[FindElementByAccessibilityId](#FindElementByAccessibilityId) |  |
-|	[FindElementByAndroidUIAutomator](#FindElementByAndroidUIAutomator) |  |
-|	[FindElementByClassName](#FindElementByClassName) |  |
-|	[FindElementByCssSelector](#FindElementByCssSelector) |  |
-|	[FindElementById](#FindElementById) |  |
-|	[FindElementByIosUIAutomation](#FindElementByIosUIAutomation) |  |
-|	[FindElementByLinkText](#FindElementByLinkText) |  |
-|	[FindElementByName](#FindElementByName) |  |
-|	[FindElementByPartialLinkText](#FindElementByPartialLinkText) |  |
-|	[FindElementByTagName](#FindElementByTagName) |  |
-|	[FindElementByXPath](#FindElementByXPath) |  |
-|	[FindElementsByAccessibilityId](#FindElementsByAccessibilityId) |  |
-|	[FindElementsByAndroidUIAutomator](#FindElementsByAndroidUIAutomator) |  |
-|	[FindElementsByClassName](#FindElementsByClassName) |  |
-|	[FindElementsByCssSelector](#FindElementsByCssSelector) |  |
-|	[FindElementsById](#FindElementsById) |  |
-|	[FindElementsByIosUIAutomation](#FindElementsByIosUIAutomation) |  |
-|	[FindElementsByLinkText](#FindElementsByLinkText) |  |
-|	[FindElementsByName](#FindElementsByName) |  |
-|	[FindElementsByPartialLinkText](#FindElementsByPartialLinkText) |  |
-|	[FindElementsByTagName](#FindElementsByTagName) |  |
-|	[FindElementsByXPath](#FindElementsByXPath) |  |
-|	[GetConnectionType](#GetConnectionType) |  |
+|	[CreateDriverForSession](#CreateDriverForSession) | Connects to active Appium session with given URL and Id. |
+|	[DeactiveIMEEngine](#DeactiveIMEEngine) | Deactivate the currently Active IME Engine on the device. |
+|	[Dispose](#Dispose) | Dispose of WebDriver. |
+|	[DumpSessions](#DumpSessions) | Prints information about active Appium sessions to output. |
+|	[ExecuteScript](#ExecuteScript) | Executes JavaScript in the context of the currently selected frame or window. |
+|	[FindElementByAccessibilityId](#FindElementByAccessibilityId) | Search for an element using Accessibility ID. |
+|	[FindElementByAndroidUIAutomator](#FindElementByAndroidUIAutomator) | Search for an element using UIAutomator selector. |
+|	[FindElementByClassName](#FindElementByClassName) | Finds the first element in the page that matches the CSS Class supplied. |
+|	[FindElementByCssSelector](#FindElementByCssSelector) | Finds the first element matching the specified CSS selector. |
+|	[FindElementById](#FindElementById) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementByIosUIAutomation](#FindElementByIosUIAutomation) | Search for an element using UIAutomation selector. |
+|	[FindElementByLinkText](#FindElementByLinkText) | Finds the first of elements that match the link text supplied. |
+|	[FindElementByName](#FindElementByName) | Finds the first of elements that match the name supplied. |
+|	[FindElementByPartialLinkText](#FindElementByPartialLinkText) | Finds the first of elements that match the part of the link text supplied. |
+|	[FindElementByTagName](#FindElementByTagName) | Finds the first of elements that match the DOM Tag supplied. |
+|	[FindElementByXPath](#FindElementByXPath) | Finds the first of elements that match the XPath supplied. |
+|	[FindElementsByAccessibilityId](#FindElementsByAccessibilityId) | Search for all elements matching Accessibility ID. |
+|	[FindElementsByAndroidUIAutomator](#FindElementsByAndroidUIAutomator) | Search for all elements using UIAutomator selector. |
+|	[FindElementsByClassName](#FindElementsByClassName) | Finds a list of elements that match the class name supplied. |
+|	[FindElementsByCssSelector](#FindElementsByCssSelector) | Finds all elements matching the specified CSS selector. |
+|	[FindElementsById](#FindElementsById) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementsByIosUIAutomation](#FindElementsByIosUIAutomation) | Search for all elements using UIAutomation selector. |
+|	[FindElementsByLinkText](#FindElementsByLinkText) | Finds a list of elements that match the link text supplied. |
+|	[FindElementsByName](#FindElementsByName) | Finds a list of elements that match the name supplied. |
+|	[FindElementsByPartialLinkText](#FindElementsByPartialLinkText) | Finds a list of elements that match the part of the link text supplied. |
+|	[FindElementsByTagName](#FindElementsByTagName) | Finds a list of elements that match the DOM Tag supplied. |
+|	[FindElementsByXPath](#FindElementsByXPath) | Finds a list of elements that match the XPath supplied. |
+|	[GetAddressOfRemoteServer](#GetAddressOfRemoteServer) |  |
 |	[GetContext](#GetContext) |  |
 |	[GetContexts](#GetContexts) |  |
 |	[GetCurrentActivity](#GetCurrentActivity) |  |
-|	[GetCurrentWindowHandle](#GetCurrentWindowHandle) |  |
+|	[GetCurrentWindowHandle](#GetCurrentWindowHandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
 |	[GetIMEActiveEngine](#GetIMEActiveEngine) |  |
 |	[GetIMEAvailableEngines](#GetIMEAvailableEngines) |  |
 |	[GetOrientation](#GetOrientation) |  |
-|	[GetPageSource](#GetPageSource) |  |
-|	[GetTitle](#GetTitle) |  |
-|	[GetUrl](#GetUrl) |  |
-|	[GetWindowHandles](#GetWindowHandles) |  |
+|	[GetPageSource](#GetPageSource) | Gets the source of the page last loaded by the browser. |
+|	[GetSessionId](#GetSessionId) |  |
+|	[GetTitle](#GetTitle) | Gets the title of the current browser window. |
+|	[GetUrl](#GetUrl) | Gets the URL the browser is currently displaying. |
+|	[GetWindowHandles](#GetWindowHandles) | Gets the window handles of open browser windows. |
 |	[HideKeyboard](#HideKeyboard) |  |
 |	[IgnoreUnimportantViews](#IgnoreUnimportantViews) |  |
 |	[InstallApp](#InstallApp) |  |
@@ -75,13 +75,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[PressKeyCode](#PressKeyCode) |  |
 |	[PullFile](#PullFile) |  |
 |	[PushFile](#PushFile) |  |
-|	[Quit](#Quit) |  |
+|	[Quit](#Quit) | Disconnects from the Browser. |
+|	[ReconnectSession](#ReconnectSession) | Reads session information produced by SaveSession and connects to the mobile target. |
 |	[RemoveApp](#RemoveApp) |  |
 |	[ResetApp](#ResetApp) |  |
-|	[SetConnectionType](#SetConnectionType) |  |
-|	[SetContext](#SetContext) |  |
-|	[SetOrientation](#SetOrientation) |  |
-|	[SetUrl](#SetUrl) |  |
+|	[SaveSession](#SaveSession) | Saves session information for use by ReconnectSession. |
+|	[SetContext](#SetContext) | Sets current context. |
+|	[SetOrientation](#SetOrientation) | Sets device orienataion. |
+|	[SetUrl](#SetUrl) | Sets the URL the browser is currently displaying. |
 |	[ShakeDevice](#ShakeDevice) |  |
 |	[StartActivity](#StartActivity) |  |
 |	[ToggleAirplaneMode](#ToggleAirplaneMode) |  |
@@ -101,14 +102,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="ActivateIMEEngine"></a>    
 #### ActivateIMEEngine(imeEngine)
 
-
+Activate the given IME on the device.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| imeEngine |  |	 |
+| imeEngine | string |	IME to activate |
 
 
 
@@ -119,14 +120,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="BackgroundApp"></a>    
 #### BackgroundApp(seconds)
 
-
+Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| seconds |  |	 |
+| seconds | number |	Timeout value |
 
 
 
@@ -137,7 +138,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="Close"></a>    
 #### Close()
 
-
+Close the Browser and Dispose of WebDriver.
 
 
 
@@ -148,7 +149,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="CloseApp"></a>    
 #### CloseApp()
 
-
+Close the application.
 
 
 
@@ -166,8 +167,8 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| uri |  |	 |
-| caps |  |	 |
+| uri | string |	 |
+| caps | AppiumCapabilities |	 |
 
 
 
@@ -183,13 +184,42 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+**Returns:**
+
+AppiumCapabilities object.
+
+
 
 <a name="see.also.appiumdriver.createdesiredcapabilities"></a>
+
+<a name="CreateDriverForSession"></a>    
+#### CreateDriverForSession(addressOfRemoteServer, sessionId)
+
+Connects to active Appium session with given URL and Id.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| addressOfRemoteServer | string |	Appium server URL. |
+| sessionId | string |	Id of the session to connect. |
+
+
+
+
+**Returns:**
+
+true if successful, false otherwise.
+
+
+
+<a name="see.also.appiumdriver.createdriverforsession"></a>
 
 <a name="DeactiveIMEEngine"></a>    
 #### DeactiveIMEEngine()
 
-
+Deactivate the currently Active IME Engine on the device.
 
 
 
@@ -200,7 +230,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="Dispose"></a>    
 #### Dispose()
 
-
+Dispose of WebDriver.
 
 
 
@@ -208,56 +238,29 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 <a name="see.also.appiumdriver.dispose"></a>
 
-<a name="EndTestCoverage"></a>    
-#### EndTestCoverage(intent, path)
+<a name="DumpSessions"></a>    
+#### DumpSessions()
 
-
-
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| intent |  |	 |
-| path |  |	 |
+Prints information about active Appium sessions to output.
 
 
 
 
 
-<a name="see.also.appiumdriver.endtestcoverage"></a>
-
-<a name="ExecuteAsyncScript"></a>    
-#### ExecuteAsyncScript(script, args)
-
-
-
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| script |  |	 |
-| args |  |	 |
-
-
-
-
-
-<a name="see.also.appiumdriver.executeasyncscript"></a>
+<a name="see.also.appiumdriver.dumpsessions"></a>
 
 <a name="ExecuteScript"></a>    
 #### ExecuteScript(script, args)
 
-
+Executes JavaScript in the context of the currently selected frame or window.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| script |  |	 |
-| args |  |	 |
+| script | string |	The JavaScript code to execute. |
+| args | array |	The arguments to the script. |
 
 
 
@@ -265,35 +268,17 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 <a name="see.also.appiumdriver.executescript"></a>
 
-<a name="FindComplex"></a>    
-#### FindComplex(selector)
-
-
-
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| selector |  |	 |
-
-
-
-
-
-<a name="see.also.appiumdriver.findcomplex"></a>
-
 <a name="FindElementByAccessibilityId"></a>    
 #### FindElementByAccessibilityId(selector)
 
-
+Search for an element using Accessibility ID.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector | string |	 |
 
 
 
@@ -304,14 +289,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByAndroidUIAutomator"></a>    
 #### FindElementByAndroidUIAutomator(selector)
 
-
+Search for an element using UIAutomator selector.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector | string |	 |
 
 
 
@@ -322,14 +307,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName(className)
 
-
+Finds the first element in the page that matches the CSS Class supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| className |  |	 |
+| className | string |	CSS class name of the element. |
 
 
 
@@ -340,14 +325,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByCssSelector"></a>    
 #### FindElementByCssSelector(cssSelector)
 
-
+Finds the first element matching the specified CSS selector.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cssSelector |  |	 |
+| cssSelector | string |	The CSS selector to match. |
 
 
 
@@ -358,14 +343,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementById"></a>    
 #### FindElementById(id)
 
-
+Finds the first element in the page that matches the ID supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| id |  |	 |
+| id | string |	ID of the element. |
 
 
 
@@ -376,14 +361,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByIosUIAutomation"></a>    
 #### FindElementByIosUIAutomation(selector)
 
-
+Search for an element using UIAutomation selector.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector | string |	 |
 
 
 
@@ -394,14 +379,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByLinkText"></a>    
 #### FindElementByLinkText(linkText)
 
-
+Finds the first of elements that match the link text supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| linkText |  |	 |
+| linkText | string |	Link text of element. |
 
 
 
@@ -412,14 +397,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByName"></a>    
 #### FindElementByName(name)
 
-
+Finds the first of elements that match the name supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name |  |	 |
+| name | string |	Name of the element on the page. |
 
 
 
@@ -430,14 +415,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByPartialLinkText"></a>    
 #### FindElementByPartialLinkText(partialLinkText)
 
-
+Finds the first of elements that match the part of the link text supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| partialLinkText |  |	 |
+| partialLinkText | string |	Part of the link text. |
 
 
 
@@ -448,14 +433,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByTagName"></a>    
 #### FindElementByTagName(tagName)
 
-
+Finds the first of elements that match the DOM Tag supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tagName |  |	 |
+| tagName | string |	DOM tag Name of the element being searched. |
 
 
 
@@ -466,14 +451,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementByXPath"></a>    
 #### FindElementByXPath(xpath)
 
-
+Finds the first of elements that match the XPath supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath |  |	 |
+| xpath | string |	xpath to the element. |
 
 
 
@@ -484,14 +469,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByAccessibilityId"></a>    
 #### FindElementsByAccessibilityId(selector)
 
-
+Search for all elements matching Accessibility ID.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector | string |	 |
 
 
 
@@ -502,14 +487,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByAndroidUIAutomator"></a>    
 #### FindElementsByAndroidUIAutomator(selector)
 
-
+Search for all elements using UIAutomator selector.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector | string |	 |
 
 
 
@@ -520,14 +505,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByClassName"></a>    
 #### FindElementsByClassName(className)
 
-
+Finds a list of elements that match the class name supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| className |  |	 |
+| className | string |	class name of the element. |
 
 
 
@@ -538,14 +523,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByCssSelector"></a>    
 #### FindElementsByCssSelector(cssSelector)
 
-
+Finds all elements matching the specified CSS selector.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cssSelector |  |	 |
+| cssSelector | string |	The CSS selector to match. |
 
 
 
@@ -556,14 +541,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsById"></a>    
 #### FindElementsById(id)
 
-
+Finds the first element in the page that matches the ID supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| id |  |	 |
+| id | string |	ID of the element. |
 
 
 
@@ -574,14 +559,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByIosUIAutomation"></a>    
 #### FindElementsByIosUIAutomation(selector)
 
-
+Search for all elements using UIAutomation selector.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector | string |	 |
 
 
 
@@ -592,14 +577,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByLinkText"></a>    
 #### FindElementsByLinkText(linkText)
 
-
+Finds a list of elements that match the link text supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| linkText |  |	 |
+| linkText | string |	Link text of element. |
 
 
 
@@ -610,14 +595,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByName"></a>    
 #### FindElementsByName(name)
 
-
+Finds a list of elements that match the name supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name |  |	 |
+| name | string |	Name of the element on the page. |
 
 
 
@@ -628,14 +613,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByPartialLinkText"></a>    
 #### FindElementsByPartialLinkText(partialLinkText)
 
-
+Finds a list of elements that match the part of the link text supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| partialLinkText |  |	 |
+| partialLinkText | string |	Part of the link text. |
 
 
 
@@ -646,14 +631,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByTagName"></a>    
 #### FindElementsByTagName(tagName)
 
-
+Finds a list of elements that match the DOM Tag supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tagName |  |	 |
+| tagName | string |	DOM tag Name of the element being searched. |
 
 
 
@@ -664,14 +649,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="FindElementsByXPath"></a>    
 #### FindElementsByXPath(xpath)
 
-
+Finds a list of elements that match the XPath supplied.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath |  |	 |
+| xpath | string |	xpath to the element. |
 
 
 
@@ -679,16 +664,21 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 <a name="see.also.appiumdriver.findelementsbyxpath"></a>
 
-<a name="GetConnectionType"></a>    
-#### GetConnectionType()
+<a name="GetAddressOfRemoteServer"></a>    
+#### GetAddressOfRemoteServer()
 
 
 
 
 
 
+**Returns:**
 
-<a name="see.also.appiumdriver.getconnectiontype"></a>
+URL of the remote Appium server.
+
+
+
+<a name="see.also.appiumdriver.getaddressofremoteserver"></a>
 
 <a name="GetContext"></a>    
 #### GetContext()
@@ -696,6 +686,11 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+
+
+**Returns:**
+
+Current context (NATIVE_APP or WEBVIEW_*).
 
 
 
@@ -707,6 +702,11 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+
+
+**Returns:**
+
+Array of available contexts for a hybrid application.
 
 
 
@@ -726,7 +726,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="GetCurrentWindowHandle"></a>    
 #### GetCurrentWindowHandle()
 
-
+Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance.
 
 
 
@@ -742,6 +742,11 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+**Returns:**
+
+Currently active IME Engine on the device.
+
+
 
 <a name="see.also.appiumdriver.getimeactiveengine"></a>
 
@@ -751,6 +756,11 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+
+
+**Returns:**
+
+A list of IME engines available on the device.
 
 
 
@@ -764,13 +774,18 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
+**Returns:**
+
+Orientation of the device (0 - portrait, 1 - landscape).
+
+
 
 <a name="see.also.appiumdriver.getorientation"></a>
 
 <a name="GetPageSource"></a>    
 #### GetPageSource()
 
-
+Gets the source of the page last loaded by the browser.
 
 
 
@@ -778,10 +793,26 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 <a name="see.also.appiumdriver.getpagesource"></a>
 
+<a name="GetSessionId"></a>    
+#### GetSessionId()
+
+
+
+
+
+
+**Returns:**
+
+Id of the current session.
+
+
+
+<a name="see.also.appiumdriver.getsessionid"></a>
+
 <a name="GetTitle"></a>    
 #### GetTitle()
 
-
+Gets the title of the current browser window.
 
 
 
@@ -792,7 +823,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="GetUrl"></a>    
 #### GetUrl()
 
-
+Gets the URL the browser is currently displaying.
 
 
 
@@ -803,7 +834,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="GetWindowHandles"></a>    
 #### GetWindowHandles()
 
-
+Gets the window handles of open browser windows.
 
 
 
@@ -812,7 +843,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="see.also.appiumdriver.getwindowhandles"></a>
 
 <a name="HideKeyboard"></a>    
-#### HideKeyboard(strategy, key)
+#### HideKeyboard(key, key)
 
 
 
@@ -821,7 +852,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| strategy |  |	 |
+| key |  |	 |
 | key |  |	 |
 
 
@@ -965,7 +996,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="see.also.appiumdriver.pullfile"></a>
 
 <a name="PushFile"></a>    
-#### PushFile(pathOnDevice, base64Data)
+#### PushFile(base64Data, base64Data)
 
 
 
@@ -974,7 +1005,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| pathOnDevice |  |	 |
+| base64Data |  |	 |
 | base64Data |  |	 |
 
 
@@ -986,13 +1017,24 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="Quit"></a>    
 #### Quit()
 
-
+Disconnects from the Browser.
 
 
 
 
 
 <a name="see.also.appiumdriver.quit"></a>
+
+<a name="ReconnectSession"></a>    
+#### ReconnectSession()
+
+Reads session information produced by SaveSession and connects to the mobile target.
+
+
+
+
+
+<a name="see.also.appiumdriver.reconnectsession"></a>
 
 <a name="RemoveApp"></a>    
 #### RemoveApp(appId)
@@ -1023,35 +1065,28 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 <a name="see.also.appiumdriver.resetapp"></a>
 
-<a name="SetConnectionType"></a>    
-#### SetConnectionType(connectionType)
+<a name="SaveSession"></a>    
+#### SaveSession()
 
-
-
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| connectionType |  |	 |
+Saves session information for use by ReconnectSession.
 
 
 
 
 
-<a name="see.also.appiumdriver.setconnectiontype"></a>
+<a name="see.also.appiumdriver.savesession"></a>
 
 <a name="SetContext"></a>    
 #### SetContext(name)
 
-
+Sets current context.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name |  |	 |
+| name | string |	 |
 
 
 
@@ -1062,14 +1097,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="SetOrientation"></a>    
 #### SetOrientation(orientation)
 
-
+Sets device orienataion.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| orientation |  |	 |
+| orientation | number |	0 - portrait, 1 - landscape |
 
 
 
@@ -1080,14 +1115,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="SetUrl"></a>    
 #### SetUrl(value)
 
-
+Sets the URL the browser is currently displaying.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value |  |	 |
+| value | string |	The URL to display |
 
 
 
@@ -1107,7 +1142,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 <a name="see.also.appiumdriver.shakedevice"></a>
 
 <a name="StartActivity"></a>    
-#### StartActivity(appPackage, appActivity, appWaitPackage, appWaitActivity)
+#### StartActivity(appActivity, appWaitPackage, appWaitActivity, appWaitActivity)
 
 
 
@@ -1116,9 +1151,9 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| appPackage |  |	 |
 | appActivity |  |	 |
 | appWaitPackage |  |	 |
+| appWaitActivity |  |	 |
 | appWaitActivity |  |	 |
 
 

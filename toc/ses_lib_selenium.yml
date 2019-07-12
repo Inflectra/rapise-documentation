@@ -11,6 +11,8 @@
     - 'Cookies': 'Libraries/Cookies.md'
 
     - 'Screenshot': 'Libraries/Screenshot.md'
+    
+    - 'WebDriver': 'Libraries/WebDriver.md'    
 
     - 'WebElement': 'Libraries/WebElement.md'
 

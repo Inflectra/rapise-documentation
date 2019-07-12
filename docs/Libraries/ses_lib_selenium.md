@@ -11,6 +11,8 @@
 
 - [Screenshot](Screenshot.md)
 
+- [WebDriver](WebDriver.md)
+
 - [WebElement](WebElement.md)
 
 - [Window](Window.md)
