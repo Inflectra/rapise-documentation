@@ -14,7 +14,7 @@ Rapise integrates with Visual Studio at [Unit Test](https://www.visualstudio.com
 
 Create a Unit Test project in Visual Studio, add a unit test and a test method. In the References section add the DLL:
 
-    c:\\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll
+    c:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll
 
 In a test method specify absolute path to a Rapise test and pass `TextContext` parameter to `Rapise.TestExecute` function:
 
