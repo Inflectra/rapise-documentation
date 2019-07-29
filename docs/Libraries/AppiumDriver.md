@@ -193,7 +193,7 @@ AppiumCapabilities object.
 <a name="see.also.appiumdriver.createdesiredcapabilities"></a>
 
 <a name="CreateDriverForSession"></a>    
-#### CreateDriverForSession(addressOfRemoteServer, sessionId)
+#### CreateDriverForSession(addressOfRemoteServer, sessionId, suppressErrors)
 
 Connects to active Appium session with given URL and Id.
 
@@ -204,6 +204,7 @@ Connects to active Appium session with given URL and Id.
 | ---------- | -------- | --------------- |
 | addressOfRemoteServer | string |	Appium server URL. |
 | sessionId | string |	Id of the session to connect. |
+| suppressErrors | boolean |	'true' to suppress failures in the report, default 'false'.<br>Optional, Default: false. |
 
 
 
@@ -1026,9 +1027,16 @@ Disconnects from the Browser.
 <a name="see.also.appiumdriver.quit"></a>
 
 <a name="ReconnectSession"></a>    
-#### ReconnectSession()
+#### ReconnectSession(autoCreate)
 
 Reads session information produced by SaveSession and connects to the mobile target.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| autoCreate | boolean |	'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: false. |
 
 
 
