@@ -852,6 +852,10 @@
 <li >
     <a href="../mobile_testing_android/">Mobile Testing using Android</a>
 </li>
+            
+<li >
+    <a href="../mobile_reconnect/">Reconnect Mobile Session</a>
+</li>
     </ul>
   </li>
             
@@ -895,6 +899,10 @@
             
 <li >
     <a href="../using_native_selenium_code/">Using Native Selenium Code</a>
+</li>
+            
+<li >
+    <a href="../selenium_reconnect/">Reconnect WebDriver Session</a>
 </li>
     </ul>
   </li>
@@ -2957,6 +2965,7 @@
             <li><a href="#snapshot-pane">Snapshot Pane</a></li>
             <li><a href="#toolbar-first-row">Toolbar First Row</a></li>
             <li><a href="#toolbar-second-row">Toolbar Second Row</a></li>
+            <li><a href="#maintenance-mode">Maintenance Mode</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
 </div></div>
@@ -2985,7 +2994,7 @@ you to visually select objects from the hierarchy.</p>
 <li><strong>Test Locator</strong> - This will display the <a href="../mobile_test_locator_dialog/">Mobile Test Locator</a> dialog box that lets you try different locators to resolve specific objects in the object hierarchy. It will include options such as using XPath and IDs.</li>
 <li><strong>Profile</strong> - This lets you change the profile of the mobile device you are testing while the Spy dialog is open.</li>
 <li><strong>Edit Profiles</strong> - This will open up the <a href="../mobile_settings_dialog/">Mobile Settings</a> dialog box. You cannot be connected to do this.</li>
-<li><strong>Context</strong> - This will display either 'Discovery Mode' or 'Recording Mode'.</li>
+<li><strong>Context</strong> - This will display either 'Maintenance Mode' or 'Recording Mode'.</li>
 </ul>
 <h2 id="toolbar-second-row">Toolbar Second Row</h2>
 <p>The <strong>Mobile Spy</strong> also includes toolbar controls that let you send events to mobile device from Rapise, as if you were actually performing them on the device:</p>
@@ -3009,6 +3018,19 @@ you to visually select objects from the hierarchy.</p>
 <li><strong>Change Orientation</strong> - for devices that support it, this simulates changing the orientation of the device from landscape to portrait (or vice-versa).</li>
 <li><strong>Execute Script</strong> - <em>this is not currently supported and is for future functionality</em>.</li>
 </ul>
+<h2 id="maintenance-mode">Maintenance Mode</h2>
+<p>Since Rapise <strong>version 6.2</strong> it is easier to check and update object locators. If you launch the spy from the toolbar (it will be launched in Maintenance Mode) it will show the object tree in the right side panel.</p>
+<p><img alt="Mobile Spy Maintenance Mode" src="../img/mobile_spy_maintenance.png" /></p>
+<p>To check an object locator simply select the object in the object tree. The result of locator test is indicated by an icon.</p>
+<p><img src="/Guide/img/mobile_spy_object_tree_icons.png" width="307" /></p>
+<p>If an object is found it will be highlighted on the screenshot and selected in the tree of application objects (left pane).</p>
+<p>To fix a locator for object that is not found do the following:</p>
+<ol>
+<li>Select the object in the object tree (right pane)</li>
+<li>Select the element on the screenshot or in the application tree (left pane)</li>
+<li>Press relearn button on the toolbar.</li>
+</ol>
+<p><img alt="Mobile Spy Relearn" src="../img/mobile_spy_relearn.png" /></p>
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="../object_spy/">Object Spy</a></li>
@@ -3021,7 +3043,7 @@ you to visually select objects from the hierarchy.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"previous": 80, "help": 191, "search": 83, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

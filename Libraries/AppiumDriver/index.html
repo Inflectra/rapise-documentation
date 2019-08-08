@@ -852,6 +852,10 @@
 <li >
     <a href="../../Guide/mobile_testing_android/">Mobile Testing using Android</a>
 </li>
+            
+<li >
+    <a href="../../Guide/mobile_reconnect/">Reconnect Mobile Session</a>
+</li>
     </ul>
   </li>
             
@@ -895,6 +899,10 @@
             
 <li >
     <a href="../../Guide/using_native_selenium_code/">Using Native Selenium Code</a>
+</li>
+            
+<li >
+    <a href="../../Guide/selenium_reconnect/">Reconnect WebDriver Session</a>
 </li>
     </ul>
   </li>
@@ -2982,6 +2990,10 @@
 <td>Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated.</td>
 </tr>
 <tr>
+<td><a href="#ClearSessions">ClearSessions</a></td>
+<td>Deletes active sessions on Appium server.</td>
+</tr>
+<tr>
 <td><a href="#Close">Close</a></td>
 <td>Close the Browser and Dispose of WebDriver.</td>
 </tr>
@@ -3302,6 +3314,10 @@
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.backgroundapp"></a></p>
+<p><a name="ClearSessions"></a>    </p>
+<h4 id="clearsessions">ClearSessions()</h4>
+<p>Deletes active sessions on Appium server.</p>
+<p><a name="see.also.appiumdriver.clearsessions"></a></p>
 <p><a name="Close"></a>    </p>
 <h4 id="close">Close()</h4>
 <p>Close the Browser and Dispose of WebDriver.</p>
@@ -3341,7 +3357,7 @@
 <p>AppiumCapabilities object.</p>
 <p><a name="see.also.appiumdriver.createdesiredcapabilities"></a></p>
 <p><a name="CreateDriverForSession"></a>    </p>
-<h4 id="createdriverforsessionaddressofremoteserver-sessionid">CreateDriverForSession(addressOfRemoteServer, sessionId)</h4>
+<h4 id="createdriverforsessionaddressofremoteserver-sessionid-suppresserrors">CreateDriverForSession(addressOfRemoteServer, sessionId, suppressErrors)</h4>
 <p>Connects to active Appium session with given URL and Id.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -3362,6 +3378,11 @@
 <td>sessionId</td>
 <td>string</td>
 <td>Id of the session to connect.</td>
+</tr>
+<tr>
+<td>suppressErrors</td>
+<td>boolean</td>
+<td>'true' to suppress failures in the report, default 'false'.<br>Optional, Default: false.</td>
 </tr>
 </tbody>
 </table>
@@ -4093,8 +4114,25 @@
 <p>Disconnects from the Browser.</p>
 <p><a name="see.also.appiumdriver.quit"></a></p>
 <p><a name="ReconnectSession"></a>    </p>
-<h4 id="reconnectsession">ReconnectSession()</h4>
+<h4 id="reconnectsessionautocreate">ReconnectSession(autoCreate)</h4>
 <p>Reads session information produced by SaveSession and connects to the mobile target.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autoCreate</td>
+<td>boolean</td>
+<td>'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: false.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="see.also.appiumdriver.reconnectsession"></a></p>
 <p><a name="RemoveApp"></a>    </p>
 <h4 id="removeappappid">RemoveApp(appId)</h4>
@@ -4241,7 +4279,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"previous": 80, "help": 191, "search": 83, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
