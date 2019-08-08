@@ -20,6 +20,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 | ----------- | --------------- |
 |	[ActivateIMEEngine](#ActivateIMEEngine) | Activate the given IME on the device. |
 |	[BackgroundApp](#BackgroundApp) | Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated. |
+|	[ClearSessions](#ClearSessions) | Deletes active sessions on Appium server. |
 |	[Close](#Close) | Close the Browser and Dispose of WebDriver. |
 |	[CloseApp](#CloseApp) | Close the application. |
 |	[CreateAppiumDriver](#CreateAppiumDriver) |  |
@@ -134,6 +135,17 @@ Send the currently active app to the background, and either return after a certa
 
 
 <a name="see.also.appiumdriver.backgroundapp"></a>
+
+<a name="ClearSessions"></a>    
+#### ClearSessions()
+
+Deletes active sessions on Appium server.
+
+
+
+
+
+<a name="see.also.appiumdriver.clearsessions"></a>
 
 <a name="Close"></a>    
 #### Close()

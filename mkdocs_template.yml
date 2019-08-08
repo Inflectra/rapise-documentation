@@ -200,6 +200,7 @@ pages:
             - 'Mobile Testing using iOS': 'Guide/mobile_testing_ios.md'
             - 'Preparing Environment for Android Mobile Testing': 'Manuals/Preparing_for_Android_Testing.md'
             - 'Mobile Testing using Android': 'Guide/mobile_testing_android.md'
+            - 'Reconnect Mobile Session': 'Guide/mobile_reconnect.md'
         - 'Web Testing':
             - 'Web Testing': 'Guide/web_testing.md'
             - 'Cross Browser Testing': 'Guide/cross_browser_testing.md'
@@ -210,6 +211,7 @@ pages:
             - 'Selenium WebDriver': 'Guide/selenium_webdriver.md'
             - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
             - 'Using Native Selenium Code': 'Guide/using_native_selenium_code.md'
+            - 'Reconnect WebDriver Session': 'Guide/selenium_reconnect.md'
         - 'Web Service Testing':
             - 'Web Service Testing': 'Guide/web_service_testing.md'
             - 'Testing REST Web Services': 'Guide/rest_web_service.md'

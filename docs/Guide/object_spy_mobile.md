@@ -32,7 +32,7 @@ you to visually select objects from the hierarchy.
 - **Test Locator** - This will display the [Mobile Test Locator](mobile_test_locator_dialog.md) dialog box that lets you try different locators to resolve specific objects in the object hierarchy. It will include options such as using XPath and IDs.
 - **Profile** - This lets you change the profile of the mobile device you are testing while the Spy dialog is open.
 - **Edit Profiles** - This will open up the [Mobile Settings](mobile_settings_dialog.md) dialog box. You cannot be connected to do this.
-- **Context** - This will display either 'Discovery Mode' or 'Recording Mode'.
+- **Context** - This will display either 'Maintenance Mode' or 'Recording Mode'.
 
 ## Toolbar Second Row
 
@@ -50,7 +50,7 @@ This dialog lets you perform the following events on the device:
 - **Shake** - for devices that support it (e.g. iOS) this simulates shaking the device physically.
 - **Precise Tap** - you specific the specific location on the screen within the bounds of the current object that you will be simulating a tap. 
 
-![spy\_dialog\_mobile\_events\_precise\_tap](./img/object_spy_mobile4.png)
+![spy_dialog_mobile_events_precise_tap](./img/object_spy_mobile4.png)
 
 - **Scroll To** - simulates scrolling to the selected object in the device object tree (which may not be visible).
 - **Text / Send Keys** - to use this, enter in text in the text box and click 'Send Keys', this sends text to the currently selected  object as if you were using the virtual keyboard on the device.
@@ -58,6 +58,26 @@ This dialog lets you perform the following events on the device:
 - **Dismiss Alert** - if you have a popup alert on the device, this simulates dismissing it.
 - **Change Orientation** - for devices that support it, this simulates changing the orientation of the device from landscape to portrait (or vice-versa).
 - **Execute Script** - *this is not currently supported and is for future functionality*.
+
+## Maintenance Mode
+
+Since Rapise **version 6.2** it is easier to check and update object locators. If you launch the spy from the toolbar (it will be launched in Maintenance Mode) it will show the object tree in the right side panel.
+
+![Mobile Spy Maintenance Mode](./img/mobile_spy_maintenance.png)
+
+To check an object locator simply select the object in the object tree. The result of locator test is indicated by an icon.
+
+<img src="/Guide/img/mobile_spy_object_tree_icons.png" width="307" />
+
+If an object is found it will be highlighted on the screenshot and selected in the tree of application objects (left pane).
+
+To fix a locator for object that is not found do the following:
+
+1. Select the object in the object tree (right pane)
+2. Select the element on the screenshot or in the application tree (left pane)
+3. Press relearn button on the toolbar.
+
+![Mobile Spy Relearn](./img/mobile_spy_relearn.png)
 
 ## See Also
 

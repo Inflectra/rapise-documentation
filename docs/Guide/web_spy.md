@@ -117,6 +117,29 @@ In addition, in the test results view, when you click on a result:
 - If the result is simple text then only Copy is available, which copies the text
 - Clicking on a DOM element in the results list opens it in DOM Element pane and also selects it in the DOM Tree pane
 
+## Maintenance Mode
+
+Since Rapise **version 6.2** it is easier to check and update object locators. If you launch the spy from the toolbar (it will be launched in Maintenance Mode) it will show the object tree in the right side panel.
+
+![Web Spy Maintenance Mode](./img/web_spy_maintenance.png)
+
+To check an object locator simply select the object in the object tree. The result of locator test is indicated by an icon.
+
+<img src="/Guide/img/web_spy_object_tree_icons.png" width="317">
+
+If an object is found it will be highlighted in the browser and selected in the tree of application objects (left pane).
+
+To fix a locator for object that is not found do the following:
+
+1. Select the object in the object tree (right pane)
+2. Select the element by
+    - testing XPath locator from the toolbar
+    - or directly in the DOM tree (left pane)
+    - or by using object tracking.
+3. Press relearn button on the toolbar.
+
+![Web Spy Relearn](./img/web_spy_relearn.png)
+
 ## See Also
 
 - [Object Spy](object_spy.md)

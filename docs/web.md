@@ -12,3 +12,7 @@ To use Chrome or Firefox browser for [recording](/Guide/recording/) you may need
 
 - [Introduction to Test Automation with Rapise](https://youtu.be/X0RyPPAQhFk)
 - [Live Demo: Data-driven Codeless Test](https://youtu.be/YakGP-O-LBs?t=1682)
+
+## New in Rapise 6.2
+
+- [Reconnect WebDriver Session](/Guide/selenium_reconnect/)
