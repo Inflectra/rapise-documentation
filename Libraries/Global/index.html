@@ -3012,6 +3012,14 @@ record or learn this object, it is always automatically available in any test.</
 </tr>
 <tr>
 <td><a href="#DoInvokeTestParallel">DoInvokeTestParallel</a></td>
+<td>Executes specified test in few parallel threads passing additional arguments specified by in 'threads' param</td>
+</tr>
+<tr>
+<td>as special params</td>
+<td></td>
+</tr>
+<tr>
+<td>I.e.</td>
 <td></td>
 </tr>
 <tr>
@@ -3318,7 +3326,21 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <p>boolean: 'true' if the test passed, 'false' otherwise.</p>
 <p><a name="see.also.global.doinvoketest"></a></p>
 <p><a name="DoInvokeTestParallel"></a>    </p>
-<h4 id="doinvoketestparalleltestpath-threads-commonparams">DoInvokeTestParallel(testPath, threads, commonParams)</h4>
+<h4 id="doinvoketestparalleltestpath-threadsobject-commonparams">DoInvokeTestParallel(testPath, threads=[object, commonParams)</h4>
+<p>Executes specified test in few parallel threads passing additional arguments specified by in 'threads' param
+as special params
+I.e.:
+                DoInvokeTestParallel(
+                    "t2/t2.sstest",
+                    {
+                        "THR01": {
+                            g_browserLibrary: 'Selenium Chrome'
+                        },
+                        "THR02": {
+                            g_browserLibrary: 'Selenium Firefox'
+                        }
+                    }
+                );</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3335,17 +3357,19 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <td></td>
 </tr>
 <tr>
-<td>threads</td>
+<td>threads=[object</td>
 <td></td>
-<td></td>
+<td>Object] Structure, defining parallel threads to execute</td>
 </tr>
 <tr>
 <td>commonParams</td>
 <td></td>
-<td></td>
+<td>Object containing {name:'value',...} pairs to be passed as parameters to all tests<br>Optional, Default: [object Object].</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Returns:</strong></p>
+<p>boolean: true, if execution finished with exit code 0 (all tests executed successfully)</p>
 <p><a name="see.also.global.doinvoketestparallel"></a></p>
 <p><a name="DoKillByName"></a>    </p>
 <h4 id="dokillbynameprocessname">DoKillByName(processName)</h4>
@@ -4035,7 +4059,7 @@ in the case of timeout.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "previous": 80, "search": 83, "help": 191};
+                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
