@@ -27,9 +27,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoDecrypt](#DoDecrypt) | Decrypts a piece of text. |
 |	[DoEncrypt](#DoEncrypt) | Encrypts a piece of text. |
 |	[DoInvokeTest](#DoInvokeTest) | Invokes another test (aka subtest). |
-|	[DoInvokeTestParallel](#DoInvokeTestParallel) | Executes specified test in few parallel threads passing additional arguments specified by in 'threads' param
-as special params
-I.e. |
+|	[DoInvokeTestParallel](#DoInvokeTestParallel) | Executes specified test in few parallel threads. |
 |	[DoKillByName](#DoKillByName) | Terminates a given process. |
 |	[DoKillByPid](#DoKillByPid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
 |	[DoLaunch](#DoLaunch) | Executes a command specified in cmdLine. |
@@ -228,31 +226,32 @@ boolean: 'true' if the test passed, 'false' otherwise.
 <a name="see.also.global.doinvoketest"></a>
 
 <a name="DoInvokeTestParallel"></a>    
-#### DoInvokeTestParallel(testPath, threads=[object, commonParams)
+#### DoInvokeTestParallel(testPath, threads, commonParams)
 
-Executes specified test in few parallel threads passing additional arguments specified by in 'threads' param
-as special params
-I.e.:
-				DoInvokeTestParallel(
-					"t2/t2.sstest",
-					{
-						"THR01": {
-							g_browserLibrary: 'Selenium Chrome'
-						},
-						"THR02": {
-							g_browserLibrary: 'Selenium Firefox'
-						}
-					}
-				);
+Executes specified test in few parallel threads. Pass additional arguments in 'threads' param
+
+```javascript             
+DoInvokeTestParallel(
+	"t2/t2.sstest",
+	{
+		"THR01": {
+			g_browserLibrary: 'Selenium Chrome'
+		},
+		"THR02": {
+			g_browserLibrary: 'Selenium Firefox'
+		}
+	}
+);
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| testPath |  |	 |
-| threads=[object |  |	Object] Structure, defining parallel threads to execute |
-| commonParams |  |	Object containing {name:'value',...} pairs to be passed as parameters to all tests<br>Optional, Default: [object Object]. |
+| testPath | string |	Path to .sstest to execute. |
+| threads | object |	Structure, defining parallel threads to execute. |
+| commonParams | object |	Object containing {name:'value',...} pairs to be passed as parameters to all tests.<br>Optional. |
 
 
 
