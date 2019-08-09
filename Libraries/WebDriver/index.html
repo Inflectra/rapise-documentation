@@ -8,6 +8,7 @@
         
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/WebDriver/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
+        <meta name="description" content="This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library."> 
         <title>WebDriver - Rapise</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
@@ -2985,6 +2986,10 @@
 <td>Gets Actions object.</td>
 </tr>
 <tr>
+<td><a href="#ClearSessions">ClearSessions</a></td>
+<td>Deletes active sessions on Selenium grid.</td>
+</tr>
+<tr>
 <td><a href="#Close">Close</a></td>
 <td>Close the Browser and Dispose of WebDriver.</td>
 </tr>
@@ -3175,6 +3180,10 @@
 <h4 id="actions">Actions()</h4>
 <p>Gets Actions object.</p>
 <p><a name="see.also.webdriver.actions"></a></p>
+<p><a name="ClearSessions"></a>    </p>
+<h4 id="clearsessions">ClearSessions()</h4>
+<p>Deletes active sessions on Selenium grid.</p>
+<p><a name="see.also.webdriver.clearsessions"></a></p>
 <p><a name="Close"></a>    </p>
 <h4 id="close">Close()</h4>
 <p>Close the Browser and Dispose of WebDriver.</p>
@@ -3700,8 +3709,25 @@
 <p>Disconnects from the Browser.</p>
 <p><a name="see.also.webdriver.quit"></a></p>
 <p><a name="ReconnectSession"></a>    </p>
-<h4 id="reconnectsession">ReconnectSession()</h4>
+<h4 id="reconnectsessionautocreate">ReconnectSession(autoCreate)</h4>
 <p>Reads session information produced by SaveSession and connects to the mobile target.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autoCreate</td>
+<td>boolean</td>
+<td>'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: false.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="see.also.webdriver.reconnectsession"></a></p>
 <p><a name="SaveSession"></a>    </p>
 <h4 id="savesession">SaveSession()</h4>
@@ -3824,7 +3850,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "help": 191, "search": 83, "next": 78};
+                shortcuts = {"next": 78, "previous": 80, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
