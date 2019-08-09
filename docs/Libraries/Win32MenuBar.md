@@ -1,3 +1,5 @@
+Summary: This is generic WIn32 menu bar (e.g. main menu of the application). Use DoClickItem to click a particular item from the menu and DoMenu to choose a menu item at the specified path.
+
 # Win32MenuBar
 
 This is generic WIn32 menu bar (e.g. main menu of the application). Use DoClickItem to click a particular item from the menu and DoMenu to choose a menu item at the specified path.

@@ -1,3 +1,5 @@
+Summary: DevXpress Docked Bar.
+
 # DXDockedBarControl
 
 DevXpress Docked Bar.

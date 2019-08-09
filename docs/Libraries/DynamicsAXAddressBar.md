@@ -1,3 +1,5 @@
+Summary: DynamicsAXAddressBar
+
 # DynamicsAXAddressBar
 
 Extends [UIAObject](UIAObject.md)

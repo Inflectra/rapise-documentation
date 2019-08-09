@@ -1,3 +1,5 @@
+Summary: SimpleText
+
 # SimpleText
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics NAV fast tabs control.
+
 # DynamicsNAVFastTabs
 
 Behavior patterm for Dynamics NAV fast tabs control.

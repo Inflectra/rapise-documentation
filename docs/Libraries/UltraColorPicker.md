@@ -1,3 +1,5 @@
+Summary: Infragistics UltraColorPicker
+
 # UltraColorPicker
 
 Infragistics UltraColorPicker

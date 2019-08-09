@@ -1,3 +1,5 @@
+Summary: DevXpress ListBoxControl.
+
 # DXListBoxControl
 
 DevXpress ListBoxControl.

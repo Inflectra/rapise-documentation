@@ -1,3 +1,5 @@
+Summary: DevXpress CheckedListBoxControl.
+
 # DXCheckedListBoxControl
 
 DevXpress CheckedListBoxControl.

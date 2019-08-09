@@ -1,3 +1,5 @@
+Summary: iOSSwitch
+
 # iOSSwitch
 
 Extends [iOSObject](iOSObject.md)

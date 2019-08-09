@@ -1,3 +1,5 @@
+Summary: This is for testing the main Qt menu bar (e.g. main menu of the application). Use DoClickItem to click a particular item from the menu.
+
 # QMenuBar
 
 This is for testing the main Qt menu bar (e.g. main menu of the application). Use DoClickItem to click a particular item from the menu.

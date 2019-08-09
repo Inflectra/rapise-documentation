@@ -1,3 +1,5 @@
+Summary: Java Swing Slider.
+
 # JavaSwingSlider
 
 Java Swing Slider.

@@ -1,3 +1,5 @@
+Summary: Telerik RadProgressBar.
+
 # TelerikRadProgressBar
 
 Telerik RadProgressBar.

@@ -1,3 +1,5 @@
+Summary: Managed MenuPopupItem.
+
 # ManagedMenuPopupItem
 
 Managed MenuPopupItem.

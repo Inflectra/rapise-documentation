@@ -1,3 +1,5 @@
+Summary: DevXpress CheckButton.
+
 # DXCheckButton
 
 DevXpress CheckButton.

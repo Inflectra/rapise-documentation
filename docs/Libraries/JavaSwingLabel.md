@@ -1,3 +1,5 @@
+Summary: Java Swing Label.
+
 # JavaSwingLabel
 
 Java Swing Label.

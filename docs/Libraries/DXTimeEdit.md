@@ -1,3 +1,5 @@
+Summary: DevXpress TimeEdit.
+
 # DXTimeEdit
 
 DevXpress TimeEdit.

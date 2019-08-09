@@ -1,3 +1,5 @@
+Summary: DevXpress SimpleButton.
+
 # DXSimpleButton
 
 DevXpress SimpleButton.

@@ -1,3 +1,5 @@
+Summary: JQueryMenu
+
 # JQueryMenu
 
 Extends [HTMLObject](HTMLObject.md)

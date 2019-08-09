@@ -1,3 +1,5 @@
+Summary: This matches a Qt tool button. Use DoAction to press it.
+
 # QToolButton
 
 This matches a Qt tool button. Use DoAction to press it.

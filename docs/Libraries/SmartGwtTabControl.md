@@ -1,3 +1,5 @@
+Summary: SmartGwtTabControl
+
 # SmartGwtTabControl
 
 Extends [HTMLObject](HTMLObject.md)

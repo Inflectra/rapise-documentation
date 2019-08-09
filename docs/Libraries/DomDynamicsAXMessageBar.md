@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for MessageBar control.
+
 # DomDynamicsAXMessageBar
 
 This behavior pattern implements standard behavior for MessageBar control.

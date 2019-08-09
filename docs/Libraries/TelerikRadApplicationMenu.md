@@ -1,3 +1,5 @@
+Summary: Telerik RadApplicationMenu.
+
 # TelerikRadApplicationMenu
 
 Telerik RadApplicationMenu.

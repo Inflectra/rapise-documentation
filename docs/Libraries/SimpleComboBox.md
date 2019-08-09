@@ -1,3 +1,5 @@
+Summary: ComboBox control.
+
 # SimpleComboBox
 
 ComboBox control.

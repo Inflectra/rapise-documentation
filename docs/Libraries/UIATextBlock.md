@@ -1,3 +1,5 @@
+Summary: UIATextBlock
+
 # UIATextBlock
 
 Extends [UIAObject](UIAObject.md)

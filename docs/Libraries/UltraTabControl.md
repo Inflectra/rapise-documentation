@@ -1,3 +1,5 @@
+Summary: Infragistics UltraTabControl.
+
 # UltraTabControl
 
 Infragistics UltraTabControl.

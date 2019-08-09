@@ -1,3 +1,5 @@
+Summary: Java Label.
+
 # JavaLabel
 
 Java Label.

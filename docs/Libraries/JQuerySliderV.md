@@ -1,3 +1,5 @@
+Summary: JQuerySliderV
+
 # JQuerySliderV
 
 Extends [HTMLObject](HTMLObject.md)

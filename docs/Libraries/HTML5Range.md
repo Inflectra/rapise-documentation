@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Range control.
+
 # HTML5Range
 
 This behavior pattern implements standard behavior for Range control.

@@ -1,3 +1,5 @@
+Summary: AndroidProgressBar
+
 # AndroidProgressBar
 
 Extends [AndroidObject](AndroidObject.md)

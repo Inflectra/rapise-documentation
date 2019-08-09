@@ -1,3 +1,5 @@
+Summary: UIARadioButton
+
 # UIARadioButton
 
 Extends [UIAObject](UIAObject.md)

@@ -1,3 +1,5 @@
+Summary: Managed ListView.
+
 # ManagedListView
 
 Managed ListView.

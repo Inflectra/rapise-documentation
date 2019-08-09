@@ -1,3 +1,5 @@
+Summary: SimpleCheckButton
+
 # SimpleCheckButton
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

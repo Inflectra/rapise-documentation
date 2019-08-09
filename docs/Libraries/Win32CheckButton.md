@@ -1,3 +1,5 @@
+Summary: This is generic Win32 check box. Use DoAction to toggle its state.
+
 # Win32CheckButton
 
 This is generic Win32 check box. Use DoAction to toggle its state.

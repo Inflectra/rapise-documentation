@@ -1,3 +1,5 @@
+Summary: Session object for SOAP and REST services.
+
 # Session
 
 Session object for SOAP and REST services.

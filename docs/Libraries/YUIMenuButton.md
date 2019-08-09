@@ -1,3 +1,5 @@
+Summary: YUI MenuButton.
+
 # YUIMenuButton
 
 YUI MenuButton.

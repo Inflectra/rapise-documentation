@@ -1,3 +1,5 @@
+Summary: This is generic Win32 context menu. Use DoClickItem to click a particular item from the menu
+
 # Win32ContextMenu
 
 This is generic Win32 context menu. Use DoClickItem to click a particular item from the menu

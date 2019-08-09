@@ -1,3 +1,5 @@
+Summary: GWT-Ext Toolbar.
+
 # GWTExtToolbar
 
 GWT-Ext Toolbar.

@@ -1,3 +1,5 @@
+Summary: Link text control.
+
 # SimpleLinkText
 
 Link text control.

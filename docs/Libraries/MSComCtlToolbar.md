@@ -1,3 +1,5 @@
+Summary: MSComCtlToolbar
+
 # MSComCtlToolbar
 
 Extends [ActiveXObject](ActiveXObject.md)

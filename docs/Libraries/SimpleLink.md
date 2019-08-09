@@ -1,3 +1,5 @@
+Summary: Link control.
+
 # SimpleLink
 
 Link control.

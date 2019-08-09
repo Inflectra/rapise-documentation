@@ -1,3 +1,5 @@
+Summary: Java Swing Text Area.
+
 # JavaSwingTextArea
 
 Java Swing Text Area.

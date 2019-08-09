@@ -1,3 +1,5 @@
+Summary: Java SWT Editable Combobox.
+
 # SWTComboBoxEdit
 
 Java SWT Editable Combobox.

@@ -1,3 +1,5 @@
+Summary: YUI Tree.
+
 # YUITree
 
 YUI Tree.

@@ -1,3 +1,5 @@
+Summary: Spreadsheet object. Use it to read and write Excel and text spreadsheets.
+
 # Spreadsheet
 
 Spreadsheet object. Use it to read and write Excel and text spreadsheets.

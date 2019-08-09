@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Edit control.
+
 # DomDynamicsNAVEdit
 
 This behavior pattern implements standard behavior for Edit control.

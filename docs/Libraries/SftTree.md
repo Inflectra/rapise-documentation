@@ -1,3 +1,5 @@
+Summary: SftTree
+
 # SftTree
 
 Extends [ActiveXObject](ActiveXObject.md)

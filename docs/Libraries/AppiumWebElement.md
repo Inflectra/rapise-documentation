@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.
+
 # AppiumWebElement
 
 This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>https://github.com/appium/appium-dotnet-driver

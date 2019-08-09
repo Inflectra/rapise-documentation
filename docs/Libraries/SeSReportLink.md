@@ -1,3 +1,5 @@
+Summary: Used to show link (url and text) in the report.
+
 # SeSReportLink
 
 Used to show link (url and text) in the report.

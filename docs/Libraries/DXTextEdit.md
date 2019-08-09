@@ -1,3 +1,5 @@
+Summary: DevXpress TextEdit.
+
 # DXTextEdit
 
 DevXpress TextEdit.

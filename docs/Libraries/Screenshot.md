@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for Screenshot of Selenium .NET library.
+
 # Screenshot
 
 This is a JavaScript wrapper for Screenshot of Selenium .NET library.

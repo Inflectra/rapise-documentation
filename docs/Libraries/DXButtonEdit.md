@@ -1,3 +1,5 @@
+Summary: DevXpress ButtonEdit.
+
 # DXButtonEdit
 
 DevXpress ButtonEdit.

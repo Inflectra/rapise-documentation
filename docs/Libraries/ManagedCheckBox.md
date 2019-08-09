@@ -1,3 +1,5 @@
+Summary: Managed CheckBox.
+
 # ManagedCheckBox
 
 Managed CheckBox.

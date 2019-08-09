@@ -1,3 +1,5 @@
+Summary: Managed MenuStrip.
+
 # ManagedMenuStrip
 
 Managed MenuStrip.

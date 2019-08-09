@@ -1,3 +1,5 @@
+Summary: Telerik RadTextBox.
+
 # TelerikRadTextBox
 
 Telerik RadTextBox.

@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.
+
 # Capabilities
 
 This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.For code complete feature use class name CapabilitiesWrapper, e.g. <br><br><p style="margin-left: 30px;"><code>var /&#42;&#42;CapabilitiesWrapper&#42;/caps = WebDriver.CreateDesiredCapabilities();</code></p>

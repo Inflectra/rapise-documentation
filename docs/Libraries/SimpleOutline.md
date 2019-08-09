@@ -1,3 +1,5 @@
+Summary: Outline control.
+
 # SimpleOutline
 
 Outline control.

@@ -1,3 +1,5 @@
+Summary: UIAObject
+
 # UIAObject
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
@@ -59,7 +61,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 #### AutomationId
 
 
-Automation ID of of UI Automation object
+Automation ID of UI Automation object
 
 			
 	

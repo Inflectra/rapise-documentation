@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for MenuBar control.
+
 # DomDynamicsAXMenuBar
 
 This behavior pattern implements standard behavior for MenuBar control.

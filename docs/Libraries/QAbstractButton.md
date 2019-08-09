@@ -1,3 +1,5 @@
+Summary: QAbstractButton
+
 # QAbstractButton
 
 Extends [QWidget](QWidget.md)

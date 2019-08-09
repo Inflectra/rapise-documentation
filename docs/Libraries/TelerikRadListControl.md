@@ -1,3 +1,5 @@
+Summary: Telerik RadListControl.
+
 # TelerikRadListControl
 
 Telerik RadListControl.

@@ -1,3 +1,5 @@
+Summary: Telerik RadGridView.
+
 # TelerikRadGridView
 
 Telerik RadGridView.

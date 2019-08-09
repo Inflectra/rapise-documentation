@@ -1,3 +1,5 @@
+Summary: MSComList
+
 # MSComList
 
 Extends [ActiveXObject](ActiveXObject.md)

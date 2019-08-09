@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.
+
 # AppiumDriver
 
 This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https://github.com/appium/appium-dotnet-driver

@@ -1,3 +1,5 @@
+Summary: Infragistics AnimationControl.
+
 # AnimationControl
 
 Infragistics AnimationControl.

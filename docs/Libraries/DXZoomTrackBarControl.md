@@ -1,3 +1,5 @@
+Summary: DevXpress ZoomTrackBarControl.
+
 # DXZoomTrackBarControl
 
 DevXpress ZoomTrackBarControl.

@@ -1,3 +1,5 @@
+Summary: Qt CheckBox.
+
 # QCheckBox
 
 Qt CheckBox.

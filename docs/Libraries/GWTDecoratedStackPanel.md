@@ -1,3 +1,5 @@
+Summary: GWT Decorated StackPanel.
+
 # GWTDecoratedStackPanel
 
 GWT Decorated StackPanel.

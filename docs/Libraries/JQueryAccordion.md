@@ -1,3 +1,5 @@
+Summary: JQueryAccordion
+
 # JQueryAccordion
 
 Extends [HTMLObject](HTMLObject.md)

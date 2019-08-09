@@ -1,3 +1,5 @@
+Summary: Database object. Use it to read and write ADO data sources.
+
 # Database
 
 Database object. Use it to read and write ADO data sources.

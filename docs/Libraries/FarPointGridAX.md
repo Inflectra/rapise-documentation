@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Grid control.
+
 # FarPointGridAX
 
 This behavior pattern implements standard behavior for Grid control.

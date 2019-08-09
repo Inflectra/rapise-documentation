@@ -1,3 +1,5 @@
+Summary: UIATabControl
+
 # UIATabControl
 
 Extends [UIAObject](UIAObject.md)

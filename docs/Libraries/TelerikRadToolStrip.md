@@ -1,3 +1,5 @@
+Summary: Telerik RadToolStrip.
+
 # TelerikRadToolStrip
 
 Telerik RadToolStrip.

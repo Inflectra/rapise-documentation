@@ -1,3 +1,5 @@
+Summary: UI element class: DevExpress.XtraVerticalGrid.PropertyGridControl
+
 # DXPropertyGridControl
 
 UI element class: DevExpress.XtraVerticalGrid.PropertyGridControl

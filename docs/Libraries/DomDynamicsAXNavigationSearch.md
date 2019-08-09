@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for NavigationSearch control.
+
 # DomDynamicsAXNavigationSearch
 
 This behavior pattern implements standard behavior for NavigationSearch control.

@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Grid control.
+
 # DomDynamicsCrmUnifiedInterfaceGrid
 
 This behavior pattern implements standard behavior for Grid control.

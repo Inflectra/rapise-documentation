@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for TextBox control.
+
 # DomDynamicsAXTextBox
 
 This behavior pattern implements standard behavior for TextBox control.

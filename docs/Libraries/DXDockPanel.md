@@ -1,3 +1,5 @@
+Summary: UI element class: regex:DevExpress.XtraBars.Docking.DockPanel
+
 # DXDockPanel
 
 UI element class: regex:DevExpress.XtraBars.Docking.DockPanel

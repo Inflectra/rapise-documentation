@@ -1,3 +1,5 @@
+Summary: DevXpress TrackBarControl.
+
 # DXTrackBarControl
 
 DevXpress TrackBarControl.

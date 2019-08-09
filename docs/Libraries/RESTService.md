@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements REST service client.
+
 # RESTService
 
 This behavior pattern implements REST service client.

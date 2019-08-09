@@ -1,3 +1,5 @@
+Summary: This is generic Win32 label. Use WindowText property to read/write label text.
+
 # Win32StaticText
 
 This is generic Win32 label. Use WindowText property to read/write label text.

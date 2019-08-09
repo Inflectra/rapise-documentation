@@ -1,3 +1,5 @@
+Summary: Telerik RadMaskedEditBox.
+
 # TelerikRadMaskedEditBox
 
 Telerik RadMaskedEditBox.

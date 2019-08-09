@@ -1,3 +1,5 @@
+Summary: UIATextBox
+
 # UIATextBox
 
 Extends [UIAObject](UIAObject.md)

@@ -1,3 +1,5 @@
+Summary: UI element class: Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+
 # UltraRibbon
 
 UI element class: Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea

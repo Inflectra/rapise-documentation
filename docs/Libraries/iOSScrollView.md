@@ -1,3 +1,5 @@
+Summary: iOSScrollView
+
 # iOSScrollView
 
 Extends [iOSObject](iOSObject.md)

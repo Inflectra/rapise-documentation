@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.
+
 # AppiumCapabilities
 
 This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<br>https://github.com/appium/appium-dotnet-driver

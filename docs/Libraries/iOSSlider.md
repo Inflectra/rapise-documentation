@@ -1,3 +1,5 @@
+Summary: iOSSlider
+
 # iOSSlider
 
 Extends [iOSObject](iOSObject.md)

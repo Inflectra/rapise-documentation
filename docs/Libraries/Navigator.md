@@ -1,3 +1,5 @@
+Summary: Navigator object. This is used to provide functions for manipulating the web browser when using the HTML libraries.
+
 # Navigator
 
 Navigator object. This is used to provide functions for manipulating the web browser when using the HTML libraries.

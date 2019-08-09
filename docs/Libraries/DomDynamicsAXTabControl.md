@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for TabControl control.
+
 # DomDynamicsAXTabControl
 
 This behavior pattern implements standard behavior for TabControl control.

@@ -1,3 +1,5 @@
+Summary: JQueryTabs
+
 # JQueryTabs
 
 Extends [HTMLObject](HTMLObject.md)

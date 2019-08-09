@@ -1,3 +1,5 @@
+Summary: Infragistics UltraLabel.
+
 # UltraLabel
 
 Infragistics UltraLabel.

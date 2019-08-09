@@ -1,3 +1,5 @@
+Summary: This is Qt single-line text edit box. Use DoSetText to set the value of the edit box and GetText to read current value.
+
 # QLineEdit
 
 This is Qt single-line text edit box. Use DoSetText to set the value of the edit box and GetText to read current value.

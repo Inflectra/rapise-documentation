@@ -1,3 +1,5 @@
+Summary: iOSEditBox
+
 # iOSEditBox
 
 Extends [iOSObject](iOSObject.md)

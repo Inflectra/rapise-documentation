@@ -1,3 +1,5 @@
+Summary: Managed Radio Button.
+
 # ManagedRadioButton
 
 Managed Radio Button.

@@ -1,3 +1,5 @@
+Summary: Managed ComboBox.
+
 # ManagedComboBox
 
 Managed ComboBox.

@@ -1,3 +1,5 @@
+Summary: UIAutomationMenuDropDownList
+
 # UIAutomationMenuDropDownList
 
 Extends [UIAObject](UIAObject.md)

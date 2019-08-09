@@ -1,3 +1,5 @@
+Summary: Check button control.
+
 # SimpleButtonDropdown
 
 Check button control.

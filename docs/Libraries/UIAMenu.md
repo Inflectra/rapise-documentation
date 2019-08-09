@@ -1,3 +1,5 @@
+Summary: UIAMenu
+
 # UIAMenu
 
 Extends [UIAObject](UIAObject.md)

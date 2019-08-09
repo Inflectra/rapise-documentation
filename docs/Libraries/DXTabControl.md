@@ -1,3 +1,5 @@
+Summary: UI element class: DevExpress.XtraTab.XtraTabControl
+
 # DXTabControl
 
 UI element class: DevExpress.XtraTab.XtraTabControl

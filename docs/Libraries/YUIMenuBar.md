@@ -1,3 +1,5 @@
+Summary: YUI MenuBar.
+
 # YUIMenuBar
 
 YUI MenuBar.

@@ -1,3 +1,5 @@
+Summary: SmartGwtToolbar
+
 # SmartGwtToolbar
 
 Extends [HTMLObject](HTMLObject.md)

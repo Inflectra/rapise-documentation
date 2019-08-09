@@ -1,3 +1,5 @@
+Summary: Qt Tab Page control.
+
 # QTabPage
 
 Qt Tab Page control.

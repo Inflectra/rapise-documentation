@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics AX fast tabs control.
+
 # DynamicsAXFastTabs
 
 Behavior patterm for Dynamics AX fast tabs control.

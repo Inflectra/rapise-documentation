@@ -1,3 +1,5 @@
+Summary: JQuerySpinner
+
 # JQuerySpinner
 
 Extends [HTMLObject](HTMLObject.md)

@@ -1,3 +1,5 @@
+Summary: Standard Java (AWT, Swing) Object.
+
 # JavaObject
 
 Standard Java (AWT, Swing) Object.

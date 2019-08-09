@@ -1,3 +1,5 @@
+Summary: Telerik RadApplicationMenuDropDown.
+
 # TelerikRadApplicationMenuDropDown
 
 Telerik RadApplicationMenuDropDown.

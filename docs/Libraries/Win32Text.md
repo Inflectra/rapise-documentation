@@ -1,3 +1,5 @@
+Summary: This is generic Win32 edit box. Use DoSetText to set the value of the edit box and GetText to read current value.
+
 # Win32Text
 
 This is generic Win32 edit box. Use DoSetText to set the value of the edit box and GetText to read current value.

@@ -1,3 +1,5 @@
+Summary: Telerik RadRibbonBar.
+
 # TelerikRadRibbonBar
 
 Telerik RadRibbonBar.

@@ -1,3 +1,5 @@
+Summary: This is a rule for simulated objects.
+
 # SeSSimulatedObject
 
 This is a rule for simulated objects.

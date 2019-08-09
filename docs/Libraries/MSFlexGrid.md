@@ -1,3 +1,5 @@
+Summary: MSFlexGrid
+
 # MSFlexGrid
 
 Extends [ActiveXObject](ActiveXObject.md)

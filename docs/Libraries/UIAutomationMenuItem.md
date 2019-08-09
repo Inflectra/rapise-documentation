@@ -1,3 +1,5 @@
+Summary: UIAutomationMenuItem
+
 # UIAutomationMenuItem
 
 Extends [UIAObject](UIAObject.md)

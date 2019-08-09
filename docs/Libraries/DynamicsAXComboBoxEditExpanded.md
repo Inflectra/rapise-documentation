@@ -1,3 +1,5 @@
+Summary: DynamicsAXComboBoxEditExpanded
+
 # DynamicsAXComboBoxEditExpanded
 
 Extends [UIAObject](UIAObject.md)

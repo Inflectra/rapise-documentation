@@ -1,3 +1,5 @@
+Summary: UIAButton
+
 # UIAButton
 
 Extends [UIAObject](UIAObject.md)

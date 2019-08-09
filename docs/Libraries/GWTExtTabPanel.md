@@ -1,3 +1,5 @@
+Summary: GWT-Ext Tab.
+
 # GWTExtTabPanel
 
 GWT-Ext Tab.

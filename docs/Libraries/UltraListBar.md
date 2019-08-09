@@ -1,3 +1,5 @@
+Summary: Infragistics UltraListBar.
+
 # UltraListBar
 
 Infragistics UltraListBar.

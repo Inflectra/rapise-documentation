@@ -1,3 +1,5 @@
+Summary: DevXpress ColorEdit.
+
 # DXColorEdit
 
 DevXpress ColorEdit.

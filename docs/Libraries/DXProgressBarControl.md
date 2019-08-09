@@ -1,3 +1,5 @@
+Summary: DevXpress ProgressBarControl.
+
 # DXProgressBarControl
 
 DevXpress ProgressBarControl.

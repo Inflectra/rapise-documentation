@@ -1,3 +1,5 @@
+Summary: DynamicsAXMenuDropDownList
+
 # DynamicsAXMenuDropDownList
 
 Extends [UIAObject](UIAObject.md)

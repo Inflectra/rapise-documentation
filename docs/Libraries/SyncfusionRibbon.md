@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Ribbon control.
+
 # SyncfusionRibbon
 
 This behavior pattern implements standard behavior for Ribbon control.

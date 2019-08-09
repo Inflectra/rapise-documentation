@@ -1,3 +1,5 @@
+Summary: Telerik RadButton.
+
 # TelerikRadButton
 
 Telerik RadButton.

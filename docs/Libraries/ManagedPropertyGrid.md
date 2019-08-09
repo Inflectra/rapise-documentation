@@ -1,3 +1,5 @@
+Summary: Managed PropertyGrid.
+
 # ManagedPropertyGrid
 
 Managed PropertyGrid.

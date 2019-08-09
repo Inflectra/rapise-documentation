@@ -1,3 +1,5 @@
+Summary: UIATree
+
 # UIATree
 
 Extends [UIAObject](UIAObject.md)

@@ -1,3 +1,5 @@
+Summary: DevXpress ImageListBoxControl.
+
 # DXImageListBoxControl
 
 DevXpress ImageListBoxControl.

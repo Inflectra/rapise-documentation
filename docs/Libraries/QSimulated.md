@@ -1,3 +1,5 @@
+Summary: QSimulated
+
 # QSimulated
 
 Extends [QWidget](QWidget.md)

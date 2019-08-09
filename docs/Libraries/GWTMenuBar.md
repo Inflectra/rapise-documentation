@@ -1,3 +1,5 @@
+Summary: GWT MenuBar.
+
 # GWTMenuBar
 
 GWT MenuBar.

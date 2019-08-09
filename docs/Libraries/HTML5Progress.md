@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Progress control.
+
 # HTML5Progress
 
 This behavior pattern implements standard behavior for Progress control.

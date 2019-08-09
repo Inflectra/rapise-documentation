@@ -1,3 +1,5 @@
+Summary: DevXpress PopupLookUpEditForm.
+
 # DXPopupLookUpEditForm
 
 DevXpress PopupLookUpEditForm.

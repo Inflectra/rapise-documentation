@@ -1,3 +1,5 @@
+Summary: UIALabel
+
 # UIALabel
 
 Extends [UIAObject](UIAObject.md)

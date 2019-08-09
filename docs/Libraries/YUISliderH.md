@@ -1,3 +1,5 @@
+Summary: YUI Horizontal Slider.
+
 # YUISliderH
 
 YUI Horizontal Slider.

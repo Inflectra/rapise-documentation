@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for Cookies of Selenium .NET library.
+
 # Cookies
 
 This is a JavaScript wrapper for Cookies of Selenium .NET library.

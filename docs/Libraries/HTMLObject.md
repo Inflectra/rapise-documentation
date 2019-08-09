@@ -1,3 +1,5 @@
+Summary: This object contains actions and properties for DOM elements of Web page.
+
 # HTMLObject
 
 This object contains actions and properties for DOM elements of Web page.

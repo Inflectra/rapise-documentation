@@ -1,3 +1,5 @@
+Summary: UI element class: LSRetail.NAV.POSControls.ButtonPad
+
 # NavButtonPad
 
 UI element class: LSRetail.NAV.POSControls.ButtonPad

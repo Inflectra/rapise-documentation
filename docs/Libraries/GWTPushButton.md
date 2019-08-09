@@ -1,3 +1,5 @@
+Summary: GWT PushButton. Use DoClick() to push it.
+
 # GWTPushButton
 
 GWT PushButton. Use DoClick() to push it.

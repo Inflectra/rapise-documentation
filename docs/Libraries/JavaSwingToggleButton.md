@@ -1,3 +1,5 @@
+Summary: Java Swing ToggleButton.
+
 # JavaSwingToggleButton
 
 Java Swing ToggleButton.

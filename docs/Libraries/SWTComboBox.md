@@ -1,3 +1,5 @@
+Summary: Java SWT Combobox.
+
 # SWTComboBox
 
 Java SWT Combobox.

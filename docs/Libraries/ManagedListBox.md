@@ -1,3 +1,5 @@
+Summary: Managed ListBox.
+
 # ManagedListBox
 
 Managed ListBox.

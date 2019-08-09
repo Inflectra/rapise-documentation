@@ -1,3 +1,5 @@
+Summary: UI element class: javax.swing.JPopupMenu
+
 # JavaSwingPopupMenu
 
 UI element class: javax.swing.JPopupMenu

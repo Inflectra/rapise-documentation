@@ -1,3 +1,5 @@
+Summary: DevXpress RangeTrackBarControl.
+
 # DXRangeTrackBarControl
 
 DevXpress RangeTrackBarControl.

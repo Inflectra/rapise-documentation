@@ -1,3 +1,5 @@
+Summary: Telerik RadDateTimePicker.
+
 # TelerikRadDateTimePicker
 
 Telerik RadDateTimePicker.

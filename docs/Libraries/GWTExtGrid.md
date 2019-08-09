@@ -1,3 +1,5 @@
+Summary: GWT-Ext Grid.
+
 # GWTExtGrid
 
 GWT-Ext Grid.

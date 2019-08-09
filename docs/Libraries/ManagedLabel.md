@@ -1,3 +1,5 @@
+Summary: Managed Label.
+
 # ManagedLabel
 
 Managed Label.

@@ -1,3 +1,5 @@
+Summary: Standard YUI SplitButton.
+
 # YUISplitButton
 
 Standard YUI SplitButton.

@@ -1,3 +1,5 @@
+Summary: Button control.
+
 # SimpleButton
 
 Button control.
