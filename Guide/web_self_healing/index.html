@@ -2996,7 +2996,7 @@
 <p>When you run a test and an element is found with traditional XPath locator then full-path locator is not used. There is nothing to repair. But if XPath generated for an element during recording or manually created by a tester is not valid then full-path locator is used to find the most suitable element on the page. When full-path locator is used you get the following healing notification in the report:</p>
 <p><img src="/Guide/img/web_self_healing_report.png" width="784" /></p>
 <p>The healing notification indicates that an element was found with some confidence, it is a number from zero to 100%. In the notification details you can find the difference between recorded and matched elements. You can also see the images of the recorded and found elements. This information is a clue to either accept found element or manually fix the test.</p>
-<p>The format of the match differences is:</p>
+<p>The format of the element locator difference report is:</p>
 <pre><code class="nohighlight">Level: N, attribute: A, expected: V1, actual: V2
 </code></pre>
 
@@ -3006,14 +3006,14 @@
 <li><strong>V1</strong> - expected/recorded attribute value.</li>
 <li><strong>V2</strong> - actual value of this attribute captured during playback of the test.</li>
 </ul>
-<p>First image in the details of the match is expected/recorded snapshot of the element. Second image is what was shot during playback.</p>
+<p>First image in the details of the difference report is expected/recorded snapshot of the element. Second image is what was shot during playback.</p>
 <h2 id="usage-scenarios">Usage Scenarios</h2>
 <h3 id="take-no-action">Take no Action</h3>
 <p>This is the simplest yet powerful approach. If a test passes and all elements are found with pretty good confidence then there may be no reason to fix the test.</p>
 <h3 id="use-match-details-to-build-webappprofile">Use Match Details to Build WebAppProfile</h3>
-<p>When you analyze differences between expected and matched elements you may get ideas to start using or improve your <a href="../web_app_profile/">WebAppProfile</a>.</p>
+<p>When you analyze differences between expected and found elements you may get ideas to start using or improve your <a href="../web_app_profile/">WebAppProfile</a>.</p>
 <h3 id="use-object-manager">Use Object Manager</h3>
-<p>During playback Rapise takes snapshots of elements matched by full-path locator. So after playback you can use Object Manager to replace old locators with new ones. If there are healing notifications after test playback Rapise automatically shows the prompt to open Object Manager. You can turn this prompt off, see the next section.</p>
+<p>During playback Rapise takes snapshots of elements found by full-path locator. So after playback you can use Object Manager to replace old locators with new ones. If there are healing notifications after test playback Rapise automatically shows the prompt to open Object Manager. You can turn this prompt off, see the next section.</p>
 <p><img src="/Guide/img/web_self_healing_prompt.png" width="443"></p>
 <p><img src="/Guide/img/web_self_healing_object_manager.png" width="890"></p>
 <h2 id="configuration">Configuration</h2>
@@ -3046,7 +3046,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

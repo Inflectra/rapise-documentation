@@ -3031,7 +3031,7 @@
 </li>
 </ul>
 <h2 id="anchors">Anchors</h2>
-<p>When element XPath is recorded and an element belongs to a DOM sub-tree of an anchor then anchor XPath is always appended to element XPath.</p>
+<p>When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element then XPath of the element will start with XPath of the anchor element.</p>
 <p>Let's look at the example. Here we have a table built with DIVs and ARIA roles.</p>
 <pre><code class="html">&lt;div id=&quot;Customers&quot; role=&quot;grid&quot;&gt;
     &lt;div role=&quot;row&quot;&gt;
@@ -3055,7 +3055,7 @@
 </code></pre>
 
 <p>The locator is now bound to the table. If another element with <code>Contoso</code> title appears somewhere on the page (outside the table) we'll find the correct element.</p>
-<p>Here is more complex and real-life example. In <a href="https://dynamics.microsoft.com/en-us/business-central/overview/">Microsoft Dynamics 365 Business Central</a> application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with <code>spa-view</code> class. When you move from one form to another - old forms are not unloaded an continue to sit in the DOM tree. They just have lower <code>z-index</code> then currently active form.</p>
+<p>Here is more complex and real-life example. In <a href="https://dynamics.microsoft.com/en-us/business-central/overview/">Microsoft Dynamics 365 Business Central</a> application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with <code>spa-view</code> class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower <code>z-index</code> then currently active form.</p>
 <p><img src="/Guide/img/web_app_profile_hidden_layers.png" width="485"/></p>
 <p>It means that when Rapise searches for an element during test playback it should work with the topmost <code>spa-view</code>.</p>
 <p>To achieve this goal we define an anchor in WebAppProfile for the application</p>
@@ -3102,7 +3102,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
