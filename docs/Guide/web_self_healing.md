@@ -26,7 +26,7 @@ When you run a test and an element is found with traditional XPath locator then 
 
 The healing notification indicates that an element was found with some confidence, it is a number from zero to 100%. In the notification details you can find the difference between recorded and matched elements. You can also see the images of the recorded and found elements. This information is a clue to either accept found element or manually fix the test.
 
-The format of the match differences is:
+The format of the element locator difference report is:
 
 ```nohighlight
 Level: N, attribute: A, expected: V1, actual: V2
@@ -37,7 +37,7 @@ Level: N, attribute: A, expected: V1, actual: V2
 - **V1** - expected/recorded attribute value.
 - **V2** - actual value of this attribute captured during playback of the test.
 
-First image in the details of the match is expected/recorded snapshot of the element. Second image is what was shot during playback.
+First image in the details of the difference report is expected/recorded snapshot of the element. Second image is what was shot during playback.
 
 ## Usage Scenarios
 
@@ -47,11 +47,11 @@ This is the simplest yet powerful approach. If a test passes and all elements ar
 
 ### Use Match Details to Build WebAppProfile
 
-When you analyze differences between expected and matched elements you may get ideas to start using or improve your [WebAppProfile](web_app_profile.md).
+When you analyze differences between expected and found elements you may get ideas to start using or improve your [WebAppProfile](web_app_profile.md).
 
 ### Use Object Manager
 
-During playback Rapise takes snapshots of elements matched by full-path locator. So after playback you can use Object Manager to replace old locators with new ones. If there are healing notifications after test playback Rapise automatically shows the prompt to open Object Manager. You can turn this prompt off, see the next section.
+During playback Rapise takes snapshots of elements found by full-path locator. So after playback you can use Object Manager to replace old locators with new ones. If there are healing notifications after test playback Rapise automatically shows the prompt to open Object Manager. You can turn this prompt off, see the next section.
 
 <img src="/Guide/img/web_self_healing_prompt.png" width="443">
 

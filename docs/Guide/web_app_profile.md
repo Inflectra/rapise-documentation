@@ -56,7 +56,7 @@ The default profile looks like this:
 
 ## Anchors
 
-When element XPath is recorded and an element belongs to a DOM sub-tree of an anchor then anchor XPath is always appended to element XPath.
+When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element then XPath of the element will start with XPath of the anchor element.
 
 Let's look at the example. Here we have a table built with DIVs and ARIA roles.
 
@@ -90,7 +90,7 @@ we'll get the locator as
 
 The locator is now bound to the table. If another element with `Contoso` title appears somewhere on the page (outside the table) we'll find the correct element.
 
-Here is more complex and real-life example. In [Microsoft Dynamics 365 Business Central](https://dynamics.microsoft.com/en-us/business-central/overview/) application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with `spa-view` class. When you move from one form to another - old forms are not unloaded an continue to sit in the DOM tree. They just have lower `z-index` then currently active form.
+Here is more complex and real-life example. In [Microsoft Dynamics 365 Business Central](https://dynamics.microsoft.com/en-us/business-central/overview/) application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with `spa-view` class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower `z-index` then currently active form.
 
 <img src="/Guide/img/web_app_profile_hidden_layers.png" width="485"/>
 
