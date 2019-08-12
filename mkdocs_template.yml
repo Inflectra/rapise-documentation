@@ -205,6 +205,8 @@ pages:
             - 'Web Testing': 'Guide/web_testing.md'
             - 'Cross Browser Testing': 'Guide/cross_browser_testing.md'
             - 'Setting Up Web Browsers': 'Guide/setting_up_web_browsers.md'
+            - 'Web Application Profile': 'Guide/web_app_profile.md'
+            - 'Self-healing Locators': 'Guide/web_self_healing.md'
             - 'XPath': 'Guide/xpath.md'
             - 'CSS': 'Guide/css.md'
         - 'Selenium WebDriver':

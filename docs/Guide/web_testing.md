@@ -30,6 +30,8 @@ In addition to the usual [recording](recording.md), [learning](learn_object.md) 
 - [Web Browser Profiles](browser_settings.md) - How to configure browsers to record and playback tests via Rapise native connectors.
 - [Selenium Profiles](selenium_settings_dialog.md) - How to configure Rapise to playback tests on Selenium nodes.
 - [Web Spy](web_spy.md) - How to use the Web Spy to inspect web pages and dynamically query for HTML elements.
+- [Web Application Profile](web_app_profile.md) - How to improve automatic generation of Web element locators.
+- [Self-healing Web Locators](web_self_healing.md) - How to enable and use advanced maintenance features for Web testing.
 - [XPath](xpath.md) - An explanation of the XPath language, how it can be used to dynamically query objects in web application and some examples.
 - [CSS](css.md) - An explanation of how to use CSS selectors (common in frameworks such as jQuery) to dynamically query objects in web applications.
 - [Web Testing Tutorial](tutorial_record_and_playback.md) - a basic example of how to record, learn and playback tests using a our sample web application.

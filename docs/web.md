@@ -8,6 +8,10 @@ To use Chrome or Firefox browser for [recording](/Guide/recording/) you may need
 
 - [Setting Up Web Browsers](/Guide/setting_up_web_browsers/)
 
+To improve default recording experience get familiar with
+
+- [Web Application Profiles](/Guide/web_app_profile/)
+
 ## Webinars
 
 - [Introduction to Test Automation with Rapise](https://youtu.be/X0RyPPAQhFk)
@@ -15,4 +19,5 @@ To use Chrome or Firefox browser for [recording](/Guide/recording/) you may need
 
 ## New in Rapise 6.2
 
+- [Self-healing Web Locators](/Guide/web_self_healing/)
 - [Reconnect WebDriver Session](/Guide/selenium_reconnect/)
