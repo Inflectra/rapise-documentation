@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements SOAP service client.
+
 # SOAPService
 
 This behavior pattern implements SOAP service client.
@@ -53,7 +55,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 #### Credential
 
 
-The HTTP Basic Authentication Credentials (if any).<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var credential = {};</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">credential.UserName = "fredbloggs";</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">credential.Password = "MyPassword";</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("Operation_Name").SetCredential(credential);</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table>
+The HTTP Basic Authentication Credentials (if any).
+Sample code:
+
+```javascript
+var credential = {};
+credential.UserName = "fredbloggs";
+credential.Password = "MyPassword";
+SeS("Operation_Name").SetCredential(credential);
+```
 
 			
 	
@@ -121,7 +131,17 @@ Accessors: GetResponseBodyText
 #### ResponseHeaders
 
 
-Returns the list of HTTP headers returned with the HTTP response.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var headers = SeS("Operation_Name").GetResponseHeaders();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">for (var i = 0; i < headers.length; i++)</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">{</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var name = headers[i].Name;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var value = headers[i].Value;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">}</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table>
+Returns the list of HTTP headers returned with the HTTP response.
+Sample code:
+
+```javascript
+var headers = SeS("Operation_Name").GetResponseHeaders();
+for (var i = 0; i < headers.length; i++)
+{
+    var name = headers[i].Name;
+    var value = headers[i].Value;
+}
+```
 
 			
 	
