@@ -1,3 +1,5 @@
+Summary: Infragistics UltraTextEditor.
+
 # UltraFormattedLinkLabel
 
 Infragistics UltraTextEditor.

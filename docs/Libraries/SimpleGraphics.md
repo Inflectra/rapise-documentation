@@ -1,3 +1,5 @@
+Summary: Graphics control.
+
 # SimpleGraphics
 
 Graphics control.

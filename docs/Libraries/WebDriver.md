@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
+
 # WebDriver
 
 This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
@@ -19,6 +21,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[Actions](#Actions) | Gets Actions object. |
+|	[ClearSessions](#ClearSessions) | Deletes active sessions on Selenium grid. |
 |	[Close](#Close) | Close the Browser and Dispose of WebDriver. |
 |	[Cookies](#Cookies) | Gets Cookies object. |
 |	[CreateDriver](#CreateDriver) | This will create a WebDriver for currently selected Browser profile. |
@@ -85,6 +88,17 @@ Gets Actions object.
 
 
 <a name="see.also.webdriver.actions"></a>
+
+<a name="ClearSessions"></a>    
+#### ClearSessions()
+
+Deletes active sessions on Selenium grid.
+
+
+
+
+
+<a name="see.also.webdriver.clearsessions"></a>
 
 <a name="Close"></a>    
 #### Close()
@@ -708,9 +722,16 @@ Disconnects from the Browser.
 <a name="see.also.webdriver.quit"></a>
 
 <a name="ReconnectSession"></a>    
-#### ReconnectSession()
+#### ReconnectSession(autoCreate)
 
 Reads session information produced by SaveSession and connects to the mobile target.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| autoCreate | boolean |	'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: false. |
 
 
 

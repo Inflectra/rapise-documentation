@@ -1,3 +1,5 @@
+Summary: UIACheckBox
+
 # UIACheckBox
 
 Extends [UIAObject](UIAObject.md)

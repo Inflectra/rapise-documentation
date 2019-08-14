@@ -1,3 +1,5 @@
+Summary: UIASlider
+
 # UIASlider
 
 Extends [UIAObject](UIAObject.md)

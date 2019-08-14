@@ -1,3 +1,5 @@
+Summary: DevXpress Ribbon.
+
 # DXRibbon
 
 DevXpress Ribbon.

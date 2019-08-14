@@ -1,3 +1,5 @@
+Summary: GWT-Ext ComboBox.
+
 # GWTExtComboBox
 
 GWT-Ext ComboBox.

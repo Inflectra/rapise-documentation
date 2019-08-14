@@ -1,3 +1,5 @@
+Summary: YUI Vertical Slider.
+
 # YUISliderV
 
 YUI Vertical Slider.

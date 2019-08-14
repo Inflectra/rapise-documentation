@@ -1,3 +1,5 @@
+Summary: Managed DataGridView.
+
 # ManagedDataGridView
 
 Managed DataGridView.

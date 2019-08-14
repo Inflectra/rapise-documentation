@@ -1,3 +1,5 @@
+Summary: C1TrueDBGrid
+
 # C1TrueDBGrid
 
 Extends [ActiveXObject](ActiveXObject.md)

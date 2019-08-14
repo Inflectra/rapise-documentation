@@ -1,3 +1,5 @@
+Summary: Infragistics UltraCurrencyEditor.
+
 # UltraCurrencyEditor
 
 Infragistics UltraCurrencyEditor.

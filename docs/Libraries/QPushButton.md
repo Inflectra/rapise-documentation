@@ -1,3 +1,5 @@
+Summary: This matches a Qt push button. Use DoAction to press it.
+
 # QPushButton
 
 This matches a Qt push button. Use DoAction to press it.

@@ -1,3 +1,5 @@
+Summary: Used to show long text message in the report.
+
 # SeSReportText
 
 Used to show long text message in the report.

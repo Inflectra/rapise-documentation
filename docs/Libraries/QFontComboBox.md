@@ -1,3 +1,5 @@
+Summary: This is the Qt font combo box. Use DoSelectItem to select a particular font.
+
 # QFontComboBox
 
 This is the Qt font combo box. Use DoSelectItem to select a particular font.

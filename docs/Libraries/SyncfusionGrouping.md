@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Grouping control.
+
 # SyncfusionGrouping
 
 This behavior pattern implements standard behavior for Grouping control.

@@ -1,3 +1,5 @@
+Summary: Telerik RadCheckButton.
+
 # TelerikRadCheckBox
 
 Telerik RadCheckButton.

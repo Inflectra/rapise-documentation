@@ -1,3 +1,5 @@
+Summary: GWT-Ext ToggleButton.
+
 # GWTExtToggleButton
 
 GWT-Ext ToggleButton.

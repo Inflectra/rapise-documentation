@@ -1,3 +1,5 @@
+Summary: Telerik RadTrackBar (slider).
+
 # TelerikRadTrackBar
 
 Telerik RadTrackBar (slider).

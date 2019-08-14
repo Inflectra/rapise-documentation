@@ -1,3 +1,5 @@
+Summary: JQueryProgressbar
+
 # JQueryProgressbar
 
 Extends [HTMLObject](HTMLObject.md)

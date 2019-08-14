@@ -1,3 +1,5 @@
+Summary: Infragistics UltraGrid.
+
 # UltraGrid
 
 Infragistics UltraGrid.

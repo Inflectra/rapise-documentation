@@ -1,3 +1,5 @@
+Summary: Telerik RadSpinEditor.
+
 # TelerikRadSpinEditor
 
 Telerik RadSpinEditor.

@@ -1,3 +1,5 @@
+Summary: UIAProgressBar
+
 # UIAProgressBar
 
 Extends [UIAObject](UIAObject.md)

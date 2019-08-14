@@ -1,3 +1,5 @@
+Summary: Telerik RadLabel.
+
 # TelerikRadLabel
 
 Telerik RadLabel.

@@ -1,3 +1,5 @@
+Summary: DevXpress MemoExEdit.
+
 # DXMemoExEdit
 
 DevXpress MemoExEdit.

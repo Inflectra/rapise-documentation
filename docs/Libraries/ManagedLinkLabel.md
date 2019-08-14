@@ -1,3 +1,5 @@
+Summary: Managed Link Label.
+
 # ManagedLinkLabel
 
 Managed Link Label.

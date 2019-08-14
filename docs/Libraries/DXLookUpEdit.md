@@ -1,3 +1,5 @@
+Summary: DevXpress LookUpEdit.
+
 # DXLookUpEdit
 
 DevXpress LookUpEdit.

@@ -1,3 +1,5 @@
+Summary: DevXpress NavBar.
+
 # DXNavBarControl
 
 DevXpress NavBar.

@@ -1,3 +1,5 @@
+Summary: DevXpress ImageEdit.
+
 # DXImageEdit
 
 DevXpress ImageEdit.

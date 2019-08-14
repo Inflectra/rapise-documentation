@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics NAV toolbar with menu items.
+
 # DynamicsNAVToolBar
 
 Behavior patterm for Dynamics NAV toolbar with menu items.

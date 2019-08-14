@@ -1,3 +1,5 @@
+Summary: YUI ButtonMenu. It is a container attached to a menu button. Using this container is useful when you need to house HTML content or another YUI widget, such as a Calendar or Color Picker.
+
 # YUIButtonMenu
 
 YUI ButtonMenu. It is a container attached to a menu button. Using this container is useful when you need to house HTML content or another YUI widget, such as a Calendar or Color Picker.

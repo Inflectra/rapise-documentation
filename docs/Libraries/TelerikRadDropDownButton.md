@@ -1,3 +1,5 @@
+Summary: Telerik RadDropDownButton.
+
 # TelerikRadDropDownButton
 
 Telerik RadDropDownButton.

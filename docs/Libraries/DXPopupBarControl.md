@@ -1,3 +1,5 @@
+Summary: DevXpress DXPopupBarControl.
+
 # DXPopupBarControl
 
 DevXpress DXPopupBarControl.

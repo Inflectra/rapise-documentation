@@ -1,3 +1,5 @@
+Summary: Generic .NET Managed Object.
+
 # ManagedObject
 
 Generic .NET Managed Object.

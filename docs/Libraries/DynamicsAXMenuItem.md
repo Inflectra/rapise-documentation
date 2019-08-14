@@ -1,3 +1,5 @@
+Summary: DynamicsAXMenuItem
+
 # DynamicsAXMenuItem
 
 Extends [UIAObject](UIAObject.md)

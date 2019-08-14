@@ -1,3 +1,5 @@
+Summary: C1TrueDBListCombo
+
 # C1TrueDBListCombo
 
 Extends [ActiveXObject](ActiveXObject.md)

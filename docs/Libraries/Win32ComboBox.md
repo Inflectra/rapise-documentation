@@ -1,3 +1,5 @@
+Summary: This is generic Win32 combo box. Use DoSelectItem to select a particular item.
+
 # Win32ComboBox
 
 This is generic Win32 combo box. Use DoSelectItem to select a particular item.

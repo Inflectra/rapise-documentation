@@ -1,3 +1,5 @@
+Summary: Java Text Area.
+
 # JavaTextArea
 
 Java Text Area.

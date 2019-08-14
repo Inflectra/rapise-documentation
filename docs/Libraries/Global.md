@@ -1,3 +1,5 @@
+Summary: Global object. Use it to perform actions not related to a particular object. You do not need to
+
 # Global
 
 Global object. Use it to perform actions not related to a particular object. You do not need torecord or learn this object, it is always automatically available in any test.
@@ -25,7 +27,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoDecrypt](#DoDecrypt) | Decrypts a piece of text. |
 |	[DoEncrypt](#DoEncrypt) | Encrypts a piece of text. |
 |	[DoInvokeTest](#DoInvokeTest) | Invokes another test (aka subtest). |
-|	[DoInvokeTestParallel](#DoInvokeTestParallel) |  |
+|	[DoInvokeTestParallel](#DoInvokeTestParallel) | Executes specified test in few parallel threads. |
 |	[DoKillByName](#DoKillByName) | Terminates a given process. |
 |	[DoKillByPid](#DoKillByPid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
 |	[DoLaunch](#DoLaunch) | Executes a command specified in cmdLine. |
@@ -226,18 +228,37 @@ boolean: 'true' if the test passed, 'false' otherwise.
 <a name="DoInvokeTestParallel"></a>    
 #### DoInvokeTestParallel(testPath, threads, commonParams)
 
+Executes specified test in few parallel threads. Pass additional arguments in 'threads' param
 
+```javascript             
+DoInvokeTestParallel(
+	"t2/t2.sstest",
+	{
+		"THR01": {
+			g_browserLibrary: 'Selenium Chrome'
+		},
+		"THR02": {
+			g_browserLibrary: 'Selenium Firefox'
+		}
+	}
+);
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| testPath |  |	 |
-| threads |  |	 |
-| commonParams |  |	 |
+| testPath | string |	Path to .sstest to execute. |
+| threads | object |	Structure, defining parallel threads to execute. |
+| commonParams | object |	Object containing {name:'value',...} pairs to be passed as parameters to all tests.<br>Optional. |
 
 
+
+
+**Returns:**
+
+boolean: true, if execution finished with exit code 0 (all tests executed successfully)
 
 
 

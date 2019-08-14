@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for DatePicker control.
+
 # DomDynamicsAXDatePicker
 
 This behavior pattern implements standard behavior for DatePicker control.

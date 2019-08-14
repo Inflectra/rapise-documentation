@@ -1,3 +1,5 @@
+Summary: MSComCtlSlider20
+
 # MSComCtlSlider20
 
 Extends [ActiveXObject](ActiveXObject.md)

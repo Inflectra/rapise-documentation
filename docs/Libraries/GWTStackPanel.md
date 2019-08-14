@@ -1,3 +1,5 @@
+Summary: GWT StackPanel.
+
 # GWTStackPanel
 
 GWT StackPanel.

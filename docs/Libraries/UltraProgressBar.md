@@ -1,3 +1,5 @@
+Summary: Infragistics UltraProgressBar.
+
 # UltraProgressBar
 
 Infragistics UltraProgressBar.

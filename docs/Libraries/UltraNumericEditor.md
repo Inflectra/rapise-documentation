@@ -1,3 +1,5 @@
+Summary: Infragistics UltraNumericEditor.
+
 # UltraNumericEditor
 
 Infragistics UltraNumericEditor.

@@ -1,3 +1,5 @@
+Summary: DevXpress ImageComboBoxEdit.
+
 # DXImageComboBoxEdit
 
 DevXpress ImageComboBoxEdit.

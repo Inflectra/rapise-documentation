@@ -1,3 +1,5 @@
+Summary: This is a generic Win32 link. Use DoAction to activate the link.
+
 # Win32Link
 
 This is a generic Win32 link. Use DoAction to activate the link.

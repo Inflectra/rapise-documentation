@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics AX combo box.
+
 # DynamicsAXComboBox
 
 Behavior patterm for Dynamics AX combo box.

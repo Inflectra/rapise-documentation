@@ -1,3 +1,5 @@
+Summary: Behavior patterm for dropdown (popup).
+
 # UIAutomationMenuDropDown
 
 Behavior patterm for dropdown (popup).

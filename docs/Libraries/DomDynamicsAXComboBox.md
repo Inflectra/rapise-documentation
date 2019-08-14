@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for ComboBox control.
+
 # DomDynamicsAXComboBox
 
 This behavior pattern implements standard behavior for ComboBox control.

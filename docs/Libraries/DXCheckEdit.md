@@ -1,3 +1,5 @@
+Summary: DevXpress CheckEdit.
+
 # DXCheckEdit
 
 DevXpress CheckEdit.

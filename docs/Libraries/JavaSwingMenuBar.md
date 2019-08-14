@@ -1,3 +1,5 @@
+Summary: Java Swing Menu Bar.
+
 # JavaSwingMenuBar
 
 Java Swing Menu Bar.

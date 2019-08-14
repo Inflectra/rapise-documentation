@@ -1,3 +1,5 @@
+Summary: AndroidSwitch
+
 # AndroidSwitch
 
 Extends [AndroidObject](AndroidObject.md)

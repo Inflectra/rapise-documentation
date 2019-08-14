@@ -1,3 +1,5 @@
+Summary: This is generic Win32 popup menu. Use DoClickItem to click a particular item from the menu.
+
 # Win32PopupMenu
 
 This is generic Win32 popup menu. Use DoClickItem to click a particular item from the menu.

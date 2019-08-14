@@ -1,3 +1,5 @@
+Summary: Managed TreeView.
+
 # ManagedTreeView
 
 Managed TreeView.

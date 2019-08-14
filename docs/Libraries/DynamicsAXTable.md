@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics AX grid/table.
+
 # DynamicsAXTable
 
 Behavior patterm for Dynamics AX grid/table.

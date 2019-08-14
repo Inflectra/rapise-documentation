@@ -1,3 +1,5 @@
+Summary: DevXpress DateEdit.
+
 # DXDateEdit
 
 DevXpress DateEdit.

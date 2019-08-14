@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Lightning ListBox control.
+
 # DomLightningListBox
 
 This behavior pattern implements standard behavior for Lightning ListBox control.

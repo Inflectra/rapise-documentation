@@ -1,3 +1,5 @@
+Summary: DevXpress RadioGroup.
+
 # DXRadioGroup
 
 DevXpress RadioGroup.

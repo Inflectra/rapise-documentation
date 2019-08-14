@@ -1,3 +1,5 @@
+Summary: This is generic Win32 radio button. Use DoAction to select the button.
+
 # Win32RadioButton
 
 This is generic Win32 radio button. Use DoAction to select the button.

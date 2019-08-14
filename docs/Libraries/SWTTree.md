@@ -1,3 +1,5 @@
+Summary: Java SWT Tree.
+
 # SWTTree
 
 Java SWT Tree.

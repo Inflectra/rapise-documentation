@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics NAV grid/table.
+
 # DynamicsNAVTable
 
 Behavior patterm for Dynamics NAV grid/table.

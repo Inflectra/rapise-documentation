@@ -24,3 +24,4 @@ You can find the mobile sample tests and sample Applications (called AUTAndroid 
 
 - [Mobile Settings Dialog](mobile_settings_dialog.md) - for information on setting up the different **mobile profiles** for the mobile devices you will be testing.
 - [Mobile Object Spy](object_spy_mobile.md) - for information on how Rapise connects to the device and lets you view the objects in the tested application.
+- [Reconnect Mobile Session](mobile_reconnect.md) - to learn how to save time when recording, fixing, and running tests.

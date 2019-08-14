@@ -1,3 +1,5 @@
+Summary: DevXpress MarqueeProgressBarControl.
+
 # DXMarqueeProgressBarControl
 
 DevXpress MarqueeProgressBarControl.

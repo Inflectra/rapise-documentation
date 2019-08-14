@@ -1,3 +1,5 @@
+Summary: SSTab
+
 # SSTab
 
 Extends [ActiveXObject](ActiveXObject.md)

@@ -1,3 +1,5 @@
+Summary: Telerik RadToggleButton.
+
 # TelerikRadToggleButton
 
 Telerik RadToggleButton.

@@ -1,3 +1,5 @@
+Summary: Infragistics UltraComboEditor.
+
 # UltraFontNameEditor
 
 Infragistics UltraComboEditor.

@@ -1,3 +1,5 @@
+Summary: Qt Radio button.
+
 # QRadioButton
 
 Qt Radio button.

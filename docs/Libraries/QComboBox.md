@@ -1,3 +1,5 @@
+Summary: This is the Qt combo box. Use DoSelectItem to select a particular item.
+
 # QComboBox
 
 This is the Qt combo box. Use DoSelectItem to select a particular item.

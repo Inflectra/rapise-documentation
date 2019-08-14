@@ -1,3 +1,5 @@
+Summary: Static text control.
+
 # SimpleRadioButton
 
 Static text control.

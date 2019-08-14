@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Lightning Grid control.
+
 # DomLightningGrid
 
 This behavior pattern implements standard behavior for Lightning Grid control.

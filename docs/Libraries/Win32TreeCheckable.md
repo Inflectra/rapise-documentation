@@ -1,3 +1,5 @@
+Summary: This is generic Win32 tree with a check box near each item. Use DoSelectItem to select and DoExpand to expand/collapse a particular item. Use DoCheckItem to change corresponding check box state. 
+
 # Win32TreeCheckable
 
 This is generic Win32 tree with a check box near each item. Use DoSelectItem to select and DoExpand to expand/collapse a particular item. Use DoCheckItem to change corresponding check box state. 

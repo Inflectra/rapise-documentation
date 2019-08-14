@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for ActionSearch control.
+
 # DomDynamicsAXActionSearch
 
 This behavior pattern implements standard behavior for ActionSearch control.

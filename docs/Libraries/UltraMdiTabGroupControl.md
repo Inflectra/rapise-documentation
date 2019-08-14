@@ -1,3 +1,5 @@
+Summary: UI element class: Infragistics.Win.UltraWinTabbedMdi.MdiTabGroupControl
+
 # UltraMdiTabGroupControl
 
 UI element class: Infragistics.Win.UltraWinTabbedMdi.MdiTabGroupControl

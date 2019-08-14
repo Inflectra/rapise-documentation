@@ -1,3 +1,5 @@
+Summary: Telerik RadDropDownList.
+
 # TelerikRadDropDownList
 
 Telerik RadDropDownList.

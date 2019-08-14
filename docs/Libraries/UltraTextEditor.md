@@ -1,3 +1,5 @@
+Summary: Infragistics UltraTextEditor.
+
 # UltraTextEditor
 
 Infragistics UltraTextEditor.

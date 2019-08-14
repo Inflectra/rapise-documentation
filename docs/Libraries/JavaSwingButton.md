@@ -1,3 +1,5 @@
+Summary: Java Swing Button.
+
 # JavaSwingButton
 
 Java Swing Button.

@@ -1,3 +1,5 @@
+Summary: Used to show exception in the report.
+
 # SeSReportException
 
 Used to show exception in the report.

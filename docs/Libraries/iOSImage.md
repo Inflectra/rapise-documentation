@@ -1,3 +1,5 @@
+Summary: iOSImage
+
 # iOSImage
 
 Extends [iOSObject](iOSObject.md)

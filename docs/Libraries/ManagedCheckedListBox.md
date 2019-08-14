@@ -1,3 +1,5 @@
+Summary: Managed Checked ListBox.
+
 # ManagedCheckedListBox
 
 Managed Checked ListBox.

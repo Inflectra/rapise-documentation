@@ -1,3 +1,5 @@
+Summary: Tester object. Use it to perform assertions during test playback and output relevant information to the report.
+
 # Tester
 
 Tester object. Use it to perform assertions during test playback and output relevant information to the report.You do not need to record or learn this object, it is always automatically available in any test.

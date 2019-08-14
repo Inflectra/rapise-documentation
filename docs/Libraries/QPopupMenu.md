@@ -1,3 +1,5 @@
+Summary: This is generic Qt popup menu. Use DoClickItem to click a particular item from the menu.
+
 # QPopupMenu
 
 This is generic Qt popup menu. Use DoClickItem to click a particular item from the menu.

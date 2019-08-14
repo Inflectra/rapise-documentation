@@ -1,3 +1,5 @@
+Summary: Telerik RadTitleBar.
+
 # TelerikRadTitleBar
 
 Telerik RadTitleBar.

@@ -1,3 +1,5 @@
+Summary: This is generic Win32 button. Use DoAction to press it.
+
 # Win32Button
 
 This is generic Win32 button. Use DoAction to press it.

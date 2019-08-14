@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics AX menu.
+
 # DynamicsAXMenu
 
 Behavior patterm for Dynamics AX menu.

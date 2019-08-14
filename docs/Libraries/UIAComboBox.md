@@ -1,3 +1,5 @@
+Summary: UIAComboBox
+
 # UIAComboBox
 
 Extends [UIAObject](UIAObject.md)

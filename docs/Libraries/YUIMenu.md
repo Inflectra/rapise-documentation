@@ -1,3 +1,5 @@
+Summary: YUI Menu.
+
 # YUIMenu
 
 YUI Menu.

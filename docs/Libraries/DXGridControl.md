@@ -1,3 +1,5 @@
+Summary: DevXpress GridControl.
+
 # DXGridControl
 
 DevXpress GridControl.

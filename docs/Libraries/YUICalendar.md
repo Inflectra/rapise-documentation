@@ -1,3 +1,5 @@
+Summary: YUI Calendar.
+
 # YUICalendar
 
 YUI Calendar.

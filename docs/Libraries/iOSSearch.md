@@ -1,3 +1,5 @@
+Summary: iOSSearch
+
 # iOSSearch
 
 Extends [iOSObject](iOSObject.md)

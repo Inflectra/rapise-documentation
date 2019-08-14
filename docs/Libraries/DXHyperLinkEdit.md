@@ -1,3 +1,5 @@
+Summary: DevXpress HyperLinkEdit.
+
 # DXHyperLinkEdit
 
 DevXpress HyperLinkEdit.

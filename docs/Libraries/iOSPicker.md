@@ -1,3 +1,5 @@
+Summary: iOSPicker
+
 # iOSPicker
 
 Extends [iOSObject](iOSObject.md)

@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for CheckBox control.
+
 # DomDynamicsAXCheckBox
 
 This behavior pattern implements standard behavior for CheckBox control.

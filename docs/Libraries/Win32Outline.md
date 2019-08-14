@@ -1,3 +1,5 @@
+Summary: This is generic Win32 tree. Use DoSelectItem to select and DoExpand to expand/collapse a particular node.
+
 # Win32Outline
 
 This is generic Win32 tree. Use DoSelectItem to select and DoExpand to expand/collapse a particular node.

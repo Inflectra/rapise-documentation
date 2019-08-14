@@ -1,3 +1,5 @@
+Summary: DevXpress MRUEdit.
+
 # DXMRUEdit
 
 DevXpress MRUEdit.

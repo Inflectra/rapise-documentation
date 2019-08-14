@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for CrumbList control.
+
 # DomDynamicsAXCrumbList
 
 This behavior pattern implements standard behavior for CrumbList control.

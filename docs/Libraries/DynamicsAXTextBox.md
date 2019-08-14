@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for TextBox control.
+
 # DynamicsAXTextBox
 
 This behavior pattern implements standard behavior for TextBox control.

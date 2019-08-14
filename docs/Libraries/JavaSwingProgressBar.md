@@ -1,3 +1,5 @@
+Summary: Java Swing Progress Bar.
+
 # JavaSwingProgressBar
 
 Java Swing Progress Bar.

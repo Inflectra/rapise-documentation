@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for List control.
+
 # DomDynamicsCrmUnifiedInterfaceList
 
 This behavior pattern implements standard behavior for List control.

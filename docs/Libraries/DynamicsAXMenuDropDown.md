@@ -1,3 +1,5 @@
+Summary: Behavior patterm for Dynamics AX dropdown (popup).
+
 # DynamicsAXMenuDropDown
 
 Behavior patterm for Dynamics AX dropdown (popup).

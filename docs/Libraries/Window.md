@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for Window of Selenium .NET library.
+
 # Window
 
 This is a JavaScript wrapper for Window of Selenium .NET library.

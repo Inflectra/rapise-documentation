@@ -1,3 +1,5 @@
+Summary: SmartGwtDatePicker
+
 # SmartGwtDatePicker
 
 Extends [HTMLObject](HTMLObject.md)

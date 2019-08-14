@@ -1,3 +1,5 @@
+Summary: Used to show a bitmap picture in the report.
+
 # SeSReportImage
 
 Used to show a bitmap picture in the report.

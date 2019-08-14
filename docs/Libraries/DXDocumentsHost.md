@@ -1,3 +1,5 @@
+Summary: UI element class: DevExpress.XtraBars.Docking2010.DocumentsHost
+
 # DXDocumentsHost
 
 UI element class: DevExpress.XtraBars.Docking2010.DocumentsHost

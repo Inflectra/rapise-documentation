@@ -1,3 +1,5 @@
+Summary: UIAHyperlink
+
 # UIAHyperlink
 
 Extends [UIAObject](UIAObject.md)

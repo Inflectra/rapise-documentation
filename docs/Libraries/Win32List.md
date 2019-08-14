@@ -1,3 +1,5 @@
+Summary: This is generic Win32 list. Use DoSelectItem to select a particular item. 
+
 # Win32List
 
 This is generic Win32 list. Use DoSelectItem to select a particular item. 

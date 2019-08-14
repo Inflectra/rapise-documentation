@@ -1,3 +1,5 @@
+Summary: DevXpress ComboBoxEdit.
+
 # DXComboBoxEdit
 
 DevXpress ComboBoxEdit.

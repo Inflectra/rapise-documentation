@@ -1,3 +1,5 @@
+Summary: This is Qt read-only text label. Use GetText to read the current value of the label text.
+
 # QLabel
 
 This is Qt read-only text label. Use GetText to read the current value of the label text.

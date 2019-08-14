@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for Actions of Selenium .NET library.
+
 # Actions
 
 This is a JavaScript wrapper for Actions of Selenium .NET library.

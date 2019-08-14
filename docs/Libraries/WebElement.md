@@ -1,3 +1,5 @@
+Summary: This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.
+
 # WebElement
 
 This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For code complete feature use class name WebElementWrapper, e.g. <br><br><p style="margin-left: 30px;"><code>var /&#42;&#42;WebElementWrapper&#42;/el = WebDriver.FindElementById('username');</code></p>

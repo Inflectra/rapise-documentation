@@ -1,3 +1,5 @@
+Summary: YUI CheckButton.
+
 # YUICheckButton
 
 YUI CheckButton.

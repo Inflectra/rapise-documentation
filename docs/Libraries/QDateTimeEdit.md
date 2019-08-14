@@ -1,3 +1,5 @@
+Summary: This is Qt masked date edit box. Use DoSetDateTime to set the time value of the edit box and GetText to read current value.
+
 # QDateTimeEdit
 
 This is Qt masked date edit box. Use DoSetDateTime to set the time value of the edit box and GetText to read current value.

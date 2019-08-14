@@ -1,3 +1,5 @@
+Summary: DevXpress SpinEdit.
+
 # DXSpinEdit
 
 DevXpress SpinEdit.

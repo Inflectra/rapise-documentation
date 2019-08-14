@@ -1,3 +1,5 @@
+Summary: Managed Button.
+
 # ManagedButton
 
 Managed Button.

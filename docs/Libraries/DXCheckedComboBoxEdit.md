@@ -1,3 +1,5 @@
+Summary: DevXpress CheckedComboBoxEdit.
+
 # DXCheckedComboBoxEdit
 
 DevXpress CheckedComboBoxEdit.

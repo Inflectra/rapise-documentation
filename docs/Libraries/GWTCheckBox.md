@@ -1,3 +1,5 @@
+Summary: GWT CheckBox.
+
 # GWTCheckBox
 
 GWT CheckBox.

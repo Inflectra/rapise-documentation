@@ -1,3 +1,5 @@
+Summary: Infragistics UltraMaskedEdit.
+
 # UltraMaskedEdit
 
 Infragistics UltraMaskedEdit.

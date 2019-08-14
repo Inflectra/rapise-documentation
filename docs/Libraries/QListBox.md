@@ -1,3 +1,5 @@
+Summary: This is the Qt list box. Use DoSelectItem to select a particular item.
+
 # QListBox
 
 This is the Qt list box. Use DoSelectItem to select a particular item.

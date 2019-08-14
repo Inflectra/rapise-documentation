@@ -1,3 +1,5 @@
+Summary: This behavior pattern implements standard behavior for Number (SpinEdit) control.
+
 # HTML5Number
 
 This behavior pattern implements standard behavior for Number (SpinEdit) control.

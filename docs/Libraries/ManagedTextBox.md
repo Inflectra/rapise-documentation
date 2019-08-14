@@ -1,3 +1,5 @@
+Summary: Managed Text Editor.
+
 # ManagedTextBox
 
 Managed Text Editor.

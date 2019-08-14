@@ -1,3 +1,5 @@
+Summary: TabStrip20
+
 # TabStrip20
 
 Extends [ActiveXObject](ActiveXObject.md)

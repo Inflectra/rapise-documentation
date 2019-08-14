@@ -1,3 +1,5 @@
+Summary: DevXpress FontEdit.
+
 # DXFontEdit
 
 DevXpress FontEdit.

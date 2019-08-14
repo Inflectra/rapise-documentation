@@ -1,3 +1,5 @@
+Summary: YUI PushButton.
+
 # YUIPushButton
 
 YUI PushButton.

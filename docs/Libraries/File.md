@@ -1,3 +1,5 @@
+Summary: File object. Use it to perform actions not related to a particular object. You do not need to
+
 # File
 
 File object. Use it to perform actions not related to a particular object. You do not need torecord or learn this object, it is always automatically available in any test.
