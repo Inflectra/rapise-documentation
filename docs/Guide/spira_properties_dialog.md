@@ -17,3 +17,5 @@ The dialog box will list the following:
 - **Test Case** - this displays the name of the test case in SpiraTest that the test script is linked to
 
 If you want to unlink the current test script from SpiraTest (for example to save to a different SpiraTest project), click on the **Unlink from Test Case** button.
+
+If you have a test framework with sub-tests and you want to unlink all from SpiraTest, click on the **Unlink Test and Sub-Tests from Test Cases** button.
