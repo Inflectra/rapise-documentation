@@ -3093,7 +3093,15 @@
 <h3 id="property-detail">Property Detail</h3>
 <p><a name="Credential"></a></p>
 <h4 id="credential">Credential</h4>
-<p>The HTTP Basic Authentication Credentials (if any).<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var credential = {};</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">credential.UserName = "fredbloggs";</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">credential.Password = "MyPassword";</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("Operation_Name").SetCredential(credential);</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table><br><text styleclass="Normal">Another way is to pass user name and password as first and second parameter respectively, e.g. SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</text></p>
+<p>The HTTP Basic Authentication Credentials (if any).
+Sample code:</p>
+<pre><code class="javascript">var credential = {};
+credential.UserName = &quot;fredbloggs&quot;;
+credential.Password = &quot;MyPassword&quot;;
+SeS(&quot;Operation_Name&quot;).SetCredential(credential);
+</code></pre>
+
+<p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
 <p>Type: object</p>
 <p>Accessors: GetCredential, SetCredential</p>
 <p><a name="Method"></a></p>
@@ -3108,12 +3116,31 @@
 <p>Accessors: GetName</p>
 <p><a name="Parameters"></a></p>
 <h4 id="parameters">Parameters</h4>
-<p>The list of parameters available for this request url.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var parameters = SeS("Operation_Name").GetParameters();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">for (var i = 0; i &lt; parameters.length; i++)</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">{</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var name = parameters[i].Name;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var token = parameters[i].TokenName;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var value = parameters[i].Value;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">}</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table></p>
+<p>The list of parameters available for this request url.
+Sample code:</p>
+<pre><code class="javascript">var parameters = SeS(&quot;Operation_Name&quot;).GetParameters();
+for (var i = 0; i &lt; parameters.length; i++)
+{
+    var name = parameters[i].Name;
+    var token = parameters[i].TokenName;
+    var value = parameters[i].Value;
+}
+</code></pre>
+
 <p>Type: object</p>
 <p>Accessors: GetParameters, SetParameters</p>
 <p><a name="RequestBodyObject"></a></p>
 <h4 id="requestbodyobject">RequestBodyObject</h4>
-<p>The body of the HTTP request as a JavaScript object.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var book = {};</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">book.Name = "A Christmas Carol";</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">book.AuthorId = 2;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">book.GenreId = 3;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("LibraryInformationSystem_Insert_Book").SetRequestBodyObject(book);</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("LibraryInformationSystem_Insert_Book").DoExecute({"session_id":sessionId});</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table></p>
+<p>The body of the HTTP request as a JavaScript object.
+Sample code:</p>
+<pre><code class="javascript">var book = {};
+book.Name = &quot;A Christmas Carol&quot;;
+book.AuthorId = 2;
+book.GenreId = 3;
+SeS(&quot;LibraryInformationSystem_Insert_Book&quot;).SetRequestBodyObject(book);
+SeS(&quot;LibraryInformationSystem_Insert_Book&quot;).DoExecute({&quot;session_id&quot;:sessionId});
+</code></pre>
+
 <p>Type: object</p>
 <p>Accessors: GetRequestBodyObject, SetRequestBodyObject</p>
 <p><a name="RequestBodyText"></a></p>
@@ -3123,12 +3150,26 @@
 <p>Accessors: GetRequestBodyText, SetRequestBodyText</p>
 <p><a name="RequestHeaders"></a></p>
 <h4 id="requestheaders">RequestHeaders</h4>
-<p>The list of HTTP headers that are part of this request.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var headers = SeS("Operation_Name").GetRequestHeaders();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">for (var i = 0; i &lt; headers.length; i++)</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">{</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var name = headers[i].Name;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var value = headers[i].Value;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">}</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table></p>
+<p>The list of HTTP headers that are part of this request.
+Sample code:</p>
+<pre><code class="javascript">var headers = SeS(&quot;Operation_Name&quot;).GetRequestHeaders();
+for (var i = 0; i &lt; headers.length; i++)
+{
+    var name = headers[i].Name;
+    var value = headers[i].Value;
+}
+</code></pre>
+
 <p>Type: object</p>
 <p>Accessors: GetRequestHeaders, SetRequestHeaders</p>
 <p><a name="ResponseBodyObject"></a></p>
 <h4 id="responsebodyobject">ResponseBodyObject</h4>
-<p>The body of the HTTP response deserialized from JSON into a JavaScript object.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table></p>
+<p>The body of the HTTP response deserialized from JSON into a JavaScript object.
+Sample code:</p>
+<pre><code class="javascript">SeS(&quot;LibraryInformationSystem_Get_BookById&quot;).DoExecute({&quot;session_id&quot;:sessionId, &quot;book_id&quot;:bookId});
+var book = SeS(&quot;LibraryInformationSystem_Get_BookById&quot;).GetResponseBodyObject();
+</code></pre>
+
 <p><strong>Getter Parameters:</strong></p>
 <table>
 <thead>
@@ -3160,7 +3201,16 @@
 <p>Accessors: GetResponseBodyText</p>
 <p><a name="ResponseHeaders"></a></p>
 <h4 id="responseheaders">ResponseHeaders</h4>
-<p>Returns the list of HTTP headers returned from the HTTP response.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var headers = SeS("Operation_Name").GetResponseHeaders();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">for (var i = 0; i &lt; headers.length; i++)</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">{</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var name = headers[i].Name;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">    var value = headers[i].Value;</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">}</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table></p>
+<p>Returns the list of HTTP headers returned from the HTTP response.
+Sample code:</p>
+<pre><code class="javascript">var headers = SeS(&quot;Operation_Name&quot;).GetResponseHeaders();
+for (var i = 0; i &lt; headers.length; i++)
+{
+    var name = headers[i].Name;
+    var value = headers[i].Value;
+}
+</code></pre>
+
 <p>Type: object</p>
 <p>Accessors: GetResponseHeaders</p>
 <p><a name="ResponseIsErrorStatus"></a></p>
@@ -3192,10 +3242,18 @@
 <tr>
 <td>params</td>
 <td>object</td>
-<td>JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation.<br><text styleclass="Normal" style="font-weight:bold;" translate="true">Sample code:</text><br><table styleclass="Default" rowcount="1" colcount="1" style="width:100%; background-color:#ffffbb;"><tr style="vertical-align:top"><td><para styleclass="Code Example"><text styleclass="Code Example" translate="true">SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true">var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();</text></para><para styleclass="Code Example"><text styleclass="Code Example" translate="true"> </text></para></td></tr></table></td>
+<td>JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation.</td>
+</tr>
+<tr>
+<td>Sample code:</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<p><code>javascript
+SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});
+var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();</code> |</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.restservice.doexecute"></a></p>
@@ -3240,7 +3298,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "search": 83, "previous": 80, "help": 191};
+                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
