@@ -78,7 +78,7 @@ Rapise gives you the choice of recording/writing your tests in a full
 [scripting language](scripting.md) -
 [JavaScript](javascript_ide.md), or the
 [Rapise Visual Language
-(RVL)](../visual-language/) which provides
+(RVL)](../visual_language/) which provides
 a completely scriptless approach to writing tests (based on a simple
 table-based format). The RVL option is simpler for users that are not
 programmers but it has less flexibility than using JavaScript.

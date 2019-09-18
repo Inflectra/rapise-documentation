@@ -18,7 +18,7 @@ The sample tests are described below.
 
 ## ActiveX
 
-These samples demonstrate the testing of Microsoft ActiveX / COM controls used in Visual Basic applications including the MSComCtl library. The samples include the [Microsoft FlexGrid Control](/Libraries/msflexgrid/), [MS Common Toolbar Control](/Libraries/mscomctltoolbar/), [Microsoft Tabbed Dialog Control](/Libraries/sstab/), [TabStrip](/Libraries/tabstrip20/), and Microsoft Windows Common Controls 6.0 [MSCOMCTL.OCX].
+These samples demonstrate the testing of Microsoft ActiveX / COM controls used in Visual Basic applications including the MSComCtl library. The samples include the [Microsoft FlexGrid Control](/Libraries/MSFlexGrid/), [MS Common Toolbar Control](/Libraries/MSComCtlToolbar/), [Microsoft Tabbed Dialog Control](/Libraries/SSTab/), [TabStrip](/Libraries/TabStrip20/), and Microsoft Windows Common Controls 6.0 [MSCOMCTL.OCX].
 
 ## AnalogRecorder
 
@@ -38,7 +38,7 @@ This sample demonstrates using Rapise to test an installation of [Microsoft Dyna
 
 ## FarPoint
 
-This sample script demonstrates using the [FarPoint library](/Libraries/farpointgrid/) to test the FarPoint SpreadSheet Control.
+This sample script demonstrates using the [FarPoint library](/Libraries/FarPointGrid/) to test the FarPoint SpreadSheet Control.
 
 ## Java
 
@@ -66,7 +66,7 @@ This sample tests a .NET 2.0 application. This sample demonstrates the capabilit
 
 ## QtFramework
 
-TThis sample tests a sample [QT Framework](qt_framework_testing.md) cross-platform application. This sample demonstrates the capabilities of the [QtFramework library](/Libraries/qwidget/). The application under test contains various standard Qt widgets, such as: button, edit, tree, combo box, etc.
+TThis sample tests a sample [QT Framework](qt_framework_testing.md) cross-platform application. This sample demonstrates the capabilities of the [QtFramework library](/Libraries/QWidget/). The application under test contains various standard Qt widgets, such as: button, edit, tree, combo box, etc.
 
 ## Silverlight
 

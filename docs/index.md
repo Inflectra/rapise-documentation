@@ -91,7 +91,6 @@ From this page you can reach different parts of the documentation. Use menu at t
 - **UITAP** is a link to [UI Test Automation Playground](http://www.uitestingplayground.com/).
 
 ## Table of Contents
-
 - Rapise User's Guide
     - [Company & Copyright](/Guide/company__copyright/)
     - [About this Guide](/Guide/about_this_guide/)
@@ -99,15 +98,18 @@ From this page you can reach different parts of the documentation. Use menu at t
         - [Getting Started](/Guide/getting_started/)
         - [Overview](/Guide/overview/)
         - [Samples Index](/Guide/sample_tests/)
+        - Tutorial: Desktop Testing
+            - [Using Rapise Visual Language](/Guide/twodialogs_sample/)
+            - [Using JavaScript](/Guide/tutorial_windows_using_javascript/)
+        - Tutorial: Mobile Testing
+            - [Mobile Testing using Android](/Guide/mobile_testing_android/)
+            - [Mobile Testing using iOS](/Guide/mobile_testing_ios/)
         - Tutorial: Web Testing
             - [Using Rapise Visual Language](/Guide/tutorial_record_and_playback/)
             - [Using JavaScript](/Guide/tutorial_web_using_javascript/)
-        - Tutorial: Windows Testing
-            - [Using Rapise Visual Language](/Guide/twodialogs_sample/)
-            - [Using JavaScript](/Guide/tutorial_windows_using_javascript/)
-        - [Tutorial: REST Web Services](/Guide/tutorial_web_services_rest/)
-        - [Tutorial: SOAP Web Services](/Guide/tutorial_soap_web_services/)
-        - [Tutorial: Mobile Testing](/Guide/mobile_testing_android/)
+        - Tutorial: Web Services Testing
+            - [REST Web Services](/Guide/tutorial_web_services_rest/)
+            - [SOAP Web Services](/Guide/tutorial_soap_web_services/)
         - [Tutorial: Manual Testing](/Guide/tutorial_exploratory_testing/)
         - Tutorial: Java Testing
             - [Using Rapise Visual Language](/Guide/tutorial_java_testing/)
@@ -121,32 +123,35 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [Recording and Learning](/Guide/object_types/)
             - [Recording](/Guide/recording/)
             - [Learning](/Guide/object_learning/)
+            - [Multiple Recordings](/Guide/multiple_recordings/)
             - Analog Recording
                 - [Analog Recording](/Guide/analog_recording/)
                 - [Absolute Analog Recording](/Guide/absolute_analog_learning/)
                 - [Relative Analog Recording](/Guide/relative_analog_learning/)
             - [Simulated Objects](/Guide/simulated_objects/)
-            - Object Libraries
-                - [Object Libraries](/Guide/recording_library/)
-                - Custom Libraries
-                    - [Custom Libraries](/Guide/custom_libraries/)
-                    - [Actions](/Guide/actions/)
-            - [Multiple Recordings](/Guide/multiple_recordings/)
-            - Object Spy
-                - [Object Spy](/Guide/object_spy/)
-                - [Java Spy](/Guide/object_spy_java/)
-                - [Mobile Spy](/Guide/object_spy_mobile/)
-                - [UI Automation Spy](/Guide/object_spy_uiautomation/)
-                - [Web Spy](/Guide/web_spy/)
             - [Object Manager](/Guide/object_manager/)
+        - Object Libraries
+            - [Object Libraries](/Guide/recording_library/)
+            - Custom Libraries
+                - [Custom Libraries](/Guide/custom_libraries/)
+                - [Actions](/Guide/actions/)
+        - Object Spy
+            - [Object Spy](/Guide/object_spy/)
+            - [Java Spy](/Guide/object_spy_java/)
+            - [Mobile Spy](/Guide/object_spy_mobile/)
+            - [UI Automation Spy](/Guide/object_spy_uiautomation/)
+            - [Web Spy](/Guide/web_spy/)
         - Playback
             - [Playback](/Guide/playback/)
             - [Command Line](/Guide/command_line/)
             - [Object Locator](/Guide/object_locator/)
+        - [Taking Screenshots](/Guide/screenshots/)
+        - [Data-Driven Testing](/Guide/ddt/)
         - Automated Reporting
             - [Automated Reporting](/Guide/automated_reporting/)
             - [Writing to the Report](/Guide/writing_to_the_report/)
             - [Report Filtering](/Guide/report_filtering/)
+        - [Tests and Sub-Tests](/Guide/tests_and_sub_tests/)
         - Scripting
             - [Scripting](/Guide/scripting/)
             - [Understanding the Script](/Guide/understanding_the_script/)
@@ -159,6 +164,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [Data Driven Testing](/Guide/data_driven_testing/)
             - [Customizable Engine](/Guide/customizable_engine/)
             - [Scenarios](/Guide/scenarios/)
+            - [Checkpoints](/Guide/checkpoints/)
         - Javascript IDE
             - [Javascript IDE](/Guide/javascript_ide/)
             - Internal Debugger
@@ -171,6 +177,11 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [Code Folding](/Guide/code_folding/)
             - [Syntax Checking](/Guide/syntax_checking/)
             - [Code Completion](/Guide/code_helper/)
+        - Manual Testing
+            - [Manual Testing](/Guide/manual_testing/)
+            - [Manual Recording](/Guide/manual_testing_recording/)
+            - [Manual Playback](/Guide/manual_testing_playback/)
+            - [Semi-Manual Testing](/Guide/semi_manual_testing/)
         - Unit Testing
             - [Unit Testing](/Guide/unit_testing/)
             - [Visual Studio](/Guide/visual_studio/)
@@ -178,28 +189,11 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [DLL Testing](/Guide/dll_testing/)
             - [COM Testing Support](/Guide/com_testing_support/)
             - [TAP Results](/Guide/tap/)
-        - Web Service Testing
-            - [Web Service Testing](/Guide/web_service_testing/)
-            - [Testing REST Web Services](/Guide/rest_web_service/)
-            - [Testing SOAP Web Services](/Guide/soap_web_services/)
-        - Mobile Testing
-            - [Mobile Testing](/Guide/mobile_testing2/)
-            - [Preparing Environment for iOS Mobile Testing](/Manuals/Preparing_for_iOS_Testing/)
-            - [Mobile Testing using iOS](/Guide/mobile_testing_ios/)
-            - [Preparing Environment for Android Mobile Testing](/Manuals/Preparing_for_Android_Testing/)
-            - [Mobile Testing using Android](/Guide/mobile_testing_android/)
-        - Manual Testing
-            - [Manual Testing](/Guide/manual_testing/)
-            - [Manual Recording](/Guide/manual_testing_recording/)
-            - [Manual Playback](/Guide/manual_testing_playback/)
-            - [Semi-Manual Testing](/Guide/semi_manual_testing/)
-        - [SpiraTest Integration](/Guide/spiratest_integration/)
-        - [Checkpoints](/Guide/checkpoints/)
-        - [Tests and Sub-Tests](/Guide/tests_and_sub_tests/)
-        - NeoLoad Integration
+        - Load Testing
             - [NeoLoad Integration](/Guide/neoload_integration/)
             - [Convert Functional to Load Test](/Guide/convert_functional_to_load_tes/)
             - [Client Performance Monitoring](/Guide/client_performance_monitoring/)
+        - [Test Management](/Guide/spiratest_integration/)
         - A - I
             - [Add Web Service Dialog](/Guide/dialog_add_web_service/)
             - [Browser Settings Dialog](/Guide/browser_settings/)
@@ -267,24 +261,37 @@ From this page you can reach different parts of the documentation. Use menu at t
         - [Sending Special Keys to the Current Application](/Guide/sending_special_keys_to_the_c/)
     - Technologies
         - [Technologies](/Guide/technologies/)
+        - [Desktop Testing](/Guide/windows_applications/)
+        - Mobile Testing
+            - [Mobile Testing](/Guide/mobile_testing2/)
+            - [Preparing Environment for iOS Mobile Testing](/Manuals/Preparing_for_iOS_Testing/)
+            - [Mobile Testing using iOS](/Guide/mobile_testing_ios/)
+            - [Preparing Environment for Android Mobile Testing](/Manuals/Preparing_for_Android_Testing/)
+            - [Mobile Testing using Android](/Guide/mobile_testing_android/)
+            - [Reconnect Mobile Session](/Guide/mobile_reconnect/)
         - Web Testing
             - [Web Testing](/Guide/web_testing/)
             - [Cross Browser Testing](/Guide/cross_browser_testing/)
             - [Setting Up Web Browsers](/Guide/setting_up_web_browsers/)
+            - [Web Application Profile](/Guide/web_app_profile/)
+            - [Self-healing Locators](/Guide/web_self_healing/)
             - [XPath](/Guide/xpath/)
             - [CSS](/Guide/css/)
         - Selenium WebDriver
             - [Selenium WebDriver](/Guide/selenium_webdriver/)
             - [Setting Up Selenium](/Guide/setting_up_selenium/)
             - [Using Native Selenium Code](/Guide/using_native_selenium_code/)
-        - [Mobile Testing](/Guide/mobile_testing2/)
+            - [Reconnect WebDriver Session](/Guide/selenium_reconnect/)
+        - Web Service Testing
+            - [Web Service Testing](/Guide/web_service_testing/)
+            - [Testing REST Web Services](/Guide/rest_web_service/)
+            - [Testing SOAP Web Services](/Guide/soap_web_services/)
         - Microsoft Dynamics
             - [Microsoft Dynamics](/Guide/microsoft_dynamics/)
             - [Dynamics AX](/Guide/dynamics_ax/)
             - [Dynamics NAV](/Guide/dynamics_nav/)
             - [Dynamics 365 for Operations](/Guide/dynamics_365/)
             - [Unified Service Desk](/Guide/unified_service_desk/)
-        - [Windows Applications](/Guide/windows_applications/)
         - [Qt Framework](/Guide/qt_framework_testing/)
         - [Java SWT](/Guide/java_swt/)
     - Extensibility
@@ -295,6 +302,7 @@ From this page you can reach different parts of the documentation. Use menu at t
       - [About](/Guide/visual_language/)
       - [Why RVL?](/RVL/Overview/)
       - [RVl Editor](/Guide/rvl_editor/)
+      - [Sheets](/RVL/Sheets/)
       - [Columns](/RVL/Columns/)
       - [Comments](/RVL/Comments/)
       - [Conditions](/RVL/Conditions/)
@@ -305,9 +313,10 @@ From this page you can reach different parts of the documentation. Use menu at t
       - [If Else](/RVL/IfElse/)
       - [Maps](/RVL/Maps/)
       - [Loops](/RVL/Loops/)
+      - [Preamble](/RVL/Preamble/)
 - Libraries
     - Global
-        - [Global](/Libraries/ses_lib_global/)
+        - [Global Objects](/Libraries/ses_lib_global/)
         - [Android](/Libraries/Android/)
         - [Database](/Libraries/Database/)
         - [File](/Libraries/File/)
@@ -315,7 +324,6 @@ From this page you can reach different parts of the documentation. Use menu at t
         - [iOS](/Libraries/iOS/)
         - [Navigator](/Libraries/Navigator/)
         - [NeoLoad](/Libraries/NeoLoad/)
-        - [Ocr](/Libraries/Ocr/)
         - [Screenshot](/Libraries/Screenshot/)
         - [SeSReportException](/Libraries/SeSReportException/)
         - [SeSReportImage](/Libraries/SeSReportImage/)
@@ -330,7 +338,7 @@ From this page you can reach different parts of the documentation. Use menu at t
       - [Map Object](/Libraries/Map/)
     - Desktop
         - Generic
-            - [Generic](/Libraries/ses_lib_generic/)
+            - [Generic Objects](/Libraries/ses_lib_generic/)
             - [SeSSimulatedObject](/Libraries/SeSSimulatedObject/)
             - [Win32Button](/Libraries/Win32Button/)
             - [Win32CheckButton](/Libraries/Win32CheckButton/)
@@ -348,7 +356,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [Win32Text](/Libraries/Win32Text/)
             - [Win32TreeCheckable](/Libraries/Win32TreeCheckable/)
         - UIAutomation
-            - [UIAutomation](/Libraries/ses_lib_uiautomation/)
+            - [UIAutomation Objects](/Libraries/ses_lib_uiautomation/)
             - [UIAButton](/Libraries/UIAButton/)
             - [UIACheckBox](/Libraries/UIACheckBox/)
             - [UIAComboBox](/Libraries/UIAComboBox/)
@@ -369,7 +377,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [UIAutomationMenuDropDownList](/Libraries/UIAutomationMenuDropDownList/)
             - [UIAutomationMenuItem](/Libraries/UIAutomationMenuItem/)
         - Managed
-            - [Managed](/Libraries/ses_lib_managed/)
+            - [Managed Objects](/Libraries/ses_lib_managed/)
             - [ManagedButton](/Libraries/ManagedButton/)
             - [ManagedCheckBox](/Libraries/ManagedCheckBox/)
             - [ManagedCheckedListBox](/Libraries/ManagedCheckedListBox/)
@@ -388,7 +396,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [ManagedTextBox](/Libraries/ManagedTextBox/)
             - [ManagedTreeView](/Libraries/ManagedTreeView/)
         - DevExpress
-            - [DevExpress](/Libraries/ses_lib_devexpress/)
+            - [DevExpress Objects](/Libraries/ses_lib_devexpress/)
             - [DXButtonEdit](/Libraries/DXButtonEdit/)
             - [DXCalcEdit](/Libraries/DXCalcEdit/)
             - [DXCheckButton](/Libraries/DXCheckButton/)
@@ -434,7 +442,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [DXTreeList](/Libraries/DXTreeList/)
             - [DXZoomTrackBarControl](/Libraries/DXZoomTrackBarControl/)
         - Infragistics
-            - [Infragistics](/Libraries/ses_lib_infragistics/)
+            - [Infragistics Objects](/Libraries/ses_lib_infragistics/)
             - [AnimationControl](/Libraries/AnimationControl/)
             - [UltraAppMenu](/Libraries/UltraAppMenu/)
             - [UltraButton](/Libraries/UltraButton/)
@@ -463,11 +471,11 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [UltraTree](/Libraries/UltraTree/)
             - [ValueListDropDownUnsafe](/Libraries/ValueListDropDownUnsafe/)
         - Syncfusion
-            - [Syncfusion](/Libraries/ses_lib_syncfusion/)
+            - [Syncfusion Objects](/Libraries/ses_lib_syncfusion/)
             - [SyncfusionGrouping](/Libraries/SyncfusionGrouping/)
             - [SyncfusionRibbon](/Libraries/SyncfusionRibbon/)
         - Telerik
-            - [Telerik](/Libraries/ses_lib_telerik/)
+            - [Telerik Objects](/Libraries/ses_lib_telerik/)
             - [TelerikDropDownPopupForm](/Libraries/TelerikDropDownPopupForm/)
             - [TelerikRadApplicationMenu](/Libraries/TelerikRadApplicationMenu/)
             - [TelerikRadApplicationMenuDropDown](/Libraries/TelerikRadApplicationMenuDropDown/)
@@ -494,7 +502,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [TelerikRadTrackBar](/Libraries/TelerikRadTrackBar/)
             - [TelerikRadTreeView](/Libraries/TelerikRadTreeView/)
         - Advanced Acessibility
-            - [Advanced Acessibility](/Libraries/ses_lib_advaac/)
+            - [Advanced Acessibility Objects](/Libraries/ses_lib_advaac/)
             - [SimpleButton](/Libraries/SimpleButton/)
             - [SimpleButtonDropdown](/Libraries/SimpleButtonDropdown/)
             - [SimpleCheckButton](/Libraries/SimpleCheckButton/)
@@ -507,7 +515,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [SimpleRadioButton](/Libraries/SimpleRadioButton/)
             - [SimpleText](/Libraries/SimpleText/)
         - ActiveX
-            - [ActiveX](/Libraries/ses_lib_activex/)
+            - [ActiveX Objects](/Libraries/ses_lib_activex/)
             - [ActiveXObject](/Libraries/ActiveXObject/)
             - [MSComCtlSlider20](/Libraries/MSComCtlSlider20/)
             - [MSComCtlToolbar](/Libraries/MSComCtlToolbar/)
@@ -517,22 +525,22 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [SSTab](/Libraries/SSTab/)
             - [TabStrip20](/Libraries/TabStrip20/)
         - ActiveXC1
-            - [ActiveXC1](/Libraries/ses_lib_activex/)
+            - [ActiveXC1 Objects](/Libraries/ses_lib_activex/)
             - [C1TrueDBGrid](/Libraries/C1TrueDBGrid/)
             - [C1TrueDBList](/Libraries/C1TrueDBList/)
             - [C1TrueDBListCombo](/Libraries/C1TrueDBListCombo/)
         - ActiveXSft
-            - [ActiveXSft](/Libraries/ses_lib_activex/)
+            - [ActiveXSft Objects](/Libraries/ses_lib_activex/)
             - [SftTree](/Libraries/SftTree/)
         - FarPoint
-            - [FarPoint](/Libraries/ses_lib_farpoint/)
+            - [FarPoint Objects](/Libraries/ses_lib_farpoint/)
             - [FarPointGrid](/Libraries/FarPointGrid/)
             - [FarPointGridAX](/Libraries/FarPointGridAX/)
         - VSFlexGrid
-            - [VSFlexGrid](/Libraries/ses_lib_vsflexgrid/)
+            - [VSFlexGrid Objects](/Libraries/ses_lib_vsflexgrid/)
             - [VSFlexGrid](/Libraries/VSFlexGrid/)
         - Java
-            - [Java](/Libraries/ses_lib_java/)
+            - [Java Objects](/Libraries/ses_lib_java/)
             - [JavaButton](/Libraries/JavaButton/)
             - [JavaCheckBox](/Libraries/JavaCheckBox/)
             - [JavaChoice](/Libraries/JavaChoice/)
@@ -558,13 +566,14 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [JavaTextArea](/Libraries/JavaTextArea/)
             - [JavaTextField](/Libraries/JavaTextField/)
         - SWT
-            - [SWT](/Libraries/ses_lib_swt/)
+            - [SWT Objects](/Libraries/ses_lib_swt/)
             - [SWTComboBox](/Libraries/SWTComboBox/)
             - [SWTComboBoxEdit](/Libraries/SWTComboBoxEdit/)
             - [SWTList](/Libraries/SWTList/)
             - [SWTTree](/Libraries/SWTTree/)
         - Qt
-            - [Qt](/Libraries/ses_lib_qt/)
+            - [Qt Objects](/Libraries/ses_lib_qt/)
+            - [QAbstractButton](/Libraries/QAbstractButton/)
             - [QCheckBox](/Libraries/QCheckBox/)
             - [QComboBox](/Libraries/QComboBox/)
             - [QDateTimeEdit](/Libraries/QDateTimeEdit/)
@@ -583,22 +592,25 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [QWidget](/Libraries/QWidget/)
     - Web
         - HTML
-            - [HTML](/Libraries/ses_lib_html/)
+            - [HTML Objects](/Libraries/ses_lib_html/)
             - [HTMLObject](/Libraries/HTMLObject/)
+            - Navigator
         - HTML5
-            - [HTML5](/Libraries/ses_lib_html5/)
+            - [HTML5 Objects](/Libraries/ses_lib_html5/)
             - [HTML5Number](/Libraries/HTML5Number/)
             - [HTML5Progress](/Libraries/HTML5Progress/)
             - [HTML5Range](/Libraries/HTML5Range/)
         - Selenium
-            - [Selenium](/Libraries/ses_lib_selenium/)
+            - [Selenium Objects](/Libraries/ses_lib_selenium/)
             - [Actions](/Libraries/Actions/)
             - [Capabilities](/Libraries/Capabilities/)
             - [Cookies](/Libraries/Cookies/)
             - [Screenshot](/Libraries/Screenshot/)
+            - [WebDriver](/Libraries/WebDriver/)
             - [WebElement](/Libraries/WebElement/)
+            - [Window](/Libraries/Window/)
         - jQuery
-            - [jQuery](/Libraries/ses_lib_jquery/)
+            - [jQuery Objects](/Libraries/ses_lib_jquery/)
             - [JQueryAccordion](/Libraries/JQueryAccordion/)
             - [JQueryDatepicker](/Libraries/JQueryDatepicker/)
             - [JQueryMenu](/Libraries/JQueryMenu/)
@@ -608,7 +620,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [JQuerySpinner](/Libraries/JQuerySpinner/)
             - [JQueryTabs](/Libraries/JQueryTabs/)
         - GWT
-            - [GWT](/Libraries/ses_lib_gwt/)
+            - [GWT Objects](/Libraries/ses_lib_gwt/)
             - [GWTCheckBox](/Libraries/GWTCheckBox/)
             - [GWTDatePicker](/Libraries/GWTDatePicker/)
             - [GWTDecoratedStackPanel](/Libraries/GWTDecoratedStackPanel/)
@@ -619,7 +631,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [GWTToggleButton](/Libraries/GWTToggleButton/)
             - [GWTTree](/Libraries/GWTTree/)
         - GWTExt
-            - [GWTExt](/Libraries/ses_lib_gwtext/)
+            - [GWTExt Objects](/Libraries/ses_lib_gwtext/)
             - [GWTExtComboBox](/Libraries/GWTExtComboBox/)
             - [GWTExtDatePicker](/Libraries/GWTExtDatePicker/)
             - [GWTExtGrid](/Libraries/GWTExtGrid/)
@@ -629,12 +641,12 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [GWTExtToolbar](/Libraries/GWTExtToolbar/)
             - [GWTExtTree](/Libraries/GWTExtTree/)
         - DomSmartGwt
-            - [DomSmartGwt](/Libraries/ses_lib_smartgwt/)
+            - [DomSmartGwt Objects](/Libraries/ses_lib_smartgwt/)
             - [SmartGwtDatePicker](/Libraries/SmartGwtDatePicker/)
             - [SmartGwtTabControl](/Libraries/SmartGwtTabControl/)
             - [SmartGwtToolbar](/Libraries/SmartGwtToolbar/)
         - YUI
-            - [YUI](/Libraries/ses_lib_yui/)
+            - [YUI Objects](/Libraries/ses_lib_yui/)
             - [YUIButtonMenu](/Libraries/YUIButtonMenu/)
             - [YUICalendar](/Libraries/YUICalendar/)
             - [YUICheckButton](/Libraries/YUICheckButton/)
@@ -649,12 +661,14 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [YUITree](/Libraries/YUITree/)
     - Web Services
         - Web Services
-            - [Web Services](/Libraries/ses_lib_webservices/)
+            - [Web Services Objects](/Libraries/ses_lib_webservices/)
+            - [Session](/Libraries/Session/)
             - [RESTService](/Libraries/RESTService/)
             - [SOAPService](/Libraries/SOAPService/)
     - Mobile
         - Mobile
-            - [Mobile](/Libraries/ses_lib_mobile/)
+            - [Mobile Objects](/Libraries/ses_lib_mobile/)
+            - [Android](/Libraries/Android/)
             - [AndroidButton](/Libraries/AndroidButton/)
             - [AndroidCheckBox](/Libraries/AndroidCheckBox/)
             - [AndroidEditBox](/Libraries/AndroidEditBox/)
@@ -673,6 +687,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [AppiumCapabilities](/Libraries/AppiumCapabilities/)
             - [AppiumDriver](/Libraries/AppiumDriver/)
             - [AppiumWebElement](/Libraries/AppiumWebElement/)
+            - [iOS](/Libraries/iOS/)
             - [iOSButton](/Libraries/iOSButton/)
             - [iOSEditBox](/Libraries/iOSEditBox/)
             - [iOSImage](/Libraries/iOSImage/)
@@ -691,7 +706,7 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [MobileWebObject](/Libraries/MobileWebObject/)
     - Dynamics
         - DynamicsAX
-            - [DynamicsAX](/Libraries/ses_lib_dynamicsax/)
+            - [DynamicsAX Objects](/Libraries/ses_lib_dynamicsax/)
             - [DynamicsAXAddressBar](/Libraries/DynamicsAXAddressBar/)
             - [DynamicsAXComboBox](/Libraries/DynamicsAXComboBox/)
             - [DynamicsAXComboBoxEdit](/Libraries/DynamicsAXComboBoxEdit/)
@@ -704,19 +719,19 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [DynamicsAXTable](/Libraries/DynamicsAXTable/)
             - [DynamicsAXTextBox](/Libraries/DynamicsAXTextBox/)
         - DynamicsNAV
-            - [DynamicsNAV](/Libraries/ses_lib_dynamicsnav/)
+            - [DynamicsNAV Objects](/Libraries/ses_lib_dynamicsnav/)
             - [DynamicsNAVFastTabs](/Libraries/DynamicsNAVFastTabs/)
             - [DynamicsNAVTable](/Libraries/DynamicsNAVTable/)
             - [DynamicsNAVToolBar](/Libraries/DynamicsNAVToolBar/)
         - NavPOSControls
-            - [NavPOSControls](/Libraries/ses_lib_navposcontrols/)
+            - [NavPOSControls Objects](/Libraries/ses_lib_navposcontrols/)
             - [NavButtonPad](/Libraries/NavButtonPad/)
         - DomDynamicsNAV
-            - [DomDynamicsNAV](/Libraries/ses_lib_domdynamicsnav/)
+            - [DomDynamicsNAV Objects](/Libraries/ses_lib_domdynamicsnav/)
             - [DomDynamicsNAVEdit](/Libraries/DomDynamicsNAVEdit/)
             - [DomDynamicsNAVGrid](/Libraries/DomDynamicsNAVGrid/)
         - DomDynamicsAX
-            - [DomDynamicsAX](/Libraries/ses_lib_dynamics365/)
+            - [DomDynamicsAX Objects](/Libraries/ses_lib_dynamics365/)
             - [DomDynamicsAXActionSearch](/Libraries/DomDynamicsAXActionSearch/)
             - [DomDynamicsAXCheckBox](/Libraries/DomDynamicsAXCheckBox/)
             - [DomDynamicsAXComboBox](/Libraries/DomDynamicsAXComboBox/)
@@ -729,18 +744,19 @@ From this page you can reach different parts of the documentation. Use menu at t
             - [DomDynamicsAXTabControl](/Libraries/DomDynamicsAXTabControl/)
             - [DomDynamicsAXTextBox](/Libraries/DomDynamicsAXTextBox/)
         - DomDynamicsCrm
-            - [DomDynamicsCrm](/Libraries/ses_lib_dynamicscrm/)
+            - [DomDynamicsCrm Objects](/Libraries/ses_lib_dynamicscrm/)
             - [DomDynamicsCrmGrid](/Libraries/DomDynamicsCrmGrid/)
             - [DomDynamicsCrmUnifiedInterfaceGrid](/Libraries/DomDynamicsCrmUnifiedInterfaceGrid/)
             - [DomDynamicsCrmUnifiedInterfaceList](/Libraries/DomDynamicsCrmUnifiedInterfaceList/)
     - Salesforce
         - DomSalesforce
-            - [DomSalesforce](/Libraries/ses_lib_salesforce/)
+            - [DomSalesforce Objects](/Libraries/ses_lib_salesforce/)
             - [DomLightningGrid](/Libraries/DomLightningGrid/)
             - [DomLightningListBox](/Libraries/DomLightningListBox/)
             - [DomSalesforceGrid](/Libraries/DomSalesforceGrid/)
 - Manuals
     - [Rapise Installation Guide](/Manuals/Rapise_Installation_Guide/)
+    - [SpiraTest Integration](/Guide/spiratest_integration/)
     - [Setting Up Web Browsers](/Guide/setting_up_web_browsers/)
     - [Preparing for Android Testing](/Manuals/Preparing_for_Android_Testing/)
     - [Preparing for iOS Testing](/Manuals/Preparing_for_iOS_Testing/)

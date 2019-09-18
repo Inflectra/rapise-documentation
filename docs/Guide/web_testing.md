@@ -14,7 +14,7 @@ In addition, it is possible to have more control over the cross browser executio
 
 ## DOM API
 
-In addition to the usual [recording](recording.md), [learning](learn_object.md) and [playback](playback.md) that is similar to testing other technologies (desktop, mobile, etc.) there are some unique functions that are available on all recorded web objects. Upon learning a web element in Rapise, you get an object of type [HTMLObject](/Libraries/htmlobject/). Each **HTMLObject** provides set of functions to facilitate the cross-browser access to web element parents and children.
+In addition to the usual [recording](recording.md), [learning](learn_object.md) and [playback](playback.md) that is similar to testing other technologies (desktop, mobile, etc.) there are some unique functions that are available on all recorded web objects. Upon learning a web element in Rapise, you get an object of type [HTMLObject](/Libraries/HTMLObject/). Each **HTMLObject** provides set of functions to facilitate the cross-browser access to web element parents and children.
 
 - **DoDOMChildAt** - Returns n-th child (zero-based).
 - **DoDOMChildrenCount** - Returns number of children elements for this one.

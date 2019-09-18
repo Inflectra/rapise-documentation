@@ -4,11 +4,11 @@
 
 **Data Driven Testing** is an automated testing technique in which test case data is separated from test case logic.  Each set of test case data consists of input values and a set of expected output values.  The actual output values are compared to the expected output values to determine whether the test passed.
 
-You can perform data-driven testing either using an MS-Excel [spreadsheet](/Libraries/spreadsheet/) as the datasource or a relational [database](/Libraries/database/).
+You can perform data-driven testing either using an MS-Excel [spreadsheet](/Libraries/Spreadsheet/) as the datasource or a relational [database](/Libraries/Database/).
 
 ## Using an MS-Excel Spreadsheet
 
-The [**Spreadsheet**](/Libraries/spreadsheet/) object is useful for implementing data-driven tests. It allows you to connect to, query, and read an excel spreadsheet from your test script.  To create a data-driven test, you will:
+The [**Spreadsheet**](/Libraries/Spreadsheet/) object is useful for implementing data-driven tests. It allows you to connect to, query, and read an excel spreadsheet from your test script.  To create a data-driven test, you will:
 
 ### 1. Record a Test
 
@@ -66,7 +66,7 @@ Drag the **searchterms.xlsx** from files tree into appropriate place in your tes
 
 ### 5. Use Spreadsheet to Access the Test Case Data
 
-In our example, we use a [**Spreadsheet**](/Libraries/spreadsheet/) object and run the test logic once for every row.
+In our example, we use a [**Spreadsheet**](/Libraries/Spreadsheet/) object and run the test logic once for every row.
 
 ```javascript
 function Test()
@@ -94,7 +94,7 @@ function Test()
 
 ## Using a Relational Database
 
-Rapise comes with the [Database](/Libraries/database/) query global object that allows you to send SQL queries to a database and then iterate through the results. The process for creating such a data-driven test is as follows:
+Rapise comes with the [Database](/Libraries/Database/) query global object that allows you to send SQL queries to a database and then iterate through the results. The process for creating such a data-driven test is as follows:
 
 ### 1. Record a Test
 
