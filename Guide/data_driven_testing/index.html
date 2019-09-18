@@ -2979,9 +2979,9 @@
 <h1 id="data-driven-testing-javascript">Data-Driven Testing (JavaScript)</h1>
 <h2 id="purpose">Purpose</h2>
 <p><strong>Data Driven Testing</strong> is an automated testing technique in which test case data is separated from test case logic.  Each set of test case data consists of input values and a set of expected output values.  The actual output values are compared to the expected output values to determine whether the test passed.</p>
-<p>You can perform data-driven testing either using an MS-Excel <a href="/Libraries/spreadsheet/">spreadsheet</a> as the datasource or a relational <a href="/Libraries/database/">database</a>.</p>
+<p>You can perform data-driven testing either using an MS-Excel <a href="/Libraries/Spreadsheet/">spreadsheet</a> as the datasource or a relational <a href="/Libraries/Database/">database</a>.</p>
 <h2 id="using-an-ms-excel-spreadsheet">Using an MS-Excel Spreadsheet</h2>
-<p>The <a href="/Libraries/spreadsheet/"><strong>Spreadsheet</strong></a> object is useful for implementing data-driven tests. It allows you to connect to, query, and read an excel spreadsheet from your test script.  To create a data-driven test, you will:</p>
+<p>The <a href="/Libraries/Spreadsheet/"><strong>Spreadsheet</strong></a> object is useful for implementing data-driven tests. It allows you to connect to, query, and read an excel spreadsheet from your test script.  To create a data-driven test, you will:</p>
 <h3 id="1-record-a-test">1. Record a Test</h3>
 <p>The exact inputs you use for the recording will not matter as much as your interactions with the objects.  The following excerpt was recorded using <a href="http://www.google.com">www.google.com</a>:</p>
 <pre><code class="javascript">    function Test()
@@ -3021,7 +3021,7 @@
 <p>Drag the <strong>searchterms.xlsx</strong> from files tree into appropriate place in your test source:</p>
 <p><img alt="spreadsheetdragfile" src="../img/data_driven_testing3.png" /></p>
 <h3 id="5-use-spreadsheet-to-access-the-test-case-data">5. Use Spreadsheet to Access the Test Case Data</h3>
-<p>In our example, we use a <a href="/Libraries/spreadsheet/"><strong>Spreadsheet</strong></a> object and run the test logic once for every row.</p>
+<p>In our example, we use a <a href="/Libraries/Spreadsheet/"><strong>Spreadsheet</strong></a> object and run the test logic once for every row.</p>
 <pre><code class="javascript">function Test()
 {
     function Logic(searchterm)
@@ -3046,7 +3046,7 @@
 </code></pre>
 
 <h2 id="using-a-relational-database">Using a Relational Database</h2>
-<p>Rapise comes with the <a href="/Libraries/database/">Database</a> query global object that allows you to send SQL queries to a database and then iterate through the results. The process for creating such a data-driven test is as follows:</p>
+<p>Rapise comes with the <a href="/Libraries/Database/">Database</a> query global object that allows you to send SQL queries to a database and then iterate through the results. The process for creating such a data-driven test is as follows:</p>
 <h3 id="1-record-a-test_1">1. Record a Test</h3>
 <p>The exact inputs you use for the recording will not matter as much as your interactions with the objects.  The following excerpt was recorded using <a href="http://www.google.com">www.google.com</a>:</p>
 <pre><code class="javascript">    function Test()
@@ -3116,7 +3116,7 @@ while(Database.DoSequential())
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
