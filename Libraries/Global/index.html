@@ -3766,6 +3766,20 @@ was found or timeout.</p>
 <p>Waits for specified value of object's property. Function returns object handle
 if object was found and specified property equals to desired value or 'false' 
 in the case of timeout.</p>
+<p><code>propValue</code> may be a callback function:</p>
+<pre><code class="javascript">function(value)
+{
+    if (value != 'some text')
+    {
+        // if the condition is met
+        return true;
+    }
+    return false;
+}
+
+</code></pre>
+
+<p>Use the callback if you need to check more complex condition than equality.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3788,8 +3802,8 @@ in the case of timeout.</p>
 </tr>
 <tr>
 <td>propValue</td>
-<td>string | number</td>
-<td>boolean</td>
+<td>string | number | boolean | function</td>
+<td>Desired property value or callback function (see description).</td>
 </tr>
 <tr>
 <td>timeout</td>
@@ -3798,8 +3812,8 @@ in the case of timeout.</p>
 </tr>
 <tr>
 <td>params</td>
-<td>array | string</td>
-<td>number</td>
+<td>array | string | number | boolean</td>
+<td>Parameters for property getter function.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -3914,8 +3928,8 @@ in the case of timeout.</p>
 </tr>
 <tr>
 <td>defValue</td>
-<td>string | number</td>
-<td>boolean</td>
+<td>string | number | boolean</td>
+<td>Default value to return if property does not exist<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -4043,8 +4057,8 @@ in the case of timeout.</p>
 </tr>
 <tr>
 <td>value</td>
-<td>string | number</td>
-<td>boolean</td>
+<td>string | number | boolean</td>
+<td>Value to set.</td>
 </tr>
 </tbody>
 </table>
@@ -4059,7 +4073,7 @@ in the case of timeout.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
