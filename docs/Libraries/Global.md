@@ -599,6 +599,21 @@ Waits for specified value of object's property. Function returns object handle
 if object was found and specified property equals to desired value or 'false' 
 in the case of timeout.
 
+`propValue` may be a callback function:
+```javascript
+function(value)
+{
+	if (value != 'some text')
+	{
+		// if the condition is met
+		return true;
+	}
+	return false;
+}
+
+```
+Use the callback if you need to check more complex condition than equality.
+
 
 **Parameters:**
 
@@ -606,9 +621,9 @@ in the case of timeout.
 | ---------- | -------- | --------------- |
 | obj | string \| SeSObject |	Id of an object to wait for or object itself. |
 | getterName | string |	Property getter function name. |
-| propValue | string \| number|boolean |	Desired property value. |
+| propValue | string \| number \| boolean \| function |	Desired property value or callback function (see description). |
 | timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: 10000. |
-| params | array \| string|number|boolean |	Parameters for property getter function.<br>Optional. |
+| params | array \| string \| number \| boolean |	Parameters for property getter function.<br>Optional. |
 
 
 
@@ -790,7 +805,7 @@ Reads property value from %WORKDIR%\Config.json.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a property |
-| defValue | string \| number|boolean |	Default value to return if property does not exist<br>Optional. |
+| defValue | string \| number \| boolean |	Default value to return if property does not exist<br>Optional. |
 
 
 
@@ -911,7 +926,7 @@ Sets property value to %WORKDIR%\Config.json. If the file does not exist it will
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | name | string |	Name of a property. |
-| value | string \| number|boolean |	Value to set. |
+| value | string \| number \| boolean |	Value to set. |
 
 
 
