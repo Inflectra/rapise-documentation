@@ -66,7 +66,7 @@
   </div>          
 </div>
 
-## New in Rapise 6.2 (Coming Soon)
+## New in Rapise 6.2
 
 - [Self-healing Web Locators](/Guide/web_self_healing/)
 - [Reconnect Mobile Session](/Guide/mobile_reconnect/)
