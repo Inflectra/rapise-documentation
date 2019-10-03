@@ -3084,7 +3084,18 @@ steps:
     testResultsFiles: 'results/*.xml'
     testRunTitle: 'Basic Tests'
     failTaskOnFailedTests: true
-</code></pre></div>
+</code></pre>
+
+<p>The pipeline above assumes that <code>default</code> agent pool contains a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> installed on a machine wuth Rapise and Node-Tap (see <a href="#prerequisites">Prerequisites</a>). </p>
+<p>The pipeline consists of the following steps:</p>
+<ol>
+<li>Run tests via <code>tap</code> command. You can pass parameters if needed.</li>
+<li>Convert TAP formatted execution results to XUnit formatted reports.</li>
+<li>Adjust XUNit reports for better processing by Azure DevOps.</li>
+<li>Upload test results to Azure with <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results">Publish Test Results task</a>.</li>
+</ol>
+<p>After execution of the pipeline one can review test results.</p>
+<p><img alt="Test Report" src="../img/azure_tap_report.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3093,7 +3104,7 @@ steps:
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "search": 83, "previous": 80, "help": 191};
+                shortcuts = {"previous": 80, "help": 191, "search": 83, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
