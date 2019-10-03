@@ -127,3 +127,16 @@ steps:
     testRunTitle: 'Basic Tests'
     failTaskOnFailedTests: true
 ```
+
+The pipeline above assumes that `default` agent pool contains a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) installed on a machine wuth Rapise and Node-Tap (see [Prerequisites](#prerequisites)). 
+
+The pipeline consists of the following steps:
+
+1. Run tests via `tap` command. You can pass parameters if needed.
+2. Convert TAP formatted execution results to XUnit formatted reports.
+3. Adjust XUNit reports for better processing by Azure DevOps.
+4. Upload test results to Azure with [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results).
+
+After execution of the pipeline one can review test results.
+
+![Test Report](./img/azure_tap_report.png)
