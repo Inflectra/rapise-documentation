@@ -128,7 +128,9 @@ steps:
     failTaskOnFailedTests: true
 ```
 
-The pipeline above assumes that `default` agent pool contains a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) installed on a machine wuth Rapise and Node-Tap (see [Prerequisites](#prerequisites)). 
+The pipeline above assumes that `default` agent pool contains a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) installed on a machine wuth Rapise and Node-Tap (see [Prerequisites](#prerequisites)).
+
+[See the video](https://youtu.be/iPVplfqKj50?t=730) to learn how to install and configure a self-hosted agent.
 
 The pipeline consists of the following steps:
 
