@@ -92,6 +92,7 @@ tap --test-arg="{'g_browserLibrary':'Selenium - Chrome'}"
 
 To run tests in Azure DevOps you need to [configure a pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops). Here is the template to run Rapise tests:
 
+**azure-pipelines.yml**
 ```yaml
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
@@ -136,9 +137,51 @@ The pipeline consists of the following steps:
 
 1. Run tests via `tap` command. You can pass parameters if needed.
 2. Convert TAP formatted execution results to XUnit formatted reports.
-3. Adjust XUNit reports for better processing by Azure DevOps.
+3. Adjust XUnit reports for better processing by Azure DevOps.
 4. Upload test results to Azure with [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results).
 
 After execution of the pipeline one can review test results.
 
 ![Test Report](./img/azure_tap_report.png)
+
+If you do not want each step of a Rapise test to be reported as test case in Azure DevOps use modified pipeline version:
+
+**azure-pipelines-summary.yml**
+```yaml
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: none
+
+pool:
+  name: 'default'
+
+steps:
+
+- script: |
+    echo Running tests...
+    tap --no-coverage --test-arg="{'g_browserLibrary':'Chrome HTML'}"
+  displayName: 'Execute Tests'
+  continueOnError: true
+
+- script: |
+    call tap2xunit.cmd
+  displayName: "Convert TAP to XUnit"
+
+- script: |
+    cscript.exe summarize.js
+  displayName: 'Fix XUnit Reports'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'results/*.xml'
+    testRunTitle: 'Basic Tests'
+    failTaskOnFailedTests: true
+ 
+```
+It calls `summarize.js` to adjust XUnit reports. Azure DevOps report for this pipeline looks like:
+
+![Test Report Summary](./img/azure_tap_report_summary.png)
