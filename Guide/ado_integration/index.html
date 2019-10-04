@@ -3051,6 +3051,7 @@ C:\Users\inflectra\AppData\Roaming\npm\node_modules
 
 <h2 id="azure-devops-pipeline">Azure DevOps Pipeline</h2>
 <p>To run tests in Azure DevOps you need to <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops">configure a pipeline</a>. Here is the template to run Rapise tests:</p>
+<p><strong>azure-pipelines.yml</strong></p>
 <pre><code class="yaml"># Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
@@ -3092,11 +3093,50 @@ steps:
 <ol>
 <li>Run tests via <code>tap</code> command. You can pass parameters if needed.</li>
 <li>Convert TAP formatted execution results to XUnit formatted reports.</li>
-<li>Adjust XUNit reports for better processing by Azure DevOps.</li>
+<li>Adjust XUnit reports for better processing by Azure DevOps.</li>
 <li>Upload test results to Azure with <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results">Publish Test Results task</a>.</li>
 </ol>
 <p>After execution of the pipeline one can review test results.</p>
-<p><img alt="Test Report" src="../img/azure_tap_report.png" /></p></div>
+<p><img alt="Test Report" src="../img/azure_tap_report.png" /></p>
+<p>If you do not want each step of a Rapise test to be reported as test case in Azure DevOps use modified pipeline version:</p>
+<p><strong>azure-pipelines-summary.yml</strong></p>
+<pre><code class="yaml"># Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: none
+
+pool:
+  name: 'default'
+
+steps:
+
+- script: |
+    echo Running tests...
+    tap --no-coverage --test-arg=&quot;{'g_browserLibrary':'Chrome HTML'}&quot;
+  displayName: 'Execute Tests'
+  continueOnError: true
+
+- script: |
+    call tap2xunit.cmd
+  displayName: &quot;Convert TAP to XUnit&quot;
+
+- script: |
+    cscript.exe summarize.js
+  displayName: 'Fix XUnit Reports'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'results/*.xml'
+    testRunTitle: 'Basic Tests'
+    failTaskOnFailedTests: true
+
+</code></pre>
+
+<p>It calls <code>summarize.js</code> to adjust XUnit reports. Azure DevOps report for this pipeline looks like:</p>
+<p><img alt="Test Report Summary" src="../img/azure_tap_report_summary.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3105,7 +3145,7 @@ steps:
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
+                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
