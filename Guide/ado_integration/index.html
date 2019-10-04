@@ -2976,7 +2976,8 @@
             <li><a href="#prerequisites">Prerequisites</a></li>
             <li><a href="#test-framework">Test Framework</a></li>
             <li><a href="#run-tests-with-tap">Run Tests with Tap</a></li>
-            <li><a href="#azure-devops-pipeline">Azure DevOps Pipeline</a></li>
+            <li><a href="#azure-devops-pipeline-v1">Azure DevOps Pipeline v1</a></li>
+            <li><a href="#azure-devops-pipeline-v2">Azure DevOps Pipeline v2</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -3049,7 +3050,9 @@ C:\Users\inflectra\AppData\Roaming\npm\node_modules
 <pre><code class="bash">tap --test-arg=&quot;{'g_browserLibrary':'Selenium - Chrome'}&quot;
 </code></pre>
 
-<h2 id="azure-devops-pipeline">Azure DevOps Pipeline</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QEH5a9vqymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="azure-devops-pipeline-v1">Azure DevOps Pipeline v1</h2>
 <p>To run tests in Azure DevOps you need to <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops">configure a pipeline</a>. Here is the template to run Rapise tests:</p>
 <p><strong>azure-pipelines.yml</strong></p>
 <pre><code class="yaml"># Starter pipeline
@@ -3098,6 +3101,9 @@ steps:
 </ol>
 <p>After execution of the pipeline one can review test results.</p>
 <p><img alt="Test Report" src="../img/azure_tap_report.png" /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/niRPLRMgenI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="azure-devops-pipeline-v2">Azure DevOps Pipeline v2</h2>
 <p>If you do not want each step of a Rapise test to be reported as test case in Azure DevOps use modified pipeline version:</p>
 <p><strong>azure-pipelines-summary.yml</strong></p>
 <pre><code class="yaml"># Starter pipeline
@@ -3145,7 +3151,7 @@ steps:
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "previous": 80, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
