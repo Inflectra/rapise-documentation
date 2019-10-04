@@ -88,7 +88,9 @@ To pass parameters to a Rapise test specify `--test-arg`. The value is JSON stri
 tap --test-arg="{'g_browserLibrary':'Selenium - Chrome'}"
 ```
 
-## Azure DevOps Pipeline
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QEH5a9vqymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Azure DevOps Pipeline v1
 
 To run tests in Azure DevOps you need to [configure a pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops). Here is the template to run Rapise tests:
 
@@ -143,6 +145,10 @@ The pipeline consists of the following steps:
 After execution of the pipeline one can review test results.
 
 ![Test Report](./img/azure_tap_report.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/niRPLRMgenI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Azure DevOps Pipeline v2
 
 If you do not want each step of a Rapise test to be reported as test case in Azure DevOps use modified pipeline version:
 
