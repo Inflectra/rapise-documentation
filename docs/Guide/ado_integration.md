@@ -60,16 +60,32 @@ AzureDevOpsFriendlyArchhitecture
 |-FailedLogin
 ```
 
-`test` folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests.
+`test` folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests. 
 
 ```
 AzureDevOpsFriendlyArchhitecture 
 |
-|- tests
+|- test
     |
     |-CreateNewBook.js
     |-FailedLogin.js
 ```
+
+Predefined content of the files is:
+
+```javascript
+var rapise = require('../rapise')
+var tap = require('tap')
+var path = require('path');
+
+var testName = path.basename(__filename);
+
+rapise.run(testName, function(exit_code) {
+    tap.ok(exit_code == 0, testName);    
+})
+
+```
+
 There is also `tap-parallel-not-ok` in `tests` folder that instructs Node-Tap to run tests sequentially.
 
 ## Run Tests with Tap
@@ -122,6 +138,16 @@ steps:
 - script: |
     cscript.exe fixunit.js
   displayName: 'Fix XUnit Reports'
+  
+- task: CopyFiles@2
+  inputs:
+    contents: 'reports/**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: TestRunReports  
 
 - task: PublishTestResults@2
   inputs:
@@ -140,11 +166,16 @@ The pipeline consists of the following steps:
 1. Run tests via `tap` command. You can pass parameters if needed.
 2. Convert TAP formatted execution results to XUnit formatted reports.
 3. Adjust XUnit reports for better processing by Azure DevOps.
-4. Upload test results to Azure with [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results).
+4. Gather logs and reports in TAP/TRP formats in `reports` folder for [Publish Build Artifacts task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops).
+5. Upload test results to Azure with [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results).
 
-After execution of the pipeline one can review test results.
+After execution of the pipeline one can review test results:
 
 ![Test Report](./img/azure_tap_report.png)
+
+and reports/logs:
+
+![Test Logs](./img/azure_artifacts.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/niRPLRMgenI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -180,6 +211,16 @@ steps:
     cscript.exe summarize.js
   displayName: 'Fix XUnit Reports'
 
+- task: CopyFiles@2
+  inputs:
+    contents: 'reports/**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: TestRunReports
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
@@ -191,3 +232,7 @@ steps:
 It calls `summarize.js` to adjust XUnit reports. Azure DevOps report for this pipeline looks like:
 
 ![Test Report Summary](./img/azure_tap_report_summary.png)
+
+Detailed logs and reports are also available for download:
+
+![Test Logs](./img/azure_artifacts.png)
