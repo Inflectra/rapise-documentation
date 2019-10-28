@@ -6,7 +6,7 @@ Rapise test scripts can be run from the **command line**.
 ## Usage
 The form of the command is:
 
-`c:\windows\syswow64\cscript.exe SeSExecutor.js <path_to_sstest_file> [evals*]`
+`%windir%\syswow64\cscript.exe "C:\Program Files (x86)\Inflectra\Rapise\Engine\SeSExecutor.js" <path_to_sstest_file> [evals*]`
 
 where
 
@@ -37,4 +37,4 @@ Exit Code:
 
 ## See Also
 *   [Settings Dialog](settings_dialog.md)
-*   [KB113](http://www.inflectra.com/Support/KnowledgeBase/KB17.aspx) Running a Rapise script from the command-line on a 64-bit machine
+*   [KB17](http://www.inflectra.com/Support/KnowledgeBase/KB17.aspx) Running a Rapise script from the command-line on a 64-bit machine
