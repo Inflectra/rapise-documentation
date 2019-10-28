@@ -3029,13 +3029,26 @@ C:\Users\inflectra\AppData\Roaming\npm\node_modules
 |-FailedLogin
 </code></pre>
 
-<p><code>test</code> folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests.</p>
+<p><code>test</code> folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests. </p>
 <pre><code>AzureDevOpsFriendlyArchhitecture 
 |
-|- tests
+|- test
     |
     |-CreateNewBook.js
     |-FailedLogin.js
+</code></pre>
+
+<p>Predefined content of the files is:</p>
+<pre><code class="javascript">var rapise = require('../rapise')
+var tap = require('tap')
+var path = require('path');
+
+var testName = path.basename(__filename);
+
+rapise.run(testName, function(exit_code) {
+    tap.ok(exit_code == 0, testName);    
+})
+
 </code></pre>
 
 <p>There is also <code>tap-parallel-not-ok</code> in <code>tests</code> folder that instructs Node-Tap to run tests sequentially.</p>
@@ -3082,6 +3095,16 @@ steps:
     cscript.exe fixunit.js
   displayName: 'Fix XUnit Reports'
 
+- task: CopyFiles@2
+  inputs:
+    contents: 'reports/**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: TestRunReports  
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
@@ -3097,10 +3120,13 @@ steps:
 <li>Run tests via <code>tap</code> command. You can pass parameters if needed.</li>
 <li>Convert TAP formatted execution results to XUnit formatted reports.</li>
 <li>Adjust XUnit reports for better processing by Azure DevOps.</li>
+<li>Gather logs and reports in TAP/TRP formats in <code>reports</code> folder for <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops">Publish Build Artifacts task</a>.</li>
 <li>Upload test results to Azure with <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results">Publish Test Results task</a>.</li>
 </ol>
-<p>After execution of the pipeline one can review test results.</p>
+<p>After execution of the pipeline one can review test results:</p>
 <p><img alt="Test Report" src="../img/azure_tap_report.png" /></p>
+<p>and reports/logs:</p>
+<p><img alt="Test Logs" src="../img/azure_artifacts.png" /></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/niRPLRMgenI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="azure-devops-pipeline-v2">Azure DevOps Pipeline v2</h2>
@@ -3132,6 +3158,16 @@ steps:
     cscript.exe summarize.js
   displayName: 'Fix XUnit Reports'
 
+- task: CopyFiles@2
+  inputs:
+    contents: 'reports/**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: TestRunReports
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
@@ -3142,7 +3178,9 @@ steps:
 </code></pre>
 
 <p>It calls <code>summarize.js</code> to adjust XUnit reports. Azure DevOps report for this pipeline looks like:</p>
-<p><img alt="Test Report Summary" src="../img/azure_tap_report_summary.png" /></p></div>
+<p><img alt="Test Report Summary" src="../img/azure_tap_report_summary.png" /></p>
+<p>Detailed logs and reports are also available for download:</p>
+<p><img alt="Test Logs" src="../img/azure_artifacts.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3151,7 +3189,7 @@ steps:
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
+                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
