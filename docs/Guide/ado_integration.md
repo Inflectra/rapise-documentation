@@ -173,9 +173,11 @@ After execution of the pipeline one can review test results:
 
 ![Test Report](./img/azure_tap_report.png)
 
-and reports/logs:
+and reports/logs (.tap, .trp, .log):
 
 ![Test Logs](./img/azure_artifacts.png)
+
+> Note: TRP files are standard reports you can view with Rapise.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/niRPLRMgenI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -233,6 +235,8 @@ It calls `summarize.js` to adjust XUnit reports. Azure DevOps report for this pi
 
 ![Test Report Summary](./img/azure_tap_report_summary.png)
 
-Detailed logs and reports are also available for download:
+Detailed logs and reports (.tap, .trp, .log files) are also available for download as a ZIP archive:
 
 ![Test Logs](./img/azure_artifacts.png)
+
+> Note: TRP files are standard reports you can view with Rapise.
