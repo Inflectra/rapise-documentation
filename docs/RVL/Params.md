@@ -46,7 +46,7 @@ Should report a message like:
 
 ## Extra Parameters
 
-Several functions of the [RVL Object](../Libraries/RVL.md) support variable parameters ([`RVL.DoPlaySheet`](RVL_DoPlay.md), [`RVL.DoPlayScript`](RVL_DoPlay.md), [`RVL.SetLocatorOpts`](../Libraries/RVL.md#setlocatoropts), [`RVL.FormatString`](../Libraries/RVL.md#formatstring) and [`RVL.DoPlayTestParallel`](../Libraries/RVL.md#doplaytestparallel)) support extra parameters.
+Several functions of the [RVL Object](../Libraries/RVL.md) support variable parameters ([`RVL.DoPlaySheet`](RVL_DoPlay.md), [`RVL.DoPlayScript`](RVL_DoPlay.md), [`RVL.SetLocatorOpts`](../Libraries/RVL.md#setlocatoropts), [`RVL.FormatString`](../Libraries/RVL.md#formatstring), [`RVL.DoPlayTest`](../Libraries/RVL.md#doplaytest)) and [`RVL.DoPlayTestParallel`](../Libraries/RVL.md#doplaytestparallel)) support extra parameters.
 
 Custom parameters added by user manually, by specifying row type `Param` and assigning any required param name.
 
