@@ -57,6 +57,12 @@ then alternative branch is appended:
 
 Similar logic works for Params, Conditions, Maps, Loops, Assertions and so on.
 
+## Disabling Cell Auto Correction
+
+Sometimes autocompletion prevents one from entering a desired value. For example, you have a global object `navigator` and typing it into the **Object** columns automatically changes it to `Navigator`.
+
+The solution is to enter the cell for editing text and pressing `F2`. It will disable all autocompletion for this cell and then you may type any value.
+
 ## Action Params
 
 When you select an action from the list **RVL Edtior** automatically fills default action params. For example, if we choose: 
@@ -74,6 +80,16 @@ And press `Tab` after `DoLaunch` **RVL Editor** fills default param:
 It is also possible to add params one-by-one using the dropdown in the **ParamName** column:
 
 ![DoLaunch](./img/rvl_editor_global_dolaunch3.png)
+
+## Password Param Value
+
+Once column **ParamType** set to `password`, **ParamValue** should be an encrypted string. Setting encrypted value is simple:
+
+1. Change **ParamType** to `string`.
+
+2. Type plain value to be encrypted into **ParamValue**.
+
+3. Switch **ParamType** to `password` - plain value becomes encrypted.
 
 ## Full Line Comments
 

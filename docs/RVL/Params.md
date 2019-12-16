@@ -16,6 +16,7 @@ The last 3 columns in the RVL table are used for passing parameters:
 * * `expression` - any valid JavaScript expression that may involve global variables and functions and local variables.
 * * `variable` - the parameter value is read from a variable.
 * * `objectid` - ID of one of the learned Objects.
+* * `password` - means that value is encrypted string that is decrypted in runtime. 
 * 7th column - *ParamValue* - a value that is acceptable for the specified *ParamType*. For `boolean` it is `true` or `false`. For `number` is is any floating point number (i.e. `3.14`). For `string`, any text without quotes or escape signs.
 
 ## Param Rows
