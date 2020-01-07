@@ -3173,6 +3173,8 @@
 </code></pre>
 
 <p>This code will check to see if the variables are provided by SpiraTest and if not, it will use some defaults. This is useful when you want to be able to run the test directly from Rapise and from SpiraTest without having to make changes to the test script.</p>
+<p>Note, that if your test is implemented in RVL, you may define these variables right in RVL sheet using <a href="../../RVL/Variables/#assigning">Global Variables</a>. So same definition would look like:</p>
+<p><img alt="automation hosts" src="../img/using_rapise_with_spiratest_rvl_vars.png" /></p>
 <p>These global variables (<code>g_book_name</code>, <code>g_book_author</code>, <code>g_book_genre</code>) can now be used in the Rapise test script at the appropriate points in the playback.</p>
 <p>The <code>g_browser_library</code> variable is used to specify which browser should run the test. This is done with the following command, located in the <code>CreateNewBook.js</code> file:</p>
 <pre><code class="javascript">g_load_libraries=[&quot;%g_browser_library:Internet Explorer HTML%&quot;];
@@ -3340,7 +3342,7 @@ Inflectra &gt; Rapise</code> program folder:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "help": 191, "next": 78, "previous": 80};
+                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

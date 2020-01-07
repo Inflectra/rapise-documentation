@@ -2977,7 +2977,9 @@
             <li><a href="#features">Features</a></li>
             <li><a href="#rvl-scripting">RVL Scripting</a></li>
             <li><a href="#auto-completion">Auto Completion</a></li>
+            <li><a href="#disabling-cell-auto-correction">Disabling Cell Auto Correction</a></li>
             <li><a href="#action-params">Action Params</a></li>
+            <li><a href="#password-param-value">Password Param Value</a></li>
             <li><a href="#full-line-comments">Full Line Comments</a></li>
             <li><a href="#context-menu">Context Menu</a></li>
             <li><a href="#sheet-tab-context-menu">Sheet Tab Context Menu</a></li>
@@ -3024,6 +3026,9 @@
 <p>then alternative branch is appended:</p>
 <p><img alt="Flow If" src="../img/rvl_editor_flow_if_elseif1.png" /></p>
 <p>Similar logic works for Params, Conditions, Maps, Loops, Assertions and so on.</p>
+<h2 id="disabling-cell-auto-correction">Disabling Cell Auto Correction</h2>
+<p>Sometimes autocompletion prevents one from entering a desired value. For example, you have a global object <code>navigator</code> and typing it into the <strong>Object</strong> columns automatically changes it to <code>Navigator</code>.</p>
+<p>The solution is to enter the cell for editing text and pressing <code>F2</code>. It will disable all autocompletion for this cell and then you may type any value.</p>
 <h2 id="action-params">Action Params</h2>
 <p>When you select an action from the list <strong>RVL Edtior</strong> automatically fills default action params. For example, if we choose: </p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_global_dolaunch0.png" /></p>
@@ -3033,6 +3038,19 @@
 <p><img alt="DoLaunch" src="../img/rvl_editor_global_dolaunch2.png" /></p>
 <p>It is also possible to add params one-by-one using the dropdown in the <strong>ParamName</strong> column:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_global_dolaunch3.png" /></p>
+<h2 id="password-param-value">Password Param Value</h2>
+<p>Once column <strong>ParamType</strong> set to <code>password</code>, <strong>ParamValue</strong> should be an encrypted string. Setting encrypted value is simple:</p>
+<ol>
+<li>
+<p>Change <strong>ParamType</strong> to <code>string</code>.</p>
+</li>
+<li>
+<p>Type plain value to be encrypted into <strong>ParamValue</strong>.</p>
+</li>
+<li>
+<p>Switch <strong>ParamType</strong> to <code>password</code> - plain value becomes encrypted.</p>
+</li>
+</ol>
 <h2 id="full-line-comments">Full Line Comments</h2>
 <p>Anything typed into the <strong>Type</strong> cell of the commented line is expanded to as many cells as needed to show the text. This is similar to the way Excel extends cell text across sibling empty cells:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_comment_line.png" /></p>
@@ -3140,7 +3158,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "help": 191, "next": 78, "previous": 80};
+                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
