@@ -252,6 +252,10 @@ function TestInit()
 
 This code will check to see if the variables are provided by SpiraTest and if not, it will use some defaults. This is useful when you want to be able to run the test directly from Rapise and from SpiraTest without having to make changes to the test script.
 
+Note, that if your test is implemented in RVL, you may define these variables right in RVL sheet using [Global Variables](../RVL/Variables.md#assigning). So same definition would look like:
+
+![automation hosts](./img/using_rapise_with_spiratest_rvl_vars.png)
+
 These global variables (`g_book_name`, `g_book_author`, `g_book_genre`) can now be used in the Rapise test script at the appropriate points in the playback.
 
 The `g_browser_library` variable is used to specify which browser should run the test. This is done with the following command, located in the `CreateNewBook.js` file:
