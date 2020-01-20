@@ -20,6 +20,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 | [AutoOpen](#AutoOpen) | During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance. |
 | [EnsureVisibleHorizontalAlignment](#EnsureVisibleHorizontalAlignment) | One of "start", "center", "end", or "nearest". |
 | [EnsureVisibleVerticalAlignment](#EnsureVisibleVerticalAlignment) | One of "start", "center", "end", or "nearest". |
+| [NativeEvents](#NativeEvents) | Set it to true to use native keyboard and mouse input. |
 | [QuitIfNotConnected](#QuitIfNotConnected) | If connection to browser fails - open plugin page and quit. |
 
 
@@ -40,6 +41,8 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[DoCheckAlert](#DoCheckAlert) | Waits until browser alert with a given text. |
 |	[DoCheckConfirmation](#DoCheckConfirmation) | Waits until browser confirmation with a given text. |
 |	[DoCheckPrompt](#DoCheckPrompt) | Waits until browser prompt with a given text. |
+|	[DoClickUntilOnScreen](#DoClickUntilOnScreen) | Clicks on a given element until another element appears on screen. |
+|	[DoClickWhileOnScreen](#DoClickWhileOnScreen) | Clicks on an element until it disappears. |
 |	[DOMFindByAttributeValue](#DOMFindByAttributeValue) | Looks for a web element by specific attribute value through all frames. |
 |	[DOMFindByName](#DOMFindByName) | Looks for a web element by its name through all frames. |
 |	[DOMFindByText](#DOMFindByText) | Looks for a web element by its text contents through all frames. |
@@ -47,6 +50,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[DoScreenshot](#DoScreenshot) | Makes screenshot of the browser window. |
 |	[DoSetExpectedConfirmResult](#DoSetExpectedConfirmResult) | Set boolean value to return as a result of next browser 'confirm' request. |
 |	[DoSetExpectedPromptResult](#DoSetExpectedPromptResult) | Set text to return as a result of next browser 'prompt' request. |
+|	[DoWaitFor](#DoWaitFor) | Waits for object to appear on screen. |
 |	[ExecJS](#ExecJS) | Executes given JavaScript statement in a browser and returns results. |
 |	[Find](#Find) | Returns HTMLObject wrapping DOM element for a given 'xpath'. |
 |	[GetPerformance](#GetPerformance) | Reads performance information from currently used browser. |
@@ -105,6 +109,19 @@ Type: string
 			
 			
 		
+<a name="NativeEvents"></a>
+#### NativeEvents
+
+
+Set it to true to use native keyboard and mouse input. Overrides browser profile settings. Does not affect Selenium targets. Requires Rapise 6.3+
+
+			
+	
+			
+Type: boolean
+			
+			
+		
 <a name="QuitIfNotConnected"></a>
 #### QuitIfNotConnected
 
@@ -134,7 +151,7 @@ Checks if object is found on the screen by its id or XPath.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | string |	XPath or ID. XPath is detected by leading "." or "/". |
+| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
 
 
 
@@ -157,7 +174,7 @@ Checks if object is visible on the screen by its id or XPath.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | string |	XPath or ID. XPath is detected by leading "." or "/". |
+| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
 
 
 
@@ -269,6 +286,63 @@ Waits until browser prompt with a given text.  Wait timeout is 10 seconds.
 
 
 <a name="see.also.navigator.docheckprompt"></a>
+
+<a name="DoClickUntilOnScreen"></a>    
+#### DoClickUntilOnScreen(xpathOrObjIdToClick, xpathOrObjIdToExpect, attempts, delay, x, y, forceEvent)
+
+Clicks on a given element until another element appears on screen. Requires Rapise 6.3+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjIdToClick | objectId |	Object Id or XPath of an element to click. |
+| xpathOrObjIdToExpect | objectId |	Object Id or XPath of an element that should appear on screen. |
+| attempts | number |	Max number of clicks. Default is 2.<br>Optional. |
+| delay | number |	Delay between attempts. Default is 1000 milliseconds.<br>Optional. |
+| x | number |	X-offset from the top-left corner of the object. Default is object width/2.<br>Optional. |
+| y | number |	Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional. |
+| forceEvent | boolean |	Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional. |
+
+
+
+
+**Returns:**
+
+expected object if successfull, otherwise - null.
+
+
+
+<a name="see.also.navigator.doclickuntilonscreen"></a>
+
+<a name="DoClickWhileOnScreen"></a>    
+#### DoClickWhileOnScreen(xpathOrObjId, attempts, delay, x, y, forceEvent)
+
+Clicks on an element until it disappears. Requires Rapise 6.3+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectid |	Object Id or XPath of an element to click. |
+| attempts | number |	Max number of clicks. Default is 2.<br>Optional. |
+| delay | number |	Delay between attempts. Default is 1000 milliseconds.<br>Optional. |
+| x | number |	X-offset from the top-left corner of the object. Default is object width/2.<br>Optional. |
+| y | number |	Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional. |
+| forceEvent | boolean |	Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional. |
+
+
+
+
+**Returns:**
+
+true if object disappeared, otherwise - false.
+
+
+
+<a name="see.also.navigator.doclickwhileonscreen"></a>
 
 <a name="DOMFindByAttributeValue"></a>    
 #### DOMFindByAttributeValue(attrName, attrValue, findAll, timeout, timeout)
@@ -427,6 +501,31 @@ Set text to return as a result of next browser 'prompt' request.
 
 
 <a name="see.also.navigator.dosetexpectedpromptresult"></a>
+
+<a name="DoWaitFor"></a>    
+#### DoWaitFor(xpathOrObjId, timeout, params)
+
+Waits for object to appear on screen. Requires Rapise 6.3+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
+| timeout | number |	Max time to wait. Default is 10000 milliseconds.<br>Optional. |
+| params | object |	Overrides locator options.<br>Optional. |
+
+
+
+
+**Returns:**
+
+found object, otherwise - false.
+
+
+
+<a name="see.also.navigator.dowaitfor"></a>
 
 <a name="ExecJS"></a>    
 #### ExecJS(scriptText, obj)
