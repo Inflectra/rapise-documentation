@@ -299,4 +299,5 @@ pages:
     - 'Preparing for iOS Testing': 'Manuals/Preparing_for_iOS_Testing.md'
     - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
     - 'Azure DevOps Integration': 'Guide/ado_integration.md'
+    - 'Robotic Process Automation': 'Manuals/Rpa.md'
 - 'KB': 'Manuals/kb.md'
