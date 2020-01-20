@@ -382,7 +382,7 @@ At the end of the test, the program will go back and resume scanning for tests t
 
 By right clicking on the system tray icon and selecting `Configuration`, the application's window will open to the configuration panel.
 
-![rapiselauncher config panel](./img/using_rapise_with_spiratest_guide47.png)
+<img src="/Guide/img/using_rapise_with_spiratest_guide47.png" width="632" />
 
 The panel has the following options:
 
@@ -393,6 +393,7 @@ The panel has the following options:
     - **Test**: Clicking this will test the login to make sure the application can connect to the server properly.
     - **Repository** -- this is the Windows folder that used to store local copies of the non-absolute repositories (downloaded from SpiraTest).
     - **Use Temp Folder for Test Execution** -- this should be enabled if you are also writing tests on this computer using Rapise and you don't want RapiseLauncher to download and overwrite any changes you have made locally (that have not been saved).
+    
 - **Server Polling**
     - **Automation Host Token**: This field is required, and uniquely identifies the local testing machine. Any scheduled tests assigned to the Automation Host on SpiraTest will get polled for this machine. Except in special circumstances, this ID should be unique among all testing machines.
 
@@ -401,14 +402,16 @@ The panel has the following options:
     - **Automatically Run Overdue Tests**: When this is checked, any tests that are pulled from the SpiraTest server that has a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this check, they will be executed as soon as the poll is finished.
     - **Polling Frequency**: How often in minutes the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 60 (1 hour), and should be fine for most installations. Note that tests will still be executed on their scheduled time, this is simply how often the program will talk to the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.
     - **Polling Read Ahead**: How far ahead in minutes the program should read the schedule for the Automation host. Tests that are scheduled farther in advance will not show up as a pending test on the status screen.
-- **Playback Options**
+    
+- **Options**
     - **Capture screenshots during playback** -- selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.
+    - **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Usefull when your server is rebooted regularly. This option requires Rapise 6.3+
 
 ### Status Screen
 
 The status screen is usually hidden, but can be brought up for display by double-clicking on the system tray icon:
 
-![status screen](./img/using_rapise_with_spiratest_guide49.png)
+<img src="/Guide/img/using_rapise_with_spiratest_guide49.png" width="632" />
 
 The top of the screen shows the current status, whether it's running a test or waiting to poll the server for an update. It will also show any errors present on the application, like a registration error or configuration issue. Under the status bar is a list of any pending or executing tests that are scheduled for this testing machine. The list will get cleared at every poll, so tests that have executed since the previous poll will still be on the list, and will show their execution status:
 
