@@ -2,6 +2,122 @@
 
 ## Topics
 
+### <a onclick="return RegisterKbClick('KB507', 'UIAutomation2 Locator')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB507.aspx">KB507</a> UIAutomation2 Locator
+
+Rapise 6.3 includes an experimental feature - new UIAutomation2 locator for UIAtuomation based desktop testing. Rather than specifying a path from the element tree root to the element this locator relies on built-in ability of UIAutomation to search for elements based on property values.
+
+### <a onclick="return RegisterKbClick('KB506', 'How to define and use a dynamic Web locator')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB506.aspx">KB506</a> How to define and use a dynamic Web locator
+
+Imaging you have a table with dynamic data on the page. It is not possible to learn every cell. But it is possible to parameterize the locator of a cell and access cells you need during test playback.
+
+### <a onclick="return RegisterKbClick('KB504', 'Referring Repository Objects from Maps')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB504.aspx">KB504</a> Referring Repository Objects from Maps
+
+Sometimes you need to specify object and data for it in the map. Here we will show how to make it using Rapise built in maps and available APIs.
+
+### <a onclick="return RegisterKbClick('KB503', 'Accessing svg elements via XPath')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB503.aspx">KB503</a> Accessing svg elements via XPath
+
+By default straight forward XPath to SVG primitives will not work.  So XPath ending like .../svg[2]/path will fail. Here is a workaround.
+
+### <a onclick="return RegisterKbClick('KB502', 'Passing Map as a Parameter into RVL Sheet')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB502.aspx">KB502</a> Passing Map as a Parameter into RVL Sheet
+
+This topic covers more detailed description on how to pass map from one Sheet to another in RVL
+
+### <a onclick="return RegisterKbClick('KB501', 'Passing Sub-Test Parameters')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB501.aspx">KB501</a> Passing Sub-Test Parameters
+
+Here we will cover several ways of passing parameters and returning values from Sub-Tests.
+
+### <a onclick="return RegisterKbClick('KB499', 'How to set size of a browser window')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB499.aspx">KB499</a> How to set size of a browser window
+
+To ensure that web tests always run on a browser window of a specific size you may use different techniques.
+
+### <a onclick="return RegisterKbClick('KB497', 'Connecting to PostgreSQL from Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB497.aspx">KB497</a> Connecting to PostgreSQL from Rapise
+
+If you need to connect Database object to PostgreSQL database follow these simple steps.
+
+### <a onclick="return RegisterKbClick('KB496', 'Connecting to MySQL from Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB496.aspx">KB496</a> Connecting to MySQL from Rapise
+
+If you need to connect Database object to MySQL database follow these simple steps.
+
+### <a onclick="return RegisterKbClick('KB493', 'Rapise Data Generator')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB493.aspx">KB493</a> Rapise Data Generator
+
+Sometimes you need to feed your application with demo data that is human-readable but still random. Here is such a generator for Rapise.
+
+### <a onclick="return RegisterKbClick('KB492', 'Calling NodeJS script from Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB492.aspx">KB492</a> Calling NodeJS script from Rapise
+
+NodeJS provides a lot of unique features and plethora of features implemented in npm packages. Here we describe how to combine such a script with a Rapise test.
+
+### <a onclick="return RegisterKbClick('KB489', 'Headless Firefox Testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB489.aspx">KB489</a> Headless Firefox Testing
+
+Firefox 56+ supports headless mode on Windows.  You can use it to Run Rapise tests via Selenium integration.
+
+### <a onclick="return RegisterKbClick('KB488', 'Rapise Objects and Files Metadata for Code Completion')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB488.aspx">KB488</a> Rapise Objects and Files Metadata for Code Completion
+
+Rapise scripts and engine are mostly implemented in JS. Some people prefer to use 3rd party editors for scripting. This is helpful when integrating Rapise tests into bigger development pipeline together with other scripts and config files. Here we explain where information about objects and types is provided for Code Completion/Intellisense support in 3rd party editors.
+
+### <a onclick="return RegisterKbClick('KB487', 'How to Do Mouse Wheel Scroll in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB487.aspx">KB487</a> How to Do Mouse Wheel Scroll in Rapise
+
+Some controls require mouse wheel input. Here is how to do it.
+
+### <a onclick="return RegisterKbClick('KB486', 'Automatic learning of objects in a Java application')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB486.aspx">KB486</a> Automatic learning of objects in a Java application
+
+If you prefer writing test steps manually in JavaScript then it might be helpful to automatically learn all child objects of a Java application to make them available for scripting.
+
+### <a onclick="return RegisterKbClick('KB485', 'How to Enable JRE Accessibility Only for Tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB485.aspx">KB485</a> How to Enable JRE Accessibility Only for Tests
+
+By default Rapise is using Java Accessibility Bridge by changing some Java Runtime Environment (JRE)-wide configuration files. So all applications using same JRE will use the modified version. If your goal is to have Accessibility only for test runs, then there is another way of doing that.
+
+### <a onclick="return RegisterKbClick('KB484', 'Comparing Parts of Images')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB484.aspx">KB484</a> Comparing Parts of Images
+
+Sometimes compared images partially differ due to some dynamic part. Here we show how to do partial comparison in this case.
+
+### <a onclick="return RegisterKbClick('KB483', 'Renaming Objects in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB483.aspx">KB483</a> Renaming Objects in Rapise
+
+Good object naming is important for test script clarity and readability. Default names are detected during record/learn session and results sometimes are cumbersome, obscure or irrelevant. Here we show how to give proper names to objects.
+
+### <a onclick="return RegisterKbClick('KB482', 'How to get contents of the HEAD element in a DOM')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB482.aspx">KB482</a> How to get contents of the HEAD element in a DOM
+
+In this article we will get contents of the HEAD element to get the links to all referenced stylesheets. It may be useful if you plan to verify that a set of CSS did not change for a page.
+
+### <a onclick="return RegisterKbClick('KB479', 'Rapise and Citrix/RDP')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB479.aspx">KB479</a> Rapise and Citrix/RDP
+
+We are getting a lot of questions on how to use Rapise with Citrix and remotely accessed VMs . Here is the answer.
+
+### <a onclick="return RegisterKbClick('KB477', 'Inspecting custom UI control with UI Automation Spy')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB477.aspx">KB477</a> Inspecting custom UI control with UI Automation Spy
+
+UI Automation is a default technology for testing desktop applications on Windows. If your application is not .NET or Java then  Rapise will turn on UI Automation library during recording. If some elements in your application are not recognized or there are issues with playback of recorded steps then most likely your application is using custom UI controls. You may inspect those controls and send information to Rapise support team to get recommendations on how to proceed with testing.
+
+### <a onclick="return RegisterKbClick('KB475', 'How to Get All Links on the Page with Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB475.aspx">KB475</a> How to Get All Links on the Page with Rapise
+
+Sometimes you need to go through all links to check something. Here are two ways: JS and RVL of doing it with Rapise.
+
+### <a onclick="return RegisterKbClick('KB473', 'Viewing Rapise logs in Spira')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB473.aspx">KB473</a> Viewing Rapise logs in Spira
+
+When you execute Rapise tests via Rapise Launcher - test reports and logs are automatically uploaded to Spira. But verbose level is always set to Level 1 by Rapise Launcher. If you need more detailed log set verbose to 2 or 3 in test case properties.
+
+### <a onclick="return RegisterKbClick('KB472', 'Read PDF Text wih Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB472.aspx">KB472</a> Read PDF Text wih Rapise
+
+Sometimes you need to check that some text is available in the PDF document. Sometimes you need to extract some value from it. So you need access to plain text content of the document.  Here we explain how to do it with Rapise.
+
+### <a onclick="return RegisterKbClick('KB470', 'How to run a PowerShell script in Rapise test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB470.aspx">KB470</a> How to run a PowerShell script in Rapise test
+
+To run a PowerShell script use Global.DoLaunch action.
+
+### <a onclick="return RegisterKbClick('KB468', 'Using Rapise with Java Web Start Applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB468.aspx">KB468</a> Using Rapise with Java Web Start Applications
+
+Rapise supports testing of Java applications. In the case that application is launched using Java Web Start (JWS) additional steps are needed to successfully test an application.
+
+### <a onclick="return RegisterKbClick('KB466', 'How to deal with custom UI Automation controls')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB466.aspx">KB466</a> How to deal with custom UI Automation controls
+
+This article is for those who test a desktop application via  UI Automation library.  Since desktop applications are frequently built using UI controls from different vendors  and the number of such controls available on the market is pretty big (> 1k)  - Rapise may not have out-of-the-box support for some controls in your application.  For such cases Rapise offers a low level API to navigate UI Automation tree of elements inside an application and read/write element properties. In this tutorial we'll show how to use this API and quickly add minimal support for a custom control.
+
+### <a onclick="return RegisterKbClick('KB465', 'How to check if web element is really visible on screen')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB465.aspx">KB465</a> How to check if web element is really visible on screen
+
+Checking if element is visible on screen may be a tricky task. It's usually not a problem in manual testing but there are nuances when you do test automation.
+
+### <a onclick="return RegisterKbClick('KB462', 'How to check if a web dropdown element has specific option or not')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB462.aspx">KB462</a> How to check if a web dropdown element has specific option or not
+
+If a test needs to verify existence or absence of a specific option in a dropdown you can do it via a simple function presented below.
+
 ### <a onclick="return RegisterKbClick('KB458', 'How to start Rapise Launcher on Windows Boot')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB458.aspx">KB458</a> How to start Rapise Launcher on Windows Boot
 
 Windows may reboot because of various reasons. If you use a machine to run Rapise tests on regular basis than you want Rapise Launcher to be started automatically after system reboot. The most reliable method that works with any Windows edition is to use Task Scheduler.
@@ -72,7 +188,7 @@ If an object can not be found at playback and it is obvious that object location
 
 ### <a onclick="return RegisterKbClick('KB427', 'How to master a dynamic locator with RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx">KB427</a> How to master a dynamic locator with RVL
 
-There are situations when object location attribute  depends on the object data and it is not possible to record/learn all such objects in advance.  In this case it may be convenient to calculate object location at playback time using `FormatString` and `SetLocatorOpts` actions of the RVL global object.
+There are situations when object location attribute  depends on the object data and it is not possible to record/learn all such objects in advance.  In this case it may be convenient to calculate object location at playback time using FormatString and SetLocatorOpts actions of the RVL global object.
 
 ### <a onclick="return RegisterKbClick('KB422', 'How to save/load DOM tree in Web Spy')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB422.aspx">KB422</a> How to save/load DOM tree in Web Spy
 
@@ -652,11 +768,11 @@ One of the challenges using an automated testing tool is to organize things in a
 
 ### <a onclick="return RegisterKbClick('KB186', 'Global.DoWaitFor vs Global.DoWaitForProperty')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB186.aspx">KB186</a> Global.DoWaitFor vs Global.DoWaitForProperty
 
-The most commonly used synchronization option to make Rapise wait until the application under test (AUT) is ready is the Global .DoSleep(milliseconds) function. However having just a sleep may cause an unnecessary delay because we have to consider the maximum wait interval and it may be much less on average. Rapise includes some additional synchronization options for more fine grained control of the test case flow.
+The most commonly used synchronization option to make Rapise wait until the application under test (AUT) is ready is the Global.DoSleep action. However having just a sleep may cause an unnecessary delay because we have to consider the maximum wait interval and it may be much less on average. Rapise includes some additional synchronization options for more fine grained control of the test case flow.
 
 ### <a onclick="return RegisterKbClick('KB187', 'Using CheckObjectExists(xpathOrObjId) to See if Web Object Exists on Page')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB187.aspx">KB187</a> Using CheckObjectExists(xpathOrObjId) to See if Web Object Exists on Page
 
-This articles describes how you can use the Navigator.CheckObjectExists(...) function to see if a web page exists and how it differs from the Global.DoWaitFor / DoWaitForProperty functions that are described in another article.
+This articles describes how you can use the Navigator.CheckObjectExists(...) action to see if an element exists on a web page and how it differs from the Global.DoWaitFor / DoWaitForProperty actions that are described in another article.
 
 ### <a onclick="return RegisterKbClick('KB184', 'What is the purpose of the Tester.EndTest() Function?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB184.aspx">KB184</a> What is the purpose of the Tester.EndTest() Function?
 
@@ -922,9 +1038,9 @@ Sometimes when automating a test, you need to access the local Windows clipboard
 
 Sometimes you may have a button (or other control) that  can have a different appearance depending on the different focus statuses.For example, the default status without focus is a grey image, whereas when the mouse hovering over it becomes blue. Then when the mouse left button is held down on the button (and not released), the image changes to a red image.Finally, when the button is activated using the tab key to tab into the button and the mouse is somewhere else, it has a fourth color. This article discusses solutions for how to test these kinds of situation
 
-### <a onclick="return RegisterKbClick('KB64', 'Using Navigator.ExecJS to call Javascript functions')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB64.aspx">KB64</a> Using Navigator.ExecJS to call Javascript functions
+### <a onclick="return RegisterKbClick('KB64', 'Using Navigator.ExecJS to execute JavaScript code inside a browser')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB64.aspx">KB64</a> Using Navigator.ExecJS to execute JavaScript code inside a browser
 
-Sometimes you need to call JavaScript code directly from Rapise rather than firing a DOM event (e.g. clicking on an element) and having that element fire a client-side event handler. This article explains some of the pitfalls and techniques for doing this when you have global functions rather than functions that are part of the core browser model.
+Sometimes you need to execute JavaScript code at a browser side and get the result. You can do this with Navigator.ExecJS.
 
 ### <a onclick="return RegisterKbClick('KB63', 'Getting the State of a Win32 object using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB63.aspx">KB63</a> Getting the State of a Win32 object using Rapise
 
@@ -958,9 +1074,9 @@ Sometimes you will have controls in a WPF or Silverlight application which us
 
 If you use the Global.DoLaunch(...) command to launch a Windows console application, it will return a process ID. This article provides some sample code for executing a console application and checking to make sure that the process is not still running.
 
-### <a onclick="return RegisterKbClick('KB46', 'Executing Javascript commands against web browser')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB46.aspx">KB46</a> Executing Javascript commands against web browser
+### <a onclick="return RegisterKbClick('KB46', 'Executing JavaScript commands against Web Browser')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB46.aspx">KB46</a> Executing JavaScript commands against Web Browser
 
-Sometimes you want to be able to open a browser window (e.g. Internet Explorer) and execute JavaScript commands directly against the DOM objects rather than using the Rapise Learned objects. This article explains the recommended way of doing this.
+Sometimes you want to be able to open a browser window and execute JavaScript commands directly against the DOM objects rather than using the Rapise learned objects. This article explains the recommended way of doing this.
 
 ### <a onclick="return RegisterKbClick('KB40', 'Extending RapiseLauncher inactivity timeout')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB40.aspx">KB40</a> Extending RapiseLauncher inactivity timeout
 
@@ -1008,7 +1124,7 @@ It is often useful to have a common set of code libraries and objects that can b
 
 ### <a onclick="return RegisterKbClick('KB17', 'Running a Rapise script from the command-line on a 64-bit machine')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB17.aspx">KB17</a> Running a Rapise script from the command-line on a 64-bit machine
 
-If you try and run a Rapise script from the command-line on a 64-bit machine you may get the following error message: cmd . exe cscript "C:\Program Files (x86)\Inflectra\Rapise\Engine\SeSExecutor.js" "C:\Users\myuser\Documents\My Rapise Tests\MyTest1\MyTest1.sstest" Results in CScript Error: Execution of the Windows Script Host failed. (0x80020102)
+If you try and run a Rapise script from the command-line on a 64-bit machine you may get an error message. Learn how to fix it from the article.
 
 ### <a onclick="return RegisterKbClick('KB13', 'Test-Scripts suddenly moving/clicking at false locations')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB13.aspx">KB13</a> Test-Scripts suddenly moving/clicking at false locations
 
