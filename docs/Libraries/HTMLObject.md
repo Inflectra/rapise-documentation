@@ -801,7 +801,7 @@ boolean: String with option values separated by delim.
 <a name="DoSelect"></a>    
 #### DoSelect(txt)
 
-Selects specified element in &lt;select&gt; control.
+Selects specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.
 
 
 **Parameters:**
