@@ -37,6 +37,20 @@ Drag the **Status** icon back to undo the sort:
 
 ![report, status dragged back.zoom70](./img/automated_reporting5.png)
 
+## TODO Rows
+
+Whenever **Name** starts with `TODO` the viewer automatically does the following:
+
+* If report row **Type** is **Info** then it is highlighted in Yellow and TODO counter is incremented:
+
+    ![TODO](./img/automated_reporting_todo.png)
+
+* If report row **Type** is **Assert** then it stays green or red, but TODO counter is still incremented.
+
+If you hover over last execution status in Rapise main window, the tooltip would contain then total number of TODO items found in the report (i.e. TODO counter):
+
+![TODO Counter](./img/automated_reporting_todo_counter.png)
+
 ## See Also
 
 - [Report Filtering](report_filtering.md)
