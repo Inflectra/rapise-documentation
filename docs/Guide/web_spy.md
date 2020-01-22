@@ -56,7 +56,11 @@ When you right-click on an element it opens a popup menu with the following opti
 
 - **Copy** - copies node text to clipboard (no attribute truncation).
 - **Highlight** - highlights the element in the browser.
-- Double clicking on an element copies it's [XPATH](xpath.md) to the toolbar.
+- **Learn** - expands the list of [various XPath locators](/Guide/web_settings/#different-types-of-xpath) generated for the element.  Click an item in this list and Rapise will learn the object with selected XPath.
+
+![Learn Context Menu](./img/web_spy_learn_context_menu.png)
+
+Double clicking on an element copies it's [XPath](xpath.md) to the toolbar.
 
 ## DOM Element
 
