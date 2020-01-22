@@ -47,3 +47,20 @@ This section has various settings, each of which are described below:
     - auto - This tries to locate an element on the screen, moves the mouse over it and then sends the appropriate DOM 'click' event (the default)
     - event - Just sends the DOM click event to the element with no prior mouse-move
     - click - Simulates an actual click on the element rather than sending a DOM click event
+
+## Local Browser Profiles
+
+Rapise version 6.3+ enables creation of profiles local to a test. It allows storing profiles together with tests (inside SpiraTest or Git repository) and eliminates the need to configure profiles manually on each execution host.
+
+To create a local profile just press Duplicate for one of global profiles and set Local checkbox before clicking OK button. Global and Local profile may have same name, in this case Local profile is used for execution.
+
+![Creating Local Browser Profile](./img/create_local_profile.png)
+
+If a test contains local browser profiles they can be seen in the dropdowns.
+
+![Profile List for Playback](./img/select_local_profile.png)
+
+![Profile List for Configuration](./img/profile_list_local_global.png)
+
+Local profiles are stored inside `<Test Root>\Profiles\BrowserProfiles` and `<Test Root>\Profiles\SeleniumProfiles` folders.
+

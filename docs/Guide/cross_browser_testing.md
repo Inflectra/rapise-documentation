@@ -20,11 +20,13 @@ Once you have changed this setting, [Playback](playback.md) the script normally 
 
 Changing this setting will effectively set the value of the `g_browserLibrary` global variable.
 
+> **Note:** in Rapise 6.3+ you may define [local profiles](/Guide/browser_settings/#local-browser-profiles).
+
 ## Playback in Multiple Browsers - SpiraTest
 
 Executing a test in multiple browsers is slightly more complicated. We recommend that you use **SpiraTest Test Sets** where you may define multiple test cases pointing to the same Test with a different **g_browserLibrary** parameter value.
 
-The separate help document **Using SpiraTest with Rapise** provides specific instructions on using Rapise with SpiraTest to handle the specific case of cross-browser testing as well as more general support for parameterized testing. See the [SpiraTest Integration](spiratest_integration.md) topic for more general information on using Rapise with SpiraTest.
+See the [SpiraTest Integration](spiratest_integration.md) topic for detailed information on using Rapise with SpiraTest.
 
 ## Playback in Multiple Browsers - DoInvokeTest
 

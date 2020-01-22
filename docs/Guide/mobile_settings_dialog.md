@@ -71,3 +71,19 @@ In addition, there are some settings, unique to running Appium mobile device tes
     - **device** - Specifies a particular mobile device for the test environment.
     - **os\_version** - Use this capability to specify the OS version of the device.
     - **realMobile** - Use this flag to test on a physical mobile device.
+
+## Local Mobile Profiles
+
+Rapise version 6.3+ enables creation of profiles local to a test. It allows storing profiles together with tests (inside SpiraTest or Git repository) and eliminates the need to configure profiles manually on each execution host.
+
+To create a local profile just press Duplicate for one of global profiles and set Local checkbox before clicking OK button. Global and Local profile may have same name, in this case Local profile is used for execution.
+
+![Creating Local Mobile Profile](./img/create_local_profile_mobile.png)
+
+If a test contains local mobile profiles they can be seen in the dropdowns.
+
+![Profile List for Playback](./img/select_local_profile_mobile.png)
+
+![Profile List for Configuration](./img/profile_list_local_global_mobile.png)
+
+Local profiles are stored inside `<Test Root>\Profiles\MobileProfiles` folder.
