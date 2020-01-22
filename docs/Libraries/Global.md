@@ -51,11 +51,13 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[GetOsPath](#GetOsPath) | Returns OS root path. |
 |	[GetOsType](#GetOsType) | Reads OS type from the registry. |
 |	[GetOsVersion](#GetOsVersion) | Reads OS service pack version from the registry. |
-|	[GetProperty](#GetProperty) | Reads property value from %WORKDIR%\Config.json. |
+|	[GetProperty](#GetProperty) | Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise. |
+|	[GetRapiseVersion](#GetRapiseVersion) | Reads Rapise version. |
 |	[GetSpecialFolderPath](#GetSpecialFolderPath) | Returns path to a special folder specified by one of possible values. |
 |	[SetClipboardText](#SetClipboardText) | Updates clipboard text |
+|	[SetConfigPath](#SetConfigPath) |  |
 |	[SetFileAsByteArray](#SetFileAsByteArray) | Creates or rewrites file and fills with contents of the provided byte array. |
-|	[SetProperty](#SetProperty) | Sets property value to %WORKDIR%\Config.json. |
+|	[SetProperty](#SetProperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
 
 
 
@@ -577,7 +579,7 @@ was found or timeout.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| objectId | objectid \| string |	Id of an object to wait for. |
+| objectId | objectid |	Id of an object to wait for. |
 | timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: 10000. |
 | sleepTimeIfFound | number |	Wait time (milliseconds) after object is found.<br>Optional, Default: 0. |
 
@@ -619,7 +621,7 @@ Use the callback if you need to check more complex condition than equality.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| obj | string \| SeSObject |	Id of an object to wait for or object itself. |
+| obj | objectid \| SeSObject |	Id of an object to wait for or object itself. |
 | getterName | string |	Property getter function name. |
 | propValue | string \| number \| boolean \| function |	Desired property value or callback function (see description). |
 | timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: 10000. |
@@ -795,9 +797,9 @@ string: Service pack version.
 <a name="see.also.global.getosversion"></a>
 
 <a name="GetProperty"></a>    
-#### GetProperty(name, defValue)
+#### GetProperty(name, defValue, configPath)
 
-Reads property value from %WORKDIR%\Config.json.
+Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise.
 
 
 **Parameters:**
@@ -806,6 +808,7 @@ Reads property value from %WORKDIR%\Config.json.
 | ---------- | -------- | --------------- |
 | name | string |	Name of a property |
 | defValue | string \| number \| boolean |	Default value to return if property does not exist<br>Optional. |
+| configPath | string |	Path to options file (.json, .xlsx).<br>Optional. |
 
 
 
@@ -817,6 +820,29 @@ string | <br>number | <br>boolean: Propery value. If a property does not exist t
 
 
 <a name="see.also.global.getproperty"></a>
+
+<a name="GetRapiseVersion"></a>    
+#### GetRapiseVersion(optMinVersion)
+
+Reads Rapise version. If 'optMinVersion' is specified, then returns true/false depending on 'optMinVersion' less than actual Rapise version.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| optMinVersion | string |	Minimum version to check<br>Optional. |
+
+
+
+
+**Returns:**
+
+string: Rapise Version (i.e. 6.3.18.5), 'true' if optMinVersion<Rapise version, 'false' if optMinVersion>Rapise version.
+
+
+
+<a name="see.also.global.getrapiseversion"></a>
 
 <a name="GetSpecialFolderPath"></a>    
 #### GetSpecialFolderPath(folder=MyDocuments)
@@ -891,6 +917,24 @@ boolean: 'true' when clipboard is set.
 
 <a name="see.also.global.setclipboardtext"></a>
 
+<a name="SetConfigPath"></a>    
+#### SetConfigPath(defPath)
+
+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| defPath | string |	 |
+
+
+
+
+
+<a name="see.also.global.setconfigpath"></a>
+
 <a name="SetFileAsByteArray"></a>    
 #### SetFileAsByteArray(fileName, bytes)
 
@@ -916,9 +960,9 @@ number: Number of bytes written.
 <a name="see.also.global.setfileasbytearray"></a>
 
 <a name="SetProperty"></a>    
-#### SetProperty(name, value)
+#### SetProperty(name, value, configPath)
 
-Sets property value to %WORKDIR%\Config.json. If the file does not exist it will be created.
+Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. If the file does not exist it will be created.
 
 
 **Parameters:**
@@ -927,6 +971,7 @@ Sets property value to %WORKDIR%\Config.json. If the file does not exist it will
 | ---------- | -------- | --------------- |
 | name | string |	Name of a property. |
 | value | string \| number \| boolean |	Value to set. |
+| configPath | string |	Path to options file (.json, .xlsx).<br>Optional. |
 
 
 
