@@ -40,8 +40,10 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[CaptureDesktopImage](#CaptureDesktopImage) | Captures image of the desktop and adds it to the report. |
 |	[CaptureObjectImage](#CaptureObjectImage) | Captures image of an object and adds it to the report. |
 |	[CaptureWindowImage](#CaptureWindowImage) | Captures image of an application window matched by title and class and adds it to the report. |
+|	[DumpCmdArgsJson](#DumpCmdArgsJson) |  |
 |	[EndTest](#EndTest) | Marks end of a currently executed test. |
 |	[FailTest](#FailTest) | Stops test execution and sets it's status to failed. |
+|	[GetParam](#GetParam) |  |
 |	[GetReportAttribute](#GetReportAttribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
 |	[GetTestStatus](#GetTestStatus) | Gets status of currently executed test. |
 |	[IgnoreStatus](#IgnoreStatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
@@ -133,7 +135,7 @@ additional data (links, images, comments) set via 'data' parameter.
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
 | condition | boolean |	If 'true' - assertion is considered passed. |
-| data | SeSReportLink \| SeSReportText|SeSReportImage|object[]|string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -157,7 +159,7 @@ additional data (links, images, comments) set via 'data' parameter.
 | message | string |	Message to put in the report. |
 | obj1 | object |	First object to compare. |
 | obj2 | object |	Second object to compare. |
-| data | SeSReportLink \| SeSReportText|SeSReportImage|Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -181,7 +183,7 @@ additional data (links, images, comments) set via 'data' parameter.
 | message | string |	Message to put in the report. |
 | img1 | object |	ImageWrapper object (1st image to compare). |
 | path | string |	Path to the second image to compare. |
-| data | SeSReportLink \| SeSReportText|SeSReportImage|Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -191,7 +193,7 @@ additional data (links, images, comments) set via 'data' parameter.
 <a name="see.also.tester.assertimage"></a>
 
 <a name="BeginTest"></a>    
-#### BeginTest(name, path)
+#### BeginTest(name, path, optionalParams)
 
 Marks beginning of a test with a given name.
 
@@ -202,6 +204,7 @@ Marks beginning of a test with a given name.
 | ---------- | -------- | --------------- |
 | name | string |	Test name |
 | path | string |	Path to the test, that is executed. This string will be shown as a comment.<br>Optional. |
+| optionalParams | object |	Params to pass into Test(...) function.<br>Optional. |
 
 
 
@@ -267,6 +270,25 @@ Captures image of an application window matched by title and class and adds it t
 
 <a name="see.also.tester.capturewindowimage"></a>
 
+<a name="DumpCmdArgsJson"></a>    
+#### DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)
+
+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| optNodeJsonPath | string |	 |
+| mkPackageJson | bool |	 |
+
+
+
+
+
+<a name="see.also.tester.dumpcmdargsjson"></a>
+
 <a name="EndTest"></a>    
 #### EndTest()
 
@@ -295,6 +317,25 @@ Stops test execution and sets it's status to failed.
 
 
 <a name="see.also.tester.failtest"></a>
+
+<a name="GetParam"></a>    
+#### GetParam(paramName, defaultValue)
+
+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| paramName | string |	 |
+| defaultValue | string |	 |
+
+
+
+
+
+<a name="see.also.tester.getparam"></a>
 
 <a name="GetReportAttribute"></a>    
 #### GetReportAttribute(name)
@@ -375,7 +416,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report |
-| data | SeSReportLink \| SeSReportText|SeSReportImage|Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 

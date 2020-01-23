@@ -25,6 +25,14 @@ Play RVL sheet `sheetName` from current workbook passing [extraParams] for varia
 * `sheetName` {`/**string*/`}: Excel sheet containing the script
 * **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)
 
+### DoPlayTest
+
+`DoPlayTest(/**String*/sstestPath)`
+
+Executes specified test passing additional arguments specified as `extraParams`. It is an analog of [Global.DoInvokeTest](Global.md#DoInvokeTest)
+* `sstestPath` {`/**string*/`}: Path to test
+* **[extraParams]**: Param values to be passed into test. May then be accessed via [Tester.GetParam](Tester.md#GetParam).
+
 ### DoPlayTestParallel
 
 `DoPlayTestParallel(/**String*/sstestPath, /**objectId*/threadsMap)`
@@ -36,7 +44,6 @@ Executes specified test in parallel threads passing additional arguments specifi
 
 ![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
 
-
 ### Exit
 
 `Exit(/**String*/ message, /**Boolean*/isError)`
@@ -46,6 +53,25 @@ Break execution at the specified line
 * `message` {`/**string*/`}: Exit message
 
 * `isError` {`/**boolean*/`}: Specify 'false' if you want just exit without exit message
+
+### GetDropdownValue
+
+Remap dropdown value from one list to another
+
+`GetDropdownValue(/**string*/id, /**string*/idList, /**string*/valList, /**string*/xlsPath)`
+
+* `id` {`string`}: Value to remap, the value should be from the column `idList`.
+* `idList` {`string`}: Column name of the list where `id` belongs to.
+* `valList` {`string`}: Column name of the list with values.
+* `xlsPath` {`string`}: Optional path to `Dropdowns.xlsx`. If not specified then `%WORKDIR%\Dropdowns.xlsx` is used.
+
+Example. Suppose we have the following definitions of dropdowns:
+
+![States Dropdown](../RVL/img/RVL_GetDropdownValue_states.png)
+
+Then the call `var stateCode = RVL.GetDropdownValue(stateName, "Functions.SetState.stateName", "stateCode")` would return state code for state name. I.e. if `stateName="Colorado"` then returned value is "CO".
+
+See also [RVL Editor Param Dropdowns](../Guide/rvl_editor.md#param-dropdowns)
 
 ### Return
 
@@ -97,8 +123,6 @@ This Action should put string value `one plus five equals to 6` into the variabl
 `GetCurrentScriptPath()`
 
 Return path to currently executed .rvl.xls file
-
-
 
 ### CurrentScriptSheet
 

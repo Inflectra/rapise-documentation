@@ -91,6 +91,49 @@ Once column **ParamType** set to `password`, **ParamValue** should be an encrypt
 
 3. Switch **ParamType** to `password` - plain value becomes encrypted.
 
+## Param Dropdowns
+
+It is possible to define own list of dropdown values for any parameter. In most cases it is defined for custom functions.
+
+For example, we may have function `SetState(stateCode)` where we expect pre-defined limited set of state code values.
+
+```javascript
+function SetState(/**string*/stateName)
+```
+
+We may define dropdown for `stateName` parameter, so that RVL editor suggest the following list:
+
+![States](img/rvl_dropdowns_states.png)
+
+The values for this dropdown are defined in the spreadsheet:
+
+![States](img/rvl_dropdowns_xls_states.png)
+
+Moreover, we define a code for each state name, so it may be re-mapped in the implementation of the `SetState` function using 
+
+![States](img/rvl_dropdowns_xls_stateCodes.png)
+
+Dropdown values are defined in file `Dropdowns.xlsx`, that may be added to the test using the[Create/Spreadsheet...](test_files_dialog.md#context-menu-folder) menu item.
+
+The full key to find matching dropdown is `objectid`.`method`.`paramName`. If not found, it will check `method.paramNam` and `paramName` columns:
+
+| Key | Example |
+|- |- |
+| `objectid.method.paramName` | `Global.DoLaunch.cmdLine` |
+|  | `Functions.SetState.stateName` |
+|  | `MyButton.DoClick.clickType` |
+| `object_type.method.paramName` | `VSFlexGrid.DoClickCell.row` |
+| `method`.`paramName` | `SetState.stateName` |
+| `paramName` | `stateName` |
+
+The dropdown may be defined in the current (next to `Main.rvl.xlsx`), in parent test and so on up to the framework root (the folder pointed by the `%WORKDIR%`).
+
+![States](img/rvl_dropdowns_nesting.png)
+
+RVL Editor always tries to find best match for dropdown column starting from nearest `Dropdowns.xlsx` and climbing up to the framework root.
+
+Dropdowns may also be mapped to other values. I.e. human-readable menu area names to learned object IDs, state names to state codes, element names to XPath statements and so on. This mapping is done by adjacent columns in `Dropdowns.xlsx`. The mapping may be one to many, so we may define both state code, state order number, state capital for the same state name by adding corresponding columns.
+
 ## Full Line Comments
 
 Anything typed into the **Type** cell of the commented line is expanded to as many cells as needed to show the text. This is similar to the way Excel extends cell text across sibling empty cells:
