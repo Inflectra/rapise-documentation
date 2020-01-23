@@ -291,6 +291,8 @@ pages:
         #dynamicscrm
     - 'Salesforce':
         #salesforce
+    - 'SAP':
+        #domsap
 - 'Manuals':
     - 'Rapise Installation Guide': 'Manuals/Rapise_Installation_Guide.md'
     - 'SpiraTest Integration': 'Guide/spiratest_integration.md'    
