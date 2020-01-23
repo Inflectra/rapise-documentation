@@ -2907,6 +2907,42 @@
   </li>
     </ul>
   </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SAP</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSAP</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../ses_lib_domsap/">DomSAP Objects</a>
+</li>
+            
+<li >
+    <a href="../DomSAPButton/">DomSAPButton</a>
+</li>
+            
+<li >
+    <a href="../DomSAPCombobox/">DomSAPCombobox</a>
+</li>
+            
+<li >
+    <a href="../DomSAPGrid/">DomSAPGrid</a>
+</li>
+            
+<li >
+    <a href="../DomSAPInput/">DomSAPInput</a>
+</li>
+            
+<li >
+    <a href="../DomSAPTable/">DomSAPTable</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -2939,6 +2975,10 @@
                                     
 <li >
     <a href="../../Guide/ado_integration/">Azure DevOps Integration</a>
+</li>
+                                    
+<li >
+    <a href="../../Manuals/Rpa/">Robotic Process Automation</a>
 </li>
                                 </ul>
                             </li>
@@ -3006,6 +3046,10 @@
 <td>One of "start", "center", "end", or "nearest".</td>
 </tr>
 <tr>
+<td><a href="#NativeEvents">NativeEvents</a></td>
+<td>Set it to true to use native keyboard and mouse input.</td>
+</tr>
+<tr>
 <td><a href="#QuitIfNotConnected">QuitIfNotConnected</a></td>
 <td>If connection to browser fails - open plugin page and quit.</td>
 </tr>
@@ -3051,6 +3095,14 @@
 <td>Waits until browser prompt with a given text.</td>
 </tr>
 <tr>
+<td><a href="#DoClickUntilOnScreen">DoClickUntilOnScreen</a></td>
+<td>Clicks on a given element until another element appears on screen.</td>
+</tr>
+<tr>
+<td><a href="#DoClickWhileOnScreen">DoClickWhileOnScreen</a></td>
+<td>Clicks on an element until it disappears.</td>
+</tr>
+<tr>
 <td><a href="#DOMFindByAttributeValue">DOMFindByAttributeValue</a></td>
 <td>Looks for a web element by specific attribute value through all frames.</td>
 </tr>
@@ -3077,6 +3129,10 @@
 <tr>
 <td><a href="#DoSetExpectedPromptResult">DoSetExpectedPromptResult</a></td>
 <td>Set text to return as a result of next browser 'prompt' request.</td>
+</tr>
+<tr>
+<td><a href="#DoWaitFor">DoWaitFor</a></td>
+<td>Waits for object to appear on screen.</td>
 </tr>
 <tr>
 <td><a href="#ExecJS">ExecJS</a></td>
@@ -3142,6 +3198,10 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <h4 id="ensurevisibleverticalalignment">EnsureVisibleVerticalAlignment</h4>
 <p>One of "start", "center", "end", or "nearest". Defaults to "start".</p>
 <p>Type: string</p>
+<p><a name="NativeEvents"></a></p>
+<h4 id="nativeevents">NativeEvents</h4>
+<p>Set it to true to use native keyboard and mouse input. Overrides browser profile settings. Does not affect Selenium targets. Requires Rapise 6.3+</p>
+<p>Type: boolean</p>
 <p><a name="QuitIfNotConnected"></a></p>
 <h4 id="quitifnotconnected">QuitIfNotConnected</h4>
 <p>If connection to browser fails - open plugin page and quit. If set to 'false' - just return 'false' in Open call.</p>
@@ -3164,7 +3224,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tbody>
 <tr>
 <td>xpathOrObjId</td>
-<td>string</td>
+<td>objectId</td>
 <td>XPath or ID. XPath is detected by leading "." or "/".</td>
 </tr>
 </tbody>
@@ -3187,7 +3247,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tbody>
 <tr>
 <td>xpathOrObjId</td>
-<td>string</td>
+<td>objectId</td>
 <td>XPath or ID. XPath is detected by leading "." or "/".</td>
 </tr>
 </tbody>
@@ -3299,6 +3359,107 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p><strong>Returns:</strong></p>
 <p>'true' if browser prompt popup is shown, 'false' otherwise.</p>
 <p><a name="see.also.navigator.docheckprompt"></a></p>
+<p><a name="DoClickUntilOnScreen"></a>    </p>
+<h4 id="doclickuntilonscreenxpathorobjidtoclick-xpathorobjidtoexpect-attempts-delay-x-y-forceevent">DoClickUntilOnScreen(xpathOrObjIdToClick, xpathOrObjIdToExpect, attempts, delay, x, y, forceEvent)</h4>
+<p>Clicks on a given element until another element appears on screen. Requires Rapise 6.3+</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjIdToClick</td>
+<td>objectId</td>
+<td>Object Id or XPath of an element to click.</td>
+</tr>
+<tr>
+<td>xpathOrObjIdToExpect</td>
+<td>objectId</td>
+<td>Object Id or XPath of an element that should appear on screen.</td>
+</tr>
+<tr>
+<td>attempts</td>
+<td>number</td>
+<td>Max number of clicks. Default is 2.<br>Optional.</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>number</td>
+<td>Delay between attempts. Default is 1000 milliseconds.<br>Optional.</td>
+</tr>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>X-offset from the top-left corner of the object. Default is object width/2.<br>Optional.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional.</td>
+</tr>
+<tr>
+<td>forceEvent</td>
+<td>boolean</td>
+<td>Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>expected object if successfull, otherwise - null.</p>
+<p><a name="see.also.navigator.doclickuntilonscreen"></a></p>
+<p><a name="DoClickWhileOnScreen"></a>    </p>
+<h4 id="doclickwhileonscreenxpathorobjid-attempts-delay-x-y-forceevent">DoClickWhileOnScreen(xpathOrObjId, attempts, delay, x, y, forceEvent)</h4>
+<p>Clicks on an element until it disappears. Requires Rapise 6.3+</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectid</td>
+<td>Object Id or XPath of an element to click.</td>
+</tr>
+<tr>
+<td>attempts</td>
+<td>number</td>
+<td>Max number of clicks. Default is 2.<br>Optional.</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>number</td>
+<td>Delay between attempts. Default is 1000 milliseconds.<br>Optional.</td>
+</tr>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>X-offset from the top-left corner of the object. Default is object width/2.<br>Optional.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional.</td>
+</tr>
+<tr>
+<td>forceEvent</td>
+<td>boolean</td>
+<td>Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>true if object disappeared, otherwise - false.</p>
+<p><a name="see.also.navigator.doclickwhileonscreen"></a></p>
 <p><a name="DOMFindByAttributeValue"></a>    </p>
 <h4 id="domfindbyattributevalueattrname-attrvalue-findall-timeout-timeout">DOMFindByAttributeValue(attrName, attrValue, findAll, timeout, timeout)</h4>
 <p>Looks for a web element by specific attribute value through all frames. [attrValue] is checked agains each element's [attrName] attribute.</p>
@@ -3514,6 +3675,39 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><a name="see.also.navigator.dosetexpectedpromptresult"></a></p>
+<p><a name="DoWaitFor"></a>    </p>
+<h4 id="dowaitforxpathorobjid-timeout-params">DoWaitFor(xpathOrObjId, timeout, params)</h4>
+<p>Waits for object to appear on screen. Requires Rapise 6.3+</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectid</td>
+<td>Object Id or XPath of an element to check.</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>number</td>
+<td>Max time to wait. Default is 10000 milliseconds.<br>Optional.</td>
+</tr>
+<tr>
+<td>params</td>
+<td>object</td>
+<td>Overrides locator options.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>found object, otherwise - false.</p>
+<p><a name="see.also.navigator.dowaitfor"></a></p>
 <p><a name="ExecJS"></a>    </p>
 <h4 id="execjsscripttext-obj">ExecJS(scriptText, obj)</h4>
 <p>Executes given JavaScript statement in a browser and returns results.</p>
@@ -3749,7 +3943,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

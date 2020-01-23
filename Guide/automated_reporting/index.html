@@ -2907,6 +2907,42 @@
   </li>
     </ul>
   </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SAP</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSAP</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_domsap/">DomSAP Objects</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPButton/">DomSAPButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPCombobox/">DomSAPCombobox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPGrid/">DomSAPGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPInput/">DomSAPInput</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPTable/">DomSAPTable</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -2939,6 +2975,10 @@
                                     
 <li >
     <a href="../ado_integration/">Azure DevOps Integration</a>
+</li>
+                                    
+<li >
+    <a href="../../Manuals/Rpa/">Robotic Process Automation</a>
 </li>
                                 </ul>
                             </li>
@@ -2975,6 +3015,7 @@
             <li><a href="#purpose">Purpose</a></li>
             <li><a href="#usage">Usage</a></li>
             <li><a href="#the-columns">The Columns</a></li>
+            <li><a href="#todo-rows">TODO Rows</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
 </div></div>
@@ -3004,6 +3045,19 @@
 <p><img alt="report, status dragged, expanded.zoom70" src="../img/automated_reporting4.png" /></p>
 <p>Drag the <strong>Status</strong> icon back to undo the sort:</p>
 <p><img alt="report, status dragged back.zoom70" src="../img/automated_reporting5.png" /></p>
+<h2 id="todo-rows">TODO Rows</h2>
+<p>Whenever <strong>Name</strong> starts with <code>TODO</code> the viewer automatically does the following:</p>
+<ul>
+<li>
+<p>If report row <strong>Type</strong> is <strong>Info</strong> then it is highlighted in Yellow and TODO counter is incremented:</p>
+<p><img alt="TODO" src="../img/automated_reporting_todo.png" /></p>
+</li>
+<li>
+<p>If report row <strong>Type</strong> is <strong>Assert</strong> then it stays green or red, but TODO counter is still incremented.</p>
+</li>
+</ul>
+<p>If you hover over last execution status in Rapise main window, the tooltip would contain then total number of TODO items found in the report (i.e. TODO counter):</p>
+<p><img alt="TODO Counter" src="../img/automated_reporting_todo_counter.png" /></p>
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="../report_filtering/">Report Filtering</a></li>
@@ -3017,7 +3071,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

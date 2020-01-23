@@ -2907,6 +2907,42 @@
   </li>
     </ul>
   </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SAP</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSAP</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_domsap/">DomSAP Objects</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPButton/">DomSAPButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPCombobox/">DomSAPCombobox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPGrid/">DomSAPGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPInput/">DomSAPInput</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPTable/">DomSAPTable</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -2939,6 +2975,10 @@
                                     
 <li >
     <a href="../ado_integration/">Azure DevOps Integration</a>
+</li>
+                                    
+<li >
+    <a href="../../Manuals/Rpa/">Robotic Process Automation</a>
 </li>
                                 </ul>
                             </li>
@@ -2991,9 +3031,12 @@
 <p>Change the browser to either one of the <a href="../browser_settings/">native browsers</a> such as <strong>Firefox</strong>, <strong>Internet Explorer</strong> or <strong>Chrome</strong>, or one of the <a href="../selenium_webdriver/">Selenium WebDriver</a> based browser profiles.</p>
 <p>Once you have changed this setting, <a href="../playback/">Playback</a> the script normally and it will playback in the selected browser.</p>
 <p>Changing this setting will effectively set the value of the <code>g_browserLibrary</code> global variable.</p>
+<blockquote>
+<p><strong>Note:</strong> in Rapise 6.3+ you may define <a href="/Guide/browser_settings/#local-browser-profiles">local profiles</a>.</p>
+</blockquote>
 <h2 id="playback-in-multiple-browsers-spiratest">Playback in Multiple Browsers - SpiraTest</h2>
 <p>Executing a test in multiple browsers is slightly more complicated. We recommend that you use <strong>SpiraTest Test Sets</strong> where you may define multiple test cases pointing to the same Test with a different <strong>g_browserLibrary</strong> parameter value.</p>
-<p>The separate help document <strong>Using SpiraTest with Rapise</strong> provides specific instructions on using Rapise with SpiraTest to handle the specific case of cross-browser testing as well as more general support for parameterized testing. See the <a href="../spiratest_integration/">SpiraTest Integration</a> topic for more general information on using Rapise with SpiraTest.</p>
+<p>See the <a href="../spiratest_integration/">SpiraTest Integration</a> topic for detailed information on using Rapise with SpiraTest.</p>
 <h2 id="playback-in-multiple-browsers-doinvoketest">Playback in Multiple Browsers - DoInvokeTest</h2>
 <p>To iterate through browsers in Rapise create a new test with <strong>Web</strong> methodology. Open <code>Main.js</code> file of the test and modify <code>g_load_libraries</code> line as follows:</p>
 <pre><code class="javascript">g_load_libraries=[&quot;Internet Explorer HTML&quot;, &quot;Firefox HTML&quot;, &quot;Chrome HTML&quot;];
@@ -3033,7 +3076,7 @@ g_load_libraries=[&quot;Internet Explorer HTML&quot;, &quot;Firefox HTML&quot;, 
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

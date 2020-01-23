@@ -2907,6 +2907,42 @@
   </li>
     </ul>
   </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SAP</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSAP</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_domsap/">DomSAP Objects</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPButton/">DomSAPButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPCombobox/">DomSAPCombobox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPGrid/">DomSAPGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPInput/">DomSAPInput</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPTable/">DomSAPTable</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -2939,6 +2975,10 @@
                                     
 <li >
     <a href="../ado_integration/">Azure DevOps Integration</a>
+</li>
+                                    
+<li >
+    <a href="../../Manuals/Rpa/">Robotic Process Automation</a>
 </li>
                                 </ul>
                             </li>
@@ -2976,6 +3016,7 @@
             <li><a href="#how-to-open">How to Open</a></li>
             <li><a href="#toolbar-controls">Toolbar Controls</a></li>
             <li><a href="#profile-options">Profile Options</a></li>
+            <li><a href="#local-browser-profiles">Local Browser Profiles</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -3024,7 +3065,15 @@
 <li>click - Simulates an actual click on the element rather than sending a DOM click event</li>
 </ul>
 </li>
-</ul></div>
+</ul>
+<h2 id="local-browser-profiles">Local Browser Profiles</h2>
+<p>Rapise version 6.3+ enables creation of profiles local to a test. It allows storing profiles together with tests (inside SpiraTest or Git repository) and eliminates the need to configure profiles manually on each execution host.</p>
+<p>To create a local profile just press Duplicate for one of global profiles and set Local checkbox before clicking OK button. Global and Local profile may have same name, in this case Local profile is used for execution.</p>
+<p><img alt="Creating Local Browser Profile" src="../img/create_local_profile.png" /></p>
+<p>If a test contains local browser profiles they can be seen in the dropdowns.</p>
+<p><img alt="Profile List for Playback" src="../img/select_local_profile.png" /></p>
+<p><img alt="Profile List for Configuration" src="../img/profile_list_local_global.png" /></p>
+<p>Local profiles are stored inside <code>&lt;Test Root&gt;\Profiles\BrowserProfiles</code> and <code>&lt;Test Root&gt;\Profiles\SeleniumProfiles</code> folders.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -3033,7 +3082,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

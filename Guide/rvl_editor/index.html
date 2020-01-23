@@ -2907,6 +2907,42 @@
   </li>
     </ul>
   </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SAP</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSAP</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Libraries/ses_lib_domsap/">DomSAP Objects</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPButton/">DomSAPButton</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPCombobox/">DomSAPCombobox</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPGrid/">DomSAPGrid</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPInput/">DomSAPInput</a>
+</li>
+            
+<li >
+    <a href="../../Libraries/DomSAPTable/">DomSAPTable</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -2939,6 +2975,10 @@
                                     
 <li >
     <a href="../ado_integration/">Azure DevOps Integration</a>
+</li>
+                                    
+<li >
+    <a href="../../Manuals/Rpa/">Robotic Process Automation</a>
 </li>
                                 </ul>
                             </li>
@@ -2980,6 +3020,7 @@
             <li><a href="#disabling-cell-auto-correction">Disabling Cell Auto Correction</a></li>
             <li><a href="#action-params">Action Params</a></li>
             <li><a href="#password-param-value">Password Param Value</a></li>
+            <li><a href="#param-dropdowns">Param Dropdowns</a></li>
             <li><a href="#full-line-comments">Full Line Comments</a></li>
             <li><a href="#context-menu">Context Menu</a></li>
             <li><a href="#sheet-tab-context-menu">Sheet Tab Context Menu</a></li>
@@ -3051,6 +3092,58 @@
 <p>Switch <strong>ParamType</strong> to <code>password</code> - plain value becomes encrypted.</p>
 </li>
 </ol>
+<h2 id="param-dropdowns">Param Dropdowns</h2>
+<p>It is possible to define own list of dropdown values for any parameter. In most cases it is defined for custom functions.</p>
+<p>For example, we may have function <code>SetState(stateCode)</code> where we expect pre-defined limited set of state code values.</p>
+<pre><code class="javascript">function SetState(/**string*/stateName)
+</code></pre>
+
+<p>We may define dropdown for <code>stateName</code> parameter, so that RVL editor suggest the following list:</p>
+<p><img alt="States" src="../img/rvl_dropdowns_states.png" /></p>
+<p>The values for this dropdown are defined in the spreadsheet:</p>
+<p><img alt="States" src="../img/rvl_dropdowns_xls_states.png" /></p>
+<p>Moreover, we define a code for each state name, so it may be re-mapped in the implementation of the <code>SetState</code> function using </p>
+<p><img alt="States" src="../img/rvl_dropdowns_xls_stateCodes.png" /></p>
+<p>Dropdown values are defined in file <code>Dropdowns.xlsx</code>, that may be added to the test using the<a href="../test_files_dialog/#context-menu-folder">Create/Spreadsheet...</a> menu item.</p>
+<p>The full key to find matching dropdown is <code>objectid</code>.<code>method</code>.<code>paramName</code>. If not found, it will check <code>method.paramNam</code> and <code>paramName</code> columns:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>objectid.method.paramName</code></td>
+<td><code>Global.DoLaunch.cmdLine</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>Functions.SetState.stateName</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>MyButton.DoClick.clickType</code></td>
+</tr>
+<tr>
+<td><code>object_type.method.paramName</code></td>
+<td><code>VSFlexGrid.DoClickCell.row</code></td>
+</tr>
+<tr>
+<td><code>method</code>.<code>paramName</code></td>
+<td><code>SetState.stateName</code></td>
+</tr>
+<tr>
+<td><code>paramName</code></td>
+<td><code>stateName</code></td>
+</tr>
+</tbody>
+</table>
+<p>The dropdown may be defined in the current (next to <code>Main.rvl.xlsx</code>), in parent test and so on up to the framework root (the folder pointed by the <code>%WORKDIR%</code>).</p>
+<p><img alt="States" src="../img/rvl_dropdowns_nesting.png" /></p>
+<p>RVL Editor always tries to find best match for dropdown column starting from nearest <code>Dropdowns.xlsx</code> and climbing up to the framework root.</p>
+<p>Dropdowns may also be mapped to other values. I.e. human-readable menu area names to learned object IDs, state names to state codes, element names to XPath statements and so on. This mapping is done by adjacent columns in <code>Dropdowns.xlsx</code>. The mapping may be one to many, so we may define both state code, state order number, state capital for the same state name by adding corresponding columns.</p>
 <h2 id="full-line-comments">Full Line Comments</h2>
 <p>Anything typed into the <strong>Type</strong> cell of the commented line is expanded to as many cells as needed to show the text. This is similar to the way Excel extends cell text across sibling empty cells:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_comment_line.png" /></p>
@@ -3158,7 +3251,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

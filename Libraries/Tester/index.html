@@ -2907,6 +2907,42 @@
   </li>
     </ul>
   </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SAP</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">DomSAP</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../ses_lib_domsap/">DomSAP Objects</a>
+</li>
+            
+<li >
+    <a href="../DomSAPButton/">DomSAPButton</a>
+</li>
+            
+<li >
+    <a href="../DomSAPCombobox/">DomSAPCombobox</a>
+</li>
+            
+<li >
+    <a href="../DomSAPGrid/">DomSAPGrid</a>
+</li>
+            
+<li >
+    <a href="../DomSAPInput/">DomSAPInput</a>
+</li>
+            
+<li >
+    <a href="../DomSAPTable/">DomSAPTable</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -2939,6 +2975,10 @@
                                     
 <li >
     <a href="../../Guide/ado_integration/">Azure DevOps Integration</a>
+</li>
+                                    
+<li >
+    <a href="../../Manuals/Rpa/">Robotic Process Automation</a>
 </li>
                                 </ul>
                             </li>
@@ -3052,12 +3092,20 @@ You do not need to record or learn this object, it is always automatically avail
 <td>Captures image of an application window matched by title and class and adds it to the report.</td>
 </tr>
 <tr>
+<td><a href="#DumpCmdArgsJson">DumpCmdArgsJson</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="#EndTest">EndTest</a></td>
 <td>Marks end of a currently executed test.</td>
 </tr>
 <tr>
 <td><a href="#FailTest">FailTest</a></td>
 <td>Stops test execution and sets it's status to failed.</td>
+</tr>
+<tr>
+<td><a href="#GetParam">GetParam</a></td>
+<td></td>
 </tr>
 <tr>
 <td><a href="#GetReportAttribute">GetReportAttribute</a></td>
@@ -3154,8 +3202,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 <tr>
 <td>data</td>
-<td>SeSReportLink | SeSReportText</td>
-<td>SeSReportImage</td>
+<td>SeSReportLink | SeSReportText | SeSReportImage | object[] | string</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -3197,8 +3245,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 <tr>
 <td>data</td>
-<td>SeSReportLink | SeSReportText</td>
-<td>SeSReportImage</td>
+<td>SeSReportLink | SeSReportText | SeSReportImage | Object[]</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -3240,8 +3288,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 <tr>
 <td>data</td>
-<td>SeSReportLink | SeSReportText</td>
-<td>SeSReportImage</td>
+<td>SeSReportLink | SeSReportText | SeSReportImage | Object[]</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -3252,7 +3300,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </table>
 <p><a name="see.also.tester.assertimage"></a></p>
 <p><a name="BeginTest"></a>    </p>
-<h4 id="begintestname-path">BeginTest(name, path)</h4>
+<h4 id="begintestname-path-optionalparams">BeginTest(name, path, optionalParams)</h4>
 <p>Marks beginning of a test with a given name.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -3273,6 +3321,11 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>path</td>
 <td>string</td>
 <td>Path to the test, that is executed. This string will be shown as a comment.<br>Optional.</td>
+</tr>
+<tr>
+<td>optionalParams</td>
+<td>object</td>
+<td>Params to pass into Test(...) function.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -3360,6 +3413,31 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tbody>
 </table>
 <p><a name="see.also.tester.capturewindowimage"></a></p>
+<p><a name="DumpCmdArgsJson"></a>    </p>
+<h4 id="dumpcmdargsjsonoptnodejsonpath-mkpackagejson">DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)</h4>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>optNodeJsonPath</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>mkPackageJson</td>
+<td>bool</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.tester.dumpcmdargsjson"></a></p>
 <p><a name="EndTest"></a>    </p>
 <h4 id="endtest">EndTest()</h4>
 <p>Marks end of a currently executed test. Calculates test results and performs finalization of test execution.</p>
@@ -3385,6 +3463,31 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tbody>
 </table>
 <p><a name="see.also.tester.failtest"></a></p>
+<p><a name="GetParam"></a>    </p>
+<h4 id="getparamparamname-defaultvalue">GetParam(paramName, defaultValue)</h4>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paramName</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>defaultValue</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.tester.getparam"></a></p>
 <p><a name="GetReportAttribute"></a>    </p>
 <h4 id="getreportattributename">GetReportAttribute(name)</h4>
 <p>Gets report attribute previously set by PushReportAttribute or SetReportAttribute.</p>
@@ -3471,8 +3574,8 @@ Message may contain some additional data (links, images, comments) set via 'data
 </tr>
 <tr>
 <td>data</td>
-<td>SeSReportLink | SeSReportText</td>
-<td>SeSReportImage</td>
+<td>SeSReportLink | SeSReportText | SeSReportImage | Object[]</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -3686,7 +3789,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
+                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
