@@ -3176,7 +3176,7 @@ record or learn this object, it is always automatically available in any test.</
 </tr>
 <tr>
 <td><a href="#SetConfigPath">SetConfigPath</a></td>
-<td></td>
+<td>Set default path for config file instead of default %WORKDIR%\Config.json.</td>
 </tr>
 <tr>
 <td><a href="#SetFileAsByteArray">SetFileAsByteArray</a></td>
@@ -4091,6 +4091,7 @@ in the case of timeout.</p>
 <p><a name="see.also.global.setclipboardtext"></a></p>
 <p><a name="SetConfigPath"></a>    </p>
 <h4 id="setconfigpathdefpath">SetConfigPath(defPath)</h4>
+<p>Set default path for config file instead of default %WORKDIR%\Config.json. Supports .xlsx and .json file format. This path is used by default for further calls to Global.GetProperty and Global.SetProperty</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -4104,10 +4105,12 @@ in the case of timeout.</p>
 <tr>
 <td>defPath</td>
 <td>string</td>
-<td></td>
+<td>New config path, i.e. %WORKDIR%\Config.xlsx</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Returns:</strong></p>
+<p>string: Previous config path</p>
 <p><a name="see.also.global.setconfigpath"></a></p>
 <p><a name="SetFileAsByteArray"></a>    </p>
 <h4 id="setfileasbytearrayfilename-bytes">SetFileAsByteArray(fileName, bytes)</h4>
@@ -4178,7 +4181,7 @@ in the case of timeout.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
+                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
