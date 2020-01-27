@@ -55,7 +55,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[GetRapiseVersion](#GetRapiseVersion) | Reads Rapise version. |
 |	[GetSpecialFolderPath](#GetSpecialFolderPath) | Returns path to a special folder specified by one of possible values. |
 |	[SetClipboardText](#SetClipboardText) | Updates clipboard text |
-|	[SetConfigPath](#SetConfigPath) |  |
+|	[SetConfigPath](#SetConfigPath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
 |	[SetFileAsByteArray](#SetFileAsByteArray) | Creates or rewrites file and fills with contents of the provided byte array. |
 |	[SetProperty](#SetProperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
 
@@ -920,16 +920,21 @@ boolean: 'true' when clipboard is set.
 <a name="SetConfigPath"></a>    
 #### SetConfigPath(defPath)
 
-
+Set default path for config file instead of default %WORKDIR%\Config.json. Supports .xlsx and .json file format. This path is used by default for further calls to Global.GetProperty and Global.SetProperty
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| defPath | string |	 |
+| defPath | string |	New config path, i.e. %WORKDIR%\Config.xlsx |
 
 
+
+
+**Returns:**
+
+string: Previous config path
 
 
 
