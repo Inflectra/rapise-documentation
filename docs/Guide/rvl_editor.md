@@ -164,11 +164,13 @@ Anything typed into the **Type** cell of the commented line is expanded to as ma
 
 * **Del Row** - delete all selected rows.
 
+* **Clear in Selection** - clears cell values in selected region.
+
 * **Select All Rows** - select full sheet.
 
 * **Insert Selected Rows Here** - clone rows at the current location.
 
-* **MOve Selected Rows Here** - move rows to the current location.
+* **Move Selected Rows Here** - move rows to the current location.
 
 * **Wrap Selection Info If** - enclose selected range into [branch](../RVL/IfElse.md).
 

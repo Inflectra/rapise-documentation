@@ -4,7 +4,7 @@ Some common tasks related to script execution, such as calling scripts, executin
 
 ## Actions
 
-### DoPlayScript
+## DoPlayScript
 
 `DoPlayScript(/**String*/scriptPath, /**String*/sheetName)`
 
@@ -16,7 +16,7 @@ Play RVL sheet `sheetName` from workbook `scriptPath` passing [extraParams] for 
 
 * **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)
 
-### DoPlaySheet
+## DoPlaySheet
 
 `DoPlaySheet(/**String*/sheetName)`
 
@@ -25,7 +25,7 @@ Play RVL sheet `sheetName` from current workbook passing [extraParams] for varia
 * `sheetName` {`/**string*/`}: Excel sheet containing the script
 * **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)
 
-### DoPlayTest
+## DoPlayTest
 
 `DoPlayTest(/**String*/sstestPath)`
 
@@ -33,7 +33,7 @@ Executes specified test passing additional arguments specified as `extraParams`.
 * `sstestPath` {`/**string*/`}: Path to test
 * **[extraParams]**: Param values to be passed into test. May then be accessed via [Tester.GetParam](Tester.md#GetParam).
 
-### DoPlayTestParallel
+## DoPlayTestParallel
 
 `DoPlayTestParallel(/**String*/sstestPath, /**objectId*/threadsMap)`
 
@@ -44,7 +44,7 @@ Executes specified test in parallel threads passing additional arguments specifi
 
 ![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
 
-### Exit
+## Exit
 
 `Exit(/**String*/ message, /**Boolean*/isError)`
 
@@ -54,7 +54,7 @@ Break execution at the specified line
 
 * `isError` {`/**boolean*/`}: Specify 'false' if you want just exit without exit message
 
-### GetDropdownValue
+## GetDropdownValue
 
 Remap dropdown value from one list to another
 
@@ -73,7 +73,7 @@ Then the call `var stateCode = RVL.GetDropdownValue(stateName, "Functions.SetSta
 
 See also [RVL Editor Param Dropdowns](../Guide/rvl_editor.md#param-dropdowns)
 
-### Return
+## Return
 
 `Return(/**String*/ message)`
 
@@ -81,7 +81,7 @@ Return from specified line. This method should be called from within RVL
 
 * `message` {`/**string*/`}: Return message
 
-### SetLocatorOpts
+## SetLocatorOpts
 
 `SetLocatorOpts(/**objectid*/objectid, {optname:optvalue,...})`
 
@@ -101,7 +101,7 @@ All params going after `objectid` are optional and depend on specified object's 
 
 If you want to reset all values to default value call this method with just `objectid` and no additional parameters.
 
-### FormatString
+## FormatString
 
 `FormatString(/**string*/fmtString, {optname:optvalue,...})`
 
@@ -118,13 +118,13 @@ This Action should put string value `one plus five equals to 6` into the variabl
 
 ## Properties
 
-### CurrentScriptPath
+## CurrentScriptPath
 
 `GetCurrentScriptPath()`
 
 Return path to currently executed .rvl.xls file
 
-### CurrentScriptSheet
+## CurrentScriptSheet
 
 `GetCurrentScriptSheet()`
 

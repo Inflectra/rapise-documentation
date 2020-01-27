@@ -113,7 +113,7 @@ When you click **Test** it will display all of the DOM elements that match the q
 
 You can now refine the query to only find the items you want to test.
 
-In either case, if you can adjust the query to only match a single element, you can then click the appropriate **Learn** button next to the **XPath** or **CSS** edit fields. That will learn the specified query as a new object that can be scripted against in Rapise. This is very useful if you want to dynamically select an object based on its content rather than a hard-coded ID or position.
+In either case, if you can adjust the query to only match a single element, you can then click the appropriate **Learn** button next to the **XPath** or **CSS** edit fields. That will learn the specified query as a new object that can be scripted against in Rapise. This is very useful if you want to dynamically select an object based on its content rather than a hard-coded ID or position. Also you can add an assertion to the test by clicking **Verify**. It will display [properties of the object](/Guide/verify_object_properties/). You may set checkboxes against properties you want to check during playback.
 
 In addition, in the test results view, when you click on a result:
 
