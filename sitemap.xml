@@ -2991,36 +2991,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://rapisedoc.inflectra.com/Libraries/ses_lib_domsap/</loc>
-     <lastmod>2020-01-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Libraries/DomSAPButton/</loc>
-     <lastmod>2020-01-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Libraries/DomSAPCombobox/</loc>
-     <lastmod>2020-01-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Libraries/DomSAPGrid/</loc>
-     <lastmod>2020-01-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Libraries/DomSAPInput/</loc>
-     <lastmod>2020-01-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Libraries/DomSAPTable/</loc>
-     <lastmod>2020-01-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://rapisedoc.inflectra.com/Manuals/Rapise_Installation_Guide/</loc>
      <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
@@ -3052,11 +3022,6 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/ado_integration/</loc>
-     <lastmod>2020-01-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://rapisedoc.inflectra.com/Manuals/Rpa/</loc>
      <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
