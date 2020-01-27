@@ -50,6 +50,7 @@ Right click on a file to see:
 
 * **Open**: Open the file in Rapise.
 * **Open Externally...**: Open the file using associated program. E.g. if a Notepad is registered in Windows to open TXT files, then TXT file will be opened by Notepad.
+* **Open as Spreadsheet...**: Open this file using built in [Spreadsheet editor](./spreadsheet_editor.md). May be used to open `.rvl.xlsx` in spreadsheet editor if you, for example, need to add columns.
 * **Reveal in Explorer...**: Open Windows File Explorer and show this file in it.
 * **Remove from Test**: Remove the file from your test.  This does **not** delete the file from your hard disk.
 * **Remove from Disk**: Remove the file from your test and hard drive.
