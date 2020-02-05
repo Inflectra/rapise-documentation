@@ -72,11 +72,10 @@ Watch the webinar: [Introduction to Test Automation with Rapise](https://youtu.b
   </div>          
 </div>
 
-## New in Rapise 6.2
+## New in Rapise
 
-- [Self-healing Web Locators](/Guide/web_self_healing/)
-- [Reconnect Mobile Session](/Guide/mobile_reconnect/)
-- [Reconnect WebDriver Session](/Guide/selenium_reconnect/)
+- [6.3](/New/6_3/)
+- [6.2](/New/6_2/)
 
 ## Featured Topics
 
