@@ -79,7 +79,7 @@ Watch the webinar: [Introduction to Test Automation with Rapise](https://youtu.b
 
 ## Featured Topics
 
-- [Data-Driven Testing](/Guide/ddt/)
-- [SpiraTest Integration](/Guide/spiratest_integration/)
-- [Jenkins Integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx)
-- [Azure DevOps and TFS Integration](/Guide/visual_studio/)
+- [How to Solve Typical Automation Issues](/Intro/automation/)
+- [How to Integrate Rapise into DevOps Pipeline](/Intro/devops/)
+- [Data-Driven Testing](/Intro/ddt/)
+- [How to Build a Test Framework with Rapise](/Intro/framework/)
