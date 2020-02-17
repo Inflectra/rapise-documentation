@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://rapisedoc.inflectra.com/Intro/Teamwork/">
+        <link rel="canonical" href="https://rapisedoc.inflectra.com/Intro/automation/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
         
-        <title>Teamwork - Rapise</title>
+        <title>How to Solve Typical Automation Issues - Rapise</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -2978,6 +2978,10 @@
 </li>
                                     
 <li >
+    <a href="/Guide/visual_studio.md">VSTS/TFS Integration</a>
+</li>
+                                    
+<li >
     <a href="../../Manuals/Rpa/">Robotic Process Automation</a>
 </li>
                                 </ul>
@@ -3004,20 +3008,40 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#how-to-solve-typical-automation-issues">How to Solve Typical Automation Issues</a></li>
+            <li><a href="#object-is-not-found">Object is Not Found</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-</div>
+<h1 id="how-to-solve-typical-automation-issues">How to Solve Typical Automation Issues</h1>
+<h2 id="object-is-not-found">Object is Not Found</h2>
+<p>Q: I recorded a test, started playback and got <code>Object Not Found</code> message. What should I do?</p>
+<p>A: Don't panic! There are several common reasons why an object is not found during playback.</p>
+<h3 id="reason-1-most-common">Reason #1 (most common)</h3>
+<p>You are testing a web application and elements in this application use dynamics IDs that change on every page load.</p>
+<h4 id="how-to-fix">How to Fix</h4>
+<ul>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB375.aspx">Check that Rapise can find an object on screen</a></li>
+<li><a href="/Guide/web_app_profile/">Configure Web Recording with Web Application Profile</a></li>
+<li><a href="/Guide/web_spy/">Use WebSpy to build a better element Locator manually</a></li>
+<li><a href="/Guide/web_self_healing/">Turn On Self-Healing Locators</a></li>
+</ul>
+<h3 id="reason-2">Reason #2</h3>
+<p>You are testing a very slow application and the object is not yet available when it is needed.</p>
+<h4 id="how-to-fix_1">How to Fix</h4>
+<ul>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB301.aspx">Ways to slow down test execution</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
+                <p>© Copyright 2006-2020 Inflectra Corporation, All Rights Reserved | en-US |</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "previous": 80, "search": 83, "help": 191};
+                shortcuts = {"help": 191, "next": 78, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
