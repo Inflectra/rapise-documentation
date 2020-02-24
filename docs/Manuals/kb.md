@@ -2,6 +2,18 @@
 
 ## Topics
 
+### <a onclick="return RegisterKbClick('KB515', 'Checking String Length in RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB515.aspx">KB515</a> Checking String Length in RVL
+
+If you need to get the size of the string, then here is a couple of possible ways for doing it.
+
+### <a onclick="return RegisterKbClick('KB514', 'How to Press Alt, Shift or Ctrl key Alone')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB514.aspx">KB514</a> How to Press Alt, Shift or Ctrl key Alone
+
+SendKeys is good for making key combinations, but this way does not work when you need to press special key. Here is a useful workaround.
+
+### <a onclick="return RegisterKbClick('KB508', 'Compare Images in JavaScript')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB508.aspx">KB508</a> Compare Images in JavaScript
+
+To compare images in JavaScript you may use Tester.AssertImage.
+
 ### <a onclick="return RegisterKbClick('KB507', 'UIAutomation2 Locator')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB507.aspx">KB507</a> UIAutomation2 Locator
 
 Rapise 6.3 includes an experimental feature - new UIAutomation2 locator for UIAtuomation based desktop testing. Rather than specifying a path from the element tree root to the element this locator relies on built-in ability of UIAutomation to search for elements based on property values.
@@ -16,7 +28,7 @@ Sometimes you need to specify object and data for it in the map. Here we will sh
 
 ### <a onclick="return RegisterKbClick('KB503', 'Accessing svg elements via XPath')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB503.aspx">KB503</a> Accessing svg elements via XPath
 
-By default straight forward XPath to SVG primitives will not work.  So XPath ending like .../svg[2]/path will fail. Here is a workaround.
+By default straight forward XPath to SVG primitives will not work.В  So XPath ending like .../svg[2]/path will fail. Here is a workaround.
 
 ### <a onclick="return RegisterKbClick('KB502', 'Passing Map as a Parameter into RVL Sheet')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB502.aspx">KB502</a> Passing Map as a Parameter into RVL Sheet
 
@@ -48,7 +60,7 @@ NodeJS provides a lot of unique features and plethora of features implemented in
 
 ### <a onclick="return RegisterKbClick('KB489', 'Headless Firefox Testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB489.aspx">KB489</a> Headless Firefox Testing
 
-Firefox 56+ supports headless mode on Windows.  You can use it to Run Rapise tests via Selenium integration.
+Firefox 56+ supports headless mode on Windows.В  You can use it to Run Rapise tests via Selenium integration.
 
 ### <a onclick="return RegisterKbClick('KB488', 'Rapise Objects and Files Metadata for Code Completion')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB488.aspx">KB488</a> Rapise Objects and Files Metadata for Code Completion
 
@@ -84,7 +96,7 @@ We are getting a lot of questions on how to use Rapise with Citrix and remotely 
 
 ### <a onclick="return RegisterKbClick('KB477', 'Inspecting custom UI control with UI Automation Spy')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB477.aspx">KB477</a> Inspecting custom UI control with UI Automation Spy
 
-UI Automation is a default technology for testing desktop applications on Windows. If your application is not .NET or Java then  Rapise will turn on UI Automation library during recording. If some elements in your application are not recognized or there are issues with playback of recorded steps then most likely your application is using custom UI controls. You may inspect those controls and send information to Rapise support team to get recommendations on how to proceed with testing.
+UI Automation is a default technology for testing desktop applications on Windows. If your application is not .NET or Java thenВ  Rapise will turn on UI Automation library during recording. If some elements in your application are not recognized or there are issues with playback of recorded steps then most likely your application is using custom UI controls. You may inspect those controls and send information to Rapise support team to get recommendations on how to proceed with testing.
 
 ### <a onclick="return RegisterKbClick('KB475', 'How to Get All Links on the Page with Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB475.aspx">KB475</a> How to Get All Links on the Page with Rapise
 
@@ -96,7 +108,7 @@ When you execute Rapise tests via Rapise Launcher - test reports and logs are au
 
 ### <a onclick="return RegisterKbClick('KB472', 'Read PDF Text wih Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB472.aspx">KB472</a> Read PDF Text wih Rapise
 
-Sometimes you need to check that some text is available in the PDF document. Sometimes you need to extract some value from it. So you need access to plain text content of the document.  Here we explain how to do it with Rapise.
+Sometimes you need to check that some text is available in the PDF document. Sometimes you need toВ extract some value from it. So you need access to plain text content of the document.В  Here we explain how to do it with Rapise.
 
 ### <a onclick="return RegisterKbClick('KB470', 'How to run a PowerShell script in Rapise test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB470.aspx">KB470</a> How to run a PowerShell script in Rapise test
 
@@ -108,7 +120,7 @@ Rapise supports testing of Java applications. In the case that application is la
 
 ### <a onclick="return RegisterKbClick('KB466', 'How to deal with custom UI Automation controls')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB466.aspx">KB466</a> How to deal with custom UI Automation controls
 
-This article is for those who test a desktop application via  UI Automation library.  Since desktop applications are frequently built using UI controls from different vendors  and the number of such controls available on the market is pretty big (> 1k)  - Rapise may not have out-of-the-box support for some controls in your application.  For such cases Rapise offers a low level API to navigate UI Automation tree of elements inside an application and read/write element properties. In this tutorial we'll show how to use this API and quickly add minimal support for a custom control.
+This article is for those who test a desktop application viaВ  UI Automation library.В  Since desktop applications are frequently built using UI controls from different vendorsВ  and the number of such controls available on the market is pretty big (> 1k)В  - Rapise may not have out-of-the-box support for some controls in your application.В  For such cases Rapise offers a low level API to navigate UI Automation tree of elements inside an application and read/write element properties. In this tutorial we'll show how to use this API and quickly add minimal support for a custom control.
 
 ### <a onclick="return RegisterKbClick('KB465', 'How to check if web element is really visible on screen')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB465.aspx">KB465</a> How to check if web element is really visible on screen
 
@@ -132,7 +144,7 @@ When Rapise starts execution of a test it sets working directory. If a test refe
 
 ### <a onclick="return RegisterKbClick('KB448', 'How to create a Rapise web object from XPath')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB448.aspx">KB448</a> How to create a Rapise web object from XPath
 
-In some cases it may be convenient to construct Rapise Objects dynamically rather than capture in advance  with record/learn. In Web tests you can do it via Navigator.Find.
+In some cases it may be convenient to construct Rapise Objects dynamically rather than capture in advanceВ  with record/learn. In Web tests you can do it via Navigator.Find.
 
 ### <a onclick="return RegisterKbClick('KB446', 'Getting browser console logs')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB446.aspx">KB446</a> Getting browser console logs
 
@@ -148,11 +160,11 @@ There are different techniques one can use to close the application being tested
 
 ### <a onclick="return RegisterKbClick('KB442', 'Troubleshooting Rapise Install')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB442.aspx">KB442</a> Troubleshooting Rapise Install
 
-If you install Rapise on non-vanilla system, e.g. old workstation with a lot of other software, especially with anti-virus and development tools, it may end-up in a state when some components are not registered  successfully and some files are blocked.  In this article we describe symptoms and ways to cure.
+If you install Rapise on non-vanilla system, e.g. old workstation with a lot of other software, especially with anti-virus and development tools, it may end-up in a state when some components are not registeredВ  successfully and some files are blocked.В  In this article we describe symptoms and ways to cure.
 
 ### <a onclick="return RegisterKbClick('KB439', 'Troubleshooting Rapise Uninstall')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB439.aspx">KB439</a> Troubleshooting Rapise Uninstall
 
-In the unlikely case of unsuccessful deinstallation of Rapise (e.g. if computer power switched off during deinstallation,  or Windows Installer process terminated) there is a way to manually fix the system and complete interrupted deinstallation process.. Automatic uninstall may no longer properly work and leave files in Program Files folder.
+In the unlikely case of unsuccessful deinstallation of Rapise (e.g. if computer power switched off during deinstallation,В  or Windows Installer process terminated) there is a way to manually fix the system and complete interrupted deinstallation process.. Automatic uninstall may no longer properly work and leave files in Program Files folder.
 
 ### <a onclick="return RegisterKbClick('KB436', 'Handling Toast Messages')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB436.aspx">KB436</a> Handling Toast Messages
 
@@ -180,7 +192,7 @@ Global.DoSendKeys is a way to to that, but there is also a little trick required
 
 ### <a onclick="return RegisterKbClick('KB429', 'How to deal with dynamic window titles')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB429.aspx">KB429</a> How to deal with dynamic window titles
 
-Desktop applications may use window titles to show important information to a user. In some cases the title contains subject of a displayed entity or time.  Since Rapise uses window title while searching for an object during playback - the search may fail. This complication may be resolved if you replace recorded windows title with a regular expression.
+Desktop applications may use window titles to show important information to a user. In some cases the title contains subject of a displayed entity or time.В  Since Rapise uses window title while searching for an object during playback - the search may fail. This complication may be resolved if you replace recorded windows title with a regular expression.
 
 ### <a onclick="return RegisterKbClick('KB428', 'How to relearn an object')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB428.aspx">KB428</a> How to relearn an object
 
@@ -188,7 +200,7 @@ If an object can not be found at playback and it is obvious that object location
 
 ### <a onclick="return RegisterKbClick('KB427', 'How to master a dynamic locator with RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx">KB427</a> How to master a dynamic locator with RVL
 
-There are situations when object location attribute  depends on the object data and it is not possible to record/learn all such objects in advance.  In this case it may be convenient to calculate object location at playback time using FormatString and SetLocatorOpts actions of the RVL global object.
+There are situations when object location attributeВ  depends on the object data and it is not possible to record/learn all such objects in advance.В  In this case it may be convenient to calculate object location at playback time using FormatString and SetLocatorOpts actions of the RVL global object.
 
 ### <a onclick="return RegisterKbClick('KB422', 'How to save/load DOM tree in Web Spy')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB422.aspx">KB422</a> How to save/load DOM tree in Web Spy
 
@@ -196,7 +208,7 @@ Better to see something once than to hear about it a thousand times. If a Web el
 
 ### <a onclick="return RegisterKbClick('KB421', 'How to save type information for UI control in Rapise Spy')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB421.aspx">KB421</a> How to save type information for UI control in Rapise Spy
 
-Rapise supports many standard UI controls out-of-the-box. And there are even more custom UI controls that are not supported. This is why Rapise has a well-defined way of adding extensions.  To add support for a custom control first it makes sense to Spy on it. If you are dealing with Managed or Java applications you can Save Type Information for the control and also save UI tree structure/properties to a file.  Send this information to Rapise team to get an advice on how to add support for the new control.
+Rapise supports many standard UI controls out-of-the-box. And there are even more custom UI controls that are not supported. This is why Rapise has a well-defined way of adding extensions.В  To add support for a custom control first it makes sense to Spy on it. If you are dealing with Managed or Java applications you can Save Type Information for the control and also save UI tree structure/properties to a file.В  Send this information to Rapise team to get an advice on how to add support for the new control.
 
 ### <a onclick="return RegisterKbClick('KB420', 'Firefox 64 Compatibility')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB420.aspx">KB420</a> Firefox 64 Compatibility
 
@@ -212,7 +224,7 @@ If you run Rapise tests via Selenium WeDriver you may need to manipulate browser
 
 ### <a onclick="return RegisterKbClick('KB416', 'WPF Calendar and DatePicker')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB416.aspx">KB416</a> WPF Calendar and DatePicker
 
-It is tricky do deal with WPF calendar control. Here we introduce a number of supplementatry functions to copy in your project and use to modify and read  Calendar and DatePicker data.
+It is tricky do deal with WPF calendar control. Here we introduce a number of supplementatry functions to copy in your project and use to modify and readВ  Calendar and DatePicker data.
 
 ### <a onclick="return RegisterKbClick('KB415', 'Is it Possible to Automate an iOS App Store App using Rapise?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB415.aspx">KB415</a> Is it Possible to Automate an iOS App Store App using Rapise?
 
@@ -220,7 +232,7 @@ We often get asked this question: "We have Rapise and want to automate a native 
 
 ### <a onclick="return RegisterKbClick('KB412', 'How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics AX')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB412.aspx">KB412</a> How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics AX
 
-Many views in Dynamics AX have several collapsible panes: General, Addresses, Contact information, etc. They are also known as Fast Tabs.  Learn how to ensure that a Fast Tab is expanded and scrolled into view before entering data into the fields in this tab. Requires Rapise 5.7+
+Many views in Dynamics AX have several collapsible panes: General, Addresses, Contact information, etc. They are also known as Fast Tabs.В  Learn how to ensure that a Fast Tab is expanded and scrolled into view before entering data into the fields in this tab. Requires Rapise 5.7+
 
 ### <a onclick="return RegisterKbClick('KB411', 'If recording of actions in Dynamics AX or Dynamics NAV does not work')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB411.aspx">KB411</a> If recording of actions in Dynamics AX or Dynamics NAV does not work
 
@@ -244,7 +256,7 @@ Of the unique needs of a requirements and test management system when working in
 
 ### <a onclick="return RegisterKbClick('KB395', 'How to configure Mobile Profile to automatically grant Android application permissions on install')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB395.aspx">KB395</a> How to configure Mobile Profile to automatically grant Android application permissions on install
 
-When Appium installs an application at the beginning of a test session - Android may ask for permissions (e.g. access to media files, camera, etc.). Until such prompt is dismissed - Main activity is not launched. It prevents the test from proceeding.  Learn how to configure the Mobile Profile to automatically grant required permissions on install.
+When Appium installs an application at the beginning of a test session - Android may ask for permissions (e.g. access to media files, camera, etc.). Until such prompt is dismissed - Main activity is not launched. It prevents the test from proceeding.В  Learn how to configure the Mobile Profile to automatically grant required permissions on install.
 
 ### <a onclick="return RegisterKbClick('KB394', 'How to use specific version of Chromedriver with Appium')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB394.aspx">KB394</a> How to use specific version of Chromedriver with Appium
 
@@ -276,7 +288,7 @@ Most complex part in Mobile testing is connecting to a simulator or device. In t
 
 ### <a onclick="return RegisterKbClick('KB380', 'How to insert an RVL step into Manual Test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB380.aspx">KB380</a> How to insert an RVL step into Manual Test
 
-Sometimes it makes sense to automate certain steps of a Manual Test. If you prefer to implement automatic steps in RVL then include the AUTO  helper function into your test.
+Sometimes it makes sense to automate certain steps of a Manual Test. If you prefer to implement automatic steps in RVL then include the AUTOВ  helper function into your test.
 
 ### <a onclick="return RegisterKbClick('KB379', 'Processing registration Emails')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB379.aspx">KB379</a> Processing registration Emails
 
@@ -316,11 +328,11 @@ Sometimes test set requires a value passing through the sequence of test cases. 
 
 ### <a onclick="return RegisterKbClick('KB366', 'How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics NAV')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB366.aspx">KB366</a> How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics NAV
 
-Many views in Dynamics NAV have several collapsible panes: General, Lines, Invoice Details, etc. They are also known as Fast Tabs.  Learn how to ensure that a Fast Tab is expanded and scrolled into view before entering data into the fields in this tab. Requires Rapise 5.7+
+Many views in Dynamics NAV have several collapsible panes: General, Lines, Invoice Details, etc. They are also known as Fast Tabs.В  Learn how to ensure that a Fast Tab is expanded and scrolled into view before entering data into the fields in this tab. Requires Rapise 5.7+
 
 ### <a onclick="return RegisterKbClick('KB364', 'How to ensure that web element is visible before interacting with it?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB364.aspx">KB364</a> How to ensure that web element is visible before interacting with it?
 
-Sometimes an element on a web page may be invisible because it is out of a viewport.  Real user scrolls a page vertically and horizontally to reach such an element. How to achieve same behavior with Rapise?
+Sometimes an element on a web page may be invisible because it is out of a viewport.В  Real user scrolls a page vertically and horizontally to reach such an element. How to achieve same behavior with Rapise?
 
 ### <a onclick="return RegisterKbClick('KB363', 'How to define a profile for Web Application  in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB363.aspx">KB363</a> How to define a profile for Web Application  in Rapise
 
@@ -340,7 +352,7 @@ Sometimes you want to override certain Rapise settings (e.g. the Command Interva
 
 ### <a onclick="return RegisterKbClick('KB359', 'How to Install the Chrome and Firefox Extensions Offline')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB359.aspx">KB359</a> How to Install the Chrome and Firefox Extensions Offline
 
-By default,  when you want to use Rapise to record and playback web tests using either Chrome or Firerfox, you simply go to the appropriate web browser "store" and install the extension directly from the store. However sometimes you are testing web applications on a machine with no Internet Connectivity.
+By default,В  when you want to use Rapise to record and playback web tests using either Chrome or Firerfox, you simply go to the appropriate web browser "store" and install the extension directly from the store. However sometimes you are testing web applications on a machine with no Internet Connectivity.
 
 ### <a onclick="return RegisterKbClick('KB358', 'Hot to disable "Chrome is being controlled by automated test software" message')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB358.aspx">KB358</a> Hot to disable "Chrome is being controlled by automated test software" message
 
@@ -348,11 +360,11 @@ When you run a test with Selenium - Chrome profile the browser is launched with 
 
 ### <a onclick="return RegisterKbClick('KB357', 'Data-driven testing with spreadsheets and RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB357.aspx">KB357</a> Data-driven testing with spreadsheets and RVL
 
-Many test automation scenarios require performing same steps with different data. For example, login into application with different user credentials, or enter several lines of a sales order into a table. This is data-driven testing. From this article you will learn how to do this in Rapise Visual Language (RVL) and JavaScript modes.  You will also learn how to define data within a test and in external spreadsheet.
+Many test automation scenarios require performing same steps with different data. For example, login into application with different user credentials, or enter several lines of a sales order into a table. This is data-driven testing. From this article you will learn how to do this in Rapise Visual Language (RVL) and JavaScript modes.В  You will also learn how to define data within a test and in external spreadsheet.
 
 ### <a onclick="return RegisterKbClick('KB354', 'How to override an action for an object type')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB354.aspx">KB354</a> How to override an action for an object type
 
-Rapise supports many types of objects in Web, Mobile and Desktop applications.  And each object has a set of actions that can be applied to it.  You may want to override behavior of existing action or add a new one. Learn how from this article.
+Rapise supports many types of objects in Web, Mobile and Desktop applications.В  And each object has a set of actions that can be applied to it.В  You may want to override behavior of existing action or add a new one. Learn how from this article.
 
 ### <a onclick="return RegisterKbClick('KB353', 'Rapise Doesn't Launch Because of Missing Windows Fonts')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB353.aspx">KB353</a> Rapise Doesn't Launch Because of Missing Windows Fonts
 
@@ -364,7 +376,7 @@ You have recorded some basic test scripts in Rapise, and now you want to easily 
 
 ### <a onclick="return RegisterKbClick('KB351', 'How to automatically enter user credentials into Windows Security dialog on Windows 10')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB351.aspx">KB351</a> How to automatically enter user credentials into Windows Security dialog on Windows 10
 
-Some test scenarios require running processes as different user or entering user credentials into Internet Explorer security prompt.  Rapise can enter user credentials into Windows Security dialog on Windows 10 automatically.
+Some test scenarios require running processes as different user or entering user credentials into Internet Explorer security prompt.В  Rapise can enter user credentials into Windows Security dialog on Windows 10 automatically.
 
 ### <a onclick="return RegisterKbClick('KB349', 'Recording tips for Dynamics NAV 2017 Web Client and Dynamics 365 Business Central')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB349.aspx">KB349</a> Recording tips for Dynamics NAV 2017 Web Client and Dynamics 365 Business Central
 
@@ -408,7 +420,7 @@ At Inflectra we think that UI Test Automation Framework is a set of tools with s
 
 ### <a onclick="return RegisterKbClick('KB334', 'How to launch a browser in private mode?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB334.aspx">KB334</a> How to launch a browser in private mode?
 
-In some cases it makes sense to launch a browser in private mode to ensure exact same conditions every time you run a test.  This helps to cope with such things as remembered accounts or pending sessions not disconnected by a previous test.  Learn how to properly adjust browser profiles from this article.
+In some cases it makes sense to launch a browser in private mode to ensure exact same conditions every time you run a test.В  This helps to cope with such things as remembered accounts or pending sessions not disconnected by a previous test.В  Learn how to properly adjust browser profiles from this article.
 
 ### <a onclick="return RegisterKbClick('KB333', 'Installing Rapise Browser Extensions without Internet Access')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB333.aspx">KB333</a> Installing Rapise Browser Extensions without Internet Access
 
@@ -424,7 +436,7 @@ Sometimes you need to compare two tables. Here we introduce a function to compar
 
 ### <a onclick="return RegisterKbClick('KB328', 'Using Rapise Mobile with Browserstack')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB328.aspx">KB328</a> Using Rapise Mobile with Browserstack
 
-BrowserStack supports automated browser testing via Selenium and Appium on real iOS and Android devices.  Learn how to configure Rapise to connect to Browserstack via Appium.
+BrowserStack supports automated browser testing via Selenium and Appium on real iOS and Android devices.В  Learn how to configure Rapise to connect to Browserstack via Appium.
 
 ### <a onclick="return RegisterKbClick('KB326', 'Windows Scripting Host Crashes When Playing Back Rapise RVL Script after Windows 10 Update')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB326.aspx">KB326</a> Windows Scripting Host Crashes When Playing Back Rapise RVL Script after Windows 10 Update
 
@@ -444,7 +456,7 @@ Sometimes when recording a test against a mobile responsive web site, it is usef
 
 ### <a onclick="return RegisterKbClick('KB322', 'How to run cross-browser tests on BrowserStack?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB322.aspx">KB322</a> How to run cross-browser tests on BrowserStack?
 
-BrowserStack enables testing of your website for cross browser compatibility on real browsers. Instant access to multiple desktop and mobile browsers.  Learn how to configure Selenium  profiles in Rapise to enable connection to BrowserStack services. Requires Rapise 5.3+
+BrowserStack enables testing of your website for cross browser compatibility on real browsers. Instant access to multiple desktop and mobile browsers.В  Learn how to configure SeleniumВ  profiles in Rapise to enable connection to BrowserStack services. Requires Rapise 5.3+
 
 ### <a onclick="return RegisterKbClick('KB320', 'Using RVL Loop to generate sequence of file names')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB320.aspx">KB320</a> Using RVL Loop to generate sequence of file names
 
@@ -468,7 +480,7 @@ Visualforce is the component-based user interface framework for the Force.com pl
 
 ### <a onclick="return RegisterKbClick('KB312', 'Accessing DOM elements by Attributes in RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB312.aspx">KB312</a> Accessing DOM elements by Attributes in RVL
 
-It is possible to access such objects form RVL using one of the methods shown in this article.
+It is possible to access such objects form RVLВ using one of the methods shown in this article.
 
 ### <a onclick="return RegisterKbClick('KB310', 'Custom Attributes  for XPath Generation in the Rapise Web Spy')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB310.aspx">KB310</a> Custom Attributes  for XPath Generation in the Rapise Web Spy
 
@@ -484,7 +496,7 @@ In order for Rapise to be able to test a thick-client desktop application writte
 
 ### <a onclick="return RegisterKbClick('KB305', 'How to run a program as a different user')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB305.aspx">KB305</a> How to run a program as a different user
 
-Sometimes a test needs to run a process as a different user (not the logged in user executing Rapise). It is not possible to use runas command for this purpose because it forces a user to type a password manually.  From this short article you will learn how to reach the goal.
+Sometimes a test needs to run a process as a different user (not the logged in user executing Rapise). It is not possible to use runas command for this purpose because it forces a user to type a password manually.В  From this short article you will learn how to reach the goal.
 
 ### <a onclick="return RegisterKbClick('KB304', 'Using Global.DoEncrypt and Global.DoDecrypt to Hide Passwords')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB304.aspx">KB304</a> Using Global.DoEncrypt and Global.DoDecrypt to Hide Passwords
 
@@ -516,7 +528,7 @@ Sometimes we need to track the time taken by an operation. This KB contains sugg
 
 ### <a onclick="return RegisterKbClick('KB293', 'How to store Rapise tests in Git and run them with SpiraTeam')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB293.aspx">KB293</a> How to store Rapise tests in Git and run them with SpiraTeam
 
-In some cases it is convenient to store tests in the same Git repository where source code of an application under test is located. For example, if you are using Visual Studio Team Services.  From this article you will learn how to execute Rapise tests stored in a Git repository with SpiraTeam and leverage the power of SpiraTeam reporting and analysis features.
+In some cases it is convenient to store tests in the same Git repository where source code of an application under test is located. For example, if you are using Visual Studio Team Services.В  From this article you will learn how to execute Rapise tests stored in a Git repository with SpiraTeam and leverage the power of SpiraTeam reporting and analysis features.
 
 ### <a onclick="return RegisterKbClick('KB292', 'Dynamics NAV Support in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB292.aspx">KB292</a> Dynamics NAV Support in Rapise
 
@@ -528,7 +540,7 @@ Sometimes we need to disable screenshots for a while (during some long loop) or 
 
 ### <a onclick="return RegisterKbClick('KB290', 'How to create Spira-friendly Test Set with shared functions and files')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB290.aspx">KB290</a> How to create Spira-friendly Test Set with shared functions and files
 
-The notion of the integrated test framework usually implies common functions and shared data between tests.  Here we provide sample configuration making sharing Spira-friendly.
+The notion of the integrated test framework usually implies common functions and shared data between tests. В Here we provide sample configuration making sharing Spira-friendly.
 
 ### <a onclick="return RegisterKbClick('KB289', 'How Object Recognition Works in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx">KB289</a> How Object Recognition Works in Rapise
 
@@ -536,7 +548,7 @@ This article contains of overview of object recognition by UI automation tools i
 
 ### <a onclick="return RegisterKbClick('KB288', 'Search by Name, Text, XPath or Attribute on the Web Page')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB288.aspx">KB288</a> Search by Name, Text, XPath or Attribute on the Web Page
 
-It is common task to search for an element by its text. In some cases it is the fastest way to find one. This approach works in web browsers and selenium targets.
+It is common task to search for an element by its text. In some cases it is the fastestВ way to find one. This approach works in web browsers and selenium targets.
 
 ### <a onclick="return RegisterKbClick('KB285', 'Using bytext and byname Locators in WinForms')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB285.aspx">KB285</a> Using bytext and byname Locators in WinForms
 
@@ -560,7 +572,7 @@ Writing JavaScript code in Rapise is fun and easy. It has full featured editor w
 
 ### <a onclick="return RegisterKbClick('KB280', 'How to specify Selenium or Appium capabilities which are not available through Rapise UI?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB280.aspx">KB280</a> How to specify Selenium or Appium capabilities which are not available through Rapise UI?
 
-From this article you will learn how to pass additional parameters to Selenium or Appium target, even if they can not be specified in a profile.  This recipe can be also used to override parameters of a profile right from a test code. Requires Rapise 5.3+
+From this article you will learn how to pass additional parameters to Selenium or Appium target, even if they can not be specified in a profile.В  This recipe can be also used to override parameters of a profile right from a test code. Requires Rapise 5.3+
 
 ### <a onclick="return RegisterKbClick('KB279', 'How to run cross-browser and mobile tests on Sauce Labs?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB279.aspx">KB279</a> How to run cross-browser and mobile tests on Sauce Labs?
 
@@ -592,11 +604,11 @@ During the evaluation of Rapise 5.2 for Microsoft Dynamics AX testing, a custome
 
 ### <a onclick="return RegisterKbClick('KB272', 'Microsoft Dynamics Solutions - Which One Do You Have?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB272.aspx">KB272</a> Microsoft Dynamics Solutions - Which One Do You Have?
 
-As described in a recent article, Microsoft Dynamics has been going through major changes in the past year, there are now many different products that all bear the 'Microsoft Dynamics' brand, including older legacy tools such as Dynamics AX, NAV, GP, SL and CRM and the new Dynamics 365 platform which has different modules (Sales, Operations, etc.).  This article helps you know which tool you have when you need help from our Rapise support team.
+As described in a recent article, Microsoft Dynamics has been going through major changes in the past year, there are now many different products that all bear the 'Microsoft Dynamics' brand, including older legacy tools such as Dynamics AX, NAV, GP, SL and CRM and the new Dynamics 365 platform which has different modules (Sales, Operations, etc.).В  This article helps you know which tool you have when you need help from our Rapise support team.
 
 ### <a onclick="return RegisterKbClick('KB271', 'Headless Chrome Testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB271.aspx">KB271</a> Headless Chrome Testing
 
-Headless Chrome on Windows  is introduced in version 60 . Learn how to configure Rapise to run cross-browser tests using non-GUI mode of Chrome. It works same way as with PhantomJS.
+Headless Chrome on WindowsВ  is introduced in version 60 . Learn how to configure Rapise to run cross-browser tests using non-GUI mode of Chrome. It works same way as with PhantomJS.
 
 ### <a onclick="return RegisterKbClick('KB270', 'Using Object ID as RVL ParamValue')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB270.aspx">KB270</a> Using Object ID as RVL ParamValue
 
@@ -624,7 +636,7 @@ Symptoms: When new recording is started Rapise always opens new IE window Spy do
 
 ### <a onclick="return RegisterKbClick('KB262', 'Debugging Rapise DOM libraries in Chrome using VS Code')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB262.aspx">KB262</a> Debugging Rapise DOM libraries in Chrome using VS Code
 
-Rapise can be extended with DOM libraries to add support for custom UI controls used in modern web applications.  Many of such applications work in Chrome browser. So there may be a need to debug Rapise code embedded into Chrome via Rapise Extension for Chrome. Most powerful and easy way to do this is to add VS Code into the equation.  From this article you will learn how to tie Rapise, Chrome and VS Code together.
+Rapise can be extended with DOM libraries to add support for custom UI controls used in modern web applications.В  Many of such applications work in Chrome browser. So there may be a need to debug Rapise code embedded into Chrome via Rapise Extension for Chrome. Most powerful and easy way to do this is to add VS Code into the equation.В  From this article you will learn how to tie Rapise, Chrome and VS Code together.
 
 ### <a onclick="return RegisterKbClick('KB260', 'Handling Auth prompt in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB260.aspx">KB260</a> Handling Auth prompt in Rapise
 
@@ -636,7 +648,7 @@ Example of adding support for Java UI control in Rapise.
 
 ### <a onclick="return RegisterKbClick('KB257', 'Using Rapise Visual Language (RVL) 5.1 with Multiple Sheets')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB257.aspx">KB257</a> Using Rapise Visual Language (RVL) 5.1 with Multiple Sheets
 
-With the release of the new Rapise Visual Language (RVL), there have been some questions about how to use it to organize tests, subtests and multiple sheets. For example: I see that I can create multiple sheets.  How does Rapise handle multiple sheets?  Does it run each in order or can they be run separately? Is it possible to call a test in RVL from another test in RVL?  In other worlds, how can I create subtests and scenarios using RVL?
+With the release of the new Rapise Visual Language (RVL), there have been some questions about how to use it to organize tests, subtests and multiple sheets. For example: I see that I can create multiple sheets.В  How does Rapise handle multiple sheets?В  Does it run each in order or can they be run separately? Is it possible to call a test in RVL from another test in RVL?В  In other worlds, how can I create subtests and scenarios using RVL?
 
 ### <a onclick="return RegisterKbClick('KB249', 'Resources for Learning JavaScript')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB249.aspx">KB249</a> Resources for Learning JavaScript
 
@@ -664,7 +676,7 @@ This article shows how to select paragraph of text using various types of mouse 
 
 ### <a onclick="return RegisterKbClick('KB233', 'Suppressing Text in Rapise Logs for Sensitive Data')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB233.aspx">KB233</a> Suppressing Text in Rapise Logs for Sensitive Data
 
-A customer had a question - is there a way to suppress the DoSetText or DoSendkeys methods from sending their text to the logs. They didn't want users to see this text in the Rapise (and SpiraTest) logs because they contained sensitive information (e.g.  passwords).
+A customer had a question - is there a way to suppress the DoSetText or DoSendkeys methods from sending their text to the logs. They didn't want users to see this text in the Rapise (and SpiraTest) logs because they contained sensitive information (e.g.В  passwords).
 
 ### <a onclick="return RegisterKbClick('KB232', 'Rapise Tip - How to Handle a Webpage that Displays an Alert when You Navigate Away')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB232.aspx">KB232</a> Rapise Tip - How to Handle a Webpage that Displays an Alert when You Navigate Away
 
@@ -684,7 +696,7 @@ We had a customer with a problem related to having <div> elements with complex d
 
 ### <a onclick="return RegisterKbClick('KB227', 'Executing a Windows .BAT Batch File from Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB227.aspx">KB227</a> Executing a Windows .BAT Batch File from Rapise
 
-Sometimes you need to run a  Windows batch file (.BAT) from Rapise. Unlike an executable, you cannot simply use Global.DoLaunch() to execute it since it's not actually an application. This article provides the code you need to use.
+Sometimes you need to run aВ  Windows batch file (.BAT) from Rapise. Unlike an executable, you cannot simply use Global.DoLaunch() to execute it since it's not actually an application. This article provides the code you need to use.
 
 ### <a onclick="return RegisterKbClick('KB224', 'Testing Popup Windows using Internet Explorer')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB224.aspx">KB224</a> Testing Popup Windows using Internet Explorer
 
@@ -764,7 +776,7 @@ The v4.0 release of Rapise adds enhanced attribute filtering to the Web Spy as w
 
 ### <a onclick="return RegisterKbClick('KB185', 'Using Global.DoLoadObjects to Use Rapise Objects from External File')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB185.aspx">KB185</a> Using Global.DoLoadObjects to Use Rapise Objects from External File
 
-One of the challenges using an automated testing tool is to organize things in a way that it is logical enough to find something quickly, structured enough to avoid duplication and simple enough to maintain and upgrade. This statement is also true for Rapise objects. A common requirement is to deal with the same objects within a flow of different test cases. For instance, if an application has “Log In” functionality then many, many tests will require logging-in and logging-out. Each test will have this object in its own object tree. However this causes trouble if a change in the application affects the recognition of the Log In object. All of the test cases will need to be updated. In such situations it is much more convenient to have the “Log In” objects placed into their own file and re-used by other tests.
+One of the challenges using an automated testing tool is to organize things in a way that it is logical enough to find something quickly, structured enough to avoid duplication and simple enough to maintain and upgrade. This statement is also true for Rapise objects. A common requirement is to deal with the same objects within a flow of different test cases. For instance, if an application has вЂњLog InвЂќ functionality then many, many tests will require logging-in and logging-out. Each test will have this object in its own object tree. However this causes trouble if a change in the application affects the recognition of the Log In object. All of the test cases will need to be updated. In such situations it is much more convenient to have the вЂњLog InвЂќ objects placed into their own file and re-used by other tests.
 
 ### <a onclick="return RegisterKbClick('KB186', 'Global.DoWaitFor vs Global.DoWaitForProperty')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB186.aspx">KB186</a> Global.DoWaitFor vs Global.DoWaitForProperty
 
@@ -816,11 +828,11 @@ When you have a multi-select list in a web application, you may need to check wh
 
 ### <a onclick="return RegisterKbClick('KB164', 'Calling Rapise DoX functions without reporting result')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB164.aspx">KB164</a> Calling Rapise DoX functions without reporting result
 
-When you use a DoX command in Rapise to perform a specific command (e.g. DoDOMChildrenCount() to get a number of object's DOM children), in the report an extra step -- assert -- is created during test execution. Sometimes you want to be able to call a function 'quietly' without it affecting the report.
+WhenВ you use a DoX command in Rapise to perform a specificВ command (e.g. DoDOMChildrenCount() to get a number of object's DOM children), in the report an extra step -- assert -- is created during test execution. Sometimes you want to be able to call a function 'quietly' without it affecting the report.
 
 ### <a onclick="return RegisterKbClick('KB163', 'Accessing the Computed Style Properties of an HTML DOM Object')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB163.aspx">KB163</a> Accessing the Computed Style Properties of an HTML DOM Object
 
-A common question from our users is, is there a way to get object's style properties that are in effect at a certain point in time. (for example, it could have been inherited from higher level of hierarchy, or modified via JavaScript running on the page)? This article describes how to do this.
+A common question from our users is, isВ there a way to get object's style properties that are in effect at a certain point in time. (for example, it could have been inherited from higher level of hierarchy, or modified via JavaScript running on the page)? This article describes how to do this.
 
 ### <a onclick="return RegisterKbClick('KB161', 'Certain Hyperlinks won't click during playback with Internet Explorer (IE)')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB161.aspx">KB161</a> Certain Hyperlinks won't click during playback with Internet Explorer (IE)
 
@@ -848,11 +860,11 @@ If you are running Rapise and you suddenly start to find that none of your recor
 
 ### <a onclick="return RegisterKbClick('KB142', 'Scripts created with Rapise 2.1 or earlier no longer playing back correctly in Rapise 2.2 or later')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB142.aspx">KB142</a> Scripts created with Rapise 2.1 or earlier no longer playing back correctly in Rapise 2.2 or later
 
-In Rapise 2.2, "DoClick" behavior was changed, so we don't do a click but rather just position the mouse over the control and do API-level "click" event. However we provided a way to enable backward compatibility.
+In Rapise 2.2, "DoClick" behavior was changed, so we don't do a click but rather just position the mouse over the control and do API-level "click" event.В However we provided a way to enable backward compatibility.
 
 ### <a onclick="return RegisterKbClick('KB141', 'Testing Silverlight Applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB141.aspx">KB141</a> Testing Silverlight Applications
 
-When testing Silverlight applications, you may find that Rapise fails to recognize the objects in the Silverlight app using the UIAutomation library. When using the Rapise Spy Tool, the  whole app is identified as a single window. The objects such as a dropdown, buttons etc. inside the silverlight app are not individually recognized.
+When testing Silverlight applications, you may find that Rapise failsВ to recognizeВ the objects inВ the Silverlight app using the UIAutomation library. WhenВ using the RapiseВ Spy Tool, theВ В whole app is identified as a single window. The objectsВ such as aВ dropdown, buttons etc. insideВ the silverlight appВ are not individually recognized.
 
 ### <a onclick="return RegisterKbClick('KB139', 'Disabling the generation of comments during Recording')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB139.aspx">KB139</a> Disabling the generation of comments during Recording
 
@@ -860,7 +872,7 @@ By default Rapise records user actions with a line commented out for each action
 
 ### <a onclick="return RegisterKbClick('KB138', 'My Actions are Not Recorded')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB138.aspx">KB138</a> My Actions are Not Recorded
 
-By design Rapise tries to record user activity on the highest possible level. This makes recorded actions more readable and universal (often several lower-level user actions are combined)Rapise uses a heuristics to distinguish meaningful activity from low level actions. In some cases this leads to a result that some user activity is not automatically recorded (for example, a mouse click before entering  text in a box). There is a broad range of available UI platforms and libraries. The variety of graphical widgets makes user interface robust and beautiful. Rapise tries to recognize as much objects as possible. However this range is growing and there are always widgets that are not being recorded.
+By design Rapise tries to record user activity on the highest possible level. This makes recorded actions more readable and universal (often several lower-level user actions are combined)Rapise uses a heuristics to distinguish meaningful activity from low level actions. In some cases this leads to a result that some user activity is not automatically recorded (for example, a mouse click before enteringВ  text in a box). There is a broad range of available UI platforms and libraries. The variety of graphical widgets makes user interface robust and beautiful. Rapise tries to recognize as much objects as possible. However this range is growing and there are always widgets that are not being recorded.
 
 ### <a onclick="return RegisterKbClick('KB137', 'Anti-Virus Software and Test Automation')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB137.aspx">KB137</a> Anti-Virus Software and Test Automation
 
@@ -956,7 +968,7 @@ There are many different ways of passing test parameters to Rapise from an exter
 
 ### <a onclick="return RegisterKbClick('KB128', 'Creating a Set of Tests to Run in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB128.aspx">KB128</a> Creating a Set of Tests to Run in Rapise
 
-This guide describes how you manage groups of Rapise tests together in situations where you are not  using SpiraTest test sets.
+This guide describes how you manage groups of Rapise tests together in situations where you are notВ  using SpiraTest test sets.
 
 ### <a onclick="return RegisterKbClick('KB129', 'Using Dynamic Linked Library (DLLs) in Test Scripts')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB129.aspx">KB129</a> Using Dynamic Linked Library (DLLs) in Test Scripts
 
@@ -976,7 +988,7 @@ Often you want to be able to query for the child elements on a web page that are
 
 ### <a onclick="return RegisterKbClick('KB105', 'After installing Windows Update KB3025390 Rapise No Longer Connects to IE')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB105.aspx">KB105</a> After installing Windows Update KB3025390 Rapise No Longer Connects to IE
 
-An old (December 9th, 2014) security update for Microsoft Windows and Internet Explorer (KB3025390)  broke the support in IE for 'out-of-process' code execution. This effectively prevented an automated testing application such as Rapise from automating Internet Explorer (IE) applications. This was subsequently fixed by Microsoft on February 10th, 2015 with the KB 3021952 update.
+An old (December 9th, 2014) security update for Microsoft Windows and Internet Explorer (KB3025390)В  broke the support in IE for 'out-of-process' code execution. This effectively prevented an automated testing application such as RapiseВ from automating Internet Explorer (IE) applications. This was subsequently fixed by Microsoft on February 10th, 2015 with the KB 3021952 update.
 
 ### <a onclick="return RegisterKbClick('KB102', 'How to Get Rapise Trace Logging Information')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB102.aspx">KB102</a> How to Get Rapise Trace Logging Information
 
@@ -984,11 +996,11 @@ When using Rapise, it is often useful to see how Rapise is identifying objects i
 
 ### <a onclick="return RegisterKbClick('KB101', 'Automating HTML File Upload Boxes')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB101.aspx">KB101</a> Automating HTML File Upload Boxes
 
-Sometimes you have to automate the uploading of files using an HTML file upload control. This article explains how to record and playback such a script.
+Sometimes you have to automate the uploading of files using an HTML file upload control. This articleВ explains how to record and playback such a script.
 
 ### <a onclick="return RegisterKbClick('KB98', 'Code Completion of Native JavaScript Objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB98.aspx">KB98</a> Code Completion of Native JavaScript Objects
 
-Rapise has built-in code completion logic that lets it suggest the available list of functions for a specific object. However since JavaScript is fundamentally an un-typed language, for the code completion to work, there are some tips and tricks that you can use.
+Rapise has built-in code completion logic that lets it suggest the available list of functions for a specific object. HoweverВ since JavaScript is fundamentally an un-typed language, for theВ code completion to work, there are some tips and tricks that you can use.
 
 ### <a onclick="return RegisterKbClick('KB97', 'Recording Popup JavaScript Confirmation Boxes')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB97.aspx">KB97</a> Recording Popup JavaScript Confirmation Boxes
 
@@ -996,19 +1008,19 @@ When you are recording a test against a Web application you may have to deal wit
 
 ### <a onclick="return RegisterKbClick('KB96', 'How to automate the testing of Rich Text Boxes using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB96.aspx">KB96</a> How to automate the testing of Rich Text Boxes using Rapise
 
-When you have a rich text box in a web application, the process for recording a test and playing it back will be different to a standard HTML plain text box. This is because the browser actually uses a separate IFRAME and HTML document for the editable rich text box. This article explains the process for recording/playing back such a test.
+When you have a rich text box in a web application, the process for recording a test and playing it back will be different to a standard HTML plain text box. This is because the browser actually uses a separate IFRAME and HTML document for the editable rich text box. This article explains the process for recording/playing back such aВ test.
 
 ### <a onclick="return RegisterKbClick('KB89', 'Adding Support for Custom Flex Controls')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB89.aspx">KB89</a> Adding Support for Custom Flex Controls
 
-By default the Rapise Flex library supports a wide variety of Flex controls which will be capable of testing the majority of application. However sometimes there will be an unknown objects which will be learnt as a generic object with FlexObject flavor. The article describes support for such custom Flex controls:
+By default the RapiseВ Flex library supports a wide variety ofВ Flex controls which will be capable of testing the majority of application. However sometimesВ there will be anВ unknown objects which will be learnt as a generic object with FlexObject flavor. The article describes support for such custom Flex controls:
 
 ### <a onclick="return RegisterKbClick('KB87', 'Using Rapise to Validate Display of Data Grid Data')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB87.aspx">KB87</a> Using Rapise to Validate Display of Data Grid Data
 
-One common requirement is to run a query in an application being tested and verify that the data on the screen matches the data in the application. This article explains the recommended process for doing this.
+One common requirement is to run a query inВ an application being tested and verify that the data on the screen matches the data in the application. This article explains the recommended process for doing this.
 
 ### <a onclick="return RegisterKbClick('KB86', 'Choosing the Web Browser in Rapise from SpiraTest / SpiraTeam')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB86.aspx">KB86</a> Choosing the Web Browser in Rapise from SpiraTest / SpiraTeam
 
-When writing a web test in Rapise you will often want to run the same test script in all three web browsers (IE, Firefox and Chrome). You will want to be able to choose the Test Script from within Rapise when debugging the test and then from a Test Set in SpiraTest when you move the test into production. This article explains the process.
+When writing aВ web test in Rapise you will often want to run the same test script in all three web browsers (IE, Firefox and Chrome). You will want to be able to choose the Test Script from within Rapise when debugging the test and then from a Test Set in SpiraTest when you move the test into production. This article explains the process.
 
 ### <a onclick="return RegisterKbClick('KB85', 'Sending Special Keys to the Current Application')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB85.aspx">KB85</a> Sending Special Keys to the Current Application
 
@@ -1028,7 +1040,7 @@ Sometimes when installing our products you get error messages during the install
 
 ### <a onclick="return RegisterKbClick('KB77', 'How to resolve WScript.CreateObject: Could not connect object errors')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB77.aspx">KB77</a> How to resolve WScript.CreateObject: Could not connect object errors
 
-Sometimes when you install Rapise on a computer that had a previous version of Rapise installed, when you try to record and/or playback a test you get the following error message: C:\Program Files (x86)\Inflectra\Rapise\Engine\Player.js WScript.CreateObject: Could not connect object. This article describes the steps to correct the error.
+Sometimes when youВ install Rapise on a computer that had a previous version of Rapise installed, when you try to record and/or playback a test you get the following error message: C:\Program Files (x86)\Inflectra\Rapise\Engine\Player.js WScript.CreateObject: Could not connect object. This article describes the steps to correct the error.
 
 ### <a onclick="return RegisterKbClick('KB68', 'Accessing Clipboard in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB68.aspx">KB68</a> Accessing Clipboard in Rapise
 
@@ -1036,7 +1048,7 @@ Sometimes when automating a test, you need to access the local Windows clipboard
 
 ### <a onclick="return RegisterKbClick('KB65', 'Testing Win32 applications to verify that controls change display state')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB65.aspx">KB65</a> Testing Win32 applications to verify that controls change display state
 
-Sometimes you may have a button (or other control) that  can have a different appearance depending on the different focus statuses.For example, the default status without focus is a grey image, whereas when the mouse hovering over it becomes blue. Then when the mouse left button is held down on the button (and not released), the image changes to a red image.Finally, when the button is activated using the tab key to tab into the button and the mouse is somewhere else, it has a fourth color. This article discusses solutions for how to test these kinds of situation
+Sometimes you may have a button (or other control) that В canВ have a different appearanceВ depending on theВ different focus statuses.For example, the default status without focus is a grey image, whereas when the mouse hovering over it becomes blue.В Then when the mouse left button is held downВ on the button (and not released), theВ image changes to a red image.Finally, when the button is activated using the tab key to tab into the button and the mouse is somewhere else, it has a fourth color. This article discusses solutions for how to test these kinds of situation
 
 ### <a onclick="return RegisterKbClick('KB64', 'Using Navigator.ExecJS to execute JavaScript code inside a browser')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB64.aspx">KB64</a> Using Navigator.ExecJS to execute JavaScript code inside a browser
 
@@ -1044,7 +1056,7 @@ Sometimes you need to execute JavaScript code at a browser side and get the resu
 
 ### <a onclick="return RegisterKbClick('KB63', 'Getting the State of a Win32 object using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB63.aspx">KB63</a> Getting the State of a Win32 object using Rapise
 
-Sometimes you need to be able to test the state of a specific Win32 object in Rapise to see if it is enabled, disabled, is activated, etc. This sample illustrates how to get the numeric and textual value of the object's state.
+Sometimes you need to be able to test the state of a specific Win32 object in Rapise to see if it is enabled, disabled,В is activated, etc. This sample illustrates how to get the numeric and textual value of the object's state.
 
 ### <a onclick="return RegisterKbClick('KB62', 'Accessing Files and I/O functions using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB62.aspx">KB62</a> Accessing Files and I/O functions using Rapise
 
@@ -1052,7 +1064,7 @@ Sometimes using Rapise you need to access files on the Windows filesystem, eithe
 
 ### <a onclick="return RegisterKbClick('KB59', 'Using Simulated Objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB59.aspx">KB59</a> Using Simulated Objects
 
-Simulated objects are found by looking at the parameters of the object (x number of pixels from the top of the window, y number of pixels from the left of the window, etc).  One common question that has arisen is - during playback, does Rapise take into account screen resolution?  If the resolution on the computer you run it on is different from the one it records on the location of the object will change relative to the number of pixels.  So on the computer you record it on the top parameter might be 200 but on a different resolution it might be 180.  Would Rapise recognize that the resolution is different and adjust for that?
+Simulated objects are found by looking at the parameters of the object (x number of pixels from the top of the window, y number of pixels from the left of the window, etc).В  One common question that has arisen is - during playback, doesВ Rapise take into account screen resolution?В  If the resolution on the computer you run it on is different from the one it records on the location of the object will change relative to the number of pixels.В  So on the computer you record it on the top parameter might be 200 but on a different resolution it might be 180.В  Would Rapise recognize that the resolution is different and adjust for that?
 
 ### <a onclick="return RegisterKbClick('KB58', 'Javascript .js not associated with Windows Scripting Host')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB58.aspx">KB58</a> Javascript .js not associated with Windows Scripting Host
 
@@ -1060,15 +1072,15 @@ Sometimes if you have installed a program that associates itself with the .js fi
 
 ### <a onclick="return RegisterKbClick('KB57', 'Accessing Child Objects in a Java AWT/Swing application')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB57.aspx">KB57</a> Accessing Child Objects in a Java AWT/Swing application
 
-This article describes how to access child objects of a Learned Java AWT/Swing object when using the Rapise Java library. Sometimes when you Learn a top-level object, you want to be able to programmatically query the object to locate the child objects that are visible in the Java SPY.
+This article describes how to access child objects of a Learned Java AWT/Swing object when using the Rapise Java library. Sometimes when you Learn a top-level object, you want to be able toВ programmatically query the object to locate the child objects that are visible in the Java SPY.
 
 ### <a onclick="return RegisterKbClick('KB56', 'Accessing child components of a WPF / Silverlight ListBox')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB56.aspx">KB56</a> Accessing child components of a WPF / Silverlight ListBox
 
-When you have a WPF or Silverlight application that has a list box (or other control that supports templates such as a Tree) that has an item template that contains sub-controls, you may need to access the individual controls rather than just the entire list item. This article outlines the approach for doing this.
+When you have aВ WPF or Silverlight application that has aВ list box (or other control that supports templates such as a Tree) that has an item template that contains sub-controls, you may need to access the individual controls rather than just the entire list item. This article outlines the approach for doing this.
 
 ### <a onclick="return RegisterKbClick('KB50', 'Dynamically changing object locators for WPF/Silverlight applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB50.aspx">KB50</a> Dynamically changing object locators for WPF/Silverlight applications
 
-Sometimes you will have controls in a WPF or Silverlight application which use dynamic lists. Depending on certain settings, the widgets in the list will appear in different places. This means that a Learned Rapise object which works fine if its in the original ListBox[0] location position is then played-back when it's displayed in another position, it will be ListBox[1] or [2]. Unlike the XPath option with web testing, Rapise doesn't currently allow regular expressions (Regex) in locators stored inside the objects.js file. This article describes a way around the problem:
+Sometimes you will haveВ controls inВ a WPF or SilverlightВ application which use dynamic lists. Depending onВ certain settings,В the widgets in the list will appear in different places. This means that a Learned Rapise object which works fine if itsВ in the originalВ ListBox[0] locationВ positionВ is then played-backВ when it'sВ displayed in another position,В it will be ListBox[1] or [2]. Unlike the XPath option with web testing, Rapise doesn't currently allow regular expressions (Regex) in locators stored inside the objects.js file. This article describes a way around the problem:
 
 ### <a onclick="return RegisterKbClick('KB47', 'Executing a process and checking if it's still running')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB47.aspx">KB47</a> Executing a process and checking if it's still running
 
