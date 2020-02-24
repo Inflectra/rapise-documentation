@@ -1,5 +1,5 @@
 site_name: Rapise
-copyright: © Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |
+copyright: © Copyright 2006-2020 Inflectra Corporation, All Rights Reserved | en-US |
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://rapisedoc.inflectra.com/
@@ -301,5 +301,6 @@ pages:
     - 'Preparing for iOS Testing': 'Manuals/Preparing_for_iOS_Testing.md'
     - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
     - 'Azure DevOps Integration': 'Guide/ado_integration.md'
+    - 'VSTS/TFS Integration': '/Guide/visual_studio.md'
     - 'Robotic Process Automation': 'Manuals/Rpa.md'
 - 'KB': 'Manuals/kb.md'
