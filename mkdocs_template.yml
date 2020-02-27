@@ -209,6 +209,8 @@ pages:
             - 'Self-healing Locators': 'Guide/web_self_healing.md'
             - 'XPath': 'Guide/xpath.md'
             - 'CSS': 'Guide/css.md'
+            - 'Browser Settings Dialog': 'Guide/browser_settings.md'
+            - 'Selenium Settings Dialog': 'Guide/selenium_settings_dialog.md'            
         - 'Selenium WebDriver':
             - 'Selenium WebDriver': 'Guide/selenium_webdriver.md'
             - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
