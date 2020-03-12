@@ -9,7 +9,7 @@ For test management and execution we recommend to use [SpiraTest](https://www.in
 If you use Azure DevOps or TFS we also have a solution:
 
 - Visual Studio and TFS integration [manual](/Guide/visual_studio/) and [video](https://youtu.be/iPVplfqKj50 )
-- Azure DevOps integration [menual](/Guide/ado_integration/) and [video](https://youtu.be/H7nOorRs00A)
+- Azure DevOps integration [manual](/Guide/ado_integration/) and [video](https://youtu.be/H7nOorRs00A)
 
 ## Jenkins (and all others)
 

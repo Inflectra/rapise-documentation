@@ -12,7 +12,7 @@ function getSearchTermFromLocation() {
 }
 
 function joinUrl (base, path, query) {
-  if(query) path = path + "?kw="+encodeURI(query);
+  //if(query) path = path + "?kw="+encodeURI(query);
   
   if (path.substring(0, 1) === "/") {
     // path starts with `/`. Thus it is absolute.
