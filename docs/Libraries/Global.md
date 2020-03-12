@@ -432,7 +432,7 @@ Moves mouse to the specified position.
 | ---------- | -------- | --------------- |
 | x | number |	Absolute X-coordinate of the target mouse position. |
 | y | number |	Absolute Y-coordinate of the target mouse position. |
-| duration | number |	Mouse move duration. If 0 - do immediate move.<br>Optional, Default: 0. |
+| duration | number |	Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: 0. |
 
 
 
@@ -569,7 +569,7 @@ string: 'true'
 <a name="see.also.global.dotypepassword"></a>
 
 <a name="DoWaitFor"></a>    
-#### DoWaitFor(objectId, timeout, sleepTimeIfFound)
+#### DoWaitFor(objectId=, timeout, sleepTimeIfFound)
 
 Waits for object specified by objectId to become available. Function returns if object
 was found or timeout.
@@ -579,7 +579,7 @@ was found or timeout.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| objectId | objectid |	Id of an object to wait for. |
+| objectId= | objectid |	Id of an object to wait for. |
 | timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: 10000. |
 | sleepTimeIfFound | number |	Wait time (milliseconds) after object is found.<br>Optional, Default: 0. |
 

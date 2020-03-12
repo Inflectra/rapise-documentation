@@ -517,7 +517,7 @@ Returns n-th child (zero-based).
 
 **Returns:**
 
-SeSObject: n-th child.
+[HTMLObject](HTMLObject.md): n-th child.
 
 
 
@@ -635,7 +635,7 @@ Returns next sibling element for this one.
 
 **Returns:**
 
-SeSObject: Next sibling element.
+[HTMLObject](HTMLObject.md): Next sibling element.
 
 
 
@@ -651,7 +651,7 @@ Returns parent element having this element.
 
 **Returns:**
 
-SeSObject: Parent element.
+[HTMLObject](HTMLObject.md): Parent element.
 
 
 
@@ -667,7 +667,7 @@ Return previous sibling element for this one.
 
 **Returns:**
 
-SeSObject: Previous sibling element.
+[HTMLObject](HTMLObject.md): Previous sibling element.
 
 
 
@@ -729,7 +729,7 @@ Returns Root element having this element.
 
 **Returns:**
 
-SeSObject: Root element having this element.
+[HTMLObject](HTMLObject.md): Root element having this element.
 
 
 

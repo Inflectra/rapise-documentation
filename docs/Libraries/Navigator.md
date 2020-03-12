@@ -442,7 +442,7 @@ Looks for a web element by specific local XPath value through all frames. If XPa
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).
+array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [element](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
