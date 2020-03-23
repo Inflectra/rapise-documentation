@@ -125,22 +125,22 @@ It is possible to make more complex conditions by using *And* and *Or* keyword i
 | --------- | ------ | ---------------- | -------- | ----------- | ----------- | ------------ |
 | If        | Param  |                  |          | param1      | *variable*  | `Result1`    |
 |-| Condition |        | *param1 IsFalse* |          |
-|-| **And**   | Param  |                  |          | param1      | *variable*  | `Result2`    |
+| **And**   | Param  |                  |          | param1      | *variable*  | `Result2`    |
 |-| Condition |        | *param1 IsTrue*  |          |
 | ...       | ...    |                  | ...      | ...         | ...         | ...          |
 
-This pice forms a condition checking that `Result1` is false AND `Result2` is true at the same time.
+This piece forms a condition checking that `Result1` is false AND `Result2` is true at the same time.
 
 
 | *Flow*    | *Type* | *Object*          | *Action*   | *ParamName* | *ParamType* | *ParamValue* |
 | --------- | ------ | ----------------- | ---------- | ----------- | ----------- | ------------ |
 | If        | Action | MyButton          | GetEnabled |             |             |              |
 |-| Condition |        | *output1 IsFalse* |            |
-|-| **Or**    | Param  |                   |            | param1      | *variable*  | `Result1`    |
+| **Or**    | Param  |                   |            | param1      | *variable*  | `Result1`    |
 |-| Condition |        | *param1 IsTrue*   |            |
 |-| ...       | ...    |                   | ...        | ...         | ...         | ...          |
 
-This pice forms a condition checking that *MyButton* is Enabled OR `Result2` is true at the same time.
+This piece forms a condition checking that *MyButton* is Enabled OR `Result2` is true at the same time.
 
 ## Examples
 
