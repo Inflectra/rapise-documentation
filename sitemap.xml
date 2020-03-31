@@ -246,6 +246,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/jscript_language_reference/</loc>
+     <lastmod>2020-03-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://rapisedoc.inflectra.com/Guide/understanding_the_script/</loc>
      <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
@@ -822,6 +827,16 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Guide/css/</loc>
+     <lastmod>2020-03-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/browser_settings/</loc>
+     <lastmod>2020-03-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/selenium_settings_dialog/</loc>
      <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -3062,6 +3077,11 @@
     </url>
     <url>
      <loc>https://rapisedoc.inflectra.com/Manuals/Rpa/</loc>
+     <lastmod>2020-03-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://rapisedoc.inflectra.com/Guide/jscript_language_reference/</loc>
      <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
