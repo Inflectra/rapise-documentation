@@ -80,6 +80,7 @@ pages:
         - 'Visual Language (RVL)': 'Guide/visual_language.md'
         - 'Scripting':
             - 'Scripting': 'Guide/scripting.md'
+            - 'JScript Language Reference': 'Guide/jscript_language_reference.md'
             - 'Understanding the Script': 'Guide/understanding_the_script.md'
             - 'Naming Conventions': 'Guide/naming_conventions.md'
             - 'Defining Functions': 'Guide/defining_functions.md'
@@ -305,4 +306,5 @@ pages:
     - 'Azure DevOps Integration': 'Guide/ado_integration.md'
     - 'VSTS/TFS Integration': '/Guide/visual_studio.md'
     - 'Robotic Process Automation': 'Manuals/Rpa.md'
+    - 'JScript Language Reference': 'Guide/jscript_language_reference.md'
 - 'KB': 'Manuals/kb.md'
