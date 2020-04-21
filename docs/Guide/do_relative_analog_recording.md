@@ -96,3 +96,7 @@ whilst the recording is playing back.
 When the analog playback is complete, use the mouse to move the TwoDialogs AUT to a different location on the screen.  Play the recording
 again, and watch the operation unfold.  The most important thing to realize is that the relative analog recording will playback the
 recording wherever the application is positioned on the screen.  This is because you used relative analog recording.  However, once the recording within the AUT is complete, all mouse motion and keyboard strokes are relative to the current position of the AUT.  Suppose that during analog recording, you click the OK button in TwoDialogs.exe, then move the mouse to terminate the recording using the analog recording `Close` button.  Now, prior to playback, you move the AUT to a different location on the screen and hit playback.  All the activity within the AUT will be faithfully reproduced.  However, the mouse motion outside the AUT will be relative to the position, so the following activities will not be accurately reproduced.  Try this for yourself, but be sure to minimize all applications before starting so you don't cause mouse events where they will do harm to other applications on the screen.
+
+## See Also
+
+- [How-Tos](howtos.md)

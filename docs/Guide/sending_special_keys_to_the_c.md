@@ -116,3 +116,7 @@ function ActivateNotepad()
     }
 }
 ```
+
+## See Also
+
+- [How-Tos](howtos.md)

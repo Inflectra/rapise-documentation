@@ -13,3 +13,7 @@ Press the **Shift** key while you open Rapise.  Keep the **Shift** key down unt
 3. Click on the **Reset Layout** button.
 
 Rapise will restart and the layout will be returned to the default.
+
+## See Also
+
+- [How-Tos](howtos.md)

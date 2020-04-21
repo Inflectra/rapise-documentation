@@ -20,3 +20,7 @@ Navigator.Open(g_webSiteBaseUrl);
 ```
 
 The variable may be defined by external execution engine like [SpiraTest](spiratest_integration.md).
+
+## See Also
+
+- [How-Tos](howtos.md)

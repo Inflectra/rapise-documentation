@@ -24,3 +24,6 @@ In addition, there are a couple of shortcuts that you may want to use:
   
     ![select an application to record dialog, select application table](./img/change_the_libraries_being_use3.png)
 
+## See Also
+
+- [How-Tos](howtos.md)

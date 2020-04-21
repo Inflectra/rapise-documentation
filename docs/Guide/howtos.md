@@ -13,6 +13,7 @@ This section focuses on specific tasks that a Rapise user might want to accompli
 - [Do Relative Analog Recording](do_relative_analog_recording.md)
 - [Extracting test data from an Excel spread sheet](extracting_test_data_from_an_e.md)
 - [Learn an Object](learn_object.md)
+- [Object Not Found - How to Fix](object_not_found.md)
 - [Open a Test](open_a_test.md)
 - [Restoring the Default Layout](restoring_the_default_layout.md)
 - [Sending Special Keys to the Current Application](sending_special_keys_to_the_c.md)

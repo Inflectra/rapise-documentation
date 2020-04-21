@@ -97,3 +97,7 @@ whilst the recording is playing back.
 > **Note:** You will see all mouse and keyboard activity reproduced as the analog recording plays.  The recording will start from the point where you left-clicked the mouse to begin the recording and will end with clicking the close button in the Analog Recording dialog or at the last action before you pressed `Ctrl+Break`.
 
 When the analog playback is complete, use the mouse to move the TwoDialogs AUT to a different location on the screen.  Play the recording again, and watch the operation unfold.  The most important thing to realize is that the absolute analog recording will playback the recording wherever the application is positioned on the screen wherever the AUT was positioned when you made the recording.  Absolute analog recording records relative to the top-left corner of the system screen. Try this for yourself, but be sure to minimize all applications before starting.
+
+## See Also
+
+- [How-Tos](howtos.md)

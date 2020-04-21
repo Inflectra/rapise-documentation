@@ -41,3 +41,7 @@ In fact, Rapise will recognize these non-objects without you having to take part
     > Notice that the three clicks in the color box were recorded as **simulated** objects.
 
 8. Press `Ctrl+3` to end the recording.
+
+## See Also
+
+- [How-Tos](howtos.md)

@@ -12,6 +12,7 @@ You are testing a web application and elements in this application use dynamics 
 
 #### How to Fix
 
+- [Object Not Found - How to Fix](/Guide/object_not_found/)
 - [Check that Rapise can find an object on screen](https://www.inflectra.com/Support/KnowledgeBase/KB375.aspx)
 - [Configure Web Recording with Web Application Profile](/Guide/web_app_profile/)
 - [Use WebSpy to build a better element Locator manually](/Guide/web_spy/)
