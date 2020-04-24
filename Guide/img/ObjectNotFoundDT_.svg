@@ -157,7 +157,7 @@
 		<a target="_top" xlink:href="https://www.inflectra.com/Support/KnowledgeBase/KB301.aspx">
 			<g id="shape8-33" v:mID="8" v:groupContext="shape" v:layerMember="0" transform="translate(201.242,-338.315)">
 				<title></title>
-				<desc>Increse object wait time</desc>
+				<desc>Increase object wait time</desc>
 				<v:custProps>
 					<v:cp v:nameU="Cost" v:lbl="Cost" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false"
 							v:ask="false" v:langID="1033" v:cal="0"/>
@@ -184,7 +184,7 @@
 				<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
 				<v:textRect cx="58.7443" cy="598.596" width="117.49" height="56.6929"/>
 				<rect x="0" y="570.25" width="117.489" height="56.6929" class="st5"/>
-				<text x="11.33" y="595" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Increse object wait <tspan
+				<text x="11.33" y="595" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Increase object wait <tspan
 							x="47.51" dy="1.2em" class="st7">time</tspan></text>			</g>
 		</a>
 		<g id="shape9-37" v:mID="9" v:groupContext="shape" v:layerMember="1" transform="translate(128.809,-373.748)">
