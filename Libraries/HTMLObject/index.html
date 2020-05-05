@@ -3261,6 +3261,10 @@
 <td>Gets array of elements matching CSS selector on this object.</td>
 </tr>
 <tr>
+<td><a href="#DoDOMQueryValue">DoDOMQueryValue</a></td>
+<td>Executes an xpath query that may return a value of string, number or boolean type.</td>
+</tr>
+<tr>
 <td><a href="#DoDOMQueryXPath">DoDOMQueryXPath</a></td>
 <td>Gets array of elements matching XPath query on this object.</td>
 </tr>
@@ -3527,7 +3531,7 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>SeSObject: New Object of requested type or HTMLObject if type not found, null if error occur.</p>
+<p><a href="./">HTMLObject</a>: New Object of requested type or HTMLObject if type not found, null if error occur.</p>
 <p><a name="see.also.htmlobject.dodomconvert"></a></p>
 <p><a name="DoDOMFindParentWithAttribute"></a>    </p>
 <h4 id="dodomfindparentwithattributeattrname-match">DoDOMFindParentWithAttribute(attrName, match)</h4>
@@ -3555,7 +3559,7 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>SeSObject: Matched element or 'null'.</p>
+<p><a href="./">HTMLObject</a>: Matched element or 'null'.</p>
 <p><a name="see.also.htmlobject.dodomfindparentwithattribute"></a></p>
 <p><a name="DoDOMGetAttribute"></a>    </p>
 <h4 id="dodomgetattributeattrname">DoDOMGetAttribute(attrName)</h4>
@@ -3627,6 +3631,29 @@
 <p><strong>Returns:</strong></p>
 <p>array: Array of matched elements.</p>
 <p><a name="see.also.htmlobject.dodomquerycss"></a></p>
+<p><a name="DoDOMQueryValue"></a>    </p>
+<h4 id="dodomqueryvaluexpath">DoDOMQueryValue(xpath)</h4>
+<p>Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then <code>null</code> is returned. Requires Rapise 6.4+</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpath</td>
+<td>string</td>
+<td>Absolute or relative xpath query. e.g. <code>count(//div)</code>, <code>//a[1]/@href='/Home'</code>, <code>./li/text()</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>string | <br>number | <br>boolean: Result of the query or null if the query is invalid.</p>
+<p><a name="see.also.htmlobject.dodomqueryvalue"></a></p>
 <p><a name="DoDOMQueryXPath"></a>    </p>
 <h4 id="dodomqueryxpathxpath">DoDOMQueryXPath(xpath)</h4>
 <p>Gets array of elements matching XPath query on this object.</p>
@@ -3790,7 +3817,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "previous": 80, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

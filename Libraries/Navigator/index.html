@@ -3139,6 +3139,10 @@
 <td>Looks for a web element by specific local XPath value through all frames.</td>
 </tr>
 <tr>
+<td><a href="#DOMQueryValue">DOMQueryValue</a></td>
+<td>Executes an xpath query that may return a value of string, number or boolean type.</td>
+</tr>
+<tr>
 <td><a href="#DoScreenshot">DoScreenshot</a></td>
 <td>Makes screenshot of the browser window.</td>
 </tr>
@@ -3175,6 +3179,10 @@
 <td>Gets size of the browser window.</td>
 </tr>
 <tr>
+<td><a href="#KillBrowser">KillBrowser</a></td>
+<td>Kills the browser process.</td>
+</tr>
+<tr>
 <td><a href="#Maximize">Maximize</a></td>
 <td>Maximizes browser window.</td>
 </tr>
@@ -3189,6 +3197,10 @@
 <tr>
 <td><a href="#SelectBrowserProfile">SelectBrowserProfile</a></td>
 <td>Selects browser profile to use for testing.</td>
+</tr>
+<tr>
+<td><a href="#SeSFind">SeSFind</a></td>
+<td>Waits for object to appear on screen.</td>
 </tr>
 <tr>
 <td><a href="#SetPosition">SetPosition</a></td>
@@ -3521,7 +3533,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).</p>
+<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbyattributevalue"></a></p>
 <p><a name="DOMFindByName"></a>    </p>
 <h4 id="domfindbynamename-tagname-findall-timeout">DOMFindByName(name, tagName, findAll, timeout)</h4>
@@ -3559,7 +3571,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).</p>
+<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbyname"></a></p>
 <p><a name="DOMFindByText"></a>    </p>
 <h4 id="domfindbytexttext-tagname-findall-timeout">DOMFindByText(text, tagName, findAll, timeout)</h4>
@@ -3597,7 +3609,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).</p>
+<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbytext"></a></p>
 <p><a name="DOMFindByXPath"></a>    </p>
 <h4 id="domfindbyxpathxpath-findall-timeout">DOMFindByXPath(xpath, findAll, timeout)</h4>
@@ -3630,8 +3642,36 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">element</a> is returned (empty array if nothing found).</p>
+<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbyxpath"></a></p>
+<p><a name="DOMQueryValue"></a>    </p>
+<h4 id="domqueryvaluexpathorobjid-query">DOMQueryValue(xpathOrObjId, query)</h4>
+<p>Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then <code>null</code> is returned. Requires Rapise 6.4+</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectId</td>
+<td>XPath or ID. XPath is detected by leading '.' or '/'. If the value is empty then this parameter defaults to <code>/html</code>.</td>
+</tr>
+<tr>
+<td>query</td>
+<td>string</td>
+<td>Absolute or relative xpath query. e.g. <code>count(//div)</code>, <code>//a[1]/@href='/Home'</code>, <code>./li/text()</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>string | <br>number | <br>boolean: Result of the query or null in the case if the query is invalid or nothing matches.</p>
+<p><a name="see.also.navigator.domqueryvalue"></a></p>
 <p><a name="DoScreenshot"></a>    </p>
 <h4 id="doscreenshotfilename">DoScreenshot(fileName)</h4>
 <p>Makes screenshot of the browser window.</p>
@@ -3836,6 +3876,10 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 <p><strong>Returns:</strong></p>
 <p>object: {Width, Height}</p>
 <p><a name="see.also.navigator.getsize"></a></p>
+<p><a name="KillBrowser"></a>    </p>
+<h4 id="killbrowser">KillBrowser()</h4>
+<p>Kills the browser process. The browser to kill is detected from browser profile settings. Requires Rapise 6.4+</p>
+<p><a name="see.also.navigator.killbrowser"></a></p>
 <p><a name="Maximize"></a>    </p>
 <h4 id="maximize">Maximize()</h4>
 <p>Maximizes browser window.</p>
@@ -3903,6 +3947,34 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 </tbody>
 </table>
 <p><a name="see.also.navigator.selectbrowserprofile"></a></p>
+<p><a name="SeSFind"></a>    </p>
+<h4 id="sesfindxpathorobjid-params">SeSFind(xpathOrObjId, params)</h4>
+<p>Waits for object to appear on screen. Uses test <a href="https://rapisedoc.inflectra.com/Guide/settings_dialog/#execution">ObjectLookup... settings</a>. Requires Rapise 6.4+</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectid</td>
+<td>Object Id or XPath of an element to check.</td>
+</tr>
+<tr>
+<td>params</td>
+<td>object</td>
+<td>Overrides locator options.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>found object, otherwise - false.</p>
+<p><a name="see.also.navigator.sesfind"></a></p>
 <p><a name="SetPosition"></a>    </p>
 <h4 id="setpositionx-y">SetPosition(x, y)</h4>
 <p>Positions top-left corner of the browser window at specifid location. This function is DPI aware.</p>
@@ -3963,7 +4035,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "previous": 80, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

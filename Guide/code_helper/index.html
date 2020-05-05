@@ -3037,6 +3037,7 @@
             <li><a href="#advanced">Advanced</a></li>
             <li><a href="#static-assignement">Static Assignement</a></li>
             <li><a href="#using-comments-to-suggest-the-type">Using Comments to Suggest the Type</a></li>
+            <li><a href="#code-completion-for-objects">Code Completion for Objects</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
 </div></div>
@@ -3090,6 +3091,21 @@ var /**number*/ v2;
 <p>So it becomes known to Rapise:</p>
 <p><img alt="code_completion_3" src="../img/code_helper4.png" /></p>
 <p>Code completion for variable names is useful when you have multiple variables or function parameters and need to type them quickly. In this case <code>CTRL+Space</code> key combination will bring up a list of variables and functions starting with just typed keyword.</p>
+<h2 id="code-completion-for-objects">Code Completion for Objects</h2>
+<p>If you type</p>
+<pre><code class="javascript">SeS(&quot;&lt;object ID&gt;&quot;).
+</code></pre>
+
+<p>A list of available actions and properties will be suggested for repository object with the given ID.</p>
+<p>Since Rapise 6.4 you may specify type of a dynamically created object as well.</p>
+<pre><code class="javascript">var username = /**HTMLObject*/ Navigator.Find(&quot;//button[id='username']&quot;);
+</code></pre>
+
+<p>Save the edited file to let Rapise re-parse it. Then you may type</p>
+<pre><code class="javascript">username.
+</code></pre>
+
+<p>and Rapise will suggest actions and properties for the <a href="/Libraries/HTMLObject/">HTMLObject</a> type.</p>
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="../source_editor/">Source Editor</a></li>
@@ -3102,7 +3118,7 @@ var /**number*/ v2;
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "previous": 80, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

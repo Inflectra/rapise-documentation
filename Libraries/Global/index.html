@@ -3067,6 +3067,10 @@ record or learn this object, it is always automatically available in any test.</
 <td>Performs mouse click at the current position.</td>
 </tr>
 <tr>
+<td><a href="#DoCmd">DoCmd</a></td>
+<td>Executes a BAT/CMD file specified in cmdLine.</td>
+</tr>
+<tr>
 <td><a href="#DoCompareJsObjects">DoCompareJsObjects</a></td>
 <td>Compares two JavaScript objects and prints differences to the report.</td>
 </tr>
@@ -3289,6 +3293,44 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 </tbody>
 </table>
 <p><a name="see.also.global.doclick"></a></p>
+<p><a name="DoCmd"></a>    </p>
+<h4 id="docmdcmdline-wrkdir-wait-show">DoCmd(cmdLine, wrkDir, wait, show)</h4>
+<p>Executes a BAT/CMD file specified in cmdLine. Optionally one may specify working dir. Requires Rapise 6.4+</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cmdLine</td>
+<td>string</td>
+<td>Command line to execute. Contains path to a batch file and parameters.</td>
+</tr>
+<tr>
+<td>wrkDir</td>
+<td>string</td>
+<td>Working directory. By default it is a directory of the test.<br>Optional, Default: ..</td>
+</tr>
+<tr>
+<td>wait</td>
+<td>boolean</td>
+<td>If <code>true</code> - Wait until batch process exit. If <code>false</code> - immediately proceed to the next test steps.<br>Optional, Default: true.</td>
+</tr>
+<tr>
+<td>show</td>
+<td>boolean</td>
+<td>If <code>true</code> - maximize the command line window. If <code>false</code> - minimize the command line window.<br>Optional, Default: true.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>number: Error code returned by the batch process. 0 - indicates success if <code>wait</code> is <code>true</code>.</p>
+<p><a name="see.also.global.docmd"></a></p>
 <p><a name="DoCompareJsObjects"></a>    </p>
 <h4 id="docomparejsobjectsmsg-obj1-obj2">DoCompareJsObjects(msg, obj1, obj2)</h4>
 <p>Compares two JavaScript objects and prints differences to the report.</p>
@@ -4201,7 +4243,7 @@ in the case of timeout.</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "previous": 80, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

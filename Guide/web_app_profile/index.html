@@ -3036,6 +3036,7 @@
             <li><a href="#adding-webappprofile-to-a-test">Adding WebAppProfile to a Test</a></li>
             <li><a href="#webappprofile-format">WebAppProfile Format</a></li>
             <li><a href="#anchors">Anchors</a></li>
+            <li><a href="#example-2">Example 2</a></li>
             <li><a href="#xpath-minimization">XPath Minimization</a></li>
             <li><a href="#see-also">See Also</a></li>
     </ul>
@@ -3052,11 +3053,10 @@
 <p><img src="/Guide/img/web_app_profile_create.gif" width="746"/></p>
 <p>The default profile looks like this:</p>
 <pre><code class="javascript">{
-    record: 
+    record:
     {
         attributes: [
             { name: &quot;id&quot;, notEmpty: true, exclude: &quot;\\d&quot; },
-            { name: &quot;class&quot;, notEmpty: true, exclude: &quot;\\d&quot;},
             { name: &quot;title&quot; },
             { name: &quot;name&quot; },
             { name: &quot;style&quot; },
@@ -3072,20 +3072,71 @@
         ],
         anchors: [
             /* { xpath: &quot;//div[@class='content-wrapper']&quot; } */
-        ]
+        ],
+        clickable: {
+            classes: [
+                /* &quot;sapMInputBaseIcon&quot; */
+            ]
+        },
+        handlers:
+        {
+            elementName: function(el)
+            {
+                /*
+                var label = __getAttribute(el, &quot;aria-label&quot;);
+                if (label)
+                {
+                    if (label.indexOf(&quot;,&quot;) &gt; 0)
+                    {
+                        return label.split(&quot;,&quot;)[0];
+                    }
+                    return label;
+                }
+                */
+                return null;
+            },
+            skipAttribute: function (node, attr, value)
+            {
+                /*
+                var tag = node.tagName.toLowerCase();
+                if (attr == &quot;title&quot;)
+                {
+                    if (tag == &quot;textarea&quot; || tag == &quot;select&quot; || tag == &quot;input&quot;)
+                    {
+                        return true;
+                    }
+                }
+                else if (attr == &quot;text&quot;)
+                {
+                    if (__hasAttribute(node, &quot;data-id&quot;) || __hasAttribute(node, &quot;id&quot;))
+                    {
+                        return true;
+                    }
+                }
+                */
+                return false;
+            }
+        }
     }
 }
 </code></pre>
 
 <h2 id="webappprofile-format">WebAppProfile Format</h2>
 <ul>
-<li><code>record.attributes</code> array  contains definition of attributes to record.<ul>
+<li>
+<p><code>record.attributes</code> array contains definition of attributes to record.</p>
+<ul>
 <li><code>name</code> is the only required property for an attribute. It is case insensitive.</li>
 <li><code>notEmpty</code> is <code>false</code> by default. If set to <code>true</code> then the attribute will be recorded only if it has non empty value.</li>
 <li><code>exclude</code> is a regular expression. If attribute value matches the regexp then the attribute is not recorded.</li>
 </ul>
+<blockquote>
+<p>Note: Rapise 6.4+ supports <code>text</code> attribute that is mapped to inner text of leaf elements.</p>
+</blockquote>
 </li>
-<li><code>record.classes</code> array lists class names that are meaningful for element identification and should be recorded.<ul>
+<li>
+<p><code>record.classes</code> array lists class names that are meaningful for element identification and should be recorded.</p>
+<ul>
 <li><code>name</code> is the only required property for a class. It is case sensitive.</li>
 </ul>
 </li>
@@ -3093,9 +3144,16 @@
 <li><code>xpath</code> is the only required property for an anchor.</li>
 </ul>
 </li>
+<li><code>record.clickable.classes</code> is an array of classes that indicate clickable elements. By default Rapise does not record clicks on DIVs, SPANs and some other elements. By listing classes of elements that can be clicked you may change the default behavior. Requires Rapise 6.4+</li>
+<li><code>record.handlers</code> is an objects that defines functions injected into the recorder. Requires Rapise 6.4+<ul>
+<li><code>elementName(el)</code> builds a name for a given element. This name is used as object ID in the object repository. If this function returns <code>null</code> then default algorithm is used to build the name.</li>
+<li><code>skipAttribute(node, attr, value)</code> allows to skip recording of some attributes in specific cases. The function must return <code>true</code> if an attribute should not be recorded.</li>
+</ul>
+</li>
 </ul>
 <h2 id="anchors">Anchors</h2>
-<p>When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element then XPath of the element will start with XPath of the anchor element.</p>
+<p>When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element (including the anchor element itself) then XPath of the element will start/or be replaced with XPath of the anchor element.</p>
+<h3 id="example-1">Example 1</h3>
 <p>Let's look at the example. Here we have a table built with DIVs and ARIA roles.</p>
 <pre><code class="html">&lt;div id=&quot;Customers&quot; role=&quot;grid&quot;&gt;
     &lt;div role=&quot;row&quot;&gt;
@@ -3119,6 +3177,7 @@
 </code></pre>
 
 <p>The locator is now bound to the table. If another element with <code>Contoso</code> title appears somewhere on the page (outside the table) we'll find the correct element.</p>
+<h2 id="example-2">Example 2</h2>
 <p>Here is more complex and real-life example. In <a href="https://dynamics.microsoft.com/en-us/business-central/overview/">Microsoft Dynamics 365 Business Central</a> application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with <code>spa-view</code> class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower <code>z-index</code> then currently active form.</p>
 <p><img src="/Guide/img/web_app_profile_hidden_layers.png" width="485"/></p>
 <p>It means that when Rapise searches for an element during test playback it should work with the topmost <code>spa-view</code>.</p>
@@ -3131,6 +3190,29 @@
 </code></pre>
 
 <p>The anchor prevents us from finding elements that are not visible to user and ensure that if we find an element it belongs to an active form.</p>
+<h3 id="example-3">Example 3</h3>
+<p>Requires Rapise 6.4+. An anchor may be used to rewrite XPath for an element completely. It means if an anchor points to an element then it will be used instead of XPath expression generated using attributes. Let's assume we have a page</p>
+<pre><code class="html">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;span&gt;UserName&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;input type=&quot;text&quot; id=&quot;obj-1267&quot; title=&quot;Enter email or user ID:&quot;/&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<p>If we have an anchor defined like</p>
+<pre><code class="javascript">{ xpath: &quot;//input[../../td/span[text()='UserName']]&quot;}
+</code></pre>
+
+<p>and we click on the field then instead of something like</p>
+<pre><code class="nohighlight">//input[@title='Enter email or user ID:']
+</code></pre>
+
+<p>the recorder will use the anchor.</p>
 <h2 id="xpath-minimization">XPath Minimization</h2>
 <p>Rapise always tries to build the minimal XPath locator possible with a given set of attributes, classes and anchors. <a href="https://www.inflectra.com/support/knowledgebase/kb282.aspx">Full XPath is not an option</a>.</p>
 <p>Let's assume we have a page</p>
@@ -3166,7 +3248,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "previous": 80, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

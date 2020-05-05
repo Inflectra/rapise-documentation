@@ -3032,9 +3032,11 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#tests-and-sub-tests">Tests and Sub-Tests</a></li>
-            <li><a href="#make-multiple-test-scenarios-with-the-same-set-of-objects">Make Multiple Test Scenarios with the Same Set of Objects</a></li>
-            <li><a href="#organize-different-tests-into-a-single-workspace">Organize different tests into a single workspace.</a></li>
-            <li><a href="#sub-test-features">Sub-Test Features</a></li>
+            <li><a href="#shared-object-repository-and-shared-functions">Shared Object Repository and Shared Functions</a></li>
+            <li><a href="#local-object-repository-and-local-functions">Local Object Repository and Local Functions</a></li>
+            <li><a href="#nested-sub-tests">Nested Sub-Tests</a></li>
+            <li><a href="#sub-test-properties">Sub-Test Properties</a></li>
+            <li><a href="#sub-test-context-menu">Sub-Test Context Menu</a></li>
             <li><a href="#workdir-and-frameworks">%WORKDIR% and Frameworks</a></li>
     </ul>
 </div></div>
@@ -3043,42 +3045,36 @@
 <h1 id="tests-and-sub-tests">Tests and Sub-Tests</h1>
 <p>The concept of Sub-Test is an organic way to organize the whole work with Tests in organic way. By having sub-tests one may meet one of the following goals:</p>
 <ol>
-<li>
-<p>Create multiple test scenarios working with same set of Objects and Functions.</p>
-</li>
-<li>
-<p>Organize different test scenarios into a single workspace.</p>
-</li>
-<li>
-<p>Use Sub-test to make cross-browser tests.</p>
-</li>
+<li>Create multiple test scenarios working with same set of Objects and Functions.</li>
+<li>Organize different test scenarios into a single workspace.</li>
+<li>Use Sub-test to make cross-browser tests.</li>
 </ol>
 <p>We will consider each of described goals separately. The test containing the sub-test(s) we will call <strong>base</strong> or <strong>parent</strong> test.</p>
-<h2 id="make-multiple-test-scenarios-with-the-same-set-of-objects">Make Multiple Test Scenarios with the Same Set of Objects</h2>
+<h2 id="shared-object-repository-and-shared-functions">Shared Object Repository and Shared Functions</h2>
 <p>In this case <strong>parent</strong> test contains all learned objects and user-defined functions.</p>
 <p><img alt="subtestdependant" src="../img/tests_and_sub_tests1.png" /></p>
-<p>For example, the parent test may have objects "User Name", "Password", "Sign On". And function</p>
+<p>For example, the parent test may have objects <code>User Name</code>, <code>Password</code>, <code>Sign On</code>. And function</p>
 <pre><code class="javascript">function Login(username, password)
 {
    ...
 }
 </code></pre>
 
-<p>SubTest1 may be used to check login with valid Credentials, <code>Main.js</code> from <strong>SubTest1</strong> looks like:</p>
-<pre><code class="javascript">function Test()
+<p><strong>SubTest1</strong> may be used to check login with valid credentials, <code>Main.js</code> from <strong>SubTest1</strong> looks like:</p>
+<pre><code class="javascript">function Test(params)
 {
 
    Login(&quot;validuser&quot;, &quot;validpassword&quot;);
 
-   // Now check that login is successfull
+   // Now check that login is successful
 
    Tester.Assert(&quot;Login leads to welcome message: &quot;, Global.DoWaitFor('Welcome_User'));
 
 }
 </code></pre>
 
-<p>SubTest2 may be used to check login with invalid Credentials (i.e. it is a fail-test). <code>Main.js</code> from <strong>SubTest2</strong> looks like:</p>
-<pre><code class="javascript">function Test()
+<p><strong>SubTest2</strong> may be used to check login with invalid Credentials (i.e. it is a fail-test). <code>Main.js</code> from <strong>SubTest2</strong> looks like:</p>
+<pre><code class="javascript">function Test(params)
 {
 
    Login(&quot;invaliduser&quot;, &quot;invvalidpassword&quot;);
@@ -3090,33 +3086,29 @@
 }
 </code></pre>
 
-<p>Function Login and objects Welcome_User and Invalid_User are defined in Test. The subtests are just implementing various scenarios for the same set of objects.</p>
-<h2 id="organize-different-tests-into-a-single-workspace">Organize different tests into a single workspace.</h2>
+<p>Function <code>Login</code> and objects <code>Welcome_User</code> and <code>Invalid_User</code> are defined in the <strong>parent</strong> test. The sub-tests are just implementing various scenarios for the same set of objects.</p>
+<h2 id="local-object-repository-and-local-functions">Local Object Repository and Local Functions</h2>
 <p>Each test has its own objects, functions and scenarios.</p>
 <p><img alt="subtestworkspace" src="../img/tests_and_sub_tests2.png" /></p>
 <p>The usage of such an approach is well demonstrated by example. We created a test called <strong>SampleMaster</strong> and put all Rapise samples into it by using <strong>Add File</strong> context menu in the the <a href="../test_files_dialog/">Test Tree</a> dialog. Finally the Files tree looks like:</p>
 <p><img alt="subtest samplemaster tree" src="../img/tests_and_sub_tests3.png" /></p>
 <p>All tests in this tree are independent. We use the Sample Master to manage all the tests from a single environment.</p>
-<h2 id="sub-test-features">Sub-Test Features</h2>
-<ul>
-<li>
-<p>Sub-test may have its own nested sub-tests. For example, in the parent test contains reference to 'CreateNewBook' subtest having 'Login' and 'Logout' subtests inside:</p>
+<h2 id="nested-sub-tests">Nested Sub-Tests</h2>
+<p>Sub-test may have its own nested sub-tests. In this example the parent test contains reference to <code>CreateNewBook</code> sub-test having <code>Login</code> and <code>Logout</code> sub-tests inside:</p>
 <p><img alt="subtest nesting" src="../img/tests_and_sub_tests4.png" /></p>
-</li>
-<li>
-<p>Sub-test properties are available from the 'Tag' property in the 'Properties window:</p>
+<h2 id="sub-test-properties">Sub-Test Properties</h2>
+<p>Sub-test properties are available from the <code>Tag</code> property in the <strong>Properties</strong> pane:</p>
 <p><img alt="subtest tagproperties" src="../img/tests_and_sub_tests5.png" /></p>
-</li>
-<li>
-<p>The following options are available in the context menu fore each of the sub-tests:</p>
-<p><img alt="subtest tree view file options" src="../img/tests_and_sub_tests6.png" /></p>
-</li>
-<li>
-<p><code>Play</code>: Execute selected sub-test</p>
-</li>
+<h2 id="sub-test-context-menu">Sub-Test Context Menu</h2>
+<p>The following options are available in the context menu for each of the sub-tests:</p>
+<p><img alt="sub-tests, context menu" src="/Guide/img/tests_and_sub_tests6.png" width="130" /></p>
+<ul>
+<li><code>Play</code>: Execute selected sub-test</li>
 <li><code>Record</code>: Start recording into selected sub-test</li>
 <li><code>Save</code>: Save options of a sub-test</li>
 <li><code>Show Objects</code>: Show objects form a sub-test in the Object Tree</li>
+<li><code>Rename</code>: Rename this sub-test</li>
+<li><code>Clone</code>: Make a copy of the sub-test</li>
 <li><code>Delete</code>: Remove reference to a sub-test from its parent test  </li>
 </ul>
 <h2 id="workdir-and-frameworks">%WORKDIR% and Frameworks</h2>
@@ -3130,7 +3122,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "search": 83, "next": 78, "help": 191};
+                shortcuts = {"next": 78, "previous": 80, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
