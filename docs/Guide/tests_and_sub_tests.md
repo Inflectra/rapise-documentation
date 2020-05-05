@@ -3,20 +3,18 @@
 The concept of Sub-Test is an organic way to organize the whole work with Tests in organic way. By having sub-tests one may meet one of the following goals:
 
 1. Create multiple test scenarios working with same set of Objects and Functions.
-
 2. Organize different test scenarios into a single workspace.
-
 3. Use Sub-test to make cross-browser tests.
 
 We will consider each of described goals separately. The test containing the sub-test(s) we will call **base** or **parent** test.
 
-## Make Multiple Test Scenarios with the Same Set of Objects
+## Shared Object Repository and Shared Functions
 
 In this case **parent** test contains all learned objects and user-defined functions.
 
 ![subtestdependant](./img/tests_and_sub_tests1.png)
 
-For example, the parent test may have objects "User Name", "Password", "Sign On". And function
+For example, the parent test may have objects `User Name`, `Password`, `Sign On`. And function
 
 ```javascript
 function Login(username, password)
@@ -25,25 +23,25 @@ function Login(username, password)
 }
 ```
 
-SubTest1 may be used to check login with valid Credentials, `Main.js` from **SubTest1** looks like:
+**SubTest1** may be used to check login with valid credentials, `Main.js` from **SubTest1** looks like:
 
 ```javascript
-function Test()
+function Test(params)
 {
 
    Login("validuser", "validpassword");
 
-   // Now check that login is successfull
+   // Now check that login is successful
 
    Tester.Assert("Login leads to welcome message: ", Global.DoWaitFor('Welcome_User'));
 
 }
 ```
 
-SubTest2 may be used to check login with invalid Credentials (i.e. it is a fail-test). `Main.js` from **SubTest2** looks like:
+**SubTest2** may be used to check login with invalid Credentials (i.e. it is a fail-test). `Main.js` from **SubTest2** looks like:
 
 ```javascript
-function Test()
+function Test(params)
 {
 
    Login("invaliduser", "invvalidpassword");
@@ -55,9 +53,9 @@ function Test()
 }
 ```
 
-Function Login and objects Welcome_User and Invalid_User are defined in Test. The subtests are just implementing various scenarios for the same set of objects.
+Function `Login` and objects `Welcome_User` and `Invalid_User` are defined in the **parent** test. The sub-tests are just implementing various scenarios for the same set of objects.
 
-## Organize different tests into a single workspace.
+## Local Object Repository and Local Functions
 
 Each test has its own objects, functions and scenarios.
 
@@ -69,26 +67,31 @@ The usage of such an approach is well demonstrated by example. We created a test
 
 All tests in this tree are independent. We use the Sample Master to manage all the tests from a single environment.
 
-## Sub-Test Features
+## Nested Sub-Tests
 
-*   Sub-test may have its own nested sub-tests. For example, in the parent test contains reference to 'CreateNewBook' subtest having 'Login' and 'Logout' subtests inside:
+Sub-test may have its own nested sub-tests. In this example the parent test contains reference to `CreateNewBook` sub-test having `Login` and `Logout` sub-tests inside:
 
-    ![subtest nesting](./img/tests_and_sub_tests4.png)
+![subtest nesting](./img/tests_and_sub_tests4.png)
 
-*   Sub-test properties are available from the 'Tag' property in the 'Properties window:
+## Sub-Test Properties
 
-    ![subtest tagproperties](./img/tests_and_sub_tests5.png)
+Sub-test properties are available from the `Tag` property in the **Properties** pane:
 
-*   The following options are available in the context menu fore each of the sub-tests:
+![subtest tagproperties](./img/tests_and_sub_tests5.png)
 
-    ![subtest tree view file options](./img/tests_and_sub_tests6.png)
+## Sub-Test Context Menu
 
-*   `Play`: Execute selected sub-test
-*   `Record`: Start recording into selected sub-test
-*   `Save`: Save options of a sub-test
-*   `Show Objects`: Show objects form a sub-test in the Object Tree
-*   `Delete`: Remove reference to a sub-test from its parent test  
+The following options are available in the context menu for each of the sub-tests:
 
+<img alt="sub-tests, context menu" src="/Guide/img/tests_and_sub_tests6.png" width="130" />
+
+- `Play`: Execute selected sub-test
+- `Record`: Start recording into selected sub-test
+- `Save`: Save options of a sub-test
+- `Show Objects`: Show objects form a sub-test in the Object Tree
+- `Rename`: Rename this sub-test
+- `Clone`: Make a copy of the sub-test
+- `Delete`: Remove reference to a sub-test from its parent test  
 
 ## %WORKDIR% and Frameworks
 

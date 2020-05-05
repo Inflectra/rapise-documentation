@@ -56,6 +56,14 @@ Right click on a file to see:
 * **Remove from Disk**: Remove the file from your test and hard drive.
 * **Create Data Object...**: Only available for `.xls` and `.xlsx` files. Create Spreadsheet Data Object in the object tree.
 
+## Context Menu (Sub-Test)
+
+Right click on a sub-test to see:
+
+<img alt="test files view, context menu 3" src="/Guide/img/tests_and_sub_tests6.png" width="130" />
+
+See [menu item descriptions](/Guide/tests_and_sub_tests/#sub-test-context-menu)
+
 ## Filter Groups
 
 Filter groups read its contents from disk according to specified path and wildcard. You may setup a filter group by editing group properties:

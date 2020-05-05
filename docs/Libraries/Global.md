@@ -23,6 +23,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoAnalogPlay](#DoAnalogPlay) | Performs Analog Playback of events recorded in a file. |
 |	[DoAppActivate](#DoAppActivate) | Activates window with the specified title. |
 |	[DoClick](#DoClick) | Performs mouse click at the current position. |
+|	[DoCmd](#DoCmd) | Executes a BAT/CMD file specified in cmdLine. |
 |	[DoCompareJsObjects](#DoCompareJsObjects) | Compares two JavaScript objects and prints differences to the report. |
 |	[DoDecrypt](#DoDecrypt) | Decrypts a piece of text. |
 |	[DoEncrypt](#DoEncrypt) | Encrypts a piece of text. |
@@ -130,6 +131,32 @@ Performs mouse click at the current position.
 
 
 <a name="see.also.global.doclick"></a>
+
+<a name="DoCmd"></a>    
+#### DoCmd(cmdLine, wrkDir, wait, show)
+
+Executes a BAT/CMD file specified in cmdLine. Optionally one may specify working dir. Requires Rapise 6.4+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| cmdLine | string |	Command line to execute. Contains path to a batch file and parameters. |
+| wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: .. |
+| wait | boolean |	If `true` - Wait until batch process exit. If `false` - immediately proceed to the next test steps.<br>Optional, Default: true. |
+| show | boolean |	If `true` - maximize the command line window. If `false` - minimize the command line window.<br>Optional, Default: true. |
+
+
+
+
+**Returns:**
+
+number: Error code returned by the batch process. 0 - indicates success if `wait` is `true`.
+
+
+
+<a name="see.also.global.docmd"></a>
 
 <a name="DoCompareJsObjects"></a>    
 #### DoCompareJsObjects(msg, obj1, obj2)

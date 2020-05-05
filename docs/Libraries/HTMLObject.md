@@ -69,6 +69,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |	[DoDOMParent](#DoDOMParent) | Returns parent element having this element. |
 |	[DoDOMPrevSibling](#DoDOMPrevSibling) | Return previous sibling element for this one. |
 |	[DoDOMQueryCss](#DoDOMQueryCss) | Gets array of elements matching CSS selector on this object. |
+|	[DoDOMQueryValue](#DoDOMQueryValue) | Executes an xpath query that may return a value of string, number or boolean type. |
 |	[DoDOMQueryXPath](#DoDOMQueryXPath) | Gets array of elements matching XPath query on this object. |
 |	[DoDOMRoot](#DoDOMRoot) | Returns Root element having this element. |
 |	[DoEnsureVisible](#DoEnsureVisible) | Makes sure specified element is visible on the screen. |
@@ -556,7 +557,7 @@ Creates a clone of this object converted to a requested type.
 
 **Returns:**
 
-SeSObject: New Object of requested type or HTMLObject if type not found, null if error occur.
+[HTMLObject](HTMLObject.md): New Object of requested type or HTMLObject if type not found, null if error occur.
 
 
 
@@ -580,7 +581,7 @@ Returns parent element (if any) with given attribute matching given string or 'r
 
 **Returns:**
 
-SeSObject: Matched element or 'null'.
+[HTMLObject](HTMLObject.md): Matched element or 'null'.
 
 
 
@@ -695,6 +696,29 @@ array: Array of matched elements.
 
 
 <a name="see.also.htmlobject.dodomquerycss"></a>
+
+<a name="DoDOMQueryValue"></a>    
+#### DoDOMQueryValue(xpath)
+
+Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then `null` is returned. Requires Rapise 6.4+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpath | string |	Absolute or relative xpath query. e.g. `count(//div)`, `//a[1]/@href='/Home'`, `./li/text()` |
+
+
+
+
+**Returns:**
+
+string | <br>number | <br>boolean: Result of the query or null if the query is invalid.
+
+
+
+<a name="see.also.htmlobject.dodomqueryvalue"></a>
 
 <a name="DoDOMQueryXPath"></a>    
 #### DoDOMQueryXPath(xpath)

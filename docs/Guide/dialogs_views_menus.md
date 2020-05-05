@@ -42,7 +42,7 @@ This section details the Rapise GUI.  Each subsection describes the function of
     - [Source Editor](source_editor.md)
     - [Spira Dashboard](spira_dashboard.md)
     - [Spira Properties Dialog](spira_properties_dialog.md)
-    - [Spreadsheet Viewer](spreadsheet_editor.md)
+    - [Spreadsheet Editor](spreadsheet_editor.md)
     - [Spy Dialog](ses_spy_dialog.md)
     - [Start Page](start_page.md)
     - [Test Files View](test_files_dialog.md)

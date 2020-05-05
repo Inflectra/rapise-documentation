@@ -18,11 +18,10 @@ The default profile looks like this:
 
 ```javascript
 {
-    record: 
+    record:
     {
         attributes: [
             { name: "id", notEmpty: true, exclude: "\\d" },
-            { name: "class", notEmpty: true, exclude: "\\d"},
             { name: "title" },
             { name: "name" },
             { name: "style" },
@@ -38,25 +37,78 @@ The default profile looks like this:
         ],
         anchors: [
             /* { xpath: "//div[@class='content-wrapper']" } */
-        ]
+        ],
+        clickable: {
+            classes: [
+                /* "sapMInputBaseIcon" */
+            ]
+        },
+        handlers:
+        {
+            elementName: function(el)
+            {
+                /*
+                var label = __getAttribute(el, "aria-label");
+                if (label)
+                {
+                    if (label.indexOf(",") > 0)
+                    {
+                        return label.split(",")[0];
+                    }
+                    return label;
+                }
+                */
+                return null;
+            },
+            skipAttribute: function (node, attr, value)
+            {
+                /*
+                var tag = node.tagName.toLowerCase();
+                if (attr == "title")
+                {
+                    if (tag == "textarea" || tag == "select" || tag == "input")
+                    {
+                        return true;
+                    }
+                }
+                else if (attr == "text")
+                {
+                    if (__hasAttribute(node, "data-id") || __hasAttribute(node, "id"))
+                    {
+                        return true;
+                    }
+                }
+                */
+                return false;
+            }
+        }
     }
 }
 ```
 
 ## WebAppProfile Format
 
-- `record.attributes` array  contains definition of attributes to record.
+- `record.attributes` array contains definition of attributes to record.
     - `name` is the only required property for an attribute. It is case insensitive.
     - `notEmpty` is `false` by default. If set to `true` then the attribute will be recorded only if it has non empty value.
     - `exclude` is a regular expression. If attribute value matches the regexp then the attribute is not recorded.
+
+    > Note: Rapise 6.4+ supports `text` attribute that is mapped to inner text of leaf elements.
+
 - `record.classes` array lists class names that are meaningful for element identification and should be recorded.
     - `name` is the only required property for a class. It is case sensitive.
 - `record.anchors` array lists anchors.
     - `xpath` is the only required property for an anchor.
+- `record.clickable.classes` is an array of classes that indicate clickable elements. By default Rapise does not record clicks on DIVs, SPANs and some other elements. By listing classes of elements that can be clicked you may change the default behavior. Requires Rapise 6.4+
+- `record.handlers` is an objects that defines functions injected into the recorder. Requires Rapise 6.4+
+    - `elementName(el)` builds a name for a given element. This name is used as object ID in the object repository. If this function returns `null` then default algorithm is used to build the name.
+    - `skipAttribute(node, attr, value)` allows to skip recording of some attributes in specific cases. The function must return `true` if an attribute should not be recorded.
 
 ## Anchors
 
-When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element then XPath of the element will start with XPath of the anchor element.
+When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element (including the anchor element itself) then XPath of the element will start/or be replaced with XPath of the anchor element.
+
+### Example 1
 
 Let's look at the example. Here we have a table built with DIVs and ARIA roles.
 
@@ -90,6 +142,8 @@ we'll get the locator as
 
 The locator is now bound to the table. If another element with `Contoso` title appears somewhere on the page (outside the table) we'll find the correct element.
 
+## Example 2
+
 Here is more complex and real-life example. In [Microsoft Dynamics 365 Business Central](https://dynamics.microsoft.com/en-us/business-central/overview/) application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with `spa-view` class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower `z-index` then currently active form.
 
 <img src="/Guide/img/web_app_profile_hidden_layers.png" width="485"/>
@@ -109,6 +163,37 @@ Here is an example of automatically recorded XPath
 ```
 
 The anchor prevents us from finding elements that are not visible to user and ensure that if we find an element it belongs to an active form.
+
+### Example 3
+
+Requires Rapise 6.4+. An anchor may be used to rewrite XPath for an element completely. It means if an anchor points to an element then it will be used instead of XPath expression generated using attributes. Let's assume we have a page
+
+```html
+<table>
+    <tr>
+        <td>
+            <span>UserName</span>
+        </td>
+        <td>
+            <input type="text" id="obj-1267" title="Enter email or user ID:"/>
+        </td>
+    </tr>
+</table>
+```
+
+If we have an anchor defined like
+
+```javascript
+{ xpath: "//input[../../td/span[text()='UserName']]"}
+```
+
+and we click on the field then instead of something like
+
+```nohighlight
+//input[@title='Enter email or user ID:']
+```
+
+the recorder will use the anchor.
 
 ## XPath Minimization
 

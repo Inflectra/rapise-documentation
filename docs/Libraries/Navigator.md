@@ -47,6 +47,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[DOMFindByName](#DOMFindByName) | Looks for a web element by its name through all frames. |
 |	[DOMFindByText](#DOMFindByText) | Looks for a web element by its text contents through all frames. |
 |	[DOMFindByXPath](#DOMFindByXPath) | Looks for a web element by specific local XPath value through all frames. |
+|	[DOMQueryValue](#DOMQueryValue) | Executes an xpath query that may return a value of string, number or boolean type. |
 |	[DoScreenshot](#DoScreenshot) | Makes screenshot of the browser window. |
 |	[DoSetExpectedConfirmResult](#DoSetExpectedConfirmResult) | Set boolean value to return as a result of next browser 'confirm' request. |
 |	[DoSetExpectedPromptResult](#DoSetExpectedPromptResult) | Set text to return as a result of next browser 'prompt' request. |
@@ -56,10 +57,12 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[GetPerformance](#GetPerformance) | Reads performance information from currently used browser. |
 |	[GetPosition](#GetPosition) | Gets position of the top-left corner of the browser window. |
 |	[GetSize](#GetSize) | Gets size of the browser window. |
+|	[KillBrowser](#KillBrowser) | Kills the browser process. |
 |	[Maximize](#Maximize) | Maximizes browser window. |
 |	[Navigate](#Navigate) | Redirects browser to a specified URL. |
 |	[Open](#Open) | Opens a browser. |
 |	[SelectBrowserProfile](#SelectBrowserProfile) | Selects browser profile to use for testing. |
+|	[SeSFind](#SeSFind) | Waits for object to appear on screen. |
 |	[SetPosition](#SetPosition) | Positions top-left corner of the browser window at specifid location. |
 |	[SetSize](#SetSize) | Sets size if the browser window. |
 
@@ -365,7 +368,7 @@ Looks for a web element by specific attribute value through all frames. [attrVal
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).
+array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
@@ -391,7 +394,7 @@ Looks for a web element by its name through all frames. Name is checked agains @
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).
+array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
@@ -417,7 +420,7 @@ Looks for a web element by its text contents through all frames. [text] is check
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found element or null is returned. Else search is done for all matching elements and array is returned (empty array if nothing found).
+array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
@@ -442,11 +445,35 @@ Looks for a web element by specific local XPath value through all frames. If XPa
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [element](HTMLObject.md) is returned (empty array if nothing found).
+array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
 <a name="see.also.navigator.domfindbyxpath"></a>
+
+<a name="DOMQueryValue"></a>    
+#### DOMQueryValue(xpathOrObjId, query)
+
+Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then `null` is returned. Requires Rapise 6.4+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading '.' or '/'. If the value is empty then this parameter defaults to `/html`. |
+| query | string |	Absolute or relative xpath query. e.g. `count(//div)`, `//a[1]/@href='/Home'`, `./li/text()` |
+
+
+
+
+**Returns:**
+
+string | <br>number | <br>boolean: Result of the query or null in the case if the query is invalid or nothing matches.
+
+
+
+<a name="see.also.navigator.domqueryvalue"></a>
 
 <a name="DoScreenshot"></a>    
 #### DoScreenshot(fileName)
@@ -633,6 +660,17 @@ object: {Width, Height}
 
 <a name="see.also.navigator.getsize"></a>
 
+<a name="KillBrowser"></a>    
+#### KillBrowser()
+
+Kills the browser process. The browser to kill is detected from browser profile settings. Requires Rapise 6.4+
+
+
+
+
+
+<a name="see.also.navigator.killbrowser"></a>
+
 <a name="Maximize"></a>    
 #### Maximize()
 
@@ -697,6 +735,30 @@ Selects browser profile to use for testing.
 
 
 <a name="see.also.navigator.selectbrowserprofile"></a>
+
+<a name="SeSFind"></a>    
+#### SeSFind(xpathOrObjId, params)
+
+Waits for object to appear on screen. Uses test [ObjectLookup... settings](https://rapisedoc.inflectra.com/Guide/settings_dialog/#execution). Requires Rapise 6.4+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
+| params | object |	Overrides locator options.<br>Optional. |
+
+
+
+
+**Returns:**
+
+found object, otherwise - false.
+
+
+
+<a name="see.also.navigator.sesfind"></a>
 
 <a name="SetPosition"></a>    
 #### SetPosition(x, y)

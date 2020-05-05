@@ -78,6 +78,30 @@ So it becomes known to Rapise:
 
 Code completion for variable names is useful when you have multiple variables or function parameters and need to type them quickly. In this case `CTRL+Space` key combination will bring up a list of variables and functions starting with just typed keyword.
 
+## Code Completion for Objects
+
+If you type
+
+```javascript
+SeS("<object ID>").
+```
+
+A list of available actions and properties will be suggested for repository object with the given ID.
+
+Since Rapise 6.4 you may specify type of a dynamically created object as well.
+
+```javascript
+var username = /**HTMLObject*/ Navigator.Find("//button[id='username']");
+```
+
+Save the edited file to let Rapise re-parse it. Then you may type
+
+```javascript
+username.
+```
+
+and Rapise will suggest actions and properties for the [HTMLObject](/Libraries/HTMLObject/) type.
+
 ## See Also
 
 - [Source Editor](source_editor.md)

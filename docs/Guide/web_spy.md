@@ -37,6 +37,12 @@ More tools available in the menu.
 - **CSS Enabled:** Select to make CSS test field visible on the toolbar.
 - **Web Spy Settings:** Clicking on this brings up the [Web Settings](web_settings.md) dialog box.
 
+## Spy Shortcuts
+
+- `Ctrl-G` - reload the DOM tree from the active page in the browser.
+- `Ctrl-T` - start/stop tracking mode to locate the element in the DOM tree.
+- `Ctrl-Shift-T` - save snapshot of the DOM tree. When the shortcut is pressed Rapise prompts for a name and saves the DOM tree in XML format and the screenshot of the browser window in PNG format.
+
 ## DOM Tree
 
 The DOM tree lets you view all of the HTML elements (also known as DOM elements) that make up the web application / web page being tested. The elements are showing in a hierarchical tree representation that mirrors how they are nested on the page. Each element is displayed along with the various attributes (class, id, style, etc.) that are associated with the element:

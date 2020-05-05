@@ -79,6 +79,12 @@ function TestPrepare()
 }
 ```
 
+To disable automatic capturing of recording screenshots `g_aiCaptureRecordingScreenshots` to `false`.
+
+```javascript
+g_aiCaptureRecordingScreenshots = false;
+```
+
 ## See Also
 
 - [Web Testing](web_testing.md)
