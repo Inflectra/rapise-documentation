@@ -217,6 +217,11 @@ RVL has following file extensions:
 
 RVL is designed to be a simple grid language and it may be edited in any spreadsheet editor supporting `.xls` or `.xlsx` files (i.e. Microsoft Excel)
 
+## RVL Editor Shortcuts
+
+- `Shift-Enter` - inserts an empty line after the selected cell.
+- `Ctrl-D` - deletes the line of the selected cell.
+
 ## See Also
 
 - [About RVL](visual_language.md)

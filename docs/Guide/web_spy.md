@@ -89,7 +89,7 @@ The properties that are displayed are grouped into the following categories:
     - x
     - y
     - zIndex
-- **Selectors** - this section contains [XPath](xpath.md) and [CSS](css.md) selectors computed using different algorithms.
+- **Selectors** - this section contains [XPath](xpath.md) and [CSS](css.md) selectors computed using different algorithms. If you will double click a name of the selector it will be copied to the edit field on the toolbar.
 
 ## Test Results
 
@@ -153,3 +153,4 @@ To fix a locator for object that is not found do the following:
 ## See Also
 
 - [Object Spy](object_spy.md)
+- [Save DOM tree to share with Rapise experts](https://www.inflectra.com/Support/KnowledgeBase/KB422.aspx)

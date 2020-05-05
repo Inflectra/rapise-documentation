@@ -221,6 +221,8 @@ related to using the Web Spy to inspect the DOM objects in web pages.
 * **Online Help** - opens online version of the help system (updated regularly).
 * **Remote Assistance** - launches GoToMeeting session with a given ID.
 
+Read more about [Remote Assistance](https://www.inflectra.com/Support/KnowledgeBase/KB529.aspx).
+
 ## Report
 
 ![File](./img/menu_report.png)
