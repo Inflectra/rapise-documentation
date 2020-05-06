@@ -28,7 +28,7 @@ Right click the **Object Tree** node to see:
 
 ![object tree, context menu](./img/object_tree2.png)
 
-* **Refresh** checks for new objects to display.
+* **Refresh** checks for new objects to display. Refresh also re-loads list of user-defined functions and populates 'Functions' and 'Variables' nodes.
 * **Collapse all** collapses the entire object tree.
 * **Expand all** expands the entire object tree.
 
