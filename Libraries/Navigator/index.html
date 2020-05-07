@@ -3148,11 +3148,11 @@
 </tr>
 <tr>
 <td><a href="#DoSetExpectedConfirmResult">DoSetExpectedConfirmResult</a></td>
-<td>Set boolean value to return as a result of next browser 'confirm' request.</td>
+<td>Sets boolean value to return as a result of next browser <code>confirm</code> request.</td>
 </tr>
 <tr>
 <td><a href="#DoSetExpectedPromptResult">DoSetExpectedPromptResult</a></td>
-<td>Set text to return as a result of next browser 'prompt' request.</td>
+<td>Sets text to return as a result of next browser <code>prompt</code> request.</td>
 </tr>
 <tr>
 <td><a href="#DoWaitFor">DoWaitFor</a></td>
@@ -3164,7 +3164,7 @@
 </tr>
 <tr>
 <td><a href="#Find">Find</a></td>
-<td>Returns HTMLObject wrapping DOM element for a given 'xpath'.</td>
+<td>Returns <a href="../HTMLObject/">HTMLObject</a> wrapping DOM element for a given <code>xpath</code>.</td>
 </tr>
 <tr>
 <td><a href="#GetPerformance">GetPerformance</a></td>
@@ -3262,7 +3262,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>'true' if object exists, 'false' otherwise.</p>
+<p><code>true</code> if object exists, <code>false</code> otherwise.</p>
 <p><a name="see.also.navigator.checkobjectexists"></a></p>
 <p><a name="CheckObjectVisible"></a>    </p>
 <h4 id="checkobjectvisiblexpathorobjid">CheckObjectVisible(xpathOrObjId)</h4>
@@ -3285,7 +3285,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>'true' if object is visible, 'false' otherwise.</p>
+<p><code>true</code> if object is visible, <code>false</code> otherwise.</p>
 <p><a name="see.also.navigator.checkobjectvisible"></a></p>
 <p><a name="Close"></a>    </p>
 <h4 id="closeurl">Close(url)</h4>
@@ -3303,7 +3303,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>url</td>
 <td>string</td>
-<td>Not used - can leave empty</td>
+<td>Not used - can leave empty.</td>
 </tr>
 </tbody>
 </table>
@@ -3328,16 +3328,16 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>msg</td>
 <td>string</td>
-<td>alert text. Can be exact text or regular expression.</td>
+<td>Alert text. Can be exact text or regular expression.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>'true' if browser alert had occurred, 'false' otherwise.</p>
+<p><code>true</code> if browser alert had occurred, <code>false</code> otherwise.</p>
 <p><a name="see.also.navigator.docheckalert"></a></p>
 <p><a name="DoCheckConfirmation"></a>    </p>
 <h4 id="docheckconfirmationmsg-result">DoCheckConfirmation(msg, result)</h4>
-<p>Waits until browser confirmation with a given text.  Wait timeout is 10 seconds.</p>
+<p>Waits until browser confirmation with a given text. Wait timeout is 10 seconds.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3351,21 +3351,21 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>msg</td>
 <td>string</td>
-<td>confirmation text. Can be exact text or regular expression.</td>
+<td>Confirmation text. Can be exact text or regular expression.</td>
 </tr>
 <tr>
 <td>result</td>
 <td>string</td>
-<td>Not used - can leave empty.</td>
+<td>Not used - can leave empty.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>'true' if browser confirmation popup is shown, 'false' otherwise.</p>
+<p><code>true</code> if browser confirmation popup is shown, <code>false</code> otherwise.</p>
 <p><a name="see.also.navigator.docheckconfirmation"></a></p>
 <p><a name="DoCheckPrompt"></a>    </p>
 <h4 id="docheckpromptmsg-result">DoCheckPrompt(msg, result)</h4>
-<p>Waits until browser prompt with a given text.  Wait timeout is 10 seconds.</p>
+<p>Waits until browser prompt with a given text. Wait timeout is 10 seconds.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3379,17 +3379,17 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>msg</td>
 <td>string</td>
-<td>prompt text. Can be exact text or regular expression.</td>
+<td>Prompt text. Can be exact text or regular expression.</td>
 </tr>
 <tr>
 <td>result</td>
 <td>string</td>
-<td>Not used - can leave empty.</td>
+<td>Not used - can leave empty.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>'true' if browser prompt popup is shown, 'false' otherwise.</p>
+<p><code>true</code> if browser prompt popup is shown, <code>false</code> otherwise.</p>
 <p><a name="see.also.navigator.docheckprompt"></a></p>
 <p><a name="DoClickUntilOnScreen"></a>    </p>
 <h4 id="doclickuntilonscreenxpathorobjidtoclick-xpathorobjidtoexpect-attempts-delay-x-y-forceevent">DoClickUntilOnScreen(xpathOrObjIdToClick, xpathOrObjIdToExpect, attempts, delay, x, y, forceEvent)</h4>
@@ -3493,8 +3493,8 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>true if object disappeared, otherwise - false.</p>
 <p><a name="see.also.navigator.doclickwhileonscreen"></a></p>
 <p><a name="DOMFindByAttributeValue"></a>    </p>
-<h4 id="domfindbyattributevalueattrname-attrvalue-findall-timeout-timeout">DOMFindByAttributeValue(attrName, attrValue, findAll, timeout, timeout)</h4>
-<p>Looks for a web element by specific attribute value through all frames. [attrValue] is checked agains each element's [attrName] attribute.</p>
+<h4 id="domfindbyattributevalueattrname-attrvalue-tagname-findall-timeout">DOMFindByAttributeValue(attrName, attrValue, tagName, findAll, timeout)</h4>
+<p>Looks for a web element by specific attribute value through all frames. <code>attrValue</code> is checked against each element's <code>attrName</code> attribute.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3508,32 +3508,32 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>attrName</td>
 <td>string</td>
-<td>name of the attribute to check. May be @attr or attr.<br>Optional.</td>
+<td>Name of the attribute to check. May be <code>@attr</code> or <code>attr</code>.</td>
 </tr>
 <tr>
 <td>attrValue</td>
 <td>string</td>
-<td>expected attribute value.<br>Optional.</td>
+<td>Expected attribute value.</td>
+</tr>
+<tr>
+<td>tagName</td>
+<td>string</td>
+<td>Tag name, default is * (any tag).<br>Optional.</td>
 </tr>
 <tr>
 <td>findAll</td>
-<td>string</td>
-<td>optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional.</td>
-</tr>
-<tr>
-<td>timeout</td>
 <td>boolean</td>
-<td>, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
+<td>Defines if we return just first element (<code>false</code>, default) or all found elements (<code>true</code>). Default is <code>false</code>.<br>Optional.</td>
 </tr>
 <tr>
 <td>timeout</td>
 <td>number</td>
-<td></td>
+<td>Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
+<p>array | <br>object: If <code>findAll</code> is set to <code>false</code> then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbyattributevalue"></a></p>
 <p><a name="DOMFindByName"></a>    </p>
 <h4 id="domfindbynamename-tagname-findall-timeout">DOMFindByName(name, tagName, findAll, timeout)</h4>
@@ -3551,31 +3551,31 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>name</td>
 <td>string</td>
-<td>expected element name to search for<br>Optional.</td>
+<td>Expected element name to search for.</td>
 </tr>
 <tr>
 <td>tagName</td>
-<td>Sring</td>
-<td>optional tag name, default is * (any tag)<br>Optional.</td>
+<td>string</td>
+<td>Tag name, default is * (any tag).<br>Optional.</td>
 </tr>
 <tr>
 <td>findAll</td>
 <td>boolean</td>
-<td>optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional.</td>
+<td>Defines if we return just first element (<code>false</code>, default) or all found elements (<code>true</code>). Default is <code>false</code>.<br>Optional.</td>
 </tr>
 <tr>
 <td>timeout</td>
 <td>number</td>
-<td>, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
+<td>Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
+<p>array | <br>object: If <code>findAll</code> is set to <code>false</code> then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbyname"></a></p>
 <p><a name="DOMFindByText"></a>    </p>
 <h4 id="domfindbytexttext-tagname-findall-timeout">DOMFindByText(text, tagName, findAll, timeout)</h4>
-<p>Looks for a web element by its text contents through all frames. [text] is checked agains each element text contents.</p>
+<p>Looks for a web element by its text contents through all frames. <code>text</code> is checked agains each element text contents.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3589,27 +3589,27 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>text</td>
 <td>string</td>
-<td>expected text to search for<br>Optional.</td>
+<td>Expected text to search for.</td>
 </tr>
 <tr>
 <td>tagName</td>
 <td>string</td>
-<td>optional tag name, default is * (any tag)<br>Optional.</td>
+<td>Tag name, default is * (any tag).<br>Optional.</td>
 </tr>
 <tr>
 <td>findAll</td>
 <td>boolean</td>
-<td>optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional.</td>
+<td>Defines if we return just first element (<code>false</code>, default) or all found elements (<code>true</code>). Default is <code>false</code>.<br>Optional.</td>
 </tr>
 <tr>
 <td>timeout</td>
 <td>number</td>
-<td>, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
+<td>Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
+<p>array | <br>object: If <code>findAll</code> is set to <code>false</code> then just first found <a href="../HTMLObject/">element</a> or <code>null</code> is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbytext"></a></p>
 <p><a name="DOMFindByXPath"></a>    </p>
 <h4 id="domfindbyxpathxpath-findall-timeout">DOMFindByXPath(xpath, findAll, timeout)</h4>
@@ -3627,22 +3627,22 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>xpath</td>
 <td>string</td>
-<td>local XPath to execute for each frame.<br>Optional.</td>
+<td>Local XPath to execute for each frame.</td>
 </tr>
 <tr>
 <td>findAll</td>
 <td>boolean</td>
-<td>optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional.</td>
+<td>Defines if we return just first element (<code>false</code>, default) or all found elements (<code>true</code>). Default is <code>false</code>.<br>Optional.</td>
 </tr>
 <tr>
 <td>timeout</td>
 <td>number</td>
-<td>, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
+<td>Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>array | <br>object: If [findAll] is set to false then just first found <a href="../HTMLObject/">element</a> or null is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
+<p>array | <br>object: If <code>findAll</code> is set to <code>false</code> then just first found <a href="../HTMLObject/">element</a> or <code>null</code> is returned. Else search is done for all matching elements and array of <a href="../HTMLObject/">elements</a> is returned (empty array if nothing found).</p>
 <p><a name="see.also.navigator.domfindbyxpath"></a></p>
 <p><a name="DOMQueryValue"></a>    </p>
 <h4 id="domqueryvaluexpathorobjid-query">DOMQueryValue(xpathOrObjId, query)</h4>
@@ -3695,7 +3695,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p><a name="see.also.navigator.doscreenshot"></a></p>
 <p><a name="DoSetExpectedConfirmResult"></a>    </p>
 <h4 id="dosetexpectedconfirmresultexpectedres">DoSetExpectedConfirmResult(expectedRes)</h4>
-<p>Set boolean value to return as a result of next browser 'confirm' request.</p>
+<p>Sets boolean value to return as a result of next browser <code>confirm</code> request.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3716,7 +3716,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p><a name="see.also.navigator.dosetexpectedconfirmresult"></a></p>
 <p><a name="DoSetExpectedPromptResult"></a>    </p>
 <h4 id="dosetexpectedpromptresultexpectedres">DoSetExpectedPromptResult(expectedRes)</h4>
-<p>Set text to return as a result of next browser 'prompt' request.</p>
+<p>Sets text to return as a result of next browser <code>prompt</code> request.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3788,17 +3788,17 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tr>
 <tr>
 <td>obj</td>
-<td>SeSObject</td>
+<td>HTMLObject</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
+<p>Result of code execution.</p>
 <p><a name="see.also.navigator.execjs"></a></p>
 <p><a name="Find"></a>    </p>
 <h4 id="findxpath-url-title-objinfo">Find(xpath, url, title, objInfo)</h4>
-<p>Returns HTMLObject wrapping DOM element for a given 'xpath'. HTMLObject is a 
-{SeSObject} constructed by matching one of browser rules: IEHTMLObject, MozillaHTMLObject, etc.</p>
+<p>Returns <a href="../HTMLObject/">HTMLObject</a> wrapping DOM element for a given <code>xpath</code>.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -3812,12 +3812,12 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>xpath</td>
 <td>string</td>
-<td>location path of a DOM element.</td>
+<td>Location path of a DOM element.</td>
 </tr>
 <tr>
 <td>url</td>
 <td>string</td>
-<td>URL. If new navigator is launched, the URL is used.<br>Optional.</td>
+<td>URL. If new Navigator is launched, the URL is used.<br>Optional.</td>
 </tr>
 <tr>
 <td>title</td>
@@ -3827,12 +3827,12 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <tr>
 <td>objInfo</td>
 <td>SeSObjectInfo</td>
-<td>A populated SeSObjectInfo object.</td>
+<td>A populated <code>SeSObjectInfo</code> object.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>HTMLObject wrapping DOM element for a given 'xpath', 'null' if 'xpath' is invalid.</p>
+<p><a href="../HTMLObject/">HTMLObject</a> wrapping DOM element for a given <code>xpath</code>, <code>null</code> if <code>xpath</code> is invalid.</p>
 <p><a name="see.also.navigator.find"></a></p>
 <p><a name="GetPerformance"></a>    </p>
 <h4 id="getperformanceresources-dontwritereport">GetPerformance(resources, dontWriteReport)</h4>
@@ -3921,7 +3921,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 <tr>
 <td>url</td>
 <td>string</td>
-<td>start URL for opening browser. Can be 'null'.</td>
+<td>Start URL for opening browser. Can be <code>null</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -3973,7 +3973,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p>found object, otherwise - false.</p>
+<p>found object, otherwise - <code>false</code>.</p>
 <p><a name="see.also.navigator.sesfind"></a></p>
 <p><a name="SetPosition"></a>    </p>
 <h4 id="setpositionx-y">SetPosition(x, y)</h4>
@@ -4035,7 +4035,7 @@ http://www.w3.org/TR/navigation-timing/#processing-model</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+                shortcuts = {"help": 191, "search": 83, "previous": 80, "next": 78};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
