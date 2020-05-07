@@ -49,11 +49,11 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[DOMFindByXPath](#DOMFindByXPath) | Looks for a web element by specific local XPath value through all frames. |
 |	[DOMQueryValue](#DOMQueryValue) | Executes an xpath query that may return a value of string, number or boolean type. |
 |	[DoScreenshot](#DoScreenshot) | Makes screenshot of the browser window. |
-|	[DoSetExpectedConfirmResult](#DoSetExpectedConfirmResult) | Set boolean value to return as a result of next browser 'confirm' request. |
-|	[DoSetExpectedPromptResult](#DoSetExpectedPromptResult) | Set text to return as a result of next browser 'prompt' request. |
+|	[DoSetExpectedConfirmResult](#DoSetExpectedConfirmResult) | Sets boolean value to return as a result of next browser `confirm` request. |
+|	[DoSetExpectedPromptResult](#DoSetExpectedPromptResult) | Sets text to return as a result of next browser `prompt` request. |
 |	[DoWaitFor](#DoWaitFor) | Waits for object to appear on screen. |
 |	[ExecJS](#ExecJS) | Executes given JavaScript statement in a browser and returns results. |
-|	[Find](#Find) | Returns HTMLObject wrapping DOM element for a given 'xpath'. |
+|	[Find](#Find) | Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`. |
 |	[GetPerformance](#GetPerformance) | Reads performance information from currently used browser. |
 |	[GetPosition](#GetPosition) | Gets position of the top-left corner of the browser window. |
 |	[GetSize](#GetSize) | Gets size of the browser window. |
@@ -161,7 +161,7 @@ Checks if object is found on the screen by its id or XPath.
 
 **Returns:**
 
-'true' if object exists, 'false' otherwise.
+`true` if object exists, `false` otherwise.
 
 
 
@@ -184,7 +184,7 @@ Checks if object is visible on the screen by its id or XPath.
 
 **Returns:**
 
-'true' if object is visible, 'false' otherwise.
+`true` if object is visible, `false` otherwise.
 
 
 
@@ -200,7 +200,7 @@ Closes browser. Finishes session.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	Not used - can leave empty |
+| url | string |	Not used - can leave empty. |
 
 
 
@@ -229,14 +229,14 @@ Waits until browser alert with a given text. Wait timeout is 10 seconds.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| msg | string |	alert text. Can be exact text or regular expression. |
+| msg | string |	Alert text. Can be exact text or regular expression. |
 
 
 
 
 **Returns:**
 
-'true' if browser alert had occurred, 'false' otherwise.
+`true` if browser alert had occurred, `false` otherwise.
 
 
 
@@ -245,22 +245,22 @@ Waits until browser alert with a given text. Wait timeout is 10 seconds.
 <a name="DoCheckConfirmation"></a>    
 #### DoCheckConfirmation(msg, result)
 
-Waits until browser confirmation with a given text.  Wait timeout is 10 seconds.
+Waits until browser confirmation with a given text. Wait timeout is 10 seconds.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| msg | string |	confirmation text. Can be exact text or regular expression. |
-| result | string |	Not used - can leave empty. |
+| msg | string |	Confirmation text. Can be exact text or regular expression. |
+| result | string |	Not used - can leave empty.<br>Optional. |
 
 
 
 
 **Returns:**
 
-'true' if browser confirmation popup is shown, 'false' otherwise.
+`true` if browser confirmation popup is shown, `false` otherwise.
 
 
 
@@ -269,22 +269,22 @@ Waits until browser confirmation with a given text.  Wait timeout is 10 seconds.
 <a name="DoCheckPrompt"></a>    
 #### DoCheckPrompt(msg, result)
 
-Waits until browser prompt with a given text.  Wait timeout is 10 seconds.
+Waits until browser prompt with a given text. Wait timeout is 10 seconds.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| msg | string |	prompt text. Can be exact text or regular expression. |
-| result | string |	Not used - can leave empty. |
+| msg | string |	Prompt text. Can be exact text or regular expression. |
+| result | string |	Not used - can leave empty.<br>Optional. |
 
 
 
 
 **Returns:**
 
-'true' if browser prompt popup is shown, 'false' otherwise.
+`true` if browser prompt popup is shown, `false` otherwise.
 
 
 
@@ -348,27 +348,27 @@ true if object disappeared, otherwise - false.
 <a name="see.also.navigator.doclickwhileonscreen"></a>
 
 <a name="DOMFindByAttributeValue"></a>    
-#### DOMFindByAttributeValue(attrName, attrValue, findAll, timeout, timeout)
+#### DOMFindByAttributeValue(attrName, attrValue, tagName, findAll, timeout)
 
-Looks for a web element by specific attribute value through all frames. [attrValue] is checked agains each element's [attrName] attribute.
+Looks for a web element by specific attribute value through all frames. `attrValue` is checked against each element's `attrName` attribute.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| attrName | string |	name of the attribute to check. May be @attr or attr.<br>Optional. |
-| attrValue | string |	expected attribute value.<br>Optional. |
-| findAll | string |	optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional. |
-| timeout | boolean |	, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
-| timeout | number |	 |
+| attrName | string |	Name of the attribute to check. May be `@attr` or `attr`. |
+| attrValue | string |	Expected attribute value. |
+| tagName | string |	Tag name, default is * (any tag).<br>Optional. |
+| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
+array | <br>object: If `findAll` is set to `false` then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
@@ -384,17 +384,17 @@ Looks for a web element by its name through all frames. Name is checked agains @
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	expected element name to search for<br>Optional. |
-| tagName | Sring |	optional tag name, default is * (any tag)<br>Optional. |
-| findAll | boolean |	optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional. |
-| timeout | number |	, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
+| name | string |	Expected element name to search for. |
+| tagName | string |	Tag name, default is * (any tag).<br>Optional. |
+| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
+array | <br>object: If `findAll` is set to `false` then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
@@ -403,24 +403,24 @@ array | <br>object: If [findAll] is set to false then just first found [element]
 <a name="DOMFindByText"></a>    
 #### DOMFindByText(text, tagName, findAll, timeout)
 
-Looks for a web element by its text contents through all frames. [text] is checked agains each element text contents.
+Looks for a web element by its text contents through all frames. `text` is checked agains each element text contents.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text | string |	expected text to search for<br>Optional. |
-| tagName | string |	optional tag name, default is * (any tag)<br>Optional. |
-| findAll | boolean |	optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional. |
-| timeout | number |	, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
+| text | string |	Expected text to search for. |
+| tagName | string |	Tag name, default is * (any tag).<br>Optional. |
+| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
+array | <br>object: If `findAll` is set to `false` then just first found [element](HTMLObject.md) or `null` is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
@@ -436,16 +436,16 @@ Looks for a web element by specific local XPath value through all frames. If XPa
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	local XPath to execute for each frame.<br>Optional. |
-| findAll | boolean |	optional, bool. Defines if we return just first element (false, default) or all found elements (true). Default is false.<br>Optional. |
-| timeout | number |	, number. Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
+| xpath | string |	Local XPath to execute for each frame. |
+| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
 
 **Returns:**
 
-array | <br>object: If [findAll] is set to false then just first found [element](HTMLObject.md) or null is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
+array | <br>object: If `findAll` is set to `false` then just first found [element](HTMLObject.md) or `null` is returned. Else search is done for all matching elements and array of [elements](HTMLObject.md) is returned (empty array if nothing found).
 
 
 
@@ -496,7 +496,7 @@ Makes screenshot of the browser window.
 <a name="DoSetExpectedConfirmResult"></a>    
 #### DoSetExpectedConfirmResult(expectedRes)
 
-Set boolean value to return as a result of next browser 'confirm' request.
+Sets boolean value to return as a result of next browser `confirm` request.
 
 
 **Parameters:**
@@ -514,7 +514,7 @@ Set boolean value to return as a result of next browser 'confirm' request.
 <a name="DoSetExpectedPromptResult"></a>    
 #### DoSetExpectedPromptResult(expectedRes)
 
-Set text to return as a result of next browser 'prompt' request.
+Sets text to return as a result of next browser `prompt` request.
 
 
 **Parameters:**
@@ -565,14 +565,14 @@ Executes given JavaScript statement in a browser and returns results.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | scriptText | string |	JavaScript code. |
-| obj | SeSObject |	 |
+| obj | HTMLObject |	 |
 
 
 
 
 **Returns:**
 
-
+Result of code execution.
 
 
 
@@ -581,24 +581,24 @@ Executes given JavaScript statement in a browser and returns results.
 <a name="Find"></a>    
 #### Find(xpath, url, title, objInfo)
 
-Returns HTMLObject wrapping DOM element for a given 'xpath'. HTMLObject is a {SeSObject} constructed by matching one of browser rules: IEHTMLObject, MozillaHTMLObject, etc.
+Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	location path of a DOM element. |
-| url | string |	URL. If new navigator is launched, the URL is used.<br>Optional. |
+| xpath | string |	Location path of a DOM element. |
+| url | string |	URL. If new Navigator is launched, the URL is used.<br>Optional. |
 | title | string |	The title of the HTML document that is being searched. |
-| objInfo | SeSObjectInfo |	A populated SeSObjectInfo object. |
+| objInfo | SeSObjectInfo |	A populated `SeSObjectInfo` object. |
 
 
 
 
 **Returns:**
 
-HTMLObject wrapping DOM element for a given 'xpath', 'null' if 'xpath' is invalid.
+[HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`, `null` if `xpath` is invalid.
 
 
 
@@ -710,7 +710,7 @@ Opens a browser. If URL is specified, goes to URL.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	start URL for opening browser. Can be 'null'. |
+| url | string |	Start URL for opening browser. Can be `null`. |
 
 
 
@@ -754,7 +754,7 @@ Waits for object to appear on screen. Uses test [ObjectLookup... settings](https
 
 **Returns:**
 
-found object, otherwise - false.
+found object, otherwise - `false`.
 
 
 
