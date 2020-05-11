@@ -565,7 +565,7 @@ Executes given JavaScript statement in a browser and returns results.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | scriptText | string |	JavaScript code. |
-| obj | HTMLObject |	 |
+| obj | HTMLObject |	You may pass object to use in the JavaScript statement. Reference it as `el` or `arguments[0]`.<br>Optional. |
 
 
 
