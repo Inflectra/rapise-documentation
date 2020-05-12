@@ -1,4 +1,4 @@
-site_name: Rapise
+site_name: RapiseDocs
 copyright: © Copyright 2006-2020 Inflectra Corporation, All Rights Reserved | en-US |
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
@@ -6,16 +6,64 @@ site_url: https://rapisedoc.inflectra.com/
 site_description: Rapise Test Automation platform documentation
 google_analytics: ['UA-36323832-2', 'rapisedoc.inflectra.com']
 hide_site_name: True
+
 plugins:
   - search:
       prebuild_index: True
       separator: '[^\w]+'
-theme:
-    name: mkdocs
-    custom_dir: inflectra_mkdocs
-pages:
-- 'Rapise User''s Guide':
-    - 'Company & Copyright': 'Guide/company__copyright.md'
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - admonition
+  - codehilite:
+      linenums: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+theme: 
+  name: 'material'
+  feature:
+    tabs: true
+    instant: true
+  palette:
+    primary: 'black'
+    accent: 'amber'
+  font:
+    code: 'IBM Plex Mono'
+  favicon: 'img/favicon.ico'
+  logo: 'img/logo.svg'
+  custom_dir: inflectra_mkdocs
+  
+extra_javascript:
+  - javascripts/jquery-1.10.2.min.js
+  - javascripts/annotations.js
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/inflectra'
+    - type: 'twitter'
+      link: 'https://twitter.com/inflectra'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/inflectra-corporation'
+
+nav:
+- 'User''s Guide':
     - 'About this Guide': 'Guide/about_this_guide.md'
     - 'Getting Started':
         - 'Getting Started': 'Guide/getting_started.md'
@@ -236,6 +284,7 @@ pages:
         - 'Extensibility': 'Guide/extensibility.md'
         - 'Tutorial: Custom Library': 'Guide/tutorial_custom_library.md'
     - 'Glossary': 'Guide/glossary.md'
+    - 'Company & Copyright': 'Guide/company__copyright.md'    
 - 'RVL':
       - 'About': 'Guide/visual_language.md'
       - 'Why RVL?': 'RVL/Overview.md'      
@@ -253,6 +302,7 @@ pages:
       - 'Loops': 'RVL/Loops.md'
       - 'Preamble': 'RVL/Preamble.md'
 - 'Libraries':
+    - 'Libraries': 'Libraries/libraries.md'
     #global
     - 'RVL':
       - 'RVL Object': 'Libraries/RVL.md'
@@ -307,4 +357,14 @@ pages:
     - 'VSTS/TFS Integration': '/Guide/visual_studio.md'
     - 'Robotic Process Automation': 'Manuals/Rpa.md'
     - 'JScript Language Reference': 'Guide/jscript_language_reference.md'
-- 'KB': 'Manuals/kb.md'
+- 'KB':
+    - 'Knowledge Base': 'Manuals/kb.md'
+- 'Release Notes':
+    - 'Release Notes for 6.4': 'New/6_4.md'
+    - 'Release Notes for 6.3': 'New/6_3.md'
+    - 'Release Notes for 6.2': 'New/6_2.md'
+- 'Knowledge Base': 'Manuals/kb.md'
+- 'Automation Tips': 'Intro/automation.md'
+- 'DevOps': 'Intro/devops.md'
+- 'Data-Driven Testing': 'Intro/ddt.md'
+- 'Frameworks': 'Intro/framework.md'

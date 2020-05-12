@@ -1,8 +1,7 @@
 # Knowledge Base
 
-We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
-
-## Topics
+!!! note "" 
+    We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
 ### <a onclick="return RegisterKbClick('KB518', 'JavaScript version used by Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB518.aspx">KB518</a> JavaScript version used by Rapise
 
