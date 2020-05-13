@@ -10412,7 +10412,7 @@ You do not need to record or learn this object, it is always automatically avail
 </tr>
 <tr>
 <td><a href="#DumpCmdArgsJson">DumpCmdArgsJson</a></td>
-<td></td>
+<td>Dump node.json with all arguments.</td>
 </tr>
 <tr>
 <td><a href="#EndTest">EndTest</a></td>
@@ -10424,7 +10424,7 @@ You do not need to record or learn this object, it is always automatically avail
 </tr>
 <tr>
 <td><a href="#GetParam">GetParam</a></td>
-<td></td>
+<td>Read parameter field passed into the Test function by field name.</td>
 </tr>
 <tr>
 <td><a href="#GetReportAttribute">GetReportAttribute</a></td>
@@ -10468,7 +10468,7 @@ You do not need to record or learn this object, it is always automatically avail
 </tr>
 <tr>
 <td><a href="#SuppressReport">SuppressReport</a></td>
-<td><p>In SuppressReport mode all assertions are ignored.</td>
+<td>In SuppressReport mode all assertions are ignored.</td>
 </tr>
 </tbody>
 </table>
@@ -10690,7 +10690,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 <tr>
 <td>objId</td>
-<td>string | SeSObject</td>
+<td>objectId</td>
 <td>Id of an object or SeSObject instance.</td>
 </tr>
 </tbody>
@@ -10734,6 +10734,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="see.also.tester.capturewindowimage"></a></p>
 <p><a name="DumpCmdArgsJson"></a>    </p>
 <h4 id="dumpcmdargsjsonoptnodejsonpath-mkpackagejson">DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)</h4>
+<p>Dump node.json with all arguments.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10747,7 +10748,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>optNodeJsonPath</td>
 <td>string</td>
-<td></td>
+<td>node.json path<br>Optional.</td>
 </tr>
 <tr>
 <td>mkPackageJson</td>
@@ -10784,6 +10785,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="see.also.tester.failtest"></a></p>
 <p><a name="GetParam"></a>    </p>
 <h4 id="getparamparamname-defaultvalue">GetParam(paramName, defaultValue)</h4>
+<p>Read parameter field passed into the Test function by field name.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10802,7 +10804,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>defaultValue</td>
 <td>string</td>
-<td></td>
+<td>Default value</td>
 </tr>
 </tbody>
 </table>
@@ -10834,9 +10836,9 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><strong>Returns:</strong></p>
 <p>One of: 
     Tester.Info - test is neither passed nor failed;
-    Tester.Pass - test passed;
-    Tester.Fail - test failed;
-    Tester.Unresolved - test status is unresolved, test terminated unexpectedly.</p>
+    1 - Tester.Pass - test passed;
+    0 - Tester.Fail - test failed;
+-1 - Tester.Unresolved - test status is unresolved, test terminated unexpectedly.</p>
 <p><a name="see.also.tester.getteststatus"></a></p>
 <p><a name="IgnoreStatus"></a>    </p>
 <h4 id="ignorestatusignore">IgnoreStatus(ignore)</h4>
@@ -11074,13 +11076,11 @@ the ResetReportAttribute function.</p>
 <h4 id="suppressreportsuppress">SuppressReport(suppress)</h4>
 <p>In SuppressReport mode all assertions are ignored. That means no lines are added to report and all statuses are treated as "Info".
 This mode is like IgnoreStatus mode but no status messages are added to report.</p>
-
-<pre>
-  Tester.SuppressReport(true);
-  Tester.Assert("No assertion", false); // Status of this assertion will be ignored and no record will be added to report
-  SeS('Obj1').DoClick(); // No line will be added to report and operation status will be ignored
-  Tester.SuppressReport(false);
-</pre>
+<div class="highlight"><pre><span></span><code>  <span class="nx">Tester</span><span class="p">.</span><span class="nx">SuppressReport</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+  <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;No assertion&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span> <span class="c1">// Status of this assertion will be ignored and no record will be added to report</span>
+  <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj1&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span> <span class="c1">// No line will be added to report and operation status will be ignored</span>
+  <span class="nx">Tester</span><span class="p">.</span><span class="nx">SuppressReport</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</code></pre></div>
 
 <p><strong>Parameters:</strong></p>
 <table>
