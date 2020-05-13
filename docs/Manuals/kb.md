@@ -1,7 +1,43 @@
 # Knowledge Base
 
-!!! note "" 
+!!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
+
+### <a onclick="return RegisterKbClick('KB533', 'Make screenshots on failure only')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB533.aspx">KB533</a> Make screenshots on failure only
+
+Automatic screenshots on every test step may occupy too much space. Learn how to make  a screenshot on failure only.
+
+### <a onclick="return RegisterKbClick('KB532', 'How to set path for local browser and mobile profiles')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB532.aspx">KB532</a> How to set path for local browser and mobile profiles
+
+Since version 6.3 Rapise has support for local browser and mobile profiles. Using it you may package browser profiles along with tests. What if you want to reuse browser profiles between different projects? Or have sets of profiles for different situations? You may now set path to profile directory using a special global variable.  Supported in Rapise 6.4+
+
+### <a onclick="return RegisterKbClick('KB531', 'Handling Grouped Data in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB531.aspx">KB531</a> Handling Grouped Data in Rapise
+
+Sometimes we need to process data in groups or even in hierarchical way. Here we will show how to make it using plain table and loop in RVL.
+
+### <a onclick="return RegisterKbClick('KB530', 'Why Does Rapise Use DoXXXX Naming for Methods')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB530.aspx">KB530</a> Why Does Rapise Use DoXXXX Naming for Methods
+
+A customer asked us why Rapise uses Pascal Case names for the various operations, functions and properties, as well as the reason why operations are prefixed with a "Do" action name.
+
+### <a onclick="return RegisterKbClick('KB529', 'Using GoToMeeting for Support Session')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB529.aspx">KB529</a> Using GoToMeeting for Support Session
+
+Learn how to connect to a support session and how to enable Rapise Expert to remotely control your Rapise instance.
+
+### <a onclick="return RegisterKbClick('KB528', 'Import JUnit XML Report into Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB528.aspx">KB528</a> Import JUnit XML Report into Rapise
+
+Some unit testing tools produce reports in JUnit XML format. Here we show how to import it into Rapise test report.
+
+### <a onclick="return RegisterKbClick('KB526', 'How to disable recording URLs')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB526.aspx">KB526</a> How to disable recording URLs
+
+When you do recording of test steps for a Web application - Rapise by default captures page URLs and stores them in the object repository. Learn how to  disable URL recording from this article. Requires Rapise 6.4+
+
+### <a onclick="return RegisterKbClick('KB522', 'Windows Calculator')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB522.aspx">KB522</a> Windows Calculator
+
+For Rapise training purposes we may need a simple desktop application that can be executed on any Windows version. What can be simpler than Windows Calculator?
+
+### <a onclick="return RegisterKbClick('KB519', 'Reading values from .properties files in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB519.aspx">KB519</a> Reading values from .properties files in Rapise
+
+.properties is a file format mainly used in Java related technologies to store the configurable values. Here we show how to work with it in Rapise.
 
 ### <a onclick="return RegisterKbClick('KB518', 'JavaScript version used by Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB518.aspx">KB518</a> JavaScript version used by Rapise
 
@@ -801,7 +837,7 @@ This articles describes how you can use the Navigator.CheckObjectExists(...) act
 
 ### <a onclick="return RegisterKbClick('KB184', 'What is the purpose of the Tester.EndTest() Function?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB184.aspx">KB184</a> What is the purpose of the Tester.EndTest() Function?
 
-The Tester.EndTest() function in Rapise is describes as: Marks end of a currently executed test. Calculates test results and performs finalization of test execution. We have found that some of our customers have been confused as what the purpose of this function is.
+The Tester.EndTest() function in Rapise is described as: Marks end of a currently executed test. Calculates test results and performs finalization of test execution. We have found that some of our customers have been confused as what the purpose of this function is.
 
 ### <a onclick="return RegisterKbClick('KB183', 'Desktop Application Testing - Choosing the Right Library')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB183.aspx">KB183</a> Desktop Application Testing - Choosing the Right Library
 
