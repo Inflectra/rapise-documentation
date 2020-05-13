@@ -40,10 +40,10 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[CaptureDesktopImage](#CaptureDesktopImage) | Captures image of the desktop and adds it to the report. |
 |	[CaptureObjectImage](#CaptureObjectImage) | Captures image of an object and adds it to the report. |
 |	[CaptureWindowImage](#CaptureWindowImage) | Captures image of an application window matched by title and class and adds it to the report. |
-|	[DumpCmdArgsJson](#DumpCmdArgsJson) |  |
+|	[DumpCmdArgsJson](#DumpCmdArgsJson) | Dump node.json with all arguments. |
 |	[EndTest](#EndTest) | Marks end of a currently executed test. |
 |	[FailTest](#FailTest) | Stops test execution and sets it's status to failed. |
-|	[GetParam](#GetParam) |  |
+|	[GetParam](#GetParam) | Read parameter field passed into the Test function by field name. |
 |	[GetReportAttribute](#GetReportAttribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
 |	[GetTestStatus](#GetTestStatus) | Gets status of currently executed test. |
 |	[IgnoreStatus](#IgnoreStatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
@@ -54,7 +54,7 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[PushReportAttribute](#PushReportAttribute) | <p>Maintains "stacked" attributes. |
 |	[ResetReportAttribute](#ResetReportAttribute) | Removes report attribute previously set by SetReportAttribute. |
 |	[SetReportAttribute](#SetReportAttribute) | Set persistent attribute. |
-|	[SuppressReport](#SuppressReport) | <p>In SuppressReport mode all assertions are ignored. |
+|	[SuppressReport](#SuppressReport) | In SuppressReport mode all assertions are ignored. |
 
 
 
@@ -241,7 +241,7 @@ Captures image of an object and adds it to the report.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Image title for the report. |
-| objId | string \| SeSObject |	Id of an object or SeSObject instance. |
+| objId | objectId |	Id of an object or SeSObject instance. |
 
 
 
@@ -273,14 +273,14 @@ Captures image of an application window matched by title and class and adds it t
 <a name="DumpCmdArgsJson"></a>    
 #### DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)
 
-
+Dump node.json with all arguments.
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| optNodeJsonPath | string |	 |
+| optNodeJsonPath | string |	node.json path<br>Optional. |
 | mkPackageJson | bool |	 |
 
 
@@ -321,7 +321,7 @@ Stops test execution and sets it's status to failed.
 <a name="GetParam"></a>    
 #### GetParam(paramName, defaultValue)
 
-
+Read parameter field passed into the Test function by field name.
 
 
 **Parameters:**
@@ -329,7 +329,7 @@ Stops test execution and sets it's status to failed.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | paramName | string |	 |
-| defaultValue | string |	 |
+| defaultValue | string |	Default value |
 
 
 
@@ -367,9 +367,9 @@ Gets status of currently executed test.
 
 One of: 
 	Tester.Info - test is neither passed nor failed;
-	Tester.Pass - test passed;
-	Tester.Fail - test failed;
-	Tester.Unresolved - test status is unresolved, test terminated unexpectedly.
+	1 - Tester.Pass - test passed;
+	0 - Tester.Fail - test failed;
+-1 - Tester.Unresolved - test status is unresolved, test terminated unexpectedly.
 
 
 
@@ -571,15 +571,15 @@ the ResetReportAttribute function.
 <a name="SuppressReport"></a>    
 #### SuppressReport(suppress)
 
-<p>In SuppressReport mode all assertions are ignored. That means no lines are added to report and all statuses are treated as "Info".
-This mode is like IgnoreStatus mode but no status messages are added to report.</p>
+In SuppressReport mode all assertions are ignored. That means no lines are added to report and all statuses are treated as "Info".
+This mode is like IgnoreStatus mode but no status messages are added to report.
 
-<pre>
+```javascript
   Tester.SuppressReport(true);
   Tester.Assert("No assertion", false); // Status of this assertion will be ignored and no record will be added to report
   SeS('Obj1').DoClick(); // No line will be added to report and operation status will be ignored
   Tester.SuppressReport(false);
-</pre>
+```
 
 
 **Parameters:**
