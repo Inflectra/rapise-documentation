@@ -3,6 +3,10 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB537', 'Using Extra Columns in RVL to control screenshots')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB537.aspx">KB537</a> Using Extra Columns in RVL to control screenshots
+
+Sometimes we need more fine-grained control over screenshots. Here we describe the way of using H column for defining which actions will have what kind of screenshot captured.
+
 ### <a onclick="return RegisterKbClick('KB533', 'Make screenshots on failure only')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB533.aspx">KB533</a> Make screenshots on failure only
 
 Automatic screenshots on every test step may occupy too much space. Learn how to make  a screenshot on failure only.
