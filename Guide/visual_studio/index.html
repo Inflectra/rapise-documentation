@@ -10047,7 +10047,7 @@
               
                 
                 
-                <h1 id="visual-studio">Visual Studio</h1>
+                <h1 id="visual-studio">Visual Studio<a class="headerlink" href="#visual-studio" title="Permanent link">&para;</a></h1>
 <p>This section describes how to execute Rapise tests using the <a href="https://github.com/microsoft/testfx">Microsoft Test Framework</a>.</p>
 <p>You can execute tests with</p>
 <ul>
@@ -10055,7 +10055,7 @@
 <li><a href="https://en.wikipedia.org/wiki/Team_Foundation_Server">Visual Studio Team Services / Team Foundation Server</a></li>
 <li><a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a></li>
 </ul>
-<h2 id="unit-test-mapping">Unit Test Mapping</h2>
+<h2 id="unit-test-mapping">Unit Test Mapping<a class="headerlink" href="#unit-test-mapping" title="Permanent link">&para;</a></h2>
 <p>Rapise integrates with Visual Studio at <a href="https://www.visualstudio.com/en-us/docs/test/developer-testing/getting-started/getting-started-with-developer-testing">Unit Test</a> level.</p>
 <p>Create a Unit Test project in Visual Studio, add a unit test and a test method. In the References section add the DLL:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">c:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll</span>
@@ -10079,7 +10079,7 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<h2 id="parameters">Parameters</h2>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <p>To pass parameters to Rapise test create <a href="https://msdn.microsoft.com/en-us/library/jj635153.aspx">.runsettings</a> file. Each parameter with name starting with <code>g_</code> will be passed to Rapise via command line.</p>
 <p>Here is an example of selecting a browser to use for execution of cross-browser tests:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
@@ -10091,7 +10091,7 @@
 <span class="nt">&lt;/RunSettings&gt;</span>
 </code></pre></div>
 
-<h2 id="visual-studio-test-explorer">Visual Studio Test Explorer</h2>
+<h2 id="visual-studio-test-explorer">Visual Studio Test Explorer<a class="headerlink" href="#visual-studio-test-explorer" title="Permanent link">&para;</a></h2>
 <p>Once Rapise tests are mapped to unit tests one can use Visual Studio Test Explorer to run tests and analyze results.</p>
 <p><img alt="TestExplorer" src="../img/visual_studio1.png" /></p>
 <p>Press Output link (highlighted) to view test run results.</p>
@@ -10102,7 +10102,7 @@
 </ul>
 <p>One can apply <code>.runsettings</code> file to use for execution:</p>
 <p><img alt="RunSettings" src="../img/visual_studio3.png" /></p>
-<h2 id="vsts-tfs">VSTS / TFS</h2>
+<h2 id="vsts-tfs">VSTS / TFS<a class="headerlink" href="#vsts-tfs" title="Permanent link">&para;</a></h2>
 <p>In Visual Studio Team Services one can <a href="https://www.visualstudio.com/en-us/docs/test/continuous-testing/test-build">run unit tests after making a build</a>.</p>
 <p><img alt="BuildsVSTS" src="../img/visual_studio4.png" /></p>
 <p>Build definition contains predefined steps:</p>
@@ -10124,11 +10124,11 @@
 <li><strong>Run Settings File</strong> is a link to <a href="https://msdn.microsoft.com/en-us/library/jj635153.aspx">.runsettings</a> file.</li>
 <li>In <strong>Override TestRun Parameters</strong> one can override values of the parameters in <code>.runsettings</code> file.</li>
 </ul>
-<h3 id="windows-agent-for-test-execution">Windows Agent for Test Execution</h3>
+<h3 id="windows-agent-for-test-execution">Windows Agent for Test Execution<a class="headerlink" href="#windows-agent-for-test-execution" title="Permanent link">&para;</a></h3>
 <p>VSTS can run tests in a hosted environment, but it does not contain Rapise. So most likely you will need to run tests inside your computer network. Download and connect <a href="https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows">Windows Agent</a>.
 One can configure several agent pools to run tests in different environments:</p>
 <p><img alt="AgentPools" src="../img/visual_studio7.png" /></p>
-<h2 id="azure-devops">Azure DevOps</h2>
+<h2 id="azure-devops">Azure DevOps<a class="headerlink" href="#azure-devops" title="Permanent link">&para;</a></h2>
 <p>On September 10, 2018, Microsoft <a href="https://docs.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops">renamed</a> Visual Studio Team Services (VSTS) to Azure DevOps Services.</p>
 <p>Execution of Rapise tests in Azure DevOps looks a bit different from former versions of VSTS, though most of the concepts are still the same.</p>
 <p>Trigger execution using a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops">Visual Studio Test task</a>. You can add it to a build or release pipeline.</p>
@@ -10195,16 +10195,16 @@ One can configure several agent pools to run tests in different environments:</p
 <ul>
 <li><strong>Settings File</strong> is a link to <a href="https://msdn.microsoft.com/en-us/library/jj635153.aspx">.runsettings</a> file.</li>
 </ul>
-<h3 id="self-hosted-windows-agents">Self-hosted Windows Agents</h3>
+<h3 id="self-hosted-windows-agents">Self-hosted Windows Agents<a class="headerlink" href="#self-hosted-windows-agents" title="Permanent link">&para;</a></h3>
 <p>Azure DevOps can run tests in a hosted environment, but it does not contain Rapise. So most likely you will need to run tests inside your computer network. Download and connect <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a>.</p>
 <p>Reference the agent pool with self-hosted agents in your <code>azure-pipelines.yml</code> via <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;tabs=schema#pool">pool tag</a>.</p>
-<h3 id="logs-and-reports">Logs and Reports</h3>
+<h3 id="logs-and-reports">Logs and Reports<a class="headerlink" href="#logs-and-reports" title="Permanent link">&para;</a></h3>
 <p>After every execution of the Visual Studio Test task you will get logs and reports.</p>
 <p><img alt="Azure Logs" src="../img/azure_exec_log.png" /></p>
 <p><img alt="Azure Report" src="../img/azure_execution_summary.png" /></p>
 <p>You can also see an individual report of a failed test.</p>
 <p><img alt="Azure Details" src="../img/azure_execution_detail.png" /></p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing">Visual Studio Test Explorer</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Team_Foundation_Server">Visual Studio Team System / Team Foundation Server</a></li>

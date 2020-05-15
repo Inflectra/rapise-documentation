@@ -9977,10 +9977,10 @@
               
                 
                 
-                <h1 id="azure-devops-integration">Azure DevOps Integration</h1>
+                <h1 id="azure-devops-integration">Azure DevOps Integration<a class="headerlink" href="#azure-devops-integration" title="Permanent link">&para;</a></h1>
 <p>From this topic you will learn how to run Rapise tests with <a href="https://node-tap.org/">Node-Tap</a> and <a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a>.</p>
-<h2 id="node-tap">Node-Tap</h2>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="node-tap">Node-Tap<a class="headerlink" href="#node-tap" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>Download and install <a href="https://nodejs.org">Node.js</a>. Open command prompt and run the following commands to make sure you have Node.js and <a href="https://www.npmjs.com">npm</a> installed:</p>
 <p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;node --version
 v10.16.3
@@ -10005,7 +10005,7 @@ Configure system variable <code>NODE_PATH</code> and set it to <code>node_module
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\n</span>ode_modules
 </code></pre></div>
 
-<h2 id="test-framework">Test Framework</h2>
+<h2 id="test-framework">Test Framework<a class="headerlink" href="#test-framework" title="Permanent link">&para;</a></h2>
 <p>As a starting point you may use <a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/AzureDevOpsFriendlyArchhitecture">sample framework</a> we published on GitHub.</p>
 <p>The root folder of the framework contains:</p>
 <ul>
@@ -10042,7 +10042,7 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
 </code></pre></div>
 
 <p>There is also <code>tap-parallel-not-ok</code> in <code>tests</code> folder that instructs Node-Tap to run tests sequentially.</p>
-<h2 id="run-tests-with-tap">Run Tests with Tap</h2>
+<h2 id="run-tests-with-tap">Run Tests with Tap<a class="headerlink" href="#run-tests-with-tap" title="Permanent link">&para;</a></h2>
 <p>To run tests on a local machine open command prompt in the root folder of the framework and execute:</p>
 <p><div class="highlight"><pre><span></span><code>tap
 </code></pre></div>
@@ -10054,7 +10054,7 @@ You should see tests running:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QEH5a9vqymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h2 id="azure-devops-pipeline-v1">Azure DevOps Pipeline v1</h2>
+<h2 id="azure-devops-pipeline-v1">Azure DevOps Pipeline v1<a class="headerlink" href="#azure-devops-pipeline-v1" title="Permanent link">&para;</a></h2>
 <p>To run tests in Azure DevOps you need to <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops">configure a pipeline</a>. Here is the template to run Rapise tests:</p>
 <p><strong>azure-pipelines.yml</strong>
 <div class="highlight"><pre><span></span><code><span class="c1"># Starter pipeline</span>
@@ -10120,7 +10120,7 @@ You should see tests running:
 </blockquote>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/niRPLRMgenI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h2 id="azure-devops-pipeline-v2">Azure DevOps Pipeline v2</h2>
+<h2 id="azure-devops-pipeline-v2">Azure DevOps Pipeline v2<a class="headerlink" href="#azure-devops-pipeline-v2" title="Permanent link">&para;</a></h2>
 <p>If you do not want each step of a Rapise test to be reported as test case in Azure DevOps use modified pipeline version:</p>
 <p><strong>azure-pipelines-summary.yml</strong>
 <div class="highlight"><pre><span></span><code><span class="c1"># Starter pipeline</span>

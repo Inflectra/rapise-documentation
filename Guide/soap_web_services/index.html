@@ -9981,13 +9981,13 @@
               
                 
                 
-                <h1 id="testing-soap-web-services">Testing SOAP Web Services</h1>
-<h2 id="what-is-soap-and-what-is-a-soap-web-service">What is SOAP and what is a SOAP web service?</h2>
+                <h1 id="testing-soap-web-services">Testing SOAP Web Services<a class="headerlink" href="#testing-soap-web-services" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-soap-and-what-is-a-soap-web-service">What is SOAP and what is a SOAP web service?<a class="headerlink" href="#what-is-soap-and-what-is-a-soap-web-service" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web services make use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.</p>
 <p>SOAP web services are fully self-descripting, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.</p>
 </blockquote>
-<h2 id="how-does-rapise-test-soap-web-services">How does Rapise test SOAP web services?</h2>
+<h2 id="how-does-rapise-test-soap-web-services">How does Rapise test SOAP web services?<a class="headerlink" href="#how-does-rapise-test-soap-web-services" title="Permanent link">&para;</a></h2>
 <p>Creating a SOAP web service test in Rapise consists of the following steps:</p>
 <ol>
 <li>
@@ -10000,7 +10000,7 @@
 <p>Generating the <a href="../scripting/">test script</a> in Javascript that uses the learned Rapise web service objects.</p>
 </li>
 </ol>
-<h2 id="rapise-soap-testing-studio">Rapise SOAP Testing Studio</h2>
+<h2 id="rapise-soap-testing-studio">Rapise SOAP Testing Studio<a class="headerlink" href="#rapise-soap-testing-studio" title="Permanent link">&para;</a></h2>
 <p>When you add a SOAP web service to your Rapise test project, you get a new SOAP definition file (<code>.soap</code>) that will store all of the test invocations against a specific SOAP web service:</p>
 <p><img alt="soap definition editor" src="../img/soap_web_services1.png" /></p>
 <p>The SOAP test studio (illustrated above) works by connecting to the WSDL location that you specify in the <strong>Endpoint</strong> part of the <a href="../toolbar_soap/">Toolbar</a>:</p>
@@ -10016,7 +10016,7 @@
 <p><img alt="Invoke Result" src="../img/soap_web_services_invokeres.png" /></p>
 <p>You can also click on the <strong>Request/Response</strong> tab to view the raw SOAP XML that was sent to and from the server. This is very useful when debugging a service that does not work as expected.</p>
 <p><img alt="Request/Response Tab" src="../img/soap_web_services_requestresponse.png" /></p>
-<h2 id="web-service-object-recognition">Web Service Object Recognition</h2>
+<h2 id="web-service-object-recognition">Web Service Object Recognition<a class="headerlink" href="#web-service-object-recognition" title="Permanent link">&para;</a></h2>
 <p>Unlike the REST web service testing editor, each SOAP endpoint will generate a single Rapise SOAP object in the object tree:
 <img alt="soap_object_tree" src="../img/soap_web_services6.png" /></p>
 <p>The object WebServicesSOAP maps to a corresponding <code>.soap</code> file in the Rapise project. Such an object can be used for all of the web service requests in that file:</p>
@@ -10029,7 +10029,7 @@
 </code></pre></div>
 
 <p>In the example above, the same object "WebServicesSOAP" is being used with <code>DoExecute</code> with different SOAP methods passed as the first parameter (<strong>"Connection_Authenticate"</strong>, <strong>"Book_Retrieve"</strong>, <strong>"Book_Insert"</strong>).</p>
-<h2 id="generating-rapise-soap-test-scripts">Generating Rapise SOAP Test Scripts</h2>
+<h2 id="generating-rapise-soap-test-scripts">Generating Rapise SOAP Test Scripts<a class="headerlink" href="#generating-rapise-soap-test-scripts" title="Permanent link">&para;</a></h2>
 <p>To save time, Rapise can generate the test scripts code automatically for you (instead of having to write it by hand). To do that, after you have verified that a particular method works as expected, when you click the <strong>Invoke</strong> command, then click the <code>Record</code> button to record the step, and if you want to verify the data returned, also click on the <code>Verify</code> button. That will generate the following:</p>
 <p><img alt="SOAP Script Steps" src="../img/soap_web_services7.png" /></p>
 <p>The steps recorded will be in <strong>bold</strong> type if they include a verification step, and will be in normal type if they are simply invoked with no verification. When you click the <code>Create Script</code> button, the following will be generated:</p>
@@ -10040,7 +10040,7 @@
 <span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Connection_Disconnect&#39;</span><span class="p">,</span> <span class="p">{});</span>
 </code></pre></div>
 
-<h2 id="playback-of-soap-tests">Playback of SOAP Tests</h2>
+<h2 id="playback-of-soap-tests">Playback of SOAP Tests<a class="headerlink" href="#playback-of-soap-tests" title="Permanent link">&para;</a></h2>
 <p>Once you have created your SOAP web service tests, you can use the standard <a href="../playback/">Playback</a> functionality in Rapise to execute your test and display the report:
 <img alt="soap_playback" src="../img/soap_web_services8.png" /></p>
                 

@@ -10021,13 +10021,13 @@
               
                 
                 
-                <h1 id="web-testing-using-xpath-queries">Web Testing - Using XPath Queries</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="web-testing-using-xpath-queries">Web Testing - Using XPath Queries<a class="headerlink" href="#web-testing-using-xpath-queries" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>When testing web applications you will explicitly or implicitly use <strong>XPath</strong> expressions to query the browser <strong>DOM</strong> for elements based on the scenario under test. This section explains how XPath queries are used in Rapise and how to make your browser testing more flexible and adaptive to changes in the application you test.</p>
-<h2 id="xpath-fundamentals">XPath Fundamentals</h2>
+<h2 id="xpath-fundamentals">XPath Fundamentals<a class="headerlink" href="#xpath-fundamentals" title="Permanent link">&para;</a></h2>
 <p>XPath uses path expressions to select nodes in an <strong>XML</strong> document such as <strong>HTML</strong>. The node is selected by following a path or steps.</p>
 <p>Refer to <a href="https://www.w3schools.com/xml/xpath_intro.asp">XPATH Tutorial</a> for more details.</p>
-<h2 id="rapise-xpath-extensions">Rapise XPath Extensions</h2>
+<h2 id="rapise-xpath-extensions">Rapise XPath Extensions<a class="headerlink" href="#rapise-xpath-extensions" title="Permanent link">&para;</a></h2>
 <p>Web pages sometimes use <strong>HTML</strong> frames. The XPath works inside the frame contents. Rapise has a special syntax (that is not part of standard XPath) to combine multiple XPath statements into a single line:</p>
 <div class="highlight"><pre><span></span><code>//frame[@name=&#39;main&#39;]@@@//a[3]
 </code></pre></div>
@@ -10038,16 +10038,16 @@
 </code></pre></div>
 
 <p>Then the frame's contents are searched for the third <code>&lt;a&gt;</code> element (i.e. 3<sup>rd</sup> link on a page).</p>
-<h2 id="automatic-xpath-generation-on-record-and-learn">Automatic XPath Generation on Record and Learn</h2>
+<h2 id="automatic-xpath-generation-on-record-and-learn">Automatic XPath Generation on Record and Learn<a class="headerlink" href="#automatic-xpath-generation-on-record-and-learn" title="Permanent link">&para;</a></h2>
 <p>When you do a <a href="../recording/">recording</a> session, interact with web elements or <a href="../object_learning/">learn</a> them - Rapise generates XPath <a href="https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx">locators</a> for the elements. You can view XPath of an object in the property grid:</p>
 <p><img alt="xpath locator" src="../img/xpath_locator.png" /></p>
-<h2 id="using-web-spy">Using Web Spy</h2>
+<h2 id="using-web-spy">Using Web Spy<a class="headerlink" href="#using-web-spy" title="Permanent link">&para;</a></h2>
 <p>In some advanced cases you may need to construct XPath query manually. For this purpose we recommend using the <a href="../web_spy/">Web Spy</a> tool:</p>
 <p><img alt="xpath edit" src="../img/xpath1.png" /></p>
 <p>If you enter in the XPath query at the top, when you click <strong>Test</strong> it will display all of the DOM elements that match the query:</p>
 <p><img alt="xpath results" src="../img/xpath2.png" /></p>
 <p>You can now refine the query to only find the item you want to test.</p>
-<h3 id="learning-objects-in-web-spy">Learning Objects in Web Spy</h3>
+<h3 id="learning-objects-in-web-spy">Learning Objects in Web Spy<a class="headerlink" href="#learning-objects-in-web-spy" title="Permanent link">&para;</a></h3>
 <p>When you have created the query in the Web Spy that returns the HTML element that you were expecting, you can click on the <strong>Learn</strong> button in the Web Spy toolbar to learn that element. What this will do is create a new Rapise object in the <a href="../object_tree/">Object Tree</a> that maps to this specific XPath.</p>
 <p>For example, if you want to find a specific book in a grid of books</p>
 <p><img alt="book table" src="../img/xpath_book_table.png" /></p>
@@ -10056,7 +10056,7 @@
 </code></pre></div>
 
 <p>Then learn this object as <strong>Oliver_Twist</strong> so that you can access it in your code as <code>SeS("Oliver_Twist")</code>. Every time you call a function on <strong>Oliver_Twist</strong>, Rapise will use the learned XPath expression and use that to evaluate which HTML element in the web page to access.</p>
-<h2 id="dynamic-queries">Dynamic Queries</h2>
+<h2 id="dynamic-queries">Dynamic Queries<a class="headerlink" href="#dynamic-queries" title="Permanent link">&para;</a></h2>
 <p>In addition to learning objects based on specific XPath, there is <a href="/Libraries/HTMLObject/#DoDOMQueryXPath">HTMLObject.DoDOMQueryXPath</a> action that can be used to query for elements in the web page:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;MainContent_grdBooks&#39;</span><span class="p">).</span><span class="nx">DoDOMQueryXPath</span><span class="p">(</span><span class="s1">&#39;.//td[text()=&quot;Oliver Twist&quot;]&#39;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
@@ -10064,7 +10064,7 @@
 
 <p>This will dynamically query for any HTML element that is a child of the learned <strong>MainContent_grdBooks</strong> object that matches the XPath. In this example it will look for any table cell that has the content of the book name.</p>
 <p>You can also find an object dynamically without having any object in the object tree. To do this use <a href="/Libraries/Navigator/#Find">Navigator.Find</a> action.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB282.aspx">KB282</a> Elastic XPATH Expressions</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB363.aspx">KB363</a> How to define a profile for Web Application in Rapise</li>

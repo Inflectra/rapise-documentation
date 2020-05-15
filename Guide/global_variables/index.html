@@ -9993,13 +9993,13 @@
               
                 
                 
-                <h1 id="global-variables">Global Variables</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="global-variables">Global Variables<a class="headerlink" href="#global-variables" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p><strong>Global variables</strong> are variables that can be accessed anywhere in the script. </p>
 <p>There are restrictions (specific to Rapise) as to where they may be placed in the test script. These restrictions do not apply to any additional script files you write and then call from your test script.</p>
 <p>You should not place variables in the <code>Main.js</code>. Use <code>User.js</code> or any other <code>Common</code> file for that.</p>
-<h2 id="usage">Usage</h2>
-<h3 id="using-userjs">Using User.js</h3>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="using-userjs">Using User.js<a class="headerlink" href="#using-userjs" title="Permanent link">&para;</a></h3>
 <p>Any variable defined in the <code>User.js</code> is assumed to be a global variable.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Note, the variable should be declared outside the scope of any function to be global</span>
 <span class="kd">var</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
@@ -10010,7 +10010,7 @@
 <span class="p">...</span>
 </code></pre></div>
 
-<h3 id="using-commonjs">Using Common.js</h3>
+<h3 id="using-commonjs">Using Common.js<a class="headerlink" href="#using-commonjs" title="Permanent link">&para;</a></h3>
 <p>You may want to have a common file with global variable re-used across different tests. In this case you need to include the <code>Common.js</code> in the root of the <code>User.js</code> (it is not recommended to do include from within the <code>Test()</code> function).</p>
 <p><code>User.js</code>:
 <div class="highlight"><pre><span></span><code>// Include Common.js
@@ -10023,7 +10023,7 @@ eval(File.Include(`%WORKDIR%/Common.js`))
 <div class="highlight"><pre><span></span><code><span class="c1">// Global variable lazy declaration:</span>
 <span class="k">if</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="nx">g_myGlobalVar</span><span class="p">)</span><span class="o">==</span><span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
 </code></pre></div></p>
-<h3 id="using-testinit">Using TestInit</h3>
+<h3 id="using-testinit">Using TestInit<a class="headerlink" href="#using-testinit" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Note:</strong> This is an older way of defining local variables. Since Rapise 3 new way is preferred.</p>
 </blockquote>
@@ -10037,7 +10037,7 @@ eval(File.Include(`%WORKDIR%/Common.js`))
 
 <p>The keyword <strong>var</strong> gives variables local scope. A variable initialized without the keyword var will have global scope.</p>
 <p>The <strong>Script Recorder</strong> knows about the following functions: <strong>Test(), TestInit(), TestPrepare()</strong>, and <strong>TestFinish()</strong>. Do not declare global variables outside of one of the preceding four functions. The Script Recorder alters the script each time it is run, and may erase your changes.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li>See <a href="../multiple_recordings/">Making Multiple Recordings</a> for details on what effect the script recorder will have on your test script.</li>
 <li>For details on the structure of the test script, see <a href="../understanding_the_script/">Understanding the Script</a>.</li>

@@ -9949,24 +9949,24 @@
               
                 
                 
-                <h1 id="rvl-sheets">RVL Sheets</h1>
+                <h1 id="rvl-sheets">RVL Sheets<a class="headerlink" href="#rvl-sheets" title="Permanent link">&para;</a></h1>
 <p>RVL script may contain one or more sheets distributed over one or more workbooks.</p>
 <p><img alt="Sheets" src="../img/Sheets.png" /></p>
 <p>Sheet is an atomic building block for implementing test frameworks and sharing logic.</p>
 <p>For example, there may be a Sheet called <code>Login</code> and it may be re-used by <strong>CreateNewBook</strong>, <strong>CreateExistingBook</strong>  and other test scenarios that require <strong>Login</strong> logic.</p>
 <p>Default sheet name is <code>RVL</code>. You may rename it. You may add more sheets.</p>
 <p>RVL sheet is executable when it have 7 pre-defined <a href="../Columns/">Columns</a>. The workbook may contain both executable and data sheets.</p>
-<h2 id="calling-sheets">Calling Sheets</h2>
+<h2 id="calling-sheets">Calling Sheets<a class="headerlink" href="#calling-sheets" title="Permanent link">&para;</a></h2>
 <p>It is possible to do calls between scripts using <a href="../../Libraries/RVL/#doplayscript">RVL.DoPlayScript</a> and <a href="../../Libraries/RVL/#doplaysheet">RVL.DoPlaySheet</a>.</p>
-<h2 id="passing-parameters">Passing Parameters</h2>
+<h2 id="passing-parameters">Passing Parameters<a class="headerlink" href="#passing-parameters" title="Permanent link">&para;</a></h2>
 <p>It is possible to pass parameters between sheets. See <a href="../RVL_DoPlay/#passing-input-parameters">Passing Input Parameters</a></p>
-<h2 id="passing-maps">Passing Maps</h2>
+<h2 id="passing-maps">Passing Maps<a class="headerlink" href="#passing-maps" title="Permanent link">&para;</a></h2>
 <p>You may pass a <a href="../Maps/">Map</a> between sheets as  <a href="../RVL_DoPlay/#passing-input-parameters">input parameters</a>.</p>
 <p>For example, here we pass a map <code>FullLoginData</code>:</p>
 <p><img alt="Pass Map" src="../img/RVL_Sheets_PassMaps1.png" /></p>
 <p>as a value to override the map <code>UserLogins</code> on the <code>Login</code> sheet:</p>
 <p><img alt="Pass Map" src="../img/RVL_Sheets_PassMaps2.png" /></p>
-<h2 id="rvl-file">RVL File</h2>
+<h2 id="rvl-file">RVL File<a class="headerlink" href="#rvl-file" title="Permanent link">&para;</a></h2>
 <p>Default file format for RVL scripts is an Excel workbook. It makes it easier to combine data with script logic. Any RVL file has extension <code>.rvl.xlsx</code> and may be open in <strong>MS Excel</strong> directly.</p>
                 
                   

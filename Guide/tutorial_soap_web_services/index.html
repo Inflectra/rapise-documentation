@@ -9979,15 +9979,15 @@
               
                 
                 
-                <h1 id="tutorial-soap-web-services">Tutorial: SOAP Web Services</h1>
+                <h1 id="tutorial-soap-web-services">Tutorial: SOAP Web Services<a class="headerlink" href="#tutorial-soap-web-services" title="Permanent link">&para;</a></h1>
 <p>In this section you shall learn how to test a SOAP web services API using Rapise. We shall be using a demo application called <strong>Library Information System</strong> that has a dummy SOAP web service API available for learning purposes. You can access this sample application at <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a>, and its SOAP web service API can be found at:</p>
 <p><a href="http://www.libraryinformationsystem.org/Services/SoapService.aspx">http://www.libraryinformationsystem.org/Services/SoapService.aspx</a></p>
-<h2 id="what-is-soap-and-what-is-a-soap-web-service">What is SOAP and what is a SOAP web service?</h2>
+<h2 id="what-is-soap-and-what-is-a-soap-web-service">What is SOAP and what is a SOAP web service?<a class="headerlink" href="#what-is-soap-and-what-is-a-soap-web-service" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web servicesmake use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.</p>
 <p>SOAP web services are fully self-descripting, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.</p>
 </blockquote>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Creating a SOAP web service test in Rapise consists of the following
 steps:</p>
 <ol>
@@ -10002,7 +10002,7 @@ steps:</p>
 </li>
 </ol>
 <p>We shall discuss each of these steps in turn.</p>
-<h3 id="1-inspecting-the-soap-wsdl-endpoint">1. Inspecting the SOAP WSDL Endpoint</h3>
+<h3 id="1-inspecting-the-soap-wsdl-endpoint">1. Inspecting the SOAP WSDL Endpoint<a class="headerlink" href="#1-inspecting-the-soap-wsdl-endpoint" title="Permanent link">&para;</a></h3>
 <p>Create a new test in Rapise called <code>MySoapTest1.sstest</code>. For methodology, choose <strong>Basic: Windows Desktop Application (Windows Native, .NET, Java, WPF etc)</strong> and Rapise will create a new blank test project.</p>
 <p><img alt="Test Type" src="../img/tutorial_web_services_rest_testtype.png" /></p>
 <p>Language selection prompt is shown. For Web Services it is recommended to use <code>JavaScript</code>. </p>
@@ -10047,7 +10047,7 @@ explorer:</p>
 </li>
 </ul>
 <p>Each one will involve calling a specific SOAP operation with some input parameters, viewing the data returned and adding a verification step if appropriate.</p>
-<h2 id="2-invoking-the-soap-actions">2. Invoking the SOAP Actions</h2>
+<h2 id="2-invoking-the-soap-actions">2. Invoking the SOAP Actions<a class="headerlink" href="#2-invoking-the-soap-actions" title="Permanent link">&para;</a></h2>
 <p>Starting with the <strong>Connection_Authenticate</strong> operation that we had selected, click on the two Input parameters in turn and enter values:</p>
 <ul>
 <li><strong>userName</strong> = librarian</li>
@@ -10212,7 +10212,7 @@ recorded in the <strong>SOAP Script Steps</strong> box:</p>
 <p>Now that we have recorded the operations and verifications, we can
 proceed to generate the test script in Rapise that will regression test
 the web service.</p>
-<h2 id="3-generating-the-rapise-test-script">3. Generating the Rapise Test Script</h2>
+<h2 id="3-generating-the-rapise-test-script">3. Generating the Rapise Test Script<a class="headerlink" href="#3-generating-the-rapise-test-script" title="Permanent link">&para;</a></h2>
 <p>In the SOAP Script Steps toolbar, click on the <code>Create Script</code> button to generate the initial test script:</p>
 <p><img alt="Create Script" src="../img/tutorial_soap_web_services12.png" /></p>
 <p>Click on the <code>Test</code> shortcut in the main toolbar, and Rapise will display the <code>Main.js</code> file.</p>

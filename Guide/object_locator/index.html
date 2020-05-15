@@ -10007,8 +10007,8 @@
               
                 
                 
-                <h1 id="object-locator">Object Locator</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="object-locator">Object Locator<a class="headerlink" href="#object-locator" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>Object locators are created during <a href="../recording/">Recording</a>/<a href="../object_learning/">Learning</a> and used during <a href="../playback/">Playback</a> to identify <a href="../object_learning/">learned objects</a> and <a href="../simulated_objects/">simulated objects</a>. There are many types of locators.</p>
 <p>In most libraries (Web, Desktop, Mobile) only one locator is generated when you record or learn an object.</p>
 <p>Legacy <a href="../../Libraries/ses_lib_generic/"><strong>Generic</strong></a> library supports 4 different locators added each time you learn or record object:</p>
@@ -10018,10 +10018,10 @@
 <li><strong>LocationRect</strong>: This locator stores screen coordinates.</li>
 <li><strong>Ordinal</strong>: This locator creates an array of object name/object class combinations.  Each object is assigned an index in  the array.</li>
 </ul>
-<h2 id="usage">Usage</h2>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>The locator for the selected object is shown in the <a href="../properties/">Properties</a> view:</p>
 <p><img alt="properties dialog" src="../img/properties1.png" /></p>
-<h3 id="how-locators-are-stored">How Locators are Stored</h3>
+<h3 id="how-locators-are-stored">How Locators are Stored<a class="headerlink" href="#how-locators-are-stored" title="Permanent link">&para;</a></h3>
 <p>The locator for each object is specified in <code>saved_script_objects</code> array in <strong>Objects.js</strong> of a test. Locator information is stored in <code>locations</code> array of each object.</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Simulated&quot;</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">&quot;locations&quot;</span><span class="o">:</span> <span class="p">[</span>
@@ -10069,16 +10069,16 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<h2 id="locator-parameters">Locator Parameters</h2>
+<h2 id="locator-parameters">Locator Parameters<a class="headerlink" href="#locator-parameters" title="Permanent link">&para;</a></h2>
 <p>If a piece of information in the locator matches a piece of object info (<code>object_name</code>, <code>object_class</code>, <code>object_role</code>, <code>object_text</code>) then it is stored in the locator as <code>param:object_info</code>.  For example:</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;object_name&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_name&quot;</span><span class="p">,</span>
 <span class="s2">&quot;object_class&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_class&quot;</span><span class="p">,</span>
 <span class="s2">&quot;object_role&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_role&quot;</span>
 </code></pre></div>
 
-<h2 id="over-riding-locator-parameters-rvl">Over-riding Locator Parameters (RVL)</h2>
+<h2 id="over-riding-locator-parameters-rvl">Over-riding Locator Parameters (RVL)<a class="headerlink" href="#over-riding-locator-parameters-rvl" title="Permanent link">&para;</a></h2>
 <p>See also <a href="../../Libraries/RVL/#locatoropts">RVL.SetLocatorOpts</a> and this <a href="https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx">KB Article</a> for more detailed explanation and example of overriding locator parameters in RVL.</p>
-<h2 id="over-riding-locator-parameters-js">Over-riding Locator Parameters (JS)</h2>
+<h2 id="over-riding-locator-parameters-js">Over-riding Locator Parameters (JS)<a class="headerlink" href="#over-riding-locator-parameters-js" title="Permanent link">&para;</a></h2>
 <p>You can over-ride the information used to locate your object at runtime.  Normally, to refer to an object, you use the SeS function:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username&#39;</span><span class="p">)</span>
 </code></pre></div>
@@ -10103,7 +10103,7 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../object_learning/">Object Learning</a></li>
 <li><a href="../playback/">Playback</a></li>

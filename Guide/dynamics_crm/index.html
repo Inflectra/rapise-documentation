@@ -10075,20 +10075,20 @@
               
                 
                 
-                <h1 id="dynamics-crm365-for-sales">Dynamics CRM/365 for Sales</h1>
-<h2 id="overview">Overview</h2>
+                <h1 id="dynamics-crm365-for-sales">Dynamics CRM/365 for Sales<a class="headerlink" href="#dynamics-crm365-for-sales" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p><strong>Microsoft Dynamics CRM</strong> is a customer relationship management application from Microsoft, that provides sales, service, and marketing capabilities. Microsoft sells Dynamics CRM separately from the ERP products. CRM is available either as on-premises software or as a software-as-a-service offering called <strong>Microsoft Dynamics CRM Online</strong>. Rapise can be used to test installations of Dynamics CRM both on-premise and online.</p>
 <p>Latest version of Dynamics CRM is called <strong>Dynamics 365 for Sales</strong>. It is also supported. Rapise can handle both <strong>Web</strong> and <strong>Unified Interface</strong>.</p>
-<h2 id="dynamics-365-for-sales-unified-interface">Dynamics 365 for Sales - Unified Interface</h2>
+<h2 id="dynamics-365-for-sales-unified-interface">Dynamics 365 for Sales - Unified Interface<a class="headerlink" href="#dynamics-365-for-sales-unified-interface" title="Permanent link">&para;</a></h2>
 <p><img alt="Dynamics 365 for Sales Unified Interface" src="../img/dynamics_crm_unified_interface.png" /></p>
-<h2 id="legacy">Legacy</h2>
-<h3 id="dynamics-365-for-sales-web-interface">Dynamics 365 for Sales - Web Interface</h3>
+<h2 id="legacy">Legacy<a class="headerlink" href="#legacy" title="Permanent link">&para;</a></h2>
+<h3 id="dynamics-365-for-sales-web-interface">Dynamics 365 for Sales - Web Interface<a class="headerlink" href="#dynamics-365-for-sales-web-interface" title="Permanent link">&para;</a></h3>
 <p><img alt="Dynamics 365 for Sales Old UI" src="../img/dynamics_crm_web.png" /></p>
-<h3 id="dynamics-crm-on-premise">Dynamics CRM On-Premise</h3>
+<h3 id="dynamics-crm-on-premise">Dynamics CRM On-Premise<a class="headerlink" href="#dynamics-crm-on-premise" title="Permanent link">&para;</a></h3>
 <p><img alt="CRM2013-Dashboard" src="../img/dynamics_crm1.png" /></p>
-<h3 id="dynamics-crm-online">Dynamics CRM Online</h3>
+<h3 id="dynamics-crm-online">Dynamics CRM Online<a class="headerlink" href="#dynamics-crm-online" title="Permanent link">&para;</a></h3>
 <p><img alt="dynamics-crm-online" src="../img/dynamics_crm2.png" /></p>
-<h2 id="recording-a-test">Recording a Test</h2>
+<h2 id="recording-a-test">Recording a Test<a class="headerlink" href="#recording-a-test" title="Permanent link">&para;</a></h2>
 <p>All  versions of Dynamics CRM are completely web-based and use a web browser to access the user interface. Therefore when recording a test using Rapise, you use the same web browser libraries that you use to record other <a href="../web_testing/">web tests</a>:</p>
 <ul>
 <li>Most of the Dynamics CRM user interface will be tested using the <strong>standard browser library</strong> for your web browser of choice (e.g. Internet Explorer HTML, Firefox HTML, and Chrome HTML).</li>
@@ -10099,22 +10099,22 @@
 </code></pre></div>
 
 <p>If you don’t see the <strong>DomDynamicsCrm</strong> library listed in your test, then you will need to <a href="../change_the_libraries_being_use/">manually add it</a>.</p>
-<h2 id="recording-and-learning-objects">Recording and Learning Objects</h2>
+<h2 id="recording-and-learning-objects">Recording and Learning Objects<a class="headerlink" href="#recording-and-learning-objects" title="Permanent link">&para;</a></h2>
 <p>During recording while you interact with Dynamics CRM/365, Rapise captures objects and displays them in the <a href="../object_learning/">object tree</a>:</p>
 <p><img alt="dynamics-crm-objects" src="../img/dynamics_crm3.png" /></p>
 <p>Some of these objects will be standard HTML DOM objects (e.g. text field):</p>
 <p><img alt="dynamics-crm-object-html" src="../img/dynamics_crm4.png" /></p>
 <p>and others will be specific to Dynamics CRM/365:</p>
 <p><img alt="dynamics-crm-object-specialized" src="../img/dynamics_crm5.png" /></p>
-<h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects</h2>
+<h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
 <p>The following unique objects are available within Dynamics CRM/365 that Rapise has special support for:</p>
-<h3 id="dynamics-crm365-grid">Dynamics CRM/365 Grid</h3>
+<h3 id="dynamics-crm365-grid">Dynamics CRM/365 Grid<a class="headerlink" href="#dynamics-crm365-grid" title="Permanent link">&para;</a></h3>
 <p>One of the the most important UI elements inside Dynamics CRM/365 is the sortable, filterable grid:</p>
 <p><img alt="dynamics-crm-grid" src="../img/dynamics_crm6.png" /></p>
 <p>The Dynamics CRM/365 Grid is used in lots of different screens inside Dynamics CRM/365 (e.g. Leads, Accounts, etc.) and it is very common to need to interact with it in test scripts.</p>
 <p>When you record operations on such a grid or simply learn the entire grid using <code>CTRL+2</code> you will learn the <a href="/Libraries/DomDynamicsCrmGrid/">DomDynamicsCrmGrid</a> or <a href="/Libraries/DomDynamicsCrmUnifiedInterfaceGrid/">DomDynamicsCrmUnifiedInterfaceGrid</a> object:</p>
 <p><img alt="dynamics-crm-grid-methods" src="../img/dynamics_crm7.png" /></p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../microsoft_dynamics/">Microsoft Dynamics</a></li>
 <li><a href="https://www.inflectra.com/support/knowledgebase/kb277.aspx">Tips &amp; Tricks for Rapise and Dynamics 365 for Sales (Web Interface)</a></li>

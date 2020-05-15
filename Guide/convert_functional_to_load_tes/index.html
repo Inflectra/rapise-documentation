@@ -10077,32 +10077,32 @@
               
                 
                 
-                <h1 id="convert-functional-to-load-test">Convert Functional to Load Test</h1>
+                <h1 id="convert-functional-to-load-test">Convert Functional to Load Test<a class="headerlink" href="#convert-functional-to-load-test" title="Permanent link">&para;</a></h1>
 <p>This aspect of the Rapise-NeoLoad integration describes the process for taking an existing test script written in Rapise and converting it seamlessly into a performance scenario in the NeoLoad load testing system. This feature allows you to convert Rapise tests for HTTP/HTTPS based applications into protocol-based NeoLoad scripts that can be executed by a large number of <strong>virtual users (VUs)</strong> that simulate a load on the application being tested.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>In order to use the integration with NeoLoad, you need to have the following:</p>
 <ul>
 <li>Rapise 5.0 or above</li>
 <li>NeoLoad 5.1 or above</li>
 </ul>
 <p>Both tools must be installed on the same Windows host. NeoLoad must have a license with Recording API enabled. The default trial version does not have this capability. The Rapise test needs to be testing an application that uses HTTP/HTTPs or other NeoLoad supported protocols.</p>
-<h2 id="the-steps-for-converting-a-rapise-test">The Steps for Converting a Rapise Test</h2>
-<h2 id="launch-neoload">Launch NeoLoad</h2>
+<h2 id="the-steps-for-converting-a-rapise-test">The Steps for Converting a Rapise Test<a class="headerlink" href="#the-steps-for-converting-a-rapise-test" title="Permanent link">&para;</a></h2>
+<h2 id="launch-neoload">Launch NeoLoad<a class="headerlink" href="#launch-neoload" title="Permanent link">&para;</a></h2>
 <p>Open NeoLoad via the Start menu or using a command line:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">c:\Program Files (x86)\NeoLoad 5.1\bin\NeoLoadGUI.exe</span>
 </code></pre></div>
 </td></tr></table>
 
 <p><img alt="neoload ui" src="../img/convert_functional_to_load_tes1.png" /></p>
-<h2 id="create-or-open-existing-load-project">Create or Open Existing Load Project</h2>
+<h2 id="create-or-open-existing-load-project">Create or Open Existing Load Project<a class="headerlink" href="#create-or-open-existing-load-project" title="Permanent link">&para;</a></h2>
 <p>Use menu <code>File &gt; New</code> or <code>File &gt; Open</code>.</p>
 <p><img alt="neoload project" src="../img/convert_functional_to_load_tes2.png" /></p>
-<h2 id="open-a-test-script-in-rapise-to-be-converted">Open a Test Script in Rapise to be Converted</h2>
+<h2 id="open-a-test-script-in-rapise-to-be-converted">Open a Test Script in Rapise to be Converted<a class="headerlink" href="#open-a-test-script-in-rapise-to-be-converted" title="Permanent link">&para;</a></h2>
 <p>Inside Rapise, open the script you want to convert. Make sure the application it is testing is a web-based application using the HTTP/HTTPS protocols:</p>
 <p><img alt="rapise test" src="../img/convert_functional_to_load_tes3.png" /></p>
 <p>Ensure that the Internet Explorer HTML library is set in the test parameters.</p>
 <p><img alt="ie browser" src="../img/convert_functional_to_load_tes4.png" /></p>
-<h2 id="open-conversion-dialog">Open Conversion Dialog</h2>
+<h2 id="open-conversion-dialog">Open Conversion Dialog<a class="headerlink" href="#open-conversion-dialog" title="Permanent link">&para;</a></h2>
 <p>From the main menu select <code>Tools &gt; Convert to NeoLoad</code>.</p>
 <p>This will display the <a href="../neoload_convertor_dialog/">NeoLoad convertor dialog</a>. On this dialog box, set the following parameters:</p>
 <p><img alt="neoload-conversion-dialog" src="../img/convert_functional_to_load_tes6.png" /></p>
@@ -10129,23 +10129,23 @@
 <p>When you check this box, Rapise tells NeoLoad to scan the protocol traffic to look for known dynamic parameters (e.g. Session IDs, ASP.NET ViewState) that change on each HTTP request and need to be parameterized by NeoLoad to ensure the performance scripts are robust and well-defined (v.s. having a hardcoded Session ID).</p>
 <p>In the NeoLoad tree it looks this way:</p>
 <p><img alt="neoload tree" src="../img/convert_functional_to_load_tes7.png" /></p>
-<h2 id="press-convert-button">Press Convert Button</h2>
+<h2 id="press-convert-button">Press Convert Button<a class="headerlink" href="#press-convert-button" title="Permanent link">&para;</a></h2>
 <p>After pressing Convert button Rapise will launch the test and NeoLoad will start capturing network traffic. When test playback is finished
 you’ll see the dialog:</p>
 <p><img alt="convertion completed" src="../img/convert_functional_to_load_tes8.png" /></p>
-<h2 id="troubleshooting">Troubleshooting</h2>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <p>During conversion you may get a few error messages. This section provides a list of common messages and their solution.</p>
-<h3 id="unable-to-connect-to-the-remote-server">Unable to connect to the remote server</h3>
+<h3 id="unable-to-connect-to-the-remote-server">Unable to connect to the remote server<a class="headerlink" href="#unable-to-connect-to-the-remote-server" title="Permanent link">&para;</a></h3>
 <p><img alt="clip0053" src="../img/convert_functional_to_load_tes9.png" /></p>
 <p>If you get this message, check that NeoLoad is running. Usually this message means that NeoLoad is not started or another application is using port 7400, preventing NeoLoad binding to it.</p>
-<h3 id="no-project-is-open">No project is open</h3>
+<h3 id="no-project-is-open">No project is open<a class="headerlink" href="#no-project-is-open" title="Permanent link">&para;</a></h3>
 <p><img alt="clip0054" src="../img/convert_functional_to_load_tes10.png" /></p>
 <p>If you get this message, check that a project is opened in NeoLoad.</p>
-<h3 id="neoload-is-not-ready-for-recording">NeoLoad is not ready for recording</h3>
+<h3 id="neoload-is-not-ready-for-recording">NeoLoad is not ready for recording<a class="headerlink" href="#neoload-is-not-ready-for-recording" title="Permanent link">&para;</a></h3>
 <p><img alt="clip0055" src="../img/convert_functional_to_load_tes11.png" /></p>
 <p>If you get this message, it means that NeoLoad is in the recording state. To fix the issue, you need to stop the existing recording in
 NeoLoad.</p>
-<h2 id="neoload-integration-settings">NeoLoad Integration Settings</h2>
+<h2 id="neoload-integration-settings">NeoLoad Integration Settings<a class="headerlink" href="#neoload-integration-settings" title="Permanent link">&para;</a></h2>
 <p>There are a few global options for the Rapise – NeoLoad integration. To reach them use menu <code>Settings &gt; NeoLoad Integration</code>.</p>
 <p><img alt="clip0057" src="../img/convert_functional_to_load_tes13.png" /></p>
 <p>This is the <a href="../neoload_settings_dialog/">NeoLoad Settings</a> dialog. Normally there is no any reason to change these settings, but for

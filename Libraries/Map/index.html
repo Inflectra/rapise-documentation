@@ -10189,82 +10189,82 @@
               
                 
                 
-                <h1 id="map-object">Map Object</h1>
+                <h1 id="map-object">Map Object<a class="headerlink" href="#map-object" title="Permanent link">&para;</a></h1>
 <p>Represents an RVL Map object and all its operations. The same operations are used by the RVL runtime implicitly to read the cell value or iterate through the Map.</p>
-<h2 id="actions">Actions</h2>
-<h2 id="domovetorow">DoMoveToRow</h2>
+<h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
+<h2 id="domovetorow">DoMoveToRow<a class="headerlink" href="#domovetorow" title="Permanent link">&para;</a></h2>
 <p>**<code>DoMoveToRow(/**Number*/ colInd)</code> **</p>
 <p>Moves to a given row.</p>
 <p><code>rowInd</code> Row index (or name) to set active.</p>
-<h2 id="dosequential">DoSequential</h2>
+<h2 id="dosequential">DoSequential<a class="headerlink" href="#dosequential" title="Permanent link">&para;</a></h2>
 <p>**<code>DoSequential()</code> **</p>
 <p>Advances to the next row in the range. The range is either set by SetRange or it is the default range that includes all rows on the sheet except first row which is considered to contain column names. When the end of the range is reached, DoSequential rewinds back to the first row in the range and returns 'false'.</p>
 <p>Returns 'false' if being called when active row is the last row or the spreadsheet is not attached, 'true' - otherwise.</p>
-<h2 id="domovetocolumn">DoMoveToColumn</h2>
+<h2 id="domovetocolumn">DoMoveToColumn<a class="headerlink" href="#domovetocolumn" title="Permanent link">&para;</a></h2>
 <p>**<code>DoMoveToColumn(/**Number|String*/colInd)</code> **</p>
 <p>Moves to a given column.</p>
 <p><code>colInd</code> Column index (or name) to set active.</p>
-<h2 id="domovetofirstcolumn">DoMoveToFirstColumn</h2>
+<h2 id="domovetofirstcolumn">DoMoveToFirstColumn<a class="headerlink" href="#domovetofirstcolumn" title="Permanent link">&para;</a></h2>
 <p>**<code>DoMoveToFirstColumn()</code> **</p>
 <p>Moves to a first column in the map.</p>
-<h2 id="domovetofirstrow">DoMoveToFirstRow</h2>
+<h2 id="domovetofirstrow">DoMoveToFirstRow<a class="headerlink" href="#domovetofirstrow" title="Permanent link">&para;</a></h2>
 <p>**<code>DoMoveToFirstRow()</code> **</p>
 <p>Moves to a first row in the map.</p>
-<h2 id="domovetolastcolumn">DoMoveToLastColumn</h2>
+<h2 id="domovetolastcolumn">DoMoveToLastColumn<a class="headerlink" href="#domovetolastcolumn" title="Permanent link">&para;</a></h2>
 <p>**<code>DoMoveToLastColumn()</code> **</p>
 <p>Moves to a last column in the map.</p>
-<h2 id="domovetolastrow">DoMoveToLastRow</h2>
+<h2 id="domovetolastrow">DoMoveToLastRow<a class="headerlink" href="#domovetolastrow" title="Permanent link">&para;</a></h2>
 <p>**<code>DoMoveToLastRow()</code> **</p>
 <p>Moves to a last row in the map.</p>
-<h2 id="properties">Properties</h2>
-<h2 id="cell">Cell</h2>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h2 id="cell">Cell<a class="headerlink" href="#cell" title="Permanent link">&para;</a></h2>
 <p>** <code>GetCell(/**Number|String*/ columnId, /**Number*/ rowId)</code> **</p>
 <p>Gets a cell value by its coordinates. It returns the current cell value after DoSequental or DoRandom if the parameters are not set.</p>
 <p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
 <p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
-<h2 id="columncell">ColumnCell</h2>
+<h2 id="columncell">ColumnCell<a class="headerlink" href="#columncell" title="Permanent link">&para;</a></h2>
 <p>** <code>GetColumnCell(/**Number*/ rowId)</code> **</p>
 <p>Gets cell value by its coordinates. Returns current cell value after DoSequental. If not set ActiveColumn is used.</p>
 <p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
-<h2 id="columncount">ColumnCount</h2>
+<h2 id="columncount">ColumnCount<a class="headerlink" href="#columncount" title="Permanent link">&para;</a></h2>
 <p>** <code>GetColumnCount()</code> **</p>
 <p>Gets columns count.</p>
 <p>Returns Number of columns in the spreadsheet.</p>
-<h2 id="columnindexbyname">ColumnIndexByName</h2>
+<h2 id="columnindexbyname">ColumnIndexByName<a class="headerlink" href="#columnindexbyname" title="Permanent link">&para;</a></h2>
 <p>** <code>GetColumnIndexByName(/**String*/name)</code> **</p>
 <p>Gets column name.</p>
 <p><code>name</code> Column name.</p>
 <p>Returns column index if found, or -1.</p>
-<h2 id="columnname">ColumnName</h2>
+<h2 id="columnname">ColumnName<a class="headerlink" href="#columnname" title="Permanent link">&para;</a></h2>
 <p>** <code>GetColumnName(/**Number*/ ind)</code> **</p>
 <p>Gets column name.</p>
 <p><code>ind</code> Column index.</p>
 <p>Returns Name of column in the spreadsheet.</p>
-<h2 id="rowcount">RowCount</h2>
+<h2 id="rowcount">RowCount<a class="headerlink" href="#rowcount" title="Permanent link">&para;</a></h2>
 <p>** <code>GetRowCount()</code> **</p>
 <p>Gets rows count.</p>
 <p>Returns Number of rows in the spreadsheet.</p>
-<h2 id="rowindexbyname">RowIndexByName</h2>
+<h2 id="rowindexbyname">RowIndexByName<a class="headerlink" href="#rowindexbyname" title="Permanent link">&para;</a></h2>
 <p>** <code>GetRowIndexByName(/**String*/name)</code> **</p>
 <p>Gets row name.</p>
 <p><code>name</code> Row name.</p>
 <p>Returns row index if found, or -1.</p>
-<h2 id="currentrowindex">CurrentRowIndex</h2>
+<h2 id="currentrowindex">CurrentRowIndex<a class="headerlink" href="#currentrowindex" title="Permanent link">&para;</a></h2>
 <p>** <code>GetCurrentRowIndex()</code> **</p>
 <p>Get zero based current row index.</p>
-<h2 id="eof">EOF</h2>
+<h2 id="eof">EOF<a class="headerlink" href="#eof" title="Permanent link">&para;</a></h2>
 <p>** <code>GetEOF()</code> **</p>
 <p>Is current position is beyond the map boundaries range.</p>
-<h2 id="rowcell">RowCell</h2>
+<h2 id="rowcell">RowCell<a class="headerlink" href="#rowcell" title="Permanent link">&para;</a></h2>
 <p>** <code>GetRowCell(/**Number|String*/ columnId)</code> **</p>
 <p>Gets cell value for current row. Returns current cell value after DoSequental. ActiveRow is used.</p>
 <p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
-<h2 id="rowname">RowName</h2>
+<h2 id="rowname">RowName<a class="headerlink" href="#rowname" title="Permanent link">&para;</a></h2>
 <p>** <code>GetRowName(/**Number*/ ind)</code> **</p>
 <p>Gets row name.</p>
 <p><code>ind</code> Row index.</p>
 <p>Returns Name of row in the map.</p>
-<h2 id="value">Value</h2>
+<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
 <p>** <code>GetValue(/**Number|String*/ rowOrColumnNameOrId)</code> **</p>
 <p>Gets cell value by its name or id. Returns current cell value after DoSequental. If it is Rows or Table then the parameter needs to be a column name or index, and ActiveRow is used. If it is Columns then the parameter needs to be a row name or index, and ActiveRow is used.</p>
 <p><code>[rowOrColumnNameOrId]</code> Row or Column index or Name.</p>

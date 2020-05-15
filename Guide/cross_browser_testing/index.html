@@ -9953,12 +9953,12 @@
               
                 
                 
-                <h1 id="cross-browser-testing">Cross Browser Testing</h1>
-<h2 id="choosing-the-browser-when-creating-a-test">Choosing the Browser When Creating a Test</h2>
+                <h1 id="cross-browser-testing">Cross Browser Testing<a class="headerlink" href="#cross-browser-testing" title="Permanent link">&para;</a></h1>
+<h2 id="choosing-the-browser-when-creating-a-test">Choosing the Browser When Creating a Test<a class="headerlink" href="#choosing-the-browser-when-creating-a-test" title="Permanent link">&para;</a></h2>
 <p>When you first create a Rapise test with the <strong>Methodology</strong> set to <strong>Web</strong> you will be asked to choose the initial <a href="../browser_settings/">web browser profile</a>:</p>
 <p><img alt="new_test_browser_profile_select" src="../img/cross_browser_testing1.png" /></p>
 <p>You can run your recording in a different browser than the one in which it was recorded.</p>
-<h2 id="selecting-a-new-playback-browser">Selecting a new Playback Browser</h2>
+<h2 id="selecting-a-new-playback-browser">Selecting a new Playback Browser<a class="headerlink" href="#selecting-a-new-playback-browser" title="Permanent link">&para;</a></h2>
 <p>In the right top corner of Rapise window expand the dropdown with available browser.</p>
 <p><img alt="available browsers" src="../img/cross_browser_testing2.png" /></p>
 <p>Change the browser to either one of the <a href="../browser_settings/">native browsers</a> such as <strong>Firefox</strong>, <strong>Internet Explorer</strong> or <strong>Chrome</strong>, or one of the <a href="../selenium_webdriver/">Selenium WebDriver</a> based browser profiles.</p>
@@ -9967,10 +9967,10 @@
 <blockquote>
 <p><strong>Note:</strong> in Rapise 6.3+ you may define <a href="/Guide/browser_settings/#local-browser-profiles">local profiles</a>.</p>
 </blockquote>
-<h2 id="playback-in-multiple-browsers-spiratest">Playback in Multiple Browsers - SpiraTest</h2>
+<h2 id="playback-in-multiple-browsers-spiratest">Playback in Multiple Browsers - SpiraTest<a class="headerlink" href="#playback-in-multiple-browsers-spiratest" title="Permanent link">&para;</a></h2>
 <p>Executing a test in multiple browsers is slightly more complicated. We recommend that you use <strong>SpiraTest Test Sets</strong> where you may define multiple test cases pointing to the same Test with a different <strong>g_browserLibrary</strong> parameter value.</p>
 <p>See the <a href="../spiratest_integration/">SpiraTest Integration</a> topic for detailed information on using Rapise with SpiraTest.</p>
-<h2 id="playback-in-multiple-browsers-doinvoketest">Playback in Multiple Browsers - DoInvokeTest</h2>
+<h2 id="playback-in-multiple-browsers-doinvoketest">Playback in Multiple Browsers - DoInvokeTest<a class="headerlink" href="#playback-in-multiple-browsers-doinvoketest" title="Permanent link">&para;</a></h2>
 <p>To iterate through browsers in Rapise create a new test with <strong>Web</strong> methodology. Open <code>Main.js</code> file of the test and modify <code>g_load_libraries</code> line as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Internet Explorer HTML&quot;</span><span class="p">,</span> <span class="s2">&quot;Firefox HTML&quot;</span><span class="p">,</span> <span class="s2">&quot;Chrome HTML&quot;</span><span class="p">];</span>
 </code></pre></div>

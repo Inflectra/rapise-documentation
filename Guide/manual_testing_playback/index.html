@@ -9995,15 +9995,15 @@
               
                 
                 
-                <h1 id="manual-testing-playback">Manual Testing: Playback</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="manual-testing-playback">Manual Testing: Playback<a class="headerlink" href="#manual-testing-playback" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>As described in the main <a href="../manual_testing/">Manual Testing</a> topic, sometimes it is not possible to automate the testing of a specific application, however Rapise is also a powerful manual testing tool that lets you execute manual test cases stored in <a href="../spiratest_integration/">SpiraTest</a>.</p>
 <p>The advantage of using Rapise to execute the manual tests (instead of just using SpiraTest itself) is that Rapise can display the <a href="../manual_playback/">execution window</a> as a small minimizable dialog box that gets rid of the need to have two screens (one to display the test and one to test the application). Also Rapise provides superior <a href="../image_capture/">image manipulation tools</a> over those available in a web application.</p>
-<h2 id="step-1-open-the-manual-test">Step 1 - Open the Manual Test</h2>
+<h2 id="step-1-open-the-manual-test">Step 1 - Open the Manual Test<a class="headerlink" href="#step-1-open-the-manual-test" title="Permanent link">&para;</a></h2>
 <p>Using the MS-Paint example manual test that <a href="./">we created previously</a>, open up the test in Rapise. Click on the <code>Tools &gt; Manual Steps</code> menu and you should see the list of test steps:</p>
 <p><img alt="manual_recording_7" src="../img/manual_testing_playback1.png" /></p>
 <p>Now that we have the test opened, we can start the playback.</p>
-<h2 id="step-2-executing-the-manual-test">Step 2 - Executing the Manual Test</h2>
+<h2 id="step-2-executing-the-manual-test">Step 2 - Executing the Manual Test<a class="headerlink" href="#step-2-executing-the-manual-test" title="Permanent link">&para;</a></h2>
 <p>Choose the Release from the list of those available in the project:</p>
 <p><img alt="manual_playback_1" src="../img/manual_testing_playback2.png" /></p>
 <p>Then click on the '<strong>Execute'</strong> icon to start manual test execution. That will bring up the <a href="../manual_playback/">manual playback</a> screen:</p>
@@ -10012,7 +10012,7 @@
 <p>Once you get to Step 7, we shall pretend that MS Paint failed to display the text correctly. Enter in the Actual Result a message to that effect:</p>
 <p><img alt="manual_playback_3" src="../img/manual_testing_playback4.png" /></p>
 <p>Next we shall attach a screenshot of what actually happened and log a test failure and associated incident / defect.</p>
-<h2 id="step-3-capturing-and-annotating-a-screenshot">Step 3 - Capturing and Annotating a Screenshot</h2>
+<h2 id="step-3-capturing-and-annotating-a-screenshot">Step 3 - Capturing and Annotating a Screenshot<a class="headerlink" href="#step-3-capturing-and-annotating-a-screenshot" title="Permanent link">&para;</a></h2>
 <p>Click on the <strong>Image icon</strong> in the rich text editor associated with the <strong>Actual Result</strong> text box. That will bring up the <a href="../image_capture/">Drawing Tools</a> screen that asks you to draw a rectangle to select a portion of the current screen to capture:</p>
 <p><img alt="manual_playback_4" src="../img/manual_testing_playback5.png" /></p>
 <p>If the MS Paint application is not in the foreground, just click ESC on your keyboard to abort, rearrange your windows and then try again.
@@ -10023,14 +10023,14 @@ Once you have selected the rectangle, the drawing tools will display your select
 <p>In the example above, we added a red ellipse, arrow and text to mark the issue that was seen in MS-Paint. Once you are happy with your image, click <strong>Accept</strong> and the image will be included in the test Actual Result:</p>
 <p><img alt="manual_playback_7" src="../img/manual_testing_playback8.png" /></p>
 <p>Now we can <a href="../incident_logging/">log an incident</a> that is associated with this test failure.</p>
-<h2 id="step-4-logging-the-incident-defect">Step 4 - Logging the Incident / Defect</h2>
+<h2 id="step-4-logging-the-incident-defect">Step 4 - Logging the Incident / Defect<a class="headerlink" href="#step-4-logging-the-incident-defect" title="Permanent link">&para;</a></h2>
 <p>Click on the '<strong>Log Incident</strong>' button to display the new incident entry screen:</p>
 <p><img alt="manual_playback_8" src="../img/manual_testing_playback9.png" /></p>
 <p>Choose the <strong>type</strong> of incident, enter the <strong>name</strong>, <strong>description</strong>, <strong>priority, detected release</strong> and any other required fields as defined by the workflow in the project that you are connected to. Once you have entered in the various fields, click the <code>Save</code> icon in the top left.</p>
 <p>This will return you to the <a href="../manual_playback/">manual execution</a> screen with the <strong>Incident ID</strong> [IN:xxx] and <strong>name</strong> displayed at the bottom. Now click on the <code>Fail</code> button and the test case will be marked as failed:</p>
 <p><img alt="manual_playback_9" src="../img/manual_testing_playback10.png" /></p>
 <p>Finally, click on the <strong>Finish</strong> button and the results will be posted to <a href="../spiratest_integration/">Spira</a>.</p>
-<h2 id="step-5-viewing-the-results">Step 5 - Viewing the Results</h2>
+<h2 id="step-5-viewing-the-results">Step 5 - Viewing the Results<a class="headerlink" href="#step-5-viewing-the-results" title="Permanent link">&para;</a></h2>
 <p>Now to view the results in Spira, click on the <a href="../spira_dashboard/">View &gt; View Manual Test in Spira</a> menu. Then under the 'My Created' test cases, click on the link for the test case you execute. That will bring up the test case in Spira. Now click on the 'Failed' hyperlink in Spira and the new test run will be displayed:</p>
 <p><img alt="manual_playback_10" src="../img/manual_testing_playback11.png" /></p>
 <p>If you scroll down, you can see the individual test steps that were executed, with the associated actual result (including the captured screenshot):</p>
@@ -10038,7 +10038,7 @@ Once you have selected the rectangle, the drawing tools will display your select
 <p>If you click on the <strong>Incidents</strong> tab, you can also see the new incident that was logged, linked to this test run:</p>
 <p><img alt="manual_playback_12" src="../img/manual_testing_playback13.png" /></p>
 <p>Congratulations! You have now successfully executed a manual test using Rapise.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../manual_testing/">Manual Testing</a></li>
 <li><a href="../manual_testing_recording/">Manual Recording</a></li>

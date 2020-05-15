@@ -10035,7 +10035,7 @@
               
                 
                 
-                <h1 id="taking-screenshots">Taking Screenshots</h1>
+                <h1 id="taking-screenshots">Taking Screenshots<a class="headerlink" href="#taking-screenshots" title="Permanent link">&para;</a></h1>
 <p>Taking screenshots during test playback may serve various purposes:</p>
 <ol>
 <li>Provide clues for test failure analysis</li>
@@ -10043,12 +10043,12 @@
 <li>Screenshots can be used to generate test documentation and even user's guides.</li>
 </ol>
 <p>Rapise can make screenshots automatically after every action or on-demand at specific points of test execution.</p>
-<h2 id="automatic-screenshots">Automatic Screenshots</h2>
+<h2 id="automatic-screenshots">Automatic Screenshots<a class="headerlink" href="#automatic-screenshots" title="Permanent link">&para;</a></h2>
 <p>To enable automatic screenshots after every action use <a href="../settings_dialog/#screen-capture">Screen Capture</a> test settings.</p>
 <blockquote>
 <p><strong>Note:</strong> Automatic screenshots are supported for Desktop and Web applications and not supported for Mobile.</p>
 </blockquote>
-<h2 id="recording">Recording</h2>
+<h2 id="recording">Recording<a class="headerlink" href="#recording" title="Permanent link">&para;</a></h2>
 <p>If before recording session you will set in <a href="../settings_dialog/#screen-capture">Screen Capture</a></p>
 <ul>
 <li><code>Capture Cursor = True</code></li>
@@ -10062,7 +10062,7 @@
 <blockquote>
 <p><strong>Note:</strong> We recorded <code>Login/Logout</code> scenario on <a href="http://libraryinformationsystem.org/">Library Information System</a> sample application, see <a href="../tutorial_record_and_playback/">web testing tutorial</a> for more details.</p>
 </blockquote>
-<h2 id="playback">Playback</h2>
+<h2 id="playback">Playback<a class="headerlink" href="#playback" title="Permanent link">&para;</a></h2>
 <p>If before execution you will set in <a href="../settings_dialog/#screen-capture">Screen Capture</a></p>
 <ul>
 <li><code>Capture Cursor = True</code></li>
@@ -10080,7 +10080,7 @@
 <p><strong>Note</strong>: Also Rapise always takes additional screenshot of the whole desktop window at the end of test execution. Even if the test was terminated because of a failed assertion. See step #7 below.</p>
 </blockquote>
 <p><img alt="execution finished" src="../img/screenshots_execution_finished.png" /></p>
-<h2 id="embed-screenshots-into-report">Embed Screenshots Into Report</h2>
+<h2 id="embed-screenshots-into-report">Embed Screenshots Into Report<a class="headerlink" href="#embed-screenshots-into-report" title="Permanent link">&para;</a></h2>
 <p>Execution screenshots described above are stored in the local file system and if a test report is uploaded to <a href="../spiratest_integration/">SpiraTest</a> then these screenshots are not uploaded.</p>
 <p>To embed screenshots into execution reports and make them available in <a href="../spiratest_integration/">SpiraTest</a>, set</p>
 <ul>
@@ -10091,14 +10091,14 @@
 <p><img alt="embedded rapise" src="../img/screenshots_embedded_rapise.png" /></p>
 <p>Screenshots in SpiraTest</p>
 <p><img alt="embedded spiratest" src="../img/screenshots_embedded_spiratest.png" /></p>
-<h2 id="suppressing-screenshots">Suppressing Screenshots</h2>
+<h2 id="suppressing-screenshots">Suppressing Screenshots<a class="headerlink" href="#suppressing-screenshots" title="Permanent link">&para;</a></h2>
 <p>Sometimes it makes sense to temporarily disable screenshot capturing. Learn how to do this in</p>
 <ul>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB291.aspx">KB291</a> How to Enable/Disable screenshots during script execution</li>
 </ul>
-<h2 id="on-demand-screenshots">On-Demand Screenshots</h2>
+<h2 id="on-demand-screenshots">On-Demand Screenshots<a class="headerlink" href="#on-demand-screenshots" title="Permanent link">&para;</a></h2>
 <p>It is also possible to take screenshots at specific points of test execution. The way of doing it depends on the test target.</p>
-<h2 id="desktop">Desktop</h2>
+<h2 id="desktop">Desktop<a class="headerlink" href="#desktop" title="Permanent link">&para;</a></h2>
 <p>This method works both for desktop applications and web applications running on the same machine as Rapise.</p>
 <p>Use global <a href="../../Libraries/Tester/">Tester</a> object and it's action to take screenshot of an object, specific window or whole desktop.</p>
 <ul>
@@ -10106,16 +10106,16 @@
 <li><a href="../../Libraries/Tester/#CaptureWindowImage">Tester.CaptureWindowImage</a></li>
 <li><a href="../../Libraries/Tester/#CaptureDesktopImage">Tester.CaptureDesktopImage</a></li>
 </ul>
-<h2 id="web">Web</h2>
+<h2 id="web">Web<a class="headerlink" href="#web" title="Permanent link">&para;</a></h2>
 <p>This method works well if you plan to run a web test on remote machines via <a href="../selenium_webdriver/">Selenium WebDriver</a>.</p>
 <p>Use global <a href="../../Libraries/Navigator/">Navigator</a> object and it's <a href="../../Libraries/Navigator/#DoScreenshot">Navigator.DoScreenshot</a> action.</p>
-<h2 id="mobile">Mobile</h2>
+<h2 id="mobile">Mobile<a class="headerlink" href="#mobile" title="Permanent link">&para;</a></h2>
 <p>To make a screenshot on mobile target use</p>
 <ul>
 <li><a href="../../Libraries/Android/#DoScreenshot">Android.DoScreenshot</a></li>
 <li><a href="../../Libraries/iOS/#DoScreenshot">iOS.DoScreenshot</a></li>
 </ul>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB291.aspx">KB291</a> How to Enable/Disable screenshots during script execution</li>
 </ul>

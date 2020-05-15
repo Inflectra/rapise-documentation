@@ -9967,12 +9967,12 @@
               
                 
                 
-                <h1 id="selenium-webdriver">Selenium WebDriver</h1>
+                <h1 id="selenium-webdriver">Selenium WebDriver<a class="headerlink" href="#selenium-webdriver" title="Permanent link">&para;</a></h1>
 <p>When developing and testing a web application you naturally need to test it with <a href="../cross_browser_testing/">different web browsers</a> and
 multiple version of each web browser. With Rapise <a href="../browser_settings/">natively</a> you can record a test script using one browser and then play it back using <strong>Mozilla Firefox, Google Chrome or Microsoft Internet Explorer</strong>.</p>
 <p>In addition, you can use Rapise with the open-source <strong>Selenium WebDriver framework</strong> to play back the same tests against other browsers
 such as <strong>Apple Safari and Opera</strong> (as well as IE, Firefox and Chrome). You can also use Rapise to write <a href="../using_native_selenium_code/">native Selenium code</a> for cases where you want to use existing Selenium WebDriver logic.</p>
-<h2 id="playing-recording-tests">Playing &amp; Recording Tests</h2>
+<h2 id="playing-recording-tests">Playing &amp; Recording Tests<a class="headerlink" href="#playing-recording-tests" title="Permanent link">&para;</a></h2>
 <p>Once you have <a href="../setting_up_selenium/">installed and configured the integration between Rapise and Selenium</a>, we shall discuss how to use Selenium with Rapise to record and play tests.</p>
 <p>Now one of the important points is that there are some limitations as to the operations that can be performed using Selenium-based web browsers as opposed to the native browsers supported by Rapise:</p>
 <table>
@@ -10020,7 +10020,7 @@ such as <strong>Apple Safari and Opera</strong> (as well as IE, Firefox and Chro
 learned objects and adding the events (DoClick, SetText, etc.) then you will need to use one of the native browsers (Chrome, IE, Firefox) to create the test script. You can then playback the same test in either the native or Selenium browsers.</p>
 <p>If you are planning on using Rapise to learn objects using the Web Spy, and then create the test script from those objects by either dragging the object methods and properties from the Object Tree into the test script or just using Intellisense to type the methods (DoClick, SetText, etc.) then you can use either a native or Selenium web browser just as easily.</p>
 <p>For most users, the primary reason for using the Selenium web browsers will be to playback their tests on a greater number of browsers or to leverage existing <a href="../using_native_selenium_code/">Selenium WebDriver scripts created outside of Rapise</a>.</p>
-<h2 id="managing-the-selenium-profiles">Managing the Selenium Profiles</h2>
+<h2 id="managing-the-selenium-profiles">Managing the Selenium Profiles<a class="headerlink" href="#managing-the-selenium-profiles" title="Permanent link">&para;</a></h2>
 <p>Rapise allows you to maintain different profiles for your different installed Selenium web browsers (both on the same machine as Rapise and also those running on a remote Selenium WebDriver server), To see the different <a href="../selenium_settings_dialog/">Selenium profiles</a>,
 in the main menu select <code>Settings &gt; Selenium</code>. It will bring up the <a href="../selenium_settings_dialog/">Selenium profile manager</a>:</p>
 <p><img alt="clip0016" src="../img/selenium_webdriver2.png" /></p>
@@ -10028,7 +10028,7 @@ in the main menu select <code>Settings &gt; Selenium</code>. It will bring up th
 Safari). However you can clone and change the profiles if you want to have different versions of the browsers (e.g. a local instance of
 Firefox and one running on a remote Selenium server).</p>
 <p>Most users will only need to change the <strong>Uri</strong> field of the Safari web browser since the defaults are typically sufficient for most testing needs.</p>
-<h2 id="recording-using-selenium">Recording using Selenium</h2>
+<h2 id="recording-using-selenium">Recording using Selenium<a class="headerlink" href="#recording-using-selenium" title="Permanent link">&para;</a></h2>
 <p>To start <a href="../recording/">recording</a> a web testing using a Selenium WebDriver based browser, make sure you change the test’s web browser parameter to one of the Selenium profiles:</p>
 <p><img alt="clip0017" src="../img/selenium_webdriver3.png" /></p>
 <p>When you click the <code>Record</code> button on the main toolbar you will see the following <a href="../recording_activity_dialog/"><strong>Recording Activity Dialog</strong></a>:</p>
@@ -10045,12 +10045,12 @@ browser profile).</p>
 <p>Objects Learned using a Selenium profile will be added to the Rapise <a href="../object_tree/">Object Tree</a> in the usual way and as is typical with <a href="../learn_object/">Learning</a>, you have the option to specify an Action in the Recording Activity Grid (e.g. change
 Learn to Click) in which case test script code is also generated.</p>
 <p><strong>Tip:</strong> <em>Due to the inherent limitations in recording using a Selenium browser profile (vs. a native browser profile) most users will record their scripts using a native browser and then use Selenium primarily for debugging using the Web Spy and playback.</em></p>
-<h2 id="playback-using-selenium">Playback using Selenium</h2>
+<h2 id="playback-using-selenium">Playback using Selenium<a class="headerlink" href="#playback-using-selenium" title="Permanent link">&para;</a></h2>
 <p>To playback a web test using a Selenium web browser profile, simply choose the appropriate profile in the dropdown located in the top right corner of the main Rapise window:</p>
 <p><img alt="clip0021" src="../img/selenium_webdriver3.png" /></p>
 <p>Then click the <code>Play</code> button on the main toolbar. The test will now start <a href="../playback/">execution</a>. Unlike recording there is nothing different in the way Rapise handles the <a href="../playback/">playback</a> of a Selenium test. The only difference will be that if the test uses non-HTML technologies such as Java, etc. those parts of the test will fail.</p>
 <p><img alt="clip0022" src="../img/selenium_webdriver8.png" /></p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../setting_up_selenium/">Setting Up Selenium</a></li>
 <li><a href="../using_native_selenium_code/">Using Native Selenium Code</a></li>

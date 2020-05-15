@@ -10021,12 +10021,12 @@
               
                 
                 
-                <h1 id="microsoft-dynamics-365-unified-service-desk">Microsoft Dynamics 365 Unified Service Desk</h1>
+                <h1 id="microsoft-dynamics-365-unified-service-desk">Microsoft Dynamics 365 Unified Service Desk<a class="headerlink" href="#microsoft-dynamics-365-unified-service-desk" title="Permanent link">&para;</a></h1>
 <p>Unified Service Desk (USD) is a hybrid application. It is a windows desktop application with embedded browser components. Follow this guide to setup a test automation framework for USD.</p>
-<h2 id="hybrid-application">Hybrid Application</h2>
+<h2 id="hybrid-application">Hybrid Application<a class="headerlink" href="#hybrid-application" title="Permanent link">&para;</a></h2>
 <p>Most of the panels in USD are web views (highlighted in red) and some parts are pure desktop areas (highlighted in orange). Rapise is able to deal with web content in USD same way it deals with pure web applications loaded into browsers. Desktop parts of USD are controlled through <strong>UIAutomation</strong> library.</p>
 <p><img alt="usd main window" src="../img/usdmainwindow.png" /></p>
-<h2 id="browser-profile">Browser Profile</h2>
+<h2 id="browser-profile">Browser Profile<a class="headerlink" href="#browser-profile" title="Permanent link">&para;</a></h2>
 <p>In order to deal with web content in USD a browser profile should be configured.  This profile will be used by Rapise to connect to embedded browser components.</p>
 <ol>
 <li>In the main menu select <code>Settings &gt; Browser</code>.</li>
@@ -10037,8 +10037,8 @@
 <li>Save the profile.</li>
 </ol>
 <p><img alt="usd profile" src="../img/usdprofile.gif" /></p>
-<h2 id="test-framework">Test Framework</h2>
-<h3 id="root-test">Root Test</h3>
+<h2 id="test-framework">Test Framework<a class="headerlink" href="#test-framework" title="Permanent link">&para;</a></h2>
+<h3 id="root-test">Root Test<a class="headerlink" href="#root-test" title="Permanent link">&para;</a></h3>
 <p>Suggested approach to building a test framework for USD is to create a root empty test which will serve as a container for test scenarios and building blocks.</p>
 <p>Let's create USDFramework test. Choose Web methodology, UnifiedServiceDesk browser profile and RVL options along the way.</p>
 <p><img alt="usd main test" src="../img/usdmaintest.gif" /></p>
@@ -10047,7 +10047,7 @@
 </code></pre></div>
 
 <p><img alt="usd main js" src="../img/usdmainjs.png" /></p>
-<h2 id="browser-automation-sub-test">Browser Automation Sub-Test</h2>
+<h2 id="browser-automation-sub-test">Browser Automation Sub-Test<a class="headerlink" href="#browser-automation-sub-test" title="Permanent link">&para;</a></h2>
 <p>For recording web content related actions create a sub-test inside USDFramework. Let's name it USDDashboard. Choose Web methodology and UnifiedServiceDesk browser profile along the way.</p>
 <p><img alt="usd web subtest" src="../img/usdwebsubtest.gif" /></p>
 <p>Double click USDDashboard test to open it in another instance of Rapise. Append <code>DomDynamicsCrm</code> to the list of loaded libraries.</p>
@@ -10058,7 +10058,7 @@
 
 <p>We can now record web steps into USDDashboard.</p>
 <p><img alt="usd web record play" src="../img/usdwebrecordplay.gif" /></p>
-<h2 id="desktop-automation-sub-test">Desktop Automation Sub-Test</h2>
+<h2 id="desktop-automation-sub-test">Desktop Automation Sub-Test<a class="headerlink" href="#desktop-automation-sub-test" title="Permanent link">&para;</a></h2>
 <p>For recording desktop content related actions create a sub-test inside USDFramework. Let's name it USDCallScript. Choose Desktop methodology along the way.</p>
 <p><img alt="usd desktop subtest" src="../img/usddesktopsubtest.gif" /></p>
 <p>Double click USDCallScript test to open it in another instance of Rapise. Insert the following snippet into <code>Main.js</code>:</p>
@@ -10081,12 +10081,12 @@
 <p><img alt="usd desktop recording" src="../img/usddesktoprecording.png" /></p>
 <p>Here is the test playback.</p>
 <p><img alt="usd desktop playback" src="../img/usddesktopplayback.gif" /></p>
-<h2 id="assembling-blocks">Assembling Blocks</h2>
+<h2 id="assembling-blocks">Assembling Blocks<a class="headerlink" href="#assembling-blocks" title="Permanent link">&para;</a></h2>
 <p>Now we can execute USDDashboard and USDCallScript from USDFramework. Open USDFramework test and drag-and-drop sub-tests to RVL sheet.</p>
 <p><img alt="usd framework rvl" src="../img/usdframeworkrvl.png" /></p>
 <p><img alt="usd framework playback" src="../img/usdframeworkplayback.gif" /></p>
 <p>The test framework created in this session is <a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/USDFramework">available on GitHub</a>.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../microsoft_dynamics/">Microsoft Dynamics</a></li>
 <li><a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/USDFramework">USD testing framework on GitHub</a></li>

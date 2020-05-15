@@ -10231,8 +10231,8 @@
               
                 
                 
-                <h1 id="dynamics-ax">Dynamics AX</h1>
-<h2 id="overview">Overview</h2>
+                <h1 id="dynamics-ax">Dynamics AX<a class="headerlink" href="#dynamics-ax" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p><strong>Microsoft Dynamics AX</strong> (usually referred to as just <strong>AX</strong>) - is an ERP system for mid-size to large enterprises. It is the most robust, scalable, and functionally rich enterprise resource planning system in the Microsoft Dynamics family of products. The system was originally known as Axapta, owned by the Danish software company Damgaard.</p>
 <p>Dynamics AX consists of a client-server architecture with a thick-client ERP interface for entering/adding data in the system:</p>
 <p><img alt="dynamics-ax-overview" src="../img/dynamics_ax1.png" /></p>
@@ -10241,7 +10241,7 @@
 <li><strong>Dynamics AX Management Reporter</strong> - Rapise can test this extension using its <strong>Generic</strong> <a href="../windows_applications/">Windows library</a>.</li>
 <li><strong>Dynamics AX Web Portals</strong> - Rapise can test the various web portals using its <a href="../web_testing/">web browser libraries</a>.</li>
 </ul>
-<h2 id="start-recording-a-new-test">Start Recording a New Test</h2>
+<h2 id="start-recording-a-new-test">Start Recording a New Test<a class="headerlink" href="#start-recording-a-new-test" title="Permanent link">&para;</a></h2>
 <p>First you need to create a new Basic test and start recording session. Choose Dynamics AX from the list of applications:</p>
 <p><img alt="AppChooser" src="../img/dynamicsaxappchooser.png" /></p>
 <p>Then press <code>Select</code> button to start recording. Rapise will automatically plug the UIAutomation and DynamicsAX libraries.</p>
@@ -10257,7 +10257,7 @@
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;DynamicsAX&quot;</span><span class="p">];</span>
 </code></pre></div>
 
-<h2 id="automatic-adjustment-of-window-title-object-property">Automatic Adjustment of <code>Window Title</code> Object Property</h2>
+<h2 id="automatic-adjustment-of-window-title-object-property">Automatic Adjustment of <code>Window Title</code> Object Property<a class="headerlink" href="#automatic-adjustment-of-window-title-object-property" title="Permanent link">&para;</a></h2>
 <p>Main window title of Dynamics AX is dynamic by nature.</p>
 <p><img alt="DynamicsAX Title" src="../img/dynamicsaxtitle.png" /></p>
 <p>It contains not only application name but also domain and AOS information and session Id. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression in object properties. Here it is:</p>
@@ -10269,9 +10269,9 @@
 <p><img alt="Object Properties" src="../img/dynamicsaxobjectproperties.png" /></p>
 <p>Also Rapise automatically sets <code>Record Title</code> in test settings to the same regular expression so you do not need to choose the Dynamics AX main window during subsequent recording sessions.</p>
 <p><img alt="Test Settings" src="../img/dynamicsaxtestsettings.png" /></p>
-<h2 id="titles-of-child-windows">Titles of Child Windows</h2>
+<h2 id="titles-of-child-windows">Titles of Child Windows<a class="headerlink" href="#titles-of-child-windows" title="Permanent link">&para;</a></h2>
 <p>Child windows of Dynamics AX also may have dynamic titles. Rapise does not know all the available patterns, so for child windows you need to write regular expressions yourself. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the <code>window title</code> property automatically. In other words when Rapise learns a new object and it's <code>window title</code> is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.</p>
-<h2 id="object-location">Object Location</h2>
+<h2 id="object-location">Object Location<a class="headerlink" href="#object-location" title="Permanent link">&para;</a></h2>
 <p>Object location property has the form of</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    id1/id2/id3...</span>
 </code></pre></div>
@@ -10289,7 +10289,7 @@
 
 <p>Here is updated location in the property grid:</p>
 <p><img alt="Object Location" src="../img/dynamicsaxobjectlocation.png" /></p>
-<h2 id="how-to-launch-dynamics-ax-client">How to Launch Dynamics AX Client</h2>
+<h2 id="how-to-launch-dynamics-ax-client">How to Launch Dynamics AX Client<a class="headerlink" href="#how-to-launch-dynamics-ax-client" title="Permanent link">&para;</a></h2>
 <p>If in your test you want to check that Dynamics AX application is installed and running place this function into <code>User.js</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">DynamicsAXLaunch</span><span class="p">()</span>
 <span class="p">{</span>
@@ -10338,7 +10338,7 @@
 <div class="highlight"><pre><span></span><code><span class="nx">DynamicsAXLaunch</span><span class="p">();</span>
 </code></pre></div>
 
-<h2 id="recording-actions-and-learning-objects">Recording Actions and Learning Objects</h2>
+<h2 id="recording-actions-and-learning-objects">Recording Actions and Learning Objects<a class="headerlink" href="#recording-actions-and-learning-objects" title="Permanent link">&para;</a></h2>
 <p>During recording while you interact with Dynamics AX controls Rapise captures actions and displays them in the recording dialog.</p>
 <p><img alt="Recording Dialog" src="../img/dynamicsaxrecordingdialog.png" /></p>
 <p>When recording is finished Rapise automatically generates the test.</p>
@@ -10372,16 +10372,16 @@
 </code></pre></div>
 
 <p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <code>Ctrl+2</code> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
-<h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects</h2>
-<h2 id="text-box">Text Box</h2>
+<h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
+<h2 id="text-box">Text Box<a class="headerlink" href="#text-box" title="Permanent link">&para;</a></h2>
 <p>To allow Rapise to capture the entered text interact with a text box in two steps:</p>
 <ol>
 <li>Click into the edit box</li>
 <li>Type text using keyboard</li>
 </ol>
-<h2 id="combobox">ComboBox</h2>
+<h2 id="combobox">ComboBox<a class="headerlink" href="#combobox" title="Permanent link">&para;</a></h2>
 <p>Dynamics AX has several types of combo boxes.</p>
-<h3 id="standard-combo-box">Standard Combo Box</h3>
+<h3 id="standard-combo-box">Standard Combo Box<a class="headerlink" href="#standard-combo-box" title="Permanent link">&para;</a></h3>
 <p>Standard combo box like <code>Worker type</code> in the <code>Hire New Worker</code> form.</p>
 <p><img alt="dax simple combo" src="../img/daxsimplecombo.png" /></p>
 <p>Rapise treats such combo boxes as atomic objects abd records them as <a href="/Libraries/DynamicsAXComboBox/">DynamicsAXComboBox</a>. To record interaction with the combo box</p>
@@ -10396,7 +10396,7 @@
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Worker_type&#39;</span><span class="p">).</span><span class="nx">DoSelectItem</span><span class="p">(</span><span class="s2">&quot;Employee&quot;</span><span class="p">);</span>
 </code></pre></div>
 
-<h3 id="table-filter-combo">Table Filter Combo</h3>
+<h3 id="table-filter-combo">Table Filter Combo<a class="headerlink" href="#table-filter-combo" title="Permanent link">&para;</a></h3>
 <p>Table filter combo is recognized as a pair of objects: <code>Scope</code> and <code>DropDown</code>. The <code>Scope</code> is of type <a href="/Libraries/DynamicsAXMenuItem/">DynamicsAXMenuItem</a> and used to open the <code>DropDown</code> of type <a href="/Libraries/DynamicsAXMenuDropDownList/">DynamicsAXMenuDropDownList</a>.</p>
 <p><img alt="Table Filter" src="../img/dynamicsaxtablefilter.png" /></p>
 <p>Rcorded steps look like:</p>
@@ -10409,7 +10409,7 @@
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DropDown&#39;</span><span class="p">).</span><span class="nx">DoSelectItem</span><span class="p">(</span><span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
 </code></pre></div>
 
-<h3 id="lookup-field">Lookup Field</h3>
+<h3 id="lookup-field">Lookup Field<a class="headerlink" href="#lookup-field" title="Permanent link">&para;</a></h3>
 <p>Lookup field consists of an edit box, open button and a dropdown table. Record lookup interactions in three steps:</p>
 <ol>
 <li>Click the edit field. Recorded as <a href="/Libraries/DynamicsAXTextBox/">DynamicsAXTextBox</a>.</li>
@@ -10428,7 +10428,7 @@
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;SOFTWARE&quot;</span><span class="p">,</span> <span class="s2">&quot;Customer group&quot;</span><span class="p">);</span>
 </code></pre></div>
 
-<h2 id="address-bar">Address Bar</h2>
+<h2 id="address-bar">Address Bar<a class="headerlink" href="#address-bar" title="Permanent link">&para;</a></h2>
 <p>Click in empty area of the address bar and enter the address where you want to navigate. Rapise will capture <a href="/Libraries/DynamicsAXAddressBar/">DynamicsAXAddressBar</a> object and record <code>DoSetText</code> action.</p>
 <p><img alt="Address Bar" src="../img/dynamicsaxaddressbar.png" /></p>
 <p><strong>RVL</strong></p>
@@ -10437,7 +10437,7 @@
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;AddressBarContainer&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s1">&#39;DAT/Retail essentials/Employees/Users&#39;</span><span class="p">);</span>
 </code></pre></div>
 
-<h2 id="menu">Menu</h2>
+<h2 id="menu">Menu<a class="headerlink" href="#menu" title="Permanent link">&para;</a></h2>
 <p>Rapise supports both recording and learning of the main menu. When recording make sure you click on every component along the path. E.g. you want to navigate to <code>File &gt; View &gt; Modules &gt; General ledger</code>. During recording click on <code>File</code>, <code>View</code>, <code>Modules</code> and <code>General ledger</code>. Captured menu object has type <a href="/Libraries/DynamicsAXMenu/">DynamicsAXMenu</a>. Generated script looks like:</p>
 <p><strong>RVL</strong></p>
 <p><img alt="daxmenurvl" src="../img/daxmenurvl.png" /></p>
@@ -10447,7 +10447,7 @@
 </code></pre></div>
 
 <p>Rapise captures menu as top level object (<code>File</code> in the example above). Notice that menu path components are separated with <code>;</code>. If you want for example to open menu <code>File &gt; Tools &gt; Telephone list</code> then use <code>File;Tools;Telephone list</code> as <code>path</code> parameter.</p>
-<h2 id="table">Table</h2>
+<h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <p>Rapise recognizes Dynamics AX grids as <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a></p>
 <p><img alt="Grid" src="../img/dynamicsaxgrid.png" /></p>
 <p>When you click on a cell in a table Rapise records column name and value in the cell. The generated click step looks like:</p>
@@ -10458,7 +10458,7 @@
 </code></pre></div>
 
 <p>Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a> for more details.</p>
-<h2 id="infolog">Infolog</h2>
+<h2 id="infolog">Infolog<a class="headerlink" href="#infolog" title="Permanent link">&para;</a></h2>
 <p>In some case Dynamics AX can report an error using Infolog window.</p>
 <p><img alt="Infolog" src="../img/dynamicsaxinfolog.png" /></p>
 <p>To obtain text of the messages in this window learn the Tree object - place cursor over the error text and press <code>Ctrl-2</code> shortcut. The object is learned as <a href="/Libraries/UIATree/">UIATree</a>. In the case of infolog tree - all nodes are immediate children of the root. So in the example shown on the image above the tree contains two child nodes of the tree node. To get the number of messages and read individual messages use <code>GetChildrenCount</code> and <code>GetChildAt</code> actions of <a href="/Libraries/UIATree/">UIATree</a>.</p>
@@ -10473,15 +10473,15 @@
 <span class="kd">var</span> <span class="nx">messageText</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">GetChildAt</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </code></pre></div>
 
-<h2 id="type-to-filter-field">Type to filter Field</h2>
+<h2 id="type-to-filter-field">Type to filter Field<a class="headerlink" href="#type-to-filter-field" title="Permanent link">&para;</a></h2>
 <p>Almost each standard grid in Dynamics AX has a text field for filtering grid data.</p>
 <p><img alt="Type To Filter" src="../img/dynamicsaxtypetofilter.png" /></p>
 <p>When you learn this field it has a name <code>Type to filter</code>.</p>
 <p><img alt="Type To Filter Properties" src="../img/dynamicsaxtypetofilterproperties.png" /></p>
 <p>However when this field gets focus it's name changes to <code>Text box</code>. To enable Rapise to find this field during playback set <code>Ignore Object Name</code> property of the object to <code>True</code>.</p>
 <p><img alt="Ignore Object Name" src="../img/dynamicsaxignoreobjectname.png" /></p>
-<h2 id="dynamics-ax-cook-book">Dynamics AX Cook Book</h2>
-<h2 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window</h2>
+<h2 id="dynamics-ax-cook-book">Dynamics AX Cook Book<a class="headerlink" href="#dynamics-ax-cook-book" title="Permanent link">&para;</a></h2>
+<h2 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window<a class="headerlink" href="#maximizeminimizerestore-window" title="Permanent link">&para;</a></h2>
 <p>You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id <code>AddressBarContainer</code>.</p>
 <p>First place the following code into your <code>User.js</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MaximizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span> <span class="nx">objectId</span><span class="p">)</span>
@@ -10509,7 +10509,7 @@
 <span class="nx">MinimizeWindow</span><span class="p">(</span><span class="s2">&quot;AddressBarContainer&quot;</span><span class="p">);</span>
 </code></pre></div>
 
-<h2 id="scroll-to-the-bottom-of-a-grid">Scroll to the Bottom of a Grid</h2>
+<h2 id="scroll-to-the-bottom-of-a-grid">Scroll to the Bottom of a Grid<a class="headerlink" href="#scroll-to-the-bottom-of-a-grid" title="Permanent link">&para;</a></h2>
 <p>If your grid looks like this and you want to scroll to the last record of it learn the <code>Last Record</code> button and click on it during test playback.</p>
 <p><img alt="Grid to Scroll" src="../img/dynamicsaxgridtoscroll.png" /></p>
 <p><strong>RVL</strong></p>
@@ -10518,7 +10518,7 @@
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Last_Record&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 </code></pre></div>
 
-<h2 id="scroll-and-click-on-a-cell-in-a-grid">Scroll and Click on a Cell in a Grid</h2>
+<h2 id="scroll-and-click-on-a-cell-in-a-grid">Scroll and Click on a Cell in a Grid<a class="headerlink" href="#scroll-and-click-on-a-cell-in-a-grid" title="Permanent link">&para;</a></h2>
 <p>If you know the value of a cell in a grid then Rapise will automatically scroll the grid before click.</p>
 <p><img alt="Scroll Before Click" src="../img/dynamicsaxscrollbeforeclick.png" />  </p>
 <p>Assume that you want to click on a cell with value <code>Alen Shen</code> in a column <code>Search name</code>. This cell is not visible on the picture and requires scrolling to show up. The following script performs the click:</p>
@@ -10537,7 +10537,7 @@
 </code></pre></div>
 
 <p>Where 9 is row number.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../microsoft_dynamics/">Microsoft Dynamics</a></li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB411.aspx">KB: If recording of actions in Dynamics AX or Dynamics NAV does not work</a></li>

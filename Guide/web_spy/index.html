@@ -10063,13 +10063,13 @@
               
                 
                 
-                <h1 id="web-spy">Web Spy</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="web-spy">Web Spy<a class="headerlink" href="#web-spy" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>The <strong>Web Spy</strong> is used to inspect web applications running on any of the supported web browsers (currently Internet Explorer, Firefox and Chrome). It allows you to view the hierarchy of elements in the web browser <strong>Document Object Model (DOM)</strong>. In addition it makes the testing of dynamic data-driven web applications easier because it lets you test out dynamic <a href="../xpath/">XPath</a> or <a href="../css/">CSS</a> queries against the web page and verify that the elements return match your expectations.</p>
 <p><img alt="web_spy1" src="../img/web_spy1.png" /></p>
 <p>The <strong>Web Spy</strong> dialog shows a hierarchical representation of the HTML DOM elements that make up the web application being tested as well as the properties of the currently selected object. You can select the object by clicking on the object hierarchy displayed to the left. The properties displayed are categorized into different types that are described below.</p>
 <p>The <strong>Web Spy</strong> also lets you visually highlight an item in the web browser from the object hierarchy and also the reverse - selecting an object in the hierarchy by clicking on its representation in the web browser.</p>
-<h2 id="spy-toolbar">Spy Toolbar</h2>
+<h2 id="spy-toolbar">Spy Toolbar<a class="headerlink" href="#spy-toolbar" title="Permanent link">&para;</a></h2>
 <p>The Web Spy toolbar provides the following tools:</p>
 <p><img alt="web_spy_toolbar" src="../img/web_spy2.png" /></p>
 <ul>
@@ -10078,7 +10078,7 @@
 <li><strong>Learn:</strong> Clicking on this tool lets you take the currently selected object and add it to the <a href="../object_tree/">Object Tree</a> for the current test. It can then be used as a scriptable object in the test script. When you click on the Learn button, you have the choice (in the dropdown list) of learning the object in terms of either its <strong>XPath</strong> or <strong>CSS</strong> properties.</li>
 <li><strong>XPath:</strong> This field is described separately below in the <strong>Test Results</strong> section. These tool allow you to try out different XPATH queries to see which objects match. You can then Learn the results of these queries as new Rapise objects.</li>
 </ul>
-<h2 id="spy-menu">Spy Menu</h2>
+<h2 id="spy-menu">Spy Menu<a class="headerlink" href="#spy-menu" title="Permanent link">&para;</a></h2>
 <p>More tools available in the menu.</p>
 <p><img alt="web spy menu" src="../img/web_spy_menu.png" /></p>
 <ul>
@@ -10092,13 +10092,13 @@
 <li><strong>CSS Enabled:</strong> Select to make CSS test field visible on the toolbar.</li>
 <li><strong>Web Spy Settings:</strong> Clicking on this brings up the <a href="../web_settings/">Web Settings</a> dialog box.</li>
 </ul>
-<h2 id="spy-shortcuts">Spy Shortcuts</h2>
+<h2 id="spy-shortcuts">Spy Shortcuts<a class="headerlink" href="#spy-shortcuts" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>Ctrl-G</code> - reload the DOM tree from the active page in the browser.</li>
 <li><code>Ctrl-T</code> - start/stop tracking mode to locate the element in the DOM tree.</li>
 <li><code>Ctrl-Shift-T</code> - save snapshot of the DOM tree. When the shortcut is pressed Rapise prompts for a name and saves the DOM tree in XML format and the screenshot of the browser window in PNG format.</li>
 </ul>
-<h2 id="dom-tree">DOM Tree</h2>
+<h2 id="dom-tree">DOM Tree<a class="headerlink" href="#dom-tree" title="Permanent link">&para;</a></h2>
 <p>The DOM tree lets you view all of the HTML elements (also known as DOM elements) that make up the web application / web page being tested. The elements are showing in a hierarchical tree representation that mirrors how they are nested on the page. Each element is displayed along with the various attributes (class, id, style, etc.) that are associated with the element:</p>
 <p><img alt="web_spy_domtree" src="../img/web_spy3.png" /></p>
 <p>The DOM elements are color coded.</p>
@@ -10117,7 +10117,7 @@
 </ul>
 <p><img alt="Learn Context Menu" src="../img/web_spy_learn_context_menu.png" /></p>
 <p>Double clicking on an element copies it's <a href="../xpath/">XPath</a> to the toolbar.</p>
-<h2 id="dom-element">DOM Element</h2>
+<h2 id="dom-element">DOM Element<a class="headerlink" href="#dom-element" title="Permanent link">&para;</a></h2>
 <p>When you click on an element in the DOM tree its properties are displayed in the <strong>DOM Element</strong> pane and it is highlighted in the web browser.</p>
 <p><img alt="web spy element" src="../img/web_spy_element.png" /></p>
 <p>The properties that are displayed are grouped into the following categories:</p>
@@ -10143,15 +10143,15 @@
 </li>
 <li><strong>Selectors</strong> - this section contains <a href="../xpath/">XPath</a> and <a href="../css/">CSS</a> selectors computed using different algorithms. If you will double click a name of the selector it will be copied to the edit field on the toolbar.</li>
 </ul>
-<h2 id="test-results">Test Results</h2>
+<h2 id="test-results">Test Results<a class="headerlink" href="#test-results" title="Permanent link">&para;</a></h2>
 <p>In addition to navigating the DOM tree and Learning specific elements, the other main capability of the DOM Spy is the ability to create queries using either <a href="../xpath/">XPath</a> or <a href="../css/">CSS</a> to see which objects match the query and then learn the specific result. For example we want to find all the table cells that have at least some style information specified.</p>
-<h3 id="using-xpath">Using XPath</h3>
+<h3 id="using-xpath">Using XPath<a class="headerlink" href="#using-xpath" title="Permanent link">&para;</a></h3>
 <p>If you enter in the <a href="../xpath/">XPath</a> query to locate the table cells in the <strong>XPath</strong> box at the top.</p>
 <p><img alt="web_spy_xpath1" src="../img/web_spy5.png" /></p>
 <p>When you click <strong>Test</strong> it will display all of the DOM elements that match the query:</p>
 <p><img alt="web_spy_xpath2" src="../img/web_spy6.png" /></p>
 <p>You can now refine the query to only find the items you want to test.</p>
-<h3 id="using-css">Using CSS</h3>
+<h3 id="using-css">Using CSS<a class="headerlink" href="#using-css" title="Permanent link">&para;</a></h3>
 <p>If you enter in the <a href="../css/">CSS</a> selector to locate the table cells in the <strong>CSS</strong> box at the top (if the box is not visible use menu <code>Spy &gt; CSS Enabled</code>).</p>
 <p><img alt="web_spy_css1" src="../img/web_spy7.png" /></p>
 <p>When you click <strong>Test</strong> it will display all of the DOM elements that match the query:</p>
@@ -10164,7 +10164,7 @@
 <li>If the result is simple text then only Copy is available, which copies the text</li>
 <li>Clicking on a DOM element in the results list opens it in DOM Element pane and also selects it in the DOM Tree pane</li>
 </ul>
-<h2 id="maintenance-mode">Maintenance Mode</h2>
+<h2 id="maintenance-mode">Maintenance Mode<a class="headerlink" href="#maintenance-mode" title="Permanent link">&para;</a></h2>
 <p>Since Rapise <strong>version 6.2</strong> it is easier to check and update object locators. If you launch the spy from the toolbar (it will be launched in Maintenance Mode) it will show the object tree in the right side panel.</p>
 <p><img alt="Web Spy Maintenance Mode" src="../img/web_spy_maintenance.png" /></p>
 <p>To check an object locator simply select the object in the object tree. The result of locator test is indicated by an icon.</p>
@@ -10182,7 +10182,7 @@
 <li>Press relearn button on the toolbar.</li>
 </ol>
 <p><img alt="Web Spy Relearn" src="../img/web_spy_relearn.png" /></p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../object_spy/">Object Spy</a></li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB422.aspx">Save DOM tree to share with Rapise experts</a></li>

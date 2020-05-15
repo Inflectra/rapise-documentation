@@ -10035,15 +10035,15 @@
               
                 
                 
-                <h1 id="tutorial-rest-web-services">Tutorial: REST Web Services</h1>
+                <h1 id="tutorial-rest-web-services">Tutorial: REST Web Services<a class="headerlink" href="#tutorial-rest-web-services" title="Permanent link">&para;</a></h1>
 <p>In this section you shall learn how to test a RESTful web services API using Rapise. We shall be using a demo application called <strong>Library Information System</strong> that has a dummy RESTful web service API available for learning purposes. You can access this sample application at
 <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a>, and its RESTful web service
 API can be found at:
 <a href="http://www.libraryinformationsystem.org/Services/RestService.aspx">www.libraryinformationsystem.org/Services/RestService.aspx</a>.</p>
-<h3 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?</h3>
+<h3 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?<a class="headerlink" href="#what-is-rest-and-what-is-a-restful-web-service" title="Permanent link">&para;</a></h3>
 <p><strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.</p>
 <p>A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Creating a REST web service test in Rapise consists of the following
 steps:</p>
 <ol>
@@ -10058,7 +10058,7 @@ steps:</p>
 </li>
 </ol>
 <p>We shall discuss each of these steps in turn.</p>
-<h2 id="1-using-the-rest-query-builder">1. Using the REST Query Builder</h2>
+<h2 id="1-using-the-rest-query-builder">1. Using the REST Query Builder<a class="headerlink" href="#1-using-the-rest-query-builder" title="Permanent link">&para;</a></h2>
 <p>Create a new test in Rapise called <code>MyRestTest1.sstest</code>. For methodology, choose <strong>Basic: Windows Desktop Application (Windows Native, .NET, Java, WPF etc)</strong> and Rapise will create a new blank test project.</p>
 <p><img alt="Test Type" src="../img/tutorial_web_services_rest_testtype.png" /></p>
 <p>Language selection prompt is shown. For Web Services it is recommended to use <code>JavaScript</code>. </p>
@@ -10088,7 +10088,7 @@ steps:</p>
 <p>According to the documentation that means we will need to send the following requests:</p>
 <ul>
 <li>
-<h3 id="i-get-a-unique-session">(i) Get a Unique Session</h3>
+<h3 id="i-get-a-unique-session">(i) Get a Unique Session<a class="headerlink" href="#i-get-a-unique-session" title="Permanent link">&para;</a></h3>
 </li>
 <li>
 <ul>
@@ -10106,7 +10106,7 @@ steps:</p>
 </ul>
 </li>
 <li>
-<h3 id="ii-get-this-list-of-books">(ii) Get this list of books</h3>
+<h3 id="ii-get-this-list-of-books">(ii) Get this list of books<a class="headerlink" href="#ii-get-this-list-of-books" title="Permanent link">&para;</a></h3>
 </li>
 <li>
 <ul>
@@ -10124,7 +10124,7 @@ steps:</p>
 </ul>
 </li>
 <li>
-<h3 id="iii-add-a-new-book-to-the-list">(iii) Add a new book to the list</h3>
+<h3 id="iii-add-a-new-book-to-the-list">(iii) Add a new book to the list<a class="headerlink" href="#iii-add-a-new-book-to-the-list" title="Permanent link">&para;</a></h3>
 </li>
 <li>
 <ul>
@@ -10235,7 +10235,7 @@ command)</p>
 <p>Expand the "Body" field on the form. This is where you can enter in an XML or JSON serialized Book record that will get added to the system. For now we'll leave this blank and let Rapise serialize the body for us later on when we actually write our test script. So we should now have:</p>
 <p><img alt="tutorial_web_services_pic20" src="../img/tutorial_web_services_rest20.png" /></p>
 <p>We have now completed the creation of our third test operation. Click on the <code>Save Requests</code> toolbar button.</p>
-<h2 id="2-saving-the-rest-requests-as-objects">2. Saving the REST Requests as Objects</h2>
+<h2 id="2-saving-the-rest-requests-as-objects">2. Saving the REST Requests as Objects<a class="headerlink" href="#2-saving-the-rest-requests-as-objects" title="Permanent link">&para;</a></h2>
 <p>Now that we have created our three REST requests, the next step is to actually create the Rapise objects that we can use in our JavaScript test scripts. Click on the <code>Update Object Tree</code> button in the toolbar to update the Object Tree with our new requests:</p>
 <p><img alt="tutorial_web_services_pic21" src="../img/tutorial_web_services_rest21.png" /></p>
 <p>Rapise will now take you REST requests and use that to update the main <a href="../object_tree/">Object tree</a>. Click on the <code>Object</code> tab of the main Rapise explorer, click the <code>Refresh</code> icon and you will see the "LibraryInformationSystem" heading displayed, with the three saved REST request listed underneath:</p>
@@ -10244,7 +10244,7 @@ command)</p>
 <p>In the next section we shall illustrate how you can write a test script using these learned objects.</p>
 <p>a. You can either have Rapise <strong>generate test scripts</strong> and verification points automatically (described in section 3a), or</p>
 <p>b. You can manually <strong>write the test scripts</strong> using the objects and the Rapise code editor (described in section 3b)</p>
-<h2 id="3a-generating-rest-test-scripts">3a. Generating REST Test Scripts</h2>
+<h2 id="3a-generating-rest-test-scripts">3a. Generating REST Test Scripts<a class="headerlink" href="#3a-generating-rest-test-scripts" title="Permanent link">&para;</a></h2>
 <p>Inside the REST request explorer, double-click on the <strong>Get_Session</strong>
 function to open up the request:</p>
 <p><img alt="tutorial_web_services_pic31" src="../img/tutorial_web_services_rest23.png" /></p>
@@ -10395,7 +10395,7 @@ function Test(params)
 }
 ```
 </p>
-<h2 id="3b-writing-rest-test-scripts">3b. Writing REST Test Scripts</h2>
+<h2 id="3b-writing-rest-test-scripts">3b. Writing REST Test Scripts<a class="headerlink" href="#3b-writing-rest-test-scripts" title="Permanent link">&para;</a></h2>
 <p>Open up the main <code>Main.js</code> file in the Rapise editor. It will initially consist of a single empty function <code>Test()</code>:
 
 <img alt="tutorial_web_services_pic24" src="../img/tutorial_web_services_rest34.png" />

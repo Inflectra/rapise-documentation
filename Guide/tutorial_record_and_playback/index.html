@@ -10023,10 +10023,10 @@
               
                 
                 
-                <h1 id="tutorial-web-testing-rvl">Tutorial: Web Testing (RVL)</h1>
+                <h1 id="tutorial-web-testing-rvl">Tutorial: Web Testing (RVL)<a class="headerlink" href="#tutorial-web-testing-rvl" title="Permanent link">&para;</a></h1>
 <p>In this section, you will learn how to record and execute a Rapise script against a web application.  We will be using a demo application called <a href="http://libraryinformationsystem.org/"><strong>Library Information System</strong></a>.  Our test will be simple.  It will log on to the library catalog, navigate to the main menu, and click on all of the menu options to make sure the links are working.</p>
 <p>You are viewing the <strong>codeless</strong> version of the tutorial. It demonstrates usage of <a href="/RVL/Overview/">Rapise Visual Language</a>. To view JavaScript-based tutorial click <a href="../tutorial_web_using_javascript/">here</a>.</p>
-<h2 id="open-rapise-and-create-new-test">Open Rapise and Create New Test</h2>
+<h2 id="open-rapise-and-create-new-test">Open Rapise and Create New Test<a class="headerlink" href="#open-rapise-and-create-new-test" title="Permanent link">&para;</a></h2>
 <p>Go to <strong>Start</strong> &gt; <strong>All Programs</strong> &gt; <strong>Inflectra</strong> &gt; <strong>Rapise</strong>.  The following window should appear.</p>
 <p><img alt="Rapise main window" src="../img/tutorial_record_and_playback1.png" /></p>
 <p>Select <code>File &gt; New Test</code> in the main menu.</p>
@@ -10043,10 +10043,10 @@
 <p>Rapise will create the new test and you will see the empty recording grid:</p>
 <p><img alt="RVL spreadsheet" src="../img/tutorial_record_and_playback7.png" /></p>
 <p>You are now ready to record your first test.</p>
-<h2 id="open-the-application-under-test">Open the Application Under Test</h2>
+<h2 id="open-the-application-under-test">Open the Application Under Test<a class="headerlink" href="#open-the-application-under-test" title="Permanent link">&para;</a></h2>
 <p>Open up Internet Explorer.  You will find it in <strong>Start</strong> &gt; <strong>All Programs</strong> &gt; <strong>Internet Explorer</strong>. In Internet Explorer, navigate to: <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a>:</p>
 <p><img alt="tutorial, demo, app" src="../img/tutorial_record_and_playback8.png" /></p>
-<h2 id="record-test-steps">Record Test Steps</h2>
+<h2 id="record-test-steps">Record Test Steps<a class="headerlink" href="#record-test-steps" title="Permanent link">&para;</a></h2>
 <p>In the Rapise window, press the <strong>Record</strong> button on the toolbar.</p>
 <p><img alt="ribbon, test, record-learn" src="../img/tutorial_record_and_playback9.png" /></p>
 <p>The <a href="../recording_activity_dialog/">Recording Activity Dialog</a> (RA dialog) will appear:</p>
@@ -10093,18 +10093,18 @@
 <p><img alt="clip0090" src="../img/tutorial_record_and_playback27.png" /></p>
 <p>Let's save our test.  Press the <code>Save</code> button at the top left of the Rapise window.</p>
 <p><img alt="save, test, file" src="../img/tutorial_record_and_playback28.png" /></p>
-<h2 id="playback">Playback</h2>
+<h2 id="playback">Playback<a class="headerlink" href="#playback" title="Permanent link">&para;</a></h2>
 <p>Let's execute the test we just created.  First, close Internet explorer. Rapise will open a new instance of Internet Explorer to the correct url (<a href="http://www.libraryinformationsystem.org">www.libraryinformationsystem.org</a>) when the test begins.</p>
 <p>To execute the script, press the Play button on the toolbar.</p>
 <p><img alt="play icon" src="../img/tutorial_record_and_playback29.png" /></p>
 <p>After execution, a screen like the one below will appear.  Each row represents a step in the test. The rows with green text are steps which passed, whereas the rows with red text are the steps which failed.</p>
 <p><img alt="report" src="../img/tutorial_record_and_playback30.png" /></p>
 <p>For more information on the report, see <a href="../automated_reporting/">Automated Reporting</a>.</p>
-<h2 id="playback-in-other-browsers">Playback in Other Browsers</h2>
+<h2 id="playback-in-other-browsers">Playback in Other Browsers<a class="headerlink" href="#playback-in-other-browsers" title="Permanent link">&para;</a></h2>
 <p>Now that we have recorded our test in Internet Explorer, we want to play the same script back in other browsers. That is very easy to do. Find <strong>web browser dropdown</strong> in the top right corner of the Rapise window and select a different browser (e.g. Firefox, Chrome, Selenium - *, etc.) and click the <code>Play</code> button.</p>
 <p><img alt="browser dropdown" src="../img/tutorial_record_and_playback31.png" /></p>
 <p>Before the playback in other browsers will work correctly, you will need to make sure you have <a href="../setting_up_web_browsers/">configured the web browsers</a> appropriately. In the case of the Selenium options, you will need to make sure you have installed the <a href="../setting_up_selenium/">Selenium WebDriver binaries</a> correctly.</p>
-<h2 id="track-and-learn-object-using-the-web-spy">Track and Learn Object Using the Web Spy</h2>
+<h2 id="track-and-learn-object-using-the-web-spy">Track and Learn Object Using the Web Spy<a class="headerlink" href="#track-and-learn-object-using-the-web-spy" title="Permanent link">&para;</a></h2>
 <p>This section will demonstrate how you can use Rapise to inspect the objects in a web page and Learn them for testing. This is useful in cases where you have more complex applications to test and you need to
 pick specific objects. For example you may want to select one of the books in the grid based on its name rather than its row number (which may change if you add books).</p>
 <p>On the toolbar expand the dropdown list for the <strong>Spy</strong> tool and make sure that <code>Web</code> is selected:</p>
@@ -10146,7 +10146,7 @@ item in the DOM Tree automatically:</p>
 </ul>
 <p>You should now have the following:</p>
 <p><img alt="amsterdam getinnertext" src="../img/tutorial_record_and_playback42.png" /></p>
-<h2 id="test-xpath-and-learn-object-using-the-web-spy">Test XPATH and Learn Object Using the Web Spy</h2>
+<h2 id="test-xpath-and-learn-object-using-the-web-spy">Test XPATH and Learn Object Using the Web Spy<a class="headerlink" href="#test-xpath-and-learn-object-using-the-web-spy" title="Permanent link">&para;</a></h2>
 <p>In addition to letting Rapise automatically learn the object from the Web Spy, you can manually enter in <strong>XPATH</strong> or <strong>CSS</strong> queries to find matching elements on the page and then learn those for use in your test.</p>
 <p>For example, suppose we want to dynamically find the row that has the cell containing Amsterdam and then click on its <strong>Edit</strong> hyperlink.</p>
 <p>Open up the Web Spy as before:</p>
@@ -10174,7 +10174,7 @@ item in the DOM Tree automatically:</p>
 <p><img alt="object learned" src="../img/tutorial_record_and_playback45.png" /></p>
 <p>Click <code>Finish</code> and the object will have been added to the Object Tree of the current test:</p>
 <p><img alt="onject tree" src="../img/tutorial_record_and_playback46.png" /></p>
-<h2 id="modify-the-test">Modify the Test</h2>
+<h2 id="modify-the-test">Modify the Test<a class="headerlink" href="#modify-the-test" title="Permanent link">&para;</a></h2>
 <p>To click on this object, simply click on the row in the grid where you want this action to occur and choose “<strong>Insert Row Before</strong>” from the toolbar:</p>
 <p><img alt="blank line" src="../img/tutorial_record_and_playback47.png" /></p>
 <p>In this new row, right-click on each of the cells, and pick the following values from the dropdown lists:</p>
@@ -10213,7 +10213,7 @@ item in the DOM Tree automatically:</p>
 <p>Now click <strong>Play</strong> to playback the new test:</p>
 <p><img alt="clip0104" src="../img/tutorial_record_and_playback55.png" /></p>
 <p>The test should now pass successfully.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../tutorial_web_using_javascript/">Tutorial: Web Testing (JavaScript)</a></li>
 <li><a href="../browser_settings/">Browser Profiles</a></li>

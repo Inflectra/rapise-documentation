@@ -10077,10 +10077,10 @@
               
                 
                 
-                <h1 id="rvl-object">RVL Object</h1>
+                <h1 id="rvl-object">RVL Object<a class="headerlink" href="#rvl-object" title="Permanent link">&para;</a></h1>
 <p>Some common tasks related to script execution, such as calling scripts, executing separate sheets, returning, exiting and bailing out is served by RVL.</p>
-<h2 id="actions">Actions</h2>
-<h2 id="doplayscript">DoPlayScript</h2>
+<h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
+<h2 id="doplayscript">DoPlayScript<a class="headerlink" href="#doplayscript" title="Permanent link">&para;</a></h2>
 <p><code>DoPlayScript(/**String*/scriptPath, /**String*/sheetName)</code></p>
 <p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code> passing [extraParams] for variable values.</p>
 <ul>
@@ -10094,26 +10094,26 @@
 <p><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></p>
 </li>
 </ul>
-<h2 id="doplaysheet">DoPlaySheet</h2>
+<h2 id="doplaysheet">DoPlaySheet<a class="headerlink" href="#doplaysheet" title="Permanent link">&para;</a></h2>
 <p><code>DoPlaySheet(/**String*/sheetName)</code></p>
 <p>Play RVL sheet <code>sheetName</code> from current workbook passing [extraParams] for variable values.</p>
 <ul>
 <li><code>sheetName</code> {<code>/**string*/</code>}: Excel sheet containing the script</li>
 <li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
-<h2 id="doplaytest">DoPlayTest</h2>
+<h2 id="doplaytest">DoPlayTest<a class="headerlink" href="#doplaytest" title="Permanent link">&para;</a></h2>
 <p><code>DoPlayTest(/**String*/sstestPath)</code></p>
 <p>Executes specified test passing additional arguments specified as <code>extraParams</code>. It is an analog of <a href="../Global/#DoInvokeTest">Global.DoInvokeTest</a>
 * <code>sstestPath</code> {<code>/**string*/</code>}: Path to test
 * <strong>[extraParams]</strong>: Param values to be passed into test. May then be accessed via <a href="../Tester/#GetParam">Tester.GetParam</a>.</p>
-<h2 id="doplaytestparallel">DoPlayTestParallel</h2>
+<h2 id="doplaytestparallel">DoPlayTestParallel<a class="headerlink" href="#doplaytestparallel" title="Permanent link">&para;</a></h2>
 <p><code>DoPlayTestParallel(/**String*/sstestPath, /**objectId*/threadsMap)</code></p>
 <p>Executes specified test in parallel threads passing additional arguments specified by in <code>threadsMap</code> map. There are as many threads as there are rows in the map.,
 * <code>sstestPath</code> {<code>/**string*/</code>}: Path to test
 * <code>threadsMap</code> {<code>/**Map*/</code>}: The name of the map defining params. 1<sup>st</sup> column - Thread ID (alphanumeric, i.e. THREAD01), other columns - parameter variables, i.e. column name <code>g_browserLibrary</code>, values 'Selenium Chrome', 'Selenium Firefox' etc
 * <strong>[extraParams]</strong>: Global variable values common for all threads.</p>
 <p><img alt="DoPlayTestParallel" src="../../RVL/img/RVL_DoPlayParallel.png" /></p>
-<h2 id="exit">Exit</h2>
+<h2 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">&para;</a></h2>
 <p><code>Exit(/**String*/ message, /**Boolean*/isError)</code></p>
 <p>Break execution at the specified line</p>
 <ul>
@@ -10124,7 +10124,7 @@
 <p><code>isError</code> {<code>/**boolean*/</code>}: Specify 'false' if you want just exit without exit message</p>
 </li>
 </ul>
-<h2 id="getdropdownvalue">GetDropdownValue</h2>
+<h2 id="getdropdownvalue">GetDropdownValue<a class="headerlink" href="#getdropdownvalue" title="Permanent link">&para;</a></h2>
 <p>Remap dropdown value from one list to another</p>
 <p><code>GetDropdownValue(/**string*/id, /**string*/idList, /**string*/valList, /**string*/xlsPath)</code></p>
 <ul>
@@ -10137,13 +10137,13 @@
 <p><img alt="States Dropdown" src="../../RVL/img/RVL_GetDropdownValue_states.png" /></p>
 <p>Then the call <code>var stateCode = RVL.GetDropdownValue(stateName, "Functions.SetState.stateName", "stateCode")</code> would return state code for state name. I.e. if <code>stateName="Colorado"</code> then returned value is "CO".</p>
 <p>See also <a href="../../Guide/rvl_editor/#param-dropdowns">RVL Editor Param Dropdowns</a></p>
-<h2 id="return">Return</h2>
+<h2 id="return">Return<a class="headerlink" href="#return" title="Permanent link">&para;</a></h2>
 <p><code>Return(/**String*/ message)</code></p>
 <p>Return from specified line. This method should be called from within RVL</p>
 <ul>
 <li><code>message</code> {<code>/**string*/</code>}: Return message</li>
 </ul>
-<h2 id="setlocatoropts">SetLocatorOpts</h2>
+<h2 id="setlocatoropts">SetLocatorOpts<a class="headerlink" href="#setlocatoropts" title="Permanent link">&para;</a></h2>
 <p><code>SetLocatorOpts(/**objectid*/objectid, {optname:optvalue,...})</code></p>
 <p>Set additional locator options for specified object. This is a way to modify various script parameters such as <code>locator</code>, <code>xpath</code>, <code>url</code> and thus find different objects.</p>
 <ul>
@@ -10194,7 +10194,7 @@
 </table>
 <p>All params going after <code>objectid</code> are optional and depend on specified object's locator.</p>
 <p>If you want to reset all values to default value call this method with just <code>objectid</code> and no additional parameters.</p>
-<h2 id="formatstring">FormatString</h2>
+<h2 id="formatstring">FormatString<a class="headerlink" href="#formatstring" title="Permanent link">&para;</a></h2>
 <p><code>FormatString(/**string*/fmtString, {optname:optvalue,...})</code></p>
 <p>Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: <code>My name is {name}</code>.</p>
 <table>
@@ -10249,11 +10249,11 @@
 </tbody>
 </table>
 <p>This Action should put string value <code>one plus five equals to 6</code> into the variable LastResult.</p>
-<h2 id="properties">Properties</h2>
-<h2 id="currentscriptpath">CurrentScriptPath</h2>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h2 id="currentscriptpath">CurrentScriptPath<a class="headerlink" href="#currentscriptpath" title="Permanent link">&para;</a></h2>
 <p><code>GetCurrentScriptPath()</code></p>
 <p>Return path to currently executed .rvl.xls file</p>
-<h2 id="currentscriptsheet">CurrentScriptSheet</h2>
+<h2 id="currentscriptsheet">CurrentScriptSheet<a class="headerlink" href="#currentscriptsheet" title="Permanent link">&para;</a></h2>
 <p><code>GetCurrentScriptSheet()</code></p>
 <p>Return sheet name of the currently executed .rvl.xls file</p>
                 

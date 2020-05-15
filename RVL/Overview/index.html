@@ -10043,10 +10043,10 @@
               
                 
                 
-                <h1 id="why-rvl">Why RVL?</h1>
+                <h1 id="why-rvl">Why RVL?<a class="headerlink" href="#why-rvl" title="Permanent link">&para;</a></h1>
 <p>RVL stands for <strong>Rapise Visual Language</strong>. It is inspired by well known software testing methodologies <em>Keyword Driven Testing</em> and <em>Data Driven Testing</em>.</p>
 <p>This section contains a review of current approaches and concepts to highlight the ideas behind RVL design. You don't need to read this section if you want to learn RVL. However you may need it if you want to understand how it compares to other approaches and why we believe it is not just yet another approach but the way forward to diminish struggling while building real live UI Automation.</p>
-<h3 id="keyword-driven-testing">Keyword Driven Testing</h3>
+<h3 id="keyword-driven-testing">Keyword Driven Testing<a class="headerlink" href="#keyword-driven-testing" title="Permanent link">&para;</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Keyword-driven_testing">Keywoard Driven Testing</a> separates the documentation of test cases -including the data to use- from the prescription of the way the test cases are executed. As a result it separates the test creation process into two distinct stages: a design and development stage, and an execution stage.</p>
 <table>
 <thead>
@@ -10079,7 +10079,7 @@
 </tbody>
 </table>
 <p><em>Keyword Driven Testing</em>: Column <em>A</em> constains a <em>Keyword</em>, columns <em>B</em>, <em>C</em>, <em>D</em> provide parameters for a <em>Keyword</em>.</p>
-<h3 id="data-driven-testing">Data Driven Testing</h3>
+<h3 id="data-driven-testing">Data Driven Testing<a class="headerlink" href="#data-driven-testing" title="Permanent link">&para;</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Data-driven_testing">Data Driven Testing</a> is the creation of test scripts to run together with their related data sets in a framework. The framework provides re-usable test logic to reduce maintenance and improve test coverage. Input and result (test criteria) data values can be stored in one or more central data sources or databases, the actual format and organization can be implementation specific.</p>
 <table>
 <thead>
@@ -10108,11 +10108,11 @@
 </tbody>
 </table>
 <p><em>Data Driven Testing</em>: We have test input and expected output in data sources.</p>
-<h3 id="gherkin-cucumber">Gherkin / Cucumber</h3>
+<h3 id="gherkin-cucumber">Gherkin / Cucumber<a class="headerlink" href="#gherkin-cucumber" title="Permanent link">&para;</a></h3>
 <p>There are known approaches intended to make scripting more close to spoken languages. </p>
 <p>This is a very wise approach improving test readability. The test case is described in <a href="https://github.com/cucumber/cucumber/wiki/Gherkin">Gherkin</a> - business readable, domain specific language. It describes behavior without detailing how that behavior is implemented.</p>
 <p>Essential part of this framework is implementation of Given-When-Then steps that should be done with one of the common programming languages. Here is the place where the need in scriping skills are still required.</p>
-<h2 id="why-rvl_1">Why RVL?</h2>
+<h2 id="why-rvl_1">Why RVL?<a class="headerlink" href="#why-rvl_1" title="Permanent link">&para;</a></h2>
 <p>Initially Rapise has everything to build <em>Data Driven</em> and <em>Keyword Driven</em> test frameworks. Even without RVL. </p>
 <p>It is possible do define <em>scenarios</em> or <em>keywords</em>, connect to <em>Spreadsheet</em> or <em>Database</em> and build the test set.</p>
 <p>Framework based approaches require one to split data from test logic and maintain them separately. So:
@@ -10125,9 +10125,9 @@
 </ol>
 <p>So in ideal world there are two persons working as a team: UI Automation scripting expert and target domain specialist.</p>
 <p>In reality we see that due to real life limitations it is common that all scripting and test data is done by one person. It is either a programmer who gets familiar with target AUT domain or analyst who has some scripting skills.</p>
-<h3 id="reasons-for-struggling">Reasons for struggling</h3>
+<h3 id="reasons-for-struggling">Reasons for struggling<a class="headerlink" href="#reasons-for-struggling" title="Permanent link">&para;</a></h3>
 <p>There are several reasons that make a learning curve longer and adoption harder.</p>
-<h4 id="syntax-sugar">Syntax Sugar</h4>
+<h4 id="syntax-sugar">Syntax Sugar<a class="headerlink" href="#syntax-sugar" title="Permanent link">&para;</a></h4>
 <p>We found a reason why people get stuck while trying to implement a test case.</p>
 <p>Most of programming languages including <em>JavaScript</em> were designed by people with mathematical background.  So this statement appears clear and simple for a programmer:</p>
 <p><div class="highlight"><pre><span></span><code><span class="nx">Deposit</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;O\&#39;Connor&#39;</span><span class="p">,</span> <span class="mf">17.99</span><span class="p">);</span>
@@ -10147,14 +10147,14 @@ Means text concatenation in <em>JavaScript</em>, however the same is mathematica
 </code></pre></div></p>
 <p>Is good for <em>JavaScript</em> or <em>C#</em> world and leads <code>false</code> results in <em>Java</em>.</p>
 <p>So even if we have programming skills it is still a problem to switch from one language to another and may produce potential issues.</p>
-<h3 id="data-tables">Data Tables</h3>
+<h3 id="data-tables">Data Tables<a class="headerlink" href="#data-tables" title="Permanent link">&para;</a></h3>
 <p>With Keywword Driven and Data Driven approach we get a table that represents a sequence. Sequence of patients to proceed, sequence of user logins etc. </p>
 <p>And sometimes we feel the lack of common debugging facilities:
 - run keyword for only one line,
 - start from specific row,
 - or stop before processing specific line.</p>
 <p>So here we get to a point where the table should better be a part of the script rather than just external data source.</p>
-<h3 id="state-of-the-art">State of The Art</h3>
+<h3 id="state-of-the-art">State of The Art<a class="headerlink" href="#state-of-the-art" title="Permanent link">&para;</a></h3>
 <p>RVL reflects a common trend in programming languages where computational power and flexibility are sacrificed towards clarity and readability.</p>
 <p>Some language is reduced to a reasonable subset in the sake of more concise and focused presentation. Just couple of examples.</p>
 <p><a href="http://learnjade.com/">Jade</a> template engine simplifies writing HTML pages by clearing syntax sugar (<code>&lt; &gt; / %</code>) so HTML code:
@@ -10167,7 +10167,7 @@ Gets reduced to more textual view:
         p.greeting Hello, World!
 </code></pre></div></p>
 <p><a href="https://golang.org/">Go</a> language is promoted as <em>Go is expressive, concise, clean, and efficient.</em>. In fact its authors sacrificed many advanced features of common programming languages (classes, inheritance, templates) to get more clarity. This is extremely important because sophisticated features produce sophisticated problems that are hard to nail down. And if you deal with high-load distributed systems minor gain through use of unclear feature may lead to major unpredictable loss.</p>
-<h2 id="rvl-concepts">RVL Concepts</h2>
+<h2 id="rvl-concepts">RVL Concepts<a class="headerlink" href="#rvl-concepts" title="Permanent link">&para;</a></h2>
 <p>RVL's goal is to minimize the struggling. </p>
 <ol>
 <li>We assume that one should have minimal care about the syntax sugar and syntax rules. This means that we must avoid braces, quotes or any special symbols <code>' " ; , . ( ) [ ] { } &amp; $ % # @</code> and make it possible to maintain the script without them.</li>

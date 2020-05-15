@@ -9963,11 +9963,11 @@
               
                 
                 
-                <h1 id="columns">Columns</h1>
+                <h1 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link">&para;</a></h1>
 <p>RVL script is a spreadsheet containing set of 7 columns in fixed order:</p>
 <p><img alt="Columns" src="../img/Columns.png" />
 <em>RVL Columns</em></p>
-<h2 id="default-columns">Default Columns</h2>
+<h2 id="default-columns">Default Columns<a class="headerlink" href="#default-columns" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>1<sup>st</sup> <em>Flow</em> -- Control flow. This column dedicated to specifying structural information such blocks, Branches (If-Else), loops.</p>
@@ -9998,14 +9998,14 @@
 <li>7<sup>th</sup> <em>ParamValue</em> - Depends on the <em>ParamType</em>.</li>
 </ul>
 <p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p>
-<h2 id="adding-custom-columns">Adding Custom Columns</h2>
+<h2 id="adding-custom-columns">Adding Custom Columns<a class="headerlink" href="#adding-custom-columns" title="Permanent link">&para;</a></h2>
 <p>By default RVL always displays column <code>H</code>. It is sometimes useful (to store temp value, add a note etc).</p>
 <p>One may show more columns. To do this open the file (i.e. <code>Main.rvl.xlsx</code>) in the spreadsheet editor or Excel and define some values in columns <code>I</code>, <code>J</code> etc respectively:</p>
 <p><img alt="Excel Columns" src="../img/CustomColumnsExcel.png" /></p>
 <p>Now if you re-open this document in RVL these columns will also be displayed:</p>
 <p><img alt="Excel Columns" src="../img/CustomColumnsRVL.png" /></p>
 <p>The usage of this columns is up to you. You may use them just for information or make them 'live' by assigning custom actions as will be described in the next section.</p>
-<h2 id="custom-column-actions">Custom Column Actions</h2>
+<h2 id="custom-column-actions">Custom Column Actions<a class="headerlink" href="#custom-column-actions" title="Permanent link">&para;</a></h2>
 <p>RVL is flexible and one may use more columns to implement custom script logic.</p>
 <p>The script occupies first 7 columns of the spreadsheet (<strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong>, <strong>E</strong>, <strong>F</strong>, <strong>G</strong>).</p>
 <p>By default the script also displays the column <strong>H</strong>. It may also display as many additional columns as needed (see previous <a href="#adding-custom-columns">section</a>). It may have some value but has no side effects, i.e.:</p>
@@ -10021,7 +10021,7 @@
 <li>Do custom action.</li>
 </ul>
 <p>You may have one or more custom columns defined in the script to achieve necessary goals. This will require you to override <code>OnRVLScriptStep</code> function as described below.</p>
-<h2 id="onrvlscriptstep">OnRVLScriptStep</h2>
+<h2 id="onrvlscriptstep">OnRVLScriptStep<a class="headerlink" href="#onrvlscriptstep" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Note: The information below requires some JavaScript knowledge. In most cases all you need is to copy relevant snippet from the documentation or KB to achieve desired behavior</p>
 </blockquote>
@@ -10042,7 +10042,7 @@
 </li>
 <li><code>place</code> - One of <code>"before"</code> - callback just before executing row action, <code>"after"</code> - callback called after action has just been done.</li>
 </ul>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://www.inflectra.com/Support/KnowledgeBase/KB433.aspx">KB 433</a> Using Extra Columns in RVL to add Report Attributes</li>
 </ul>

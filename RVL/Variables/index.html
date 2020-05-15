@@ -10059,10 +10059,10 @@
               
                 
                 
-                <h1 id="variables">Variables</h1>
+                <h1 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h1>
 <p>In RVL, variables are useful for storing intermediate results as well as accessing and passing global values to external <em>JavaScript</em> functions.</p>
 <p>Variables may be used in <a href="../Params/">Params</a> to <a href="../Conditions/">Conditions</a> and in <a href="../Actions/">Actions</a>.</p>
-<h2 id="declaring">Declaring</h2>
+<h2 id="declaring">Declaring<a class="headerlink" href="#declaring" title="Permanent link">&para;</a></h2>
 <p>This line declares a variable without any values. Its value may be assigned later:</p>
 <table>
 <thead>
@@ -10088,12 +10088,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="assigning">Assigning</h2>
-<h3 id="default-value-for-global-variable">Default Value for Global Variable</h3>
+<h2 id="assigning">Assigning<a class="headerlink" href="#assigning" title="Permanent link">&para;</a></h2>
+<h3 id="default-value-for-global-variable">Default Value for Global Variable<a class="headerlink" href="#default-value-for-global-variable" title="Permanent link">&para;</a></h3>
 <p>Special parameter name <code>defaultValue</code> of the Global variable definition allows setting default value. This may be needed when you don't know if variable was set before calling this script. So the value will only be assigned is variable is currently undefined. Otherwise the Variable keeps its defined value.</p>
 <p><img alt="defaultValue" src="../img/RVL_Variable_DefaultValue.png" /></p>
 <p>This helps to make sheets using global variables to be executable standalone. I.e. you may use <a href="../../Guide/rvl_editor/#context-menu">Play This Sheet</a> in RVL and be sure that Global variable will have a value.</p>
-<h3 id="assignment-expression">Assignment Expression</h3>
+<h3 id="assignment-expression">Assignment Expression<a class="headerlink" href="#assignment-expression" title="Permanent link">&para;</a></h3>
 <p>This line declares and assigns value <em>5</em> to a variable <code>MyVar2</code>:</p>
 <table>
 <thead>
@@ -10120,7 +10120,7 @@
 </tbody>
 </table>
 <p>If the variable is declared earlier, then assignment just changes its value. If the variable is not yet declared, then assignment is actually a declaration with assignment.</p>
-<h3 id="action-output">Action Output</h3>
+<h3 id="action-output">Action Output<a class="headerlink" href="#action-output" title="Permanent link">&para;</a></h3>
 <p>If an action returns a value it can be assigned to a variable via <code>Output</code>.</p>
 <table>
 <thead>
@@ -10164,7 +10164,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="auto-assignment">Auto Assignment</h3>
+<h3 id="auto-assignment">Auto Assignment<a class="headerlink" href="#auto-assignment" title="Permanent link">&para;</a></h3>
 <p>There are two auto assigned variables in RVL:  <code>LastResult</code> and <code>LastObject</code>. If an action returns some value then it is assigned to <code>LastResult</code>. <code>LastObject</code> is effectively an alias to the last used object in <strong>Object</strong> column.</p>
 <table>
 <thead>
@@ -10200,7 +10200,7 @@
 </tbody>
 </table>
 <p>This snippet prints OS version to the report.</p>
-<h2 id="using">Using</h2>
+<h2 id="using">Using<a class="headerlink" href="#using" title="Permanent link">&para;</a></h2>
 <p>Any <a href="../Params/">Params</a> value may accept a <em>variable</em>:</p>
 <table>
 <thead>
@@ -10282,9 +10282,9 @@
 </tbody>
 </table>
 <p>The Output value may then be used as a param value in actions, conditions, assertions and expressions.</p>
-<h2 id="local-variables">Local Variables</h2>
+<h2 id="local-variables">Local Variables<a class="headerlink" href="#local-variables" title="Permanent link">&para;</a></h2>
 <p>By default declared variables are assumed to be local. Local variables may be used only within the current RVL script and not visible from other RVL scripts or <em>JavaScript</em> code.</p>
-<h2 id="global-variables">Global Variables</h2>
+<h2 id="global-variables">Global Variables<a class="headerlink" href="#global-variables" title="Permanent link">&para;</a></h2>
 <p>You may have a <em>JavaScript</em> variable defined in the user <em>Functions</em> file (<code>*.user.js</code>), i.e.:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Piece from MyTest1.user.js</span>
 <span class="kd">var</span> <span class="nx">globalVar</span> <span class="o">=</span> <span class="s2">&quot;Value&quot;</span><span class="p">;</span>
@@ -10316,7 +10316,7 @@
 </tbody>
 </table>
 <p>Global variables are useful for exchanging and/or sharing data between different RVL scripts or between <em>RVL</em> and <em>JavaScript</em>.</p>
-<h2 id="variable-actions">Variable Actions</h2>
+<h2 id="variable-actions">Variable Actions<a class="headerlink" href="#variable-actions" title="Permanent link">&para;</a></h2>
 <p>One may use an expression to change the value of a variable. Here are several common variable operations that may be used to modify variable values:</p>
 <ol>
 <li>
@@ -10416,7 +10416,7 @@
 </table>
 <p>In this example if <code>textVar</code> was empty and <code>numVar</code> had value <code>5</code> then the final value of <code>textVar</code> is the following text:
     <code>Final value: 5</code></p>
-<h2 id="examples">Examples</h2>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Variables may be declared as <em>Local</em> or <em>Global</em>. Declaration may or may not contain initial value</p>
 <p><img alt="Variable Declarations" src="../img/Variables_Declaration.png" /></p>
 <p>Variables may accept output from the <em>Action</em>:</p>

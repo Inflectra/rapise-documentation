@@ -9965,11 +9965,11 @@
               
                 
                 
-                <h1 id="data-driven-testing">Data-Driven Testing</h1>
+                <h1 id="data-driven-testing">Data-Driven Testing<a class="headerlink" href="#data-driven-testing" title="Permanent link">&para;</a></h1>
 <p>Many test automation scenarios require performing same steps with different data. For example, login into application with different user credentials, or enter several lines of a sales order into a table. This is data-driven testing. From this article you will learn how to do this in Rapise Visual Language (RVL) and JavaScript modes.  You will also learn how to define data within a test and in an external spreadsheet.</p>
-<h2 id="ddt-in-rvl">DDT in RVL</h2>
+<h2 id="ddt-in-rvl">DDT in RVL<a class="headerlink" href="#ddt-in-rvl" title="Permanent link">&para;</a></h2>
 <p>Let's start from <a href="../visual_language/">RVL mode</a> first. With RVL you can delegate low-level complex automation tasks to a developer team and focus on testing scenarios and data used to fill forms and tables.</p>
-<h2 id="embedded-data">Embedded Data</h2>
+<h2 id="embedded-data">Embedded Data<a class="headerlink" href="#embedded-data" title="Permanent link">&para;</a></h2>
 <p>First, define data schema. In the Flow column of RVL spreadsheet choose Map.</p>
 <p><img src="/Guide/img/ddt_data_map.png" width="190" /></p>
 <p>Then hit <code>TAB</code> on the keyboard and Rapise will generate a template for the data table.</p>
@@ -9994,7 +9994,7 @@
 <p><img src="/Guide/img/ddt_data_map_sequential.png" width="862" /></p>
 <p>After execution the report displays data from the second row.</p>
 <p><img src="/Guide/img/ddt_data_map_report2.png" width="620" /></p>
-<h2 id="excel-data">Excel Data</h2>
+<h2 id="excel-data">Excel Data<a class="headerlink" href="#excel-data" title="Permanent link">&para;</a></h2>
 <p>Now we are ready to put data into external spreadsheet. Let's create one. In the <code>Files</code> view right click <code>Scripts</code> folder and choose <code>Create &gt; Spreadsheet...</code></p>
 <p><img src="/Guide/img/ddt_spreadsheet.png" width="360" /></p>
 <p>We'll go with default options.</p>
@@ -10010,7 +10010,7 @@
 <p>If we'll do a <a href="/RVL/Loops/">loop</a> with Data map Rapise will iterate through all lines on execution.</p>
 <p><img src="/Guide/img/ddt_spreadsheet_loop.png" width="870" /></p>
 <p><img src="/Guide/img/ddt_spreadsheet_report2.png" width="623" /></p>
-<h2 id="ddt-in-javascript">DDT in JavaScript</h2>
+<h2 id="ddt-in-javascript">DDT in JavaScript<a class="headerlink" href="#ddt-in-javascript" title="Permanent link">&para;</a></h2>
 <p>One can read data from a spreadsheet in JavaScript mode as well.  There is a global Spreadsheet object that is available in every test. Here is an example of Spreadhseet API usage.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoAttach</span><span class="p">(</span><span class="s1">&#39;Calc.xls&#39;</span><span class="p">,</span> <span class="s1">&#39;Calc Data&#39;</span><span class="p">);</span>
 <span class="k">while</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">())</span>
@@ -10032,7 +10032,7 @@
 <p>Description of all Spreadsheet actions and properties is available <a href="/Libraries/Spreadsheet/">here</a>.</p>
 <p>Open <code>UsingSpreadsheet</code> sample test from the start page to see a working example (scroll the list of samples down).</p>
 <p><img src="/Guide/img/ddt_sampletest.png" width="1177" /></p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Data-Driven Software Testing with Rapise (<a href="https://youtu.be/eWcoN_xNXgQ">watch video</a>)</li>
 <li>How To: Easily Attaching RVL Script to an External Spreadsheet in Rapise (<a href="https://youtu.be/iuWCXmzZsow">watch video</a>)</li>

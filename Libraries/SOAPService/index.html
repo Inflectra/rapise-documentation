@@ -10117,13 +10117,13 @@
               
                 
                 
-                <h1 id="soapservice">SOAPService</h1>
+                <h1 id="soapservice">SOAPService<a class="headerlink" href="#soapservice" title="Permanent link">&para;</a></h1>
 <p>This behavior pattern implements SOAP service client.</p>
 <p>Extends <a href="../SeSSimulatedObject/">SeSSimulatedObject</a></p>
 <p><strong>Behavior Pattern: SOAPServiceBehavior</strong></p>
 <!-- ============================== property summary ========================== -->
 
-<h3 id="property-summary">Property Summary</h3>
+<h3 id="property-summary">Property Summary<a class="headerlink" href="#property-summary" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -10180,7 +10180,7 @@
 </table>
 <!-- ============================== action summary ========================== -->
 
-<h3 id="action-summary">Action Summary</h3>
+<h3 id="action-summary">Action Summary<a class="headerlink" href="#action-summary" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -10205,9 +10205,9 @@
 </table>
 <!-- ============================== property detail ========================== -->
 
-<h3 id="property-detail">Property Detail</h3>
+<h3 id="property-detail">Property Detail<a class="headerlink" href="#property-detail" title="Permanent link">&para;</a></h3>
 <p><a name="Credential"></a></p>
-<h4 id="credential">Credential</h4>
+<h4 id="credential">Credential<a class="headerlink" href="#credential" title="Permanent link">&para;</a></h4>
 <p>The HTTP Basic Authentication Credentials (if any).
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">credential</span> <span class="o">=</span> <span class="p">{};</span>
@@ -10219,12 +10219,12 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetCredential, SetCredential</p>
 <p><a name="Name"></a></p>
-<h4 id="name">Name</h4>
+<h4 id="name">Name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
 <p>The name of the request operation</p>
 <p>Type: string</p>
 <p>Accessors: GetName</p>
 <p><a name="ResponseBodyObject"></a></p>
-<h4 id="responsebodyobject">ResponseBodyObject</h4>
+<h4 id="responsebodyobject">ResponseBodyObject<a class="headerlink" href="#responsebodyobject" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP response deserialized from SOAP into a JavaScript object.</p>
 <p><strong>Getter Parameters:</strong></p>
 <table>
@@ -10251,12 +10251,12 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetResponseBodyObject</p>
 <p><a name="ResponseBodyText"></a></p>
-<h4 id="responsebodytext">ResponseBodyText</h4>
+<h4 id="responsebodytext">ResponseBodyText<a class="headerlink" href="#responsebodytext" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP response in raw text format.</p>
 <p>Type: string</p>
 <p>Accessors: GetResponseBodyText</p>
 <p><a name="ResponseHeaders"></a></p>
-<h4 id="responseheaders">ResponseHeaders</h4>
+<h4 id="responseheaders">ResponseHeaders<a class="headerlink" href="#responseheaders" title="Permanent link">&para;</a></h4>
 <p>Returns the list of HTTP headers returned with the HTTP response.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetResponseHeaders</span><span class="p">();</span>
@@ -10270,20 +10270,20 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetResponseHeaders</p>
 <p><a name="ResponseIsErrorStatus"></a></p>
-<h4 id="responseiserrorstatus">ResponseIsErrorStatus</h4>
+<h4 id="responseiserrorstatus">ResponseIsErrorStatus<a class="headerlink" href="#responseiserrorstatus" title="Permanent link">&para;</a></h4>
 <p>Returns 'true 'if an HTTP error code came back from the web service.</p>
 <p>Type: boolean</p>
 <p>Accessors: GetResponseIsErrorStatus</p>
 <p><a name="Url"></a></p>
-<h4 id="url">Url</h4>
+<h4 id="url">Url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h4>
 <p>The URL being used to access the web service.</p>
 <p>Type: string</p>
 <p>Accessors: GetUrl, SetUrl</p>
 <!-- ============================== action detail ========================== -->
 
-<h3 id="action-detail">Action Detail</h3>
+<h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoExecute"></a>    </p>
-<h4 id="doexecutemethod-params-headers">DoExecute(method, params, headers)</h4>
+<h4 id="doexecutemethod-params-headers">DoExecute(method, params, headers)<a class="headerlink" href="#doexecutemethod-params-headers" title="Permanent link">&para;</a></h4>
 <p>Executes a SOAP service operation, substituting any of the provided parameter values if necessary.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -10316,7 +10316,7 @@ Sample code:</p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.soapservice.doexecute"></a></p>
 <p><a name="DoExecuteRaw"></a>    </p>
-<h4 id="doexecuterawmethod-body-params">DoExecuteRaw(method, body, params)</h4>
+<h4 id="doexecuterawmethod-body-params">DoExecuteRaw(method, body, params)<a class="headerlink" href="#doexecuterawmethod-body-params" title="Permanent link">&para;</a></h4>
 <p>Sends a SOAP request as is.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -10349,7 +10349,7 @@ Sample code:</p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.soapservice.doexecuteraw"></a></p>
 <p><a name="DoVerify"></a>    </p>
-<h4 id="doverifymsg-jsonpath-expectedvalue">DoVerify(msg, jsonPath, expectedValue)</h4>
+<h4 id="doverifymsg-jsonpath-expectedvalue">DoVerify(msg, jsonPath, expectedValue)<a class="headerlink" href="#doverifymsg-jsonpath-expectedvalue" title="Permanent link">&para;</a></h4>
 <p>Checks that a given part of response equals the expected value.</p>
 <p><strong>Parameters:</strong></p>
 <table>

@@ -9995,8 +9995,8 @@
               
                 
                 
-                <h1 id="client-performance-monitoring">Client Performance Monitoring</h1>
-<h2 id="concept-and-architecture">Concept and Architecture</h2>
+                <h1 id="client-performance-monitoring">Client Performance Monitoring<a class="headerlink" href="#client-performance-monitoring" title="Permanent link">&para;</a></h1>
+<h2 id="concept-and-architecture">Concept and Architecture<a class="headerlink" href="#concept-and-architecture" title="Permanent link">&para;</a></h2>
 <p>The purpose of this integration is to satisfy the following use case.</p>
 <blockquote>
 <p>The tester wants to measure the speed of the user interface that a user would experience whilst performing a protocol-level load test:</p>
@@ -10019,11 +10019,11 @@
 </li>
 <li>At the end of the performance test, RemoteLaunch will read the entire performance test and send back the results to SpiraTest.</li>
 </ol>
-<h2 id="neoload-global-object">NeoLoad Global Object</h2>
+<h2 id="neoload-global-object">NeoLoad Global Object<a class="headerlink" href="#neoload-global-object" title="Permanent link">&para;</a></h2>
 <p>Rapise has a global object named NeoLoad which is capable of sending client performance metrics to the NeoLoad controller.</p>
 <p><img alt="clip0058" src="../img/client_performance_monitoring2.png" /></p>
 <p>NeoLoad will display the received data in a both tree and graph views.</p>
-<h2 id="neoload-tree-view">NeoLoad Tree View</h2>
+<h2 id="neoload-tree-view">NeoLoad Tree View<a class="headerlink" href="#neoload-tree-view" title="Permanent link">&para;</a></h2>
 <p><img alt="clip0059" src="../img/client_performance_monitoring3.png" /></p>
 <p>The root of the tree is the name of a script that was executed by Rapise. On the first level we have three groups:</p>
 <ul>
@@ -10031,10 +10031,10 @@
 <li>Page Load – this folder contains nodes for each page and nested resource. Duration values are obtained using Window.performance structure. See also <a href="http://www.w3.org/TR/navigation-timing/#processing-model">http://www.w3.org/TR/navigation-timing/#processing-model</a></li>
 <li>Transactions – this folder contains counters for transactions defined by a script.</li>
 </ul>
-<h2 id="graph-view">Graph View</h2>
+<h2 id="graph-view">Graph View<a class="headerlink" href="#graph-view" title="Permanent link">&para;</a></h2>
 <p>Each leaf node can be dragged to the graph view for visualization:</p>
 <p><img alt="clip0060" src="../img/client_performance_monitoring4.png" /></p>
-<h2 id="performance-filters">Performance Filters</h2>
+<h2 id="performance-filters">Performance Filters<a class="headerlink" href="#performance-filters" title="Permanent link">&para;</a></h2>
 <p>Performance results obtained from different runs can be filtered using result filter on the toolbar.</p>
 <p><img alt="clip0061" src="../img/client_performance_monitoring5.png" /></p>
 <p>You can open the Results Filter dialogs by pressing <code>…</code> button.</p>
@@ -10046,9 +10046,9 @@
 <li>Script is a combination of script name and time stamp. E.g.</li>
 <li><img alt="clip0063" src="../img/client_performance_monitoring7.png" /></li>
 </ul>
-<h2 id="neoload-object-api-reference">NeoLoad Object API Reference</h2>
+<h2 id="neoload-object-api-reference">NeoLoad Object API Reference<a class="headerlink" href="#neoload-object-api-reference" title="Permanent link">&para;</a></h2>
 <p>The methods of the global NeoLoad object are described <a href="/Libraries/NeoLoad/">on this page</a>.</p>
-<h2 id="how-to-use">How to Use</h2>
+<h2 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
 <p>In order to send performance metrics to NeoLoad you need to add a sequence of calls to your script.</p>
 <p>First, connect to the NeoLoad. When this call is executed NeoLoad must be running a script, otherwise an error will be returned.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CreateClient</span><span class="p">(</span><span class="s2">&quot;hardware1&quot;</span><span class="p">,</span> <span class="s2">&quot;location1&quot;</span><span class="p">,</span> <span class="s2">&quot;Broadcom 802.11ac Network Adapter \_2&quot;</span><span class="p">);</span>

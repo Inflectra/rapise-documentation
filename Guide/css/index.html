@@ -9981,23 +9981,23 @@
               
                 
                 
-                <h1 id="web-testing-using-css-selectors">Web Testing - Using CSS Selectors</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="web-testing-using-css-selectors">Web Testing - Using CSS Selectors<a class="headerlink" href="#web-testing-using-css-selectors" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>When testing web applications you will often want to use Cascading Style Sheets (CSS) selectors to query the browser DOM for elements based on the scenario under test. This section explains how you can use CSS selectors with Rapise to make your browser testing more flexible and adaptive to changes on the screen.</p>
 <p>CSS is an alternative to <a href="../xpath/">XPath</a> that is often better at selecting multiple elements from across different parts of the DOM Tree, unlike XPath which is strictly hierarchical. However since CSS is not always able to uniquely locate an object, when Rapise is used in recording mode, it will learn objects automatically using XPath.</p>
-<h2 id="css-fundamentals">CSS Fundamentals</h2>
+<h2 id="css-fundamentals">CSS Fundamentals<a class="headerlink" href="#css-fundamentals" title="Permanent link">&para;</a></h2>
 <p>In CSS, selectors are patterns used to select the element(s) you want to style. Here are the different operators that you can use in CSS
 selectors:</p>
 <p><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selector Reference</a></p>
 <p>One limitation (as compared to XPath) is that there is not a way to select an element based on its contents. So it would not be possible to locate a cell in a grid (for example) based on the contents of the cell. For that you would need to use XPath.</p>
-<h2 id="rapise-css-extensions">Rapise CSS Extensions</h2>
+<h2 id="rapise-css-extensions">Rapise CSS Extensions<a class="headerlink" href="#rapise-css-extensions" title="Permanent link">&para;</a></h2>
 <p>Since Rapise uses XPath as its primary means of locating an HTML element, when you <strong>Learn</strong> an object using CSS, Rapise will prefix the
 Locator (listed under the XPath property for that object in the <a href="../object_tree/">Object Tree</a>) with <code>css=</code> to let Rapise know that the locator is actually using a CSS selector.</p>
 <div class="highlight"><pre><span></span><code>css=html &gt; body &gt; form#ctl01 &gt; div:nth-of-type(3) &gt; div:first-of-type &gt; div:first-of-type
 </code></pre></div>
 
 <p>There are several different ways to use CSS selectors in Rapise.</p>
-<h2 id="using-web-spy">Using Web Spy</h2>
+<h2 id="using-web-spy">Using Web Spy<a class="headerlink" href="#using-web-spy" title="Permanent link">&para;</a></h2>
 <p>To most easily use CSS selectors in Rapise, we recommend using the Web Spy tool. Make sure that CSS edit is enabled:</p>
 <p><img alt="cs enabled" src="../img/css_enabled.png" /></p>
 <p>If you enter in the CSS selector at the top, when you click <strong>Test</strong> </p>
@@ -10005,11 +10005,11 @@ Locator (listed under the XPath property for that object in the <a href="../obje
 <p>it will display all of the DOM elements that match the selector:</p>
 <p><img alt="web_spy_css2" src="../img/css_results.png" /></p>
 <p>You can now refine the query to only find the items you want to test.</p>
-<h2 id="learning-objects">Learning Objects</h2>
+<h2 id="learning-objects">Learning Objects<a class="headerlink" href="#learning-objects" title="Permanent link">&para;</a></h2>
 <p>When you have created the query in the Web Spy that returns the HTML elements that you were expecting, you can click on the <strong>Learn</strong> button to learn that object. What this will do is create a new Rapise object in the <a href="../object_tree/">Object Tree</a> that
 maps to this specific CSS. That means that the "object" in Rapise is effectively a pointer to this specific CSS selector.</p>
 <p>For example, if you want to find a specific book in a grid of books by its CSS <code>class, style, ID</code> or other attribute, you can search using the appropriate CSS selector, then learn this object as <strong>Book_1</strong> so that you can access it in your code as <code>SeS("Book_1")</code>. Every time you call a function on <strong>Book_1</strong>, Rapise will use the learned CSS selector and use that to evaluate which HTML element in the web page to access.</p>
-<h2 id="dynamic-queries">Dynamic Queries</h2>
+<h2 id="dynamic-queries">Dynamic Queries<a class="headerlink" href="#dynamic-queries" title="Permanent link">&para;</a></h2>
 <p>In addition to learning objects based on specific CSS selector, there are a set of general functions that can be used to query for objects in the web page:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoDOMQueryCss</span><span class="p">(</span><span class="s1">&#39;tr td[data=book1]&#39;</span><span class="p">);</span>
 </code></pre></div>

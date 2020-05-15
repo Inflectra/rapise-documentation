@@ -9967,11 +9967,11 @@
               
                 
                 
-                <h1 id="writing-to-the-report">Writing to the Report</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="writing-to-the-report">Writing to the Report<a class="headerlink" href="#writing-to-the-report" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>You can write to individual columns, create columns, and add data to the <a href="../automated_reporting/">report</a>.</p>
-<h2 id="usage">Usage</h2>
-<h2 id="writing-to-and-creating-a-column">Writing to and Creating a Column</h2>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h2 id="writing-to-and-creating-a-column">Writing to and Creating a Column<a class="headerlink" href="#writing-to-and-creating-a-column" title="Permanent link">&para;</a></h2>
 <p>Use <strong>Tester.PushReportAttribute</strong> or <strong>Tester.SetReportAttribute</strong> to set values in specific rows. <strong>Tester.PopReportAttribute</strong> reverses the effect of Tester.PushReportAttribute:</p>
 <p><strong>PushReportAttribute</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">PushReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
@@ -9993,7 +9993,7 @@
 </code></pre></div>
 
 <p>If <code>columnName</code> does not exist, it will be added to the report.  Column <code>columnName</code> will be populated with <code>value</code> for rows created after this function call (unless specified otherwise).</p>
-<h2 id="adding-data">Adding Data</h2>
+<h2 id="adding-data">Adding Data<a class="headerlink" href="#adding-data" title="Permanent link">&para;</a></h2>
 <p>Data must be associated with an <strong>Assert</strong> row or a <strong>Message</strong> row.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;expression&quot;</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;columnValuePairs&quot;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;columnValuePairs&quot;</span><span class="p">);</span>
@@ -10013,7 +10013,7 @@
 <span class="p">]</span>
 </code></pre></div>
 
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../automated_reporting/">Automated Reporting</a></li>
 <li>The <a href="../sample_tests/">test samples</a> include a sample about reporting (Reporting.sstest)</li>

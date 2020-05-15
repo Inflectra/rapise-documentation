@@ -10021,13 +10021,13 @@
               
                 
                 
-                <h1 id="testing-rest-web-services">Testing REST Web Services</h1>
-<h2 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?</h2>
+                <h1 id="testing-rest-web-services">Testing REST Web Services<a class="headerlink" href="#testing-rest-web-services" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?<a class="headerlink" href="#what-is-rest-and-what-is-a-restful-web-service" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.</p>
 <p>A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
 </blockquote>
-<h2 id="how-does-rapise-test-rest-web-services">How does Rapise test REST web services?</h2>
+<h2 id="how-does-rapise-test-rest-web-services">How does Rapise test REST web services?<a class="headerlink" href="#how-does-rapise-test-rest-web-services" title="Permanent link">&para;</a></h2>
 <p>Creating a REST web service test in Rapise consists of the following steps:
 1.   Using the <a href="../rest_definition_editor/">REST definition builder</a> to create the various REST web service requests and verify that they return the expected data in the expected format.</p>
 <ol>
@@ -10038,7 +10038,7 @@
 <p>Generating the <a href="../scripting/">test script</a> in Javascript that uses the learned Rapise web service objects.</p>
 </li>
 </ol>
-<h2 id="rapise-rest-definition-builder">Rapise REST Definition Builder</h2>
+<h2 id="rapise-rest-definition-builder">Rapise REST Definition Builder<a class="headerlink" href="#rapise-rest-definition-builder" title="Permanent link">&para;</a></h2>
 <p>When you add a web service to your Rapise test project, you get a new REST definition file (<code>.rest</code>) that will store all of your prototyped requests against a specific REST web service. The various REST requests are then created in the REST definition builder:</p>
 <p><img alt="rest_definition_editor" src="../img/rest_web_service1.png" /></p>
 <p>Each REST request can then include the following items:</p>
@@ -10065,7 +10065,7 @@
 <p>When you execute the request, it will return back the HTTP response headers and if it recognizes the MIME content-type as either XML or JSON, it will format it to make it more readable by the tester:</p>
 <p><img alt="rest_definition_request" src="../img/rest_web_service2.png" /></p>
 <p>Once you have finished with your prototyping of the web service test operations, you can then save the request definitions and use the <code>Update Object Tree</code> option to populate the main Rapise <a href="../object_tree/">Object Tree</a>.</p>
-<h2 id="web-service-object-recognition">Web Service Object Recognition</h2>
+<h2 id="web-service-object-recognition">Web Service Object Recognition<a class="headerlink" href="#web-service-object-recognition" title="Permanent link">&para;</a></h2>
 <p>Each of the REST web service requests that has been prototyped in the REST definition editor is converted by Rapise into a scriptable object:</p>
 <p><img alt="Web Service Objects" src="../img/rest_web_service3.png" /></p>
 <p>Each of the <a href="../../Libraries/RESTService/">REST service</a> objects in the tree has operations designed to let you call the method and access the returned body either in its raw text format, or if it's a web service that returns data in JSON format, it will be able to send/receive data as native JavaScript objects.</p>
@@ -10108,7 +10108,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="generating-rapise-rest-test-scripts">Generating Rapise REST Test Scripts</h2>
+<h2 id="generating-rapise-rest-test-scripts">Generating Rapise REST Test Scripts<a class="headerlink" href="#generating-rapise-rest-test-scripts" title="Permanent link">&para;</a></h2>
 <p>Once all the REST operations have been defined and saved as Rapise learned objects, you can call the REST operations from within your Rapise test scripts.</p>
 <p>The easiest way to do this is to click on the <code>Record</code> button in the REST definition editor (next to the <code>Send</code> button) which will add the request to list of recorded steps:</p>
 <p><img alt="rest_script_steps" src="../img/rest_script_steps.png" /></p>
@@ -10133,7 +10133,7 @@
 <p><img alt="rest_hybrid_test" src="../img/rest_web_service12.png" /></p>
 <p>Once you have created your REST web service test, you can use the standard <a href="../playback/">Playback</a> functionality in Rapise to execute your test and display the report:</p>
 <p><img alt="tutorial_web_services_pic30" src="../img/rest_web_service13.png" /></p>
-<h2 id="handling-file-uploads-and-multipart-requests">Handling File Uploads and Multipart Requests</h2>
+<h2 id="handling-file-uploads-and-multipart-requests">Handling File Uploads and Multipart Requests<a class="headerlink" href="#handling-file-uploads-and-multipart-requests" title="Permanent link">&para;</a></h2>
 <p>Each Request with <strong>Content-Type</strong> set to <code>multipart/form-data</code> is assumed to be a special request and handled in a special way.</p>
 <p>The <strong>Body</strong> part should be a valid <code>JSON</code> with the following structure:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -10173,7 +10173,7 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<h3 id="json-as-field-value">JSON as Field Value</h3>
+<h3 id="json-as-field-value">JSON as Field Value<a class="headerlink" href="#json-as-field-value" title="Permanent link">&para;</a></h3>
 <p>Here is how you can pass JSON value of the field:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="p">{</span>
@@ -10189,7 +10189,7 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<h3 id="params-in-multipart-request">Params in Multipart Request</h3>
+<h3 id="params-in-multipart-request">Params in Multipart Request<a class="headerlink" href="#params-in-multipart-request" title="Permanent link">&para;</a></h3>
 <p>It is typical that you want to parameterize text value or file path. It is important to make sure that you properly quote custom value. I.e.</p>
 <p>If we have a parameterized JSON Body:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>

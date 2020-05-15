@@ -9925,7 +9925,7 @@
               
                 
                 
-                <h1 id="using-native-selenium-code">Using Native Selenium Code</h1>
+                <h1 id="using-native-selenium-code">Using Native Selenium Code<a class="headerlink" href="#using-native-selenium-code" title="Permanent link">&para;</a></h1>
 <p>When using the standard Rapise <a href="../recording/">Record, Learn</a>, and <a href="../web_spy/">Web Spy</a> tools you can create your web tests using the Rapise built-in <a href="../object_tree/">Object Tree</a>. This lets you design your tests using a higher level of abstraction than working
 directly with <a href="../selenium_webdriver/">Selenium WebDriver</a>.</p>
 <p>For example you can learn an object <code>SeS("EditButton")</code> that points to a dynamic <a href="../xpath/">XPATH</a> or <a href="../css/">CSS</a> query that the automation engineer knows will be accurate even if the data on the page changes (for example). The QA analyst can then simply drag and drop these Rapise objects from the <a href="../object_tree/">Object Tree</a> into the test script (e.g. <code>SeS("EditButton").DoClick()</code>) to perform the desired action.</p>
@@ -9971,7 +9971,7 @@ available for Rapise called <strong>UsingSelenium</strong> (you can open it from
 <p>When you click <code>Play</code> to playback your Selenium script, make sure you have selected one of the Selenium web browser profiles. If you have
 selected a native browser profile (e.g. “Firefox HTML” instead of “Selenium – Firefox”) you will get the error message “WebDriver” is not
 defined.</p>
-<h2 id="code-completion-for-the-selenium-webelement-objects">Code Completion for the Selenium WebElement Objects</h2>
+<h2 id="code-completion-for-the-selenium-webelement-objects">Code Completion for the Selenium WebElement Objects<a class="headerlink" href="#code-completion-for-the-selenium-webelement-objects" title="Permanent link">&para;</a></h2>
 <p>When you are using functions such as FindElementsById() in your code, the returned object will be a Selenium <strong>Web Element</strong>.</p>
 <p>If you want to have intellisense and code-completion for the returned WebElement objects, you need to do two things:</p>
 <ul>
@@ -9984,7 +9984,7 @@ defined.</p>
 
 <p>For example:</p>
 <p><img alt="clip0024" src="../img/using_native_selenium_code2.png" /></p>
-<h2 id="interoperability-with-rapise-objects">Interoperability with Rapise Objects</h2>
+<h2 id="interoperability-with-rapise-objects">Interoperability with Rapise Objects<a class="headerlink" href="#interoperability-with-rapise-objects" title="Permanent link">&para;</a></h2>
 <p>In addition to being able to use raw Selenium code on its own, you can also use a mixture of Rapise object-based code and raw Selenium
 WebDriver code.</p>
 <p>For example, you are using the standard Rapise approach (using learned <code>SeS('object')</code> objects) for testing but at some point want to switch to Selenium API to call a couple of WebElement functions on a learned object, you can use the special <strong>‘element’</strong> property:</p>

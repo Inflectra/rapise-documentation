@@ -10047,12 +10047,12 @@
               
                 
                 
-                <h1 id="web-application-profile">Web Application Profile</h1>
+                <h1 id="web-application-profile">Web Application Profile<a class="headerlink" href="#web-application-profile" title="Permanent link">&para;</a></h1>
 <p>Each web application is unique in terms of assigning attributes to elements and this complicates the process of generating XPath locators. Some applications assign dynamic IDs to elements, some use ARIA attributes and some do not, some values of class attribute have meaning related to element position and some just used for element styling. There are also cases when an app contains hidden DOM layers which stack on top of each other. So usage of same set of attributes for generating XPath is not efficient and may lead to weak locators that break after application reloading or slight modification. To cope with these problems Rapise introduces Web App Profile. It is a simple JSON file of a defined structure that instructs Rapise how to build XPath for elements in a particular application. From this topic you will learn how to define a profile for your web application.</p>
-<h2 id="purpose-of-webappprofile">Purpose of WebAppProfile</h2>
+<h2 id="purpose-of-webappprofile">Purpose of WebAppProfile<a class="headerlink" href="#purpose-of-webappprofile" title="Permanent link">&para;</a></h2>
 <p><code>WebAppProfile</code> serves as an instruction to Rapise on how to record XPath locators for elements in a given application.</p>
 <p><code>WebAppProfile</code> addresses one of the challenges in web UI test automation: generation of resilient XPath locators during test recording.</p>
-<h2 id="adding-webappprofile-to-a-test">Adding WebAppProfile to a Test</h2>
+<h2 id="adding-webappprofile-to-a-test">Adding WebAppProfile to a Test<a class="headerlink" href="#adding-webappprofile-to-a-test" title="Permanent link">&para;</a></h2>
 <p>To create <code>WebAppProfile.json</code> file in your test navigate to <code>Files</code> tab, right click <code>Scripts</code> folder and choose <code>Create... &gt; WebAppProfile.json</code>.</p>
 <p><img src="/Guide/img/web_app_profile_create.gif" width="746"/></p>
 <p>The default profile looks like this:</p>
@@ -10125,7 +10125,7 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<h2 id="webappprofile-format">WebAppProfile Format</h2>
+<h2 id="webappprofile-format">WebAppProfile Format<a class="headerlink" href="#webappprofile-format" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><code>record.attributes</code> array contains definition of attributes to record.</p>
@@ -10155,9 +10155,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="anchors">Anchors</h2>
+<h2 id="anchors">Anchors<a class="headerlink" href="#anchors" title="Permanent link">&para;</a></h2>
 <p>When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element (including the anchor element itself) then XPath of the element will start/or be replaced with XPath of the anchor element.</p>
-<h3 id="example-1">Example 1</h3>
+<h3 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h3>
 <p>Let's look at the example. Here we have a table built with DIVs and ARIA roles.</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;Customers&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;grid&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
@@ -10181,7 +10181,7 @@
 </code></pre></div>
 
 <p>The locator is now bound to the table. If another element with <code>Contoso</code> title appears somewhere on the page (outside the table) we'll find the correct element.</p>
-<h2 id="example-2">Example 2</h2>
+<h2 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h2>
 <p>Here is more complex and real-life example. In <a href="https://dynamics.microsoft.com/en-us/business-central/overview/">Microsoft Dynamics 365 Business Central</a> application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with <code>spa-view</code> class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower <code>z-index</code> then currently active form.</p>
 <p><img src="/Guide/img/web_app_profile_hidden_layers.png" width="485"/></p>
 <p>It means that when Rapise searches for an element during test playback it should work with the topmost <code>spa-view</code>.</p>
@@ -10194,7 +10194,7 @@
 </code></pre></div>
 
 <p>The anchor prevents us from finding elements that are not visible to user and ensure that if we find an element it belongs to an active form.</p>
-<h3 id="example-3">Example 3</h3>
+<h3 id="example-3">Example 3<a class="headerlink" href="#example-3" title="Permanent link">&para;</a></h3>
 <p>Requires Rapise 6.4+. An anchor may be used to rewrite XPath for an element completely. It means if an anchor points to an element then it will be used instead of XPath expression generated using attributes. Let's assume we have a page</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
@@ -10217,7 +10217,7 @@
 </code></pre></div>
 
 <p>the recorder will use the anchor.</p>
-<h2 id="xpath-minimization">XPath Minimization</h2>
+<h2 id="xpath-minimization">XPath Minimization<a class="headerlink" href="#xpath-minimization" title="Permanent link">&para;</a></h2>
 <p>Rapise always tries to build the minimal XPath locator possible with a given set of attributes, classes and anchors. <a href="https://www.inflectra.com/support/knowledgebase/kb282.aspx">Full XPath is not an option</a>.</p>
 <p>Let's assume we have a page</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -10239,7 +10239,7 @@
 </code></pre></div>
 
 <p>that may easily become broken with page layout changes.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../web_testing/">Web Testing</a></li>
 <li><a href="../web_self_healing/">Self-healing Web Locators</a></li>

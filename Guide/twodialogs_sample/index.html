@@ -10023,7 +10023,7 @@
               
                 
                 
-                <h1 id="tutorial-windows-testing-rvl">Tutorial: Windows Testing (RVL)</h1>
+                <h1 id="tutorial-windows-testing-rvl">Tutorial: Windows Testing (RVL)<a class="headerlink" href="#tutorial-windows-testing-rvl" title="Permanent link">&para;</a></h1>
 <p>This section outlines the usage of Rapise for testing a simple Windows Desktop <a href="../glossary/">Application Under Test (AUT)</a>. This version of the tutorial uses the <strong>Rapise Visual Language (RVL) scriptless</strong> mode. If you're interested in the <a href="../tutorial_windows_using_javascript/">JavaScript version</a>, we have a separate tutorial.</p>
 <p>Please run the application now. You will find it in the samples directory where you installed Rapise. By default, that will be</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe</span>
@@ -10046,20 +10046,20 @@
 </ol>
 <p>If at this point you do not understand what the application is supposed to do, or the application is not behaving as described here, please contact Support and clarify the details before proceeding.</p>
 <p>Now, let's use Rapise to implement the first of these tests.</p>
-<h2 id="step-1-run-the-application">Step 1. Run the Application</h2>
+<h2 id="step-1-run-the-application">Step 1. Run the Application<a class="headerlink" href="#step-1-run-the-application" title="Permanent link">&para;</a></h2>
 <p>Run the TwoDialogs application and leave it in its default start state. Once you execute the TwoDialogs.exe application it will be displayed on the screen:</p>
 <p><img alt="twodialogsrecording" src="../img/twodialogs_sample2.png" /></p>
-<h2 id="step-2-start-rapise">Step 2. Start Rapise</h2>
+<h2 id="step-2-start-rapise">Step 2. Start Rapise<a class="headerlink" href="#step-2-start-rapise" title="Permanent link">&para;</a></h2>
 <p>Start Rapise and make the window a conveniently large size.  Click on the <code>File</code> menu (top left).  Choose the first option there, "New Test."</p>
 <p><img alt="createnewseleted" src="../img/twodialogs_sample4.png" /></p>
-<h2 id="step-3-create-new-test">Step 3. Create New Test</h2>
+<h2 id="step-3-create-new-test">Step 3. Create New Test<a class="headerlink" href="#step-3-create-new-test" title="Permanent link">&para;</a></h2>
 <p>Navigate to the desired path using the <code>...</code> button on the <strong>Create New Test</strong> dialog. Enter the name of the new test script we're going to write (e.g. "TwoDialogsTest"). Click on the <strong>Basic: Windows Desktop Application</strong> methodology. This should always be used for testing Windows desktop applications:</p>
 <p><img alt="createnewdialog" src="../img/twodialogs_sample5.png" /></p>
 <p>The following dialog will be displayed:</p>
 <p><img alt="clip0105" src="../img/scripting_language_rvl.png" /></p>
 <p>Click on the <strong>RVL (Rapise Visual Language)</strong> button.  You will now see the following:</p>
 <p><img alt="rapise new test rvl" src="../img/twodialogs_sample7.png" /></p>
-<h2 id="step-4-start-recording">Step 4. Start Recording</h2>
+<h2 id="step-4-start-recording">Step 4. Start Recording<a class="headerlink" href="#step-4-start-recording" title="Permanent link">&para;</a></h2>
 <p>Press the "<strong>Record</strong>" button on the toolbar.  It has an icon like this:</p>
 <p><img alt="recordlearnbutton" src="../img/twodialogs_sample8.png" /></p>
 <p>You will see an application selection dialog like the following.</p>
@@ -10069,7 +10069,7 @@
 <li>Leave the library selection as "Auto."</li>
 <li>Press the "Select" button at the bottom right.</li>
 </ul>
-<h2 id="step-5-recording-guidelines">Step 5. Recording Guidelines</h2>
+<h2 id="step-5-recording-guidelines">Step 5. Recording Guidelines<a class="headerlink" href="#step-5-recording-guidelines" title="Permanent link">&para;</a></h2>
 <p>Rapise will pause while it starts the necessary background processes and hooks into the running AUT. Once those tasks are complete, you will see the following "Recording Activity" for "Inflectra Rapise Two Dialogs Sample" dialog:</p>
 <p><img alt="recordingactivityemptytwodialogs" src="../img/twodialogs_sample10.png" /></p>
 <p>The AUT will be brought to the foreground and Rapise will be minimized.</p>
@@ -10078,7 +10078,7 @@
 <li>Work slowly while recording.  Perform one action and wait for the results to be recorded in the Recording Activity dialog as a new grid line-item before going to the next item.</li>
 <li>Use the mouse to select controls and operate them.  Avoid using keyboard shortcuts and keyboard commands.</li>
 </ol>
-<h2 id="step-6-record-the-activity-in-the-application">Step 6. Record the Activity in the Application</h2>
+<h2 id="step-6-record-the-activity-in-the-application">Step 6. Record the Activity in the Application<a class="headerlink" href="#step-6-record-the-activity-in-the-application" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Click in the first edit box in the TwoDialogs application.</li>
 <li>Type a name in this first edit box.</li>
@@ -10100,13 +10100,13 @@
 <p>Click <code>Append to End</code>, then Rapise will change the view to display the newly recorded test steps.  It will look something like the following:</p>
 <p><img alt="steps in RVL" src="../img/twodialogs_sample13.png" /></p>
 <p>Notice that the two steps of the test are automatically documented as Action commands in the test grid, and that they correspond precisely and in the same order as the way they appeared in the Recording Activity dialog during recording. In addition, the Verify checkpoint has been recorded as an Assert…Condition set of steps in the grid.</p>
-<h2 id="step-7-execute-the-test">Step 7: Execute The Test</h2>
+<h2 id="step-7-execute-the-test">Step 7: Execute The Test<a class="headerlink" href="#step-7-execute-the-test" title="Permanent link">&para;</a></h2>
 <p>Press the "Play" button on the ribbon or the toolbar.</p>
 <p><img alt="play icon" src="../img/twodialogs_sample14.png" /></p>
 <p>As the script runs, the Rapise window will be minimized to the taskbar and you will see the results of the script's activities on the TwoDialogs application window.</p>
 <p>At the end of the script execution, the Rapise window will be restored and the view will be of the report for the test:</p>
 <p><img alt="runreporttwodialogs" src="../img/twodialogs_sample15.png" /></p>
-<h2 id="step-8-a-refinement-on-the-launching-of-twodialogsexe">Step 8: A Refinement on the Launching of TwoDialogs.exe.</h2>
+<h2 id="step-8-a-refinement-on-the-launching-of-twodialogsexe">Step 8: A Refinement on the Launching of TwoDialogs.exe.<a class="headerlink" href="#step-8-a-refinement-on-the-launching-of-twodialogsexe" title="Permanent link">&para;</a></h2>
 <p>To date, we have operated on the assumption that the TwoDialogs sample program (application) is running.  If this situation remained, the test script would require that the AUT be running before the script started.  That would require that the person running the test remembered where it resided.  To overcome this, Rapise provides a way to have the script run the program (AUT) before beginning the test.</p>
 <p>Rapise comes with a series of useful Global utility objects that can do things such as start applications, kill processes, access the file system, etc. To launch the TwoDialogs application at the start of the test, go to the first row in the test grid and click <code>Insert Row Before</code> icon on the toolbar:</p>
 <p><img alt="insert row" src="../img/twodialogs_sample16.png" /></p>
@@ -10122,7 +10122,7 @@
 
 <p><img alt="cmdLine" src="../img/twodialogs_sample20.png" /></p>
 <p>Now if you click <strong>Play</strong>, Rapise will launch the application and then complete the recorded test steps.</p>
-<h2 id="advanced-testing-using-the-object-spy">Advanced Testing using the Object Spy</h2>
+<h2 id="advanced-testing-using-the-object-spy">Advanced Testing using the Object Spy<a class="headerlink" href="#advanced-testing-using-the-object-spy" title="Permanent link">&para;</a></h2>
 <p>Sometimes you need to learn objects that are not visible or are obscured by other objects. To help with this, Rapise has the Object Spy tool. The Spy tool lets you see the objects in the application in a hierarchy that you can learn.</p>
 <p>When you are in the middle of recording, click on the <strong>Spy</strong> button and Rapise will display the <a href="../object_spy_uiautomation/">UIAutomation Spy</a>:</p>
 <p><img alt="twodialogs_spy1" src="../img/twodialogs_sample21.png" /></p>

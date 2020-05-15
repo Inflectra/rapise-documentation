@@ -10173,13 +10173,13 @@
               
                 
                 
-                <h1 id="restservice">RESTService</h1>
+                <h1 id="restservice">RESTService<a class="headerlink" href="#restservice" title="Permanent link">&para;</a></h1>
 <p>This behavior pattern implements REST service client.</p>
 <p>Extends <a href="../SeSSimulatedObject/">SeSSimulatedObject</a></p>
 <p><strong>Behavior Pattern: RESTServiceBehavior</strong></p>
 <!-- ============================== property summary ========================== -->
 
-<h3 id="property-summary">Property Summary</h3>
+<h3 id="property-summary">Property Summary<a class="headerlink" href="#property-summary" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -10266,7 +10266,7 @@
 </table>
 <!-- ============================== action summary ========================== -->
 
-<h3 id="action-summary">Action Summary</h3>
+<h3 id="action-summary">Action Summary<a class="headerlink" href="#action-summary" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -10287,9 +10287,9 @@
 </table>
 <!-- ============================== property detail ========================== -->
 
-<h3 id="property-detail">Property Detail</h3>
+<h3 id="property-detail">Property Detail<a class="headerlink" href="#property-detail" title="Permanent link">&para;</a></h3>
 <p><a name="Credential"></a></p>
-<h4 id="credential">Credential</h4>
+<h4 id="credential">Credential<a class="headerlink" href="#credential" title="Permanent link">&para;</a></h4>
 <p>The HTTP Basic Authentication Credentials (if any).
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">credential</span> <span class="o">=</span> <span class="p">{};</span>
@@ -10302,17 +10302,17 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetCredential, SetCredential</p>
 <p><a name="Method"></a></p>
-<h4 id="method">Method</h4>
+<h4 id="method">Method<a class="headerlink" href="#method" title="Permanent link">&para;</a></h4>
 <p>The HTTP Method being used for the request (GET, POST, etc.)</p>
 <p>Type: string</p>
 <p>Accessors: GetMethod, SetMethod</p>
 <p><a name="Name"></a></p>
-<h4 id="name">Name</h4>
+<h4 id="name">Name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
 <p>The name of the request operation</p>
 <p>Type: string</p>
 <p>Accessors: GetName</p>
 <p><a name="Parameters"></a></p>
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <p>The list of parameters available for this request url.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">parameters</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetParameters</span><span class="p">();</span>
@@ -10327,7 +10327,7 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetParameters, SetParameters</p>
 <p><a name="RequestBodyObject"></a></p>
-<h4 id="requestbodyobject">RequestBodyObject</h4>
+<h4 id="requestbodyobject">RequestBodyObject<a class="headerlink" href="#requestbodyobject" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP request as a JavaScript object.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="p">{};</span>
@@ -10341,12 +10341,12 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetRequestBodyObject, SetRequestBodyObject</p>
 <p><a name="RequestBodyText"></a></p>
-<h4 id="requestbodytext">RequestBodyText</h4>
+<h4 id="requestbodytext">RequestBodyText<a class="headerlink" href="#requestbodytext" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP request in raw text format</p>
 <p>Type: string</p>
 <p>Accessors: GetRequestBodyText, SetRequestBodyText</p>
 <p><a name="RequestHeaders"></a></p>
-<h4 id="requestheaders">RequestHeaders</h4>
+<h4 id="requestheaders">RequestHeaders<a class="headerlink" href="#requestheaders" title="Permanent link">&para;</a></h4>
 <p>The list of HTTP headers that are part of this request.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetRequestHeaders</span><span class="p">();</span>
@@ -10360,7 +10360,7 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetRequestHeaders, SetRequestHeaders</p>
 <p><a name="ResponseBodyObject"></a></p>
-<h4 id="responsebodyobject">ResponseBodyObject</h4>
+<h4 id="responsebodyobject">ResponseBodyObject<a class="headerlink" href="#responsebodyobject" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP response deserialized from JSON into a JavaScript object.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span> <span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
@@ -10392,12 +10392,12 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetResponseBodyObject</p>
 <p><a name="ResponseBodyText"></a></p>
-<h4 id="responsebodytext">ResponseBodyText</h4>
+<h4 id="responsebodytext">ResponseBodyText<a class="headerlink" href="#responsebodytext" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP response in raw text format</p>
 <p>Type: string</p>
 <p>Accessors: GetResponseBodyText</p>
 <p><a name="ResponseHeaders"></a></p>
-<h4 id="responseheaders">ResponseHeaders</h4>
+<h4 id="responseheaders">ResponseHeaders<a class="headerlink" href="#responseheaders" title="Permanent link">&para;</a></h4>
 <p>Returns the list of HTTP headers returned from the HTTP response.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetResponseHeaders</span><span class="p">();</span>
@@ -10411,20 +10411,20 @@ Sample code:</p>
 <p>Type: object</p>
 <p>Accessors: GetResponseHeaders</p>
 <p><a name="ResponseIsErrorStatus"></a></p>
-<h4 id="responseiserrorstatus">ResponseIsErrorStatus</h4>
+<h4 id="responseiserrorstatus">ResponseIsErrorStatus<a class="headerlink" href="#responseiserrorstatus" title="Permanent link">&para;</a></h4>
 <p>Returns 'true 'if an HTTP error code came back from the web service</p>
 <p>Type: boolean</p>
 <p>Accessors: GetResponseIsErrorStatus</p>
 <p><a name="Url"></a></p>
-<h4 id="url">Url</h4>
+<h4 id="url">Url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h4>
 <p>The URL being used to access the web service</p>
 <p>Type: string</p>
 <p>Accessors: GetUrl, SetUrl</p>
 <!-- ============================== action detail ========================== -->
 
-<h3 id="action-detail">Action Detail</h3>
+<h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoExecute"></a>    </p>
-<h4 id="doexecuteparams">DoExecute(params)</h4>
+<h4 id="doexecuteparams">DoExecute(params)<a class="headerlink" href="#doexecuteparams" title="Permanent link">&para;</a></h4>
 <p>Executes a REST service operation, substitutes any of the provided parameter values if necessary.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -10455,7 +10455,7 @@ var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.restservice.doexecute"></a></p>
 <p><a name="DoVerify"></a>    </p>
-<h4 id="doverifymsg-jsonpath-expectedvalue">DoVerify(msg, jsonPath, expectedValue)</h4>
+<h4 id="doverifymsg-jsonpath-expectedvalue">DoVerify(msg, jsonPath, expectedValue)<a class="headerlink" href="#doverifymsg-jsonpath-expectedvalue" title="Permanent link">&para;</a></h4>
 <p>Checks that a given part of response equals the expected value.</p>
 <p><strong>Parameters:</strong></p>
 <table>

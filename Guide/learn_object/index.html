@@ -10161,30 +10161,30 @@
               
                 
                 
-                <h1 id="learn-an-object">Learn an Object</h1>
+                <h1 id="learn-an-object">Learn an Object<a class="headerlink" href="#learn-an-object" title="Permanent link">&para;</a></h1>
 <p>To illustrate learning an object, we return to the <a href="../twodialogs_sample/">TwoDialogs</a> sample.</p>
 <p>First, let's learn the <code>OK</code> button using recording.  We have done this before in the <a href="../twodialogs_sample/">TwoDialogs</a> sample.</p>
-<h2 id="record">RECORD</h2>
-<h2 id="step-1-run-the-application">Step 1. Run the Application</h2>
+<h2 id="record">RECORD<a class="headerlink" href="#record" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-run-the-application">Step 1. Run the Application<a class="headerlink" href="#step-1-run-the-application" title="Permanent link">&para;</a></h2>
 <p>Run <strong>TwoDialogs</strong> sample application.  By default this will be located in</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe</span>
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="step-2-create-a-new-test">Step 2. Create a New Test</h2>
+<h2 id="step-2-create-a-new-test">Step 2. Create a New Test<a class="headerlink" href="#step-2-create-a-new-test" title="Permanent link">&para;</a></h2>
 <p>Start Rapise and create a new test, choose the <strong>Basic</strong> methodology, and call it <code>TwoDialogsRecording</code>. Select <code>JavaScript</code> scripting mode when prompted.</p>
-<h2 id="step-3-start-recording">Step 3. Start Recording</h2>
+<h2 id="step-3-start-recording">Step 3. Start Recording<a class="headerlink" href="#step-3-start-recording" title="Permanent link">&para;</a></h2>
 <p>Press the <strong>Record</strong> button in the toolbar of Rapise.</p>
-<h2 id="step-4-select-an-application-to-record">Step 4. Select an Application to Record</h2>
+<h2 id="step-4-select-an-application-to-record">Step 4. Select an Application to Record<a class="headerlink" href="#step-4-select-an-application-to-record" title="Permanent link">&para;</a></h2>
 <p>When the <strong>Select an Application to Record</strong> dialog is displayed, choose the <strong>TwoDialogs.exe</strong> application and in the library list, select only the top library on the list - <strong>Auto</strong>.  Press the <code>Select</code> button.</p>
-<h2 id="step-5-do-recording">Step 5. Do Recording</h2>
+<h2 id="step-5-do-recording">Step 5. Do Recording<a class="headerlink" href="#step-5-do-recording" title="Permanent link">&para;</a></h2>
 <p>In the TwoDialogs application, use the mouse to press the <code>OK</code> button. Dismiss the alert message box complaining about the empty name.</p>
-<h2 id="step-6-observe">Step 6. Observe</h2>
+<h2 id="step-6-observe">Step 6. Observe<a class="headerlink" href="#step-6-observe" title="Permanent link">&para;</a></h2>
 <p>Notice that two things will happen.  Firstly, the <code>OK</code> button will be surrounded with a red marker, indicating that the OK button has been learned.  Secondly, the action of clicking the <code>OK</code> button is recorded in the <strong>Recording Activity</strong> dialog.  That recording has a single entry:</p>
 <p><img alt="learnnormalbutton" src="../img/learn_object1.png" /></p>
-<h2 id="step-7-finish-recording">Step 7. Finish Recording</h2>
+<h2 id="step-7-finish-recording">Step 7. Finish Recording<a class="headerlink" href="#step-7-finish-recording" title="Permanent link">&para;</a></h2>
 <p>Press the <code>Finish</code> button (or press <code>Ctrl+3</code>) to end the recording.</p>
-<h2 id="step-8-observe">Step 8. Observe</h2>
+<h2 id="step-8-observe">Step 8. Observe<a class="headerlink" href="#step-8-observe" title="Permanent link">&para;</a></h2>
 <p>Rapise will return to be the foreground application, and it will have selected the <code>Main.js</code>. Notice that there is a single line or script that has been added to the script file:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
 </code></pre></div>
@@ -10194,26 +10194,26 @@
 <p>The <code>DoAction()</code> is the instruction to the running script to take the action associated with a button.  A normal button has only a single possible action - to be pressed.</p>
 <p>The Record/Learn process has taken both steps for you, and joined them together.</p>
 <p>Now, let's use (normal) object learning to learn the same OK button and to call a method for the object.</p>
-<h2 id="learn">LEARN</h2>
-<h2 id="step-1-run-the-application_1">Step 1. Run the Application</h2>
+<h2 id="learn">LEARN<a class="headerlink" href="#learn" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-run-the-application_1">Step 1. Run the Application<a class="headerlink" href="#step-1-run-the-application_1" title="Permanent link">&para;</a></h2>
 <p>Run <strong>TwoDialogs</strong> sample application.  By default this will be located in</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe</span>
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="step-2-create-a-new-test_1">Step 2. Create a New Test</h2>
+<h2 id="step-2-create-a-new-test_1">Step 2. Create a New Test<a class="headerlink" href="#step-2-create-a-new-test_1" title="Permanent link">&para;</a></h2>
 <p>Start Rapise and create a new test, choose the <strong>Basic</strong> methodology, and call it <code>TwoDialogsLearn</code>. Select <code>JavaScript</code> scripting mode when prompted.</p>
-<h2 id="step-3-start-recording_1">Step 3. Start Recording</h2>
+<h2 id="step-3-start-recording_1">Step 3. Start Recording<a class="headerlink" href="#step-3-start-recording_1" title="Permanent link">&para;</a></h2>
 <p>Press the <strong>Record</strong> button in the toolbar of Rapise.</p>
-<h2 id="step-4-select-an-application-to-record_1">Step 4. Select an Application to Record</h2>
+<h2 id="step-4-select-an-application-to-record_1">Step 4. Select an Application to Record<a class="headerlink" href="#step-4-select-an-application-to-record_1" title="Permanent link">&para;</a></h2>
 <p>When the <strong>Select an Application to Record</strong> dialog is displayed, choose the TwoDialogs.exe application.  Leave the library selection in its default state - we will not be using it this time.  Press <code>Select</code>. Wait for the <strong>Recording Activity</strong> dialog to appear in the lower-right corner of the screen.</p>
-<h2 id="step-5-do-learn">Step 5. Do Learn</h2>
+<h2 id="step-5-do-learn">Step 5. Do Learn<a class="headerlink" href="#step-5-do-learn" title="Permanent link">&para;</a></h2>
 <p>Hover the mouse over the <code>OK</code> button of the TwoDialogs AUT but do not press the button.</p>
 <p>With the mouse positioned over the <code>OK</code> button, press <code>Ctrl+2</code> ( the <strong>Learn</strong> command).  You will see the <code>OK</code> button surrounded with a red highlight.  You will also see that the <strong>Recording Activity</strong> dialog has been updated with a <strong>Learn</strong> event.</p>
 <p><img alt="radialogforlearnok" src="../img/learn_object2.png" /></p>
-<h2 id="step-6-finish-recording">Step 6. Finish Recording</h2>
+<h2 id="step-6-finish-recording">Step 6. Finish Recording<a class="headerlink" href="#step-6-finish-recording" title="Permanent link">&para;</a></h2>
 <p>Press the <code>Finish</code> button or <code>Ctrl+3</code> to end the recording session.  </p>
-<h2 id="step-7-observe">Step 7. Observe</h2>
+<h2 id="step-7-observe">Step 7. Observe<a class="headerlink" href="#step-7-observe" title="Permanent link">&para;</a></h2>
 <p>You will now see that Rapise has <strong>learned</strong> about the <code>OK</code> button, and the Object Tree in the upper left-hand pane of the Rapise has a new entry called <code>OK</code> (shown here expanded).  The list of items contained under the OK button entry in the Object Tree is the set of methods and properties available for the <code>OK</code> object.</p>
 <p>Actions and properties have different icons. The items are grouped by the library, so the DoAction() method is unique to the <code>OK</code> <a href="/Libraries/UIAButton/">UIAButton</a> object whereas the <code>DoClick()</code> method is generic and
 available for all Windows objects.</p>
@@ -10226,7 +10226,7 @@ available for all Windows objects.</p>
 <p><strong>Second</strong>, notice the <code>ID</code> entry in the Object section of the pane.  This is the name of the object from Rapise's perspective.  All Rapise objects are available through the <code>SeS()</code> function call.  Therefore, if we want to refer to the <code>OK</code> object, we will use <code>SeS("OK")</code> to refer to it.  Once we have correctly identified the object, all valid methods and properties can be accessed by using that object as the basis.</p>
 <p><strong>Thirdly</strong>, notice in the main editor window of the Rapise, that no code has been added.  When you identified the <code>OK</code> button, all Rapise did was add the new object to the Object Tree.  It did not write any code in the JavaScript file.</p>
 </blockquote>
-<h2 id="step-8-use-learned-object">Step 8. Use Learned Object</h2>
+<h2 id="step-8-use-learned-object">Step 8. Use Learned Object<a class="headerlink" href="#step-8-use-learned-object" title="Permanent link">&para;</a></h2>
 <p>In the automated (recorded) section above, you saw that when you pressed the OK button on the dialog, Rapise recorded a function like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
 </code></pre></div>
@@ -10291,7 +10291,7 @@ g_load_libraries=[&quot;UIAutomation&quot;];
 </code></pre></div>
 
 <p>Once again, the script will fail.</p>
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../howtos/">How-Tos</a></li>
 </ul>

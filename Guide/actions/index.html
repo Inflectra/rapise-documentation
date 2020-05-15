@@ -9955,10 +9955,10 @@
               
                 
                 
-                <h1 id="actions">Actions</h1>
-<h2 id="purpose">Purpose</h2>
+                <h1 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h1>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p><strong>Actions</strong> are anything the user can do to a GUI control, such as click, select, fill with text, etc. You can override the behavior of an action, without creating or altering a <a href="../recording_library/">Recording Library</a>, using <strong>SeSOverrideAction()</strong>. Overriding an action affects <a href="../playback/">Playback</a>, but not <a href="../recording/">Recording</a>.</p>
-<h2 id="usage">Usage</h2>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p><strong>SeSOverrideAction()</strong> is used to override an action handler or add a new <strong>DoAction</strong> handler:</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/**</span>
 <span class="cm"> * Overrides Behavior.</span>
@@ -9974,7 +9974,7 @@
 </code></pre></div>
 
 <p>In most cases <strong>SeSOverrideAction()</strong> should be called from within <a href="../understanding_the_script/"><strong>TestInit()</strong></a>.</p>
-<h2 id="calling-base-actions">Calling Base Actions</h2>
+<h2 id="calling-base-actions">Calling Base Actions<a class="headerlink" href="#calling-base-actions" title="Permanent link">&para;</a></h2>
 <p>The function you are overriding is called the <strong>base action</strong>. It is passed to the overriding action as first <code>defaultActionHandler</code> parameter. You can call the <strong>base action</strong> like this:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MyHTMLObjectDoClick</span><span class="p">(</span><span class="nx">defaultActionHandler</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">forceEvent</span><span class="p">)</span>
 <span class="p">{</span>
@@ -9985,7 +9985,7 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<h2 id="see-also">See Also</h2>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB354.aspx">KB354</a> How to override an action for an object type</li>
 </ul>
