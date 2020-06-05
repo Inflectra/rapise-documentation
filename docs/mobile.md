@@ -12,7 +12,10 @@
 - [Mobile Testing on Android](/Guide/mobile_testing_android/)
 - [Mobile Testing on iOS](/Guide/mobile_testing_ios/)
 
-## New in Rapise 6.2
+## Webinars
 
-- [Reconnect Mobile Session](/Guide/mobile_reconnect/)
-- [Reconnect WebDriver Session](/Guide/selenium_reconnect/)
+- [Automating Mobile UI Testing](https://youtu.be/hR4KJ_Yfn2I)
+
+## See Also
+
+- [Mobile Spy](/Guide/object_spy_mobile/)

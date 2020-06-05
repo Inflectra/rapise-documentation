@@ -14,8 +14,11 @@ Rapise provides out of the box support for the following different versions of M
 
 ## Webinars
 
-- [Testing Microsoft Dynamics AX with Rapise](https://youtu.be/KH1-WVqHZ5k)
-- [Testing Microsoft Dynamics NAV with Rapise](https://youtu.be/IxwxLqJZdCc)
-- [Testing Microsoft Dynamics 365 for Operations with Rapise](https://youtu.be/YMhT0GLNwUE)
-- [How to Create a PO in Microsoft Dynamics 365 for Operations](https://youtu.be/NKE1Lg5OgoQ)
-- [Testing Dynamics CRM & 365 for Sales using Rapise](https://youtu.be/49DpIhpFLx8)
+- [Testing MS Dynamics NAV](https://youtu.be/ZBRBdNnFl-0)
+- [Testing MS Dynamics AX](https://youtu.be/aIh8sMTkQ18)
+- [Testing MS Dynamics 365 for Sales](https://youtu.be/mV7xKc7tdrc)
+- [Testing MS Dynamics 365 for Finance & Operations](https://youtu.be/nZYc2qqJtWA)
+
+## See Also
+
+[Microsoft Dynamics Testing in Rapise](/Guide/microsoft_dynamics/)
