@@ -2,6 +2,8 @@
 
 We can train your QA team to effectively use Rapise for UI test automation. If you are switching from manual testing it is a highly recommended option for you. Please contact sales@inflectra.com to arrange.
 
+Training may be a part of [Rapise Quick-Start implementation package](https://www.inflectra.com/Company/Article/jump-starting-your-rapise-test-automation-project-997.aspx).
+
 ## Overview
 
 The proposed training is an interactive process. Our instructors both provide online sessions and give lab tasks to check the level of understanding of participants. 
