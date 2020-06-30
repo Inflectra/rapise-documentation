@@ -34,6 +34,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 - [Tables, Grids And Trees](https://youtu.be/SUy-hqaIh4s)
 - [Dropdown Controls, Date Pickers & Sliders](https://youtu.be/Wl90j4ZY6lg)
 - [Little Known Ways To Leverage RVL](https://youtu.be/f6OLM9ZajZw)
+- [5 Ways To Use Rapise Frameworks](https://youtu.be/LrFJeAs742E)
 
 ### Testing Microsoft Dynamics
 
@@ -43,6 +44,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 - [How To Test MS Dynamics AX Through The UI Like A Pro](https://youtu.be/aIh8sMTkQ18)
 - [How To Test MS Dynamics 365 for Sales Through The UI Like A Pro](https://youtu.be/mV7xKc7tdrc)
 - [How To Test MS Dynamics 365 for Finance & Operations Through The UI](https://youtu.be/nZYc2qqJtWA)
+- [How To Test MS Dynamics Unified Service Desk Through The UI](https://youtu.be/ehRRo0H88Mk)
 
 ## Singles
 
