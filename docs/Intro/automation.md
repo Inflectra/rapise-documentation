@@ -26,3 +26,16 @@ You are testing a very slow application and the object is not yet available when
 
 !!! info "How to Fix"
     - [Ways to slow down test execution](https://www.inflectra.com/Support/KnowledgeBase/KB301.aspx)
+    
+## Execute Tests Fast And Reliable
+
+Let's talk about how to adjust an automated test to make it run fast and reliable.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nCV0u6s9W0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Web Recorder Configuration
+
+Rapise has a Web Recorder. When you start recording Rapise intercepts your keyboard and mouse and adds the UI elements you are interacting with to the Object Tree. For each such element Rapise generates an XPATH locator. Though it usually makes a great job generating XPATH locators for elements, default Web Recorder settings do not fit all Web Applications. For complex modern applications you may need to configure the Web Recorder to get the most out of it.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v8UmALPdJIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

@@ -5,7 +5,7 @@ import re
 
 url = "https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx"
 list_file_name = "List.xml"
-kb_file_name = "../kb.md"
+kb_file_name = "../../docs/Manuals/kb.md"
 
 wspace_regex = re.compile(r"[ \t\n]+", re.IGNORECASE)
 kbno_regex = re.compile(r"KB[0-9]+", re.IGNORECASE)
@@ -13,8 +13,7 @@ kbno_regex = re.compile(r"KB[0-9]+", re.IGNORECASE)
 def extract_kbs():
     with open(kb_file_name, "w", encoding='utf-8') as output:
         output.write("# Knowledge Base\n\n")
-        output.write("We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)\n\n")
-        output.write("## Topics\n\n");
+        output.write("!!! note \"\"\n    We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](" + url + ")\n\n")
         tree = lxml.etree.parse(list_file_name)    
         headers = tree.xpath("//h5[@class='mb0']/a")
         for h in headers:

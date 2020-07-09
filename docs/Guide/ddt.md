@@ -118,7 +118,7 @@ Open `UsingSpreadsheet` sample test from the start page to see a working example
 
 ## See Also
 
-- Data-Driven Software Testing with Rapise ([watch video](https://youtu.be/eWcoN_xNXgQ))
+- [Data-Driven Testing (webinar)](https://youtu.be/gh8pop9LIb0?t=222)
 - How To: Easily Attaching RVL Script to an External Spreadsheet in Rapise ([watch video](https://youtu.be/iuWCXmzZsow))
 - [KB432](https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx) Writing data to an Excel spreadsheet
 - [KB27](https://www.inflectra.com/support/knowledgebase/kb27.aspx) Using Rapise to extract test data from an Excelsheet 

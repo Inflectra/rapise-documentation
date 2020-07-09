@@ -34,6 +34,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - toc:
+      permalink: true  
 
 theme: 
   name: 'material'
@@ -359,6 +361,10 @@ nav:
     - 'JScript Language Reference': 'Guide/jscript_language_reference.md'
 - 'KB':
     - 'Knowledge Base': 'Manuals/kb.md'
+- 'Education':
+    - 'Recorded Webinars': 'Intro/webinars.md'
+    - 'Training': 'Intro/training.md'
+    - 'Playground': 'Intro/uitap.md'
 - 'Release Notes':
     - 'Release Notes for 6.4': 'New/6_4.md'
     - 'Release Notes for 6.3': 'New/6_3.md'

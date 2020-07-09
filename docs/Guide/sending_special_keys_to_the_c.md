@@ -57,6 +57,8 @@ To specify characters that aren't displayed when you press a key, such as `ENTER
 | Keypad multiply                        | {MULTIPLY}                          |
 | Keypad divide                          | {DIVIDE}                            |
 
+The plus sign (+), caret (^), percent sign (%), tilde (~), and parentheses () have special meanings to SendKeys. To specify one of these characters, enclose it within braces ({}). For example, to specify the plus sign, use "{+}". To specify brace characters, use "{{}" and "{}}".
+
 ## SHIFT, CTRL and ALT
 
 To specify keys combined with any combination of the SHIFT, CTRL, and ALT keys, precede the key code with one or more of the following codes:

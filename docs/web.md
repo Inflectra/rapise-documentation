@@ -12,12 +12,19 @@ To improve default recording experience get familiar with
 
 - [Web Application Profiles](/Guide/web_app_profile/)
 
+In-depth documentation on web testing:
+
+- [Web Testing](/Guide/web_testing/)
+
 ## Webinars
 
-- [Introduction to Test Automation with Rapise](https://youtu.be/X0RyPPAQhFk)
+- [Introduction To Powerful New Rapise 6.0](https://youtu.be/dAtSwNawL8Q?t=366)
 - [Live Demo: Data-driven Codeless Test](https://youtu.be/YakGP-O-LBs?t=1682)
+- [Automating Web UI Testing](https://youtu.be/RoPIEfoSlek?t=224)
 
-## New in Rapise 6.2
+## See Also
 
+- [Web Spy](/Guide/web_spy/)
 - [Self-healing Web Locators](/Guide/web_self_healing/)
-- [Reconnect WebDriver Session](/Guide/selenium_reconnect/)
+- [HTMLObject](/Libraries/HTMLObject/)
+- [Navigator](/Libraries/Navigator/)
