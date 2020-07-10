@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
     
     
       
@@ -296,6 +296,8 @@
     </li>
   
 
+      
+        
       
         
       
@@ -9910,6 +9912,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../Intro/orientation/" title="Know Your Way Around" class="md-nav__link">
+      Know Your Way Around
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../../Manuals/kb/" title="Knowledge Base" class="md-nav__link">
       Knowledge Base
     </a>
@@ -10038,38 +10052,44 @@
                 
                 <h1 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link">&para;</a></h1>
 <p>RVL script is a spreadsheet containing set of 7 columns in fixed order:</p>
-<p><img alt="Columns" src="../img/Columns.png" />
-<em>RVL Columns</em></p>
+<p><img alt="Columns" src="../img/Columns.png" /></p>
 <h2 id="default-columns">Default Columns<a class="headerlink" href="#default-columns" title="Permanent link">&para;</a></h2>
+<details class="abstract"><summary>1 - Flow</summary><p>This column is dedicated to specifying structural information such as blocks, branches (If-Else), loops.</p>
+<p>Also it contains information about single row and multi row comments. Possible values are limited by the list:</p>
 <ul>
-<li>
-<p>1<sup>st</sup> <em>Flow</em> -- Control flow. This column dedicated to specifying structural information such blocks, Branches (If-Else), loops.</p>
-<p>Also it contains information about single row and multi row comments. Possible values are limited by the list:
-  *   <code>\#</code> or <code>//</code> - single row  comment
-  * <code>/*</code> - begin of multi row comment (comment is valid up to line starting with <code>*/</code>)
-  * <code>*/</code> - end of multi row comment started earlier from <code>/*</code>
-  * <code>If</code> - conditional branch. Row type must be <code>Condition</code>. The row may be followed with one or more <code>ElseIf</code> statements, zero or one <code>Else</code> statement and then should end with <code>End</code>.</p>
-</li>
-<li>
-<p>2<sup>nd</sup> <em>Type</em> -  Type of operation specified in this row. One of: </p>
-</li>
+<li><code>\#</code> or <code>//</code> - single row  comment</li>
+<li><code>/*</code> - begin of multi row comment (comment is valid up to line starting with <code>*/</code>)</li>
+<li><code>*/</code> - end of multi row comment started earlier from <code>/*</code></li>
+<li><code>If</code> - conditional branch. Row type must be <code>Condition</code>. The row may be followed with one or more <code>ElseIf</code> statements, zero or one <code>Else</code> statement and then should end with <code>End</code>.</li>
+</ul>
+</details>
+<details class="abstract"><summary>2 - Type</summary><p>Type of operation specified in this row. One of: </p>
+<ul>
 <li><code>Action</code> - row defines an action. Action is a call for operation for one of the objects. Object is defined in the next column. See <a href="../Actions/">Actions</a>.</li>
 <li><code>Param</code> - signals that this row contains action parameter or condition parameter defined in last 3 columns (<code>ParamName</code>, <code>ParamType</code> and <code>ParamValue</code>).</li>
 <li><code>Output</code> - this type of row must go after last Param for an action and defines a variable that should accept output value retured from the call to the Action.</li>
 <li><code>Variable</code> - this row defines or assigns value to a local or global variable. See <a href="../Variables/">Variables</a>.</li>
 <li><code>Assert</code> - first row for the Assertion. See <a href="../Assertions/">Assertions</a>.</li>
 <li><code>Condition</code></li>
-<li>3<sup>rd</sup> <em>Object</em> - Id of the object to be used for action. Rapise provides set of predefined global objects and objects recorded/learned from the AUT.</li>
-<li>4<sup>th</sup> <em>Action</em> - One of the actions. <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code> etc.</li>
-<li>5<sup>th</sup> <em>ParamName</em> - see <a href="../Params/">Params</a> for more information on last 3 columns</li>
-<li>6<sup>th</sup> <em>ParamType</em> - </li>
+</ul>
+</details>
+<details class="abstract"><summary>3 - Object</summary><p>Id of the object to be used for an action. Rapise provides set of predefined global objects and objects recorded/learned from the AUT.</p>
+</details>
+<details class="abstract"><summary>4 - Action</summary><p>One of the actions applicable to the object selected in the previous column: <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code> etc.</p>
+</details>
+<details class="abstract"><summary>5 - ParamName</summary><p>Name of a parameter to the action selected in the previous column. See <a href="../Params/">Params</a> for more details.</p>
+</details>
+<details class="abstract"><summary>6 - ParamType</summary><p>The type of a parameter determines valid input for the next <code>ParamValue</code> column.</p>
+<ul>
 <li><code>bool</code> - <em>ParamValue</em> should be <code>true</code> or <code>false</code>,</li>
 <li><code>string</code> - <em>ParamValue</em> is a text string</li>
 <li><code>number</code> - <em>ParamValue</em> is an integer or floating point number,</li>
 <li><code>variable</code> - <em>ParamValue</em> is a variable name. Actual value is read from the variable.</li>
 <li><em><code>Map Name</code></em> - <em>ParamValue</em> is a column name from the given <code>Map</code>. Usually this feature is used for data driven testing.</li>
-<li>7<sup>th</sup> <em>ParamValue</em> - Depends on the <em>ParamType</em>.</li>
 </ul>
+</details>
+<details class="abstract"><summary>7 - ParamValue</summary><p>This columns defines actual values passed to actions. Depends on the <em>ParamType</em>.</p>
+</details>
 <p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p>
 <h2 id="adding-custom-columns">Adding Custom Columns<a class="headerlink" href="#adding-custom-columns" title="Permanent link">&para;</a></h2>
 <p>By default RVL always displays column <code>H</code>. It is sometimes useful (to store temp value, add a note etc).</p>
@@ -10095,9 +10115,10 @@
 </ul>
 <p>You may have one or more custom columns defined in the script to achieve necessary goals. This will require you to override <code>OnRVLScriptStep</code> function as described below.</p>
 <h2 id="onrvlscriptstep">OnRVLScriptStep<a class="headerlink" href="#onrvlscriptstep" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Note: The information below requires some JavaScript knowledge. In most cases all you need is to copy relevant snippet from the documentation or KB to achieve desired behavior</p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The information below requires some JavaScript knowledge. In most cases all you need is to copy relevant snippet from the documentation or KB to achieve desired behavior</p>
+</div>
 <p>Custom column actions are processed in the <code>OnRVLScriptStep</code> function that should be defined in the <code>User.js</code> file or in the <a href="../../Guide/custom_libraries/">custom library</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">OnRVLScriptStep</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">place</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">,</span> <span class="nx">stackItem</span><span class="p">)</span>
 </code></pre></div>
@@ -10206,7 +10227,7 @@
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
