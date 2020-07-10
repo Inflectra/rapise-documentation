@@ -24,6 +24,12 @@ interact with it:
 ***Note:*** Rapise requires localhost port 4247 to be accessible for correct operation. Please, make sure that this port is unblocked in
 your Firewall.
 
+## Firefox For Rapise 6.5
+
+Rapise 6.5 and higher requires you to update RapiseFirefox extension. Simply click the link below and update extension to the latest version.
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/</a>
+
 ## Chrome
 
 In order to test web applications using the Google Chrome browser, you will need to install an extension for Chrome that allows Rapise to
@@ -40,6 +46,12 @@ interact with it:
     ![checkboxes](./img/setting_up_web_browsers7.png)
 
 4. When installation is complete restart Chrome.
+
+## Chrome For Rapise 6.5
+
+Rapise 6.5 and higher requires you to update RapiseChrome extension. Simply click the link below and update extension to the latest version.
+
+<a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank">https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc</a>
 
 ## Chromium Applications
 
