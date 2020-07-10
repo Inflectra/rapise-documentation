@@ -1,7 +1,7 @@
 # Rapise Documentation
 
 !!! info "Quick Links"
-    - [Know Your Way Around](/intro/orientation/)
+    - [Know Your Way Around](/Intro/orientation/)
     - [Web Testing](/web/)
     - [Desktop Testing](/desktop/)
     - [Mobile Testing](/mobile/)
