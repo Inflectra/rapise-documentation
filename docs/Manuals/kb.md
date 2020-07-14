@@ -3,6 +3,46 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB556', 'RapiseChromeExtension version 3')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB556.aspx">KB556</a> RapiseChromeExtension version 3
+
+Along with Rapise 6.5 we are releasing an update to the RapiseChromeExtension.  The new version (v3) is back compatible. It means that older versions of Rapise should work with it without issues. Rapise 6.5+ will require you to update the extension if you have RapiseChromeExtension v2.
+
+### <a onclick="return RegisterKbClick('KB555', 'Recording Web and Desktop actions into the same test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB555.aspx">KB555</a> Recording Web and Desktop actions into the same test
+
+Starting from Rapise 6.5 you may record both Web and Desktop actions into the same test.
+
+### <a onclick="return RegisterKbClick('KB553', 'Basic authentication in Web tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB553.aspx">KB553</a> Basic authentication in Web tests
+
+Legacy Web applications still may use basic authentication. So when you navigate to an application URL the browser shows a dialog with Username and Password fields to enter.  The content of this dialog is not a Web content so recording and playback in a Web test will not work.
+
+### <a onclick="return RegisterKbClick('KB551', 'Searching for a Web element by text that contains non-breaking spaces')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB551.aspx">KB551</a> Searching for a Web element by text that contains non-breaking spaces
+
+Are you writing XPath to find an element using its inner text but it does not work? Most likely the text contains non-breaking spaces. This situation is described in detail in our UI Test Automation Playground.
+
+### <a onclick="return RegisterKbClick('KB545', 'How To Read Environment Variable in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB545.aspx">KB545</a> How To Read Environment Variable in Rapise
+
+Here is a number of ways of doing it.
+
+### <a onclick="return RegisterKbClick('KB543', 'Values passed from RapiseLauncher to Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB543.aspx">KB543</a> Values passed from RapiseLauncher to Rapise
+
+When a test is executed by RapiseLauncher it may access key properties of the test run,  custom test set properties and test case parameters. Requires Rapise 6.4.19.16+
+
+### <a onclick="return RegisterKbClick('KB541', 'Automating TinyMCE 2020')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB541.aspx">KB541</a> Automating TinyMCE 2020
+
+The world moves forward and  our older KB articles related to TinyMCE became outdated. In this article we present a modern way (as of year 2020) of automating TinyMCE controls.
+
+### <a onclick="return RegisterKbClick('KB540', 'Unified Service Desk with Chrome for Hosted Controls')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB540.aspx">KB540</a> Unified Service Desk with Chrome for Hosted Controls
+
+If you want to use Unified Service Desk with Chrome and test it with Rapise you need to configure it properly.
+
+### <a onclick="return RegisterKbClick('KB539', 'Working with Rapise AWS SaaS Images')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB539.aspx">KB539</a> Working with Rapise AWS SaaS Images
+
+Rapise is available as a SaaS solution. Here we describe step-by-step guide how to make several Rapise cloud instances ready for test execution.
+
+### <a onclick="return RegisterKbClick('KB538', 'Increasing the Size of Rapise Images in Spira Reports')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB538.aspx">KB538</a> Increasing the Size of Rapise Images in Spira Reports
+
+When you run Rapise automated tests using RapiseLauncher the system will automatically embed the images from Rapise into the various test cases and test run reports. By default the report format has relatively small images so that they can fit easily into the tables of expected result and actual results. However some users have asked for ways to make the images bigger.
+
 ### <a onclick="return RegisterKbClick('KB537', 'Using Extra Columns in RVL to control screenshots')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB537.aspx">KB537</a> Using Extra Columns in RVL to control screenshots
 
 Sometimes we need more fine-grained control over screenshots. Here we describe the way of using H column for defining which actions will have what kind of screenshot captured.
@@ -849,7 +889,7 @@ Suppose we have a situation that a thick-client (desktop) application under test
 
 ### <a onclick="return RegisterKbClick('KB182', 'How to automate the testing of TinyMCE Rich Text Boxes using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB182.aspx">KB182</a> How to automate the testing of TinyMCE Rich Text Boxes using Rapise
 
-When you have a rich text box in a web application, the process for recording a test and playing it back will be different to a standard HTML plain text box. When you are using the popular TinyMCE rich text box you have more options to automate it by using its special client-side JavaScript API.
+DEPRECATED Method described in this article does not work any more because browser security has changed since 2015. Now it is not possible to directly access client side JavaScript model. We have a new article that explains how to automate TinyMCE https://www.inflectra.com/Support/KnowledgeBase/KB541.aspx When you have a rich text box in a web application, the process for recording a test and playing it back will be different to a standard HTML plain text box. When you are using the popular TinyMCE rich text box you have more options to automate it by using its special client-side JavaScript API.
 
 ### <a onclick="return RegisterKbClick('KB181', 'Dynamically constructing the .rest file URLs to test REST APIs')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB181.aspx">KB181</a> Dynamically constructing the .rest file URLs to test REST APIs
 
@@ -918,6 +958,10 @@ In Rapise 2.2, "DoClick" behavior was changed, so we don't do a click but rather
 ### <a onclick="return RegisterKbClick('KB141', 'Testing Silverlight Applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB141.aspx">KB141</a> Testing Silverlight Applications
 
 When testing Silverlight applications, you may find that Rapise fails to recognize the objects in the Silverlight app using the UIAutomation library. When using the Rapise Spy Tool, the  whole app is identified as a single window. The objects such as a dropdown, buttons etc. inside the silverlight app are not individually recognized.
+
+### <a onclick="return RegisterKbClick('KB544', 'How to Use Rapise Cloud on AWS')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB544.aspx">KB544</a> How to Use Rapise Cloud on AWS
+
+With our Rapise cloud edition, you can take your automated software testing to the cloud. With Rapise cloud edition you can start testing immediately, no hardware or test lab needed, just sign up for Amazon Web Services (AWS) and rent our Rapise cloud AMIs on-demand, with no minimum usage and no annoying monthly or annual fees, just pay for what you use.
 
 ### <a onclick="return RegisterKbClick('KB139', 'Disabling the generation of comments during Recording')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB139.aspx">KB139</a> Disabling the generation of comments during Recording
 
