@@ -24,17 +24,17 @@
 ??? abstract "4 - Object in the Object Tree"
     The [Object Tree](/Guide/object_tree/) contains [objects](/Libraries/libraries/) captured during [recording](/Guide/object_types/) of a test.
     
-    ![Menu](/Guide/img/know_your_way_treeobj.png){: width="230px" }
+    ![Menu](/Guide/img/know_your_way_treeobj.png){: width="300" }
     
 ??? abstract "5 - Object Tree and Files View"
     The [Object Tree](/Guide/object_tree/) displays the repository of objects. Switch to [Files View](/Guide/test_files_dialog/) to navigate through the files of the test.
     
-    ![Menu](/Guide/img/know_your_way_objtree_and_files.png){: width="230px" }
+    ![Menu](/Guide/img/know_your_way_objtree_and_files.png){: width="300" }
     
 ??? abstract "6 - Object Properties"
     [This pane](/Guide/properties/) displays the properties of a selected object.
 
-    ![Menu](/Guide/img/know_your_way_properties.png){: width="230px" }
+    ![Menu](/Guide/img/know_your_way_properties.png){: width="300" }
 
 ??? abstract "7 - Output View"
     [Output view](/Guide/output_view/) is a collection of tabs to display test execution log, JavaScript warnings and errors and search results.

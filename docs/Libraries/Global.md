@@ -27,6 +27,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoCompareJsObjects](#DoCompareJsObjects) | Compares two JavaScript objects and prints differences to the report. |
 |	[DoDecrypt](#DoDecrypt) | Decrypts a piece of text. |
 |	[DoEncrypt](#DoEncrypt) | Encrypts a piece of text. |
+|	[DoHorizontalScroll](#DoHorizontalScroll) | Simulates mouse horizontal wheel scroll gesture. |
 |	[DoInvokeTest](#DoInvokeTest) | Invokes another test (aka subtest). |
 |	[DoInvokeTestParallel](#DoInvokeTestParallel) | Executes specified test in few parallel threads. |
 |	[DoKillByName](#DoKillByName) | Terminates a given process. |
@@ -38,9 +39,11 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoPlayManual](#DoPlayManual) | Executes a manual test. |
 |	[DoRunTestSet](#DoRunTestSet) | Executes a test set. |
 |	[DoSendKeys](#DoSendKeys) | Sends series of keystrokes to a currently focused application. |
+|	[DoSendText](#DoSendText) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
 |	[DoSleep](#DoSleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
 |	[DoTrim](#DoTrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
 |	[DoTypePassword](#DoTypePassword) | Types encrypted password into a control which has a focus. |
+|	[DoVerticalScroll](#DoVerticalScroll) | Simulates mouse vertical wheel scroll gesture. |
 |	[DoWaitFor](#DoWaitFor) | Waits for object specified by objectId to become available. |
 |	[DoWaitForProperty](#DoWaitForProperty) | Waits for specified value of object's property. |
 |	[GetClipboardText](#GetClipboardText) | Reads text stored in the windows clipboard. |
@@ -228,6 +231,24 @@ string: Encrypted text.
 
 
 <a name="see.also.global.doencrypt"></a>
+
+<a name="DoHorizontalScroll"></a>    
+#### DoHorizontalScroll(scrollAmountInClicks)
+
+Simulates mouse horizontal wheel scroll gesture. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| scrollAmountInClicks | number |	The amount to scroll in clicks. A positive value indicates that the wheel was rotated to the right; a negative value indicates that the wheel was rotated to the left. |
+
+
+
+
+
+<a name="see.also.global.dohorizontalscroll"></a>
 
 <a name="DoInvokeTest"></a>    
 #### DoInvokeTest(pathToTest, optionalParams)
@@ -528,6 +549,24 @@ Sends series of keystrokes to a currently focused application.
 
 <a name="see.also.global.dosendkeys"></a>
 
+<a name="DoSendText"></a>    
+#### DoSendText(text)
+
+Sends text to the active application as is (while SendKeys also supports sending special keys). Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| text | string |	Text to input. |
+
+
+
+
+
+<a name="see.also.global.dosendtext"></a>
+
 <a name="DoSleep"></a>    
 #### DoSleep(millis=1000)
 
@@ -594,6 +633,24 @@ string: 'true'
 
 
 <a name="see.also.global.dotypepassword"></a>
+
+<a name="DoVerticalScroll"></a>    
+#### DoVerticalScroll(scrollAmountInClicks)
+
+Simulates mouse vertical wheel scroll gesture. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| scrollAmountInClicks | number |	The amount to scroll in clicks. A positive value indicates that the wheel was rotated forward, away from the user; a negative value indicates that the wheel was rotated backward, toward the user. |
+
+
+
+
+
+<a name="see.also.global.doverticalscroll"></a>
 
 <a name="DoWaitFor"></a>    
 #### DoWaitFor(objectId=, timeout, sleepTimeIfFound)

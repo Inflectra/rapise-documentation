@@ -80,7 +80,18 @@ The default profile looks like this:
                 }
                 */
                 return false;
-            }
+            },
+			clickable: function(el)
+			{
+				/*
+				var tag = el.tagName.toLowerCase();
+				if (tag == "p" || __hasAttribute(el, "title"))
+				{
+					return true;
+				}
+				*/
+				return false;
+			}            
         }
     }
 }
@@ -103,6 +114,7 @@ The default profile looks like this:
 - `record.handlers` is an objects that defines functions injected into the recorder. Requires Rapise 6.4+
     - `elementName(el)` builds a name for a given element. This name is used as object ID in the object repository. If this function returns `null` then default algorithm is used to build the name.
     - `skipAttribute(node, attr, value)` allows to skip recording of some attributes in specific cases. The function must return `true` if an attribute should not be recorded.
+    - `clickable(el)` fine grained control over which element is considred clickable. When the function returns `true` the element is considered clickable, if `false` - then default algorithm (element is clickable or not) is used. Requires Rapise 6.5+.
 
 ## Anchors
 
@@ -142,7 +154,7 @@ we'll get the locator as
 
 The locator is now bound to the table. If another element with `Contoso` title appears somewhere on the page (outside the table) we'll find the correct element.
 
-## Example 2
+### Example 2
 
 Here is more complex and real-life example. In [Microsoft Dynamics 365 Business Central](https://dynamics.microsoft.com/en-us/business-central/overview/) application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with `spa-view` class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower `z-index` then currently active form.
 

@@ -59,6 +59,8 @@ During playback Rapise takes snapshots of elements found by full-path locator. S
 
 ## Configuration
 
+### Threshold
+
 By default match of an element is accepted when confidence is not less than 96%. You can change the threshold in [TestPrepare](understanding_the_script.md) block by setting `g_aiFplConfidence`:
 
 ```javascript
@@ -68,6 +70,8 @@ function TestPrepare()
     g_aiFplConfidence = 0.98;
 }
 ```
+
+### Object Manager Prompt
 
 To suppress prompt to use Object Manager when test playback contains healing notifications set `g_aiMergePromptEnable` to `false`:
 
@@ -79,10 +83,20 @@ function TestPrepare()
 }
 ```
 
+### Screenshots
+
 To disable automatic capturing of recording screenshots `g_aiCaptureRecordingScreenshots` to `false`.
 
 ```javascript
 g_aiCaptureRecordingScreenshots = false;
+```
+
+### Playback
+
+During playback when an element can not be found using XPath locator - Rapise starts applying the self-healing locator. The number of initial attempts before switching on self-healing is configurable (since Rapise 6.5). Usage of self-healing at the very first attempts to find an element is not recommended since a page may not be fully loaded and wrong element may be chosen by the algorithm. First self-healing attempt is set by the variable. 21 is the default value. You may change it to any number that is lower than `g_objectLookupAttempts`.
+
+```javascript
+g_aiFirstAttemptNumber = 21;
 ```
 
 ## See Also

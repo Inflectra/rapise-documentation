@@ -75,6 +75,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |	[DoEnsureVisible](#DoEnsureVisible) | Makes sure specified element is visible on the screen. |
 |	[DoGetRect](#DoGetRect) | Finds screen rectangle for this object. |
 |	[DoGetSelection](#DoGetSelection) | Gets selected options text of a SELECT element. |
+|	[DoMouseMove](#DoMouseMove) | Moves mouse on HTML element with offset. |
 |	[DoSelect](#DoSelect) | Selects specified element in &lt;select&gt; control. |
 |	[DoSetCheck](#DoSetCheck) | Sets specified state of check box. |
 |	[DoSetText](#DoSetText) | Sets text for input edit or textarea. |
@@ -470,8 +471,8 @@ Clicks on HTML element (button, link).
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X coordinate to click.<br>Optional. |
-| y | number |	Y coordinate to click.<br>Optional. |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: false. |
 
 
@@ -821,6 +822,30 @@ boolean: String with option values separated by delim.
 
 
 <a name="see.also.htmlobject.dogetselection"></a>
+
+<a name="DoMouseMove"></a>    
+#### DoMouseMove(x, y)
+
+Moves mouse on HTML element with offset.
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise'
+
+
+
+<a name="see.also.htmlobject.domousemove"></a>
 
 <a name="DoSelect"></a>    
 #### DoSelect(txt)

@@ -38,26 +38,51 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[CheckObjectVisible](#CheckObjectVisible) | Checks if object is visible on the screen by its id or XPath. |
 |	[Close](#Close) | Closes browser. |
 |	[Detach](#Detach) | Disconnects from a browser. |
+|	[DoActivateWindow](#DoActivateWindow) | Makes specified browser window active and focused. |
 |	[DoCheckAlert](#DoCheckAlert) | Waits until browser alert with a given text. |
 |	[DoCheckConfirmation](#DoCheckConfirmation) | Waits until browser confirmation with a given text. |
 |	[DoCheckPrompt](#DoCheckPrompt) | Waits until browser prompt with a given text. |
 |	[DoClickUntilOnScreen](#DoClickUntilOnScreen) | Clicks on a given element until another element appears on screen. |
 |	[DoClickWhileOnScreen](#DoClickWhileOnScreen) | Clicks on an element until it disappears. |
+|	[DoCloseTab](#DoCloseTab) | Closes currently selected tab. |
+|	[DoCloseWindow](#DoCloseWindow) | Closes currently active browser window. |
+|	[DoCreateTab](#DoCreateTab) | Creates new browser tab. |
+|	[DoCreateWindow](#DoCreateWindow) | Creates a new browser window. |
 |	[DOMFindByAttributeValue](#DOMFindByAttributeValue) | Looks for a web element by specific attribute value through all frames. |
 |	[DOMFindByName](#DOMFindByName) | Looks for a web element by its name through all frames. |
 |	[DOMFindByText](#DOMFindByText) | Looks for a web element by its text contents through all frames. |
 |	[DOMFindByXPath](#DOMFindByXPath) | Looks for a web element by specific local XPath value through all frames. |
+|	[DoMoveWindow](#DoMoveWindow) | Sets the position of the active browser window. |
 |	[DOMQueryValue](#DOMQueryValue) | Executes an xpath query that may return a value of string, number or boolean type. |
+|	[DoResizeWindow](#DoResizeWindow) | Sets size of the active browser window. |
 |	[DoScreenshot](#DoScreenshot) | Makes screenshot of the browser window. |
+|	[DoSelectTab](#DoSelectTab) | Selects browser tab by title or URL. |
 |	[DoSetExpectedConfirmResult](#DoSetExpectedConfirmResult) | Sets boolean value to return as a result of next browser `confirm` request. |
 |	[DoSetExpectedPromptResult](#DoSetExpectedPromptResult) | Sets text to return as a result of next browser `prompt` request. |
 |	[DoWaitFor](#DoWaitFor) | Waits for object to appear on screen. |
 |	[ExecJS](#ExecJS) | Executes given JavaScript statement in a browser and returns results. |
+|	[ExecPageJS](#ExecPageJS) | Executes given JavaScript statement in a browser in the context of the current page. |
 |	[Find](#Find) | Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`. |
+|	[GetActiveTabId](#GetActiveTabId) | Gets Id of active browser tab. |
+|	[GetActiveTabTitle](#GetActiveTabTitle) | Gets title of active browser tab. |
+|	[GetActiveTabUrl](#GetActiveTabUrl) | Gets URL of active browser tab. |
+|	[GetActiveWindowId](#GetActiveWindowId) | Gets active browser window Id. |
+|	[GetActiveWindowTitle](#GetActiveWindowTitle) | Gets active browser window title. |
+|	[GetActiveWindowUrl](#GetActiveWindowUrl) | Gets active browser window URL. |
 |	[GetPerformance](#GetPerformance) | Reads performance information from currently used browser. |
 |	[GetPosition](#GetPosition) | Gets position of the top-left corner of the browser window. |
 |	[GetSize](#GetSize) | Gets size of the browser window. |
+|	[GetTabIdAt](#GetTabIdAt) | Gets browser tab Id. |
+|	[GetTabIndexById](#GetTabIndexById) | Gets index of the browser tab by Id. |
+|	[GetTabsCount](#GetTabsCount) | Gets number of browser tabs. |
+|	[GetTabTitleAt](#GetTabTitleAt) | Gets browser tab title. |
+|	[GetTabUrlAt](#GetTabUrlAt) | Gets browser tab URL. |
+|	[GetWindowIdAt](#GetWindowIdAt) | Gets browser window Id. |
+|	[GetWindowsCount](#GetWindowsCount) | Gets the number of browser windows. |
+|	[GetWindowTitleAt](#GetWindowTitleAt) | Gets browser window title. |
+|	[GetWindowUrlAt](#GetWindowUrlAt) | Gets browser window URL. |
 |	[KillBrowser](#KillBrowser) | Kills the browser process. |
+|	[LaunchBrowser](#LaunchBrowser) | Launches browser, but does not connect to it. |
 |	[Maximize](#Maximize) | Maximizes browser window. |
 |	[Navigate](#Navigate) | Redirects browser to a specified URL. |
 |	[Open](#Open) | Opens a browser. |
@@ -219,6 +244,24 @@ Disconnects from a browser. Make Navigator ready for a new browser instance conn
 
 <a name="see.also.navigator.detach"></a>
 
+<a name="DoActivateWindow"></a>    
+#### DoActivateWindow(titleOrUrl)
+
+Makes specified browser window active and focused. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| titleOrUrl | string |	string or regex matching URL or window title. |
+
+
+
+
+
+<a name="see.also.navigator.doactivatewindow"></a>
+
 <a name="DoCheckAlert"></a>    
 #### DoCheckAlert(msg)
 
@@ -347,6 +390,64 @@ true if object disappeared, otherwise - false.
 
 <a name="see.also.navigator.doclickwhileonscreen"></a>
 
+<a name="DoCloseTab"></a>    
+#### DoCloseTab()
+
+Closes currently selected tab. Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.doclosetab"></a>
+
+<a name="DoCloseWindow"></a>    
+#### DoCloseWindow()
+
+Closes currently active browser window. Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.doclosewindow"></a>
+
+<a name="DoCreateTab"></a>    
+#### DoCreateTab(url)
+
+Creates new browser tab. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| url | string |	new page URL |
+
+
+
+
+
+<a name="see.also.navigator.docreatetab"></a>
+
+<a name="DoCreateWindow"></a>    
+#### DoCreateWindow(url)
+
+Creates a new browser window. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| url | string |	page URL. |
+
+
+
+
+
+<a name="see.also.navigator.docreatewindow"></a>
+
 <a name="DOMFindByAttributeValue"></a>    
 #### DOMFindByAttributeValue(attrName, attrValue, tagName, findAll, timeout)
 
@@ -451,6 +552,25 @@ array | <br>object: If `findAll` is set to `false` then just first found [elemen
 
 <a name="see.also.navigator.domfindbyxpath"></a>
 
+<a name="DoMoveWindow"></a>    
+#### DoMoveWindow(left, top)
+
+Sets the position of the active browser window. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| left | number |	offset in pixels from the corner of the display. |
+| top | number |	offset in pixels from the corner of the display. |
+
+
+
+
+
+<a name="see.also.navigator.domovewindow"></a>
+
 <a name="DOMQueryValue"></a>    
 #### DOMQueryValue(xpathOrObjId, query)
 
@@ -475,6 +595,25 @@ string | <br>number | <br>boolean: Result of the query or null in the case if th
 
 <a name="see.also.navigator.domqueryvalue"></a>
 
+<a name="DoResizeWindow"></a>    
+#### DoResizeWindow(width, height)
+
+Sets size of the active browser window. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| width | number |	New width of the browser window in pixels. |
+| height | number |	New height of the browser window in pixels. |
+
+
+
+
+
+<a name="see.also.navigator.doresizewindow"></a>
+
 <a name="DoScreenshot"></a>    
 #### DoScreenshot(fileName)
 
@@ -492,6 +631,24 @@ Makes screenshot of the browser window.
 
 
 <a name="see.also.navigator.doscreenshot"></a>
+
+<a name="DoSelectTab"></a>    
+#### DoSelectTab(titleOrUrl)
+
+Selects browser tab by title or URL. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| titleOrUrl | string |	string or regex matching tab URL or title. |
+
+
+
+
+
+<a name="see.also.navigator.doselecttab"></a>
 
 <a name="DoSetExpectedConfirmResult"></a>    
 #### DoSetExpectedConfirmResult(expectedRes)
@@ -578,6 +735,30 @@ Result of code execution.
 
 <a name="see.also.navigator.execjs"></a>
 
+<a name="ExecPageJS"></a>    
+#### ExecPageJS(scriptText, obj)
+
+Executes given JavaScript statement in a browser in the context of the current page. It means the script may accessJS variables and functions declared on the page. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| scriptText | string |	JavaScript code. |
+| obj | HTMLObject |	You may pass object to use in the JavaScript statement. The script will be executed in a frame, containing given obj.<br>Optional. |
+
+
+
+
+**Returns:**
+
+Result of code execution.
+
+
+
+<a name="see.also.navigator.execpagejs"></a>
+
 <a name="Find"></a>    
 #### Find(xpath, url, title, objInfo)
 
@@ -603,6 +784,79 @@ Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`.
 
 
 <a name="see.also.navigator.find"></a>
+
+<a name="GetActiveTabId"></a>    
+#### GetActiveTabId()
+
+Gets Id of active browser tab. Id may be used as parameter to Navigator.DoSelectTab(). Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.getactivetabid"></a>
+
+<a name="GetActiveTabTitle"></a>    
+#### GetActiveTabTitle()
+
+Gets title of active browser tab. Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.getactivetabtitle"></a>
+
+<a name="GetActiveTabUrl"></a>    
+#### GetActiveTabUrl()
+
+Gets URL of active browser tab. Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.getactivetaburl"></a>
+
+<a name="GetActiveWindowId"></a>    
+#### GetActiveWindowId()
+
+Gets active browser window Id. Id is an internal identifier. May be used as a parameter to Navigator.DoActivateWindow(). Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.getactivewindowid"></a>
+
+<a name="GetActiveWindowTitle"></a>    
+#### GetActiveWindowTitle()
+
+Gets active browser window title. Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.getactivewindowtitle"></a>
+
+<a name="GetActiveWindowUrl"></a>    
+#### GetActiveWindowUrl(index)
+
+Gets active browser window URL. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	 |
+
+
+
+
+
+<a name="see.also.navigator.getactivewindowurl"></a>
 
 <a name="GetPerformance"></a>    
 #### GetPerformance(resources, dontWriteReport)
@@ -660,6 +914,154 @@ object: {Width, Height}
 
 <a name="see.also.navigator.getsize"></a>
 
+<a name="GetTabIdAt"></a>    
+#### GetTabIdAt(index)
+
+Gets browser tab Id. Id may be used as parameter to Navigator.DoSelectTab(). Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	number from 0 to Navigator.GetTabsCount() |
+
+
+
+
+
+<a name="see.also.navigator.gettabidat"></a>
+
+<a name="GetTabIndexById"></a>    
+#### GetTabIndexById(tabId)
+
+Gets index of the browser tab by Id. Index may be used as param to GetTabIdAt/GetTabUrlAt/GetTabTitleAt. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| tabId | number |	 |
+
+
+
+
+
+<a name="see.also.navigator.gettabindexbyid"></a>
+
+<a name="GetTabsCount"></a>    
+#### GetTabsCount()
+
+Gets number of browser tabs. Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.gettabscount"></a>
+
+<a name="GetTabTitleAt"></a>    
+#### GetTabTitleAt(index)
+
+Gets browser tab title. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	number from 0 to Navigator.GetTabsCount() |
+
+
+
+
+
+<a name="see.also.navigator.gettabtitleat"></a>
+
+<a name="GetTabUrlAt"></a>    
+#### GetTabUrlAt(index)
+
+Gets browser tab URL. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	number from 0 to Navigator.GetTabsCount() |
+
+
+
+
+
+<a name="see.also.navigator.gettaburlat"></a>
+
+<a name="GetWindowIdAt"></a>    
+#### GetWindowIdAt(index)
+
+Gets browser window Id. Id is an internal identifier. May be used as a parameter to Navigator.DoActivateWindow(). Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	number from 0 to Navigator.GetWindowsCount() |
+
+
+
+
+
+<a name="see.also.navigator.getwindowidat"></a>
+
+<a name="GetWindowsCount"></a>    
+#### GetWindowsCount()
+
+Gets the number of browser windows. Requires Rapise 6.5+
+
+
+
+
+
+<a name="see.also.navigator.getwindowscount"></a>
+
+<a name="GetWindowTitleAt"></a>    
+#### GetWindowTitleAt(index)
+
+Gets browser window title. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	number from 0 to Navigator.GetWindowsCount() |
+
+
+
+
+
+<a name="see.also.navigator.getwindowtitleat"></a>
+
+<a name="GetWindowUrlAt"></a>    
+#### GetWindowUrlAt(index)
+
+Gets browser window URL. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| index | number |	number from 0 to Navigator.GetWindowsCount() |
+
+
+
+
+
+<a name="see.also.navigator.getwindowurlat"></a>
+
 <a name="KillBrowser"></a>    
 #### KillBrowser()
 
@@ -670,6 +1072,24 @@ Kills the browser process. The browser to kill is detected from browser profile 
 
 
 <a name="see.also.navigator.killbrowser"></a>
+
+<a name="LaunchBrowser"></a>    
+#### LaunchBrowser(url)
+
+Launches browser, but does not connect to it. Recommended for applications with basic authentication. Requires Rapise 6.5+
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| url |  |	Initial url, may be empty.<br>Optional. |
+
+
+
+
+
+<a name="see.also.navigator.launchbrowser"></a>
 
 <a name="Maximize"></a>    
 #### Maximize()

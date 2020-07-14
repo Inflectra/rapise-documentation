@@ -142,57 +142,38 @@ Anything typed into the **Type** cell of the commented line is expanded to as ma
 
 ## Context Menu
 
-![RVL Context Menu](./img/rvl_editor_context_menu.png)
+![RVL Context Menu](./img/rvl_editor_context_menu.png){: width="215" }
 
-* **Find '`<object>`' in Object Tree** - this menu item is only available when you click on the cell from the **Object** column.
-
-* **Rename '`<object>`'...** - rename object in the object repository and fix all references in the current sheet.
-
-* **Play This Sheet** - execute actions from the active sheet.
-
-* **Play Selection** - execute selected range of actions only. Useful for tweaking tricky actions and checking the result immediately.
-
-* **Play from Here** - start execution at selected line and proceed until the end. Useful to continue script from the point where it stopped.
-
-* **Cut**, **Copy**, **Paste** - standard clipboard operations.
-
-* **Copy Selection as JavaScript** - translate selected range to the equivalent JavaScript and put its text to the clipboard.
-
-* **Copy Selection as Text** - put selected range as tab-separated text to the clipboard.
-
-* **Ins Row** - insert new row before the active one.
-
-* **Del Row** - delete all selected rows.
-
-* **Clear in Selection** - clears cell values in selected region.
-
-* **Select All Rows** - select full sheet.
-
-* **Insert Selected Rows Here** - clone rows at the current location.
-
-* **Move Selected Rows Here** - move rows to the current location.
-
-* **Wrap Selection Info If** - enclose selected range into [branch](../RVL/IfElse.md).
-
-* **Wrap Selection Into Loop** - enclose selected range into [loop](../RVL/Loops.md).
-
-* **Extract Selection as new Sheet** - make new sheet and move selected range into it.
+- **Find '`<object>`' in Object Tree** - this menu item is only available when you click on the cell from the **Object** column.
+- **Flash '`<object>`'** - flash the object.
+- **Show XPath/Location for '`<object>`'** - show the location string for the object.
+- **Rename '`<object>`'...** - rename object in the object repository and fix all references in the current sheet.
+- **Play This Sheet** - execute actions from the active sheet.
+- **Play Selection** - execute selected range of actions only. Useful for tweaking tricky actions and checking the result immediately.
+- **Play From Here** - start execution at selected line and proceed until the end. Useful to continue script from the point where it stopped.
+- **Ins Row** - insert new row before the active one.
+- **Del Row** - delete all selected rows.
+- **Cut**, **Copy**, **Paste** - standard clipboard operations.
+- **Clear in Selection** - clears cell values in selected region.
+- **Select All Rows** - select full sheet.
+- **Insert Selected Rows Here** - clone rows at the current location.
+- **Move Selected Rows Here** - move rows to the current location.
+- **Copy Selection as JavaScript** - translate selected range to the equivalent JavaScript and put its text to the clipboard.
+- **Copy Selection as Text** - put selected range as tab-separated text to the clipboard.
+- **Wrap Selection Info If** - enclose selected range into [branch](../RVL/IfElse.md).
+- **Wrap Selection Into Loop** - enclose selected range into [loop](../RVL/Loops.md).
+- **Extract Selection as new Sheet** - make new sheet and move selected range into it.
 
 ## Sheet Tab Context Menu
 
 ![Tab Context Menu](./img/rvl_editor_tab_context_menu.png)
 
-* **Play this Sheet** - execute given sheet.
-
-* **Rename...** - change sheet tab name.
-
-* **Remove Sheet '`<sheet name>`'** - delete sheet form the workbook.
-
-* **Copy RVL DoPlaySheet** - copy call statement for the selected sheet for inserting into the other RVL sheet in the same workbook.
-
-* **Copy RVL DoPlaySheet** - copy call statement for the selected sheet for inserting into the other RVL workbook.
-
-* **Copy RVL.DoPlayScript(...)** - copy JavaScript code to execute this sheet (call sheet from JavaScript).
+- **Play this Sheet** - execute given sheet.
+- **Rename...** - change sheet tab name.
+- **Remove Sheet '`<sheet name>`'** - delete sheet form the workbook.
+- **Copy RVL DoPlaySheet** - copy call statement for the selected sheet for inserting into the other RVL sheet in the same workbook.
+- **Copy RVL DoPlaySheet** - copy call statement for the selected sheet for inserting into the other RVL workbook.
+- **Copy RVL.DoPlayScript(...)** - copy JavaScript code to execute this sheet (call sheet from JavaScript).
 
 ## Functions Object
 
@@ -212,8 +193,8 @@ Once selected it shows all user defined functions from the `User.js` file:
 
 RVL has following file extensions:
 
-* `rvl.xlsx`
-* `rvl.xls`
+- `rvl.xlsx`
+- `rvl.xls`
 
 RVL is designed to be a simple grid language and it may be edited in any spreadsheet editor supporting `.xls` or `.xlsx` files (i.e. Microsoft Excel)
 
@@ -221,6 +202,7 @@ RVL is designed to be a simple grid language and it may be edited in any spreads
 
 - `Shift-Enter` - inserts an empty line after the selected cell.
 - `Ctrl-D` - deletes the line of the selected cell.
+- `Ctrl-P` - reveals optional parameters for an action in the current line, acts as click on `Params` button on the RVL toolbar.
 
 ## See Also
 
