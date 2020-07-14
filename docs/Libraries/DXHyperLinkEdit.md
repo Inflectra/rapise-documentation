@@ -25,11 +25,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ControlType](#ControlType) | Type of the object. | GetControlType |  |
-| [Height](#Height) | Height of the object. | GetHeight |  |
-| [Width](#Width) | Width of the object. | GetWidth |  |
-| [X](#X) | X-coordinate of the top left corner of the object. | GetX |  |
-| [Y](#Y) | Y-coordinate of the top left corner of the object. | GetY |  |
+| [ControlType](#controltype) | Type of the object. | GetControlType |  |
+| [Height](#height) | Height of the object. | GetHeight |  |
+| [Width](#width) | Width of the object. | GetWidth |  |
+| [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
+| [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
 
 
 
@@ -42,10 +42,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoDumpWidget](#DoDumpWidget) | Dumps Spy data for the object. |
-|	[DoFindByName](#DoFindByName) | Find nested element by its text (Value, Name of each element are compared with specified text or regular expression). |
-|	[DoFindByText](#DoFindByText) | Find nested element by its text (Value, Name of each element are compared with specified text or regular expression). |
-|	[DoGetWidgetProperty](#DoGetWidgetProperty) | Returns the value of a property with a given name. |
+|	[DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
+|	[DoFindByName](#dofindbyname) | Find nested element by its text (Value, Name of each element are compared with specified text or regular expression). |
+|	[DoFindByText](#dofindbytext) | Find nested element by its text (Value, Name of each element are compared with specified text or regular expression). |
+|	[DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
 
 
 
@@ -136,9 +136,13 @@ Accessors: GetY
 ### Action Detail
 		
 <a name="DoDumpWidget"></a>    
-#### DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
+#### DoDumpWidget
 
 Dumps Spy data for the object.
+
+```javascript
+DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps) 
+```
 
 
 **Parameters:**
@@ -165,9 +169,13 @@ string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write
 <a name="see.also.dxhyperlinkedit.dodumpwidget"></a>
 
 <a name="DoFindByName"></a>    
-#### DoFindByName(textOrRegexp, depth)
+#### DoFindByName
 
 Find nested element by its text (Value, Name of each element are compared with specified text or regular expression).
+
+```javascript
+DoFindByName(textOrRegexp, depth) 
+```
 
 
 **Parameters:**
@@ -189,9 +197,13 @@ object: Object containing text if found, null otherwise
 <a name="see.also.dxhyperlinkedit.dofindbyname"></a>
 
 <a name="DoFindByText"></a>    
-#### DoFindByText(textOrRegexp, depth)
+#### DoFindByText
 
 Find nested element by its text (Value, Name of each element are compared with specified text or regular expression).
+
+```javascript
+DoFindByText(textOrRegexp, depth) 
+```
 
 
 **Parameters:**
@@ -213,9 +225,13 @@ object: Object containing text if found, null otherwise
 <a name="see.also.dxhyperlinkedit.dofindbytext"></a>
 
 <a name="DoGetWidgetProperty"></a>    
-#### DoGetWidgetProperty(name)
+#### DoGetWidgetProperty
 
 Returns the value of a property with a given name. Names of available properties can be seen in Spy.
+
+```javascript
+DoGetWidgetProperty(name) 
+```
 
 
 **Parameters:**

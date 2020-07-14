@@ -25,9 +25,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
-| [SelectedItem](#SelectedItem) | Selected item of the object. | GetSelectedItem | SetSelectedItem |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [SelectedItem](#selecteditem) | Selected item of the object. | GetSelectedItem | SetSelectedItem |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -40,7 +40,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
@@ -101,9 +101,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(item)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(item) 
+```
 
 
 **Parameters:**
@@ -139,7 +143,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -152,7 +156,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -183,9 +187,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**

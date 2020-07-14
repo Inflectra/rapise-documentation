@@ -23,10 +23,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemsCount](#ItemsCount) | Number of items. | GetItemsCount |  |
-| [PanelName](#PanelName) | Name of the panel at index | GetPanelName |  |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex |  |
-| [SelectedPanel](#SelectedPanel) | Title of the selected panel | GetSelectedPanel |  |
+| [ItemsCount](#itemscount) | Number of items. | GetItemsCount |  |
+| [PanelName](#panelname) | Name of the panel at index | GetPanelName |  |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex |  |
+| [SelectedPanel](#selectedpanel) | Title of the selected panel | GetSelectedPanel |  |
 
 
 
@@ -39,7 +39,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectPanel](#DoSelectPanel) | Selects the tab by name. |
+|	[DoSelectPanel](#doselectpanel) | Selects the tab by name. |
 
 
 
@@ -122,9 +122,13 @@ Accessors: GetSelectedPanel
 ### Action Detail
 		
 <a name="DoSelectPanel"></a>    
-#### DoSelectPanel(panelName)
+#### DoSelectPanel
 
 Selects the tab by name.
+
+```javascript
+DoSelectPanel(panelName) 
+```
 
 
 **Parameters:**

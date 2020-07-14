@@ -25,11 +25,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [MaxValue](#MaxValue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
-| [MinValue](#MinValue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
-| [Value](#Value) | Value of the object. | GetValue | SetValue |
-| [Value1](#Value1) | Gets or sets the value of the first progress line. | GetValue1 | SetValue1 |
-| [Value2](#Value2) | Gets or sets the value of the second progress line. | GetValue2 | SetValue2 |
+| [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
+| [MinValue](#minvalue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
+| [Value](#value) | Value of the object. | GetValue | SetValue |
+| [Value1](#value1) | Gets or sets the value of the first progress line. | GetValue1 | SetValue1 |
+| [Value2](#value2) | Gets or sets the value of the second progress line. | GetValue2 | SetValue2 |
 
 
 

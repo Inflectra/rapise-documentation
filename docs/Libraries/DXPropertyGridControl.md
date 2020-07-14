@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [RowCount](#RowCount) | Number of rows in the table. | GetRowCount |  |
+| [RowCount](#rowcount) | Number of rows in the table. | GetRowCount |  |
 
 
 
@@ -36,11 +36,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoGetRowCaption](#DoGetRowCaption) | Gets caption of the row with index. |
-|	[DoGetRowColor](#DoGetRowColor) | Gets color of the row with index. |
-|	[DoGetRowRect](#DoGetRowRect) | Gets rectangle of the row with index. |
-|	[DoGetRowValue](#DoGetRowValue) | Gets value of the row with index. |
-|	[DoSetRowValue](#DoSetRowValue) | Sets value of the row with index. |
+|	[DoGetRowCaption](#dogetrowcaption) | Gets caption of the row with index. |
+|	[DoGetRowColor](#dogetrowcolor) | Gets color of the row with index. |
+|	[DoGetRowRect](#dogetrowrect) | Gets rectangle of the row with index. |
+|	[DoGetRowValue](#dogetrowvalue) | Gets value of the row with index. |
+|	[DoSetRowValue](#dosetrowvalue) | Sets value of the row with index. |
 
 
 
@@ -71,9 +71,13 @@ Accessors: GetRowCount
 ### Action Detail
 		
 <a name="DoGetRowCaption"></a>    
-#### DoGetRowCaption(rowIndex)
+#### DoGetRowCaption
 
 Gets caption of the row with index.
+
+```javascript
+DoGetRowCaption(rowIndex) 
+```
 
 
 **Parameters:**
@@ -94,9 +98,13 @@ string: Row caption
 <a name="see.also.dxpropertygridcontrol.dogetrowcaption"></a>
 
 <a name="DoGetRowColor"></a>    
-#### DoGetRowColor(rowIndex)
+#### DoGetRowColor
 
 Gets color of the row with index.
+
+```javascript
+DoGetRowColor(rowIndex) 
+```
 
 
 **Parameters:**
@@ -117,9 +125,13 @@ string: Row color
 <a name="see.also.dxpropertygridcontrol.dogetrowcolor"></a>
 
 <a name="DoGetRowRect"></a>    
-#### DoGetRowRect(rowIndex)
+#### DoGetRowRect
 
 Gets rectangle of the row with index.
+
+```javascript
+DoGetRowRect(rowIndex) 
+```
 
 
 **Parameters:**
@@ -140,9 +152,13 @@ object: Row rectangle {x, y, w, h}.
 <a name="see.also.dxpropertygridcontrol.dogetrowrect"></a>
 
 <a name="DoGetRowValue"></a>    
-#### DoGetRowValue(rowIndex)
+#### DoGetRowValue
 
 Gets value of the row with index.
+
+```javascript
+DoGetRowValue(rowIndex) 
+```
 
 
 **Parameters:**
@@ -163,9 +179,13 @@ object: Row value
 <a name="see.also.dxpropertygridcontrol.dogetrowvalue"></a>
 
 <a name="DoSetRowValue"></a>    
-#### DoSetRowValue(rowIndex, value)
+#### DoSetRowValue
 
 Sets value of the row with index.
+
+```javascript
+DoSetRowValue(rowIndex, value) 
+```
 
 
 **Parameters:**

@@ -21,7 +21,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
 
 
 
@@ -34,7 +34,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Performs click on an item of this object. |
+|	[DoClickItem](#doclickitem) | Performs click on an item of this object. |
 
 
 
@@ -65,9 +65,13 @@ Accessors: GetItemCount
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(itemName)
+#### DoClickItem
 
 Performs click on an item of this object.
+
+```javascript
+DoClickItem(itemName) 
+```
 
 
 **Parameters:**
@@ -106,7 +110,7 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoMenu](#DoMenu) | Performs click on the menu item. |
+|	[DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
@@ -119,9 +123,13 @@ boolean: 'true' if operation was successful, 'false' otherwise
 ### Action Detail
 		
 <a name="DoMenu"></a>    
-#### DoMenu(path, sep)
+#### DoMenu
 
 Performs click on the menu item.
+
+```javascript
+DoMenu(path, sep) 
+```
 
 
 **Parameters:**

@@ -20,13 +20,13 @@ This is a JavaScript wrapper for Window of Selenium .NET library.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[FullScreen](#FullScreen) | Sets the current window to full screen if it is not already in that state. |
-|	[GetPosition](#GetPosition) | Gets the position of the browser window relative to the upper-left corner of the screen. |
-|	[GetSize](#GetSize) | Gets the size of the outer browser window, including title bars and window borders. |
-|	[Maximize](#Maximize) | Maximizes the current window if it is not already maximized. |
-|	[Minimize](#Minimize) | Minimizes the current window if it is not already minimized. |
-|	[SetPosition](#SetPosition) | Sets the position of the browser window relative to the upper-left corner of the screen. |
-|	[SetSize](#SetSize) | Sets the size of the outer browser window, including title bars and window borders. |
+|	[FullScreen](#fullscreen) | Sets the current window to full screen if it is not already in that state. |
+|	[GetPosition](#getposition) | Gets the position of the browser window relative to the upper-left corner of the screen. |
+|	[GetSize](#getsize) | Gets the size of the outer browser window, including title bars and window borders. |
+|	[Maximize](#maximize) | Maximizes the current window if it is not already maximized. |
+|	[Minimize](#minimize) | Minimizes the current window if it is not already minimized. |
+|	[SetPosition](#setposition) | Sets the position of the browser window relative to the upper-left corner of the screen. |
+|	[SetSize](#setsize) | Sets the size of the outer browser window, including title bars and window borders. |
 
 
 
@@ -39,9 +39,13 @@ This is a JavaScript wrapper for Window of Selenium .NET library.
 ### Action Detail
 		
 <a name="FullScreen"></a>    
-#### FullScreen()
+#### FullScreen
 
 Sets the current window to full screen if it is not already in that state.
+
+```javascript
+FullScreen() 
+```
 
 
 
@@ -50,9 +54,13 @@ Sets the current window to full screen if it is not already in that state.
 <a name="see.also.window.fullscreen"></a>
 
 <a name="GetPosition"></a>    
-#### GetPosition()
+#### GetPosition
 
 Gets the position of the browser window relative to the upper-left corner of the screen.
+
+```javascript
+GetPosition() 
+```
 
 
 
@@ -61,9 +69,13 @@ Gets the position of the browser window relative to the upper-left corner of the
 <a name="see.also.window.getposition"></a>
 
 <a name="GetSize"></a>    
-#### GetSize()
+#### GetSize
 
 Gets the size of the outer browser window, including title bars and window borders.
+
+```javascript
+GetSize() 
+```
 
 
 
@@ -72,9 +84,13 @@ Gets the size of the outer browser window, including title bars and window borde
 <a name="see.also.window.getsize"></a>
 
 <a name="Maximize"></a>    
-#### Maximize()
+#### Maximize
 
 Maximizes the current window if it is not already maximized.
+
+```javascript
+Maximize() 
+```
 
 
 
@@ -83,9 +99,13 @@ Maximizes the current window if it is not already maximized.
 <a name="see.also.window.maximize"></a>
 
 <a name="Minimize"></a>    
-#### Minimize()
+#### Minimize
 
 Minimizes the current window if it is not already minimized.
+
+```javascript
+Minimize() 
+```
 
 
 
@@ -94,9 +114,13 @@ Minimizes the current window if it is not already minimized.
 <a name="see.also.window.minimize"></a>
 
 <a name="SetPosition"></a>    
-#### SetPosition(x, y)
+#### SetPosition
 
 Sets the position of the browser window relative to the upper-left corner of the screen.
+
+```javascript
+SetPosition(x, y) 
+```
 
 
 **Parameters:**
@@ -113,9 +137,13 @@ Sets the position of the browser window relative to the upper-left corner of the
 <a name="see.also.window.setposition"></a>
 
 <a name="SetSize"></a>    
-#### SetSize(width, height)
+#### SetSize
 
 Sets the size of the outer browser window, including title bars and window borders.
+
+```javascript
+SetSize(width, height) 
+```
 
 
 **Parameters:**

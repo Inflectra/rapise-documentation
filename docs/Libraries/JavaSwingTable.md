@@ -25,18 +25,18 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the table. | GetColumnCount |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [RowCount](#RowCount) | Number of rows in the table. | GetRowCount |  |
-| [SelectedCells](#SelectedCells) | Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells. | GetSelectedCells |  |
-| [SelectedColumn](#SelectedColumn) | Index of the selected column. | GetSelectedColumn |  |
-| [SelectedColumnCount](#SelectedColumnCount) | Number of selected columns. | GetSelectedColumnCount |  |
-| [SelectedColumns](#SelectedColumns) | Returns string of indexes delimited by separator or array of indexes of selected columns. | GetSelectedColumns |  |
-| [SelectedRow](#SelectedRow) | Index of the selected row. | GetSelectedRow |  |
-| [SelectedRowCount](#SelectedRowCount) | Number of selected rows. | GetSelectedRowCount |  |
-| [SelectedRows](#SelectedRows) | Returns string of indexes delimited by separator or array of indexes of selected rows. | GetSelectedRows |  |
-| [Text](#Text) | Text of the currently focused cell. | GetText |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [ColumnCount](#columncount) | Number of columns in the table. | GetColumnCount |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [RowCount](#rowcount) | Number of rows in the table. | GetRowCount |  |
+| [SelectedCells](#selectedcells) | Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells. | GetSelectedCells |  |
+| [SelectedColumn](#selectedcolumn) | Index of the selected column. | GetSelectedColumn |  |
+| [SelectedColumnCount](#selectedcolumncount) | Number of selected columns. | GetSelectedColumnCount |  |
+| [SelectedColumns](#selectedcolumns) | Returns string of indexes delimited by separator or array of indexes of selected columns. | GetSelectedColumns |  |
+| [SelectedRow](#selectedrow) | Index of the selected row. | GetSelectedRow |  |
+| [SelectedRowCount](#selectedrowcount) | Number of selected rows. | GetSelectedRowCount |  |
+| [SelectedRows](#selectedrows) | Returns string of indexes delimited by separator or array of indexes of selected rows. | GetSelectedRows |  |
+| [Text](#text) | Text of the currently focused cell. | GetText |  |
 
 
 
@@ -49,8 +49,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell |
-|	[DoFullText](#DoFullText) | Read and return full text contents of the table |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell |
+|	[DoFullText](#dofulltext) | Read and return full text contents of the table |
 
 
 
@@ -286,9 +286,13 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell
+
+```javascript
+DoClickCell(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -298,8 +302,8 @@ Clicks the specified cell
 | row | number |	Zero-based index if the row. |
 | col | number |	Zero-based index of the column. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -313,9 +317,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.javaswingtable.doclickcell"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText()
+#### DoFullText
 
 Read and return full text contents of the table
+
+```javascript
+DoFullText() 
+```
 
 
 

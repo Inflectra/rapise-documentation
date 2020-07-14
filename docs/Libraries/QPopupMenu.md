@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Performs click on an item of this object. |
+|	[DoClickItem](#doclickitem) | Performs click on an item of this object. |
 
 
 
@@ -39,9 +39,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(itemName)
+#### DoClickItem
 
 Performs click on an item of this object.
+
+```javascript
+DoClickItem(itemName) 
+```
 
 
 **Parameters:**

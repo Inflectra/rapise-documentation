@@ -24,7 +24,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#DoAction) | Presses button using mouse click or default action. |
+|	[DoAction](#doaction) | Presses button using mouse click or default action. |
 
 
 
@@ -37,9 +37,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoAction"></a>    
-#### DoAction()
+#### DoAction
 
 Presses button using mouse click or default action.
+
+```javascript
+DoAction() 
+```
 
 
 
@@ -66,7 +70,7 @@ Presses button using mouse click or default action.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoDropdown](#DoDropdown) | Opens dropdown. |
+|	[DoDropdown](#dodropdown) | Opens dropdown. |
 
 
 
@@ -79,9 +83,13 @@ Presses button using mouse click or default action.
 ### Action Detail
 		
 <a name="DoDropdown"></a>    
-#### DoDropdown()
+#### DoDropdown
 
 Opens dropdown.
+
+```javascript
+DoDropdown() 
+```
 
 
 

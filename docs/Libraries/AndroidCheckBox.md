@@ -19,7 +19,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Checked](#Checked) | Check state of the button. | GetChecked | SetChecked |
+| [Checked](#checked) | Check state of the button. | GetChecked | SetChecked |
 
 
 
@@ -32,7 +32,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetCheck](#DoSetCheck) | Sets check state of the object. |
+|	[DoSetCheck](#dosetcheck) | Sets check state of the object. |
 
 
 
@@ -63,9 +63,13 @@ Accessors: GetChecked, SetChecked
 ### Action Detail
 		
 <a name="DoSetCheck"></a>    
-#### DoSetCheck(bcheck)
+#### DoSetCheck
 
 Sets check state of the object.
+
+```javascript
+DoSetCheck(bcheck) 
+```
 
 
 **Parameters:**

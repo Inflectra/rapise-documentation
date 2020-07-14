@@ -20,12 +20,12 @@ This is a JavaScript wrapper for Cookies of Selenium .NET library.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[AddCookie](#AddCookie) | Adds a cookie to the current page. |
-|	[AllCookies](#AllCookies) | Gets all cookies defined for the current page. |
-|	[DeleteAllCookies](#DeleteAllCookies) | Deletes the cookie with the specified name from the page. |
-|	[DeleteCookie](#DeleteCookie) | Deletes the specified cookie from the page. |
-|	[DeleteCookieNamed](#DeleteCookieNamed) | Deletes the cookie with the specified name from the page. |
-|	[GetCookieNamed](#GetCookieNamed) | Gets a cookie with the specified name. |
+|	[AddCookie](#addcookie) | Adds a cookie to the current page. |
+|	[AllCookies](#allcookies) | Gets all cookies defined for the current page. |
+|	[DeleteAllCookies](#deleteallcookies) | Deletes the cookie with the specified name from the page. |
+|	[DeleteCookie](#deletecookie) | Deletes the specified cookie from the page. |
+|	[DeleteCookieNamed](#deletecookienamed) | Deletes the cookie with the specified name from the page. |
+|	[GetCookieNamed](#getcookienamed) | Gets a cookie with the specified name. |
 
 
 
@@ -38,9 +38,13 @@ This is a JavaScript wrapper for Cookies of Selenium .NET library.
 ### Action Detail
 		
 <a name="AddCookie"></a>    
-#### AddCookie(cookie)
+#### AddCookie
 
 Adds a cookie to the current page.
+
+```javascript
+AddCookie(cookie) 
+```
 
 
 **Parameters:**
@@ -56,9 +60,13 @@ Adds a cookie to the current page.
 <a name="see.also.cookies.addcookie"></a>
 
 <a name="AllCookies"></a>    
-#### AllCookies()
+#### AllCookies
 
 Gets all cookies defined for the current page.
+
+```javascript
+AllCookies() 
+```
 
 
 
@@ -67,9 +75,13 @@ Gets all cookies defined for the current page.
 <a name="see.also.cookies.allcookies"></a>
 
 <a name="DeleteAllCookies"></a>    
-#### DeleteAllCookies()
+#### DeleteAllCookies
 
 Deletes the cookie with the specified name from the page.
+
+```javascript
+DeleteAllCookies() 
+```
 
 
 
@@ -78,9 +90,13 @@ Deletes the cookie with the specified name from the page.
 <a name="see.also.cookies.deleteallcookies"></a>
 
 <a name="DeleteCookie"></a>    
-#### DeleteCookie(cookie)
+#### DeleteCookie
 
 Deletes the specified cookie from the page.
+
+```javascript
+DeleteCookie(cookie) 
+```
 
 
 **Parameters:**
@@ -96,9 +112,13 @@ Deletes the specified cookie from the page.
 <a name="see.also.cookies.deletecookie"></a>
 
 <a name="DeleteCookieNamed"></a>    
-#### DeleteCookieNamed(name)
+#### DeleteCookieNamed
 
 Deletes the cookie with the specified name from the page.
+
+```javascript
+DeleteCookieNamed(name) 
+```
 
 
 **Parameters:**
@@ -114,9 +134,13 @@ Deletes the cookie with the specified name from the page.
 <a name="see.also.cookies.deletecookienamed"></a>
 
 <a name="GetCookieNamed"></a>    
-#### GetCookieNamed(name)
+#### GetCookieNamed
 
 Gets a cookie with the specified name.
+
+```javascript
+GetCookieNamed(name) 
+```
 
 
 **Parameters:**

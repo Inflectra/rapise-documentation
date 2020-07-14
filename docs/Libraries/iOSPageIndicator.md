@@ -19,8 +19,8 @@ Extends [iOSObject](iOSObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [PageIndex](#PageIndex) | Selected page index. | GetPageIndex |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [PageIndex](#pageindex) | Selected page index. | GetPageIndex |  |
 
 
 
@@ -33,9 +33,9 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoNextPage](#DoNextPage) | Navigates to next page. |
-|	[DoPrevPage](#DoPrevPage) | Navigates to previous page. |
-|	[DoSelectPage](#DoSelectPage) | Selects a page at index. |
+|	[DoNextPage](#donextpage) | Navigates to next page. |
+|	[DoPrevPage](#doprevpage) | Navigates to previous page. |
+|	[DoSelectPage](#doselectpage) | Selects a page at index. |
 
 
 
@@ -81,9 +81,13 @@ Accessors: GetPageIndex
 ### Action Detail
 		
 <a name="DoNextPage"></a>    
-#### DoNextPage()
+#### DoNextPage
 
 Navigates to next page.
+
+```javascript
+DoNextPage() 
+```
 
 
 
@@ -97,9 +101,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iospageindicator.donextpage"></a>
 
 <a name="DoPrevPage"></a>    
-#### DoPrevPage()
+#### DoPrevPage
 
 Navigates to previous page.
+
+```javascript
+DoPrevPage() 
+```
 
 
 
@@ -113,9 +121,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iospageindicator.doprevpage"></a>
 
 <a name="DoSelectPage"></a>    
-#### DoSelectPage(index)
+#### DoSelectPage
 
 Selects a page at index.
+
+```javascript
+DoSelectPage(index) 
+```
 
 
 **Parameters:**

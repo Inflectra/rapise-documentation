@@ -19,18 +19,18 @@ This is a rule for simulated objects.
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Bitmap](#Bitmap) | UI Image of the object. | GetBitmap |  |
-| [BWBitmap](#BWBitmap) | UI Image of the object in 1-bit format (black&white). | GetBWBitmap |  |
-| [Class](#Class) | Class of the object. | GetClass |  |
-| [Height](#Height) | Height of the object. | GetHeight |  |
-| [Name](#Name) | Name of the object. | GetName |  |
-| [ObjectType](#ObjectType) | SeSMatcherRule type for this object. | GetObjectType |  |
-| [State](#State) | State of the object. | GetState |  |
-| [Value](#Value) | Value of the object. | GetValue | SetValue |
-| [Width](#Width) | Width of the object. | GetWidth |  |
-| [WindowText](#WindowText) | Window text of the object. | GetWindowText | SetWindowText |
-| [X](#X) | X-coordinate of the top left corner of the object. | GetX |  |
-| [Y](#Y) | Y-coordinate of the top left corner of the object. | GetY |  |
+| [Bitmap](#bitmap) | UI Image of the object. | GetBitmap |  |
+| [BWBitmap](#bwbitmap) | UI Image of the object in 1-bit format (black&white). | GetBWBitmap |  |
+| [Class](#class) | Class of the object. | GetClass |  |
+| [Height](#height) | Height of the object. | GetHeight |  |
+| [Name](#name) | Name of the object. | GetName |  |
+| [ObjectType](#objecttype) | SeSMatcherRule type for this object. | GetObjectType |  |
+| [State](#state) | State of the object. | GetState |  |
+| [Value](#value) | Value of the object. | GetValue | SetValue |
+| [Width](#width) | Width of the object. | GetWidth |  |
+| [WindowText](#windowtext) | Window text of the object. | GetWindowText | SetWindowText |
+| [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
+| [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
 
 
 
@@ -43,25 +43,25 @@ This is a rule for simulated objects.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#DoAction) | Performs default action for an object. |
-|	[DoAnalogPlay](#DoAnalogPlay) | Plays analog recording using coordinates relative to this object. |
-|	[DoClick](#DoClick) | Performs left click at the center of an object. |
-|	[DoEnsureVisible](#DoEnsureVisible) | Makes sure specified element is visible on the screen. |
-|	[DoLButtonDown](#DoLButtonDown) | Performs left mouse button down. |
-|	[DoLButtonUp](#DoLButtonUp) | Performs left mouse button up. |
-|	[DoLClick](#DoLClick) | Performs a left click at the center of an object or at the specified location. |
-|	[DoLDClick](#DoLDClick) | Performs a left double click at the center of an object or at the specified location. |
-|	[DoMButtonDown](#DoMButtonDown) | Performs middle mouse button down. |
-|	[DoMButtonUp](#DoMButtonUp) | Performs middle mouse button up. |
-|	[DoMClick](#DoMClick) | Performs a middle click at the center of an object or at the specified location. |
-|	[DoMDClick](#DoMDClick) | Performs a middle double click at the center of an object or at the specified location. |
-|	[DoMouseMove](#DoMouseMove) | Moves mouse cursor to a location relative to this object position. |
-|	[DoRButtonDown](#DoRButtonDown) | Performs right mouse button down. |
-|	[DoRButtonUp](#DoRButtonUp) | Performs right mouse button up. |
-|	[DoRClick](#DoRClick) | Performs a right click at the center of an object or at the specified location. |
-|	[DoRDClick](#DoRDClick) | Performs a right double click at the center of an object or at the specified location. |
-|	[DoSendKeys](#DoSendKeys) | Sends series of keystrokes to an object. |
-|	[DoSendText](#DoSendText) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
+|	[DoAction](#doaction) | Performs default action for an object. |
+|	[DoAnalogPlay](#doanalogplay) | Plays analog recording using coordinates relative to this object. |
+|	[DoClick](#doclick) | Performs left click at the center of an object. |
+|	[DoEnsureVisible](#doensurevisible) | Makes sure specified element is visible on the screen. |
+|	[DoLButtonDown](#dolbuttondown) | Performs left mouse button down. |
+|	[DoLButtonUp](#dolbuttonup) | Performs left mouse button up. |
+|	[DoLClick](#dolclick) | Performs a left click at the center of an object or at the specified location. |
+|	[DoLDClick](#doldclick) | Performs a left double click at the center of an object or at the specified location. |
+|	[DoMButtonDown](#dombuttondown) | Performs middle mouse button down. |
+|	[DoMButtonUp](#dombuttonup) | Performs middle mouse button up. |
+|	[DoMClick](#domclick) | Performs a middle click at the center of an object or at the specified location. |
+|	[DoMDClick](#domdclick) | Performs a middle double click at the center of an object or at the specified location. |
+|	[DoMouseMove](#domousemove) | Moves mouse cursor to a location relative to this object position. |
+|	[DoRButtonDown](#dorbuttondown) | Performs right mouse button down. |
+|	[DoRButtonUp](#dorbuttonup) | Performs right mouse button up. |
+|	[DoRClick](#dorclick) | Performs a right click at the center of an object or at the specified location. |
+|	[DoRDClick](#dordclick) | Performs a right double click at the center of an object or at the specified location. |
+|	[DoSendKeys](#dosendkeys) | Sends series of keystrokes to an object. |
+|	[DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
 
 
 
@@ -257,9 +257,13 @@ Accessors: GetY
 ### Action Detail
 		
 <a name="DoAction"></a>    
-#### DoAction()
+#### DoAction
 
 Performs default action for an object. If the object doesn't have default action then 'LClick' is performed.
+
+```javascript
+DoAction() 
+```
 
 
 
@@ -268,9 +272,13 @@ Performs default action for an object. If the object doesn't have default action
 <a name="see.also.sessimulatedobject.doaction"></a>
 
 <a name="DoAnalogPlay"></a>    
-#### DoAnalogPlay(path, left, top)
+#### DoAnalogPlay
 
 Plays analog recording using coordinates relative to this object.
+
+```javascript
+DoAnalogPlay(path, left, top) 
+```
 
 
 **Parameters:**
@@ -288,9 +296,13 @@ Plays analog recording using coordinates relative to this object.
 <a name="see.also.sessimulatedobject.doanalogplay"></a>
 
 <a name="DoClick"></a>    
-#### DoClick(clickType, xOffset, yOffset)
+#### DoClick
 
 Performs left click at the center of an object. It is a customizable variant of LClick action.
+
+```javascript
+DoClick(clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -313,9 +325,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="see.also.sessimulatedobject.doclick"></a>
 
 <a name="DoEnsureVisible"></a>    
-#### DoEnsureVisible()
+#### DoEnsureVisible
 
 Makes sure specified element is visible on the screen.
+
+```javascript
+DoEnsureVisible() 
+```
 
 
 
@@ -324,9 +340,13 @@ Makes sure specified element is visible on the screen.
 <a name="see.also.sessimulatedobject.doensurevisible"></a>
 
 <a name="DoLButtonDown"></a>    
-#### DoLButtonDown()
+#### DoLButtonDown
 
 Performs left mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoLButtonUp', otherwise it may lock mouse cursor.
+
+```javascript
+DoLButtonDown() 
+```
 
 
 
@@ -335,9 +355,13 @@ Performs left mouse button down. This method does not change cursor coordinates.
 <a name="see.also.sessimulatedobject.dolbuttondown"></a>
 
 <a name="DoLButtonUp"></a>    
-#### DoLButtonUp()
+#### DoLButtonUp
 
 Performs left mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoLButtonDown', otherwise it will have no effect.
+
+```javascript
+DoLButtonUp() 
+```
 
 
 
@@ -346,9 +370,13 @@ Performs left mouse button up. This method does not change cursor coordinates. M
 <a name="see.also.sessimulatedobject.dolbuttonup"></a>
 
 <a name="DoLClick"></a>    
-#### DoLClick(x, y)
+#### DoLClick
 
 Performs a left click at the center of an object or at the specified location.
+
+```javascript
+DoLClick(x, y) 
+```
 
 
 **Parameters:**
@@ -370,9 +398,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="see.also.sessimulatedobject.dolclick"></a>
 
 <a name="DoLDClick"></a>    
-#### DoLDClick(x, y)
+#### DoLDClick
 
 Performs a left double click at the center of an object or at the specified location.
+
+```javascript
+DoLDClick(x, y) 
+```
 
 
 **Parameters:**
@@ -394,9 +426,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="see.also.sessimulatedobject.doldclick"></a>
 
 <a name="DoMButtonDown"></a>    
-#### DoMButtonDown()
+#### DoMButtonDown
 
 Performs middle mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoMButtonUp', otherwise it may lock mouse cursor.
+
+```javascript
+DoMButtonDown() 
+```
 
 
 
@@ -405,9 +441,13 @@ Performs middle mouse button down. This method does not change cursor coordinate
 <a name="see.also.sessimulatedobject.dombuttondown"></a>
 
 <a name="DoMButtonUp"></a>    
-#### DoMButtonUp()
+#### DoMButtonUp
 
 Performs middle mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoMButtonDown', otherwise it will have no effect.
+
+```javascript
+DoMButtonUp() 
+```
 
 
 
@@ -416,9 +456,13 @@ Performs middle mouse button up. This method does not change cursor coordinates.
 <a name="see.also.sessimulatedobject.dombuttonup"></a>
 
 <a name="DoMClick"></a>    
-#### DoMClick(x, y)
+#### DoMClick
 
 Performs a middle click at the center of an object or at the specified location.
+
+```javascript
+DoMClick(x, y) 
+```
 
 
 **Parameters:**
@@ -440,9 +484,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="see.also.sessimulatedobject.domclick"></a>
 
 <a name="DoMDClick"></a>    
-#### DoMDClick(x, y)
+#### DoMDClick
 
 Performs a middle double click at the center of an object or at the specified location.
+
+```javascript
+DoMDClick(x, y) 
+```
 
 
 **Parameters:**
@@ -464,9 +512,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="see.also.sessimulatedobject.domdclick"></a>
 
 <a name="DoMouseMove"></a>    
-#### DoMouseMove(x, y)
+#### DoMouseMove
 
 Moves mouse cursor to a location relative to this object position.
+
+```javascript
+DoMouseMove(x, y) 
+```
 
 
 **Parameters:**
@@ -483,9 +535,13 @@ Moves mouse cursor to a location relative to this object position.
 <a name="see.also.sessimulatedobject.domousemove"></a>
 
 <a name="DoRButtonDown"></a>    
-#### DoRButtonDown()
+#### DoRButtonDown
 
 Performs right mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoRButtonUp', otherwise it may lock mouse cursor.
+
+```javascript
+DoRButtonDown() 
+```
 
 
 
@@ -494,9 +550,13 @@ Performs right mouse button down. This method does not change cursor coordinates
 <a name="see.also.sessimulatedobject.dorbuttondown"></a>
 
 <a name="DoRButtonUp"></a>    
-#### DoRButtonUp()
+#### DoRButtonUp
 
 Performs right mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoRButtonDown', otherwise it will have no effect.
+
+```javascript
+DoRButtonUp() 
+```
 
 
 
@@ -505,9 +565,13 @@ Performs right mouse button up. This method does not change cursor coordinates. 
 <a name="see.also.sessimulatedobject.dorbuttonup"></a>
 
 <a name="DoRClick"></a>    
-#### DoRClick(x, y)
+#### DoRClick
 
 Performs a right click at the center of an object or at the specified location.
+
+```javascript
+DoRClick(x, y) 
+```
 
 
 **Parameters:**
@@ -529,9 +593,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="see.also.sessimulatedobject.dorclick"></a>
 
 <a name="DoRDClick"></a>    
-#### DoRDClick(x, y)
+#### DoRDClick
 
 Performs a right double click at the center of an object or at the specified location.
+
+```javascript
+DoRDClick(x, y) 
+```
 
 
 **Parameters:**
@@ -553,9 +621,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="see.also.sessimulatedobject.dordclick"></a>
 
 <a name="DoSendKeys"></a>    
-#### DoSendKeys(keys)
+#### DoSendKeys
 
 Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a>
+
+```javascript
+DoSendKeys(keys) 
+```
 
 
 **Parameters:**
@@ -571,9 +643,13 @@ Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {
 <a name="see.also.sessimulatedobject.dosendkeys"></a>
 
 <a name="DoSendText"></a>    
-#### DoSendText(text)
+#### DoSendText
 
 Sends text to the active application as is (while SendKeys also supports sending special keys).
+
+```javascript
+DoSendText(text) 
+```
 
 
 **Parameters:**

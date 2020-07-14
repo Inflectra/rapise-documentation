@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Month](#Month) | Current month displayed by the date picker. | GetMonth |  |
+| [Month](#month) | Current month displayed by the date picker. | GetMonth |  |
 
 
 
@@ -36,9 +36,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoNextMonth](#DoNextMonth) | Clicks on 'Next Month' selector. |
-|	[DoPrevMonth](#DoPrevMonth) | Clicks on 'Previous Month' selector. |
-|	[DoSelectDate](#DoSelectDate) | Selects specific date in the date picker. |
+|	[DoNextMonth](#donextmonth) | Clicks on 'Next Month' selector. |
+|	[DoPrevMonth](#doprevmonth) | Clicks on 'Previous Month' selector. |
+|	[DoSelectDate](#doselectdate) | Selects specific date in the date picker. |
 
 
 
@@ -69,9 +69,13 @@ Accessors: GetMonth
 ### Action Detail
 		
 <a name="DoNextMonth"></a>    
-#### DoNextMonth()
+#### DoNextMonth
 
 Clicks on 'Next Month' selector.
+
+```javascript
+DoNextMonth() 
+```
 
 
 
@@ -85,9 +89,13 @@ boolean: 'true' if success, 'false' otherwise
 <a name="see.also.yuicalendar.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
-#### DoPrevMonth()
+#### DoPrevMonth
 
 Clicks on 'Previous Month' selector.
+
+```javascript
+DoPrevMonth() 
+```
 
 
 
@@ -101,9 +109,13 @@ boolean: 'true' if success, 'false' otherwise
 <a name="see.also.yuicalendar.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
-#### DoSelectDate(dateValue)
+#### DoSelectDate
 
 Selects specific date in the date picker.
+
+```javascript
+DoSelectDate(dateValue) 
+```
 
 
 **Parameters:**

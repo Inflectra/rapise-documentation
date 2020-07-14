@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Working](#Working) | Gets or sets a value indicating whether the control can respond to user interaction | GetWorking |  |
+| [Working](#working) | Gets or sets a value indicating whether the control can respond to user interaction | GetWorking |  |
 
 
 

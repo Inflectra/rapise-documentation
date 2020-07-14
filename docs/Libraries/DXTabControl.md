@@ -23,10 +23,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemsCount](#ItemsCount) | Number of items. | GetItemsCount |  |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
-| [SelectedTab](#SelectedTab) | Text of the selected tab | GetSelectedTab | SetSelectedTab |
-| [TabName](#TabName) | Name of the tab at index | GetTabName |  |
+| [ItemsCount](#itemscount) | Number of items. | GetItemsCount |  |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [SelectedTab](#selectedtab) | Text of the selected tab | GetSelectedTab | SetSelectedTab |
+| [TabName](#tabname) | Name of the tab at index | GetTabName |  |
 
 
 
@@ -39,7 +39,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#DoSelectTab) | Selects the tab by name. |
+|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
@@ -122,9 +122,13 @@ Accessors: GetTabName
 ### Action Detail
 		
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(tabName)
+#### DoSelectTab
 
 Selects the tab by name.
+
+```javascript
+DoSelectTab(tabName) 
+```
 
 
 **Parameters:**

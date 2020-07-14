@@ -19,20 +19,20 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [AutomationId](#AutomationId) | Automation ID of UI Automation object | GetAutomationId |  |
-| [ChildAt](#ChildAt) | Object for nth child of this object's UI Automation node | GetChildAt |  |
-| [ChildrenCount](#ChildrenCount) | Number of UI Automation nodes within current node | GetChildrenCount |  |
-| [Height](#Height) | Height of the object. | GetHeight |  |
-| [IndexInParent](#IndexInParent) | Object's order index in parent UI Automation node | GetIndexInParent |  |
-| [Name](#Name) | Name of of UI Automation object | GetName |  |
-| [NextSibling](#NextSibling) | Object for UI Automation next sibling node | GetNextSibling |  |
-| [Parent](#Parent) | Object for UI Automation parent node | GetParent |  |
-| [PrevSibling](#PrevSibling) | Object for UI Automation previous sibling node | GetPrevSibling |  |
-| [TypeName](#TypeName) | Type name of UI Automation object | GetTypeName |  |
-| [Value](#Value) | Value of the object. | GetValue |  |
-| [Width](#Width) | Width of the object. | GetWidth |  |
-| [X](#X) | X-coordinate of the top left corner of the object. | GetX |  |
-| [Y](#Y) | Y-coordinate of the top left corner of the object. | GetY |  |
+| [AutomationId](#automationid) | Automation ID of UI Automation object | GetAutomationId |  |
+| [ChildAt](#childat) | Object for nth child of this object's UI Automation node | GetChildAt |  |
+| [ChildrenCount](#childrencount) | Number of UI Automation nodes within current node | GetChildrenCount |  |
+| [Height](#height) | Height of the object. | GetHeight |  |
+| [IndexInParent](#indexinparent) | Object's order index in parent UI Automation node | GetIndexInParent |  |
+| [Name](#name) | Name of of UI Automation object | GetName |  |
+| [NextSibling](#nextsibling) | Object for UI Automation next sibling node | GetNextSibling |  |
+| [Parent](#parent) | Object for UI Automation parent node | GetParent |  |
+| [PrevSibling](#prevsibling) | Object for UI Automation previous sibling node | GetPrevSibling |  |
+| [TypeName](#typename) | Type name of UI Automation object | GetTypeName |  |
+| [Value](#value) | Value of the object. | GetValue |  |
+| [Width](#width) | Width of the object. | GetWidth |  |
+| [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
+| [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
 
 
 
@@ -45,10 +45,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#DoClick) | Performs left click at the center of an object. |
-|	[DoDumpWidget](#DoDumpWidget) | Dumps Spy data for the object. |
-|	[DoFindByText](#DoFindByText) | Find nested element by its text (Value and Name of each element are compared with specified text or regular expression). |
-|	[DoGetWidgetProperty](#DoGetWidgetProperty) | Returns the value of a property with a given name. |
+|	[DoClick](#doclick) | Performs left click at the center of an object. |
+|	[DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
+|	[DoFindByText](#dofindbytext) | Find nested element by its text (Value and Name of each element are compared with specified text or regular expression). |
+|	[DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
 
 
 
@@ -281,9 +281,13 @@ Accessors: GetY
 ### Action Detail
 		
 <a name="DoClick"></a>    
-#### DoClick(x, y)
+#### DoClick
 
 Performs left click at the center of an object. It is a customizable variant of LClick action.
+
+```javascript
+DoClick(x, y) 
+```
 
 
 **Parameters:**
@@ -300,9 +304,13 @@ Performs left click at the center of an object. It is a customizable variant of 
 <a name="see.also.uiaobject.doclick"></a>
 
 <a name="DoDumpWidget"></a>    
-#### DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
+#### DoDumpWidget
 
 Dumps Spy data for the object.
+
+```javascript
+DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps) 
+```
 
 
 **Parameters:**
@@ -329,9 +337,13 @@ string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write
 <a name="see.also.uiaobject.dodumpwidget"></a>
 
 <a name="DoFindByText"></a>    
-#### DoFindByText(textOrRegexp, depth)
+#### DoFindByText
 
 Find nested element by its text (Value and Name of each element are compared with specified text or regular expression).
+
+```javascript
+DoFindByText(textOrRegexp, depth) 
+```
 
 
 **Parameters:**
@@ -353,9 +365,13 @@ Find nested element by its text (Value and Name of each element are compared wit
 <a name="see.also.uiaobject.dofindbytext"></a>
 
 <a name="DoGetWidgetProperty"></a>    
-#### DoGetWidgetProperty(name)
+#### DoGetWidgetProperty
 
 Returns the value of a property with a given name. Names of available properties can be seen in Spy.
+
+```javascript
+DoGetWidgetProperty(name) 
+```
 
 
 **Parameters:**

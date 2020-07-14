@@ -25,8 +25,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
-| [Value](#Value) | Text of the object, 'false' if text can not be read. | GetValue | SetValue |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Value](#value) | Text of the object, 'false' if text can not be read. | GetValue | SetValue |
 
 
 
@@ -39,8 +39,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
-|	[DoSetValue](#DoSetValue) | Sets text value of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
+|	[DoSetValue](#dosetvalue) | Sets text value of this object. |
 
 
 
@@ -86,9 +86,13 @@ Accessors: GetValue, SetValue
 ### Action Detail
 		
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**
@@ -109,9 +113,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ultraformattedlinklabel.dosettext"></a>
 
 <a name="DoSetValue"></a>    
-#### DoSetValue(val)
+#### DoSetValue
 
 Sets text value of this object.
+
+```javascript
+DoSetValue(val) 
+```
 
 
 **Parameters:**

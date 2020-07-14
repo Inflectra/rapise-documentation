@@ -17,12 +17,14 @@ Session object for SOAP and REST services.
 
 | **Property** | **Description** |
 | ------------ | --------------- |
-| [GetParameters](#GetParameters) | Return common request parameters (array of [{'Name':somename,'Value':somevalue},. |
-| [GetRequestHeaders](#GetRequestHeaders) | Return common HTTP Headers applied to each REST or SOAP request (array of [{'Name':somename,'Value':somevalue},. |
-| [SetParameter](#SetParameter) | Sets common request parameter. |
-| [SetParameters](#SetParameters) | Sets common request parameters. |
-| [SetRequestHeader](#SetRequestHeader) | Sets common request header. |
-| [SetRequestHeaders](#SetRequestHeaders) | Sets common HTTP Headers applied to each REST or SOAP request. |
+| [GetCredential](#getcredential) |  |
+| [GetParameters](#getparameters) | Return common request parameters (array of [{'Name':somename,'Value':somevalue},. |
+| [GetRequestHeaders](#getrequestheaders) | Return common HTTP Headers applied to each REST or SOAP request (array of [{'Name':somename,'Value':somevalue},. |
+| [SetCredential](#setcredential) |  |
+| [SetParameter](#setparameter) | Sets common request parameter. |
+| [SetParameters](#setparameters) | Sets common request parameters. |
+| [SetRequestHeader](#setrequestheader) | Sets common request header. |
+| [SetRequestHeaders](#setrequestheaders) | Sets common HTTP Headers applied to each REST or SOAP request. |
 
 
 
@@ -35,7 +37,7 @@ Session object for SOAP and REST services.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SetUrl](#SetUrl) | Enable URL replacement for all further requests. |
+|	[SetUrl](#seturl) | Enable URL replacement for all further requests. |
 
 
 
@@ -43,6 +45,19 @@ Session object for SOAP and REST services.
 <!-- ============================== property detail ========================== -->
 	
 ### Property Detail
+		
+<a name="GetCredential"></a>
+#### GetCredential
+
+
+
+
+			
+	
+			
+Type: 
+			
+			
 		
 <a name="GetParameters"></a>
 #### GetParameters
@@ -62,6 +77,19 @@ Type:
 
 
 Return common HTTP Headers applied to each REST or SOAP request (array of [{'Name':somename,'Value':somevalue},...])
+
+			
+	
+			
+Type: 
+			
+			
+		
+<a name="SetCredential"></a>
+#### SetCredential
+
+
+
 
 			
 	
@@ -129,9 +157,13 @@ Type:
 ### Action Detail
 		
 <a name="SetUrl"></a>    
-#### SetUrl(oldUrl, newUrl)
+#### SetUrl
 
 Enable URL replacement for all further requests. If request URL starts with oldUrl then replace the beginning with newUrl
+
+```javascript
+SetUrl(oldUrl, newUrl) 
+```
 
 
 **Parameters:**

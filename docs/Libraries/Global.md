@@ -20,48 +20,48 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAnalogPlay](#DoAnalogPlay) | Performs Analog Playback of events recorded in a file. |
-|	[DoAppActivate](#DoAppActivate) | Activates window with the specified title. |
-|	[DoClick](#DoClick) | Performs mouse click at the current position. |
-|	[DoCmd](#DoCmd) | Executes a BAT/CMD file specified in cmdLine. |
-|	[DoCompareJsObjects](#DoCompareJsObjects) | Compares two JavaScript objects and prints differences to the report. |
-|	[DoDecrypt](#DoDecrypt) | Decrypts a piece of text. |
-|	[DoEncrypt](#DoEncrypt) | Encrypts a piece of text. |
-|	[DoHorizontalScroll](#DoHorizontalScroll) | Simulates mouse horizontal wheel scroll gesture. |
-|	[DoInvokeTest](#DoInvokeTest) | Invokes another test (aka subtest). |
-|	[DoInvokeTestParallel](#DoInvokeTestParallel) | Executes specified test in few parallel threads. |
-|	[DoKillByName](#DoKillByName) | Terminates a given process. |
-|	[DoKillByPid](#DoKillByPid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
-|	[DoLaunch](#DoLaunch) | Executes a command specified in cmdLine. |
-|	[DoLoadObjects](#DoLoadObjects) | Loads objects from external .objects.js file. |
-|	[DoMessageBox](#DoMessageBox) | <p>Shows message box (popup message) to a user. |
-|	[DoMouseMove](#DoMouseMove) | Moves mouse to the specified position. |
-|	[DoPlayManual](#DoPlayManual) | Executes a manual test. |
-|	[DoRunTestSet](#DoRunTestSet) | Executes a test set. |
-|	[DoSendKeys](#DoSendKeys) | Sends series of keystrokes to a currently focused application. |
-|	[DoSendText](#DoSendText) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
-|	[DoSleep](#DoSleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
-|	[DoTrim](#DoTrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
-|	[DoTypePassword](#DoTypePassword) | Types encrypted password into a control which has a focus. |
-|	[DoVerticalScroll](#DoVerticalScroll) | Simulates mouse vertical wheel scroll gesture. |
-|	[DoWaitFor](#DoWaitFor) | Waits for object specified by objectId to become available. |
-|	[DoWaitForProperty](#DoWaitForProperty) | Waits for specified value of object's property. |
-|	[GetClipboardText](#GetClipboardText) | Reads text stored in the windows clipboard. |
-|	[GetCurrentDir](#GetCurrentDir) | Gets current directory path. |
-|	[GetFileAsByteArray](#GetFileAsByteArray) | Reads file and returns its content as array of bytes. |
-|	[GetFirstDayOfWeek](#GetFirstDayOfWeek) | Returns first day of week for current user. |
-|	[GetFullPath](#GetFullPath) | Constructs an absolute file name using working directory (WORKDIR) of the test. |
-|	[GetOsOwner](#GetOsOwner) | Reads OS registered owner from the registry. |
-|	[GetOsPath](#GetOsPath) | Returns OS root path. |
-|	[GetOsType](#GetOsType) | Reads OS type from the registry. |
-|	[GetOsVersion](#GetOsVersion) | Reads OS service pack version from the registry. |
-|	[GetProperty](#GetProperty) | Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise. |
-|	[GetRapiseVersion](#GetRapiseVersion) | Reads Rapise version. |
-|	[GetSpecialFolderPath](#GetSpecialFolderPath) | Returns path to a special folder specified by one of possible values. |
-|	[SetClipboardText](#SetClipboardText) | Updates clipboard text |
-|	[SetConfigPath](#SetConfigPath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
-|	[SetFileAsByteArray](#SetFileAsByteArray) | Creates or rewrites file and fills with contents of the provided byte array. |
-|	[SetProperty](#SetProperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
+|	[DoAnalogPlay](#doanalogplay) | Performs Analog Playback of events recorded in a file. |
+|	[DoAppActivate](#doappactivate) | Activates window with the specified title. |
+|	[DoClick](#doclick) | Performs mouse click at the current position. |
+|	[DoCmd](#docmd) | Executes a BAT/CMD file specified in cmdLine. |
+|	[DoCompareJsObjects](#docomparejsobjects) | Compares two JavaScript objects and prints differences to the report. |
+|	[DoDecrypt](#dodecrypt) | Decrypts a piece of text. |
+|	[DoEncrypt](#doencrypt) | Encrypts a piece of text. |
+|	[DoHorizontalScroll](#dohorizontalscroll) | Simulates mouse horizontal wheel scroll gesture. |
+|	[DoInvokeTest](#doinvoketest) | Invokes another test (aka subtest). |
+|	[DoInvokeTestParallel](#doinvoketestparallel) | Executes specified test in few parallel threads. |
+|	[DoKillByName](#dokillbyname) | Terminates a given process. |
+|	[DoKillByPid](#dokillbypid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
+|	[DoLaunch](#dolaunch) | Executes a command specified in cmdLine. |
+|	[DoLoadObjects](#doloadobjects) | Loads objects from external .objects.js file. |
+|	[DoMessageBox](#domessagebox) | <p>Shows message box (popup message) to a user. |
+|	[DoMouseMove](#domousemove) | Moves mouse to the specified position. |
+|	[DoPlayManual](#doplaymanual) | Executes a manual test. |
+|	[DoRunTestSet](#doruntestset) | Executes a test set. |
+|	[DoSendKeys](#dosendkeys) | Sends series of keystrokes to a currently focused application. |
+|	[DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
+|	[DoSleep](#dosleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
+|	[DoTrim](#dotrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
+|	[DoTypePassword](#dotypepassword) | Types encrypted password into a control which has a focus. |
+|	[DoVerticalScroll](#doverticalscroll) | Simulates mouse vertical wheel scroll gesture. |
+|	[DoWaitFor](#dowaitfor) | Waits for object specified by objectId to become available. |
+|	[DoWaitForProperty](#dowaitforproperty) | Waits for specified value of object's property. |
+|	[GetClipboardText](#getclipboardtext) | Reads text stored in the windows clipboard. |
+|	[GetCurrentDir](#getcurrentdir) | Gets current directory path. |
+|	[GetFileAsByteArray](#getfileasbytearray) | Reads file and returns its content as array of bytes. |
+|	[GetFirstDayOfWeek](#getfirstdayofweek) | Returns first day of week for current user. |
+|	[GetFullPath](#getfullpath) | Constructs an absolute file name using working directory (WORKDIR) of the test. |
+|	[GetOsOwner](#getosowner) | Reads OS registered owner from the registry. |
+|	[GetOsPath](#getospath) | Returns OS root path. |
+|	[GetOsType](#getostype) | Reads OS type from the registry. |
+|	[GetOsVersion](#getosversion) | Reads OS service pack version from the registry. |
+|	[GetProperty](#getproperty) | Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise. |
+|	[GetRapiseVersion](#getrapiseversion) | Reads Rapise version. |
+|	[GetSpecialFolderPath](#getspecialfolderpath) | Returns path to a special folder specified by one of possible values. |
+|	[SetClipboardText](#setclipboardtext) | Updates clipboard text |
+|	[SetConfigPath](#setconfigpath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
+|	[SetFileAsByteArray](#setfileasbytearray) | Creates or rewrites file and fills with contents of the provided byte array. |
+|	[SetProperty](#setproperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
 
 
 
@@ -74,9 +74,13 @@ Global object. Use it to perform actions not related to a particular object. You
 ### Action Detail
 		
 <a name="DoAnalogPlay"></a>    
-#### DoAnalogPlay(path, left, top)
+#### DoAnalogPlay
 
 Performs Analog Playback of events recorded in a file.
+
+```javascript
+DoAnalogPlay(path, left, top) 
+```
 
 
 **Parameters:**
@@ -94,10 +98,14 @@ Performs Analog Playback of events recorded in a file.
 <a name="see.also.global.doanalogplay"></a>
 
 <a name="DoAppActivate"></a>    
-#### DoAppActivate(title)
+#### DoAppActivate
 
 Activates window with the specified title. I.e. Global.DoAppActivate("Calculator")
 will bring running instance (if any) of Windows Calculator to the foreground.
+
+```javascript
+DoAppActivate(title) 
+```
 
 
 **Parameters:**
@@ -118,9 +126,13 @@ See:
 <a name="see.also.global.doappactivate"></a>
 
 <a name="DoClick"></a>    
-#### DoClick(clickType)
+#### DoClick
 
 Performs mouse click at the current position.
+
+```javascript
+DoClick(clickType) 
+```
 
 
 **Parameters:**
@@ -136,9 +148,13 @@ Performs mouse click at the current position.
 <a name="see.also.global.doclick"></a>
 
 <a name="DoCmd"></a>    
-#### DoCmd(cmdLine, wrkDir, wait, show)
+#### DoCmd
 
 Executes a BAT/CMD file specified in cmdLine. Optionally one may specify working dir. Requires Rapise 6.4+
+
+```javascript
+DoCmd(cmdLine, wrkDir, wait, show) 
+```
 
 
 **Parameters:**
@@ -162,9 +178,13 @@ number: Error code returned by the batch process. 0 - indicates success if `wait
 <a name="see.also.global.docmd"></a>
 
 <a name="DoCompareJsObjects"></a>    
-#### DoCompareJsObjects(msg, obj1, obj2)
+#### DoCompareJsObjects
 
 Compares two JavaScript objects and prints differences to the report.
+
+```javascript
+DoCompareJsObjects(msg, obj1, obj2) 
+```
 
 
 **Parameters:**
@@ -187,9 +207,13 @@ boolean: 'true' if two objects are equal, 'false' otherwise.
 <a name="see.also.global.docomparejsobjects"></a>
 
 <a name="DoDecrypt"></a>    
-#### DoDecrypt(encryptedText)
+#### DoDecrypt
 
 Decrypts a piece of text.
+
+```javascript
+DoDecrypt(encryptedText) 
+```
 
 
 **Parameters:**
@@ -210,9 +234,13 @@ string: Decrypted text.
 <a name="see.also.global.dodecrypt"></a>
 
 <a name="DoEncrypt"></a>    
-#### DoEncrypt(plainText)
+#### DoEncrypt
 
 Encrypts a piece of text.
+
+```javascript
+DoEncrypt(plainText) 
+```
 
 
 **Parameters:**
@@ -233,9 +261,13 @@ string: Encrypted text.
 <a name="see.also.global.doencrypt"></a>
 
 <a name="DoHorizontalScroll"></a>    
-#### DoHorizontalScroll(scrollAmountInClicks)
+#### DoHorizontalScroll
 
 Simulates mouse horizontal wheel scroll gesture. Requires Rapise 6.5+
+
+```javascript
+DoHorizontalScroll(scrollAmountInClicks) 
+```
 
 
 **Parameters:**
@@ -251,10 +283,14 @@ Simulates mouse horizontal wheel scroll gesture. Requires Rapise 6.5+
 <a name="see.also.global.dohorizontalscroll"></a>
 
 <a name="DoInvokeTest"></a>    
-#### DoInvokeTest(pathToTest, optionalParams)
+#### DoInvokeTest
 
 Invokes another test (aka subtest). The subtest should have the
 set of libraries as calling test. Otherwise it may lead to a conflict.
+
+```javascript
+DoInvokeTest(pathToTest, optionalParams) 
+```
 
 
 **Parameters:**
@@ -276,7 +312,7 @@ boolean: 'true' if the test passed, 'false' otherwise.
 <a name="see.also.global.doinvoketest"></a>
 
 <a name="DoInvokeTestParallel"></a>    
-#### DoInvokeTestParallel(testPath, threads, commonParams)
+#### DoInvokeTestParallel
 
 Executes specified test in few parallel threads. Pass additional arguments in 'threads' param
 
@@ -292,6 +328,10 @@ DoInvokeTestParallel(
 		}
 	}
 );
+```
+
+```javascript
+DoInvokeTestParallel(testPath, threads, commonParams) 
 ```
 
 
@@ -315,9 +355,13 @@ boolean: true, if execution finished with exit code 0 (all tests executed succes
 <a name="see.also.global.doinvoketestparallel"></a>
 
 <a name="DoKillByName"></a>    
-#### DoKillByName(processName)
+#### DoKillByName
 
 Terminates a given process.
+
+```javascript
+DoKillByName(processName) 
+```
 
 
 **Parameters:**
@@ -338,9 +382,13 @@ boolean: 'true' if the process was terminated, 'false' otherwise.
 <a name="see.also.global.dokillbyname"></a>
 
 <a name="DoKillByPid"></a>    
-#### DoKillByPid(pid)
+#### DoKillByPid
 
 Terminates a given process or the last process created by DoLaunch if 'pid' is not specified.
+
+```javascript
+DoKillByPid(pid) 
+```
 
 
 **Parameters:**
@@ -361,10 +409,14 @@ boolean: 'true' if the process was terminated, 'false' otherwise.
 <a name="see.also.global.dokillbypid"></a>
 
 <a name="DoLaunch"></a>    
-#### DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)
+#### DoLaunch
 
 Executes a command specified in cmdLine. Optionally one may specify working dir, and window name
 to attach if it is already launched.
+
+```javascript
+DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow) 
+```
 
 
 **Parameters:**
@@ -388,9 +440,13 @@ number: ID of the new process (positive number) or an error code (negative numbe
 <a name="see.also.global.dolaunch"></a>
 
 <a name="DoLoadObjects"></a>    
-#### DoLoadObjects(objectsFilePath)
+#### DoLoadObjects
 
 Loads objects from external .objects.js file.
+
+```javascript
+DoLoadObjects(objectsFilePath) 
+```
 
 
 **Parameters:**
@@ -411,7 +467,7 @@ object: saved_script_objects or null if the load was unsuccessful.
 <a name="see.also.global.doloadobjects"></a>
 
 <a name="DoMessageBox"></a>    
-#### DoMessageBox(prompt, buttons)
+#### DoMessageBox
 
 <p>Shows message box (popup message) to a user.</p><br>
 <p>'buttons' is a value or a sum of values that specifies the number and type of buttons to display,
@@ -449,6 +505,10 @@ object: saved_script_objects or null if the load was unsuccessful.
 				<tr><td>vbNo</td><td>7</td><td>No button was clicked.</td></tr> 
 			   </table>
 
+```javascript
+DoMessageBox(prompt, buttons) 
+```
+
 
 **Parameters:**
 
@@ -469,9 +529,13 @@ number: A number representation of a button pressed by user.
 <a name="see.also.global.domessagebox"></a>
 
 <a name="DoMouseMove"></a>    
-#### DoMouseMove(x, y, duration)
+#### DoMouseMove
 
 Moves mouse to the specified position.
+
+```javascript
+DoMouseMove(x, y, duration) 
+```
 
 
 **Parameters:**
@@ -489,9 +553,13 @@ Moves mouse to the specified position.
 <a name="see.also.global.domousemove"></a>
 
 <a name="DoPlayManual"></a>    
-#### DoPlayManual(rmtFilePath, rmtParams)
+#### DoPlayManual
 
 Executes a manual test. Results are shown in the report of the calling test.
+
+```javascript
+DoPlayManual(rmtFilePath, rmtParams) 
+```
 
 
 **Parameters:**
@@ -513,9 +581,13 @@ boolean: 'true' if the manual test passed, 'false' otherwise.
 <a name="see.also.global.doplaymanual"></a>
 
 <a name="DoRunTestSet"></a>    
-#### DoRunTestSet(testSetFilePath, testSetParams)
+#### DoRunTestSet
 
 Executes a test set. Results are shown in the report of the calling test.
+
+```javascript
+DoRunTestSet(testSetFilePath, testSetParams) 
+```
 
 
 **Parameters:**
@@ -532,9 +604,13 @@ Executes a test set. Results are shown in the report of the calling test.
 <a name="see.also.global.doruntestset"></a>
 
 <a name="DoSendKeys"></a>    
-#### DoSendKeys(keys)
+#### DoSendKeys
 
 Sends series of keystrokes to a currently focused application.
+
+```javascript
+DoSendKeys(keys) 
+```
 
 
 **Parameters:**
@@ -550,9 +626,13 @@ Sends series of keystrokes to a currently focused application.
 <a name="see.also.global.dosendkeys"></a>
 
 <a name="DoSendText"></a>    
-#### DoSendText(text)
+#### DoSendText
 
 Sends text to the active application as is (while SendKeys also supports sending special keys). Requires Rapise 6.5+
+
+```javascript
+DoSendText(text) 
+```
 
 
 **Parameters:**
@@ -568,9 +648,13 @@ Sends text to the active application as is (while SendKeys also supports sending
 <a name="see.also.global.dosendtext"></a>
 
 <a name="DoSleep"></a>    
-#### DoSleep(millis=1000)
+#### DoSleep
 
 Pauses execution for given number of milliseconds (1000 = 1 second).
+
+```javascript
+DoSleep(millis=1000) 
+```
 
 
 **Parameters:**
@@ -586,10 +670,14 @@ Pauses execution for given number of milliseconds (1000 = 1 second).
 <a name="see.also.global.dosleep"></a>
 
 <a name="DoTrim"></a>    
-#### DoTrim(str, global, trimChars)
+#### DoTrim
 
 Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
 Whitespace characters are [\\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
+
+```javascript
+DoTrim(str, global, trimChars) 
+```
 
 
 **Parameters:**
@@ -612,9 +700,13 @@ string: Trimmed string.
 <a name="see.also.global.dotrim"></a>
 
 <a name="DoTypePassword"></a>    
-#### DoTypePassword(encryptedPassword)
+#### DoTypePassword
 
 Types encrypted password into a control which has a focus.
+
+```javascript
+DoTypePassword(encryptedPassword) 
+```
 
 
 **Parameters:**
@@ -635,9 +727,13 @@ string: 'true'
 <a name="see.also.global.dotypepassword"></a>
 
 <a name="DoVerticalScroll"></a>    
-#### DoVerticalScroll(scrollAmountInClicks)
+#### DoVerticalScroll
 
 Simulates mouse vertical wheel scroll gesture. Requires Rapise 6.5+
+
+```javascript
+DoVerticalScroll(scrollAmountInClicks) 
+```
 
 
 **Parameters:**
@@ -653,10 +749,14 @@ Simulates mouse vertical wheel scroll gesture. Requires Rapise 6.5+
 <a name="see.also.global.doverticalscroll"></a>
 
 <a name="DoWaitFor"></a>    
-#### DoWaitFor(objectId=, timeout, sleepTimeIfFound)
+#### DoWaitFor
 
 Waits for object specified by objectId to become available. Function returns if object
 was found or timeout.
+
+```javascript
+DoWaitFor(objectId=, timeout, sleepTimeIfFound) 
+```
 
 
 **Parameters:**
@@ -679,7 +779,7 @@ SeSObject | <br>boolean: Found object or 'false'.
 <a name="see.also.global.dowaitfor"></a>
 
 <a name="DoWaitForProperty"></a>    
-#### DoWaitForProperty(obj, getterName, propValue, timeout, params)
+#### DoWaitForProperty
 
 Waits for specified value of object's property. Function returns object handle
 if object was found and specified property equals to desired value or 'false' 
@@ -699,6 +799,10 @@ function(value)
 
 ```
 Use the callback if you need to check more complex condition than equality.
+
+```javascript
+DoWaitForProperty(obj, getterName, propValue, timeout, params) 
+```
 
 
 **Parameters:**
@@ -723,9 +827,13 @@ SeSObject | <br>boolean: Found object or 'false'.
 <a name="see.also.global.dowaitforproperty"></a>
 
 <a name="GetClipboardText"></a>    
-#### GetClipboardText()
+#### GetClipboardText
 
 Reads text stored in the windows clipboard.
+
+```javascript
+GetClipboardText() 
+```
 
 
 
@@ -739,9 +847,13 @@ string: Clipboard text
 <a name="see.also.global.getclipboardtext"></a>
 
 <a name="GetCurrentDir"></a>    
-#### GetCurrentDir()
+#### GetCurrentDir
 
 Gets current directory path.
+
+```javascript
+GetCurrentDir() 
+```
 
 
 
@@ -755,9 +867,13 @@ string: Path of the current directory.
 <a name="see.also.global.getcurrentdir"></a>
 
 <a name="GetFileAsByteArray"></a>    
-#### GetFileAsByteArray(fileName)
+#### GetFileAsByteArray
 
 Reads file and returns its content as array of bytes. May be useful for binary files and for passing data to web services.
+
+```javascript
+GetFileAsByteArray(fileName) 
+```
 
 
 **Parameters:**
@@ -778,9 +894,13 @@ object: Array of bytes.
 <a name="see.also.global.getfileasbytearray"></a>
 
 <a name="GetFirstDayOfWeek"></a>    
-#### GetFirstDayOfWeek()
+#### GetFirstDayOfWeek
 
 Returns first day of week for current user.
+
+```javascript
+GetFirstDayOfWeek() 
+```
 
 
 
@@ -794,9 +914,13 @@ number: 0 - Sunday, 1 - Monday.
 <a name="see.also.global.getfirstdayofweek"></a>
 
 <a name="GetFullPath"></a>    
-#### GetFullPath(fileName)
+#### GetFullPath
 
 Constructs an absolute file name using working directory (WORKDIR) of the test.
+
+```javascript
+GetFullPath(fileName) 
+```
 
 
 **Parameters:**
@@ -817,9 +941,13 @@ string: Absolute file name.
 <a name="see.also.global.getfullpath"></a>
 
 <a name="GetOsOwner"></a>    
-#### GetOsOwner()
+#### GetOsOwner
 
 Reads OS registered owner from the registry.
+
+```javascript
+GetOsOwner() 
+```
 
 
 
@@ -833,9 +961,13 @@ string: OS registered owner.
 <a name="see.also.global.getosowner"></a>
 
 <a name="GetOsPath"></a>    
-#### GetOsPath()
+#### GetOsPath
 
 Returns OS root path.
+
+```javascript
+GetOsPath() 
+```
 
 
 
@@ -849,9 +981,13 @@ string: OS root path without the trailing backslash, e.g. 'C:\Windows'.
 <a name="see.also.global.getospath"></a>
 
 <a name="GetOsType"></a>    
-#### GetOsType()
+#### GetOsType
 
 Reads OS type from the registry.
+
+```javascript
+GetOsType() 
+```
 
 
 
@@ -865,9 +1001,13 @@ string: OS type string.
 <a name="see.also.global.getostype"></a>
 
 <a name="GetOsVersion"></a>    
-#### GetOsVersion()
+#### GetOsVersion
 
 Reads OS service pack version from the registry.
+
+```javascript
+GetOsVersion() 
+```
 
 
 
@@ -881,9 +1021,13 @@ string: Service pack version.
 <a name="see.also.global.getosversion"></a>
 
 <a name="GetProperty"></a>    
-#### GetProperty(name, defValue, configPath)
+#### GetProperty
 
 Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise.
+
+```javascript
+GetProperty(name, defValue, configPath) 
+```
 
 
 **Parameters:**
@@ -906,9 +1050,13 @@ string | <br>number | <br>boolean: Propery value. If a property does not exist t
 <a name="see.also.global.getproperty"></a>
 
 <a name="GetRapiseVersion"></a>    
-#### GetRapiseVersion(optMinVersion)
+#### GetRapiseVersion
 
 Reads Rapise version. If 'optMinVersion' is specified, then returns true/false depending on 'optMinVersion' less than actual Rapise version.
+
+```javascript
+GetRapiseVersion(optMinVersion) 
+```
 
 
 **Parameters:**
@@ -929,7 +1077,7 @@ string: Rapise Version (i.e. 6.3.18.5), 'true' if optMinVersion<Rapise version, 
 <a name="see.also.global.getrapiseversion"></a>
 
 <a name="GetSpecialFolderPath"></a>    
-#### GetSpecialFolderPath(folder=MyDocuments)
+#### GetSpecialFolderPath
 
 Returns path to a special folder specified by one of possible values.
 <br>
@@ -960,6 +1108,10 @@ Returns path to a special folder specified by one of possible values.
 				<tr><td>Templates</td><td>The directory that serves as a common repository for document templates.</td></tr> 
 </table>
 
+```javascript
+GetSpecialFolderPath(folder=MyDocuments) 
+```
+
 
 **Parameters:**
 
@@ -979,9 +1131,13 @@ string: System specified folder path without the trailing backslash, e.g. 'C:\Pr
 <a name="see.also.global.getspecialfolderpath"></a>
 
 <a name="SetClipboardText"></a>    
-#### SetClipboardText(txt)
+#### SetClipboardText
 
 Updates clipboard text
+
+```javascript
+SetClipboardText(txt) 
+```
 
 
 **Parameters:**
@@ -1002,9 +1158,13 @@ boolean: 'true' when clipboard is set.
 <a name="see.also.global.setclipboardtext"></a>
 
 <a name="SetConfigPath"></a>    
-#### SetConfigPath(defPath)
+#### SetConfigPath
 
 Set default path for config file instead of default %WORKDIR%\Config.json. Supports .xlsx and .json file format. This path is used by default for further calls to Global.GetProperty and Global.SetProperty
+
+```javascript
+SetConfigPath(defPath) 
+```
 
 
 **Parameters:**
@@ -1025,9 +1185,13 @@ string: Previous config path
 <a name="see.also.global.setconfigpath"></a>
 
 <a name="SetFileAsByteArray"></a>    
-#### SetFileAsByteArray(fileName, bytes)
+#### SetFileAsByteArray
 
 Creates or rewrites file and fills with contents of the provided byte array.
+
+```javascript
+SetFileAsByteArray(fileName, bytes) 
+```
 
 
 **Parameters:**
@@ -1049,9 +1213,13 @@ number: Number of bytes written.
 <a name="see.also.global.setfileasbytearray"></a>
 
 <a name="SetProperty"></a>    
-#### SetProperty(name, value, configPath)
+#### SetProperty
 
 Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. If the file does not exist it will be created.
+
+```javascript
+SetProperty(name, value, configPath) 
+```
 
 
 **Parameters:**

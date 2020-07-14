@@ -19,9 +19,9 @@ Extends [iOSObject](iOSObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [SelectedTab](#SelectedTab) | Selected tab name. | GetSelectedTab |  |
-| [TabName](#TabName) | Name of the tab at index | GetTabName |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [SelectedTab](#selectedtab) | Selected tab name. | GetSelectedTab |  |
+| [TabName](#tabname) | Name of the tab at index | GetTabName |  |
 
 
 
@@ -34,7 +34,7 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#DoSelectTab) | Selects the tab by name or index. |
+|	[DoSelectTab](#doselecttab) | Selects the tab by name or index. |
 
 
 
@@ -102,9 +102,13 @@ Accessors: GetTabName
 ### Action Detail
 		
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(tabNameIndex)
+#### DoSelectTab
 
 Selects the tab by name or index.
+
+```javascript
+DoSelectTab(tabNameIndex) 
+```
 
 
 **Parameters:**

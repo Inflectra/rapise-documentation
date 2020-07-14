@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#DoSelectTab) | Selects the tab by name. |
+|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
@@ -39,9 +39,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(tabName)
+#### DoSelectTab
 
 Selects the tab by name.
+
+```javascript
+DoSelectTab(tabName) 
+```
 
 
 **Parameters:**

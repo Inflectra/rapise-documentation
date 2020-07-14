@@ -20,20 +20,20 @@ This is a JavaScript wrapper for Actions of Selenium .NET library.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Build](#Build) | Builds the sequence of actions. |
-|	[Click](#Click) | Clicks the mouse on the specified element. |
-|	[ClickAndHold](#ClickAndHold) | Clicks and holds the mouse button down on the specified element. |
-|	[ContextClick](#ContextClick) | Right-clicks the mouse on the specified element. |
-|	[DoubleClick](#DoubleClick) | Double-clicks the mouse on the specified element. |
-|	[DragAndDrop](#DragAndDrop) | Performs a drag-and-drop operation from one element to another. |
-|	[DragAndDropToOffset](#DragAndDropToOffset) | Performs a drag-and-drop operation on one element to a specified offset. |
-|	[KeyDown](#KeyDown) | Sends a modifier key down message to the specified element in the browser. |
-|	[KeyUp](#KeyUp) | Sends a modifier key up message to the specified element in the browser. |
-|	[MoveByOffset](#MoveByOffset) | Moves the mouse to the specified offset of the last known mouse coordinates. |
-|	[MoveToElement](#MoveToElement) | Moves the mouse to the specified offset of the top-left corner of the specified element. |
-|	[Perform](#Perform) | Performs the currently built action. |
-|	[Release](#Release) | Releases the mouse button on the specified element. |
-|	[SendKeys](#SendKeys) | Sends a sequence of keystrokes to the specified element in the browser. |
+|	[Build](#build) | Builds the sequence of actions. |
+|	[Click](#click) | Clicks the mouse on the specified element. |
+|	[ClickAndHold](#clickandhold) | Clicks and holds the mouse button down on the specified element. |
+|	[ContextClick](#contextclick) | Right-clicks the mouse on the specified element. |
+|	[DoubleClick](#doubleclick) | Double-clicks the mouse on the specified element. |
+|	[DragAndDrop](#draganddrop) | Performs a drag-and-drop operation from one element to another. |
+|	[DragAndDropToOffset](#draganddroptooffset) | Performs a drag-and-drop operation on one element to a specified offset. |
+|	[KeyDown](#keydown) | Sends a modifier key down message to the specified element in the browser. |
+|	[KeyUp](#keyup) | Sends a modifier key up message to the specified element in the browser. |
+|	[MoveByOffset](#movebyoffset) | Moves the mouse to the specified offset of the last known mouse coordinates. |
+|	[MoveToElement](#movetoelement) | Moves the mouse to the specified offset of the top-left corner of the specified element. |
+|	[Perform](#perform) | Performs the currently built action. |
+|	[Release](#release) | Releases the mouse button on the specified element. |
+|	[SendKeys](#sendkeys) | Sends a sequence of keystrokes to the specified element in the browser. |
 
 
 
@@ -46,9 +46,13 @@ This is a JavaScript wrapper for Actions of Selenium .NET library.
 ### Action Detail
 		
 <a name="Build"></a>    
-#### Build()
+#### Build
 
 Builds the sequence of actions.
+
+```javascript
+Build() 
+```
 
 
 
@@ -62,9 +66,13 @@ A self-reference.
 <a name="see.also.actions.build"></a>
 
 <a name="Click"></a>    
-#### Click(el)
+#### Click
 
 Clicks the mouse on the specified element. If no element is specified clicks the mouse at the last known mouse coordinates.
+
+```javascript
+Click(el) 
+```
 
 
 **Parameters:**
@@ -85,9 +93,13 @@ A self-reference.
 <a name="see.also.actions.click"></a>
 
 <a name="ClickAndHold"></a>    
-#### ClickAndHold(el)
+#### ClickAndHold
 
 Clicks and holds the mouse button down on the specified element.If no element is specified clicks and holds the mouse button at the last known mouse coordinates.
+
+```javascript
+ClickAndHold(el) 
+```
 
 
 **Parameters:**
@@ -108,9 +120,13 @@ A self-reference.
 <a name="see.also.actions.clickandhold"></a>
 
 <a name="ContextClick"></a>    
-#### ContextClick(el)
+#### ContextClick
 
 Right-clicks the mouse on the specified element.If no element is specified right-clicks the mouse at the last known mouse coordinates.
+
+```javascript
+ContextClick(el) 
+```
 
 
 **Parameters:**
@@ -131,9 +147,13 @@ A self-reference.
 <a name="see.also.actions.contextclick"></a>
 
 <a name="DoubleClick"></a>    
-#### DoubleClick(el)
+#### DoubleClick
 
 Double-clicks the mouse on the specified element.If no element is specified double-clicks the mouse at the last known mouse coordinates.
+
+```javascript
+DoubleClick(el) 
+```
 
 
 **Parameters:**
@@ -154,9 +174,13 @@ A self-reference.
 <a name="see.also.actions.doubleclick"></a>
 
 <a name="DragAndDrop"></a>    
-#### DragAndDrop(source, target)
+#### DragAndDrop
 
 Performs a drag-and-drop operation from one element to another.
+
+```javascript
+DragAndDrop(source, target) 
+```
 
 
 **Parameters:**
@@ -178,9 +202,13 @@ A self-reference.
 <a name="see.also.actions.draganddrop"></a>
 
 <a name="DragAndDropToOffset"></a>    
-#### DragAndDropToOffset(source, offsetX, offsetY)
+#### DragAndDropToOffset
 
 Performs a drag-and-drop operation on one element to a specified offset.
+
+```javascript
+DragAndDropToOffset(source, offsetX, offsetY) 
+```
 
 
 **Parameters:**
@@ -203,9 +231,13 @@ A self-reference.
 <a name="see.also.actions.draganddroptooffset"></a>
 
 <a name="KeyDown"></a>    
-#### KeyDown(theKey, el)
+#### KeyDown
 
 Sends a modifier key down message to the specified element in the browser.If no element is specified sends a modifier key down message to the browser.
+
+```javascript
+KeyDown(theKey, el) 
+```
 
 
 **Parameters:**
@@ -227,9 +259,13 @@ A self-reference.
 <a name="see.also.actions.keydown"></a>
 
 <a name="KeyUp"></a>    
-#### KeyUp(theKey, el)
+#### KeyUp
 
 Sends a modifier key up message to the specified element in the browser.If no element is specified sends a modifier key up message to the browser.
+
+```javascript
+KeyUp(theKey, el) 
+```
 
 
 **Parameters:**
@@ -251,9 +287,13 @@ A self-reference.
 <a name="see.also.actions.keyup"></a>
 
 <a name="MoveByOffset"></a>    
-#### MoveByOffset(offsetX, offsetY)
+#### MoveByOffset
 
 Moves the mouse to the specified offset of the last known mouse coordinates.
+
+```javascript
+MoveByOffset(offsetX, offsetY) 
+```
 
 
 **Parameters:**
@@ -275,9 +315,13 @@ A self-reference.
 <a name="see.also.actions.movebyoffset"></a>
 
 <a name="MoveToElement"></a>    
-#### MoveToElement(el, offsetX, offsetY)
+#### MoveToElement
 
 Moves the mouse to the specified offset of the top-left corner of the specified element.If offset is not specified moves the mouse to the specified element.
+
+```javascript
+MoveToElement(el, offsetX, offsetY) 
+```
 
 
 **Parameters:**
@@ -300,9 +344,13 @@ A self-reference.
 <a name="see.also.actions.movetoelement"></a>
 
 <a name="Perform"></a>    
-#### Perform()
+#### Perform
 
 Performs the currently built action.
+
+```javascript
+Perform() 
+```
 
 
 
@@ -311,9 +359,13 @@ Performs the currently built action.
 <a name="see.also.actions.perform"></a>
 
 <a name="Release"></a>    
-#### Release(el)
+#### Release
 
 Releases the mouse button on the specified element.If no element is specified releases the mouse button at the last known mouse coordinates.
+
+```javascript
+Release(el) 
+```
 
 
 **Parameters:**
@@ -334,9 +386,13 @@ A self-reference.
 <a name="see.also.actions.release"></a>
 
 <a name="SendKeys"></a>    
-#### SendKeys(keysToSend, el)
+#### SendKeys
 
 Sends a sequence of keystrokes to the specified element in the browser.If no element is specified sends a sequence of keystrokes to the browser.
+
+```javascript
+SendKeys(keysToSend, el) 
+```
 
 
 **Parameters:**

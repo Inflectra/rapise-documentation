@@ -23,9 +23,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [DropdownCount](#DropdownCount) | NUmber of dropdown controls. | GetDropdownCount |  |
-| [ItemValue](#ItemValue) | Value of an item. | GetItemValue |  |
-| [ToggleState](#ToggleState) | Toggle state of a button | GetToggleState |  |
+| [DropdownCount](#dropdowncount) | NUmber of dropdown controls. | GetDropdownCount |  |
+| [ItemValue](#itemvalue) | Value of an item. | GetItemValue |  |
+| [ToggleState](#togglestate) | Toggle state of a button | GetToggleState |  |
 
 
 
@@ -38,11 +38,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickApplicationButton](#DoClickApplicationButton) | Clicks an application button on the ribbon. |
-|	[DoClickItem](#DoClickItem) | Clicks on an item on the ribbon. |
-|	[DoClickTab](#DoClickTab) | Clicks on a tab in the ribbon. |
-|	[DoItemDropSelect](#DoItemDropSelect) | Clicks specific item in the drop control. |
-|	[DoMenu](#DoMenu) | Performs click on the menu item. |
+|	[DoClickApplicationButton](#doclickapplicationbutton) | Clicks an application button on the ribbon. |
+|	[DoClickItem](#doclickitem) | Clicks on an item on the ribbon. |
+|	[DoClickTab](#doclicktab) | Clicks on a tab in the ribbon. |
+|	[DoItemDropSelect](#doitemdropselect) | Clicks specific item in the drop control. |
+|	[DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
@@ -124,17 +124,21 @@ Accessors: GetToggleState
 ### Action Detail
 		
 <a name="DoClickApplicationButton"></a>    
-#### DoClickApplicationButton(xOffset, yOffset)
+#### DoClickApplicationButton
 
 Clicks an application button on the ribbon.
+
+```javascript
+DoClickApplicationButton(xOffset, yOffset) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -148,9 +152,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ultraribbon.doclickapplicationbutton"></a>
 
 <a name="DoClickItem"></a>    
-#### DoClickItem(caption, xOffset, yOffset)
+#### DoClickItem
 
 Clicks on an item on the ribbon.
+
+```javascript
+DoClickItem(caption, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -158,8 +166,8 @@ Clicks on an item on the ribbon.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Caption of an item to click. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -173,9 +181,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ultraribbon.doclickitem"></a>
 
 <a name="DoClickTab"></a>    
-#### DoClickTab(caption, xOffset, yOffset)
+#### DoClickTab
 
 Clicks on a tab in the ribbon.
+
+```javascript
+DoClickTab(caption, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -183,8 +195,8 @@ Clicks on a tab in the ribbon.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | caption | string |	Caption of a tab to click. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -198,9 +210,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ultraribbon.doclicktab"></a>
 
 <a name="DoItemDropSelect"></a>    
-#### DoItemDropSelect(caption, item)
+#### DoItemDropSelect
 
 Clicks specific item in the drop control.
+
+```javascript
+DoItemDropSelect(caption, item) 
+```
 
 
 **Parameters:**
@@ -222,9 +238,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ultraribbon.doitemdropselect"></a>
 
 <a name="DoMenu"></a>    
-#### DoMenu(path, separator)
+#### DoMenu
 
 Performs click on the menu item.
+
+```javascript
+DoMenu(path, separator) 
+```
 
 
 **Parameters:**

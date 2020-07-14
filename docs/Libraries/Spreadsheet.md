@@ -20,31 +20,31 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAddColumn](#DoAddColumn) | Appends a column with specified name. |
-|	[DoAddRow](#DoAddRow) | Appends a new row. |
-|	[DoAttach](#DoAttach) | Loads a sheet from Excel file (.xls, *.xlsx) or csv file (*.txt, *.csv). |
-|	[DoCompare](#DoCompare) | Compares two spreadsheets. |
-|	[DoCreate](#DoCreate) | Creates a new spreadsheet file. |
-|	[DoInsertColumn](#DoInsertColumn) | Inserts a column at index. |
-|	[DoInsertRow](#DoInsertRow) | Inserts a new row at index. |
-|	[DoMoveToFirstRow](#DoMoveToFirstRow) | Moves to a first row in selected range. |
-|	[DoMoveToLastRow](#DoMoveToLastRow) | Moves to a last row in selected range. |
-|	[DoMoveToRow](#DoMoveToRow) | Sets active row index. |
-|	[DoRandom](#DoRandom) | Selects random row and column in the range. |
-|	[DoRemoveColumn](#DoRemoveColumn) | Removes a column at index. |
-|	[DoRemoveRow](#DoRemoveRow) | Removes a row at index. |
-|	[DoSave](#DoSave) | Saves the spreadsheet. |
-|	[DoSequential](#DoSequential) | Advances to the next row in the range. |
-|	[GetCell](#GetCell) | Cell value by its coordinates. |
-|	[GetColumnCount](#GetColumnCount) | Gets columns count. |
-|	[GetColumnIndexByName](#GetColumnIndexByName) | Gets column index by its name. |
-|	[GetColumnName](#GetColumnName) | Gets column name. |
-|	[GetCurrentRowIndex](#GetCurrentRowIndex) | Gets zero-based active row index. |
-|	[GetEOF](#GetEOF) | Gets EOF state. |
-|	[GetRange](#GetRange) | Cell range used in DoSequental and in DoRandom. |
-|	[GetRowCount](#GetRowCount) | Gets row count. |
-|	[SetCell](#SetCell) | Sets cell value by its coordinates. |
-|	[SetRange](#SetRange) | Cell range used in DoSequental and in DoRandom. |
+|	[DoAddColumn](#doaddcolumn) | Appends a column with specified name. |
+|	[DoAddRow](#doaddrow) | Appends a new row. |
+|	[DoAttach](#doattach) | Loads a sheet from Excel file (.xls, *.xlsx) or csv file (*.txt, *.csv). |
+|	[DoCompare](#docompare) | Compares two spreadsheets. |
+|	[DoCreate](#docreate) | Creates a new spreadsheet file. |
+|	[DoInsertColumn](#doinsertcolumn) | Inserts a column at index. |
+|	[DoInsertRow](#doinsertrow) | Inserts a new row at index. |
+|	[DoMoveToFirstRow](#domovetofirstrow) | Moves to a first row in selected range. |
+|	[DoMoveToLastRow](#domovetolastrow) | Moves to a last row in selected range. |
+|	[DoMoveToRow](#domovetorow) | Sets active row index. |
+|	[DoRandom](#dorandom) | Selects random row and column in the range. |
+|	[DoRemoveColumn](#doremovecolumn) | Removes a column at index. |
+|	[DoRemoveRow](#doremoverow) | Removes a row at index. |
+|	[DoSave](#dosave) | Saves the spreadsheet. |
+|	[DoSequential](#dosequential) | Advances to the next row in the range. |
+|	[GetCell](#getcell) | Cell value by its coordinates. |
+|	[GetColumnCount](#getcolumncount) | Gets columns count. |
+|	[GetColumnIndexByName](#getcolumnindexbyname) | Gets column index by its name. |
+|	[GetColumnName](#getcolumnname) | Gets column name. |
+|	[GetCurrentRowIndex](#getcurrentrowindex) | Gets zero-based active row index. |
+|	[GetEOF](#geteof) | Gets EOF state. |
+|	[GetRange](#getrange) | Cell range used in DoSequental and in DoRandom. |
+|	[GetRowCount](#getrowcount) | Gets row count. |
+|	[SetCell](#setcell) | Sets cell value by its coordinates. |
+|	[SetRange](#setrange) | Cell range used in DoSequental and in DoRandom. |
 
 
 
@@ -57,9 +57,13 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 ### Action Detail
 		
 <a name="DoAddColumn"></a>    
-#### DoAddColumn(name)
+#### DoAddColumn
 
 Appends a column with specified name.
+
+```javascript
+DoAddColumn(name) 
+```
 
 
 **Parameters:**
@@ -80,9 +84,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.doaddcolumn"></a>
 
 <a name="DoAddRow"></a>    
-#### DoAddRow()
+#### DoAddRow
 
 Appends a new row.
+
+```javascript
+DoAddRow() 
+```
 
 
 
@@ -96,9 +104,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.doaddrow"></a>
 
 <a name="DoAttach"></a>    
-#### DoAttach(fileName, sheetName, separator)
+#### DoAttach
 
 Loads a sheet from Excel file (.xls, *.xlsx) or csv file (*.txt, *.csv).
+
+```javascript
+DoAttach(fileName, sheetName, separator) 
+```
 
 
 **Parameters:**
@@ -121,10 +133,14 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.doattach"></a>
 
 <a name="DoCompare"></a>    
-#### DoCompare(spreadsheet1, spreadsheet2, strict, sheet1Name, sheet2Name)
+#### DoCompare
 
 Compares two spreadsheets. In strict mode number of columns and rows matter 
 and all cell values must be equal. When strict mode is off then spreadsheet2 must contain spreadsheet1 to return 'true' as a result.
+
+```javascript
+DoCompare(spreadsheet1, spreadsheet2, strict, sheet1Name, sheet2Name) 
+```
 
 
 **Parameters:**
@@ -149,9 +165,13 @@ boolean: true if spreadsheets are equal, false otherwise.
 <a name="see.also.spreadsheet.docompare"></a>
 
 <a name="DoCreate"></a>    
-#### DoCreate(fileName, sheetName, columnNames, rowCount, separator)
+#### DoCreate
 
 Creates a new spreadsheet file.
+
+```javascript
+DoCreate(fileName, sheetName, columnNames, rowCount, separator) 
+```
 
 
 **Parameters:**
@@ -176,9 +196,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.docreate"></a>
 
 <a name="DoInsertColumn"></a>    
-#### DoInsertColumn(columnIndex, name)
+#### DoInsertColumn
 
 Inserts a column at index.
+
+```javascript
+DoInsertColumn(columnIndex, name) 
+```
 
 
 **Parameters:**
@@ -200,9 +224,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.doinsertcolumn"></a>
 
 <a name="DoInsertRow"></a>    
-#### DoInsertRow(rowIndex)
+#### DoInsertRow
 
 Inserts a new row at index.
+
+```javascript
+DoInsertRow(rowIndex) 
+```
 
 
 **Parameters:**
@@ -223,9 +251,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.doinsertrow"></a>
 
 <a name="DoMoveToFirstRow"></a>    
-#### DoMoveToFirstRow()
+#### DoMoveToFirstRow
 
 Moves to a first row in selected range.
+
+```javascript
+DoMoveToFirstRow() 
+```
 
 
 
@@ -239,9 +271,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.domovetofirstrow"></a>
 
 <a name="DoMoveToLastRow"></a>    
-#### DoMoveToLastRow()
+#### DoMoveToLastRow
 
 Moves to a last row in selected range.
+
+```javascript
+DoMoveToLastRow() 
+```
 
 
 
@@ -255,9 +291,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.domovetolastrow"></a>
 
 <a name="DoMoveToRow"></a>    
-#### DoMoveToRow(index)
+#### DoMoveToRow
 
 Sets active row index.
+
+```javascript
+DoMoveToRow(index) 
+```
 
 
 **Parameters:**
@@ -278,11 +318,15 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.domovetorow"></a>
 
 <a name="DoRandom"></a>    
-#### DoRandom()
+#### DoRandom
 
 Selects random row and column in the range. The range is either set by SetRange
 or it is the default range that includes all rows (except first row 
 which is considred to contain column names) and columns on the sheet.
+
+```javascript
+DoRandom() 
+```
 
 
 
@@ -296,9 +340,13 @@ boolean: false if the spreadhseet is not attached, true otherwise.
 <a name="see.also.spreadsheet.dorandom"></a>
 
 <a name="DoRemoveColumn"></a>    
-#### DoRemoveColumn(columnIndex)
+#### DoRemoveColumn
 
 Removes a column at index.
+
+```javascript
+DoRemoveColumn(columnIndex) 
+```
 
 
 **Parameters:**
@@ -319,9 +367,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.doremovecolumn"></a>
 
 <a name="DoRemoveRow"></a>    
-#### DoRemoveRow(rowIndex)
+#### DoRemoveRow
 
 Removes a row at index.
+
+```javascript
+DoRemoveRow(rowIndex) 
+```
 
 
 **Parameters:**
@@ -342,9 +394,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.doremoverow"></a>
 
 <a name="DoSave"></a>    
-#### DoSave(fileName)
+#### DoSave
 
 Saves the spreadsheet.
+
+```javascript
+DoSave(fileName) 
+```
 
 
 **Parameters:**
@@ -365,13 +421,17 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.dosave"></a>
 
 <a name="DoSequential"></a>    
-#### DoSequential()
+#### DoSequential
 
 Advances to the next row in the range. The range is either set by SetRange
 or it is the default range that includes all rows on the sheet except first row 
 which is considred to contain column names.
 When the end of the range is reached DoSequential stays at the last
 row in the range and returns 'false'.
+
+```javascript
+DoSequential() 
+```
 
 
 
@@ -385,9 +445,13 @@ boolean: false if being called when active row is the last row or the spreadshee
 <a name="see.also.spreadsheet.dosequential"></a>
 
 <a name="GetCell"></a>    
-#### GetCell(columnId, rowId)
+#### GetCell
 
 Cell value by its coordinates. Refers to active cell value after DoSequental or DoRandom if params not set.
+
+```javascript
+GetCell(columnId, rowId) 
+```
 
 
 **Parameters:**
@@ -409,9 +473,13 @@ string: Getter returns string with cell value and null in the case of error. Set
 <a name="see.also.spreadsheet.getcell"></a>
 
 <a name="GetColumnCount"></a>    
-#### GetColumnCount()
+#### GetColumnCount
 
 Gets columns count.
+
+```javascript
+GetColumnCount() 
+```
 
 
 
@@ -425,9 +493,13 @@ number: Number of columns in the spreadsheet. -1 if no spreadsheet is attached.
 <a name="see.also.spreadsheet.getcolumncount"></a>
 
 <a name="GetColumnIndexByName"></a>    
-#### GetColumnIndexByName(name)
+#### GetColumnIndexByName
 
 Gets column index by its name.
+
+```javascript
+GetColumnIndexByName(name) 
+```
 
 
 **Parameters:**
@@ -448,9 +520,13 @@ number: column index if found, or -1.
 <a name="see.also.spreadsheet.getcolumnindexbyname"></a>
 
 <a name="GetColumnName"></a>    
-#### GetColumnName(index)
+#### GetColumnName
 
 Gets column name.
+
+```javascript
+GetColumnName(index) 
+```
 
 
 **Parameters:**
@@ -471,9 +547,13 @@ string: Name of a column in the spreadsheet. Null in the case of error.
 <a name="see.also.spreadsheet.getcolumnname"></a>
 
 <a name="GetCurrentRowIndex"></a>    
-#### GetCurrentRowIndex()
+#### GetCurrentRowIndex
 
 Gets zero-based active row index.
+
+```javascript
+GetCurrentRowIndex() 
+```
 
 
 
@@ -487,9 +567,13 @@ number: Active row index.
 <a name="see.also.spreadsheet.getcurrentrowindex"></a>
 
 <a name="GetEOF"></a>    
-#### GetEOF()
+#### GetEOF
 
 Gets EOF state.
+
+```javascript
+GetEOF() 
+```
 
 
 
@@ -503,9 +587,13 @@ boolean: false if spreadsheet is attached and active row and column point to exi
 <a name="see.also.spreadsheet.geteof"></a>
 
 <a name="GetRange"></a>    
-#### GetRange()
+#### GetRange
 
 Cell range used in DoSequental and in DoRandom.
+
+```javascript
+GetRange() 
+```
 
 
 
@@ -519,9 +607,13 @@ object: Spreadsheet state object: { startRow, endRow, startCol, endCol, activeRo
 <a name="see.also.spreadsheet.getrange"></a>
 
 <a name="GetRowCount"></a>    
-#### GetRowCount()
+#### GetRowCount
 
 Gets row count.
+
+```javascript
+GetRowCount() 
+```
 
 
 
@@ -535,9 +627,13 @@ number: Number of rows in the spreadsheet including the row with column names. -
 <a name="see.also.spreadsheet.getrowcount"></a>
 
 <a name="SetCell"></a>    
-#### SetCell(value, columnId, rowId)
+#### SetCell
 
 Sets cell value by its coordinates. Sets active cell value after DoSequental or DoRandom if params not set.
+
+```javascript
+SetCell(value, columnId, rowId) 
+```
 
 
 **Parameters:**
@@ -560,9 +656,13 @@ boolean: true if successfull, false otherwise.
 <a name="see.also.spreadsheet.setcell"></a>
 
 <a name="SetRange"></a>    
-#### SetRange(startRow, endRow, startCol, endCol)
+#### SetRange
 
 Cell range used in DoSequental and in DoRandom.
+
+```javascript
+SetRange(startRow, endRow, startCol, endCol) 
+```
 
 
 **Parameters:**

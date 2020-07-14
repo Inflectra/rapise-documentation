@@ -25,9 +25,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
-| [Text](#Text) | Text of the label of the object | GetText |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [Text](#text) | Text of the label of the object | GetText |  |
 
 
 
@@ -40,7 +40,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects Item |
+|	[DoSelectItem](#doselectitem) | Selects Item |
 
 
 
@@ -101,9 +101,13 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(index)
+#### DoSelectItem
 
 Selects Item
+
+```javascript
+DoSelectItem(index) 
+```
 
 
 **Parameters:**

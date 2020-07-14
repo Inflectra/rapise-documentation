@@ -25,8 +25,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Item](#Item) | Caption of the item specified by index | GetItem |  |
-| [ItemCount](#ItemCount) | Number of items in this navigation bar. | GetItemCount |  |
+| [Item](#item) | Caption of the item specified by index | GetItem |  |
+| [ItemCount](#itemcount) | Number of items in this navigation bar. | GetItemCount |  |
 
 
 
@@ -39,8 +39,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Performs click on the navigation item |
-|	[DoExpandGroup](#DoExpandGroup) | Expand (or make active) the navigation group |
+|	[DoClickItem](#doclickitem) | Performs click on the navigation item |
+|	[DoExpandGroup](#doexpandgroup) | Expand (or make active) the navigation group |
 
 
 
@@ -93,9 +93,13 @@ Accessors: GetItemCount
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(nameCaptionIndex)
+#### DoClickItem
 
 Performs click on the navigation item
+
+```javascript
+DoClickItem(nameCaptionIndex) 
+```
 
 
 **Parameters:**
@@ -116,9 +120,13 @@ boolean: 'true' if successful, 'false' otherwise.
 <a name="see.also.ultralistbar.doclickitem"></a>
 
 <a name="DoExpandGroup"></a>    
-#### DoExpandGroup(nameCaptionIndex)
+#### DoExpandGroup
 
 Expand (or make active) the navigation group
+
+```javascript
+DoExpandGroup(nameCaptionIndex) 
+```
 
 
 **Parameters:**

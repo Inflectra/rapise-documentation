@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSearch](#DoSearch) | Performs action search. |
+|	[DoSearch](#dosearch) | Performs action search. |
 
 
 
@@ -39,9 +39,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoSearch"></a>    
-#### DoSearch(text)
+#### DoSearch
 
 Performs action search.
+
+```javascript
+DoSearch(text) 
+```
 
 
 **Parameters:**

@@ -23,13 +23,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [CellObject](#CellObject) | UIAObject for the specified cell. | GetCellObject |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount |  |
-| [ColumnIndex](#ColumnIndex) | Zero-based index of the column. | GetColumnIndex |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [ColumnValues](#ColumnValues) | Values of cells in a column | GetColumnValues |  |
-| [RowCount](#RowCount) | Number of rows in the grid. | GetRowCount |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [CellObject](#cellobject) | UIAObject for the specified cell. | GetCellObject |  |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnIndex](#columnindex) | Zero-based index of the column. | GetColumnIndex |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [ColumnValues](#columnvalues) | Values of cells in a column | GetColumnValues |  |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount |  |
 
 
 
@@ -42,9 +42,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell. |
-|	[DoClickColumn](#DoClickColumn) | Clicks on column header |
-|	[DoScroll](#DoScroll) | Scrolls table horizontally and vertically. |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell. |
+|	[DoClickColumn](#doclickcolumn) | Clicks on column header |
+|	[DoScroll](#doscroll) | Scrolls table horizontally and vertically. |
 
 
 
@@ -93,7 +93,7 @@ UIAObject for the specified cell.
 
 	
 			
-Type: object
+Type: UIAObject
 			
 			
 Accessors: GetCellObject
@@ -203,9 +203,13 @@ Accessors: GetRowCount
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell.
+
+```javascript
+DoClickCell(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -230,9 +234,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.dynamicsaxtable.doclickcell"></a>
 
 <a name="DoClickColumn"></a>    
-#### DoClickColumn(col, clickType, xOffset, yOffset)
+#### DoClickColumn
 
 Clicks on column header
+
+```javascript
+DoClickColumn(col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -251,9 +259,13 @@ Clicks on column header
 <a name="see.also.dynamicsaxtable.doclickcolumn"></a>
 
 <a name="DoScroll"></a>    
-#### DoScroll(horizontalPercent, verticalPercent)
+#### DoScroll
 
 Scrolls table horizontally and vertically.
+
+```javascript
+DoScroll(horizontalPercent, verticalPercent) 
+```
 
 
 **Parameters:**

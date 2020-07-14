@@ -20,17 +20,17 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFlick](#DoFlick) | Flick action. |
-|	[DoGoToUrl](#DoGoToUrl) | Opens URL in active browser. |
-|	[DoScreenshot](#DoScreenshot) | Makes screenshot of a device. |
-|	[DoShake](#DoShake) | Shakes device. |
-|	[DoSwipe](#DoSwipe) | Swipe action. |
-|	[DoTap](#DoTap) | Tap screen. |
-|	[GetCapability](#GetCapability) | Gets capability with specified name. |
-|	[GetContext](#GetContext) | Gets current context. |
-|	[GetDeviceOrientation](#GetDeviceOrientation) | Gets device orientation. |
-|	[SetContext](#SetContext) | Sets context. |
-|	[SetDeviceOrientation](#SetDeviceOrientation) | Sets device orientation. |
+|	[DoFlick](#doflick) | Flick action. |
+|	[DoGoToUrl](#dogotourl) | Opens URL in active browser. |
+|	[DoScreenshot](#doscreenshot) | Makes screenshot of a device. |
+|	[DoShake](#doshake) | Shakes device. |
+|	[DoSwipe](#doswipe) | Swipe action. |
+|	[DoTap](#dotap) | Tap screen. |
+|	[GetCapability](#getcapability) | Gets capability with specified name. |
+|	[GetContext](#getcontext) | Gets current context. |
+|	[GetDeviceOrientation](#getdeviceorientation) | Gets device orientation. |
+|	[SetContext](#setcontext) | Sets context. |
+|	[SetDeviceOrientation](#setdeviceorientation) | Sets device orientation. |
 
 
 
@@ -43,9 +43,13 @@ Global object. Use it to perform actions not related to a particular object. You
 ### Action Detail
 		
 <a name="DoFlick"></a>    
-#### DoFlick(endX, endY, startX, startY, touchCount)
+#### DoFlick
 
 Flick action.
+
+```javascript
+DoFlick(endX, endY, startX, startY, touchCount) 
+```
 
 
 **Parameters:**
@@ -70,9 +74,13 @@ Flick action.
 <a name="see.also.ios.doflick"></a>
 
 <a name="DoGoToUrl"></a>    
-#### DoGoToUrl(url)
+#### DoGoToUrl
 
 Opens URL in active browser.
+
+```javascript
+DoGoToUrl(url) 
+```
 
 
 **Parameters:**
@@ -93,9 +101,13 @@ Opens URL in active browser.
 <a name="see.also.ios.dogotourl"></a>
 
 <a name="DoScreenshot"></a>    
-#### DoScreenshot()
+#### DoScreenshot
 
 Makes screenshot of a device.
+
+```javascript
+DoScreenshot() 
+```
 
 
 
@@ -109,9 +121,13 @@ Makes screenshot of a device.
 <a name="see.also.ios.doscreenshot"></a>
 
 <a name="DoShake"></a>    
-#### DoShake()
+#### DoShake
 
 Shakes device.
+
+```javascript
+DoShake() 
+```
 
 
 
@@ -125,9 +141,13 @@ Shakes device.
 <a name="see.also.ios.doshake"></a>
 
 <a name="DoSwipe"></a>    
-#### DoSwipe(endX, endY, startX, startY, duration, touchCount)
+#### DoSwipe
 
 Swipe action.
+
+```javascript
+DoSwipe(endX, endY, startX, startY, duration, touchCount) 
+```
 
 
 **Parameters:**
@@ -153,9 +173,13 @@ Swipe action.
 <a name="see.also.ios.doswipe"></a>
 
 <a name="DoTap"></a>    
-#### DoTap(x, y, duration, tapCount, touchCount)
+#### DoTap
 
 Tap screen.
+
+```javascript
+DoTap(x, y, duration, tapCount, touchCount) 
+```
 
 
 **Parameters:**
@@ -180,9 +204,13 @@ Tap screen.
 <a name="see.also.ios.dotap"></a>
 
 <a name="GetCapability"></a>    
-#### GetCapability(name)
+#### GetCapability
 
 Gets capability with specified name.
+
+```javascript
+GetCapability(name) 
+```
 
 
 **Parameters:**
@@ -203,9 +231,13 @@ Capability string.
 <a name="see.also.ios.getcapability"></a>
 
 <a name="GetContext"></a>    
-#### GetContext()
+#### GetContext
 
 Gets current context.
+
+```javascript
+GetContext() 
+```
 
 
 
@@ -219,9 +251,13 @@ Either NATIVE_APP or WEBVIEW_1.
 <a name="see.also.ios.getcontext"></a>
 
 <a name="GetDeviceOrientation"></a>    
-#### GetDeviceOrientation()
+#### GetDeviceOrientation
 
 Gets device orientation.
+
+```javascript
+GetDeviceOrientation() 
+```
 
 
 
@@ -235,9 +271,13 @@ Device orientation.
 <a name="see.also.ios.getdeviceorientation"></a>
 
 <a name="SetContext"></a>    
-#### SetContext(name)
+#### SetContext
 
 Sets context.
+
+```javascript
+SetContext(name) 
+```
 
 
 **Parameters:**
@@ -253,9 +293,13 @@ Sets context.
 <a name="see.also.ios.setcontext"></a>
 
 <a name="SetDeviceOrientation"></a>    
-#### SetDeviceOrientation(orientation)
+#### SetDeviceOrientation
 
 Sets device orientation.
+
+```javascript
+SetDeviceOrientation(orientation) 
+```
 
 
 **Parameters:**

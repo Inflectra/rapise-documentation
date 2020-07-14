@@ -23,14 +23,14 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount | SetItemCount |
-| [ItemIndexByName](#ItemIndexByName) | Returns item index by its name. | GetItemIndexByName |  |
-| [ItemNameByIndex](#ItemNameByIndex) | Returns item name by its index. | GetItemNameByIndex |  |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex |  |
-| [SelectedIndices](#SelectedIndices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetSelectedIndices |  |
-| [SelectedItems](#SelectedItems) | Text of all the selected items in a single string. | GetSelectedItems | SetSelectedItems |
-| [SelectedText](#SelectedText) | Text of the selected item in a single string. | GetSelectedText | SetSelectedText |
-| [SelectionCount](#SelectionCount) | Number of selected items. | GetSelectionCount | SetSelectionCount |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount | SetItemCount |
+| [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
+| [ItemNameByIndex](#itemnamebyindex) | Returns item name by its index. | GetItemNameByIndex |  |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex |  |
+| [SelectedIndices](#selectedindices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetSelectedIndices |  |
+| [SelectedItems](#selecteditems) | Text of all the selected items in a single string. | GetSelectedItems | SetSelectedItems |
+| [SelectedText](#selectedtext) | Text of the selected item in a single string. | GetSelectedText | SetSelectedText |
+| [SelectionCount](#selectioncount) | Number of selected items. | GetSelectionCount | SetSelectionCount |
 
 
 
@@ -43,10 +43,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAddSelection](#DoAddSelection) | Extends selection. |
-|	[DoClickItem](#DoClickItem) | Performs click on the item |
-|	[DoRemoveSelection](#DoRemoveSelection) | Removes selection from specified items. |
-|	[DoSelectItem](#DoSelectItem) | Selects items of this object. |
+|	[DoAddSelection](#doaddselection) | Extends selection. |
+|	[DoClickItem](#doclickitem) | Performs click on the item |
+|	[DoRemoveSelection](#doremoveselection) | Removes selection from specified items. |
+|	[DoSelectItem](#doselectitem) | Selects items of this object. |
 
 
 
@@ -204,16 +204,20 @@ Accessors: GetSelectionCount, SetSelectionCount
 ### Action Detail
 		
 <a name="DoAddSelection"></a>    
-#### DoAddSelection(items, separator, itemsType)
+#### DoAddSelection
 
 Extends selection.
+
+```javascript
+DoAddSelection(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -229,9 +233,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.swtlist.doaddselection"></a>
 
 <a name="DoClickItem"></a>    
-#### DoClickItem(nameCaptionIndex, xOffset, yOffset, clickType)
+#### DoClickItem
 
 Performs click on the item
+
+```javascript
+DoClickItem(nameCaptionIndex, xOffset, yOffset, clickType) 
+```
 
 
 **Parameters:**
@@ -239,8 +247,8 @@ Performs click on the item
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | nameCaptionIndex | string \| number |	index, name or caption of the item to be selected. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
 
 
@@ -255,16 +263,20 @@ boolean: 'true' if successful, 'false' otherwise.
 <a name="see.also.swtlist.doclickitem"></a>
 
 <a name="DoRemoveSelection"></a>    
-#### DoRemoveSelection(items, separator, itemsType)
+#### DoRemoveSelection
 
 Removes selection from specified items.
+
+```javascript
+DoRemoveSelection(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -280,16 +292,20 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.swtlist.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(items, separator, itemsType)
+#### DoSelectItem
 
 Selects items of this object. First it clears existing selection.
+
+```javascript
+DoSelectItem(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 

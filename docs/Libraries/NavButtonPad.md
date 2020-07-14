@@ -23,13 +23,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ButtonCaption](#ButtonCaption) | Caption of a button with specified index | GetButtonCaption |  |
-| [ColumnCount](#ColumnCount) | Number of columns on a page | GetColumnCount |  |
-| [FullInfo](#FullInfo) | JSON-formatted info for all buttons | GetFullInfo |  |
-| [FullText](#FullText) | TAB-separated table with button captions | GetFullText |  |
-| [PageCount](#PageCount) | Number of pages | GetPageCount |  |
-| [RowCount](#RowCount) | Number of rows on a page | GetRowCount |  |
-| [ToggleState](#ToggleState) | ToggleState of the button | GetToggleState |  |
+| [ButtonCaption](#buttoncaption) | Caption of a button with specified index | GetButtonCaption |  |
+| [ColumnCount](#columncount) | Number of columns on a page | GetColumnCount |  |
+| [FullInfo](#fullinfo) | JSON-formatted info for all buttons | GetFullInfo |  |
+| [FullText](#fulltext) | TAB-separated table with button captions | GetFullText |  |
+| [PageCount](#pagecount) | Number of pages | GetPageCount |  |
+| [RowCount](#rowcount) | Number of rows on a page | GetRowCount |  |
+| [ToggleState](#togglestate) | ToggleState of the button | GetToggleState |  |
 
 
 
@@ -42,7 +42,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#DoClick) | Click button by caption or no (1-based index) |
+|	[DoClick](#doclick) | Click button by caption or no (1-based index) |
 
 
 
@@ -177,9 +177,13 @@ Accessors: GetToggleState
 ### Action Detail
 		
 <a name="DoClick"></a>    
-#### DoClick(textOrId, timeout)
+#### DoClick
 
 Click button by caption or no (1-based index)
+
+```javascript
+DoClick(textOrId, timeout) 
+```
 
 
 **Parameters:**

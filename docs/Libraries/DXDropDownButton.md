@@ -28,7 +28,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoShowPopup](#DoShowPopup) | Show popup |
+|	[DoShowPopup](#doshowpopup) | Show popup |
 
 
 
@@ -41,9 +41,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoShowPopup"></a>    
-#### DoShowPopup()
+#### DoShowPopup
 
 Show popup
+
+```javascript
+DoShowPopup() 
+```
 
 
 

@@ -21,8 +21,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Month](#Month) | Gets the currently selected month | GetMonth |  |
-| [Year](#Year) | Gets the currently selected year | GetYear |  |
+| [Month](#month) | Gets the currently selected month | GetMonth |  |
+| [Year](#year) | Gets the currently selected year | GetYear |  |
 
 
 
@@ -35,9 +35,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoNextMonth](#DoNextMonth) | Changes to the next month. |
-|	[DoPrevMonth](#DoPrevMonth) | Changes to the previous month. |
-|	[DoSelectDate](#DoSelectDate) | Selects a specific day in the current month. |
+|	[DoNextMonth](#donextmonth) | Changes to the next month. |
+|	[DoPrevMonth](#doprevmonth) | Changes to the previous month. |
+|	[DoSelectDate](#doselectdate) | Selects a specific day in the current month. |
 
 
 
@@ -83,9 +83,13 @@ Accessors: GetYear
 ### Action Detail
 		
 <a name="DoNextMonth"></a>    
-#### DoNextMonth()
+#### DoNextMonth
 
 Changes to the next month.
+
+```javascript
+DoNextMonth() 
+```
 
 
 
@@ -99,9 +103,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.jquerydatepicker.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
-#### DoPrevMonth()
+#### DoPrevMonth
 
 Changes to the previous month.
+
+```javascript
+DoPrevMonth() 
+```
 
 
 
@@ -115,9 +123,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.jquerydatepicker.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
-#### DoSelectDate(dateValue)
+#### DoSelectDate
 
 Selects a specific day in the current month.
+
+```javascript
+DoSelectDate(dateValue) 
+```
 
 
 **Parameters:**

@@ -25,9 +25,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex |  |
-| [SelectedItem](#SelectedItem) | Selected item of the object. | GetSelectedItem |  |
-| [Text](#Text) | Text of the selected item in a single string. | GetText |  |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex |  |
+| [SelectedItem](#selecteditem) | Selected item of the object. | GetSelectedItem |  |
+| [Text](#text) | Text of the selected item in a single string. | GetText |  |
 
 
 
@@ -40,7 +40,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Performs click on the option set item |
+|	[DoSelectItem](#doselectitem) | Performs click on the option set item |
 
 
 
@@ -101,9 +101,13 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(captionIndex)
+#### DoSelectItem
 
 Performs click on the option set item
+
+```javascript
+DoSelectItem(captionIndex) 
+```
 
 
 **Parameters:**

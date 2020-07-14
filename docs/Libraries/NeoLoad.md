@@ -20,15 +20,15 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[CaptureBrowserPerformance](#CaptureBrowserPerformance) | Captures duration of loading a page and resources. |
-|	[CaptureHostPerformance](#CaptureHostPerformance) | Sends host performance metrics to NeoLoad: CPU, Memory, Network, Battery. |
-|	[CapturePerformanceValue](#CapturePerformanceValue) | Sends performance value to NeoLoad. |
-|	[CreateClient](#CreateClient) | Connects to NeoLoad. |
-|	[EndTransaction](#EndTransaction) | Marks end of a transaction and sends performance metrics to NeoLoad. |
-|	[GetNetworkInterfaceNames](#GetNetworkInterfaceNames) | Gets names of network interfaces. |
-|	[SetBaseContainer](#SetBaseContainer) | Sets current step (Init, Actions, End) during test conversion |
-|	[SetContainer](#SetContainer) | Sets current container/business transaction during test conversion |
-|	[StartTransaction](#StartTransaction) | Marks start of a transaction. |
+|	[CaptureBrowserPerformance](#capturebrowserperformance) | Captures duration of loading a page and resources. |
+|	[CaptureHostPerformance](#capturehostperformance) | Sends host performance metrics to NeoLoad: CPU, Memory, Network, Battery. |
+|	[CapturePerformanceValue](#captureperformancevalue) | Sends performance value to NeoLoad. |
+|	[CreateClient](#createclient) | Connects to NeoLoad. |
+|	[EndTransaction](#endtransaction) | Marks end of a transaction and sends performance metrics to NeoLoad. |
+|	[GetNetworkInterfaceNames](#getnetworkinterfacenames) | Gets names of network interfaces. |
+|	[SetBaseContainer](#setbasecontainer) | Sets current step (Init, Actions, End) during test conversion |
+|	[SetContainer](#setcontainer) | Sets current container/business transaction during test conversion |
+|	[StartTransaction](#starttransaction) | Marks start of a transaction. |
 
 
 
@@ -41,9 +41,13 @@ Global object. Use it to perform actions not related to a particular object. You
 ### Action Detail
 		
 <a name="CaptureBrowserPerformance"></a>    
-#### CaptureBrowserPerformance(url)
+#### CaptureBrowserPerformance
 
 Captures duration of loading a page and resources.
+
+```javascript
+CaptureBrowserPerformance(url) 
+```
 
 
 **Parameters:**
@@ -59,9 +63,13 @@ Captures duration of loading a page and resources.
 <a name="see.also.neoload.capturebrowserperformance"></a>
 
 <a name="CaptureHostPerformance"></a>    
-#### CaptureHostPerformance()
+#### CaptureHostPerformance
 
 Sends host performance metrics to NeoLoad: CPU, Memory, Network, Battery.
+
+```javascript
+CaptureHostPerformance() 
+```
 
 
 
@@ -70,9 +78,13 @@ Sends host performance metrics to NeoLoad: CPU, Memory, Network, Battery.
 <a name="see.also.neoload.capturehostperformance"></a>
 
 <a name="CapturePerformanceValue"></a>    
-#### CapturePerformanceValue(entry, path, units, value)
+#### CapturePerformanceValue
 
 Sends performance value to NeoLoad.
+
+```javascript
+CapturePerformanceValue(entry, path, units, value) 
+```
 
 
 **Parameters:**
@@ -91,9 +103,13 @@ Sends performance value to NeoLoad.
 <a name="see.also.neoload.captureperformancevalue"></a>
 
 <a name="CreateClient"></a>    
-#### CreateClient(hardware, location, networkInterface)
+#### CreateClient
 
 Connects to NeoLoad.
+
+```javascript
+CreateClient(hardware, location, networkInterface) 
+```
 
 
 **Parameters:**
@@ -111,9 +127,13 @@ Connects to NeoLoad.
 <a name="see.also.neoload.createclient"></a>
 
 <a name="EndTransaction"></a>    
-#### EndTransaction(name)
+#### EndTransaction
 
 Marks end of a transaction and sends performance metrics to NeoLoad.
+
+```javascript
+EndTransaction(name) 
+```
 
 
 **Parameters:**
@@ -129,9 +149,13 @@ Marks end of a transaction and sends performance metrics to NeoLoad.
 <a name="see.also.neoload.endtransaction"></a>
 
 <a name="GetNetworkInterfaceNames"></a>    
-#### GetNetworkInterfaceNames()
+#### GetNetworkInterfaceNames
 
 Gets names of network interfaces. Use one of them to CreateClient.
+
+```javascript
+GetNetworkInterfaceNames() 
+```
 
 
 
@@ -140,9 +164,13 @@ Gets names of network interfaces. Use one of them to CreateClient.
 <a name="see.also.neoload.getnetworkinterfacenames"></a>
 
 <a name="SetBaseContainer"></a>    
-#### SetBaseContainer(name)
+#### SetBaseContainer
 
 Sets current step (Init, Actions, End) during test conversion
+
+```javascript
+SetBaseContainer(name) 
+```
 
 
 **Parameters:**
@@ -158,9 +186,13 @@ Sets current step (Init, Actions, End) during test conversion
 <a name="see.also.neoload.setbasecontainer"></a>
 
 <a name="SetContainer"></a>    
-#### SetContainer(name)
+#### SetContainer
 
 Sets current container/business transaction during test conversion
+
+```javascript
+SetContainer(name) 
+```
 
 
 **Parameters:**
@@ -176,9 +208,13 @@ Sets current container/business transaction during test conversion
 <a name="see.also.neoload.setcontainer"></a>
 
 <a name="StartTransaction"></a>    
-#### StartTransaction(name)
+#### StartTransaction
 
 Marks start of a transaction.
+
+```javascript
+StartTransaction(name) 
+```
 
 
 **Parameters:**

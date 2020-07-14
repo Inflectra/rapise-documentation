@@ -20,21 +20,21 @@ File object. Use it to perform actions not related to a particular object. You d
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Append](#Append) | Appends text to a file. |
-|	[CreateFolder](#CreateFolder) | Creates a folder. |
-|	[Delete](#Delete) | Deletes a file. |
-|	[DeleteFolder](#DeleteFolder) | Deletes a folder. |
-|	[Exists](#Exists) | Checks if file exists or not. |
-|	[Find](#Find) | <p>Find files in folder using wildcard pattern (including * and ?). |
-|	[FolderExists](#FolderExists) | Checks if folder exists. |
-|	[FolderInfo](#FolderInfo) | Gets information about a folder. |
-|	[Include](#Include) | Includes code from a file. |
-|	[IncludeOnce](#IncludeOnce) | Includes code from a file if it was not included earlier. |
-|	[Info](#Info) | Gets information about a file. |
-|	[Read](#Read) | Reads text file. |
-|	[ResolvePath](#ResolvePath) | Finds the file in test folders and calculates its absolute path. |
-|	[Touch](#Touch) | Sets file modification time to current time. |
-|	[Write](#Write) | Writes text file. |
+|	[Append](#append) | Appends text to a file. |
+|	[CreateFolder](#createfolder) | Creates a folder. |
+|	[Delete](#delete) | Deletes a file. |
+|	[DeleteFolder](#deletefolder) | Deletes a folder. |
+|	[Exists](#exists) | Checks if file exists or not. |
+|	[Find](#find) | <p>Find files in folder using wildcard pattern (including * and ?). |
+|	[FolderExists](#folderexists) | Checks if folder exists. |
+|	[FolderInfo](#folderinfo) | Gets information about a folder. |
+|	[Include](#include) | Includes code from a file. |
+|	[IncludeOnce](#includeonce) | Includes code from a file if it was not included earlier. |
+|	[Info](#info) | Gets information about a file. |
+|	[Read](#read) | Reads UTF-8 encoded text file. |
+|	[ResolvePath](#resolvepath) | Finds the file in test folders and calculates its absolute path. |
+|	[Touch](#touch) | Sets file modification time to current time. |
+|	[Write](#write) | Writes text file. |
 
 
 
@@ -47,9 +47,13 @@ File object. Use it to perform actions not related to a particular object. You d
 ### Action Detail
 		
 <a name="Append"></a>    
-#### Append(fileName, text)
+#### Append
 
 Appends text to a file.
+
+```javascript
+Append(fileName, text) 
+```
 
 
 **Parameters:**
@@ -66,9 +70,13 @@ Appends text to a file.
 <a name="see.also.file.append"></a>
 
 <a name="CreateFolder"></a>    
-#### CreateFolder(folderPath)
+#### CreateFolder
 
 Creates a folder.
+
+```javascript
+CreateFolder(folderPath) 
+```
 
 
 **Parameters:**
@@ -84,9 +92,13 @@ Creates a folder.
 <a name="see.also.file.createfolder"></a>
 
 <a name="Delete"></a>    
-#### Delete(fileName)
+#### Delete
 
 Deletes a file.
+
+```javascript
+Delete(fileName) 
+```
 
 
 **Parameters:**
@@ -102,9 +114,13 @@ Deletes a file.
 <a name="see.also.file.delete"></a>
 
 <a name="DeleteFolder"></a>    
-#### DeleteFolder(folderPath)
+#### DeleteFolder
 
 Deletes a folder.
+
+```javascript
+DeleteFolder(folderPath) 
+```
 
 
 **Parameters:**
@@ -120,9 +136,13 @@ Deletes a folder.
 <a name="see.also.file.deletefolder"></a>
 
 <a name="Exists"></a>    
-#### Exists(fileName)
+#### Exists
 
 Checks if file exists or not.
+
+```javascript
+Exists(fileName) 
+```
 
 
 **Parameters:**
@@ -143,7 +163,7 @@ true if file exists, false otherwise.
 <a name="see.also.file.exists"></a>
 
 <a name="Find"></a>    
-#### Find(path, searchPattern=*, recursive, firstOnly, files, folders)
+#### Find
 
 <p>Find files in folder using wildcard pattern (including * and ?).</p>
 <pre>
@@ -156,6 +176,10 @@ I.e. File.Find("c:/Temp", "*.txt", true) may return
 Result may be converted to array like that:
 var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 </pre>
+
+```javascript
+Find(path, searchPattern=*, recursive, firstOnly, files, folders) 
+```
 
 
 **Parameters:**
@@ -181,9 +205,13 @@ string: \n-separated string where each line is a path to the found item.
 <a name="see.also.file.find"></a>
 
 <a name="FolderExists"></a>    
-#### FolderExists(folderPath)
+#### FolderExists
 
 Checks if folder exists.
+
+```javascript
+FolderExists(folderPath) 
+```
 
 
 **Parameters:**
@@ -204,9 +232,13 @@ true if folder exists, false - otherwise.
 <a name="see.also.file.folderexists"></a>
 
 <a name="FolderInfo"></a>    
-#### FolderInfo(folderPath)
+#### FolderInfo
 
 Gets information about a folder.
+
+```javascript
+FolderInfo(folderPath) 
+```
 
 
 **Parameters:**
@@ -227,9 +259,13 @@ Folder object as described here <a displaytype="text" defaultstyle="true" type="
 <a name="see.also.file.folderinfo"></a>
 
 <a name="Include"></a>    
-#### Include(fileName)
+#### Include
 
 Includes code from a file.Normally used together with eval statement, i.e.:eval( File.Include('myfile.js') )
+
+```javascript
+Include(fileName) 
+```
 
 
 **Parameters:**
@@ -250,9 +286,13 @@ Contents of the source file for evaluation.
 <a name="see.also.file.include"></a>
 
 <a name="IncludeOnce"></a>    
-#### IncludeOnce(fileName)
+#### IncludeOnce
 
 Includes code from a file if it was not included earlier.Normally used together with eval statement, i.e.:eval( File.IncludeOnce('myfile.js') )
+
+```javascript
+IncludeOnce(fileName) 
+```
 
 
 **Parameters:**
@@ -273,9 +313,13 @@ Contents of the source file for evaluation.
 <a name="see.also.file.includeonce"></a>
 
 <a name="Info"></a>    
-#### Info(fileName)
+#### Info
 
 Gets information about a file.
+
+```javascript
+Info(fileName) 
+```
 
 
 **Parameters:**
@@ -296,9 +340,13 @@ File object as described here <a displaytype="text" defaultstyle="true" type="we
 <a name="see.also.file.info"></a>
 
 <a name="Read"></a>    
-#### Read(fileName)
+#### Read
 
-Reads text file.
+Reads UTF-8 encoded text file.
+
+```javascript
+Read(fileName) 
+```
 
 
 **Parameters:**
@@ -319,9 +367,13 @@ Contents of the text file as string.
 <a name="see.also.file.read"></a>
 
 <a name="ResolvePath"></a>    
-#### ResolvePath(fileName)
+#### ResolvePath
 
 Finds the file in test folders and calculates its absolute path.
+
+```javascript
+ResolvePath(fileName) 
+```
 
 
 **Parameters:**
@@ -342,9 +394,13 @@ Absolute path of the file.
 <a name="see.also.file.resolvepath"></a>
 
 <a name="Touch"></a>    
-#### Touch(fileName)
+#### Touch
 
 Sets file modification time to current time.
+
+```javascript
+Touch(fileName) 
+```
 
 
 **Parameters:**
@@ -360,9 +416,13 @@ Sets file modification time to current time.
 <a name="see.also.file.touch"></a>
 
 <a name="Write"></a>    
-#### Write(fileName, text)
+#### Write
 
 Writes text file.
+
+```javascript
+Write(fileName, text) 
+```
 
 
 **Parameters:**

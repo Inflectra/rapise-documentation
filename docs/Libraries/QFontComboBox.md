@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Value](#Value) | Gets the value of the selected item. | GetValue |  |
+| [Value](#value) | Gets the value of the selected item. | GetValue |  |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
@@ -67,9 +67,13 @@ Accessors: GetValue
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(itemName)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(itemName) 
+```
 
 
 **Parameters:**

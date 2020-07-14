@@ -23,11 +23,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Checked](#Checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked | SetChecked |
-| [ChildrenCount](#ChildrenCount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount | SetChildrenCount |
-| [Expanded](#Expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded | SetExpanded |
-| [NodeText](#NodeText) | Text of the selected node or a node specified by the input parameters. | GetNodeText | SetNodeText |
-| [Selected](#Selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected | SetSelected |
+| [Checked](#checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked | SetChecked |
+| [ChildrenCount](#childrencount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount | SetChildrenCount |
+| [Expanded](#expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded | SetExpanded |
+| [NodeText](#nodetext) | Text of the selected node or a node specified by the input parameters. | GetNodeText | SetNodeText |
+| [Selected](#selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected | SetSelected |
 
 
 
@@ -40,9 +40,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCollapse](#DoCollapse) | Collapses specific node in the tree. |
-|	[DoExpand](#DoExpand) | Expands a specific node in the tree. |
-|	[DoSelectItem](#DoSelectItem) | Selects specified item in the tree. |
+|	[DoCollapse](#docollapse) | Collapses specific node in the tree. |
+|	[DoExpand](#doexpand) | Expands a specific node in the tree. |
+|	[DoSelectItem](#doselectitem) | Selects specified item in the tree. |
 
 
 
@@ -160,9 +160,13 @@ Accessors: GetSelected, SetSelected
 ### Action Detail
 		
 <a name="DoCollapse"></a>    
-#### DoCollapse(path, separator, pathType)
+#### DoCollapse
 
 Collapses specific node in the tree.
+
+```javascript
+DoCollapse(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -185,9 +189,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.swttree.docollapse"></a>
 
 <a name="DoExpand"></a>    
-#### DoExpand(node)
+#### DoExpand
 
 Expands a specific node in the tree.
+
+```javascript
+DoExpand(node) 
+```
 
 
 **Parameters:**
@@ -208,9 +216,13 @@ boolean: 'true' if successful, 'false' otherwise.
 <a name="see.also.swttree.doexpand"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(value)
+#### DoSelectItem
 
 Selects specified item in the tree.
+
+```javascript
+DoSelectItem(value) 
+```
 
 
 **Parameters:**

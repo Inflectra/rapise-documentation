@@ -20,9 +20,9 @@ This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.F
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[GetCapability](#GetCapability) | Gets a capability of the browser. |
-|	[HasCapability](#HasCapability) | Gets a value indicating whether the browser has a given capability. |
-|	[SetCapability](#SetCapability) | Sets a capability of the browser. |
+|	[GetCapability](#getcapability) | Gets a capability of the browser. |
+|	[HasCapability](#hascapability) | Gets a value indicating whether the browser has a given capability. |
+|	[SetCapability](#setcapability) | Sets a capability of the browser. |
 
 
 
@@ -35,9 +35,13 @@ This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.F
 ### Action Detail
 		
 <a name="GetCapability"></a>    
-#### GetCapability(capability)
+#### GetCapability
 
 Gets a capability of the browser.
+
+```javascript
+GetCapability(capability) 
+```
 
 
 **Parameters:**
@@ -58,9 +62,13 @@ capability value.
 <a name="see.also.capabilities.getcapability"></a>
 
 <a name="HasCapability"></a>    
-#### HasCapability(capability)
+#### HasCapability
 
 Gets a value indicating whether the browser has a given capability.
+
+```javascript
+HasCapability(capability) 
+```
 
 
 **Parameters:**
@@ -81,9 +89,13 @@ Gets a value indicating whether the browser has a given capability.
 <a name="see.also.capabilities.hascapability"></a>
 
 <a name="SetCapability"></a>    
-#### SetCapability(capability, capabilityValue)
+#### SetCapability
 
 Sets a capability of the browser.
+
+```javascript
+SetCapability(capability, capabilityValue) 
+```
 
 
 **Parameters:**

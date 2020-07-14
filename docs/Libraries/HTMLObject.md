@@ -21,29 +21,29 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Alt](#Alt) | Alt of the element. | GetAlt |  |
-| [Checked](#Checked) | 'Checked' state of the element. | GetChecked |  |
-| [Class](#Class) | Class of the element. | GetClass |  |
-| [ClientX](#ClientX) | X-coordinate of the top left corner of the element relative to browser window. | GetClientX |  |
-| [ClientY](#ClientY) | Y-coordinate of the top left corner of the element relative to browser window. | GetClientY |  |
-| [Enabled](#Enabled) | 'Enabled' state of the element. | GetEnabled | SetEnabled |
-| [Height](#Height) | Height of the element. | GetHeight |  |
-| [Href](#Href) | HREF of the element. | GetHref |  |
-| [Id](#Id) | ID of the element. | GetId |  |
-| [InnerText](#InnerText) | Inner text of the element. | GetInnerText |  |
-| [Label](#Label) | Label of the element. | GetLabel |  |
-| [Name](#Name) | Name of the element. | GetName |  |
-| [NodeText](#NodeText) | Text of the element without children. | GetNodeText |  |
-| [PageTitle](#PageTitle) | Title of the HTML document. | GetPageTitle |  |
-| [PageURL](#PageURL) | Location URL of the HTML document. | GetPageURL |  |
-| [Style](#Style) | Style of the element. | GetStyle |  |
-| [Tag](#Tag) | Tag of the element. | GetTag |  |
-| [Text](#Text) | Text of the element with normalized spaces. | GetText |  |
-| [Title](#Title) | Title of the element. | GetTitle |  |
-| [Value](#Value) | Value of the element. | GetValue |  |
-| [X](#X) | X-coordinate of the top left corner of the element. | GetX |  |
-| [XPath](#XPath) | XPath of the element. | GetXPath |  |
-| [Y](#Y) | Y-coordinate of the top left corner of the element. | GetY |  |
+| [Alt](#alt) | Alt of the element. | GetAlt |  |
+| [Checked](#checked) | 'Checked' state of the element. | GetChecked |  |
+| [Class](#class) | Class of the element. | GetClass |  |
+| [ClientX](#clientx) | X-coordinate of the top left corner of the element relative to browser window. | GetClientX |  |
+| [ClientY](#clienty) | Y-coordinate of the top left corner of the element relative to browser window. | GetClientY |  |
+| [Enabled](#enabled) | 'Enabled' state of the element. | GetEnabled | SetEnabled |
+| [Height](#height) | Height of the element. | GetHeight |  |
+| [Href](#href) | HREF of the element. | GetHref |  |
+| [Id](#id) | ID of the element. | GetId |  |
+| [InnerText](#innertext) | Inner text of the element. | GetInnerText |  |
+| [Label](#label) | Label of the element. | GetLabel |  |
+| [Name](#name) | Name of the element. | GetName |  |
+| [NodeText](#nodetext) | Text of the element without children. | GetNodeText |  |
+| [PageTitle](#pagetitle) | Title of the HTML document. | GetPageTitle |  |
+| [PageURL](#pageurl) | Location URL of the HTML document. | GetPageURL |  |
+| [Style](#style) | Style of the element. | GetStyle |  |
+| [Tag](#tag) | Tag of the element. | GetTag |  |
+| [Text](#text) | Text of the element with normalized spaces. | GetText |  |
+| [Title](#title) | Title of the element. | GetTitle |  |
+| [Value](#value) | Value of the element. | GetValue |  |
+| [X](#x) | X-coordinate of the top left corner of the element. | GetX |  |
+| [XPath](#xpath) | XPath of the element. | GetXPath |  |
+| [Y](#y) | Y-coordinate of the top left corner of the element. | GetY |  |
 
 
 
@@ -56,29 +56,29 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAddSelection](#DoAddSelection) | Adds selection of specified option in multi-select element. |
-|	[DoClick](#DoClick) | Clicks on HTML element (button, link). |
-|	[DoDblClick](#DoDblClick) | Double-Clicks on HTML element (button, link). |
-|	[DoDOMChildAt](#DoDOMChildAt) | Returns n-th child (zero-based). |
-|	[DoDOMChildrenCount](#DoDOMChildrenCount) | Returns number of children elements for this one. |
-|	[DoDOMConvert](#DoDOMConvert) | Creates a clone of this object converted to a requested type. |
-|	[DoDOMFindParentWithAttribute](#DoDOMFindParentWithAttribute) | Returns parent element (if any) with given attribute matching given string or 'regex:. |
-|	[DoDOMGetAttribute](#DoDOMGetAttribute) | Returns specified attribute. |
-|	[DoDOMGetAttributes](#DoDOMGetAttributes) | Returns all attributes of a node. |
-|	[DoDOMNextSibling](#DoDOMNextSibling) | Returns next sibling element for this one. |
-|	[DoDOMParent](#DoDOMParent) | Returns parent element having this element. |
-|	[DoDOMPrevSibling](#DoDOMPrevSibling) | Return previous sibling element for this one. |
-|	[DoDOMQueryCss](#DoDOMQueryCss) | Gets array of elements matching CSS selector on this object. |
-|	[DoDOMQueryValue](#DoDOMQueryValue) | Executes an xpath query that may return a value of string, number or boolean type. |
-|	[DoDOMQueryXPath](#DoDOMQueryXPath) | Gets array of elements matching XPath query on this object. |
-|	[DoDOMRoot](#DoDOMRoot) | Returns Root element having this element. |
-|	[DoEnsureVisible](#DoEnsureVisible) | Makes sure specified element is visible on the screen. |
-|	[DoGetRect](#DoGetRect) | Finds screen rectangle for this object. |
-|	[DoGetSelection](#DoGetSelection) | Gets selected options text of a SELECT element. |
-|	[DoMouseMove](#DoMouseMove) | Moves mouse on HTML element with offset. |
-|	[DoSelect](#DoSelect) | Selects specified element in &lt;select&gt; control. |
-|	[DoSetCheck](#DoSetCheck) | Sets specified state of check box. |
-|	[DoSetText](#DoSetText) | Sets text for input edit or textarea. |
+|	[DoAddSelection](#doaddselection) | Adds selection of specified option in multi-select element. |
+|	[DoClick](#doclick) | Clicks on HTML element (button, link). |
+|	[DoDblClick](#dodblclick) | Double-Clicks on HTML element (button, link). |
+|	[DoDOMChildAt](#dodomchildat) | Returns n-th child (zero-based). |
+|	[DoDOMChildrenCount](#dodomchildrencount) | Returns number of children elements for this one. |
+|	[DoDOMConvert](#dodomconvert) | Creates a clone of this object converted to a requested type. |
+|	[DoDOMFindParentWithAttribute](#dodomfindparentwithattribute) | Returns parent element (if any) with given attribute matching given string or 'regex:. |
+|	[DoDOMGetAttribute](#dodomgetattribute) | Returns specified attribute. |
+|	[DoDOMGetAttributes](#dodomgetattributes) | Returns all attributes of a node. |
+|	[DoDOMNextSibling](#dodomnextsibling) | Returns next sibling element for this one. |
+|	[DoDOMParent](#dodomparent) | Returns parent element having this element. |
+|	[DoDOMPrevSibling](#dodomprevsibling) | Return previous sibling element for this one. |
+|	[DoDOMQueryCss](#dodomquerycss) | Gets array of elements matching CSS selector on this object. |
+|	[DoDOMQueryValue](#dodomqueryvalue) | Executes an xpath query that may return a value of string, number or boolean type. |
+|	[DoDOMQueryXPath](#dodomqueryxpath) | Gets array of elements matching XPath query on this object. |
+|	[DoDOMRoot](#dodomroot) | Returns Root element having this element. |
+|	[DoEnsureVisible](#doensurevisible) | Makes sure specified element is visible on the screen. |
+|	[DoGetRect](#dogetrect) | Finds screen rectangle for this object. |
+|	[DoGetSelection](#dogetselection) | Gets selected options text of a SELECT element. |
+|	[DoMouseMove](#domousemove) | Moves mouse on HTML element with offset. |
+|	[DoSelect](#doselect) | Selects specified element in &lt;select&gt; control. |
+|	[DoSetCheck](#dosetcheck) | Sets specified state of check box. |
+|	[DoSetText](#dosettext) | Sets text for input edit or textarea. |
 
 
 
@@ -439,9 +439,13 @@ Accessors: GetY
 ### Action Detail
 		
 <a name="DoAddSelection"></a>    
-#### DoAddSelection(optionText)
+#### DoAddSelection
 
 Adds selection of specified option in multi-select element.
+
+```javascript
+DoAddSelection(optionText) 
+```
 
 
 **Parameters:**
@@ -462,9 +466,13 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="see.also.htmlobject.doaddselection"></a>
 
 <a name="DoClick"></a>    
-#### DoClick(x, y, forceEvent)
+#### DoClick
 
 Clicks on HTML element (button, link).
+
+```javascript
+DoClick(x, y, forceEvent) 
+```
 
 
 **Parameters:**
@@ -487,9 +495,13 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="see.also.htmlobject.doclick"></a>
 
 <a name="DoDblClick"></a>    
-#### DoDblClick()
+#### DoDblClick
 
 Double-Clicks on HTML element (button, link).
+
+```javascript
+DoDblClick() 
+```
 
 
 
@@ -503,9 +515,13 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="see.also.htmlobject.dodblclick"></a>
 
 <a name="DoDOMChildAt"></a>    
-#### DoDOMChildAt(n)
+#### DoDOMChildAt
 
 Returns n-th child (zero-based).
+
+```javascript
+DoDOMChildAt(n) 
+```
 
 
 **Parameters:**
@@ -526,9 +542,13 @@ Returns n-th child (zero-based).
 <a name="see.also.htmlobject.dodomchildat"></a>
 
 <a name="DoDOMChildrenCount"></a>    
-#### DoDOMChildrenCount()
+#### DoDOMChildrenCount
 
 Returns number of children elements for this one.
+
+```javascript
+DoDOMChildrenCount() 
+```
 
 
 
@@ -542,9 +562,13 @@ number: Number of children elements.
 <a name="see.also.htmlobject.dodomchildrencount"></a>
 
 <a name="DoDOMConvert"></a>    
-#### DoDOMConvert(type)
+#### DoDOMConvert
 
 Creates a clone of this object converted to a requested type.
+
+```javascript
+DoDOMConvert(type) 
+```
 
 
 **Parameters:**
@@ -565,9 +589,13 @@ Creates a clone of this object converted to a requested type.
 <a name="see.also.htmlobject.dodomconvert"></a>
 
 <a name="DoDOMFindParentWithAttribute"></a>    
-#### DoDOMFindParentWithAttribute(attrName, match)
+#### DoDOMFindParentWithAttribute
 
 Returns parent element (if any) with given attribute matching given string or 'regex:...' expression.
+
+```javascript
+DoDOMFindParentWithAttribute(attrName, match) 
+```
 
 
 **Parameters:**
@@ -589,9 +617,13 @@ Returns parent element (if any) with given attribute matching given string or 'r
 <a name="see.also.htmlobject.dodomfindparentwithattribute"></a>
 
 <a name="DoDOMGetAttribute"></a>    
-#### DoDOMGetAttribute(attrName)
+#### DoDOMGetAttribute
 
 Returns specified attribute.
+
+```javascript
+DoDOMGetAttribute(attrName) 
+```
 
 
 **Parameters:**
@@ -612,9 +644,13 @@ object: Attribute value.
 <a name="see.also.htmlobject.dodomgetattribute"></a>
 
 <a name="DoDOMGetAttributes"></a>    
-#### DoDOMGetAttributes()
+#### DoDOMGetAttributes
 
 Returns all attributes of a node.
+
+```javascript
+DoDOMGetAttributes() 
+```
 
 
 
@@ -628,9 +664,13 @@ array: Array of attributes.
 <a name="see.also.htmlobject.dodomgetattributes"></a>
 
 <a name="DoDOMNextSibling"></a>    
-#### DoDOMNextSibling()
+#### DoDOMNextSibling
 
 Returns next sibling element for this one.
+
+```javascript
+DoDOMNextSibling() 
+```
 
 
 
@@ -644,9 +684,13 @@ Returns next sibling element for this one.
 <a name="see.also.htmlobject.dodomnextsibling"></a>
 
 <a name="DoDOMParent"></a>    
-#### DoDOMParent()
+#### DoDOMParent
 
 Returns parent element having this element.
+
+```javascript
+DoDOMParent() 
+```
 
 
 
@@ -660,9 +704,13 @@ Returns parent element having this element.
 <a name="see.also.htmlobject.dodomparent"></a>
 
 <a name="DoDOMPrevSibling"></a>    
-#### DoDOMPrevSibling()
+#### DoDOMPrevSibling
 
 Return previous sibling element for this one.
+
+```javascript
+DoDOMPrevSibling() 
+```
 
 
 
@@ -676,9 +724,13 @@ Return previous sibling element for this one.
 <a name="see.also.htmlobject.dodomprevsibling"></a>
 
 <a name="DoDOMQueryCss"></a>    
-#### DoDOMQueryCss(css)
+#### DoDOMQueryCss
 
 Gets array of elements matching CSS selector on this object.
+
+```javascript
+DoDOMQueryCss(css) 
+```
 
 
 **Parameters:**
@@ -699,9 +751,13 @@ array: Array of matched elements.
 <a name="see.also.htmlobject.dodomquerycss"></a>
 
 <a name="DoDOMQueryValue"></a>    
-#### DoDOMQueryValue(xpath)
+#### DoDOMQueryValue
 
 Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then `null` is returned. Requires Rapise 6.4+
+
+```javascript
+DoDOMQueryValue(xpath) 
+```
 
 
 **Parameters:**
@@ -722,9 +778,13 @@ string | <br>number | <br>boolean: Result of the query or null if the query is i
 <a name="see.also.htmlobject.dodomqueryvalue"></a>
 
 <a name="DoDOMQueryXPath"></a>    
-#### DoDOMQueryXPath(xpath)
+#### DoDOMQueryXPath
 
 Gets array of elements matching XPath query on this object.
+
+```javascript
+DoDOMQueryXPath(xpath) 
+```
 
 
 **Parameters:**
@@ -745,9 +805,13 @@ array: Array of matched elements.
 <a name="see.also.htmlobject.dodomqueryxpath"></a>
 
 <a name="DoDOMRoot"></a>    
-#### DoDOMRoot()
+#### DoDOMRoot
 
 Returns Root element having this element.
+
+```javascript
+DoDOMRoot() 
+```
 
 
 
@@ -761,9 +825,13 @@ Returns Root element having this element.
 <a name="see.also.htmlobject.dodomroot"></a>
 
 <a name="DoEnsureVisible"></a>    
-#### DoEnsureVisible(vAlign, hAlign)
+#### DoEnsureVisible
 
 Makes sure specified element is visible on the screen.
+
+```javascript
+DoEnsureVisible(vAlign, hAlign) 
+```
 
 
 **Parameters:**
@@ -785,9 +853,13 @@ object: Rectangle of the element if it became visible, 'null' otherwise.
 <a name="see.also.htmlobject.doensurevisible"></a>
 
 <a name="DoGetRect"></a>    
-#### DoGetRect()
+#### DoGetRect
 
 Finds screen rectangle for this object.
+
+```javascript
+DoGetRect() 
+```
 
 
 
@@ -801,9 +873,13 @@ object: object {x, y, w, h}
 <a name="see.also.htmlobject.dogetrect"></a>
 
 <a name="DoGetSelection"></a>    
-#### DoGetSelection(delim)
+#### DoGetSelection
 
 Gets selected options text of a SELECT element. Example: 'Option1,Option2'.
+
+```javascript
+DoGetSelection(delim) 
+```
 
 
 **Parameters:**
@@ -824,9 +900,13 @@ boolean: String with option values separated by delim.
 <a name="see.also.htmlobject.dogetselection"></a>
 
 <a name="DoMouseMove"></a>    
-#### DoMouseMove(x, y)
+#### DoMouseMove
 
 Moves mouse on HTML element with offset.
+
+```javascript
+DoMouseMove(x, y) 
+```
 
 
 **Parameters:**
@@ -848,9 +928,13 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="see.also.htmlobject.domousemove"></a>
 
 <a name="DoSelect"></a>    
-#### DoSelect(txt)
+#### DoSelect
 
 Selects specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.
+
+```javascript
+DoSelect(txt) 
+```
 
 
 **Parameters:**
@@ -871,9 +955,13 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="see.also.htmlobject.doselect"></a>
 
 <a name="DoSetCheck"></a>    
-#### DoSetCheck(bcheck)
+#### DoSetCheck
 
 Sets specified state of check box.
+
+```javascript
+DoSetCheck(bcheck) 
+```
 
 
 **Parameters:**
@@ -894,9 +982,13 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="see.also.htmlobject.dosetcheck"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(txt)
+#### DoSetText
 
 Sets text for input edit or textarea.
+
+```javascript
+DoSetText(txt) 
+```
 
 
 **Parameters:**

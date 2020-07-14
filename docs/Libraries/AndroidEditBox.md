@@ -19,7 +19,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -32,7 +32,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -63,9 +63,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSetText"></a>    
-#### DoSetText(value)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(value) 
+```
 
 
 **Parameters:**

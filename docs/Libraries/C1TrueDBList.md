@@ -21,19 +21,19 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the table. | GetColumnCount |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [ItemIndexByName](#ItemIndexByName) | Returns item index by its name. | GetItemIndexByName |  |
-| [ItemNameByIndex](#ItemNameByIndex) | Returns item name by its index. | GetItemNameByIndex |  |
-| [RowCount](#RowCount) | Number of rows in the table. | GetRowCount |  |
-| [SelectedColumnCount](#SelectedColumnCount) | Number of selected columns. | GetSelectedColumnCount |  |
-| [SelectedColumns](#SelectedColumns) | Returns string of indexes delimited by separator or array of indexes of selected columns. | GetSelectedColumns |  |
-| [SelectedIndices](#SelectedIndices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetSelectedIndices |  |
-| [SelectedItems](#SelectedItems) | Text of all the selected items in a single string. | GetSelectedItems |  |
-| [SelectionCount](#SelectionCount) | Number of selected items. | GetSelectionCount |  |
-| [Text](#Text) | Text of the currently focused cell. | GetText |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [ColumnCount](#columncount) | Number of columns in the table. | GetColumnCount |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
+| [ItemNameByIndex](#itemnamebyindex) | Returns item name by its index. | GetItemNameByIndex |  |
+| [RowCount](#rowcount) | Number of rows in the table. | GetRowCount |  |
+| [SelectedColumnCount](#selectedcolumncount) | Number of selected columns. | GetSelectedColumnCount |  |
+| [SelectedColumns](#selectedcolumns) | Returns string of indexes delimited by separator or array of indexes of selected columns. | GetSelectedColumns |  |
+| [SelectedIndices](#selectedindices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetSelectedIndices |  |
+| [SelectedItems](#selecteditems) | Text of all the selected items in a single string. | GetSelectedItems |  |
+| [SelectionCount](#selectioncount) | Number of selected items. | GetSelectionCount |  |
+| [Text](#text) | Text of the currently focused cell. | GetText |  |
 
 
 
@@ -46,12 +46,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAddSelection](#DoAddSelection) | Extends selection. |
-|	[DoClearSelection](#DoClearSelection) | Clears selection. |
-|	[DoClickItem](#DoClickItem) | Clicks the specified cell |
-|	[DoFullText](#DoFullText) | Read and return full text contents of the table |
-|	[DoRemoveSelection](#DoRemoveSelection) | Removes selection from specified items. |
-|	[DoSelectItem](#DoSelectItem) | Selects items of this object. |
+|	[DoAddSelection](#doaddselection) | Extends selection. |
+|	[DoClearSelection](#doclearselection) | Clears selection. |
+|	[DoClickItem](#doclickitem) | Clicks the specified cell |
+|	[DoFullText](#dofulltext) | Read and return full text contents of the table |
+|	[DoRemoveSelection](#doremoveselection) | Removes selection from specified items. |
+|	[DoSelectItem](#doselectitem) | Selects items of this object. |
 
 
 
@@ -308,16 +308,20 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoAddSelection"></a>    
-#### DoAddSelection(items, separator, itemsType)
+#### DoAddSelection
 
 Extends selection.
+
+```javascript
+DoAddSelection(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -333,9 +337,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.c1truedblist.doaddselection"></a>
 
 <a name="DoClearSelection"></a>    
-#### DoClearSelection()
+#### DoClearSelection
 
 Clears selection.
+
+```javascript
+DoClearSelection() 
+```
 
 
 
@@ -349,9 +357,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.c1truedblist.doclearselection"></a>
 
 <a name="DoClickItem"></a>    
-#### DoClickItem(row, col, clickType, xOffset, yOffset)
+#### DoClickItem
 
 Clicks the specified cell
+
+```javascript
+DoClickItem(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -361,8 +373,8 @@ Clicks the specified cell
 | row | number |	Zero-based index if the row. |
 | col | number |	Zero-based index of the column. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -376,9 +388,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.c1truedblist.doclickitem"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText()
+#### DoFullText
 
 Read and return full text contents of the table
+
+```javascript
+DoFullText() 
+```
 
 
 
@@ -392,16 +408,20 @@ string | <br>boolean: Full text of the table (may be very long!), 'false' otherw
 <a name="see.also.c1truedblist.dofulltext"></a>
 
 <a name="DoRemoveSelection"></a>    
-#### DoRemoveSelection(items, separator, itemsType)
+#### DoRemoveSelection
 
 Removes selection from specified items.
+
+```javascript
+DoRemoveSelection(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -417,16 +437,20 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.c1truedblist.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(items, separator, itemsType)
+#### DoSelectItem
 
 Selects items of this object. First it clears existing selection.
+
+```javascript
+DoSelectItem(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 

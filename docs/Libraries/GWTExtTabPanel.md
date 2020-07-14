@@ -23,9 +23,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemsCount](#ItemsCount) | Number of tabs in the panel | GetItemsCount |  |
-| [SelectedIndex](#SelectedIndex) | Index of the selected tab | GetSelectedIndex |  |
-| [SelectedTab](#SelectedTab) | Text of the selected tab | GetSelectedTab |  |
+| [ItemsCount](#itemscount) | Number of tabs in the panel | GetItemsCount |  |
+| [SelectedIndex](#selectedindex) | Index of the selected tab | GetSelectedIndex |  |
+| [SelectedTab](#selectedtab) | Text of the selected tab | GetSelectedTab |  |
 
 
 
@@ -38,7 +38,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#DoSelectTab) | Selects the tab by name. |
+|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
@@ -99,9 +99,13 @@ Accessors: GetSelectedTab
 ### Action Detail
 		
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(name, x, y, forceEvent)
+#### DoSelectTab
 
 Selects the tab by name.
+
+```javascript
+DoSelectTab(name, x, y, forceEvent) 
+```
 
 
 **Parameters:**

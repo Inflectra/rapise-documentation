@@ -26,9 +26,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFindChild](#DoFindChild) | Searches for specific item in the menu. |
-|	[DoMenu](#DoMenu) | Performs click on the menu item. |
-|	[DoTitleMenu](#DoTitleMenu) | Clicks menu title item. |
+|	[DoFindChild](#dofindchild) | Searches for specific item in the menu. |
+|	[DoMenu](#domenu) | Performs click on the menu item. |
+|	[DoTitleMenu](#dotitlemenu) | Clicks menu title item. |
 
 
 
@@ -41,9 +41,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoFindChild"></a>    
-#### DoFindChild(path, separator, pathType)
+#### DoFindChild
 
 Searches for specific item in the menu.
+
+```javascript
+DoFindChild(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -66,9 +70,13 @@ Searches for specific item in the menu.
 <a name="see.also.yuimenu.dofindchild"></a>
 
 <a name="DoMenu"></a>    
-#### DoMenu(path, separator, pathType)
+#### DoMenu
 
 Performs click on the menu item.
+
+```javascript
+DoMenu(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -91,9 +99,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.yuimenu.domenu"></a>
 
 <a name="DoTitleMenu"></a>    
-#### DoTitleMenu(path, separator, pathType)
+#### DoTitleMenu
 
 Clicks menu title item. Only 1 menu level currently supported.
+
+```javascript
+DoTitleMenu(path, separator, pathType) 
+```
 
 
 **Parameters:**

@@ -25,9 +25,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [SelectedColor](#SelectedColor) | Selected color of the object | GetSelectedColor | SetSelectedColor |
-| [SelectedText](#SelectedText) | Text of the selected item in a single string. | GetSelectedText | SetSelectedText |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [SelectedColor](#selectedcolor) | Selected color of the object | GetSelectedColor | SetSelectedColor |
+| [SelectedText](#selectedtext) | Text of the selected item in a single string. | GetSelectedText | SetSelectedText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -40,8 +40,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectColor](#DoSelectColor) | Selects a color. |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSelectColor](#doselectcolor) | Selects a color. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -102,9 +102,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSelectColor"></a>    
-#### DoSelectColor(val)
+#### DoSelectColor
 
 Selects a color.
+
+```javascript
+DoSelectColor(val) 
+```
 
 
 **Parameters:**
@@ -125,9 +129,13 @@ boolean: 'true' if successfule, 'false' otherwise
 <a name="see.also.dxcoloredit.doselectcolor"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**

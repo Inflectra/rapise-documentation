@@ -21,7 +21,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Value](#Value) | Gets/Sets the value of the spinner | GetValue | SetValue |
+| [Value](#value) | Gets/Sets the value of the spinner | GetValue | SetValue |
 
 
 
@@ -34,9 +34,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoPageDown](#DoPageDown) | Clicks the PageDown spinner button. |
-|	[DoPageUp](#DoPageUp) | Clicks the PageUp spinner button. |
-|	[DoSetValue](#DoSetValue) | Sets the value of the spinner. |
+|	[DoPageDown](#dopagedown) | Clicks the PageDown spinner button. |
+|	[DoPageUp](#dopageup) | Clicks the PageUp spinner button. |
+|	[DoSetValue](#dosetvalue) | Sets the value of the spinner. |
 
 
 
@@ -67,9 +67,13 @@ Accessors: GetValue, SetValue
 ### Action Detail
 		
 <a name="DoPageDown"></a>    
-#### DoPageDown()
+#### DoPageDown
 
 Clicks the PageDown spinner button.
+
+```javascript
+DoPageDown() 
+```
 
 
 
@@ -83,9 +87,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.jqueryspinner.dopagedown"></a>
 
 <a name="DoPageUp"></a>    
-#### DoPageUp()
+#### DoPageUp
 
 Clicks the PageUp spinner button.
+
+```javascript
+DoPageUp() 
+```
 
 
 
@@ -99,9 +107,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.jqueryspinner.dopageup"></a>
 
 <a name="DoSetValue"></a>    
-#### DoSetValue(value)
+#### DoSetValue
 
 Sets the value of the spinner.
+
+```javascript
+DoSetValue(value) 
+```
 
 
 **Parameters:**

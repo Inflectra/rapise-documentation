@@ -28,12 +28,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Perform Click on the navigation item |
-|	[DoFullText](#DoFullText) | Returns text representation of the menu or saves it to a file. |
-|	[DoGetSubmenuCount](#DoGetSubmenuCount) | Gets the number of submenu items for a given menu path. |
-|	[DoGetSubmenuProperty](#DoGetSubmenuProperty) | Gets submenu property. |
-|	[DoGetSubmenuText](#DoGetSubmenuText) | Gets submenu text. |
-|	[DoMenu](#DoMenu) | Performs click on the menu item. |
+|	[DoClickItem](#doclickitem) | Perform Click on the navigation item |
+|	[DoFullText](#dofulltext) | Returns text representation of the menu or saves it to a file. |
+|	[DoGetSubmenuCount](#dogetsubmenucount) | Gets the number of submenu items for a given menu path. |
+|	[DoGetSubmenuProperty](#dogetsubmenuproperty) | Gets submenu property. |
+|	[DoGetSubmenuText](#dogetsubmenutext) | Gets submenu text. |
+|	[DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
@@ -46,9 +46,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(menuItemName)
+#### DoClickItem
 
 Perform Click on the navigation item
+
+```javascript
+DoClickItem(menuItemName) 
+```
 
 
 **Parameters:**
@@ -69,9 +73,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedmenustrip.doclickitem"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText(separator, filePath, append, includeSeparators)
+#### DoFullText
 
 Returns text representation of the menu or saves it to a file.
+
+```javascript
+DoFullText(separator, filePath, append, includeSeparators) 
+```
 
 
 **Parameters:**
@@ -95,9 +103,13 @@ number | <br>boolean: Text representation of the menu, 'true' if the file was su
 <a name="see.also.managedmenustrip.dofulltext"></a>
 
 <a name="DoGetSubmenuCount"></a>    
-#### DoGetSubmenuCount(path, separator)
+#### DoGetSubmenuCount
 
 Gets the number of submenu items for a given menu path.
+
+```javascript
+DoGetSubmenuCount(path, separator) 
+```
 
 
 **Parameters:**
@@ -119,9 +131,13 @@ number | <br>boolean: Number of submenu items, 'false' otherwise.
 <a name="see.also.managedmenustrip.dogetsubmenucount"></a>
 
 <a name="DoGetSubmenuProperty"></a>    
-#### DoGetSubmenuProperty(path, index, property, separator)
+#### DoGetSubmenuProperty
 
 Gets submenu property.
+
+```javascript
+DoGetSubmenuProperty(path, index, property, separator) 
+```
 
 
 **Parameters:**
@@ -145,9 +161,13 @@ string | <br>boolean: Submenu property, 'false' otherwise.
 <a name="see.also.managedmenustrip.dogetsubmenuproperty"></a>
 
 <a name="DoGetSubmenuText"></a>    
-#### DoGetSubmenuText(path, index, separator)
+#### DoGetSubmenuText
 
 Gets submenu text.
+
+```javascript
+DoGetSubmenuText(path, index, separator) 
+```
 
 
 **Parameters:**
@@ -170,9 +190,13 @@ string | <br>boolean: Submenu text, 'false' otherwise.
 <a name="see.also.managedmenustrip.dogetsubmenutext"></a>
 
 <a name="DoMenu"></a>    
-#### DoMenu(path, separator)
+#### DoMenu
 
 Performs click on the menu item.
+
+```javascript
+DoMenu(path, separator) 
+```
 
 
 **Parameters:**

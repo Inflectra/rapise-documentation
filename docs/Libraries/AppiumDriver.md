@@ -20,77 +20,77 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[ActivateIMEEngine](#ActivateIMEEngine) | Activate the given IME on the device. |
-|	[BackgroundApp](#BackgroundApp) | Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated. |
-|	[ClearSessions](#ClearSessions) | Deletes active sessions on Appium server. |
-|	[Close](#Close) | Close the Browser and Dispose of WebDriver. |
-|	[CloseApp](#CloseApp) | Close the application. |
-|	[CreateAppiumDriver](#CreateAppiumDriver) |  |
-|	[CreateDesiredCapabilities](#CreateDesiredCapabilities) |  |
-|	[CreateDriverForSession](#CreateDriverForSession) | Connects to active Appium session with given URL and Id. |
-|	[DeactiveIMEEngine](#DeactiveIMEEngine) | Deactivate the currently Active IME Engine on the device. |
-|	[Dispose](#Dispose) | Dispose of WebDriver. |
-|	[DumpSessions](#DumpSessions) | Prints information about active Appium sessions to output. |
-|	[ExecuteScript](#ExecuteScript) | Executes JavaScript in the context of the currently selected frame or window. |
-|	[FindElementByAccessibilityId](#FindElementByAccessibilityId) | Search for an element using Accessibility ID. |
-|	[FindElementByAndroidUIAutomator](#FindElementByAndroidUIAutomator) | Search for an element using UIAutomator selector. |
-|	[FindElementByClassName](#FindElementByClassName) | Finds the first element in the page that matches the CSS Class supplied. |
-|	[FindElementByCssSelector](#FindElementByCssSelector) | Finds the first element matching the specified CSS selector. |
-|	[FindElementById](#FindElementById) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementByIosUIAutomation](#FindElementByIosUIAutomation) | Search for an element using UIAutomation selector. |
-|	[FindElementByLinkText](#FindElementByLinkText) | Finds the first of elements that match the link text supplied. |
-|	[FindElementByName](#FindElementByName) | Finds the first of elements that match the name supplied. |
-|	[FindElementByPartialLinkText](#FindElementByPartialLinkText) | Finds the first of elements that match the part of the link text supplied. |
-|	[FindElementByTagName](#FindElementByTagName) | Finds the first of elements that match the DOM Tag supplied. |
-|	[FindElementByXPath](#FindElementByXPath) | Finds the first of elements that match the XPath supplied. |
-|	[FindElementsByAccessibilityId](#FindElementsByAccessibilityId) | Search for all elements matching Accessibility ID. |
-|	[FindElementsByAndroidUIAutomator](#FindElementsByAndroidUIAutomator) | Search for all elements using UIAutomator selector. |
-|	[FindElementsByClassName](#FindElementsByClassName) | Finds a list of elements that match the class name supplied. |
-|	[FindElementsByCssSelector](#FindElementsByCssSelector) | Finds all elements matching the specified CSS selector. |
-|	[FindElementsById](#FindElementsById) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementsByIosUIAutomation](#FindElementsByIosUIAutomation) | Search for all elements using UIAutomation selector. |
-|	[FindElementsByLinkText](#FindElementsByLinkText) | Finds a list of elements that match the link text supplied. |
-|	[FindElementsByName](#FindElementsByName) | Finds a list of elements that match the name supplied. |
-|	[FindElementsByPartialLinkText](#FindElementsByPartialLinkText) | Finds a list of elements that match the part of the link text supplied. |
-|	[FindElementsByTagName](#FindElementsByTagName) | Finds a list of elements that match the DOM Tag supplied. |
-|	[FindElementsByXPath](#FindElementsByXPath) | Finds a list of elements that match the XPath supplied. |
-|	[GetAddressOfRemoteServer](#GetAddressOfRemoteServer) |  |
-|	[GetContext](#GetContext) |  |
-|	[GetContexts](#GetContexts) |  |
-|	[GetCurrentActivity](#GetCurrentActivity) |  |
-|	[GetCurrentWindowHandle](#GetCurrentWindowHandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
-|	[GetIMEActiveEngine](#GetIMEActiveEngine) |  |
-|	[GetIMEAvailableEngines](#GetIMEAvailableEngines) |  |
-|	[GetOrientation](#GetOrientation) |  |
-|	[GetPageSource](#GetPageSource) | Gets the source of the page last loaded by the browser. |
-|	[GetSessionId](#GetSessionId) |  |
-|	[GetTitle](#GetTitle) | Gets the title of the current browser window. |
-|	[GetUrl](#GetUrl) | Gets the URL the browser is currently displaying. |
-|	[GetWindowHandles](#GetWindowHandles) | Gets the window handles of open browser windows. |
-|	[HideKeyboard](#HideKeyboard) |  |
-|	[IgnoreUnimportantViews](#IgnoreUnimportantViews) |  |
-|	[InstallApp](#InstallApp) |  |
-|	[IsAppInstalled](#IsAppInstalled) |  |
-|	[IsIMEActive](#IsIMEActive) |  |
-|	[IsLocked](#IsLocked) |  |
-|	[LaunchApp](#LaunchApp) |  |
-|	[OpenNotifications](#OpenNotifications) |  |
-|	[PressKeyCode](#PressKeyCode) |  |
-|	[PullFile](#PullFile) |  |
-|	[PushFile](#PushFile) |  |
-|	[Quit](#Quit) | Disconnects from the Browser. |
-|	[ReconnectSession](#ReconnectSession) | Reads session information produced by SaveSession and connects to the mobile target. |
-|	[RemoveApp](#RemoveApp) |  |
-|	[ResetApp](#ResetApp) |  |
-|	[SaveSession](#SaveSession) | Saves session information for use by ReconnectSession. |
-|	[SetContext](#SetContext) | Sets current context. |
-|	[SetOrientation](#SetOrientation) | Sets device orienataion. |
-|	[SetUrl](#SetUrl) | Sets the URL the browser is currently displaying. |
-|	[ShakeDevice](#ShakeDevice) |  |
-|	[StartActivity](#StartActivity) |  |
-|	[ToggleAirplaneMode](#ToggleAirplaneMode) |  |
-|	[ToggleLocationServices](#ToggleLocationServices) |  |
-|	[ToggleWifi](#ToggleWifi) |  |
+|	[ActivateIMEEngine](#activateimeengine) | Activate the given IME on the device. |
+|	[BackgroundApp](#backgroundapp) | Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated. |
+|	[ClearSessions](#clearsessions) | Deletes active sessions on Appium server. |
+|	[Close](#close) | Close the Browser and Dispose of WebDriver. |
+|	[CloseApp](#closeapp) | Close the application. |
+|	[CreateAppiumDriver](#createappiumdriver) |  |
+|	[CreateDesiredCapabilities](#createdesiredcapabilities) |  |
+|	[CreateDriverForSession](#createdriverforsession) | Connects to active Appium session with given URL and Id. |
+|	[DeactiveIMEEngine](#deactiveimeengine) | Deactivate the currently Active IME Engine on the device. |
+|	[Dispose](#dispose) | Dispose of WebDriver. |
+|	[DumpSessions](#dumpsessions) | Prints information about active Appium sessions to output. |
+|	[ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
+|	[FindElementByAccessibilityId](#findelementbyaccessibilityid) | Search for an element using Accessibility ID. |
+|	[FindElementByAndroidUIAutomator](#findelementbyandroiduiautomator) | Search for an element using UIAutomator selector. |
+|	[FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
+|	[FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
+|	[FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementByIosUIAutomation](#findelementbyiosuiautomation) | Search for an element using UIAutomation selector. |
+|	[FindElementByLinkText](#findelementbylinktext) | Finds the first of elements that match the link text supplied. |
+|	[FindElementByName](#findelementbyname) | Finds the first of elements that match the name supplied. |
+|	[FindElementByPartialLinkText](#findelementbypartiallinktext) | Finds the first of elements that match the part of the link text supplied. |
+|	[FindElementByTagName](#findelementbytagname) | Finds the first of elements that match the DOM Tag supplied. |
+|	[FindElementByXPath](#findelementbyxpath) | Finds the first of elements that match the XPath supplied. |
+|	[FindElementsByAccessibilityId](#findelementsbyaccessibilityid) | Search for all elements matching Accessibility ID. |
+|	[FindElementsByAndroidUIAutomator](#findelementsbyandroiduiautomator) | Search for all elements using UIAutomator selector. |
+|	[FindElementsByClassName](#findelementsbyclassname) | Finds a list of elements that match the class name supplied. |
+|	[FindElementsByCssSelector](#findelementsbycssselector) | Finds all elements matching the specified CSS selector. |
+|	[FindElementsById](#findelementsbyid) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementsByIosUIAutomation](#findelementsbyiosuiautomation) | Search for all elements using UIAutomation selector. |
+|	[FindElementsByLinkText](#findelementsbylinktext) | Finds a list of elements that match the link text supplied. |
+|	[FindElementsByName](#findelementsbyname) | Finds a list of elements that match the name supplied. |
+|	[FindElementsByPartialLinkText](#findelementsbypartiallinktext) | Finds a list of elements that match the part of the link text supplied. |
+|	[FindElementsByTagName](#findelementsbytagname) | Finds a list of elements that match the DOM Tag supplied. |
+|	[FindElementsByXPath](#findelementsbyxpath) | Finds a list of elements that match the XPath supplied. |
+|	[GetAddressOfRemoteServer](#getaddressofremoteserver) |  |
+|	[GetContext](#getcontext) |  |
+|	[GetContexts](#getcontexts) |  |
+|	[GetCurrentActivity](#getcurrentactivity) |  |
+|	[GetCurrentWindowHandle](#getcurrentwindowhandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
+|	[GetIMEActiveEngine](#getimeactiveengine) |  |
+|	[GetIMEAvailableEngines](#getimeavailableengines) |  |
+|	[GetOrientation](#getorientation) |  |
+|	[GetPageSource](#getpagesource) | Gets the source of the page last loaded by the browser. |
+|	[GetSessionId](#getsessionid) |  |
+|	[GetTitle](#gettitle) | Gets the title of the current browser window. |
+|	[GetUrl](#geturl) | Gets the URL the browser is currently displaying. |
+|	[GetWindowHandles](#getwindowhandles) | Gets the window handles of open browser windows. |
+|	[HideKeyboard](#hidekeyboard) |  |
+|	[IgnoreUnimportantViews](#ignoreunimportantviews) |  |
+|	[InstallApp](#installapp) |  |
+|	[IsAppInstalled](#isappinstalled) |  |
+|	[IsIMEActive](#isimeactive) |  |
+|	[IsLocked](#islocked) |  |
+|	[LaunchApp](#launchapp) |  |
+|	[OpenNotifications](#opennotifications) |  |
+|	[PressKeyCode](#presskeycode) |  |
+|	[PullFile](#pullfile) |  |
+|	[PushFile](#pushfile) |  |
+|	[Quit](#quit) | Disconnects from the Browser. |
+|	[ReconnectSession](#reconnectsession) | Reads session information produced by SaveSession and connects to the mobile target. |
+|	[RemoveApp](#removeapp) |  |
+|	[ResetApp](#resetapp) |  |
+|	[SaveSession](#savesession) | Saves session information for use by ReconnectSession. |
+|	[SetContext](#setcontext) | Sets current context. |
+|	[SetOrientation](#setorientation) | Sets device orienataion. |
+|	[SetUrl](#seturl) | Sets the URL the browser is currently displaying. |
+|	[ShakeDevice](#shakedevice) |  |
+|	[StartActivity](#startactivity) |  |
+|	[ToggleAirplaneMode](#toggleairplanemode) |  |
+|	[ToggleLocationServices](#togglelocationservices) |  |
+|	[ToggleWifi](#togglewifi) |  |
 
 
 
@@ -103,9 +103,13 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 ### Action Detail
 		
 <a name="ActivateIMEEngine"></a>    
-#### ActivateIMEEngine(imeEngine)
+#### ActivateIMEEngine
 
 Activate the given IME on the device.
+
+```javascript
+ActivateIMEEngine(imeEngine) 
+```
 
 
 **Parameters:**
@@ -121,9 +125,13 @@ Activate the given IME on the device.
 <a name="see.also.appiumdriver.activateimeengine"></a>
 
 <a name="BackgroundApp"></a>    
-#### BackgroundApp(seconds)
+#### BackgroundApp
 
 Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated.
+
+```javascript
+BackgroundApp(seconds) 
+```
 
 
 **Parameters:**
@@ -139,9 +147,13 @@ Send the currently active app to the background, and either return after a certa
 <a name="see.also.appiumdriver.backgroundapp"></a>
 
 <a name="ClearSessions"></a>    
-#### ClearSessions()
+#### ClearSessions
 
 Deletes active sessions on Appium server.
+
+```javascript
+ClearSessions() 
+```
 
 
 
@@ -150,9 +162,13 @@ Deletes active sessions on Appium server.
 <a name="see.also.appiumdriver.clearsessions"></a>
 
 <a name="Close"></a>    
-#### Close()
+#### Close
 
 Close the Browser and Dispose of WebDriver.
+
+```javascript
+Close() 
+```
 
 
 
@@ -161,9 +177,13 @@ Close the Browser and Dispose of WebDriver.
 <a name="see.also.appiumdriver.close"></a>
 
 <a name="CloseApp"></a>    
-#### CloseApp()
+#### CloseApp
 
 Close the application.
+
+```javascript
+CloseApp() 
+```
 
 
 
@@ -172,9 +192,13 @@ Close the application.
 <a name="see.also.appiumdriver.closeapp"></a>
 
 <a name="CreateAppiumDriver"></a>    
-#### CreateAppiumDriver(uri, caps)
+#### CreateAppiumDriver
 
 
+
+```javascript
+CreateAppiumDriver(uri, caps) 
+```
 
 
 **Parameters:**
@@ -191,9 +215,13 @@ Close the application.
 <a name="see.also.appiumdriver.createappiumdriver"></a>
 
 <a name="CreateDesiredCapabilities"></a>    
-#### CreateDesiredCapabilities()
+#### CreateDesiredCapabilities
 
 
+
+```javascript
+CreateDesiredCapabilities() 
+```
 
 
 
@@ -207,9 +235,13 @@ AppiumCapabilities object.
 <a name="see.also.appiumdriver.createdesiredcapabilities"></a>
 
 <a name="CreateDriverForSession"></a>    
-#### CreateDriverForSession(addressOfRemoteServer, sessionId, suppressErrors)
+#### CreateDriverForSession
 
 Connects to active Appium session with given URL and Id.
+
+```javascript
+CreateDriverForSession(addressOfRemoteServer, sessionId, suppressErrors) 
+```
 
 
 **Parameters:**
@@ -232,9 +264,13 @@ true if successful, false otherwise.
 <a name="see.also.appiumdriver.createdriverforsession"></a>
 
 <a name="DeactiveIMEEngine"></a>    
-#### DeactiveIMEEngine()
+#### DeactiveIMEEngine
 
 Deactivate the currently Active IME Engine on the device.
+
+```javascript
+DeactiveIMEEngine() 
+```
 
 
 
@@ -243,9 +279,13 @@ Deactivate the currently Active IME Engine on the device.
 <a name="see.also.appiumdriver.deactiveimeengine"></a>
 
 <a name="Dispose"></a>    
-#### Dispose()
+#### Dispose
 
 Dispose of WebDriver.
+
+```javascript
+Dispose() 
+```
 
 
 
@@ -254,9 +294,13 @@ Dispose of WebDriver.
 <a name="see.also.appiumdriver.dispose"></a>
 
 <a name="DumpSessions"></a>    
-#### DumpSessions()
+#### DumpSessions
 
 Prints information about active Appium sessions to output.
+
+```javascript
+DumpSessions() 
+```
 
 
 
@@ -265,9 +309,13 @@ Prints information about active Appium sessions to output.
 <a name="see.also.appiumdriver.dumpsessions"></a>
 
 <a name="ExecuteScript"></a>    
-#### ExecuteScript(script, args)
+#### ExecuteScript
 
 Executes JavaScript in the context of the currently selected frame or window.
+
+```javascript
+ExecuteScript(script, args) 
+```
 
 
 **Parameters:**
@@ -284,9 +332,13 @@ Executes JavaScript in the context of the currently selected frame or window.
 <a name="see.also.appiumdriver.executescript"></a>
 
 <a name="FindElementByAccessibilityId"></a>    
-#### FindElementByAccessibilityId(selector)
+#### FindElementByAccessibilityId
 
 Search for an element using Accessibility ID.
+
+```javascript
+FindElementByAccessibilityId(selector) 
+```
 
 
 **Parameters:**
@@ -302,9 +354,13 @@ Search for an element using Accessibility ID.
 <a name="see.also.appiumdriver.findelementbyaccessibilityid"></a>
 
 <a name="FindElementByAndroidUIAutomator"></a>    
-#### FindElementByAndroidUIAutomator(selector)
+#### FindElementByAndroidUIAutomator
 
 Search for an element using UIAutomator selector.
+
+```javascript
+FindElementByAndroidUIAutomator(selector) 
+```
 
 
 **Parameters:**
@@ -320,9 +376,13 @@ Search for an element using UIAutomator selector.
 <a name="see.also.appiumdriver.findelementbyandroiduiautomator"></a>
 
 <a name="FindElementByClassName"></a>    
-#### FindElementByClassName(className)
+#### FindElementByClassName
 
 Finds the first element in the page that matches the CSS Class supplied.
+
+```javascript
+FindElementByClassName(className) 
+```
 
 
 **Parameters:**
@@ -338,9 +398,13 @@ Finds the first element in the page that matches the CSS Class supplied.
 <a name="see.also.appiumdriver.findelementbyclassname"></a>
 
 <a name="FindElementByCssSelector"></a>    
-#### FindElementByCssSelector(cssSelector)
+#### FindElementByCssSelector
 
 Finds the first element matching the specified CSS selector.
+
+```javascript
+FindElementByCssSelector(cssSelector) 
+```
 
 
 **Parameters:**
@@ -356,9 +420,13 @@ Finds the first element matching the specified CSS selector.
 <a name="see.also.appiumdriver.findelementbycssselector"></a>
 
 <a name="FindElementById"></a>    
-#### FindElementById(id)
+#### FindElementById
 
 Finds the first element in the page that matches the ID supplied.
+
+```javascript
+FindElementById(id) 
+```
 
 
 **Parameters:**
@@ -374,9 +442,13 @@ Finds the first element in the page that matches the ID supplied.
 <a name="see.also.appiumdriver.findelementbyid"></a>
 
 <a name="FindElementByIosUIAutomation"></a>    
-#### FindElementByIosUIAutomation(selector)
+#### FindElementByIosUIAutomation
 
 Search for an element using UIAutomation selector.
+
+```javascript
+FindElementByIosUIAutomation(selector) 
+```
 
 
 **Parameters:**
@@ -392,9 +464,13 @@ Search for an element using UIAutomation selector.
 <a name="see.also.appiumdriver.findelementbyiosuiautomation"></a>
 
 <a name="FindElementByLinkText"></a>    
-#### FindElementByLinkText(linkText)
+#### FindElementByLinkText
 
 Finds the first of elements that match the link text supplied.
+
+```javascript
+FindElementByLinkText(linkText) 
+```
 
 
 **Parameters:**
@@ -410,9 +486,13 @@ Finds the first of elements that match the link text supplied.
 <a name="see.also.appiumdriver.findelementbylinktext"></a>
 
 <a name="FindElementByName"></a>    
-#### FindElementByName(name)
+#### FindElementByName
 
 Finds the first of elements that match the name supplied.
+
+```javascript
+FindElementByName(name) 
+```
 
 
 **Parameters:**
@@ -428,9 +508,13 @@ Finds the first of elements that match the name supplied.
 <a name="see.also.appiumdriver.findelementbyname"></a>
 
 <a name="FindElementByPartialLinkText"></a>    
-#### FindElementByPartialLinkText(partialLinkText)
+#### FindElementByPartialLinkText
 
 Finds the first of elements that match the part of the link text supplied.
+
+```javascript
+FindElementByPartialLinkText(partialLinkText) 
+```
 
 
 **Parameters:**
@@ -446,9 +530,13 @@ Finds the first of elements that match the part of the link text supplied.
 <a name="see.also.appiumdriver.findelementbypartiallinktext"></a>
 
 <a name="FindElementByTagName"></a>    
-#### FindElementByTagName(tagName)
+#### FindElementByTagName
 
 Finds the first of elements that match the DOM Tag supplied.
+
+```javascript
+FindElementByTagName(tagName) 
+```
 
 
 **Parameters:**
@@ -464,9 +552,13 @@ Finds the first of elements that match the DOM Tag supplied.
 <a name="see.also.appiumdriver.findelementbytagname"></a>
 
 <a name="FindElementByXPath"></a>    
-#### FindElementByXPath(xpath)
+#### FindElementByXPath
 
 Finds the first of elements that match the XPath supplied.
+
+```javascript
+FindElementByXPath(xpath) 
+```
 
 
 **Parameters:**
@@ -482,9 +574,13 @@ Finds the first of elements that match the XPath supplied.
 <a name="see.also.appiumdriver.findelementbyxpath"></a>
 
 <a name="FindElementsByAccessibilityId"></a>    
-#### FindElementsByAccessibilityId(selector)
+#### FindElementsByAccessibilityId
 
 Search for all elements matching Accessibility ID.
+
+```javascript
+FindElementsByAccessibilityId(selector) 
+```
 
 
 **Parameters:**
@@ -500,9 +596,13 @@ Search for all elements matching Accessibility ID.
 <a name="see.also.appiumdriver.findelementsbyaccessibilityid"></a>
 
 <a name="FindElementsByAndroidUIAutomator"></a>    
-#### FindElementsByAndroidUIAutomator(selector)
+#### FindElementsByAndroidUIAutomator
 
 Search for all elements using UIAutomator selector.
+
+```javascript
+FindElementsByAndroidUIAutomator(selector) 
+```
 
 
 **Parameters:**
@@ -518,9 +618,13 @@ Search for all elements using UIAutomator selector.
 <a name="see.also.appiumdriver.findelementsbyandroiduiautomator"></a>
 
 <a name="FindElementsByClassName"></a>    
-#### FindElementsByClassName(className)
+#### FindElementsByClassName
 
 Finds a list of elements that match the class name supplied.
+
+```javascript
+FindElementsByClassName(className) 
+```
 
 
 **Parameters:**
@@ -536,9 +640,13 @@ Finds a list of elements that match the class name supplied.
 <a name="see.also.appiumdriver.findelementsbyclassname"></a>
 
 <a name="FindElementsByCssSelector"></a>    
-#### FindElementsByCssSelector(cssSelector)
+#### FindElementsByCssSelector
 
 Finds all elements matching the specified CSS selector.
+
+```javascript
+FindElementsByCssSelector(cssSelector) 
+```
 
 
 **Parameters:**
@@ -554,9 +662,13 @@ Finds all elements matching the specified CSS selector.
 <a name="see.also.appiumdriver.findelementsbycssselector"></a>
 
 <a name="FindElementsById"></a>    
-#### FindElementsById(id)
+#### FindElementsById
 
 Finds the first element in the page that matches the ID supplied.
+
+```javascript
+FindElementsById(id) 
+```
 
 
 **Parameters:**
@@ -572,9 +684,13 @@ Finds the first element in the page that matches the ID supplied.
 <a name="see.also.appiumdriver.findelementsbyid"></a>
 
 <a name="FindElementsByIosUIAutomation"></a>    
-#### FindElementsByIosUIAutomation(selector)
+#### FindElementsByIosUIAutomation
 
 Search for all elements using UIAutomation selector.
+
+```javascript
+FindElementsByIosUIAutomation(selector) 
+```
 
 
 **Parameters:**
@@ -590,9 +706,13 @@ Search for all elements using UIAutomation selector.
 <a name="see.also.appiumdriver.findelementsbyiosuiautomation"></a>
 
 <a name="FindElementsByLinkText"></a>    
-#### FindElementsByLinkText(linkText)
+#### FindElementsByLinkText
 
 Finds a list of elements that match the link text supplied.
+
+```javascript
+FindElementsByLinkText(linkText) 
+```
 
 
 **Parameters:**
@@ -608,9 +728,13 @@ Finds a list of elements that match the link text supplied.
 <a name="see.also.appiumdriver.findelementsbylinktext"></a>
 
 <a name="FindElementsByName"></a>    
-#### FindElementsByName(name)
+#### FindElementsByName
 
 Finds a list of elements that match the name supplied.
+
+```javascript
+FindElementsByName(name) 
+```
 
 
 **Parameters:**
@@ -626,9 +750,13 @@ Finds a list of elements that match the name supplied.
 <a name="see.also.appiumdriver.findelementsbyname"></a>
 
 <a name="FindElementsByPartialLinkText"></a>    
-#### FindElementsByPartialLinkText(partialLinkText)
+#### FindElementsByPartialLinkText
 
 Finds a list of elements that match the part of the link text supplied.
+
+```javascript
+FindElementsByPartialLinkText(partialLinkText) 
+```
 
 
 **Parameters:**
@@ -644,9 +772,13 @@ Finds a list of elements that match the part of the link text supplied.
 <a name="see.also.appiumdriver.findelementsbypartiallinktext"></a>
 
 <a name="FindElementsByTagName"></a>    
-#### FindElementsByTagName(tagName)
+#### FindElementsByTagName
 
 Finds a list of elements that match the DOM Tag supplied.
+
+```javascript
+FindElementsByTagName(tagName) 
+```
 
 
 **Parameters:**
@@ -662,9 +794,13 @@ Finds a list of elements that match the DOM Tag supplied.
 <a name="see.also.appiumdriver.findelementsbytagname"></a>
 
 <a name="FindElementsByXPath"></a>    
-#### FindElementsByXPath(xpath)
+#### FindElementsByXPath
 
 Finds a list of elements that match the XPath supplied.
+
+```javascript
+FindElementsByXPath(xpath) 
+```
 
 
 **Parameters:**
@@ -680,9 +816,13 @@ Finds a list of elements that match the XPath supplied.
 <a name="see.also.appiumdriver.findelementsbyxpath"></a>
 
 <a name="GetAddressOfRemoteServer"></a>    
-#### GetAddressOfRemoteServer()
+#### GetAddressOfRemoteServer
 
 
+
+```javascript
+GetAddressOfRemoteServer() 
+```
 
 
 
@@ -696,9 +836,13 @@ URL of the remote Appium server.
 <a name="see.also.appiumdriver.getaddressofremoteserver"></a>
 
 <a name="GetContext"></a>    
-#### GetContext()
+#### GetContext
 
 
+
+```javascript
+GetContext() 
+```
 
 
 
@@ -712,9 +856,13 @@ Current context (NATIVE_APP or WEBVIEW_*).
 <a name="see.also.appiumdriver.getcontext"></a>
 
 <a name="GetContexts"></a>    
-#### GetContexts()
+#### GetContexts
 
 
+
+```javascript
+GetContexts() 
+```
 
 
 
@@ -728,9 +876,13 @@ Array of available contexts for a hybrid application.
 <a name="see.also.appiumdriver.getcontexts"></a>
 
 <a name="GetCurrentActivity"></a>    
-#### GetCurrentActivity()
+#### GetCurrentActivity
 
 
+
+```javascript
+GetCurrentActivity() 
+```
 
 
 
@@ -739,9 +891,13 @@ Array of available contexts for a hybrid application.
 <a name="see.also.appiumdriver.getcurrentactivity"></a>
 
 <a name="GetCurrentWindowHandle"></a>    
-#### GetCurrentWindowHandle()
+#### GetCurrentWindowHandle
 
 Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance.
+
+```javascript
+GetCurrentWindowHandle() 
+```
 
 
 
@@ -750,9 +906,13 @@ Gets the current window handle, which is an opaque handle to this window that un
 <a name="see.also.appiumdriver.getcurrentwindowhandle"></a>
 
 <a name="GetIMEActiveEngine"></a>    
-#### GetIMEActiveEngine()
+#### GetIMEActiveEngine
 
 
+
+```javascript
+GetIMEActiveEngine() 
+```
 
 
 
@@ -766,9 +926,13 @@ Currently active IME Engine on the device.
 <a name="see.also.appiumdriver.getimeactiveengine"></a>
 
 <a name="GetIMEAvailableEngines"></a>    
-#### GetIMEAvailableEngines()
+#### GetIMEAvailableEngines
 
 
+
+```javascript
+GetIMEAvailableEngines() 
+```
 
 
 
@@ -782,9 +946,13 @@ A list of IME engines available on the device.
 <a name="see.also.appiumdriver.getimeavailableengines"></a>
 
 <a name="GetOrientation"></a>    
-#### GetOrientation()
+#### GetOrientation
 
 
+
+```javascript
+GetOrientation() 
+```
 
 
 
@@ -798,9 +966,13 @@ Orientation of the device (0 - portrait, 1 - landscape).
 <a name="see.also.appiumdriver.getorientation"></a>
 
 <a name="GetPageSource"></a>    
-#### GetPageSource()
+#### GetPageSource
 
 Gets the source of the page last loaded by the browser.
+
+```javascript
+GetPageSource() 
+```
 
 
 
@@ -809,9 +981,13 @@ Gets the source of the page last loaded by the browser.
 <a name="see.also.appiumdriver.getpagesource"></a>
 
 <a name="GetSessionId"></a>    
-#### GetSessionId()
+#### GetSessionId
 
 
+
+```javascript
+GetSessionId() 
+```
 
 
 
@@ -825,9 +1001,13 @@ Id of the current session.
 <a name="see.also.appiumdriver.getsessionid"></a>
 
 <a name="GetTitle"></a>    
-#### GetTitle()
+#### GetTitle
 
 Gets the title of the current browser window.
+
+```javascript
+GetTitle() 
+```
 
 
 
@@ -836,9 +1016,13 @@ Gets the title of the current browser window.
 <a name="see.also.appiumdriver.gettitle"></a>
 
 <a name="GetUrl"></a>    
-#### GetUrl()
+#### GetUrl
 
 Gets the URL the browser is currently displaying.
+
+```javascript
+GetUrl() 
+```
 
 
 
@@ -847,9 +1031,13 @@ Gets the URL the browser is currently displaying.
 <a name="see.also.appiumdriver.geturl"></a>
 
 <a name="GetWindowHandles"></a>    
-#### GetWindowHandles()
+#### GetWindowHandles
 
 Gets the window handles of open browser windows.
+
+```javascript
+GetWindowHandles() 
+```
 
 
 
@@ -858,9 +1046,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.getwindowhandles"></a>
 
 <a name="HideKeyboard"></a>    
-#### HideKeyboard(key, key)
+#### HideKeyboard
 
 
+
+```javascript
+HideKeyboard(key, key) 
+```
 
 
 **Parameters:**
@@ -877,9 +1069,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.hidekeyboard"></a>
 
 <a name="IgnoreUnimportantViews"></a>    
-#### IgnoreUnimportantViews(value)
+#### IgnoreUnimportantViews
 
 
+
+```javascript
+IgnoreUnimportantViews(value) 
+```
 
 
 **Parameters:**
@@ -895,9 +1091,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.ignoreunimportantviews"></a>
 
 <a name="InstallApp"></a>    
-#### InstallApp(appPath)
+#### InstallApp
 
 
+
+```javascript
+InstallApp(appPath) 
+```
 
 
 **Parameters:**
@@ -913,9 +1113,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.installapp"></a>
 
 <a name="IsAppInstalled"></a>    
-#### IsAppInstalled(bundleId)
+#### IsAppInstalled
 
 
+
+```javascript
+IsAppInstalled(bundleId) 
+```
 
 
 **Parameters:**
@@ -931,9 +1135,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.isappinstalled"></a>
 
 <a name="IsIMEActive"></a>    
-#### IsIMEActive()
+#### IsIMEActive
 
 
+
+```javascript
+IsIMEActive() 
+```
 
 
 
@@ -942,9 +1150,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.isimeactive"></a>
 
 <a name="IsLocked"></a>    
-#### IsLocked()
+#### IsLocked
 
 
+
+```javascript
+IsLocked() 
+```
 
 
 
@@ -953,9 +1165,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.islocked"></a>
 
 <a name="LaunchApp"></a>    
-#### LaunchApp()
+#### LaunchApp
 
 
+
+```javascript
+LaunchApp() 
+```
 
 
 
@@ -964,9 +1180,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.launchapp"></a>
 
 <a name="OpenNotifications"></a>    
-#### OpenNotifications()
+#### OpenNotifications
 
 
+
+```javascript
+OpenNotifications() 
+```
 
 
 
@@ -975,9 +1195,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.opennotifications"></a>
 
 <a name="PressKeyCode"></a>    
-#### PressKeyCode(keyCode)
+#### PressKeyCode
 
 
+
+```javascript
+PressKeyCode(keyCode) 
+```
 
 
 **Parameters:**
@@ -993,9 +1217,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.presskeycode"></a>
 
 <a name="PullFile"></a>    
-#### PullFile(pathOnDevice)
+#### PullFile
 
 
+
+```javascript
+PullFile(pathOnDevice) 
+```
 
 
 **Parameters:**
@@ -1011,9 +1239,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.pullfile"></a>
 
 <a name="PushFile"></a>    
-#### PushFile(base64Data, base64Data)
+#### PushFile
 
 
+
+```javascript
+PushFile(base64Data, base64Data) 
+```
 
 
 **Parameters:**
@@ -1030,9 +1262,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.appiumdriver.pushfile"></a>
 
 <a name="Quit"></a>    
-#### Quit()
+#### Quit
 
 Disconnects from the Browser.
+
+```javascript
+Quit() 
+```
 
 
 
@@ -1041,9 +1277,13 @@ Disconnects from the Browser.
 <a name="see.also.appiumdriver.quit"></a>
 
 <a name="ReconnectSession"></a>    
-#### ReconnectSession(autoCreate)
+#### ReconnectSession
 
 Reads session information produced by SaveSession and connects to the mobile target.
+
+```javascript
+ReconnectSession(autoCreate) 
+```
 
 
 **Parameters:**
@@ -1059,9 +1299,13 @@ Reads session information produced by SaveSession and connects to the mobile tar
 <a name="see.also.appiumdriver.reconnectsession"></a>
 
 <a name="RemoveApp"></a>    
-#### RemoveApp(appId)
+#### RemoveApp
 
 
+
+```javascript
+RemoveApp(appId) 
+```
 
 
 **Parameters:**
@@ -1077,9 +1321,13 @@ Reads session information produced by SaveSession and connects to the mobile tar
 <a name="see.also.appiumdriver.removeapp"></a>
 
 <a name="ResetApp"></a>    
-#### ResetApp()
+#### ResetApp
 
 
+
+```javascript
+ResetApp() 
+```
 
 
 
@@ -1088,9 +1336,13 @@ Reads session information produced by SaveSession and connects to the mobile tar
 <a name="see.also.appiumdriver.resetapp"></a>
 
 <a name="SaveSession"></a>    
-#### SaveSession()
+#### SaveSession
 
 Saves session information for use by ReconnectSession.
+
+```javascript
+SaveSession() 
+```
 
 
 
@@ -1099,9 +1351,13 @@ Saves session information for use by ReconnectSession.
 <a name="see.also.appiumdriver.savesession"></a>
 
 <a name="SetContext"></a>    
-#### SetContext(name)
+#### SetContext
 
 Sets current context.
+
+```javascript
+SetContext(name) 
+```
 
 
 **Parameters:**
@@ -1117,9 +1373,13 @@ Sets current context.
 <a name="see.also.appiumdriver.setcontext"></a>
 
 <a name="SetOrientation"></a>    
-#### SetOrientation(orientation)
+#### SetOrientation
 
 Sets device orienataion.
+
+```javascript
+SetOrientation(orientation) 
+```
 
 
 **Parameters:**
@@ -1135,9 +1395,13 @@ Sets device orienataion.
 <a name="see.also.appiumdriver.setorientation"></a>
 
 <a name="SetUrl"></a>    
-#### SetUrl(value)
+#### SetUrl
 
 Sets the URL the browser is currently displaying.
+
+```javascript
+SetUrl(value) 
+```
 
 
 **Parameters:**
@@ -1153,9 +1417,13 @@ Sets the URL the browser is currently displaying.
 <a name="see.also.appiumdriver.seturl"></a>
 
 <a name="ShakeDevice"></a>    
-#### ShakeDevice()
+#### ShakeDevice
 
 
+
+```javascript
+ShakeDevice() 
+```
 
 
 
@@ -1164,9 +1432,13 @@ Sets the URL the browser is currently displaying.
 <a name="see.also.appiumdriver.shakedevice"></a>
 
 <a name="StartActivity"></a>    
-#### StartActivity(appActivity, appWaitPackage, appWaitActivity, appWaitActivity)
+#### StartActivity
 
 
+
+```javascript
+StartActivity(appActivity, appWaitPackage, appWaitActivity, appWaitActivity) 
+```
 
 
 **Parameters:**
@@ -1185,9 +1457,13 @@ Sets the URL the browser is currently displaying.
 <a name="see.also.appiumdriver.startactivity"></a>
 
 <a name="ToggleAirplaneMode"></a>    
-#### ToggleAirplaneMode()
+#### ToggleAirplaneMode
 
 
+
+```javascript
+ToggleAirplaneMode() 
+```
 
 
 
@@ -1196,9 +1472,13 @@ Sets the URL the browser is currently displaying.
 <a name="see.also.appiumdriver.toggleairplanemode"></a>
 
 <a name="ToggleLocationServices"></a>    
-#### ToggleLocationServices()
+#### ToggleLocationServices
 
 
+
+```javascript
+ToggleLocationServices() 
+```
 
 
 
@@ -1207,9 +1487,13 @@ Sets the URL the browser is currently displaying.
 <a name="see.also.appiumdriver.togglelocationservices"></a>
 
 <a name="ToggleWifi"></a>    
-#### ToggleWifi()
+#### ToggleWifi
 
 
+
+```javascript
+ToggleWifi() 
+```
 
 
 

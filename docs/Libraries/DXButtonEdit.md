@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -38,7 +38,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -69,9 +69,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**
@@ -107,8 +111,8 @@ boolean: 'true' if success, 'false' otherwise.
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ButtonCount](#ButtonCount) | Number of buttons in this control. | GetButtonCount |  |
-| [ButtonKind](#ButtonKind) | Kind of a button at index. | GetButtonKind |  |
+| [ButtonCount](#buttoncount) | Number of buttons in this control. | GetButtonCount |  |
+| [ButtonKind](#buttonkind) | Kind of a button at index. | GetButtonKind |  |
 
 
 
@@ -121,7 +125,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickButton](#DoClickButton) | Selects an item of this object. |
+|	[DoClickButton](#doclickbutton) | Selects an item of this object. |
 
 
 
@@ -174,9 +178,13 @@ Accessors: GetButtonKind
 ### Action Detail
 		
 <a name="DoClickButton"></a>    
-#### DoClickButton(index, isLeft)
+#### DoClickButton
 
 Selects an item of this object.
+
+```javascript
+DoClickButton(index, isLeft) 
+```
 
 
 **Parameters:**

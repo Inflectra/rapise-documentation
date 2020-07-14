@@ -20,7 +20,7 @@ Used to show exception in the report.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SeSReportException](#SeSReportException) | Used to show exception in the report. |
+|	[SeSReportException](#sesreportexception) | Used to show exception in the report. |
 
 
 
@@ -33,9 +33,13 @@ Used to show exception in the report.
 ### Action Detail
 		
 <a name="SeSReportException"></a>    
-#### SeSReportException(e)
+#### SeSReportException
 
 Used to show exception in the report.
+
+```javascript
+SeSReportException(e) 
+```
 
 
 **Parameters:**

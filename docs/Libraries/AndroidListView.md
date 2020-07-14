@@ -19,7 +19,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemIndexByName](#ItemIndexByName) | Returns item index by its name. | GetItemIndexByName |  |
+| [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
 
 
 
@@ -32,7 +32,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item with the specified index. |
+|	[DoSelectItem](#doselectitem) | Selects an item with the specified index. |
 
 
 
@@ -70,9 +70,13 @@ Accessors: GetItemIndexByName
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(index)
+#### DoSelectItem
 
 Selects an item with the specified index.
+
+```javascript
+DoSelectItem(index) 
+```
 
 
 **Parameters:**

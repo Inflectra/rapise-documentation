@@ -24,7 +24,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetCheck](#DoSetCheck) | Sets check state of the object. |
+|	[DoSetCheck](#dosetcheck) | Sets check state of the object. |
 
 
 
@@ -37,9 +37,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoSetCheck"></a>    
-#### DoSetCheck()
+#### DoSetCheck
 
 Sets check state of the object.
+
+```javascript
+DoSetCheck() 
+```
 
 
 

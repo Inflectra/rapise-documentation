@@ -20,7 +20,7 @@ This is a JavaScript wrapper for Screenshot of Selenium .NET library.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SaveAsFile](#SaveAsFile) | Saves the screenshot to a file. |
+|	[SaveAsFile](#saveasfile) | Saves the screenshot to a file. |
 
 
 
@@ -33,9 +33,13 @@ This is a JavaScript wrapper for Screenshot of Selenium .NET library.
 ### Action Detail
 		
 <a name="SaveAsFile"></a>    
-#### SaveAsFile(fileName, format)
+#### SaveAsFile
 
 Saves the screenshot to a file.
+
+```javascript
+SaveAsFile(fileName, format) 
+```
 
 
 **Parameters:**

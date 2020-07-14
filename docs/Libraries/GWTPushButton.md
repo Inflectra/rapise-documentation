@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Disabled](#Disabled) | Disable state of the button. | GetDisabled |  |
+| [Disabled](#disabled) | Disable state of the button. | GetDisabled |  |
 
 
 

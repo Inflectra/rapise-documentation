@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#DoClick) | Clicks on the menu container. |
+|	[DoClick](#doclick) | Clicks on the menu container. |
 
 
 
@@ -39,9 +39,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoClick"></a>    
-#### DoClick()
+#### DoClick
 
 Clicks on the menu container.
+
+```javascript
+DoClick() 
+```
 
 
 

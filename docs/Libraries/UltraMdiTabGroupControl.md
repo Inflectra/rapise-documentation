@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [SelectedTab](#SelectedTab) | Text of the selected tab | GetSelectedTab |  |
+| [SelectedTab](#selectedtab) | Text of the selected tab | GetSelectedTab |  |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#DoSelectTab) | Selects the tab by name. |
+|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
@@ -67,9 +67,13 @@ Accessors: GetSelectedTab
 ### Action Detail
 		
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(tabName)
+#### DoSelectTab
 
 Selects the tab by name.
+
+```javascript
+DoSelectTab(tabName) 
+```
 
 
 **Parameters:**

@@ -23,12 +23,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ChildrenCount](#ChildrenCount) | Children count of the current node in the tree. | GetChildrenCount |  |
-| [Expanded](#Expanded) | Expanded state of the current node. | GetExpanded |  |
-| [NodeIndex](#NodeIndex) | Zero based index of the current node. | GetNodeIndex |  |
-| [NodeText](#NodeText) | Text of the current node. | GetNodeText |  |
-| [Selected](#Selected) | Selected state of the current node. | GetSelected |  |
-| [SelectedNodeText](#SelectedNodeText) | Text of the selected node. | GetSelectedNodeText |  |
+| [ChildrenCount](#childrencount) | Children count of the current node in the tree. | GetChildrenCount |  |
+| [Expanded](#expanded) | Expanded state of the current node. | GetExpanded |  |
+| [NodeIndex](#nodeindex) | Zero based index of the current node. | GetNodeIndex |  |
+| [NodeText](#nodetext) | Text of the current node. | GetNodeText |  |
+| [Selected](#selected) | Selected state of the current node. | GetSelected |  |
+| [SelectedNodeText](#selectednodetext) | Text of the selected node. | GetSelectedNodeText |  |
 
 
 
@@ -41,12 +41,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickNode](#DoClickNode) | Clicks specific node in the tree. |
-|	[DoCollapse](#DoCollapse) | Collapses specific node in the tree. |
-|	[DoExpand](#DoExpand) | Expands specific node in the tree. |
-|	[DoFindChild](#DoFindChild) | Finds child node by its path from the current node and remembers it as the current node. |
-|	[DoFindNode](#DoFindNode) | Searches for specific node in the tree and remembers it as the current node. |
-|	[DoGetPath](#DoGetPath) | Returns path to the current node. |
+|	[DoClickNode](#doclicknode) | Clicks specific node in the tree. |
+|	[DoCollapse](#docollapse) | Collapses specific node in the tree. |
+|	[DoExpand](#doexpand) | Expands specific node in the tree. |
+|	[DoFindChild](#dofindchild) | Finds child node by its path from the current node and remembers it as the current node. |
+|	[DoFindNode](#dofindnode) | Searches for specific node in the tree and remembers it as the current node. |
+|	[DoGetPath](#dogetpath) | Returns path to the current node. |
 
 
 
@@ -152,9 +152,13 @@ Accessors: GetSelectedNodeText
 ### Action Detail
 		
 <a name="DoClickNode"></a>    
-#### DoClickNode(path, separator, pathType)
+#### DoClickNode
 
 Clicks specific node in the tree.
+
+```javascript
+DoClickNode(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -177,9 +181,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.gwtexttree.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
-#### DoCollapse(path, separator, pathType)
+#### DoCollapse
 
 Collapses specific node in the tree.
+
+```javascript
+DoCollapse(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -202,9 +210,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.gwtexttree.docollapse"></a>
 
 <a name="DoExpand"></a>    
-#### DoExpand(path, separator, pathType)
+#### DoExpand
 
 Expands specific node in the tree.
+
+```javascript
+DoExpand(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -227,9 +239,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.gwtexttree.doexpand"></a>
 
 <a name="DoFindChild"></a>    
-#### DoFindChild(path, separator, pathType, expand)
+#### DoFindChild
 
 Finds child node by its path from the current node and remembers it as the current node. If current node is not set then Root node is used.
+
+```javascript
+DoFindChild(path, separator, pathType, expand) 
+```
 
 
 **Parameters:**
@@ -253,9 +269,13 @@ Finds child node by its path from the current node and remembers it as the curre
 <a name="see.also.gwtexttree.dofindchild"></a>
 
 <a name="DoFindNode"></a>    
-#### DoFindNode(path, separator, pathType, expand)
+#### DoFindNode
 
 Searches for specific node in the tree and remembers it as the current node.
+
+```javascript
+DoFindNode(path, separator, pathType, expand) 
+```
 
 
 **Parameters:**
@@ -279,9 +299,13 @@ Searches for specific node in the tree and remembers it as the current node.
 <a name="see.also.gwtexttree.dofindnode"></a>
 
 <a name="DoGetPath"></a>    
-#### DoGetPath(pathType, separator)
+#### DoGetPath
 
 Returns path to the current node.
+
+```javascript
+DoGetPath(pathType, separator) 
+```
 
 
 **Parameters:**

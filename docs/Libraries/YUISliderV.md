@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoChange](#DoChange) | Changes slider position. |
+|	[DoChange](#dochange) | Changes slider position. |
 
 
 
@@ -39,9 +39,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoChange"></a>    
-#### DoChange(value)
+#### DoChange
 
 Changes slider position.
+
+```javascript
+DoChange(value) 
+```
 
 
 **Parameters:**

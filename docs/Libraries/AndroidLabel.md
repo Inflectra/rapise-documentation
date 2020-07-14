@@ -19,7 +19,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText |  |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText |  |
 
 
 

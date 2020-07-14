@@ -23,14 +23,14 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount |  |
-| [ColumnIndex](#ColumnIndex) | Index of a column with a given name. | GetColumnIndex |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [RowCount](#RowCount) | Number of rows in the grid. | GetRowCount |  |
-| [SelectedRow](#SelectedRow) | Index of the selected row. | GetSelectedRow |  |
-| [SelectedRowCount](#SelectedRowCount) | Number of selected rows. | GetSelectedRowCount |  |
-| [SelectedRows](#SelectedRows) | Selected rows. | GetSelectedRows |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnIndex](#columnindex) | Index of a column with a given name. | GetColumnIndex |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount |  |
+| [SelectedRow](#selectedrow) | Index of the selected row. | GetSelectedRow |  |
+| [SelectedRowCount](#selectedrowcount) | Number of selected rows. | GetSelectedRowCount |  |
+| [SelectedRows](#selectedrows) | Selected rows. | GetSelectedRows |  |
 
 
 
@@ -43,8 +43,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell. |
-|	[DoFullText](#DoFullText) | Returns text representation of the table. |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell. |
+|	[DoFullText](#dofulltext) | Returns text representation of the table. |
 
 
 
@@ -210,9 +210,13 @@ Accessors: GetSelectedRows
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell.
+
+```javascript
+DoClickCell(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -237,9 +241,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domdynamicscrmgrid.doclickcell"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText()
+#### DoFullText
 
 Returns text representation of the table.
+
+```javascript
+DoFullText() 
+```
 
 
 

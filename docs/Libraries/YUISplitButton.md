@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Active](#Active) | Active state of the button. | GetActive |  |
+| [Active](#active) | Active state of the button. | GetActive |  |
 
 
 
@@ -36,8 +36,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#DoClick) | Clicks the button. |
-|	[DoMenu](#DoMenu) | Clicks menu of the split button. |
+|	[DoClick](#doclick) | Clicks the button. |
+|	[DoMenu](#domenu) | Clicks menu of the split button. |
 
 
 
@@ -68,9 +68,13 @@ Accessors: GetActive
 ### Action Detail
 		
 <a name="DoClick"></a>    
-#### DoClick(x, y)
+#### DoClick
 
 Clicks the button.
+
+```javascript
+DoClick(x, y) 
+```
 
 
 **Parameters:**
@@ -92,9 +96,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.yuisplitbutton.doclick"></a>
 
 <a name="DoMenu"></a>    
-#### DoMenu()
+#### DoMenu
 
 Clicks menu of the split button.
+
+```javascript
+DoMenu() 
+```
 
 
 

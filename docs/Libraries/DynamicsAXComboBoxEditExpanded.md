@@ -24,7 +24,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
@@ -37,9 +37,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(item)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(item) 
+```
 
 
 **Parameters:**
@@ -75,7 +79,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -88,7 +92,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -119,9 +123,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**

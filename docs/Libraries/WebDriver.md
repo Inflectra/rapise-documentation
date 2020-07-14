@@ -20,53 +20,53 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Actions](#Actions) | Gets Actions object. |
-|	[ClearSessions](#ClearSessions) | Deletes active sessions on Selenium grid. |
-|	[Close](#Close) | Close the Browser and Dispose of WebDriver. |
-|	[Cookies](#Cookies) | Gets Cookies object. |
-|	[CreateDriver](#CreateDriver) | This will create a WebDriver for currently selected Browser profile. |
-|	[CreateDriverForSession](#CreateDriverForSession) | Connects to active Selenium session with given URL and Id. |
-|	[Dispose](#Dispose) | Dispose of WebDriver. |
-|	[DumpSessions](#DumpSessions) | Prints information about active Appium sessions to output. |
-|	[ExecuteScript](#ExecuteScript) | Executes JavaScript in the context of the currently selected frame or window. |
-|	[FindElementByClassName](#FindElementByClassName) | Finds the first element in the page that matches the CSS Class supplied. |
-|	[FindElementByCssSelector](#FindElementByCssSelector) | Finds the first element matching the specified CSS selector. |
-|	[FindElementById](#FindElementById) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementByLinkText](#FindElementByLinkText) | Finds the first of elements that match the link text supplied. |
-|	[FindElementByName](#FindElementByName) | Finds the first of elements that match the name supplied. |
-|	[FindElementByPartialLinkText](#FindElementByPartialLinkText) | Finds the first of elements that match the part of the link text supplied. |
-|	[FindElementByTagName](#FindElementByTagName) | Finds the first of elements that match the DOM Tag supplied. |
-|	[FindElementByXPath](#FindElementByXPath) | Finds the first of elements that match the XPath supplied. |
-|	[FindElementsByClassName](#FindElementsByClassName) | Finds a list of elements that match the class name supplied. |
-|	[FindElementsByCssSelector](#FindElementsByCssSelector) | Finds all elements matching the specified CSS selector. |
-|	[FindElementsById](#FindElementsById) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementsByLinkText](#FindElementsByLinkText) | Finds a list of elements that match the link text supplied. |
-|	[FindElementsByName](#FindElementsByName) | Finds a list of elements that match the name supplied. |
-|	[FindElementsByPartialLinkText](#FindElementsByPartialLinkText) | Finds a list of elements that match the part of the link text supplied. |
-|	[FindElementsByTagName](#FindElementsByTagName) | Finds a list of elements that match the DOM Tag supplied. |
-|	[FindElementsByXPath](#FindElementsByXPath) | Finds a list of elements that match the XPath supplied. |
-|	[GetAddressOfRemoteServer](#GetAddressOfRemoteServer) |  |
-|	[GetCurrentWindowHandle](#GetCurrentWindowHandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
-|	[GetPageSource](#GetPageSource) | Gets the source of the page last loaded by the browser. |
-|	[GetProfileCapability](#GetProfileCapability) |  |
-|	[GetScreenshot](#GetScreenshot) | Gets the screenshot of the page. |
-|	[GetScreenshotIW](#GetScreenshotIW) |  |
-|	[GetSessionId](#GetSessionId) |  |
-|	[GetTitle](#GetTitle) | Gets the title of the current browser window. |
-|	[GetUrl](#GetUrl) | Gets the URL the browser is currently displaying. |
-|	[GetWindowHandles](#GetWindowHandles) | Gets the window handles of open browser windows. |
-|	[Quit](#Quit) | Disconnects from the Browser. |
-|	[ReconnectSession](#ReconnectSession) | Reads session information produced by SaveSession and connects to the mobile target. |
-|	[SaveSession](#SaveSession) | Saves session information for use by ReconnectSession. |
-|	[SetBrowserSize](#SetBrowserSize) | Sets size of a browser window. |
-|	[SetUrl](#SetUrl) | Sets the URL the browser is currently displaying. |
-|	[SwitchToAlert](#SwitchToAlert) | Switches to the currently active modal dialog for this particular driver instance. |
-|	[SwitchToDefaultContent](#SwitchToDefaultContent) | Change the active frame to the default. |
-|	[SwitchToFrame](#SwitchToFrame) | Move to different frame using its element. |
-|	[SwitchToLastWindow](#SwitchToLastWindow) | Switch to last browser window. |
-|	[SwitchToParentFrame](#SwitchToParentFrame) | Select the parent frame of the currently selected frame. |
-|	[SwitchToWindow](#SwitchToWindow) | Switch to window specified by handle. |
-|	[Window](#Window) | Gets Window object. |
+|	[Actions](#actions) | Gets Actions object. |
+|	[ClearSessions](#clearsessions) | Deletes active sessions on Selenium grid. |
+|	[Close](#close) | Close the Browser and Dispose of WebDriver. |
+|	[Cookies](#cookies) | Gets Cookies object. |
+|	[CreateDriver](#createdriver) | This will create a WebDriver for currently selected Browser profile. |
+|	[CreateDriverForSession](#createdriverforsession) | Connects to active Selenium session with given URL and Id. |
+|	[Dispose](#dispose) | Dispose of WebDriver. |
+|	[DumpSessions](#dumpsessions) | Prints information about active Appium sessions to output. |
+|	[ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
+|	[FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
+|	[FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
+|	[FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementByLinkText](#findelementbylinktext) | Finds the first of elements that match the link text supplied. |
+|	[FindElementByName](#findelementbyname) | Finds the first of elements that match the name supplied. |
+|	[FindElementByPartialLinkText](#findelementbypartiallinktext) | Finds the first of elements that match the part of the link text supplied. |
+|	[FindElementByTagName](#findelementbytagname) | Finds the first of elements that match the DOM Tag supplied. |
+|	[FindElementByXPath](#findelementbyxpath) | Finds the first of elements that match the XPath supplied. |
+|	[FindElementsByClassName](#findelementsbyclassname) | Finds a list of elements that match the class name supplied. |
+|	[FindElementsByCssSelector](#findelementsbycssselector) | Finds all elements matching the specified CSS selector. |
+|	[FindElementsById](#findelementsbyid) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementsByLinkText](#findelementsbylinktext) | Finds a list of elements that match the link text supplied. |
+|	[FindElementsByName](#findelementsbyname) | Finds a list of elements that match the name supplied. |
+|	[FindElementsByPartialLinkText](#findelementsbypartiallinktext) | Finds a list of elements that match the part of the link text supplied. |
+|	[FindElementsByTagName](#findelementsbytagname) | Finds a list of elements that match the DOM Tag supplied. |
+|	[FindElementsByXPath](#findelementsbyxpath) | Finds a list of elements that match the XPath supplied. |
+|	[GetAddressOfRemoteServer](#getaddressofremoteserver) |  |
+|	[GetCurrentWindowHandle](#getcurrentwindowhandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
+|	[GetPageSource](#getpagesource) | Gets the source of the page last loaded by the browser. |
+|	[GetProfileCapability](#getprofilecapability) |  |
+|	[GetScreenshot](#getscreenshot) | Gets the screenshot of the page. |
+|	[GetScreenshotIW](#getscreenshotiw) |  |
+|	[GetSessionId](#getsessionid) |  |
+|	[GetTitle](#gettitle) | Gets the title of the current browser window. |
+|	[GetUrl](#geturl) | Gets the URL the browser is currently displaying. |
+|	[GetWindowHandles](#getwindowhandles) | Gets the window handles of open browser windows. |
+|	[Quit](#quit) | Disconnects from the Browser. |
+|	[ReconnectSession](#reconnectsession) | Reads session information produced by SaveSession and connects to the mobile target. |
+|	[SaveSession](#savesession) | Saves session information for use by ReconnectSession. |
+|	[SetBrowserSize](#setbrowsersize) | Sets size of a browser window. |
+|	[SetUrl](#seturl) | Sets the URL the browser is currently displaying. |
+|	[SwitchToAlert](#switchtoalert) | Switches to the currently active modal dialog for this particular driver instance. |
+|	[SwitchToDefaultContent](#switchtodefaultcontent) | Change the active frame to the default. |
+|	[SwitchToFrame](#switchtoframe) | Move to different frame using its element. |
+|	[SwitchToLastWindow](#switchtolastwindow) | Switch to last browser window. |
+|	[SwitchToParentFrame](#switchtoparentframe) | Select the parent frame of the currently selected frame. |
+|	[SwitchToWindow](#switchtowindow) | Switch to window specified by handle. |
+|	[Window](#window) | Gets Window object. |
 
 
 
@@ -79,9 +79,13 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 ### Action Detail
 		
 <a name="Actions"></a>    
-#### Actions()
+#### Actions
 
 Gets Actions object.
+
+```javascript
+Actions() 
+```
 
 
 
@@ -90,9 +94,13 @@ Gets Actions object.
 <a name="see.also.webdriver.actions"></a>
 
 <a name="ClearSessions"></a>    
-#### ClearSessions()
+#### ClearSessions
 
 Deletes active sessions on Selenium grid.
+
+```javascript
+ClearSessions() 
+```
 
 
 
@@ -101,9 +109,13 @@ Deletes active sessions on Selenium grid.
 <a name="see.also.webdriver.clearsessions"></a>
 
 <a name="Close"></a>    
-#### Close()
+#### Close
 
 Close the Browser and Dispose of WebDriver.
+
+```javascript
+Close() 
+```
 
 
 
@@ -112,9 +124,13 @@ Close the Browser and Dispose of WebDriver.
 <a name="see.also.webdriver.close"></a>
 
 <a name="Cookies"></a>    
-#### Cookies()
+#### Cookies
 
 Gets Cookies object.
+
+```javascript
+Cookies() 
+```
 
 
 
@@ -123,9 +139,13 @@ Gets Cookies object.
 <a name="see.also.webdriver.cookies"></a>
 
 <a name="CreateDriver"></a>    
-#### CreateDriver(nonProfileCapsJson)
+#### CreateDriver
 
 This will create a WebDriver for currently selected Browser profile.
+
+```javascript
+CreateDriver(nonProfileCapsJson) 
+```
 
 
 **Parameters:**
@@ -146,9 +166,13 @@ WebDriver object.
 <a name="see.also.webdriver.createdriver"></a>
 
 <a name="CreateDriverForSession"></a>    
-#### CreateDriverForSession(addressOfRemoteServer, sessionId)
+#### CreateDriverForSession
 
 Connects to active Selenium session with given URL and Id.
+
+```javascript
+CreateDriverForSession(addressOfRemoteServer, sessionId) 
+```
 
 
 **Parameters:**
@@ -170,9 +194,13 @@ true if successful, false otherwise.
 <a name="see.also.webdriver.createdriverforsession"></a>
 
 <a name="Dispose"></a>    
-#### Dispose()
+#### Dispose
 
 Dispose of WebDriver.
+
+```javascript
+Dispose() 
+```
 
 
 
@@ -181,9 +209,13 @@ Dispose of WebDriver.
 <a name="see.also.webdriver.dispose"></a>
 
 <a name="DumpSessions"></a>    
-#### DumpSessions()
+#### DumpSessions
 
 Prints information about active Appium sessions to output.
+
+```javascript
+DumpSessions() 
+```
 
 
 
@@ -192,9 +224,13 @@ Prints information about active Appium sessions to output.
 <a name="see.also.webdriver.dumpsessions"></a>
 
 <a name="ExecuteScript"></a>    
-#### ExecuteScript(script, args)
+#### ExecuteScript
 
 Executes JavaScript in the context of the currently selected frame or window.
+
+```javascript
+ExecuteScript(script, args) 
+```
 
 
 **Parameters:**
@@ -216,9 +252,13 @@ Null, string or element depending on the script.
 <a name="see.also.webdriver.executescript"></a>
 
 <a name="FindElementByClassName"></a>    
-#### FindElementByClassName(className)
+#### FindElementByClassName
 
 Finds the first element in the page that matches the CSS Class supplied.
+
+```javascript
+FindElementByClassName(className) 
+```
 
 
 **Parameters:**
@@ -239,9 +279,13 @@ element or null.
 <a name="see.also.webdriver.findelementbyclassname"></a>
 
 <a name="FindElementByCssSelector"></a>    
-#### FindElementByCssSelector(cssSelector)
+#### FindElementByCssSelector
 
 Finds the first element matching the specified CSS selector.
+
+```javascript
+FindElementByCssSelector(cssSelector) 
+```
 
 
 **Parameters:**
@@ -262,9 +306,13 @@ element ot null.
 <a name="see.also.webdriver.findelementbycssselector"></a>
 
 <a name="FindElementById"></a>    
-#### FindElementById(id)
+#### FindElementById
 
 Finds the first element in the page that matches the ID supplied.
+
+```javascript
+FindElementById(id) 
+```
 
 
 **Parameters:**
@@ -285,9 +333,13 @@ element or null.
 <a name="see.also.webdriver.findelementbyid"></a>
 
 <a name="FindElementByLinkText"></a>    
-#### FindElementByLinkText(linkText)
+#### FindElementByLinkText
 
 Finds the first of elements that match the link text supplied.
+
+```javascript
+FindElementByLinkText(linkText) 
+```
 
 
 **Parameters:**
@@ -308,9 +360,13 @@ element or null.
 <a name="see.also.webdriver.findelementbylinktext"></a>
 
 <a name="FindElementByName"></a>    
-#### FindElementByName(name)
+#### FindElementByName
 
 Finds the first of elements that match the name supplied.
+
+```javascript
+FindElementByName(name) 
+```
 
 
 **Parameters:**
@@ -331,9 +387,13 @@ element or null.
 <a name="see.also.webdriver.findelementbyname"></a>
 
 <a name="FindElementByPartialLinkText"></a>    
-#### FindElementByPartialLinkText(partialLinkText)
+#### FindElementByPartialLinkText
 
 Finds the first of elements that match the part of the link text supplied.
+
+```javascript
+FindElementByPartialLinkText(partialLinkText) 
+```
 
 
 **Parameters:**
@@ -354,9 +414,13 @@ element or null.
 <a name="see.also.webdriver.findelementbypartiallinktext"></a>
 
 <a name="FindElementByTagName"></a>    
-#### FindElementByTagName(tagName)
+#### FindElementByTagName
 
 Finds the first of elements that match the DOM Tag supplied.
+
+```javascript
+FindElementByTagName(tagName) 
+```
 
 
 **Parameters:**
@@ -377,9 +441,13 @@ element or null.
 <a name="see.also.webdriver.findelementbytagname"></a>
 
 <a name="FindElementByXPath"></a>    
-#### FindElementByXPath(xpath)
+#### FindElementByXPath
 
 Finds the first of elements that match the XPath supplied.
+
+```javascript
+FindElementByXPath(xpath) 
+```
 
 
 **Parameters:**
@@ -400,9 +468,13 @@ element or null.
 <a name="see.also.webdriver.findelementbyxpath"></a>
 
 <a name="FindElementsByClassName"></a>    
-#### FindElementsByClassName(className)
+#### FindElementsByClassName
 
 Finds a list of elements that match the class name supplied.
+
+```javascript
+FindElementsByClassName(className) 
+```
 
 
 **Parameters:**
@@ -423,9 +495,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbyclassname"></a>
 
 <a name="FindElementsByCssSelector"></a>    
-#### FindElementsByCssSelector(cssSelector)
+#### FindElementsByCssSelector
 
 Finds all elements matching the specified CSS selector.
+
+```javascript
+FindElementsByCssSelector(cssSelector) 
+```
 
 
 **Parameters:**
@@ -446,9 +522,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbycssselector"></a>
 
 <a name="FindElementsById"></a>    
-#### FindElementsById(id)
+#### FindElementsById
 
 Finds the first element in the page that matches the ID supplied.
+
+```javascript
+FindElementsById(id) 
+```
 
 
 **Parameters:**
@@ -469,9 +549,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbyid"></a>
 
 <a name="FindElementsByLinkText"></a>    
-#### FindElementsByLinkText(linkText)
+#### FindElementsByLinkText
 
 Finds a list of elements that match the link text supplied.
+
+```javascript
+FindElementsByLinkText(linkText) 
+```
 
 
 **Parameters:**
@@ -492,9 +576,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbylinktext"></a>
 
 <a name="FindElementsByName"></a>    
-#### FindElementsByName(name)
+#### FindElementsByName
 
 Finds a list of elements that match the name supplied.
+
+```javascript
+FindElementsByName(name) 
+```
 
 
 **Parameters:**
@@ -515,9 +603,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbyname"></a>
 
 <a name="FindElementsByPartialLinkText"></a>    
-#### FindElementsByPartialLinkText(partialLinkText)
+#### FindElementsByPartialLinkText
 
 Finds a list of elements that match the part of the link text supplied.
+
+```javascript
+FindElementsByPartialLinkText(partialLinkText) 
+```
 
 
 **Parameters:**
@@ -538,9 +630,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbypartiallinktext"></a>
 
 <a name="FindElementsByTagName"></a>    
-#### FindElementsByTagName(tagName)
+#### FindElementsByTagName
 
 Finds a list of elements that match the DOM Tag supplied.
+
+```javascript
+FindElementsByTagName(tagName) 
+```
 
 
 **Parameters:**
@@ -561,9 +657,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbytagname"></a>
 
 <a name="FindElementsByXPath"></a>    
-#### FindElementsByXPath(xpath)
+#### FindElementsByXPath
 
 Finds a list of elements that match the XPath supplied.
+
+```javascript
+FindElementsByXPath(xpath) 
+```
 
 
 **Parameters:**
@@ -584,9 +684,13 @@ array of elements.
 <a name="see.also.webdriver.findelementsbyxpath"></a>
 
 <a name="GetAddressOfRemoteServer"></a>    
-#### GetAddressOfRemoteServer()
+#### GetAddressOfRemoteServer
 
 
+
+```javascript
+GetAddressOfRemoteServer() 
+```
 
 
 
@@ -600,9 +704,13 @@ URL of the remote Selenium server.
 <a name="see.also.webdriver.getaddressofremoteserver"></a>
 
 <a name="GetCurrentWindowHandle"></a>    
-#### GetCurrentWindowHandle()
+#### GetCurrentWindowHandle
 
 Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance.
+
+```javascript
+GetCurrentWindowHandle() 
+```
 
 
 
@@ -611,9 +719,13 @@ Gets the current window handle, which is an opaque handle to this window that un
 <a name="see.also.webdriver.getcurrentwindowhandle"></a>
 
 <a name="GetPageSource"></a>    
-#### GetPageSource()
+#### GetPageSource
 
 Gets the source of the page last loaded by the browser.
+
+```javascript
+GetPageSource() 
+```
 
 
 
@@ -622,9 +734,13 @@ Gets the source of the page last loaded by the browser.
 <a name="see.also.webdriver.getpagesource"></a>
 
 <a name="GetProfileCapability"></a>    
-#### GetProfileCapability(name)
+#### GetProfileCapability
 
 
+
+```javascript
+GetProfileCapability(name) 
+```
 
 
 **Parameters:**
@@ -640,9 +756,13 @@ Gets the source of the page last loaded by the browser.
 <a name="see.also.webdriver.getprofilecapability"></a>
 
 <a name="GetScreenshot"></a>    
-#### GetScreenshot()
+#### GetScreenshot
 
 Gets the screenshot of the page.
+
+```javascript
+GetScreenshot() 
+```
 
 
 
@@ -651,9 +771,13 @@ Gets the screenshot of the page.
 <a name="see.also.webdriver.getscreenshot"></a>
 
 <a name="GetScreenshotIW"></a>    
-#### GetScreenshotIW()
+#### GetScreenshotIW
 
 
+
+```javascript
+GetScreenshotIW() 
+```
 
 
 
@@ -662,9 +786,13 @@ Gets the screenshot of the page.
 <a name="see.also.webdriver.getscreenshotiw"></a>
 
 <a name="GetSessionId"></a>    
-#### GetSessionId()
+#### GetSessionId
 
 
+
+```javascript
+GetSessionId() 
+```
 
 
 
@@ -678,9 +806,13 @@ Id of the current session.
 <a name="see.also.webdriver.getsessionid"></a>
 
 <a name="GetTitle"></a>    
-#### GetTitle()
+#### GetTitle
 
 Gets the title of the current browser window.
+
+```javascript
+GetTitle() 
+```
 
 
 
@@ -689,9 +821,13 @@ Gets the title of the current browser window.
 <a name="see.also.webdriver.gettitle"></a>
 
 <a name="GetUrl"></a>    
-#### GetUrl()
+#### GetUrl
 
 Gets the URL the browser is currently displaying.
+
+```javascript
+GetUrl() 
+```
 
 
 
@@ -700,9 +836,13 @@ Gets the URL the browser is currently displaying.
 <a name="see.also.webdriver.geturl"></a>
 
 <a name="GetWindowHandles"></a>    
-#### GetWindowHandles()
+#### GetWindowHandles
 
 Gets the window handles of open browser windows.
+
+```javascript
+GetWindowHandles() 
+```
 
 
 
@@ -711,9 +851,13 @@ Gets the window handles of open browser windows.
 <a name="see.also.webdriver.getwindowhandles"></a>
 
 <a name="Quit"></a>    
-#### Quit()
+#### Quit
 
 Disconnects from the Browser.
+
+```javascript
+Quit() 
+```
 
 
 
@@ -722,9 +866,13 @@ Disconnects from the Browser.
 <a name="see.also.webdriver.quit"></a>
 
 <a name="ReconnectSession"></a>    
-#### ReconnectSession(autoCreate)
+#### ReconnectSession
 
 Reads session information produced by SaveSession and connects to the mobile target.
+
+```javascript
+ReconnectSession(autoCreate) 
+```
 
 
 **Parameters:**
@@ -740,9 +888,13 @@ Reads session information produced by SaveSession and connects to the mobile tar
 <a name="see.also.webdriver.reconnectsession"></a>
 
 <a name="SaveSession"></a>    
-#### SaveSession()
+#### SaveSession
 
 Saves session information for use by ReconnectSession.
+
+```javascript
+SaveSession() 
+```
 
 
 
@@ -751,9 +903,13 @@ Saves session information for use by ReconnectSession.
 <a name="see.also.webdriver.savesession"></a>
 
 <a name="SetBrowserSize"></a>    
-#### SetBrowserSize(width, height)
+#### SetBrowserSize
 
 Sets size of a browser window.
+
+```javascript
+SetBrowserSize(width, height) 
+```
 
 
 **Parameters:**
@@ -770,9 +926,13 @@ Sets size of a browser window.
 <a name="see.also.webdriver.setbrowsersize"></a>
 
 <a name="SetUrl"></a>    
-#### SetUrl(url)
+#### SetUrl
 
 Sets the URL the browser is currently displaying.
+
+```javascript
+SetUrl(url) 
+```
 
 
 **Parameters:**
@@ -788,9 +948,13 @@ Sets the URL the browser is currently displaying.
 <a name="see.also.webdriver.seturl"></a>
 
 <a name="SwitchToAlert"></a>    
-#### SwitchToAlert()
+#### SwitchToAlert
 
 Switches to the currently active modal dialog for this particular driver instance.
+
+```javascript
+SwitchToAlert() 
+```
 
 
 
@@ -799,9 +963,13 @@ Switches to the currently active modal dialog for this particular driver instanc
 <a name="see.also.webdriver.switchtoalert"></a>
 
 <a name="SwitchToDefaultContent"></a>    
-#### SwitchToDefaultContent()
+#### SwitchToDefaultContent
 
 Change the active frame to the default.
+
+```javascript
+SwitchToDefaultContent() 
+```
 
 
 
@@ -810,9 +978,13 @@ Change the active frame to the default.
 <a name="see.also.webdriver.switchtodefaultcontent"></a>
 
 <a name="SwitchToFrame"></a>    
-#### SwitchToFrame(el)
+#### SwitchToFrame
 
 Move to different frame using its element.
+
+```javascript
+SwitchToFrame(el) 
+```
 
 
 **Parameters:**
@@ -828,9 +1000,13 @@ Move to different frame using its element.
 <a name="see.also.webdriver.switchtoframe"></a>
 
 <a name="SwitchToLastWindow"></a>    
-#### SwitchToLastWindow()
+#### SwitchToLastWindow
 
 Switch to last browser window.
+
+```javascript
+SwitchToLastWindow() 
+```
 
 
 
@@ -839,9 +1015,13 @@ Switch to last browser window.
 <a name="see.also.webdriver.switchtolastwindow"></a>
 
 <a name="SwitchToParentFrame"></a>    
-#### SwitchToParentFrame()
+#### SwitchToParentFrame
 
 Select the parent frame of the currently selected frame.
+
+```javascript
+SwitchToParentFrame() 
+```
 
 
 
@@ -850,9 +1030,13 @@ Select the parent frame of the currently selected frame.
 <a name="see.also.webdriver.switchtoparentframe"></a>
 
 <a name="SwitchToWindow"></a>    
-#### SwitchToWindow(windowHandle)
+#### SwitchToWindow
 
 Switch to window specified by handle.
+
+```javascript
+SwitchToWindow(windowHandle) 
+```
 
 
 **Parameters:**
@@ -868,9 +1052,13 @@ Switch to window specified by handle.
 <a name="see.also.webdriver.switchtowindow"></a>
 
 <a name="Window"></a>    
-#### Window()
+#### Window
 
 Gets Window object.
+
+```javascript
+Window() 
+```
 
 
 

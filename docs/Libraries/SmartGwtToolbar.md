@@ -24,7 +24,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Clicks on a toolbar item. |
+|	[DoClickItem](#doclickitem) | Clicks on a toolbar item. |
 
 
 
@@ -37,9 +37,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(index)
+#### DoClickItem
 
 Clicks on a toolbar item.
+
+```javascript
+DoClickItem(index) 
+```
 
 
 **Parameters:**

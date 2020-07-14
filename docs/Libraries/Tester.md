@@ -17,10 +17,10 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 | **Property** | **Description** |
 | ------------ | --------------- |
-| [Fail](#Fail) | Test status, test failed. |
-| [Info](#Info) | Test status, test is neither passed nor failed. |
-| [Pass](#Pass) | Test status, test passed. |
-| [Unresolved](#Unresolved) | Test status, test status is unresolved, test terminated unexpectedly. |
+| [Fail](#fail) | Test status, test failed. |
+| [Info](#info) | Test status, test is neither passed nor failed. |
+| [Pass](#pass) | Test status, test passed. |
+| [Unresolved](#unresolved) | Test status, test status is unresolved, test terminated unexpectedly. |
 
 
 
@@ -33,28 +33,28 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Assert](#Assert) | Checks if condition is 'true' and saves corresponding Report entry. |
-|	[AssertEqual](#AssertEqual) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
-|	[AssertImage](#AssertImage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
-|	[BeginTest](#BeginTest) | Marks beginning of a test with a given name. |
-|	[CaptureDesktopImage](#CaptureDesktopImage) | Captures image of the desktop and adds it to the report. |
-|	[CaptureObjectImage](#CaptureObjectImage) | Captures image of an object and adds it to the report. |
-|	[CaptureWindowImage](#CaptureWindowImage) | Captures image of an application window matched by title and class and adds it to the report. |
-|	[DumpCmdArgsJson](#DumpCmdArgsJson) | Dump node.json with all arguments. |
-|	[EndTest](#EndTest) | Marks end of a currently executed test. |
-|	[FailTest](#FailTest) | Stops test execution and sets it's status to failed. |
-|	[GetParam](#GetParam) | Read parameter field passed into the Test function by field name. |
-|	[GetReportAttribute](#GetReportAttribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
-|	[GetTestStatus](#GetTestStatus) | Gets status of currently executed test. |
-|	[IgnoreStatus](#IgnoreStatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
-|	[Message](#Message) | Saves corresponding Report message. |
-|	[MessageBox](#MessageBox) | Shows message box to user. |
-|	[MessageBoxPrompt](#MessageBoxPrompt) | Shows message box with question to the user and checks if user presses "Yes" or "No". |
-|	[PopReportAttribute](#PopReportAttribute) | Resets an attribute to its previous value. |
-|	[PushReportAttribute](#PushReportAttribute) | <p>Maintains "stacked" attributes. |
-|	[ResetReportAttribute](#ResetReportAttribute) | Removes report attribute previously set by SetReportAttribute. |
-|	[SetReportAttribute](#SetReportAttribute) | Set persistent attribute. |
-|	[SuppressReport](#SuppressReport) | In SuppressReport mode all assertions are ignored. |
+|	[Assert](#assert) | Checks if condition is 'true' and saves corresponding Report entry. |
+|	[AssertEqual](#assertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
+|	[AssertImage](#assertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
+|	[BeginTest](#begintest) | Marks beginning of a test with a given name. |
+|	[CaptureDesktopImage](#capturedesktopimage) | Captures image of the desktop and adds it to the report. |
+|	[CaptureObjectImage](#captureobjectimage) | Captures image of an object and adds it to the report. |
+|	[CaptureWindowImage](#capturewindowimage) | Captures image of an application window matched by title and class and adds it to the report. |
+|	[DumpCmdArgsJson](#dumpcmdargsjson) | Dump node.json with all arguments. |
+|	[EndTest](#endtest) | Marks end of a currently executed test. |
+|	[FailTest](#failtest) | Stops test execution and sets it's status to failed. |
+|	[GetParam](#getparam) | Read parameter field passed into the Test function by field name. |
+|	[GetReportAttribute](#getreportattribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
+|	[GetTestStatus](#getteststatus) | Gets status of currently executed test. |
+|	[IgnoreStatus](#ignorestatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
+|	[Message](#message) | Saves corresponding Report message. |
+|	[MessageBox](#messagebox) | Shows message box to user. |
+|	[MessageBoxPrompt](#messageboxprompt) | Shows message box with question to the user and checks if user presses "Yes" or "No". |
+|	[PopReportAttribute](#popreportattribute) | Resets an attribute to its previous value. |
+|	[PushReportAttribute](#pushreportattribute) | <p>Maintains "stacked" attributes. |
+|	[ResetReportAttribute](#resetreportattribute) | Removes report attribute previously set by SetReportAttribute. |
+|	[SetReportAttribute](#setreportattribute) | Set persistent attribute. |
+|	[SuppressReport](#suppressreport) | In SuppressReport mode all assertions are ignored. |
 
 
 
@@ -122,11 +122,15 @@ Type: number
 ### Action Detail
 		
 <a name="Assert"></a>    
-#### Assert(message, condition, data, tags)
+#### Assert
 
 Checks if condition is 'true' and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+Assert(message, condition, data, tags) 
+```
 
 
 **Parameters:**
@@ -145,11 +149,15 @@ additional data (links, images, comments) set via 'data' parameter.
 <a name="see.also.tester.assert"></a>
 
 <a name="AssertEqual"></a>    
-#### AssertEqual(message, obj1, obj2, data, tags)
+#### AssertEqual
 
 Checks if obj1 equals to obj2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertEqual(message, obj1, obj2, data, tags) 
+```
 
 
 **Parameters:**
@@ -169,11 +177,15 @@ additional data (links, images, comments) set via 'data' parameter.
 <a name="see.also.tester.assertequal"></a>
 
 <a name="AssertImage"></a>    
-#### AssertImage(message, img1, path, data, tags)
+#### AssertImage
 
 Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertImage(message, img1, path, data, tags) 
+```
 
 
 **Parameters:**
@@ -193,9 +205,13 @@ additional data (links, images, comments) set via 'data' parameter.
 <a name="see.also.tester.assertimage"></a>
 
 <a name="BeginTest"></a>    
-#### BeginTest(name, path, optionalParams)
+#### BeginTest
 
 Marks beginning of a test with a given name.
+
+```javascript
+BeginTest(name, path, optionalParams) 
+```
 
 
 **Parameters:**
@@ -213,9 +229,13 @@ Marks beginning of a test with a given name.
 <a name="see.also.tester.begintest"></a>
 
 <a name="CaptureDesktopImage"></a>    
-#### CaptureDesktopImage(caption)
+#### CaptureDesktopImage
 
 Captures image of the desktop and adds it to the report.
+
+```javascript
+CaptureDesktopImage(caption) 
+```
 
 
 **Parameters:**
@@ -231,9 +251,13 @@ Captures image of the desktop and adds it to the report.
 <a name="see.also.tester.capturedesktopimage"></a>
 
 <a name="CaptureObjectImage"></a>    
-#### CaptureObjectImage(caption, objId)
+#### CaptureObjectImage
 
 Captures image of an object and adds it to the report.
+
+```javascript
+CaptureObjectImage(caption, objId) 
+```
 
 
 **Parameters:**
@@ -250,9 +274,13 @@ Captures image of an object and adds it to the report.
 <a name="see.also.tester.captureobjectimage"></a>
 
 <a name="CaptureWindowImage"></a>    
-#### CaptureWindowImage(caption, windowTitle, windowClass, bringToFront)
+#### CaptureWindowImage
 
 Captures image of an application window matched by title and class and adds it to the report.
+
+```javascript
+CaptureWindowImage(caption, windowTitle, windowClass, bringToFront) 
+```
 
 
 **Parameters:**
@@ -271,9 +299,13 @@ Captures image of an application window matched by title and class and adds it t
 <a name="see.also.tester.capturewindowimage"></a>
 
 <a name="DumpCmdArgsJson"></a>    
-#### DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)
+#### DumpCmdArgsJson
 
 Dump node.json with all arguments.
+
+```javascript
+DumpCmdArgsJson(optNodeJsonPath, mkPackageJson) 
+```
 
 
 **Parameters:**
@@ -290,9 +322,13 @@ Dump node.json with all arguments.
 <a name="see.also.tester.dumpcmdargsjson"></a>
 
 <a name="EndTest"></a>    
-#### EndTest()
+#### EndTest
 
 Marks end of a currently executed test. Calculates test results and performs finalization of test execution.
+
+```javascript
+EndTest() 
+```
 
 
 
@@ -301,9 +337,13 @@ Marks end of a currently executed test. Calculates test results and performs fin
 <a name="see.also.tester.endtest"></a>
 
 <a name="FailTest"></a>    
-#### FailTest(message)
+#### FailTest
 
 Stops test execution and sets it's status to failed.
+
+```javascript
+FailTest(message, internal) 
+```
 
 
 **Parameters:**
@@ -311,6 +351,7 @@ Stops test execution and sets it's status to failed.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Failure description.<br>Optional, Default: Test stopped on error. |
+| internal |  |	 |
 
 
 
@@ -319,9 +360,13 @@ Stops test execution and sets it's status to failed.
 <a name="see.also.tester.failtest"></a>
 
 <a name="GetParam"></a>    
-#### GetParam(paramName, defaultValue)
+#### GetParam
 
 Read parameter field passed into the Test function by field name.
+
+```javascript
+GetParam(paramName, defaultValue) 
+```
 
 
 **Parameters:**
@@ -338,9 +383,13 @@ Read parameter field passed into the Test function by field name.
 <a name="see.also.tester.getparam"></a>
 
 <a name="GetReportAttribute"></a>    
-#### GetReportAttribute(name)
+#### GetReportAttribute
 
 Gets report attribute previously set by PushReportAttribute or SetReportAttribute.
+
+```javascript
+GetReportAttribute(name) 
+```
 
 
 **Parameters:**
@@ -356,9 +405,13 @@ Gets report attribute previously set by PushReportAttribute or SetReportAttribut
 <a name="see.also.tester.getreportattribute"></a>
 
 <a name="GetTestStatus"></a>    
-#### GetTestStatus()
+#### GetTestStatus
 
 Gets status of currently executed test.
+
+```javascript
+GetTestStatus() 
+```
 
 
 
@@ -376,7 +429,7 @@ One of:
 <a name="see.also.tester.getteststatus"></a>
 
 <a name="IgnoreStatus"></a>    
-#### IgnoreStatus(ignore)
+#### IgnoreStatus
 
 <p>In IgnoreStatus mode the assertion status is always treated as "Info".
 Real status is written to "realStatus" attribute in this case and used
@@ -390,6 +443,10 @@ just for information purposes (i.e. it does not affect final test status).</p>
   Tester.Assert("Test passed", true);
   // The overall test is passed because failed assertion is ignored.
 </pre>
+
+```javascript
+IgnoreStatus(ignore) 
+```
 
 
 **Parameters:**
@@ -405,10 +462,14 @@ just for information purposes (i.e. it does not affect final test status).</p>
 <a name="see.also.tester.ignorestatus"></a>
 
 <a name="Message"></a>    
-#### Message(message, data, tags)
+#### Message
 
 Saves corresponding Report message.
 Message may contain some additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+Message(message, data, tags) 
+```
 
 
 **Parameters:**
@@ -426,9 +487,13 @@ Message may contain some additional data (links, images, comments) set via 'data
 <a name="see.also.tester.message"></a>
 
 <a name="MessageBox"></a>    
-#### MessageBox(message)
+#### MessageBox
 
 Shows message box to user. Use it for verbose and manual testing.
+
+```javascript
+MessageBox(message) 
+```
 
 
 **Parameters:**
@@ -444,11 +509,15 @@ Shows message box to user. Use it for verbose and manual testing.
 <a name="see.also.tester.messagebox"></a>
 
 <a name="MessageBoxPrompt"></a>    
-#### MessageBoxPrompt(question)
+#### MessageBoxPrompt
 
 Shows message box with question to the user and checks if user presses "Yes" or "No".
   "Yes" => "Pass" goes to the report with this message.
   "No" => "Fail" is reported.
+
+```javascript
+MessageBoxPrompt(question) 
+```
 
 
 **Parameters:**
@@ -464,9 +533,13 @@ Shows message box with question to the user and checks if user presses "Yes" or 
 <a name="see.also.tester.messageboxprompt"></a>
 
 <a name="PopReportAttribute"></a>    
-#### PopReportAttribute(name)
+#### PopReportAttribute
 
 Resets an attribute to its previous value. See PushReportAttribute for more information.
+
+```javascript
+PopReportAttribute(name) 
+```
 
 
 **Parameters:**
@@ -487,7 +560,7 @@ string: Previous value. Null if no such stacked attribute found.
 <a name="see.also.tester.popreportattribute"></a>
 
 <a name="PushReportAttribute"></a>    
-#### PushReportAttribute(name, value)
+#### PushReportAttribute
 
 <p>Maintains "stacked" attributes. Useful for nesting. </p>
 <br>
@@ -515,6 +588,10 @@ another scenario (scenario Login) and then continues its own test actions.</p>
  }
 </pre>
 
+```javascript
+PushReportAttribute(name, value) 
+```
+
 
 **Parameters:**
 
@@ -530,9 +607,13 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 <a name="see.also.tester.pushreportattribute"></a>
 
 <a name="ResetReportAttribute"></a>    
-#### ResetReportAttribute(name)
+#### ResetReportAttribute
 
 Removes report attribute previously set by SetReportAttribute.
+
+```javascript
+ResetReportAttribute(name) 
+```
 
 
 **Parameters:**
@@ -548,11 +629,15 @@ Removes report attribute previously set by SetReportAttribute.
 <a name="see.also.tester.resetreportattribute"></a>
 
 <a name="SetReportAttribute"></a>    
-#### SetReportAttribute(name, value)
+#### SetReportAttribute
 
 Set persistent attribute. It will be set for all subsequent report items
 (assertions, tests, requirements, and so on). It may be changed by calling
 the ResetReportAttribute function.
+
+```javascript
+SetReportAttribute(name, value) 
+```
 
 
 **Parameters:**
@@ -569,7 +654,7 @@ the ResetReportAttribute function.
 <a name="see.also.tester.setreportattribute"></a>
 
 <a name="SuppressReport"></a>    
-#### SuppressReport(suppress)
+#### SuppressReport
 
 In SuppressReport mode all assertions are ignored. That means no lines are added to report and all statuses are treated as "Info".
 This mode is like IgnoreStatus mode but no status messages are added to report.
@@ -579,6 +664,10 @@ This mode is like IgnoreStatus mode but no status messages are added to report.
   Tester.Assert("No assertion", false); // Status of this assertion will be ignored and no record will be added to report
   SeS('Obj1').DoClick(); // No line will be added to report and operation status will be ignored
   Tester.SuppressReport(false);
+```
+
+```javascript
+SuppressReport(suppress) 
 ```
 
 

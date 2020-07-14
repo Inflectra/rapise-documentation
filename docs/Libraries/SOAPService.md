@@ -21,13 +21,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Credential](#Credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
-| [Name](#Name) | The name of the request operation | GetName |  |
-| [ResponseBodyObject](#ResponseBodyObject) | The body of the HTTP response deserialized from SOAP into a JavaScript object. | GetResponseBodyObject |  |
-| [ResponseBodyText](#ResponseBodyText) | The body of the HTTP response in raw text format. | GetResponseBodyText |  |
-| [ResponseHeaders](#ResponseHeaders) | Returns the list of HTTP headers returned with the HTTP response. | GetResponseHeaders |  |
-| [ResponseIsErrorStatus](#ResponseIsErrorStatus) | Returns 'true 'if an HTTP error code came back from the web service. | GetResponseIsErrorStatus |  |
-| [Url](#Url) | The URL being used to access the web service. | GetUrl | SetUrl |
+| [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
+| [Name](#name) | The name of the request operation | GetName |  |
+| [ResponseBodyObject](#responsebodyobject) | The body of the HTTP response deserialized from SOAP into a JavaScript object. | GetResponseBodyObject |  |
+| [ResponseBodyText](#responsebodytext) | The body of the HTTP response in raw text format. | GetResponseBodyText |  |
+| [ResponseHeaders](#responseheaders) | Returns the list of HTTP headers returned with the HTTP response. | GetResponseHeaders |  |
+| [ResponseIsErrorStatus](#responseiserrorstatus) | Returns 'true 'if an HTTP error code came back from the web service. | GetResponseIsErrorStatus |  |
+| [Url](#url) | The URL being used to access the web service. | GetUrl | SetUrl |
 
 
 
@@ -40,9 +40,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoExecute](#DoExecute) | Executes a SOAP service operation, substituting any of the provided parameter values if necessary. |
-|	[DoExecuteRaw](#DoExecuteRaw) | Sends a SOAP request as is. |
-|	[DoVerify](#DoVerify) | Checks that a given part of response equals the expected value. |
+|	[DoExecute](#doexecute) | Executes a SOAP service operation, substituting any of the provided parameter values if necessary. |
+|	[DoExecuteRaw](#doexecuteraw) | Sends a SOAP request as is. |
+|	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
 
@@ -189,9 +189,13 @@ Accessors: GetUrl, SetUrl
 ### Action Detail
 		
 <a name="DoExecute"></a>    
-#### DoExecute(method, params, headers)
+#### DoExecute
 
 Executes a SOAP service operation, substituting any of the provided parameter values if necessary.
+
+```javascript
+DoExecute(method, params, headers) 
+```
 
 
 **Parameters:**
@@ -214,9 +218,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.soapservice.doexecute"></a>
 
 <a name="DoExecuteRaw"></a>    
-#### DoExecuteRaw(method, body, params)
+#### DoExecuteRaw
 
 Sends a SOAP request as is.
+
+```javascript
+DoExecuteRaw(method, body, params) 
+```
 
 
 **Parameters:**
@@ -239,9 +247,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.soapservice.doexecuteraw"></a>
 
 <a name="DoVerify"></a>    
-#### DoVerify(msg, jsonPath, expectedValue)
+#### DoVerify
 
 Checks that a given part of response equals the expected value.
+
+```javascript
+DoVerify(msg, jsonPath, expectedValue) 
+```
 
 
 **Parameters:**

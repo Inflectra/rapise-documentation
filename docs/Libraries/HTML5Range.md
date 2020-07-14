@@ -23,8 +23,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [MaxValue](#MaxValue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue |  |
-| [MinValue](#MinValue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue |  |
+| [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue |  |
+| [MinValue](#minvalue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue |  |
 
 
 

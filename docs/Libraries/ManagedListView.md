@@ -25,15 +25,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [CheckBoxes](#CheckBoxes) | Returns true if items have checkboxes near them. | GetCheckBoxes |  |
-| [CheckedCount](#CheckedCount) | Returns number of checked items in ListView. | GetCheckedCount |  |
-| [CheckedIndices](#CheckedIndices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetCheckedIndices |  |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [ItemIndexByName](#ItemIndexByName) | Returns item index by its name. | GetItemIndexByName |  |
-| [ItemNameByIndex](#ItemNameByIndex) | Returns item name by its index. | GetItemNameByIndex |  |
-| [SelectedIndices](#SelectedIndices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetSelectedIndices |  |
-| [SelectedItems](#SelectedItems) | Text of all the selected items in a single string. | GetSelectedItems |  |
-| [SelectionCount](#SelectionCount) | Number of selected items. | GetSelectionCount |  |
+| [CheckBoxes](#checkboxes) | Returns true if items have checkboxes near them. | GetCheckBoxes |  |
+| [CheckedCount](#checkedcount) | Returns number of checked items in ListView. | GetCheckedCount |  |
+| [CheckedIndices](#checkedindices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetCheckedIndices |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
+| [ItemNameByIndex](#itemnamebyindex) | Returns item name by its index. | GetItemNameByIndex |  |
+| [SelectedIndices](#selectedindices) | Returns string of indexes delimited by separator or array of indexes of selected elements. | GetSelectedIndices |  |
+| [SelectedItems](#selecteditems) | Text of all the selected items in a single string. | GetSelectedItems |  |
+| [SelectionCount](#selectioncount) | Number of selected items. | GetSelectionCount |  |
 
 
 
@@ -46,12 +46,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAddSelection](#DoAddSelection) | Extends selection. |
-|	[DoCheckItem](#DoCheckItem) | Checks items of this object. |
-|	[DoClearSelection](#DoClearSelection) | Clears selection. |
-|	[DoRemoveSelection](#DoRemoveSelection) | Removes selection from specified items. |
-|	[DoSelectItem](#DoSelectItem) | Selects items of this object. |
-|	[DoSetCheck](#DoSetCheck) | Sets 'checked' state of the specified node. |
+|	[DoAddSelection](#doaddselection) | Extends selection. |
+|	[DoCheckItem](#docheckitem) | Checks items of this object. |
+|	[DoClearSelection](#doclearselection) | Clears selection. |
+|	[DoRemoveSelection](#doremoveselection) | Removes selection from specified items. |
+|	[DoSelectItem](#doselectitem) | Selects items of this object. |
+|	[DoSetCheck](#dosetcheck) | Sets 'checked' state of the specified node. |
 
 
 
@@ -240,16 +240,20 @@ Accessors: GetSelectionCount
 ### Action Detail
 		
 <a name="DoAddSelection"></a>    
-#### DoAddSelection(items, separator, itemsType)
+#### DoAddSelection
 
 Extends selection.
+
+```javascript
+DoAddSelection(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -265,16 +269,20 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedlistview.doaddselection"></a>
 
 <a name="DoCheckItem"></a>    
-#### DoCheckItem(items, separator, itemsType)
+#### DoCheckItem
 
 Checks items of this object.
+
+```javascript
+DoCheckItem(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -290,9 +298,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedlistview.docheckitem"></a>
 
 <a name="DoClearSelection"></a>    
-#### DoClearSelection()
+#### DoClearSelection
 
 Clears selection.
+
+```javascript
+DoClearSelection() 
+```
 
 
 
@@ -306,16 +318,20 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedlistview.doclearselection"></a>
 
 <a name="DoRemoveSelection"></a>    
-#### DoRemoveSelection(items, separator, itemsType)
+#### DoRemoveSelection
 
 Removes selection from specified items.
+
+```javascript
+DoRemoveSelection(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -331,16 +347,20 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedlistview.doremoveselection"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(items, separator, itemsType)
+#### DoSelectItem
 
 Selects items of this object. First it clears existing selection.
+
+```javascript
+DoSelectItem(items, separator, itemsType) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
@@ -356,9 +376,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedlistview.doselectitem"></a>
 
 <a name="DoSetCheck"></a>    
-#### DoSetCheck(bcheck, items, separator, itemsType)
+#### DoSetCheck
 
 Sets 'checked' state of the specified node.
+
+```javascript
+DoSetCheck(bcheck, items, separator, itemsType) 
+```
 
 
 **Parameters:**
@@ -366,7 +390,7 @@ Sets 'checked' state of the specified node.
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | bcheck | boolean |	Desired check state for the button. |
-| items | number \| string|array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
+| items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
 | separator | string |	Separator character.<br>Optional, Default: ;. |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 

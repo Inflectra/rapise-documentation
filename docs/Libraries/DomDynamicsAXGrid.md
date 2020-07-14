@@ -23,10 +23,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [RowCount](#RowCount) | Number of rows in the grid. | GetRowCount |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount |  |
 
 
 
@@ -39,9 +39,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell. |
-|	[DoClickText](#DoClickText) | Clicks on a specific text inside the grid. |
-|	[DoSetText](#DoSetText) | Enters text into the active cell. |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell. |
+|	[DoClickText](#doclicktext) | Clicks on a specific text inside the grid. |
+|	[DoSetText](#dosettext) | Enters text into the active cell. |
 
 
 
@@ -132,9 +132,13 @@ Accessors: GetRowCount
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell.
+
+```javascript
+DoClickCell(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -159,9 +163,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domdynamicsaxgrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
-#### DoClickText(text, index)
+#### DoClickText
 
 Clicks on a specific text inside the grid.
+
+```javascript
+DoClickText(text, index) 
+```
 
 
 **Parameters:**
@@ -183,9 +191,13 @@ Clicks on a specific text inside the grid.
 <a name="see.also.domdynamicsaxgrid.doclicktext"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(text)
+#### DoSetText
 
 Enters text into the active cell. Use DoClickCell to make a cell active.
+
+```javascript
+DoSetText(text) 
+```
 
 
 **Parameters:**

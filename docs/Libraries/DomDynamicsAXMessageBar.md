@@ -23,9 +23,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of messages. | GetItemCount |  |
-| [ItemText](#ItemText) | Text of an item at index. | GetItemText |  |
-| [Text](#Text) | Text of the first item. | GetText |  |
+| [ItemCount](#itemcount) | Number of messages. | GetItemCount |  |
+| [ItemText](#itemtext) | Text of an item at index. | GetItemText |  |
+| [Text](#text) | Text of the first item. | GetText |  |
 
 
 

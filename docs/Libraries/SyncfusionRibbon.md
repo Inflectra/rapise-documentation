@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [SelectedTab](#SelectedTab) | Text of the selected tab | GetSelectedTab | SetSelectedTab |
+| [SelectedTab](#selectedtab) | Text of the selected tab | GetSelectedTab | SetSelectedTab |
 
 
 
@@ -38,8 +38,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Performs click on the ribbon item given by caption or tooltip text |
-|	[DoSelectTab](#DoSelectTab) | Selects the tab by name. |
+|	[DoClickItem](#doclickitem) | Performs click on the ribbon item given by caption or tooltip text |
+|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
@@ -70,9 +70,13 @@ Accessors: GetSelectedTab, SetSelectedTab
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(captionOrTooltip)
+#### DoClickItem
 
 Performs click on the ribbon item given by caption or tooltip text
+
+```javascript
+DoClickItem(captionOrTooltip) 
+```
 
 
 **Parameters:**
@@ -93,9 +97,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.syncfusionribbon.doclickitem"></a>
 
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(tabName)
+#### DoSelectTab
 
 Selects the tab by name.
+
+```javascript
+DoSelectTab(tabName) 
+```
 
 
 **Parameters:**

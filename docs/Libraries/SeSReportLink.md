@@ -20,7 +20,7 @@ Used to show link (url and text) in the report.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SeSReportLink](#SeSReportLink) | Used to show link (url and text) in the report. |
+|	[SeSReportLink](#sesreportlink) | Used to show link (url and text) in the report. |
 
 
 
@@ -33,9 +33,13 @@ Used to show link (url and text) in the report.
 ### Action Detail
 		
 <a name="SeSReportLink"></a>    
-#### SeSReportLink(url, text)
+#### SeSReportLink
 
 Used to show link (url and text) in the report.
+
+```javascript
+SeSReportLink(url, text) 
+```
 
 
 **Parameters:**

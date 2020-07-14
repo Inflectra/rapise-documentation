@@ -20,21 +20,21 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFlick](#DoFlick) | Flick action. |
-|	[DoGoToUrl](#DoGoToUrl) | Opens URL in active browser. |
-|	[DoPressBack](#DoPressBack) | Presses Back button. |
-|	[DoPressHome](#DoPressHome) | Presses Home button. |
-|	[DoPressKeyCode](#DoPressKeyCode) | Presses key with code. |
-|	[DoPressMenu](#DoPressMenu) | Presses Menu button. |
-|	[DoScreenshot](#DoScreenshot) | Makes screenshot of a device. |
-|	[DoStartActivity](#DoStartActivity) | Starts activity. |
-|	[DoStartVideoRecording](#DoStartVideoRecording) | Starts video recording on a device. |
-|	[DoStopVideoRecording](#DoStopVideoRecording) | Stops video recording on a device. |
-|	[DoSwipe](#DoSwipe) | Swipe action. |
-|	[DoTap](#DoTap) | Tap screen. |
-|	[GetCapability](#GetCapability) | Gets capability with specified name. |
-|	[GetContext](#GetContext) | Gets current context. |
-|	[SetContext](#SetContext) | Sets context. |
+|	[DoFlick](#doflick) | Flick action. |
+|	[DoGoToUrl](#dogotourl) | Opens URL in active browser. |
+|	[DoPressBack](#dopressback) | Presses Back button. |
+|	[DoPressHome](#dopresshome) | Presses Home button. |
+|	[DoPressKeyCode](#dopresskeycode) | Presses key with code. |
+|	[DoPressMenu](#dopressmenu) | Presses Menu button. |
+|	[DoScreenshot](#doscreenshot) | Makes screenshot of a device. |
+|	[DoStartActivity](#dostartactivity) | Starts activity. |
+|	[DoStartVideoRecording](#dostartvideorecording) | Starts video recording on a device. |
+|	[DoStopVideoRecording](#dostopvideorecording) | Stops video recording on a device. |
+|	[DoSwipe](#doswipe) | Swipe action. |
+|	[DoTap](#dotap) | Tap screen. |
+|	[GetCapability](#getcapability) | Gets capability with specified name. |
+|	[GetContext](#getcontext) | Gets current context. |
+|	[SetContext](#setcontext) | Sets context. |
 
 
 
@@ -47,9 +47,13 @@ Global object. Use it to perform actions not related to a particular object. You
 ### Action Detail
 		
 <a name="DoFlick"></a>    
-#### DoFlick(endX, endY, startX, startY, touchCount)
+#### DoFlick
 
 Flick action.
+
+```javascript
+DoFlick(endX, endY, startX, startY, touchCount) 
+```
 
 
 **Parameters:**
@@ -74,9 +78,13 @@ Flick action.
 <a name="see.also.android.doflick"></a>
 
 <a name="DoGoToUrl"></a>    
-#### DoGoToUrl(url)
+#### DoGoToUrl
 
 Opens URL in active browser.
+
+```javascript
+DoGoToUrl(url) 
+```
 
 
 **Parameters:**
@@ -97,9 +105,13 @@ Opens URL in active browser.
 <a name="see.also.android.dogotourl"></a>
 
 <a name="DoPressBack"></a>    
-#### DoPressBack()
+#### DoPressBack
 
 Presses Back button.
+
+```javascript
+DoPressBack() 
+```
 
 
 
@@ -113,9 +125,13 @@ Presses Back button.
 <a name="see.also.android.dopressback"></a>
 
 <a name="DoPressHome"></a>    
-#### DoPressHome()
+#### DoPressHome
 
 Presses Home button.
+
+```javascript
+DoPressHome() 
+```
 
 
 
@@ -129,9 +145,13 @@ Presses Home button.
 <a name="see.also.android.dopresshome"></a>
 
 <a name="DoPressKeyCode"></a>    
-#### DoPressKeyCode(keyCode)
+#### DoPressKeyCode
 
 Presses key with code.
+
+```javascript
+DoPressKeyCode(keyCode) 
+```
 
 
 **Parameters:**
@@ -152,9 +172,13 @@ Presses key with code.
 <a name="see.also.android.dopresskeycode"></a>
 
 <a name="DoPressMenu"></a>    
-#### DoPressMenu()
+#### DoPressMenu
 
 Presses Menu button.
+
+```javascript
+DoPressMenu() 
+```
 
 
 
@@ -168,9 +192,13 @@ Presses Menu button.
 <a name="see.also.android.dopressmenu"></a>
 
 <a name="DoScreenshot"></a>    
-#### DoScreenshot()
+#### DoScreenshot
 
 Makes screenshot of a device.
+
+```javascript
+DoScreenshot() 
+```
 
 
 
@@ -184,9 +212,13 @@ Makes screenshot of a device.
 <a name="see.also.android.doscreenshot"></a>
 
 <a name="DoStartActivity"></a>    
-#### DoStartActivity(appPackage, appActivity)
+#### DoStartActivity
 
 Starts activity.
+
+```javascript
+DoStartActivity(appPackage, appActivity) 
+```
 
 
 **Parameters:**
@@ -208,9 +240,13 @@ Starts activity.
 <a name="see.also.android.dostartactivity"></a>
 
 <a name="DoStartVideoRecording"></a>    
-#### DoStartVideoRecording()
+#### DoStartVideoRecording
 
 Starts video recording on a device.
+
+```javascript
+DoStartVideoRecording() 
+```
 
 
 
@@ -224,9 +260,13 @@ Starts video recording on a device.
 <a name="see.also.android.dostartvideorecording"></a>
 
 <a name="DoStopVideoRecording"></a>    
-#### DoStopVideoRecording()
+#### DoStopVideoRecording
 
 Stops video recording on a device.
+
+```javascript
+DoStopVideoRecording() 
+```
 
 
 
@@ -240,9 +280,13 @@ Stops video recording on a device.
 <a name="see.also.android.dostopvideorecording"></a>
 
 <a name="DoSwipe"></a>    
-#### DoSwipe(endX, endY, startX, startY, duration, touchCount)
+#### DoSwipe
 
 Swipe action.
+
+```javascript
+DoSwipe(endX, endY, startX, startY, duration, touchCount) 
+```
 
 
 **Parameters:**
@@ -268,9 +312,13 @@ Swipe action.
 <a name="see.also.android.doswipe"></a>
 
 <a name="DoTap"></a>    
-#### DoTap(x, y, duration, tapCount, touchCount)
+#### DoTap
 
 Tap screen.
+
+```javascript
+DoTap(x, y, duration, tapCount, touchCount) 
+```
 
 
 **Parameters:**
@@ -295,9 +343,13 @@ Tap screen.
 <a name="see.also.android.dotap"></a>
 
 <a name="GetCapability"></a>    
-#### GetCapability(name)
+#### GetCapability
 
 Gets capability with specified name.
+
+```javascript
+GetCapability(name) 
+```
 
 
 **Parameters:**
@@ -318,9 +370,13 @@ Capability string.
 <a name="see.also.android.getcapability"></a>
 
 <a name="GetContext"></a>    
-#### GetContext()
+#### GetContext
 
 Gets current context.
+
+```javascript
+GetContext() 
+```
 
 
 
@@ -334,9 +390,13 @@ Either NATIVE_APP or WEBVIEW_1.
 <a name="see.also.android.getcontext"></a>
 
 <a name="SetContext"></a>    
-#### SetContext(name)
+#### SetContext
 
 Sets context.
+
+```javascript
+SetContext(name) 
+```
 
 
 **Parameters:**

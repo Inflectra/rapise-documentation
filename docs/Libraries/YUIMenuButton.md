@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Active](#Active) | Active state of the button. | GetActive |  |
+| [Active](#active) | Active state of the button. | GetActive |  |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#DoClick) | Clicks the menu button. |
+|	[DoClick](#doclick) | Clicks the menu button. |
 
 
 
@@ -67,9 +67,13 @@ Accessors: GetActive
 ### Action Detail
 		
 <a name="DoClick"></a>    
-#### DoClick()
+#### DoClick
 
 Clicks the menu button.
+
+```javascript
+DoClick() 
+```
 
 
 

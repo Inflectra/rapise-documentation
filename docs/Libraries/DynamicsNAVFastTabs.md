@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#DoSelectTab) | Selects the tab by name. |
+|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
@@ -39,16 +39,22 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(tabName)
+#### DoSelectTab
 
 Selects the tab by name.
+
+```javascript
+DoSelectTab(tabName, toggleAdditionalFields, additionalFieldsButtonName) 
+```
 
 
 **Parameters:**
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabName | string |	Tab name to select |
+| tabName | string |	Tab name to select. |
+| toggleAdditionalFields | boolean |	Set to `true` to click on `Show more fields` button inside the tab. Supported in Rapise 6.4+.<br>Optional, Default: false. |
+| additionalFieldsButtonName | string |	If `Show more fields` button is named differently in your locale you need to specify it. Supported in Rapise 6.4+.<br>Optional, Default: Show more fields. |
 
 
 

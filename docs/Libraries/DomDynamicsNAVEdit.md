@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -36,9 +36,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#DoClick) | Clicks on the edit field. |
-|	[DoOpen](#DoOpen) | Opens lookup table for this edit field. |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoClick](#doclick) | Clicks on the edit field. |
+|	[DoOpen](#doopen) | Opens lookup table for this edit field. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -69,9 +69,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoClick"></a>    
-#### DoClick(x, y, forceEvent)
+#### DoClick
 
 Clicks on the edit field.
+
+```javascript
+DoClick(x, y, forceEvent) 
+```
 
 
 **Parameters:**
@@ -94,9 +98,13 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="see.also.domdynamicsnavedit.doclick"></a>
 
 <a name="DoOpen"></a>    
-#### DoOpen(x, y, forceEvent)
+#### DoOpen
 
 Opens lookup table for this edit field.
+
+```javascript
+DoOpen(x, y, forceEvent) 
+```
 
 
 **Parameters:**
@@ -119,9 +127,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domdynamicsnavedit.doopen"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText()
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText() 
+```
 
 
 

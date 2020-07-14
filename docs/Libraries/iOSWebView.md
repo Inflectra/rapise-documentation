@@ -22,11 +22,11 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoScrollDown](#DoScrollDown) | Scrolls content to show lower area. |
-|	[DoScrollLeft](#DoScrollLeft) | Scrolls content to show area to the left. |
-|	[DoScrollRight](#DoScrollRight) | Scrolls content to show area to the right. |
-|	[DoScrollToElementWithName](#DoScrollToElementWithName) | Scrolls to an sub control with name. |
-|	[DoScrollUp](#DoScrollUp) | Scrolls content to show upper area. |
+|	[DoScrollDown](#doscrolldown) | Scrolls content to show lower area. |
+|	[DoScrollLeft](#doscrollleft) | Scrolls content to show area to the left. |
+|	[DoScrollRight](#doscrollright) | Scrolls content to show area to the right. |
+|	[DoScrollToElementWithName](#doscrolltoelementwithname) | Scrolls to an sub control with name. |
+|	[DoScrollUp](#doscrollup) | Scrolls content to show upper area. |
 
 
 
@@ -39,9 +39,13 @@ Extends [iOSObject](iOSObject.md)
 ### Action Detail
 		
 <a name="DoScrollDown"></a>    
-#### DoScrollDown()
+#### DoScrollDown
 
 Scrolls content to show lower area.
+
+```javascript
+DoScrollDown() 
+```
 
 
 
@@ -55,9 +59,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ioswebview.doscrolldown"></a>
 
 <a name="DoScrollLeft"></a>    
-#### DoScrollLeft()
+#### DoScrollLeft
 
 Scrolls content to show area to the left.
+
+```javascript
+DoScrollLeft() 
+```
 
 
 
@@ -71,9 +79,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ioswebview.doscrollleft"></a>
 
 <a name="DoScrollRight"></a>    
-#### DoScrollRight()
+#### DoScrollRight
 
 Scrolls content to show area to the right.
+
+```javascript
+DoScrollRight() 
+```
 
 
 
@@ -87,9 +99,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ioswebview.doscrollright"></a>
 
 <a name="DoScrollToElementWithName"></a>    
-#### DoScrollToElementWithName(name)
+#### DoScrollToElementWithName
 
 Scrolls to an sub control with name.
+
+```javascript
+DoScrollToElementWithName(name) 
+```
 
 
 **Parameters:**
@@ -110,9 +126,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.ioswebview.doscrolltoelementwithname"></a>
 
 <a name="DoScrollUp"></a>    
-#### DoScrollUp()
+#### DoScrollUp
 
 Scrolls content to show upper area.
+
+```javascript
+DoScrollUp() 
+```
 
 
 

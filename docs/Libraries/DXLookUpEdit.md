@@ -25,11 +25,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemIndex](#ItemIndex) | Index of the selected element of the object. | GetItemIndex | SetItemIndex |
-| [ItemName](#ItemName) | Name of the selected element of the object. | GetItemName |  |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
-| [SelectedText](#SelectedText) | Text of the object, 'false' if text can not be read. | GetSelectedText | SetSelectedText |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [ItemIndex](#itemindex) | Index of the selected element of the object. | GetItemIndex | SetItemIndex |
+| [ItemName](#itemname) | Name of the selected element of the object. | GetItemName |  |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [SelectedText](#selectedtext) | Text of the object, 'false' if text can not be read. | GetSelectedText | SetSelectedText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -42,8 +42,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -134,9 +134,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(val)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(val) 
+```
 
 
 **Parameters:**
@@ -157,9 +161,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.dxlookupedit.doselectitem"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**

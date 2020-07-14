@@ -28,7 +28,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Performs click on the groupbar item |
+|	[DoClickItem](#doclickitem) | Performs click on the groupbar item |
 
 
 
@@ -41,9 +41,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(captionIndex, clickType, ox, oy)
+#### DoClickItem
 
 Performs click on the groupbar item
+
+```javascript
+DoClickItem(captionIndex, clickType, ox, oy) 
+```
 
 
 **Parameters:**
@@ -52,8 +56,8 @@ Performs click on the groupbar item
 | ---------- | -------- | --------------- |
 | captionIndex | string \| number |	index or caption of the item to be selected. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| ox | number |	X offset to click within object. Default is a center.<br>Optional. |
-| oy | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| ox | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| oy | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 

@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -67,17 +67,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSetText"></a>    
-#### DoSetText(value, hitEnter)
+#### DoSetText
 
 Sets text value of this object.
 
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| value | string |	Text value. |
-| hitEnter | boolean |	Pass 'true' to additionaly hit enter after entering the text.<br>Optional, Default: false. |
+```javascript
+DoSetText() 
+```
 
 
 

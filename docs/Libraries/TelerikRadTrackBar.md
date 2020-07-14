@@ -25,9 +25,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [MaxValue](#MaxValue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
-| [MinValue](#MinValue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
-| [Position](#Position) | Gets or sets the position of the track bar. | GetPosition | SetPosition |
+| [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
+| [MinValue](#minvalue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
+| [Position](#position) | Gets or sets the position of the track bar. | GetPosition | SetPosition |
 
 
 

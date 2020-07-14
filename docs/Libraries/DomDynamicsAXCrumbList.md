@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text displayed in the breadcrumbs section. | GetText |  |
+| [Text](#text) | Text displayed in the breadcrumbs section. | GetText |  |
 
 
 

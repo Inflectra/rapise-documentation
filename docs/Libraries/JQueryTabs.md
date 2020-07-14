@@ -21,9 +21,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemsCount](#ItemsCount) | Gets the number of tabs | GetItemsCount |  |
-| [SelectedIndex](#SelectedIndex) | Gets the index of the selected tab | GetSelectedIndex |  |
-| [SelectedTab](#SelectedTab) | Gets the text of the selected tab | GetSelectedTab |  |
+| [ItemsCount](#itemscount) | Gets the number of tabs | GetItemsCount |  |
+| [SelectedIndex](#selectedindex) | Gets the index of the selected tab | GetSelectedIndex |  |
+| [SelectedTab](#selectedtab) | Gets the text of the selected tab | GetSelectedTab |  |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#DoSelectTab) | Selects a specific tab of the tab control. |
+|	[DoSelectTab](#doselecttab) | Selects a specific tab of the tab control. |
 
 
 
@@ -97,9 +97,13 @@ Accessors: GetSelectedTab
 ### Action Detail
 		
 <a name="DoSelectTab"></a>    
-#### DoSelectTab(tabName)
+#### DoSelectTab
 
 Selects a specific tab of the tab control.
+
+```javascript
+DoSelectTab(tabName) 
+```
 
 
 **Parameters:**

@@ -23,8 +23,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [ItemNameByIndex](#ItemNameByIndex) | Returns item name by its index. | GetItemNameByIndex |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [ItemNameByIndex](#itemnamebyindex) | Returns item name by its index. | GetItemNameByIndex |  |
 
 
 
@@ -37,7 +37,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Performs click on the item |
+|	[DoClickItem](#doclickitem) | Performs click on the item |
 
 
 
@@ -90,9 +90,13 @@ Accessors: GetItemNameByIndex
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(item, xOffset, yOffset)
+#### DoClickItem
 
 Performs click on the item
+
+```javascript
+DoClickItem(item, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -100,8 +104,8 @@ Performs click on the item
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | item | string \| number |	Index or name  of the item to be selected. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 

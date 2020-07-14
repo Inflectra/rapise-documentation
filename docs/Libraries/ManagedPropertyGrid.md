@@ -25,11 +25,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Expanded](#Expanded) | True if selected item is expanded | GetExpanded |  |
-| [SelectedItem](#SelectedItem) | Returns the structure with label, value, expanded fields | GetSelectedItem |  |
-| [SelectedLabel](#SelectedLabel) | Label of the selected item. | GetSelectedLabel |  |
-| [SelectedText](#SelectedText) | Text of the selected item. | GetSelectedText |  |
-| [VisibleRowCount](#VisibleRowCount) | Number of visible rows | GetVisibleRowCount |  |
+| [Expanded](#expanded) | True if selected item is expanded | GetExpanded |  |
+| [SelectedItem](#selecteditem) | Returns the structure with label, value, expanded fields | GetSelectedItem |  |
+| [SelectedLabel](#selectedlabel) | Label of the selected item. | GetSelectedLabel |  |
+| [SelectedText](#selectedtext) | Text of the selected item. | GetSelectedText |  |
+| [VisibleRowCount](#visiblerowcount) | Number of visible rows | GetVisibleRowCount |  |
 
 
 
@@ -42,11 +42,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCollapse](#DoCollapse) | Collapses an item of this object. |
-|	[DoExpand](#DoExpand) | Expands an item of this object. |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
-|	[DoSetValue](#DoSetValue) | Sets value of an grid item of this object. |
-|	[DoShowDropDown](#DoShowDropDown) | Show dropdown (or custom dialog) for an item. |
+|	[DoCollapse](#docollapse) | Collapses an item of this object. |
+|	[DoExpand](#doexpand) | Expands an item of this object. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|	[DoSetValue](#dosetvalue) | Sets value of an grid item of this object. |
+|	[DoShowDropDown](#doshowdropdown) | Show dropdown (or custom dialog) for an item. |
 
 
 
@@ -137,9 +137,13 @@ Accessors: GetVisibleRowCount
 ### Action Detail
 		
 <a name="DoCollapse"></a>    
-#### DoCollapse(val)
+#### DoCollapse
 
 Collapses an item of this object.
+
+```javascript
+DoCollapse(val) 
+```
 
 
 **Parameters:**
@@ -160,9 +164,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedpropertygrid.docollapse"></a>
 
 <a name="DoExpand"></a>    
-#### DoExpand(val)
+#### DoExpand
 
 Expands an item of this object.
+
+```javascript
+DoExpand(val) 
+```
 
 
 **Parameters:**
@@ -183,9 +191,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedpropertygrid.doexpand"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(indexLabel)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(indexLabel) 
+```
 
 
 **Parameters:**
@@ -206,9 +218,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedpropertygrid.doselectitem"></a>
 
 <a name="DoSetValue"></a>    
-#### DoSetValue(label, val)
+#### DoSetValue
 
 Sets value of an grid item of this object.
+
+```javascript
+DoSetValue(label, val) 
+```
 
 
 **Parameters:**
@@ -230,9 +246,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.managedpropertygrid.dosetvalue"></a>
 
 <a name="DoShowDropDown"></a>    
-#### DoShowDropDown(indexLabel)
+#### DoShowDropDown
 
 Show dropdown (or custom dialog) for an item.
+
+```javascript
+DoShowDropDown(indexLabel) 
+```
 
 
 **Parameters:**

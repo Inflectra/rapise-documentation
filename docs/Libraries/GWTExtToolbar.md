@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Clicks specified element of the ribbon |
+|	[DoClickItem](#doclickitem) | Clicks specified element of the ribbon |
 
 
 
@@ -39,9 +39,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(item)
+#### DoClickItem
 
 Clicks specified element of the ribbon
+
+```javascript
+DoClickItem(item) 
+```
 
 
 **Parameters:**

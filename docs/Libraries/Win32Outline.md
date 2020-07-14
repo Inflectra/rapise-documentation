@@ -21,7 +21,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
 
 
 
@@ -34,7 +34,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects item of this object. |
+|	[DoSelectItem](#doselectitem) | Selects item of this object. |
 
 
 
@@ -65,9 +65,13 @@ Accessors: GetItemCount
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(itemName)
+#### DoSelectItem
 
 Selects item of this object.
+
+```javascript
+DoSelectItem(itemName) 
+```
 
 
 **Parameters:**
@@ -106,7 +110,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoExpand](#DoExpand) | Expands an item of this object. |
+|	[DoExpand](#doexpand) | Expands an item of this object. |
 
 
 
@@ -119,9 +123,13 @@ boolean: 'true' if operation is successful, 'false' otherwise
 ### Action Detail
 		
 <a name="DoExpand"></a>    
-#### DoExpand(itemName)
+#### DoExpand
 
 Expands an item of this object.
+
+```javascript
+DoExpand(itemName) 
+```
 
 
 **Parameters:**

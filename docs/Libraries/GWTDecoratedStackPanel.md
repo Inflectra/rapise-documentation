@@ -26,7 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelect](#DoSelect) | Selects specified panel. |
+|	[DoSelect](#doselect) | Selects specified panel. |
 
 
 
@@ -39,9 +39,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoSelect"></a>    
-#### DoSelect(name)
+#### DoSelect
 
 Selects specified panel.
+
+```javascript
+DoSelect(name) 
+```
 
 
 **Parameters:**

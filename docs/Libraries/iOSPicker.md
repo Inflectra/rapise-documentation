@@ -19,7 +19,7 @@ Extends [iOSObject](iOSObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [SelectedItem](#SelectedItem) | Text of the selected item. | GetSelectedItem |  |
+| [SelectedItem](#selecteditem) | Text of the selected item. | GetSelectedItem |  |
 
 
 
@@ -32,7 +32,7 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item with the specified name. |
+|	[DoSelectItem](#doselectitem) | Selects an item with the specified name. |
 
 
 
@@ -63,9 +63,13 @@ Accessors: GetSelectedItem
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(name)
+#### DoSelectItem
 
 Selects an item with the specified name.
+
+```javascript
+DoSelectItem(name) 
+```
 
 
 **Parameters:**

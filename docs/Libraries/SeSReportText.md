@@ -20,7 +20,7 @@ Used to show long text message in the report.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SeSReportText](#SeSReportText) | Used to show long text message in the report. |
+|	[SeSReportText](#sesreporttext) | Used to show long text message in the report. |
 
 
 
@@ -33,9 +33,13 @@ Used to show long text message in the report.
 ### Action Detail
 		
 <a name="SeSReportText"></a>    
-#### SeSReportText(txt, caption)
+#### SeSReportText
 
 Used to show long text message in the report.
+
+```javascript
+SeSReportText(txt, caption) 
+```
 
 
 **Parameters:**

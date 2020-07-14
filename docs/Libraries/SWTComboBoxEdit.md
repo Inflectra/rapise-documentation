@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -36,8 +36,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
@@ -68,9 +68,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(text)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(text) 
+```
 
 
 **Parameters:**
@@ -91,9 +95,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.swtcomboboxedit.doselectitem"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**

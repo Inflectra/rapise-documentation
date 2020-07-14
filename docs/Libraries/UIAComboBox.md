@@ -21,9 +21,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemNameByIndex](#ItemNameByIndex) | Returns item name by its index. | GetItemNameByIndex |  |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [ItemNameByIndex](#itemnamebyindex) | Returns item name by its index. | GetItemNameByIndex |  |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -36,8 +36,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
-|	[DoSetText](#DoSetText) | Set text into combobox with an edit box. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|	[DoSetText](#dosettext) | Set text into combobox with an edit box. |
 
 
 
@@ -105,9 +105,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(item)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(item) 
+```
 
 
 **Parameters:**
@@ -128,9 +132,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.uiacombobox.doselectitem"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(newText)
+#### DoSetText
 
 Set text into combobox with an edit box.
+
+```javascript
+DoSetText(newText) 
+```
 
 
 **Parameters:**

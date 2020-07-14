@@ -19,18 +19,18 @@ iOS Object.
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ChildAt](#ChildAt) | Child object at index. | GetChildAt |  |
-| [ChildCount](#ChildCount) | Number of child items. | GetChildCount |  |
-| [Class](#Class) | Class name of the object. | GetClass |  |
-| [Height](#Height) | Height of the object. | GetHeight |  |
-| [Label](#Label) | Label of the iOS object | GetLabel |  |
-| [Name](#Name) | Name of the object. | GetName |  |
-| [ObjectType](#ObjectType) | Type of the object. | GetObjectType |  |
-| [Property](#Property) | Value of a named property of the object. | GetProperty |  |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText |  |
-| [Width](#Width) | Width of the object. | GetWidth |  |
-| [X](#X) | X-coordinate of the top left corner of the object. | GetX |  |
-| [Y](#Y) | Y-coordinate of the top left corner of the object. | GetY |  |
+| [ChildAt](#childat) | Child object at index. | GetChildAt |  |
+| [ChildCount](#childcount) | Number of child items. | GetChildCount |  |
+| [Class](#class) | Class name of the object. | GetClass |  |
+| [Height](#height) | Height of the object. | GetHeight |  |
+| [Label](#label) | Label of the iOS object | GetLabel |  |
+| [Name](#name) | Name of the object. | GetName |  |
+| [ObjectType](#objecttype) | Type of the object. | GetObjectType |  |
+| [Property](#property) | Value of a named property of the object. | GetProperty |  |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText |  |
+| [Width](#width) | Width of the object. | GetWidth |  |
+| [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
+| [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
 
 
 
@@ -43,13 +43,13 @@ iOS Object.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#DoAction) | Clicks in the middle of the control. |
-|	[DoClear](#DoClear) | Clears the text of the object. |
-|	[DoClick](#DoClick) | Clicks in the middle of the control. |
-|	[DoEnsureVisible](#DoEnsureVisible) | Ensure that a child item with the specified text is visible on screen. |
-|	[DoSendKeys](#DoSendKeys) | Send a text to the object in character-by-character mode. |
-|	[DoTap](#DoTap) | Taps the control. |
-|	[DoTwoFingerTap](#DoTwoFingerTap) | Taps the control with two fingers. |
+|	[DoAction](#doaction) | Clicks in the middle of the control. |
+|	[DoClear](#doclear) | Clears the text of the object. |
+|	[DoClick](#doclick) | Clicks in the middle of the control. |
+|	[DoEnsureVisible](#doensurevisible) | Ensure that a child item with the specified text is visible on screen. |
+|	[DoSendKeys](#dosendkeys) | Send a text to the object in character-by-character mode. |
+|	[DoTap](#dotap) | Taps the control. |
+|	[DoTwoFingerTap](#dotwofingertap) | Taps the control with two fingers. |
 
 
 
@@ -259,9 +259,13 @@ Accessors: GetY
 ### Action Detail
 		
 <a name="DoAction"></a>    
-#### DoAction()
+#### DoAction
 
 Clicks in the middle of the control.
+
+```javascript
+DoAction() 
+```
 
 
 
@@ -275,9 +279,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iosobject.doaction"></a>
 
 <a name="DoClear"></a>    
-#### DoClear()
+#### DoClear
 
 Clears the text of the object.
+
+```javascript
+DoClear() 
+```
 
 
 
@@ -291,9 +299,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iosobject.doclear"></a>
 
 <a name="DoClick"></a>    
-#### DoClick()
+#### DoClick
 
 Clicks in the middle of the control.
+
+```javascript
+DoClick() 
+```
 
 
 
@@ -307,9 +319,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iosobject.doclick"></a>
 
 <a name="DoEnsureVisible"></a>    
-#### DoEnsureVisible()
+#### DoEnsureVisible
 
 Ensure that a child item with the specified text is visible on screen.
+
+```javascript
+DoEnsureVisible() 
+```
 
 
 
@@ -323,9 +339,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iosobject.doensurevisible"></a>
 
 <a name="DoSendKeys"></a>    
-#### DoSendKeys(keys)
+#### DoSendKeys
 
 Send a text to the object in character-by-character mode.
+
+```javascript
+DoSendKeys(keys) 
+```
 
 
 **Parameters:**
@@ -346,9 +366,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iosobject.dosendkeys"></a>
 
 <a name="DoTap"></a>    
-#### DoTap()
+#### DoTap
 
 Taps the control.
+
+```javascript
+DoTap() 
+```
 
 
 
@@ -362,9 +386,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.iosobject.dotap"></a>
 
 <a name="DoTwoFingerTap"></a>    
-#### DoTwoFingerTap()
+#### DoTwoFingerTap
 
 Taps the control with two fingers.
+
+```javascript
+DoTwoFingerTap() 
+```
 
 
 

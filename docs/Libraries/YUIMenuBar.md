@@ -26,8 +26,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFindChild](#DoFindChild) | Searches for specific item in the menu. |
-|	[DoMenu](#DoMenu) | Performs click on the menu item. |
+|	[DoFindChild](#dofindchild) | Searches for specific item in the menu. |
+|	[DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
@@ -40,9 +40,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoFindChild"></a>    
-#### DoFindChild(path, separator, pathType)
+#### DoFindChild
 
 Searches for specific item in the menu.
+
+```javascript
+DoFindChild(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -65,9 +69,13 @@ Searches for specific item in the menu.
 <a name="see.also.yuimenubar.dofindchild"></a>
 
 <a name="DoMenu"></a>    
-#### DoMenu(path, separator, pathType)
+#### DoMenu
 
 Performs click on the menu item.
+
+```javascript
+DoMenu(path, separator, pathType) 
+```
 
 
 **Parameters:**

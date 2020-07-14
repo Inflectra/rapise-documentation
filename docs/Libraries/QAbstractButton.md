@@ -24,7 +24,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#DoAction) | Presses the button. |
+|	[DoAction](#doaction) | Presses the button. |
 
 
 
@@ -37,9 +37,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoAction"></a>    
-#### DoAction()
+#### DoAction
 
 Presses the button.
+
+```javascript
+DoAction() 
+```
 
 
 

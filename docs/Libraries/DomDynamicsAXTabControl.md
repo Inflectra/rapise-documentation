@@ -23,9 +23,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Expanded](#Expanded) | State of a tab with name. | GetExpanded |  |
-| [ItemsCount](#ItemsCount) | Number of tabs. | GetItemsCount |  |
-| [TabName](#TabName) | Name of a tab at index | GetTabName |  |
+| [Expanded](#expanded) | State of a tab with name. | GetExpanded |  |
+| [ItemsCount](#itemscount) | Number of tabs. | GetItemsCount |  |
+| [TabName](#tabname) | Name of a tab at index | GetTabName |  |
 
 
 
@@ -38,8 +38,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCollapse](#DoCollapse) | Collapses specific tab in a tab control. |
-|	[DoExpand](#DoExpand) | Expands specific tab in a tab control. |
+|	[DoCollapse](#docollapse) | Collapses specific tab in a tab control. |
+|	[DoExpand](#doexpand) | Expands specific tab in a tab control. |
 
 
 
@@ -114,9 +114,13 @@ Accessors: GetTabName
 ### Action Detail
 		
 <a name="DoCollapse"></a>    
-#### DoCollapse(tabName)
+#### DoCollapse
 
 Collapses specific tab in a tab control.
+
+```javascript
+DoCollapse(tabName) 
+```
 
 
 **Parameters:**
@@ -137,9 +141,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.domdynamicsaxtabcontrol.docollapse"></a>
 
 <a name="DoExpand"></a>    
-#### DoExpand(tabName)
+#### DoExpand
 
 Expands specific tab in a tab control.
+
+```javascript
+DoExpand(tabName) 
+```
 
 
 **Parameters:**

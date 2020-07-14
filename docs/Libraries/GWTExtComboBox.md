@@ -23,9 +23,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [SelectedIndex](#SelectedIndex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
-| [SelectedItem](#SelectedItem) | Text of the selected item in a single string. | GetSelectedItem | SetSelectedItem |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
+| [SelectedItem](#selecteditem) | Text of the selected item in a single string. | GetSelectedItem | SetSelectedItem |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
@@ -38,8 +38,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoExpand](#DoExpand) | Expands the combobox. |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
+|	[DoExpand](#doexpand) | Expands the combobox. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
@@ -100,9 +100,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoExpand"></a>    
-#### DoExpand(x, y, forceEvent)
+#### DoExpand
 
 Expands the combobox.
+
+```javascript
+DoExpand(x, y, forceEvent) 
+```
 
 
 **Parameters:**
@@ -125,9 +129,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.gwtextcombobox.doexpand"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(item)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(item) 
+```
 
 
 **Parameters:**

@@ -21,9 +21,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [MaxValue](#MaxValue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
-| [MinValue](#MinValue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
-| [Value](#Value) | Value of the object. | GetValue | SetValue |
+| [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
+| [MinValue](#minvalue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
+| [Value](#value) | Value of the object. | GetValue | SetValue |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetValue](#DoSetValue) | Sets the value of current object. |
+|	[DoSetValue](#dosetvalue) | Sets the value of current object. |
 
 
 
@@ -97,9 +97,13 @@ Accessors: GetValue, SetValue
 ### Action Detail
 		
 <a name="DoSetValue"></a>    
-#### DoSetValue(val)
+#### DoSetValue
 
 Sets the value of current object.
+
+```javascript
+DoSetValue(val) 
+```
 
 
 **Parameters:**

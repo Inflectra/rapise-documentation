@@ -21,7 +21,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
 
 
 
@@ -34,7 +34,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#DoClickItem) | Performs click on an item of this object. |
+|	[DoClickItem](#doclickitem) | Performs click on an item of this object. |
 
 
 
@@ -65,9 +65,13 @@ Accessors: GetItemCount
 ### Action Detail
 		
 <a name="DoClickItem"></a>    
-#### DoClickItem(itemName)
+#### DoClickItem
 
 Performs click on an item of this object.
+
+```javascript
+DoClickItem(itemName) 
+```
 
 
 **Parameters:**

@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Selected value. | GetText | SetText |
+| [Text](#text) | Selected value. | GetText | SetText |
 
 
 
@@ -36,8 +36,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoOpen](#DoOpen) | Expands combo box. |
-|	[DoSetText](#DoSetText) | Sets text into the edit field of a combo box. |
+|	[DoOpen](#doopen) | Expands combo box. |
+|	[DoSetText](#dosettext) | Sets text into the edit field of a combo box. |
 
 
 
@@ -68,9 +68,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoOpen"></a>    
-#### DoOpen()
+#### DoOpen
 
 Expands combo box.
+
+```javascript
+DoOpen() 
+```
 
 
 
@@ -79,9 +83,13 @@ Expands combo box.
 <a name="see.also.domdynamicsaxcombobox.doopen"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText()
+#### DoSetText
 
 Sets text into the edit field of a combo box.
+
+```javascript
+DoSetText() 
+```
 
 
 

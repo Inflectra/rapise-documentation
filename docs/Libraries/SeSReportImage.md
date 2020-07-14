@@ -20,7 +20,7 @@ Used to show a bitmap picture in the report.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SeSReportImage](#SeSReportImage) | Used to show a bitmap picture in the report. |
+|	[SeSReportImage](#sesreportimage) | Used to show a bitmap picture in the report. |
 
 
 
@@ -33,9 +33,13 @@ Used to show a bitmap picture in the report.
 ### Action Detail
 		
 <a name="SeSReportImage"></a>    
-#### SeSReportImage(imgWrapper, caption)
+#### SeSReportImage
 
 Used to show a bitmap picture in the report.
+
+```javascript
+SeSReportImage(imgWrapper, caption) 
+```
 
 
 **Parameters:**

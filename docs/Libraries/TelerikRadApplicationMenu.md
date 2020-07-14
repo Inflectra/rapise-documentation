@@ -28,7 +28,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoMenu](#DoMenu) | Performs click on the menu item. |
+|	[DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
@@ -41,9 +41,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Detail
 		
 <a name="DoMenu"></a>    
-#### DoMenu(path, separator)
+#### DoMenu
 
 Performs click on the menu item.
+
+```javascript
+DoMenu(path, separator) 
+```
 
 
 **Parameters:**

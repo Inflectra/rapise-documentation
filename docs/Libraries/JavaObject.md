@@ -23,11 +23,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ControlType](#ControlType) | Type of the object. | GetControlType |  |
-| [Height](#Height) | Height of the object. | GetHeight |  |
-| [Width](#Width) | Width of the object. | GetWidth |  |
-| [X](#X) | X-coordinate of the top left corner of the object. | GetX |  |
-| [Y](#Y) | Y-coordinate of the top left corner of the object. | GetY |  |
+| [ControlType](#controltype) | Type of the object. | GetControlType |  |
+| [Height](#height) | Height of the object. | GetHeight |  |
+| [Width](#width) | Width of the object. | GetWidth |  |
+| [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
+| [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
 
 
 
@@ -40,9 +40,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#DoAction) | Clicks in the middle of the control. |
-|	[DoDumpWidget](#DoDumpWidget) | Dumps Spy data for the object. |
-|	[DoGetWidgetProperty](#DoGetWidgetProperty) | Returns the value of a property with a given name. |
+|	[DoAction](#doaction) | Clicks in the middle of the control. |
+|	[DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
+|	[DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
 
 
 
@@ -133,9 +133,13 @@ Accessors: GetY
 ### Action Detail
 		
 <a name="DoAction"></a>    
-#### DoAction()
+#### DoAction
 
 Clicks in the middle of the control.
+
+```javascript
+DoAction() 
+```
 
 
 
@@ -149,9 +153,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.javaobject.doaction"></a>
 
 <a name="DoDumpWidget"></a>    
-#### DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
+#### DoDumpWidget
 
 Dumps Spy data for the object.
+
+```javascript
+DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps) 
+```
 
 
 **Parameters:**
@@ -178,9 +186,13 @@ string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write
 <a name="see.also.javaobject.dodumpwidget"></a>
 
 <a name="DoGetWidgetProperty"></a>    
-#### DoGetWidgetProperty(name)
+#### DoGetWidgetProperty
 
 Returns the value of a property with a given name. Names of available properties can be seen in Spy.
+
+```javascript
+DoGetWidgetProperty(name) 
+```
 
 
 **Parameters:**

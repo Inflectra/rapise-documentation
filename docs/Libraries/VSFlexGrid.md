@@ -23,18 +23,18 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell | SetCell |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount | SetColumnCount |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName | SetColumnName |
-| [Height](#Height) | Height of the object. | GetHeight |  |
-| [RowCount](#RowCount) | Number of rows in the grid. | GetRowCount | SetRowCount |
-| [SelectedRow](#SelectedRow) | Checked state of the selected node or a node specified by the input parameters. | GetSelectedRow | SetSelectedRow |
-| [SelectedRowCount](#SelectedRowCount) | Number of selected rows. | GetSelectedRowCount |  |
-| [SelectedRows](#SelectedRows) | Selected rows. | GetSelectedRows | SetSelectedRows |
-| [Text](#Text) | Text of the currently focused cell. | GetText | SetText |
-| [Width](#Width) | Width of the object. | GetWidth |  |
-| [X](#X) | X-coordinate of the top left corner of the object. | GetX |  |
-| [Y](#Y) | Y-coordinate of the top left corner of the object. | GetY |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell | SetCell |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount | SetColumnCount |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName | SetColumnName |
+| [Height](#height) | Height of the object. | GetHeight |  |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount | SetRowCount |
+| [SelectedRow](#selectedrow) | Checked state of the selected node or a node specified by the input parameters. | GetSelectedRow | SetSelectedRow |
+| [SelectedRowCount](#selectedrowcount) | Number of selected rows. | GetSelectedRowCount |  |
+| [SelectedRows](#selectedrows) | Selected rows. | GetSelectedRows | SetSelectedRows |
+| [Text](#text) | Text of the currently focused cell. | GetText | SetText |
+| [Width](#width) | Width of the object. | GetWidth |  |
+| [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
+| [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
 
 
 
@@ -47,9 +47,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell. |
-|	[DoClickText](#DoClickText) | Clicks on a specific text inside the grid. |
-|	[DoFullText](#DoFullText) | Returns text representation of the grid. |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell. |
+|	[DoClickText](#doclicktext) | Clicks on a specific text inside the grid. |
+|	[DoFullText](#dofulltext) | Returns text representation of the grid. |
 
 
 
@@ -268,9 +268,13 @@ Accessors: GetY
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType)
+#### DoClickCell
 
 Clicks the specified cell.
+
+```javascript
+DoClickCell(row, col, clickType) 
+```
 
 
 **Parameters:**
@@ -293,9 +297,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.vsflexgrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
-#### DoClickText()
+#### DoClickText
 
 Clicks on a specific text inside the grid.
+
+```javascript
+DoClickText() 
+```
 
 
 
@@ -309,9 +317,13 @@ Clicks on a specific text inside the grid.
 <a name="see.also.vsflexgrid.doclicktext"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText(path, fmt)
+#### DoFullText
 
 Returns text representation of the grid.
+
+```javascript
+DoFullText(path, fmt) 
+```
 
 
 **Parameters:**

@@ -22,7 +22,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item with the specified name. |
+|	[DoSelectItem](#doselectitem) | Selects an item with the specified name. |
 
 
 
@@ -35,9 +35,13 @@ Extends [AndroidObject](AndroidObject.md)
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(name)
+#### DoSelectItem
 
 Selects an item with the specified name.
+
+```javascript
+DoSelectItem(name) 
+```
 
 
 **Parameters:**

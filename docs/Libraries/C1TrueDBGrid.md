@@ -21,13 +21,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the table. | GetColumnCount |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [RowCount](#RowCount) | Number of rows in the table. | GetRowCount |  |
-| [SelectedColumn](#SelectedColumn) | Index of the selected column. | GetSelectedColumn |  |
-| [SelectedRow](#SelectedRow) | Index of the selected row. | GetSelectedRow |  |
-| [Text](#Text) | Text of the currently focused cell. | GetText |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [ColumnCount](#columncount) | Number of columns in the table. | GetColumnCount |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [RowCount](#rowcount) | Number of rows in the table. | GetRowCount |  |
+| [SelectedColumn](#selectedcolumn) | Index of the selected column. | GetSelectedColumn |  |
+| [SelectedRow](#selectedrow) | Index of the selected row. | GetSelectedRow |  |
+| [Text](#text) | Text of the currently focused cell. | GetText |  |
 
 
 
@@ -40,9 +40,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell |
-|	[DoClickText](#DoClickText) | Clicks on a specific text inside the grid. |
-|	[DoFullText](#DoFullText) | Full text of the table (may be very long!). |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell |
+|	[DoClickText](#doclicktext) | Clicks on a specific text inside the grid. |
+|	[DoFullText](#dofulltext) | Full text of the table (may be very long!). |
 
 
 
@@ -170,9 +170,13 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell
+
+```javascript
+DoClickCell(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -182,8 +186,8 @@ Clicks the specified cell
 | row | number |	Zero-based index if the row. |
 | col | number |	Zero-based index of the column. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -197,9 +201,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.c1truedbgrid.doclickcell"></a>
 
 <a name="DoClickText"></a>    
-#### DoClickText(textOrRegexp, clickType)
+#### DoClickText
 
 Clicks on a specific text inside the grid.
+
+```javascript
+DoClickText(textOrRegexp, clickType) 
+```
 
 
 **Parameters:**
@@ -221,9 +229,13 @@ Clicks on a specific text inside the grid.
 <a name="see.also.c1truedbgrid.doclicktext"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText()
+#### DoFullText
 
 Full text of the table (may be very long!).
+
+```javascript
+DoFullText() 
+```
 
 
 

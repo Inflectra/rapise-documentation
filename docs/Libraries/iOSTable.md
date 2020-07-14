@@ -19,9 +19,9 @@ Extends [iOSObject](iOSObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [ItemIndexByName](#ItemIndexByName) | Returns item index by its name. | GetItemIndexByName |  |
-| [ItemTextAt](#ItemTextAt) | Text of the item at the specified index | GetItemTextAt |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
+| [ItemTextAt](#itemtextat) | Text of the item at the specified index | GetItemTextAt |  |
 
 
 
@@ -34,7 +34,7 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item with the specified index. |
+|	[DoSelectItem](#doselectitem) | Selects an item with the specified index. |
 
 
 
@@ -102,9 +102,13 @@ Accessors: GetItemTextAt
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(index)
+#### DoSelectItem
 
 Selects an item with the specified index.
+
+```javascript
+DoSelectItem(index) 
+```
 
 
 **Parameters:**

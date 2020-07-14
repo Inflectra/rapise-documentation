@@ -21,12 +21,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Checked](#Checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked | SetChecked |
-| [ChildAt](#ChildAt) | Child at index of the selected node or a node specified by the input parameters. | GetChildAt |  |
-| [ChildrenCount](#ChildrenCount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount |  |
-| [Expanded](#Expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded | SetExpanded |
-| [NodeText](#NodeText) | Text of the selected node or a node specified by the input parameters. | GetNodeText |  |
-| [Selected](#Selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected | SetSelected |
+| [Checked](#checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked | SetChecked |
+| [ChildAt](#childat) | Child at index of the selected node or a node specified by the input parameters. | GetChildAt |  |
+| [ChildrenCount](#childrencount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount |  |
+| [Expanded](#expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded | SetExpanded |
+| [NodeText](#nodetext) | Text of the selected node or a node specified by the input parameters. | GetNodeText |  |
+| [Selected](#selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected | SetSelected |
 
 
 
@@ -39,10 +39,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickNode](#DoClickNode) | Clicks specific node in the tree. |
-|	[DoCollapse](#DoCollapse) | Collapses specific node in the tree. |
-|	[DoExpand](#DoExpand) | Expands specific node in the tree. |
-|	[DoSelectItem](#DoSelectItem) | Selects specified item in the tree. |
+|	[DoClickNode](#doclicknode) | Clicks specific node in the tree. |
+|	[DoCollapse](#docollapse) | Collapses specific node in the tree. |
+|	[DoExpand](#doexpand) | Expands specific node in the tree. |
+|	[DoSelectItem](#doselectitem) | Selects specified item in the tree. |
 
 
 
@@ -203,9 +203,13 @@ Accessors: GetSelected, SetSelected
 ### Action Detail
 		
 <a name="DoClickNode"></a>    
-#### DoClickNode(path, separator, pathType)
+#### DoClickNode
 
 Clicks specific node in the tree.
+
+```javascript
+DoClickNode(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -228,9 +232,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.uiatree.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
-#### DoCollapse(path, separator, pathType)
+#### DoCollapse
 
 Collapses specific node in the tree.
+
+```javascript
+DoCollapse(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -253,9 +261,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.uiatree.docollapse"></a>
 
 <a name="DoExpand"></a>    
-#### DoExpand(path, separator, pathType)
+#### DoExpand
 
 Expands specific node in the tree.
+
+```javascript
+DoExpand(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -278,9 +290,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.uiatree.doexpand"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(path, separator, pathType)
+#### DoSelectItem
 
 Selects specified item in the tree.
+
+```javascript
+DoSelectItem(path, separator, pathType) 
+```
 
 
 **Parameters:**

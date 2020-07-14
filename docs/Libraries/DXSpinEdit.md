@@ -25,11 +25,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Increment](#Increment) | The value of increment for spin. | GetIncrement | SetIncrement |
-| [MaxValue](#MaxValue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
-| [MinValue](#MinValue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
-| [Value](#Value) | Value of the object. | GetValue | SetValue |
+| [Increment](#increment) | The value of increment for spin. | GetIncrement | SetIncrement |
+| [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
+| [MinValue](#minvalue) | Minimum value of the object or 'false' if value can't be read. | GetMinValue | SetMinValue |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Value](#value) | Value of the object. | GetValue | SetValue |
 
 
 
@@ -42,9 +42,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoDown](#DoDown) | Decrements the Value of an object. |
-|	[DoSetText](#DoSetText) | Sets text value of this object. |
-|	[DoUp](#DoUp) | Increments the Value of an object. |
+|	[DoDown](#dodown) | Decrements the Value of an object. |
+|	[DoSetText](#dosettext) | Sets text value of this object. |
+|	[DoUp](#doup) | Increments the Value of an object. |
 
 
 
@@ -135,9 +135,13 @@ Accessors: GetValue, SetValue
 ### Action Detail
 		
 <a name="DoDown"></a>    
-#### DoDown()
+#### DoDown
 
 Decrements the Value of an object.
+
+```javascript
+DoDown() 
+```
 
 
 
@@ -151,9 +155,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.dxspinedit.dodown"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(val)
+#### DoSetText
 
 Sets text value of this object.
+
+```javascript
+DoSetText(val) 
+```
 
 
 **Parameters:**
@@ -174,9 +182,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.dxspinedit.dosettext"></a>
 
 <a name="DoUp"></a>    
-#### DoUp()
+#### DoUp
 
 Increments the Value of an object.
+
+```javascript
+DoUp() 
+```
 
 
 

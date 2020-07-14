@@ -21,21 +21,21 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [CellComboList](#CellComboList) | Get array of dropdown values for a given cell. | GetCellComboList |  |
-| [CellInfo](#CellInfo) | <p>Returns object with following fields. | GetCellInfo |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount |  |
-| [ColumnHeaders](#ColumnHeaders) | Get array of column captions. | GetColumnHeaders |  |
-| [ColumnIndex](#ColumnIndex) | Get column index by name. | GetColumnIndex |  |
-| [ColumnInfo](#ColumnInfo) | <p>Returns object with following fields. | GetColumnInfo |  |
-| [GridInfo](#GridInfo) | <p>Returns object with following fields. | GetGridInfo |  |
-| [RowCount](#RowCount) | Number of rows in the table. | GetRowCount |  |
-| [RowHeaders](#RowHeaders) | Get array of row captions. | GetRowHeaders |  |
-| [RowInfo](#RowInfo) | <p>Returns object with following fields. | GetRowInfo |  |
-| [SelectedCells](#SelectedCells) | Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells. | GetSelectedCells |  |
-| [SelectedColumn](#SelectedColumn) | Index of the selected column. | GetSelectedColumn | SetSelectedColumn |
-| [SelectedRow](#SelectedRow) | Index of the selected row. | GetSelectedRow | SetSelectedRow |
-| [SelectedRowsCount](#SelectedRowsCount) | Get number of selected rows. | GetSelectedRowsCount |  |
-| [Text](#Text) | Text of the specified cell. | GetText | SetText |
+| [CellComboList](#cellcombolist) | Get array of dropdown values for a given cell. | GetCellComboList |  |
+| [CellInfo](#cellinfo) | <p>Returns object with following fields. | GetCellInfo |  |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnHeaders](#columnheaders) | Get array of column captions. | GetColumnHeaders |  |
+| [ColumnIndex](#columnindex) | Get column index by name. | GetColumnIndex |  |
+| [ColumnInfo](#columninfo) | <p>Returns object with following fields. | GetColumnInfo |  |
+| [GridInfo](#gridinfo) | <p>Returns object with following fields. | GetGridInfo |  |
+| [RowCount](#rowcount) | Number of rows in the table. | GetRowCount |  |
+| [RowHeaders](#rowheaders) | Get array of row captions. | GetRowHeaders |  |
+| [RowInfo](#rowinfo) | <p>Returns object with following fields. | GetRowInfo |  |
+| [SelectedCells](#selectedcells) | Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells. | GetSelectedCells |  |
+| [SelectedColumn](#selectedcolumn) | Index of the selected column. | GetSelectedColumn | SetSelectedColumn |
+| [SelectedRow](#selectedrow) | Index of the selected row. | GetSelectedRow | SetSelectedRow |
+| [SelectedRowsCount](#selectedrowscount) | Get number of selected rows. | GetSelectedRowsCount |  |
+| [Text](#text) | Text of the specified cell. | GetText | SetText |
 
 
 
@@ -48,11 +48,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoActivateCell](#DoActivateCell) | Make specified cell active |
-|	[DoClearCell](#DoClearCell) | Clear specified cell range |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell |
-|	[DoExportGrid](#DoExportGrid) | Save Grid data to file |
-|	[DoFullText](#DoFullText) | Return whole grid as text |
+|	[DoActivateCell](#doactivatecell) | Make specified cell active |
+|	[DoClearCell](#doclearcell) | Clear specified cell range |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell |
+|	[DoExportGrid](#doexportgrid) | Save Grid data to file |
+|	[DoFullText](#dofulltext) | Return whole grid as text |
 
 
 
@@ -460,9 +460,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoActivateCell"></a>    
-#### DoActivateCell(row, col)
+#### DoActivateCell
 
 Make specified cell active
+
+```javascript
+DoActivateCell(row, col) 
+```
 
 
 **Parameters:**
@@ -479,9 +483,13 @@ Make specified cell active
 <a name="see.also.farpointgridax.doactivatecell"></a>
 
 <a name="DoClearCell"></a>    
-#### DoClearCell(col1, row1, col2, row2)
+#### DoClearCell
 
 Clear specified cell range
+
+```javascript
+DoClearCell(col1, row1, col2, row2) 
+```
 
 
 **Parameters:**
@@ -500,9 +508,13 @@ Clear specified cell range
 <a name="see.also.farpointgridax.doclearcell"></a>
 
 <a name="DoClickCell"></a>    
-#### DoClickCell(col, row, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell
+
+```javascript
+DoClickCell(col, row, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -512,8 +524,8 @@ Clicks the specified cell
 | col | number |	Zero-based index of the column. |
 | row | number |	Zero-based index if the row. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -527,9 +539,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.farpointgridax.doclickcell"></a>
 
 <a name="DoExportGrid"></a>    
-#### DoExportGrid(fileName, type)
+#### DoExportGrid
 
 Save Grid data to file
+
+```javascript
+DoExportGrid(fileName, type) 
+```
 
 
 **Parameters:**
@@ -546,9 +562,13 @@ Save Grid data to file
 <a name="see.also.farpointgridax.doexportgrid"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText(saveToFile, fileName)
+#### DoFullText
 
 Return whole grid as text
+
+```javascript
+DoFullText(saveToFile, fileName) 
+```
 
 
 **Parameters:**

@@ -20,42 +20,42 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Clear](#Clear) | Clears the content of this element. |
-|	[Click](#Click) | Clicks this element. |
-|	[ClickAt](#ClickAt) | Clicks this element at the specified location. |
-|	[ContextClick](#ContextClick) | Opens context menu for this element. |
-|	[DoubleClick](#DoubleClick) | Performs double click on this element. |
-|	[FindElementByClassName](#FindElementByClassName) | Finds the first element in the page that matches the CSS Class supplied. |
-|	[FindElementByCssSelector](#FindElementByCssSelector) | Finds the first element matching the specified CSS selector. |
-|	[FindElementById](#FindElementById) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementByLinkText](#FindElementByLinkText) | Finds the first of elements that match the link text supplied. |
-|	[FindElementByName](#FindElementByName) | Finds the first of elements that match the name supplied. |
-|	[FindElementByPartialLinkText](#FindElementByPartialLinkText) | Finds the first of elements that match the part of the link text supplied. |
-|	[FindElementByTagName](#FindElementByTagName) | Finds the first of elements that match the DOM Tag supplied. |
-|	[FindElementByXPath](#FindElementByXPath) | Finds the first of elements that match the XPath supplied. |
-|	[FindElementsByClassName](#FindElementsByClassName) | Finds a list of elements that match the class name supplied. |
-|	[FindElementsByCssSelector](#FindElementsByCssSelector) | Finds all elements matching the specified CSS selector. |
-|	[FindElementsById](#FindElementsById) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementsByLinkText](#FindElementsByLinkText) | Finds a list of elements that match the link text supplied. |
-|	[FindElementsByName](#FindElementsByName) | Finds a list of elements that match the name supplied. |
-|	[FindElementsByPartialLinkText](#FindElementsByPartialLinkText) | Finds a list of elements that match the part of the link text supplied. |
-|	[FindElementsByTagName](#FindElementsByTagName) | Finds a list of elements that match the DOM Tag supplied. |
-|	[FindElementsByXPath](#FindElementsByXPath) | Finds a list of elements that match the XPath supplied. |
-|	[GetAttribute](#GetAttribute) | Gets the value of the specified attribute for this element. |
-|	[GetCoordinates](#GetCoordinates) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
-|	[GetCssValue](#GetCssValue) | Gets the value of a CSS property of this element. |
-|	[GetDisplayed](#GetDisplayed) | Gets a value indicating whether or not this element is displayed. |
-|	[GetEnabled](#GetEnabled) | Gets a value indicating whether or not this element is enabled. |
-|	[GetHashCode](#GetHashCode) | Method to get the hash code of the element. |
-|	[GetLocation](#GetLocation) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
-|	[GetLocationOnScreenOnceScrolledIntoView](#GetLocationOnScreenOnceScrolledIntoView) | Gets the point where the element would be when scrolled into view. |
-|	[GetSelected](#GetSelected) | Gets a value indicating whether or not this element is selected. |
-|	[GetSize](#GetSize) | Gets a 'Size' object containing the height and width of this element. |
-|	[GetTagName](#GetTagName) | Gets the tag name of this element. |
-|	[GetText](#GetText) | Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed. |
-|	[SelectOptionByText](#SelectOptionByText) | Selects option from select element. |
-|	[SendKeys](#SendKeys) | Simulates typing text into the element. |
-|	[Submit](#Submit) | Submits this element to the web server. |
+|	[Clear](#clear) | Clears the content of this element. |
+|	[Click](#click) | Clicks this element. |
+|	[ClickAt](#clickat) | Clicks this element at the specified location. |
+|	[ContextClick](#contextclick) | Opens context menu for this element. |
+|	[DoubleClick](#doubleclick) | Performs double click on this element. |
+|	[FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
+|	[FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
+|	[FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementByLinkText](#findelementbylinktext) | Finds the first of elements that match the link text supplied. |
+|	[FindElementByName](#findelementbyname) | Finds the first of elements that match the name supplied. |
+|	[FindElementByPartialLinkText](#findelementbypartiallinktext) | Finds the first of elements that match the part of the link text supplied. |
+|	[FindElementByTagName](#findelementbytagname) | Finds the first of elements that match the DOM Tag supplied. |
+|	[FindElementByXPath](#findelementbyxpath) | Finds the first of elements that match the XPath supplied. |
+|	[FindElementsByClassName](#findelementsbyclassname) | Finds a list of elements that match the class name supplied. |
+|	[FindElementsByCssSelector](#findelementsbycssselector) | Finds all elements matching the specified CSS selector. |
+|	[FindElementsById](#findelementsbyid) | Finds the first element in the page that matches the ID supplied. |
+|	[FindElementsByLinkText](#findelementsbylinktext) | Finds a list of elements that match the link text supplied. |
+|	[FindElementsByName](#findelementsbyname) | Finds a list of elements that match the name supplied. |
+|	[FindElementsByPartialLinkText](#findelementsbypartiallinktext) | Finds a list of elements that match the part of the link text supplied. |
+|	[FindElementsByTagName](#findelementsbytagname) | Finds a list of elements that match the DOM Tag supplied. |
+|	[FindElementsByXPath](#findelementsbyxpath) | Finds a list of elements that match the XPath supplied. |
+|	[GetAttribute](#getattribute) | Gets the value of the specified attribute for this element. |
+|	[GetCoordinates](#getcoordinates) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
+|	[GetCssValue](#getcssvalue) | Gets the value of a CSS property of this element. |
+|	[GetDisplayed](#getdisplayed) | Gets a value indicating whether or not this element is displayed. |
+|	[GetEnabled](#getenabled) | Gets a value indicating whether or not this element is enabled. |
+|	[GetHashCode](#gethashcode) | Method to get the hash code of the element. |
+|	[GetLocation](#getlocation) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
+|	[GetLocationOnScreenOnceScrolledIntoView](#getlocationonscreenoncescrolledintoview) | Gets the point where the element would be when scrolled into view. |
+|	[GetSelected](#getselected) | Gets a value indicating whether or not this element is selected. |
+|	[GetSize](#getsize) | Gets a 'Size' object containing the height and width of this element. |
+|	[GetTagName](#gettagname) | Gets the tag name of this element. |
+|	[GetText](#gettext) | Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed. |
+|	[SelectOptionByText](#selectoptionbytext) | Selects option from select element. |
+|	[SendKeys](#sendkeys) | Simulates typing text into the element. |
+|	[Submit](#submit) | Submits this element to the web server. |
 
 
 
@@ -68,9 +68,13 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 ### Action Detail
 		
 <a name="Clear"></a>    
-#### Clear()
+#### Clear
 
 Clears the content of this element.
+
+```javascript
+Clear() 
+```
 
 
 
@@ -79,9 +83,13 @@ Clears the content of this element.
 <a name="see.also.webelement.clear"></a>
 
 <a name="Click"></a>    
-#### Click()
+#### Click
 
 Clicks this element.
+
+```javascript
+Click() 
+```
 
 
 
@@ -90,9 +98,13 @@ Clicks this element.
 <a name="see.also.webelement.click"></a>
 
 <a name="ClickAt"></a>    
-#### ClickAt(x, y)
+#### ClickAt
 
 Clicks this element at the specified location.
+
+```javascript
+ClickAt(x, y) 
+```
 
 
 **Parameters:**
@@ -109,9 +121,13 @@ Clicks this element at the specified location.
 <a name="see.also.webelement.clickat"></a>
 
 <a name="ContextClick"></a>    
-#### ContextClick()
+#### ContextClick
 
 Opens context menu for this element.
+
+```javascript
+ContextClick() 
+```
 
 
 
@@ -120,9 +136,13 @@ Opens context menu for this element.
 <a name="see.also.webelement.contextclick"></a>
 
 <a name="DoubleClick"></a>    
-#### DoubleClick()
+#### DoubleClick
 
 Performs double click on this element.
+
+```javascript
+DoubleClick() 
+```
 
 
 
@@ -131,9 +151,13 @@ Performs double click on this element.
 <a name="see.also.webelement.doubleclick"></a>
 
 <a name="FindElementByClassName"></a>    
-#### FindElementByClassName(className)
+#### FindElementByClassName
 
 Finds the first element in the page that matches the CSS Class supplied.
+
+```javascript
+FindElementByClassName(className) 
+```
 
 
 **Parameters:**
@@ -154,9 +178,13 @@ element or null.
 <a name="see.also.webelement.findelementbyclassname"></a>
 
 <a name="FindElementByCssSelector"></a>    
-#### FindElementByCssSelector(cssSelector)
+#### FindElementByCssSelector
 
 Finds the first element matching the specified CSS selector.
+
+```javascript
+FindElementByCssSelector(cssSelector) 
+```
 
 
 **Parameters:**
@@ -177,9 +205,13 @@ element ot null.
 <a name="see.also.webelement.findelementbycssselector"></a>
 
 <a name="FindElementById"></a>    
-#### FindElementById(id)
+#### FindElementById
 
 Finds the first element in the page that matches the ID supplied.
+
+```javascript
+FindElementById(id) 
+```
 
 
 **Parameters:**
@@ -200,9 +232,13 @@ element or null.
 <a name="see.also.webelement.findelementbyid"></a>
 
 <a name="FindElementByLinkText"></a>    
-#### FindElementByLinkText(linkText)
+#### FindElementByLinkText
 
 Finds the first of elements that match the link text supplied.
+
+```javascript
+FindElementByLinkText(linkText) 
+```
 
 
 **Parameters:**
@@ -223,9 +259,13 @@ element or null.
 <a name="see.also.webelement.findelementbylinktext"></a>
 
 <a name="FindElementByName"></a>    
-#### FindElementByName(name)
+#### FindElementByName
 
 Finds the first of elements that match the name supplied.
+
+```javascript
+FindElementByName(name) 
+```
 
 
 **Parameters:**
@@ -246,9 +286,13 @@ element or null.
 <a name="see.also.webelement.findelementbyname"></a>
 
 <a name="FindElementByPartialLinkText"></a>    
-#### FindElementByPartialLinkText(partialLinkText)
+#### FindElementByPartialLinkText
 
 Finds the first of elements that match the part of the link text supplied.
+
+```javascript
+FindElementByPartialLinkText(partialLinkText) 
+```
 
 
 **Parameters:**
@@ -269,9 +313,13 @@ element or null.
 <a name="see.also.webelement.findelementbypartiallinktext"></a>
 
 <a name="FindElementByTagName"></a>    
-#### FindElementByTagName(tagName)
+#### FindElementByTagName
 
 Finds the first of elements that match the DOM Tag supplied.
+
+```javascript
+FindElementByTagName(tagName) 
+```
 
 
 **Parameters:**
@@ -292,9 +340,13 @@ element or null.
 <a name="see.also.webelement.findelementbytagname"></a>
 
 <a name="FindElementByXPath"></a>    
-#### FindElementByXPath(xpath)
+#### FindElementByXPath
 
 Finds the first of elements that match the XPath supplied.
+
+```javascript
+FindElementByXPath(xpath) 
+```
 
 
 **Parameters:**
@@ -315,9 +367,13 @@ element or null.
 <a name="see.also.webelement.findelementbyxpath"></a>
 
 <a name="FindElementsByClassName"></a>    
-#### FindElementsByClassName(className)
+#### FindElementsByClassName
 
 Finds a list of elements that match the class name supplied.
+
+```javascript
+FindElementsByClassName(className) 
+```
 
 
 **Parameters:**
@@ -338,9 +394,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbyclassname"></a>
 
 <a name="FindElementsByCssSelector"></a>    
-#### FindElementsByCssSelector(cssSelector)
+#### FindElementsByCssSelector
 
 Finds all elements matching the specified CSS selector.
+
+```javascript
+FindElementsByCssSelector(cssSelector) 
+```
 
 
 **Parameters:**
@@ -361,9 +421,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbycssselector"></a>
 
 <a name="FindElementsById"></a>    
-#### FindElementsById(id)
+#### FindElementsById
 
 Finds the first element in the page that matches the ID supplied.
+
+```javascript
+FindElementsById(id) 
+```
 
 
 **Parameters:**
@@ -384,9 +448,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbyid"></a>
 
 <a name="FindElementsByLinkText"></a>    
-#### FindElementsByLinkText(linkText)
+#### FindElementsByLinkText
 
 Finds a list of elements that match the link text supplied.
+
+```javascript
+FindElementsByLinkText(linkText) 
+```
 
 
 **Parameters:**
@@ -407,9 +475,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbylinktext"></a>
 
 <a name="FindElementsByName"></a>    
-#### FindElementsByName(name)
+#### FindElementsByName
 
 Finds a list of elements that match the name supplied.
+
+```javascript
+FindElementsByName(name) 
+```
 
 
 **Parameters:**
@@ -430,9 +502,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbyname"></a>
 
 <a name="FindElementsByPartialLinkText"></a>    
-#### FindElementsByPartialLinkText(partialLinkText)
+#### FindElementsByPartialLinkText
 
 Finds a list of elements that match the part of the link text supplied.
+
+```javascript
+FindElementsByPartialLinkText(partialLinkText) 
+```
 
 
 **Parameters:**
@@ -453,9 +529,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbypartiallinktext"></a>
 
 <a name="FindElementsByTagName"></a>    
-#### FindElementsByTagName(tagName)
+#### FindElementsByTagName
 
 Finds a list of elements that match the DOM Tag supplied.
+
+```javascript
+FindElementsByTagName(tagName) 
+```
 
 
 **Parameters:**
@@ -476,9 +556,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbytagname"></a>
 
 <a name="FindElementsByXPath"></a>    
-#### FindElementsByXPath(xpath)
+#### FindElementsByXPath
 
 Finds a list of elements that match the XPath supplied.
+
+```javascript
+FindElementsByXPath(xpath) 
+```
 
 
 **Parameters:**
@@ -499,9 +583,13 @@ array of elements.
 <a name="see.also.webelement.findelementsbyxpath"></a>
 
 <a name="GetAttribute"></a>    
-#### GetAttribute(attributeName)
+#### GetAttribute
 
 Gets the value of the specified attribute for this element.
+
+```javascript
+GetAttribute(attributeName) 
+```
 
 
 **Parameters:**
@@ -517,9 +605,13 @@ Gets the value of the specified attribute for this element.
 <a name="see.also.webelement.getattribute"></a>
 
 <a name="GetCoordinates"></a>    
-#### GetCoordinates()
+#### GetCoordinates
 
 Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page.
+
+```javascript
+GetCoordinates() 
+```
 
 
 
@@ -528,9 +620,13 @@ Gets a 'Point' object containing the coordinates of theupper-left corner of thi
 <a name="see.also.webelement.getcoordinates"></a>
 
 <a name="GetCssValue"></a>    
-#### GetCssValue(propertyName)
+#### GetCssValue
 
 Gets the value of a CSS property of this element.
+
+```javascript
+GetCssValue(propertyName) 
+```
 
 
 **Parameters:**
@@ -546,9 +642,13 @@ Gets the value of a CSS property of this element.
 <a name="see.also.webelement.getcssvalue"></a>
 
 <a name="GetDisplayed"></a>    
-#### GetDisplayed()
+#### GetDisplayed
 
 Gets a value indicating whether or not this element is displayed.
+
+```javascript
+GetDisplayed() 
+```
 
 
 
@@ -557,9 +657,13 @@ Gets a value indicating whether or not this element is displayed.
 <a name="see.also.webelement.getdisplayed"></a>
 
 <a name="GetEnabled"></a>    
-#### GetEnabled()
+#### GetEnabled
 
 Gets a value indicating whether or not this element is enabled.
+
+```javascript
+GetEnabled() 
+```
 
 
 
@@ -568,9 +672,13 @@ Gets a value indicating whether or not this element is enabled.
 <a name="see.also.webelement.getenabled"></a>
 
 <a name="GetHashCode"></a>    
-#### GetHashCode()
+#### GetHashCode
 
 Method to get the hash code of the element.
+
+```javascript
+GetHashCode() 
+```
 
 
 
@@ -579,9 +687,13 @@ Method to get the hash code of the element.
 <a name="see.also.webelement.gethashcode"></a>
 
 <a name="GetLocation"></a>    
-#### GetLocation()
+#### GetLocation
 
 Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page.
+
+```javascript
+GetLocation() 
+```
 
 
 
@@ -590,9 +702,13 @@ Gets a 'Point' object containing the coordinates of theupper-left corner of thi
 <a name="see.also.webelement.getlocation"></a>
 
 <a name="GetLocationOnScreenOnceScrolledIntoView"></a>    
-#### GetLocationOnScreenOnceScrolledIntoView()
+#### GetLocationOnScreenOnceScrolledIntoView
 
 Gets the point where the element would be when scrolled into view.
+
+```javascript
+GetLocationOnScreenOnceScrolledIntoView() 
+```
 
 
 
@@ -601,9 +717,13 @@ Gets the point where the element would be when scrolled into view.
 <a name="see.also.webelement.getlocationonscreenoncescrolledintoview"></a>
 
 <a name="GetSelected"></a>    
-#### GetSelected()
+#### GetSelected
 
 Gets a value indicating whether or not this element is selected.
+
+```javascript
+GetSelected() 
+```
 
 
 
@@ -612,9 +732,13 @@ Gets a value indicating whether or not this element is selected.
 <a name="see.also.webelement.getselected"></a>
 
 <a name="GetSize"></a>    
-#### GetSize()
+#### GetSize
 
 Gets a 'Size' object containing the height and width of this element.
+
+```javascript
+GetSize() 
+```
 
 
 
@@ -623,9 +747,13 @@ Gets a 'Size' object containing the height and width of this element.
 <a name="see.also.webelement.getsize"></a>
 
 <a name="GetTagName"></a>    
-#### GetTagName()
+#### GetTagName
 
 Gets the tag name of this element.
+
+```javascript
+GetTagName() 
+```
 
 
 
@@ -634,9 +762,13 @@ Gets the tag name of this element.
 <a name="see.also.webelement.gettagname"></a>
 
 <a name="GetText"></a>    
-#### GetText()
+#### GetText
 
 Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed.
+
+```javascript
+GetText() 
+```
 
 
 
@@ -645,9 +777,13 @@ Gets the innerText of this element, without any leading ortrailing whitespace, 
 <a name="see.also.webelement.gettext"></a>
 
 <a name="SelectOptionByText"></a>    
-#### SelectOptionByText(option)
+#### SelectOptionByText
 
 Selects option from select element.
+
+```javascript
+SelectOptionByText(option) 
+```
 
 
 **Parameters:**
@@ -663,9 +799,13 @@ Selects option from select element.
 <a name="see.also.webelement.selectoptionbytext"></a>
 
 <a name="SendKeys"></a>    
-#### SendKeys(text)
+#### SendKeys
 
 Simulates typing text into the element.
+
+```javascript
+SendKeys(text) 
+```
 
 
 **Parameters:**
@@ -681,9 +821,13 @@ Simulates typing text into the element.
 <a name="see.also.webelement.sendkeys"></a>
 
 <a name="Submit"></a>    
-#### Submit()
+#### Submit
 
 Submits this element to the web server.
+
+```javascript
+Submit() 
+```
 
 
 

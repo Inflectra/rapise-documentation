@@ -23,9 +23,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Day](#Day) | Current day displayed by the date picker. | GetDay |  |
-| [Month](#Month) | Current month displayed by the date picker. | GetMonth |  |
-| [Year](#Year) | Current year displayed by the date picker. | GetYear |  |
+| [Day](#day) | Current day displayed by the date picker. | GetDay |  |
+| [Month](#month) | Current month displayed by the date picker. | GetMonth |  |
+| [Year](#year) | Current year displayed by the date picker. | GetYear |  |
 
 
 
@@ -38,9 +38,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoNextMonth](#DoNextMonth) | Clicks on 'Next Month' selector. |
-|	[DoPrevMonth](#DoPrevMonth) | Clicks on 'Previous Month' selector. |
-|	[DoSelectDate](#DoSelectDate) | Selects specific date in the date picker. |
+|	[DoNextMonth](#donextmonth) | Clicks on 'Next Month' selector. |
+|	[DoPrevMonth](#doprevmonth) | Clicks on 'Previous Month' selector. |
+|	[DoSelectDate](#doselectdate) | Selects specific date in the date picker. |
 
 
 
@@ -101,9 +101,13 @@ Accessors: GetYear
 ### Action Detail
 		
 <a name="DoNextMonth"></a>    
-#### DoNextMonth()
+#### DoNextMonth
 
 Clicks on 'Next Month' selector.
+
+```javascript
+DoNextMonth() 
+```
 
 
 
@@ -117,9 +121,13 @@ boolean: 'true' if success, 'false' otherwise
 <a name="see.also.domdynamicsaxdatepicker.donextmonth"></a>
 
 <a name="DoPrevMonth"></a>    
-#### DoPrevMonth()
+#### DoPrevMonth
 
 Clicks on 'Previous Month' selector.
+
+```javascript
+DoPrevMonth() 
+```
 
 
 
@@ -133,9 +141,13 @@ boolean: 'true' if success, 'false' otherwise
 <a name="see.also.domdynamicsaxdatepicker.doprevmonth"></a>
 
 <a name="DoSelectDate"></a>    
-#### DoSelectDate(dateValue)
+#### DoSelectDate
 
 Selects specific date in the date picker.
+
+```javascript
+DoSelectDate(dateValue) 
+```
 
 
 **Parameters:**

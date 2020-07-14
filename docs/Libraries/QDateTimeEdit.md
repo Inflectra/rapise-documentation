@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText |  |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText |  |
 
 
 
@@ -36,9 +36,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetDate](#DoSetDate) | Sets the date value of this object. |
-|	[DoSetDateTime](#DoSetDateTime) | Sets the date/time value of this object. |
-|	[DoSetTime](#DoSetTime) | Sets the time value of this object. |
+|	[DoSetDate](#dosetdate) | Sets the date value of this object. |
+|	[DoSetDateTime](#dosetdatetime) | Sets the date/time value of this object. |
+|	[DoSetTime](#dosettime) | Sets the time value of this object. |
 
 
 
@@ -69,9 +69,13 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoSetDate"></a>    
-#### DoSetDate(value)
+#### DoSetDate
 
 Sets the date value of this object.
+
+```javascript
+DoSetDate(value) 
+```
 
 
 **Parameters:**
@@ -92,9 +96,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.qdatetimeedit.dosetdate"></a>
 
 <a name="DoSetDateTime"></a>    
-#### DoSetDateTime(value)
+#### DoSetDateTime
 
 Sets the date/time value of this object.
+
+```javascript
+DoSetDateTime(value) 
+```
 
 
 **Parameters:**
@@ -115,9 +123,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.qdatetimeedit.dosetdatetime"></a>
 
 <a name="DoSetTime"></a>    
-#### DoSetTime(value)
+#### DoSetTime
 
 Sets the time value of this object.
+
+```javascript
+DoSetTime(value) 
+```
 
 
 **Parameters:**

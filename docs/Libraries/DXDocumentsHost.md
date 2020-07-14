@@ -23,8 +23,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [DocName](#DocName) | Name of the doc at index | GetDocName |  |
-| [ItemsCount](#ItemsCount) | Number of items. | GetItemsCount |  |
+| [DocName](#docname) | Name of the doc at index | GetDocName |  |
+| [ItemsCount](#itemscount) | Number of items. | GetItemsCount |  |
 
 
 
@@ -37,7 +37,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectDoc](#DoSelectDoc) | Selects a doc by name. |
+|	[DoSelectDoc](#doselectdoc) | Selects a doc by name. |
 
 
 
@@ -90,9 +90,13 @@ Accessors: GetItemsCount
 ### Action Detail
 		
 <a name="DoSelectDoc"></a>    
-#### DoSelectDoc(docName)
+#### DoSelectDoc
 
 Selects a doc by name.
+
+```javascript
+DoSelectDoc(docName) 
+```
 
 
 **Parameters:**

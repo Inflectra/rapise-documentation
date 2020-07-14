@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Checked](#Checked) | Check state of the button. | GetChecked |  |
+| [Checked](#checked) | Check state of the button. | GetChecked |  |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetCheck](#DoSetCheck) | Sets check state of the object. |
+|	[DoSetCheck](#dosetcheck) | Sets check state of the object. |
 
 
 
@@ -67,9 +67,13 @@ Accessors: GetChecked
 ### Action Detail
 		
 <a name="DoSetCheck"></a>    
-#### DoSetCheck(bcheck)
+#### DoSetCheck
 
 Sets check state of the object.
+
+```javascript
+DoSetCheck(bcheck) 
+```
 
 
 **Parameters:**

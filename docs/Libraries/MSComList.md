@@ -21,9 +21,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ItemChecked](#ItemChecked) | Check if item is checked. | GetItemChecked |  |
-| [ItemCount](#ItemCount) | Number of items. | GetItemCount |  |
-| [ItemSelected](#ItemSelected) | Check if item is selected. | GetItemSelected |  |
+| [ItemChecked](#itemchecked) | Check if item is checked. | GetItemChecked |  |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
+| [ItemSelected](#itemselected) | Check if item is selected. | GetItemSelected |  |
 
 
 
@@ -36,9 +36,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCheckItem](#DoCheckItem) | Checks items of this object. |
-|	[DoClickItem](#DoClickItem) | Clicks the specified item |
-|	[DoSelectItem](#DoSelectItem) | Selects items of this object. |
+|	[DoCheckItem](#docheckitem) | Checks items of this object. |
+|	[DoClickItem](#doclickitem) | Clicks the specified item |
+|	[DoSelectItem](#doselectitem) | Selects items of this object. |
 
 
 
@@ -113,9 +113,13 @@ Accessors: GetItemSelected
 ### Action Detail
 		
 <a name="DoCheckItem"></a>    
-#### DoCheckItem(nameCaptionIndex, bCheck)
+#### DoCheckItem
 
 Checks items of this object.
+
+```javascript
+DoCheckItem(nameCaptionIndex, bCheck) 
+```
 
 
 **Parameters:**
@@ -137,9 +141,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.mscomlist.docheckitem"></a>
 
 <a name="DoClickItem"></a>    
-#### DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset)
+#### DoClickItem
 
 Clicks the specified item
+
+```javascript
+DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -148,8 +156,8 @@ Clicks the specified item
 | ---------- | -------- | --------------- |
 | nameCaptionIndex | string \| number |	index, name or caption of the item. |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -163,9 +171,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.mscomlist.doclickitem"></a>
 
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(nameCaptionIndex, bSelect)
+#### DoSelectItem
 
 Selects items of this object. First it clears existing selection.
+
+```javascript
+DoSelectItem(nameCaptionIndex, bSelect) 
+```
 
 
 **Parameters:**

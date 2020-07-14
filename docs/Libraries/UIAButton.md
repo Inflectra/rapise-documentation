@@ -21,7 +21,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [ToggleState](#ToggleState) | For toggle button this property contains its toggle state | GetToggleState | SetToggleState |
+| [ToggleState](#togglestate) | For toggle button this property contains its toggle state | GetToggleState | SetToggleState |
 
 
 
@@ -34,7 +34,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#DoAction) | Performs default action on this button. |
+|	[DoAction](#doaction) | Performs default action on this button. |
 
 
 
@@ -65,9 +65,13 @@ Accessors: GetToggleState, SetToggleState
 ### Action Detail
 		
 <a name="DoAction"></a>    
-#### DoAction()
+#### DoAction
 
 Performs default action on this button.
+
+```javascript
+DoAction() 
+```
 
 
 

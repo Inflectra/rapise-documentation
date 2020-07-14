@@ -20,9 +20,9 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[GetCapability](#GetCapability) |  |
-|	[HasCapability](#HasCapability) |  |
-|	[SetCapability](#SetCapability) |  |
+|	[GetCapability](#getcapability) |  |
+|	[HasCapability](#hascapability) |  |
+|	[SetCapability](#setcapability) |  |
 
 
 
@@ -35,9 +35,13 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 ### Action Detail
 		
 <a name="GetCapability"></a>    
-#### GetCapability(capability)
+#### GetCapability
 
 
+
+```javascript
+GetCapability(capability) 
+```
 
 
 **Parameters:**
@@ -53,9 +57,13 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 <a name="see.also.appiumcapabilities.getcapability"></a>
 
 <a name="HasCapability"></a>    
-#### HasCapability(capability)
+#### HasCapability
 
 
+
+```javascript
+HasCapability(capability) 
+```
 
 
 **Parameters:**
@@ -71,9 +79,13 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 <a name="see.also.appiumcapabilities.hascapability"></a>
 
 <a name="SetCapability"></a>    
-#### SetCapability(capability, capabilityValue)
+#### SetCapability
 
 
+
+```javascript
+SetCapability(capability, capabilityValue) 
+```
 
 
 **Parameters:**

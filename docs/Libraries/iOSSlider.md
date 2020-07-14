@@ -19,7 +19,7 @@ Extends [iOSObject](iOSObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Value](#Value) | Value of the object. | GetValue | SetValue |
+| [Value](#value) | Value of the object. | GetValue | SetValue |
 
 
 

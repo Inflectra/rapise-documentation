@@ -21,16 +21,16 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell | SetCell |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount | SetColumnCount |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName | SetColumnName |
-| [RowCount](#RowCount) | Number of rows in the grid. | GetRowCount | SetRowCount |
-| [SelectedCells](#SelectedCells) | Selected cells. | GetSelectedCells | SetSelectedCells |
-| [SelectedColumn](#SelectedColumn) | Index of the selected column. | GetSelectedColumn |  |
-| [SelectedColumnCount](#SelectedColumnCount) | Number of selected columns. | GetSelectedColumnCount |  |
-| [SelectedRow](#SelectedRow) | Index of the selected row. | GetSelectedRow |  |
-| [SelectedRowCount](#SelectedRowCount) | Number of selected rows. | GetSelectedRowCount |  |
-| [Text](#Text) | Text of the currently focused cell. | GetText | SetText |
+| [Cell](#cell) | Text of the specified cell. | GetCell | SetCell |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount | SetColumnCount |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName | SetColumnName |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount | SetRowCount |
+| [SelectedCells](#selectedcells) | Selected cells. | GetSelectedCells | SetSelectedCells |
+| [SelectedColumn](#selectedcolumn) | Index of the selected column. | GetSelectedColumn |  |
+| [SelectedColumnCount](#selectedcolumncount) | Number of selected columns. | GetSelectedColumnCount |  |
+| [SelectedRow](#selectedrow) | Index of the selected row. | GetSelectedRow |  |
+| [SelectedRowCount](#selectedrowcount) | Number of selected rows. | GetSelectedRowCount |  |
+| [Text](#text) | Text of the currently focused cell. | GetText | SetText |
 
 
 
@@ -43,8 +43,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell |
-|	[DoFullText](#DoFullText) | Returns text representation of the table. |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell |
+|	[DoFullText](#dofulltext) | Returns text representation of the table. |
 
 
 
@@ -234,9 +234,13 @@ Accessors: GetText, SetText
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(rowIndex, columnIndex)
+#### DoClickCell
 
 Clicks the specified cell
+
+```javascript
+DoClickCell(rowIndex, columnIndex) 
+```
 
 
 **Parameters:**
@@ -258,9 +262,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.farpointgrid.doclickcell"></a>
 
 <a name="DoFullText"></a>    
-#### DoFullText(fileName)
+#### DoFullText
 
 Returns text representation of the table.
+
+```javascript
+DoFullText(fileName) 
+```
 
 
 **Parameters:**

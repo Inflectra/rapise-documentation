@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [IsPlaying](#IsPlaying) | true if animation is playing, 'false' otherwise | GetIsPlaying |  |
+| [IsPlaying](#isplaying) | true if animation is playing, 'false' otherwise | GetIsPlaying |  |
 
 
 
@@ -38,8 +38,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoPlay](#DoPlay) | Plays the animation of this object. |
-|	[DoStop](#DoStop) | Stops the animation of this object. |
+|	[DoPlay](#doplay) | Plays the animation of this object. |
+|	[DoStop](#dostop) | Stops the animation of this object. |
 
 
 
@@ -70,9 +70,13 @@ Accessors: GetIsPlaying
 ### Action Detail
 		
 <a name="DoPlay"></a>    
-#### DoPlay()
+#### DoPlay
 
 Plays the animation of this object.
+
+```javascript
+DoPlay() 
+```
 
 
 
@@ -86,9 +90,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.animationcontrol.doplay"></a>
 
 <a name="DoStop"></a>    
-#### DoStop()
+#### DoStop
 
 Stops the animation of this object.
+
+```javascript
+DoStop() 
+```
 
 
 

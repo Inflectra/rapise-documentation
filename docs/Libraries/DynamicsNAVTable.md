@@ -23,14 +23,14 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [CellObject](#CellObject) | UIAObject for the specified cell. | GetCellObject |  |
-| [CellRowIndex](#CellRowIndex) | Index of a row with the specified cell. | GetCellRowIndex |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount |  |
-| [ColumnIndex](#ColumnIndex) | Index of a column with given name. | GetColumnIndex |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [ColumnValues](#ColumnValues) | Values of cells in a column | GetColumnValues |  |
-| [RowCount](#RowCount) | Number of rows in the grid. | GetRowCount |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [CellObject](#cellobject) | UIAObject for the specified cell. | GetCellObject |  |
+| [CellRowIndex](#cellrowindex) | Index of a row with the specified cell. | GetCellRowIndex |  |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnIndex](#columnindex) | Index of a column with given name. | GetColumnIndex |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [ColumnValues](#columnvalues) | Values of cells in a column | GetColumnValues |  |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount |  |
 
 
 
@@ -43,9 +43,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell. |
-|	[DoClickColumn](#DoClickColumn) | Clicks on column header |
-|	[DoScrollTo](#DoScrollTo) | Scrolls to the specified cell |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell. |
+|	[DoClickColumn](#doclickcolumn) | Clicks on column header |
+|	[DoScrollTo](#doscrollto) | Scrolls to the specified cell |
 
 
 
@@ -94,7 +94,7 @@ UIAObject for the specified cell.
 
 	
 			
-Type: object
+Type: UIAObject
 			
 			
 Accessors: GetCellObject
@@ -117,7 +117,7 @@ Index of a row with the specified cell.
 
 	
 			
-Type: object
+Type: number
 			
 			
 Accessors: GetCellRowIndex
@@ -227,9 +227,13 @@ Accessors: GetRowCount
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell.
+
+```javascript
+DoClickCell(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -254,9 +258,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.dynamicsnavtable.doclickcell"></a>
 
 <a name="DoClickColumn"></a>    
-#### DoClickColumn(col, clickType, xOffset, yOffset)
+#### DoClickColumn
 
 Clicks on column header
+
+```javascript
+DoClickColumn(col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -275,9 +283,13 @@ Clicks on column header
 <a name="see.also.dynamicsnavtable.doclickcolumn"></a>
 
 <a name="DoScrollTo"></a>    
-#### DoScrollTo(row, col)
+#### DoScrollTo
 
 Scrolls to the specified cell
+
+```javascript
+DoScrollTo(row, col) 
+```
 
 
 **Parameters:**

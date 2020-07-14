@@ -21,18 +21,18 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Credential](#Credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
-| [Method](#Method) | The HTTP Method being used for the request (GET, POST, etc. | GetMethod | SetMethod |
-| [Name](#Name) | The name of the request operation | GetName |  |
-| [Parameters](#Parameters) | The list of parameters available for this request url. | GetParameters | SetParameters |
-| [RequestBodyObject](#RequestBodyObject) | The body of the HTTP request as a JavaScript object. | GetRequestBodyObject | SetRequestBodyObject |
-| [RequestBodyText](#RequestBodyText) | The body of the HTTP request in raw text format | GetRequestBodyText | SetRequestBodyText |
-| [RequestHeaders](#RequestHeaders) | The list of HTTP headers that are part of this request. | GetRequestHeaders | SetRequestHeaders |
-| [ResponseBodyObject](#ResponseBodyObject) | The body of the HTTP response deserialized from JSON into a JavaScript object. | GetResponseBodyObject |  |
-| [ResponseBodyText](#ResponseBodyText) | The body of the HTTP response in raw text format | GetResponseBodyText |  |
-| [ResponseHeaders](#ResponseHeaders) | Returns the list of HTTP headers returned from the HTTP response. | GetResponseHeaders |  |
-| [ResponseIsErrorStatus](#ResponseIsErrorStatus) | Returns 'true 'if an HTTP error code came back from the web service | GetResponseIsErrorStatus |  |
-| [Url](#Url) | The URL being used to access the web service | GetUrl | SetUrl |
+| [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
+| [Method](#method) | The HTTP Method being used for the request (GET, POST, etc. | GetMethod | SetMethod |
+| [Name](#name) | The name of the request operation | GetName |  |
+| [Parameters](#parameters) | The list of parameters available for this request url. | GetParameters | SetParameters |
+| [RequestBodyObject](#requestbodyobject) | The body of the HTTP request as a JavaScript object. | GetRequestBodyObject | SetRequestBodyObject |
+| [RequestBodyText](#requestbodytext) | The body of the HTTP request in raw text format | GetRequestBodyText | SetRequestBodyText |
+| [RequestHeaders](#requestheaders) | The list of HTTP headers that are part of this request. | GetRequestHeaders | SetRequestHeaders |
+| [ResponseBodyObject](#responsebodyobject) | The body of the HTTP response deserialized from JSON into a JavaScript object. | GetResponseBodyObject |  |
+| [ResponseBodyText](#responsebodytext) | The body of the HTTP response in raw text format | GetResponseBodyText |  |
+| [ResponseHeaders](#responseheaders) | Returns the list of HTTP headers returned from the HTTP response. | GetResponseHeaders |  |
+| [ResponseIsErrorStatus](#responseiserrorstatus) | Returns 'true 'if an HTTP error code came back from the web service | GetResponseIsErrorStatus |  |
+| [Url](#url) | The URL being used to access the web service | GetUrl | SetUrl |
 
 
 
@@ -45,8 +45,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoExecute](#DoExecute) | Executes a REST service operation, substitutes any of the provided parameter values if necessary. |
-|	[DoVerify](#DoVerify) | Checks that a given part of response equals the expected value. |
+|	[DoExecute](#doexecute) | Executes a REST service operation, substitutes any of the provided parameter values if necessary. |
+|	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
 
@@ -307,9 +307,13 @@ Accessors: GetUrl, SetUrl
 ### Action Detail
 		
 <a name="DoExecute"></a>    
-#### DoExecute(params)
+#### DoExecute
 
 Executes a REST service operation, substitutes any of the provided parameter values if necessary.
+
+```javascript
+DoExecute(params) 
+```
 
 
 **Parameters:**
@@ -336,9 +340,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.restservice.doexecute"></a>
 
 <a name="DoVerify"></a>    
-#### DoVerify(msg, jsonPath, expectedValue)
+#### DoVerify
 
 Checks that a given part of response equals the expected value.
+
+```javascript
+DoVerify(msg, jsonPath, expectedValue) 
+```
 
 
 **Parameters:**

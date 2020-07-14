@@ -21,13 +21,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Checked](#Checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked |  |
-| [ChildrenCount](#ChildrenCount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount |  |
-| [Expanded](#Expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded |  |
-| [IndexPath](#IndexPath) | Index path of the specified or selected tree node i.e. | GetIndexPath |  |
-| [NodeText](#NodeText) | Text of the selected node or a node specified by the input parameters. | GetNodeText |  |
-| [Selected](#Selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected |  |
-| [Text](#Text) | ;-combined text of all selected nodes. | GetText |  |
+| [Checked](#checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked |  |
+| [ChildrenCount](#childrencount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount |  |
+| [Expanded](#expanded) | Expanded state of the selected node or a node specified by the input parameters. | GetExpanded |  |
+| [IndexPath](#indexpath) | Index path of the specified or selected tree node i.e. | GetIndexPath |  |
+| [NodeText](#nodetext) | Text of the selected node or a node specified by the input parameters. | GetNodeText |  |
+| [Selected](#selected) | Selected state of the selected node or a node specified by the input parameters | GetSelected |  |
+| [Text](#text) | ;-combined text of all selected nodes. | GetText |  |
 
 
 
@@ -40,10 +40,10 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickNode](#DoClickNode) | Clicks specific node in the tree. |
-|	[DoCollapse](#DoCollapse) | Collapses specific node in the tree. |
-|	[DoExpand](#DoExpand) | Expands specific node in the tree. |
-|	[DoSetCheck](#DoSetCheck) | Set 'checked' state of the specified node |
+|	[DoClickNode](#doclicknode) | Clicks specific node in the tree. |
+|	[DoCollapse](#docollapse) | Collapses specific node in the tree. |
+|	[DoExpand](#doexpand) | Expands specific node in the tree. |
+|	[DoSetCheck](#dosetcheck) | Set 'checked' state of the specified node |
 
 
 
@@ -218,9 +218,13 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoClickNode"></a>    
-#### DoClickNode(path, separator, pathType)
+#### DoClickNode
 
 Clicks specific node in the tree.
+
+```javascript
+DoClickNode(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -243,9 +247,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.mscomctltreeview20.doclicknode"></a>
 
 <a name="DoCollapse"></a>    
-#### DoCollapse(path, separator, pathType)
+#### DoCollapse
 
 Collapses specific node in the tree.
+
+```javascript
+DoCollapse(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -268,9 +276,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.mscomctltreeview20.docollapse"></a>
 
 <a name="DoExpand"></a>    
-#### DoExpand(path, separator, pathType)
+#### DoExpand
 
 Expands specific node in the tree.
+
+```javascript
+DoExpand(path, separator, pathType) 
+```
 
 
 **Parameters:**
@@ -293,9 +305,13 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="see.also.mscomctltreeview20.doexpand"></a>
 
 <a name="DoSetCheck"></a>    
-#### DoSetCheck(bcheck, path, separator, pathType)
+#### DoSetCheck
 
 Set 'checked' state of the specified node
+
+```javascript
+DoSetCheck(bcheck, path, separator, pathType) 
+```
 
 
 **Parameters:**
