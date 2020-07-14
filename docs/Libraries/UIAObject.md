@@ -88,7 +88,7 @@ Object for nth child of this object's UI Automation node
 
 	
 			
-Type: object
+Type: UIAObject
 			
 			
 Accessors: GetChildAt
@@ -163,7 +163,7 @@ Object for UI Automation next sibling node
 			
 	
 			
-Type: object
+Type: UIAObject
 			
 			
 Accessors: GetNextSibling
@@ -178,7 +178,7 @@ Object for UI Automation parent node
 			
 	
 			
-Type: object
+Type: UIAObject
 			
 			
 Accessors: GetParent
@@ -193,7 +193,7 @@ Object for UI Automation previous sibling node
 			
 	
 			
-Type: object
+Type: UIAObject
 			
 			
 Accessors: GetPrevSibling
@@ -290,8 +290,8 @@ Performs left click at the center of an object. It is a customizable variant of 
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Default is a center.<br>Optional. |
-| y | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -346,7 +346,7 @@ Find nested element by its text (Value and Name of each element are compared wit
 
 **Returns:**
 
-object: UIAutomationObject containing text if found, null otherwise
+[UIAObject](UIAObject.md): UIAutomationObject containing text if found, null otherwise
 
 
 

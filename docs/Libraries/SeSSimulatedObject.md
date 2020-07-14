@@ -61,6 +61,7 @@ This is a rule for simulated objects.
 |	[DoRClick](#DoRClick) | Performs a right click at the center of an object or at the specified location. |
 |	[DoRDClick](#DoRDClick) | Performs a right double click at the center of an object or at the specified location. |
 |	[DoSendKeys](#DoSendKeys) | Sends series of keystrokes to an object. |
+|	[DoSendText](#DoSendText) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
 
 
 
@@ -297,8 +298,8 @@ Performs left click at the center of an object. It is a customizable variant of 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
-| xOffset | number |	X offset to click within object. Default is a center.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Default is a center.<br>Optional. |
+| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -354,8 +355,8 @@ Performs a left click at the center of an object or at the specified location.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -378,8 +379,8 @@ Performs a left double click at the center of an object or at the specified loca
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -424,8 +425,8 @@ Performs a middle click at the center of an object or at the specified location.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -448,8 +449,8 @@ Performs a middle double click at the center of an object or at the specified lo
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -472,8 +473,8 @@ Moves mouse cursor to a location relative to this object position.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -513,8 +514,8 @@ Performs a right click at the center of an object or at the specified location.
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -537,8 +538,8 @@ Performs a right double click at the center of an object or at the specified loc
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
 
 
@@ -568,6 +569,24 @@ Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {
 
 
 <a name="see.also.sessimulatedobject.dosendkeys"></a>
+
+<a name="DoSendText"></a>    
+#### DoSendText(text)
+
+Sends text to the active application as is (while SendKeys also supports sending special keys).
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| text | string |	A sequence of keystrokes. |
+
+
+
+
+
+<a name="see.also.sessimulatedobject.dosendtext"></a>
 
 	
 
