@@ -31,6 +31,8 @@
     
     ![Menu](/Guide/img/know_your_way_objtree_and_files.png){: width="300" }
     
+![Rapise Screenshot](/Guide/img/know_your_way_basic_navigation.png){: width="1024" }
+    
 ??? abstract "6 - Object Properties"
     [This pane](/Guide/properties/) displays the properties of a selected object.
 
@@ -45,9 +47,6 @@
     The dropdown allows to switch [Browser](/Guide/browser_settings/), [Selenium](/Guide/selenium_settings_dialog/) or [Mobile](/Guide/mobile_settings_dialog/) profile.
 
     ![Menu](/Guide/img/know_your_way_profile_dropdown.png)
-    
-<img alt="Rapise Screenshot" src="/Guide/img/know_your_way_basic_navigation.png" width="1024"/>
-
     
 ## RVL Popup Menu
 
