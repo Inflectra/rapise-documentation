@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -9265,22 +9265,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doclicktexttext-index" class="md-nav__link">
-    DoClickText(text, index)
+  <a href="#doclicktext" class="md-nav__link">
+    DoClickText
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dosettexttext" class="md-nav__link">
-    DoSetText(text)
+  <a href="#dosettext" class="md-nav__link">
+    DoSetText
   </a>
   
 </li>
@@ -9929,6 +9929,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10120,22 +10132,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doclicktexttext-index" class="md-nav__link">
-    DoClickText(text, index)
+  <a href="#doclicktext" class="md-nav__link">
+    DoClickText
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dosettexttext" class="md-nav__link">
-    DoSetText(text)
+  <a href="#dosettext" class="md-nav__link">
+    DoSetText
   </a>
   
 </li>
@@ -10181,25 +10193,25 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Cell">Cell</a></td>
+<td><a href="#cell">Cell</a></td>
 <td>Text of the specified cell.</td>
 <td>GetCell</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnCount">ColumnCount</a></td>
+<td><a href="#columncount">ColumnCount</a></td>
 <td>Number of columns in the grid.</td>
 <td>GetColumnCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnName">ColumnName</a></td>
+<td><a href="#columnname">ColumnName</a></td>
 <td>Caption of a column.</td>
 <td>GetColumnName</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#RowCount">RowCount</a></td>
+<td><a href="#rowcount">RowCount</a></td>
 <td>Number of rows in the grid.</td>
 <td>GetRowCount</td>
 <td></td>
@@ -10218,15 +10230,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickCell">DoClickCell</a></td>
+<td><a href="#doclickcell">DoClickCell</a></td>
 <td>Clicks the specified cell.</td>
 </tr>
 <tr>
-<td><a href="#DoClickText">DoClickText</a></td>
+<td><a href="#doclicktext">DoClickText</a></td>
 <td>Clicks on a specific text inside the grid.</td>
 </tr>
 <tr>
-<td><a href="#DoSetText">DoSetText</a></td>
+<td><a href="#dosettext">DoSetText</a></td>
 <td>Enters text into the active cell.</td>
 </tr>
 </tbody>
@@ -10297,8 +10309,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickCell"></a>    </p>
-<h4 id="doclickcellrow-col-clicktype-xoffset-yoffset">DoClickCell(row, col, clickType, xOffset, yOffset)<a class="headerlink" href="#doclickcellrow-col-clicktype-xoffset-yoffset" title="Permanent link">&para;</a></h4>
+<h4 id="doclickcell">DoClickCell<a class="headerlink" href="#doclickcell" title="Permanent link">&para;</a></h4>
 <p>Clicks the specified cell.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10340,8 +10355,11 @@
 <p>boolean: 'true' if successful, 'false' otherwise</p>
 <p><a name="see.also.domdynamicsaxgrid.doclickcell"></a></p>
 <p><a name="DoClickText"></a>    </p>
-<h4 id="doclicktexttext-index">DoClickText(text, index)<a class="headerlink" href="#doclicktexttext-index" title="Permanent link">&para;</a></h4>
+<h4 id="doclicktext">DoClickText<a class="headerlink" href="#doclicktext" title="Permanent link">&para;</a></h4>
 <p>Clicks on a specific text inside the grid.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickText</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10368,8 +10386,11 @@
 <p>'true' if successful, 'false' otherwise</p>
 <p><a name="see.also.domdynamicsaxgrid.doclicktext"></a></p>
 <p><a name="DoSetText"></a>    </p>
-<h4 id="dosettexttext">DoSetText(text)<a class="headerlink" href="#dosettexttext" title="Permanent link">&para;</a></h4>
+<h4 id="dosettext">DoSetText<a class="headerlink" href="#dosettext" title="Permanent link">&para;</a></h4>
 <p>Enters text into the active cell. Use DoClickCell to make a cell active.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

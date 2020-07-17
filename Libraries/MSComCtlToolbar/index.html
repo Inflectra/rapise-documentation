@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -6325,15 +6325,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickitemnamecaptionindex-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset)
+  <a href="#doclickitem" class="md-nav__link">
+    DoClickItem
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dosetcheckbcheck-namecaptionindex" class="md-nav__link">
-    DoSetCheck(bcheck, nameCaptionIndex)
+  <a href="#dosetcheck" class="md-nav__link">
+    DoSetCheck
   </a>
   
 </li>
@@ -9922,6 +9922,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10113,15 +10125,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickitemnamecaptionindex-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset)
+  <a href="#doclickitem" class="md-nav__link">
+    DoClickItem
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dosetcheckbcheck-namecaptionindex" class="md-nav__link">
-    DoSetCheck(bcheck, nameCaptionIndex)
+  <a href="#dosetcheck" class="md-nav__link">
+    DoSetCheck
   </a>
   
 </li>
@@ -10166,25 +10178,25 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#ItemCaption">ItemCaption</a></td>
+<td><a href="#itemcaption">ItemCaption</a></td>
 <td>The caption of the button on the toolbar</td>
 <td>GetItemCaption</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ItemCount">ItemCount</a></td>
+<td><a href="#itemcount">ItemCount</a></td>
 <td>The number of the items in the toolbar</td>
 <td>GetItemCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ItemStyle">ItemStyle</a></td>
+<td><a href="#itemstyle">ItemStyle</a></td>
 <td>The style of the button on the toolbar</td>
 <td>GetItemStyle</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ItemValue">ItemValue</a></td>
+<td><a href="#itemvalue">ItemValue</a></td>
 <td>Returns 'true' if element with nameCaptionIndex has value</td>
 <td>GetItemValue</td>
 <td></td>
@@ -10203,11 +10215,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickItem">DoClickItem</a></td>
+<td><a href="#doclickitem">DoClickItem</a></td>
 <td>ClickItem</td>
 </tr>
 <tr>
-<td><a href="#DoSetCheck">DoSetCheck</a></td>
+<td><a href="#dosetcheck">DoSetCheck</a></td>
 <td>SetCheck</td>
 </tr>
 </tbody>
@@ -10290,8 +10302,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickItem"></a>    </p>
-<h4 id="doclickitemnamecaptionindex-clicktype-xoffset-yoffset">DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset)<a class="headerlink" href="#doclickitemnamecaptionindex-clicktype-xoffset-yoffset" title="Permanent link">&para;</a></h4>
+<h4 id="doclickitem">DoClickItem<a class="headerlink" href="#doclickitem" title="Permanent link">&para;</a></h4>
 <p>ClickItem</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickItem</span><span class="p">(</span><span class="nx">nameCaptionIndex</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10315,12 +10330,12 @@
 <tr>
 <td>xOffset</td>
 <td>number</td>
-<td>X offset to click within object. Default is a center.<br>Optional.</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 <tr>
 <td>yOffset</td>
 <td>number</td>
-<td>Y offset to click within object. Default is a center.<br>Optional.</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -10328,8 +10343,11 @@
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.mscomctltoolbar.doclickitem"></a></p>
 <p><a name="DoSetCheck"></a>    </p>
-<h4 id="dosetcheckbcheck-namecaptionindex">DoSetCheck(bcheck, nameCaptionIndex)<a class="headerlink" href="#dosetcheckbcheck-namecaptionindex" title="Permanent link">&para;</a></h4>
+<h4 id="dosetcheck">DoSetCheck<a class="headerlink" href="#dosetcheck" title="Permanent link">&para;</a></h4>
 <p>SetCheck</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoSetCheck</span><span class="p">(</span><span class="nx">bcheck</span><span class="p">,</span> <span class="nx">nameCaptionIndex</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

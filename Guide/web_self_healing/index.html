@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -3085,6 +3085,40 @@
   <a href="#configuration" class="md-nav__link">
     Configuration
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#threshold" class="md-nav__link">
+    Threshold
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-manager-prompt" class="md-nav__link">
+    Object Manager Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playback" class="md-nav__link">
+    Playback
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -9902,6 +9936,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10082,6 +10128,40 @@
     Configuration
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#threshold" class="md-nav__link">
+    Threshold
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-manager-prompt" class="md-nav__link">
+    Object Manager Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playback" class="md-nav__link">
+    Playback
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -10148,6 +10228,7 @@
 <p><img src="/Guide/img/web_self_healing_prompt.png" width="443"></p>
 <p><img src="/Guide/img/web_self_healing_object_manager.png" width="890"></p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="threshold">Threshold<a class="headerlink" href="#threshold" title="Permanent link">&para;</a></h3>
 <p>By default match of an element is accepted when confidence is not less than 96%. You can change the threshold in <a href="../understanding_the_script/">TestPrepare</a> block by setting <code>g_aiFplConfidence</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
@@ -10156,6 +10237,7 @@
 <span class="p">}</span>
 </code></pre></div>
 
+<h3 id="object-manager-prompt">Object Manager Prompt<a class="headerlink" href="#object-manager-prompt" title="Permanent link">&para;</a></h3>
 <p>To suppress prompt to use Object Manager when test playback contains healing notifications set <code>g_aiMergePromptEnable</code> to <code>false</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
@@ -10164,8 +10246,14 @@
 <span class="p">}</span>
 </code></pre></div>
 
+<h3 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h3>
 <p>To disable automatic capturing of recording screenshots <code>g_aiCaptureRecordingScreenshots</code> to <code>false</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_aiCaptureRecordingScreenshots</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</code></pre></div>
+
+<h3 id="playback">Playback<a class="headerlink" href="#playback" title="Permanent link">&para;</a></h3>
+<p>During playback when an element can not be found using XPath locator - Rapise starts applying the self-healing locator. The number of initial attempts before switching on self-healing is configurable (since Rapise 6.5). Usage of self-healing at the very first attempts to find an element is not recommended since a page may not be fully loaded and wrong element may be chosen by the algorithm. First self-healing attempt is set by the variable. 21 is the default value. You may change it to any number that is lower than <code>g_objectLookupAttempts</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">g_aiFirstAttemptNumber</span> <span class="o">=</span> <span class="mi">21</span><span class="p">;</span>
 </code></pre></div>
 
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

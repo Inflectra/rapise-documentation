@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -5689,8 +5689,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickitemcaptionindex-clicktype-ox-oy" class="md-nav__link">
-    DoClickItem(captionIndex, clickType, ox, oy)
+  <a href="#doclickitem" class="md-nav__link">
+    DoClickItem
   </a>
   
 </li>
@@ -9867,6 +9867,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10010,8 +10022,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickitemcaptionindex-clicktype-ox-oy" class="md-nav__link">
-    DoClickItem(captionIndex, clickType, ox, oy)
+  <a href="#doclickitem" class="md-nav__link">
+    DoClickItem
   </a>
   
 </li>
@@ -10058,7 +10070,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickItem">DoClickItem</a></td>
+<td><a href="#doclickitem">DoClickItem</a></td>
 <td>Performs click on the groupbar item</td>
 </tr>
 </tbody>
@@ -10069,8 +10081,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickItem"></a>    </p>
-<h4 id="doclickitemcaptionindex-clicktype-ox-oy">DoClickItem(captionIndex, clickType, ox, oy)<a class="headerlink" href="#doclickitemcaptionindex-clicktype-ox-oy" title="Permanent link">&para;</a></h4>
+<h4 id="doclickitem">DoClickItem<a class="headerlink" href="#doclickitem" title="Permanent link">&para;</a></h4>
 <p>Performs click on the groupbar item</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickItem</span><span class="p">(</span><span class="nx">captionIndex</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">ox</span><span class="p">,</span> <span class="nx">oy</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10094,12 +10109,12 @@
 <tr>
 <td>ox</td>
 <td>number</td>
-<td>X offset to click within object. Default is a center.<br>Optional.</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 <tr>
 <td>oy</td>
 <td>number</td>
-<td>Y offset to click within object. Default is a center.<br>Optional.</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 </tbody>
 </table>

@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -8314,22 +8314,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doexecutemethod-params-headers" class="md-nav__link">
-    DoExecute(method, params, headers)
+  <a href="#doexecute" class="md-nav__link">
+    DoExecute
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doexecuterawmethod-body-params" class="md-nav__link">
-    DoExecuteRaw(method, body, params)
+  <a href="#doexecuteraw" class="md-nav__link">
+    DoExecuteRaw
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doverifymsg-jsonpath-expectedvalue" class="md-nav__link">
-    DoVerify(msg, jsonPath, expectedValue)
+  <a href="#doverify" class="md-nav__link">
+    DoVerify
   </a>
   
 </li>
@@ -9950,6 +9950,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10162,22 +10174,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doexecutemethod-params-headers" class="md-nav__link">
-    DoExecute(method, params, headers)
+  <a href="#doexecute" class="md-nav__link">
+    DoExecute
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doexecuterawmethod-body-params" class="md-nav__link">
-    DoExecuteRaw(method, body, params)
+  <a href="#doexecuteraw" class="md-nav__link">
+    DoExecuteRaw
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doverifymsg-jsonpath-expectedvalue" class="md-nav__link">
-    DoVerify(msg, jsonPath, expectedValue)
+  <a href="#doverify" class="md-nav__link">
+    DoVerify
   </a>
   
 </li>
@@ -10222,43 +10234,43 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Credential">Credential</a></td>
+<td><a href="#credential">Credential</a></td>
 <td>The HTTP Basic Authentication Credentials (if any).</td>
 <td>GetCredential</td>
 <td>SetCredential</td>
 </tr>
 <tr>
-<td><a href="#Name">Name</a></td>
+<td><a href="#name">Name</a></td>
 <td>The name of the request operation</td>
 <td>GetName</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ResponseBodyObject">ResponseBodyObject</a></td>
+<td><a href="#responsebodyobject">ResponseBodyObject</a></td>
 <td>The body of the HTTP response deserialized from SOAP into a JavaScript object.</td>
 <td>GetResponseBodyObject</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ResponseBodyText">ResponseBodyText</a></td>
+<td><a href="#responsebodytext">ResponseBodyText</a></td>
 <td>The body of the HTTP response in raw text format.</td>
 <td>GetResponseBodyText</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ResponseHeaders">ResponseHeaders</a></td>
+<td><a href="#responseheaders">ResponseHeaders</a></td>
 <td>Returns the list of HTTP headers returned with the HTTP response.</td>
 <td>GetResponseHeaders</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ResponseIsErrorStatus">ResponseIsErrorStatus</a></td>
+<td><a href="#responseiserrorstatus">ResponseIsErrorStatus</a></td>
 <td>Returns 'true 'if an HTTP error code came back from the web service.</td>
 <td>GetResponseIsErrorStatus</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Url">Url</a></td>
+<td><a href="#url">Url</a></td>
 <td>The URL being used to access the web service.</td>
 <td>GetUrl</td>
 <td>SetUrl</td>
@@ -10277,15 +10289,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoExecute">DoExecute</a></td>
+<td><a href="#doexecute">DoExecute</a></td>
 <td>Executes a SOAP service operation, substituting any of the provided parameter values if necessary.</td>
 </tr>
 <tr>
-<td><a href="#DoExecuteRaw">DoExecuteRaw</a></td>
+<td><a href="#doexecuteraw">DoExecuteRaw</a></td>
 <td>Sends a SOAP request as is.</td>
 </tr>
 <tr>
-<td><a href="#DoVerify">DoVerify</a></td>
+<td><a href="#doverify">DoVerify</a></td>
 <td>Checks that a given part of response equals the expected value.</td>
 </tr>
 </tbody>
@@ -10370,8 +10382,11 @@ Sample code:</p>
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoExecute"></a>    </p>
-<h4 id="doexecutemethod-params-headers">DoExecute(method, params, headers)<a class="headerlink" href="#doexecutemethod-params-headers" title="Permanent link">&para;</a></h4>
+<h4 id="doexecute">DoExecute<a class="headerlink" href="#doexecute" title="Permanent link">&para;</a></h4>
 <p>Executes a SOAP service operation, substituting any of the provided parameter values if necessary.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoExecute</span><span class="p">(</span><span class="nx">method</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="nx">headers</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10403,8 +10418,11 @@ Sample code:</p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.soapservice.doexecute"></a></p>
 <p><a name="DoExecuteRaw"></a>    </p>
-<h4 id="doexecuterawmethod-body-params">DoExecuteRaw(method, body, params)<a class="headerlink" href="#doexecuterawmethod-body-params" title="Permanent link">&para;</a></h4>
+<h4 id="doexecuteraw">DoExecuteRaw<a class="headerlink" href="#doexecuteraw" title="Permanent link">&para;</a></h4>
 <p>Sends a SOAP request as is.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoExecuteRaw</span><span class="p">(</span><span class="nx">method</span><span class="p">,</span> <span class="nx">body</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10436,8 +10454,11 @@ Sample code:</p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.soapservice.doexecuteraw"></a></p>
 <p><a name="DoVerify"></a>    </p>
-<h4 id="doverifymsg-jsonpath-expectedvalue">DoVerify(msg, jsonPath, expectedValue)<a class="headerlink" href="#doverifymsg-jsonpath-expectedvalue" title="Permanent link">&para;</a></h4>
+<h4 id="doverify">DoVerify<a class="headerlink" href="#doverify" title="Permanent link">&para;</a></h4>
 <p>Checks that a given part of response equals the expected value.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoVerify</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">jsonPath</span><span class="p">,</span> <span class="nx">expectedValue</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

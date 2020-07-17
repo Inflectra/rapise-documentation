@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -8986,22 +8986,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doclickcolumncol-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickColumn(col, clickType, xOffset, yOffset)
+  <a href="#doclickcolumn" class="md-nav__link">
+    DoClickColumn
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doscrollhorizontalpercent-verticalpercent" class="md-nav__link">
-    DoScroll(horizontalPercent, verticalPercent)
+  <a href="#doscroll" class="md-nav__link">
+    DoScroll
   </a>
   
 </li>
@@ -9950,6 +9950,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10162,22 +10174,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doclickcolumncol-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickColumn(col, clickType, xOffset, yOffset)
+  <a href="#doclickcolumn" class="md-nav__link">
+    DoClickColumn
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doscrollhorizontalpercent-verticalpercent" class="md-nav__link">
-    DoScroll(horizontalPercent, verticalPercent)
+  <a href="#doscroll" class="md-nav__link">
+    DoScroll
   </a>
   
 </li>
@@ -10223,43 +10235,43 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Cell">Cell</a></td>
+<td><a href="#cell">Cell</a></td>
 <td>Text of the specified cell.</td>
 <td>GetCell</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#CellObject">CellObject</a></td>
+<td><a href="#cellobject">CellObject</a></td>
 <td>UIAObject for the specified cell.</td>
 <td>GetCellObject</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnCount">ColumnCount</a></td>
+<td><a href="#columncount">ColumnCount</a></td>
 <td>Number of columns in the grid.</td>
 <td>GetColumnCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnIndex">ColumnIndex</a></td>
+<td><a href="#columnindex">ColumnIndex</a></td>
 <td>Zero-based index of the column.</td>
 <td>GetColumnIndex</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnName">ColumnName</a></td>
+<td><a href="#columnname">ColumnName</a></td>
 <td>Caption of a column.</td>
 <td>GetColumnName</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnValues">ColumnValues</a></td>
+<td><a href="#columnvalues">ColumnValues</a></td>
 <td>Values of cells in a column</td>
 <td>GetColumnValues</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#RowCount">RowCount</a></td>
+<td><a href="#rowcount">RowCount</a></td>
 <td>Number of rows in the grid.</td>
 <td>GetRowCount</td>
 <td></td>
@@ -10278,15 +10290,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickCell">DoClickCell</a></td>
+<td><a href="#doclickcell">DoClickCell</a></td>
 <td>Clicks the specified cell.</td>
 </tr>
 <tr>
-<td><a href="#DoClickColumn">DoClickColumn</a></td>
+<td><a href="#doclickcolumn">DoClickColumn</a></td>
 <td>Clicks on column header</td>
 </tr>
 <tr>
-<td><a href="#DoScroll">DoScroll</a></td>
+<td><a href="#doscroll">DoScroll</a></td>
 <td>Scrolls table horizontally and vertically.</td>
 </tr>
 </tbody>
@@ -10346,7 +10358,7 @@
 </tr>
 </tbody>
 </table>
-<p>Type: object</p>
+<p>Type: UIAObject</p>
 <p>Accessors: GetCellObject</p>
 <p><a name="ColumnCount"></a></p>
 <h4 id="columncount">ColumnCount<a class="headerlink" href="#columncount" title="Permanent link">&para;</a></h4>
@@ -10433,8 +10445,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickCell"></a>    </p>
-<h4 id="doclickcellrow-col-clicktype-xoffset-yoffset">DoClickCell(row, col, clickType, xOffset, yOffset)<a class="headerlink" href="#doclickcellrow-col-clicktype-xoffset-yoffset" title="Permanent link">&para;</a></h4>
+<h4 id="doclickcell">DoClickCell<a class="headerlink" href="#doclickcell" title="Permanent link">&para;</a></h4>
 <p>Clicks the specified cell.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10476,8 +10491,11 @@
 <p>boolean: 'true' if successful, 'false' otherwise</p>
 <p><a name="see.also.dynamicsaxtable.doclickcell"></a></p>
 <p><a name="DoClickColumn"></a>    </p>
-<h4 id="doclickcolumncol-clicktype-xoffset-yoffset">DoClickColumn(col, clickType, xOffset, yOffset)<a class="headerlink" href="#doclickcolumncol-clicktype-xoffset-yoffset" title="Permanent link">&para;</a></h4>
+<h4 id="doclickcolumn">DoClickColumn<a class="headerlink" href="#doclickcolumn" title="Permanent link">&para;</a></h4>
 <p>Clicks on column header</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickColumn</span><span class="p">(</span><span class="nx">col</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10512,8 +10530,11 @@
 </table>
 <p><a name="see.also.dynamicsaxtable.doclickcolumn"></a></p>
 <p><a name="DoScroll"></a>    </p>
-<h4 id="doscrollhorizontalpercent-verticalpercent">DoScroll(horizontalPercent, verticalPercent)<a class="headerlink" href="#doscrollhorizontalpercent-verticalpercent" title="Permanent link">&para;</a></h4>
+<h4 id="doscroll">DoScroll<a class="headerlink" href="#doscroll" title="Permanent link">&para;</a></h4>
 <p>Scrolls table horizontally and vertically.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoScroll</span><span class="p">(</span><span class="nx">horizontalPercent</span><span class="p">,</span> <span class="nx">verticalPercent</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

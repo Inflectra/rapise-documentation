@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -3883,6 +3883,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getcredential" class="md-nav__link">
+    GetCredential
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getparameters" class="md-nav__link">
     GetParameters
   </a>
@@ -3892,6 +3899,13 @@
           <li class="md-nav__item">
   <a href="#getrequestheaders" class="md-nav__link">
     GetRequestHeaders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcredential" class="md-nav__link">
+    SetCredential
   </a>
   
 </li>
@@ -3938,8 +3952,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#seturloldurl-newurl" class="md-nav__link">
-    SetUrl(oldUrl, newUrl)
+  <a href="#seturl" class="md-nav__link">
+    SetUrl
   </a>
   
 </li>
@@ -8346,6 +8360,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getcredential" class="md-nav__link">
+    GetCredential
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getparameters" class="md-nav__link">
     GetParameters
   </a>
@@ -8355,6 +8376,13 @@
           <li class="md-nav__item">
   <a href="#getrequestheaders" class="md-nav__link">
     GetRequestHeaders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcredential" class="md-nav__link">
+    SetCredential
   </a>
   
 </li>
@@ -8401,8 +8429,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#seturloldurl-newurl" class="md-nav__link">
-    SetUrl(oldUrl, newUrl)
+  <a href="#seturl" class="md-nav__link">
+    SetUrl
   </a>
   
 </li>
@@ -10047,6 +10075,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10197,6 +10237,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getcredential" class="md-nav__link">
+    GetCredential
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getparameters" class="md-nav__link">
     GetParameters
   </a>
@@ -10206,6 +10253,13 @@
           <li class="md-nav__item">
   <a href="#getrequestheaders" class="md-nav__link">
     GetRequestHeaders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcredential" class="md-nav__link">
+    SetCredential
   </a>
   
 </li>
@@ -10252,8 +10306,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#seturloldurl-newurl" class="md-nav__link">
-    SetUrl(oldUrl, newUrl)
+  <a href="#seturl" class="md-nav__link">
+    SetUrl
   </a>
   
 </li>
@@ -10294,27 +10348,35 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#GetParameters">GetParameters</a></td>
+<td><a href="#getcredential">GetCredential</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#getparameters">GetParameters</a></td>
 <td _Name_:somename_Value_:somevalue="'Name':somename,'Value':somevalue">Return common request parameters (array of [</td>
 </tr>
 <tr>
-<td><a href="#GetRequestHeaders">GetRequestHeaders</a></td>
+<td><a href="#getrequestheaders">GetRequestHeaders</a></td>
 <td _Name_:somename_Value_:somevalue="'Name':somename,'Value':somevalue">Return common HTTP Headers applied to each REST or SOAP request (array of [</td>
 </tr>
 <tr>
-<td><a href="#SetParameter">SetParameter</a></td>
+<td><a href="#setcredential">SetCredential</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#setparameter">SetParameter</a></td>
 <td>Sets common request parameter.</td>
 </tr>
 <tr>
-<td><a href="#SetParameters">SetParameters</a></td>
+<td><a href="#setparameters">SetParameters</a></td>
 <td>Sets common request parameters.</td>
 </tr>
 <tr>
-<td><a href="#SetRequestHeader">SetRequestHeader</a></td>
+<td><a href="#setrequestheader">SetRequestHeader</a></td>
 <td>Sets common request header.</td>
 </tr>
 <tr>
-<td><a href="#SetRequestHeaders">SetRequestHeaders</a></td>
+<td><a href="#setrequestheaders">SetRequestHeaders</a></td>
 <td>Sets common HTTP Headers applied to each REST or SOAP request.</td>
 </tr>
 </tbody>
@@ -10331,7 +10393,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#SetUrl">SetUrl</a></td>
+<td><a href="#seturl">SetUrl</a></td>
 <td>Enable URL replacement for all further requests.</td>
 </tr>
 </tbody>
@@ -10339,6 +10401,9 @@
 <!-- ============================== property detail ========================== -->
 
 <h3 id="property-detail">Property Detail<a class="headerlink" href="#property-detail" title="Permanent link">&para;</a></h3>
+<p><a name="GetCredential"></a></p>
+<h4 id="getcredential">GetCredential<a class="headerlink" href="#getcredential" title="Permanent link">&para;</a></h4>
+<p>Type: </p>
 <p><a name="GetParameters"></a></p>
 <h4 id="getparameters">GetParameters<a class="headerlink" href="#getparameters" title="Permanent link">&para;</a></h4>
 <p>Return common request parameters (array of [{'Name':somename,'Value':somevalue},...])</p>
@@ -10346,6 +10411,9 @@
 <p><a name="GetRequestHeaders"></a></p>
 <h4 id="getrequestheaders">GetRequestHeaders<a class="headerlink" href="#getrequestheaders" title="Permanent link">&para;</a></h4>
 <p>Return common HTTP Headers applied to each REST or SOAP request (array of [{'Name':somename,'Value':somevalue},...])</p>
+<p>Type: </p>
+<p><a name="SetCredential"></a></p>
+<h4 id="setcredential">SetCredential<a class="headerlink" href="#setcredential" title="Permanent link">&para;</a></h4>
 <p>Type: </p>
 <p><a name="SetParameter"></a></p>
 <h4 id="setparameter">SetParameter<a class="headerlink" href="#setparameter" title="Permanent link">&para;</a></h4>
@@ -10367,8 +10435,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="SetUrl"></a>    </p>
-<h4 id="seturloldurl-newurl">SetUrl(oldUrl, newUrl)<a class="headerlink" href="#seturloldurl-newurl" title="Permanent link">&para;</a></h4>
+<h4 id="seturl">SetUrl<a class="headerlink" href="#seturl" title="Permanent link">&para;</a></h4>
 <p>Enable URL replacement for all further requests. If request URL starts with oldUrl then replace the beginning with newUrl</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SetUrl</span><span class="p">(</span><span class="nx">oldUrl</span><span class="p">,</span> <span class="nx">newUrl</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

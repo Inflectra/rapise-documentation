@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -8053,22 +8053,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dofindchildpath-separator-pathtype" class="md-nav__link">
-    DoFindChild(path, separator, pathType)
+  <a href="#dofindchild" class="md-nav__link">
+    DoFindChild
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#domenupath-separator-pathtype" class="md-nav__link">
-    DoMenu(path, separator, pathType)
+  <a href="#domenu" class="md-nav__link">
+    DoMenu
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dotitlemenupath-separator-pathtype" class="md-nav__link">
-    DoTitleMenu(path, separator, pathType)
+  <a href="#dotitlemenu" class="md-nav__link">
+    DoTitleMenu
   </a>
   
 </li>
@@ -9881,6 +9881,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10024,22 +10036,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dofindchildpath-separator-pathtype" class="md-nav__link">
-    DoFindChild(path, separator, pathType)
+  <a href="#dofindchild" class="md-nav__link">
+    DoFindChild
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#domenupath-separator-pathtype" class="md-nav__link">
-    DoMenu(path, separator, pathType)
+  <a href="#domenu" class="md-nav__link">
+    DoMenu
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dotitlemenupath-separator-pathtype" class="md-nav__link">
-    DoTitleMenu(path, separator, pathType)
+  <a href="#dotitlemenu" class="md-nav__link">
+    DoTitleMenu
   </a>
   
 </li>
@@ -10085,15 +10097,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoFindChild">DoFindChild</a></td>
+<td><a href="#dofindchild">DoFindChild</a></td>
 <td>Searches for specific item in the menu.</td>
 </tr>
 <tr>
-<td><a href="#DoMenu">DoMenu</a></td>
+<td><a href="#domenu">DoMenu</a></td>
 <td>Performs click on the menu item.</td>
 </tr>
 <tr>
-<td><a href="#DoTitleMenu">DoTitleMenu</a></td>
+<td><a href="#dotitlemenu">DoTitleMenu</a></td>
 <td>Clicks menu title item.</td>
 </tr>
 </tbody>
@@ -10104,8 +10116,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoFindChild"></a>    </p>
-<h4 id="dofindchildpath-separator-pathtype">DoFindChild(path, separator, pathType)<a class="headerlink" href="#dofindchildpath-separator-pathtype" title="Permanent link">&para;</a></h4>
+<h4 id="dofindchild">DoFindChild<a class="headerlink" href="#dofindchild" title="Permanent link">&para;</a></h4>
 <p>Searches for specific item in the menu.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFindChild</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">separator</span><span class="p">,</span> <span class="nx">pathType</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10137,8 +10152,11 @@
 <p><a href="../HTMLObject/">HTMLObject</a>: HTMLObject of the found node</p>
 <p><a name="see.also.yuimenu.dofindchild"></a></p>
 <p><a name="DoMenu"></a>    </p>
-<h4 id="domenupath-separator-pathtype">DoMenu(path, separator, pathType)<a class="headerlink" href="#domenupath-separator-pathtype" title="Permanent link">&para;</a></h4>
+<h4 id="domenu">DoMenu<a class="headerlink" href="#domenu" title="Permanent link">&para;</a></h4>
 <p>Performs click on the menu item.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMenu</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">separator</span><span class="p">,</span> <span class="nx">pathType</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10170,8 +10188,11 @@
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.yuimenu.domenu"></a></p>
 <p><a name="DoTitleMenu"></a>    </p>
-<h4 id="dotitlemenupath-separator-pathtype">DoTitleMenu(path, separator, pathType)<a class="headerlink" href="#dotitlemenupath-separator-pathtype" title="Permanent link">&para;</a></h4>
+<h4 id="dotitlemenu">DoTitleMenu<a class="headerlink" href="#dotitlemenu" title="Permanent link">&para;</a></h4>
 <p>Clicks menu title item. Only 1 menu level currently supported.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoTitleMenu</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">separator</span><span class="p">,</span> <span class="nx">pathType</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

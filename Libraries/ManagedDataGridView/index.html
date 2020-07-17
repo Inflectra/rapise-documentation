@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -4642,8 +4642,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
@@ -9936,6 +9936,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10148,8 +10160,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
@@ -10196,43 +10208,43 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Cell">Cell</a></td>
+<td><a href="#cell">Cell</a></td>
 <td>Text of the specified cell.</td>
 <td>GetCell</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnCount">ColumnCount</a></td>
+<td><a href="#columncount">ColumnCount</a></td>
 <td>Number of columns in the table.</td>
 <td>GetColumnCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnName">ColumnName</a></td>
+<td><a href="#columnname">ColumnName</a></td>
 <td>Caption of a column.</td>
 <td>GetColumnName</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#RowCount">RowCount</a></td>
+<td><a href="#rowcount">RowCount</a></td>
 <td>Number of rows in the table.</td>
 <td>GetRowCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#SelectedColumn">SelectedColumn</a></td>
+<td><a href="#selectedcolumn">SelectedColumn</a></td>
 <td>Index of the selected column.</td>
 <td>GetSelectedColumn</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#SelectedRow">SelectedRow</a></td>
+<td><a href="#selectedrow">SelectedRow</a></td>
 <td>Index of the selected row.</td>
 <td>GetSelectedRow</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Text">Text</a></td>
+<td><a href="#text">Text</a></td>
 <td>Text of the currently focused cell.</td>
 <td>GetText</td>
 <td></td>
@@ -10251,7 +10263,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickCell">DoClickCell</a></td>
+<td><a href="#doclickcell">DoClickCell</a></td>
 <td>Clicks the specified cell</td>
 </tr>
 </tbody>
@@ -10337,8 +10349,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickCell"></a>    </p>
-<h4 id="doclickcellrow-col-clicktype-xoffset-yoffset">DoClickCell(row, col, clickType, xOffset, yOffset)<a class="headerlink" href="#doclickcellrow-col-clicktype-xoffset-yoffset" title="Permanent link">&para;</a></h4>
+<h4 id="doclickcell">DoClickCell<a class="headerlink" href="#doclickcell" title="Permanent link">&para;</a></h4>
 <p>Clicks the specified cell</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10367,12 +10382,12 @@
 <tr>
 <td>xOffset</td>
 <td>number</td>
-<td>X offset to click within object. Default is a center.<br>Optional.</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 <tr>
 <td>yOffset</td>
 <td>number</td>
-<td>Y offset to click within object. Default is a center.<br>Optional.</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 </tbody>
 </table>

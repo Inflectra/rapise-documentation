@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -9882,6 +9882,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10079,10 +10091,12 @@
 <p><img alt="filter" src="../img/object_tree_filter.png" /></p>
 <ul>
 <li>Filter - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box.</li>
-<li>Display modes switch:</li>
+<li>Display modes switch:<ul>
 <li><code>id</code> - show object IDs in the tree.</li>
 <li><code>n</code> - show object names in the tree.</li>
 <li><code>id[n]</code> - show each object in format <code>object_id [ object_name ]</code> in the tree.</li>
+</ul>
+</li>
 </ul>
 <h2 id="context-menu-root-node">Context Menu (root node)<a class="headerlink" href="#context-menu-root-node" title="Permanent link">&para;</a></h2>
 <p>Right click the <strong>Object Tree</strong> node to see:</p>
@@ -10101,13 +10115,14 @@
 </ul>
 <h2 id="context-menu-object">Context Menu (object)<a class="headerlink" href="#context-menu-object" title="Permanent link">&para;</a></h2>
 <p>Right click on an object in the <strong>Object Tree</strong> dialog to see:</p>
-<p><img alt="object tree, context menu 2" src="../img/object_tree3.png" /></p>
+<p><img alt="object tree, context menu 2" src="../img/object_tree3.png" width="240" /></p>
 <ul>
 <li><strong>Flash</strong> opens the application/url where the object is located.  A frame will blink around the object to show you where it is on the page.</li>
 <li><strong>Re-Learn</strong> will open up the <a href="../recording/">Recorder</a>, allowing you to re-learn the object. This is useful if the AUT has changed and the object definition will no longer correctly locate the object.</li>
-<li><strong>Remove</strong> simply removes the selected object from the tree.</li>
+<li><strong>Rename</strong> opens Rename dialog for the object.</li>
 <li><strong>Clone</strong> makes a copy of the object definition and adds the cloned version into the tree. You can then make changes to the cloned copy.</li>
 <li><strong>Add Parameter</strong> opens up a dialog box that lets you add a custom parameter to the learned object definition (stored in the <code>Objects.js</code> file).</li>
+<li><strong>Delete</strong> simply removes the selected object from the tree.</li>
 </ul>
                 
                   

@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -9948,6 +9948,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10321,81 +10333,37 @@
 <p>Anything typed into the <strong>Type</strong> cell of the commented line is expanded to as many cells as needed to show the text. This is similar to the way Excel extends cell text across sibling empty cells:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_comment_line.png" /></p>
 <h2 id="context-menu">Context Menu<a class="headerlink" href="#context-menu" title="Permanent link">&para;</a></h2>
-<p><img alt="RVL Context Menu" src="../img/rvl_editor_context_menu.png" /></p>
+<p><img alt="RVL Context Menu" src="../img/rvl_editor_context_menu.png" width="215" /></p>
 <ul>
-<li>
-<p><strong>Find '<code>&lt;object&gt;</code>' in Object Tree</strong> - this menu item is only available when you click on the cell from the <strong>Object</strong> column.</p>
-</li>
-<li>
-<p><strong>Rename '<code>&lt;object&gt;</code>'...</strong> - rename object in the object repository and fix all references in the current sheet.</p>
-</li>
-<li>
-<p><strong>Play This Sheet</strong> - execute actions from the active sheet.</p>
-</li>
-<li>
-<p><strong>Play Selection</strong> - execute selected range of actions only. Useful for tweaking tricky actions and checking the result immediately.</p>
-</li>
-<li>
-<p><strong>Play from Here</strong> - start execution at selected line and proceed until the end. Useful to continue script from the point where it stopped.</p>
-</li>
-<li>
-<p><strong>Cut</strong>, <strong>Copy</strong>, <strong>Paste</strong> - standard clipboard operations.</p>
-</li>
-<li>
-<p><strong>Copy Selection as JavaScript</strong> - translate selected range to the equivalent JavaScript and put its text to the clipboard.</p>
-</li>
-<li>
-<p><strong>Copy Selection as Text</strong> - put selected range as tab-separated text to the clipboard.</p>
-</li>
-<li>
-<p><strong>Ins Row</strong> - insert new row before the active one.</p>
-</li>
-<li>
-<p><strong>Del Row</strong> - delete all selected rows.</p>
-</li>
-<li>
-<p><strong>Clear in Selection</strong> - clears cell values in selected region.</p>
-</li>
-<li>
-<p><strong>Select All Rows</strong> - select full sheet.</p>
-</li>
-<li>
-<p><strong>Insert Selected Rows Here</strong> - clone rows at the current location.</p>
-</li>
-<li>
-<p><strong>Move Selected Rows Here</strong> - move rows to the current location.</p>
-</li>
-<li>
-<p><strong>Wrap Selection Info If</strong> - enclose selected range into <a href="../../RVL/IfElse/">branch</a>.</p>
-</li>
-<li>
-<p><strong>Wrap Selection Into Loop</strong> - enclose selected range into <a href="../../RVL/Loops/">loop</a>.</p>
-</li>
-<li>
-<p><strong>Extract Selection as new Sheet</strong> - make new sheet and move selected range into it.</p>
-</li>
+<li><strong>Find '<code>&lt;object&gt;</code>' in Object Tree</strong> - this menu item is only available when you click on the cell from the <strong>Object</strong> column.</li>
+<li><strong>Flash '<code>&lt;object&gt;</code>'</strong> - flash the object.</li>
+<li><strong>Show XPath/Location for '<code>&lt;object&gt;</code>'</strong> - show the location string for the object.</li>
+<li><strong>Rename '<code>&lt;object&gt;</code>'...</strong> - rename object in the object repository and fix all references in the current sheet.</li>
+<li><strong>Play This Sheet</strong> - execute actions from the active sheet.</li>
+<li><strong>Play Selection</strong> - execute selected range of actions only. Useful for tweaking tricky actions and checking the result immediately.</li>
+<li><strong>Play From Here</strong> - start execution at selected line and proceed until the end. Useful to continue script from the point where it stopped.</li>
+<li><strong>Ins Row</strong> - insert new row before the active one.</li>
+<li><strong>Del Row</strong> - delete all selected rows.</li>
+<li><strong>Cut</strong>, <strong>Copy</strong>, <strong>Paste</strong> - standard clipboard operations.</li>
+<li><strong>Clear in Selection</strong> - clears cell values in selected region.</li>
+<li><strong>Select All Rows</strong> - select full sheet.</li>
+<li><strong>Insert Selected Rows Here</strong> - clone rows at the current location.</li>
+<li><strong>Move Selected Rows Here</strong> - move rows to the current location.</li>
+<li><strong>Copy Selection as JavaScript</strong> - translate selected range to the equivalent JavaScript and put its text to the clipboard.</li>
+<li><strong>Copy Selection as Text</strong> - put selected range as tab-separated text to the clipboard.</li>
+<li><strong>Wrap Selection Info If</strong> - enclose selected range into <a href="../../RVL/IfElse/">branch</a>.</li>
+<li><strong>Wrap Selection Into Loop</strong> - enclose selected range into <a href="../../RVL/Loops/">loop</a>.</li>
+<li><strong>Extract Selection as new Sheet</strong> - make new sheet and move selected range into it.</li>
 </ul>
 <h2 id="sheet-tab-context-menu">Sheet Tab Context Menu<a class="headerlink" href="#sheet-tab-context-menu" title="Permanent link">&para;</a></h2>
 <p><img alt="Tab Context Menu" src="../img/rvl_editor_tab_context_menu.png" /></p>
 <ul>
-<li>
-<p><strong>Play this Sheet</strong> - execute given sheet.</p>
-</li>
-<li>
-<p><strong>Rename...</strong> - change sheet tab name.</p>
-</li>
-<li>
-<p><strong>Remove Sheet '<code>&lt;sheet name&gt;</code>'</strong> - delete sheet form the workbook.</p>
-</li>
-<li>
-<p><strong>Copy RVL DoPlaySheet</strong> - copy call statement for the selected sheet for inserting into the other RVL sheet in the same workbook.</p>
-</li>
-<li>
-<p><strong>Copy RVL DoPlaySheet</strong> - copy call statement for the selected sheet for inserting into the other RVL workbook.</p>
-</li>
-<li>
-<p><strong>Copy RVL.DoPlayScript(...)</strong> - copy JavaScript code to execute this sheet (call sheet from JavaScript).</p>
-</li>
+<li><strong>Play this Sheet</strong> - execute given sheet.</li>
+<li><strong>Rename...</strong> - change sheet tab name.</li>
+<li><strong>Remove Sheet '<code>&lt;sheet name&gt;</code>'</strong> - delete sheet form the workbook.</li>
+<li><strong>Copy RVL DoPlaySheet</strong> - copy call statement for the selected sheet for inserting into the other RVL sheet in the same workbook.</li>
+<li><strong>Copy RVL DoPlaySheet</strong> - copy call statement for the selected sheet for inserting into the other RVL workbook.</li>
+<li><strong>Copy RVL.DoPlayScript(...)</strong> - copy JavaScript code to execute this sheet (call sheet from JavaScript).</li>
 </ul>
 <h2 id="functions-object">Functions Object<a class="headerlink" href="#functions-object" title="Permanent link">&para;</a></h2>
 <p>Suppose we have some functions defined in the <code>User.js</code> file:</p>
@@ -10415,6 +10383,7 @@
 <ul>
 <li><code>Shift-Enter</code> - inserts an empty line after the selected cell.</li>
 <li><code>Ctrl-D</code> - deletes the line of the selected cell.</li>
+<li><code>Ctrl-P</code> - reveals optional parameters for an action in the current line, acts as click on <code>Params</code> button on the RVL toolbar.</li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>

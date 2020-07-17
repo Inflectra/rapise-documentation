@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -6920,22 +6920,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclicknodepath-separator-pathtype-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickNode(path, separator, pathType, clickType, xOffset, yOffset)
+  <a href="#doclicknode" class="md-nav__link">
+    DoClickNode
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#docollapsepath-separator-pathtype" class="md-nav__link">
-    DoCollapse(path, separator, pathType)
+  <a href="#docollapse" class="md-nav__link">
+    DoCollapse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doexpandpath-separator-pathtype" class="md-nav__link">
-    DoExpand(path, separator, pathType)
+  <a href="#doexpand" class="md-nav__link">
+    DoExpand
   </a>
   
 </li>
@@ -9936,6 +9936,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10134,22 +10146,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclicknodepath-separator-pathtype-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickNode(path, separator, pathType, clickType, xOffset, yOffset)
+  <a href="#doclicknode" class="md-nav__link">
+    DoClickNode
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#docollapsepath-separator-pathtype" class="md-nav__link">
-    DoCollapse(path, separator, pathType)
+  <a href="#docollapse" class="md-nav__link">
+    DoCollapse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doexpandpath-separator-pathtype" class="md-nav__link">
-    DoExpand(path, separator, pathType)
+  <a href="#doexpand" class="md-nav__link">
+    DoExpand
   </a>
   
 </li>
@@ -10196,31 +10208,31 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#ChildrenCount">ChildrenCount</a></td>
+<td><a href="#childrencount">ChildrenCount</a></td>
 <td>Number of children of the selected node or a node specified by the input parameters.</td>
 <td>GetChildrenCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Expanded">Expanded</a></td>
+<td><a href="#expanded">Expanded</a></td>
 <td>Expanded state of the selected node or a node specified by the input parameters.</td>
 <td>GetExpanded</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#IndexPath">IndexPath</a></td>
+<td><a href="#indexpath">IndexPath</a></td>
 <td>Index path of the specified or selected tree node i.e.</td>
 <td>GetIndexPath</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#NodeText">NodeText</a></td>
+<td><a href="#nodetext">NodeText</a></td>
 <td>Text of the selected node or a node specified by the input parameters.</td>
 <td>GetNodeText</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Selected">Selected</a></td>
+<td><a href="#selected">Selected</a></td>
 <td>Selected state of the selected node or a node specified by the input parameters</td>
 <td>GetSelected</td>
 <td></td>
@@ -10239,15 +10251,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickNode">DoClickNode</a></td>
+<td><a href="#doclicknode">DoClickNode</a></td>
 <td>Clicks specific node in the tree.</td>
 </tr>
 <tr>
-<td><a href="#DoCollapse">DoCollapse</a></td>
+<td><a href="#docollapse">DoCollapse</a></td>
 <td>Collapses specific node in the tree.</td>
 </tr>
 <tr>
-<td><a href="#DoExpand">DoExpand</a></td>
+<td><a href="#doexpand">DoExpand</a></td>
 <td>Expands specific node in the tree.</td>
 </tr>
 </tbody>
@@ -10419,8 +10431,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickNode"></a>    </p>
-<h4 id="doclicknodepath-separator-pathtype-clicktype-xoffset-yoffset">DoClickNode(path, separator, pathType, clickType, xOffset, yOffset)<a class="headerlink" href="#doclicknodepath-separator-pathtype-clicktype-xoffset-yoffset" title="Permanent link">&para;</a></h4>
+<h4 id="doclicknode">DoClickNode<a class="headerlink" href="#doclicknode" title="Permanent link">&para;</a></h4>
 <p>Clicks specific node in the tree.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickNode</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">separator</span><span class="p">,</span> <span class="nx">pathType</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10454,12 +10469,12 @@
 <tr>
 <td>xOffset</td>
 <td>number</td>
-<td>X offset to click within object. Default is a center.<br>Optional.</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 <tr>
 <td>yOffset</td>
 <td>number</td>
-<td>Y offset to click within object. Default is a center.<br>Optional.</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -10467,8 +10482,11 @@
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.javaswingtree.doclicknode"></a></p>
 <p><a name="DoCollapse"></a>    </p>
-<h4 id="docollapsepath-separator-pathtype">DoCollapse(path, separator, pathType)<a class="headerlink" href="#docollapsepath-separator-pathtype" title="Permanent link">&para;</a></h4>
+<h4 id="docollapse">DoCollapse<a class="headerlink" href="#docollapse" title="Permanent link">&para;</a></h4>
 <p>Collapses specific node in the tree.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoCollapse</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">separator</span><span class="p">,</span> <span class="nx">pathType</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10500,8 +10518,11 @@
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.javaswingtree.docollapse"></a></p>
 <p><a name="DoExpand"></a>    </p>
-<h4 id="doexpandpath-separator-pathtype">DoExpand(path, separator, pathType)<a class="headerlink" href="#doexpandpath-separator-pathtype" title="Permanent link">&para;</a></h4>
+<h4 id="doexpand">DoExpand<a class="headerlink" href="#doexpand" title="Permanent link">&para;</a></h4>
 <p>Expands specific node in the tree.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoExpand</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">separator</span><span class="p">,</span> <span class="nx">pathType</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

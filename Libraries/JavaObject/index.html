@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -6729,21 +6729,21 @@
         
           <li class="md-nav__item">
   <a href="#doaction" class="md-nav__link">
-    DoAction()
+    DoAction
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dodumpwidgetdumpproperties-maxdepth-trimvalue-indent-filepath-append-ignoreprops" class="md-nav__link">
-    DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
+  <a href="#dodumpwidget" class="md-nav__link">
+    DoDumpWidget
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dogetwidgetpropertyname" class="md-nav__link">
-    DoGetWidgetProperty(name)
+  <a href="#dogetwidgetproperty" class="md-nav__link">
+    DoGetWidgetProperty
   </a>
   
 </li>
@@ -9936,6 +9936,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10135,21 +10147,21 @@
         
           <li class="md-nav__item">
   <a href="#doaction" class="md-nav__link">
-    DoAction()
+    DoAction
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dodumpwidgetdumpproperties-maxdepth-trimvalue-indent-filepath-append-ignoreprops" class="md-nav__link">
-    DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
+  <a href="#dodumpwidget" class="md-nav__link">
+    DoDumpWidget
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dogetwidgetpropertyname" class="md-nav__link">
-    DoGetWidgetProperty(name)
+  <a href="#dogetwidgetproperty" class="md-nav__link">
+    DoGetWidgetProperty
   </a>
   
 </li>
@@ -10195,31 +10207,31 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#ControlType">ControlType</a></td>
+<td><a href="#controltype">ControlType</a></td>
 <td>Type of the object.</td>
 <td>GetControlType</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Height">Height</a></td>
+<td><a href="#height">Height</a></td>
 <td>Height of the object.</td>
 <td>GetHeight</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Width">Width</a></td>
+<td><a href="#width">Width</a></td>
 <td>Width of the object.</td>
 <td>GetWidth</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#X">X</a></td>
+<td><a href="#x">X</a></td>
 <td>X-coordinate of the top left corner of the object.</td>
 <td>GetX</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Y">Y</a></td>
+<td><a href="#y">Y</a></td>
 <td>Y-coordinate of the top left corner of the object.</td>
 <td>GetY</td>
 <td></td>
@@ -10238,15 +10250,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoAction">DoAction</a></td>
+<td><a href="#doaction">DoAction</a></td>
 <td>Clicks in the middle of the control.</td>
 </tr>
 <tr>
-<td><a href="#DoDumpWidget">DoDumpWidget</a></td>
+<td><a href="#dodumpwidget">DoDumpWidget</a></td>
 <td>Dumps Spy data for the object.</td>
 </tr>
 <tr>
-<td><a href="#DoGetWidgetProperty">DoGetWidgetProperty</a></td>
+<td><a href="#dogetwidgetproperty">DoGetWidgetProperty</a></td>
 <td>Returns the value of a property with a given name.</td>
 </tr>
 </tbody>
@@ -10283,14 +10295,20 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoAction"></a>    </p>
-<h4 id="doaction">DoAction()<a class="headerlink" href="#doaction" title="Permanent link">&para;</a></h4>
+<h4 id="doaction">DoAction<a class="headerlink" href="#doaction" title="Permanent link">&para;</a></h4>
 <p>Clicks in the middle of the control.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoAction</span><span class="p">()</span> 
+</code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.javaobject.doaction"></a></p>
 <p><a name="DoDumpWidget"></a>    </p>
-<h4 id="dodumpwidgetdumpproperties-maxdepth-trimvalue-indent-filepath-append-ignoreprops">DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)<a class="headerlink" href="#dodumpwidgetdumpproperties-maxdepth-trimvalue-indent-filepath-append-ignoreprops" title="Permanent link">&para;</a></h4>
+<h4 id="dodumpwidget">DoDumpWidget<a class="headerlink" href="#dodumpwidget" title="Permanent link">&para;</a></h4>
 <p>Dumps Spy data for the object.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoDumpWidget</span><span class="p">(</span><span class="nx">dumpProperties</span><span class="p">,</span> <span class="nx">maxDepth</span><span class="p">,</span> <span class="nx">trimValue</span><span class="p">,</span> <span class="nx">indent</span><span class="p">,</span> <span class="nx">filePath</span><span class="p">,</span> <span class="nx">append</span><span class="p">,</span> <span class="nx">ignoreProps</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10342,8 +10360,11 @@
 <p>string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write succeeded, 'false' - otherwise.</p>
 <p><a name="see.also.javaobject.dodumpwidget"></a></p>
 <p><a name="DoGetWidgetProperty"></a>    </p>
-<h4 id="dogetwidgetpropertyname">DoGetWidgetProperty(name)<a class="headerlink" href="#dogetwidgetpropertyname" title="Permanent link">&para;</a></h4>
+<h4 id="dogetwidgetproperty">DoGetWidgetProperty<a class="headerlink" href="#dogetwidgetproperty" title="Permanent link">&para;</a></h4>
 <p>Returns the value of a property with a given name. Names of available properties can be seen in Spy.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoGetWidgetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

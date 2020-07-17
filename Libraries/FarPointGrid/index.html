@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_4/" class="md-tabs__link">
+        <a href="../../New/6_5/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -6595,15 +6595,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrowindex-columnindex" class="md-nav__link">
-    DoClickCell(rowIndex, columnIndex)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dofulltextfilename" class="md-nav__link">
-    DoFullText(fileName)
+  <a href="#dofulltext" class="md-nav__link">
+    DoFullText
   </a>
   
 </li>
@@ -9964,6 +9964,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
+      Release Notes for 6.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_4/" title="Release Notes for 6.4" class="md-nav__link">
       Release Notes for 6.4
     </a>
@@ -10197,15 +10209,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrowindex-columnindex" class="md-nav__link">
-    DoClickCell(rowIndex, columnIndex)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dofulltextfilename" class="md-nav__link">
-    DoFullText(fileName)
+  <a href="#dofulltext" class="md-nav__link">
+    DoFullText
   </a>
   
 </li>
@@ -10250,61 +10262,61 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Cell">Cell</a></td>
+<td><a href="#cell">Cell</a></td>
 <td>Text of the specified cell.</td>
 <td>GetCell</td>
 <td>SetCell</td>
 </tr>
 <tr>
-<td><a href="#ColumnCount">ColumnCount</a></td>
+<td><a href="#columncount">ColumnCount</a></td>
 <td>Number of columns in the grid.</td>
 <td>GetColumnCount</td>
 <td>SetColumnCount</td>
 </tr>
 <tr>
-<td><a href="#ColumnName">ColumnName</a></td>
+<td><a href="#columnname">ColumnName</a></td>
 <td>Caption of a column.</td>
 <td>GetColumnName</td>
 <td>SetColumnName</td>
 </tr>
 <tr>
-<td><a href="#RowCount">RowCount</a></td>
+<td><a href="#rowcount">RowCount</a></td>
 <td>Number of rows in the grid.</td>
 <td>GetRowCount</td>
 <td>SetRowCount</td>
 </tr>
 <tr>
-<td><a href="#SelectedCells">SelectedCells</a></td>
+<td><a href="#selectedcells">SelectedCells</a></td>
 <td>Selected cells.</td>
 <td>GetSelectedCells</td>
 <td>SetSelectedCells</td>
 </tr>
 <tr>
-<td><a href="#SelectedColumn">SelectedColumn</a></td>
+<td><a href="#selectedcolumn">SelectedColumn</a></td>
 <td>Index of the selected column.</td>
 <td>GetSelectedColumn</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#SelectedColumnCount">SelectedColumnCount</a></td>
+<td><a href="#selectedcolumncount">SelectedColumnCount</a></td>
 <td>Number of selected columns.</td>
 <td>GetSelectedColumnCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#SelectedRow">SelectedRow</a></td>
+<td><a href="#selectedrow">SelectedRow</a></td>
 <td>Index of the selected row.</td>
 <td>GetSelectedRow</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#SelectedRowCount">SelectedRowCount</a></td>
+<td><a href="#selectedrowcount">SelectedRowCount</a></td>
 <td>Number of selected rows.</td>
 <td>GetSelectedRowCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#Text">Text</a></td>
+<td><a href="#text">Text</a></td>
 <td>Text of the currently focused cell.</td>
 <td>GetText</td>
 <td>SetText</td>
@@ -10323,11 +10335,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickCell">DoClickCell</a></td>
+<td><a href="#doclickcell">DoClickCell</a></td>
 <td>Clicks the specified cell</td>
 </tr>
 <tr>
-<td><a href="#DoFullText">DoFullText</a></td>
+<td><a href="#dofulltext">DoFullText</a></td>
 <td>Returns text representation of the table.</td>
 </tr>
 </tbody>
@@ -10455,8 +10467,11 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickCell"></a>    </p>
-<h4 id="doclickcellrowindex-columnindex">DoClickCell(rowIndex, columnIndex)<a class="headerlink" href="#doclickcellrowindex-columnindex" title="Permanent link">&para;</a></h4>
+<h4 id="doclickcell">DoClickCell<a class="headerlink" href="#doclickcell" title="Permanent link">&para;</a></h4>
 <p>Clicks the specified cell</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">rowIndex</span><span class="p">,</span> <span class="nx">columnIndex</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10483,8 +10498,11 @@
 <p>boolean: 'true' if successful, 'false' otherwise</p>
 <p><a name="see.also.farpointgrid.doclickcell"></a></p>
 <p><a name="DoFullText"></a>    </p>
-<h4 id="dofulltextfilename">DoFullText(fileName)<a class="headerlink" href="#dofulltextfilename" title="Permanent link">&para;</a></h4>
+<h4 id="dofulltext">DoFullText<a class="headerlink" href="#dofulltext" title="Permanent link">&para;</a></h4>
 <p>Returns text representation of the table.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFullText</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
+</code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
