@@ -449,17 +449,13 @@ However there are situations where you want to be able to launch an automated Ra
 
 For debugging and additional options when running the program, the following command-line arguments are available:
 
-- **-status** shows the Status screen upon startup. (Normal action is to run minimized to the system tray.
+- **-minimized** starts the application in minimized mode. Normal action is to show the list of pending runs.
 - **-paused** starts the application with timers Paused instead of active.
-- **-poll** forces the program to do an initial poll upon startup. (Normal action is to wait the pending time before doing the initial poll.)
+- **-poll** forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.
 - **-trace** enables tracelogging to the EventLog for debugging and watching tests execute.
-- **logfile** forces events to be written to a text file instead of the Application EventLog. This option enables **-trace** as well. Files are located in the Local Application Data folder.
-
-        C:\Users\\<user\>\AppData\Local
-
 - **-testset:[Test Set ID]** allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. **-testset:45** runs test set `TX00045`).
 - **-project:[Project ID]** allows you to tell RapiseLauncher which project the test set specified with the **-testset** argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).
-- **<filename>** must be the last item on the command line. This is a `TST` file downloaded from SpiraTest to start immediate execution on.
+- **filename** must be the last item on the command line. This is a `TST` file downloaded from SpiraTest to start immediate execution on. Optional.
 
 ## See Also
 
