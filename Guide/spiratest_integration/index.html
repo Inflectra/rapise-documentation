@@ -10696,22 +10696,13 @@ Inflectra &gt; Rapise</code> program folder:</p>
 <h3 id="command-line-arguments">Command line arguments<a class="headerlink" href="#command-line-arguments" title="Permanent link">&para;</a></h3>
 <p>For debugging and additional options when running the program, the following command-line arguments are available:</p>
 <ul>
-<li><strong>-status</strong> shows the Status screen upon startup. (Normal action is to run minimized to the system tray.</li>
+<li><strong>-minimized</strong> starts the application in minimized mode. Normal action is to show the list of pending runs.</li>
 <li><strong>-paused</strong> starts the application with timers Paused instead of active.</li>
-<li><strong>-poll</strong> forces the program to do an initial poll upon startup. (Normal action is to wait the pending time before doing the initial poll.)</li>
+<li><strong>-poll</strong> forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.</li>
 <li><strong>-trace</strong> enables tracelogging to the EventLog for debugging and watching tests execute.</li>
-<li>
-<p><strong>logfile</strong> forces events to be written to a text file instead of the Application EventLog. This option enables <strong>-trace</strong> as well. Files are located in the Local Application Data folder.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Users\\&lt;user\&gt;\AppData\Local</span>
-</code></pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p><strong>-testset:[Test Set ID]</strong> allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. <strong>-testset:45</strong> runs test set <code>TX00045</code>).</p>
-</li>
+<li><strong>-testset:[Test Set ID]</strong> allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. <strong>-testset:45</strong> runs test set <code>TX00045</code>).</li>
 <li><strong>-project:[Project ID]</strong> allows you to tell RapiseLauncher which project the test set specified with the <strong>-testset</strong> argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).</li>
-<li><strong><filename></strong> must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution on.</li>
+<li><strong>filename</strong> must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution on. Optional.</li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
