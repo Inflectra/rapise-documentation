@@ -1,4 +1,7 @@
-# Visual Studio
+# Visual Studio and Azure DevOps Integration v1
+
+!!! tip
+    This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to [Azure DevOps Integration v3](vstest.md).
 
 This section describes how to execute Rapise tests using the [Microsoft Test Framework](https://github.com/microsoft/testfx).
 

@@ -355,8 +355,7 @@ nav:
     - 'Preparing for Android Testing': 'Manuals/Preparing_for_Android_Testing.md'
     - 'Preparing for iOS Testing': 'Manuals/Preparing_for_iOS_Testing.md'
     - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
-    - 'Azure DevOps Integration': 'Guide/ado_integration.md'
-    - 'VSTS/TFS Integration': 'Guide/visual_studio.md'
+    - 'Azure DevOps Integration': 'Guide/vstest.md'
     - 'Robotic Process Automation': 'Manuals/Rpa.md'
     - 'JScript Language Reference': 'Guide/jscript_language_reference.md'
 - 'KB':
