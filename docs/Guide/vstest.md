@@ -82,7 +82,24 @@ The task will install Rapise.TestAdapter into
     
 ```
 $(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472
-```    
+```
+
+### Visual Studio Test Platform Installer Task
+
+If you plan to run tests on a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) that does not have Visual Studio installed you need to add [Visual Studio Test Platform Installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops) task.
+
+??? example "Classic UI"
+    <img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/>
+
+??? example "YAML"
+
+    ```yaml
+    steps:
+    - task: VisualStudioTestPlatformInstaller@1
+    displayName: 'Visual Studio Test Platform Installer'
+    inputs:
+        versionSelector: latestStable
+    ```
 
 ### Visual Studio Test Task
 
@@ -115,6 +132,9 @@ $(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib
 ```
 
 Specify patterns to search for `*.sstest` files in the **test files** section (`testAssemblyVer2` in YAML).
+
+If you added Visual Studio Test Platform Installer task on the previous step do not forget to set **Test platform version** to `Installed by Tools Installer` (`vsTestVersion: toolsInstaller` in YAML).
+
 
 !!! tip
     Rapise.TestAdapter also supports filtering, parameters and .runsettings files (specified via Visual Studio Test task options).
