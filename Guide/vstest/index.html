@@ -9706,6 +9706,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#visual-studio-test-platform-installer-task" class="md-nav__link">
+    Visual Studio Test Platform Installer Task
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#visual-studio-test-task" class="md-nav__link">
     Visual Studio Test Task
   </a>
@@ -10142,6 +10149,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#visual-studio-test-platform-installer-task" class="md-nav__link">
+    Visual Studio Test Platform Installer Task
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#visual-studio-test-task" class="md-nav__link">
     Visual Studio Test Task
   </a>
@@ -10309,6 +10323,18 @@
 <div class="highlight"><pre><span></span><code>$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472
 </code></pre></div>
 
+<h3 id="visual-studio-test-platform-installer-task">Visual Studio Test Platform Installer Task<a class="headerlink" href="#visual-studio-test-platform-installer-task" title="Permanent link">&para;</a></h3>
+<p>If you plan to run tests on a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> that does not have Visual Studio installed you need to add <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops">Visual Studio Test Platform Installer</a> task.</p>
+<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/></p>
+</details>
+<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VisualStudioTestPlatformInstaller@1</span>
+<span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Visual</span><span class="nv"> </span><span class="s">Studio</span><span class="nv"> </span><span class="s">Test</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Installer&#39;</span>
+<span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">versionSelector</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">latestStable</span>
+</code></pre></div>
+
+</details>
 <h3 id="visual-studio-test-task">Visual Studio Test Task<a class="headerlink" href="#visual-studio-test-task" title="Permanent link">&para;</a></h3>
 <p>To run tests you need <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops">Visual Studio Test</a> task.</p>
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/visual_studio_test_task.png" /></p>
@@ -10333,6 +10359,7 @@
 </code></pre></div>
 
 <p>Specify patterns to search for <code>*.sstest</code> files in the <strong>test files</strong> section (<code>testAssemblyVer2</code> in YAML).</p>
+<p>If you added Visual Studio Test Platform Installer task on the previous step do not forget to set <strong>Test platform version</strong> to <code>Installed by Tools Installer</code> (<code>vsTestVersion: toolsInstaller</code> in YAML).</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Rapise.TestAdapter also supports filtering, parameters and .runsettings files (specified via Visual Studio Test task options).</p>
