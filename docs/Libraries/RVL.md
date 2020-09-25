@@ -44,6 +44,11 @@ Executes specified test in parallel threads passing additional arguments specifi
 
 ![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
 
+### See Also
+
+* [Rapise with Selenium Grid - Parallel Test Execution](https://youtu.be/L8xMZureYtI) (video)
+* [Rapise with Selenium Grid - Nested Parallel Test Execution](https://youtu.be/5W3KyVH83wc) (video)
+
 ## Exit
 
 `Exit(/**String*/ message, /**Boolean*/isError)`
