@@ -271,8 +271,49 @@ Find `VSTest.Console.exe` in `C:\Tools\Microsoft.TestPlatform.16.7.1\tools\net45
     vstest.console.exe /TestAdapterPath:C:\Tools\Rapise.TestAdapter.1.0.11\lib\net472 /Settings:local.runsettings /TestCaseFilter:FullyQualifiedName~LIS *\*.sstest
     ```
 
+## Parallel Execution
+
+Two levels of parallelism are possible. They may be used independently and combined together as well.
+
+### Run Tests in Parallel
+
+Visual Studio Test Platform can run tests in parallel. Users of vstest.console.exe will recognize this as the [/Parallel switch](https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options). It does so by launching a test host process on each available core, and handing it tests to execute.
+
+Here is how to set this switch in an Azure Pipeline (Visual Studio Test task).
+
+??? example "Classic UI"
+    ![Task Classic UI](./img/azure_pipeline_vstest_parallel.png)
+
+??? example "YAML"
+    ```yaml
+    steps:
+    - task: VSTest@2
+    displayName: 'VsTest - testAssemblies'
+    inputs:
+        testAssemblyVer2: '*\*.sstest'
+        overrideTestrunParameters: '-g_browserLibrary "$(RapiseBrowserProfile)"'
+        pathtoCustomTestAdapters: '$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472'
+        runInParallel: true
+        platform: '$(BuildPlatform)'
+        configuration: '$(BuildConfiguration)'
+    ```
+
+This way of parallel execution is good for running API tests and Web tests (provided that [Selenium profiles](selenium_settings_dialog.md) are used)
+
+### Multi-Configuration Testing
+
+The Visual Studio Test task supports running tests in parallel across multiple agents (or machines). To run multiple jobs using multi-configuration option, you identify variables named multipliers, and specify a list of values for each multiplier. A separate job is run for each value combination. Define one or more variables on the Variables tab of the pipeline or in a variable group. Each variable, known in this context as a multiplier variable, must be defined as a comma-delimited list of the values you want to pass individually to the agents.
+
+Let's assume we want to run same set of tests on different versions of browsers. Here is the example.
+
+??? example "Multiplier Configuration"
+    ![Multiplier](./img/azure_pipeline_multiplier.png)
+    ![Configuration](./img/azure_pipeline_multi_configuration.png)
+
 ## See Also
 
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
 - [Rapise.TestAdapter on GitHub](https://github.com/Inflectra/rapise-testadapter)
 - [Rapise.TestAdapter NuGet package](https://www.nuget.org/packages/Rapise.TestAdapter/)
+- [Run tests in parallel using the Visual Studio Test task](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/parallel-testing-vstest?view=azure-devops)
+- [Multi-configuration testing](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#multi-job-configuration)
