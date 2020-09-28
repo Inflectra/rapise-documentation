@@ -9800,6 +9800,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parallel-execution" class="md-nav__link">
+    Parallel Execution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-tests-in-parallel" class="md-nav__link">
+    Run Tests in Parallel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-configuration-testing" class="md-nav__link">
+    Multi-Configuration Testing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -10243,6 +10270,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parallel-execution" class="md-nav__link">
+    Parallel Execution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-tests-in-parallel" class="md-nav__link">
+    Run Tests in Parallel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-configuration-testing" class="md-nav__link">
+    Multi-Configuration Testing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -10468,11 +10522,40 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
 
 </li>
 </ol>
+<h2 id="parallel-execution">Parallel Execution<a class="headerlink" href="#parallel-execution" title="Permanent link">&para;</a></h2>
+<p>Two levels of parallelism are possible. They may be used independently and combined together as well.</p>
+<h3 id="run-tests-in-parallel">Run Tests in Parallel<a class="headerlink" href="#run-tests-in-parallel" title="Permanent link">&para;</a></h3>
+<p>Visual Studio Test Platform can run tests in parallel. Users of vstest.console.exe will recognize this as the <a href="https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options">/Parallel switch</a>. It does so by launching a test host process on each available core, and handing it tests to execute.</p>
+<p>Here is how to set this switch in an Azure Pipeline (Visual Studio Test task).</p>
+<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/azure_pipeline_vstest_parallel.png" /></p>
+</details>
+<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
+<span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;VsTest</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">testAssemblies&#39;</span>
+<span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">testAssemblyVer2</span><span class="p">:</span> <span class="s">&#39;*\*.sstest&#39;</span>
+    <span class="nt">overrideTestrunParameters</span><span class="p">:</span> <span class="s">&#39;-g_browserLibrary</span><span class="nv"> </span><span class="s">&quot;$(RapiseBrowserProfile)&quot;&#39;</span>
+    <span class="nt">pathtoCustomTestAdapters</span><span class="p">:</span> <span class="s">&#39;$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472&#39;</span>
+    <span class="nt">runInParallel</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">platform</span><span class="p">:</span> <span class="s">&#39;$(BuildPlatform)&#39;</span>
+    <span class="nt">configuration</span><span class="p">:</span> <span class="s">&#39;$(BuildConfiguration)&#39;</span>
+</code></pre></div>
+
+</details>
+<p>This way of parallel execution is good for running API tests and Web tests (provided that <a href="../selenium_settings_dialog/">Selenium profiles</a> are used)</p>
+<h3 id="multi-configuration-testing">Multi-Configuration Testing<a class="headerlink" href="#multi-configuration-testing" title="Permanent link">&para;</a></h3>
+<p>The Visual Studio Test task supports running tests in parallel across multiple agents (or machines). To run multiple jobs using multi-configuration option, you identify variables named multipliers, and specify a list of values for each multiplier. A separate job is run for each value combination. Define one or more variables on the Variables tab of the pipeline or in a variable group. Each variable, known in this context as a multiplier variable, must be defined as a comma-delimited list of the values you want to pass individually to the agents.</p>
+<p>Let's assume we want to run same set of tests on different versions of browsers. Here is the example.</p>
+<details class="example"><summary>Multiplier Configuration</summary><p><img alt="Multiplier" src="../img/azure_pipeline_multiplier.png" />
+<img alt="Configuration" src="../img/azure_pipeline_multi_configuration.png" /></p>
+</details>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a></li>
 <li><a href="https://github.com/Inflectra/rapise-testadapter">Rapise.TestAdapter on GitHub</a></li>
 <li><a href="https://www.nuget.org/packages/Rapise.TestAdapter/">Rapise.TestAdapter NuGet package</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/test/parallel-testing-vstest?view=azure-devops">Run tests in parallel using the Visual Studio Test task</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&amp;tabs=classic#multi-job-configuration">Multi-configuration testing</a></li>
 </ul>
                 
                   
