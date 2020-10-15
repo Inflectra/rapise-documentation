@@ -3617,6 +3617,175 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        RVL Object
+      </label>
+    
+    <a href="./" title="RVL Object" class="md-nav__link md-nav__link--active">
+      RVL Object
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doplayscript" class="md-nav__link">
+    DoPlayScript
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doplaysheet" class="md-nav__link">
+    DoPlaySheet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doplaytest" class="md-nav__link">
+    DoPlayTest
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doplaytestparallel" class="md-nav__link">
+    DoPlayTestParallel
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exit" class="md-nav__link">
+    Exit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getdropdownvalue" class="md-nav__link">
+    GetDropdownValue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return" class="md-nav__link">
+    Return
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setlocatoropts" class="md-nav__link">
+    SetLocatorOpts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatstring" class="md-nav__link">
+    FormatString
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currentscriptpath" class="md-nav__link">
+    CurrentScriptPath
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currentscriptsheet" class="md-nav__link">
+    CurrentScriptSheet
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Map/" title="Map Object" class="md-nav__link">
+      Map Object
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RVL/RVL_DoPlay/" title="Input Parameters" class="md-nav__link">
+      Input Parameters
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10194,37 +10363,43 @@
 <p>Some common tasks related to script execution, such as calling scripts, executing separate sheets, returning, exiting and bailing out is served by RVL.</p>
 <h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
 <h2 id="doplayscript">DoPlayScript<a class="headerlink" href="#doplayscript" title="Permanent link">&para;</a></h2>
-<p><code>DoPlayScript(/**String*/scriptPath, /**String*/sheetName)</code></p>
-<p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code> passing [extraParams] for variable values.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlayScript</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">scriptPath</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">sheetName</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code> passing <code>[extraParams]</code> for variable values.</p>
 <ul>
-<li>
-<p><code>scriptPath</code> {<code>/**string*/</code>}: Path to script</p>
-</li>
-<li>
-<p><code>sheetName</code> {<code>/**string*/</code>}: Excel sheet containing the script</p>
-</li>
-<li>
-<p><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></p>
-</li>
+<li><code>scriptPath</code>: Path to script</li>
+<li><code>sheetName</code>: Excel sheet containing the script</li>
+<li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
 <h2 id="doplaysheet">DoPlaySheet<a class="headerlink" href="#doplaysheet" title="Permanent link">&para;</a></h2>
-<p><code>DoPlaySheet(/**String*/sheetName)</code></p>
-<p>Play RVL sheet <code>sheetName</code> from current workbook passing [extraParams] for variable values.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlaySheet</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sheetName</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Play RVL sheet <code>sheetName</code> from current workbook passing <code>[extraParams]</code> for variable values.</p>
 <ul>
-<li><code>sheetName</code> {<code>/**string*/</code>}: Excel sheet containing the script</li>
+<li><code>sheetName</code>: Excel sheet containing the script</li>
 <li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
 <h2 id="doplaytest">DoPlayTest<a class="headerlink" href="#doplaytest" title="Permanent link">&para;</a></h2>
-<p><code>DoPlayTest(/**String*/sstestPath)</code></p>
-<p>Executes specified test passing additional arguments specified as <code>extraParams</code>. It is an analog of <a href="../Global/#DoInvokeTest">Global.DoInvokeTest</a>
-* <code>sstestPath</code> {<code>/**string*/</code>}: Path to test
-* <strong>[extraParams]</strong>: Param values to be passed into test. May then be accessed via <a href="../Tester/#GetParam">Tester.GetParam</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTest</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sstestPath</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Executes specified test passing additional arguments specified as <code>extraParams</code>. It is an analog of <a href="../Global/#DoInvokeTest">Global.DoInvokeTest</a></p>
+<ul>
+<li><code>sstestPath</code>: Path to test</li>
+<li><strong>[extraParams]</strong>: Param values to be passed into test. May then be accessed via <a href="../Tester/#GetParam">Tester.GetParam</a>.</li>
+</ul>
 <h2 id="doplaytestparallel">DoPlayTestParallel<a class="headerlink" href="#doplaytestparallel" title="Permanent link">&para;</a></h2>
-<p><code>DoPlayTestParallel(/**String*/sstestPath, /**objectId*/threadsMap)</code></p>
-<p>Executes specified test in parallel threads passing additional arguments specified by in <code>threadsMap</code> map. There are as many threads as there are rows in the map.,
-* <code>sstestPath</code> {<code>/**string*/</code>}: Path to test
-* <code>threadsMap</code> {<code>/**Map*/</code>}: The name of the map defining params. 1<sup>st</sup> column - Thread ID (alphanumeric, i.e. THREAD01), other columns - parameter variables, i.e. column name <code>g_browserLibrary</code>, values 'Selenium Chrome', 'Selenium Firefox' etc
-* <strong>[extraParams]</strong>: Global variable values common for all threads.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTestParallel</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sstestPath</span><span class="p">,</span> <span class="cm">/**objectId*/</span> <span class="nx">threadsMap</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Executes specified test in parallel threads passing additional arguments specified by in <code>threadsMap</code> map. There are as many threads as there are rows in the map.</p>
+<ul>
+<li><code>sstestPath</code>: Path to test</li>
+<li><code>threadsMap</code>: The name of the map defining params. 1<sup>st</sup> column - Thread ID (alphanumeric, i.e. THREAD01), other columns - parameter variables, i.e. column name <code>g_browserLibrary</code>, values 'Selenium Chrome', 'Selenium Firefox', etc.</li>
+<li><strong>[extraParams]</strong>: Global variable values common for all threads.</li>
+</ul>
 <p><img alt="DoPlayTestParallel" src="../../RVL/img/RVL_DoPlayParallel.png" /></p>
 <h3 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10232,37 +10407,48 @@
 <li><a href="https://youtu.be/5W3KyVH83wc">Rapise with Selenium Grid - Nested Parallel Test Execution</a> (video)</li>
 </ul>
 <h2 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">&para;</a></h2>
-<p><code>Exit(/**String*/ message, /**Boolean*/isError)</code></p>
+<div class="highlight"><pre><span></span><code><span class="nx">Exit</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">message</span><span class="p">,</span> <span class="cm">/**boolean*/</span> <span class="nx">isError</span><span class="p">)</span>
+</code></pre></div>
+
 <p>Break execution at the specified line</p>
 <ul>
-<li>
-<p><code>message</code> {<code>/**string*/</code>}: Exit message</p>
-</li>
-<li>
-<p><code>isError</code> {<code>/**boolean*/</code>}: Specify 'false' if you want just exit without exit message</p>
-</li>
+<li><code>message</code>: Exit message</li>
+<li><code>isError</code>: Specify 'false' if you want just exit without exit message</li>
 </ul>
 <h2 id="getdropdownvalue">GetDropdownValue<a class="headerlink" href="#getdropdownvalue" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">id</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">idList</span><span class="p">,</span>
+                 <span class="cm">/**string*/</span> <span class="nx">valList</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">xlsPath</span><span class="p">)</span>
+</code></pre></div>
+
 <p>Remap dropdown value from one list to another</p>
-<p><code>GetDropdownValue(/**string*/id, /**string*/idList, /**string*/valList, /**string*/xlsPath)</code></p>
 <ul>
-<li><code>id</code> {<code>string</code>}: Value to remap, the value should be from the column <code>idList</code>.</li>
-<li><code>idList</code> {<code>string</code>}: Column name of the list where <code>id</code> belongs to.</li>
-<li><code>valList</code> {<code>string</code>}: Column name of the list with values.</li>
-<li><code>xlsPath</code> {<code>string</code>}: Optional path to <code>Dropdowns.xlsx</code>. If not specified then <code>%WORKDIR%\Dropdowns.xlsx</code> is used.</li>
+<li><code>id</code>: Value to remap, the value should be from the column <code>idList</code>.</li>
+<li><code>idList</code>: Column name of the list where <code>id</code> belongs to.</li>
+<li><code>valList</code>: Column name of the list with values.</li>
+<li><code>xlsPath</code>: Optional path to <code>Dropdowns.xlsx</code>. If not specified then <code>%WORKDIR%\Dropdowns.xlsx</code> is used.</li>
 </ul>
 <p>Example. Suppose we have the following definitions of dropdowns:</p>
 <p><img alt="States Dropdown" src="../../RVL/img/RVL_GetDropdownValue_states.png" /></p>
-<p>Then the call <code>var stateCode = RVL.GetDropdownValue(stateName, "Functions.SetState.stateName", "stateCode")</code> would return state code for state name. I.e. if <code>stateName="Colorado"</code> then returned value is "CO".</p>
+<p>Then the call </p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">stateCode</span> <span class="o">=</span> <span class="nx">RVL</span><span class="p">.</span><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="nx">stateName</span><span class="p">,</span>
+                                     <span class="s2">&quot;Functions.SetState.stateName&quot;</span><span class="p">,</span>
+                                     <span class="s2">&quot;stateCode&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>would return state code for state name. I.e. if <code>stateName="Colorado"</code> then returned value is "CO".</p>
 <p>See also <a href="../../Guide/rvl_editor/#param-dropdowns">RVL Editor Param Dropdowns</a></p>
 <h2 id="return">Return<a class="headerlink" href="#return" title="Permanent link">&para;</a></h2>
-<p><code>Return(/**String*/ message)</code></p>
-<p>Return from specified line. This method should be called from within RVL</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Return</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">message</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Return from specified line. This method should be called from within RVL.</p>
 <ul>
-<li><code>message</code> {<code>/**string*/</code>}: Return message</li>
+<li><code>message</code>: Return message</li>
 </ul>
 <h2 id="setlocatoropts">SetLocatorOpts<a class="headerlink" href="#setlocatoropts" title="Permanent link">&para;</a></h2>
-<p><code>SetLocatorOpts(/**objectid*/objectid, {optname:optvalue,...})</code></p>
+<div class="highlight"><pre><span></span><code><span class="nx">SetLocatorOpts</span><span class="p">(</span><span class="cm">/**objectid*/</span> <span class="nx">objectid</span><span class="p">,</span> <span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
+</code></pre></div>
+
 <p>Set additional locator options for specified object. This is a way to modify various script parameters such as <code>locator</code>, <code>xpath</code>, <code>url</code> and thus find different objects.</p>
 <ul>
 <li><code>objectid</code> {<code>/**objectid*/</code>}: Object ID</li>
@@ -10313,7 +10499,9 @@
 <p>All params going after <code>objectid</code> are optional and depend on specified object's locator.</p>
 <p>If you want to reset all values to default value call this method with just <code>objectid</code> and no additional parameters.</p>
 <h2 id="formatstring">FormatString<a class="headerlink" href="#formatstring" title="Permanent link">&para;</a></h2>
-<p><code>FormatString(/**string*/fmtString, {optname:optvalue,...})</code></p>
+<div class="highlight"><pre><span></span><code><span class="nx">FormatString</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">fmtString</span><span class="p">,</span> <span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
+</code></pre></div>
+
 <p>Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: <code>My name is {name}</code>.</p>
 <table>
 <thead>
@@ -10369,11 +10557,15 @@
 <p>This Action should put string value <code>one plus five equals to 6</code> into the variable LastResult.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h2 id="currentscriptpath">CurrentScriptPath<a class="headerlink" href="#currentscriptpath" title="Permanent link">&para;</a></h2>
-<p><code>GetCurrentScriptPath()</code></p>
-<p>Return path to currently executed .rvl.xls file</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentScriptPath</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Return path to currently executed <code>.rvl.xls</code> file.</p>
 <h2 id="currentscriptsheet">CurrentScriptSheet<a class="headerlink" href="#currentscriptsheet" title="Permanent link">&para;</a></h2>
-<p><code>GetCurrentScriptSheet()</code></p>
-<p>Return sheet name of the currently executed .rvl.xls file</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentScriptSheet</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Return sheet name of the currently executed <code>.rvl.xls</code> file.</p>
                 
                   
                 

@@ -3617,6 +3617,218 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RVL/" title="RVL Object" class="md-nav__link">
+      RVL Object
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Map Object
+      </label>
+    
+    <a href="./" title="Map Object" class="md-nav__link md-nav__link--active">
+      Map Object
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domovetorow" class="md-nav__link">
+    DoMoveToRow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dosequential" class="md-nav__link">
+    DoSequential
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domovetocolumn" class="md-nav__link">
+    DoMoveToColumn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domovetofirstcolumn" class="md-nav__link">
+    DoMoveToFirstColumn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domovetofirstrow" class="md-nav__link">
+    DoMoveToFirstRow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domovetolastcolumn" class="md-nav__link">
+    DoMoveToLastColumn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domovetolastrow" class="md-nav__link">
+    DoMoveToLastRow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cell" class="md-nav__link">
+    Cell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columncell" class="md-nav__link">
+    ColumnCell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columncount" class="md-nav__link">
+    ColumnCount
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columnindexbyname" class="md-nav__link">
+    ColumnIndexByName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columnname" class="md-nav__link">
+    ColumnName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rowcount" class="md-nav__link">
+    RowCount
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rowindexbyname" class="md-nav__link">
+    RowIndexByName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currentrowindex" class="md-nav__link">
+    CurrentRowIndex
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eof" class="md-nav__link">
+    EOF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rowcell" class="md-nav__link">
+    RowCell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rowname" class="md-nav__link">
+    RowName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    Value
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RVL/RVL_DoPlay/" title="Input Parameters" class="md-nav__link">
+      Input Parameters
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10280,81 +10492,137 @@
 <p>Represents an RVL Map object and all its operations. The same operations are used by the RVL runtime implicitly to read the cell value or iterate through the Map.</p>
 <h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
 <h2 id="domovetorow">DoMoveToRow<a class="headerlink" href="#domovetorow" title="Permanent link">&para;</a></h2>
-<p>**<code>DoMoveToRow(/**Number*/ colInd)</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">colInd</span><span class="p">)</span>
+</code></pre></div>
+
 <p>Moves to a given row.</p>
-<p><code>rowInd</code> Row index (or name) to set active.</p>
+<ul>
+<li><code>rowInd</code>: Row index (or name) to set active.</li>
+</ul>
 <h2 id="dosequential">DoSequential<a class="headerlink" href="#dosequential" title="Permanent link">&para;</a></h2>
-<p>**<code>DoSequential()</code> **</p>
-<p>Advances to the next row in the range. The range is either set by SetRange or it is the default range that includes all rows on the sheet except first row which is considered to contain column names. When the end of the range is reached, DoSequential rewinds back to the first row in the range and returns 'false'.</p>
-<p>Returns 'false' if being called when active row is the last row or the spreadsheet is not attached, 'true' - otherwise.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoSequential</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Advances to the next row in the range. The range is either set by SetRange or it is the default range that includes all rows on the sheet except first row which is considered to contain column names. When the end of the range is reached, DoSequential rewinds back to the first row in the range and returns <code>false</code>.</p>
+<p>Returns <code>false</code> if being called when active row is the last row or the spreadsheet is not attached, <code>true</code> - otherwise.</p>
 <h2 id="domovetocolumn">DoMoveToColumn<a class="headerlink" href="#domovetocolumn" title="Permanent link">&para;</a></h2>
-<p>**<code>DoMoveToColumn(/**Number|String*/colInd)</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToColumn</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">colInd</span><span class="p">)</span>
+</code></pre></div>
+
 <p>Moves to a given column.</p>
-<p><code>colInd</code> Column index (or name) to set active.</p>
+<ul>
+<li><code>colInd</code>: Column index (or name) to set active.</li>
+</ul>
 <h2 id="domovetofirstcolumn">DoMoveToFirstColumn<a class="headerlink" href="#domovetofirstcolumn" title="Permanent link">&para;</a></h2>
-<p>**<code>DoMoveToFirstColumn()</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToFirstColumn</span><span class="p">()</span>
+</code></pre></div>
+
 <p>Moves to a first column in the map.</p>
 <h2 id="domovetofirstrow">DoMoveToFirstRow<a class="headerlink" href="#domovetofirstrow" title="Permanent link">&para;</a></h2>
-<p>**<code>DoMoveToFirstRow()</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToFirstRow</span><span class="p">()</span>
+</code></pre></div>
+
 <p>Moves to a first row in the map.</p>
 <h2 id="domovetolastcolumn">DoMoveToLastColumn<a class="headerlink" href="#domovetolastcolumn" title="Permanent link">&para;</a></h2>
-<p>**<code>DoMoveToLastColumn()</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToLastColumn</span><span class="p">()</span>
+</code></pre></div>
+
 <p>Moves to a last column in the map.</p>
 <h2 id="domovetolastrow">DoMoveToLastRow<a class="headerlink" href="#domovetolastrow" title="Permanent link">&para;</a></h2>
-<p>**<code>DoMoveToLastRow()</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToLastRow</span><span class="p">()</span>
+</code></pre></div>
+
 <p>Moves to a last row in the map.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h2 id="cell">Cell<a class="headerlink" href="#cell" title="Permanent link">&para;</a></h2>
-<p>** <code>GetCell(/**Number|String*/ columnId, /**Number*/ rowId)</code> **</p>
-<p>Gets a cell value by its coordinates. It returns the current cell value after DoSequental or DoRandom if the parameters are not set.</p>
-<p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
-<p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetCell</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">columnId</span><span class="p">,</span> <span class="cm">/**number*/</span> <span class="nx">rowId</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Gets a cell value by its coordinates. It returns the current cell value after <code>DoSequental</code> or <code>DoRandom</code> if the parameters are not set.</p>
+<ul>
+<li><code>[columnId]</code>: Column index or name. If not set ActiveColumn is used.</li>
+<li><code>[rowId]</code>: Row index. If not set ActiveRow is used.</li>
+</ul>
 <h2 id="columncell">ColumnCell<a class="headerlink" href="#columncell" title="Permanent link">&para;</a></h2>
-<p>** <code>GetColumnCell(/**Number*/ rowId)</code> **</p>
-<p>Gets cell value by its coordinates. Returns current cell value after DoSequental. If not set ActiveColumn is used.</p>
-<p><code>[rowId]</code> Row index. If not set ActiveRow is used.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetColumnCell</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">rowId</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Gets cell value by its coordinates. Returns current cell value after <code>DoSequental</code>. If not set <code>ActiveColumn</code> is used.</p>
+<ul>
+<li><code>[rowId]</code>: Row index. If not set <code>ActiveRow</code> is used.</li>
+</ul>
 <h2 id="columncount">ColumnCount<a class="headerlink" href="#columncount" title="Permanent link">&para;</a></h2>
-<p>** <code>GetColumnCount()</code> **</p>
-<p>Gets columns count.</p>
-<p>Returns Number of columns in the spreadsheet.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetColumnCount</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Returns number of columns in the spreadsheet.</p>
 <h2 id="columnindexbyname">ColumnIndexByName<a class="headerlink" href="#columnindexbyname" title="Permanent link">&para;</a></h2>
-<p>** <code>GetColumnIndexByName(/**String*/name)</code> **</p>
-<p>Gets column name.</p>
-<p><code>name</code> Column name.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetColumnIndexByName</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">name</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Gets index of a column with the given name.</p>
+<ul>
+<li><code>name</code>: Column name.</li>
+</ul>
 <p>Returns column index if found, or -1.</p>
 <h2 id="columnname">ColumnName<a class="headerlink" href="#columnname" title="Permanent link">&para;</a></h2>
-<p>** <code>GetColumnName(/**Number*/ ind)</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetColumnName</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">ind</span><span class="p">)</span>
+</code></pre></div>
+
 <p>Gets column name.</p>
-<p><code>ind</code> Column index.</p>
-<p>Returns Name of column in the spreadsheet.</p>
+<ul>
+<li><code>ind</code>: Column index.</li>
+</ul>
+<p>Returns name of column in the spreadsheet.</p>
 <h2 id="rowcount">RowCount<a class="headerlink" href="#rowcount" title="Permanent link">&para;</a></h2>
-<p>** <code>GetRowCount()</code> **</p>
-<p>Gets rows count.</p>
-<p>Returns Number of rows in the spreadsheet.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetRowCount</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Returns number of rows in the spreadsheet.</p>
 <h2 id="rowindexbyname">RowIndexByName<a class="headerlink" href="#rowindexbyname" title="Permanent link">&para;</a></h2>
-<p>** <code>GetRowIndexByName(/**String*/name)</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetRowIndexByName</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">name</span><span class="p">)</span>
+</code></pre></div>
+
 <p>Gets row name.</p>
-<p><code>name</code> Row name.</p>
+<ul>
+<li><code>name</code>: Row name.</li>
+</ul>
 <p>Returns row index if found, or -1.</p>
 <h2 id="currentrowindex">CurrentRowIndex<a class="headerlink" href="#currentrowindex" title="Permanent link">&para;</a></h2>
-<p>** <code>GetCurrentRowIndex()</code> **</p>
-<p>Get zero based current row index.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentRowIndex</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Gets zero based current row index.</p>
 <h2 id="eof">EOF<a class="headerlink" href="#eof" title="Permanent link">&para;</a></h2>
-<p>** <code>GetEOF()</code> **</p>
-<p>Is current position is beyond the map boundaries range.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetEOF</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Returns <code>true</code> if current position is beyond the map boundaries range.</p>
 <h2 id="rowcell">RowCell<a class="headerlink" href="#rowcell" title="Permanent link">&para;</a></h2>
-<p>** <code>GetRowCell(/**Number|String*/ columnId)</code> **</p>
-<p>Gets cell value for current row. Returns current cell value after DoSequental. ActiveRow is used.</p>
-<p><code>[columnId]</code> Column index or name. If not set ActiveColumn is used.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetRowCell</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">columnId</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Gets cell value for current row. Returns current cell value after <code>DoSequental</code>. <code>ActiveRow</code> is used.</p>
+<ul>
+<li><code>[columnId]</code>: Column index or name. If not set <code>ActiveColumn</code> is used.</li>
+</ul>
 <h2 id="rowname">RowName<a class="headerlink" href="#rowname" title="Permanent link">&para;</a></h2>
-<p>** <code>GetRowName(/**Number*/ ind)</code> **</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetRowName</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">ind</span><span class="p">)</span>
+</code></pre></div>
+
 <p>Gets row name.</p>
-<p><code>ind</code> Row index.</p>
-<p>Returns Name of row in the map.</p>
+<ul>
+<li><code>ind</code>: Row index.</li>
+</ul>
+<p>Returns name of row in the map.</p>
 <h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<p>** <code>GetValue(/**Number|String*/ rowOrColumnNameOrId)</code> **</p>
-<p>Gets cell value by its name or id. Returns current cell value after DoSequental. If it is Rows or Table then the parameter needs to be a column name or index, and ActiveRow is used. If it is Columns then the parameter needs to be a row name or index, and ActiveRow is used.</p>
-<p><code>[rowOrColumnNameOrId]</code> Row or Column index or Name.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetValue</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">rowOrColumnNameOrId</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Gets cell value by its name or id. Returns current cell value after <code>DoSequental</code>. If it is <code>Rows</code> or <code>Table</code> map then the parameter needs to be a column name or index, and <code>ActiveRow</code> is used. If it is <code>Columns</code> map then the parameter needs to be a row name or index, and <code>ActiveRow</code> is used.</p>
+<ul>
+<li><code>[rowOrColumnNameOrId]</code>: Row or Column index or Name.</li>
+</ul>
                 
                   
                 
