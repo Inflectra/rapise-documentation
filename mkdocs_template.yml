@@ -303,6 +303,9 @@ nav:
       - 'Maps': 'RVL/Maps.md'
       - 'Loops': 'RVL/Loops.md'
       - 'Preamble': 'RVL/Preamble.md'
+      - 'RVL Object': 'Libraries/RVL.md'
+      - 'Map Object': 'Libraries/Map.md'
+      - 'Input Parameters': 'RVL/RVL_DoPlay.md'      
 - 'Libraries':
     - 'Libraries': 'Libraries/libraries.md'
     #global
