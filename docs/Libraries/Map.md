@@ -6,183 +6,185 @@ Represents an RVL Map object and all its operations. The same operations are use
 
 ## DoMoveToRow
 
-**`DoMoveToRow(/**Number*/ colInd)` **
+```javascript
+DoMoveToRow(/**number*/ colInd)
+```
 
 Moves to a given row.
 
-`rowInd` Row index (or name) to set active.
-
-
+* `rowInd`: Row index (or name) to set active.
 
 ## DoSequential
 
-**`DoSequential()` **
+```javascript
+DoSequential()
+```
 
-Advances to the next row in the range. The range is either set by SetRange or it is the default range that includes all rows on the sheet except first row which is considered to contain column names. When the end of the range is reached, DoSequential rewinds back to the first row in the range and returns 'false'.
+Advances to the next row in the range. The range is either set by SetRange or it is the default range that includes all rows on the sheet except first row which is considered to contain column names. When the end of the range is reached, DoSequential rewinds back to the first row in the range and returns `false`.
 
-Returns 'false' if being called when active row is the last row or the spreadsheet is not attached, 'true' - otherwise.
-
+Returns `false` if being called when active row is the last row or the spreadsheet is not attached, `true` - otherwise.
 
 ## DoMoveToColumn
 
-**`DoMoveToColumn(/**Number|String*/colInd)` **
+```javascript
+DoMoveToColumn(/**number|string*/ colInd)
+```
 
 Moves to a given column.
 
-`colInd` Column index (or name) to set active.
-
-
+* `colInd`: Column index (or name) to set active.
 
 ## DoMoveToFirstColumn
 
-**`DoMoveToFirstColumn()` **
+```javascript
+DoMoveToFirstColumn()
+```
 
 Moves to a first column in the map.
 
-
-
 ## DoMoveToFirstRow
 
-**`DoMoveToFirstRow()` **
+```javascript
+DoMoveToFirstRow()
+```
 
 Moves to a first row in the map.
 
-
-
 ## DoMoveToLastColumn
 
-**`DoMoveToLastColumn()` **
+```javascript
+DoMoveToLastColumn()
+```
 
 Moves to a last column in the map.
 
-
-
 ## DoMoveToLastRow
 
-**`DoMoveToLastRow()` **
+```javascript
+DoMoveToLastRow()
+```
 
 Moves to a last row in the map.
-
-
 
 ## Properties
 
 ## Cell
 
-** `GetCell(/**Number|String*/ columnId, /**Number*/ rowId)` **
+```javascript
+GetCell(/**number|string*/ columnId, /**number*/ rowId)
+```
 
-Gets a cell value by its coordinates. It returns the current cell value after DoSequental or DoRandom if the parameters are not set.
+Gets a cell value by its coordinates. It returns the current cell value after `DoSequental` or `DoRandom` if the parameters are not set.
 
-`[columnId]` Column index or name. If not set ActiveColumn is used.
-
-`[rowId]` Row index. If not set ActiveRow is used.
-
-
+* `[columnId]`: Column index or name. If not set ActiveColumn is used.
+* `[rowId]`: Row index. If not set ActiveRow is used.
 
 ## ColumnCell
 
-** `GetColumnCell(/**Number*/ rowId)` **
+```javascript
+GetColumnCell(/**number*/ rowId)
+```
 
-Gets cell value by its coordinates. Returns current cell value after DoSequental. If not set ActiveColumn is used.
+Gets cell value by its coordinates. Returns current cell value after `DoSequental`. If not set `ActiveColumn` is used.
 
-`[rowId]` Row index. If not set ActiveRow is used.
-
-
+* `[rowId]`: Row index. If not set `ActiveRow` is used.
 
 ## ColumnCount
 
-** `GetColumnCount()` **
+```javascript
+GetColumnCount()
+```
 
-Gets columns count.
-
-Returns Number of columns in the spreadsheet.
-
+Returns number of columns in the spreadsheet.
 
 ## ColumnIndexByName
 
-** `GetColumnIndexByName(/**String*/name)` **
+```javascript
+GetColumnIndexByName(/**string*/ name)
+```
 
-Gets column name.
+Gets index of a column with the given name.
 
-`name` Column name.
+* `name`: Column name.
 
 Returns column index if found, or -1.
 
-
 ## ColumnName
 
-** `GetColumnName(/**Number*/ ind)` **
+```javascript
+GetColumnName(/**number*/ ind)
+```
 
 Gets column name.
 
-`ind` Column index.
+* `ind`: Column index.
 
-Returns Name of column in the spreadsheet.
-
+Returns name of column in the spreadsheet.
 
 ## RowCount
 
-** `GetRowCount()` **
+```javascript
+GetRowCount()
+```
 
-Gets rows count.
-
-Returns Number of rows in the spreadsheet.
-
+Returns number of rows in the spreadsheet.
 
 ## RowIndexByName
 
-** `GetRowIndexByName(/**String*/name)` **
+```javascript
+GetRowIndexByName(/**string*/ name)
+```
 
 Gets row name.
 
-`name` Row name.
+* `name`: Row name.
 
 Returns row index if found, or -1.
 
-
 ## CurrentRowIndex
 
-** `GetCurrentRowIndex()` **
+```javascript
+GetCurrentRowIndex()
+```
 
-Get zero based current row index.
-
-
+Gets zero based current row index.
 
 ## EOF
 
-** `GetEOF()` **
+```javascript
+GetEOF()
+```
 
-Is current position is beyond the map boundaries range.
-
-
+Returns `true` if current position is beyond the map boundaries range.
 
 ## RowCell
 
-** `GetRowCell(/**Number|String*/ columnId)` **
+```javascript
+GetRowCell(/**number|string*/ columnId)
+```
 
-Gets cell value for current row. Returns current cell value after DoSequental. ActiveRow is used.
+Gets cell value for current row. Returns current cell value after `DoSequental`. `ActiveRow` is used.
 
-`[columnId]` Column index or name. If not set ActiveColumn is used.
-
-
+* `[columnId]`: Column index or name. If not set `ActiveColumn` is used.
 
 ## RowName
 
-** `GetRowName(/**Number*/ ind)` **
+```javascript
+GetRowName(/**number*/ ind)
+```
 
 Gets row name.
 
-`ind` Row index.
+* `ind`: Row index.
 
-Returns Name of row in the map.
-
+Returns name of row in the map.
 
 ## Value
 
-** `GetValue(/**Number|String*/ rowOrColumnNameOrId)` **
+```javascript
+GetValue(/**number|string*/ rowOrColumnNameOrId)
+```
 
-Gets cell value by its name or id. Returns current cell value after DoSequental. If it is Rows or Table then the parameter needs to be a column name or index, and ActiveRow is used. If it is Columns then the parameter needs to be a row name or index, and ActiveRow is used.
+Gets cell value by its name or id. Returns current cell value after `DoSequental`. If it is `Rows` or `Table` map then the parameter needs to be a column name or index, and `ActiveRow` is used. If it is `Columns` map then the parameter needs to be a row name or index, and `ActiveRow` is used.
 
-`[rowOrColumnNameOrId]` Row or Column index or Name.
-
-
+* `[rowOrColumnNameOrId]`: Row or Column index or Name.

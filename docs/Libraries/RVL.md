@@ -6,84 +6,113 @@ Some common tasks related to script execution, such as calling scripts, executin
 
 ## DoPlayScript
 
-`DoPlayScript(/**String*/scriptPath, /**String*/sheetName)`
+```javascript
+DoPlayScript(/**string*/ scriptPath, /**string*/ sheetName)
+```
 
-Play RVL sheet `sheetName` from workbook `scriptPath` passing [extraParams] for variable values.
+Play RVL sheet `sheetName` from workbook `scriptPath` passing `[extraParams]` for variable values.
 
-* `scriptPath` {`/**string*/`}: Path to script
-
-* `sheetName` {`/**string*/`}: Excel sheet containing the script
-
+* `scriptPath`: Path to script
+* `sheetName`: Excel sheet containing the script
 * **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)
 
 ## DoPlaySheet
 
-`DoPlaySheet(/**String*/sheetName)`
+```javascript
+DoPlaySheet(/**string*/ sheetName)
+```
 
-Play RVL sheet `sheetName` from current workbook passing [extraParams] for variable values.
+Play RVL sheet `sheetName` from current workbook passing `[extraParams]` for variable values.
 
-* `sheetName` {`/**string*/`}: Excel sheet containing the script
+* `sheetName`: Excel sheet containing the script
 * **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)
 
 ## DoPlayTest
 
-`DoPlayTest(/**String*/sstestPath)`
+```javascript
+DoPlayTest(/**string*/ sstestPath)
+```
 
 Executes specified test passing additional arguments specified as `extraParams`. It is an analog of [Global.DoInvokeTest](Global.md#DoInvokeTest)
-* `sstestPath` {`/**string*/`}: Path to test
+
+* `sstestPath`: Path to test
 * **[extraParams]**: Param values to be passed into test. May then be accessed via [Tester.GetParam](Tester.md#GetParam).
 
 ## DoPlayTestParallel
 
-`DoPlayTestParallel(/**String*/sstestPath, /**objectId*/threadsMap)`
+```javascript
+DoPlayTestParallel(/**string*/ sstestPath, /**objectId*/ threadsMap)
+```
 
-Executes specified test in parallel threads passing additional arguments specified by in `threadsMap` map. There are as many threads as there are rows in the map.,
-* `sstestPath` {`/**string*/`}: Path to test
-* `threadsMap` {`/**Map*/`}: The name of the map defining params. 1st column - Thread ID (alphanumeric, i.e. THREAD01), other columns - parameter variables, i.e. column name `g_browserLibrary`, values 'Selenium Chrome', 'Selenium Firefox' etc
+Executes specified test in parallel threads passing additional arguments specified by in `threadsMap` map. There are as many threads as there are rows in the map.
+
+* `sstestPath`: Path to test
+* `threadsMap`: The name of the map defining params. 1st column - Thread ID (alphanumeric, i.e. THREAD01), other columns - parameter variables, i.e. column name `g_browserLibrary`, values 'Selenium Chrome', 'Selenium Firefox', etc.
 * **[extraParams]**: Global variable values common for all threads.
 
 ![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
 
+### See Also
+
+* [Rapise with Selenium Grid - Parallel Test Execution](https://youtu.be/L8xMZureYtI) (video)
+* [Rapise with Selenium Grid - Nested Parallel Test Execution](https://youtu.be/5W3KyVH83wc) (video)
+
 ## Exit
 
-`Exit(/**String*/ message, /**Boolean*/isError)`
+```javascript
+Exit(/**string*/ message, /**boolean*/ isError)
+```
 
 Break execution at the specified line
 
-* `message` {`/**string*/`}: Exit message
-
-* `isError` {`/**boolean*/`}: Specify 'false' if you want just exit without exit message
+* `message`: Exit message
+* `isError`: Specify 'false' if you want just exit without exit message
 
 ## GetDropdownValue
 
+```javascript
+GetDropdownValue(/**string*/ id, /**string*/ idList,
+                 /**string*/ valList, /**string*/ xlsPath)
+```
+
 Remap dropdown value from one list to another
 
-`GetDropdownValue(/**string*/id, /**string*/idList, /**string*/valList, /**string*/xlsPath)`
-
-* `id` {`string`}: Value to remap, the value should be from the column `idList`.
-* `idList` {`string`}: Column name of the list where `id` belongs to.
-* `valList` {`string`}: Column name of the list with values.
-* `xlsPath` {`string`}: Optional path to `Dropdowns.xlsx`. If not specified then `%WORKDIR%\Dropdowns.xlsx` is used.
+* `id`: Value to remap, the value should be from the column `idList`.
+* `idList`: Column name of the list where `id` belongs to.
+* `valList`: Column name of the list with values.
+* `xlsPath`: Optional path to `Dropdowns.xlsx`. If not specified then `%WORKDIR%\Dropdowns.xlsx` is used.
 
 Example. Suppose we have the following definitions of dropdowns:
 
 ![States Dropdown](../RVL/img/RVL_GetDropdownValue_states.png)
 
-Then the call `var stateCode = RVL.GetDropdownValue(stateName, "Functions.SetState.stateName", "stateCode")` would return state code for state name. I.e. if `stateName="Colorado"` then returned value is "CO".
+Then the call 
+
+```javascript
+var stateCode = RVL.GetDropdownValue(stateName,
+                                     "Functions.SetState.stateName",
+                                     "stateCode")
+```
+
+would return state code for state name. I.e. if `stateName="Colorado"` then returned value is "CO".
 
 See also [RVL Editor Param Dropdowns](../Guide/rvl_editor.md#param-dropdowns)
 
 ## Return
 
-`Return(/**String*/ message)`
+```javascript
+Return(/**string*/ message)
+```
 
-Return from specified line. This method should be called from within RVL
+Return from specified line. This method should be called from within RVL.
 
-* `message` {`/**string*/`}: Return message
+* `message`: Return message
 
 ## SetLocatorOpts
 
-`SetLocatorOpts(/**objectid*/objectid, {optname:optvalue,...})`
+```javascript
+SetLocatorOpts(/**objectid*/ objectid, {optname:optvalue,...})
+```
 
 Set additional locator options for specified object. This is a way to modify various script parameters such as `locator`, `xpath`, `url` and thus find different objects.
 
@@ -103,7 +132,9 @@ If you want to reset all values to default value call this method with just `obj
 
 ## FormatString
 
-`FormatString(/**string*/fmtString, {optname:optvalue,...})`
+```javascript
+FormatString(/**string*/fmtString, {optname:optvalue,...})
+```
 
 Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: `My name is {name}`.
 
@@ -120,12 +151,16 @@ This Action should put string value `one plus five equals to 6` into the variabl
 
 ## CurrentScriptPath
 
-`GetCurrentScriptPath()`
+```javascript
+GetCurrentScriptPath()
+```
 
-Return path to currently executed .rvl.xls file
+Return path to currently executed `.rvl.xls` file.
 
 ## CurrentScriptSheet
 
-`GetCurrentScriptSheet()`
+```javascript
+GetCurrentScriptSheet()
+```
 
-Return sheet name of the currently executed .rvl.xls file
+Return sheet name of the currently executed `.rvl.xls` file.

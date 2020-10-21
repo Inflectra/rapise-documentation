@@ -577,7 +577,20 @@ var annotations =
                 link: "https://www.inflectra.com/Support/KnowledgeBase/KB361.aspx"
             }
         ]
-    }    
+    },
+    {
+        name: "global.doinvoketestparallel",
+        refs: [
+            {
+                text: "Rapise with Selenium Grid - Parallel Test Execution (video)",
+                link: "https://youtu.be/L8xMZureYtI"
+            },
+            {
+                text: "Rapise with Selenium Grid - Nested Parallel Test Execution (video)",
+                link: "https://youtu.be/5W3KyVH83wc"
+            }            
+        ]
+    }     
 ]
 
 function RapiseAnnotateItem(itemName, refs)
