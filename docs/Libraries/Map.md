@@ -7,10 +7,10 @@ Represents an RVL Map object and all its operations. The same operations are use
 ## DoMoveToRow
 
 ```javascript
-DoMoveToRow(/**number*/ colInd)
+DoMoveToRow(/**number*/ rowInd)
 ```
 
-Moves to a given row.
+Moves to the row with a given index. Zero-based. If map type is `Rows` then row with index 0 is the row with column names.
 
 * `rowInd`: Row index (or name) to set active.
 
@@ -30,7 +30,7 @@ Returns `false` if being called when active row is the last row or the spreadshe
 DoMoveToColumn(/**number|string*/ colInd)
 ```
 
-Moves to a given column.
+Moves to the column with a given index or name. Index is zero-based. If map type is `Columns` then column with index 0 is the column with row names.
 
 * `colInd`: Column index (or name) to set active.
 
@@ -40,7 +40,7 @@ Moves to a given column.
 DoMoveToFirstColumn()
 ```
 
-Moves to a first column in the map.
+Moves to a first column with data in the map. If map type is `Columns` then first column index is 1, if map type is `Rows` then first column index is 0.
 
 ## DoMoveToFirstRow
 
@@ -48,7 +48,7 @@ Moves to a first column in the map.
 DoMoveToFirstRow()
 ```
 
-Moves to a first row in the map.
+Moves to a first row with data in the map. If map type is `Rows` then first row index is 1, if map type is `Columns` then first row index is 0.
 
 ## DoMoveToLastColumn
 
