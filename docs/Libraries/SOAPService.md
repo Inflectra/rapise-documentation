@@ -205,7 +205,7 @@ DoExecute(method, params, headers)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | method | string |	Name of a SOAP method. |
-| params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation. |
+| params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
 | headers | object |	Array of header name/value pairs. |
 
 
@@ -235,7 +235,7 @@ DoExecuteRaw(method, body, params)
 | ---------- | -------- | --------------- |
 | method | string |	Name of a SOAP method. |
 | body | string |	SOAP xml string. |
-| params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation. |
+| params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
 
 
 
@@ -254,8 +254,15 @@ boolean: 'true' if success, 'false' otherwise.
 Remove one pre-defined parameter. Requires Rapise 6.6+
 
 ```javascript
-DoRemoveParameter() 
+DoRemoveParameter(name) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Header name |
 
 
 
@@ -269,8 +276,15 @@ DoRemoveParameter()
 Remove one pre-defined request header by name. Requires Rapise 6.6+
 
 ```javascript
-DoRemoveRequestHeader() 
+DoRemoveRequestHeader(name) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Header name |
 
 
 

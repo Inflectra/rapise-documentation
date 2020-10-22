@@ -312,6 +312,12 @@ Accessors: GetUrl, SetUrl
 #### DoExecute
 
 Executes a REST service operation, substitutes any of the provided parameter values if necessary.
+Sample code:
+
+```javascript
+SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});
+var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
+```
 
 ```javascript
 DoExecute(params) 
@@ -322,13 +328,7 @@ DoExecute(params)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation.
-Sample code:
-
-```javascript
-SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});
-var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
-``` |
+| params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
 
 
 
@@ -347,8 +347,15 @@ boolean: 'true' if success, 'false' otherwise.
 Remove one pre-defined parameter. Requires Rapise 6.6+
 
 ```javascript
-DoRemoveParameter() 
+DoRemoveParameter(name) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Parameter name |
 
 
 
@@ -362,8 +369,15 @@ DoRemoveParameter()
 Remove one pre-defined request header by name. Requires Rapise 6.6+
 
 ```javascript
-DoRemoveRequestHeader() 
+DoRemoveRequestHeader(name) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Header name |
 
 
 
