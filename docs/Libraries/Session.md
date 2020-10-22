@@ -17,14 +17,16 @@ Session object for SOAP and REST services.
 
 | **Property** | **Description** |
 | ------------ | --------------- |
+| [DoRemoveParameter](#doremoveparameter) |  |
+| [DoRemoveRequestHeader](#doremoverequestheader) |  |
 | [GetCredential](#getcredential) |  |
-| [GetParameters](#getparameters) | Return common request parameters (array of [{'Name':somename,'Value':somevalue},. |
-| [GetRequestHeaders](#getrequestheaders) | Return common HTTP Headers applied to each REST or SOAP request (array of [{'Name':somename,'Value':somevalue},. |
+| [GetParameters](#getparameters) |  |
+| [GetRequestHeaders](#getrequestheaders) |  |
 | [SetCredential](#setcredential) |  |
-| [SetParameter](#setparameter) | Sets common request parameter. |
-| [SetParameters](#setparameters) | Sets common request parameters. |
-| [SetRequestHeader](#setrequestheader) | Sets common request header. |
-| [SetRequestHeaders](#setrequestheaders) | Sets common HTTP Headers applied to each REST or SOAP request. |
+| [SetParameter](#setparameter) |  |
+| [SetParameters](#setparameters) |  |
+| [SetRequestHeader](#setrequestheader) |  |
+| [SetRequestHeaders](#setrequestheaders) |  |
 
 
 
@@ -37,7 +39,8 @@ Session object for SOAP and REST services.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SetUrl](#seturl) | Enable URL replacement for all further requests. |
+|	[SetBaseUrl](#setbaseurl) |  |
+|	[SetUrl](#seturl) |  |
 
 
 
@@ -45,6 +48,32 @@ Session object for SOAP and REST services.
 <!-- ============================== property detail ========================== -->
 	
 ### Property Detail
+		
+<a name="DoRemoveParameter"></a>
+#### DoRemoveParameter
+
+
+
+
+			
+	
+			
+Type: 
+			
+			
+		
+<a name="DoRemoveRequestHeader"></a>
+#### DoRemoveRequestHeader
+
+
+
+
+			
+	
+			
+Type: 
+			
+			
 		
 <a name="GetCredential"></a>
 #### GetCredential
@@ -63,7 +92,7 @@ Type:
 #### GetParameters
 
 
-Return common request parameters (array of [{'Name':somename,'Value':somevalue},...])
+
 
 			
 	
@@ -76,7 +105,7 @@ Type:
 #### GetRequestHeaders
 
 
-Return common HTTP Headers applied to each REST or SOAP request (array of [{'Name':somename,'Value':somevalue},...])
+
 
 			
 	
@@ -102,7 +131,7 @@ Type:
 #### SetParameter
 
 
-Sets common request parameter. This parameter will be applied to all further REST and SOAP requests.
+
 
 			
 	
@@ -115,7 +144,7 @@ Type:
 #### SetParameters
 
 
-Sets common request parameters. These parameters will be applied to all further REST and SOAP requests.
+
 
 			
 	
@@ -128,7 +157,7 @@ Type:
 #### SetRequestHeader
 
 
-Sets common request header. This header will be applied to all further REST and SOAP requests.
+
 
 			
 	
@@ -141,7 +170,7 @@ Type:
 #### SetRequestHeaders
 
 
-Sets common HTTP Headers applied to each REST or SOAP request.
+
 
 			
 	
@@ -156,10 +185,33 @@ Type:
 	
 ### Action Detail
 		
+<a name="SetBaseUrl"></a>    
+#### SetBaseUrl
+
+
+
+```javascript
+SetBaseUrl(oldUrl, newUrl) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| oldUrl |  |	 |
+| newUrl |  |	 |
+
+
+
+
+
+<a name="see.also.session.setbaseurl"></a>
+
 <a name="SetUrl"></a>    
 #### SetUrl
 
-Enable URL replacement for all further requests. If request URL starts with oldUrl then replace the beginning with newUrl
+
 
 ```javascript
 SetUrl(oldUrl, newUrl) 
@@ -170,8 +222,8 @@ SetUrl(oldUrl, newUrl)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| oldUrl |  |	URL to find |
-| newUrl |  |	new URL to use instead of oldUrl |
+| oldUrl |  |	 |
+| newUrl |  |	 |
 
 
 

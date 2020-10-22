@@ -42,6 +42,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | ----------- | --------------- |
 |	[DoExecute](#doexecute) | Executes a SOAP service operation, substituting any of the provided parameter values if necessary. |
 |	[DoExecuteRaw](#doexecuteraw) | Sends a SOAP request as is. |
+|	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
+|	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
 |	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
@@ -245,6 +247,36 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.soapservice.doexecuteraw"></a>
+
+<a name="DoRemoveParameter"></a>    
+#### DoRemoveParameter
+
+Remove one pre-defined parameter. Requires Rapise 6.6+
+
+```javascript
+DoRemoveParameter() 
+```
+
+
+
+
+
+<a name="see.also.soapservice.doremoveparameter"></a>
+
+<a name="DoRemoveRequestHeader"></a>    
+#### DoRemoveRequestHeader
+
+Remove one pre-defined request header by name. Requires Rapise 6.6+
+
+```javascript
+DoRemoveRequestHeader() 
+```
+
+
+
+
+
+<a name="see.also.soapservice.doremoverequestheader"></a>
 
 <a name="DoVerify"></a>    
 #### DoVerify

@@ -30,6 +30,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | [PrevSibling](#prevsibling) | Object for UI Automation previous sibling node | GetPrevSibling |  |
 | [TypeName](#typename) | Type name of UI Automation object | GetTypeName |  |
 | [Value](#value) | Value of the object. | GetValue |  |
+| [Visible](#visible) | Returns `true` if the element is visible, otherwise - `false`. | GetVisible |  |
 | [Width](#width) | Width of the object. | GetWidth |  |
 | [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
 | [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
@@ -48,6 +49,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |	[DoClick](#doclick) | Performs left click at the center of an object. |
 |	[DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
 |	[DoFindByText](#dofindbytext) | Find nested element by its text (Value and Name of each element are compared with specified text or regular expression). |
+|	[DoFindElementByCondition](#dofindelementbycondition) | Finds first element matching the condition. |
+|	[DoFindElementsByCondition](#dofindelementsbycondition) | Finds all elements matching the condition |
 |	[DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
 
 
@@ -229,6 +232,21 @@ Type: number
 Accessors: GetValue
 			
 		
+<a name="Visible"></a>
+#### Visible
+
+
+Returns `true` if the element is visible, otherwise - `false`. Requires Rapise 6.6+
+
+			
+	
+			
+Type: boolean
+			
+			
+Accessors: GetVisible
+			
+		
 <a name="Width"></a>
 #### Width
 
@@ -358,11 +376,67 @@ DoFindByText(textOrRegexp, depth)
 
 **Returns:**
 
-[UIAObject](UIAObject.md): UIAutomationObject containing text if found, null otherwise
+[UIAObject](UIAObject.md): UIAObject containing text if found, null otherwise
 
 
 
 <a name="see.also.uiaobject.dofindbytext"></a>
+
+<a name="DoFindElementByCondition"></a>    
+#### DoFindElementByCondition
+
+Finds first element matching the condition. Requires Rapise 6.6+
+
+```javascript
+DoFindElementByCondition(scope=Descendants, condition) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| scope=Descendants | string |	Scope for element search. |
+| condition | expression |	UIAutomation2 locator or condition object. |
+
+
+
+
+**Returns:**
+
+[UIAObject](UIAObject.md): UIAObject if the element is found, null otherwise
+
+
+
+<a name="see.also.uiaobject.dofindelementbycondition"></a>
+
+<a name="DoFindElementsByCondition"></a>    
+#### DoFindElementsByCondition
+
+Finds all elements matching the condition
+
+```javascript
+DoFindElementsByCondition(scope=Descendants, condition) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| scope=Descendants | string |	Scope for element search. |
+| condition | expression |	UIAutomation2 locator or condition object. |
+
+
+
+
+**Returns:**
+
+[Array](Array.md): Array of UIAObjects for the found elements, the array is empty if nothing is found. Requires Rapise 6.6+
+
+
+
+<a name="see.also.uiaobject.dofindelementsbycondition"></a>
 
 <a name="DoGetWidgetProperty"></a>    
 #### DoGetWidgetProperty

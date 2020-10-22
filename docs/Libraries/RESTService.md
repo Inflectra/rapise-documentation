@@ -46,6 +46,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[DoExecute](#doexecute) | Executes a REST service operation, substitutes any of the provided parameter values if necessary. |
+|	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
+|	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
 |	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
@@ -338,6 +340,36 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.restservice.doexecute"></a>
+
+<a name="DoRemoveParameter"></a>    
+#### DoRemoveParameter
+
+Remove one pre-defined parameter. Requires Rapise 6.6+
+
+```javascript
+DoRemoveParameter() 
+```
+
+
+
+
+
+<a name="see.also.restservice.doremoveparameter"></a>
+
+<a name="DoRemoveRequestHeader"></a>    
+#### DoRemoveRequestHeader
+
+Remove one pre-defined request header by name. Requires Rapise 6.6+
+
+```javascript
+DoRemoveRequestHeader() 
+```
+
+
+
+
+
+<a name="see.also.restservice.doremoverequestheader"></a>
 
 <a name="DoVerify"></a>    
 #### DoVerify
