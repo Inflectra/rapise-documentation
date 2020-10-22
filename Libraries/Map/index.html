@@ -10492,10 +10492,10 @@
 <p>Represents an RVL Map object and all its operations. The same operations are used by the RVL runtime implicitly to read the cell value or iterate through the Map.</p>
 <h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
 <h2 id="domovetorow">DoMoveToRow<a class="headerlink" href="#domovetorow" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">colInd</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">rowInd</span><span class="p">)</span>
 </code></pre></div>
 
-<p>Moves to a given row.</p>
+<p>Moves to the row with a given index. Zero-based. If map type is <code>Rows</code> then row with index 0 is the row with column names.</p>
 <ul>
 <li><code>rowInd</code>: Row index (or name) to set active.</li>
 </ul>
@@ -10509,7 +10509,7 @@
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToColumn</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">colInd</span><span class="p">)</span>
 </code></pre></div>
 
-<p>Moves to a given column.</p>
+<p>Moves to the column with a given index or name. Index is zero-based. If map type is <code>Columns</code> then column with index 0 is the column with row names.</p>
 <ul>
 <li><code>colInd</code>: Column index (or name) to set active.</li>
 </ul>
@@ -10517,12 +10517,12 @@
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToFirstColumn</span><span class="p">()</span>
 </code></pre></div>
 
-<p>Moves to a first column in the map.</p>
+<p>Moves to a first column with data in the map. If map type is <code>Columns</code> then first column index is 1, if map type is <code>Rows</code> then first column index is 0.</p>
 <h2 id="domovetofirstrow">DoMoveToFirstRow<a class="headerlink" href="#domovetofirstrow" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToFirstRow</span><span class="p">()</span>
 </code></pre></div>
 
-<p>Moves to a first row in the map.</p>
+<p>Moves to a first row with data in the map. If map type is <code>Rows</code> then first row index is 1, if map type is <code>Columns</code> then first row index is 0.</p>
 <h2 id="domovetolastcolumn">DoMoveToLastColumn<a class="headerlink" href="#domovetolastcolumn" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToLastColumn</span><span class="p">()</span>
 </code></pre></div>
