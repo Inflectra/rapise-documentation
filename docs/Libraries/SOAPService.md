@@ -262,7 +262,7 @@ DoRemoveParameter(name)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Header name |
+| name | string |	Parameter name |
 
 
 
