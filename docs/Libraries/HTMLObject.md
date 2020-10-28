@@ -41,6 +41,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | [Text](#text) | Text of the element with normalized spaces. | GetText |  |
 | [Title](#title) | Title of the element. | GetTitle |  |
 | [Value](#value) | Value of the element. | GetValue |  |
+| [Visible](#visible) | Returns `true` if the element is visible on screen. | GetVisible |  |
 | [X](#x) | X-coordinate of the top left corner of the element. | GetX |  |
 | [XPath](#xpath) | XPath of the element. | GetXPath |  |
 | [Y](#y) | Y-coordinate of the top left corner of the element. | GetY |  |
@@ -387,6 +388,21 @@ Type: string
 Accessors: GetValue
 			
 		
+<a name="Visible"></a>
+#### Visible
+
+
+Returns `true` if the element is visible on screen. Requires Rapise 6.6+
+
+			
+	
+			
+Type: boolean
+			
+			
+Accessors: GetVisible
+			
+		
 <a name="X"></a>
 #### X
 
@@ -500,8 +516,17 @@ boolean: 'true' if successful, 'false' otherwise'
 Double-Clicks on HTML element (button, link).
 
 ```javascript
-DoDblClick() 
+DoDblClick(x, y, forceEvent) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: false. |
 
 
 

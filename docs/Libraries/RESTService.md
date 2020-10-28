@@ -46,6 +46,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[DoExecute](#doexecute) | Executes a REST service operation, substitutes any of the provided parameter values if necessary. |
+|	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
+|	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
 |	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
@@ -310,6 +312,12 @@ Accessors: GetUrl, SetUrl
 #### DoExecute
 
 Executes a REST service operation, substitutes any of the provided parameter values if necessary.
+Sample code:
+
+```javascript
+SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});
+var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
+```
 
 ```javascript
 DoExecute(params) 
@@ -320,13 +328,7 @@ DoExecute(params)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation.
-Sample code:
-
-```javascript
-SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, "book_id":bookId});
-var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
-``` |
+| params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
 
 
 
@@ -338,6 +340,50 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.restservice.doexecute"></a>
+
+<a name="DoRemoveParameter"></a>    
+#### DoRemoveParameter
+
+Remove one pre-defined parameter. Requires Rapise 6.6+
+
+```javascript
+DoRemoveParameter(name) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Parameter name |
+
+
+
+
+
+<a name="see.also.restservice.doremoveparameter"></a>
+
+<a name="DoRemoveRequestHeader"></a>    
+#### DoRemoveRequestHeader
+
+Remove one pre-defined request header by name. Requires Rapise 6.6+
+
+```javascript
+DoRemoveRequestHeader(name) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Header name |
+
+
+
+
+
+<a name="see.also.restservice.doremoverequestheader"></a>
 
 <a name="DoVerify"></a>    
 #### DoVerify

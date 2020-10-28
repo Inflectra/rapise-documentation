@@ -42,6 +42,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | ----------- | --------------- |
 |	[DoExecute](#doexecute) | Executes a SOAP service operation, substituting any of the provided parameter values if necessary. |
 |	[DoExecuteRaw](#doexecuteraw) | Sends a SOAP request as is. |
+|	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
+|	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
 |	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
@@ -203,7 +205,7 @@ DoExecute(method, params, headers)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | method | string |	Name of a SOAP method. |
-| params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation. |
+| params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
 | headers | object |	Array of header name/value pairs. |
 
 
@@ -233,7 +235,7 @@ DoExecuteRaw(method, body, params)
 | ---------- | -------- | --------------- |
 | method | string |	Name of a SOAP method. |
 | body | string |	SOAP xml string. |
-| params | object |	JavaScript object {"name1": "value1", "name2": "value2" }. Parameter values that should be passed to the web service operation. |
+| params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
 
 
 
@@ -245,6 +247,50 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.soapservice.doexecuteraw"></a>
+
+<a name="DoRemoveParameter"></a>    
+#### DoRemoveParameter
+
+Remove one pre-defined parameter. Requires Rapise 6.6+
+
+```javascript
+DoRemoveParameter(name) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Parameter name |
+
+
+
+
+
+<a name="see.also.soapservice.doremoveparameter"></a>
+
+<a name="DoRemoveRequestHeader"></a>    
+#### DoRemoveRequestHeader
+
+Remove one pre-defined request header by name. Requires Rapise 6.6+
+
+```javascript
+DoRemoveRequestHeader(name) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |	Header name |
+
+
+
+
+
+<a name="see.also.soapservice.doremoverequestheader"></a>
 
 <a name="DoVerify"></a>    
 #### DoVerify

@@ -25,7 +25,10 @@ iOS Object.
 | [Height](#height) | Height of the object. | GetHeight |  |
 | [Label](#label) | Label of the iOS object | GetLabel |  |
 | [Name](#name) | Name of the object. | GetName |  |
+| [NextSibling](#nextsibling) | `iOSObject` for the next sibling element. | GetNextSibling |  |
 | [ObjectType](#objecttype) | Type of the object. | GetObjectType |  |
+| [Parent](#parent) | `iOSObject` for the parent element. | GetParent |  |
+| [PrevSibling](#prevsibling) | `iOSObject` for the previous sibling element. | GetPrevSibling |  |
 | [Property](#property) | Value of a named property of the object. | GetProperty |  |
 | [Text](#text) | Text of the object, 'false' if text can not be read. | GetText |  |
 | [Width](#width) | Width of the object. | GetWidth |  |
@@ -47,6 +50,7 @@ iOS Object.
 |	[DoClear](#doclear) | Clears the text of the object. |
 |	[DoClick](#doclick) | Clicks in the middle of the control. |
 |	[DoEnsureVisible](#doensurevisible) | Ensure that a child item with the specified text is visible on screen. |
+|	[DoFindByXPath](#dofindbyxpath) | Finds an element by relative XPath expression. |
 |	[DoSendKeys](#dosendkeys) | Send a text to the object in character-by-character mode. |
 |	[DoTap](#dotap) | Taps the control. |
 |	[DoTwoFingerTap](#dotwofingertap) | Taps the control with two fingers. |
@@ -155,6 +159,21 @@ Type: string
 Accessors: GetName
 			
 		
+<a name="NextSibling"></a>
+#### NextSibling
+
+
+`iOSObject` for the next sibling element. Requires Rapise 6.6+
+
+			
+	
+			
+Type: iOSObject
+			
+			
+Accessors: GetNextSibling
+			
+		
 <a name="ObjectType"></a>
 #### ObjectType
 
@@ -168,6 +187,36 @@ Type: string
 			
 			
 Accessors: GetObjectType
+			
+		
+<a name="Parent"></a>
+#### Parent
+
+
+`iOSObject` for the parent element. Requires Rapise 6.6+
+
+			
+	
+			
+Type: iOSObject
+			
+			
+Accessors: GetParent
+			
+		
+<a name="PrevSibling"></a>
+#### PrevSibling
+
+
+`iOSObject` for the previous sibling element. Requires Rapise 6.6+
+
+			
+	
+			
+Type: iOSObject
+			
+			
+Accessors: GetPrevSibling
 			
 		
 <a name="Property"></a>
@@ -337,6 +386,33 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.iosobject.doensurevisible"></a>
+
+<a name="DoFindByXPath"></a>    
+#### DoFindByXPath
+
+Finds an element by relative XPath expression. Requires Rapise 6.6+
+
+```javascript
+DoFindByXPath(xpath) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpath | string |	Relative XPath expression. |
+
+
+
+
+**Returns:**
+
+[iOSObject](iOSObject.md): `iOSObject` if success, `null` otherwise.
+
+
+
+<a name="see.also.iosobject.dofindbyxpath"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys
