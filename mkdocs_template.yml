@@ -208,7 +208,6 @@ nav:
             - 'Scripting Choice Dialog': 'Guide/scripting_choice_dialog.md'
             - 'Select an Application to Record... Dialog': 'Guide/select_an_application_to_record_dialog.md'
             - 'Selenium Settings Dialog': 'Guide/selenium_settings_dialog.md'
-            - 'Test Settings Dialog': 'Guide/settings_dialog.md'
             - 'SOAP Definition Editor': 'Guide/soap_definition_editor.md'
             - 'Source Editor': 'Guide/source_editor.md'
             - 'Spira Dashboard': 'Guide/spira_dashboard.md'
@@ -217,6 +216,7 @@ nav:
             - 'Spy Dialog': 'Guide/ses_spy_dialog.md'
             - 'Start Page': 'Guide/start_page.md'
             - 'Test Files View': 'Guide/test_files_dialog.md'
+            - 'Test Settings Dialog': 'Guide/settings_dialog.md'
             - 'Toolbar: REST': 'Guide/toolbar_rest.md'
             - 'Toolbar: SOAP': 'Guide/toolbar_soap.md'
             - 'Toolbar: Spreadsheet': 'Guide/toolbar_spreadsheet.md'
@@ -285,6 +285,7 @@ nav:
     - 'Extensibility':
         - 'Extensibility': 'Guide/extensibility.md'
         - 'Tutorial: Custom Library': 'Guide/tutorial_custom_library.md'
+        - 'Defining Global Objects': 'Guide/global_objects.md'
     - 'Glossary': 'Guide/glossary.md'
     - 'Company & Copyright': 'Guide/company__copyright.md'    
 - 'RVL':

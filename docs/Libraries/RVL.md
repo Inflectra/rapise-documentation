@@ -33,10 +33,19 @@ Play RVL sheet `sheetName` from current workbook passing `[extraParams]` for var
 DoPlayTest(/**string*/ sstestPath)
 ```
 
-Executes specified test passing additional arguments specified as `extraParams`. It is an analog of [Global.DoInvokeTest](Global.md#DoInvokeTest)
+Executes specified test with passing of additional arguments specified as `extraParams`. It is an analog of [Global.DoInvokeTest](Global.md#DoInvokeTest)
 
 * `sstestPath`: Path to test
 * **[extraParams]**: Param values to be passed into test. May then be accessed via [Tester.GetParam](Tester.md#GetParam).
+
+To pass sheet name use extra param name `sheetName`. The test at `sstestPath` should have `Test` function defined like this
+
+```javascript
+function Test(params)
+{
+    RVL.DoPlayScript("Main.rvl.xlsx", Tester.GetParam("sheetName", "RVL"));
+}
+```
 
 ## DoPlayTestParallel
 

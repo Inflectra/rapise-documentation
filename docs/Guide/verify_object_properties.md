@@ -33,6 +33,14 @@ Or, in JavaScript mode:
    Tester.Assert("Verify that: InnerText=Log In", SeS('Log_In1').GetInnerText() == "Log In" );
 ```
 
+## Check Object Exists
+
+Since Rapise 6.6 the **Verify Object Properties** dialog shows `Exists` property. It adds [Global.DoWaitFor](/Libraries/Global#dowaitfor) action to the recording.
+
+## Check Object Visible
+
+Since Rapise 6.6 the **Verify Object Properties** dialog shows `Visible` property. It checks that the object is visible on screen.
+
 ## See Also
 
 * [Recording](recording.md)

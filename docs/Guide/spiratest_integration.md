@@ -331,7 +331,7 @@ Now that we have the test case added to the set, we need schedule the test set f
 
 ### Executing the Test Sets
 
-Once you have set the various test set fields (as described above), the RapiseLauncher instance running on the assigned automation host will periodically poll SpiraTest for new test sets. Once it retrieves the new test set, it will add it to its list of test sets to be execute. Once execution begins it will change the status of the test set to **In Progress**, and once test execution is done, the status of the test set will change to either"**Completed** -- the automation engine could be launched and the test has completed -- or **Blocked** -- RapiseLauncher was not able to execute the automation test.
+Once you have set the various test set fields (as described above), the RapiseLauncher instance running on the assigned automation host will periodically poll SpiraTest for new test sets. Once it retrieves the new test set, it will add it to its list of test sets to be execute. Once execution begins it will change the status of the test set to **In Progress**, and once test execution is done, the status of the test set will change to either **Completed** (the automation engine has been  launched and the test has completed) -- or **Blocked** (RapiseLauncher was not able to execute the automated test).
 
 If you want to immediately execute the test case on your local computer, instead of setting the **Automation Host**, **Status** and **Planned Date** fields, you can instead click the `Execute` icon on the test set itself. This will cause RapiseLauncher on the local computer to immediately start executing the current test set.
 
@@ -360,6 +360,17 @@ Attachments tab of the test run:
 ![attachments tab](./img/using_rapise_with_spiratest_guide45.png)
 
 So, you now have a complete record of the automated test execution in SpiraTest, with the execution status of the appropriate test case and test steps updated, and a complete log of the testing activities.
+
+Since Rapise 6.6+ the Attachments tab also has the original report and log files attached:
+
+![Attached Report](./img/testrun_attachments.png)
+
+#### Block Execution
+
+!!! note
+    This feature requires Rapise 6.6+.
+
+If you have a test set that contains several test cases and failure of some test case makes further execution of the test set unwanted you may do this by returning exit code `-99` from the failed test. It can be done via `WScript.Quit(-99)` statement.
 
 ## Using RapiseLauncher
 
@@ -456,6 +467,23 @@ For debugging and additional options when running the program, the following com
 - **-testset:[Test Set ID]** allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. **-testset:45** runs test set `TX00045`).
 - **-project:[Project ID]** allows you to tell RapiseLauncher which project the test set specified with the **-testset** argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).
 - **filename** must be the last item on the command line. This is a `TST` file downloaded from SpiraTest to start immediate execution on. Optional.
+
+### Record Playback Videos
+
+!!! note
+    This feature requires Rapise 6.6+.
+
+RapiseLauncher can record video of test playback. To enable video capture pass `g_enableVideoRecording=true` via a [Test Case parameter](#using-parameterized-test-cases). For video recording RapiseLauncher uses `Microsoft.TestPlatform` NuGet package.When this feature is used for the first time RapiseLauncher downloads `Microsoft.TestPlatform` using `nuget.exe` and puts it into `<Public Documents>\Rapise\VideoRecorder` folder.
+
+By default the video recorder is executed with these parameters:
+
+```
+-noaudio -bitRate 512 -frameRate 2
+```
+
+You may change them by defining a Test Case parameter with name `g_videoRecorderArguments`.
+
+Recorded video is attached to the test run as ScreenCapture.wmv.
 
 ## See Also
 

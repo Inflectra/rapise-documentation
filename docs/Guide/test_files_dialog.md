@@ -28,13 +28,13 @@ Right click on a folder to see:
 ![test files view, context menu 1](./img/test_files_dialog2.png)
 
 * **Create...**
-* * **Text File...**: Create `.txt` file and add it to the test.
-* * **JavaScript File...**: Create `.js` file and add it to the test.
-* * **JSON File...**: Create `.json` file and add it to the test.
-* * **Spreadsheet...**: Create new `.xlsx` or `.xls` file and add it to the test.
-* * **File...**: Aks for name and extension and create an empty file.
-* * **WebAppProfile.json**: Add new `WebAppProfile.json` to this test project.
-* * **User Lib...**: Create shared user library for this test and sub-tests.
+    * **Text File...**: Create `.txt` file and add it to the test.
+    * **JavaScript File...**: Create `.js` file and add it to the test.
+    * **JSON File...**: Create `.json` file and add it to the test.
+    * **Spreadsheet...**: Create new `.xlsx` or `.xls` file and add it to the test.
+    * **File...**: Aks for name and extension and create an empty file.
+    * **WebAppProfile.json**: Add new `WebAppProfile.json` to this test project.
+    * **User Lib...**: Create shared user library for this test and sub-tests.
 * **Add File(s)...**: Add an existing file to the test.
 * **New Group...**:  Create a logical grouping of files in the test. This will **not** add a folder to the file system.
 * **Reload**: Refresh group contents. Use it for [filter groups](../test_files_dialog/#filtergroup)  ('IsFilterGroup' is set to 'True' in group properties), e.g. for Report group.
