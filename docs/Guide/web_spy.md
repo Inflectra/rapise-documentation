@@ -107,6 +107,9 @@ When you click **Test** it will display all of the DOM elements that match the q
 
 You can now refine the query to only find the items you want to test.
 
+!!! note
+    If you need to enter a non-breaking space in your search query (nbsp) you can do this by pressing `Shift-Space` key combination.
+
 ### Using CSS
 
 If you enter in the [CSS](css.md) selector to locate the table cells in the **CSS** box at the top (if the box is not visible use menu `Spy > CSS Enabled`).
