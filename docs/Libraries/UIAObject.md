@@ -86,7 +86,7 @@ Object for nth child of this object's UI Automation node
 
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
-| ind=0 | number | Zero-based index for a required child |
+| ind | number | Zero-based index for a required child |
 
 
 	
@@ -335,13 +335,13 @@ DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, igno
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: false. |
-| maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: 0. |
-| trimValue | number |	Determines maximum length of a proprty value. Excess characters are truncated.<br>Optional, Default: 256. |
-| indent | string |	Indentation string for child objects and properties.<br>Optional, Default: \. |
-| filePath | string |	If 'filePath' is set then outputs result to corresponding file.<br>Optional. |
-| append | boolean |	If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: false. |
-| ignoreProps | Array |	Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: undefined. |
+| dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: "false". |
+| maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0". |
+| trimValue | number |	Determines maximum length of a proprty value. Excess characters are truncated.<br>Optional, Default: "256". |
+| indent | string |	Indentation string for child objects and properties.<br>Optional, Default: "\". |
+| filePath | string |	If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "". |
+| append | boolean |	If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false". |
+| ignoreProps | Array |	Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: "undefined". |
 
 
 
@@ -369,7 +369,7 @@ DoFindByText(textOrRegexp, depth)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | textOrRegexp | string |	plain string or regexp:... expression to match |
-| depth | number |	depth level for search (default is 3)<br>Optional, Default: 3. |
+| depth | number |	depth level for search (default is 3)<br>Optional, Default: "3". |
 
 
 
@@ -388,7 +388,7 @@ DoFindByText(textOrRegexp, depth)
 Finds first element matching the condition. Requires Rapise 6.6+
 
 ```javascript
-DoFindElementByCondition(scope=Descendants, condition) 
+DoFindElementByCondition(scope, condition) 
 ```
 
 
@@ -396,7 +396,7 @@ DoFindElementByCondition(scope=Descendants, condition)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scope=Descendants | string |	Scope for element search. |
+| scope | string |	Scope for element search. Possible values: "Element", "Children", "Descendants", "Subtree", "Parent", "Ancestors" |
 | condition | expression |	UIAutomation2 locator or condition object. |
 
 
@@ -416,7 +416,7 @@ DoFindElementByCondition(scope=Descendants, condition)
 Finds all elements matching the condition
 
 ```javascript
-DoFindElementsByCondition(scope=Descendants, condition) 
+DoFindElementsByCondition(scope, condition) 
 ```
 
 
@@ -424,7 +424,7 @@ DoFindElementsByCondition(scope=Descendants, condition)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scope=Descendants | string |	Scope for element search. |
+| scope | string |	Scope for element search. Possible values: "Element", "Children", "Descendants", "Subtree", "Parent", "Ancestors" |
 | condition | expression |	UIAutomation2 locator or condition object. |
 
 

@@ -50,6 +50,7 @@ In additional to the standard HTML object methods and properties, you have [the 
 
 ## See Also
 
+- [Get the framework for testing Salesforce (github)](https://github.com/Inflectra/rapise-sfdc)
 - [KB: Testing Visualforce components in Salesforce](https://www.inflectra.com/Support/KnowledgeBase/KB313.aspx)
 - [Webinar: Testing Salesforce.com with Rapise](https://youtu.be/Ge24OgI0VJ8)
 - [Webinar: Testing Salesforce Lightning with Rapise](https://youtu.be/2JBBMzYkil8)
