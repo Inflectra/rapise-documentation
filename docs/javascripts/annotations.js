@@ -590,7 +590,25 @@ var annotations =
                 link: "https://youtu.be/5W3KyVH83wc"
             }            
         ]
-    }     
+    },
+    {
+        name: "uiaobject.dofindelementbycondition",
+        refs: [
+            {
+                text: "KB574: Advanced search for elements in desktop applications",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB574.aspx"
+            }
+        ]
+    },
+    {
+        name: "uiaobject.dofindelementsbycondition",
+        refs: [
+            {
+                text: "KB574: Advanced search for elements in desktop applications",
+                link: "https://www.inflectra.com/Support/KnowledgeBase/KB574.aspx"
+            }
+        ]
+    }
 ]
 
 function RapiseAnnotateItem(itemName, refs)
