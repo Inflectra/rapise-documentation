@@ -433,6 +433,7 @@ Where 9 is row number.
 ## See Also
 
 - [Microsoft Dynamics](microsoft_dynamics.md)
+- [Get the framework for testing Dynamics AX (github)](https://github.com/Inflectra/rapise-dynamics-ax)
 - [KB: If recording of actions in Dynamics AX or Dynamics NAV does not work](https://www.inflectra.com/Support/KnowledgeBase/KB411.aspx)
 - [KB: Creating a Purchase Order in Dynamics AX](https://www.inflectra.com/Support/KnowledgeBase/KB391.aspx)
 - [KB: Rapise Tips, Tricks & Workarounds when Testing Dynamics AX 2012](https://www.inflectra.com/Support/KnowledgeBase/KB273.aspx)

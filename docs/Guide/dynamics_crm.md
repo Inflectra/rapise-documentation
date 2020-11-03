@@ -72,6 +72,7 @@ When you record operations on such a grid or simply learn the entire grid using 
 ## See Also
 
 - [Microsoft Dynamics](microsoft_dynamics.md)
+- [Get the framework for testing Dynamics 365 for Sales (github)](https://github.com/Inflectra/rapise-dynamics365-crm)
 - [Tips & Tricks for Rapise and Dynamics 365 for Sales (Web Interface)](https://www.inflectra.com/support/knowledgebase/kb277.aspx)
 - [KB: How to automate testing of Unified Service Desk for Microsoft Dynamics 365](https://www.inflectra.com/Support/KnowledgeBase/KB362.aspx)
 - [Webinar: Testing Dynamics CRM & 365 for Sales using Rapise](https://youtu.be/49DpIhpFLx8)

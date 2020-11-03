@@ -286,6 +286,7 @@ SeS('CustomerGrid').DoScrollTo(30, 7);
 ## See Also
 
 - [Microsoft Dynamics](microsoft_dynamics.md)
+- [Get the framework for testing Dynamics NAV (github)](https://github.com/Inflectra/rapise-dynamics-nav)
 - [KB: How to start Dynamics NAV client](https://www.inflectra.com/Support/KnowledgeBase/KB314.aspx)
 - [KB: If recording of actions in Dynamics AX or Dynamics NAV does not work](https://www.inflectra.com/Support/KnowledgeBase/KB411.aspx)
 - [KB: How to record entering of data into Dynamics NAV tables](https://www.inflectra.com/Support/KnowledgeBase/KB347.aspx)

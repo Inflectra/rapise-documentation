@@ -106,5 +106,6 @@ g_load_libraries=["%g_browserLibrary:Chrome HTML%", "DomDynamicsAX"];
 ## See Also
 
 - [Microsoft Dynamics](microsoft_dynamics.md)
+- [Get the framework for testing Dynamics 365 for Operations (github)](https://github.com/Inflectra/rapise-dynamics365-fo)
 - [Demo: How to Create a PO in Microsoft Dynamics 365 for Operations](https://youtu.be/NKE1Lg5OgoQ)
 - [Webinar: Testing Microsoft Dynamics 365 for Operations with Rapise](https://youtu.be/YMhT0GLNwUE)
