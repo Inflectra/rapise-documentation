@@ -100,11 +100,15 @@ Once you have chosen the desired project, you need to expand the test case folde
 
 ![spira_save_test3](./img/spiratest_integration10.png)
 
+You can also create a new folder by clicking the `New Folder` button.
+
 When you expand the folders to display the list of contained test cases, it will display the name and ID of the test case together with an icon that indicates the type of test case:
 
 1. ![ManualTest-WithSteps](./img/spiratest_integration11.png) - Manual test case that has no automation script attached. (Repository Path will also be blank)
 2. ![RapiseTest-WithSteps](./img/spiratest_integration12.png) - Test case that has an existing Rapise test attached.
 3. ![AutoTest-WithSteps](./img/spiratest_integration13.png) - Test case that has a non-Rapise automation script attached.
+
+You can create a new test case by using the `New Test Case` button or simply click on a test case that you previously created in Spira.
 
 If you are adding a new Rapise test, choose a test case that has icon (1) and doesn't have an associated Repository path. If you are updating an existing test, choose a test case that has icon (2) and the matching Repository path.
 

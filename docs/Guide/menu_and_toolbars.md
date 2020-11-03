@@ -57,10 +57,12 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 
 -----
 
-* **Ins Row**
+* **Ins Row** (Shortcut: Ctrl+I)
     * RVL: Insert RVL Row before active.
-* **Del Row** (Shortcut: Del)
+* **Del Row** (Shortcut: Ctrl+D)
     * RVL: Delete active Row. If several rows selected then all of them are deleted.
+* **Params** (Shortcut: Ctrl+P)
+    * RVL: Show all parameters (including optional) for the currently edited action.
 
 -----
 
@@ -114,8 +116,9 @@ The **View** menu contents depend on the active editor currently open in the [co
 
 * **Start Page** - opens the Rapise [Start Page](start_page.md).
 * **Spira Dashboard** - opens [Spira Dashboard](spira_dashboard.md).
-* **Test** - opens the primary [test script file](understanding_the_script.md) (normally MyTest.js where MyTest is the name of your test).
-* **User** - This opens the user functions [script file](understanding_the_script.md) containing any user-defined testing functions (called MyTest.user.js where MyTest is the name of your test).
+* **RVL** - opens the [RVL editor](rvl_editor.md).
+* **Main** - opens the primary [test script file](understanding_the_script.md) (normally `Main.js`).
+* **User** - This opens the user functions [script file](understanding_the_script.md) containing any user-defined testing functions (called `User.js`).
 * **Show**
   
     ![File](./img/menu_view_show.png)
@@ -234,9 +237,10 @@ The **Report** menu is available anytime you have a report (`.trp`) file visible
 * **Collapse** - collapse the report to show only the top level.  What is visible will depend on how the report is sorted.
 * **Expand** - expand all report rows.
 * **Images** - toggle between hiding and revealing images.
+* **Export to HTML** - save the report as HTML document.
 * **Export to Excel** - save the report as an Excel file.
 * **Export to PDF** - save the report as an Acrobat PDF file.
-* **Export to PDF** - save the report as [XML Paper Specification](https://en.wikipedia.org/wiki/Open_XML_Paper_Specification) file.
+* **Export to XPS** - save the report as [XML Paper Specification](https://en.wikipedia.org/wiki/Open_XML_Paper_Specification) file.
 * **Choose Columns** - to hide or reveal report columns.
 * **Merge Cells** - merge identical consecutive cells.
 * The drop-down combo lets you choose between previously saved layouts. Selected layout is loaded using next item **Load Layout**.

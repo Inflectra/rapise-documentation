@@ -62,7 +62,7 @@ Right click on a sub-test to see:
 
 <img alt="test files view, context menu 3" src="/Guide/img/tests_and_sub_tests6.png" width="130" />
 
-See [menu item descriptions](/Guide/tests_and_sub_tests/#sub-test-context-menu)
+See [menu item descriptions](tests_and_sub_tests.md#sub-test-context-menu)
 
 ## Filter Groups
 

@@ -85,13 +85,15 @@ The following options are available in the context menu for each of the sub-test
 
 <img alt="sub-tests, context menu" src="/Guide/img/tests_and_sub_tests6.png" width="130" />
 
-- `Play`: Execute selected sub-test
-- `Record`: Start recording into selected sub-test
-- `Save`: Save options of a sub-test
-- `Show Objects`: Show objects form a sub-test in the Object Tree
-- `Rename`: Rename this sub-test
-- `Clone`: Make a copy of the sub-test
-- `Delete`: Remove reference to a sub-test from its parent test  
+- **Play**: Execute selected sub-test
+- **Record**: Start recording into selected sub-test
+- **Save**: Save options of a sub-test
+- **Show Objects**: Show objects form a sub-test in the Object Tree
+- **Rename**: Rename this sub-test
+- **Clone**: Make a copy of the sub-test
+- **Delete**: Remove reference to a sub-test from its parent test 
+- **Create Sub-Test...**: Create nested sub-test. It is typical for larger [frameworks](../Intro/framework.md) to have several nested levels of tests for convenience.
+- **Open in New Rapise Window...**: By default double-click on the sub-test opens it in the current Rapise window. In the case that you need to have both current test and sub-test open simultaneously you may use this option.
 
 ## %WORKDIR% and Frameworks
 
