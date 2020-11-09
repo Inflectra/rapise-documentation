@@ -67,4 +67,4 @@ This means that once you have learned the objects during testing, anyone can com
 
 RVL dropdowns help you spend less time on editing test steps. When you expand the Object dropdown you see available objects. When an object is selected the Action dropdown shows applicable actions. If a selected action accepts parameters then parameter names and types are generated automatically.
 
-![RVL Editing](./img/visual_language.gif)
+<img alt="RVL Editing" data-gifffer="/Guide/img/visual_language.gif" />
