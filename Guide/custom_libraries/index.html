@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_5/" class="md-tabs__link">
+        <a href="../../New/6_6/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -1036,6 +1036,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#advanced-support" class="md-nav__link">
+    Advanced Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#full-support" class="md-nav__link">
     Full Support
   </a>
@@ -1548,11 +1555,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-12" type="checkbox" id="nav-1-3-12">
     
     <label class="md-nav__link" for="nav-1-3-12">
-      Javascript IDE
+      JavaScript IDE
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-1-3-12">
-        Javascript IDE
+        JavaScript IDE
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1563,8 +1570,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../javascript_ide/" title="Javascript IDE" class="md-nav__link">
-      Javascript IDE
+    <a href="../javascript_ide/" title="JavaScript IDE" class="md-nav__link">
+      JavaScript IDE
     </a>
   </li>
 
@@ -1942,6 +1949,18 @@
   <li class="md-nav__item">
     <a href="../spiratest_integration/" title="Test Management" class="md-nav__link">
       Test Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../git_integration/" title="Git Integration" class="md-nav__link">
+      Git Integration
     </a>
   </li>
 
@@ -2439,18 +2458,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
-      Test Settings Dialog
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../soap_definition_editor/" title="SOAP Definition Editor" class="md-nav__link">
       SOAP Definition Editor
     </a>
@@ -2537,6 +2544,18 @@
   <li class="md-nav__item">
     <a href="../test_files_dialog/" title="Test Files View" class="md-nav__link">
       Test Files View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
+      Test Settings Dialog
     </a>
   </li>
 
@@ -3458,6 +3477,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../global_objects/" title="Defining Global Objects" class="md-nav__link">
+      Defining Global Objects
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3541,8 +3572,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../rvl_editor/" title="RVl Editor" class="md-nav__link">
-      RVl Editor
+    <a href="../rvl_editor/" title="RVL Editor" class="md-nav__link">
+      RVL Editor
     </a>
   </li>
 
@@ -9901,6 +9932,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_6/" title="Release Notes for 6.6" class="md-nav__link">
+      Release Notes for 6.6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
       Release Notes for 6.5
     </a>
@@ -10062,6 +10105,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#advanced-support" class="md-nav__link">
+    Advanced Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#full-support" class="md-nav__link">
     Full Support
   </a>
@@ -10096,11 +10146,13 @@
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>If your application doesn't work with the predefined <a href="../recording_library/">Recording Libraries</a>, you can create your own.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Your library can provide <strong>Basic</strong> or <strong>Full</strong> support for your application.  Basic support allows you to manually <a href="../object_learning/">Learn</a> objects, <a href="../scripting/">write test scripts</a>, and <a href="../playback/">Playback</a> your scripts. Full support allows you to <a href="../recording/">Record</a> as well.</p>
+<p>Your library can provide <strong>Basic</strong>, <strong>Advanced</strong> or <strong>Full</strong> support for your application.  Basic support allows you to define a global object with common functionality. Advanced allows enables <a href="../object_learning/">Learn</a> of application-specific object types, <a href="../scripting/">write test scripts</a>, and <a href="../playback/">Playback</a> your scripts. Full support allows you to <a href="../recording/">Record</a> as well.</p>
 <p>Create your library via <code>Create... &gt; User Lib...</code> menu.</p>
 <p><img alt="create lib" src="../img/tutorial_custom_library_create_userlib.png" /></p>
 <h2 id="basic-support">Basic Support<a class="headerlink" href="#basic-support" title="Permanent link">&para;</a></h2>
-<p><strong>Add a Matcher Rule</strong> to the library for every window type in your application. The <code>SeSMatcherRule</code> includes information to identify your application, and a set of behaviors.</p>
+<p>Define one or many application-specific <a href="../global_objects/">Global Objects</a>.</p>
+<h2 id="advanced-support">Advanced Support<a class="headerlink" href="#advanced-support" title="Permanent link">&para;</a></h2>
+<p><strong>Add a Matcher Rule</strong> to the library for every object type in your application. The <code>SeSMatcherRule</code> includes information to identify the object and a set of behaviors.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="o">*</span><span class="nx">yourApplicationRule</span><span class="o">*</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SeSMatcherRule</span><span class="p">(</span>
 <span class="p">{</span>
     <span class="nx">object_type</span><span class="o">:</span> <span class="s2">&quot;*yourAppObject*&quot;</span><span class="p">,</span>
@@ -10155,10 +10207,21 @@
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../tutorial_custom_library/">Tutorial: Custom Library</a></li>
-<li>To see what actions and events can be overridden, see <strong>SeSBehavior.js</strong> (in the Rapise <a href="../customizable_engine/">Engine)</a>.</li>
-<li>Check the <strong>Engine/Lib</strong> directory for examples.</li>
-<li>You can alter the behavior of an action without creating an entire library.  See the <a href="../actions/">Actions</a> section for more details.</li>
+<li>
+<p><a href="../tutorial_custom_library/">Tutorial: Custom Library</a></p>
+</li>
+<li>
+<p><a href="https://www.inflectra.com/Ideas/Entry/techtuesday-automated-testing-of-complex-web-ui-co-479.aspx">Another Example of Creating a Custom Library</a></p>
+</li>
+<li>
+<p>To see what actions and events can be overridden, see <strong>SeSBehavior.js</strong> (in the Rapise <a href="../customizable_engine/">Engine)</a>.</p>
+</li>
+<li>
+<p>Check the <strong>C:\Program Files(x86)\Inflectra\Rapise\Engine\Lib</strong> directory as an example of rapise core libraries.</p>
+</li>
+<li>
+<p>You can alter the behavior of an action without creating an entire library.  See the <a href="../actions/">Actions</a> section for more details.</p>
+</li>
 </ul>
                 
                   
@@ -10247,12 +10310,19 @@
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
         <script src="../../javascripts/annotations.js"></script>
       
+        <script src="../../javascripts/gifffer.min.js"></script>
+      
     
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>    
   </body>
 </html>

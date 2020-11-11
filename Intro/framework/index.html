@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -287,7 +287,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_5/" class="md-tabs__link">
+        <a href="../../New/6_6/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -1472,11 +1472,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-12" type="checkbox" id="nav-1-3-12">
     
     <label class="md-nav__link" for="nav-1-3-12">
-      Javascript IDE
+      JavaScript IDE
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-1-3-12">
-        Javascript IDE
+        JavaScript IDE
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1487,8 +1487,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Guide/javascript_ide/" title="Javascript IDE" class="md-nav__link">
-      Javascript IDE
+    <a href="../../Guide/javascript_ide/" title="JavaScript IDE" class="md-nav__link">
+      JavaScript IDE
     </a>
   </li>
 
@@ -1866,6 +1866,18 @@
   <li class="md-nav__item">
     <a href="../../Guide/spiratest_integration/" title="Test Management" class="md-nav__link">
       Test Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Guide/git_integration/" title="Git Integration" class="md-nav__link">
+      Git Integration
     </a>
   </li>
 
@@ -2363,18 +2375,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Guide/settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
-      Test Settings Dialog
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../Guide/soap_definition_editor/" title="SOAP Definition Editor" class="md-nav__link">
       SOAP Definition Editor
     </a>
@@ -2461,6 +2461,18 @@
   <li class="md-nav__item">
     <a href="../../Guide/test_files_dialog/" title="Test Files View" class="md-nav__link">
       Test Files View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Guide/settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
+      Test Settings Dialog
     </a>
   </li>
 
@@ -3382,6 +3394,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Guide/global_objects/" title="Defining Global Objects" class="md-nav__link">
+      Defining Global Objects
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3465,8 +3489,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Guide/rvl_editor/" title="RVl Editor" class="md-nav__link">
-      RVl Editor
+    <a href="../../Guide/rvl_editor/" title="RVL Editor" class="md-nav__link">
+      RVL Editor
     </a>
   </li>
 
@@ -9825,6 +9849,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_6/" title="Release Notes for 6.6" class="md-nav__link">
+      Release Notes for 6.6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
       Release Notes for 6.5
     </a>
@@ -9946,9 +9982,162 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Frameworks
+      </label>
+    
     <a href="./" title="Frameworks" class="md-nav__link md-nav__link--active">
       Frameworks
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-framework-tests-are-structured" class="md-nav__link">
+    How Framework Tests Are Structured
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-a-framework-into-spira" class="md-nav__link">
+    Saving a Framework into Spira
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saving-a-framework-into-git" class="md-nav__link">
+    Saving a Framework into Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#framework-navigation-root-test-parent-test-sub-tests" class="md-nav__link">
+    Framework Navigation: Root Test, Parent Test, Sub-Tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-test-case-and-clone" class="md-nav__link">
+    Template Test Case and Clone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-other-tests" class="md-nav__link">
+    Calling Other Tests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#executing-full-test" class="md-nav__link">
+    Executing Full Test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-one-rvl-sheet-from-current-or-another-test-in-the-framework" class="md-nav__link">
+    Execute One RVL Sheet from Current or Another Test in the Framework
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-test-execution" class="md-nav__link">
+    Parallel Test Execution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configxlsx" class="md-nav__link">
+    Config.xlsx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdownsxlsx" class="md-nav__link">
+    Dropdowns.xlsx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-objects" class="md-nav__link">
+    Global Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libraries" class="md-nav__link">
+    Libraries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-js-files" class="md-nav__link">
+    Sharing JS Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profiles" class="md-nav__link">
+    Profiles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webappprofilejson" class="md-nav__link">
+    WebAppProfile.json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -9970,6 +10159,146 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-framework-tests-are-structured" class="md-nav__link">
+    How Framework Tests Are Structured
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-a-framework-into-spira" class="md-nav__link">
+    Saving a Framework into Spira
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saving-a-framework-into-git" class="md-nav__link">
+    Saving a Framework into Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#framework-navigation-root-test-parent-test-sub-tests" class="md-nav__link">
+    Framework Navigation: Root Test, Parent Test, Sub-Tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-test-case-and-clone" class="md-nav__link">
+    Template Test Case and Clone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-other-tests" class="md-nav__link">
+    Calling Other Tests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#executing-full-test" class="md-nav__link">
+    Executing Full Test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-one-rvl-sheet-from-current-or-another-test-in-the-framework" class="md-nav__link">
+    Execute One RVL Sheet from Current or Another Test in the Framework
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-test-execution" class="md-nav__link">
+    Parallel Test Execution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configxlsx" class="md-nav__link">
+    Config.xlsx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdownsxlsx" class="md-nav__link">
+    Dropdowns.xlsx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-objects" class="md-nav__link">
+    Global Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libraries" class="md-nav__link">
+    Libraries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-js-files" class="md-nav__link">
+    Sharing JS Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profiles" class="md-nav__link">
+    Profiles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webappprofilejson" class="md-nav__link">
+    WebAppProfile.json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See Also
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9982,12 +10311,76 @@
                 
                 
                 <h1 id="how-to-build-a-test-framework-with-rapise">How to Build a Test Framework with Rapise<a class="headerlink" href="#how-to-build-a-test-framework-with-rapise" title="Permanent link">&para;</a></h1>
-<p>Need to call one test from another? Need to run many tests? Have a test plan? It is time to build a testing framework. Learn how to do with Rapise.</p>
+<p>Need to call one test from another? Need to run many tests? Have a test plan? It is time to build a testing framework. Learn how to do it with Rapise.</p>
+<h2 id="how-framework-tests-are-structured">How Framework Tests Are Structured<a class="headerlink" href="#how-framework-tests-are-structured" title="Permanent link">&para;</a></h2>
+<p>The Framework in Rapise is a regular test (<strong>Framework Root</strong>) containing a number of <a href="../../Guide/tests_and_sub_tests/">Sub-Tests</a> (<strong>Test Cases</strong>, <strong>Scenarios</strong> and <strong>Common Features</strong>)</p>
+<p><img alt="Framework" src="../../Guide/img/framework_overview.png" /></p>
+<p>When working with framework, the variable <a href="../../Guide/tests_and_sub_tests/#workdir-and-frameworks">%WORKDIR%</a> always points to the root test case. This helps to find all common assets and files. For example, we always know that we may call <code>Common Feature1.sstest</code> using path <code>%WORKDIR%\Common Feature1\Common Feature1.sstest</code>. So we may call it from any other test case, from other common feature, from library and so on.</p>
+<p>Also the same is true for accessing common <a href="../../Libraries/Global/#SetConfigPath">config</a> and data files. I.e.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SetConfigPath</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%\\Config.xlsx&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="saving-a-framework-into-spira">Saving a Framework into Spira<a class="headerlink" href="#saving-a-framework-into-spira" title="Permanent link">&para;</a></h3>
+<p>The value of framework is in its consistency. There is one important rule that must be followed when saving framework to Spira:</p>
+<blockquote>
+<p>Framework root must be saved first. You need to save it at least once before saving any sub-tests. This will make sure that correct directory structure is defined in Spira.</p>
+</blockquote>
+<p>Once you saved a root test to the Spira, all sub-tests always saved together with it, whenever you do it form the root or from any of sub-tests. Right after saving a root test case you have a framework and may start expanding it.</p>
+<h3 id="saving-a-framework-into-git">Saving a Framework into Git<a class="headerlink" href="#saving-a-framework-into-git" title="Permanent link">&para;</a></h3>
+<p>If you plan to maintain your framework using <strong>Git</strong> for <a href="../../Guide/git_integration/">source control</a>, please make sure to init git repository at framework root level or higher. Thus Rapise will be able to detect it.</p>
+<h3 id="framework-navigation-root-test-parent-test-sub-tests">Framework Navigation: Root Test, Parent Test, Sub-Tests<a class="headerlink" href="#framework-navigation-root-test-parent-test-sub-tests" title="Permanent link">&para;</a></h3>
+<p>There is a number of features intended to help one switching between test and sub-tests.</p>
+<p>The <code>Files</code> <a href="../../Guide/test_files_dialog/">view</a> shows all nested sub-tests. You may open any of them by double-clicking on the <code>.sstest</code> node:</p>
+<p><img alt="Filew View" src="../../Guide/img/framework_filesview.png" /></p>
+<p>The test opens in the current Rapise instance. You may also open it in a new window using the <strong>Open in New Rapise Window...</strong> command from the  <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">Context Menu</a>.</p>
+<h3 id="template-test-case-and-clone">Template Test Case and Clone<a class="headerlink" href="#template-test-case-and-clone" title="Permanent link">&para;</a></h3>
+<p>Usual practice in Framework is to use the <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">Clone</a> feature to produce new sub-tests. So the template test is created and pre-configured (to contain right lib, functions and file references) and then replicated for each next cloned test case.</p>
+<p><img alt="Coone" src="../../Guide/img/framework_template_clone.png" /></p>
+<h3 id="calling-other-tests">Calling Other Tests<a class="headerlink" href="#calling-other-tests" title="Permanent link">&para;</a></h3>
+<p>There is a number of ways to call one sub test from another. Usually the test representing a scenario calls another test representing common routine or shared step. It is possible to pass some parameters to the called sub-test.</p>
+<blockquote>
+<p>In most cases you may use Drag&amp;Drop from the <a href="../../Guide/test_files_dialog/">Files</a> view into text or RVL editor to generate a call statement.</p>
+</blockquote>
+<h4 id="executing-full-test">Executing Full Test<a class="headerlink" href="#executing-full-test" title="Permanent link">&para;</a></h4>
+<p>From RVL:
+<a href="../../Libraries/RVL/#doplaytest">RVL.DoPlayTest</a></p>
+<p>From JS:
+<a href="../../Libraries/Global/#DoInvokeTest">Global.DoInvokeTest</a></p>
+<h4 id="execute-one-rvl-sheet-from-current-or-another-test-in-the-framework">Execute One RVL Sheet from Current or Another Test in the Framework<a class="headerlink" href="#execute-one-rvl-sheet-from-current-or-another-test-in-the-framework" title="Permanent link">&para;</a></h4>
+<p>From either RVL or JS:</p>
+<p><a href="../../Libraries/RVL/#doplayscript">RVL.DoPlayScript</a></p>
+<p><a href="../../Libraries/RVL/#doplaysheet">RVL.DoPlaySheet</a></p>
+<h4 id="parallel-test-execution">Parallel Test Execution<a class="headerlink" href="#parallel-test-execution" title="Permanent link">&para;</a></h4>
+<p>From RVL:
+<a href="../../Libraries/RVL/#doplaytestparallel">RVL.DoPlayTestParallel</a></p>
+<p>From JS:
+<a href="../../Libraries/Global/#doinvoketestparallel">Global.DoInvokeTestParallel</a></p>
+<h3 id="configxlsx">Config.xlsx<a class="headerlink" href="#configxlsx" title="Permanent link">&para;</a></h3>
+<p>There is a <a href="../../Libraries/Global/#SetConfigPath">Config</a> file, that may be used for further <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a> and <a href="/Libraries/Global/#setproperty">Global.SetProperty</a>. This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).</p>
+<p>It is also explained in <a href="https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&amp;t=534">this</a> video.</p>
+<h3 id="dropdownsxlsx">Dropdowns.xlsx<a class="headerlink" href="#dropdownsxlsx" title="Permanent link">&para;</a></h3>
+<p>Shared Libraries and Shared Functions more powerful with pre-defined <a href="../../Guide/rvl_editor/#param-dropdowns">dropdowns</a>. For example, you may have a function <code>NavigateToModule</code> used across your framework and switching to an application module. Since we have fixed number of modules in the app (it may be a big number, but still fixed) we may define a dropdown list to make it easier for test creator to navigate without risk of doing a typo and without loss of time to find correct naming.</p>
+<p><img alt="Param Dropdown" src="../../Guide/img/framework_dropdowns.png" /></p>
+<h3 id="global-objects">Global Objects<a class="headerlink" href="#global-objects" title="Permanent link">&para;</a></h3>
+<p>It is useful to have one or more application specific <a href="../../Guide/global_objects/">global object</a> sharing functionality needed by majority of test cases in your framework. It may anything, starting from login and navigation and up to string formatting or text validation.</p>
+<p><img alt="Global Object" src="../../Guide/img/framework_global_object.png" /></p>
+<h3 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h3>
+<p>One may define a <a href="../../Guide/custom_libraries/">custom library</a> containing common functions, global objects or even rules for <a href="../../Guide/playback/">test playback</a>, <a href="../../Guide/object_learning/">object learning</a> and <a href="../../Guide/recording/">test recording</a>.</p>
+<h3 id="sharing-js-files">Sharing JS Files<a class="headerlink" href="#sharing-js-files" title="Permanent link">&para;</a></h3>
+<p>Simple way to have common shared logic is to have a common <code>User.js</code> <a href="../../Guide/defining_functions/#in-userjs">file</a> defining some functions.</p>
+<p>For more complex cases, you may have additional <code>.js</code> files and <a href="https://www.inflectra.com/Support/KnowledgeBase/KB308.aspx">include</a> them in tests.</p>
+<h3 id="profiles">Profiles<a class="headerlink" href="#profiles" title="Permanent link">&para;</a></h3>
+<p>Local <a href="../Guide/browser_settings/#local-browser-profiles">Web</a> or <a href="../Guide/mobile_settings_dialog/#local-mobile-profiles">Mobile</a> Profiles makes it easier to configure the browsers for the whole framework.</p>
+<h3 id="webappprofilejson">WebAppProfile.json<a class="headerlink" href="#webappprofilejson" title="Permanent link">&para;</a></h3>
+<p>For web tests the <a href="../../Guide/web_app_profile/">WebAppProfile</a> may greatly improve the speed and quality of recording. The profile may be defined on the framework root and thus be effective when working on all the contained sub-tests.</p>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="/Guide/tests_and_sub_tests/">Tests and Sub-Tests</a></li>
+<li><a href="../../Guide/tests_and_sub_tests/">Tests and Sub-Tests</a></li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB501.aspx">Passing Sub-Test Parameters (KB)</a></li>
 <li><a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/SpiraFriendlyWithRvlAndUserLib">Framework Example (GitHub)</a></li>
 <li><a href="https://github.com/Inflectra/rapise-framework-examples">More Framework Examples (GitHub)</a></li>
+<li><a href="../../Guide/global_objects/">Defining Global Objects</a></li>
+<li><a href="../../Guide/rvl_editor/#param-dropdowns">RVL Parameter Dropdowns</a></li>
 </ul>
                 
                   
@@ -10062,12 +10455,19 @@
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
         <script src="../../javascripts/annotations.js"></script>
       
+        <script src="../../javascripts/gifffer.min.js"></script>
+      
     
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>    
   </body>
 </html>

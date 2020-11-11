@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_5/" class="md-tabs__link">
+        <a href="../../New/6_6/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -1476,11 +1476,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-12" type="checkbox" id="nav-1-3-12">
     
     <label class="md-nav__link" for="nav-1-3-12">
-      Javascript IDE
+      JavaScript IDE
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-1-3-12">
-        Javascript IDE
+        JavaScript IDE
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1491,8 +1491,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../javascript_ide/" title="Javascript IDE" class="md-nav__link">
-      Javascript IDE
+    <a href="../javascript_ide/" title="JavaScript IDE" class="md-nav__link">
+      JavaScript IDE
     </a>
   </li>
 
@@ -1870,6 +1870,18 @@
   <li class="md-nav__item">
     <a href="../spiratest_integration/" title="Test Management" class="md-nav__link">
       Test Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../git_integration/" title="Git Integration" class="md-nav__link">
+      Git Integration
     </a>
   </li>
 
@@ -2500,18 +2512,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
-      Test Settings Dialog
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../soap_definition_editor/" title="SOAP Definition Editor" class="md-nav__link">
       SOAP Definition Editor
     </a>
@@ -2598,6 +2598,18 @@
   <li class="md-nav__item">
     <a href="../test_files_dialog/" title="Test Files View" class="md-nav__link">
       Test Files View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
+      Test Settings Dialog
     </a>
   </li>
 
@@ -3519,6 +3531,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../global_objects/" title="Defining Global Objects" class="md-nav__link">
+      Defining Global Objects
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3602,8 +3626,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../rvl_editor/" title="RVl Editor" class="md-nav__link">
-      RVl Editor
+    <a href="../rvl_editor/" title="RVL Editor" class="md-nav__link">
+      RVL Editor
     </a>
   </li>
 
@@ -9962,6 +9986,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_6/" title="Release Notes for 6.6" class="md-nav__link">
+      Release Notes for 6.6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
       Release Notes for 6.5
     </a>
@@ -10265,12 +10301,16 @@
 </ul>
 <hr />
 <ul>
-<li><strong>Ins Row</strong><ul>
+<li><strong>Ins Row</strong> (Shortcut: Ctrl+I)<ul>
 <li>RVL: Insert RVL Row before active.</li>
 </ul>
 </li>
-<li><strong>Del Row</strong> (Shortcut: Del)<ul>
+<li><strong>Del Row</strong> (Shortcut: Ctrl+D)<ul>
 <li>RVL: Delete active Row. If several rows selected then all of them are deleted.</li>
+</ul>
+</li>
+<li><strong>Params</strong> (Shortcut: Ctrl+P)<ul>
+<li>RVL: Show all parameters (including optional) for the currently edited action.</li>
 </ul>
 </li>
 </ul>
@@ -10341,8 +10381,9 @@
 <ul>
 <li><strong>Start Page</strong> - opens the Rapise <a href="../start_page/">Start Page</a>.</li>
 <li><strong>Spira Dashboard</strong> - opens <a href="../spira_dashboard/">Spira Dashboard</a>.</li>
-<li><strong>Test</strong> - opens the primary <a href="../understanding_the_script/">test script file</a> (normally MyTest.js where MyTest is the name of your test).</li>
-<li><strong>User</strong> - This opens the user functions <a href="../understanding_the_script/">script file</a> containing any user-defined testing functions (called MyTest.user.js where MyTest is the name of your test).</li>
+<li><strong>RVL</strong> - opens the <a href="../rvl_editor/">RVL editor</a>.</li>
+<li><strong>Main</strong> - opens the primary <a href="../understanding_the_script/">test script file</a> (normally <code>Main.js</code>).</li>
+<li><strong>User</strong> - This opens the user functions <a href="../understanding_the_script/">script file</a> containing any user-defined testing functions (called <code>User.js</code>).</li>
 <li>
 <p><strong>Show</strong></p>
 <p><img alt="File" src="../img/menu_view_show.png" /></p>
@@ -10379,12 +10420,14 @@
 <ul>
 <li><strong>Record</strong> - clicking Record on its own will start Rapise recording using the currently selected libraries (this is the default action).</li>
 <li><strong>Shift+Record</strong> - This brings up the library selector (shown above), and is equivalent to clicking the <strong>[] libraries</strong> button in the ribbon before starting recording.</li>
-<li><strong>Ctrl+Record</strong> - This brings up the application selector (see below) and lets you change the application and library being recorded:</li>
+<li><strong>Ctrl+Record</strong> - This brings up the application selector (see below) and lets you change the application and library being recorded.</li>
 </ul>
 </li>
 <li>
 <p><strong>Test Settings</strong> - display <a href="../settings_dialog/">test settings</a>.</p>
 </li>
+<li><strong>Open Root ......</strong> - Open the root of current test framework in this Rapise window. Only visible then we are in sub-test of any nesting level.</li>
+<li><strong>Open Parent ......</strong> - Open parent test containing this sub-test in this Rapise window. This item is only visible when parent is not yet a framework root (i.e. we have a deeply nested test case).</li>
 <li><strong>Spira Properties</strong> - opens the <a href="../spira_properties_dialog/">Spira Properties dialog</a> that allows you to see the name of the SpiraTest project and test case that the current Rapise test is linked to.</li>
 <li>
 <p><strong>Record Manual</strong></p>
@@ -10419,7 +10462,7 @@ pointer/cursor inside the image.</li>
 <h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
 <p>The <strong>Tools</strong> menu contents depend on the active editor currently open in the <a href="../content_view/">content view</a>.</p>
 <p><em>Default</em>:</p>
-<p><img alt="Default" src="/Guide/img/menu_tools.png" width="190" /></p>
+<p><img alt="Tools" src="../img/menu_tools.png" /></p>
 <p><em>Manual</em>:</p>
 <p><img alt="Manual" src="../img/menu_tools_manual.png" /></p>
 <ul>
@@ -10453,7 +10496,7 @@ related to using the Web Spy to inspect the DOM objects in web pages.</li>
 <li><strong>Java</strong> - displays the <a href="../java_awt_swing_testing/">Install Java Access Bridge</a> dialog box. Installing the Java Access Bridge lets Rapise connect to Java AWT/Swing applications so that they can be tested.</li>
 </ul>
 <h2 id="help">Help<a class="headerlink" href="#help" title="Permanent link">&para;</a></h2>
-<p><img alt="File" src="/Guide/img/menu_help.png" width="170" /></p>
+<p><img alt="Help" src="../img/menu_help.png" /></p>
 <ul>
 <li><strong>About</strong> - information about the running instance of Rapise, including the version number.</li>
 <li><strong>Activation</strong> - opens the Rapise license activation screen. This can be used to deactivate the current license so that it can be used on a different machine.</li>
@@ -10471,9 +10514,10 @@ related to using the Web Spy to inspect the DOM objects in web pages.</li>
 <li><strong>Collapse</strong> - collapse the report to show only the top level.  What is visible will depend on how the report is sorted.</li>
 <li><strong>Expand</strong> - expand all report rows.</li>
 <li><strong>Images</strong> - toggle between hiding and revealing images.</li>
+<li><strong>Export to HTML</strong> - save the report as <a href="../automated_reporting/#export_as_html_dialog">HTML document</a>.</li>
 <li><strong>Export to Excel</strong> - save the report as an Excel file.</li>
 <li><strong>Export to PDF</strong> - save the report as an Acrobat PDF file.</li>
-<li><strong>Export to PDF</strong> - save the report as <a href="https://en.wikipedia.org/wiki/Open_XML_Paper_Specification">XML Paper Specification</a> file.</li>
+<li><strong>Export to XPS</strong> - save the report as <a href="https://en.wikipedia.org/wiki/Open_XML_Paper_Specification">XML Paper Specification</a> file.</li>
 <li><strong>Choose Columns</strong> - to hide or reveal report columns.</li>
 <li><strong>Merge Cells</strong> - merge identical consecutive cells.</li>
 <li>The drop-down combo lets you choose between previously saved layouts. Selected layout is loaded using next item <strong>Load Layout</strong>.</li>
@@ -10601,12 +10645,19 @@ related to using the Web Spy to inspect the DOM objects in web pages.</li>
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
         <script src="../../javascripts/annotations.js"></script>
       
+        <script src="../../javascripts/gifffer.min.js"></script>
+      
     
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>    
   </body>
 </html>

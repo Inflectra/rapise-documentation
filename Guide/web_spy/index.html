@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_5/" class="md-tabs__link">
+        <a href="../../New/6_6/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -1594,11 +1594,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-12" type="checkbox" id="nav-1-3-12">
     
     <label class="md-nav__link" for="nav-1-3-12">
-      Javascript IDE
+      JavaScript IDE
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-1-3-12">
-        Javascript IDE
+        JavaScript IDE
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1609,8 +1609,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../javascript_ide/" title="Javascript IDE" class="md-nav__link">
-      Javascript IDE
+    <a href="../javascript_ide/" title="JavaScript IDE" class="md-nav__link">
+      JavaScript IDE
     </a>
   </li>
 
@@ -1988,6 +1988,18 @@
   <li class="md-nav__item">
     <a href="../spiratest_integration/" title="Test Management" class="md-nav__link">
       Test Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../git_integration/" title="Git Integration" class="md-nav__link">
+      Git Integration
     </a>
   </li>
 
@@ -2485,18 +2497,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
-      Test Settings Dialog
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../soap_definition_editor/" title="SOAP Definition Editor" class="md-nav__link">
       SOAP Definition Editor
     </a>
@@ -2583,6 +2583,18 @@
   <li class="md-nav__item">
     <a href="../test_files_dialog/" title="Test Files View" class="md-nav__link">
       Test Files View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
+      Test Settings Dialog
     </a>
   </li>
 
@@ -3504,6 +3516,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../global_objects/" title="Defining Global Objects" class="md-nav__link">
+      Defining Global Objects
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3587,8 +3611,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../rvl_editor/" title="RVl Editor" class="md-nav__link">
-      RVl Editor
+    <a href="../rvl_editor/" title="RVL Editor" class="md-nav__link">
+      RVL Editor
     </a>
   </li>
 
@@ -9947,6 +9971,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_6/" title="Release Notes for 6.6" class="md-nav__link">
+      Release Notes for 6.6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
       Release Notes for 6.5
     </a>
@@ -10274,6 +10310,10 @@
 <p>When you click <strong>Test</strong> it will display all of the DOM elements that match the query:</p>
 <p><img alt="web_spy_xpath2" src="../img/web_spy6.png" /></p>
 <p>You can now refine the query to only find the items you want to test.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you need to enter a non-breaking space in your search query (nbsp) you can do this by pressing <code>Shift-Space</code> key combination.</p>
+</div>
 <h3 id="using-css">Using CSS<a class="headerlink" href="#using-css" title="Permanent link">&para;</a></h3>
 <p>If you enter in the <a href="../css/">CSS</a> selector to locate the table cells in the <strong>CSS</strong> box at the top (if the box is not visible use menu <code>Spy &gt; CSS Enabled</code>).</p>
 <p><img alt="web_spy_css1" src="../img/web_spy7.png" /></p>
@@ -10397,12 +10437,19 @@
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
         <script src="../../javascripts/annotations.js"></script>
       
+        <script src="../../javascripts/gifffer.min.js"></script>
+      
     
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>    
   </body>
 </html>

@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_5/" class="md-tabs__link">
+        <a href="../../New/6_6/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -1417,6 +1417,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#using-rvl" class="md-nav__link">
+    Using RVL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#using-userjs" class="md-nav__link">
     Using User.js
   </a>
@@ -1559,11 +1566,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-12" type="checkbox" id="nav-1-3-12">
     
     <label class="md-nav__link" for="nav-1-3-12">
-      Javascript IDE
+      JavaScript IDE
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-1-3-12">
-        Javascript IDE
+        JavaScript IDE
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1574,8 +1581,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../javascript_ide/" title="Javascript IDE" class="md-nav__link">
-      Javascript IDE
+    <a href="../javascript_ide/" title="JavaScript IDE" class="md-nav__link">
+      JavaScript IDE
     </a>
   </li>
 
@@ -1953,6 +1960,18 @@
   <li class="md-nav__item">
     <a href="../spiratest_integration/" title="Test Management" class="md-nav__link">
       Test Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../git_integration/" title="Git Integration" class="md-nav__link">
+      Git Integration
     </a>
   </li>
 
@@ -2450,18 +2469,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
-      Test Settings Dialog
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../soap_definition_editor/" title="SOAP Definition Editor" class="md-nav__link">
       SOAP Definition Editor
     </a>
@@ -2548,6 +2555,18 @@
   <li class="md-nav__item">
     <a href="../test_files_dialog/" title="Test Files View" class="md-nav__link">
       Test Files View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
+      Test Settings Dialog
     </a>
   </li>
 
@@ -3469,6 +3488,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../global_objects/" title="Defining Global Objects" class="md-nav__link">
+      Defining Global Objects
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3552,8 +3583,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../rvl_editor/" title="RVl Editor" class="md-nav__link">
-      RVl Editor
+    <a href="../rvl_editor/" title="RVL Editor" class="md-nav__link">
+      RVL Editor
     </a>
   </li>
 
@@ -9912,6 +9943,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_6/" title="Release Notes for 6.6" class="md-nav__link">
+      Release Notes for 6.6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
       Release Notes for 6.5
     </a>
@@ -10067,6 +10110,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#using-rvl" class="md-nav__link">
+    Using RVL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#using-userjs" class="md-nav__link">
     Using User.js
   </a>
@@ -10120,8 +10170,11 @@
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p><strong>Global variables</strong> are variables that can be accessed anywhere in the script. </p>
 <p>There are restrictions (specific to Rapise) as to where they may be placed in the test script. These restrictions do not apply to any additional script files you write and then call from your test script.</p>
-<p>You should not place variables in the <code>Main.js</code>. Use <code>User.js</code> or any other <code>Common</code> file for that.</p>
+<p>Global variable may declared one or more times. For example, you may declare it in <a href="../../RVL/Variables/#global-variables">RVL</a> and in <em>JavaScript</em> to share the value.</p>
+<p>You should not place variables in the <code>Main.js</code>. Use RVL Sheet, <code>User.js</code> or any other <code>Common</code> file for that.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="using-rvl">Using RVL<a class="headerlink" href="#using-rvl" title="Permanent link">&para;</a></h3>
+<p>See <a href="../../RVL/Variables/#global-variables">Global Variables in RVL</a>.</p>
 <h3 id="using-userjs">Using User.js<a class="headerlink" href="#using-userjs" title="Permanent link">&para;</a></h3>
 <p>Any variable defined in the <code>User.js</code> is assumed to be a global variable.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Note, the variable should be declared outside the scope of any function to be global</span>
@@ -10252,12 +10305,19 @@ eval(File.Include(`%WORKDIR%/Common.js`))
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
         <script src="../../javascripts/annotations.js"></script>
       
+        <script src="../../javascripts/gifffer.min.js"></script>
+      
     
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>    
   </body>
 </html>

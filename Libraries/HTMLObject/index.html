@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -289,7 +289,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../New/6_5/" class="md-tabs__link">
+        <a href="../../New/6_6/" class="md-tabs__link">
           Release Notes
         </a>
       
@@ -1474,11 +1474,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-12" type="checkbox" id="nav-1-3-12">
     
     <label class="md-nav__link" for="nav-1-3-12">
-      Javascript IDE
+      JavaScript IDE
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-1-3-12">
-        Javascript IDE
+        JavaScript IDE
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1489,8 +1489,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Guide/javascript_ide/" title="Javascript IDE" class="md-nav__link">
-      Javascript IDE
+    <a href="../../Guide/javascript_ide/" title="JavaScript IDE" class="md-nav__link">
+      JavaScript IDE
     </a>
   </li>
 
@@ -1868,6 +1868,18 @@
   <li class="md-nav__item">
     <a href="../../Guide/spiratest_integration/" title="Test Management" class="md-nav__link">
       Test Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Guide/git_integration/" title="Git Integration" class="md-nav__link">
+      Git Integration
     </a>
   </li>
 
@@ -2365,18 +2377,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Guide/settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
-      Test Settings Dialog
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../Guide/soap_definition_editor/" title="SOAP Definition Editor" class="md-nav__link">
       SOAP Definition Editor
     </a>
@@ -2463,6 +2463,18 @@
   <li class="md-nav__item">
     <a href="../../Guide/test_files_dialog/" title="Test Files View" class="md-nav__link">
       Test Files View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Guide/settings_dialog/" title="Test Settings Dialog" class="md-nav__link">
+      Test Settings Dialog
     </a>
   </li>
 
@@ -3384,6 +3396,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Guide/global_objects/" title="Defining Global Objects" class="md-nav__link">
+      Defining Global Objects
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3467,8 +3491,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Guide/rvl_editor/" title="RVl Editor" class="md-nav__link">
-      RVl Editor
+    <a href="../../Guide/rvl_editor/" title="RVL Editor" class="md-nav__link">
+      RVL Editor
     </a>
   </li>
 
@@ -7468,6 +7492,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#visible" class="md-nav__link">
+    Visible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#x" class="md-nav__link">
     X
   </a>
@@ -10226,6 +10257,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_6/" title="Release Notes for 6.6" class="md-nav__link">
+      Release Notes for 6.6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_5/" title="Release Notes for 6.5" class="md-nav__link">
       Release Notes for 6.5
     </a>
@@ -10523,6 +10566,13 @@
           <li class="md-nav__item">
   <a href="#value" class="md-nav__link">
     Value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visible" class="md-nav__link">
+    Visible
   </a>
   
 </li>
@@ -10882,6 +10932,12 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="#visible">Visible</a></td>
+<td>Returns <code>true</code> if the element is visible on screen.</td>
+<td>GetVisible</td>
+<td></td>
+</tr>
+<tr>
 <td><a href="#x">X</a></td>
 <td>X-coordinate of the top left corner of the element.</td>
 <td>GetX</td>
@@ -11109,6 +11165,11 @@
 <p>Value of the element.</p>
 <p>Type: string</p>
 <p>Accessors: GetValue</p>
+<p><a name="Visible"></a></p>
+<h4 id="visible">Visible<a class="headerlink" href="#visible" title="Permanent link">&para;</a></h4>
+<p>Returns <code>true</code> if the element is visible on screen. Requires Rapise 6.6+</p>
+<p>Type: boolean</p>
+<p>Accessors: GetVisible</p>
 <p><a name="X"></a></p>
 <h4 id="x">X<a class="headerlink" href="#x" title="Permanent link">&para;</a></h4>
 <p>X-coordinate of the top left corner of the element.</p>
@@ -11192,9 +11253,36 @@
 <p><a name="DoDblClick"></a>    </p>
 <h4 id="dodblclick">DoDblClick<a class="headerlink" href="#dodblclick" title="Permanent link">&para;</a></h4>
 <p>Double-Clicks on HTML element (button, link).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoDblClick</span><span class="p">()</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">DoDblClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">forceEvent</span><span class="p">)</span> 
 </code></pre></div>
 
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional.</td>
+</tr>
+<tr>
+<td>forceEvent</td>
+<td>boolean</td>
+<td>Pass 'true' to force browser event without actual mouse click<br>Optional, Default: false.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
 <p><a name="see.also.htmlobject.dodblclick"></a></p>
@@ -11701,12 +11789,19 @@
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
         <script src="../../javascripts/annotations.js"></script>
       
+        <script src="../../javascripts/gifffer.min.js"></script>
+      
     
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>    
   </body>
 </html>
