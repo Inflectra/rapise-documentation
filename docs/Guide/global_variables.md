@@ -6,9 +6,15 @@
 
 There are restrictions (specific to Rapise) as to where they may be placed in the test script. These restrictions do not apply to any additional script files you write and then call from your test script.
 
-You should not place variables in the `Main.js`. Use `User.js` or any other `Common` file for that.
+Global variable may declared one or more times. For example, you may declare it in [RVL](../RVL/Variables.md#global-variables) and in *JavaScript* to share the value.
+
+You should not place variables in the `Main.js`. Use RVL Sheet, `User.js` or any other `Common` file for that.
 
 ## Usage
+
+### Using RVL
+
+See [Global Variables in RVL](../RVL/Variables.md#global-variables).
 
 ### Using User.js
 

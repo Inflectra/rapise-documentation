@@ -12,7 +12,26 @@ This line declares a variable without any values. Its value may be assigned late
 :--   |:--     |:--          |:--         |:--          |:--          |:--
       |**Variable**|         |            |   `MyVar1`   |             |            
 
-## Assigning
+## Local Variables
+
+By default declared variables are assumed to be local. Local variables may be used only within the current RVL script and not visible from other RVL scripts or *JavaScript* code.
+
+## Global Variables
+
+You may have a *JavaScript* variable defined in the user *Functions* file (`*.user.js`), i.e.:
+
+```javascript
+// Piece from MyTest1.user.js
+var globalVar = "Value";
+```
+
+Then in the RVL you may declare `globalVar` as global and access it (read or assign values). Declaring a variable as global is simple:
+
+*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
+:--   |:--     |:--          |:--         |:--          |:--          |:--
+      |*Variable*|           |**Global**  |`globalVar`  |             | 
+
+Global variables are useful for exchanging and/or sharing data between different RVL scripts or between *RVL* and *JavaScript*.
 
 ### Default Value for Global Variable
 
@@ -21,6 +40,8 @@ Special parameter name `defaultValue` of the Global variable definition allows s
 ![defaultValue](img/RVL_Variable_DefaultValue.png)
 
 This helps to make sheets using global variables to be executable standalone. I.e. you may use [Play This Sheet](../Guide/rvl_editor.md#context-menu) in RVL and be sure that Global variable will have a value.
+
+## Assigning
 
 ### Assignment Expression
 
@@ -75,27 +96,6 @@ Any [Action](Actions.md) may write its return value to a variable using the *Out
      | Output |            |            |             | variable   | `MyVar1`          
 
 The Output value may then be used as a param value in actions, conditions, assertions and expressions.
-
-## Local Variables
-
-By default declared variables are assumed to be local. Local variables may be used only within the current RVL script and not visible from other RVL scripts or *JavaScript* code.
-
-## Global Variables
-
-You may have a *JavaScript* variable defined in the user *Functions* file (`*.user.js`), i.e.:
-
-```javascript
-// Piece from MyTest1.user.js
-var globalVar = "Value";
-```
-
-Then in the RVL you may declare `globalVar` as global and access it (read or assign values). Declaring a variable as global is simple:
-
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      |*Variable*|           |**Global**  |`globalVar`  |             | 
-
-Global variables are useful for exchanging and/or sharing data between different RVL scripts or between *RVL* and *JavaScript*.
 
 ## Variable Actions
 
