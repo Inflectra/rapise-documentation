@@ -44,7 +44,7 @@ The test opens in the current Rapise instance. You may also open it in a new win
 
 Usual practice in Framework is to use the [Clone](../Guide/tests_and_sub_tests.md#sub-test-context-menu) feature to produce new sub-tests. So the template test is created and pre-configured (to contain right lib, functions and file references) and then replicated for each next cloned test case.
 
-![Coone](../Guide/img/framework_template_clone.png)
+![Clone](../Guide/img/framework_template_clone.png)
 
 ### Calling Other Tests
 
@@ -76,21 +76,25 @@ From RVL:
 From JS:
 [Global.DoInvokeTestParallel](../Libraries/Global.md#doinvoketestparallel)
 
-### Config.xlsx
-
-There is a [Config](../Libraries/Global.md#SetConfigPath) file, that may be used for further [Global.GetProperty](../Libraries/Global.md#getproperty) and [Global.SetProperty](/Libraries/Global/#setproperty). This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).
-
-It is also explained in [this](https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&t=534) video.
-
 ### Dropdowns.xlsx
 
 Shared Libraries and Shared Functions more powerful with pre-defined [dropdowns](../Guide/rvl_editor.md#param-dropdowns). For example, you may have a function `NavigateToModule` used across your framework and switching to an application module. Since we have fixed number of modules in the app (it may be a big number, but still fixed) we may define a dropdown list to make it easier for test creator to navigate without risk of doing a typo and without loss of time to find correct naming.
 
 ![Param Dropdown](../Guide/img/framework_dropdowns.png)
 
+### Config.xlsx
+
+There is a [Config](../Libraries/Global.md#SetConfigPath) file, that may be used for further [Global.GetProperty](../Libraries/Global.md#getproperty) and [Global.SetProperty](/Libraries/Global/#setproperty). This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).
+
+It is also explained in [this](https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&t=534) video.
+
+### Data.xlsx
+
+It is typical implement some test cases as [data driven](../Intro/ddt.md). And framework is a great place for storing the shared data files - usually `.xlsx` spreadsheets. Rapise has built in capabilities for [creating](../Guide/test_files_dialog.md#context-menu-folder) and [editing](../Guide/spreadsheet_editor.md) such spreadsheets.
+
 ### Global Objects
 
-It is useful to have one or more application specific [global object](../Guide/global_objects.md) sharing functionality needed by majority of test cases in your framework. It may anything, starting from login and navigation and up to string formatting or text validation.
+It is useful to have one or more application specific [global objects](../Guide/global_objects.md), sharing functionality needed by majority of test cases in your framework. It may do anything, starting from login and navigation and up to string formatting or text validation.
 
 ![Global Object](../Guide/img/framework_global_object.png)
 
