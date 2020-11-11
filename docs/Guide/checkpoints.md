@@ -7,7 +7,7 @@ A **Checkpoint** is defined by two things:
 1. a location in the test execution path and
 2. a subset of AUT state.  
 
-Each time the checkpoint executes, the AUT state is compared to a predefined value.  Discrepancies are noted, and may show a regression in program behavior.
+Each time the checkpoint executes, the AUT state is compared to a predefined value.  Discrepancies are noted, and may show a regression in program behavior in the test execution [report](automated_reporting.md).
 
 ## Usage
 

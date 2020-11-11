@@ -179,7 +179,7 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 
 *Default*:
 
-<img alt="Default" src="/Guide/img/menu_tools.png" width="190" />
+![Tools](./img/menu_tools.png)
 
 *Manual*:
 
@@ -216,7 +216,7 @@ related to using the Web Spy to inspect the DOM objects in web pages.
 
 ## Help
 
-<img alt="File" src="/Guide/img/menu_help.png" width="170" />
+![Help](img/menu_help.png)
 
 * **About** - information about the running instance of Rapise, including the version number.
 * **Activation** - opens the Rapise license activation screen. This can be used to deactivate the current license so that it can be used on a different machine.
@@ -237,7 +237,7 @@ The **Report** menu is available anytime you have a report (`.trp`) file visible
 * **Collapse** - collapse the report to show only the top level.  What is visible will depend on how the report is sorted.
 * **Expand** - expand all report rows.
 * **Images** - toggle between hiding and revealing images.
-* **Export to HTML** - save the report as HTML document.
+* **Export to HTML** - save the report as [HTML document](automated_reporting.md#export_as_html_dialog).
 * **Export to Excel** - save the report as an Excel file.
 * **Export to PDF** - save the report as an Acrobat PDF file.
 * **Export to XPS** - save the report as [XML Paper Specification](https://en.wikipedia.org/wiki/Open_XML_Paper_Specification) file.

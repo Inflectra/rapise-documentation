@@ -383,7 +383,7 @@ If you have a test set that contains several test cases and failure of some test
 ### Configuring RapiseLauncher
 
 RapiseLauncher installs along with the main Rapise application. It can be found in the `Start > Programs >
-Inflectra > Rapise` program folder:
+Inflectra` program folder:
 
 ![rapise launcher icon](./img/using_rapise_with_spiratest_guide46.png)
 

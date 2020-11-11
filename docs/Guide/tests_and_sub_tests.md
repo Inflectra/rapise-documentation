@@ -28,13 +28,10 @@ function Login(username, password)
 ```javascript
 function Test(params)
 {
-
    Login("validuser", "validpassword");
 
    // Now check that login is successful
-
    Tester.Assert("Login leads to welcome message: ", Global.DoWaitFor('Welcome_User'));
-
 }
 ```
 
@@ -43,13 +40,10 @@ function Test(params)
 ```javascript
 function Test(params)
 {
-
    Login("invaliduser", "invvalidpassword");
 
    // Now check that login is successfull
-
    Tester.Assert("Login leads to invalid user object: ", Global.DoWaitFor('Invalid_User'));
-
 }
 ```
 
@@ -83,7 +77,7 @@ Sub-test properties are available from the `Tag` property in the **Properties** 
 
 The following options are available in the context menu for each of the sub-tests:
 
-<img alt="sub-tests, context menu" src="/Guide/img/tests_and_sub_tests6.png" width="130" />
+![](../Guide/img/tests_and_sub_tests6.png)
 
 - **Play**: Execute selected sub-test
 - **Record**: Start recording into selected sub-test

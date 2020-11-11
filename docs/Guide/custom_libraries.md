@@ -6,7 +6,7 @@ If your application doesn't work with the predefined [Recording Libraries](recor
 
 ## Usage
 
-Your library can provide **Basic** or **Full** support for your application.  Basic support allows you to manually [Learn](object_learning.md) objects, [write test scripts](scripting.md), and [Playback](playback.md) your scripts. Full support allows you to [Record](recording.md) as well.
+Your library can provide **Basic**, **Advanced** or **Full** support for your application.  Basic support allows you to define a global object with common functionality. Advanced allows enables [Learn](object_learning.md) of application-specific object types, [write test scripts](scripting.md), and [Playback](playback.md) your scripts. Full support allows you to [Record](recording.md) as well.
 
 Create your library via `Create... > User Lib...` menu.
 
@@ -14,7 +14,11 @@ Create your library via `Create... > User Lib...` menu.
 
 ## Basic Support
 
-**Add a Matcher Rule** to the library for every window type in your application. The `SeSMatcherRule` includes information to identify your application, and a set of behaviors.
+Define one or many application-specific [Global Objects](../Guide/global_objects.md).
+
+## Advanced Support
+
+**Add a Matcher Rule** to the library for every object type in your application. The `SeSMatcherRule` includes information to identify the object and a set of behaviors.
 
 ```javascript
 var *yourApplicationRule* = new SeSMatcherRule(
@@ -78,6 +82,11 @@ Otherwise, you will have to implement **Custom Recording**.
 ## See Also
 
 - [Tutorial: Custom Library](tutorial_custom_library.md)
+
+- [Another Example of Creating a Custom Library](https://www.inflectra.com/Ideas/Entry/techtuesday-automated-testing-of-complex-web-ui-co-479.aspx)
+
 - To see what actions and events can be overridden, see **SeSBehavior.js** (in the Rapise [Engine)](customizable_engine.md).
-- Check the **Engine/Lib** directory for examples.
+  
+- Check the **C:\Program Files(x86)\Inflectra\Rapise\Engine\Lib** directory as an example of rapise core libraries.
+
 - You can alter the behavior of an action without creating an entire library.  See the [Actions](actions.md) section for more details.
