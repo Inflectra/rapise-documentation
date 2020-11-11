@@ -54,6 +54,7 @@ theme:
 extra_javascript:
   - javascripts/jquery-1.10.2.min.js
   - javascripts/annotations.js
+  - javascripts/gifffer.min.js
 
 extra:
   social:
