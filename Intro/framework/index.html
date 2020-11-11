@@ -10313,8 +10313,9 @@
                 <h1 id="how-to-build-a-test-framework-with-rapise">How to Build a Test Framework with Rapise<a class="headerlink" href="#how-to-build-a-test-framework-with-rapise" title="Permanent link">&para;</a></h1>
 <p>Need to call one test from another? Need to run many tests? Have a test plan? It is time to build a testing framework. Learn how to do it with Rapise.</p>
 <h2 id="how-framework-tests-are-structured">How Framework Tests Are Structured<a class="headerlink" href="#how-framework-tests-are-structured" title="Permanent link">&para;</a></h2>
-<p>The Framework in Rapise is a regular test (<strong>Framework Root</strong>) containing a number of <a href="../../Guide/tests_and_sub_tests/">Sub-Tests</a> (<strong>Test Cases</strong>, <strong>Scenarios</strong> and <strong>Common Features</strong>)</p>
+<p>The Framework in Rapise is a regular test (<strong>Framework Root</strong>) containing a number of <a href="../../Guide/tests_and_sub_tests/">Sub-Tests</a> (<strong>Test Cases</strong> and <strong>Common Features</strong>)</p>
 <p><img alt="Framework" src="../../Guide/img/framework_overview.png" /></p>
+<p>Where <strong>Test Cases</strong> are final test scenarios and <strong>Common Features</strong> are parts that are re-used and shared between the test cases.</p>
 <p>When working with framework, the variable <a href="../../Guide/tests_and_sub_tests/#workdir-and-frameworks">%WORKDIR%</a> always points to the root test case. This helps to find all common assets and files. For example, we always know that we may call <code>Common Feature1.sstest</code> using path <code>%WORKDIR%\Common Feature1\Common Feature1.sstest</code>. So we may call it from any other test case, from other common feature, from library and so on.</p>
 <p>Also the same is true for accessing common <a href="../../Libraries/Global/#SetConfigPath">config</a> and data files. I.e.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SetConfigPath</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%\\Config.xlsx&#39;</span><span class="p">)</span>
