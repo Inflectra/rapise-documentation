@@ -153,9 +153,11 @@ The **Test** menu contents depend on the active editor currently open in the [co
 
     * **Record** - clicking Record on its own will start Rapise recording using the currently selected libraries (this is the default action).
     * **Shift+Record** - This brings up the library selector (shown above), and is equivalent to clicking the **[] libraries** button in the ribbon before starting recording.
-    * **Ctrl+Record** - This brings up the application selector (see below) and lets you change the application and library being recorded:
+    * **Ctrl+Record** - This brings up the application selector (see below) and lets you change the application and library being recorded.
 
 * **Test Settings** - display [test settings](settings_dialog.md).
+* **Open Root ......** - Open the root of current test framework in this Rapise window. Only visible then we are in sub-test of any nesting level.
+* **Open Parent ......** - Open parent test containing this sub-test in this Rapise window. This item is only visible when parent is not yet a framework root (i.e. we have a deeply nested test case).
 * **Spira Properties** - opens the [Spira Properties dialog](spira_properties_dialog.md) that allows you to see the name of the SpiraTest project and test case that the current Rapise test is linked to.
 * **Record Manual**
     * Manual: start the [Select Application to Record](select_an_application_to_record_dialog.md) dialog box. This dialog box is the same one that you'll use for automated testing, however when you click through the application under test it will record [manual test steps](manual_test_editor.md) instead of automated script code.
