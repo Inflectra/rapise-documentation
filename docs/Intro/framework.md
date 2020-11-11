@@ -4,9 +4,11 @@ Need to call one test from another? Need to run many tests? Have a test plan? It
 
 ## How Framework Tests Are Structured
 
-The Framework in Rapise is a regular test (**Framework Root**) containing a number of [Sub-Tests](../Guide/tests_and_sub_tests.md) (**Test Cases**, **Scenarios** and **Common Features**)
+The Framework in Rapise is a regular test (**Framework Root**) containing a number of [Sub-Tests](../Guide/tests_and_sub_tests.md) (**Test Cases** and **Common Features**)
 
 ![Framework](../Guide/img/framework_overview.png)
+
+Where **Test Cases** are final test scenarios and **Common Features** are parts that are re-used and shared between the test cases.
 
 When working with framework, the variable [%WORKDIR%](../Guide/tests_and_sub_tests.md#workdir-and-frameworks) always points to the root test case. This helps to find all common assets and files. For example, we always know that we may call `Common Feature1.sstest` using path `%WORKDIR%\Common Feature1\Common Feature1.sstest`. So we may call it from any other test case, from other common feature, from library and so on.
 
