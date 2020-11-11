@@ -10071,6 +10071,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dropdownsxlsx" class="md-nav__link">
+    Dropdowns.xlsx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#configxlsx" class="md-nav__link">
     Config.xlsx
   </a>
@@ -10078,8 +10085,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dropdownsxlsx" class="md-nav__link">
-    Dropdowns.xlsx
+  <a href="#dataxlsx" class="md-nav__link">
+    Data.xlsx
   </a>
   
 </li>
@@ -10233,6 +10240,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dropdownsxlsx" class="md-nav__link">
+    Dropdowns.xlsx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#configxlsx" class="md-nav__link">
     Config.xlsx
   </a>
@@ -10240,8 +10254,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dropdownsxlsx" class="md-nav__link">
-    Dropdowns.xlsx
+  <a href="#dataxlsx" class="md-nav__link">
+    Data.xlsx
   </a>
   
 </li>
@@ -10336,7 +10350,7 @@
 <p>The test opens in the current Rapise instance. You may also open it in a new window using the <strong>Open in New Rapise Window...</strong> command from the  <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">Context Menu</a>.</p>
 <h3 id="template-test-case-and-clone">Template Test Case and Clone<a class="headerlink" href="#template-test-case-and-clone" title="Permanent link">&para;</a></h3>
 <p>Usual practice in Framework is to use the <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">Clone</a> feature to produce new sub-tests. So the template test is created and pre-configured (to contain right lib, functions and file references) and then replicated for each next cloned test case.</p>
-<p><img alt="Coone" src="../../Guide/img/framework_template_clone.png" /></p>
+<p><img alt="Clone" src="../../Guide/img/framework_template_clone.png" /></p>
 <h3 id="calling-other-tests">Calling Other Tests<a class="headerlink" href="#calling-other-tests" title="Permanent link">&para;</a></h3>
 <p>There is a number of ways to call one sub test from another. Usually the test representing a scenario calls another test representing common routine or shared step. It is possible to pass some parameters to the called sub-test.</p>
 <blockquote>
@@ -10356,14 +10370,16 @@
 <a href="../../Libraries/RVL/#doplaytestparallel">RVL.DoPlayTestParallel</a></p>
 <p>From JS:
 <a href="../../Libraries/Global/#doinvoketestparallel">Global.DoInvokeTestParallel</a></p>
-<h3 id="configxlsx">Config.xlsx<a class="headerlink" href="#configxlsx" title="Permanent link">&para;</a></h3>
-<p>There is a <a href="../../Libraries/Global/#SetConfigPath">Config</a> file, that may be used for further <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a> and <a href="/Libraries/Global/#setproperty">Global.SetProperty</a>. This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).</p>
-<p>It is also explained in <a href="https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&amp;t=534">this</a> video.</p>
 <h3 id="dropdownsxlsx">Dropdowns.xlsx<a class="headerlink" href="#dropdownsxlsx" title="Permanent link">&para;</a></h3>
 <p>Shared Libraries and Shared Functions more powerful with pre-defined <a href="../../Guide/rvl_editor/#param-dropdowns">dropdowns</a>. For example, you may have a function <code>NavigateToModule</code> used across your framework and switching to an application module. Since we have fixed number of modules in the app (it may be a big number, but still fixed) we may define a dropdown list to make it easier for test creator to navigate without risk of doing a typo and without loss of time to find correct naming.</p>
 <p><img alt="Param Dropdown" src="../../Guide/img/framework_dropdowns.png" /></p>
+<h3 id="configxlsx">Config.xlsx<a class="headerlink" href="#configxlsx" title="Permanent link">&para;</a></h3>
+<p>There is a <a href="../../Libraries/Global/#SetConfigPath">Config</a> file, that may be used for further <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a> and <a href="/Libraries/Global/#setproperty">Global.SetProperty</a>. This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).</p>
+<p>It is also explained in <a href="https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&amp;t=534">this</a> video.</p>
+<h3 id="dataxlsx">Data.xlsx<a class="headerlink" href="#dataxlsx" title="Permanent link">&para;</a></h3>
+<p>It is typical implement some test cases as <a href="../ddt/">data driven</a>. And framework is a great place for storing the shared data files - usually <code>.xlsx</code> spreadsheets. Rapise has built in capabilities for <a href="../../Guide/test_files_dialog/#context-menu-folder">creating</a> and <a href="../../Guide/spreadsheet_editor/">editing</a> such spreadsheets.</p>
 <h3 id="global-objects">Global Objects<a class="headerlink" href="#global-objects" title="Permanent link">&para;</a></h3>
-<p>It is useful to have one or more application specific <a href="../../Guide/global_objects/">global object</a> sharing functionality needed by majority of test cases in your framework. It may anything, starting from login and navigation and up to string formatting or text validation.</p>
+<p>It is useful to have one or more application specific <a href="../../Guide/global_objects/">global objects</a>, sharing functionality needed by majority of test cases in your framework. It may do anything, starting from login and navigation and up to string formatting or text validation.</p>
 <p><img alt="Global Object" src="../../Guide/img/framework_global_object.png" /></p>
 <h3 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h3>
 <p>One may define a <a href="../../Guide/custom_libraries/">custom library</a> containing common functions, global objects or even rules for <a href="../../Guide/playback/">test playback</a>, <a href="../../Guide/object_learning/">object learning</a> and <a href="../../Guide/recording/">test recording</a>.</p>
