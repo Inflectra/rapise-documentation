@@ -142,8 +142,8 @@ nav:
             - 'Customizable Engine': 'Guide/customizable_engine.md'
             - 'Scenarios': 'Guide/scenarios.md'
             - 'Checkpoints': 'Guide/checkpoints.md'
-        - 'Javascript IDE':
-            - 'Javascript IDE': 'Guide/javascript_ide.md'
+        - 'JavaScript IDE':
+            - 'JavaScript IDE': 'Guide/javascript_ide.md'
             - 'Internal Debugger':
                 - 'Internal Debugger': 'Guide/internal_debugger.md'
                 - 'Tooltips': 'Guide/tooltips.md'
@@ -171,6 +171,7 @@ nav:
             - 'Convert Functional to Load Test': 'Guide/convert_functional_to_load_tes.md'
             - 'Client Performance Monitoring': 'Guide/client_performance_monitoring.md'
         - 'Test Management': 'Guide/spiratest_integration.md'
+        - 'Git Integration': 'Guide/git_integration.md'
     - 'Dialogs, Views, and Menus':
         - 'Dialogs, Views, and Menus': 'Guide/dialogs_views_menus.md'
         - 'A - I':
