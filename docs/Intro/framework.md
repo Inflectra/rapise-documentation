@@ -118,6 +118,7 @@ For web tests the [WebAppProfile](../Guide/web_app_profile.md) may greatly impro
 
 ## See Also
 
+- [Framework for Testing Web Applications with Rapise (video)](https://youtu.be/zROIrQs8tP0)
 - [Tests and Sub-Tests](../Guide/tests_and_sub_tests.md)
 - [Passing Sub-Test Parameters (KB)](https://www.inflectra.com/Support/KnowledgeBase/KB501.aspx)
 - [Framework Example (GitHub)](https://github.com/Inflectra/rapise-framework-examples/tree/master/SpiraFriendlyWithRvlAndUserLib)
