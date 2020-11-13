@@ -1,4 +1,4 @@
-# Main Menu
+# Main Menu and Toolbars
 
 ![Main Menu Bar](./img/menubar.png)
 
