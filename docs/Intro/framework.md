@@ -40,6 +40,8 @@ The `Files` [view](../Guide/test_files_dialog.md) shows all nested sub-tests. Yo
 
 The test opens in the current Rapise instance. You may also open it in a new window using the **Open in New Rapise Window...** command from the  [Context Menu](../Guide/tests_and_sub_tests.md#sub-test-context-menu).
 
+You may then switch back to parent test or framework root by using **Test/Open Root ......** and **Test/Open Parent .....** [menu items](../Guide/menu_and_toolbars.md#test).
+
 ### Template Test Case and Clone
 
 Usual practice in Framework is to use the [Clone](../Guide/tests_and_sub_tests.md#sub-test-context-menu) feature to produce new sub-tests. So the template test is created and pre-configured (to contain right lib, functions and file references) and then replicated for each next cloned test case.
