@@ -4,6 +4,28 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ## Series
 
+### InflectraCon 2020
+
+#### Workshops
+
+- [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nurTKaaxQpvMws-He3aznPM)
+- [From Manual to Automated Testing](https://youtu.be/9mM2T5WBsjU)
+- [Starting Your Automation Journey](https://youtu.be/QQ6_-xhqD-A)
+- [Framework for Testing Web Applications with Rapise](https://youtu.be/zROIrQs8tP0)
+- [Automating Web UI Testing](https://youtu.be/wpeE8rUYDO0)
+- [Automating Desktop UI Testing (Part 1)](https://youtu.be/3-zlZk2sRB4)
+- [Automating Desktop UI Testing (Part 2)](https://youtu.be/0UNYnHjuUNo)
+- [Automating Desktop UI Testing (Part 3)](https://youtu.be/nXJNr9RvjXI)
+- [Automating Mobile UI Testing](https://youtu.be/pCOMHF1l-LU)
+
+#### Advanced Topics
+
+- [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5ntxsfThnzrxpOtm9d0tpHYU)
+- [25 Tips and Tricks of Using Rapise](https://youtu.be/54aJDS8sUKU)
+- [Scriptless, Codeless, Visual](https://youtu.be/jFnZeYG7m9A)
+- [How to Benefit From Self-Healing Locators](https://youtu.be/ulgL-RnGuHo)
+- [Web Recorder Configuration in Rapise](https://youtu.be/Ha3an86-Elg)
+
 ### Test Automation Demystified
 
 [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nsHW149TNZaH-njldo-aWwS)

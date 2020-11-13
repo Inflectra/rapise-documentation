@@ -2,6 +2,9 @@
 
 Each web application is unique in terms of assigning attributes to elements and this complicates the process of generating XPath locators. Some applications assign dynamic IDs to elements, some use ARIA attributes and some do not, some values of class attribute have meaning related to element position and some just used for element styling. There are also cases when an app contains hidden DOM layers which stack on top of each other. So usage of same set of attributes for generating XPath is not efficient and may lead to weak locators that break after application reloading or slight modification. To cope with these problems Rapise introduces Web App Profile. It is a simple JSON file of a defined structure that instructs Rapise how to build XPath for elements in a particular application. From this topic you will learn how to define a profile for your web application.
 
+!!! note
+    In some cases we refer to Web Application Profile as Web Recorder Configuration. These terms are synonyms.
+
 ## Purpose of WebAppProfile
 
 `WebAppProfile` serves as an instruction to Rapise on how to record XPath locators for elements in a given application.
@@ -241,5 +244,7 @@ that may easily become broken with page layout changes.
 
 ## See Also
 
+- [Web Recorder Configuration Intro (video)](https://youtu.be/v8UmALPdJIU)
+- [Web Recorder Configuration in Rapise (video)](https://youtu.be/Ha3an86-Elg)
 - [Web Testing](web_testing.md)
 - [Self-healing Web Locators](web_self_healing.md)

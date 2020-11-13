@@ -101,5 +101,6 @@ g_aiFirstAttemptNumber = 21;
 
 ## See Also
 
+- [How to Benefit From Self-Healing Locators (video)](https://youtu.be/ulgL-RnGuHo)
 - [Web Testing](web_testing.md)
-- [Web Application Profile](web_app_profile.md)
+- [Web Application Profile (aka Web Recorder Configuration)](web_app_profile.md)
