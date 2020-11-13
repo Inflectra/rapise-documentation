@@ -2137,8 +2137,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../menu_and_toolbars/" title="Main Menu" class="md-nav__link">
-      Main Menu
+    <a href="../menu_and_toolbars/" title="Main Menu and Toolbars" class="md-nav__link">
+      Main Menu and Toolbars
     </a>
   </li>
 
@@ -10812,6 +10812,7 @@ Inflectra</code> program folder:</p>
 <li><strong>-trace</strong> enables tracelogging to the EventLog for debugging and watching tests execute.</li>
 <li><strong>-testset:[Test Set ID]</strong> allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. <strong>-testset:45</strong> runs test set <code>TX00045</code>).</li>
 <li><strong>-project:[Project ID]</strong> allows you to tell RapiseLauncher which project the test set specified with the <strong>-testset</strong> argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).</li>
+<li><strong>-config:[Path to RepositoryConnection.xml]</strong> allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create <code>RapositoryConnection.xml</code> on you dev host (by setting the confguration using standard settings dialog), and then copy the configured file from <code>C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml</code> to your source tree and pass it using this parameter.</li>
 <li><strong>filename</strong> must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution on. Optional.</li>
 </ul>
 <h3 id="record-playback-videos">Record Playback Videos<a class="headerlink" href="#record-playback-videos" title="Permanent link">&para;</a></h3>
