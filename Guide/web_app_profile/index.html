@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
     
     
       
@@ -10196,6 +10196,10 @@
                 
                 <h1 id="web-application-profile">Web Application Profile<a class="headerlink" href="#web-application-profile" title="Permanent link">&para;</a></h1>
 <p>Each web application is unique in terms of assigning attributes to elements and this complicates the process of generating XPath locators. Some applications assign dynamic IDs to elements, some use ARIA attributes and some do not, some values of class attribute have meaning related to element position and some just used for element styling. There are also cases when an app contains hidden DOM layers which stack on top of each other. So usage of same set of attributes for generating XPath is not efficient and may lead to weak locators that break after application reloading or slight modification. To cope with these problems Rapise introduces Web App Profile. It is a simple JSON file of a defined structure that instructs Rapise how to build XPath for elements in a particular application. From this topic you will learn how to define a profile for your web application.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some cases we refer to Web Application Profile as Web Recorder Configuration. These terms are synonyms.</p>
+</div>
 <h2 id="purpose-of-webappprofile">Purpose of WebAppProfile<a class="headerlink" href="#purpose-of-webappprofile" title="Permanent link">&para;</a></h2>
 <p><code>WebAppProfile</code> serves as an instruction to Rapise on how to record XPath locators for elements in a given application.</p>
 <p><code>WebAppProfile</code> addresses one of the challenges in web UI test automation: generation of resilient XPath locators during test recording.</p>
@@ -10400,6 +10404,8 @@
 <p>that may easily become broken with page layout changes.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
+<li><a href="https://youtu.be/v8UmALPdJIU">Web Recorder Configuration Intro (video)</a></li>
+<li><a href="https://youtu.be/Ha3an86-Elg">Web Recorder Configuration in Rapise (video)</a></li>
 <li><a href="../web_testing/">Web Testing</a></li>
 <li><a href="../web_self_healing/">Self-healing Web Locators</a></li>
 </ul>
@@ -10490,7 +10496,7 @@
     
       <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:"../.."}})</script>
       
         <script src="../../javascripts/jquery-1.10.2.min.js"></script>
       
