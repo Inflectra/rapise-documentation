@@ -9887,6 +9887,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#run-tests-on-azure-and-report-to-spira" class="md-nav__link">
+    Run Tests on Azure and Report to Spira
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -10369,6 +10376,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#run-tests-on-azure-and-report-to-spira" class="md-nav__link">
+    Run Tests on Azure and Report to Spira
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -10620,6 +10634,41 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
 <p>Let's assume we want to run same set of tests on different versions of browsers. Here is the example.</p>
 <details class="example"><summary>Multiplier Configuration</summary><p><img alt="Multiplier" src="../img/azure_pipeline_multiplier.png" />
 <img alt="Configuration" src="../img/azure_pipeline_multi_configuration.png" /></p>
+</details>
+<h2 id="run-tests-on-azure-and-report-to-spira">Run Tests on Azure and Report to Spira<a class="headerlink" href="#run-tests-on-azure-and-report-to-spira" title="Permanent link">&para;</a></h2>
+<p>If you plan to use Azure VMs to run tests and want to see the results in Spira check out this section. In the pipeline you need at least three steps:</p>
+<ul>
+<li>Get tests from Git repository</li>
+<li><a href="#rapise-installation-task">Install Rapise</a></li>
+<li>Run a Test Set defined in Spira (see below)</li>
+</ul>
+<p>To run a test set you need a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/command-line">Command line task</a>. This task should run RapiseLauncher with parameters:</p>
+<ul>
+<li>-config:[path to <a href="/Guide/spiratest_integration/#command-line-arguments">RepositoryConnection.xml</a>]</li>
+<li>-project:[project id]</li>
+<li>-testset: [\test set id]</li>
+<li>-minimized</li>
+</ul>
+<p>Also set a GITROOT environment variable. It should point to the root of the Git repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tests must be <a href="/Guide/git_integration/#linking-new-test-to-spira">linked to Spira Test Cases</a></p>
+</div>
+<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/azure_pipeline_spira.png" /></p>
+</details>
+<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+<span class="l l-Scalar l-Scalar-Plain">echo Running  TX139</span>
+
+<span class="s">&quot;c:\Program</span><span class="nv"> </span><span class="s">Files</span><span class="nv"> </span><span class="s">(x86)</span><span class="err">\</span><span class="s">Inflectra</span><span class="err">\</span><span class="s">Rapise\bin</span><span class="err">\</span><span class="s">RapiseLauncher.exe&quot;</span> <span class="l l-Scalar l-Scalar-Plain">-config:.\GitDemo\RepositoryConnection.xml -project:90 -testset:139 -minimized</span>
+
+<span class="l l-Scalar l-Scalar-Plain">echo Done</span>
+
+<span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Run</span><span class="nv"> </span><span class="s">TX139&#39;</span>
+<span class="nt">env</span><span class="p">:</span>
+    <span class="nt">GITROOT</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(Build.SourcesDirectory)</span>
+</code></pre></div>
+
 </details>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
