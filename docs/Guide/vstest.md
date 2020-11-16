@@ -312,6 +312,7 @@ Let's assume we want to run same set of tests on different versions of browsers.
 
 ## See Also
 
+- [Demo of Azure DevOps Integration (video)](https://www.youtube.com/watch?v=BIgOIxkZ5Hk&t=507s)
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
 - [Rapise.TestAdapter on GitHub](https://github.com/Inflectra/rapise-testadapter)
 - [Rapise.TestAdapter NuGet package](https://www.nuget.org/packages/Rapise.TestAdapter/)

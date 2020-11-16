@@ -147,5 +147,6 @@ For example, if the pipeline checks the sources to `c:\Build` folder from the **
 
 ## See Also
 
+* [Demo of Git Integration (video)](https://www.youtube.com/watch?v=BIgOIxkZ5Hk&t=25s)
 * [Framework](..\Intro\framework.md)
 * [Spira Integration](spiratest_integration.md)
