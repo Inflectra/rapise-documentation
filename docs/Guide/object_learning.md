@@ -18,7 +18,7 @@ During a Recording session, Rapise learns about each object with which you inter
 
 1. Open the **Recording Activity Dialog**. Instructions are [HERE](recording_activity_dialog.md).
 2. Place your mouse over the object you wish to learn.  It should become surrounded by a purple box.
-3. Press `CTRL+2`.
+3. Press ++ctrl+2++.
 4. You will see a new entry in the Recording Activity Dialog, signifying that the object was learned.
 
 ## 3. Spy Tool

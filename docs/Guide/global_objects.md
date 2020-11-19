@@ -116,7 +116,7 @@ _paramInfoMyApp_Login = {
 
 ### Compile Metadata
 
-When the object is declared you need to compile the metadata for it. To do this open the file where you defined the object and press `Ctrl-Shift-F5`.
+When the object is declared you need to compile the metadata for it. To do this open the file where you defined the object and press ++ctrl+shift+f5++.
 
 ### Object Icons
 

@@ -19,8 +19,8 @@ Now you can check the boxes of the additional libraries you want to use (or remo
 In addition, there are a couple of shortcuts that you may want to use:
 
 - **Record** - clicking Record on its own will start Rapise recording using the current selected libraries (this is the default action)
-- **Shift+Record** - This brings up the library selector (shown above), and is equivalent to clicking the `Tools > Libraries` in the menu before starting recording.
-- **CTRL+Record** - This brings up the application selector (see below) and lets you change the application and library being recorded:
+- ++shift++ + **Record** - This brings up the library selector (shown above), and is equivalent to clicking the `Tools > Libraries` in the menu before starting recording.
+- ++ctrl++ + **Record** - This brings up the application selector (see below) and lets you change the application and library being recorded:
   
     ![select an application to record dialog, select application table](./img/change_the_libraries_being_use3.png)
 

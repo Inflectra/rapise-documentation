@@ -26,7 +26,7 @@ If you don't see **all three of these files** then it means the bridge was not i
 
 ## Troubleshooting the Configuration
 
-To help you make sure that your environment is correctly setup and also to help you try out Rapise, we have a sample application called AUTJava (AUT = **A**pplication **U**nder **T**est) that can be found in the folder:
+To help you make sure that your environment is correctly setup and also to help you try out Rapise, we have a sample application called AUTJava (AUT = <b>A</b>pplication <b>U</b>nder <b>T</b>est) that can be found in the folder:
 
 `C:\Users\Public\Documents\Rapise\Samples\Java\AUTJAVA`
 
@@ -59,7 +59,7 @@ To verify that Rapise is configured correctly, click on the SPY menu in Rapise a
 Then click on the main **Spy** icon and the Java Spy will start up:
 ![Spy1](./img/java_awt_swing_testing5.png)
 
-Click the CTRL+G button combination to start tracking and then move the mouse over one of the buttons in the sample application and click CTRL+G again.
+Click the ++ctrl+g++ button combination to start tracking and then move the mouse over one of the buttons in the sample application and click ++ctrl+g++ again.
 You should see the following:
 
 ![Spy2-Good](./img/java_awt_swing_testing6.png)

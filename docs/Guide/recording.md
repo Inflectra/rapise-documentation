@@ -22,7 +22,7 @@ If you record an incorrect action, you can right-click on the action and delete 
 
 To ensure you successfully record your interaction with the AUT, navigate slowly through the AUT.  Wait a second or two between each action to make sure Rapise has time to interpret and record your action. Once your interaction is updated in the RA dialog grid, you are free to continue with the next action.
 
-When you are done recording, press the `Finish` button on the RA dialog or type `Ctrl+3`.  The RA dialog will disappear, and you will see an automatically generated script opened in Rapise.
+When you are done recording, press the `Finish` button on the RA dialog or type ++ctrl+3++.  The RA dialog will disappear, and you will see an automatically generated script opened in Rapise.
 
 For **Mobile Testing**, you will need to use the `Spy` button which then allows you to pick a specific object from the [Mobile Spy](../object_spy_mobile/):
 

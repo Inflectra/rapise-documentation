@@ -16,7 +16,7 @@ The Web Spy toolbar provides the following tools:
 
 ![web_spy_toolbar](./img/web_spy2.png)
 
-- **Get Snapshot (Ctrl-G):** Clicking on this command will refresh the contents of the DOM Tree. This should be done whenever a change is made to the state of the web page in the web browser and you want to view how the DOM objects have been changed after the change.
+- **Get Snapshot (Ctrl+G):** Clicking on this command will refresh the contents of the DOM Tree. This should be done whenever a change is made to the state of the web page in the web browser and you want to view how the DOM objects have been changed after the change.
 - **Track (Ctrl+T):** This tool lets you select items in the web application as rendered by the web browser and have the corresponding object be selected in the DOM tree window. This is useful if you are not sure where an item is located in the DOM tree but you can see it in the browser.
 - **Learn:** Clicking on this tool lets you take the currently selected object and add it to the [Object Tree](object_tree.md) for the current test. It can then be used as a scriptable object in the test script. When you click on the Learn button, you have the choice (in the dropdown list) of learning the object in terms of either its **XPath** or **CSS** properties.
 - **XPath:** This field is described separately below in the **Test Results** section. These tool allow you to try out different XPATH queries to see which objects match. You can then Learn the results of these queries as new Rapise objects.
@@ -39,9 +39,9 @@ More tools available in the menu.
 
 ## Spy Shortcuts
 
-- `Ctrl-G` - reload the DOM tree from the active page in the browser.
-- `Ctrl-T` - start/stop tracking mode to locate the element in the DOM tree.
-- `Ctrl-Shift-T` - save snapshot of the DOM tree. When the shortcut is pressed Rapise prompts for a name and saves the DOM tree in XML format and the screenshot of the browser window in PNG format.
+- ++ctrl+g++ - reload the DOM tree from the active page in the browser.
+- ++ctrl+t++ - start/stop tracking mode to locate the element in the DOM tree.
+- ++ctrl+shift+t++ - save snapshot of the DOM tree. When the shortcut is pressed Rapise prompts for a name and saves the DOM tree in XML format and the screenshot of the browser window in PNG format.
 
 ## DOM Tree
 
@@ -108,7 +108,7 @@ When you click **Test** it will display all of the DOM elements that match the q
 You can now refine the query to only find the items you want to test.
 
 !!! note
-    If you need to enter a non-breaking space in your search query (nbsp) you can do this by pressing `Shift-Space` key combination.
+    If you need to enter a non-breaking space in your search query (nbsp) you can do this by pressing ++shift+space++ key combination.
 
 ### Using CSS
 

@@ -29,9 +29,9 @@ For more details on each Spy type, refer to specific topic above.
 
 Open the **Spy Dialog**.  This can be done directly using the **Spy** button in the main Rapise [toolbar](menu_and_toolbars.md), or by pressing the **Spy** button in the [Recording Activity](recording_activity_dialog.md) dialog during recording or learning.
 
-1. Click the **Start Tracking** button (or press `CTRL+G` (or `CTRL+T` in Web Spy).
+1. Click the **Start Tracking** button (or press ++ctrl+g++ (or ++ctrl+t++ in Web Spy).
 2. As your mouse moves over different objects, you will see the contents of the Object Spy dialog change as it collects information about the object.
-3. Mouse over the object you wish to spy on and press `CTRL+G`.  The reduced-size tracking dialog will be expanded into the the larger [Object Spy Dialog](ses_spy_dialog.md), presenting all the available information for the object.
+3. Mouse over the object you wish to spy on and press ++ctrl+g++.  The reduced-size tracking dialog will be expanded into the the larger [Object Spy Dialog](ses_spy_dialog.md), presenting all the available information for the object.
 
 ## See Also
 

@@ -14,7 +14,7 @@ The source code is in the **Engine** directory.  You'll find the [recording](re
 
 > **Note:** If you plan to make changes to the Rapise Engine, we recommend you use a version control system capable of reconciling code conflicts, as we do not support user customizations.  However, let us know if you feel that your customizations are generally useful; if we decide to integrate them into Rapise, we will support them.
 
-To add Engine to any of your tests use `CTRL+SHIFT+E` shortcut.
+To add Engine to any of your tests use ++ctrl+shift+e++ shortcut.
 
 ![engine collapsed](./img/customizable_engine_collapsed.png)
 

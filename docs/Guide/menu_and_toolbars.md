@@ -263,11 +263,11 @@ The **Debugger** menu and [toolbar](#debugger-toolbar) is available while the [j
 
 then [Play](playback.md) your script.  
 
-* **Continue** (F5) - continue executing the script.
-* **Step In** (F11) - step into a function/procedure.
-* **Step Out** (Shift+F11) - continue until the current procedure is exited.
-* **Step Over** (F10) - go to the next line in the current procedure/function.
-* **Stop Debugger** (Shift+F5) - stop executing the script and exit the debugger.
+* **Continue** ++f5++ - continue executing the script.
+* **Step In** ++f11++ - step into a function/procedure.
+* **Step Out** ++shift+f11++ - continue until the current procedure is exited.
+* **Step Over** ++f10++ - go to the next line in the current procedure/function.
+* **Stop Debugger** ++shift+f5++ - stop executing the script and exit the debugger.
 
 ## Main Toolbar
 

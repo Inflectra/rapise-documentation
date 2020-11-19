@@ -125,6 +125,10 @@ popd
 
 ### Checkout By RapiseLauncher
 
+There are two ways on telling **RapiseLauncher** where the origin from which **Git** is supposed to do a checkout: using Spira custom properties or using system environment variables.
+
+#### Using Spira Custom Properties
+
 In this case, you need to add custom fields to the Test Set definition in **Spira**:
 
 ![Spira TS Fields](img/git_integration_git_tsprops.png)
@@ -138,6 +142,13 @@ In this case, you need to add custom fields to the Test Set definition in **Spir
 * **GitBranch** - optional. You link test case to specific branch instead of default `master` branch.
 
 * **GitRoot** - optional. Target folder for checkout. If empty or absent, default Rapise Launcher temp folder is used.
+
+#### Using System Environment Variables
+In this case you may have only one checkout source for all test sets executed by **RapiseLauncher** on the given host. It is fine if your host is dedicated to run tests from specific repository and is a bit easier to set up. 
+
+In this case you need to define system variables named exactly the same as corresponding custom properties described in the previous block: **GitUrl**, **GitUser**, **GitPassword**, **GitBranch**, **GitRoot**. All but **GitUrl** are optional.
+
+When both Environment Variable and Spira Custom Property are defined and custom property value is non-empty, then Custom Property's value is used.
 
 ### Checkout Externally
 

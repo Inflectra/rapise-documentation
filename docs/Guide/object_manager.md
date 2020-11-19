@@ -65,7 +65,7 @@ Conversely, to remove an object (e.g. **Hound of the Baskervilles**) from the de
 
 ![object_manager_merge3](./img/object_manager9.png)
 
-Then click on the '**Remove from Destination (Ctrl+D)'**:
+Then click on the '**Remove from Destination (++ctrl+d++)'**:
 
 ![object_manager_merge4](./img/object_manager10.png)
 

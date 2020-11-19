@@ -76,7 +76,7 @@ You should now be on the main menu of the Library Information System with the us
 
 ![tutorial, demo, main menu](./img/tutorial_record_and_playback14.png)
 
-Hover the mouse over the “Welcome **librarian**” username label on the top-right and press `CTRL+1` to bring up the Verify dialog box:
+Hover the mouse over the “Welcome **librarian**” username label on the top-right and press ++ctrl+1++ to bring up the Verify dialog box:
 
 ![verify object properties dialog](./img/tutorial_record_and_playback15.png)
 
@@ -124,7 +124,7 @@ You are now back on the Main Menu.  Click **Log Out** (top-right).
 
 ![tutorial, demo, main menu, logout-highlighted](./img/tutorial_record_and_playback25.png)
 
-To end the recording session either press `CTRL+3` or click `Finish` button on the **RA dialog**.
+To end the recording session either press ++ctrl+3++ or click `Finish` button on the **RA dialog**.
 
 Rapise will generate the code.
 
@@ -177,7 +177,7 @@ Now back in the [Web Spy](web_spy.md), click on the `Get Snapshot` option to ref
 Once it has loaded the DOM tree, you can expand/collapse the elements to see how the web page is constructed. This is useful when testing an application since many of the HTML elements on a page may be used for layout purposes and will not be visible in the browser. In the example page, we have expanded some of the nodes to display the main section of the page and the table that contains the list of books.
 
 In addition, you can use the `Track (Ctrl+T)` tool to select an item in the web page and then have it be highlighted in the DOM tree. For example if we want to find the cell that contains the book title
-“Amsterdam”, simply press `CTRL+T` on the keyboard, move the mouse over the cell in the webpage**, wait until the red highlighting rectangle appears** and then click `CTRL+T` again. Rapise will now highlight that
+“Amsterdam”, simply press ++ctrl+t++ on the keyboard, move the mouse over the cell in the webpage**, wait until the red highlighting rectangle appears** and then click ++ctrl+t++ again. Rapise will now highlight that
 item in the DOM Tree automatically:
 
 ![web spy tracking](./img/tutorial_record_and_playback36.png)

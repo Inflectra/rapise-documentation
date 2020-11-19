@@ -36,7 +36,7 @@ Notice that two things will happen.  Firstly, the `OK` button will be surrounde
 
 ## Step 7. Finish Recording
 
-Press the `Finish` button (or press `Ctrl+3`) to end the recording.
+Press the `Finish` button (or press ++ctrl+3++) to end the recording.
 
 ## Step 8. Observe
 
@@ -80,13 +80,13 @@ When the **Select an Application to Record** dialog is displayed, choose the Two
 
 Hover the mouse over the `OK` button of the TwoDialogs AUT but do not press the button.
 
-With the mouse positioned over the `OK` button, press `Ctrl+2` ( the **Learn** command).  You will see the `OK` button surrounded with a red highlight.  You will also see that the **Recording Activity** dialog has been updated with a **Learn** event.
+With the mouse positioned over the `OK` button, press ++ctrl+2++ ( the **Learn** command).  You will see the `OK` button surrounded with a red highlight.  You will also see that the **Recording Activity** dialog has been updated with a **Learn** event.
 
 ![radialogforlearnok](./img/learn_object2.png)
 
 ## Step 6. Finish Recording
 
-Press the `Finish` button or `Ctrl+3` to end the recording session.  
+Press the `Finish` button or ++ctrl+3++ to end the recording session.  
 
 ## Step 7. Observe
 

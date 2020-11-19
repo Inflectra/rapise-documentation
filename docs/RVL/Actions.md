@@ -45,13 +45,13 @@ By default RVL editor pre-fills only mandatory params for you when you select an
 
 ![DoLaunch parameters](img/Actions_ActionParams_Mandatory.png)
 
-However the situation is differs if you hold the **Shift** key while choosing an Action from the dropdown:
+However the situation is differs if you hold the ++shift++ key while choosing an Action from the dropdown:
 
 ![DoLaunch parameters](img/Actions_ActionParams_Optional.png)
 
 You may see that all parameters are applied in this case.
 
-- ***Note:*** if you you already have have the same action and select it with **Shift** key again, no optional params are applied. You need to clean the *Action* cell and re-select it with **Shift** if you want to achieve the desired effect.
+- ***Note:*** if you you already have have the same action and select it with ++shift++ key again, no optional params are applied. You need to clean the *Action* cell and re-select it with ++shift++ if you want to achieve the desired effect.
 
 
 ## Examples

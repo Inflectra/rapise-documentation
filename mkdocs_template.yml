@@ -10,7 +10,7 @@ hide_site_name: True
 plugins:
   - search:
       prebuild_index: True
-      separator: '[^\w]+'
+      separator: '[\s\(\)\,\-]+'
 
 markdown_extensions:
   - attr_list
@@ -27,6 +27,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -39,17 +40,22 @@ markdown_extensions:
 
 theme: 
   name: 'material'
-  feature:
-    tabs: true
-    instant: true
+  language: en
+  features:
+    - navigation.tabs
   palette:
+    scheme: default
     primary: 'black'
     accent: 'amber'
   font:
     code: 'IBM Plex Mono'
   favicon: 'img/favicon.ico'
   logo: 'img/logo.svg'
-  custom_dir: inflectra_mkdocs
+  custom_dir: material
+
+extra_css:
+  - stylesheets/spira.css
+
   
 extra_javascript:
   - javascripts/jquery-1.10.2.min.js
@@ -58,11 +64,11 @@ extra_javascript:
 
 extra:
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github
       link: 'https://github.com/inflectra'
-    - type: 'twitter'
+    - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/inflectra'
-    - type: 'linkedin'
+    - icon: fontawesome/solid/link
       link: 'https://www.linkedin.com/inflectra-corporation'
 
 nav:

@@ -48,7 +48,7 @@ One of the most important UI elements inside Dynamics 365 is the multi-level men
 
 The Dynamics 365 menu bar is used to quickly and easily navigate between different parts of the application and it is very common to need to interact with it in test scripts.
 
-[Learn](object_learning.md) the menu using **CTRL+2** on the menu open button:
+[Learn](object_learning.md) the menu using ++ctrl+2++ on the menu open button:
 
 ![menu open button](./img/dynamics_3657.png)
 

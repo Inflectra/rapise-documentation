@@ -625,7 +625,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 <a name="DoSendKeys"></a>    
 #### DoSendKeys
 
-Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a>
+Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends ++ctrl+f++. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a>
 
 ```javascript
 DoSendKeys(keys) 

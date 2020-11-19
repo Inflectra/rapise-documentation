@@ -57,15 +57,15 @@ options:
 
 The following options are available in the dialog in both modes:
 
-* **Verify** (Ctrl+1) - Press to open the [Verify Object Properties](verify_object_properties.md) dialog.
+* **Verify** ++ctrl+1++ - Press to open the [Verify Object Properties](verify_object_properties.md) dialog.
 
-* **Learn** (Ctrl+2) - Use to [learn](object_learning.md) an object. Place the mouse cursor over the object you wish to learn.  It should become highlighted with a purple box.  Press Ctrl+2 while the object is highlighted.  You will see a line added to the Recording Activity dialog, signifying that the object was learned.
+* **Learn** ++ctrl+2++ - Use to [learn](object_learning.md) an object. Place the mouse cursor over the object you wish to learn.  It should become highlighted with a purple box.  Press ++ctrl+2++ while the object is highlighted.  You will see a line added to the Recording Activity dialog, signifying that the object was learned.
 
-* **SPY** (Ctrl+5) - The Spy Button opens the **Object Spy dialog**. The Object Spy dialog allows you to view the state of the objects in your program.  Viewing object state is called [Object Spying](object_spy.md).  The Object Spy dialog is described [here](ses_spy_dialog.md). You can also use the SPY button to **learn an object** that is not visible or covered by another object.
+* **SPY** ++ctrl+5++ - The Spy Button opens the **Object Spy dialog**. The Object Spy dialog allows you to view the state of the objects in your program.  Viewing object state is called [Object Spying](object_spy.md).  The Object Spy dialog is described [here](ses_spy_dialog.md). You can also use the SPY button to **learn an object** that is not visible or covered by another object.
 
 * **Pause** - The Pause Button temporarily stops Recording.  Any interacting you d* with the AUT is ignored.  When you press the Pause Button, the title of the button changes to **Resume**.  Press the **Resume** button to continue recording.
 
-* **Finish** (Ctrl+3) - The Finish button ends the Recording session.
+* **Finish** ++ctrl+3++ - The Finish button ends the Recording session.
 The dialog is closed, and the information collected during Recording is
 used to create a script.  The script is displayed.
 
@@ -77,7 +77,7 @@ session.
 
 The following additional features are available in Advanced mode:
 
-* **Analog** (Ctrl+4) - The Analog button begins [Analog Recording](analog_recording.md).  Analog Recording tracks mouse movements, keyboard inputs, and clicks.  To end Analog Recording, press **CTRL+Break**
+* **Analog** ++ctrl+4++ - The Analog button begins [Analog Recording](analog_recording.md).  Analog Recording tracks mouse movements, keyboard inputs, and clicks.  To end Analog Recording, press ++ctrl+break++
 
 * **Simulated Drop-Down Menu** - An object can be learned if it matches a rule specified in the [Recording/Learning libraries](recording_library.md) available. The drop-down menu lists the possible rules for learning objects in the current application:
 
@@ -93,7 +93,7 @@ If you cannot learn an object with one library rule, try another in the list.  
 
 3. Select an object on the screen and make sure it is highlighted with a rectangle.
 
-4. Press **Ctrl+2** to learn the object.
+4. Press ++ctrl+2++ to learn the object.
 
 ## Transparent Option
 

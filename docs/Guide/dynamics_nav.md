@@ -138,7 +138,7 @@ function Test()
 }
 ```
 
-If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press `Ctrl+2` shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
+If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press ++ctrl+2++ shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
 
 ## Tips for Interacting with Objects
 

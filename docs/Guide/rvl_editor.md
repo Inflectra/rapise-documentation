@@ -41,11 +41,11 @@ RVL Editor supports Auto completions. For example, if you type `I` in the flow c
 
 ![Flow I](./img/rvl_editor_flow_i.png)
 
-And hit `Tab` key the whole **If** statement is created:
+And hit ++tab++ key the whole **If** statement is created:
 
 ![Flow If](./img/rvl_editor_flow_if.png)
 
-> **Note**: `Tab` is a trigger for auto-completion. If you use cursor keys or mouse to leave the cell then auto completion will not be executed.
+> **Note**: ++tab++ is a trigger for auto-completion. If you use cursor keys or mouse to leave the cell then auto completion will not be executed.
 
 If you go to last line and change **End** with **ElseIf**
 
@@ -69,7 +69,7 @@ When you select an action from the list **RVL Edtior** automatically fills defau
 
 ![DoLaunch](./img/rvl_editor_global_dolaunch0.png)
 
-And press `Tab` after `DoLaunch` **RVL Editor** fills default param:
+And press ++tab++ after `DoLaunch` **RVL Editor** fills default param:
 
 ![DoLaunch](./img/rvl_editor_global_dolaunch1.png)
 
@@ -200,9 +200,9 @@ RVL is designed to be a simple grid language and it may be edited in any spreads
 
 ## RVL Editor Shortcuts
 
-- `Shift-Enter` - inserts an empty line after the selected cell.
-- `Ctrl-D` - deletes the line of the selected cell.
-- `Ctrl-P` - reveals optional parameters for an action in the current line, acts as click on `Params` button on the RVL toolbar.
+- ++shift+enter++ - inserts an empty line after the selected cell.
+- ++ctrl+d++ - deletes the line of the selected cell.
+- ++ctrl+p++ - reveals optional parameters for an action in the current line, acts as click on `Params` button on the RVL toolbar.
 
 ## See Also
 

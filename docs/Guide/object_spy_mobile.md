@@ -24,7 +24,7 @@ you to visually select objects from the hierarchy.
 
 ## Toolbar First Row
 
-- **Get Snapshot (CTRL + G)** - This will connect to the mobile device and get the latest snapshot from the mobile device and display in the right-hand window.
+- **Get Snapshot (++ctrl+g++)** - This will connect to the mobile device and get the latest snapshot from the mobile device and display in the right-hand window.
 - **Spy > Disconnect** - This option disconnects the Spy from the mobile device and ends the connection.
 - **Learn Object** - This option is only displayed in Recording mode and lets you take the currently selected object and add it to the [Object Tree](object_tree.md) for the current test. It can then be used as a scriptable object in the test.
 - **Spy > Page Source** - This lets you view the source of the mobile device in a text editor such as Notepad. It will show the objects in the treeview represented as an XML document.

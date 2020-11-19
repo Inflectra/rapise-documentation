@@ -168,7 +168,7 @@ function Test(params)
 }
 ```
 
-If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press `Ctrl+2` shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
+If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press ++ctrl+2++ shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
 
 ## Tips for Interacting with Objects
 
@@ -311,7 +311,7 @@ In some case Dynamics AX can report an error using Infolog window.
 
 ![Infolog](./img/dynamicsaxinfolog.png)
 
-To obtain text of the messages in this window learn the Tree object - place cursor over the error text and press `Ctrl-2` shortcut. The object is learned as [UIATree](/Libraries/UIATree/). In the case of infolog tree - all nodes are immediate children of the root. So in the example shown on the image above the tree contains two child nodes of the tree node. To get the number of messages and read individual messages use `GetChildrenCount` and `GetChildAt` actions of [UIATree](/Libraries/UIATree/).
+To obtain text of the messages in this window learn the Tree object - place cursor over the error text and press ++ctrl+2++ shortcut. The object is learned as [UIATree](/Libraries/UIATree/). In the case of infolog tree - all nodes are immediate children of the root. So in the example shown on the image above the tree contains two child nodes of the tree node. To get the number of messages and read individual messages use `GetChildrenCount` and `GetChildAt` actions of [UIATree](/Libraries/UIATree/).
 
 **RVL**
 

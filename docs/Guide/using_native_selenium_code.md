@@ -59,7 +59,7 @@ When you are using functions such as FindElementsById() in your code, the return
 
 If you want to have intellisense and code-completion for the returned WebElement objects, you need to do two things:
 
-- Click on CTRL+SHIFT+E to include the Rapise engine in your project.
+- Click on ++ctrl+shift+e++ to include the Rapise engine in your project.
 - Prefix the variable with /\*\*WebElementWrapper\*/, so instead of just:
 
 ```javascript

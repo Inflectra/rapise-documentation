@@ -26,7 +26,7 @@ The most instructive way to identify the objects to Rapise is to practice with t
 
 2.   If learning.recording fails to record actions in the grid, use the [Object Spy](object_spy.md) to observe the object carefully and discover what libraries and classes are being used by the AUT.
 
-3.   Use Verify (Ctrl+1) from the Recording Activity dialog to get summary information about the object.
+3.   Use Verify (++ctrl+1+) from the Recording Activity dialog to get summary information about the object.
 
 4.   Use a more appropriate set of libraries when selecting the AUT prior to recording.
 

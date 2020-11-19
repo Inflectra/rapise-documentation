@@ -14,7 +14,7 @@ Steps:
 
     ![mspaint](./img/mspaint_toolbar.png)
 
-4. Press `Ctrl+5` to spy on the UI.  Press `Ctrl+G` to spy on the Paint application. Notice several things about the behavior of the MS Paint application under the Object Spy.
+4. Press `Ctrl+5` to spy on the UI.  Press ++ctrl+g++ to spy on the Paint application. Notice several things about the behavior of the MS Paint application under the Object Spy.
       1. As you move the mouse inside the color box, the entire surrounding box will show a red highlight but the individual color tiles will not.
       2. Properties of the color box control have no clues on how to find a particular color.
 
@@ -29,7 +29,7 @@ In fact, Rapise will recognize these non-objects without you having to take part
 3. When the **Select an Application to Record** dialog appears, clear all selection boxes in the library list box.  You will have to scroll that section of the dialog box to make sure all selections are clear.  We are choosing no loaded libraries so that Rapise will not be able to "cheat" and know about any objects on the screen.
 4. Select the Run Application tab.  Enter `mspaint` in the **Full path to application** edit box.  Press the `Run` button.
     > **Note:** Applications that reside in `C:\windows\system32` can be started by their names because `C:\windows\system32` must be in the system path.
-5. When the **Recording Activity** dialog is displayed, press **Learn** `Ctrl+2`
+5. When the **Recording Activity** dialog is displayed, press **Learn** ++ctrl+2++
 6. Do a small amount of things in Paint.  For example:
      1. Click on the red color in the palette.
      2. Click on the green color in the palette.
@@ -40,7 +40,7 @@ In fact, Rapise will recognize these non-objects without you having to take part
 
     > Notice that the three clicks in the color box were recorded as **simulated** objects.
 
-8. Press `Ctrl+3` to end the recording.
+8. Press ++ctrl+3++ to end the recording.
 
 ## See Also
 

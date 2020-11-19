@@ -65,7 +65,7 @@ One of the the most important UI elements inside Dynamics CRM/365 is the sortabl
 
 The Dynamics CRM/365 Grid is used in lots of different screens inside Dynamics CRM/365 (e.g. Leads, Accounts, etc.) and it is very common to need to interact with it in test scripts.
 
-When you record operations on such a grid or simply learn the entire grid using `CTRL+2` you will learn the [DomDynamicsCrmGrid](/Libraries/DomDynamicsCrmGrid/) or [DomDynamicsCrmUnifiedInterfaceGrid](/Libraries/DomDynamicsCrmUnifiedInterfaceGrid/) object:
+When you record operations on such a grid or simply learn the entire grid using ++ctrl+2++ you will learn the [DomDynamicsCrmGrid](/Libraries/DomDynamicsCrmGrid/) or [DomDynamicsCrmUnifiedInterfaceGrid](/Libraries/DomDynamicsCrmUnifiedInterfaceGrid/) object:
 
 ![dynamics-crm-grid-methods](./img/dynamics_crm7.png)
 

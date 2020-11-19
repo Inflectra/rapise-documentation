@@ -4,7 +4,7 @@ There are two ways to restore the default layout of Rapise panes: (1) On Startup
 
 ## On Startup
 
-Press the **Shift** key while you open Rapise.  Keep the **Shift** key down until Rapise is done initializing.
+Press the ++shift++ key while you open Rapise.  Keep the ++shift++ key down until Rapise is done initializing.
 
 ## Global Settings Dialog
 

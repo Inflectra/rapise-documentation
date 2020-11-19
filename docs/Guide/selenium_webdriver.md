@@ -58,7 +58,7 @@ When using a Selenium profile for recording, you will need to use the [**Spy (Ct
 
 ![clip0019](./img/selenium_webdriver5.png)
 
-When using the [Web Spy](web_spy.md) with a Selenium profile you will notice that the web browser icon / name shows “Selenium” rather than the browser name and the option to Track an item (CTRL+T) is not present. That means you need to **select the HTML
+When using the [Web Spy](web_spy.md) with a Selenium profile you will notice that the web browser icon / name shows “Selenium” rather than the browser name and the option to Track an item ++ctrl+t++ is not present. That means you need to **select the HTML
 DOM object in the DOM Tree and learn it from there** (rather than clicking on the web page itself which is possible when using a native
 browser profile).
 

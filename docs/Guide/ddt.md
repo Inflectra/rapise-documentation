@@ -12,7 +12,7 @@ First, define data schema. In the Flow column of RVL spreadsheet choose Map.
 
 <img src="/Guide/img/ddt_data_map.png" width="190" />
 
-Then hit `TAB` on the keyboard and Rapise will generate a template for the data table.
+Then hit ++tab++ on the keyboard and Rapise will generate a template for the data table.
 
 <img src="/Guide/img/ddt_data_map_template.png" width="579" />
 

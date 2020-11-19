@@ -36,7 +36,7 @@ If the TwoDialogs UI has been occluded, bring it back to the front so you don't 
 
 When you're ready to record the session, hit the `Analog` button on the Recording Activity dialog.
 
-> **Note:** The key sequence `Ctrl+4` starts an absolute analog recording session. Press the `Analog` button to start the relative analog recording session.
+> **Note:** The key sequence ++ctrl+4++ starts an absolute analog recording session. Press the `Analog` button to start the relative analog recording session.
 > 
 When you press the Analog button, two things will happen. Firstly, the status bar of the Recording Activity dialog will change to read, _Click on object to start analog recording._
 
@@ -54,7 +54,7 @@ Go to the TwoDialogs AUT and click anywhere in the application's window to start
 >
 > Type a name in the text box.
 >
-> Hit the `TAB` key or click the left mouse button to advance the input position to the second text box.
+> Hit the ++tab++ key or click the left mouse button to advance the input position to the second text box.
 >
 > Type another name.
 >
@@ -62,9 +62,9 @@ Go to the TwoDialogs AUT and click anywhere in the application's window to start
 
 ## Stop Analog Recording
 
-When you have recorded enough, switch to the Analog Recording dialog box and press the close button or hit the keys `Ctrl+Break`.
+When you have recorded enough, switch to the Analog Recording dialog box and press the close button or hit the keys ++ctrl+break++.
 
-> **Note:** If you use the `Close` button on the Analog Recording dialog, the movement of the mouse to the Analog Recording dialog, and the mouse-click on the `Close` button will be recorded as part of the analog recording output.  This might not be a desirable outcome at playback time because the Analog Recording dialog will not be present and the mouse click will be played in a potentially random place on the screen.  For this reason, `Ctrl+Break` is probably a better option to terminate analog recording.
+> **Note:** If you use the `Close` button on the Analog Recording dialog, the movement of the mouse to the Analog Recording dialog, and the mouse-click on the `Close` button will be recorded as part of the analog recording output.  This might not be a desirable outcome at playback time because the Analog Recording dialog will not be present and the mouse click will be played in a potentially random place on the screen.  For this reason, ++ctrl+break++ is probably a better option to terminate analog recording.
 
 > **Note:** The grid will have no entry added until you end the analog recording with the Close button in the Analog Recording dialog. When you do, it will add an entry to the grid.
 
@@ -77,7 +77,7 @@ When you have recorded enough, switch to the Analog Recording dialog box and pre
 
 ## Stop Recording
   
-When you have finished all recording press the `Finish` button or hit `Ctrl+3`.  Notice that the Analog entry is added to the grid.
+When you have finished all recording press the `Finish` button or hit ++ctrl+3++.  Notice that the Analog entry is added to the grid.
 
 The Rapise screen will now be restored and will have placed focus in the editor pane of the Rapise with `TwoDialogsAnalogAbsolute.js` script displayed. You should see code something like the following:
 
@@ -91,7 +91,7 @@ SeS('Simulated').DoAnalogPlay("Analog\\\\Analog0003.arf");
 Press the `Play` button on the Rapise toolbar to playback the recording you made. Be sure not to interfere with the mouse or keyboard
 whilst the recording is playing back.
 
-> **Note:** You will see all mouse and keyboard activity reproduced as the analog recording plays.  The recording will start from the point where you left-clicked the mouse to begin the recording and will end with clicking the close button in the Analog Recording dialog. If you used `Ctrl+Break` to end the recording then the last recorded activity will be the one that keystroke.
+> **Note:** You will see all mouse and keyboard activity reproduced as the analog recording plays.  The recording will start from the point where you left-clicked the mouse to begin the recording and will end with clicking the close button in the Analog Recording dialog. If you used ++ctrl+break++ to end the recording then the last recorded activity will be the one that keystroke.
 
 When the analog playback is complete, use the mouse to move the TwoDialogs AUT to a different location on the screen.  Play the recording
 again, and watch the operation unfold.  The most important thing to realize is that the relative analog recording will playback the

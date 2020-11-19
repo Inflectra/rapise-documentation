@@ -8,7 +8,7 @@ Find occurrences of the **Search Term** text in the currently visible [Source Ed
 
 ## How to Open
 
-Use main menu `Edit > Find` or type `CTRL+F` on the keyboard when the source editor is active.
+Use main menu `Edit > Find` or type ++ctrl+f++ on the keyboard when the source editor is active.
 
 ## Find Tab
 

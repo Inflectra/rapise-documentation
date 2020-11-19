@@ -6,7 +6,7 @@ Rapise provides **Code Completion** for class, method and field names.
 
 ## Usage
 
-Begin typing a class, method, or field name. Press `CTRL+Space` to open a list of possible completions.
+Begin typing a class, method, or field name. Press ++ctrl+space++ to open a list of possible completions.
 
 ![code helper.zoom80](./img/code_helper1.png)
 
@@ -76,7 +76,7 @@ So it becomes known to Rapise:
 
 ![code_completion_3](./img/code_helper4.png)
 
-Code completion for variable names is useful when you have multiple variables or function parameters and need to type them quickly. In this case `CTRL+Space` key combination will bring up a list of variables and functions starting with just typed keyword.
+Code completion for variable names is useful when you have multiple variables or function parameters and need to type them quickly. In this case ++ctrl+space++ key combination will bring up a list of variables and functions starting with just typed keyword.
 
 ## Code Completion for Objects
 

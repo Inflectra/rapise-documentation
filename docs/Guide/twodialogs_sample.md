@@ -83,7 +83,7 @@ You will achieve best results in recording if you observe the following guidelin
 
 - Click in the first edit box in the TwoDialogs application.
 - Type a name in this first edit box.
-- Place mouse over the Summary field with 'Thank you' text and press `CTRL+1`
+- Place mouse over the Summary field with 'Thank you' text and press ++ctrl+1++
 
 Rapise will open [Verify Object Properties](verify_object_properties.md) dialog.
 
@@ -101,7 +101,7 @@ As you take these actions, you will see the Recording Activity grid update accor
 
 For a full explanation of the controls on this dialog, refer to the reference for [Recording Activity Dialog](recording_activity_dialog.md).
 
-When you have finished recording the activity for the AUT, press the `Finish` button or `CTRL+3`.
+When you have finished recording the activity for the AUT, press the `Finish` button or ++ctrl+3++.
 
 **Note**: Do not terminate the TwoDialogs application.
 
@@ -167,7 +167,7 @@ When you are in the middle of recording, click on the **Spy** button and Rapise 
 
 ![twodialogs_spy1](./img/twodialogs_sample21.png)
 
-Press `CTRL+G` on the keyboard to start tracking. Hover the mouse over one of the text boxes in the TwoDialogs application and press `CTRL+G` again to stop tracking:
+Press ++ctrl+g++ on the keyboard to start tracking. Hover the mouse over one of the text boxes in the TwoDialogs application and press ++ctrl+g++ again to stop tracking:
 
 ![twodialogs_spy2](./img/twodialogs_sample22.png)
 

@@ -30,7 +30,7 @@ Shows test execution status during playback.
 
 * Progress bar shows test execution progress. This is just an estimate (number of actions executed compared to previous number of actions)
 * `Passed:`, `Failed:`, `Unresolved:` - number of actions with corresponding execution status.
-* **Stop** (Ctrl+Shift+F12) - terminate execution.
+* **Stop** (++ctrl+shift+f12++) - terminate execution.
 * **Pause** - hold test execution until another press of the same button.
 * **Hide** - hide execution monitor itself. The monitor can be turned off at all in the [Options](options_dialog.md) dialog.
 
