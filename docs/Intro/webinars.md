@@ -21,6 +21,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 #### Advanced Topics
 
 - [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5ntxsfThnzrxpOtm9d0tpHYU)
+- [New Features in Rapise v6.6](https://youtu.be/BIgOIxkZ5Hk)
 - [25 Tips and Tricks of Using Rapise](https://youtu.be/54aJDS8sUKU)
 - [Scriptless, Codeless, Visual](https://youtu.be/jFnZeYG7m9A)
 - [How to Benefit From Self-Healing Locators](https://youtu.be/ulgL-RnGuHo)

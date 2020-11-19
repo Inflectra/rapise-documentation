@@ -310,8 +310,47 @@ Let's assume we want to run same set of tests on different versions of browsers.
     ![Multiplier](./img/azure_pipeline_multiplier.png)
     ![Configuration](./img/azure_pipeline_multi_configuration.png)
 
+## Run Tests on Azure and Report to Spira
+
+If you plan to use Azure VMs to run tests and want to see the results in Spira check out this section. In the pipeline you need at least three steps:
+
+- Get tests from Git repository
+- [Install Rapise](#rapise-installation-task)
+- Run a Test Set defined in Spira (see below)
+
+To run a test set you need a [Command line task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/command-line). This task should run RapiseLauncher with parameters:
+
+- -config:\[path to [RepositoryConnection.xml](/Guide/spiratest_integration/#command-line-arguments)\]
+- -project:\[project id\]
+- -testset: \[\test set id]
+- -minimized
+
+Also set a GITROOT environment variable. It should point to the root of the Git repository.
+
+!!! note
+    Tests must be [linked to Spira Test Cases](/Guide/git_integration/#linking-new-test-to-spira)
+
+??? example "Classic UI"
+    ![Task Classic UI](./img/azure_pipeline_spira.png)
+
+??? example "YAML"
+    ```yaml
+    steps:
+    - script: |
+    echo Running  TX139
+
+    "c:\Program Files (x86)\Inflectra\Rapise\bin\RapiseLauncher.exe" -config:.\GitDemo\RepositoryConnection.xml -project:90 -testset:139 -minimized
+    
+    echo Done
+    
+    displayName: 'Run TX139'
+    env:
+        GITROOT: $(Build.SourcesDirectory)
+    ```
+
 ## See Also
 
+- [Demo of Azure DevOps Integration (video)](https://www.youtube.com/watch?v=BIgOIxkZ5Hk&t=507s)
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
 - [Rapise.TestAdapter on GitHub](https://github.com/Inflectra/rapise-testadapter)
 - [Rapise.TestAdapter NuGet package](https://www.nuget.org/packages/Rapise.TestAdapter/)

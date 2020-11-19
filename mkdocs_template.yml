@@ -197,7 +197,7 @@ nav:
         - 'M - R':            
             - 'Manual Playback': 'Guide/manual_playback.md'
             - 'Manual Test Editor': 'Guide/manual_test_editor.md'
-            - 'Main Menu': 'Guide/menu_and_toolbars.md'
+            - 'Main Menu and Toolbars': 'Guide/menu_and_toolbars.md'
             - 'Mobile Settings Dialog': 'Guide/mobile_settings_dialog.md'
             - 'Mobile Test Locator Dialog': 'Guide/mobile_test_locator_dialog.md'
             - 'NameValue Collection Editor Dialog': 'Guide/namevalue_collection_editor_di.md'

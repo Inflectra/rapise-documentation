@@ -124,4 +124,4 @@ If you want a specific icon for your object then create two `.png` files with di
 
 ### See Also
 
-- How to define a global object (video)
+- [How to define a global object (video)](https://www.youtube.com/watch?v=BIgOIxkZ5Hk&t=1408s)
