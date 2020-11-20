@@ -133,18 +133,15 @@ In this case, you need to add custom fields to the Test Set definition in **Spir
 
 ![Spira TS Fields](img/git_integration_git_tsprops.png)
 
-* **GitUrl** - Git remote repository URL. I.e. `https://github.com/Inflectra/rapise-samples`.
-
-* **GitUser** - optional. Needed when repository is protected and requires an authentication.
-
-* **GitPassword** - optional. Username for authentication.
-
-* **GitBranch** - optional. You link test case to specific branch instead of default `master` branch.
-
-* **GitRoot** - optional. Target folder for checkout. If empty or absent, default Rapise Launcher temp folder is used.
+- **GitUrl** - Git remote repository URL. I.e. `https://github.com/Inflectra/rapise-samples`.
+- **GitUser** - optional. Needed when repository is protected and requires an authentication.
+- **GitPassword** - optional. Username for authentication.
+- **GitBranch** - optional. You link test case to specific branch instead of default `master` branch.
+- **GitRoot** - optional. Target folder for checkout. If empty or absent, default Rapise Launcher temp folder is used.
 
 #### Using System Environment Variables
-In this case you may have only one checkout source for all test sets executed by **RapiseLauncher** on the given host. It is fine if your host is dedicated to run tests from specific repository and is a bit easier to set up. 
+
+In this case you may have only one checkout source for all test sets executed by **RapiseLauncher** on the given host. It is fine if your host is dedicated to run tests from specific repository and is a bit easier to set up.
 
 In this case you need to define system variables named exactly the same as corresponding custom properties described in the previous block: **GitUrl**, **GitUser**, **GitPassword**, **GitBranch**, **GitRoot**. All but **GitUrl** are optional.
 
@@ -158,6 +155,6 @@ For example, if the pipeline checks the sources to `c:\Build` folder from the **
 
 ## See Also
 
-* [Demo of Git Integration (video)](https://www.youtube.com/watch?v=BIgOIxkZ5Hk&t=25s)
-* [Framework](..\Intro\framework.md)
-* [Spira Integration](spiratest_integration.md)
+- [Demo of Git Integration (video)](https://www.youtube.com/watch?v=BIgOIxkZ5Hk&t=25s)
+- [Framework](..\Intro\framework.md)
+- [Spira Integration](spiratest_integration.md)
