@@ -3,6 +3,42 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB574', 'Advanced search for elements in desktop applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB574.aspx">KB574</a> Advanced search for elements in desktop applications
+
+If a desktop application is dynamic and recorded locators do not work then there is a way to search for elements using UIAObject.DoFindElementByCondition and UIAObject.DoFindElementsByCondition.Requires Rapise 6.6+
+
+### <a onclick="return RegisterKbClick('KB572', 'Specifying Timeout for REST Calls')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB572.aspx">KB572</a> Specifying Timeout for REST Calls
+
+Rapise REST module uses 100seconds timeout by default. Since Rapise 6.6 you may make it longer or shorter.
+
+### <a onclick="return RegisterKbClick('KB570', 'Easy Way to Dump Sheet Variables')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB570.aspx">KB570</a> Easy Way to Dump Sheet Variables
+
+We sometimes need to dump diagnostic information to the report. It may be values of some or all local variables.
+
+### <a onclick="return RegisterKbClick('KB569', 'Making Negative API Tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB569.aspx">KB569</a> Making Negative API Tests
+
+By default Rapise reports an error when REST service request fails. With the negative test the request should fail, so we want the reporting to behave differently.
+
+### <a onclick="return RegisterKbClick('KB568', 'How to rename a Rapise test linked to a Spira Test Case')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB568.aspx">KB568</a> How to rename a Rapise test linked to a Spira Test Case
+
+It is a 3 step process: 1. SaveAs or Clone the test with a new name 2. Save it to Spira 3. Delete old test copy from Documents module in Spira (optional)
+
+### <a onclick="return RegisterKbClick('KB566', 'Merge Strings in RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB566.aspx">KB566</a> Merge Strings in RVL
+
+Here we show a few examples on how to combine strings in RVL.
+
+### <a onclick="return RegisterKbClick('KB565', 'Customize Rapise Report Messages')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB565.aspx">KB565</a> Customize Rapise Report Messages
+
+Sometimes we need to override the message written to the report when some action is performed.
+
+### <a onclick="return RegisterKbClick('KB561', 'Using Free Apple Development account to test on mobile devices')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB561.aspx">KB561</a> Using Free Apple Development account to test on mobile devices
+
+It is possible to use Free Apple Developer account for iOS testing. But it requires some knowledge and time to setup.
+
+### <a onclick="return RegisterKbClick('KB558', 'Mobile testing with Experitest SeeTest')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB558.aspx">KB558</a> Mobile testing with Experitest SeeTest
+
+Connecting to the mobile devices hosted by SeeTest is easy. Learn how from this article. Requires Rapise 6.5+.
+
 ### <a onclick="return RegisterKbClick('KB556', 'RapiseChromeExtension version 3')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB556.aspx">KB556</a> RapiseChromeExtension version 3
 
 Along with Rapise 6.5 we are releasing an update to the RapiseChromeExtension.  The new version (v3) is back compatible. It means that older versions of Rapise should work with it without issues. Rapise 6.5+ will require you to update the extension if you have RapiseChromeExtension v2.
