@@ -10209,6 +10209,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../New/Roadmap/" class="md-nav__link">
+      Development Roadmap
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10706,7 +10718,6 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Assert</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">condition</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10747,7 +10758,6 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">AssertEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10793,7 +10803,6 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">AssertImage</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">img1</span><span class="p">,</span> <span class="nx">path</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10837,7 +10846,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Marks beginning of a test with a given name.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">BeginTest</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">path</span><span class="p">,</span> <span class="nx">optionalParams</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10871,7 +10879,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Captures image of the desktop and adds it to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CaptureDesktopImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10895,7 +10902,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Captures image of an object and adds it to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CaptureObjectImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span> <span class="nx">objId</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10924,7 +10930,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Captures image of an application window matched by title and class and adds it to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CaptureWindowImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span> <span class="nx">windowTitle</span><span class="p">,</span> <span class="nx">windowClass</span><span class="p">,</span> <span class="nx">bringToFront</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10963,7 +10968,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Dump node.json with all arguments.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DumpCmdArgsJson</span><span class="p">(</span><span class="nx">optNodeJsonPath</span><span class="p">,</span> <span class="nx">mkPackageJson</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10992,14 +10996,12 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Marks end of a currently executed test. Calculates test results and performs finalization of test execution.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">EndTest</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.tester.endtest"></a></p>
 <p><a name="FailTest"></a>    </p>
 <h4 id="failtest">FailTest<a class="headerlink" href="#failtest" title="Permanent link">&para;</a></h4>
 <p>Stops test execution and sets it's status to failed.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">FailTest</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">internal</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11028,7 +11030,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Read parameter field passed into the Test function by field name.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetParam</span><span class="p">(</span><span class="nx">paramName</span><span class="p">,</span> <span class="nx">defaultValue</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11057,7 +11058,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Gets report attribute previously set by PushReportAttribute or SetReportAttribute.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11081,7 +11081,6 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Gets status of currently executed test.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetTestStatus</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>One of: 
     Tester.Info - test is neither passed nor failed;
@@ -11096,7 +11095,6 @@ Real status is written to "realStatus" attribute in this case and used
 just for information purposes (i.e. it does not affect final test status).</p>
 
 <p>This function is used when the test case needs to set test status manually.</p>
-
 <pre>
   Tester.IgnoreStatus(true);
   Tester.Assert("Ignored Assertion", false); // This assertion is failed. But its status is ignored.
@@ -11107,7 +11105,6 @@ just for information purposes (i.e. it does not affect final test status).</p>
 
 <div class="highlight"><pre><span></span><code><span class="nx">IgnoreStatus</span><span class="p">(</span><span class="nx">ignore</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11132,7 +11129,6 @@ just for information purposes (i.e. it does not affect final test status).</p>
 Message may contain some additional data (links, images, comments) set via 'data' parameter.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Message</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11166,7 +11162,6 @@ Message may contain some additional data (links, images, comments) set via 'data
 <p>Shows message box to user. Use it for verbose and manual testing.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">MessageBox</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11192,7 +11187,6 @@ Message may contain some additional data (links, images, comments) set via 'data
   "No" =&gt; "Fail" is reported.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">MessageBoxPrompt</span><span class="p">(</span><span class="nx">question</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11216,7 +11210,6 @@ Message may contain some additional data (links, images, comments) set via 'data
 <p>Resets an attribute to its previous value. See PushReportAttribute for more information.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">PopReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11240,13 +11233,12 @@ Message may contain some additional data (links, images, comments) set via 'data
 <p><a name="PushReportAttribute"></a>    </p>
 <h4 id="pushreportattribute">PushReportAttribute<a class="headerlink" href="#pushreportattribute" title="Permanent link">&para;</a></h4>
 <p>Maintains "stacked" attributes. Useful for nesting. </p>
-
-<p><br>
+<p><br></p>
 <p>Example:</p>
-<br>
+<p><br></p>
 <p>Main test sets scenario=Main. Then it calls
 another scenario (scenario Login) and then continues its own test actions.</p>
-<br>
+<p><br></p>
 <p>We want all assertions to be attributed with current scenario name.</p>
 <pre>
  function Main()
@@ -11255,18 +11247,19 @@ another scenario (scenario Login) and then continues its own test actions.</p>
      Login();
      ...
      Tester.Assert("Main test passed", mainStatus); // Saved with scenario=Main
- }</p>
-<p>function Login()
+ }
+
+ function Login()
  {
      Tester.PushReportAttribute("scenario", "Login");
      ... // Do login logic
      Tester.Assert("Login Result", loginStatus);
      Tester.PopReportAttribute("scenario"); // Set scenario value back to caller
  }
-</pre></p>
+</pre>
+
 <div class="highlight"><pre><span></span><code><span class="nx">PushReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11295,7 +11288,6 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 <p>Removes report attribute previously set by SetReportAttribute.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ResetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11321,7 +11313,6 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 the ResetReportAttribute function.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11354,10 +11345,8 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
   <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj1&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span> <span class="c1">// No line will be added to report and operation status will be ignored</span>
   <span class="nx">Tester</span><span class="p">.</span><span class="nx">SuppressReport</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
 </code></pre></div>
-
 <div class="highlight"><pre><span></span><code><span class="nx">SuppressReport</span><span class="p">(</span><span class="nx">suppress</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11480,7 +11469,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.placeholder": "Search", "search.result.more.other": "# more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -10044,6 +10044,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../New/Roadmap/" class="md-nav__link">
+      Development Roadmap
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10224,14 +10236,13 @@
 <h3 id="using-userjs">Using User.js<a class="headerlink" href="#using-userjs" title="Permanent link">&para;</a></h3>
 <p>Any variable defined in the <code>User.js</code> is assumed to be a global variable.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Note, the variable should be declared outside the scope of any function to be global</span>
-<span class="kd">var</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
 
 <span class="kd">function</span> <span class="nx">SomeFunction</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="p">}</span>
 <span class="p">...</span>
 </code></pre></div>
-
 <h3 id="using-commonjs">Using Common.js<a class="headerlink" href="#using-commonjs" title="Permanent link">&para;</a></h3>
 <p>You may want to have a common file with global variable re-used across different tests. In this case you need to include the <code>Common.js</code> in the root of the <code>User.js</code> (it is not recommended to do include from within the <code>Test()</code> function).</p>
 <p><code>User.js</code>:
@@ -10243,7 +10254,7 @@ eval(File.Include(`%WORKDIR%/Common.js`))
 <p>The variable re-used across tests should be declared using the lazy initalization mode as follows</p>
 <p><code>Common.js</code>:
 <div class="highlight"><pre><span></span><code><span class="c1">// Global variable lazy declaration:</span>
-<span class="k">if</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="nx">g_myGlobalVar</span><span class="p">)</span><span class="o">==</span><span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="nx">g_myGlobalVar</span><span class="p">)</span><span class="o">==</span><span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
 </code></pre></div></p>
 <h3 id="using-testinit">Using TestInit<a class="headerlink" href="#using-testinit" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -10252,11 +10263,10 @@ eval(File.Include(`%WORKDIR%/Common.js`))
 <p>Define your global variables in <strong>TestInit()</strong>. Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample <code>TestInit()</code> below.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestInit</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="nx">number_of_visited_links</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// This variable becomes global</span>
-    <span class="kd">var</span> <span class="nx">local_var</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// This variable is local for TestInit function</span>
+    <span class="nx">number_of_visited_links</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="c1">// This variable becomes global</span>
+    <span class="kd">var</span> <span class="nx">local_var</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span> <span class="c1">// This variable is local for TestInit function</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>The keyword <strong>var</strong> gives variables local scope. A variable initialized without the keyword var will have global scope.</p>
 <p>The <strong>Script Recorder</strong> knows about the following functions: <strong>Test(), TestInit(), TestPrepare()</strong>, and <strong>TestFinish()</strong>. Do not declare global variables outside of one of the preceding four functions. The Script Recorder alters the script each time it is run, and may erase your changes.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
@@ -10366,7 +10376,7 @@ eval(File.Include(`%WORKDIR%/Common.js`))
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.placeholder": "Search", "search.result.more.other": "# more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

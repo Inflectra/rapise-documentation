@@ -10015,6 +10015,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../New/Roadmap/" class="md-nav__link">
+      Development Roadmap
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10199,19 +10211,18 @@
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Sub folder does not exist, DeleteFolder works&quot;</span><span class="p">,</span> <span class="o">!</span><span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="filesystemobject">FileSystemObject<a class="headerlink" href="#filesystemobject" title="Permanent link">&para;</a></h2>
 <p>Alternatively you can can access the file system using the <code>FileSystemObject</code>.</p>
 <p><a href="http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx">http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx</a></p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="c1">//IOMode constants</span>
-    <span class="kd">var</span> <span class="nx">IOMode</span><span class="err">\</span><span class="nx">_ForReading</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">IOMode</span><span class="err">\</span><span class="nx">_ForWriting</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">IOMode</span><span class="err">\</span><span class="nx">_ForAppending</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOMode</span><span class="err">\</span><span class="nx">_ForReading</span> <span class="o">=</span> <span class="mf">1</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOMode</span><span class="err">\</span><span class="nx">_ForWriting</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOMode</span><span class="err">\</span><span class="nx">_ForAppending</span> <span class="o">=</span> <span class="mf">8</span><span class="p">;</span>
     <span class="c1">//var Format constants</span>
-    <span class="kd">var</span> <span class="nx">IOFormat</span><span class="err">\</span><span class="nx">_ASCII</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">IOFormat</span><span class="err">\</span><span class="nx">_Unicode</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOFormat</span><span class="err">\</span><span class="nx">_ASCII</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOFormat</span><span class="err">\</span><span class="nx">_Unicode</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1</span><span class="p">;</span>
     <span class="c1">//This sample demonstrates how to manipulate the Windows file system using Rapise</span>
     <span class="c1">//We shall open a text file for writing in this simple example</span>
     <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s1">&#39;Scripting.FileSystemObject&#39;</span><span class="p">);</span>
@@ -10230,7 +10241,6 @@
     <span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../howtos/">How-Tos</a></li>
@@ -10337,7 +10347,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.placeholder": "Search", "search.result.more.other": "# more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

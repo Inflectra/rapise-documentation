@@ -10052,6 +10052,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../New/Roadmap/" class="md-nav__link">
+      Development Roadmap
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10343,7 +10355,6 @@ item in the DOM Tree automatically:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">//table[@id=&#39;MainContent_grdBooks&#39;]</span>
 </code></pre></div>
 </td></tr></table>
-
 <p><img alt="clip0038" src="../img/tutorial_record_and_playback43.png" /></p>
 <p>Now click on the <code>Test</code> button to display the matching results:</p>
 <p><img alt="test results" src="../img/tutorial_record_and_playback44.png" /></p>
@@ -10351,7 +10362,6 @@ item in the DOM Tree automatically:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">//table[@id=&#39;MainContent_grdBooks&#39;]//tr/td[text()=&#39;Amsterdam&#39;]/../td[5]/a</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>This XPath consists of the following elements:</p>
 <ol>
 <li>Find the table with the specified ID.</li>
@@ -10374,7 +10384,6 @@ would have failed.</p>
 <p>Now the line:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Amsterdam&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">();</span>
 </code></pre></div>
-
 <p>by itself does not do anything, it just gets the text.</p>
 <p>So to make the test more useful, we can use the global <strong>Tester</strong> object to add a step to verify this value. Drag the <code>AssertEqual</code> function from the <code>Tester</code> object to your test script just above the <code>SeS(“Amsterdam”)</code> line:</p>
 <p><img alt="Tester.AssertEqual" src="../img/tutorial_web_using_javascript14.png" /></p>
@@ -10382,11 +10391,9 @@ would have failed.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Amsterdam&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">();</span>
 </code></pre></div>
-
 <p>to</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;The values match&#39;</span><span class="p">,</span> <span class="s1">&#39;Amsterdam&#39;</span><span class="p">,</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Amsterdam&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">());</span>
 </code></pre></div>
-
 <p>Now click <strong>Play</strong> to playback the new test:</p>
 <p><img alt="execution report" src="../img/tutorial_web_using_javascript15.png" /></p>
 <p>The test should now pass successfully.</p>
@@ -10497,7 +10504,7 @@ would have failed.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.placeholder": "Search", "search.result.more.other": "# more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -10003,6 +10003,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../New/Roadmap/" class="md-nav__link">
+      Development Roadmap
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10146,7 +10158,7 @@ available for Rapise called <strong>UsingSelenium</strong> (you can open it from
 
 <span class="c1">//Find the body element and verify the text in it</span>
 <span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">FindElementByXPath</span><span class="p">(</span><span class="s2">&quot;//body&quot;</span><span class="p">);</span>
-<span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Text found in BODY&quot;</span><span class="p">,</span> <span class="nx">el</span><span class="p">.</span><span class="nx">GetText</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;Library Information System&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Text found in BODY&quot;</span><span class="p">,</span> <span class="nx">el</span><span class="p">.</span><span class="nx">GetText</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;Library Information System&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mf">1</span><span class="p">);</span>
 
 <span class="c1">//Click on the login link</span>
 <span class="kd">var</span> <span class="nx">logInLink</span> <span class="o">=</span> <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">FindElementById</span><span class="p">(</span><span class="s1">&#39;HeadLoginView\_HeadLoginStatus&#39;</span><span class="p">);</span>
@@ -10171,7 +10183,6 @@ available for Rapise called <strong>UsingSelenium</strong> (you can open it from
 <span class="c1">//Shut down Selenium</span>
 <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Quit</span><span class="p">()</span>
 </code></pre></div>
-
 <p><strong>More sophisticated sample</strong> is available in <a href="https://github.com/Inflectra/rapise-samples/tree/master/SeleniumAPI">rapise-samples repository</a>.</p>
 <p>When you click <code>Play</code> to playback your Selenium script, make sure you have selected one of the Selenium web browser profiles. If you have
 selected a native browser profile (e.g. “Firefox HTML” instead of “Selenium – Firefox”) you will get the error message “WebDriver” is not
@@ -10186,7 +10197,6 @@ defined.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">FindElementById</span><span class="p">(</span><span class="err">…</span><span class="p">)</span>   <span class="c1">// you use:</span>
 <span class="kd">var</span> <span class="cm">/**WebElementWrapper*/</span><span class="nx">el</span> <span class="o">=</span> <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">FindElementById</span><span class="p">(</span><span class="err">…</span><span class="p">)</span>
 </code></pre></div>
-
 <p>For example:</p>
 <p><img alt="clip0024" src="../img/using_native_selenium_code2.png" /></p>
 <h2 id="interoperability-with-rapise-objects">Interoperability with Rapise Objects<a class="headerlink" href="#interoperability-with-rapise-objects" title="Permanent link">&para;</a></h2>
@@ -10195,7 +10205,6 @@ WebDriver code.</p>
 <p>For example, you are using the standard Rapise approach (using learned <code>SeS('object')</code> objects) for testing but at some point want to switch to Selenium API to call a couple of WebElement functions on a learned object, you can use the special <strong>‘element’</strong> property:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">webElement</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;MyObject&#39;</span><span class="p">).</span><span class="nx">element</span><span class="p">;</span>
 </code></pre></div>
-
 <p>If you want to the reverse and be able to create a Rapise <code>SeS('object')</code> on the fly from a physical object on the web page, you can do the <code>MakeObjectForXPath(xpath)</code> function that returns a Rapise <strong>SeSObject</strong>, in the same way that <code>SeS('id')</code> does normally:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">sesObj</span> <span class="o">=</span> <span class="nx">MakeObjectForXPath</span><span class="p">(</span><span class="s2">&quot;//body//div[@id=&#39;logArea&#39;]&quot;</span><span class="p">);</span>
 </code></pre></div>
@@ -10301,7 +10310,7 @@ WebDriver code.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.placeholder": "Search", "search.result.more.other": "# more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

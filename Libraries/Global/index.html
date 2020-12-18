@@ -10301,6 +10301,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../New/Roadmap/" class="md-nav__link">
+      Development Roadmap
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10924,7 +10936,6 @@ record or learn this object, it is always automatically available in any test.</
 <p>Performs Analog Playback of events recorded in a file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAnalogPlay</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">top</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10959,7 +10970,6 @@ record or learn this object, it is always automatically available in any test.</
 will bring running instance (if any) of Windows Calculator to the foreground.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAppActivate</span><span class="p">(</span><span class="nx">title</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -10985,7 +10995,6 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p>Performs mouse click at the current position.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoClick</span><span class="p">(</span><span class="nx">clickType</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11009,7 +11018,6 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p>Executes a BAT/CMD file specified in cmdLine. Optionally one may specify working dir. Requires Rapise 6.4+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCmd</span><span class="p">(</span><span class="nx">cmdLine</span><span class="p">,</span> <span class="nx">wrkDir</span><span class="p">,</span> <span class="nx">wait</span><span class="p">,</span> <span class="nx">show</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11050,7 +11058,6 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p>Compares two JavaScript objects and prints differences to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCompareJsObjects</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11086,7 +11093,6 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p>Decrypts a piece of text.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDecrypt</span><span class="p">(</span><span class="nx">encryptedText</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11112,7 +11118,6 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p>Encrypts a piece of text.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoEncrypt</span><span class="p">(</span><span class="nx">plainText</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11138,7 +11143,6 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p>Simulates mouse horizontal wheel scroll gesture. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoHorizontalScroll</span><span class="p">(</span><span class="nx">scrollAmountInClicks</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11163,7 +11167,6 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="nx">pathToTest</span><span class="p">,</span> <span class="nx">optionalParams</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11204,10 +11207,8 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
     <span class="p">}</span>
 <span class="p">);</span>
 </code></pre></div>
-
 <div class="highlight"><pre><span></span><code><span class="nx">DoInvokeTestParallel</span><span class="p">(</span><span class="nx">testPath</span><span class="p">,</span> <span class="nx">threads</span><span class="p">,</span> <span class="nx">commonParams</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11231,7 +11232,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <tr>
 <td>commonParams</td>
 <td>object</td>
-<td name:_value_...="name:'value',...">Object containing </td>
+<td>Object containing {name:'value',...} pairs to be passed as parameters to all tests.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -11243,7 +11244,6 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <p>Terminates a given process.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoKillByName</span><span class="p">(</span><span class="nx">processName</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11269,7 +11269,6 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <p>Terminates a given process or the last process created by DoLaunch if 'pid' is not specified.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoKillByPid</span><span class="p">(</span><span class="nx">pid</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11296,7 +11295,6 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 to attach if it is already launched.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">cmdLine</span><span class="p">,</span> <span class="nx">wrkDir</span><span class="p">,</span> <span class="nx">attachIfExists</span><span class="p">,</span> <span class="nx">attachToWindow</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11337,7 +11335,6 @@ to attach if it is already launched.</p>
 <p>Loads objects from external .objects.js file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoLoadObjects</span><span class="p">(</span><span class="nx">objectsFilePath</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11361,45 +11358,76 @@ to attach if it is already launched.</p>
 <p><a name="DoMessageBox"></a>    </p>
 <h4 id="domessagebox">DoMessageBox<a class="headerlink" href="#domessagebox" title="Permanent link">&para;</a></h4>
 <p>Shows message box (popup message) to a user.</p>
-
-<p><br>
+<p><br></p>
 <p>'buttons' is a value or a sum of values that specifies the number and type of buttons to display,
                the icon style to use, the identity of the default button, and the modality of the message box. Default value is 0.</p>
-                <pre>
-    0 = vbOKOnly - OK button only
-    1 = vbOKCancel - OK and Cancel buttons
-    2 = vbAbortRetryIgnore - Abort, Retry, and Ignore buttons
-    3 = vbYesNoCancel - Yes, No, and Cancel buttons
-    4 = vbYesNo - Yes and No buttons
-    5 = vbRetryCancel - Retry and Cancel buttons
-    16 = vbCritical - Critical Message icon
-    32 = vbQuestion - Warning Query icon
-    48 = vbExclamation - Warning Message icon
-    64 = vbInformation - Information Message icon
-    0 = vbDefaultButton1 - First button is default
-    256 = vbDefaultButton2 - Second button is default
-    512 = vbDefaultButton3 - Third button is default
-    768 = vbDefaultButton4 - Fourth button is default
-    0 = vbApplicationModal - Application modal (the current application will not work until the user responds to the message box)
-    4096 = vbSystemModal - System modal (all applications wont work until the user responds to the message box)
-                </pre>
-                <p>We can divide the buttons values into four groups: The first group  (0–5) describes the buttons to be displayed in the
-                message box, the second group (16, 32, 48, 64) describes the icon style, the third group (0, 256, 512, 768) indicates
-                which button is the default; and the fourth group (0, 4096) determines the modality of the message box. When adding
-                numbers to create a final value for the buttons parameter, use only one number from each group.</p><br>
-               <p>The function returns a number representation of a button pressed by user:</p>
-               <table>
-                <tr><td width="70">vbOK</td><td width="50">1</td><td width="200">OK button was clicked.</td></tr> 
-                <tr><td>vbCancel</td><td>2</td><td>Cancel button was clicked.</td></tr> 
-                <tr><td>vbAbort</td><td>3</td><td>Abort button was clicked.</td></tr> 
-                <tr><td>vbRetry</td><td>4</td><td>Retry button was clicked.</td></tr> 
-                <tr><td>vbIgnore</td><td>5</td><td>Ignore button was clicked.</td></tr> 
-                <tr><td>vbYes</td><td>6</td><td>Yes button was clicked.</td></tr> 
-                <tr><td>vbNo</td><td>7</td><td>No button was clicked.</td></tr> 
-               </table></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>            <span class="nt">&lt;pre&gt;</span>
+0 = vbOKOnly - OK button only
+1 = vbOKCancel - OK and Cancel buttons
+2 = vbAbortRetryIgnore - Abort, Retry, and Ignore buttons
+3 = vbYesNoCancel - Yes, No, and Cancel buttons
+4 = vbYesNo - Yes and No buttons
+5 = vbRetryCancel - Retry and Cancel buttons
+16 = vbCritical - Critical Message icon
+32 = vbQuestion - Warning Query icon
+48 = vbExclamation - Warning Message icon
+64 = vbInformation - Information Message icon
+0 = vbDefaultButton1 - First button is default
+256 = vbDefaultButton2 - Second button is default
+512 = vbDefaultButton3 - Third button is default
+768 = vbDefaultButton4 - Fourth button is default
+0 = vbApplicationModal - Application modal (the current application will not work until the user responds to the message box)
+4096 = vbSystemModal - System modal (all applications wont work until the user responds to the message box)
+            <span class="nt">&lt;/pre&gt;</span>
+            <span class="nt">&lt;p&gt;</span>We can divide the buttons values into four groups: The first group  (0–5) describes the buttons to be displayed in the
+            message box, the second group (16, 32, 48, 64) describes the icon style, the third group (0, 256, 512, 768) indicates
+            which button is the default; and the fourth group (0, 4096) determines the modality of the message box. When adding
+            numbers to create a final value for the buttons parameter, use only one number from each group.<span class="nt">&lt;/p&gt;&lt;br&gt;</span>
+           <span class="nt">&lt;p&gt;</span>The function returns a number representation of a button pressed by user:<span class="nt">&lt;/p&gt;</span>
+           <span class="nt">&lt;table&gt;</span>
+            <span class="nt">&lt;tr&gt;&lt;td</span> <span class="na">width=</span><span class="s">&quot;70&quot;</span><span class="nt">&gt;</span>vbOK<span class="nt">&lt;/td&gt;&lt;td</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;&lt;td</span> <span class="na">width=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;</span>OK button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
+            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbCancel<span class="nt">&lt;/td&gt;&lt;td&gt;</span>2<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Cancel button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
+            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbAbort<span class="nt">&lt;/td&gt;&lt;td&gt;</span>3<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Abort button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
+            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbRetry<span class="nt">&lt;/td&gt;&lt;td&gt;</span>4<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Retry button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
+            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbIgnore<span class="nt">&lt;/td&gt;&lt;td&gt;</span>5<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Ignore button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
+            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbYes<span class="nt">&lt;/td&gt;&lt;td&gt;</span>6<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Yes button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
+            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbNo<span class="nt">&lt;/td&gt;&lt;td&gt;</span>7<span class="nt">&lt;/td&gt;&lt;td&gt;</span>No button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
+           <span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+</td></tr></table>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMessageBox</span><span class="p">(</span><span class="nx">prompt</span><span class="p">,</span> <span class="nx">buttons</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11430,7 +11458,6 @@ to attach if it is already launched.</p>
 <p>Moves mouse to the specified position.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMouseMove</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">duration</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11464,7 +11491,6 @@ to attach if it is already launched.</p>
 <p>Executes a manual test. Results are shown in the report of the calling test.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoPlayManual</span><span class="p">(</span><span class="nx">rmtFilePath</span><span class="p">,</span> <span class="nx">rmtParams</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11495,7 +11521,6 @@ to attach if it is already launched.</p>
 <p>Executes a test set. Results are shown in the report of the calling test.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRunTestSet</span><span class="p">(</span><span class="nx">testSetFilePath</span><span class="p">,</span> <span class="nx">testSetParams</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11524,7 +11549,6 @@ to attach if it is already launched.</p>
 <p>Sends series of keystrokes to a currently focused application.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11548,7 +11572,6 @@ to attach if it is already launched.</p>
 <p>Sends text to the active application as is (while SendKeys also supports sending special keys). Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSendText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11570,9 +11593,8 @@ to attach if it is already launched.</p>
 <p><a name="DoSleep"></a>    </p>
 <h4 id="dosleep">DoSleep<a class="headerlink" href="#dosleep" title="Permanent link">&para;</a></h4>
 <p>Pauses execution for given number of milliseconds (1000 = 1 second).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSleep</span><span class="p">(</span><span class="nx">millis</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">DoSleep</span><span class="p">(</span><span class="nx">millis</span><span class="o">=</span><span class="mf">1000</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11597,7 +11619,6 @@ to attach if it is already launched.</p>
 Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoTrim</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">global</span><span class="p">,</span> <span class="nx">trimChars</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11633,7 +11654,6 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 <p>Types encrypted password into a control which has a focus.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoTypePassword</span><span class="p">(</span><span class="nx">encryptedPassword</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11659,7 +11679,6 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 <p>Simulates mouse vertical wheel scroll gesture. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoVerticalScroll</span><span class="p">(</span><span class="nx">scrollAmountInClicks</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11684,7 +11703,6 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 was found or timeout.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoWaitFor</span><span class="p">(</span><span class="nx">objectId</span><span class="o">=</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">,</span> <span class="nx">sleepTimeIfFound</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11734,7 +11752,6 @@ in the case of timeout.</p>
 Use the callback if you need to check more complex condition than equality.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoWaitForProperty</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">getterName</span><span class="p">,</span> <span class="nx">propValue</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11780,7 +11797,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Reads text stored in the windows clipboard.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetClipboardText</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>string: Clipboard text</p>
 <p><a name="see.also.global.getclipboardtext"></a></p>
@@ -11789,7 +11805,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Gets current directory path.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCurrentDir</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>string: Path of the current directory.</p>
 <p><a name="see.also.global.getcurrentdir"></a></p>
@@ -11798,7 +11813,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Reads file and returns its content as array of bytes. May be useful for binary files and for passing data to web services.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetFileAsByteArray</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11824,7 +11838,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Returns first day of week for current user.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetFirstDayOfWeek</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>number: 0 - Sunday, 1 - Monday.</p>
 <p><a name="see.also.global.getfirstdayofweek"></a></p>
@@ -11833,7 +11846,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Constructs an absolute file name using working directory (WORKDIR) of the test.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetFullPath</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11859,7 +11871,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Reads OS registered owner from the registry.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetOsOwner</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>string: OS registered owner.</p>
 <p><a name="see.also.global.getosowner"></a></p>
@@ -11868,7 +11879,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Returns OS root path.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetOsPath</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>string: OS root path without the trailing backslash, e.g. 'C:\Windows'.</p>
 <p><a name="see.also.global.getospath"></a></p>
@@ -11877,7 +11887,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Reads OS type from the registry.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetOsType</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>string: OS type string.</p>
 <p><a name="see.also.global.getostype"></a></p>
@@ -11886,7 +11895,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Reads OS service pack version from the registry.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetOsVersion</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>string: Service pack version.</p>
 <p><a name="see.also.global.getosversion"></a></p>
@@ -11895,7 +11903,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">defValue</span><span class="p">,</span> <span class="nx">configPath</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11931,7 +11938,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Reads Rapise version. If 'optMinVersion' is specified, then returns true/false depending on 'optMinVersion' less than actual Rapise version.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetRapiseVersion</span><span class="p">(</span><span class="nx">optMinVersion</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11955,7 +11961,7 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p><a name="GetSpecialFolderPath"></a>    </p>
 <h4 id="getspecialfolderpath">GetSpecialFolderPath<a class="headerlink" href="#getspecialfolderpath" title="Permanent link">&para;</a></h4>
 <p>Returns path to a special folder specified by one of possible values.
-<br>
+<br></p>
 <table width="800" border="1" cellspacing="0" cellpadding="0">
                 <tr><td colspan="2">Possible values:</td></tr>
                 <tr><td width="160">ApplicationData</td><td width="640">The directory that serves as a common repository for application-specific data for the current roaming user.</td></tr> 
@@ -11968,7 +11974,7 @@ Use the callback if you need to check more complex condition than equality.</p>
                 <tr><td>History</td><td>The directory that serves as a common repository for Internet history items.</td></tr> 
                 <tr><td>InternetCache</td><td>The directory that serves as a common repository for temporary Internet files.</td></tr> 
                 <tr><td>LocalApplicationData</td><td>The directory that serves as a common repository for application-specific data that is used by the current, non-roaming user.</td></tr> 
-                <tr><td>MyComputer</td><td>The "My Computer" folder.</td></tr><br />
+                <tr><td>MyComputer</td><td>The "My Computer" folder.</td></tr>  
                 <tr><td>MyDocuments</td><td>The "My Documents" folder.</td></tr> 
                 <tr><td>MyMusic</td><td>The "My Music" folder.</td></tr> 
                 <tr><td>MyPictures</td><td>The "My Pictures" folder.</td></tr> 
@@ -11981,10 +11987,10 @@ Use the callback if you need to check more complex condition than equality.</p>
                 <tr><td>Startup</td><td>The directory that corresponds to the user's Startup program group.</td></tr> 
                 <tr><td>System</td><td>The System directory.</td></tr> 
                 <tr><td>Templates</td><td>The directory that serves as a common repository for document templates.</td></tr> 
-</table></p>
+</table>
+
 <div class="highlight"><pre><span></span><code><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="nx">folder</span><span class="o">=</span><span class="nx">MyDocuments</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12010,7 +12016,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Updates clipboard text</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetClipboardText</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12036,7 +12041,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Set default path for config file instead of default %WORKDIR%\Config.json. Supports .xlsx and .json file format. This path is used by default for further calls to Global.GetProperty and Global.SetProperty</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetConfigPath</span><span class="p">(</span><span class="nx">defPath</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12062,7 +12066,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Creates or rewrites file and fills with contents of the provided byte array.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetFileAsByteArray</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12093,7 +12096,6 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p>Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. If the file does not exist it will be created.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">configPath</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12228,7 +12230,7 @@ Use the callback if you need to check more complex condition than equality.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.placeholder": "Search", "search.result.more.other": "# more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

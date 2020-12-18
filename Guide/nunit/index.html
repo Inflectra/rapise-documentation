@@ -10038,6 +10038,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../New/Roadmap/" class="md-nav__link">
+      Development Roadmap
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -10217,7 +10229,6 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Each test case is a function with a special attribute [<strong>Test</strong>]. NUnit uses it to find test cases, then collects cases in sets and so on.</p>
 <p>Rapise integration makes execution of Rapise tests as simple as execution of normal NUnit tests:</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
@@ -10236,11 +10247,9 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Now we use another attribute to mark the test:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[SeSNUnitTest(@&quot;&lt;path to .sstest&gt;&quot;)]</span>
 </code></pre></div>
-
 <p>We just mark this test as a wrapper for concrete Rapise test instance.</p>
 <h2 id="installing-nunit">Installing NUnit<a class="headerlink" href="#installing-nunit" title="Permanent link">&para;</a></h2>
 <p>To run this sample you need NUnit. You can download NUnit from this site <a href="http://www.nunit.org/index.php?p=download">http://www.nunit.org/index.php?p=download</a>.</p>
@@ -10254,7 +10263,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit\SeSSamplesNUnit\bin\Release\SeSSamplesNUnit.dll</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>Press “Run” to start the test</p>
 <p><img alt="clip0068" src="../img/nunit3.png" /></p>
 <p>After the test ended NUnit GUI must look like:</p>
@@ -10273,7 +10281,6 @@ were selected for running but were not run, together with the reason. The <stron
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit.vsi</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>and follow the installation process</p>
 <p><img alt="clip0070" src="../img/nunit5.png" /></p>
 <p>This will add code snippets and project templates described below.</p>
@@ -10289,7 +10296,6 @@ were selected for running but were not run, together with the reason. The <stron
 <span class="k">using</span> <span class="nn">NUnit.Framework</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">SeSNUnit</span><span class="p">;</span>
 </code></pre></div>
-
 <p>File also contains <code>Fixture1class</code> with <code>[TestFixture]</code> attribute:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[TestFixture]</span>
 <span class="k">public</span> <span class="k">class</span> <span class="nc">Fixture1</span>
@@ -10297,7 +10303,6 @@ were selected for running but were not run, together with the reason. The <stron
     <span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>This is the attribute that marks a class that contains tests and, optionally, setup or teardown methods.</p>
 <p>There are a few restrictions on a class that is used as a test fixture.</p>
 <ul>
@@ -10329,7 +10334,6 @@ course of a session.</p>
     <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Now you also have a snippet, by which you can easily add <code>TestSeS</code> method with <code>[SeSNUnitTest(@"&lt;path to .sstest&gt;")]</code> attribute. Right
 click in class body and from opened context menu select <code>Insert Snippet…</code>:</p>
 <p><img alt="clip0072" src="../img/nunit7.png" /></p>
@@ -10343,7 +10347,6 @@ click in class body and from opened context menu select <code>Insert Snippet…<
     <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>You just need to add path of <code>.sstest</code>  file to <code>SeSNUnitTest</code> attribute. If you add code via snippet in standard SeSNUnit Test project you will have two <code>TestSeS</code> methods, so don’t forget to change the name of one of them.</p>
                 
               
@@ -10447,7 +10450,7 @@ click in class body and from opened context menu select <code>Insert Snippet…<
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.placeholder": "Search", "search.result.more.other": "# more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
