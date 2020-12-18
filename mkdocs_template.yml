@@ -382,6 +382,7 @@ nav:
     - 'Release Notes for 6.4': 'New/6_4.md'
     - 'Release Notes for 6.3': 'New/6_3.md'
     - 'Release Notes for 6.2': 'New/6_2.md'
+    - 'Development Roadmap': 'New/Roadmap.md'
 - 'Know Your Way Around': 'Intro/orientation.md'
 - 'Knowledge Base': 'Manuals/kb.md'
 - 'Automation Tips': 'Intro/automation.md'
