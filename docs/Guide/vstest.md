@@ -6,9 +6,24 @@ This section describes how to execute Rapise tests in [Azure DevOps pipelines](h
 
 We assume that Rapise tests are stored in a Git repository and Azure DevOps pipeline is connected to it. You may run Rapise tests both on [self-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) and [Microsoft-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml).
 
-In order to run Rapise tests on a Microsoft-hosted Windows Agent you need to configure Rapise Installation task. If you are running on a self-hosted Windows Agent you may install Rapise manually once and use it in every pipeline run.
+### Rapise Test Adapter Task
+
+To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task you need to install Rapise and Rapise Test Adapter for VSTest. The best way to do it is to use [Rapise Test Adapter Extension](https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapisetestadapter-azure) from Azure Marketplace. After this extension is installed add the Rapise Test Adapter task yo your pipelline.
+
+ ![Find Rapise Test Adapter Task](./img/rapise_test_adapter_task_search.png)
+
+ In the task settings you may choose what versions of Rapise and Rapise Test Adapter to install.
+
+ ![Rapise Test Adapter Task Settings](./img/rapise_test_adapter_task.png)
+
+ Proceed to the [next step](#visual-studio-test-platform-installer-task).
 
 ### Rapise Installation Task
+
+!!! important
+    Skip this section if you are using [Rapise Test Adapter Task](#rapise-test-adapter-task)
+
+In order to run Rapise tests on a Microsoft-hosted Windows Agent you need to configure Rapise Installation task. If you are running on a self-hosted Windows Agent you may install Rapise manually once and use it in every pipeline run.
 
 Download and place this PowerShell script to your Git repository:
 
@@ -32,6 +47,9 @@ This script downloads and installs Rapise. It also installs Rapise extension int
     ```
 
 ### Rapise.TestAdapter
+
+!!! important
+    Skip this section if you are using [Rapise Test Adapter Task](#rapise-test-adapter-task)
 
 To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task install [Rapise.TestAdapter NuGet package](https://www.nuget.org/packages/Rapise.TestAdapter/).
 
@@ -76,7 +94,7 @@ install Rapise.TestAdapter -Version $(RapiseTestAdapterVersion)
 
 In the pipeline settings set **RapiseTestAdapterVersion** variable to the Rapise.TestAdapter version you want to install (e.g. 1.0.11).
 
-![RapiseTestAdapterVersion Variable](./img/rapise_testadapter_version.png )
+![RapiseTestAdapterVersion Variable](./img/rapise_testadapter_version.png)
 
 The task will install Rapise.TestAdapter into
     
