@@ -10146,6 +10146,7 @@ Configure system variable <code>NODE_PATH</code> and set it to <code>node_module
 <div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;echo %NODE_PATH%
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\n</span>ode_modules
 </code></pre></div>
+
 <h2 id="test-framework">Test Framework<a class="headerlink" href="#test-framework" title="Permanent link">&para;</a></h2>
 <p>As a starting point you may use <a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/AzureDevOpsFriendlyArchhitecture">sample framework</a> we published on GitHub.</p>
 <p>The root folder of the framework contains:</p>
@@ -10160,6 +10161,7 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
 |-CreateNewBook
 |-FailedLogin
 </code></pre></div>
+
 <p><code>test</code> folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests. </p>
 <div class="highlight"><pre><span></span><code>AzureDevOpsFriendlyArchhitecture 
 |
@@ -10168,6 +10170,7 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
     |-CreateNewBook.js
     |-FailedLogin.js
 </code></pre></div>
+
 <p>Predefined content of the files is:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">rapise</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;../rapise&#39;</span><span class="p">)</span>
 <span class="kd">var</span> <span class="nx">tap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;tap&#39;</span><span class="p">)</span>
@@ -10176,9 +10179,10 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
 <span class="kd">var</span> <span class="nx">testName</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
 
 <span class="nx">rapise</span><span class="p">.</span><span class="nx">run</span><span class="p">(</span><span class="nx">testName</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">exit_code</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">tap</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">exit_code</span> <span class="o">==</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">testName</span><span class="p">);</span>    
+    <span class="nx">tap</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">exit_code</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">testName</span><span class="p">);</span>    
 <span class="p">})</span>
 </code></pre></div>
+
 <p>There is also <code>tap-parallel-not-ok</code> in <code>tests</code> folder that instructs Node-Tap to run tests sequentially.</p>
 <h2 id="run-tests-with-tap">Run Tests with Tap<a class="headerlink" href="#run-tests-with-tap" title="Permanent link">&para;</a></h2>
 <p>To run tests on a local machine open command prompt in the root folder of the framework and execute:</p>
@@ -10189,6 +10193,7 @@ You should see tests running:
 <p>To pass parameters to a Rapise test specify <code>--test-arg</code>. The value is JSON stringified object. Every property of this object will be evaluated by Rapise as a global variable:</p>
 <div class="highlight"><pre><span></span><code>tap --test-arg<span class="o">=</span><span class="s2">&quot;{&#39;g_browserLibrary&#39;:&#39;Selenium - Chrome&#39;}&quot;</span>
 </code></pre></div>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QEH5a9vqymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="azure-devops-pipeline-v1">Azure DevOps Pipeline v1<a class="headerlink" href="#azure-devops-pipeline-v1" title="Permanent link">&para;</a></h2>
@@ -10377,7 +10382,7 @@ It calls <code>summarize.js</code> to adjust XUnit reports. Azure DevOps report 
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
       
       <script>
         app = initialize({

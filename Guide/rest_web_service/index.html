@@ -3249,6 +3249,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#handling-request-timeout" class="md-nav__link">
+    Handling Request Timeout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-binary-downloads" class="md-nav__link">
+    Handling Binary Downloads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#handling-file-uploads-and-multipart-requests" class="md-nav__link">
     Handling File Uploads and Multipart Requests
   </a>
@@ -10199,6 +10213,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#handling-request-timeout" class="md-nav__link">
+    Handling Request Timeout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-binary-downloads" class="md-nav__link">
+    Handling Binary Downloads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#handling-file-uploads-and-multipart-requests" class="md-nav__link">
     Handling File Uploads and Multipart Requests
   </a>
@@ -10350,6 +10378,13 @@
 <p><img alt="rest_hybrid_test" src="../img/rest_web_service12.png" /></p>
 <p>Once you have created your REST web service test, you can use the standard <a href="../playback/">Playback</a> functionality in Rapise to execute your test and display the report:</p>
 <p><img alt="tutorial_web_services_pic30" src="../img/rest_web_service13.png" /></p>
+<h2 id="handling-request-timeout">Handling Request Timeout<a class="headerlink" href="#handling-request-timeout" title="Permanent link">&para;</a></h2>
+<p>Special request or Session parameter named <code>RequestTimeoutMs</code> allows changing the timeout for the request. Otherwise default timeout (100000 = 100 seconds) is used.</p>
+<p><img alt="RequestTimeoutMs" src="../img/rest_web_service_requesttimeoutms.png" /></p>
+<h2 id="handling-binary-downloads">Handling Binary Downloads<a class="headerlink" href="#handling-binary-downloads" title="Permanent link">&para;</a></h2>
+<p>Special parameter value <code>WriteResponseTo</code> allows defining a path to the file where full binary version of the server response is saved.</p>
+<p>It should be a full path. It may contain environment variable reference (<code>%WORKDIR%</code>, <code>%ROOT%</code> etc).</p>
+<p><img alt="WriteResponseTo" src="../img/rest_web_service_writeresponseto.png" /></p>
 <h2 id="handling-file-uploads-and-multipart-requests">Handling File Uploads and Multipart Requests<a class="headerlink" href="#handling-file-uploads-and-multipart-requests" title="Permanent link">&para;</a></h2>
 <p>Each Request with <strong>Content-Type</strong> set to <code>multipart/form-data</code> is assumed to be a special request and handled in a special way.</p>
 <p>The <strong>Body</strong> part should be a valid <code>JSON</code> with the following structure:</p>
@@ -10365,11 +10400,12 @@
             <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;uploadfile&quot;</span><span class="p">,</span>
             <span class="s2">&quot;ContentType&quot;</span><span class="o">:</span> <span class="s2">&quot;image/png&quot;</span><span class="p">,</span>
             <span class="s2">&quot;FileName&quot;</span><span class="o">:</span> <span class="s2">&quot;image.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;FullPath&quot;</span><span class="o">:</span> <span class="s2">&quot;path_to_file_for_upload&quot;</span>
+            <span class="s2">&quot;FilePath&quot;</span><span class="o">:</span> <span class="s2">&quot;path_to_file_for_upload&quot;</span>
         <span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart1.png" /></p>
 <p>For the text fields <strong>ContentType</strong> is optional. By default is is set to <code>text/plain</code>.</p>
 <p>For file upload fields <strong>ContentType</strong> and <strong>FileName</strong> are optional. By default content-type and <strong>FileName</strong> are auto-detected form the <strong>FilePath</strong>.</p>
@@ -10388,6 +10424,7 @@
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <h3 id="json-as-field-value">JSON as Field Value<a class="headerlink" href="#json-as-field-value" title="Permanent link">&para;</a></h3>
 <p>Here is how you can pass JSON value of the field:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -10396,13 +10433,14 @@
       <span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="s2">&quot;text/json&quot;</span><span class="p">,</span>
       <span class="s2">&quot;Value&quot;</span><span class="o">:</span> <span class="p">{</span>
         <span class="s2">&quot;One&quot;</span><span class="o">:</span><span class="s2">&quot;Value1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Two&quot;</span><span class="o">:</span><span class="mf">123</span>
+        <span class="s2">&quot;Two&quot;</span><span class="o">:</span><span class="mi">123</span>
       <span class="p">}</span>
     <span class="p">},</span>
     <span class="p">...</span>
   <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <h3 id="params-in-multipart-request">Params in Multipart Request<a class="headerlink" href="#params-in-multipart-request" title="Permanent link">&para;</a></h3>
 <p>It is typical that you want to parameterize text value or file path. It is important to make sure that you properly quote custom value. I.e.</p>
 <p>If we have a parameterized JSON Body:</p>
@@ -10420,6 +10458,7 @@
   <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart2.png" /></p>
 <p>Once parameters are defined for the <code>multipart</code> request, you should make sure that they are properly escaped. Consider using <code>JSON.stringify</code> appropriately, i.e.:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameters</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
@@ -10527,7 +10566,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
       
       <script>
         app = initialize({

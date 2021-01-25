@@ -11251,6 +11251,7 @@
 <p>Adds selection of specified option in multi-select element.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAddSelection</span><span class="p">(</span><span class="nx">optionText</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11276,6 +11277,7 @@
 <p>Clicks on HTML element (button, link).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">forceEvent</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11311,6 +11313,7 @@
 <p>Double-Clicks on HTML element (button, link).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDblClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">forceEvent</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11346,6 +11349,7 @@
 <p>Returns n-th child (zero-based).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMChildAt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11371,6 +11375,7 @@
 <p>Returns number of children elements for this one.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMChildrenCount</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>number: Number of children elements.</p>
 <p><a name="see.also.htmlobject.dodomchildrencount"></a></p>
@@ -11379,6 +11384,7 @@
 <p>Creates a clone of this object converted to a requested type.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMConvert</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11404,6 +11410,7 @@
 <p>Returns parent element (if any) with given attribute matching given string or 'regex:...' expression.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMFindParentWithAttribute</span><span class="p">(</span><span class="nx">attrName</span><span class="p">,</span> <span class="nx">match</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11434,6 +11441,7 @@
 <p>Returns specified attribute.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMGetAttribute</span><span class="p">(</span><span class="nx">attrName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11459,6 +11467,7 @@
 <p>Returns all attributes of a node.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMGetAttributes</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>array: Array of attributes.</p>
 <p><a name="see.also.htmlobject.dodomgetattributes"></a></p>
@@ -11467,6 +11476,7 @@
 <p>Returns next sibling element for this one.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMNextSibling</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p><a href="./">HTMLObject</a>: Next sibling element.</p>
 <p><a name="see.also.htmlobject.dodomnextsibling"></a></p>
@@ -11475,6 +11485,7 @@
 <p>Returns parent element having this element.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMParent</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p><a href="./">HTMLObject</a>: Parent element.</p>
 <p><a name="see.also.htmlobject.dodomparent"></a></p>
@@ -11483,6 +11494,7 @@
 <p>Return previous sibling element for this one.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMPrevSibling</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p><a href="./">HTMLObject</a>: Previous sibling element.</p>
 <p><a name="see.also.htmlobject.dodomprevsibling"></a></p>
@@ -11491,6 +11503,7 @@
 <p>Gets array of elements matching CSS selector on this object.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMQueryCss</span><span class="p">(</span><span class="nx">css</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11516,6 +11529,7 @@
 <p>Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then <code>null</code> is returned. Requires Rapise 6.4+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMQueryValue</span><span class="p">(</span><span class="nx">xpath</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11541,6 +11555,7 @@
 <p>Gets array of elements matching XPath query on this object.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMQueryXPath</span><span class="p">(</span><span class="nx">xpath</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11566,6 +11581,7 @@
 <p>Returns Root element having this element.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoDOMRoot</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p><a href="./">HTMLObject</a>: Root element having this element.</p>
 <p><a name="see.also.htmlobject.dodomroot"></a></p>
@@ -11574,6 +11590,7 @@
 <p>Makes sure specified element is visible on the screen.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoEnsureVisible</span><span class="p">(</span><span class="nx">vAlign</span><span class="p">,</span> <span class="nx">hAlign</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11604,6 +11621,7 @@
 <p>Finds screen rectangle for this object.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoGetRect</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>object: object {x, y, w, h}</p>
 <p><a name="see.also.htmlobject.dogetrect"></a></p>
@@ -11612,6 +11630,7 @@
 <p>Gets selected options text of a SELECT element. Example: 'Option1,Option2'.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoGetSelection</span><span class="p">(</span><span class="nx">delim</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11637,6 +11656,7 @@
 <p>Moves mouse on HTML element with offset.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMouseMove</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11667,6 +11687,7 @@
 <p>Selects specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11692,6 +11713,7 @@
 <p>Sets specified state of check box.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSetCheck</span><span class="p">(</span><span class="nx">bcheck</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11717,6 +11739,7 @@
 <p>Sets text for input edit or textarea.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11841,7 +11864,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
       
       <script>
         app = initialize({

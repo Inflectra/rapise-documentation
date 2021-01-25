@@ -10706,6 +10706,7 @@
     <span class="nx">KillBrowser</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>This code will check to see if the variables are provided by SpiraTest and if not, it will use some defaults. This is useful when you want to be able to run the test directly from Rapise and from SpiraTest without having to make changes to the test script.</p>
 <p>Note, that if your test is implemented in RVL, you may define these variables right in RVL sheet using <a href="../../RVL/Variables/#assigning">Global Variables</a>. So same definition would look like:</p>
 <p><img alt="automation hosts" src="../img/using_rapise_with_spiratest_rvl_vars.png" /></p>
@@ -10713,6 +10714,7 @@
 <p>The <code>g_browser_library</code> variable is used to specify which browser should run the test. This is done with the following command, located in the <code>CreateNewBook.js</code> file:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;%g_browser_library:Internet Explorer HTML%&quot;</span><span class="p">];</span>
 </code></pre></div>
+
 <p>This tells Rapise to use either the <code>g_browser_library</code> variable (if defined) or fallback to using Internet Explorer if not.</p>
 <blockquote>
 <p><strong>Note:</strong> Parameters in Rapise and SpiraTest are case-sensitive, so make sure that your parameter names in SpiraTest match those in Rapise exactly, including the specific case.</p>
@@ -10880,6 +10882,7 @@ Inflectra</code> program folder:</p>
 <p>By default the video recorder is executed with these parameters:</p>
 <div class="highlight"><pre><span></span><code>-noaudio -bitRate 512 -frameRate 2
 </code></pre></div>
+
 <p>You may change them by defining a Test Case parameter with name <code>g_videoRecorderArguments</code>.</p>
 <p>Recorded video is attached to the test run as ScreenCapture.wmv.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
@@ -10989,7 +10992,7 @@ Inflectra</code> program folder:</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
       
       <script>
         app = initialize({
