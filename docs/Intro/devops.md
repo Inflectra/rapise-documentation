@@ -8,7 +8,7 @@ For test management and execution we recommend to use [SpiraTest](https://www.in
 
 If you use Azure DevOps or TFS we also have a solution:
 
-- Azure DevOps integration v3 [manual](/Guide/vstest/)
+- Azure DevOps integration v3 [manual](/Guide/vstest/) and [video](https://youtu.be/BIgOIxkZ5Hk?t=507)
 - Azure DevOps integration v2 [manual](/Guide/ado_integration/) and [video](https://youtu.be/H7nOorRs00A)
 - Visual Studio and Azure DevOps Integration v1 [manual](/Guide/visual_studio/) and [video](https://youtu.be/iPVplfqKj50)
 

@@ -73,10 +73,11 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Highlights
 
-- [Rapise 6.4 Highlights](https://youtu.be/jjQUEiiP8EQ)
-- [Rapise 6.3 Highlights](https://youtu.be/GDbRA2WyQfQ)
-- [Rapise 6.2 Highlights](https://youtu.be/piz2ArpCGVI)
-- [Rapise 6.1 Highlights](https://youtu.be/Fo8M-WWAwUU)
+- [Rapise 6.6](https://youtu.be/0V6dHRWj_o8)
+- [Rapise 6.4](https://youtu.be/jjQUEiiP8EQ)
+- [Rapise 6.3](https://youtu.be/GDbRA2WyQfQ)
+- [Rapise 6.2](https://youtu.be/piz2ArpCGVI)
+- [Rapise 6.1](https://youtu.be/Fo8M-WWAwUU)
 
 ### Introductions
 

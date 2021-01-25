@@ -56,7 +56,7 @@ In this case [ReportViewer](report_viewer.md) shows two additional columns - **E
 Whenever one runs a test, the report will be stored in the following formats:
 
 1. `.trp` - default Rapise test report format. Contains all information, status and images. Rapise displays it using built in [Report Viewer](report_viewer.md).
-2. `.tap` - pure text, **Test Anything Protocol** [formatted](tap) output. Usually saved as `last.tap`. It is a simplest way for integrating the test into external/custom execution pipelines.
+2. `.tap` - pure text, **Test Anything Protocol** [formatted](https://testanything.org/) output. Usually saved as `last.tap`. It is a simplest way for integrating the test into external/custom execution pipelines.
 3. `index.html` and `imageNNN.png` - flow output. It is saved into `<test folder>\Reports\<Date_Time>\` folder:
      ![Flow Index](img/automated_reporting_flowindexhtml.png)
 

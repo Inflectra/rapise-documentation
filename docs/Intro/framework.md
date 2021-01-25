@@ -112,7 +112,7 @@ For more complex cases, you may have additional `.js` files and [include](https:
 
 ### Profiles
 
-Local [Web](../Guide/browser_settings/#local-browser-profiles) or [Mobile](../Guide/mobile_settings_dialog/#local-mobile-profiles) Profiles makes it easier to configure the browsers for the whole framework.
+Local [Web](/Guide/browser_settings/#local-browser-profiles) or [Mobile](/Guide/mobile_settings_dialog/#local-mobile-profiles) Profiles makes it easier to configure the browsers for the whole framework.
 
 ### WebAppProfile.json
 
