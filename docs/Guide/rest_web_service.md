@@ -117,6 +117,20 @@ Once you have created your REST web service test, you can use the standard [Play
 
 ![tutorial_web_services_pic30](./img/rest_web_service13.png)
 
+## Handling Request Timeout
+
+Special request or Session parameter named `RequestTimeoutMs` allows changing the timeout for the request. Otherwise default timeout (100000 = 100 seconds) is used.
+
+![RequestTimeoutMs](./img/rest_web_service_requesttimeoutms.png)
+
+## Handling Binary Downloads
+
+Special parameter value `WriteResponseTo` allows defining a path to the file where full binary version of the server response is saved.
+
+It should be a full path. It may contain environment variable reference (`%WORKDIR%`, `%ROOT%` etc).
+
+![WriteResponseTo](./img/rest_web_service_writeresponseto.png)
+
 
 ## Handling File Uploads and Multipart Requests
 
@@ -137,7 +151,7 @@ The **Body** part should be a valid `JSON` with the following structure:
             "Name": "uploadfile",
             "ContentType": "image/png",
             "FileName": "image.png",
-            "FullPath": "path_to_file_for_upload"
+            "FilePath": "path_to_file_for_upload"
         }
     ]
 }
