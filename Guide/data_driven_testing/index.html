@@ -10338,7 +10338,6 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
     <span class="nx">Logic</span><span class="p">(</span><span class="s2">&quot;Inflectra&quot;</span><span class="p">)</span> <span class="c1">//don&#39;t forget to call your new function</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="3-create-the-test-case-data">3. Create the Test Case Data<a class="headerlink" href="#3-create-the-test-case-data" title="Permanent link">&para;</a></h3>
 <p>Create a spreadsheet with name <strong>searchterms.xlsx</strong>. For this right click the test node and choose <code>Create &gt; Spreadsheet...</code>.</p>
 <p><img alt="create spreadsheet" src="../img/data_driven_createspreadsheet.png" /></p>
@@ -10367,13 +10366,12 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
     <span class="k">while</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">())</span>
     <span class="p">{</span>
         <span class="c1">// Read cell value from column 0</span>
-        <span class="kd">var</span> <span class="nx">term</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">term</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
         <span class="c1">// Pass it into Logic function</span>
         <span class="nx">Logic</span><span class="p">(</span><span class="nx">term</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="using-a-relational-database">Using a Relational Database<a class="headerlink" href="#using-a-relational-database" title="Permanent link">&para;</a></h2>
 <p>Rapise comes with the <a href="/Libraries/Database/">Database</a> query global object that allows you to send SQL queries to a database and then iterate through the results. The process for creating such a data-driven test is as follows:</p>
 <h3 id="1-record-a-test_1">1. Record a Test<a class="headerlink" href="#1-record-a-test_1" title="Permanent link">&para;</a></h3>
@@ -10402,7 +10400,6 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
     <span class="nx">Logic</span><span class="p">(</span><span class="s2">&quot;Inflectra&quot;</span><span class="p">)</span> <span class="c1">//don&#39;t forget to call your new function</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="3-use-database-to-connect-the-test-case-data">3. Use Database to Connect the Test Case Data.<a class="headerlink" href="#3-use-database-to-connect-the-test-case-data" title="Permanent link">&para;</a></h3>
 <p>This assumes that you already have an <strong>ODBC</strong> or <strong>OLE DB</strong> compatible relational database that contains the necessary test data. You drag the <code>Database</code> global object into the script editor:</p>
 <p><img alt="data driven testing,database" src="../img/data_driven_testing4.png" /></p>
@@ -10429,7 +10426,6 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
     <span class="nx">Logic</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB357.aspx">KB357</a> Data-driven testing with spreadsheets and RVL</li>
@@ -10538,7 +10534,7 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

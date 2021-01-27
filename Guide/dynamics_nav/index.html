@@ -10360,7 +10360,6 @@
 <p>Then press <code>Select</code> button to start recording. When recording is completed you will see that Rapise automatically attached necessary libraries in the code of <code>Main.js</code> file:</p>
 <div class="highlight"><pre><span></span><code>    <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;DynamicsNAV&quot;</span><span class="p">];</span>
 </code></pre></div>
-
 <ul>
 <li>
 <p><strong>Microsoft UI Automation</strong> is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by means other than standard input. UI Automation also allows automated test scripts to interact with the UI. </p>
@@ -10378,7 +10377,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    regex:.*Microsoft Dynamics NAV</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>Also Rapise adjusts <code>Record Title</code> in test settings to the same regular expression so you do not need to choose the Dynamics NAV main window during subsequent recording sessions.</p>
 <p><img alt="Test Settings" src="../img/dynamicsnavtestsettings.png" /></p>
 <h3 id="titles-of-child-windows">Titles of Child Windows<a class="headerlink" href="#titles-of-child-windows" title="Permanent link">&para;</a></h3>
@@ -10392,7 +10390,7 @@
     <span class="kd">function</span> <span class="nx">_NavIsRunning</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="kd">var</span> <span class="nx">windows</span> <span class="o">=</span> <span class="nx">g_util</span><span class="p">.</span><span class="nx">FindWindows</span><span class="p">(</span><span class="s2">&quot;regex:.*Microsoft Dynamics NAV&quot;</span><span class="p">,</span> <span class="s2">&quot;regex:WindowsForms10.*&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="nx">windows</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nx">windows</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="nx">_NavIsRunning</span><span class="p">())</span>
@@ -10413,27 +10411,25 @@
 
     <span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">);</span>
 
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">60</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="nx">_NavIsRunning</span><span class="p">())</span>
         <span class="p">{</span>
             <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client started successfully&quot;</span><span class="p">);</span>
             <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
         <span class="p">}</span>
-        <span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+        <span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mf">1000</span><span class="p">);</span>
     <span class="p">}</span>
 
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client did not start&quot;</span><span class="p">);</span>
     <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>You can now use this function in RVL</p>
 <p><img alt="launch nav rvl" src="../img/dynamicsnavlaunchrvl.png" /></p>
 <p>and in JavaScript:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DynamicsNAVLaunch</span><span class="p">();</span>
 </code></pre></div>
-
 <h2 id="recording-actions-and-learning-objects">Recording Actions and Learning Objects<a class="headerlink" href="#recording-actions-and-learning-objects" title="Permanent link">&para;</a></h2>
 <p>During recording while you interact with Dynamics NAV controls Rapise captures actions and displays them in the recording dialog.</p>
 <p><img alt="Recording Dialog" src="../img/dynamicsnavrecordingdialog.png" /></p>
@@ -10453,7 +10449,6 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Address&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;1200 Market St&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
 <h2 id="text-box">Text Box<a class="headerlink" href="#text-box" title="Permanent link">&para;</a></h2>
@@ -10487,7 +10482,6 @@
 <span class="c1">// Select city in the table, choose &quot;Gmunden&quot; value in the column &quot;City&quot;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <p>Rapise has complete support for Dynamics NAV grids/tables. It recognizes Dynamics NAV grids as <a href="/Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> object. Rapise can record user clicks on cells and also provides API to get the number of rows, columns, get column name by index.</p>
 <p>When you click on a cell in a table Rapise records column name and value in the cell. The generated click step looks like:</p>
@@ -10496,19 +10490,18 @@
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  <a href="/Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> for more details.</p>
 <p>Here is an example of interacting with a grid.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">grid</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">);</span>
 
-<span class="kd">var</span> <span class="nx">cell</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">cell</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">cell</span><span class="p">);</span>
 
-<span class="kd">var</span> <span class="nx">colValues</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnValues</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">colValues</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnValues</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colValues</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">));</span>
 
 <span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Bilabankinn&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
-<span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickColumn</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickColumn</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
 <span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickColumn</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 
 <span class="kd">var</span> <span class="nx">rowCount</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetRowCount</span><span class="p">();</span>
@@ -10516,7 +10509,7 @@
 
 <span class="kd">var</span> <span class="nx">colCount</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnCount</span><span class="p">();</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colCount</span><span class="p">);</span>
-<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">colCount</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">colCount</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">colName</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;\&quot;&quot;</span> <span class="o">+</span> <span class="nx">colName</span> <span class="o">+</span> <span class="s2">&quot;\&quot;&quot;</span><span class="p">);</span>
@@ -10524,7 +10517,6 @@
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colIndex</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="dynamics-nav-cook-book">Dynamics NAV Cook Book<a class="headerlink" href="#dynamics-nav-cook-book" title="Permanent link">&para;</a></h2>
 <h2 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window<a class="headerlink" href="#maximizeminimizerestore-window" title="Permanent link">&para;</a></h2>
 <p>You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id <code>ToolBar</code>.</p>
@@ -10544,7 +10536,6 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Iconic</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Now you can use these functions in RVL and JavaScript.</p>
 <p><strong>RVL</strong></p>
 <p><img alt="dynamicsnavmaximizervl" src="../img/dynamicsnavmaximizervl.png" /></p>
@@ -10553,16 +10544,14 @@
 <span class="nx">RestoreWindow</span><span class="p">(</span><span class="s2">&quot;ToolBar&quot;</span><span class="p">);</span>
 <span class="nx">MinimizeWindow</span><span class="p">(</span><span class="s2">&quot;ToolBar&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="scroll-to-a-specific-row-of-a-grid">Scroll to a Specific Row of a Grid<a class="headerlink" href="#scroll-to-a-specific-row-of-a-grid" title="Permanent link">&para;</a></h2>
 <p>Generally Dynamics NAV grids do not allow accessing cells which are not currently visible on screen. Using scrolling it is possible to make a specific row/column of a grid visible. If you perform <a href="/Libraries/DynamicsNAVTable/#DoClickCell">DoClickCell</a> action Rapise will automatically ensure that the cell is visible on screen. There is also explicit scroll action <a href="/Libraries/DynamicsNAVTable/#DoScrollTo">DoScrollTo</a>.</p>
 <p><strong>RVL</strong></p>
 <p><img alt="dynamicsnavgridscrollrvl" src="../img/dynamicsnavgridscrollrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Francematic&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
-<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoScrollTo</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoScrollTo</span><span class="p">(</span><span class="mf">30</span><span class="p">,</span> <span class="mf">7</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../microsoft_dynamics/">Microsoft Dynamics</a></li>
@@ -10676,7 +10665,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

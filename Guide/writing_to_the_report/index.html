@@ -10203,19 +10203,16 @@
 
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">PopReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">);</span> <span class="c1">//test steps proceeding this will be back to value</span>
 </code></pre></div>
-
 <p>If columnName does not exist, it will be added to the report.</p>
 <p><strong>SetReportAttribute</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SetReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>If <code>columnName</code> does not exist, it will be added to the report.  Column <code>columnName</code> will be populated with <code>value</code> for rows created after this function call (unless specified otherwise).</p>
 <h2 id="adding-data">Adding Data<a class="headerlink" href="#adding-data" title="Permanent link">&para;</a></h2>
 <p>Data must be associated with an <strong>Assert</strong> row or a <strong>Message</strong> row.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;expression&quot;</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;columnValuePairs&quot;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;columnValuePairs&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <ul>
 <li><strong>description</strong> is a string.</li>
 <li><strong>expression</strong> is the boolean expression that the assertion tests.</li>
@@ -10229,7 +10226,6 @@
     <span class="k">new</span> <span class="nx">SeSReportImage</span><span class="p">(</span><span class="s2">&quot;ImageWrapperObject&quot;</span><span class="p">,</span> <span class="s2">&quot;imageDescription&quot;</span><span class="p">)</span>
 <span class="p">]</span>
 </code></pre></div>
-
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../automated_reporting/">Automated Reporting</a></li>
@@ -10337,7 +10333,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

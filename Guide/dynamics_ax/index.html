@@ -10473,7 +10473,6 @@
 <p>When recording is completed you can see attached libraries in the code of <code>Main.js</code> file:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;DynamicsAX&quot;</span><span class="p">];</span>
 </code></pre></div>
-
 <h2 id="automatic-adjustment-of-window-title-object-property">Automatic Adjustment of <code>Window Title</code> Object Property<a class="headerlink" href="#automatic-adjustment-of-window-title-object-property" title="Permanent link">&para;</a></h2>
 <p>Main window title of Dynamics AX is dynamic by nature.</p>
 <p><img alt="DynamicsAX Title" src="../img/dynamicsaxtitle.png" /></p>
@@ -10481,7 +10480,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    regex:.Microsoft Dynamics AX.*</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>So recorded object properties automatically adjusted as</p>
 <p><img alt="Object Properties" src="../img/dynamicsaxobjectproperties.png" /></p>
 <p>Also Rapise automatically sets <code>Record Title</code> in test settings to the same regular expression so you do not need to choose the Dynamics AX main window during subsequent recording sessions.</p>
@@ -10493,17 +10491,14 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    id1/id2/id3...</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>where ids refer to parent objects along the path to the top window object. Sometimes such ids also can be dynamic, e.g.:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    Dimensions display (1 - k13) - Sales order: S30014323, CE15P, Sales order: S30014323/InventDimParmFixed/Pane/View/Style</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>In this case change dynamic parts by corresponding regular expressions. In the above example updated location looks like:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    regex:Dimensions display.*/InventDimParmFixed/Pane/View/Style</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>Here is updated location in the property grid:</p>
 <p><img alt="Object Location" src="../img/dynamicsaxobjectlocation.png" /></p>
 <h2 id="how-to-launch-dynamics-ax-client">How to Launch Dynamics AX Client<a class="headerlink" href="#how-to-launch-dynamics-ax-client" title="Permanent link">&para;</a></h2>
@@ -10513,7 +10508,7 @@
     <span class="kd">function</span> <span class="nx">_DaxIsRunning</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="kd">var</span> <span class="nx">windows</span> <span class="o">=</span> <span class="nx">g_util</span><span class="p">.</span><span class="nx">FindWindows</span><span class="p">(</span><span class="s2">&quot;regex:.Microsoft Dynamics AX.*&quot;</span><span class="p">,</span> <span class="s2">&quot;AxMainFrame&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="nx">windows</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nx">windows</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="nx">_DaxIsRunning</span><span class="p">())</span>
@@ -10534,27 +10529,25 @@
 
     <span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">);</span>
 
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">60</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="nx">_DaxIsRunning</span><span class="p">())</span>
         <span class="p">{</span>
             <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client started successfully&quot;</span><span class="p">);</span>
             <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
         <span class="p">}</span>
-        <span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+        <span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mf">1000</span><span class="p">);</span>
     <span class="p">}</span>
 
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client did not start&quot;</span><span class="p">);</span>
     <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>You can now use this function in RVL</p>
 <p><img alt="dax launch rvl" src="../img/daxlaunchrvl.png" /></p>
 <p>and in JavaScript:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DynamicsAXLaunch</span><span class="p">();</span>
 </code></pre></div>
-
 <h2 id="recording-actions-and-learning-objects">Recording Actions and Learning Objects<a class="headerlink" href="#recording-actions-and-learning-objects" title="Permanent link">&para;</a></h2>
 <p>During recording while you interact with Dynamics AX controls Rapise captures actions and displays them in the recording dialog.</p>
 <p><img alt="Recording Dialog" src="../img/dynamicsaxrecordingdialog.png" /></p>
@@ -10587,7 +10580,6 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;TabControl&#39;</span><span class="p">).</span><span class="nx">DoSelectTab</span><span class="p">(</span><span class="s2">&quot;Home&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
 <h2 id="text-box">Text Box<a class="headerlink" href="#text-box" title="Permanent link">&para;</a></h2>
@@ -10612,7 +10604,6 @@
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Worker_type&#39;</span><span class="p">).</span><span class="nx">DoSelectItem</span><span class="p">(</span><span class="s2">&quot;Employee&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <h3 id="table-filter-combo">Table Filter Combo<a class="headerlink" href="#table-filter-combo" title="Permanent link">&para;</a></h3>
 <p>Table filter combo is recognized as a pair of objects: <code>Scope</code> and <code>DropDown</code>. The <code>Scope</code> is of type <a href="/Libraries/DynamicsAXMenuItem/">DynamicsAXMenuItem</a> and used to open the <code>DropDown</code> of type <a href="/Libraries/DynamicsAXMenuDropDownList/">DynamicsAXMenuDropDownList</a>.</p>
 <p><img alt="Table Filter" src="../img/dynamicsaxtablefilter.png" /></p>
@@ -10625,7 +10616,6 @@
 <span class="c1">//DropDown item selected:&#39;Search name&#39;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DropDown&#39;</span><span class="p">).</span><span class="nx">DoSelectItem</span><span class="p">(</span><span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <h3 id="lookup-field">Lookup Field<a class="headerlink" href="#lookup-field" title="Permanent link">&para;</a></h3>
 <p>Lookup field consists of an edit box, open button and a dropdown table. Record lookup interactions in three steps:</p>
 <ol>
@@ -10644,7 +10634,6 @@
 <span class="c1">// Select value from the dropdown grid using column name (Customer group) and value (SOFTWARE)</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;SOFTWARE&quot;</span><span class="p">,</span> <span class="s2">&quot;Customer group&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="address-bar">Address Bar<a class="headerlink" href="#address-bar" title="Permanent link">&para;</a></h2>
 <p>Click in empty area of the address bar and enter the address where you want to navigate. Rapise will capture <a href="/Libraries/DynamicsAXAddressBar/">DynamicsAXAddressBar</a> object and record <code>DoSetText</code> action.</p>
 <p><img alt="Address Bar" src="../img/dynamicsaxaddressbar.png" /></p>
@@ -10653,7 +10642,6 @@
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;AddressBarContainer&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s1">&#39;DAT/Retail essentials/Employees/Users&#39;</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="menu">Menu<a class="headerlink" href="#menu" title="Permanent link">&para;</a></h2>
 <p>Rapise supports both recording and learning of the main menu. When recording make sure you click on every component along the path. E.g. you want to navigate to <code>File &gt; View &gt; Modules &gt; General ledger</code>. During recording click on <code>File</code>, <code>View</code>, <code>Modules</code> and <code>General ledger</code>. Captured menu object has type <a href="/Libraries/DynamicsAXMenu/">DynamicsAXMenu</a>. Generated script looks like:</p>
 <p><strong>RVL</strong></p>
@@ -10662,7 +10650,6 @@
 <div class="highlight"><pre><span></span><code><span class="c1">//Menu item selected:&#39;General ledger&#39;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;File&#39;</span><span class="p">).</span><span class="nx">DoMenu</span><span class="p">(</span><span class="s2">&quot;File;View;Modules;General ledger&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>Rapise captures menu as top level object (<code>File</code> in the example above). Notice that menu path components are separated with <code>;</code>. If you want for example to open menu <code>File &gt; Tools &gt; Telephone list</code> then use <code>File;Tools;Telephone list</code> as <code>path</code> parameter.</p>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <p>Rapise recognizes Dynamics AX grids as <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a></p>
@@ -10673,7 +10660,6 @@
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ListPageGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Contoso Retail Chicago&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a> for more details.</p>
 <h2 id="infolog">Infolog<a class="headerlink" href="#infolog" title="Permanent link">&para;</a></h2>
 <p>In some case Dynamics AX can report an error using Infolog window.</p>
@@ -10687,9 +10673,8 @@
 <span class="kd">var</span> <span class="nx">messageCount</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;InfologTree&#39;</span><span class="p">).</span><span class="nx">GetChildrenCount</span><span class="p">();</span>
 
 <span class="c1">// Get second message text, returns &quot;Field &#39;User ID&#39; must be filled in.&quot;</span>
-<span class="kd">var</span> <span class="nx">messageText</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">GetChildAt</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">messageText</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">GetChildAt</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="type-to-filter-field">Type to filter Field<a class="headerlink" href="#type-to-filter-field" title="Permanent link">&para;</a></h2>
 <p>Almost each standard grid in Dynamics AX has a text field for filtering grid data.</p>
 <p><img alt="Type To Filter" src="../img/dynamicsaxtypetofilter.png" /></p>
@@ -10716,7 +10701,6 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Iconic</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Now you can use these functions in RVL and JavaScript.</p>
 <p><strong>RVL</strong></p>
 <p><img alt="daxmaximizervl" src="../img/daxmaximizervl.png" /></p>
@@ -10725,7 +10709,6 @@
 <span class="nx">RestoreWindow</span><span class="p">(</span><span class="s2">&quot;AddressBarContainer&quot;</span><span class="p">);</span>
 <span class="nx">MinimizeWindow</span><span class="p">(</span><span class="s2">&quot;AddressBarContainer&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="scroll-to-the-bottom-of-a-grid">Scroll to the Bottom of a Grid<a class="headerlink" href="#scroll-to-the-bottom-of-a-grid" title="Permanent link">&para;</a></h2>
 <p>If your grid looks like this and you want to scroll to the last record of it learn the <code>Last Record</code> button and click on it during test playback.</p>
 <p><img alt="Grid to Scroll" src="../img/dynamicsaxgridtoscroll.png" /></p>
@@ -10734,7 +10717,6 @@
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Last_Record&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 </code></pre></div>
-
 <h2 id="scroll-and-click-on-a-cell-in-a-grid">Scroll and Click on a Cell in a Grid<a class="headerlink" href="#scroll-and-click-on-a-cell-in-a-grid" title="Permanent link">&para;</a></h2>
 <p>If you know the value of a cell in a grid then Rapise will automatically scroll the grid before click.</p>
 <p><img alt="Scroll Before Click" src="../img/dynamicsaxscrollbeforeclick.png" />  </p>
@@ -10744,15 +10726,13 @@
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Alen Shen&quot;</span><span class="p">,</span> <span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>If you do not know the value of a cell you can get it this way</p>
 <p><strong>RVL</strong></p>
 <p><img alt="daxgridgetcellrvl" src="../img/daxgridgetcellrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">cellValue</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">GetCell</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">cellValue</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">9</span><span class="p">,</span> <span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">cellValue</span><span class="p">);</span>
 </code></pre></div>
-
 <p>Where 9 is row number.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
@@ -10869,7 +10849,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

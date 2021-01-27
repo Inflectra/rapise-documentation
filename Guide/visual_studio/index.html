@@ -10282,7 +10282,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">c:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll</span>
 </code></pre></div>
 </td></tr></table>
-
 <p>In a test method specify absolute path to a Rapise test and pass <code>TextContext</code> parameter to <code>Rapise.TestExecute</code> function:</p>
 <div class="highlight"><pre><span></span><code><span class="k">namespace</span> <span class="nn">UnitTestProject1</span>
 <span class="p">{</span>
@@ -10299,7 +10298,6 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <p>To pass parameters to Rapise test create <a href="https://msdn.microsoft.com/en-us/library/jj635153.aspx">.runsettings</a> file. Each parameter with name starting with <code>g_</code> will be passed to Rapise via command line.</p>
 <p>Here is an example of selecting a browser to use for execution of cross-browser tests:</p>
@@ -10311,7 +10309,6 @@
   <span class="nt">&lt;/TestRunParameters&gt;</span>
 <span class="nt">&lt;/RunSettings&gt;</span>
 </code></pre></div>
-
 <h2 id="visual-studio-test-explorer">Visual Studio Test Explorer<a class="headerlink" href="#visual-studio-test-explorer" title="Permanent link">&para;</a></h2>
 <p>Once Rapise tests are mapped to unit tests one can use Visual Studio Test Explorer to run tests and analyze results.</p>
 <p><img alt="TestExplorer" src="../img/visual_studio1.png" /></p>
@@ -10340,7 +10337,6 @@
     <span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span> <span class="n">TestContext</span><span class="p">);</span> 
 <span class="p">}</span>
 </code></pre></div>
-
 <ul>
 <li><strong>Run Settings File</strong> is a link to <a href="https://msdn.microsoft.com/en-us/library/jj635153.aspx">.runsettings</a> file.</li>
 <li>In <strong>Override TestRun Parameters</strong> one can override values of the parameters in <code>.runsettings</code> file.</li>
@@ -10396,7 +10392,6 @@ One can configure several agent pools to run tests in different environments:</p
     <span class="nt">testFiltercriteria</span><span class="p">:</span> <span class="s">&#39;TestCategory=browser&#39;</span>
     <span class="nt">runSettingsFile</span><span class="p">:</span> <span class="s">&#39;UnitTestProject1\UnitTestProject1\RS.runsettings&#39;</span>
 </code></pre></div>
-
 <p>While configuring the pipeline you can add a Visual Studio Test task via the left panel.</p>
 <p><img alt="Pipeline Tasks" src="../img/azure_devops_pipeline_tasks.png" /></p>
 <p>Here is an example configuration of the Test Studio Test task:</p>
@@ -10412,7 +10407,6 @@ One can configure several agent pools to run tests in different environments:</p
     <span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span> <span class="n">TestContext</span><span class="p">);</span> 
 <span class="p">}</span>
 </code></pre></div>
-
 <ul>
 <li><strong>Settings File</strong> is a link to <a href="https://msdn.microsoft.com/en-us/library/jj635153.aspx">.runsettings</a> file.</li>
 </ul>
@@ -10534,7 +10528,7 @@ One can configure several agent pools to run tests in different environments:</p
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

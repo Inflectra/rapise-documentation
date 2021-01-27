@@ -10265,10 +10265,10 @@
                     <span class="s2">&quot;object_name&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
                     <span class="s2">&quot;object_class&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_class&quot;</span><span class="p">,</span>
                     <span class="s2">&quot;object_role&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_role&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;x&quot;</span><span class="o">:</span> <span class="mi">573</span><span class="p">,</span>
-                    <span class="s2">&quot;y&quot;</span><span class="o">:</span> <span class="mi">59</span><span class="p">,</span>
-                    <span class="s2">&quot;w&quot;</span><span class="o">:</span> <span class="mi">220</span><span class="p">,</span>
-                    <span class="s2">&quot;h&quot;</span><span class="o">:</span> <span class="mi">66</span>
+                    <span class="s2">&quot;x&quot;</span><span class="o">:</span> <span class="mf">573</span><span class="p">,</span>
+                    <span class="s2">&quot;y&quot;</span><span class="o">:</span> <span class="mf">59</span><span class="p">,</span>
+                    <span class="s2">&quot;w&quot;</span><span class="o">:</span> <span class="mf">220</span><span class="p">,</span>
+                    <span class="s2">&quot;h&quot;</span><span class="o">:</span> <span class="mf">66</span>
                 <span class="p">}</span>
             <span class="p">}</span>
         <span class="p">}</span>
@@ -10277,7 +10277,7 @@
     <span class="s2">&quot;object_text&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;object_role&quot;</span><span class="o">:</span> <span class="s2">&quot;ROLE_SYSTEM_GROUPING&quot;</span><span class="p">,</span>
     <span class="s2">&quot;object_class&quot;</span><span class="o">:</span> <span class="s2">&quot;NetUIHWND&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span>
     <span class="s2">&quot;object_type&quot;</span><span class="o">:</span> <span class="s2">&quot;SeSSimulated&quot;</span><span class="p">,</span>
     <span class="s2">&quot;object_flavor&quot;</span><span class="o">:</span> <span class="s2">&quot;Simulated&quot;</span><span class="p">,</span>
     <span class="s2">&quot;object_name&quot;</span><span class="o">:</span> <span class="s2">&quot;Simulated&quot;</span><span class="p">,</span>
@@ -10285,25 +10285,21 @@
     <span class="s2">&quot;window_name&quot;</span><span class="o">:</span> <span class="s2">&quot;Untitled - Paint&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="locator-parameters">Locator Parameters<a class="headerlink" href="#locator-parameters" title="Permanent link">&para;</a></h2>
 <p>If a piece of information in the locator matches a piece of object info (<code>object_name</code>, <code>object_class</code>, <code>object_role</code>, <code>object_text</code>) then it is stored in the locator as <code>param:object_info</code>.  For example:</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;object_name&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_name&quot;</span><span class="p">,</span>
 <span class="s2">&quot;object_class&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_class&quot;</span><span class="p">,</span>
 <span class="s2">&quot;object_role&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_role&quot;</span>
 </code></pre></div>
-
 <h2 id="over-riding-locator-parameters-rvl">Over-riding Locator Parameters (RVL)<a class="headerlink" href="#over-riding-locator-parameters-rvl" title="Permanent link">&para;</a></h2>
 <p>See also <a href="../../Libraries/RVL/#locatoropts">RVL.SetLocatorOpts</a> and this <a href="https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx">KB Article</a> for more detailed explanation and example of overriding locator parameters in RVL.</p>
 <h2 id="over-riding-locator-parameters-js">Over-riding Locator Parameters (JS)<a class="headerlink" href="#over-riding-locator-parameters-js" title="Permanent link">&para;</a></h2>
 <p>You can over-ride the information used to locate your object at runtime.  Normally, to refer to an object, you use the SeS function:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username&#39;</span><span class="p">)</span>
 </code></pre></div>
-
 <p>To override locator parameters, specify the new value in the function call. In the following example, we over-ride the <strong>object_name</strong> parameter for object <code>Username</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">object_name</span><span class="o">:</span><span class="s2">&quot;regex:.*&quot;</span><span class="p">})</span>
 </code></pre></div>
-
 <p>You may want to change a parameter value for every locator/object in the program.  For instance, perhaps the url of the webpage has changed.  Use the global variable <strong>g_locatorparams</strong> as in the following example:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
@@ -10319,7 +10315,6 @@
     <span class="c1">// ...</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../object_learning/">Object Learning</a></li>
@@ -10427,7 +10422,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"search.result.more.other": "# more on this page", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.result.none": "No matching documents", "search.config.separator": "[\\s\\-]+", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.placeholder": "Search", "search.config.lang": "en", "search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.7e36bcbb.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
