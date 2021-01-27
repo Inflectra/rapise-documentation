@@ -204,6 +204,36 @@ RVL is designed to be a simple grid language and it may be edited in any spreads
 - ++ctrl+d++ - deletes the line of the selected cell.
 - ++ctrl+p++ - reveals optional parameters for an action in the current line, acts as click on `Params` button on the RVL toolbar.
 
+## RVL Toolbox
+
+Since Rapise 6.7 you may use RVL Toolbox to quickly find RVL snippets, KB articles and documentation links. The toolbox is located on the right side of the RVL editor.
+
+![RVL Toolbox](./img/rvl_toolbox.png)
+
+The tollbox consists of three parts.
+
+1. Search field. Enter text here to filter the list of items.
+2. List of items. Select an item to preview. Some of the items can be dragged right into RVL area.
+3. Preview pane. It has description of selected item. Click links to get more information.
+
+![RVL Toolbox Controls](./img/rvl_toolbox_controls.png)
+
+If you select an item in the toolbox and see a yellow box with text `Drag selected item to insert into RVL` you may drag the item to RVL area.
+
+![RVL Toolbox DragDrop](./img/rvl_toolbox_dragdrop.png)
+
+There is also and advanced way of using the toolbox. Start typing what you want to do in Actions column (the line must be empty), then hit Enter and choose an item from the list using arrow keys, then hit Enter again to insert the snippet into RVL.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rWgcl4eWyJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+If you want to keep the toolbox hidden then unpin it.
+
+![Unpin RVL Toolbox](./img/rvl_toolbox_auto_hide.png)
+
+Move mouse over the Toolbox lebel to reveal the list of items.
+
+![Reveal RVL Toolbox](./img/rvl_toolbox_reveal.png)
+
 ## See Also
 
 - [About RVL](visual_language.md)
