@@ -225,8 +225,8 @@ If you select an item in the toolbox and see a yellow box with text `Drag select
 There is also and advanced way of using the toolbox:
 
 1. Start typing what you want to do in Actions column (the line must be empty),
-2. then hit ++Enter++ and choose an item from the list using arrow keys,
-3. then hit ++Enter++ again to insert the snippet into RVL.
+2. then hit ++enter++ and choose an item from the list using arrow keys,
+3. then hit ++enter++ again to insert the snippet into RVL.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rWgcl4eWyJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
