@@ -159,9 +159,9 @@ The **Body** part should be a valid `JSON` with the following structure:
 
 ![WS Multipart](./img/rest_web_service_multipart1.png)
 
-For the text fields **ContentType** is optional. By default is is set to `text/plain`.
+For the text fields **ContentType** is optional. By default it is set to `text/plain`.
 
-For file upload fields **ContentType** and **FileName** are optional. By default content-type and **FileName** are auto-detected form the **FilePath**.
+For file upload fields **ContentType** and **FileName** are optional. By default content-type and **FileName** are auto-detected from the **FilePath**.
 
 So here is an example of the minimal multipart request with one text field and one file upload:
 
