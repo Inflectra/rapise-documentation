@@ -24,6 +24,7 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
 ![options.dialog.settings](./img/options_dialog5.png)
 
+* **API Callback Timeout**: Defaults to 10000. Number of milliseconds to wait when doing [Before-Request and After-Response REST Callbacks](rest_web_service.md#before-request-and-after-response-rest-callbacks). The timeout applies to each callback call individually.
 * **Always use Test.sstest**: Defaults to **False**. If set to **True**, the test file name is set to `Test.sstest` rather than `<test folder name>.sstest`. This may be useful in rare cases when your testing framework has deep nested structure, you have very long file names and need to fit into 260 chars of Windows `MAX_PATH` limit.
 * **AutoReloadModifiedFiles**: If set to **True**, any files you modify outside of Rapise are automatically reloaded in Rapise.
 * **Confirm Object Removal**: Ask when deleting object form the [Object Tree](object_tree.md).

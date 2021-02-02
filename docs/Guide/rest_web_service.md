@@ -227,6 +227,102 @@ If we have a parameterized JSON Body:
 Once parameters are defined for the `multipart` request, you should make sure that they are properly escaped. Consider using `JSON.stringify` appropriately, i.e.:
 
 ```javascript
-RestMultipart_UploadFileParams.SetParameters('StringParam', JSON.stringify("Some Value"));
-RestMultipart_UploadFileParams.SetParameters('FilePathParam', JSON.stringify( Global.GetFullPath('NewAvatarImage.png') ));
+RestMultipart_UploadFileParams.SetParameter('StringParam', JSON.stringify("Some Value"));
+RestMultipart_UploadFileParams.SetParameter('FilePathParam', JSON.stringify( Global.GetFullPath('NewAvatarImage.png') ));
 ```
+
+## Passing Data Between API Calls
+
+There are certain scenarios when it is convenient to pass dynamic data into a REST call or between consequent REST calls, i.e.:
+
+1. We want to use credential from external configuration file to avoid hard-coding them as REST headers or REST parameters.
+2. One call returns values that are needed by subsequent calls. Good example is a bearer token returned by authorization calls that should then be used as a header in all subsequent calls. The token has short life range and should be requested again and again between testing sessions.
+3. We want to test service in exploratory mode. I.e. do some sequence of calls manually. Maybe then checking something via the UI or getting some value that is easier to get via the API and then needed elsewhere.
+
+So we enabled pre- and post- request callbacks that work both in REST editor and in runtime when tests executes API calls. We call them **Before**Request and **After**Response.
+
+### Before-Request and After-Response REST Callbacks.
+
+Callbacks are defined in the REST editor. 
+
+Request-specific callback may be defined in the properties editor when action is  selected:
+
+![Callbacks](img/rest_web_service_action_callbacks.png)
+
+When callback is required, it may be either selected from the dropdown or generated using `<Add New...>` option:
+
+![Callbacks Add New](img/rest_web_service_action_callbacks_add_new.png)
+
+Callback function always created in the `User.js` of the current test.
+
+#### BeforeRequest REST Callback
+
+**BeforeRequest** callback has a signature:
+
+```javascript
+function Before_<Rest_FileName>_<Entry_Name>(/**RESTRequest*/request)
+```
+
+i.e.:
+
+```javascript
+function Before_LibraryInformationSystem_Get_Session(/**RESTRequest*/request)
+{
+	request.SetHeader('Accept', 'application/json');
+	request.SetHeader('Content-Type', 'application/json');
+	request.SetCredential('librarian', 'librarian');
+}
+```
+
+It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing `Session` global object and `request` object passed as a paramter.
+
+#### AfterResponse REST Callback
+
+**AfterResponse** calback has a signature:
+
+```javascript
+function After_<Rest_FileName>_<Entry_Name>(/**RESTResponse*/response)
+```
+i.e.
+```javascript
+function After_LibraryInformationSystem_Get_Session(/**RESTResponse*/response)
+{
+	var sessionid = response.GetResponseBodyObject();
+	Session.SetParameter('session_id', sessionid);
+}
+```
+
+#### Common REST Callbacks
+
+Sometimes it is more convenient to define one common callback that will be executed for all requiest inside a given endpoint. 
+
+Common callbacks are defined in the property window for the whole endpint.
+
+![Common Callbacks](img/rest_web_service_common_callbacks.png)
+
+When both common callback and entry callback are defined, both are executed in the following order:
+
+1. Common Before_*Rest_FileName*
+2. Before_*Rest_FileName*_*Entry_Name*
+3. Send *request* and get *response*
+4. After_*Rest_FileName*_*Entry_Name*
+5. Common After_*Rest_FileName*
+
+
+### REST Callback Limitations
+
+If given request has no explicit callback defined and no common callback defined then in REST Editor mode values of Session will be ignored. If you have important parameters or headers stored in the session, then it is recommended to define one common 'Before' callback.
+
+### REST Callback Session
+
+Once request has a callback and it is executed from the Editor, debugger session starts and keeps running. You may see it by presence of debugger panel:
+
+![Debug Panel](img/rest_web_service_debug_panel.png)
+
+All variables and session parameters assigned in the callbacks stay active while debugger panel is running.
+
+If you want to modify something in the callback code, then you need to use **Stop Debugger** or **Reset** button first to be able to save the modifications. In this case variables, session parameters and collected cookies get lost.
+
+### REST Callback Breakpoints
+
+You may set a breakpoint in any REST callback function, and Rapise will stop when doing a call. If you function is long and debugging implies many steps, the request may proceed while you are debugging. To avoid this you may change the value of [global option](options_dialog.md) **API Callback Timeout** 
