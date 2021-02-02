@@ -3289,6 +3289,74 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#passing-data-between-api-calls" class="md-nav__link">
+    Passing Data Between API Calls
+  </a>
+  
+    <nav class="md-nav" aria-label="Passing Data Between API Calls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-request-and-after-response-rest-callbacks" class="md-nav__link">
+    Before-Request and After-Response REST Callbacks.
+  </a>
+  
+    <nav class="md-nav" aria-label="Before-Request and After-Response REST Callbacks.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beforerequest-rest-callback" class="md-nav__link">
+    BeforeRequest REST Callback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afterresponse-rest-callback" class="md-nav__link">
+    AfterResponse REST Callback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-rest-callbacks" class="md-nav__link">
+    Common REST Callbacks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rest-callback-limitations" class="md-nav__link">
+    REST Callback Limitations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rest-callback-session" class="md-nav__link">
+    REST Callback Session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rest-callback-breakpoints" class="md-nav__link">
+    REST Callback Breakpoints
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10253,6 +10321,74 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#passing-data-between-api-calls" class="md-nav__link">
+    Passing Data Between API Calls
+  </a>
+  
+    <nav class="md-nav" aria-label="Passing Data Between API Calls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-request-and-after-response-rest-callbacks" class="md-nav__link">
+    Before-Request and After-Response REST Callbacks.
+  </a>
+  
+    <nav class="md-nav" aria-label="Before-Request and After-Response REST Callbacks.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beforerequest-rest-callback" class="md-nav__link">
+    BeforeRequest REST Callback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afterresponse-rest-callback" class="md-nav__link">
+    AfterResponse REST Callback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-rest-callbacks" class="md-nav__link">
+    Common REST Callbacks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rest-callback-limitations" class="md-nav__link">
+    REST Callback Limitations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rest-callback-session" class="md-nav__link">
+    REST Callback Session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rest-callback-breakpoints" class="md-nav__link">
+    REST Callback Breakpoints
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10406,8 +10542,8 @@
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart1.png" /></p>
-<p>For the text fields <strong>ContentType</strong> is optional. By default is is set to <code>text/plain</code>.</p>
-<p>For file upload fields <strong>ContentType</strong> and <strong>FileName</strong> are optional. By default content-type and <strong>FileName</strong> are auto-detected form the <strong>FilePath</strong>.</p>
+<p>For the text fields <strong>ContentType</strong> is optional. By default it is set to <code>text/plain</code>.</p>
+<p>For file upload fields <strong>ContentType</strong> and <strong>FileName</strong> are optional. By default content-type and <strong>FileName</strong> are auto-detected from the <strong>FilePath</strong>.</p>
 <p>So here is an example of the minimal multipart request with one text field and one file upload:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="s2">&quot;multipart&quot;</span><span class="o">:</span>
@@ -10457,9 +10593,69 @@
 </code></pre></div>
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart2.png" /></p>
 <p>Once parameters are defined for the <code>multipart</code> request, you should make sure that they are properly escaped. Consider using <code>JSON.stringify</code> appropriately, i.e.:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameters</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
-<span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameters</span><span class="p">(</span><span class="s1">&#39;FilePathParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s1">&#39;NewAvatarImage.png&#39;</span><span class="p">)</span> <span class="p">));</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
+<span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;FilePathParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s1">&#39;NewAvatarImage.png&#39;</span><span class="p">)</span> <span class="p">));</span>
 </code></pre></div>
+<h2 id="passing-data-between-api-calls">Passing Data Between API Calls<a class="headerlink" href="#passing-data-between-api-calls" title="Permanent link">&para;</a></h2>
+<p>There are certain scenarios when it is convenient to pass dynamic data into a REST call or between consequent REST calls, i.e.:</p>
+<ol>
+<li>We want to use credential from external configuration file to avoid hard-coding them as REST headers or REST parameters.</li>
+<li>One call returns values that are needed by subsequent calls. Good example is a bearer token returned by authorization calls that should then be used as a header in all subsequent calls. The token has short life range and should be requested again and again between testing sessions.</li>
+<li>We want to test service in exploratory mode. I.e. do some sequence of calls manually. Maybe then checking something via the UI or getting some value that is easier to get via the API and then needed elsewhere.</li>
+</ol>
+<p>So we enabled pre- and post- request callbacks that work both in REST editor and in runtime when tests executes API calls. We call them **Before**Request and **After**Response.</p>
+<h3 id="before-request-and-after-response-rest-callbacks">Before-Request and After-Response REST Callbacks.<a class="headerlink" href="#before-request-and-after-response-rest-callbacks" title="Permanent link">&para;</a></h3>
+<p>Callbacks are defined in the REST editor. </p>
+<p>Request-specific callback may be defined in the properties editor when action is  selected:</p>
+<p><img alt="Callbacks" src="../img/rest_web_service_action_callbacks.png" /></p>
+<p>When callback is required, it may be either selected from the dropdown or generated using <code>&lt;Add New...&gt;</code> option:</p>
+<p><img alt="Callbacks Add New" src="../img/rest_web_service_action_callbacks_add_new.png" /></p>
+<p>Callback function always created in the <code>User.js</code> of the current test.</p>
+<h4 id="beforerequest-rest-callback">BeforeRequest REST Callback<a class="headerlink" href="#beforerequest-rest-callback" title="Permanent link">&para;</a></h4>
+<p><strong>BeforeRequest</strong> callback has a signature:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Before_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
+</code></pre></div>
+<p>i.e.:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Before_LibraryInformationSystem_Get_Session</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nx">request</span><span class="p">.</span><span class="nx">SetHeader</span><span class="p">(</span><span class="s1">&#39;Accept&#39;</span><span class="p">,</span> <span class="s1">&#39;application/json&#39;</span><span class="p">);</span>
+    <span class="nx">request</span><span class="p">.</span><span class="nx">SetHeader</span><span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span> <span class="s1">&#39;application/json&#39;</span><span class="p">);</span>
+    <span class="nx">request</span><span class="p">.</span><span class="nx">SetCredential</span><span class="p">(</span><span class="s1">&#39;librarian&#39;</span><span class="p">,</span> <span class="s1">&#39;librarian&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing <code>Session</code> global object and <code>request</code> object passed as a paramter.</p>
+<h4 id="afterresponse-rest-callback">AfterResponse REST Callback<a class="headerlink" href="#afterresponse-rest-callback" title="Permanent link">&para;</a></h4>
+<p><strong>AfterResponse</strong> calback has a signature:</p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">After_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
+</code></pre></div>
+i.e.
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">After_LibraryInformationSystem_Get_Session</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">sessionid</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
+    <span class="nx">Session</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;session_id&#39;</span><span class="p">,</span> <span class="nx">sessionid</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="common-rest-callbacks">Common REST Callbacks<a class="headerlink" href="#common-rest-callbacks" title="Permanent link">&para;</a></h4>
+<p>Sometimes it is more convenient to define one common callback that will be executed for all requiest inside a given endpoint. </p>
+<p>Common callbacks are defined in the property window for the whole endpint.</p>
+<p><img alt="Common Callbacks" src="../img/rest_web_service_common_callbacks.png" /></p>
+<p>When both common callback and entry callback are defined, both are executed in the following order:</p>
+<ol>
+<li>Common Before_<em>Rest_FileName</em></li>
+<li>Before_<em>Rest_FileName</em>_<em>Entry_Name</em></li>
+<li>Send <em>request</em> and get <em>response</em></li>
+<li>After_<em>Rest_FileName</em>_<em>Entry_Name</em></li>
+<li>Common After_<em>Rest_FileName</em></li>
+</ol>
+<h3 id="rest-callback-limitations">REST Callback Limitations<a class="headerlink" href="#rest-callback-limitations" title="Permanent link">&para;</a></h3>
+<p>If given request has no explicit callback defined and no common callback defined then in REST Editor mode values of Session will be ignored. If you have important parameters or headers stored in the session, then it is recommended to define one common 'Before' callback.</p>
+<h3 id="rest-callback-session">REST Callback Session<a class="headerlink" href="#rest-callback-session" title="Permanent link">&para;</a></h3>
+<p>Once request has a callback and it is executed from the Editor, debugger session starts and keeps running. You may see it by presence of debugger panel:</p>
+<p><img alt="Debug Panel" src="../img/rest_web_service_debug_panel.png" /></p>
+<p>All variables and session parameters assigned in the callbacks stay active while debugger panel is running.</p>
+<p>If you want to modify something in the callback code, then you need to use <strong>Stop Debugger</strong> or <strong>Reset</strong> button first to be able to save the modifications. In this case variables, session parameters and collected cookies get lost.</p>
+<h3 id="rest-callback-breakpoints">REST Callback Breakpoints<a class="headerlink" href="#rest-callback-breakpoints" title="Permanent link">&para;</a></h3>
+<p>You may set a breakpoint in any REST callback function, and Rapise will stop when doing a call. If you function is long and debugging implies many steps, the request may proceed while you are debugging. To avoid this you may change the value of <a href="../options_dialog/">global option</a> <strong>API Callback Timeout</strong> </p>
                 
               
               

@@ -3141,6 +3141,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#chrome" class="md-nav__link">
+    Chrome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#firefox" class="md-nav__link">
     Firefox
   </a>
@@ -3162,13 +3169,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chrome" class="md-nav__link">
-    Chrome
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#opera" class="md-nav__link">
     Opera
   </a>
@@ -3177,6 +3177,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-webdriver-dlls-in-rapise" class="md-nav__link">
+    Updating WebDriver DLLs in Rapise
+  </a>
   
 </li>
       
@@ -9872,6 +9879,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#chrome" class="md-nav__link">
+    Chrome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#firefox" class="md-nav__link">
     Firefox
   </a>
@@ -9893,13 +9907,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chrome" class="md-nav__link">
-    Chrome
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#opera" class="md-nav__link">
     Opera
   </a>
@@ -9908,6 +9915,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-webdriver-dlls-in-rapise" class="md-nav__link">
+    Updating WebDriver DLLs in Rapise
+  </a>
   
 </li>
       
@@ -10285,6 +10299,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#chrome" class="md-nav__link">
+    Chrome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#firefox" class="md-nav__link">
     Firefox
   </a>
@@ -10306,13 +10327,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chrome" class="md-nav__link">
-    Chrome
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#opera" class="md-nav__link">
     Opera
   </a>
@@ -10321,6 +10335,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-webdriver-dlls-in-rapise" class="md-nav__link">
+    Updating WebDriver DLLs in Rapise
+  </a>
   
 </li>
       
@@ -10377,19 +10398,23 @@
 <p><img alt="clip0002" src="../img/setting_up_selenium1.png" /></p>
 <h2 id="configuring-selenium-on-a-pc">Configuring Selenium on a PC<a class="headerlink" href="#configuring-selenium-on-a-pc" title="Permanent link">&para;</a></h2>
 <p>Once you have installed Rapise on your local computer, you need to perform the following steps to configure each of the web browsers to use Selenium and Rapise:</p>
+<h3 id="chrome">Chrome<a class="headerlink" href="#chrome" title="Permanent link">&para;</a></h3>
+<p>To use Selenium with Google Chrome, you will need to download the latest version of the Chrome Driver:</p>
+<p><a href="http://chromedriver.storage.googleapis.com/index.html">http://chromedriver.storage.googleapis.com/index.html</a></p>
+<p>The list of versions at time of writing was:</p>
+<p><img alt="clip0007" src="../img/setting_up_selenium8.png" /></p>
+<p>When you click on the folder for the latest version you will see the various files that can be downloaded:</p>
+<p><img alt="clip0008" src="../img/setting_up_selenium9.png" /></p>
+<p>Download the <strong>chromedriver_win32.zip</strong> to your local PC.</p>
+<p>The file inside the zip archive is called <strong>chromedriver.exe</strong> and you need to copy it into the <strong>C:\Program Files
+(x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
 <h3 id="firefox">Firefox<a class="headerlink" href="#firefox" title="Permanent link">&para;</a></h3>
-<p>Unlike the other web browsers, Firefox does not require  anything special to be done, it already includes a built-in plugin for use by
-Selenium WebDriver. However if you start using Rapise with Firefox and you see the following issue inside of Firefox:</p>
-<p><img alt="clip0003" src="../img/setting_up_selenium2.png" /></p>
-<p>Then it means that the version of Selenium WebDriver that shipped with Rapise is no longer compatible with the installed version for Firefox. The solution is straightforward, just go to the main Selenium website: <a href="http://www.seleniumhq.org/download/">http://www.seleniumhq.org/download/</a> and then download the <strong>C# WebDriver Bindings</strong>:</p>
-<p><img alt="clip0004" src="../img/setting_up_selenium3.png" /></p>
-<p>Download the <strong>Selenium-dotnet-x.x.x.zip</strong> file from the website. Proceed to unzip the archive and then look in the <strong>net40</strong> subfolder
-and extract the following two files and copy into the <strong>C:\Program Files (x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise):</p>
-<ul>
-<li>WebDriver.dll</li>
-<li>WebDriver.Support.dll</li>
-</ul>
-<p><em>Note: You will need to close Rapise before copying these files into the Bin folder.</em></p>
+<p>To use Selenium with Mozilla Firefox, you will need to download the latest version of the Gecko Driver:</p>
+<p><a href="https://github.com/mozilla/geckodriver/releases">https://github.com/mozilla/geckodriver/releases</a></p>
+<p>Download <strong>geckodriver-vx.xx.x-win32.zip</strong>  to your local PC.</p>
+<p><img alt="Gecko" src="../img/setting_up_selenium_gecko.png" /></p>
+<p>The file inside the zip archive is called <strong>geckodriver.exe</strong> and you need to copy it into the <strong>C:\Program Files
+(x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
 <h3 id="microsoft-edge">Microsoft Edge<a class="headerlink" href="#microsoft-edge" title="Permanent link">&para;</a></h3>
 <p>To use Selenium with Microsoft Edge, you will need to download the latest version of the Edge Driver from the Microsoft website:</p>
 <p><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads</a></p>
@@ -10412,16 +10437,6 @@ and extract the following two files and copy into the <strong>C:\Program Files (
 </ul>
 <p>The file inside the zip archive is called <strong>IEDriverServer.exe</strong> and you need to copy it into the <strong>C:\Program Files
 (x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
-<h3 id="chrome">Chrome<a class="headerlink" href="#chrome" title="Permanent link">&para;</a></h3>
-<p>To use Selenium with Google Chrome, you will need to download the latest version of the Chrome Driver:</p>
-<p><a href="http://chromedriver.storage.googleapis.com/index.html">http://chromedriver.storage.googleapis.com/index.html</a></p>
-<p>The list of versions at time of writing was:</p>
-<p><img alt="clip0007" src="../img/setting_up_selenium8.png" /></p>
-<p>When you click on the folder for the latest version you will see the various files that can be downloaded:</p>
-<p><img alt="clip0008" src="../img/setting_up_selenium9.png" /></p>
-<p>Download the <strong>chromedriver_win32.zip</strong> to your local PC.</p>
-<p>The file inside the zip archive is called <strong>chromedriver.exe</strong> and you need to copy it into the <strong>C:\Program Files
-(x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
 <h3 id="opera">Opera<a class="headerlink" href="#opera" title="Permanent link">&para;</a></h3>
 <p>To use Selenium with Opera, you will need to download the latest version of the Opera Driver:</p>
 <p><a href="https://github.com/operasoftware/operachromiumdriver/releases">https://github.com/operasoftware/operachromiumdriver/releases</a></p>
@@ -10434,6 +10449,16 @@ and extract the following two files and copy into the <strong>C:\Program Files (
 </ul>
 <p>The file inside the zip archive is called <strong>operadriver.exe</strong> and you need to copy it into the <strong>C:\Program Files
 (x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
+<h2 id="updating-webdriver-dlls-in-rapise">Updating WebDriver DLLs in Rapise<a class="headerlink" href="#updating-webdriver-dlls-in-rapise" title="Permanent link">&para;</a></h2>
+<p>If the version of WebDriver DLLs shipped with Rapise is not compatible with your browser you may update the corresponding DLLs. Just go to the main Selenium website: <a href="http://www.seleniumhq.org/download/">http://www.seleniumhq.org/download/</a> and then download the <strong>C# WebDriver Bindings</strong>:</p>
+<p><img alt="clip0004" src="../img/setting_up_selenium3.png" /></p>
+<p>Download the <strong>Selenium-dotnet-x.x.x.zip</strong> file from the website. Proceed to unzip the archive and then look in the <strong>net40</strong> subfolder
+and extract the following two files and copy into the <strong>C:\Program Files (x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise):</p>
+<ul>
+<li>WebDriver.dll</li>
+<li>WebDriver.Support.dll</li>
+</ul>
+<p><em>Note: You will need to close Rapise before copying these files into the Bin folder.</em></p>
 <h2 id="installing-selenium-on-a-mac">Installing Selenium on a Mac<a class="headerlink" href="#installing-selenium-on-a-mac" title="Permanent link">&para;</a></h2>
 <p>The reason for using Selenium running on a Mac is to be able to execute tests against the Safari web browser. So although you can also use the Mac to test with Firefox, Opera and Chrome, we do not recommend this as it adds needless complexity.</p>
 <h3 id="safari">Safari<a class="headerlink" href="#safari" title="Permanent link">&para;</a></h3>
