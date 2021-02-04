@@ -10623,7 +10623,7 @@
     <span class="nx">request</span><span class="p">.</span><span class="nx">SetCredential</span><span class="p">(</span><span class="s1">&#39;librarian&#39;</span><span class="p">,</span> <span class="s1">&#39;librarian&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing <code>Session</code> global object and <code>request</code> object passed as a paramter.</p>
+<p>It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing <code>Session</code> global object and <code>request</code> object passed as a parameter. Parameter type is <a href="../../Libraries/RESTRequest/">RESTRequest</a>.</p>
 <h4 id="afterresponse-rest-callback">AfterResponse REST Callback<a class="headerlink" href="#afterresponse-rest-callback" title="Permanent link">&para;</a></h4>
 <p><strong>AfterResponse</strong> calback has a signature:</p>
 <p><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">After_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
@@ -10635,6 +10635,7 @@ i.e.
     <span class="nx">Session</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;session_id&#39;</span><span class="p">,</span> <span class="nx">sessionid</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></p>
+<p>It is executed right after the action.  It may access <code>response</code> object passed as a parameter. Parameter type is <a href="../../Libraries/RESTResponse/">RESTResponse</a>.</p>
 <h4 id="common-rest-callbacks">Common REST Callbacks<a class="headerlink" href="#common-rest-callbacks" title="Permanent link">&para;</a></h4>
 <p>Sometimes it is more convenient to define one common callback that will be executed for all requiest inside a given endpoint. </p>
 <p>Common callbacks are defined in the property window for the whole endpint.</p>
