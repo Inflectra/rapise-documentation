@@ -9906,6 +9906,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#using-test-set-attachments" class="md-nav__link">
+    Using Test Set Attachments
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10499,6 +10506,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#using-test-set-attachments" class="md-nav__link">
+    Using Test Set Attachments
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10882,6 +10896,13 @@ Inflectra</code> program folder:</p>
 </code></pre></div>
 <p>You may change them by defining a Test Case parameter with name <code>g_videoRecorderArguments</code>.</p>
 <p>Recorded video is attached to the test run as ScreenCapture.wmv.</p>
+<h3 id="using-test-set-attachments">Using Test Set Attachments<a class="headerlink" href="#using-test-set-attachments" title="Permanent link">&para;</a></h3>
+<p>You may attach some data to Test Set and use it during test execution. It is a convenient way to pass configuration and data files for the test set. It may be used as an alternative to defining Spira Configurations.</p>
+<p>You may open test attachment using the <code>%ARTIFACTS%</code> environment variable. If this is a standalong test then <code>ARTIFACTS</code> resolves to <code>WORKDIR</code> (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.</p>
+<p><em>Example Usage:</em>
+<code>javascript: 
+    Global.GetProperty("Url", "http://default/url", "%ARTIFACTS%/Config.xlsx");</code></p>
+<p>So by default it would load <code>Config.xlsx</code>  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file <code>Config.xlsx</code> attached then will be used to read the <code>Url</code> property.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://youtu.be/5ybrBQOzez8">Using Rapise with SpiraTest (video)</a></li>
