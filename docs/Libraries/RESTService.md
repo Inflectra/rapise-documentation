@@ -4,6 +4,8 @@ Summary: This behavior pattern implements REST service client.
 
 This behavior pattern implements REST service client.
  
+Extends {@link }
+
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
@@ -24,9 +26,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
 | [Method](#method) | The HTTP Method being used for the request (GET, POST, etc. | GetMethod | SetMethod |
 | [Name](#name) | The name of the request operation | GetName |  |
+| [Parameter](#parameter) | Get/Set single parameter by name. | GetParameter |  |
 | [Parameters](#parameters) | The list of parameters available for this request url. | GetParameters | SetParameters |
 | [RequestBodyObject](#requestbodyobject) | The body of the HTTP request as a JavaScript object. | GetRequestBodyObject | SetRequestBodyObject |
 | [RequestBodyText](#requestbodytext) | The body of the HTTP request in raw text format | GetRequestBodyText | SetRequestBodyText |
+| [RequestHeader](#requestheader) | Get/Set Single HTTP header by name. | GetRequestHeader |  |
 | [RequestHeaders](#requestheaders) | The list of HTTP headers that are part of this request. | GetRequestHeaders | SetRequestHeaders |
 | [ResponseBodyObject](#responsebodyobject) | The body of the HTTP response deserialized from JSON into a JavaScript object. | GetResponseBodyObject |  |
 | [ResponseBodyText](#responsebodytext) | The body of the HTTP response in raw text format | GetResponseBodyText |  |
@@ -112,6 +116,28 @@ Type: string
 Accessors: GetName
 			
 		
+<a name="Parameter"></a>
+#### Parameter
+
+
+Get/Set single parameter by name.
+
+			
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| name | string | Name of a parameter. |
+
+
+	
+			
+Type: object
+			
+			
+Accessors: GetParameter
+			
+		
 <a name="Parameters"></a>
 #### Parameters
 
@@ -178,6 +204,28 @@ Type: string
 Accessors: GetRequestBodyText, SetRequestBodyText
 			
 		
+<a name="RequestHeader"></a>
+#### RequestHeader
+
+
+Get/Set Single HTTP header by name.
+
+			
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| name | string | HTTP Header name. |
+
+
+	
+			
+Type: object
+			
+			
+Accessors: GetRequestHeader
+			
+		
 <a name="RequestHeaders"></a>
 #### RequestHeaders
 
@@ -216,14 +264,6 @@ var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
 ```
 
 			
-**Getter Parameters:**
-
-| **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
-| jsonPath | string | Path to a sub-object within response object. E.g. 'Body.Connection_AuthenticateResult'.<br>Optional, Default: Body. |
-| info | object | Empty object that will receive error information if any. Access as info.error in a calling function.<br>Optional. |
-
-
 	
 			
 Type: object

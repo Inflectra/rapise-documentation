@@ -490,6 +490,20 @@ You may change them by defining a Test Case parameter with name `g_videoRecorder
 
 Recorded video is attached to the test run as ScreenCapture.wmv.
 
+
+### Using Test Set Attachments
+
+You may attach some data to Test Set and use it during test execution. It is a convenient way to pass configuration and data files for the test set. It may be used as an alternative to defining Spira Configurations.
+
+You may open test attachment using the `%ARTIFACTS%` environment variable. If this is a standalong test then `ARTIFACTS` resolves to `WORKDIR` (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.
+
+*Example Usage:*
+```javascript: 
+    Global.GetProperty("Url", "http://default/url", "%ARTIFACTS%/Config.xlsx");
+```
+ 
+So by default it would load `Config.xlsx`  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file `Config.xlsx` attached then will be used to read the `Url` property.
+
 ## See Also
 
 - [Using Rapise with SpiraTest (video)](https://youtu.be/5ybrBQOzez8)
