@@ -10899,9 +10899,9 @@ Inflectra</code> program folder:</p>
 <h3 id="using-test-set-attachments">Using Test Set Attachments<a class="headerlink" href="#using-test-set-attachments" title="Permanent link">&para;</a></h3>
 <p>You may attach some data to Test Set and use it during test execution. It is a convenient way to pass configuration and data files for the test set. It may be used as an alternative to defining Spira Configurations.</p>
 <p>You may open test attachment using the <code>%ARTIFACTS%</code> environment variable. If this is a standalong test then <code>ARTIFACTS</code> resolves to <code>WORKDIR</code> (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.</p>
-<p><em>Example Usage:</em>
-<code>javascript: 
-    Global.GetProperty("Url", "http://default/url", "%ARTIFACTS%/Config.xlsx");</code></p>
+<p><em>Example Usage:</em></p>
+<div class="highlight"><pre><span></span><code>    <span class="nx">Global</span><span class="p">.</span><span class="nx">GetProperty</span><span class="p">(</span><span class="s2">&quot;Url&quot;</span><span class="p">,</span> <span class="s2">&quot;http://default/url&quot;</span><span class="p">,</span> <span class="s2">&quot;%ARTIFACTS%/Config.xlsx&quot;</span><span class="p">);</span>
+</code></pre></div>
 <p>So by default it would load <code>Config.xlsx</code>  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file <code>Config.xlsx</code> attached then will be used to read the <code>Url</code> property.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
