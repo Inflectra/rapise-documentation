@@ -498,7 +498,8 @@ You may attach some data to Test Set and use it during test execution. It is a c
 You may open test attachment using the `%ARTIFACTS%` environment variable. If this is a standalong test then `ARTIFACTS` resolves to `WORKDIR` (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.
 
 *Example Usage:*
-```javascript: 
+
+```javascript
     Global.GetProperty("Url", "http://default/url", "%ARTIFACTS%/Config.xlsx");
 ```
  
