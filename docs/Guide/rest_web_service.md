@@ -274,7 +274,7 @@ function Before_LibraryInformationSystem_Get_Session(/**RESTRequest*/request)
 }
 ```
 
-It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing `Session` global object and `request` object passed as a paramter.
+It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing `Session` global object and `request` object passed as a parameter. Parameter type is [RESTRequest](../Libraries/RESTRequest.md).
 
 #### AfterResponse REST Callback
 
@@ -291,6 +291,9 @@ function After_LibraryInformationSystem_Get_Session(/**RESTResponse*/response)
 	Session.SetParameter('session_id', sessionid);
 }
 ```
+
+It is executed right after the action.  It may access `response` object passed as a parameter. Parameter type is [RESTResponse](../Libraries/RESTResponse.md).
+
 
 #### Common REST Callbacks
 
