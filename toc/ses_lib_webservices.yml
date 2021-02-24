@@ -1,11 +1,13 @@
 
-
-
 - 'Web Services':
     - 'Web Services Objects': 'Libraries/ses_lib_webservices.md'
 
-    - 'Session': 'Libraries/Session.md'    
-    
+    - 'Session': 'Libraries/Session.md'
+
+    - 'RESTRequest': 'Libraries/RESTRequest.md'
+
+    - 'RESTResponse': 'Libraries/RESTResponse.md'
+
     - 'RESTService': 'Libraries/RESTService.md'
 
     - 'SOAPService': 'Libraries/SOAPService.md'

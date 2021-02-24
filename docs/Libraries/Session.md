@@ -23,10 +23,13 @@ Session object for SOAP and REST services.
 |	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
 |	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
 |	[GetCredential](#getcredential) | Returns HTTP Basic Authentication credentials (if any). |
+|	[GetNewRequest](#getnewrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
 |	[GetParameters](#getparameters) | Return common request parameters (array of `[{'Name':somename,'Value':somevalue},. |
 |	[GetRequestHeaders](#getrequestheaders) | Return common HTTP Headers applied to each REST or SOAP request (array of `[{'Name':somename,'Value':somevalue},. |
+|	[GetRESTRequest](#getrestrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
 |	[SetBaseUrl](#setbaseurl) | Enable URL replacement for all further requests. |
 |	[SetCredential](#setcredential) | Sets HTTP Basic Authentication Credentials. |
+|	[SetIgnoreStatus](#setignorestatus) | Set to `true` to prevent REST requests with non 200 status code from failing the test. |
 |	[SetParameter](#setparameter) | Sets common request parameter. |
 |	[SetParameters](#setparameters) | Sets common request parameters. |
 |	[SetRequestHeader](#setrequestheader) | Sets common request header. |
@@ -102,6 +105,29 @@ GetCredential()
 
 <a name="see.also.session.getcredential"></a>
 
+<a name="GetNewRequest"></a>    
+#### GetNewRequest
+
+Create new `RESTService` object with 'GET' method and specified `url`.
+
+```javascript
+GetNewRequest(url, name) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| url | string |	Request URL |
+| name | string |	Request name used to display in the report<br>Optional. |
+
+
+
+
+
+<a name="see.also.session.getnewrequest"></a>
+
 <a name="GetParameters"></a>    
 #### GetParameters
 
@@ -131,6 +157,29 @@ GetRequestHeaders()
 
 
 <a name="see.also.session.getrequestheaders"></a>
+
+<a name="GetRESTRequest"></a>    
+#### GetRESTRequest
+
+Create new `RESTService` object with 'GET' method and specified `url`.
+
+```javascript
+GetRESTRequest(defNameOrPath, id) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| defNameOrPath | string |	Path to the .rest definition file |
+| id | string |	Name of the request (as specified in the .rest definition file) |
+
+
+
+
+
+<a name="see.also.session.getrestrequest"></a>
 
 <a name="SetBaseUrl"></a>    
 #### SetBaseUrl
@@ -178,7 +227,7 @@ SetCredential(value, value2)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | object |	User name or full object with credentials. |
+| value | string \| object |	User name or full object with credentials. |
 | value2 | string |	Password string. Do not set this parameter if you pass object as the first one. |
 
 
@@ -186,6 +235,28 @@ SetCredential(value, value2)
 
 
 <a name="see.also.session.setcredential"></a>
+
+<a name="SetIgnoreStatus"></a>    
+#### SetIgnoreStatus
+
+Set to `true` to prevent REST requests with non 200 status code from failing the test. It would `<req>.DoExecute()` will just return `true`/`false` but the line in report will always be marked as `Passed`.
+
+```javascript
+SetIgnoreStatus(ignore) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| ignore | boolean |	`true` to ignore status code |
+
+
+
+
+
+<a name="see.also.session.setignorestatus"></a>
 
 <a name="SetParameter"></a>    
 #### SetParameter
