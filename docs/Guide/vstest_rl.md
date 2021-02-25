@@ -1,6 +1,6 @@
-# Azure DevOps Integration With RapiseLauncher
+# RapiseLauncher Extension for Azure DevOps
 
-This section explains how to execute Rapise Spira Test Sets in [Azure DevOps pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) using the[RapiseLauncher](spiratest_integration.md#using-rapiselauncher).
+This section explains how to execute Rapise Spira Test Sets in [Azure DevOps pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) using the [RapiseLauncher](spiratest_integration.md#using-rapiselauncher).
 
 ## Azure DevOps
 
@@ -219,6 +219,7 @@ Log files and videos are in the Test Run **Attachments** tab:
 ## See Also
 
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
+- [RapiseLauncher Extension in VisualStudio Marketplace](https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapise-azure)
 - [Rapise and Spira Integration](spiratest_integration.md)
 - [Rapise and Git Integration](git_integration.md)
-- [Rapise Test Adapter Task](vstest.md) for Azure DevOps.
+- [Rapise Test Adapter Task](vstest.md#rapise-test-adapter-task) for Azure DevOps.

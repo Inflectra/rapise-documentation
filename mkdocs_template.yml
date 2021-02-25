@@ -177,7 +177,10 @@ nav:
             - 'NeoLoad Integration': 'Guide/neoload_integration.md'
             - 'Convert Functional to Load Test': 'Guide/convert_functional_to_load_tes.md'
             - 'Client Performance Monitoring': 'Guide/client_performance_monitoring.md'
-        - 'Test Management': 'Guide/spiratest_integration.md'
+        - 'Test Management':
+            - 'SpiraTest Integration': 'Guide/spiratest_integration.md'
+            - 'Azure DevOps Integration': 'Guide/vstest.md'
+            - 'RapiseLauncher Extension for Azure DevOps': 'Guide/vstest_rl.md'
         - 'Git Integration': 'Guide/git_integration.md'
     - 'Dialogs, Views, and Menus':
         - 'Dialogs, Views, and Menus': 'Guide/dialogs_views_menus.md'
