@@ -10879,6 +10879,7 @@ Inflectra</code> program folder:</p>
 <ul>
 <li><strong>Capture screenshots during playback</strong> -- selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.</li>
 <li><strong>Start at logon</strong> -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Usefull when your server is rebooted regularly. This option requires Rapise 6.3+</li>
+<li><strong>RDP screen width &amp; height</strong> -- when RDP session is disconnected via <a href="#tray-icon-menu">RapiseLauncher tray icon menu</a> set screen resolution to specified width and height.</li>
 </ul>
 </li>
 </ul>
@@ -10900,6 +10901,7 @@ Inflectra</code> program folder:</p>
 <ul>
 <li><strong>Pause / Resume</strong>: The Pause/Resume option pauses or resumes the timers for polling and executing tests. If a test or server poll is already in progress, it will not cancel these. However, after the are finished, no further polls or tests will be run.</li>
 <li><strong>Poll Now</strong>: This will force a server poll for upcoming tests, and reset the poll timer.</li>
+<li><strong>Disconnect RDP Session</strong>: This will disconnect current RDP session and will leave the system in a state ready for execution of UI tests. After disconnect RapiseLauncher will set screen resolution according to <a href="#client-configuration">configuration</a> (width/height options). This feature is a convenient way to perform steps described in <a href="https://www.inflectra.com/Support/KnowledgeBase/KB325.aspx">KB325</a>.</li>
 <li><strong>Configuration</strong>: Opens the main window to the Configuration page.</li>
 <li><strong>Help &gt; About</strong>: Opens the About window, which displays information about Rapise Launcher.</li>
 <li><strong>Help &gt; View Help</strong>: Opens this help page.</li>
@@ -10912,14 +10914,31 @@ Inflectra</code> program folder:</p>
 <h3 id="command-line-arguments">Command line arguments<a class="headerlink" href="#command-line-arguments" title="Permanent link">&para;</a></h3>
 <p>For debugging and additional options when running the program, the following command-line arguments are available:</p>
 <ul>
+<li><strong>-config:[Path to RepositoryConnection.xml]</strong> allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create <code>RapositoryConnection.xml</code> on you dev host (by setting the confguration using standard settings dialog), and then copy the configured file from <code>C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml</code> to your source tree and pass it using this parameter.</li>
 <li><strong>-minimized</strong> starts the application in minimized mode. Normal action is to show the list of pending runs.</li>
 <li><strong>-paused</strong> starts the application with timers Paused instead of active.</li>
-<li><strong>-poll</strong> forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.</li>
-<li><strong>-trace</strong> enables tracelogging to the EventLog for debugging and watching tests execute.</li>
-<li><strong>-testset:[Test Set ID]</strong> allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. <strong>-testset:45</strong> runs test set <code>TX00045</code>).</li>
+<li>
+<p><strong>-param:[name]=[value]</strong> sets a global variable for every executed test. For example:</p>
+<div class="highlight"><pre><span></span><code>-param:g_enableVideoRecording=true
+</code></pre></div>
+<p>Param argument can be used multiple times:</p>
+<div class="highlight"><pre><span></span><code>-param:g_verboseLevel=3 -param:g_enableVideoRecording=true
+</code></pre></div>
+</li>
+<li>
+<p><strong>-poll</strong> forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.</p>
+</li>
 <li><strong>-project:[Project ID]</strong> allows you to tell RapiseLauncher which project the test set specified with the <strong>-testset</strong> argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).</li>
-<li><strong>-config:[Path to RepositoryConnection.xml]</strong> allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create <code>RapositoryConnection.xml</code> on you dev host (by setting the confguration using standard settings dialog), and then copy the configured file from <code>C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml</code> to your source tree and pass it using this parameter.</li>
-<li><strong>filename</strong> must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution on. Optional.</li>
+<li><strong>-testset:[Test Set ID]</strong> allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. <strong>-testset:45</strong> runs test set <code>TX00045</code>). Since Rapise 6.7 one may pass a comma separated list of test set Ids (e.g. <strong>-testset:45,46,47</strong>). Listed test sets are executed sequentially.</li>
+<li><strong>-trace</strong> enables tracelogging to the EventLog for debugging and watching tests execute.</li>
+<li>
+<p><strong>-width:[width] -height:[height]</strong> sets the screen resolution. Width must be in the range <code>[1024, 7680]</code>, height - <code>[768, 4320]</code>. Allowed width/height combinations are determined by the operating system where you run RapiseLauncher. Most typical resolutions are </p>
+<div class="highlight"><pre><span></span><code>[1024, 768], [1280, 720], [1920, 1080]
+</code></pre></div>
+</li>
+<li>
+<p><strong>filename</strong> must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution on. Optional.</p>
+</li>
 </ul>
 <h3 id="record-playback-videos">Record Playback Videos<a class="headerlink" href="#record-playback-videos" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
