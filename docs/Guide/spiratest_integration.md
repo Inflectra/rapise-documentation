@@ -397,7 +397,7 @@ At the end of the test, the program will go back and resume scanning for tests t
 
 By right clicking on the system tray icon and selecting `Configuration`, the application's window will open to the configuration panel.
 
-<img src="/Guide/img/using_rapise_with_spiratest_guide47.png" width="632" />
+![Client Configuration](./img/using_rapise_with_spiratest_guide47.png)
 
 The panel has the following options:
 
@@ -529,3 +529,4 @@ So by default it would load `Config.xlsx`  from the test framework root, but in 
 
 - [Using Rapise with SpiraTest (video)](https://youtu.be/5ybrBQOzez8)
 - [Data Driven Testing with Test Configurations](https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx)
+- [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
