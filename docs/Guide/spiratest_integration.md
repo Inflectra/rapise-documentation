@@ -468,7 +468,7 @@ For debugging and additional options when running the program, the following com
 - **-paused** starts the application with timers Paused instead of active.
 - **-poll** forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.
 - **-trace** enables tracelogging to the EventLog for debugging and watching tests execute.
-- **-testset:[Test Set ID]** allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. **-testset:45** runs test set `TX00045`).
+- **-testset:[Test Set ID]** allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. **-testset:45** runs test set `TX00045`). You may also execute more than one test set by passing IDs, comma separated without spaces, i.e.: **-testset:45,46,47**
 - **-project:[Project ID]** allows you to tell RapiseLauncher which project the test set specified with the **-testset** argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).
 - **-config:[Path to RepositoryConnection.xml]** allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create `RapositoryConnection.xml` on you dev host (by setting the confguration using standard settings dialog), and then copy the configured file from `C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml` to your source tree and pass it using this parameter.
 - **filename** must be the last item on the command line. This is a `TST` file downloaded from SpiraTest to start immediate execution on. Optional.

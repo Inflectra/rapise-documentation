@@ -329,3 +329,74 @@ If you want to modify something in the callback code, then you need to use **Sto
 ### REST Callback Breakpoints
 
 You may set a breakpoint in any REST callback function, and Rapise will stop when doing a call. If you function is long and debugging implies many steps, the request may proceed while you are debugging. To avoid this you may change the value of [global option](options_dialog.md) **API Callback Timeout** 
+
+
+## Recording
+
+The way Rapise records captured REST actions may differs depending on the [API recording options](options_dialog.md#api). 
+
+
+**Record REST Objects** is `true`, each step creates an object in the object tree:
+
+![Record REST Objects](./img/rest_web_service_record_rest_objects.png)
+
+and it is used by the produced script:
+```javascript
+	var LibraryInformationSystem_Get_Session=SeS('LibraryInformationSystem_Get_Session');
+	LibraryInformationSystem_Get_Session.DoExecute();
+  ```
+
+When **Record REST Objects** is `false` then nothing is added to the object tree and generated script uses REST definition file directly by means of [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest):
+
+```javascript
+	var LibraryInformationSystem_Get_Session =/**RESTService*/Session.GetRESTRequest("LibraryInformationSystem.rest", "Get_Session");
+	LibraryInformationSystem_Get_Session.DoExecute();
+```
+
+When **Generate Full Name** is `false` then shorter object name is used, both when **Record REST Objects** is `true`:
+
+```javascript
+	var Get_Session=SeS('Get_Session');
+	Get_Session.DoExecute();
+```
+
+and when **Record REST Objects** is `false`:
+
+```javascript
+	var Get_Session =/**RESTService*/Session.GetRESTRequest("LibraryInformationSystem.rest", "Get_Session");
+	Get_Session.DoExecute();
+```
+
+The way how `Session.GetRESTRequest` is recorded depends on **Generate Short REST Path**. In short mode the 1st parameter is just `<filename>.rest`, i.e.:
+
+```javascript
+Session.GetRESTRequest("LibraryInformationSystem.rest", "Get_Session");
+```
+
+While in long mode it is:
+
+```javascript
+Session.GetRESTRequest("%WORKDIR%\\LibraryInformationSystem.rest", "Get_Session");
+```
+
+### Negative REST Tests
+
+Some actions are expected to return failure and we need to work with them to produce negative tests. There are two ways of doing it. First is global, so failures of all actions ignored. It is active when you choose [Session.SetIgnoreStatus](../Libraries/Session.md#setignorestatus). I.e.:
+
+```javascript
+Session.SetIgnoreStatus(true);
+FailingEndpoint1.DoExecute();
+PassingEndpoint.DoExecute();
+FailingEndpoint2.DoExecute();
+Session.SetIgnoreStatus(false);
+```
+
+If automatic status verification is disabled you expected to explicitly check the response returned from `DoExecute`.
+
+**Record Failed REST Actions** [controls](options_dialog.md#api) what to record when action returns status other than **200**. If it is `true` then recorded step has additional parameter `ignoreStatus=true`. This flag is only added then action has also failed during recording.
+
+```javascript
+FailingEndpoint1.DoExecute({}, true);
+PassingEndpoint.DoExecute();
+FailingEndpoint2.DoExecute({}, true);
+```

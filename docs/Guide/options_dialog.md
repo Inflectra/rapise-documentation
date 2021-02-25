@@ -20,11 +20,26 @@ User `Settings > Global` menu item.
 
 Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
+## API
+
+![options.dialog.api](./img/options_dialog_api.png)
+
+* **API Callback Timeout**: Defaults to 10000. Number of milliseconds to wait when doing [Before-Request and After-Response REST Callbacks](rest_web_service.md#before-request-and-after-response-rest-callbacks). The timeout applies to each callback call individually.
+* **Generate Full Name**: If 'Record REST Objects' is `true`, then
+    * `true`: Generate long name for objects and variables, i.e. 'Libraryinformationsystem_Login'
+    * `false`: Generate short name, i.e. 'Login'
+* **Generate Short REST Path**: If 'Record REST Objects' is `false`, then
+    * `true`: Generate short path, i.e. 'RESTDef.rest'
+    * `false`: Generate full path, i.e. '%WORKDIR%/SubTest/RESTDef.rest'. May be needed when you have **.rest** definition files with the same name in your framework.
+* **Record Failed REST Actions**: `true` means: If recorded REST action is failed, generate `.DoExecute(...,true)` that [ignores](../Libraries/RESTService.md#doexecute) the response code so generated test is passing.
+* **Record REST Objects**: Generate Object for Each REST request.
+    * `true`: An object added to the Object Repository for each request. Then it is initialized using `var <request_object_id> = SeS(<request_object_id>)`.
+    * `false`: Don't add anything to the object tree. Each request is initialized as `var <request_object_id> = /**RESTRequest*/Session.GetRESTRequest('<definition>.rest', '<request_id>')`. This approach makes it easier to generate re-usable functions doing REST calls without need to load objects. See [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest).
+
 ## Settings
 
 ![options.dialog.settings](./img/options_dialog5.png)
 
-* **API Callback Timeout**: Defaults to 10000. Number of milliseconds to wait when doing [Before-Request and After-Response REST Callbacks](rest_web_service.md#before-request-and-after-response-rest-callbacks). The timeout applies to each callback call individually.
 * **Always use Test.sstest**: Defaults to **False**. If set to **True**, the test file name is set to `Test.sstest` rather than `<test folder name>.sstest`. This may be useful in rare cases when your testing framework has deep nested structure, you have very long file names and need to fit into 260 chars of Windows `MAX_PATH` limit.
 * **AutoReloadModifiedFiles**: If set to **True**, any files you modify outside of Rapise are automatically reloaded in Rapise.
 * **Confirm Object Removal**: Ask when deleting object form the [Object Tree](object_tree.md).

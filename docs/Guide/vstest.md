@@ -2,6 +2,8 @@
 
 This section describes how to execute Rapise tests in [Azure DevOps pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) or locally with [Microsoft.TestPlatform](https://www.nuget.org/packages/Microsoft.TestPlatform).
 
+If you are using **SpiraTeam**, you should check the section about using [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
+
 ## Azure DevOps
 
 We assume that Rapise tests are stored in a Git repository and Azure DevOps pipeline is connected to it. You may run Rapise tests both on [self-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) and [Microsoft-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml).
