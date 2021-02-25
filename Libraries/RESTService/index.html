@@ -252,7 +252,7 @@
     <li class="md-tabs__item">
       
       
-      <a href="../../New/6_6/" class="md-tabs__link">
+      <a href="../../New/6_7/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -8279,6 +8279,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../RESTRequest/" class="md-nav__link">
+      RESTRequest
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RESTResponse/" class="md-nav__link">
+      RESTResponse
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -10101,6 +10125,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../New/6_7/" class="md-nav__link">
+      Release Notes for 6.7
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../New/6_6/" class="md-nav__link">
       Release Notes for 6.6
     </a>
@@ -10448,8 +10484,6 @@
                 
                 <h1 id="restservice">RESTService<a class="headerlink" href="#restservice" title="Permanent link">&para;</a></h1>
 <p>This behavior pattern implements REST service client.</p>
-<p>Extends {@link }</p>
-<p>Extends <a href="../SeSSimulatedObject/">SeSSimulatedObject</a></p>
 <p><strong>Behavior Pattern: RESTServiceBehavior</strong></p>
 <!-- ============================== property summary ========================== -->
 
@@ -10486,7 +10520,7 @@
 <td><a href="#parameter">Parameter</a></td>
 <td>Get/Set single parameter by name.</td>
 <td>GetParameter</td>
-<td></td>
+<td>SetParameter</td>
 </tr>
 <tr>
 <td><a href="#parameters">Parameters</a></td>
@@ -10510,7 +10544,7 @@
 <td><a href="#requestheader">RequestHeader</a></td>
 <td>Get/Set Single HTTP header by name.</td>
 <td>GetRequestHeader</td>
-<td></td>
+<td>SetRequestHeader</td>
 </tr>
 <tr>
 <td><a href="#requestheaders">RequestHeaders</a></td>
@@ -10625,7 +10659,7 @@ Sample code:</p>
 </tbody>
 </table>
 <p>Type: object</p>
-<p>Accessors: GetParameter</p>
+<p>Accessors: GetParameter, SetParameter</p>
 <p><a name="Parameters"></a></p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <p>The list of parameters available for this request url.
@@ -10679,7 +10713,7 @@ Sample code:</p>
 </tbody>
 </table>
 <p>Type: object</p>
-<p>Accessors: GetRequestHeader</p>
+<p>Accessors: GetRequestHeader, SetRequestHeader</p>
 <p><a name="RequestHeaders"></a></p>
 <h4 id="requestheaders">RequestHeaders<a class="headerlink" href="#requestheaders" title="Permanent link">&para;</a></h4>
 <p>The list of HTTP headers that are part of this request.
@@ -10736,11 +10770,12 @@ Sample code:</p>
 <p><a name="DoExecute"></a>    </p>
 <h4 id="doexecute">DoExecute<a class="headerlink" href="#doexecute" title="Permanent link">&para;</a></h4>
 <p>Executes a REST service operation, substitutes any of the provided parameter values if necessary.
+Operation fails if HTTP status code is other than 200. If that is an intention, pass <code>ignoreStatus</code> as <code>true</code>.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span> <span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
 <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nx">DoExecute</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">DoExecute</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">ignoreStatus</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -10756,6 +10791,11 @@ Sample code:</p>
 <td>params</td>
 <td>object</td>
 <td>JavaScript object <code>{"name1": "value1", "name2": "value2" }</code>. Parameter values that should be passed to the web service operation.</td>
+</tr>
+<tr>
+<td>ignoreStatus</td>
+<td>boolean</td>
+<td>Don't fail if operation status other than 200, just return the code<br>Optional, Default: "false".</td>
 </tr>
 </tbody>
 </table>
@@ -10863,7 +10903,7 @@ Sample code:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../Session/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../RESTResponse/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -10872,7 +10912,7 @@ Sample code:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Session
+                RESTResponse
               </div>
             </div>
           </a>
@@ -10900,7 +10940,7 @@ Sample code:</p>
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2020 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2021 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with
