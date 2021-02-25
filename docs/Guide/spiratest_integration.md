@@ -421,6 +421,7 @@ The panel has the following options:
 - **Options**
     - **Capture screenshots during playback** -- selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.
     - **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Usefull when your server is rebooted regularly. This option requires Rapise 6.3+
+	- **RDP screen width & height** -- when RDP session is disconnected via [RapiseLauncher tray icon menu](#tray-icon-menu) set screen resolution to specified width and height.
 
 ### Status Screen
 
@@ -447,6 +448,7 @@ Instead of operating from the application window, all functions exist on the tra
 
 - **Pause / Resume**: The Pause/Resume option pauses or resumes the timers for polling and executing tests. If a test or server poll is already in progress, it will not cancel these. However, after the are finished, no further polls or tests will be run.
 - **Poll Now**: This will force a server poll for upcoming tests, and reset the poll timer.
+- **Disconnect RDP Session**: This will disconnect current RDP session and will leave the system in a state ready for execution of UI tests. After disconnect RapiseLauncher will set screen resolution according to [configuration](#client-configuration) (width/height options). This feature is a convenient way to perform steps described in [KB325](https://www.inflectra.com/Support/KnowledgeBase/KB325.aspx).
 - **Configuration**: Opens the main window to the Configuration page.
 - **Help > About**: Opens the About window, which displays information about Rapise Launcher.
 - **Help > View Help**: Opens this help page.
@@ -464,13 +466,31 @@ However there are situations where you want to be able to launch an automated Ra
 
 For debugging and additional options when running the program, the following command-line arguments are available:
 
+- **-config:[Path to RepositoryConnection.xml]** allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create `RapositoryConnection.xml` on you dev host (by setting the confguration using standard settings dialog), and then copy the configured file from `C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml` to your source tree and pass it using this parameter.
 - **-minimized** starts the application in minimized mode. Normal action is to show the list of pending runs.
 - **-paused** starts the application with timers Paused instead of active.
+- **-param:[name]=[value]** sets a global variable for every executed test. For example:
+
+	```
+	-param:g_enableVideoRecording=true
+	```
+  
+	Param argument can be used multiple times:
+
+	```
+	-param:g_verboseLevel=3 -param:g_enableVideoRecording=true
+	```
+  
 - **-poll** forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.
-- **-trace** enables tracelogging to the EventLog for debugging and watching tests execute.
-- **-testset:[Test Set ID]** allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. **-testset:45** runs test set `TX00045`). You may also execute more than one test set by passing IDs, comma separated without spaces, i.e.: **-testset:45,46,47**
 - **-project:[Project ID]** allows you to tell RapiseLauncher which project the test set specified with the **-testset** argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).
-- **-config:[Path to RepositoryConnection.xml]** allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create `RapositoryConnection.xml` on you dev host (by setting the confguration using standard settings dialog), and then copy the configured file from `C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml` to your source tree and pass it using this parameter.
+- **-testset:[Test Set ID]** allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. **-testset:45** runs test set `TX00045`). Since Rapise 6.7 one may pass a comma separated list of test set Ids (e.g. **-testset:45,46,47**). Listed test sets are executed sequentially.
+- **-trace** enables tracelogging to the EventLog for debugging and watching tests execute.
+- **-width:[width] -height:[height]** sets the screen resolution. Width must be in the range `[1024, 7680]`, height - `[768, 4320]`. Allowed width/height combinations are determined by the operating system where you run RapiseLauncher. Most typical resolutions are 
+
+	```
+	[1024, 768], [1280, 720], [1920, 1080]
+	```
+	
 - **filename** must be the last item on the command line. This is a `TST` file downloaded from SpiraTest to start immediate execution on. Optional.
 
 ### Record Playback Videos

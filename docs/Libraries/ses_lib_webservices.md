@@ -1,12 +1,7 @@
 
-
-# Global
+# Web Services
 
 - [Session](Session.md)
-
-
-
-# Web Services
 
 - [RESTRequest](RESTRequest.md)
 

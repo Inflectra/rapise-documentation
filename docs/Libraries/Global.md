@@ -40,6 +40,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoRunTestSet](#doruntestset) | Executes a test set. |
 |	[DoSendKeys](#dosendkeys) | Sends series of keystrokes to a currently focused application. |
 |	[DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
+|	[DoSetScreenResolution](#dosetscreenresolution) | Sets screen resolution. |
 |	[DoSleep](#dosleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
 |	[DoTrim](#dotrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
 |	[DoTypePassword](#dotypepassword) | Types encrypted password into a control which has a focus. |
@@ -139,7 +140,7 @@ DoClick(clickType)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
+| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
 
 
 
@@ -162,9 +163,9 @@ DoCmd(cmdLine, wrkDir, wait, show)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cmdLine | string |	Command line to execute. Contains path to a batch file and parameters. |
-| wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: .. |
-| wait | boolean |	If `true` - Wait until batch process exit. If `false` - immediately proceed to the next test steps.<br>Optional, Default: true. |
-| show | boolean |	If `true` - maximize the command line window. If `false` - minimize the command line window.<br>Optional, Default: true. |
+| wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
+| wait | boolean |	If `true` - Wait until batch process exit. If `false` - immediately proceed to the next test steps.<br>Optional, Default: "true". |
+| show | boolean |	If `true` - maximize the command line window. If `false` - minimize the command line window.<br>Optional, Default: "true". |
 
 
 
@@ -298,7 +299,7 @@ DoInvokeTest(pathToTest, optionalParams)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | pathToTest | string |	Path to .sstest file. |
-| optionalParams | object |	Parameters to pass into entry point Test() function of the subtest. I.e. it is called as Test(optionalParams).<br>Optional, Default: [object Object]. |
+| optionalParams | object |	Parameters to pass into entry point Test() function of the subtest. I.e. it is called as Test(optionalParams).<br>Optional, Default: "[object Object]". |
 
 
 
@@ -424,9 +425,9 @@ DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | cmdLine | string |	Command line to an executable with parameters. |
-| wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: .. |
-| attachIfExists | boolean |	Try to find a process with the same executable path instead of launching it.<br>Optional, Default: false. |
-| attachToWindow | string |	When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: null. |
+| wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
+| attachIfExists | boolean |	Try to find a process with the same executable path instead of launching it.<br>Optional, Default: "false". |
+| attachToWindow | string |	When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "null". |
 
 
 
@@ -515,7 +516,7 @@ DoMessageBox(prompt, buttons)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | prompt | string |	Message to display. |
-| buttons | number |	Buttons to show.<br>Optional, Default: 0. |
+| buttons | number |	Buttons to show. Possible values: 0, 1, 2, 3, 4, 5, 16, 32, 48, 64, 0, 256, 512, 768, 0, 4096<br>Optional, Default: "0". |
 
 
 
@@ -544,7 +545,7 @@ DoMouseMove(x, y, duration)
 | ---------- | -------- | --------------- |
 | x | number |	Absolute X-coordinate of the target mouse position. |
 | y | number |	Absolute Y-coordinate of the target mouse position. |
-| duration | number |	Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: 0. |
+| duration | number |	Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: "0". |
 
 
 
@@ -647,13 +648,13 @@ DoSendText(text)
 
 <a name="see.also.global.dosendtext"></a>
 
-<a name="DoSleep"></a>    
-#### DoSleep
+<a name="DoSetScreenResolution"></a>    
+#### DoSetScreenResolution
 
-Pauses execution for given number of milliseconds (1000 = 1 second).
+Sets screen resolution. Use to run UI tests in unattended RDP sessions.
 
 ```javascript
-DoSleep(millis=1000) 
+DoSetScreenResolution(width, height) 
 ```
 
 
@@ -661,7 +662,30 @@ DoSleep(millis=1000)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| millis=1000 | number |	Number of milliseconds to sleep. |
+| width | number |	Screen width in pixels |
+| height | number |	Screen height in pixels |
+
+
+
+
+
+<a name="see.also.global.dosetscreenresolution"></a>
+
+<a name="DoSleep"></a>    
+#### DoSleep
+
+Pauses execution for given number of milliseconds (1000 = 1 second).
+
+```javascript
+DoSleep(millis) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| millis | number |	Number of milliseconds to sleep. |
 
 
 
@@ -685,7 +709,7 @@ DoTrim(str, global, trimChars)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | str | string |	String to trim. |
-| global | boolean |	If 'true' then global trim is performed (whitespaces in the middle are substituted with a single space). If 'false' only ends are trimmed.<br>Optional, Default: false. |
+| global | boolean |	If 'true' then global trim is performed (whitespaces in the middle are substituted with a single space). If 'false' only ends are trimmed.<br>Optional, Default: "false". |
 | trimChars | string |	String with each char to be subject for trim.<br>Optional. |
 
 
@@ -755,7 +779,7 @@ Waits for object specified by objectId to become available. Function returns if 
 was found or timeout.
 
 ```javascript
-DoWaitFor(objectId=, timeout, sleepTimeIfFound) 
+DoWaitFor(objectId, timeout, sleepTimeIfFound) 
 ```
 
 
@@ -763,9 +787,9 @@ DoWaitFor(objectId=, timeout, sleepTimeIfFound)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| objectId= | objectid |	Id of an object to wait for. |
-| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: 10000. |
-| sleepTimeIfFound | number |	Wait time (milliseconds) after object is found.<br>Optional, Default: 0. |
+| objectId | objectid |	Id of an object to wait for. |
+| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
+| sleepTimeIfFound | number |	Wait time (milliseconds) after object is found.<br>Optional, Default: "0". |
 
 
 
@@ -812,7 +836,7 @@ DoWaitForProperty(obj, getterName, propValue, timeout, params)
 | obj | objectid \| SeSObject |	Id of an object to wait for or object itself. |
 | getterName | string |	Property getter function name. |
 | propValue | string \| number \| boolean \| function |	Desired property value or callback function (see description). |
-| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: 10000. |
+| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
 | params | array \| string \| number \| boolean |	Parameters for property getter function.<br>Optional. |
 
 
@@ -1109,7 +1133,7 @@ Returns path to a special folder specified by one of possible values.
 </table>
 
 ```javascript
-GetSpecialFolderPath(folder=MyDocuments) 
+GetSpecialFolderPath(folder) 
 ```
 
 
@@ -1117,7 +1141,7 @@ GetSpecialFolderPath(folder=MyDocuments)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| folder=MyDocuments | string |	Folder Id. |
+| folder | string |	Folder Id. Possible values: "ApplicationData", "CommonApplicationData", "CommonProgramFiles", "Cookies", "Desktop", "DesktopDirectory", "Favorites", "History", "InternetCache", "LocalApplicationData", "MyComputer", "MyDocuments", "MyMusic", "ProgramFiles", "Programs", "Recent", "SendTo", "StartMenu", "Startup", "System", "Templates" |
 
 
 

@@ -3,10 +3,6 @@ Summary: This behavior pattern implements REST service client.
 # RESTService
 
 This behavior pattern implements REST service client.
- 
-Extends {@link }
-
-Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -26,11 +22,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
 | [Method](#method) | The HTTP Method being used for the request (GET, POST, etc. | GetMethod | SetMethod |
 | [Name](#name) | The name of the request operation | GetName |  |
-| [Parameter](#parameter) | Get/Set single parameter by name. | GetParameter |  |
+| [Parameter](#parameter) | Get/Set single parameter by name. | GetParameter | SetParameter |
 | [Parameters](#parameters) | The list of parameters available for this request url. | GetParameters | SetParameters |
 | [RequestBodyObject](#requestbodyobject) | The body of the HTTP request as a JavaScript object. | GetRequestBodyObject | SetRequestBodyObject |
 | [RequestBodyText](#requestbodytext) | The body of the HTTP request in raw text format | GetRequestBodyText | SetRequestBodyText |
-| [RequestHeader](#requestheader) | Get/Set Single HTTP header by name. | GetRequestHeader |  |
+| [RequestHeader](#requestheader) | Get/Set Single HTTP header by name. | GetRequestHeader | SetRequestHeader |
 | [RequestHeaders](#requestheaders) | The list of HTTP headers that are part of this request. | GetRequestHeaders | SetRequestHeaders |
 | [ResponseBodyObject](#responsebodyobject) | The body of the HTTP response deserialized from JSON into a JavaScript object. | GetResponseBodyObject |  |
 | [ResponseBodyText](#responsebodytext) | The body of the HTTP response in raw text format | GetResponseBodyText |  |
@@ -135,7 +131,7 @@ Get/Set single parameter by name.
 Type: object
 			
 			
-Accessors: GetParameter
+Accessors: GetParameter, SetParameter
 			
 		
 <a name="Parameters"></a>
@@ -223,7 +219,7 @@ Get/Set Single HTTP header by name.
 Type: object
 			
 			
-Accessors: GetRequestHeader
+Accessors: GetRequestHeader, SetRequestHeader
 			
 		
 <a name="RequestHeaders"></a>
@@ -352,6 +348,7 @@ Accessors: GetUrl, SetUrl
 #### DoExecute
 
 Executes a REST service operation, substitutes any of the provided parameter values if necessary.
+Operation fails if HTTP status code is other than 200. If that is an intention, pass `ignoreStatus` as `true`.
 Sample code:
 
 ```javascript
@@ -360,7 +357,7 @@ var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
 ```
 
 ```javascript
-DoExecute(params) 
+DoExecute(params, ignoreStatus) 
 ```
 
 
@@ -369,6 +366,7 @@ DoExecute(params)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
+| ignoreStatus | boolean |	Don't fail if operation status other than 200, just return the code<br>Optional, Default: "false". |
 
 
 
