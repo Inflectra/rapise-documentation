@@ -1853,10 +1853,59 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-3-16" type="checkbox" id="nav-1-3-16" >
+    <label class="md-nav__link" for="nav-1-3-16">
+      Test Management
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Test Management" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-16">
+        <span class="md-nav__icon md-icon"></span>
+        Test Management
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../spiratest_integration/" class="md-nav__link">
-      Test Management
+      SpiraTest Integration
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vstest/" class="md-nav__link">
+      Azure DevOps Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vstest_rl/" class="md-nav__link">
+      RapiseLauncher Extension for Azure DevOps
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -3348,6 +3397,26 @@
           <li class="md-nav__item">
   <a href="#rest-callback-breakpoints" class="md-nav__link">
     REST Callback Breakpoints
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recording" class="md-nav__link">
+    Recording
+  </a>
+  
+    <nav class="md-nav" aria-label="Recording">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#negative-rest-tests" class="md-nav__link">
+    Negative REST Tests
   </a>
   
 </li>
@@ -10425,6 +10494,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#recording" class="md-nav__link">
+    Recording
+  </a>
+  
+    <nav class="md-nav" aria-label="Recording">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#negative-rest-tests" class="md-nav__link">
+    Negative REST Tests
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10693,6 +10782,49 @@ i.e.
 <p>If you want to modify something in the callback code, then you need to use <strong>Stop Debugger</strong> or <strong>Reset</strong> button first to be able to save the modifications. In this case variables, session parameters and collected cookies get lost.</p>
 <h3 id="rest-callback-breakpoints">REST Callback Breakpoints<a class="headerlink" href="#rest-callback-breakpoints" title="Permanent link">&para;</a></h3>
 <p>You may set a breakpoint in any REST callback function, and Rapise will stop when doing a call. If you function is long and debugging implies many steps, the request may proceed while you are debugging. To avoid this you may change the value of <a href="../options_dialog/">global option</a> <strong>API Callback Timeout</strong> </p>
+<h2 id="recording">Recording<a class="headerlink" href="#recording" title="Permanent link">&para;</a></h2>
+<p>The way Rapise records captured REST actions may differs depending on the <a href="../options_dialog/#api">API recording options</a>. </p>
+<p><strong>Record REST Objects</strong> is <code>true</code>, each step creates an object in the object tree:</p>
+<p><img alt="Record REST Objects" src="../img/rest_web_service_record_rest_objects.png" /></p>
+<p>and it is used by the produced script:
+<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Session&#39;</span><span class="p">);</span>
+    <span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+  <span class="sb">```</span>
+
+<span class="sb">When **Record REST Objects** is `</span><span class="kc">false</span><span class="sb">` then nothing is added to the object tree and generated script uses REST definition file directly by means of [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest):</span>
+
+<span class="sb">```</span><span class="nx">javascript</span>
+    <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Get_Session</span> <span class="o">=</span><span class="cm">/**RESTService*/</span><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+    <span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+</code></pre></div></p>
+<p>When <strong>Generate Full Name</strong> is <code>false</code> then shorter object name is used, both when <strong>Record REST Objects</strong> is <code>true</code>:</p>
+<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Get_Session&#39;</span><span class="p">);</span>
+    <span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+</code></pre></div>
+<p>and when <strong>Record REST Objects</strong> is <code>false</code>:</p>
+<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">Get_Session</span> <span class="o">=</span><span class="cm">/**RESTService*/</span><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+    <span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+</code></pre></div>
+<p>The way how <code>Session.GetRESTRequest</code> is recorded depends on <strong>Generate Short REST Path</strong>. In short mode the 1<sup>st</sup> parameter is just <code>&lt;filename&gt;.rest</code>, i.e.:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>While in long mode it is:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;%WORKDIR%\\LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="negative-rest-tests">Negative REST Tests<a class="headerlink" href="#negative-rest-tests" title="Permanent link">&para;</a></h3>
+<p>Some actions are expected to return failure and we need to work with them to produce negative tests. There are two ways of doing it. First is global, so failures of all actions ignored. It is active when you choose <a href="../../Libraries/Session/#setignorestatus">Session.SetIgnoreStatus</a>. I.e.:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">SetIgnoreStatus</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="nx">FailingEndpoint1</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="nx">PassingEndpoint</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="nx">FailingEndpoint2</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="nx">Session</span><span class="p">.</span><span class="nx">SetIgnoreStatus</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</code></pre></div>
+<p>If automatic status verification is disabled you expected to explicitly check the response returned from <code>DoExecute</code>.</p>
+<p><strong>Record Failed REST Actions</strong> <a href="../options_dialog/#api">controls</a> what to record when action returns status other than <strong>200</strong>. If it is <code>true</code> then recorded step has additional parameter <code>ignoreStatus=true</code>. This flag is only added then action has also failed during recording.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">FailingEndpoint1</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">({},</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">PassingEndpoint</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="nx">FailingEndpoint2</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">({},</span> <span class="kc">true</span><span class="p">);</span>
+</code></pre></div>
                 
               
               
