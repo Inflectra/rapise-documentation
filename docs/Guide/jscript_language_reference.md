@@ -13,13 +13,14 @@ As of Rapise 6.7 NodeJS support is still experimental and default engine is stil
 Switching to NodeJS is safe in most of the cases - older tests should just work on new JS runtime without any noticeable differences.
 
 The engine is defined in two places:
+
 1. In the [Test Settings](settings_dialog.md#execution) (one of **Default**, **Node**, **WScript**). Where **Default** means use engine defined in the [Global Options](options_dialog.md#execution).
 2. In [Global Options](options_dialog.md#execution) (one of **Default**, **Node**, **WScript**). Where **Default** means **WScript**, but in the future it will be **Node**. 
 
 #### Features
 
 1. NodeJS v14 contains most of latest features of JavaScript including [EcmaScript2015 (ES6) and beyond](https://nodejs.org/en/docs/es6/). You may see more detailed list of features [here](https://node.green/).
-2. The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no `Array.join` or `String.trim`. You may find the most complete and up to date language reference at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference). 
+2. You may find the most complete and up to date language reference at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).
 3. You may use most of available [npm](https://www.npm.org/) packages in your test scripts. You may include `node_modules` folders in the root of your testing framework (i.e. `%WORKDIR%\node_modules`).
 
 #### Limitations
@@ -43,6 +44,9 @@ The engine is defined in two places:
 
  
 ## [Reference](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm)
+
+The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no `Array.join` or `String.trim`. 
+
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfFeatureInformation.htm" title="Feature Information">Feature Information</a></li>
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpecmafeatures.htm" title="Microsoft JScript Features - ECMA">Microsoft JScript Features - ECMA</a></li>
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpnonecmafeatures.htm" title="Microsoft JScript Features - Non-ECMA">Microsoft JScript Features - Non-ECMA</a></li>
