@@ -10702,13 +10702,15 @@
 <h3 id="nodejs-support-features-and-limitations">NodeJS Support Features and Limitations<a class="headerlink" href="#nodejs-support-features-and-limitations" title="Permanent link">&para;</a></h3>
 <p>As of Rapise 6.7 NodeJS support is still experimental and default engine is still JScript/WScript. However the plan is to make NodeJS the default in the future.</p>
 <p>Switching to NodeJS is safe in most of the cases - older tests should just work on new JS runtime without any noticeable differences.</p>
-<p>The engine is defined in two places:
-1. In the <a href="../settings_dialog/#execution">Test Settings</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>). Where <strong>Default</strong> means use engine defined in the <a href="../options_dialog/#execution">Global Options</a>.
-2. In <a href="../options_dialog/#execution">Global Options</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>). Where <strong>Default</strong> means <strong>WScript</strong>, but in the future it will be <strong>Node</strong>. </p>
+<p>The engine is defined in two places:</p>
+<ol>
+<li>In the <a href="../settings_dialog/#execution">Test Settings</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>). Where <strong>Default</strong> means use engine defined in the <a href="../options_dialog/#execution">Global Options</a>.</li>
+<li>In <a href="../options_dialog/#execution">Global Options</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>). Where <strong>Default</strong> means <strong>WScript</strong>, but in the future it will be <strong>Node</strong>. </li>
+</ol>
 <h4 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h4>
 <ol>
 <li>NodeJS v14 contains most of latest features of JavaScript including <a href="https://nodejs.org/en/docs/es6/">EcmaScript2015 (ES6) and beyond</a>. You may see more detailed list of features <a href="https://node.green/">here</a>.</li>
-<li>The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no <code>Array.join</code> or <code>String.trim</code>. You may find the most complete and up to date language reference at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a>. </li>
+<li>You may find the most complete and up to date language reference at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a>.</li>
 <li>You may use most of available <a href="https://www.npm.org/">npm</a> packages in your test scripts. You may include <code>node_modules</code> folders in the root of your testing framework (i.e. <code>%WORKDIR%\node_modules</code>).</li>
 </ol>
 <h4 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h4>
@@ -10738,6 +10740,7 @@
 </li>
 </ol>
 <h2 id="reference"><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm">Reference</a><a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<p>The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no <code>Array.join</code> or <code>String.trim</code>. </p>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfFeatureInformation.htm" title="Feature Information">Feature Information</a></li>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpecmafeatures.htm" title="Microsoft JScript Features - ECMA">Microsoft JScript Features - ECMA</a></li>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpnonecmafeatures.htm" title="Microsoft JScript Features - Non-ECMA">Microsoft JScript Features - Non-ECMA</a></li>
