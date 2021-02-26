@@ -3,6 +3,30 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB588', 'Using SeeTest Instrumented Mode')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB588.aspx">KB588</a> Using SeeTest Instrumented Mode
+
+If you are testing a native mobile application using  SeeTest you have an option to switch to NATIVE_APP_INSTRUMENTED context and record/playback tests in it.
+
+### <a onclick="return RegisterKbClick('KB586', 'How to get AWS Secret from Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB586.aspx">KB586</a> How to get AWS Secret from Rapise
+
+Learn how to query AWS Secret from Rapise. Requires Rapise 6.7+
+
+### <a onclick="return RegisterKbClick('KB585', 'How to run cross-browser tests on AWS Device Farm')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB585.aspx">KB585</a> How to run cross-browser tests on AWS Device Farm
+
+Learn how to configure Rapise to run cross-browser tests on AWS Device Farm. Requires Rapise 6.7+
+
+### <a onclick="return RegisterKbClick('KB584', 'Rapise and Microsoft Defender Antivirus')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB584.aspx">KB584</a> Rapise and Microsoft Defender Antivirus
+
+If you use Microsoft Defender Antivirus to protect your system then you may need to perform certain steps to use Rapise effectively.
+
+### <a onclick="return RegisterKbClick('KB583', 'Rapise and Avast Antivirus')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB583.aspx">KB583</a> Rapise and Avast Antivirus
+
+If you use Avast Antivirus to protect your system then you may need to perform certain steps to install and use Rapise.
+
+### <a onclick="return RegisterKbClick('KB581', 'Rapise 6.6 Built In Help Fix')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB581.aspx">KB581</a> Rapise 6.6 Built In Help Fix
+
+Rapise help system has been updated to latest template introducing new search and navigation capabilities. The side effect is that is it not compatible with default HTML-based viewer engine and may look corrupted.
+
 ### <a onclick="return RegisterKbClick('KB574', 'Advanced search for elements in desktop applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB574.aspx">KB574</a> Advanced search for elements in desktop applications
 
 If a desktop application is dynamic and recorded locators do not work then there is a way to search for elements using UIAObject.DoFindElementByCondition and UIAObject.DoFindElementsByCondition.Requires Rapise 6.6+
@@ -583,7 +607,7 @@ Sometimes it is required to have list of files from some folder. Here we demonst
 
 Sometimes when recording a test against a mobile responsive web site, it is useful to be able to record on the local browser (before playing it back against a cloud service such as SauceLabs, Browserstack, etc.). However you want to always record using a specific browser window size.
 
-### <a onclick="return RegisterKbClick('KB322', 'How to run cross-browser tests on BrowserStack?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB322.aspx">KB322</a> How to run cross-browser tests on BrowserStack?
+### <a onclick="return RegisterKbClick('KB322', 'How to run cross-browser tests on BrowserStack')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB322.aspx">KB322</a> How to run cross-browser tests on BrowserStack
 
 BrowserStack enables testing of your website for cross browser compatibility on real browsers. Instant access to multiple desktop and mobile browsers.  Learn how to configure Selenium  profiles in Rapise to enable connection to BrowserStack services. Requires Rapise 5.3+
 
@@ -725,7 +749,7 @@ This topic describes how to read and write JSON data in Rapise
 
 ### <a onclick="return RegisterKbClick('KB274', 'Using Rapise Mobile with a Cloud Device Farm')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB274.aspx">KB274</a> Using Rapise Mobile with a Cloud Device Farm
 
-Rapise connects to mobile devices (iOS and Android) using the standard Appium mobile device testing API (similar to Selenium WebDriver for web browsers). This articles describes how you can use Rapise to connect to a mobile device farm using the Appium mobile device profiles inside Rapise.
+Rapise connects to mobile devices (iOS and Android) using the standard Appium mobile device testing API (similar to Selenium WebDriver for web browsers). This articles describes how you can use Rapise to connect to a mobile device farm using the Appium mobile device profiles inside Rapise. We use Kobiton as an example.
 
 ### <a onclick="return RegisterKbClick('KB273', 'Rapise Tips, Tricks & Workarounds when Testing Dynamics AX 2012')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB273.aspx">KB273</a> Rapise Tips, Tricks & Workarounds when Testing Dynamics AX 2012
 
