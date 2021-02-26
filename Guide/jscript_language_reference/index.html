@@ -1331,6 +1331,46 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#nodejs-vs-jscript" class="md-nav__link">
+    NodeJS vs JScript
+  </a>
+  
+    <nav class="md-nav" aria-label="NodeJS vs JScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodejs-support-features-and-limitations" class="md-nav__link">
+    NodeJS Support Features and Limitations
+  </a>
+  
+    <nav class="md-nav" aria-label="NodeJS Support Features and Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     Reference
   </a>
@@ -10015,6 +10055,46 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#nodejs-vs-jscript" class="md-nav__link">
+    NodeJS vs JScript
+  </a>
+  
+    <nav class="md-nav" aria-label="NodeJS vs JScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodejs-support-features-and-limitations" class="md-nav__link">
+    NodeJS Support Features and Limitations
+  </a>
+  
+    <nav class="md-nav" aria-label="NodeJS Support Features and Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     Reference
   </a>
@@ -10446,6 +10526,46 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#nodejs-vs-jscript" class="md-nav__link">
+    NodeJS vs JScript
+  </a>
+  
+    <nav class="md-nav" aria-label="NodeJS vs JScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodejs-support-features-and-limitations" class="md-nav__link">
+    NodeJS Support Features and Limitations
+  </a>
+  
+    <nav class="md-nav" aria-label="NodeJS Support Features and Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     Reference
   </a>
@@ -10576,6 +10696,47 @@
                 
                 
                 <h1 id="jscript-language-reference">JScript Language Reference<a class="headerlink" href="#jscript-language-reference" title="Permanent link">&para;</a></h1>
+<h2 id="nodejs-vs-jscript">NodeJS vs JScript<a class="headerlink" href="#nodejs-vs-jscript" title="Permanent link">&para;</a></h2>
+<p>Default JS engine for Rapise is Microsoft JScript with <strong>WScript</strong> runtime. This document contains language reference for this version.</p>
+<p>Since Rapise 6.7 there is an alternative JavaScript runtime - <a href="https://nodejs.org/">NodeJS</a> v14.15.3. As for 6.7 it is an experimental feature that you may enable either for <a href="../settings_dialog/#execution">single test project</a> or <a href="../options_dialog/#execution">globally</a>. </p>
+<h3 id="nodejs-support-features-and-limitations">NodeJS Support Features and Limitations<a class="headerlink" href="#nodejs-support-features-and-limitations" title="Permanent link">&para;</a></h3>
+<p>As of Rapise 6.7 NodeJS support is still experimental and default engine is still JScript/WScript. However the plan is to make NodeJS the default in the future.</p>
+<p>Switching to NodeJS is safe in most of the cases - older tests should just work on new JS runtime without any noticeable differences.</p>
+<p>The engine is defined in two places:
+1. In the <a href="../settings_dialog/#execution">Test Settings</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>). Where <strong>Default</strong> means use engine defined in the <a href="../options_dialog/#execution">Global Options</a>.
+2. In <a href="../options_dialog/#execution">Global Options</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>). Where <strong>Default</strong> means <strong>WScript</strong>, but in the future it will be <strong>Node</strong>. </p>
+<h4 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h4>
+<ol>
+<li>NodeJS v14 contains most of latest features of JavaScript including <a href="https://nodejs.org/en/docs/es6/">EcmaScript2015 (ES6) and beyond</a>. You may see more detailed list of features <a href="https://node.green/">here</a>.</li>
+<li>The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no <code>Array.join</code> or <code>String.trim</code>. You may find the most complete and up to date language reference at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a>. </li>
+<li>You may use most of available <a href="https://www.npm.org/">npm</a> packages in your test scripts. You may include <code>node_modules</code> folders in the root of your testing framework (i.e. <code>%WORKDIR%\node_modules</code>).</li>
+</ol>
+<h4 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Rapise IDE and JavaScript editor contains lots of features for comfortable JavaScript editing. This part is now tailored for JScript/WScript and may show <code>false negative</code> behavior. It may show warnings during editing because some syntax is not JScript compatible (although it is fine for Node/ES6). I.e. the following language features are not understood by the parser and may show a warning that you need to just ignore:</p>
+<ul>
+<li><code>let</code>, <code>const</code> keywords</li>
+<li><code>()=&gt;lambda</code> function definitions</li>
+<li><code>(...args)</code></li>
+<li><code>{parts,of,obj} = someobj</code></li>
+<li><code>obj = {field, defs}</code></li>
+<li>'`' strings </li>
+<li><code>class</code> support</li>
+<li>getters, setters</li>
+<li>object methods.</li>
+</ul>
+</li>
+<li>
+<p>NodeJS engine now runs in 32 bit mode. This is required to keep compatibility with <code>ActiveXObject</code> support that is an issential part of WScript but has to be emulated in NodeJS.</p>
+</li>
+<li>
+<p>Rapise has own copy of <strong>node.exe</strong> installed. So if you have npm modules installed globally and need to use them in your test, you have to install them locally into the framework.</p>
+</li>
+<li>
+<p><strong>npm</strong> is not installed with Rapise. So if you want ot use it, you need to have one installed seaparately.</p>
+</li>
+</ol>
 <h2 id="reference"><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm">Reference</a><a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfFeatureInformation.htm" title="Feature Information">Feature Information</a></li>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpecmafeatures.htm" title="Microsoft JScript Features - ECMA">Microsoft JScript Features - ECMA</a></li>
