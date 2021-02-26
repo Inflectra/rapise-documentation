@@ -36,6 +36,12 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
     * `true`: An object added to the Object Repository for each request. Then it is initialized using `var <request_object_id> = SeS(<request_object_id>)`.
     * `false`: Don't add anything to the object tree. Each request is initialized as `var <request_object_id> = /**RESTRequest*/Session.GetRESTRequest('<definition>.rest', '<request_id>')`. This approach makes it easier to generate re-usable functions doing REST calls without need to load objects. See [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest).
 
+## Execution
+
+![execution](./img/options_dialog_execution.png)
+
+* **JSEngineType**: In the test settings (one of **Default**, **Node**, **WScript**). Where **Default** means **WScript**, but in the future it will eventually become **Node**. 
+
 ## Settings
 
 ![options.dialog.settings](./img/options_dialog5.png)

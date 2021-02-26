@@ -1,5 +1,46 @@
 # JScript Language Reference
 
+## NodeJS vs JScript
+
+Default JS engine for Rapise is Microsoft JScript with **WScript** runtime. This document contains language reference for this version.
+
+Since Rapise 6.7 there is an alternative JavaScript runtime - [NodeJS](https://nodejs.org/) v14.15.3. As for 6.7 it is an experimental feature that you may enable either for [single test project](settings_dialog.md#execution) or [globally](options_dialog.md#execution). 
+
+### NodeJS Support Features and Limitations
+
+As of Rapise 6.7 NodeJS support is still experimental and default engine is still JScript/WScript. However the plan is to make NodeJS the default in the future.
+
+Switching to NodeJS is safe in most of the cases - older tests should just work on new JS runtime without any noticeable differences.
+
+The engine is defined in two places:
+1. In the [Test Settings](settings_dialog.md#execution) (one of **Default**, **Node**, **WScript**). Where **Default** means use engine defined in the [Global Options](options_dialog.md#execution).
+2. In [Global Options](options_dialog.md#execution) (one of **Default**, **Node**, **WScript**). Where **Default** means **WScript**, but in the future it will be **Node**. 
+
+#### Features
+
+1. NodeJS v14 contains most of latest features of JavaScript including [EcmaScript2015 (ES6) and beyond](https://nodejs.org/en/docs/es6/). You may see more detailed list of features [here](https://node.green/).
+2. The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no `Array.join` or `String.trim`. You may find the most complete and up to date language reference at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference). 
+3. You may use most of available [npm](https://www.npm.org/) packages in your test scripts. You may include `node_modules` folders in the root of your testing framework (i.e. `%WORKDIR%\node_modules`).
+
+#### Limitations
+
+1. Rapise IDE and JavaScript editor contains lots of features for comfortable JavaScript editing. This part is now tailored for JScript/WScript and may show `false negative` behavior. It may show warnings during editing because some syntax is not JScript compatible (although it is fine for Node/ES6). I.e. the following language features are not understood by the parser and may show a warning that you need to just ignore:
+    * `let`, `const` keywords
+    * `()=>lambda` function definitions
+    * `(...args)`
+    * `{parts,of,obj} = someobj`
+    * `obj = {field, defs}`
+    * '`' strings 
+    * `class` support
+    * getters, setters
+    * object methods.
+
+2. NodeJS engine now runs in 32 bit mode. This is required to keep compatibility with `ActiveXObject` support that is an issential part of WScript but has to be emulated in NodeJS.
+
+3. Rapise has own copy of **node.exe** installed. So if you have npm modules installed globally and need to use them in your test, you have to install them locally into the framework.
+
+4. **npm** is not installed with Rapise. So if you want ot use it, you need to have one installed seaparately.
+
  
 ## [Reference](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm)
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfFeatureInformation.htm" title="Feature Information">Feature Information</a></li>
