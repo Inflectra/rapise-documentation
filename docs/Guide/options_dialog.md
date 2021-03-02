@@ -1,16 +1,18 @@
-# Options Dialog
+# Rapise Settings Dialog
 
 ![options dialog, general tab](./img/options_dialog1.png)
 
 ## Purpose
 
-Use the **Options** dialog to change the global Rapise settings. Your changes will apply to all tests.
+Use the **Rapise Settings** dialog to change the global options. Your changes will apply to all tests.
 
 ## How to Open
 
 User `Settings > Global` menu item.
 
-## Misc
+## Global Settings
+
+### Misc
 
 ![options.dialog.misc](./img/options_dialog4.png)
 
@@ -20,7 +22,7 @@ User `Settings > Global` menu item.
 
 Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
-## API
+### API
 
 ![options.dialog.api](./img/options_dialog_api.png)
 
@@ -36,13 +38,13 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
     * `true`: An object added to the Object Repository for each request. Then it is initialized using `var <request_object_id> = SeS(<request_object_id>)`.
     * `false`: Don't add anything to the object tree. Each request is initialized as `var <request_object_id> = /**RESTRequest*/Session.GetRESTRequest('<definition>.rest', '<request_id>')`. This approach makes it easier to generate re-usable functions doing REST calls without need to load objects. See [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest).
 
-## Execution
+### Execution
 
 ![execution](./img/options_dialog_execution.png)
 
 * **JSEngineType**: In the test settings (one of **Default**, **Node**, **WScript**). Where **Default** means **WScript**, but in the future it will eventually become **Node**. 
 
-## Settings
+### Settings
 
 ![options.dialog.settings](./img/options_dialog5.png)
 
@@ -67,7 +69,7 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 * **Temp Folder**:  default folder for temporary tests.
 * **Test Auto Upgrade**: if set to **True** each opened `.sstest` file is automatically upgraded to the latest format.
 
-## Recorder
+### Recorder
 
 * **FrameStyle**: Specifies which frame to draw around objects when you [Record](recording.md), [Learn](object_learning.md), and [Spy](object_spy.md).
 
@@ -77,7 +79,7 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 * **DefaultSpy** specifies which of the various types of [Object Spy](object_spy.md) will be displayed by default.
 * **GenerateComments**: **True** to automatically generate JavaScript or RVL comment for each recorded action.
 
-## Utils
+## Utilities
 
 ![options dialog, recent projects](./img/options_dialog9.png)
 
