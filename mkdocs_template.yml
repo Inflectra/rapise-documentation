@@ -9,7 +9,6 @@ hide_site_name: True
 
 plugins:
   - search:
-      prebuild_index: True
       separator: '[\s\(\)\,\-]+'
 
 markdown_extensions:
@@ -43,6 +42,7 @@ theme:
   language: en
   features:
     - navigation.tabs
+    - navigation.sections
   palette:
     scheme: default
     primary: 'black'
@@ -72,6 +72,15 @@ extra:
       link: 'https://www.linkedin.com/inflectra-corporation'
 
 nav:
+- '#':
+    - 'RapiseDocs': 'index.md'
+    - 'Know Your Way Around': 'Intro/orientation.md'
+    - 'Knowledge Base': 'Manuals/kb.md'
+    - 'Automation Tips': 'Intro/automation.md'
+    - 'DevOps': 'Intro/devops.md'
+    - 'Data-Driven Testing': 'Intro/ddt.md'
+    - 'Frameworks': 'Intro/framework.md'
+
 - 'User''s Guide':
     - 'About this Guide': 'Guide/about_this_guide.md'
     - 'Getting Started':
@@ -387,9 +396,3 @@ nav:
     - 'Release Notes for 6.3': 'New/6_3.md'
     - 'Release Notes for 6.2': 'New/6_2.md'
     - 'Development Roadmap': 'New/Roadmap.md'
-- 'Know Your Way Around': 'Intro/orientation.md'
-- 'Knowledge Base': 'Manuals/kb.md'
-- 'Automation Tips': 'Intro/automation.md'
-- 'DevOps': 'Intro/devops.md'
-- 'Data-Driven Testing': 'Intro/ddt.md'
-- 'Frameworks': 'Intro/framework.md'
