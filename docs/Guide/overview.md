@@ -13,8 +13,8 @@ prevent regression.
 ## Make Testing Fast and Repeatable
 
 Consider for a moment what it is you do to test your software today.
-Most likely it has some for of **user interface (UI)**, probably a
-**graphic user interface (GUI)**.  So you will run the application ,
+Most likely it has some **user interface (UI)**, probably a
+**graphic user interface (GUI)**.  So you will run the application,
 click around, perhaps in some way that gives you complete coverage of
 all the features (but probably not if it's a large application or web).
 Then you will login, if appropriate, and you will fetch some data and
