@@ -36,7 +36,7 @@
 
 ++ctrl+a++ - Select All
 
-++ctrl+/++ - Comment/Uncomment selected block of JS code.
+++ctrl++ + / - Comment/Uncomment selected block of JS code.
 
 ++tab++ - Tabify Selection
 
