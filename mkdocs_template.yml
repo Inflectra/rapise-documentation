@@ -80,6 +80,7 @@ nav:
     - 'DevOps': 'Intro/devops.md'
     - 'Data-Driven Testing': 'Intro/ddt.md'
     - 'Frameworks': 'Intro/framework.md'
+    - 'Cheatsheet': 'Guide/cheatsheet.md'
 
 - 'User''s Guide':
     - 'About this Guide': 'Guide/about_this_guide.md'
