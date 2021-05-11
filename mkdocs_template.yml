@@ -188,6 +188,7 @@ nav:
             - 'Convert Functional to Load Test': 'Guide/convert_functional_to_load_tes.md'
             - 'Client Performance Monitoring': 'Guide/client_performance_monitoring.md'
         - 'Test Management':
+            - 'Spira Dashboard': 'Guide/spira_dashboard_2.md'
             - 'SpiraTest Integration': 'Guide/spiratest_integration.md'
             - 'Azure DevOps Integration': 'Guide/vstest.md'
             - 'RapiseLauncher Extension for Azure DevOps': 'Guide/vstest_rl.md'
@@ -375,6 +376,7 @@ nav:
         #domsap
 - 'Manuals':
     - 'Rapise Installation Guide': 'Manuals/Rapise_Installation_Guide.md'
+    - 'Spira Dashboard': 'Guide/spira_dashboard_2.md'
     - 'SpiraTest Integration': 'Guide/spiratest_integration.md'    
     - 'Setting Up Web Browsers': 'Guide/setting_up_web_browsers.md'
     - 'Preparing for Android Testing': 'Manuals/Preparing_for_Android_Testing.md'

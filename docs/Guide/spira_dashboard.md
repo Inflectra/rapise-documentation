@@ -1,5 +1,8 @@
 # Spira Dashboard
 
+!!! important
+	In Rapise 7 we've updated the dashboard. It now has all new look and features. [Learn more](spira_dashboard_2.md).
+
 ## Purpose
 
 This page displays information from the SpiraTest or SpiraTeam server that this instance of Rapise is connected to. More details on using Rapise with either SpiraTest or SpiraTeam can be found in the separate **Using Rapise with SpiraTest Guide**. A copy of this guide should be in the `Start > Programs` menu created by the Rapise installer.
