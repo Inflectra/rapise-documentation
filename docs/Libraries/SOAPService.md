@@ -3,8 +3,6 @@ Summary: This behavior pattern implements SOAP service client.
 # SOAPService
 
 This behavior pattern implements SOAP service client.
- 
-Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -102,7 +100,7 @@ The body of the HTTP response deserialized from SOAP into a JavaScript object.
 
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
-| jsonPath | string | Path to a sub-object within response object. E.g. 'Body.Connection_AuthenticateResult'.<br>Optional, Default: Body. |
+| jsonPath | string | Path to a sub-object within response object. E.g. 'Body.Connection_AuthenticateResult'.<br>Optional, Default: "Body". |
 | info | object | Empty object that will receive error information if any. Access as info.error in a calling function.<br>Optional. |
 
 

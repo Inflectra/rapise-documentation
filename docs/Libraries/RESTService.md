@@ -3,8 +3,6 @@ Summary: This behavior pattern implements REST service client.
 # RESTService
 
 This behavior pattern implements REST service client.
- 
-Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
@@ -24,14 +22,18 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
 | [Method](#method) | The HTTP Method being used for the request (GET, POST, etc. | GetMethod | SetMethod |
 | [Name](#name) | The name of the request operation | GetName |  |
+| [Parameter](#parameter) | Get/Set single parameter by name. | GetParameter | SetParameter |
 | [Parameters](#parameters) | The list of parameters available for this request url. | GetParameters | SetParameters |
 | [RequestBodyObject](#requestbodyobject) | The body of the HTTP request as a JavaScript object. | GetRequestBodyObject | SetRequestBodyObject |
 | [RequestBodyText](#requestbodytext) | The body of the HTTP request in raw text format | GetRequestBodyText | SetRequestBodyText |
+| [RequestHeader](#requestheader) | Get/Set Single HTTP header by name. | GetRequestHeader | SetRequestHeader |
 | [RequestHeaders](#requestheaders) | The list of HTTP headers that are part of this request. | GetRequestHeaders | SetRequestHeaders |
 | [ResponseBodyObject](#responsebodyobject) | The body of the HTTP response deserialized from JSON into a JavaScript object. | GetResponseBodyObject |  |
 | [ResponseBodyText](#responsebodytext) | The body of the HTTP response in raw text format | GetResponseBodyText |  |
 | [ResponseHeaders](#responseheaders) | Returns the list of HTTP headers returned from the HTTP response. | GetResponseHeaders |  |
 | [ResponseIsErrorStatus](#responseiserrorstatus) | Returns 'true 'if an HTTP error code came back from the web service | GetResponseIsErrorStatus |  |
+| [ResponseStatusCode](#responsestatuscode) | HTTP response code | GetResponseStatusCode |  |
+| [ResponseStatusText](#responsestatustext) | Text version of the response code | GetResponseStatusText |  |
 | [Url](#url) | The URL being used to access the web service | GetUrl | SetUrl |
 
 
@@ -112,6 +114,28 @@ Type: string
 Accessors: GetName
 			
 		
+<a name="Parameter"></a>
+#### Parameter
+
+
+Get/Set single parameter by name.
+
+			
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| name | string | Name of a parameter. |
+
+
+	
+			
+Type: object
+			
+			
+Accessors: GetParameter, SetParameter
+			
+		
 <a name="Parameters"></a>
 #### Parameters
 
@@ -178,6 +202,28 @@ Type: string
 Accessors: GetRequestBodyText, SetRequestBodyText
 			
 		
+<a name="RequestHeader"></a>
+#### RequestHeader
+
+
+Get/Set Single HTTP header by name.
+
+			
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| name | string | HTTP Header name. |
+
+
+	
+			
+Type: object
+			
+			
+Accessors: GetRequestHeader, SetRequestHeader
+			
+		
 <a name="RequestHeaders"></a>
 #### RequestHeaders
 
@@ -216,14 +262,6 @@ var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
 ```
 
 			
-**Getter Parameters:**
-
-| **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
-| jsonPath | string | Path to a sub-object within response object. E.g. 'Body.Connection_AuthenticateResult'.<br>Optional, Default: Body. |
-| info | object | Empty object that will receive error information if any. Access as info.error in a calling function.<br>Optional. |
-
-
 	
 			
 Type: object
@@ -287,6 +325,36 @@ Type: boolean
 Accessors: GetResponseIsErrorStatus
 			
 		
+<a name="ResponseStatusCode"></a>
+#### ResponseStatusCode
+
+
+HTTP response code
+
+			
+	
+			
+Type: number
+			
+			
+Accessors: GetResponseStatusCode
+			
+		
+<a name="ResponseStatusText"></a>
+#### ResponseStatusText
+
+
+Text version of the response code
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetResponseStatusText
+			
+		
 <a name="Url"></a>
 #### Url
 
@@ -312,6 +380,7 @@ Accessors: GetUrl, SetUrl
 #### DoExecute
 
 Executes a REST service operation, substitutes any of the provided parameter values if necessary.
+Operation fails if HTTP status code is other than 200. If that is an intention, pass `ignoreStatus` as `true`.
 Sample code:
 
 ```javascript
@@ -320,7 +389,7 @@ var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
 ```
 
 ```javascript
-DoExecute(params) 
+DoExecute(params, ignoreStatus) 
 ```
 
 
@@ -329,6 +398,7 @@ DoExecute(params)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | params | object |	JavaScript object `{"name1": "value1", "name2": "value2" }`. Parameter values that should be passed to the web service operation. |
+| ignoreStatus | boolean |	Don't fail if operation status other than 200, just return the code<br>Optional, Default: "false". |
 
 
 
