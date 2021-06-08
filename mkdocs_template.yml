@@ -1,5 +1,5 @@
 site_name: RapiseDocs
-copyright: © Copyright 2006-2020 Inflectra Corporation, All Rights Reserved | en-US |
+copyright: © Copyright 2006-2021 Inflectra Corporation, All Rights Reserved | en-US |
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://rapisedoc.inflectra.com/
@@ -9,7 +9,6 @@ hide_site_name: True
 
 plugins:
   - search:
-      prebuild_index: True
       separator: '[\s\(\)\,\-]+'
 
 markdown_extensions:
@@ -43,6 +42,7 @@ theme:
   language: en
   features:
     - navigation.tabs
+    - navigation.sections
   palette:
     scheme: default
     primary: 'black'
@@ -72,6 +72,16 @@ extra:
       link: 'https://www.linkedin.com/inflectra-corporation'
 
 nav:
+- '#':
+    - 'RapiseDocs': 'index.md'
+    - 'Know Your Way Around': 'Intro/orientation.md'
+    - 'Knowledge Base': 'Manuals/kb.md'
+    - 'Automation Tips': 'Intro/automation.md'
+    - 'DevOps': 'Intro/devops.md'
+    - 'Data-Driven Testing': 'Intro/ddt.md'
+    - 'Frameworks': 'Intro/framework.md'
+    - 'Cheatsheet': 'Guide/cheatsheet.md'
+
 - 'User''s Guide':
     - 'About this Guide': 'Guide/about_this_guide.md'
     - 'Getting Started':
@@ -177,7 +187,11 @@ nav:
             - 'NeoLoad Integration': 'Guide/neoload_integration.md'
             - 'Convert Functional to Load Test': 'Guide/convert_functional_to_load_tes.md'
             - 'Client Performance Monitoring': 'Guide/client_performance_monitoring.md'
-        - 'Test Management': 'Guide/spiratest_integration.md'
+        - 'Test Management':
+            - 'Spira Dashboard': 'Guide/spira_dashboard_2.md'
+            - 'SpiraTest Integration': 'Guide/spiratest_integration.md'
+            - 'Azure DevOps Integration': 'Guide/vstest.md'
+            - 'RapiseLauncher Extension for Azure DevOps': 'Guide/vstest_rl.md'
         - 'Git Integration': 'Guide/git_integration.md'
     - 'Dialogs, Views, and Menus':
         - 'Dialogs, Views, and Menus': 'Guide/dialogs_views_menus.md'
@@ -204,9 +218,9 @@ nav:
             - 'NeoLoad Convertor Dialog': 'Guide/neoload_convertor_dialog.md'
             - 'NeoLoad Settings Dialog': 'Guide/neoload_settings_dialog.md'
             - 'Object Tree View': 'Guide/object_tree.md'
-            - 'Options Dialog': 'Guide/options_dialog.md'
             - 'Output View': 'Guide/output_view.md'
             - 'Properties Dialog': 'Guide/properties.md'
+            - 'Rapise Settings Dialog': 'Guide/options_dialog.md'
             - 'Recording Activity Dialog': 'Guide/recording_activity_dialog.md'
             - 'Replace Text Dialog': 'Guide/replace_text_dialog.md'
             - 'Report Viewer': 'Guide/report_viewer.md'
@@ -362,6 +376,7 @@ nav:
         #domsap
 - 'Manuals':
     - 'Rapise Installation Guide': 'Manuals/Rapise_Installation_Guide.md'
+    - 'Spira Dashboard': 'Guide/spira_dashboard_2.md'
     - 'SpiraTest Integration': 'Guide/spiratest_integration.md'    
     - 'Setting Up Web Browsers': 'Guide/setting_up_web_browsers.md'
     - 'Preparing for Android Testing': 'Manuals/Preparing_for_Android_Testing.md'
@@ -377,15 +392,10 @@ nav:
     - 'Training': 'Intro/training.md'
     - 'Playground': 'Intro/uitap.md'
 - 'Release Notes':
+    - 'Release Notes for 6.7': 'New/6_7.md'
     - 'Release Notes for 6.6': 'New/6_6.md'
     - 'Release Notes for 6.5': 'New/6_5.md'
     - 'Release Notes for 6.4': 'New/6_4.md'
     - 'Release Notes for 6.3': 'New/6_3.md'
     - 'Release Notes for 6.2': 'New/6_2.md'
     - 'Development Roadmap': 'New/Roadmap.md'
-- 'Know Your Way Around': 'Intro/orientation.md'
-- 'Knowledge Base': 'Manuals/kb.md'
-- 'Automation Tips': 'Intro/automation.md'
-- 'DevOps': 'Intro/devops.md'
-- 'Data-Driven Testing': 'Intro/ddt.md'
-- 'Frameworks': 'Intro/framework.md'

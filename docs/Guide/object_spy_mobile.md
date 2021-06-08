@@ -53,7 +53,8 @@ This dialog lets you perform the following events on the device:
 ![spy_dialog_mobile_events_precise_tap](./img/object_spy_mobile4.png)
 
 - **Scroll To** - simulates scrolling to the selected object in the device object tree (which may not be visible).
-- **Text / Send Keys** - to use this, enter in text in the text box and click 'Send Keys', this sends text to the currently selected  object as if you were using the virtual keyboard on the device.
+- **Text / Send Keys** - to use this, enter in text in the text box and click 'Send Keys', this sends text to the currently selected object as if you were using the virtual keyboard on the device.
+- **Clear** - select a text box and use Clear to erase text displayed in it.
 - **Accept Alert** - if you have a popup alert on the device, this simulates accepting it.
 - **Dismiss Alert** - if you have a popup alert on the device, this simulates dismissing it.
 - **Change Orientation** - for devices that support it, this simulates changing the orientation of the device from landscape to portrait (or vice-versa).

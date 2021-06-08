@@ -42,7 +42,9 @@ There is a build-in set of test parameters for [cross-browser testing](cross_bro
 
 * **CacheObjects**: Remember object locations and try to reuse them for speed.  This is helpful with dialog based applications.
 * **CommandInterval**: Time interval (in milliseconds) between script commands during script execution.
+* **
 * **IterationsCount**: Your test script will be executed this many times consecutively during [Playback](playback.md).
+* **JS Engine**: one of **Default**, **Node**, **WScript**. Where **Default** means use **JSEngineType** defined in the [Global Options](options_dialog.md#execution). Otherwise use [nodejs](jscript_language_reference.md) or [JScript/WScript](jscript_language_reference.md) engine correspondingly.
 * **ObjectLookupAttemptInterval**: This is the time Rapise will wait between attempts to locate an object.
 * **ObjectLookupAttempts**: This is the number of times Rapise will attempt to locate an object.
 * **Show Report**: Display report after execution. Default is **True**.

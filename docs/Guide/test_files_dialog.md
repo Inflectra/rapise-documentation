@@ -27,18 +27,18 @@ Right click on a folder to see:
 
 ![test files view, context menu 1](./img/test_files_dialog2.png)
 
-* **Create...**
-    * **Text File...**: Create `.txt` file and add it to the test.
-    * **JavaScript File...**: Create `.js` file and add it to the test.
-    * **JSON File...**: Create `.json` file and add it to the test.
-    * **Spreadsheet...**: Create new `.xlsx` or `.xls` file and add it to the test.
-    * **File...**: Aks for name and extension and create an empty file.
+* **Create**
+    * **Text File**: Create `.txt` file and add it to the test.
+    * **JavaScript File**: Create `.js` file and add it to the test.
+    * **JSON File**: Create `.json` file and add it to the test.
+    * **Spreadsheet**: Create new `.xlsx` or `.xls` file and add it to the test.
+    * **File**: Aks for name and extension and create an empty file.
     * **WebAppProfile.json**: Add new `WebAppProfile.json` to this test project.
-    * **User Lib...**: Create shared user library for this test and sub-tests.
-* **Add File(s)...**: Add an existing file to the test.
-* **New Group...**:  Create a logical grouping of files in the test. This will **not** add a folder to the file system.
+    * **User Lib**: Create shared user library for this test and sub-tests.
+* **Add File(s)**: Add an existing file to the test.
+* **New Group**:  Create a logical grouping of files in the test. This will **not** add a folder to the file system.
 * **Reload**: Refresh group contents. Use it for [filter groups](../test_files_dialog/#filtergroup)  ('IsFilterGroup' is set to 'True' in group properties), e.g. for Report group.
-* **Create Sub-Test...**: Launch Create Sub-Test dialog.
+* **Create Sub-Test**: Launch Create Sub-Test dialog.
 * **Remove from Test**: Remove the selected grouping from the test.  This does **not** delete included files from your hard disk.
 * **Remove All from Disk**: Remove all files included into the selected grouping from your hard disk.
 
@@ -49,12 +49,12 @@ Right click on a file to see:
 ![test files view, context menu 2](./img/test_files_dialog3.png)
 
 * **Open**: Open the file in Rapise.
-* **Open Externally...**: Open the file using associated program. E.g. if a Notepad is registered in Windows to open TXT files, then TXT file will be opened by Notepad.
-* **Open as Spreadsheet...**: Open this file using built in [Spreadsheet editor](./spreadsheet_editor.md). May be used to open `.rvl.xlsx` in spreadsheet editor if you, for example, need to add columns.
-* **Reveal in Explorer...**: Open Windows File Explorer and show this file in it.
+* **Open Externally**: Open the file using associated program. E.g. if a Notepad is registered in Windows to open TXT files, then TXT file will be opened by Notepad.
+* **Open as Spreadsheet**: Open this file using built in [Spreadsheet editor](./spreadsheet_editor.md). May be used to open `.rvl.xlsx` in spreadsheet editor if you, for example, need to add columns.
+* **Reveal in Explorer**: Open Windows File Explorer and show this file in it.
 * **Remove from Test**: Remove the file from your test.  This does **not** delete the file from your hard disk.
 * **Remove from Disk**: Remove the file from your test and hard drive.
-* **Create Data Object...**: Only available for `.xls` and `.xlsx` files. Create Spreadsheet Data Object in the object tree.
+* **Create Data Object**: Only available for `.xls` and `.xlsx` files. Create Spreadsheet Data Object in the object tree.
 
 ## Context Menu (Sub-Test)
 

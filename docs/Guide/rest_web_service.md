@@ -159,9 +159,9 @@ The **Body** part should be a valid `JSON` with the following structure:
 
 ![WS Multipart](./img/rest_web_service_multipart1.png)
 
-For the text fields **ContentType** is optional. By default is is set to `text/plain`.
+For the text fields **ContentType** is optional. By default it is set to `text/plain`.
 
-For file upload fields **ContentType** and **FileName** are optional. By default content-type and **FileName** are auto-detected form the **FilePath**.
+For file upload fields **ContentType** and **FileName** are optional. By default content-type and **FileName** are auto-detected from the **FilePath**.
 
 So here is an example of the minimal multipart request with one text field and one file upload:
 
@@ -227,6 +227,176 @@ If we have a parameterized JSON Body:
 Once parameters are defined for the `multipart` request, you should make sure that they are properly escaped. Consider using `JSON.stringify` appropriately, i.e.:
 
 ```javascript
-RestMultipart_UploadFileParams.SetParameters('StringParam', JSON.stringify("Some Value"));
-RestMultipart_UploadFileParams.SetParameters('FilePathParam', JSON.stringify( Global.GetFullPath('NewAvatarImage.png') ));
+RestMultipart_UploadFileParams.SetParameter('StringParam', JSON.stringify("Some Value"));
+RestMultipart_UploadFileParams.SetParameter('FilePathParam', JSON.stringify( Global.GetFullPath('NewAvatarImage.png') ));
+```
+
+## Passing Data Between API Calls
+
+There are certain scenarios when it is convenient to pass dynamic data into a REST call or between consequent REST calls, i.e.:
+
+1. We want to use credential from external configuration file to avoid hard-coding them as REST headers or REST parameters.
+2. One call returns values that are needed by subsequent calls. Good example is a bearer token returned by authorization calls that should then be used as a header in all subsequent calls. The token has short life range and should be requested again and again between testing sessions.
+3. We want to test service in exploratory mode. I.e. do some sequence of calls manually. Maybe then checking something via the UI or getting some value that is easier to get via the API and then needed elsewhere.
+
+So we enabled pre- and post- request callbacks that work both in REST editor and in runtime when tests executes API calls. We call them **Before**Request and **After**Response.
+
+### Before-Request and After-Response REST Callbacks.
+
+Callbacks are defined in the REST editor. 
+
+Request-specific callback may be defined in the properties editor when action is  selected:
+
+![Callbacks](img/rest_web_service_action_callbacks.png)
+
+When callback is required, it may be either selected from the dropdown or generated using `<Add New...>` option:
+
+![Callbacks Add New](img/rest_web_service_action_callbacks_add_new.png)
+
+Callback function always created in the `User.js` of the current test.
+
+#### BeforeRequest REST Callback
+
+**BeforeRequest** callback has a signature:
+
+```javascript
+function Before_<Rest_FileName>_<Entry_Name>(/**RESTRequest*/request)
+```
+
+i.e.:
+
+```javascript
+function Before_LibraryInformationSystem_Get_Session(/**RESTRequest*/request)
+{
+	request.SetHeader('Accept', 'application/json');
+	request.SetHeader('Content-Type', 'application/json');
+	request.SetCredential('librarian', 'librarian');
+}
+```
+
+It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing `Session` global object and `request` object passed as a parameter. Parameter type is [RESTRequest](../Libraries/RESTRequest.md).
+
+#### AfterResponse REST Callback
+
+**AfterResponse** calback has a signature:
+
+```javascript
+function After_<Rest_FileName>_<Entry_Name>(/**RESTResponse*/response)
+```
+i.e.
+```javascript
+function After_LibraryInformationSystem_Get_Session(/**RESTResponse*/response)
+{
+	var sessionid = response.GetResponseBodyObject();
+	Session.SetParameter('session_id', sessionid);
+}
+```
+
+It is executed right after the action.  It may access `response` object passed as a parameter. Parameter type is [RESTResponse](../Libraries/RESTResponse.md).
+
+
+#### Common REST Callbacks
+
+Sometimes it is more convenient to define one common callback that will be executed for all requiest inside a given endpoint. 
+
+Common callbacks are defined in the property window for the whole endpint.
+
+![Common Callbacks](img/rest_web_service_common_callbacks.png)
+
+When both common callback and entry callback are defined, both are executed in the following order:
+
+1. Common Before_*Rest_FileName*
+2. Before_*Rest_FileName*_*Entry_Name*
+3. Send *request* and get *response*
+4. After_*Rest_FileName*_*Entry_Name*
+5. Common After_*Rest_FileName*
+
+
+### REST Callback Limitations
+
+If given request has no explicit callback defined and no common callback defined then in REST Editor mode values of Session will be ignored. If you have important parameters or headers stored in the session, then it is recommended to define one common 'Before' callback.
+
+### REST Callback Session
+
+Once request has a callback and it is executed from the Editor, debugger session starts and keeps running. You may see it by presence of debugger panel:
+
+![Debug Panel](img/rest_web_service_debug_panel.png)
+
+All variables and session parameters assigned in the callbacks stay active while debugger panel is running.
+
+If you want to modify something in the callback code, then you need to use **Stop Debugger** or **Reset** button first to be able to save the modifications. In this case variables, session parameters and collected cookies get lost.
+
+### REST Callback Breakpoints
+
+You may set a breakpoint in any REST callback function, and Rapise will stop when doing a call. If you function is long and debugging implies many steps, the request may proceed while you are debugging. To avoid this you may change the value of [global option](options_dialog.md) **API Callback Timeout** 
+
+
+## Recording
+
+The way Rapise records captured REST actions may differs depending on the [API recording options](options_dialog.md#api). 
+
+
+**Record REST Objects** is `true`, each step creates an object in the object tree:
+
+![Record REST Objects](./img/rest_web_service_record_rest_objects.png)
+
+and it is used by the produced script:
+```javascript
+	var LibraryInformationSystem_Get_Session=SeS('LibraryInformationSystem_Get_Session');
+	LibraryInformationSystem_Get_Session.DoExecute();
+  ```
+
+When **Record REST Objects** is `false` then nothing is added to the object tree and generated script uses REST definition file directly by means of [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest):
+
+```javascript
+	var LibraryInformationSystem_Get_Session =/**RESTService*/Session.GetRESTRequest("LibraryInformationSystem.rest", "Get_Session");
+	LibraryInformationSystem_Get_Session.DoExecute();
+```
+
+When **Generate Full Name** is `false` then shorter object name is used, both when **Record REST Objects** is `true`:
+
+```javascript
+	var Get_Session=SeS('Get_Session');
+	Get_Session.DoExecute();
+```
+
+and when **Record REST Objects** is `false`:
+
+```javascript
+	var Get_Session =/**RESTService*/Session.GetRESTRequest("LibraryInformationSystem.rest", "Get_Session");
+	Get_Session.DoExecute();
+```
+
+The way how `Session.GetRESTRequest` is recorded depends on **Generate Short REST Path**. In short mode the 1st parameter is just `<filename>.rest`, i.e.:
+
+```javascript
+Session.GetRESTRequest("LibraryInformationSystem.rest", "Get_Session");
+```
+
+While in long mode it is:
+
+```javascript
+Session.GetRESTRequest("%WORKDIR%\\LibraryInformationSystem.rest", "Get_Session");
+```
+
+### Negative REST Tests
+
+Some actions are expected to return failure and we need to work with them to produce negative tests. There are two ways of doing it. First is global, so failures of all actions ignored. It is active when you choose [Session.SetIgnoreStatus](../Libraries/Session.md#setignorestatus). I.e.:
+
+```javascript
+Session.SetIgnoreStatus(true);
+FailingEndpoint1.DoExecute();
+PassingEndpoint.DoExecute();
+FailingEndpoint2.DoExecute();
+Session.SetIgnoreStatus(false);
+```
+
+If automatic status verification is disabled you expected to explicitly check the response returned from `DoExecute`.
+
+**Record Failed REST Actions** [controls](options_dialog.md#api) what to record when action returns status other than **200**. If it is `true` then recorded step has additional parameter `ignoreStatus=true`. This flag is only added then action has also failed during recording.
+
+```javascript
+FailingEndpoint1.DoExecute({}, true);
+PassingEndpoint.DoExecute();
+FailingEndpoint2.DoExecute({}, true);
 ```

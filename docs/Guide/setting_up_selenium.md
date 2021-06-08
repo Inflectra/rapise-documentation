@@ -16,24 +16,38 @@ However because Safari only runs on Apple Mac computers, you will need to use tw
 
 Once you have installed Rapise on your local computer, you need to perform the following steps to configure each of the web browsers to use Selenium and Rapise:
 
+### Chrome
+
+To use Selenium with Google Chrome, you will need to download the latest version of the Chrome Driver:
+
+<http://chromedriver.storage.googleapis.com/index.html>
+
+The list of versions at time of writing was:
+
+![clip0007](./img/setting_up_selenium8.png)
+
+When you click on the folder for the latest version you will see the various files that can be downloaded:
+
+![clip0008](./img/setting_up_selenium9.png)
+
+Download the **chromedriver\_win32.zip** to your local PC.
+
+The file inside the zip archive is called **chromedriver.exe** and you need to copy it into the **C:\\Program Files
+(x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
+
+
 ### Firefox
 
-Unlike the other web browsers, Firefox does not require  anything special to be done, it already includes a built-in plugin for use by
-Selenium WebDriver. However if you start using Rapise with Firefox and you see the following issue inside of Firefox:
+To use Selenium with Mozilla Firefox, you will need to download the latest version of the Gecko Driver:
 
-![clip0003](./img/setting_up_selenium2.png)
+<https://github.com/mozilla/geckodriver/releases>
 
-Then it means that the version of Selenium WebDriver that shipped with Rapise is no longer compatible with the installed version for Firefox. The solution is straightforward, just go to the main Selenium website: [http://www.seleniumhq.org/download/](http://www.seleniumhq.org/download/) and then download the **C# WebDriver Bindings**:
+Download **geckodriver-vx.xx.x-win32.zip**  to your local PC.
 
-![clip0004](./img/setting_up_selenium3.png)
+![Gecko](./img/setting_up_selenium_gecko.png)
 
-Download the **Selenium-dotnet-x.x.x.zip** file from the website. Proceed to unzip the archive and then look in the **net40** subfolder
-and extract the following two files and copy into the **C:\\Program Files (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise):
-
-- WebDriver.dll
-- WebDriver.Support.dll
-
-*Note: You will need to close Rapise before copying these files into the Bin folder.*
+The file inside the zip archive is called **geckodriver.exe** and you need to copy it into the **C:\\Program Files
+(x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
 
 ### Microsoft Edge
 
@@ -73,25 +87,6 @@ Download the **IEDriverServer\_XXXX\_X.X.X.zip** to your local PC:
 The file inside the zip archive is called **IEDriverServer.exe** and you need to copy it into the **C:\\Program Files
 (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
 
-### Chrome
-
-To use Selenium with Google Chrome, you will need to download the latest version of the Chrome Driver:
-
-<http://chromedriver.storage.googleapis.com/index.html>
-
-The list of versions at time of writing was:
-
-![clip0007](./img/setting_up_selenium8.png)
-
-When you click on the folder for the latest version you will see the various files that can be downloaded:
-
-![clip0008](./img/setting_up_selenium9.png)
-
-Download the **chromedriver\_win32.zip** to your local PC.
-
-The file inside the zip archive is called **chromedriver.exe** and you need to copy it into the **C:\\Program Files
-(x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
-
 ### Opera
 
 To use Selenium with Opera, you will need to download the latest version of the Opera Driver:
@@ -109,6 +104,20 @@ Download the **operadriver\_winXX.zip** to your local PC:
 
 The file inside the zip archive is called **operadriver.exe** and you need to copy it into the **C:\\Program Files
 (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
+
+## Updating WebDriver DLLs in Rapise
+
+If the version of WebDriver DLLs shipped with Rapise is not compatible with your browser you may update the corresponding DLLs. Just go to the main Selenium website: [http://www.seleniumhq.org/download/](http://www.seleniumhq.org/download/) and then download the **C# WebDriver Bindings**:
+
+![clip0004](./img/setting_up_selenium3.png)
+
+Download the **Selenium-dotnet-x.x.x.zip** file from the website. Proceed to unzip the archive and then look in the **net40** subfolder
+and extract the following two files and copy into the **C:\\Program Files (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise):
+
+- WebDriver.dll
+- WebDriver.Support.dll
+
+*Note: You will need to close Rapise before copying these files into the Bin folder.*
 
 ## Installing Selenium on a Mac
 

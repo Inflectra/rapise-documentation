@@ -8,7 +8,7 @@ Sample tests are located in:
 RapiseDataDirectory\Samples
 ```
 
-Unless you specified otherwise, the **RapiseDataDirectory** will be:
+Unless otherwise specified, the **RapiseDataDirectory** will be:
 
 ```nohighlight
 C:\Users\Public\Documents\Rapise

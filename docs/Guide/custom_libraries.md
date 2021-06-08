@@ -54,7 +54,7 @@ var newBehavior = {
     actions: [{/*section deleted for brevity*/}],
     events:
     {
-        OnSelect: function(/**SeSObject*/ param, /**Boolean*/ badd)
+        OnSelect: function(/**SeSObject*/ param, /*boolean*/ badd)
         {
             /*...*/
         },

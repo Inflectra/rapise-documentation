@@ -2,6 +2,8 @@
 
 This section describes how to execute Rapise tests in [Azure DevOps pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) or locally with [Microsoft.TestPlatform](https://www.nuget.org/packages/Microsoft.TestPlatform).
 
+If you are using **SpiraTeam**, you should check the section about using [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
+
 ## Azure DevOps
 
 We assume that Rapise tests are stored in a Git repository and Azure DevOps pipeline is connected to it. You may run Rapise tests both on [self-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) and [Microsoft-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml).
@@ -330,41 +332,7 @@ Let's assume we want to run same set of tests on different versions of browsers.
 
 ## Run Tests on Azure and Report to Spira
 
-If you plan to use Azure VMs to run tests and want to see the results in Spira check out this section. In the pipeline you need at least three steps:
-
-- Get tests from Git repository
-- [Install Rapise](#rapise-installation-task)
-- Run a Test Set defined in Spira (see below)
-
-To run a test set you need a [Command line task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/command-line). This task should run RapiseLauncher with parameters:
-
-- -config:\[path to [RepositoryConnection.xml](/Guide/spiratest_integration/#command-line-arguments)\]
-- -project:\[project id\]
-- -testset: \[\test set id]
-- -minimized
-
-Also set a GITROOT environment variable. It should point to the root of the Git repository.
-
-!!! note
-    Tests must be [linked to Spira Test Cases](/Guide/git_integration/#linking-new-test-to-spira)
-
-??? example "Classic UI"
-    ![Task Classic UI](./img/azure_pipeline_spira.png)
-
-??? example "YAML"
-    ```yaml
-    steps:
-    - script: |
-    echo Running  TX139
-
-    "c:\Program Files (x86)\Inflectra\Rapise\bin\RapiseLauncher.exe" -config:.\GitDemo\RepositoryConnection.xml -project:90 -testset:139 -minimized
-    
-    echo Done
-    
-    displayName: 'Run TX139'
-    env:
-        GITROOT: $(Build.SourcesDirectory)
-    ```
+If you plan to use Azure VMs to run tests and want to see the results in Spira check out [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
 
 ## See Also
 
@@ -374,3 +342,4 @@ Also set a GITROOT environment variable. It should point to the root of the Git 
 - [Rapise.TestAdapter NuGet package](https://www.nuget.org/packages/Rapise.TestAdapter/)
 - [Run tests in parallel using the Visual Studio Test task](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/parallel-testing-vstest?view=azure-devops)
 - [Multi-configuration testing](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#multi-job-configuration)
+- [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
