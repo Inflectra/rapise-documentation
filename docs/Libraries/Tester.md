@@ -33,18 +33,20 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
+|	[AddImageToReport](#addimagetoreport) | Adds image to the report. |
 |	[Assert](#assert) | Checks if condition is 'true' and saves corresponding Report entry. |
 |	[AssertEqual](#assertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
 |	[AssertImage](#assertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
 |	[BeginTest](#begintest) | Marks beginning of a test with a given name. |
-|	[CaptureDesktopImage](#capturedesktopimage) | Captures image of the desktop and adds it to the report. |
-|	[CaptureObjectImage](#captureobjectimage) | Captures image of an object and adds it to the report. |
-|	[CaptureWindowImage](#capturewindowimage) | Captures image of an application window matched by title and class and adds it to the report. |
+|	[CaptureDesktopImage](#capturedesktopimage) | Captures screenshot of the desktop and adds it to the report. |
+|	[CaptureObjectImage](#captureobjectimage) | Captures screenshot of an object and adds it to the report. |
+|	[CaptureWindowImage](#capturewindowimage) | Captures screenshot of an application window matched by title and class and adds it to the report. |
 |	[DumpCmdArgsJson](#dumpcmdargsjson) | Dump node.json with all arguments. |
 |	[EndTest](#endtest) | Marks end of a currently executed test. |
 |	[FailTest](#failtest) | Stops test execution and sets it's status to failed. |
 |	[GetParam](#getparam) | Read parameter field passed into the Test function by field name. |
 |	[GetReportAttribute](#getreportattribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
+|	[GetTestName](#gettestname) | Returns name of the running test. |
 |	[GetTestStatus](#getteststatus) | Gets status of currently executed test. |
 |	[IgnoreStatus](#ignorestatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
 |	[Message](#message) | Saves corresponding Report message. |
@@ -54,6 +56,8 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[PushReportAttribute](#pushreportattribute) | <p>Maintains "stacked" attributes. |
 |	[ResetReportAttribute](#resetreportattribute) | Removes report attribute previously set by SetReportAttribute. |
 |	[SetReportAttribute](#setreportattribute) | Set persistent attribute. |
+|	[SoftAssert](#softassert) | Is identical to Tester.Assert. |
+|	[SoftAssertAll](#softassertall) | Fail test if there were any previous failures. |
 |	[SuppressReport](#suppressreport) | In SuppressReport mode all assertions are ignored. |
 
 
@@ -121,6 +125,29 @@ Type: number
 	
 ### Action Detail
 		
+<a name="AddImageToReport"></a>    
+#### AddImageToReport
+
+Adds image to the report.
+
+```javascript
+AddImageToReport(path, caption) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| path | string |	Path to an image |
+| caption | string |	Caption for the entry added to the report |
+
+
+
+
+
+<a name="see.also.tester.addimagetoreport"></a>
+
 <a name="Assert"></a>    
 #### Assert
 
@@ -139,7 +166,7 @@ Assert(message, condition, data, tags)
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
 | condition | boolean |	If 'true' - assertion is considered passed. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -167,7 +194,7 @@ AssertEqual(message, obj1, obj2, data, tags)
 | message | string |	Message to put in the report. |
 | obj1 | object |	First object to compare. |
 | obj2 | object |	Second object to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -195,7 +222,7 @@ AssertImage(message, img1, path, data, tags)
 | message | string |	Message to put in the report. |
 | img1 | object |	ImageWrapper object (1st image to compare). |
 | path | string |	Path to the second image to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -231,7 +258,7 @@ BeginTest(name, path, optionalParams)
 <a name="CaptureDesktopImage"></a>    
 #### CaptureDesktopImage
 
-Captures image of the desktop and adds it to the report.
+Captures screenshot of the desktop and adds it to the report.
 
 ```javascript
 CaptureDesktopImage(caption) 
@@ -253,7 +280,7 @@ CaptureDesktopImage(caption)
 <a name="CaptureObjectImage"></a>    
 #### CaptureObjectImage
 
-Captures image of an object and adds it to the report.
+Captures screenshot of an object and adds it to the report.
 
 ```javascript
 CaptureObjectImage(caption, objId) 
@@ -276,7 +303,7 @@ CaptureObjectImage(caption, objId)
 <a name="CaptureWindowImage"></a>    
 #### CaptureWindowImage
 
-Captures image of an application window matched by title and class and adds it to the report.
+Captures screenshot of an application window matched by title and class and adds it to the report.
 
 ```javascript
 CaptureWindowImage(caption, windowTitle, windowClass, bringToFront) 
@@ -289,8 +316,8 @@ CaptureWindowImage(caption, windowTitle, windowClass, bringToFront)
 | ---------- | -------- | --------------- |
 | caption | string |	Image title for the report. |
 | windowTitle | string |	String or regular expression to match window title. |
-| windowClass | string |	String or regular expression to match window class.<br>Optional, Default: regex:.*. |
-| bringToFront | boolean |	Set to 'false' to not restore the window before making the image.<br>Optional, Default: true. |
+| windowClass | string |	String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
+| bringToFront | boolean |	Set to 'false' to not restore the window before making the image.<br>Optional, Default: "true". |
 
 
 
@@ -350,7 +377,7 @@ FailTest(message, internal)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Failure description.<br>Optional, Default: Test stopped on error. |
+| message | string |	Failure description.<br>Optional, Default: "Test stopped on error". |
 | internal |  |	 |
 
 
@@ -403,6 +430,21 @@ GetReportAttribute(name)
 
 
 <a name="see.also.tester.getreportattribute"></a>
+
+<a name="GetTestName"></a>    
+#### GetTestName
+
+Returns name of the running test.
+
+```javascript
+GetTestName() 
+```
+
+
+
+
+
+<a name="see.also.tester.gettestname"></a>
 
 <a name="GetTestStatus"></a>    
 #### GetTestStatus
@@ -477,7 +519,7 @@ Message(message, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -652,6 +694,53 @@ SetReportAttribute(name, value)
 
 
 <a name="see.also.tester.setreportattribute"></a>
+
+<a name="SoftAssert"></a>    
+#### SoftAssert
+
+Is identical to Tester.Assert. But when an assertion fails, don't stop execution and just record the failure. Later you may call `Tester.SoftAssertAll(..)` that will stop execution if at least one assertion failed.
+
+```javascript
+SoftAssert(message, condition, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| condition | boolean |	If 'true' - assertion is considered passed. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.softassert"></a>
+
+<a name="SoftAssertAll"></a>    
+#### SoftAssertAll
+
+Fail test if there were any previous failures. This method is designed to be used after one or many calls to `Tester.SoftAssert(...)`.
+
+```javascript
+SoftAssertAll(message) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+
+
+
+
+
+<a name="see.also.tester.softassertall"></a>
 
 <a name="SuppressReport"></a>    
 #### SuppressReport

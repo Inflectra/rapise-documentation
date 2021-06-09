@@ -9,6 +9,7 @@
     - 'NeoLoad': 'Libraries/NeoLoad.md'
     - 'Screenshot': 'Libraries/Screenshot.md'
     - 'SeSReportException': 'Libraries/SeSReportException.md'
+    - 'SeSReportFile': 'Libraries/SeSReportFile.md'
     - 'SeSReportImage': 'Libraries/SeSReportImage.md'
     - 'SeSReportLink': 'Libraries/SeSReportLink.md'
     - 'SeSReportText': 'Libraries/SeSReportText.md'
