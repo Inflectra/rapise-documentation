@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/6_7/" class="md-tabs__link">
+      <a href="../../New/7_0/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4216,6 +4216,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../SeSReportFile/" class="md-nav__link">
+        SeSReportFile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SeSReportImage/" class="md-nav__link">
         SeSReportImage
       </a>
@@ -4370,6 +4382,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#addimagetoreport" class="md-nav__link">
+    AddImageToReport
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#assert" class="md-nav__link">
     Assert
   </a>
@@ -4454,6 +4473,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gettestname" class="md-nav__link">
+    GetTestName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getteststatus" class="md-nav__link">
     GetTestStatus
   </a>
@@ -4512,6 +4538,20 @@
           <li class="md-nav__item">
   <a href="#setreportattribute" class="md-nav__link">
     SetReportAttribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softassert" class="md-nav__link">
+    SoftAssert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softassertall" class="md-nav__link">
+    SoftAssertAll
   </a>
   
 </li>
@@ -10711,6 +10751,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_0/" class="md-nav__link">
+        Release Notes for 7.0
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/6_7/" class="md-nav__link">
         Release Notes for 6.7
       </a>
@@ -10884,6 +10936,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#addimagetoreport" class="md-nav__link">
+    AddImageToReport
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#assert" class="md-nav__link">
     Assert
   </a>
@@ -10968,6 +11027,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gettestname" class="md-nav__link">
+    GetTestName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getteststatus" class="md-nav__link">
     GetTestStatus
   </a>
@@ -11026,6 +11092,20 @@
           <li class="md-nav__item">
   <a href="#setreportattribute" class="md-nav__link">
     SetReportAttribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softassert" class="md-nav__link">
+    SoftAssert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softassertall" class="md-nav__link">
+    SoftAssertAll
   </a>
   
 </li>
@@ -11099,6 +11179,10 @@ You do not need to record or learn this object, it is always automatically avail
 </thead>
 <tbody>
 <tr>
+<td><a href="#addimagetoreport">AddImageToReport</a></td>
+<td>Adds image to the report.</td>
+</tr>
+<tr>
 <td><a href="#assert">Assert</a></td>
 <td>Checks if condition is 'true' and saves corresponding Report entry.</td>
 </tr>
@@ -11116,15 +11200,15 @@ You do not need to record or learn this object, it is always automatically avail
 </tr>
 <tr>
 <td><a href="#capturedesktopimage">CaptureDesktopImage</a></td>
-<td>Captures image of the desktop and adds it to the report.</td>
+<td>Captures screenshot of the desktop and adds it to the report.</td>
 </tr>
 <tr>
 <td><a href="#captureobjectimage">CaptureObjectImage</a></td>
-<td>Captures image of an object and adds it to the report.</td>
+<td>Captures screenshot of an object and adds it to the report.</td>
 </tr>
 <tr>
 <td><a href="#capturewindowimage">CaptureWindowImage</a></td>
-<td>Captures image of an application window matched by title and class and adds it to the report.</td>
+<td>Captures screenshot of an application window matched by title and class and adds it to the report.</td>
 </tr>
 <tr>
 <td><a href="#dumpcmdargsjson">DumpCmdArgsJson</a></td>
@@ -11145,6 +11229,10 @@ You do not need to record or learn this object, it is always automatically avail
 <tr>
 <td><a href="#getreportattribute">GetReportAttribute</a></td>
 <td>Gets report attribute previously set by PushReportAttribute or SetReportAttribute.</td>
+</tr>
+<tr>
+<td><a href="#gettestname">GetTestName</a></td>
+<td>Returns name of the running test.</td>
 </tr>
 <tr>
 <td><a href="#getteststatus">GetTestStatus</a></td>
@@ -11183,6 +11271,14 @@ You do not need to record or learn this object, it is always automatically avail
 <td>Set persistent attribute.</td>
 </tr>
 <tr>
+<td><a href="#softassert">SoftAssert</a></td>
+<td>Is identical to Tester.Assert.</td>
+</tr>
+<tr>
+<td><a href="#softassertall">SoftAssertAll</a></td>
+<td>Fail test if there were any previous failures.</td>
+</tr>
+<tr>
 <td><a href="#suppressreport">SuppressReport</a></td>
 <td>In SuppressReport mode all assertions are ignored.</td>
 </tr>
@@ -11210,6 +11306,34 @@ You do not need to record or learn this object, it is always automatically avail
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
+<p><a name="AddImageToReport"></a>    </p>
+<h4 id="addimagetoreport">AddImageToReport<a class="headerlink" href="#addimagetoreport" title="Permanent link">&para;</a></h4>
+<p>Adds image to the report.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">AddImageToReport</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">caption</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>Path to an image</td>
+</tr>
+<tr>
+<td>caption</td>
+<td>string</td>
+<td>Caption for the entry added to the report</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.tester.addimagetoreport"></a></p>
 <p><a name="Assert"></a>    </p>
 <h4 id="assert">Assert<a class="headerlink" href="#assert" title="Permanent link">&para;</a></h4>
 <p>Checks if condition is 'true' and saves corresponding Report entry.
@@ -11240,7 +11364,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>data</td>
 <td>SeSReportLink | SeSReportText | SeSReportImage | object[] | string</td>
-<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -11285,7 +11409,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>data</td>
 <td>SeSReportLink | SeSReportText | SeSReportImage | Object[]</td>
-<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -11330,7 +11454,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>data</td>
 <td>SeSReportLink | SeSReportText | SeSReportImage | Object[]</td>
-<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -11375,7 +11499,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="see.also.tester.begintest"></a></p>
 <p><a name="CaptureDesktopImage"></a>    </p>
 <h4 id="capturedesktopimage">CaptureDesktopImage<a class="headerlink" href="#capturedesktopimage" title="Permanent link">&para;</a></h4>
-<p>Captures image of the desktop and adds it to the report.</p>
+<p>Captures screenshot of the desktop and adds it to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CaptureDesktopImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11398,7 +11522,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="see.also.tester.capturedesktopimage"></a></p>
 <p><a name="CaptureObjectImage"></a>    </p>
 <h4 id="captureobjectimage">CaptureObjectImage<a class="headerlink" href="#captureobjectimage" title="Permanent link">&para;</a></h4>
-<p>Captures image of an object and adds it to the report.</p>
+<p>Captures screenshot of an object and adds it to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CaptureObjectImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span> <span class="nx">objId</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11426,7 +11550,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="see.also.tester.captureobjectimage"></a></p>
 <p><a name="CaptureWindowImage"></a>    </p>
 <h4 id="capturewindowimage">CaptureWindowImage<a class="headerlink" href="#capturewindowimage" title="Permanent link">&para;</a></h4>
-<p>Captures image of an application window matched by title and class and adds it to the report.</p>
+<p>Captures screenshot of an application window matched by title and class and adds it to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CaptureWindowImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span> <span class="nx">windowTitle</span><span class="p">,</span> <span class="nx">windowClass</span><span class="p">,</span> <span class="nx">bringToFront</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11452,12 +11576,12 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>windowClass</td>
 <td>string</td>
-<td>String or regular expression to match window class.<br>Optional, Default: regex:.*.</td>
+<td>String or regular expression to match window class.<br>Optional, Default: "regex:.*".</td>
 </tr>
 <tr>
 <td>bringToFront</td>
 <td>boolean</td>
-<td>Set to 'false' to not restore the window before making the image.<br>Optional, Default: true.</td>
+<td>Set to 'false' to not restore the window before making the image.<br>Optional, Default: "true".</td>
 </tr>
 </tbody>
 </table>
@@ -11514,7 +11638,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>message</td>
 <td>string</td>
-<td>Failure description.<br>Optional, Default: Test stopped on error.</td>
+<td>Failure description.<br>Optional, Default: "Test stopped on error".</td>
 </tr>
 <tr>
 <td>internal</td>
@@ -11575,6 +11699,12 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tbody>
 </table>
 <p><a name="see.also.tester.getreportattribute"></a></p>
+<p><a name="GetTestName"></a>    </p>
+<h4 id="gettestname">GetTestName<a class="headerlink" href="#gettestname" title="Permanent link">&para;</a></h4>
+<p>Returns name of the running test.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">GetTestName</span><span class="p">()</span> 
+</code></pre></div>
+<p><a name="see.also.tester.gettestname"></a></p>
 <p><a name="GetTestStatus"></a>    </p>
 <h4 id="getteststatus">GetTestStatus<a class="headerlink" href="#getteststatus" title="Permanent link">&para;</a></h4>
 <p>Gets status of currently executed test.</p>
@@ -11646,7 +11776,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 <tr>
 <td>data</td>
 <td>SeSReportLink | SeSReportText | SeSReportImage | Object[]</td>
-<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText.<br>Optional.</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional.</td>
 </tr>
 <tr>
 <td>tags</td>
@@ -11835,6 +11965,67 @@ the ResetReportAttribute function.</p>
 </tbody>
 </table>
 <p><a name="see.also.tester.setreportattribute"></a></p>
+<p><a name="SoftAssert"></a>    </p>
+<h4 id="softassert">SoftAssert<a class="headerlink" href="#softassert" title="Permanent link">&para;</a></h4>
+<p>Is identical to Tester.Assert. But when an assertion fails, don't stop execution and just record the failure. Later you may call <code>Tester.SoftAssertAll(..)</code> that will stop execution if at least one assertion failed.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SoftAssert</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">condition</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Message to put in the report.</td>
+</tr>
+<tr>
+<td>condition</td>
+<td>boolean</td>
+<td>If 'true' - assertion is considered passed.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>SeSReportLink | SeSReportText | SeSReportImage | object[] | string</td>
+<td>Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional.</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>object</td>
+<td>Hash of attributes to set for this particular log entry.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.tester.softassert"></a></p>
+<p><a name="SoftAssertAll"></a>    </p>
+<h4 id="softassertall">SoftAssertAll<a class="headerlink" href="#softassertall" title="Permanent link">&para;</a></h4>
+<p>Fail test if there were any previous failures. This method is designed to be used after one or many calls to <code>Tester.SoftAssert(...)</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertAll</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Message to put in the report.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.tester.softassertall"></a></p>
 <p><a name="SuppressReport"></a>    </p>
 <h4 id="suppressreport">SuppressReport<a class="headerlink" href="#suppressreport" title="Permanent link">&para;</a></h4>
 <p>In SuppressReport mode all assertions are ignored. That means no lines are added to report and all statuses are treated as "Info".
