@@ -3,6 +3,22 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB598', 'Using RVL Merge Utility')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB598.aspx">KB598</a> Using RVL Merge Utility
+
+Sometimes we need to do Diff and Merge operations when working with external Source Control systems (git, svn, etc). This utility (ExcelMerge) will enable this functionality.
+
+### <a onclick="return RegisterKbClick('KB597', 'Using Regular Expressions in Object Locators')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB597.aspx">KB597</a> Using Regular Expressions in Object Locators
+
+Sometimes application components change and we need more flexibility when creating locators. You may use regex: prefix for locator components to make it more flexible. Very similar approach applies to Managed (DotNet Forms), Java and UI Automation locators.
+
+### <a onclick="return RegisterKbClick('KB596', 'SoftAssert in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB596.aspx">KB596</a> SoftAssert in Rapise
+
+Sometimes you need more control on whether to stop execution when an assertion fails. Assertion that does not stop execution is Soft Assertion.  With soft assertions you may force it to fail later when all expected errors are collected or keep running until the very end.
+
+### <a onclick="return RegisterKbClick('KB594', 'Returning Values from RVL sheets')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB594.aspx">KB594</a> Returning Values from RVL sheets
+
+Sometimes you need to return a value or a set of values from RVL.DoPlaySheet or RVL.DoPlayScript calls. This sample shows you how.
+
 ### <a onclick="return RegisterKbClick('KB588', 'Using SeeTest Instrumented Mode')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB588.aspx">KB588</a> Using SeeTest Instrumented Mode
 
 If you are testing a native mobile application using  SeeTest you have an option to switch to NATIVE_APP_INSTRUMENTED context and record/playback tests in it.
