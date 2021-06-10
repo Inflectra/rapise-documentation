@@ -1,5 +1,8 @@
 # NeoLoad Settings Dialog
 
+!!! important
+    NeoLoad integration has been removed in Rapise 7.0.
+
 ![neoload-options-dialog](./img/neoload_settings_dialog1.png)
 
 ## Purpose

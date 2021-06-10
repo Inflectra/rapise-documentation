@@ -121,6 +121,19 @@ g_browserExecutablePath="iexplore.exe";
 
 Check to make sure you have Internet Explorer browser executable available at the specified path on your PC and correct it if necessary.
 
+## Edge
+
+In order to test web applications using the Microsoft Edge browser, you will need to install an extension for Edge that allows Rapise to
+interact with it:
+
+1. Rught click the following URL and choose `Open link in new tab` to open the extension page: <a href="https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh" target="_blank">https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh</a>
+
+2. Click on the ‘Get’ button to install the Add-On into your instance of Edge.
+
+3. It is recommended to set the **Allow in InPrivate** and **Allow access to file URLs** checkboxes so that web pages opened from the local folder (using the file:// protocol) and in InPrivate Edge windows can be also accessed by Rapise when running automated browser tests. To do this right click this link <a href="edge://extensions/?id=ohghmiancfhdndeciiojhgalcfhllblh" target="_blank">edge://extensions/?id=ohghmiancfhdndeciiojhgalcfhllblh</a> and choose `Copy link`, then paste the value to a new tab in Edge.
+
+4. When installation is complete restart Edge.
+
 ## Using Other Browsers with Rapise
 
-If you would like to test your applications using **other web browsers (Safari, Edge or Opera)** you can use the [Selenium WebDriver](selenium_webdriver.md) libraries that are provided with Rapise. To [setup the Selenium web browser libraries](setting_up_selenium.md), please refer to [this topic](setting_up_selenium.md).
+If you would like to test your applications using **other web browsers (Safari or Opera)** you can use the [Selenium WebDriver](selenium_webdriver.md) libraries that are provided with Rapise. To [setup the Selenium web browser libraries](setting_up_selenium.md), please refer to [this topic](setting_up_selenium.md).

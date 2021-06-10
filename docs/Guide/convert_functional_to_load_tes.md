@@ -1,5 +1,8 @@
 # Convert Functional to Load Test
 
+!!! important
+    NeoLoad integration has been removed in Rapise 7.0.
+
 This aspect of the Rapise-NeoLoad integration describes the process for taking an existing test script written in Rapise and converting it seamlessly into a performance scenario in the NeoLoad load testing system. This feature allows you to convert Rapise tests for HTTP/HTTPS based applications into protocol-based NeoLoad scripts that can be executed by a large number of **virtual users (VUs)** that simulate a load on the application being tested.
 
 ## Prerequisites

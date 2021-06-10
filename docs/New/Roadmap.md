@@ -7,17 +7,16 @@
     
     If you have any feedback or suggestions regarding this roadmap, please email us at support@inflectra.com.
 
-## Version 6.8 (June 2021)
+## Version 7.1 (September 2021)
 
-- **Spira Dashboard 2.0**: New SpiraTest dashboard with ability to view reports, enhanced execution options and test case management.
+- **Spira Dashboard 2.0**: Further development of the dashboard: CRUD operations for test case/test set parameters.
 - **Floating License Support**: Spira based license manager for Rapise to enable floating licenses.
 
 ## Backlog
 
 ### SpiraTest Integration Enhancements
 
-- **Flaky tests support**: Auto detect that a test is flaky and mark the test case and test run details. Allow manual setting of the Flaky status.
-- **Re-run**: Set number of re-run attempts for a failing test.
+- **Flaky tests support**: Auto detect that a test is flaky and mark the test case and test run details.
 - **Parallel run**: Parallel execution by RapiseLauncher. Should work with API tests and Web tests executed via WebDriver.
 
 ### Object Repository Management

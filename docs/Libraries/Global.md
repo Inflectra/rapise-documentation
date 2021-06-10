@@ -34,7 +34,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoKillByPid](#dokillbypid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
 |	[DoLaunch](#dolaunch) | Executes a command specified in cmdLine. |
 |	[DoLoadObjects](#doloadobjects) | Loads objects from external .objects.js file. |
-|	[DoMessageBox](#domessagebox) | <p>Shows message box (popup message) to a user. |
+|	[DoMessageBox](#domessagebox) | Shows message box (popup message) to a user. |
 |	[DoMouseMove](#domousemove) | Moves mouse to the specified position. |
 |	[DoPlayManual](#doplaymanual) | Executes a manual test. |
 |	[DoRunTestSet](#doruntestset) | Executes a test set. |
@@ -470,10 +470,12 @@ object: saved_script_objects or null if the load was unsuccessful.
 <a name="DoMessageBox"></a>    
 #### DoMessageBox
 
-<p>Shows message box (popup message) to a user.</p><br>
-<p>'buttons' is a value or a sum of values that specifies the number and type of buttons to display,
-			   the icon style to use, the identity of the default button, and the modality of the message box. Default value is 0.</p>
-				<pre>
+Shows message box (popup message) to a user.
+
+`buttons` is a value or a sum of values that specifies the number and type of buttons to display, the icon
+style to use, the identity of the default button, and the modality of the message box. Default value is 0.
+
+```
 	0 = vbOKOnly - OK button only
 	1 = vbOKCancel - OK and Cancel buttons
 	2 = vbAbortRetryIgnore - Abort, Retry, and Ignore buttons
@@ -490,21 +492,24 @@ object: saved_script_objects or null if the load was unsuccessful.
 	768 = vbDefaultButton4 - Fourth button is default
 	0 = vbApplicationModal - Application modal (the current application will not work until the user responds to the message box)
 	4096 = vbSystemModal - System modal (all applications wont work until the user responds to the message box)
-			    </pre>
-				<p>We can divide the buttons values into four groups: The first group  (0–5) describes the buttons to be displayed in the
-				message box, the second group (16, 32, 48, 64) describes the icon style, the third group (0, 256, 512, 768) indicates
-				which button is the default; and the fourth group (0, 4096) determines the modality of the message box. When adding
-				numbers to create a final value for the buttons parameter, use only one number from each group.</p><br>
-			   <p>The function returns a number representation of a button pressed by user:</p>
-			   <table>
-				<tr><td width="70">vbOK</td><td width="50">1</td><td width="200">OK button was clicked.</td></tr> 
-				<tr><td>vbCancel</td><td>2</td><td>Cancel button was clicked.</td></tr> 
-				<tr><td>vbAbort</td><td>3</td><td>Abort button was clicked.</td></tr> 
-				<tr><td>vbRetry</td><td>4</td><td>Retry button was clicked.</td></tr> 
-				<tr><td>vbIgnore</td><td>5</td><td>Ignore button was clicked.</td></tr> 
-				<tr><td>vbYes</td><td>6</td><td>Yes button was clicked.</td></tr> 
-				<tr><td>vbNo</td><td>7</td><td>No button was clicked.</td></tr> 
-			   </table>
+```
+
+We can divide the buttons values into four groups: The first group  (0–5) describes the buttons to be displayed in the
+message box, the second group (16, 32, 48, 64) describes the icon style, the third group (0, 256, 512, 768) indicates
+which button is the default; and the fourth group (0, 4096) determines the modality of the message box. When adding
+numbers to create a final value for the buttons parameter, use only one number from each group.
+
+The function returns a number representation of a button pressed by user:
+	
+```
+	vbOK = 1 - OK button was clicked. 
+	vbCancel = 2 - Cancel button was clicked. 
+	vbAbort = 3 - Abort button was clicked. 
+	vbRetry = 4 - Retry button was clicked. 
+	vbIgnore = 5 - Ignore button was clicked. 
+	vbYes = 6 - Yes button was clicked. 
+	vbNo = 7 - No button was clicked. 
+```
 
 ```javascript
 DoMessageBox(prompt, buttons) 

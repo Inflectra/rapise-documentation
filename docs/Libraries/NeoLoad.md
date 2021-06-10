@@ -1,8 +1,10 @@
-Summary: Global object. Use it to perform actions not related to a particular object. You do not need to
-
 # NeoLoad
 
-Global object. Use it to perform actions not related to a particular object. You do not need torecord or learn this object, it is always automatically available in any test.
+!!! important
+    NeoLoad integration has been removed in Rapise 7.0.
+
+Global object. Use it to perform actions not related to a particular object. You do not need to
+record or learn this object, it is always automatically available in any test.
 
 
 

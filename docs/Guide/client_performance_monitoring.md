@@ -1,5 +1,8 @@
 # Client Performance Monitoring
 
+!!! important
+    NeoLoad integration has been removed in Rapise 7.0.
+
 ## Concept and Architecture
 
 The purpose of this integration is to satisfy the following use case.

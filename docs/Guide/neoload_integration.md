@@ -1,5 +1,8 @@
 # NeoLoad Integration
 
+!!! important
+    NeoLoad integration has been removed in Rapise 7.0.
+
 This section describes the integration between Inflectra’s Rapise functional testing tool and Neotys’ NeoLoad performance testing tool.
 
 The purpose of this integration is to satisfy the following two use cases:

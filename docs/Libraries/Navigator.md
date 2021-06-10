@@ -102,7 +102,10 @@ Navigator object. This is used to provide functions for manipulating the web bro
 #### AutoOpen
 
 
-During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance.If AutoOpen is 'false' it does nothing. Default value is 'true'.Applicable to Chrome, Firefox and Internet Explorer. Selenium targets are not affected by this property.Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|false) to set the value.
+During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance.
+If AutoOpen is 'false' it does nothing. Default value is 'true'.
+Applicable to Chrome, Firefox and Internet Explorer. Selenium targets are not affected by this property.
+Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|false) to set the value.
 
 			
 	
@@ -846,7 +849,8 @@ Result of code execution.
 <a name="ExecPageJS"></a>    
 #### ExecPageJS
 
-Executes given JavaScript statement in a browser in the context of the current page. It means the script may accessJS variables and functions declared on the page. Requires Rapise 6.5+
+Executes given JavaScript statement in a browser in the context of the current page. It means the script may access
+JS variables and functions declared on the page. Requires Rapise 6.5+
 
 ```javascript
 ExecPageJS(scriptText, obj) 
@@ -1001,7 +1005,9 @@ GetActiveWindowUrl(index)
 <a name="GetPerformance"></a>    
 #### GetPerformance
 
-Reads performance information from currently used browser. Performance numbersare based on output from window.performance structure of the web page. See alsohttp://www.w3.org/TR/navigation-timing/#processing-model
+Reads performance information from currently used browser. Performance numbers
+are based on output from window.performance structure of the web page. See also
+http://www.w3.org/TR/navigation-timing/#processing-model
 
 ```javascript
 GetPerformance(resources, dontWriteReport) 

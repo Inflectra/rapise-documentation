@@ -525,6 +525,12 @@ You may open test attachment using the `%ARTIFACTS%` environment variable. If th
  
 So by default it would load `Config.xlsx`  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file `Config.xlsx` attached then will be used to read the `Url` property.
 
+### Parameters Passed from RapiseLauncher to Rapise
+
+When RapiseLauncher runs a test it passes a bunch of global variables to it. Those variables describe project, test set, test case and release scope of the test.
+
+See this [KB](https://www.inflectra.com/Support/KnowledgeBase/KB543.aspx) article for details.
+
 ## See Also
 
 - [Using Rapise with SpiraTest (video)](https://youtu.be/5ybrBQOzez8)

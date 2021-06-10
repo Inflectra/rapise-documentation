@@ -1,5 +1,8 @@
 # NeoLoad Convertor Dialog
 
+!!! important
+    NeoLoad integration has been removed in Rapise 7.0.
+
 ![neoload-conversion-dialog](./img/neoload_convertor_dialog1.png)
 
 ## Purpose
