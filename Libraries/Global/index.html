@@ -11351,7 +11351,7 @@ record or learn this object, it is always automatically available in any test.</
 </tr>
 <tr>
 <td><a href="#domessagebox">DoMessageBox</a></td>
-<td><p>Shows message box (popup message) to a user.</td>
+<td>Shows message box (popup message) to a user.</td>
 </tr>
 <tr>
 <td><a href="#domousemove">DoMouseMove</a></td>
@@ -11899,74 +11899,38 @@ to attach if it is already launched.</p>
 <p><a name="DoMessageBox"></a>    </p>
 <h4 id="domessagebox">DoMessageBox<a class="headerlink" href="#domessagebox" title="Permanent link">&para;</a></h4>
 <p>Shows message box (popup message) to a user.</p>
-<p><br></p>
-<p>'buttons' is a value or a sum of values that specifies the number and type of buttons to display,
-               the icon style to use, the identity of the default button, and the modality of the message box. Default value is 0.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>            <span class="nt">&lt;pre&gt;</span>
-0 = vbOKOnly - OK button only
-1 = vbOKCancel - OK and Cancel buttons
-2 = vbAbortRetryIgnore - Abort, Retry, and Ignore buttons
-3 = vbYesNoCancel - Yes, No, and Cancel buttons
-4 = vbYesNo - Yes and No buttons
-5 = vbRetryCancel - Retry and Cancel buttons
-16 = vbCritical - Critical Message icon
-32 = vbQuestion - Warning Query icon
-48 = vbExclamation - Warning Message icon
-64 = vbInformation - Information Message icon
-0 = vbDefaultButton1 - First button is default
-256 = vbDefaultButton2 - Second button is default
-512 = vbDefaultButton3 - Third button is default
-768 = vbDefaultButton4 - Fourth button is default
-0 = vbApplicationModal - Application modal (the current application will not work until the user responds to the message box)
-4096 = vbSystemModal - System modal (all applications wont work until the user responds to the message box)
-            <span class="nt">&lt;/pre&gt;</span>
-            <span class="nt">&lt;p&gt;</span>We can divide the buttons values into four groups: The first group  (0–5) describes the buttons to be displayed in the
-            message box, the second group (16, 32, 48, 64) describes the icon style, the third group (0, 256, 512, 768) indicates
-            which button is the default; and the fourth group (0, 4096) determines the modality of the message box. When adding
-            numbers to create a final value for the buttons parameter, use only one number from each group.<span class="nt">&lt;/p&gt;&lt;br&gt;</span>
-           <span class="nt">&lt;p&gt;</span>The function returns a number representation of a button pressed by user:<span class="nt">&lt;/p&gt;</span>
-           <span class="nt">&lt;table&gt;</span>
-            <span class="nt">&lt;tr&gt;&lt;td</span> <span class="na">width=</span><span class="s">&quot;70&quot;</span><span class="nt">&gt;</span>vbOK<span class="nt">&lt;/td&gt;&lt;td</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;&lt;td</span> <span class="na">width=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;</span>OK button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
-            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbCancel<span class="nt">&lt;/td&gt;&lt;td&gt;</span>2<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Cancel button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
-            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbAbort<span class="nt">&lt;/td&gt;&lt;td&gt;</span>3<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Abort button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
-            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbRetry<span class="nt">&lt;/td&gt;&lt;td&gt;</span>4<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Retry button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
-            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbIgnore<span class="nt">&lt;/td&gt;&lt;td&gt;</span>5<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Ignore button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
-            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbYes<span class="nt">&lt;/td&gt;&lt;td&gt;</span>6<span class="nt">&lt;/td&gt;&lt;td&gt;</span>Yes button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
-            <span class="nt">&lt;tr&gt;&lt;td&gt;</span>vbNo<span class="nt">&lt;/td&gt;&lt;td&gt;</span>7<span class="nt">&lt;/td&gt;&lt;td&gt;</span>No button was clicked.<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span> 
-           <span class="nt">&lt;/table&gt;</span>
+<p><code>buttons</code> is a value or a sum of values that specifies the number and type of buttons to display, the icon
+style to use, the identity of the default button, and the modality of the message box. Default value is 0.</p>
+<div class="highlight"><pre><span></span><code>    0 = vbOKOnly - OK button only
+    1 = vbOKCancel - OK and Cancel buttons
+    2 = vbAbortRetryIgnore - Abort, Retry, and Ignore buttons
+    3 = vbYesNoCancel - Yes, No, and Cancel buttons
+    4 = vbYesNo - Yes and No buttons
+    5 = vbRetryCancel - Retry and Cancel buttons
+    16 = vbCritical - Critical Message icon
+    32 = vbQuestion - Warning Query icon
+    48 = vbExclamation - Warning Message icon
+    64 = vbInformation - Information Message icon
+    0 = vbDefaultButton1 - First button is default
+    256 = vbDefaultButton2 - Second button is default
+    512 = vbDefaultButton3 - Third button is default
+    768 = vbDefaultButton4 - Fourth button is default
+    0 = vbApplicationModal - Application modal (the current application will not work until the user responds to the message box)
+    4096 = vbSystemModal - System modal (all applications wont work until the user responds to the message box)
 </code></pre></div>
-</td></tr></table>
+<p>We can divide the buttons values into four groups: The first group  (0–5) describes the buttons to be displayed in the
+message box, the second group (16, 32, 48, 64) describes the icon style, the third group (0, 256, 512, 768) indicates
+which button is the default; and the fourth group (0, 4096) determines the modality of the message box. When adding
+numbers to create a final value for the buttons parameter, use only one number from each group.</p>
+<p>The function returns a number representation of a button pressed by user:</p>
+<div class="highlight"><pre><span></span><code>    vbOK = 1 - OK button was clicked. 
+    vbCancel = 2 - Cancel button was clicked. 
+    vbAbort = 3 - Abort button was clicked. 
+    vbRetry = 4 - Retry button was clicked. 
+    vbIgnore = 5 - Ignore button was clicked. 
+    vbYes = 6 - Yes button was clicked. 
+    vbNo = 7 - No button was clicked. 
+</code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMessageBox</span><span class="p">(</span><span class="nx">prompt</span><span class="p">,</span> <span class="nx">buttons</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>

@@ -2344,6 +2344,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parameters-passed-from-rapiselauncher-to-rapise" class="md-nav__link">
+    Parameters Passed from RapiseLauncher to Rapise
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10706,6 +10713,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parameters-passed-from-rapiselauncher-to-rapise" class="md-nav__link">
+    Parameters Passed from RapiseLauncher to Rapise
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11279,6 +11293,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parameters-passed-from-rapiselauncher-to-rapise" class="md-nav__link">
+    Parameters Passed from RapiseLauncher to Rapise
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11688,6 +11709,9 @@ Inflectra</code> program folder:</p>
 <div class="highlight"><pre><span></span><code>    <span class="nx">Global</span><span class="p">.</span><span class="nx">GetProperty</span><span class="p">(</span><span class="s2">&quot;Url&quot;</span><span class="p">,</span> <span class="s2">&quot;http://default/url&quot;</span><span class="p">,</span> <span class="s2">&quot;%ARTIFACTS%/Config.xlsx&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>So by default it would load <code>Config.xlsx</code>  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file <code>Config.xlsx</code> attached then will be used to read the <code>Url</code> property.</p>
+<h3 id="parameters-passed-from-rapiselauncher-to-rapise">Parameters Passed from RapiseLauncher to Rapise<a class="headerlink" href="#parameters-passed-from-rapiselauncher-to-rapise" title="Permanent link">&para;</a></h3>
+<p>When RapiseLauncher runs a test it passes a bunch of global variables to it. Those variables describe project, test set, test case and release scope of the test.</p>
+<p>See this <a href="https://www.inflectra.com/Support/KnowledgeBase/KB543.aspx">KB</a> article for details.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://youtu.be/5ybrBQOzez8">Using Rapise with SpiraTest (video)</a></li>
