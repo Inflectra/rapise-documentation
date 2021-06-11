@@ -63,7 +63,7 @@ Test cases and test sets may be placed into folders in Spira. The dashboard load
 
 ### Actions
 
-Some tables include `Action` column. It allows to perform curtain actions on an item displayed in the row where `Action` menu is expanded.
+Some tables include `Action` column. It allows the user to perform certain actions on an item displayed in the row where `Action` menu is expanded.
 
 <img alt="Actions" src="/Guide/img/spira_dashboard_actions.png" width="250"/>
 
@@ -87,7 +87,7 @@ If you did not assign an automation host token to the machine where Rapise is ru
 
 #### Browse Framework Tests
 
-The dashboard view shows tests included into currently opened test framework (parent test and it's sub-tests).
+The dashboard view shows tests included in the currently opened test framework (parent test and it's sub-tests).
 
 #### View Test Runs in Progress
 
