@@ -73,6 +73,7 @@ Report may be exported as `.xls`, `.pdf`, `.xps` or `.html` using the [Report](m
 **Report File** - source `.trp` to be used for export.
 
 **Report Type** - choose one of the following export templates:
+
 * Full Execution Report (images embedded into html) - full report, combined in a single file.
 * Full Execution Report (images saved as separate files) - same as previous, but all images are saved next to the main `.html` file.
 * High level report (only test status) - short report containing only test-level status.
