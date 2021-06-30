@@ -10720,7 +10720,7 @@
 <ul>
 <li><code>Action</code> - row defines an action. Action is a call for operation for one of the objects. Object is defined in the next column. See <a href="../Actions/">Actions</a>.</li>
 <li><code>Param</code> - signals that this row contains action parameter or condition parameter defined in last 3 columns (<code>ParamName</code>, <code>ParamType</code> and <code>ParamValue</code>).</li>
-<li><code>Output</code> - this type of row must go after last Param for an action and defines a variable that should accept output value retured from the call to the Action.</li>
+<li><code>Output</code> - this type of row must go after last Param for an action and defines a variable that should accept output value returned from the call to the Action.</li>
 <li><code>Variable</code> - this row defines or assigns value to a local or global variable. See <a href="../Variables/">Variables</a>.</li>
 <li><code>Assert</code> - first row for the Assertion. See <a href="../Assertions/">Assertions</a>.</li>
 <li><code>Condition</code></li>
@@ -10775,7 +10775,6 @@
 <p>Custom column actions are processed in the <code>OnRVLScriptStep</code> function that should be defined in the <code>User.js</code> file or in the <a href="../../Guide/custom_libraries/">custom library</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">OnRVLScriptStep</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">place</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">,</span> <span class="nx">stackItem</span><span class="p">)</span>
 </code></pre></div>
-
 <p>The function is mostly intended for internal use. Here you need information about the following parameters:</p>
 <ul>
 <li><code>item</code> - current RVL action item. We need to use the following property of this item:</li>
@@ -10895,7 +10894,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

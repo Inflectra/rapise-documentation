@@ -10751,7 +10751,7 @@
 <p><img src="/Guide/img/ddt_spreadsheet_loop.png" width="870" /></p>
 <p><img src="/Guide/img/ddt_spreadsheet_report2.png" width="623" /></p>
 <h2 id="ddt-in-javascript">DDT in JavaScript<a class="headerlink" href="#ddt-in-javascript" title="Permanent link">&para;</a></h2>
-<p>One can read data from a spreadsheet in JavaScript mode as well.  There is a global Spreadsheet object that is available in every test. Here is an example of Spreadhseet API usage.</p>
+<p>One can read data from a spreadsheet in JavaScript mode as well.  There is a global Spreadsheet object that is available in every test. Here is an example of Spreadsheet API usage.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoAttach</span><span class="p">(</span><span class="s1">&#39;Calc.xls&#39;</span><span class="p">,</span> <span class="s1">&#39;Calc Data&#39;</span><span class="p">);</span>
 <span class="k">while</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">())</span>
 <span class="p">{</span>
@@ -10768,7 +10768,6 @@
                    <span class="nx">CheckResult</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="s2">&quot;Result&quot;</span><span class="p">)));</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Description of all Spreadsheet actions and properties is available <a href="/Libraries/Spreadsheet/">here</a>.</p>
 <p>Open <code>UsingSpreadsheet</code> sample test from the start page to see a working example (scroll the list of samples down).</p>
 <p><img src="/Guide/img/ddt_sampletest.png" width="1177" /></p>
@@ -10777,7 +10776,7 @@
 <li><a href="https://youtu.be/gh8pop9LIb0?t=222">Data-Driven Testing (webinar)</a></li>
 <li>How To: Easily Attaching RVL Script to an External Spreadsheet in Rapise (<a href="https://youtu.be/iuWCXmzZsow">watch video</a>)</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx">KB432</a> Writing data to an Excel spreadsheet</li>
-<li><a href="https://www.inflectra.com/support/knowledgebase/kb27.aspx">KB27</a> Using Rapise to extract test data from an Excelsheet </li>
+<li><a href="https://www.inflectra.com/support/knowledgebase/kb27.aspx">KB27</a> Using Rapise to extract test data from an Excel sheet </li>
 <li><a href="https://www.inflectra.com/Ideas/Entry/rapise--data-driven-testing-using-the-spreadsheet--288.aspx">Blog: </a> Data Driven Testing using the Spreadsheet object (JavaScript)</li>
 <li><a href="../data_driven_testing/">Data-driven testing tutorial (JavaScript)</a></li>
 </ul>
@@ -10883,7 +10882,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

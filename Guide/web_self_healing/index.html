@@ -10842,7 +10842,6 @@
     <span class="nx">g_aiEnable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>When this flag is set Rapise generates full-path locator for each recorded element. The full-path locator includes information about all attributes of an element and attributes of its ancestors in the DOM tree.</p>
 <h2 id="how-it-works">How it Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
 <p>When you run a test and an element is found with traditional XPath locator then full-path locator is not used. There is nothing to repair. But if XPath generated for an element during recording or manually created by a tester is not valid then full-path locator is used to find the most suitable element on the page. When full-path locator is used you get the following healing notification in the report:</p>
@@ -10851,7 +10850,6 @@
 <p>The format of the element locator difference report is:</p>
 <div class="highlight"><pre><span></span><code>Level: N, attribute: A, expected: V1, actual: V2
 </code></pre></div>
-
 <ul>
 <li>If <strong>N</strong> equals 0 it means the element node in the DOM tree. 1 means immediate ancestor of the element. Level increases until DOM tree root is reached.</li>
 <li><strong>A</strong> is attribute name.</li>
@@ -10877,7 +10875,6 @@
     <span class="nx">g_aiFplConfidence</span> <span class="o">=</span> <span class="mf">0.98</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="object-manager-prompt">Object Manager Prompt<a class="headerlink" href="#object-manager-prompt" title="Permanent link">&para;</a></h3>
 <p>To suppress prompt to use Object Manager when test playback contains healing notifications set <code>g_aiMergePromptEnable</code> to <code>false</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestPrepare</span><span class="p">()</span>
@@ -10886,17 +10883,14 @@
     <span class="nx">g_aiMergePromptEnable</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h3>
 <p>To disable automatic capturing of recording screenshots <code>g_aiCaptureRecordingScreenshots</code> to <code>false</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_aiCaptureRecordingScreenshots</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="playback">Playback<a class="headerlink" href="#playback" title="Permanent link">&para;</a></h3>
 <p>During playback when an element can not be found using XPath locator - Rapise starts applying the self-healing locator. The number of initial attempts before switching on self-healing is configurable (since Rapise 6.5). Usage of self-healing at the very first attempts to find an element is not recommended since a page may not be fully loaded and wrong element may be chosen by the algorithm. First self-healing attempt is set by the variable. 21 is the default value. You may change it to any number that is lower than <code>g_objectLookupAttempts</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">g_aiFirstAttemptNumber</span> <span class="o">=</span> <span class="mi">21</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nx">g_aiFirstAttemptNumber</span> <span class="o">=</span> <span class="mf">21</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://youtu.be/ulgL-RnGuHo">How to Benefit From Self-Healing Locators (video)</a></li>
@@ -11005,7 +10999,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

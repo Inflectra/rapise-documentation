@@ -10643,7 +10643,7 @@
                 <h1 id="azure-devops-integration-v2">Azure DevOps Integration v2<a class="headerlink" href="#azure-devops-integration-v2" title="Permanent link">&para;</a></h1>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to <a href="../vstest/">Azure DevOps Integration v3</a>.</p>
+<p>This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to <a href=".md">Azure DevOps Integration v3</a>.</p>
 </div>
 <p>From this topic you will learn how to run Rapise tests with <a href="https://node-tap.org/">Node-Tap</a> and <a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a>.</p>
 <h2 id="node-tap">Node-Tap<a class="headerlink" href="#node-tap" title="Permanent link">&para;</a></h2>
@@ -10671,7 +10671,6 @@ Configure system variable <code>NODE_PATH</code> and set it to <code>node_module
 <div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;echo %NODE_PATH%
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\n</span>ode_modules
 </code></pre></div>
-
 <h2 id="test-framework">Test Framework<a class="headerlink" href="#test-framework" title="Permanent link">&para;</a></h2>
 <p>As a starting point you may use <a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/AzureDevOpsFriendlyArchhitecture">sample framework</a> we published on GitHub.</p>
 <p>The root folder of the framework contains:</p>
@@ -10681,21 +10680,19 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
 <li><code>fixunit.js</code>, <code>tap2xunit.cmd</code> - these two files convert execution results from TAP format to XUnit format accepted by Azure DevOps.</li>
 </ul>
 <p>Each Rapise test in this framework is a direct subfolder of the root folder:</p>
-<div class="highlight"><pre><span></span><code>AzureDevOpsFriendlyArchhitecture 
+<div class="highlight"><pre><span></span><code>AzureDevOpsFriendlyArchitecture 
 |
 |-CreateNewBook
 |-FailedLogin
 </code></pre></div>
-
 <p><code>test</code> folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests. </p>
-<div class="highlight"><pre><span></span><code>AzureDevOpsFriendlyArchhitecture 
+<div class="highlight"><pre><span></span><code>AzureDevOpsFriendlyArchitecture 
 |
 |- test
     |
     |-CreateNewBook.js
     |-FailedLogin.js
 </code></pre></div>
-
 <p>Predefined content of the files is:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">rapise</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;../rapise&#39;</span><span class="p">)</span>
 <span class="kd">var</span> <span class="nx">tap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;tap&#39;</span><span class="p">)</span>
@@ -10704,10 +10701,9 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
 <span class="kd">var</span> <span class="nx">testName</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
 
 <span class="nx">rapise</span><span class="p">.</span><span class="nx">run</span><span class="p">(</span><span class="nx">testName</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">exit_code</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">tap</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">exit_code</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">testName</span><span class="p">);</span>    
+    <span class="nx">tap</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">exit_code</span> <span class="o">==</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">testName</span><span class="p">);</span>    
 <span class="p">})</span>
 </code></pre></div>
-
 <p>There is also <code>tap-parallel-not-ok</code> in <code>tests</code> folder that instructs Node-Tap to run tests sequentially.</p>
 <h2 id="run-tests-with-tap">Run Tests with Tap<a class="headerlink" href="#run-tests-with-tap" title="Permanent link">&para;</a></h2>
 <p>To run tests on a local machine open command prompt in the root folder of the framework and execute:</p>
@@ -10718,7 +10714,6 @@ You should see tests running:
 <p>To pass parameters to a Rapise test specify <code>--test-arg</code>. The value is JSON stringified object. Every property of this object will be evaluated by Rapise as a global variable:</p>
 <div class="highlight"><pre><span></span><code>tap --test-arg<span class="o">=</span><span class="s2">&quot;{&#39;g_browserLibrary&#39;:&#39;Selenium - Chrome&#39;}&quot;</span>
 </code></pre></div>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QEH5a9vqymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="azure-devops-pipeline-v1">Azure DevOps Pipeline v1<a class="headerlink" href="#azure-devops-pipeline-v1" title="Permanent link">&para;</a></h2>
@@ -10813,7 +10808,8 @@ You should see tests running:
   <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Convert</span><span class="nv"> </span><span class="s">TAP</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">XUnit&quot;</span>
 
 <span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-    <span class="no">cscript.exe summarize.js</span>
+
+    <span class="no">.exe summarize.js</span>
   <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Fix</span><span class="nv"> </span><span class="s">XUnit</span><span class="nv"> </span><span class="s">Reports&#39;</span>
 
 <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CopyFiles@2</span>
@@ -10907,7 +10903,7 @@ It calls <code>summarize.js</code> to adjust XUnit reports. Azure DevOps report 
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

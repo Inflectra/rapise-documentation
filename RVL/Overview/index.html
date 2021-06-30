@@ -10818,7 +10818,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Keyword Driven Testing</em>: Column <em>A</em> constains a <em>Keyword</em>, columns <em>B</em>, <em>C</em>, <em>D</em> provide parameters for a <em>Keyword</em>.</p>
+<p><em>Keyword Driven Testing</em>: Column <em>A</em> contains a <em>Keyword</em>, columns <em>B</em>, <em>C</em>, <em>D</em> provide parameters for a <em>Keyword</em>.</p>
 <h3 id="data-driven-testing">Data Driven Testing<a class="headerlink" href="#data-driven-testing" title="Permanent link">&para;</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Data-driven_testing">Data Driven Testing</a> is the creation of test scripts to run together with their related data sets in a framework. The framework provides re-usable test logic to reduce maintenance and improve test coverage. Input and result (test criteria) data values can be stored in one or more central data sources or databases, the actual format and organization can be implementation specific.</p>
 <table>
@@ -10851,7 +10851,7 @@
 <h3 id="gherkin-cucumber">Gherkin / Cucumber<a class="headerlink" href="#gherkin-cucumber" title="Permanent link">&para;</a></h3>
 <p>There are known approaches intended to make scripting more close to spoken languages. </p>
 <p>This is a very wise approach improving test readability. The test case is described in <a href="https://github.com/cucumber/cucumber/wiki/Gherkin">Gherkin</a> - business readable, domain specific language. It describes behavior without detailing how that behavior is implemented.</p>
-<p>Essential part of this framework is implementation of Given-When-Then steps that should be done with one of the common programming languages. Here is the place where the need in scriping skills are still required.</p>
+<p>Essential part of this framework is implementation of Given-When-Then steps that should be done with one of the common programming languages. Here is the place where the need in scripting skills are still required.</p>
 <h2 id="why-rvl_1">Why RVL?<a class="headerlink" href="#why-rvl_1" title="Permanent link">&para;</a></h2>
 <p>Initially Rapise has everything to build <em>Data Driven</em> and <em>Keyword Driven</em> test frameworks. Even without RVL. </p>
 <p>It is possible do define <em>scenarios</em> or <em>keywords</em>, connect to <em>Spreadsheet</em> or <em>Database</em> and build the test set.</p>
@@ -10861,7 +10861,7 @@
 <p>The reality of this approach leads to some challenges. These challenges are common for all test frameworks mentioned here. </p>
 <ol>
 <li>Design of test scripts require scripting and programming skills. That person is likely to be a programmer. </li>
-<li>Design of good test data requires knowledge in target domain. For example, if you application is for Blood Bank then one should have some medical skills. If it is some device control app, then you should have engeneering knowledge about physical limitations of the device.</li>
+<li>Design of good test data requires knowledge in target domain. For example, if you application is for Blood Bank then one should have some medical skills. If it is some device control app, then you should have engineering knowledge about physical limitations of the device.</li>
 </ol>
 <p>So in ideal world there are two persons working as a team: UI Automation scripting expert and target domain specialist.</p>
 <p>In reality we see that due to real life limitations it is common that all scripting and test data is done by one person. It is either a programmer who gets familiar with target AUT domain or analyst who has some scripting skills.</p>
@@ -10876,8 +10876,7 @@ Programmer easily reads this as:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Deposit $17.99 to John O&#39;Connor</span>
 </code></pre></div>
 </td></tr></table>
-
-<p>So what is the difference between these notations? We found that the first and most important difficulty lays in so called <em>syntactical sugar</em>. Symbols <code>' " ; , . ( ) [ ] { } &amp; $ % # @</code> do have meaning for language notation however are not important for understainding the matter.</p>
+<p>So what is the difference between these notations? We found that the first and most important difficulty lays in so called <em>syntactical sugar</em>. Symbols <code>' " ; , . ( ) [ ] { } &amp; $ % # @</code> do have meaning for language notation however are not important for understanding the matter.</p>
 <p>This is true even for programmers. When switching from similarly looking languages some differences easily cause frustration. For example, the same construct:
 <div class="highlight"><pre><span></span><code>$a = &quot;Number &quot; + 1;
 </code></pre></div>
@@ -10888,7 +10887,7 @@ Means text concatenation in <em>JavaScript</em>, however the same is mathematica
 <p>Is good for <em>JavaScript</em> or <em>C#</em> world and leads <code>false</code> results in <em>Java</em>.</p>
 <p>So even if we have programming skills it is still a problem to switch from one language to another and may produce potential issues.</p>
 <h3 id="data-tables">Data Tables<a class="headerlink" href="#data-tables" title="Permanent link">&para;</a></h3>
-<p>With Keywword Driven and Data Driven approach we get a table that represents a sequence. Sequence of patients to proceed, sequence of user logins etc. </p>
+<p>With Keyword Driven and Data Driven approach we get a table that represents a sequence. Sequence of patients to proceed, sequence of user logins etc. </p>
 <p>And sometimes we feel the lack of common debugging facilities:
 - run keyword for only one line,
 - start from specific row,
@@ -10912,8 +10911,8 @@ Gets reduced to more textual view:
 <ol>
 <li>We assume that one should have minimal care about the syntax sugar and syntax rules. This means that we must avoid braces, quotes or any special symbols <code>' " ; , . ( ) [ ] { } &amp; $ % # @</code> and make it possible to maintain the script without them.</li>
 <li>We want script to be close to <em>Keyword Driven</em> and <em>Data Driven</em> testing concept. So test data and test results should be representable as data tables. This reduces the struggling of attaching the data feed to a test set.</li>
-<li>We still want to have a solid language. We seek for a balance between clarity and power of language. So we want the script to be implemented on the same language. Both keyword, scenarios and data feeds should be done in a same way. This means one RVL skill is requried for everything. </li>
-<li>In many cases grids or tables are used to represent test data. So we want the script itself to be a grid. So all parts of it includeing data tables are debuggable as a part of the solid script.</li>
+<li>We still want to have a solid language. We seek for a balance between clarity and power of language. So we want the script to be implemented on the same language. Both keyword, scenarios and data feeds should be done in a same way. This means one RVL skill is required for everything. </li>
+<li>In many cases grids or tables are used to represent test data. So we want the script itself to be a grid. So all parts of it including data tables are debuggable as a part of the solid script.</li>
 <li>When we think about working with table data the most common format that comes to our mind is XLS, XLSX or CSV. These formats are supported by powerful tools that make it easier to prepare data for feeding into the test set. So RVL is itself an .xls spreadsheet so its logic is expressed right there.</li>
 <li>Even with Spreadsheet there is a question what may be entered into the particular cell. With RVL we have an editor where you start from left to right and each cell has limited number of options. So if you don't know language it will guide you.</li>
 </ol>
@@ -11019,7 +11018,7 @@ Gets reduced to more textual view:
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

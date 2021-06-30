@@ -10867,7 +10867,6 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="webappprofile-format">WebAppProfile Format<a class="headerlink" href="#webappprofile-format" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -10895,7 +10894,7 @@
 <li><code>record.handlers</code> is an objects that defines functions injected into the recorder. Requires Rapise 6.4+<ul>
 <li><code>elementName(el)</code> builds a name for a given element. This name is used as object ID in the object repository. If this function returns <code>null</code> then default algorithm is used to build the name.</li>
 <li><code>skipAttribute(node, attr, value)</code> allows to skip recording of some attributes in specific cases. The function must return <code>true</code> if an attribute should not be recorded.</li>
-<li><code>clickable(el)</code> fine grained control over which element is considred clickable. When the function returns <code>true</code> the element is considered clickable, if <code>false</code> - then default algorithm (element is clickable or not) is used. Requires Rapise 6.5+.</li>
+<li><code>clickable(el)</code> fine grained control over which element is considered clickable. When the function returns <code>true</code> the element is considered clickable, if <code>false</code> - then default algorithm (element is clickable or not) is used. Requires Rapise 6.5+.</li>
 </ul>
 </li>
 </ul>
@@ -10911,19 +10910,15 @@
     ...
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
-
 <p>If we record just using <code>title</code> attribute and it's value is unique for the page we'll end up with a locator</p>
 <div class="highlight"><pre><span></span><code>//span[@title=&#39;Contoso&#39;]
 </code></pre></div>
-
 <p>However if we define an anchor</p>
 <div class="highlight"><pre><span></span><code>//div[@id=&#39;Customers&#39;]
 </code></pre></div>
-
 <p>we'll get the locator as</p>
 <div class="highlight"><pre><span></span><code>//div[@id=&#39;Customers&#39;]//span[@title=&#39;Contoso&#39;]
 </code></pre></div>
-
 <p>The locator is now bound to the table. If another element with <code>Contoso</code> title appears somewhere on the page (outside the table) we'll find the correct element.</p>
 <h3 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h3>
 <p>Here is more complex and real-life example. In <a href="https://dynamics.microsoft.com/en-us/business-central/overview/">Microsoft Dynamics 365 Business Central</a> application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with <code>spa-view</code> class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower <code>z-index</code> then currently active form.</p>
@@ -10932,11 +10927,9 @@
 <p>To achieve this goal we define an anchor in WebAppProfile for the application</p>
 <div class="highlight"><pre><span></span><code>//div[contains(concat(&#39; &#39;, @class, &#39; &#39;), &#39; spa-view &#39;) and position()=last()]
 </code></pre></div>
-
 <p>Here is an example of automatically recorded XPath</p>
 <div class="highlight"><pre><span></span><code>//div[contains(concat(&#39; &#39;, @class, &#39; &#39;), &#39; spa-view &#39;) and position()=last()]//span[@aria-label=&#39;Customers&#39;]
 </code></pre></div>
-
 <p>The anchor prevents us from finding elements that are not visible to user and ensure that if we find an element it belongs to an active form.</p>
 <h3 id="example-3">Example 3<a class="headerlink" href="#example-3" title="Permanent link">&para;</a></h3>
 <p>Requires Rapise 6.4+. An anchor may be used to rewrite XPath for an element completely. It means if an anchor points to an element then it will be used instead of XPath expression generated using attributes. Let's assume we have a page</p>
@@ -10951,15 +10944,12 @@
     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </code></pre></div>
-
 <p>If we have an anchor defined like</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span> <span class="nx">xpath</span><span class="o">:</span> <span class="s2">&quot;//input[../../td/span[text()=&#39;UserName&#39;]]&quot;</span><span class="p">}</span>
 </code></pre></div>
-
 <p>and we click on the field then instead of something like</p>
 <div class="highlight"><pre><span></span><code>//input[@title=&#39;Enter email or user ID:&#39;]
 </code></pre></div>
-
 <p>the recorder will use the anchor.</p>
 <h2 id="xpath-minimization">XPath Minimization<a class="headerlink" href="#xpath-minimization" title="Permanent link">&para;</a></h2>
 <p>Rapise always tries to build the minimal XPath locator possible with a given set of attributes, classes and anchors. <a href="https://www.inflectra.com/support/knowledgebase/kb282.aspx">Full XPath is not an option</a>.</p>
@@ -10972,16 +10962,13 @@
     ...
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
-
 <p>and XPath</p>
 <div class="highlight"><pre><span></span><code>//span[@title=&#39;Account&#39;]
 </code></pre></div>
-
 <p>finds a single node, then it is a good minimal locator for the element.</p>
 <p>Compare with full XPath</p>
 <div class="highlight"><pre><span></span><code>/div[1]/div[1]/span[@title=&#39;Account&#39;]
 </code></pre></div>
-
 <p>that may easily become broken with page layout changes.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
@@ -11092,7 +11079,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.result.one": "1 matching document", "clipboard.copied": "Copied to clipboard", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.config.lang": "en", "search.result.term.missing": "Missing", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
