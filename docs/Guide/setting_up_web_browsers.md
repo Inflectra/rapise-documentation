@@ -126,7 +126,7 @@ Check to make sure you have Internet Explorer browser executable available at th
 In order to test web applications using the Microsoft Edge browser, you will need to install an extension for Edge that allows Rapise to
 interact with it:
 
-1. Rught click the following URL and choose `Open link in new tab` to open the extension page: <a href="https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh" target="_blank">https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh</a>
+1. Right click the following URL and choose `Open link in new tab` to open the extension page: <a href="https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh" target="_blank">https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh</a>
 
 2. Click on the ‘Get’ button to install the Add-On into your instance of Edge.
 

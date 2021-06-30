@@ -21,19 +21,19 @@ Binary condition with two *Param*s named `param1` and `param2`:
 
 Binary condition with *Action* and *Param* named `output1` and `param2`:
 
-| ... | *Type*    | *Object* | *Action*           | *ParamName* | ... |
-| --- | --------- | -------- | ------------------ | ----------- | --- |
-| --  | Action    | MyButton | GetText            |             |
-| --  | Condition |          | *outpu1 == param2* |             |
-| --  | Param     |          |                    | param2      |
+| ... | *Type*    | *Object* | *Action*            | *ParamName* | ... |
+| --- | --------- | -------- | ------------------- | ----------- | --- |
+| --  | Action    | MyButton | GetText             |             |
+| --  | Condition |          | *output1 == param2* |             |
+| --  | Param     |          |                     | param2      |
 
 Binary condition with two *Action*s named `output1` and `output2`:
 
-| ... | *Type*    | *Object*  | *Action*            | *ParamName* | ... |
-| --- | --------- | --------- | ------------------- | ----------- | --- |
-| --  | Action    | MyButton1 | GetText             |             |
-| --  | Condition |           | *outpu1 != output2* |             |
-| --  | Action    | MyButton2 | GetText             |             |
+| ... | *Type*    | *Object*  | *Action*             | *ParamName* | ... |
+| --- | --------- | --------- | -------------------- | ----------- | --- |
+| --  | Action    | MyButton1 | GetText              |             |
+| --  | Condition |           | *output1 != output2* |             |
+| --  | Action    | MyButton2 | GetText              |             |
 
 
 Unary condition with *Param* `param1`:
@@ -45,10 +45,10 @@ Unary condition with *Param* `param1`:
 
 Unary condition with *Action* `output1`:
 
-| ...       | *Type*   | *Object*        | *Action* | *ParamName* | ... |
-| --------- | -------- | --------------- | -------- | ----------- | --- |
-|-| Action    | MyButton | GetEnabled      |          |
-|-| Condition |          | *outpu1 IsTrue* |          |
+| ...       | *Type*   | *Object*           | *Action* | *ParamName* | ... |
+| --------- | -------- | ------------------ | -------- | ----------- | --- |
+|-| Action    | MyButton | GetEnabled       |          |
+|-| Condition |          | *output1 IsTrue* |          |
 
 
 ## All Conditions
@@ -163,4 +163,4 @@ Here is the same condition presented in 3 rows (default) and 2 rows (short) form
 
 ![IfElse_Switch](./img/Conditions_IfElseSwitch.png)
 
-If there is an `Action` result used insted of `param` then it is recommended to first save it to the [Variable](Variables.md).
+If there is an `Action` result used instead of `param` then it is recommended to first save it to the [Variable](Variables.md).

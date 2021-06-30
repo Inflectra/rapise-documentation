@@ -21,7 +21,7 @@ RVL script is a spreadsheet containing set of 7 columns in fixed order:
     
     - `Action` - row defines an action. Action is a call for operation for one of the objects. Object is defined in the next column. See [Actions](Actions.md).
     - `Param` - signals that this row contains action parameter or condition parameter defined in last 3 columns (`ParamName`, `ParamType` and `ParamValue`).
-    - `Output` - this type of row must go after last Param for an action and defines a variable that should accept output value retured from the call to the Action.
+    - `Output` - this type of row must go after last Param for an action and defines a variable that should accept output value returned from the call to the Action.
     - `Variable` - this row defines or assigns value to a local or global variable. See [Variables](Variables.md).
     - `Assert` - first row for the Assertion. See [Assertions](Assertions.md).
     - `Condition`

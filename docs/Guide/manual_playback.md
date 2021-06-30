@@ -4,7 +4,7 @@
 
 ## Purpose
 
-The **Manual Playback** dialog box lets you execute a series of manual test cases (including those part of a test set) from within Rapise. The results from the manual test result will be reported back into your connected [Spira](spiratest_integration.md) instance. During the executing of the manual test, you can attach screeenshots, files and log incidents related to the test result
+The **Manual Playback** dialog box lets you execute a series of manual test cases (including those part of a test set) from within Rapise. The results from the manual test result will be reported back into your connected [Spira](spiratest_integration.md) instance. During the executing of the manual test, you can attach screenshots, files and log incidents related to the test result
 
 ## How to Open
 

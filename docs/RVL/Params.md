@@ -12,7 +12,7 @@ The last 3 columns in the RVL table are used for passing parameters:
 
 
 * 5th column - *ParamName* - name of the parameter. This column's intention is readability and it does not affect execution. However it names input parameters and makes it easier to understand each provided input option.
-* 6th column - *ParamType* - value type. This may be a basic scalar type (`number`, `string`, `boolean`, `object`) as well as one of the following additionals 'special' types:
+* 6th column - *ParamType* - value type. This may be a basic scalar type (`number`, `string`, `boolean`, `object`) as well as one of the following additional 'special' types:
 * * `expression` - any valid JavaScript expression that may involve global variables and functions and local variables.
 * * `variable` - the parameter value is read from a variable.
 * * `objectid` - ID of one of the learned Objects.

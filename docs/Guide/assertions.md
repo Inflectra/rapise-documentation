@@ -15,7 +15,7 @@ There are explicit and implicit assertions (or checkpoints) generated during the
 * RVL [Assertion](../RVL/Assertions.md) - explicit comparison (checkpoint)
     ![RVL Assertion](img/automated_reporting_rvlassert.png)
 
-* Code [Assertion](../Libraries/Tester.md#assert) - explicit comparision (checkpoint)
+* Code [Assertion](../Libraries/Tester.md#assert) - explicit comparison (checkpoint)
     ![Code Assertion](img/automated_reporting_codeassert.png)
 
 * Execution Error

@@ -22,7 +22,7 @@ Rapise comes with many different object libraries. See the list of libraries and
 - [Infragistics](/Libraries/ses_lib_infragistics/)
 - [Syncfusion](/Libraries/ses_lib_syncfusion/)
 - [Telerik](/Libraries/ses_lib_telerik/)
-- [Advanced Acessibility](/Libraries/ses_lib_advaac/)
+- [Advanced Accessibility](/Libraries/ses_lib_advaac/)
 - [ActiveX](/Libraries/ses_lib_activex/)
 - [ActiveXC1](/Libraries/ses_lib_activex/)
 - [ActiveXSft](/Libraries/ses_lib_activex/)

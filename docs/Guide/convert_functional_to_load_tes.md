@@ -83,7 +83,7 @@ In the NeoLoad tree it looks this way:
 After pressing Convert button Rapise will launch the test and NeoLoad will start capturing network traffic. When test playback is finished
 you’ll see the dialog:
 
-![convertion completed](./img/convert_functional_to_load_tes8.png)
+![conversion completed](./img/convert_functional_to_load_tes8.png)
 
 ## Troubleshooting
 

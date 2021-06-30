@@ -17,7 +17,7 @@
  * @param objectType Either object_type of the rule or regexp pattern for object_type.
  * @param actionName action name. For example "DoClick".
  * @param callback new action handler for specified action.
- * @returns 'true' if object_type is found and replacement is successfull, 'false' otherwise.
+ * @returns 'true' if object_type is found and replacement is successful, 'false' otherwise.
  */
 function SeSOverrideAction(/**string*/ objectType, /**string*/ actionName, callback)
 ```

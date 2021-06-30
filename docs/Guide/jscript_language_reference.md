@@ -36,11 +36,11 @@ The engine is defined in two places:
     * getters, setters
     * object methods.
 
-2. NodeJS engine now runs in 32 bit mode. This is required to keep compatibility with `ActiveXObject` support that is an issential part of WScript but has to be emulated in NodeJS.
+2. NodeJS engine now runs in 32 bit mode. This is required to keep compatibility with `ActiveXObject` support that is an essential part of WScript but has to be emulated in NodeJS.
 
 3. Rapise has own copy of **node.exe** installed. So if you have npm modules installed globally and need to use them in your test, you have to install them locally into the framework.
 
-4. **npm** is not installed with Rapise. So if you want ot use it, you need to have one installed seaparately.
+4. **npm** is not installed with Rapise. So if you want ot use it, you need to have one installed separately.
 
  
 ## [Reference](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm)

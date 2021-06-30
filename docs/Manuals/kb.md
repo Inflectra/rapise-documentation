@@ -3,6 +3,14 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB600', 'Change the default Screenshot folder')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB600.aspx">KB600</a> Change the default Screenshot folder
+
+If a test is configured to capture screenshots during playback - Rapise puts then into Reports folder in the working directory of the test. If you want to copy screenshots to a different location or instruct Rapise to put images into a different folder - check out this article.
+
+### <a onclick="return RegisterKbClick('KB599', 'RVL Toolbox to boost productivity in writing tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB599.aspx">KB599</a> RVL Toolbox to boost productivity in writing tests
+
+If you are new to Rapise or use it occasionally you may not know or remember all the cool objects and actions to use in your tests. With RVL Toolbox you can get access to required information by searching for it without leaving the RVL Editor.
+
 ### <a onclick="return RegisterKbClick('KB598', 'Using RVL Merge Utility')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB598.aspx">KB598</a> Using RVL Merge Utility
 
 Sometimes we need to do Diff and Merge operations when working with external Source Control systems (git, svn, etc). This utility (ExcelMerge) will enable this functionality.
@@ -185,7 +193,7 @@ To compare images in JavaScript you may use Tester.AssertImage.
 
 ### <a onclick="return RegisterKbClick('KB507', 'UIAutomation2 Locator')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB507.aspx">KB507</a> UIAutomation2 Locator
 
-Rapise 6.3 includes an experimental feature - new UIAutomation2 locator for UIAtuomation based desktop testing. Rather than specifying a path from the element tree root to the element this locator relies on built-in ability of UIAutomation to search for elements based on property values.
+Rapise 6.3 includes an experimental feature - new UIAutomation2 locator for UIAutomation based desktop testing. Rather than specifying a path from the element tree root to the element this locator relies on built-in ability of UIAutomation to search for elements based on property values.
 
 ### <a onclick="return RegisterKbClick('KB506', 'How to define and use a dynamic Web locator')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB506.aspx">KB506</a> How to define and use a dynamic Web locator
 
@@ -393,7 +401,7 @@ If you run Rapise tests via Selenium WeDriver you may need to manipulate browser
 
 ### <a onclick="return RegisterKbClick('KB416', 'WPF Calendar and DatePicker')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB416.aspx">KB416</a> WPF Calendar and DatePicker
 
-It is tricky do deal with WPF calendar control. Here we introduce a number of supplementatry functions to copy in your project and use to modify and read  Calendar and DatePicker data.
+It is tricky do deal with WPF calendar control. Here we introduce a number of supplementary functions to copy in your project and use to modify and read  Calendar and DatePicker data.
 
 ### <a onclick="return RegisterKbClick('KB415', 'Is it Possible to Automate an iOS App Store App using Rapise?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB415.aspx">KB415</a> Is it Possible to Automate an iOS App Store App using Rapise?
 
@@ -581,7 +589,7 @@ Some applications show unexpected popup windows. This could be feature announcem
 
 ### <a onclick="return RegisterKbClick('KB336', 'Ways to deal with flaky tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB336.aspx">KB336</a> Ways to deal with flaky tests
 
-When you do UI test automation and create a big enough test coverage the probability of having curtain portion of flaky tests increases. In many cases there is no reasonable way in terms of time and resources to mitigate all flakiness from the test coverage. In some cases even a flaky test may still be useful.
+When you do UI test automation and create a big enough test coverage the probability of having certain portion of flaky tests increases. In many cases there is no reasonable way in terms of time and resources to mitigate all flakiness from the test coverage. In some cases even a flaky test may still be useful.
 
 ### <a onclick="return RegisterKbClick('KB335', 'What is UI Test Automation Framework?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB335.aspx">KB335</a> What is UI Test Automation Framework?
 
@@ -593,7 +601,7 @@ In some cases it makes sense to launch a browser in private mode to ensure exact
 
 ### <a onclick="return RegisterKbClick('KB333', 'Installing Rapise Browser Extensions without Internet Access')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB333.aspx">KB333</a> Installing Rapise Browser Extensions without Internet Access
 
-Normally you can install the add-ons for Chrome and Firefox directly from the brower's app store (just search for Rapise). This is the easiest option, and avoids the need to run the browsers in developer mode.
+Normally you can install the add-ons for Chrome and Firefox directly from the browser's app store (just search for Rapise). This is the easiest option, and avoids the need to run the browsers in developer mode.
 
 ### <a onclick="return RegisterKbClick('KB331', 'How to Check if Rapise Can Test My Delphi Application')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB331.aspx">KB331</a> How to Check if Rapise Can Test My Delphi Application
 
@@ -613,7 +621,7 @@ Unfortunately, Windows10 has a nasty habit of frequently updating itself and the
 
 ### <a onclick="return RegisterKbClick('KB325', 'Running nightly tests with RapiseLauncher on VM with RDP')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB325.aspx">KB325</a> Running nightly tests with RapiseLauncher on VM with RDP
 
-It is common to use UI tests with RDP connected to remote VM. By default this works only while RDP window is open and client is connected. On disconnect remote session gets locked and UI becomes unavaliable for the test. This topic covers a workaround.
+It is common to use UI tests with RDP connected to remote VM. By default this works only while RDP window is open and client is connected. On disconnect remote session gets locked and UI becomes unavailable for the test. This topic covers a workaround.
 
 ### <a onclick="return RegisterKbClick('KB324', 'List Files from Folder in RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB324.aspx">KB324</a> List Files from Folder in RVL
 
@@ -1153,7 +1161,7 @@ There are several ways to find if something is already on the screen, this artic
 
 ### <a onclick="return RegisterKbClick('KB111', 'Analog Testing when the Machine does not have the Break Key')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB111.aspx">KB111</a> Analog Testing when the Machine does not have the Break Key
 
-When using Rapise for analog testing you need to use the key sequence CTRL+BREAK to start and stop the analog recorder. However some machines (particularly smaller laptops) do not have a BREAK or PAUSE (often the same function as BREAK) key. This article describes some solutiomns
+When using Rapise for analog testing you need to use the key sequence CTRL+BREAK to start and stop the analog recorder. However some machines (particularly smaller laptops) do not have a BREAK or PAUSE (often the same function as BREAK) key. This article describes some solutions
 
 ### <a onclick="return RegisterKbClick('KB109', 'Using DoDOMChildrenCount and DoDOMQueryXPath to inspect child HTML elements')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB109.aspx">KB109</a> Using DoDOMChildrenCount and DoDOMQueryXPath to inspect child HTML elements
 
@@ -1199,7 +1207,7 @@ When writing a web test in Rapise you will often want to run the same test scri
 
 You can use the Global.DoSendKeys('...'); command in Rapise to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. Page Down, or CTRL + Key). This article explains the way to do this.
 
-### <a onclick="return RegisterKbClick('KB83', 'Turning off Chome and Firefox Auto-Updating')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB83.aspx">KB83</a> Turning off Chome and Firefox Auto-Updating
+### <a onclick="return RegisterKbClick('KB83', 'Turning off Chrome and Firefox Auto-Updating')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB83.aspx">KB83</a> Turning off Chrome and Firefox Auto-Updating
 
 When you are testing a web application against different environments, it can be useful disable to default browser auto-updating policies so that you have a stable testing environment. This articles describes how to disable the auto-updating policies of Google Chrome and Firefox.
 

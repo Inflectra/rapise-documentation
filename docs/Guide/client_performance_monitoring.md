@@ -99,7 +99,7 @@ NeoLoad.EndTransaction('T Home');
 
 There is also a general call that can send any user-defined metric to the NeoLoad controller:
 
-```jvascript
+```javascript
 NeoLoad.CapturePerformanceValue("First Level Folder", "Transaction1|Duration", "milliseconds", 120);
 ```
 

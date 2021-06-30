@@ -58,7 +58,7 @@ And the test case will refer to an `.sstest` document within this folder:
 
 ### How It is Stored in Git
 
-When the test stays in **Git** then Spira Documents section contains only one item - a link to a local file starting with `%GIITROOT%`:
+When the test stays in **Git** then Spira Documents section contains only one item - a link to a local file starting with `%GITROOT%`:
 
 ![TC Link Git Doc](img/git_integration_doc_link.png)
 
@@ -99,7 +99,7 @@ popd
 
 ### Interactive SyncToSpira.cmd
 
-Depending on your preferred git client, you may specify different implementations of `Save to Spira`. For example, here is an interactive verion of it using [TortoiseGit](https://tortoisegit.org/):
+Depending on your preferred git client, you may specify different implementations of `Save to Spira`. For example, here is an interactive version of it using [TortoiseGit](https://tortoisegit.org/):
 
 ```
 @echo ===============================

@@ -117,7 +117,7 @@ The default profile looks like this:
 - `record.handlers` is an objects that defines functions injected into the recorder. Requires Rapise 6.4+
     - `elementName(el)` builds a name for a given element. This name is used as object ID in the object repository. If this function returns `null` then default algorithm is used to build the name.
     - `skipAttribute(node, attr, value)` allows to skip recording of some attributes in specific cases. The function must return `true` if an attribute should not be recorded.
-    - `clickable(el)` fine grained control over which element is considred clickable. When the function returns `true` the element is considered clickable, if `false` - then default algorithm (element is clickable or not) is used. Requires Rapise 6.5+.
+    - `clickable(el)` fine grained control over which element is considered clickable. When the function returns `true` the element is considered clickable, if `false` - then default algorithm (element is clickable or not) is used. Requires Rapise 6.5+.
 
 ## Anchors
 

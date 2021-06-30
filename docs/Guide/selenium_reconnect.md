@@ -42,7 +42,7 @@ function TestPrepare()
 }
 ```
 
-If you want Rapise to launch a new browser session if there is no saved one pass `true` to [WerbDriver.ReconnectSession](/Libraries/WebDriver/#ReconnectSession) call.
+If you want Rapise to launch a new browser session if there is no saved one pass `true` to [WebDriver.ReconnectSession](/Libraries/WebDriver/#ReconnectSession) call.
 
 ```javascript
 function TestPrepare()

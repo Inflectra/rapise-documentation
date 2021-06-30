@@ -29,7 +29,7 @@ Whenever the test is executed using the [RapiseLauncher](spiratest_integration.m
 
 ![Spira Column Mapping](img/automated_reporting_spiracolumnmapping.png)
 
-There is always a source `.trp` file attached to the test run, you may find it to in the test run **Attachmens** tab:
+There is always a source `.trp` file attached to the test run, you may find it to in the test run **Attachments** tab:
 
 ![TestRun Attachments](img/automated_reporting_spiratrattachments.png)
 

@@ -99,7 +99,7 @@ Global.DoSleep(1000);
 // Send two lines of text
 Global.DoSendKeys("First line{ENTER}Second line{ENTER}");
 Global.DoSleep(1000);
-// Send a series of charcaters with SHIFT key pressed
+// Send a series of characters with SHIFT key pressed
 Global.DoSendKeys("+(abcdefg)");
 Global.DoSleep(1000);
 // Close notepad

@@ -6,7 +6,7 @@ In Rapise 7 we completely reworked the Spira Dashboard. It has all new look and 
 
 ## New Features
 
-If you are not familiar with the dashboard and it's besic features it is recommended to review [Navigation](#navigation) and [Tasks](#tasks) sections first.
+If you are not familiar with the dashboard and it's basic features it is recommended to review [Navigation](#navigation) and [Tasks](#tasks) sections first.
 
 ### Flaky Tests
 
@@ -37,7 +37,7 @@ To open the dashboard use [main menu](/Guide/menu_and_toolbars/#view) View > Spi
 
 ## Navigation
 
-The dashboard contains top level menu to switch between views and a dropdown to switch bewteen products/projects. There is also a button to refresh data and search field to filter data in the current view. Filtering is applied to a column with orange caption (usually `Name`).
+The dashboard contains top level menu to switch between views and a dropdown to switch between products/projects. There is also a button to refresh data and search field to filter data in the current view. Filtering is applied to a column with orange caption (usually `Name`).
 
 ![Dashboard Main Menu](./img/spira_dashboard_toplevel_menu.png)
 
@@ -99,7 +99,7 @@ View tests that are scheduled to run on the local host for the next 24 hours.
 
 #### Setup Custom Properties
 
-Some features of the dashboard require aditional custom properties to exist in Test Cases, Test Sets and Test Runs. Click `Create Custom Properties for Rapise` button to add the following custom properties in the selected project:
+Some features of the dashboard require additional custom properties to exist in Test Cases, Test Sets and Test Runs. Click `Create Custom Properties for Rapise` button to add the following custom properties in the selected project:
 
 - Test Cases
 	- Flaky (boolean, default is false)

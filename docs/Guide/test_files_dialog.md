@@ -70,9 +70,9 @@ Filter groups read its contents from disk according to specified path and wildca
 
 ![filter group](./img/test_files_dialog4.png)
 
-* **FilterPath**: Root path to find files via wildcard (valid only if 'IsFilterGorup' is 'True').
-* **FilterWildcard**: Filter wildcard (valid only if 'IsFilterGorup' is 'True').
-* **IsFilterGroupt**: 'True' if directory should show the list of all files matching 'FilterWildcard' belonging to 'FilterPath'.
+* **FilterPath**: Root path to find files via wildcard (valid only if 'IsFilterGroup' is 'True').
+* **FilterWildcard**: Filter wildcard (valid only if 'IsFilterGroup' is 'True').
+* **IsFilterGroup**: 'True' if directory should show the list of all files matching 'FilterWildcard' belonging to 'FilterPath'.
 * **Name**: Group name.
 
 ## Adding Files from Test Folder

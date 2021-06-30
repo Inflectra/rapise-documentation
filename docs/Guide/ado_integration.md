@@ -1,7 +1,8 @@
 # Azure DevOps Integration v2
 
 !!! tip
-    This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to [Azure DevOps Integration v3](vstest.md).
+    This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to [Azure DevOps Integration v3](
+      .md).
 
 From this topic you will learn how to run Rapise tests with [Node-Tap](https://node-tap.org/) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 
@@ -57,7 +58,7 @@ The root folder of the framework contains:
 Each Rapise test in this framework is a direct subfolder of the root folder:
 
 ```
-AzureDevOpsFriendlyArchhitecture 
+AzureDevOpsFriendlyArchitecture 
 |
 |-CreateNewBook
 |-FailedLogin
@@ -66,7 +67,7 @@ AzureDevOpsFriendlyArchhitecture
 `test` folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests. 
 
 ```
-AzureDevOpsFriendlyArchhitecture 
+AzureDevOpsFriendlyArchitecture 
 |
 |- test
     |
@@ -213,7 +214,8 @@ steps:
   displayName: "Convert TAP to XUnit"
 
 - script: |
-    cscript.exe summarize.js
+    
+    .exe summarize.js
   displayName: 'Fix XUnit Reports'
 
 - task: CopyFiles@2

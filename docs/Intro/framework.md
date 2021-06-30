@@ -36,7 +36,7 @@ There is a number of features intended to help one switching between test and su
 
 The `Files` [view](../Guide/test_files_dialog.md) shows all nested sub-tests. You may open any of them by double-clicking on the `.sstest` node:
 
-![Filew View](../Guide/img/framework_filesview.png)
+![Files View](../Guide/img/framework_filesview.png)
 
 The test opens in the current Rapise instance. You may also open it in a new window using the **Open in New Rapise Window...** command from the  [Context Menu](../Guide/tests_and_sub_tests.md#sub-test-context-menu).
 

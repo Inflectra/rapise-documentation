@@ -31,7 +31,7 @@ More tools available in the menu.
 - **Disconnect:** Close connection to the browser and clear the DOM tree.
 - **Save:** Use ot to save the DOM tree to an XML file.
 - **Load:** Use it to load the DOM tree from an XML file.
-- **Hide Invisible:** Selecting this item hidea all elements with zero dimensions or `display: none` style from the DOM tree.
+- **Hide Invisible:** Selecting this item hides all elements with zero dimensions or `display: none` style from the DOM tree.
 - **Highlighting Mode:** When this is selected, whenever you select an object in DOM Tree, it will highlight the item in the rendered web page with a red square. This allows you to visually see an item in the DOM tree and how it appears to the user.
 - **Virtual Mode:** When virtual mode is **on** you can test XPath queries with the DOM tree loaded into Spy (browser is not used). You can load the tree from an XML file for example.
 - **CSS Enabled:** Select to make CSS test field visible on the toolbar.

@@ -65,7 +65,7 @@ The solution is to enter the cell for editing text and pressing `F2`. It will di
 
 ## Action Params
 
-When you select an action from the list **RVL Edtior** automatically fills default action params. For example, if we choose: 
+When you select an action from the list **RVL Editor** automatically fills default action params. For example, if we choose: 
 
 ![DoLaunch](./img/rvl_editor_global_dolaunch0.png)
 

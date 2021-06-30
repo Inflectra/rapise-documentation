@@ -90,7 +90,7 @@ If we'll do a [loop](/RVL/Loops/) with Data map Rapise will iterate through all 
 
 ## DDT in JavaScript
 
-One can read data from a spreadsheet in JavaScript mode as well.  There is a global Spreadsheet object that is available in every test. Here is an example of Spreadhseet API usage.
+One can read data from a spreadsheet in JavaScript mode as well.  There is a global Spreadsheet object that is available in every test. Here is an example of Spreadsheet API usage.
 
 ```javascript
 Spreadsheet.DoAttach('Calc.xls', 'Calc Data');
@@ -121,6 +121,6 @@ Open `UsingSpreadsheet` sample test from the start page to see a working example
 - [Data-Driven Testing (webinar)](https://youtu.be/gh8pop9LIb0?t=222)
 - How To: Easily Attaching RVL Script to an External Spreadsheet in Rapise ([watch video](https://youtu.be/iuWCXmzZsow))
 - [KB432](https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx) Writing data to an Excel spreadsheet
-- [KB27](https://www.inflectra.com/support/knowledgebase/kb27.aspx) Using Rapise to extract test data from an Excelsheet 
+- [KB27](https://www.inflectra.com/support/knowledgebase/kb27.aspx) Using Rapise to extract test data from an Excel sheet 
 - [Blog: ](https://www.inflectra.com/Ideas/Entry/rapise--data-driven-testing-using-the-spreadsheet--288.aspx) Data Driven Testing using the Spreadsheet object (JavaScript)
 - [Data-driven testing tutorial (JavaScript)](data_driven_testing.md)

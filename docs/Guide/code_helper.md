@@ -26,7 +26,7 @@ In this example `p` is just a variable with undefined type. It may be used as nu
 
 There are several ways of giving Rapise a "hint" about the variable type:
 
-## Static Assignement
+## Static Assignment
 
 First, is static assignment. Suppose you specify some constant value when defining a variable:
 

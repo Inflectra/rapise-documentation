@@ -48,7 +48,7 @@ There is a build-in set of test parameters for [cross-browser testing](cross_bro
 * **ObjectLookupAttemptInterval**: This is the time Rapise will wait between attempts to locate an object.
 * **ObjectLookupAttempts**: This is the number of times Rapise will attempt to locate an object.
 * **Show Report**: Display report after execution. Default is **True**.
-* **StopOnError**: Terminate script execution after the first error. So failing test cases fail quickier. Default is **True**.
+* **StopOnError**: Terminate script execution after the first error. So failing test cases fail quicker. Default is **True**.
 
 ## Recording
 

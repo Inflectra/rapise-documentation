@@ -18,7 +18,7 @@ The formula bar lets you see/edit the contents of the currently selected cell as
 
 ## Spreadsheet Grid
 
-The main spreadsheet grid lets you see the cells in the spreadsheet, select a range and use the [Speadsheet ribbon](toolbar_spreadsheet.md) to change the format:
+The main spreadsheet grid lets you see the cells in the spreadsheet, select a range and use the [Spreadsheet ribbon](toolbar_spreadsheet.md) to change the format:
 
 ![spreadsheet-editor-cells](./img/spreadsheet_editor3.png)
 

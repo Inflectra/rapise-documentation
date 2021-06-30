@@ -130,7 +130,7 @@ The **View** tab lets you change the display of Microsoft Excel spreadsheet file
 The **View** tab is available anytime you have an excel (xls or xlsx) file visible in the [Content View](content_view.md).
 
 ### Show
-This section lets you choose whether to display the gridlines, formula bar and/or the headings in the [spreadsheet editor](spreadsheet_editor.md).
+This section lets you choose whether to display the grid lines, formula bar and/or the headings in the [spreadsheet editor](spreadsheet_editor.md).
 
 ### Zoom
 This section contains the following options:

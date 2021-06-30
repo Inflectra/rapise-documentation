@@ -145,7 +145,7 @@ operations:
 
 * * AuthorId = 2
 
-* * AuthorIdSpecifieed = True
+* * AuthorIdSpecified = True
 
 * * GenreId = 3
 

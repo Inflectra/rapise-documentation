@@ -237,7 +237,7 @@ In this case that will correctly locate the Edit link for the book 'Amsterdam'. 
 
 Click `Finish` and the object will have been added to the Object Tree of the current test:
 
-![onject tree](./img/tutorial_record_and_playback46.png)
+![object tree](./img/tutorial_record_and_playback46.png)
 
 ## Modify the Test
 

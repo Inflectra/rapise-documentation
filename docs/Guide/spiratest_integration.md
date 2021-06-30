@@ -420,7 +420,7 @@ The panel has the following options:
     
 - **Options**
     - **Capture screenshots during playback** -- selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.
-    - **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Usefull when your server is rebooted regularly. This option requires Rapise 6.3+
+    - **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Useful when your server is rebooted regularly. This option requires Rapise 6.3+
 	- **RDP screen width & height** -- when RDP session is disconnected via [RapiseLauncher tray icon menu](#tray-icon-menu) set screen resolution to specified width and height.
 
 ### Status Screen
@@ -466,7 +466,7 @@ However there are situations where you want to be able to launch an automated Ra
 
 For debugging and additional options when running the program, the following command-line arguments are available:
 
-- **-config:[Path to RepositoryConnection.xml]** allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create `RapositoryConnection.xml` on you dev host (by setting the confguration using standard settings dialog), and then copy the configured file from `C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml` to your source tree and pass it using this parameter.
+- **-config:[Path to RepositoryConnection.xml]** allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create `RepositoryConnection.xml` on you dev host (by setting the configuration using standard settings dialog), and then copy the configured file from `C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml` to your source tree and pass it using this parameter.
 - **-minimized** starts the application in minimized mode. Normal action is to show the list of pending runs.
 - **-paused** starts the application with timers Paused instead of active.
 - **-param:[name]=[value]** sets a global variable for every executed test. For example:
@@ -515,7 +515,7 @@ Recorded video is attached to the test run as ScreenCapture.wmv.
 
 You may attach some data to Test Set and use it during test execution. It is a convenient way to pass configuration and data files for the test set. It may be used as an alternative to defining Spira Configurations.
 
-You may open test attachment using the `%ARTIFACTS%` environment variable. If this is a standalong test then `ARTIFACTS` resolves to `WORKDIR` (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.
+You may open test attachment using the `%ARTIFACTS%` environment variable. If this is a standalone test then `ARTIFACTS` resolves to `WORKDIR` (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.
 
 *Example Usage:*
 

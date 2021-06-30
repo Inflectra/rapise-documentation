@@ -159,7 +159,7 @@ If you added Visual Studio Test Platform Installer task on the previous step do 
 !!! tip
     Rapise.TestAdapter also supports filtering, parameters and .runsettings files (specified via Visual Studio Test task options).
    
-#### Test Filter Cirteria
+#### Test Filter Criteria
 
 Rapise.TestAdapter supports [filter criteria](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) based on FullyQualifiedName test property (equals to  *.sstest file name). To specify a filter set `testFiltercriteria` in YAML or `Test filter criteria` in the Classic UI task editor.
 

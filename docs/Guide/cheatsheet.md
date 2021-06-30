@@ -1,4 +1,4 @@
-# Rapise Cheat Shet
+# Rapise Cheat Sheet
 
 ## Global Shortcuts
 
@@ -78,7 +78,7 @@
 
 ## Recording Activity Dialog
 
-++ctrl+1++ - Verify olement under cursor
+++ctrl+1++ - Verify element under cursor
 
 ++ctrl+2++ - Learn object under cursor
 
