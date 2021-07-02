@@ -5211,6 +5211,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7153,6 +7165,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -10922,7 +10946,9 @@ rule:
 <p>Select an item in <strong>CustomControlApp</strong> and advance its progress bar using right key. <strong>Accessible Event Watcher</strong> will show you captured events:</p>
 <p><img alt="customcontrolapp, accessible events filled" src="../img/tutorial_custom_library7.png" /></p>
 <p>You can see that changing progress bar leads to generation of <code>OBJ_VALUECHANGE</code> events. To get event name to use with Rapise open <a href="https://docs.microsoft.com/en-us/windows/desktop/winauto/event-constants">Event Constants</a> page and search for relevant value.</p>
+<!-- /* cSpell:disable */ -->
 <p><img alt="event constants" src="../img/tutorial_custom_library_event_sonstants.png" /></p>
+<!-- /* cSpell:enable */ -->
 <p>Not all accessibility events are processed and propagated by Rapise engine. <code>EVENT_OBJECT_VALUECHANGE</code> is one of such events. To consume this event and make an appropriate call to <code>OnValueChange</code> of <code>Win32CustomListboxControl</code> you need to add and register <strong>custom accessibility event handler</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/**</span>
 <span class="cm"> * Custom handler for EVENT_OBJECT_VALUECHANGE event</span>

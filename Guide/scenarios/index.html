@@ -5185,6 +5185,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7127,6 +7139,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -10726,6 +10750,7 @@
 <p>Scenarios are a way to create reusable building blocks that can be incorporated into your test scripts. These scenarios can be either included as part of a purely automated test script, or they can be included into a predominantly <a href="../semi_manual_testing/">manual test script</a>.</p>
 <h2 id="creating-scenarios">Creating Scenarios<a class="headerlink" href="#creating-scenarios" title="Permanent link">&para;</a></h2>
 <p>Let's say for example that you have the following Rapise test that was recorded from our sample library information web application:</p>
+<!-- /* cSpell:disable */ -->
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="c1">//Click on Log In</span>
@@ -10752,6 +10777,7 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_Out&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+<!-- /* cSpell:enable */ -->
 <p>If we want to break up this monolithic test into individual functions (called scenarios), simply highlight the test you want to extract (for example the Login steps):</p>
 <p><img alt="scenarios_1" src="../img/scenarios1.png" /></p>
 <p>Then right-click on the section and choose the option to <strong>Extract User Scenario</strong>:</p>
@@ -10782,6 +10808,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>In <code>User.js</code> we get</p>
+<!-- /* cSpell:disable */ -->
 <div class="highlight"><pre><span></span><code><span class="cm">/** @scenario Login */</span>
 <span class="kd">function</span> <span class="nx">Login</span><span class="p">()</span>
 <span class="p">{</span>
@@ -10795,6 +10822,7 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+<!-- /* cSpell:enable */ -->
 <h2 id="usage-in-automated-tests">Usage in Automated Tests<a class="headerlink" href="#usage-in-automated-tests" title="Permanent link">&para;</a></h2>
 <p>When you create a new test in Rapise it will contain a <code>Main.js</code> file that contains the main test code and a <code>User</code>.js file that contains any user-defined functions (called Scenarios). For example in the following test:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
@@ -10805,6 +10833,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>The test function calls three <strong>scenarios</strong> that comprise the main test. The scenarios themselves are JavaScript functions:</p>
+<!-- /* cSpell:disable */ -->
 <div class="highlight"><pre><span></span><code><span class="cm">/** @scenario Login */</span>
 <span class="kd">function</span> <span class="nx">Login</span><span class="p">()</span>
 <span class="p">{</span>
@@ -10848,11 +10877,13 @@
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Book was added successfully [TS:5]&#39;</span><span class="p">,</span> <span class="nx">tr</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mf">0</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
+<!-- /* cSpell:enable */ -->
 <p>If you go to the <a href="../object_tree/">Object Tree</a> you will see these user functions/scenarios displayed:</p>
 <p><img alt="object_tree_user_functions" src="../img/scenarios4.png" /></p>
 <p>You can then drag and drop those into the test script editor to include in the main test script.</p>
 <h2 id="usage-in-manual-tests">Usage in Manual Tests<a class="headerlink" href="#usage-in-manual-tests" title="Permanent link">&para;</a></h2>
 <p>When you create a new test in Rapise it will contain a <code>Main.js</code> file that contains the main test code and a <code>User.js</code> file that contains any user-defined functions (called Scenarios). For example you may have the following scenario defined in the <code>User.js</code> file:</p>
+<!-- /* cSpell:disable */ -->
 <div class="highlight"><pre><span></span><code><span class="cm">/** @scenario Login */</span>
 <span class="kd">function</span> <span class="nx">Login</span><span class="p">()</span>
 <span class="p">{</span>
@@ -10866,6 +10897,7 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+<!-- /* cSpell:enable */ -->
 <p>You can now include that in a <a href="../semi_manual_testing/">manual test step</a>, by simply making the test step description start with an "@" symbol to denote that it is a scenario:</p>
 <div class="highlight"><pre><span></span><code><span class="err">@</span><span class="nx">Login</span><span class="p">();</span>
 </code></pre></div>

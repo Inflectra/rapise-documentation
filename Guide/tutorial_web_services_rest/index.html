@@ -5212,6 +5212,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7154,6 +7166,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -10781,7 +10805,9 @@
 API can be found at:
 <a href="http://www.libraryinformationsystem.org/Services/RestService.aspx">www.libraryinformationsystem.org/Services/RestService.aspx</a>.</p>
 <h3 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?<a class="headerlink" href="#what-is-rest-and-what-is-a-restful-web-service" title="Permanent link">&para;</a></h3>
+<!-- /* cSpell:disable */ -->
 <p><strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.</p>
+<!-- /* cSpell:enable */ -->
 <p>A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Creating a REST web service test in Rapise consists of the following
@@ -10919,7 +10945,9 @@ steps:</p>
 <p><img alt="tutorial_web_services_pic7" src="../img/tutorial_web_services_rest7.png" /></p>
 <p>The <code>Response Header</code> tab will display the headers coming back from the web service. The Status Code <strong>200 OK</strong> means that the request succeeded and that data was returned. If you click on the "<strong>Response Body - XML</strong>" tab, you will see the XML serialized data returned from the web service:</p>
 <p><img alt="tutorial_web_services_pic8" src="../img/tutorial_web_services_rest8.png" /></p>
+<!-- /* cSpell:disable */ -->
 <p>Since Rapise uses JavaScript as its scripting language, it is usually easier to work with <strong>JSON</strong> (**J**ava**S**cript **O**bject **N**otation) serialized data rather than XML. In the case of the sample Library Information System web service, you can change the format that it accepts and retrieves by sending two special HTTP headers:</p>
+<!-- /* cSpell:enable */ -->
 <ul>
 <li>
 <p><strong>Content-Type</strong>: <code>application/json</code></p>
@@ -11013,7 +11041,7 @@ function to open up the request:</p>
 <p><img alt="clip0118" src="../img/tutorial_web_services_rest29.png" /></p>
 <p>Now we want to verify the name of the first book returned. To do that, expand the “0” index entry and then right-click on the “Name” property returned:</p>
 <p><img alt="clip0119" src="../img/tutorial_web_services_rest30.png" /></p>
-<p>Choose the option to <strong>Verify Repsonse[0].Name = Hound of the Baskervilles</strong>. This will add a verification step for this specific property:</p>
+<p>Choose the option to <strong>Verify Response[0].Name = Hound of the Baskervilles</strong>. This will add a verification step for this specific property:</p>
 <p><img alt="clip0120" src="../img/tutorial_web_services_rest31.png" /></p>
 <p>Now we add the last two requests - adding a book and verifying that it was added. To do that open up the two requests and click <code>Send</code> then <code>Record</code>:</p>
 <ul>

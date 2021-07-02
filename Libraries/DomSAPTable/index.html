@@ -5108,6 +5108,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7050,6 +7062,18 @@
     <li class="md-nav__item">
       <a href="../ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -10257,22 +10281,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dofulltext" class="md-nav__link">
-    DoFullText()
+    DoFullText
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doscrolltorow-col" class="md-nav__link">
-    DoScrollTo(row, col)
+  <a href="#doscrollto" class="md-nav__link">
+    DoScrollTo
   </a>
   
 </li>
@@ -10791,22 +10815,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#doclickcellrow-col-clicktype-xoffset-yoffset" class="md-nav__link">
-    DoClickCell(row, col, clickType, xOffset, yOffset)
+  <a href="#doclickcell" class="md-nav__link">
+    DoClickCell
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dofulltext" class="md-nav__link">
-    DoFullText()
+    DoFullText
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#doscrolltorow-col" class="md-nav__link">
-    DoScrollTo(row, col)
+  <a href="#doscrollto" class="md-nav__link">
+    DoScrollTo
   </a>
   
 </li>
@@ -10848,31 +10872,31 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Cell">Cell</a></td>
+<td><a href="#cell">Cell</a></td>
 <td>Text of the specified cell.</td>
 <td>GetCell</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnCount">ColumnCount</a></td>
+<td><a href="#columncount">ColumnCount</a></td>
 <td>Number of columns in the grid.</td>
 <td>GetColumnCount</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnIndex">ColumnIndex</a></td>
+<td><a href="#columnindex">ColumnIndex</a></td>
 <td>Index of a column with a given name.</td>
 <td>GetColumnIndex</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#ColumnName">ColumnName</a></td>
+<td><a href="#columnname">ColumnName</a></td>
 <td>Caption of a column.</td>
 <td>GetColumnName</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#RowCount">RowCount</a></td>
+<td><a href="#rowcount">RowCount</a></td>
 <td>Number of rows in the grid.</td>
 <td>GetRowCount</td>
 <td></td>
@@ -10891,15 +10915,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#DoClickCell">DoClickCell</a></td>
+<td><a href="#doclickcell">DoClickCell</a></td>
 <td>Clicks the specified cell.</td>
 </tr>
 <tr>
-<td><a href="#DoFullText">DoFullText</a></td>
+<td><a href="#dofulltext">DoFullText</a></td>
 <td>Returns text representation of the table.</td>
 </tr>
 <tr>
-<td><a href="#DoScrollTo">DoScrollTo</a></td>
+<td><a href="#doscrollto">DoScrollTo</a></td>
 <td>Scrolls to the specified cell.</td>
 </tr>
 </tbody>
@@ -10992,8 +11016,10 @@
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickCell"></a>    </p>
-<h4 id="doclickcellrow-col-clicktype-xoffset-yoffset">DoClickCell(row, col, clickType, xOffset, yOffset)<a class="headerlink" href="#doclickcellrow-col-clicktype-xoffset-yoffset" title="Permanent link">&para;</a></h4>
+<h4 id="doclickcell">DoClickCell<a class="headerlink" href="#doclickcell" title="Permanent link">&para;</a></h4>
 <p>Clicks the specified cell.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
+</code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11017,7 +11043,7 @@
 <tr>
 <td>clickType</td>
 <td>string</td>
-<td>Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L.</td>
+<td>Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L".</td>
 </tr>
 <tr>
 <td>xOffset</td>
@@ -11035,14 +11061,18 @@
 <p>boolean: 'true' if successful, 'false' otherwise</p>
 <p><a name="see.also.domsaptable.doclickcell"></a></p>
 <p><a name="DoFullText"></a>    </p>
-<h4 id="dofulltext">DoFullText()<a class="headerlink" href="#dofulltext" title="Permanent link">&para;</a></h4>
+<h4 id="dofulltext">DoFullText<a class="headerlink" href="#dofulltext" title="Permanent link">&para;</a></h4>
 <p>Returns text representation of the table.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFullText</span><span class="p">()</span> 
+</code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>string | <br>boolean: Text representation of the grid, 'true' if the file was successfully written, 'false' otherwise.</p>
 <p><a name="see.also.domsaptable.dofulltext"></a></p>
 <p><a name="DoScrollTo"></a>    </p>
-<h4 id="doscrolltorow-col">DoScrollTo(row, col)<a class="headerlink" href="#doscrolltorow-col" title="Permanent link">&para;</a></h4>
+<h4 id="doscrollto">DoScrollTo<a class="headerlink" href="#doscrollto" title="Permanent link">&para;</a></h4>
 <p>Scrolls to the specified cell.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoScrollTo</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">)</span> 
+</code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

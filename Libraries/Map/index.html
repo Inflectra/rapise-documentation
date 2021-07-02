@@ -5464,6 +5464,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7406,6 +7418,18 @@
     <li class="md-nav__item">
       <a href="../ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -11147,7 +11171,7 @@
 <h2 id="cell">Cell<a class="headerlink" href="#cell" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCell</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">columnId</span><span class="p">,</span> <span class="cm">/**number*/</span> <span class="nx">rowId</span><span class="p">)</span>
 </code></pre></div>
-<p>Gets a cell value by its coordinates. It returns the current cell value after <code>DoSequental</code> or <code>DoRandom</code> if the parameters are not set.</p>
+<p>Gets a cell value by its coordinates. It returns the current cell value after <code>DoSequential</code> or <code>DoRandom</code> if the parameters are not set.</p>
 <ul>
 <li><code>[columnId]</code>: Column index or name. If not set ActiveColumn is used.</li>
 <li><code>[rowId]</code>: Row index. If not set ActiveRow is used.</li>
@@ -11155,7 +11179,7 @@
 <h2 id="columncell">ColumnCell<a class="headerlink" href="#columncell" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">GetColumnCell</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">rowId</span><span class="p">)</span>
 </code></pre></div>
-<p>Gets cell value by its coordinates. Returns current cell value after <code>DoSequental</code>. If not set <code>ActiveColumn</code> is used.</p>
+<p>Gets cell value by its coordinates. Returns current cell value after <code>DoSequential</code>. If not set <code>ActiveColumn</code> is used.</p>
 <ul>
 <li><code>[rowId]</code>: Row index. If not set <code>ActiveRow</code> is used.</li>
 </ul>
@@ -11202,7 +11226,7 @@
 <h2 id="rowcell">RowCell<a class="headerlink" href="#rowcell" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">GetRowCell</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">columnId</span><span class="p">)</span>
 </code></pre></div>
-<p>Gets cell value for current row. Returns current cell value after <code>DoSequental</code>. <code>ActiveRow</code> is used.</p>
+<p>Gets cell value for current row. Returns current cell value after <code>DoSequential</code>. <code>ActiveRow</code> is used.</p>
 <ul>
 <li><code>[columnId]</code>: Column index or name. If not set <code>ActiveColumn</code> is used.</li>
 </ul>
@@ -11217,7 +11241,7 @@
 <h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">GetValue</span><span class="p">(</span><span class="cm">/**number|string*/</span> <span class="nx">rowOrColumnNameOrId</span><span class="p">)</span>
 </code></pre></div>
-<p>Gets cell value by its name or id. Returns current cell value after <code>DoSequental</code>. If it is <code>Rows</code> or <code>Table</code> map then the parameter needs to be a column name or index, and <code>ActiveRow</code> is used. If it is <code>Columns</code> map then the parameter needs to be a row name or index, and <code>ActiveRow</code> is used.</p>
+<p>Gets cell value by its name or id. Returns current cell value after <code>DoSequential</code>. If it is <code>Rows</code> or <code>Table</code> map then the parameter needs to be a column name or index, and <code>ActiveRow</code> is used. If it is <code>Columns</code> map then the parameter needs to be a row name or index, and <code>ActiveRow</code> is used.</p>
 <ul>
 <li><code>[rowOrColumnNameOrId]</code>: Row or Column index or Name.</li>
 </ul>

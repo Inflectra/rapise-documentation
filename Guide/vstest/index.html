@@ -5319,6 +5319,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7261,6 +7273,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -11220,7 +11244,7 @@
 <h2 id="azure-devops">Azure DevOps<a class="headerlink" href="#azure-devops" title="Permanent link">&para;</a></h2>
 <p>We assume that Rapise tests are stored in a Git repository and Azure DevOps pipeline is connected to it. You may run Rapise tests both on <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">self-hosted Windows Agents</a> and <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&amp;tabs=yaml">Microsoft-hosted Windows Agents</a>.</p>
 <h3 id="rapise-test-adapter-task">Rapise Test Adapter Task<a class="headerlink" href="#rapise-test-adapter-task" title="Permanent link">&para;</a></h3>
-<p>To run Rapise tests with a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops">Visual Studio Test</a> task you need to install Rapise and Rapise Test Adapter for VSTest. The best way to do it is to use <a href="https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapisetestadapter-azure">Rapise Test Adapter Extension</a> from Azure Marketplace. After this extension is installed add the Rapise Test Adapter task yo your pipelline.</p>
+<p>To run Rapise tests with a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops">Visual Studio Test</a> task you need to install Rapise and Rapise Test Adapter for VSTest. The best way to do it is to use <a href="https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapisetestadapter-azure">Rapise Test Adapter Extension</a> from Azure Marketplace. After this extension is installed add the Rapise Test Adapter task yo your pipeline.</p>
 <p><img alt="Find Rapise Test Adapter Task" src="../img/rapise_test_adapter_task_search.png" /></p>
 <p>In the task settings you may choose what versions of Rapise and Rapise Test Adapter to install.</p>
 <p><img alt="Rapise Test Adapter Task Settings" src="../img/rapise_test_adapter_task.png" /></p>
@@ -11283,8 +11307,10 @@
 </code></pre></div>
 <h3 id="visual-studio-test-platform-installer-task">Visual Studio Test Platform Installer Task<a class="headerlink" href="#visual-studio-test-platform-installer-task" title="Permanent link">&para;</a></h3>
 <p>If you plan to run tests on a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> that does not have Visual Studio installed you need to add <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops">Visual Studio Test Platform Installer</a> task.</p>
+<!-- /* cSpell:disable */ -->
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/></p>
 </details>
+<!-- /* cSpell:enable */ -->
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VisualStudioTestPlatformInstaller@1</span>
 <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Visual</span><span class="nv"> </span><span class="s">Studio</span><span class="nv"> </span><span class="s">Test</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Installer&#39;</span>

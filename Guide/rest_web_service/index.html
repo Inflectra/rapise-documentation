@@ -5307,6 +5307,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7249,6 +7261,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -10967,8 +10991,12 @@
                 
                 <h1 id="testing-rest-web-services">Testing REST Web Services<a class="headerlink" href="#testing-rest-web-services" title="Permanent link">&para;</a></h1>
 <h2 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?<a class="headerlink" href="#what-is-rest-and-what-is-a-restful-web-service" title="Permanent link">&para;</a></h2>
+<!-- /* cSpell:disable */ -->
 <blockquote>
 <p><strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.</p>
+</blockquote>
+<!-- /* cSpell:enable */ -->
+<blockquote>
 <p>A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
 </blockquote>
 <h2 id="how-does-rapise-test-rest-web-services">How does Rapise test REST web services?<a class="headerlink" href="#how-does-rapise-test-rest-web-services" title="Permanent link">&para;</a></h2>
@@ -11067,7 +11095,7 @@
 <p><img alt="clip0158" src="../img/rest_web_service8.png" /></p>
 <p>Now we want to verify the name of the first book returned. To do that, expand the “0” index entry and then right-click on the “Name” property returned:</p>
 <p><img alt="clip0159" src="../img/rest_web_service9.png" /></p>
-<p>Choose the option to <strong>Verify Repsonse[0].Name = Hound of the Baskervilles</strong>. This will add a verification step for this specific property: </p>
+<p>Choose the option to <strong>Verify Response[0].Name = Hound of the Baskervilles</strong>. This will add a verification step for this specific property: </p>
 <p><img alt="Verify Name" src="../img/rest_web_service10.png" /></p>
 <p>Once you are ready, click the <code>Create Script</code> and the test script will be created for you:</p>
 <p><img alt="Created Script" src="../img/rest_web_service11.png" /></p>
@@ -11188,7 +11216,7 @@
 </code></pre></div>
 <p>It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing <code>Session</code> global object and <code>request</code> object passed as a parameter. Parameter type is <a href="../../Libraries/RESTRequest/">RESTRequest</a>.</p>
 <h4 id="afterresponse-rest-callback">AfterResponse REST Callback<a class="headerlink" href="#afterresponse-rest-callback" title="Permanent link">&para;</a></h4>
-<p><strong>AfterResponse</strong> calback has a signature:</p>
+<p><strong>AfterResponse</strong> callback has a signature:</p>
 <p><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">After_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
 </code></pre></div>
 i.e.
@@ -11200,8 +11228,8 @@ i.e.
 </code></pre></div></p>
 <p>It is executed right after the action.  It may access <code>response</code> object passed as a parameter. Parameter type is <a href="../../Libraries/RESTResponse/">RESTResponse</a>.</p>
 <h4 id="common-rest-callbacks">Common REST Callbacks<a class="headerlink" href="#common-rest-callbacks" title="Permanent link">&para;</a></h4>
-<p>Sometimes it is more convenient to define one common callback that will be executed for all requiest inside a given endpoint. </p>
-<p>Common callbacks are defined in the property window for the whole endpint.</p>
+<p>Sometimes it is more convenient to define one common callback that will be executed for all request inside a given endpoint. </p>
+<p>Common callbacks are defined in the property window for the whole endpoint.</p>
 <p><img alt="Common Callbacks" src="../img/rest_web_service_common_callbacks.png" /></p>
 <p>When both common callback and entry callback are defined, both are executed in the following order:</p>
 <ol>

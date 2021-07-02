@@ -5218,6 +5218,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7160,6 +7172,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_java/" class="md-nav__link">
         Java Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
       </a>
     </li>
   
@@ -10834,10 +10858,12 @@
 <p>Finally, the connection shows up in the list:</p>
 <p><img alt="vstest_rl_serviceconnections_ready.png" src="../img/vstest_rl_serviceconnections_ready.png" /></p>
 <h3 id="step-3-define-a-pipeline">Step 3: Define a Pipeline<a class="headerlink" href="#step-3-define-a-pipeline" title="Permanent link">&para;</a></h3>
-<p>Defining a pipieline means telling the DevOps where to store the pipeline definition, where get the tests, what VM to use for execution and what parameters to pass.</p>
+<p>Defining a pipeline means telling the DevOps where to store the pipeline definition, where get the tests, what VM to use for execution and what parameters to pass.</p>
 <h4 id="define-a-repository">Define a Repository<a class="headerlink" href="#define-a-repository" title="Permanent link">&para;</a></h4>
-<p>In the case that you don't have a repository, just define one for the given project:
-<img alt="vstest_rl_pipeline_create_0_preparerepo.png" src="../img/vstest_rl_pipeline_create_0_preparerepo.png" /></p>
+<p>In the case that you don't have a repository, just define one for the given project:</p>
+<!-- /* cSpell:disable */ -->
+<p><img alt="vstest_rl_pipeline_create_0_preparerepo.png" src="../img/vstest_rl_pipeline_create_0_preparerepo.png" /></p>
+<!-- /* cSpell:enable */ -->
 <p>If you have a repo, then you may skip this step and use your repository connection on the next step.</p>
 <h4 id="create-a-pipeline-definition">Create a Pipeline Definition<a class="headerlink" href="#create-a-pipeline-definition" title="Permanent link">&para;</a></h4>
 <p>Go to your project, expand <strong>Pipelines</strong> and choose <strong>Create Pipeline</strong>:</p>
@@ -10856,7 +10882,7 @@
 <p><img alt="vstest_rl_pipeline_create_6_showassistant.png" src="../img/vstest_rl_pipeline_create_6_showassistant.png" /></p>
 <p>And filter by word 'Rapise'. We need a task <strong>Run Rapise Test Set</strong>:</p>
 <p><img alt="vstest_rl_pipeline_create_7_showassistant_rapise.png" src="../img/vstest_rl_pipeline_create_7_showassistant_rapise.png" /></p>
-<p>Now we need to fill task execution paramaters as follows:</p>
+<p>Now we need to fill task execution parameters as follows:</p>
 <ul>
 <li><strong>SpiraTeam</strong> contains information for finding a test set</li>
 <li><strong>Spira service/server end point</strong> - choose spira connection defined earlier from the dropdown.

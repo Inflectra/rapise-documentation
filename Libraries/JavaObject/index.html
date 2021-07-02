@@ -5110,6 +5110,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../ManagedStatusBar/" class="md-nav__link">
+        ManagedStatusBar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ManagedTextBox/" class="md-nav__link">
         ManagedTextBox
       </a>
@@ -7064,6 +7076,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
+        GlassMouseGrabProvider$Proxy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../JavaButton/" class="md-nav__link">
         JavaButton
       </a>
@@ -7234,6 +7258,41 @@
           <li class="md-nav__item">
   <a href="#dodumpwidget" class="md-nav__link">
     DoDumpWidget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindbylabel" class="md-nav__link">
+    DoFindByLabel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindbyname" class="md-nav__link">
+    DoFindByName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindbytext" class="md-nav__link">
+    DoFindByText
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindelementbycondition" class="md-nav__link">
+    DoFindElementByCondition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindelementsbycondition" class="md-nav__link">
+    DoFindElementsByCondition
   </a>
   
 </li>
@@ -10805,6 +10864,41 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dofindbylabel" class="md-nav__link">
+    DoFindByLabel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindbyname" class="md-nav__link">
+    DoFindByName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindbytext" class="md-nav__link">
+    DoFindByText
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindelementbycondition" class="md-nav__link">
+    DoFindElementByCondition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dofindelementsbycondition" class="md-nav__link">
+    DoFindElementsByCondition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dogetwidgetproperty" class="md-nav__link">
     DoGetWidgetProperty
   </a>
@@ -10899,6 +10993,26 @@
 <td>Dumps Spy data for the object.</td>
 </tr>
 <tr>
+<td><a href="#dofindbylabel">DoFindByLabel</a></td>
+<td>Find nested element by its label (getLabel() property of each element is compared with specified text or regular expression).</td>
+</tr>
+<tr>
+<td><a href="#dofindbyname">DoFindByName</a></td>
+<td>Find nested element by its name (getName() property of each element is compared with specified text or regular expression).</td>
+</tr>
+<tr>
+<td><a href="#dofindbytext">DoFindByText</a></td>
+<td>Find nested element by its text (getText() property of each element is compared with specified text or regular expression).</td>
+</tr>
+<tr>
+<td><a href="#dofindelementbycondition">DoFindElementByCondition</a></td>
+<td>Finds first element matching the condition.</td>
+</tr>
+<tr>
+<td><a href="#dofindelementsbycondition">DoFindElementsByCondition</a></td>
+<td>Finds all elements matching the condition</td>
+</tr>
+<tr>
 <td><a href="#dogetwidgetproperty">DoGetWidgetProperty</a></td>
 <td>Returns the value of a property with a given name.</td>
 </tr>
@@ -10961,43 +11075,183 @@
 <tr>
 <td>dumpProperties</td>
 <td>boolean</td>
-<td>If 'true' then includes properties to the result.<br>Optional, Default: false.</td>
+<td>If 'true' then includes properties to the result.<br>Optional, Default: "false".</td>
 </tr>
 <tr>
 <td>maxDepth</td>
 <td>number</td>
-<td>Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: 0.</td>
+<td>Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0".</td>
 </tr>
 <tr>
 <td>trimValue</td>
 <td>number</td>
-<td>Determines maximum length of a proprty value. Excess characters are truncated.<br>Optional, Default: 256.</td>
+<td>Determines maximum length of a property value. Excess characters are truncated.<br>Optional, Default: "256".</td>
 </tr>
 <tr>
 <td>indent</td>
 <td>string</td>
-<td>Indentation string for child objects and properties.<br>Optional, Default: .</td>
+<td>Indentation string for child objects and properties.<br>Optional, Default: "\".</td>
 </tr>
 <tr>
 <td>filePath</td>
 <td>string</td>
-<td>If 'filePath' is set then outputs result to corresponding file.<br>Optional.</td>
+<td>If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "".</td>
 </tr>
 <tr>
 <td>append</td>
 <td>boolean</td>
-<td>If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: false.</td>
+<td>If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false".</td>
 </tr>
 <tr>
 <td>ignoreProps</td>
 <td>Array</td>
-<td>Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: undefined.</td>
+<td>Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: "undefined".</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
 <p>string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write succeeded, 'false' - otherwise.</p>
 <p><a name="see.also.javaobject.dodumpwidget"></a></p>
+<p><a name="DoFindByLabel"></a>    </p>
+<h4 id="dofindbylabel">DoFindByLabel<a class="headerlink" href="#dofindbylabel" title="Permanent link">&para;</a></h4>
+<p>Find nested element by its label (getLabel() property of each element is compared with specified text or regular expression).</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFindByLabel</span><span class="p">(</span><span class="nx">textOrRegexp</span><span class="p">,</span> <span class="nx">depth</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>textOrRegexp</td>
+<td>string</td>
+<td>plain string or regexp:... expression to match</td>
+</tr>
+<tr>
+<td>depth</td>
+<td>number</td>
+<td>depth level for search (default is 3)<br>Optional, Default: "3".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><a href="./">JavaObject</a>: JavaObject containing text if found, null otherwise</p>
+<p><a name="see.also.javaobject.dofindbylabel"></a></p>
+<p><a name="DoFindByName"></a>    </p>
+<h4 id="dofindbyname">DoFindByName<a class="headerlink" href="#dofindbyname" title="Permanent link">&para;</a></h4>
+<p>Find nested element by its name (getName() property of each element is compared with specified text or regular expression).</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFindByName</span><span class="p">(</span><span class="nx">textOrRegexp</span><span class="p">,</span> <span class="nx">depth</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>textOrRegexp</td>
+<td>string</td>
+<td>plain string or regexp:... expression to match</td>
+</tr>
+<tr>
+<td>depth</td>
+<td>number</td>
+<td>depth level for search (default is 3)<br>Optional, Default: "3".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><a href="./">JavaObject</a>: JavaObject containing text if found, null otherwise</p>
+<p><a name="see.also.javaobject.dofindbyname"></a></p>
+<p><a name="DoFindByText"></a>    </p>
+<h4 id="dofindbytext">DoFindByText<a class="headerlink" href="#dofindbytext" title="Permanent link">&para;</a></h4>
+<p>Find nested element by its text (getText() property of each element is compared with specified text or regular expression).</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFindByText</span><span class="p">(</span><span class="nx">textOrRegexp</span><span class="p">,</span> <span class="nx">depth</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>textOrRegexp</td>
+<td>string</td>
+<td>plain string or regexp:... expression to match</td>
+</tr>
+<tr>
+<td>depth</td>
+<td>number</td>
+<td>depth level for search (default is 3)<br>Optional, Default: "3".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><a href="./">JavaObject</a>: JavaObject containing text if found, null otherwise</p>
+<p><a name="see.also.javaobject.dofindbytext"></a></p>
+<p><a name="DoFindElementByCondition"></a>    </p>
+<h4 id="dofindelementbycondition">DoFindElementByCondition<a class="headerlink" href="#dofindelementbycondition" title="Permanent link">&para;</a></h4>
+<p>Finds first element matching the condition.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFindElementByCondition</span><span class="p">(</span><span class="nx">condition</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>condition</td>
+<td>expression</td>
+<td _text_:_regex:Enter="'text':'regex:Enter" class="*'">Object in a form {propname1:propvalue1, propname2:propregexp2,...}. I.e.:</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><a href="./">JavaObject</a>: JavaObject if the element is found, null otherwise</p>
+<p><a name="see.also.javaobject.dofindelementbycondition"></a></p>
+<p><a name="DoFindElementsByCondition"></a>    </p>
+<h4 id="dofindelementsbycondition">DoFindElementsByCondition<a class="headerlink" href="#dofindelementsbycondition" title="Permanent link">&para;</a></h4>
+<p>Finds all elements matching the condition</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFindElementsByCondition</span><span class="p">(</span><span class="nx">condition</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>condition</td>
+<td>expression</td>
+<td _text_:_regex:Enter="'text':'regex:Enter" class="*'">Object in a form {propname1:propvalue1, propname2:propregexp2,...}. I.e.:</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><a href="Array.md">Array</a>: Array of JavaObjects for the found elements, the array is empty if nothing is found.</p>
+<p><a name="see.also.javaobject.dofindelementsbycondition"></a></p>
 <p><a name="DoGetWidgetProperty"></a>    </p>
 <h4 id="dogetwidgetproperty">DoGetWidgetProperty<a class="headerlink" href="#dogetwidgetproperty" title="Permanent link">&para;</a></h4>
 <p>Returns the value of a property with a given name. Names of available properties can be seen in Spy.</p>
