@@ -93,8 +93,8 @@ Checked state of the selected node or a node specified by the input parameters.
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -117,8 +117,8 @@ Number of children of the selected node or a node specified by the input paramet
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -141,8 +141,8 @@ Expanded state of the selected node or a node specified by the input parameters.
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -165,8 +165,8 @@ Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -189,8 +189,8 @@ Text of the selected node or a node specified by the input parameters.
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -213,8 +213,8 @@ Selected state of the selected node or a node specified by the input parameters
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -262,7 +262,7 @@ DoClickCell(rowPath, col, clickType, xOffset, yOffset)
 | ---------- | -------- | --------------- |
 | rowPath | string \| number |	Path of the top level node to select. If integer number is passed then the top level node is searched by index. |
 | col | number \| string |	Column index or column name |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
+| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
 | xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
@@ -292,10 +292,10 @@ DoClickNode(path, separator, pathType, column, clickType, xOffset, yOffset)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 | column | number \| string |	Column index or column name. Default is 0<br>Optional. |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
+| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
 | xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 
@@ -325,8 +325,8 @@ DoCollapse(path, separator, pathType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -354,8 +354,8 @@ DoExpand(path, separator, pathType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -384,8 +384,8 @@ DoSetCheck(bcheck, path, separator, pathType)
 | ---------- | -------- | --------------- |
 | bcheck | boolean |	Check state to set |
 | path | string |	Path of the node |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 

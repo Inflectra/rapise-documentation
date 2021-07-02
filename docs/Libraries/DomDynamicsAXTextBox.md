@@ -72,8 +72,16 @@ Accessors: GetText, SetText
 Sets text value of this object.
 
 ```javascript
-DoSetText() 
+DoSetText(value, hitEnter) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| value | string |	Text value. |
+| hitEnter | boolean |	Pass 'true' to additionaly hit enter after entering the text.<br>Optional, Default: "false". |
 
 
 

@@ -1,6 +1,9 @@
 {
     "version": "0.1",
     "language": "en",
+	"ignorePaths": [
+		"docs/Libraries/MSComCtlToolbar.md"
+		],
     "words": [
         "activex",
         "appium",
@@ -1222,6 +1225,25 @@
 		"yuisliderh",
 		"yuisliderv",
 		"yuisplitbutton",
-		"yuitree"
+		"yuitree",
+		"Excelsheet",
+		"ANSICON",
+		"hssssl",
+		"RVLs",
+		"RVL's",
+		"gifffer",
+		"twips",
+		"dofindbylabel",
+		"dofindbylabel",
+		"propname",
+		"propvalue",
+		"propname",
+		"propregexp",
+		"propname",
+		"propvalue",
+		"propname",
+		"propregexp",
+		"domsapinput",
+		"ipconfig"
     ]
 }

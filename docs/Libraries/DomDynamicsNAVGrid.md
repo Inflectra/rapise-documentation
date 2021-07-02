@@ -196,7 +196,7 @@ Selected rows.
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | asArray | boolean | If set to true, function returns an array. |
-| separator | string | Separator character.<br>Optional, Default: ;. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 	
@@ -229,7 +229,7 @@ DoClickCell(row, col, clickType, xOffset, yOffset)
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
+| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
 | xOffset | number |	X offset to click within node. Default is a center.<br>Optional. |
 | yOffset | number |	Y offset to click within node. Default is a center.<br>Optional. |
 

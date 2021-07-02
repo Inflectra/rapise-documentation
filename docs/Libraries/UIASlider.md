@@ -117,7 +117,7 @@ DoSetValue(val)
 
 **Returns:**
 
-boolean: 'true' if successul, 'false' otherwise
+boolean: 'true' if successful, 'false' otherwise
 
 
 

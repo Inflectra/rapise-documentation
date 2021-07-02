@@ -4,7 +4,7 @@ Summary: Managed MenuPopupItem.
 
 Managed MenuPopupItem.
  
-UI element class: regex:System.Windows.Forms..*Strip.*
+UI element class: System.Windows.Forms.ToolStripDropDown
 
 Extends [ManagedObject](ManagedObject.md)
 
@@ -55,7 +55,7 @@ DoMenu(path, separator)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 

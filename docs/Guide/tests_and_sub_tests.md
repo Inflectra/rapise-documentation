@@ -42,7 +42,7 @@ function Test(params)
 {
    Login("invaliduser", "invvalidpassword");
 
-   // Now check that login is successfull
+   // Now check that login is successful
    Tester.Assert("Login leads to invalid user object: ", Global.DoWaitFor('Invalid_User'));
 }
 ```

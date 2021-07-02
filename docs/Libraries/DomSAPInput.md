@@ -23,12 +23,22 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
 	
 <!-- ============================== action summary ========================== -->
+
+
+
+### Action Summary
+
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|	[DoOpen](#doopen) | Clicks right-side icon of the input. |
+
+
 
 
 <!-- ============================== property detail ========================== -->
@@ -53,5 +63,28 @@ Accessors: GetText, SetText
 	
 	
 <!-- ============================== action detail ========================== -->
+	
+### Action Detail
 		
+<a name="DoOpen"></a>    
+#### DoOpen
+
+Clicks right-side icon of the input.
+
+```javascript
+DoOpen() 
+```
+
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise
+
+
+
+<a name="see.also.domsapinput.doopen"></a>
+
+	
 

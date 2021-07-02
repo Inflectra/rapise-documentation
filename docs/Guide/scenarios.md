@@ -7,7 +7,7 @@ Scenarios are a way to create reusable building blocks that can be incorporated 
 ## Creating Scenarios
 
 Let's say for example that you have the following Rapise test that was recorded from our sample library information web application:
-
+<!-- /* cSpell:disable */ -->
 ```javascript
 function Test()
 {
@@ -35,7 +35,7 @@ function Test()
     SeS('Log_Out').DoClick();
 }
 ```
-
+<!-- /* cSpell:enable */ -->
 If we want to break up this monolithic test into individual functions (called scenarios), simply highlight the test you want to extract (for example the Login steps):
 
 ![scenarios_1](./img/scenarios1.png)
@@ -76,7 +76,7 @@ function Test()
 ```
 
 In `User.js` we get
-
+<!-- /* cSpell:disable */ -->
 ```javascript
 /** @scenario Login */
 function Login()
@@ -91,7 +91,7 @@ function Login()
     SeS('ctl00$MainContent$LoginUser$Logi').DoClick();
 }
 ```
-
+<!-- /* cSpell:enable */ -->
 ## Usage in Automated Tests
 
 When you create a new test in Rapise it will contain a `Main.js` file that contains the main test code and a `User`.js file that contains any user-defined functions (called Scenarios). For example in the following test:
@@ -106,7 +106,7 @@ function Test()
 ```
 
 The test function calls three **scenarios** that comprise the main test. The scenarios themselves are JavaScript functions:
-
+<!-- /* cSpell:disable */ -->
 ```javascript
 /** @scenario Login */
 function Login()
@@ -151,7 +151,7 @@ function CreateBook(name, author, genre)
     Tester.Assert('Book was added successfully [TS:5]', tr.length != 0);
 }
 ```
-
+<!-- /* cSpell:enable */ -->
 If you go to the [Object Tree](object_tree.md) you will see these user functions/scenarios displayed:
 
 ![object\_tree\_user\_functions](./img/scenarios4.png)
@@ -161,7 +161,7 @@ You can then drag and drop those into the test script editor to include in the m
 ## Usage in Manual Tests
 
 When you create a new test in Rapise it will contain a `Main.js` file that contains the main test code and a `User.js` file that contains any user-defined functions (called Scenarios). For example you may have the following scenario defined in the `User.js` file:
-
+<!-- /* cSpell:disable */ -->
 ```javascript
 /** @scenario Login */
 function Login()
@@ -176,7 +176,7 @@ function Login()
     SeS('ctl00$MainContent$LoginUser$Logi').DoClick();
 }
 ```
-
+<!-- /* cSpell:enable */ -->
 You can now include that in a [manual test step](semi_manual_testing.md), by simply making the test step description start with an "@" symbol to denote that it is a scenario:
 
 ```javascript

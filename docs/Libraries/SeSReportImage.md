@@ -38,7 +38,7 @@ Used to show a bitmap picture in the report.
 Used to show a bitmap picture in the report.
 
 ```javascript
-SeSReportImage(imgWrapper, caption) 
+SeSReportImage(imgWrapperOrPath, caption) 
 ```
 
 
@@ -46,7 +46,7 @@ SeSReportImage(imgWrapper, caption)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| imgWrapper | ImageWrapper |	Instance of image wrapper with captured image. |
+| imgWrapperOrPath | ImageWrapper \| string |	Instance of image wrapper with captured image or path to the image. |
 | caption | string |	Image label.<br>Optional, Default: "Image". |
 
 

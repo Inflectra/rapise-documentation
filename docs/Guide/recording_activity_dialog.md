@@ -32,9 +32,9 @@ However if you need to do analog recording or you want more control over the typ
 Clicking on the Advanced link will switch it back to **Standard** mode.
 
 ## The Grid
-
+<!-- /* cSpell:disable */ -->
 As you interact with the AUT (**A**pplication **U**nder **T**est), your actions are recorded in the grid of the **Recording Activity dialog**.  The following screenshot shows the Recording Activity dialog after two interactions with [www.google.com](http://www.google.com): (1) first, **Inflectra** was entered into the query text box and (2) the **Google Search** button was then pressed.
-
+<!-- /* cSpell:enable */ -->
 ![recording activity dialog, grid](./img/recording_activity_dialog3.png)
 
 ## Context Menu

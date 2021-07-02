@@ -78,7 +78,7 @@ The Rapise extension installation procedure differs in the case of testing Chrom
 4. For the playback to execute correctly you need to set the following line in the beginning of your `User.js` file:
 
 ```javascript
-    g_browserExecutablePath='C:\\the\\path\\to\\chomium-based\\app.exe';
+    g_browserExecutablePath='C:\\the\\path\\to\\chromium-based\\app.exe';
 ```
 
 With that change in place, the recorded test should be able to play.

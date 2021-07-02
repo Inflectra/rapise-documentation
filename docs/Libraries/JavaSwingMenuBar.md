@@ -58,10 +58,10 @@ DoFullText(separator, filePath, append, includeSeparators)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | filePath | string |	Name of a file that should hold text representation of the menu. |
-| append | boolean |	If 'false' then file should be overwritten, if 'true' then data should be appended.<br>Optional, Default: false. |
-| includeSeparators | boolean |	If 'true' then menu separators are included to the result.<br>Optional, Default: false. |
+| append | boolean |	If 'false' then file should be overwritten, if 'true' then data should be appended.<br>Optional, Default: "false". |
+| includeSeparators | boolean |	If 'true' then menu separators are included to the result.<br>Optional, Default: "false". |
 
 
 
@@ -89,7 +89,7 @@ DoGetSubmenuCount(path, separator)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -119,7 +119,7 @@ DoGetSubmenuProperty(path, index, property, separator)
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | index | number |	Index of the submenu. |
 | property | string |	Name of a property. Available properties can be seen in Java Spy. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -148,7 +148,7 @@ DoGetSubmenuText(path, index, separator)
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
 | index | number |	Index of the submenu. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -176,7 +176,7 @@ DoMenu(path, separator)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 

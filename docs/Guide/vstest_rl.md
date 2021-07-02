@@ -82,12 +82,13 @@ Finally, the connection shows up in the list:
 
 ### Step 3: Define a Pipeline
 
-Defining a pipieline means telling the DevOps where to store the pipeline definition, where get the tests, what VM to use for execution and what parameters to pass.
+Defining a pipeline means telling the DevOps where to store the pipeline definition, where get the tests, what VM to use for execution and what parameters to pass.
 
 #### Define a Repository
 In the case that you don't have a repository, just define one for the given project:
+<!-- /* cSpell:disable */ -->
 ![vstest_rl_pipeline_create_0_preparerepo.png](./img/vstest_rl_pipeline_create_0_preparerepo.png)
-
+<!-- /* cSpell:enable */ -->
 If you have a repo, then you may skip this step and use your repository connection on the next step.
 
 #### Create a Pipeline Definition
@@ -125,7 +126,7 @@ And filter by word 'Rapise'. We need a task **Run Rapise Test Set**:
 
 ![vstest_rl_pipeline_create_7_showassistant_rapise.png](./img/vstest_rl_pipeline_create_7_showassistant_rapise.png)
 
-Now we need to fill task execution paramaters as follows:
+Now we need to fill task execution parameters as follows:
 
 * **SpiraTeam** contains information for finding a test set
   * **Spira service/server end point** - choose spira connection defined earlier from the dropdown.

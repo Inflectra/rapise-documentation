@@ -212,7 +212,7 @@ Table filter combo is recognized as a pair of objects: `Scope` and `DropDown`. T
 
 ![Table Filter](./img/dynamicsaxtablefilter.png)
 
-Rcorded steps look like:
+Recorded steps look like:
 
 **RVL**
 

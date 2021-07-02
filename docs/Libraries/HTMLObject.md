@@ -497,7 +497,7 @@ DoClick(x, y, forceEvent)
 | ---------- | -------- | --------------- |
 | x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: false. |
+| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -526,7 +526,7 @@ DoDblClick(x, y, forceEvent)
 | ---------- | -------- | --------------- |
 | x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: false. |
+| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -911,7 +911,7 @@ DoGetSelection(delim)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| delim | string |	Separator between options.<br>Optional, Default: ,. |
+| delim | string |	Separator between options.<br>Optional, Default: ",". |
 
 
 

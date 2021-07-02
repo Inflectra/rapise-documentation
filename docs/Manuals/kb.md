@@ -529,7 +529,7 @@ Sometimes you want to override certain Rapise settings (e.g. the Command Interva
 
 ### <a onclick="return RegisterKbClick('KB359', 'How to Install the Chrome and Firefox Extensions Offline')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB359.aspx">KB359</a> How to Install the Chrome and Firefox Extensions Offline
 
-By default,  when you want to use Rapise to record and playback web tests using either Chrome or Firerfox, you simply go to the appropriate web browser "store" and install the extension directly from the store. However sometimes you are testing web applications on a machine with no Internet Connectivity.
+By default,  when you want to use Rapise to record and playback web tests using either Chrome or Firefox, you simply go to the appropriate web browser "store" and install the extension directly from the store. However sometimes you are testing web applications on a machine with no Internet Connectivity.
 
 ### <a onclick="return RegisterKbClick('KB358', 'Hot to disable "Chrome is being controlled by automated test software" message')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB358.aspx">KB358</a> Hot to disable "Chrome is being controlled by automated test software" message
 
@@ -909,7 +909,7 @@ If you receive the following error message when performing Mobile device testing
 
 ### <a onclick="return RegisterKbClick('KB209', 'Testing Web Applications that use SVG')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB209.aspx">KB209</a> Testing Web Applications that use SVG
 
-One of the more challenging types of web application is that with uses embedded SVG (Scaleable Vector Graphics) in additional to HTML DOM elements. This article describes how to use Rapise to write automated testing scripts for such applications.
+One of the more challenging types of web application is that with uses embedded SVG (Scalable Vector Graphics) in additional to HTML DOM elements. This article describes how to use Rapise to write automated testing scripts for such applications.
 
 ### <a onclick="return RegisterKbClick('KB205', 'Rapise 3.x / 4.0 Does not Connect to Chrome x64 Bit')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB205.aspx">KB205</a> Rapise 3.x / 4.0 Does not Connect to Chrome x64 Bit
 
@@ -1291,7 +1291,7 @@ Sometimes you have the situation where you can record/play a Java application us
 
 Often you need to be able to check for the presence of an object and then depending on whether the object is visible perform one of two possible sets of operations. This article explains the recommended way of doing this in Rapise 1.5.
 
-### <a onclick="return RegisterKbClick('KB27', 'Using Rapise to extract test data from an Excelsheet')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB27.aspx">KB27</a> Using Rapise to extract test data from an Excelsheet
+### <a onclick="return RegisterKbClick('KB27', 'Using Rapise to extract test data from an Excel sheet')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB27.aspx">KB27</a> Using Rapise to extract test data from an Excel sheet
 
 Often you want to be able to parameterize your Rapise tests to have a common set of test functions that can use different combinations of test data. You can use a MS-Excel spreadsheet to store the test data and use Rapise to read out the matching values. This articles provides a sample for doing this.
 

@@ -88,8 +88,15 @@ DoOpen()
 Sets text into the edit field of a combo box.
 
 ```javascript
-DoSetText() 
+DoSetText(text) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| text | string |	Value to input. |
 
 
 

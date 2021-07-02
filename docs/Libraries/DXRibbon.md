@@ -86,10 +86,10 @@ DoClickGalleryItem(gallery, galleryItem, bNewValue, bUncheckOthers)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| gallery | string \| number |	Gellery control identifier in the Ribbon. |
+| gallery | string \| number |	Gallery control identifier in the Ribbon. |
 | galleryItem | string \| number |	Caption or index of item to click. |
-| bNewValue | boolean |	New checked value for an item<br>Optional, Default: true. |
-| bUncheckOthers | boolean |	set to 'false' if this click is a part of multi-selection<br>Optional, Default: true. |
+| bNewValue | boolean |	New checked value for an item<br>Optional, Default: "true". |
+| bUncheckOthers | boolean |	set to 'false' if this click is a part of multi-selection<br>Optional, Default: "true". |
 
 
 

@@ -10,7 +10,7 @@ We assume that Rapise tests are stored in a Git repository and Azure DevOps pipe
 
 ### Rapise Test Adapter Task
 
-To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task you need to install Rapise and Rapise Test Adapter for VSTest. The best way to do it is to use [Rapise Test Adapter Extension](https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapisetestadapter-azure) from Azure Marketplace. After this extension is installed add the Rapise Test Adapter task yo your pipelline.
+To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task you need to install Rapise and Rapise Test Adapter for VSTest. The best way to do it is to use [Rapise Test Adapter Extension](https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapisetestadapter-azure) from Azure Marketplace. After this extension is installed add the Rapise Test Adapter task yo your pipeline.
 
  ![Find Rapise Test Adapter Task](./img/rapise_test_adapter_task_search.png)
 
@@ -107,10 +107,10 @@ $(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib
 ### Visual Studio Test Platform Installer Task
 
 If you plan to run tests on a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) that does not have Visual Studio installed you need to add [Visual Studio Test Platform Installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops) task.
-
+<!-- /* cSpell:disable */ -->
 ??? example "Classic UI"
     <img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/>
-
+<!-- /* cSpell:enable */ -->
 ??? example "YAML"
 
     ```yaml

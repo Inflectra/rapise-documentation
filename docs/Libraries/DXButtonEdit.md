@@ -192,7 +192,7 @@ DoClickButton(index, isLeft)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | index | number |	index of button to select |
-| isLeft | boolean |	set to 'true' if buttons are at the left of the control<br>Optional, Default: false. |
+| isLeft | boolean |	set to 'true' if buttons are at the left of the control<br>Optional, Default: "false". |
 
 
 

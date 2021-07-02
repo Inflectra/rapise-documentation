@@ -75,7 +75,7 @@ Accessors: GetItem
 #### ItemCount
 
 
-Number of items in this navigation bar. All items may then be acccessed by SeS(<navbar>).GetItem(ind)
+Number of items in this navigation bar. All items may then be accessed by SeS(<navbar>).GetItem(ind)
 
 			
 	

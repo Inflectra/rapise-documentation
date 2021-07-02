@@ -43,7 +43,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#doclickcell) | Clicks the specified cell |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell. |
+|	[DoClickText](#doclicktext) | Clicks on a specific text inside the grid. |
 
 
 
@@ -166,19 +167,11 @@ Accessors: GetText
 <a name="DoClickCell"></a>    
 #### DoClickCell
 
-Clicks the specified cell
+Clicks the specified cell.
 
 ```javascript
-DoClickCell(row, col) 
+DoClickCell() 
 ```
-
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| row | number |	Zero-based index if the row. |
-| col | number |	Zero-based index of the column. |
 
 
 
@@ -190,6 +183,26 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 <a name="see.also.telerikradgridview.doclickcell"></a>
+
+<a name="DoClickText"></a>    
+#### DoClickText
+
+Clicks on a specific text inside the grid.
+
+```javascript
+DoClickText() 
+```
+
+
+
+
+**Returns:**
+
+'true' if successful, 'false' otherwise
+
+
+
+<a name="see.also.telerikradgridview.doclicktext"></a>
 
 	
 

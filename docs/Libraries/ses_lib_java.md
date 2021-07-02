@@ -3,6 +3,8 @@
 
 # Java
 
+- [GlassMouseGrabProvider$Proxy](GlassMouseGrabProvider$Proxy.md)
+
 - [JavaButton](JavaButton.md)
 
 - [JavaCheckBox](JavaCheckBox.md)

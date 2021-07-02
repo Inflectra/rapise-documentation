@@ -191,7 +191,7 @@ DoClick(textOrId, timeout)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | textOrId | string \| number |	caption or 'no' (1-based index) |
-| timeout | number |	number of milliseconds to wait for a button to appear<br>Optional, Default: 5000. |
+| timeout | number |	number of milliseconds to wait for a button to appear<br>Optional, Default: "5000". |
 
 
 

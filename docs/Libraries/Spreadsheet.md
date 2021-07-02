@@ -41,10 +41,10 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 |	[GetColumnName](#getcolumnname) | Gets column name. |
 |	[GetCurrentRowIndex](#getcurrentrowindex) | Gets zero-based active row index. |
 |	[GetEOF](#geteof) | Gets EOF state. |
-|	[GetRange](#getrange) | Cell range used in DoSequental and in DoRandom. |
+|	[GetRange](#getrange) | Cell range used in DoSequential and in DoRandom. |
 |	[GetRowCount](#getrowcount) | Gets row count. |
 |	[SetCell](#setcell) | Sets cell value by its coordinates. |
-|	[SetRange](#setrange) | Cell range used in DoSequental and in DoRandom. |
+|	[SetRange](#setrange) | Cell range used in DoSequential and in DoRandom. |
 
 
 
@@ -77,7 +77,7 @@ DoAddColumn(name)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -97,7 +97,7 @@ DoAddRow()
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -119,14 +119,14 @@ DoAttach(fileName, sheetName, separator)
 | ---------- | -------- | --------------- |
 | fileName | string |	Path to Excel or csv file. |
 | sheetName | string |	Sheet name to load. If not specified - load the first sheet.<br>Optional. |
-| separator | string |	Separator for values in csv file.<br>Optional, Default: ,. |
+| separator | string |	Separator for values in csv file.<br>Optional, Default: ",". |
 
 
 
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -149,7 +149,7 @@ DoCompare(spreadsheet1, spreadsheet2, strict, sheet1Name, sheet2Name)
 | ---------- | -------- | --------------- |
 | spreadsheet1 | string \| Spreadsheet |	Path to a spreadsheet file or Spreadsheet object loaded via DoAttach or DoCreate actions. |
 | spreadsheet2 | string \| Spreadsheet |	Path to a spreadsheet file or Spreadsheet object loaded via DoAttach or DoCreate actions. |
-| strict | boolean |	If 'true' then number of columns and rows in both spreadsheets must be exactly the same. If 'false' then check that spreadsheet1 is contained in spreadsheet2.<br>Optional, Default: false. |
+| strict | boolean |	If 'true' then number of columns and rows in both spreadsheets must be exactly the same. If 'false' then check that spreadsheet1 is contained in spreadsheet2.<br>Optional, Default: "false". |
 | sheet1Name | string |	Name of a sheet to compare. Specify this parameter when spreadsheet1 is a path to a file. By default first sheet is compared.<br>Optional. |
 | sheet2Name | string |	Name of a sheet to compare. Specify this parameter when spreadsheet2 is a path to a file. By default first sheet is compared.<br>Optional. |
 
@@ -179,17 +179,17 @@ DoCreate(fileName, sheetName, columnNames, rowCount, separator)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Path to a file. Extension defines file format. Supported extensions: .xls, .xlsx, *.csv, *.txt. |
-| sheetName | string |	Name of the first sheet.<br>Optional, Default: Sheet1. |
+| sheetName | string |	Name of the first sheet.<br>Optional, Default: "Sheet1". |
 | columnNames | array |	Array of column names.<br>Optional. |
-| rowCount | number |	Initial number of rows with values.<br>Optional, Default: 10. |
-| separator | string |	Separator for values in csv files.<br>Optional, Default: ,. |
+| rowCount | number |	Initial number of rows with values.<br>Optional, Default: "10". |
+| separator | string |	Separator for values in csv files.<br>Optional, Default: ",". |
 
 
 
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -217,7 +217,7 @@ DoInsertColumn(columnIndex, name)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -244,7 +244,7 @@ DoInsertRow(rowIndex)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -264,7 +264,7 @@ DoMoveToFirstRow()
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -284,7 +284,7 @@ DoMoveToLastRow()
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -311,7 +311,7 @@ DoMoveToRow(index)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -360,7 +360,7 @@ DoRemoveColumn(columnIndex)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -387,7 +387,7 @@ DoRemoveRow(rowIndex)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -414,7 +414,7 @@ DoSave(fileName)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -447,7 +447,7 @@ boolean: false if being called when active row is the last row or the spreadshee
 <a name="GetCell"></a>    
 #### GetCell
 
-Cell value by its coordinates. Refers to active cell value after DoSequental or DoRandom if params not set.
+Cell value by its coordinates. Refers to active cell value after DoSequential or DoRandom if params not set.
 
 ```javascript
 GetCell(columnId, rowId) 
@@ -458,15 +458,15 @@ GetCell(columnId, rowId)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| columnId | number \| string |	Column index or name. If not set active column is used.<br>Optional, Default: 0. |
-| rowId | number |	Row index. If not set ActiveRow is used.<br>Optional, Default: 0. |
+| columnId | number \| string |	Column index or name. If not set active column is used.<br>Optional, Default: "0". |
+| rowId | number |	Row index. If not set ActiveRow is used.<br>Optional, Default: "0". |
 
 
 
 
 **Returns:**
 
-string: Getter returns string with cell value and null in the case of error. Setter returns true if successfull, false otherwise.
+string: Getter returns string with cell value and null in the case of error. Setter returns true if successful, false otherwise.
 
 
 
@@ -589,7 +589,7 @@ boolean: false if spreadsheet is attached and active row and column point to exi
 <a name="GetRange"></a>    
 #### GetRange
 
-Cell range used in DoSequental and in DoRandom.
+Cell range used in DoSequential and in DoRandom.
 
 ```javascript
 GetRange() 
@@ -629,7 +629,7 @@ number: Number of rows in the spreadsheet including the row with column names. -
 <a name="SetCell"></a>    
 #### SetCell
 
-Sets cell value by its coordinates. Sets active cell value after DoSequental or DoRandom if params not set.
+Sets cell value by its coordinates. Sets active cell value after DoSequential or DoRandom if params not set.
 
 ```javascript
 SetCell(value, columnId, rowId) 
@@ -641,15 +641,15 @@ SetCell(value, columnId, rowId)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value | string |	Value to set. |
-| columnId | number \| string |	Column index or name. If not set active column is used.<br>Optional, Default: 0. |
-| rowId | number |	Row index. If not set active row is used.<br>Optional, Default: 0. |
+| columnId | number \| string |	Column index or name. If not set active column is used.<br>Optional, Default: "0". |
+| rowId | number |	Row index. If not set active row is used.<br>Optional, Default: "0". |
 
 
 
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 
@@ -658,7 +658,7 @@ boolean: true if successfull, false otherwise.
 <a name="SetRange"></a>    
 #### SetRange
 
-Cell range used in DoSequental and in DoRandom.
+Cell range used in DoSequential and in DoRandom.
 
 ```javascript
 SetRange(startRow, endRow, startCol, endCol) 
@@ -679,7 +679,7 @@ SetRange(startRow, endRow, startCol, endCol)
 
 **Returns:**
 
-boolean: true if successfull, false otherwise.
+boolean: true if successful, false otherwise.
 
 
 

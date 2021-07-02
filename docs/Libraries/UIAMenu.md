@@ -51,7 +51,7 @@ DoMenu(path, separator)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 

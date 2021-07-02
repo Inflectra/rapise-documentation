@@ -53,8 +53,8 @@ DoSelectTab(tabName, toggleAdditionalFields, additionalFieldsButtonName)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | tabName | string |	Tab name to select. |
-| toggleAdditionalFields | boolean |	Set to `true` to click on `Show more fields` button inside the tab. Supported in Rapise 6.4+.<br>Optional, Default: false. |
-| additionalFieldsButtonName | string |	If `Show more fields` button is named differently in your locale you need to specify it. Supported in Rapise 6.4+.<br>Optional, Default: Show more fields. |
+| toggleAdditionalFields | boolean |	Set to `true` to click on `Show more fields` button inside the tab. Supported in Rapise 6.4+.<br>Optional, Default: "false". |
+| additionalFieldsButtonName | string |	If `Show more fields` button is named differently in your locale you need to specify it. Supported in Rapise 6.4+.<br>Optional, Default: "Show more fields". |
 
 
 

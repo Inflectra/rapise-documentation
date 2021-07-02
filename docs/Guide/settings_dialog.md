@@ -71,9 +71,10 @@ There is a build-in set of test parameters for [cross-browser testing](cross_bro
 ## Settings
 
 ![settings dialog, settings](./img/settings_dialog7.png)
-
+<!-- /* cSpell:disable */ -->
 * **UserFunctionsPath**: Path (relative to the test directory) to the file with user-defined functions utilized in this test.  Normally this file has name in form `User.js`.
 * **ObjectsPath**: Path (relative to the test directory) to file containing object tree information. This file contains `saved_script_objects` structure with all object locators gathered during recording and learning. Normally this file has name in form `Objects.js`.
 * **ReportPath**: Path (relative to the test directory) to the test's report file. Normally this file has extension form `.trp` which stands for **T**est **R**eport.
 * **ScriptPath**: Path (relative to the test directory) to the test script.
 * **TestPath**: Path to the test definition file (`*.sstest`).
+<!-- /* cSpell:enable */ -->

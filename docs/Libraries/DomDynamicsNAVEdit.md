@@ -84,7 +84,7 @@ DoClick(x, y, forceEvent)
 | ---------- | -------- | --------------- |
 | x | number |	X coordinate to click.<br>Optional. |
 | y | number |	Y coordinate to click.<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: false. |
+| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -113,7 +113,7 @@ DoOpen(x, y, forceEvent)
 | ---------- | -------- | --------------- |
 | x | number |	X coordinate to click.<br>Optional. |
 | y | number |	Y coordinate to click.<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: false. |
+| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -132,8 +132,15 @@ boolean: 'true' if successful, 'false' otherwise
 Sets text value of this object.
 
 ```javascript
-DoSetText() 
+DoSetText(value) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| value | string |	Text value. |
 
 
 

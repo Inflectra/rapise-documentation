@@ -197,9 +197,9 @@ Select an item in **CustomControlApp** and advance its progress bar using right 
 ![customcontrolapp, accessible events filled](./img/tutorial_custom_library7.png)
 
 You can see that changing progress bar leads to generation of `OBJ_VALUECHANGE` events. To get event name to use with Rapise open [Event Constants](https://docs.microsoft.com/en-us/windows/desktop/winauto/event-constants) page and search for relevant value.
-
+<!-- /* cSpell:disable */ -->
 ![event constants](./img/tutorial_custom_library_event_sonstants.png)
-
+<!-- /* cSpell:enable */ -->
 Not all accessibility events are processed and propagated by Rapise engine. `EVENT_OBJECT_VALUECHANGE` is one of such events. To consume this event and make an appropriate call to `OnValueChange` of `Win32CustomListboxControl` you need to add and register **custom accessibility event handler**:
 
 ```javascript

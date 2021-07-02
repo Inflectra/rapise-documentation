@@ -23,7 +23,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Text](#Text) | Text of the object, 'false' if text can not be read. | GetText |  |
+| [Text](#text) | Text of the object, 'false' if text can not be read. | GetText |  |
 
 
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#DoSelectItem) | Selects an item of this object. |
+|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
@@ -67,9 +67,13 @@ Accessors: GetText
 ### Action Detail
 		
 <a name="DoSelectItem"></a>    
-#### DoSelectItem(item)
+#### DoSelectItem
 
 Selects an item of this object.
+
+```javascript
+DoSelectItem(item) 
+```
 
 
 **Parameters:**

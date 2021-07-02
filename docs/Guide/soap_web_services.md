@@ -1,8 +1,8 @@
 # Testing SOAP Web Services
-
+<!-- /* cSpell:disable */ -->
 ## What is SOAP and what is a SOAP web service?
 > SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web services make use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.
-
+<!-- /* cSpell:enable */ -->
 > SOAP web services are fully self-descriptive, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.
 
 ## How does Rapise test SOAP web services?

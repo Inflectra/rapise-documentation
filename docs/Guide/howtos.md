@@ -2,6 +2,7 @@
 
 This section focuses on specific tasks that a Rapise user might want to accomplish.
 
+<!-- /* cSpell:disable */ -->
 - [Accessing Files and I/O Functions](accessing_files_and_i_o_functi.md)
 - [Change Test Entry Point](change_test_entry_point.md)
 - [Change the libraries being used](change_the_libraries_being_use.md)
@@ -17,3 +18,4 @@ This section focuses on specific tasks that a Rapise user might want to accompli
 - [Open a Test](open_a_test.md)
 - [Restoring the Default Layout](restoring_the_default_layout.md)
 - [Sending Special Keys to the Current Application](sending_special_keys_to_the_c.md)
+<!-- /* cSpell:enable */ -->

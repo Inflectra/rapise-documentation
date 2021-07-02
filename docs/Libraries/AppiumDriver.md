@@ -20,6 +20,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
+|	[Actions](#actions) | Gets Actions object. |
 |	[ActivateIMEEngine](#activateimeengine) | Activate the given IME on the device. |
 |	[BackgroundApp](#backgroundapp) | Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated. |
 |	[ClearSessions](#clearsessions) | Deletes active sessions on Appium server. |
@@ -102,6 +103,21 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 	
 ### Action Detail
 		
+<a name="Actions"></a>    
+#### Actions
+
+Gets Actions object.
+
+```javascript
+Actions() 
+```
+
+
+
+
+
+<a name="see.also.appiumdriver.actions"></a>
+
 <a name="ActivateIMEEngine"></a>    
 #### ActivateIMEEngine
 
@@ -250,7 +266,7 @@ CreateDriverForSession(addressOfRemoteServer, sessionId, suppressErrors)
 | ---------- | -------- | --------------- |
 | addressOfRemoteServer | string |	Appium server URL. |
 | sessionId | string |	Id of the session to connect. |
-| suppressErrors | boolean |	'true' to suppress failures in the report, default 'false'.<br>Optional, Default: false. |
+| suppressErrors | boolean |	'true' to suppress failures in the report, default 'false'.<br>Optional, Default: "false". |
 
 
 
@@ -1290,7 +1306,7 @@ ReconnectSession(autoCreate)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| autoCreate | boolean |	'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: false. |
+| autoCreate | boolean |	'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: "false". |
 
 
 

@@ -147,7 +147,7 @@ Returns string of cell coordinates delimited by separators or an array of coordi
 | -------- | -------- | --------------- |	
 | asArray | boolean | If set to true, function returns an array. |
 | rowcolSep | string | row separator<br>Optional. |
-| cellSep | string | cell ceparator<br>Optional. |
+| cellSep | string | cell separator<br>Optional. |
 
 
 	
@@ -200,7 +200,7 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | asArray | boolean | If set to true, function returns an array. |
-| separator | string | Separator character.<br>Optional, Default: ;. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 	
@@ -253,7 +253,7 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | asArray | boolean | If set to true, function returns an array. |
-| separator | string | Separator character.<br>Optional, Default: ;. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 	
@@ -301,7 +301,7 @@ DoClickCell(row, col, clickType, xOffset, yOffset)
 | ---------- | -------- | --------------- |
 | row | number |	Zero-based index if the row. |
 | col | number |	Zero-based index of the column. |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
+| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
 | xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 

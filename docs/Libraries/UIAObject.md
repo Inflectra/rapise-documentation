@@ -337,7 +337,7 @@ DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, igno
 | ---------- | -------- | --------------- |
 | dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: "false". |
 | maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0". |
-| trimValue | number |	Determines maximum length of a proprty value. Excess characters are truncated.<br>Optional, Default: "256". |
+| trimValue | number |	Determines maximum length of a property value. Excess characters are truncated.<br>Optional, Default: "256". |
 | indent | string |	Indentation string for child objects and properties.<br>Optional, Default: "\". |
 | filePath | string |	If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "". |
 | append | boolean |	If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false". |

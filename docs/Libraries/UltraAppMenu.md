@@ -164,13 +164,13 @@ DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, igno
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: false. |
-| maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: 0. |
-| trimValue | number |	Determines maximum length of a proprty value. Excess characters are truncated.<br>Optional, Default: 256. |
-| indent | string |	Indentation string for child objects and properties.<br>Optional, Default: \. |
-| filePath | string |	If 'filePath' is set then outputs result to corresponding file.<br>Optional. |
-| append | boolean |	If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: false. |
-| ignoreProps | Array |	Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: undefined. |
+| dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: "false". |
+| maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0". |
+| trimValue | number |	Determines maximum length of a property value. Excess characters are truncated.<br>Optional, Default: "256". |
+| indent | string |	Indentation string for child objects and properties.<br>Optional, Default: "\". |
+| filePath | string |	If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "". |
+| append | boolean |	If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false". |
+| ignoreProps | Array |	Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: "undefined". |
 
 
 
@@ -198,7 +198,7 @@ DoFindByName(textOrRegexp, depth)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | textOrRegexp | string |	plain string or regexp:... expression to match |
-| depth | number |	depth level for search (default is 3)<br>Optional, Default: 3. |
+| depth | number |	depth level for search (default is 3)<br>Optional, Default: "3". |
 
 
 
@@ -226,7 +226,7 @@ DoFindByText(textOrRegexp, depth)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | textOrRegexp | string |	plain string or regexp:... expression to match |
-| depth | number |	depth level for search (default is 3)<br>Optional, Default: 3. |
+| depth | number |	depth level for search (default is 3)<br>Optional, Default: "3". |
 
 
 

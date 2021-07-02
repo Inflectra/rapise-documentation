@@ -6,7 +6,7 @@ This section contains a review of current approaches and concepts to highlight t
 
 ### Keyword Driven Testing
 
-[Keywoard Driven Testing](https://en.wikipedia.org/wiki/Keyword-driven_testing) separates the documentation of test cases -including the data to use- from the prescription of the way the test cases are executed. As a result it separates the test creation process into two distinct stages: a design and development stage, and an execution stage.
+[Keyword Driven Testing](https://en.wikipedia.org/wiki/Keyword-driven_testing) separates the documentation of test cases -including the data to use- from the prescription of the way the test cases are executed. As a result it separates the test creation process into two distinct stages: a design and development stage, and an execution stage.
 
 **A**         |    **B**       |      **C**        |     **D**
 --------------|----------------|-------------------|--------------

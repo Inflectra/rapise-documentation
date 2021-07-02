@@ -3,9 +3,9 @@
 ![toolbar-soap](./img/toolbar_soap1.png)
 
 ## Purpose
-
+<!-- /* cSpell:disable */ -->
 The **SOAP** tab is for use with editing [SOAP web service](soap_web_services.md) definition files (also known as **W**eb **S**ervice **D**efinition **L**anguage (WSDL) files).
-
+<!-- /* cSpell:enable */ -->
 ## How to Open
 
 The **SOAP** tab is available anytime you have a SOAP definition file (`.soap`) file visible in the [Content View](content_view.md).

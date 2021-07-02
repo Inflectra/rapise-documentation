@@ -54,7 +54,7 @@ DoFindChild(path, separator, pathType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string |	Path type. Can be one of 'name', 'index'. |
 
 
@@ -83,7 +83,7 @@ DoMenu(path, separator, pathType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string |	Path type. Can be one of 'name', 'index'. |
 
 

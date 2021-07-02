@@ -23,11 +23,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
-| [Cell](#Cell) | Text of the specified cell. | GetCell |  |
-| [ColumnCount](#ColumnCount) | Number of columns in the grid. | GetColumnCount |  |
-| [ColumnIndex](#ColumnIndex) | Index of a column with a given name. | GetColumnIndex |  |
-| [ColumnName](#ColumnName) | Caption of a column. | GetColumnName |  |
-| [RowCount](#RowCount) | Number of rows in the grid. | GetRowCount |  |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnIndex](#columnindex) | Index of a column with a given name. | GetColumnIndex |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount |  |
 
 
 
@@ -40,12 +40,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickCell](#DoClickCell) | Clicks the specified cell. |
-|	[DoScrollTo](#DoScrollTo) | Scrolls to the specified cell. |
-|	[DoSelect](#DoSelect) | Selects a dropdown item in the specified cell. |
-|	[DoSelectAll](#DoSelectAll) | Selects/deselects all rows based on check prameter value. |
-|	[DoSelectRow](#DoSelectRow) | Selects/deselects a given row based on check prameter value. |
-|	[DoSetText](#DoSetText) | Sets a text value into the specified cell. |
+|	[DoClickCell](#doclickcell) | Clicks the specified cell. |
+|	[DoScrollTo](#doscrollto) | Scrolls to the specified cell. |
+|	[DoSelect](#doselect) | Selects a dropdown item in the specified cell. |
+|	[DoSelectAll](#doselectall) | Selects/deselects all rows based on check parameter value. |
+|	[DoSelectRow](#doselectrow) | Selects/deselects a given row based on check parameter value. |
+|	[DoSetText](#dosettext) | Sets a text value into the specified cell. |
 
 
 
@@ -158,9 +158,13 @@ Accessors: GetRowCount
 ### Action Detail
 		
 <a name="DoClickCell"></a>    
-#### DoClickCell(row, col, clickType, xOffset, yOffset)
+#### DoClickCell
 
 Clicks the specified cell.
+
+```javascript
+DoClickCell(row, col, clickType, xOffset, yOffset) 
+```
 
 
 **Parameters:**
@@ -169,7 +173,7 @@ Clicks the specified cell.
 | ---------- | -------- | --------------- |
 | row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |	Zero-based index of the column or column name. |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click<br>Optional, Default: L. |
+| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
 | xOffset | number |	X offset to click within node. Default is a center.<br>Optional. |
 | yOffset | number |	Y offset to click within node. Default is a center.<br>Optional. |
 
@@ -185,9 +189,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domsapgrid.doclickcell"></a>
 
 <a name="DoScrollTo"></a>    
-#### DoScrollTo(row, col)
+#### DoScrollTo
 
 Scrolls to the specified cell.
+
+```javascript
+DoScrollTo(row, col) 
+```
 
 
 **Parameters:**
@@ -209,9 +217,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domsapgrid.doscrollto"></a>
 
 <a name="DoSelect"></a>    
-#### DoSelect(row, col, item)
+#### DoSelect
 
 Selects a dropdown item in the specified cell.
+
+```javascript
+DoSelect(row, col, item) 
+```
 
 
 **Parameters:**
@@ -234,9 +246,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domsapgrid.doselect"></a>
 
 <a name="DoSelectAll"></a>    
-#### DoSelectAll(check)
+#### DoSelectAll
 
-Selects/deselects all rows based on check prameter value.
+Selects/deselects all rows based on check parameter value.
+
+```javascript
+DoSelectAll(check) 
+```
 
 
 **Parameters:**
@@ -257,9 +273,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domsapgrid.doselectall"></a>
 
 <a name="DoSelectRow"></a>    
-#### DoSelectRow(row, check)
+#### DoSelectRow
 
-Selects/deselects a given row based on check prameter value.
+Selects/deselects a given row based on check parameter value.
+
+```javascript
+DoSelectRow(row, check) 
+```
 
 
 **Parameters:**
@@ -281,9 +301,13 @@ boolean: 'true' if successful, 'false' otherwise
 <a name="see.also.domsapgrid.doselectrow"></a>
 
 <a name="DoSetText"></a>    
-#### DoSetText(row, col, text)
+#### DoSetText
 
 Sets a text value into the specified cell.
+
+```javascript
+DoSetText(row, col, text) 
+```
 
 
 **Parameters:**

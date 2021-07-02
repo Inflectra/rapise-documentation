@@ -166,7 +166,7 @@ Assert(message, condition, data, tags)
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
 | condition | boolean |	If 'true' - assertion is considered passed. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -194,7 +194,7 @@ AssertEqual(message, obj1, obj2, data, tags)
 | message | string |	Message to put in the report. |
 | obj1 | object |	First object to compare. |
 | obj2 | object |	Second object to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -222,7 +222,7 @@ AssertImage(message, img1, path, data, tags)
 | message | string |	Message to put in the report. |
 | img1 | object |	ImageWrapper object (1st image to compare). |
 | path | string |	Path to the second image to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -519,7 +519,7 @@ Message(message, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
@@ -711,7 +711,7 @@ SoftAssert(message, condition, data, tags)
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
 | condition | boolean |	If 'true' - assertion is considered passed. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment atribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 

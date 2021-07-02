@@ -74,7 +74,7 @@ Moves to a last row in the map.
 GetCell(/**number|string*/ columnId, /**number*/ rowId)
 ```
 
-Gets a cell value by its coordinates. It returns the current cell value after `DoSequental` or `DoRandom` if the parameters are not set.
+Gets a cell value by its coordinates. It returns the current cell value after `DoSequential` or `DoRandom` if the parameters are not set.
 
 * `[columnId]`: Column index or name. If not set ActiveColumn is used.
 * `[rowId]`: Row index. If not set ActiveRow is used.
@@ -85,7 +85,7 @@ Gets a cell value by its coordinates. It returns the current cell value after `D
 GetColumnCell(/**number*/ rowId)
 ```
 
-Gets cell value by its coordinates. Returns current cell value after `DoSequental`. If not set `ActiveColumn` is used.
+Gets cell value by its coordinates. Returns current cell value after `DoSequential`. If not set `ActiveColumn` is used.
 
 * `[rowId]`: Row index. If not set `ActiveRow` is used.
 
@@ -163,7 +163,7 @@ Returns `true` if current position is beyond the map boundaries range.
 GetRowCell(/**number|string*/ columnId)
 ```
 
-Gets cell value for current row. Returns current cell value after `DoSequental`. `ActiveRow` is used.
+Gets cell value for current row. Returns current cell value after `DoSequential`. `ActiveRow` is used.
 
 * `[columnId]`: Column index or name. If not set `ActiveColumn` is used.
 
@@ -185,6 +185,6 @@ Returns name of row in the map.
 GetValue(/**number|string*/ rowOrColumnNameOrId)
 ```
 
-Gets cell value by its name or id. Returns current cell value after `DoSequental`. If it is `Rows` or `Table` map then the parameter needs to be a column name or index, and `ActiveRow` is used. If it is `Columns` map then the parameter needs to be a row name or index, and `ActiveRow` is used.
+Gets cell value by its name or id. Returns current cell value after `DoSequential`. If it is `Rows` or `Table` map then the parameter needs to be a column name or index, and `ActiveRow` is used. If it is `Columns` map then the parameter needs to be a row name or index, and `ActiveRow` is used.
 
 * `[rowOrColumnNameOrId]`: Row or Column index or Name.

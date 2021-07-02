@@ -63,7 +63,7 @@ DoAttach(connection_string, sql)
 
 **Returns:**
 
-true, if successfull
+true, if successful
 
 
 
@@ -236,7 +236,7 @@ Number of rows in the result set.
 <a name="GetValue"></a>    
 #### GetValue
 
-Gets value by column name, and, optionally, row number. Returns current cell value after DoSequental or DoRandom if params not set.
+Gets value by column name, and, optionally, row number. Returns current cell value after DoSequential or DoRandom if params not set.
 
 ```javascript
 GetValue(columnId, rowId) 

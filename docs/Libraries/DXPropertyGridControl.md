@@ -200,7 +200,7 @@ DoSetRowValue(rowIndex, value)
 
 **Returns:**
 
-boolean: 'true' if successfull
+boolean: 'true' if successful
 
 
 

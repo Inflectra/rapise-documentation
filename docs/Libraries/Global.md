@@ -1072,7 +1072,7 @@ GetProperty(name, defValue, configPath)
 
 **Returns:**
 
-string | <br>number | <br>boolean: Propery value. If a property does not exist then defValue is returned. If defValue is not set then null is returned.
+string | <br>number | <br>boolean: Property value. If a property does not exist then defValue is returned. If defValue is not set then null is returned.
 
 
 

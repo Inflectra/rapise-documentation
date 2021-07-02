@@ -1,7 +1,7 @@
 
 
 
-# Advanced Acessibility
+# Advanced Accessibility
 
 - [SimpleButton](SimpleButton.md)
 

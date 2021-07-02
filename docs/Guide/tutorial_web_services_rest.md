@@ -6,9 +6,9 @@ API can be found at:
 [www.libraryinformationsystem.org/Services/RestService.aspx](http://www.libraryinformationsystem.org/Services/RestService.aspx).
 
 ### What is REST and what is a RESTful web service?
-
+<!-- /* cSpell:disable */ -->
 **RE**presentational **S**tate **T**ransfer (**REST**) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.
-
+<!-- /* cSpell:enable */ -->
 A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.
 
 ## Overview
@@ -129,9 +129,9 @@ Now click the `Send` button and the request will get sent to the web service:
 The `Response Header` tab will display the headers coming back from the web service. The Status Code **200 OK** means that the request succeeded and that data was returned. If you click on the "**Response Body - XML**" tab, you will see the XML serialized data returned from the web service:
 
 ![tutorial_web_services_pic8](./img/tutorial_web_services_rest8.png)
-
+<!-- /* cSpell:disable */ -->
 Since Rapise uses JavaScript as its scripting language, it is usually easier to work with **JSON** (**J**ava**S**cript **O**bject **N**otation) serialized data rather than XML. In the case of the sample Library Information System web service, you can change the format that it accepts and retrieves by sending two special HTTP headers:
-
+<!-- /* cSpell:enable */ -->
 * **Content-Type**: `application/json`
 
 * **Accept**: `application/json`
@@ -277,7 +277,7 @@ Now we want to verify the name of the first book returned. To do that, expand th
 
 ![clip0119](./img/tutorial_web_services_rest30.png)
 
-Choose the option to **Verify Repsonse\[0\].Name = Hound of the Baskervilles**. This will add a verification step for this specific property:
+Choose the option to **Verify Response\[0\].Name = Hound of the Baskervilles**. This will add a verification step for this specific property:
 
 ![clip0120](./img/tutorial_web_services_rest31.png)
 

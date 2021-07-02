@@ -68,6 +68,7 @@ Here is a sample test that was recorded using Dynamics 365 for Finance and Opera
 
 **JavaScript**
 
+<!-- /* cSpell:disable */ -->
 ```javascript
 function Test(params)
 {
@@ -102,6 +103,7 @@ function Test(params)
 
 g_load_libraries=["%g_browserLibrary:Chrome HTML%", "DomDynamicsAX"];
 ```
+<!-- /* cSpell:enable */ -->
 
 ## See Also
 

@@ -78,8 +78,8 @@ Number of children of the selected node or a node specified by the input paramet
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -102,8 +102,8 @@ Expanded state of the selected node or a node specified by the input parameters.
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -141,8 +141,8 @@ Selected state of the selected node or a node specified by the input parameters
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | path | string | Path of the node |
-| separator | string | Separator character.<br>Optional, Default: ;. |
-| pathType | string | Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 	
@@ -174,8 +174,8 @@ DoCollapse(path, separator, pathType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path of the node |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'.<br>Optional, Default: name. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 

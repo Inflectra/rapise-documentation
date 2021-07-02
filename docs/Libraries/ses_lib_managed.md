@@ -33,6 +33,8 @@
 
 - [ManagedRadioButton](ManagedRadioButton.md)
 
+- [ManagedStatusBar](ManagedStatusBar.md)
+
 - [ManagedTextBox](ManagedTextBox.md)
 
 - [ManagedTreeView](ManagedTreeView.md)

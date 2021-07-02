@@ -284,7 +284,7 @@ The language reference covers EcmaScript v2 supported by default JScript Engine.
   </ul>
   
 ### [Properties](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jspro0n.htm)
-
+<!-- /* cSpell:disable */ -->
   <ul>
      <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jspro0n.htm" title="0...n Properties">0...n Properties</a></li>
      <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jspromatches.htm" title="$1...$9 Properties">$1...$9 Properties</a></li>
@@ -332,7 +332,7 @@ The language reference covers EcmaScript v2 supported by default JScript Engine.
      <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsprosqrt2.htm" title="SQRT2 Property">SQRT2 Property</a></li>
      <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsproundefined.htm" title="undefined Property">undefined Property</a></li>
   </ul>
-
+<!-- /* cSpell:enable */ -->
 ### [Statements](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptStatementsTOC.htm)
   <ul>
      <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsstmccon.htm" title="@cc_on Statement">@cc_on Statement</a></li>

@@ -122,7 +122,7 @@ DoSelectColor(val)
 
 **Returns:**
 
-boolean: 'true' if successfule, 'false' otherwise
+boolean: 'true' if successful, 'false' otherwise
 
 
 

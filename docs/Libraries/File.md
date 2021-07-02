@@ -178,7 +178,7 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 </pre>
 
 ```javascript
-Find(path, searchPattern=*, recursive, firstOnly, files, folders) 
+Find(path, searchPattern, recursive, firstOnly, files, folders) 
 ```
 
 
@@ -187,11 +187,11 @@ Find(path, searchPattern=*, recursive, firstOnly, files, folders)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path to a folder to search in. |
-| searchPattern=* | string |	Search pattern (may include * and ? wildcards, but no regexp). |
-| recursive | boolean |	'true' for folder and subfolders.<br>Optional, Default: false. |
-| firstOnly | boolean |	Return only first matching item (if any).<br>Optional, Default: false. |
-| files | boolean |	Return matching files.<br>Optional, Default: true. |
-| folders | boolean |	Return matching folders.<br>Optional, Default: false. |
+| searchPattern | string |	Search pattern (may include * and ? wildcards, but no regexp). |
+| recursive | boolean |	'true' for folder and subfolders.<br>Optional, Default: "false". |
+| firstOnly | boolean |	Return only first matching item (if any).<br>Optional, Default: "false". |
+| files | boolean |	Return matching files.<br>Optional, Default: "true". |
+| folders | boolean |	Return matching folders.<br>Optional, Default: "false". |
 
 
 

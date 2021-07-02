@@ -26,7 +26,9 @@ If you don't see **all three of these files** then it means the bridge was not i
 
 ## Troubleshooting the Configuration
 
+<!-- /* cSpell:disable */ -->
 To help you make sure that your environment is correctly setup and also to help you try out Rapise, we have a sample application called AUTJava (AUT = <b>A</b>pplication <b>U</b>nder <b>T</b>est) that can be found in the folder:
+<!-- /* cSpell:enable */ -->
 
 `C:\Users\Public\Documents\Rapise\Samples\Java\AUTJAVA`
 

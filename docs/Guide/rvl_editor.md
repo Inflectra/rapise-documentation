@@ -210,7 +210,7 @@ Since Rapise 6.7 you may use RVL Toolbox to quickly find RVL snippets, KB articl
 
 ![RVL Toolbox](./img/rvl_toolbox.png)
 
-The tollbox consists of three parts.
+The toolbox consists of three parts.
 
 1. Search field. Enter text here to filter the list of items.
 2. List of items. Select an item to preview. Some of the items can be dragged right into RVL area.
@@ -234,7 +234,7 @@ If you want to keep the toolbox hidden then unpin it.
 
 ![Unpin RVL Toolbox](./img/rvl_toolbox_auto_hide.png)
 
-Move mouse over the Toolbox lebel to reveal the list of items.
+Move mouse over the Toolbox label to reveal the list of items.
 
 ![Reveal RVL Toolbox](./img/rvl_toolbox_reveal.png)
 

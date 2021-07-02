@@ -1,9 +1,9 @@
 # Testing REST Web Services
 
 ## What is REST and what is a RESTful web service?
-
+<!-- /* cSpell:disable */ -->
 > **RE**presentational **S**tate **T**ransfer (**REST**) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.
-
+<!-- /* cSpell:enable */ -->
 > A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.
 
 ## How does Rapise test REST web services?
@@ -97,7 +97,7 @@ Now we want to verify the name of the first book returned. To do that, expand th
 
 ![clip0159](./img/rest_web_service9.png)
 
-Choose the option to **Verify Repsonse\[0\].Name = Hound of the Baskervilles**. This will add a verification step for this specific property: 
+Choose the option to **Verify Response\[0\].Name = Hound of the Baskervilles**. This will add a verification step for this specific property: 
 
 ![Verify Name](./img/rest_web_service10.png)
 
@@ -278,7 +278,7 @@ It is executed right before the action. It may access pre-defined Headers, Prope
 
 #### AfterResponse REST Callback
 
-**AfterResponse** calback has a signature:
+**AfterResponse** callback has a signature:
 
 ```javascript
 function After_<Rest_FileName>_<Entry_Name>(/**RESTResponse*/response)
@@ -297,9 +297,9 @@ It is executed right after the action.  It may access `response` object passed a
 
 #### Common REST Callbacks
 
-Sometimes it is more convenient to define one common callback that will be executed for all requiest inside a given endpoint. 
+Sometimes it is more convenient to define one common callback that will be executed for all request inside a given endpoint. 
 
-Common callbacks are defined in the property window for the whole endpint.
+Common callbacks are defined in the property window for the whole endpoint.
 
 ![Common Callbacks](img/rest_web_service_common_callbacks.png)
 

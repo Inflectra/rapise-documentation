@@ -141,7 +141,7 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | **Name** | **Type** | **Description** |
 | -------- | -------- | --------------- |	
 | asArray | boolean | If set to true, function returns an array. |
-| separator | string | Separator character.<br>Optional, Default: ;. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 	
@@ -218,7 +218,7 @@ DoAddSelection(items, separator, itemsType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
 
@@ -267,7 +267,7 @@ DoRemoveSelection(items, separator, itemsType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
 
@@ -296,7 +296,7 @@ DoSelectItem(items, separator, itemsType)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | items | number \| string \| array |	Can be one of the following:<br>1. Number, index of an item.<br>2. String, item names delimited with separator.<br>3. String, item indexes delimited with separator.<br>4. Array of item names.<br>5. Array of item indexes. |
-| separator | string |	Separator character.<br>Optional, Default: ;. |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | itemsType | string |	If it is 'name' and 'items' parameter is of Stringtype then 'items' parameter is treated as separated item names. If it is'index' and 'items' parameter is of String type then'items' parameter istreated as separated item indexes. If any other value is passed as 'itemsType'the behavior is undefined.<br>Optional. |
 
 
