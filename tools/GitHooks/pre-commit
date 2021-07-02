@@ -13,8 +13,11 @@ for FILE in `git diff --cached --name-only` ; do
 	fi
 done
 
-if [[ $has_errors==1 ]]
+echo $has_errors
+
+if [[ $has_errors == 1 ]];
 then
 	exit 1
 fi
 
+exit 0
