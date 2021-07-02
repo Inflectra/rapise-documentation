@@ -1,0 +1,20 @@
+#!/bin/sh
+# To enable this hook, rename this file to "pre-commit".
+
+has_errors=0
+for FILE in `git diff --cached --name-only` ; do
+	if echo $FILE | grep -q -E .md;
+    then
+		cspell lint $FILE;
+		if [[ $? == 1 ]];
+		then
+			has_errors=1
+		fi
+	fi
+done
+
+if [[ $has_errors==1 ]]
+then
+	exit 1
+fi
+
