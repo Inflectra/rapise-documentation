@@ -27,7 +27,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[CreateDriver](#createdriver) | This will create a WebDriver for currently selected Browser profile. |
 |	[CreateDriverForSession](#createdriverforsession) | Connects to active Selenium session with given URL and Id. |
 |	[Dispose](#dispose) | Dispose of WebDriver. |
-|	[DumpSessions](#dumpsessions) | Prints information about active Appium sessions to output. |
+|	[DumpSessions](#dumpsessions) | Prints information about active Selenium sessions to output. |
 |	[ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
 |	[FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
 |	[FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
@@ -211,7 +211,7 @@ Dispose()
 <a name="DumpSessions"></a>    
 #### DumpSessions
 
-Prints information about active Appium sessions to output.
+Prints information about active Selenium sessions to output.
 
 ```javascript
 DumpSessions() 
@@ -879,7 +879,7 @@ ReconnectSession(autoCreate)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| autoCreate | boolean |	'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: false. |
+| autoCreate | boolean |	'true' to automatically create a new session if there is no saved session or saved session is not available anymore.<br>Optional, Default: "false". |
 
 
 

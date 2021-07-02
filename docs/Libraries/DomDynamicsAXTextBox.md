@@ -81,7 +81,7 @@ DoSetText(value, hitEnter)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | value | string |	Text value. |
-| hitEnter | boolean |	Pass 'true' to additionaly hit enter after entering the text.<br>Optional, Default: "false". |
+| hitEnter | boolean |	Pass 'true' to additionally hit enter after entering the text.<br>Optional, Default: "false". |
 
 
 
