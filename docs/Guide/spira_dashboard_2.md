@@ -77,6 +77,8 @@ If you did not connect Rapise to Spira yet, you will be prompted to enter the co
 
 <img alt="No Connection" src="/Guide/img/spira_dashboard_connection.png" width="450"/>
 
+To get your API Key follow [these steps](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key).
+
 ### Assign Automation Host Token
 
 If you did not assign an automation host token to the machine where Rapise is running you may do it in Automation Hosts view. You may even create a new host there.

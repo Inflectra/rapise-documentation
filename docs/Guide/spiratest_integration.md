@@ -45,9 +45,12 @@ The first thing you need to do is to configure the connection to SpiraTest. Clic
 
 This brings up the dialog box that lets you configure the connection to SpiraTest:
 
-![spira_connection_settings](./img/spiratest_integration3.png)
+<img src="/Guide/img/spiratest_integration3.png" width="508"/>
 
 Enter the URL, login and password that you use to connect to SpiraTest and then click the `Test` button to verify that the connection information is correct.
+
+!!! important
+    Since Rapise 7.0 you need to use Spira API Key instead of the password. Here is how to [get the API Key](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key).
 
 * The "**Default Repository Path**" is a folder that used to store local copies of the non-absolute repositories.
 
