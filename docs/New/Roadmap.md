@@ -12,7 +12,7 @@
 - **Spira Dashboard 2.0**: Further development of the dashboard: 
     - CRUD operations for test case/test set parameters.
     - `Rerun test set if failed` option.
-    - **Parallel run**: Parallel execution by RapiseLauncher. Should work with API tests and Web tests executed via WebDriver.
+    - **Parallel run**: Parallel execution by RapiseLauncher. Should work with API tests, Web tests executed via WebDriver and Mobile tests.
 - **Floating License Support**: Spira based license manager for Rapise to enable floating licenses.
 
 ## Backlog
