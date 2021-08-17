@@ -4,6 +4,8 @@
 - 'DomDynamicsCrm':
     - 'DomDynamicsCrm Objects': 'Libraries/ses_lib_dynamicscrm.md'
 
+    - 'DomDynamicsCrmAgGrid': 'Libraries/DomDynamicsCrmAgGrid.md'
+
     - 'DomDynamicsCrmGrid': 'Libraries/DomDynamicsCrmGrid.md'
 
     - 'DomDynamicsCrmUnifiedInterfaceGrid': 'Libraries/DomDynamicsCrmUnifiedInterfaceGrid.md'
