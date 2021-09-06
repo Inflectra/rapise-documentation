@@ -88,7 +88,7 @@ Using WebSpy build and test XPATH expressions for specific elements on a given W
 
 Save a test to SpiraTest and execute it via RapiseLauncher with passing configuration parameters from SpiraTest.
 
-### Session 5: Frameworks
+### Session 6: Frameworks
 
 !!! info "Topics"
 
