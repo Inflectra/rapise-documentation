@@ -2152,6 +2152,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parallel-execution" class="md-nav__link">
+    Parallel Execution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-data-table" class="md-nav__link">
+    Input Data Table
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2356,6 +2370,13 @@
           <li class="md-nav__item">
   <a href="#reorder-test-cases" class="md-nav__link">
     Reorder Test Cases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-case-actions" class="md-nav__link">
+    Test Case Actions
   </a>
   
 </li>
@@ -10629,6 +10650,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parallel-execution" class="md-nav__link">
+    Parallel Execution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-data-table" class="md-nav__link">
+    Input Data Table
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10833,6 +10868,13 @@
           <li class="md-nav__item">
   <a href="#reorder-test-cases" class="md-nav__link">
     Reorder Test Cases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-case-actions" class="md-nav__link">
+    Test Case Actions
   </a>
   
 </li>
@@ -11293,6 +11335,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parallel-execution" class="md-nav__link">
+    Parallel Execution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-data-table" class="md-nav__link">
+    Input Data Table
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11501,6 +11557,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#test-case-actions" class="md-nav__link">
+    Test Case Actions
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11596,6 +11659,32 @@
 <p><img alt="Rerun Settings" src="/Guide/img/spira_dashboard_rerun_test_set.png" width="400"/></p>
 <p>Test runs that correspond to reruns are decorated with icons. Number in a circle designates rerun attempt. </p>
 <p><img alt="Reruns" src="/Guide/img/spira_dashboard_rerun_test_runs.png" width="350"/></p>
+<h3 id="parallel-execution">Parallel Execution<a class="headerlink" href="#parallel-execution" title="Permanent link">&para;</a></h3>
+<p>Since Rapise 7.1 - RapiseLauncher is able to perform parallel run for these types of tests:</p>
+<ol>
+<li>Web tests configured to run with Selenium WebDriver,</li>
+<li>Mobile tests,</li>
+<li>REST/SOAP API tests.</li>
+</ol>
+<p>In order to mark a test case ready for parallel run set the custom property <code>Ready for parallel run</code> in test case details.</p>
+<p><img alt="Test Case Properties" src="/Guide/img/test-case-custom-properties.png" width="360"/></p>
+<p>If all test cases included into a test set have this property, the test set is configured for parallel run - RapiseLauncher will execute the test cases in parallel.</p>
+<p>To configure the test set use the custom properties <code>Run tests in parallel</code> and <code>Max parallel tests</code> (0 - no limit).</p>
+<h3 id="input-data-table">Input Data Table<a class="headerlink" href="#input-data-table" title="Permanent link">&para;</a></h3>
+<p>Since Rapise 7.1 you may define a table with parameter values to automatically run same test set with different input data. It is an alternative to <a href="https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx">test configurations</a>.</p>
+<ol>
+<li>
+<p>Create a CSV or TXT file with parameter names and values. You may do it right from the dashboard (navigate to test set details and use Create New popup menu in the Attachments section). Example of the data file:</p>
+<div class="highlight"><pre><span></span><code>UserName,Password
+librarian,librarian
+borrower,borrower
+</code></pre></div>
+</li>
+<li>
+<p>Choose this attachment in the <code>Input data</code> custom property.</p>
+</li>
+</ol>
+<p>RapiseLauncher will run the test set same number of times as data rows in the input file. Every column name will become a global parameter passed to a test case.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
 <p>To open the dashboard use <a href="/Guide/menu_and_toolbars/#view">main menu</a> View &gt; Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the <a href="/Guide/options_dialog/#settings">Rapise Settings</a> dialog and set <code>ShowDashboardOnStartup</code> flag to <code>true</code>.</p>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
@@ -11635,19 +11724,25 @@
 <ul>
 <li>Test Cases<ul>
 <li>Flaky (boolean, default is false)</li>
+<li>Ready for parallel run (boolean, default is false, requires Rapise 7.1+)</li>
 </ul>
 </li>
 <li>Test Runs<ul>
 <li>Flaky (boolean, default is false)</li>
 <li>Run attempt (integer, default is 1)</li>
+<li>Tag (string, empty by default, requires Rapise 7.1+)</li>
 </ul>
 </li>
 <li>Test Sets<ul>
 <li>Max rerun attempts (integer, default is 0)</li>
 <li>Do not rerun if N tests failed (integer, default is 0)</li>
+<li>Rerun test set if failed (boolean, default is false, requires Rapise 7.1+)</li>
+<li>Run tests in parallel (boolean, default is false, requires Rapise 7.1+)</li>
+<li>Max parallel tests (integer, default is 0 (no limit), requires Rapise 7.1+)</li>
+<li>Input data (string, empty by default, requires Rapise 7.1+)</li>
 <li>Record videos (boolean, default is false)</li>
 <li>Verbose level (integer, default is 1)</li>
-<li><a href="/Guide/git_integration/#using-spira-custom-properties">GitUrl, GitUser, GitPassword</a> (string, empty by default)</li>
+<li><a href="/Guide/git_integration/#using-spira-custom-properties">GitUrl, GitUser, GitPassword, GitBranch, GitRoot</a> (string, empty by default)</li>
 </ul>
 </li>
 </ul>
@@ -11657,6 +11752,7 @@
 <ol>
 <li>Open the test in Rapise</li>
 <li>Link the test to a test case in Spira</li>
+<li>Execute the test (if linked to a test case) via RapiseLauncher on the local machine or a selected automation host. Requires Rapise 7.1+.</li>
 </ol>
 <h3 id="pending-test-runs-view">Pending Test Runs View<a class="headerlink" href="#pending-test-runs-view" title="Permanent link">&para;</a></h3>
 <p>This view displays scheduled test runs that must be executed within next 24 hours.</p>
@@ -11664,7 +11760,7 @@
 <h4 id="browse-test-cases">Browse Test Cases<a class="headerlink" href="#browse-test-cases" title="Permanent link">&para;</a></h4>
 <p>In the test cases view one may see the tree of test cases for a project, discover when a test case was last executed and status of execution.</p>
 <h4 id="view-test-case-details">View Test Case Details<a class="headerlink" href="#view-test-case-details" title="Permanent link">&para;</a></h4>
-<p>Expanding a test case reveals last 10 runs of it. The details pane also shows test case parameters and custom properties (editable).</p>
+<p>Expanding a test case reveals last 10 runs of it. The details pane also shows test case parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
 <h4 id="perform-test-case-actions">Perform Test Case Actions<a class="headerlink" href="#perform-test-case-actions" title="Permanent link">&para;</a></h4>
 <p>Action menu for a test case allows to</p>
 <ol>
@@ -11676,6 +11772,7 @@
 <li>g_enableVideoRecording = false</li>
 </ul>
 </li>
+<li><code>Open This Test</code> in Rapise. It is a shortcut for <a href="/Guide/spiratest_integration/#opening-a-test-from-spiratest">Open a test from SpiraTest</a>.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -11687,11 +11784,17 @@
 <h4 id="browse-test-sets">Browse Test Sets<a class="headerlink" href="#browse-test-sets" title="Permanent link">&para;</a></h4>
 <p>In the test sets view one may see the tree of test sets for a project, discover when a test set was last executed and status of execution.</p>
 <h4 id="view-test-set-details">View Test Set Details<a class="headerlink" href="#view-test-set-details" title="Permanent link">&para;</a></h4>
-<p>Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters and custom properties (editable).</p>
+<p>Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
 <h5 id="add-test-cases">Add Test Cases<a class="headerlink" href="#add-test-cases" title="Permanent link">&para;</a></h5>
 <p>Press <code>Add Test Cases</code> to open the test cases tree, select test cases and append them to the test set.</p>
 <h5 id="reorder-test-cases">Reorder Test Cases<a class="headerlink" href="#reorder-test-cases" title="Permanent link">&para;</a></h5>
 <p>Using hamburger icon next to a test case ID one may reorder test cases in a test set.</p>
+<h5 id="test-case-actions">Test Case Actions<a class="headerlink" href="#test-case-actions" title="Permanent link">&para;</a></h5>
+<p>Use Action menu to </p>
+<ol>
+<li>Remove a test case from the test</li>
+<li>Open a dialog to edit <code>Test Set Test Case</code> parameters (requires Rapise 7.1+)</li>
+</ol>
 <h4 id="perform-test-set-actions">Perform Test Set Actions<a class="headerlink" href="#perform-test-set-actions" title="Permanent link">&para;</a></h4>
 <p>Action menu for a test set allows to</p>
 <ol>
@@ -11708,6 +11811,7 @@
 <h3 id="test-runs-view">Test Runs View<a class="headerlink" href="#test-runs-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-test-runs">Browse Test Runs<a class="headerlink" href="#browse-test-runs" title="Permanent link">&para;</a></h4>
 <p>This view shows most recent test run reports. One may see test run status and execution time and duration. If a test run is failed - Details column displays the first error message.</p>
+<p>Since Rapise 7.1 to view just test runs of a specific test set run use <code>Tag</code> column popup menu <code>Filter by Tag</code>. If you run the test set with different configurations then configuration number is reflected in the tag name, e.g. QZH_<code>Config3</code>. If a test run corresponds to automatic rerun of a failed test set it has suffix <code>Rerun</code>, e.g. DCB_<code>Rerun</code>. First three letters of the tag name is a random string. generated for test set run by RapiseLauncher.</p>
 <h4 id="view-test-run-details">View Test Run Details<a class="headerlink" href="#view-test-run-details" title="Permanent link">&para;</a></h4>
 <p>Expanding a test run reveals the report with execution status for every test step. The details pane also contains links to download test run attachments and execution log.</p>
 <h3 id="incidents-view">Incidents View<a class="headerlink" href="#incidents-view" title="Permanent link">&para;</a></h3>
