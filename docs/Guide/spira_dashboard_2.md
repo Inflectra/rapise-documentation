@@ -31,6 +31,38 @@ Test runs that correspond to reruns are decorated with icons. Number in a circle
 
 <img alt="Reruns" src="/Guide/img/spira_dashboard_rerun_test_runs.png" width="350"/>
 
+### Parallel Execution
+
+Since Rapise 7.1 - RapiseLauncher is able to perform parallel run for these types of tests:
+
+1. Web tests configured to run with Selenium WebDriver,
+2. Mobile tests,
+3. REST/SOAP API tests.
+
+In order to mark a test case ready for parallel run set the custom property `Ready for parallel run` in test case details.
+
+<img alt="Test Case Properties" src="/Guide/img/test-case-custom-properties.png" width="360"/>
+
+If all test cases included into a test set have this property, the test set is configured for parallel run - RapiseLauncher will execute the test cases in parallel.
+
+To configure the test set use the custom properties `Run tests in parallel` and `Max parallel tests` (0 - no limit).
+
+### Input Data Table
+
+Since Rapise 7.1 you may define a table with parameter values to automatically run same test set with different input data. It is an alternative to [test configurations](https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx).
+
+1. Create a CSV or TXT file with parameter names and values. You may do it right from the dashboard (navigate to test set details and use Create New popup menu in the Attachments section). Example of the data file:
+
+	```
+	UserName,Password
+	librarian,librarian
+	borrower,borrower
+	```
+
+2. Choose this attachment in the `Input data` custom property.
+
+RapiseLauncher will run the test set same number of times as data rows in the input file. Every column name will become a global parameter passed to a test case.
+
 ## How to Open
 
 To open the dashboard use [main menu](/Guide/menu_and_toolbars/#view) View > Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the [Rapise Settings](/Guide/options_dialog/#settings) dialog and set `ShowDashboardOnStartup` flag to `true`.
@@ -105,15 +137,21 @@ Some features of the dashboard require additional custom properties to exist in 
 
 - Test Cases
 	- Flaky (boolean, default is false)
+	- Ready for parallel run (boolean, default is false, requires Rapise 7.1+)
 - Test Runs
 	- Flaky (boolean, default is false)
 	- Run attempt (integer, default is 1)
+	- Tag (string, empty by default, requires Rapise 7.1+)
 - Test Sets
 	- Max rerun attempts (integer, default is 0)
 	- Do not rerun if N tests failed (integer, default is 0)
+	- Rerun test set if failed (boolean, default is false, requires Rapise 7.1+)
+	- Run tests in parallel (boolean, default is false, requires Rapise 7.1+)
+	- Max parallel tests (integer, default is 0 (no limit), requires Rapise 7.1+)
+	- Input data (string, empty by default, requires Rapise 7.1+)
 	- Record videos (boolean, default is false)
 	- Verbose level (integer, default is 1)
-	- [GitUrl, GitUser, GitPassword](/Guide/git_integration/#using-spira-custom-properties) (string, empty by default)
+	- [GitUrl, GitUser, GitPassword, GitBranch, GitRoot](/Guide/git_integration/#using-spira-custom-properties) (string, empty by default)
 
 Clicking the button more than once is safe. If a custom property exists - Rapise won't create a duplicate. To create the custom properties you will need to enter administrator credentials (user name and API Key).
 
@@ -123,6 +161,7 @@ Action menu for a test allows to
 
 1. Open the test in Rapise
 2. Link the test to a test case in Spira
+3. Execute the test (if linked to a test case) via RapiseLauncher on the local machine or a selected automation host. Requires Rapise 7.1+.
 
 ### Pending Test Runs View
 
@@ -136,7 +175,7 @@ In the test cases view one may see the tree of test cases for a project, discove
 
 #### View Test Case Details
 
-Expanding a test case reveals last 10 runs of it. The details pane also shows test case parameters and custom properties (editable).
+Expanding a test case reveals last 10 runs of it. The details pane also shows test case parameters (editable, requires Rapise 7.1+) and custom properties (editable).
 
 #### Perform Test Case Actions
 
@@ -148,6 +187,7 @@ Action menu for a test case allows to
 4. Add default parameters to the test case. The list of default parameters includes:
 	- g_verboseLevel = 1
 	- g_enableVideoRecording = false
+5. `Open This Test` in Rapise. It is a shortcut for [Open a test from SpiraTest](/Guide/spiratest_integration/#opening-a-test-from-spiratest).
 
 !!! note
 	For execution of a test case on a selected automation host (#2) - Rapise will use a special test set with the name of the automation host.
@@ -164,7 +204,7 @@ In the test sets view one may see the tree of test sets for a project, discover 
 
 #### View Test Set Details
 
-Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters and custom properties (editable).
+Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters (editable, requires Rapise 7.1+) and custom properties (editable).
 
 ##### Add Test Cases
 
@@ -173,6 +213,13 @@ Press `Add Test Cases` to open the test cases tree, select test cases and append
 ##### Reorder Test Cases
 
 Using hamburger icon next to a test case ID one may reorder test cases in a test set.
+
+##### Test Case Actions
+
+Use Action menu to 
+
+1. Remove a test case from the test
+2. Open a dialog to edit `Test Set Test Case` parameters (requires Rapise 7.1+)
 
 #### Perform Test Set Actions
 
@@ -194,6 +241,8 @@ If you want to create a test set in a specific folder - select corresponding row
 #### Browse Test Runs
 
 This view shows most recent test run reports. One may see test run status and execution time and duration. If a test run is failed - Details column displays the first error message.
+
+Since Rapise 7.1 to view just test runs of a specific test set run use `Tag` column popup menu `Filter by Tag`. If you run the test set with different configurations then configuration number is reflected in the tag name, e.g. QZH_`Config3`. If a test run corresponds to automatic rerun of a failed test set it has suffix `Rerun`, e.g. DCB_`Rerun`. First three letters of the tag name is a random string. generated for test set run by RapiseLauncher.
 
 #### View Test Run Details
 
