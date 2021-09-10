@@ -1,7 +1,9 @@
-Summary: UI element class: System.Windows.Forms.PropertyGridInternal.PropertyGridView+GridViewListBox
+Summary: Managed ManagedPopupListBox.
 
 # ManagedPopupListBox
 
+Managed ManagedPopupListBox.
+ 
 UI element class: System.Windows.Forms.PropertyGridInternal.PropertyGridView+GridViewListBox
 
 Extends [ManagedObject](ManagedObject.md)

@@ -1,7 +1,9 @@
-Summary: AndroidCheckBox
+Summary: Android CheckBox.
 
 # AndroidCheckBox
 
+Android CheckBox.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

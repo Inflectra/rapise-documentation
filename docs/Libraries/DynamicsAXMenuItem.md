@@ -1,7 +1,9 @@
-Summary: DynamicsAXMenuItem
+Summary: DynamicsAX DynamicsAXMenuItem.
 
 # DynamicsAXMenuItem
 
+DynamicsAX DynamicsAXMenuItem.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

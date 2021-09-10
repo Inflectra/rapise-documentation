@@ -1,7 +1,9 @@
-Summary: C1TrueDBList
+Summary: Component One True DB List Control
 
 # C1TrueDBList
 
+Component One True DB List Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

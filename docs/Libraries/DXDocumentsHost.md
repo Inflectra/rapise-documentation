@@ -1,7 +1,9 @@
-Summary: UI element class: DevExpress.XtraBars.Docking2010.DocumentsHost
+Summary: DevExpress DXDocumentsHost.
 
 # DXDocumentsHost
 
+DevExpress DXDocumentsHost.
+ 
 UI element class: DevExpress.XtraBars.Docking2010.DocumentsHost
 
 Extends [ManagedObject](ManagedObject.md)

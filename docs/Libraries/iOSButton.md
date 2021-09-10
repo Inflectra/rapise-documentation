@@ -1,7 +1,9 @@
-Summary: iOSButton
+Summary: iOS Button.
 
 # iOSButton
 
+iOS Button.
+ 
 Extends [iOSObject](iOSObject.md)
 
 

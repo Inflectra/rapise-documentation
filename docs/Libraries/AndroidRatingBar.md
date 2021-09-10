@@ -1,7 +1,9 @@
-Summary: AndroidRatingBar
+Summary: Android RatingBar.
 
 # AndroidRatingBar
 
+Android RatingBar.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

@@ -1,7 +1,9 @@
-Summary: UI element class: regex:DevExpress.XtraBars.Docking.DockPanel
+Summary: DevExpress DXDockPanel.
 
 # DXDockPanel
 
+DevExpress DXDockPanel.
+ 
 UI element class: regex:DevExpress.XtraBars.Docking.DockPanel
 
 Extends [ManagedObject](ManagedObject.md)

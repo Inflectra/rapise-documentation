@@ -1,7 +1,9 @@
-Summary: TabStrip20
+Summary: TabStrip20 Control
 
 # TabStrip20
 
+TabStrip20 Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

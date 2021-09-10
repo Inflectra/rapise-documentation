@@ -1,7 +1,9 @@
-Summary: UIATree
+Summary: UIAutomation UIATree.
 
 # UIATree
 
+UIAutomation UIATree.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

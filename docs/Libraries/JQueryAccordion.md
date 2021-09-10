@@ -1,7 +1,9 @@
-Summary: JQueryAccordion
+Summary: jQuery-UI JQuery Accordion.
 
 # JQueryAccordion
 
+jQuery-UI JQuery Accordion.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

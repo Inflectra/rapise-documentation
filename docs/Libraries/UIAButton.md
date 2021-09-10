@@ -1,7 +1,9 @@
-Summary: UIAButton
+Summary: UIAutomation UIAButton.
 
 # UIAButton
 
+UIAutomation UIAButton.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

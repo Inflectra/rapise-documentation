@@ -1,7 +1,9 @@
-Summary: UIATabControl
+Summary: UIAutomation UIATabControl.
 
 # UIATabControl
 
+UIAutomation UIATabControl.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

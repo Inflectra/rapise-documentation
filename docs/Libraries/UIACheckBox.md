@@ -1,7 +1,9 @@
-Summary: UIACheckBox
+Summary: UIAutomation UIACheckBox.
 
 # UIACheckBox
 
+UIAutomation UIACheckBox.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

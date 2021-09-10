@@ -1,7 +1,9 @@
-Summary: iOSTabBar
+Summary: iOS TabBar.
 
 # iOSTabBar
 
+iOS TabBar.
+ 
 Extends [iOSObject](iOSObject.md)
 
 

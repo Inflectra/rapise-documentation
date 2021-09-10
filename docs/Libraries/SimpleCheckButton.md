@@ -1,7 +1,9 @@
-Summary: SimpleCheckButton
+Summary: Advanced Accessibility SimpleCheckButton.
 
 # SimpleCheckButton
 
+Advanced Accessibility SimpleCheckButton.
+ 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

@@ -1,7 +1,9 @@
-Summary: iOSPicker
+Summary: iOS Picker.
 
 # iOSPicker
 
+iOS Picker.
+ 
 Extends [iOSObject](iOSObject.md)
 
 

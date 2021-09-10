@@ -1,7 +1,9 @@
-Summary: AndroidImageButton
+Summary: Android ImageButton.
 
 # AndroidImageButton
 
+Android ImageButton.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

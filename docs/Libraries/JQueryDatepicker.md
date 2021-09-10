@@ -1,7 +1,9 @@
-Summary: JQueryDatepicker
+Summary: jQuery-UI JQuery Date Picker.
 
 # JQueryDatepicker
 
+jQuery-UI JQuery Date Picker.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

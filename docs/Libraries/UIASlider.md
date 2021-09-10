@@ -1,7 +1,9 @@
-Summary: UIASlider
+Summary: UIAutomation UIASlider.
 
 # UIASlider
 
+UIAutomation UIASlider.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

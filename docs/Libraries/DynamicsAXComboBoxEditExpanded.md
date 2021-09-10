@@ -1,7 +1,9 @@
-Summary: DynamicsAXComboBoxEditExpanded
+Summary: DynamicsAX DynamicsAXComboBoxEditExpanded.
 
 # DynamicsAXComboBoxEditExpanded
 
+DynamicsAX DynamicsAXComboBoxEditExpanded.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

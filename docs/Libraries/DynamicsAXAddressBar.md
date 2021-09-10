@@ -1,7 +1,9 @@
-Summary: DynamicsAXAddressBar
+Summary: DynamicsAX DynamicsAXAddressBar.
 
 # DynamicsAXAddressBar
 
+DynamicsAX DynamicsAXAddressBar.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

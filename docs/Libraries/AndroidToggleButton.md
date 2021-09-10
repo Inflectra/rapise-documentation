@@ -1,7 +1,9 @@
-Summary: AndroidToggleButton
+Summary: Android ToggleButton.
 
 # AndroidToggleButton
 
+Android ToggleButton.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

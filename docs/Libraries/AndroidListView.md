@@ -1,7 +1,9 @@
-Summary: AndroidListView
+Summary: Android ListView.
 
 # AndroidListView
 
+Android ListView.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

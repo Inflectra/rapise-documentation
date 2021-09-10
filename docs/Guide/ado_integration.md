@@ -1,8 +1,7 @@
 # Azure DevOps Integration v2
 
 !!! tip
-    This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to [Azure DevOps Integration v3](
-      .md).
+    This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to [Azure DevOps Integration v3](/Guide/vstest/).
 
 From this topic you will learn how to run Rapise tests with [Node-Tap](https://node-tap.org/) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 

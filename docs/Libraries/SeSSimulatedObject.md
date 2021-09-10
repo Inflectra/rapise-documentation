@@ -1,7 +1,8 @@
-Summary: This is a rule for simulated objects.
+Summary: Generic SeSSimulated.
 
 # SeSSimulatedObject
 
+Generic SeSSimulated.
 This is a rule for simulated objects.
 
 

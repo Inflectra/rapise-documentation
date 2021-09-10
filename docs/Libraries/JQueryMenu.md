@@ -1,7 +1,9 @@
-Summary: JQueryMenu
+Summary: jQuery-UI JQuery Menu.
 
 # JQueryMenu
 
+jQuery-UI JQuery Menu.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

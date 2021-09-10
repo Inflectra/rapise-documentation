@@ -1,7 +1,9 @@
-Summary: JQueryProgressbar
+Summary: jQuery-UI JQuery Progress Bar.
 
 # JQueryProgressbar
 
+jQuery-UI JQuery Progress Bar.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

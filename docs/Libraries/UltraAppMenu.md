@@ -1,7 +1,8 @@
-Summary: UltraAppMenu
+Summary: Infragistics UltraAppMenu.
 
 # UltraAppMenu
 
+Infragistics UltraAppMenu.
 UltraAppMenu
 UI element class: Infragistics.Win.UltraWinToolbars.ApplicationMenuControlTrusted
 

@@ -1,7 +1,9 @@
-Summary: UIAProgressBar
+Summary: UIAutomation UIAProgressBar.
 
 # UIAProgressBar
 
+UIAutomation UIAProgressBar.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
