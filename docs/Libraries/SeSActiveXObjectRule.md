@@ -1,0 +1,7 @@
+Summary: SeSActiveXObjectRule
+
+# SeSActiveXObjectRule
+
+
+
+

@@ -26,6 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Checked](#checked) | Check state of the button. | GetChecked | SetChecked |
+| [Value](#value) | Value of the object. | GetValue | SetValue |
 
 
 
@@ -60,6 +61,21 @@ Type: boolean
 			
 			
 Accessors: GetChecked, SetChecked
+			
+		
+<a name="Value"></a>
+#### Value
+
+
+Value of the object.
+
+			
+	
+			
+Type: boolean
+			
+			
+Accessors: GetValue, SetValue
 			
 		
 	

@@ -1,7 +1,9 @@
-Summary: iOSLabel
+Summary: iOS Label.
 
 # iOSLabel
 
+iOS Label.
+ 
 Extends [iOSObject](iOSObject.md)
 
 

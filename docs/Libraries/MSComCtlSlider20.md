@@ -1,7 +1,9 @@
-Summary: MSComCtlSlider20
+Summary: ComCtl Slider Control
 
 # MSComCtlSlider20
 
+ComCtl Slider Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

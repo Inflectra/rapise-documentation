@@ -1,7 +1,9 @@
-Summary: AndroidLabel
+Summary: Android Label.
 
 # AndroidLabel
 
+Android Label.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

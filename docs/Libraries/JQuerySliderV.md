@@ -1,7 +1,9 @@
-Summary: JQuerySliderV
+Summary: jQuery-UI JQuery SliderV.
 
 # JQuerySliderV
 
+jQuery-UI JQuery SliderV.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

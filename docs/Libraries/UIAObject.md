@@ -1,7 +1,9 @@
-Summary: UIAObject
+Summary: UIAutomation UIAObject.
 
 # UIAObject
 
+UIAutomation UIAObject.
+ 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

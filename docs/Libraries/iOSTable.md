@@ -1,7 +1,9 @@
-Summary: iOSTable
+Summary: iOS Table.
 
 # iOSTable
 
+iOS Table.
+ 
 Extends [iOSObject](iOSObject.md)
 
 

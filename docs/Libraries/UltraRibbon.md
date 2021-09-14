@@ -1,7 +1,9 @@
-Summary: UI element class: Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+Summary: Infragistics UltraRibbon.
 
 # UltraRibbon
 
+Infragistics UltraRibbon.
+ 
 UI element class: Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
 
 Extends [ManagedObject](ManagedObject.md)

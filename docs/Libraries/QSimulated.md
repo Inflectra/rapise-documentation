@@ -1,7 +1,9 @@
-Summary: QSimulated
+Summary: Qt Simulated control.
 
 # QSimulated
 
+Qt Simulated control.
+ 
 Extends [QWidget](QWidget.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

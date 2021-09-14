@@ -1,7 +1,9 @@
-Summary: JQuerySpinner
+Summary: jQuery-UI JQuery Spinner.
 
 # JQuerySpinner
 
+jQuery-UI JQuery Spinner.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

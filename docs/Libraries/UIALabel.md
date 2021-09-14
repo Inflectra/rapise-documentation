@@ -1,7 +1,9 @@
-Summary: UIALabel
+Summary: UIAutomation UIALabel.
 
 # UIALabel
 
+UIAutomation UIALabel.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

@@ -1,7 +1,9 @@
-Summary: UIAHyperlink
+Summary: UIAutomation UIAHyperlink.
 
 # UIAHyperlink
 
+UIAutomation UIAHyperlink.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

@@ -1,7 +1,9 @@
-Summary: MSComList
+Summary: ComCtl ListView20 Control
 
 # MSComList
 
+ComCtl ListView20 Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

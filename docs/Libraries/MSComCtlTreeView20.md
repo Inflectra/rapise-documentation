@@ -1,7 +1,9 @@
-Summary: MSComCtlTreeView20
+Summary: ComCtl TreeView20 Control
 
 # MSComCtlTreeView20
 
+ComCtl TreeView20 Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

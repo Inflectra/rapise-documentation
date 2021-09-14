@@ -1,7 +1,9 @@
-Summary: JQuerySliderH
+Summary: jQuery-UI JQuery SliderH.
 
 # JQuerySliderH
 
+jQuery-UI JQuery SliderH.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

@@ -1,7 +1,9 @@
-Summary: AndroidImageView
+Summary: Android ImageView.
 
 # AndroidImageView
 
+Android ImageView.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

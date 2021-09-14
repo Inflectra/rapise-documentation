@@ -1,7 +1,9 @@
-Summary: MSComCtlToolbar
+Summary: Microsoft Windows Toolbar Control
 
 # MSComCtlToolbar
 
+Microsoft Windows Toolbar Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
@@ -10,7 +12,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-**Behavior Pattern: MSComCtlToobarBehavior**
+**Behavior Pattern: MSComCtlToolbarBehavior**
 
 
 <!-- ============================== property summary ========================== -->

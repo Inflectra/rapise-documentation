@@ -1,7 +1,9 @@
-Summary: AndroidButton
+Summary: Android Button.
 
 # AndroidButton
 
+Android Button.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

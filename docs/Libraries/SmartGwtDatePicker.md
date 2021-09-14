@@ -1,7 +1,9 @@
-Summary: SmartGwtDatePicker
+Summary: DOM SmartGwt SmartGwtDatePicker.
 
 # SmartGwtDatePicker
 
+DOM SmartGwt SmartGwtDatePicker.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

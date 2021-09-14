@@ -1,7 +1,9 @@
-Summary: UIAComboBox
+Summary: UIAutomation UIAComboBox.
 
 # UIAComboBox
 
+UIAutomation UIAComboBox.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

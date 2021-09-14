@@ -1,7 +1,9 @@
-Summary: SmartGwtToolbar
+Summary: DOM SmartGwt SmartGwtToolbar.
 
 # SmartGwtToolbar
 
+DOM SmartGwt SmartGwtToolbar.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

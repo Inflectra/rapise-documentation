@@ -1,7 +1,9 @@
-Summary: UI element class: DevExpress.XtraVerticalGrid.PropertyGridControl
+Summary: DevExpress DXPropertyGridControl.
 
 # DXPropertyGridControl
 
+DevExpress DXPropertyGridControl.
+ 
 UI element class: DevExpress.XtraVerticalGrid.PropertyGridControl
 
 Extends [ManagedObject](ManagedObject.md)

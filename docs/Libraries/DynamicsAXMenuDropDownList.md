@@ -1,7 +1,9 @@
-Summary: DynamicsAXMenuDropDownList
+Summary: DynamicsAX DynamicsAXMenuDropDownList.
 
 # DynamicsAXMenuDropDownList
 
+DynamicsAX DynamicsAXMenuDropDownList.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

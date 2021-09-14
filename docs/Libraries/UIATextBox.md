@@ -1,7 +1,9 @@
-Summary: UIATextBox
+Summary: UIAutomation UIATextBox.
 
 # UIATextBox
 
+UIAutomation UIATextBox.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

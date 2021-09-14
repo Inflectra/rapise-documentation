@@ -1,7 +1,9 @@
-Summary: AndroidSpinner
+Summary: Android Spinner.
 
 # AndroidSpinner
 
+Android Spinner.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

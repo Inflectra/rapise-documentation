@@ -1,7 +1,9 @@
-Summary: MSFlexGrid
+Summary: MSFLexGrid Control
 
 # MSFlexGrid
 
+MSFLexGrid Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
 | [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
-| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName | SetColumnName |
 | [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount |  |
 
 
@@ -107,7 +107,7 @@ Caption of a column.
 Type: string
 			
 			
-Accessors: GetColumnName
+Accessors: GetColumnName, SetColumnName
 			
 		
 <a name="RowCount"></a>

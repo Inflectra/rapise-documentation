@@ -1,7 +1,9 @@
-Summary: SftTree
+Summary: This behavior pattern implements standard behavior for Tree control.
 
 # SftTree
 
+This behavior pattern implements standard behavior for Tree control.
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

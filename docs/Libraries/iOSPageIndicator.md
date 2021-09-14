@@ -1,7 +1,9 @@
-Summary: iOSPageIndicator
+Summary: iOS PageIndicator.
 
 # iOSPageIndicator
 
+iOS PageIndicator.
+ 
 Extends [iOSObject](iOSObject.md)
 
 

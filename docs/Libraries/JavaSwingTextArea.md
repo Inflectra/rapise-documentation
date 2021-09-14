@@ -26,6 +26,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
+| [Value](#value) | Value of the object. | GetValue | SetValue |
 
 
 
@@ -60,6 +61,21 @@ Type: string
 			
 			
 Accessors: GetText, SetText
+			
+		
+<a name="Value"></a>
+#### Value
+
+
+Value of the object.
+
+			
+	
+			
+Type: text
+			
+			
+Accessors: GetValue, SetValue
 			
 		
 	

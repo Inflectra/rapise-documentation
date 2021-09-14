@@ -1,7 +1,9 @@
-Summary: UI element class: LSRetail.NAV.POSControls.ButtonPad
+Summary: NavPOSControls NavButtonPad.
 
 # NavButtonPad
 
+NavPOSControls NavButtonPad.
+ 
 UI element class: LSRetail.NAV.POSControls.ButtonPad
 
 Extends [ManagedObject](ManagedObject.md)

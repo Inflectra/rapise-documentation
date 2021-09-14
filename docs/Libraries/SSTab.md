@@ -1,7 +1,9 @@
-Summary: SSTab
+Summary: SSTab Control
 
 # SSTab
 
+SSTab Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

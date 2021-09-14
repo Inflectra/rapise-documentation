@@ -1,7 +1,9 @@
-Summary: AndroidRadioButton
+Summary: Android RadioButton.
 
 # AndroidRadioButton
 
+Android RadioButton.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

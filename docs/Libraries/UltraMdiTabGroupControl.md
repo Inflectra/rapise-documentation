@@ -1,7 +1,9 @@
-Summary: UI element class: Infragistics.Win.UltraWinTabbedMdi.MdiTabGroupControl
+Summary: Infragistics UltraMdiTabGroupControl.
 
 # UltraMdiTabGroupControl
 
+Infragistics UltraMdiTabGroupControl.
+ 
 UI element class: Infragistics.Win.UltraWinTabbedMdi.MdiTabGroupControl
 
 Extends [ManagedObject](ManagedObject.md)

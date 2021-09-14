@@ -1,7 +1,8 @@
-Summary: UltraPopupMenu
+Summary: Infragistics UltraPopupMenu.
 
 # UltraPopupMenu
 
+Infragistics UltraPopupMenu.
 UltraPopupMenu
 UI element class: Infragistics.Win.UltraWinToolbars.PopupMenuControlTrusted
 

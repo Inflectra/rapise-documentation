@@ -1,7 +1,9 @@
-Summary: UIARadioButton
+Summary: UIAutomation UIARadioButton.
 
 # UIARadioButton
 
+UIAutomation UIARadioButton.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

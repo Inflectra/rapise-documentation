@@ -1,7 +1,9 @@
-Summary: iOSTextView
+Summary: iOS TextView.
 
 # iOSTextView
 
+iOS TextView.
+ 
 Extends [iOSObject](iOSObject.md)
 
 

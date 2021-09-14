@@ -1,7 +1,9 @@
-Summary: SmartGwtTabControl
+Summary: DOM SmartGwt SmartGwtTabControl.
 
 # SmartGwtTabControl
 
+DOM SmartGwt SmartGwtTabControl.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

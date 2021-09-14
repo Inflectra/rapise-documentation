@@ -1,7 +1,9 @@
-Summary: AndroidSeekBar
+Summary: Android SeekBar.
 
 # AndroidSeekBar
 
+Android SeekBar.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 

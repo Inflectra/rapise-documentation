@@ -1,7 +1,9 @@
-Summary: C1TrueDBGrid
+Summary: Component One True DB Grid Control
 
 # C1TrueDBGrid
 
+Component One True DB Grid Control
+ 
 Extends [ActiveXObject](ActiveXObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

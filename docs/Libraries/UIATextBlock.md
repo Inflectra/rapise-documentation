@@ -1,7 +1,9 @@
-Summary: UIATextBlock
+Summary: UIAutomation UIATextBlock.
 
 # UIATextBlock
 
+UIAutomation UIATextBlock.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

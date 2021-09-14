@@ -2,7 +2,6 @@
     "version": "0.1",
     "language": "en",
 	"ignorePaths": [
-		"docs/Libraries/MSComCtlToolbar.md"
 		],
     "words": [
         "activex",
@@ -1245,6 +1244,22 @@
 		"propname",
 		"propregexp",
 		"domsapinput",
-		"ipconfig"
+		"ipconfig",
+		"bvalidate",
+		"vtextfield",
+		"vpoplist",
+		"oracleformstable",
+		"dosetfocus",
+		"dogetvalue",
+		"dosoftkey",
+		"oracleformsobject",
+		"softkey",
+		"oracleformsmenubar",
+		"oftoolbar",
+		"oftabbar",
+		"lwtextcomponent",
+		"bvalidate",
+		"labled",
+        "toolbar"
     ]
 }

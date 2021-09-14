@@ -102,6 +102,7 @@ nav:
             - 'SOAP Web Services': 'Guide/tutorial_soap_web_services.md'
         - 'Tutorial: Manual Testing': 'Guide/tutorial_exploratory_testing.md'
         - 'Tutorial: Java Testing':
+            - 'Using Oracle Forms': 'Guide/oracleforms_testing.md'
             - 'Using Rapise Visual Language': 'Guide/tutorial_java_testing.md'
             - 'Using JavaScript': 'Guide/tutorial_java_using_javascript.md'
         - 'Tutorial: Qt Framework':
@@ -348,6 +349,7 @@ nav:
         #farpoint
         #vsflexgrid
         #java
+        #oracleforms
         #swt
         #qt
     - 'Web':

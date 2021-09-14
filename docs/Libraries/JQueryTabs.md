@@ -1,7 +1,9 @@
-Summary: JQueryTabs
+Summary: jQuery-UI JQuery Tabs.
 
 # JQueryTabs
 
+jQuery-UI JQuery Tabs.
+ 
 Extends [HTMLObject](HTMLObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

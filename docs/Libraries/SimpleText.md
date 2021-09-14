@@ -1,7 +1,9 @@
-Summary: SimpleText
+Summary: Advanced Accessibility SimpleText.
 
 # SimpleText
 
+Advanced Accessibility SimpleText.
+ 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 

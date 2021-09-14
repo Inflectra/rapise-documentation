@@ -1,7 +1,9 @@
-Summary: UIAutomationMenuDropDownList
+Summary: UIAutomation UIAutomationMenuDropDownList.
 
 # UIAutomationMenuDropDownList
 
+UIAutomation UIAutomationMenuDropDownList.
+ 
 Extends [UIAObject](UIAObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)

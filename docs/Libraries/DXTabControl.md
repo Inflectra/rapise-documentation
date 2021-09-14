@@ -1,7 +1,9 @@
-Summary: UI element class: DevExpress.XtraTab.XtraTabControl
+Summary: DevExpress DXTabControl.
 
 # DXTabControl
 
+DevExpress DXTabControl.
+ 
 UI element class: DevExpress.XtraTab.XtraTabControl
 
 Extends [ManagedObject](ManagedObject.md)

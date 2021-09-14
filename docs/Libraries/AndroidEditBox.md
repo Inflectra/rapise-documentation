@@ -1,7 +1,9 @@
-Summary: AndroidEditBox
+Summary: Android EditBox.
 
 # AndroidEditBox
 
+Android EditBox.
+ 
 Extends [AndroidObject](AndroidObject.md)
 
 
