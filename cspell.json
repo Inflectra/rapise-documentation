@@ -1260,6 +1260,15 @@
 		"lwtextcomponent",
 		"bvalidate",
 		"labled",
-        "toolbar"
+		"oracleforms",
+		"javaagent",
+		"Djava",
+		"jnlp",
+		"dolovselect",
+		"dopressnotificationbutton",
+		"getlovtitle",
+		"getnotificationmessage",
+		"getnotificationtitle",
+		"getstatusmessage"
     ]
 }
