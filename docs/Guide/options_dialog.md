@@ -51,7 +51,6 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 * **Always use Test.sstest**: Defaults to **False**. If set to **True**, the test file name is set to `Test.sstest` rather than `<test folder name>.sstest`. This may be useful in rare cases when your testing framework has deep nested structure, you have very long file names and need to fit into 260 chars of Windows `MAX_PATH` limit.
 * **AutoReloadModifiedFiles**: If set to **True**, any files you modify outside of Rapise are automatically reloaded in Rapise.
 * **Confirm Object Removal**: Ask when deleting object form the [Object Tree](object_tree.md).
-* **Convert Tabs to Spaces**: **True** to force tabs to spaces conversion for the text editor.
 * **DefaultFolder** specifies  where new tests are kept before you explicitly save them.  The location is relative to the Rapise executable.
 * **Default Scripting Language**: JavaScript, RVL or Ask. 
 * **LoadLastTestOnStartup**: If set to **True**, Rapise will open the last test you worked on and saved.  If set to **False**, Rapise will create a new test named MyTest<#> where <#> is an integer.  A folder for MyTest<#> is created in the folder specified by the **DefaultFolder** option.
@@ -78,6 +77,11 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
     ![options dialog, framestyle basic](./img/options_dialog6.png) ![options dialog, framestyle modern](./img/options_dialog7.png)
 * **DefaultSpy** specifies which of the various types of [Object Spy](object_spy.md) will be displayed by default.
 * **GenerateComments**: **True** to automatically generate JavaScript or RVL comment for each recorded action.
+
+### Text Editor
+
+* **Convert Tabs to Spaces**: **True** to force tabs to spaces conversion for the text editor.
+* **Tab Size**: Editor Tab Size
 
 ## Utilities
 
