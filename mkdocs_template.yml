@@ -102,7 +102,6 @@ nav:
             - 'SOAP Web Services': 'Guide/tutorial_soap_web_services.md'
         - 'Tutorial: Manual Testing': 'Guide/tutorial_exploratory_testing.md'
         - 'Tutorial: Java Testing':
-            - 'Using Oracle Forms': 'Guide/oracleforms_testing.md'
             - 'Using Rapise Visual Language': 'Guide/tutorial_java_testing.md'
             - 'Using JavaScript': 'Guide/tutorial_java_using_javascript.md'
         - 'Tutorial: Qt Framework':
@@ -305,6 +304,8 @@ nav:
         - 'Qt Framework': 'Guide/qt_framework_testing.md'
         - 'Java AWT/Swing': 'Guide/java_awt_swing_testing.md'
         - 'Java SWT': 'Guide/java_swt.md'
+        - 'Oracle Forms': 'Guide/oracleforms_testing.md'
+
     - 'Extensibility':
         - 'Extensibility': 'Guide/extensibility.md'
         - 'Tutorial: Custom Library': 'Guide/tutorial_custom_library.md'

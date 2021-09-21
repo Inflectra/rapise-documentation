@@ -153,3 +153,4 @@ You can then use the [UIAutomation Spy](object_spy_uiautomation.md) to track and
 
 - [Java AWT/Swing Testing](java_awt_swing_testing.md)
 - [Java SWT Testing](java_swt.md)
+- [Testing Oracle Forms](Guide\oracleforms_testing.md)
