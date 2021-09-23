@@ -1,12 +1,14 @@
 # Desktop Testing
 
-If you plan to record and playback the very first desktop test - check out the tutorial:
+If you plan to record and playback the very first desktop test - check out the tutorials:
 
 - [Tutorial: Windows Testing](/Guide/twodialogs_sample/)
+- [Tutorial: Java Testing](Guide/tutorial_java_testing.md)
 
 Learn more about testing desktop applications:
 
 - [Testing Windows Applications](/Guide/windows_applications/)
+- [Testing Oracle Forms](Guide\oracleforms_testing.md)
 
 ## Webinars
 

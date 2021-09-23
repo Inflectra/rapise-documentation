@@ -9,3 +9,38 @@ To display and edit javascript files.  The editor supports [Syntax Highlighting
 ## How to Open
 
 Use the [Test Files View](test_files_dialog.md) to open a javascript file.  The javascript file will be opened in a **Source Editor**, in the [Content View](content_view.md).  The [Edit Popup](menu_and_toolbars.md) of the Main Menu will also be populated with text editor-specific options.
+
+## OnTextSaved.cmd
+
+This feature enables post-processing of the saved text files. This may be achieved by defining a file `OnTextSaved.cmd`.
+
+This file may be stored either common folder:
+
+`c:\Users\Public\Documents\Rapise\OnTextSaved.cmd`
+
+Or in the root of current [test framework](../Intro/framework.md).
+
+The cmd file receives the following inputs
+* `%1` - file path (c:\Path\To\Test\File.js)
+* `%2` - test working directory (c:\Path\To\Test)
+
+Also Rapise sets two environment variables:
+* `%SHIFT_PRESSED%` is `yes` when user presses **Shift** key
+* `%CONTROL_PRESSED%` is `yes` when user presses **Ctrl** key
+
+You may find an example of configured `OnTextSaved.cmd` used to beautify a **JavaScript** file. 
+
+If `.cmd` modifies the file, Rapise editor would immediately reload it.
+
+If `.cmd` produces any output, it would be reflected in the Rapise [output view](Guide/output_view.md).
+
+If `.cmd` file produces any errors, these are reflected in the [warnings view](Guide/warning_view.md).
+
+You may find real live example of `OnTextSaved.cmd` at https://github.com/Inflectra/rapise-powerpack/tree/master/JSBeautify.
+
+```cmd
+if "%SHIFT_PRESSED%"=="yes" (
+    if "%~x1"==".js" (
+        @call "%~dp0node_modules\.bin\js-beautify.cmd" -r --config "%~dp0jsbeautify.config.json" %1 >OnTextSaved.log 2>&1
+    )
+```
