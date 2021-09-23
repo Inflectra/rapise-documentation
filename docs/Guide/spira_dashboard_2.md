@@ -256,6 +256,10 @@ This view shows most recent test run reports. One may see test run status and ex
 
 Since Rapise 7.1 to view just test runs of a specific test set run use `Tag` column popup menu `Filter by Tag`. If you run the test set with different configurations then configuration number is reflected in the tag name, e.g. QZH_`Config3`. If a test run corresponds to automatic rerun of a failed test set it has suffix `Rerun`, e.g. DCB_`Rerun`. First three letters of the tag name is a random string. generated for test set run by RapiseLauncher.
 
+!!! important
+	To enable `Filter by Tag` feature setup custom properties as described [below](#setup-custom-properties).
+
+
 #### View Test Run Details
 
 Expanding a test run reveals the report with execution status for every test step. The details pane also contains links to download test run attachments and execution log.
