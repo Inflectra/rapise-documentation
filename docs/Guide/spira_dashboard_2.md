@@ -10,6 +10,9 @@ If you are not familiar with the dashboard and it's basic features it is recomme
 
 ### Flaky Tests
 
+!!! important
+	To enable this feature setup custom properties as described [below](#setup-custom-properties).
+
 If you see that some test may pass or fail randomly there is a way to mark it as Flaky. Simply find it in [Test Cases View](#test-cases-view) and use [Actions menu](#actions) to set the flag. Flaky test case is decorated with an icon (red flag):
 
 <img alt="Flaky Test Case" src="/Guide/img/spira_dashboard_flaky_test_case.png" width="300"/> 
@@ -23,6 +26,9 @@ When a test case marked as Flaky is executed - it's test run is marked as Flaky 
 
 ### Automatic Rerun
 
+!!! important
+	To enable this feature setup custom properties as described [below](#setup-custom-properties).
+
 To instruct RapiseLauncher to rerun a failed test case use `Max rerun attempts` test set custom property. If a test case keeps failing it will be additionally executed specified number of times (by default it is zero). To stop rerunning tests if many of them finally failed use `Do not rerun if N tests failed` property. By default this property is zero and it means rerun all the tests in a test set if `Max rerun attempts` is set.
 
 <img alt="Rerun Settings" src="/Guide/img/spira_dashboard_rerun_test_set.png" width="400"/>
@@ -32,6 +38,9 @@ Test runs that correspond to reruns are decorated with icons. Number in a circle
 <img alt="Reruns" src="/Guide/img/spira_dashboard_rerun_test_runs.png" width="350"/>
 
 ### Parallel Execution
+
+!!! important
+	To enable this feature setup custom properties as described [below](#setup-custom-properties).
 
 Since Rapise 7.1 - RapiseLauncher is able to perform parallel run for these types of tests:
 
@@ -48,6 +57,9 @@ If all test cases included into a test set have this property, the test set is c
 To configure the test set use the custom properties `Run tests in parallel` and `Max parallel tests` (0 - no limit).
 
 ### Input Data Table
+
+!!! important
+	To enable this feature setup custom properties as described [below](#setup-custom-properties).
 
 Since Rapise 7.1 you may define a table with parameter values to automatically run same test set with different input data. It is an alternative to [test configurations](https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx).
 

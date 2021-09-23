@@ -32,9 +32,9 @@ You may find an example of configured `OnTextSaved.cmd` used to beautify a **Jav
 
 If `.cmd` modifies the file, Rapise editor would immediately reload it.
 
-If `.cmd` produces any output, it would be reflected in the Rapise [output view](Guide/output_view.md).
+If `.cmd` produces any output, it would be reflected in the Rapise [output view](output_view.md).
 
-If `.cmd` file produces any errors, these are reflected in the [warnings view](Guide/warning_view.md).
+If `.cmd` file produces any errors, these are reflected in the [warnings view](warning_view.md).
 
 You may find real live example of `OnTextSaved.cmd` at https://github.com/Inflectra/rapise-powerpack/tree/master/JSBeautify.
 
