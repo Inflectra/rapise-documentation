@@ -34,7 +34,9 @@ If `.cmd` modifies the file, Rapise editor would immediately reload it.
 
 If `.cmd` produces any output, it would be reflected in the Rapise [output view](Guide/output_view.md).
 
-If `.cmd` file produces any errors, these are reflected in the [warnings view](Guide/warning_view.md).
+If `.cmd` file produces any errors, these are reflected in the [warnings view](Guide/warning_view.md). You may use it if you want to set up some code formatting rules and use a linter to check it.
+
+Recommended practice is to enable `OnTextSaved.cmd` with a key modifier. I.e. Save - just save a file, but also check the formatting using Linter. **Shift**+Save - beautify the `.js`.
 
 You may find real live example of `OnTextSaved.cmd` at https://github.com/Inflectra/rapise-powerpack/tree/master/JSBeautify.
 
