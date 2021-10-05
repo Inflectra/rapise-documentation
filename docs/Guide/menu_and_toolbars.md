@@ -191,10 +191,10 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 * **Debugger** - toggles [debugger](internal_debugger.md). 
 * **Verbose Level**- drop-down list controls the [Verbosity Level](verbosity_levels.md).
 * **Libraries** - this button opens the [Select an Application Dialog](select_an_application_to_record_dialog.md) so that you can add/change the [libraries](recording_library.md) being used to record the current test.
-* **Manual Steps** - displays the [manual test steps](manual_test_editor.md) associated with this test.
+* **Npm Console** - show an `npm console` for the current testing [framework](../Intro/framework.md). This way you may quickly install new packages or initialize using existing `package.json`.
 * **Web Services** - allows you to add a new [web service](web_service_testing.md) definition to your Rapise test. Clicking on this displays the [Add Web Service](dialog_add_web_service.md) dialog box.
 * **Object Manager** - open the [Object Manager](object_manager.md) add-in; this add-in is used to copy recorded objects between test scripts.
-* **Convert to NeoLoad** - open the [NeoLoad conversion dialog](neoload_convertor_dialog.md). This lets you convert a Rapise test script into a [NeoLoad performance test](neoload_integration.md).
+into a [NeoLoad performance test](neoload_integration.md).
 * **RPA Monitor** - open [RPA Monitor](/Manuals/Rpa/).
 * **Rapise Launcher** - starts [Rapise Launcher](/Guide/spiratest_integration/#using-rapiselauncher).
 * **New Incident**
