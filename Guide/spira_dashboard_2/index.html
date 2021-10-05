@@ -2264,8 +2264,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-pending-test-runs-for-this-host" class="md-nav__link">
-    View Pending Test Runs for This Host
+  <a href="#view-pending-test-runs" class="md-nav__link">
+    View Pending Test Runs
   </a>
   
 </li>
@@ -2286,13 +2286,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pending-test-runs-view" class="md-nav__link">
-    Pending Test Runs View
-  </a>
   
 </li>
         
@@ -10982,8 +10975,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-pending-test-runs-for-this-host" class="md-nav__link">
-    View Pending Test Runs for This Host
+  <a href="#view-pending-test-runs" class="md-nav__link">
+    View Pending Test Runs
   </a>
   
 </li>
@@ -11004,13 +10997,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pending-test-runs-view" class="md-nav__link">
-    Pending Test Runs View
-  </a>
   
 </li>
         
@@ -11667,8 +11653,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-pending-test-runs-for-this-host" class="md-nav__link">
-    View Pending Test Runs for This Host
+  <a href="#view-pending-test-runs" class="md-nav__link">
+    View Pending Test Runs
   </a>
   
 </li>
@@ -11689,13 +11675,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pending-test-runs-view" class="md-nav__link">
-    Pending Test Runs View
-  </a>
   
 </li>
         
@@ -11933,9 +11912,17 @@ borrower,borrower
 <h3 id="hierarchical-tables">Hierarchical Tables<a class="headerlink" href="#hierarchical-tables" title="Permanent link">&para;</a></h3>
 <p>Plus icon in a table row means that it can be expanded. Click the icon to reveal row details. It may contain more data tables.</p>
 <p><img alt="Row Details" src="../img/spira_dashboard_row_details.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since Rapise 7.1 you may use double click to expand/collapse row details. Double click anywhere on the row you want to expand/collapse.</p>
+</div>
 <h3 id="tree-view">Tree View<a class="headerlink" href="#tree-view" title="Permanent link">&para;</a></h3>
 <p>Test cases and test sets may be placed into folders in Spira. The dashboard loads folder hierarchy. To navigate it click on folder icons.</p>
 <p><img alt="Folder Tree" src="/Guide/img/spira_dashboard_tree.png" width="386"/></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since Rapise 7.1 you may use double click to expand/collapse folders. Double click anywhere on the row with folder you want to expand/collapse.</p>
+</div>
 <h3 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h3>
 <p>Some tables include <code>Action</code> column. It allows the user to perform certain actions on an item displayed in the row where <code>Action</code> menu is expanded.</p>
 <p><img alt="Actions" src="/Guide/img/spira_dashboard_actions.png" width="250"/></p>
@@ -11951,10 +11938,14 @@ borrower,borrower
 <h3 id="dashboard-view">Dashboard View<a class="headerlink" href="#dashboard-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-framework-tests">Browse Framework Tests<a class="headerlink" href="#browse-framework-tests" title="Permanent link">&para;</a></h4>
 <p>The dashboard view shows tests included in the currently opened test framework (parent test and it's sub-tests).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since Rapise 7.1 you may double click a test in this table to open it in Rapise.</p>
+</div>
 <h4 id="view-test-runs-in-progress">View Test Runs in Progress<a class="headerlink" href="#view-test-runs-in-progress" title="Permanent link">&para;</a></h4>
 <p>View test runs that are in progress right now.</p>
-<h4 id="view-pending-test-runs-for-this-host">View Pending Test Runs for This Host<a class="headerlink" href="#view-pending-test-runs-for-this-host" title="Permanent link">&para;</a></h4>
-<p>View tests that are scheduled to run on the local host for the next 24 hours.</p>
+<h4 id="view-pending-test-runs">View Pending Test Runs<a class="headerlink" href="#view-pending-test-runs" title="Permanent link">&para;</a></h4>
+<p>View tests that are scheduled to run for the next 24 hours.</p>
 <h4 id="setup-custom-properties">Setup Custom Properties<a class="headerlink" href="#setup-custom-properties" title="Permanent link">&para;</a></h4>
 <p>Some features of the dashboard require additional custom properties to exist in Test Cases, Test Sets and Test Runs. Click <code>Create Custom Properties for Rapise</code> button to add the following custom properties in the selected project:</p>
 <ul>
@@ -11990,8 +11981,6 @@ borrower,borrower
 <li>Link the test to a test case in Spira</li>
 <li>Execute the test (if linked to a test case) via RapiseLauncher on the local machine or a selected automation host. Requires Rapise 7.1+.</li>
 </ol>
-<h3 id="pending-test-runs-view">Pending Test Runs View<a class="headerlink" href="#pending-test-runs-view" title="Permanent link">&para;</a></h3>
-<p>This view displays scheduled test runs that must be executed within next 24 hours.</p>
 <h3 id="test-cases-view">Test Cases View<a class="headerlink" href="#test-cases-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-test-cases">Browse Test Cases<a class="headerlink" href="#browse-test-cases" title="Permanent link">&para;</a></h4>
 <p>In the test cases view one may see the tree of test cases for a project, discover when a test case was last executed and status of execution.</p>
