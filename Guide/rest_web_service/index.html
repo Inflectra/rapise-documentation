@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10923,6 +10923,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11224,12 +11236,11 @@
                 <h1 id="testing-rest-web-services">Testing REST Web Services<a class="headerlink" href="#testing-rest-web-services" title="Permanent link">&para;</a></h1>
 <h2 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?<a class="headerlink" href="#what-is-rest-and-what-is-a-restful-web-service" title="Permanent link">&para;</a></h2>
 <!-- /* cSpell:disable */ -->
+
 <blockquote>
-<p><strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.</p>
-</blockquote>
+<p><strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.
 <!-- /* cSpell:enable */ -->
-<blockquote>
-<p>A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
+A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
 </blockquote>
 <h2 id="how-does-rapise-test-rest-web-services">How does Rapise test REST web services?<a class="headerlink" href="#how-does-rapise-test-rest-web-services" title="Permanent link">&para;</a></h2>
 <p>Creating a REST web service test in Rapise consists of the following steps:
@@ -11364,6 +11375,7 @@
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart1.png" /></p>
 <p>For the text fields <strong>ContentType</strong> is optional. By default it is set to <code>text/plain</code>.</p>
 <p>For file upload fields <strong>ContentType</strong> and <strong>FileName</strong> are optional. By default content-type and <strong>FileName</strong> are auto-detected from the <strong>FilePath</strong>.</p>
@@ -11382,6 +11394,7 @@
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <h3 id="json-as-field-value">JSON as Field Value<a class="headerlink" href="#json-as-field-value" title="Permanent link">&para;</a></h3>
 <p>Here is how you can pass JSON value of the field:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -11390,13 +11403,14 @@
       <span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="s2">&quot;text/json&quot;</span><span class="p">,</span>
       <span class="s2">&quot;Value&quot;</span><span class="o">:</span> <span class="p">{</span>
         <span class="s2">&quot;One&quot;</span><span class="o">:</span><span class="s2">&quot;Value1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Two&quot;</span><span class="o">:</span><span class="mf">123</span>
+        <span class="s2">&quot;Two&quot;</span><span class="o">:</span><span class="mi">123</span>
       <span class="p">}</span>
     <span class="p">},</span>
     <span class="p">...</span>
   <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <h3 id="params-in-multipart-request">Params in Multipart Request<a class="headerlink" href="#params-in-multipart-request" title="Permanent link">&para;</a></h3>
 <p>It is typical that you want to parameterize text value or file path. It is important to make sure that you properly quote custom value. I.e.</p>
 <p>If we have a parameterized JSON Body:</p>
@@ -11414,11 +11428,13 @@
   <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart2.png" /></p>
 <p>Once parameters are defined for the <code>multipart</code> request, you should make sure that they are properly escaped. Consider using <code>JSON.stringify</code> appropriately, i.e.:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
 <span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;FilePathParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s1">&#39;NewAvatarImage.png&#39;</span><span class="p">)</span> <span class="p">));</span>
 </code></pre></div>
+
 <h2 id="passing-data-between-api-calls">Passing Data Between API Calls<a class="headerlink" href="#passing-data-between-api-calls" title="Permanent link">&para;</a></h2>
 <p>There are certain scenarios when it is convenient to pass dynamic data into a REST call or between consequent REST calls, i.e.:</p>
 <ol>
@@ -11438,6 +11454,7 @@
 <p><strong>BeforeRequest</strong> callback has a signature:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Before_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
 </code></pre></div>
+
 <p>i.e.:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Before_LibraryInformationSystem_Get_Session</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
 <span class="p">{</span>
@@ -11446,6 +11463,7 @@
     <span class="nx">request</span><span class="p">.</span><span class="nx">SetCredential</span><span class="p">(</span><span class="s1">&#39;librarian&#39;</span><span class="p">,</span> <span class="s1">&#39;librarian&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing <code>Session</code> global object and <code>request</code> object passed as a parameter. Parameter type is <a href="../../Libraries/RESTRequest/">RESTRequest</a>.</p>
 <h4 id="afterresponse-rest-callback">AfterResponse REST Callback<a class="headerlink" href="#afterresponse-rest-callback" title="Permanent link">&para;</a></h4>
 <p><strong>AfterResponse</strong> callback has a signature:</p>
@@ -11499,16 +11517,20 @@ i.e.
 <div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Get_Session&#39;</span><span class="p">);</span>
     <span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 </code></pre></div>
+
 <p>and when <strong>Record REST Objects</strong> is <code>false</code>:</p>
 <div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">Get_Session</span> <span class="o">=</span><span class="cm">/**RESTService*/</span><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
     <span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 </code></pre></div>
+
 <p>The way how <code>Session.GetRESTRequest</code> is recorded depends on <strong>Generate Short REST Path</strong>. In short mode the 1<sup>st</sup> parameter is just <code>&lt;filename&gt;.rest</code>, i.e.:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
 </code></pre></div>
+
 <p>While in long mode it is:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;%WORKDIR%\\LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
 </code></pre></div>
+
 <h3 id="negative-rest-tests">Negative REST Tests<a class="headerlink" href="#negative-rest-tests" title="Permanent link">&para;</a></h3>
 <p>Some actions are expected to return failure and we need to work with them to produce negative tests. There are two ways of doing it. First is global, so failures of all actions ignored. It is active when you choose <a href="../../Libraries/Session/#setignorestatus">Session.SetIgnoreStatus</a>. I.e.:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">SetIgnoreStatus</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
@@ -11517,6 +11539,7 @@ i.e.
 <span class="nx">FailingEndpoint2</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 <span class="nx">Session</span><span class="p">.</span><span class="nx">SetIgnoreStatus</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
 </code></pre></div>
+
 <p>If automatic status verification is disabled you expected to explicitly check the response returned from <code>DoExecute</code>.</p>
 <p><strong>Record Failed REST Actions</strong> <a href="../options_dialog/#api">controls</a> what to record when action returns status other than <strong>200</strong>. If it is <code>true</code> then recorded step has additional parameter <code>ignoreStatus=true</code>. This flag is only added then action has also failed during recording.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">FailingEndpoint1</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">({},</span> <span class="kc">true</span><span class="p">);</span>
@@ -11625,7 +11648,7 @@ i.e.
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10828,6 +10828,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11037,10 +11049,10 @@
 API can be found at:
 <a href="http://www.libraryinformationsystem.org/Services/RestService.aspx">www.libraryinformationsystem.org/Services/RestService.aspx</a>.</p>
 <h3 id="what-is-rest-and-what-is-a-restful-web-service">What is REST and what is a RESTful web service?<a class="headerlink" href="#what-is-rest-and-what-is-a-restful-web-service" title="Permanent link">&para;</a></h3>
-<!-- /* cSpell:disable */ -->
-<p><strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.</p>
+<p><!-- /* cSpell:disable */ -->
+<strong>RE**presentational **S**tate **T**ransfer (**REST</strong>) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.
 <!-- /* cSpell:enable */ -->
-<p>A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
+A RESTful web API (also called a RESTful web service) is a web API implemented using HTTP and REST principles. Unlike SOAP-based web services, there is no "official" standard for RESTful web APIs. This is because REST is an architectural style, unlike SOAP, which is a protocol.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Creating a REST web service test in Rapise consists of the following
 steps:</p>
@@ -11140,8 +11152,8 @@ steps:</p>
 <li><strong>Body:</strong> Pass a populated book object:
 <div class="highlight"><pre><span></span><code>    <span class="p">{</span>
         <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;Book Name&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;AuthorId&quot;</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
-        <span class="s2">&quot;GenreId&quot;</span><span class="o">:</span> <span class="mf">1</span>
+        <span class="s2">&quot;AuthorId&quot;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;GenreId&quot;</span><span class="o">:</span> <span class="mi">1</span>
     <span class="p">}</span>
 </code></pre></div></li>
 </ul>
@@ -11176,17 +11188,13 @@ steps:</p>
 <p>Now click the <code>Send</code> button and the request will get sent to the web service:</p>
 <p><img alt="tutorial_web_services_pic7" src="../img/tutorial_web_services_rest7.png" /></p>
 <p>The <code>Response Header</code> tab will display the headers coming back from the web service. The Status Code <strong>200 OK</strong> means that the request succeeded and that data was returned. If you click on the "<strong>Response Body - XML</strong>" tab, you will see the XML serialized data returned from the web service:</p>
-<p><img alt="tutorial_web_services_pic8" src="../img/tutorial_web_services_rest8.png" /></p>
+<p><img alt="tutorial_web_services_pic8" src="../img/tutorial_web_services_rest8.png" />
 <!-- /* cSpell:disable */ -->
-<p>Since Rapise uses JavaScript as its scripting language, it is usually easier to work with <strong>JSON</strong> (**J**ava**S**cript **O**bject **N**otation) serialized data rather than XML. In the case of the sample Library Information System web service, you can change the format that it accepts and retrieves by sending two special HTTP headers:</p>
+Since Rapise uses JavaScript as its scripting language, it is usually easier to work with <strong>JSON</strong> (<strong>J**ava**S**cript **O**bject **N**otation) serialized data rather than XML. In the case of the sample Library Information System web service, you can change the format that it accepts and retrieves by sending two special HTTP headers:
 <!-- /* cSpell:enable */ -->
+* **Content-Type</strong>: <code>application/json</code></p>
 <ul>
-<li>
-<p><strong>Content-Type</strong>: <code>application/json</code></p>
-</li>
-<li>
-<p><strong>Accept</strong>: <code>application/json</code></p>
-</li>
+<li><strong>Accept</strong>: <code>application/json</code></li>
 </ul>
 <p>To add these headers to the request, simply click on the <code>Add Header</code> button in toolbar:</p>
 <p><img alt="Add Header" src="../img/tutorial_web_services_rest_addheader.png" /></p>
@@ -11299,7 +11307,7 @@ function to open up the request:</p>
     <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;http://www.libraryinformationsystem.org/Services/RestService.svc/book?session_id={session_id} Response Body Text Comparison Result&#39;</span><span class="p">,</span> <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">GetResponseBodyText</span><span class="p">(),</span> <span class="s2">&quot;...long response body...&quot;</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoVerify</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book Response&#39;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span> <span class="mf">14</span><span class="p">);</span>
+    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoVerify</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book Response&#39;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">);</span>
     <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoVerify</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book Response&#39;</span><span class="p">,</span> <span class="s2">&quot;[0].Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Hound of the Baskervilles&quot;</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
     <span class="nx">LibraryInformationSystem_Add_Book</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
@@ -11309,6 +11317,7 @@ function to open up the request:</p>
     <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>If you click <code>Play</code> on this script as written, you will see that the tests to retrieve the books work correctly, but the test of adding a new book fails:</p>
 <p><img alt="tutorial_web_services_pic37" src="../img/tutorial_web_services_rest33.png" /></p>
 <p>This is as we'd expect since we've not populated the new book yet!</p>
@@ -11344,17 +11353,19 @@ function Test(params)
 //  /CODE</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
-<span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
-<span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">DoExecute</span><span class="p">({</span> <span class="s2">&quot;session_id&quot;</span><span class="p">:</span> <span class="n">sessionId</span> <span class="p">});</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">var LibraryInformationSystem_Get_Book=SeS(&#39;LibraryInformationSystem_Get_Book&#39;);</span>
+<span class="err">LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);</span>
+<span class="err">LibraryInformationSystem_Get_Book.DoExecute({ &quot;session_id&quot;: sessionId });</span>
 </code></pre></div>
 </td></tr></table>
+
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;length&quot;, 14);</span>
 <span class="err">LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;[0].Name&quot;, &quot;Hound of the Baskervilles&quot;);</span>
 </code></pre></div>
 </td></tr></table>
+
 <p>// CODE: Define new book
     //Add a book
     var newBook = {
@@ -11364,10 +11375,11 @@ function Test(params)
     };
 // /CODE</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
-<span class="n">LibraryInformationSystem_Add_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">var LibraryInformationSystem_Add_Book=SeS(&#39;LibraryInformationSystem_Add_Book&#39;);</span>
+<span class="err">LibraryInformationSystem_Add_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);</span>
 </code></pre></div>
 </td></tr></table>
+
 <p>// CODE: Supply newBook as a POST method body
     LibraryInformationSystem_Add_Book.SetRequestBodyObject(newBook)
 // /CODE
@@ -11383,6 +11395,7 @@ function Test(params)
 <span class="err">LibraryInformationSystem_Get_Book.DoExecute({ &quot;session_id&quot;: sessionId });</span>
 </code></pre></div>
 </td></tr></table>
+
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^
 // CODE: Check book count increased
     Tester.AssertEqual("Book Count", 15, LibraryInformationSystem_Get_Book.GetResponseBodyObject().length);
@@ -11406,6 +11419,7 @@ var sessionId =</code></p>
 <p>to actually store the value. We will also add a </p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">sessionId</span><span class="p">);</span>
 </code></pre></div>
+
 <p>line afterwards to write out the value of the sessionId to the test report. This will help us make sure we are getting back a valid response from the web service. You should now have the following code:</p>
 <p><img alt="tutorial_web_services_pic26" src="../img/tutorial_web_services_rest36.png" /></p>
 <p>Save this test and click <code>Play</code> to execute the test. You should now see a report similar to the following:</p>
@@ -11413,30 +11427,36 @@ var sessionId =</code></p>
 <p>Now we need to add the code to get the list of books. To do that, simply drag the <strong>"DoExecute"</strong> operation from under the <strong>"LibraryInformationSystem_Get_Book"</strong> object into the script editor. Then change the (<code>null</code>) argument to instead provide the session id as a JavaScript dictionary:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
 </code></pre></div>
+
 <p>To get the list of books as a JavaScript array, drag the <strong>"GetResponseBodyObject"</strong> property to the script editor, under the previous line. Then assign the value of this property to a variable such as "books":</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">books</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
 </code></pre></div>
+
 <p>Now we can add code to test that the number of books returned matches the expected value. Type in the following code:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 </code></pre></div>
+
 <p>You should now have the following code:</p>
 <p><img alt="tutorial_web_services_pic28" src="../img/tutorial_web_services_rest38.png" /></p>
 <p>Finally we need to add the code to add a new book to the system. To do that, simply drag the <strong>"DoExecute"</strong> operation from under the <strong>"Add_Book"</strong> object into the script editor. Then change the (<code>null</code>) argument to instead provide the session id as a Javascript dictionary:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
 </code></pre></div>
+
 <p>To provide the data for a new book, we will need to drag the <strong>"SetRequestBodyObject"</strong> property of the <strong>"Add_Book"</strong> object to the line <strong>above</strong> the DoExecute and pass in a populated JavaScript object:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">newBook</span> <span class="o">=</span> <span class="p">{};</span>
 <span class="nx">newBook</span><span class="p">.</span><span class="nx">Name</span> <span class="o">=</span> <span class="s1">&#39;A Christmas Carol&#39;</span><span class="p">;</span>
-<span class="nx">newBook</span><span class="p">.</span><span class="nx">AuthorId</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
-<span class="nx">newBook</span><span class="p">.</span><span class="nx">GenreId</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+<span class="nx">newBook</span><span class="p">.</span><span class="nx">AuthorId</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">newBook</span><span class="p">.</span><span class="nx">GenreId</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">).</span><span class="nx">SetRequestBodyObject</span><span class="p">(</span><span class="nx">newBook</span><span class="p">);</span>
 </code></pre></div>
+
 <p>Finally Add code to test that our new book was added correctly and the count has increased by one:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Books&#39;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
 <span class="nx">books</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Books&#39;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
-<span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span> <span class="mf">15</span><span class="p">,</span> <span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 </code></pre></div>
+
 <p>You should now have the following code:</p>
 <p><img alt="tutorial_web_services_pic29" src="../img/tutorial_web_services_rest39.png" /></p>
 <p>Save this test and click "Play" to execute the test. You should now see a report similar to the following:</p>
@@ -11544,7 +11564,7 @@ var sessionId =</code></p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

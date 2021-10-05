@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10830,6 +10830,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11053,13 +11065,14 @@
             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;RpaFolderMonitor|RpaQueue|RpaTimer&quot;</span><span class="p">,</span>
             <span class="nt">&quot;options&quot;</span><span class="p">:</span>
             <span class="p">{</span>
-                <span class="err">//</span> <span class="err">Op</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span> <span class="err">speci</span><span class="kc">f</span><span class="err">ic</span> <span class="kc">f</span><span class="err">or</span> <span class="kc">t</span><span class="err">he</span> <span class="err">age</span><span class="kc">nt</span> <span class="kc">t</span><span class="err">ype</span>
+                <span class="err">//</span> <span class="err">Options</span> <span class="err">specific</span> <span class="err">for</span> <span class="err">the</span> <span class="err">agent</span> <span class="err">type</span>
             <span class="p">}</span>
         <span class="p">}</span>
-        <span class="err">//</span> <span class="err">o</span><span class="kc">t</span><span class="err">her</span> <span class="err">age</span><span class="kc">nts</span>
+        <span class="err">//</span> <span class="err">other</span> <span class="err">agents</span>
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>RPA Monitor supports different types of agents.</p>
 <h2 id="agent-types">Agent Types<a class="headerlink" href="#agent-types" title="Permanent link">&para;</a></h2>
 <h3 id="rpaqueue">RpaQueue<a class="headerlink" href="#rpaqueue" title="Permanent link">&para;</a></h3>
@@ -11074,6 +11087,7 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>The queue ensures that commands are processed sequentially and no more than one Rapise test is executed at the same time.</p>
 <h3 id="rpafoldermonitor">RpaFolderMonitor<a class="headerlink" href="#rpafoldermonitor" title="Permanent link">&para;</a></h3>
 <p>This type of agent monitors a specific folder and triggers actions when new items are created, changed or deleted in this folder.</p>
@@ -11097,6 +11111,7 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Supported event names:</p>
 <ul>
 <li>created</li>
@@ -11122,15 +11137,18 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Timer interval is specified in milliseconds.</p>
 <h2 id="launching-rpa-monitor">Launching RPA Monitor<a class="headerlink" href="#launching-rpa-monitor" title="Permanent link">&para;</a></h2>
 <h3 id="from-command-line">From Command Line<a class="headerlink" href="#from-command-line" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>&quot;&lt;Rapise Bin Folder&gt;\RPAMonitor.exe&quot; &quot;&lt;path to JSON file with configuration&gt;&quot;
 </code></pre></div>
+
 <p>Usually <code>&lt;Rapise Bin Folder&gt;</code> is <code>C:\Program Files (x86)\Inflectra\Rapise\Bin</code></p>
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code>&quot;C:\Program Files (x86)\Inflectra\Rapise\Bin\RPAMonitor.exe&quot; &quot;c:\Demo\RPA\rpa_config.json&quot;
 </code></pre></div>
+
 <h3 id="from-rapise-menu">From Rapise Menu<a class="headerlink" href="#from-rapise-menu" title="Permanent link">&para;</a></h3>
 <p>Use menu <code>Tools &gt; RPA Monitor</code>. Rapise will search for <code>rpa_config.json</code> in the current test folder and its parent folders. Most nested <code>rpa_config.json</code> will be passed to the RPA Monitor.</p>
 <h2 id="running-spira-test-case">Running Spira Test Case<a class="headerlink" href="#running-spira-test-case" title="Permanent link">&para;</a></h2>
@@ -11138,6 +11156,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code>&quot;C:\Program Files (x86)\Inflectra\Rapise\Bin\RapiseLauncher.exe&quot; -testset:37 -project:8 -minimized
 </code></pre></div>
+
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://youtu.be/60MvOc76K5o">RPA Demo using Rapise and Dynamics NAV (video)</a></li>
@@ -11246,7 +11265,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

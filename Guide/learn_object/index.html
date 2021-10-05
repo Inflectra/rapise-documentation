@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10890,6 +10890,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11166,6 +11178,7 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe</span>
 </code></pre></div>
 </td></tr></table>
+
 <h2 id="step-2-create-a-new-test">Step 2. Create a New Test<a class="headerlink" href="#step-2-create-a-new-test" title="Permanent link">&para;</a></h2>
 <p>Start Rapise and create a new test, choose the <strong>Basic</strong> methodology, and call it <code>TwoDialogsRecording</code>. Select <code>JavaScript</code> scripting mode when prompted.</p>
 <h2 id="step-3-start-recording">Step 3. Start Recording<a class="headerlink" href="#step-3-start-recording" title="Permanent link">&para;</a></h2>
@@ -11183,6 +11196,7 @@
 <p>Rapise will return to be the foreground application, and it will have selected the <code>Main.js</code>. Notice that there is a single line or script that has been added to the script file:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
 </code></pre></div>
+
 <p>This line of script has two interesting parts.</p>
 <p>The <code>SeS("OK")</code> is the identity (not the locator or location) of the <code>OK</code> button. This is the object that was learned during recording.</p>
 <p>The <code>DoAction()</code> is the instruction to the running script to take the action associated with a button.  A normal button has only a single possible action - to be pressed.</p>
@@ -11194,6 +11208,7 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe</span>
 </code></pre></div>
 </td></tr></table>
+
 <h2 id="step-2-create-a-new-test_1">Step 2. Create a New Test<a class="headerlink" href="#step-2-create-a-new-test_1" title="Permanent link">&para;</a></h2>
 <p>Start Rapise and create a new test, choose the <strong>Basic</strong> methodology, and call it <code>TwoDialogsLearn</code>. Select <code>JavaScript</code> scripting mode when prompted.</p>
 <h2 id="step-3-start-recording_1">Step 3. Start Recording<a class="headerlink" href="#step-3-start-recording_1" title="Permanent link">&para;</a></h2>
@@ -11223,6 +11238,7 @@ available for all Windows objects.</p>
 <p>In the automated (recorded) section above, you saw that when you pressed the OK button on the dialog, Rapise recorded a function like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
 </code></pre></div>
+
 <p>This time, you will use the established name of the <code>OK</code> button object, but do something a little more interesting than its default action to demonstrate how to use Rapise.</p>
 <p>Move the cursor into the editor part of the Rapise and make sure you are editing the file called <code>Main.js</code>.  At the moment, this file still looks something like this:</p>
 <div class="highlight"><pre><span></span><code>//########## Script Steps ##############
@@ -11234,9 +11250,11 @@ function Test(params)
 
 g_load_libraries=[&quot;UIAutomation&quot;];
 </code></pre></div>
+
 <p>Between the open and close brace, add the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 </code></pre></div>
+
 <p>Hit the <code>Play</code> button and watch what happens.</p>
 <p>The click will register as a command to the object and it will perform the action on the object.</p>
 <p>While we have the context of this situation, let's complicate it just a little more to illustrate the intricacy as well as the flexibility of Rapise.</p>
@@ -11249,6 +11267,7 @@ g_load_libraries=[&quot;UIAutomation&quot;];
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">();</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">();</span>
 </code></pre></div>
+
 <p>in order to make the "click" happen.</p>
 <p>Try this in the test script you have created by adding those two lines of code in place of the <code>DoClick()</code> line.</p>
 <p>It doesn't work!</p>
@@ -11262,21 +11281,23 @@ g_load_libraries=[&quot;UIAutomation&quot;];
 <p>Before we can expect <code>DoLButtonDown()</code> and <code>DoLButtonUp()</code> methods to work, we have to first the mouse cursor to the button.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mf">25</span><span class="p">,</span> <span class="mf">15</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">15</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">();</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>will accomplish that.</p>
 <p>Notice that Rapise will actually move the mouse to the coordinates (25, 15)  within the <code>OK</code> button.  Also notice that if you move the mouse while the test is playing, you will make the test fail.</p>
 <p>As a last experiment in this arena, try moving the mouse outside the boundaries of the <code>OK</code> button object before calling the <code>DoLButtonDown()</code> function.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mf">250</span><span class="p">,</span> <span class="mf">150</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">150</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">();</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Once again, the script will fail.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
@@ -11384,7 +11405,7 @@ g_load_libraries=[&quot;UIAutomation&quot;];
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

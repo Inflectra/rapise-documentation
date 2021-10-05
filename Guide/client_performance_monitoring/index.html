@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10808,6 +10808,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11053,6 +11065,7 @@
 <p>First, connect to the NeoLoad. When this call is executed NeoLoad must be running a script, otherwise an error will be returned.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CreateClient</span><span class="p">(</span><span class="s2">&quot;hardware1&quot;</span><span class="p">,</span> <span class="s2">&quot;location1&quot;</span><span class="p">,</span> <span class="s2">&quot;Broadcom 802.11ac Network Adapter \_2&quot;</span><span class="p">);</span>
 </code></pre></div>
+
 <p>Let’s look at the following block:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureHostPerformance</span><span class="p">();</span>
 <span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">StartTransaction</span><span class="p">(</span><span class="s1">&#39;T Home&#39;</span><span class="p">);</span>
@@ -11062,14 +11075,16 @@
 <span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureBrowserPerformance</span><span class="p">(</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username\_&#39;</span><span class="p">).</span><span class="nx">GetPageURL</span><span class="p">());</span>
 <span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">EndTransaction</span><span class="p">(</span><span class="s1">&#39;T Home&#39;</span><span class="p">);</span>
 </code></pre></div>
+
 <ul>
 <li>CaptureHostPerformance call sends immediate values of CPU, Memory and Network load to the NeoLoad controller.</li>
 <li>StartTransaction/EndTransaction calls define a transaction with name ‘T Home’. Upon EndTransaction call the duration of it is sent to the NeoLoad controller.</li>
 <li>CalculateBrowserPerformance call sends page load performance metrics to the NeoLoad controller.</li>
 </ul>
 <p>There is also a general call that can send any user-defined metric to the NeoLoad controller:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CapturePerformanceValue</span><span class="p">(</span><span class="s2">&quot;First Level Folder&quot;</span><span class="p">,</span> <span class="s2">&quot;Transaction1|Duration&quot;</span><span class="p">,</span> <span class="s2">&quot;milliseconds&quot;</span><span class="p">,</span> <span class="mf">120</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CapturePerformanceValue</span><span class="p">(</span><span class="s2">&quot;First Level Folder&quot;</span><span class="p">,</span> <span class="s2">&quot;Transaction1|Duration&quot;</span><span class="p">,</span> <span class="s2">&quot;milliseconds&quot;</span><span class="p">,</span> <span class="mi">120</span><span class="p">);</span>
 </code></pre></div>
+
 <p>Components of the second parameters can be separated by |. It allows to add more levels to the tree.</p>
                 
               
@@ -11173,7 +11188,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

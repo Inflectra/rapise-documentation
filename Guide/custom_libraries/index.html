@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10803,6 +10803,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -10997,6 +11009,7 @@
     <span class="nx">behavior</span><span class="o">:</span> <span class="p">[</span><span class="o">*</span><span class="nx">yourAppBehavior</span><span class="o">*</span><span class="p">]</span>
 <span class="p">})</span>
 </code></pre></div>
+
 <p><strong>Override Actions</strong>: Override actions in <strong>yourAppBehavior</strong> (above). The action definitions you provides will be used during <a href="../playback/">Playback</a>. Overriding actions does not affect recording.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">HTMLFirefoxBehavior</span> <span class="o">=</span>
 <span class="p">{</span>
@@ -11010,6 +11023,7 @@
     <span class="p">}]</span>
  <span class="p">}</span>
 </code></pre></div>
+
 <h2 id="full-support">Full Support<a class="headerlink" href="#full-support" title="Permanent link">&para;</a></h2>
 <p><strong>Enable Recording</strong>:  You can enable recording in two ways. If your application notifies the Accessibility Events interface about application events, you can override events in the <strong>behavior</strong> section of <strong>SeSMatcherRules</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">newBehavior</span> <span class="o">=</span> <span class="p">{</span>
@@ -11033,6 +11047,7 @@
     <span class="nx">behavior</span><span class="o">:</span> <span class="p">[</span><span class="nx">newBehavior</span><span class="p">],</span>
  <span class="p">})</span>
 </code></pre></div>
+
 <p>Otherwise, you will have to implement <strong>Custom Recording</strong>.</p>
 <p><strong>Custom Recording</strong>: With custom recording, it is the library's responsibility to:</p>
 <ul>
@@ -11159,7 +11174,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

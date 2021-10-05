@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10780,6 +10780,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -10948,11 +10960,13 @@ code:</p>
     <span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="s1">&#39;C:\Windows\system32\mspaint.exe&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Now go to the <strong>Manual Steps</strong> section of Rapise by clicking on the <code>Tools &gt; Manual Steps</code> menu.</p>
 <p>Inside the first test step (for example), change the <strong>Description</strong> to the following:</p>
 <div class="highlight"><pre><span></span><code><span class="err">@</span><span class="nx">LaunchMsPaint</span><span class="p">();</span>
 <span class="c1">//User starts up the MS-Paint Application</span>
 </code></pre></div>
+
 <p>This will be contained within the actual test step itself:</p>
 <p><img alt="semi_manual_1" src="../img/semi_manual_testing1.png" /></p>
 <p>Now, when you execute the test (using the normal <strong>Execute</strong> button on the main <a href="../menu_and_toolbars/#main-toolbar">Test toolbar</a> (<strong><em>not</em></strong> the Execute Manual icon on the <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a> ) what happens is that Rapise will execute the main <code>Test()</code> function that contains:</p>
@@ -10965,6 +10979,7 @@ code:</p>
 
 <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Generic&quot;</span><span class="p">];</span>
 </code></pre></div>
+
 <p>this instructs Rapise to use the <a href="../manual_playback/">manual
 playback</a> system.
 However when it gets to the first step, it will see the ampersand symbol
@@ -10973,6 +10988,7 @@ call the following code:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">//User starts up the MS-Paint Application</span>
 <span class="nx">LaunchMsPaint</span><span class="p">();</span>
 </code></pre></div>
+
 <p>Once the scenario has completed, Rapise will then return back to the
 manual test playback.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
@@ -11083,7 +11099,7 @@ manual test playback.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -11226,6 +11226,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11767,6 +11779,7 @@
     <span class="nx">KillBrowser</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>This code will check to see if the variables are provided by SpiraTest and if not, it will use some defaults. This is useful when you want to be able to run the test directly from Rapise and from SpiraTest without having to make changes to the test script.</p>
 <p>Note, that if your test is implemented in RVL, you may define these variables right in RVL sheet using <a href="../../RVL/Variables/#assigning">Global Variables</a>. So same definition would look like:</p>
 <p><img alt="automation hosts" src="../img/using_rapise_with_spiratest_rvl_vars.png" /></p>
@@ -11774,6 +11787,7 @@
 <p>The <code>g_browser_library</code> variable is used to specify which browser should run the test. This is done with the following command, located in the <code>CreateNewBook.js</code> file:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;%g_browser_library:Internet Explorer HTML%&quot;</span><span class="p">];</span>
 </code></pre></div>
+
 <p>This tells Rapise to use either the <code>g_browser_library</code> variable (if defined) or fallback to using Internet Explorer if not.</p>
 <blockquote>
 <p><strong>Note:</strong> Parameters in Rapise and SpiraTest are case-sensitive, so make sure that your parameter names in SpiraTest match those in Rapise exactly, including the specific case.</p>
@@ -11932,9 +11946,11 @@ Inflectra</code> program folder:</p>
 <p><strong>-param:[name]=[value]</strong> sets a global variable for every executed test. For example:</p>
 <div class="highlight"><pre><span></span><code>-param:g_enableVideoRecording=true
 </code></pre></div>
+
 <p>Param argument can be used multiple times:</p>
 <div class="highlight"><pre><span></span><code>-param:g_verboseLevel=3 -param:g_enableVideoRecording=true
 </code></pre></div>
+
 </li>
 <li>
 <p><strong>-poll</strong> forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.</p>
@@ -11946,6 +11962,7 @@ Inflectra</code> program folder:</p>
 <p><strong>-width:[width] -height:[height]</strong> sets the screen resolution. Width must be in the range <code>[1024, 7680]</code>, height - <code>[768, 4320]</code>. Allowed width/height combinations are determined by the operating system where you run RapiseLauncher. Most typical resolutions are </p>
 <div class="highlight"><pre><span></span><code>[1024, 768], [1280, 720], [1920, 1080]
 </code></pre></div>
+
 </li>
 <li>
 <p><strong>filename</strong> must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution on. Optional.</p>
@@ -11960,6 +11977,7 @@ Inflectra</code> program folder:</p>
 <p>By default the video recorder is executed with these parameters:</p>
 <div class="highlight"><pre><span></span><code>-noaudio -bitRate 512 -frameRate 2
 </code></pre></div>
+
 <p>You may change them by defining a Test Case parameter with name <code>g_videoRecorderArguments</code>.</p>
 <p>Recorded video is attached to the test run as ScreenCapture.wmv.</p>
 <h3 id="using-test-set-attachments">Using Test Set Attachments<a class="headerlink" href="#using-test-set-attachments" title="Permanent link">&para;</a></h3>
@@ -11968,6 +11986,7 @@ Inflectra</code> program folder:</p>
 <p><em>Example Usage:</em></p>
 <div class="highlight"><pre><span></span><code>    <span class="nx">Global</span><span class="p">.</span><span class="nx">GetProperty</span><span class="p">(</span><span class="s2">&quot;Url&quot;</span><span class="p">,</span> <span class="s2">&quot;http://default/url&quot;</span><span class="p">,</span> <span class="s2">&quot;%ARTIFACTS%/Config.xlsx&quot;</span><span class="p">);</span>
 </code></pre></div>
+
 <p>So by default it would load <code>Config.xlsx</code>  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file <code>Config.xlsx</code> attached then will be used to read the <code>Url</code> property.</p>
 <h3 id="parameters-passed-from-rapiselauncher-to-rapise">Parameters Passed from RapiseLauncher to Rapise<a class="headerlink" href="#parameters-passed-from-rapiselauncher-to-rapise" title="Permanent link">&para;</a></h3>
 <p>When RapiseLauncher runs a test it passes a bunch of global variables to it. Those variables describe project, test set, test case and release scope of the test.</p>
@@ -12080,7 +12099,7 @@ Inflectra</code> program folder:</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

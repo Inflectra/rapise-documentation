@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10952,6 +10952,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11408,6 +11420,7 @@
 <p>Appends a column with specified name.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAddColumn</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11433,6 +11446,7 @@
 <p>Appends a new row.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAddRow</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
 <p><a name="see.also.spreadsheet.doaddrow"></a></p>
@@ -11441,6 +11455,7 @@
 <p>Loads a sheet from Excel file (.xls, <em>.xlsx) or csv file (</em>.txt, *.csv).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">sheetName</span><span class="p">,</span> <span class="nx">separator</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11477,6 +11492,7 @@
 and all cell values must be equal. When strict mode is off then spreadsheet2 must contain spreadsheet1 to return 'true' as a result.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCompare</span><span class="p">(</span><span class="nx">spreadsheet1</span><span class="p">,</span> <span class="nx">spreadsheet2</span><span class="p">,</span> <span class="nx">strict</span><span class="p">,</span> <span class="nx">sheet1Name</span><span class="p">,</span> <span class="nx">sheet2Name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11522,6 +11538,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p>Creates a new spreadsheet file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCreate</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">sheetName</span><span class="p">,</span> <span class="nx">columnNames</span><span class="p">,</span> <span class="nx">rowCount</span><span class="p">,</span> <span class="nx">separator</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11567,6 +11584,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p>Inserts a column at index.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoInsertColumn</span><span class="p">(</span><span class="nx">columnIndex</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11597,6 +11615,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p>Inserts a new row at index.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoInsertRow</span><span class="p">(</span><span class="nx">rowIndex</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11622,6 +11641,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p>Moves to a first row in selected range.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToFirstRow</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
 <p><a name="see.also.spreadsheet.domovetofirstrow"></a></p>
@@ -11630,6 +11650,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p>Moves to a last row in selected range.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToLastRow</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
 <p><a name="see.also.spreadsheet.domovetolastrow"></a></p>
@@ -11638,6 +11659,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p>Sets active row index.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11665,6 +11687,7 @@ or it is the default range that includes all rows (except first row
 which is considred to contain column names) and columns on the sheet.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRandom</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>boolean: false if the spreadhseet is not attached, true otherwise.</p>
 <p><a name="see.also.spreadsheet.dorandom"></a></p>
@@ -11673,6 +11696,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 <p>Removes a column at index.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveColumn</span><span class="p">(</span><span class="nx">columnIndex</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11698,6 +11722,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 <p>Removes a row at index.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRow</span><span class="p">(</span><span class="nx">rowIndex</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11723,6 +11748,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 <p>Saves the spreadsheet.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSave</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11752,6 +11778,7 @@ When the end of the range is reached DoSequential stays at the last
 row in the range and returns 'false'.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSequential</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>boolean: false if being called when active row is the last row or the spreadsheet is not attached, true otherwise.</p>
 <p><a name="see.also.spreadsheet.dosequential"></a></p>
@@ -11760,6 +11787,7 @@ row in the range and returns 'false'.</p>
 <p>Cell value by its coordinates. Refers to active cell value after DoSequential or DoRandom if params not set.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCell</span><span class="p">(</span><span class="nx">columnId</span><span class="p">,</span> <span class="nx">rowId</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11790,6 +11818,7 @@ row in the range and returns 'false'.</p>
 <p>Gets columns count.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetColumnCount</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>number: Number of columns in the spreadsheet. -1 if no spreadsheet is attached.</p>
 <p><a name="see.also.spreadsheet.getcolumncount"></a></p>
@@ -11798,6 +11827,7 @@ row in the range and returns 'false'.</p>
 <p>Gets column index by its name.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetColumnIndexByName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11823,6 +11853,7 @@ row in the range and returns 'false'.</p>
 <p>Gets column name.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11848,6 +11879,7 @@ row in the range and returns 'false'.</p>
 <p>Gets zero-based active row index.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCurrentRowIndex</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>number: Active row index.</p>
 <p><a name="see.also.spreadsheet.getcurrentrowindex"></a></p>
@@ -11856,6 +11888,7 @@ row in the range and returns 'false'.</p>
 <p>Gets EOF state.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetEOF</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>boolean: false if spreadsheet is attached and active row and column point to existing cell, true otherwise.</p>
 <p><a name="see.also.spreadsheet.geteof"></a></p>
@@ -11864,6 +11897,7 @@ row in the range and returns 'false'.</p>
 <p>Cell range used in DoSequential and in DoRandom.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetRange</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>object: Spreadsheet state object: { startRow, endRow, startCol, endCol, activeRow, activeColumn }.</p>
 <p><a name="see.also.spreadsheet.getrange"></a></p>
@@ -11872,6 +11906,7 @@ row in the range and returns 'false'.</p>
 <p>Gets row count.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetRowCount</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><strong>Returns:</strong></p>
 <p>number: Number of rows in the spreadsheet including the row with column names. -1 if no spreadsheet is attached.</p>
 <p><a name="see.also.spreadsheet.getrowcount"></a></p>
@@ -11880,6 +11915,7 @@ row in the range and returns 'false'.</p>
 <p>Sets cell value by its coordinates. Sets active cell value after DoSequential or DoRandom if params not set.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetCell</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">columnId</span><span class="p">,</span> <span class="nx">rowId</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11915,6 +11951,7 @@ row in the range and returns 'false'.</p>
 <p>Cell range used in DoSequential and in DoRandom.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetRange</span><span class="p">(</span><span class="nx">startRow</span><span class="p">,</span> <span class="nx">endRow</span><span class="p">,</span> <span class="nx">startCol</span><span class="p">,</span> <span class="nx">endCol</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12054,7 +12091,7 @@ row in the range and returns 'false'.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

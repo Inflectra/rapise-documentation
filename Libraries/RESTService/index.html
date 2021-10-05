@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10939,6 +10939,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11408,6 +11420,7 @@ Sample code:</p>
 <span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span> <span class="o">=</span> <span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
+
 <p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
 <p>Type: object</p>
 <p>Accessors: GetCredential, SetCredential</p>
@@ -11448,13 +11461,14 @@ Sample code:</p>
 <p>The list of parameters available for this request url.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">parameters</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetParameters</span><span class="p">();</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">parameters</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">parameters</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">token</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">TokenName</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Type: object</p>
 <p>Accessors: GetParameters, SetParameters</p>
 <p><a name="RequestBodyObject"></a></p>
@@ -11463,11 +11477,12 @@ Sample code:</p>
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="p">{};</span>
 <span class="nx">book</span><span class="p">.</span><span class="nx">Name</span> <span class="o">=</span> <span class="s2">&quot;A Christmas Carol&quot;</span><span class="p">;</span>
-<span class="nx">book</span><span class="p">.</span><span class="nx">AuthorId</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
-<span class="nx">book</span><span class="p">.</span><span class="nx">GenreId</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+<span class="nx">book</span><span class="p">.</span><span class="nx">AuthorId</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">book</span><span class="p">.</span><span class="nx">GenreId</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Insert_Book&quot;</span><span class="p">).</span><span class="nx">SetRequestBodyObject</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Insert_Book&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
 </code></pre></div>
+
 <p>Type: object</p>
 <p>Accessors: GetRequestBodyObject, SetRequestBodyObject</p>
 <p><a name="RequestBodyText"></a></p>
@@ -11502,12 +11517,13 @@ Sample code:</p>
 <p>The list of HTTP headers that are part of this request.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetRequestHeaders</span><span class="p">();</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Type: object</p>
 <p>Accessors: GetRequestHeaders, SetRequestHeaders</p>
 <p><a name="ResponseBodyObject"></a></p>
@@ -11517,6 +11533,7 @@ Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span> <span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
 <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
 </code></pre></div>
+
 <p>Type: object</p>
 <p>Accessors: GetResponseBodyObject</p>
 <p><a name="ResponseBodyText"></a></p>
@@ -11529,12 +11546,13 @@ Sample code:</p>
 <p>Returns the list of HTTP headers returned from the HTTP response.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetResponseHeaders</span><span class="p">();</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Type: object</p>
 <p>Accessors: GetResponseHeaders</p>
 <p><a name="ResponseIsErrorStatus"></a></p>
@@ -11568,8 +11586,10 @@ Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span> <span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
 <span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
 </code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="nx">DoExecute</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">ignoreStatus</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11600,6 +11620,7 @@ Sample code:</p>
 <p>Remove one pre-defined parameter. Requires Rapise 6.6+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11623,6 +11644,7 @@ Sample code:</p>
 <p>Remove one pre-defined request header by name. Requires Rapise 6.6+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11646,6 +11668,7 @@ Sample code:</p>
 <p>Checks that a given part of response equals the expected value.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoVerify</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">jsonPath</span><span class="p">,</span> <span class="nx">expectedValue</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11780,7 +11803,7 @@ Sample code:</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

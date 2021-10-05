@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -11016,6 +11016,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11658,12 +11670,14 @@
 <p>Performs default action for an object. If the object doesn't have default action then 'LClick' is performed.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAction</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.doaction"></a></p>
 <p><a name="DoAnalogPlay"></a>    </p>
 <h4 id="doanalogplay">DoAnalogPlay<a class="headerlink" href="#doanalogplay" title="Permanent link">&para;</a></h4>
 <p>Plays analog recording using coordinates relative to this object.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAnalogPlay</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">top</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11697,6 +11711,7 @@
 <p>Performs left click at the center of an object. It is a customizable variant of LClick action.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoClick</span><span class="p">(</span><span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11732,24 +11747,28 @@
 <p>Makes sure specified element is visible on the screen.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoEnsureVisible</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.doensurevisible"></a></p>
 <p><a name="DoLButtonDown"></a>    </p>
 <h4 id="dolbuttondown">DoLButtonDown<a class="headerlink" href="#dolbuttondown" title="Permanent link">&para;</a></h4>
 <p>Performs left mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoLButtonUp', otherwise it may lock mouse cursor.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoLButtonDown</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.dolbuttondown"></a></p>
 <p><a name="DoLButtonUp"></a>    </p>
 <h4 id="dolbuttonup">DoLButtonUp<a class="headerlink" href="#dolbuttonup" title="Permanent link">&para;</a></h4>
 <p>Performs left mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoLButtonDown', otherwise it will have no effect.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoLButtonUp</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.dolbuttonup"></a></p>
 <p><a name="DoLClick"></a>    </p>
 <h4 id="dolclick">DoLClick<a class="headerlink" href="#dolclick" title="Permanent link">&para;</a></h4>
 <p>Performs a left click at the center of an object or at the specified location.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoLClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11780,6 +11799,7 @@
 <p>Performs a left double click at the center of an object or at the specified location.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoLDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11810,18 +11830,21 @@
 <p>Performs middle mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoMButtonUp', otherwise it may lock mouse cursor.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMButtonDown</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.dombuttondown"></a></p>
 <p><a name="DoMButtonUp"></a>    </p>
 <h4 id="dombuttonup">DoMButtonUp<a class="headerlink" href="#dombuttonup" title="Permanent link">&para;</a></h4>
 <p>Performs middle mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoMButtonDown', otherwise it will have no effect.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMButtonUp</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.dombuttonup"></a></p>
 <p><a name="DoMClick"></a>    </p>
 <h4 id="domclick">DoMClick<a class="headerlink" href="#domclick" title="Permanent link">&para;</a></h4>
 <p>Performs a middle click at the center of an object or at the specified location.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11852,6 +11875,7 @@
 <p>Performs a middle double click at the center of an object or at the specified location.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11882,6 +11906,7 @@
 <p>Moves mouse cursor to a location relative to this object position.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMouseMove</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11910,18 +11935,21 @@
 <p>Performs right mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoRButtonUp', otherwise it may lock mouse cursor.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRButtonDown</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.dorbuttondown"></a></p>
 <p><a name="DoRButtonUp"></a>    </p>
 <h4 id="dorbuttonup">DoRButtonUp<a class="headerlink" href="#dorbuttonup" title="Permanent link">&para;</a></h4>
 <p>Performs right mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoRButtonDown', otherwise it will have no effect.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRButtonUp</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.simplegraphics.dorbuttonup"></a></p>
 <p><a name="DoRClick"></a>    </p>
 <h4 id="dorclick">DoRClick<a class="headerlink" href="#dorclick" title="Permanent link">&para;</a></h4>
 <p>Performs a right click at the center of an object or at the specified location.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11952,6 +11980,7 @@
 <p>Performs a right double click at the center of an object or at the specified location.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11982,6 +12011,7 @@
 <p>Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a></p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12005,6 +12035,7 @@
 <p>Sends text to the active application as is (while SendKeys also supports sending special keys).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSendText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12127,7 +12158,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({

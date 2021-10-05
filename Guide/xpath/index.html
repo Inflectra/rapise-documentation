@@ -289,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_0/" class="md-tabs__link">
+      <a href="../../New/7_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10821,6 +10821,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_1/" class="md-nav__link">
+        Release Notes for 7.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_0/" class="md-nav__link">
         Release Notes for 7.0
       </a>
@@ -11027,10 +11039,12 @@
 <p>Web pages sometimes use <strong>HTML</strong> frames. The XPath works inside the frame contents. Rapise has a special syntax (that is not part of standard XPath) to combine multiple XPath statements into a single line:</p>
 <div class="highlight"><pre><span></span><code>//frame[@name=&#39;main&#39;]@@@//a[3]
 </code></pre></div>
+
 <p>The special statement <code>@@@</code> is used as a separator for XPath statements pointing to constituent frames.</p>
 <p>The top-level frame is found by name <code>main</code></p>
 <div class="highlight"><pre><span></span><code>//frame[@name=&#39;main&#39;]
 </code></pre></div>
+
 <p>Then the frame's contents are searched for the third <code>&lt;a&gt;</code> element (i.e. 3<sup>rd</sup> link on a page).</p>
 <h2 id="automatic-xpath-generation-on-record-and-learn">Automatic XPath Generation on Record and Learn<a class="headerlink" href="#automatic-xpath-generation-on-record-and-learn" title="Permanent link">&para;</a></h2>
 <p>When you do a <a href="../recording/">recording</a> session, interact with web elements or <a href="../object_learning/">learn</a> them - Rapise generates XPath <a href="https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx">locators</a> for the elements. You can view XPath of an object in the property grid:</p>
@@ -11048,12 +11062,14 @@
 <p>you can search by its name using <code>text()</code> XPath function:</p>
 <div class="highlight"><pre><span></span><code>//td[text()=&#39;Oliver Twist&#39;]
 </code></pre></div>
+
 <p>Then learn this object as <strong>Oliver_Twist</strong> so that you can access it in your code as <code>SeS("Oliver_Twist")</code>. Every time you call a function on <strong>Oliver_Twist</strong>, Rapise will use the learned XPath expression and use that to evaluate which HTML element in the web page to access.</p>
 <h2 id="dynamic-queries">Dynamic Queries<a class="headerlink" href="#dynamic-queries" title="Permanent link">&para;</a></h2>
 <p>In addition to learning objects based on specific XPath, there is <a href="/Libraries/HTMLObject/#DoDOMQueryXPath">HTMLObject.DoDOMQueryXPath</a> action that can be used to query for elements in the web page:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;MainContent_grdBooks&#39;</span><span class="p">).</span><span class="nx">DoDOMQueryXPath</span><span class="p">(</span><span class="s1">&#39;.//td[text()=&quot;Oliver Twist&quot;]&#39;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 </code></pre></div>
+
 <p>This will dynamically query for any HTML element that is a child of the learned <strong>MainContent_grdBooks</strong> object that matches the XPath. In this example it will look for any table cell that has the content of the book name.</p>
 <p>You can also find an object dynamically without having any object in the object tree. To do this use <a href="/Libraries/Navigator/#Find">Navigator.Find</a> action.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
@@ -11163,7 +11179,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.config.lang": "en", "clipboard.copied": "Copied to clipboard", "search.result.one": "1 matching document", "search.result.more.one": "1 more on this page", "search.result.term.missing": "Missing", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copy": "Copy to clipboard", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({
