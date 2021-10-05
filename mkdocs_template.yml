@@ -395,6 +395,7 @@ nav:
     - 'Training': 'Intro/training.md'
     - 'Playground': 'Intro/uitap.md'
 - 'Release Notes':
+    - 'Release Notes for 7.1': 'New/7_1.md'
     - 'Release Notes for 7.0': 'New/7_0.md'
     - 'Release Notes for 6.7': 'New/6_7.md'
     - 'Release Notes for 6.6': 'New/6_6.md'
