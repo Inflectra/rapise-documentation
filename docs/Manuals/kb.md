@@ -3,6 +3,18 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB608', 'What `Blocked` status means for a Test Run')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB608.aspx">KB608</a> What `Blocked` status means for a Test Run
+
+When you run a test with Spira (via RapiseLauncher) you may get a `Blocked` status for a test run. It is displayed in the Test Runs view and Test Sets view both in Spira and Spira Dahboard in Rapise.
+
+### <a onclick="return RegisterKbClick('KB603', 'The 2021 release wave 2 for Dynamics 365 for Sales')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB603.aspx">KB603</a> The 2021 release wave 2 for Dynamics 365 for Sales
+
+The 2021 release wave 2 for Dynamics 365 contains hundreds of new features across Dynamics 365 applications. If you are using Rapise to test a Dynamics 365 for Sales instance you may be affected by the coming changes. To help you update existing tests we summarized differences (important for UI automation) between old and new versions of Dynamics 365 for Sales.
+
+### <a onclick="return RegisterKbClick('KB602', 'Auto start/stop Azure VM to run UI tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB602.aspx">KB602</a> Auto start/stop Azure VM to run UI tests
+
+If you are using a Microsoft Azure VM to run UI tests  and do not want to keep the VM always running (to save budget) you may configure automatic start/stop and auto logon for the machine.
+
 ### <a onclick="return RegisterKbClick('KB600', 'Change the default Screenshot folder')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB600.aspx">KB600</a> Change the default Screenshot folder
 
 If a test is configured to capture screenshots during playback - Rapise puts then into Reports folder in the working directory of the test. If you want to copy screenshots to a different location or instruct Rapise to put images into a different folder - check out this article.
