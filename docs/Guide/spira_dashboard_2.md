@@ -99,11 +99,18 @@ Plus icon in a table row means that it can be expanded. Click the icon to reveal
 
 ![Row Details](./img/spira_dashboard_row_details.png)
 
+!!! note
+	Since Rapise 7.1 you may use double click to expand/collapse row details. Double click anywhere on the row you want to expand/collapse.
+
 ### Tree View
 
 Test cases and test sets may be placed into folders in Spira. The dashboard loads folder hierarchy. To navigate it click on folder icons.
 
 <img alt="Folder Tree" src="/Guide/img/spira_dashboard_tree.png" width="386"/>
+
+!!! note
+	Since Rapise 7.1 you may use double click to expand/collapse folders. Double click anywhere on the row with folder you want to expand/collapse.
+
 
 ### Actions
 
@@ -135,13 +142,16 @@ If you did not assign an automation host token to the machine where Rapise is ru
 
 The dashboard view shows tests included in the currently opened test framework (parent test and it's sub-tests).
 
+!!! note
+	Since Rapise 7.1 you may double click a test in this table to open it in Rapise.
+
 #### View Test Runs in Progress
 
 View test runs that are in progress right now.
 
-#### View Pending Test Runs for This Host
+#### View Pending Test Runs
 
-View tests that are scheduled to run on the local host for the next 24 hours.
+View tests that are scheduled to run for the next 24 hours.
 
 #### Setup Custom Properties
 
@@ -174,10 +184,6 @@ Action menu for a test allows to
 1. Open the test in Rapise
 2. Link the test to a test case in Spira
 3. Execute the test (if linked to a test case) via RapiseLauncher on the local machine or a selected automation host. Requires Rapise 7.1+.
-
-### Pending Test Runs View
-
-This view displays scheduled test runs that must be executed within next 24 hours.
 
 ### Test Cases View
 
