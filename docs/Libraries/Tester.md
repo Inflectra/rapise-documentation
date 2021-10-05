@@ -35,8 +35,22 @@ Tester object. Use it to perform assertions during test playback and output rele
 | ----------- | --------------- |
 |	[AddImageToReport](#addimagetoreport) | Adds image to the report. |
 |	[Assert](#assert) | Checks if condition is 'true' and saves corresponding Report entry. |
+|	[AssertContains](#assertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
+|	[AssertEndsWith](#assertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
 |	[AssertEqual](#assertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
+|	[AssertFalse](#assertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
+|	[AssertGreater](#assertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
+|	[AssertGreaterOrEqual](#assertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
 |	[AssertImage](#assertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
+|	[AssertLess](#assertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
+|	[AssertLessOrEqual](#assertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
+|	[AssertNotContains](#assertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
+|	[AssertNotEqual](#assertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
+|	[AssertNotNull](#assertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
+|	[AssertNotSet](#assertnotset) | Checks if `val` is not set (i.e. |
+|	[AssertNull](#assertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
+|	[AssertSet](#assertset) | Checks if `val` is set (i.e. |
+|	[AssertStartsWith](#assertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
 |	[BeginTest](#begintest) | Marks beginning of a test with a given name. |
 |	[CaptureDesktopImage](#capturedesktopimage) | Captures screenshot of the desktop and adds it to the report. |
 |	[CaptureObjectImage](#captureobjectimage) | Captures screenshot of an object and adds it to the report. |
@@ -58,6 +72,22 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[SetReportAttribute](#setreportattribute) | Set persistent attribute. |
 |	[SoftAssert](#softassert) | Is identical to Tester.Assert. |
 |	[SoftAssertAll](#softassertall) | Fail test if there were any previous failures. |
+|	[SoftAssertContains](#softassertcontains) |  |
+|	[SoftAssertEndsWith](#softassertendswith) |  |
+|	[SoftAssertEqual](#softassertequal) |  |
+|	[SoftAssertFalse](#softassertfalse) |  |
+|	[SoftAssertGreater](#softassertgreater) |  |
+|	[SoftAssertGreaterOrEqual](#softassertgreaterorequal) |  |
+|	[SoftAssertImage](#softassertimage) |  |
+|	[SoftAssertLess](#softassertless) |  |
+|	[SoftAssertLessOrEqual](#softassertlessorequal) |  |
+|	[SoftAssertNotContains](#softassertnotcontains) |  |
+|	[SoftAssertNotEqual](#softassertnotequal) |  |
+|	[SoftAssertNotNull](#softassertnotnull) |  |
+|	[SoftAssertNotSet](#softassertnotset) |  |
+|	[SoftAssertNull](#softassertnull) |  |
+|	[SoftAssertSet](#softassertset) |  |
+|	[SoftAssertStartsWith](#softassertstartswith) |  |
 |	[SuppressReport](#suppressreport) | In SuppressReport mode all assertions are ignored. |
 
 
@@ -175,6 +205,62 @@ Assert(message, condition, data, tags)
 
 <a name="see.also.tester.assert"></a>
 
+<a name="AssertContains"></a>    
+#### AssertContains
+
+Checks if `str` contains `substr` somewhere and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertContains(message, str, substr, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertcontains"></a>
+
+<a name="AssertEndsWith"></a>    
+#### AssertEndsWith
+
+Checks that `str` has `substr` in the end and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertEndsWith(message, str, substr, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertendswith"></a>
+
 <a name="AssertEqual"></a>    
 #### AssertEqual
 
@@ -203,6 +289,90 @@ AssertEqual(message, obj1, obj2, data, tags)
 
 <a name="see.also.tester.assertequal"></a>
 
+<a name="AssertFalse"></a>    
+#### AssertFalse
+
+Checks if `val` is `false` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertFalse(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
+| n2 | number |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertfalse"></a>
+
+<a name="AssertGreater"></a>    
+#### AssertGreater
+
+Checks if n1 greater than n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertGreater(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	First value to compare. |
+| n2 | number |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertgreater"></a>
+
+<a name="AssertGreaterOrEqual"></a>    
+#### AssertGreaterOrEqual
+
+Checks if n1 greater or equal than n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertGreaterOrEqual(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	First value to compare. |
+| n2 | number |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertgreaterorequal"></a>
+
 <a name="AssertImage"></a>    
 #### AssertImage
 
@@ -230,6 +400,258 @@ AssertImage(message, img1, path, data, tags)
 
 
 <a name="see.also.tester.assertimage"></a>
+
+<a name="AssertLess"></a>    
+#### AssertLess
+
+Checks if n1 is less than n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertLess(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	First value to compare. |
+| n2 | number |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertless"></a>
+
+<a name="AssertLessOrEqual"></a>    
+#### AssertLessOrEqual
+
+Checks if n1 differs from n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertLessOrEqual(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | object |	First value to compare. |
+| n2 | object |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertlessorequal"></a>
+
+<a name="AssertNotContains"></a>    
+#### AssertNotContains
+
+Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertNotContains(message, str, substr, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertnotcontains"></a>
+
+<a name="AssertNotEqual"></a>    
+#### AssertNotEqual
+
+Checks if obj1 differs from obj2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertNotEqual(message, obj1, obj2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| obj1 | object |	First object to compare. |
+| obj2 | object |	Second object to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertnotequal"></a>
+
+<a name="AssertNotNull"></a>    
+#### AssertNotNull
+
+Checks if `val` is `NotNull` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertNotNull(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
+| n2 | number |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertnotnull"></a>
+
+<a name="AssertNotSet"></a>    
+#### AssertNotSet
+
+Checks if `val` is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertNotSet(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
+| n2 | number |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertnotset"></a>
+
+<a name="AssertNull"></a>    
+#### AssertNull
+
+Checks if `val` is `null` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertNull(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
+| n2 | number |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertnull"></a>
+
+<a name="AssertSet"></a>    
+#### AssertSet
+
+Checks if `val` is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertSet(message, n1, n2, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
+| n2 | number |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertset"></a>
+
+<a name="AssertStartsWith"></a>    
+#### AssertStartsWith
+
+Checks if `str` begins with `substr` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
+
+```javascript
+AssertStartsWith(message, str, substr, data, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+
+
+
+
+
+<a name="see.also.tester.assertstartswith"></a>
 
 <a name="BeginTest"></a>    
 #### BeginTest
@@ -741,6 +1163,422 @@ SoftAssertAll(message)
 
 
 <a name="see.also.tester.softassertall"></a>
+
+<a name="SoftAssertContains"></a>    
+#### SoftAssertContains
+
+
+
+```javascript
+SoftAssertContains(str, substr, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| str | string |	 |
+| substr | string |	 |
+| data | string |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertcontains"></a>
+
+<a name="SoftAssertEndsWith"></a>    
+#### SoftAssertEndsWith
+
+
+
+```javascript
+SoftAssertEndsWith(str, substr, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| str | string |	 |
+| substr | string |	 |
+| data | string |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertendswith"></a>
+
+<a name="SoftAssertEqual"></a>    
+#### SoftAssertEqual
+
+
+
+```javascript
+SoftAssertEqual(obj1, obj2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| obj1 | string |	 |
+| obj2 | object |	 |
+| data | object |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertequal"></a>
+
+<a name="SoftAssertFalse"></a>    
+#### SoftAssertFalse
+
+
+
+```javascript
+SoftAssertFalse(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertfalse"></a>
+
+<a name="SoftAssertGreater"></a>    
+#### SoftAssertGreater
+
+
+
+```javascript
+SoftAssertGreater(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertgreater"></a>
+
+<a name="SoftAssertGreaterOrEqual"></a>    
+#### SoftAssertGreaterOrEqual
+
+
+
+```javascript
+SoftAssertGreaterOrEqual(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertgreaterorequal"></a>
+
+<a name="SoftAssertImage"></a>    
+#### SoftAssertImage
+
+
+
+```javascript
+SoftAssertImage(img1, path, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| img1 | string |	 |
+| path | object |	 |
+| data | ImageWrapper |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertimage"></a>
+
+<a name="SoftAssertLess"></a>    
+#### SoftAssertLess
+
+
+
+```javascript
+SoftAssertLess(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertless"></a>
+
+<a name="SoftAssertLessOrEqual"></a>    
+#### SoftAssertLessOrEqual
+
+
+
+```javascript
+SoftAssertLessOrEqual(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | object |	 |
+| data | object |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertlessorequal"></a>
+
+<a name="SoftAssertNotContains"></a>    
+#### SoftAssertNotContains
+
+
+
+```javascript
+SoftAssertNotContains(str, substr, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| str | string |	 |
+| substr | string |	 |
+| data | string |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertnotcontains"></a>
+
+<a name="SoftAssertNotEqual"></a>    
+#### SoftAssertNotEqual
+
+
+
+```javascript
+SoftAssertNotEqual(obj1, obj2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| obj1 | string |	 |
+| obj2 | object |	 |
+| data | object |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertnotequal"></a>
+
+<a name="SoftAssertNotNull"></a>    
+#### SoftAssertNotNull
+
+
+
+```javascript
+SoftAssertNotNull(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertnotnull"></a>
+
+<a name="SoftAssertNotSet"></a>    
+#### SoftAssertNotSet
+
+
+
+```javascript
+SoftAssertNotSet(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertnotset"></a>
+
+<a name="SoftAssertNull"></a>    
+#### SoftAssertNull
+
+
+
+```javascript
+SoftAssertNull(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertnull"></a>
+
+<a name="SoftAssertSet"></a>    
+#### SoftAssertSet
+
+
+
+```javascript
+SoftAssertSet(n1, n2, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| n1 | string |	 |
+| n2 | number |	 |
+| data | number |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertset"></a>
+
+<a name="SoftAssertStartsWith"></a>    
+#### SoftAssertStartsWith
+
+
+
+```javascript
+SoftAssertStartsWith(str, substr, data, tags, tags) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| str | string |	 |
+| substr | string |	 |
+| data | string |	 |
+| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
+| tags | object |	 |
+
+
+
+
+
+<a name="see.also.tester.softassertstartswith"></a>
 
 <a name="SuppressReport"></a>    
 #### SuppressReport
