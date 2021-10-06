@@ -11150,7 +11150,6 @@
 <p>Attaches to a Database with given ADO connection string and SQL query.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">connection_string</span><span class="p">,</span> <span class="nx">sql</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11181,7 +11180,6 @@
 <p>Moves to a given row.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="nx">rowInd</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11205,7 +11203,6 @@
 <p>Selects random row and column in the recordset.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRandom</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>'false' if the the DB is is not connected, 'true' - otherwise.</p>
 <p><a name="see.also.database.dorandom"></a></p>
@@ -11215,7 +11212,6 @@
 When the end of the range is reached DoSequential returns 'false'.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSequential</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>'false' if being called when active row is the last row or the recordset is not attached, 'true' - otherwise.</p>
 <p><a name="see.also.database.dosequential"></a></p>
@@ -11224,7 +11220,6 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p>Gets columns count.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetColumnCount</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>Number of Columns in the result set.</p>
 <p><a name="see.also.database.getcolumncount"></a></p>
@@ -11233,7 +11228,6 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p>Gets column name.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">ind</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11259,7 +11253,6 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p>Gets column names.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetColumnNames</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>Array of column names in the table.</p>
 <p><a name="see.also.database.getcolumnnames"></a></p>
@@ -11268,14 +11261,12 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p>Get zero based current row index.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCurrentRowIndex</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.database.getcurrentrowindex"></a></p>
 <p><a name="GetRowCount"></a>    </p>
 <h4 id="getrowcount">GetRowCount<a class="headerlink" href="#getrowcount" title="Permanent link">&para;</a></h4>
 <p>Gets rows count.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetRowCount</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>Number of rows in the result set.</p>
 <p><a name="see.also.database.getrowcount"></a></p>
@@ -11284,7 +11275,6 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p>Gets value by column name, and, optionally, row number. Returns current cell value after DoSequential or DoRandom if params not set.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetValue</span><span class="p">(</span><span class="nx">columnId</span><span class="p">,</span> <span class="nx">rowId</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11412,7 +11402,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.result.term.missing": "Missing", "search.config.lang": "en", "search.config.separator": "[\\s\\-]+", "search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "clipboard.copy": "Copy to clipboard"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

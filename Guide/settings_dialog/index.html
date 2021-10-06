@@ -11051,7 +11051,9 @@
 <ul>
 <li><strong>CacheObjects</strong>: Remember object locations and try to reuse them for speed.  This is helpful with dialog based applications.</li>
 <li><strong>CommandInterval</strong>: Time interval (in milliseconds) between script commands during script execution.</li>
-<li>**</li>
+</ul>
+<hr />
+<ul>
 <li><strong>IterationsCount</strong>: Your test script will be executed this many times consecutively during <a href="../playback/">Playback</a>.</li>
 <li><strong>JS Engine</strong>: one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>. Where <strong>Default</strong> means use <strong>JSEngineType</strong> defined in the <a href="../options_dialog/#execution">Global Options</a>. Otherwise use <a href="../jscript_language_reference/">nodejs</a> or <a href="../jscript_language_reference/">JScript/WScript</a> engine correspondingly.</li>
 <li><strong>ObjectLookupAttemptInterval</strong>: This is the time Rapise will wait between attempts to locate an object.</li>
@@ -11077,14 +11079,16 @@
 <li><strong>Widget Only</strong>: Set this to <strong>True</strong> to only save the widget area in the screenshot, as opposed to the whole window.</li>
 </ul>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
-<p><img alt="settings dialog, settings" src="../img/settings_dialog7.png" />
+<p><img alt="settings dialog, settings" src="../img/settings_dialog7.png" /></p>
 <!-- /* cSpell:disable */ -->
-* <strong>UserFunctionsPath</strong>: Path (relative to the test directory) to the file with user-defined functions utilized in this test.  Normally this file has name in form <code>User.js</code>.
-* <strong>ObjectsPath</strong>: Path (relative to the test directory) to file containing object tree information. This file contains <code>saved_script_objects</code> structure with all object locators gathered during recording and learning. Normally this file has name in form <code>Objects.js</code>.
-* <strong>ReportPath</strong>: Path (relative to the test directory) to the test's report file. Normally this file has extension form <code>.trp</code> which stands for <strong>T**est **R**eport.
-* **ScriptPath</strong>: Path (relative to the test directory) to the test script.
-* <strong>TestPath</strong>: Path to the test definition file (<code>*.sstest</code>).
-<!-- /* cSpell:enable */ --></p>
+<ul>
+<li><strong>UserFunctionsPath</strong>: Path (relative to the test directory) to the file with user-defined functions utilized in this test.  Normally this file has name in form <code>User.js</code>.</li>
+<li><strong>ObjectsPath</strong>: Path (relative to the test directory) to file containing object tree information. This file contains <code>saved_script_objects</code> structure with all object locators gathered during recording and learning. Normally this file has name in form <code>Objects.js</code>.</li>
+<li><strong>ReportPath</strong>: Path (relative to the test directory) to the test's report file. Normally this file has extension form <code>.trp</code> which stands for **T**est **R**eport.</li>
+<li><strong>ScriptPath</strong>: Path (relative to the test directory) to the test script.</li>
+<li><strong>TestPath</strong>: Path to the test definition file (<code>*.sstest</code>).</li>
+</ul>
+<!-- /* cSpell:enable */ -->
                 
               
               
@@ -11187,7 +11191,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.result.term.missing": "Missing", "search.config.lang": "en", "search.config.separator": "[\\s\\-]+", "search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "clipboard.copy": "Copy to clipboard"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

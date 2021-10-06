@@ -11512,7 +11512,6 @@
     <span class="nt">filePath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">./RapiseInstall.ps1</span>
     <span class="nt">arguments</span><span class="p">:</span> <span class="s">&#39;-RapiseVersion</span><span class="nv"> </span><span class="s">&quot;6.5.20.21&quot;&#39;</span>
 </code></pre></div>
-
 </details>
 <h3 id="rapisetestadapter">Rapise.TestAdapter<a class="headerlink" href="#rapisetestadapter" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
@@ -11530,13 +11529,11 @@
 <span class="nt">inputs</span><span class="p">:</span>
     <span class="nt">versionSpec</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4.4.1</span>
 </code></pre></div>
-
 </details>
 <h4 id="rapisetestadapter-nuget-package">Rapise.TestAdapter NuGet Package<a class="headerlink" href="#rapisetestadapter-nuget-package" title="Permanent link">&para;</a></h4>
 <p>Then add <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget?view=azure-devops">NuGet</a> task. Set <strong>command</strong> to <code>custom</code> and specify the command line:</p>
 <div class="highlight"><pre><span></span><code>install Rapise.TestAdapter -Version $(RapiseTestAdapterVersion)
 </code></pre></div>
-
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/nuget_rapise_testadapter.png" /></p>
 </details>
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
@@ -11546,24 +11543,24 @@
     <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">custom</span>
     <span class="nt">arguments</span><span class="p">:</span> <span class="s">&#39;install</span><span class="nv"> </span><span class="s">Rapise.TestAdapter</span><span class="nv"> </span><span class="s">-Version</span><span class="nv"> </span><span class="s">$(RapiseTestAdapterVersion)&#39;</span>
 </code></pre></div>
-
 </details>
 <p>In the pipeline settings set <strong>RapiseTestAdapterVersion</strong> variable to the Rapise.TestAdapter version you want to install (e.g. 1.0.11).</p>
 <p><img alt="RapiseTestAdapterVersion Variable" src="../img/rapise_testadapter_version.png" /></p>
 <p>The task will install Rapise.TestAdapter into</p>
 <div class="highlight"><pre><span></span><code>$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472
 </code></pre></div>
-
 <h3 id="visual-studio-test-platform-installer-task">Visual Studio Test Platform Installer Task<a class="headerlink" href="#visual-studio-test-platform-installer-task" title="Permanent link">&para;</a></h3>
+<p>If you plan to run tests on a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> that does not have Visual Studio installed you need to add <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops">Visual Studio Test Platform Installer</a> task.</p>
+<!-- /* cSpell:disable */ -->
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/></p>
 </details>
+<!-- /* cSpell:enable */ -->
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VisualStudioTestPlatformInstaller@1</span>
 <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Visual</span><span class="nv"> </span><span class="s">Studio</span><span class="nv"> </span><span class="s">Test</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Installer&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
     <span class="nt">versionSelector</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">latestStable</span>
 </code></pre></div>
-
 </details>
 <h3 id="visual-studio-test-task">Visual Studio Test Task<a class="headerlink" href="#visual-studio-test-task" title="Permanent link">&para;</a></h3>
 <p>To run tests you need <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops">Visual Studio Test</a> task.</p>
@@ -11582,12 +11579,10 @@
     <span class="nt">platform</span><span class="p">:</span> <span class="s">&#39;$(BuildPlatform)&#39;</span>
     <span class="nt">configuration</span><span class="p">:</span> <span class="s">&#39;$(BuildConfiguration)&#39;</span>
 </code></pre></div>
-
 </details>
 <p>Make sure that path to custom test set adapters is set to</p>
 <div class="highlight"><pre><span></span><code>$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472
 </code></pre></div>
-
 <p>Specify patterns to search for <code>*.sstest</code> files in the <strong>test files</strong> section (<code>testAssemblyVer2</code> in YAML).</p>
 <p>If you added Visual Studio Test Platform Installer task on the previous step do not forget to set <strong>Test platform version</strong> to <code>Installed by Tools Installer</code> (<code>vsTestVersion: toolsInstaller</code> in YAML).</p>
 <div class="admonition tip">
@@ -11599,7 +11594,6 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code>FullyQualifiedName~LIS
 </code></pre></div>
-
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <p>Parameters can be set via</p>
 <ul>
@@ -11614,7 +11608,6 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code>-g_baseURL $(Dynamics365CrmBaseURL) -g_password $(Dynamics365CrmPassword) -g_browserLibrary $(RapiseBrowserProfile)
 </code></pre></div>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>$(name) - references a pipeline variable</p>
@@ -11643,7 +11636,6 @@
 
 <span class="nt">&lt;/RunSettings&gt;</span>
 </code></pre></div>
-
 <h3 id="publish-test-results">Publish Test Results<a class="headerlink" href="#publish-test-results" title="Permanent link">&para;</a></h3>
 <p>To publish test results (for later review and downloading) use <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops">Publish Build Artifacts</a> task. Execution results are copied to <code>$(Agent.TempDirectory)\TestResults</code>.</p>
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/publish_testresults.png" /></p>
@@ -11655,7 +11647,6 @@
     <span class="nt">PathtoPublish</span><span class="p">:</span> <span class="s">&#39;$(Agent.TempDirectory)\TestResults&#39;</span>
     <span class="nt">ArtifactName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TestResults</span>
 </code></pre></div>
-
 </details>
 <h3 id="pipeline-example">Pipeline Example<a class="headerlink" href="#pipeline-example" title="Permanent link">&para;</a></h3>
 <p>As a result of pipeline configuration you may end up with something like this:</p>
@@ -11689,13 +11680,11 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
 <p>Install Rapise.TestAdapter</p>
 <div class="highlight"><pre><span></span><code>nuget install Rapise.TestAdapter
 </code></pre></div>
-
 </li>
 <li>
 <p>You may now create a .cmd file and put it near Rapise tests. E.g.</p>
 <div class="highlight"><pre><span></span><code>vstest.console.exe /TestAdapterPath:C:\Tools\Rapise.TestAdapter.1.0.11\lib\net472 /Settings:local.runsettings /TestCaseFilter:FullyQualifiedName~LIS *\*.sstest
 </code></pre></div>
-
 </li>
 </ol>
 <h2 id="parallel-execution">Parallel Execution<a class="headerlink" href="#parallel-execution" title="Permanent link">&para;</a></h2>
@@ -11720,7 +11709,6 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
     <span class="nt">platform</span><span class="p">:</span> <span class="s">&#39;$(BuildPlatform)&#39;</span>
     <span class="nt">configuration</span><span class="p">:</span> <span class="s">&#39;$(BuildConfiguration)&#39;</span>
 </code></pre></div>
-
 </details>
 <p>This way of parallel execution is good for running API tests and Web tests (provided that <a href="../selenium_settings_dialog/">Selenium profiles</a> are used)</p>
 <h3 id="multi-configuration-testing">Multi-Configuration Testing<a class="headerlink" href="#multi-configuration-testing" title="Permanent link">&para;</a></h3>
@@ -11843,7 +11831,7 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.result.term.missing": "Missing", "search.config.lang": "en", "search.config.separator": "[\\s\\-]+", "search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "clipboard.copy": "Copy to clipboard"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

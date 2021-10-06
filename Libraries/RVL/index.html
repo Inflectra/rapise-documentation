@@ -11250,7 +11250,6 @@
 <h2 id="doplayscript">DoPlayScript<a class="headerlink" href="#doplayscript" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">DoPlayScript</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">scriptPath</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">sheetName</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code> passing <code>[extraParams]</code> for variable values.</p>
 <ul>
 <li><code>scriptPath</code>: Path to script</li>
@@ -11260,7 +11259,6 @@
 <h2 id="doplaysheet">DoPlaySheet<a class="headerlink" href="#doplaysheet" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">DoPlaySheet</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sheetName</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Play RVL sheet <code>sheetName</code> from current workbook passing <code>[extraParams]</code> for variable values.</p>
 <ul>
 <li><code>sheetName</code>: Excel sheet containing the script</li>
@@ -11269,7 +11267,6 @@
 <h2 id="doplaytest">DoPlayTest<a class="headerlink" href="#doplaytest" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">DoPlayTest</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sstestPath</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Executes specified test with passing of additional arguments specified as <code>extraParams</code>. It is an analog of <a href="../Global/#DoInvokeTest">Global.DoInvokeTest</a></p>
 <ul>
 <li><code>sstestPath</code>: Path to test</li>
@@ -11281,11 +11278,9 @@
     <span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayScript</span><span class="p">(</span><span class="s2">&quot;Main.rvl.xlsx&quot;</span><span class="p">,</span> <span class="nx">Tester</span><span class="p">.</span><span class="nx">GetParam</span><span class="p">(</span><span class="s2">&quot;sheetName&quot;</span><span class="p">,</span> <span class="s2">&quot;RVL&quot;</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="doplaytestparallel">DoPlayTestParallel<a class="headerlink" href="#doplaytestparallel" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">DoPlayTestParallel</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sstestPath</span><span class="p">,</span> <span class="cm">/**objectId*/</span> <span class="nx">threadsMap</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Executes specified test in parallel threads passing additional arguments specified by in <code>threadsMap</code> map. There are as many threads as there are rows in the map.</p>
 <ul>
 <li><code>sstestPath</code>: Path to test</li>
@@ -11301,7 +11296,6 @@
 <h2 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">Exit</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">message</span><span class="p">,</span> <span class="cm">/**boolean*/</span> <span class="nx">isError</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Break execution at the specified line</p>
 <ul>
 <li><code>message</code>: Exit message</li>
@@ -11311,7 +11305,6 @@
 <div class="highlight"><pre><span></span><code><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">id</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">idList</span><span class="p">,</span>
                  <span class="cm">/**string*/</span> <span class="nx">valList</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">xlsPath</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Remap dropdown value from one list to another</p>
 <ul>
 <li><code>id</code>: Value to remap, the value should be from the column <code>idList</code>.</li>
@@ -11326,13 +11319,11 @@
                                      <span class="s2">&quot;Functions.SetState.stateName&quot;</span><span class="p">,</span>
                                      <span class="s2">&quot;stateCode&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 <p>would return state code for state name. I.e. if <code>stateName="Colorado"</code> then returned value is "CO".</p>
 <p>See also <a href="../../Guide/rvl_editor/#param-dropdowns">RVL Editor Param Dropdowns</a></p>
 <h2 id="return">Return<a class="headerlink" href="#return" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">Return</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">message</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Return from specified line. This method should be called from within RVL.</p>
 <ul>
 <li><code>message</code>: Return message</li>
@@ -11340,7 +11331,6 @@
 <h2 id="setlocatoropts">SetLocatorOpts<a class="headerlink" href="#setlocatoropts" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">SetLocatorOpts</span><span class="p">(</span><span class="cm">/**objectid*/</span> <span class="nx">objectid</span><span class="p">,</span> <span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
 </code></pre></div>
-
 <p>Set additional locator options for specified object. This is a way to modify various script parameters such as <code>locator</code>, <code>xpath</code>, <code>url</code> and thus find different objects.</p>
 <ul>
 <li><code>objectid</code> {<code>/**objectid*/</code>}: Object ID</li>
@@ -11393,7 +11383,6 @@
 <h2 id="formatstring">FormatString<a class="headerlink" href="#formatstring" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">FormatString</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">fmtString</span><span class="p">,</span> <span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
 </code></pre></div>
-
 <p>Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: <code>My name is {name}</code>.</p>
 <table>
 <thead>
@@ -11451,12 +11440,10 @@
 <h2 id="currentscriptpath">CurrentScriptPath<a class="headerlink" href="#currentscriptpath" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCurrentScriptPath</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Return path to currently executed <code>.rvl.xls</code> file.</p>
 <h2 id="currentscriptsheet">CurrentScriptSheet<a class="headerlink" href="#currentscriptsheet" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCurrentScriptSheet</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Return sheet name of the currently executed <code>.rvl.xls</code> file.</p>
                 
               
@@ -11560,7 +11547,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.result.term.missing": "Missing", "search.config.lang": "en", "search.config.separator": "[\\s\\-]+", "search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "clipboard.copy": "Copy to clipboard"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

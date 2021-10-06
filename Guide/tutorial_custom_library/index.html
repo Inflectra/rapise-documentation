@@ -11049,19 +11049,15 @@
 <p><strong>CustomControlApp Folder</strong></p>
 <div class="highlight"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\Extensibility\CustomLibrary\CustomControlApp
 </code></pre></div>
-
 <p>You may build this application yourself in Microsoft Visual Studio (C++) or use ready executable:</p>
 <div class="highlight"><pre><span></span><code>&lt;CustomControlApp folder&gt;\Release\CustomControlApp.exe
 </code></pre></div>
-
 <p><strong>CustomControlTest Folder</strong></p>
 <div class="highlight"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\Extensibility\CustomLibrary\CustomControlTest
 </code></pre></div>
-
 <p><strong>Custom Library File</strong></p>
 <div class="highlight"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\Extensibility\CustomLibrary\CustomControlTest\Lib\LibUser\LibUser.js
 </code></pre></div>
-
 <p>If you prefer active experimentation learning style you may first skip to subsection 8 and after playing with the ready test and library start reading from the beginning.</p>
 <h2 id="1-application-under-test">1. Application Under Test<a class="headerlink" href="#1-application-under-test" title="Permanent link">&para;</a></h2>
 <p>CustomControlApp contains an object of type <strong>CustomListboxControl</strong>. The control is similar to a single-select listbox, but each line item has a corresponding <strong>progress bar</strong> indicator indicating a current value. Using the left/right cursor keys you can change the value of the currently focused item.</p>
@@ -11111,7 +11107,6 @@
     <span class="p">]</span>
 <span class="p">});</span>
 </code></pre></div>
-
 <p>Each matcher rule (instance of <code>SeSMatcherRule</code>) is a tree like structure that describes a particular GUI control type. Each node in this tree is a rule object that is defined by the following simplified grammar:</p>
 <div class="highlight"><pre><span></span><code>or_rules: (rule)+
 and_rules: (rule)+
@@ -11123,7 +11118,6 @@ rule:
     [or_rules]
     [and_rules]
 </code></pre></div>
-
 <ul>
 <li><strong>object_type</strong> - the string that uniquely identifies this matcher rule and designates type of the control.</li>
 <li><strong>object_flavor</strong> - visual type of the control, it is used to show an appropriate icon in the <a href="../object_tree/">Object Tree</a> and to filter actions and properties in composite behavior patterns.</li>
@@ -11138,7 +11132,6 @@ rule:
 <p>After defining the matcher rule we can proceed to <strong>behavior patterns</strong>. Behavior patterns operate with <code>SeSObject</code> contents, so they should not be aware about accessibility tree of the underlying GUI control and thus the same behavior pattern can be assigned to different matcher rules. There are a plenty of behavior patterns defined in</p>
 <div class="highlight"><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Engine\SeSBehavior.js
 </code></pre></div>
-
 <p>After looking at those patterns it is possible to notice that <code>Win32ItemSelectable</code> pattern is the one that perfectly suites for capturing selection accessibility events and for selecting list items. This pattern contains <code>OnSelect</code> event that is called during recording when an item is selected in list and <code>DoSelectItem</code> action used to select desired item during playback.</p>
 <p>But using just <code>Win32ItemSelectable</code> behavior pattern is not sufficient. It does not support recording of progress bar value change events and it does not support setting progress bar value during playback. That is why we need to define new behavior pattern: <code>Win32CustomListboxControl</code>. Look at its code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">Win32CustomListboxControl</span> <span class="o">=</span>
@@ -11189,7 +11182,6 @@ rule:
     <span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div>
-
 <p>During recording process <code>OnValueChange</code> function captures progress bar change events and calls <code>RegisterAction</code> function that adds <code>SetItemValue</code> action to the test.</p>
 <p>Put this code into <code>LibUser.js</code> <strong>before</strong> the rule created in the previous step.</p>
 <h2 id="6-customlistboxcontrol-specific-accessibility-events">6. CustomListboxControl Specific Accessibility Events<a class="headerlink" href="#6-customlistboxcontrol-specific-accessibility-events" title="Permanent link">&para;</a></h2>
@@ -11197,17 +11189,17 @@ rule:
 <p><img alt="customcontrolapp, accessible events" src="../img/tutorial_custom_library6.png" /></p>
 <p>Select an item in <strong>CustomControlApp</strong> and advance its progress bar using right key. <strong>Accessible Event Watcher</strong> will show you captured events:</p>
 <p><img alt="customcontrolapp, accessible events filled" src="../img/tutorial_custom_library7.png" /></p>
-<p>You can see that changing progress bar leads to generation of <code>OBJ_VALUECHANGE</code> events. To get event name to use with Rapise open <a href="https://docs.microsoft.com/en-us/windows/desktop/winauto/event-constants">Event Constants</a> page and search for relevant value.
+<p>You can see that changing progress bar leads to generation of <code>OBJ_VALUECHANGE</code> events. To get event name to use with Rapise open <a href="https://docs.microsoft.com/en-us/windows/desktop/winauto/event-constants">Event Constants</a> page and search for relevant value.</p>
 <!-- /* cSpell:disable */ -->
-<img alt="event constants" src="../img/tutorial_custom_library_event_sonstants.png" />
+<p><img alt="event constants" src="../img/tutorial_custom_library_event_sonstants.png" /></p>
 <!-- /* cSpell:enable */ -->
-Not all accessibility events are processed and propagated by Rapise engine. <code>EVENT_OBJECT_VALUECHANGE</code> is one of such events. To consume this event and make an appropriate call to <code>OnValueChange</code> of <code>Win32CustomListboxControl</code> you need to add and register <strong>custom accessibility event handler</strong>:</p>
+<p>Not all accessibility events are processed and propagated by Rapise engine. <code>EVENT_OBJECT_VALUECHANGE</code> is one of such events. To consume this event and make an appropriate call to <code>OnValueChange</code> of <code>Win32CustomListboxControl</code> you need to add and register <strong>custom accessibility event handler</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/**</span>
 <span class="cm"> * Custom handler for EVENT_OBJECT_VALUECHANGE event</span>
 <span class="cm"> */</span>
 <span class="kd">function</span> <span class="nx">CustomRegisterAccessibleEvent</span><span class="p">(</span><span class="nx">evt</span><span class="p">,</span> <span class="nx">etxt</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">etxt</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;EVENT_OBJECT_VALUECHANGE&quot;</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">etxt</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;EVENT_OBJECT_VALUECHANGE&quot;</span><span class="p">)</span><span class="o">&gt;=</span><span class="mf">0</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="kd">var</span> <span class="nx">ao</span><span class="p">;</span>
         <span class="k">try</span>
@@ -11236,7 +11228,6 @@ Not all accessibility events are processed and propagated by Rapise engine. <cod
 
 <span class="nx">g_customEventHandlers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">CustomRegisterAccessibleEvent</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="7-record-and-playback">7. Record and Playback<a class="headerlink" href="#7-record-and-playback" title="Permanent link">&para;</a></h2>
 <p>Update <code>LibUser.jslib</code> library definition for automatic loading.</p>
 <p><img alt="auto load" src="../img/tutorial_custom_library_autoload.png" /></p>
@@ -11360,7 +11351,7 @@ Not all accessibility events are processed and propagated by Rapise engine. <cod
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.result.term.missing": "Missing", "search.config.lang": "en", "search.config.separator": "[\\s\\-]+", "search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "clipboard.copy": "Copy to clipboard"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

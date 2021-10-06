@@ -12641,7 +12641,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Checks if object is found on the screen by its id or XPath.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CheckObjectExists</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12667,7 +12666,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Checks if object is visible on the screen by its id or XPath.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CheckObjectVisible</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12693,7 +12691,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Closes browser. Finishes session.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Close</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12722,14 +12719,12 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Disconnects from a browser. Make Navigator ready for a new browser instance connection.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Detach</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.detach"></a></p>
 <p><a name="DoActivateWindow"></a>    </p>
 <h4 id="doactivatewindow">DoActivateWindow<a class="headerlink" href="#doactivatewindow" title="Permanent link">&para;</a></h4>
 <p>Makes specified browser window active and focused. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoActivateWindow</span><span class="p">(</span><span class="nx">titleOrUrl</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12753,7 +12748,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Waits until browser alert with a given text. Wait timeout is 10 seconds.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCheckAlert</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12779,7 +12773,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Waits until browser confirmation with a given text. Wait timeout is 10 seconds.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCheckConfirmation</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12810,7 +12803,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Waits until browser prompt with a given text. Wait timeout is 10 seconds.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCheckPrompt</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12841,7 +12833,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Clicks on a given element until another element appears on screen. Requires Rapise 6.3+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoClickUntilOnScreen</span><span class="p">(</span><span class="nx">xpathOrObjIdToClick</span><span class="p">,</span> <span class="nx">xpathOrObjIdToExpect</span><span class="p">,</span> <span class="nx">attempts</span><span class="p">,</span> <span class="nx">delay</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">forceEvent</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12897,7 +12888,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Clicks on an element until it disappears. Requires Rapise 6.3+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoClickWhileOnScreen</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">,</span> <span class="nx">attempts</span><span class="p">,</span> <span class="nx">delay</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">forceEvent</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12948,21 +12938,18 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Closes currently selected tab. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCloseTab</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.doclosetab"></a></p>
 <p><a name="DoCloseWindow"></a>    </p>
 <h4 id="doclosewindow">DoCloseWindow<a class="headerlink" href="#doclosewindow" title="Permanent link">&para;</a></h4>
 <p>Closes currently active browser window. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCloseWindow</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.doclosewindow"></a></p>
 <p><a name="DoCreateTab"></a>    </p>
 <h4 id="docreatetab">DoCreateTab<a class="headerlink" href="#docreatetab" title="Permanent link">&para;</a></h4>
 <p>Creates new browser tab. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCreateTab</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -12986,7 +12973,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Creates a new browser window. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoCreateWindow</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13010,7 +12996,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Looks for a web element by specific attribute value through all frames. <code>attrValue</code> is checked against each element's <code>attrName</code> attribute.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DOMFindByAttributeValue</span><span class="p">(</span><span class="nx">attrName</span><span class="p">,</span> <span class="nx">attrValue</span><span class="p">,</span> <span class="nx">tagName</span><span class="p">,</span> <span class="nx">findAll</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13056,7 +13041,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Looks for a web element by its name through all frames. Name is checked against @name and @id attribute of each element</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DOMFindByName</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">tagName</span><span class="p">,</span> <span class="nx">findAll</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13097,7 +13081,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Looks for a web element by its text contents through all frames. <code>text</code> is checked against each element text contents.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DOMFindByText</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">tagName</span><span class="p">,</span> <span class="nx">findAll</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13138,7 +13121,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Looks for a web element by specific local XPath value through all frames. If XPath is local (i.e. //img) then search will be performed for all images in all nested frames.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DOMFindByXPath</span><span class="p">(</span><span class="nx">xpath</span><span class="p">,</span> <span class="nx">findAll</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13174,7 +13156,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Sets the position of the active browser window. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoMoveWindow</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">top</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13203,7 +13184,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then <code>null</code> is returned. Requires Rapise 6.4+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DOMQueryValue</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">,</span> <span class="nx">query</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13234,7 +13214,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Sets size of the active browser window. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoResizeWindow</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13263,7 +13242,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Makes screenshot of the browser window.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoScreenshot</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13287,7 +13265,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Selects browser tab by title or URL. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSelectTab</span><span class="p">(</span><span class="nx">titleOrUrl</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13311,7 +13288,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Sets boolean value to return as a result of next browser <code>confirm</code> request.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSetExpectedConfirmResult</span><span class="p">(</span><span class="nx">expectedRes</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13335,7 +13311,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Sets text to return as a result of next browser <code>prompt</code> request.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoSetExpectedPromptResult</span><span class="p">(</span><span class="nx">expectedRes</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13359,7 +13334,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Waits for object to appear on screen. Requires Rapise 6.3+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoWaitFor</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13395,7 +13369,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p>Executes given JavaScript statement in a browser and returns results.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ExecJS</span><span class="p">(</span><span class="nx">scriptText</span><span class="p">,</span> <span class="nx">obj</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13427,7 +13400,6 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 JS variables and functions declared on the page. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ExecPageJS</span><span class="p">(</span><span class="nx">scriptText</span><span class="p">,</span> <span class="nx">obj</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13458,7 +13430,6 @@ JS variables and functions declared on the page. Requires Rapise 6.5+</p>
 <p>Returns <a href="../HTMLObject/">HTMLObject</a> wrapping DOM element for a given <code>xpath</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Find</span><span class="p">(</span><span class="nx">xpath</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="nx">title</span><span class="p">,</span> <span class="nx">objInfo</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13499,42 +13470,36 @@ JS variables and functions declared on the page. Requires Rapise 6.5+</p>
 <p>Gets Id of active browser tab. Id may be used as parameter to Navigator.DoSelectTab(). Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetActiveTabId</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.getactivetabid"></a></p>
 <p><a name="GetActiveTabTitle"></a>    </p>
 <h4 id="getactivetabtitle">GetActiveTabTitle<a class="headerlink" href="#getactivetabtitle" title="Permanent link">&para;</a></h4>
 <p>Gets title of active browser tab. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetActiveTabTitle</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.getactivetabtitle"></a></p>
 <p><a name="GetActiveTabUrl"></a>    </p>
 <h4 id="getactivetaburl">GetActiveTabUrl<a class="headerlink" href="#getactivetaburl" title="Permanent link">&para;</a></h4>
 <p>Gets URL of active browser tab. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetActiveTabUrl</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.getactivetaburl"></a></p>
 <p><a name="GetActiveWindowId"></a>    </p>
 <h4 id="getactivewindowid">GetActiveWindowId<a class="headerlink" href="#getactivewindowid" title="Permanent link">&para;</a></h4>
 <p>Gets active browser window Id. Id is an internal identifier. May be used as a parameter to Navigator.DoActivateWindow(). Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetActiveWindowId</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.getactivewindowid"></a></p>
 <p><a name="GetActiveWindowTitle"></a>    </p>
 <h4 id="getactivewindowtitle">GetActiveWindowTitle<a class="headerlink" href="#getactivewindowtitle" title="Permanent link">&para;</a></h4>
 <p>Gets active browser window title. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetActiveWindowTitle</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.getactivewindowtitle"></a></p>
 <p><a name="GetActiveWindowUrl"></a>    </p>
 <h4 id="getactivewindowurl">GetActiveWindowUrl<a class="headerlink" href="#getactivewindowurl" title="Permanent link">&para;</a></h4>
 <p>Gets active browser window URL. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetActiveWindowUrl</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13560,7 +13525,6 @@ are based on output from window.performance structure of the web page. See also
 <a href="http://www.w3.org/TR/navigation-timing/#processing-model">http://www.w3.org/TR/navigation-timing/#processing-model</a></p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetPerformance</span><span class="p">(</span><span class="nx">resources</span><span class="p">,</span> <span class="nx">dontWriteReport</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13591,7 +13555,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets position of the top-left corner of the browser window. This function is DPI aware.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetPosition</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>object: {X, Y}</p>
 <p><a name="see.also.navigator.getposition"></a></p>
@@ -13600,7 +13563,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets size of the browser window. This function is DPI aware.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetSize</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><strong>Returns:</strong></p>
 <p>object: {Width, Height}</p>
 <p><a name="see.also.navigator.getsize"></a></p>
@@ -13609,7 +13571,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets browser tab Id. Id may be used as parameter to Navigator.DoSelectTab(). Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetTabIdAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13633,7 +13594,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets index of the browser tab by Id. Index may be used as param to GetTabIdAt/GetTabUrlAt/GetTabTitleAt. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetTabIndexById</span><span class="p">(</span><span class="nx">tabId</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13657,14 +13617,12 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets number of browser tabs. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetTabsCount</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.gettabscount"></a></p>
 <p><a name="GetTabTitleAt"></a>    </p>
 <h4 id="gettabtitleat">GetTabTitleAt<a class="headerlink" href="#gettabtitleat" title="Permanent link">&para;</a></h4>
 <p>Gets browser tab title. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetTabTitleAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13688,7 +13646,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets browser tab URL. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetTabUrlAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13712,7 +13669,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets browser window Id. Id is an internal identifier. May be used as a parameter to Navigator.DoActivateWindow(). Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetWindowIdAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13736,14 +13692,12 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets the number of browser windows. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetWindowsCount</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.getwindowscount"></a></p>
 <p><a name="GetWindowTitleAt"></a>    </p>
 <h4 id="getwindowtitleat">GetWindowTitleAt<a class="headerlink" href="#getwindowtitleat" title="Permanent link">&para;</a></h4>
 <p>Gets browser window title. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetWindowTitleAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13767,7 +13721,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Gets browser window URL. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetWindowUrlAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13791,14 +13744,12 @@ are based on output from window.performance structure of the web page. See also
 <p>Kills the browser process. The browser to kill is detected from browser profile settings. Requires Rapise 6.4+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">KillBrowser</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.killbrowser"></a></p>
 <p><a name="LaunchBrowser"></a>    </p>
 <h4 id="launchbrowser">LaunchBrowser<a class="headerlink" href="#launchbrowser" title="Permanent link">&para;</a></h4>
 <p>Launches browser, but does not connect to it. Recommended for applications with basic authentication. Requires Rapise 6.5+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">LaunchBrowser</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13822,14 +13773,12 @@ are based on output from window.performance structure of the web page. See also
 <p>Maximizes browser window.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Maximize</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.navigator.maximize"></a></p>
 <p><a name="Navigate"></a>    </p>
 <h4 id="navigate">Navigate<a class="headerlink" href="#navigate" title="Permanent link">&para;</a></h4>
 <p>Redirects browser to a specified URL.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Navigate</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13853,7 +13802,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Opens a browser. If URL is specified, goes to URL.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Open</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13877,7 +13825,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Selects browser profile to use for testing.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="nx">profileName</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13901,7 +13848,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Waits for object to appear on screen. Uses test <a href="https://rapisedoc.inflectra.com/Guide/settings_dialog/#execution">ObjectLookup... settings</a>. Requires Rapise 6.4+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSFind</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13932,7 +13878,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Positions top-left corner of the browser window at specifid location. This function is DPI aware.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetPosition</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -13961,7 +13906,6 @@ are based on output from window.performance structure of the web page. See also
 <p>Sets size if the browser window. This function is DPI aware.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetSize</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -14089,7 +14033,7 @@ are based on output from window.performance structure of the web page. See also
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.placeholder": "Search", "search.result.term.missing": "Missing", "search.config.lang": "en", "search.config.separator": "[\\s\\-]+", "search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.config.pipeline": "trimmer, stopWordFilter", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.none": "No matching documents", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "clipboard.copy": "Copy to clipboard"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
