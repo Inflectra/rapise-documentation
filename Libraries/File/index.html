@@ -11241,6 +11241,7 @@ record or learn this object, it is always automatically available in any test.</
 <p>Appends text to a file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Append</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">text</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11269,6 +11270,7 @@ record or learn this object, it is always automatically available in any test.</
 <p>Creates a folder.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CreateFolder</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11292,6 +11294,7 @@ record or learn this object, it is always automatically available in any test.</
 <p>Deletes a file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Delete</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11315,6 +11318,7 @@ record or learn this object, it is always automatically available in any test.</
 <p>Deletes a folder.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DeleteFolder</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11338,6 +11342,7 @@ record or learn this object, it is always automatically available in any test.</
 <p>Checks if file exists or not.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Exists</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11361,6 +11366,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="Find"></a>    </p>
 <h4 id="find">Find<a class="headerlink" href="#find" title="Permanent link">&para;</a></h4>
 <p>Find files in folder using wildcard pattern (including * and ?).</p>
+
 <pre>
 I.e. File.Find("c:/Temp", "*.txt", true) may return
   C:\Temp\file1.txt
@@ -11374,6 +11380,7 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 
 <div class="highlight"><pre><span></span><code><span class="nx">Find</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">searchPattern</span><span class="p">,</span> <span class="nx">recursive</span><span class="p">,</span> <span class="nx">firstOnly</span><span class="p">,</span> <span class="nx">files</span><span class="p">,</span> <span class="nx">folders</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11424,6 +11431,7 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 <p>Checks if folder exists.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11449,6 +11457,7 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 <p>Gets information about a folder.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">FolderInfo</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11477,6 +11486,7 @@ Normally used together with eval statement, i.e.:
 eval( File.Include('myfile.js') )</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Include</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11504,6 +11514,7 @@ Normally used together with eval statement, i.e.:
 eval( File.IncludeOnce('myfile.js') )</p>
 <div class="highlight"><pre><span></span><code><span class="nx">IncludeOnce</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11529,6 +11540,7 @@ eval( File.IncludeOnce('myfile.js') )</p>
 <p>Gets information about a file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Info</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11555,6 +11567,7 @@ eval( File.IncludeOnce('myfile.js') )</p>
 <p>Reads UTF-8 encoded text file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Read</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11580,6 +11593,7 @@ eval( File.IncludeOnce('myfile.js') )</p>
 <p>Finds the file in test folders and calculates its absolute path.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ResolvePath</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11605,6 +11619,7 @@ eval( File.IncludeOnce('myfile.js') )</p>
 <p>Sets file modification time to current time.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Touch</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11628,6 +11643,7 @@ eval( File.IncludeOnce('myfile.js') )</p>
 <p>Writes text file.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Write</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">text</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11755,7 +11771,7 @@ eval( File.IncludeOnce('myfile.js') )</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "clipboard.copied": "Copied to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.term.missing": "Missing", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents"}</script>
       
       <script>
         app = initialize({

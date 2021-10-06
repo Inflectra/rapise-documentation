@@ -10851,8 +10851,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#version-71-september-2021" class="md-nav__link">
-    Version 7.1 (September 2021)
+  <a href="#version-72-february-2022" class="md-nav__link">
+    Version 7.2 (February 2022)
   </a>
   
 </li>
@@ -10944,8 +10944,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#version-71-september-2021" class="md-nav__link">
-    Version 7.1 (September 2021)
+  <a href="#version-72-february-2022" class="md-nav__link">
+    Version 7.2 (February 2022)
   </a>
   
 </li>
@@ -11018,15 +11018,11 @@
 <p>Releases will also include lower level enhancements and bug fixes. We do not provide a public list of open bugs or enhancement requests at this time.</p>
 <p>If you have any feedback or suggestions regarding this roadmap, please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#105;&#110;&#102;&#108;&#101;&#99;&#116;&#114;&#97;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#105;&#110;&#102;&#108;&#101;&#99;&#116;&#114;&#97;&#46;&#99;&#111;&#109;</a>.</p>
 </div>
-<h2 id="version-71-september-2021">Version 7.1 (September 2021)<a class="headerlink" href="#version-71-september-2021" title="Permanent link">&para;</a></h2>
+<h2 id="version-72-february-2022">Version 7.2 (February 2022)<a class="headerlink" href="#version-72-february-2022" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Spira Dashboard 2.0</strong>: Further development of the dashboard: <ul>
-<li>CRUD operations for test case/test set parameters.</li>
-<li><code>Rerun test set if failed</code> option.</li>
-<li><strong>Parallel run</strong>: Parallel execution by RapiseLauncher. Should work with API tests, Web tests executed via WebDriver and Mobile tests.</li>
-</ul>
-</li>
-<li><strong>Floating License Support</strong>: Spira based license manager for Rapise to enable floating licenses.</li>
+<li><strong>Spira Global Object</strong> to communicate with Spira from Rapise tests (to create an incident, to run a test set, to support complex execution flows).</li>
+<li><strong>PageObject</strong> pattern support. Allow sub-test to export global object, re-usable across other sub-tests.</li>
+<li><strong>FileCompare</strong> - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).</li>
 </ul>
 <h2 id="backlog">Backlog<a class="headerlink" href="#backlog" title="Permanent link">&para;</a></h2>
 <h3 id="spiratest-integration-enhancements">SpiraTest Integration Enhancements<a class="headerlink" href="#spiratest-integration-enhancements" title="Permanent link">&para;</a></h3>
@@ -11037,7 +11033,6 @@
 <ul>
 <li><strong>Hierarchical Object Repository</strong>: Multilevel object tree with ability to show objects from multiple tests and combine objects into user-defined groups.</li>
 <li><strong>Remove unused objects</strong>: Option to remove objects that are not used explicitly in RVL or JavaScript modules.</li>
-<li><strong>PageObject</strong> pattern support. Allow sub-test to export global object, re-usable across other sub-tests.</li>
 </ul>
 <h3 id="run-tests-on-linuxmacos">Run Tests on Linux/macOS<a class="headerlink" href="#run-tests-on-linuxmacos" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11049,7 +11044,6 @@
 <li><strong>Recorder Dialog 2.0</strong>: Ability to fine tune captured steps during recording.</li>
 <li><strong>Simplified installation/upgrade</strong>: Do not require to uninstall Rapise before upgrade.</li>
 <li><strong>Dark mode</strong>: Someday, really :)</li>
-<li><strong>FileCompare</strong> - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).</li>
 <li>Custom <strong>Start Page</strong>. Allow test framework or test to have custom start page that may interact with test (re-build test structure, display graph, modify test) and show some application-specific information regarding test.</li>
 </ul>
 <h3 id="integrations">Integrations<a class="headerlink" href="#integrations" title="Permanent link">&para;</a></h3>
@@ -11059,7 +11053,6 @@
 <li><strong>Java 64-bit</strong>: Recording and running tests on 64-bit JVM.</li>
 <li><strong>Visual Studio Code integration</strong>: Code helper for Rapise objects/actions. Start recording/playback from VS Code.</li>
 <li><strong>Azure Test Plans integration</strong>: Linking to a test case in an Azure Test Plan.</li>
-<li><strong>UFT Converter</strong> - enable execution of UFT scripts in Rapise (now it converts to Rapise).</li>
 </ul>
                 
               
@@ -11149,7 +11142,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "clipboard.copied": "Copied to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.term.missing": "Missing", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents"}</script>
       
       <script>
         app = initialize({

@@ -10992,12 +10992,11 @@
 <p><a href="http://www.libraryinformationsystem.org/Services/SoapService.aspx">http://www.libraryinformationsystem.org/Services/SoapService.aspx</a></p>
 <h2 id="what-is-soap-and-what-is-a-soap-web-service">What is SOAP and what is a SOAP web service?<a class="headerlink" href="#what-is-soap-and-what-is-a-soap-web-service" title="Permanent link">&para;</a></h2>
 <!-- /* cSpell:disable */ -->
+
 <blockquote>
-<p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web servicesmake use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.</p>
-</blockquote>
+<p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web servicesmake use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.
 <!-- /* cSpell:enable */ -->
-<blockquote>
-<p>SOAP web services are fully self-descripting, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.</p>
+SOAP web services are fully self-descripting, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.</p>
 </blockquote>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Creating a SOAP web service test in Rapise consists of the following
@@ -11032,6 +11031,7 @@ project:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">http://www.libraryinformationsystem.org/Services/SoapService.svc?wsdl</span>
 </code></pre></div>
 </td></tr></table>
+
 <p>then click the <code>Get WSDL</code> to load the list of SOAP operations:</p>
 <p><img alt="tutorial_soap_pic3" src="../img/tutorial_soap_web_services3.png" /></p>
 <p>Now click on the <strong>Connection_Authenticate</strong> operation in the SOAP
@@ -11250,6 +11250,7 @@ the web service.</p>
 
 <span class="p">}</span>
 </code></pre></div>
+
 <p>You will see each of the SOAP functions called in turn, with
 verification code automatically added.</p>
 <p>We can add some comments to make it easier to read:</p>
@@ -11279,6 +11280,7 @@ verification code automatically added.</p>
 
     <span class="nx">LibraryInformationSystem</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Connection_Disconnect&#39;</span><span class="p">,</span> <span class="p">{});</span>
 </code></pre></div>
+
 <p>When you click the <code>Play</code> button in the main toolbar, you will see
 the following result:</p>
 <p><img alt="tutorial_soap_pic12" src="../img/tutorial_soap_web_services13.png" /></p>
@@ -11386,7 +11388,7 @@ test</a>.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "clipboard.copied": "Copied to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.term.missing": "Missing", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents"}</script>
       
       <script>
         app = initialize({

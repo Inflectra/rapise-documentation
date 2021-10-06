@@ -11342,11 +11342,11 @@
 </tr>
 <tr>
 <td><a href="#getparameters">GetParameters</a></td>
-<td>Return common request parameters (array of `[{'Name':somename,'Value':somevalue},.</td>
+<td _Name_:somename_Value_:somevalue="'Name':somename,'Value':somevalue">Return common request parameters (array of `[</td>
 </tr>
 <tr>
 <td><a href="#getrequestheaders">GetRequestHeaders</a></td>
-<td>Return common HTTP Headers applied to each REST or SOAP request (array of `[{'Name':somename,'Value':somevalue},.</td>
+<td _Name_:somename_Value_:somevalue="'Name':somename,'Value':somevalue">Return common HTTP Headers applied to each REST or SOAP request (array of `[</td>
 </tr>
 <tr>
 <td><a href="#getrestrequest">GetRESTRequest</a></td>
@@ -11396,6 +11396,7 @@
 <p>Remove one pre-defined parameter. Requires Rapise 6.6+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11419,6 +11420,7 @@
 <p>Remove one pre-defined request header by name. Requires Rapise 6.6+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11442,12 +11444,14 @@
 <p>Returns HTTP Basic Authentication credentials (if any).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCredential</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.session.getcredential"></a></p>
 <p><a name="GetNewRequest"></a>    </p>
 <h4 id="getnewrequest">GetNewRequest<a class="headerlink" href="#getnewrequest" title="Permanent link">&para;</a></h4>
 <p>Create new <code>RESTService</code> object with 'GET' method and specified <code>url</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetNewRequest</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11476,18 +11480,21 @@
 <p>Return common request parameters (array of <code>[{'Name':somename,'Value':somevalue},...]</code>)</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetParameters</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.session.getparameters"></a></p>
 <p><a name="GetRequestHeaders"></a>    </p>
 <h4 id="getrequestheaders">GetRequestHeaders<a class="headerlink" href="#getrequestheaders" title="Permanent link">&para;</a></h4>
 <p>Return common HTTP Headers applied to each REST or SOAP request (array of <code>[{'Name':somename,'Value':somevalue},...]</code>)</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetRequestHeaders</span><span class="p">()</span> 
 </code></pre></div>
+
 <p><a name="see.also.session.getrequestheaders"></a></p>
 <p><a name="GetRESTRequest"></a>    </p>
 <h4 id="getrestrequest">GetRESTRequest<a class="headerlink" href="#getrestrequest" title="Permanent link">&para;</a></h4>
 <p>Create new <code>RESTService</code> object with 'GET' method and specified <code>url</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="nx">defNameOrPath</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11516,6 +11523,7 @@
 <p>Enable URL replacement for all further requests. If request URL starts with oldUrl then replace the beginning with newUrl. Requires Rapise 6.6+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetBaseUrl</span><span class="p">(</span><span class="nx">oldUrl</span><span class="p">,</span> <span class="nx">newUrl</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11547,9 +11555,11 @@
 <span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span> <span class="o">=</span> <span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
+
 <p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">value2</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11578,6 +11588,7 @@
 <p>Set to <code>true</code> to prevent REST requests with non 200 status code from failing the test. It would <code>&lt;req&gt;.DoExecute()</code> will just return <code>true</code>/<code>false</code> but the line in report will always be marked as <code>Passed</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetIgnoreStatus</span><span class="p">(</span><span class="nx">ignore</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11601,6 +11612,7 @@
 <p>Sets common request parameter. This parameter will be applied to all further REST and SOAP requests.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11634,6 +11646,7 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nx">SetParameters</span><span class="p">(</span><span class="nx">requestParam</span><span class="p">,</span> <span class="nx">optValueVal</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11662,6 +11675,7 @@
 <p>Sets common request header. This header will be applied to all further REST and SOAP requests.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11695,6 +11709,7 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nx">SetRequestHeaders</span><span class="p">(</span><span class="nx">requestParam</span><span class="p">,</span> <span class="nx">optValueVal</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11723,6 +11738,7 @@
 <p>Deprecated. Same as <code>SetBaseUrl</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SetUrl</span><span class="p">(</span><span class="nx">oldUrl</span><span class="p">,</span> <span class="nx">newUrl</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11850,7 +11866,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "clipboard.copied": "Copied to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.term.missing": "Missing", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents"}</script>
       
       <script>
         app = initialize({

@@ -11258,6 +11258,7 @@ Sample code:</p>
 <span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span> <span class="o">=</span> <span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
+
 <p>Type: object</p>
 <p>Accessors: GetCredential, SetCredential</p>
 <p><a name="Name"></a></p>
@@ -11302,12 +11303,13 @@ Sample code:</p>
 <p>Returns the list of HTTP headers returned with the HTTP response.
 Sample code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetResponseHeaders</span><span class="p">();</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Type: object</p>
 <p>Accessors: GetResponseHeaders</p>
 <p><a name="ResponseIsErrorStatus"></a></p>
@@ -11328,6 +11330,7 @@ Sample code:</p>
 <p>Executes a SOAP service operation, substituting any of the provided parameter values if necessary.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoExecute</span><span class="p">(</span><span class="nx">method</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="nx">headers</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11363,6 +11366,7 @@ Sample code:</p>
 <p>Sends a SOAP request as is.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoExecuteRaw</span><span class="p">(</span><span class="nx">method</span><span class="p">,</span> <span class="nx">body</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11398,6 +11402,7 @@ Sample code:</p>
 <p>Remove one pre-defined parameter. Requires Rapise 6.6+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11421,6 +11426,7 @@ Sample code:</p>
 <p>Remove one pre-defined request header by name. Requires Rapise 6.6+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11444,6 +11450,7 @@ Sample code:</p>
 <p>Checks that a given part of response equals the expected value.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoVerify</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">jsonPath</span><span class="p">,</span> <span class="nx">expectedValue</span><span class="p">)</span> 
 </code></pre></div>
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11578,7 +11585,7 @@ Sample code:</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.one": "1 matching document", "search.result.more.other": "# more on this page", "search.placeholder": "Search", "clipboard.copied": "Copied to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# matching documents", "search.result.term.missing": "Missing", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents"}</script>
       
       <script>
         app = initialize({
