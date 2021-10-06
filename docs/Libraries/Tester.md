@@ -72,22 +72,22 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[SetReportAttribute](#setreportattribute) | Set persistent attribute. |
 |	[SoftAssert](#softassert) | Is identical to Tester.Assert. |
 |	[SoftAssertAll](#softassertall) | Fail test if there were any previous failures. |
-|	[SoftAssertContains](#softassertcontains) |  |
-|	[SoftAssertEndsWith](#softassertendswith) |  |
-|	[SoftAssertEqual](#softassertequal) |  |
-|	[SoftAssertFalse](#softassertfalse) |  |
-|	[SoftAssertGreater](#softassertgreater) |  |
-|	[SoftAssertGreaterOrEqual](#softassertgreaterorequal) |  |
-|	[SoftAssertImage](#softassertimage) |  |
-|	[SoftAssertLess](#softassertless) |  |
-|	[SoftAssertLessOrEqual](#softassertlessorequal) |  |
-|	[SoftAssertNotContains](#softassertnotcontains) |  |
-|	[SoftAssertNotEqual](#softassertnotequal) |  |
-|	[SoftAssertNotNull](#softassertnotnull) |  |
-|	[SoftAssertNotSet](#softassertnotset) |  |
-|	[SoftAssertNull](#softassertnull) |  |
-|	[SoftAssertSet](#softassertset) |  |
-|	[SoftAssertStartsWith](#softassertstartswith) |  |
+|	[SoftAssertContains](#softassertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
+|	[SoftAssertEndsWith](#softassertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
+|	[SoftAssertEqual](#softassertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
+|	[SoftAssertFalse](#softassertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
+|	[SoftAssertGreater](#softassertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
+|	[SoftAssertGreaterOrEqual](#softassertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
+|	[SoftAssertImage](#softassertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
+|	[SoftAssertLess](#softassertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
+|	[SoftAssertLessOrEqual](#softassertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
+|	[SoftAssertNotContains](#softassertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
+|	[SoftAssertNotEqual](#softassertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
+|	[SoftAssertNotNull](#softassertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
+|	[SoftAssertNotSet](#softassertnotset) | Checks if `val` is not set (i.e. |
+|	[SoftAssertNull](#softassertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
+|	[SoftAssertSet](#softassertset) | Checks if `val` is set (i.e. |
+|	[SoftAssertStartsWith](#softassertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
 |	[SuppressReport](#suppressreport) | In SuppressReport mode all assertions are ignored. |
 
 
@@ -1167,10 +1167,12 @@ SoftAssertAll(message)
 <a name="SoftAssertContains"></a>    
 #### SoftAssertContains
 
-
+Checks if `str` contains `substr` somewhere and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertContains(str, substr, data, tags, tags) 
+SoftAssertContains(message, str, substr, data, tags) 
 ```
 
 
@@ -1178,11 +1180,11 @@ SoftAssertContains(str, substr, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	 |
-| substr | string |	 |
-| data | string |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1193,10 +1195,12 @@ SoftAssertContains(str, substr, data, tags, tags)
 <a name="SoftAssertEndsWith"></a>    
 #### SoftAssertEndsWith
 
-
+Checks that `str` has `substr` in the end and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertEndsWith(str, substr, data, tags, tags) 
+SoftAssertEndsWith(message, str, substr, data, tags) 
 ```
 
 
@@ -1204,11 +1208,11 @@ SoftAssertEndsWith(str, substr, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	 |
-| substr | string |	 |
-| data | string |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1219,10 +1223,12 @@ SoftAssertEndsWith(str, substr, data, tags, tags)
 <a name="SoftAssertEqual"></a>    
 #### SoftAssertEqual
 
-
+Checks if obj1 equals to obj2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertEqual(obj1, obj2, data, tags, tags) 
+SoftAssertEqual(message, obj1, obj2, data, tags) 
 ```
 
 
@@ -1230,11 +1236,11 @@ SoftAssertEqual(obj1, obj2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| obj1 | string |	 |
-| obj2 | object |	 |
-| data | object |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| obj1 | object |	First object to compare. |
+| obj2 | object |	Second object to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1245,10 +1251,12 @@ SoftAssertEqual(obj1, obj2, data, tags, tags)
 <a name="SoftAssertFalse"></a>    
 #### SoftAssertFalse
 
-
+Checks if `val` is `false` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertFalse(n1, n2, data, tags, tags) 
+SoftAssertFalse(message, n1, n2, data, tags) 
 ```
 
 
@@ -1256,11 +1264,11 @@ SoftAssertFalse(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
 | n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1271,10 +1279,12 @@ SoftAssertFalse(n1, n2, data, tags, tags)
 <a name="SoftAssertGreater"></a>    
 #### SoftAssertGreater
 
-
+Checks if n1 greater than n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertGreater(n1, n2, data, tags, tags) 
+SoftAssertGreater(message, n1, n2, data, tags) 
 ```
 
 
@@ -1282,11 +1292,11 @@ SoftAssertGreater(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
-| n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	First value to compare. |
+| n2 | number |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1297,10 +1307,12 @@ SoftAssertGreater(n1, n2, data, tags, tags)
 <a name="SoftAssertGreaterOrEqual"></a>    
 #### SoftAssertGreaterOrEqual
 
-
+Checks if n1 greater or equal than n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertGreaterOrEqual(n1, n2, data, tags, tags) 
+SoftAssertGreaterOrEqual(message, n1, n2, data, tags) 
 ```
 
 
@@ -1308,11 +1320,11 @@ SoftAssertGreaterOrEqual(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
-| n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	First value to compare. |
+| n2 | number |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1323,10 +1335,12 @@ SoftAssertGreaterOrEqual(n1, n2, data, tags, tags)
 <a name="SoftAssertImage"></a>    
 #### SoftAssertImage
 
-
+Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertImage(img1, path, data, tags, tags) 
+SoftAssertImage(message, img1, path, data, tags) 
 ```
 
 
@@ -1334,11 +1348,11 @@ SoftAssertImage(img1, path, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| img1 | string |	 |
-| path | object |	 |
-| data | ImageWrapper |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| img1 | object |	ImageWrapper object (1st image to compare). |
+| path | string |	Path to the second image to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1349,10 +1363,12 @@ SoftAssertImage(img1, path, data, tags, tags)
 <a name="SoftAssertLess"></a>    
 #### SoftAssertLess
 
-
+Checks if n1 is less than n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertLess(n1, n2, data, tags, tags) 
+SoftAssertLess(message, n1, n2, data, tags) 
 ```
 
 
@@ -1360,11 +1376,11 @@ SoftAssertLess(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
-| n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	First value to compare. |
+| n2 | number |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1375,10 +1391,12 @@ SoftAssertLess(n1, n2, data, tags, tags)
 <a name="SoftAssertLessOrEqual"></a>    
 #### SoftAssertLessOrEqual
 
-
+Checks if n1 differs from n2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertLessOrEqual(n1, n2, data, tags, tags) 
+SoftAssertLessOrEqual(message, n1, n2, data, tags) 
 ```
 
 
@@ -1386,11 +1404,11 @@ SoftAssertLessOrEqual(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
-| n2 | object |	 |
-| data | object |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| n1 | object |	First value to compare. |
+| n2 | object |	Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1401,10 +1419,12 @@ SoftAssertLessOrEqual(n1, n2, data, tags, tags)
 <a name="SoftAssertNotContains"></a>    
 #### SoftAssertNotContains
 
-
+Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotContains(str, substr, data, tags, tags) 
+SoftAssertNotContains(message, str, substr, data, tags) 
 ```
 
 
@@ -1412,11 +1432,11 @@ SoftAssertNotContains(str, substr, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	 |
-| substr | string |	 |
-| data | string |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1427,10 +1447,12 @@ SoftAssertNotContains(str, substr, data, tags, tags)
 <a name="SoftAssertNotEqual"></a>    
 #### SoftAssertNotEqual
 
-
+Checks if obj1 differs from obj2 and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotEqual(obj1, obj2, data, tags, tags) 
+SoftAssertNotEqual(message, obj1, obj2, data, tags) 
 ```
 
 
@@ -1438,11 +1460,11 @@ SoftAssertNotEqual(obj1, obj2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| obj1 | string |	 |
-| obj2 | object |	 |
-| data | object |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| obj1 | object |	First object to compare. |
+| obj2 | object |	Second object to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1453,10 +1475,12 @@ SoftAssertNotEqual(obj1, obj2, data, tags, tags)
 <a name="SoftAssertNotNull"></a>    
 #### SoftAssertNotNull
 
-
+Checks if `val` is `NotNull` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotNull(n1, n2, data, tags, tags) 
+SoftAssertNotNull(message, n1, n2, data, tags) 
 ```
 
 
@@ -1464,11 +1488,11 @@ SoftAssertNotNull(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
 | n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1479,10 +1503,12 @@ SoftAssertNotNull(n1, n2, data, tags, tags)
 <a name="SoftAssertNotSet"></a>    
 #### SoftAssertNotSet
 
-
+Checks if `val` is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotSet(n1, n2, data, tags, tags) 
+SoftAssertNotSet(message, n1, n2, data, tags) 
 ```
 
 
@@ -1490,11 +1516,11 @@ SoftAssertNotSet(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
 | n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1505,10 +1531,12 @@ SoftAssertNotSet(n1, n2, data, tags, tags)
 <a name="SoftAssertNull"></a>    
 #### SoftAssertNull
 
-
+Checks if `val` is `null` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNull(n1, n2, data, tags, tags) 
+SoftAssertNull(message, n1, n2, data, tags) 
 ```
 
 
@@ -1516,11 +1544,11 @@ SoftAssertNull(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
 | n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1531,10 +1559,12 @@ SoftAssertNull(n1, n2, data, tags, tags)
 <a name="SoftAssertSet"></a>    
 #### SoftAssertSet
 
-
+Checks if `val` is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertSet(n1, n2, data, tags, tags) 
+SoftAssertSet(message, n1, n2, data, tags) 
 ```
 
 
@@ -1542,11 +1572,11 @@ SoftAssertSet(n1, n2, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n1 | string |	 |
+| message | string |	Message to put in the report. |
+| n1 | number |	 |
 | n2 | number |	 |
-| data | number |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1557,10 +1587,12 @@ SoftAssertSet(n1, n2, data, tags, tags)
 <a name="SoftAssertStartsWith"></a>    
 #### SoftAssertStartsWith
 
-
+Checks if `str` begins with `substr` and saves corresponding Report entry.
+Assertion is an atomic piece of verification. Assertion may contain some 
+additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertStartsWith(str, substr, data, tags, tags) 
+SoftAssertStartsWith(message, str, substr, data, tags) 
 ```
 
 
@@ -1568,11 +1600,11 @@ SoftAssertStartsWith(str, substr, data, tags, tags)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	 |
-| substr | string |	 |
-| data | string |	 |
-| tags | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	 |
-| tags | object |	 |
+| message | string |	Message to put in the report. |
+| str | string |	String to search in. |
+| substr | string |	Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
