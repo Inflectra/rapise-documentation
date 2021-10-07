@@ -20,6 +20,16 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 <!-- ============================== property summary ========================== -->
 
 	
+
+### Property Summary
+
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [IsEnabled](#isenabled) | Checks if given menu item is enabled. | GetIsEnabled |  |
+
+
+
+	
 <!-- ============================== action summary ========================== -->
 
 
@@ -39,6 +49,32 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 <!-- ============================== property detail ========================== -->
+	
+### Property Detail
+		
+<a name="IsEnabled"></a>
+#### IsEnabled
+
+
+Checks if given menu item is enabled.
+
+			
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| path | string | Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+
+
+	
+			
+Type: boolean
+			
+			
+Accessors: GetIsEnabled
+			
+		
 	
 	
 <!-- ============================== action detail ========================== -->
