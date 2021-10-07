@@ -5132,9 +5132,58 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ManagedStatusBar
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         ManagedStatusBar
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#property-summary" class="md-nav__link">
+    Property Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-detail" class="md-nav__link">
+    Property Detail
+  </a>
+  
+    <nav class="md-nav" aria-label="Property Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -10864,6 +10913,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#property-summary" class="md-nav__link">
+    Property Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-detail" class="md-nav__link">
+    Property Detail
+  </a>
+  
+    <nav class="md-nav" aria-label="Property Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -10883,10 +10967,52 @@
 <p><strong>Behavior Pattern: ManagedStatusBarBehavior</strong></p>
 <!-- ============================== property summary ========================== -->
 
+<h3 id="property-summary">Property Summary<a class="headerlink" href="#property-summary" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Getter</strong></th>
+<th><strong>Setter</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#text">Text</a></td>
+<td>Status Bar Text.</td>
+<td>GetText</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <!-- ============================== action summary ========================== -->
 
 <!-- ============================== property detail ========================== -->
 
+<h3 id="property-detail">Property Detail<a class="headerlink" href="#property-detail" title="Permanent link">&para;</a></h3>
+<p><a name="Text"></a></p>
+<h4 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h4>
+<p>Status Bar Text.</p>
+<p><strong>Getter Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ind</td>
+<td>number</td>
+<td>Status bar section index. If not specified, the text of all sections is combined with ';' as a separator.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p>Type: string</p>
+<p>Accessors: GetText</p>
 <!-- ============================== action detail ========================== -->
                 
                   
@@ -10992,7 +11118,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.placeholder": "Search", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.result.more.other": "# more on this page", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
       
       <script>
         app = initialize({

@@ -5095,9 +5095,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#property-summary" class="md-nav__link">
+    Property Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#action-summary" class="md-nav__link">
     Action Summary
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-detail" class="md-nav__link">
+    Property Detail
+  </a>
+  
+    <nav class="md-nav" aria-label="Property Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isenabled" class="md-nav__link">
+    IsEnabled
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -10955,9 +10982,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#property-summary" class="md-nav__link">
+    Property Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#action-summary" class="md-nav__link">
     Action Summary
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-detail" class="md-nav__link">
+    Property Detail
+  </a>
+  
+    <nav class="md-nav" aria-label="Property Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isenabled" class="md-nav__link">
+    IsEnabled
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -11037,6 +11091,25 @@
 <p><strong>Behavior Pattern: ManagedMenuBehavior</strong></p>
 <!-- ============================== property summary ========================== -->
 
+<h3 id="property-summary">Property Summary<a class="headerlink" href="#property-summary" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Getter</strong></th>
+<th><strong>Setter</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#isenabled">IsEnabled</a></td>
+<td>Checks if given menu item is enabled.</td>
+<td>GetIsEnabled</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <!-- ============================== action summary ========================== -->
 
 <h3 id="action-summary">Action Summary<a class="headerlink" href="#action-summary" title="Permanent link">&para;</a></h3>
@@ -11076,6 +11149,34 @@
 </table>
 <!-- ============================== property detail ========================== -->
 
+<h3 id="property-detail">Property Detail<a class="headerlink" href="#property-detail" title="Permanent link">&para;</a></h3>
+<p><a name="IsEnabled"></a></p>
+<h4 id="isenabled">IsEnabled<a class="headerlink" href="#isenabled" title="Permanent link">&para;</a></h4>
+<p>Checks if given menu item is enabled.</p>
+<p><strong>Getter Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>Path from the menu root to a leaf item with components delimited by separator parameter.</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>string</td>
+<td>Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";".</td>
+</tr>
+</tbody>
+</table>
+<p>Type: boolean</p>
+<p>Accessors: GetIsEnabled</p>
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
@@ -11389,7 +11490,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.other": "# matching documents", "search.config.pipeline": "trimmer, stopWordFilter", "search.placeholder": "Search", "search.result.term.missing": "Missing", "search.result.one": "1 matching document", "search.result.none": "No matching documents", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.result.more.other": "# more on this page", "clipboard.copied": "Copied to clipboard", "search.result.placeholder": "Type to start searching", "search.result.more.one": "1 more on this page", "search.config.separator": "[\\s\\-]+"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
       
       <script>
         app = initialize({
