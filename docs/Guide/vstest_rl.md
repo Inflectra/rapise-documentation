@@ -147,7 +147,7 @@ Now we need to fill task execution parameters as follows:
     * **Width**
     * **Height**
 
-  * **Record Video of Execution** a `ScreenCapture.wmv` will be generated and saved as a [Test Run attachment](http://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management.md#attachments).
+  * **Record Video of Execution** a `ScreenCapture.wmv` will be generated and saved as a [Test Run attachment](https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/#attachments).
     * **Video Recording Options** set of [options](spiratest_integration.md#record-playback-videos) for `Microsoft.TestPlatform` video recorder.
 
   * **Publish RapiseLauncher Log** when enabled, RapiseLauncher log is attached to pipeline build log.
