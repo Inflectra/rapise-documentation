@@ -78,7 +78,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[OpenNotifications](#opennotifications) |  |
 |	[PressKeyCode](#presskeycode) |  |
 |	[PullFile](#pullfile) |  |
-|	[PushFile](#pushfile) |  |
+|	[PushFile](#pushfile) | Place a file onto the device in a particular place. |
 |	[Quit](#quit) | Disconnects from the Browser. |
 |	[ReconnectSession](#reconnectsession) | Reads session information produced by SaveSession and connects to the mobile target. |
 |	[RemoveApp](#removeapp) |  |
@@ -1257,10 +1257,10 @@ PullFile(pathOnDevice)
 <a name="PushFile"></a>    
 #### PushFile
 
-
+Place a file onto the device in a particular place.
 
 ```javascript
-PushFile(base64Data, base64Data) 
+PushFile(pathOnDevice, base64Data) 
 ```
 
 
@@ -1268,8 +1268,8 @@ PushFile(base64Data, base64Data)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| base64Data |  |	 |
-| base64Data |  |	 |
+| pathOnDevice | string |	Path to install the data to. |
+| base64Data | string |	Contents of file in base64. |
 
 
 
