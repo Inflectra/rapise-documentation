@@ -11063,7 +11063,6 @@
 
 <span class="nx">SeSGlobalObject</span><span class="p">(</span><span class="s2">&quot;MyApp&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <h3 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h3>
 <p>Every action of <code>MyApp</code> object is prefixed with <code>MyApp_</code>. We have three such actions: <code>Launch</code>,<code>Close</code> and <code>Login</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MyApp_Launch</span><span class="p">()</span>
@@ -11081,15 +11080,12 @@
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Logging as &quot;</span> <span class="o">+</span> <span class="nx">username</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nx">password</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>To declare the object use <code>SeSGlobalObject</code> call. It must be placed after definitions of all the actions. </p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSGlobalObject</span><span class="p">(</span><span class="s2">&quot;MyApp&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>You may specify action parameter types through comments <code>/**&lt;type&gt;*/</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">username</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">password</span><span class="p">)</span>
 </code></pre></div>
-
 <p>You may also describe actions and parameters using <code>paramInfo</code> objects (should have a name of format <code>_paramInfo&lt;action function name&gt;</code>).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">_paramInfoMyApp_Login</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">_description</span><span class="o">:</span> <span class="s2">&quot;Logs into the application&quot;</span><span class="p">,</span>
@@ -11105,7 +11101,6 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="compile-metadata">Compile Metadata<a class="headerlink" href="#compile-metadata" title="Permanent link">&para;</a></h3>
 <p>When the object is declared you need to compile the metadata for it. To do this open the file where you defined the object and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-f5">F5</kbd></span>.</p>
 <h3 id="object-icons">Object Icons<a class="headerlink" href="#object-icons" title="Permanent link">&para;</a></h3>
@@ -11216,7 +11211,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -10993,7 +10993,6 @@
 <p>When you record your first test, you'll see the following library selection code generated automatically by Rapise:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;%g_browserLibrary:Internet Explorer HTML%&quot;</span><span class="p">,</span> <span class="s2">&quot;DomDynamicsAx&quot;</span><span class="p">];</span>
 </code></pre></div>
-
 <p>If you don’t see the <strong>DomDynamicsAx</strong> library listed in your test, then you will need to <a href="../change_the_libraries_being_use/">manually add it</a>.</p>
 <h2 id="recording-and-learning-objects">Recording and Learning Objects<a class="headerlink" href="#recording-and-learning-objects" title="Permanent link">&para;</a></h2>
 <p>During recording while you interact with Dynamics 365, Rapise captures objects and displays them in the <a href="../object_learning/">object tree</a>:</p>
@@ -11019,13 +11018,12 @@
 <p><img alt="recorded purchase order" src="../img/dynamics_3658.png" /></p>
 <p><strong>JavaScript</strong></p>
 <!-- /* cSpell:disable */ -->
-
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="nx">Navigator</span><span class="p">.</span><span class="nx">Open</span><span class="p">(</span><span class="s2">&quot;https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&amp;mi=DefaultDashboard&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DAT&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SysCompanyChooser_DataArea_id&#39;</span><span class="p">).</span><span class="nx">DoOpen</span><span class="p">();</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SysCompanyChooserLookup_Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;USPI&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SysCompanyChooserLookup_Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;USPI&quot;</span><span class="p">,</span> <span class="mf">1</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;NavigationSearchBox&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;NavigationSearchBox&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;NavigationSearchBox&#39;</span><span class="p">).</span><span class="nx">DoSearch</span><span class="p">(</span><span class="s2">&quot;purchase orders&quot;</span><span class="p">);</span>
@@ -11036,24 +11034,25 @@
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;PurchCreateOrder_PurchTable_Inve&#39;</span><span class="p">).</span><span class="nx">DoOpen</span><span class="p">();</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;InventLocationIdLookup_GridInven&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Ingredients - Cleaners&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;OK&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Item number&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="s2">&quot;Item number&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;InventItemIdLookupPurchase_Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;SodiumHydroxide&quot;</span><span class="p">,</span> <span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Unit&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="s2">&quot;Unit&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;UnitOfMeasureLookup_GridConverti&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;kilogram&quot;</span><span class="p">,</span> <span class="s2">&quot;Translated description&quot;</span><span class="p">);</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;5&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Add_line&#39;</span><span class="p">).</span><span class="nx">DoEnsureVisible</span><span class="p">();</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Add_line&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Item number&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="s2">&quot;Item number&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;InventItemIdLookupPurchase_Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;OleicAcid&quot;</span><span class="p">,</span> <span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;purchtablelistpageopen_LineSpec&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;3&quot;</span><span class="p">);</span>
     <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Save&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 
 <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;%g_browserLibrary:Chrome HTML%&quot;</span><span class="p">,</span> <span class="s2">&quot;DomDynamicsAX&quot;</span><span class="p">];</span>
 </code></pre></div>
-<!-- /* cSpell:enable */ --></p>
+<!-- /* cSpell:enable */ -->
+
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../microsoft_dynamics/">Microsoft Dynamics</a></li>
@@ -11163,7 +11162,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

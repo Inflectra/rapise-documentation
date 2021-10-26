@@ -10989,20 +10989,19 @@
     <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Open Spreadsheet&#39;</span><span class="p">,</span> <span class="nx">success</span><span class="p">);</span>
     <span class="c1">//Now loop through and see if we can find that value</span>
     <span class="kd">var</span> <span class="nx">rowCount</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetRowCount</span><span class="p">();</span>
-    <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">SetRange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nx">rowCount</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">SetRange</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="nx">rowCount</span> <span class="o">+</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">);</span>
     <span class="c1">//Loop through all the rows and find the match</span>
     <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
     <span class="k">while</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">())</span>
     <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="nx">valueToFind</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span> <span class="o">==</span> <span class="nx">valueToFind</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="nx">data</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+            <span class="nx">data</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="nx">data</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../howtos/">How-Tos</a></li>
@@ -11109,7 +11108,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

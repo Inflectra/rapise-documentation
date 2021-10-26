@@ -11004,7 +11004,6 @@
    <span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p><strong>SubTest1</strong> may be used to check login with valid credentials, <code>Main.js</code> from <strong>SubTest1</strong> looks like:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
@@ -11014,7 +11013,6 @@
    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Login leads to welcome message: &quot;</span><span class="p">,</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="s1">&#39;Welcome_User&#39;</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p><strong>SubTest2</strong> may be used to check login with invalid Credentials (i.e. it is a fail-test). <code>Main.js</code> from <strong>SubTest2</strong> looks like:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
@@ -11024,7 +11022,6 @@
    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Login leads to invalid user object: &quot;</span><span class="p">,</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="s1">&#39;Invalid_User&#39;</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Function <code>Login</code> and objects <code>Welcome_User</code> and <code>Invalid_User</code> are defined in the <strong>parent</strong> test. The sub-tests are just implementing various scenarios for the same set of objects.</p>
 <h2 id="local-object-repository-and-local-functions">Local Object Repository and Local Functions<a class="headerlink" href="#local-object-repository-and-local-functions" title="Permanent link">&para;</a></h2>
 <p>Each test has its own objects, functions and scenarios.</p>
@@ -11157,7 +11154,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

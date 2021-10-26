@@ -11080,7 +11080,6 @@
 <p>Adds a cookie to the current page.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">AddCookie</span><span class="p">(</span><span class="nx">cookie</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11094,7 +11093,7 @@
 <tr>
 <td>cookie</td>
 <td>Cookie</td>
-<td Domain:="Domain:" Expiry:="Expiry:" Name:="Name:" Path:="Path:" Value:="Value:" _="&quot;/&quot;," _2018-12-28T13:15.00-05:00_="&quot;2018-12-28T13:15.00-05:00&quot;" _CookieName_="&quot;CookieName&quot;," _CookieValue_="&quot;CookieValue&quot;," _example.com_="&quot;example.com&quot;,">Cookie object, e.g. </td>
+<td>Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}.</td>
 </tr>
 </tbody>
 </table>
@@ -11104,21 +11103,18 @@
 <p>Gets all cookies defined for the current page.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">AllCookies</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.cookies.allcookies"></a></p>
 <p><a name="DeleteAllCookies"></a>    </p>
 <h4 id="deleteallcookies">DeleteAllCookies<a class="headerlink" href="#deleteallcookies" title="Permanent link">&para;</a></h4>
 <p>Deletes the cookie with the specified name from the page.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DeleteAllCookies</span><span class="p">()</span> 
 </code></pre></div>
-
 <p><a name="see.also.cookies.deleteallcookies"></a></p>
 <p><a name="DeleteCookie"></a>    </p>
 <h4 id="deletecookie">DeleteCookie<a class="headerlink" href="#deletecookie" title="Permanent link">&para;</a></h4>
 <p>Deletes the specified cookie from the page.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DeleteCookie</span><span class="p">(</span><span class="nx">cookie</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11132,7 +11128,7 @@
 <tr>
 <td>cookie</td>
 <td>Cookie</td>
-<td Domain:="Domain:" Expiry:="Expiry:" Name:="Name:" Path:="Path:" Value:="Value:" _="&quot;/&quot;," _2018-12-28T13:15.00-05:00_="&quot;2018-12-28T13:15.00-05:00&quot;" _CookieName_="&quot;CookieName&quot;," _CookieValue_="&quot;CookieValue&quot;," _example.com_="&quot;example.com&quot;,">Cookie object, e.g. </td>
+<td>Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}.</td>
 </tr>
 </tbody>
 </table>
@@ -11142,7 +11138,6 @@
 <p>Deletes the cookie with the specified name from the page.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DeleteCookieNamed</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11166,7 +11161,6 @@
 <p>Gets a cookie with the specified name.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCookieNamed</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
-
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -11289,7 +11283,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

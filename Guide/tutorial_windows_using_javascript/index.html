@@ -11119,7 +11119,6 @@
 <p>And select the location of the TwoDialogs.exe. Normally, it is</p>
 <div class="highlight"><pre><span></span><code>C:\Program Files\Inflectra\Rapise\Samples\TwoDialogs\TwoDialogs.exe
 </code></pre></div>
-
 <p><img alt="twodialogaddfilechooser" src="../img/tutorial_windows_using_javascript16.png" /></p>
 <p>Now you have the executable as a part of your test files set:</p>
 <p><img alt="twodialogsexeintestfiles" src="../img/tutorial_windows_using_javascript17.png" /></p>
@@ -11133,18 +11132,15 @@
 <div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
 </code></pre></div>
-
 <p>Now type <code>Global</code>. As soon as you type the <code>.</code>, Rapise will give you a drop down list of all the available methods available in the <code>Global</code> object:</p>
 <p><img alt="globalmethodsdropdown" src="../img/tutorial_windows_using_javascript20.png" /></p>
 <p>Select the <code>DoLaunch(cmdLine, wrkD)</code> member and hit the <code>Enter</code> key.</p>
 <p>Now your script contains the line:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 </code></pre></div>
-
 <p>You need to correct the references to the command line:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="s1">&#39;&quot;C:\\Program Files\\Inflectra\\Rapise\\Samples\\TwoDialogs\\TwoDialogs.exe&quot;&#39;</span><span class="p">);</span>
 </code></pre></div>
-
 <p><strong>Way 3</strong>: Drag the Action from the Objects Tree</p>
 <p>You may drag the method template from the <a href="../object_tree/">Object Tree</a> view. Expand the <strong>Global</strong> node and select the <code>DoLaunch</code> action in it. Drag the node into the proper position inside the script source:</p>
 <p><img alt="twodialogsdragdolaunch3" src="../img/tutorial_windows_using_javascript21.png" /></p>
@@ -11153,7 +11149,6 @@
 <p>Now you need to correct the references to the command line:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="s1">&#39;&quot;C:\\Program Files\\Inflectra\\Rapise\\Samples\\TwoDialogs\\TwoDialogs.exe&quot;&#39;</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="advanced-testing-using-the-object-spy">Advanced Testing using the Object Spy<a class="headerlink" href="#advanced-testing-using-the-object-spy" title="Permanent link">&para;</a></h2>
 <p>Sometimes you need to learn objects that are not visible or are obscured by other objects. To help with this, Rapise has the Object Spy tool. The Spy tool lets you see the objects in the application in a hierarchy that you can learn.</p>
 <p>When you are in the middle of recording, click on the <strong>Spy</strong> button and Rapise will display the <a href="../object_spy_uiautomation/">UIAutomation Spy</a>:</p>
@@ -11265,7 +11260,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"search.result.more.one": "1 more on this page", "search.config.lang": "en", "search.result.placeholder": "Type to start searching", "search.result.more.other": "# more on this page", "search.result.other": "# matching documents", "clipboard.copied": "Copied to clipboard", "search.result.term.missing": "Missing", "search.placeholder": "Search", "search.config.separator": "[\\s\\-]+", "clipboard.copy": "Copy to clipboard", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.config.pipeline": "trimmer, stopWordFilter"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
