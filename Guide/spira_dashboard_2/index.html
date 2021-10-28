@@ -11912,6 +11912,12 @@ borrower,borrower
 </li>
 </ol>
 <p>RapiseLauncher will run the test set same number of times as data rows in the input file. Every column name will become a global parameter passed to a test case.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Besides attachments there is an option to use a file stored in the same Git repository as the testing framework. You may type a path to it in the <code>Input data</code> custom property. The path should contain <code>%GITROOT%</code> placeholder, e.g.:</p>
+<div class="highlight"><pre><span></span><code>%GITROOT%\Data\Logins.xlsx
+</code></pre></div>
+</div>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
 <p>To open the dashboard use <a href="/Guide/menu_and_toolbars/#view">main menu</a> View &gt; Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the <a href="/Guide/options_dialog/#settings">Rapise Settings</a> dialog and set <code>ShowDashboardOnStartup</code> flag to <code>true</code>.</p>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
