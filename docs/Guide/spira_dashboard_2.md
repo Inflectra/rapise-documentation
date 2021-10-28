@@ -75,6 +75,13 @@ Since Rapise 7.1 you may define a table with parameter values to automatically r
 
 RapiseLauncher will run the test set same number of times as data rows in the input file. Every column name will become a global parameter passed to a test case.
 
+!!! note
+    Besides attachments there is an option to use a file stored in the same Git repository as the testing framework. You may type a path to it in the `Input data` custom property. The path should contain `%GITROOT%` placeholder, e.g.:
+
+    ```
+    %GITROOT%\Data\Logins.xlsx
+    ```
+
 ## How to Open
 
 To open the dashboard use [main menu](/Guide/menu_and_toolbars/#view) View > Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the [Rapise Settings](/Guide/options_dialog/#settings) dialog and set `ShowDashboardOnStartup` flag to `true`.
