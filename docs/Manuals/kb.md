@@ -3,9 +3,9 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
-### <a onclick="return RegisterKbClick('KB608', 'What `Blocked` status means for a Test Run')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB608.aspx">KB608</a> What `Blocked` status means for a Test Run
+### <a onclick="return RegisterKbClick('KB608', 'What Blocked status means for a Test Run')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB608.aspx">KB608</a> What Blocked status means for a Test Run
 
-When you run a test with Spira (via RapiseLauncher) you may get a `Blocked` status for a test run. It is displayed in the Test Runs view and Test Sets view both in Spira and Spira Dahboard in Rapise.
+When you run a test with Spira (via RapiseLauncher) you may get a `Blocked` status for a test run. It is displayed in the Test Runs view and Test Sets view both in Spira and Spira Dashboard in Rapise.
 
 ### <a onclick="return RegisterKbClick('KB603', 'The 2021 release wave 2 for Dynamics 365 for Sales')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB603.aspx">KB603</a> The 2021 release wave 2 for Dynamics 365 for Sales
 
@@ -195,7 +195,7 @@ When you install Rapise on some systems you may get an error message: 0x800700e8
 
 If you need to get the size of the string, then here is a couple of possible ways for doing it.
 
-### <a onclick="return RegisterKbClick('KB514', 'How to Press Alt, Shift or Ctrl key Alone')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB514.aspx">KB514</a> How to Press Alt, Shift or Ctrl key Alone
+### <a onclick="return RegisterKbClick('KB514', 'How to Press Alt, Shift, Ctrl or Win key Alone')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB514.aspx">KB514</a> How to Press Alt, Shift, Ctrl or Win key Alone
 
 SendKeys is good for making key combinations, but this way does not work when you need to press special key. Here is a useful workaround.
 
@@ -807,7 +807,7 @@ Sometimes Object ID used as a parameter to the function or object Action (such a
 
 We often get requests for ways to slow down the playback speed of Rapise so that the application under test (AUT) has time to respond. This article describes the different ways and provides suggestions as to when you should use each one.
 
-### <a onclick="return RegisterKbClick('KB268', 'How to automate Drag&Drop from Windows Explorer into Google Drive')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB268.aspx">KB268</a> How to automate Drag&Drop from Windows Explorer into Google Drive
+### <a onclick="return RegisterKbClick('KB268', 'How to automate Drag and Drop from Windows Explorer into Google Drive')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB268.aspx">KB268</a> How to automate Drag and Drop from Windows Explorer into Google Drive
 
 Modern technologies allow to drag&drop files into a browser window to upload them to a server. Such a feature works for example in Chrome browser in Google Drive and Photo applications. In this howto post we'll show how to automate drag&drop of files from Windows Explorer to Google Drive opened in Chrome.
 
