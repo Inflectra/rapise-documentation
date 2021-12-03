@@ -2,6 +2,15 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+
+    <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NG49V2B');</script>
+    <!-- End Google Tag Manager --> 
+
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/tutorial_web_services_rest/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -64,8 +73,7 @@
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="amber">
       
-  
-    
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG49V2B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -11354,17 +11362,17 @@ function Test(params)
     var sessionId = LibraryInformationSystem_Get_Session.GetResponseBodyObject();
     Tester.Message('Session ID: ' + sessionId);
 //  /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
 <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
 <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">DoExecute</span><span class="p">({</span> <span class="s2">&quot;session_id&quot;</span><span class="p">:</span> <span class="n">sessionId</span> <span class="p">});</span>
 </code></pre></div>
 </td></tr></table>
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;length&quot;, 14);</span>
-<span class="err">LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;[0].Name&quot;, &quot;Hound of the Baskervilles&quot;);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;length&quot;, 14);
+LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;[0].Name&quot;, &quot;Hound of the Baskervilles&quot;);
 </code></pre></div>
 </td></tr></table>
 <p>// CODE: Define new book
@@ -11375,8 +11383,8 @@ function Test(params)
         GenreId: 3
     };
 // /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
 <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
 </code></pre></div>
 </td></tr></table>
@@ -11390,9 +11398,9 @@ function Test(params)
     newBook = LibraryInformationSystem_Add_Book.GetResponseBodyObject();
     Tester.Message("New Book ID: " + newBook.Id);
 // /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);</span>
-<span class="err">LibraryInformationSystem_Get_Book.DoExecute({ &quot;session_id&quot;: sessionId });</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
+LibraryInformationSystem_Get_Book.DoExecute({ &quot;session_id&quot;: sessionId });
 </code></pre></div>
 </td></tr></table>
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^
@@ -11556,14 +11564,14 @@ var sessionId =</code></p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.cf7cb942.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ['navigation.tabs', 'navigation.sections'],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.98348d74.min.js"
+            worker: "../../assets/javascripts/worker/search.e4881a3f.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
