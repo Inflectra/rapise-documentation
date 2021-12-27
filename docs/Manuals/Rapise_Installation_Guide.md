@@ -24,45 +24,27 @@ The minimum hardware and software requirements for running the Rapise are:
 | **Processor:**        | Intel® or AMD® x86 or x64 compatible processor |
 | **Memory:**           | 2 GB, 4 GB recommended                         |
 | **Disk Space:**       | 5 GB                                           |
-| **Display:**          | XGA (1024 x 768)                               |
-| **Operating System:** | Microsoft Windows 7 (x86 and x64)              |
-|                       | Microsoft Windows 8 (x86 and x64)              |
-|                       | Microsoft Windows 8.1 (x86 and x64)            |
+| **Display:**          | HD (1280 x 728)                                |
+| **Operating System:** | Microsoft Windows 8.1 (x86 and x64)            |
 |                       | Microsoft Windows 10                           |
-|                       | Microsoft Windows Server 2008 R1 / R2          |
 |                       | Microsoft Windows Server 2012 R1 / R2          |
 |                       | Microsoft Windows Server 2016                  |
+|                       | Microsoft Windows Server 2019                  |
 | **Web Browsers:**     | Internet Explorer 8.0+                         |
 |                       | Mozilla Firefox                                |
 |                       | Google Chrome                                  |
 |                       | Apple Safari                                   |
-|                       | Opera                                          |
-| **Other Components:** | .NET Framework 4.0                             |
-|                       | .NET Framework 3.5 SP1                         |
+| **Other Components:** | .NET Framework 4.7.2                           |
 
 ## 1.1. System Prerequisites
 
-Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that has been pre-installed for you), you need to then make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place, and will install any missing perquisites (apart from the Microsoft .NET 4.0 Framework) automatically.
+Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that has been pre-installed for you), you need to then make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place, and will install any missing perquisites (apart from the Microsoft .NET Framework) automatically.
 
-### 1.1.1. Microsoft .NET 3.5 SP1 and 4.0
+### 1.1.1. Microsoft .NET 4.7.2
 
-On Windows 10, 8, and Windows 2012 Server installations, Microsoft .NET Framework v4.5 is usually installed as part of the factory configuration, whereas on earlier operating systems, you might need to manually add the .NET 4.0 components to the factory configuration.
+On Windows 10 and Windows 2016 Server installations (with all latest updates) Microsoft .NET Framework meets minimum requirements, whereas on earlier operating systems, you might need to manually add the .NET 4.7.2 components to the factory configuration.
 
-To see which version of the Microsoft .NET framework installed, open up Windows Explorer® and navigate to
-
-    C:\WINDOWS\Microsoft.NET\Framework
-    
-and then the subfolders listed will indicate which version(s) of the framework you have installed:
-
-![](./img/Rapise_Installation_Guide3.png)
-
-To install the .NET Framework, launch Internet Explorer and enter the URL: <http://www.microsoft.com/netframework>. From this page there will be links to download and install the appropriate version of the .NET Framework (4.0). Click on the option to download and install the .NET Framework, and follow the instructions provided. Once you have complete the install, verify that the installation was successful by looking in the
-
-    C:\WINDOWS\Microsoft.NET\Framework
-
-folder as illustrated above.
-
-> **Note:** For your convenience, the Inflectra Customer Area also includes a copy of the .NET Framework 4.0 that you can download from the same place as Rapise itself.
+To install the .NET Framework, launch Internet Explorer and enter the URL: <https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472>. From this page there will be links to download and install the appropriate version of the .NET Framework. 
 
 ## 1.2. Remove any Previous Versions
 
