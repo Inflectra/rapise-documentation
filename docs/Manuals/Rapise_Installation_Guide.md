@@ -24,7 +24,7 @@ The minimum hardware and software requirements for running the Rapise are:
 | **Processor:**        | Intel® or AMD® x86 or x64 compatible processor |
 | **Memory:**           | 2 GB, 4 GB recommended                         |
 | **Disk Space:**       | 5 GB                                           |
-| **Display:**          | HD (1280 x 728)                                |
+| **Display:**          | HD (1280 x 720)                                |
 | **Operating System:** | Microsoft Windows 8.1 (x86 and x64)            |
 |                       | Microsoft Windows 10                           |
 |                       | Microsoft Windows Server 2012 R1 / R2          |
