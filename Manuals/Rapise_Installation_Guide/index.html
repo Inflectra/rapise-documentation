@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Manuals/Rapise_Installation_Guide/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -10520,8 +10520,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#111-microsoft-net-35-sp1-and-40" class="md-nav__link">
-    1.1.1. Microsoft .NET 3.5 SP1 and 4.0
+  <a href="#111-microsoft-net-472" class="md-nav__link">
+    1.1.1. Microsoft .NET 4.7.2
   </a>
   
 </li>
@@ -11012,8 +11012,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#111-microsoft-net-35-sp1-and-40" class="md-nav__link">
-    1.1.1. Microsoft .NET 3.5 SP1 and 4.0
+  <a href="#111-microsoft-net-472" class="md-nav__link">
+    1.1.1. Microsoft .NET 4.7.2
   </a>
   
 </li>
@@ -11132,18 +11132,10 @@ installation package.</p>
 </tr>
 <tr>
 <td><strong>Display:</strong></td>
-<td>XGA (1024 x 768)</td>
+<td>HD (1280 x 728)</td>
 </tr>
 <tr>
 <td><strong>Operating System:</strong></td>
-<td>Microsoft Windows 7 (x86 and x64)</td>
-</tr>
-<tr>
-<td></td>
-<td>Microsoft Windows 8 (x86 and x64)</td>
-</tr>
-<tr>
-<td></td>
 <td>Microsoft Windows 8.1 (x86 and x64)</td>
 </tr>
 <tr>
@@ -11152,15 +11144,15 @@ installation package.</p>
 </tr>
 <tr>
 <td></td>
-<td>Microsoft Windows Server 2008 R1 / R2</td>
-</tr>
-<tr>
-<td></td>
 <td>Microsoft Windows Server 2012 R1 / R2</td>
 </tr>
 <tr>
 <td></td>
 <td>Microsoft Windows Server 2016</td>
+</tr>
+<tr>
+<td></td>
+<td>Microsoft Windows Server 2019</td>
 </tr>
 <tr>
 <td><strong>Web Browsers:</strong></td>
@@ -11179,37 +11171,16 @@ installation package.</p>
 <td>Apple Safari</td>
 </tr>
 <tr>
-<td></td>
-<td>Opera</td>
-</tr>
-<tr>
 <td><strong>Other Components:</strong></td>
-<td>.NET Framework 4.0</td>
-</tr>
-<tr>
-<td></td>
-<td>.NET Framework 3.5 SP1</td>
+<td>.NET Framework 4.7.2</td>
 </tr>
 </tbody>
 </table>
 <h2 id="11-system-prerequisites">1.1. System Prerequisites<a class="headerlink" href="#11-system-prerequisites" title="Permanent link">&para;</a></h2>
-<p>Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that has been pre-installed for you), you need to then make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place, and will install any missing perquisites (apart from the Microsoft .NET 4.0 Framework) automatically.</p>
-<h3 id="111-microsoft-net-35-sp1-and-40">1.1.1. Microsoft .NET 3.5 SP1 and 4.0<a class="headerlink" href="#111-microsoft-net-35-sp1-and-40" title="Permanent link">&para;</a></h3>
-<p>On Windows 10, 8, and Windows 2012 Server installations, Microsoft .NET Framework v4.5 is usually installed as part of the factory configuration, whereas on earlier operating systems, you might need to manually add the .NET 4.0 components to the factory configuration.</p>
-<p>To see which version of the Microsoft .NET framework installed, open up Windows Explorer® and navigate to</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>C:\WINDOWS\Microsoft.NET\Framework
-</code></pre></div>
-</td></tr></table>
-<p>and then the subfolders listed will indicate which version(s) of the framework you have installed:</p>
-<p><img alt="" src="../img/Rapise_Installation_Guide3.png" /></p>
-<p>To install the .NET Framework, launch Internet Explorer and enter the URL: <a href="http://www.microsoft.com/netframework">http://www.microsoft.com/netframework</a>. From this page there will be links to download and install the appropriate version of the .NET Framework (4.0). Click on the option to download and install the .NET Framework, and follow the instructions provided. Once you have complete the install, verify that the installation was successful by looking in the</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>C:\WINDOWS\Microsoft.NET\Framework
-</code></pre></div>
-</td></tr></table>
-<p>folder as illustrated above.</p>
-<blockquote>
-<p><strong>Note:</strong> For your convenience, the Inflectra Customer Area also includes a copy of the .NET Framework 4.0 that you can download from the same place as Rapise itself.</p>
-</blockquote>
+<p>Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that has been pre-installed for you), you need to then make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place, and will install any missing perquisites (apart from the Microsoft .NET Framework) automatically.</p>
+<h3 id="111-microsoft-net-472">1.1.1. Microsoft .NET 4.7.2<a class="headerlink" href="#111-microsoft-net-472" title="Permanent link">&para;</a></h3>
+<p>On Windows 10 and Windows 2016 Server installations (with all latest updates) Microsoft .NET Framework meets minimum requirements, whereas on earlier operating systems, you might need to manually add the .NET 4.7.2 components to the factory configuration.</p>
+<p>To install the .NET Framework, launch Internet Explorer and enter the URL: <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472">https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472</a>. From this page there will be links to download and install the appropriate version of the .NET Framework. </p>
 <h2 id="12-remove-any-previous-versions">1.2. Remove any Previous Versions<a class="headerlink" href="#12-remove-any-previous-versions" title="Permanent link">&para;</a></h2>
 <p>Before installing the current version of Rapise, we recommend first uninstalling any previous versions of Rapise to ensure you have a clean installation. To do this, go to <code>Start &gt; Control Panel &gt; Programs and Features</code>:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide4.png" /></p>
@@ -11300,17 +11271,17 @@ web applications, and Inflectra<sup>®</sup> cannot be held liable for any losse
 <p>SpiraTest®, SpiraTeam®, Rapise® and Inflectra® are either trademarks or registered trademarks of Inflectra Corporation in the United States of America and other countries. Microsoft®, Windows®, Explorer® and Microsoft Project® are registered trademarks of Microsoft Corporation.</p>
 <p>All other trademarks and product names are property of their respective holders.</p>
 <p>Please send comments and questions to:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Technical Publications
-Inflectra Corporation
-8121 Georgia Ave
-Suite 504
-Silver Spring, MD 20910
-U.S.A.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Technical Publications</span>
+<span class="err">Inflectra Corporation</span>
+<span class="err">8121 Georgia Ave</span>
+<span class="err">Suite 504</span>
+<span class="err">Silver Spring, MD 20910</span>
+<span class="err">U.S.A.</span>
 </code></pre></div>
 </td></tr></table>
 <p><a href="mailto:support@inflectra.com"><em>support@inflectra.com</em></a></p>

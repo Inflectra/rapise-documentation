@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/global_variables/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -11049,7 +11049,7 @@ eval(File.Include(`%WORKDIR%/Common.js`))
 <p>The variable re-used across tests should be declared using the lazy initalization mode as follows</p>
 <p><code>Common.js</code>:
 <div class="highlight"><pre><span></span><code><span class="c1">// Global variable lazy declaration:</span>
-<span class="k">if</span><span class="p">(</span><span class="ow">typeof</span><span class="p">(</span><span class="nx">g_myGlobalVar</span><span class="p">)</span><span class="o">==</span><span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="nx">g_myGlobalVar</span><span class="p">)</span><span class="o">==</span><span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="nx">g_myGlobalVar</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
 </code></pre></div></p>
 <h3 id="using-testinit">Using TestInit<a class="headerlink" href="#using-testinit" title="Permanent link">&para;</a></h3>
 <blockquote>

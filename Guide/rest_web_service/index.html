@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/rest_web_service/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -11432,8 +11432,8 @@
 </code></pre></div>
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart2.png" /></p>
 <p>Once parameters are defined for the <code>multipart</code> request, you should make sure that they are properly escaped. Consider using <code>JSON.stringify</code> appropriately, i.e.:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span> <span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
-<span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;FilePathParam&#39;</span><span class="p">,</span> <span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s1">&#39;NewAvatarImage.png&#39;</span><span class="p">)</span> <span class="p">));</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
+<span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;FilePathParam&#39;</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s1">&#39;NewAvatarImage.png&#39;</span><span class="p">)</span> <span class="p">));</span>
 </code></pre></div>
 <h2 id="passing-data-between-api-calls">Passing Data Between API Calls<a class="headerlink" href="#passing-data-between-api-calls" title="Permanent link">&para;</a></h2>
 <p>There are certain scenarios when it is convenient to pass dynamic data into a REST call or between consequent REST calls, i.e.:</p>
