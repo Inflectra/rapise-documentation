@@ -10,9 +10,12 @@
 ## Version 7.2 (February 2022)
 
 - **Spira Global Object** to communicate with Spira from Rapise tests (to create an incident, to run a test set, to support complex execution flows).
-- **PageObject** pattern support. Allow sub-test to export global object, re-usable across other sub-tests.
-- **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
+- **Generator Global Object** to generate sequences of values usable across test runs (e.g. unique incremented value for every test run).
+- **Spira Dashboard** enhancements: Test Matrix, Test Set Status graph, create Test Set from Dashboard page.
 
+## Version 7.3 (April 2022)
+
+- **PageObject** pattern support. Allow sub-test to export global object, re-usable across other sub-tests.
 
 ## Backlog
 
@@ -32,6 +35,7 @@
 
 ### UX Enhancements
 
+- **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
 - **Recorder Dialog 2.0**: Ability to fine tune captured steps during recording.
 - **Simplified installation/upgrade**: Do not require to uninstall Rapise before upgrade.
 - **Dark mode**: Someday, really :)
@@ -39,6 +43,7 @@
 
 ### Integrations
 
+- **Chrome Manifest V3** support.
 - **Reporter API**: Callbacks to plug in third-party reporting engines.
 - **Jenkins plugin**: Plugin to simplify running Rapise tests from Jenkins.
 - **Java 64-bit**: Recording and running tests on 64-bit JVM.
