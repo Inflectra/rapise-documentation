@@ -10,7 +10,7 @@ It assumes a basic understanding of how to setup and administer a Windows® work
 
 For information on how to use the features of Rapise please refer to either the [Rapise Quick Start Guide](/Guide/tutorial_record_and_playback/) or the [Rapise User's Guide](/Guide/overview/) instead.
 
-## 1. Installing Rapise
+## Installing Rapise
 
 This section outlines how to prepare your system for installation of Rapise, and how to actually install the software using the provided
 installation package.
@@ -33,20 +33,21 @@ The minimum hardware and software requirements for running the Rapise are:
 | **Web Browsers:**     | Internet Explorer 8.0+                         |
 |                       | Mozilla Firefox                                |
 |                       | Google Chrome                                  |
+|                       | Microsoft Edge                                 |
 |                       | Apple Safari                                   |
 | **Other Components:** | .NET Framework 4.7.2                           |
 
-## 1.1. System Prerequisites
+### System Prerequisites
 
 Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that has been pre-installed for you), you need to then make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place, and will install any missing perquisites (apart from the Microsoft .NET Framework) automatically.
 
-### 1.1.1. Microsoft .NET 4.7.2
+####  Microsoft .NET 4.7.2
 
 On Windows 10 and Windows 2016 Server installations (with all latest updates) Microsoft .NET Framework meets minimum requirements, whereas on earlier operating systems, you might need to manually add the .NET 4.7.2 components to the factory configuration.
 
 To install the .NET Framework, launch Internet Explorer and enter the URL: <https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472>. From this page there will be links to download and install the appropriate version of the .NET Framework. 
 
-## 1.2. Remove any Previous Versions
+### Remove any Previous Versions
 
 Before installing the current version of Rapise, we recommend first uninstalling any previous versions of Rapise to ensure you have a clean installation. To do this, go to `Start > Control Panel > Programs and Features`:
 
@@ -54,7 +55,7 @@ Before installing the current version of Rapise, we recommend first uninstalling
 
 The click the "Rapise" entry and confirm that you want to install the existing installed version.
 
-## 1.3. Installing the Software
+### Installing the Software
 
 Now that all the prerequisites have been correctly installed, you are now ready to install Rapise onto your system. To perform the
 installation, you will need the installation package downloaded from the Inflectra® website.
@@ -84,11 +85,61 @@ You should now have a Rapise shortcut icon added to your Windows Desktop and if 
 
 ![windows menu](./img/Rapise_Installation_Guide8.png)
 
-## 2. Activating Rapise
+## License
+
+As we announced back in June 2021, there have been plans to provide our Rapise test automation platform with a new floating license option, in addition to the fixed licensing system that we've had since the launch of the product. Well the big day has arrived - we are pleased to announce that you can now purchase Rapise floating licenses as part of your existing Spira subscription, with both monthly and annual options.
+
+### Floating License
+
+#### How to Purchase
+
+Unlike fixed licenses which are purchased from our website as a standalone purchase, Rapise uses our Spira test management platform to manage its floating licenses. So you will need to first login to [Customer Portal](https://www.inflectra.com/CustomerArea/) on our website. From here, you need to locate your SpiraTest, SpiraTeam or SpiraPlan cloud subscription and click the **Customize** button:
+
+![subscriptions](./img/my_cloud_subscriptions.png)
+
+(If you are not using the cloud version of Spira, then unfortunately at this time you cannot use floating licenses)
+
+Once you click on the Customize button you can choose the number of Rapise floating licenses you want to purchase:
+
+![purchase](./img/purchase_addons.png)
+
+If you have a monthly Spira subscription, the Rapise floating licenses will also be charged monthly, whereas if you have an annual Spira subscription, then the Rapise floating licenses will similarly be part of the annual renewal. Once you have completed the purchase of the floating licenses, you will see a new Rapise subscription add-on in your Customer Area homepage:
+
+![pending](./img/license_pending.png)
+
+It will be initially in the `Pending` status while our cloud servers complete the task of updating your Spira instance with the number of Rapise licenses. Once that task is completed, you will get an email letting you know, and the status will change to `Active`.
+
+![active](./img/license_active.png)
+
+#### How to Manage
+
+Once the subscription add-on has been provisioned, you will see a new menu entry in the [System Administration: Integration](https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Integration/) section of your Spira instance:
+
+![manage](./img/rapise_floating_licenses.png)
+
+When you click on this link you will see how many Rapise floating licenses are available as well as how many are currently in use (initially the list will be empty):
+
+![administration](./img/floating_license_administration.png)
+
+You can now connect Rapise to your Spira instance to use the new floating licenses.
+
+#### How to Configure
+
+Now that you have floating licenses available, when you connect Rapise to Spira as you would normally to start writing tests:
+
+![configuration](./img/spira_connection_settings.png)
+
+Rapise automatically requests a floating license from Spira and will use that license until Rapise is closed or an administrator clicks the **End Session** button in Spira:
+
+![end session](./img/end_session.png)
+
+The advantage of the floating licenses is that you can have all your computers install Rapise and they will only use a license when Rapise is active, vs. having to purchase a fixed license for a machine regardless of whether that machine is actually using the license. In addition, it lets you purchase Rapise licenses monthly bundled with your existing Spira subscription.
+
+### Fixed License
 
 Once you have successfully installed Rapise, you will need to activate it with a license key (either a temporary evaluation key or a permanent production key). This section describes the process for activating your copy of Rapise as well as how to perform updates to the license key and potentially move it to another computer.
 
-## 2.1. Getting Your Activation Code
+#### Getting Your Activation Code
 
 When you first launch Rapise after installation, it will display the following dialog box:
 
@@ -109,7 +160,7 @@ secure environment), then you will need to use the offline activation option.
 
 The following sections will explain how each of the options work:
 
-## 2.2. Activating Online
+#### Activating Online
 
 To use online activation, make sure you are connected to the Internet, enter the activation code, choose "Activate Online" and click the
 `Next` button:
@@ -120,7 +171,7 @@ The activation system will contact our activation server, process the activation
 
 ![](./img/Rapise_Installation_Guide12.png)
 
-## 2.3. Activating Offline
+#### Activating Offline
 
 To use offline activation, enter the activation code, choose "Activate
 Offline" and click the \<Next\> button:
@@ -154,7 +205,7 @@ Click the Step 3 `Open` button and browse to the Rapise.CDM file. Once you have 
 
 > **Note:** If you have any problems activating your installation, please go to <https://www.inflectra.com/Support> and contact Inflectra customer support and they will help you resolve your problem.
 
-## 2.4. Upgrading from Demo License
+#### Upgrading from Demo License
 
 If you have installed a demonstration license, when the expiration date is reached the software will stop working and prompt to you purchase a commercial license. To purchase the commercial license, go to <http://www.inflectra.com/Rapise> and click on the appropriate Purchase link to obtain a commercial production license.
 
@@ -170,7 +221,7 @@ This will bring up the Activation dialog box:
 
 Click on the `Enter Activation Code` button and then follow the steps in 2.3 or 2.4 to activate the product with the new production license.
 
-## 2.5. Transferring to Another Computer
+#### Transferring to Another Computer
 
 Sometimes you need to transfer your Rapise license from one computer to another, or the computer it's installed on needs to be rebuilt. In either case, it's important that you first deactivate the product from the current computer, otherwise you will be prevented from activating the product on the new / rebuilt computer.
 
