@@ -39,6 +39,9 @@ Once you have finished, click the `Insert & Close` button and you will be taken 
 
 ## Connecting to SpiraTest
 
+!!! important
+    SpiraTest connection settings are shared between Rapise and [RapiseLauncher](./#client-configuration).
+
 The first thing you need to do is to configure the connection to SpiraTest. Click `Settings > SpiraTest` menu:
 
 ![spira_tools_options](./img/spiratest_integration2.png)
@@ -397,6 +400,9 @@ When run, the program will start minimized to the system tray and will start its
 At the end of the test, the program will go back and resume scanning for tests that need to be executed. Typically (unless there is a bug in the test or application being tested) no user input is ever needed from the application itself.
 
 ### Client Configuration
+
+!!! important
+    SpiraTest connection settings are shared between [Rapise](./#connecting-to-spiratest) and RapiseLauncher.
 
 By right clicking on the system tray icon and selecting `Configuration`, the application's window will open to the configuration panel.
 
