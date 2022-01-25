@@ -27,6 +27,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[CreateDriver](#createdriver) | This will create a WebDriver for currently selected Browser profile. |
 |	[CreateDriverForSession](#createdriverforsession) | Connects to active Selenium session with given URL and Id. |
 |	[Dispose](#dispose) | Dispose of WebDriver. |
+|	[DownloadDriver](#downloaddriver) | This will download required binary (e.g. |
 |	[DumpSessions](#dumpsessions) | Prints information about active Selenium sessions to output. |
 |	[ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
 |	[FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
@@ -207,6 +208,33 @@ Dispose()
 
 
 <a name="see.also.webdriver.dispose"></a>
+
+<a name="DownloadDriver"></a>    
+#### DownloadDriver
+
+This will download required binary (e.g. chromedriver.exe) for currently selected Browser profile. Requires Rapise 7.2+
+
+```javascript
+DownloadDriver(driverVersion) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| driverVersion | string |	Version of the driver executable.<br>Optional. |
+
+
+
+
+**Returns:**
+
+`true` if successful, otherwise - `false`.
+
+
+
+<a name="see.also.webdriver.downloaddriver"></a>
 
 <a name="DumpSessions"></a>    
 #### DumpSessions

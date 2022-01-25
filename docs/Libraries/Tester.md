@@ -297,7 +297,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertFalse(message, n1, n2, data, tags) 
+AssertFalse(message, val, data, tags) 
 ```
 
 
@@ -306,8 +306,7 @@ AssertFalse(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -521,7 +520,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNotNull(message, n1, n2, data, tags) 
+AssertNotNull(message, val, data, tags) 
 ```
 
 
@@ -530,8 +529,7 @@ AssertNotNull(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -549,7 +547,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNotSet(message, n1, n2, data, tags) 
+AssertNotSet(message, val, data, tags) 
 ```
 
 
@@ -558,8 +556,7 @@ AssertNotSet(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -577,7 +574,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNull(message, n1, n2, data, tags) 
+AssertNull(message, val, data, tags) 
 ```
 
 
@@ -586,8 +583,7 @@ AssertNull(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -605,7 +601,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertSet(message, n1, n2, data, tags) 
+AssertSet(message, val, data, tags) 
 ```
 
 
@@ -614,8 +610,7 @@ AssertSet(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1256,7 +1251,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertFalse(message, n1, n2, data, tags) 
+SoftAssertFalse(message, val, data, tags) 
 ```
 
 
@@ -1265,8 +1260,7 @@ SoftAssertFalse(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1480,7 +1474,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotNull(message, n1, n2, data, tags) 
+SoftAssertNotNull(message, val, data, tags) 
 ```
 
 
@@ -1489,8 +1483,7 @@ SoftAssertNotNull(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1508,7 +1501,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotSet(message, n1, n2, data, tags) 
+SoftAssertNotSet(message, val, data, tags) 
 ```
 
 
@@ -1517,8 +1510,7 @@ SoftAssertNotSet(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1536,7 +1528,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNull(message, n1, n2, data, tags) 
+SoftAssertNull(message, val, data, tags) 
 ```
 
 
@@ -1545,8 +1537,7 @@ SoftAssertNull(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1564,7 +1555,7 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertSet(message, n1, n2, data, tags) 
+SoftAssertSet(message, val, data, tags) 
 ```
 
 
@@ -1573,8 +1564,7 @@ SoftAssertSet(message, n1, n2, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| n1 | number |	 |
-| n2 | number |	 |
+| val | object |	 |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 

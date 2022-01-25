@@ -6,6 +6,8 @@
 
 - [File](File.md)
 
+- [Generator](Generator.md)
+
 - [Global](Global.md)
 
 - [iOS](iOS.md)
@@ -23,6 +25,8 @@
 - [SeSReportLink](SeSReportLink.md)
 
 - [SeSReportText](SeSReportText.md)
+
+- [Spira][Spira.md]
 
 - [Spreadsheet](Spreadsheet.md)
 

@@ -34,9 +34,12 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoKillByPid](#dokillbypid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
 |	[DoLaunch](#dolaunch) | Executes a command specified in cmdLine. |
 |	[DoLoadObjects](#doloadobjects) | Loads objects from external .objects.js file. |
+|	[DoMaximizeWindow](#domaximizewindow) | Maximizes window that matches given title and class name. |
 |	[DoMessageBox](#domessagebox) | Shows message box (popup message) to a user. |
+|	[DoMinimizeWindow](#dominimizewindow) | Minimizes window that matches given title and class name. |
 |	[DoMouseMove](#domousemove) | Moves mouse to the specified position. |
 |	[DoPlayManual](#doplaymanual) | Executes a manual test. |
+|	[DoRestoreWindow](#dorestorewindow) | Restores window that matches given title and class name. |
 |	[DoRunTestSet](#doruntestset) | Executes a test set. |
 |	[DoSendKeys](#dosendkeys) | Sends series of keystrokes to a currently focused application. |
 |	[DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
@@ -47,6 +50,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoVerticalScroll](#doverticalscroll) | Simulates mouse vertical wheel scroll gesture. |
 |	[DoWaitFor](#dowaitfor) | Waits for object specified by objectId to become available. |
 |	[DoWaitForProperty](#dowaitforproperty) | Waits for specified value of object's property. |
+|	[DoWaitForWindow](#dowaitforwindow) | Waits for window specified by title/class name to become available. |
 |	[GetClipboardText](#getclipboardtext) | Reads text stored in the windows clipboard. |
 |	[GetCurrentDir](#getcurrentdir) | Gets current directory path. |
 |	[GetFileAsByteArray](#getfileasbytearray) | Reads file and returns its content as array of bytes. |
@@ -467,6 +471,34 @@ object: saved_script_objects or null if the load was unsuccessful.
 
 <a name="see.also.global.doloadobjects"></a>
 
+<a name="DoMaximizeWindow"></a>    
+#### DoMaximizeWindow
+
+Maximizes window that matches given title and class name. Requires Rapise 7.2+
+
+```javascript
+DoMaximizeWindow(title, className) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| title | string |	Title of a window to search for. Use exact value or `regex:` expression. |
+| className | string |	Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+
+
+
+
+**Returns:**
+
+boolean: `true` if window was found, otherwise `false`.
+
+
+
+<a name="see.also.global.domaximizewindow"></a>
+
 <a name="DoMessageBox"></a>    
 #### DoMessageBox
 
@@ -534,6 +566,34 @@ number: A number representation of a button pressed by user.
 
 <a name="see.also.global.domessagebox"></a>
 
+<a name="DoMinimizeWindow"></a>    
+#### DoMinimizeWindow
+
+Minimizes window that matches given title and class name. Requires Rapise 7.2+
+
+```javascript
+DoMinimizeWindow(title, className) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| title | string |	Title of a window to search for. Use exact value or `regex:` expression. |
+| className | string |	Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+
+
+
+
+**Returns:**
+
+boolean: `true` if window was found, otherwise `false`.
+
+
+
+<a name="see.also.global.dominimizewindow"></a>
+
 <a name="DoMouseMove"></a>    
 #### DoMouseMove
 
@@ -585,6 +645,34 @@ boolean: 'true' if the manual test passed, 'false' otherwise.
 
 
 <a name="see.also.global.doplaymanual"></a>
+
+<a name="DoRestoreWindow"></a>    
+#### DoRestoreWindow
+
+Restores window that matches given title and class name. Requires Rapise 7.2+
+
+```javascript
+DoRestoreWindow(title, className) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| title | string |	Title of a window to search for. Use exact value or `regex:` expression. |
+| className | string |	Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+
+
+
+
+**Returns:**
+
+boolean: `true` if window was found, otherwise `false`.
+
+
+
+<a name="see.also.global.dorestorewindow"></a>
 
 <a name="DoRunTestSet"></a>    
 #### DoRunTestSet
@@ -854,6 +942,36 @@ SeSObject | <br>boolean: Found object or 'false'.
 
 
 <a name="see.also.global.dowaitforproperty"></a>
+
+<a name="DoWaitForWindow"></a>    
+#### DoWaitForWindow
+
+Waits for window specified by title/class name to become available. Function returns if window
+was found or timeout. Requires Rapise 7.2+
+
+```javascript
+DoWaitForWindow(title, className, timeout) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| title | string |	Title of a window to wait for. Use exact value or `regex:` expression. |
+| className | string |	Class name of a window to wait for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
+
+
+
+
+**Returns:**
+
+boolean: `true` if window was found, otherwise `false`.
+
+
+
+<a name="see.also.global.dowaitforwindow"></a>
 
 <a name="GetClipboardText"></a>    
 #### GetClipboardText
