@@ -4160,6 +4160,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../Generator/" class="md-nav__link">
+        Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Global/" class="md-nav__link">
         Global
       </a>
@@ -4282,6 +4294,18 @@
     <li class="md-nav__item">
       <a href="../Session/" class="md-nav__link">
         Session
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spira/" class="md-nav__link">
+        Spira
       </a>
     </li>
   
@@ -12326,7 +12350,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>false</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">AssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12344,13 +12368,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -12686,7 +12705,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>NotNull</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">AssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12704,13 +12723,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -12731,7 +12745,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">AssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12749,13 +12763,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -12776,7 +12785,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>null</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">AssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12794,13 +12803,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -12821,7 +12825,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">AssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12839,13 +12843,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -13608,7 +13607,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>false</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13626,13 +13625,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -13968,7 +13962,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>NotNull</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13986,13 +13980,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -14013,7 +14002,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14031,13 +14020,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -14058,7 +14042,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>null</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14076,13 +14060,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>
@@ -14103,7 +14082,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">n2</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">tags</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14121,13 +14100,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <td>Message to put in the report.</td>
 </tr>
 <tr>
-<td>n1</td>
-<td>number</td>
-<td></td>
-</tr>
-<tr>
-<td>n2</td>
-<td>number</td>
+<td>val</td>
+<td>object</td>
 <td></td>
 </tr>
 <tr>

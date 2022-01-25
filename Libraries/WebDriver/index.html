@@ -4158,6 +4158,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../Generator/" class="md-nav__link">
+        Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Global/" class="md-nav__link">
         Global
       </a>
@@ -4290,6 +4302,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../Spira/" class="md-nav__link">
+        Spira
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Spreadsheet/" class="md-nav__link">
         Spreadsheet
       </a>
@@ -4402,6 +4426,13 @@
           <li class="md-nav__item">
   <a href="#dispose" class="md-nav__link">
     Dispose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloaddriver" class="md-nav__link">
+    DownloadDriver
   </a>
   
 </li>
@@ -8663,6 +8694,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#downloaddriver" class="md-nav__link">
+    DownloadDriver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dumpsessions" class="md-nav__link">
     DumpSessions
   </a>
@@ -11688,6 +11726,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#downloaddriver" class="md-nav__link">
+    DownloadDriver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dumpsessions" class="md-nav__link">
     DumpSessions
   </a>
@@ -12029,6 +12074,10 @@
 <td>Dispose of WebDriver.</td>
 </tr>
 <tr>
+<td><a href="#downloaddriver">DownloadDriver</a></td>
+<td>This will download required binary (e.g.</td>
+</tr>
+<tr>
 <td><a href="#dumpsessions">DumpSessions</a></td>
 <td>Prints information about active Selenium sessions to output.</td>
 </tr>
@@ -12280,6 +12329,31 @@
 <div class="highlight"><pre><span></span><code><span class="nx">Dispose</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.webdriver.dispose"></a></p>
+<p><a name="DownloadDriver"></a>    </p>
+<h4 id="downloaddriver">DownloadDriver<a class="headerlink" href="#downloaddriver" title="Permanent link">&para;</a></h4>
+<p>This will download required binary (e.g. chromedriver.exe) for currently selected Browser profile. Requires Rapise 7.2+</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DownloadDriver</span><span class="p">(</span><span class="nx">driverVersion</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>driverVersion</td>
+<td>string</td>
+<td>Version of the driver executable.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><code>true</code> if successful, otherwise - <code>false</code>.</p>
+<p><a name="see.also.webdriver.downloaddriver"></a></p>
 <p><a name="DumpSessions"></a>    </p>
 <h4 id="dumpsessions">DumpSessions<a class="headerlink" href="#dumpsessions" title="Permanent link">&para;</a></h4>
 <p>Prints information about active Selenium sessions to output.</p>

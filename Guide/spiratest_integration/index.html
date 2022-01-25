@@ -4406,6 +4406,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/Generator/" class="md-nav__link">
+        Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/Global/" class="md-nav__link">
         Global
       </a>
@@ -4528,6 +4540,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/Session/" class="md-nav__link">
         Session
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/Spira/" class="md-nav__link">
+        Spira
       </a>
     </li>
   
@@ -11625,6 +11649,10 @@
 <p>Once you have finished, click the <code>Insert &amp; Close</code> button and you will be taken back to the Automation Engine list page, with Rapise listed as an available automation engine:</p>
 <p><img alt="all test automaton engines" src="../img/using_rapise_with_spiratest_guide5.png" /></p>
 <h2 id="connecting-to-spiratest">Connecting to SpiraTest<a class="headerlink" href="#connecting-to-spiratest" title="Permanent link">&para;</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>SpiraTest connection settings are shared between Rapise and <a href="./#client-configuration">RapiseLauncher</a>.</p>
+</div>
 <p>The first thing you need to do is to configure the connection to SpiraTest. Click <code>Settings &gt; SpiraTest</code> menu:</p>
 <p><img alt="spira_tools_options" src="../img/spiratest_integration2.png" /></p>
 <p>This brings up the dialog box that lets you configure the connection to SpiraTest:</p>
@@ -11870,6 +11898,10 @@ Inflectra</code> program folder:</p>
 <p>When run, the program will start minimized to the system tray and will start its polling of the server. Polling will occur every 'x' minutes (5 by default) for any automated test sets that are scheduled to be run. When time comes for a test to be launched, it will start Rapise to execute the test. Rapise will then perform the test activities and report the results back to SpiraTest.</p>
 <p>At the end of the test, the program will go back and resume scanning for tests that need to be executed. Typically (unless there is a bug in the test or application being tested) no user input is ever needed from the application itself.</p>
 <h3 id="client-configuration">Client Configuration<a class="headerlink" href="#client-configuration" title="Permanent link">&para;</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>SpiraTest connection settings are shared between <a href="./#connecting-to-spiratest">Rapise</a> and RapiseLauncher.</p>
+</div>
 <p>By right clicking on the system tray icon and selecting <code>Configuration</code>, the application's window will open to the configuration panel.</p>
 <p><img alt="Client Configuration" src="../img/using_rapise_with_spiratest_guide47.png" /></p>
 <p>The panel has the following options:</p>
@@ -11877,9 +11909,9 @@ Inflectra</code> program folder:</p>
 <li>
 <p><strong>SpiraTest Server Connection</strong></p>
 <ul>
-<li><strong>Server URL</strong>: This is the URL of the SpiraTest installation. Be sure to not put /Login.aspx or any other page in the string, this should be just the root URL of the application's install.</li>
-<li><strong>Login Username</strong>: This is the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.</li>
-<li><strong>Login Password</strong>: The password to the Username above.</li>
+<li><strong>URL</strong>: This is the URL of the SpiraTest installation. Be sure to not put /Login.aspx or any other page in the string, this should be just the root URL of the application's install.</li>
+<li><strong>User Name</strong>: This is the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.</li>
+<li><strong>API Key</strong>: The <a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key">API Key</a> for the to the User Name above.</li>
 <li><strong>Test</strong>: Clicking this will test the login to make sure the application can connect to the server properly.</li>
 <li><strong>Repository</strong> -- this is the Windows folder that used to store local copies of the non-absolute repositories (downloaded from SpiraTest).</li>
 <li><strong>Use Temp Folder for Test Execution</strong> -- this should be enabled if you are also writing tests on this computer using Rapise and you don't want RapiseLauncher to download and overwrite any changes you have made locally (that have not been saved).</li>

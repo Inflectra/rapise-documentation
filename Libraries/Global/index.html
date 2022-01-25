@@ -4158,6 +4158,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../Generator/" class="md-nav__link">
+        Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -4304,8 +4316,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#domaximizewindow" class="md-nav__link">
+    DoMaximizeWindow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#domessagebox" class="md-nav__link">
     DoMessageBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dominimizewindow" class="md-nav__link">
+    DoMinimizeWindow
   </a>
   
 </li>
@@ -4320,6 +4346,13 @@
           <li class="md-nav__item">
   <a href="#doplaymanual" class="md-nav__link">
     DoPlayManual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dorestorewindow" class="md-nav__link">
+    DoRestoreWindow
   </a>
   
 </li>
@@ -4390,6 +4423,13 @@
           <li class="md-nav__item">
   <a href="#dowaitforproperty" class="md-nav__link">
     DoWaitForProperty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforwindow" class="md-nav__link">
+    DoWaitForWindow
   </a>
   
 </li>
@@ -4634,6 +4674,18 @@
     <li class="md-nav__item">
       <a href="../Session/" class="md-nav__link">
         Session
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spira/" class="md-nav__link">
+        Spira
       </a>
     </li>
   
@@ -11329,8 +11381,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#domaximizewindow" class="md-nav__link">
+    DoMaximizeWindow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#domessagebox" class="md-nav__link">
     DoMessageBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dominimizewindow" class="md-nav__link">
+    DoMinimizeWindow
   </a>
   
 </li>
@@ -11345,6 +11411,13 @@
           <li class="md-nav__item">
   <a href="#doplaymanual" class="md-nav__link">
     DoPlayManual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dorestorewindow" class="md-nav__link">
+    DoRestoreWindow
   </a>
   
 </li>
@@ -11415,6 +11488,13 @@
           <li class="md-nav__item">
   <a href="#dowaitforproperty" class="md-nav__link">
     DoWaitForProperty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforwindow" class="md-nav__link">
+    DoWaitForWindow
   </a>
   
 </li>
@@ -11622,8 +11702,16 @@ record or learn this object, it is always automatically available in any test.</
 <td>Loads objects from external .objects.js file.</td>
 </tr>
 <tr>
+<td><a href="#domaximizewindow">DoMaximizeWindow</a></td>
+<td>Maximizes window that matches given title and class name.</td>
+</tr>
+<tr>
 <td><a href="#domessagebox">DoMessageBox</a></td>
 <td>Shows message box (popup message) to a user.</td>
+</tr>
+<tr>
+<td><a href="#dominimizewindow">DoMinimizeWindow</a></td>
+<td>Minimizes window that matches given title and class name.</td>
 </tr>
 <tr>
 <td><a href="#domousemove">DoMouseMove</a></td>
@@ -11632,6 +11720,10 @@ record or learn this object, it is always automatically available in any test.</
 <tr>
 <td><a href="#doplaymanual">DoPlayManual</a></td>
 <td>Executes a manual test.</td>
+</tr>
+<tr>
+<td><a href="#dorestorewindow">DoRestoreWindow</a></td>
+<td>Restores window that matches given title and class name.</td>
 </tr>
 <tr>
 <td><a href="#doruntestset">DoRunTestSet</a></td>
@@ -11672,6 +11764,10 @@ record or learn this object, it is always automatically available in any test.</
 <tr>
 <td><a href="#dowaitforproperty">DoWaitForProperty</a></td>
 <td>Waits for specified value of object's property.</td>
+</tr>
+<tr>
+<td><a href="#dowaitforwindow">DoWaitForWindow</a></td>
+<td>Waits for window specified by title/class name to become available.</td>
 </tr>
 <tr>
 <td><a href="#getclipboardtext">GetClipboardText</a></td>
@@ -12168,6 +12264,36 @@ to attach if it is already launched.</p>
 <p><strong>Returns:</strong></p>
 <p>object: saved_script_objects or null if the load was unsuccessful.</p>
 <p><a name="see.also.global.doloadobjects"></a></p>
+<p><a name="DoMaximizeWindow"></a>    </p>
+<h4 id="domaximizewindow">DoMaximizeWindow<a class="headerlink" href="#domaximizewindow" title="Permanent link">&para;</a></h4>
+<p>Maximizes window that matches given title and class name. Requires Rapise 7.2+</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMaximizeWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span> <span class="nx">className</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>Title of a window to search for. Use exact value or <code>regex:</code> expression.</td>
+</tr>
+<tr>
+<td>className</td>
+<td>string</td>
+<td>Class name of a window to search for. Use exact value or <code>regex:</code> expression. Empty or null value matches any class name.<br>Optional, Default: "".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: <code>true</code> if window was found, otherwise <code>false</code>.</p>
+<p><a name="see.also.global.domaximizewindow"></a></p>
 <p><a name="DoMessageBox"></a>    </p>
 <h4 id="domessagebox">DoMessageBox<a class="headerlink" href="#domessagebox" title="Permanent link">&para;</a></h4>
 <p>Shows message box (popup message) to a user.</p>
@@ -12230,6 +12356,36 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><strong>Returns:</strong></p>
 <p>number: A number representation of a button pressed by user.</p>
 <p><a name="see.also.global.domessagebox"></a></p>
+<p><a name="DoMinimizeWindow"></a>    </p>
+<h4 id="dominimizewindow">DoMinimizeWindow<a class="headerlink" href="#dominimizewindow" title="Permanent link">&para;</a></h4>
+<p>Minimizes window that matches given title and class name. Requires Rapise 7.2+</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMinimizeWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span> <span class="nx">className</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>Title of a window to search for. Use exact value or <code>regex:</code> expression.</td>
+</tr>
+<tr>
+<td>className</td>
+<td>string</td>
+<td>Class name of a window to search for. Use exact value or <code>regex:</code> expression. Empty or null value matches any class name.<br>Optional, Default: "".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: <code>true</code> if window was found, otherwise <code>false</code>.</p>
+<p><a name="see.also.global.dominimizewindow"></a></p>
 <p><a name="DoMouseMove"></a>    </p>
 <h4 id="domousemove">DoMouseMove<a class="headerlink" href="#domousemove" title="Permanent link">&para;</a></h4>
 <p>Moves mouse to the specified position.</p>
@@ -12293,6 +12449,36 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if the manual test passed, 'false' otherwise.</p>
 <p><a name="see.also.global.doplaymanual"></a></p>
+<p><a name="DoRestoreWindow"></a>    </p>
+<h4 id="dorestorewindow">DoRestoreWindow<a class="headerlink" href="#dorestorewindow" title="Permanent link">&para;</a></h4>
+<p>Restores window that matches given title and class name. Requires Rapise 7.2+</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRestoreWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span> <span class="nx">className</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>Title of a window to search for. Use exact value or <code>regex:</code> expression.</td>
+</tr>
+<tr>
+<td>className</td>
+<td>string</td>
+<td>Class name of a window to search for. Use exact value or <code>regex:</code> expression. Empty or null value matches any class name.<br>Optional, Default: "".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: <code>true</code> if window was found, otherwise <code>false</code>.</p>
+<p><a name="see.also.global.dorestorewindow"></a></p>
 <p><a name="DoRunTestSet"></a>    </p>
 <h4 id="doruntestset">DoRunTestSet<a class="headerlink" href="#doruntestset" title="Permanent link">&para;</a></h4>
 <p>Executes a test set. Results are shown in the report of the calling test.</p>
@@ -12597,6 +12783,42 @@ Use the callback if you need to check more complex condition than equality.</p>
 <p><strong>Returns:</strong></p>
 <p>SeSObject | <br>boolean: Found object or 'false'.</p>
 <p><a name="see.also.global.dowaitforproperty"></a></p>
+<p><a name="DoWaitForWindow"></a>    </p>
+<h4 id="dowaitforwindow">DoWaitForWindow<a class="headerlink" href="#dowaitforwindow" title="Permanent link">&para;</a></h4>
+<p>Waits for window specified by title/class name to become available. Function returns if window
+was found or timeout. Requires Rapise 7.2+</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoWaitForWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span> <span class="nx">className</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>Title of a window to wait for. Use exact value or <code>regex:</code> expression.</td>
+</tr>
+<tr>
+<td>className</td>
+<td>string</td>
+<td>Class name of a window to wait for. Use exact value or <code>regex:</code> expression. Empty or null value matches any class name.<br>Optional, Default: "".</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>number</td>
+<td>Maximum time to wait (milliseconds).<br>Optional, Default: "10000".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: <code>true</code> if window was found, otherwise <code>false</code>.</p>
+<p><a name="see.also.global.dowaitforwindow"></a></p>
 <p><a name="GetClipboardText"></a>    </p>
 <h4 id="getclipboardtext">GetClipboardText<a class="headerlink" href="#getclipboardtext" title="Permanent link">&para;</a></h4>
 <p>Reads text stored in the windows clipboard.</p>
@@ -12951,7 +13173,7 @@ Use the callback if you need to check more complex condition than equality.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../File/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Generator/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -12960,7 +13182,7 @@ Use the callback if you need to check more complex condition than equality.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                File
+                Generator
               </div>
             </div>
           </a>
