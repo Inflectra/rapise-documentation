@@ -411,9 +411,9 @@ By right clicking on the system tray icon and selecting `Configuration`, the app
 The panel has the following options:
 
 - **SpiraTest Server Connection**
-    - **Server URL**: This is the URL of the SpiraTest installation. Be sure to not put /Login.aspx or any other page in the string, this should be just the root URL of the application's install.
-    - **Login Username**: This is the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.
-    - **Login Password**: The password to the Username above.
+    - **URL**: This is the URL of the SpiraTest installation. Be sure to not put /Login.aspx or any other page in the string, this should be just the root URL of the application's install.
+    - **User Name**: This is the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.
+    - **API Key**: The [API Key](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key) for the to the User Name above.
     - **Test**: Clicking this will test the login to make sure the application can connect to the server properly.
     - **Repository** -- this is the Windows folder that used to store local copies of the non-absolute repositories (downloaded from SpiraTest).
     - **Use Temp Folder for Test Execution** -- this should be enabled if you are also writing tests on this computer using Rapise and you don't want RapiseLauncher to download and overwrite any changes you have made locally (that have not been saved).
