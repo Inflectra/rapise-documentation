@@ -4,6 +4,14 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ## Series
 
+### Season 2021
+
+- [Parallel Execution of Tests with Rapise & SpiraTest](https://youtu.be/bNoWZjOE3hQ)
+- [Playing UFT-QTP Scripts with Rapise ](https://youtu.be/g0_WIOfsO9A)
+- [Testing OracleForms Applications with Rapise](https://youtu.be/Q4st6PvUEi4)
+- [Mobile Testing in a Device Cloud with Rapise](https://youtu.be/Y1D97Uoqr_s)
+- [Behavior Driven Testing with Rapise and Cucumber JS](https://youtu.be/Ygk0tlZyzOw)
+
 ### InflectraCon 2020
 
 #### Workshops

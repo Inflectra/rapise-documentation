@@ -1300,6 +1300,19 @@
 		"softassertnotset",
 		"softassertnull",
 		"softassertset",
-		"softassertstartswith"
+		"softassertstartswith",
+    "BOYNAMES",
+    "GIRLNAMES",
+    "STATECODE",
+    "Esmont",
+    "Earthmark",
+    "getnextvalue",
+    "domaximizewindow",
+    "dominimizewindow",
+    "dorestorewindow",
+    "dowaitforwindow",
+    "createincident",
+    "runtestset",
+    "downloaddriver"      
     ]
 }
