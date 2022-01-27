@@ -24,7 +24,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ControlType](#controltype) | Type of the object. | GetControlType |  |
+| [Enabled](#enabled) | 'Enabled' state of the element. | GetEnabled |  |
 | [Height](#height) | Height of the object. | GetHeight |  |
+| [Parent](#parent) | Object for UI Automation parent node | GetParent |  |
 | [Width](#width) | Width of the object. | GetWidth |  |
 | [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
 | [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
@@ -71,6 +73,21 @@ Type: string
 Accessors: GetControlType
 			
 		
+<a name="Enabled"></a>
+#### Enabled
+
+
+'Enabled' state of the element.
+
+			
+	
+			
+Type: boolean
+			
+			
+Accessors: GetEnabled
+			
+		
 <a name="Height"></a>
 #### Height
 
@@ -84,6 +101,21 @@ Type: number
 			
 			
 Accessors: GetHeight
+			
+		
+<a name="Parent"></a>
+#### Parent
+
+
+Object for UI Automation parent node
+
+			
+	
+			
+Type: UIAObject
+			
+			
+Accessors: GetParent
 			
 		
 <a name="Width"></a>

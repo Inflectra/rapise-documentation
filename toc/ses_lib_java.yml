@@ -4,8 +4,6 @@
 - 'Java':
     - 'Java Objects': 'Libraries/ses_lib_java.md'
 
-    - 'GlassMouseGrabProvider$Proxy': 'Libraries/GlassMouseGrabProvider$Proxy.md'
-
     - 'JavaButton': 'Libraries/JavaButton.md'
 
     - 'JavaCheckBox': 'Libraries/JavaCheckBox.md'
