@@ -2170,6 +2170,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#test-matrix" class="md-nav__link">
+    Test Matrix
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2261,15 +2268,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-test-runs-in-progress" class="md-nav__link">
-    View Test Runs in Progress
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#view-pending-test-runs" class="md-nav__link">
-    View Pending Test Runs
+  <a href="#view-test-set-status-graph" class="md-nav__link">
+    View Test Set Status Graph
   </a>
   
 </li>
@@ -2426,6 +2426,20 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-matrix-view" class="md-nav__link">
+    Test Matrix View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automation-hosts-view" class="md-nav__link">
+    Automation Hosts View
+  </a>
   
 </li>
         
@@ -7446,18 +7460,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
-        GlassMouseGrabProvider$Proxy
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../Libraries/JavaButton/" class="md-nav__link">
         JavaButton
       </a>
@@ -10616,6 +10618,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/DomLightningComboBox/" class="md-nav__link">
+        DomLightningComboBox
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/DomLightningGrid/" class="md-nav__link">
         DomLightningGrid
       </a>
@@ -10905,6 +10919,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#test-matrix" class="md-nav__link">
+    Test Matrix
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10996,15 +11017,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-test-runs-in-progress" class="md-nav__link">
-    View Test Runs in Progress
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#view-pending-test-runs" class="md-nav__link">
-    View Pending Test Runs
+  <a href="#view-test-set-status-graph" class="md-nav__link">
+    View Test Set Status Graph
   </a>
   
 </li>
@@ -11161,6 +11175,20 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-matrix-view" class="md-nav__link">
+    Test Matrix View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automation-hosts-view" class="md-nav__link">
+    Automation Hosts View
+  </a>
   
 </li>
         
@@ -11595,6 +11623,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#test-matrix" class="md-nav__link">
+    Test Matrix
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11686,15 +11721,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-test-runs-in-progress" class="md-nav__link">
-    View Test Runs in Progress
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#view-pending-test-runs" class="md-nav__link">
-    View Pending Test Runs
+  <a href="#view-test-set-status-graph" class="md-nav__link">
+    View Test Set Status Graph
   </a>
   
 </li>
@@ -11855,6 +11883,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#test-matrix-view" class="md-nav__link">
+    Test Matrix View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automation-hosts-view" class="md-nav__link">
+    Automation Hosts View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#incidents-view" class="md-nav__link">
     Incidents View
   </a>
@@ -11921,6 +11963,7 @@
 <p><img alt="Test Case Properties" src="/Guide/img/test-case-custom-properties.png" width="360"/></p>
 <p>If all test cases included into a test set have this property, the test set is configured for parallel run - RapiseLauncher will execute the test cases in parallel.</p>
 <p>To configure the test set use the custom properties <code>Run tests in parallel</code> and <code>Max parallel tests</code> (0 - no limit).</p>
+<p>Since Rapise 7.2 - RapiseLauncher can run configurations (see Input Data Table section below) in parallel. This feature is controlled via <code>Unroll input data for parallel execution</code> custom property of a test set. See the <a href="https://youtu.be/bNoWZjOE3hQ">Parallel Execution Webinar</a> for more details.</p>
 <h3 id="input-data-table">Input Data Table<a class="headerlink" href="#input-data-table" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -11946,6 +11989,10 @@ borrower,borrower
 <div class="highlight"><pre><span></span><code>%GITROOT%\Data\Logins.xlsx
 </code></pre></div>
 </div>
+<h3 id="test-matrix">Test Matrix<a class="headerlink" href="#test-matrix" title="Permanent link">&para;</a></h3>
+<p>If a Test Set is configured to run same Test Cases several times (each time with different input parameters) then one may view the Test Matrix based on produced Test Runs. Let's look at the example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. Browser type is specified via an input parameter (see Input Data Table section above for more details). Execution of the test set produces 4 x 2 = 10 test runs. After execution we find one of these test runs on the Test Runs page, right click it and choose <code>Test Matrix</code> menu item. Then we see the matrix:</p>
+<p><img alt="Test Matrix" src="../img/test_matrix.png" /></p>
+<p>If there are more than one input parameter - it is possible to select the one you need from the dropdown. Clicking on a test case reveals the history of tes runs for it (clickable).</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
 <p>To open the dashboard use <a href="/Guide/menu_and_toolbars/#view">main menu</a> View &gt; Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the <a href="/Guide/options_dialog/#settings">Rapise Settings</a> dialog and set <code>ShowDashboardOnStartup</code> flag to <code>true</code>.</p>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
@@ -11954,7 +12001,7 @@ borrower,borrower
 <h3 id="data-tables">Data Tables<a class="headerlink" href="#data-tables" title="Permanent link">&para;</a></h3>
 <p>In many cases first column of a data table contains ID of an item in Spira. You may click an ID to open the corresponding item in a browser window.</p>
 <p><img alt="Data Table" src="../img/spira_dashboard_data_table.png" /></p>
-<p>Each data table has a menu opener (hamburger) located in the top right corner. The menu contains some predefined filters and also allows to reveal filter row and choose what columns to show. Clicking a column caption turns on sorting.</p>
+<p>Each data table has a menu opener (hamburger) located in the top right corner. The menu contains some predefined filters and also allows to reveal filter row and choose what columns to show (since Rapise 7.2 the list of columns to show is stored in the dashboard settings). Clicking a column caption turns on sorting.</p>
 <h3 id="hierarchical-tables">Hierarchical Tables<a class="headerlink" href="#hierarchical-tables" title="Permanent link">&para;</a></h3>
 <p>Plus icon in a table row means that it can be expanded. Click the icon to reveal row details. It may contain more data tables.</p>
 <p><img alt="Row Details" src="../img/spira_dashboard_row_details.png" /></p>
@@ -11988,10 +12035,19 @@ borrower,borrower
 <p class="admonition-title">Note</p>
 <p>Since Rapise 7.1 you may double click a test in this table to open it in Rapise.</p>
 </div>
-<h4 id="view-test-runs-in-progress">View Test Runs in Progress<a class="headerlink" href="#view-test-runs-in-progress" title="Permanent link">&para;</a></h4>
-<p>View test runs that are in progress right now.</p>
-<h4 id="view-pending-test-runs">View Pending Test Runs<a class="headerlink" href="#view-pending-test-runs" title="Permanent link">&para;</a></h4>
-<p>View tests that are scheduled to run for the next 24 hours.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since Rapise 7.2 you may select tests using checkboxes in the first column and perform additional actions: </p>
+<ul>
+<li>create a test set from selected test cases, </li>
+<li>append selected test cases to existing test set</li>
+<li>execute selected test cases on the local host</li>
+<li>execute selected test cases on another automation host</li>
+</ul>
+<p>A test has a checkbox near it if it is linked to a test cases belonging to selected project.</p>
+</div>
+<h4 id="view-test-set-status-graph">View Test Set Status Graph<a class="headerlink" href="#view-test-set-status-graph" title="Permanent link">&para;</a></h4>
+<p>Requires Rapise 7.2. The Test Set Status graph shows the aggregated count of test cases in each execution status for each test set in the product. If you have the same test cases in multiple test sets they are all counted separately to make sure you can tell that tests have passed successfully across test sets. This is helpful when testing across different environments.</p>
 <h4 id="setup-custom-properties">Setup Custom Properties<a class="headerlink" href="#setup-custom-properties" title="Permanent link">&para;</a></h4>
 <p>Some features of the dashboard require additional custom properties to exist in Test Cases, Test Sets and Test Runs. Click <code>Create Custom Properties for Rapise</code> button to add the following custom properties in the selected project:</p>
 <ul>
@@ -12012,6 +12068,7 @@ borrower,borrower
 <li>Rerun test set if failed (boolean, default is false, requires Rapise 7.1+)</li>
 <li>Run tests in parallel (boolean, default is false, requires Rapise 7.1+)</li>
 <li>Max parallel tests (integer, default is 0 (no limit), requires Rapise 7.1+)</li>
+<li>Unroll input data for parallel execution (boolean, default is false, requires Rapise 7.2+)</li>
 <li>Input data (string, empty by default, requires Rapise 7.1+)</li>
 <li>Record videos (boolean, default is false)</li>
 <li>Verbose level (integer, default is 1)</li>
@@ -12030,6 +12087,7 @@ borrower,borrower
 <h3 id="test-cases-view">Test Cases View<a class="headerlink" href="#test-cases-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-test-cases">Browse Test Cases<a class="headerlink" href="#browse-test-cases" title="Permanent link">&para;</a></h4>
 <p>In the test cases view one may see the tree of test cases for a project, discover when a test case was last executed and status of execution.</p>
+<p>Since Rapise 7.2 one may change global Test Case filter from <code>All</code> to <code>My Assigned</code>.</p>
 <h4 id="view-test-case-details">View Test Case Details<a class="headerlink" href="#view-test-case-details" title="Permanent link">&para;</a></h4>
 <p>Expanding a test case reveals last 10 runs of it. The details pane also shows test case parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
 <h4 id="perform-test-case-actions">Perform Test Case Actions<a class="headerlink" href="#perform-test-case-actions" title="Permanent link">&para;</a></h4>
@@ -12054,6 +12112,7 @@ borrower,borrower
 <h3 id="test-sets-view">Test Sets View<a class="headerlink" href="#test-sets-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-test-sets">Browse Test Sets<a class="headerlink" href="#browse-test-sets" title="Permanent link">&para;</a></h4>
 <p>In the test sets view one may see the tree of test sets for a project, discover when a test set was last executed and status of execution.</p>
+<p>Since Rapise 7.2 one may change global Test Set filter from <code>All</code> to <code>My Assigned</code>.</p>
 <h4 id="view-test-set-details">View Test Set Details<a class="headerlink" href="#view-test-set-details" title="Permanent link">&para;</a></h4>
 <p>Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
 <h5 id="add-test-cases">Add Test Cases<a class="headerlink" href="#add-test-cases" title="Permanent link">&para;</a></h5>
@@ -12089,6 +12148,10 @@ borrower,borrower
 </div>
 <h4 id="view-test-run-details">View Test Run Details<a class="headerlink" href="#view-test-run-details" title="Permanent link">&para;</a></h4>
 <p>Expanding a test run reveals the report with execution status for every test step. The details pane also contains links to download test run attachments and execution log.</p>
+<h3 id="test-matrix-view">Test Matrix View<a class="headerlink" href="#test-matrix-view" title="Permanent link">&para;</a></h3>
+<p>Direct navigation to this page produces empty result. To see the Test Matrix navigate to the Test Runs view, right click Test Run tag and choose <code>Test Matrix</code> from popup menu.</p>
+<h3 id="automation-hosts-view">Automation Hosts View<a class="headerlink" href="#automation-hosts-view" title="Permanent link">&para;</a></h3>
+<p>This view displays automation hosts configured in selected project. You may create a new one using the form on this page.</p>
 <h3 id="incidents-view">Incidents View<a class="headerlink" href="#incidents-view" title="Permanent link">&para;</a></h3>
 <p>This view displays last 500 incidents and allows to create new ones.</p>
                 
