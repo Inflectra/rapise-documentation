@@ -66,6 +66,7 @@ There is a build-in set of test parameters for [cross-browser testing](cross_bro
 * **Capture Execution**: Set this to **True** if you want to save screen images after each `Do<Action>` during playback.
 * **Capture Recording**: Set this to **True** if you want to save screen images after each recorded action during recording.
 * **Include in Report**: Set this to **True** to include the saved images in the execution report during playback.
+* **Screenshot on Failure**: Capture desktop image if a test has just failed.
 * **Widget Only**: Set this to **True** to only save the widget area in the screenshot, as opposed to the whole window.
 
 ## Settings
