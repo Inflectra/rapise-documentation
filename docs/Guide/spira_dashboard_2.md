@@ -56,6 +56,8 @@ If all test cases included into a test set have this property, the test set is c
 
 To configure the test set use the custom properties `Run tests in parallel` and `Max parallel tests` (0 - no limit).
 
+Since Rapise 7.2 - RapiseLauncher can run configurations (see Input Data Table section below) in parallel. This feature is controlled via `Unroll input data for parallel execution` custom property of a test set. See the [Parallel Execution Webinar](https://youtu.be/bNoWZjOE3hQ) for more details.
+
 ### Input Data Table
 
 !!! important
@@ -82,6 +84,14 @@ RapiseLauncher will run the test set same number of times as data rows in the in
     %GITROOT%\Data\Logins.xlsx
     ```
 
+### Test Matrix
+
+If a Test Set is configured to run same Test Cases several times (each time with different input parameters) then one may view the Test Matrix based on produced Test Runs. Let's look at the example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. Browser type is specified via an input parameter (see Input Data Table section above for more details). Execution of the test set produces 4 x 2 = 10 test runs. After execution we find one of these test runs on the Test Runs page, right click it and choose `Test Matrix` menu item. Then we see the matrix:
+
+![Test Matrix](./img/test_matrix.png)
+
+If there are more than one input parameter - it is possible to select the one you need from the dropdown. Clicking on a test case reveals the history of tes runs for it (clickable).
+
 ## How to Open
 
 To open the dashboard use [main menu](/Guide/menu_and_toolbars/#view) View > Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the [Rapise Settings](/Guide/options_dialog/#settings) dialog and set `ShowDashboardOnStartup` flag to `true`.
@@ -98,7 +108,7 @@ In many cases first column of a data table contains ID of an item in Spira. You 
 
 ![Data Table](./img/spira_dashboard_data_table.png)
 
-Each data table has a menu opener (hamburger) located in the top right corner. The menu contains some predefined filters and also allows to reveal filter row and choose what columns to show. Clicking a column caption turns on sorting.
+Each data table has a menu opener (hamburger) located in the top right corner. The menu contains some predefined filters and also allows to reveal filter row and choose what columns to show (since Rapise 7.2 the list of columns to show is stored in the dashboard settings). Clicking a column caption turns on sorting.
 
 ### Hierarchical Tables
 
@@ -152,13 +162,19 @@ The dashboard view shows tests included in the currently opened test framework (
 !!! note
 	Since Rapise 7.1 you may double click a test in this table to open it in Rapise.
 
-#### View Test Runs in Progress
+!!! note
+	Since Rapise 7.2 you may select tests using checkboxes in the first column and perform additional actions: 
+	
+	- create a test set from selected test cases, 
+	- append selected test cases to existing test set
+	- execute selected test cases on the local host
+	- execute selected test cases on another automation host
 
-View test runs that are in progress right now.
+	A test has a checkbox near it if it is linked to a test cases belonging to selected project.
 
-#### View Pending Test Runs
+#### View Test Set Status Graph
 
-View tests that are scheduled to run for the next 24 hours.
+Requires Rapise 7.2. The Test Set Status graph shows the aggregated count of test cases in each execution status for each test set in the product. If you have the same test cases in multiple test sets they are all counted separately to make sure you can tell that tests have passed successfully across test sets. This is helpful when testing across different environments.
 
 #### Setup Custom Properties
 
@@ -177,6 +193,7 @@ Some features of the dashboard require additional custom properties to exist in 
 	- Rerun test set if failed (boolean, default is false, requires Rapise 7.1+)
 	- Run tests in parallel (boolean, default is false, requires Rapise 7.1+)
 	- Max parallel tests (integer, default is 0 (no limit), requires Rapise 7.1+)
+	- Unroll input data for parallel execution (boolean, default is false, requires Rapise 7.2+)
 	- Input data (string, empty by default, requires Rapise 7.1+)
 	- Record videos (boolean, default is false)
 	- Verbose level (integer, default is 1)
@@ -197,6 +214,8 @@ Action menu for a test allows to
 #### Browse Test Cases
 
 In the test cases view one may see the tree of test cases for a project, discover when a test case was last executed and status of execution.
+
+Since Rapise 7.2 one may change global Test Case filter from `All` to `My Assigned`.
 
 #### View Test Case Details
 
@@ -226,6 +245,8 @@ If you want to create a test case in a specific folder - select corresponding ro
 #### Browse Test Sets
 
 In the test sets view one may see the tree of test sets for a project, discover when a test set was last executed and status of execution.
+
+Since Rapise 7.2 one may change global Test Set filter from `All` to `My Assigned`.
 
 #### View Test Set Details
 
@@ -276,6 +297,14 @@ Since Rapise 7.1 to view just test runs of a specific test set run use `Tag` col
 #### View Test Run Details
 
 Expanding a test run reveals the report with execution status for every test step. The details pane also contains links to download test run attachments and execution log.
+
+### Test Matrix View
+
+Direct navigation to this page produces empty result. To see the Test Matrix navigate to the Test Runs view, right click Test Run tag and choose `Test Matrix` from popup menu.
+
+### Automation Hosts View
+
+This view displays automation hosts configured in selected project. You may create a new one using the form on this page.
 
 ### Incidents View
 

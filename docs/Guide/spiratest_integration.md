@@ -432,6 +432,8 @@ The panel has the following options:
     - **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Useful when your server is rebooted regularly. This option requires Rapise 6.3+
 	- **RDP screen width & height** -- when RDP session is disconnected via [RapiseLauncher tray icon menu](#tray-icon-menu) set screen resolution to specified width and height.
 
+Since Rapise 7.2 one may use `Show Log` button to quickly open the RapiseLauncher log in the default text viewer.
+
 ### Status Screen
 
 The status screen is usually hidden, but can be brought up for display by double-clicking on the system tray icon:

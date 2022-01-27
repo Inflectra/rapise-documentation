@@ -5,7 +5,6 @@ This section describes the process for setting up Rapise to work with [Selenium]
 - Internet Explorer
 - Google Chrome
 - Mozilla Firefox
-- Opera
 - Microsoft Edge
 
 However because Safari only runs on Apple Mac computers, you will need to use two computers (a Mac running Safari) and a PC running Rapise to test using the Apple Safari web browser:
@@ -16,7 +15,36 @@ However because Safari only runs on Apple Mac computers, you will need to use tw
 
 Once you have installed Rapise on your local computer, you need to perform the following steps to configure each of the web browsers to use Selenium and Rapise:
 
-### Chrome
+### Rapise 7.2+
+
+This method is applicable to all browsers except Safari. 
+
+1. Open [Selenium Settings Dialog](selenium_settings_dialog.md)
+2. Select the profile you need
+3. Configure profile settings
+4. Press `Test` button on the toolbar
+
+If Selenium driver for selected browser is not installed yet or it is not compatible with the current version of the browser then Rapise will ask you a question. If your answer is `Yes` then Rapise will download the driver executable and place it into 
+
+```
+c:\ProgramData\Inflectra\Rapise\SeleniumDrivers 
+```
+
+This is the default folder where Rapise searches for Selenium drivers.
+
+To run tests that use Selenium profiles on machines that do not have Selenium drivers downloaded you may add the following into `TestInit` function:
+
+```javascript
+WebDriver.DownloadDriver();
+```
+
+#### See Also
+
+- [WebDriver.DownloadDriver](/Libraries/WebDriver/#downloaddriver)
+
+### Legacy
+
+#### Chrome
 
 To use Selenium with Google Chrome, you will need to download the latest version of the Chrome Driver:
 
@@ -36,7 +64,7 @@ The file inside the zip archive is called **chromedriver.exe** and you need to c
 (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
 
 
-### Firefox
+#### Firefox
 
 To use Selenium with Mozilla Firefox, you will need to download the latest version of the Gecko Driver:
 
@@ -49,7 +77,7 @@ Download **geckodriver-vx.xx.x-win32.zip**  to your local PC.
 The file inside the zip archive is called **geckodriver.exe** and you need to copy it into the **C:\\Program Files
 (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
 
-### Microsoft Edge
+#### Microsoft Edge
 
 To use Selenium with Microsoft Edge, you will need to download the latest version of the Edge Driver from the Microsoft website:
 
@@ -65,7 +93,7 @@ Download the **MicrosoftWebDriver.exe** to this local folder you just created:
 
 ![selenium\_webdriver\_download\_edge2](./img/setting_up_selenium5.png)
 
-### Internet Explorer
+#### Internet Explorer
 
 To use Selenium with Internet Explorer, you will need to download the latest version of the Internet Explorer IE Driver:
 
@@ -85,24 +113,6 @@ Download the **IEDriverServer\_XXXX\_X.X.X.zip** to your local PC:
 - IEDriverServer\_x64\_X.X.X.zip (for 64-bit Internet Explorer)
 
 The file inside the zip archive is called **IEDriverServer.exe** and you need to copy it into the **C:\\Program Files
-(x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
-
-### Opera
-
-To use Selenium with Opera, you will need to download the latest version of the Opera Driver:
-
-<https://github.com/operasoftware/operachromiumdriver/releases>
-
-This page will list the latest version of the driver at the top of the page:
-
-![clip0009](./img/setting_up_selenium10.png)
-
-Download the **operadriver\_winXX.zip** to your local PC:
-
-- operadriver\_win32.zip (for 32-bit Opera)
-- operadriver\_win64.zip (for 64-bit Opera)
-
-The file inside the zip archive is called **operadriver.exe** and you need to copy it into the **C:\\Program Files
 (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
 
 ## Updating WebDriver DLLs in Rapise
