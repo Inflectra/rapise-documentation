@@ -4,6 +4,8 @@
 - 'DomSalesforce':
     - 'DomSalesforce Objects': 'Libraries/ses_lib_salesforce.md'
 
+    - 'DomLightningComboBox': 'Libraries/DomLightningComboBox.md'
+
     - 'DomLightningGrid': 'Libraries/DomLightningGrid.md'
 
     - 'DomLightningListBox': 'Libraries/DomLightningListBox.md'

@@ -1313,6 +1313,7 @@
     "dowaitforwindow",
     "createincident",
     "runtestset",
-    "downloaddriver"      
+    "downloaddriver",
+    "domlightningcombobox"
     ]
 }
