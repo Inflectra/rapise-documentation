@@ -25,7 +25,7 @@ Text object. Use it to perform text manipulations.
 |	[Concat](#concat) | Append `str2` to `str1`. |
 |	[Contains](#contains) | Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning true or false as appropriate. |
 |	[EndsWith](#endswith) | Determines whether a string ends with the characters of a specified string. |
-|	[FileContains](#filecontains) |  |
+|	[FileContains](#filecontains) | Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning true or false as appropriate. |
 |	[FirstIndex](#firstindex) | The first index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
 |	[Format](#format) | Format given template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params. |
 |	[Join](#join) | Concatenate all of the elements in an array (or an array-like object), separated by commas or a specified separator string. |
@@ -202,7 +202,7 @@ boolean: `true` or `false` as appropriate
 <a name="FileContains"></a>    
 #### FileContains
 
-
+Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning true or false as appropriate.
 
 ```javascript
 FileContains(filePath, substr) 
@@ -217,6 +217,11 @@ FileContains(filePath, substr)
 | substr | string |	Text to modify. |
 
 
+
+
+**Returns:**
+
+boolean: `true` if `substr` was found in the file.
 
 
 
@@ -772,7 +777,7 @@ string: Uppercase value.
 #### Trim
 
 Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
-Whitespace characters are [\\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
+Whitespace characters are [ \\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 ```javascript
 Trim(str, global, trimChars) 
@@ -831,7 +836,7 @@ string: Trimmed string.
 #### TrimStart
 
 Strips leading white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
-Whitespace characters are [\\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
+Whitespace characters are [ \\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 ```javascript
 TrimStart(str, trimChars) 
