@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/Text/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -11404,11 +11404,11 @@
 <tbody>
 <tr>
 <td><a href="#charat">CharAt</a></td>
-<td>Returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.</td>
+<td>Returns a new string consisting of the single UTF-16 code unit located at the specified <code>index</code> into the <code>str</code>.</td>
 </tr>
 <tr>
 <td><a href="#charcodeat">CharCodeAt</a></td>
-<td>Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.</td>
+<td>Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given <code>index</code> into the <code>str</code>.</td>
 </tr>
 <tr>
 <td><a href="#concat">Concat</a></td>
@@ -11416,15 +11416,15 @@
 </tr>
 <tr>
 <td><a href="#contains">Contains</a></td>
-<td>Perform a case-sensitive search to determine whether <code>substr</code> may be found within <code>str</code>, returning true or false as appropriate.</td>
+<td>Perform a case-sensitive search to determine whether <code>substr</code> may be found within <code>str</code>, returning <code>true</code> or <code>false</code> as appropriate.</td>
 </tr>
 <tr>
 <td><a href="#endswith">EndsWith</a></td>
-<td>Determines whether a string ends with the characters of a specified string.</td>
+<td>Determines whether a <code>str</code> ends with the characters of <code>substr</code>.</td>
 </tr>
 <tr>
 <td><a href="#filecontains">FileContains</a></td>
-<td></td>
+<td>Perform a case-sensitive search (find in file) to determine whether <code>substr</code> may be found within a text file represented by <code>filePath</code>, returning <code>true</code> or <code>false</code> as appropriate.</td>
 </tr>
 <tr>
 <td><a href="#firstindex">FirstIndex</a></td>
@@ -11432,11 +11432,11 @@
 </tr>
 <tr>
 <td><a href="#format">Format</a></td>
-<td>Format given template string by expanding properties of <code>nameValueJsonObj</code> as {param1}, {param2} etc template params.</td>
+<td>Format given <code>formatStr</code> template string by expanding properties of <code>nameValueJsonObj</code> as {param1}, {param2} etc template params.</td>
 </tr>
 <tr>
 <td><a href="#join">Join</a></td>
-<td>Concatenate all of the elements in an array (or an array-like object), separated by commas or a specified separator string.</td>
+<td>Concatenate all of the elements in <code>arr</code> array (or an array-like object), separated by commas or a specified <code>separator</code> string.</td>
 </tr>
 <tr>
 <td><a href="#lastindex">LastIndex</a></td>
@@ -11480,11 +11480,11 @@
 </tr>
 <tr>
 <td><a href="#startswith">StartsWith</a></td>
-<td>Determines whether a string begins with the characters of a specified string.</td>
+<td>Determines whether <code>str</code> begins with the characters of <code>substr</code>.</td>
 </tr>
 <tr>
 <td><a href="#substr">Substr</a></td>
-<td>Get the substring of a string</td>
+<td>Extract <code>length</code> characters from a <code>str</code>, counting from the <code>start</code> index.</td>
 </tr>
 <tr>
 <td><a href="#substring">Substring</a></td>
@@ -11492,15 +11492,15 @@
 </tr>
 <tr>
 <td><a href="#tolowercase">ToLowercase</a></td>
-<td>Returns the calling string value converted to lowercase.</td>
+<td>Returns <code>str</code> value converted to lowercase.</td>
 </tr>
 <tr>
 <td><a href="#tostring">ToString</a></td>
-<td>Convert anything to String</td>
+<td>Convert anything to a string.</td>
 </tr>
 <tr>
 <td><a href="#touppercase">ToUppercase</a></td>
-<td>Returns the calling string value converted to uppercase.</td>
+<td>Returns the <code>str</code> value converted to uppercase.</td>
 </tr>
 <tr>
 <td><a href="#trim">Trim</a></td>
@@ -11523,7 +11523,7 @@
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="CharAt"></a>    </p>
 <h4 id="charat">CharAt<a class="headerlink" href="#charat" title="Permanent link">&para;</a></h4>
-<p>Returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.</p>
+<p>Returns a new string consisting of the single UTF-16 code unit located at the specified <code>index</code> into the <code>str</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CharAt</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11553,7 +11553,7 @@
 <p><a name="see.also.text.charat"></a></p>
 <p><a name="CharCodeAt"></a>    </p>
 <h4 id="charcodeat">CharCodeAt<a class="headerlink" href="#charcodeat" title="Permanent link">&para;</a></h4>
-<p>Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.</p>
+<p>Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given <code>index</code> into the <code>str</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CharCodeAt</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11613,7 +11613,7 @@
 <p><a name="see.also.text.concat"></a></p>
 <p><a name="Contains"></a>    </p>
 <h4 id="contains">Contains<a class="headerlink" href="#contains" title="Permanent link">&para;</a></h4>
-<p>Perform a case-sensitive search to determine whether <code>substr</code> may be found within <code>str</code>, returning true or false as appropriate.</p>
+<p>Perform a case-sensitive search to determine whether <code>substr</code> may be found within <code>str</code>, returning <code>true</code> or <code>false</code> as appropriate.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Contains</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">substr</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11643,7 +11643,7 @@
 <p><a name="see.also.text.contains"></a></p>
 <p><a name="EndsWith"></a>    </p>
 <h4 id="endswith">EndsWith<a class="headerlink" href="#endswith" title="Permanent link">&para;</a></h4>
-<p>Determines whether a string ends with the characters of a specified string.</p>
+<p>Determines whether a <code>str</code> ends with the characters of <code>substr</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">EndsWith</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">substr</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11673,6 +11673,7 @@
 <p><a name="see.also.text.endswith"></a></p>
 <p><a name="FileContains"></a>    </p>
 <h4 id="filecontains">FileContains<a class="headerlink" href="#filecontains" title="Permanent link">&para;</a></h4>
+<p>Perform a case-sensitive search (find in file) to determine whether <code>substr</code> may be found within a text file represented by <code>filePath</code>, returning <code>true</code> or <code>false</code> as appropriate.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">FileContains</span><span class="p">(</span><span class="nx">filePath</span><span class="p">,</span> <span class="nx">substr</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11697,6 +11698,8 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Returns:</strong></p>
+<p>boolean: <code>true</code> if <code>substr</code> was found in the file.</p>
 <p><a name="see.also.text.filecontains"></a></p>
 <p><a name="FirstIndex"></a>    </p>
 <h4 id="firstindex">FirstIndex<a class="headerlink" href="#firstindex" title="Permanent link">&para;</a></h4>
@@ -11735,7 +11738,7 @@
 <p><a name="see.also.text.firstindex"></a></p>
 <p><a name="Format"></a>    </p>
 <h4 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h4>
-<p>Format given template string by expanding properties of <code>nameValueJsonObj</code> as {param1}, {param2} etc template params.".
+<p>Format given <code>formatStr</code> template string by expanding properties of <code>nameValueJsonObj</code> as {param1}, {param2} etc template params.".
                 Designed to be called from JavaScript. If you need to call it from <code>RVL</code> then consider using <code>RVL.FormatString</code> instead.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Format</span><span class="p">(</span><span class="nx">formatStr</span><span class="p">,</span> <span class="nx">nameValueJsonObj</span><span class="p">)</span> 
 </code></pre></div>
@@ -11766,7 +11769,7 @@
 <p><a name="see.also.text.format"></a></p>
 <p><a name="Join"></a>    </p>
 <h4 id="join">Join<a class="headerlink" href="#join" title="Permanent link">&para;</a></h4>
-<p>Concatenate all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.</p>
+<p>Concatenate all of the elements in <code>arr</code> array (or an array-like object), separated by commas or a specified <code>separator</code> string. If the array has only one item, then that item will be returned without using the separator.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Join</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">separator</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11831,7 +11834,7 @@
 <p><a name="see.also.text.lastindex"></a></p>
 <p><a name="Limit"></a>    </p>
 <h4 id="limit">Limit<a class="headerlink" href="#limit" title="Permanent link">&para;</a></h4>
-<p>Limit <code>str</code> to be not more than <code>maxLength</code> chars. If <code>ellipsis</code> is specified, it is appended to the string after limitation.</p>
+<p>Limit <code>str</code> to be not more than <code>maxLength</code> chars. If <code>ellipsis</code> is specified, it is appended to the string.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Limit</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">maxLength</span><span class="p">,</span> <span class="nx">ellipsis</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12036,7 +12039,7 @@
 <p><a name="see.also.text.replacefirst"></a></p>
 <p><a name="Split"></a>    </p>
 <h4 id="split">Split<a class="headerlink" href="#split" title="Permanent link">&para;</a></h4>
-<p>Divides <code>str</code> into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a <code>substring</code>.</p>
+<p>Divides <code>str</code> into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a <code>separator</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Split</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">separator</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12131,7 +12134,7 @@
 <p><a name="see.also.text.splitcount"></a></p>
 <p><a name="StartsWith"></a>    </p>
 <h4 id="startswith">StartsWith<a class="headerlink" href="#startswith" title="Permanent link">&para;</a></h4>
-<p>Determines whether a string begins with the characters of a specified string.</p>
+<p>Determines whether <code>str</code> begins with the characters of <code>substr</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">StartsWith</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">substr</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12161,7 +12164,15 @@
 <p><a name="see.also.text.startswith"></a></p>
 <p><a name="Substr"></a>    </p>
 <h4 id="substr">Substr<a class="headerlink" href="#substr" title="Permanent link">&para;</a></h4>
-<p>Get the substring of a string</p>
+<p>Extract <code>length</code> characters from a <code>str</code>, counting from the <code>start</code> index.</p>
+<ul>
+<li>If <code>start</code> is a non-negative number, the index starts counting from the start of the string. Its value is capped at <code>str.length - 1</code>.</li>
+<li>If <code>start</code> is a negative number, the index starts counting from the end of the string. Its value is capped at <code>-str.length</code>.</li>
+<li>If <code>length</code> is omitted, <code>Text.Substr()</code> extracts characters to the end of the string.</li>
+<li>If <code>length</code> is <code>undefined</code>, <code>Text.Substr()</code> extracts characters to the end of the string.</li>
+<li>If <code>length</code> is a negative number, it is treated as 0.</li>
+<li>For both start and length, <code>NaN</code> is treated as 0.</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="nx">Substr</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">length</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12197,9 +12208,11 @@
 <p><a name="Substring"></a>    </p>
 <h4 id="substring">Substring<a class="headerlink" href="#substring" title="Permanent link">&para;</a></h4>
 <p>Text.Substring() extracts characters from <code>indexStart</code> up to but not including <code>indexEnd</code>. In particular:</p>
-<p>If <code>indexEnd</code> is omitted, <code>Text.Substring()</code> extracts characters to the end of the string.
-If <code>indexStart</code> is equal to indexEnd, <code>Text.Substring()</code> returns an empty string.
-If <code>indexStart</code> is greater than <code>indexEnd</code>, then the effect of <code>Text.Substring()</code> is as if the two arguments were swapped;</p>
+<ul>
+<li>If <code>indexEnd</code> is omitted, <code>Text.Substring()</code> extracts characters to the end of the string.</li>
+<li>If <code>indexStart</code> is equal to indexEnd, <code>Text.Substring()</code> returns an empty string.</li>
+<li>If <code>indexStart</code> is greater than <code>indexEnd</code>, then the effect of <code>Text.Substring()</code> is as if the two arguments were swapped;</li>
+</ul>
 <p>Any argument value that is less than 0 or greater than <code>str.length</code> is treated as if it were 0 and <code>str.length</code>, respectively.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Substring</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">indexStart</span><span class="p">,</span> <span class="nx">indexEnd</span><span class="p">)</span> 
 </code></pre></div>
@@ -12235,7 +12248,7 @@ If <code>indexStart</code> is greater than <code>indexEnd</code>, then the effec
 <p><a name="see.also.text.substring"></a></p>
 <p><a name="ToLowercase"></a>    </p>
 <h4 id="tolowercase">ToLowercase<a class="headerlink" href="#tolowercase" title="Permanent link">&para;</a></h4>
-<p>Returns the calling string value converted to lowercase.</p>
+<p>Returns <code>str</code> value converted to lowercase.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ToLowercase</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12260,7 +12273,7 @@ If <code>indexStart</code> is greater than <code>indexEnd</code>, then the effec
 <p><a name="see.also.text.tolowercase"></a></p>
 <p><a name="ToString"></a>    </p>
 <h4 id="tostring">ToString<a class="headerlink" href="#tostring" title="Permanent link">&para;</a></h4>
-<p>Convert anything to String</p>
+<p>Convert anything to a string.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ToString</span><span class="p">(</span><span class="nx">anyObj</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12285,7 +12298,7 @@ If <code>indexStart</code> is greater than <code>indexEnd</code>, then the effec
 <p><a name="see.also.text.tostring"></a></p>
 <p><a name="ToUppercase"></a>    </p>
 <h4 id="touppercase">ToUppercase<a class="headerlink" href="#touppercase" title="Permanent link">&para;</a></h4>
-<p>Returns the calling string value converted to uppercase.</p>
+<p>Returns the <code>str</code> value converted to uppercase.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ToUppercase</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12311,8 +12324,8 @@ If <code>indexStart</code> is greater than <code>indexEnd</code>, then the effec
 <p><a name="Trim"></a>    </p>
 <h4 id="trim">Trim<a class="headerlink" href="#trim" title="Permanent link">&para;</a></h4>
 <p>Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
-Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Trim</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">global</span><span class="p">,</span> <span class="nx">trimChars</span><span class="p">)</span> 
+Whitespace characters are [ \f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Trim</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nb">global</span><span class="p">,</span> <span class="nx">trimChars</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12347,7 +12360,7 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 <p><a name="TrimEnd"></a>    </p>
 <h4 id="trimend">TrimEnd<a class="headerlink" href="#trimend" title="Permanent link">&para;</a></h4>
 <p>Strips trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
-Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
+Whitespace characters are [ \f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
 <div class="highlight"><pre><span></span><code><span class="nx">TrimEnd</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">trimChars</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12378,7 +12391,7 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 <p><a name="TrimStart"></a>    </p>
 <h4 id="trimstart">TrimStart<a class="headerlink" href="#trimstart" title="Permanent link">&para;</a></h4>
 <p>Strips leading white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
-Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
+Whitespace characters are [ \f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
 <div class="highlight"><pre><span></span><code><span class="nx">TrimStart</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">trimChars</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>

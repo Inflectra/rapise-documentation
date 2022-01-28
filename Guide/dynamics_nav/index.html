@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/dynamics_nav/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -11217,7 +11217,7 @@
 <p>It may contain not only application name but also name of currently active page or information about currently opened record. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression. You can see it in the object tree and properties of captured objects.</p>
 <p><img alt="Object Properties" src="../img/dynamicsnavobjectproperties.png" /></p>
 <p>Here it is:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    regex:.*Microsoft Dynamics NAV</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="nl">regex:</span><span class="p">.</span><span class="o">*</span><span class="n">Microsoft</span> <span class="n">Dynamics</span> <span class="n">NAV</span>
 </code></pre></div>
 </td></tr></table>
 <p>Also Rapise adjusts <code>Record Title</code> in test settings to the same regular expression so you do not need to choose the Dynamics NAV main window during subsequent recording sessions.</p>
@@ -11242,7 +11242,7 @@
         <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span> 
+    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span> 
 
     <span class="kd">var</span> <span class="nx">pfFolder</span> <span class="o">=</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="s2">&quot;ProgramFilesX86&quot;</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">dynamicsPath</span> <span class="o">=</span> <span class="nx">pfFolder</span> <span class="o">+</span> <span class="s2">&quot;\\Microsoft Dynamics NAV\\100\\RoleTailored Client\\Microsoft.Dynamics.Nav.Client.exe&quot;</span>
