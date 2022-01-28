@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/visual_studio/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -11122,7 +11122,7 @@
 <h2 id="unit-test-mapping">Unit Test Mapping<a class="headerlink" href="#unit-test-mapping" title="Permanent link">&para;</a></h2>
 <p>Rapise integrates with Visual Studio at <a href="https://www.visualstudio.com/en-us/docs/test/developer-testing/getting-started/getting-started-with-developer-testing">Unit Test</a> level.</p>
 <p>Create a Unit Test project in Visual Studio, add a unit test and a test method. In the References section add the DLL:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>c:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">c:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll</span>
 </code></pre></div>
 </td></tr></table>
 <p>In a test method specify absolute path to a Rapise test and pass <code>TextContext</code> parameter to <code>Rapise.TestExecute</code> function:</p>

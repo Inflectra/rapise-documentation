@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/com_testing_support/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -11033,7 +11033,7 @@
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h2 id="creating-a-com-object">Creating a COM Object<a class="headerlink" href="#creating-a-com-object" title="Permanent link">&para;</a></h2>
 <p>You can create a COM object using Windows' <strong>ActiveXObject</strong> class.  Once the object is created, method invocation is the same as with any other object in your program.  The methods available will depend on the object's COM interface.  The following example shows how to create an instance of the Word application and open a file.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Word.Application&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Word.Application&quot;</span><span class="p">);</span>
 <span class="nx">doc</span><span class="p">.</span><span class="nx">Documents</span><span class="p">.</span><span class="nx">Open</span><span class="p">(</span><span class="nx">wordFileName</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="test-samples">Test Samples<a class="headerlink" href="#test-samples" title="Permanent link">&para;</a></h2>

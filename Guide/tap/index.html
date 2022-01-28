@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/tap/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -11019,46 +11019,46 @@
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>The results of a Rapise test are saved to a TAP file in the same directory as the test. Tap files have a <strong>.tap</strong> extension.</p>
 <p>TAP’s general format is:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">1..</span><span class="n">N</span>
-<span class="n">ok</span> <span class="mf">1</span> <span class="n">Description</span> <span class="err">#</span> <span class="n">Directive</span>
-<span class="err">#</span> <span class="n">Diagnostic</span>
-<span class="mf">....</span>
-<span class="n">ok</span> <span class="mf">47</span> <span class="n">Description</span>
-<span class="n">ok</span> <span class="mf">48</span> <span class="n">Description</span>
-<span class="n">more</span> <span class="n">tests</span><span class="mf">....</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">1..N</span>
+<span class="err">ok 1 Description # Directive</span>
+<span class="err"># Diagnostic</span>
+<span class="err">....</span>
+<span class="err">ok 47 Description</span>
+<span class="err">ok 48 Description</span>
+<span class="err">more tests....</span>
 </code></pre></div>
 </td></tr></table>
 <p>For example, a test file’s output might look like:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">1..4</span>
-<span class="n">ok</span> <span class="mf">1</span> <span class="o">-</span> <span class="kr">Input</span> <span class="n">file</span> <span class="kr">open</span><span class="n">ed</span>
-<span class="ow">not</span> <span class="n">ok</span> <span class="mf">2</span> <span class="o">-</span> <span class="n">First</span> <span class="n">line</span> <span class="n">of</span> <span class="n">the</span> <span class="kr">input</span> <span class="nb">val</span><span class="n">id</span>
-<span class="n">ok</span> <span class="mf">3</span> <span class="o">-</span> <span class="kr">Read</span> <span class="n">the</span> <span class="n">rest</span> <span class="n">of</span> <span class="n">the</span> <span class="n">file</span>
-<span class="ow">not</span> <span class="n">ok</span> <span class="mf">4</span> <span class="o">-</span> <span class="n">Summarized</span> <span class="n">correctly</span> <span class="err">#</span> <span class="kr">TO</span><span class="n">DO</span> <span class="ow">Not</span> <span class="n">written</span> <span class="n">yet</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">1..4</span>
+<span class="err">ok 1 - Input file opened</span>
+<span class="err">not ok 2 - First line of the input valid</span>
+<span class="err">ok 3 - Read the rest of the file</span>
+<span class="err">not ok 4 - Summarized correctly # TODO Not written yet</span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <p>An example Rapise .TAP file looks like the following:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code># Simple IE Popup Example
-# Starting scenario: Test
-ok 1 - Open popup.DoClick([])
-ok 2 - Click me.DoClick([])
-ok 3 - Close me.DoClick([])
-ok 4 - Simple IE Popup Example
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err"># Simple IE Popup Example</span>
+<span class="err"># Starting scenario: Test</span>
+<span class="err">ok 1 - Open popup.DoClick([])</span>
+<span class="err">ok 2 - Click me.DoClick([])</span>
+<span class="err">ok 3 - Close me.DoClick([])</span>
+<span class="err">ok 4 - Simple IE Popup Example</span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

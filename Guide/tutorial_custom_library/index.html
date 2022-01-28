@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/tutorial_custom_library/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -11138,7 +11138,7 @@
 <span class="cm">        ROLE_SYSTEM_LIST (CustomListboxControl)</span>
 <span class="cm">        ROLE_SYSTEM_SLIDER*</span>
 <span class="cm">*/</span>
-<span class="ow">new</span> <span class="nx">SeSMatcherRule</span><span class="p">(</span>
+<span class="k">new</span> <span class="nx">SeSMatcherRule</span><span class="p">(</span>
 <span class="p">{</span>
     <span class="nx">object_type</span><span class="o">:</span> <span class="s2">&quot;CustomListboxControl&quot;</span><span class="p">,</span>
     <span class="nx">object_flavor</span><span class="o">:</span> <span class="s2">&quot;List&quot;</span><span class="p">,</span>
@@ -11268,7 +11268,7 @@ rule:
         <span class="kd">var</span> <span class="nx">ro</span> <span class="o">=</span> <span class="nx">SeSCacheAccessibleObject</span><span class="p">(</span><span class="nx">ao</span><span class="p">);</span>
         <span class="k">if</span> <span class="p">(</span><span class="nx">l3</span> <span class="o">&amp;&amp;</span> <span class="nx">ro</span><span class="p">)</span> <span class="nx">Log3</span><span class="p">(</span><span class="s2">&quot;CustomListboxControl: &quot;</span> <span class="o">+</span> <span class="nx">ro</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
 
-        <span class="k">if</span> <span class="p">(</span><span class="nx">ro</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="s2">&quot;OnValueChange&quot;</span> <span class="ow">in</span> <span class="nx">ro</span><span class="p">))</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">ro</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="s2">&quot;OnValueChange&quot;</span> <span class="k">in</span> <span class="nx">ro</span><span class="p">))</span>
         <span class="p">{</span>
             <span class="nx">ro</span><span class="p">.</span><span class="nx">OnValueChange</span><span class="p">();</span>
         <span class="p">}</span>
