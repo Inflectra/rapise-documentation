@@ -3,6 +3,26 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB636', 'Silent Installation of Rapise for CI/CD')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB636.aspx">KB636</a> Silent Installation of Rapise for CI/CD
+
+Sometimes you need to perform unattended installation of Rapise for test execution only. It may be a part of automated test execution step executed by CI/CD pipeline. Here is the snippet.
+
+### <a onclick="return RegisterKbClick('KB635', 'Create an incident in Spira from Rapise test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB635.aspx">KB635</a> Create an incident in Spira from Rapise test
+
+In some cases a test may automatically determine that it's failure is definitely caused by a bug in software under test.  In this case the test may create an incident in Spira using Spira.CreateIncident action. Requires Rapise 7.2+.
+
+### <a onclick="return RegisterKbClick('KB634', 'Comparing Web Page to Text or Word File')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB634.aspx">KB634</a> Comparing Web Page to Text or Word File
+
+Sometimes you need to validate the whole page text. This sample demonstrates usage of plain text or MSWord file for this purpose with some help of myers-diff npm module
+
+### <a onclick="return RegisterKbClick('KB631', 'Reading DOM element style property')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB631.aspx">KB631</a> Reading DOM element style property
+
+Sometimes we need to get runtime property for the element. For example, we need to get a background color to know that element is visually highlighted for a user. This topic shows how it may be done with Navigator.ExecJS.
+
+### <a onclick="return RegisterKbClick('KB623', 'Fix DPI scaling for RDP connections to Windows VMs')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB623.aspx">KB623</a> Fix DPI scaling for RDP connections to Windows VMs
+
+If you connect to a Windows VM via RDP and see that all fonts are very small and it is hard to read text on screen then this article is for you.  If you can access the VM without RDP then you may change scaling via Display Settings in Windows and thus make text larger. But if this VM is Azure or AWS hosted VM then you may see a message: the display settings can't be changed from a remote session.
+
 ### <a onclick="return RegisterKbClick('KB608', 'What Blocked status means for a Test Run')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB608.aspx">KB608</a> What Blocked status means for a Test Run
 
 When you run a test with Spira (via RapiseLauncher) you may get a `Blocked` status for a test run. It is displayed in the Test Runs view and Test Sets view both in Spira and Spira Dashboard in Rapise.
@@ -797,7 +817,7 @@ As described in a recent article, Microsoft Dynamics has been going through majo
 
 ### <a onclick="return RegisterKbClick('KB271', 'Headless Chrome Testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB271.aspx">KB271</a> Headless Chrome Testing
 
-Headless Chrome on Windows  is introduced in version 60 . Learn how to configure Rapise to run cross-browser tests using non-GUI mode of Chrome. It works same way as with PhantomJS.
+Headless Chrome on Windows  is introduced in version 60 . Learn how to configure Rapise to run cross-browser tests using non-GUI mode of Chrome.
 
 ### <a onclick="return RegisterKbClick('KB270', 'Using Object ID as RVL ParamValue')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB270.aspx">KB270</a> Using Object ID as RVL ParamValue
 
