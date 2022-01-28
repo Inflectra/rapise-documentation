@@ -20,15 +20,15 @@ Text object. Use it to perform text manipulations.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[CharAt](#charat) | Returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string. |
-|	[CharCodeAt](#charcodeat) | Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index. |
+|	[CharAt](#charat) | Returns a new string consisting of the single UTF-16 code unit located at the specified `index` into the `str`. |
+|	[CharCodeAt](#charcodeat) | Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given `index` into the `str`. |
 |	[Concat](#concat) | Append `str2` to `str1`. |
-|	[Contains](#contains) | Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning true or false as appropriate. |
-|	[EndsWith](#endswith) | Determines whether a string ends with the characters of a specified string. |
-|	[FileContains](#filecontains) | Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning true or false as appropriate. |
+|	[Contains](#contains) | Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning `true` or `false` as appropriate. |
+|	[EndsWith](#endswith) | Determines whether a `str` ends with the characters of `substr`. |
+|	[FileContains](#filecontains) | Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning `true` or `false` as appropriate. |
 |	[FirstIndex](#firstindex) | The first index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
-|	[Format](#format) | Format given template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params. |
-|	[Join](#join) | Concatenate all of the elements in an array (or an array-like object), separated by commas or a specified separator string. |
+|	[Format](#format) | Format given `formatStr` template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params. |
+|	[Join](#join) | Concatenate all of the elements in `arr` array (or an array-like object), separated by commas or a specified `separator` string. |
 |	[LastIndex](#lastindex) | The last index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
 |	[Limit](#limit) | Limit `str` to be not more than `maxLength` chars. |
 |	[PadEnd](#padend) | Pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. |
@@ -39,12 +39,12 @@ Text object. Use it to perform text manipulations.
 |	[Split](#split) | Divides `str` into an ordered list of substrings, puts these substrings into an array, and returns the array. |
 |	[SplitAt](#splitat) | Get `atInd`th item after split. |
 |	[SplitCount](#splitcount) | Get number of parts that will occur after splitting given `str` with given `separator`. |
-|	[StartsWith](#startswith) | Determines whether a string begins with the characters of a specified string. |
-|	[Substr](#substr) | Get the substring of a string |
+|	[StartsWith](#startswith) | Determines whether `str` begins with the characters of `substr`. |
+|	[Substr](#substr) | Extract `length` characters from a `str`, counting from the `start` index. |
 |	[Substring](#substring) | Text.Substring() extracts characters from `indexStart` up to but not including `indexEnd`. |
-|	[ToLowercase](#tolowercase) | Returns the calling string value converted to lowercase. |
-|	[ToString](#tostring) | Convert anything to String |
-|	[ToUppercase](#touppercase) | Returns the calling string value converted to uppercase. |
+|	[ToLowercase](#tolowercase) | Returns `str` value converted to lowercase. |
+|	[ToString](#tostring) | Convert anything to a string. |
+|	[ToUppercase](#touppercase) | Returns the `str` value converted to uppercase. |
 |	[Trim](#trim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
 |	[TrimEnd](#trimend) | Strips trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
 |	[TrimStart](#trimstart) | Strips leading white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
@@ -62,7 +62,7 @@ Text object. Use it to perform text manipulations.
 <a name="CharAt"></a>    
 #### CharAt
 
-Returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.
+Returns a new string consisting of the single UTF-16 code unit located at the specified `index` into the `str`.
 
 ```javascript
 CharAt(str, index) 
@@ -90,7 +90,7 @@ string: Char at `index`.
 <a name="CharCodeAt"></a>    
 #### CharCodeAt
 
-Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given `index` into the `str`.
 
 ```javascript
 CharCodeAt(str, index) 
@@ -146,7 +146,7 @@ string: Combined string
 <a name="Contains"></a>    
 #### Contains
 
-Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning true or false as appropriate.
+Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning `true` or `false` as appropriate.
 
 ```javascript
 Contains(str, substr) 
@@ -174,7 +174,7 @@ boolean: `true` if `substr` was found in `str`.
 <a name="EndsWith"></a>    
 #### EndsWith
 
-Determines whether a string ends with the characters of a specified string.
+Determines whether a `str` ends with the characters of `substr`.
 
 ```javascript
 EndsWith(str, substr) 
@@ -202,7 +202,7 @@ boolean: `true` or `false` as appropriate
 <a name="FileContains"></a>    
 #### FileContains
 
-Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning true or false as appropriate.
+Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning `true` or `false` as appropriate.
 
 ```javascript
 FileContains(filePath, substr) 
@@ -259,7 +259,7 @@ number: Index or -1
 <a name="Format"></a>    
 #### Format
 
-Format given template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params.".
+Format given `formatStr` template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params.".
 				Designed to be called from JavaScript. If you need to call it from `RVL` then consider using `RVL.FormatString` instead.
 
 ```javascript
@@ -288,7 +288,7 @@ string: Formatted string
 <a name="Join"></a>    
 #### Join
 
-Concatenate all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+Concatenate all of the elements in `arr` array (or an array-like object), separated by commas or a specified `separator` string. If the array has only one item, then that item will be returned without using the separator.
 
 ```javascript
 Join(arr, separator) 
@@ -345,7 +345,7 @@ number: Index or -1
 <a name="Limit"></a>    
 #### Limit
 
-Limit `str` to be not more than `maxLength` chars. If `ellipsis` is specified, it is appended to the string after limitation.
+Limit `str` to be not more than `maxLength` chars. If `ellipsis` is specified, it is appended to the string.
 
 ```javascript
 Limit(str, maxLength, ellipsis) 
@@ -518,7 +518,7 @@ string: Text after replace.
 <a name="Split"></a>    
 #### Split
 
-Divides `str` into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a `substring`.
+Divides `str` into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a `separator`.
 
 ```javascript
 Split(str, separator) 
@@ -603,7 +603,7 @@ number: Number of split parts
 <a name="StartsWith"></a>    
 #### StartsWith
 
-Determines whether a string begins with the characters of a specified string.
+Determines whether `str` begins with the characters of `substr`.
 
 ```javascript
 StartsWith(str, substr) 
@@ -631,7 +631,14 @@ boolean: `true` or `false` as appropriate
 <a name="Substr"></a>    
 #### Substr
 
-Get the substring of a string
+Extract `length` characters from a `str`, counting from the `start` index.
+
+- If `start` is a non-negative number, the index starts counting from the start of the string. Its value is capped at `str.length - 1`.
+- If `start` is a negative number, the index starts counting from the end of the string. Its value is capped at `-str.length`.
+- If `length` is omitted, `Text.Substr()` extracts characters to the end of the string.
+- If `length` is `undefined`, `Text.Substr()` extracts characters to the end of the string.
+- If `length` is a negative number, it is treated as 0.
+- For both start and length, `NaN` is treated as 0.
 
 ```javascript
 Substr(str, start, length) 
@@ -662,9 +669,9 @@ string: Substring
 
 Text.Substring() extracts characters from `indexStart` up to but not including `indexEnd`. In particular:
 
-If `indexEnd` is omitted, `Text.Substring()` extracts characters to the end of the string.
-If `indexStart` is equal to indexEnd, `Text.Substring()` returns an empty string.
-If `indexStart` is greater than `indexEnd`, then the effect of `Text.Substring()` is as if the two arguments were swapped;
+- If `indexEnd` is omitted, `Text.Substring()` extracts characters to the end of the string.
+- If `indexStart` is equal to indexEnd, `Text.Substring()` returns an empty string.
+- If `indexStart` is greater than `indexEnd`, then the effect of `Text.Substring()` is as if the two arguments were swapped;
 
 Any argument value that is less than 0 or greater than `str.length` is treated as if it were 0 and `str.length`, respectively.
 
@@ -695,7 +702,7 @@ string: Substring
 <a name="ToLowercase"></a>    
 #### ToLowercase
 
-Returns the calling string value converted to lowercase.
+Returns `str` value converted to lowercase.
 
 ```javascript
 ToLowercase(str) 
@@ -722,7 +729,7 @@ string: Lowercase value.
 <a name="ToString"></a>    
 #### ToString
 
-Convert anything to String
+Convert anything to a string.
 
 ```javascript
 ToString(anyObj) 
@@ -749,7 +756,7 @@ string: string representation of the object
 <a name="ToUppercase"></a>    
 #### ToUppercase
 
-Returns the calling string value converted to uppercase.
+Returns the `str` value converted to uppercase.
 
 ```javascript
 ToUppercase(str) 
@@ -807,7 +814,7 @@ string: Trimmed string.
 #### TrimEnd
 
 Strips trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
-Whitespace characters are [\\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
+Whitespace characters are [ \\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 ```javascript
 TrimEnd(str, trimChars) 
