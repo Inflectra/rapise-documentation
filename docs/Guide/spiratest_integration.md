@@ -252,10 +252,14 @@ function TestInit()
 
     if ('undefined' == typeof(g_browser_library))
     {
-        g_browser_library = "Internet Explorer HTML";
+        g_browserLibrary = "Internet Explorer HTML";
+    }
+    else
+    {
+        g_browserLibrary = g_browser_library;
     }
 
-    Tester.SetReportAttribute("Browser", g_browser_library);
+    Tester.SetReportAttribute("Browser", g_browserLibrary);
     KillBrowser();
 }
 ```
