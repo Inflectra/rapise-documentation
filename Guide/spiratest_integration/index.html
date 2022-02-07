@@ -11832,10 +11832,14 @@
 
     <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="k">typeof</span><span class="p">(</span><span class="nx">g_browser_library</span><span class="p">))</span>
     <span class="p">{</span>
-        <span class="nx">g_browser_library</span> <span class="o">=</span> <span class="s2">&quot;Internet Explorer HTML&quot;</span><span class="p">;</span>
+        <span class="nx">g_browserLibrary</span> <span class="o">=</span> <span class="s2">&quot;Internet Explorer HTML&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="nx">g_browserLibrary</span> <span class="o">=</span> <span class="nx">g_browser_library</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="nx">Tester</span><span class="p">.</span><span class="nx">SetReportAttribute</span><span class="p">(</span><span class="s2">&quot;Browser&quot;</span><span class="p">,</span> <span class="nx">g_browser_library</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">SetReportAttribute</span><span class="p">(</span><span class="s2">&quot;Browser&quot;</span><span class="p">,</span> <span class="nx">g_browserLibrary</span><span class="p">);</span>
     <span class="nx">KillBrowser</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
