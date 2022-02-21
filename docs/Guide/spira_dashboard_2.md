@@ -90,7 +90,7 @@ If a Test Set is configured to run same Test Cases several times (each time with
 
 ![Test Matrix](./img/test_matrix.png)
 
-If there are more than one input parameter - it is possible to select the one you need from the dropdown. Clicking on a test case reveals the history of tes runs for it (clickable).
+If there are more than one input parameter - it is possible to select the one you need from the dropdown. Clicking on a test case reveals the history of test runs for it (clickable).
 
 ## How to Open
 
