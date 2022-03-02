@@ -1,8 +1,8 @@
-Summary: Use SpiraApi object to communicate with Spira during playback of tests. With Spira object you may do such things as launching a test set and creating an incident. Requires Rapise 7.2+
+Summary: Use Spira object to communicate with Spira during playback of tests. With Spira object you may do such things as launching a test set and creating an incident. Requires Rapise 7.2+
 
 # Spira
 
-Use SpiraApi object to communicate with Spira during playback of tests. With Spira object you may do such things as launching a test set and creating an incident. Requires Rapise 7.2+
+Use Spira object to communicate with Spira during playback of tests. With Spira object you may do such things as launching a test set and creating an incident. Requires Rapise 7.2+
 
 
 
