@@ -81,6 +81,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Highlights
 
+- [Rapise 7.2](https://youtu.be/PruBlpkc2ns)
 - [Rapise 7.1](https://youtu.be/2AI6mc2-SYg)
 - [Rapise 7.0](https://youtu.be/YGGvSCAUCw0)
 - [Rapise 6.7](https://youtu.be/vV07ICRpL48)
