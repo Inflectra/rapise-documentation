@@ -69,7 +69,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/inflectra'
     - icon: fontawesome/solid/link
-      link: 'https://www.linkedin.com/inflectra-corporation'
+      link: 'https://www.linkedin.com/company/inflectra-corporation/'
 
 nav:
 - '#':
