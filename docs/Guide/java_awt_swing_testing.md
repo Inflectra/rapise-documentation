@@ -21,6 +21,7 @@ To verify that the bridge installed correctly, check that the following files ha
 * `lib\accessibility.properties`
 * `lib\ext\jaccess.jar`
 * `lib\ext\smartestudio-bridge.jar`
+* `lib\ext\json.jar`
 
 If you don't see **all three of these files** then it means the bridge was not installed correctly.
 
