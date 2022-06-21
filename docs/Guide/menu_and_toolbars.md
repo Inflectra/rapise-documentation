@@ -102,6 +102,22 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 * **Save File**
     * JavaScript: saves the script file you are editing.
 
+-----
+* **Select All Rows**
+    * RVL: Select all rows in the currently visible Sheet.
+* **Select Sheet** 
+    * RVL: Switch an RVL Sheet
+* **Add Sheet** 
+    * RVL: Create a new RVL Sheet
+* **Rename Sheet** 
+    * RVL: Rename the current RVL Sheet
+* **Remove Sheet** 
+    * RVL: Remove the current RVL Sheet
+* **Clear Sheet** 
+    * RVL: Clear all rows in the current RVL Sheet
+* **Play This Sheet** 
+    * RVL: Execute the current sheet
+
 ## View
 
 The **View** menu contents depend on the active editor currently open in the [content view](content_view.md).
