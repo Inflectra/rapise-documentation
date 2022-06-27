@@ -47,7 +47,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 Gets submenu property.
 
 ```javascript
-DoGetSubmenuProperty(path, index, property, separator) 
+DoGetSubmenuProperty(path, property, separator) 
 ```
 
 
@@ -56,7 +56,6 @@ DoGetSubmenuProperty(path, index, property, separator)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| index | number |	Index of the submenu. |
 | property | string |	Name of a property. Available properties can be seen in Java Spy. |
 | separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 

@@ -52,6 +52,7 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[AssertSet](#assertset) | Checks if `val` is set (i.e. |
 |	[AssertStartsWith](#assertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
 |	[BeginTest](#begintest) | Marks beginning of a test with a given name. |
+|	[BlockTest](#blocktest) | Stops test execution and exits with Blocked status. |
 |	[CaptureDesktopImage](#capturedesktopimage) | Captures screenshot of the desktop and adds it to the report. |
 |	[CaptureObjectImage](#captureobjectimage) | Captures screenshot of an object and adds it to the report. |
 |	[CaptureWindowImage](#capturewindowimage) | Captures screenshot of an application window matched by title and class and adds it to the report. |
@@ -306,7 +307,7 @@ AssertFalse(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -529,7 +530,7 @@ AssertNotNull(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -556,7 +557,7 @@ AssertNotSet(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -583,7 +584,7 @@ AssertNull(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -610,7 +611,7 @@ AssertSet(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -671,6 +672,28 @@ BeginTest(name, path, optionalParams)
 
 
 <a name="see.also.tester.begintest"></a>
+
+<a name="BlockTest"></a>    
+#### BlockTest
+
+Stops test execution and exits with Blocked status.
+
+```javascript
+BlockTest(message) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |	Reason why the test is blocked.<br>Optional, Default: "Test execution blocked". |
+
+
+
+
+
+<a name="see.also.tester.blocktest"></a>
 
 <a name="CaptureDesktopImage"></a>    
 #### CaptureDesktopImage
@@ -757,7 +780,7 @@ DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | optNodeJsonPath | string |	node.json path<br>Optional. |
-| mkPackageJson | bool |	 |
+| mkPackageJson | string |	Generate package.json for the test<br>Optional. |
 
 
 
@@ -795,7 +818,7 @@ FailTest(message, internal)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Failure description.<br>Optional, Default: "Test stopped on error". |
-| internal |  |	 |
+| internal |  |	For internal use<br>Optional, Default: "null". |
 
 
 
@@ -817,7 +840,7 @@ GetParam(paramName, defaultValue)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| paramName | string |	 |
+| paramName | string |	Parameter name |
 | defaultValue | string |	Default value |
 
 
@@ -1260,7 +1283,7 @@ SoftAssertFalse(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1483,7 +1506,7 @@ SoftAssertNotNull(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1510,7 +1533,7 @@ SoftAssertNotSet(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1537,7 +1560,7 @@ SoftAssertNull(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1564,7 +1587,7 @@ SoftAssertSet(message, val, data, tags)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |	Message to put in the report. |
-| val | object |	 |
+| val | object |	Value to check. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
 

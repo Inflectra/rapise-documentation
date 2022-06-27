@@ -44,7 +44,7 @@ OracleForms Global Helper Object.
 Get title of currently displayed LOV selection window.
 
 ```javascript
-DoLOVSelect(txtOrInd, timeoutS) 
+DoLOVSelect(txtOrInd, timeout) 
 ```
 
 
@@ -52,8 +52,8 @@ DoLOVSelect(txtOrInd, timeoutS)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txtOrInd | string |	 |
-| timeoutS | number |	 |
+| txtOrInd | string \| number |	 |
+| timeout | number |	 |
 
 
 

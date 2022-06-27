@@ -26,7 +26,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[ClearSessions](#clearsessions) | Deletes active sessions on Appium server. |
 |	[Close](#close) | Close the Browser and Dispose of WebDriver. |
 |	[CloseApp](#closeapp) | Close the application. |
-|	[CreateAppiumDriver](#createappiumdriver) |  |
+|	[CreateAppiumDriver](#createappiumdriver) | Connects to a mobile target using given Appium uri and capabilities. |
 |	[CreateDesiredCapabilities](#createdesiredcapabilities) |  |
 |	[CreateDriverForSession](#createdriverforsession) | Connects to active Appium session with given URL and Id. |
 |	[DeactiveIMEEngine](#deactiveimeengine) | Deactivate the currently Active IME Engine on the device. |
@@ -68,30 +68,30 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[GetTitle](#gettitle) | Gets the title of the current browser window. |
 |	[GetUrl](#geturl) | Gets the URL the browser is currently displaying. |
 |	[GetWindowHandles](#getwindowhandles) | Gets the window handles of open browser windows. |
-|	[HideKeyboard](#hidekeyboard) |  |
-|	[IgnoreUnimportantViews](#ignoreunimportantviews) |  |
-|	[InstallApp](#installapp) |  |
-|	[IsAppInstalled](#isappinstalled) |  |
-|	[IsIMEActive](#isimeactive) |  |
-|	[IsLocked](#islocked) |  |
-|	[LaunchApp](#launchapp) |  |
-|	[OpenNotifications](#opennotifications) |  |
-|	[PressKeyCode](#presskeycode) |  |
-|	[PullFile](#pullfile) |  |
+|	[HideKeyboard](#hidekeyboard) | Hide soft keyboard |
+|	[IgnoreUnimportantViews](#ignoreunimportantviews) | This capability can speed up test execution, since Accessibility commands will run faster ignoring some elements. |
+|	[InstallApp](#installapp) | Install the given app onto the device. |
+|	[IsAppInstalled](#isappinstalled) | Check whether the specified app is installed on the device. |
+|	[IsIMEActive](#isimeactive) | Check if IME is active. |
+|	[IsLocked](#islocked) | Check whether the device is locked or not |
+|	[LaunchApp](#launchapp) | Launch the app-under-test on the device |
+|	[OpenNotifications](#opennotifications) | Open Android notifications (Emulator only) |
+|	[PressKeyCode](#presskeycode) | Press a particular key on Device |
+|	[PullFile](#pullfile) | Retrieve a file from the device's file system. |
 |	[PushFile](#pushfile) | Place a file onto the device in a particular place. |
 |	[Quit](#quit) | Disconnects from the Browser. |
 |	[ReconnectSession](#reconnectsession) | Reads session information produced by SaveSession and connects to the mobile target. |
-|	[RemoveApp](#removeapp) |  |
-|	[ResetApp](#resetapp) |  |
+|	[RemoveApp](#removeapp) | Remove an app from the device |
+|	[ResetApp](#resetapp) | Reset the currently running app for this session |
 |	[SaveSession](#savesession) | Saves session information for use by ReconnectSession. |
 |	[SetContext](#setcontext) | Sets current context. |
 |	[SetOrientation](#setorientation) | Sets device orienataion. |
 |	[SetUrl](#seturl) | Sets the URL the browser is currently displaying. |
-|	[ShakeDevice](#shakedevice) |  |
-|	[StartActivity](#startactivity) |  |
-|	[ToggleAirplaneMode](#toggleairplanemode) |  |
-|	[ToggleLocationServices](#togglelocationservices) |  |
-|	[ToggleWifi](#togglewifi) |  |
+|	[ShakeDevice](#shakedevice) | Perform a shake action on the device |
+|	[StartActivity](#startactivity) | Start an Android activity by providing package name and activity name |
+|	[ToggleAirplaneMode](#toggleairplanemode) | Toggle airplane mode on device |
+|	[ToggleLocationServices](#togglelocationservices) | Switch the state of the location service |
+|	[ToggleWifi](#togglewifi) | Switch the state of the WiFi service |
 
 
 
@@ -210,7 +210,7 @@ CloseApp()
 <a name="CreateAppiumDriver"></a>    
 #### CreateAppiumDriver
 
-
+Connects to a mobile target using given Appium uri and capabilities.
 
 ```javascript
 CreateAppiumDriver(uri, caps) 
@@ -221,10 +221,15 @@ CreateAppiumDriver(uri, caps)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| uri | string |	 |
-| caps | AppiumCapabilities |	 |
+| uri | string |	Appium server URL. |
+| caps | AppiumCapabilities |	DesiredCapabilities object with key/value pairs. |
 
 
+
+
+**Returns:**
+
+Driver object.
 
 
 
@@ -361,7 +366,7 @@ FindElementByAccessibilityId(selector)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector | string |	 |
+| selector | string |	Element selector |
 
 
 
@@ -383,7 +388,7 @@ FindElementByAndroidUIAutomator(selector)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector | string |	 |
+| selector | string |	Element selector |
 
 
 
@@ -471,7 +476,7 @@ FindElementByIosUIAutomation(selector)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector | string |	 |
+| selector | string |	Element selector |
 
 
 
@@ -603,7 +608,7 @@ FindElementsByAccessibilityId(selector)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector | string |	 |
+| selector | string |	Element selector |
 
 
 
@@ -625,7 +630,7 @@ FindElementsByAndroidUIAutomator(selector)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector | string |	 |
+| selector | string |	Element selector |
 
 
 
@@ -713,7 +718,7 @@ FindElementsByIosUIAutomation(selector)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector | string |	 |
+| selector | string |	Element selector |
 
 
 
@@ -1064,10 +1069,10 @@ GetWindowHandles()
 <a name="HideKeyboard"></a>    
 #### HideKeyboard
 
-
+Hide soft keyboard
 
 ```javascript
-HideKeyboard(key, key) 
+HideKeyboard(strategy, key) 
 ```
 
 
@@ -1075,8 +1080,8 @@ HideKeyboard(key, key)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| key |  |	 |
-| key |  |	 |
+| strategy | string |	Hide keyboard strategy (optional, UIAutomation only). Available strategies - 'press', 'pressKey', 'swipeDown', 'tapOut', 'tapOutside', 'default'. |
+| key | string |	Key<br>Optional. |
 
 
 
@@ -1087,7 +1092,7 @@ HideKeyboard(key, key)
 <a name="IgnoreUnimportantViews"></a>    
 #### IgnoreUnimportantViews
 
-
+This capability can speed up test execution, since Accessibility commands will run faster ignoring some elements. The ignored elements will not be findable.
 
 ```javascript
 IgnoreUnimportantViews(value) 
@@ -1098,7 +1103,7 @@ IgnoreUnimportantViews(value)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value |  |	 |
+| value | bool |	`true` to ignore. |
 
 
 
@@ -1109,7 +1114,7 @@ IgnoreUnimportantViews(value)
 <a name="InstallApp"></a>    
 #### InstallApp
 
-
+Install the given app onto the device.
 
 ```javascript
 InstallApp(appPath) 
@@ -1120,7 +1125,7 @@ InstallApp(appPath)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| appPath |  |	 |
+| appPath | string |	Path of the app being installed |
 
 
 
@@ -1131,7 +1136,7 @@ InstallApp(appPath)
 <a name="IsAppInstalled"></a>    
 #### IsAppInstalled
 
-
+Check whether the specified app is installed on the device.
 
 ```javascript
 IsAppInstalled(bundleId) 
@@ -1142,7 +1147,7 @@ IsAppInstalled(bundleId)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| bundleId |  |	 |
+| bundleId | string |	iOS bundleID or Android package name |
 
 
 
@@ -1153,7 +1158,7 @@ IsAppInstalled(bundleId)
 <a name="IsIMEActive"></a>    
 #### IsIMEActive
 
-
+Check if IME is active.
 
 ```javascript
 IsIMEActive() 
@@ -1168,7 +1173,7 @@ IsIMEActive()
 <a name="IsLocked"></a>    
 #### IsLocked
 
-
+Check whether the device is locked or not
 
 ```javascript
 IsLocked() 
@@ -1183,7 +1188,7 @@ IsLocked()
 <a name="LaunchApp"></a>    
 #### LaunchApp
 
-
+Launch the app-under-test on the device
 
 ```javascript
 LaunchApp() 
@@ -1198,7 +1203,7 @@ LaunchApp()
 <a name="OpenNotifications"></a>    
 #### OpenNotifications
 
-
+Open Android notifications (Emulator only)
 
 ```javascript
 OpenNotifications() 
@@ -1213,7 +1218,7 @@ OpenNotifications()
 <a name="PressKeyCode"></a>    
 #### PressKeyCode
 
-
+Press a particular key on Device
 
 ```javascript
 PressKeyCode(keyCode) 
@@ -1224,7 +1229,7 @@ PressKeyCode(keyCode)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| keyCode |  |	 |
+| keyCode | number |	Key code pressed on the device. |
 
 
 
@@ -1235,7 +1240,7 @@ PressKeyCode(keyCode)
 <a name="PullFile"></a>    
 #### PullFile
 
-
+Retrieve a file from the device's file system.
 
 ```javascript
 PullFile(pathOnDevice) 
@@ -1246,7 +1251,7 @@ PullFile(pathOnDevice)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| pathOnDevice |  |	 |
+| pathOnDevice | string |	Path on the device to pull file from |
 
 
 
@@ -1317,7 +1322,7 @@ ReconnectSession(autoCreate)
 <a name="RemoveApp"></a>    
 #### RemoveApp
 
-
+Remove an app from the device
 
 ```javascript
 RemoveApp(appId) 
@@ -1328,7 +1333,7 @@ RemoveApp(appId)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| appId |  |	 |
+| appId | string |	The iOS App ID |
 
 
 
@@ -1339,7 +1344,7 @@ RemoveApp(appId)
 <a name="ResetApp"></a>    
 #### ResetApp
 
-
+Reset the currently running app for this session
 
 ```javascript
 ResetApp() 
@@ -1380,7 +1385,7 @@ SetContext(name)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	 |
+| name | string |	The name of the context to which to change |
 
 
 
@@ -1435,7 +1440,7 @@ SetUrl(value)
 <a name="ShakeDevice"></a>    
 #### ShakeDevice
 
-
+Perform a shake action on the device
 
 ```javascript
 ShakeDevice() 
@@ -1450,10 +1455,10 @@ ShakeDevice()
 <a name="StartActivity"></a>    
 #### StartActivity
 
-
+Start an Android activity by providing package name and activity name
 
 ```javascript
-StartActivity(appActivity, appWaitPackage, appWaitActivity, appWaitActivity) 
+StartActivity(appPackage, appActivity, appWaitPackage, appWaitActivity) 
 ```
 
 
@@ -1461,10 +1466,10 @@ StartActivity(appActivity, appWaitPackage, appWaitActivity, appWaitActivity)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| appActivity |  |	 |
-| appWaitPackage |  |	 |
-| appWaitActivity |  |	 |
-| appWaitActivity |  |	 |
+| appPackage | string |	Name of the package |
+| appActivity | string |	Name of the activity |
+| appWaitPackage | string |	Automation will begin after this package starts |
+| appWaitActivity | string |	appWaitActivity |
 
 
 
@@ -1475,7 +1480,7 @@ StartActivity(appActivity, appWaitPackage, appWaitActivity, appWaitActivity)
 <a name="ToggleAirplaneMode"></a>    
 #### ToggleAirplaneMode
 
-
+Toggle airplane mode on device
 
 ```javascript
 ToggleAirplaneMode() 
@@ -1490,7 +1495,7 @@ ToggleAirplaneMode()
 <a name="ToggleLocationServices"></a>    
 #### ToggleLocationServices
 
-
+Switch the state of the location service
 
 ```javascript
 ToggleLocationServices() 
@@ -1505,7 +1510,7 @@ ToggleLocationServices()
 <a name="ToggleWifi"></a>    
 #### ToggleWifi
 
-
+Switch the state of the WiFi service
 
 ```javascript
 ToggleWifi() 

@@ -12,7 +12,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-**Behavior Pattern: ActiveXSftTreeBehavior**
+**Behavior Pattern: SftTreeBehavior**
 
 
 <!-- ============================== property summary ========================== -->

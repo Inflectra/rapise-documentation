@@ -12,7 +12,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-**Behavior Pattern: QtItemClickable**
+**Behavior Pattern: QtItemClickableBehavior**
 
 
 <!-- ============================== property summary ========================== -->

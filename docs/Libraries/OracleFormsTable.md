@@ -42,6 +42,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[DoGetValue](#dogetvalue) | Sets value of the table cell. |
+|	[DoPress](#dopress) | Click the cell. |
 |	[DoSetFocus](#dosetfocus) | Sets keyboard input focus to the table cell. |
 |	[DoSetValue](#dosetvalue) | Sets value of the table cell. |
 
@@ -160,6 +161,34 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.oracleformstable.dogetvalue"></a>
+
+<a name="DoPress"></a>    
+#### DoPress
+
+Click the cell.
+
+```javascript
+DoPress(row, col) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| row | number |	Table row index |
+| col | string \| number |	Table column caption or index |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+<a name="see.also.oracleformstable.dopress"></a>
 
 <a name="DoSetFocus"></a>    
 #### DoSetFocus

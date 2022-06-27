@@ -47,7 +47,9 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[FindElementsByTagName](#findelementsbytagname) | Finds a list of elements that match the DOM Tag supplied. |
 |	[FindElementsByXPath](#findelementsbyxpath) | Finds a list of elements that match the XPath supplied. |
 |	[GetAddressOfRemoteServer](#getaddressofremoteserver) |  |
+|	[GetBrowserVersion](#getbrowserversion) |  |
 |	[GetCurrentWindowHandle](#getcurrentwindowhandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
+|	[GetDebuggerAddress](#getdebuggeraddress) |  |
 |	[GetPageSource](#getpagesource) | Gets the source of the page last loaded by the browser. |
 |	[GetProfileCapability](#getprofilecapability) |  |
 |	[GetScreenshot](#getscreenshot) | Gets the screenshot of the page. |
@@ -56,6 +58,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[GetTitle](#gettitle) | Gets the title of the current browser window. |
 |	[GetUrl](#geturl) | Gets the URL the browser is currently displaying. |
 |	[GetWindowHandles](#getwindowhandles) | Gets the window handles of open browser windows. |
+|	[Navigate](#navigate) | Gets Navigation object. |
 |	[Quit](#quit) | Disconnects from the Browser. |
 |	[ReconnectSession](#reconnectsession) | Reads session information produced by SaveSession and connects to the mobile target. |
 |	[SaveSession](#savesession) | Saves session information for use by ReconnectSession. |
@@ -172,7 +175,7 @@ WebDriver object.
 Connects to active Selenium session with given URL and Id.
 
 ```javascript
-CreateDriverForSession(addressOfRemoteServer, sessionId) 
+CreateDriverForSession(addressOfRemoteServer, sessionId, driverServiceProcessId, debuggerAddress, browserVersion) 
 ```
 
 
@@ -182,6 +185,9 @@ CreateDriverForSession(addressOfRemoteServer, sessionId)
 | ---------- | -------- | --------------- |
 | addressOfRemoteServer |  |	Selenium server URL. |
 | sessionId |  |	Id of the session to connect. |
+| driverServiceProcessId |  |	Process id for the driver executable. |
+| debuggerAddress |  |	Debugger address for DevTools connection. |
+| browserVersion |  |	Browser version for DevTools connection. |
 
 
 
@@ -731,6 +737,26 @@ URL of the remote Selenium server.
 
 <a name="see.also.webdriver.getaddressofremoteserver"></a>
 
+<a name="GetBrowserVersion"></a>    
+#### GetBrowserVersion
+
+
+
+```javascript
+GetBrowserVersion() 
+```
+
+
+
+
+**Returns:**
+
+browser version of the remote Selenium server.
+
+
+
+<a name="see.also.webdriver.getbrowserversion"></a>
+
 <a name="GetCurrentWindowHandle"></a>    
 #### GetCurrentWindowHandle
 
@@ -745,6 +771,26 @@ GetCurrentWindowHandle()
 
 
 <a name="see.also.webdriver.getcurrentwindowhandle"></a>
+
+<a name="GetDebuggerAddress"></a>    
+#### GetDebuggerAddress
+
+
+
+```javascript
+GetDebuggerAddress() 
+```
+
+
+
+
+**Returns:**
+
+debugger address of the remote Selenium server.
+
+
+
+<a name="see.also.webdriver.getdebuggeraddress"></a>
 
 <a name="GetPageSource"></a>    
 #### GetPageSource
@@ -877,6 +923,21 @@ GetWindowHandles()
 
 
 <a name="see.also.webdriver.getwindowhandles"></a>
+
+<a name="Navigate"></a>    
+#### Navigate
+
+Gets Navigation object.
+
+```javascript
+Navigate() 
+```
+
+
+
+
+
+<a name="see.also.webdriver.navigate"></a>
 
 <a name="Quit"></a>    
 #### Quit

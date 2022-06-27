@@ -20,6 +20,7 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
+|	[_DoLoadObjects](#_doloadobjects) |  |
 |	[DoAnalogPlay](#doanalogplay) | Performs Analog Playback of events recorded in a file. |
 |	[DoAppActivate](#doappactivate) | Activates window with the specified title. |
 |	[DoClick](#doclick) | Performs mouse click at the current position. |
@@ -67,6 +68,8 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[SetConfigPath](#setconfigpath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
 |	[SetFileAsByteArray](#setfileasbytearray) | Creates or rewrites file and fills with contents of the provided byte array. |
 |	[SetProperty](#setproperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
+|	[SetWindowPosition](#setwindowposition) | Change position of the window with the specified title (and class, if specified). |
+|	[SetWindowSize](#setwindowsize) | Change size of the window with the specified title (and class, if specified). |
 
 
 
@@ -78,6 +81,30 @@ Global object. Use it to perform actions not related to a particular object. You
 	
 ### Action Detail
 		
+<a name="_DoLoadObjects"></a>    
+#### _DoLoadObjects
+
+
+
+```javascript
+_DoLoadObjects(objectsFilePath, checkDuplicates, addToMap) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| objectsFilePath | string |	 |
+| checkDuplicates | bool |	 |
+| addToMap | bool |	 |
+
+
+
+
+
+<a name="see.also.global._doloadobjects"></a>
+
 <a name="DoAnalogPlay"></a>    
 #### DoAnalogPlay
 
@@ -1387,6 +1414,56 @@ boolean: 'true' if property value set successfully, 'false' otherwise.
 
 
 <a name="see.also.global.setproperty"></a>
+
+<a name="SetWindowPosition"></a>    
+#### SetWindowPosition
+
+Change position of the window with the specified title (and class, if specified).
+
+```javascript
+SetWindowPosition(x, y, windowTitle, windowClass) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |	Position left offset in pixels. |
+| y | number |	Position top offset in pixels. |
+| windowTitle | string |	String or regular expression to match window title. |
+| windowClass | string |	String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
+
+
+
+
+
+<a name="see.also.global.setwindowposition"></a>
+
+<a name="SetWindowSize"></a>    
+#### SetWindowSize
+
+Change size of the window with the specified title (and class, if specified).
+
+```javascript
+SetWindowSize(width, height, windowTitle, windowClass) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| width | number |	New width in pixels. |
+| height | number |	New height in pixels. |
+| windowTitle | string |	String or regular expression to match window title. |
+| windowClass | string |	String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
+
+
+
+
+
+<a name="see.also.global.setwindowsize"></a>
 
 	
 
