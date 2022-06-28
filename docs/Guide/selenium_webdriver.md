@@ -1,16 +1,31 @@
 # Selenium WebDriver
 
 When developing and testing a web application you naturally need to test it with [different web browsers](cross_browser_testing.md) and
-multiple version of each web browser. With Rapise [natively](browser_settings.md) you can record a test script using one browser and then play it back using **Mozilla Firefox, Google Chrome or Microsoft Internet Explorer**.
+multiple version of each web browser. With Rapise [natively](browser_settings.md) you can record a test script using one browser and then play it back using **Google Chrome, Microsoft Edge, Mozilla Firefox or Microsoft Internet Explorer**.
 
 In addition, you can use Rapise with the open-source **Selenium WebDriver framework** to play back the same tests against other browsers
-such as **Apple Safari and Opera** (as well as IE, Firefox and Chrome). You can also use Rapise to write [native Selenium code](using_native_selenium_code.md) for cases where you want to use existing Selenium WebDriver logic.
+such as **Apple Safari and Opera** (as well as Chrome, Edge, Firefox, IE). You can also use Rapise to write [native Selenium code](using_native_selenium_code.md) for cases where you want to use existing Selenium WebDriver logic.
 
 ## Playing & Recording Tests
 
 Once you have [installed and configured the integration between Rapise and Selenium](setting_up_selenium.md), we shall discuss how to use Selenium with Rapise to record and play tests.
 
-Now one of the important points is that there are some limitations as to the operations that can be performed using Selenium-based web browsers as opposed to the native browsers supported by Rapise:
+Now one of the important points is that there are some limitations as to the operations that can be performed using Selenium-based web browsers as opposed to the native browsers supported by Rapise.
+
+### Rapise 7.3+
+
+In Rapise 7.3 we introduced new Selenium-based recorder. Read more about it in this [blog post](https://www.inflectra.com/Ideas/Entry/spotlight-rapise-selenium-based-recording-chrome-1348.aspx).
+
+**Feature**| **Rapise Native Browser**| **Selenium Browser**
+:--        |:--                       |:--
+Learn HTML Objects| Yes| **Chrome, Edge or WebSpy for any browser**
+Record HTML Events| Yes| **Chrome, Edge**
+Playback HTML Events| Yes| Yes
+Web Spy| Yes| Yes
+Learn Java Applets| Yes| **No**
+Manual Testing| Yes| **No**
+
+### Legacy
 
 **Feature**| **Rapise Native Browser**| **Selenium Browser**
 :--        |:--                       |:--
@@ -22,7 +37,7 @@ Learn Java Applets| Yes| **No**
 Manual Testing| Yes| **No**
 
 So if you are planning on using Rapise to record a test script by clicking HTML objects and having Rapise create the script using the
-learned objects and adding the events (DoClick, SetText, etc.) then you will need to use one of the native browsers (Chrome, IE, Firefox) to create the test script. You can then playback the same test in either the native or Selenium browsers.
+learned objects and adding the events (DoClick, SetText, etc.) then you will need to use one of the native browsers (Chrome, IE, Firefox) or Selenium browsers (Chrome, Edge - requires Rapise 7.3+) to create the test script. You can then playback the same test in either the native or Selenium browsers.
 
 If you are planning on using Rapise to learn objects using the Web Spy, and then create the test script from those objects by either dragging the object methods and properties from the Object Tree into the test script or just using Intellisense to type the methods (DoClick, SetText, etc.) then you can use either a native or Selenium web browser just as easily.
 
@@ -35,7 +50,7 @@ in the main menu select `Settings > Selenium`. It will bring up the [Selenium pr
 
 ![clip0016](./img/selenium_webdriver2.png)
 
-By default there is one profile for each of the Selenium WebDriver supported web browsers (Chrome, Firefox, Internet Explorer, Opera,
+By default there is one profile for each of the Selenium WebDriver supported web browsers (Chrome, Edge, Firefox, Internet Explorer, Opera,
 Safari). However you can clone and change the profiles if you want to have different versions of the browsers (e.g. a local instance of
 Firefox and one running on a remote Selenium server).
 
@@ -43,7 +58,17 @@ Most users will only need to change the **Uri** field of the Safari web browser 
 
 ## Recording using Selenium
 
-To start [recording](recording.md) a web testing using a Selenium WebDriver based browser, make sure you change the test’s web browser parameter to one of the Selenium profiles:
+### Rapise 7.3+
+
+Select Chrome-based or Edge-based Selenium profile.
+
+![clip0017](./img/selenium_webdriver3.png)
+
+Then click `Record` button and do the recording like you do it with [native browsers](browser_settings.md).
+
+### Legacy
+
+To start [recording](recording.md) a web test using a Selenium WebDriver based browser, make sure you change the test’s web browser parameter to one of the Selenium profiles:
 
 ![clip0017](./img/selenium_webdriver3.png)
 
@@ -69,7 +94,7 @@ When you choose to Learn an object in the DOM tree it will be displayed in the [
 Objects Learned using a Selenium profile will be added to the Rapise [Object Tree](object_tree.md) in the usual way and as is typical with [Learning](learn_object.md), you have the option to specify an Action in the Recording Activity Grid (e.g. change
 Learn to Click) in which case test script code is also generated.
 
-**Tip:** *Due to the inherent limitations in recording using a Selenium browser profile (vs. a native browser profile) most users will record their scripts using a native browser and then use Selenium primarily for debugging using the Web Spy and playback.*
+**Tip (applies to Rapise 7.2 and older versions):** *Due to the inherent limitations in recording using a Selenium browser profile (vs. a native browser profile) most users will record their scripts using a native browser and then use Selenium primarily for debugging using the Web Spy and playback.*
 
 ## Playback using Selenium
 
@@ -81,8 +106,32 @@ Then click the `Play` button on the main toolbar. The test will now start [execu
 
 ![clip0022](./img/selenium_webdriver8.png)
 
+## Shadow DOM
+
+Since Rapise 7.3 it is possible to view Shadow DOM elements in the [Web Spy](web_spy.md) (works with Selenium Browsers only).  
+
+![Shadow DOM](./img/shadow_dom_webspy.png)
+
+Shadow root elements are marked with the bold label **Shadow Root**. Use the Web Spy to build a locator for Shadow DOM element and Learn it to add into the object repository.
+
+Locator for a Shadow DOM element has two parts separated by `@#@` delimiter. First part (can be XPATH or CSS) should point to the Shadow Root in the Light DOM. Second part (always CSS) should point to a child element of the Shadow Root. In the case of nested Shadow DOMs there will be multiple `@#@` delimiters.
+
+Example of a locator:
+
+*automatically built by WebSpy*
+```
+/html/body[1]/section[1]/div/guid-generator[1]@#@css=input:first-of-type
+```
+*after manual editing*
+```
+//guid-generator@#@css=input
+```
+
+Find the example of a simple page with Shadow DOM on [UI Testing Playground](http://uitestingplayground.com/shadowdom).
+
 ## See Also
 
+- [Selenium-based Recorder](https://www.inflectra.com/Ideas/Entry/spotlight-rapise-selenium-based-recording-chrome-1348.aspx)
 - [Setting Up Selenium](setting_up_selenium.md)
 - [Using Native Selenium Code](using_native_selenium_code.md)
 - [Reconnect WebDriver Session](selenium_reconnect.md)

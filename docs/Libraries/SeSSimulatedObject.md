@@ -518,7 +518,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Moves mouse cursor to a location relative to this object position.
 
 ```javascript
-DoMouseMove(x, y) 
+DoMouseMove(x, y, duration) 
 ```
 
 
@@ -528,6 +528,7 @@ DoMouseMove(x, y)
 | ---------- | -------- | --------------- |
 | x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
 | y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height (requires Rapise 6.5+, also requires native events mode in Web tests).<br>Optional. |
+| duration | number |	Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: "0". |
 
 
 

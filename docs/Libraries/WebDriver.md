@@ -58,7 +58,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[GetTitle](#gettitle) | Gets the title of the current browser window. |
 |	[GetUrl](#geturl) | Gets the URL the browser is currently displaying. |
 |	[GetWindowHandles](#getwindowhandles) | Gets the window handles of open browser windows. |
-|	[Navigate](#navigate) | Gets Navigation object. |
+|	[Navigate](#navigate) | Gets Navigation object with the following actions: Back, Forward, Refresh, GotToUrl(url). |
 |	[Quit](#quit) | Disconnects from the Browser. |
 |	[ReconnectSession](#reconnectsession) | Reads session information produced by SaveSession and connects to the mobile target. |
 |	[SaveSession](#savesession) | Saves session information for use by ReconnectSession. |
@@ -927,7 +927,13 @@ GetWindowHandles()
 <a name="Navigate"></a>    
 #### Navigate
 
-Gets Navigation object.
+Gets Navigation object with the following actions: Back, Forward, Refresh, GotToUrl(url).
+
+Example:
+
+```javascript
+WebDriver.Navigate().Back();
+```
 
 ```javascript
 Navigate() 

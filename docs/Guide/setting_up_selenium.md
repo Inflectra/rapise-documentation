@@ -2,10 +2,10 @@
 
 This section describes the process for setting up Rapise to work with [Selenium](selenium_webdriver.md). Since Rapise is a Windows® application, you can use a single computer running Rapise to use the following web browsers:
 
-- Internet Explorer
 - Google Chrome
-- Mozilla Firefox
 - Microsoft Edge
+- Internet Explorer
+- Mozilla Firefox
 
 However because Safari only runs on Apple Mac computers, you will need to use two computers (a Mac running Safari) and a PC running Rapise to test using the Apple Safari web browser:
 
@@ -15,16 +15,31 @@ However because Safari only runs on Apple Mac computers, you will need to use tw
 
 Once you have installed Rapise on your local computer, you need to perform the following steps to configure each of the web browsers to use Selenium and Rapise:
 
-### Rapise 7.2+
+### Rapise 7.3+
 
-This method is applicable to all browsers except Safari. 
+The process of configuring Rapise for interaction with browsers via Selenium WebDriver is now fully automatic.
+
+Rapise downloads WebDrier executables (chromedriver.exe, geckodriver.exe, etc.) when needed, it automatically detects version of required driver executable both for standalone browsers and embedded ones (e.g. Chrome in Microsoft Teams, Skype, Microsoft Unified Service Desk, etc.). Every downloaded driver executable is saved with version information in its name. Rapise automatically switches executables based on the executed test.
+
+Here is an example of
+
+```
+c:\ProgramData\Inflectra\Rapise\SeleniumDrivers 
+```
+
+folder on a machine with Rapise:
+
+![SeleniumDrivers folder](./img/selenium_drivers_folder.png)
+### Rapise 7.2
+
+This method is applicable to all browsers except Safari.
 
 1. Open [Selenium Settings Dialog](selenium_settings_dialog.md)
 2. Select the profile you need
 3. Configure profile settings
 4. Press `Test` button on the toolbar
 
-If Selenium driver for selected browser is not installed yet or it is not compatible with the current version of the browser then Rapise will ask you a question. If your answer is `Yes` then Rapise will download the driver executable and place it into 
+If Selenium driver for selected browser is not installed yet or it is not compatible with the current version of the browser then Rapise will ask you a question. If your answer is `Yes` then Rapise will download the driver executable and place it into
 
 ```
 c:\ProgramData\Inflectra\Rapise\SeleniumDrivers 

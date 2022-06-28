@@ -92,6 +92,45 @@ If a Test Set is configured to run same Test Cases several times (each time with
 
 If there are more than one input parameter - it is possible to select the one you need from the dropdown. Clicking on a test case reveals the history of test runs for it (clickable).
 
+### Test Set Execution Plan
+
+Since Rapise 7.3 you may view an execution plan for any test set. Navigate to Test Sets page in the dashboard, find the test set you need, expand Action menu for it (last column) and choose `Show Execution Plan...` menu item. Rapise will open a dialog with the execution plan for selected test set. In the execution plan you may see:
+
+- Sequence of execution of test cases included into the test set
+- Parameter values that will be passed to a test case by RapiseLauncher (all columns to the right of `Test Case` column)
+- [Parallelism](#parallel-execution) level:
+    - Sequential - all test cases are executed sequentially, all [configurations](#input-data-table) are executed sequentially too.
+    - Parallel - all test cases are executed in parallel for each configuration, [configurations](#input-data-table) are executed sequentially. In this case second column || is colored with green.
+    - Parallel configurations - all test cases and [configurations](#input-data-table) are executed in parallel. In this case first column ||| is colored with green.
+
+![Execution Plan](./img/execution_plan.png)
+
+### CSV Editor
+
+Since Rapise 7.3 you may use convenient CSV editor to create and change Test Set attachments, especially those used as [Input Data Table](#input-data-table).
+
+![CSV Editor](./img/csv_editor.png)
+
+To view a CSV attachment there is no need to open it, just place mouse pointer over the attachment name:
+
+![CSV Tooltip](./img/csv_tooltip.png)
+
+### Git Credentials Storage
+
+Since Rapise 7.3 it is possible to share Git credentials between test sets. If you used Rapise, SpiraTest and Git together then you know that it was necessary to provide Git credentials for each test set. Now you can create Git credentials records via the dashboard and reference them in test sets.
+
+On the main dashboard page find `Git Credentials` button at the bottom and click on it. You will see the dialog with configured Git credentials. If you are doing it for the first time - the dialog will be empty.
+
+![Git Credentials Dialog](./img/git_credentials_dialog.png)
+
+In the dialog one can add, edit and remove credentials. A set of credentials looks like this:
+
+![Git Credentials](./img/git_credentials_sample.png)
+
+When credentials are tested and saved it is time to navigate to a test set and choose the credentials in the `Git Credentials` dropdown.
+
+![Git Credentials Assignment](./img/git_credentials_assign.png)
+
 ## How to Open
 
 To open the dashboard use [main menu](/Guide/menu_and_toolbars/#view) View > Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the [Rapise Settings](/Guide/options_dialog/#settings) dialog and set `ShowDashboardOnStartup` flag to `true`.
@@ -198,6 +237,7 @@ Some features of the dashboard require additional custom properties to exist in 
 	- Record videos (boolean, default is false)
 	- Verbose level (integer, default is 1)
 	- [GitUrl, GitUser, GitPassword, GitBranch, GitRoot](/Guide/git_integration/#using-spira-custom-properties) (string, empty by default)
+	- [Git Credentials](#git-credentials-storage) (dropdown value choice, requires Rapise 7.3)
 
 Clicking the button more than once is safe. If a custom property exists - Rapise won't create a duplicate. To create the custom properties you will need to enter administrator credentials (user name and API Key).
 
@@ -274,6 +314,7 @@ Action menu for a test set allows to
 1. Immediately `Execute` the test set on the local host.
 2. `Execute` the test set on a selected Automation Host. It will run as soon as RapiseLauncher on that host is ready.
 3. `Rerun` just failed test cases on a selected Automation Host.
+4. [Show Execution Plan](#test-set-execution-plan) for the test set.
 
 !!! note
 	For execution of a test set on a selected automation host (#2,#3) Rapise will use a special test set with the name of the automation host.
