@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_2/" class="md-tabs__link">
+      <a href="../../New/7_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4587,8 +4587,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getbrowserversion" class="md-nav__link">
+    GetBrowserVersion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getcurrentwindowhandle" class="md-nav__link">
     GetCurrentWindowHandle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdebuggeraddress" class="md-nav__link">
+    GetDebuggerAddress
   </a>
   
 </li>
@@ -4645,6 +4659,13 @@
           <li class="md-nav__item">
   <a href="#getwindowhandles" class="md-nav__link">
     GetWindowHandles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigate" class="md-nav__link">
+    Navigate
   </a>
   
 </li>
@@ -6933,13 +6954,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-8" type="checkbox" id="nav-4-4-8" >
       
       <label class="md-nav__link" for="nav-4-4-8">
-        Advanced Acessibility
+        Advanced Accessibility
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Advanced Acessibility" data-md-level="3">
+      <nav class="md-nav" aria-label="Advanced Accessibility" data-md-level="3">
         <label class="md-nav__title" for="nav-4-4-8">
           <span class="md-nav__icon md-icon"></span>
-          Advanced Acessibility
+          Advanced Accessibility
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6950,7 +6971,7 @@
   
     <li class="md-nav__item">
       <a href="../ses_lib_advaac/" class="md-nav__link">
-        Advanced Acessibility Objects
+        Advanced Accessibility Objects
       </a>
     </li>
   
@@ -8838,8 +8859,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getbrowserversion" class="md-nav__link">
+    GetBrowserVersion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getcurrentwindowhandle" class="md-nav__link">
     GetCurrentWindowHandle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdebuggeraddress" class="md-nav__link">
+    GetDebuggerAddress
   </a>
   
 </li>
@@ -8896,6 +8931,13 @@
           <li class="md-nav__item">
   <a href="#getwindowhandles" class="md-nav__link">
     GetWindowHandles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigate" class="md-nav__link">
+    Navigate
   </a>
   
 </li>
@@ -11544,6 +11586,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_3/" class="md-nav__link">
+        Release Notes for 7.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_2/" class="md-nav__link">
         Release Notes for 7.2
       </a>
@@ -11894,8 +11948,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getbrowserversion" class="md-nav__link">
+    GetBrowserVersion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getcurrentwindowhandle" class="md-nav__link">
     GetCurrentWindowHandle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdebuggeraddress" class="md-nav__link">
+    GetDebuggerAddress
   </a>
   
 </li>
@@ -11952,6 +12020,13 @@
           <li class="md-nav__item">
   <a href="#getwindowhandles" class="md-nav__link">
     GetWindowHandles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigate" class="md-nav__link">
+    Navigate
   </a>
   
 </li>
@@ -12182,8 +12257,16 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="#getbrowserversion">GetBrowserVersion</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="#getcurrentwindowhandle">GetCurrentWindowHandle</a></td>
 <td>Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance.</td>
+</tr>
+<tr>
+<td><a href="#getdebuggeraddress">GetDebuggerAddress</a></td>
+<td></td>
 </tr>
 <tr>
 <td><a href="#getpagesource">GetPageSource</a></td>
@@ -12216,6 +12299,10 @@
 <tr>
 <td><a href="#getwindowhandles">GetWindowHandles</a></td>
 <td>Gets the window handles of open browser windows.</td>
+</tr>
+<tr>
+<td><a href="#navigate">Navigate</a></td>
+<td>Gets Navigation object with the following actions: Back, Forward, Refresh, GotToUrl(url).</td>
 </tr>
 <tr>
 <td><a href="#quit">Quit</a></td>
@@ -12324,7 +12411,7 @@
 <p><a name="CreateDriverForSession"></a>    </p>
 <h4 id="createdriverforsession">CreateDriverForSession<a class="headerlink" href="#createdriverforsession" title="Permanent link">&para;</a></h4>
 <p>Connects to active Selenium session with given URL and Id.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">CreateDriverForSession</span><span class="p">(</span><span class="nx">addressOfRemoteServer</span><span class="p">,</span> <span class="nx">sessionId</span><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">CreateDriverForSession</span><span class="p">(</span><span class="nx">addressOfRemoteServer</span><span class="p">,</span> <span class="nx">sessionId</span><span class="p">,</span> <span class="nx">driverServiceProcessId</span><span class="p">,</span> <span class="nx">debuggerAddress</span><span class="p">,</span> <span class="nx">browserVersion</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12345,6 +12432,21 @@
 <td>sessionId</td>
 <td></td>
 <td>Id of the session to connect.</td>
+</tr>
+<tr>
+<td>driverServiceProcessId</td>
+<td></td>
+<td>Process id for the driver executable.</td>
+</tr>
+<tr>
+<td>debuggerAddress</td>
+<td></td>
+<td>Debugger address for DevTools connection.</td>
+</tr>
+<tr>
+<td>browserVersion</td>
+<td></td>
+<td>Browser version for DevTools connection.</td>
 </tr>
 </tbody>
 </table>
@@ -12825,12 +12927,26 @@
 <p><strong>Returns:</strong></p>
 <p>URL of the remote Selenium server.</p>
 <p><a name="see.also.webdriver.getaddressofremoteserver"></a></p>
+<p><a name="GetBrowserVersion"></a>    </p>
+<h4 id="getbrowserversion">GetBrowserVersion<a class="headerlink" href="#getbrowserversion" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nx">GetBrowserVersion</span><span class="p">()</span> 
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>browser version of the remote Selenium server.</p>
+<p><a name="see.also.webdriver.getbrowserversion"></a></p>
 <p><a name="GetCurrentWindowHandle"></a>    </p>
 <h4 id="getcurrentwindowhandle">GetCurrentWindowHandle<a class="headerlink" href="#getcurrentwindowhandle" title="Permanent link">&para;</a></h4>
 <p>Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">GetCurrentWindowHandle</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.webdriver.getcurrentwindowhandle"></a></p>
+<p><a name="GetDebuggerAddress"></a>    </p>
+<h4 id="getdebuggeraddress">GetDebuggerAddress<a class="headerlink" href="#getdebuggeraddress" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nx">GetDebuggerAddress</span><span class="p">()</span> 
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>debugger address of the remote Selenium server.</p>
+<p><a name="see.also.webdriver.getdebuggeraddress"></a></p>
 <p><a name="GetPageSource"></a>    </p>
 <h4 id="getpagesource">GetPageSource<a class="headerlink" href="#getpagesource" title="Permanent link">&para;</a></h4>
 <p>Gets the source of the page last loaded by the browser.</p>
@@ -12895,6 +13011,15 @@
 <div class="highlight"><pre><span></span><code><span class="nx">GetWindowHandles</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.webdriver.getwindowhandles"></a></p>
+<p><a name="Navigate"></a>    </p>
+<h4 id="navigate">Navigate<a class="headerlink" href="#navigate" title="Permanent link">&para;</a></h4>
+<p>Gets Navigation object with the following actions: Back, Forward, Refresh, GotToUrl(url).</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Navigate</span><span class="p">().</span><span class="nx">Back</span><span class="p">();</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">Navigate</span><span class="p">()</span> 
+</code></pre></div>
+<p><a name="see.also.webdriver.navigate"></a></p>
 <p><a name="Quit"></a>    </p>
 <h4 id="quit">Quit<a class="headerlink" href="#quit" title="Permanent link">&para;</a></h4>
 <p>Disconnects from the Browser.</p>

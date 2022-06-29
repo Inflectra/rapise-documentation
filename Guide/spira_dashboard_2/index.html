@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_2/" class="md-tabs__link">
+      <a href="../../New/7_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -2177,6 +2177,27 @@
           <li class="md-nav__item">
   <a href="#test-matrix" class="md-nav__link">
     Test Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-set-execution-plan" class="md-nav__link">
+    Test Set Execution Plan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv-editor" class="md-nav__link">
+    CSV Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-credentials-storage" class="md-nav__link">
+    Git Credentials Storage
   </a>
   
 </li>
@@ -6896,13 +6917,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-8" type="checkbox" id="nav-4-4-8" >
       
       <label class="md-nav__link" for="nav-4-4-8">
-        Advanced Acessibility
+        Advanced Accessibility
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Advanced Acessibility" data-md-level="3">
+      <nav class="md-nav" aria-label="Advanced Accessibility" data-md-level="3">
         <label class="md-nav__title" for="nav-4-4-8">
           <span class="md-nav__icon md-icon"></span>
-          Advanced Acessibility
+          Advanced Accessibility
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6913,7 +6934,7 @@
   
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_advaac/" class="md-nav__link">
-        Advanced Acessibility Objects
+        Advanced Accessibility Objects
       </a>
     </li>
   
@@ -10942,6 +10963,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#test-set-execution-plan" class="md-nav__link">
+    Test Set Execution Plan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv-editor" class="md-nav__link">
+    CSV Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-credentials-storage" class="md-nav__link">
+    Git Credentials Storage
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11470,6 +11512,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_3/" class="md-nav__link">
+        Release Notes for 7.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_2/" class="md-nav__link">
         Release Notes for 7.2
       </a>
@@ -11654,6 +11708,27 @@
           <li class="md-nav__item">
   <a href="#test-matrix" class="md-nav__link">
     Test Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-set-execution-plan" class="md-nav__link">
+    Test Set Execution Plan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv-editor" class="md-nav__link">
+    CSV Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-credentials-storage" class="md-nav__link">
+    Git Credentials Storage
   </a>
   
 </li>
@@ -12021,6 +12096,32 @@ borrower,borrower
 <p>If a Test Set is configured to run same Test Cases several times (each time with different input parameters) then one may view the Test Matrix based on produced Test Runs. Let's look at the example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. Browser type is specified via an input parameter (see Input Data Table section above for more details). Execution of the test set produces 4 x 2 = 10 test runs. After execution we find one of these test runs on the Test Runs page, right click it and choose <code>Test Matrix</code> menu item. Then we see the matrix:</p>
 <p><img alt="Test Matrix" src="../img/test_matrix.png" /></p>
 <p>If there are more than one input parameter - it is possible to select the one you need from the dropdown. Clicking on a test case reveals the history of test runs for it (clickable).</p>
+<h3 id="test-set-execution-plan">Test Set Execution Plan<a class="headerlink" href="#test-set-execution-plan" title="Permanent link">&para;</a></h3>
+<p>Since Rapise 7.3 you may view an execution plan for any test set. Navigate to Test Sets page in the dashboard, find the test set you need, expand Action menu for it (last column) and choose <code>Show Execution Plan...</code> menu item. Rapise will open a dialog with the execution plan for selected test set. In the execution plan you may see:</p>
+<ul>
+<li>Sequence of execution of test cases included into the test set</li>
+<li>Parameter values that will be passed to a test case by RapiseLauncher (all columns to the right of <code>Test Case</code> column)</li>
+<li><a href="#parallel-execution">Parallelism</a> level:<ul>
+<li>Sequential - all test cases are executed sequentially, all <a href="#input-data-table">configurations</a> are executed sequentially too.</li>
+<li>Parallel - all test cases are executed in parallel for each configuration, <a href="#input-data-table">configurations</a> are executed sequentially. In this case second column || is colored with green.</li>
+<li>Parallel configurations - all test cases and <a href="#input-data-table">configurations</a> are executed in parallel. In this case first column ||| is colored with green.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Execution Plan" src="../img/execution_plan.png" /></p>
+<h3 id="csv-editor">CSV Editor<a class="headerlink" href="#csv-editor" title="Permanent link">&para;</a></h3>
+<p>Since Rapise 7.3 you may use convenient CSV editor to create and change Test Set attachments, especially those used as <a href="#input-data-table">Input Data Table</a>.</p>
+<p><img alt="CSV Editor" src="../img/csv_editor.png" /></p>
+<p>To view a CSV attachment there is no need to open it, just place mouse pointer over the attachment name:</p>
+<p><img alt="CSV Tooltip" src="../img/csv_tooltip.png" /></p>
+<h3 id="git-credentials-storage">Git Credentials Storage<a class="headerlink" href="#git-credentials-storage" title="Permanent link">&para;</a></h3>
+<p>Since Rapise 7.3 it is possible to share Git credentials between test sets. If you used Rapise, SpiraTest and Git together then you know that it was necessary to provide Git credentials for each test set. Now you can create Git credentials records via the dashboard and reference them in test sets.</p>
+<p>On the main dashboard page find <code>Git Credentials</code> button at the bottom and click on it. You will see the dialog with configured Git credentials. If you are doing it for the first time - the dialog will be empty.</p>
+<p><img alt="Git Credentials Dialog" src="../img/git_credentials_dialog.png" /></p>
+<p>In the dialog one can add, edit and remove credentials. A set of credentials looks like this:</p>
+<p><img alt="Git Credentials" src="../img/git_credentials_sample.png" /></p>
+<p>When credentials are tested and saved it is time to navigate to a test set and choose the credentials in the <code>Git Credentials</code> dropdown.</p>
+<p><img alt="Git Credentials Assignment" src="../img/git_credentials_assign.png" /></p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
 <p>To open the dashboard use <a href="/Guide/menu_and_toolbars/#view">main menu</a> View &gt; Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the <a href="/Guide/options_dialog/#settings">Rapise Settings</a> dialog and set <code>ShowDashboardOnStartup</code> flag to <code>true</code>.</p>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
@@ -12101,6 +12202,7 @@ borrower,borrower
 <li>Record videos (boolean, default is false)</li>
 <li>Verbose level (integer, default is 1)</li>
 <li><a href="/Guide/git_integration/#using-spira-custom-properties">GitUrl, GitUser, GitPassword, GitBranch, GitRoot</a> (string, empty by default)</li>
+<li><a href="#git-credentials-storage">Git Credentials</a> (dropdown value choice, requires Rapise 7.3)</li>
 </ul>
 </li>
 </ul>
@@ -12141,6 +12243,9 @@ borrower,borrower
 <h4 id="browse-test-sets">Browse Test Sets<a class="headerlink" href="#browse-test-sets" title="Permanent link">&para;</a></h4>
 <p>In the test sets view one may see the tree of test sets for a project, discover when a test set was last executed and status of execution.</p>
 <p>Since Rapise 7.2 one may change global Test Set filter from <code>All</code> to <code>My Assigned</code>.</p>
+<p>Since Rapise 7.3 it is possible to change the way of calculating test set execution status. If you are using <a href="#automatic-rerun">rerun</a> features or include same test case multiple times into the same test set then it is recommended to set <code>Calculate Test Set Status from Test Runs</code> option:</p>
+<p><img alt="Calculate Test Set Status from Test Runs" src="../img/calculate_test_set_status_option.jpg" /></p>
+<p>If this option is not set then test set status is calculated based on the latest run for each included test case.</p>
 <h4 id="view-test-set-details">View Test Set Details<a class="headerlink" href="#view-test-set-details" title="Permanent link">&para;</a></h4>
 <p>Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
 <h5 id="add-test-cases">Add Test Cases<a class="headerlink" href="#add-test-cases" title="Permanent link">&para;</a></h5>
@@ -12159,6 +12264,7 @@ borrower,borrower
 <li>Immediately <code>Execute</code> the test set on the local host.</li>
 <li><code>Execute</code> the test set on a selected Automation Host. It will run as soon as RapiseLauncher on that host is ready.</li>
 <li><code>Rerun</code> just failed test cases on a selected Automation Host.</li>
+<li><a href="#test-set-execution-plan">Show Execution Plan</a> for the test set.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

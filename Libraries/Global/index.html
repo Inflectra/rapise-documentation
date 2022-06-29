@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_2/" class="md-tabs__link">
+      <a href="../../New/7_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4222,6 +4222,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#_doloadobjects" class="md-nav__link">
+    _DoLoadObjects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doanalogplay" class="md-nav__link">
     DoAnalogPlay
   </a>
@@ -4546,6 +4553,20 @@
           <li class="md-nav__item">
   <a href="#setproperty" class="md-nav__link">
     SetProperty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setwindowposition" class="md-nav__link">
+    SetWindowPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setwindowsize" class="md-nav__link">
+    SetWindowSize
   </a>
   
 </li>
@@ -6930,13 +6951,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-8" type="checkbox" id="nav-4-4-8" >
       
       <label class="md-nav__link" for="nav-4-4-8">
-        Advanced Acessibility
+        Advanced Accessibility
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Advanced Acessibility" data-md-level="3">
+      <nav class="md-nav" aria-label="Advanced Accessibility" data-md-level="3">
         <label class="md-nav__title" for="nav-4-4-8">
           <span class="md-nav__icon md-icon"></span>
-          Advanced Acessibility
+          Advanced Accessibility
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6947,7 +6968,7 @@
   
     <li class="md-nav__item">
       <a href="../ses_lib_advaac/" class="md-nav__link">
-        Advanced Acessibility Objects
+        Advanced Accessibility Objects
       </a>
     </li>
   
@@ -11150,6 +11171,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_3/" class="md-nav__link">
+        Release Notes for 7.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_2/" class="md-nav__link">
         Release Notes for 7.2
       </a>
@@ -11309,6 +11342,13 @@
   
     <nav class="md-nav" aria-label="Action Detail">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_doloadobjects" class="md-nav__link">
+    _DoLoadObjects
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#doanalogplay" class="md-nav__link">
@@ -11639,6 +11679,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#setwindowposition" class="md-nav__link">
+    SetWindowPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setwindowsize" class="md-nav__link">
+    SetWindowSize
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11673,6 +11727,10 @@ record or learn this object, it is always automatically available in any test.</
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="#_doloadobjects">_DoLoadObjects</a></td>
+<td></td>
+</tr>
 <tr>
 <td><a href="#doanalogplay">DoAnalogPlay</a></td>
 <td>Performs Analog Playback of events recorded in a file.</td>
@@ -11861,6 +11919,14 @@ record or learn this object, it is always automatically available in any test.</
 <td><a href="#setproperty">SetProperty</a></td>
 <td>Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise.</td>
 </tr>
+<tr>
+<td><a href="#setwindowposition">SetWindowPosition</a></td>
+<td>Change position of the window with the specified title (and class, if specified).</td>
+</tr>
+<tr>
+<td><a href="#setwindowsize">SetWindowSize</a></td>
+<td>Change size of the window with the specified title (and class, if specified).</td>
+</tr>
 </tbody>
 </table>
 <!-- ============================== property detail ========================== -->
@@ -11868,6 +11934,38 @@ record or learn this object, it is always automatically available in any test.</
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
+<p><a name="_DoLoadObjects"></a>    </p>
+<h4 id="_doloadobjects">_DoLoadObjects<a class="headerlink" href="#_doloadobjects" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nx">_DoLoadObjects</span><span class="p">(</span><span class="nx">objectsFilePath</span><span class="p">,</span> <span class="nx">checkDuplicates</span><span class="p">,</span> <span class="nx">addToMap</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectsFilePath</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>checkDuplicates</td>
+<td>bool</td>
+<td></td>
+</tr>
+<tr>
+<td>addToMap</td>
+<td>bool</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.global._doloadobjects"></a></p>
 <p><a name="DoAnalogPlay"></a>    </p>
 <h4 id="doanalogplay">DoAnalogPlay<a class="headerlink" href="#doanalogplay" title="Permanent link">&para;</a></h4>
 <p>Performs Analog Playback of events recorded in a file.</p>
@@ -13181,6 +13279,82 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if property value set successfully, 'false' otherwise.</p>
 <p><a name="see.also.global.setproperty"></a></p>
+<p><a name="SetWindowPosition"></a>    </p>
+<h4 id="setwindowposition">SetWindowPosition<a class="headerlink" href="#setwindowposition" title="Permanent link">&para;</a></h4>
+<p>Change position of the window with the specified title (and class, if specified).</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SetWindowPosition</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">windowTitle</span><span class="p">,</span> <span class="nx">windowClass</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>Position left offset in pixels.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Position top offset in pixels.</td>
+</tr>
+<tr>
+<td>windowTitle</td>
+<td>string</td>
+<td>String or regular expression to match window title.</td>
+</tr>
+<tr>
+<td>windowClass</td>
+<td>string</td>
+<td>String or regular expression to match window class.<br>Optional, Default: "regex:.*".</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.global.setwindowposition"></a></p>
+<p><a name="SetWindowSize"></a>    </p>
+<h4 id="setwindowsize">SetWindowSize<a class="headerlink" href="#setwindowsize" title="Permanent link">&para;</a></h4>
+<p>Change size of the window with the specified title (and class, if specified).</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SetWindowSize</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">windowTitle</span><span class="p">,</span> <span class="nx">windowClass</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>number</td>
+<td>New width in pixels.</td>
+</tr>
+<tr>
+<td>height</td>
+<td>number</td>
+<td>New height in pixels.</td>
+</tr>
+<tr>
+<td>windowTitle</td>
+<td>string</td>
+<td>String or regular expression to match window title.</td>
+</tr>
+<tr>
+<td>windowClass</td>
+<td>string</td>
+<td>String or regular expression to match window class.<br>Optional, Default: "regex:.*".</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.global.setwindowsize"></a></p>
                 
                   
                 

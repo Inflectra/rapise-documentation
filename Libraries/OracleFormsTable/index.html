@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_2/" class="md-tabs__link">
+      <a href="../../New/7_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -6550,13 +6550,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-8" type="checkbox" id="nav-4-4-8" >
       
       <label class="md-nav__link" for="nav-4-4-8">
-        Advanced Acessibility
+        Advanced Accessibility
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Advanced Acessibility" data-md-level="3">
+      <nav class="md-nav" aria-label="Advanced Accessibility" data-md-level="3">
         <label class="md-nav__title" for="nav-4-4-8">
           <span class="md-nav__icon md-icon"></span>
-          Advanced Acessibility
+          Advanced Accessibility
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6567,7 +6567,7 @@
   
     <li class="md-nav__item">
       <a href="../ses_lib_advaac/" class="md-nav__link">
-        Advanced Acessibility Objects
+        Advanced Accessibility Objects
       </a>
     </li>
   
@@ -7652,6 +7652,13 @@
           <li class="md-nav__item">
   <a href="#dogetvalue" class="md-nav__link">
     DoGetValue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dopress" class="md-nav__link">
+    DoPress
   </a>
   
 </li>
@@ -10892,6 +10899,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_3/" class="md-nav__link">
+        Release Notes for 7.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_2/" class="md-nav__link">
         Release Notes for 7.2
       </a>
@@ -11108,6 +11127,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dopress" class="md-nav__link">
+    DoPress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dosetfocus" class="md-nav__link">
     DoSetFocus
   </a>
@@ -11198,6 +11224,10 @@
 <tr>
 <td><a href="#dogetvalue">DoGetValue</a></td>
 <td>Sets value of the table cell.</td>
+</tr>
+<tr>
+<td><a href="#dopress">DoPress</a></td>
+<td>Click the cell.</td>
 </tr>
 <tr>
 <td><a href="#dosetfocus">DoSetFocus</a></td>
@@ -11304,6 +11334,36 @@
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
 <p><a name="see.also.oracleformstable.dogetvalue"></a></p>
+<p><a name="DoPress"></a>    </p>
+<h4 id="dopress">DoPress<a class="headerlink" href="#dopress" title="Permanent link">&para;</a></h4>
+<p>Click the cell.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPress</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row</td>
+<td>number</td>
+<td>Table row index</td>
+</tr>
+<tr>
+<td>col</td>
+<td>string | number</td>
+<td>Table column caption or index</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: 'true' if success, 'false' otherwise.</p>
+<p><a name="see.also.oracleformstable.dopress"></a></p>
 <p><a name="DoSetFocus"></a>    </p>
 <h4 id="dosetfocus">DoSetFocus<a class="headerlink" href="#dosetfocus" title="Permanent link">&para;</a></h4>
 <p>Sets keyboard input focus to the table cell.</p>

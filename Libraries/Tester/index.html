@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_2/" class="md-tabs__link">
+      <a href="../../New/7_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4559,6 +4559,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#blocktest" class="md-nav__link">
+    BlockTest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#capturedesktopimage" class="md-nav__link">
     CaptureDesktopImage
   </a>
@@ -7041,13 +7048,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-8" type="checkbox" id="nav-4-4-8" >
       
       <label class="md-nav__link" for="nav-4-4-8">
-        Advanced Acessibility
+        Advanced Accessibility
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Advanced Acessibility" data-md-level="3">
+      <nav class="md-nav" aria-label="Advanced Accessibility" data-md-level="3">
         <label class="md-nav__title" for="nav-4-4-8">
           <span class="md-nav__icon md-icon"></span>
-          Advanced Acessibility
+          Advanced Accessibility
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -7058,7 +7065,7 @@
   
     <li class="md-nav__item">
       <a href="../ses_lib_advaac/" class="md-nav__link">
-        Advanced Acessibility Objects
+        Advanced Accessibility Objects
       </a>
     </li>
   
@@ -11261,6 +11268,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_3/" class="md-nav__link">
+        Release Notes for 7.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_2/" class="md-nav__link">
         Release Notes for 7.2
       </a>
@@ -11598,6 +11617,13 @@
           <li class="md-nav__item">
   <a href="#begintest" class="md-nav__link">
     BeginTest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocktest" class="md-nav__link">
+    BlockTest
   </a>
   
 </li>
@@ -11999,6 +12025,10 @@ You do not need to record or learn this object, it is always automatically avail
 <td>Marks beginning of a test with a given name.</td>
 </tr>
 <tr>
+<td><a href="#blocktest">BlockTest</a></td>
+<td>Stops test execution and exits with Blocked status.</td>
+</tr>
+<tr>
 <td><a href="#capturedesktopimage">CaptureDesktopImage</a></td>
 <td>Captures screenshot of the desktop and adds it to the report.</td>
 </tr>
@@ -12398,7 +12428,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -12753,7 +12783,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -12793,7 +12823,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -12833,7 +12863,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -12873,7 +12903,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -12966,6 +12996,29 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tbody>
 </table>
 <p><a name="see.also.tester.begintest"></a></p>
+<p><a name="BlockTest"></a>    </p>
+<h4 id="blocktest">BlockTest<a class="headerlink" href="#blocktest" title="Permanent link">&para;</a></h4>
+<p>Stops test execution and exits with Blocked status.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">BlockTest</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Reason why the test is blocked.<br>Optional, Default: "Test execution blocked".</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.tester.blocktest"></a></p>
 <p><a name="CaptureDesktopImage"></a>    </p>
 <h4 id="capturedesktopimage">CaptureDesktopImage<a class="headerlink" href="#capturedesktopimage" title="Permanent link">&para;</a></h4>
 <p>Captures screenshot of the desktop and adds it to the report.</p>
@@ -13077,8 +13130,8 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 </tr>
 <tr>
 <td>mkPackageJson</td>
-<td>bool</td>
-<td></td>
+<td>string</td>
+<td>Generate package.json for the test<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -13112,7 +13165,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>internal</td>
 <td></td>
-<td></td>
+<td>For internal use<br>Optional, Default: "null".</td>
 </tr>
 </tbody>
 </table>
@@ -13135,7 +13188,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>paramName</td>
 <td>string</td>
-<td></td>
+<td>Parameter name</td>
 </tr>
 <tr>
 <td>defaultValue</td>
@@ -13655,7 +13708,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -14010,7 +14063,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -14050,7 +14103,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -14090,7 +14143,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>
@@ -14130,7 +14183,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <tr>
 <td>val</td>
 <td>object</td>
-<td></td>
+<td>Value to check.</td>
 </tr>
 <tr>
 <td>data</td>

@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_2/" class="md-tabs__link">
+      <a href="../../New/7_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -6548,13 +6548,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-8" type="checkbox" id="nav-4-4-8" >
       
       <label class="md-nav__link" for="nav-4-4-8">
-        Advanced Acessibility
+        Advanced Accessibility
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Advanced Acessibility" data-md-level="3">
+      <nav class="md-nav" aria-label="Advanced Accessibility" data-md-level="3">
         <label class="md-nav__title" for="nav-4-4-8">
           <span class="md-nav__icon md-icon"></span>
-          Advanced Acessibility
+          Advanced Accessibility
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6565,7 +6565,7 @@
   
     <li class="md-nav__item">
       <a href="../ses_lib_advaac/" class="md-nav__link">
-        Advanced Acessibility Objects
+        Advanced Accessibility Objects
       </a>
     </li>
   
@@ -11327,6 +11327,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_3/" class="md-nav__link">
+        Release Notes for 7.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_2/" class="md-nav__link">
         Release Notes for 7.2
       </a>
@@ -12051,7 +12063,7 @@
 </tr>
 <tr>
 <td><a href="#createappiumdriver">CreateAppiumDriver</a></td>
-<td></td>
+<td>Connects to a mobile target using given Appium uri and capabilities.</td>
 </tr>
 <tr>
 <td><a href="#createdesiredcapabilities">CreateDesiredCapabilities</a></td>
@@ -12219,43 +12231,43 @@
 </tr>
 <tr>
 <td><a href="#hidekeyboard">HideKeyboard</a></td>
-<td></td>
+<td>Hide soft keyboard</td>
 </tr>
 <tr>
 <td><a href="#ignoreunimportantviews">IgnoreUnimportantViews</a></td>
-<td></td>
+<td>This capability can speed up test execution, since Accessibility commands will run faster ignoring some elements.</td>
 </tr>
 <tr>
 <td><a href="#installapp">InstallApp</a></td>
-<td></td>
+<td>Install the given app onto the device.</td>
 </tr>
 <tr>
 <td><a href="#isappinstalled">IsAppInstalled</a></td>
-<td></td>
+<td>Check whether the specified app is installed on the device.</td>
 </tr>
 <tr>
 <td><a href="#isimeactive">IsIMEActive</a></td>
-<td></td>
+<td>Check if IME is active.</td>
 </tr>
 <tr>
 <td><a href="#islocked">IsLocked</a></td>
-<td></td>
+<td>Check whether the device is locked or not</td>
 </tr>
 <tr>
 <td><a href="#launchapp">LaunchApp</a></td>
-<td></td>
+<td>Launch the app-under-test on the device</td>
 </tr>
 <tr>
 <td><a href="#opennotifications">OpenNotifications</a></td>
-<td></td>
+<td>Open Android notifications (Emulator only)</td>
 </tr>
 <tr>
 <td><a href="#presskeycode">PressKeyCode</a></td>
-<td></td>
+<td>Press a particular key on Device</td>
 </tr>
 <tr>
 <td><a href="#pullfile">PullFile</a></td>
-<td></td>
+<td>Retrieve a file from the device's file system.</td>
 </tr>
 <tr>
 <td><a href="#pushfile">PushFile</a></td>
@@ -12271,11 +12283,11 @@
 </tr>
 <tr>
 <td><a href="#removeapp">RemoveApp</a></td>
-<td></td>
+<td>Remove an app from the device</td>
 </tr>
 <tr>
 <td><a href="#resetapp">ResetApp</a></td>
-<td></td>
+<td>Reset the currently running app for this session</td>
 </tr>
 <tr>
 <td><a href="#savesession">SaveSession</a></td>
@@ -12295,23 +12307,23 @@
 </tr>
 <tr>
 <td><a href="#shakedevice">ShakeDevice</a></td>
-<td></td>
+<td>Perform a shake action on the device</td>
 </tr>
 <tr>
 <td><a href="#startactivity">StartActivity</a></td>
-<td></td>
+<td>Start an Android activity by providing package name and activity name</td>
 </tr>
 <tr>
 <td><a href="#toggleairplanemode">ToggleAirplaneMode</a></td>
-<td></td>
+<td>Toggle airplane mode on device</td>
 </tr>
 <tr>
 <td><a href="#togglelocationservices">ToggleLocationServices</a></td>
-<td></td>
+<td>Switch the state of the location service</td>
 </tr>
 <tr>
 <td><a href="#togglewifi">ToggleWifi</a></td>
-<td></td>
+<td>Switch the state of the WiFi service</td>
 </tr>
 </tbody>
 </table>
@@ -12392,6 +12404,7 @@
 <p><a name="see.also.appiumdriver.closeapp"></a></p>
 <p><a name="CreateAppiumDriver"></a>    </p>
 <h4 id="createappiumdriver">CreateAppiumDriver<a class="headerlink" href="#createappiumdriver" title="Permanent link">&para;</a></h4>
+<p>Connects to a mobile target using given Appium uri and capabilities.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">CreateAppiumDriver</span><span class="p">(</span><span class="nx">uri</span><span class="p">,</span> <span class="nx">caps</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12407,15 +12420,17 @@
 <tr>
 <td>uri</td>
 <td>string</td>
-<td></td>
+<td>Appium server URL.</td>
 </tr>
 <tr>
 <td>caps</td>
 <td>AppiumCapabilities</td>
-<td></td>
+<td>DesiredCapabilities object with key/value pairs.</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Returns:</strong></p>
+<p>Driver object.</p>
 <p><a name="see.also.appiumdriver.createappiumdriver"></a></p>
 <p><a name="CreateDesiredCapabilities"></a>    </p>
 <h4 id="createdesiredcapabilities">CreateDesiredCapabilities<a class="headerlink" href="#createdesiredcapabilities" title="Permanent link">&para;</a></h4>
@@ -12523,7 +12538,7 @@
 <tr>
 <td>selector</td>
 <td>string</td>
-<td></td>
+<td>Element selector</td>
 </tr>
 </tbody>
 </table>
@@ -12546,7 +12561,7 @@
 <tr>
 <td>selector</td>
 <td>string</td>
-<td></td>
+<td>Element selector</td>
 </tr>
 </tbody>
 </table>
@@ -12638,7 +12653,7 @@
 <tr>
 <td>selector</td>
 <td>string</td>
-<td></td>
+<td>Element selector</td>
 </tr>
 </tbody>
 </table>
@@ -12776,7 +12791,7 @@
 <tr>
 <td>selector</td>
 <td>string</td>
-<td></td>
+<td>Element selector</td>
 </tr>
 </tbody>
 </table>
@@ -12799,7 +12814,7 @@
 <tr>
 <td>selector</td>
 <td>string</td>
-<td></td>
+<td>Element selector</td>
 </tr>
 </tbody>
 </table>
@@ -12891,7 +12906,7 @@
 <tr>
 <td>selector</td>
 <td>string</td>
-<td></td>
+<td>Element selector</td>
 </tr>
 </tbody>
 </table>
@@ -13097,7 +13112,8 @@
 <p><a name="see.also.appiumdriver.getwindowhandles"></a></p>
 <p><a name="HideKeyboard"></a>    </p>
 <h4 id="hidekeyboard">HideKeyboard<a class="headerlink" href="#hidekeyboard" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="nx">HideKeyboard</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span> 
+<p>Hide soft keyboard</p>
+<div class="highlight"><pre><span></span><code><span class="nx">HideKeyboard</span><span class="p">(</span><span class="nx">strategy</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13110,20 +13126,21 @@
 </thead>
 <tbody>
 <tr>
-<td>key</td>
-<td></td>
-<td></td>
+<td>strategy</td>
+<td>string</td>
+<td>Hide keyboard strategy (optional, UIAutomation only). Available strategies - 'press', 'pressKey', 'swipeDown', 'tapOut', 'tapOutside', 'default'.</td>
 </tr>
 <tr>
 <td>key</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>Key<br>Optional.</td>
 </tr>
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.hidekeyboard"></a></p>
 <p><a name="IgnoreUnimportantViews"></a>    </p>
 <h4 id="ignoreunimportantviews">IgnoreUnimportantViews<a class="headerlink" href="#ignoreunimportantviews" title="Permanent link">&para;</a></h4>
+<p>This capability can speed up test execution, since Accessibility commands will run faster ignoring some elements. The ignored elements will not be findable.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">IgnoreUnimportantViews</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -13138,14 +13155,15 @@
 <tbody>
 <tr>
 <td>value</td>
-<td></td>
-<td></td>
+<td>bool</td>
+<td><code>true</code> to ignore.</td>
 </tr>
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.ignoreunimportantviews"></a></p>
 <p><a name="InstallApp"></a>    </p>
 <h4 id="installapp">InstallApp<a class="headerlink" href="#installapp" title="Permanent link">&para;</a></h4>
+<p>Install the given app onto the device.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">InstallApp</span><span class="p">(</span><span class="nx">appPath</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -13160,14 +13178,15 @@
 <tbody>
 <tr>
 <td>appPath</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>Path of the app being installed</td>
 </tr>
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.installapp"></a></p>
 <p><a name="IsAppInstalled"></a>    </p>
 <h4 id="isappinstalled">IsAppInstalled<a class="headerlink" href="#isappinstalled" title="Permanent link">&para;</a></h4>
+<p>Check whether the specified app is installed on the device.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">IsAppInstalled</span><span class="p">(</span><span class="nx">bundleId</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -13182,34 +13201,39 @@
 <tbody>
 <tr>
 <td>bundleId</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>iOS bundleID or Android package name</td>
 </tr>
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.isappinstalled"></a></p>
 <p><a name="IsIMEActive"></a>    </p>
 <h4 id="isimeactive">IsIMEActive<a class="headerlink" href="#isimeactive" title="Permanent link">&para;</a></h4>
+<p>Check if IME is active.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">IsIMEActive</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.isimeactive"></a></p>
 <p><a name="IsLocked"></a>    </p>
 <h4 id="islocked">IsLocked<a class="headerlink" href="#islocked" title="Permanent link">&para;</a></h4>
+<p>Check whether the device is locked or not</p>
 <div class="highlight"><pre><span></span><code><span class="nx">IsLocked</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.islocked"></a></p>
 <p><a name="LaunchApp"></a>    </p>
 <h4 id="launchapp">LaunchApp<a class="headerlink" href="#launchapp" title="Permanent link">&para;</a></h4>
+<p>Launch the app-under-test on the device</p>
 <div class="highlight"><pre><span></span><code><span class="nx">LaunchApp</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.launchapp"></a></p>
 <p><a name="OpenNotifications"></a>    </p>
 <h4 id="opennotifications">OpenNotifications<a class="headerlink" href="#opennotifications" title="Permanent link">&para;</a></h4>
+<p>Open Android notifications (Emulator only)</p>
 <div class="highlight"><pre><span></span><code><span class="nx">OpenNotifications</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.opennotifications"></a></p>
 <p><a name="PressKeyCode"></a>    </p>
 <h4 id="presskeycode">PressKeyCode<a class="headerlink" href="#presskeycode" title="Permanent link">&para;</a></h4>
+<p>Press a particular key on Device</p>
 <div class="highlight"><pre><span></span><code><span class="nx">PressKeyCode</span><span class="p">(</span><span class="nx">keyCode</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -13224,14 +13248,15 @@
 <tbody>
 <tr>
 <td>keyCode</td>
-<td></td>
-<td></td>
+<td>number</td>
+<td>Key code pressed on the device.</td>
 </tr>
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.presskeycode"></a></p>
 <p><a name="PullFile"></a>    </p>
 <h4 id="pullfile">PullFile<a class="headerlink" href="#pullfile" title="Permanent link">&para;</a></h4>
+<p>Retrieve a file from the device's file system.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">PullFile</span><span class="p">(</span><span class="nx">pathOnDevice</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -13246,8 +13271,8 @@
 <tbody>
 <tr>
 <td>pathOnDevice</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>Path on the device to pull file from</td>
 </tr>
 </tbody>
 </table>
@@ -13311,6 +13336,7 @@
 <p><a name="see.also.appiumdriver.reconnectsession"></a></p>
 <p><a name="RemoveApp"></a>    </p>
 <h4 id="removeapp">RemoveApp<a class="headerlink" href="#removeapp" title="Permanent link">&para;</a></h4>
+<p>Remove an app from the device</p>
 <div class="highlight"><pre><span></span><code><span class="nx">RemoveApp</span><span class="p">(</span><span class="nx">appId</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -13325,14 +13351,15 @@
 <tbody>
 <tr>
 <td>appId</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>The iOS App ID</td>
 </tr>
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.removeapp"></a></p>
 <p><a name="ResetApp"></a>    </p>
 <h4 id="resetapp">ResetApp<a class="headerlink" href="#resetapp" title="Permanent link">&para;</a></h4>
+<p>Reset the currently running app for this session</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ResetApp</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.resetapp"></a></p>
@@ -13360,7 +13387,7 @@
 <tr>
 <td>name</td>
 <td>string</td>
-<td></td>
+<td>The name of the context to which to change</td>
 </tr>
 </tbody>
 </table>
@@ -13413,12 +13440,14 @@
 <p><a name="see.also.appiumdriver.seturl"></a></p>
 <p><a name="ShakeDevice"></a>    </p>
 <h4 id="shakedevice">ShakeDevice<a class="headerlink" href="#shakedevice" title="Permanent link">&para;</a></h4>
+<p>Perform a shake action on the device</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ShakeDevice</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.shakedevice"></a></p>
 <p><a name="StartActivity"></a>    </p>
 <h4 id="startactivity">StartActivity<a class="headerlink" href="#startactivity" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="nx">StartActivity</span><span class="p">(</span><span class="nx">appActivity</span><span class="p">,</span> <span class="nx">appWaitPackage</span><span class="p">,</span> <span class="nx">appWaitActivity</span><span class="p">,</span> <span class="nx">appWaitActivity</span><span class="p">)</span> 
+<p>Start an Android activity by providing package name and activity name</p>
+<div class="highlight"><pre><span></span><code><span class="nx">StartActivity</span><span class="p">(</span><span class="nx">appPackage</span><span class="p">,</span> <span class="nx">appActivity</span><span class="p">,</span> <span class="nx">appWaitPackage</span><span class="p">,</span> <span class="nx">appWaitActivity</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13431,40 +13460,43 @@
 </thead>
 <tbody>
 <tr>
+<td>appPackage</td>
+<td>string</td>
+<td>Name of the package</td>
+</tr>
+<tr>
 <td>appActivity</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>Name of the activity</td>
 </tr>
 <tr>
 <td>appWaitPackage</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>Automation will begin after this package starts</td>
 </tr>
 <tr>
 <td>appWaitActivity</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
+<td>string</td>
 <td>appWaitActivity</td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table>
 <p><a name="see.also.appiumdriver.startactivity"></a></p>
 <p><a name="ToggleAirplaneMode"></a>    </p>
 <h4 id="toggleairplanemode">ToggleAirplaneMode<a class="headerlink" href="#toggleairplanemode" title="Permanent link">&para;</a></h4>
+<p>Toggle airplane mode on device</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ToggleAirplaneMode</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.toggleairplanemode"></a></p>
 <p><a name="ToggleLocationServices"></a>    </p>
 <h4 id="togglelocationservices">ToggleLocationServices<a class="headerlink" href="#togglelocationservices" title="Permanent link">&para;</a></h4>
+<p>Switch the state of the location service</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ToggleLocationServices</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.togglelocationservices"></a></p>
 <p><a name="ToggleWifi"></a>    </p>
 <h4 id="togglewifi">ToggleWifi<a class="headerlink" href="#togglewifi" title="Permanent link">&para;</a></h4>
+<p>Switch the state of the WiFi service</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ToggleWifi</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.appiumdriver.togglewifi"></a></p>

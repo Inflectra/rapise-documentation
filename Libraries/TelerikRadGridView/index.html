@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/7_2/" class="md-tabs__link">
+      <a href="../../New/7_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -6679,13 +6679,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-8" type="checkbox" id="nav-4-4-8" >
       
       <label class="md-nav__link" for="nav-4-4-8">
-        Advanced Acessibility
+        Advanced Accessibility
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Advanced Acessibility" data-md-level="3">
+      <nav class="md-nav" aria-label="Advanced Accessibility" data-md-level="3">
         <label class="md-nav__title" for="nav-4-4-8">
           <span class="md-nav__icon md-icon"></span>
-          Advanced Acessibility
+          Advanced Accessibility
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6696,7 +6696,7 @@
   
     <li class="md-nav__item">
       <a href="../ses_lib_advaac/" class="md-nav__link">
-        Advanced Acessibility Objects
+        Advanced Accessibility Objects
       </a>
     </li>
   
@@ -10899,6 +10899,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/7_3/" class="md-nav__link">
+        Release Notes for 7.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/7_2/" class="md-nav__link">
         Release Notes for 7.2
       </a>
@@ -11309,16 +11321,75 @@
 <p><a name="DoClickCell"></a>    </p>
 <h4 id="doclickcell">DoClickCell<a class="headerlink" href="#doclickcell" title="Permanent link">&para;</a></h4>
 <p>Clicks the specified cell.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">()</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">,</span> <span class="nx">xOffset</span><span class="p">,</span> <span class="nx">yOffset</span><span class="p">)</span> 
 </code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row</td>
+<td>number | string</td>
+<td>Zero-based index if the row or text of a cell in the specified column.</td>
+</tr>
+<tr>
+<td>col</td>
+<td>string | number</td>
+<td>Zero-based index of the column or column name.</td>
+</tr>
+<tr>
+<td>clickType</td>
+<td>string</td>
+<td>Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L".</td>
+</tr>
+<tr>
+<td>xOffset</td>
+<td>number</td>
+<td>X offset to click within node. Default is a center.<br>Optional.</td>
+</tr>
+<tr>
+<td>yOffset</td>
+<td>number</td>
+<td>Y offset to click within node. Default is a center.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise</p>
 <p><a name="see.also.telerikradgridview.doclickcell"></a></p>
 <p><a name="DoClickText"></a>    </p>
 <h4 id="doclicktext">DoClickText<a class="headerlink" href="#doclicktext" title="Permanent link">&para;</a></h4>
 <p>Clicks on a specific text inside the grid.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClickText</span><span class="p">()</span> 
+<div class="highlight"><pre><span></span><code><span class="nx">DoClickText</span><span class="p">(</span><span class="nx">textOrRegexp</span><span class="p">,</span> <span class="nx">clickType</span><span class="p">)</span> 
 </code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>textOrRegexp</td>
+<td>string</td>
+<td>Text (or regex: expression) to search in the grid.</td>
+</tr>
+<tr>
+<td>clickType</td>
+<td>string</td>
+<td>Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L".</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>'true' if successful, 'false' otherwise</p>
 <p><a name="see.also.telerikradgridview.doclicktext"></a></p>
