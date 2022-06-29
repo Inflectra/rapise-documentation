@@ -1354,6 +1354,9 @@
 		"tostring",
 		"touppercase",
 		"trimend",
-		"trimstart"
+		"trimstart",
+		"setwindowposition",
+		"setwindowsize",
+		"blocktest"
     ]
 }
