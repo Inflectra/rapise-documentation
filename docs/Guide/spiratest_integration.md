@@ -414,27 +414,31 @@ By right clicking on the system tray icon and selecting `Configuration`, the app
 
 The panel has the following options:
 
-- **SpiraTest Server Connection**
-    - **URL**: This is the URL of the SpiraTest installation. Be sure to not put /Login.aspx or any other page in the string, this should be just the root URL of the application's install.
-    - **User Name**: This is the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.
-    - **API Key**: The [API Key](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key) for the to the User Name above.
-    - **Test**: Clicking this will test the login to make sure the application can connect to the server properly.
-    - **Repository** -- this is the Windows folder that used to store local copies of the non-absolute repositories (downloaded from SpiraTest).
-    - **Use Temp Folder for Test Execution** -- this should be enabled if you are also writing tests on this computer using Rapise and you don't want RapiseLauncher to download and overwrite any changes you have made locally (that have not been saved).
-    
-- **Server Polling**
-    - **Automation Host Token**: This field is required, and uniquely identifies the local testing machine. Any scheduled tests assigned to the Automation Host on SpiraTest will get polled for this machine. Except in special circumstances, this ID should be unique among all testing machines.
+#### SpiraTest Server Connection
 
-        >  ![ico_Warning](./img/using_rapise_with_spiratest_guide48.png) **Important**: This field must match the string that is entered into the Automation Host Details screen in the **Token**: field, or scheduled tests will not be recognized.
+- **URL**: This is the URL of the SpiraTest installation. Be sure to not put /Login.aspx or any other page in the string, this should be just the root URL of the application's install.
+- **User Name**: This is the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.
+- **API Key**: The [API Key](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key) for the to the User Name above.
+- **Test**: Clicking this will test the login to make sure the application can connect to the server properly.
+- **Repository** -- this is the Windows folder that used to store local copies of the non-absolute repositories (downloaded from SpiraTest).
+- **Use Temp Folder for Test Execution** -- this should be enabled if you are also writing tests on this computer using Rapise and you don't want RapiseLauncher to download and overwrite any changes you have made locally (that have not been saved).
 
-    - **Automatically Run Overdue Tests**: When this is checked, any tests that are pulled from the SpiraTest server that has a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this check, they will be executed as soon as the poll is finished.
-    - **Polling Frequency**: How often in minutes the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 60 (1 hour), and should be fine for most installations. Note that tests will still be executed on their scheduled time, this is simply how often the program will talk to the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.
-    - **Polling Read Ahead**: How far ahead in minutes the program should read the schedule for the Automation host. Tests that are scheduled farther in advance will not show up as a pending test on the status screen.
-    
-- **Options**
-    - **Capture screenshots during playback** -- selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.
-    - **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Useful when your server is rebooted regularly. This option requires Rapise 6.3+
-	- **RDP screen width & height** -- when RDP session is disconnected via [RapiseLauncher tray icon menu](#tray-icon-menu) set screen resolution to specified width and height.
+#### Server Polling
+
+- **Automation Host Token**: This field is required, and uniquely identifies the local testing machine. Any scheduled tests assigned to the Automation Host on SpiraTest will get polled for this machine. Except in special circumstances, this ID should be unique among all testing machines.
+
+    >  ![ico_Warning](./img/using_rapise_with_spiratest_guide48.png) **Important**: This field must match the string that is entered into the Automation Host Details screen in the **Token**: field, or scheduled tests will not be recognized.
+
+- **Automatically Run Overdue Tests**: When this is checked, any tests that are pulled from the SpiraTest server that has a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this check, they will be executed as soon as the poll is finished.
+- **Polling Frequency**: How often in minutes the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 60 (1 hour), and should be fine for most installations. Note that tests will still be executed on their scheduled time, this is simply how often the program will talk to the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.
+- **Polling Read Ahead**: How far ahead in minutes the program should read the schedule for the Automation host. Tests that are scheduled farther in advance will not show up as a pending test on the status screen.
+
+#### Options
+
+- **Capture screenshots during playback** -- selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.
+- **Continue test set execution if test case returns Blocked status** -- by default Blocked test case stops execution of a test set, set this checkbox to run all test cases no matter what. This option requires Rapise 7.3+
+- **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Useful when your server is rebooted regularly. This option requires Rapise 6.3+
+- **RDP screen width & height** -- when RDP session is disconnected via [RapiseLauncher tray icon menu](#tray-icon-menu) set screen resolution to specified width and height.
 
 Since Rapise 7.2 one may use `Show Log` button to quickly open the RapiseLauncher log in the default text viewer.
 
