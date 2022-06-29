@@ -550,6 +550,18 @@ When RapiseLauncher runs a test it passes a bunch of global variables to it. Tho
 
 See this [KB](https://www.inflectra.com/Support/KnowledgeBase/KB543.aspx) article for details.
 
+### Git for Windows
+
+This feature requires Rapise 7.3+. By default Rapise is using LibGit2Sharp library to clone Git repositories. It is a great library and it works in 99% of cases. However if you are behind a proxy you may need to configure RapiseLauncher to use [Git for Windows](https://git-scm.com/download/win) instead of LibGit2Sharp. Configuration is simple. Just create  a file `c:\Users\Public\Documents\Rapise\GitClone.cmd` with the following content:
+
+```
+echo %GitUrlWithoutProtocol%
+@echo off
+git clone https://%GitUser%:%GitPassword%@%GitUrlWithoutProtocol% %GitTargetPath%
+```
+
+RapiseLauncher is using this CMD file to clone a Git repository. Environment variables `GitUrl`, `GitUrlWithoutProtocol`, `GitUser`, `GitPassword`, `GitBranch`, `GitTargetPath` are set by RapiseLauncher automatically and can be used inside the CMD file. `GitTargetPath` points to the folder where a repository must be cloned.
+
 ## See Also
 
 - [Using Rapise with SpiraTest (video)](https://youtu.be/5ybrBQOzez8)

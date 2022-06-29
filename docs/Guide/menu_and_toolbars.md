@@ -240,7 +240,7 @@ related to using the Web Spy to inspect the DOM objects in web pages.
 * **Activation** - opens the Rapise license activation screen. This can be used to deactivate the current license so that it can be used on a different machine.
 * **Help** - provides access to the interactive help system. You can also bring up the help system by pressing **F1** on the keyboard.
 * **Online Help** - opens online version of the help system (updated regularly).
-* **Remote Assistance** - launches GoToMeeting session with a given ID.
+* **Remote Assistance** - launches GoToMeeting session with a given ID. Since Rapise 7.3 launches Zoom meeting.
 
 Read more about [Remote Assistance](https://www.inflectra.com/Support/KnowledgeBase/KB529.aspx).
 

@@ -288,6 +288,12 @@ In the test sets view one may see the tree of test sets for a project, discover 
 
 Since Rapise 7.2 one may change global Test Set filter from `All` to `My Assigned`.
 
+Since Rapise 7.3 it is possible to change the way of calculating test set execution status. If you are using [rerun](#automatic-rerun) features or include same test case multiple times into the same test set then it is recommended to set `Calculate Test Set Status from Test Runs` option:
+
+![Calculate Test Set Status from Test Runs](./img/calculate_test_set_status_option.jpg)
+
+If this option is not set then test set status is calculated based on the latest run for each included test case.
+
 #### View Test Set Details
 
 Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters (editable, requires Rapise 7.1+) and custom properties (editable).
