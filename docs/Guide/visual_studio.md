@@ -49,7 +49,7 @@ Here is an example of selecting a browser to use for execution of cross-browser 
 <RunSettings>
   <!-- Parameters used by tests at runtime -->
   <TestRunParameters>
-    <Parameter name="g_browserLibrary" value="Chrome HTML" />
+    <Parameter name="g_browserLibrary" value="Selenium - Chrome" />
   </TestRunParameters>
 </RunSettings>
 ```

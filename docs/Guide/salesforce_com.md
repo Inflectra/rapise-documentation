@@ -18,7 +18,7 @@ Rapise provides out of the box support for testing Salesforce.com and provides [
 When you record your first test, you'll see the following library selection code generated automatically by Rapise:
 
 ```javascript
-g_load_libraries=["%g\_browserLibrary:Internet Explorer HTML%", "DomSalesforce"];
+g_load_libraries=["Web", "DomSalesforce"];
 ```
 
 If you don’t see the **DomSalesforce** library listed in your test, then you will need to [manually change it](change_the_libraries_being_use.md) using the `[ ] Libraries` button on the tool menu.

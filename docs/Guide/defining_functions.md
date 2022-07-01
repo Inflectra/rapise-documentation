@@ -10,10 +10,6 @@ There are two ways to maintain additional functions: (1) Inside your test script
 
 ## Inside your Test Script
 
-### In Main.js
-
-Define the function inside of one of the following functions: **Test()**, **TestInit()**, **TestFinish()**, or **TestPrepare()**.  The Script Recorder will erase code placed outside of these functions.
-
 ### In User.js
 
 It is recommended to put all user functions into `User.js` file available in any test from its creation.

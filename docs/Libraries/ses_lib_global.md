@@ -14,8 +14,6 @@
 
 - [Navigator](Navigator.md)
 
-- [NeoLoad](NeoLoad.md)
-
 - [Screenshot](Screenshot.md)
 
 - [SeSReportException](SeSReportException.md)

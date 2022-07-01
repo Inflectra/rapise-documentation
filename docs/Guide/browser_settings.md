@@ -2,6 +2,8 @@
 
 ## Web Browser Profile
 
+> **Note:** since Rapise 7.3 it is recommended to use [Selenium WebDriver](selenium_webdriver.md) based profiles for all web tests. Web browser profiles are considered outdated and should only be used for legacy tests and backward compatibility.
+
 Use Browser Settings Dialog to configure `Web Browser Profiles`. A browser profile specifies
 
 - type of a browser (**IE**, **Chrome**, **Firefox**),

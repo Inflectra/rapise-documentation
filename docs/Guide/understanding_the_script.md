@@ -29,7 +29,7 @@ function Test()
 }
 
 // List of loaded libraries. It is automatically populated by the recorder.
-g_load_libraries=["Generic"]; // This script will load the Generic library
+g_load_libraries=["Web"]; // This script will load the Web library
 ```
 
 **User.js**
@@ -53,8 +53,68 @@ var saved_script_objects =
 The following functions are also recognized by Rapise and may be present in the test script. Put these functions either in `Main.js` or `User.js`.
 
 - **TestInit()** - This function is called once before script playback. It should be used to initialize script-wide data (counters, open datasets, etc).
+
+More advanced ways of defining multiple test initialization handlers is to use `SeSOnTestInit` with callback:
+
+```javascript
+SeSOnTestInit(function(){
+	Log("Initializing...");
+});
+```
+
+`SeSOnTestInit` may be used multiple times. For example, one may use it in the custom library to launch an application or clean up the logs and then use it in the test to do test-specific actions. 
+
+Please, note: `SeSOnTestInit` should be not be put into the `Test` because `Test` is invoked after initialization.
+
+
 - **TestFinish()** - This function is called once after test execution. It should be used to release resources (data sets, spreadsheets). TestFinish() is a good place to post-process Reports.  It may also be used as an integration point with external test management or bug tracking systems.
-- **TestPrepare()** - For advanced users; TestPrepare() is called before recording and before playback. It may be used to properly initialize libraries.
+
+More advanced ways of defining multiple test finalization handlers is to use `TestFinish` with callback:
+
+```javascript
+SeSOnTestFinish(function(){
+	Log("Finalizing...");
+});
+```
+
+`SeSOnTestFinish` may be used multiple times. For example, one may use it in the custom library to close an application. 
+
+- **TestPrepare()** - For advanced users; `TestPrepare()` is called before recording and before playback. It may be used to properly initialize libraries.
+
+More advanced ways of defining multiple test parepare handlers is to use `SeSOnTestPrepare` with callback:
+
+```javascript
+SeSOnTestPrepare(function(){
+	Log("Preparing...");
+});
+```
+
+`SeSOnTestPrepare` may be used multiple times. For example, one may use it in the custom library to configure environment for the application and then use it in the test to do test-specific actions. 
+
+Please, note: `SeSOnTestPrepare` should be not be put into the `Test` because `Test` is invoked after initialization.
+
+
+- **SeSOnTestFailed** - May be used to do something on test failure event.
+
+```javascript
+SeSOnTestFailed(function(){
+	Log("Test Failed...");
+});
+```
+
+**status** parameter will always be 0.
+
+- **SeSOnTestReportReady** - Final point, called when report is closed and is ready for post-processing.
+
+```javascript
+SeSOnTestReportReady(function(){
+	// Don't use anything that writes to the report at this point!
+	// Only low level operations and functions: File, WScript.Shell etc.
+	Log("Test done with status: "+g_testPassed);
+	Log("Report file: "+g_reportFileName);
+})
+```
+
 
 ## See Also
 

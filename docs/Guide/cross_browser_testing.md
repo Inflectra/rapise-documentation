@@ -14,13 +14,15 @@ In the right top corner of Rapise window expand the dropdown with available brow
 
 ![available browsers](./img/cross_browser_testing2.png)
 
-Change the browser to either one of the [native browsers](browser_settings.md) such as **Firefox**, **Internet Explorer** or **Chrome**, or one of the [Selenium WebDriver](selenium_webdriver.md) based browser profiles.
+Change the browser to either one of the [Selenium WebDriver](selenium_webdriver.md) based browser profiles, or one of the [native browsers](browser_settings.md) such as **Firefox**, **Internet Explorer** or **Chrome**.
 
 Once you have changed this setting, [Playback](playback.md) the script normally and it will playback in the selected browser.
 
 Changing this setting will effectively set the value of the `g_browserLibrary` global variable.
 
 > **Note:** in Rapise 6.3+ you may define [local profiles](/Guide/browser_settings/#local-browser-profiles).
+
+> **Note:** since Rapise 7.3 it is recommended to use [Selenium WebDriver](selenium_webdriver.md) based profiles for all web tests.
 
 ## Playback in Multiple Browsers - SpiraTest
 
