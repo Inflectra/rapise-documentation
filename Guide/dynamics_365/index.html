@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/dynamics_365/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -4280,7 +4280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Libraries/NeoLoad/" class="md-nav__link">
+      <a href="../../Libraries/NeoLoad.md" class="md-nav__link">
         NeoLoad
       </a>
     </li>
@@ -8068,28 +8068,16 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5-1" type="checkbox" id="nav-4-5-1" >
       
       <label class="md-nav__link" for="nav-4-5-1">
-        HTML
+        Web
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="HTML" data-md-level="3">
+      <nav class="md-nav" aria-label="Web" data-md-level="3">
         <label class="md-nav__title" for="nav-4-5-1">
           <span class="md-nav__icon md-icon"></span>
-          HTML
+          Web
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Libraries/ses_lib_html/" class="md-nav__link">
-        HTML Objects
-      </a>
-    </li>
-  
-
           
             
   
@@ -11059,7 +11047,7 @@
 <li>In addition, there are special controls inside Dynamics 365 that Rapise has specialized support for. For that reason you'll also see the <a href="/Libraries/ses_lib_dynamics365/">DomDynamicsAx</a> library added to your test as well as the browser one. This <strong>DomDynamicsAx</strong> library adds additional rules that identify certain Dynamics 365 objects to make testing easier.</li>
 </ul>
 <p>When you record your first test, you'll see the following library selection code generated automatically by Rapise:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;%g_browserLibrary:Internet Explorer HTML%&quot;</span><span class="p">,</span> <span class="s2">&quot;DomDynamicsAx&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">,</span> <span class="s2">&quot;DomDynamicsAx&quot;</span><span class="p">];</span>
 </code></pre></div>
 <p>If you don’t see the <strong>DomDynamicsAx</strong> library listed in your test, then you will need to <a href="../change_the_libraries_being_use/">manually add it</a>.</p>
 <h2 id="recording-and-learning-objects">Recording and Learning Objects<a class="headerlink" href="#recording-and-learning-objects" title="Permanent link">&para;</a></h2>
@@ -11183,7 +11171,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2021 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2022 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with

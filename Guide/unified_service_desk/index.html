@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/unified_service_desk/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -4307,7 +4307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Libraries/NeoLoad/" class="md-nav__link">
+      <a href="../../Libraries/NeoLoad.md" class="md-nav__link">
         NeoLoad
       </a>
     </li>
@@ -8095,28 +8095,16 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5-1" type="checkbox" id="nav-4-5-1" >
       
       <label class="md-nav__link" for="nav-4-5-1">
-        HTML
+        Web
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="HTML" data-md-level="3">
+      <nav class="md-nav" aria-label="Web" data-md-level="3">
         <label class="md-nav__title" for="nav-4-5-1">
           <span class="md-nav__icon md-icon"></span>
-          HTML
+          Web
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Libraries/ses_lib_html/" class="md-nav__link">
-        HTML Objects
-      </a>
-    </li>
-  
-
           
             
   
@@ -11116,10 +11104,10 @@
 <h2 id="test-framework">Test Framework<a class="headerlink" href="#test-framework" title="Permanent link">&para;</a></h2>
 <h3 id="root-test">Root Test<a class="headerlink" href="#root-test" title="Permanent link">&para;</a></h3>
 <p>Suggested approach to building a test framework for USD is to create a root empty test which will serve as a container for test scenarios and building blocks.</p>
-<p>Let's create USDFramework test. Choose Web methodology, UnifiedServiceDesk browser profile and RVL options along the way.</p>
+<p>Let's create USDFramework test. Choose Web methodology, <code>UnifiedServiceDesk</code> browser profile and RVL options along the way.</p>
 <p><img alt="usd main test" src="../img/usdmaintest.gif" /></p>
 <p>In the main file of the test (<code>Main.js</code>) specify the list of libraries to load:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;%g_browserLibrary:UnifiedServiceDesk%&quot;</span><span class="p">,</span> <span class="s2">&quot;DomDynamicsCrm&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;Web&quot;</span><span class="p">,</span> <span class="s2">&quot;DomDynamicsCrm&quot;</span><span class="p">];</span>
 </code></pre></div>
 <p><img alt="usd main js" src="../img/usdmainjs.png" /></p>
 <h2 id="browser-automation-sub-test">Browser Automation Sub-Test<a class="headerlink" href="#browser-automation-sub-test" title="Permanent link">&para;</a></h2>
@@ -11221,7 +11209,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2021 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2022 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with

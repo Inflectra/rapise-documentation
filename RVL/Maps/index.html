@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/RVL/Maps/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -4363,7 +4363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Libraries/NeoLoad/" class="md-nav__link">
+      <a href="../../Libraries/NeoLoad.md" class="md-nav__link">
         NeoLoad
       </a>
     </li>
@@ -8151,28 +8151,16 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5-1" type="checkbox" id="nav-4-5-1" >
       
       <label class="md-nav__link" for="nav-4-5-1">
-        HTML
+        Web
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="HTML" data-md-level="3">
+      <nav class="md-nav" aria-label="Web" data-md-level="3">
         <label class="md-nav__title" for="nav-4-5-1">
           <span class="md-nav__icon md-icon"></span>
-          HTML
+          Web
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Libraries/ses_lib_html/" class="md-nav__link">
-        HTML Objects
-      </a>
-    </li>
-  
-
           
             
   
@@ -11596,15 +11584,15 @@
 <p><em>connectionString</em> parameter allows accessing wide variety of different database sources. You may learn ore here: <a href="https://docs.microsoft.com/en-us/sql/ado/reference/ado-api/connectionstring-property-ado">https://docs.microsoft.com/en-us/sql/ado/reference/ado-api/connectionstring-property-ado</a>.</p>
 <p>Some samples of typical ADO connection string values:</p>
 <h4 id="microsoft-access">Microsoft Access<a class="headerlink" href="#microsoft-access" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Provider=MSDASQL; Driver={Microsoft Access Driver (*.mdb)}; DBQ=C:\path\filename.mdb;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">Provider</span><span class="o">=</span><span class="nt">MSDASQL</span><span class="o">;</span> <span class="nt">Driver</span><span class="o">=</span><span class="p">{</span><span class="err">Microsoft</span> <span class="err">Access</span> <span class="err">Driver</span> <span class="err">(*.mdb)</span><span class="p">}</span><span class="o">;</span> <span class="nt">DBQ</span><span class="o">=</span><span class="nt">C</span><span class="o">:</span><span class="err">\</span><span class="nt">path</span><span class="err">\</span><span class="nt">filename</span><span class="p">.</span><span class="nc">mdb</span><span class="o">;</span>
 </code></pre></div>
 </td></tr></table>
 <h4 id="microsoft-excel">Microsoft Excel<a class="headerlink" href="#microsoft-excel" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Provider=MSDASQL; Driver={Microsoft Excel Driver (*.xls)}; DBQ=C:\path\filename.xls;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">Provider</span><span class="o">=</span><span class="nt">MSDASQL</span><span class="o">;</span> <span class="nt">Driver</span><span class="o">=</span><span class="p">{</span><span class="err">Microsoft</span> <span class="err">Excel</span> <span class="err">Driver</span> <span class="err">(*.xls)</span><span class="p">}</span><span class="o">;</span> <span class="nt">DBQ</span><span class="o">=</span><span class="nt">C</span><span class="o">:</span><span class="err">\</span><span class="nt">path</span><span class="err">\</span><span class="nt">filename</span><span class="p">.</span><span class="nc">xls</span><span class="o">;</span>
 </code></pre></div>
 </td></tr></table>
 <h4 id="microsoft-text">Microsoft Text<a class="headerlink" href="#microsoft-text" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Provider=MSDASQL; Driver={Microsoft Text Driver (*.txt; *.csv)}; DBQ=C:\path\;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">Provider</span><span class="o">=</span><span class="nt">MSDASQL</span><span class="o">;</span> <span class="nt">Driver</span><span class="o">=</span><span class="p">{</span><span class="err">Microsoft</span> <span class="err">Text</span> <span class="err">Driver</span> <span class="err">(*.txt</span><span class="p">;</span> <span class="err">*.csv)</span><span class="p">}</span><span class="o">;</span> <span class="nt">DBQ</span><span class="o">=</span><span class="nt">C</span><span class="o">:</span><span class="err">\</span><span class="nt">path</span><span class="err">\</span><span class="o">;</span>
 </code></pre></div>
 </td></tr></table>
 <p>An example below refers to ODBC Data Source defined as follows:</p>
@@ -11664,7 +11652,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2021 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2022 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with

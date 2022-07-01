@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/dynamics_ax/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -4412,7 +4412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Libraries/NeoLoad/" class="md-nav__link">
+      <a href="../../Libraries/NeoLoad.md" class="md-nav__link">
         NeoLoad
       </a>
     </li>
@@ -8200,28 +8200,16 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5-1" type="checkbox" id="nav-4-5-1" >
       
       <label class="md-nav__link" for="nav-4-5-1">
-        HTML
+        Web
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="HTML" data-md-level="3">
+      <nav class="md-nav" aria-label="Web" data-md-level="3">
         <label class="md-nav__title" for="nav-4-5-1">
           <span class="md-nav__icon md-icon"></span>
-          HTML
+          Web
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Libraries/ses_lib_html/" class="md-nav__link">
-        HTML Objects
-      </a>
-    </li>
-  
-
           
             
   
@@ -11336,7 +11324,7 @@
 <p>Main window title of Dynamics AX is dynamic by nature.</p>
 <p><img alt="DynamicsAX Title" src="../img/dynamicsaxtitle.png" /></p>
 <p>It contains not only application name but also domain and AOS information and session Id. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression in object properties. Here it is:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    regex:.Microsoft Dynamics AX.*</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="nl">regex:</span><span class="p">.</span><span class="n">Microsoft</span> <span class="n">Dynamics</span> <span class="n">AX</span><span class="p">.</span><span class="o">*</span>
 </code></pre></div>
 </td></tr></table>
 <p>So recorded object properties automatically adjusted as</p>
@@ -11347,15 +11335,15 @@
 <p>Child windows of Dynamics AX also may have dynamic titles. Rapise does not know all the available patterns, so for child windows you need to write regular expressions yourself. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the <code>window title</code> property automatically. In other words when Rapise learns a new object and it's <code>window title</code> is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.</p>
 <h2 id="object-location">Object Location<a class="headerlink" href="#object-location" title="Permanent link">&para;</a></h2>
 <p>Object location property has the form of</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    id1/id2/id3...</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    id1/id2/id3...
 </code></pre></div>
 </td></tr></table>
 <p>where ids refer to parent objects along the path to the top window object. Sometimes such ids also can be dynamic, e.g.:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    Dimensions display (1 - k13) - Sales order: S30014323, CE15P, Sales order: S30014323/InventDimParmFixed/Pane/View/Style</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    Dimensions display (1 - k13) - Sales order: S30014323, CE15P, Sales order: S30014323/InventDimParmFixed/Pane/View/Style
 </code></pre></div>
 </td></tr></table>
 <p>In this case change dynamic parts by corresponding regular expressions. In the above example updated location looks like:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">    regex:Dimensions display.*/InventDimParmFixed/Pane/View/Style</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="nl">regex:</span><span class="n">Dimensions</span> <span class="n">display</span><span class="p">.</span><span class="o">*/</span><span class="n">InventDimParmFixed</span><span class="o">/</span><span class="n">Pane</span><span class="o">/</span><span class="n">View</span><span class="o">/</span><span class="n">Style</span>
 </code></pre></div>
 </td></tr></table>
 <p>Here is updated location in the property grid:</p>
@@ -11376,7 +11364,7 @@
         <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span> 
+    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span> 
 
     <span class="kd">var</span> <span class="nx">pfFolder</span> <span class="o">=</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="s2">&quot;ProgramFilesX86&quot;</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">dynamicsPath</span> <span class="o">=</span> <span class="nx">pfFolder</span> <span class="o">+</span> <span class="s2">&quot;\\Microsoft Dynamics AX\\60\\Client\\Bin\\Ax32.exe&quot;</span>
@@ -11661,7 +11649,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2021 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2022 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with

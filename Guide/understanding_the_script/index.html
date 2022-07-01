@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/understanding_the_script/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -4280,7 +4280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Libraries/NeoLoad/" class="md-nav__link">
+      <a href="../../Libraries/NeoLoad.md" class="md-nav__link">
         NeoLoad
       </a>
     </li>
@@ -8068,28 +8068,16 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5-1" type="checkbox" id="nav-4-5-1" >
       
       <label class="md-nav__link" for="nav-4-5-1">
-        HTML
+        Web
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="HTML" data-md-level="3">
+      <nav class="md-nav" aria-label="Web" data-md-level="3">
         <label class="md-nav__title" for="nav-4-5-1">
           <span class="md-nav__icon md-icon"></span>
-          HTML
+          Web
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Libraries/ses_lib_html/" class="md-nav__link">
-        HTML Objects
-      </a>
-    </li>
-  
-
           
             
   
@@ -11065,7 +11053,7 @@
 <span class="p">}</span>
 
 <span class="c1">// List of loaded libraries. It is automatically populated by the recorder.</span>
-<span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Generic&quot;</span><span class="p">];</span> <span class="c1">// This script will load the Generic library</span>
+<span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">];</span> <span class="c1">// This script will load the Web library</span>
 </code></pre></div>
 <p><strong>User.js</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1">//Put your custom functions and variables in this file</span>
@@ -11080,9 +11068,51 @@
 <p>The following functions are also recognized by Rapise and may be present in the test script. Put these functions either in <code>Main.js</code> or <code>User.js</code>.</p>
 <ul>
 <li><strong>TestInit()</strong> - This function is called once before script playback. It should be used to initialize script-wide data (counters, open datasets, etc).</li>
-<li><strong>TestFinish()</strong> - This function is called once after test execution. It should be used to release resources (data sets, spreadsheets). TestFinish() is a good place to post-process Reports.  It may also be used as an integration point with external test management or bug tracking systems.</li>
-<li><strong>TestPrepare()</strong> - For advanced users; TestPrepare() is called before recording and before playback. It may be used to properly initialize libraries.</li>
 </ul>
+<p>More advanced ways of defining multiple test initialization handlers is to use <code>SeSOnTestInit</code> with callback:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Initializing...&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>SeSOnTestInit</code> may be used multiple times. For example, one may use it in the custom library to launch an application or clean up the logs and then use it in the test to do test-specific actions. </p>
+<p>Please, note: <code>SeSOnTestInit</code> should be not be put into the <code>Test</code> because <code>Test</code> is invoked after initialization.</p>
+<ul>
+<li><strong>TestFinish()</strong> - This function is called once after test execution. It should be used to release resources (data sets, spreadsheets). TestFinish() is a good place to post-process Reports.  It may also be used as an integration point with external test management or bug tracking systems.</li>
+</ul>
+<p>More advanced ways of defining multiple test finalization handlers is to use <code>TestFinish</code> with callback:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFinish</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Finalizing...&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>SeSOnTestFinish</code> may be used multiple times. For example, one may use it in the custom library to close an application. </p>
+<ul>
+<li><strong>TestPrepare()</strong> - For advanced users; <code>TestPrepare()</code> is called before recording and before playback. It may be used to properly initialize libraries.</li>
+</ul>
+<p>More advanced ways of defining multiple test parepare handlers is to use <code>SeSOnTestPrepare</code> with callback:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestPrepare</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Preparing...&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>SeSOnTestPrepare</code> may be used multiple times. For example, one may use it in the custom library to configure environment for the application and then use it in the test to do test-specific actions. </p>
+<p>Please, note: <code>SeSOnTestPrepare</code> should be not be put into the <code>Test</code> because <code>Test</code> is invoked after initialization.</p>
+<ul>
+<li><strong>SeSOnTestFailed</strong> - May be used to do something on test failure event.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFailed</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test Failed...&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><strong>status</strong> parameter will always be 0.</p>
+<ul>
+<li><strong>SeSOnTestReportReady</strong> - Final point, called when report is closed and is ready for post-processing.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestReportReady</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// Don&#39;t use anything that writes to the report at this point!</span>
+    <span class="c1">// Only low level operations and functions: File, WScript.Shell etc.</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test done with status: &quot;</span><span class="o">+</span><span class="nx">g_testPassed</span><span class="p">);</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Report file: &quot;</span><span class="o">+</span><span class="nx">g_reportFileName</span><span class="p">);</span>
+<span class="p">})</span>
+</code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <p>To specify a different test script, see the <a href="../settings_dialog/">Settings Dialog</a>. The test script is specified by <strong>Settings</strong> &gt; <strong>ScriptPath</strong>.</p>
                 
@@ -11140,7 +11170,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2021 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2022 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with
