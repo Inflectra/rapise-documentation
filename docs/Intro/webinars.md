@@ -4,6 +4,12 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ## Series
 
+### Season 2022
+
+- [Rapise 7.3](https://youtu.be/LJqDcQGn3eU)
+- [Rapise 7.2](https://youtu.be/PruBlpkc2ns)
+- [Using Big Data Analysis to Reduce Test Flakiness](https://youtu.be/0hEdObCE2WA)
+
 ### Season 2021
 
 - [Parallel Execution of Tests with Rapise & SpiraTest](https://youtu.be/bNoWZjOE3hQ)
@@ -81,6 +87,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Highlights
 
+- [Rapise 7.3](https://youtu.be/LJqDcQGn3eU)
 - [Rapise 7.2](https://youtu.be/PruBlpkc2ns)
 - [Rapise 7.1](https://youtu.be/2AI6mc2-SYg)
 - [Rapise 7.0](https://youtu.be/YGGvSCAUCw0)
