@@ -21,7 +21,7 @@ Dynamics 365 for Finance and Operations is completely web-based (unlike Dynamics
 When you record your first test, you'll see the following library selection code generated automatically by Rapise:
 
 ```javascript
-g_load_libraries=["%g_browserLibrary:Internet Explorer HTML%", "DomDynamicsAx"];
+g_load_libraries=["Web", "DomDynamicsAx"];
 ```
 
 If you don’t see the **DomDynamicsAx** library listed in your test, then you will need to [manually add it](change_the_libraries_being_use.md).

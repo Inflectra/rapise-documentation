@@ -27,14 +27,14 @@ In order to deal with web content in USD a browser profile should be configured.
 
 Suggested approach to building a test framework for USD is to create a root empty test which will serve as a container for test scenarios and building blocks.
 
-Let's create USDFramework test. Choose Web methodology, UnifiedServiceDesk browser profile and RVL options along the way.
+Let's create USDFramework test. Choose Web methodology, `UnifiedServiceDesk` browser profile and RVL options along the way.
 
 ![usd main test](./img/usdmaintest.gif)
 
 In the main file of the test (`Main.js`) specify the list of libraries to load:
 
 ```javascript
-g_load_libraries=["UIAutomation", "%g_browserLibrary:UnifiedServiceDesk%", "DomDynamicsCrm"];
+g_load_libraries=["UIAutomation", "Web", "DomDynamicsCrm"];
 ```
 
 ![usd main js](./img/usdmainjs.png)

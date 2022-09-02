@@ -34,7 +34,7 @@ All  versions of Dynamics CRM are completely web-based and use a web browser to 
 When you record your first test, you'll get the following library selection code generated automatically by Rapise:
 
 ```javascript
-g_load_libraries=["%g_browserLibrary:Chrome HTML%", "DomDynamicsCrm"];
+g_load_libraries=["Web", "DomDynamicsCrm"];
 ```
 
 If you don’t see the **DomDynamicsCrm** library listed in your test, then you will need to [manually add it](change_the_libraries_being_use.md).

@@ -7,7 +7,6 @@
     - 'Global': 'Libraries/Global.md'
     - 'iOS': 'Libraries/iOS.md'
     - 'Navigator': 'Libraries/Navigator.md'
-    - 'NeoLoad': 'Libraries/NeoLoad.md'
     - 'Screenshot': 'Libraries/Screenshot.md'
     - 'SeSReportException': 'Libraries/SeSReportException.md'
     - 'SeSReportFile': 'Libraries/SeSReportFile.md'

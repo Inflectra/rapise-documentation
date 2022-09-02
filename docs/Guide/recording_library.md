@@ -31,7 +31,7 @@ Rapise comes with many different object libraries. See the list of libraries and
 - [Java](/Libraries/ses_lib_java/)
 - [SWT](/Libraries/ses_lib_swt/)
 - [Qt](/Libraries/ses_lib_qt/)
-- [HTML](/Libraries/ses_lib_html/)
+- [Web](/Libraries/ses_lib_web/)
 - [HTML5](/Libraries/ses_lib_html5/)
 - [Selenium](/Libraries/ses_lib_selenium/)
 - [jQuery](/Libraries/ses_lib_jquery/)
