@@ -7,15 +7,13 @@
     
     If you have any feedback or suggestions regarding this roadmap, please email us at support@inflectra.com.
 
-## Version 7.2 (February 2022)
 
-- **Spira Global Object** to communicate with Spira from Rapise tests (to create an incident, to run a test set, to support complex execution flows).
-- **Generator Global Object** to generate sequences of values usable across test runs (e.g. unique incremented value for every test run).
-- **Spira Dashboard** enhancements: Test Matrix, Test Set Status graph, create Test Set from Dashboard page.
+## Version 7.4 (October 2022)
 
-## Version 7.3 (April 2022)
-
-- **PageObject** pattern support. Allow sub-test to export global object, re-usable across other sub-tests.
+- **Managed 64-bit**: Recording and running tests on 64-bit .NET applications
+- **Java 64-bit**: Recording and running tests on 64-bit JVM.
+- **AgGrid Support**: automation for AgGrid control, including Shadow DOM applications (e.g. Polymer)
+- **Spira Dashboard**: optimization and UX enhancements
 
 ## Backlog
 
@@ -35,6 +33,7 @@
 
 ### UX Enhancements
 
+- **PageObject** pattern support. Allow sub-test to export global object, re-usable across other sub-tests.
 - **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
 - **Recorder Dialog 2.0**: Ability to fine tune captured steps during recording.
 - **Simplified installation/upgrade**: Do not require to uninstall Rapise before upgrade.
@@ -43,10 +42,8 @@
 
 ### Integrations
 
-- **Chrome Manifest V3** support.
 - **Reporter API**: Callbacks to plug in third-party reporting engines.
 - **Jenkins plugin**: Plugin to simplify running Rapise tests from Jenkins.
-- **Java 64-bit**: Recording and running tests on 64-bit JVM.
 - **Visual Studio Code integration**: Code helper for Rapise objects/actions. Start recording/playback from VS Code.
 - **Azure Test Plans integration**: Linking to a test case in an Azure Test Plan.
 
