@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/automated_reporting/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -8126,6 +8126,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ses_lib_web/" class="md-nav__link">
+        Web Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/HTMLObject/" class="md-nav__link">
         HTMLObject
       </a>
@@ -11185,7 +11197,7 @@ In this case <a href="../report_viewer/">ReportViewer</a> shows two additional c
 </ul>
 <p><strong>Destination HTML</strong> - path to the target <code>.html</code> file.</p>
 <p>This type of export may also be done from <strong>JavaScript</strong> code.
-<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">ldr</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Rapise.LogLoader&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">ldr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Rapise.LogLoader&quot;</span><span class="p">);</span>
     <span class="nx">ldr</span><span class="p">.</span><span class="nx">LoadTrp</span><span class="p">(</span><span class="s2">&quot;Reports\\ReportAssertions_2020-11-04_15-20.trp&quot;</span><span class="p">);</span>
     <span class="nx">ldr</span><span class="p">.</span><span class="nx">ExportAsHtml</span><span class="p">(</span><span class="s2">&quot;C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt&quot;</span><span class="p">,</span> <span class="s2">&quot;FullReport.html&quot;</span><span class="p">);</span>
 </code></pre></div></p>

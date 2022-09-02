@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/tutorial_web_using_javascript/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -8100,6 +8100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ses_lib_web/" class="md-nav__link">
+        Web Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/HTMLObject/" class="md-nav__link">
         HTMLObject
       </a>
@@ -11187,14 +11199,14 @@ item in the DOM Tree automatically:</p>
 <p>Open up the Web Spy as before:</p>
 <p><img alt="web spy" src="../img/tutorial_record_and_playback35.png" /></p>
 <p>One the toolbar enter in the following to locate the table:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="nc">table</span><span class="o">[</span><span class="n">@id=&#39;MainContent_grdBooks&#39;</span><span class="o">]</span><span class="w"></span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">//table[@id=&#39;MainContent_grdBooks&#39;]</span>
 </code></pre></div>
 </td></tr></table>
 <p><img alt="clip0038" src="../img/tutorial_record_and_playback43.png" /></p>
 <p>Now click on the <code>Test</code> button to display the matching results:</p>
 <p><img alt="test results" src="../img/tutorial_record_and_playback44.png" /></p>
 <p>Now that we have matched the table, we need to add dynamic XPath to find any row that has the cell containing 'Amsterdam' and find the edit link. You can expand the table and see the rows and cells visually and that will help us create the XPATH:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="nc">table</span><span class="o">[</span><span class="n">@id=&#39;MainContent_grdBooks&#39;</span><span class="o">]//</span><span class="n">tr</span><span class="o">/</span><span class="n">td</span><span class="o">[</span><span class="n">text()=&#39;Amsterdam&#39;</span><span class="o">]/</span><span class="p">..</span><span class="o">/</span><span class="n">td</span><span class="o">[</span><span class="n">5</span><span class="o">]/</span><span class="n">a</span><span class="w"></span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">//table[@id=&#39;MainContent_grdBooks&#39;]//tr/td[text()=&#39;Amsterdam&#39;]/../td[5]/a</span>
 </code></pre></div>
 </td></tr></table>
 <p>This XPath consists of the following elements:</p>

@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/spiratest_integration/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
@@ -8284,6 +8284,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/ses_lib_web/" class="md-nav__link">
+        Web Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/HTMLObject/" class="md-nav__link">
         HTMLObject
       </a>
@@ -11905,22 +11917,22 @@
 
     <span class="c1">//Input variables - allows SpiraTest to configure as parameters</span>
     <span class="c1">//Provide backup values if not defined</span>
-    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="k">typeof</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="nx">g_book_name</span> <span class="o">=</span> <span class="s1">&#39;The Restaurant at the end of the Universe&#39;</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="k">typeof</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="nx">g_book_author</span> <span class="o">=</span> <span class="s1">&#39;Agatha Christie&#39;</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="k">typeof</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="nx">g_book_genre</span> <span class="o">=</span> <span class="s1">&#39;Science Fiction&#39;</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="ow">typeof</span><span class="p">(</span><span class="nx">g_browser_library</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="k">typeof</span><span class="p">(</span><span class="nx">g_browser_library</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="nx">g_browserLibrary</span> <span class="o">=</span> <span class="s2">&quot;Internet Explorer HTML&quot;</span><span class="p">;</span>
     <span class="p">}</span>
