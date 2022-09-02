@@ -1,3 +1,4 @@
 - 'Web':
+    - 'Web Objects': 'Libraries/ses_lib_web.md'
     - 'HTMLObject': 'Libraries/HTMLObject.md'
     - 'Navigator': "Libraries/Navigator.md"
