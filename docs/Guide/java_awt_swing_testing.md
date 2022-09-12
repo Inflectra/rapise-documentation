@@ -4,7 +4,73 @@
 
 Rapise supports the testing of Java applications using either the Abstract Window Toolkit (AWT) or Swing graphic user interface toolkits. For maximum flexibility, Rapise can connect to your choice of JVM.
 
+## Supported Java Versions
+
+The Rapise Java Bridge is currently compatible with any version of the JRE, from Java 3 to Java 18.
+
+For Java 9 and above, Rapise Java Bridge works in Windows Enterprise and non-Enterprise editions if the application is running with Java JDK. For applications running with Java JRE, Rapise Java Bridge works only in Windows editions other than Enterprise.
+
 ## Java Bridge Installation
+
+The most flexible way to run a Java application with automation is to modify the command line. This can be done with a `.bat` file containing the necessary changes to the command line or to the environment variables.
+
+For versions of Java 8 or less it is also possible to automatically install Rapise Java Bridge as an extension. Installing the extension affects all applications launched by this Java instance.
+
+### Manual Installation (all Java versions)
+
+#### Changing the Command Line
+
+If you application is executed explicitly, i.e.:
+
+```cmd
+java -cp . org.sample.MyButton
+```
+
+Then what you need is to add the following values:
+
+```cmd
+set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
+set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
+set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
+set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
+
+java.exe "%EXT_OPTS%" -cp "%EXT_JARS%";. org.sample.MyButton
+```
+
+If your application is executed using the JAR file, i.e.:
+
+```cmd
+java -jar applet.jar
+```
+
+Then you need to figure out `applet.jar`'s main class and pass it explicitly to the application while the JAR should be a part of the classpath i.e.:
+
+```cmd
+set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
+set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
+set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
+set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
+
+java.exe "%EXT_OPTS%" -cp "%EXT_JARS%";applet.jar com.smartesoft.java.aut.AwtFrame
+```
+
+Note, that we removed the `-jar` switch and added `applet.jar` to the `-cp` input key.
+
+If have a `.jar` file and need to figure out main class then you may run `cmd.exe` in a folder with `.jar` and use a command like that (just replace `applet.jar` appropriately):
+
+```cmd
+jar xf applet.jar META-INF/MANIFEST.MF & type .\META-INF\MANIFEST.MF & del /s/f/q META-INF & rmdir META-INF
+```
+
+The output should contain Main-class (marked as yellow):
+
+![java_awt_swing_testing_jarcmd.png](./img/java_awt_swing_testing_jarcmd.png)
+
+so you may copy it and use in the modified application launcher. 
+
+> **Note:** Sample [Java](sample_tests.md#java) shipped with Rapise contains `x86run.cmd` that is launching the `applet.jar` with Rapise Java Bridge enabled. You may use it as a reference.
+
+### Automatic Installation (Java 3-8)
 
 In order to use a particular Java Virtual Machine (JVM) with Rapise you need to install Java Bridge into it. Installation process consists of several simple steps:
 
