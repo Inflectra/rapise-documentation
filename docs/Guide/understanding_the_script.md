@@ -97,12 +97,12 @@ Please, note: `SeSOnTestPrepare` should be not be put into the `Test` because `T
 - **SeSOnTestFailed** - May be used to do something on test failure event.
 
 ```javascript
-SeSOnTestFailed(function(){
-	Log("Test Failed...");
+SeSOnTestFailed(function(status){
+	Log("Test Failed");
 });
 ```
 
-**status** parameter will always be 0.
+**status** parameter will always be 0 (Failed) or -1 (Undefined).
 
 - **SeSOnTestReportReady** - Final point, called when report is closed and is ready for post-processing.
 
