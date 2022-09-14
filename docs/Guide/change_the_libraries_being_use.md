@@ -1,8 +1,8 @@
 # Change the Libraries Being Used
 
-Sometimes you are recording a test using a [library](recording_library.md) (e.g. Firefox HTML) and you realize that you need to add additional libraries to the test to make the recording more efficient.
+Sometimes you are recording a test using a [library](recording_library.md) (e.g. **Cross Browser Web**) and you realize that you need to add additional libraries to the test to make the recording more efficient.
 
-For example, you are recording using the Firefox web browser and you need to include the [Microsoft Dynamics 365](dynamics_365.md) libraries so that you can more easily record actions in Dynamics 365 while using Firefox. The additional library will allow Rapise to recognize the grids and treeviews as Dynamics objects rather than just standard HTML tables or DIVs.
+For example, you are recording using the web browser and you need to include the [Microsoft Dynamics 365](dynamics_365.md) libraries so that you can more easily record actions in Dynamics 365. The additional library will allow Rapise to recognize the grids and treeviews as Dynamics objects rather than just standard HTML tables or DIVs.
 
 ## How to Change the Libraries
 
@@ -10,7 +10,7 @@ To change the recording library being used select `Tools > Libraries` in the mai
 
 That will bring up the [Recording selection dialog box](select_an_application_to_record_dialog.md):
 
-![select\_libraries\_firefox\_dynamics](./img/change_the_libraries_being_use2.png)
+![Select Libraries](./img/change_the_libraries_being_use2.png)
 
 Now you can check the boxes of the additional libraries you want to use (or remove any existing ones that you no longer need).
 
