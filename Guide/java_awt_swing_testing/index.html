@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/java_awt_swing_testing/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -3708,9 +3708,49 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supported-java-versions" class="md-nav__link">
+    Supported Java Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#java-bridge-installation" class="md-nav__link">
     Java Bridge Installation
   </a>
+  
+    <nav class="md-nav" aria-label="Java Bridge Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-installation-all-java-versions" class="md-nav__link">
+    Manual Installation (all Java versions)
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Installation (all Java versions)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-command-line" class="md-nav__link">
+    Changing the Command Line
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-installation-java-3-8" class="md-nav__link">
+    Automatic Installation (Java 3-8)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -10996,9 +11036,49 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supported-java-versions" class="md-nav__link">
+    Supported Java Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#java-bridge-installation" class="md-nav__link">
     Java Bridge Installation
   </a>
+  
+    <nav class="md-nav" aria-label="Java Bridge Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-installation-all-java-versions" class="md-nav__link">
+    Manual Installation (all Java versions)
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Installation (all Java versions)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-command-line" class="md-nav__link">
+    Changing the Command Line
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-installation-java-3-8" class="md-nav__link">
+    Automatic Installation (Java 3-8)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -11046,7 +11126,47 @@
                 <h1 id="java-awtswing-testing">Java AWT/Swing Testing<a class="headerlink" href="#java-awtswing-testing" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>Rapise supports the testing of Java applications using either the Abstract Window Toolkit (AWT) or Swing graphic user interface toolkits. For maximum flexibility, Rapise can connect to your choice of JVM.</p>
+<h2 id="supported-java-versions">Supported Java Versions<a class="headerlink" href="#supported-java-versions" title="Permanent link">&para;</a></h2>
+<p>The Rapise Java Bridge is currently compatible with any version of the JRE, from Java 3 to Java 18.</p>
+<p>For Java 9 and above, Rapise Java Bridge works in Windows Enterprise and non-Enterprise editions if the application is running with Java JDK. For applications running with Java JRE, Rapise Java Bridge works only in Windows editions other than Enterprise.</p>
 <h2 id="java-bridge-installation">Java Bridge Installation<a class="headerlink" href="#java-bridge-installation" title="Permanent link">&para;</a></h2>
+<p>The most flexible way to run a Java application with automation is to modify the command line. This can be done with a <code>.bat</code> file containing the necessary changes to the command line or to the environment variables.</p>
+<p>For versions of Java 8 or less it is also possible to automatically install Rapise Java Bridge as an extension. Installing the extension affects all applications launched by this Java instance.</p>
+<h3 id="manual-installation-all-java-versions">Manual Installation (all Java versions)<a class="headerlink" href="#manual-installation-all-java-versions" title="Permanent link">&para;</a></h3>
+<h4 id="changing-the-command-line">Changing the Command Line<a class="headerlink" href="#changing-the-command-line" title="Permanent link">&para;</a></h4>
+<p>If you application is executed explicitly, i.e.:</p>
+<div class="highlight"><pre><span></span><code>java -cp . org.sample.MyButton
+</code></pre></div>
+<p>Then what you need is to add the following values:</p>
+<div class="highlight"><pre><span></span><code>set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
+set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
+set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
+set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
+
+java.exe &quot;%EXT_OPTS%&quot; -cp &quot;%EXT_JARS%&quot;;. org.sample.MyButton
+</code></pre></div>
+<p>If your application is executed using the JAR file, i.e.:</p>
+<div class="highlight"><pre><span></span><code>java -jar applet.jar
+</code></pre></div>
+<p>Then you need to figure out <code>applet.jar</code>'s main class and pass it explicitly to the application while the JAR should be a part of the classpath i.e.:</p>
+<div class="highlight"><pre><span></span><code>set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
+set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
+set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
+set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
+
+java.exe &quot;%EXT_OPTS%&quot; -cp &quot;%EXT_JARS%&quot;;applet.jar com.smartesoft.java.aut.AwtFrame
+</code></pre></div>
+<p>Note, that we removed the <code>-jar</code> switch and added <code>applet.jar</code> to the <code>-cp</code> input key.</p>
+<p>If have a <code>.jar</code> file and need to figure out main class then you may run <code>cmd.exe</code> in a folder with <code>.jar</code> and use a command like that (just replace <code>applet.jar</code> appropriately):</p>
+<div class="highlight"><pre><span></span><code>jar xf applet.jar META-INF/MANIFEST.MF &amp; type .\META-INF\MANIFEST.MF &amp; del /s/f/q META-INF &amp; rmdir META-INF
+</code></pre></div>
+<p>The output should contain Main-class (marked as yellow):</p>
+<p><img alt="java_awt_swing_testing_jarcmd.png" src="../img/java_awt_swing_testing_jarcmd.png" /></p>
+<p>so you may copy it and use in the modified application launcher. </p>
+<blockquote>
+<p><strong>Note:</strong> Sample <a href="../sample_tests/#java">Java</a> shipped with Rapise contains <code>x86run.cmd</code> that is launching the <code>applet.jar</code> with Rapise Java Bridge enabled. You may use it as a reference.</p>
+</blockquote>
+<h3 id="automatic-installation-java-3-8">Automatic Installation (Java 3-8)<a class="headerlink" href="#automatic-installation-java-3-8" title="Permanent link">&para;</a></h3>
 <p>In order to use a particular Java Virtual Machine (JVM) with Rapise you need to install Java Bridge into it. Installation process consists of several simple steps:</p>
 <ol>
 <li>

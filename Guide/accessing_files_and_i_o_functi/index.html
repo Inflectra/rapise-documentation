@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/accessing_files_and_i_o_functi/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -11072,7 +11072,7 @@
     <span class="kd">var</span> <span class="nx">IOFormat</span><span class="err">\</span><span class="nx">_Unicode</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1</span><span class="p">;</span>
     <span class="c1">//This sample demonstrates how to manipulate the Windows file system using Rapise</span>
     <span class="c1">//We shall open a text file for writing in this simple example</span>
-    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s1">&#39;Scripting.FileSystemObject&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s1">&#39;Scripting.FileSystemObject&#39;</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">ts</span> <span class="o">=</span> <span class="nx">fso</span><span class="p">.</span><span class="nx">CreateTextFile</span><span class="p">(</span><span class="s1">&#39;C:\\\\Temp\\\\MyTestFile.txt&#39;</span><span class="p">);</span>
     <span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
     <span class="kd">var</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">fso</span><span class="p">.</span><span class="nx">GetFile</span><span class="p">(</span><span class="s1">&#39;C:\\\\Temp\\\\MyTestFile.txt&#39;</span><span class="p">);</span>

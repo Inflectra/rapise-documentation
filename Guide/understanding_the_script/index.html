@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/understanding_the_script/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -11088,7 +11088,7 @@
 <ul>
 <li><strong>TestPrepare()</strong> - For advanced users; <code>TestPrepare()</code> is called before recording and before playback. It may be used to properly initialize libraries.</li>
 </ul>
-<p>More advanced ways of defining multiple test parepare handlers is to use <code>SeSOnTestPrepare</code> with callback:</p>
+<p>More advanced ways of defining multiple test prepare handlers is to use <code>SeSOnTestPrepare</code> with callback:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestPrepare</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
     <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Preparing...&quot;</span><span class="p">);</span>
 <span class="p">});</span>
@@ -11098,11 +11098,11 @@
 <ul>
 <li><strong>SeSOnTestFailed</strong> - May be used to do something on test failure event.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFailed</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test Failed...&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFailed</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">status</span><span class="p">){</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test Failed&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><strong>status</strong> parameter will always be 0.</p>
+<p><strong>status</strong> parameter will always be 0 (Failed) or -1 (Undefined).</p>
 <ul>
 <li><strong>SeSOnTestReportReady</strong> - Final point, called when report is closed and is ready for post-processing.</li>
 </ul>
@@ -11113,6 +11113,26 @@
     <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Report file: &quot;</span><span class="o">+</span><span class="nx">g_reportFileName</span><span class="p">);</span>
 <span class="p">})</span>
 </code></pre></div>
+<ul>
+<li><strong>SeSOnObjectNotFound</strong> - Final point, called when object is not found on the screen.</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="nx">SeSOnObjectNotFound</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">objectId</span><span class="p">,</span> <span class="cm">/**object*/</span><span class="nx">params</span><span class="p">){</span>
+    <span class="c1">// When &#39;Back&#39; is not on the screen, use &#39;Home&#39; instead.</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">objectId</span><span class="o">==</span><span class="s1">&#39;Back&#39;</span><span class="p">)</span> <span class="k">return</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Home&#39;</span><span class="p">,</span> <span class="nx">params</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<strong>objectId</strong> - object id; <strong>params</strong> - additional locator parameters (if any).</p>
+<ul>
+<li><strong>SeSOnLocatorValue</strong> - a way to modify default object locator value. Useful when you, for example.</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="nx">SeSOnLocatorValue</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">value</span><span class="p">,</span> <span class="cm">/**object*/</span><span class="nx">objInfo</span><span class="p">){</span>
+    <span class="c1">// We use &#39;{home_xpath}&#39; as a placeholder to replace it with different value here.</span>
+    <span class="c1">// ID is accessible as objInfo.object_id</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">value</span><span class="o">==</span><span class="s1">&#39;{home_xpath}&#39;</span><span class="p">)</span> <span class="k">return</span> <span class="s2">&quot;//a[@href=&#39;Default.aspx&#39;]&quot;</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">value</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div>
+<strong>value</strong> - value to replace; <strong>objInfo</strong> - all locator values.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <p>To specify a different test script, see the <a href="../settings_dialog/">Settings Dialog</a>. The test script is specified by <strong>Settings</strong> &gt; <strong>ScriptPath</strong>.</p>
                 

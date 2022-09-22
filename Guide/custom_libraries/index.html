@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/custom_libraries/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -11058,7 +11058,7 @@
 <p>Define one or many application-specific <a href="../global_objects/">Global Objects</a>.</p>
 <h2 id="advanced-support">Advanced Support<a class="headerlink" href="#advanced-support" title="Permanent link">&para;</a></h2>
 <p><strong>Add a Matcher Rule</strong> to the library for every object type in your application. The <code>SeSMatcherRule</code> includes information to identify the object and a set of behaviors.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="o">*</span><span class="nx">yourApplicationRule</span><span class="o">*</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SeSMatcherRule</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="o">*</span><span class="nx">yourApplicationRule</span><span class="o">*</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">SeSMatcherRule</span><span class="p">(</span>
 <span class="p">{</span>
     <span class="nx">object_type</span><span class="o">:</span> <span class="s2">&quot;*yourAppObject*&quot;</span><span class="p">,</span>
     <span class="nx">classname</span><span class="o">:</span> <span class="s2">&quot;*yourAppFrame*&quot;</span><span class="p">,</span> <span class="c1">//You can use a [regular expression](regular_expressions.md) here</span>
@@ -11095,7 +11095,7 @@
      <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">var</span> <span class="nx">newRule</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SeSMatcherRule</span><span class="p">({</span>
+<span class="kd">var</span> <span class="nx">newRule</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">SeSMatcherRule</span><span class="p">({</span>
     <span class="nx">object_type</span><span class="o">:</span> <span class="s2">&quot;someType&quot;</span><span class="p">,</span>
     <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;someRole&quot;</span><span class="p">,</span>
     <span class="nx">behavior</span><span class="o">:</span> <span class="p">[</span><span class="nx">newBehavior</span><span class="p">],</span>

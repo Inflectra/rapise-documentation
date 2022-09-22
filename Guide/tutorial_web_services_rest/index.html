@@ -23,7 +23,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/tutorial_web_services_rest/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -11410,17 +11410,17 @@ function Test(params)
     var sessionId = LibraryInformationSystem_Get_Session.GetResponseBodyObject();
     Tester.Message('Session ID: ' + sessionId);
 //  /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
 <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
 <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">DoExecute</span><span class="p">({</span> <span class="s2">&quot;session_id&quot;</span><span class="p">:</span> <span class="n">sessionId</span> <span class="p">});</span>
 </code></pre></div>
 </td></tr></table>
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;length&quot;, 14);</span>
-<span class="err">LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;[0].Name&quot;, &quot;Hound of the Baskervilles&quot;);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;length&quot;, 14);
+LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;[0].Name&quot;, &quot;Hound of the Baskervilles&quot;);
 </code></pre></div>
 </td></tr></table>
 <p>// CODE: Define new book
@@ -11431,8 +11431,8 @@ function Test(params)
         GenreId: 3
     };
 // /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
 <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
 </code></pre></div>
 </td></tr></table>
@@ -11446,9 +11446,9 @@ function Test(params)
     newBook = LibraryInformationSystem_Add_Book.GetResponseBodyObject();
     Tester.Message("New Book ID: " + newBook.Id);
 // /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);</span>
-<span class="err">LibraryInformationSystem_Get_Book.DoExecute({ &quot;session_id&quot;: sessionId });</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
+LibraryInformationSystem_Get_Book.DoExecute({ &quot;session_id&quot;: sessionId });
 </code></pre></div>
 </td></tr></table>
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^
