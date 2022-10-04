@@ -30,15 +30,34 @@ Executing a test in multiple browsers is slightly more complicated. We recommend
 
 See the [SpiraTest Integration](spiratest_integration.md) topic for detailed information on using Rapise with SpiraTest.
 
-## Playback in Multiple Browsers - DoInvokeTest
+## Playback in Multiple Browsers - SelectBrowserProfile
 
-To iterate through browsers in Rapise create a new test with **Web** methodology. Open `Main.js` file of the test and modify `g_load_libraries` line as follows:
+You may use `Navigator.SelectBrowserProfile` as follows:
 
 ```javascript
-g_load_libraries=["Internet Explorer HTML", "Firefox HTML", "Chrome HTML"];
-```
+Navigator.SelectBrowserProfile("BROWSER PROFILE 1");
+Navigator.Open('URL');
+...
+Navigator.Close();
 
-It will ensure that our test will load all browser libraries upon playback.
+Navigator.SelectBrowserProfile("BROWSER PROFILE 2");
+Navigator.Open('URL');
+...
+Navigator.Close();
+...
+```
+In RVL it will look like:
+
+![selectbrowserprofile](./img/cross_browser_testing_selectbrowserprofile.png)
+
+Or, the same using the Loop:
+
+![selectbrowserprofile loop](./img/cross_browser_testing_selectbrowserprofile_loop.png)
+
+
+## Playback in Multiple Browsers - DoInvokeTest
+
+To iterate through browsers in Rapise create a new test with **Web** methodology. 
 
 Now add a reference to the Web test you want to run in different browsers. In the `Files` view right click the test node and choose `Add File(s)...`. Provide the path to `*.sstest` file. You will see the reference added to the `Files` view.
 
@@ -60,15 +79,15 @@ So to run the test in three different browsers we get the following content of t
 ```javascript
 function Test(params)
 {
-	Navigator.SelectBrowserProfile("Internet Explorer HTML");
+	Navigator.SelectBrowserProfile("Selenium - Chrome");
 	Global.DoInvokeTest('%WORKDIR%/../Web Testing 2/Web Testing 2.sstest');
-	Navigator.SelectBrowserProfile("Chrome HTML");
+	Navigator.SelectBrowserProfile("Selenium - Edge");
 	Global.DoInvokeTest('%WORKDIR%/../Web Testing 2/Web Testing 2.sstest');
-	Navigator.SelectBrowserProfile("Firefox HTML");
+	Navigator.SelectBrowserProfile("Selenium - Firefox");
 	Global.DoInvokeTest('%WORKDIR%/../Web Testing 2/Web Testing 2.sstest');
 }
 
-g_load_libraries=["Internet Explorer HTML", "Firefox HTML", "Chrome HTML"];
+g_load_libraries=["Web"];
 ```
 
 In RVL it will look like:
