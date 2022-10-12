@@ -81,7 +81,7 @@ SeSOnTestFinish(function(){
 
 - **TestPrepare()** - For advanced users; `TestPrepare()` is called before recording and before playback. It may be used to properly initialize libraries.
 
-More advanced ways of defining multiple test parepare handlers is to use `SeSOnTestPrepare` with callback:
+More advanced ways of defining multiple test prepare handlers is to use `SeSOnTestPrepare` with callback:
 
 ```javascript
 SeSOnTestPrepare(function(){
@@ -97,12 +97,12 @@ Please, note: `SeSOnTestPrepare` should be not be put into the `Test` because `T
 - **SeSOnTestFailed** - May be used to do something on test failure event.
 
 ```javascript
-SeSOnTestFailed(function(){
-	Log("Test Failed...");
+SeSOnTestFailed(function(status){
+	Log("Test Failed");
 });
 ```
 
-**status** parameter will always be 0.
+**status** parameter will always be 0 (Failed) or -1 (Undefined).
 
 - **SeSOnTestReportReady** - Final point, called when report is closed and is ready for post-processing.
 
@@ -114,6 +114,28 @@ SeSOnTestReportReady(function(){
 	Log("Report file: "+g_reportFileName);
 })
 ```
+
+- **SeSOnObjectNotFound** - Final point, called when object is not found on the screen.
+
+```javascript
+SeSOnObjectNotFound(function (/**string*/ objectId, /**object*/params){
+	// When 'Back' is not on the screen, use 'Home' instead.
+	if(objectId=='Back') return SeS('Home', params);
+});
+```
+**objectId** - object id; **params** - additional locator parameters (if any).
+
+- **SeSOnLocatorValue** - a way to modify default object locator value. Useful when you, for example.
+
+```javascript
+SeSOnLocatorValue(function(/**string*/ value, /**object*/objInfo){
+	// We use '{home_xpath}' as a placeholder to replace it with different value here.
+	// ID is accessible as objInfo.object_id
+	if(value=='{home_xpath}') return "//a[@href='Default.aspx']";
+	return value;
+});
+```
+**value** - value to replace; **objInfo** - all locator values.
 
 
 ## See Also

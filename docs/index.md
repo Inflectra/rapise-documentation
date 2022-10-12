@@ -1,3 +1,4 @@
+## Inflectra
 # Rapise Documentation
 
 !!! info "Quick Links"

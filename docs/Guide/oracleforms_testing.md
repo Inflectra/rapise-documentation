@@ -9,9 +9,8 @@ Rapise [Oracle Forms Library](../Libraries/ses_lib_oracleforms.md) enables recor
 Rapise 7.1 has support for **Oracle Forms** version 10 and higher.
 
 ## Supported Java Versions
-Integration was tested with Java JRE Version 8 32 bit.
 
-Integration should work with other versions of Java (5 and higher). But it must be 32 bit (x86) version.
+Integration should work with other versions of Java (5 and higher). 
 
 ## Preparing Environment
 
