@@ -1357,6 +1357,15 @@
 		"trimstart",
 		"setwindowposition",
 		"setwindowsize",
-		"blocktest"
+		"blocktest",
+		"columnid",
+		"columnvisible",
+		"doclickbottomcell",
+		"dofilterbycolumn",
+		"doscrollby",
+		"dosetcheckbox",
+		"aggrid",
+		"Liberica",
+		"FSAL"
     ]
 }
