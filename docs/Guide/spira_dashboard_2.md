@@ -153,7 +153,10 @@ The dashboard contains top level menu to switch between views and a dropdown to 
 
 ### Data Tables
 
-In many cases first column of a data table contains ID of an item in Spira. You may click an ID to open the corresponding item in a browser window.
+In many cases first column of a data table contains ID of an item in Spira. You may click an ID to expand the corresponding item.
+
+!!! note
+	In Rapise 7.3 and older clicking on ID opens corresponding item in a browser. To open an item in Rapise 7.4+ use Action column menu (Open in Spira).  
 
 ![Data Table](./img/spira_dashboard_data_table.png)
 
@@ -161,7 +164,10 @@ Each data table has a menu opener (hamburger) located in the top right corner. T
 
 ### Hierarchical Tables
 
-Plus icon in a table row means that it can be expanded. Click the icon to reveal row details. It may contain more data tables.
+Many tables in the dashboard are hierarchical, clicking on item icon or item ID expands corresponding row and reveals nested items or item details.
+
+!!! note
+	If you have Rapise 7.3 or older use `plus`/`minus` icons to expand/collapse.
 
 ![Row Details](./img/spira_dashboard_row_details.png)
 
@@ -172,7 +178,7 @@ Plus icon in a table row means that it can be expanded. Click the icon to reveal
 
 Test cases and test sets may be placed into folders in Spira. The dashboard loads folder hierarchy. To navigate it click on folder icons.
 
-<img alt="Folder Tree" src="/Guide/img/spira_dashboard_tree.png" width="386"/>
+<img alt="Folder Tree" src="/Guide/img/spira_dashboard_tree.png" width="400"/>
 
 !!! note
 	Since Rapise 7.1 you may use double click to expand/collapse folders. Double click anywhere on the row with folder you want to expand/collapse.
@@ -257,7 +263,8 @@ Action menu for a test allows to
 
 1. Open the test in Rapise
 2. Link the test to a test case in Spira
-3. Execute the test (if linked to a test case) via RapiseLauncher on the local machine or a selected automation host. Requires Rapise 7.1+.
+3. Unlink the test from a test case in Spira 
+4. Execute the test (if linked to a test case) via RapiseLauncher on the local machine or a selected automation host. Requires Rapise 7.1+.
 
 ### Test Cases View
 
@@ -282,6 +289,9 @@ Action menu for a test case allows to
 	- g_verboseLevel = 1
 	- g_enableVideoRecording = false
 5. `Open This Test` in Rapise. It is a shortcut for [Open a test from SpiraTest](/Guide/spiratest_integration/#opening-a-test-from-spiratest).
+6. `Rename` a test case or a test case folder.
+7. `Delete` a test case.
+8. `Open in Spira` - open current item in a browser window.
 
 !!! note
 	For execution of a test case on a selected automation host (#2) - Rapise will use a special test set with the name of the automation host.
@@ -330,7 +340,11 @@ Action menu for a test set allows to
 1. Immediately `Execute` the test set on the local host.
 2. `Execute` the test set on a selected Automation Host. It will run as soon as RapiseLauncher on that host is ready.
 3. `Rerun` just failed test cases on a selected Automation Host.
-4. [Show Execution Plan](#test-set-execution-plan) for the test set.
+4. [Schedule](#test-set-scheduling) the test set.
+5. [Show Execution Plan](#test-set-execution-plan) for the test set.
+6. `Rename` a test case or a test case folder.
+7. `Delete` a test case.
+8. `Open in Spira` - open current item in a browser window.
 
 !!! note
 	For execution of a test set on a selected automation host (#2,#3) Rapise will use a special test set with the name of the automation host.
