@@ -4263,6 +4263,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ensurevisiblescrollbehavior" class="md-nav__link">
+    EnsureVisibleScrollBehavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ensurevisibleverticalalignment" class="md-nav__link">
     EnsureVisibleVerticalAlignment
   </a>
@@ -4295,6 +4302,13 @@
   
     <nav class="md-nav" aria-label="Action Detail">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkobjectenabled" class="md-nav__link">
+    CheckObjectEnabled
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#checkobjectexists" class="md-nav__link">
@@ -4474,6 +4488,20 @@
           <li class="md-nav__item">
   <a href="#dowaitfor" class="md-nav__link">
     DoWaitFor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforenabled" class="md-nav__link">
+    DoWaitForEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforvisible" class="md-nav__link">
+    DoWaitForVisible
   </a>
   
 </li>
@@ -8593,6 +8621,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ensurevisiblescrollbehavior" class="md-nav__link">
+    EnsureVisibleScrollBehavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ensurevisibleverticalalignment" class="md-nav__link">
     EnsureVisibleVerticalAlignment
   </a>
@@ -8625,6 +8660,13 @@
   
     <nav class="md-nav" aria-label="Action Detail">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkobjectenabled" class="md-nav__link">
+    CheckObjectEnabled
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#checkobjectexists" class="md-nav__link">
@@ -8804,6 +8846,20 @@
           <li class="md-nav__item">
   <a href="#dowaitfor" class="md-nav__link">
     DoWaitFor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforenabled" class="md-nav__link">
+    DoWaitForEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforvisible" class="md-nav__link">
+    DoWaitForVisible
   </a>
   
 </li>
@@ -12012,6 +12068,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ensurevisiblescrollbehavior" class="md-nav__link">
+    EnsureVisibleScrollBehavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ensurevisibleverticalalignment" class="md-nav__link">
     EnsureVisibleVerticalAlignment
   </a>
@@ -12044,6 +12107,13 @@
   
     <nav class="md-nav" aria-label="Action Detail">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkobjectenabled" class="md-nav__link">
+    CheckObjectEnabled
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#checkobjectexists" class="md-nav__link">
@@ -12223,6 +12293,20 @@
           <li class="md-nav__item">
   <a href="#dowaitfor" class="md-nav__link">
     DoWaitFor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforenabled" class="md-nav__link">
+    DoWaitForEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dowaitforvisible" class="md-nav__link">
+    DoWaitForVisible
   </a>
   
 </li>
@@ -12477,6 +12561,10 @@
 <td>One of "start", "center", "end", or "nearest".</td>
 </tr>
 <tr>
+<td><a href="#ensurevisiblescrollbehavior">EnsureVisibleScrollBehavior</a></td>
+<td>One of default scroll behaviors: "auto", "smooth" or "instant".</td>
+</tr>
+<tr>
 <td><a href="#ensurevisibleverticalalignment">EnsureVisibleVerticalAlignment</a></td>
 <td>One of "start", "center", "end", or "nearest".</td>
 </tr>
@@ -12501,6 +12589,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="#checkobjectenabled">CheckObjectEnabled</a></td>
+<td>Checks if object is enabled by its id or XPath.</td>
+</tr>
 <tr>
 <td><a href="#checkobjectexists">CheckObjectExists</a></td>
 <td>Checks if object is found on the screen by its id or XPath.</td>
@@ -12603,7 +12695,15 @@
 </tr>
 <tr>
 <td><a href="#dowaitfor">DoWaitFor</a></td>
-<td>Waits for object to appear on screen.</td>
+<td>Waits for object to appear in the current browser.</td>
+</tr>
+<tr>
+<td><a href="#dowaitforenabled">DoWaitForEnabled</a></td>
+<td>Waits for object to become enabled.</td>
+</tr>
+<tr>
+<td><a href="#dowaitforvisible">DoWaitForVisible</a></td>
+<td>Waits for object to appear in the screen.</td>
 </tr>
 <tr>
 <td><a href="#execjs">ExecJS</a></td>
@@ -12741,6 +12841,10 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <h4 id="ensurevisiblehorizontalalignment">EnsureVisibleHorizontalAlignment<a class="headerlink" href="#ensurevisiblehorizontalalignment" title="Permanent link">&para;</a></h4>
 <p>One of "start", "center", "end", or "nearest". Defaults to "nearest".</p>
 <p>Type: string</p>
+<p><a name="EnsureVisibleScrollBehavior"></a></p>
+<h4 id="ensurevisiblescrollbehavior">EnsureVisibleScrollBehavior<a class="headerlink" href="#ensurevisiblescrollbehavior" title="Permanent link">&para;</a></h4>
+<p>One of default scroll behaviors: "auto", "smooth" or "instant". Defaults ot "instant".</p>
+<p>Type: string</p>
 <p><a name="EnsureVisibleVerticalAlignment"></a></p>
 <h4 id="ensurevisibleverticalalignment">EnsureVisibleVerticalAlignment<a class="headerlink" href="#ensurevisibleverticalalignment" title="Permanent link">&para;</a></h4>
 <p>One of "start", "center", "end", or "nearest". Defaults to "start".</p>
@@ -12756,6 +12860,31 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
+<p><a name="CheckObjectEnabled"></a>    </p>
+<h4 id="checkobjectenabled">CheckObjectEnabled<a class="headerlink" href="#checkobjectenabled" title="Permanent link">&para;</a></h4>
+<p>Checks if object is enabled by its id or XPath.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">CheckObjectEnabled</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectId</td>
+<td>XPath or ID. XPath is detected by leading "." or "/".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><code>true</code> if object is available and enabled, <code>false</code> otherwise.</p>
+<p><a name="see.also.navigator.checkobjectenabled"></a></p>
 <p><a name="CheckObjectExists"></a>    </p>
 <h4 id="checkobjectexists">CheckObjectExists<a class="headerlink" href="#checkobjectexists" title="Permanent link">&para;</a></h4>
 <p>Checks if object is found on the screen by its id or XPath.</p>
@@ -12804,7 +12933,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </tbody>
 </table>
 <p><strong>Returns:</strong></p>
-<p><code>true</code> if object is visible, <code>false</code> otherwise.</p>
+<p><code>true</code> if object is available and visible, <code>false</code> otherwise.</p>
 <p><a name="see.also.navigator.checkobjectvisible"></a></p>
 <p><a name="Close"></a>    </p>
 <h4 id="close">Close<a class="headerlink" href="#close" title="Permanent link">&para;</a></h4>
@@ -13451,7 +13580,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p><a name="see.also.navigator.dosetexpectedpromptresult"></a></p>
 <p><a name="DoWaitFor"></a>    </p>
 <h4 id="dowaitfor">DoWaitFor<a class="headerlink" href="#dowaitfor" title="Permanent link">&para;</a></h4>
-<p>Waits for object to appear on screen. Requires Rapise 6.3+</p>
+<p>Waits for object to appear in the current browser. Object may be hidden or disabled. Requires Rapise 6.3+</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DoWaitFor</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -13484,6 +13613,76 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p><strong>Returns:</strong></p>
 <p>found object, otherwise - false.</p>
 <p><a name="see.also.navigator.dowaitfor"></a></p>
+<p><a name="DoWaitForEnabled"></a>    </p>
+<h4 id="dowaitforenabled">DoWaitForEnabled<a class="headerlink" href="#dowaitforenabled" title="Permanent link">&para;</a></h4>
+<p>Waits for object to become enabled. Requires Rapise 7.4+</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoWaitForEnabled</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectid</td>
+<td>Object Id or XPath of an element to check.</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>number</td>
+<td>Max time to wait. Default is 10000 milliseconds.<br>Optional.</td>
+</tr>
+<tr>
+<td>params</td>
+<td>object</td>
+<td>Overrides locator options.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>found object, otherwise - false.</p>
+<p><a name="see.also.navigator.dowaitforenabled"></a></p>
+<p><a name="DoWaitForVisible"></a>    </p>
+<h4 id="dowaitforvisible">DoWaitForVisible<a class="headerlink" href="#dowaitforvisible" title="Permanent link">&para;</a></h4>
+<p>Waits for object to appear in the screen. Requires Rapise 7.4+</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoWaitForVisible</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> 
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectid</td>
+<td>Object Id or XPath of an element to check.</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>number</td>
+<td>Max time to wait. Default is 10000 milliseconds.<br>Optional.</td>
+</tr>
+<tr>
+<td>params</td>
+<td>object</td>
+<td>Overrides locator options.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>found object, otherwise - false.</p>
+<p><a name="see.also.navigator.dowaitforvisible"></a></p>
 <p><a name="ExecJS"></a>    </p>
 <h4 id="execjs">ExecJS<a class="headerlink" href="#execjs" title="Permanent link">&para;</a></h4>
 <p>Executes given JavaScript statement in a browser and returns results.</p>

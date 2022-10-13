@@ -11109,6 +11109,8 @@
 <ul>
 <li>Mixed Mode Recording (Web, Managed, UIA, Java) [IN:7436]</li>
 <li>Test Set scheduling in Spira Dashboard [IN:7475]</li>
+<li>Add support for the Web Component Slot element (WebSpy, XPath generator) [IN:7479]</li>
+<li>Change navigation concept in Spira Dashboard - ID links must expand/collapse [IN:7502]</li>
 <li>Add generic support for AgGrid web component [IN:7581]</li>
 <li>Add support for Managed 64-bit desktop applications [IN:7582]</li>
 <li>Add support for Java 64-bit desktop applications [IN:7583]</li>
@@ -11125,37 +11127,70 @@
 </ul>
 <h3 id="new-object-api">New Object API<a class="headerlink" href="#new-object-api" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Navigator.DoWaitForVisible [IN:7481]</li>
-<li>Navigator.CheckObjectEnabled [IN:7483]</li>
+<li><a href="/Libraries/Navigator/#dowaitforvisible">Navigator.DoWaitForVisible</a> [IN:7481]</li>
+<li><a href="/Libraries/Navigator/#checkobjectenabled">Navigator.CheckObjectEnabled</a> [IN:7483]</li>
+<li><a href="/Libraries/Navigator/#ensurevisiblescrollbehavior">Navigator.EnsureVisibleScrollBehavior</a> [IN:7590]</li>
+<li><a href="/Libraries/Navigator/#dowaitforenabled">Navigator.DoWaitForEnabled</a> [IN:7591]</li>
 </ul>
 <h3 id="improvements">Improvements<a class="headerlink" href="#improvements" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Ability to instrument Liberica JDK for Java testing [IN:6866]</li>
-<li>When a Test Case is created from Dashboard it should have one manual step [IN:7000]</li>
-<li>When link Web/Mobile test to Spira - create g_browserLibrary/g_mobileProfile param for Test Case [IN:7023]</li>
+<li>
+<p>When a Test Case is created from Dashboard it should have one manual step [IN:7000]</p>
+<div class="admonition info">
+<p>This step can be used to link an incident.</p>
+</div>
+</li>
+<li>
+<p>When link Web/Mobile test to Spira - create g_browserLibrary/g_mobileProfile param for Test Case [IN:7023]</p>
+</li>
 <li>Add all Test Cases from Folder [IN:7057]</li>
-<li>Use Rapise Tests folder in Spira Documents for saving tests [IN:7124]</li>
-<li>SpiraDashboard: New Folder for Test Cases and Test Sets views [IN:7128]</li>
-<li>SpiraDashboard: Test Case view: rename Folder or Test Case [IN:7129]</li>
-<li>Click on last.trp in Spira Dashboard should open the report in Rapise [IN:7170]</li>
+<li>
+<p>Use Rapise Tests folder in Spira Documents for saving tests [IN:7124]</p>
+<div class="admonition info">
+<p>It does not impact already saved tests, but new tests will be saved into Root\Rapise Tests folder in Spira Documents.</p>
+</div>
+</li>
+<li>
+<p>SpiraDashboard: New Folder for Test Cases and Test Sets views [IN:7128]</p>
+<div class="admonition info">
+<p>Both Test Cases and Test Sets views in Spira Dashboard now have <code>New Folder</code> button.</p>
+</div>
+</li>
+<li>
+<p>SpiraDashboard: Test Cases view: rename Folder or Test Case [IN:7129]</p>
+<div class="admonition info">
+<p>Select a folder or a test case, expand menu in Actions column and choose <code>Rename…</code>.</p>
+</div>
+</li>
+<li>
+<p>Click on last.trp in Test Run details in Spira Dashboard should open the report in Rapise [IN:7170]</p>
+</li>
 <li>Upgrade JS parser to support ES2015 [IN:7325]</li>
-<li>Spira Dashboard: Test Sets view: rename Test Set or Test Set Folder [IN:7326]</li>
-<li>Spira Dashboard: Test Run details = open screenshot links in Rapise image viewer [IN:7334]</li>
+<li>
+<p>Spira Dashboard: Test Sets view: rename Test Set or Test Set Folder [IN:7326]</p>
+<div class="admonition info">
+<p>Select a folder or a test set, expand menu in Actions column and choose <code>Rename…</code>.</p>
+</div>
+</li>
+<li>
+<p>Spira Dashboard: Test Run details - open screenshot links in Rapise image viewer [IN:7334]</p>
+</li>
 <li>Synchronize parameters of Test Case and Rapise Test when saving to Spira [IN:7352]</li>
 <li>Auto set project in Spira Dashboard based on opened test [IN:7356]</li>
 <li>Propagate common parameters of the parent test to CSV editor in Spira Dashboard [IN:7360]</li>
-<li>Optimize performance of Get Snapshot in WebSpy [IN:7369]</li>
+<li><img alt="🚀" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f680.svg" title=":rocket:" /> Optimize performance of Get Snapshot in WebSpy [IN:7369]</li>
 <li>Make callback hooks for SeSHandleObjectNotFound and TestLocatorHook [IN:7416]</li>
 <li>Call SeSOnTestPrepare in Recorder [IN:7426]</li>
-<li>Make WebDriverSession.json global to reuse browser session across tests [IN:7431]</li>
-<li>Speed up Managed locator creation [IN:7439]</li>
-<li>Optimize Spira Dashboard performance [IN:7444]</li>
+<li><img alt="💡" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f4a1.svg" title=":bulb:" /> Make WebDriverSession.json global to reuse browser session across tests [IN:7431]</li>
+<li><img alt="🚀" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f680.svg" title=":rocket:" /> Speed up Managed locator creation [IN:7439]</li>
+<li><img alt="🚀" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f680.svg" title=":rocket:" /> Optimize Spira Dashboard performance [IN:7444]</li>
 <li>Add Tools/Remove All Breakpoints [IN:7450]</li>
-<li>Spira Dashboard: In Framework View add Unlink from Test Case option [IN:7463]</li>
+<li>Spira Dashboard: In Framework View add <code>Unlink from Test Case</code> option [IN:7463]</li>
 <li>Spira Dashboard: stability of loading Test Case and Test Set views and expanding/collapsing detail views [IN:7464]</li>
 <li>Reorganize Rapise Library Chooser (Tools &gt; Libraries) [IN:7466]</li>
 <li>Add SeSRunNodeCommand, SeSRunNode, SeSRunNpm, SeSRunNpx [IN:7476]</li>
-<li>In WebSpy we need to show Shadow DOM and SLOT Assigned Nodes [IN:7479]</li>
+<li>Add support for the Web Component Slot element (WebSpy, XPath generator) [IN:7479]</li>
 <li>Add a reference to the Floating License option to the Install popup window asking for activation code [IN:7493]</li>
 <li>Improve recording of Combo Boxes on Web pages [IN:7500]</li>
 <li>Change navigation concept in Spira Dashboard - ID links must expand/collapse [IN:7502]</li>
@@ -11168,7 +11203,12 @@
 <li>Progress Dialog for synchronizing files to/from Spira needs replacement [IN:7561]</li>
 <li>Saving a sub-test to Spira before saving the Framework Root should save from the root [IN:7564]</li>
 <li>Update DomSAP library to work on most recent SAP UI5 version [IN:7577]</li>
-<li>Remove Settings / Browser menu item [IN:7578]</li>
+<li>
+<p><img alt="💡" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f4a1.svg" title=":bulb:" /> Remove Settings / Browser menu item [IN:7578]</p>
+<div class="admonition info">
+<p>It was for legacy browsers and we should now better use <code>…</code> next to profiles instead.</p>
+</div>
+</li>
 </ul>
 <h3 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11191,6 +11231,7 @@
 <li>Corrupted Dashboard.json breaks whole Spira Dashboard [IN:7430]</li>
 <li>Java/OracleForms auto detection slows down recording of Java SWT applications [IN:7438]</li>
 <li>REST editor refresh issue [IN:7441]</li>
+<li>Show test properties when selecting root repository node in Test Objects [IN:7447]</li>
 <li>Save test when test case was deleted in Spira - no error [IN:7454]</li>
 <li>Navigator.Close must close browser even if there are opened alerts [IN:7498]</li>
 <li>iFrame within Shadow DOM is shown as empty in WebSpy [IN:7503]</li>
