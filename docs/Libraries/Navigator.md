@@ -19,6 +19,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 | ------------ | --------------- |
 | [AutoOpen](#autoopen) | During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance. |
 | [EnsureVisibleHorizontalAlignment](#ensurevisiblehorizontalalignment) | One of "start", "center", "end", or "nearest". |
+| [EnsureVisibleScrollBehavior](#ensurevisiblescrollbehavior) | One of default scroll behaviors: "auto", "smooth" or "instant". |
 | [EnsureVisibleVerticalAlignment](#ensurevisibleverticalalignment) | One of "start", "center", "end", or "nearest". |
 | [NativeEvents](#nativeevents) | Set it to true to use native keyboard and mouse input. |
 | [QuitIfNotConnected](#quitifnotconnected) | If connection to browser fails - open plugin page and quit. |
@@ -34,6 +35,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
+|	[CheckObjectEnabled](#checkobjectenabled) | Checks if object is enabled by its id or XPath. |
 |	[CheckObjectExists](#checkobjectexists) | Checks if object is found on the screen by its id or XPath. |
 |	[CheckObjectVisible](#checkobjectvisible) | Checks if object is visible on the screen by its id or XPath. |
 |	[Close](#close) | Closes browser. |
@@ -59,7 +61,9 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[DoSelectTab](#doselecttab) | Selects browser tab by title or URL. |
 |	[DoSetExpectedConfirmResult](#dosetexpectedconfirmresult) | Sets boolean value to return as a result of next browser `confirm` request. |
 |	[DoSetExpectedPromptResult](#dosetexpectedpromptresult) | Sets text to return as a result of next browser `prompt` request. |
-|	[DoWaitFor](#dowaitfor) | Waits for object to appear on screen. |
+|	[DoWaitFor](#dowaitfor) | Waits for object to appear in the current browser. |
+|	[DoWaitForEnabled](#dowaitforenabled) | Waits for object to become enabled. |
+|	[DoWaitForVisible](#dowaitforvisible) | Waits for object to appear in the screen. |
 |	[ExecJS](#execjs) | Executes given JavaScript statement in a browser and returns results. |
 |	[ExecPageJS](#execpagejs) | Executes given JavaScript statement in a browser in the context of the current page. |
 |	[Find](#find) | Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`. |
@@ -124,6 +128,19 @@ Type: string
 			
 			
 		
+<a name="EnsureVisibleScrollBehavior"></a>
+#### EnsureVisibleScrollBehavior
+
+
+One of default scroll behaviors: "auto", "smooth" or "instant". Defaults ot "instant".
+
+			
+	
+			
+Type: string
+			
+			
+		
 <a name="EnsureVisibleVerticalAlignment"></a>
 #### EnsureVisibleVerticalAlignment
 
@@ -169,6 +186,33 @@ Type: boolean
 	
 ### Action Detail
 		
+<a name="CheckObjectEnabled"></a>    
+#### CheckObjectEnabled
+
+Checks if object is enabled by its id or XPath.
+
+```javascript
+CheckObjectEnabled(xpathOrObjId) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
+
+
+
+
+**Returns:**
+
+`true` if object is available and enabled, `false` otherwise.
+
+
+
+<a name="see.also.navigator.checkobjectenabled"></a>
+
 <a name="CheckObjectExists"></a>    
 #### CheckObjectExists
 
@@ -217,7 +261,7 @@ CheckObjectVisible(xpathOrObjId)
 
 **Returns:**
 
-`true` if object is visible, `false` otherwise.
+`true` if object is available and visible, `false` otherwise.
 
 
 
@@ -789,7 +833,7 @@ DoSetExpectedPromptResult(expectedRes)
 <a name="DoWaitFor"></a>    
 #### DoWaitFor
 
-Waits for object to appear on screen. Requires Rapise 6.3+
+Waits for object to appear in the current browser. Object may be hidden or disabled. Requires Rapise 6.3+
 
 ```javascript
 DoWaitFor(xpathOrObjId, timeout, params) 
@@ -814,6 +858,64 @@ found object, otherwise - false.
 
 
 <a name="see.also.navigator.dowaitfor"></a>
+
+<a name="DoWaitForEnabled"></a>    
+#### DoWaitForEnabled
+
+Waits for object to become enabled. Requires Rapise 7.4+
+
+```javascript
+DoWaitForEnabled(xpathOrObjId, timeout, params) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
+| timeout | number |	Max time to wait. Default is 10000 milliseconds.<br>Optional. |
+| params | object |	Overrides locator options.<br>Optional. |
+
+
+
+
+**Returns:**
+
+found object, otherwise - false.
+
+
+
+<a name="see.also.navigator.dowaitforenabled"></a>
+
+<a name="DoWaitForVisible"></a>    
+#### DoWaitForVisible
+
+Waits for object to appear in the screen. Requires Rapise 7.4+
+
+```javascript
+DoWaitForVisible(xpathOrObjId, timeout, params) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
+| timeout | number |	Max time to wait. Default is 10000 milliseconds.<br>Optional. |
+| params | object |	Overrides locator options.<br>Optional. |
+
+
+
+
+**Returns:**
+
+found object, otherwise - false.
+
+
+
+<a name="see.also.navigator.dowaitforvisible"></a>
 
 <a name="ExecJS"></a>    
 #### ExecJS

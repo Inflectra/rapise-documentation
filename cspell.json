@@ -1366,6 +1366,10 @@
 		"dosetcheckbox",
 		"aggrid",
 		"Liberica",
-		"FSAL"
+		"FSAL",
+		"dowaitforvisible",
+		"checkobjectenabled",
+		"ensurevisiblescrollbehavior",
+		"dowaitforenabled"
     ]
 }

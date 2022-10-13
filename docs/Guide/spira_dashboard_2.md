@@ -105,6 +105,16 @@ Since Rapise 7.3 you may view an execution plan for any test set. Navigate to Te
 
 ![Execution Plan](./img/execution_plan.png)
 
+### Test Set Scheduling
+
+Since Rapise 7.4 you may schedule a test set directly from the dashboard. Navigate to Test Sets page in the dashboard, find the test set you need, expand Action menu for it (last column) and choose `Schedule...` menu item. Rapise will open a dialog with scheduling options for selected test set. In the dialog you may specify:
+
+- Date/time of execution
+- Recurrence (One Time, Daily, etc.)
+- Automation Host
+
+![Schedule](./img/schedule.png)
+
 ### CSV Editor
 
 Since Rapise 7.3 you may use convenient CSV editor to create and change Test Set attachments, especially those used as [Input Data Table](#input-data-table).
