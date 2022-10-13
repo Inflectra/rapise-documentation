@@ -12209,11 +12209,19 @@ borrower,borrower
 <p>The dashboard contains top level menu to switch between views and a dropdown to switch between products/projects. There is also a button to refresh data and search field to filter data in the current view. Filtering is applied to a column with orange caption (usually <code>Name</code>).</p>
 <p><img alt="Dashboard Main Menu" src="../img/spira_dashboard_toplevel_menu.png" /></p>
 <h3 id="data-tables">Data Tables<a class="headerlink" href="#data-tables" title="Permanent link">&para;</a></h3>
-<p>In many cases first column of a data table contains ID of an item in Spira. You may click an ID to open the corresponding item in a browser window.</p>
+<p>In many cases first column of a data table contains ID of an item in Spira. You may click an ID to expand the corresponding item.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Rapise 7.3 and older clicking on ID opens corresponding item in a browser. To open an item in Rapise 7.4+ use Action column menu (Open in Spira).  </p>
+</div>
 <p><img alt="Data Table" src="../img/spira_dashboard_data_table.png" /></p>
 <p>Each data table has a menu opener (hamburger) located in the top right corner. The menu contains some predefined filters and also allows to reveal filter row and choose what columns to show (since Rapise 7.2 the list of columns to show is stored in the dashboard settings). Clicking a column caption turns on sorting.</p>
 <h3 id="hierarchical-tables">Hierarchical Tables<a class="headerlink" href="#hierarchical-tables" title="Permanent link">&para;</a></h3>
-<p>Plus icon in a table row means that it can be expanded. Click the icon to reveal row details. It may contain more data tables.</p>
+<p>Many tables in the dashboard are hierarchical, clicking on item icon or item ID expands corresponding row and reveals nested items or item details.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have Rapise 7.3 or older use <code>plus</code>/<code>minus</code> icons to expand/collapse.</p>
+</div>
 <p><img alt="Row Details" src="../img/spira_dashboard_row_details.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -12221,7 +12229,7 @@ borrower,borrower
 </div>
 <h3 id="tree-view">Tree View<a class="headerlink" href="#tree-view" title="Permanent link">&para;</a></h3>
 <p>Test cases and test sets may be placed into folders in Spira. The dashboard loads folder hierarchy. To navigate it click on folder icons.</p>
-<p><img alt="Folder Tree" src="/Guide/img/spira_dashboard_tree.png" width="386"/></p>
+<p><img alt="Folder Tree" src="/Guide/img/spira_dashboard_tree.png" width="400"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Since Rapise 7.1 you may use double click to expand/collapse folders. Double click anywhere on the row with folder you want to expand/collapse.</p>
@@ -12293,6 +12301,7 @@ borrower,borrower
 <ol>
 <li>Open the test in Rapise</li>
 <li>Link the test to a test case in Spira</li>
+<li>Unlink the test from a test case in Spira </li>
 <li>Execute the test (if linked to a test case) via RapiseLauncher on the local machine or a selected automation host. Requires Rapise 7.1+.</li>
 </ol>
 <h3 id="test-cases-view">Test Cases View<a class="headerlink" href="#test-cases-view" title="Permanent link">&para;</a></h3>
@@ -12313,6 +12322,9 @@ borrower,borrower
 </ul>
 </li>
 <li><code>Open This Test</code> in Rapise. It is a shortcut for <a href="/Guide/spiratest_integration/#opening-a-test-from-spiratest">Open a test from SpiraTest</a>.</li>
+<li><code>Rename</code> a test case or a test case folder.</li>
+<li><code>Delete</code> a test case.</li>
+<li><code>Open in Spira</code> - open current item in a browser window.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -12345,7 +12357,11 @@ borrower,borrower
 <li>Immediately <code>Execute</code> the test set on the local host.</li>
 <li><code>Execute</code> the test set on a selected Automation Host. It will run as soon as RapiseLauncher on that host is ready.</li>
 <li><code>Rerun</code> just failed test cases on a selected Automation Host.</li>
+<li><a href="#test-set-scheduling">Schedule</a> the test set.</li>
 <li><a href="#test-set-execution-plan">Show Execution Plan</a> for the test set.</li>
+<li><code>Rename</code> a test case or a test case folder.</li>
+<li><code>Delete</code> a test case.</li>
+<li><code>Open in Spira</code> - open current item in a browser window.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
