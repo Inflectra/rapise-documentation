@@ -3,6 +3,70 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB681', 'How to disable browser notifications for Selenium Chrome')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB681.aspx">KB681</a> How to disable browser notifications for Selenium Chrome
+
+Some of the Web resources used for automated tests have a browser's push notifications active.However, push notifications creating unnecessary records in RVL table.
+
+### <a onclick="return RegisterKbClick('KB675', 'How to wait for Web element to disappear from screen')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB675.aspx">KB675</a> How to wait for Web element to disappear from screen
+
+Rapise has built-in function Navigator.DoWaitFor to wait for object to appear. If you need to do the opposite add the following function into your User.js.
+
+### <a onclick="return RegisterKbClick('KB673', 'Uploading files to ftp/sftp')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB673.aspx">KB673</a> Uploading files to ftp/sftp
+
+This article contains a function that may be used to upload file to FTP/SFTP.  This script uses WinSCP (https://winscp.net/eng/download.php) free tool to perform an upload.
+
+### <a onclick="return RegisterKbClick('KB671', 'How to attach a file to a test run in Spira')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB671.aspx">KB671</a> How to attach a file to a test run in Spira
+
+By default Rapise uploads all the screenshots to a test run in Spira but you may need to upload a specific file, e.g. text file or a spreadhseet.
+
+### <a onclick="return RegisterKbClick('KB663', 'Scripting Drag&Drop for Web Tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB663.aspx">KB663</a> Scripting Drag&Drop for Web Tests
+
+This function is useful for scripting DragNDrop for web tests.
+
+### <a onclick="return RegisterKbClick('KB662', 'Check if Excel Sheet Exists')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB662.aspx">KB662</a> Check if Excel Sheet Exists
+
+Function to check if give Excel workbook contains a sheet with given name.
+
+### <a onclick="return RegisterKbClick('KB655', 'How to work with Shadow DOM via Native Selenium API in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB655.aspx">KB655</a> How to work with Shadow DOM via Native Selenium API in Rapise
+
+If your scripting is style is writing JavaScript and using Native Selenium API and you wish to dig inside Shadow DOM - read this short article. Requires Rapise 7.3+
+
+### <a onclick="return RegisterKbClick('KB654', 'Moving Rapise Tests Between Spira Products')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB654.aspx">KB654</a> Moving Rapise Tests Between Spira Products
+
+Sometimes you want to move or clone tests. If tests have linked Rapise test cases, then you need to properly handle the move as described here.
+
+### <a onclick="return RegisterKbClick('KB652', 'Resolving 'Connection to Chrome Failed'')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB652.aspx">KB652</a> Resolving 'Connection to Chrome Failed'
+
+Recent change in MS Edge browser affects Edge and Chrome browser extensions for Rapise. Here we show the workaround.
+
+### <a onclick="return RegisterKbClick('KB651', 'Running Rapise test sets without third-party tools')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB651.aspx">KB651</a> Running Rapise test sets without third-party tools
+
+Recommended way of running Rapise tests on regular basis is using SpiraTest and RapiseLauncher. Other options include Azure DevOps and Jenkins. But there is also a way of running Rapise tests via command line. If this is what you are looking for then read this article.
+
+### <a onclick="return RegisterKbClick('KB649', 'Query Data from SQLite file')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB649.aspx">KB649</a> Query Data from SQLite file
+
+Some application store valuable information in sqlite format. This is a way to deal with it.
+
+### <a onclick="return RegisterKbClick('KB648', 'Checking .zip file contents with Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB648.aspx">KB648</a> Checking .zip file contents with Rapise
+
+Sometimes you need to check if some files are available in the .zip file. You may read the list of .zip file contents with Rapise.
+
+### <a onclick="return RegisterKbClick('KB646', 'How to press special keys on Android keyboard')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB646.aspx">KB646</a> How to press special keys on Android keyboard
+
+To enter characters one may use AndroidObject.DoSendKeys, but sometimes you need to send special characters like ENTER. Learn how from this article.
+
+### <a onclick="return RegisterKbClick('KB645', 'How to Ask User for Input')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB645.aspx">KB645</a> How to Ask User for Input
+
+For some automatic tests manual interaction is still required. For example, you may get authorization code to your phone and enter it to log into application. So you need to ask user for input to proceed execution.
+
+### <a onclick="return RegisterKbClick('KB644', 'Reading DOM element runtime property')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB644.aspx">KB644</a> Reading DOM element runtime property
+
+Sometimes we need to get runtime property for the element. For example, we need to get a background color to know that element is highlighted for a user. Anything configured via stylesheet is usually a property: color, font, margins, dimensions, visibility etc.
+
+### <a onclick="return RegisterKbClick('KB639', 'Dismiss Safari popup on a Mobile device')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB639.aspx">KB639</a> Dismiss Safari popup on a Mobile device
+
+If you are running a web test on a mobile device via Appium then you have three options of how to accept a popup window alert.
+
 ### <a onclick="return RegisterKbClick('KB636', 'Silent Installation of Rapise for CI/CD')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB636.aspx">KB636</a> Silent Installation of Rapise for CI/CD
 
 Sometimes you need to perform unattended installation of Rapise for test execution only. It may be a part of automated test execution step executed by CI/CD pipeline. Here is the snippet.
@@ -179,7 +243,7 @@ Sometimes we need to process data in groups or even in hierarchical way. Here we
 
 A customer asked us why Rapise uses Pascal Case names for the various operations, functions and properties, as well as the reason why operations are prefixed with a "Do" action name.
 
-### <a onclick="return RegisterKbClick('KB529', 'Using GoToMeeting for Support Session')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB529.aspx">KB529</a> Using GoToMeeting for Support Session
+### <a onclick="return RegisterKbClick('KB529', 'Using Zoom/GoToMeeting for Support Session')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB529.aspx">KB529</a> Using Zoom/GoToMeeting for Support Session
 
 Learn how to connect to a support session and how to enable Rapise Expert to remotely control your Rapise instance.
 
@@ -563,7 +627,7 @@ Sometimes you want to override certain Rapise settings (e.g. the Command Interva
 
 By default,  when you want to use Rapise to record and playback web tests using either Chrome or Firefox, you simply go to the appropriate web browser "store" and install the extension directly from the store. However sometimes you are testing web applications on a machine with no Internet Connectivity.
 
-### <a onclick="return RegisterKbClick('KB358', 'Hot to disable "Chrome is being controlled by automated test software" message')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB358.aspx">KB358</a> Hot to disable "Chrome is being controlled by automated test software" message
+### <a onclick="return RegisterKbClick('KB358', 'How to disable "Chrome is being controlled by automated test software" message')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB358.aspx">KB358</a> How to disable "Chrome is being controlled by automated test software" message
 
 When you run a test with Selenium - Chrome profile the browser is launched with a warning message below the address bar. It can be disabled.
 
@@ -1333,7 +1397,7 @@ This article describes the syntax for passing parameters from the Windows 32-bit
 
 ### <a onclick="return RegisterKbClick('KB25', 'Using Global.DoInvokeTest() to pass parameters between tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB25.aspx">KB25</a> Using Global.DoInvokeTest() to pass parameters between tests
 
-Sometimes you want a test script to be able to call another sub-test as part of its operation. You can do this using the Global.DoInvokeTest('path to test', [parameters]); function. This articles provides a more detailed example for doing this. The high-level information can be found on our website at: https://www.inflectra.com/Rapise/Guides.aspx?feature=Passing-Test-Parameters
+Sometimes you want a test script to be able to call another sub-test as part of its operation. You can do this using the Global.DoInvokeTest('path to test', [parameters]); function. This articles provides a more detailed example for doing this. The high-level information can be found in the knowledge base at: KB127 - Passing Test Parameters
 
 ### <a onclick="return RegisterKbClick('KB24', 'How to handle Windows/Objects that have names that change')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB24.aspx">KB24</a> How to handle Windows/Objects that have names that change
 

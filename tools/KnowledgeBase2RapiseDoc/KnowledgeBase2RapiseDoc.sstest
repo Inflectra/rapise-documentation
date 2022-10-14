@@ -11,12 +11,14 @@
   <ObjectLookupAttempts>30</ObjectLookupAttempts>
   <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
   <ShowReport>true</ShowReport>
+  <JSEngineType>Default</JSEngineType>
   <BeautifySavedObjects>true</BeautifySavedObjects>
   <SaveRecordingScreenshots>false</SaveRecordingScreenshots>
   <SavePlaybackScreenshots>false</SavePlaybackScreenshots>
   <SavePlaybackScreenshotsInTestReport>false</SavePlaybackScreenshotsInTestReport>
   <SaveScreenshotObjectOnly>false</SaveScreenshotObjectOnly>
   <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
+  <SaveScreenshotOnFailure>false</SaveScreenshotOnFailure>
   <CommandLine />
   <EntryPoint>Test</EntryPoint>
   <WorkDir>.</WorkDir>
@@ -38,24 +40,29 @@
     <TestFiles>
       <TestFile>
         <Path>%ENGINE%\Engine.sstest</Path>
+        <Tags />
       </TestFile>
       <TestFile>
         <Path>Main.js</Path>
+        <Tags />
       </TestFile>
       <TestFile>
         <Path>Main.rvl.xlsx</Path>
+        <Tags />
       </TestFile>
       <TestFile>
         <Path>Objects.js</Path>
+        <Tags />
       </TestFile>
       <TestFile>
         <Path>User.js</Path>
+        <Tags />
       </TestFile>
     </TestFiles>
   </TestFiles>
   <CustomStrings />
   <TestParams>
-    <TestParam name="Browser" variable="g_browserLibrary" defaultValue="Chrome" description="Please, specify browser type to use" output="false" ask="false">
+    <TestParam name="Browser" variable="g_browserLibrary" defaultValue="Selenium - Chrome" description="Please, specify browser type to use" output="false" ask="false">
       <PossibleValues />
     </TestParam>
     <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
