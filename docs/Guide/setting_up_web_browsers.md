@@ -32,6 +32,9 @@ Rapise 6.5 and higher requires you to update RapiseFirefox extension. Simply cli
 
 ## Chrome
 
+!!! important
+    Chrome extension and `Chrome HTML` browser profile have been deprecated. The reason is that [Google is going to remove MV2 extensions from the store <sup>:fontawesome-solid-external-link-alt:{.small-icon}</sup>](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/){target="_blank"}. At Inflectra we decided not to migrate to MV3 extension format because it is unlikely possible due to security changes (primary reason of appearance of MV3). To make Chrome based testing possible we implemented [Selenium Based Recorder <sup>:fontawesome-solid-external-link-alt:{.small-icon}</sup>](https://www.inflectra.com/Ideas/Entry/spotlight-rapise-selenium-based-recording-chrome-1348.aspx){target="_blank"}. So please consider switching to [Selenium - Chrome](/Guide/selenium_webdriver/#recording-using-selenium) browser profile.
+
 In order to test web applications using the Google Chrome browser, you will need to install an extension for Chrome that allows Rapise to
 interact with it:
 
