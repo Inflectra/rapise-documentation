@@ -6,6 +6,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Season 2022
 
+- [Rapise 7.4](https://youtu.be/kSObxqgSbbY)
 - [Rapise 7.3](https://youtu.be/LJqDcQGn3eU)
 - [Rapise 7.2](https://youtu.be/PruBlpkc2ns)
 - [Using Big Data Analysis to Reduce Test Flakiness](https://youtu.be/0hEdObCE2WA)
