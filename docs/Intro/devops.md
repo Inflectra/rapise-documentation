@@ -18,4 +18,4 @@ Legacy Integrations:
 
 ## Jenkins (and all others)
 
-Rapise has commend line interface and produces test reports in XML and Text formats. This is the key for integration with other tools. Use [Jenkins integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx) as an example.
+Rapise has command line interface and produces test reports in XML and Text formats. This is the key for integration with other tools. Use [Jenkins integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx) as an example.
