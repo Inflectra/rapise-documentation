@@ -8,12 +8,15 @@
     If you have any feedback or suggestions regarding this roadmap, please email us at support@inflectra.com.
 
 
-## Version 7.4 (October 2022)
+## Version 8.0 (Q2 2023)
 
-- **Managed 64-bit**: Recording and running tests on 64-bit .NET applications
-- **Java 64-bit**: Recording and running tests on 64-bit JVM.
-- **AgGrid Support**: automation for AgGrid control, including Shadow DOM applications (e.g. Polymer)
-- **Spira Dashboard**: optimization and UX enhancements
+- **Framework 2.0**
+    - Improved framework structure with test cases, test case folders, shared modules/page objects and scripts
+    - Import, rename, move test cases in Object Tree
+    - Simplified way of defining parameters and configurations
+    - Easy way of defining test sets
+    - Put whole framework into Spira with a single button click: automatic creation of test cases and test sets
+    - Fast way of storing framework files in Spira
 
 ## Backlog
 
