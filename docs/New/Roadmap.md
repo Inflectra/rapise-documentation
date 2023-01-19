@@ -1,7 +1,7 @@
 # Development Roadmap
 
 !!! info "About"
-    This roadmap document outlines the functionality planned for the future releases of the version 6 platform of Rapise. We are responsive to feedback so the contents of each individual release will be subject to change.
+    This roadmap document outlines the functionality planned for the future releases of Rapise. We are responsive to feedback so the contents of each individual release will be subject to change.
 
     Releases will also include lower level enhancements and bug fixes. We do not provide a public list of open bugs or enhancement requests at this time.
     
@@ -17,6 +17,15 @@
     - Easy way of defining test sets
     - Put whole framework into Spira with a single button click: automatic creation of test cases and test sets
     - Fast way of storing framework files in Spira
+
+## Q3 and Q4 2023
+
+- SAP desktop GUI support
+- GutHub Actions - run Rapise tests as a step of GitHub CI/CD workflow
+
+## 2024
+
+We will continue to work on deep integration between Rapise, Spira and Git. The focus is on simplicity of building test frameworks and execution of tests. Also as usual we will keep up-to-date our support for selected CRM/ERP systems: Microsoft Dynamics family of products, Salesforce, Oracle and SAP.
 
 ## Backlog
 
