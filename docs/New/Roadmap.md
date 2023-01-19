@@ -17,11 +17,14 @@
     - Easy way of defining test sets
     - Put whole framework into Spira with a single button click: automatic creation of test cases and test sets
     - Fast way of storing framework files in Spira
+    - **PageObject** pattern support. Allow to define global objects with own object repository re-usable across test cases. Also may be used to cover API entry points.
 
 ## Q3 and Q4 2023
 
-- SAP desktop GUI support
-- GutHub Actions - run Rapise tests as a step of GitHub CI/CD workflow
+- **SAP desktop** GUI support
+- **GutHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow
+- **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
+- Hierarchical test execution status report
 
 ## 2024
 
@@ -35,7 +38,6 @@ We will continue to work on deep integration between Rapise, Spira and Git. The 
 
 ### Object Repository Management
 
-- **Hierarchical Object Repository**: Multilevel object tree with ability to show objects from multiple tests and combine objects into user-defined groups.
 - **Remove unused objects**: Option to remove objects that are not used explicitly in RVL or JavaScript modules.
 
 ### Run Tests on Linux/macOS
@@ -45,8 +47,6 @@ We will continue to work on deep integration between Rapise, Spira and Git. The 
 
 ### UX Enhancements
 
-- **PageObject** pattern support. Allow sub-test to export global object, re-usable across other sub-tests.
-- **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
 - **Recorder Dialog 2.0**: Ability to fine tune captured steps during recording.
 - **Simplified installation/upgrade**: Do not require to uninstall Rapise before upgrade.
 - **Dark mode**: Someday, really :)
