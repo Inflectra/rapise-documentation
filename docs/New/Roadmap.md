@@ -25,6 +25,8 @@
 - **GutHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow
 - **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
 - Hierarchical test execution status report
+- Include **RVLMerge** into setup, RVLMerge is used to see the differences between RVL files
+- Enable JS Formatter/Beautifier for JS Editor to simplify code formatting
 
 ## 2024
 
