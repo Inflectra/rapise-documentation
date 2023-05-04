@@ -31,7 +31,7 @@
     <Groups>
       <TestGroup>
         <Name>Reports</Name>
-        <RealFolder>false</RealFolder>
+        <RealFolder>true</RealFolder>
         <IsFilterGroup>true</IsFilterGroup>
         <FilterWildcard>*.trp</FilterWildcard>
         <FilterPath>Reports</FilterPath>
@@ -42,6 +42,9 @@
     <TestFiles>
       <TestFile>
         <Path>Main.js</Path>
+      </TestFile>
+      <TestFile>
+        <Path>Main.rvl.xlsx</Path>
       </TestFile>
       <TestFile>
         <Path>Objects.js</Path>
@@ -59,6 +62,9 @@
       <PossibleValues />
     </TestParam>
     <TestParam name="Detect Web Plugins" variable="g_webPluginsAutoDetect" defaultValue="false" description="Enable web plugins auto detection" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
       <PossibleValues />
     </TestParam>
   </TestParams>

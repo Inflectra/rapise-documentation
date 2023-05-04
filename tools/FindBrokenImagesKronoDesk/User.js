@@ -1,6 +1,6 @@
 //Put your custom functions and variables in this file
 
-global.brokenImagesFileName = "BrokenImagesKronodesk.txt";
+global.brokenImagesFileName = "BrokenImagesRapise.txt";
 
 function ObjectToString(obj)
 {
@@ -35,7 +35,7 @@ function CheckUrl(url)
 	Tester.Message("Checking " + url);
 	Navigator.Open(url);
 	Global.DoSleep(3000);
-	var images = Navigator.DOMFindByXPath("//img[not(@id) and parent::p]", true);
+	var images = Navigator.DOMFindByXPath("//img[not(@id) and (parent::p or parent::font)]", true);
 	var attachments = Navigator.DOMFindByXPath("//a[@title and contains(@href,'Support/Attachment')]", true);
 	
 	var imageIds = [];
@@ -50,6 +50,10 @@ function CheckUrl(url)
 			{
 				imageIds.push(id);
 			}
+		}
+		else
+		{
+			imageIds.push("Image without src tag");
 		}
 	}
 	Tester.Message("Images: " + imageIds.join(","));

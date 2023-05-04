@@ -7,11 +7,10 @@ function Test(params)
 	
 	File.Delete(brokenImagesFileName);
 	CheckArticles();
-	
+
 /*	
 	var links = [
-"https://www.inflectra.com/Support/KnowledgeBase/KB705.aspx",
-"https://www.inflectra.com/Support/KnowledgeBase/KB19.aspx"
+"https://www.inflectra.com/Support/KnowledgeBase/KB112.aspx"
 	];
 	
 	for(var i = 0; i < links.length; i++)
@@ -22,7 +21,7 @@ function Test(params)
 			CheckUrl(href);
 		}
 	}	
-*/	
+*/
 }
 
 g_load_libraries=["Web"]
