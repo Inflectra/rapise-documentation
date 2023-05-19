@@ -18,6 +18,7 @@
     - Put whole framework into Spira with a single button click: automatic creation of test cases and test sets
     - Fast way of storing framework files in Spira
     - **PageObject** pattern support. Allow to define global objects with own object repository re-usable across test cases. Also may be used to cover API entry points.
+    - Include **RVLMerge** into setup, RVLMerge is used to see the differences between RVL files
 
 ## Q3 and Q4 2023
 
@@ -25,8 +26,8 @@
 - **GutHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow
 - **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
 - Hierarchical test execution status report
-- Include **RVLMerge** into setup, RVLMerge is used to see the differences between RVL files
 - Enable JS Formatter/Beautifier for JS Editor to simplify code formatting
+- *Proxy setting for JMeter Configuration* - make it easier to record Rapise API tests with JMeter.
 
 ## 2024
 
