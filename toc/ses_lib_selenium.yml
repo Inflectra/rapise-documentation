@@ -14,7 +14,7 @@
     
     - 'WebDriver': 'Libraries/WebDriver.md'    
 
-    - 'WebElement': 'Libraries/WebElement.md'
+    - 'WebElementWrapper': 'Libraries/WebElementWrapper.md'
 
     - 'Window': 'Libraries/Window.md'
 
