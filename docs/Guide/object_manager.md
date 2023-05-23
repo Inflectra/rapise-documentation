@@ -20,7 +20,6 @@ In the example above we have opened up a test case that has some objects. Now we
 
 ![object_manager_destination](img/object_manager_object_manager_destination.png)
 
-
 Once you have selected the file, the **Object Manager** dialog will display the list of objects to be merged (see next section).
 
 If you click on the dropdown button in left hand side of the dialog box, marked **Src** (Source), you will be able to select a different Rapise test object file (`Objects.js`) that you want to copy the objects **from**.
@@ -44,7 +43,7 @@ Each object in the source object list will be displayed with one of two icons:
 - **equals (=)** - this means that the same object exists in both the **source** and **destination** test object files.
 - **not-equals (≠)** - this means that the object only exists in the **source** file and not in the **destination** or vice-versa
 
-You can see which file(s) an objects is defined in (source, destination or both) by looking for the `...` icon. If you see this on the left hand side only, this object only exists in the source file, if you see it in the right-hand side, it only exists in the destination. 
+You can see which file(s) an objects is defined in (source, destination or both) by looking for the `...` icon. If you see this on the left hand side only, this object only exists in the source file, if you see it in the right-hand side, it only exists in the destination.
 
 If you see it on both sides then it exists in both the source and destination:
 

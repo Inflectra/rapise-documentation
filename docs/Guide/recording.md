@@ -8,7 +8,6 @@ The actions you take in using the [AUT](glossary.md) are observed by Rapise and 
 
 ## Usage
 
-
 The **Recording Activity (RA) Dialog** is opened when you start recording using the `Record` toolbar button. In [Testing Framework](/Guide/Frameworks/frameworks.md) mode you also need to [select destination test case](/Guide/Frameworks/frameworks.md#recording-test-cases-and-page-objects) for new recording. When the Recording Activity dialog appears, Rapise has connected to your AUT and is ready to monitor and record your interactions. You'll find instructions [here](recording_activity_dialog.md) or look at one of the examples:
 
 - [Tutorial: Windows Testing](twodialogs_sample.md)

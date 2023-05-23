@@ -22,7 +22,7 @@
 function SeSOverrideAction(/**string*/ objectType, /**string*/ actionName, callback)
 ```
 
-In most cases **SeSOverrideAction()** should be called from within [**SeSOnTestInit()**](understanding_the_script.md#sesontestinit).
+In most cases **SeSOverrideAction()** should be called from within [**SeSOnTestInit()**](understanding_the_script.md#sesontestinit) callback.
 
 ## Calling Base Actions
 
