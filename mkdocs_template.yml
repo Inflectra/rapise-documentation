@@ -80,7 +80,7 @@ nav:
     - 'Automation Tips': 'Intro/automation.md'
     - 'DevOps': 'Intro/devops.md'
     - 'Data-Driven Testing': 'Intro/ddt.md'
-    - 'Frameworks': 'Guide/Frameworks/framework.md'
+    - 'Frameworks': 'Guide/Frameworks/frameworks.md'
     - 'Cheatsheet': 'Guide/cheatsheet.md'
 
 - 'User''s Guide':
