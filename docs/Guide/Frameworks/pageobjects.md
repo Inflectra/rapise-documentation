@@ -4,7 +4,7 @@ The term **Modules** can be used as a synonym for **Page Objects**. The concept 
 
 In the context of testing frameworks, a [Page Object](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/) is a design pattern used to enhance the maintainability and reusability of automated tests, particularly in web application testing. It provides an object-oriented approach to represent the different pages or user interfaces of a web application.
 
-The main idea behind the **Page Object** pattern is to encapsulate the elements, actions, and behaviors of a web page within a dedicated **module**. 
+The main idea behind the **Page Object** pattern is to encapsulate the elements, actions, and behaviors of a web page within a dedicated **module**.
 
 Here are some key aspects and benefits of using **Page Objects**:
 
@@ -37,9 +37,13 @@ In summary, while Page Objects or Modules are commonly associated with encapsula
 ## Page Objects vs Test Cases
 
 What are the differences between **Page Objects / Modules** and **Test Cases**?
+
 - A Test Case typically has a single entry point, while a Page Object may have several action methods.
+
 - Test Cases may have a single set of input parameters, whereas Page Objects may have a set of input parameters for each action.
+
 - Page Object actions may return a value.
+
 - Page Objects can be organized into modules.
 
 ## Creating a Page Object / Module
@@ -48,29 +52,36 @@ There are two ways of creating a **Page Object (PO)** or **Module**:
 
 1. Main menu:
    - Go to **File** > **Add to Framework** > **Page Object / Module**.
-![Add Main Menu](img/add_page_object_main_menu.png)
-2. Context menu:
-   - Right-click on the **Page Objects / Modules** node in the [object tree]().
-![Add Context Menu](img/add_page_object_context_menu.png)
+   ![Add Main Menu](img/add_page_object_main_menu.png)
 
+2. Context menu:
+   - Right-click on the **Page Objects / Modules** node in the [object tree](/Guide/object_tree.md).
+   ![Add Context Menu](img/add_page_object_context_menu.png)
 
 ### Page Object - RVL vs JS
+
 Whenever you create a Page Object, you have two options: RVL mode or JavaScript mode.
 
 RVL is appropriate in most cases when the module mostly covers some plain scenarios - a set of interactions with the application.
 
 JavaScript may be handy in two cases:
+
 1. Whenever you need something where scripting is more appropriate (write loops, use arrays, do some data and string manipulations). Or when you work with JSON data where JavaScript appears to be the most handy handler.
+
 2. Whenever you have some web service interactions. Web services usually include JSON data as payload/responses, so JavaScript is more useful.
 
 In all other cases, choose RVL.
 
 ## Adding Page Object Actions
+
 The method of adding an action for the object varies depending on the chosen language: RVL or JavaScript.
 
 ### RVL Mode
+
 When in RVL mode, adding a sheet creates a new action, with the exception of two specific sheets:
+
 1. The `RVL` sheet, which is the default sheet. It is typically left empty in the Page Object or may contain an internal test executed via the [Play this Sheet](/Guide/rvl_editor.md#context-menu) context menu.
+
 2. The `PageObject` sheet, which is the default sheet for the Page Object. It is intended to include a comment with a detailed description of the action, which will be displayed to the user.
 
 ![PO Description](img/pageobjects_po_description.png)
@@ -78,11 +89,13 @@ When in RVL mode, adding a sheet creates a new action, with the exception of two
 Any other sheet is considered an action. The action name should be alphanumeric, meaning it should not contain spaces and should start with a letter or an underscore.
 
 ### JavaScript Mode
+
 In JavaScript mode, a Page Object / Module is equivalent to a [Global Object](/Guide/global_objects.md). All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.
 
 The distinction between a global object and a Page Object lies in their usage and features. Typically, a global object encompasses various functionalities like PDF support, text manipulations, and other utilities. It does not involve an object repository or web services. On the other hand, a page object can include an object repository and is often specific to an application, representing its unique characteristics and functionality.
 
 ## Action Naming and Reporting
+
 The preferred name for an action is `DoAction`. When this name is used, the result of the action is checked and reflected in the report. Checking the result involves verifying if the return value is 0, `false`, or an empty string, indicating a failed action. The inclusion of the `Do` prefix ensures that the result is checked and a line about the action is included in the report.
 
 Alternatively, you can name the action simply as `Action`. In this case, the action will not be displayed in the report, although it may have a return value that will not be checked.
@@ -92,6 +105,7 @@ It is common to have actions with names like `GetSmth` or `SetSmth`. These actio
 In certain situations, you may want to call a `DoAction` but ignore its output value and exclude it from the report. To achieve this, you can prefix the action name with an underscore, such as `_DoAction`, resulting in an empty execution report.
 
 ## Description, Parameters and Return Values
+
 Defining parameters and returning values as well as documenting them is straight forward in JavaScript mode is same as for [global objects](/Guide/global_objects.md#format)
 
 When creating an action in RVL, it generates necessary placeholders:
@@ -99,34 +113,38 @@ When creating an action in RVL, it generates necessary placeholders:
 ![Default RVL Action](img/default_action.png)
 
 Where:
+
 1. Is an action description. You may see it when choosing an action:
 
-![Action Description Dropdown](img/pageobjects_action_description_dropdown.png)
+   ![Action Description Dropdown](img/pageobjects_action_description_dropdown.png)
 
-or when hovering over it in the tree:
+   or when hovering over it in the tree:
 
-![Hovering Action Description](img/pageobjects_action_description_hover.png)
+   ![Hovering Action Description](img/pageobjects_action_description_hover.png)
 
 2. Parameters. Zero or more. All variable definitions appearing before `ReturnValue` variable assumed to be action parameters. Everything after `ReturnValue` are just internal variables needed for given action.
 
 3. Variable `ReturnValue`. May contain an action result (you may assign it through the course of the action)
 
 ## Execution
+
 To call a Page Object, you can use `MyObject.DoAction` directly in both RVL and JavaScript modes.
 
 ![PO Call RVL](img/pageobjects_po_call_rvl.png)
 ![PO Call JS](img/pageobjects_po_call_js.png)
 
-Alternatively, you can invoke a single action for the Page Object itself by using the [context menu](context_menu_url) and selecting "Invoke <ActionName>".
+Alternatively, you can invoke a single action for the Page Object itself by using the [context menu](context_menu_url) and selecting "Invoke *ActionName*()".
 
 ![Invoke Action](img/pageobjects_invoke_action.png)
 
 For RVL Modules, you can run any part of the module using standard RVL features such as Play Selection or Play this Sheet.
 
 ## Page Object Recording
+
 In RVL mode you do [recording](/Guide/rvl_editor.md#features) just like you do for usual test case with RVL.
 
 ## Page Object and Web Service
+
 When incorporating a Web Service (`.soap` or `.rest`) into your Page Object, it is advisable to use JavaScript instead of RVL (Rapise Visual Language) for creating the Page Object.
 
 When [generating](/Guide/rest_definition_editor.md#script-steps) a recorded script, it will be placed in the Page Object's `Main.js` file, which is not executed. Therefore, you will need to manually copy the generated script from `Main.js` and paste it into the appropriate action within the `<PageObjectName>.js` file.
