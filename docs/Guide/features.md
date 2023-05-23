@@ -11,6 +11,8 @@ Most of the features of Rapise fall into one of five categories:
 2. Reading and interpreting results and reports.
     - [Taking Screenshots](screenshots.md)
     - [Automated Reporting](automated_reporting.md)
+2. Building test frameworks.
+    - [Testing Frameworks](/Guide/Frameworks/frameworks.md)
 3. Additional features and capabilities for sophisticated testing.
     - [Object Spy](object_spy.md)
     - [Tests and Sub-Tests](tests_and_sub_tests.md)

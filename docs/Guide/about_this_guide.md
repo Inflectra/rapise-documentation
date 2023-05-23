@@ -7,6 +7,7 @@ The Rapise User's Guide is divided into four sections: Getting Started; Features
 The **Getting Started** section is for new Rapise users.  It has the following subsections:
 
 1. An [Overview](overview.md) of Rapise: what it's for and how to use it.
+1. Rapise provides comprehensive support for [Testing Frameworks](/Guide/Frameworks/frameworks.md), offering a holistic approach to test development.
 2. [Samples Index](sample_tests.md), where the sample projects included with Rapise are described.
 3. [Tutorial: Windows Testing](twodialogs_sample.md), a step-by-step tutorial for creating your first test with Rapise using a Windows desktop application.
 4. [Tutorial: Web Testing](tutorial_record_and_playback.md), a slightly more advanced tutorial in using Rapise to test a web page.
