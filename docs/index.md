@@ -8,7 +8,6 @@
     - [Mobile Testing](/mobile/)
     - [API Testing](/api/)
     - [Scriptless Testing](/codeless/)
-    - [Manual Testing](/manual/)
     - [Microsoft Dynamics Testing](/dynamics/)
 
 ### About the Docs
