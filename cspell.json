@@ -1376,6 +1376,8 @@
         "KronoDesk",
         "Bitbar",
         "Mountsi",
-        "vsix"
+        "vsix",
+        "mkdocs",
+        "htmlimg"
     ]
 }
