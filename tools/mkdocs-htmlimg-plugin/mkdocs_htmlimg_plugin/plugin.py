@@ -11,3 +11,13 @@ class HtmlImgPlugin(BasePlugin):
     def on_page_markdown(self, markdown, page, config, files):
         markdown = markdown.replace("scaled src=\"./img", "scaled src=\"../img");
         return markdown
+
+    def on_page_content(self, html, page, config, files):
+        html = html.replace("<img ", "<img processed ");
+        return html
+
+    def on_page_context(self, context, page, config, nav):
+        return context
+
+    def on_post_page(self, output_content, page, config):
+        return output_content

@@ -6,7 +6,7 @@ This is a MkDocs plugin to fix IMG links.
 
 Install the plugin using pip:
 
-`pip install mkdocs-htmlimg-plugin`
+`pip install -e mkdocs-htmlimg-plugin`
 
 Activate the plugin in `mkdocs.yml`:
 ```yaml
