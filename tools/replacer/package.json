@@ -20,9 +20,17 @@
   "contributes": {
     "commands": [
       {
-        "command": "replacer.convertImage",
-        "title": "Convert Image"
-      }
+        "command": "replacer.convertImage100",
+        "title": "Convert Image 100"
+      },
+      {
+        "command": "replacer.convertImage125",
+        "title": "Convert Image 125"
+      },
+      {
+        "command": "replacer.convertImage150",
+        "title": "Convert Image 150"
+      }      
     ]
   },
   "scripts": {

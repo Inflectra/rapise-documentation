@@ -4,7 +4,7 @@ Install it in VSCode to increase productivity while developing MkDocs documentat
 
 ## Features
 
-Replaces a markdown link with an HTML tag. Original image width is expected at the end of the markdown link. The width is divided by 1.25 and rounded.
+Updates a markdown link. Original image width is expected at the end of the link. The width is divided by 1.25 and rounded.
 
 ```
 ![Some Text](./path/to/image.png)600
@@ -13,7 +13,7 @@ Replaces a markdown link with an HTML tag. Original image width is expected at t
 =>
 
 ```
-<img alt="Some Text" href="./path/to/image.png" width="480px">
+![Some Text](./path/to/image.png){width="480px"}
 ```
 
 ## Packaging

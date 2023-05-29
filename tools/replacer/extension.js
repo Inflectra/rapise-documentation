@@ -13,13 +13,10 @@ function activate(context) {
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "replacer" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('replacer.convertImage', function () {
-		// The code you place here will be executed every time your command is executed
-		const textEditor = vscode.window.activeTextEditor;
+    
+    function doConvert(scaling)
+    {
+        const textEditor = vscode.window.activeTextEditor;
 		if (!textEditor) {
 			return;  // No open text editor
 		}
@@ -33,9 +30,9 @@ function activate(context) {
 		
 		if (matches.length == 4)
 		{
-			var newWidth = Math.round(parseInt(matches[3])/1.25);
-			var newUrl = matches[2].replace("./", "/Guide/");
-			var newText = '<img alt="' + matches[1] + '" src="' + newUrl + '" width="' + newWidth + 'px"/>'; 
+			var newWidth = Math.round(parseInt(matches[3])/scaling);
+			var newUrl = matches[2];
+			var newText = '![' + matches[1] + '](' + newUrl + '){width="' + newWidth + 'px"}'; 
 
 			textEditor.edit(function (editBuilder) {
 				editBuilder.replace(selection, newText);
@@ -43,10 +40,27 @@ function activate(context) {
 	
 			// Display a message box to the user
 			vscode.window.showInformationMessage('Replaced: ' + text + ' with: ' + newText);
-		}		
-	});
+		}
+    }
 
-	context.subscriptions.push(disposable);
+	// The command has been defined in the package.json file
+	// Now provide the implementation of the command with  registerCommand
+	// The commandId parameter must match the command field in package.json
+	let d100 = vscode.commands.registerCommand('replacer.convertImage100', function () {
+		// The code you place here will be executed every time your command is executed
+		doConvert(1.0);
+	});
+	context.subscriptions.push(d100);
+    
+	let d125 = vscode.commands.registerCommand('replacer.convertImage125', function () {
+		doConvert(1.25);
+	});
+	context.subscriptions.push(d125);
+
+	let d150 = vscode.commands.registerCommand('replacer.convertImage150', function () {
+		doConvert(1.50);
+	});
+	context.subscriptions.push(d150);    
 }
 
 // This method is called when your extension is deactivated
