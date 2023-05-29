@@ -228,7 +228,6 @@ Provides access to all the global settings and options in Rapise. Settings relev
 * **Global** - This brings up the [Global Settings dialog](options_dialog.md) that lets you change any of the system-wide settings for Rapise.
 * **SpiraTest** - takes you to a dialog box that lets you change how Rapise is integrated with the [SpiraTest](spiratest_integration.md) test management system. It will let you change the URL, username and password used to connect.
 * **Web Spy** - displays the [Web Spy Settings](web_settings.md) dialog box. This lets you change the settings.
-* **Browser** - displays the [Browser Settings](browser_settings.md) dialog box. This lets you edit and select the web browser profile being used for web testing (for non-Selenium browser profiles).
 * **Selenium** - displays the [Selenium settings](selenium_settings_dialog.md) dialog box. This is used to edit the different Selenium web browser profiles that can be used by Rapise.
 related to using the Web Spy to inspect the DOM objects in web pages.
 * **Mobile** - displays the [Mobile Settings](mobile_settings_dialog.md) dialog box. This lets you configure the different mobile devices that are available for testing by Rapise.

@@ -79,7 +79,7 @@ Click(el)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| el | WebElement |	The element on which to click.<br>Optional. |
+| el | WebElementWrapper |	The element on which to click.<br>Optional. |
 
 
 
@@ -106,7 +106,7 @@ ClickAndHold(el)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| el | WebElement |	The element on which to click and hold.<br>Optional. |
+| el | WebElementWrapper |	The element on which to click and hold.<br>Optional. |
 
 
 
@@ -133,7 +133,7 @@ ContextClick(el)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| el | WebElement |	The element on which to right-click.<br>Optional. |
+| el | WebElementWrapper |	The element on which to right-click.<br>Optional. |
 
 
 
@@ -160,7 +160,7 @@ DoubleClick(el)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| el | WebElement |	The element on which to double-click.<br>Optional. |
+| el | WebElementWrapper |	The element on which to double-click.<br>Optional. |
 
 
 
@@ -187,8 +187,8 @@ DragAndDrop(source, target)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| source | WebElement |	The element on which the drag operation is started. |
-| target | WebElement |	The element on which the drop is performed. |
+| source | WebElementWrapper |	The element on which the drag operation is started. |
+| target | WebElementWrapper |	The element on which the drop is performed. |
 
 
 
@@ -215,7 +215,7 @@ DragAndDropToOffset(source, offsetX, offsetY)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| source | WebElement |	The element on which the drag operation is started. |
+| source | WebElementWrapper |	The element on which the drag operation is started. |
 | offsetX | number |	The horizontal offset to which to move the mouse. |
 | offsetY | number |	The vertical offset to which to move the mouse. |
 
@@ -245,7 +245,7 @@ KeyDown(theKey, el)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | theKey | string |	The key to be sent. Accepts "Shift", "Control" and "Alt". |
-| el | WebElement |	The element to which to send the key command.<br>Optional. |
+| el | WebElementWrapper |	The element to which to send the key command.<br>Optional. |
 
 
 
@@ -273,7 +273,7 @@ KeyUp(theKey, el)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | theKey | string |	The key to be sent. Accepts "Shift", "Control" and "Alt". |
-| el | WebElement |	The element to which to send the key command.<br>Optional. |
+| el | WebElementWrapper |	The element to which to send the key command.<br>Optional. |
 
 
 
@@ -328,7 +328,7 @@ MoveToElement(el, offsetX, offsetY)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| el | WebElement |	The element to which to move the mouse. |
+| el | WebElementWrapper |	The element to which to move the mouse. |
 | offsetX | number |	The horizontal offset to which to move the mouse.<br>Optional. |
 | offsetY | number |	The vertical offset to which to move the mouse.<br>Optional. |
 
@@ -372,7 +372,7 @@ Release(el)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| el | WebElement |	The element on which to release the button.<br>Optional. |
+| el | WebElementWrapper |	The element on which to release the button.<br>Optional. |
 
 
 
@@ -400,7 +400,7 @@ SendKeys(keysToSend, el)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | keysToSend | string |	The keystrokes to send to the browser. |
-| el | WebElement |	The element to which to send the keystrokes.<br>Optional. |
+| el | WebElementWrapper |	The element to which to send the keystrokes.<br>Optional. |
 
 
 

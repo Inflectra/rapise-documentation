@@ -13,7 +13,7 @@
 
 - [WebDriver](WebDriver.md)
 
-- [WebElement](WebElement.md)
+- [WebElementWrapper](WebElementWrapper.md)
 
 - [Window](Window.md)
 

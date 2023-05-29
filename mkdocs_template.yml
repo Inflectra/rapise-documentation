@@ -80,13 +80,12 @@ nav:
     - 'Automation Tips': 'Intro/automation.md'
     - 'DevOps': 'Intro/devops.md'
     - 'Data-Driven Testing': 'Intro/ddt.md'
-    - 'Frameworks': 'Intro/framework.md'
+    - 'Frameworks': 'Guide/Frameworks/frameworks.md'
     - 'Cheatsheet': 'Guide/cheatsheet.md'
 
 - 'User''s Guide':
     - 'About this Guide': 'Guide/about_this_guide.md'
     - 'Getting Started':
-        - 'Getting Started': 'Guide/getting_started.md'
         - 'Overview': 'Guide/overview.md'
         - 'Samples Index': 'Guide/sample_tests.md'
         - 'Tutorial: Desktop Testing':

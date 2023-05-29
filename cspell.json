@@ -1371,6 +1371,13 @@
 		"checkobjectenabled",
 		"ensurevisiblescrollbehavior",
 		"dowaitforenabled",
-		"fontawesome"
+		"fontawesome",
+        "Gmail",
+        "KronoDesk",
+        "Bitbar",
+        "Mountsi",
+        "vsix",
+        "mkdocs",
+        "htmlimg"
     ]
 }

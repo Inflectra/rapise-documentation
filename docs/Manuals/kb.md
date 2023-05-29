@@ -3,6 +3,78 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB746', 'Dynamically Clicking on a Desktop App Button Sample (MS-Word)')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB746.aspx">KB746</a> Dynamically Clicking on a Desktop App Button Sample (MS-Word)
+
+We had a customer request for a sample that demonstrates how to click on buttons in a desktop application (in this case a plugin for Microsoft Word) where instead of having to learn each of the buttons individually, you can learn the button container and then loop through the buttons using a Rapise RVL Map.
+
+### <a onclick="return RegisterKbClick('KB745', 'Re-formatting strings and numbers')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB745.aspx">KB745</a> Re-formatting strings and numbers
+
+Sometimes you need to change format of date, time or number to put it into some form or to compare it with known value. Here is a couple of functions.
+
+### <a onclick="return RegisterKbClick('KB739', 'Loading Users into KronoDesk from Excel using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB739.aspx">KB739</a> Loading Users into KronoDesk from Excel using Rapise
+
+We had a customer that needed to load in a batch of customer users into our KronoDesk service desk platform. The built-in Excel add-on is only able to import help desk tickets, not users. So in this article we explain how you can use Rapise to bulk load in the data using the KronoDesk REST API.
+
+### <a onclick="return RegisterKbClick('KB737', 'Waiting for Process to Start / Stop in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB737.aspx">KB737</a> Waiting for Process to Start / Stop in Rapise
+
+Here is a couple of useful functions for the case you need to wait for a process.
+
+### <a onclick="return RegisterKbClick('KB732', 'Run Rapise tests on Bitbar')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB732.aspx">KB732</a> Run Rapise tests on Bitbar
+
+Bitbar is a browser and device farm that enables it's clients to run cross-browser and mobile tests remotely.
+
+### <a onclick="return RegisterKbClick('KB728', 'Windows Defender: Trojan:JS/Mountsi.B!ml False Alarm about Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB728.aspx">KB728</a> Windows Defender: Trojan:JS/Mountsi.B!ml False Alarm about Rapise
+
+Recently Rapise has problem working on some hosts with Windows Defender.  The problem occurs as a result of one of the key files being quarantined. Here we provide necessary workarounds.
+
+### <a onclick="return RegisterKbClick('KB724', 'Check if File is in the Downloads Folder')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB724.aspx">KB724</a> Check if File is in the Downloads Folder
+
+When you test scenario has some sort of download we may need to wait/verify for download to be done. Here we provide some functions designed to help in such cases.
+
+### <a onclick="return RegisterKbClick('KB722', 'Play All Sheets in RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB722.aspx">KB722</a> Play All Sheets in RVL
+
+Use many sheets in RVL? Want to execute them all at once without calling one-by-one. Here is a simple solution.
+
+### <a onclick="return RegisterKbClick('KB718', 'Sending Email With Test Report To Spira Users After Execution')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB718.aspx">KB718</a> Sending Email With Test Report To Spira Users After Execution
+
+Sometimes you need to be notified of one test with some summary. And here we give you an example. With this approach, interested users can receive an email about the status of a test with a report.
+
+### <a onclick="return RegisterKbClick('KB712', 'File Checkpoints in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB712.aspx">KB712</a> File Checkpoints in Rapise
+
+Sometimes you need to compare files: documents, invoices, logs etc. Sometimes you need to use direct comparison or pattern comparison. You may need to compare text, PDF or binary files. Here we provide one of the solutions for Rapise.
+
+### <a onclick="return RegisterKbClick('KB705', 'How to switch from `Chrome HTML` to `Selenium - Chrome` browser profile')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB705.aspx">KB705</a> How to switch from `Chrome HTML` to `Selenium - Chrome` browser profile
+
+Chrome extension and Chrome HTML browser profile have been deprecated. Chrome extension and Chrome HTML browser profile have been deprecated. The reason is that Google is going to remove MV2 extensions from the store . At Inflectra we decided not to migrate to MV3 extension format because it is unlikely possible due to security changes (primary reason of appearance of MV3). To make Chrome based testing possible we implemented Selenium Based Recorder . So please consider switching to Selenium - Chrome browser profile.
+
+### <a onclick="return RegisterKbClick('KB697', 'Modifying Date string')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB697.aspx">KB697</a> Modifying Date string
+
+Sometimes you need to manipulate a date string: add year, find same date next month, add an hour to a meeting start time and so on. Here we have a function for doing increments and subtractions of that kind.
+
+### <a onclick="return RegisterKbClick('KB692', 'How to load Chrome browser extensions via Selenium profile')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB692.aspx">KB692</a> How to load Chrome browser extensions via Selenium profile
+
+If you need specific browser extensions for running web tests you may specify them in Selenium profile.
+
+### <a onclick="return RegisterKbClick('KB689', 'How to find Rapise activation code that is used on a machine')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB689.aspx">KB689</a> How to find Rapise activation code that is used on a machine
+
+In your Customer Area on Inflectra website you have a list of Rapise activation codes. To find out which code is used on a specific machine follow these simple steps.
+
+### <a onclick="return RegisterKbClick('KB686', 'How to set permanent user profile for Selenium - Chrome/Edge profile')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB686.aspx">KB686</a> How to set permanent user profile for Selenium - Chrome/Edge profile
+
+When you are recording/running a test via Selenium browser profiles in Rapise - by default a new user profile is created when new instance of a browser is launched. It means that new browser instance starts with empty cache, no cookies, etc. Sometimes it complicates testing. If you are testing a Web application that requires SMS/Email code to authorize a browser then you will have to do it every time. Automation of  input of SMS/Email codes may be really hard. It is much easier to authorize a browser manually once and then run tests for long period of time. To make it work you will need to configure a permanent user profile for the browser used for testing. Learn how to do it for Chrome/Edge from this article.
+
+### <a onclick="return RegisterKbClick('KB685', 'How to send an email via Office 365 account with OAuth')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB685.aspx">KB685</a> How to send an email via Office 365 account with OAuth
+
+In the past we could use basic authentication to send an email but today this method of authentication is considered insecure and is disabled in major email services like Office 365 and Gmail. Read this article to learn how to send an email via SMTP with OAuth using Office 365 account.
+
+### <a onclick="return RegisterKbClick('KB683', 'How to set download folder for Selenium - Chrome profile')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB683.aspx">KB683</a> How to set download folder for Selenium - Chrome profile
+
+If your Web testing scenario includes file downloading you may configure `Selenium - Chrome` profile and specify which folder to use to store downloaded files.
+
+### <a onclick="return RegisterKbClick('KB682', 'Sample Excel File')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB682.aspx">KB682</a> Sample Excel File
+
+This is a sample Excel file to download and use during demos.
+
 ### <a onclick="return RegisterKbClick('KB681', 'How to disable browser notifications for Selenium Chrome')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB681.aspx">KB681</a> How to disable browser notifications for Selenium Chrome
 
 Some of the Web resources used for automated tests have a browser's push notifications active.However, push notifications creating unnecessary records in RVL table.

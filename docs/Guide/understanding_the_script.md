@@ -8,6 +8,7 @@ When you [create a new test](create_a_new_test.md) in Rapise, four files are cre
 - **Main.js** - the main test script file that contains the entry point of the test - `Test` function.
 - **Objects.js** - the file that contains recorded objects.
 - **User.js** - the file that contains user defined functions.
+- **Main.rvl.xslx** - an [RVL](/Guide/rvl_editor.md) file for RVL-enabled tests.
 
 where ***&lt;TestName&gt;*** is the name of your Test.
 
@@ -19,7 +20,9 @@ If you are going to modify the script, or create a test script from scratch, you
 
 ## Basic Script
 
-**Main.js**
+### Main.js
+
+`Main.js` always contains two things: `Test(param)` entry point function and `g_load_libraries` array containing the libraries needed for this test case.
 
 ```javascript
 // Default entry point of the test
@@ -32,14 +35,18 @@ function Test()
 g_load_libraries=["Web"]; // This script will load the Web library
 ```
 
-**User.js**
+### User.js
+
+`User.js` Is a place where to put functions and variables specific to a given test case.
 
 ```javascript
 //Put your custom functions and variables in this file
 
 ```
 
-**Object.js**
+### Object.js
+
+`Object.js` is an object repository. You may consider it as a `JSON` definition assigned to a `saved_script_objects` variable.
 
 ```javascript
 var saved_script_objects = 
@@ -48,95 +55,114 @@ var saved_script_objects =
 };
 ```
 
+### Main.rvl.xlsx
+
+See [RVL](/Guide/visual_language.md)
+
 ## Full script
 
-The following functions are also recognized by Rapise and may be present in the test script. Put these functions either in `Main.js` or `User.js`.
+The following callback functions are also recognized by Rapise and may be present in the test script. Put these functions either in `Main.js` or `User.js`.
 
-- **TestInit()** - This function is called once before script playback. It should be used to initialize script-wide data (counters, open datasets, etc).
+### SeSOnTestInit
 
-More advanced ways of defining multiple test initialization handlers is to use `SeSOnTestInit` with callback:
+This callback function is called once before script playback. It should be used to initialize script-wide data (counters, open datasets, etc).
 
 ```javascript
 SeSOnTestInit(function(){
-	Log("Initializing...");
+    Log("Initializing...");
 });
 ```
 
-`SeSOnTestInit` may be used multiple times. For example, one may use it in the custom library to launch an application or clean up the logs and then use it in the test to do test-specific actions. 
+`SeSOnTestInit` may be used multiple times. For example, one may use it in the [custom library](/Guide/custom_libraries.md) to launch an application or clean up the logs and then use it in the test to do test-specific actions.
 
 Please, note: `SeSOnTestInit` should be not be put into the `Test` because `Test` is invoked after initialization.
 
+> Deprecated: You may also define a global function `TestInit()` that works the same way as a callback. However if there are many such functions, only one will actually work.
 
-- **TestFinish()** - This function is called once after test execution. It should be used to release resources (data sets, spreadsheets). TestFinish() is a good place to post-process Reports.  It may also be used as an integration point with external test management or bug tracking systems.
+### SeSOnTestFinish
 
-More advanced ways of defining multiple test finalization handlers is to use `TestFinish` with callback:
+This function defines a callback that is called once after test execution. It should be used to release resources (data sets, spreadsheets). It may also be used as an integration point with external test management or bug tracking systems.
 
 ```javascript
 SeSOnTestFinish(function(){
-	Log("Finalizing...");
+    Log("Finalizing...");
 });
 ```
 
-`SeSOnTestFinish` may be used multiple times. For example, one may use it in the custom library to close an application. 
+`SeSOnTestFinish` may be used multiple times. For example, one may use it in the custom library to close an application.
 
-- **TestPrepare()** - For advanced users; `TestPrepare()` is called before recording and before playback. It may be used to properly initialize libraries.
+> Deprecated: You may also define a global function `TestFinish()` that works the same way as a callback. However if there are many such functions, only one will actually work.
 
-More advanced ways of defining multiple test prepare handlers is to use `SeSOnTestPrepare` with callback:
+### SeSOnTestPrepare
+
+For advanced users; `SeSOnTestPrepare` callback is called before recording and before playback. It may be used to properly initialize libraries.
+
+Please, note that `SeSOnTestPrepare` may be put into a `shared` file. In this case it will be executed for playback but not for recording (because recorder does not load shared files). But if you put it into your library, it will be executed in all cases when library is loaded.
 
 ```javascript
 SeSOnTestPrepare(function(){
-	Log("Preparing...");
+    Log("Preparing...");
 });
 ```
 
-`SeSOnTestPrepare` may be used multiple times. For example, one may use it in the custom library to configure environment for the application and then use it in the test to do test-specific actions. 
+`SeSOnTestPrepare` may be used multiple times. For example, one may use it in the custom library to configure environment for the application and then use it in the test to do test-specific actions.
 
-Please, note: `SeSOnTestPrepare` should be not be put into the `Test` because `Test` is invoked after initialization.
+Please, note: `SeSOnTestPrepare` should not be put into the `Test()` because `Test()` is invoked after initialization.
 
+> Deprecated:  You may also define a global function `TestPrepare()` that works the same way as a callback. However if there are many such functions, only one will actually work.
 
-- **SeSOnTestFailed** - May be used to do something on test failure event.
+### SeSOnTestFailed
+
+May be used to do something on test failure event.
 
 ```javascript
 SeSOnTestFailed(function(status){
-	Log("Test Failed");
+    Log("Test Failed");
 });
 ```
 
 **status** parameter will always be 0 (Failed) or -1 (Undefined).
 
-- **SeSOnTestReportReady** - Final point, called when report is closed and is ready for post-processing.
+### SeSOnTestReportReady
+
+Final point, called when report is closed and is ready for post-processing.
 
 ```javascript
 SeSOnTestReportReady(function(){
-	// Don't use anything that writes to the report at this point!
-	// Only low level operations and functions: File, WScript.Shell etc.
-	Log("Test done with status: "+g_testPassed);
-	Log("Report file: "+g_reportFileName);
+    // Don't use anything that writes to the report at this point!
+    // Only low level operations and functions: File, WScript.Shell etc.
+    Log("Test done with status: "+g_testPassed);
+    Log("Report file: "+g_reportFileName);
 })
 ```
 
-- **SeSOnObjectNotFound** - Final point, called when object is not found on the screen.
+### SeSOnObjectNotFound
+
+Final point, called when object is not found on the screen.
 
 ```javascript
 SeSOnObjectNotFound(function (/**string*/ objectId, /**object*/params){
-	// When 'Back' is not on the screen, use 'Home' instead.
-	if(objectId=='Back') return SeS('Home', params);
+    // When 'Back' is not on the screen, use 'Home' instead.
+    if(objectId=='Back') return SeS('Home', params);
 });
 ```
+
 **objectId** - object id; **params** - additional locator parameters (if any).
 
-- **SeSOnLocatorValue** - a way to modify default object locator value. Useful when you, for example.
+### SeSOnLocatorValue
+
+A way to modify default object locator value. Useful when you, for example.
 
 ```javascript
 SeSOnLocatorValue(function(/**string*/ value, /**object*/objInfo){
-	// We use '{home_xpath}' as a placeholder to replace it with different value here.
-	// ID is accessible as objInfo.object_id
-	if(value=='{home_xpath}') return "//a[@href='Default.aspx']";
-	return value;
+    // We use '{home_xpath}' as a placeholder to replace it with different value here.
+    // ID is accessible as objInfo.object_id
+    if(value=='{home_xpath}') return "//a[@href='Default.aspx']";
+    return value;
 });
 ```
-**value** - value to replace; **objInfo** - all locator values.
 
+**value** - value to replace; **objInfo** - all locator values.
 
 ## See Also
 
