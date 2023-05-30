@@ -10,4 +10,4 @@ This section focuses on specific technologies supported by Rapise.
 - [Salesforce Testing](salesforce_com.md)
 - [Manual Testing](manual_testing.md)
 - [Unit Testing](unit_testing.md)
-- [Load Testing](neoload_integration.md)
+- [Load Testing](convert_functional_to_load_tes.md)

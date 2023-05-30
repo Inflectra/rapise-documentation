@@ -1,5 +1,5 @@
 site_name: RapiseDocs
-copyright: © Copyright 2006-2022 Inflectra Corporation, All Rights Reserved | en-US |
+copyright: © Copyright 2006-2023 Inflectra Corporation, All Rights Reserved | en-US |
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://rapisedoc.inflectra.com/
@@ -184,9 +184,7 @@ nav:
             - 'COM Testing Support': 'Guide/com_testing_support.md'
             - 'TAP Results': 'Guide/tap.md'
         - 'Load Testing':
-            - 'NeoLoad Integration': 'Guide/neoload_integration.md'
             - 'Convert Functional to Load Test': 'Guide/convert_functional_to_load_tes.md'
-            - 'Client Performance Monitoring': 'Guide/client_performance_monitoring.md'
         - 'Test Management':
             - 'Spira Dashboard': 'Guide/spira_dashboard_2.md'
             - 'SpiraTest Integration': 'Guide/spiratest_integration.md'
@@ -215,8 +213,6 @@ nav:
             - 'Mobile Settings Dialog': 'Guide/mobile_settings_dialog.md'
             - 'Mobile Test Locator Dialog': 'Guide/mobile_test_locator_dialog.md'
             - 'NameValue Collection Editor Dialog': 'Guide/namevalue_collection_editor_di.md'
-            - 'NeoLoad Convertor Dialog': 'Guide/neoload_convertor_dialog.md'
-            - 'NeoLoad Settings Dialog': 'Guide/neoload_settings_dialog.md'
             - 'Object Tree View': 'Guide/object_tree.md'
             - 'Output View': 'Guide/output_view.md'
             - 'Properties Dialog': 'Guide/properties.md'

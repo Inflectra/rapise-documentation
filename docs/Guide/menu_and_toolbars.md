@@ -213,7 +213,6 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 * **Npm Console** - show an `npm console` for the current testing [framework](../Intro/framework.md). This way you may quickly install new packages or initialize using existing `package.json`.
 * **Web Services** - allows you to add a new [web service](web_service_testing.md) definition to your Rapise test. Clicking on this displays the [Add Web Service](dialog_add_web_service.md) dialog box.
 * **Object Manager** - open the [Object Manager](object_manager.md) add-in; this add-in is used to copy recorded objects between test scripts.
-into a [NeoLoad performance test](neoload_integration.md).
 * **RPA Monitor** - open [RPA Monitor](/Manuals/Rpa/).
 * **Rapise Launcher** - starts [Rapise Launcher](/Guide/spiratest_integration/#using-rapiselauncher).
 * **New Incident**
@@ -231,7 +230,6 @@ Provides access to all the global settings and options in Rapise. Settings relev
 * **Selenium** - displays the [Selenium settings](selenium_settings_dialog.md) dialog box. This is used to edit the different Selenium web browser profiles that can be used by Rapise.
 related to using the Web Spy to inspect the DOM objects in web pages.
 * **Mobile** - displays the [Mobile Settings](mobile_settings_dialog.md) dialog box. This lets you configure the different mobile devices that are available for testing by Rapise.
-* **NeoLoad Integration Settings** - displays the [NeoLoad Integration Settings](neoload_settings_dialog.md) dialog. These settings may need to be changed when using Rapise with NeoLoad.
 * **Java** - displays the [Install Java Access Bridge](java_awt_swing_testing.md) dialog box. Installing the Java Access Bridge lets Rapise connect to Java AWT/Swing applications so that they can be tested.
 
 ## Help

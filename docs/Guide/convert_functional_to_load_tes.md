@@ -1,11 +1,19 @@
 # Convert Functional to Load Test
 
+## JMeter
+
+This section explains how to transform an existing test script written in Rapise into a performance scenario within the JMeter. Learn how to easily convert Rapise tests for HTTP/HTTPS applications into JMeter scripts based on the respective protocols. These scripts can then be executed by numerous virtual users (VUs) to simulate a significant load on the tested application.
+
+- Video: [Converting Rapise script into JMeter load scenario](https://youtu.be/LbCvrBvAPjA)
+
+## NeoLoad
+
 !!! important
     NeoLoad integration has been removed in Rapise 7.0.
 
 This aspect of the Rapise-NeoLoad integration describes the process for taking an existing test script written in Rapise and converting it seamlessly into a performance scenario in the NeoLoad load testing system. This feature allows you to convert Rapise tests for HTTP/HTTPS based applications into protocol-based NeoLoad scripts that can be executed by a large number of **virtual users (VUs)** that simulate a load on the application being tested.
 
-## Prerequisites
+### Prerequisites
 
 In order to use the integration with NeoLoad, you need to have the following:
 
@@ -14,9 +22,9 @@ In order to use the integration with NeoLoad, you need to have the following:
 
 Both tools must be installed on the same Windows host. NeoLoad must have a license with Recording API enabled. The default trial version does not have this capability. The Rapise test needs to be testing an application that uses HTTP/HTTPs or other NeoLoad supported protocols.
 
-## The Steps for Converting a Rapise Test
+### The Steps for Converting a Rapise Test
 
-## Launch NeoLoad
+#### Launch NeoLoad
 
 Open NeoLoad via the Start menu or using a command line:
 
@@ -24,13 +32,13 @@ Open NeoLoad via the Start menu or using a command line:
 
 ![neoload ui](./img/convert_functional_to_load_tes1.png)
 
-## Create or Open Existing Load Project
+#### Create or Open Existing Load Project
 
 Use menu `File > New` or `File > Open`.
 
 ![neoload project](./img/convert_functional_to_load_tes2.png)
 
-## Open a Test Script in Rapise to be Converted
+#### Open a Test Script in Rapise to be Converted
 
 Inside Rapise, open the script you want to convert. Make sure the application it is testing is a web-based application using the HTTP/HTTPS protocols:
 
@@ -40,7 +48,7 @@ Ensure that the Internet Explorer HTML library is set in the test parameters.
 
 ![ie browser](./img/convert_functional_to_load_tes4.png)
 
-## Open Conversion Dialog
+#### Open Conversion Dialog
 
 From the main menu select `Tools > Convert to NeoLoad`.
 
@@ -78,37 +86,37 @@ In the NeoLoad tree it looks this way:
 
 ![neoload tree](./img/convert_functional_to_load_tes7.png)
 
-## Press Convert Button
+#### Press Convert Button
 
 After pressing Convert button Rapise will launch the test and NeoLoad will start capturing network traffic. When test playback is finished
 you’ll see the dialog:
 
 ![conversion completed](./img/convert_functional_to_load_tes8.png)
 
-## Troubleshooting
+### Troubleshooting
 
 During conversion you may get a few error messages. This section provides a list of common messages and their solution.
 
-### Unable to connect to the remote server
+#### Unable to connect to the remote server
 
 ![clip0053](./img/convert_functional_to_load_tes9.png)
 
 If you get this message, check that NeoLoad is running. Usually this message means that NeoLoad is not started or another application is using port 7400, preventing NeoLoad binding to it.
 
-### No project is open
+#### No project is open
 
 ![clip0054](./img/convert_functional_to_load_tes10.png)
 
 If you get this message, check that a project is opened in NeoLoad.
 
-### NeoLoad is not ready for recording
+#### NeoLoad is not ready for recording
 
 ![clip0055](./img/convert_functional_to_load_tes11.png)
 
 If you get this message, it means that NeoLoad is in the recording state. To fix the issue, you need to stop the existing recording in
 NeoLoad.
 
-## NeoLoad Integration Settings
+### NeoLoad Integration Settings
 
 There are a few global options for the Rapise – NeoLoad integration. To reach them use menu `Settings > NeoLoad Integration`.
 

@@ -22,8 +22,6 @@ This section details the Rapise GUI.  Each subsection describes the function of
     - [Mobile Settings Dialog](mobile_settings_dialog.md)
     - [Mobile Test Locator Dialog](mobile_test_locator_dialog.md)
     - [NameValue Collection Editor Dialog](namevalue_collection_editor_di.md)
-    - [NeoLoad Convertor Dialog](neoload_convertor_dialog.md)
-    - [NeoLoad Settings Dialog](neoload_settings_dialog.md)
     - [Object Tree View](object_tree.md)
     - [Options Dialog](options_dialog.md)
     - [Output View](output_view.md)
