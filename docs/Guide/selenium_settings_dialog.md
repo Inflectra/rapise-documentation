@@ -6,7 +6,7 @@ Rapise can [playback web tests](cross_browser_testing.md) on Selenium nodes. Con
 
 This dialog box displays the list of Selenium Profiles and lets you create a new profile, modify a profile or make a new profile based on an existing one.
 
-![selenium\_settings](./img/selenium_webdriver2.png)
+![selenium_settings](./img/selenium_webdriver2.png)
 
 ## How to Open
 
