@@ -65,7 +65,7 @@ device. You can use the **Run** option to make sure that the app actually launch
 
 Assuming that this is successful, you will see the AUTiOS running in the iOS Simulator:
 
-![](./img/Preparing_for_iOS_Testing8.png)
+![](./img/Preparing_for_iOS_Testing8.png){width="255px"}
 
 If you are only going to use Simulated devices (not recommended) then you can skip the next section and just continue with setting up
 **Appium**, as described in the main Mobile Testing topic.
@@ -80,7 +80,7 @@ Choose Certificates, Identifiers & Profiles:
 
 Select Devices:
 
-![](./img/Preparing_for_iOS_Testing10.png)
+![](./img/Preparing_for_iOS_Testing10.png){width="278px"}
 
 Add your device's UDID to the list of registered iOS devices in the developer account:
 

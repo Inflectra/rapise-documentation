@@ -19,7 +19,7 @@ Once you have installed Rapise on your local computer, you need to perform the f
 
 The process of configuring Rapise for interaction with browsers via Selenium WebDriver is now fully automatic.
 
-Rapise downloads WebDrier executables (chromedriver.exe, geckodriver.exe, etc.) when needed, it automatically detects version of required driver executable both for standalone browsers and embedded ones (e.g. Chrome in Microsoft Teams, Skype, Microsoft Unified Service Desk, etc.). Every downloaded driver executable is saved with version information in its name. Rapise automatically switches executables based on the executed test.
+Rapise downloads WebDriver executables (chromedriver.exe, geckodriver.exe, etc.) when needed, it automatically detects version of required driver executable both for standalone browsers and embedded ones (e.g. Chrome in Microsoft Teams, Skype, Microsoft Unified Service Desk, etc.). Every downloaded driver executable is saved with version information in its name. Rapise automatically switches executables based on the executed test.
 
 Here is an example of
 
@@ -29,7 +29,7 @@ c:\ProgramData\Inflectra\Rapise\SeleniumDrivers
 
 folder on a machine with Rapise:
 
-![SeleniumDrivers folder](./img/selenium_drivers_folder.png)
+![SeleniumDrivers folder](./img/selenium_drivers_folder.png){width="474px"}
 ### Rapise 7.2
 
 This method is applicable to all browsers except Safari.

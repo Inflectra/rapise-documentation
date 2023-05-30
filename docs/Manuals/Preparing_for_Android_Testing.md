@@ -43,25 +43,25 @@ More [about Android Studio installation](https://developer.android.com/studio/in
 
 Once it has installed, you will use the **Android SDK Manager** to download and install the necessary packages:
 
-![](./img/Preparing_for_Android_Testing3.png)
+![Menu SDK Manager](./img/Preparing_for_Android_Testing3.png){width="230px"}
 
-![](./img/Preparing_for_Android_Testing4.png)
+![Android SDK Platforms](./img/Preparing_for_Android_Testing4.png)
 
-## Preparing Android Emulator
+### Preparing Android Emulator
 
 If you want to test using the Android Emulator, make sure you have installed it using the SDK manager.
 
-![](./img/Preparing_for_Android_Testing5.png)
+![Android SDK Tools](./img/Preparing_for_Android_Testing5.png)
 
-Then you can launch (from the main menu of the Android Studio) the **Android Virtual Device (AVD) Manager**.
+Then you can launch (from the main menu of the Android Studio) the **Android Virtual Device Manager**.
 
-![http://content.screencast.com/users/JingRegister/folders/Jing/media/059ecb95-6311-4ae7-b781-8db4b168b208/00000016.png](./img/Preparing_for_Android_Testing6.png)
+![Menu Device Manager](./img/Preparing_for_Android_Testing6.png){width="227px"}
 
 ![http://content.screencast.com/users/JingRegister/folders/Jing/media/2124ee2b-d7b0-4f59-a2a1-c2d0ea862233/00000017.png](./img/Preparing_for_Android_Testing7.png)
 
 In this case you can just create the Android Virtual Device, Start it and then connect to it using Rapise.
 
-## Preparing a Physical Android Device
+### Preparing a Physical Android Device
 
 If you are going to be testing a physical Android device, you will need to do the following.
 
@@ -71,21 +71,20 @@ The Settings app on Android includes a screen called **Developer options** that 
 
 On Android 4.1 and lower, the **Developer options** screen is available by default. On Android 4.2 and higher, you must enable this screen as follows:
 
-1. Open the Settings app.
-2. (Only on Android 8.0 or higher) Select System.
-3. Scroll to the bottom and select About phone.
-4. Scroll to the bottom and tap Build number 7 times.
-5. Return to the previous screen to find Developer options near the bottom.
+1. Open the `Settings` app.
+2. Find the `Build number` option (usually inside `About phone`).
+3. Tap `Build number` 7 times.
+4. Return to the previous screen to find `Developer options` near the bottom.
 
-At the top of the Developer options screen, you can toggle the options on and off.
+If you can not find the `Build number` option read more [about Developer Options and USB Debugging](https://developer.android.com/studio/debug/dev-options).
 
-![https://developer.android.com/studio/images/run/dev-options-pixel\_2x.png](./img/Preparing_for_Android_Testing8.png)
+At the top of the `Developer options` screen, you can toggle the options on and off.
+
+![Device Developer Settings](./img/Preparing_for_Android_Testing8.png){width="300px"}
 
 You probably want to keep this on. When off, most options are disabled except those that don't require communication between the device and your development computer.
 
 Next, you should scroll down a little and enable **USB debugging**. This allows Android Studio and other SDK tools to recognize your device when connected via USB, so you can use the debugger and other tools.
-
-Read more [about Developer Options and USB Debugging](https://developer.android.com/studio/debug/dev-options).
 
 You are now ready to start mobile testing of your Android Device and Android Emulator.
 
@@ -107,30 +106,32 @@ Once that is installed, you will then need to install the Android Studio (you ma
 
 Make sure you have **ANDROID_HOME** environment variable set to point to Android SDK. In most cases it should point to
 
-    c:\Users\<user name>\AppData\Local\Android\sdk
+```
+c:\Users\<user name>\AppData\Local\Android\sdk
+```
 
 More [about Android Studio installation](https://developer.android.com/studio/install#windows)
 
 Once it has installed, you will use the **Android SDK Manager** to download and install the necessary packages.
 
-![](./img/Preparing_for_Android_Testing9.png)
+![Menu SDK Manager](./img/Preparing_for_Android_Testing3.png){width="230px"}
 
-![](./img/Preparing_for_Android_Testing10.png)
+![](./img/Preparing_for_Android_Testing10.png){width="968px"}
 
-## Preparing Android Emulator
+### Preparing Android Emulator
 
 If you want to test using the Android Emulator, make sure you have installed it using the SDK manager.
 
 ![](./img/Preparing_for_Android_Testing11.png)
 
-Then you can launch (from the main menu of the Android Studio) the **Android Virtual Device (AVD) Manager**.
+Then you can launch (from the main menu of the Android Studio) the **Android Virtual Device Manager**.
 
-![](./img/Preparing_for_Android_Testing12.png)
+![Menu Device Manager](./img/Preparing_for_Android_Testing6.png){width="227px"}
 
-![](./img/Preparing_for_Android_Testing13.png)
+![](./img/Preparing_for_Android_Testing13.png){width="551px"}
 
 In this case you can just create the Android Virtual Device, Start it and then connect to it using Rapise.
 
-## Preparing a Physical Android Device
+### Preparing a Physical Android Device
 
 Steps are [the same as for Mac](#preparing-a-physical-android-device).
