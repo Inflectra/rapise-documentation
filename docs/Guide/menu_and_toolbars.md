@@ -215,8 +215,6 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 * **Object Manager** - open the [Object Manager](object_manager.md) add-in; this add-in is used to copy recorded objects between test scripts.
 * **RPA Monitor** - open [RPA Monitor](/Manuals/Rpa/).
 * **Rapise Launcher** - starts [Rapise Launcher](/Guide/spiratest_integration/#using-rapiselauncher).
-* **New Incident**
-    * Manual:  open the [Incident Logging](incident_logging.md) dialog box so that you can log a new incident in [SpiraTeam](spiratest_integration.md).
 
 ## Settings
 

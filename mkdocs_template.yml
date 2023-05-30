@@ -205,7 +205,6 @@ nav:
             - 'Find Results View': 'Guide/find_results_view.md'
             - 'Find Text dialog': 'Guide/find_text_dialog.md'
             - 'Image Capture': 'Guide/image_capture.md'
-            - 'Incident Logging': 'Guide/incident_logging.md'
         - 'M - R':            
             - 'Manual Playback': 'Guide/manual_playback.md'
             - 'Manual Test Editor': 'Guide/manual_test_editor.md'

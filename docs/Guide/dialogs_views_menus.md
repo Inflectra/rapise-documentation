@@ -14,7 +14,6 @@ This section details the Rapise GUI.  Each subsection describes the function of
     - [Find Results View](find_results_view.md)
     - [Find Text dialog](find_text_dialog.md)
     - [Image Capture](image_capture.md)
-    - [Incident Logging](incident_logging.md)
 - M - R:
     - [Manual Playback](manual_playback.md)
     - [Manual Test Editor](manual_test_editor.md)

@@ -104,23 +104,9 @@ In the example above, we added a red ellipse, arrow and text to mark the issue t
 
 ![manual_playback_7](./img/tutorial_exploratory_testing17.png)
 
-Now we can [log an incident](incident_logging.md) that is associated with this test failure.
-
-## Step 7 - Logging the Incident / Defect
-
-Click on the '**Log Incident**' button to display the new incident entry screen:
-
-![manual_playback_8](./img/tutorial_exploratory_testing18.png)
-
-Choose the **type** of incident, enter the **name**, **description**, **priority, detected release** and any other required fields as defined by the workflow in the project that you are connected to. Once you have entered in the various fields, click the **'Save'** icon in the top left.
-
-This will return you to the [manual execution](manual_playback.md) screen with the **Incident ID** [IN:xxx] and **name** displayed at the bottom. Now click on the '**Fail**' button and the test case will be marked as failed:
-
-![manual_playback_9](./img/tutorial_exploratory_testing19.png)
-
 Finally, click on the **Finish** button and the results will be posted to [Spira](spiratest_integration.md).
 
-## Step 8 - Viewing the Results
+## Step 7 - Viewing the Results
 
 Now to view the results in Spira, click on the [Spira Dashboard](spira_dashboard.md) item in the main Rapise [menu](menu_and_toolbars.md) `View > Spira Dashboard`. Then under the 'My Created' test cases, click on the link for the test case you execute. That will bring up the test case in Spira. Now click on the 'Failed' hyperlink in Spira and the new test run will be displayed:
 
