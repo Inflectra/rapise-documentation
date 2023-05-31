@@ -32,6 +32,9 @@ This approach has pros and cons. We do not recommend to use it for completely in
 
 To leave application running and save session information use [AppiumDriver.SaveSession](/Libraries/AppiumDriver/#SaveSession) call in [TestFinish](understanding_the_script.md) block of your test.
 
+!!! information
+    In Rapise 8.0+ there is no need to explicitly call `AppiumDriver.SaveSession()`.
+
 ```javascript
 function TestFinish()
 {
