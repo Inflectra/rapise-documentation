@@ -2,6 +2,10 @@
 
 Before you can use Rapise with certain web browsers to do web testing, you will need to install plugins so that Rapise can communicate with them.
 
+!!! important
+    Since Rapise 7.3 it is recommended to use [Selenium WebDriver](selenium_webdriver.md) based browser connectors for all web tests. Native Rapise plugins are considered outdated and should only be used for legacy tests and backward compatibility.
+
+
 ## Internet Explorer
 
 Unlike the other web browsers, there are actually no steps needed to configure IE. Once Rapise is installed, it is ready to connect to IE for recording, playback and learning without any configuration steps.

@@ -17,7 +17,7 @@ available for Rapise called **UsingSelenium** (you can open it from the `View > 
 WebDriver.CreateDriver();
 
 //Open the URL for the www.libraryinformationsystem.org website:
-WebDriver.SetUrl('http://www.libraryinformationsystem.org');
+WebDriver.SetUrl('https://www.libraryinformationsystem.org');
 
 //Find the body element and verify the text in it
 var el = WebDriver.FindElementByXPath("//body");
@@ -32,8 +32,8 @@ logInLink.Click();
 var userName = WebDriver.FindElementByCssSelector("html > body > form > div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(2) > fieldset > p:first-of-type > input");
 Tester.AssertEqual("class is 'textbox'", "textbox", userName.GetAttribute("class"));
 
-//Go to a different URL (http://libraryinformationsystem.org/HtmlTest.htm)
-WebDriver.SetUrl('http://www.libraryinformationsystem.org/HtmlTest.htm');
+//Go to a different URL (https://libraryinformationsystem.org/HtmlTest.htm)
+WebDriver.SetUrl('https://www.libraryinformationsystem.org/HtmlTest.htm');
 
 //Click on the Alert box
 var alertBtn = WebDriver.FindElementById("btnAlert");
@@ -55,35 +55,30 @@ defined.
 
 ## Code Completion for the Selenium WebElement Objects
 
-When you are using functions such as FindElementsById() in your code, the returned object will be a Selenium **Web Element**.
+When you are using functions such as `FindElementsById()` in your code, the returned object will be a Selenium [Web Element](../Libraries/WebElementWrapper.md).
 
-If you want to have intellisense and code-completion for the returned WebElement objects, you need to do two things:
-
-- Click on ++ctrl+shift+e++ to include the Rapise engine in your project.
-- Prefix the variable with /\*\*WebElementWrapper\*/, so instead of just:
+Assign `WebElement` to a variable and benefit from intellisense and code-completion feature.
 
 ```javascript
-var el = WebDriver.FindElementById(…)   // you use:
-var /**WebElementWrapper*/el = WebDriver.FindElementById(…)
+var logInLink = WebDriver.FindElementById("HeadLoginView_HeadLoginStatus");
 ```
 
-For example:
-
-![clip0024](./img/using_native_selenium_code2.png)
+![Code Completion](./img/using_native_selenium_code2.png)
 
 ## Interoperability with Rapise Objects
 
-In addition to being able to use raw Selenium code on its own, you can also use a mixture of Rapise object-based code and raw Selenium
-WebDriver code.
+In addition to being able to use raw Selenium code on its own, you can also use a mixture of Rapise object-based code and raw Selenium WebDriver code.
 
-For example, you are using the standard Rapise approach (using learned `SeS('object')` objects) for testing but at some point want to switch to Selenium API to call a couple of WebElement functions on a learned object, you can use the special **‘element’** property:
+For example, you are using the standard Rapise approach (using learned `SeS('object')` objects) for testing but at some point want to switch to Selenium API to call a couple of WebElement functions on a learned object, you can use the special **element** property:
 
 ```javascript
-var webElement = SeS('MyObject').element;
+var /**WebElementWrapper*/ webElement = SeS('MyObject').element;
 ```
 
-If you want to the reverse and be able to create a Rapise `SeS('object')` on the fly from a physical object on the web page, you can do the `MakeObjectForXPath(xpath)` function that returns a Rapise **SeSObject**, in the same way that `SeS('id')` does normally:
+Prefixing the variable with `/**WebElementWrapper*/` enables code completion for it.
+
+If you want to do the reverse and be able to create a Rapise `SeS('object')` on the fly from a physical object on the web page, you can do the `Navigator.SeSFind(xpath)` function that returns a Rapise **SeSObject**, in the same way that `SeS('id')` does normally:
 
 ```javascript
-var sesObj = MakeObjectForXPath("//body//div[@id='logArea']");
+var sesObj = Navigator.SeSFind("//body//div[@id='logArea']");
 ```

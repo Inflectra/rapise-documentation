@@ -25,7 +25,7 @@ The Web Spy toolbar provides the following tools:
 
 More tools available in the menu.
 
-![web spy menu](./img/web_spy_menu.png)
+![web spy menu](./img/web_spy_menu.png){width="392px"}
 
 - **Go To Url:** Allows entering a URL and perform navigation in a remote browser. Handy when you connect to desktop browsers via Selenium or mobile browsers via Appium.
 - **Disconnect:** Close connection to the browser and clear the DOM tree.
@@ -47,7 +47,7 @@ More tools available in the menu.
 
 The DOM tree lets you view all of the HTML elements (also known as DOM elements) that make up the web application / web page being tested. The elements are showing in a hierarchical tree representation that mirrors how they are nested on the page. Each element is displayed along with the various attributes (class, id, style, etc.) that are associated with the element:
 
-![web_spy_domtree](./img/web_spy3.png)
+![web_spy_domtree](./img/web_spy3.png){width="526px"}
 
 The DOM elements are color coded.
 
@@ -72,7 +72,7 @@ Double clicking on an element copies it's [XPath](xpath.md) to the toolbar.
 
 When you click on an element in the DOM tree its properties are displayed in the **DOM Element** pane and it is highlighted in the web browser.
 
-![web spy element](./img/web_spy_element.png)
+![web spy element](./img/web_spy_element.png){width="491px"}
 
 The properties that are displayed are grouped into the following categories:
 
@@ -99,11 +99,11 @@ In addition to navigating the DOM tree and Learning specific elements, the other
 
 If you enter in the [XPath](xpath.md) query to locate the table cells in the **XPath** box at the top.
 
-![web_spy_xpath1](./img/web_spy5.png)
+![web_spy_xpath1](./img/web_spy5.png){width="689px"}
 
 When you click **Test** it will display all of the DOM elements that match the query:
 
-![web_spy_xpath2](./img/web_spy6.png)
+![web_spy_xpath2](./img/web_spy6.png){width="265px"}
 
 You can now refine the query to only find the items you want to test.
 
@@ -114,11 +114,11 @@ You can now refine the query to only find the items you want to test.
 
 If you enter in the [CSS](css.md) selector to locate the table cells in the **CSS** box at the top (if the box is not visible use menu `Spy > CSS Enabled`).
 
-![web_spy_css1](./img/web_spy7.png)
+![web_spy_css1](./img/web_spy7.png){width="634px"}
 
 When you click **Test** it will display all of the DOM elements that match the query:
 
-![web_spy_css2](./img/web_spy8.png)
+![web_spy_css2](./img/web_spy8.png){width="271px"}
 
 You can now refine the query to only find the items you want to test.
 
@@ -132,13 +132,13 @@ In addition, in the test results view, when you click on a result:
 
 ## Maintenance Mode
 
-Since Rapise **version 6.2** it is easier to check and update object locators. If you launch the spy from the toolbar (it will be launched in Maintenance Mode) it will show the object tree in the right side panel.
+Since Rapise **version 6.2** it is easier to check and update object locators. If you launch the spy it will show the object tree in the right side panel. You may toggle visibility for the object tree using `Show/Hide Objects` button in the top right corner of the spy.
 
 ![Web Spy Maintenance Mode](./img/web_spy_maintenance.png)
 
 To check an object locator simply select the object in the object tree. The result of locator test is indicated by an icon.
 
-<img src="/Guide/img/web_spy_object_tree_icons.png" width="317">
+![Object Icons](./img/web_spy_object_tree_icons.png){width="194px"}
 
 If an object is found it will be highlighted in the browser and selected in the tree of application objects (left pane).
 

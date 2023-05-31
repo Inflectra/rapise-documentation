@@ -2,7 +2,7 @@
 
 Since **version 6.2** Rapise is able to reconnect WebDriver sessions. It makes possible many usage scenarios that save a lot of time because you do not need to relaunch the browser and perform manual steps to reach desired application state.
 
-This feature is especially handy when you [use it with mobile browsers](https://www.inflectra.com/Support/KnowledgeBase/KB278.aspx). For desktop browsers it is easier and more effective to use [native Rapise connectors](setting_up_web_browsers.md).
+This feature is especially handy when you [use it with mobile browsers](https://www.inflectra.com/Support/KnowledgeBase/KB278.aspx).
 
 ## Maintenance Scenario
 
@@ -23,6 +23,12 @@ Since application launch is time consuming operation in mobile testing you may r
 This approach has pros and cons. We do not recommend to use it for completely independent test cases. It makes sense, however, to use it to break down a long test into separate modules and run them sequentially.
 
 ## How it Works
+
+!!! important
+    Rapise 7.0 handles browser session automatically. Until you do `Navigator.Close()` the session is kept alive and Rapise can reconnect to it.
+
+
+### Rapise 6.x
 
 To leave application running and save session information use [WebDriver.SaveSession](/Libraries/WebDriver/#SaveSession) call in [TestFinish](understanding_the_script.md) block of your test.
 
