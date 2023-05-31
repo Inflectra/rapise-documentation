@@ -4,7 +4,7 @@
 
 The **Mobile Spy** is used to inspect applications running on connected Mobile Devices (e.g. Apple iOS and Android devices).
 
-![spy\_dialog\_mobile\_android](./img/tutorial_mobile_testing14.png )
+![Spy Dialog Mobile Android](./img/tutorial_mobile_testing14.png )
 
 The **Mobile Spy** dialog shows a snapshot of the screen displayed on the connected Mobile device as well as the properties of the currently selected object. You can selected the object either by clicking on the screen snapshot or the control hierarchy displayed to the left. The properties displayed will depend on the type of mobile device being tested (iOS vs. Android).
 
@@ -62,13 +62,13 @@ This dialog lets you perform the following events on the device:
 
 ## Maintenance Mode
 
-Since Rapise **version 6.2** it is easier to check and update object locators. If you launch the spy from the toolbar (it will be launched in Maintenance Mode) it will show the object tree in the right side panel.
+Since Rapise **version 6.2** it is easier to check and update object locators. If you launch the spy it will show the object tree in the right side panel. You may toggle visibility for the object tree using `Show/Hide Objects` button in the top right corner of the spy.
 
 ![Mobile Spy Maintenance Mode](./img/mobile_spy_maintenance.png)
 
 To check an object locator simply select the object in the object tree. The result of locator test is indicated by an icon.
 
-<img src="/Guide/img/mobile_spy_object_tree_icons.png" width="307" />
+![Mobile Spy Object Icons](./img/mobile_spy_object_tree_icons.png){width="186px"}
 
 If an object is found it will be highlighted on the screenshot and selected in the tree of application objects (left pane).
 
