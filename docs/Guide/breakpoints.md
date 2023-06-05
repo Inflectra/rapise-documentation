@@ -13,6 +13,14 @@ To set a **Breakpoint**:
 3. Press **F9** or click on the gray strip to the left of line numbers.
    ![breakpoint](./img/breakpoints1.png)
 
+## Viewing and Removing Breakpoints
+
+Once you need to view all breakpoints, while in [Source Editor](/Guide/source_editor.md), choose *Edit / Show All Breakpoints*.
+
+If you need to get rid from all breakpoints, choose *Edit / Remove All Breakpoints*.
+
+![All Breakpoints](img/breakpoints_show_remove_all_breakpoints.png)
+
 ## See Also
 
 - [Internal Debugger](internal_debugger.md)

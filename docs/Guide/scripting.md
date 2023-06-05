@@ -10,8 +10,8 @@ There are three reasons to script with Rapise:
 
 ## Usage
 
-Rapise scripts are written in JavaScript (Microsoft JScript). You can run and debug your script using the full featured [Internal Debugger](internal_debugger.md). Rapise includes a testing API, with methods for manipulating images, spreadsheets, common GUI widgets, and more. Rapise also uses NodeJS to aid in providing hyperlinks to errors in your test.
+Rapise scripts are written in JavaScript (NodeJS or Microsoft JScript, depending on [settings](/Guide/options_dialog.md#execution)). You can run and debug your script using the full featured [Internal Debugger](internal_debugger.md). Rapise includes a testing API, with methods for manipulating images, spreadsheets, common GUI widgets, and more. 
 
-## See Also 
+## See Also
 
 [JScript Language Reference](jscript_language_reference.md)

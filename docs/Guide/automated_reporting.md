@@ -80,12 +80,17 @@ Report may be exported as `.xls`, `.pdf`, `.xps` or `.html` using the [Report](m
 
 **Destination HTML** - path to the target `.html` file.
 
+### Exporting Report With JavaScript
+
 This type of export may also be done from **JavaScript** code.
+
 ```javascript
-	var ldr = new ActiveXObject("Rapise.LogLoader");
-	ldr.LoadTrp("Reports\\ReportAssertions_2020-11-04_15-20.trp");
-	ldr.ExportAsHtml("C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt", "FullReport.html");
+    var ldr = new ActiveXObject("Rapise.LogLoader");
+    ldr.LoadTrp("Reports\\ReportAssertions_2020-11-04_15-20.trp");
+    ldr.ExportAsHtml("C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt", "FullReport.html");
 ```
+
+If you want to perform post-processing of the report for a specific test case, you can combine the code with the [SeSOnTestReportReady](/Guide/understanding_the_script.md#sesontestreportready) event. This event allows you to execute custom code when the test report is ready for a given test case.
 
 ## Column Grouping
 
@@ -123,4 +128,3 @@ If you hover over last execution status in Rapise main window, the tooltip would
 
 - [Report Filtering](report_filtering.md)
 - The report output file is specified in the [Settings Dialog](settings_dialog.md) (**Settings** > **ReportPath**).
-

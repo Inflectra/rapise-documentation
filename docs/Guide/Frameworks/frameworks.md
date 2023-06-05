@@ -156,7 +156,7 @@ The sooner you establish regular, automated test runs, the better. You don't nee
 
 Organize regular test runs by saving your framework in Spira and setting up test runs in the [Spira Dashboard](/Guide/spira_dashboard_2.md).
 
-##### Step Three: Page Objects
+#### Step Three: Page Objects
 
 Analyze the implemented test cases to identify common patterns or actions that occur repeatedly. You will likely find scenarios such as:
 
@@ -170,11 +170,11 @@ Analyze the implemented test cases to identify common patterns or actions that o
 
 These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a [Page Object](pageobjects.md). This object will encapsulate the necessary steps, such as *DoLaunch*, *DoLogin*, and *DoClose* as well as *DoClickRow*. You can then modify your test cases to utilize the new [Page Object](pageobjects.md), simplifying their structure and enhancing maintainability.
 
-##### Step Four: Parameters and Configurations
+#### Step Four: Parameters and Configurations
 
 As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The [parameters editor](parameters.md) can be used to set these parameters, allowing your framework to become more flexible and adaptable.
 
-##### Step NNNN: What's Next
+#### Step NNNN: What's Next
 
 As your framework grows in complexity, you will encounter new challenges and opportunities for improvement. Here are some additional features that you might find useful:
 
@@ -261,6 +261,28 @@ Mixed mode tests, also known as cross-application testing, involve the testing o
 In mixed mode tests, the primary objective is to ensure the proper behavior and smooth flow of data between interconnected applications or systems. This type of testing is commonly employed in scenarios where various software components need to communicate and exchange data. Examples include testing web interfaces, desktop interfaces, web services, APIs, and distributed systems.
 
 Rapise provides the capability to connect different [libraries](/Guide/change_the_libraries_being_use.md#how-to-change-the-libraries) for recording and playing tests. You can record tests that involve different types of applications either all at once or in separate parts.
+
+## Testing Framework Contents
+
+### Test Cases
+
+Each testing framework is a collection of Test Cases. Each test case may have its own object repository. Each test case may call Page Objects and other test cases via `RVL.DoInvokeTest`. Each test case may have its own Web Service/API calls.
+
+### Page Objects
+
+It is convenient to put the logic and objects common for specific testing framework into [Page Objects](/Guide/Frameworks/pageobjects.md).
+
+### Shared Files and Repositories
+
+Configuration, data, common functions, objects - multiple [assets](#data-script-and-configuration-files) specific to a testing framework.
+
+### Parameters
+
+[Parameters](/Guide/Frameworks/parameters.md) and configurations required for flexibility of the testing framework.
+
+### Test Sets
+
+[Spira Dashboard](/Guide/spira_dashboard_2.md) helps with all essential test management activities: management and execution of test sets. Test set helps grouping the test cases using different criteria for different purposes.
 
 ## Testing Framework Common Actions
 

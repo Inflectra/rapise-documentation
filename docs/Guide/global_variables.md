@@ -2,13 +2,11 @@
 
 ## Purpose
 
-**Global variables** are variables that can be accessed anywhere in the script. 
+**Global variables** are variables that can be accessed anywhere in the script.
 
-There are restrictions (specific to Rapise) as to where they may be placed in the test script. These restrictions do not apply to any additional script files you write and then call from your test script.
+A global variable may be declared one or more times. For example, you may declare it in [RVL](../RVL/Variables.md#global-variables) and in *JavaScript* to share the same value.
 
-Global variable may declared one or more times. For example, you may declare it in [RVL](../RVL/Variables.md#global-variables) and in *JavaScript* to share the value.
-
-You should not place variables in the `Main.js`. Use RVL Sheet, `User.js` or any other `Common` file for that.
+Usually, global variables are defined in the [RVL Sheet](/RVL/Sheets.md), `Common.js`, or in one of the `User.js` files.
 
 ## Usage
 
@@ -35,39 +33,25 @@ function SomeFunction()
 
 You may want to have a common file with global variable re-used across different tests. In this case you need to include the `Common.js` in the root of the `User.js` (it is not recommended to do include from within the `Test()` function).
 
-`User.js`:
-```
-// Include Common.js
-eval(File.Include(`%WORKDIR%/Common.js`))
-
-...
-```
-
-The variable re-used across tests should be declared using the lazy initalization mode as follows
-
 `Common.js`:
 ```javascript
 // Global variable lazy declaration:
-if(typeof(g_myGlobalVar)=='undefined') g_myGlobalVar = 5;
-
+var g_myGlobalVar = 5;
 ```
 
-### Using TestInit
+### Using SeSOnTestInit
 > **Note:** This is an older way of defining local variables. Since Rapise 3 new way is preferred.
 
-Define your global variables in **TestInit()**. Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample `TestInit()` below.
+Define your global variables in [SeSOnTestInit()](/Guide/understanding_the_script.md#sesontestinig). Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample `SeSOnTestInit()` below.
 
 ```javascript
-function TestInit()
-{
-    number_of_visited_links = 0; // This variable becomes global
+SeSOnTestInit(function () {
+    global.number_of_visited_links = 0; // This variable becomes global
     var local_var = 5; // This variable is local for TestInit function
-}
+});
 ```
 
-The keyword **var** gives variables local scope. A variable initialized without the keyword var will have global scope.
-
-The **Script Recorder** knows about the following functions: **Test(), TestInit(), TestPrepare()**, and **TestFinish()**. Do not declare global variables outside of one of the preceding four functions. The Script Recorder alters the script each time it is run, and may erase your changes.
+The keyword **var** gives variables local scope. A variable initialized `global.varname=...` automatically becomes a global.
 
 ## See Also
 

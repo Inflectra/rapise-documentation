@@ -1,10 +1,12 @@
 # Tests and Sub-Tests
 
-The concept of Sub-Test is an organic way to organize the whole work with Tests in organic way. By having sub-tests one may meet one of the following goals:
+> Please note that the concept of Sub-Tests has been deprecated since Rapise 8. We recommend using [Testing Frameworks](/Guide/Frameworks/frameworks.md) as a seamless and natural approach to organizing your tests.
 
-1. Create multiple test scenarios working with same set of Objects and Functions.
-2. Organize different test scenarios into a single workspace.
-3. Use Sub-test to make cross-browser tests.
+The concept of Sub-Test provides a flexible and organized approach to working with tests. By utilizing sub-tests, you can achieve the following objectives:
+
+1. Create multiple test scenarios that operate on the same set of objects and functions.
+2. Organize different test scenarios within a single workspace.
+3. Utilize sub-tests for conducting cross-browser tests.
 
 We will consider each of described goals separately. The test containing the sub-test(s) we will call **base** or **parent** test.
 

@@ -14,23 +14,25 @@ To enable automatic screenshots after every action use [Screen Capture](settings
 
 > **Note:** Automatic screenshots are supported for Desktop and Web applications and not supported for Mobile.
 
-## Recording
+## Screenshots in Framework Mode
 
-If before recording session you will set in [Screen Capture](settings_dialog.md#screen-capture)
+Simplest way to enable screenshots is to use `Parameters...` section in the `Choose Test Case` dialog:
 
-- `Capture Cursor = True`
-- `Capture Recording = True`
-- `Widget Only = True`
+![Parameters](img/screenshots_choose_test_case.png)
 
-then after recording Rapise will generate the screen flow HTML document
+Then choose `Capture Execution`:
 
-![recording html in file tree](./img/screenshots_recording_file_tree.png)
+![Capture Execution](img/screenshots_capture_execution.png)
 
-with content like
+Pres OK, and set a value:
 
-![recording html in browser](./img/screenshots_recording_html.png)
+![Capture Execution Value](img/screenshots_capture_execution_value.png)
 
-> **Note:** We recorded `Login/Logout` scenario on [Library Information System](http://libraryinformationsystem.org/) sample application, see [web testing tutorial](tutorial_record_and_playback.md) for more details.
+## Taking Screenshot when Test Fails
+
+By default the option is enabled to take screenshot whenever test fails:
+
+![Screenshot on Failure](img/screenshots_screenshot_on_failure.png)
 
 ## Playback
 
@@ -108,6 +110,24 @@ To make a screenshot on mobile target use
 
 - [Android.DoScreenshot](../Libraries/Android.md#DoScreenshot)
 - [iOS.DoScreenshot](../Libraries/iOS.md#DoScreenshot)
+
+## Recording
+
+If before recording session you will set in [Screen Capture](settings_dialog.md#screen-capture)
+
+- `Capture Cursor = True`
+- `Capture Recording = True`
+- `Widget Only = True`
+
+then after recording Rapise will generate the screen flow HTML document
+
+![recording html in file tree](./img/screenshots_recording_file_tree.png)
+
+with content like
+
+![recording html in browser](./img/screenshots_recording_html.png)
+
+> **Note:** We recorded `Login/Logout` scenario on [Library Information System](http://libraryinformationsystem.org/) sample application, see [web testing tutorial](tutorial_record_and_playback.md) for more details.
 
 ## See Also
 

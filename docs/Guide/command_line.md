@@ -1,9 +1,48 @@
 # Command Line
 
 ## Purpose
+
 Rapise test scripts can be run from the **command line**.
 
 ## Usage
+
+### Using play.bat
+
+Simplest way to run a test directly is:
+
+```cmd
+"C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat" <path_to_sstest_file>
+```
+
+If you want to pass additional parameters as `JSON` then:
+
+```cmd
+"C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat" <path_to_sstest_file> -config:LastConfig.json.user
+```
+
+In this case, the `LastConfig.json.user` file contains values from the last execution by Rapise itself, stored in the framework root. It contains the framework [parameter](/Guide/Frameworks/parameters.md) values, such as:
+
+```json
+{
+  "Browser": "Selenium - Chrome",
+  "Mode": "Staging"
+}
+```
+
+You may customize this `JSON` file and point to it, i.e.:
+
+```cmd
+"C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat" <path_to_sstest_file> -config:CustomParams.json
+```
+
+It is also possible to point to a test case folder rather than to `Test.sstest`, i.e.:
+
+```cmd
+"C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat" "TestCases\Author Management\Create New Author" -config:LastConfig.json.user
+```
+
+### Using SeSExecutor.js
+
 The form of the command is:
 
 `%windir%\syswow64\cscript.exe "C:\Program Files (x86)\Inflectra\Rapise\Engine\SeSExecutor.js" <path_to_sstest_file> [evals*]`
@@ -21,13 +60,14 @@ where
 ![commandline evals](./img/command_line1.png)
 
 Other variables include:
-*   `g_scriptPath`
 
-*   `g_reportPath`
+* `g_scriptPath`
 
-*   `g_objectsPath`
+* `g_reportPath`
 
-*   `g_configPath`
+* `g_objectsPath`
+
+* `g_configPath`
 
 * any global variable defined in the JavaScript or RVL.
 
@@ -36,5 +76,7 @@ Exit Code:
 •   1 indicates failure
 
 ## See Also
-*   [Settings Dialog](settings_dialog.md)
-*   [KB17](http://www.inflectra.com/Support/KnowledgeBase/KB17.aspx) Running a Rapise script from the command-line on a 64-bit machine
+
+* [Settings Dialog](settings_dialog.md)
+
+* [KB17](http://www.inflectra.com/Support/KnowledgeBase/KB17.aspx) Running a Rapise script from the command-line on a 64-bit machine

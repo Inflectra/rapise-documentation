@@ -24,6 +24,18 @@ There are explicit and implicit assertions (or checkpoints) generated during the
 * Image Comparison (Checkpoint)
     ![Image Checkpoint](img/automated_reporting_imgcheckpoint.png)
 
+## Soft Assertions
+
+Default behavior of an Assertion statement is to stop test execution immediately (unless [StopOnError](/Guide/settings_dialog.md#execution) set explicitly to `false`). Sometimes it is preferable to have more fine grained control over test execution - so it stops or not stops.
+
+This is when *Soft* assertion comes into play. Soft assertion has 2 features:
+
+1. In case of failure it just reports it but does not stop the execution.
+
+2. It is possible to stop execution based on previous set of *Soft* assertions by calling [Tester.SoftAssertAll](/Libraries/Tester.md#softassertall).
+
+Every `Assert*` method defined for the [Tester](/Libraries/Tester.md) has corresponding `SoftAssert*` counterpart (i.e. `Tester.AssertEquals` and `Tester.SoftAssertEquals` etc).
+
 ## Create a Checkpoint
 
 To create a [checkpoint](checkpoints.md) using an assertion, you will have to manually alter the test script (another way is to use the [Verify Object Properties](verify_object_properties.md) dialog during [Recording](recording.md)):
@@ -31,11 +43,15 @@ To create a [checkpoint](checkpoints.md) using an assertion, you will have to ma
 1. **Select a location** in your script.
 2. **Query for the application state**. For object properties use Get&lt;..&gt; methods.  For example:
 
-        var xx = SeS("OkButton").GetX(); // X position of the object
-        var image = SeS('Customer').GetBitmap(); // Image of the object
+```javascript
+    var xx = SeS("OkButton").GetX(); // X position of the object
+    var image = SeS('Customer').GetBitmap(); // Image of the object
+```
 
 3. **Save the state (optional)**.  If you are creating an image checkpoint, you may want to save the image to a file.  
+
 4. **Compare**. Use the **ImageWrapper** class to compare images.
+
 5. **Write an Assert Statement**. Make an appropriate call to one of **Tester.Assert** methods. Besides a Boolean condition, pass additional data to be placed in the [Report](writing_to_the_report.md). Read about [Tester.Assert syntax](../Libraries/Tester.md#assert) in the Libraries documentation part.
 
 ## Example: Simple Property Checkpoint
