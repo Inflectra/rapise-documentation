@@ -81,6 +81,7 @@ nav:
     - 'DevOps': 'Intro/devops.md'
     - 'Data-Driven Testing': 'Intro/ddt.md'
     - 'Frameworks': 'Guide/Frameworks/frameworks.md'
+    - 'Parameters and Configurations': 'Guide/Frameworks/parameters.md'
     - 'Cheatsheet': 'Guide/cheatsheet.md'
 
 - 'User''s Guide':
