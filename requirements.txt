@@ -1,5 +1,5 @@
 mkdocs==1.2.3
-mkdocs-material==6.2.8
+mkdocs-material==7.3.6
 mkdocs-material-extensions==1.1.1
 mkdocs-redirects==1.2.0
 jinja2==3.0.3
