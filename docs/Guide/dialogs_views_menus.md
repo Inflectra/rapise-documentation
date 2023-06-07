@@ -8,6 +8,8 @@ This section details the Rapise GUI.  Each subsection describes the function of
     - [Content View](content_view.md)
     - [Create New Test Dialog](create_new_test_dialog.md)
     - [Create Sub-Test Dialog](create_sub_test_dialog.md)
+    - [Choose Test Case](test_to_play_selector.md)
+    - [Choose Parameters](test_param_chooser.md)
     - [Enter Filter Criteria For... Dialog](enter_filter_criteria_for____d.md)
     - [Errors View](errors_view.md)
     - [Find and Replace Dialog](find_and_replace_dialog.md)

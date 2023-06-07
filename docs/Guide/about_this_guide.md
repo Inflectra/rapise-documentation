@@ -8,7 +8,7 @@ The **Getting Started** section is for new Rapise users.  It has the following 
 
 1. An [Overview](overview.md) of Rapise: what it's for and how to use it.
 
-1. Rapise provides comprehensive support for [Testing Frameworks](/Guide/Frameworks/frameworks.md), offering a holistic approach to test development.
+1. Rapise provides comprehensive support for [Testing Frameworks](Frameworks/frameworks.md), offering a holistic approach to test development.
 
 1. [Samples Index](sample_tests.md), where the sample projects included with Rapise are described.
 

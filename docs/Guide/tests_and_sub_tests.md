@@ -1,6 +1,6 @@
 # Tests and Sub-Tests
 
-> Please note that the concept of Sub-Tests has been deprecated since Rapise 8. We recommend using [Testing Frameworks](/Guide/Frameworks/frameworks.md) as a seamless and natural approach to organizing your tests.
+> Please note that the concept of Sub-Tests has been deprecated since Rapise 8. We recommend using [Testing Frameworks](/Guide/Frameworks/frameworks) as a seamless and natural approach to organizing your tests.
 
 The concept of Sub-Test provides a flexible and organized approach to working with tests. By utilizing sub-tests, you can achieve the following objectives:
 

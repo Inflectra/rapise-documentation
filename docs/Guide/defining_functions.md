@@ -12,7 +12,7 @@ There are three ways to maintain additional functions: (1) In `Common.js` (2) In
 
 ### In Common.js
 
-Preferred way is to have a [testing framework](/Guide/Frameworks/frameworks.md#managing-common-data) and with shared file. Its default name `Common.js` although you may have other files marked with `shared` tag and thus being automatically loaded during playback and shown in the shared node.
+Preferred way is to have a [testing framework](Frameworks/frameworks.md#managing-common-data) and with shared file. Its default name `Common.js` although you may have other files marked with `shared` tag and thus being automatically loaded during playback and shown in the shared node.
 
 ![Common.js](img/defining_functions_commonjs.png)
 

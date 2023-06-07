@@ -2,11 +2,11 @@
 
 ## Purpose
 
-> Note: Starting from Rapise 8.0, it is recommended to utilize [Test Cases](/Guide/Frameworks/frameworks.md#test-cases) and [Modules / Page Objects](/Guide/Frameworks/pageobjects.md) for creating scenarios and maintaining reusable building blocks respectively.
+> Note: Starting from Rapise 8.0, it is recommended to utilize [Test Cases](Frameworks/frameworks.md#test-cases) and [Modules / Page Objects](Frameworks/pageobjects.md) for creating scenarios and maintaining reusable building blocks respectively.
 
 Scenarios serve as reusable building blocks that can be incorporated into your test scripts. They offer a way to structure and organize your tests, making them more modular and maintainable. Scenarios can be included in both fully automated test scripts and predominantly [manual test script](semi_manual_testing.md).
 
-Another valuable application of scenarios is in [Web Service](/Guide/web_service_testing.md) test recording. When you record script steps for a Web Service test and click on [Create Script](/Guide/tutorial_web_services_rest.md#3a-generating-rest-test-scripts), the recorded steps in JavaScript form are appended to the `Test()` function. At this point, you can wrap them into separate scenarios using the method described in this chapter.
+Another valuable application of scenarios is in [Web Service](web_service_testing.md) test recording. When you record script steps for a Web Service test and click on [Create Script](tutorial_web_services_rest.md#3a-generating-rest-test-scripts), the recorded steps in JavaScript form are appended to the `Test()` function. At this point, you can wrap them into separate scenarios using the method described in this chapter.
 
 ## Creating Scenarios
 

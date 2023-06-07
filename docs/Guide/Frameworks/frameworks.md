@@ -60,7 +60,7 @@ In Rapise, the shared folder plays a vital role in organizing resources that are
 
 By default, the framework provides a `Common.js` file where you can place all your common functions.
 
-If you wish to make any file shared, you can locate it in the [Files View](/Guide/test_files_dialog.md) tab and tag it as `shared`.
+If you wish to make any file shared, you can locate it in the [Files View](../test_files_dialog.md) tab and tag it as `shared`.
 
 For instance, if you tag a file as `User.js`, it will be automatically loaded when any other test case is started:
 
@@ -92,7 +92,7 @@ During object recording, the objects are stored in the respective repository bas
 
 3. Any of these repositories can be made global by tagging its corresponding `Objects.js` file with the `shared` tag in the [Files View](/Guide/test_files_dialog.md). For example, if the *AppNavigation* repository is marked as `shared`, any recording or learning performed in the *AppNavigation* repository will automatically update the global object repository.
 
-You can utilize the [Object Manager](/Guide/object_manager.md) to copy objects between different repositories.
+You can utilize the [Object Manager](../object_manager.md) to copy objects between different repositories.
 
 ### Refactoring
 

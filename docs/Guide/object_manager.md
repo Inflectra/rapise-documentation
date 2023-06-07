@@ -10,7 +10,7 @@ The **Object Manager** allows you to merge the **object trees** of two different
 
 Use menu `Tools > Object Manager`.
 
-In [testing framework](/Guide/Frameworks/frameworks.md) mode you may open an **Object Manager** from the context menu of the corresponding object repository:
+In [testing framework](Frameworks/frameworks.md) mode you may open an **Object Manager** from the context menu of the corresponding object repository:
 
 ![Object Manager Context Menu](/Guide/Frameworks/img/frameworks_launch_object_manager.png)
 

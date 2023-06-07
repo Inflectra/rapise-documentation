@@ -8,7 +8,7 @@ If you plan to record and playback the very first desktop test - check out the t
 Learn more about testing desktop applications:
 
 - [Testing Windows Applications](/Guide/windows_applications/)
-- [Testing Oracle Forms](Guide\oracleforms_testing.md)
+- [Testing Oracle Forms](Guide/oracleforms_testing.md)
 
 ## Webinars
 

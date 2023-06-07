@@ -6,7 +6,7 @@ Diff tools come in handy when you have made alterations and wish to compare them
 
 ## Rapise Merge
 
-Whenever the [Save to Spira](/Guide/spiratest_integration.md#saving-a-test-to-spiratest) button is pressed in Rapise, the tool will examine which files have been modified.
+Whenever the [Save to Spira](../spiratest_integration.md#saving-a-test-to-spiratest) button is pressed in Rapise, the tool will examine which files have been modified.
 
 ![Spira Diff Merge](img/diffmerge_spira_diff_merge.png)
 
@@ -20,7 +20,7 @@ Rapise does not have built-in diff/merge tools, except for two specific cases:
 
 1. *RVLMerge* is used to compare and merge `.xlsx` files, including RVL (`.rvl.xlsx`) files.
 
-2. sstestmerge is used for silent 3-way merging of conflicting `.sstest` files.
+2. *sstestmerge* is used for silent 3-way merging of conflicting `.sstest` files.
 
 For other file types, Rapise relies on the already installed merge tools. There are various options available, both free and paid, and developers often have their preferred choices.
 

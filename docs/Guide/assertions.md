@@ -26,15 +26,15 @@ There are explicit and implicit assertions (or checkpoints) generated during the
 
 ## Soft Assertions
 
-Default behavior of an Assertion statement is to stop test execution immediately (unless [StopOnError](/Guide/settings_dialog.md#execution) set explicitly to `false`). Sometimes it is preferable to have more fine grained control over test execution - so it stops or not stops.
+Default behavior of an Assertion statement is to stop test execution immediately (unless [StopOnError](settings_dialog.md#execution) set explicitly to `false`). Sometimes it is preferable to have more fine grained control over test execution - so it stops or not stops.
 
 This is when *Soft* assertion comes into play. Soft assertion has 2 features:
 
 1. In case of failure it just reports it but does not stop the execution.
 
-2. It is possible to stop execution based on previous set of *Soft* assertions by calling [Tester.SoftAssertAll](/Libraries/Tester.md#softassertall).
+2. It is possible to stop execution based on previous set of *Soft* assertions by calling [Tester.SoftAssertAll](/Libraries/Tester#softassertall).
 
-Every `Assert*` method defined for the [Tester](/Libraries/Tester.md) has corresponding `SoftAssert*` counterpart (i.e. `Tester.AssertEquals` and `Tester.SoftAssertEquals` etc).
+Every `Assert*` method defined for the [Tester](/Libraries/Tester) has corresponding `SoftAssert*` counterpart (i.e. `Tester.AssertEquals` and `Tester.SoftAssertEquals` etc).
 
 ## Create a Checkpoint
 

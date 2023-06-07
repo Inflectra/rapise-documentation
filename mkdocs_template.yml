@@ -199,6 +199,8 @@ nav:
             - 'Content View': 'Guide/content_view.md'
             - 'Create New Test Dialog': 'Guide/create_new_test_dialog.md'
             - 'Create Sub-Test Dialog': 'Guide/create_sub_test_dialog.md'
+            - 'Choose Test Case': 'Guide/test_to_play_selector.md'
+            - 'Choose Parameters': 'Guide/test_param_chooser.md'
             - 'Enter Filter Criteria For... Dialog': 'Guide/enter_filter_criteria_for____d.md'
             - 'Errors View': 'Guide/errors_view.md'
             - 'Find and Replace Dialog': 'Guide/find_and_replace_dialog.md'

@@ -13,11 +13,11 @@ You can either run your script from the [Command Line](command_line.md), or you 
 2. Now, press the play button at the top of the Rapise toolbar.
 ![play icon](./img/playback1.png)
 
-3. In [testing framework](/Guide/Frameworks/frameworks.md) mode you may be prompted to select test case to executed:
+3. In [testing framework](Frameworks/frameworks.md) mode you may be prompted to select test case to executed:
 
     ![Test case to execute](img/playback_prompt_test_case_to_execute.png)
 
-4. Alternatively, you have the option to select a specific test case from the beginning by clicking on the `Play` button next to it in the [object tree](/Guide/object_tree.md):
+4. Alternatively, you have the option to select a specific test case from the beginning by clicking on the `Play` button next to it in the [object tree](object_tree.md):
 
     ![Play from object tree](img/playback_play_from_object_tree.png)
 

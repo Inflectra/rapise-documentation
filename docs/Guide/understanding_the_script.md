@@ -8,7 +8,7 @@ When you [create a new test](create_a_new_test.md) in Rapise, four files are cre
 - **Main.js** - the main test script file that contains the entry point of the test - `Test` function.
 - **Objects.js** - the file that contains recorded objects.
 - **User.js** - the file that contains user defined functions.
-- **Main.rvl.xslx** - an [RVL](/Guide/rvl_editor.md) file for RVL-enabled tests.
+- **Main.rvl.xslx** - an [RVL](rvl_editor.md) file for RVL-enabled tests.
 
 where ***&lt;TestName&gt;*** is the name of your Test.
 
@@ -57,7 +57,7 @@ var saved_script_objects =
 
 ### Main.rvl.xlsx
 
-See [RVL](/Guide/visual_language.md)
+See [RVL](/Guide/visual_language)
 
 ## Full script
 
@@ -73,7 +73,7 @@ SeSOnTestInit(function(){
 });
 ```
 
-`SeSOnTestInit` may be used multiple times. For example, one may use it in the [custom library](/Guide/custom_libraries.md) to launch an application or clean up the logs and then use it in the test to do test-specific actions.
+`SeSOnTestInit` may be used multiple times. For example, one may use it in the [custom library](custom_libraries.md) to launch an application or clean up the logs and then use it in the test to do test-specific actions.
 
 Please, note: `SeSOnTestInit` should be not be put into the `Test` because `Test` is invoked after initialization.
 

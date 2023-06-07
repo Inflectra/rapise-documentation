@@ -6,7 +6,7 @@
 
 A global variable may be declared one or more times. For example, you may declare it in [RVL](../RVL/Variables.md#global-variables) and in *JavaScript* to share the same value.
 
-Usually, global variables are defined in the [RVL Sheet](/RVL/Sheets.md), `Common.js`, or in one of the `User.js` files.
+Usually, global variables are defined in the [RVL Sheet](/RVL/Sheets), `Common.js`, or in one of the `User.js` files.
 
 ## Usage
 
@@ -42,7 +42,7 @@ var g_myGlobalVar = 5;
 ### Using SeSOnTestInit
 > **Note:** This is an older way of defining local variables. Since Rapise 3 new way is preferred.
 
-Define your global variables in [SeSOnTestInit()](/Guide/understanding_the_script.md#sesontestinig). Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample `SeSOnTestInit()` below.
+Define your global variables in [SeSOnTestInit()](understanding_the_script.md#sesontestinig). Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample `SeSOnTestInit()` below.
 
 ```javascript
 SeSOnTestInit(function () {

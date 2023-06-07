@@ -8,7 +8,7 @@ The actions you take in using the [AUT](glossary.md) are observed by Rapise and 
 
 ## Usage
 
-The **Recording Activity (RA) Dialog** is opened when you start recording using the `Record` toolbar button. In [Testing Framework](/Guide/Frameworks/frameworks.md) mode you also need to [select destination test case](/Guide/Frameworks/frameworks.md#recording-test-cases-and-page-objects) for new recording. When the Recording Activity dialog appears, Rapise has connected to your AUT and is ready to monitor and record your interactions. You'll find instructions [here](recording_activity_dialog.md) or look at one of the examples:
+The **Recording Activity (RA) Dialog** is opened when you start recording using the `Record` toolbar button. In [Testing Framework](Frameworks/frameworks.md) mode you also need to [select destination test case](Frameworks/frameworks.md#recording-test-cases-and-page-objects) for new recording. When the Recording Activity dialog appears, Rapise has connected to your AUT and is ready to monitor and record your interactions. You'll find instructions [here](recording_activity_dialog.md) or look at one of the examples:
 
 - [Tutorial: Windows Testing](twodialogs_sample.md)
 - [Tutorial: Web Testing](tutorial_record_and_playback.md)
@@ -16,7 +16,7 @@ The **Recording Activity (RA) Dialog** is opened when you start recording using 
 
 ![recording activity dialog](./img/recording1.png)
 
-Rapise may do recording across multiple applications. I.e. you may do some steps in a web browser and then proceed with desktop client. The quality of recording results depend on selected libraries. For example, if your application includes some Managed, and some Java then you need to have both Managed and Java libraries selecting in the [library chooser](/Guide/change_the_libraries_being_use.md).
+Rapise may do recording across multiple applications. I.e. you may do some steps in a web browser and then proceed with desktop client. The quality of recording results depend on selected libraries. For example, if your application includes some Managed, and some Java then you need to have both Managed and Java libraries selecting in the [library chooser](change_the_libraries_being_use.md).
 
 You'll notice that the RA dialog has a grid. As you interact with the AUT, your actions will be listed in the grid.
 

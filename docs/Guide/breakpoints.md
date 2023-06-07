@@ -15,7 +15,7 @@ To set a **Breakpoint**:
 
 ## Viewing and Removing Breakpoints
 
-Once you need to view all breakpoints, while in [Source Editor](/Guide/source_editor.md), choose *Edit / Show All Breakpoints*.
+Once you need to view all breakpoints, while in [Source Editor](source_editor.md), choose *Edit / Show All Breakpoints*.
 
 If you need to get rid from all breakpoints, choose *Edit / Remove All Breakpoints*.
 

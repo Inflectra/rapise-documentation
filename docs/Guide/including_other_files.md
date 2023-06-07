@@ -19,7 +19,7 @@ function Test()
 
 You may add an include statement by dragging a `.js` file from the [Test Files](test_files_dialog.md) tree and dropping it into `.js` script.
 
-It is recommended to put common functions and variables into [Common.js](/Guide/Frameworks/frameworks.md#managing-common-data) file in your framework. However, if you have another .js file or files, you can add an include statement(s) directly into `Common.js`.
+It is recommended to put common functions and variables into [Common.js](Frameworks/frameworks.md#managing-common-data) file in your framework. However, if you have another .js file or files, you can add an include statement(s) directly into `Common.js`.
 
 Additionally, you have the option to tag your external `.js` file as `shared`, which will automatically load it for each test run. This eliminates the need for an include statement.
 

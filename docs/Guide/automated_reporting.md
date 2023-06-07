@@ -90,7 +90,7 @@ This type of export may also be done from **JavaScript** code.
     ldr.ExportAsHtml("C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt", "FullReport.html");
 ```
 
-If you want to perform post-processing of the report for a specific test case, you can combine the code with the [SeSOnTestReportReady](/Guide/understanding_the_script.md#sesontestreportready) event. This event allows you to execute custom code when the test report is ready for a given test case.
+If you want to perform post-processing of the report for a specific test case, you can combine the code with the [SeSOnTestReportReady](/Guide/understanding_the_script#sesontestreportready) event. This event allows you to execute custom code when the test report is ready for a given test case.
 
 ## Column Grouping
 
