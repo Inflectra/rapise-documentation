@@ -60,7 +60,7 @@ In Rapise, the shared folder plays a vital role in organizing resources that are
 
 By default, the framework provides a `Common.js` file where you can place all your common functions.
 
-If you wish to make any file shared, you can locate it in the [Files View](../test_files_dialog.md) tab and tag it as `shared`.
+If you wish to make any file shared, you can locate it in the [Files View](/Guide/test_files_dialog) tab and tag it as `shared`.
 
 For instance, if you tag a file as `User.js`, it will be automatically loaded when any other test case is started:
 
@@ -74,11 +74,11 @@ The objects recorded by the Rapise recorder can be categorized into three types:
 
 1. Test case-specific objects.
 
-2. [Page object](pageobjects.md)-specific objects.
+2. [Page object](pageobjects)-specific objects.
 
 3. Objects that are shared among different parts of the framework.
 
-We recommend avoiding the use of shared objects and instead placing them in a [page object](pageobjects.md).
+We recommend avoiding the use of shared objects and instead placing them in a [page object](pageobjects).
 
 During object recording, the objects are stored in the respective repository based on the recording context:
 
@@ -86,13 +86,13 @@ During object recording, the objects are stored in the respective repository bas
 
    ![Test Case Objects](img/frameworks_test_case_object.png)
 
-2. When recording a page object, the recognized objects are added to the repository specific to that [page object](pageobjects.md).
+2. When recording a page object, the recognized objects are added to the repository specific to that [page object](pageobjects).
 
    ![PO Objects](img/frameworks_po_objects.png)
 
-3. Any of these repositories can be made global by tagging its corresponding `Objects.js` file with the `shared` tag in the [Files View](/Guide/test_files_dialog.md). For example, if the *AppNavigation* repository is marked as `shared`, any recording or learning performed in the *AppNavigation* repository will automatically update the global object repository.
+3. Any of these repositories can be made global by tagging its corresponding `Objects.js` file with the `shared` tag in the [Files View](/Guide/test_files_dialog). For example, if the *AppNavigation* repository is marked as `shared`, any recording or learning performed in the *AppNavigation* repository will automatically update the global object repository.
 
-You can utilize the [Object Manager](../object_manager.md) to copy objects between different repositories.
+You can utilize the [Object Manager](/Guide/object_manager) to copy objects between different repositories.
 
 ### Refactoring
 
@@ -134,7 +134,7 @@ The testing framework parameters can be divided into two groups:
 
 2. Runtime environment parameters, such as the web browser profile name (`g_browserProfile`), command interval (`g_commandInterval`), stopping the test at the first error, capturing screenshots during the test, etc.
 
-The logical parameters of the test can be configured in the Spira Dashboard on the [parameters](parameters.md) tab.
+The logical parameters of the test can be configured in the Spira Dashboard on the [parameters](parameters) tab.
 
 To set the runtime environment parameters, you can click the button in the `Choose Test Case` to play selector dialog:
 
@@ -154,7 +154,7 @@ Start by creating a new framework and implementing a selection of test cases. It
 
 The sooner you establish regular, automated test runs, the better. You don't need to wait until you have an extensive suite of test cases; even running 1-2 tests regularly, such as nightly runs, is sufficient. By doing so, you can gather valuable statistics about the reliability of your tests right from the start. For instance, you may discover that a particular test case occasionally encounters intermittent issues and fails 1 time out of 10. Identifying these patterns early on and accumulating a history of such occurrences increases the likelihood of pinpointing reliability issues and improving your test case.
 
-Organize regular test runs by saving your framework in Spira and setting up test runs in the [Spira Dashboard](/Guide/spira_dashboard_2.md).
+Organize regular test runs by saving your framework in Spira and setting up test runs in the [Spira Dashboard](/Guide/spira_dashboard_2).
 
 #### Step Three: Page Objects
 
@@ -168,29 +168,29 @@ Analyze the implemented test cases to identify common patterns or actions that o
 
 4. Many pages/dialogs in your application have same type of grid and you need to click on the row in such grid time after time.
 
-These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a [Page Object](pageobjects.md). This object will encapsulate the necessary steps, such as *DoLaunch*, *DoLogin*, and *DoClose* as well as *DoClickRow*. You can then modify your test cases to utilize the new [Page Object](pageobjects.md), simplifying their structure and enhancing maintainability.
+These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a [Page Object](pageobjects). This object will encapsulate the necessary steps, such as *DoLaunch*, *DoLogin*, and *DoClose* as well as *DoClickRow*. You can then modify your test cases to utilize the new [Page Object](pageobjects), simplifying their structure and enhancing maintainability.
 
 #### Step Four: Parameters and Configurations
 
-As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The [parameters editor](parameters.md) can be used to set these parameters, allowing your framework to become more flexible and adaptable.
+As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The [parameters editor](parameters) can be used to set these parameters, allowing your framework to become more flexible and adaptable.
 
 #### Step NNNN: What's Next
 
 As your framework grows in complexity, you will encounter new challenges and opportunities for improvement. Here are some additional features that you might find useful:
 
-* [Dropdowns](/Guide/rvl_editor.md#param-dropdowns) for more versatile parameter options.
+* [Dropdowns](/Guide/rvl_editor#param-dropdowns) for more versatile parameter options.
 
-* [Data Driven Testing](/Guide/data_driven_testing.md) for executing tests with different input data sets.
+* [Data Driven Testing](/Guide/data_driven_testing) for executing tests with different input data sets.
 
-* [Git Integration](/Guide/git_integration.md) for version control and collaboration.
+* [Git Integration](/Guide/git_integration) for version control and collaboration.
 
-* [Parallel Execution](/Guide/spira_dashboard_2.md#parallel-execution) for faster test execution across multiple environments.
+* [Parallel Execution](/Guide/spira_dashboard_2#parallel-execution) for faster test execution across multiple environments.
 
 ### Navigation System
 
-Test cases can be easily accessed through the [Object Tree](/Guide/object_tree.md) or the [Spira Dashboard](/Guide/spira_dashboard_2.md).
+Test cases can be easily accessed through the [Object Tree](/Guide/object_tree) or the [Spira Dashboard](/Guide/spira_dashboard_2).
 
-Object repositories are organized hierarchically within test cases and Page Objects. If you're looking for a specific object, you can use the [Object Filter](/Guide/object_tree.md#filtering) to quickly locate it.
+Object repositories are organized hierarchically within test cases and Page Objects. If you're looking for a specific object, you can use the [Object Filter](/Guide/object_tree#filtering) to quickly locate it.
 
 To share an object repository, simply assign the `shared` tag to the corresponding `Objects.js` file in the Files Tree.
 
@@ -202,17 +202,17 @@ Common functions and variables are displayed in the object tree for easy referen
 
 The structure of each RVL file is also visible, allowing you to quickly locate specific lines of code.
 
-Rapise provides a global [find and replace](/Guide/find_and_replace_dialog.md) functionality, accessible through the *Edit / Find in Files* menu or by using the shortcut Ctrl+Shift+F.
+Rapise provides a global [find and replace](/Guide/find_and_replace_dialog) functionality, accessible through the *Edit / Find in Files* menu or by using the shortcut Ctrl+Shift+F.
 
 #### Data, Script, and Configuration Files
 
-To easily access data, script, and configuration files, you can find them within the Shared node in the [Object Tree](/Guide/object_tree.md). Shared `.js` files are automatically loaded when any test case within the framework is launched. This allows you to use functions or variables defined in the shared file throughout the entire framework.
+To easily access data, script, and configuration files, you can find them within the Shared node in the [Object Tree](/Guide/object_tree). Shared `.js` files are automatically loaded when any test case within the framework is launched. This allows you to use functions or variables defined in the shared file throughout the entire framework.
 
 ### Integration with Test Management
 
-In order to streamline your test management process, you can utilize the integration with the [Spira Dashboard](/Guide/spira_dashboard_2.md). Within the dashboard, you have the ability to define test sets and configurations for your tests.
+In order to streamline your test management process, you can utilize the integration with the [Spira Dashboard](/Guide/spira_dashboard_2). Within the dashboard, you have the ability to define test sets and configurations for your tests.
 
-We highly recommend using [Spira](/Guide/spiratest_integration.md) for comprehensive test management. By leveraging Spira, you can easily deploy your test sets with a single click using the [Sync to Spira](/Guide/spiratest_integration.md#saving-a-test-to-spiratest) feature. This integration provides you with access to essential test management functionalities, including:
+We highly recommend using [Spira](/Guide/spiratest_integration) for comprehensive test management. By leveraging Spira, you can easily deploy your test sets with a single click using the [Sync to Spira](/Guide/spiratest_integration#saving-a-test-to-spiratest) feature. This integration provides you with access to essential test management functionalities, including:
 
 1. Scheduled or nightly test runs.
 
@@ -222,9 +222,9 @@ We highly recommend using [Spira](/Guide/spiratest_integration.md) for comprehen
 
 ### Collaboration and Distributed Development
 
-When working in a small team of 1-3 members, integrating with [Spira](/Guide/spira_dashboard_2.md) is an excellent solution. However, for larger teams, a combination of [Spira](/Guide/spira_dashboard_2.md) and [Git](/Guide/git_integration.md) may be more suitable.
+When working in a small team of 1-3 members, integrating with [Spira](/Guide/spira_dashboard_2) is an excellent solution. However, for larger teams, a combination of [Spira](/Guide/spira_dashboard_2) and [Git](/Guide/git_integration) may be more suitable.
 
-Since Rapise 8, we have enhanced the integration with [Diff/Merge](diffmerge.md) tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them together.
+Since Rapise 8, we have enhanced the integration with [Diff/Merge](diffmerge) tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them together.
 
 ### Maintenance
 
@@ -234,7 +234,7 @@ Rapise provides several features that facilitate quick and convenient support an
 
 2. Test run report with error location: The test run report includes the specific location where an error occurred, making it easier to identify and troubleshoot issues.
 
-3. [Stop on error](/Guide/settings_dialog.md#execution): This option allows you to configure the test to stop at the first encountered error. It enables you to analyze the application's state and determine if any changes are causing the error.
+3. [Stop on error](/Guide/settings_dialog#execution): This option allows you to configure the test to stop at the first encountered error. It enables you to analyze the application's state and determine if any changes are causing the error.
 
 4. Running individual test cases: You can execute a specific test case independently for focused testing or troubleshooting.
 
@@ -246,13 +246,13 @@ Rapise provides several features that facilitate quick and convenient support an
 
 8. Running a part of a Page Object action: Similar to running a specific area in the RVL sheet, this feature enables you to execute a specific part of an action for granular testing.
 
-9. [Flash](/Guide/object_tree.md#context-menu-object) and [Relearn](/Guide/object_tree.md#context-menu-object): These features assist in analyzing and fixing changed or problematic objects in the repository by refreshing their recognition and learning.
+9. [Flash](/Guide/object_tree#context-menu-object) and [Relearn](/Guide/object_tree#context-menu-object): These features assist in analyzing and fixing changed or problematic objects in the repository by refreshing their recognition and learning.
 
-10. Web Spy with [maintenance mode](/Guide/web_spy.md#maintenance-mode): Web Spy provides a maintenance mode that helps efficiently fix multiple objects in the repository simultaneously.
+10. Web Spy with [maintenance mode](/Guide/web_spy#maintenance-mode): Web Spy provides a maintenance mode that helps efficiently fix multiple objects in the repository simultaneously.
 
 11. Shared object repositories: When a commonly used object's location changes across multiple test cases, it is easier to update it when it is part of a shared repository.
 
-12. [Page Objects](pageobjects.md) with shared actions: By using Page Objects with shared actions, you can make updates to a single Page Object to resolve issues in multiple test cases that utilize it.
+12. [Page Objects](pageobjects) with shared actions: By using Page Objects with shared actions, you can make updates to a single Page Object to resolve issues in multiple test cases that utilize it.
 
 ### Mixed Mode Tests
 
@@ -260,7 +260,7 @@ Mixed mode tests, also known as cross-application testing, involve the testing o
 
 In mixed mode tests, the primary objective is to ensure the proper behavior and smooth flow of data between interconnected applications or systems. This type of testing is commonly employed in scenarios where various software components need to communicate and exchange data. Examples include testing web interfaces, desktop interfaces, web services, APIs, and distributed systems.
 
-Rapise provides the capability to connect different [libraries](/Guide/change_the_libraries_being_use.md#how-to-change-the-libraries) for recording and playing tests. You can record tests that involve different types of applications either all at once or in separate parts.
+Rapise provides the capability to connect different [libraries](/Guide/change_the_libraries_being_use#how-to-change-the-libraries) for recording and playing tests. You can record tests that involve different types of applications either all at once or in separate parts.
 
 ## Testing Framework Contents
 
@@ -270,7 +270,7 @@ Each testing framework is a collection of Test Cases. Each test case may have it
 
 ### Page Objects
 
-It is convenient to put the logic and objects common for specific testing framework into [Page Objects](/Guide/Frameworks/pageobjects.md).
+It is convenient to put the logic and objects common for specific testing framework into [Page Objects](/Guide/Frameworks/pageobjects).
 
 ### Shared Files and Repositories
 
@@ -278,11 +278,11 @@ Configuration, data, common functions, objects - multiple [assets](#data-script-
 
 ### Parameters
 
-[Parameters](/Guide/Frameworks/parameters.md) and configurations required for flexibility of the testing framework.
+[Parameters](/Guide/Frameworks/parameters) and configurations required for flexibility of the testing framework.
 
 ### Test Sets
 
-[Spira Dashboard](/Guide/spira_dashboard_2.md) helps with all essential test management activities: management and execution of test sets. Test set helps grouping the test cases using different criteria for different purposes.
+[Spira Dashboard](/Guide/spira_dashboard_2) helps with all essential test management activities: management and execution of test sets. Test set helps grouping the test cases using different criteria for different purposes.
 
 ## Testing Framework Common Actions
 
@@ -384,7 +384,7 @@ Importing a Page Object or module follows a similar process to importing a Test 
 
 ### Copying / Moving Repository Objects
 
-There are situations where you may need to transfer repository objects between test cases or from a Test Case to a Page Object. To accomplish this, you can use the [Object Manager](/Guide/object_manager.md) feature in Rapise. Here's how:
+There are situations where you may need to transfer repository objects between test cases or from a Test Case to a Page Object. To accomplish this, you can use the [Object Manager](/Guide/object_manager) feature in Rapise. Here's how:
 
 1. Right-click on the `[Objects]` node in the Object Tree.
 
@@ -412,7 +412,7 @@ By defining functions locally in the User file, they will be accessible only wit
 
 The contents of the Global Object node can vary depending on the selected test case or Module/Page Object. The available objects may change based on the specific technology or context of the test case.
 
-For example, if you have a test case named `Desktop Calc` that uses desktop technology, and another test case named `Web Calc` that uses web technology, the Global Object node will display different objects depending on which test case you are editing. When editing the desktop test case, you may not see the [Navigator](/Libraries/Navigator.md) object, but it will be displayed when editing the web test case.
+For example, if you have a test case named `Desktop Calc` that uses desktop technology, and another test case named `Web Calc` that uses web technology, the Global Object node will display different objects depending on which test case you are editing. When editing the desktop test case, you may not see the [Navigator](/Libraries/Navigator) object, but it will be displayed when editing the web test case.
 
 ### Recording Test Cases and Page Objects
 
@@ -448,12 +448,12 @@ In the following example, we have a test case called `!Full - Author Management`
 
 ![Full Folder Run Test Case](img/frameworks_full_folder_run.png)
 
-A limitation of this approach is that the overall status of the `!Full - Author Management` test case is displayed, but it doesn't reflect the status of the individual test cases it contains (such as `Create New Author`, `Edit Existing Author`, etc.). If you require a batch execution with detailed status and other test-management related features, it is recommended to consider running test sets using [Spira Dashboard](/Guide/spira_dashboard_2.md). This allows for better tracking of individual test case statuses and provides additional test management capabilities.
+A limitation of this approach is that the overall status of the `!Full - Author Management` test case is displayed, but it doesn't reflect the status of the individual test cases it contains (such as `Create New Author`, `Edit Existing Author`, etc.). If you require a batch execution with detailed status and other test-management related features, it is recommended to consider running test sets using [Spira Dashboard](/Guide/spira_dashboard_2). This allows for better tracking of individual test case statuses and provides additional test management capabilities.
 
 ### Running Test Sets with Spira
 
-Use [Spira Dashboard](/Guide/spira_dashboard_2.md) to define, configure, schedule and run test sets and to see execution history.
+Use [Spira Dashboard](/Guide/spira_dashboard_2) to define, configure, schedule and run test sets and to see execution history.
 
 ## Legacy Frameworks
 
-Before the release of Rapise 8, the process of defining a test framework was not as streamlined. You can find more detailed information about it in the [framework](/Intro/framework.md) topic.
+Before the release of Rapise 8, the process of defining a test framework was not as streamlined. You can find more detailed information about it in the [framework](/Intro/framework) topic.

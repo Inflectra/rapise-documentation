@@ -55,7 +55,7 @@ There are two ways of creating a **Page Object (PO)** or **Module**:
    ![Add Main Menu](img/add_page_object_main_menu.png)
 
 2. Context menu:
-   - Right-click on the **Page Objects / Modules** node in the [object tree](/Guide/object_tree.md).
+   - Right-click on the **Page Objects / Modules** node in the [object tree](/Guide/object_tree).
    ![Add Context Menu](img/add_page_object_context_menu.png)
 
 ### Page Object - RVL vs JS
@@ -80,7 +80,7 @@ The method of adding an action for the object varies depending on the chosen lan
 
 When in RVL mode, adding a sheet creates a new action, with the exception of two specific sheets:
 
-1. The `RVL` sheet, which is the default sheet. It is typically left empty in the Page Object or may contain an internal test executed via the [Play this Sheet](/Guide/rvl_editor.md#context-menu) context menu.
+1. The `RVL` sheet, which is the default sheet. It is typically left empty in the Page Object or may contain an internal test executed via the [Play this Sheet](/Guide/rvl_editor#context-menu) context menu.
 
 2. The `PageObject` sheet, which is the default sheet for the Page Object. It is intended to include a comment with a detailed description of the action, which will be displayed to the user.
 
@@ -90,7 +90,7 @@ Any other sheet is considered an action. The action name should be alphanumeric,
 
 ### JavaScript Mode
 
-In JavaScript mode, a Page Object / Module is equivalent to a [Global Object](/Guide/global_objects.md). All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.
+In JavaScript mode, a Page Object / Module is equivalent to a [Global Object](/Guide/global_objects). All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.
 
 The distinction between a global object and a Page Object lies in their usage and features. Typically, a global object encompasses various functionalities like PDF support, text manipulations, and other utilities. It does not involve an object repository or web services. On the other hand, a page object can include an object repository and is often specific to an application, representing its unique characteristics and functionality.
 
@@ -106,7 +106,7 @@ In certain situations, you may want to call a `DoAction` but ignore its output v
 
 ## Description, Parameters and Return Values
 
-Defining parameters and returning values as well as documenting them is straight forward in JavaScript mode is same as for [global objects](/Guide/global_objects.md#format)
+Defining parameters and returning values as well as documenting them is straight forward in JavaScript mode is same as for [global objects](/Guide/global_objects#format)
 
 When creating an action in RVL, it generates necessary placeholders:
 
@@ -141,10 +141,10 @@ For RVL Modules, you can run any part of the module using standard RVL features 
 
 ## Page Object Recording
 
-In RVL mode you do [recording](/Guide/rvl_editor.md#features) just like you do for usual test case with RVL.
+In RVL mode you do [recording](/Guide/rvl_editor#features) just like you do for usual test case with RVL.
 
 ## Page Object and Web Service
 
 When incorporating a Web Service (`.soap` or `.rest`) into your Page Object, it is advisable to use JavaScript instead of RVL (Rapise Visual Language) for creating the Page Object.
 
-When [generating](/Guide/rest_definition_editor.md#script-steps) a recorded script, it will be placed in the Page Object's `Main.js` file, which is not executed. Therefore, you will need to manually copy the generated script from `Main.js` and paste it into the appropriate action within the `<PageObjectName>.js` file.
+When [generating](/Guide/rest_definition_editor#script-steps) a recorded script, it will be placed in the Page Object's `Main.js` file, which is not executed. Therefore, you will need to manually copy the generated script from `Main.js` and paste it into the appropriate action within the `<PageObjectName>.js` file.

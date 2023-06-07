@@ -20,7 +20,7 @@ If you want to pass additional parameters as `JSON` then:
 "C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat" <path_to_sstest_file> -config:LastConfig.json.user
 ```
 
-In this case, the `LastConfig.json.user` file contains values from the last execution by Rapise itself, stored in the framework root. It contains the framework [parameter](/Guide/Frameworks/parameters.md) values, such as:
+In this case, the `LastConfig.json.user` file contains values from the last execution by Rapise itself, stored in the framework root. It contains the framework [parameter](Frameworks/parameters.md) values, such as:
 
 ```json
 {

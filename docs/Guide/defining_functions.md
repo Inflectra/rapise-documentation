@@ -26,7 +26,7 @@ This file is automatically attached into every script. All variables and functio
 
 ![Functions](img/defining_functions_user_function.png)
 
-You may also open `User.js` from the [Files Tree](/Guide/test_files_dialog.md):
+You may also open `User.js` from the [Files Tree](test_files_dialog.md):
 
 ![User.js files](img/defining_functions_files_userjs.png)
 
