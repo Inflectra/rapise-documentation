@@ -328,5 +328,4 @@ The test should now pass successfully.
 ## See Also
 
 - [Tutorial: Web Testing (JavaScript)](tutorial_web_using_javascript.md)
-- [Browser Profiles](browser_settings.md)
-- [Setting Up Web Browsers](setting_up_web_browsers.md)
+- [Browser Profiles](selenium_settings_dialog.md)
