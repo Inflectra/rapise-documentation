@@ -61,6 +61,14 @@
   }
 }
 
+:root > * {
+  --md-code-hl-color:                  #4287ff1a;
+}
+
+.filename {
+  font-weight: bold; 
+}
+
 .section-break {
   border-bottom: 2px solid var(--md-default-fg-color);
   padding: 2rem 0 .5rem 0;
