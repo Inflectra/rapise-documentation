@@ -82,6 +82,7 @@ nav:
     - 'Data-Driven Testing': 'Intro/ddt.md'
     - 'Frameworks': 'Guide/Frameworks/frameworks.md'
     - 'Parameters and Configurations': 'Guide/Frameworks/parameters.md'
+    - 'Page Objects / Modules': 'Guide/Frameworks/pageobjects.md'
     - 'Cheatsheet': 'Guide/cheatsheet.md'
 
 - 'User''s Guide':

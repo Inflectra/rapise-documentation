@@ -1378,6 +1378,11 @@
         "Mountsi",
         "vsix",
         "mkdocs",
-        "htmlimg"
+        "htmlimg",
+        "multiselect",
+        "datacolumn",
+        "linenums",
+        "datafile",
+        "testparam"
     ]
 }
