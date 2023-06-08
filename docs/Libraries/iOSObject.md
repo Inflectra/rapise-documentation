@@ -352,7 +352,7 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="DoClick"></a>    
 #### DoClick
 
-Clicks in the middle of the control if offset is not specified.
+Clicks in the middle of the control if offset is not specified. Clicking with offset requires Rapise 8.0+.
 
 ```javascript
 DoClick(x, y) 
@@ -427,7 +427,7 @@ DoFindByXPath(xpath)
 <a name="DoLongPress"></a>    
 #### DoLongPress
 
-Performs long press in the middle of the control if offset is not specified.
+Performs long press in the middle of the control if offset is not specified. Requires Rapise 8.0+.
 
 ```javascript
 DoLongPress(x, y) 
@@ -455,7 +455,7 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="DoPress"></a>    
 #### DoPress
 
-Presses in the middle of the control if offset is not specified.
+Presses in the middle of the control if offset is not specified. Requires Rapise 8.0+.
 
 ```javascript
 DoPress(x, y, duration) 

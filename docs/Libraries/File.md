@@ -61,7 +61,7 @@ Append(fileName, text)
 
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file. |
+| fileName | string |	Name of the file to append text. |
 | text | string |	Text to append to the file. |
 
 
@@ -73,7 +73,7 @@ Append(fileName, text)
 <a name="Copy"></a>    
 #### Copy
 
-Copy file `srcFileName` to `dstFileOrFolder`. If destination file exists, it gets overwritten.
+Copy file `srcFileName` to `dstFileOrFolder`. If destination file exists, it gets overwritten. Requires Rapise 8.0+.
 
 ```javascript
 Copy(srcFileName, dstFileOrFolder) 
@@ -85,7 +85,7 @@ Copy(srcFileName, dstFileOrFolder)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | srcFileName | string |	Character string file specification, which can include wildcard characters, for one or more files to be copied. |
-| dstFileOrFolder | string |	character string destination where the file or files from source are to be copied. Wildcard characters are not allowed. |
+| dstFileOrFolder | string |	Character string destination where the file or files from source are to be copied. Wildcard characters are not allowed. |
 
 
 
@@ -281,7 +281,8 @@ FolderInfo(folderPath)
 
 **Returns:**
 
-Folder object as described here <a displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx</a>          e.g. Path, SubFolders and Files enumeration.
+Folder object as described here <a displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1c87day3%28v=vs.84%29.aspx</a>
+e.g. Path, SubFolders and Files enumeration.
 
 
 
@@ -290,7 +291,9 @@ Folder object as described here <a displaytype="text" defaultstyle="true" type="
 <a name="Include"></a>    
 #### Include
 
-Includes code from a file.Normally used together with eval statement, i.e.:eval( File.Include('myfile.js') )
+Includes code from a file.
+Normally used together with eval statement, i.e.:
+`eval( File.Include('myfile.js') )`
 
 ```javascript
 Include(fileName) 
@@ -317,7 +320,9 @@ Contents of the source file for evaluation.
 <a name="IncludeOnce"></a>    
 #### IncludeOnce
 
-Includes code from a file if it was not included earlier.Normally used together with eval statement, i.e.:eval( File.IncludeOnce('myfile.js') )
+Includes code from a file if it was not included earlier.
+Normally used together with eval statement, i.e.:
+`eval( File.IncludeOnce('myfile.js') )`
 
 ```javascript
 IncludeOnce(fileName) 
@@ -362,7 +367,8 @@ Info(fileName)
 
 **Returns:**
 
-File object as described here <a displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx</a>          e.g. DateLastModified, Size, Type, Name, Path.
+File object as described here <a displaytype="text" defaultstyle="true" type="weblink" href="https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx" target="_blank" styleclass="Normal" translate="true">https://msdn.microsoft.com/en-us/library/1ft05taf%28v=vs.84%29.aspx</a>
+e.g. DateLastModified, Size, Type, Name, Path.
 
 
 

@@ -47,3 +47,4 @@
 - [AppiumCapabilities](AppiumCapabilities.md)
 - [AppiumDriver](AppiumDriver.md)
 - [AppiumWebElement](AppiumWebElement.md)
+- [TouchAction](TouchAction.md)

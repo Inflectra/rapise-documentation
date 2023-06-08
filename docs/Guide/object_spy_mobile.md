@@ -43,6 +43,8 @@ The **Mobile Spy** also includes toolbar controls that let you send events to mo
 This dialog lets you perform the following events on the device:
 
 - **Tap** - this will simulate tapping the currently selected object on the device.
+- **Press** - this will simulate long tap of 1 second for the currently selected object.
+- **Long Press** - performs long press on the currently selected object.
 - **Swipe** - you specify the start and end points of the swipe operation. This is useful for simulating a real swipe on the device in a specific direction at a specific location (e.g. on a progress selector).
 
  ![spy\_dialog\_mobile\_events\_swipe](./img/object_spy_mobile3.png)

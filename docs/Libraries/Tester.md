@@ -811,7 +811,7 @@ EndTest()
 #### ExpectFailure
 
 Set Tester to expect a failed assertion with given message or data. When 
-such error happens, it is reported as an expected Passed assertion.
+such error happens, it is reported as an expected Passed assertion. Requires Rapise 8.0+.
 
 When null is passed, all expectations are reset.
 
@@ -836,8 +836,8 @@ ExpectFailure(messageOrData)
 #### ExpectFailureDone
 
 If `messageOrData` is set, checks that given assertion failed at least once.
-
 If `messageOrData` is null or empty, checks that all expected failed assertions failed.
+Requires Rapise 8.0+.
 
 ```javascript
 ExpectFailureDone(messageOrData) 

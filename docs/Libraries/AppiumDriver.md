@@ -91,8 +91,8 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[SetUrl](#seturl) | Sets the URL the browser is currently displaying. |
 |	[ShakeDevice](#shakedevice) | Perform a shake action on the device |
 |	[StartActivity](#startactivity) | Start an Android activity by providing package name and activity name |
-|	[StartRecordingScreen](#startrecordingscreen) | Deletes active sessions on Appium server. |
-|	[StopRecordingScreen](#stoprecordingscreen) | Starts video recording on a device. |
+|	[StartRecordingScreen](#startrecordingscreen) | Starts video recording on a device. |
+|	[StopRecordingScreen](#stoprecordingscreen) | Stops video recording on a device. |
 |	[ToggleAirplaneMode](#toggleairplanemode) | Toggle airplane mode on device |
 |	[ToggleLocationServices](#togglelocationservices) | Switch the state of the location service |
 |	[ToggleWifi](#togglewifi) | Switch the state of the WiFi service |
@@ -169,7 +169,7 @@ BackgroundApp(seconds)
 <a name="ClearSavedSession"></a>    
 #### ClearSavedSession
 
-Clears saved Appium session to start a new one.
+Clears saved Appium session to start a new one. Requires Rapise 8.0+.
 
 ```javascript
 ClearSavedSession() 
@@ -306,7 +306,7 @@ true if successful, false otherwise.
 <a name="CreateTouchAction"></a>    
 #### CreateTouchAction
 
-Gets TouchAction object.
+Gets TouchAction object. Requires Rapise 8.0+.
 
 ```javascript
 CreateTouchAction() 
@@ -1514,7 +1514,7 @@ StartActivity(appPackage, appActivity, appWaitPackage, appWaitActivity)
 <a name="StartRecordingScreen"></a>    
 #### StartRecordingScreen
 
-Deletes active sessions on Appium server.
+Starts video recording on a device. Requires Rapise 8.0+.
 
 ```javascript
 StartRecordingScreen() 
@@ -1523,13 +1523,18 @@ StartRecordingScreen()
 
 
 
+**Returns:**
+
+'true' if successful, 'false' otherwise.
+
+
 
 <a name="see.also.appiumdriver.startrecordingscreen"></a>
 
 <a name="StopRecordingScreen"></a>    
 #### StopRecordingScreen
 
-Starts video recording on a device.
+Stops video recording on a device. Requires Rapise 8.0+.
 
 ```javascript
 StopRecordingScreen() 

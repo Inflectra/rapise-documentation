@@ -1396,6 +1396,10 @@
         "nodeelement",
         "expectfailure",
         "expectfailuredone",
-        "getentrytestname"
+        "getentrytestname",
+        "longpress",
+        "moveto",
+        "touchaction",
+        "pageobjects"
     ]
 }
