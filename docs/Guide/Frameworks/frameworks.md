@@ -122,7 +122,7 @@ A full copy of the entire testing framework may be needed. For example, if you w
 
 This can also be achieved by maintaining a common unified testing framework with different configurations. Or by using GIT branches. These are the methods we recommend using. But this requires a higher level of test organization, so at first a full copy of the framework may be the easiest and most efficient solution. In addition, Spira gives you the option to clone the product. If such a product has a testing framework, cloning it also becomes logical.
 
-You can do it with *File / Save As...* menu. Once you have a copy, you can save it to another product in Spira.
+You can do it with `File > Save As...` menu. Once you have a copy, you can save it to another product in Spira.
 
 ### Parametrization
 
@@ -194,7 +194,7 @@ Object repositories are organized hierarchically within test cases and Page Obje
 
 To share an object repository, simply assign the `shared` tag to the corresponding `Objects.js` file in the Files Tree.
 
-You can quickly navigate to the definition of any function or Page Object method in RVL or script mode by pressing the F12 key.
+You can quickly navigate to the definition of any function or Page Object method in RVL or script mode by pressing the ++f12++ key.
 
 Common functions and variables are displayed in the object tree for easy reference:
 
@@ -202,7 +202,7 @@ Common functions and variables are displayed in the object tree for easy referen
 
 The structure of each RVL file is also visible, allowing you to quickly locate specific lines of code.
 
-Rapise provides a global [find and replace](/Guide/find_and_replace_dialog) functionality, accessible through the *Edit / Find in Files* menu or by using the shortcut Ctrl+Shift+F.
+Rapise provides a global [find and replace](/Guide/find_and_replace_dialog) functionality, accessible through the `Edit > Find in Files` menu or by using the shortcut ++shift+ctrl+f++.
 
 #### Data, Script, and Configuration Files
 
@@ -285,6 +285,17 @@ Configuration, data, common functions, objects - multiple [assets](#data-script-
 [Spira Dashboard](/Guide/spira_dashboard_2) helps with all essential test management activities: management and execution of test sets. Test set helps grouping the test cases using different criteria for different purposes.
 
 ## Testing Framework Common Actions
+
+### Creating a New Testing Framework
+
+To create a new testing framework, follow these steps:
+
+1. Go to *File > Create New > Test Automation Framework*.
+2. Provide a name for your framework in the *Name* field.
+3. Select the folder where you want to create the framework. For now, you can choose to keep it in your working folder. Later, you can link it to Spira (and possibly Git) if needed.
+4. Choose the *primary type of test* for your framework. If your application is web-based, select the Web option. If it is desktop or mobile-based, choose the corresponding option. If your application consists of multiple parts (e.g., web, desktop, some mobile, and API), you can choose any option. The primary type selection is for convenience and can be modified later if necessary.
+
+![New Framework](img/frameworks_create_new_framework.png)
 
 ### Creating a Test Case
 
