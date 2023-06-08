@@ -28,6 +28,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
+|	[DoFullText](#dofulltext) | Returns text representation of the menu or saves it to a file. |
 |	[DoMenu](#domenu) | Performs click on the menu item. |
 
 
@@ -40,6 +41,36 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 	
 ### Action Detail
 		
+<a name="DoFullText"></a>    
+#### DoFullText
+
+Returns text representation of the menu or saves it to a file.
+
+```javascript
+DoFullText(separator, filePath, append, includeSeparators) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| filePath | string |	Name of a file that should hold text representation of the menu. |
+| append | boolean |	If 'false' then file should be overwritten, if 'true' then data should be appended.<br>Optional, Default: "false". |
+| includeSeparators | boolean |	If 'true' then menu separators are included to the result.<br>Optional, Default: "false". |
+
+
+
+
+**Returns:**
+
+number | <br>boolean: Text representation of the menu, 'true' if the file was successfully written, 'false' otherwise.
+
+
+
+<a name="see.also.managedmenupopupitem.dofulltext"></a>
+
 <a name="DoMenu"></a>    
 #### DoMenu
 

@@ -44,6 +44,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | ----------- | --------------- |
 |	[DoCollapse](#docollapse) | Collapses an item of this object. |
 |	[DoExpand](#doexpand) | Expands an item of this object. |
+|	[DoGetValue](#dogetvalue) | Gets value of a grid item with a given label. |
 |	[DoSelectItem](#doselectitem) | Selects an item of this object. |
 |	[DoSetValue](#dosetvalue) | Sets value of an grid item of this object. |
 |	[DoShowDropDown](#doshowdropdown) | Show dropdown (or custom dialog) for an item. |
@@ -189,6 +190,33 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.managedpropertygrid.doexpand"></a>
+
+<a name="DoGetValue"></a>    
+#### DoGetValue
+
+Gets value of a grid item with a given label.
+
+```javascript
+DoGetValue(label) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| label | string \| number |	Property grid row label or index |
+
+
+
+
+**Returns:**
+
+object: Item Value
+
+
+
+<a name="see.also.managedpropertygrid.dogetvalue"></a>
 
 <a name="DoSelectItem"></a>    
 #### DoSelectItem

@@ -64,6 +64,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[GetProperty](#getproperty) | Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise. |
 |	[GetRapiseVersion](#getrapiseversion) | Reads Rapise version. |
 |	[GetSpecialFolderPath](#getspecialfolderpath) | Returns path to a special folder specified by one of possible values. |
+|	[GetTestCasePath](#gettestcasepath) | Finds full path to a Test Case. |
 |	[SetClipboardText](#setclipboardtext) | Updates clipboard text |
 |	[SetConfigPath](#setconfigpath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
 |	[SetFileAsByteArray](#setfileasbytearray) | Creates or rewrites file and fills with contents of the provided byte array. |
@@ -1303,6 +1304,34 @@ string: System specified folder path without the trailing backslash, e.g. 'C:\Pr
 
 
 <a name="see.also.global.getspecialfolderpath"></a>
+
+<a name="GetTestCasePath"></a>    
+#### GetTestCasePath
+
+Finds full path to a Test Case.
+The Path is resolved for file path or for TC alias name.
+
+```javascript
+GetTestCasePath(pathToTest) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| pathToTest | string |	Path to .sstest file or Test Case alias name. |
+
+
+
+
+**Returns:**
+
+string: path to .sstest
+
+
+
+<a name="see.also.global.gettestcasepath"></a>
 
 <a name="SetClipboardText"></a>    
 #### SetClipboardText

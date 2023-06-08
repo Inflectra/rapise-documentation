@@ -47,6 +47,8 @@
 
 - [UltraRibbon](UltraRibbon.md)
 
+- [UltraStatusBar](UltraStatusBar.md)
+
 - [UltraTabControl](UltraTabControl.md)
 
 - [UltraTextEditor](UltraTextEditor.md)

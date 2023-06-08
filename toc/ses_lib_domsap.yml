@@ -6,11 +6,15 @@
 
     - 'DomSAPButton': 'Libraries/DomSAPButton.md'
 
+    - 'DomSAPCalendar': 'Libraries/DomSAPCalendar.md'
+
     - 'DomSAPCombobox': 'Libraries/DomSAPCombobox.md'
 
     - 'DomSAPGrid': 'Libraries/DomSAPGrid.md'
 
     - 'DomSAPInput': 'Libraries/DomSAPInput.md'
+
+    - 'DomSAPRadioGroup': 'Libraries/DomSAPRadioGroup.md'
 
     - 'DomSAPTable': 'Libraries/DomSAPTable.md'
 

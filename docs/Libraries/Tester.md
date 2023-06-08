@@ -58,7 +58,10 @@ Tester object. Use it to perform assertions during test playback and output rele
 |	[CaptureWindowImage](#capturewindowimage) | Captures screenshot of an application window matched by title and class and adds it to the report. |
 |	[DumpCmdArgsJson](#dumpcmdargsjson) | Dump node.json with all arguments. |
 |	[EndTest](#endtest) | Marks end of a currently executed test. |
+|	[ExpectFailure](#expectfailure) | Set Tester to expect a failed assertion with given message or data. |
+|	[ExpectFailureDone](#expectfailuredone) | If `messageOrData` is set, checks that given assertion failed at least once. |
 |	[FailTest](#failtest) | Stops test execution and sets it's status to failed. |
+|	[GetEntryTestName](#getentrytestname) | Retrieves the name of the test that was run by the user. |
 |	[GetParam](#getparam) | Read parameter field passed into the Test function by field name. |
 |	[GetReportAttribute](#getreportattribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
 |	[GetTestName](#gettestname) | Returns name of the running test. |
@@ -655,7 +658,7 @@ AssertStartsWith(message, str, substr, data, tags)
 Marks beginning of a test with a given name.
 
 ```javascript
-BeginTest(name, path, optionalParams) 
+BeginTest(name, path, optionalParams, data) 
 ```
 
 
@@ -666,6 +669,7 @@ BeginTest(name, path, optionalParams)
 | name | string |	Test name |
 | path | string |	Path to the test, that is executed. This string will be shown as a comment.<br>Optional. |
 | optionalParams | object |	Params to pass into Test(...) function.<br>Optional. |
+| data | array |	Additional info to put into report (array of SeSReportText())<br>Optional. |
 
 
 
@@ -803,6 +807,55 @@ EndTest()
 
 <a name="see.also.tester.endtest"></a>
 
+<a name="ExpectFailure"></a>    
+#### ExpectFailure
+
+Set Tester to expect a failed assertion with given message or data. When 
+such error happens, it is reported as an expected Passed assertion.
+
+When null is passed, all expectations are reset.
+
+```javascript
+ExpectFailure(messageOrData) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| messageOrData | string |	Text to match against assertion message & data. |
+
+
+
+
+
+<a name="see.also.tester.expectfailure"></a>
+
+<a name="ExpectFailureDone"></a>    
+#### ExpectFailureDone
+
+If `messageOrData` is set, checks that given assertion failed at least once.
+
+If `messageOrData` is null or empty, checks that all expected failed assertions failed.
+
+```javascript
+ExpectFailureDone(messageOrData) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| messageOrData | string |	Text to match against assertion message & data.<br>Optional, Default: "null". |
+
+
+
+
+
+<a name="see.also.tester.expectfailuredone"></a>
+
 <a name="FailTest"></a>    
 #### FailTest
 
@@ -825,6 +878,25 @@ FailTest(message, internal)
 
 
 <a name="see.also.tester.failtest"></a>
+
+<a name="GetEntryTestName"></a>    
+#### GetEntryTestName
+
+Retrieves the name of the test that was run by the user. Usually the 
+value is the same as Tester.GetTestName. But in cases where one test
+calls another test, Tester.GetEntryTestName will remain equal to
+to the original test case, and GetTestName will change depending on the 
+current test case being executed.
+
+```javascript
+GetEntryTestName() 
+```
+
+
+
+
+
+<a name="see.also.tester.getentrytestname"></a>
 
 <a name="GetParam"></a>    
 #### GetParam

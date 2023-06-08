@@ -48,9 +48,11 @@ iOS Object.
 | ----------- | --------------- |
 |	[DoAction](#doaction) | Clicks in the middle of the control. |
 |	[DoClear](#doclear) | Clears the text of the object. |
-|	[DoClick](#doclick) | Clicks in the middle of the control. |
+|	[DoClick](#doclick) | Clicks in the middle of the control if offset is not specified. |
 |	[DoEnsureVisible](#doensurevisible) | Ensure that a child item with the specified text is visible on screen. |
 |	[DoFindByXPath](#dofindbyxpath) | Finds an element by relative XPath expression. |
+|	[DoLongPress](#dolongpress) | Performs long press in the middle of the control if offset is not specified. |
+|	[DoPress](#dopress) | Presses in the middle of the control if offset is not specified. |
 |	[DoSendKeys](#dosendkeys) | Send a text to the object in character-by-character mode. |
 |	[DoTap](#dotap) | Taps the control. |
 |	[DoTwoFingerTap](#dotwofingertap) | Taps the control with two fingers. |
@@ -350,11 +352,19 @@ boolean: 'true' if success, 'false' otherwise.
 <a name="DoClick"></a>    
 #### DoClick
 
-Clicks in the middle of the control.
+Clicks in the middle of the control if offset is not specified.
 
 ```javascript
-DoClick() 
+DoClick(x, y) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -413,6 +423,63 @@ DoFindByXPath(xpath)
 
 
 <a name="see.also.iosobject.dofindbyxpath"></a>
+
+<a name="DoLongPress"></a>    
+#### DoLongPress
+
+Performs long press in the middle of the control if offset is not specified.
+
+```javascript
+DoLongPress(x, y) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+<a name="see.also.iosobject.dolongpress"></a>
+
+<a name="DoPress"></a>    
+#### DoPress
+
+Presses in the middle of the control if offset is not specified.
+
+```javascript
+DoPress(x, y, duration) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| duration | number |	Duration of press action.<br>Optional. |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+<a name="see.also.iosobject.dopress"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys

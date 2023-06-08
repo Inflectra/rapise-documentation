@@ -23,12 +23,14 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[Actions](#actions) | Gets Actions object. |
 |	[ActivateIMEEngine](#activateimeengine) | Activate the given IME on the device. |
 |	[BackgroundApp](#backgroundapp) | Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated. |
+|	[ClearSavedSession](#clearsavedsession) | Clears saved Appium session to start a new one. |
 |	[ClearSessions](#clearsessions) | Deletes active sessions on Appium server. |
 |	[Close](#close) | Close the Browser and Dispose of WebDriver. |
 |	[CloseApp](#closeapp) | Close the application. |
 |	[CreateAppiumDriver](#createappiumdriver) | Connects to a mobile target using given Appium uri and capabilities. |
 |	[CreateDesiredCapabilities](#createdesiredcapabilities) |  |
 |	[CreateDriverForSession](#createdriverforsession) | Connects to active Appium session with given URL and Id. |
+|	[CreateTouchAction](#createtouchaction) | Gets TouchAction object. |
 |	[DeactiveIMEEngine](#deactiveimeengine) | Deactivate the currently Active IME Engine on the device. |
 |	[Dispose](#dispose) | Dispose of WebDriver. |
 |	[DumpSessions](#dumpsessions) | Prints information about active Appium sessions to output. |
@@ -89,6 +91,8 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[SetUrl](#seturl) | Sets the URL the browser is currently displaying. |
 |	[ShakeDevice](#shakedevice) | Perform a shake action on the device |
 |	[StartActivity](#startactivity) | Start an Android activity by providing package name and activity name |
+|	[StartRecordingScreen](#startrecordingscreen) | Deletes active sessions on Appium server. |
+|	[StopRecordingScreen](#stoprecordingscreen) | Starts video recording on a device. |
 |	[ToggleAirplaneMode](#toggleairplanemode) | Toggle airplane mode on device |
 |	[ToggleLocationServices](#togglelocationservices) | Switch the state of the location service |
 |	[ToggleWifi](#togglewifi) | Switch the state of the WiFi service |
@@ -161,6 +165,21 @@ BackgroundApp(seconds)
 
 
 <a name="see.also.appiumdriver.backgroundapp"></a>
+
+<a name="ClearSavedSession"></a>    
+#### ClearSavedSession
+
+Clears saved Appium session to start a new one.
+
+```javascript
+ClearSavedSession() 
+```
+
+
+
+
+
+<a name="see.also.appiumdriver.clearsavedsession"></a>
 
 <a name="ClearSessions"></a>    
 #### ClearSessions
@@ -283,6 +302,21 @@ true if successful, false otherwise.
 
 
 <a name="see.also.appiumdriver.createdriverforsession"></a>
+
+<a name="CreateTouchAction"></a>    
+#### CreateTouchAction
+
+Gets TouchAction object.
+
+```javascript
+CreateTouchAction() 
+```
+
+
+
+
+
+<a name="see.also.appiumdriver.createtouchaction"></a>
 
 <a name="DeactiveIMEEngine"></a>    
 #### DeactiveIMEEngine
@@ -1476,6 +1510,41 @@ StartActivity(appPackage, appActivity, appWaitPackage, appWaitActivity)
 
 
 <a name="see.also.appiumdriver.startactivity"></a>
+
+<a name="StartRecordingScreen"></a>    
+#### StartRecordingScreen
+
+Deletes active sessions on Appium server.
+
+```javascript
+StartRecordingScreen() 
+```
+
+
+
+
+
+<a name="see.also.appiumdriver.startrecordingscreen"></a>
+
+<a name="StopRecordingScreen"></a>    
+#### StopRecordingScreen
+
+Starts video recording on a device.
+
+```javascript
+StopRecordingScreen() 
+```
+
+
+
+
+**Returns:**
+
+'true' if successful, 'false' otherwise.
+
+
+
+<a name="see.also.appiumdriver.stoprecordingscreen"></a>
 
 <a name="ToggleAirplaneMode"></a>    
 #### ToggleAirplaneMode

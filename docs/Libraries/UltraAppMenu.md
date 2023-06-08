@@ -42,7 +42,9 @@ Extends [ManagedObject](ManagedObject.md)
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ControlType](#controltype) | Type of the object. | GetControlType |  |
+| [Enabled](#enabled) | 'Enabled' state of the element. | GetEnabled |  |
 | [Height](#height) | Height of the object. | GetHeight |  |
+| [Visible](#visible) | Returns `true` if the element is visible on screen. | GetVisible |  |
 | [Width](#width) | Width of the object. | GetWidth |  |
 | [X](#x) | X-coordinate of the top left corner of the object. | GetX |  |
 | [Y](#y) | Y-coordinate of the top left corner of the object. | GetY |  |
@@ -85,6 +87,21 @@ Type: string
 Accessors: GetControlType
 			
 		
+<a name="Enabled"></a>
+#### Enabled
+
+
+'Enabled' state of the element.
+
+			
+	
+			
+Type: boolean
+			
+			
+Accessors: GetEnabled
+			
+		
 <a name="Height"></a>
 #### Height
 
@@ -98,6 +115,21 @@ Type: number
 			
 			
 Accessors: GetHeight
+			
+		
+<a name="Visible"></a>
+#### Visible
+
+
+Returns `true` if the element is visible on screen. Requires Rapise 8.0+
+
+			
+	
+			
+Type: boolean
+			
+			
+Accessors: GetVisible
 			
 		
 <a name="Width"></a>

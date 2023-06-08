@@ -21,6 +21,7 @@ File object. Use it to perform actions not related to a particular object. You d
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[Append](#append) | Appends text to a file. |
+|	[Copy](#copy) | Copy file `srcFileName` to `dstFileOrFolder`. |
 |	[CreateFolder](#createfolder) | Creates a folder. |
 |	[Delete](#delete) | Deletes a file. |
 |	[DeleteFolder](#deletefolder) | Deletes a folder. |
@@ -68,6 +69,34 @@ Append(fileName, text)
 
 
 <a name="see.also.file.append"></a>
+
+<a name="Copy"></a>    
+#### Copy
+
+Copy file `srcFileName` to `dstFileOrFolder`. If destination file exists, it gets overwritten.
+
+```javascript
+Copy(srcFileName, dstFileOrFolder) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| srcFileName | string |	Character string file specification, which can include wildcard characters, for one or more files to be copied. |
+| dstFileOrFolder | string |	character string destination where the file or files from source are to be copied. Wildcard characters are not allowed. |
+
+
+
+
+**Returns:**
+
+true if succeeded, false otherwise.
+
+
+
+<a name="see.also.file.copy"></a>
 
 <a name="CreateFolder"></a>    
 #### CreateFolder
@@ -372,7 +401,7 @@ Contents of the text file as string.
 Finds the file in test folders and calculates its absolute path.
 
 ```javascript
-ResolvePath(fileName) 
+ResolvePath(fileName, relTo) 
 ```
 
 
@@ -381,6 +410,7 @@ ResolvePath(fileName)
 |	**Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | fileName | string |	Name of the file to resolve path. |
+| relTo | string |	Resolve path relative to a given File or Dir.<br>Optional. |
 
 
 

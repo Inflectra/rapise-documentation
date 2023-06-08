@@ -24,7 +24,7 @@
 
 - [SeSReportText](SeSReportText.md)
 
-- [Spira][Spira.md]
+- [Spira](Spira.md)
 
 - [Spreadsheet](Spreadsheet.md)
 

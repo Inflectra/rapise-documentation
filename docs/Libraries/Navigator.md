@@ -35,6 +35,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
+|	[Back](#back) | Goes back to the previous page in the browser history. |
 |	[CheckObjectEnabled](#checkobjectenabled) | Checks if object is enabled by its id or XPath. |
 |	[CheckObjectExists](#checkobjectexists) | Checks if object is found on the screen by its id or XPath. |
 |	[CheckObjectVisible](#checkobjectvisible) | Checks if object is visible on the screen by its id or XPath. |
@@ -59,6 +60,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[DoResizeWindow](#doresizewindow) | Sets size of the active browser window. |
 |	[DoScreenshot](#doscreenshot) | Makes screenshot of the browser window. |
 |	[DoSelectTab](#doselecttab) | Selects browser tab by title or URL. |
+|	[DoSendKeys](#dosendkeys) | Sends keys to an active element on a page. |
 |	[DoSetExpectedConfirmResult](#dosetexpectedconfirmresult) | Sets boolean value to return as a result of next browser `confirm` request. |
 |	[DoSetExpectedPromptResult](#dosetexpectedpromptresult) | Sets text to return as a result of next browser `prompt` request. |
 |	[DoWaitFor](#dowaitfor) | Waits for object to appear in the current browser. |
@@ -67,6 +69,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[ExecJS](#execjs) | Executes given JavaScript statement in a browser and returns results. |
 |	[ExecPageJS](#execpagejs) | Executes given JavaScript statement in a browser in the context of the current page. |
 |	[Find](#find) | Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`. |
+|	[Forward](#forward) | Goes forward to the next page in the browser history. |
 |	[GetActiveTabId](#getactivetabid) | Gets Id of active browser tab. |
 |	[GetActiveTabTitle](#getactivetabtitle) | Gets title of active browser tab. |
 |	[GetActiveTabUrl](#getactivetaburl) | Gets URL of active browser tab. |
@@ -90,6 +93,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |	[Maximize](#maximize) | Maximizes browser window. |
 |	[Navigate](#navigate) | Redirects browser to a specified URL. |
 |	[Open](#open) | Opens a browser. |
+|	[Refresh](#refresh) | Reloads the current page. |
 |	[SelectBrowserProfile](#selectbrowserprofile) | Selects browser profile to use for testing. |
 |	[SeSFind](#sesfind) | Waits for object to appear on screen. |
 |	[SetPosition](#setposition) | Positions top-left corner of the browser window at specifid location. |
@@ -186,6 +190,21 @@ Type: boolean
 	
 ### Action Detail
 		
+<a name="Back"></a>    
+#### Back
+
+Goes back to the previous page in the browser history. Requires Rapise 8.0+.
+
+```javascript
+Back() 
+```
+
+
+
+
+
+<a name="see.also.navigator.back"></a>
+
 <a name="CheckObjectEnabled"></a>    
 #### CheckObjectEnabled
 
@@ -786,6 +805,28 @@ DoSelectTab(titleOrUrl)
 
 <a name="see.also.navigator.doselecttab"></a>
 
+<a name="DoSendKeys"></a>    
+#### DoSendKeys
+
+Sends keys to an active element on a page. Requires Rapise 8.0+.
+
+```javascript
+DoSendKeys(txt) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| txt | string |	Keys to send. Supports patterns like in [Global.DoSendKeys](/Libraries/Global/#dosendkeys). |
+
+
+
+
+
+<a name="see.also.navigator.dosendkeys"></a>
+
 <a name="DoSetExpectedConfirmResult"></a>    
 #### DoSetExpectedConfirmResult
 
@@ -1002,6 +1043,21 @@ Find(xpath, url, title, objInfo)
 
 
 <a name="see.also.navigator.find"></a>
+
+<a name="Forward"></a>    
+#### Forward
+
+Goes forward to the next page in the browser history. Requires Rapise 8.0+.
+
+```javascript
+Forward() 
+```
+
+
+
+
+
+<a name="see.also.navigator.forward"></a>
 
 <a name="GetActiveTabId"></a>    
 #### GetActiveTabId
@@ -1447,6 +1503,21 @@ Open(url)
 
 
 <a name="see.also.navigator.open"></a>
+
+<a name="Refresh"></a>    
+#### Refresh
+
+Reloads the current page. Requires Rapise 8.0+.
+
+```javascript
+Refresh() 
+```
+
+
+
+
+
+<a name="see.also.navigator.refresh"></a>
 
 <a name="SelectBrowserProfile"></a>    
 #### SelectBrowserProfile

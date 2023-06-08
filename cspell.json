@@ -1383,6 +1383,19 @@
         "datacolumn",
         "linenums",
         "datafile",
-        "testparam"
+        "testparam",
+        "dolongpress",
+        "dopress",
+        "clearsavedsession",
+        "createtouchaction",
+        "startrecordingscreen",
+        "stoprecordingscreen",
+        "cellelement",
+        "doselectradio",
+        "gettestcasepath",
+        "nodeelement",
+        "expectfailure",
+        "expectfailuredone",
+        "getentrytestname"
     ]
 }

@@ -48,6 +48,8 @@
 
     - 'UltraRibbon': 'Libraries/UltraRibbon.md'
 
+    - 'UltraStatusBar': 'Libraries/UltraStatusBar.md'
+
     - 'UltraTabControl': 'Libraries/UltraTabControl.md'
 
     - 'UltraTextEditor': 'Libraries/UltraTextEditor.md'

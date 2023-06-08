@@ -197,8 +197,15 @@ DoPressMenu()
 Makes screenshot of a device.
 
 ```javascript
-DoScreenshot() 
+DoScreenshot(txtLabel) 
 ```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| txtLabel | string |	Label of a screenshot in the report.<br>Optional. |
 
 
 

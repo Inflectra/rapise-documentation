@@ -24,6 +24,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [CellElement](#cellelement) | Get Cell element. | GetCellElement |  |
 | [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
 | [ColumnIndex](#columnindex) | Index of a column with a given name. | GetColumnIndex |  |
 | [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
@@ -44,6 +45,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |	[DoScrollTo](#doscrollto) | Scrolls to the specified cell. |
 |	[DoSelect](#doselect) | Selects a dropdown item in the specified cell. |
 |	[DoSelectAll](#doselectall) | Selects/deselects all rows based on check parameter value. |
+|	[DoSelectRadio](#doselectradio) | Select a radio button within a cell. |
 |	[DoSelectRow](#doselectrow) | Selects/deselects a given row based on check parameter value. |
 |	[DoSetText](#dosettext) | Sets a text value into the specified cell. |
 
@@ -75,6 +77,29 @@ Type: string
 			
 			
 Accessors: GetCell
+			
+		
+<a name="CellElement"></a>
+#### CellElement
+
+
+Get Cell element.
+
+			
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |	
+| row | number \| string | Zero-based index if the row or text of a cell in the specified column. |
+| col | string \| number | Zero-based index of the column or column name. |
+
+
+	
+			
+Type: HTMLObject
+			
+			
+Accessors: GetCellElement
 			
 		
 <a name="ColumnCount"></a>
@@ -271,6 +296,35 @@ boolean: 'true' if successful, 'false' otherwise
 
 
 <a name="see.also.domsapgrid.doselectall"></a>
+
+<a name="DoSelectRadio"></a>    
+#### DoSelectRadio
+
+Select a radio button within a cell.
+
+```javascript
+DoSelectRadio(row, col, item) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| row | number \| string |	Zero-based index if the row or text of a cell in the specified column. |
+| col | string \| number |	Zero-based index of the column or column name. |
+| item | string |	Radio button caption. |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise
+
+
+
+<a name="see.also.domsapgrid.doselectradio"></a>
 
 <a name="DoSelectRow"></a>    
 #### DoSelectRow

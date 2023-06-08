@@ -26,6 +26,8 @@
 
     - 'VButton': 'Libraries/VButton.md'
 
+    - 'VCheckbox': 'Libraries/VCheckbox.md'
+
     - 'VComboBox': 'Libraries/VComboBox.md'
 
     - 'VPopList': 'Libraries/VPopList.md'

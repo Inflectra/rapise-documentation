@@ -25,6 +25,8 @@
 
 - [VButton](VButton.md)
 
+- [VCheckbox](VCheckbox.md)
+
 - [VComboBox](VComboBox.md)
 
 - [VPopList](VPopList.md)
