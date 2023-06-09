@@ -1400,6 +1400,8 @@
         "longpress",
         "moveto",
         "touchaction",
-        "pageobjects"
+        "pageobjects",
+        "diffmerge",
+        "funcs"
     ]
 }

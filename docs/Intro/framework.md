@@ -1,5 +1,8 @@
 # How to Build a Test Framework with Rapise
 
+!!! info
+    In different parts of the documentation and in knowledge base articles we use term **Single Test mode** to refer to this kind of framework with a parent test and nested sub-tests.
+
 Need to call one test from another? Need to run many tests? Have a test plan? It is time to build a testing framework. Learn how to do it with Rapise.
 
 ## How Framework Tests Are Structured

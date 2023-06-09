@@ -1,5 +1,8 @@
 # Testing Frameworks
 
+!!! info
+    In different parts of the documentation and in knowledge base articles we use term **Framework mode** to refer to this kind of framework with built-in support for modules, test cases and test sets.
+
 A testing framework is a collection of guidelines, libraries, and tools that provide a standard way of organizing and executing tests.
 
 Previous versions of Rapise (pre 8.0) already had all the necessary tools for developing testing frameworks. With those tools that have been available for a long time, it is possible to build a variety of testing frameworks. But the availability of variety leads to difficulties in choosing the best combination of tools to obtain the optimal result.
