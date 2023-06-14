@@ -8,7 +8,7 @@ When you [create a new test](create_a_new_test.md) in Rapise, four files are cre
 - **Main.js** - the main test script file that contains the entry point of the test - `Test` function.
 - **Objects.js** - the file that contains recorded objects.
 - **User.js** - the file that contains user defined functions.
-- **Main.rvl.xslx** - an [RVL](rvl_editor.md) file for RVL-enabled tests.
+- **Main.rvl.xlsx** - an [RVL](rvl_editor.md) file for RVL-enabled tests.
 
 where ***&lt;TestName&gt;*** is the name of your Test.
 

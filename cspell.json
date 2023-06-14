@@ -1402,6 +1402,12 @@
         "touchaction",
         "pageobjects",
         "diffmerge",
-        "funcs"
+        "funcs",
+        "testcases",
+        "pageobject",
+        "testcasegroup",
+        "singlegroup",
+        "singlewindow",
+        "singleroot"
     ]
 }
