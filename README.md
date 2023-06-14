@@ -1,5 +1,13 @@
 # Rapise Documentation
 
+## Prerequisites
+
+Install MkDocs packages
+
+```
+pip install -r requirements.txt
+```
+
 ## Tools
 
 1. To update kb.md run \tools\KnowledgeBase2RapiseDoc\KnowledgeBase2RapiseDoc.sstest 

@@ -1,5 +1,8 @@
 # Test Framework Parameters
 
+!!! important
+    This section applies to the [new Framework mode](./frameworks.md) introduced in Rapise 8.0.
+
 In test automation projects, it is often necessary to parameterize test cases for various purposes. For instance, this could involve specifying different URLs for running tests in different environments (development, staging, production), or providing user credentials for logging into the system. Additionally, there might be a need to quickly modify playback speed, error handling, and screenshot settings for multiple test cases. In the Rapise 8.0 Framework mode, managing parameters is made simple and convenient, allowing easy creation and management of parameters, including the ability to run the same test case with different input data, such as filling a form with various values to create multiple records in a system database.
 
 In the upcoming sections, you will gain valuable insights into the process of defining parameters and configurations, as well as their application in test cases and test sets. If you're looking for concrete examples of parameter creation and usage, we highly recommend exploring [this knowledge base article](https://www.inflectra.com/Support/KnowledgeBase/KB749.aspx).
