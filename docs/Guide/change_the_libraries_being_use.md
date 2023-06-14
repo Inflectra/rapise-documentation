@@ -8,7 +8,7 @@ For example, you are recording using the web browser and you need to include the
 
 To change the recording library being used select `Tools > Libraries` in the main application menu.
 
-That will bring up the [Recording selection dialog box](select_an_application_to_record_dialog.md):
+That will bring up the **Select Libraries for Record and Playback** dialog:
 
 ![Select Libraries](./img/change_the_libraries_being_use2.png)
 

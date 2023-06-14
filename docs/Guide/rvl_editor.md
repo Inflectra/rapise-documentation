@@ -238,6 +238,28 @@ Move mouse over the Toolbox label to reveal the list of items.
 
 ![Reveal RVL Toolbox](./img/rvl_toolbox_reveal.png)
 
+## Navigate to Definition (F12)
+
+To quickly navigate to the location where a specific function or Page Object action is defined, follow these steps:
+
+1. Click on the function name or action.
+2. Press the F12 key.
+3. Rapise will attempt to locate and open the corresponding definition.
+
+![f12 1](img/rvl_editor_f12_1.png)
+
+![f12 2](img/rvl_editor_f12_2.png)
+
+## Define a Map by Drag&Drop
+
+When you drag and drop a spreadsheet (`.xlsx`) into RVL, a [map](/RVL/Maps.md) is created. This map refers to the data file using an absolute path, starting from the framework root represented by `%WORKDIR`.
+
+![Map, Absolute](img/rvl_editor_drag.png)
+
+However, if you hold the ++shift++ key while performing the same action, the map is created with a relative path instead. This relative path is based on the current `rvl.xlsx` file.
+
+![Map, Relative](img/rvl_editor_shift_drag.png)
+
 ## See Also
 
 - [About RVL](visual_language.md)

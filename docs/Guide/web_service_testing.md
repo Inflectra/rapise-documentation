@@ -53,3 +53,9 @@ the following types of web service:
 1. [**REST Web Services**](rest_web_service.md) - Rapise contains a built-in [REST definition builder](rest_definition_editor.md) and object library that allows you to prototype out your REST web service requests, inspect the returned HTTP headers and HTTP response body and then covert into a parameterized set of Rapise objects that can be scripted against in the main Rapise [JavaScript editor](javascript_ide.md). It also includes built-in support for verifying the data returned as Rapise checkpoints.
 
 2. [**SOAP Web Services**](soap_web_services.md) - Rapise contains a built-in [SOAP request tester](soap_definition_editor.md) and object library that allows you to prototype out your SOAP web service requests, inspect the returned HTTP headers and SOAP response body and then covert into a parameterized set of Rapise objects that can be scripted against in the main Rapise [JavaScript editor](javascript_ide.md). It also includes built-in support for verifying the data returned as Rapise checkpoints.
+
+## Web Services and Testing Frameworks
+
+Starting from Rapise 8, we introduced the framework mode. If API entry points are a part of your testing framework, it is convenient to include them in a [Page Object](/Guide/Frameworks/pageobjects) using JavaScript mode.
+
+Also web service definition files (`*.rest` and `*.soap` as well) may be marked as [shared](/Guide/Frameworks/frameworks#shared-files-and-repositories).

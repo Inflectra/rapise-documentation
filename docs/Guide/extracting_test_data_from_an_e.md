@@ -6,6 +6,14 @@ Often you want to be able to parameterize your Rapise tests to have a common set
 
 ## Recommended Solution
 
+### RVL
+
+The most simple and straight-forward way to accomplish this is to use [RVL Maps](/RVL/Maps).
+
+Also, if your goal is to store Configuration data as `.xlsx` then we recommend to simply use [Global.GetProperty](/Libraries/Global#getproperty).
+
+### JavaScript
+
 In this example we have a spreadsheet that contains some lookup data:
 
 |**Test** |  **Test Data** |

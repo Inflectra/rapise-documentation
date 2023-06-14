@@ -1,6 +1,6 @@
 # Recording Activity Dialog
 
-![recording activity dialog](./img/recording_activity_dialog1.png)
+![recording activity dialog](img/recording_activity_dialog_empty.png)
 
 ## Purpose
 
@@ -21,13 +21,13 @@ being recorded:
 
 When you first open the dialog, it will be displayed in **Standard** mode:
 
-![recording activity dialog](./img/recording_activity_dialog1.png)
+![recording activity dialog](img/recording_activity_dialog_empty.png)
 
 This mode shows the most widely used options and is normally sufficient for most recording needs.
 
-However if you need to do analog recording or you want more control over the type of object being recorded, you can click on the **Advanced** link to switch to Advanced mode:
+However if you need to do analog recording or you want more control over the type of object being recorded, you can click on the `Adv.>>` link to switch to Advanced mode:
 
-![recording-activity-dialog-advanced](./img/recording_activity_dialog2.png)
+![recording activity dialog advanced](img/recording_activity_dialog_advanced.png)
 
 Clicking on the Advanced link will switch it back to **Standard** mode.
 
@@ -42,7 +42,7 @@ As you interact with the AUT (**A**pplication **U**nder **T**est), your actions 
 If you right click in the grid, you'll see a context menu with three
 options:
 
-![recording activity dialog-context.menu-delete.action](./img/recording_activity_dialog4.png)
+![recording activity dialog-context.menu-delete.action](img/recording_activity_dialog_context.png)
 
 * **Delete Action** removes the selected row.
 * **Edit Action** opens the **Action Editor Dialog**.  This is also opened by double-clicking a grid entry.
@@ -53,7 +53,7 @@ options:
 
 ## Standard Mode Features
 
-![recording activity dialog, widgets](./img/recording_activity_dialog6.png)
+![](img/recording_activity_dialog_standard_features.png)
 
 The following options are available in the dialog in both modes:
 
@@ -62,6 +62,10 @@ The following options are available in the dialog in both modes:
 * **Learn** ++ctrl+2++ - Use to [learn](object_learning.md) an object. Place the mouse cursor over the object you wish to learn.  It should become highlighted with a purple box.  Press ++ctrl+2++ while the object is highlighted.  You will see a line added to the Recording Activity dialog, signifying that the object was learned.
 
 * **SPY** ++ctrl+5++ - The Spy Button opens the **Object Spy dialog**. The Object Spy dialog allows you to view the state of the objects in your program.  Viewing object state is called [Object Spying](object_spy.md).  The Object Spy dialog is described [here](ses_spy_dialog.md). You can also use the SPY button to **learn an object** that is not visible or covered by another object.
+
+    If you are doing cross-application recording then you may need different type of Spy. Here you may switch between available Spy modes:
+
+    ![Spy Modes](img/recording_activity_dialog_spy_modes.png)
 
 * **Pause** - The Pause Button temporarily stops Recording.  Any interacting you d* with the AUT is ignored.  When you press the Pause Button, the title of the button changes to **Resume**.  Press the **Resume** button to continue recording.
 
@@ -81,9 +85,9 @@ The following additional features are available in Advanced mode:
 
 * **Simulated Drop-Down Menu** - An object can be learned if it matches a rule specified in the [Recording/Learning libraries](recording_library.md) available. The drop-down menu lists the possible rules for learning objects in the current application:
 
-![recording activity dialog, simulated dropdown](./img/recording_activity_dialog7.png)
+    ![recording activity dialog, simulated dropdown](img/recording_activity_dialog_simulated_dropdown.png)
 
-If you cannot learn an object with one library rule, try another in the list.  Create a **Simulated Object** only if the other, more flexible alternatives have been exhausted.
+If you cannot learn an object with one library rule, try another in the list. Create a **Simulated Object** only if the other, more flexible alternatives have been exhausted.
 
 **To learn an object using a specific library**
 
@@ -99,10 +103,10 @@ If you cannot learn an object with one library rule, try another in the list.  
 
 While the Recording Activity (RA) dialog is open, it is always on top. The Transparent checkbox makes the RA Dialog transparent so that you can interact with objects behind it.  The image below illustrates the difference:
 
-![recording activity dialog, transparent](./img/recording_activity_dialog8.png)
+![transparent](img/recording_activity_dialog_transparent.png)
 
 When you click the **Transparent** option, it will look like the following:
 
-![recording-activity-dialog,-transparent2](./img/recording_activity_dialog9.png)
+![transparent 2](img/recording_activity_dialog_transparent2.png)
 
 The main advantage of this mode is that you can click in the area where the RA dialog is displayed and the clicks will be sent through to the AUT.

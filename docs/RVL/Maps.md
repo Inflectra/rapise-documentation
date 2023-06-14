@@ -135,7 +135,6 @@ Data in the `Range` map is assumed to be similar to [`Rows`](#rows-map) map, but
 
 ![Range Data](img/Maps_RangeData.png)
 
-
 ### Database Map
 A `Database` map contains no in-place data, but defines a connection to the database result set. 
 

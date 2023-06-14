@@ -1,6 +1,6 @@
 # Test Files View
 
-![test files dialog](./img/test_files_dialog1.png)
+![Overview](img/test_files_dialog_overview.png)
 
 ## Purpose
 
@@ -19,14 +19,40 @@ The **Test Files** dialog allows you to navigate and alter the Test hierarchy, i
 
 ## How to Open
 
-The **Test Files** dialog is part of the [Default Layout](restoring_the_default_layout.md).
+Click `View > Show > Test Files` menu.
 
-## Context Menu (Folder)
+## Root Node
+
+Framework root (for [framework](/Guide/Frameworks/frameworks) mode) or test root (for single test mode).
+
+### Show Files and Folders
+
+Root node features special button that facilitates adding files from disk:
+
+![Show Files Button](img/test_files_dialog_show_files.png)
+
+See [Adding Files for Test Folder](#adding-files-from-test-folder).
+
+### Root Context Menu
+
+![Root Menu](img/test_files_dialog_context_root.png)
+
+* **Reload**: Refreshes objects and test cases.
+* ... same as context menu for [Folder Node](#folder-context-menu)
+* **Rebuild Framework Metadata...**: Forces the regeneration of metadata for the entire framework.
+
+## Folder Node
+
+Shows contents of the [Folder or Filter Group](#folders-and-filter-groups).
+
+### Folder Context Menu
 
 Right click on a folder to see:
 
-![test files view, context menu 1](./img/test_files_dialog2.png)
+![Folder Menu](img/test_files_dialog_context_folder.png)
 
+* **Reload**: Refresh group contents. Use it for [filter groups](../test_files_dialog/#filtergroup)  ('IsFilterGroup' is set to 'True' in group properties), e.g. for Report group.
+* **Add File(s)**: Add an existing file to the test.
 * **Create**
     * **Text File**: Create `.txt` file and add it to the test.
     * **JavaScript File**: Create `.js` file and add it to the test.
@@ -35,55 +61,79 @@ Right click on a folder to see:
     * **File**: Aks for name and extension and create an empty file.
     * **WebAppProfile.json**: Add new `WebAppProfile.json` to this test project.
     * **User Lib**: Create shared user library for this test and sub-tests.
-* **Add File(s)**: Add an existing file to the test.
 * **New Group**:  Create a logical grouping of files in the test. This will **not** add a folder to the file system.
-* **Reload**: Refresh group contents. Use it for [filter groups](../test_files_dialog/#filtergroup)  ('IsFilterGroup' is set to 'True' in group properties), e.g. for Report group.
-* **Create Sub-Test**: Launch Create Sub-Test dialog.
+* **New Folder**:  Create a real folder in the test. This will add a folder to the file system.
+* **New Sub-Test**: Launch Create Sub-Test dialog.
 * **Remove from Test**: Remove the selected grouping from the test.  This does **not** delete included files from your hard disk.
 * **Remove All from Disk**: Remove all files included into the selected grouping from your hard disk.
 
-## Context Menu (File)
+## File Node
+
+Shows all files actually added to the test / framework.
+
+### Context Menu (File)
 
 Right click on a file to see:
 
-![test files view, context menu 2](./img/test_files_dialog3.png)
+![File Menu](img/test_files_dialog_context_file.png)
 
 * **Open**: Open the file in Rapise.
-* **Open Externally**: Open the file using associated program. E.g. if a Notepad is registered in Windows to open TXT files, then TXT file will be opened by Notepad.
 * **Open as Spreadsheet**: Open this file using built in [Spreadsheet editor](./spreadsheet_editor.md). May be used to open `.rvl.xlsx` in spreadsheet editor if you, for example, need to add columns.
+* **Open as Text**: Open this file using built in [Text Editor](source_editor.md). May be used to open `.csv` in source editor if you, for example, need to add columns.
+* **Open Externally**: Open the file using associated program. E.g. if a Notepad is registered in Windows to open TXT files, then TXT file will be opened by Notepad.
 * **Reveal in Explorer**: Open Windows File Explorer and show this file in it.
 * **Remove from Test**: Remove the file from your test.  This does **not** delete the file from your hard disk.
 * **Remove from Disk**: Remove the file from your test and hard drive.
 * **Create Data Object**: Only available for `.xls` and `.xlsx` files. Create Spreadsheet Data Object in the object tree.
 
-## Context Menu (Sub-Test)
+## RVL Sheet
+
+`rvl.xlsx` file node automatically expands to show available sheets and their contents.
+
+### Context Menu for RVL Sheet
+
+![RVL Sheet Menu](img/test_files_dialog_context_rvl_sheet.png)
+
+* **Play this Sheet**: execute given RVL sheet.
+
+## Sub-Test Node
+
+Sub-test nodes represent various types of sub-tests such as Test Cases, Page Objects, and other supplementary sub-tests.
+
+### Context Menu for Sub-Test
 
 Right click on a sub-test to see:
 
-<img alt="test files view, context menu 3" src="/Guide/img/tests_and_sub_tests6.png" width="130" />
+![Sub-Test Menu](img/test_files_dialog_context_subtest.png)
 
 See [menu item descriptions](tests_and_sub_tests.md#sub-test-context-menu)
 
-## Filter Groups
+## Folders and Filter Groups
 
-Filter groups read its contents from disk according to specified path and wildcard. You may setup a filter group by editing group properties:
+A **Group** is a virtual folder that may or may not have a physical representation on disk. **Filter groups** retrieve their contents from disk based on a specified path and wildcard. A **RealFolder** is an actual folder that has the same name as the group and its path matches the **FilterPath** of the group.
 
-![filter group](./img/test_files_dialog4.png)
+### Folder Properties
 
-* **FilterPath**: Root path to find files via wildcard (valid only if 'IsFilterGroup' is 'True').
-* **FilterWildcard**: Filter wildcard (valid only if 'IsFilterGroup' is 'True').
-* **IsFilterGroup**: 'True' if directory should show the list of all files matching 'FilterWildcard' belonging to 'FilterPath'.
-* **Name**: Group name.
+You can configure a filter group or real folder by editing the group properties:
+
+![Folder Properties](img/test_files_dialog_folder_properties.png)
+
+* **FilterPath**: The root path used to locate files based on the wildcard (only valid if **IsFilterGroup** is `True` or if it is a **RealFolder**).
+* **FilterWildcard**: The wildcard filter used to match files (only valid if **IsFilterGroup** is `True`).
+* **IsFilterGroup**: Set to `True` if the directory should display a list of files that match the **FilterWildcard** within the **FilterPath**, or if it is a **RealFolder**.
+* **Name**: The name of the group/folder.
+* **RealFolder**: Represents a physical folder that actually exists on the disk.
+
 
 ## Adding Files from Test Folder
 
-![filter group](./img/test_files_dialog5.png)
+![Filter Group](./img/test_files_dialog5.png)
 
-1. Show files in folder triggers combined view where one can see files and folders on inside test folder both added and not yet added into the test project.
+1. **Show files in folder**: This option enables a combined view where you can see both the files and folders inside the test folder, including those that have already been added to the test project and those that have not yet been added.
 
-2. If folder is not yet added to the project then `+` icon is displayed. Pressing it adds filter group for this folder.
+2. If a folder has not been added to the project, a `+` icon is displayed. Clicking on it adds a filter group for that folder.
 
-3. If file is not yet added to the project then `+` icon is displayed. Pressing it adds file into the test project.
+3. If a file has not been added to the project, a `+` icon is displayed. Clicking on it adds the file to the test project.
 
 ## See Also
 

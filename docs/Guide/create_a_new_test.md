@@ -12,7 +12,7 @@ Once you are about starting something big a new consider Creating a new [testing
 
 ## Or Creating New Standalone Test
 
-Select the `File > New Test` menu option.  The [Create New Test](create_new_test_dialog.md) dialog will appear.  Follow the instructions on this dialog.
+Select the `File > Create New > New Test` menu option.  The [Create New Test](create_new_test_dialog.md) dialog will appear.  Follow the instructions on this dialog.
 
 ## See Also
 

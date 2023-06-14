@@ -1,20 +1,24 @@
 # Testing SOAP Web Services
 <!-- /* cSpell:disable */ -->
+
 ## What is SOAP and what is a SOAP web service?
+
 > SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web services make use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.
 <!-- /* cSpell:enable */ -->
 > SOAP web services are fully self-descriptive, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.
 
 ## How does Rapise test SOAP web services?
+
 Creating a SOAP web service test in Rapise consists of the following steps:
 
-1.   Using the [SOAP test studio](soap_definition_editor.md) to create the various SOAP web service test actions and verify that they return the expected data in the expected format.
+1. Using the [SOAP test studio](soap_definition_editor.md) to create the various SOAP web service test actions and verify that they return the expected data in the expected format.
 
-2.   Saving each of these SOAP API functions as Rapise learned objects.
+2. Saving each of these SOAP API functions as Rapise learned objects.
 
-3.   Generating the [test script](scripting.md) in Javascript that uses the learned Rapise web service objects.
+3. Generating the [test script](scripting.md) in Javascript that uses the learned Rapise web service objects.
 
 ## Rapise SOAP Testing Studio
+
 When you add a SOAP web service to your Rapise test project, you get a new SOAP definition file (`.soap`) that will store all of the test invocations against a specific SOAP web service:
 
 ![soap definition editor](./img/soap_web_services1.png)
@@ -61,7 +65,6 @@ WebServicesSOAP.DoExecute('Book_Insert', { "book": {   "Author": {"Name": ""}, 
 Log("Resp: "+WebServicesSOAP.RequestProperties.requestPayLoad);
 ```
 
-
 In the example above, the same object "WebServicesSOAP" is being used with `DoExecute` with different SOAP methods passed as the first parameter (**"Connection_Authenticate"**, **"Book_Retrieve"**, **"Book_Insert"**).
 
 ## Generating Rapise SOAP Test Scripts
@@ -80,8 +83,11 @@ Tester.Assert('Book_Retrieve Response', WebServicesSOAP.GetResponseObject(), { .
 WebServicesSOAP.DoExecute('Connection_Disconnect', {});
 ```
 
+The script is always generated within the `Test()` function of the current `Main.js` file. The term *current* refers to the `Main.js` file of the test, test case, or Page Object / Module to which this `.soap` definition belongs.
+
+In the case of a Page Object, you would need to cut the generated code from `Test()` and paste it into the corresponding `<PageObject>_DoAction` function.
+
 ## Playback of SOAP Tests
 
 Once you have created your SOAP web service tests, you can use the standard [Playback](playback.md) functionality in Rapise to execute your test and display the report:
 ![soap\_playback](./img/soap_web_services8.png)
-

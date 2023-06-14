@@ -38,11 +38,19 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
     * `true`: An object added to the Object Repository for each request. Then it is initialized using `var <request_object_id> = SeS(<request_object_id>)`.
     * `false`: Don't add anything to the object tree. Each request is initialized as `var <request_object_id> = /**RESTRequest*/Session.GetRESTRequest('<definition>.rest', '<request_id>')`. This approach makes it easier to generate re-usable functions doing REST calls without need to load objects. See [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest).
 
+### Debugger
+
+![Debugger Options](img/options_dialog_debugger_node.png)
+
+* **Optimize Call Stack**: If **True**, removes redundant information from the call stack view. See also [Call Stack View Optimization](variable_call_stack_view#call-stack-view-optimization).
+
+* **Remember Debugger Layout**: If **True**, Rapise will remember the window layout for debug mode separately. For example, this may be useful if you want to work full screen while authoring the Test and half-screen to debug. This way the AUT and the Rapise debugger fit on the screen.
+
 ### Execution
 
 ![execution](./img/options_dialog_execution.png)
 
-* **JSEngineType**: In the test settings (one of **Default**, **Node**, **WScript**). Where **Default** means **WScript**, but in the future it will eventually become **Node**. 
+* **JSEngineType**: Set preferred  [JavaScript Engine](jscript_language_reference) (one of **Default**, **Node**, **WScript**). Where **Default** means **Node**.
 
 ### Settings
 
@@ -59,7 +67,6 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
     ![options dialog, recent projects](./img/options_dialog8.png)
 
-* **Remember Debugger Layout**: If **True**, Rapise will remember the window layout for debug mode separately. For example, this may be useful if you want to work full screen while authoring the Test and half-screen to debug. This way the AUT and the Rapise debugger fit on the screen.
 * **ShowCommonFileAliases**: Legacy, not needed since Rapise 6.0.
 * **Enable Execution Monitor**: specifies whether the execution monitor dialog box will be displayed during [playback](playback.md).
 * **ShowDashboardOnStartUp**: If **True**, the [Spira Dashboard](spira_dashboard.md) will open automatically when Rapise is opened.

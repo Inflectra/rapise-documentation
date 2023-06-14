@@ -1,6 +1,7 @@
 # Testing REST Web Services
 
 ## What is REST and what is a RESTful web service?
+
 <!-- /* cSpell:disable */ -->
 > **RE**presentational **S**tate **T**ransfer (**REST**) is a style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a web API design model that offers greater simplicity over other web service protocols such as SOAP and XML-RPC.
 <!-- /* cSpell:enable */ -->
@@ -9,30 +10,32 @@
 ## How does Rapise test REST web services?
 
 Creating a REST web service test in Rapise consists of the following steps:
-1.   Using the [REST definition builder](rest_definition_editor.md) to create the various REST web service requests and verify that they return the expected data in the expected format.
 
-2.   Parameterizing these REST web service requests into reusable templates and saving as Rapise learned objects.
+1. Using the [REST definition builder](rest_definition_editor.md) to create the various REST web service requests and verify that they return the expected data in the expected format.
 
-3.   Generating the [test script](scripting.md) in Javascript that uses the learned Rapise web service objects.
+2. Parameterizing these REST web service requests into reusable templates and saving as Rapise learned objects.
+
+3. Generating the [test script](scripting.md) in Javascript that uses the learned Rapise web service objects.
 
 ## Rapise REST Definition Builder
+
 When you add a web service to your Rapise test project, you get a new REST definition file (`.rest`) that will store all of your prototyped requests against a specific REST web service. The various REST requests are then created in the REST definition builder:
 
 ![rest_definition_editor](./img/rest_web_service1.png)
 
 Each REST request can then include the following items:
 
-*   **Method** - the type of HTTP request being made (GET, POST, PUT, DELETE, etc.)
+* **Method** - the type of HTTP request being made (GET, POST, PUT, DELETE, etc.)
 
-*   **URL** - the URL of the web service request with any parameter tokens included (e.g. {session_id} in our example above)
+* **URL** - the URL of the web service request with any parameter tokens included (e.g. {session_id} in our example above)
 
-*   **Credentials** - Any HTTP Basic Authentication Headers
+* **Credentials** - Any HTTP Basic Authentication Headers
 
-*   **Headers** - Any other HTTP headers (both standard and custom)
+* **Headers** - Any other HTTP headers (both standard and custom)
 
-*   **Parameters** - Any parameters that have been defined in the URL that will be called from the Rapise test script.
+* **Parameters** - Any parameters that have been defined in the URL that will be called from the Rapise test script.
 
-*   **Body** - The body of the request (for POST and PUT requests). This can be in any text-serialized format such as XML or JSON.
+* **Body** - The body of the request (for POST and PUT requests). This can be in any text-serialized format such as XML or JSON.
 
 When you execute the request, it will return back the HTTP response headers and if it recognizes the MIME content-type as either XML or JSON, it will format it to make it more readable by the tester:
 
@@ -42,7 +45,7 @@ Once you have finished with your prototyping of the web service test operations,
 
 ## Web Service Object Recognition
 
-Each of the REST web service requests that has been prototyped in the REST definition editor is converted by Rapise into a scriptable object:
+When **Record REST Objects** [API Recording option](options_dialog.md#api) is set to `true`, each of the REST web service requests that has been prototyped in the REST definition editor is converted by Rapise into a scriptable object:
 
 ![Web Service Objects](./img/rest_web_service3.png)
 
@@ -50,22 +53,21 @@ Each of the [REST service](../Libraries/RESTService.md) objects in the tree has 
 
 Rapise provides you with access to the following attributes of the HTTP request before/after the request has been executed:
 
+* **Request:**
 
-*   **Request:**
+*    * Method
 
-* *   Method
+*    * Url
 
-* *   Url
+*    * Headers (inc. authentication)
 
-* *   Headers (inc. authentication)
+*    * Body
 
-* *   Body
+* **Response:**
 
-*   **Response:**
+*    * Headers
 
-* *   Headers
-
-* *   Body
+*    * Body
 
 ## Generating Rapise REST Test Scripts
 
@@ -105,6 +107,10 @@ Once you are ready, click the `Create Script` and the test script will be create
 
 ![Created Script](./img/rest_web_service11.png)
 
+The script is always generated within the `Test()` function of the current `Main.js` file. The term *current* refers to the `Main.js` file of the test, test case, or Page Object / Module to which this `.soap` definition belongs.
+
+In the case of a Page Object, you would need to cut the generated code from `Test()` and paste it into the corresponding `<PageObject>_DoAction` function.
+
 As well as simply calling the `DoExecute()` method of each REST web service object to call the previously defined operation, you can use the various properties on the REST service object to send through specific parameter values, add/remove headers, change the authenticated user, change the request body as well as inspect all of the attributes in the request and response.
 
 This allows you unparalleled control over the web service request, with the ability to debug and diagnose web service issues in addition to being able to quickly call the learned operations.
@@ -130,7 +136,6 @@ Special parameter value `WriteResponseTo` allows defining a path to the file whe
 It should be a full path. It may contain environment variable reference (`%WORKDIR%`, `%ROOT%` etc).
 
 ![WriteResponseTo](./img/rest_web_service_writeresponseto.png)
-
 
 ## Handling File Uploads and Multipart Requests
 
@@ -196,7 +201,6 @@ Here is how you can pass JSON value of the field:
       }
     },
     ...
-  ]
 }
 ```
 
@@ -283,7 +287,9 @@ It is executed right before the action. It may access pre-defined Headers, Prope
 ```javascript
 function After_<Rest_FileName>_<Entry_Name>(/**RESTResponse*/response)
 ```
+
 i.e.
+
 ```javascript
 function After_LibraryInformationSystem_Get_Session(/**RESTResponse*/response)
 {
@@ -293,7 +299,6 @@ function After_LibraryInformationSystem_Get_Session(/**RESTResponse*/response)
 ```
 
 It is executed right after the action.  It may access `response` object passed as a parameter. Parameter type is [RESTResponse](../Libraries/RESTResponse.md).
-
 
 #### Common REST Callbacks
 
@@ -310,7 +315,6 @@ When both common callback and entry callback are defined, both are executed in t
 3. Send *request* and get *response*
 4. After_*Rest_FileName*_*Entry_Name*
 5. Common After_*Rest_FileName*
-
 
 ### REST Callback Limitations
 
@@ -330,21 +334,20 @@ If you want to modify something in the callback code, then you need to use **Sto
 
 You may set a breakpoint in any REST callback function, and Rapise will stop when doing a call. If you function is long and debugging implies many steps, the request may proceed while you are debugging. To avoid this you may change the value of [global option](options_dialog.md) **API Callback Timeout** 
 
-
 ## Recording
 
 The way Rapise records captured REST actions may differs depending on the [API recording options](options_dialog.md#api). 
-
 
 **Record REST Objects** is `true`, each step creates an object in the object tree:
 
 ![Record REST Objects](./img/rest_web_service_record_rest_objects.png)
 
 and it is used by the produced script:
+
 ```javascript
 	var LibraryInformationSystem_Get_Session=SeS('LibraryInformationSystem_Get_Session');
 	LibraryInformationSystem_Get_Session.DoExecute();
-  ```
+```
 
 When **Record REST Objects** is `false` then nothing is added to the object tree and generated script uses REST definition file directly by means of [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest):
 

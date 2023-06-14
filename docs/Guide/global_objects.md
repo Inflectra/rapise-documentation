@@ -23,7 +23,7 @@ First, you need a JavaScript file where you will define the actions of the objec
 
 We'll use an example to explain the format of object definition. Here is the definition of a global object `MyApp`.
 
-### Example
+## Example
 
 ```javascript
 
@@ -63,7 +63,7 @@ SeSGlobalObject("MyApp");
 
 ```
 
-### Format
+## Format
 
 Every action of `MyApp` object is prefixed with `MyApp_`. We have three such actions: `Launch`,`Close` and `Login`.
 
@@ -114,13 +114,25 @@ _paramInfoMyApp_Login = {
 }
 ```
 
-### Compile Metadata
+## Compile Metadata
 
 When the object is declared you need to compile the metadata for it. To do this open the file where you defined the object and press ++ctrl+shift+f5++.
 
-### Object Icons
+## Object Icons
 
 If you want a specific icon for your object then create two `.png` files with dimensions `16x16` and `32x32`, name them as `<object name>16.png` and `<object name>32.png` and place them beside the file where you declared the object.
+
+## Global Object vs Page Object
+
+When comparing a **Global Object** and a [Page Object](/Guide/Frameworks/pageobjects), the following points should be noted:
+
+1. The structure of a Global Object is identical to that of a Page Object in JavaScript mode.
+2. However, a Page Object can have its own object repository and use objects from it.
+3. This includes widgets and API entry points that are available for a Page Object.
+4. A Global Object can be defined in a [custom Library](/Guide/custom_libraries).
+5. A Page Object can only be defined as part of a [testing framework](/Guide/Frameworks/frameworks).
+6. It is not possible to import or move a single Global Object, but it is possible to copy the entire Library that contains it.
+7. A Page Object can be imported from one testing framework to another.
 
 ### See Also
 

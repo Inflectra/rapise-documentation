@@ -6,15 +6,28 @@
 
 *Default*:
 
-![Default](./img/menu_file.png)
+![Test](img/menu_and_toolbars_file_default.png)
+
+*Framework*:
+
+![Framework](img/menu_and_toolbars_file_framework.png)
 
 *Manual*:
 
-![Manual](./img/menu_file_manual.png)
+![Manual](img/menu_and_toolbars_file_manual.png)
 
 The File menu provides quick access to all the File management functions in Rapise. Many of these are also available on the main [toolbar](#main-toolbar).
 
-* **New Test** - creates a new Rapise test, it can be saved either to Spira or locally.
+* **Create New**
+    * **New Test** - creates a new standalone Rapise test, it can be saved either to Spira or locally.
+    * **Test Automation Framework** - start new [testing framework](/Guide/Frameworks/frameworks)
+* **Add To Framework** - add something [testing framework](/Guide/Frameworks/frameworks)
+    * **Test Case** - Add new Test Case.
+    * **Module / Page Object** - add new [Module / Page Object](/Guide/Frameworks/pageobjects)
+    * **Spreadsheet** - add new [shared](/Guide/Frameworks/frameworks#shared-files-and-repositories) spreadsheet
+    * **Shared Script** - add new [shared](/Guide/Frameworks/frameworks#shared-files-and-repositories) JavaScript for common functions and variables
+    * **Import External Test Case** - import external Test Case or standalone test created earlier into current testing framework.
+    * **Import External Module / Page Object** - import external Module / Page Object from another testing framework into this one.
 * **Open** - opens an existing test (`.sstest`) that is already available locally.
 * **Open Test from Spira** - opens a test from [SpiraTest](spiratest_integration.md) test management repository and downloads to the local repository
 * **Save to Spira** - saves the current test to the [Spira](spiratest_integration.md) test management system so that it updates the version in your [Spira](spiratest_integration.md) test management repository
@@ -287,7 +300,7 @@ then [Play](playback.md) your script.  
 
 The **Main** is the primary toolbar providing tools to help with creating and executing tests. It is always visible:
 
-![Toolbar Main](./img/toolbar_main_buttons.png)
+![Toolbar Main](img/menu_and_toolbars_main_toolbar.png)
 
 ## RVL Toolbar
 

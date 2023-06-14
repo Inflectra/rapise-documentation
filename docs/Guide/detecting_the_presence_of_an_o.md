@@ -4,10 +4,10 @@ Often you need to be able to check for the presence of an object and then depend
 
 ## Recommended Solution
 
-You can use the special `SeSFindObj('object name')` command to perform the check:
+You can use the special `Global.DoWaitFor('object id')` command to perform the check:
 
 ```javascript
-if(SeSFindObj('Object Name'))
+if(Global.DoWaitFor('Object ID'))
 {
     // Object is available
 }
@@ -19,4 +19,5 @@ else
 
 ## See Also
 
+- [Global.DoWaitFor](/Libraries/Global#dowaitfor)
 - [How-Tos](howtos.md)

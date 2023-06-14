@@ -12,10 +12,6 @@ Specifically, Rapise has support for the following technologies used tobuild Win
     - Visual Basic 6
     - ActiveX / COM
 - **Microsoft .NET Applications**
-    - WinForms
-    - .NET 1.1,
-    - .NET 2.0
-    - .NET 4.x
 - **Windows Presentation Framework (WPF)**
     - Silverlight
     - XAML
@@ -27,6 +23,12 @@ Specifically, Rapise has support for the following technologies used tobuild Win
     - ComponentOne ActiveX Controls
     - SyncFusion Windows Form Controls
     - FarPoint Spreadsheet Control
+- **Java Applications**
+    - Swing
+    - AWT
+    - SWT
+    - Oracle Forms
+- **QT Applications**
 
 ## Choosing the Right Windows Library
 
