@@ -115,7 +115,7 @@ It will be initially in the `Pending` status while our cloud servers complete th
 
 Once the subscription add-on has been provisioned, you will see a new menu entry in the [System Administration: Integration](https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Integration/) section of your Spira instance:
 
-![manage](./img/rapise_floating_licenses.png)
+![manage](./img/rapise_floating_licenses.png){width="377px"}
 
 When you click on this link you will see how many Rapise floating licenses are available as well as how many are currently in use (initially the list will be empty):
 
@@ -127,7 +127,7 @@ You can now connect Rapise to your Spira instance to use the new floating licens
 
 Now that you have floating licenses available, when you connect Rapise to Spira as you would normally to start writing tests:
 
-![configuration](./img/spira_connection_settings.png)
+![configuration](./img/spira_connection_settings.png){width="508px"}
 
 Rapise automatically requests a floating license from Spira and will use that license until Rapise is closed or an administrator clicks the **End Session** button in Spira:
 
@@ -143,29 +143,27 @@ Once you have successfully installed Rapise, you will need to activate it with a
 
 When you first launch Rapise after installation, it will display the following dialog box:
 
-![](./img/Rapise_Installation_Guide9.png)
+![](./img/Rapise_Installation_Guide9.png){width="538px"}
 
-You should now enter the alphanumeric activation code from the Customer Area of the Inflectra website (the same page that you downloaded the installation package from). It will be displayed in the "My Licenses" section of the webpage. An example page is shown below:
+You should now enter the alphanumeric activation code from the Customer Area of the Inflectra website (the same page that you downloaded the installation package from). It will be displayed in the `My Licenses` section of the webpage. An example page is shown below:
 
 ![](./img/Rapise_Installation_Guide10.png)
 
 There are two kinds of activation code:
 
-- Evaluation Activation Codes -- these start with the letters "DMO"
-- Production Activation Codes -- these start with the letters "SDM"
+- Evaluation Activation Codes -- these start with the letters **DMO**
+- Production Activation Codes -- these start with the letters **SDM**
 
-You should enter the appropriate activation code into the Rapise activation wizard and choose the option to either activate online or
-offline. If you are connected to the Internet, online activation is easier. If you are not connected to the Internet (e.g. working in a
-secure environment), then you will need to use the offline activation option.
+You should enter the appropriate activation code into the Rapise activation wizard and choose the option to either activate online or offline. If you are connected to the Internet, online activation is easier. If you are not connected to the Internet (e.g. working in a secure environment), then you will need to use the offline activation option.
 
 The following sections will explain how each of the options work:
 
 #### Activating Online
 
-To use online activation, make sure you are connected to the Internet, enter the activation code, choose "Activate Online" and click the
-`Next` button:
+To use online activation, make sure you are connected to the Internet, enter the activation code, choose `Activate Online` and click the
+`Finish` button:
 
-![](./img/Rapise_Installation_Guide11.png)
+![](./img/Rapise_Installation_Guide11.png){width="538px"}
 
 The activation system will contact our activation server, process the activation code and activate the license. The application will start automatically and if you visit the Customer Area of our website, you will see that it is listed as activated, with a license key displayed:
 
@@ -173,14 +171,13 @@ The activation system will contact our activation server, process the activation
 
 #### Activating Offline
 
-To use offline activation, enter the activation code, choose "Activate
-Offline" and click the \<Next\> button:
+To use offline activation, enter the activation code, choose `Activate Offline` and click the `Next` button:
 
-![](./img/Rapise_Installation_Guide13.png)
+![](./img/Rapise_Installation_Guide13.png){width="538px"}
 
 This will bring up the Offline Activation screen:
 
-![](./img/Rapise_Installation_Guide14.png)
+![](./img/Rapise_Installation_Guide14.png){width="538px"}
 
 Click on the `Save` button to save the Rapise.LIC file to your hard drive.
 
@@ -192,34 +189,38 @@ Click on the **Activate** link which will take you to the Offline Activation par
 
 ![](./img/Rapise_Installation_Guide15.png)
 
-Click on the `Browse` button and navigate to the place where the Rapise.LIC file is stored. Then click on the \[Activate\] button to
-begin the activation process. Assuming that the License file is valid, the website will activate the license and take you back to the Customer Area where the license key will be displayed:
+Click on the `Browse` button and navigate to the place where the Rapise.LIC file is stored. Then click on the `Activate` button to begin the activation process. Assuming that the License file is valid, the website will activate the license and take you back to the Customer Area where the license key will be displayed:
 
 ![](./img/Rapise_Installation_Guide12.png)
 
 Click on the License Key hyperlink and you will be prompted to save the Rapise.CDM file to your hard drive. Save this file and then copy it across to the computer that has Rapise installed. Now on the Offline Activation screen:
 
-![](./img/Rapise_Installation_Guide14.png)
+![](./img/Rapise_Installation_Guide14.png){width="538px"}
 
 Click the Step 3 `Open` button and browse to the Rapise.CDM file. Once you have the file selected, click on the `Finish` button to complete the activation. Assuming that the Rapise.CDM file is valid, the application will start.
 
-> **Note:** If you have any problems activating your installation, please go to <https://www.inflectra.com/Support> and contact Inflectra customer support and they will help you resolve your problem.
+!!! note
+    If you have any problems activating your installation, please go to <https://www.inflectra.com/Support> and contact Inflectra customer support and they will help you resolve your problem.
 
 #### Upgrading from Demo License
 
-If you have installed a demonstration license, when the expiration date is reached the software will stop working and prompt to you purchase a commercial license. To purchase the commercial license, go to <http://www.inflectra.com/Rapise> and click on the appropriate Purchase link to obtain a commercial production license.
+If you have installed a demonstration license, when the expiration date is reached the software functionality will be limited and you will be prompted to purchase a commercial license. To purchase the commercial license, go to <http://www.inflectra.com/Rapise> and click on the appropriate Purchase link to obtain a commercial production license.
 
-Once you have purchased the license your Customer Area will display a new activation code. Simply start up Rapise, enter the new activation code and follow the process described in section 2.2 or 2.3.
+Once you have purchased the license your Customer Area will display a new activation code. Simply start up Rapise, enter the new activation code and follow the process described in sections [Activating Online](#activating-online) or [Activating Offline](#activating-offline).
 
 If you want to upgrade your license **before** the demonstration license is expired, you need to click on the menu **Help > Activation**:
 
-![help activation](./img/Rapise_Installation_Guide16.png)
+![help activation](./img/Rapise_Installation_Guide16.png){width="152px"}
 
 This will bring up the Activation dialog box:
 
-![activation dialog](./img/Rapise_Installation_Guide17.png)
+![activation dialog](./img/Rapise_Installation_Guide17.png){width="411px"}
 
-Click on the `Enter Activation Code` button and then follow the steps in 2.3 or 2.4 to activate the product with the new production license.
+Click on the `Enter Activation Code` button and then follow the process described in sections [Activating Online](#activating-online) or [Activating Offline](#activating-offline) to activate the product with the new production license.
+
+Without a valid license Rapise will continue to work but without **Recording** and **Playback** functionality.
+
+![](img/Rapise_Installation_Guide_no_license.png){width="382px"}
 
 #### Transferring to Another Computer
 
@@ -227,17 +228,18 @@ Sometimes you need to transfer your Rapise license from one computer to another,
 
 To deactivate your current installation, you need to click on the **Activation** button in the Help section of the Rapise Test ribbon:
 
-![](./img/Rapise_Installation_Guide16.png)
+![help activation](./img/Rapise_Installation_Guide16.png){width="152px"}
 
 This will bring up the Activation dialog box:
 
-![](./img/Rapise_Installation_Guide17.png)
+![activation dialog](./img/Rapise_Installation_Guide17.png){width="411px"}
 
 Click on the `Deactivate` button and activation system will contact our activation server, process the deactivation code and deactivate the license. If you visit the Customer Area of our website, you will see that it is listed as deactivated, with the option to activate it now available:
 
 ![](./img/Rapise_Installation_Guide10.png)
 
-> **Note:** If you have any problems deactivating your installation, please go to <https://www.inflectra.com/Support> and contact Inflectra customer support and they will help you resolve your problem.
+!!! note
+    If you have any problems deactivating your installation, please go to <https://www.inflectra.com/Support> and contact Inflectra customer support and they will help you resolve your problem.
 
 ## Legal Notices
 
@@ -254,13 +256,7 @@ SpiraTest®, SpiraTeam®, Rapise® and Inflectra® are either trademarks or regi
 
 All other trademarks and product names are property of their respective holders.
 
-Please send comments and questions to:
-
-    Technical Publications
-    Inflectra Corporation
-    8121 Georgia Ave
-    Suite 504
-    Silver Spring, MD 20910
-    U.S.A.
-
-[*support@inflectra.com*](mailto:support@inflectra.com)
+!!! information "Please send comments and questions to:"
+    Technical Publications Inflectra Corporation 8121 Georgia Ave, Suite 504 Silver Spring, MD 20910-4957 USA 
+    
+    **support@inflectra.com**
