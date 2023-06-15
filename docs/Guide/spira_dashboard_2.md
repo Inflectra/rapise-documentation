@@ -2,9 +2,13 @@
 
 In Rapise 7 we completely reworked the Spira Dashboard. It has all new look and features. New dashboard reduces the need to open Spira in a browser window and also adds support for Flaky test handling, Rerun features and ability to run a test case/whole test set/or just failed test cases on a selected automation host.
 
-<img alt="Dashboard Overview" src="/Guide/img/spira_dashboard_overview.png" width="640"/>
+![Dashboard Overview](./img/spira_dashboard_overview.png){width="967px"}
 
-## New Features
+In Rapise 8 we added the [Framework mode](./Frameworks/frameworks.md) that has a different set of pages in the dashboard:
+
+![Framework Dashboard Overview](img/spira_dashboard_2_framework_overview.png){width="1088px"}
+
+## Features
 
 If you are not familiar with the dashboard and it's basic features it is recommended to review [Navigation](#navigation) and [Tasks](#tasks) sections first.
 
@@ -15,11 +19,11 @@ If you are not familiar with the dashboard and it's basic features it is recomme
 
 If you see that some test may pass or fail randomly there is a way to mark it as Flaky. Simply find it in [Test Cases View](#test-cases-view) and use [Actions menu](#actions) to set the flag. Flaky test case is decorated with an icon (red flag):
 
-<img alt="Flaky Test Case" src="/Guide/img/spira_dashboard_flaky_test_case.png" width="300"/> 
+<img alt="Flaky Test Case" src="/Guide/img/spira_dashboard_flaky_test_case.png" width="460"/> 
 
 When a test case marked as Flaky is executed - it's test run is marked as Flaky too.
 
-<img alt="Flaky Test Case" src="/Guide/img/spira_dashboard_flaky_test_run.png" width="300"/>
+<img alt="Flaky Test Case" src="/Guide/img/spira_dashboard_flaky_test_run.png" width="256"/>
 
 !!! note
 	Flaky flag makes it easier to distinguish random and important test run failures.
@@ -29,13 +33,13 @@ When a test case marked as Flaky is executed - it's test run is marked as Flaky 
 !!! important
 	To enable this feature setup custom properties as described [below](#setup-custom-properties).
 
-To instruct RapiseLauncher to rerun a failed test case use `Max rerun attempts` test set custom property. If a test case keeps failing it will be additionally executed specified number of times (by default it is zero). To stop rerunning tests if many of them finally failed use `Do not rerun if N tests failed` property. By default this property is zero and it means rerun all the tests in a test set if `Max rerun attempts` is set.
+To instruct RapiseLauncher to rerun a failed test case use {++Max rerun attempts++} test set custom property. If a test case keeps failing it will be additionally executed specified number of times (by default it is zero). To stop rerunning tests if many of them finally failed use {++Do not rerun if N tests failed++} property. By default this property is zero and it means rerun all the tests in a test set if {++Max rerun attempts++} is set.
 
-<img alt="Rerun Settings" src="/Guide/img/spira_dashboard_rerun_test_set.png" width="400"/>
+<img alt="Rerun Settings" src="/Guide/img/spira_dashboard_rerun_test_set.png" width="345"/>
  
 Test runs that correspond to reruns are decorated with icons. Number in a circle designates rerun attempt. 
 
-<img alt="Reruns" src="/Guide/img/spira_dashboard_rerun_test_runs.png" width="350"/>
+<img alt="Reruns" src="/Guide/img/spira_dashboard_rerun_test_runs.png" width="272"/>
 
 ### Parallel Execution
 
@@ -48,15 +52,15 @@ Since Rapise 7.1 - RapiseLauncher is able to perform parallel run for these type
 2. Mobile tests,
 3. REST/SOAP API tests.
 
-In order to mark a test case ready for parallel run set the custom property `Ready for parallel run` in test case details.
+In order to mark a test case ready for parallel run set the custom property {++Ready for parallel run++} in test case details.
 
 <img alt="Test Case Properties" src="/Guide/img/test-case-custom-properties.png" width="360"/>
 
 If all test cases included into a test set have this property, the test set is configured for parallel run - RapiseLauncher will execute the test cases in parallel.
 
-To configure the test set use the custom properties `Run tests in parallel` and `Max parallel tests` (0 - no limit).
+To configure the test set use the custom properties {++Run tests in parallel++} and {++Max parallel tests++} (0 - no limit).
 
-Since Rapise 7.2 - RapiseLauncher can run configurations (see Input Data Table section below) in parallel. This feature is controlled via `Unroll input data for parallel execution` custom property of a test set. See the [Parallel Execution Webinar](https://youtu.be/bNoWZjOE3hQ) for more details.
+Since Rapise 7.2 - RapiseLauncher can run configurations (see Input Data Table section below) in parallel. This feature is controlled via {++Unroll input data for parallel execution++} custom property of a test set. See the [Parallel Execution Webinar](https://youtu.be/bNoWZjOE3hQ) for more details.
 
 ### Input Data Table
 
@@ -67,13 +71,13 @@ Since Rapise 7.1 you may define a table with parameter values to automatically r
 
 1. Create a CSV or TXT file with parameter names and values. You may do it right from the dashboard (navigate to test set details and use Create New popup menu in the Attachments section). Example of the data file:
 
-	```
+	```title="Data.csv"
 	UserName,Password
 	librarian,librarian
 	borrower,borrower
 	```
 
-2. Choose this attachment in the `Input data` custom property.
+2. Choose this attachment in the {++Input data++} custom property.
 
 RapiseLauncher will run the test set same number of times as data rows in the input file. Every column name will become a global parameter passed to a test case.
 
@@ -142,7 +146,7 @@ In the dialog one can add, edit and remove credentials. A set of credentials loo
 
 ![Git Credentials](./img/git_credentials_sample.png)
 
-When credentials are tested and saved it is time to navigate to a test set and choose the credentials in the `Git Credentials` dropdown.
+When credentials are tested and saved it is time to navigate to a test set and choose the credentials in the {++Git Credentials++} dropdown.
 
 ![Git Credentials Assignment](./img/git_credentials_assign.png)
 
@@ -215,7 +219,7 @@ If you did not assign an automation host token to the machine where Rapise is ru
 
 ### Framework View (Rapise 8.0+)
 
-The [Framework mode](./Frameworks/frameworks.md) was introduced in Rapise 8.0 to simplify test case and test set management, as well as the management of parameters, page objects/modules, object repositories, and shared code. The legacy [Single Test mode](../Intro/framework.md) required dealing with `Sub-Tests` and linking tests to `SpiraTest` on a per test case basis, whereas in the `Framework mode`, there is a single button labeled `Sync with Spira` that handles everything. When this button is pressed, test cases and test sets are automatically synchronized with `SpiraTest`, and files are uploaded/downloaded.
+The [Framework mode](./Frameworks/frameworks.md) was introduced in Rapise 8.0 to simplify test case and test set management, as well as the management of parameters, page objects/modules, object repositories, and shared code. The legacy [Single Test mode](../Intro/framework.md) required dealing with `Sub-Tests` and linking tests to `SpiraTest` on a per test case basis, whereas in the `Framework mode`, there is a single button labeled {==Sync with Spira==} that handles everything. When this button is pressed, test cases and test sets are automatically synchronized with `SpiraTest`, and files are uploaded/downloaded.
 
 ![Framework View](img/spira_dashboard_2_framework_view.png){width="1350px"}
 
@@ -315,15 +319,18 @@ Requires Rapise 7.2. The Test Set Status graph shows the aggregated count of tes
 
 #### Setup Custom Properties
 
+!!! important
+	Since Rapise 8.0 custom properties are created from the [Test Runs view](#test-runs-view), because Rapise needs to create the properties for Test Runs only. Test Cases and Test Sets since Rapise 8.0 store the properties in it's description.
+
 Some features of the dashboard require additional custom properties to exist in Test Cases, Test Sets and Test Runs. Click `Create Custom Properties for Rapise` button to add the following custom properties in the selected project:
 
-- Test Cases
-	- Flaky (boolean, default is false)
-	- Ready for parallel run (boolean, default is false, requires Rapise 7.1+)
 - Test Runs
 	- Flaky (boolean, default is false)
 	- Run attempt (integer, default is 1)
 	- Tag (string, empty by default, requires Rapise 7.1+)
+- Test Cases
+	- Flaky (boolean, default is false)
+	- Ready for parallel run (boolean, default is false, requires Rapise 7.1+)
 - Test Sets
 	- Max rerun attempts (integer, default is 0)
 	- Do not rerun if N tests failed (integer, default is 0)
@@ -354,7 +361,7 @@ Action menu for a test allows to
 
 In the test cases view one may see the tree of test cases for a project, discover when a test case was last executed and status of execution.
 
-Since Rapise 7.2 one may change global Test Case filter from `All` to `My Assigned`.
+Since Rapise 7.2 one may change global Test Case filter from `All` to `My Assigned`. Rapise 8.0 adds one more filter - `Framework`.
 
 #### View Test Case Details
 
@@ -367,7 +374,7 @@ Action menu for a test case allows to
 1. Immediately `Execute` the test case on the local host.
 2. `Execute` the test case on a selected Automation Host. It will run as soon as RapiseLauncher on that host is ready.
 3. Mark the test case as `Flaky` or remove the flag. 
-4. Add default parameters to the test case. The list of default parameters includes:
+4. Add default parameters to the test case  (legacy, use Test Set level custom properties to control verbose and video recording). The list of default parameters includes:
 	- g_verboseLevel = 1
 	- g_enableVideoRecording = false
 5. `Open This Test` in Rapise. It is a shortcut for [Open a test from SpiraTest](/Guide/spiratest_integration/#opening-a-test-from-spiratest).
@@ -388,11 +395,11 @@ If you want to create a test case in a specific folder - select corresponding ro
 
 In the test sets view one may see the tree of test sets for a project, discover when a test set was last executed and status of execution.
 
-Since Rapise 7.2 one may change global Test Set filter from `All` to `My Assigned`.
+Since Rapise 7.2 one may change global Test Set filter from `All` to `My Assigned`.  Rapise 8.0 adds one more filter - `Framework`.
 
 Since Rapise 7.3 it is possible to change the way of calculating test set execution status. If you are using [rerun](#automatic-rerun) features or include same test case multiple times into the same test set then it is recommended to set `Calculate Test Set Status from Test Runs` option:
 
-![Calculate Test Set Status from Test Runs](./img/calculate_test_set_status_option.jpg)
+![Calculate Test Set Status from Test Runs](./img/calculate_test_set_status_option.jpg){width="335px"}
 
 If this option is not set then test set status is calculated based on the latest run for each included test case.
 
