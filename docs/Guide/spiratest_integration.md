@@ -239,7 +239,7 @@ If you would to save the current Rapise test into a new SpiraTest project or if 
 
 ## Using the Spira Dashboard
 
-In addition to using the menu options described in this page, you can interact with SpiraTest using the [Spira Dashboard](spira_dashboard.md) that is available from the `View > Spira Dashboard` menu. This provides a convenient way of interacting with SpiraTest, allowing you to quickly create, save and open test cases from SpiraTest.
+In addition to using the menu options described in this page, you can interact with SpiraTest using the [Spira Dashboard](spira_dashboard_2.md) that is available from the `View > Spira Dashboard` menu. This provides a convenient way of interacting with SpiraTest, allowing you to quickly create, save and open test cases from SpiraTest.
 
 ## Viewing the SpiraTest Repository
 
@@ -455,8 +455,9 @@ If you have a test set that contains several test cases and failure of some test
 
 ### Configuring RapiseLauncher
 
-RapiseLauncher installs along with the main Rapise application. It can be found in the `Start > Programs >
-Inflectra` program folder:
+RapiseLauncher installs along with the main Rapise application. You may launch it from Rapise using [main menu](./menu_and_toolbars.md#tools) `Tools > Rapise Launcher`.
+
+It can also be found in the `Start > Programs > Inflectra` program folder:
 
 ![rapise launcher icon](./img/using_rapise_with_spiratest_guide46.png)
 
@@ -473,37 +474,39 @@ At the end of the test, the program will go back and resume scanning for tests t
 
 By right clicking on the system tray icon and selecting `Configuration`, the application's window will open to the configuration panel.
 
-![Client Configuration](./img/using_rapise_with_spiratest_guide47.png)
+![Client Configuration](./img/using_rapise_with_spiratest_guide47.png){width="658px"}
 
 The panel has the following options:
 
 #### SpiraTest Server Connection
 
-- **URL**: This is the URL of the SpiraTest installation. Be sure to not put /Login.aspx or any other page in the string, this should be just the root URL of the application's install.
-- **User Name**: This is the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.
-- **API Key**: The [API Key](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key) for the to the User Name above.
-- **Test**: Clicking this will test the login to make sure the application can connect to the server properly.
-- **Repository** -- this is the Windows folder that used to store local copies of the non-absolute repositories (downloaded from SpiraTest).
-- **Use Temp Folder for Test Execution** -- this should be enabled if you are also writing tests on this computer using Rapise and you don't want RapiseLauncher to download and overwrite any changes you have made locally (that have not been saved).
+- **URL** - the URL of the SpiraTest installation. Be sure to not put `/Login.aspx` or any other page in the string, this should be just the root URL of the application's install.
+- **User Name** - the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.
+- **API Key**-  the [API Key](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key) for the User Name above.
+- **Test** - clicking this will test the login to make sure the application can connect to the server properly.
+- **Repository** - this is the Windows folder to store local copies of tests to execute.It is applicable when the next option is unchecked.
+- **Use Temp Folder for Test Execution** - this is the default and recommended option, the Temp folder is located in `C:\ProgramData\Inflectra\Rapise\Temp`.
 
 #### Server Polling
 
-- **Automation Host Token**: This field is required, and uniquely identifies the local testing machine. Any scheduled tests assigned to the Automation Host on SpiraTest will get polled for this machine. Except in special circumstances, this ID should be unique among all testing machines.
+- **Automation Host Token** - this field is required, and uniquely identifies the local testing machine. Any scheduled tests assigned to the Automation Host on SpiraTest will get polled for this machine. Except in special circumstances, this ID should be unique among all testing machines.
 
-    >  ![ico_Warning](./img/using_rapise_with_spiratest_guide48.png) **Important**: This field must match the string that is entered into the Automation Host Details screen in the **Token**: field, or scheduled tests will not be recognized.
+    !!! important
+		This field must match the string that is entered into the Automation Host Details screen in the **Token** field, or scheduled tests will not be recognized.
 
-- **Automatically Run Overdue Tests**: When this is checked, any tests that are pulled from the SpiraTest server that has a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this check, they will be executed as soon as the poll is finished.
-- **Polling Frequency**: How often in minutes the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 60 (1 hour), and should be fine for most installations. Note that tests will still be executed on their scheduled time, this is simply how often the program will talk to the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.
-- **Polling Read Ahead**: How far ahead in minutes the program should read the schedule for the Automation host. Tests that are scheduled farther in advance will not show up as a pending test on the status screen.
+- **Polling Frequency** - how often in minutes the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 5 minutes, and should be fine for most installations. Note that tests will still be executed on their scheduled time, this is simply how often the program will talk to the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.
+- **Read Ahead** - how far ahead in minutes the program should read the schedule for the Automation host. Tests that are scheduled further in advance will not show up as a pending test on the status screen.
+- **Automatically run tests that are overdue** - when this is checked, any tests that are pulled from the SpiraTest server that has a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this check, they will be executed as soon as the poll is finished.
 
 #### Options
 
-- **Capture screenshots during playback** -- selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.
-- **Continue test set execution if test case returns Blocked status** -- by default Blocked test case stops execution of a test set, set this checkbox to run all test cases no matter what. This option requires Rapise 7.3+
+- **Capture screenshots during playback** - selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.
+- **Continue test set execution if test case returns Blocked status** - by default Blocked test case stops execution of a test set, set this checkbox to run all test cases no matter what. This option requires Rapise 7.3+
+- **Do not upload Test Run attachments** - if this option is set, RapiseLauncher does not upload screenshots and log files to SpiraTest to save database space. Use this option in exceptional cases if your SpiraTest instance is running out of space. Requires Rapise 8.0+.
+- **RDP screen width & height** - when RDP session is disconnected via [RapiseLauncher tray icon menu](#tray-icon-menu) set screen resolution to specified width and height.
 - **Start at logon** -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Useful when your server is rebooted regularly. This option requires Rapise 6.3+
-- **RDP screen width & height** -- when RDP session is disconnected via [RapiseLauncher tray icon menu](#tray-icon-menu) set screen resolution to specified width and height.
 
-Since Rapise 7.2 one may use `Show Log` button to quickly open the RapiseLauncher log in the default text viewer.
+Since Rapise 7.2 one may use `Open Log` button to quickly open the RapiseLauncher log in the default text viewer.
 
 ### Status Screen
 
@@ -513,14 +516,18 @@ The status screen is usually hidden, but can be brought up for display by double
 
 The top of the screen shows the current status, whether it's running a test or waiting to poll the server for an update. It will also show any errors present on the application, like a registration error or configuration issue. Under the status bar is a list of any pending or executing tests that are scheduled for this testing machine. The list will get cleared at every poll, so tests that have executed since the previous poll will still be on the list, and will show their execution status:
 
-- **Green Arrow**: A green arrow indicates that the test is still running, or RapiseLauncher is waiting for a reply from Rapise.
-- **Blue Checkbox**: A blue checkbox indicates that the test is completed, regardless of status of the individual test steps in the scheduled test set.
-- **Red Error**: A red error indicator indicates that Rapise ran into an issue (outside of test results). In this case, any further tests will be marked as blocked, as the issue needs to be corrected within Rapise or the Rapise test script.
-- **No Indication**: No indication means that the test is currently awaiting for its scheduled date to start. Note that only one test will be launched at a time, so that if two tests are scheduled at the same time, the one with the lower TestSet ID will be executed first, then as soon as it's finished, the second scheduled test will be run.
+- **Green Arrow** - a green arrow indicates that the test is still running, or RapiseLauncher is waiting for a reply from Rapise.
+- **Blue Checkbox** - a blue checkbox indicates that the test is completed, regardless of status of the individual test steps in the scheduled test set.
+- **Red Error** - a red error indicator indicates that Rapise ran into an issue (outside of test results). In this case, any further tests will be marked as blocked, as the issue needs to be corrected within Rapise or the Rapise test script.
+- **No Indication** - no indication means that the test is currently awaiting for its scheduled date to start. Note that only one test will be launched at a time, so that if two tests are scheduled at the same time, the one with the lower TestSet ID will be executed first, then as soon as it's finished, the second scheduled test will be run.
+
+#### Buttons
 
 By highlighting a test that has not been executed yet, you can click the `Force Execute` button. This will cause the selected test to have its scheduled date to the current time, causing it to be immediately executed (or, if another test is already running, next in line for execution).
 
 At any time the `Force Poll` button can be clicked, causing RapiseLauncher to initiate an immediate poll of the SpiraTest server to check for pending runs. The timers for the next server poll will be reset when the button is clicked.
+
+To stop of execution of a running Test Set, select it in the list and click `Cancel Execution` button.
 
 ### Tray Icon Menu
 
@@ -528,13 +535,13 @@ Instead of operating from the application window, all functions exist on the tra
 
 ![tray menu](./img/using_rapise_with_spiratest_guide50.png)
 
-- **Pause / Resume**: The Pause/Resume option pauses or resumes the timers for polling and executing tests. If a test or server poll is already in progress, it will not cancel these. However, after the are finished, no further polls or tests will be run.
-- **Poll Now**: This will force a server poll for upcoming tests, and reset the poll timer.
-- **Disconnect RDP Session**: This will disconnect current RDP session and will leave the system in a state ready for execution of UI tests. After disconnect RapiseLauncher will set screen resolution according to [configuration](#client-configuration) (width/height options). This feature is a convenient way to perform steps described in [KB325](https://www.inflectra.com/Support/KnowledgeBase/KB325.aspx).
-- **Configuration**: Opens the main window to the Configuration page.
-- **Help > About**: Opens the About window, which displays information about Rapise Launcher.
-- **Help > View Help**: Opens this help page.
-- **Exit**: Will completely exit the program. Doing this will cancel any tests currently running and shut down the program. Any tests that were waiting to be executed will not execute until the program is restarted and the polling is resumed.
+- **Pause / Resume** - the Pause/Resume option pauses or resumes the timers for polling and executing tests. If a test or server poll is already in progress, it will not cancel these. However, after the are finished, no further polls or tests will be run.
+- **Poll Now** - this will force a server poll for upcoming tests, and reset the poll timer.
+- **Disconnect RDP Session** - this will disconnect current RDP session and will leave the system in a state ready for execution of UI tests. After disconnect RapiseLauncher will set screen resolution according to [configuration](#client-configuration) (width/height options). This feature is a convenient way to perform steps described in [KB325](https://www.inflectra.com/Support/KnowledgeBase/KB325.aspx).
+- **Configuration** - opens the main window to the Configuration page.
+- **Help > About** - opens the About window, which displays information about Rapise Launcher.
+- **Help > View Help** - opens this help page.
+- **Exit** - will completely exit the program. Doing this will cancel any tests currently running and shut down the program. Any tests that were waiting to be executed will not execute until the program is restarted and the polling is resumed.
 
 You can double-click the tray icon to bring up the main window on the Status page.
 
@@ -627,6 +634,7 @@ RapiseLauncher is using this CMD file to clone a Git repository. Environment var
 
 ## See Also
 
+- [Using Spira Dashboard](spira_dashboard_2.md) 
 - [Using Rapise with SpiraTest (video)](https://youtu.be/5ybrBQOzez8)
 - [Data Driven Testing with Test Configurations](https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx)
 - [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.

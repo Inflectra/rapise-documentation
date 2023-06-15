@@ -69,7 +69,7 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
 * **ShowCommonFileAliases**: Legacy, not needed since Rapise 6.0.
 * **Enable Execution Monitor**: specifies whether the execution monitor dialog box will be displayed during [playback](playback.md).
-* **ShowDashboardOnStartUp**: If **True**, the [Spira Dashboard](spira_dashboard.md) will open automatically when Rapise is opened.
+* **ShowDashboardOnStartUp**: If **True**, the [Spira Dashboard](spira_dashboard_2.md) will open automatically when Rapise is opened.
 * **ShowStartPageOnStartUp**: If **True**, the [Start Page](start_page.md) will open automatically when Rapise is opened.
 * **Spira Integration**: Enables all dialogs and menus for [SpiraTest Integration](spiratest_integration.md).
 * **Temp Folder**:  default folder for temporary tests.

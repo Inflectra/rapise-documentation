@@ -39,7 +39,7 @@ This section details the Rapise GUI.  Each subsection describes the function of
     - [Test Settings Dialog](settings_dialog.md)
     - [SOAP Definition Editor](soap_definition_editor.md)
     - [Source Editor](source_editor.md)
-    - [Spira Dashboard](spira_dashboard.md)
+    - [Spira Dashboard](spira_dashboard_2.md)
     - [Spira Properties Dialog](spira_properties_dialog.md)
     - [Spreadsheet Editor](spreadsheet_editor.md)
     - [Spy Dialog](ses_spy_dialog.md)

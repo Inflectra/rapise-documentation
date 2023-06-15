@@ -147,7 +147,7 @@ The **View** menu contents depend on the active editor currently open in the [co
 ![Manual](./img/menu_view_manual.png)
 
 * **Start Page** - opens the Rapise [Start Page](start_page.md).
-* **Spira Dashboard** - opens [Spira Dashboard](spira_dashboard.md).
+* **Spira Dashboard** - opens [Spira Dashboard](spira_dashboard_2.md).
 * **RVL** - opens the [RVL editor](rvl_editor.md).
 * **Main** - opens the primary [test script file](understanding_the_script.md) (normally `Main.js`).
 * **User** - This opens the user functions [script file](understanding_the_script.md) containing any user-defined testing functions (called `User.js`).
