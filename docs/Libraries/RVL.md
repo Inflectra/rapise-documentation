@@ -95,7 +95,7 @@ Example. Suppose we have the following definitions of dropdowns:
 
 ![States Dropdown](../RVL/img/RVL_GetDropdownValue_states.png)
 
-Then the call 
+Then the call
 
 ```javascript
 var stateCode = RVL.GetDropdownValue(stateName,

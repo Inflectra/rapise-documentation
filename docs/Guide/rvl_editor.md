@@ -252,13 +252,37 @@ To quickly navigate to the location where a specific function or Page Object act
 
 ## Define a Map by Drag&Drop
 
-When you drag and drop a spreadsheet (`.xlsx`) into RVL, a [map](/RVL/Maps.md) is created. This map refers to the data file using an absolute path, starting from the framework root represented by `%WORKDIR`.
+When you drag and drop a spreadsheet (`.xlsx`) into RVL, a [map](/RVL/Maps.md) is created. This map refers to the data file using an absolute path, starting from the framework root represented by `%WORKDIR%`.
 
 ![Map, Absolute](img/rvl_editor_drag.png)
 
 However, if you hold the ++shift++ key while performing the same action, the map is created with a relative path instead. This relative path is based on the current `rvl.xlsx` file.
 
 ![Map, Relative](img/rvl_editor_shift_drag.png)
+
+## DoPlayTest via Drag&Drop
+
+When you drag and drop a test case into RVL, a `RVL.DoPlayTest` call is created. The call refers to the test case using an absolute path, starting from the framework root represented by `%WORKDIR%`.
+
+![TestCase Drag&Drop](img/rvl_editor_testcase_drag.png)
+
+However, if you hold the ++shift++ key while performing the same action, the map is created with the test alias name (short name) instead:
+
+![TestCase Shift+Drag&Drop](img/rvl_editor_testcase_shift_drag.png)
+
+Short names are useful when all test cases have unique names. Usually it means longer naming, i.e. instead of `Invoices/Create` test case should be named `Invoices/Create new Invoice` so it does not collide with `Orders/Create`.
+
+## Drag&Drop for DoPlayTest
+
+When you drag and drop a [test case](/Guide/Frameworks/frameworks#test-cases) into RVL, it generates a `RVL.DoPlayTest` call. This call references the test case using an absolute path starting from the framework root, represented by `%WORKDIR%`.
+
+![Drag&Drop TestCase](img/rvl_editor_testcase_drag.png)
+
+However, if you hold the ++shift++ key while performing the same action, the same call is created with the test alias name (short name) instead:
+
+![Shift+Drag&Drop TestCase](img/rvl_editor_testcase_shift_drag.png)
+
+Short names are particularly useful when each test case has a unique name. In such cases, longer naming conventions can be used to differentiate test cases, for example, using `Invoices/Create new Invoice` instead of `Invoices/Create` to avoid collisions with other test cases like `Orders/Create`.
 
 ## See Also
 
