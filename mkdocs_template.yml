@@ -272,6 +272,9 @@ nav:
             - 'Mobile Testing using iOS': 'Guide/mobile_testing_ios.md'
             - 'Preparing Environment for Android Mobile Testing': 'Manuals/Preparing_for_Android_Testing.md'
             - 'Mobile Testing using Android': 'Guide/mobile_testing_android.md'
+            - 'Mobile Settings Dialog': 'Guide/mobile_settings_dialog.md'
+            - 'Mobile Spy': 'Guide/object_spy_mobile.md'
+            - 'Mobile Test Locator Dialog': 'Guide/mobile_test_locator_dialog.md'
             - 'Reconnect Mobile Session': 'Guide/mobile_reconnect.md'
         - 'Web Testing':
             - 'Web Testing': 'Guide/web_testing.md'
@@ -279,7 +282,8 @@ nav:
             - 'Web Application Profile': 'Guide/web_app_profile.md'
             - 'Self-healing Locators': 'Guide/web_self_healing.md'
             - 'XPath': 'Guide/xpath.md'
-            - 'CSS': 'Guide/css.md'         
+            - 'CSS': 'Guide/css.md'    
+            - 'Web Spy': 'Guide/web_spy.md'            
             - 'Setting Up Web Browsers': 'Guide/setting_up_web_browsers.md'
             - 'Browser Settings Dialog': 'Guide/browser_settings.md'
         - 'Selenium WebDriver':
