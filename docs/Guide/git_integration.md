@@ -38,33 +38,44 @@ All standard Git operations, such as **commit**, **fetch**, **pull** and **push*
 
 When using **Save to Spira** button, Rapise checks if current test is stored within the **Git** repository folder structure. And, if existing repository has been identified, the following prompt is shown:
 
-![Git Prompt](img/git_integration_existing_repository.png)
+![Git Prompt](img/git_integration_existing_repository.png){width="406px"}
 
 This means that Rapise detected that folder containing the test is within the `.git` repository structure. And it suggests to keep your test files in **Git** and only put a link into the Spira Test Case.
 
 ### How It is Stored in Spira
 
-When Test Case is Saved to Spira in a 'standard' manner, it shows the folder that is created in Spira Documents:
+When Test Case is Saved to Spira in a **standard** manner, it shows the folder that is created in Spira Documents:
 
-![Doc Folder](img/git_integration_documents_folder.png)
+![Doc Folder](img/git_integration_documents_folder.png){width="570px"}
 
 After saving, the folder will contain test file versions:
 
-![Doc Files](img/git_integration_documents_files.png)
+![Doc Files](img/git_integration_documents_files.png){width="876px"}
 
 And the test case will refer to an `.sstest` document within this folder:
 
-![TC Link](img/git_integration_spira_tc.png)
+![TC Link](img/git_integration_spira_tc.png){width="577px"}
+
+!!! important
+    Rapise 7 and lower mirrors folder structure of a test. If there are sub-tests then corresponding sub-folders are created in Documents of Spira.  
+
+    Rapise 8.0+ creates plain structure. All files are stored within the main folder of a test. This type of repository increases saving/loading speed.
+
+    ![](img/git_integration_spira_plain_structure.png){width="525px"}
 
 ### How It is Stored in Git
 
-When the test stays in **Git** then Spira Documents section contains only one item - a link to a local file starting with `%GITROOT%`:
+When the test stays in **Git** then a folder in Spira is also created (in pre Rapise 8.0 the root folder is used):
 
-![TC Link Git Doc](img/git_integration_doc_link.png)
+![](img/git_integration_git_spira_folder.png){width="570px"}
+
+Spira Documents section contains only one item - a link to a local file starting with `%GITROOT%`:
+
+![TC Link Git Doc](img/git_integration_doc_link.png){width="809px"}
 
 And the Test Case uses that link:
 
-![TC Link Git](img/git_integration_git_tc.png)
+![TC Link Git](img/git_integration_git_tc.png){width="571px"}
 
 This means that to access this file, there should be an environment variable `%GITROOT%` pointing to the root of the local repository containing the test.
 
@@ -127,7 +138,16 @@ popd
 
 There are two ways on telling **RapiseLauncher** where the origin from which **Git** is supposed to do a checkout: using Spira custom properties or using system environment variables.
 
-#### Using Spira Custom Properties
+#### Using Git Credentials in Spira Dashboard
+
+This is the recommended and most convenient way. It is described in [Spira Dashboard section](spira_dashboard_2.md#git-credentials-storage).
+
+#### Using Test Set Custom Properties in Spira
+
+!!! important "Rapise 8.0+"
+    If you have Rapise 8.0+ you may set Git properties for any test set without creating custom properties. You may do it in [Spira Dashboard](spira_dashboard_2.md) in Test Sets view:
+
+    ![](img/git_integration_git_custom_properties.png){width="832px"}
 
 In this case, you need to add custom fields to the Test Set definition in **Spira**:
 
@@ -151,10 +171,10 @@ When both Environment Variable and Spira Custom Property are defined and custom 
 
 In CI/CD systems it is typical that test sources are checked out before the pipeline execution and already present on the local drive. In this case no need to define custom properties for Test Set (or, if already defined, leave them empty). The only thing that is required is `GITROOT` variable that should point to the root of the local **Git** repository.
 
-For example, if the pipeline checks the sources to `c:\Build` folder from the **Url** `https://github.com/Inflectra/rapise-samples` the `GITROOT` should be set to `C:\Build` so that the test link `%GITROOT%\rapise-samples\RVLConcatStrings\RVLConcatStrings.sstest` gets correctly resolved to `c:\Build\rapise-samples\RVLConcatStrings\RVLConcatStrings.sstest`.
+For example, if the pipeline checks the sources to `c:\Build` folder from the **Url** `https://github.com/Inflectra/rapise-samples` the `GITROOT` should be set to `C:\Build` so that the test link `%GITROOT%\CreateNewAuthor.sstest` gets correctly resolved to `c:\Build\rapise-samples\CreateNewAuthor\CreateNewAuthor.sstest`.
 
 ## See Also
 
 - [Demo of Git Integration (video)](https://www.youtube.com/watch?v=BIgOIxkZ5Hk&t=25s)
-- [Framework](..\Intro\framework.md)
+- [Frameworks](./Frameworks/frameworks.md)
 - [Spira Integration](spiratest_integration.md)

@@ -638,3 +638,4 @@ RapiseLauncher is using this CMD file to clone a Git repository. Environment var
 - [Using Rapise with SpiraTest (video)](https://youtu.be/5ybrBQOzez8)
 - [Data Driven Testing with Test Configurations](https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx)
 - [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
+- [How test files are stored in SpiraTest](git_integration.md#how-it-is-stored-in-spira)
