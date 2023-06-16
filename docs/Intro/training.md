@@ -10,7 +10,7 @@ The proposed training is an interactive process. Our instructors both provide on
 
 The implementation of lab tasks by the participants requires them to have the necessary prerequisites (have a computer available, Rapise is installed and licensed on the computer, have access to training SpiraTest instance and have certain amount of time to attend sessions and complete lab tasks).
 
-We provide sessions via GoToMeeting. The length of each session is about 1 hour. Each session starts from review of lab tasks assigned in the previous session and comments about any common issues. Also it contains a Q&A section for questions asked in the previous session. Then at the end of the session there is another Q&A section where instructors collect new questions: some questions are answered immediately and others are answered in the next session.
+We provide sessions via Zoom. The length of each session is about 1 hour. Each session starts from review of lab tasks assigned in the previous session and comments about any common issues. Also it contains a Q&A section for questions asked in the previous session. Then at the end of the session there is another Q&A section where instructors collect new questions: some questions are answered immediately and others are answered in the next session.
 
 We expect that participants deliver lab results at the end of the day following the day of a session and then the next day our instructors check the completed lab tasks. This process allows to have two sessions per week.
 

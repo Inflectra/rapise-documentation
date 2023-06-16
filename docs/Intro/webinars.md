@@ -4,6 +4,14 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ## Series
 
+### Season 2023
+
+#### Inflectra Ninja Sessions
+
+- [Running Salesforce Tests in Parallel in Rapise](https://youtu.be/tXrwrV8UxuI)
+- [Automating File Upload in Web Applications With Rapise](https://youtu.be/IwremHEBXhg)
+- [Typical Configuration Tasks for Selenium with Rapise - Chrome Profile](https://youtu.be/-ckOo5H1vMg)
+
 ### Season 2022
 
 - [Rapise 7.4](https://youtu.be/kSObxqgSbbY)
