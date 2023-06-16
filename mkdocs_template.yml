@@ -276,8 +276,6 @@ nav:
         - 'Web Testing':
             - 'Web Testing': 'Guide/web_testing.md'
             - 'Cross Browser Testing': 'Guide/cross_browser_testing.md'
-            - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
-            - 'Selenium Settings Dialog': 'Guide/selenium_settings_dialog.md'   
             - 'Web Application Profile': 'Guide/web_app_profile.md'
             - 'Self-healing Locators': 'Guide/web_self_healing.md'
             - 'XPath': 'Guide/xpath.md'
@@ -287,6 +285,7 @@ nav:
         - 'Selenium WebDriver':
             - 'Selenium WebDriver': 'Guide/selenium_webdriver.md'
             - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
+            - 'Selenium Settings Dialog': 'Guide/selenium_settings_dialog.md' 
             - 'Using Native Selenium Code': 'Guide/using_native_selenium_code.md'
             - 'Reconnect WebDriver Session': 'Guide/selenium_reconnect.md'
         - 'Web Service Testing':

@@ -114,20 +114,8 @@ Since Rapise 7.3 it is possible to view Shadow DOM elements in the [Web Spy](web
 
 Shadow root elements are marked with the bold label **Shadow Root**. Use the Web Spy to build a locator for Shadow DOM element and Learn it to add into the object repository.
 
-Locator for a Shadow DOM element has two parts separated by `@#@` delimiter. First part (can be XPATH or CSS) should point to the Shadow Root in the Light DOM. Second part (always CSS) should point to a child element of the Shadow Root. In the case of nested Shadow DOMs there will be multiple `@#@` delimiters.
-
-Example of a locator:
-
-*automatically built by WebSpy*
-```
-/html/body[1]/section[1]/div/guid-generator[1]@#@css=input:first-of-type
-```
-*after manual editing*
-```
-//guid-generator@#@css=input
-```
-
-Find the example of a simple page with Shadow DOM on [UI Testing Playground](http://uitestingplayground.com/shadowdom).
+!!! info
+    Locator for a Shadow DOM element has special [syntax](./xpath.md#shadow-dom).
 
 ## See Also
 
