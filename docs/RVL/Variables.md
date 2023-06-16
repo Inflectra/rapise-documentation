@@ -21,7 +21,7 @@ By default declared variables are assumed to be local. Local variables may be us
 You may have a *JavaScript* variable defined in the user *Functions* file (`*.user.js`), i.e.:
 
 ```javascript
-// Piece from MyTest1.user.js
+// Piece from User.js
 var globalVar = "Value";
 ```
 
@@ -105,27 +105,46 @@ One may use an expression to change the value of a variable. Here are several co
 
     If no param to *Increment* is specified then `1` is assumed:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      |*Variable*|           |**Increment**  |`numVar`  |     |  
+      *Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
+      :--   |:--     |:--          |:--         |:--          |:--          |:--
+            |*Variable*|           |**Increment**  |`numVar`  |     |  
 
-Otherwise it is any *value*:
+      Otherwise it is any *value*:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      |*Variable*|           |**Increment**  |`numVar`  | `number`   | *value* 
+      *Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
+      :--   |:--     |:--          |:--         |:--          |:--          |:--
+            |*Variable*|           |**Increment**  |`numVar`  | `number`   | *value* 
 
 2. *Decrement* is the same as increment but the value is subtracted from the variable.
 
 3. *Append* adds the value as text to the specified variable. This operation is useful for constructing text messages:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      |*Variable*|           |**Append**  |`textVar`  | `string`   | Final value: 
-      |*Variable*|           |**Append**  |`textVar`  | `variable`   | `numVar` 
+      *Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
+      :--   |:--     |:--          |:--         |:--          |:--          |:--
+            |*Variable*|           |**Append**  |`textVar`  | `string`   | Final value: 
+            |*Variable*|           |**Append**  |`textVar`  | `variable`   | `numVar` 
 
-In this example if `textVar` was empty and `numVar` had value `5` then the final value of `textVar` is the following text:
-    `Final value: 5`
+      In this example if `textVar` was empty and `numVar` had value `5` then the final value of `textVar` is the following text:
+      `Final value: 5`
+
+## Variables as Objects
+
+A variable in Rapise can hold an object from the repository, and when it is a repository object, it can have actions that can be executed.
+
+When declaring a variable with the `objectid` *ParamType*, you are indicating to the RVL editor that the variable has either:
+
+1. The type of the object when the `objectid` matches the ID from the object repository.
+2. The type by name when the `objectid` matches a well-known object type. You can find object names in the documentation for each library. For example, the topic [Java Objects](/Libraries/ses_lib_java) lists all known object types for the Java library.
+
+      ![Object Rules](img/Variables_object_rules.png)
+
+      Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type [HTMLObject](/Libraries/HTMLObject), as shown in the object properties:
+
+      ![Object Type](img/Variables_object_type_properties.png)
+
+The RVL editor knows how to handle such a variable and provides necessary hints to choose an action for it:
+
+![Variable Action](img/Variables_variable_action.png)
 
 ## Examples
 
