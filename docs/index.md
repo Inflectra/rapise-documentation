@@ -3,6 +3,7 @@
 
 !!! info "Quick Links"
     - [Know Your Way Around](/Intro/orientation/)
+    - [Frameworks](./Guide/Frameworks/frameworks.md)
     - [Web Testing](/web/)
     - [Desktop Testing](/desktop/)
     - [Mobile Testing](/mobile/)

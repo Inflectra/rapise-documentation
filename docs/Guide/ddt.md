@@ -124,3 +124,4 @@ Open `UsingSpreadsheet` sample test from the start page to see a working example
 - [KB27](https://www.inflectra.com/support/knowledgebase/kb27.aspx) Using Rapise to extract test data from an Excel sheet 
 - [Blog: ](https://www.inflectra.com/Ideas/Entry/rapise--data-driven-testing-using-the-spreadsheet--288.aspx) Data Driven Testing using the Spreadsheet object (JavaScript)
 - [Data-driven testing tutorial (JavaScript)](data_driven_testing.md)
+- [Parameters and Configurations](./Frameworks/parameters.md)

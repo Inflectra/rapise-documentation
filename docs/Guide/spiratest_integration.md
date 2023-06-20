@@ -82,10 +82,21 @@ Additionally enter
 !!! note
     You need to be running SpiraTest / SpiraTeam v4.0 or later to use the integration with Rapise.
 
+## Using the Spira Dashboard
+
+!!! important
+    If you are reading this guide for the first time we recommend to proceed to the [next section](#creating-a-rapise-test-from-a-spiratest-test-case) and after learning the basics return here. This section comes to play when you are planning to create a real big set of tests for your application.
+
+You can interact with SpiraTest using the [Spira Dashboard](spira_dashboard_2.md) that is available from the `View > Spira Dashboard` menu. This provides a convenient way of working with SpiraTest, allowing you to quickly create, save and open test cases from SpiraTest.
+
+### Frameworks
+
+If you are just starting your test automation project and have Rapise 8.0+ we highly recommend to use new [Framework mode](./Frameworks/frameworks.md) and use new {==Sync with Spira==} [button](./spira_dashboard_2.md#framework-view-rapise-80) that handles everything: creation of test sets and test cases as well as file uploading/downloading. The framework mode also has simplified way of [handling parameters and configurations](./Frameworks/parameters.md).
+
 ## Creating a Rapise Test From a SpiraTest Test Case
 
 !!! important
-    In this section we describe a simplified process to give a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application we recommend to review the [Frameworks section](./Frameworks/frameworks.md) first. 
+    In this section we describe a simplified process to give a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application we recommend to review the [Frameworks section](#frameworks). 
 
 To create a new Rapise test linked to a SpiraTest test case, go to `File > Create New > New Test`. This will bring up the following dialog box:
 
@@ -236,10 +247,6 @@ If you would to save the current Rapise test into a new SpiraTest project or if 
 
 !!! warning
     This operation cannot be undone so please make sure you really want to unlink the current test.
-
-## Using the Spira Dashboard
-
-In addition to using the menu options described in this page, you can interact with SpiraTest using the [Spira Dashboard](spira_dashboard_2.md) that is available from the `View > Spira Dashboard` menu. This provides a convenient way of interacting with SpiraTest, allowing you to quickly create, save and open test cases from SpiraTest.
 
 ## Viewing the SpiraTest Repository
 
