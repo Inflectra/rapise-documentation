@@ -17,7 +17,7 @@ code:
 ```javascript
 function LaunchMsPaint()
 {
-    Global.DoLaunch('C:\Windows\system32\mspaint.exe');
+    Global.DoLaunch('C:\\Windows\\system32\\mspaint.exe');
 }
 ```
 
@@ -37,14 +37,12 @@ This will be contained within the actual test step itself:
 Now, when you execute the test (using the normal **Execute** button on the main [Test toolbar](menu_and_toolbars.md#main-toolbar) (***not*** the Execute Manual icon on the [Manual Toolbar](menu_and_toolbars.md#manual-toolbar) ) what happens is that Rapise will execute the main `Test()` function that contains:
 
 ```javascript
-//########## Script Steps ##############
-
-function Test()
+function Test(params)
 {
-    Global.DoPlayManual();
+	Global.DoPlayManual('ManualSteps.rmt');
 }
 
-g_load_libraries=["Generic"];
+g_load_libraries = ["UIAutomation"];
 ```
 
 this instructs Rapise to use the [manual

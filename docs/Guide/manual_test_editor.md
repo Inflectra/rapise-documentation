@@ -12,7 +12,7 @@ You can open the **Manual** toolbar by either clicking on the **Manual Steps** i
 
 ## Test Case Name/Description
 
-![manual_test_editor_test_case](./img/manual_test_editor2.png)
+![manual_test_editor_test_case](./img/manual_test_editor2.png){width="493px"}
 
 This section lets you edit the name and long formatted description of the test case. The rich text editor lets you choose the font name, font size, text color, highlight color, style (bold, underline, italic) as well as provides easy ability to add links, bullets and numbered lists.
 
@@ -20,7 +20,7 @@ In addition there is a button that lets you [add screenshots](image_capture.md).
 
 ## Test Step Editor
 
-![manual_test_editor_test_steps](./img/manual_test_editor3.png)
+![manual_test_editor_test_steps](./img/manual_test_editor3.png){width="634px"}
 
 This section lets you add, edit and delete test steps from the manual test case. Each of the test steps contains four fields:
 
@@ -42,6 +42,6 @@ Sometimes you have a primarily manual test case that you want to automate certai
 
 To do this, you enter the syntax **@FunctionName();** in the Description box of the test step. Then when you run the test, that step will be executed automatically. The **@FunctionName();** refers to a JavaScript [user function](defining_functions.md) called `function FunctionName()` in the `User.js` file.
 
-## For example
+### Example
 
 ![manual_test_editor_scenario_name](./img/manual_test_editor4.png)

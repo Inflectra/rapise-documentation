@@ -14,9 +14,12 @@ For pure manual test you need to select the manual test methodology:
 
 ![Manual Methodology](./img/manual_testing_methodology.png)
 
-Then once the test has been created, click on the `Tools > Manual Steps` menu and then you will be taken to the [Manual Editor](manual_test_editor.md) with the [Manual Test Toolbar](menu_and_toolbars.md#manual-toolbar) Visible:
+Then once the test has been created, click on the `Tools > Manual Steps` menu and then you will be taken to the [Manual Editor](manual_test_editor.md) with the [Manual Test Toolbar](menu_and_toolbars.md#manual-toolbar) visible:
 
 ![Toolbar Manual](./img/manual_testing1.png)
+
+!!! note
+    There will be no steps in the fresh new test.
 
 From here you can start creating your new manual test using the [Manual Recorder](manual_testing_recording.md), then edit the created test steps in the [Manual Editor](manual_test_editor.md). Finally you can [save the test to Spira](spiratest_integration.md) and then play it back using the [Manual Playback](manual_playback.md) screen.
 
@@ -28,9 +31,9 @@ Finally you can also have the best of manual and automated testing in the same t
 
 For a full tutorial using the manual playback, refer to the [Exploratory Testing](tutorial_exploratory_testing.md) tutorial.
 
-In addition, a working sample of manual testing is available from [Spira](spira_dashboard.md), simply connect to the sample **"Library Information System**" project and open the **'Ability to Create New Book (TC2)'** test case in the "**Functional Tests**" folder of the project. That will then display the sample manual test within Rapise:
+In addition, a working sample of manual testing is available from [Spira](spira_dashboard.md), simply connect to the sample **Library Information System** project and open the **Ability to Create New Book (TC2)** test case in the **Functional Tests** folder of the project. That will then display the sample manual test within Rapise:
 
-![manual_test_editor_sample](./img/manual_testing2.png)
+![manual_test_editor_sample](./img/manual_testing2.png){width="639px"}
 
 ## See Also
 

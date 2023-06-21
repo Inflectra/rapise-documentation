@@ -8,7 +8,7 @@ This section describes how you can record a set of steps automatically by **simp
 
 ## Step 1 - Creating a New Test
 
-To start manual testing, simply create your test as normal using the [New Test](create_a_new_test.md) dialog box. Then once the test has been created, click on the `Tools > Manual Steps` menu and then you will be taken to the [Manual Editor](manual_test_editor.md) with the [Manual Test Toolbar](menu_and_toolbars.md#manual-toolbar) Visible:
+To start manual testing, simply create your test as normal using the [New Test](create_a_new_test.md) dialog box. Then once the test has been created, click on the `Tools > Manual Steps` menu and then you will be taken to the [Manual Editor](manual_test_editor.md) with the [Manual Test Toolbar](menu_and_toolbars.md#manual-toolbar) visible:
 
 ![Manual Toolbar](./img/manual_testing_recording1.png)
 
