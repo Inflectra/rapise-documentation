@@ -22,7 +22,7 @@ To make sure that we have screenshots recorded, whilst keeping the size of the s
 
 ![manual_recording_2](./img/manual_testing_recording3.png)
 
-Now click the '**Record Manual**' button and choose MS-Paint from the list of running applications in [Select Application to Record](select_an_application_to_record_dialog.md) dialog and then click **'Select'** to start recording.
+Now click the **Record Manual** button and choose MS-Paint from the list of running applications in [Select Application to Record](select_an_application_to_record_dialog.md) dialog and then click **'Select'** to start recording.
 
 As you click through the application, the recording will display the list of steps and actions being captured:
 
@@ -36,7 +36,7 @@ When you click **Finish** to complete the recording, Rapise will now display the
 
 ![manual_recording_4](./img/manual_testing_recording6.png)
 
-You will notice that the description of each test step will use the form "User [action] at [coordinates] in '[object name]'" and the expected result will include the screenshot of what the user was doing. In addition, the sample data will contains the equivalent Rapise automation code for reference. This can be useful later if you decide to automate this test.
+Notice that each recorded test step already has a `Description` and an `Expected Result` with a screenshot of what the user was doing. In addition, the `Sample Data` contains the equivalent of Rapise automation code for reference. This can be useful later if you will decide to automate this test.
 
 ## Step 3 - Editing the Steps
 
@@ -52,11 +52,13 @@ Click on the option to **Save to Spira**, you will be asked to confirm the creat
 
 ![manual_recording_6](./img/manual_testing_recording8.png)
 
-Click on '**Create'** and then the manual test will be saved to Spira. You will see that this process adds the unique Spira test step IDs to each step. They are displayed using the format [TS:xxx]. This special token [TS:xxx] can be used in `Tester.Assert` commands to relate specific [verification points](checkpoints.md) with test steps during automated testing.
+Click on **Create** and then click **OK** in the `Synchronize Files` dialog. The manual test will be saved to Spira. You will see that this process adds the unique Spira test step IDs to each step. They are displayed using the format [TS:xxx]. This special token [TS:xxx] can be used in `Tester.Assert` commands to relate specific [verification points](checkpoints.md) with test steps during automated testing.
 
 ![manual_recording_7](./img/manual_testing_recording9.png)
 
-Now that the test has been saved in Spira, you can click on the **'View in Browser'** option to see how the test steps look inside Spira.
+Now that the test has been saved in Spira, you can click on the **View Manual Test in Spira** toolbar button to see how the test steps look inside Spira.
+
+![view manual in spira](img/manual_testing_recording_view_manual_in_spira.png)
 
 ![manual_recording_8](./img/manual_testing_recording10.png)
 
