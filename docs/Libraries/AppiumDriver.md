@@ -21,6 +21,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[Actions](#actions) | Gets Actions object. |
+|	[ActivateApp](#activateapp) | Activates an application by it's ID. |
 |	[ActivateIMEEngine](#activateimeengine) | Activate the given IME on the device. |
 |	[BackgroundApp](#backgroundapp) | Send the currently active app to the background, and either return after a certain amount of time, or leave the app deactivated. |
 |	[ClearSavedSession](#clearsavedsession) | Clears saved Appium session to start a new one. |
@@ -121,6 +122,30 @@ Actions()
 
 
 <a name="see.also.appiumdriver.actions"></a>
+
+<a name="ActivateApp"></a>    
+#### ActivateApp
+
+Activates an application by it's ID. 
+Find iOS default application IDs [here](https://support.apple.com/guide/deployment/bundle-ids-for-native-iphone-and-ipad-apps-depece748c41/web).
+For Android application ID is Package Name, e.g. com.google.chrome.
+
+```javascript
+ActivateApp(appId) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| appId | string |	ID of an application to activate. |
+
+
+
+
+
+<a name="see.also.appiumdriver.activateapp"></a>
 
 <a name="ActivateIMEEngine"></a>    
 #### ActivateIMEEngine
