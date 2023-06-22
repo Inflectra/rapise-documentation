@@ -154,7 +154,7 @@ SeSOnObjectNotFound(function (/**string*/ objectId, /**object*/params){
 A way to modify default object locator value. Useful when you, for example.
 
 ```javascript
-SeSOnLocatorValue(function(/**string*/ value, /**object*/objInfo){
+SeSOnLocatorValue(function(/**string*/ value, /**object*/objInfo) {
     // We use '{home_xpath}' as a placeholder to replace it with different value here.
     // ID is accessible as objInfo.object_id
     if(value=='{home_xpath}') return "//a[@href='Default.aspx']";
@@ -163,6 +163,17 @@ SeSOnLocatorValue(function(/**string*/ value, /**object*/objInfo){
 ```
 
 **value** - value to replace; **objInfo** - all locator values.
+
+### SeSOnReportMessage
+
+Allows interrupting `Tester._Report` and either changing it or checking it. `Tester._Report` is internally called by all `Tester.*Assert` calls executed by user or internally by other parts of Rapise (i.e. each `Obj.DoAction` writes a line into report).
+
+```javascript
+SeSOnReportMessage(function(/**string*/ type, /**string*/ message, /**number*/ status, /**SeSReportLink|SeSReportText|SeSReportImage|Object[]*/ data, /**object*/ tags) {
+// return true - skip the message from being reported
+// return false / nothing - proceed with this message
+});
+```
 
 ## See Also
 
