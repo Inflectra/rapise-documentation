@@ -3,6 +3,42 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB760', 'Rapise 8.0: using multiselect and datacolumn parameters for comprehensive testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB760.aspx">KB760</a> Rapise 8.0: using multiselect and datacolumn parameters for comprehensive testing
+
+The true strength of test automation lies in its capability to execute the same test cases with varying input parameters. In Rapise 8.0, you can achieve this by utilizing multiselect and datacolumn parameters. Let's now explore a specific example to illustrate this concept.
+
+### <a onclick="return RegisterKbClick('KB756', 'Rapise 8.0: development flow for Test Automation Framework in Team Mode')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB756.aspx">KB756</a> Rapise 8.0: development flow for Test Automation Framework in Team Mode
+
+When working as part of a team of automation engineers, the principles mentioned in the Single User Mode still apply. However, there are additional considerations to keep in mind, particularly when using a SpiraTest-based file repository.
+
+### <a onclick="return RegisterKbClick('KB755', 'Rapise 8.0: development flow for Test Automation Framework in Single User Mode')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB755.aspx">KB755</a> Rapise 8.0: development flow for Test Automation Framework in Single User Mode
+
+If you are the sole automation engineer working on test creation with Rapise, it is recommended to follow these basic principles when developing a test automation framework. These guidelines specifically apply to the new Framework mode introduced in Rapise 8.0.
+
+### <a onclick="return RegisterKbClick('KB753', 'Rapise 8.0: how to make a copy of a test automation framework')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB753.aspx">KB753</a> Rapise 8.0: how to make a copy of a test automation framework
+
+There are various situations where duplicating a test automation framework and linking it with another product in SpiraTest becomes necessary. For instance, you may want to create a copy to test the next major version of your application or start fresh with a clean product in SpiraTest. Another common scenario is when you need to transfer the test repository from SpiraTest to Git.
+
+### <a onclick="return RegisterKbClick('KB752', 'Rapise 8.0: how to define and use test set configurations')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB752.aspx">KB752</a> Rapise 8.0: how to define and use test set configurations
+
+Rapise 8.0 provides the simplified way of parameterizing test sets . With the ability to define parameters and create configurations, managing different test scenarios has never been easier. Each configuration automatically includes all the defined parameters, but you can override specific parameter values as needed. If a configuration does not explicitly assign a parameter value, the default value is utilized during test set execution.
+
+### <a onclick="return RegisterKbClick('KB751', 'Rapise 8.0: what are the benefits of using the new Framework mode?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB751.aspx">KB751</a> Rapise 8.0: what are the benefits of using the new Framework mode?
+
+The Framework mode was introduced in Rapise 8.0 to simplify test case and test set management, as well as the management of parameters, page objects/modules, object repositories, and shared code. The legacy Single Test mode required dealing with Sub-Tests and linking tests to SpiraTest on a per test case basis, whereas in the Framework mode, there is a single button labeled Sync with Spira that handles everything. When this button is pressed, test cases and test sets are automatically synchronized with SpiraTest, and files are uploaded/downloaded. In the Framework mode, team collaboration is streamlined because changes made by team members are automatically merged. In addition, it is possible to view diffs and resolve conflicts in complex cases.
+
+### <a onclick="return RegisterKbClick('KB750', 'Rapise 8.0: how to run test cases on different browsers')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB750.aspx">KB750</a> Rapise 8.0: how to run test cases on different browsers
+
+In this article, we will demonstrate how to configure multi-browser execution of test cases in Rapise to ensure compatibility of a web application across major web browsers. This method is specifically designed for the Framework mode, which was introduced in Rapise 8.0.
+
+### <a onclick="return RegisterKbClick('KB749', 'Rapise 8.0: how to define and use parameters in test cases')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB749.aspx">KB749</a> Rapise 8.0: how to define and use parameters in test cases
+
+In test automation projects, it is often necessary to parameterize test cases for various purposes. For instance, this could involve specifying different URLs for running tests in different environments (development, staging, production), or providing user credentials for logging into the system. Additionally, there might be a need to quickly modify playback speed, error handling, and screenshot settings for multiple test cases. In the Rapise 8.0 Framework mode, managing parameters is made simple and convenient, allowing easy creation and management of parameters, including the ability to run the same test case with different input data, such as filling a form with various values to create multiple records in a system database.
+
+### <a onclick="return RegisterKbClick('KB748', 'Rapise 8.0: recommended way of executing code before and after each test case')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB748.aspx">KB748</a> Rapise 8.0: recommended way of executing code before and after each test case
+
+Rapise 8.0 has introduced a new  feature called the Framework mode.  In  this mode a new framework is created with the Common.js file which contains event handlers such as SeSOnTestInit and SeSOnTestFinish that get executed for every test case.
+
 ### <a onclick="return RegisterKbClick('KB746', 'Dynamically Clicking on a Desktop App Button Sample (MS-Word)')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB746.aspx">KB746</a> Dynamically Clicking on a Desktop App Button Sample (MS-Word)
 
 We had a customer request for a sample that demonstrates how to click on buttons in a desktop application (in this case a plugin for Microsoft Word) where instead of having to learn each of the buttons individually, you can learn the button container and then loop through the buttons using a Rapise RVL Map.
