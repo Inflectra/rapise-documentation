@@ -11379,7 +11379,7 @@
 <p><img alt="PO Description" src="../img/pageobjects_po_description.png" /></p>
 <p>Any other sheet is considered an action. The action name should be alphanumeric, meaning it should not contain spaces and should start with a letter or an underscore.</p>
 <h3 id="javascript-mode">JavaScript Mode<a class="headerlink" href="#javascript-mode" title="Permanent link">&para;</a></h3>
-<p>In JavaScript mode, a Page Object / Module is equivalent to a <a href="/Guide/global_objects">Global Object</a>. All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.</p>
+<p>In JavaScript mode, a Page Object / Module is equivalent to a <a href="../../global_objects/">Global Object</a>. All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.</p>
 <p>The distinction between a global object and a Page Object lies in their usage and features. Typically, a global object encompasses various functionalities like PDF support, text manipulations, and other utilities. It does not involve an object repository or web services. On the other hand, a page object can include an object repository and is often specific to an application, representing its unique characteristics and functionality.</p>
 <h2 id="action-naming-and-reporting">Action Naming and Reporting<a class="headerlink" href="#action-naming-and-reporting" title="Permanent link">&para;</a></h2>
 <p>The preferred name for an action is <code>DoAction</code>. When this name is used, the result of the action is checked and reflected in the report. Checking the result involves verifying if the return value is 0, <code>false</code>, or an empty string, indicating a failed action. The inclusion of the <code>Do</code> prefix ensures that the result is checked and a line about the action is included in the report.</p>
@@ -11409,7 +11409,7 @@
 <p>To call a Page Object, you can use <code>MyObject.DoAction</code> directly in both RVL and JavaScript modes.</p>
 <p><img alt="PO Call RVL" src="../img/pageobjects_po_call_rvl.png" />
 <img alt="PO Call JS" src="../img/pageobjects_po_call_js.png" /></p>
-<p>Alternatively, you can invoke a single action for the Page Object itself by using the <a href="context_menu_url">context menu</a> and selecting "Invoke <em>ActionName</em>()".</p>
+<p>Alternatively, you can invoke a single action for the Page Object itself by using the context menu and selecting "Invoke <em>ActionName</em>()".</p>
 <p><img alt="Invoke Action" src="../img/pageobjects_invoke_action.png" /></p>
 <p>For RVL Modules, you can run any part of the module using standard RVL features such as Play Selection or Play this Sheet.</p>
 <h2 id="page-object-recording">Page Object Recording<a class="headerlink" href="#page-object-recording" title="Permanent link">&para;</a></h2>

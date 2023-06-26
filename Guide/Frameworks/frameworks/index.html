@@ -11847,20 +11847,20 @@
 <p>Test case-specific objects.</p>
 </li>
 <li>
-<p><a href="pageobjects">Page object</a>-specific objects.</p>
+<p><a href="../pageobjects/">Page object</a>-specific objects.</p>
 </li>
 <li>
 <p>Objects that are shared among different parts of the framework.</p>
 </li>
 </ol>
-<p>We recommend avoiding the use of shared objects and instead placing them in a <a href="pageobjects">page object</a>.</p>
+<p>We recommend avoiding the use of shared objects and instead placing them in a <a href="../pageobjects/">page object</a>.</p>
 <p>During object recording, the objects are stored in the respective repository based on the recording context:</p>
 <ol>
 <li>When recording a test case, the recognized objects are added to the repository specific to that test case.</li>
 </ol>
 <p><img alt="Test Case Objects" src="../img/frameworks_test_case_object.png" /></p>
 <ol>
-<li>When recording a page object, the recognized objects are added to the repository specific to that <a href="pageobjects">page object</a>.</li>
+<li>When recording a page object, the recognized objects are added to the repository specific to that <a href="../pageobjects/">page object</a>.</li>
 </ol>
 <p><img alt="PO Objects" src="../img/frameworks_po_objects.png" /></p>
 <ol>
@@ -11911,7 +11911,7 @@
 <p>Runtime environment parameters, such as the web browser profile name (<code>g_browserProfile</code>), command interval (<code>g_commandInterval</code>), stopping the test at the first error, capturing screenshots during the test, etc.</p>
 </li>
 </ol>
-<p>The logical parameters of the test can be configured in the Spira Dashboard on the <a href="parameters">parameters</a> tab.</p>
+<p>The logical parameters of the test can be configured in the Spira Dashboard on the <a href="../parameters/">parameters</a> tab.</p>
 <p>To set the runtime environment parameters, you can click the button in the <code>Choose Test Case</code> to play selector dialog:</p>
 <p><img alt="Parameter Button" src="../img/frameworks_param_button.png" /></p>
 <h3 id="framework-development-workflow">Framework Development Workflow<a class="headerlink" href="#framework-development-workflow" title="Permanent link">&para;</a></h3>
@@ -11938,9 +11938,9 @@
 <p>Many pages/dialogs in your application have same type of grid and you need to click on the row in such grid time after time.</p>
 </li>
 </ol>
-<p>These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a <a href="pageobjects">Page Object</a>. This object will encapsulate the necessary steps, such as <em>DoLaunch</em>, <em>DoLogin</em>, and <em>DoClose</em> as well as <em>DoClickRow</em>. You can then modify your test cases to utilize the new <a href="pageobjects">Page Object</a>, simplifying their structure and enhancing maintainability.</p>
+<p>These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a <a href="../pageobjects/">Page Object</a>. This object will encapsulate the necessary steps, such as <em>DoLaunch</em>, <em>DoLogin</em>, and <em>DoClose</em> as well as <em>DoClickRow</em>. You can then modify your test cases to utilize the new <a href="../pageobjects/">Page Object</a>, simplifying their structure and enhancing maintainability.</p>
 <h4 id="step-four-parameters-and-configurations">Step Four: Parameters and Configurations<a class="headerlink" href="#step-four-parameters-and-configurations" title="Permanent link">&para;</a></h4>
-<p>As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The <a href="parameters">parameters editor</a> can be used to set these parameters, allowing your framework to become more flexible and adaptable.</p>
+<p>As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The <a href="../parameters/">parameters editor</a> can be used to set these parameters, allowing your framework to become more flexible and adaptable.</p>
 <h4 id="step-nnnn-whats-next">Step NNNN: What's Next<a class="headerlink" href="#step-nnnn-whats-next" title="Permanent link">&para;</a></h4>
 <p>As your framework grows in complexity, you will encounter new challenges and opportunities for improvement. Here are some additional features that you might find useful:</p>
 <ul>
@@ -11984,7 +11984,7 @@
 </ol>
 <h3 id="collaboration-and-distributed-development">Collaboration and Distributed Development<a class="headerlink" href="#collaboration-and-distributed-development" title="Permanent link">&para;</a></h3>
 <p>When working in a small team of 1-3 members, integrating with <a href="/Guide/spira_dashboard_2">Spira</a> is an excellent solution. However, for larger teams, a combination of <a href="/Guide/spira_dashboard_2">Spira</a> and <a href="/Guide/git_integration">Git</a> may be more suitable.</p>
-<p>Since Rapise 8, we have enhanced the integration with <a href="diffmerge">Diff/Merge</a> tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them together.</p>
+<p>Since Rapise 8, we have enhanced the integration with <a href="../diffmerge/">Diff/Merge</a> tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them together.</p>
 <h3 id="maintenance">Maintenance<a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h3>
 <p>Rapise provides several features that facilitate quick and convenient support and correction of test case logic:</p>
 <ol>
@@ -12022,7 +12022,7 @@
 <p>Shared object repositories: When a commonly used object's location changes across multiple test cases, it is easier to update it when it is part of a shared repository.</p>
 </li>
 <li>
-<p><a href="pageobjects">Page Objects</a> with shared actions: By using Page Objects with shared actions, you can make updates to a single Page Object to resolve issues in multiple test cases that utilize it.</p>
+<p><a href="../pageobjects/">Page Objects</a> with shared actions: By using Page Objects with shared actions, you can make updates to a single Page Object to resolve issues in multiple test cases that utilize it.</p>
 </li>
 </ol>
 <h3 id="mixed-mode-tests">Mixed Mode Tests<a class="headerlink" href="#mixed-mode-tests" title="Permanent link">&para;</a></h3>
