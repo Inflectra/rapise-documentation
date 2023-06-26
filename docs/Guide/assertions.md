@@ -7,22 +7,22 @@ An **assert statement** is a special Boolean condition that represents an assump
 There are explicit and implicit assertions (or checkpoints) generated during the script execution and reflected in the report. Each report line is produced by one of the following statements:
 
 * RVL [Action](../RVL/Actions.md) - has an implicit assertion as a side-effect. Success means successful action execution.
-    ![RVL Action](img/automated_reporting_rvlaction.png)
+    ![RVL Action](./img/automated_reporting_rvlaction.png)
 
 * JavaScript [Action](actions.md) - has an implicit assertion as a side-effect. Success means successful action execution.
-    ![Code Action](img/automated_reporting_codeaction.png)
+    ![Code Action](./img/automated_reporting_codeaction.png)
 
 * RVL [Assertion](../RVL/Assertions.md) - explicit comparison (checkpoint)
-    ![RVL Assertion](img/automated_reporting_rvlassert.png)
+    ![RVL Assertion](./img/automated_reporting_rvlassert.png)
 
 * Code [Assertion](../Libraries/Tester.md#assert) - explicit comparison (checkpoint)
-    ![Code Assertion](img/automated_reporting_codeassert.png)
+    ![Code Assertion](./img/automated_reporting_codeassert.png)
 
 * Execution Error
-    ![Error](img/automated_reporting_error.png)
+    ![Error](./img/automated_reporting_error.png)
 
 * Image Comparison (Checkpoint)
-    ![Image Checkpoint](img/automated_reporting_imgcheckpoint.png)
+    ![Image Checkpoint](./img/automated_reporting_imgcheckpoint.png)
 
 ## Soft Assertions
 
@@ -32,9 +32,9 @@ This is when *Soft* assertion comes into play. Soft assertion has 2 features:
 
 1. In case of failure it just reports it but does not stop the execution.
 
-2. It is possible to stop execution based on previous set of *Soft* assertions by calling [Tester.SoftAssertAll](/Libraries/Tester#softassertall).
+2. It is possible to stop execution based on previous set of *Soft* assertions by calling [Tester.SoftAssertAll](../Libraries/Tester.md#softassertall).
 
-Every `Assert*` method defined for the [Tester](/Libraries/Tester) has corresponding `SoftAssert*` counterpart (i.e. `Tester.AssertEquals` and `Tester.SoftAssertEquals` etc).
+Every `Assert*` method defined for the [Tester](../Libraries/Tester.md) has corresponding `SoftAssert*` counterpart (i.e. `Tester.AssertEquals` and `Tester.SoftAssertEquals` etc).
 
 ## Create a Checkpoint
 

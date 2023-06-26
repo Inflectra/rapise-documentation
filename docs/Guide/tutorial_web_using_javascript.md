@@ -144,7 +144,7 @@ Rapise will open a new instance of Chrome to the correct url (<https://libraryin
 
 After execution, a screen like the one below will appear.  Each row represents a step in the test. The rows with green text are steps which passed, whereas the rows with red text are the steps which failed.
 
-![](img/tutorial_web_using_javascript_report_web_tutorial_javascript.png){width="929px"}
+![](./img/tutorial_web_using_javascript_report_web_tutorial_javascript.png){width="929px"}
 
 For more information on the report, see [Automated Reporting](automated_reporting.md).
 

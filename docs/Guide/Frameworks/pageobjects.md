@@ -52,11 +52,11 @@ There are two ways of creating a **Page Object (PO)** or **Module**:
 
 1. Main menu:
    - Go to **File** > **Add to Framework** > **Page Object / Module**.
-   ![Add Main Menu](img/add_page_object_main_menu.png)
+   ![Add Main Menu](./img/add_page_object_main_menu.png)
 
 2. Context menu:
    - Right-click on the **Page Objects / Modules** node in the [object tree](/Guide/object_tree).
-   ![Add Context Menu](img/add_page_object_context_menu.png)
+   ![Add Context Menu](./img/add_page_object_context_menu.png)
 
 ### Page Object - RVL vs JS
 
@@ -84,13 +84,13 @@ When in RVL mode, adding a sheet creates a new action, with the exception of two
 
 2. The `PageObject` sheet, which is the default sheet for the Page Object. It is intended to include a comment with a detailed description of the action, which will be displayed to the user.
 
-![PO Description](img/pageobjects_po_description.png)
+![PO Description](./img/pageobjects_po_description.png)
 
 Any other sheet is considered an action. The action name should be alphanumeric, meaning it should not contain spaces and should start with a letter or an underscore.
 
 ### JavaScript Mode
 
-In JavaScript mode, a Page Object / Module is equivalent to a [Global Object](/Guide/global_objects). All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.
+In JavaScript mode, a Page Object / Module is equivalent to a [Global Object](../global_objects.md). All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.
 
 The distinction between a global object and a Page Object lies in their usage and features. Typically, a global object encompasses various functionalities like PDF support, text manipulations, and other utilities. It does not involve an object repository or web services. On the other hand, a page object can include an object repository and is often specific to an application, representing its unique characteristics and functionality.
 
@@ -110,17 +110,17 @@ Defining parameters and returning values as well as documenting them is straight
 
 When creating an action in RVL, it generates necessary placeholders:
 
-![Default RVL Action](img/default_action.png)
+![Default RVL Action](./img/default_action.png)
 
 Where:
 
 1. Is an action description. You may see it when choosing an action:
 
-   ![Action Description Dropdown](img/pageobjects_action_description_dropdown.png)
+   ![Action Description Dropdown](./img/pageobjects_action_description_dropdown.png)
 
    or when hovering over it in the tree:
 
-   ![Hovering Action Description](img/pageobjects_action_description_hover.png)
+   ![Hovering Action Description](./img/pageobjects_action_description_hover.png)
 
 2. Parameters. Zero or more. All variable definitions appearing before `ReturnValue` variable assumed to be action parameters. Everything after `ReturnValue` are just internal variables needed for given action.
 
@@ -130,12 +130,12 @@ Where:
 
 To call a Page Object, you can use `MyObject.DoAction` directly in both RVL and JavaScript modes.
 
-![PO Call RVL](img/pageobjects_po_call_rvl.png)
-![PO Call JS](img/pageobjects_po_call_js.png)
+![PO Call RVL](./img/pageobjects_po_call_rvl.png)
+![PO Call JS](./img/pageobjects_po_call_js.png)
 
-Alternatively, you can invoke a single action for the Page Object itself by using the [context menu](context_menu_url) and selecting "Invoke *ActionName*()".
+Alternatively, you can invoke a single action for the Page Object itself by using the context menu and selecting "Invoke *ActionName*()".
 
-![Invoke Action](img/pageobjects_invoke_action.png)
+![Invoke Action](./img/pageobjects_invoke_action.png)
 
 For RVL Modules, you can run any part of the module using standard RVL features such as Play Selection or Play this Sheet.
 

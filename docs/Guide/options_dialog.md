@@ -40,9 +40,9 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
 ### Debugger
 
-![Debugger Options](img/options_dialog_debugger_node.png)
+![Debugger Options](./img/options_dialog_debugger_node.png)
 
-* **Optimize Call Stack**: If **True**, removes redundant information from the call stack view. See also [Call Stack View Optimization](variable_call_stack_view#call-stack-view-optimization).
+* **Optimize Call Stack**: If **True**, removes redundant information from the call stack view. See also [Call Stack View Optimization](variable_call_stack_view.md#call-stack-view-optimization).
 
 * **Remember Debugger Layout**: If **True**, Rapise will remember the window layout for debug mode separately. For example, this may be useful if you want to work full screen while authoring the Test and half-screen to debug. This way the AUT and the Rapise debugger fit on the screen.
 
@@ -50,7 +50,7 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
 ![execution](./img/options_dialog_execution.png)
 
-* **JSEngineType**: Set preferred  [JavaScript Engine](jscript_language_reference) (one of **Default**, **Node**, **WScript**). Where **Default** means **Node**.
+* **JSEngineType**: Set preferred  [JavaScript Engine](jscript_language_reference.md) (one of **Default**, **Node**, **WScript**). Where **Default** means **Node**.
 
 ### Settings
 

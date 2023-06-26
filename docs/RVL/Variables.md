@@ -37,7 +37,7 @@ Global variables are useful for exchanging and/or sharing data between different
 
 Special parameter name `defaultValue` of the Global variable definition allows setting default value. This may be needed when you don't know if variable was set before calling this script. So the value will only be assigned is variable is currently undefined. Otherwise the Variable keeps its defined value.
 
-![defaultValue](img/RVL_Variable_DefaultValue.png)
+![defaultValue](./img/RVL_Variable_DefaultValue.png)
 
 This helps to make sheets using global variables to be executable standalone. I.e. you may use [Play This Sheet](../Guide/rvl_editor.md#context-menu) in RVL and be sure that Global variable will have a value.
 
@@ -136,26 +136,26 @@ When declaring a variable with the `objectid` *ParamType*, you are indicating to
 1. The type of the object when the `objectid` matches the ID from the object repository.
 2. The type by name when the `objectid` matches a well-known object type. You can find object names in the documentation for each library. For example, the topic [Java Objects](/Libraries/ses_lib_java) lists all known object types for the Java library.
 
-      ![Object Rules](img/Variables_object_rules.png)
+      ![Object Rules](./img/Variables_object_rules.png)
 
       Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type [HTMLObject](/Libraries/HTMLObject), as shown in the object properties:
 
-      ![Object Type](img/Variables_object_type_properties.png)
+      ![Object Type](./img/Variables_object_type_properties.png)
 
 The RVL editor knows how to handle such a variable and provides necessary hints to choose an action for it:
 
-![Variable Action](img/Variables_variable_action.png)
+![Variable Action](./img/Variables_variable_action.png)
 
 ## Examples
 
 Variables may be declared as *Local* or *Global*. Declaration may or may not contain initial value
 
-![Variable Declarations](img/Variables_Declaration.png)
+![Variable Declarations](./img/Variables_Declaration.png)
 
 Variables may accept output from the *Action*:
 
-![Variable Output](img/Variables_Output.png)
+![Variable Output](./img/Variables_Output.png)
 
 Variables may be used as input to the *Action*:
 
-![Variable AsParam](img/Variables_AsParam.png)
+![Variable AsParam](./img/Variables_AsParam.png)

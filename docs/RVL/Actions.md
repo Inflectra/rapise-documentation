@@ -18,7 +18,7 @@ SeS('MyButton').DoClick(5,7);
 
 `Object` is an ID of learned or Global object. Available objects may be found in the `Object Tree`:
 
-![Object Tree](img/Actions_ObjectTree.png)
+![Object Tree](./img/Actions_ObjectTree.png)
 
 *Object tree* contains list of available objects, including:
 
@@ -28,26 +28,26 @@ SeS('MyButton').DoClick(5,7);
 
 3. *Functions*. Represent global JavaScript functions. Each time you define a global function in .user.js file it becomes available for calling from RVL with special object ID Functions. 
 
-![Functions](img/Actions_Functions.png)
+![Functions](./img/Actions_Functions.png)
 
 Each Object has its own set of actions. You may also see them in the object tree:
 
-![Object Tree](img/Actions_ObjectTree_Actions.png) 
+![Object Tree](./img/Actions_ObjectTree_Actions.png) 
 
 An *Action* may have any number of parameters. See [Params](Params.md) for more info.
 
 ## Editing Action
 An Action may have both mandatory and optional params. When action is selected from the dropdown its params are displayed:
 
-![DoLaunch parameters](img/Actions_ActionParams.png)
+![DoLaunch parameters](./img/Actions_ActionParams.png)
 
 By default RVL editor pre-fills only mandatory params for you when you select an action from the dropdown. In this example `DoLaunch` has one mandatory parameter `cmdLine` so here is what you get when you select it:
 
-![DoLaunch parameters](img/Actions_ActionParams_Mandatory.png)
+![DoLaunch parameters](./img/Actions_ActionParams_Mandatory.png)
 
 However the situation is differs if you hold the ++shift++ key while choosing an Action from the dropdown:
 
-![DoLaunch parameters](img/Actions_ActionParams_Optional.png)
+![DoLaunch parameters](./img/Actions_ActionParams_Optional.png)
 
 You may see that all parameters are applied in this case.
 
@@ -57,12 +57,12 @@ You may see that all parameters are applied in this case.
 ## Examples
 
 Action without parameters
-![Action without parameters](img/Actions_ActionParams_NoParams.png)
+![Action without parameters](./img/Actions_ActionParams_NoParams.png)
 
 Action with single parameter. In RVL each parameter takes one line with *Action*=`Param`. However for the 1st param there is an exception. It may occupy the same line as `Action` itself:
-![Action with single parameter](img/Actions_ActionParams_SingleParam.png)
+![Action with single parameter](./img/Actions_ActionParams_SingleParam.png)
 
 Action with many parameters:
-![Many parameters](img/Actions_ActionParams_Optional.png)
+![Many parameters](./img/Actions_ActionParams_Optional.png)
 
 

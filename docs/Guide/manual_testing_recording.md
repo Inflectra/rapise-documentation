@@ -58,7 +58,7 @@ Click on **Create** and then click **OK** in the `Synchronize Files` dialog. The
 
 Now that the test has been saved in Spira, you can click on the **View Manual Test in Spira** toolbar button to see how the test steps look inside Spira.
 
-![view manual in spira](img/manual_testing_recording_view_manual_in_spira.png)
+![view manual in spira](./img/manual_testing_recording_view_manual_in_spira.png)
 
 ![manual_recording_8](./img/manual_testing_recording10.png)
 

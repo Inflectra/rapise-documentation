@@ -7,4 +7,4 @@ Preamble is executed every time when one does [Play Selection](../Guide/rvl_edit
 The preamble is detected automatically. Everything before first [Action](Actions.md), [Assertion](Assertions.md), [Loop](Loops.md) or [Condition](Conditions.md) is a preamble.
 
 For example, Preamble here ends at the row 10 (because row 11 is **Action**)
-![Preamble](img/Preamble_Script.png)
+![Preamble](./img/Preamble_Script.png)

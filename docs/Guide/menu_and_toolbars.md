@@ -6,26 +6,26 @@
 
 *Default*:
 
-![Test](img/menu_and_toolbars_file_default.png)
+![Test](./img/menu_and_toolbars_file_default.png)
 
 *Framework*:
 
-![Framework](img/menu_and_toolbars_file_framework.png)
+![Framework](./img/menu_and_toolbars_file_framework.png)
 
 *Manual*:
 
-![Manual](img/menu_and_toolbars_file_manual.png)
+![Manual](./img/menu_and_toolbars_file_manual.png)
 
 The File menu provides quick access to all the File management functions in Rapise. Many of these are also available on the main [toolbar](#main-toolbar).
 
 * **Create New**
     * **New Test** - creates a new standalone Rapise test, it can be saved either to Spira or locally.
-    * **Test Automation Framework** - start new [testing framework](/Guide/Frameworks/frameworks)
-* **Add To Framework** - add something [testing framework](/Guide/Frameworks/frameworks)
+    * **Test Automation Framework** - start new [testing framework](./Frameworks/frameworks.md)
+* **Add To Framework** - add something [testing framework](./Frameworks/frameworks.md)
     * **Test Case** - Add new Test Case.
-    * **Module / Page Object** - add new [Module / Page Object](/Guide/Frameworks/pageobjects)
-    * **Spreadsheet** - add new [shared](/Guide/Frameworks/frameworks#shared-files-and-repositories) spreadsheet
-    * **Shared Script** - add new [shared](/Guide/Frameworks/frameworks#shared-files-and-repositories) JavaScript for common functions and variables
+    * **Module / Page Object** - add new [Module / Page Object](./Frameworks/pageobjects.md)
+    * **Spreadsheet** - add new [shared](./Frameworks/frameworks.md#shared-files-and-repositories) spreadsheet
+    * **Shared Script** - add new [shared](./Frameworks/frameworks.md#shared-files-and-repositories) JavaScript for common functions and variables
     * **Import External Test Case** - import external Test Case or standalone test created earlier into current testing framework.
     * **Import External Module / Page Object** - import external Module / Page Object from another testing framework into this one.
 * **Open** - opens an existing test (`.sstest`) that is already available locally.
@@ -245,7 +245,7 @@ related to using the Web Spy to inspect the DOM objects in web pages.
 
 ## Help
 
-![Help](img/menu_help.png)
+![Help](./img/menu_help.png)
 
 * **About** - information about the running instance of Rapise, including the version number.
 * **Activation** - opens the Rapise license activation screen. This can be used to deactivate the current license so that it can be used on a different machine.
@@ -300,7 +300,7 @@ then [Play](playback.md) your script.  
 
 The **Main** is the primary toolbar providing tools to help with creating and executing tests. It is always visible:
 
-![Toolbar Main](img/menu_and_toolbars_main_toolbar.png)
+![Toolbar Main](./img/menu_and_toolbars_main_toolbar.png)
 
 ## RVL Toolbar
 

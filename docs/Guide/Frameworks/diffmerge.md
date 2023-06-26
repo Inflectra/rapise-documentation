@@ -8,7 +8,7 @@ Diff tools come in handy when you have made alterations and wish to compare them
 
 Whenever the [Save to Spira](../spiratest_integration.md#saving-a-test-to-spiratest) button is pressed in Rapise, the tool will examine which files have been modified.
 
-![Spira Diff Merge](img/diffmerge_spira_diff_merge.png)
+![Spira Diff Merge](./img/diffmerge_spira_diff_merge.png)
 
 (1) If a file is accompanied by a "Diff..." button, it indicates that the file has been altered compared to the version currently stored in Spira. Clicking the button will...
 
@@ -114,7 +114,7 @@ tools:
 
 By default, *RVLMerge* is automatically installed. Unless specified otherwise, it will be displayed when you choose to show the diff for an RVL or a spreadsheet.
 
-![RVLMerge](img/diffmerge_rvl_merge.png)
+![RVLMerge](./img/diffmerge_rvl_merge.png)
 
 ### Using with Git
 

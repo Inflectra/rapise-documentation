@@ -4,7 +4,7 @@ A *Map* is designed to be an easy way to define tables of data. Items in the map
 
 The indexed dimensions in the map may also be iterated by the [Loop][Loops.md] function, thus making it useful feature for Data-Driven Testing.
 
-![Map](img/Maps_MapSample.png)
+![Map](./img/Maps_MapSample.png)
 
 An RVL script has at least 7 [columns](Columns.md). However the *Map* may take as many columns as needed.
 
@@ -39,7 +39,7 @@ External maps are defined in an external spreadsheet, file or a database.
 
 Once map is defined it may be used as a regular [Object](../Libraries/Map.md). 
 
-![Map as Object](img/Maps_MapAsObject.png)
+![Map as Object](./img/Maps_MapAsObject.png)
 
 ### Reading in a Loop
 
@@ -75,7 +75,7 @@ A `Rows` Map is the most useful for data feeds. Each of the set of values is a r
 
 In real example it looks like this:
 
-![Map](img/Maps_This.png)
+![Map](./img/Maps_This.png)
 
 [Comments](Comments.md) may also be used to skip specific rows or row sets.
 
@@ -93,7 +93,7 @@ A `Columns` Map is a convenient way for representing data when you have many opt
 
 The same may be represented as `Rows` but would require many columns and sometimes it is harder to read. So columns is ideal for storing configuration structures:
 
-![Columns](img/Maps_Columns.png)
+![Columns](./img/Maps_Columns.png)
 
 When a `Columns` Map is used in the Loop, then the iteration is performed through the columns and addresses the rows by name within the loop. I.e. the 1st iteration chooses 1st column, 2nd goes to 2nd column and so on.
 
@@ -110,19 +110,19 @@ A Table map has both columns and rows named.
       | **Row3**| ...        |            |             |             |
 *End* |         |            |            |             |             |
 
-![Table](img/Maps_Table.png)
+![Table](./img/Maps_Table.png)
 
 When a `Table` Map is used in the Loop, then the iteration is performed through the columns and addresses the rows by name within the loop. I.e. 1st iteration chooses 1st column, 2nd goes to 2nd column and so on.
 
 It is convenient to use a `Table` Map when you have several columns and many rows so it perfectly fits into the screen. For example you may have several alternative configuration sections and want to use them depending on the situation. In the example below we have several sites (Testing, QA, Prod) each having own Url, Login etc. So we want to quickly switch between sites when working with test.
 
-![Table Config Columns](img/Maps_TableColumns.png)
+![Table Config Columns](./img/Maps_TableColumns.png)
 
 ### Range Map
 
 `Range` map contains no in-place data, but defines a region in the external spreadsheet to read information from.
 
-![Range Map](img/Maps_Range.png)
+![Range Map](./img/Maps_Range.png)
 
 A `Range` map definition contains a number of required parameters:
 
@@ -140,13 +140,13 @@ Also there are a hidden parameters:
 
 Data in the `Range` map is assumed to be similar to [`Rows`](#rows-map) map, but defined externally. Looping is done by rows. Typical external file containing data may look like that:
 
-![Range Data](img/Maps_RangeData.png)
+![Range Data](./img/Maps_RangeData.png)
 
 ### Database Map
 
 A `Database` map contains no in-place data, but defines a connection to the database result set. 
 
-![Database Map](img/Maps_Database.png)
+![Database Map](./img/Maps_Database.png)
 
 The `Database` map definition contains two parameters:
 
@@ -171,4 +171,4 @@ Some samples of typical ADO connection string values:
 
 An example below refers to ODBC Data Source defined as follows:
 
-![Database ODBC data source](img/Maps_DatabaseODBC.png)
+![Database ODBC data source](./img/Maps_DatabaseODBC.png)

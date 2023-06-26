@@ -6,7 +6,7 @@
 
 A global variable may be declared one or more times. For example, you may declare it in [RVL](../RVL/Variables.md#global-variables) and in *JavaScript* to share the same value.
 
-Usually, global variables are defined in the [RVL Sheet](/RVL/Sheets), `Common.js`, or in one of the `User.js` files.
+Usually, global variables are defined in the [RVL Sheet](../RVL/Sheets.md), `Common.js`, or in one of the `User.js` files.
 
 ## Usage
 

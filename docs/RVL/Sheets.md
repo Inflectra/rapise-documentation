@@ -2,7 +2,7 @@
 
 RVL script may contain one or more sheets distributed over one or more workbooks.
 
-![Sheets](img/Sheets.png)
+![Sheets](./img/Sheets.png)
 
 Sheet is an atomic building block for implementing test frameworks and sharing logic.
 
@@ -26,11 +26,11 @@ You may pass a [Map](Maps.md) between sheets as  [input parameters](RVL_DoPlay.m
 
 For example, here we pass a map `FullLoginData`:
 
-![Pass Map](img/RVL_Sheets_PassMaps1.png)
+![Pass Map](./img/RVL_Sheets_PassMaps1.png)
 
 as a value to override the map `UserLogins` on the `Login` sheet:
 
-![Pass Map](img/RVL_Sheets_PassMaps2.png)
+![Pass Map](./img/RVL_Sheets_PassMaps2.png)
 
 ## RVL File
 

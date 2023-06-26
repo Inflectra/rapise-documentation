@@ -3,7 +3,7 @@
 ## Overview
 Rapise [Oracle Forms Library](../Libraries/ses_lib_oracleforms.md) enables recording, learning and playback of various [Oracle Forms](https://www.oracle.com/application-development/technologies/forms/forms.html) controls. 
 
-![Oracle Forms Test Screen](img/of_test.png)
+![Oracle Forms Test Screen](./img/of_test.png)
 
 ## Supported Oracle Forms Versions
 Rapise 7.1 has support for **Oracle Forms** version 10 and higher.
@@ -52,12 +52,12 @@ You need to append the following parameter to the URL:
 
 In case of **Internet Explorer** this means that URL contains this part:
 
-![URL IE](img/of_ie_url.png)
+![URL IE](./img/of_ie_url.png)
 
 ### From Java Web Start .jnlp File
 ``...&38;record=names`
 
-![URL JNLP](img/of_jnlp_url.png)
+![URL JNLP](./img/of_jnlp_url.png)
 
 
 ## Global Object

@@ -57,7 +57,7 @@ var saved_script_objects =
 
 ### Main.rvl.xlsx
 
-See [RVL](/Guide/visual_language)
+See [RVL](visual_language.md)
 
 ## Full script
 

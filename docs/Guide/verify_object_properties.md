@@ -35,7 +35,7 @@ Or, in JavaScript mode:
 
 ## Check Object Exists
 
-Since Rapise 6.6 the **Verify Object Properties** dialog shows `Exists` property. It adds [Global.DoWaitFor](/Libraries/Global#dowaitfor) action to the recording.
+Since Rapise 6.6 the **Verify Object Properties** dialog shows `Exists` property. It adds [Global.DoWaitFor](../Libraries/Global.md#dowaitfor) action to the recording.
 
 ## Check Object Visible
 

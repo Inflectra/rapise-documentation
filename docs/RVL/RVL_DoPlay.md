@@ -25,11 +25,11 @@ Play RVL sheet `sheetName` from current workbook.
 
 So the following call:
 
-![Extra Params Call](img/RVL_DoPlay_ExtraParams.png)
+![Extra Params Call](./img/RVL_DoPlay_ExtraParams.png)
 
 passes `User=ExtUser`, `Password=ExtPassword`, `OtherVarName=somevalue` to the destination script. It may now be used as follows:
 
-![Extra Param Values](img/RVL_DoPlay_ExtraParams_Values.png)
+![Extra Param Values](./img/RVL_DoPlay_ExtraParams_Values.png)
 
 So **local** variable `User` is assigned to value `ExtUser` when called. However, if you play this sheet using `Play Sheet` then this variable would have value `DefUser`.
 

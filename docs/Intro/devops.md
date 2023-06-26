@@ -8,13 +8,13 @@ For test management and execution we recommend to use [SpiraTest](https://www.in
 
 If you use Azure DevOps or TFS we also have a solution:
 
-- Azure DevOps integration v3 [manual](/Guide/vstest/) and [video](https://youtu.be/BIgOIxkZ5Hk?t=507)
-- [RapiseLauncher Extension](/Guide/vstest_rl/) for Azure DevOps
+- Azure DevOps integration v3 [manual](../Guide/vstest.md) and [video](https://youtu.be/BIgOIxkZ5Hk?t=507)
+- [RapiseLauncher Extension](../Guide/vstest_rl.md) for Azure DevOps
 
 Legacy Integrations:
 
-- Azure DevOps integration v2 [manual](/Guide/ado_integration/) and [video](https://youtu.be/H7nOorRs00A)
-- Visual Studio and Azure DevOps Integration v1 [manual](/Guide/visual_studio/) and [video](https://youtu.be/iPVplfqKj50)
+- Azure DevOps integration v2 [manual](../Guide/ado_integration.md) and [video](https://youtu.be/H7nOorRs00A)
+- Visual Studio and Azure DevOps Integration v1 [manual](../Guide/visual_studio.md) and [video](https://youtu.be/iPVplfqKj50)
 
 ## Jenkins (and all others)
 

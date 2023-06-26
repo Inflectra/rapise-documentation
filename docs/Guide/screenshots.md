@@ -18,21 +18,21 @@ To enable automatic screenshots after every action use [Screen Capture](settings
 
 Simplest way to enable screenshots is to use `Parameters...` section in the `Choose Test Case` dialog:
 
-![Parameters](img/screenshots_choose_test_case.png)
+![Parameters](./img/screenshots_choose_test_case.png)
 
 Then choose `Capture Execution`:
 
-![Capture Execution](img/screenshots_capture_execution.png)
+![Capture Execution](./img/screenshots_capture_execution.png)
 
 Pres OK, and set a value:
 
-![Capture Execution Value](img/screenshots_capture_execution_value.png)
+![Capture Execution Value](./img/screenshots_capture_execution_value.png)
 
 ## Taking Screenshot when Test Fails
 
 By default the option is enabled to take screenshot whenever test fails:
 
-![Screenshot on Failure](img/screenshots_screenshot_on_failure.png)
+![Screenshot on Failure](./img/screenshots_screenshot_on_failure.png)
 
 ## Playback
 

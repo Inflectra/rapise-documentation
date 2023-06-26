@@ -103,15 +103,15 @@ function SetState(/**string*/stateName)
 
 We may define dropdown for `stateName` parameter, so that RVL editor suggest the following list:
 
-![States](img/rvl_dropdowns_states.png)
+![States](./img/rvl_dropdowns_states.png)
 
 The values for this dropdown are defined in the spreadsheet:
 
-![States](img/rvl_dropdowns_xls_states.png)
+![States](./img/rvl_dropdowns_xls_states.png)
 
 Moreover, we define a code for each state name, so it may be re-mapped in the implementation of the `SetState` function using 
 
-![States](img/rvl_dropdowns_xls_stateCodes.png)
+![States](./img/rvl_dropdowns_xls_stateCodes.png)
 
 Dropdown values are defined in file `Dropdowns.xlsx`, that may be added to the test using the[Create/Spreadsheet...](test_files_dialog.md#context-menu-folder) menu item.
 
@@ -128,7 +128,7 @@ The full key to find matching dropdown is `objectid`.`method`.`paramName`. If no
 
 The dropdown may be defined in the current (next to `Main.rvl.xlsx`), in parent test and so on up to the framework root (the folder pointed by the `%WORKDIR%`).
 
-![States](img/rvl_dropdowns_nesting.png)
+![States](./img/rvl_dropdowns_nesting.png)
 
 RVL Editor always tries to find best match for dropdown column starting from nearest `Dropdowns.xlsx` and climbing up to the framework root.
 
@@ -246,41 +246,41 @@ To quickly navigate to the location where a specific function or Page Object act
 2. Press the F12 key.
 3. Rapise will attempt to locate and open the corresponding definition.
 
-![f12 1](img/rvl_editor_f12_1.png)
+![f12 1](./img/rvl_editor_f12_1.png)
 
-![f12 2](img/rvl_editor_f12_2.png)
+![f12 2](./img/rvl_editor_f12_2.png)
 
 ## Define a Map by Drag&Drop
 
-When you drag and drop a spreadsheet (`.xlsx`) into RVL, a [map](/RVL/Maps.md) is created. This map refers to the data file using an absolute path, starting from the framework root represented by `%WORKDIR%`.
+When you drag and drop a spreadsheet (`.xlsx`) into RVL, a [map](../RVL/Maps.md) is created. This map refers to the data file using an absolute path, starting from the framework root represented by `%WORKDIR%`.
 
-![Map, Absolute](img/rvl_editor_drag.png)
+![Map, Absolute](./img/rvl_editor_drag.png)
 
 However, if you hold the ++shift++ key while performing the same action, the map is created with a relative path instead. This relative path is based on the current `rvl.xlsx` file.
 
-![Map, Relative](img/rvl_editor_shift_drag.png)
+![Map, Relative](./img/rvl_editor_shift_drag.png)
 
 ## DoPlayTest via Drag&Drop
 
 When you drag and drop a test case into RVL, a `RVL.DoPlayTest` call is created. The call refers to the test case using an absolute path, starting from the framework root represented by `%WORKDIR%`.
 
-![TestCase Drag&Drop](img/rvl_editor_testcase_drag.png)
+![TestCase Drag&Drop](./img/rvl_editor_testcase_drag.png)
 
 However, if you hold the ++shift++ key while performing the same action, the map is created with the test alias name (short name) instead:
 
-![TestCase Shift+Drag&Drop](img/rvl_editor_testcase_shift_drag.png)
+![TestCase Shift+Drag&Drop](./img/rvl_editor_testcase_shift_drag.png)
 
 Short names are useful when all test cases have unique names. Usually it means longer naming, i.e. instead of `Invoices/Create` test case should be named `Invoices/Create new Invoice` so it does not collide with `Orders/Create`.
 
 ## Drag&Drop for DoPlayTest
 
-When you drag and drop a [test case](/Guide/Frameworks/frameworks#test-cases) into RVL, it generates a `RVL.DoPlayTest` call. This call references the test case using an absolute path starting from the framework root, represented by `%WORKDIR%`.
+When you drag and drop a [test case](./Frameworks/frameworks.md#test-cases) into RVL, it generates a `RVL.DoPlayTest` call. This call references the test case using an absolute path starting from the framework root, represented by `%WORKDIR%`.
 
-![Drag&Drop TestCase](img/rvl_editor_testcase_drag.png)
+![Drag&Drop TestCase](./img/rvl_editor_testcase_drag.png)
 
 However, if you hold the ++shift++ key while performing the same action, the same call is created with the test alias name (short name) instead:
 
-![Shift+Drag&Drop TestCase](img/rvl_editor_testcase_shift_drag.png)
+![Shift+Drag&Drop TestCase](./img/rvl_editor_testcase_shift_drag.png)
 
 Short names are particularly useful when each test case has a unique name. In such cases, longer naming conventions can be used to differentiate test cases, for example, using `Invoices/Create new Invoice` instead of `Invoices/Create` to avoid collisions with other test cases like `Orders/Create`.
 

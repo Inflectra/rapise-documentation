@@ -1,0 +1,5 @@
+{
+  "Browser": "Selenium - Chrome",
+  "Command Interval": 100,
+  "BaseURL": "http://127.0.0.1:8000"
+}

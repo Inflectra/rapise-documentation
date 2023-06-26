@@ -1,0 +1,26 @@
+{
+  "params": [
+    {
+      "name": "Command Interval",
+      "type": "number",
+      "defaultValue": 100
+    },
+    {
+      "name": "BaseURL",
+      "type": "string",
+      "defaultValue": "http://127.0.0.1:8000"
+    },
+    {
+      "name": "Browser",
+      "defaultValue": "Selenium - Chrome",
+      "type": "browser",
+      "description": "Please, specify browser type to use"
+    }
+  ],
+  "configs": [
+    {
+      "id": "1a44f396",
+      "name": "Default"
+    }
+  ]
+}

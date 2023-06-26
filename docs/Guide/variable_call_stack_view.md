@@ -16,13 +16,13 @@ Double click on a function to go to its definition.
 
 ## Call Stack View Optimization
 
-The view of the call stack depends on the value of the [Optimize Call Stack](options_dialog#debugger) setting. When set to **True**, internal calls used by the Rapise runtime are skipped, resulting in a shorter call stack:
+The view of the call stack depends on the value of the [Optimize Call Stack](options_dialog.md#debugger) setting. When set to **True**, internal calls used by the Rapise runtime are skipped, resulting in a shorter call stack:
 
-![Optimized Call Stack](img/variable_call_stack_view_optimized_call_stack.png)
+![Optimized Call Stack](./img/variable_call_stack_view_optimized_call_stack.png)
 
 When set to **False**, the full call stack is shown, including all internal calls:
 
-![Full Call Stack](img/variable_call_stack_view_full_call_stack.png)
+![Full Call Stack](./img/variable_call_stack_view_full_call_stack.png)
 
 ## See Also
 

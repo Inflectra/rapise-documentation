@@ -14,21 +14,21 @@ There are three ways to maintain additional functions: (1) In `Common.js` (2) In
 
 Preferred way is to have a [testing framework](Frameworks/frameworks.md#managing-common-data) and with shared file. Its default name `Common.js` although you may have other files marked with `shared` tag and thus being automatically loaded during playback and shown in the shared node.
 
-![Common.js](img/defining_functions_commonjs.png)
+![Common.js](./img/defining_functions_commonjs.png)
 
 ### In User.js
 
 It is recommended to put test case specific functions into `User.js` file available in any test from its creation (in most cases it is not needed and `Common.js` is preferred:
 
-![User.js from toolbar](img/defining_functions_userjs_toolbar.png)
+![User.js from toolbar](./img/defining_functions_userjs_toolbar.png)
 
 This file is automatically attached into every script. All variables and functions defined in it may be used in the test. User-defined functions are also available under the **Functions** node in the Object Tree:
 
-![Functions](img/defining_functions_user_function.png)
+![Functions](./img/defining_functions_user_function.png)
 
 You may also open `User.js` from the [Files Tree](test_files_dialog.md):
 
-![User.js files](img/defining_functions_files_userjs.png)
+![User.js files](./img/defining_functions_files_userjs.png)
 
 ## In an External File
 

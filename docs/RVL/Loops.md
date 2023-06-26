@@ -27,7 +27,7 @@ The loop goes through either the map rows or through the map columns depending o
 
 
 ### Loop Variable
-![Variable Loop](img/Loops_Variable.png)
+![Variable Loop](./img/Loops_Variable.png)
 
 *Flow*| *Type*| *Object*   | *Action*   | *ParamName* | *ParamType*| *ParamValue*
 :--   |:--     |:--         |:--         |:--          |:--         |:--
@@ -48,6 +48,6 @@ Where:
 
 ### Loop Condition
 
-![Loop with Condition](img/Loops_Condition.png)
+![Loop with Condition](./img/Loops_Condition.png)
 
 Loop repeats while condition is satisfied (i.e. `while(someCondition)`).

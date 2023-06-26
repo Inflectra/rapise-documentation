@@ -18,7 +18,7 @@ And you will benefit from **Git** if it is already used in your project, or you 
 
 Having **Git** means having one more node on the diagram:
 
-![Git Integration](img/git_integration_overview.png)
+![Git Integration](./img/git_integration_overview.png)
 
 In addition to Rapise used for test development and SpiraTeam used for test management, we have a **Git Repository** used for source version control.
 
@@ -38,7 +38,7 @@ All standard Git operations, such as **commit**, **fetch**, **pull** and **push*
 
 When using **Save to Spira** button, Rapise checks if current test is stored within the **Git** repository folder structure. And, if existing repository has been identified, the following prompt is shown:
 
-![Git Prompt](img/git_integration_existing_repository.png){width="406px"}
+![Git Prompt](./img/git_integration_existing_repository.png){width="406px"}
 
 This means that Rapise detected that folder containing the test is within the `.git` repository structure. And it suggests to keep your test files in **Git** and only put a link into the Spira Test Case.
 
@@ -46,36 +46,36 @@ This means that Rapise detected that folder containing the test is within the `.
 
 When Test Case is Saved to Spira in a **standard** manner, it shows the folder that is created in Spira Documents:
 
-![Doc Folder](img/git_integration_documents_folder.png){width="570px"}
+![Doc Folder](./img/git_integration_documents_folder.png){width="570px"}
 
 After saving, the folder will contain test file versions:
 
-![Doc Files](img/git_integration_documents_files.png){width="876px"}
+![Doc Files](./img/git_integration_documents_files.png){width="876px"}
 
 And the test case will refer to an `.sstest` document within this folder:
 
-![TC Link](img/git_integration_spira_tc.png){width="577px"}
+![TC Link](./img/git_integration_spira_tc.png){width="577px"}
 
 !!! important
     Rapise 7 and lower mirrors folder structure of a test. If there are sub-tests then corresponding sub-folders are created in Documents of Spira.  
 
     Rapise 8.0+ creates plain structure. All files are stored within the main folder of a test. This type of repository increases saving/loading speed.
 
-    ![](img/git_integration_spira_plain_structure.png){width="525px"}
+    ![](./img/git_integration_spira_plain_structure.png){width="525px"}
 
 ### How It is Stored in Git
 
 When the test stays in **Git** then a folder in Spira is also created (in pre Rapise 8.0 the root folder is used):
 
-![](img/git_integration_git_spira_folder.png){width="570px"}
+![](./img/git_integration_git_spira_folder.png){width="570px"}
 
 Spira Documents section contains only one item - a link to a local file starting with `%GITROOT%`:
 
-![TC Link Git Doc](img/git_integration_doc_link.png){width="809px"}
+![TC Link Git Doc](./img/git_integration_doc_link.png){width="809px"}
 
 And the Test Case uses that link:
 
-![TC Link Git](img/git_integration_git_tc.png){width="571px"}
+![TC Link Git](./img/git_integration_git_tc.png){width="571px"}
 
 This means that to access this file, there should be an environment variable `%GITROOT%` pointing to the root of the local repository containing the test.
 
@@ -147,11 +147,11 @@ This is the recommended and most convenient way. It is described in [Spira Dashb
 !!! important "Rapise 8.0+"
     If you have Rapise 8.0+ you may set Git properties for any test set without creating custom properties. You may do it in [Spira Dashboard](spira_dashboard_2.md) in Test Sets view:
 
-    ![](img/git_integration_git_custom_properties.png){width="832px"}
+    ![](./img/git_integration_git_custom_properties.png){width="832px"}
 
 In this case, you need to add custom fields to the Test Set definition in **Spira**:
 
-![Spira TS Fields](img/git_integration_git_tsprops.png)
+![Spira TS Fields](./img/git_integration_git_tsprops.png)
 
 - **GitUrl** - Git remote repository URL. I.e. `https://github.com/Inflectra/rapise-samples`.
 - **GitUser** - optional. Needed when repository is protected and requires an authentication.

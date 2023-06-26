@@ -1,6 +1,6 @@
 # Tests and Sub-Tests
 
-> Please note that the concept of Sub-Tests has been deprecated since Rapise 8. We recommend using [Testing Frameworks](/Guide/Frameworks/frameworks) as a seamless and natural approach to organizing your tests.
+> Please note that the concept of Sub-Tests has been deprecated since Rapise 8. We recommend using [Testing Frameworks](./Frameworks/frameworks.md) as a seamless and natural approach to organizing your tests.
 
 The concept of Sub-Test provides a flexible and organized approach to working with tests. By utilizing sub-tests, you can achieve the following objectives:
 
@@ -79,7 +79,7 @@ Sub-test properties are available from the `Tag` property in the **Properties** 
 
 The following options are available in the context menu for each of the sub-tests:
 
-![](../Guide/img/tests_and_sub_tests6.png)
+![](./img/tests_and_sub_tests6.png)
 
 - **Play**: Execute selected sub-test
 - **Record**: Start recording into selected sub-test

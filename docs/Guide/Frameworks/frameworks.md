@@ -43,11 +43,11 @@ Here is an overview of the key features provided by the testing frameworks in Ra
 
 When creating Test Cases, you have the option to define groups for them:
 
-![Create Test Case](img/create_test_case.png)
+![Create Test Case](./img/create_test_case.png)
 
 Alternatively, you can move the test case to a different folder later to regroup it:
 
-![Move Test Case](img/move_test_case.png)
+![Move Test Case](./img/move_test_case.png)
 
 ### Managing Common Data
 
@@ -67,7 +67,7 @@ If you wish to make any file shared, you can locate it in the [Files View](/Guid
 
 For instance, if you tag a file as `User.js`, it will be automatically loaded when any other test case is started:
 
-![Tagging a File as Shared](img/frameworks_tag_file_shared.png)
+![Tagging a File as Shared](./img/frameworks_tag_file_shared.png)
 
 Furthermore, if you tag an arbitrary `Objects.js` file with the `shared` tag, all the objects defined within it will be accessible in any test case.
 
@@ -77,21 +77,21 @@ The objects recorded by the Rapise recorder can be categorized into three types:
 
 1. Test case-specific objects.
 
-2. [Page object](pageobjects)-specific objects.
+2. [Page object](pageobjects.md)-specific objects.
 
 3. Objects that are shared among different parts of the framework.
 
-We recommend avoiding the use of shared objects and instead placing them in a [page object](pageobjects).
+We recommend avoiding the use of shared objects and instead placing them in a [page object](pageobjects.md).
 
 During object recording, the objects are stored in the respective repository based on the recording context:
 
 1. When recording a test case, the recognized objects are added to the repository specific to that test case.
 
-   ![Test Case Objects](img/frameworks_test_case_object.png)
+   ![Test Case Objects](./img/frameworks_test_case_object.png)
 
-2. When recording a page object, the recognized objects are added to the repository specific to that [page object](pageobjects).
+2. When recording a page object, the recognized objects are added to the repository specific to that [page object](pageobjects.md).
 
-   ![PO Objects](img/frameworks_po_objects.png)
+   ![PO Objects](./img/frameworks_po_objects.png)
 
 3. Any of these repositories can be made global by tagging its corresponding `Objects.js` file with the `shared` tag in the [Files View](/Guide/test_files_dialog). For example, if the *AppNavigation* repository is marked as `shared`, any recording or learning performed in the *AppNavigation* repository will automatically update the global object repository.
 
@@ -137,11 +137,11 @@ The testing framework parameters can be divided into two groups:
 
 2. Runtime environment parameters, such as the web browser profile name (`g_browserProfile`), command interval (`g_commandInterval`), stopping the test at the first error, capturing screenshots during the test, etc.
 
-The logical parameters of the test can be configured in the Spira Dashboard on the [parameters](parameters) tab.
+The logical parameters of the test can be configured in the Spira Dashboard on the [parameters](parameters.md) tab.
 
 To set the runtime environment parameters, you can click the button in the `Choose Test Case` to play selector dialog:
 
-![Parameter Button](img/frameworks_param_button.png)
+![Parameter Button](./img/frameworks_param_button.png)
 
 ### Framework Development Workflow
 
@@ -171,11 +171,11 @@ Analyze the implemented test cases to identify common patterns or actions that o
 
 4. Many pages/dialogs in your application have same type of grid and you need to click on the row in such grid time after time.
 
-These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a [Page Object](pageobjects). This object will encapsulate the necessary steps, such as *DoLaunch*, *DoLogin*, and *DoClose* as well as *DoClickRow*. You can then modify your test cases to utilize the new [Page Object](pageobjects), simplifying their structure and enhancing maintainability.
+These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a [Page Object](pageobjects.md). This object will encapsulate the necessary steps, such as *DoLaunch*, *DoLogin*, and *DoClose* as well as *DoClickRow*. You can then modify your test cases to utilize the new [Page Object](pageobjects.md), simplifying their structure and enhancing maintainability.
 
 #### Step Four: Parameters and Configurations
 
-As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The [parameters editor](parameters) can be used to set these parameters, allowing your framework to become more flexible and adaptable.
+As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The [parameters editor](parameters.md) can be used to set these parameters, allowing your framework to become more flexible and adaptable.
 
 #### Step NNNN: What's Next
 
@@ -201,7 +201,7 @@ You can quickly navigate to the definition of any function or Page Object method
 
 Common functions and variables are displayed in the object tree for easy reference:
 
-![Functions and Variables](img/frameworks_global_funcs_and_vars.png)
+![Functions and Variables](./img/frameworks_global_funcs_and_vars.png)
 
 The structure of each RVL file is also visible, allowing you to quickly locate specific lines of code.
 
@@ -227,7 +227,7 @@ We highly recommend using [Spira](/Guide/spiratest_integration) for comprehensiv
 
 When working in a small team of 1-3 members, integrating with [Spira](/Guide/spira_dashboard_2) is an excellent solution. However, for larger teams, a combination of [Spira](/Guide/spira_dashboard_2) and [Git](/Guide/git_integration) may be more suitable.
 
-Since Rapise 8, we have enhanced the integration with [Diff/Merge](diffmerge) tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them together.
+Since Rapise 8, we have enhanced the integration with [Diff/Merge](diffmerge.md) tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them together.
 
 ### Maintenance
 
@@ -255,7 +255,7 @@ Rapise provides several features that facilitate quick and convenient support an
 
 11. Shared object repositories: When a commonly used object's location changes across multiple test cases, it is easier to update it when it is part of a shared repository.
 
-12. [Page Objects](pageobjects) with shared actions: By using Page Objects with shared actions, you can make updates to a single Page Object to resolve issues in multiple test cases that utilize it.
+12. [Page Objects](pageobjects.md) with shared actions: By using Page Objects with shared actions, you can make updates to a single Page Object to resolve issues in multiple test cases that utilize it.
 
 ### Mixed Mode Tests
 
@@ -298,7 +298,7 @@ To create a new testing framework, follow these steps:
 3. Select the folder where you want to create the framework. For now, you can choose to keep it in your working folder. Later, you can link it to Spira (and possibly Git) if needed.
 4. Choose the *primary type of test* for your framework. If your application is web-based, select the Web option. If it is desktop or mobile-based, choose the corresponding option. If your application consists of multiple parts (e.g., web, desktop, some mobile, and API), you can choose any option. The primary type selection is for convenience and can be modified later if necessary.
 
-![New Framework](img/frameworks_create_new_framework.png)
+![New Framework](./img/frameworks_create_new_framework.png)
 
 ### Creating a Test Case
 
@@ -306,17 +306,17 @@ There are two methods to create a new test case:
 
 1. Method 1: Use the main menu option *File/Add To Framework/Test Case*.
 
-   ![New test case main menu](img/frameworks_new_test_case_main_menu.png)
+   ![New test case main menu](./img/frameworks_new_test_case_main_menu.png)
 
 2. Method 2: Use the context menu by right-clicking on the *Test Cases* root node or a test case folder node.
 
-   ![Context menu for root node](img/frameworks_add_test_case_root.png)
+   ![Context menu for root node](./img/frameworks_add_test_case_root.png)
 
-   ![Context menu for folder node](img/frameworks_add_test_case_group.png)
+   ![Context menu for folder node](./img/frameworks_add_test_case_group.png)
 
 After selecting one of these methods, a *Create New Test Case* dialog will appear where you can specify the name and folder for the test case.
 
-![Name and folder](img/frameworks_new_tc_name_and_folder.png)
+![Name and folder](./img/frameworks_new_tc_name_and_folder.png)
 
 #### Test Case Naming
 
@@ -340,25 +340,25 @@ It's important to note that when dragging and dropping a test case into the RVL 
 
 Without pressing Shift key:
 
-![Drag&Drop a Test Case](img/frameworks_drag_drop_test_case.png)
+![Drag&Drop a Test Case](./img/frameworks_drag_drop_test_case.png)
 
 With ++Shift++ key pressed:
 
-![Shift+Drag&Drop a Test Case](img/frameworks_shift_drag_drop_test_case.png)
+![Shift+Drag&Drop a Test Case](./img/frameworks_shift_drag_drop_test_case.png)
 
 ### Renaming Test Cases
 
 To rename a test case in Rapise, you can use the `Rename` option available for each test case. Simply right-click on the test case and select the `Rename` option.
 
-![Rename Test Case](img/frameworks_rename_tc.png)
+![Rename Test Case](./img/frameworks_rename_tc.png)
 
 Renaming a test case will affect how it is presented in the Test Cases tree. It will also change the name by which you can reference the test case when calling it using `RVL.DoPlayTest` by name.
 
 It's important to note that renaming a test case does not change any file or folder names. Therefore, you may notice that the paths to the test case remain the same even after renaming:
 
-![Rename Test Case Example](img/frameworks_rename_tc1.png)
+![Rename Test Case Example](./img/frameworks_rename_tc1.png)
 
-![Rename Test Case Results](img/frameworks_rename_tc_result.png)
+![Rename Test Case Results](./img/frameworks_rename_tc_result.png)
 
 ### Moving Test Cases
 
@@ -366,11 +366,11 @@ To move a test case in Rapise, you have the option to move it into an existing f
 
 The simplest way to move a test case is by using drag and drop. Just click and hold the test case, then drag it to the desired location in the test case tree.
 
-![Move Test Case via Drag&Drop](img/frameworks_move_drag_drop.png)
+![Move Test Case via Drag&Drop](./img/frameworks_move_drag_drop.png)
 
 Alternatively, you can use the context menu to move a test case. Right-click on the test case you want to move and select the *Move* option. From there, you can choose an existing folder or create a new folder to move the test case into.
 
-![Move Test Case via Context Menu](img/frameworks_move_context_menu.png)
+![Move Test Case via Context Menu](./img/frameworks_move_context_menu.png)
 
 ### Importing Test Cases
 
@@ -382,11 +382,11 @@ To import a test case, you have two options:
 
 1. Import into a specific folder: Right-click on the folder where you want to import the test case, then select the "Import Test Case" option from the context menu.
 
-   ![Import Test Case via Context Menu](img/frameworks_import_test_case.png)
+   ![Import Test Case via Context Menu](./img/frameworks_import_test_case.png)
 
 2. Import into the root: Go to the main menu and navigate to *File > Add to Framework > Import External Test Case*. This will import the test case into the root of your framework.
 
-   ![Import Test Case via Main Menu](img/frameworks_import_test_case_main_menu.png)
+   ![Import Test Case via Main Menu](./img/frameworks_import_test_case_main_menu.png)
 
 ### Importing Page Objects / Modules
 
@@ -404,7 +404,7 @@ There are situations where you may need to transfer repository objects between t
 
 2. From the context menu, select the option to launch the Object Manager.
 
-![Launch Object Manager](img/frameworks_launch_object_manager.png)
+![Launch Object Manager](./img/frameworks_launch_object_manager.png)
 
 The Object Manager provides a convenient interface for copying or moving repository objects between different locations within your framework.
 
@@ -418,7 +418,7 @@ In the object tree, you can find the shared functions and variables under the `F
 
 If you need to define a function or variable that is specific to a particular test case, you can do so in the Test Case `User` file. To access the User file, you can either click on *View/User* or use the *User* button on the toolbar:
 
-![Show User File](img/frameworks_show_user.png)
+![Show User File](./img/frameworks_show_user.png)
 
 By defining functions locally in the User file, they will be accessible only within that specific test case.
 
@@ -430,7 +430,7 @@ For example, if you have a test case named `Desktop Calc` that uses desktop tech
 
 ### Recording Test Cases and Page Objects
 
-![Record Button](img/frameworks_record_button.png)
+![Record Button](./img/frameworks_record_button.png)
 
 The behavior of the toolbar's *Record* button depends on the currently selected file. Here's how it behaves in different scenarios:
 
@@ -440,7 +440,7 @@ The behavior of the toolbar's *Record* button depends on the currently selected 
 
 3. If you are editing the code of a Page Object and press *Record*, it will show all test cases and the specific Page Object in the dialog. The Page Object will be pre-selected.
 
-![Record PageObject pre-selected](img/frameworks_record_po_preselected.png)
+![Record PageObject pre-selected](./img/frameworks_record_po_preselected.png)
 
 ### Running a Specific Test Case
 
@@ -450,7 +450,7 @@ To run a whole test case, you have two options:
 
 2. Click on the *Play* icon next to the test case.
 
-![Play Test Case](img/frameworks_play_test_case.png)
+![Play Test Case](./img/frameworks_play_test_case.png)
 
 ### Running a Batch of Test Cases
 
@@ -460,7 +460,7 @@ For local batch execution, you can create another test case that will call the r
 
 In the following example, we have a test case called `!Full - Author Management`. The exclamation mark (!) at the beginning of the name ensures that it is shown first in its folder when sorted. This test case calls other test cases from a specific folder one-by-one. We have added them to the test case using `Shift`+Drag&Drop, so they are called by their full names instead of their paths.
 
-![Full Folder Run Test Case](img/frameworks_full_folder_run.png)
+![Full Folder Run Test Case](./img/frameworks_full_folder_run.png)
 
 A limitation of this approach is that the overall status of the `!Full - Author Management` test case is displayed, but it doesn't reflect the status of the individual test cases it contains (such as `Create New Author`, `Edit Existing Author`, etc.). If you require a batch execution with detailed status and other test-management related features, it is recommended to consider running test sets using [Spira Dashboard](/Guide/spira_dashboard_2). This allows for better tracking of individual test case statuses and provides additional test management capabilities.
 

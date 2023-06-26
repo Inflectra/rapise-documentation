@@ -53,7 +53,7 @@ In the example above, we added a red ellipse, arrow and text to mark the issue t
 
 Finally, **Fail** the Step 6 and click on the **Finish** button.
 
-![Fail Step](img/manual_testing_playback_fail_step.png){width="453px"}
+![Fail Step](./img/manual_testing_playback_fail_step.png){width="453px"}
 
 The results will be posted to [Spira](spiratest_integration.md).
 

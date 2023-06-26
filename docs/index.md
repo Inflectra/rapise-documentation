@@ -2,14 +2,14 @@
 # Rapise Documentation
 
 !!! info "Quick Links"
-    - [Know Your Way Around](/Intro/orientation/)
+    - [Know Your Way Around](./Intro/orientation.md)
     - [Frameworks](./Guide/Frameworks/frameworks.md)
-    - [Web Testing](/web/)
-    - [Desktop Testing](/desktop/)
-    - [Mobile Testing](/mobile/)
-    - [API Testing](/api/)
-    - [Scriptless Testing](/codeless/)
-    - [Microsoft Dynamics Testing](/dynamics/)
+    - [Web Testing](web.md)
+    - [Desktop Testing](desktop.md)
+    - [Mobile Testing](mobile.md)
+    - [API Testing](api.md)
+    - [Scriptless Testing](codeless.md)
+    - [Microsoft Dynamics Testing](dynamics.md)
 
 ### About the Docs
 
@@ -17,10 +17,10 @@ From this page you can reach different parts of the documentation. Use menu at t
 
 ??? info "Top Menu"
     - **User's Guide** explains Rapise UI, features and technologies.
-    - **RVL** describes the [Rapise Visual Language](/Guide/visual_language/) used for codeless test automation.
+    - **RVL** describes the [Rapise Visual Language](./Guide/visual_language.md) used for codeless test automation.
     - **Libraries** contains Object API reference.
     - **Manuals** features selected topics on how to prepare testing environments.
-    - **KB** is a list of [knowledge base](/Manuals/kb/) articles.
+    - **KB** is a list of [knowledge base](./Manuals/kb.md) articles.
     - **Release Notes** provides information about new features and improvements in Rapise releases.
 
 ### UI Test Automation Playground

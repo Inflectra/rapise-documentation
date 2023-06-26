@@ -4,7 +4,7 @@ The parameter selection dialog is used to choose built-in test parameters when r
 
 The parameters displayed in the dialog are a subset of those defined for the overall [test](settings_dialog.md#advanced) configuration.
 
-![Test Param Chooser](img/test_param_chooser_dialog.png)
+![Test Param Chooser](./img/test_param_chooser_dialog.png)
 
 ## Usage
 

@@ -23,11 +23,11 @@ Before you can use SpiraTest to manage your Rapise automated tests you need to p
 
 Log in to SpiraTest as a system administrator and go into SpiraTest main Administration page
 
-![Admin Page Gear](img/spiratest_integration_admin_page_gear.png)
+![Admin Page Gear](./img/spiratest_integration_admin_page_gear.png)
 
  and click on the `Test Automation` link under **Integration**.
 
-![Test Automation Link](img/spiratest_integration_integration_test_automation.png)
+![Test Automation Link](./img/spiratest_integration_integration_test_automation.png)
 
 !!! important 
     Depending on when you first installed SpiraTest, you may already have an entry for Rapise, since versions 3.2 and later of SpiraTest automatically ship with a default entry for Rapise.
@@ -48,7 +48,7 @@ Once you have finished, click the `Insert` button and you will be taken back to 
 ## Connecting to SpiraTest
 
 !!! important
-    SpiraTest connection settings are shared between Rapise and [RapiseLauncher](./#client-configuration).
+    SpiraTest connection settings are shared between Rapise and [RapiseLauncher](#client-configuration).
 
 The first thing you need to do is to configure the connection to SpiraTest. Click `Settings > SpiraTest` menu:
 
@@ -178,7 +178,7 @@ Rapise will display the progress dialog while the files are being uploaded to th
 
 If an error occurs during the save, a message box will be displayed, otherwise the dialog box will simply close and the confirmation appear.
 
-![Save OK Confirmation](img/spiratest_integration_saved_to_spira.png)
+![Save OK Confirmation](./img/spiratest_integration_saved_to_spira.png)
 
 ## Loading a Test from SpiraTest
 
@@ -231,7 +231,7 @@ If an error occurs during the download, a message box will be displayed, otherwi
 
 When you have a Rapise test previously loaded from SpiraTest or saved to SpiraTest then continue to use `File > Sync with Spira` to upload local changes and/or download changes made by other team members. Suppose for example, you have some files modified locally and want to update them in the SpiraTest repository. When you initiate `Sync with Spira`, Rapise will show you which files have been modified locally and which have been modified in the SpiraTest repository. The synchronization dialog allows you to choose a desired action for each file: upload, download or keep intact the local version (uncheck the file).
 
-![Synchronization Dialog](img/spiratest_integration_synchronizing_files.png)
+![Synchronization Dialog](./img/spiratest_integration_synchronizing_files.png)
 
 Since Rapise 8.0 it is possible to view differences between server and local file versions, notice `Diff...` buttons.
 
@@ -282,7 +282,7 @@ Often you will have an automated test script that you want to run several times 
 
 You can define the various test parameters for both these cases and have SpiraTest pass the values through to the Rapise automated test. For example, in the Automation (or Test Steps) section of a test case (you may learn how to create one from this [tutorial](./tutorial_record_and_playback.md)), click the `Edit Parameters` link 
 
-![Edit Parameters Button](img/spiratest_integration_edit_parameters.png)
+![Edit Parameters Button](./img/spiratest_integration_edit_parameters.png)
 
 and enter the following information:
 
@@ -383,11 +383,11 @@ Scroll down to the **Test Cases** section:
 
 First, click on the `Add` button in the **Test Cases** tab to bring up the dialog box that lets us add new test cases to the set:
 
-![Add Test Cases](img/spiratest_integration_add_test_cases.png)
+![Add Test Cases](./img/spiratest_integration_add_test_cases.png)
 
 Click on `Root` to expand the tree of folders and choose a folder:
 
-![Choose Test Case Folder](img/spiratest_integration_choose_test_case_folder.png)
+![Choose Test Case Folder](./img/spiratest_integration_choose_test_case_folder.png)
 
 Choose [the parameterized test case](#using-parameterized-test-cases) and click the `Save` button.
 
@@ -477,7 +477,7 @@ At the end of the test, the program will go back and resume scanning for tests t
 ### Client Configuration
 
 !!! important
-    SpiraTest connection settings are shared between [Rapise](./#connecting-to-spiratest) and RapiseLauncher.
+    SpiraTest connection settings are shared between [Rapise](#connecting-to-spiratest) and RapiseLauncher.
 
 By right clicking on the system tray icon and selecting `Configuration`, the application's window will open to the configuration panel.
 

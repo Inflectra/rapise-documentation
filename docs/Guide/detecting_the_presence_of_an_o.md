@@ -19,5 +19,5 @@ else
 
 ## See Also
 
-- [Global.DoWaitFor](/Libraries/Global#dowaitfor)
+- [Global.DoWaitFor](../Libraries/Global.md#dowaitfor)
 - [How-Tos](howtos.md)

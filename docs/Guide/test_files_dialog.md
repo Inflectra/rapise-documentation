@@ -1,6 +1,6 @@
 # Test Files View
 
-![Overview](img/test_files_dialog_overview.png)
+![Overview](./img/test_files_dialog_overview.png)
 
 ## Purpose
 
@@ -23,19 +23,19 @@ Click `View > Show > Test Files` menu.
 
 ## Root Node
 
-Framework root (for [framework](/Guide/Frameworks/frameworks) mode) or test root (for single test mode).
+Framework root (for [framework](./Frameworks/frameworks.md) mode) or test root (for single test mode).
 
 ### Show Files and Folders
 
 Root node features special button that facilitates adding files from disk:
 
-![Show Files Button](img/test_files_dialog_show_files.png)
+![Show Files Button](./img/test_files_dialog_show_files.png)
 
 See [Adding Files for Test Folder](#adding-files-from-test-folder).
 
 ### Root Context Menu
 
-![Root Menu](img/test_files_dialog_context_root.png)
+![Root Menu](./img/test_files_dialog_context_root.png)
 
 * **Reload**: Refreshes objects and test cases.
 * ... same as context menu for [Folder Node](#folder-context-menu)
@@ -49,7 +49,7 @@ Shows contents of the [Folder or Filter Group](#folders-and-filter-groups).
 
 Right click on a folder to see:
 
-![Folder Menu](img/test_files_dialog_context_folder.png)
+![Folder Menu](./img/test_files_dialog_context_folder.png)
 
 * **Reload**: Refresh group contents. Use it for [filter groups](../test_files_dialog/#filtergroup)  ('IsFilterGroup' is set to 'True' in group properties), e.g. for Report group.
 * **Add File(s)**: Add an existing file to the test.
@@ -75,7 +75,7 @@ Shows all files actually added to the test / framework.
 
 Right click on a file to see:
 
-![File Menu](img/test_files_dialog_context_file.png)
+![File Menu](./img/test_files_dialog_context_file.png)
 
 * **Open**: Open the file in Rapise.
 * **Open as Spreadsheet**: Open this file using built in [Spreadsheet editor](./spreadsheet_editor.md). May be used to open `.rvl.xlsx` in spreadsheet editor if you, for example, need to add columns.
@@ -92,7 +92,7 @@ Right click on a file to see:
 
 ### Context Menu for RVL Sheet
 
-![RVL Sheet Menu](img/test_files_dialog_context_rvl_sheet.png)
+![RVL Sheet Menu](./img/test_files_dialog_context_rvl_sheet.png)
 
 * **Play this Sheet**: execute given RVL sheet.
 
@@ -104,7 +104,7 @@ Sub-test nodes represent various types of sub-tests such as Test Cases, Page Obj
 
 Right click on a sub-test to see:
 
-![Sub-Test Menu](img/test_files_dialog_context_subtest.png)
+![Sub-Test Menu](./img/test_files_dialog_context_subtest.png)
 
 See [menu item descriptions](tests_and_sub_tests.md#sub-test-context-menu)
 
@@ -116,7 +116,7 @@ A **Group** is a virtual folder that may or may not have a physical representati
 
 You can configure a filter group or real folder by editing the group properties:
 
-![Folder Properties](img/test_files_dialog_folder_properties.png)
+![Folder Properties](./img/test_files_dialog_folder_properties.png)
 
 * **FilterPath**: The root path used to locate files based on the wildcard (only valid if **IsFilterGroup** is `True` or if it is a **RealFolder**).
 * **FilterWildcard**: The wildcard filter used to match files (only valid if **IsFilterGroup** is `True`).

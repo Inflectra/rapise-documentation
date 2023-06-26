@@ -56,6 +56,6 @@ the following types of web service:
 
 ## Web Services and Testing Frameworks
 
-Starting from Rapise 8, we introduced the framework mode. If API entry points are a part of your testing framework, it is convenient to include them in a [Page Object](/Guide/Frameworks/pageobjects) using JavaScript mode.
+Starting from Rapise 8, we introduced the framework mode. If API entry points are a part of your testing framework, it is convenient to include them in a [Page Object](./Frameworks/pageobjects.md) using JavaScript mode.
 
-Also web service definition files (`*.rest` and `*.soap` as well) may be marked as [shared](/Guide/Frameworks/frameworks#shared-files-and-repositories).
+Also web service definition files (`*.rest` and `*.soap` as well) may be marked as [shared](./Frameworks/frameworks.md#shared-files-and-repositories).

@@ -28,12 +28,12 @@ In RVL Action always refers to an operation performed with object.
 
 Compare object property *InnerText* with expected value:
 
-![Assertion](img/Assertion_GetInnerTextCompare.png)
+![Assertion](./img/Assertion_GetInnerTextCompare.png)
 
 Check if object exists on the screen:
 
-![Assertion object exists](img/Assertion_ObjectExists.png)
+![Assertion object exists](./img/Assertion_ObjectExists.png)
 
 Check if variable `Age` has value '74':
 
-![Assertion check variable value](img/Assertion_CheckVariableValue.png)
+![Assertion check variable value](./img/Assertion_CheckVariableValue.png)

@@ -8,9 +8,9 @@ Often you want to be able to parameterize your Rapise tests to have a common set
 
 ### RVL
 
-The most simple and straight-forward way to accomplish this is to use [RVL Maps](/RVL/Maps).
+The most simple and straight-forward way to accomplish this is to use [RVL Maps](../RVL/Maps.md).
 
-Also, if your goal is to store Configuration data as `.xlsx` then we recommend to simply use [Global.GetProperty](/Libraries/Global#getproperty).
+Also, if your goal is to store Configuration data as `.xlsx` then we recommend to simply use [Global.GetProperty](../Libraries/Global.md#getproperty).
 
 ### JavaScript
 

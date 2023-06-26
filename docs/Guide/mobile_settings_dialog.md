@@ -18,7 +18,7 @@ You can open this dialog box from two places:
 - From the [Mobile Spy](object_spy_mobile.md) tool when you click on the `Edit Profiles` toolbar button.
 - Using ellipsis button in the top right corner of Rapise window:
     
-    ![](img/mobile_settings_dialog_open_profiles_ellipsis.png){width="217px"}
+    ![](./img/mobile_settings_dialog_open_profiles_ellipsis.png){width="217px"}
 
 ## Menu Options
 

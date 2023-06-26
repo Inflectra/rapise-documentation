@@ -6,7 +6,7 @@ In Rapise 7 we completely reworked the Spira Dashboard. It has all new look and 
 
 In Rapise 8 we added the [Framework mode](./Frameworks/frameworks.md) that has a different set of pages in the dashboard:
 
-![Framework Dashboard Overview](img/spira_dashboard_2_framework_overview.png){width="1088px"}
+![Framework Dashboard Overview](./img/spira_dashboard_2_framework_overview.png){width="1088px"}
 
 ## Features
 
@@ -221,17 +221,17 @@ If you did not assign an automation host token to the machine where Rapise is ru
 
 The [Framework mode](./Frameworks/frameworks.md) was introduced in Rapise 8.0 to simplify test case and test set management, as well as the management of parameters, page objects/modules, object repositories, and shared code. The legacy [Single Test mode](../Intro/framework.md) required dealing with `Sub-Tests` and linking tests to `SpiraTest` on a per test case basis, whereas in the `Framework mode`, there is a single button labeled {==Sync with Spira==} that handles everything. When this button is pressed, test cases and test sets are automatically synchronized with `SpiraTest`, and files are uploaded/downloaded.
 
-![Framework View](img/spira_dashboard_2_framework_view.png){width="1350px"}
+![Framework View](./img/spira_dashboard_2_framework_view.png){width="1350px"}
 
 #### Manage Test Sets
 
 The `Framework view` has a dropdown with test sets defined in the current framework.
 
-![Test Set Dropdown](img/spira_dashboard_2_test_set_dropdown.png){width="494px"}
+![Test Set Dropdown](./img/spira_dashboard_2_test_set_dropdown.png){width="494px"}
 
 Use `New Test Set` button (highlighted above) to create new test set. Below the test set dropdown find the controls related to the active/selected test set.
 
-![Test Set Details](img/spira_dashboard_2_test_set_details.png)
+![Test Set Details](./img/spira_dashboard_2_test_set_details.png)
 
 - 1 - dropdown with the names of [defined test set configurations](./Frameworks//parameters.md#configurations),
 - 2 - test set description,
@@ -240,7 +240,7 @@ Use `New Test Set` button (highlighted above) to create new test set. Below the 
 
 `Action` dropdown allows to
 
-![Test Set Action Dropdown](img/spira_dashboard_2_test_set_action_dropdown.png){width="176px"}
+![Test Set Action Dropdown](./img/spira_dashboard_2_test_set_action_dropdown.png){width="176px"}
 
 - Immediately `Execute` the test set on the local machine via [RapiseLauncher](./spiratest_integration.md#using-rapiselauncher).
 - `Schedule` the test set for later execution (one time or recurrent).
@@ -252,11 +252,11 @@ Use `New Test Set` button (highlighted above) to create new test set. Below the 
 
 Below the test set controls find the list of test cases in the current framework. You may switch between viewing all test cases
 
-![All Test Cases Filter](img/spira_dashboard_2_all_test_cases.png){width="739px"}
+![All Test Cases Filter](./img/spira_dashboard_2_all_test_cases.png){width="739px"}
 
  or just included into the active test set.
 
-![Included Test Cases Filter](img/spira_dashboard_2_included_test_cases.png){width="737px"}
+![Included Test Cases Filter](./img/spira_dashboard_2_included_test_cases.png){width="737px"}
 
 In `All Test Cases` view use checkboxes to include/remove a test case. In `Included Test Cases` view use hamburger icons to reorder test cases.
 
@@ -266,7 +266,7 @@ For every test case there is also `Action` dropdown that allows to `Open in Spir
 
 When making changes such as creating, renaming, or deleting a test set, including or removing test cases, or reordering test cases, these actions are performed locally, and to update the `SpiraTest` side, use the `Sync with Spira` button.
 
-![Sync with Spira Button](img/spira_dashboard_2_sync_with_spira_button.png){width="350px"}
+![Sync with Spira Button](./img/spira_dashboard_2_sync_with_spira_button.png){width="350px"}
 
 Additionally, ensure to use this button after creating a new test case in the framework to make it available for inclusion in a test set.
 
@@ -283,13 +283,13 @@ Additionally, ensure to use this button after creating a new test case in the fr
 
 Use `Execute` button to launch selected test set on a local machine via [RapiseLauncher](./spiratest_integration.md#using-rapiselauncher).
 
-![Execute Test Set Button](img/spira_dashboard_2_execute_button.png){width="348px"}
+![Execute Test Set Button](./img/spira_dashboard_2_execute_button.png){width="348px"}
 
 ### Parameters View (Rapise 8.0+)
 
 Just like [Framework View](#framework-view-rapise-80) this view is available in [new frameworks](./Frameworks/frameworks.md) created with Rapise 8.0+. It is used to manage framework parameters and configurations, and described [here](./Frameworks/parameters.md).
 
-![](img/spira_dashboard_2_parameters_view.png){width="802px"}
+![](./img/spira_dashboard_2_parameters_view.png){width="802px"}
 
 ### Dashboard View (legacy)
 

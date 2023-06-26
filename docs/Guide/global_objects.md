@@ -124,13 +124,13 @@ If you want a specific icon for your object then create two `.png` files with di
 
 ## Global Object vs Page Object
 
-When comparing a **Global Object** and a [Page Object](/Guide/Frameworks/pageobjects), the following points should be noted:
+When comparing a **Global Object** and a [Page Object](./Frameworks/pageobjects.md), the following points should be noted:
 
 1. The structure of a Global Object is identical to that of a Page Object in JavaScript mode.
 2. However, a Page Object can have its own object repository and use objects from it.
 3. This includes widgets and API entry points that are available for a Page Object.
-4. A Global Object can be defined in a [custom Library](/Guide/custom_libraries).
-5. A Page Object can only be defined as part of a [testing framework](/Guide/Frameworks/frameworks).
+4. A Global Object can be defined in a [custom Library](custom_libraries.md).
+5. A Page Object can only be defined as part of a [testing framework](./Frameworks/frameworks.md).
 6. It is not possible to import or move a single Global Object, but it is possible to copy the entire Library that contains it.
 7. A Page Object can be imported from one testing framework to another.
 

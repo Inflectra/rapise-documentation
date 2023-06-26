@@ -19,7 +19,7 @@ Once you need to view all breakpoints, while in [Source Editor](source_editor.md
 
 If you need to get rid from all breakpoints, choose `Edit > Remove All Breakpoints`.
 
-![All Breakpoints](img/breakpoints_show_remove_all_breakpoints.png)
+![All Breakpoints](./img/breakpoints_show_remove_all_breakpoints.png)
 
 ## See Also
 

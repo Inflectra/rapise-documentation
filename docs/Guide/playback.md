@@ -15,11 +15,11 @@ You can either run your script from the [Command Line](command_line.md), or you 
 
 3. In [testing framework](Frameworks/frameworks.md) mode you may be prompted to select test case to executed:
 
-    ![Test case to execute](img/playback_prompt_test_case_to_execute.png)
+    ![Test case to execute](./img/playback_prompt_test_case_to_execute.png)
 
 4. Alternatively, you have the option to select a specific test case from the beginning by clicking on the `Play` button next to it in the [object tree](object_tree.md):
 
-    ![Play from object tree](img/playback_play_from_object_tree.png)
+    ![Play from object tree](./img/playback_play_from_object_tree.png)
 
 5. During test execution, Rapise displays an execution monitor dialog box that lets the user see the progress of testing playback. The dialog is only shown during test execution and can be turned off in the [Options](options_dialog.md) dialog.  The following is a screenshot of the test execution monitor.
 

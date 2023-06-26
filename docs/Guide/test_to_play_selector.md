@@ -1,6 +1,6 @@
 # Choose Test Case Dialog
 
-![Test To Play Selector](img/test_to_play_selector_test_case_chooser.png)
+![Test To Play Selector](./img/test_to_play_selector_test_case_chooser.png)
 
 ## Usage
 

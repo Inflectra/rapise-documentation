@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The Create New Test Dialog allows you to create a new Rapise [test case](/Guide/Frameworks/frameworks#test-cases), [testing framework](/Guide/Frameworks/frameworks), or standalone test. You can choose to connect to Spira and store the new test in the central test management system, or you can save the test locally.
+The Create New Test Dialog allows you to create a new Rapise [test case](./Frameworks/frameworks.md#test-cases), [testing framework](./Frameworks/frameworks.md), or standalone test. You can choose to connect to Spira and store the new test in the central test management system, or you can save the test locally.
 
 If the test is intended to be the root of a larger test framework, it is recommended to refer to [KB 371](https://www.inflectra.com/support/knowledgebase/kb371.aspx). for further guidance.
 
@@ -10,11 +10,11 @@ If the test is intended to be the root of a larger test framework, it is recomme
 
 ### Starting a New Testing Framework
 
-Go to `File > Create New > Test Automation Framework` to [create a new testing framework](Frameworks/frameworks#creating-a-new-testing-framework).
+Go to `File > Create New > Test Automation Framework` to [create a new testing framework](./Frameworks/frameworks.md#creating-a-new-testing-framework).
 
 ### Adding a Test Case to a Testing Framework
 
-Refer to the section on [Creating a New Test Case](/Guide/Frameworks/frameworks#creating-a-test-case).
+Refer to the section on [Creating a New Test Case](./Frameworks/frameworks.md#creating-a-test-case).
 
 ## Single Test Mode
 
@@ -26,17 +26,17 @@ Select `File > Create New > New Test`. This will initiate the creation process f
 
 By default Rapise will ask you to save the new test into the [Spira](https://www.inflectra.com/SpiraTest/) test management system:
 
-![Create in Spira 1](img/create_new_test_dialog_spira1.png)
+![Create in Spira 1](./img/create_new_test_dialog_spira1.png)
 
 If you do not plan on using Spira for managing your test scripts (or you are not able to connect when you want to create the test), you can click on the **Create Locally...** to just create the test case [locally](#b-creating-locally). You can always save to Spira later on.
 
 Assuming that you have already [configured the connection to Spira](spiratest_integration.md), first you need to select the project in Spira. That will then display the test case folders and test cases in Spira:
 
-![Create in Spira 2](img/create_new_test_dialog_spira2.png)
+![Create in Spira 2](./img/create_new_test_dialog_spira2.png)
 
 If there is already a test case in Spira that has *not already been linked to Rapise*:
 
-![Create in Spira 3](img/create_new_test_dialog_spira3.png)
+![Create in Spira 3](./img/create_new_test_dialog_spira3.png)
 
 If you want to create a new test case in Spira to use, simply click **New Test Case**:
 
@@ -67,7 +67,7 @@ Once you have created the test, Rapise will ask you to [choose the Scripting lan
 
 If you choose the option to **Create Locally** the following dialog box is displayed:
 
-![Create new test dialog](img/create_new_test_dialog_new_standalone_test.png)
+![Create new test dialog](./img/create_new_test_dialog_new_standalone_test.png)
 
 You need to enter the following information:
 

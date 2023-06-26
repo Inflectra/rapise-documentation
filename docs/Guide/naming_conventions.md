@@ -23,7 +23,7 @@ However, there are two exceptions that can help you hide internal functions or v
 
 2. You can use `/** @private */` and `/** @ignore */` comments to indicate that a function or variable should be treated as private or ignored, respectively.
 
-![Public and Private](img/naming_conventions_private_functions.png)
+![Public and Private](./img/naming_conventions_private_functions.png)
 
 ## Examples
 

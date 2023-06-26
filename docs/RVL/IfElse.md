@@ -92,9 +92,9 @@ And there might also be an `Else` block in the end:
 
 Check if `Log In` link available. If so, do login:
 
-![If Check Object Exists](img/IfElse_CheckLogin.png)
+![If Check Object Exists](./img/IfElse_CheckLogin.png)
 
 
 Check if we use old version of OS and assign a variable `OldWindows` accordingly:
 
-![If Check OS Version](img/IfElse_CheckOldOs.png)
+![If Check OS Version](./img/IfElse_CheckOldOs.png)

@@ -52,7 +52,7 @@ Several functions of the [RVL Object](../Libraries/RVL.md) support variable para
 
 Custom parameters added by user manually, by specifying row type `Param` and assigning any required param name.
 
-![Extra Parameters](img/Params_ExtraParams.png)
+![Extra Parameters](./img/Params_ExtraParams.png)
 
 There my be as many extra parameters as needed.
 
@@ -96,4 +96,4 @@ This allows saving space while keeping same readability. See also [short conditi
 
 If map is defined in the script it may be used directly as a parameter. *ParamType* should be set to Map Name and *ParamValue* is a column (or row) name:
 
-![Map Param](img/Params_MapValue.png)
+![Map Param](./img/Params_MapValue.png)

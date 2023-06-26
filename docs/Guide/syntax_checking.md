@@ -18,7 +18,7 @@ We have a typo here. We used `}` instead of `)`. Once the error is corrected, th
 
 ## Custom JS Validation and Formatting
 
-To enforce your own rules for JavaScript validation and formatting, you can utilize linters or JS beautifiers. This can be achieved by applying the [OnTextSaved](/Guide/source_editor#ontextsavedcmd) callback for your framework or for the entire PC.
+To enforce your own rules for JavaScript validation and formatting, you can utilize linters or JS beautifiers. This can be achieved by applying the [OnTextSaved](source_editor.md#ontextsavedcmd) callback for your framework or for the entire PC.
 
 For an example of a customizable JS beautifier and formatter, you can refer to [here](https://github.com/Inflectra/rapise-powerpack/tree/master/JSValidateAndBeautify) resource. It provides a starting point that can be further customized and configured according to your specific needs.
 

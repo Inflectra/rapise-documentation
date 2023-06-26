@@ -220,7 +220,7 @@ Click on the `Enter Activation Code` button and then follow the process describe
 
 Without a valid license Rapise will continue to work but without **Recording** and **Playback** functionality.
 
-![](img/Rapise_Installation_Guide_no_license.png){width="382px"}
+![](./img/Rapise_Installation_Guide_no_license.png){width="382px"}
 
 #### Transferring to Another Computer
 

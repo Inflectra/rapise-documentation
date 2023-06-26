@@ -4,9 +4,9 @@ With Rapise you can record and playback a test without writing a single line of 
 
 In Rapise you achieve codeless automation via Rapise Visual Language (RVL).
 
-- [About RVL](/Guide/visual_language/)
-- [Why RVL?](/RVL/Overview/)
-- [RVL Reference](/Guide/rvl_editor/)
+- [About RVL](./Guide/visual_language.md)
+- [Why RVL?](./RVL/Overview.md)
+- [RVL Reference](./Guide/rvl_editor.md)
 
 ## Webinars
 

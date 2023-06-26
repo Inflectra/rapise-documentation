@@ -6,7 +6,7 @@
 
 To view and edit files.  This includes the following file types:
 
-* [RVL](/RVL/Overview) (`.rvl.xlsx`) files open in the [RVL Editor](/Guide/rvl_editor)
+* [RVL](../RVL/Overview.md) (`.rvl.xlsx`) files open in the [RVL Editor](rvl_editor.md)
 
 * JavaScript (`.js`) automated [test script files](source_editor.md).
 

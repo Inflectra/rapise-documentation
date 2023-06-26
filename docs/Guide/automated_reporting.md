@@ -27,11 +27,11 @@ See also [assertions](assertions.md) for more information about possible type of
 
 Whenever the test is executed using the [RapiseLauncher](spiratest_integration.md#using-rapiselauncher) its results are uploaded to the [SpiraTest](spiratest_integration.md). The set of columns displayed by the [Test Run Details](https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/#test-run-steps) view differs from Rapise Report Viewer, so the following mapping occurs:
 
-![Spira Column Mapping](img/automated_reporting_spiracolumnmapping.png)
+![Spira Column Mapping](./img/automated_reporting_spiracolumnmapping.png)
 
 There is always a source `.trp` file attached to the test run, you may find it to in the test run **Attachments** tab:
 
-![TestRun Attachments](img/automated_reporting_spiratrattachments.png)
+![TestRun Attachments](./img/automated_reporting_spiratrattachments.png)
 
 So you may download it and open using Rapise to see the full featured automated test report.
 
@@ -58,7 +58,7 @@ Whenever one runs a test, the report will be stored in the following formats:
 1. `.trp` - default Rapise test report format. Contains all information, status and images. Rapise displays it using built in [Report Viewer](report_viewer.md).
 2. `.tap` - pure text, **Test Anything Protocol** [formatted](https://testanything.org/) output. Usually saved as `last.tap`. It is a simplest way for integrating the test into external/custom execution pipelines.
 3. `index.html` and `imageNNN.png` - flow output. It is saved into `<test folder>\Reports\<Date_Time>\` folder:
-     ![Flow Index](img/automated_reporting_flowindexhtml.png)
+     ![Flow Index](./img/automated_reporting_flowindexhtml.png)
 
 ## Export Report
 
@@ -68,7 +68,7 @@ Report may be exported as `.xls`, `.pdf`, `.xps` or `.html` using the [Report](m
 
 **HTML** export supports a number of templates. So if you do `Report/Export as HTML` you then have to specify the export format using the following dialog:
 
-![Export To Html Dialog](img/automated_reporting_exporthtml.png)
+![Export To Html Dialog](./img/automated_reporting_exporthtml.png)
 
 **Report File** - source `.trp` to be used for export.
 
@@ -90,7 +90,7 @@ This type of export may also be done from **JavaScript** code.
     ldr.ExportAsHtml("C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt", "FullReport.html");
 ```
 
-If you want to perform post-processing of the report for a specific test case, you can combine the code with the [SeSOnTestReportReady](/Guide/understanding_the_script#sesontestreportready) event. This event allows you to execute custom code when the test report is ready for a given test case.
+If you want to perform post-processing of the report for a specific test case, you can combine the code with the [SeSOnTestReportReady](understanding_the_script.md#sesontestreportready) event. This event allows you to execute custom code when the test report is ready for a given test case.
 
 ## Column Grouping
 

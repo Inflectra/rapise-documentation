@@ -251,11 +251,11 @@ Callbacks are defined in the REST editor.
 
 Request-specific callback may be defined in the properties editor when action is  selected:
 
-![Callbacks](img/rest_web_service_action_callbacks.png)
+![Callbacks](./img/rest_web_service_action_callbacks.png)
 
 When callback is required, it may be either selected from the dropdown or generated using `<Add New...>` option:
 
-![Callbacks Add New](img/rest_web_service_action_callbacks_add_new.png)
+![Callbacks Add New](./img/rest_web_service_action_callbacks_add_new.png)
 
 Callback function always created in the `User.js` of the current test.
 
@@ -306,7 +306,7 @@ Sometimes it is more convenient to define one common callback that will be execu
 
 Common callbacks are defined in the property window for the whole endpoint.
 
-![Common Callbacks](img/rest_web_service_common_callbacks.png)
+![Common Callbacks](./img/rest_web_service_common_callbacks.png)
 
 When both common callback and entry callback are defined, both are executed in the following order:
 
@@ -324,7 +324,7 @@ If given request has no explicit callback defined and no common callback defined
 
 Once request has a callback and it is executed from the Editor, debugger session starts and keeps running. You may see it by presence of debugger panel:
 
-![Debug Panel](img/rest_web_service_debug_panel.png)
+![Debug Panel](./img/rest_web_service_debug_panel.png)
 
 All variables and session parameters assigned in the callbacks stay active while debugger panel is running.
 

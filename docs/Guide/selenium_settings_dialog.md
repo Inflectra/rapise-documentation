@@ -30,13 +30,13 @@ Rapise version 6.3+ enables creation of profiles local to a test. It allows stor
 
 To create a local profile just press `Duplicate` for one of global profiles and set `Local` checkbox before clicking `OK` button. Global and Local profile may have same name, in this case Local profile is used for execution.
 
-![Create Local Selenium Profile](img/selenium_settings_dialog_create_local_selenium_profile.png)
+![Create Local Selenium Profile](./img/selenium_settings_dialog_create_local_selenium_profile.png)
 
 If a test contains local Selenium profiles they can be seen in the dropdowns.
 
-![Playback Profiles](img/selenium_settings_dialog_select_local_selenium_profile.png)
+![Playback Profiles](./img/selenium_settings_dialog_select_local_selenium_profile.png)
 
-![](img/selenium_settings_dialog_selenium_profile_list_local_global.png)
+![](./img/selenium_settings_dialog_selenium_profile_list_local_global.png)
 
 Local Selenium profiles are stored inside `<Test Root>\Profiles\SeleniumProfiles` folder.
 

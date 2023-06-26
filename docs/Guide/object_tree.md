@@ -1,10 +1,10 @@
 # Object Tree View
 
-![Object Tree View](img/object_tree_view.png)
+![Object Tree View](./img/object_tree_view.png){width="241px"}
 
 ## Purpose
 
-The purpose of the Object Tree View varies depending on whether the current context is a standalone test or a [testing framework](/Guide/Frameworks/frameworks).
+The purpose of the Object Tree View varies depending on whether the current context is a standalone test or a [testing framework](./Frameworks/frameworks.md).
 
 ## How to Open
 
@@ -16,7 +16,7 @@ The **Objects** dialog is a component of the [Default Layout](restoring_the_defa
 
 Object Tree has build in filtering and display mode switches.
 
-![Filter](./img/object_tree_filter.png)
+![Filter](./img/object_tree_filter.png){width="241px"}
 
 - *Filter* - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box.
 - Display modes switch:
@@ -26,30 +26,30 @@ Object Tree has build in filtering and display mode switches.
 
 ## Testing Framework Mode
 
-When a [Testing Framework](/Guide/Frameworks/frameworks) is currently open, the Tree View includes additional nodes.
+When a [Testing Framework](./Frameworks/frameworks.md) is currently open, the Tree View includes additional nodes.
 
 ### Test Cases Node
 
-The node represents framework [test cases](/Guide/Frameworks/frameworks#test-cases).
+The node represents framework [test cases](./Frameworks/frameworks.md#test-cases).
 
 #### Test Cases Root Context Menu
 
-![Test Cases Root](img/object_tree_context_testcases.png)
+![Test Cases Root](./img/object_tree_context_testcases.png){width="232px"}
 
-- **Create Test Case** - Add new [test case](/Guide/Frameworks/frameworks#test-cases) to the root.
-- **Import Test Case** - [Import Test Case](/Guide/Frameworks/frameworks#importing-test-cases) to the root.
+- **Create Test Case** - Add new [test case](./Frameworks/frameworks.md#test-cases) to the root.
+- **Import Test Case** - [Import Test Case](./Frameworks/frameworks.md#importing-test-cases) to the root.
 - **Reload** - Reload all test cases (may be needed if test were synchronized with remote repository).
 
 #### Test Cases Group Context Menu
 
-![Test Cases Group](img/object_tree_context_testcasegroup.png)
+![Test Cases Group](./img/object_tree_context_testcasegroup.png){width="230px"}
 
-- **Create Test Case** - Add new [test case](/Guide/Frameworks/frameworks#test-cases) to this group.
-- **Import Test Case** - [Import Test Case](/Guide/Frameworks/frameworks#importing-test-cases) to this group.
+- **Create Test Case** - Add new [test case](./Frameworks/frameworks.md#test-cases) to this group.
+- **Import Test Case** - [Import Test Case](./Frameworks/frameworks.md#importing-test-cases) to this group.
 
 #### Test Case Context Menu
 
-![Test Case](img/object_tree_context_tc.png)
+![Test Case](./img/object_tree_context_tc.png){width="278px"}
 
 - **Play** - Execute this test case.
 - **Record** - Start recorder for this test case.
@@ -64,47 +64,47 @@ The node represents framework [test cases](/Guide/Frameworks/frameworks#test-cas
 
 When you right-click with the ++shift++ key pressed, the context menu will have two additional options:
 
-![Test Case Tags](img/object_tree_tc_tags.png)
+![Test Case Tags](./img/object_tree_tc_tags.png){width="166px"}
 
 - **draft**: Toggles the `draft` state of the test case. This is useful for marking a test case as incomplete.
-- **template**: Marks the test case as a template. Template test cases are not displayed in the [Spira Dashboard](/Guide/spira_dashboard_2). It is assumed that templates will be used to create test cases using the **Clone** functionality.
+- **template**: Marks the test case as a template. Template test cases are not displayed in the [Spira Dashboard](spira_dashboard_2.md). It is assumed that templates will be used to create test cases using the **Clone** functionality.
 
 The `draft` and `template` states affect the display of the context menu:
 
 Default:
 
-![Test Case Default](img/object_tree_tc_default.png)
+![Test Case Default](./img/object_tree_tc_default.png){width="192px"}
 
 Draft:
 
-![Test Case Draft](img/object_tree_tc_draft.png)
+![Test Case Draft](./img/object_tree_tc_draft.png){width="192px"}
 
 Template:
 
-![Test Case Template](img/object_tree_tc_template.png)
+![Test Case Template](./img/object_tree_tc_template.png){width="192px"}
 
 #### Test Case Object Repository Context Menu
 
-![Objects](img/object_tree_context_tc_objects.png)
+![Objects](./img/object_tree_context_tc_objects.png){width="251px"}
 
 - **Reload** - Re-read information from this Object Repository.
 - **Object Manager** - Opens the [Object Manager](object_manager.md).
 
 #### Test Case RVL Sheet Context Menu
 
-![Sheet](img/object_tree_context_tc_sheet.png)
+![Sheet](./img/object_tree_context_tc_sheet.png){width="225px"}
 
 - **Play this Sheet** - Execute given RVL Sheet.
 
 ### User Functions and Variables
 
-Rapise scans available shared JavaScript files and extracts information about global user defined [functions and variables](global_variables) into these nodes.
+Rapise scans available shared JavaScript files and extracts information about global user defined [functions and variables](global_variables.md) into these nodes.
 
 #### User Functions/Variables Context Menu
 
-![Functions](img/object_tree_context_functions.png)
+![Functions](./img/object_tree_context_functions.png){width="171px"}
 
-![Variables](img/object_tree_context_variables.png)
+![Variables](./img/object_tree_context_variables.png){width="171px"}
 
 - **Reload** - Re-read information about known Functions/Variables.
 
@@ -114,7 +114,7 @@ The node displays shared assets, including common JavaScript files (`*.js`), Obj
 
 #### Shared Node Context Menu
 
-![Shared](img/object_tree_context_shared.png)
+![Shared](./img/object_tree_context_shared.png){width="235px"}
 
 - **New JavaScript File...** - create and add a `.js` file.
 - **New Spreadsheet...** - create and add a `.xlsx` file.
@@ -124,21 +124,21 @@ The node displays shared assets, including common JavaScript files (`*.js`), Obj
 
 ### Modules / Page Objects Node
 
-The node contains [Module / Page Objects](/Guide/Frameworks/pageobjects) defined in this testing framework.
+The node contains [Module / Page Objects](./Frameworks/pageobjects.md) defined in this testing framework.
 
 #### Page Objects Context Menu
 
-![Page Objects](img/object_tree_context_pageobjects.png)
+![Page Objects](./img/object_tree_context_pageobjects.png){width="257px"}
 
-- **Create Module / Page Object** - add new [Module / Page Object](/Guide/Frameworks/pageobjects).
-- **Import Module / Page Object** - import existing [Module / Page Object](/Guide/Frameworks/pageobjects) from another testing framework.
+- **Create Module / Page Object** - add new [Module / Page Object](./Frameworks/pageobjects.md).
+- **Import Module / Page Object** - import existing [Module / Page Object](./Frameworks/pageobjects.md) from another testing framework.
 
-![Page Object](img/object_tree_context_pageobject.png)
+![Page Object](./img/object_tree_context_pageobject.png){width="206px"}
 
 - **Reload** - refresh information about this module.
 - **Delete** - remove this module.
 
-![Page Object Action](img/object_tree_context_pageobject_action.png)
+![Page Object Action](./img/object_tree_context_pageobject_action.png){width="254px"}
 
 - **Invoke &lt;Some Action&gt;** - play this action alone.
 
@@ -148,7 +148,7 @@ The node contains [Module / Page Objects](/Guide/Frameworks/pageobjects) defined
 
 Right click the **Object Tree** node to see:
 
-![Object Tree Root](img/object_tree_context_singleroot.png)
+![Object Tree Root](./img/object_tree_context_singleroot.png){width="271px"}
 
 - **Reload** - checks for new objects to display.
 - **Object Manager** - run an [Object Manager](object_manager.md).
@@ -157,7 +157,7 @@ Right click the **Object Tree** node to see:
 
 Right click the **Window** node to see:
 
-![Object Window](img/object_tree_context_singlewindow.png)
+![Object Window](./img/object_tree_context_singlewindow.png){width="192px"}
 
 - **Remove** remove window and all contained objects.
 
@@ -165,7 +165,7 @@ Right click the **Window** node to see:
 
 Right click on an object in the **Object Tree** dialog to see:
 
-![object tree, context menu 2](img/object_tree_context_object.png)
+![object tree, context menu 2](./img/object_tree_context_object.png){width="222px"}
 
 - **Flash** opens the application/url where the object is located.  A frame will blink around the object to show you where it is on the page.
 - **Re-Learn** will open up the [Recorder](recording.md), allowing you to re-learn the object. This is useful if the AUT has changed and the object definition will no longer correctly locate the object.

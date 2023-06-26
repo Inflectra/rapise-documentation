@@ -2,7 +2,7 @@
 
 RVL script is a spreadsheet containing set of 7 columns in fixed order:
 
-![Columns](img/Columns.png)
+![Columns](./img/Columns.png)
 
 ## Default Columns
 
@@ -55,11 +55,11 @@ By default RVL always displays column `H`. It is sometimes useful (to store temp
 
 One may show more columns. To do this open the file (i.e. `Main.rvl.xlsx`) in the spreadsheet editor or Excel and define some values in columns `I`, `J` etc respectively:
 
-![Excel Columns](img/CustomColumnsExcel.png)
+![Excel Columns](./img/CustomColumnsExcel.png)
 
 Now if you re-open this document in RVL these columns will also be displayed:
 
-![Excel Columns](img/CustomColumnsRVL.png)
+![Excel Columns](./img/CustomColumnsRVL.png)
 
 The usage of this columns is up to you. You may use them just for information or make them 'live' by assigning custom actions as will be described in the next section.
 

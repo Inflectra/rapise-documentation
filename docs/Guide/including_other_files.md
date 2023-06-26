@@ -23,7 +23,7 @@ It is recommended to put common functions and variables into [Common.js](Framewo
 
 Additionally, you have the option to tag your external `.js` file as `shared`, which will automatically load it for each test run. This eliminates the need for an include statement.
 
-![Tag as Shared](img/including_other_files_tag_as_shared.png)
+![Tag as Shared](./img/including_other_files_tag_as_shared.png)
 
 ## See Also
 

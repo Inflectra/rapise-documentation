@@ -13,7 +13,7 @@ This section assumes that you have already installed and configured all of the n
 
 To begin the actual mobile testing, [create a new test](create_a_new_test.md), using the `File > Create New > New Test` option in Rapise. Make sure you choose the mobile methodology option **Mobile**:
 
-![new test mobile ios](img/mobile_testing_ios_new_test_mobile_ios.png){width="633px"}
+![new test mobile ios](./img/mobile_testing_ios_new_test_mobile_ios.png){width="633px"}
 
 Once you have entered the name for the new test (with the mobile methodology selected) you will be asked to choose the mobile profile.
 Rapise ships with several default profiles, for now select the one that is closer to the device you want to test (we recommend the **iOS App Simulator** generic profile):
@@ -26,7 +26,7 @@ When you click the `OK` button, Rapise will ask you to choose the Scripting Lang
 
 Please choose the **Rapise Visual Language (RVL).** Rapise will then create a new mobile test with the **iOS App Simulator** profile selected.
 
-![](img/mobile_testing_ios_ios_simulator_empty_rvl.png){width="884px"}
+![](./img/mobile_testing_ios_ios_simulator_empty_rvl.png){width="884px"}
 
 Now you need to modify the profile so that it correctly matches the type of device you are testing and also so that it correctly points to the **Appium** server that you are using to host the mobile devices. Click `...` button in the top right corner of Rapise window
 

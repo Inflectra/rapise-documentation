@@ -1,0 +1,33 @@
+{
+	"testsets": [
+		{
+			"id": "462b6055",
+			"name": "Default",
+			"description": "Default test set",
+			"configId": "1a44f396",
+			"testcases": []
+		}
+	],
+	"pageobjects": {},
+	"testcases": [
+		{
+			"name": "CheckAllLinks",
+			"alias": "CheckAllLinks",
+			"vpath": "",
+			"sstest": "%WORKDIR%TestCases\\CheckAllLinks\\Test.sstest",
+			"tags": "testcase",
+			"id": "O4ZT06MC",
+			"rep": "%WORKDIR%TestCases\\CheckAllLinks\\Objects.js",
+			"user": "%WORKDIR%TestCases\\CheckAllLinks\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "EA6686C82F6149DA1B38C23ED6F5519A19726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF438121FEAB895F73224BB21BCC9F92F8A8"
+		}
+	],
+	"shared": [
+		{
+			"js": "%WORKDIR%.\\Common.js"
+		}
+	]
+}
