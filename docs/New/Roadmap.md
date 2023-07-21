@@ -8,25 +8,16 @@
     If you have any feedback or suggestions regarding this roadmap, please email us at support@inflectra.com.
 
 
-## Version 8.0 (Q2 2023)
+## Version 8.1 (Q4 2023)
 
-- **Framework 2.0**
-    - Improved framework structure with test cases, test case folders, shared modules/page objects and scripts
-    - Import, rename, move test cases in Object Tree
-    - Simplified way of defining parameters and configurations
-    - Easy way of defining test sets
-    - Put whole framework into Spira with a single button click: automatic creation of test cases and test sets
-    - Fast way of storing framework files in Spira
-    - **PageObject** pattern support. Allow to define global objects with own object repository re-usable across test cases. Also may be used to cover API entry points.
-    - Include **RVLMerge** into setup, RVLMerge is used to see the differences between RVL files
+- Run multiple test cases from Rapise (e.g. play all from a folder or play selected test cases).
+- Incorporate Chrome for Testing into Web Testing workflow.
+- Enable JS Formatter/Beautifier for JS Editor to simplify code formatting.
 
-## Q3 and Q4 2023
+## Version 8.2 (Q2 2024)
 
-- **SAP desktop** GUI support
-- **GutHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow
+- **GutHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow.
 - **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
-- Hierarchical test execution status report
-- Enable JS Formatter/Beautifier for JS Editor to simplify code formatting
 - *Proxy setting for JMeter Configuration* - make it easier to record Rapise API tests with JMeter.
 
 ## 2024
@@ -54,6 +45,7 @@ We will continue to work on deep integration between Rapise, Spira and Git. The 
 - **Simplified installation/upgrade**: Do not require to uninstall Rapise before upgrade.
 - **Dark mode**: Someday, really :)
 - Custom **Start Page**. Allow test framework or test to have custom start page that may interact with test (re-build test structure, display graph, modify test) and show some application-specific information regarding test.
+- Mobile: mirror device screen during recording/playback.
 
 ### Integrations
 
@@ -62,3 +54,8 @@ We will continue to work on deep integration between Rapise, Spira and Git. The 
 - **Visual Studio Code integration**: Code helper for Rapise objects/actions. Start recording/playback from VS Code.
 - **Azure Test Plans integration**: Linking to a test case in an Azure Test Plan.
 
+### Technologies
+
+- **SAP desktop** GUI support
+- **Flutter** framework support
+- Connect to embedded mobile browser controls for test recording/playback, e.g. to effectively work with Ionic framework applications.
