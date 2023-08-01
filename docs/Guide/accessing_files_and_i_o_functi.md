@@ -58,25 +58,25 @@ Alternatively you can can access the file system using the `FileSystemObject`.
 function Test()
 {
     //IOMode constants
-    var IOMode\_ForReading = 1;
-    var IOMode\_ForWriting = 2;
-    var IOMode\_ForAppending = 8;
+    var IOMode_ForReading = 1;
+    var IOMode_ForWriting = 2;
+    var IOMode_ForAppending = 8;
     //var Format constants
-    var IOFormat\_ASCII = 0;
-    var IOFormat\_Unicode = -1;
+    var IOFormat_ASCII = 0;
+    var IOFormat_Unicode = -1;
     //This sample demonstrates how to manipulate the Windows file system using Rapise
     //We shall open a text file for writing in this simple example
     var fso = new ActiveXObject('Scripting.FileSystemObject');
-    var ts = fso.CreateTextFile('C:\\\\Temp\\\\MyTestFile.txt');
+    var ts = fso.CreateTextFile('C:\\Temp\\MyTestFile.txt');
     ts.Close();
-    var file = fso.GetFile('C:\\\\Temp\\\\MyTestFile.txt');
-    ts = file.OpenAsTextStream(IOMode\_ForWriting, IOFormat\_Unicode);
+    var file = fso.GetFile('C:\\Temp\\MyTestFile.txt');
+    ts = file.OpenAsTextStream(IOMode_ForWriting, IOFormat_Unicode);
     ts.WriteLine('Hello World!');
     ts.Close();
     Tester.Message('Wrote File');
     //Now read this file back
-    file = fso.GetFile('C:\\\\Temp\\\\MyTestFile.txt');
-    ts = file.OpenAsTextStream(IOMode\_ForReading, IOFormat\_Unicode);
+    file = fso.GetFile('C:\\Temp\\MyTestFile.txt');
+    ts = file.OpenAsTextStream(IOMode_ForReading, IOFormat_Unicode);
     var text = ts.ReadLine();
     Tester.Message(text);
     ts.Close();
