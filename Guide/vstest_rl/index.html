@@ -11266,17 +11266,21 @@
 <p>The benefit of the Microsoft-hosted agent is its configuration - it has latest version of web browsers, with relevant version of webdriver connectors. Everything is configured for the test run (updates and popups disabled, etc). RapiseLauncher may be used to execute Desktop UI tests, API tests, mobile tests and web tests. For web tests it is possible to use Rapise own Chrome extension, IE 11 or any <a href="../selenium_webdriver/">selenium webdriver</a>-based target. </p>
 <p>The same extension may be used for launching tests in <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops">self-hosted</a> Windows agents.</p>
 <p>Although in minimal configuration just <strong>RapiseLauncher</strong> step is enough, the pipeline definition may also include build, deploy or download of the AUT before the test execution. The results of test execution are then stored into the SpiraTeam. </p>
-<p>Once configured and executed the extension does the following:
-1. Automatically download and install the <strong>RapiseLauncher</strong>.
-2. Downloads test files from the SpiraTeam.
-3. Execute the test set.
-4. Publish execution results, videos and logs back to SpiraTeam, so they are attached to the test run.</p>
-<p>The whole configuration process contains the following steps:
-1. Add Rapise extension to the organization using Visual Studio Marketplace.
-2. Configure <strong>SpiraTeam</strong> connection Point for the project.
-3. Define a pipeline.
-4. Add <strong>RapiseLauncher</strong> task to the pipeline.
-5. Configure a pipeline definition for executing tests via <strong>RapiseLauncher</strong>.</p>
+<p>Once configured and executed the extension does the following:</p>
+<ol>
+<li>Automatically download and install the <strong>RapiseLauncher</strong>.</li>
+<li>Downloads test files from the SpiraTeam.</li>
+<li>Execute the test set.</li>
+<li>Publish execution results, videos and logs back to SpiraTeam, so they are attached to the test run.</li>
+</ol>
+<p>The whole configuration process contains the following steps:</p>
+<ol>
+<li>Add Rapise extension to the organization using Visual Studio Marketplace.</li>
+<li>Configure <strong>SpiraTeam</strong> connection Point for the project.</li>
+<li>Define a pipeline.</li>
+<li>Add <strong>RapiseLauncher</strong> task to the pipeline.</li>
+<li>Configure a pipeline definition for executing tests via <strong>RapiseLauncher</strong>.</li>
+</ol>
 <h3 id="step-1-install-marketplace-extension-for-the-organization">Step 1: Install Marketplace Extension for the Organization<a class="headerlink" href="#step-1-install-marketplace-extension-for-the-organization" title="Permanent link">&para;</a></h3>
 <p>In Azure DevOps go to <strong>Organization settings</strong>:</p>
 <p><img alt="vstest_rl_orgsettings.png" src="../img/vstest_rl_orgsettings.png" /></p>
