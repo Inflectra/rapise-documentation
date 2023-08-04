@@ -13,12 +13,14 @@ The same extension may be used for launching tests in [self-hosted](https://docs
 Although in minimal configuration just **RapiseLauncher** step is enough, the pipeline definition may also include build, deploy or download of the AUT before the test execution. The results of test execution are then stored into the SpiraTeam. 
 
 Once configured and executed the extension does the following:
+
 1. Automatically download and install the **RapiseLauncher**.
 2. Downloads test files from the SpiraTeam.
 3. Execute the test set.
 4. Publish execution results, videos and logs back to SpiraTeam, so they are attached to the test run.
 
 The whole configuration process contains the following steps:
+
 1. Add Rapise extension to the organization using Visual Studio Marketplace.
 2. Configure **SpiraTeam** connection Point for the project.
 3. Define a pipeline.
