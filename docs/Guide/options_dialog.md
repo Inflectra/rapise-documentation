@@ -82,6 +82,7 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
     The **Basic** frame is on the left and the **Modern** frame is on the right:
 
     ![options dialog, framestyle basic](./img/options_dialog6.png) ![options dialog, framestyle modern](./img/options_dialog7.png)
+
 * **DefaultSpy** specifies which of the various types of [Object Spy](object_spy.md) will be displayed by default.
 * **GenerateComments**: **True** to automatically generate JavaScript or RVL comment for each recorded action.
 
