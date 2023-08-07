@@ -108,7 +108,7 @@ When a datacolumn parameter is bound to a column in a data file, you may observe
 
 #### Data File Parameter
 
-A framework may have just one `Data File` parameter. You can add it by clicking the `Add Input Data File` button under the `Parameters` table, and if it is not needed, you can remove it by right-clicking on the `Data File` parameter and selecting the `Remove Parameter` option from the menu.  When you add a `Data File` parameter, a `Data.csv` file is automatically generated in the `Lib\LibFramework` folder of the framework, and you can manually create additional data files in this folder if needed. To select the desired data file, double-click on the `Data File` parameter, and a dropdown menu will appear with all available data file names.
+A framework may have just one `Data File` parameter. You can add it by clicking the `Add Input Data File` button under the `Parameters` table, and if it is not needed, you can remove it by right-clicking on the `Data File` parameter and selecting the `Remove Parameter` option from the menu.  When you add a `Data File` parameter, a `Data.csv` file is automatically generated in the `Shared` folder of the framework, and you can manually create additional data files in this folder if needed. To select the desired data file, double-click on the `Data File` parameter, and a dropdown menu will appear with all available data file names.
 
 ![Data File Dropdown](./img/parameters_datafile_dropdown.png){width="1053px"}
 
