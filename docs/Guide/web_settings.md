@@ -4,7 +4,7 @@
 
 This dialog box displays the list of **Web Spy settings** and lets you change the behavior of the [Web Spy](../web_spy/) tool.
 
-![web_settings](./img/web_settings1.png)
+![web_settings](./img/web_settings1.png){width="568px"}
 
 ## How to Open
 
@@ -34,7 +34,7 @@ The WebSpy has variety of options for XPath generation. Having a number of **dif
 2. Sometimes we have a regular structure (tables and grids) and it is better to have row and column indices inside the XPath.
 3. Sometimes we deal with an application framework that uses custom attributes (e.g. aria, angular, bootstrap). So if we use them in our XPath then it will be cleaner and more robust.
 
-![web_settings_xpath_types](./img/web_settings2.png)
+![web_settings_xpath_types](./img/web_settings2.png){width="568px"}
 
 The Web Spy currently supports the following different types of XPath:
 
