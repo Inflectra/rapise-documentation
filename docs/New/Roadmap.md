@@ -13,6 +13,7 @@
 - Run multiple test cases from Rapise (e.g. play all from a folder or play selected test cases).
 - Incorporate Chrome for Testing into Web Testing workflow.
 - Enable JS Formatter/Beautifier for JS Editor to simplify code formatting.
+- Folder hierarchy for Web Services (REST/SOAP) requests.
 
 ## Version 8.2 (Q2 2024)
 
@@ -53,6 +54,12 @@ We will continue to work on deep integration between Rapise, Spira and Git. The 
 - **Jenkins plugin**: Plugin to simplify running Rapise tests from Jenkins.
 - **Visual Studio Code integration**: Code helper for Rapise objects/actions. Start recording/playback from VS Code.
 - **Azure Test Plans integration**: Linking to a test case in an Azure Test Plan.
+
+### Smart Features
+
+- Enhance Rapise Toolbox to suggest Page Object actions and RVL code (AI).
+- RVL Code Analyzer: find duplicates, suggest refactoring and optimizations. 
+- Test Reports analysis: anomaly detection.
 
 ### Technologies
 
