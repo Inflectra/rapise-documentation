@@ -60,7 +60,7 @@ There is a build-in set of test parameters for [cross-browser testing](cross_bro
 
 ## Screen Capture
 
-![settings dialog, screen capture](./img/settings_dialog5.png)
+![settings dialog, screen capture](./img/settings_dialog5.png){width="570px"}
 
 * **Capture Cursor**: Set this to **True** if you want to include cursor position marker on the captured screenshot.
 * **Capture Execution**: Set this to **True** if you want to save screen images after each `Do<Action>` during playback.
