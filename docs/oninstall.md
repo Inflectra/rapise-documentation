@@ -2,4 +2,4 @@
 
 ## What's next?
 
-Watch the webinar: [Introduction to Test Automation with Rapise](https://youtu.be/X0RyPPAQhFk)
+Watch the webinar: [Introduction to Test Automation with Rapise](https://www.youtube.com/playlist?list=PL1GncVUgF5ntLDCyJMx5L9hKE8ainRCDd)
