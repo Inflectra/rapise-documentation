@@ -63,9 +63,6 @@ extra_javascript:
   - javascripts/gifffer.min.js
 
 extra:
-  analytics:
-    provider: google
-    property: G-7BVR7YJHWV
   social:
     - icon: fontawesome/brands/github
       link: 'https://github.com/inflectra'
