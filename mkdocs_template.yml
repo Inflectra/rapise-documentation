@@ -47,8 +47,7 @@ theme:
     scheme: default
     primary: 'black'
     accent: 'amber'
-  font:
-    code: 'IBM Plex Mono'
+  font: false
   favicon: 'img/favicon.ico'
   logo: 'img/logo.svg'
   custom_dir: material
