@@ -43,4 +43,5 @@ if "%SHIFT_PRESSED%"=="yes" (
     if "%~x1"==".js" (
         @call "%~dp0node_modules\.bin\js-beautify.cmd" -r --config "%~dp0jsbeautify.config.json" %1 >OnTextSaved.log 2>&1
     )
+)
 ```
