@@ -87,11 +87,11 @@ During object recording, the objects are stored in the respective repository bas
 
 1. When recording a test case, the recognized objects are added to the repository specific to that test case.
 
-   ![Test Case Objects](./img/frameworks_test_case_object.png)
+      ![Test Case Objects](./img/frameworks_test_case_object.png)
 
 2. When recording a page object, the recognized objects are added to the repository specific to that [page object](pageobjects.md).
 
-   ![PO Objects](./img/frameworks_po_objects.png)
+      ![PO Objects](./img/frameworks_po_objects.png)
 
 3. Any of these repositories can be made global by tagging its corresponding `Objects.js` file with the `shared` tag in the [Files View](/Guide/test_files_dialog). For example, if the *AppNavigation* repository is marked as `shared`, any recording or learning performed in the *AppNavigation* repository will automatically update the global object repository.
 
