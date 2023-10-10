@@ -11852,15 +11852,17 @@
 <p>We recommend avoiding the use of shared objects and instead placing them in a <a href="../pageobjects/">page object</a>.</p>
 <p>During object recording, the objects are stored in the respective repository based on the recording context:</p>
 <ol>
-<li>When recording a test case, the recognized objects are added to the repository specific to that test case.</li>
-</ol>
+<li>
+<p>When recording a test case, the recognized objects are added to the repository specific to that test case.</p>
 <p><img alt="Test Case Objects" src="../img/frameworks_test_case_object.png" /></p>
-<ol>
-<li>When recording a page object, the recognized objects are added to the repository specific to that <a href="../pageobjects/">page object</a>.</li>
-</ol>
+</li>
+<li>
+<p>When recording a page object, the recognized objects are added to the repository specific to that <a href="../pageobjects/">page object</a>.</p>
 <p><img alt="PO Objects" src="../img/frameworks_po_objects.png" /></p>
-<ol>
-<li>Any of these repositories can be made global by tagging its corresponding <code>Objects.js</code> file with the <code>shared</code> tag in the <a href="/Guide/test_files_dialog">Files View</a>. For example, if the <em>AppNavigation</em> repository is marked as <code>shared</code>, any recording or learning performed in the <em>AppNavigation</em> repository will automatically update the global object repository.</li>
+</li>
+<li>
+<p>Any of these repositories can be made global by tagging its corresponding <code>Objects.js</code> file with the <code>shared</code> tag in the <a href="/Guide/test_files_dialog">Files View</a>. For example, if the <em>AppNavigation</em> repository is marked as <code>shared</code>, any recording or learning performed in the <em>AppNavigation</em> repository will automatically update the global object repository.</p>
+</li>
 </ol>
 <p>You can utilize the <a href="/Guide/object_manager">Object Manager</a> to copy objects between different repositories.</p>
 <h3 id="refactoring">Refactoring<a class="headerlink" href="#refactoring" title="Permanent link">&para;</a></h3>
