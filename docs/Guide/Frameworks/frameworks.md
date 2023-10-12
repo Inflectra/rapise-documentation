@@ -51,7 +51,7 @@ Alternatively, you can move the test case to a different folder later to regroup
 
 ### Managing Common Data
 
-In Rapise, the shared folder plays a vital role in organizing resources that are shared across test cases, modules, and paging projects. Typically, the shared folder includes the following:
+In Rapise, the shared folder plays a vital role in organizing resources that are shared across test cases, modules, and page objects. Typically, the shared folder includes the following:
 
 1. Input data files in formats like spreadsheet (`.xlsx`), JSON (`.json`), CSV, or plain text.
 
