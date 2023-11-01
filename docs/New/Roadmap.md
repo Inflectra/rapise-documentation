@@ -17,7 +17,7 @@
 
 ## Version 8.2 (Q2 2024)
 
-- **GutHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow.
+- **GitHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow.
 - **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
 - *Proxy setting for JMeter Configuration* - make it easier to record Rapise API tests with JMeter.
 
