@@ -11246,73 +11246,73 @@
 <div class="highlight"><pre><span></span><code><span class="c1">// MyApp definition</span>
 <span class="c1">// to generate metadata press Ctrl-Shift-F5</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Launch</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">MyApp_Launch</span><span class="p">()</span>
 <span class="p">{</span>
 
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Close</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">MyApp_Close</span><span class="p">()</span>
 <span class="p">{</span>
 
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">username</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">password</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">username</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">password</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Logging as &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">password</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Logging as &quot;</span> <span class="o">+</span> <span class="nx">username</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nx">password</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="nx">_paramInfoMyApp_Login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">_description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Logs into the application&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">_type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">_returns</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;`true` if login is ok&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">username</span><span class="o">:</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Name of the user&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">password</span><span class="o">:</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pwd of the user&quot;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="nx">_paramInfoMyApp_Login</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">_description</span><span class="o">:</span> <span class="s2">&quot;Logs into the application&quot;</span><span class="p">,</span>
+    <span class="nx">_type</span><span class="o">:</span> <span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
+    <span class="nx">_returns</span><span class="o">:</span> <span class="s2">&quot;`true` if login is ok&quot;</span><span class="p">,</span>
+    <span class="nx">username</span><span class="o">:</span>
+    <span class="p">{</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;Name of the user&quot;</span>
+    <span class="p">},</span>
+    <span class="nx">password</span><span class="o">:</span>
+    <span class="p">{</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;Pwd of the user&quot;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="nx">SeSGlobalObject</span><span class="p">(</span><span class="s2">&quot;MyApp&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
 <p>Every action of <code>MyApp</code> object is prefixed with <code>MyApp_</code>. We have three such actions: <code>Launch</code>,<code>Close</code> and <code>Login</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Launch</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MyApp_Launch</span><span class="p">()</span>
 <span class="p">{</span>
 
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Close</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">MyApp_Close</span><span class="p">()</span>
 <span class="p">{</span>
 
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">username</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">password</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">username</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">password</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Logging as &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">password</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Logging as &quot;</span> <span class="o">+</span> <span class="nx">username</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nx">password</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>To declare the object use <code>SeSGlobalObject</code> call. It must be placed after definitions of all the actions. </p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSGlobalObject</span><span class="p">(</span><span class="s2">&quot;MyApp&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>You may specify action parameter types through comments <code>/**&lt;type&gt;*/</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">username</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">password</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">username</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">password</span><span class="p">)</span>
 </code></pre></div>
 <p>You may also describe actions and parameters using <code>paramInfo</code> objects (should have a name of format <code>_paramInfo&lt;action function name&gt;</code>).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">_paramInfoMyApp_Login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">_description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Logs into the application&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">_type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">_returns</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;`true` if login is ok&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">username</span><span class="o">:</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Name of the user&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">password</span><span class="o">:</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pwd of the user&quot;</span>
-<span class="w">    </span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="nx">_paramInfoMyApp_Login</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">_description</span><span class="o">:</span> <span class="s2">&quot;Logs into the application&quot;</span><span class="p">,</span>
+    <span class="nx">_type</span><span class="o">:</span> <span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
+    <span class="nx">_returns</span><span class="o">:</span> <span class="s2">&quot;`true` if login is ok&quot;</span><span class="p">,</span>
+    <span class="nx">username</span><span class="o">:</span>
+    <span class="p">{</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;Name of the user&quot;</span>
+    <span class="p">},</span>
+    <span class="nx">password</span><span class="o">:</span>
+    <span class="p">{</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;Pwd of the user&quot;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="compile-metadata">Compile Metadata<a class="headerlink" href="#compile-metadata" title="Permanent link">&para;</a></h2>

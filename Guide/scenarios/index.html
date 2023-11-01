@@ -11199,30 +11199,30 @@
 <h2 id="creating-scenarios">Creating Scenarios<a class="headerlink" href="#creating-scenarios" title="Permanent link">&para;</a></h2>
 <p>Let's say for example that you have the following Rapise test that was recorded from our sample library information web application:</p>
 <!-- /* cSpell:disable */ -->
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//Click on Log In</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span><span class="w">        </span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Username:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Password:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Click on Book Management</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Click on (Create new book)</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_Create_new_book__&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Set Name:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Select Author:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Author_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Select Genre:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Genre_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Click on ctl00$MainContent$btnSubmit</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$btnSubmit&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Click on Log Out</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_Out&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Log In</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>        
+    <span class="c1">//Set Text librarian in Username:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Set Text librarian in Password:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Book Management</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on (Create new book)</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_Create_new_book__&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Set Name:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">);</span>
+    <span class="c1">//Select Author:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Author_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">);</span>
+    <span class="c1">//Select Genre:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Genre_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">);</span>
+    <span class="c1">//Click on ctl00$MainContent$btnSubmit</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$btnSubmit&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Log Out</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_Out&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <!-- /* cSpell:enable */ -->
@@ -11234,95 +11234,95 @@
 <p><img alt="scenarios_3" src="../img/scenarios3.png" /></p>
 <p>This will extract the highlighted section into its own scenario.</p>
 <p>In <code>Main.js</code> we get</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//Call scenario Login</span>
-<span class="w">    </span><span class="nx">Login</span><span class="p">();</span>
+    <span class="c1">//Call scenario Login</span>
+    <span class="nx">Login</span><span class="p">();</span>
 
-<span class="w">    </span><span class="c1">//Click on Book Management</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Click on (Create new book)</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_Create_new_book__&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Set Name:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Select Author:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Author_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Select Genre:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Genre_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Click on ctl00$MainContent$btnSubmit</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$btnSubmit&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Click on Log Out</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_Out&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Book Management</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on (Create new book)</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_Create_new_book__&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Set Name:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">);</span>
+    <span class="c1">//Select Author:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Author_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">);</span>
+    <span class="c1">//Select Genre:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Genre_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">);</span>
+    <span class="c1">//Click on ctl00$MainContent$btnSubmit</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$btnSubmit&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Log Out</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_Out&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>In <code>User.js</code> we get</p>
 <!-- /* cSpell:disable */ -->
 <div class="highlight"><pre><span></span><code><span class="cm">/** @scenario Login */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">Login</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Login</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//Click on Log In</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span><span class="w">        </span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Username:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Password:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Log In</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>        
+    <span class="c1">//Set Text librarian in Username:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Set Text librarian in Password:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <!-- /* cSpell:enable */ -->
 <h2 id="usage-in-automated-tests">Usage in Automated Tests<a class="headerlink" href="#usage-in-automated-tests" title="Permanent link">&para;</a></h2>
 <p>When you create a new test in Rapise it will contain a <code>Main.js</code> file that contains the main test code and a <code>User</code>.js file that contains any user-defined functions (called Scenarios). For example in the following test:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">Login</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">CreateBook</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">,</span><span class="w"> </span><span class="nx">g_book_author</span><span class="p">,</span><span class="w"> </span><span class="nx">g_book_genre</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Logout</span><span class="p">();</span>
+    <span class="nx">Login</span><span class="p">();</span>
+    <span class="nx">CreateBook</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">,</span> <span class="nx">g_book_author</span><span class="p">,</span> <span class="nx">g_book_genre</span><span class="p">);</span>
+    <span class="nx">Logout</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>The test function calls three <strong>scenarios</strong> that comprise the main test. The scenarios themselves are JavaScript functions:</p>
 <!-- /* cSpell:disable */ -->
 <div class="highlight"><pre><span></span><code><span class="cm">/** @scenario Login */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">Login</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Login</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//Click on Log In</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span><span class="w">        </span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Username:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Password:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Log In</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>        
+    <span class="c1">//Set Text librarian in Username:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Set Text librarian in Password:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 
 <span class="cm">/** @scenario Logout */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">Logout</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Logout</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//Click on Log Out</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_Out&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Log Out</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_Out&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 
 <span class="cm">/** @scenario CreateBook */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">CreateBook</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">author</span><span class="p">,</span><span class="w"> </span><span class="nx">genre</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nx">CreateBook</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">author</span><span class="p">,</span> <span class="nx">genre</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//Click on Book Management</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Click on (Create new book)</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_Create_new_book__&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//Set Name:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Select Author:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Author_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">author</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Select Genre:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Genre_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">genre</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Click on ctl00$MainContent$btnSubmit</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$btnSubmit&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Book Management</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on (Create new book)</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_Create_new_book__&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Set Name:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+    <span class="c1">//Select Author:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Author_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">author</span><span class="p">);</span>
+    <span class="c1">//Select Genre:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Genre_&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">genre</span><span class="p">);</span>
+    <span class="c1">//Click on ctl00$MainContent$btnSubmit</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$btnSubmit&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 
-<span class="w">    </span><span class="c1">//Verify that the Book is added to the grid</span>
-<span class="w">    </span><span class="c1">//We need to xpath query the grid to see if any</span>
-<span class="w">    </span><span class="c1">//added rows match the item added</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">tr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FindRowByName</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Book was added successfully [TS:5]&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">tr</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+    <span class="c1">//Verify that the Book is added to the grid</span>
+    <span class="c1">//We need to xpath query the grid to see if any</span>
+    <span class="c1">//added rows match the item added</span>
+    <span class="kd">var</span> <span class="nx">tr</span> <span class="o">=</span> <span class="nx">FindRowByName</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Book was added successfully [TS:5]&#39;</span><span class="p">,</span> <span class="nx">tr</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mf">0</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <!-- /* cSpell:enable */ -->
@@ -11333,16 +11333,16 @@
 <p>When you create a new test in Rapise it will contain a <code>Main.js</code> file that contains the main test code and a <code>User.js</code> file that contains any user-defined functions (called Scenarios). For example you may have the following scenario defined in the <code>User.js</code> file:</p>
 <!-- /* cSpell:disable */ -->
 <div class="highlight"><pre><span></span><code><span class="cm">/** @scenario Login */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">Login</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Login</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//Click on Log In</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span><span class="w">        </span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Username:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Set Text librarian in Password:</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="c1">//Click on Log In</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>        
+    <span class="c1">//Set Text librarian in Username:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Set Text librarian in Password:</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Password_&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;librarian&quot;</span><span class="p">);</span>
+    <span class="c1">//Click on ctl00$MainContent$LoginUser$LoginButton</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ctl00$MainContent$LoginUser$Logi&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <!-- /* cSpell:enable */ -->

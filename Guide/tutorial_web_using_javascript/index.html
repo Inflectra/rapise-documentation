@@ -11329,16 +11329,16 @@ the HTML elements (called the DOM tree) that make up this page:</p>
 <p>Open up the Web Spy as before:</p>
 <p><img alt="web spy" src="../img/tutorial_record_and_playback35.png" width="912px" /></p>
 <p>One the toolbar enter in the following to locate the table:</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">//table[@id=&#39;MainContent_grdBooks&#39;]</span>
-</code></pre></div></td></tr></table></div>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="nc">table</span><span class="o">[</span><span class="n">@id=&#39;MainContent_grdBooks&#39;</span><span class="o">]</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
 <p><img alt="clip0038" src="../img/tutorial_record_and_playback43.png" width="718px" /></p>
 <p>Now click on the <code>Test</code> button to display the matching results:</p>
 <p><img alt="test results" src="../img/tutorial_record_and_playback44.png" width="594px" /></p>
 <p>Now that we have matched the table, we need to add dynamic XPath to find any row that has the cell containing <code>Amsterdam</code> and find the edit link. You can expand the table and see the rows and cells visually and that will help us create the XPATH:</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">//table[@id=&#39;MainContent_grdBooks&#39;]//tr/td[text()=&#39;Amsterdam&#39;]/../td[5]/a</span>
-</code></pre></div></td></tr></table></div>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="nc">table</span><span class="o">[</span><span class="n">@id=&#39;MainContent_grdBooks&#39;</span><span class="o">]//</span><span class="n">tr</span><span class="o">/</span><span class="n">td</span><span class="o">[</span><span class="n">text()=&#39;Amsterdam&#39;</span><span class="o">]/</span><span class="p">..</span><span class="o">/</span><span class="n">td</span><span class="o">[</span><span class="n">5</span><span class="o">]/</span><span class="n">a</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
 <p>This XPath consists of the following elements:</p>
 <ol>
 <li>Find the table with the specified ID.</li>
@@ -11364,11 +11364,11 @@ command, so that Rapise goes back to the main book list page before executing th
 <p>So to make the test more useful, we can use the global <strong>Tester</strong> object to add a step to verify this value. Drag the <code>AssertEqual</code> function from the <code>Tester</code> object to your test script just above the <code>SeS(“Amsterdam”)</code> line:</p>
 <p><img alt="Tester.AssertEqual" src="../img/tutorial_web_using_javascript14.png" width="970px" /></p>
 <p>Now we need to just consolidate these two lines into the actual test. Using the script editor, change the two lines from:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Amsterdam&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">();</span>
 </code></pre></div>
 <p>to</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;The values match&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Amsterdam&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Amsterdam&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">());</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;The values match&#39;</span><span class="p">,</span> <span class="s1">&#39;Amsterdam&#39;</span><span class="p">,</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Amsterdam&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">());</span>
 </code></pre></div>
 <p>Now click <strong>Play</strong> to playback the new test:</p>
 <p><img alt="execution report" src="../img/tutorial_web_using_javascript15.png" width="934px" /></p>

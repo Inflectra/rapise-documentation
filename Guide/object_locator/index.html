@@ -11231,56 +11231,56 @@
 <p><img alt="properties dialog" src="../img/properties1.png" /></p>
 <h3 id="how-locators-are-stored">How Locators are Stored<a class="headerlink" href="#how-locators-are-stored" title="Permanent link">&para;</a></h3>
 <p>The locator for each object is specified in <code>saved_script_objects</code> array in <strong>Objects.js</strong> of a test. Locator information is stored in <code>locations</code> array of each object.</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;Simulated&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;locations&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="s2">&quot;locator_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Location&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;location&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="s2">&quot;location&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;4.3.4.1.4.1.4.1.4.1.4.10.1.1.7.3&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="s2">&quot;window_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:window_name&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="s2">&quot;window_class&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:window_class&quot;</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="s2">&quot;locator_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LocationPath&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;location&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="c1">// ...</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="s2">&quot;locator_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LocationRect&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;location&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="s2">&quot;window_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:window_name&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="s2">&quot;window_class&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:window_class&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="s2">&quot;rect&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="s2">&quot;object_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="s2">&quot;object_class&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:object_class&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="s2">&quot;object_role&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:object_role&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="s2">&quot;x&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">573</span><span class="p">,</span>
-<span class="w">                    </span><span class="s2">&quot;y&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">59</span><span class="p">,</span>
-<span class="w">                    </span><span class="s2">&quot;w&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">220</span><span class="p">,</span>
-<span class="w">                    </span><span class="s2">&quot;h&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">66</span>
-<span class="w">                </span><span class="p">}</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="s2">&quot;window_class&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;MSPaintApp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;object_text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;object_role&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ROLE_SYSTEM_GROUPING&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;object_class&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;NetUIHWND&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;object_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;SeSSimulated&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;object_flavor&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Simulated&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;object_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Simulated&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;ignore_object_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;window_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Untitled - Paint&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Simulated&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;locations&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;locator_name&quot;</span><span class="o">:</span> <span class="s2">&quot;Location&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;location&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;location&quot;</span><span class="o">:</span> <span class="s2">&quot;4.3.4.1.4.1.4.1.4.1.4.10.1.1.7.3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;window_name&quot;</span><span class="o">:</span> <span class="s2">&quot;param:window_name&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;window_class&quot;</span><span class="o">:</span> <span class="s2">&quot;param:window_class&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;locator_name&quot;</span><span class="o">:</span> <span class="s2">&quot;LocationPath&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;location&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="c1">// ...</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;locator_name&quot;</span><span class="o">:</span> <span class="s2">&quot;LocationRect&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;location&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;window_name&quot;</span><span class="o">:</span> <span class="s2">&quot;param:window_name&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;window_class&quot;</span><span class="o">:</span> <span class="s2">&quot;param:window_class&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;rect&quot;</span><span class="o">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;object_name&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;object_class&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_class&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;object_role&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_role&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;x&quot;</span><span class="o">:</span> <span class="mf">573</span><span class="p">,</span>
+                    <span class="s2">&quot;y&quot;</span><span class="o">:</span> <span class="mf">59</span><span class="p">,</span>
+                    <span class="s2">&quot;w&quot;</span><span class="o">:</span> <span class="mf">220</span><span class="p">,</span>
+                    <span class="s2">&quot;h&quot;</span><span class="o">:</span> <span class="mf">66</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;window_class&quot;</span><span class="o">:</span> <span class="s2">&quot;MSPaintApp&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;object_text&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;object_role&quot;</span><span class="o">:</span> <span class="s2">&quot;ROLE_SYSTEM_GROUPING&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;object_class&quot;</span><span class="o">:</span> <span class="s2">&quot;NetUIHWND&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span>
+    <span class="s2">&quot;object_type&quot;</span><span class="o">:</span> <span class="s2">&quot;SeSSimulated&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;object_flavor&quot;</span><span class="o">:</span> <span class="s2">&quot;Simulated&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;object_name&quot;</span><span class="o">:</span> <span class="s2">&quot;Simulated&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ignore_object_name&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">&quot;window_name&quot;</span><span class="o">:</span> <span class="s2">&quot;Untitled - Paint&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="locator-parameters">Locator Parameters<a class="headerlink" href="#locator-parameters" title="Permanent link">&para;</a></h2>
 <p>If a piece of information in the locator matches a piece of object info (<code>object_name</code>, <code>object_class</code>, <code>object_role</code>, <code>object_text</code>) then it is stored in the locator as <code>param:object_info</code>.  For example:</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;object_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:object_name&quot;</span><span class="p">,</span>
-<span class="s2">&quot;object_class&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:object_class&quot;</span><span class="p">,</span>
-<span class="s2">&quot;object_role&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param:object_role&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;object_name&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_name&quot;</span><span class="p">,</span>
+<span class="s2">&quot;object_class&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_class&quot;</span><span class="p">,</span>
+<span class="s2">&quot;object_role&quot;</span><span class="o">:</span> <span class="s2">&quot;param:object_role&quot;</span>
 </code></pre></div>
 <h2 id="over-riding-locator-parameters-rvl">Over-riding Locator Parameters (RVL)<a class="headerlink" href="#over-riding-locator-parameters-rvl" title="Permanent link">&para;</a></h2>
 <p>See also <a href="../../Libraries/RVL/#locatoropts">RVL.SetLocatorOpts</a> and this <a href="https://www.inflectra.com/Support/KnowledgeBase/KB427.aspx">KB Article</a> for more detailed explanation and example of overriding locator parameters in RVL.</p>
@@ -11289,21 +11289,21 @@
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>To override locator parameters, specify the new value in the function call. In the following example, we over-ride the <strong>object_name</strong> parameter for object <code>Username</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">object_name</span><span class="o">:</span><span class="s2">&quot;regex:.*&quot;</span><span class="p">})</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">object_name</span><span class="o">:</span><span class="s2">&quot;regex:.*&quot;</span><span class="p">})</span>
 </code></pre></div>
 <p>You may want to change a parameter value for every locator/object in the program.  For instance, perhaps the url of the webpage has changed.  Use the global variable <strong>g_locatorparams</strong> as in the following example:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">// Here we use direct parameter overriding</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">url</span><span class="o">:</span><span class="s2">&quot;http://newaddr/&quot;</span><span class="p">}).</span><span class="nx">DoAction</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj2&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">url</span><span class="o">:</span><span class="s2">&quot;http://newaddr/&quot;</span><span class="p">}).</span><span class="nx">DoAction</span><span class="p">();</span>
+    <span class="c1">// Here we use direct parameter overriding</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj1&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span><span class="s2">&quot;http://newaddr/&quot;</span><span class="p">}).</span><span class="nx">DoAction</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj2&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span><span class="s2">&quot;http://newaddr/&quot;</span><span class="p">}).</span><span class="nx">DoAction</span><span class="p">();</span>
 
-<span class="w">    </span><span class="c1">// And this is equivalent to above</span>
-<span class="w">    </span><span class="nx">g_locatorparams</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;http://newaddr/&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Obj1&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Obj2&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
+    <span class="c1">// And this is equivalent to above</span>
+    <span class="nx">g_locatorparams</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;http://newaddr/&quot;</span><span class="p">;</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Obj1&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Obj2&quot;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
 
-<span class="w">    </span><span class="c1">// ...</span>
+    <span class="c1">// ...</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

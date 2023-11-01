@@ -11618,7 +11618,7 @@
 <p><a name="DoAddColumn"></a>    </p>
 <h4 id="doaddcolumn">DoAddColumn<a class="headerlink" href="#doaddcolumn" title="Permanent link">&para;</a></h4>
 <p>Appends a column with specified name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAddColumn</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoAddColumn</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11643,7 +11643,7 @@
 <p><a name="DoAddRow"></a>    </p>
 <h4 id="doaddrow">DoAddRow<a class="headerlink" href="#doaddrow" title="Permanent link">&para;</a></h4>
 <p>Appends a new row.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAddRow</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoAddRow</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
@@ -11651,7 +11651,7 @@
 <p><a name="DoAttach"></a>    </p>
 <h4 id="doattach">DoAttach<a class="headerlink" href="#doattach" title="Permanent link">&para;</a></h4>
 <p>Loads a sheet from Excel file (.xls, <em>.xlsx) or csv file (</em>.txt, *.csv).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">sheetName</span><span class="p">,</span> <span class="nx">separator</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11687,7 +11687,7 @@
 <h4 id="docompare">DoCompare<a class="headerlink" href="#docompare" title="Permanent link">&para;</a></h4>
 <p>Compares two spreadsheets. In strict mode number of columns and rows matter 
 and all cell values must be equal. When strict mode is off then spreadsheet2 must contain spreadsheet1 to return 'true' as a result.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoCompare</span><span class="p">(</span><span class="nx">spreadsheet1</span><span class="p">,</span><span class="w"> </span><span class="nx">spreadsheet2</span><span class="p">,</span><span class="w"> </span><span class="nx">strict</span><span class="p">,</span><span class="w"> </span><span class="nx">sheet1Name</span><span class="p">,</span><span class="w"> </span><span class="nx">sheet2Name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoCompare</span><span class="p">(</span><span class="nx">spreadsheet1</span><span class="p">,</span> <span class="nx">spreadsheet2</span><span class="p">,</span> <span class="nx">strict</span><span class="p">,</span> <span class="nx">sheet1Name</span><span class="p">,</span> <span class="nx">sheet2Name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11732,7 +11732,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p><a name="DoCreate"></a>    </p>
 <h4 id="docreate">DoCreate<a class="headerlink" href="#docreate" title="Permanent link">&para;</a></h4>
 <p>Creates a new spreadsheet file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoCreate</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">,</span><span class="w"> </span><span class="nx">columnNames</span><span class="p">,</span><span class="w"> </span><span class="nx">rowCount</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoCreate</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span> <span class="nx">sheetName</span><span class="p">,</span> <span class="nx">columnNames</span><span class="p">,</span> <span class="nx">rowCount</span><span class="p">,</span> <span class="nx">separator</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11777,7 +11777,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p><a name="DoInsertColumn"></a>    </p>
 <h4 id="doinsertcolumn">DoInsertColumn<a class="headerlink" href="#doinsertcolumn" title="Permanent link">&para;</a></h4>
 <p>Inserts a column at index.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoInsertColumn</span><span class="p">(</span><span class="nx">columnIndex</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoInsertColumn</span><span class="p">(</span><span class="nx">columnIndex</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11807,7 +11807,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p><a name="DoInsertRow"></a>    </p>
 <h4 id="doinsertrow">DoInsertRow<a class="headerlink" href="#doinsertrow" title="Permanent link">&para;</a></h4>
 <p>Inserts a new row at index.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoInsertRow</span><span class="p">(</span><span class="nx">rowIndex</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoInsertRow</span><span class="p">(</span><span class="nx">rowIndex</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11832,7 +11832,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p><a name="DoMoveToFirstRow"></a>    </p>
 <h4 id="domovetofirstrow">DoMoveToFirstRow<a class="headerlink" href="#domovetofirstrow" title="Permanent link">&para;</a></h4>
 <p>Moves to a first row in selected range.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToFirstRow</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToFirstRow</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
@@ -11840,7 +11840,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p><a name="DoMoveToLastRow"></a>    </p>
 <h4 id="domovetolastrow">DoMoveToLastRow<a class="headerlink" href="#domovetolastrow" title="Permanent link">&para;</a></h4>
 <p>Moves to a last row in selected range.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToLastRow</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToLastRow</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
@@ -11848,7 +11848,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p><a name="DoMoveToRow"></a>    </p>
 <h4 id="domovetorow">DoMoveToRow<a class="headerlink" href="#domovetorow" title="Permanent link">&para;</a></h4>
 <p>Sets active row index.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11875,7 +11875,7 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 <p>Selects random row and column in the range. The range is either set by SetRange
 or it is the default range that includes all rows (except first row 
 which is considred to contain column names) and columns on the sheet.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRandom</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRandom</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: false if the spreadhseet is not attached, true otherwise.</p>
@@ -11883,7 +11883,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 <p><a name="DoRemoveColumn"></a>    </p>
 <h4 id="doremovecolumn">DoRemoveColumn<a class="headerlink" href="#doremovecolumn" title="Permanent link">&para;</a></h4>
 <p>Removes a column at index.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveColumn</span><span class="p">(</span><span class="nx">columnIndex</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveColumn</span><span class="p">(</span><span class="nx">columnIndex</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11908,7 +11908,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 <p><a name="DoRemoveRow"></a>    </p>
 <h4 id="doremoverow">DoRemoveRow<a class="headerlink" href="#doremoverow" title="Permanent link">&para;</a></h4>
 <p>Removes a row at index.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRow</span><span class="p">(</span><span class="nx">rowIndex</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRow</span><span class="p">(</span><span class="nx">rowIndex</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11933,7 +11933,7 @@ which is considred to contain column names) and columns on the sheet.</p>
 <p><a name="DoSave"></a>    </p>
 <h4 id="dosave">DoSave<a class="headerlink" href="#dosave" title="Permanent link">&para;</a></h4>
 <p>Saves the spreadsheet.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSave</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoSave</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11962,7 +11962,7 @@ or it is the default range that includes all rows on the sheet except first row
 which is considred to contain column names.
 When the end of the range is reached DoSequential stays at the last
 row in the range and returns 'false'.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSequential</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoSequential</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: false if being called when active row is the last row or the spreadsheet is not attached, true otherwise.</p>
@@ -11970,7 +11970,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetCell"></a>    </p>
 <h4 id="getcell">GetCell<a class="headerlink" href="#getcell" title="Permanent link">&para;</a></h4>
 <p>Cell value by its coordinates. Refers to active cell value after DoSequential or DoRandom if params not set.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCell</span><span class="p">(</span><span class="nx">columnId</span><span class="p">,</span><span class="w"> </span><span class="nx">rowId</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetCell</span><span class="p">(</span><span class="nx">columnId</span><span class="p">,</span> <span class="nx">rowId</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12000,7 +12000,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetColumnCount"></a>    </p>
 <h4 id="getcolumncount">GetColumnCount<a class="headerlink" href="#getcolumncount" title="Permanent link">&para;</a></h4>
 <p>Gets columns count.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetColumnCount</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetColumnCount</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>number: Number of columns in the spreadsheet. -1 if no spreadsheet is attached.</p>
@@ -12008,7 +12008,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetColumnIndexByName"></a>    </p>
 <h4 id="getcolumnindexbyname">GetColumnIndexByName<a class="headerlink" href="#getcolumnindexbyname" title="Permanent link">&para;</a></h4>
 <p>Gets column index by its name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetColumnIndexByName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetColumnIndexByName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12033,7 +12033,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetColumnName"></a>    </p>
 <h4 id="getcolumnname">GetColumnName<a class="headerlink" href="#getcolumnname" title="Permanent link">&para;</a></h4>
 <p>Gets column name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12058,7 +12058,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetCurrentRowIndex"></a>    </p>
 <h4 id="getcurrentrowindex">GetCurrentRowIndex<a class="headerlink" href="#getcurrentrowindex" title="Permanent link">&para;</a></h4>
 <p>Gets zero-based active row index.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentRowIndex</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentRowIndex</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>number: Active row index.</p>
@@ -12066,7 +12066,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetEOF"></a>    </p>
 <h4 id="geteof">GetEOF<a class="headerlink" href="#geteof" title="Permanent link">&para;</a></h4>
 <p>Gets EOF state.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetEOF</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetEOF</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: false if spreadsheet is attached and active row and column point to existing cell, true otherwise.</p>
@@ -12074,7 +12074,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetRange"></a>    </p>
 <h4 id="getrange">GetRange<a class="headerlink" href="#getrange" title="Permanent link">&para;</a></h4>
 <p>Cell range used in DoSequential and in DoRandom.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetRange</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetRange</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>object: Spreadsheet state object: { startRow, endRow, startCol, endCol, activeRow, activeColumn }.</p>
@@ -12082,7 +12082,7 @@ row in the range and returns 'false'.</p>
 <p><a name="GetRowCount"></a>    </p>
 <h4 id="getrowcount">GetRowCount<a class="headerlink" href="#getrowcount" title="Permanent link">&para;</a></h4>
 <p>Gets row count.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetRowCount</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetRowCount</span><span class="p">()</span> 
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>number: Number of rows in the spreadsheet including the row with column names. -1 if no spreadsheet is attached.</p>
@@ -12090,7 +12090,7 @@ row in the range and returns 'false'.</p>
 <p><a name="SetCell"></a>    </p>
 <h4 id="setcell">SetCell<a class="headerlink" href="#setcell" title="Permanent link">&para;</a></h4>
 <p>Sets cell value by its coordinates. Sets active cell value after DoSequential or DoRandom if params not set.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetCell</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">columnId</span><span class="p">,</span><span class="w"> </span><span class="nx">rowId</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetCell</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">columnId</span><span class="p">,</span> <span class="nx">rowId</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12125,7 +12125,7 @@ row in the range and returns 'false'.</p>
 <p><a name="SetRange"></a>    </p>
 <h4 id="setrange">SetRange<a class="headerlink" href="#setrange" title="Permanent link">&para;</a></h4>
 <p>Cell range used in DoSequential and in DoRandom.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetRange</span><span class="p">(</span><span class="nx">startRow</span><span class="p">,</span><span class="w"> </span><span class="nx">endRow</span><span class="p">,</span><span class="w"> </span><span class="nx">startCol</span><span class="p">,</span><span class="w"> </span><span class="nx">endCol</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetRange</span><span class="p">(</span><span class="nx">startRow</span><span class="p">,</span> <span class="nx">endRow</span><span class="p">,</span> <span class="nx">startCol</span><span class="p">,</span> <span class="nx">endCol</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>

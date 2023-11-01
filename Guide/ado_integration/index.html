@@ -11117,26 +11117,26 @@
 <h2 id="node-tap">Node-Tap<a class="headerlink" href="#node-tap" title="Permanent link">&para;</a></h2>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>Download and install <a href="https://nodejs.org">Node.js</a>. Open command prompt and run the following commands to make sure you have Node.js and <a href="https://www.npmjs.com">npm</a> installed:</p>
-<p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;node<span class="w"> </span>--version
+<p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;node --version
 v10.16.3
 
-C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;npm<span class="w"> </span>--version
+C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;npm --version
 <span class="m">6</span>.9.0
 </code></pre></div>
 Install <code>Node-Tap</code> package with <code>npm</code>:</p>
-<p><div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>tap<span class="w"> </span>-g
+<p><div class="highlight"><pre><span></span><code>npm install tap -g
 </code></pre></div>
 Discover the folder where Node-Tap is installed:</p>
-<p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;npm<span class="w"> </span>list<span class="w"> </span>tap<span class="w"> </span>-g
+<p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;npm list tap -g
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm
---<span class="w"> </span>tap@14.6.9
+-- tap@14.6.9
 </code></pre></div>
 Configure system variable <code>NODE_PATH</code> and set it to <code>node_modules</code> subfolder. In our case it is:</p>
 <p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\n</span>ode_modules
 </code></pre></div>
 <img src="/Guide/img/set_node_path.png" width="800"/></p>
 <p>Relaunch Command Prompt and verify the system variable:</p>
-<div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;echo<span class="w"> </span>%NODE_PATH%
+<div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;echo %NODE_PATH%
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\n</span>ode_modules
 </code></pre></div>
 <h2 id="test-framework">Test Framework<a class="headerlink" href="#test-framework" title="Permanent link">&para;</a></h2>
@@ -11162,14 +11162,14 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
     |-FailedLogin.js
 </code></pre></div>
 <p>Predefined content of the files is:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">rapise</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;../rapise&#39;</span><span class="p">)</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">tap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;tap&#39;</span><span class="p">)</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">rapise</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;../rapise&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">tap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;tap&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">);</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">testName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">testName</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
 
-<span class="nx">rapise</span><span class="p">.</span><span class="nx">run</span><span class="p">(</span><span class="nx">testName</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">exit_code</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">tap</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">exit_code</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">testName</span><span class="p">);</span><span class="w">    </span>
+<span class="nx">rapise</span><span class="p">.</span><span class="nx">run</span><span class="p">(</span><span class="nx">testName</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">exit_code</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">tap</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">exit_code</span> <span class="o">==</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">testName</span><span class="p">);</span>    
 <span class="p">})</span>
 </code></pre></div>
 <p>There is also <code>tap-parallel-not-ok</code> in <code>tests</code> folder that instructs Node-Tap to run tests sequentially.</p>
@@ -11180,7 +11180,7 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
 You should see tests running:
 <img alt="Node-Tap Execution" src="../img/node_tap_execution.png" /></p>
 <p>To pass parameters to a Rapise test specify <code>--test-arg</code>. The value is JSON stringified object. Every property of this object will be evaluated by Rapise as a global variable:</p>
-<div class="highlight"><pre><span></span><code>tap<span class="w"> </span>--test-arg<span class="o">=</span><span class="s2">&quot;{&#39;g_browserLibrary&#39;:&#39;Selenium - Chrome&#39;}&quot;</span>
+<div class="highlight"><pre><span></span><code>tap --test-arg<span class="o">=</span><span class="s2">&quot;{&#39;g_browserLibrary&#39;:&#39;Selenium - Chrome&#39;}&quot;</span>
 </code></pre></div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QEH5a9vqymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -11193,43 +11193,43 @@ You should see tests running:
 <span class="c1"># https://aka.ms/yaml</span>
 
 <span class="nt">trigger</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
 
 <span class="nt">pool</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;default&#39;</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;default&#39;</span>
 
 <span class="nt">steps</span><span class="p">:</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">echo Running tests...</span>
-<span class="w">    </span><span class="no">tap --test-arg=&quot;{&#39;g_browserLibrary&#39;:&#39;Selenium - Chrome&#39;}&quot;</span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Execute</span><span class="nv"> </span><span class="s">Tests&#39;</span>
-<span class="w">  </span><span class="nt">continueOnError</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+    <span class="no">echo Running tests...</span>
+    <span class="no">tap --test-arg=&quot;{&#39;g_browserLibrary&#39;:&#39;Selenium - Chrome&#39;}&quot;</span>
+  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Execute</span><span class="nv"> </span><span class="s">Tests&#39;</span>
+  <span class="nt">continueOnError</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">call tap2xunit.cmd</span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Convert</span><span class="nv"> </span><span class="s">TAP</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">XUnit&quot;</span>
+<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+    <span class="no">call tap2xunit.cmd</span>
+  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Convert</span><span class="nv"> </span><span class="s">TAP</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">XUnit&quot;</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">cscript.exe fixunit.js</span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Fix</span><span class="nv"> </span><span class="s">XUnit</span><span class="nv"> </span><span class="s">Reports&#39;</span>
+<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+    <span class="no">cscript.exe fixunit.js</span>
+  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Fix</span><span class="nv"> </span><span class="s">XUnit</span><span class="nv"> </span><span class="s">Reports&#39;</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CopyFiles@2</span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;reports/**&#39;</span>
-<span class="w">    </span><span class="nt">targetFolder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CopyFiles@2</span>
+  <span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">contents</span><span class="p">:</span> <span class="s">&#39;reports/**&#39;</span>
+    <span class="nt">targetFolder</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">pathToPublish</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
-<span class="w">    </span><span class="nt">artifactName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TestRunReports</span><span class="w">  </span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
+  <span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">pathToPublish</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
+    <span class="nt">artifactName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TestRunReports</span>  
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishTestResults@2</span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">testResultsFormat</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;JUnit&#39;</span>
-<span class="w">    </span><span class="nt">testResultsFiles</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;results/*.xml&#39;</span>
-<span class="w">    </span><span class="nt">testRunTitle</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Basic</span><span class="nv"> </span><span class="s">Tests&#39;</span>
-<span class="w">    </span><span class="nt">failTaskOnFailedTests</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishTestResults@2</span>
+  <span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">testResultsFormat</span><span class="p">:</span> <span class="s">&#39;JUnit&#39;</span>
+    <span class="nt">testResultsFiles</span><span class="p">:</span> <span class="s">&#39;results/*.xml&#39;</span>
+    <span class="nt">testRunTitle</span><span class="p">:</span> <span class="s">&#39;Basic</span><span class="nv"> </span><span class="s">Tests&#39;</span>
+    <span class="nt">failTaskOnFailedTests</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div></p>
 <p>The pipeline above assumes that <code>default</code> agent pool contains a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> installed on a machine with Rapise and Node-Tap (see <a href="#prerequisites">Prerequisites</a>).</p>
 <p><a href="https://youtu.be/iPVplfqKj50?t=730">See the video</a> to learn how to install and configure a self-hosted agent.</p>
@@ -11258,44 +11258,44 @@ You should see tests running:
 <span class="c1"># Add steps that build, run tests, deploy, and more:</span>
 <span class="c1"># https://aka.ms/yaml</span>
 
-<span class="nt">trigger</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">none</span>
+<span class="nt">trigger</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">none</span>
 
 <span class="nt">pool</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;default&#39;</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;default&#39;</span>
 
 <span class="nt">steps</span><span class="p">:</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">echo Running tests...</span>
-<span class="w">    </span><span class="no">tap --no-coverage --test-arg=&quot;{&#39;g_browserLibrary&#39;:&#39;Chrome HTML&#39;}&quot;</span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Execute</span><span class="nv"> </span><span class="s">Tests&#39;</span>
-<span class="w">  </span><span class="nt">continueOnError</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+    <span class="no">echo Running tests...</span>
+    <span class="no">tap --no-coverage --test-arg=&quot;{&#39;g_browserLibrary&#39;:&#39;Chrome HTML&#39;}&quot;</span>
+  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Execute</span><span class="nv"> </span><span class="s">Tests&#39;</span>
+  <span class="nt">continueOnError</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">call tap2xunit.cmd</span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Convert</span><span class="nv"> </span><span class="s">TAP</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">XUnit&quot;</span>
+<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+    <span class="no">call tap2xunit.cmd</span>
+  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Convert</span><span class="nv"> </span><span class="s">TAP</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">XUnit&quot;</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
 
-<span class="w">    </span><span class="no">.exe summarize.js</span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Fix</span><span class="nv"> </span><span class="s">XUnit</span><span class="nv"> </span><span class="s">Reports&#39;</span>
+    <span class="no">.exe summarize.js</span>
+  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Fix</span><span class="nv"> </span><span class="s">XUnit</span><span class="nv"> </span><span class="s">Reports&#39;</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CopyFiles@2</span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;reports/**&#39;</span>
-<span class="w">    </span><span class="nt">targetFolder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CopyFiles@2</span>
+  <span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">contents</span><span class="p">:</span> <span class="s">&#39;reports/**&#39;</span>
+    <span class="nt">targetFolder</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">pathToPublish</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
-<span class="w">    </span><span class="nt">artifactName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TestRunReports</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
+  <span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">pathToPublish</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(Build.ArtifactStagingDirectory)</span>
+    <span class="nt">artifactName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TestRunReports</span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishTestResults@2</span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">testResultsFormat</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;JUnit&#39;</span>
-<span class="w">    </span><span class="nt">testResultsFiles</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;results/*.xml&#39;</span>
-<span class="w">    </span><span class="nt">testRunTitle</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Basic</span><span class="nv"> </span><span class="s">Tests&#39;</span>
-<span class="w">    </span><span class="nt">failTaskOnFailedTests</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishTestResults@2</span>
+  <span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">testResultsFormat</span><span class="p">:</span> <span class="s">&#39;JUnit&#39;</span>
+    <span class="nt">testResultsFiles</span><span class="p">:</span> <span class="s">&#39;results/*.xml&#39;</span>
+    <span class="nt">testRunTitle</span><span class="p">:</span> <span class="s">&#39;Basic</span><span class="nv"> </span><span class="s">Tests&#39;</span>
+    <span class="nt">failTaskOnFailedTests</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 It calls <code>summarize.js</code> to adjust XUnit reports. Azure DevOps report for this pipeline looks like:</p>
 <p><img alt="Test Report Summary" src="../img/azure_tap_report_summary.png" /></p>

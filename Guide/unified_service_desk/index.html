@@ -11251,7 +11251,7 @@
 <p>Let's create USDFramework test. Choose Web methodology, <code>UnifiedServiceDesk</code> browser profile and RVL options along the way.</p>
 <p><img alt="usd main test" src="../img/usdmaintest.gif" /></p>
 <p>In the main file of the test (<code>Main.js</code>) specify the list of libraries to load:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Web&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DomDynamicsCrm&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;Web&quot;</span><span class="p">,</span> <span class="s2">&quot;DomDynamicsCrm&quot;</span><span class="p">];</span>
 </code></pre></div>
 <p><img alt="usd main js" src="../img/usdmainjs.png" /></p>
 <h2 id="browser-automation-sub-test">Browser Automation Sub-Test<a class="headerlink" href="#browser-automation-sub-test" title="Permanent link">&para;</a></h2>
@@ -11260,7 +11260,7 @@
 <p>Double click USDDashboard test to open it in another instance of Rapise. Append <code>DomDynamicsCrm</code> to the list of loaded libraries.</p>
 <p><img alt="usd web subtest libs" src="../img/usdwebsubtestlibs.gif" /></p>
 <p>Also in <code>User.js</code> of USDDashboard insert a line:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">g_webPluginsAutoDetect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nx">g_webPluginsAutoDetect</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </code></pre></div>
 <p>We can now record web steps into USDDashboard.</p>
 <p><img alt="usd web record play" src="../img/usdwebrecordplay.gif" /></p>
@@ -11268,12 +11268,12 @@
 <p>For recording desktop content related actions create a sub-test inside USDFramework. Let's name it USDCallScript. Choose Desktop methodology along the way.</p>
 <p><img alt="usd desktop subtest" src="../img/usddesktopsubtest.gif" /></p>
 <p>Double click USDCallScript test to open it in another instance of Rapise. Insert the following snippet into <code>Main.js</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">g_recording</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">g_UIAutomationWrapper</span><span class="p">.</span><span class="nx">DeepPointTracking</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">g_recording</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">g_UIAutomationWrapper</span><span class="p">.</span><span class="nx">DeepPointTracking</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><code>DeepPointTracking</code> flag fixes the bug in UI Automation tree of USD that prevents automation tools to track elements located under cursor.</p>

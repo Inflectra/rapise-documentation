@@ -11257,36 +11257,36 @@
 <p><img src="/Guide/img/web_app_profile_create.gif" width="746"/></p>
 <p>The default profile looks like this:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nx">record</span><span class="o">:</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">attributes</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">notEmpty</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nx">exclude</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;\\d&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;title&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;style&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;placeholder&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;autocomplete&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;href&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="p">}</span>
-<span class="w">        </span><span class="p">],</span>
-<span class="w">        </span><span class="nx">classes</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="cm">/* { name: &quot;content&quot; } */</span>
-<span class="w">        </span><span class="p">],</span>
-<span class="w">        </span><span class="nx">anchors</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="cm">/* { xpath: &quot;//div[@class=&#39;content-wrapper&#39;]&quot; } */</span>
-<span class="w">        </span><span class="p">],</span>
-<span class="w">        </span><span class="nx">clickable</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">classes</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">                </span><span class="cm">/* &quot;sapMInputBaseIcon&quot; */</span>
-<span class="w">            </span><span class="p">]</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="nx">handlers</span><span class="o">:</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">elementName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="cm">/*</span>
+    <span class="nx">record</span><span class="o">:</span>
+    <span class="p">{</span>
+        <span class="nx">attributes</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="nx">notEmpty</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">exclude</span><span class="o">:</span> <span class="s2">&quot;\\d&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;title&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;name&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;style&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;type&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;value&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;placeholder&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;autocomplete&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;href&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;role&quot;</span> <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nx">classes</span><span class="o">:</span> <span class="p">[</span>
+            <span class="cm">/* { name: &quot;content&quot; } */</span>
+        <span class="p">],</span>
+        <span class="nx">anchors</span><span class="o">:</span> <span class="p">[</span>
+            <span class="cm">/* { xpath: &quot;//div[@class=&#39;content-wrapper&#39;]&quot; } */</span>
+        <span class="p">],</span>
+        <span class="nx">clickable</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">classes</span><span class="o">:</span> <span class="p">[</span>
+                <span class="cm">/* &quot;sapMInputBaseIcon&quot; */</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="nx">handlers</span><span class="o">:</span>
+        <span class="p">{</span>
+            <span class="nx">elementName</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="cm">/*</span>
 <span class="cm">                var label = __getAttribute(el, &quot;aria-label&quot;);</span>
 <span class="cm">                if (label)</span>
 <span class="cm">                {</span>
@@ -11297,11 +11297,11 @@
 <span class="cm">                    return label;</span>
 <span class="cm">                }</span>
 <span class="cm">                */</span>
-<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
-<span class="w">            </span><span class="p">},</span>
-<span class="w">            </span><span class="nx">skipAttribute</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">node</span><span class="p">,</span><span class="w"> </span><span class="nx">attr</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="cm">/*</span>
+                <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+            <span class="p">},</span>
+            <span class="nx">skipAttribute</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">attr</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="cm">/*</span>
 <span class="cm">                var tag = node.tagName.toLowerCase();</span>
 <span class="cm">                if (attr == &quot;title&quot;)</span>
 <span class="cm">                {</span>
@@ -11318,21 +11318,21 @@
 <span class="cm">                    }</span>
 <span class="cm">                }</span>
 <span class="cm">                */</span>
-<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-<span class="w">            </span><span class="p">},</span>
-<span class="w">            </span><span class="nx">clickable</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="cm">/*</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+            <span class="p">},</span>
+            <span class="nx">clickable</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="cm">/*</span>
 <span class="cm">                var tag = el.tagName.toLowerCase();</span>
 <span class="cm">                if (tag == &quot;p&quot; || __hasAttribute(el, &quot;title&quot;))</span>
 <span class="cm">                {</span>
 <span class="cm">                    return true;</span>
 <span class="cm">                }</span>
 <span class="cm">                */</span>
-<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-<span class="w">            </span><span class="p">}</span><span class="w">            </span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+            <span class="p">}</span>            
+        <span class="p">}</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="webappprofile-format">WebAppProfile Format<a class="headerlink" href="#webappprofile-format" title="Permanent link">&para;</a></h2>
@@ -11413,7 +11413,7 @@
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>If we have an anchor defined like</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nx">xpath</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;//input[../../td/span[text()=&#39;UserName&#39;]]&quot;</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> <span class="nx">xpath</span><span class="o">:</span> <span class="s2">&quot;//input[../../td/span[text()=&#39;UserName&#39;]]&quot;</span><span class="p">}</span>
 </code></pre></div>
 <p>and we click on the field then instead of something like</p>
 <div class="highlight"><pre><span></span><code>//input[@title=&#39;Enter email or user ID:&#39;]

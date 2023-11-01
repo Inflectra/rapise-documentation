@@ -11213,21 +11213,21 @@
 </div>
 <h3 id="rapise-6x">Rapise 6.x<a class="headerlink" href="#rapise-6x" title="Permanent link">&para;</a></h3>
 <p>To leave application running and save session information use <a href="/Libraries/WebDriver/#SaveSession">WebDriver.SaveSession</a> call in <a href="../understanding_the_script/">TestFinish</a> block of your test.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestFinish</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestFinish</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">SaveSession</span><span class="p">();</span>
+    <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">SaveSession</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>To reconnect to the running application use <a href="/Libraries/WebDriver/#ReconnectSession">WebDriver.ReconnectSession</a> call in <a href="../understanding_the_script/">TestPrepare</a> block of your test.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">();</span>
+    <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>If you want Rapise to launch a new browser session if there is no saved one pass <code>true</code> to <a href="/Libraries/WebDriver/#ReconnectSession">WebDriver.ReconnectSession</a> call.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <blockquote>

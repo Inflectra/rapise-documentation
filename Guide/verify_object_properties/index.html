@@ -11210,7 +11210,7 @@
 <p>The generated script will have a corresponding <a href="../assertions/">assert statement</a>:
 <img alt="verify object properties, code" src="../img/verify_object_properties4.png" /></p>
 <p>Or, in JavaScript mode:</p>
-<div class="highlight"><pre><span></span><code><span class="w">   </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Verify that: InnerText=Log In&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In1&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;Log In&quot;</span><span class="w"> </span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>   <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Verify that: InnerText=Log In&quot;</span><span class="p">,</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In1&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Log In&quot;</span> <span class="p">);</span>
 </code></pre></div>
 <h2 id="check-object-exists">Check Object Exists<a class="headerlink" href="#check-object-exists" title="Permanent link">&para;</a></h2>
 <p>Since Rapise 6.6 the <strong>Verify Object Properties</strong> dialog shows <code>Exists</code> property. It adds <a href="../../Libraries/Global/#dowaitfor">Global.DoWaitFor</a> action to the recording.</p>

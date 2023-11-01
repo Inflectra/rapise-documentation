@@ -11615,9 +11615,9 @@
 <h4 id="credential">Credential<a class="headerlink" href="#credential" title="Permanent link">&para;</a></h4>
 <p>The HTTP Basic Authentication Credentials (if any).
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">credential</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-<span class="nx">credential</span><span class="p">.</span><span class="nx">UserName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fredbloggs&quot;</span><span class="p">;</span>
-<span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">credential</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">credential</span><span class="p">.</span><span class="nx">UserName</span> <span class="o">=</span> <span class="s2">&quot;fredbloggs&quot;</span><span class="p">;</span>
+<span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span> <span class="o">=</span> <span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
 <p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
@@ -11659,12 +11659,12 @@ Sample code:</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
 <p>The list of parameters available for this request url.
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetParameters</span><span class="p">();</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">parameters</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">parameters</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetParameters</span><span class="p">();</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">parameters</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">TokenName</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">token</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">TokenName</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Type: object</p>
@@ -11673,10 +11673,10 @@ Sample code:</p>
 <h4 id="requestbodyobject">RequestBodyObject<a class="headerlink" href="#requestbodyobject" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP request as a JavaScript object.
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-<span class="nx">book</span><span class="p">.</span><span class="nx">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;A Christmas Carol&quot;</span><span class="p">;</span>
-<span class="nx">book</span><span class="p">.</span><span class="nx">AuthorId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-<span class="nx">book</span><span class="p">.</span><span class="nx">GenreId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">book</span><span class="p">.</span><span class="nx">Name</span> <span class="o">=</span> <span class="s2">&quot;A Christmas Carol&quot;</span><span class="p">;</span>
+<span class="nx">book</span><span class="p">.</span><span class="nx">AuthorId</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
+<span class="nx">book</span><span class="p">.</span><span class="nx">GenreId</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Insert_Book&quot;</span><span class="p">).</span><span class="nx">SetRequestBodyObject</span><span class="p">(</span><span class="nx">book</span><span class="p">);</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Insert_Book&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
 </code></pre></div>
@@ -11713,11 +11713,11 @@ Sample code:</p>
 <h4 id="requestheaders">RequestHeaders<a class="headerlink" href="#requestheaders" title="Permanent link">&para;</a></h4>
 <p>The list of HTTP headers that are part of this request.
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">headers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetRequestHeaders</span><span class="p">();</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetRequestHeaders</span><span class="p">();</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Type: object</p>
@@ -11726,8 +11726,8 @@ Sample code:</p>
 <h4 id="responsebodyobject">ResponseBodyObject<a class="headerlink" href="#responsebodyobject" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP response deserialized from JSON into a JavaScript object.
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span> <span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
+<span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
 </code></pre></div>
 <p>Type: object</p>
 <p>Accessors: GetResponseBodyObject</p>
@@ -11740,11 +11740,11 @@ Sample code:</p>
 <h4 id="responseheaders">ResponseHeaders<a class="headerlink" href="#responseheaders" title="Permanent link">&para;</a></h4>
 <p>Returns the list of HTTP headers returned from the HTTP response.
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">headers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetResponseHeaders</span><span class="p">();</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">GetResponseHeaders</span><span class="p">();</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Name</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">headers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">Value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Type: object</p>
@@ -11777,10 +11777,10 @@ Sample code:</p>
 <p>Executes a REST service operation, substitutes any of the provided parameter values if necessary.
 Operation fails if HTTP status code is other than 200. If that is an intention, pass <code>ignoreStatus</code> as <code>true</code>.
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">,</span> <span class="s2">&quot;book_id&quot;</span><span class="o">:</span><span class="nx">bookId</span><span class="p">});</span>
+<span class="kd">var</span> <span class="nx">book</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem_Get_BookById&quot;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nx">DoExecute</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span><span class="w"> </span><span class="nx">ignoreStatus</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoExecute</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">ignoreStatus</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11810,7 +11810,7 @@ Sample code:</p>
 <p><a name="DoRemoveParameter"></a>    </p>
 <h4 id="doremoveparameter">DoRemoveParameter<a class="headerlink" href="#doremoveparameter" title="Permanent link">&para;</a></h4>
 <p>Remove one pre-defined parameter. Requires Rapise 6.6+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11833,7 +11833,7 @@ Sample code:</p>
 <p><a name="DoRemoveRequestHeader"></a>    </p>
 <h4 id="doremoverequestheader">DoRemoveRequestHeader<a class="headerlink" href="#doremoverequestheader" title="Permanent link">&para;</a></h4>
 <p>Remove one pre-defined request header by name. Requires Rapise 6.6+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11856,7 +11856,7 @@ Sample code:</p>
 <p><a name="DoVerify"></a>    </p>
 <h4 id="doverify">DoVerify<a class="headerlink" href="#doverify" title="Permanent link">&para;</a></h4>
 <p>Checks that a given part of response equals the expected value.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoVerify</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span><span class="w"> </span><span class="nx">jsonPath</span><span class="p">,</span><span class="w"> </span><span class="nx">expectedValue</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoVerify</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">jsonPath</span><span class="p">,</span> <span class="nx">expectedValue</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>

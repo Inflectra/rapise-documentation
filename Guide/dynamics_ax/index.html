@@ -11462,15 +11462,15 @@
 </li>
 </ul>
 <p>When recording is completed you can see attached libraries in the code of <code>Main.js</code> file:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DynamicsAX&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;DynamicsAX&quot;</span><span class="p">];</span>
 </code></pre></div>
 <h2 id="automatic-adjustment-of-window-title-object-property">Automatic Adjustment of <code>Window Title</code> Object Property<a class="headerlink" href="#automatic-adjustment-of-window-title-object-property" title="Permanent link">&para;</a></h2>
 <p>Main window title of Dynamics AX is dynamic by nature.</p>
 <p><img alt="DynamicsAX Title" src="../img/dynamicsaxtitle.png" /></p>
 <p>It contains not only application name but also domain and AOS information and session Id. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression in object properties. Here it is:</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="nl">regex:</span><span class="p">.</span><span class="n">Microsoft</span><span class="w"> </span><span class="n">Dynamics</span><span class="w"> </span><span class="n">AX</span><span class="p">.</span><span class="o">*</span>
-</code></pre></div></td></tr></table></div>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="nl">regex:</span><span class="p">.</span><span class="n">Microsoft</span> <span class="n">Dynamics</span> <span class="n">AX</span><span class="p">.</span><span class="o">*</span>
+</code></pre></div>
+</td></tr></table>
 <p>So recorded object properties automatically adjusted as</p>
 <p><img alt="Object Properties" src="../img/dynamicsaxobjectproperties.png" /></p>
 <p>Also Rapise automatically sets <code>Record Title</code> in test settings to the same regular expression so you do not need to choose the Dynamics AX main window during subsequent recording sessions.</p>
@@ -11479,59 +11479,59 @@
 <p>Child windows of Dynamics AX also may have dynamic titles. Rapise does not know all the available patterns, so for child windows you need to write regular expressions yourself. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the <code>window title</code> property automatically. In other words when Rapise learns a new object and it's <code>window title</code> is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.</p>
 <h2 id="object-location">Object Location<a class="headerlink" href="#object-location" title="Permanent link">&para;</a></h2>
 <p>Object location property has the form of</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    id1/id2/id3...
-</code></pre></div></td></tr></table></div>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    id1/id2/id3...
+</code></pre></div>
+</td></tr></table>
 <p>where ids refer to parent objects along the path to the top window object. Sometimes such ids also can be dynamic, e.g.:</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    Dimensions display (1 - k13) - Sales order: S30014323, CE15P, Sales order: S30014323/InventDimParmFixed/Pane/View/Style
-</code></pre></div></td></tr></table></div>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    Dimensions display (1 - k13) - Sales order: S30014323, CE15P, Sales order: S30014323/InventDimParmFixed/Pane/View/Style
+</code></pre></div>
+</td></tr></table>
 <p>In this case change dynamic parts by corresponding regular expressions. In the above example updated location looks like:</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="nl">regex:</span><span class="n">Dimensions</span><span class="w"> </span><span class="n">display</span><span class="p">.</span><span class="o">*/</span><span class="n">InventDimParmFixed</span><span class="o">/</span><span class="n">Pane</span><span class="o">/</span><span class="n">View</span><span class="o">/</span><span class="n">Style</span>
-</code></pre></div></td></tr></table></div>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="nl">regex:</span><span class="n">Dimensions</span> <span class="n">display</span><span class="p">.</span><span class="o">*/</span><span class="n">InventDimParmFixed</span><span class="o">/</span><span class="n">Pane</span><span class="o">/</span><span class="n">View</span><span class="o">/</span><span class="n">Style</span>
+</code></pre></div>
+</td></tr></table>
 <p>Here is updated location in the property grid:</p>
 <p><img alt="Object Location" src="../img/dynamicsaxobjectlocation.png" /></p>
 <h2 id="how-to-launch-dynamics-ax-client">How to Launch Dynamics AX Client<a class="headerlink" href="#how-to-launch-dynamics-ax-client" title="Permanent link">&para;</a></h2>
 <p>If in your test you want to check that Dynamics AX application is installed and running place this function into <code>User.js</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">DynamicsAXLaunch</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">DynamicsAXLaunch</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">_DaxIsRunning</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">windows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">g_util</span><span class="p">.</span><span class="nx">FindWindows</span><span class="p">(</span><span class="s2">&quot;regex:.Microsoft Dynamics AX.*&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;AxMainFrame&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">windows</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="kd">function</span> <span class="nx">_DaxIsRunning</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">windows</span> <span class="o">=</span> <span class="nx">g_util</span><span class="p">.</span><span class="nx">FindWindows</span><span class="p">(</span><span class="s2">&quot;regex:.Microsoft Dynamics AX.*&quot;</span><span class="p">,</span> <span class="s2">&quot;AxMainFrame&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">windows</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">_DaxIsRunning</span><span class="p">())</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client is already running&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">_DaxIsRunning</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client is already running&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">fso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span><span class="w"> </span>
+    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span> 
 
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">pfFolder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Global</span><span class="p">.</span><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="s2">&quot;ProgramFilesX86&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">dynamicsPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pfFolder</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\\Microsoft Dynamics AX\\60\\Client\\Bin\\Ax32.exe&quot;</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">fso</span><span class="p">.</span><span class="nx">FileExists</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">))</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client is not installed on this computer&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="kd">var</span> <span class="nx">pfFolder</span> <span class="o">=</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="s2">&quot;ProgramFilesX86&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">dynamicsPath</span> <span class="o">=</span> <span class="nx">pfFolder</span> <span class="o">+</span> <span class="s2">&quot;\\Microsoft Dynamics AX\\60\\Client\\Bin\\Ax32.exe&quot;</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">fso</span><span class="p">.</span><span class="nx">FileExists</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client is not installed on this computer&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">);</span>
+    <span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">);</span>
 
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">60</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">_DaxIsRunning</span><span class="p">())</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client started successfully&quot;</span><span class="p">);</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mf">1000</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">60</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">_DaxIsRunning</span><span class="p">())</span>
+        <span class="p">{</span>
+            <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client started successfully&quot;</span><span class="p">);</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mf">1000</span><span class="p">);</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client did not start&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics AX Client did not start&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>You can now use this function in RVL</p>
@@ -11546,29 +11546,29 @@
 <p>In <a href="/RVL/Overview/">Rapise Visual Language(RVL)</a> it looks like</p>
 <p><img alt="dax recorded rvl" src="../img/daxrecordedrvl.png" /></p>
 <p>In JavaScript:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">DynamicsAXLaunch</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;AddressBarContainer&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;DAT/Retail essentials/Area page&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">DoClickNode</span><span class="p">(</span><span class="s2">&quot;Retail essentials;Customers&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">DoClickNode</span><span class="p">(</span><span class="s2">&quot;Retail essentials;Customers;All customers&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_New&#39;</span><span class="p">).</span><span class="nx">DoMenu</span><span class="p">(</span><span class="s2">&quot;Customer&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_account&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_account&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;Google&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;Google&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_group&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Add&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_group&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_group_lookup_button&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;SOFTWARE&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Customer group&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Save_and_close&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;List&#39;</span><span class="p">).</span><span class="nx">DoMenu</span><span class="p">(</span><span class="s2">&quot;Refresh&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ListPageGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Google&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Maintain&#39;</span><span class="p">).</span><span class="nx">DoMenu</span><span class="p">(</span><span class="s2">&quot;Delete&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Yes&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">DoClickNode</span><span class="p">(</span><span class="s2">&quot;Retail essentials;Area page&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;TabControl&#39;</span><span class="p">).</span><span class="nx">DoSelectTab</span><span class="p">(</span><span class="s2">&quot;Home&quot;</span><span class="p">);</span>
+    <span class="nx">DynamicsAXLaunch</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;AddressBarContainer&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;DAT/Retail essentials/Area page&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">DoClickNode</span><span class="p">(</span><span class="s2">&quot;Retail essentials;Customers&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">DoClickNode</span><span class="p">(</span><span class="s2">&quot;Retail essentials;Customers;All customers&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_New&#39;</span><span class="p">).</span><span class="nx">DoMenu</span><span class="p">(</span><span class="s2">&quot;Customer&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_account&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_account&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;Google&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;Google&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_group&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Add&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_group&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_group_lookup_button&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;SOFTWARE&quot;</span><span class="p">,</span> <span class="s2">&quot;Customer group&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Save_and_close&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;List&#39;</span><span class="p">).</span><span class="nx">DoMenu</span><span class="p">(</span><span class="s2">&quot;Refresh&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ListPageGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Google&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Maintain&#39;</span><span class="p">).</span><span class="nx">DoMenu</span><span class="p">(</span><span class="s2">&quot;Delete&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Yes&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">DoClickNode</span><span class="p">(</span><span class="s2">&quot;Retail essentials;Area page&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;TabControl&#39;</span><span class="p">).</span><span class="nx">DoSelectTab</span><span class="p">(</span><span class="s2">&quot;Home&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
@@ -11623,7 +11623,7 @@
 <span class="c1">// Click open button</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer_group_lookup_button&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="c1">// Select value from the dropdown grid using column name (Customer group) and value (SOFTWARE)</span>
-<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;SOFTWARE&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Customer group&quot;</span><span class="p">);</span>
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Grid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;SOFTWARE&quot;</span><span class="p">,</span> <span class="s2">&quot;Customer group&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="address-bar">Address Bar<a class="headerlink" href="#address-bar" title="Permanent link">&para;</a></h2>
 <p>Click in empty area of the address bar and enter the address where you want to navigate. Rapise will capture <a href="/Libraries/DynamicsAXAddressBar/">DynamicsAXAddressBar</a> object and record <code>DoSetText</code> action.</p>
@@ -11649,7 +11649,7 @@
 <p><strong>RVL</strong></p>
 <p><img alt="daxgridclickrvl" src="../img/daxgridclickrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ListPageGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Contoso Retail Chicago&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;ListPageGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Contoso Retail Chicago&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  <a href="/Libraries/DynamicsAXTable/">DynamicsAXTable</a> for more details.</p>
 <h2 id="infolog">Infolog<a class="headerlink" href="#infolog" title="Permanent link">&para;</a></h2>
@@ -11661,10 +11661,10 @@
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Get the number of messages in the infolog.</span>
 <span class="c1">// For the presented example it returns 2.</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">messageCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;InfologTree&#39;</span><span class="p">).</span><span class="nx">GetChildrenCount</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">messageCount</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;InfologTree&#39;</span><span class="p">).</span><span class="nx">GetChildrenCount</span><span class="p">();</span>
 
 <span class="c1">// Get second message text, returns &quot;Field &#39;User ID&#39; must be filled in.&quot;</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">messageText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">GetChildAt</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">messageText</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Tree&#39;</span><span class="p">).</span><span class="nx">GetChildAt</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="type-to-filter-field">Type to filter Field<a class="headerlink" href="#type-to-filter-field" title="Permanent link">&para;</a></h2>
 <p>Almost each standard grid in Dynamics AX has a text field for filtering grid data.</p>
@@ -11677,19 +11677,19 @@
 <h2 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window<a class="headerlink" href="#maximizeminimizerestore-window" title="Permanent link">&para;</a></h2>
 <p>You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id <code>AddressBarContainer</code>.</p>
 <p>First place the following code into your <code>User.js</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MaximizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MaximizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span> <span class="nx">objectId</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">MinimizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nx">MinimizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span> <span class="nx">objectId</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">RestoreWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nx">RestoreWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span> <span class="nx">objectId</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Iconic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Iconic</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now you can use these functions in RVL and JavaScript.</p>
@@ -11715,13 +11715,13 @@
 <p><strong>RVL</strong></p>
 <p><img alt="daxscrolltoclickrvl" src="../img/daxscrolltoclickrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Alen Shen&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Alen Shen&quot;</span><span class="p">,</span> <span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>If you do not know the value of a cell you can get it this way</p>
 <p><strong>RVL</strong></p>
 <p><img alt="daxgridgetcellrvl" src="../img/daxgridgetcellrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">cellValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">9</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">cellValue</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">9</span><span class="p">,</span> <span class="s2">&quot;Search name&quot;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">cellValue</span><span class="p">);</span>
 </code></pre></div>
 <p>Where 9 is row number.</p>

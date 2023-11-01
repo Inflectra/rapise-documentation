@@ -11448,7 +11448,7 @@
 <p>Some common tasks related to script execution, such as calling scripts, executing separate sheets, returning, exiting and bailing out is served by RVL.</p>
 <h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
 <h2 id="doplayscript">DoPlayScript<a class="headerlink" href="#doplayscript" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlayScript</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">scriptPath</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlayScript</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">scriptPath</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">sheetName</span><span class="p">)</span>
 </code></pre></div>
 <p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code> passing <code>[extraParams]</code> for variable values.</p>
 <ul>
@@ -11457,7 +11457,7 @@
 <li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
 <h2 id="doplaysheet">DoPlaySheet<a class="headerlink" href="#doplaysheet" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlaySheet</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlaySheet</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sheetName</span><span class="p">)</span>
 </code></pre></div>
 <p>Play RVL sheet <code>sheetName</code> from current workbook passing <code>[extraParams]</code> for variable values.</p>
 <ul>
@@ -11465,7 +11465,7 @@
 <li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
 <h2 id="doplaytest">DoPlayTest<a class="headerlink" href="#doplaytest" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTest</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTest</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sstestPath</span><span class="p">)</span>
 </code></pre></div>
 <p>Executes specified test with passing of additional arguments specified as <code>extraParams</code>. It is an analog of <a href="../Global/#DoInvokeTest">Global.DoInvokeTest</a></p>
 <ul>
@@ -11473,13 +11473,13 @@
 <li><strong>[extraParams]</strong>: Param values to be passed into test. May then be accessed via <a href="../Tester/#GetParam">Tester.GetParam</a>.</li>
 </ul>
 <p>To pass sheet name use extra param name <code>sheetName</code>. The test at <code>sstestPath</code> should have <code>Test</code> function defined like this</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayScript</span><span class="p">(</span><span class="s2">&quot;Main.rvl.xlsx&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">GetParam</span><span class="p">(</span><span class="s2">&quot;sheetName&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;RVL&quot;</span><span class="p">));</span>
+    <span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayScript</span><span class="p">(</span><span class="s2">&quot;Main.rvl.xlsx&quot;</span><span class="p">,</span> <span class="nx">Tester</span><span class="p">.</span><span class="nx">GetParam</span><span class="p">(</span><span class="s2">&quot;sheetName&quot;</span><span class="p">,</span> <span class="s2">&quot;RVL&quot;</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="doplaytestparallel">DoPlayTestParallel<a class="headerlink" href="#doplaytestparallel" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTestParallel</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">,</span><span class="w"> </span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">threadsMap</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTestParallel</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">sstestPath</span><span class="p">,</span> <span class="cm">/**objectId*/</span> <span class="nx">threadsMap</span><span class="p">)</span>
 </code></pre></div>
 <p>Executes specified test in parallel threads passing additional arguments specified by in <code>threadsMap</code> map. There are as many threads as there are rows in the map.</p>
 <ul>
@@ -11494,7 +11494,7 @@
 <li><a href="https://youtu.be/5W3KyVH83wc">Rapise with Selenium Grid - Nested Parallel Test Execution</a> (video)</li>
 </ul>
 <h2 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">Exit</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="cm">/**boolean*/</span><span class="w"> </span><span class="nx">isError</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Exit</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">message</span><span class="p">,</span> <span class="cm">/**boolean*/</span> <span class="nx">isError</span><span class="p">)</span>
 </code></pre></div>
 <p>Break execution at the specified line</p>
 <ul>
@@ -11502,8 +11502,8 @@
 <li><code>isError</code>: Specify 'false' if you want just exit without exit message</li>
 </ul>
 <h2 id="getdropdownvalue">GetDropdownValue<a class="headerlink" href="#getdropdownvalue" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">idList</span><span class="p">,</span>
-<span class="w">                 </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">valList</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">xlsPath</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">id</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">idList</span><span class="p">,</span>
+                 <span class="cm">/**string*/</span> <span class="nx">valList</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">xlsPath</span><span class="p">)</span>
 </code></pre></div>
 <p>Remap dropdown value from one list to another</p>
 <ul>
@@ -11515,21 +11515,21 @@
 <p>Example. Suppose we have the following definitions of dropdowns:</p>
 <p><img alt="States Dropdown" src="../../RVL/img/RVL_GetDropdownValue_states.png" /></p>
 <p>Then the call</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">stateCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">RVL</span><span class="p">.</span><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="nx">stateName</span><span class="p">,</span>
-<span class="w">                                     </span><span class="s2">&quot;Functions.SetState.stateName&quot;</span><span class="p">,</span>
-<span class="w">                                     </span><span class="s2">&quot;stateCode&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">stateCode</span> <span class="o">=</span> <span class="nx">RVL</span><span class="p">.</span><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="nx">stateName</span><span class="p">,</span>
+                                     <span class="s2">&quot;Functions.SetState.stateName&quot;</span><span class="p">,</span>
+                                     <span class="s2">&quot;stateCode&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>would return state code for state name. I.e. if <code>stateName="Colorado"</code> then returned value is "CO".</p>
 <p>See also <a href="../../Guide/rvl_editor/#param-dropdowns">RVL Editor Param Dropdowns</a></p>
 <h2 id="return">Return<a class="headerlink" href="#return" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">Return</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">message</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Return</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">message</span><span class="p">)</span>
 </code></pre></div>
 <p>Return from specified line. This method should be called from within RVL.</p>
 <ul>
 <li><code>message</code>: Return message</li>
 </ul>
 <h2 id="setlocatoropts">SetLocatorOpts<a class="headerlink" href="#setlocatoropts" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">SetLocatorOpts</span><span class="p">(</span><span class="cm">/**objectid*/</span><span class="w"> </span><span class="nx">objectid</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetLocatorOpts</span><span class="p">(</span><span class="cm">/**objectid*/</span> <span class="nx">objectid</span><span class="p">,</span> <span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
 </code></pre></div>
 <p>Set additional locator options for specified object. This is a way to modify various script parameters such as <code>locator</code>, <code>xpath</code>, <code>url</code> and thus find different objects.</p>
 <ul>
@@ -11581,7 +11581,7 @@
 <p>All params going after <code>objectid</code> are optional and depend on specified object's locator.</p>
 <p>If you want to reset all values to default value call this method with just <code>objectid</code> and no additional parameters.</p>
 <h2 id="formatstring">FormatString<a class="headerlink" href="#formatstring" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">FormatString</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">fmtString</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
+<div class="highlight"><pre><span></span><code><span class="nx">FormatString</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">fmtString</span><span class="p">,</span> <span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
 </code></pre></div>
 <p>Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: <code>My name is {name}</code>.</p>
 <table>

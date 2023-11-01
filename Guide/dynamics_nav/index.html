@@ -11349,7 +11349,7 @@
 <p>First you need to create a new Basic test and start recording session. Choose Dynamics NAV from the list of applications:</p>
 <p><img alt="Application Chooser Dialog" src="../img/dynamicsnavappchooser.png" /></p>
 <p>Then press <code>Select</code> button to start recording. When recording is completed you will see that Rapise automatically attached necessary libraries in the code of <code>Main.js</code> file:</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DynamicsNAV&quot;</span><span class="p">];</span>
+<div class="highlight"><pre><span></span><code>    <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span> <span class="s2">&quot;DynamicsNAV&quot;</span><span class="p">];</span>
 </code></pre></div>
 <ul>
 <li>
@@ -11365,9 +11365,9 @@
 <p>It may contain not only application name but also name of currently active page or information about currently opened record. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression. You can see it in the object tree and properties of captured objects.</p>
 <p><img alt="Object Properties" src="../img/dynamicsnavobjectproperties.png" /></p>
 <p>Here it is:</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="nl">regex:</span><span class="p">.</span><span class="o">*</span><span class="n">Microsoft</span><span class="w"> </span><span class="n">Dynamics</span><span class="w"> </span><span class="n">NAV</span>
-</code></pre></div></td></tr></table></div>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="nl">regex:</span><span class="p">.</span><span class="o">*</span><span class="n">Microsoft</span> <span class="n">Dynamics</span> <span class="n">NAV</span>
+</code></pre></div>
+</td></tr></table>
 <p>Also Rapise adjusts <code>Record Title</code> in test settings to the same regular expression so you do not need to choose the Dynamics NAV main window during subsequent recording sessions.</p>
 <p><img alt="Test Settings" src="../img/dynamicsnavtestsettings.png" /></p>
 <h3 id="titles-of-child-windows">Titles of Child Windows<a class="headerlink" href="#titles-of-child-windows" title="Permanent link">&para;</a></h3>
@@ -11376,44 +11376,44 @@
 <p>Rapise tries to generate a regular expression for such titles as well. If it does not do so - write the expression yourself. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the <code>window title</code> property automatically. In other words when Rapise learns a new object and it's <code>window title</code> is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.</p>
 <h2 id="how-to-launch-dynamics-nav-client">How to Launch Dynamics NAV Client<a class="headerlink" href="#how-to-launch-dynamics-nav-client" title="Permanent link">&para;</a></h2>
 <p>If in your test you want to check that Dynamics NAV application is installed and running place this function into <code>User.js</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">DynamicsNAVLaunch</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">DynamicsNAVLaunch</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">_NavIsRunning</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">windows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">g_util</span><span class="p">.</span><span class="nx">FindWindows</span><span class="p">(</span><span class="s2">&quot;regex:.*Microsoft Dynamics NAV&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;regex:WindowsForms10.*&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">windows</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="kd">function</span> <span class="nx">_NavIsRunning</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">windows</span> <span class="o">=</span> <span class="nx">g_util</span><span class="p">.</span><span class="nx">FindWindows</span><span class="p">(</span><span class="s2">&quot;regex:.*Microsoft Dynamics NAV&quot;</span><span class="p">,</span> <span class="s2">&quot;regex:WindowsForms10.*&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">windows</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">_NavIsRunning</span><span class="p">())</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client is already running&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">_NavIsRunning</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client is already running&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">fso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span><span class="w"> </span>
+    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Scripting.FileSystemObject&quot;</span><span class="p">);</span> 
 
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">pfFolder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Global</span><span class="p">.</span><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="s2">&quot;ProgramFilesX86&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">dynamicsPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pfFolder</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\\Microsoft Dynamics NAV\\100\\RoleTailored Client\\Microsoft.Dynamics.Nav.Client.exe&quot;</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">fso</span><span class="p">.</span><span class="nx">FileExists</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">))</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client is not installed on this computer&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="kd">var</span> <span class="nx">pfFolder</span> <span class="o">=</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="s2">&quot;ProgramFilesX86&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">dynamicsPath</span> <span class="o">=</span> <span class="nx">pfFolder</span> <span class="o">+</span> <span class="s2">&quot;\\Microsoft Dynamics NAV\\100\\RoleTailored Client\\Microsoft.Dynamics.Nav.Client.exe&quot;</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">fso</span><span class="p">.</span><span class="nx">FileExists</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client is not installed on this computer&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">);</span>
+    <span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">dynamicsPath</span><span class="p">);</span>
 
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">60</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">_NavIsRunning</span><span class="p">())</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client started successfully&quot;</span><span class="p">);</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mf">1000</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">60</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">_NavIsRunning</span><span class="p">())</span>
+        <span class="p">{</span>
+            <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client started successfully&quot;</span><span class="p">);</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="mf">1000</span><span class="p">);</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client did not start&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Dynamics NAV Client did not start&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>You can now use this function in RVL</p>
@@ -11430,14 +11430,14 @@
 <p>In <a href="/RVL/Overview/">Rapise Visual Language(RVL)</a> it looks like</p>
 <p><img alt="test rvl" src="../img/dynamicsnavtestrvl.png" /></p>
 <p>In JavaScript:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_New&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;OK&#39;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;CONTOSO&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Address&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Address&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;1200 Market St&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;_New&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;OK&#39;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;CONTOSO&quot;</span><span class="p">);</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Address&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Address&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;1200 Market St&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
@@ -11471,7 +11471,7 @@
 <span class="c1">// Click on the open button</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;City1&#39;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">();</span>
 <span class="c1">// Select city in the table, choose &quot;Gmunden&quot; value in the column &quot;City&quot;</span>
-<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;City&quot;</span><span class="p">);</span>
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <p>Rapise has complete support for Dynamics NAV grids/tables. It recognizes Dynamics NAV grids as <a href="/Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> object. Rapise can record user clicks on cells and also provides API to get the number of rows, columns, get column name by index.</p>
@@ -11479,52 +11479,52 @@
 <p><strong>RVL</strong></p>
 <p><img alt="dynamicsnavgridclickrvl" src="../img/dynamicsnavgridclickrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;City&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  <a href="/Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> for more details.</p>
 <p>Here is an example of interacting with a grid.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">grid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">grid</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">);</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">cell</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">grid</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">cell</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">cell</span><span class="p">);</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">colValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnValues</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">colValues</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnValues</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colValues</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">));</span>
 
-<span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Bilabankinn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
+<span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Bilabankinn&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 <span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickColumn</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
 <span class="nx">grid</span><span class="p">.</span><span class="nx">DoClickColumn</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">rowCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">grid</span><span class="p">.</span><span class="nx">GetRowCount</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">rowCount</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetRowCount</span><span class="p">();</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">rowCount</span><span class="p">);</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">colCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnCount</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">colCount</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnCount</span><span class="p">();</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colCount</span><span class="p">);</span>
-<span class="k">for</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">colCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">colCount</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">colName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;\&quot;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">colName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\&quot;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">colIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnIndex</span><span class="p">(</span><span class="nx">colName</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colIndex</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">colName</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;\&quot;&quot;</span> <span class="o">+</span> <span class="nx">colName</span> <span class="o">+</span> <span class="s2">&quot;\&quot;&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">colIndex</span> <span class="o">=</span> <span class="nx">grid</span><span class="p">.</span><span class="nx">GetColumnIndex</span><span class="p">(</span><span class="nx">colName</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colIndex</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="dynamics-nav-cook-book">Dynamics NAV Cook Book<a class="headerlink" href="#dynamics-nav-cook-book" title="Permanent link">&para;</a></h2>
 <h2 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window<a class="headerlink" href="#maximizeminimizerestore-window" title="Permanent link">&para;</a></h2>
 <p>You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id <code>ToolBar</code>.</p>
 <p>First place the following code into your <code>User.js</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MaximizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">MaximizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span> <span class="nx">objectId</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">MinimizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nx">MinimizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span> <span class="nx">objectId</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">function</span><span class="w"> </span><span class="nx">RestoreWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nx">RestoreWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span> <span class="nx">objectId</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Iconic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Iconic</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now you can use these functions in RVL and JavaScript.</p>
@@ -11540,8 +11540,8 @@
 <p><strong>RVL</strong></p>
 <p><img alt="dynamicsnavgridscrollrvl" src="../img/dynamicsnavgridscrollrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Francematic&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
-<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoScrollTo</span><span class="p">(</span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Francematic&quot;</span><span class="p">,</span> <span class="s2">&quot;Name&quot;</span><span class="p">);</span>
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;CustomerGrid&#39;</span><span class="p">).</span><span class="nx">DoScrollTo</span><span class="p">(</span><span class="mf">30</span><span class="p">,</span> <span class="mf">7</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>

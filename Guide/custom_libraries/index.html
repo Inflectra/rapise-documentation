@@ -11202,48 +11202,48 @@
 <p>Define one or many application-specific <a href="../global_objects/">Global Objects</a>.</p>
 <h2 id="advanced-support">Advanced Support<a class="headerlink" href="#advanced-support" title="Permanent link">&para;</a></h2>
 <p><strong>Add a Matcher Rule</strong> to the library for every object type in your application. The <code>SeSMatcherRule</code> includes information to identify the object and a set of behaviors.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="o">*</span><span class="nx">yourApplicationRule</span><span class="o">*</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">SeSMatcherRule</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="o">*</span><span class="nx">yourApplicationRule</span><span class="o">*</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">SeSMatcherRule</span><span class="p">(</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">object_type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*yourAppObject*&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">classname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*yourAppFrame*&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//You can use a [regular expression](regular_expressions.md) here</span>
-<span class="w">    </span><span class="nx">behavior</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="o">*</span><span class="nx">yourAppBehavior</span><span class="o">*</span><span class="p">]</span>
+    <span class="nx">object_type</span><span class="o">:</span> <span class="s2">&quot;*yourAppObject*&quot;</span><span class="p">,</span>
+    <span class="nx">classname</span><span class="o">:</span> <span class="s2">&quot;*yourAppFrame*&quot;</span><span class="p">,</span> <span class="c1">//You can use a [regular expression](regular_expressions.md) here</span>
+    <span class="nx">behavior</span><span class="o">:</span> <span class="p">[</span><span class="o">*</span><span class="nx">yourAppBehavior</span><span class="o">*</span><span class="p">]</span>
 <span class="p">})</span>
 </code></pre></div>
 <p><strong>Override Actions</strong>: Override actions in <strong>yourAppBehavior</strong> (above). The action definitions you provides will be used during <a href="../playback/">Playback</a>. Overriding actions does not affect recording.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">HTMLFirefoxBehavior</span><span class="w"> </span><span class="o">=</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">HTMLFirefoxBehavior</span> <span class="o">=</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">actions</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span>
-<span class="w">        </span><span class="nx">actionName</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Click&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">DoAction</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(){}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">actionName</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;SetText&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">DoAction</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">txt</span><span class="p">){}</span>
-<span class="w">    </span><span class="p">}]</span>
-<span class="w"> </span><span class="p">}</span>
+    <span class="nx">actions</span><span class="o">:</span> <span class="p">[{</span>
+        <span class="nx">actionName</span><span class="o">:</span> <span class="s2">&quot;Click&quot;</span><span class="p">,</span>
+        <span class="nx">DoAction</span><span class="o">:</span> <span class="kd">function</span><span class="p">(){}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nx">actionName</span><span class="o">:</span> <span class="s2">&quot;SetText&quot;</span><span class="p">,</span>
+        <span class="nx">DoAction</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">txt</span><span class="p">){}</span>
+    <span class="p">}]</span>
+ <span class="p">}</span>
 </code></pre></div>
 <h2 id="full-support">Full Support<a class="headerlink" href="#full-support" title="Permanent link">&para;</a></h2>
 <p><strong>Enable Recording</strong>:  You can enable recording in two ways. If your application notifies the Accessibility Events interface about application events, you can override events in the <strong>behavior</strong> section of <strong>SeSMatcherRules</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">newBehavior</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">actions</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="cm">/*section deleted for brevity*/</span><span class="p">}],</span>
-<span class="w">    </span><span class="nx">events</span><span class="o">:</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">OnSelect</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="cm">/**SeSObject*/</span><span class="w"> </span><span class="nx">param</span><span class="p">,</span><span class="w"> </span><span class="cm">/*boolean*/</span><span class="w"> </span><span class="nx">badd</span><span class="p">)</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="cm">/*...*/</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="nx">OnSelectAdd</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="cm">/**SeSObject*/</span><span class="w"> </span><span class="nx">param</span><span class="p">,</span><span class="w"> </span><span class="cm">/**boolean*/</span><span class="w"> </span><span class="nx">badd</span><span class="p">)</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="cm">/*...*/</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">     </span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">newBehavior</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">actions</span><span class="o">:</span> <span class="p">[{</span><span class="cm">/*section deleted for brevity*/</span><span class="p">}],</span>
+    <span class="nx">events</span><span class="o">:</span>
+    <span class="p">{</span>
+        <span class="nx">OnSelect</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="cm">/**SeSObject*/</span> <span class="nx">param</span><span class="p">,</span> <span class="cm">/*boolean*/</span> <span class="nx">badd</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="cm">/*...*/</span>
+        <span class="p">},</span>
+        <span class="nx">OnSelectAdd</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="cm">/**SeSObject*/</span> <span class="nx">param</span><span class="p">,</span> <span class="cm">/**boolean*/</span> <span class="nx">badd</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="cm">/*...*/</span>
+        <span class="p">}</span>
+     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">newRule</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">SeSMatcherRule</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">object_type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;someType&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;someRole&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">behavior</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">newBehavior</span><span class="p">],</span>
-<span class="w"> </span><span class="p">})</span>
+<span class="kd">var</span> <span class="nx">newRule</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">SeSMatcherRule</span><span class="p">({</span>
+    <span class="nx">object_type</span><span class="o">:</span> <span class="s2">&quot;someType&quot;</span><span class="p">,</span>
+    <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;someRole&quot;</span><span class="p">,</span>
+    <span class="nx">behavior</span><span class="o">:</span> <span class="p">[</span><span class="nx">newBehavior</span><span class="p">],</span>
+ <span class="p">})</span>
 </code></pre></div>
 <p>Otherwise, you will have to implement <strong>Custom Recording</strong>.</p>
 <p><strong>Custom Recording</strong>: With custom recording, it is the library's responsibility to:</p>

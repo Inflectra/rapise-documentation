@@ -11298,14 +11298,14 @@
 <span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;PATH TO THE TEST&#39;</span><span class="p">);</span>
 </code></pre></div>
 <p>So to run the test in three different browsers we get the following content of the <code>Test.js</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;Selenium - Chrome&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%/../Web Testing 2/Web Testing 2.sstest&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;Selenium - Edge&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%/../Web Testing 2/Web Testing 2.sstest&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;Selenium - Firefox&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%/../Web Testing 2/Web Testing 2.sstest&#39;</span><span class="p">);</span>
+    <span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;Selenium - Chrome&quot;</span><span class="p">);</span>
+    <span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%/../Web Testing 2/Web Testing 2.sstest&#39;</span><span class="p">);</span>
+    <span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;Selenium - Edge&quot;</span><span class="p">);</span>
+    <span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%/../Web Testing 2/Web Testing 2.sstest&#39;</span><span class="p">);</span>
+    <span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;Selenium - Firefox&quot;</span><span class="p">);</span>
+    <span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%/../Web Testing 2/Web Testing 2.sstest&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">];</span>

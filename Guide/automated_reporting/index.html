@@ -11322,12 +11322,12 @@
 <p>So you may download it and open using Rapise to see the full featured automated test report.</p>
 <h3 id="custom-spira-column-mapping">Custom Spira Column Mapping<a class="headerlink" href="#custom-spira-column-mapping" title="Permanent link">&para;</a></h3>
 <p>You may have more fine grained control over SpiraTest column display by applying <code>tags</code> parameter to the <a href="../../Libraries/Tester/#assert">Tester.Assert</a> function.</p>
-<p><div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span>
-<span class="w">        </span><span class="s2">&quot;Assertion Message&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;Comment goes to ActualResult&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="p">{</span><span class="s2">&quot;expectedResult&quot;</span><span class="o">:</span><span class="s2">&quot;expected&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;sampleData&quot;</span><span class="o">:</span><span class="s2">&quot;sampleData&quot;</span><span class="p">}</span>
-<span class="w">    </span><span class="p">);</span>
+<p><div class="highlight"><pre><span></span><code>    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span>
+        <span class="s2">&quot;Assertion Message&quot;</span><span class="p">,</span>
+        <span class="kc">true</span><span class="p">,</span>
+        <span class="s2">&quot;Comment goes to ActualResult&quot;</span><span class="p">,</span>
+        <span class="p">{</span><span class="s2">&quot;expectedResult&quot;</span><span class="o">:</span><span class="s2">&quot;expected&quot;</span><span class="p">,</span> <span class="s2">&quot;sampleData&quot;</span><span class="o">:</span><span class="s2">&quot;sampleData&quot;</span><span class="p">}</span>
+    <span class="p">);</span>
 </code></pre></div>
 In this case <a href="../report_viewer/">ReportViewer</a> shows two additional columns - <strong>ExpectedResult</strong> and <strong>SampleData</strong> and uses them to fill corresponding columns in the Spira test report.</p>
 <blockquote>
@@ -11356,9 +11356,9 @@ In this case <a href="../report_viewer/">ReportViewer</a> shows two additional c
 <p><strong>Destination HTML</strong> - path to the target <code>.html</code> file.</p>
 <h3 id="exporting-report-with-javascript">Exporting Report With JavaScript<a class="headerlink" href="#exporting-report-with-javascript" title="Permanent link">&para;</a></h3>
 <p>This type of export may also be done from <strong>JavaScript</strong> code.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">ldr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Rapise.LogLoader&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ldr</span><span class="p">.</span><span class="nx">LoadTrp</span><span class="p">(</span><span class="s2">&quot;Reports\\ReportAssertions_2020-11-04_15-20.trp&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ldr</span><span class="p">.</span><span class="nx">ExportAsHtml</span><span class="p">(</span><span class="s2">&quot;C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;FullReport.html&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">ldr</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Rapise.LogLoader&quot;</span><span class="p">);</span>
+    <span class="nx">ldr</span><span class="p">.</span><span class="nx">LoadTrp</span><span class="p">(</span><span class="s2">&quot;Reports\\ReportAssertions_2020-11-04_15-20.trp&quot;</span><span class="p">);</span>
+    <span class="nx">ldr</span><span class="p">.</span><span class="nx">ExportAsHtml</span><span class="p">(</span><span class="s2">&quot;C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt&quot;</span><span class="p">,</span> <span class="s2">&quot;FullReport.html&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>If you want to perform post-processing of the report for a specific test case, you can combine the code with the <a href="../understanding_the_script/#sesontestreportready">SeSOnTestReportReady</a> event. This event allows you to execute custom code when the test report is ready for a given test case.</p>
 <h2 id="column-grouping">Column Grouping<a class="headerlink" href="#column-grouping" title="Permanent link">&para;</a></h2>

@@ -11440,7 +11440,7 @@
 <p><a name="DoRemoveParameter"></a>    </p>
 <h4 id="doremoveparameter">DoRemoveParameter<a class="headerlink" href="#doremoveparameter" title="Permanent link">&para;</a></h4>
 <p>Remove one pre-defined parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11463,7 +11463,7 @@
 <p><a name="DoRemoveRequestHeader"></a>    </p>
 <h4 id="doremoverequestheader">DoRemoveRequestHeader<a class="headerlink" href="#doremoverequestheader" title="Permanent link">&para;</a></h4>
 <p>Remove one pre-defined request header by name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11487,19 +11487,19 @@
 <h4 id="getcredential">GetCredential<a class="headerlink" href="#getcredential" title="Permanent link">&para;</a></h4>
 <p>The HTTP Basic Authentication Credentials (if any).
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">credential</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-<span class="nx">credential</span><span class="p">.</span><span class="nx">UserName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fredbloggs&quot;</span><span class="p">;</span>
-<span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">credential</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">credential</span><span class="p">.</span><span class="nx">UserName</span> <span class="o">=</span> <span class="s2">&quot;fredbloggs&quot;</span><span class="p">;</span>
+<span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span> <span class="o">=</span> <span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
 <p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCredential</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetCredential</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.restrequest.getcredential"></a></p>
 <p><a name="GetHeader"></a>    </p>
 <h4 id="getheader">GetHeader<a class="headerlink" href="#getheader" title="Permanent link">&para;</a></h4>
 <p>HTTP header</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11522,19 +11522,19 @@ Sample code:</p>
 <p><a name="GetMethod"></a>    </p>
 <h4 id="getmethod">GetMethod<a class="headerlink" href="#getmethod" title="Permanent link">&para;</a></h4>
 <p>The HTTP Method being used for the request (GET, POST, etc.)</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetMethod</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetMethod</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.restrequest.getmethod"></a></p>
 <p><a name="GetName"></a>    </p>
 <h4 id="getname">GetName<a class="headerlink" href="#getname" title="Permanent link">&para;</a></h4>
 <p>The name of the request operation</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetName</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetName</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.restrequest.getname"></a></p>
 <p><a name="GetParameter"></a>    </p>
 <h4 id="getparameter">GetParameter<a class="headerlink" href="#getparameter" title="Permanent link">&para;</a></h4>
 <p>Access request parameters. Request Body, Headers and Url is then pre-processed by replacing each {paramName} entry with paramName's value.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11557,26 +11557,26 @@ Sample code:</p>
 <p><a name="GetRequestBodyText"></a>    </p>
 <h4 id="getrequestbodytext">GetRequestBodyText<a class="headerlink" href="#getrequestbodytext" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP request in raw text format</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetRequestBodyText</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetRequestBodyText</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.restrequest.getrequestbodytext"></a></p>
 <p><a name="GetUrl"></a>    </p>
 <h4 id="geturl">GetUrl<a class="headerlink" href="#geturl" title="Permanent link">&para;</a></h4>
 <p>The URL being used to access the web service</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetUrl</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">GetUrl</span><span class="p">()</span> 
 </code></pre></div>
 <p><a name="see.also.restrequest.geturl"></a></p>
 <p><a name="SetCredential"></a>    </p>
 <h4 id="setcredential">SetCredential<a class="headerlink" href="#setcredential" title="Permanent link">&para;</a></h4>
 <p>The HTTP Basic Authentication Credentials (if any).
 Sample code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">credential</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-<span class="nx">credential</span><span class="p">.</span><span class="nx">UserName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fredbloggs&quot;</span><span class="p">;</span>
-<span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">credential</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">credential</span><span class="p">.</span><span class="nx">UserName</span> <span class="o">=</span> <span class="s2">&quot;fredbloggs&quot;</span><span class="p">;</span>
+<span class="nx">credential</span><span class="p">.</span><span class="nx">Password</span> <span class="o">=</span> <span class="s2">&quot;MyPassword&quot;</span><span class="p">;</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
 <p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">value2</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">value2</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11604,7 +11604,7 @@ Sample code:</p>
 <p><a name="SetHeader"></a>    </p>
 <h4 id="setheader">SetHeader<a class="headerlink" href="#setheader" title="Permanent link">&para;</a></h4>
 <p>HTTP header</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11632,7 +11632,7 @@ Sample code:</p>
 <p><a name="SetMethod"></a>    </p>
 <h4 id="setmethod">SetMethod<a class="headerlink" href="#setmethod" title="Permanent link">&para;</a></h4>
 <p>The HTTP Method being used for the request (GET, POST, etc.)</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetMethod</span><span class="p">(</span><span class="nx">method</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetMethod</span><span class="p">(</span><span class="nx">method</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11655,7 +11655,7 @@ Sample code:</p>
 <p><a name="SetParameter"></a>    </p>
 <h4 id="setparameter">SetParameter<a class="headerlink" href="#setparameter" title="Permanent link">&para;</a></h4>
 <p>Access request parameters. Request Body, Headers and Url is then pre-processed by replacing each {paramName} entry with paramName's value.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11683,7 +11683,7 @@ Sample code:</p>
 <p><a name="SetRequestBodyText"></a>    </p>
 <h4 id="setrequestbodytext">SetRequestBodyText<a class="headerlink" href="#setrequestbodytext" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP request in raw text format</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetRequestBodyText</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetRequestBodyText</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11706,7 +11706,7 @@ Sample code:</p>
 <p><a name="SetUrl"></a>    </p>
 <h4 id="seturl">SetUrl<a class="headerlink" href="#seturl" title="Permanent link">&para;</a></h4>
 <p>The URL being used to access the web service</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SetUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> 
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>

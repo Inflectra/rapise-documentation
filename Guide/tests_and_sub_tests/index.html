@@ -11202,27 +11202,27 @@
 <p>In this case <strong>parent</strong> test contains all learned objects and user-defined functions.</p>
 <p><img alt="subtestdependant" src="../img/tests_and_sub_tests1.png" /></p>
 <p>For example, the parent test may have objects <code>User Name</code>, <code>Password</code>, <code>Sign On</code>. And function</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Login</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span><span class="w"> </span><span class="nx">password</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Login</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span> <span class="nx">password</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">   </span><span class="p">...</span>
+   <span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><strong>SubTest1</strong> may be used to check login with valid credentials, <code>Main.js</code> from <strong>SubTest1</strong> looks like:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">   </span><span class="nx">Login</span><span class="p">(</span><span class="s2">&quot;validuser&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;validpassword&quot;</span><span class="p">);</span>
+   <span class="nx">Login</span><span class="p">(</span><span class="s2">&quot;validuser&quot;</span><span class="p">,</span> <span class="s2">&quot;validpassword&quot;</span><span class="p">);</span>
 
-<span class="w">   </span><span class="c1">// Now check that login is successful</span>
-<span class="w">   </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Login leads to welcome message: &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="s1">&#39;Welcome_User&#39;</span><span class="p">));</span>
+   <span class="c1">// Now check that login is successful</span>
+   <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Login leads to welcome message: &quot;</span><span class="p">,</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="s1">&#39;Welcome_User&#39;</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><strong>SubTest2</strong> may be used to check login with invalid Credentials (i.e. it is a fail-test). <code>Main.js</code> from <strong>SubTest2</strong> looks like:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">   </span><span class="nx">Login</span><span class="p">(</span><span class="s2">&quot;invaliduser&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;invvalidpassword&quot;</span><span class="p">);</span>
+   <span class="nx">Login</span><span class="p">(</span><span class="s2">&quot;invaliduser&quot;</span><span class="p">,</span> <span class="s2">&quot;invvalidpassword&quot;</span><span class="p">);</span>
 
-<span class="w">   </span><span class="c1">// Now check that login is successful</span>
-<span class="w">   </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Login leads to invalid user object: &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="s1">&#39;Invalid_User&#39;</span><span class="p">));</span>
+   <span class="c1">// Now check that login is successful</span>
+   <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Login leads to invalid user object: &quot;</span><span class="p">,</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="s1">&#39;Invalid_User&#39;</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Function <code>Login</code> and objects <code>Welcome_User</code> and <code>Invalid_User</code> are defined in the <strong>parent</strong> test. The sub-tests are just implementing various scenarios for the same set of objects.</p>

@@ -11164,72 +11164,72 @@
 <p>Sometimes using Rapise you need to access files on the Windows file system, either for testing purposes, or to object test data stored in a flat CSV, TSV or text file.</p>
 <h2 id="file-global-object">File Global Object<a class="headerlink" href="#file-global-object" title="Permanent link">&para;</a></h2>
 <p>Normally file operations in Rapise are done with global <a href="/Libraries/File/">File</a> object.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">fn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;TestFile.txt&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">cnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello world!&quot;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="s2">&quot;TestFile.txt&quot;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">cnt</span> <span class="o">=</span> <span class="s2">&quot;Hello world!&quot;</span><span class="p">;</span>
 
-<span class="w">    </span><span class="c1">// Test exists/delete</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">File</span><span class="p">.</span><span class="nx">Exists</span><span class="p">(</span><span class="nx">fn</span><span class="p">))</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">File</span><span class="p">.</span><span class="nx">Delete</span><span class="p">(</span><span class="nx">fn</span><span class="p">);</span>
-<span class="w">        </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;File deleted&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">!</span><span class="nx">File</span><span class="p">.</span><span class="nx">Exists</span><span class="p">(</span><span class="nx">fn</span><span class="p">));</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="c1">// Test exists/delete</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">File</span><span class="p">.</span><span class="nx">Exists</span><span class="p">(</span><span class="nx">fn</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="nx">File</span><span class="p">.</span><span class="nx">Delete</span><span class="p">(</span><span class="nx">fn</span><span class="p">);</span>
+        <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;File deleted&quot;</span><span class="p">,</span> <span class="o">!</span><span class="nx">File</span><span class="p">.</span><span class="nx">Exists</span><span class="p">(</span><span class="nx">fn</span><span class="p">));</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="c1">// Test read/write</span>
-<span class="w">    </span><span class="nx">File</span><span class="p">.</span><span class="nx">Write</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span><span class="w"> </span><span class="nx">cnt</span><span class="p">);</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;File exists&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">File</span><span class="p">.</span><span class="nx">Exists</span><span class="p">(</span><span class="nx">fn</span><span class="p">)))</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">File</span><span class="p">.</span><span class="nx">Read</span><span class="p">(</span><span class="nx">fn</span><span class="p">);</span>
-<span class="w">        </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s2">&quot;File write/read&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">cnt</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="c1">// Test read/write</span>
+    <span class="nx">File</span><span class="p">.</span><span class="nx">Write</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">cnt</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;File exists&quot;</span><span class="p">,</span> <span class="nx">File</span><span class="p">.</span><span class="nx">Exists</span><span class="p">(</span><span class="nx">fn</span><span class="p">)))</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">File</span><span class="p">.</span><span class="nx">Read</span><span class="p">(</span><span class="nx">fn</span><span class="p">);</span>
+        <span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s2">&quot;File write/read&quot;</span><span class="p">,</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">cnt</span><span class="p">);</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="c1">// Test append</span>
-<span class="w">    </span><span class="nx">File</span><span class="p">.</span><span class="nx">Write</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">File</span><span class="p">.</span><span class="nx">Append</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">File</span><span class="p">.</span><span class="nx">Read</span><span class="p">(</span><span class="nx">fn</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s2">&quot;File append works&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CC&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">);</span>
+    <span class="c1">// Test append</span>
+    <span class="nx">File</span><span class="p">.</span><span class="nx">Write</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">);</span>
+    <span class="nx">File</span><span class="p">.</span><span class="nx">Append</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">File</span><span class="p">.</span><span class="nx">Read</span><span class="p">(</span><span class="nx">fn</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s2">&quot;File append works&quot;</span><span class="p">,</span> <span class="s2">&quot;CC&quot;</span><span class="p">,</span> <span class="nx">text</span><span class="p">);</span>
 
-<span class="w">    </span><span class="c1">// Folder exists/create/delete</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">folderExists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Folder exists&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">folderExists</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">testFolderPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">File</span><span class="p">.</span><span class="nx">FolderInfo</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">).</span><span class="nx">Path</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">testFolderPath</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">subFolderPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">testFolderPath</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\\SubFolder20170314&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">File</span><span class="p">.</span><span class="nx">CreateFolder</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Sub folder exists, CreateFolder works&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">));</span>
-<span class="w">    </span><span class="nx">File</span><span class="p">.</span><span class="nx">DeleteFolder</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Sub folder does not exist, DeleteFolder works&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">!</span><span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">));</span>
+    <span class="c1">// Folder exists/create/delete</span>
+    <span class="kd">var</span> <span class="nx">folderExists</span> <span class="o">=</span> <span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Folder exists&quot;</span><span class="p">,</span> <span class="nx">folderExists</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">testFolderPath</span> <span class="o">=</span> <span class="nx">File</span><span class="p">.</span><span class="nx">FolderInfo</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">).</span><span class="nx">Path</span><span class="p">;</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">testFolderPath</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">subFolderPath</span> <span class="o">=</span> <span class="nx">testFolderPath</span> <span class="o">+</span> <span class="s2">&quot;\\SubFolder20170314&quot;</span><span class="p">;</span>
+    <span class="nx">File</span><span class="p">.</span><span class="nx">CreateFolder</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Sub folder exists, CreateFolder works&quot;</span><span class="p">,</span> <span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">));</span>
+    <span class="nx">File</span><span class="p">.</span><span class="nx">DeleteFolder</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Sub folder does not exist, DeleteFolder works&quot;</span><span class="p">,</span> <span class="o">!</span><span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">subFolderPath</span><span class="p">));</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="filesystemobject">FileSystemObject<a class="headerlink" href="#filesystemobject" title="Permanent link">&para;</a></h2>
 <p>Alternatively you can can access the file system using the <code>FileSystemObject</code>.</p>
 <p><a href="http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx">http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx</a></p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//IOMode constants</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">IOMode_ForReading</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">IOMode_ForWriting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">IOMode_ForAppending</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">8</span><span class="p">;</span>
-<span class="w">    </span><span class="c1">//var Format constants</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">IOFormat_ASCII</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">IOFormat_Unicode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">;</span>
-<span class="w">    </span><span class="c1">//This sample demonstrates how to manipulate the Windows file system using Rapise</span>
-<span class="w">    </span><span class="c1">//We shall open a text file for writing in this simple example</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">fso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ActiveXObject</span><span class="p">(</span><span class="s1">&#39;Scripting.FileSystemObject&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">ts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fso</span><span class="p">.</span><span class="nx">CreateTextFile</span><span class="p">(</span><span class="s1">&#39;C:\\Temp\\MyTestFile.txt&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fso</span><span class="p">.</span><span class="nx">GetFile</span><span class="p">(</span><span class="s1">&#39;C:\\Temp\\MyTestFile.txt&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">file</span><span class="p">.</span><span class="nx">OpenAsTextStream</span><span class="p">(</span><span class="nx">IOMode_ForWriting</span><span class="p">,</span><span class="w"> </span><span class="nx">IOFormat_Unicode</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ts</span><span class="p">.</span><span class="nx">WriteLine</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s1">&#39;Wrote File&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//Now read this file back</span>
-<span class="w">    </span><span class="nx">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fso</span><span class="p">.</span><span class="nx">GetFile</span><span class="p">(</span><span class="s1">&#39;C:\\Temp\\MyTestFile.txt&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">file</span><span class="p">.</span><span class="nx">OpenAsTextStream</span><span class="p">(</span><span class="nx">IOMode_ForReading</span><span class="p">,</span><span class="w"> </span><span class="nx">IOFormat_Unicode</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ts</span><span class="p">.</span><span class="nx">ReadLine</span><span class="p">();</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
+    <span class="c1">//IOMode constants</span>
+    <span class="kd">var</span> <span class="nx">IOMode_ForReading</span> <span class="o">=</span> <span class="mf">1</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOMode_ForWriting</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOMode_ForAppending</span> <span class="o">=</span> <span class="mf">8</span><span class="p">;</span>
+    <span class="c1">//var Format constants</span>
+    <span class="kd">var</span> <span class="nx">IOFormat_ASCII</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">IOFormat_Unicode</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1</span><span class="p">;</span>
+    <span class="c1">//This sample demonstrates how to manipulate the Windows file system using Rapise</span>
+    <span class="c1">//We shall open a text file for writing in this simple example</span>
+    <span class="kd">var</span> <span class="nx">fso</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s1">&#39;Scripting.FileSystemObject&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">ts</span> <span class="o">=</span> <span class="nx">fso</span><span class="p">.</span><span class="nx">CreateTextFile</span><span class="p">(</span><span class="s1">&#39;C:\\Temp\\MyTestFile.txt&#39;</span><span class="p">);</span>
+    <span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">fso</span><span class="p">.</span><span class="nx">GetFile</span><span class="p">(</span><span class="s1">&#39;C:\\Temp\\MyTestFile.txt&#39;</span><span class="p">);</span>
+    <span class="nx">ts</span> <span class="o">=</span> <span class="nx">file</span><span class="p">.</span><span class="nx">OpenAsTextStream</span><span class="p">(</span><span class="nx">IOMode_ForWriting</span><span class="p">,</span> <span class="nx">IOFormat_Unicode</span><span class="p">);</span>
+    <span class="nx">ts</span><span class="p">.</span><span class="nx">WriteLine</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
+    <span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s1">&#39;Wrote File&#39;</span><span class="p">);</span>
+    <span class="c1">//Now read this file back</span>
+    <span class="nx">file</span> <span class="o">=</span> <span class="nx">fso</span><span class="p">.</span><span class="nx">GetFile</span><span class="p">(</span><span class="s1">&#39;C:\\Temp\\MyTestFile.txt&#39;</span><span class="p">);</span>
+    <span class="nx">ts</span> <span class="o">=</span> <span class="nx">file</span><span class="p">.</span><span class="nx">OpenAsTextStream</span><span class="p">(</span><span class="nx">IOMode_ForReading</span><span class="p">,</span> <span class="nx">IOFormat_Unicode</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">ts</span><span class="p">.</span><span class="nx">ReadLine</span><span class="p">();</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+    <span class="nx">ts</span><span class="p">.</span><span class="nx">Close</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

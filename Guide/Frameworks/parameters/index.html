@@ -11376,14 +11376,14 @@ v11     v12
 v21     v22
 </code></pre></div>
 <p>Additionally, we have two datacolumn parameters, <code>DC1</code> and <code>DC2</code>, which are linked to columns <code>C1</code> and <code>C2</code>, respectively. We also have two multiselect parameters, <code>MP1</code> with selected values <code>[MP1O1, MP1O2]</code> and <code>MP2</code> with selected values <code>[MP2O1, MP2O2]</code>. If our test set is configured accordingly, RapiseLauncher will execute it 8 times with the following parameter values:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP1O1
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP1O1
 DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP1O2
 DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O1
 DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O2
@@ -11391,7 +11391,8 @@ DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O2
 </span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP1O2
 </span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP1O1
 </span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP1O2    
-</span></code></pre></div></td></tr></table></div>
+</span></code></pre></div>
+</td></tr></table>
 <p>To explore a practical application of multiselect and datacolumn parameters, please refer to <a href="https://www.inflectra.com/Support/KnowledgeBase/KB760.aspx">this knowledge base article</a> for a real-life example.</p>
 </div>
 <h3 id="builtin-parameters">Builtin Parameters<a class="headerlink" href="#builtin-parameters" title="Permanent link">&para;</a></h3>
@@ -11415,8 +11416,8 @@ DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O2
 <p>In RVL just set <code>ParamType</code> to <code>testparam</code> and select a framework parameter from the dropdown.</p>
 <p><img alt="" src="../img/parameters_read_parameter_rvl.png" width="691px" /></p>
 <p>In JavaScript use <a href="../../../Libraries/Tester/#getparam">Tester.GetParam</a>. Keep in mind that parameter names are case-sensitive.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">GetParam</span><span class="p">(</span><span class="s2">&quot;Username&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">username</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">username</span> <span class="o">=</span> <span class="nx">Tester</span><span class="p">.</span><span class="nx">GetParam</span><span class="p">(</span><span class="s2">&quot;Username&quot;</span><span class="p">);</span>
+    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">username</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>

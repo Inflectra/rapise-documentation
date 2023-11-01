@@ -11385,13 +11385,13 @@
 <h3 id="mainjs">Main.js<a class="headerlink" href="#mainjs" title="Permanent link">&para;</a></h3>
 <p><code>Main.js</code> always contains two things: <code>Test(param)</code> entry point function and <code>g_load_libraries</code> array containing the libraries needed for this test case.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Default entry point of the test</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">//script logic</span>
+    <span class="c1">//script logic</span>
 <span class="p">}</span>
 
 <span class="c1">// List of loaded libraries. It is automatically populated by the recorder.</span>
-<span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">];</span><span class="w"> </span><span class="c1">// This script will load the Web library</span>
+<span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">];</span> <span class="c1">// This script will load the Web library</span>
 </code></pre></div>
 <h3 id="userjs">User.js<a class="headerlink" href="#userjs" title="Permanent link">&para;</a></h3>
 <p><code>User.js</code> Is a place where to put functions and variables specific to a given test case.</p>
@@ -11399,9 +11399,9 @@
 </code></pre></div>
 <h3 id="objectjs">Object.js<a class="headerlink" href="#objectjs" title="Permanent link">&para;</a></h3>
 <p><code>Object.js</code> is an object repository. You may consider it as a <code>JSON</code> definition assigned to a <code>saved_script_objects</code> variable.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">saved_script_objects</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">saved_script_objects</span> <span class="o">=</span> 
 <span class="p">{</span>
-<span class="w">   </span><span class="c1">//array of objects used in this script.</span>
+   <span class="c1">//array of objects used in this script.</span>
 <span class="p">};</span>
 </code></pre></div>
 <h3 id="mainrvlxlsx">Main.rvl.xlsx<a class="headerlink" href="#mainrvlxlsx" title="Permanent link">&para;</a></h3>
@@ -11411,7 +11411,7 @@
 <h3 id="sesontestinit">SeSOnTestInit<a class="headerlink" href="#sesontestinit" title="Permanent link">&para;</a></h3>
 <p>This callback function is called once before script playback. It should be used to initialize script-wide data (counters, open datasets, etc).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-<span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Initializing...&quot;</span><span class="p">);</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Initializing...&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
 <p><code>SeSOnTestInit</code> may be used multiple times. For example, one may use it in the <a href="../custom_libraries/">custom library</a> to launch an application or clean up the logs and then use it in the test to do test-specific actions.</p>
@@ -11422,7 +11422,7 @@
 <h3 id="sesontestfinish">SeSOnTestFinish<a class="headerlink" href="#sesontestfinish" title="Permanent link">&para;</a></h3>
 <p>This function defines a callback that is called once after test execution. It should be used to release resources (data sets, spreadsheets). It may also be used as an integration point with external test management or bug tracking systems.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFinish</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-<span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Finalizing...&quot;</span><span class="p">);</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Finalizing...&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
 <p><code>SeSOnTestFinish</code> may be used multiple times. For example, one may use it in the custom library to close an application.</p>
@@ -11433,7 +11433,7 @@
 <p>For advanced users; <code>SeSOnTestPrepare</code> callback is called before recording and before playback. It may be used to properly initialize libraries.</p>
 <p>Please, note that <code>SeSOnTestPrepare</code> may be put into a <code>shared</code> file. In this case it will be executed for playback but not for recording (because recorder does not load shared files). But if you put it into your library, it will be executed in all cases when library is loaded.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestPrepare</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-<span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Preparing...&quot;</span><span class="p">);</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Preparing...&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
 <p><code>SeSOnTestPrepare</code> may be used multiple times. For example, one may use it in the custom library to configure environment for the application and then use it in the test to do test-specific actions.</p>
@@ -11444,40 +11444,40 @@
 <h3 id="sesontestfailed">SeSOnTestFailed<a class="headerlink" href="#sesontestfailed" title="Permanent link">&para;</a></h3>
 <p>May be used to do something on test failure event.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFailed</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">status</span><span class="p">){</span>
-<span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test Failed&quot;</span><span class="p">);</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test Failed&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
 <p><strong>status</strong> parameter will always be 0 (Failed) or -1 (Undefined).</p>
 <h3 id="sesontestreportready">SeSOnTestReportReady<a class="headerlink" href="#sesontestreportready" title="Permanent link">&para;</a></h3>
 <p>Final point, called when report is closed and is ready for post-processing.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestReportReady</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-<span class="w">    </span><span class="c1">// Don&#39;t use anything that writes to the report at this point!</span>
-<span class="w">    </span><span class="c1">// Only low level operations and functions: File, WScript.Shell etc.</span>
-<span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test done with status: &quot;</span><span class="o">+</span><span class="nx">g_testPassed</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Report file: &quot;</span><span class="o">+</span><span class="nx">g_reportFileName</span><span class="p">);</span>
+    <span class="c1">// Don&#39;t use anything that writes to the report at this point!</span>
+    <span class="c1">// Only low level operations and functions: File, WScript.Shell etc.</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test done with status: &quot;</span><span class="o">+</span><span class="nx">g_testPassed</span><span class="p">);</span>
+    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Report file: &quot;</span><span class="o">+</span><span class="nx">g_reportFileName</span><span class="p">);</span>
 <span class="p">})</span>
 </code></pre></div>
 <h3 id="sesonobjectnotfound">SeSOnObjectNotFound<a class="headerlink" href="#sesonobjectnotfound" title="Permanent link">&para;</a></h3>
 <p>Final point, called when object is not found on the screen.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeSOnObjectNotFound</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">,</span><span class="w"> </span><span class="cm">/**object*/</span><span class="nx">params</span><span class="p">){</span>
-<span class="w">    </span><span class="c1">// When &#39;Back&#39; is not on the screen, use &#39;Home&#39; instead.</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">objectId</span><span class="o">==</span><span class="s1">&#39;Back&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Home&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnObjectNotFound</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">objectId</span><span class="p">,</span> <span class="cm">/**object*/</span><span class="nx">params</span><span class="p">){</span>
+    <span class="c1">// When &#39;Back&#39; is not on the screen, use &#39;Home&#39; instead.</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">objectId</span><span class="o">==</span><span class="s1">&#39;Back&#39;</span><span class="p">)</span> <span class="k">return</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Home&#39;</span><span class="p">,</span> <span class="nx">params</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
 <p><strong>objectId</strong> - object id; <strong>params</strong> - additional locator parameters (if any).</p>
 <h3 id="sesonlocatorvalue">SeSOnLocatorValue<a class="headerlink" href="#sesonlocatorvalue" title="Permanent link">&para;</a></h3>
 <p>A way to modify default object locator value. Useful when you, for example.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeSOnLocatorValue</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="cm">/**object*/</span><span class="nx">objInfo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// We use &#39;{home_xpath}&#39; as a placeholder to replace it with different value here.</span>
-<span class="w">    </span><span class="c1">// ID is accessible as objInfo.object_id</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">value</span><span class="o">==</span><span class="s1">&#39;{home_xpath}&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;//a[@href=&#39;Default.aspx&#39;]&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnLocatorValue</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">value</span><span class="p">,</span> <span class="cm">/**object*/</span><span class="nx">objInfo</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// We use &#39;{home_xpath}&#39; as a placeholder to replace it with different value here.</span>
+    <span class="c1">// ID is accessible as objInfo.object_id</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">value</span><span class="o">==</span><span class="s1">&#39;{home_xpath}&#39;</span><span class="p">)</span> <span class="k">return</span> <span class="s2">&quot;//a[@href=&#39;Default.aspx&#39;]&quot;</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">value</span><span class="p">;</span>
 <span class="p">});</span>
 </code></pre></div>
 <p><strong>value</strong> - value to replace; <strong>objInfo</strong> - all locator values.</p>
 <h3 id="sesonreportmessage">SeSOnReportMessage<a class="headerlink" href="#sesonreportmessage" title="Permanent link">&para;</a></h3>
 <p>Allows interrupting <code>Tester._Report</code> and either changing it or checking it. <code>Tester._Report</code> is internally called by all <code>Tester.*Assert</code> calls executed by user or internally by other parts of Rapise (i.e. each <code>Obj.DoAction</code> writes a line into report).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeSOnReportMessage</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">type</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">status</span><span class="p">,</span><span class="w"> </span><span class="cm">/**SeSReportLink|SeSReportText|SeSReportImage|Object[]*/</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="cm">/**object*/</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnReportMessage</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span> <span class="nx">type</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">message</span><span class="p">,</span> <span class="cm">/**number*/</span> <span class="nx">status</span><span class="p">,</span> <span class="cm">/**SeSReportLink|SeSReportText|SeSReportImage|Object[]*/</span> <span class="nx">data</span><span class="p">,</span> <span class="cm">/**object*/</span> <span class="nx">tags</span><span class="p">)</span> <span class="p">{</span>
 <span class="c1">// return true - skip the message from being reported</span>
 <span class="c1">// return false / nothing - proceed with this message</span>
 <span class="p">});</span>

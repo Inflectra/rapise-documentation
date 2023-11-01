@@ -11382,24 +11382,24 @@
 <p><img alt="vstest_rl_pipeline_create_11_ext_yaml.png" src="../img/vstest_rl_pipeline_create_11_ext_yaml.png" /></p>
 <p>You may then tweak its configuration directly using the text editor.</p>
 <p><div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
 
 <span class="nt">pool</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">vmImage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">windows-latest</span>
+  <span class="nt">vmImage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">windows-latest</span>
 
 <span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RapiseLauncherTask@1</span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">spiraConnection</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;SpiraConnection&#39;</span>
-<span class="w">    </span><span class="nt">spiraProjectId</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;93&#39;</span>
-<span class="w">    </span><span class="nt">spiraTestSetId</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;145&#39;</span>
-<span class="w">    </span><span class="nt">spiraAutomationHost</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;AZURE&#39;</span>
-<span class="w">    </span><span class="nt">installRapise</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">    </span><span class="nt">rapiseVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;6.7.22.25&#39;</span>
-<span class="w">    </span><span class="nt">setScreenSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">    </span><span class="nt">screenWidth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1920</span>
-<span class="w">    </span><span class="nt">screenHeight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1080</span>
-<span class="w">    </span><span class="nt">recordVideo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">RapiseLauncherTask@1</span>
+  <span class="nt">inputs</span><span class="p">:</span>
+    <span class="nt">spiraConnection</span><span class="p">:</span> <span class="s">&#39;SpiraConnection&#39;</span>
+    <span class="nt">spiraProjectId</span><span class="p">:</span> <span class="s">&#39;93&#39;</span>
+    <span class="nt">spiraTestSetId</span><span class="p">:</span> <span class="s">&#39;145&#39;</span>
+    <span class="nt">spiraAutomationHost</span><span class="p">:</span> <span class="s">&#39;AZURE&#39;</span>
+    <span class="nt">installRapise</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">rapiseVersion</span><span class="p">:</span> <span class="s">&#39;6.7.22.25&#39;</span>
+    <span class="nt">setScreenSize</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">screenWidth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1920</span>
+    <span class="nt">screenHeight</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1080</span>
+    <span class="nt">recordVideo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 And then execute.
 <img alt="vstest_rl_pipeline_create_13_ext_run.png" src="../img/vstest_rl_pipeline_create_13_ext_run.png" />
