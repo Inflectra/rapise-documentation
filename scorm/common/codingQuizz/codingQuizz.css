@@ -1,0 +1,16 @@
+.quiz-hide > div:nth-of-type(2) > .lia-quiz-generic > div:nth-of-type(2) > button:first-child {
+  display: none;
+}
+
+.quiz-hide > .lia-code > .lia-code-control > div:first-child > button:first-child {
+  visibility: hidden;
+}
+
+.quiz-hide > .lia-code > .lia-code-control > div:first-child > button:first-child:after {
+  content: 'Check';
+  visibility: visible;
+  border: 1px solid rgb(var(--color-highlight));
+  border-radius: 0.8rem;
+  padding: .5rem .6rem;
+  margin-left: -2rem;
+}
