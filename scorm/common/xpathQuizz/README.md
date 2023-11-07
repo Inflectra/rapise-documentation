@@ -8,12 +8,6 @@ script: xpathQuizz.js
 
 @xpathQuiz: @xpathQuiz_(@uid,`@0`,```@1```)
 
-@xpathQuiz_22
-<div id="domq_@0">
-0: @0 1: @1 2: @2
-</div>
-@end
-
 @xpathQuiz_
 <div id="domq_@0">
 
