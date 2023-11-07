@@ -1,0 +1,6 @@
+Sharing your md:
+
+https://liascript.github.io/course/?<path>
+
+I.e.:
+https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md#2

@@ -34,7 +34,8 @@ setTimeout(()=>prefill('domq_'+id),150)
  -->
 [[*]]
 <script>
-    validateXPath('@0', '@input', send)
+    const inp = `@input`;
+    validateXPath('@0', inp, send)
 </script>
 
 </div>
@@ -92,6 +93,16 @@ Single item selection.
     <li _correct>Carrot</li>
     <li _correct>Plum</li>
     <li _correct>Apple</li>
+</ul>
+```
+
+# XPath 4
+
+``` xml @xpathQuiz(`Select a plum:`)
+<ul _root>
+    <li id="carrot">Carrot</li>
+    <li _correct id="plum">Plum</li>
+    <li id="apple">Apple</li>
 </ul>
 ```
 
