@@ -1,34 +1,16 @@
 <!--
 
-@style
-.quiz-hide > div:nth-of-type(2) > .lia-quiz-generic > div:nth-of-type(2) > button:first-child {
-  display: none;
-}
+link: codingQuizz.css
 
-.quiz-hide > .lia-code > .lia-code-control > div:first-child > button:first-child {
-  visibility: hidden;
-}
+@codingQuiz2: @codingQuiz_(@uid,`@0`,`@1`,```@2```)
 
-.quiz-hide > .lia-code > .lia-code-control > div:first-child > button:first-child:after {
-  content: 'Check';
-  visibility: visible;
-  border: 1px solid rgb(var(--color-highlight));
-  border-radius: 0.8rem;
-  padding: .5rem .6rem;
-  margin-left: -2rem;
-}
-
-@end
-
-
-@codingQuiz: @codingQuiz_(@uid,`@0`,```@1```)
-
+@codingQuiz: @codingQuiz_(@uid,`@0`,` `,```@1```)
 
 @codingQuiz_
 <div class="quiz-hide" id="hidden-quiz-@0">
 
 ``` javascript
-@2
+@3
 ```
 <script>
 if(!window.results) {
@@ -37,7 +19,7 @@ if(!window.results) {
 
 try {
     window.results["@0"] = false
-    window.results["@0"] = eval(`@input\n@1\n"correct"`)
+    window.results["@0"] = eval(`@2\n@input\n@1\n"correct"`)
     console.log(window.results["@0"])
     let btn = document.querySelector('#hidden-quiz-@0 > div:nth-of-type(2) > .lia-quiz-generic > div:nth-of-type(2) > button:first-child');
     btn.click()
@@ -71,6 +53,12 @@ Each open `(` should have corresponding closing `)`. Each opening `{` should hav
 
 ``` javascript @codingQuiz(` `)
 console.log("Hallo Welt"
+```
+
+In a similar way each opening `"` should have matching closing `"`:
+
+``` javascript @codingQuiz2(`a=='Hi'`,`const a=`)
+"Hi
 ```
 
 Orphaned curly brace is always a problem. Fix the code:
