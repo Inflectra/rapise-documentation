@@ -6,7 +6,9 @@ mode: Textbook
 
 script: xpathQuizz.js
 
-@xpathQuiz: @xpathQuiz_(@uid,`@0`,```@1```)
+@xpathQuiz: @xpathQuiz_(@uid,`@0`,```@1```,false)
+
+@cssQuiz: @xpathQuiz_(@uid,`@0`,```@1```,true)
 
 @xpathQuiz_
 <div id="domq_@0">
@@ -35,12 +37,13 @@ setTimeout(()=>prefill('domq_'+id),150)
 [[*]]
 <script>
     const inp = `@input`;
-    validateXPath('@0', inp, send)
+    validateXPath('@0', inp, send, @3)
 </script>
 
 </div>
 
 @end
+
 
 -->
 
@@ -61,7 +64,6 @@ This \@xpathQuiz allows generation of XPath quizzes.
 * `@xpathQuiz` accepts one parameter - text to show as a question.
 * `_root` attribute tells what to assume as DOM root (usually it is the first element). If it is avoided, the whole DOM tree will be shown (starting from `<html>``).
 * `_correct` should mark all nodes that should be found by XPath. There must be at least one `_correct` node for the Quizz to make sense.
-
 
 # XPath 1
 
@@ -106,3 +108,18 @@ Single item selection.
 </ul>
 ```
 
+# CSS
+
+* `@cssQuiz` accepts one parameter - text to show as a question.
+* `_root` attribute tells what to assume as DOM root (usually it is the first element). If it is avoided, the whole DOM tree will be shown (starting from `<html>``).
+* `_correct` should mark all nodes that should be found by CSS. There must be at least one `_correct` node for the Quizz to make sense.
+
+# CSS 1
+
+``` xml @cssQuiz(`Select a plum:`)
+<ul _root>
+    <li id="carrot">Carrot</li>
+    <li _correct id="plum">Plum</li>
+    <li id="apple">Apple</li>
+</ul>
+```

@@ -92,7 +92,7 @@ function prefill(id) {
     iframe.srcdoc = val;
 }
 
-function validateXPath(id, inp, send) {
+function validateXPath(id, inp, send, isCss) {
     const highlightClass = 'highlightFound';
     const el = document.querySelector('#domq_'+id+' lia-editor');
     const editor = ace.edit(el);
@@ -117,17 +117,24 @@ function validateXPath(id, inp, send) {
         node.classList.remove(highlightClass);
     }
 
-    const xpath = inp;
-    if(xpath)
+    if(inp)
     {
-        const foundNodes = iframe.contentDocument.evaluate(xpath, dst, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
         const allfound = [];
-        let nfound;
-        while(nfound = foundNodes.iterateNext()) {
-            allfound.push(nfound)
+        if(isCss) {
+            const foundNodes = 
+                iframe.contentDocument
+                    .querySelectorAll(inp)
+                    .forEach((item)=>allfound.push(item));
+        } else {
+            const foundNodes = iframe.contentDocument.evaluate(inp, dst, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+            let nfound;
+            while(nfound = foundNodes.iterateNext()) {
+                allfound.push(nfound)
+            }    
         }
 
-        const expectedCount = iframe.contentDocument.evaluate('count(//*[@_correct])', iframe.contentDocument).numberValue;
+        const expectedCount = 
+            iframe.contentDocument.evaluate('count(//*[@_correct])', iframe.contentDocument).numberValue;
 
         let correct = 0;
         let wrong = 0;
