@@ -217,7 +217,7 @@ In a similar way each opening `"` should have matching closing `"`.
 
 Fix the code:
 
-``` javascript @codingQuiz2(`a!="Hi":"Wrong"?`,`const a=`)
+``` javascript @codingQuiz2(`a!="Hi"?"wrong":`,`debugger;const a=`)
 "Hi
 ```
 
