@@ -217,7 +217,7 @@ In a similar way each opening `"` should have matching closing `"`.
 
 Fix the code:
 
-``` javascript @codingQuiz2(`a!="Hi"?"wrong":`,`debugger;const a=`)
+``` javascript @codingQuiz2(`a!="Hi"?"wrong":`,`const a=`)
 "Hi
 ```
 
@@ -261,7 +261,7 @@ What if we need to use a quoted string inside our string? You may use escaping o
 
 Fix the code:
 
-``` javascript @codingQuiz(`str!="Some \"quoted text\" inside"?"wrong":`)
+``` javascript @codingQuiz(`!window.checkVar(str,"str",'Some "quoted text" inside',console,send)?"wrong":`)
 var str = "Some "quoted text" inside"
 ```
 
