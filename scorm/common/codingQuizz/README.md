@@ -19,7 +19,13 @@ if(!window.results) {
 
 try {
     window.results["@0"] = false
-    window.results["@0"] = eval(`@2\n@input\n@1\n"correct"`)
+    const escit=(str)=>str.replace(/\\\\'/ig,"\\'").replace(/\\\\"/ig,'\\"');
+
+    let pref = escit(`@2`); 
+    let postf = escit(`@1`);
+    let inp = escit(`@input`);
+
+    window.results["@0"] = eval(`${pref}${inp}\n${postf}\n"correct"`)
     console.log(window.results["@0"])
     let btn = document.querySelector('#hidden-quiz-@0 > div:nth-of-type(2) > .lia-quiz-generic > div:nth-of-type(2) > button:first-child');
     btn.click()
