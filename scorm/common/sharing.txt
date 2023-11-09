@@ -4,3 +4,9 @@ https://liascript.github.io/course/?<path>
 
 I.e.:
 https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md#2
+
+
+
+https://liascript.github.io/course/?https://raw.githubusercontent.com/Inflectra/rapise-documentation/master/scorm/common/xpathQuizz/README.md
+
+https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuizz/README.md
