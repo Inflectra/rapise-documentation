@@ -174,6 +174,33 @@ Go ahead, and fix it so it outputs `Hello, World!` and then press **Check** to p
 console.log('Goodbye, World!')
 ```
 
+## Strings
+
+In JavaScript, both single (' ') and double (" ") quotes are used to denote strings. You can use either of them to define a string.
+
+For instance:
+
+```javascript
+var singleQuotes = 'This is a string using single quotes.';
+var doubleQuotes = "This is a string using double quotes.";
+```
+<script>@input
+""</script>
+
+Both `singleQuotes` and `doubleQuotes` in the example above represent strings. You can use either single or double quotes to create strings, but it's essential to maintain consistency within your codebase.
+
+If you need to include a quote within a string, you can use the other type of quote or escape the inner quote using a backslash `\`.
+
+For instance:
+
+```javascript
+var singleInsideDouble = "He said, 'Hello!'";
+var doubleInsideSingle = 'She replied, "Hi!"';
+var escapingQuotes = 'Escaping a quote: \'Single quotes\' or "Double quotes"';
+```
+
+This way, you can include single quotes within double quotes and vice versa, or escape the quotes using the backslash to have them as part of the string.
+
 ## Typical Errors
 
 Let's go over a number of typical errors that may cause you troubles while working with this course. Here they are:
@@ -203,7 +230,9 @@ function TotalAmount()
 }
 ```
 
-We separate parameter names with comma `,`. Fix the code:
+We separate parameter names with comma `,`.
+
+Fix the code:
 
 ``` javascript @codingQuiz(`Sum(3,3)!=6?"wrong":`)
 function Sum(a b)
