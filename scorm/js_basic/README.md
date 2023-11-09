@@ -158,7 +158,7 @@ While Sample is an interactive piece that you may execute by pressing the **Run*
 
 Finally, we have quizzes where you supposed to give an answer and then press `Check` button. For example, here the answer is already correct, just to `Check` to proceed:
 
-```javascript @codingQuiz(` `)
+``` javascript @codingQuiz(` `)
 25
 ```
 
@@ -178,7 +178,7 @@ console.log('Goodbye, World!')
 
 Let's go over a number of typical errors that may cause you troubles while working with this course. Here they are:
 
-Each open `(` should have corresponding closing `)`. Each opening `{` should have corresponding closing `}`. 
+Each open `(` should have corresponding closing `)`. Each opening `{` should have corresponding closing `}`.
 
 Fix the code:
 
@@ -190,7 +190,7 @@ In a similar way each opening `"` should have matching closing `"`.
 
 Fix the code:
 
-``` javascript @codingQuiz2(`a=='Hi'`,`const a=`)
+``` javascript @codingQuiz2(`a!="Hi":"Wrong"?`,`const a=`)
 "Hi
 ```
 
