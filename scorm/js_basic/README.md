@@ -198,6 +198,12 @@ var singleInsideDouble = "He said, 'Hello!'";
 var doubleInsideSingle = 'She replied, "Hi!"';
 var escapingQuotes = 'Escaping a quote: \'Single quotes\' or "Double quotes"';
 ```
+<script>
+const escit=(str)=>str.replace(/\\\\'/ig,"\\'").replace(/\\\\"/ig,'\\"');
+const evalstrval= escit(`@input`)
+eval(evalstrval)
+""</script>
+
 
 This way, you can include single quotes within double quotes and vice versa, or escape the quotes using the backslash to have them as part of the string.
 
@@ -1013,3 +1019,14 @@ var animal = {
 }
 ```
 
+## What Comes Next?
+
+This course concludes at this juncture, but it's important to note that we've only scratched the surface of JavaScript's capabilities. Our focus has primarily been on features available as of 1999.
+
+JavaScript is a dynamic and continually evolving language, continually acquiring new features and applications. There are numerous fantastic features to explore, including callbacks, `class`es, `let` and `const` declarations, `for...of` loops, spread operators, arrow functions, tag templates, and much more.
+
+The JavaScript covered in this course provides a solid foundation for real-world testing scenarios. We believe that simplicity and clarity in language are crucial for effective testing, as tests should be straightforward and easy to comprehend and maintain.
+
+In [Rapise](https://www.inflectra.com/Rapise), you have the flexibility to use both older and the latest versions of JavaScript. Rapise itself is built using a basic language to ensure backward compatibility and straightforward usage.
+
+For those seeking more comprehensive courses, both free and paid options are available. One such resource is [lear-js.org](https://learn-js.org), which served as the foundation for this course.
