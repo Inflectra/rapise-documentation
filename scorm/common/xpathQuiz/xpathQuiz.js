@@ -209,8 +209,8 @@ function runXPath(id, inp, send, isCss, bValidate) {
             iframe.contentDocument.evaluate('normalize-space(//*[@_expectedXPath]/@_expectedXPath)', iframe.contentDocument).stringValue;
         if(expectedXPath) {
             if( (""+expectedXPath).trim().toLowerCase()!=(""+inp).trim().toLowerCase() ) {
-                if (expectedCount && wrong==0 && _correct==expectedCount) {
-                    send?.log('error','',['You found correct nodes, but another query is expected. Please, check the question.'])
+                if (expectedCount && wrong==0 && correct==expectedCount) {
+                    throw new Error('You found correct node, but input query is expected. Please, check the question and correct your query.')
                 }
                 return false;
             } else {
@@ -220,23 +220,36 @@ function runXPath(id, inp, send, isCss, bValidate) {
 
         if(bValidate)
         {
-            if(correct>0) {
+            if(expectedCount>0) {
                 if(wrong>0) {
-                    send?.log('debug','',['Another result expected'])
+                    if(correct>0) {
+                        throw new Error('Result includes more nodes than expected')
+                    } else if(expectedCount==1) {
+                        throw new Error('You need to select other node')
+                    } else if(expectedCount>1) {
+                        throw new Error('You need to select other nodes')
+                    }
                 } else {
                     if(expectedCount>correct) {
-                        send?.log('debug','',['Expected less nodes'])
+                        throw new Error('Query should return more nodes')
                     } else if(expectedCount<correct) {
-                        send?.log('debug','',['Expected more nodes'])
+                        if(wrong>0) {
+                            throw new Error('Query returns some unexpected nodes and misses some expected.')
+                        } else {
+                            throw new Error('Query misses some nodes.')
+                        }
                     } else {
-                        send?.log('debug','',['Great!'])
                         return true
                     }
                 }
-            }     
+            }
         }
     } else {
-        send?.log('debug','',['XPath expected'])
+        if(isCss) {
+            throw new Error("CSS query expected")
+        } else {
+            throw new Error("XPath query expected");
+        }
     }
     return false;
 }

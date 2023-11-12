@@ -130,10 +130,10 @@ Single item selection.
 
 # XPath Quiz 3
 
-``` xml @xpathQuiz(`Select all fruits:`)
+``` xml @xpathQuiz(`Select all fruits via //li[position()>1]`)
 <ul _root>
-    <li _correct>Carrot</li>
-    <li _correct>Plum</li>
+    <li>Potato</li>
+    <li _correct>Blueberry</li>
     <li _correct>Apple</li>
 </ul>
 ```
@@ -157,6 +157,17 @@ Single item selection.
     <li>Apple</li>
 </ul>
 ```
+
+Expected with correct hint:
+
+``` xml @xpathQuiz(Select a plum via /html/body/ul/li[2] and then via //li[2])
+<ul _root _expectedXPath="//li[2]">
+    <li>Carrot</li>
+    <li _correct>Plum</li>
+    <li>Apple</li>
+</ul>
+```
+
 
 # XPath Quiz 6 _expectedText
 
