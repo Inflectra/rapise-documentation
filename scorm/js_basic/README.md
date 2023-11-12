@@ -7,13 +7,13 @@ language: en
 narrator: UK English Female
 classroom: false
 
-import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuizz/README.md
+import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md
 
-import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuizz/README.md
+import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuiz/README.md
 
-script: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuizz/xpathQuizz.js
+script: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuiz/xpathQuiz.js
 
-link: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuizz/codingQuizz.css
+link: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/codingQuiz.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
           https://felixhao28.github.io/JSCPP/dist/JSCPP.es5.min.js

@@ -7,7 +7,7 @@ https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise
 
 
 
-https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuizz/README.md
+https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuiz/README.md
 
 https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/js_basic/README.md
 

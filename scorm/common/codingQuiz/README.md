@@ -1,6 +1,6 @@
 <!--
 
-link: codingQuizz.css
+link: codingQuiz.css
 
 @codingQuiz2: @codingQuiz_(@uid,`@0`,`@1`,```@2```)
 

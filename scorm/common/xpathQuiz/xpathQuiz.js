@@ -1,5 +1,9 @@
 const nodeMap = new Map();
 
+const highlightClass = 'highlightFound';
+const currentClass = 'highlightCurrent';
+
+
 function domPrint(el) {
     const lines = [];
 
@@ -73,19 +77,34 @@ function prefill(id) {
     const onLoaded = () => {
         iframe.removeEventListener('load', onLoaded);
         const doc = iframe.contentDocument.documentElement;
-        let root = doc.querySelector('*[_root]')||doc;
+        const root = doc.querySelector('*[_root]')||doc;
         const phtml = domPrint(root,'');
         editor.getSession().setValue(phtml);
-
         var style = iframe.contentDocument.createElement('style');
         style.type = 'text/css';
         
-        style.innerHTML = `.highlightFound {
+        style.innerHTML = `
+        .highlightFound {
             background: rgb(250, 250, 255);
             border: 1px solid rgb(200, 200, 250);
-        }`;
+        }
+        .highlightCurrent {
+            border: 1px solid rgb(10, 200, 10);
+        }        
+        `;
         iframe.contentDocument.getElementsByTagName('head')[0].appendChild(style);
         iframe.style.height = (doc.offsetHeight+1) + 'px';
+
+        const current = doc.querySelector('*[_current]');
+        if(current) {
+            current.classList.add(currentClass);
+            const nodeRange = nodeMap.get(current);
+            if(nodeRange) {
+                var Range = ace.require('ace/range').Range
+                var range = new Range(nodeRange.sl,nodeRange.sc,nodeRange.el,nodeRange.ec);
+                editor.getSession().addMarker(range, currentClass, 'text');
+            }
+        }
     }
 
     iframe.addEventListener('load', onLoaded);
@@ -93,7 +112,14 @@ function prefill(id) {
 }
 
 function validateXPath(id, inp, send, isCss) {
-    const highlightClass = 'highlightFound';
+    return runXPath(id, inp, send, isCss, true)
+}
+
+function checkXPath(id, inp, send, isCss) {
+    return runXPath(id, inp, send, isCss, false)
+}
+
+function runXPath(id, inp, send, isCss, bValidate) {
     const el = document.querySelector('#domq_'+id+' lia-editor');
     const editor = ace.edit(el);
     const prevMarkers = editor.getSession().getMarkers();
@@ -106,7 +132,7 @@ function validateXPath(id, inp, send, isCss) {
 
     const iframe = document.getElementById('frame_domq_'+id);
     const doc = iframe.contentDocument.documentElement;
-    const dst = doc.querySelector('*[_root]')||doc;
+    const dst = doc.querySelector('*[_current]')||doc.querySelector('*[_root]')||doc;
     const treeWalker = document.createTreeWalker(
         dst,
         NodeFilter.SHOW_ELEMENT
@@ -117,8 +143,20 @@ function validateXPath(id, inp, send, isCss) {
         node.classList.remove(highlightClass);
     }
 
-    if(inp)
-    {
+    if(inp) {
+        const expectedText = 
+            iframe.contentDocument.evaluate('normalize-space(//*[@_expectedText]/@_expectedText)', iframe.contentDocument).stringValue;
+        if(expectedText) {
+            const foundText = iframe.contentDocument.evaluate(inp, dst, null, XPathResult.STRING_TYPE, null).stringValue;
+            if( (""+expectedText).trim().toLowerCase()!=(""+foundText).trim().toLowerCase() ) {
+                send?.log('error','\n',['Expected:',expectedText,'Found:',foundText])
+                return false;
+            } else {
+                send?.log('debug','',[foundText])
+                return true;
+            }
+        }
+
         const allfound = [];
         if(isCss) {
             const foundNodes = 
@@ -133,14 +171,10 @@ function validateXPath(id, inp, send, isCss) {
             }    
         }
 
-        const expectedCount = 
-            iframe.contentDocument.evaluate('count(//*[@_correct])', iframe.contentDocument).numberValue;
-
         let correct = 0;
         let wrong = 0;
 
-        for(const found of allfound)
-        {
+        for(const found of allfound) {
             found.classList.add(highlightClass)
             const nodeRange = nodeMap.get(found);
             if(found.hasAttribute('_correct')) {
@@ -156,23 +190,49 @@ function validateXPath(id, inp, send, isCss) {
             }
         }
         
-        if(correct>0) {
-            if(wrong>0) {
-                send.lia('Another result expected')
-            } else {
-                if(expectedCount>correct) {
-                    send.lia('Expected less')
-                } else if(expectedCount<correct) {
-                    send.lia('Expected more')
-                } else {
-                    send.lia('Great!')
-                    return true
+        send?.log('debug','',['Found '+allfound.length+' nodes'])
+
+        const expectedCount = 
+            iframe.contentDocument.evaluate('count(//*[@_correct])', iframe.contentDocument).numberValue;
+        
+        const expectedXPath = 
+            iframe.contentDocument.evaluate('normalize-space(//*[@_expectedXPath]/@_expectedXPath)', iframe.contentDocument).stringValue;
+        if(expectedXPath) {
+            if( (""+expectedXPath).trim().toLowerCase()!=(""+inp).trim().toLowerCase() ) {
+                if (expectedCount && wrong==0 && _correct==expectedCount) {
+                    send?.log('error','',['You found correct nodes, but another query is expected. Please, check the question.'])
                 }
+                return false;
+            } else {
+                return true;
             }
-        } 
+        }
+
+        if(bValidate)
+        {
+            if(correct>0) {
+                if(wrong>0) {
+                    send?.log('debug','',['Another result expected'])
+                } else {
+                    if(expectedCount>correct) {
+                        send?.log('debug','',['Expected less nodes'])
+                    } else if(expectedCount<correct) {
+                        send?.log('debug','',['Expected more nodes'])
+                    } else {
+                        send?.log('debug','',['Great!'])
+                        return true
+                    }
+                }
+            }     
+        }
     } else {
-        send.lia('XPath expected')
+        send?.log('debug','',['XPath expected'])
     }
     return false;
+}
 
+function unescMarkdown(str) {
+    // <at> -> @
+    // <bq> -> `
+    return str.replace(/\<at\>/ig,"@").replace(/\<bq\>/ig,'`');
 }
