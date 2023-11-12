@@ -65,7 +65,8 @@ setTimeout(()=>prefill('domq_'+id),150)
 <script>
 
 const id = '@0';
-setTimeout(()=>prefill('domq_'+id),150)
+setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
+
 "LIA: stop"
 </script>
 
@@ -146,6 +147,7 @@ Single item selection.
     <li id="apple">Apple</li>
 </ul>
 ```
+
 # XPath Quiz 5 _expectedXpath
 
 ``` xml @xpathQuiz(Select a plum via //li[2])
@@ -198,6 +200,8 @@ Single item selection.
 </ul>
 ```
 
+# XPath Example 2
+
 ``` xml @xpathExample(`Get number of items:`,`count(//li)`)
 <ul _root _expectedText="3">
     <li>Carrot</li>
@@ -205,6 +209,19 @@ Single item selection.
     <li>Apple</li>
 </ul>
 ```
+
+# XPath Example 3
+
+This example contains an `@`-sign
+
+``` xml @xpathExample(`Get number of items:`,`//li[<at>id="2"]`)
+<ul _root>
+    <li>Carrot</li>
+    <li _correct id='2'>Plum</li>
+    <li>Apple</li>
+</ul>
+```
+
 
 # CSS
 

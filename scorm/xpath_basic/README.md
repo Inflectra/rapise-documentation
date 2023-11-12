@@ -25,6 +25,8 @@ In this section, we aim to provide a concise overview of XPath.
 
 ## Where is XML?
 
+> XPath stands for **XML** **Path** **Language**. XPath uses "path like" syntax to identify and navigate nodes in an XML document. XPath contains over 200 built-in functions.
+
 While a web page isn't precisely an XML document—it's a Document Object Model (DOM)—a comparison between a typical XML structure and the DOM of a webpage reveals striking similarities.
 
 **XML Document:**
@@ -69,62 +71,12 @@ While a web page isn't precisely an XML document—it's a Document Object Model 
 </html>
 ```
 
-
-Locating Elements: XML vs. DOM
-While a web page isn't precisely an XML document—it's a Document Object Model (DOM)—a comparison between a typical XML structure and the DOM of a webpage reveals striking similarities:
-
-XML Document:
-
-xml
-Copy code
-<?xml version="1.0" encoding="UTF-8"?>
-<bookstore>
-  <book category="fiction">
-    <title>The Great Gatsby</title>
-    <author>F. Scott Fitzgerald</author>
-    <price>15.99</price>
-  </book>
-  <book category="non-fiction">
-    <title>Sapiens: A Brief History of Humankind</title>
-    <author>Yuval Noah Harari</author>
-    <price>24.99</price>
-  </book>
-</bookstore>
-Webpage DOM:
-
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Sample HTML Document</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>About Us</h2>
-        <p>This is a sample HTML document for demonstration purposes.</p>
-    </section>
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
 Their structures are remarkably similar. Leveraging XPath, a technology proven effective for navigating XML documents, becomes an intuitive choice for traversing DOM documents with comparable structures.
 
 ## Trivial Example
 
 Below our first example, it contains part of web page:
+
 <lia-keep>
 <iframe width="100%" height="50px" srcdoc="<p>some <b>bold</b> and some <i>italic</i></p>"/>
 </lia-keep>
@@ -142,7 +94,7 @@ And then the source of the page:
 
 So, here is the first exercise. We need to select a specific element by tag name.
 
-``` xml @xpathQuiz(Enter **//b** and press **Check**:)
+``` xml @xpathExample(Press **Run** to launch an example,//b)
 <p _root>
     some
     <b _correct>bold</b>
@@ -151,9 +103,9 @@ So, here is the first exercise. We need to select a specific element by tag name
 </p>
 ```
 
-You got the point? Now select an *italic* element:
+You got the point? We used `//tagname` to find an element. Now select an *italic* element in a similar way:
 
-``` xml @xpathQuiz(Select <i>italic</> element:)
+``` xml @xpathExample( ,//i)
 <p _root>
     some
     <b>bold</b>
@@ -164,7 +116,7 @@ You got the point? Now select an *italic* element:
 
 In these examples, we used tag names (`b` and `i` respectively) to find a corresponding element. But what happened if we have more than one element with the same tag? Let's see:
 
-``` xml @xpathQuiz(Select **//b** element:)
+``` xml @xpathExample(Select all bold elements:,//b)
 <p _root>
     We have:
     <b _correct>bold1</b>
@@ -175,24 +127,58 @@ In these examples, we used tag names (`b` and `i` respectively) to find a corres
 
 See what happened? Two items were selected. So just tag name is not enough and we need to provide more information if we have to select just one element.
 
-## XPath Structure
+## XPath using Index
+
+As we can see `//tag` may return many elements. So what should we do if we need, for example, 2nd? We can do it with the of XPath index:
+
+``` ascii
+        //tagname[index]
+        |   |      |
+        |   |      '-> 1-based index
+        |   '--> Tag Name, i.e. <b>, <div> etc.
+        '--> // - Look everywhere, starting from root
+```
+
+So now we may select 2nd bold element as follows:
+
+``` xml @xpathExample( ,//b[2])
+<p _root>
+    We have:
+    <b>bold1</b>
+    and
+    <b _correct>bold2</b>
+</p>
+```
+
+### Exercise
+
+``` xml @xpathQuiz(`Select 3rd <li> item by index:`)
+<ul _root _expectedXPath="//li[3]">
+    <li>Carrot</li>
+    <li>Plum</li>
+    <li>Apple</li>
+</ul>
+```
+
+
+## XPath Using Attribute
 
 Once we see the need in more specific XPath values, we need to take attributes into account.
 
 ``` ascii
-    //tagname[@attribute='value']
-    |   |      |          |
-    |   |      |          '-> Expected value
-    |   |      '-> Attribute name
-    |   '--> Tag Name, i.e. <b>, <div> etc.
-    '--> // - Look everywhere, starting from root
+        //tagname[@attribute='value']
+        |   |      |          |
+        |   |      |          '-> Expected value
+        |   |      '-> Attribute name
+        |   '--> Tag Name, i.e. <b>, <div> etc.
+        '--> // - Look everywhere, starting from root
 ```
 
 **Example** 
 
 Select `//li[@id="2"]` get point to a Plum:
 
-``` xml @xpathQuiz(` `)
+``` xml @xpathExample(` `,```//li[ @id = "2"]```)
 <ul _root>
     <li id="1">Carrot</li>
     <li _correct id="2">Plum</li>

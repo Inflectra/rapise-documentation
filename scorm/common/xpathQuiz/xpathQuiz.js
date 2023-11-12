@@ -111,6 +111,16 @@ function prefill(id) {
     iframe.srcdoc = val;
 }
 
+function fixat(id,ind) {
+    const el = document.querySelectorAll('#'+id+' lia-editor')[ind];
+    const editor = ace.edit(el);
+    const val = editor.getSession().getValue();
+    const val2 = val.replace(/\<at\>/ig,'@');
+    if(val2!=val) {
+        editor.getSession().setValue(val2);
+    }
+}
+
 function validateXPath(id, inp, send, isCss) {
     return runXPath(id, inp, send, isCss, true)
 }
