@@ -5,7 +5,7 @@
 .highlightCurrent {
     border: 1px solid rgb(10, 200, 10);
     position: absolute;
-    z-index: 4;
+    z-index: 5;
     box-sizing: border-box;
 }
 

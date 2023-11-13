@@ -2,7 +2,7 @@ const nodeMap = new Map();
 
 const highlightClass = 'highlightFound';
 const currentClass = 'highlightCurrent';
-
+const selectedMarkerClass = 'ace_selected-word';
 
 function domPrint(el) {
     const lines = [];
@@ -136,7 +136,10 @@ function runXPath(id, inp, send, isCss, bValidate) {
     if (prevMarkers) {
         const prevMarkersArr = Object.keys(prevMarkers);
         for (let item of prevMarkersArr) {
-            editor.session.removeMarker(prevMarkers[item].id);
+            if( prevMarkers[item].class == selectedMarkerClass ) 
+            {
+                editor.session.removeMarker(prevMarkers[item].id);
+            }
         }
     }
 
@@ -196,7 +199,7 @@ function runXPath(id, inp, send, isCss, bValidate) {
             if(nodeRange) {
                 var Range = ace.require('ace/range').Range
                 var range = new Range(nodeRange.sl,nodeRange.sc,nodeRange.el,nodeRange.ec);
-                editor.getSession().addMarker(range,'ace_selected-word', 'text');
+                editor.getSession().addMarker(range, selectedMarkerClass, 'text');
             }
         }
         

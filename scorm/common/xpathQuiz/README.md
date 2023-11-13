@@ -199,6 +199,16 @@ Expected with correct hint:
 </ul>
 ```
 
+`_current` marks a node as a root for relative XPath. So query starting with `./` uses a selected node:
+
+``` xml @xpathExample(`Select ..`,`..`)
+<ul _root _correct>
+    <li>Carrot</li>
+    <li>Plum</li>
+    <li _current>Apple</li>
+</ul>
+```
+
 # XPath Example 1
 
 `@xpathExample` accepts two parameters - 1) text to show as a question and 2) default query.
