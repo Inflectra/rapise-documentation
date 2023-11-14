@@ -86,6 +86,58 @@ setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
 
 @end
 
+@xpathPart
+<div id="domq_@0">
+
+<lia-keep>
+    <iframe id="frame_domq_@0" width="100%" scrolling="no"/>
+</lia-keep>
+
+<!-- data-showGutter="true" -->
+``` xml
+@1
+```
+
+<script>
+const id = '@0';
+setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
+"LIA: stop"
+</script>
+
+</div>
+@end
+
+@xpath2PExample
+
+
+<!-- data-showGutter="false" -->
+``` xpath
+@0
+```
+<script>
+  const input = `@input`;
+  checkXPath(`@1`, input, send, false);
+  checkXPath(`@2`, input, send, false);
+  ""
+</script>
+
+@end
+
+@xpath2PQuiz
+
+
+<!-- data-solution-button="off"
+    data-disable-navigation="true"
+ -->
+[[*]]
+<script>
+  const inp = `@input`;
+  let res = true
+  validateXPath('@0', inp, send, false) && validateXPath('@1', inp, send, false)
+</script>
+
+@end
+
 -->
 
 # Intro
@@ -209,6 +261,25 @@ Expected with correct hint:
 </ul>
 ```
 
+# XPath Quiz 7 (2 parts)
+
+**Part 1:**
+
+``` xml @xpathPart(QP7A)
+<p _root>Some text with <b>bold</b></p>
+
+```
+
+``` xml @xpathPart(QP7B)
+<p _root>Some other text with <b>more bold</b></p>
+
+```
+
+Now select both bolds in one query:
+
+@xpath2PQuiz(QP7A,QP7B)
+
+
 # XPath Example 1
 
 `@xpathExample` accepts two parameters - 1) text to show as a question and 2) default query.
@@ -242,6 +313,26 @@ This example contains an `@`-sign
     <li>Apple</li>
 </ul>
 ```
+
+
+# XPath Example 4 (2 parts)
+
+This is 2-part query
+
+``` xml @xpathPart(EP4A)
+<p _root>Some text with <b>bold</b></p>
+
+```
+
+``` xml @xpathPart(EP4B)
+<p _root>Some other text with <b>more bold</b></p>
+
+```
+
+Now select both bolds in one query:
+
+@xpath2PExample(`//b`,EP4A,EP4B)
+
 
 
 # CSS

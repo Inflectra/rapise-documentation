@@ -11,4 +11,6 @@ https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise
 
 https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/js_basic/README.md
 
+https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/xpath_basic/README.md
+
 https://liascript.github.io/course/?https://raw.githubusercontent.com/Inflectra/rapise-documentation/master/scorm/js_basic/README.md
