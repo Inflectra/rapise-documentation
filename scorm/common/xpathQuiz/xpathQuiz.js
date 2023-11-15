@@ -112,7 +112,7 @@ function prefill(id) {
 }
 
 function fixat(id,ind) {
-    const el = document.querySelectorAll('#'+id+' lia-editor')[ind];
+    const el = document.querySelectorAll('#'+id+' lia-editor')[ind||0];
     const editor = ace.edit(el);
     const val = editor.getSession().getValue();
     const val2 = val.replace(/\<at\>/ig,'@');

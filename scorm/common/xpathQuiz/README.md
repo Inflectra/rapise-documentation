@@ -100,7 +100,7 @@ setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
 
 <script>
 const id = '@0';
-setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
+setTimeout(()=>{prefill('domq_'+id);},150)
 "LIA: stop"
 </script>
 
@@ -109,6 +109,8 @@ setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
 
 @xpath2PExample
 
+
+<div id="domq_@1@2">
 
 <!-- data-showGutter="false" -->
 ``` xpath
@@ -120,6 +122,13 @@ setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
   checkXPath(`@2`, input, send, false);
   ""
 </script>
+
+<script>
+setTimeout(()=>{fixat("domq_@1@2",0);},150)
+"LIA: stop"
+</script>
+
+</div>
 
 @end
 
@@ -314,26 +323,23 @@ This example contains an `@`-sign
 </ul>
 ```
 
-
 # XPath Example 4 (2 parts)
 
 This is 2-part query
 
 ``` xml @xpathPart(EP4A)
-<p _root>Some text with <b>bold</b></p>
+<p _root>Some text with <b name=b1>bold</b></p>
 
 ```
 
 ``` xml @xpathPart(EP4B)
-<p _root>Some other text with <b>more bold</b></p>
+<p _root>Some other text with <b name=b2>more bold</b></p>
 
 ```
 
 Now select both bolds in one query:
 
-@xpath2PExample(`//b`,EP4A,EP4B)
-
-
+@xpath2PExample(`//b[<at>name="b1" or <at>name="b2"]`,EP4A,EP4B)
 
 # CSS
 
