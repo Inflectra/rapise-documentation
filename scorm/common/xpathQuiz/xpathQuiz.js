@@ -158,8 +158,9 @@ function runXPath(id, inp, send, isCss, bValidate) {
 
     if(inp) {
         const expectedText = 
-            iframe.contentDocument.evaluate('normalize-space(//*[@_expectedText]/@_expectedText)', iframe.contentDocument).stringValue;
-        if(expectedText) {
+            iframe.contentDocument.evaluate('//*[@_expectedText]/@_expectedText', iframe.contentDocument, null, XPathResult.STRING_TYPE);
+        if(expectedText&&expectedText.stringValue) {
+            expectedText = expectedText.stringValue;
             const foundText = iframe.contentDocument.evaluate(inp, dst, null, XPathResult.STRING_TYPE, null).stringValue;
             if( (""+expectedText).trim().toLowerCase()!=(""+foundText).trim().toLowerCase() ) {
                 send?.log('error','\n',['Expected:',expectedText,'Found:',foundText])

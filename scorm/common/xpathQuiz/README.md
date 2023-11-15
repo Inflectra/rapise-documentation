@@ -341,6 +341,23 @@ Now select both bolds in one query:
 
 @xpath2PExample(`//b[<at>name="b1" or <at>name="b2"]`,EP4A,EP4B)
 
+
+# XPath Example 5 (text())
+
+``` xml @xpathExample(`Select plum's text:`,`//li[2]/text()`)
+<ul _root _expectedText="Plum">
+    <li>Carrot</li>
+    <li>Plum</li>
+    <li>Apple</li>
+</ul>
+```
+
+``` xml @xpathExample(`Well, :`,`//p/text()`)
+<p _root _expectedText='Hello,   there!'>
+Hello,   there!
+</p>
+```
+
 # CSS
 
 * `@cssQuiz` accepts one parameter - text to show as a question.
