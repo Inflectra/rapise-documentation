@@ -141,8 +141,27 @@ setTimeout(()=>{fixat("domq_@1@2",0);},150)
 [[*]]
 <script>
   const inp = `@input`;
-  let res = true
-  validateXPath('@0', inp, send, false) && validateXPath('@1', inp, send, false)
+  let c1 = false;
+  let c2 = false;
+  let e1 = null;
+  let e2 = null;
+  try {
+    c1 = validateXPath('@0', inp, send, false);
+  } catch(e) {e1 = e;}
+  try {
+    c2 = validateXPath('@1', inp, send, false);
+  } catch(e) {e2 = e;}
+  if(c1&&c2) {
+    true
+  } else {
+    if(e1) {
+        throw e1;
+    }
+    if(e2) {
+        throw e2;
+    }
+  }
+
 </script>
 
 @end
@@ -275,12 +294,12 @@ Expected with correct hint:
 **Part 1:**
 
 ``` xml @xpathPart(QP7A)
-<p _root>Some text with <b>bold</b></p>
+<p _root>Some text with <b _correct>bold</b></p>
 
 ```
 
 ``` xml @xpathPart(QP7B)
-<p _root>Some other text with <b>more bold</b></p>
+<p _root>Some other text with <b _correct>more bold</b></p>
 
 ```
 
@@ -328,12 +347,12 @@ This example contains an `@`-sign
 This is 2-part query
 
 ``` xml @xpathPart(EP4A)
-<p _root>Some text with <b name=b1>bold</b></p>
+<p _root>Some text with <b name=b1 _correct>bold</b></p>
 
 ```
 
 ``` xml @xpathPart(EP4B)
-<p _root>Some other text with <b name=b2>more bold</b></p>
+<p _root>Some other text with <b name=b2 _correct>more bold</b></p>
 
 ```
 
