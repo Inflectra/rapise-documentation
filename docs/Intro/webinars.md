@@ -6,6 +6,8 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Season 2023
 
+- [Rapise 8.0](https://youtu.be/wi2cXiVnchY)
+
 #### Inflectra Ninja Sessions
 
 - [Running Salesforce Tests in Parallel in Rapise](https://youtu.be/tXrwrV8UxuI)
