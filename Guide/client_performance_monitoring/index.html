@@ -11175,7 +11175,7 @@
 <h2 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
 <p>In order to send performance metrics to NeoLoad you need to add a sequence of calls to your script.</p>
 <p>First, connect to the NeoLoad. When this call is executed NeoLoad must be running a script, otherwise an error will be returned.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CreateClient</span><span class="p">(</span><span class="s2">&quot;hardware1&quot;</span><span class="p">,</span> <span class="s2">&quot;location1&quot;</span><span class="p">,</span> <span class="s2">&quot;Broadcom 802.11ac Network Adapter \_2&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CreateClient</span><span class="p">(</span><span class="s2">&quot;hardware1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;location1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Broadcom 802.11ac Network Adapter \_2&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>Let’s look at the following block:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureHostPerformance</span><span class="p">();</span>
@@ -11192,7 +11192,7 @@
 <li>CalculateBrowserPerformance call sends page load performance metrics to the NeoLoad controller.</li>
 </ul>
 <p>There is also a general call that can send any user-defined metric to the NeoLoad controller:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CapturePerformanceValue</span><span class="p">(</span><span class="s2">&quot;First Level Folder&quot;</span><span class="p">,</span> <span class="s2">&quot;Transaction1|Duration&quot;</span><span class="p">,</span> <span class="s2">&quot;milliseconds&quot;</span><span class="p">,</span> <span class="mf">120</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CapturePerformanceValue</span><span class="p">(</span><span class="s2">&quot;First Level Folder&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Transaction1|Duration&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;milliseconds&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">120</span><span class="p">);</span>
 </code></pre></div>
 <p>Components of the second parameters can be separated by |. It allows to add more levels to the tree.</p>
                 

@@ -11237,8 +11237,8 @@
 <li><strong>Select a location</strong> in your script.</li>
 <li><strong>Query for the application state</strong>. For object properties use Get&lt;..&gt; methods.  For example:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">xx</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OkButton&quot;</span><span class="p">).</span><span class="nx">GetX</span><span class="p">();</span> <span class="c1">// X position of the object</span>
-    <span class="kd">var</span> <span class="nx">image</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer&#39;</span><span class="p">).</span><span class="nx">GetBitmap</span><span class="p">();</span> <span class="c1">// Image of the object</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">xx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OkButton&quot;</span><span class="p">).</span><span class="nx">GetX</span><span class="p">();</span><span class="w"> </span><span class="c1">// X position of the object</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer&#39;</span><span class="p">).</span><span class="nx">GetBitmap</span><span class="p">();</span><span class="w"> </span><span class="c1">// Image of the object</span>
 </code></pre></div>
 <ol>
 <li>
@@ -11253,7 +11253,7 @@
 </ol>
 <h2 id="example-simple-property-checkpoint">Example: Simple Property Checkpoint<a class="headerlink" href="#example-simple-property-checkpoint" title="Permanent link">&para;</a></h2>
 <p><strong>JavaScript</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s2">&quot;Verify that: ColumnCount=11&quot;</span><span class="p">,</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">GetColumnCount</span><span class="p">(),</span> <span class="mf">11</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s2">&quot;Verify that: ColumnCount=11&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">GetColumnCount</span><span class="p">(),</span><span class="w"> </span><span class="mf">11</span><span class="p">);</span>
 </code></pre></div>
 <p><strong>RVL</strong></p>
 <p><img alt="property rvl" src="../img/assertion_property_rvl.png" /></p>
@@ -11262,7 +11262,7 @@
 <h2 id="example-bitmap-checkpoint">Example: Bitmap Checkpoint<a class="headerlink" href="#example-bitmap-checkpoint" title="Permanent link">&para;</a></h2>
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertImage</span><span class="p">(</span><span class="s2">&quot;Compare Customer bitmap to Images\\Checkpoint0001.png&quot;</span><span class="p">,</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer&#39;</span><span class="p">).</span><span class="nx">GetBitmap</span><span class="p">(),</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s2">&quot;Images\\Checkpoint0001.png&quot;</span><span class="p">));</span>
+<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer&#39;</span><span class="p">).</span><span class="nx">GetBitmap</span><span class="p">(),</span><span class="w"> </span><span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s2">&quot;Images\\Checkpoint0001.png&quot;</span><span class="p">));</span>
 </code></pre></div>
 <p><strong>RVL</strong></p>
 <p><img alt="bitmap rvl" src="../img/assertion_bitmap_rvl.png" /></p>

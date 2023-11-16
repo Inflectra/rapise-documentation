@@ -11705,12 +11705,12 @@
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/rapise_install_task_classic.png" /></p>
 </details>
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PowerShell@2</span>
-<span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Install</span><span class="nv"> </span><span class="s">Rapise&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PowerShell@2</span>
+<span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Install</span><span class="nv"> </span><span class="s">Rapise&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">targetType</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">filePath</span>
-    <span class="nt">filePath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">./RapiseInstall.ps1</span>
-    <span class="nt">arguments</span><span class="p">:</span> <span class="s">&#39;-RapiseVersion</span><span class="nv"> </span><span class="s">&quot;6.5.20.21&quot;&#39;</span>
+<span class="w">    </span><span class="nt">targetType</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">filePath</span>
+<span class="w">    </span><span class="nt">filePath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./RapiseInstall.ps1</span>
+<span class="w">    </span><span class="nt">arguments</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;-RapiseVersion</span><span class="nv"> </span><span class="s">&quot;6.5.20.21&quot;&#39;</span>
 </code></pre></div>
 </details>
 <h3 id="rapisetestadapter">Rapise.TestAdapter<a class="headerlink" href="#rapisetestadapter" title="Permanent link">&para;</a></h3>
@@ -11724,10 +11724,10 @@
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/nuget_tool_installer.png" /></p>
 </details>
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">NuGetToolInstaller@0</span>
-<span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Use</span><span class="nv"> </span><span class="s">NuGet&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NuGetToolInstaller@0</span>
+<span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Use</span><span class="nv"> </span><span class="s">NuGet&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">versionSpec</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4.4.1</span>
+<span class="w">    </span><span class="nt">versionSpec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.4.1</span>
 </code></pre></div>
 </details>
 <h4 id="rapisetestadapter-nuget-package">Rapise.TestAdapter NuGet Package<a class="headerlink" href="#rapisetestadapter-nuget-package" title="Permanent link">&para;</a></h4>
@@ -11737,11 +11737,11 @@
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/nuget_rapise_testadapter.png" /></p>
 </details>
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">NuGetCommand@2</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;NuGet</span><span class="nv"> </span><span class="s">Install</span><span class="nv"> </span><span class="s">Rapise.TestAdapter&#39;</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">custom</span>
-    <span class="nt">arguments</span><span class="p">:</span> <span class="s">&#39;install</span><span class="nv"> </span><span class="s">Rapise.TestAdapter</span><span class="nv"> </span><span class="s">-Version</span><span class="nv"> </span><span class="s">$(RapiseTestAdapterVersion)&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NuGetCommand@2</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;NuGet</span><span class="nv"> </span><span class="s">Install</span><span class="nv"> </span><span class="s">Rapise.TestAdapter&#39;</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">custom</span>
+<span class="w">    </span><span class="nt">arguments</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;install</span><span class="nv"> </span><span class="s">Rapise.TestAdapter</span><span class="nv"> </span><span class="s">-Version</span><span class="nv"> </span><span class="s">$(RapiseTestAdapterVersion)&#39;</span>
 </code></pre></div>
 </details>
 <p>In the pipeline settings set <strong>RapiseTestAdapterVersion</strong> variable to the Rapise.TestAdapter version you want to install (e.g. 1.0.11).</p>
@@ -11756,10 +11756,10 @@
 </details>
 <!-- /* cSpell:enable */ -->
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VisualStudioTestPlatformInstaller@1</span>
-<span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Visual</span><span class="nv"> </span><span class="s">Studio</span><span class="nv"> </span><span class="s">Test</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Installer&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VisualStudioTestPlatformInstaller@1</span>
+<span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Visual</span><span class="nv"> </span><span class="s">Studio</span><span class="nv"> </span><span class="s">Test</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Installer&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">versionSelector</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">latestStable</span>
+<span class="w">    </span><span class="nt">versionSelector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">latestStable</span>
 </code></pre></div>
 </details>
 <h3 id="visual-studio-test-task">Visual Studio Test Task<a class="headerlink" href="#visual-studio-test-task" title="Permanent link">&para;</a></h3>
@@ -11767,17 +11767,17 @@
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/visual_studio_test_task.png" /></p>
 </details>
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;VsTest</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Run</span><span class="nv"> </span><span class="s">Rapise</span><span class="nv"> </span><span class="s">Tests&#39;</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">testAssemblyVer2</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-     <span class="no">$(Build.Repository.LocalPath)\Tests\*.sstest</span>
-     <span class="no">$(Build.Repository.LocalPath)\Tests\*\*.sstest</span>
-    <span class="nt">runSettingsFile</span><span class="p">:</span> <span class="s">&#39;$(System.DefaultWorkingDirectory)\Pipeline\azure.runsettings&#39;</span>
-    <span class="nt">overrideTestrunParameters</span><span class="p">:</span> <span class="s">&#39;-g_baseURL</span><span class="nv"> </span><span class="s">$(Dynamics365CrmBaseURL)</span><span class="nv"> </span><span class="s">-g_password</span><span class="nv"> </span><span class="s">$(Dynamics365CrmPassword)</span><span class="nv"> </span><span class="s">-g_browserLibrary</span><span class="nv"> </span><span class="s">$(RapiseBrowserProfile)&#39;</span>
-    <span class="nt">pathtoCustomTestAdapters</span><span class="p">:</span> <span class="s">&#39;$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472&#39;</span>
-    <span class="nt">platform</span><span class="p">:</span> <span class="s">&#39;$(BuildPlatform)&#39;</span>
-    <span class="nt">configuration</span><span class="p">:</span> <span class="s">&#39;$(BuildConfiguration)&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;VsTest</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Run</span><span class="nv"> </span><span class="s">Rapise</span><span class="nv"> </span><span class="s">Tests&#39;</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">testAssemblyVer2</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">     </span><span class="no">$(Build.Repository.LocalPath)\Tests\*.sstest</span>
+<span class="w">     </span><span class="no">$(Build.Repository.LocalPath)\Tests\*\*.sstest</span>
+<span class="w">    </span><span class="nt">runSettingsFile</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(System.DefaultWorkingDirectory)\Pipeline\azure.runsettings&#39;</span>
+<span class="w">    </span><span class="nt">overrideTestrunParameters</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;-g_baseURL</span><span class="nv"> </span><span class="s">$(Dynamics365CrmBaseURL)</span><span class="nv"> </span><span class="s">-g_password</span><span class="nv"> </span><span class="s">$(Dynamics365CrmPassword)</span><span class="nv"> </span><span class="s">-g_browserLibrary</span><span class="nv"> </span><span class="s">$(RapiseBrowserProfile)&#39;</span>
+<span class="w">    </span><span class="nt">pathtoCustomTestAdapters</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472&#39;</span>
+<span class="w">    </span><span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(BuildPlatform)&#39;</span>
+<span class="w">    </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(BuildConfiguration)&#39;</span>
 </code></pre></div>
 </details>
 <p>Make sure that path to custom test set adapters is set to</p>
@@ -11817,22 +11817,22 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;RunSettings&gt;</span>
-  <span class="c">&lt;!-- Parameters used by tests at runtime --&gt;</span>
-  <span class="nt">&lt;TestRunParameters&gt;</span>
-    <span class="nt">&lt;Parameter</span> <span class="na">name=</span><span class="s">&quot;g_browserLibrary&quot;</span> <span class="na">value=</span><span class="s">&quot;Chrome&quot;</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;/TestRunParameters&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!-- Parameters used by tests at runtime --&gt;</span>
+<span class="w">  </span><span class="nt">&lt;TestRunParameters&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Parameter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;g_browserLibrary&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;Chrome&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/TestRunParameters&gt;</span>
 
-  <span class="nt">&lt;DataCollectionRunSettings&gt;</span>
-    <span class="nt">&lt;DataCollectors&gt;</span>
-      <span class="nt">&lt;DataCollector</span> <span class="na">uri=</span><span class="s">&quot;datacollector://microsoft/VideoRecorder/1.0&quot;</span> <span class="na">assemblyQualifiedName=</span><span class="s">&quot;Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot;</span> <span class="na">friendlyName=</span><span class="s">&quot;video&quot;</span> <span class="na">enabled=</span><span class="s">&quot;True&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;Configuration&gt;</span>
-          <span class="nt">&lt;MediaRecorder</span> <span class="na">sendRecordedMediaForPassedTestCase=</span><span class="s">&quot;true&quot;</span>  <span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>           
-            <span class="nt">&lt;ScreenCaptureVideo</span> <span class="na">bitRate=</span><span class="s">&quot;512&quot;</span> <span class="na">frameRate=</span><span class="s">&quot;2&quot;</span> <span class="na">quality=</span><span class="s">&quot;20&quot;</span> <span class="nt">/&gt;</span>
-          <span class="nt">&lt;/MediaRecorder&gt;</span>
-        <span class="nt">&lt;/Configuration&gt;</span>
-      <span class="nt">&lt;/DataCollector&gt;</span>
-    <span class="nt">&lt;/DataCollectors&gt;</span>
-  <span class="nt">&lt;/DataCollectionRunSettings&gt;</span>  
+<span class="w">  </span><span class="nt">&lt;DataCollectionRunSettings&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataCollectors&gt;</span>
+<span class="w">      </span><span class="nt">&lt;DataCollector</span><span class="w"> </span><span class="na">uri=</span><span class="s">&quot;datacollector://microsoft/VideoRecorder/1.0&quot;</span><span class="w"> </span><span class="na">assemblyQualifiedName=</span><span class="s">&quot;Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot;</span><span class="w"> </span><span class="na">friendlyName=</span><span class="s">&quot;video&quot;</span><span class="w"> </span><span class="na">enabled=</span><span class="s">&quot;True&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Configuration&gt;</span>
+<span class="w">          </span><span class="nt">&lt;MediaRecorder</span><span class="w"> </span><span class="na">sendRecordedMediaForPassedTestCase=</span><span class="s">&quot;true&quot;</span><span class="w">  </span><span class="na">xmlns=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span><span class="w">           </span>
+<span class="w">            </span><span class="nt">&lt;ScreenCaptureVideo</span><span class="w"> </span><span class="na">bitRate=</span><span class="s">&quot;512&quot;</span><span class="w"> </span><span class="na">frameRate=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">quality=</span><span class="s">&quot;20&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/MediaRecorder&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Configuration&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/DataCollector&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/DataCollectors&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/DataCollectionRunSettings&gt;</span><span class="w">  </span>
 
 <span class="nt">&lt;/RunSettings&gt;</span>
 </code></pre></div>
@@ -11841,11 +11841,11 @@
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/publish_testresults.png" /></p>
 </details>
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Publish</span><span class="nv"> </span><span class="s">Artifact:</span><span class="nv"> </span><span class="s">TestResults&#39;</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">PathtoPublish</span><span class="p">:</span> <span class="s">&#39;$(Agent.TempDirectory)\TestResults&#39;</span>
-    <span class="nt">ArtifactName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TestResults</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Publish</span><span class="nv"> </span><span class="s">Artifact:</span><span class="nv"> </span><span class="s">TestResults&#39;</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">PathtoPublish</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(Agent.TempDirectory)\TestResults&#39;</span>
+<span class="w">    </span><span class="nt">ArtifactName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TestResults</span>
 </code></pre></div>
 </details>
 <h3 id="pipeline-example">Pipeline Example<a class="headerlink" href="#pipeline-example" title="Permanent link">&para;</a></h3>
@@ -11899,15 +11899,15 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
 <details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/azure_pipeline_vstest_parallel.png" /></p>
 </details>
 <details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
-<span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;VsTest</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">testAssemblies&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
+<span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;VsTest</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">testAssemblies&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">testAssemblyVer2</span><span class="p">:</span> <span class="s">&#39;*\*.sstest&#39;</span>
-    <span class="nt">overrideTestrunParameters</span><span class="p">:</span> <span class="s">&#39;-g_browserLibrary</span><span class="nv"> </span><span class="s">&quot;$(RapiseBrowserProfile)&quot;&#39;</span>
-    <span class="nt">pathtoCustomTestAdapters</span><span class="p">:</span> <span class="s">&#39;$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472&#39;</span>
-    <span class="nt">runInParallel</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="nt">platform</span><span class="p">:</span> <span class="s">&#39;$(BuildPlatform)&#39;</span>
-    <span class="nt">configuration</span><span class="p">:</span> <span class="s">&#39;$(BuildConfiguration)&#39;</span>
+<span class="w">    </span><span class="nt">testAssemblyVer2</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;*\*.sstest&#39;</span>
+<span class="w">    </span><span class="nt">overrideTestrunParameters</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;-g_browserLibrary</span><span class="nv"> </span><span class="s">&quot;$(RapiseBrowserProfile)&quot;&#39;</span>
+<span class="w">    </span><span class="nt">pathtoCustomTestAdapters</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472&#39;</span>
+<span class="w">    </span><span class="nt">runInParallel</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(BuildPlatform)&#39;</span>
+<span class="w">    </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(BuildConfiguration)&#39;</span>
 </code></pre></div>
 </details>
 <p>This way of parallel execution is good for running API tests and Web tests (provided that <a href="../selenium_settings_dialog/">Selenium profiles</a> are used)</p>

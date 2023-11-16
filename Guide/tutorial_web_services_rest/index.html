@@ -11350,11 +11350,11 @@ steps:</p>
 <li>
 <ul>
 <li><strong>Body:</strong> Pass a populated book object:
-<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
-        <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;Book Name&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;AuthorId&quot;</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
-        <span class="s2">&quot;GenreId&quot;</span><span class="o">:</span> <span class="mf">1</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Book Name&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;AuthorId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;GenreId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">    </span><span class="p">}</span>
 </code></pre></div></li>
 </ul>
 </li>
@@ -11500,25 +11500,25 @@ function to open up the request:</p>
 <p>Once you are done, you should have:</p>
 <p><img alt="tutorial_web_services_pic36" src="../img/tutorial_web_services_rest32.png" /></p>
 <p>Now click on the <code>Create Script</code> button and Rapise will generate the following code for you:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Session&#39;</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
-    <span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">LibraryInformationSystem_Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Session&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 
-    <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
-    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 
-    <span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;http://www.libraryinformationsystem.org/Services/RestService.svc/book?session_id={session_id} Response Body Text Comparison Result&#39;</span><span class="p">,</span> <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">GetResponseBodyText</span><span class="p">(),</span> <span class="s2">&quot;...long response body...&quot;</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoVerify</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book Response&#39;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span> <span class="mf">14</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoVerify</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book Response&#39;</span><span class="p">,</span> <span class="s2">&quot;[0].Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Hound of the Baskervilles&quot;</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Add_Book</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
-    <span class="nx">LibraryInformationSystem_Add_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;http://www.libraryinformationsystem.org/Services/RestService.svc/book?session_id={session_id} Response Body Text Comparison Result&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">GetResponseBodyText</span><span class="p">(),</span><span class="w"> </span><span class="s2">&quot;...long response body...&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoVerify</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book Response&#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;length&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">14</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoVerify</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book Response&#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;[0].Name&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Hound of the Baskervilles&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Add_Book</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Add_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 
-    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
-    <span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Book</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>If you click <code>Play</code> on this script as written, you will see that the tests to retrieve the books work correctly, but the test of adding a new book fails:</p>
@@ -11554,19 +11554,19 @@ function Test(params)
     var sessionId = LibraryInformationSystem_Get_Session.GetResponseBodyObject();
     Tester.Message('Session ID: ' + sessionId);
 //  /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">var</span><span class="w"> </span><span class="n">LibraryInformationSystem_Get_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">);</span>
 <span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
-<span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">DoExecute</span><span class="p">({</span> <span class="s2">&quot;session_id&quot;</span><span class="p">:</span> <span class="n">sessionId</span> <span class="p">});</span>
-</code></pre></div>
-</td></tr></table>
+<span class="n">LibraryInformationSystem_Get_Book</span><span class="o">.</span><span class="n">DoExecute</span><span class="p">({</span><span class="w"> </span><span class="s2">&quot;session_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="n">sessionId</span><span class="w"> </span><span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;length&quot;, 14);
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;length&quot;, 14);
 LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Book Response&#39;, &quot;[0].Name&quot;, &quot;Hound of the Baskervilles&quot;);
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
+
 <p>// CODE: Define new book
     //Add a book
     var newBook = {
@@ -11575,11 +11575,11 @@ LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Boo
         GenreId: 3
     };
 // /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">var</span> <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">var</span><span class="w"> </span><span class="n">LibraryInformationSystem_Add_Book</span><span class="o">=</span><span class="n">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">);</span>
 <span class="n">LibraryInformationSystem_Add_Book</span><span class="o">.</span><span class="n">SetRequestHeaders</span><span class="p">([{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">},{</span><span class="s2">&quot;Name&quot;</span><span class="p">:</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span><span class="s2">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">}]);</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
+
 <p>// CODE: Supply newBook as a POST method body
     LibraryInformationSystem_Add_Book.SetRequestBodyObject(newBook)
 // /CODE
@@ -11590,11 +11590,11 @@ LibraryInformationSystem_Get_Book.DoVerify(&#39;LibraryInformationSystem_Get_Boo
     newBook = LibraryInformationSystem_Add_Book.GetResponseBodyObject();
     Tester.Message("New Book ID: " + newBook.Id);
 // /CODE</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>LibraryInformationSystem_Get_Book.SetRequestHeaders([{&quot;Name&quot;:&quot;Accept&quot;,&quot;Value&quot;:&quot;application/json&quot;},{&quot;Name&quot;:&quot;Content-Type&quot;,&quot;Value&quot;:&quot;application/json&quot;}]);
 LibraryInformationSystem_Get_Book.DoExecute({ &quot;session_id&quot;: sessionId });
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
+
 <p>//  CODE/                                         <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^
 // CODE: Check book count increased
     Tester.AssertEqual("Book Count", 15, LibraryInformationSystem_Get_Book.GetResponseBodyObject().length);
@@ -11626,10 +11626,10 @@ var sessionId =</code></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
 </code></pre></div>
 <p>To get the list of books as a JavaScript array, drag the <strong>"GetResponseBodyObject"</strong> property to the script editor, under the previous line. Then assign the value of this property to a variable such as "books":</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">books</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">books</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Book&#39;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
 </code></pre></div>
 <p>Now we can add code to test that the number of books returned matches the expected value. Type in the following code:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">14</span><span class="p">,</span><span class="w"> </span><span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 </code></pre></div>
 <p>You should now have the following code:</p>
 <p><img alt="tutorial_web_services_pic28" src="../img/tutorial_web_services_rest38.png" /></p>
@@ -11637,17 +11637,17 @@ var sessionId =</code></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
 </code></pre></div>
 <p>To provide the data for a new book, we will need to drag the <strong>"SetRequestBodyObject"</strong> property of the <strong>"Add_Book"</strong> object to the line <strong>above</strong> the DoExecute and pass in a populated JavaScript object:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">newBook</span> <span class="o">=</span> <span class="p">{};</span>
-<span class="nx">newBook</span><span class="p">.</span><span class="nx">Name</span> <span class="o">=</span> <span class="s1">&#39;A Christmas Carol&#39;</span><span class="p">;</span>
-<span class="nx">newBook</span><span class="p">.</span><span class="nx">AuthorId</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
-<span class="nx">newBook</span><span class="p">.</span><span class="nx">GenreId</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">newBook</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="nx">newBook</span><span class="p">.</span><span class="nx">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;A Christmas Carol&#39;</span><span class="p">;</span>
+<span class="nx">newBook</span><span class="p">.</span><span class="nx">AuthorId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
+<span class="nx">newBook</span><span class="p">.</span><span class="nx">GenreId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
 
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Add_Book&#39;</span><span class="p">).</span><span class="nx">SetRequestBodyObject</span><span class="p">(</span><span class="nx">newBook</span><span class="p">);</span>
 </code></pre></div>
 <p>Finally Add code to test that our new book was added correctly and the count has increased by one:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Books&#39;</span><span class="p">).</span><span class="nx">DoExecute</span><span class="p">({</span><span class="s2">&quot;session_id&quot;</span><span class="o">:</span><span class="nx">sessionId</span><span class="p">});</span>
-<span class="nx">books</span> <span class="o">=</span> <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Books&#39;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
-<span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span> <span class="mf">15</span><span class="p">,</span> <span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="nx">books</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Books&#39;</span><span class="p">).</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
+<span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s1">&#39;Book count matches&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="nx">books</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 </code></pre></div>
 <p>You should now have the following code:</p>
 <p><img alt="tutorial_web_services_pic29" src="../img/tutorial_web_services_rest39.png" /></p>

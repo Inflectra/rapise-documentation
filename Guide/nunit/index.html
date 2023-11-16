@@ -11207,35 +11207,35 @@
 <h2 id="about-nunit-integration">About NUnit Integration<a class="headerlink" href="#about-nunit-integration" title="Permanent link">&para;</a></h2>
 <p>SeSNUnit is a sample of using NUnit. We provide special attribute to help executing Rapise GUI tests from within NUnit tests.</p>
 <p>Standard NUnit test looks like this:</p>
-<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">NUnit.Framework</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">NUnit.Framework</span><span class="p">;</span>
 
 <span class="na">[TestFixture]</span>
-<span class="k">public</span> <span class="k">class</span> <span class="nc">MyTests</span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyTests</span>
 <span class="p">{</span>
-<span class="na">    [Test]</span> <span class="cm">/* – THIS IS AN ATTRIBUTE FOR STANDARD NUnit Test */</span>
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">MyTest1</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="s">&quot;Check equality&quot;</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="na">[Test]</span><span class="w"> </span><span class="cm">/* – THIS IS AN ATTRIBUTE FOR STANDARD NUnit Test */</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">MyTest1</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Check equality&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Each test case is a function with a special attribute [<strong>Test</strong>]. NUnit uses it to find test cases, then collects cases in sets and so on.</p>
 <p>Rapise integration makes execution of Rapise tests as simple as execution of normal NUnit tests:</p>
-<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">NUnit.Framework</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">SeSNUnit</span><span class="p">;</span> <span class="c1">// We include Rapise helper class</span>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">NUnit.Framework</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">SeSNUnit</span><span class="p">;</span><span class="w"> </span><span class="c1">// We include Rapise helper class</span>
 
 <span class="na">[TestFixture]</span>
-<span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerTesting</span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">PlayerTesting</span>
 <span class="p">{</span>
-    <span class="c1">// Next line means: this is an NUnit test that executes Cross Browser.sstest with Rapise</span>
-<span class="na">    [SeSNUnitTest(@&quot;T:\Samples\Cross Browser\CrossBrowser.sstest&quot;)]</span>
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">TestIEandFirefox</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">exitCode</span> <span class="p">=</span> <span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
-        <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">exitCode</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Next line means: this is an NUnit test that executes Cross Browser.sstest with Rapise</span>
+<span class="w">    </span><span class="na">[SeSNUnitTest(@&quot;T:\Samples\Cross Browser\CrossBrowser.sstest&quot;)]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TestIEandFirefox</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">exitCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
+<span class="w">        </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now we use another attribute to mark the test:</p>
@@ -11251,9 +11251,9 @@
 <p>Select “OpenProject…” from “File” menu:</p>
 <p><img alt="clip0067" src="../img/nunit2.png" /></p>
 <p>In opened window find and select</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit\SeSSamplesNUnit\bin\Release\SeSSamplesNUnit.dll
-</code></pre></div>
-</td></tr></table>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit\SeSSamplesNUnit\bin\Release\SeSSamplesNUnit.dll
+</code></pre></div></td></tr></table></div>
+
 <p>Press “Run” to start the test</p>
 <p><img alt="clip0068" src="../img/nunit3.png" /></p>
 <p>After the test ended NUnit GUI must look like:</p>
@@ -11269,9 +11269,9 @@ message and stack trace for both unexpected exceptions and assertion failures. T
 were selected for running but were not run, together with the reason. The <strong>Console.Out</strong>, <strong>Console.Error</strong> and <strong>Trace Output</strong> tabs display text output from the tests.</p>
 <h2 id="visual-studio-templates">Visual Studio Templates<a class="headerlink" href="#visual-studio-templates" title="Permanent link">&para;</a></h2>
 <p>Templates are available to help you creating tests in Visual Studio. To install them use run installer file: </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit.vsi
-</code></pre></div>
-</td></tr></table>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit.vsi
+</code></pre></div></td></tr></table></div>
+
 <p>and follow the installation process</p>
 <p><img alt="clip0070" src="../img/nunit5.png" /></p>
 <p>This will add code snippets and project templates described below.</p>
@@ -11280,18 +11280,18 @@ were selected for running but were not run, together with the reason. The <stron
 <p>The only thing you need to do is just to create <strong>SeSNUnitTests</strong> type project. For that open VS2005, on <strong>Start Page</strong> click on <code>Project...</code> (in the right side of <code>Create:</code>) and in opened window from <code>My Templates</code> part select <code>SeSNUnitTests</code>. If you want you can change name of dll. By default it is <code>SeSNUnitTests1</code>:</p>
 <p><img alt="clip0071" src="../img/nunit6.png" /></p>
 <p>In the created project Open <code>Fixture1.cs</code> file.  All necessary references are already added:</p>
-<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Diagnostics</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">NUnit.Framework</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">SeSNUnit</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">System.Text</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">System.Diagnostics</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">NUnit.Framework</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">SeSNUnit</span><span class="p">;</span>
 </code></pre></div>
 <p>File also contains <code>Fixture1class</code> with <code>[TestFixture]</code> attribute:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[TestFixture]</span>
-<span class="k">public</span> <span class="k">class</span> <span class="nc">Fixture1</span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Fixture1</span>
 <span class="p">{</span>
-    <span class="p">...</span>
+<span class="w">    </span><span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>This is the attribute that marks a class that contains tests and, optionally, setup or teardown methods.</p>
@@ -11307,22 +11307,22 @@ were selected for running but were not run, together with the reason. The <stron
 course of a session.</p>
 <p>In class we have <code>SetUp()</code> and <code>TearDown()</code> methods, and one more test method:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[SetUp()]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">SetUp</span><span class="p">()</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SetUp</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="c1">//TODO - Setup your test objects here</span>
+<span class="w">    </span><span class="c1">//TODO - Setup your test objects here</span>
 <span class="p">}</span>
 
 <span class="na">[TearDown()]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">TearDown</span><span class="p">()</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TearDown</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="c1">//TODO - Tidy up your test objects here</span>
+<span class="w">    </span><span class="c1">//TODO - Tidy up your test objects here</span>
 <span class="p">}</span>
 
 <span class="na">[SeSNUnitTest(/*Insert path to .sstest file which must be run.*/)]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">TestSeS</span><span class="p">()</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TestSeS</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">exitCode</span> <span class="p">=</span> <span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
-    <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">exitCode</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">exitCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now you also have a snippet, by which you can easily add <code>TestSeS</code> method with <code>[SeSNUnitTest(@"&lt;path to .sstest&gt;")]</code> attribute. Right
@@ -11332,10 +11332,10 @@ click in class body and from opened context menu select <code>Insert Snippet…<
 <p><img alt="clip0073" src="../img/nunit8.png" /></p>
 <p>This code will be added:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[SeSNUnitTest(/*Insert path to .sstest file which must be run.*/)]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">TestSeS</span><span class="p">()</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TestSeS</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">exitCode</span> <span class="p">=</span> <span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
-    <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">exitCode</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">exitCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>You just need to add path of <code>.sstest</code>  file to <code>SeSNUnitTest</code> attribute. If you add code via snippet in standard SeSNUnit Test project you will have two <code>TestSeS</code> methods, so don’t forget to change the name of one of them.</p>

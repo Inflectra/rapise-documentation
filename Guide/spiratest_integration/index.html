@@ -12264,34 +12264,34 @@
 <p>If your test is implemented in RVL, you may define these variables right in RVL sheet using <a href="../../RVL/Variables/#assigning">Global Variables</a>. No need to define <code>g_browserLibrary</code> because it is built-in. Note, that to print this parameter value we use <code>g_browserProfile</code>.</p>
 <p><img alt="parameters in rvl" src="../img/using_rapise_with_spiratest_rvl_vars.png" /></p>
 <p>In JavaScript mode declare parameters in <code>Main.js</code> like this.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">TestInit</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestInit</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="c1">// Input variables - allows to configure parameters in SpiraTest.</span>
-    <span class="c1">// Provide backup values if not defined.</span>
-    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">))</span>
-    <span class="p">{</span>
-        <span class="nx">g_book_name</span> <span class="o">=</span> <span class="s1">&#39;The Restaurant at the end of the Universe&#39;</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Input variables - allows to configure parameters in SpiraTest.</span>
+<span class="w">    </span><span class="c1">// Provide backup values if not defined.</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;undefined&#39;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">g_book_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;The Restaurant at the end of the Universe&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">))</span>
-    <span class="p">{</span>
-        <span class="nx">g_book_author</span> <span class="o">=</span> <span class="s1">&#39;Agatha Christie&#39;</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;undefined&#39;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">g_book_author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Agatha Christie&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;undefined&#39;</span> <span class="o">==</span> <span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">))</span>
-    <span class="p">{</span>
-        <span class="nx">g_book_genre</span> <span class="o">=</span> <span class="s1">&#39;Science Fiction&#39;</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;undefined&#39;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="ow">typeof</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">g_book_genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Science Fiction&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">);</span>
-    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">);</span>
-    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">);</span>
-    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_browserProfile</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_book_name</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_book_author</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_book_genre</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">g_browserProfile</span><span class="p">);</span>
 
-    <span class="c1">// test steps</span>
+<span class="w">    </span><span class="c1">// test steps</span>
 <span class="p">}</span>
 
 <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">]</span>
@@ -12496,7 +12496,7 @@
 <p>You may attach some data to Test Set and use it during test execution. It is a convenient way to pass configuration and data files for the test set. It may be used as an alternative to defining Spira Configurations.</p>
 <p>You may open test attachment using the <code>%ARTIFACTS%</code> environment variable. If this is a standalone test then <code>ARTIFACTS</code> resolves to <code>WORKDIR</code> (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.</p>
 <p><em>Example Usage:</em></p>
-<div class="highlight"><pre><span></span><code>    <span class="nx">Global</span><span class="p">.</span><span class="nx">GetProperty</span><span class="p">(</span><span class="s2">&quot;Url&quot;</span><span class="p">,</span> <span class="s2">&quot;http://default/url&quot;</span><span class="p">,</span> <span class="s2">&quot;%ARTIFACTS%/Config.xlsx&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">GetProperty</span><span class="p">(</span><span class="s2">&quot;Url&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;http://default/url&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;%ARTIFACTS%/Config.xlsx&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>So by default it would load <code>Config.xlsx</code>  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file <code>Config.xlsx</code> attached then will be used to read the <code>Url</code> property.</p>
 <h3 id="parameters-passed-from-rapiselauncher-to-rapise">Parameters Passed from RapiseLauncher to Rapise<a class="headerlink" href="#parameters-passed-from-rapiselauncher-to-rapise" title="Permanent link">&para;</a></h3>

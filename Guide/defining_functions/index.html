@@ -11239,22 +11239,22 @@
 <div class="highlight"><pre><span></span><code><span class="nx">External</span><span class="p">.</span><span class="nx">js</span><span class="o">:</span>
 
 <span class="c1">// Withdraw is defined inside the &quot;Test&quot; function</span>
-<span class="kd">function</span> <span class="nx">Withdraw</span><span class="p">(</span><span class="nx">amount</span><span class="p">)</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">Withdraw</span><span class="p">(</span><span class="nx">amount</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Start Withdraw of:&quot;</span><span class="o">+</span><span class="nx">amount</span><span class="p">);</span>
-    <span class="c1">// Withdraw logic is here</span>
+<span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Start Withdraw of:&quot;</span><span class="o">+</span><span class="nx">amount</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Withdraw logic is here</span>
 <span class="p">}</span>
 
 <span class="nx">Main</span><span class="p">.</span><span class="nx">js</span><span class="o">:</span>
 
-<span class="kd">function</span> <span class="nx">Test</span><span class="p">()</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
 
-    <span class="nb">eval</span><span class="p">(</span><span class="nx">File</span><span class="p">.</span><span class="nx">Include</span><span class="p">(</span><span class="s1">&#39;External.js&#39;</span><span class="p">));</span>
+<span class="w">    </span><span class="nb">eval</span><span class="p">(</span><span class="nx">File</span><span class="p">.</span><span class="nx">Include</span><span class="p">(</span><span class="s1">&#39;External.js&#39;</span><span class="p">));</span>
 
-    <span class="nx">Withdraw</span><span class="p">(</span><span class="mf">12.34</span><span class="p">);</span>
-    <span class="c1">// Deposit is defined in &quot;UtilityFunctions.js&quot;</span>
-    <span class="nx">Deposit</span><span class="p">(</span><span class="mf">56.78</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Withdraw</span><span class="p">(</span><span class="mf">12.34</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Deposit is defined in &quot;UtilityFunctions.js&quot;</span>
+<span class="w">    </span><span class="nx">Deposit</span><span class="p">(</span><span class="mf">56.78</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

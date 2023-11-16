@@ -11155,9 +11155,9 @@
 <p>Next, inside Rapise, create a <a href="../scenarios/">test scenario</a> (function) that contains the necessary login. In this example we shall simply automate the launching of MS-Paint.</p>
 <p>Create a function in the <strong>User.js</strong> file with the following
 code:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">LaunchMsPaint</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">LaunchMsPaint</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="s1">&#39;C:\\Windows\\system32\\mspaint.exe&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="s1">&#39;C:\\Windows\\system32\\mspaint.exe&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now go to the <strong>Manual Steps</strong> section of Rapise by clicking on the <code>Tools &gt; Manual Steps</code> menu.</p>
@@ -11168,12 +11168,12 @@ code:</p>
 <p>This will be contained within the actual test step itself:</p>
 <p><img alt="semi_manual_1" src="../img/semi_manual_testing1.png" /></p>
 <p>Now, when you execute the test (using the normal <strong>Execute</strong> button on the main <a href="../menu_and_toolbars/#main-toolbar">Test toolbar</a> (<strong><em>not</em></strong> the Execute Manual icon on the <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a> ) what happens is that Rapise will execute the main <code>Test()</code> function that contains:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">Global</span><span class="p">.</span><span class="nx">DoPlayManual</span><span class="p">(</span><span class="s1">&#39;ManualSteps.rmt&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoPlayManual</span><span class="p">(</span><span class="s1">&#39;ManualSteps.rmt&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="nx">g_load_libraries</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">];</span>
+<span class="nx">g_load_libraries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">];</span>
 </code></pre></div>
 <p>this instructs Rapise to use the <a href="../manual_playback/">manual
 playback</a> system.

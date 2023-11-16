@@ -11226,24 +11226,24 @@
 </table>
 <p>We want to dynamically query this Excel sheet and find the test data associated with a specific case. For example if we query for <code>Test2</code> we want to return back the test data <code>valuetest2</code>.</p>
 <p>The function that will do this uses the built-in <a href="/Libraries/Spreadsheet/">Spreadsheet</a> object:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">FindValueFromFile</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span> <span class="nx">valueToFind</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">FindValueFromFile</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span><span class="w"> </span><span class="nx">valueToFind</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="c1">//Open the spreadsheet</span>
-    <span class="kd">var</span> <span class="nx">success</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span> <span class="s1">&#39;Sheet1&#39;</span><span class="p">);</span>
-    <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Open Spreadsheet&#39;</span><span class="p">,</span> <span class="nx">success</span><span class="p">);</span>
-    <span class="c1">//Now loop through and see if we can find that value</span>
-    <span class="kd">var</span> <span class="nx">rowCount</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetRowCount</span><span class="p">();</span>
-    <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">SetRange</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="nx">rowCount</span> <span class="o">+</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">);</span>
-    <span class="c1">//Loop through all the rows and find the match</span>
-    <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">())</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span> <span class="o">==</span> <span class="nx">valueToFind</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="nx">data</span> <span class="o">=</span> <span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="nx">data</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">//Open the spreadsheet</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Sheet1&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Open Spreadsheet&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">success</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">//Now loop through and see if we can find that value</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">rowCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetRowCount</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">SetRange</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">rowCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">//Loop through all the rows and find the match</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">())</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">valueToFind</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">data</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

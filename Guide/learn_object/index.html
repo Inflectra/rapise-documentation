@@ -11375,9 +11375,9 @@
 <h2 id="record">RECORD<a class="headerlink" href="#record" title="Permanent link">&para;</a></h2>
 <h2 id="step-1-run-the-application">Step 1. Run the Application<a class="headerlink" href="#step-1-run-the-application" title="Permanent link">&para;</a></h2>
 <p>Run <strong>TwoDialogs</strong> sample application.  By default this will be located in</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe
-</code></pre></div>
-</td></tr></table>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe
+</code></pre></div></td></tr></table></div>
+
 <h2 id="step-2-create-a-new-test">Step 2. Create a New Test<a class="headerlink" href="#step-2-create-a-new-test" title="Permanent link">&para;</a></h2>
 <p>Start Rapise and create a new test, choose the <strong>Basic</strong> methodology, and call it <code>TwoDialogsRecording</code>. Select <code>JavaScript</code> scripting mode when prompted.</p>
 <h2 id="step-3-start-recording">Step 3. Start Recording<a class="headerlink" href="#step-3-start-recording" title="Permanent link">&para;</a></h2>
@@ -11403,9 +11403,9 @@
 <h2 id="learn">LEARN<a class="headerlink" href="#learn" title="Permanent link">&para;</a></h2>
 <h2 id="step-1-run-the-application_1">Step 1. Run the Application<a class="headerlink" href="#step-1-run-the-application_1" title="Permanent link">&para;</a></h2>
 <p>Run <strong>TwoDialogs</strong> sample application.  By default this will be located in</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe
-</code></pre></div>
-</td></tr></table>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe
+</code></pre></div></td></tr></table></div>
+
 <h2 id="step-2-create-a-new-test_1">Step 2. Create a New Test<a class="headerlink" href="#step-2-create-a-new-test_1" title="Permanent link">&para;</a></h2>
 <p>Start Rapise and create a new test, choose the <strong>Basic</strong> methodology, and call it <code>TwoDialogsLearn</code>. Select <code>JavaScript</code> scripting mode when prompted.</p>
 <h2 id="step-3-start-recording_1">Step 3. Start Recording<a class="headerlink" href="#step-3-start-recording_1" title="Permanent link">&para;</a></h2>
@@ -11472,21 +11472,21 @@ g_load_libraries=[&quot;UIAutomation&quot;];
 <p>What's going on here is that the <code>DoLButtonDown()</code> and <code>DoLButtonUp()</code> methods are pressing the mouse irrespective of where the mouse cursor is positioned.</p>
 <p>The other functions, <code>DoClick</code> and <code>DoAction</code> are methods that are applied to the button and so they are applied to the button.</p>
 <p>Before we can expect <code>DoLButtonDown()</code> and <code>DoLButtonUp()</code> methods to work, we have to first the mouse cursor to the button.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mf">25</span><span class="p">,</span> <span class="mf">15</span><span class="p">);</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">();</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mf">25</span><span class="p">,</span><span class="w"> </span><span class="mf">15</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>will accomplish that.</p>
 <p>Notice that Rapise will actually move the mouse to the coordinates (25, 15)  within the <code>OK</code> button.  Also notice that if you move the mouse while the test is playing, you will make the test fail.</p>
 <p>As a last experiment in this arena, try moving the mouse outside the boundaries of the <code>OK</code> button object before calling the <code>DoLButtonDown()</code> function.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mf">250</span><span class="p">,</span> <span class="mf">150</span><span class="p">);</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">();</span>
-    <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">150</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Once again, the script will fail.</p>

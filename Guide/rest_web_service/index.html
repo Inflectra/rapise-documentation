@@ -11564,20 +11564,20 @@
 <p>Each Request with <strong>Content-Type</strong> set to <code>multipart/form-data</code> is assumed to be a special request and handled in a special way.</p>
 <p>The <strong>Body</strong> part should be a valid <code>JSON</code> with the following structure:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="s2">&quot;multipart&quot;</span><span class="o">:</span>
-    <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;name_of_text_field&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;ContentType&quot;</span><span class="o">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Value&quot;</span><span class="o">:</span> <span class="s2">&quot;value&quot;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;uploadfile&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;ContentType&quot;</span><span class="o">:</span> <span class="s2">&quot;image/png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;FileName&quot;</span><span class="o">:</span> <span class="s2">&quot;image.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;FilePath&quot;</span><span class="o">:</span> <span class="s2">&quot;path_to_file_for_upload&quot;</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
+<span class="w">    </span><span class="s2">&quot;multipart&quot;</span><span class="o">:</span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;name_of_text_field&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;text/plain&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uploadfile&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;image/png&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;FileName&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;image.png&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;FilePath&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;path_to_file_for_upload&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart1.png" /></p>
@@ -11585,54 +11585,54 @@
 <p>For file upload fields <strong>ContentType</strong> and <strong>FileName</strong> are optional. By default content-type and <strong>FileName</strong> are auto-detected from the <strong>FilePath</strong>.</p>
 <p>So here is an example of the minimal multipart request with one text field and one file upload:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="s2">&quot;multipart&quot;</span><span class="o">:</span>
-    <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;name_of_text_field&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Value&quot;</span><span class="o">:</span> <span class="s2">&quot;value&quot;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;uploadfile&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;FullPath&quot;</span><span class="o">:</span> <span class="s2">&quot;c:\\some\\path\\to\\image.png&quot;</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
+<span class="w">    </span><span class="s2">&quot;multipart&quot;</span><span class="o">:</span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;name_of_text_field&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uploadfile&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;FullPath&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;c:\\some\\path\\to\\image.png&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="json-as-field-value">JSON as Field Value<a class="headerlink" href="#json-as-field-value" title="Permanent link">&para;</a></h3>
 <p>Here is how you can pass JSON value of the field:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="p">{</span>
-      <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;jsonText&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="s2">&quot;text/json&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;Value&quot;</span><span class="o">:</span> <span class="p">{</span>
-        <span class="s2">&quot;One&quot;</span><span class="o">:</span><span class="s2">&quot;Value1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Two&quot;</span><span class="o">:</span><span class="mf">123</span>
-      <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="p">...</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;jsonText&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="s2">&quot;text/json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;One&quot;</span><span class="o">:</span><span class="s2">&quot;Value1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Two&quot;</span><span class="o">:</span><span class="mf">123</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="params-in-multipart-request">Params in Multipart Request<a class="headerlink" href="#params-in-multipart-request" title="Permanent link">&para;</a></h3>
 <p>It is typical that you want to parameterize text value or file path. It is important to make sure that you properly quote custom value. I.e.</p>
 <p>If we have a parameterized JSON Body:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="s2">&quot;multipart&quot;</span><span class="o">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;jsonText&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="s2">&quot;text/json&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;Value&quot;</span><span class="o">:</span> <span class="p">{</span><span class="nx">StringParam</span><span class="p">}</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="s2">&quot;Name&quot;</span><span class="o">:</span> <span class="s2">&quot;uploadfile&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;FilePath&quot;</span><span class="o">:</span> <span class="p">{</span><span class="nx">FilePathParam</span><span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
+<span class="w">  </span><span class="s2">&quot;multipart&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;jsonText&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;ContentType&quot;</span><span class="o">:</span><span class="s2">&quot;text/json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;Value&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">StringParam</span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uploadfile&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;FilePath&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">FilePathParam</span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="WS Multipart" src="../img/rest_web_service_multipart2.png" /></p>
 <p>Once parameters are defined for the <code>multipart</code> request, you should make sure that they are properly escaped. Consider using <code>JSON.stringify</code> appropriately, i.e.:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span> <span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
-<span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;FilePathParam&#39;</span><span class="p">,</span> <span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s1">&#39;NewAvatarImage.png&#39;</span><span class="p">)</span> <span class="p">));</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;StringParam&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">&quot;Some Value&quot;</span><span class="p">));</span>
+<span class="nx">RestMultipart_UploadFileParams</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;FilePathParam&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="w"> </span><span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="s1">&#39;NewAvatarImage.png&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">));</span>
 </code></pre></div>
 <h2 id="passing-data-between-api-calls">Passing Data Between API Calls<a class="headerlink" href="#passing-data-between-api-calls" title="Permanent link">&para;</a></h2>
 <p>There are certain scenarios when it is convenient to pass dynamic data into a REST call or between consequent REST calls, i.e.:</p>
@@ -11651,26 +11651,26 @@
 <p>Callback function always created in the <code>User.js</code> of the current test.</p>
 <h4 id="beforerequest-rest-callback">BeforeRequest REST Callback<a class="headerlink" href="#beforerequest-rest-callback" title="Permanent link">&para;</a></h4>
 <p><strong>BeforeRequest</strong> callback has a signature:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Before_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Before_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
 </code></pre></div>
 <p>i.e.:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Before_LibraryInformationSystem_Get_Session</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Before_LibraryInformationSystem_Get_Session</span><span class="p">(</span><span class="cm">/**RESTRequest*/</span><span class="nx">request</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="nx">request</span><span class="p">.</span><span class="nx">SetHeader</span><span class="p">(</span><span class="s1">&#39;Accept&#39;</span><span class="p">,</span> <span class="s1">&#39;application/json&#39;</span><span class="p">);</span>
-    <span class="nx">request</span><span class="p">.</span><span class="nx">SetHeader</span><span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span> <span class="s1">&#39;application/json&#39;</span><span class="p">);</span>
-    <span class="nx">request</span><span class="p">.</span><span class="nx">SetCredential</span><span class="p">(</span><span class="s1">&#39;librarian&#39;</span><span class="p">,</span> <span class="s1">&#39;librarian&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">request</span><span class="p">.</span><span class="nx">SetHeader</span><span class="p">(</span><span class="s1">&#39;Accept&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;application/json&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">request</span><span class="p">.</span><span class="nx">SetHeader</span><span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;application/json&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">request</span><span class="p">.</span><span class="nx">SetCredential</span><span class="p">(</span><span class="s1">&#39;librarian&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;librarian&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>It is executed right before the action. It may access pre-defined Headers, Properties and URL of given request and alter them. All this may be done by accessing <code>Session</code> global object and <code>request</code> object passed as a parameter. Parameter type is <a href="../../Libraries/RESTRequest/">RESTRequest</a>.</p>
 <h4 id="afterresponse-rest-callback">AfterResponse REST Callback<a class="headerlink" href="#afterresponse-rest-callback" title="Permanent link">&para;</a></h4>
 <p><strong>AfterResponse</strong> callback has a signature:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">After_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">After_</span><span class="o">&lt;</span><span class="nx">Rest_FileName</span><span class="o">&gt;</span><span class="nx">_</span><span class="o">&lt;</span><span class="nx">Entry_Name</span><span class="o">&gt;</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
 </code></pre></div>
 <p>i.e.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">After_LibraryInformationSystem_Get_Session</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">After_LibraryInformationSystem_Get_Session</span><span class="p">(</span><span class="cm">/**RESTResponse*/</span><span class="nx">response</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">sessionid</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
-    <span class="nx">Session</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;session_id&#39;</span><span class="p">,</span> <span class="nx">sessionid</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">sessionid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">GetResponseBodyObject</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">Session</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="s1">&#39;session_id&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">sessionid</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>It is executed right after the action.  It may access <code>response</code> object passed as a parameter. Parameter type is <a href="../../Libraries/RESTResponse/">RESTResponse</a>.</p>
@@ -11700,26 +11700,26 @@
 <p><strong>Record REST Objects</strong> is <code>true</code>, each step creates an object in the object tree:</p>
 <p><img alt="Record REST Objects" src="../img/rest_web_service_record_rest_objects.png" /></p>
 <p>and it is used by the produced script:</p>
-<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Session&#39;</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">LibraryInformationSystem_Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;LibraryInformationSystem_Get_Session&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 </code></pre></div>
 <p>When <strong>Record REST Objects</strong> is <code>false</code> then nothing is added to the object tree and generated script uses REST definition file directly by means of <a href="../../Libraries/Session/#getrestrequest">Session.GetRESTRequest</a>:</p>
-<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">LibraryInformationSystem_Get_Session</span> <span class="o">=</span><span class="cm">/**RESTService*/</span><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
-    <span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">LibraryInformationSystem_Get_Session</span><span class="w"> </span><span class="o">=</span><span class="cm">/**RESTService*/</span><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">LibraryInformationSystem_Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 </code></pre></div>
 <p>When <strong>Generate Full Name</strong> is <code>false</code> then shorter object name is used, both when <strong>Record REST Objects</strong> is <code>true</code>:</p>
-<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Get_Session&#39;</span><span class="p">);</span>
-    <span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">Get_Session</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Get_Session&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 </code></pre></div>
 <p>and when <strong>Record REST Objects</strong> is <code>false</code>:</p>
-<div class="highlight"><pre><span></span><code>    <span class="kd">var</span> <span class="nx">Get_Session</span> <span class="o">=</span><span class="cm">/**RESTService*/</span><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
-    <span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">Get_Session</span><span class="w"> </span><span class="o">=</span><span class="cm">/**RESTService*/</span><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Get_Session</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
 </code></pre></div>
 <p>The way how <code>Session.GetRESTRequest</code> is recorded depends on <strong>Generate Short REST Path</strong>. In short mode the 1<sup>st</sup> parameter is just <code>&lt;filename&gt;.rest</code>, i.e.:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;LibraryInformationSystem.rest&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>While in long mode it is:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;%WORKDIR%\\LibraryInformationSystem.rest&quot;</span><span class="p">,</span> <span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Session</span><span class="p">.</span><span class="nx">GetRESTRequest</span><span class="p">(</span><span class="s2">&quot;%WORKDIR%\\LibraryInformationSystem.rest&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Get_Session&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h3 id="negative-rest-tests">Negative REST Tests<a class="headerlink" href="#negative-rest-tests" title="Permanent link">&para;</a></h3>
 <p>Some actions are expected to return failure and we need to work with them to produce negative tests. There are two ways of doing it. First is global, so failures of all actions ignored. It is active when you choose <a href="../../Libraries/Session/#setignorestatus">Session.SetIgnoreStatus</a>. I.e.:</p>
@@ -11731,9 +11731,9 @@
 </code></pre></div>
 <p>If automatic status verification is disabled you expected to explicitly check the response returned from <code>DoExecute</code>.</p>
 <p><strong>Record Failed REST Actions</strong> <a href="../options_dialog/#api">controls</a> what to record when action returns status other than <strong>200</strong>. If it is <code>true</code> then recorded step has additional parameter <code>ignoreStatus=true</code>. This flag is only added then action has also failed during recording.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">FailingEndpoint1</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">({},</span> <span class="kc">true</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">FailingEndpoint1</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">({},</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span>
 <span class="nx">PassingEndpoint</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">();</span>
-<span class="nx">FailingEndpoint2</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">({},</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">FailingEndpoint2</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">({},</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span>
 </code></pre></div>
                 
               

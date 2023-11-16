@@ -11213,34 +11213,34 @@
 <p>Rapise has built-in code completion logic that lets it suggest the available list of functions for a specific object. However since JavaScript is fundamentally an un-typed language, for the code completion to work, there are some tips and tricks that you can use.</p>
 <p>Rapise scans for variable definitions when one saves the <code>.js</code> source file. So if anything goes wrong (no hints) then first thing is to save the file.</p>
 <p>One may define a variable as simple as:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">p</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">p</span><span class="p">;</span>
 </code></pre></div>
 <p>In this example <code>p</code> is just a variable with undefined type. It may be used as number, string or object. So Rapise has no idea of how to deal with it. So if you type a dot after  <code>p.</code> no code-completion window appears.</p>
 <p>There are several ways of giving Rapise a "hint" about the variable type:</p>
 <h2 id="static-assignment">Static Assignment<a class="headerlink" href="#static-assignment" title="Permanent link">&para;</a></h2>
 <p>First, is static assignment. Suppose you specify some constant value when defining a variable:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="s2">&quot;some string&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;some string&quot;</span><span class="p">;</span>
 </code></pre></div>
 <p>In this case Rapise knows the type of <code>p</code>. So it would assist you when you type a dot <code>.</code> after <code>p</code>:</p>
 <p><img alt="code_completion_1" src="../img/code_helper2.png" /></p>
 <h2 id="using-comments-to-suggest-the-type">Using Comments to Suggest the Type<a class="headerlink" href="#using-comments-to-suggest-the-type" title="Permanent link">&para;</a></h2>
 <p>In some cases variable type is not clear from its definition or assignments is not static:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">v1</span> <span class="o">=</span> <span class="nx">input</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">v2</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">v1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">;</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">v2</span><span class="p">;</span>
 </code></pre></div>
 <p>To deal with such cases the code should be instrumented. For example, if we know that input is string and v2 will be used as number then we may explain it to Rapise by placing variable type using special comment: <code>/**var_type*/</code> right together with var definition. It should be placed right either between <code>var</code> keyword and variable name or right after an assignment operation (<code>=</code>), if any. I.e.:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">v1</span> <span class="o">=</span> <span class="cm">/**string*/</span> <span class="nx">input</span><span class="p">;</span>
-<span class="kd">var</span> <span class="cm">/**number*/</span> <span class="nx">v2</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">v1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">input</span><span class="p">;</span>
+<span class="kd">var</span><span class="w"> </span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">v2</span><span class="p">;</span>
 </code></pre></div>
 <p>So now Rapise will be able to display the list of available methods and properties:</p>
 <p><img alt="code_completion_2" src="../img/code_helper3.png" /></p>
 <p>Another common case is a function parameter. If you have function that is defined:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">my_func</span><span class="p">(</span><span class="nx">patient_index</span><span class="p">,</span> <span class="nx">patient_name</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">my_func</span><span class="p">(</span><span class="nx">patient_index</span><span class="p">,</span><span class="w"> </span><span class="nx">patient_name</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>The type of parameters <code>patient_index</code> and <code>patient_name</code> are not known, but may be explained in a similar way:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">my_func</span><span class="p">(</span><span class="cm">/**number*/</span> <span class="nx">patient_index</span><span class="p">,</span> <span class="cm">/**string*/</span> <span class="nx">patient_name</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">my_func</span><span class="p">(</span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">patient_index</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">patient_name</span><span class="p">)</span>
 </code></pre></div>
 <p>So it becomes known to Rapise:</p>
 <p><img alt="code_completion_3" src="../img/code_helper4.png" /></p>
@@ -11251,7 +11251,7 @@
 </code></pre></div>
 <p>A list of available actions and properties will be suggested for repository object with the given ID.</p>
 <p>Since Rapise 6.4 you may specify type of a dynamically created object as well.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">username</span> <span class="o">=</span> <span class="cm">/**HTMLObject*/</span> <span class="nx">Navigator</span><span class="p">.</span><span class="nx">Find</span><span class="p">(</span><span class="s2">&quot;//button[id=&#39;username&#39;]&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="cm">/**HTMLObject*/</span><span class="w"> </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">Find</span><span class="p">(</span><span class="s2">&quot;//button[id=&#39;username&#39;]&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p>Save the edited file to let Rapise re-parse it. Then you may type</p>
 <div class="highlight"><pre><span></span><code><span class="nx">username</span><span class="p">.</span>

@@ -11270,23 +11270,23 @@
 <h2 id="unit-test-mapping">Unit Test Mapping<a class="headerlink" href="#unit-test-mapping" title="Permanent link">&para;</a></h2>
 <p>Rapise integrates with Visual Studio at <a href="https://www.visualstudio.com/en-us/docs/test/developer-testing/getting-started/getting-started-with-developer-testing">Unit Test</a> level.</p>
 <p>Create a Unit Test project in Visual Studio, add a unit test and a test method. In the References section add the DLL:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>c:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll
-</code></pre></div>
-</td></tr></table>
-<p>In a test method specify absolute path to a Rapise test and pass <code>TextContext</code> parameter to <code>Rapise.TestExecute</code> function:</p>
-<div class="highlight"><pre><span></span><code><span class="k">namespace</span> <span class="nn">UnitTestProject1</span>
-<span class="p">{</span>
-<span class="na">    [TestClass]</span> 
-    <span class="k">public</span> <span class="k">class</span> <span class="nc">UnitTest1</span>
-    <span class="p">{</span>
-        <span class="k">public</span> <span class="n">TestContext</span> <span class="n">TestContext</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>c:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\VSUnit\SeSVSUnit\Bin\Release\SeSVSUnit.dll
+</code></pre></div></td></tr></table></div>
 
-<span class="na">        [TestMethod, TestCategory(&quot;browser&quot;)]</span>
-        <span class="k">public</span> <span class="k">void</span> <span class="nf">CreateNewBook</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span> <span class="n">TestContext</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+<p>In a test method specify absolute path to a Rapise test and pass <code>TextContext</code> parameter to <code>Rapise.TestExecute</code> function:</p>
+<div class="highlight"><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">UnitTestProject1</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="na">[TestClass]</span><span class="w"> </span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">UnitTest1</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="n">TestContext</span><span class="w"> </span><span class="n">TestContext</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">        </span><span class="na">[TestMethod, TestCategory(&quot;browser&quot;)]</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">CreateNewBook</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TestContext</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
@@ -11294,10 +11294,10 @@
 <p>Here is an example of selecting a browser to use for execution of cross-browser tests:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;RunSettings&gt;</span>
-  <span class="c">&lt;!-- Parameters used by tests at runtime --&gt;</span>
-  <span class="nt">&lt;TestRunParameters&gt;</span>
-    <span class="nt">&lt;Parameter</span> <span class="na">name=</span><span class="s">&quot;g_browserLibrary&quot;</span> <span class="na">value=</span><span class="s">&quot;Selenium - Chrome&quot;</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;/TestRunParameters&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!-- Parameters used by tests at runtime --&gt;</span>
+<span class="w">  </span><span class="nt">&lt;TestRunParameters&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Parameter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;g_browserLibrary&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;Selenium - Chrome&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/TestRunParameters&gt;</span>
 <span class="nt">&lt;/RunSettings&gt;</span>
 </code></pre></div>
 <h2 id="visual-studio-test-explorer">Visual Studio Test Explorer<a class="headerlink" href="#visual-studio-test-explorer" title="Permanent link">&para;</a></h2>
@@ -11323,9 +11323,9 @@
 <li>In <strong>Test Filter criteria</strong> one can select tests by TestCategory which is an attribute of a Test Method:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="na">[TestMethod, TestCategory(&quot;browser&quot;)]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">CreateNewBook</span><span class="p">()</span> 
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">CreateNewBook</span><span class="p">()</span><span class="w"> </span>
 <span class="p">{</span>
-    <span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span> <span class="n">TestContext</span><span class="p">);</span> 
+<span class="w">    </span><span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TestContext</span><span class="p">);</span><span class="w"> </span>
 <span class="p">}</span>
 </code></pre></div>
 <ul>
@@ -11349,39 +11349,39 @@ One can configure several agent pools to run tests in different environments:</p
 <span class="c1"># Running on a self-hosted agent</span>
 
 <span class="nt">trigger</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
 
 <span class="nt">pool</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;default&#39;</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;default&#39;</span>
 
 <span class="nt">variables</span><span class="p">:</span>
-  <span class="nt">solution</span><span class="p">:</span> <span class="s">&#39;**/*.sln&#39;</span>
-  <span class="nt">buildPlatform</span><span class="p">:</span> <span class="s">&#39;Any</span><span class="nv"> </span><span class="s">CPU&#39;</span>
-  <span class="nt">buildConfiguration</span><span class="p">:</span> <span class="s">&#39;Release&#39;</span>
+<span class="w">  </span><span class="nt">solution</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;**/*.sln&#39;</span>
+<span class="w">  </span><span class="nt">buildPlatform</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Any</span><span class="nv"> </span><span class="s">CPU&#39;</span>
+<span class="w">  </span><span class="nt">buildConfiguration</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Release&#39;</span>
 
 <span class="nt">steps</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">NuGetToolInstaller@0</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NuGetToolInstaller@0</span>
 
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">NuGetCommand@2</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">restoreSolution</span><span class="p">:</span> <span class="s">&#39;$(solution)&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NuGetCommand@2</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">restoreSolution</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(solution)&#39;</span>
 
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VSBuild@1</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">solution</span><span class="p">:</span> <span class="s">&#39;$(solution)&#39;</span>
-    <span class="nt">platform</span><span class="p">:</span> <span class="s">&#39;$(buildPlatform)&#39;</span>
-    <span class="nt">configuration</span><span class="p">:</span> <span class="s">&#39;$(buildConfiguration)&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VSBuild@1</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">solution</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(solution)&#39;</span>
+<span class="w">    </span><span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(buildPlatform)&#39;</span>
+<span class="w">    </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(buildConfiguration)&#39;</span>
 
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">testSelector</span><span class="p">:</span> <span class="s">&#39;testAssemblies&#39;</span>
-    <span class="nt">testAssemblyVer2</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-     <span class="no">**\$(BuildConfiguration)\*test*.dll</span>
-     <span class="no">!**\*Microsoft.VisualStudio.TestPlatform*</span>
-     <span class="no">!**\obj\**</span>
-    <span class="nt">searchFolder</span><span class="p">:</span> <span class="s">&#39;$(System.DefaultWorkingDirectory)&#39;</span>
-    <span class="nt">testFiltercriteria</span><span class="p">:</span> <span class="s">&#39;TestCategory=browser&#39;</span>
-    <span class="nt">runSettingsFile</span><span class="p">:</span> <span class="s">&#39;UnitTestProject1\UnitTestProject1\RS.runsettings&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">testSelector</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;testAssemblies&#39;</span>
+<span class="w">    </span><span class="nt">testAssemblyVer2</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">     </span><span class="no">**\$(BuildConfiguration)\*test*.dll</span>
+<span class="w">     </span><span class="no">!**\*Microsoft.VisualStudio.TestPlatform*</span>
+<span class="w">     </span><span class="no">!**\obj\**</span>
+<span class="w">    </span><span class="nt">searchFolder</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(System.DefaultWorkingDirectory)&#39;</span>
+<span class="w">    </span><span class="nt">testFiltercriteria</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;TestCategory=browser&#39;</span>
+<span class="w">    </span><span class="nt">runSettingsFile</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;UnitTestProject1\UnitTestProject1\RS.runsettings&#39;</span>
 </code></pre></div>
 <p>While configuring the pipeline you can add a Visual Studio Test task via the left panel.</p>
 <p><img alt="Pipeline Tasks" src="../img/azure_devops_pipeline_tasks.png" /></p>
@@ -11393,9 +11393,9 @@ One can configure several agent pools to run tests in different environments:</p
 <li>In <strong>Test filter criteria</strong> one can select tests by TestCategory which is an attribute of a Test Method:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="na">[TestMethod, TestCategory(&quot;browser&quot;)]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">CreateNewBook</span><span class="p">()</span> 
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">CreateNewBook</span><span class="p">()</span><span class="w"> </span>
 <span class="p">{</span>
-    <span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span> <span class="n">TestContext</span><span class="p">);</span> 
+<span class="w">    </span><span class="n">Rapise</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">(</span><span class="s">@&quot;c:\\Demo\\Framework\\CreateNewBook\\CreateNewBook.sstest&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TestContext</span><span class="p">);</span><span class="w"> </span>
 <span class="p">}</span>
 </code></pre></div>
 <ul>

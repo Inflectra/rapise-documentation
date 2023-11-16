@@ -11338,12 +11338,12 @@
 <h4 id="syntax-sugar">Syntax Sugar<a class="headerlink" href="#syntax-sugar" title="Permanent link">&para;</a></h4>
 <p>We found a reason why people get stuck while trying to implement a test case.</p>
 <p>Most of programming languages including <em>JavaScript</em> were designed by people with mathematical background.  So this statement appears clear and simple for a programmer:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nx">Deposit</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;O\&#39;Connor&#39;</span><span class="p">,</span> <span class="mf">17.99</span><span class="p">);</span>
+<p><div class="highlight"><pre><span></span><code><span class="nx">Deposit</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;O\&#39;Connor&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">17.99</span><span class="p">);</span>
 </code></pre></div>
 Programmer easily reads this as:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Deposit $17.99 to John O&#39;Connor
-</code></pre></div>
-</td></tr></table>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Deposit $17.99 to John O&#39;Connor
+</code></pre></div></td></tr></table></div>
+
 <p>So what is the difference between these notations? We found that the first and most important difficulty lays in so called <em>syntactical sugar</em>. Symbols <code>' " ; , . ( ) [ ] { } &amp; $ % # @</code> do have meaning for language notation however are not important for understanding the matter.</p>
 <p>This is true even for programmers. When switching from similarly looking languages some differences easily cause frustration. For example, the same construct:
 <div class="highlight"><pre><span></span><code>$a = &quot;Number &quot; + 1;

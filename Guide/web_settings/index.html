@@ -11196,9 +11196,9 @@
 <li><strong>xpath_full</strong> - generates a fully featured XPath path using elements without attributes. This XPath starts with /html and goes through body and other elements towards the required node.</li>
 <li>
 <p><strong>xpath_min</strong> - generated with the attributes defined in the <strong>DOM Attributes Include Filter</strong>. If the include filter is empty, then it is produced with all attributes except those defined in the <strong>DOM Attributes Exclude Filter</strong>. For example, if the include filter contains the <code>widgetid</code> custom attribute then the generated XPath would be:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="n">div</span><span class="o">[</span><span class="n">@widgetid=&quot;dojox_grid__View_1&quot;</span><span class="o">]</span><span class="w"></span>
-</code></pre></div>
-</td></tr></table>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">//div[@widgetid=&quot;dojox_grid__View_1&quot;]</span>
+</code></pre></div></td></tr></table></div>
+
 </li>
 <li>
 <p><strong>xpath_indexed</strong> - considers the node as nth of the same kind. For example, the page may contain 250 &lt;a href=…&gt; links across the
