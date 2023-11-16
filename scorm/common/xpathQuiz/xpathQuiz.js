@@ -157,7 +157,7 @@ function runXPath(id, inp, send, isCss, bValidate) {
     }
 
     if(inp) {
-        const expectedText = 
+        let expectedText = 
             iframe.contentDocument.evaluate('//*[@_expectedText]/@_expectedText', iframe.contentDocument, null, XPathResult.STRING_TYPE);
         if(expectedText&&expectedText.stringValue) {
             expectedText = expectedText.stringValue;
