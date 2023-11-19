@@ -34,8 +34,12 @@ function domPrint(el) {
                 }
             }
             for(const ln of tlines) {
-                if(ln.trim())  {
-                    lines.push(offset+ln)
+                if(sameLine) {
+                    lines[lines.length-1] += ln;
+                } else {
+                    if(ln.trim())  {
+                        lines.push(offset+ln)
+                    }    
                 }
             }
             nodeRange.el = lines.length;

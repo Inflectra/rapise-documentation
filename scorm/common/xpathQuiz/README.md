@@ -190,9 +190,7 @@ This \@xpathQuiz allows generation of XPath quizzes.
 Single basic selection.
 
 ``` xml @xpathQuiz(`Enter XPath to select a bold element:`)
-<p _root>
-    some
-    <b _correct>DOM</b>
+<p _root _oneline>some<b _correct>DOM</b>
 </p>
 ```
 
