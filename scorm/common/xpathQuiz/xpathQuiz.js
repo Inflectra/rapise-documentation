@@ -150,11 +150,11 @@ function validateXPath(id, inp, send, isCss) {
     return runXPath(id, inp, send, isCss, true)
 }
 
-function checkXPath(id, inp, send, isCss) {
-    return runXPath(id, inp, send, isCss, false)
+function checkXPath(id, inp, send, isCss, nodeset) {
+    return runXPath(id, inp, send, isCss, false, nodeset)
 }
 
-function runXPath(id, inp, send, isCss, bValidate) {
+function runXPath(id, inp, send, isCss, bValidate, nodeset) {
     const el = document.querySelector('#domq_'+id+' lia-editor');
     const editor = ace.edit(el);
     const prevMarkers = editor.getSession().getMarkers();
@@ -182,17 +182,21 @@ function runXPath(id, inp, send, isCss, bValidate) {
     }
 
     if(inp) {
-        let expectedText = 
+        if(!nodeset)
+        {
+            let expectedText = 
             iframe.contentDocument.evaluate('//*[@_expectedText]/@_expectedText', iframe.contentDocument, null, XPathResult.STRING_TYPE);
-        if(expectedText&&expectedText.stringValue) {
-            expectedText = expectedText.stringValue;
-            const foundText = iframe.contentDocument.evaluate(inp, dst, null, XPathResult.STRING_TYPE, null).stringValue;
-            if( (""+expectedText).trim().toLowerCase()!=(""+foundText).trim().toLowerCase() ) {
-                send?.log('error','\n',['Expected:',expectedText,'Found:',foundText])
-                return false;
-            } else {
-                send?.log('debug','',[foundText])
-                return true;
+            if(expectedText&&expectedText.stringValue) {
+                expectedText = expectedText.stringValue;
+
+                const foundText = iframe.contentDocument.evaluate(inp, dst, null, XPathResult.STRING_TYPE, null).stringValue;
+                if( expectedText!="*" && (""+expectedText).trim().toLowerCase()!=(""+foundText).trim().toLowerCase() ) {
+                    send?.log('error','\n',['Expected:',expectedText,'Found:',foundText])
+                    return false;
+                } else {
+                    send?.log('debug','',[foundText])
+                    return true;
+                }
             }
         }
 

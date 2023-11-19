@@ -107,6 +107,30 @@ setTimeout(()=>{prefill('domq_'+id);},150)
 </div>
 @end
 
+@xpath1PExample
+
+<div id="domq_@1@2">
+
+<!-- data-showGutter="false" -->
+``` xpath
+@0
+```
+<script>
+  const input = `@input`;
+  checkXPath(`@1`, input, send, false, '@3'=='true');
+  ""
+</script>
+
+<script>
+setTimeout(()=>{fixat("domq_@1@2",0);},150)
+"LIA: stop"
+</script>
+
+</div>
+
+@end
+
+
 @xpath2PExample
 
 
@@ -387,9 +411,8 @@ friend!
 
 # XPath Example 7 - table
 
-``` xml @xpathExample(` `,`normalize-space(//p)`)
-<table _root _expectedText='/'>
-    <!-- One line -->
+``` xml @xpathPart(EP7)
+<table _root _expectedText="*">
     <tr _oneline>
       <th>A</th>
       <th>B</th>
@@ -400,6 +423,15 @@ friend!
     </tr>
 </table>
 ```
+
+Select rows before requred one:
+
+@xpath1PExample(`//th[text()="B"]/preceding-sibling::th`,EP7,1,true)
+
+@xpath1PExample(`count(//th[text()="B"]/preceding-sibling::th)`,EP7,1)
+
+@xpath1PExample(`count(//th[text()="B"]/following-sibling::th)`,EP7,1)
+
 
 # CSS
 
