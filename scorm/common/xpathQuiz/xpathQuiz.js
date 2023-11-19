@@ -7,9 +7,16 @@ const selectedMarkerClass = 'ace_selected-word';
 function domPrint(el) {
     const lines = [];
 
-    function renderNode(node, offset) {
-        let nodeStart = offset||'';
-        const nodeRange = {sl:lines.length,sc:offset.length}
+    function renderNode(node, offset, sameLine) {
+        let nodeStart = sameLine?'':(offset||'');
+        const nodeRange = {sl:lines.length,sc:offset.length};
+
+        if(sameLine) {
+            const lastLine = lines.length>0?lines.length-1:0;
+            const lastCol = lines.length>0?lines[lines.length-1].length:0;
+            nodeRange.sl = lastLine;
+            nodeRange.sc = lastCol;
+        }
 
         if(node.nodeType==3) { //#text
             const txt = node.textContent.replace(/^(&nbsp;|\s)*/, '');
@@ -19,7 +26,7 @@ function domPrint(el) {
 
             const tlines = txt.split('\n');
             if(tlines.length==1) {
-                if(txt.length<50) {
+                if(sameLine || txt.length<50) {
                     lines[lines.length-1] += txt;
                     nodeRange.el = lines.length;
                     nodeRange.ec = lines[lines.length-1].length;
@@ -38,28 +45,42 @@ function domPrint(el) {
 
         nodeMap.set(node, nodeRange);
         nodeStart += '<'+(''+node.tagName).toLowerCase();
+        let sameLineStart = false;
         for(const a of node.attributes) {
-            if((''+a.nodeName).startsWith('_')) continue;
+            if((''+a.nodeName).startsWith('_')) {
+                if(a.nodeName=='_oneline') {
+                    sameLineStart = true;
+                }
+                continue;
+            }
             if(a.nodeName=='class' && !a.nodeValue) continue;
             nodeStart += ' '+a.nodeName;
             if(a.nodeValue) nodeStart +='="'+a.nodeValue+'"';
         }
         if(node.hasChildNodes()) {
             nodeStart += '>';
-            lines.push(nodeStart);
-            let sameLine = true;
+            if(sameLine) {
+                lines[lines.length-1] += nodeStart;
+            } else {
+                lines.push(nodeStart);
+            }
+            let oneLine = true;
             for(const cn of node.childNodes) {
-                sameLine = renderNode(cn, offset+'  ') && sameLine;
+                oneLine = renderNode(cn, offset+'  ', sameLine||sameLineStart) && oneLine;
             }
             const close = '</'+(''+node.tagName).toLowerCase()+'>';
-            if( sameLine ) {
+            if( sameLine||sameLineStart||oneLine ) {
                 lines[lines.length-1]+=close;
             } else {
                 lines.push(offset+close);
             }
         } else {
             nodeStart += '/>';
-            lines.push(nodeStart);
+            if(sameLine||sameLineStart) {
+                lines[lines.length-1] += nodeStart;
+            } else {
+                lines.push(nodeStart);
+            }
         }
         nodeRange.el = lines.length-1;
         nodeRange.ec = lines[lines.length-1].length;

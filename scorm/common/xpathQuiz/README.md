@@ -360,7 +360,6 @@ Now select both bolds in one query:
 
 @xpath2PExample(`//b[<at>name="b1" or <at>name="b2"]`,EP4A,EP4B)
 
-
 # XPath Example 5 (text())
 
 ``` xml @xpathExample(`Select plum's text:`,`//li[2]/text()`)
@@ -375,6 +374,33 @@ Now select both bolds in one query:
 <p _root _expectedText='Hello,   there!'>
 Hello,   there!
 </p>
+```
+
+# XPath Example 6 `normalize-space()`
+
+``` xml @xpathExample(` `,`normalize-space(//p)`)
+<p _root _expectedText='Hello, my dear friend!'>
+Hello,
+<i>my</i>
+<b>dear</b>
+friend!
+</p>
+```
+
+# XPath Example 7 - table
+
+``` xml @xpathExample(` `,`normalize-space(//p)`)
+<table _root _expectedText='/'>
+    <!-- One line -->
+    <tr _oneline>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+</table>
 ```
 
 # CSS
