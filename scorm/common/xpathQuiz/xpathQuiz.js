@@ -88,8 +88,9 @@ function domPrint(el) {
                     // Not yet loaded
                     return false;
                 }
+                lines.push(offset+'  '+"#document");
                 frameEl = frameEl.querySelector('*[_root]')||frameEl;
-                oneLine = renderNode(frameEl, offset+'  ', sameLine||sameLineStart) && oneLine;
+                oneLine = renderNode(frameEl, offset+'  '+'  ', sameLine||sameLineStart) && oneLine;
             } else {
                 for(const cn of node.childNodes) {
                     oneLine = renderNode(cn, offset+'  ', sameLine||sameLineStart) && oneLine;
