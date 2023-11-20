@@ -48,20 +48,30 @@ function domPrint(el) {
         }
 
         nodeMap.set(node, nodeRange);
-        nodeStart += '<'+(''+node.tagName).toLowerCase();
+        const tagName = (''+node.tagName).toLowerCase();
+        nodeStart += '<'+tagName;
         let sameLineStart = false;
-        for(const a of node.attributes) {
-            if((''+a.nodeName).startsWith('_')) {
-                if(a.nodeName=='_oneline') {
-                    sameLineStart = true;
+        if(node.attributes) {
+            for(const a of node.attributes) {
+                if((''+a.nodeName).startsWith('_')) {
+                    if(a.nodeName=='_oneline') {
+                        sameLineStart = true;
+                    }
+                    continue;
                 }
-                continue;
-            }
-            if(a.nodeName=='class' && !a.nodeValue) continue;
-            nodeStart += ' '+a.nodeName;
-            if(a.nodeValue) nodeStart +='="'+a.nodeValue+'"';
+                if(a.nodeName=='style'&&tagName=='iframe') continue;
+                if(a.nodeName=='srcdoc') continue;
+                if(a.nodeName=='class' && !a.nodeValue) continue;
+                nodeStart += ' '+a.nodeName;
+                if(a.nodeValue) nodeStart +='="'+a.nodeValue+'"';
+            }    
         }
-        if(node.hasChildNodes()) {
+        if(node.nodeType==Node.DOCUMENT_FRAGMENT_NODE) {
+            lines.push(offset+"#shadow-root (open)");
+            for(const cn of node.childNodes) {
+                renderNode(cn, offset+'  ', false);
+            }  
+        } else if(node.hasChildNodes()||node.shadowRoot) {
             nodeStart += '>';
             if(sameLine) {
                 lines[lines.length-1] += nodeStart;
@@ -69,8 +79,21 @@ function domPrint(el) {
                 lines.push(nodeStart);
             }
             let oneLine = true;
-            for(const cn of node.childNodes) {
-                oneLine = renderNode(cn, offset+'  ', sameLine||sameLineStart) && oneLine;
+            if(node.shadowRoot) {
+                oneLine = renderNode(node.shadowRoot, offset+'  ', sameLine||sameLineStart) && oneLine;
+            } 
+            if(tagName=='iframe') {
+                let frameEl = node.contentDocument.documentElement;
+                if(!frameEl) {
+                    // Not yet loaded
+                    return false;
+                }
+                frameEl = frameEl.querySelector('*[_root]')||frameEl;
+                oneLine = renderNode(frameEl, offset+'  ', sameLine||sameLineStart) && oneLine;
+            } else {
+                for(const cn of node.childNodes) {
+                    oneLine = renderNode(cn, offset+'  ', sameLine||sameLineStart) && oneLine;
+                }    
             }
             const close = '</'+(''+node.tagName).toLowerCase()+'>';
             if( sameLine||sameLineStart||oneLine ) {
@@ -94,20 +117,35 @@ function domPrint(el) {
     return lines.join('\n');
 }
 
+
 function prefill(id) {
     const el = document.querySelector('#'+id+' lia-editor');
     const editor = ace.edit(el);
     const val = editor.getSession().getValue();
     const iframe = document.getElementById('frame_'+id);
-    const onLoaded = () => {
-        iframe.removeEventListener('load', onLoaded);
-        const doc = iframe.contentDocument.documentElement;
-        const root = doc.querySelector('*[_root]')||doc;
+    const renderDoc = () => {
+        const rootDoc = iframe.contentDocument.documentElement;
+        const current = rootDoc.querySelector('*[_current]');
+        if(current) {
+            current.classList.add(currentClass);
+            const nodeRange = nodeMap.get(current);
+            if(nodeRange) {
+                var Range = ace.require('ace/range').Range
+                var range = new Range(nodeRange.sl,nodeRange.sc,nodeRange.el,nodeRange.ec);
+                editor.getSession().addMarker(range, currentClass, 'text');
+            }
+        }
+
+        const root = rootDoc.querySelector('*[_root]')||rootDoc;
         const phtml = domPrint(root,'');
         editor.getSession().setValue(phtml);
-        var style = iframe.contentDocument.createElement('style');
+    };
+    const onLoaded = (evt) => {
+        const thisframe = evt.target;
+        thisframe.removeEventListener('load', onLoaded);
+        const doc = thisframe.contentDocument.documentElement;
+        var style = thisframe.contentDocument.createElement('style');
         style.type = 'text/css';
-        
         style.innerHTML = `
         .highlightFound {
             background: rgb(250, 250, 255);
@@ -117,18 +155,20 @@ function prefill(id) {
             border: 1px solid rgb(10, 200, 10);
         }        
         `;
-        iframe.contentDocument.getElementsByTagName('head')[0].appendChild(style);
-        iframe.style.height = (doc.offsetHeight+1) + 'px';
+        thisframe.contentDocument.getElementsByTagName('head')[0].appendChild(style);
+        thisframe.style.height = (doc.offsetHeight+1) + 'px';
 
-        const current = doc.querySelector('*[_current]');
-        if(current) {
-            current.classList.add(currentClass);
-            const nodeRange = nodeMap.get(current);
-            if(nodeRange) {
-                var Range = ace.require('ace/range').Range
-                var range = new Range(nodeRange.sl,nodeRange.sc,nodeRange.el,nodeRange.ec);
-                editor.getSession().addMarker(range, currentClass, 'text');
-            }
+        let hasNested = false;
+        const alliframes = doc.querySelectorAll('iframe');
+        for(const frame of alliframes) {
+            hasNested = true;
+            frame.addEventListener('load', onLoaded);
+            const srcdata = frame.textContent;
+            frame.srcdoc = srcdata;
+        }
+
+        if(!hasNested) {
+            renderDoc();
         }
     }
 
@@ -169,23 +209,85 @@ function runXPath(id, inp, send, isCss, bValidate, nodeset) {
     }
 
     const iframe = document.getElementById('frame_domq_'+id);
-    const doc = iframe.contentDocument.documentElement;
-    const dst = doc.querySelector('*[_current]')||doc.querySelector('*[_root]')||doc;
-    const treeWalker = document.createTreeWalker(
-        dst,
-        NodeFilter.SHOW_ELEMENT
-    );
+    let expectedText = 
+        iframe.contentDocument.evaluate('//*[@_expectedText]/@_expectedText', iframe.contentDocument, null, XPathResult.STRING_TYPE);
+    let doc = iframe.contentDocument.documentElement;
+    const baseInp = inp;
+    let frame = iframe;
+    let partInp = '';
+    let subFrameQueryIndex = inp.indexOf('@@@');
+    let subDocumentQueryIndex = inp.indexOf('@#@');
+    let partShadowDom = false;
+    while(subFrameQueryIndex>0||subDocumentQueryIndex>0) {
+        let part = '';
+        let partCss = false;
+        partShadowDom = false;
+        if (subFrameQueryIndex>0 
+            && 
+            (subDocumentQueryIndex<0 || subFrameQueryIndex<subDocumentQueryIndex) 
+            ) {
+            part = inp.substring(0,subFrameQueryIndex);
+            partInp += part + '@@@';
+            inp = inp.substring(subFrameQueryIndex+3);
+        } else {
+            part = inp.substring(0,subDocumentQueryIndex);
+            partInp += part + '@#@';
+            inp = inp.substring(subDocumentQueryIndex+3);
+            partShadowDom = true;
+        }
 
-    while (treeWalker.nextNode()) {
-        const node = treeWalker.currentNode;
-        node.classList.remove(highlightClass);
+        if(part.indexOf('css=')==0) {
+            partCss = true;
+            part = part.substring(4);
+        }
+        
+        const allfound = [];
+        let dst = frame.contentDocument.documentElement||frame;
+        
+        if(partCss) {
+            doc
+                .querySelectorAll(part)
+                .forEach((item)=>allfound.push(item));
+            if(!allfound.length && doc.shadowRoot) {
+                doc.shadowRoot
+                .querySelectorAll(part)
+                .forEach((item)=>allfound.push(item));
+            }
+        } else {
+            // xpath
+            const foundNodes = frame.contentDocument.evaluate(part, dst, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+            let nfound;
+            while(nfound = foundNodes.iterateNext()) {
+                allfound.push(nfound)
+            }
+        }
+
+        if(allfound.length==1) {
+            frame = allfound[0];
+        } else {
+            throw new Error(`Partial locator: ${partInp} should find exactly one node, but it found ${allfound.length}`)
+        }
+
+        doc = partShadowDom?frame:frame.contentDocument;
+        let treeWalker = document.createTreeWalker(
+            frame.contentDocument?.documentElement||frame.shadowRoot||frame,
+            NodeFilter.SHOW_ELEMENT
+        );
+    
+        while (treeWalker.nextNode()) {
+            const node = treeWalker.currentNode;
+            node.classList.remove(highlightClass);
+        }
+
+        subFrameQueryIndex = inp.indexOf('@@@');
+        subDocumentQueryIndex = inp.indexOf('@#@');
     }
+    
+    let dst = doc.querySelector('*[_current]')||doc.querySelector('*[_root]')||doc;   
 
     if(inp) {
         if(!nodeset)
         {
-            let expectedText = 
-            iframe.contentDocument.evaluate('//*[@_expectedText]/@_expectedText', iframe.contentDocument, null, XPathResult.STRING_TYPE);
             if(expectedText&&expectedText.stringValue) {
                 expectedText = expectedText.stringValue;
 
@@ -201,17 +303,27 @@ function runXPath(id, inp, send, isCss, bValidate, nodeset) {
         }
 
         const allfound = [];
+        
+        if(inp.indexOf('css=')==0) {
+            inp = inp.substring(4);
+            isCss = true;
+        }
+
         if(isCss) {
-            const foundNodes = 
-                iframe.contentDocument
-                    .querySelectorAll(inp)
-                    .forEach((item)=>allfound.push(item));
+            doc
+                .querySelectorAll(inp)
+                .forEach((item)=>allfound.push(item));
+            if (!allfound.length && doc.shadowRoot) {
+                doc.shadowRoot
+                .querySelectorAll(inp)
+                .forEach((item)=>allfound.push(item));
+            }
         } else {
-            const foundNodes = iframe.contentDocument.evaluate(inp, dst, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+            const foundNodes = doc.evaluate(inp, dst, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
             let nfound;
             while(nfound = foundNodes.iterateNext()) {
                 allfound.push(nfound)
-            }    
+            }
         }
 
         let correct = 0;

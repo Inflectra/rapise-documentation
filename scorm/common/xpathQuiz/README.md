@@ -432,6 +432,32 @@ Select rows before requred one:
 
 @xpath1PExample(`count(//th[text()="B"]/following-sibling::th)`,EP7,1)
 
+# XPath Example 8 - iframe
+
+``` xml @xpathExample(` `,`//iframe@@@//iframe@@@//span`)
+<iframe _root id='frame12345'> 
+<div _root>
+    <p id='f1'>Frame01</p>
+    <iframe id='nestedframe12345'> 
+        <span _root>Level 2 nesting</span>
+    </iframe>
+</div>
+</iframe>
+```
+
+# XPath Example 9 - shadow dom
+
+``` xml @xpathExample(` `,`//my-paragraph@#@css=button`)
+<template id="my-paragraph"><p><span slot="my-text"><button>Button in Shadow</button></span></p></template>
+<script>customElements.define("my-paragraph", class extends HTMLElement {
+    constructor() { super();
+      this.attachShadow({ mode: "open" }).appendChild(document.getElementById("my-paragraph").content.cloneNode(true));
+    }});</script>
+<div _root>
+    <my-paragraph/>
+</div>
+```
+
 
 # CSS
 
