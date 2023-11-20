@@ -303,7 +303,6 @@ function runXPath(id, inp, send, isCss, bValidate, nodeset) {
         }
 
         const allfound = [];
-        
         if(inp.indexOf('css=')==0) {
             inp = inp.substring(4);
             isCss = true;
@@ -315,11 +314,16 @@ function runXPath(id, inp, send, isCss, bValidate, nodeset) {
                 .forEach((item)=>allfound.push(item));
             if (!allfound.length && doc.shadowRoot) {
                 doc.shadowRoot
-                .querySelectorAll(inp)
-                .forEach((item)=>allfound.push(item));
+                    .querySelectorAll(inp)
+                    .forEach((item)=>allfound.push(item));
             }
         } else {
-            const foundNodes = doc.evaluate(inp, dst, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+            if(frame&&
+                (!frame.contentDocument||!frame.contentDocument.evaluate)
+            ) {
+                throw new Error(''+(frame.tagName||frame)+' does not support XPath evaluation ('+inp+').')
+            }
+            const foundNodes = frame.contentDocument.evaluate(inp, dst, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
             let nfound;
             while(nfound = foundNodes.iterateNext()) {
                 allfound.push(nfound)

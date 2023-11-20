@@ -448,7 +448,7 @@ Select rows before requred one:
 # XPath Example 9 - shadow dom
 
 ``` xml @xpathExample(` `,`//my-paragraph@#@css=button`)
-<template id="my-paragraph"><p><span slot="my-text"><button>Button in Shadow</button></span></p></template>
+<template id="my-paragraph"><span><button>Button in Shadow</button></span></template>
 <script>customElements.define("my-paragraph", class extends HTMLElement {
     constructor() { super();
       this.attachShadow({ mode: "open" }).appendChild(document.getElementById("my-paragraph").content.cloneNode(true));
