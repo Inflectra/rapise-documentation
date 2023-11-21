@@ -16,7 +16,7 @@ link: ./xpathQuiz.css
 <div id="domq_@0">
 
 <lia-keep>
-    <iframe id="frame_domq_@0" width="100%" scrolling="no"/>
+    <iframe id="frame_domq_@0"/>
 </lia-keep>
 
 <!-- data-showGutter="true" -->
@@ -54,7 +54,7 @@ setTimeout(()=>prefill('domq_'+id),150)
 <div id="domq_@0">
 
 <lia-keep>
-    <iframe id="frame_domq_@0" width="100%" scrolling="no"/>
+    <iframe id="frame_domq_@0"/>
 </lia-keep>
 
 <!-- data-showGutter="true" -->
@@ -90,7 +90,7 @@ setTimeout(()=>{prefill('domq_'+id);fixat('domq_'+id,1)},150)
 <div id="domq_@0">
 
 <lia-keep>
-    <iframe id="frame_domq_@0" width="100%" scrolling="no"/>
+    <iframe id="frame_domq_@0"/>
 </lia-keep>
 
 <!-- data-showGutter="true" -->
@@ -447,16 +447,31 @@ Select rows before requred one:
 
 ``` xml @xpathExample(` `,`//iframe[@id="rootFrame1"]@@@//iframe@@@//button`)
 <div _root>
-<iframe id='rootFrame1' style="{height: 35px;}"> 
-    <iframe _root id='subframe1' style="{height: 25px;}">
+<iframe id='rootFrame1'> 
+    <iframe _root id='subframe1'>
         <button _root>Some Button</button>
     </iframe>
 </iframe>
 <hr/>
-<iframe id='rootFrame2'  style="{height: 25px;}"> 
+<iframe id='rootFrame2'> 
     <label _root>Hello from frame2</label>
 </iframe>
 </div>
+```
+
+``` xml @xpathExample(`The **button** is within rootFrame2:`,`//iframe[@id="rootFrame2"]@@@//iframe@@@//button`)
+<div _root>
+<iframe id='rootFrame1'> 
+    <label _root>Hello from frame1</label>
+</iframe>
+<hr/>
+<iframe id='rootFrame2'> 
+    <iframe _root id='subframe1'>
+        <button _root>Some Button</button>
+    </iframe>
+</iframe>
+</div>
+
 ```
 
 # XPath Example 9 - shadow dom
@@ -471,7 +486,6 @@ Select rows before requred one:
     <my-paragraph/>
 </div>
 ```
-
 
 # CSS
 

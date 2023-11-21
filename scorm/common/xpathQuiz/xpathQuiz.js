@@ -141,10 +141,14 @@ function prefill(id) {
         const phtml = domPrint(root,'');
         editor.getSession().setValue(phtml);
     };
+
+    const allframes = [iframe];
+
     const onLoaded = (evt) => {
         const thisframe = evt.target;
         thisframe.removeEventListener('load', onLoaded);
         const doc = thisframe.contentDocument.documentElement;
+        allframes.push(thisframe);
         var style = thisframe.contentDocument.createElement('style');
         style.type = 'text/css';
         style.innerHTML = `
@@ -154,10 +158,14 @@ function prefill(id) {
         }
         .highlightCurrent {
             border: 1px solid rgb(10, 200, 10);
-        }        
+        }
+        iframe {
+            border: 1px solid;
+            width: 100%;
+            overflow: hidden;
+        }
         `;
         thisframe.contentDocument.getElementsByTagName('head')[0].appendChild(style);
-        thisframe.style.height = (doc.offsetHeight+1) + 'px';
         let hasNested = false;
         const alliframes = doc.querySelectorAll('iframe');
         for(const frame of alliframes) {
@@ -168,6 +176,9 @@ function prefill(id) {
         }
 
         if(!hasNested) {
+            for(const frm of allframes.reverse()) {
+                frm.style.height = (frm.contentDocument.documentElement.offsetHeight+1) + 'px';
+            }
             renderDoc();
         }
     }
