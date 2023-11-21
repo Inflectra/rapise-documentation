@@ -117,7 +117,7 @@ setTimeout(()=>{prefill('domq_'+id);},150)
 ```
 <script>
   const input = `@input`;
-  checkXPath(`@1`, input, send, false, '@3'=='true');
+  checkXPath(`@1`, input, send, /*css*/'@4'=='true', /*nodeset*/'@3'=='true');
   ""
 </script>
 
@@ -409,7 +409,7 @@ friend!
 </p>
 ```
 
-# XPath Example 7 - table
+# XPath Example 7 - parts table
 
 ``` xml @xpathPart(EP7)
 <table _root _expectedText="*">
@@ -443,6 +443,20 @@ Select rows before requred one:
     </iframe>
 </div>
 </iframe>
+```
+
+``` xml @xpathExample(` `,`//iframe[@id="rootFrame1"]@@@//iframe@@@//button`)
+<div _root>
+<iframe id='rootFrame1' style="{height: 35px;}"> 
+    <iframe _root id='subframe1' style="{height: 25px;}">
+        <button _root>Some Button</button>
+    </iframe>
+</iframe>
+<hr/>
+<iframe id='rootFrame2'  style="{height: 25px;}"> 
+    <label _root>Hello from frame2</label>
+</iframe>
+</div>
 ```
 
 # XPath Example 9 - shadow dom
@@ -486,3 +500,21 @@ Select rows before requred one:
     <li id="apple">Apple</li>
 </ul>
 ```
+
+# CSS Example 2 parts
+
+``` xml @xpathPart(CP2)
+<ul _root>
+    <li id="carrot">Carrot</li>
+    <li _correct id="plum">Plum</li>
+    <li id="apple">Apple</li>
+</ul>
+```
+
+Select rows before requred one:
+
+@xpath1PExample(`li#plum`,CP2,1,true,true)
+
+@xpath1PExample(`#plum`,CP2,1,true,true)
+
+@xpath1PExample(`li:nth-child(2)`,CP2,1,true,true)

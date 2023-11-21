@@ -158,7 +158,6 @@ function prefill(id) {
         `;
         thisframe.contentDocument.getElementsByTagName('head')[0].appendChild(style);
         thisframe.style.height = (doc.offsetHeight+1) + 'px';
-
         let hasNested = false;
         const alliframes = doc.querySelectorAll('iframe');
         for(const frame of alliframes) {
