@@ -409,7 +409,7 @@ friend!
 </p>
 ```
 
-# XPath Example 7 - parts table
+# XPath Example 7 - multi queries table
 
 ``` xml @xpathPart(EP7)
 <table _root _expectedText="*">
@@ -424,7 +424,7 @@ friend!
 </table>
 ```
 
-Select rows before requred one:
+@xpath1PExample(`//th[text()="B"]`,EP7,1,true)
 
 @xpath1PExample(`//th[text()="B"]/preceding-sibling::th`,EP7,1,true)
 
@@ -485,6 +485,16 @@ Select rows before requred one:
 <div _root>
     <my-paragraph/>
 </div>
+```
+
+# XPath Example 10 - _current
+
+``` xml @xpathExample(` **<li>Orange...** is the current node. Let's select a button starting from it:`,`./button`)
+<ul _root>
+    <li>Apple<button>Edit</button></li>
+    <li _current>Orange<button>Edit</button></li>
+    <li>Mango<button>Edit</button></li>
+</ul>
 ```
 
 # CSS

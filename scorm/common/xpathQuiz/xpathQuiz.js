@@ -126,6 +126,10 @@ function prefill(id) {
     const iframe = document.getElementById('frame_'+id);
     const renderDoc = () => {
         const rootDoc = iframe.contentDocument.documentElement;
+        const root = rootDoc.querySelector('*[_root]')||rootDoc;
+        const phtml = domPrint(root,'');
+        editor.getSession().setValue(phtml);
+
         const current = rootDoc.querySelector('*[_current]');
         if(current) {
             current.classList.add(currentClass);
@@ -136,10 +140,6 @@ function prefill(id) {
                 editor.getSession().addMarker(range, currentClass, 'text');
             }
         }
-
-        const root = rootDoc.querySelector('*[_root]')||rootDoc;
-        const phtml = domPrint(root,'');
-        editor.getSession().setValue(phtml);
     };
 
     const allframes = [iframe];
@@ -212,9 +212,9 @@ function runXPath(id, inp, send, isCss, bValidate, nodeset) {
     if (prevMarkers) {
         const prevMarkersArr = Object.keys(prevMarkers);
         for (let item of prevMarkersArr) {
-            if( prevMarkers[item].class == selectedMarkerClass ) 
+            if( prevMarkers[item].clazz == selectedMarkerClass ) 
             {
-                editor.session.removeMarker(prevMarkers[item].id);
+                editor.getSession().removeMarker(prevMarkers[item].id);
             }
         }
     }
