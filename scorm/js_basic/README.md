@@ -3,24 +3,9 @@
 author:   Alexey Grinevich
 email:    alexey.grinevich@inflectra.com
 version:  0.0.1
-language: en
-narrator: UK English Female
 classroom: false
 
 import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md
-
-import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuiz/README.md
-
-script: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuiz/xpathQuiz.js
-
-link: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/codingQuiz.css
-
-script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
-          https://felixhao28.github.io/JSCPP/dist/JSCPP.es5.min.js
-
-link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
-
-link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
 
 mode: Textbook
 
