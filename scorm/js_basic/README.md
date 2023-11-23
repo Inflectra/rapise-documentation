@@ -170,7 +170,7 @@ In this tutorial, we will only focus on learning the language itself, and theref
 
 Go ahead, and fix it so it outputs `Hello, World!` and then press **Check** to proceed.
 
-``` javascript @codingQuiz2(`str!="Hello, World!"?"wrong":`,`console.log2=console.log;let str='';console.log=(t)=>{console.log2(t);str=t;}`)
+``` javascript @codingQuiz2(`str!="Hello, World!"?"wrong":`,`console.log2=console.log;let str='';console.log=(t)=>{console.log2(t);str=t;};`)
 console.log('Goodbye, World!')
 ```
 
@@ -199,9 +199,7 @@ var doubleInsideSingle = 'She replied, "Hi!"';
 var escapingQuotes = 'Escaping a quote: \'Single quotes\' or "Double quotes"';
 ```
 <script>
-const escit=(str)=>str.replace(/\\\\'/ig,"\\'").replace(/\\\\"/ig,'\\"');
-const evalstrval= escit(`@input`)
-eval(evalstrval)
+eval(`@'input`)
 ""</script>
 
 
@@ -278,9 +276,9 @@ Like almost every dynamic language, JavaScript is a "duck-typed" language, and t
 We can define several types of variables to use in our code:
 
 ```javascript
-    var myNumber = 3;                   // a number
-    var myString = "Hello, World!"      // a string
-    var myBoolean = true;               // a boolean
+var myNumber = 3;                   // a number
+var myString = "Hello, World!"      // a string
+var myBoolean = true;               // a boolean
 ```
 <script>@input
 ""</script>
@@ -293,8 +291,8 @@ A few notes about variable types in JavaScript:
 There are two more advanced types in JavaScript. An array, and an object. We will get to them in more advanced tutorials.
 
 ```javascript
-    var myArray = [];     // an array
-    var myObject = {};    // an object
+var myArray = [];     // an array
+var myObject = {};    // an object
 ```
 <script>@input
 ""</script>
@@ -304,8 +302,8 @@ On top of that, there are two special types called `undefined` and `null`.
 When a variable is used without first defining a value for it, it is equal to undefined. For example:
 
 ```javascript
-    var newVariable;
-    console.log(newVariable);
+var newVariable;
+console.log(newVariable);
 ```
 <script>@input
 ""</script>
@@ -313,8 +311,8 @@ When a variable is used without first defining a value for it, it is equal to un
 However, the `null` value is a different type of value, and is used when a variable should be marked as empty.
 
 ```javascript
-    var emptyVariable = null;
-    console.log(emptyVariable);
+var emptyVariable = null;
+console.log(emptyVariable);
 ```
 <script>@input
 ""</script>
@@ -325,20 +323,20 @@ You must define the following variables:
 
 1. A number called `myNumber` which contains the number `4`:
 
-``` javascript @codingQuiz(`console.log("myNumber is equal to " + myNumber);!(myNumber==4)?"wrong":`)
+``` javascript @codingQuiz(`console.log("myNumber is equal to "+myNumber);!(myNumber==4)?"wrong":`)
 var myNumber =
 ```
 
 2. A string called `myString` which contains the sentence `Variables are great.`:
 
 ``` javascript @codingQuiz(`console.log("myString is equal to " + myString);!(myString=="Variables are great.")?"wrong":`)
-
+var 
 ```
 
 3. A boolean called `myBoolean` which contains the value `false`:
 
 ``` javascript @codingQuiz(`console.log("myBoolean is equal to " + myBoolean);!(myBoolean==false)?"wrong":`)
-
+var
 ```
 
 ## Arrays
@@ -348,8 +346,8 @@ JavaScript can hold an array of variables in an Array object. In JavaScript, an 
 To define an array, either use the brackets notation or the Array object notation:
 
 ```javascript
-    var myArray = [1, 2, 3];
-    var theSameArray = new Array(1, 2, 3);
+var myArray = [1, 2, 3];
+var theSameArray = new Array(1, 2, 3);
 ```
 <script>@input
 "MyArray: "+myArray+"\ntheSameArray: "+theSameArray;
@@ -358,7 +356,7 @@ To define an array, either use the brackets notation or the Array object notatio
 In JavaScript, typically, when you want to create an empty array, you can simply assign `[]` to a variable.
 
 ```javascript
-    var newArrayVar = [];
+var newArrayVar = [];
 ```
 <script>@input
 ""
@@ -382,9 +380,9 @@ console.log(myArray[1]);      // prints out 2
 Arrays in JavaScript are sparse, meaning that we can also assign variables to random locations even though previous cells were undefined. For example:
 
 ```javascript
-    var myArray = []
-    myArray[3] = "hello"
-    console.log(myArray);
+var myArray = []
+myArray[3] = "hello"
+console.log(myArray);
 ```
 <script>
 @input
@@ -401,6 +399,7 @@ You must define an array variable `myArray` with the following three entries:
 
 ``` javascript @codingQuiz(`!window.checkArray(myArray,"myArray",["What is the meaning of life?", 42, true],console,send)?"try again":`)
 
+
 ```
 
 ## Manipulating Arrays
@@ -412,11 +411,11 @@ Arrays can also function as a stack. The `push` and `pop` methods insert and rem
 For example, let's create an empty array and push a few variables.
 
 ``` javascript
-    var myStack = [];
-    myStack.push(1);
-    myStack.push(2);
-    myStack.push(3);
-    console.log(myStack);
+var myStack = [];
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+console.log(myStack);
 ```
 <script>@input
 window.myStack=myStack;
@@ -425,8 +424,8 @@ window.myStack=myStack;
 After pushing variables to the array, we can then pop variables off from the end.
 
 ```javascript
-    console.log(myStack.pop());
-    console.log(myStack);
+console.log(myStack.pop());
+console.log(myStack);
 ```
 <script>let myStack=window.myStack||[1,2,3];
 @input
@@ -444,14 +443,14 @@ This prints out the variable we popped from the array, and what's left of the ar
 The `shift` and `unshift` methods are similar to `push` and `pop`, only they work from the beginning of the array. We can use the `push` and `shift` methods consecutively to utilize an array as a queue. For example:
 
 ``` javascript
-    var myQueue = [];
-    myQueue.push(1);
-    myQueue.push(2);
-    myQueue.push(3);
+var myQueue = [];
+myQueue.push(1);
+myQueue.push(2);
+myQueue.push(3);
 
-    console.log(myQueue.shift());
-    console.log(myQueue.shift());
-    console.log(myQueue.shift());
+console.log(myQueue.shift());
+console.log(myQueue.shift());
+console.log(myQueue.shift());
 ```
 <script>@input
 ""</script>
@@ -467,9 +466,9 @@ The `shift` keyword will remove the variables of the array in the exact order th
 The `unshift` method is used to insert a variable at the beginning of an array. For example:
 
 ``` javascript
-    var myArray = [1,2,3];
-    myArray.unshift(0);
-    console.log(myArray);       // prints 0,1,2,3
+var myArray = [1,2,3];
+myArray.unshift(0);
+console.log(myArray);       // prints 0,1,2,3
 
 ```
 <script>@input
@@ -480,12 +479,11 @@ The `unshift` method is used to insert a variable at the beginning of an array. 
 Splicing arrays in JavaScript removes a certain part from an array to create a new array, made up from the part we took out. For example, if we wanted to remove the five numbers from the following array beginning from the 3rd index, we would do the following:
 
 ``` javascript
-    var myArray = [0,1,2,3,4,5,6,7,8,9];
-    var splice = myArray.splice(3,5);
+var myArray = [0,1,2,3,4,5,6,7,8,9];
+var splice = myArray.splice(3,5);
 
-    console.log(splice);        // prints 3,4,5,6,7
-    console.log(myArray);       // prints 0,1,2,8,9]
-
+console.log(splice);  // prints [3,4,5,6,7]
+console.log(myArray); // prints [0,1,2,8,9]
 ```
 <script>@input
 ""
@@ -510,7 +508,6 @@ var myArray = [true, "What is the meaning of life?"];
 
 console.log(myArray[0]);
 console.log(myArray[1]);
-
 ```
 
 ## Operators
@@ -524,9 +521,9 @@ The `+` (addition) operator is used for both addition and concatenation of strin
 For example, adding two variables is easy:
 
 ```javascript
-    var a = 1;
-    var b = 2;
-    var c = a + b;     // c is now equal to 3
+var a = 1;
+var b = 2;
+var c = a + b;     // c is now equal to 3
 ```
 <script>@input
 c</script>
@@ -534,10 +531,10 @@ c</script>
 Furthermore, the `+` operator serves to concatenate strings with other strings, strings with numbers, and numbers with strings:
 
 ```javascript
-    var name = "John";
-    console.log("Hello " + name + "!");
-    console.log("The meaning of life is " + 42);
-    console.log(42 + " is the meaning of life");
+var name = "John";
+console.log("Hello " + name + "!");
+console.log("The meaning of life is " + 42);
+console.log(42 + " is the meaning of life");
 ```
 <script>@input
 ""</script>
@@ -547,9 +544,9 @@ Furthermore, the `+` operator serves to concatenate strings with other strings, 
 To subtract, multiply and divide two numbers, use the minus (`-`), asterisk (`*`) and slash (`/`) signs.
 
 ``` javascript
-    console.log(3 - 5);     // outputs -2
-    console.log(3 * 5);     // outputs 15
-    console.log(3 / 5);     // outputs 0.6
+console.log(3 - 5);     // outputs -2
+console.log(3 * 5);     // outputs 15
+console.log(3 / 5);     // outputs 0.6
 ```
 <script>@input
 ""</script>
@@ -647,11 +644,11 @@ To evaluate whether two variables are equal, the `==` operator is used.
 For example:
 
 ```javascript
-    var myNumber = 42;
-    if (myNumber == 42)
-    {
-        console.log("The number is correct.");
-    }
+var myNumber = 42;
+if (myNumber == 42)
+{
+    console.log("The number is correct.");
+}
 ```
 <script>@input
 ""</script>
@@ -659,13 +656,13 @@ For example:
 Inequality operators can also be used to evaluate expressions. For example:
 
 ``` javascript
-    var foo = 1;
-    var bar = 2;
+var foo = 1;
+var bar = 2;
 
-    if (foo < bar)
-    {
-        console.log("foo is smaller than bar.");
-    }
+if (foo < bar)
+{
+    console.log("foo is smaller than bar.");
+}
 ```
 <script>@input
 ""</script>
@@ -673,19 +670,19 @@ Inequality operators can also be used to evaluate expressions. For example:
 Two or more expressions can be evaluated together using logical operators to check if two expressions evaluate to `true` together, or at least one of them. To check if two expressions both evaluate to `true`, use the AND operator `&&`. To check if at least one of the expressions evaluate to `true`, use the OR operator `||`.
 
 ```javascript
-    var foo = 1;
-    var bar = 2;
-    var moo = 3;
+var foo = 1;
+var bar = 2;
+var moo = 3;
 
-    if (foo < bar && moo > bar)
-    {
-        console.log("foo is smaller than bar AND moo is larger than bar.");
-    }
+if (foo < bar && moo > bar)
+{
+    console.log("foo is smaller than bar AND moo is larger than bar.");
+}
 
-    if (foo < bar || moo > bar)
-    {
-        console.log("foo is smaller than bar OR moo is larger than bar.");
-    }
+if (foo < bar || moo > bar)
+{
+    console.log("foo is smaller than bar OR moo is larger than bar.");
+}
 ```
 <script>@input
 ""</script>
@@ -693,11 +690,11 @@ Two or more expressions can be evaluated together using logical operators to che
 The NOT operator `!` can also be used likewise:
 
 ```javascript
-    var notTrue = false;
-    if (!notTrue)
-    {
-        console.log("not not true is true!");
-    }
+var notTrue = false;
+if (!notTrue)
+{
+    console.log("not not true is true!");
+}
 ```
 <script>@input
 ""</script>
@@ -757,11 +754,11 @@ checkNumber(42);
 JavaScript has two methods for running the same code several times. It is mainly used for iterating over arrays or objects. Let's see an example:
 
 ```javascript
-    var i;
-    for (i = 0; i < 3; i = i + 1)
-    {
-        console.log(i);
-    }
+var i;
+for (i = 0; i < 3; i = i + 1)
+{
+    console.log(i);
+}
 ```
 <script>@input
 ""
@@ -776,10 +773,10 @@ The `for` statement in JavaScript has the same syntax as in Java and C. It has t
 We can also write a shorter notation for the statement by inserting the variable definition inside the `for` loop and incrementing using the `++` operator.
 
 ```javascript
-    for (var i = 0; i < 3; i++)
-    {
-        console.log(i);
-    }
+for (var i = 0; i < 3; i++)
+{
+    console.log(i);
+}
 ```
 <script>@input
 ""
@@ -788,11 +785,11 @@ We can also write a shorter notation for the statement by inserting the variable
 To iterate over an array and print out all of its members, we usually use the `for` statement. Here's an example:
 
 ```javascript
-    var myArray = ["A", "B", "C"];
-    for (var i = 0; i < myArray.length; i++)
-    {
-        console.log("The member of myArray in index " + i + " is " + myArray[i]);
-    }
+var myArray = ["A", "B", "C"];
+for (var i = 0; i < myArray.length; i++)
+{
+    console.log("The member of myArray in index " + i + " is " + myArray[i]);
+}
 ```
 <script>@input
 ""
@@ -807,12 +804,12 @@ The `while` statement is a more simple version of the `for` statement which chec
 For example:
 
 ```javascript
-    var i = 99;
-    while (i > 0)
-    {
-        console.log(i + " bottles of beer on the wall");
-        i -= 1;
-    }
+var i = 99;
+while (i > 0)
+{
+    console.log(i + " bottles of beer on the wall");
+    i -= 1;
+}
 ```
 <script>@input
 ""
@@ -823,16 +820,16 @@ For example:
 The `break` statement allows to stop the execution of a loop. For example, we can create a loop that loops forever using `while(true)` and use the `break` statement to break inside the loop instead by checking that a certain condition was met.
 
 ```javascript
-    var i = 99;
-    while (true)
+var i = 99;
+while (true)
+{
+    console.log(i + " bottles of beer on the wall");
+    i -= 1;
+    if (i == 0)
     {
-        console.log(i + " bottles of beer on the wall");
-        i -= 1;
-        if (i == 0)
-        {
-            break;
-        }
+        break;
     }
+}
 ```
 <script>@input
 ""
@@ -841,16 +838,16 @@ The `break` statement allows to stop the execution of a loop. For example, we ca
 The `continue` statement skips the rest of the loop and jumps back to the beginning of the loop. For example, if we would want to print only odd numbers using a `for` statement, we can do the following:
 
 ``` javascript
-    for (var i = 0; i < 100; i++)
+for (var i = 0; i < 100; i++)
+{
+    // check that the number is even
+    if (i % 2 == 0)
     {
-        // check that the number is even
-        if (i % 2 == 0)
-        {
-             continue;
-        }
-        // if we got here, then i is odd.
-        console.log(i + " is an odd number.");
+            continue;
     }
+    // if we got here, then i is odd.
+    console.log(i + " is an odd number.");
+}
 ```
 <script>@input
 ""
@@ -893,12 +890,12 @@ In this function, the `name` argument to the `greet` function is used inside the
 To define an anonymous function, we can alternatively use the following syntax:
 
 ``` javascript
-    var greet = function(name)
-    {
-        return "Hello " + name + "!";
-    }
+var greet = function(name)
+{
+    return "Hello " + name + "!";
+}
 
-    console.log(greet("Eric"));      // prints out Hello Eric!
+console.log(greet("Eric"));      // prints out Hello Eric!
 ```
 <script>@input
 ""
