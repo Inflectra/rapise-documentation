@@ -118,7 +118,7 @@ var str = "Some "quoted text" inside"
 
 In this exercise, you must write a `for` loop that iterates on the `myArray` variable and prints out all of its members.
 
-``` javascript @codingQuiz2(`const exp="What is the meaning of life?"+nl+"The meaning of life is"+nl+"42"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):"OK"+`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)};`)
+``` javascript @codingQuiz2(`const exp="What is the meaning of life?"+nl+"The meaning of life is"+nl+"42"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):!!`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)};`)
 var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
 
 // TODO: modify this code
