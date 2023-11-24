@@ -26,7 +26,9 @@ try {
     let inp = escit(`@input`);
 
     window.results["@0"] = eval(`${pref}${inp}\n${postf}\n"correct"`)
-    console.log(window.results["@0"])
+    if(window.results["@0"]!==true&&window.results["@0"]!="OKcorrect") {
+        console.debug(window.results["@0"])
+    }
     let btn = document.querySelector('#hidden-quiz-@0 > div:nth-of-type(2) > .lia-quiz-generic > div:nth-of-type(2) > button:first-child');
     btn.click()
 } catch(e) {
@@ -38,7 +40,7 @@ try {
 <!-- data-solution-button="off" -->
 [[!]]
 <script>
-window.results["@0"] == "correct"
+window.results["@0"] == "correct" || window.results["@0"] == "OKcorrect" || window.results["@0"] == true
 </script>
 
 </div>
@@ -110,4 +112,18 @@ What if we need to use a quoted string inside our string? You may use escaping o
 
 ``` javascript @codingQuiz(`str!="Some \"quoted text\" inside"?"wrong":`)
 var str = "Some "quoted text" inside"
+```
+
+### Exercise
+
+In this exercise, you must write a `for` loop that iterates on the `myArray` variable and prints out all of its members.
+
+``` javascript @codingQuiz2(`const exp="What is the meaning of life?"+nl+"The meaning of life is"+nl+"42"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):!!`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)};`)
+var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
+
+// TODO: modify this code
+for (var i=0;i<myArray.length;i++)
+{
+    console.log(myArray[i]);
+}
 ```
