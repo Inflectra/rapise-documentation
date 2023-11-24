@@ -19,11 +19,10 @@ if(!window.results) {
 
 try {
     window.results["@0"] = false
-    const escit=(str)=>str.replace(/\\\\'/ig,"\\'").replace(/\\\\"/ig,'\\"');
 
-    let pref = escit(`@2`); 
-    let postf = escit(`@1`);
-    let inp = escit(`@input`);
+    let pref = "@'2"; 
+    let postf = "@'1";
+    let inp = "@'input";
 
     window.results["@0"] = eval(`${pref}${inp}\n${postf}\n"correct"`)
     if(window.results["@0"]!==true&&window.results["@0"]!="OKcorrect") {
@@ -111,7 +110,7 @@ var str = “Another string”
 What if we need to use a quoted string inside our string? You may use escaping or multiple quotes string:
 
 ``` javascript @codingQuiz(`str!="Some \"quoted text\" inside"?"wrong":`)
-var str = "Some "quoted text" inside"
+var str = "Some \"quoted text\" inside"
 ```
 
 ### Exercise
