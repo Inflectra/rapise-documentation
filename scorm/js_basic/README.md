@@ -90,7 +90,7 @@ JavaScript was originally created for adding interactivity and dynamic behavior 
 
 JavaScript is not limited to just browsers anymore. With the introduction of environments like **Node.js**, it is now also widely used for **server-side development**. It can be used to build back-end services, develop desktop applications, and even program hardware.
 
-Some tools, such as Inflectra [Rapise](https://www.inflectra.com/Rapise/) use JavaScript as a default programming language to implement advanced scenarios including desktop, mobile, API and and web automation.
+Some tools, such as Inflectra [Rapise](https://www.inflectra.com/Rapise/) use JavaScript as a default programming language to implement advanced scenarios including desktop, mobile, API and web automation.
 
 **Which of the following statements about JavaScript is correct?**
 
@@ -134,14 +134,14 @@ var a = 3;
 ...
 ```
 
-While Sample is an interactive piece that you may execute by pressing the **Run** button under the snippet:
+While working example is an interactive piece that you may execute by pressing the **Run** button under the snippet:
 
 ```javascript
 3+2
 ```
 <script>@input</script>
 
-Finally, we have quizzes where you supposed to give an answer and then press `Check` button. For example, here the answer is already correct, just to `Check` to proceed:
+Finally, we have quizzes where you supposed to give an answer and then press `Check` button. For example, here the answer is already correct, just click `Check` to proceed:
 
 ``` javascript @codingQuiz(` `)
 25
@@ -230,7 +230,7 @@ function Sum(a b)
 }
 ```
 
-We have three ways to declare a text constant, i.e. `"text"`, `'text'` and `` `text` ``.
+We have three ways to declare a text constant, i.e. `"text"`, `'text'` and `\`text\``.
 
 Fix the code:
 
@@ -238,7 +238,7 @@ Fix the code:
 var str = "Some string'
 ```
 
-From the text editor's perspective our writing is all wrong. We use " for quotes while it is actually an Inch sign. Text processors fix it to real quote which is “. Common problem is to mess between " and “. 
+From the text editor's perspective our writing is all wrong. We use " for quotes while it is actually an Inch sign. Text processors fix it to real quote which is “. Common problem is a mess between " and “. 
 
 Fix the code:
 
@@ -420,7 +420,7 @@ This prints out the variable we popped from the array, and what's left of the ar
 
 ```
     3           // the result from myStack.pop()
-    1,2         // what myStack contains now
+    [1,2]       // what myStack contains now
 ```
 
 ### Queues using shifting and unshifting
@@ -453,7 +453,7 @@ The `unshift` method is used to insert a variable at the beginning of an array. 
 ``` javascript
 var myArray = [1,2,3];
 myArray.unshift(0);
-console.log(myArray);       // prints 0,1,2,3
+console.log(myArray);       // prints [0,1,2,3]
 
 ```
 <script>@input
@@ -497,7 +497,7 @@ console.log(myArray[1]);
 
 ## Operators
 
-Every variable in JavaScript is casted automatically so any operator between two variables will always give some kind of result. 
+Every variable in JavaScript is type casted automatically so any operator between two variables will always give some kind of result. 
 
 ### The addition operator
 
@@ -609,7 +609,7 @@ var meaningOfLife = null;
 
 The `if` statement allows us to check if an expression is equal to `true` or `false`, and execute different code according to the result.
 
-For example, if we want ask the user whether his name is "John", we can use the `confirm` function.
+For example, if we want to ask the user whether his name is "John", we can use the `confirm` function.
 
 ```javascript
 if (confirm("Are you John Smith?"))
@@ -638,7 +638,7 @@ if (myNumber == 42)
 <script>@input
 ""</script>
 
-Inequality operators can also be used to evaluate expressions. For example:
+Comparison operators can also be used to evaluate expressions. For example:
 
 ``` javascript
 var foo = 1;
@@ -652,7 +652,7 @@ if (foo < bar)
 <script>@input
 ""</script>
 
-Two or more expressions can be evaluated together using logical operators to check if two expressions evaluate to `true` together, or at least one of them. To check if two expressions both evaluate to `true`, use the AND operator `&&`. To check if at least one of the expressions evaluate to `true`, use the OR operator `||`.
+Two or more expressions can be evaluated together using logical operators to check if two expressions evaluate to `true` together, or at least one of them. To check if two expressions both evaluate to `true`, use the AND operator `&&`. To check if at least one of the expressions evaluates to `true`, use the OR operator `||`.
 
 ```javascript
 var foo = 1;
@@ -664,9 +664,9 @@ if (foo < bar && moo > bar)
     console.log("foo is smaller than bar AND moo is larger than bar.");
 }
 
-if (foo < bar || moo > bar)
+if (foo < bar || moo < bar)
 {
-    console.log("foo is smaller than bar OR moo is larger than bar.");
+    console.log("foo is smaller than bar OR moo is smaller than bar.");
 }
 ```
 <script>@input
@@ -773,7 +773,7 @@ To iterate over an array and print out all of its members, we usually use the `f
 var myArray = ["A", "B", "C"];
 for (var i = 0; i < myArray.length; i++)
 {
-    console.log("The member of myArray in index " + i + " is " + myArray[i]);
+    console.log("The member of myArray at index " + i + " is " + myArray[i]);
 }
 ```
 <script>@input
@@ -784,7 +784,7 @@ Notice that we used the `length` property of an array, which returns the number 
 
 ### The `while` statement
 
-The `while` statement is a more simple version of the `for` statement which checks if an expression evaluates to `true` and runs as long as it says `true`.
+The `while` statement is a more simple version of the `for` statement which checks if an expression evaluates to `true` and runs as long as it stays `true`.
 
 For example:
 
@@ -890,7 +890,7 @@ console.log(greet("Eric"));      // prints out Hello Eric!
 
 Define a function called `multiplyFive` which accepts a number and returns that number multiplied by 5.
 
-``` javascript @codingQuiz(`multiplyFive(7)!=35?"Wrong"`)
+``` javascript @codingQuiz(`multiplyFive(7)!=35?"Wrong":`)
 // TODO: define the function multiplyFive here
 
 console.log(multiplyFive(3));
@@ -955,12 +955,12 @@ Note that methods of objects in JavaScript have a fixed order, like arrays.
 
 You must define an object called `person` with the following members:
 
-1. The member `firstName` of the person is "Jack"
+1. The member `firstName` of the person is "Jane"
 2. The member `lastName` of the person is "Smith"
 3. The member `age` of the person is 19
 4. The member `employed` of the person is `true`
 
-``` javascript @codingQuiz(`!window.checkObj(person,"person",{firstName:"Jack",lastName:"Smith",age:19,employed:true},console,send)?"wrong":`)
+``` javascript @codingQuiz(`!window.checkObj(person,"person",{firstName:"Jane",lastName:"Smith",age:19,employed:true},console,send)?"wrong":`)
 // TODO: change this code
 var person;
 
