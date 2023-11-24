@@ -5,7 +5,7 @@ email:    alexey.grinevich@inflectra.com
 version:  0.0.1
 classroom: false
 
-import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md
+import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@6e1c697/scorm/common/codingQuiz/README.md
 
 mode: Textbook
 
@@ -57,7 +57,6 @@ window.checkVar=function(val,varName,ref,console,send) {
     return true;
 };
 
-
 window.checkObj=function(val,varName,ref,console,send) {
     if(!val) {
         console.error(`Object is not initialized: ${varName}`)
@@ -80,9 +79,10 @@ window.checkObj=function(val,varName,ref,console,send) {
 
 # JavaScript Basics
 
-Before diving into the specifics of JavaScript coding, let's first discuss its role and significance within the broader context of programming languages and environments.
+Before we start talking about how to use JavaScript, let's understand why it's important in the world of programming.
 
-> Some of the data in this tutorial is taken from [learn-js.org](https://www.learn-js.org/). The purpose of our tutorial is limited to basics, required to get minimal 101 knowledge of JavaScript. We limit the tasks to very basic version ES3 (1999) while most recent version is ES11 (2020). You may want to get deeper and learn more - just go ahead with [learn-js.org](https://www.learn-js.org/) - it is free.
+> The information in this tutorial comes from [learn-js.org](https://www.learn-js.org/). Our tutorial focuses on the basics needed to get a simple understanding of JavaScript, specifically the basics from the 1999 version (ES3). The most recent version is ES11 (2020). If you want to explore more and go deeper, feel free to visit [learn-js.org](https://www.learn-js.org/); it's a free resource.
+
 
 ## Is JavaScript for Browsers?
 
@@ -155,7 +155,7 @@ In this tutorial, we will only focus on learning the language itself, and theref
 
 Go ahead, and fix it so it outputs `Hello, World!` and then press **Check** to proceed.
 
-``` javascript @codingQuiz2(`str!="Hello, World!"?"wrong":`,`console.log2=console.log;let str='';console.log=(t)=>{console.log2(t);str=t;};`)
+``` javascript @codingQuiz2(`str!="Hello, World!"?"":"OK"+`,`console.log2=console.log;let str='';console.log=(t)=>{console.log2(t);str=t;};`)
 console.log('Goodbye, World!')
 ```
 
@@ -168,9 +168,8 @@ For instance:
 ```javascript
 var singleQuotes = 'This is a string using single quotes.';
 var doubleQuotes = "This is a string using double quotes.";
+
 ```
-<script>@input
-""</script>
 
 Both `singleQuotes` and `doubleQuotes` in the example above represent strings. You can use either single or double quotes to create strings, but it's essential to maintain consistency within your codebase.
 
@@ -182,11 +181,8 @@ For instance:
 var singleInsideDouble = "He said, 'Hello!'";
 var doubleInsideSingle = 'She replied, "Hi!"';
 var escapingQuotes = 'Escaping a quote: \'Single quotes\' or "Double quotes"';
-```
-<script>
-eval(`@'input`)
-""</script>
 
+```
 
 This way, you can include single quotes within double quotes and vice versa, or escape the quotes using the backslash to have them as part of the string.
 
@@ -264,9 +260,8 @@ We can define several types of variables to use in our code:
 var myNumber = 3;                   // a number
 var myString = "Hello, World!"      // a string
 var myBoolean = true;               // a boolean
+
 ```
-<script>@input
-""</script>
 
 A few notes about variable types in JavaScript:
 
@@ -279,12 +274,10 @@ There are two more advanced types in JavaScript. An array, and an object. We wil
 var myArray = [];     // an array
 var myObject = {};    // an object
 ```
-<script>@input
-""</script>
 
 On top of that, there are two special types called `undefined` and `null`.
 
-When a variable is used without first defining a value for it, it is equal to undefined. For example:
+When a variable is used without first defining a value for it, it is equal to `undefined`. For example:
 
 ```javascript
 var newVariable;
@@ -347,7 +340,6 @@ var newArrayVar = [];
 ""
 </script>
 
-
 Addressing
 ----------
 
@@ -355,7 +347,7 @@ We can use the brackets `[]` operator to address a specific cell in our array. A
 
 ```javascript
 var myArray = [1, 2, 3];
-console.log(myArray[1]);      // prints out 2
+console.log(myArray[1]);  // prints out 2
 ```
 <script>
 @input
@@ -388,6 +380,8 @@ You must define an array variable `myArray` with the following three entries:
 ```
 
 ## Manipulating Arrays
+
+In JavaScript, arrays are a fundamental data structure that allows you to store and manipulate a collection of elements. Here's an overview of common operations for manipulating arrays in JavaScript.
 
 ### Pushing and popping
 
@@ -605,6 +599,10 @@ var meaningOfLife = null;
 
 ## Conditions
 
+In JavaScript, conditions are used to make decisions in your code. They help your program to do different things based on whether a specific condition is `true` or `false`. Think of it like making choices in real life.
+
+Here are the basics.
+
 ### The `if` statement
 
 The `if` statement allows us to check if an expression is equal to `true` or `false`, and execute different code according to the result.
@@ -734,7 +732,9 @@ checkNumber(42);
 
 ## Loops
 
-### The `for` statement
+In JavaScript, loops are used to repeat a certain block of code multiple times. They are like doing something over and over again without having to write the same code multiple times. Let's explore two common types of loops.
+
+### The `for` loop
 
 JavaScript has two methods for running the same code several times. It is mainly used for iterating over arrays or objects. Let's see an example:
 
@@ -782,7 +782,7 @@ for (var i = 0; i < myArray.length; i++)
 
 Notice that we used the `length` property of an array, which returns the number of members in the array, so we know when to stop iterating.
 
-### The `while` statement
+### The `while` loop
 
 The `while` statement is a more simple version of the `for` statement which checks if an expression evaluates to `true` and runs as long as it stays `true`.
 
@@ -840,9 +840,9 @@ for (var i = 0; i < 100; i++)
 
 ### Exercise
 
-In this exercise, you must write a `for` loop that iterates on the `myArray` variable and prints out all of its members.
+In this exercise, you must write a `for` loop that iterates on the `myArray` variable and prints out all of its members using `console.log`.
 
-``` javascript @codingQuiz2(`const exp="What is the meaning of life?"+nl+"The meaning of life is"+nl+"42"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)};`)
+``` javascript @codingQuiz2(`const exp="What is the meaning of life?"+nl+"The meaning of life is"+nl+"42"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):"OK"+`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)};`)
 var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
 
 // TODO: modify this code
@@ -938,9 +938,17 @@ personObject["salary"] = 14000;
 
 ### Iteration
 
-Iterating over members of a dictionary is not a trivial task, since iterating over objects can also yield members who don't actually belong to an object. Therefore, we must use the `hasOwnProperty` method to check that the member in fact belongs to the object.
+Iterating over members of a dictionary is not a trivial task, since iterating over objects can also yield members who don't actually belong to an object.
 
 ``` javascript
+var personObject = {
+    firstName : "John",
+    lastName : "Smith"
+}
+
+personObject.age = 23;
+personObject["salary"] = 14000;
+
 for (var member in personObject)
 {
     console.log("the member " + member + " of personObject is " + personObject[member])

@@ -8,7 +8,7 @@ mode: Textbook
 
 # XPath Essentials
 
-In Rapise automation XPath comes into play to find specific elements on the webpage.
+In [Rapise](https://www.inflectra.com/Rapise/) and WebDriver automation XPath comes into play to find specific elements on the webpage.
 
 This tutorial explores XPath and various XPath expressions, particularly for identifying complex or dynamic elements whose attributes change dynamically upon refresh or other operations.
 
@@ -102,7 +102,7 @@ Now, let's delve into the first exercise. The task is to single out a specific *
 </p>
 ```
 
-Do you follow? We utilized `//tagname`` to locate an element. Now, let's choose an *italic* element in a similar manner:
+Do you follow? We utilized `//tagname` to locate an element. Now, let's choose an *italic* element in a similar manner:
 
 ``` xml @xpathExample( ,//i)
 <p _root>
@@ -155,7 +155,7 @@ This way, by using **[2]** after the tag name, we can specifically choose the se
 
 ### Exercise
 
-``` xml @xpathQuiz(`Select 3rd <li> item by index:`)
+``` xml @xpathQuiz(`Select 3rd **li** item by index:`)
 <ul _root _expectedXPath="//li[3]">
     <li>Carrot</li>
     <li>Plum</li>
@@ -195,7 +195,7 @@ Here, we utilized the fact that each list item has a unique `id` attribute. Addi
 
 Try `//*[@id='2']` and observe the same result with Plum being selected:
 
-``` xml @xpathQuiz(` `)
+``` xml @xpathExample(`Observe the same result with Plum being selected:`,`//*[@id='2']`)
 <ul _root>
     <li id="1">Carrot</li>
     <li _correct id="2">Plum</li>
@@ -205,7 +205,7 @@ Try `//*[@id='2']` and observe the same result with Plum being selected:
 
 ### Using `position()`
 
-`position()` returns the position of the node within its parent's list of child nodes. It is typically used within square brackets [ ] in an XPath expression to filter nodes based on their position.
+`position()` returns the position of the node within its parent's list of child nodes. It is typically used within square brackets `[ ]` in an XPath expression to filter nodes based on their position.
 
 ``` xml @xpathExample(` `,`//li[position()=2]`)
 <ul _root _expectedText="2">
@@ -214,7 +214,6 @@ Try `//*[@id='2']` and observe the same result with Plum being selected:
     <li id="3">Apple</li>
 </ul>
 ```
-
 
 ## Absolute XPath
 
