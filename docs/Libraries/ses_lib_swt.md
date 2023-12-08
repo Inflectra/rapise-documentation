@@ -9,6 +9,8 @@
 
 - [SWTList](SWTList.md)
 
+- [SWTObject](SWTObject.md)
+
 - [SWTTree](SWTTree.md)
 
 

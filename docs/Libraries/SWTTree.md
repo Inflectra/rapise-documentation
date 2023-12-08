@@ -4,7 +4,7 @@ Summary: Java SWT Tree.
 
 Java SWT Tree.
  
-Extends [UIAObject](UIAObject.md)
+Extends [SWTObject](SWTObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 

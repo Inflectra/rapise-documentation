@@ -24,6 +24,10 @@ This behavior pattern implements REST service client.
 | [Name](#name) | The name of the request operation | GetName |  |
 | [Parameter](#parameter) | Get/Set single parameter by name. | GetParameter | SetParameter |
 | [Parameters](#parameters) | The list of parameters available for this request url. | GetParameters | SetParameters |
+| [ProxyHost](#proxyhost) | Proxy host name. | GetProxyHost | SetProxyHost |
+| [ProxyPort](#proxyport) | Proxy port number. | GetProxyPort | SetProxyPort |
+| [ProxyPwd](#proxypwd) | Proxy password. | GetProxyPwd | SetProxyPwd |
+| [ProxyUser](#proxyuser) | Proxy user name. | GetProxyUser | SetProxyUser |
 | [RequestBodyObject](#requestbodyobject) | The body of the HTTP request as a JavaScript object. | GetRequestBodyObject | SetRequestBodyObject |
 | [RequestBodyText](#requestbodytext) | The body of the HTTP request in raw text format | GetRequestBodyText | SetRequestBodyText |
 | [RequestHeader](#requestheader) | Get/Set Single HTTP header by name. | GetRequestHeader | SetRequestHeader |
@@ -50,6 +54,7 @@ This behavior pattern implements REST service client.
 |	[DoExecute](#doexecute) | Executes a REST service operation, substitutes any of the provided parameter values if necessary. |
 |	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
 |	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
+|	[DoSetProxy](#dosetproxy) | Sets proxy for this request. |
 |	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
@@ -160,6 +165,66 @@ Type: object
 			
 			
 Accessors: GetParameters, SetParameters
+			
+		
+<a name="ProxyHost"></a>
+#### ProxyHost
+
+
+Proxy host name. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyHost, SetProxyHost
+			
+		
+<a name="ProxyPort"></a>
+#### ProxyPort
+
+
+Proxy port number. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyPort, SetProxyPort
+			
+		
+<a name="ProxyPwd"></a>
+#### ProxyPwd
+
+
+Proxy password. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyPwd, SetProxyPwd
+			
+		
+<a name="ProxyUser"></a>
+#### ProxyUser
+
+
+Proxy user name. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyUser, SetProxyUser
 			
 		
 <a name="RequestBodyObject"></a>
@@ -454,6 +519,31 @@ DoRemoveRequestHeader(name)
 
 
 <a name="see.also.restservice.doremoverequestheader"></a>
+
+<a name="DoSetProxy"></a>    
+#### DoSetProxy
+
+Sets proxy for this request. Requires Rapise 8.1+.
+
+```javascript
+DoSetProxy(host, port, user, pwd) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| host | string |	Proxy host name or IP address. |
+| port | string |	Proxy port. |
+| user | string |	Proxy user name.<br>Optional. |
+| pwd | string |	Proxy password.<br>Optional. |
+
+
+
+
+
+<a name="see.also.restservice.dosetproxy"></a>
 
 <a name="DoVerify"></a>    
 #### DoVerify

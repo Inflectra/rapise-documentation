@@ -4,7 +4,7 @@ Summary: Java SWT Editable Combobox.
 
 Java SWT Editable Combobox.
  
-Extends [UIAObject](UIAObject.md)
+Extends [SWTObject](SWTObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 

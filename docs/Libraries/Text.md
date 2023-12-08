@@ -20,6 +20,8 @@ Text object. Use it to perform text manipulations.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
+|	[Base64Decode](#base64decode) | Decodes base64 string. |
+|	[Base64Encode](#base64encode) | Converts string to base64 format. |
 |	[CharAt](#charat) | Returns a new string consisting of the single UTF-16 code unit located at the specified `index` into the `str`. |
 |	[CharCodeAt](#charcodeat) | Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given `index` into the `str`. |
 |	[Concat](#concat) | Append `str2` to `str1`. |
@@ -28,6 +30,7 @@ Text object. Use it to perform text manipulations.
 |	[FileContains](#filecontains) | Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning `true` or `false` as appropriate. |
 |	[FirstIndex](#firstindex) | The first index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
 |	[Format](#format) | Format given `formatStr` template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params. |
+|	[IncrementDate](#incrementdate) | Increments a date/time string with a given offset. |
 |	[Join](#join) | Concatenate all of the elements in `arr` array (or an array-like object), separated by commas or a specified `separator` string. |
 |	[LastIndex](#lastindex) | The last index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
 |	[Limit](#limit) | Limit `str` to be not more than `maxLength` chars. |
@@ -59,6 +62,50 @@ Text object. Use it to perform text manipulations.
 	
 ### Action Detail
 		
+<a name="Base64Decode"></a>    
+#### Base64Decode
+
+Decodes base64 string. Requires Rapise 8.1+.
+
+```javascript
+Base64Decode(base64EncodedData) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| base64EncodedData | string |	Base64 encoded string. |
+
+
+
+
+
+<a name="see.also.text.base64decode"></a>
+
+<a name="Base64Encode"></a>    
+#### Base64Encode
+
+Converts string to base64 format. Requires Rapise 8.1+.
+
+```javascript
+Base64Encode(plainText) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| plainText | string |	Input string to encode. |
+
+
+
+
+
+<a name="see.also.text.base64encode"></a>
+
 <a name="CharAt"></a>    
 #### CharAt
 
@@ -284,6 +331,40 @@ string: Formatted string
 
 
 <a name="see.also.text.format"></a>
+
+<a name="IncrementDate"></a>    
+#### IncrementDate
+
+Increments a date/time string with a given offset. Requires Rapise 8.1+.
+1. Parses date using given format specifier.
+	Formatting is described here: https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.85).aspx
+	Example: yyyy-MM-dd HH:mm
+2. Adds/Subtracts specified number of years, months, days, hours, minutes.
+	The number may be negative or positive, i.e. months=2 adds 2 months, months=-3 goes 3 months back, months=0 leaves months intact.
+3. Formats the date back and returns.
+
+```javascript
+IncrementDate(dstr, fmt, years, months, days, hours, minutes) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| dstr | string |	Date/time string. If not set then current date/time is used. |
+| fmt | string |	Date/time format. |
+| years | number |	Year increment/decrement. |
+| months | number |	Month increment/decrement. |
+| days | number |	Day increment/decrement. |
+| hours | number |	Hour increment/decrement. |
+| minutes | number |	Minute increment/decrement. |
+
+
+
+
+
+<a name="see.also.text.incrementdate"></a>
 
 <a name="Join"></a>    
 #### Join

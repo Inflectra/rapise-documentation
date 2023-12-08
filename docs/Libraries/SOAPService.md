@@ -21,6 +21,10 @@ This behavior pattern implements SOAP service client.
 | ------------ | --------------- | ---------- | ---------- |
 | [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
 | [Name](#name) | The name of the request operation | GetName |  |
+| [ProxyHost](#proxyhost) | Proxy host name. | GetProxyHost | SetProxyHost |
+| [ProxyPort](#proxyport) | Proxy port number. | GetProxyPort | SetProxyPort |
+| [ProxyPwd](#proxypwd) | Proxy password. | GetProxyPwd | SetProxyPwd |
+| [ProxyUser](#proxyuser) | Proxy user name. | GetProxyUser | SetProxyUser |
 | [ResponseBodyObject](#responsebodyobject) | The body of the HTTP response deserialized from SOAP into a JavaScript object. | GetResponseBodyObject |  |
 | [ResponseBodyText](#responsebodytext) | The body of the HTTP response in raw text format. | GetResponseBodyText |  |
 | [ResponseHeaders](#responseheaders) | Returns the list of HTTP headers returned with the HTTP response. | GetResponseHeaders |  |
@@ -42,6 +46,7 @@ This behavior pattern implements SOAP service client.
 |	[DoExecuteRaw](#doexecuteraw) | Sends a SOAP request as is. |
 |	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
 |	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
+|	[DoSetProxy](#dosetproxy) | Sets proxy for this request. |
 |	[DoVerify](#doverify) | Checks that a given part of response equals the expected value. |
 
 
@@ -87,6 +92,66 @@ Type: string
 			
 			
 Accessors: GetName
+			
+		
+<a name="ProxyHost"></a>
+#### ProxyHost
+
+
+Proxy host name. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyHost, SetProxyHost
+			
+		
+<a name="ProxyPort"></a>
+#### ProxyPort
+
+
+Proxy port number. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyPort, SetProxyPort
+			
+		
+<a name="ProxyPwd"></a>
+#### ProxyPwd
+
+
+Proxy password. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyPwd, SetProxyPwd
+			
+		
+<a name="ProxyUser"></a>
+#### ProxyUser
+
+
+Proxy user name. Requires Rapise 8.1+.
+
+			
+	
+			
+Type: string
+			
+			
+Accessors: GetProxyUser, SetProxyUser
 			
 		
 <a name="ResponseBodyObject"></a>
@@ -289,6 +354,31 @@ DoRemoveRequestHeader(name)
 
 
 <a name="see.also.soapservice.doremoverequestheader"></a>
+
+<a name="DoSetProxy"></a>    
+#### DoSetProxy
+
+Sets proxy for this request. Requires Rapise 8.1+.
+
+```javascript
+DoSetProxy(host, port, user, pwd) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| host | string |	Proxy host name or IP address. |
+| port | string |	Proxy port. |
+| user | string |	Proxy user name.<br>Optional. |
+| pwd | string |	Proxy password.<br>Optional. |
+
+
+
+
+
+<a name="see.also.soapservice.dosetproxy"></a>
 
 <a name="DoVerify"></a>    
 #### DoVerify

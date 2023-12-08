@@ -25,6 +25,10 @@ Session object for SOAP and REST services.
 |	[GetCredential](#getcredential) | Returns HTTP Basic Authentication credentials (if any). |
 |	[GetNewRequest](#getnewrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
 |	[GetParameters](#getparameters) | Return common request parameters (array of `[{'Name':somename,'Value':somevalue},. |
+|	[GetProxyHost](#getproxyhost) | Returns proxy host. |
+|	[GetProxyPort](#getproxyport) | Returns proxy port. |
+|	[GetProxyPwd](#getproxypwd) | Returns proxy password. |
+|	[GetProxyUser](#getproxyuser) | Returns proxy user name. |
 |	[GetRequestHeaders](#getrequestheaders) | Return common HTTP Headers applied to each REST or SOAP request (array of `[{'Name':somename,'Value':somevalue},. |
 |	[GetRESTRequest](#getrestrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
 |	[SetBaseUrl](#setbaseurl) | Enable URL replacement for all further requests. |
@@ -32,6 +36,11 @@ Session object for SOAP and REST services.
 |	[SetIgnoreStatus](#setignorestatus) | Set to `true` to prevent REST requests with non 200 status code from failing the test. |
 |	[SetParameter](#setparameter) | Sets common request parameter. |
 |	[SetParameters](#setparameters) | Sets common request parameters. |
+|	[SetProxy](#setproxy) | Sets proxy settings for the Session. |
+|	[SetProxyHost](#setproxyhost) | Sets proxy host. |
+|	[SetProxyPort](#setproxyport) | Sets proxy port. |
+|	[SetProxyPwd](#setproxypwd) | Sets proxy password. |
+|	[SetProxyUser](#setproxyuser) | Sets proxy user name. |
 |	[SetRequestHeader](#setrequestheader) | Sets common request header. |
 |	[SetRequestHeaders](#setrequestheaders) | Sets common HTTP Headers applied to each REST or SOAP request. |
 |	[SetUrl](#seturl) | Deprecated. |
@@ -142,6 +151,66 @@ GetParameters()
 
 
 <a name="see.also.session.getparameters"></a>
+
+<a name="GetProxyHost"></a>    
+#### GetProxyHost
+
+Returns proxy host. Requires Rapise 8.1+.
+
+```javascript
+GetProxyHost() 
+```
+
+
+
+
+
+<a name="see.also.session.getproxyhost"></a>
+
+<a name="GetProxyPort"></a>    
+#### GetProxyPort
+
+Returns proxy port. Requires Rapise 8.1+.
+
+```javascript
+GetProxyPort() 
+```
+
+
+
+
+
+<a name="see.also.session.getproxyport"></a>
+
+<a name="GetProxyPwd"></a>    
+#### GetProxyPwd
+
+Returns proxy password. Requires Rapise 8.1+.
+
+```javascript
+GetProxyPwd() 
+```
+
+
+
+
+
+<a name="see.also.session.getproxypwd"></a>
+
+<a name="GetProxyUser"></a>    
+#### GetProxyUser
+
+Returns proxy user name. Requires Rapise 8.1+.
+
+```javascript
+GetProxyUser() 
+```
+
+
+
+
+
+<a name="see.also.session.getproxyuser"></a>
 
 <a name="GetRequestHeaders"></a>    
 #### GetRequestHeaders
@@ -307,6 +376,119 @@ SetParameters(requestParam, optValueVal)
 
 
 <a name="see.also.session.setparameters"></a>
+
+<a name="SetProxy"></a>    
+#### SetProxy
+
+Sets proxy settings for the Session. Requires Rapise 8.1+.
+
+```javascript
+SetProxy(host, port, user, pwd) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| host | string |	Proxy host name or IP address. |
+| port | string |	Proxy port. |
+| user | string |	Proxy user name. |
+| pwd | string |	Proxy password. |
+
+
+
+
+
+<a name="see.also.session.setproxy"></a>
+
+<a name="SetProxyHost"></a>    
+#### SetProxyHost
+
+Sets proxy host. Requires Rapise 8.1+.
+
+```javascript
+SetProxyHost(value) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| value | string |	Host name or IP address. |
+
+
+
+
+
+<a name="see.also.session.setproxyhost"></a>
+
+<a name="SetProxyPort"></a>    
+#### SetProxyPort
+
+Sets proxy port. Requires Rapise 8.1+.
+
+```javascript
+SetProxyPort(value) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| value | string |	Port number. |
+
+
+
+
+
+<a name="see.also.session.setproxyport"></a>
+
+<a name="SetProxyPwd"></a>    
+#### SetProxyPwd
+
+Sets proxy password. Requires Rapise 8.1+.
+
+```javascript
+SetProxyPwd(value) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| value | string |	Proxy password. |
+
+
+
+
+
+<a name="see.also.session.setproxypwd"></a>
+
+<a name="SetProxyUser"></a>    
+#### SetProxyUser
+
+Sets proxy user name. Requires Rapise 8.1+.
+
+```javascript
+SetProxyUser(value) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| value | string |	User name. |
+
+
+
+
+
+<a name="see.also.session.setproxyuser"></a>
 
 <a name="SetRequestHeader"></a>    
 #### SetRequestHeader

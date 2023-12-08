@@ -34,6 +34,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[CreateTouchAction](#createtouchaction) | Gets TouchAction object. |
 |	[DeactiveIMEEngine](#deactiveimeengine) | Deactivate the currently Active IME Engine on the device. |
 |	[Dispose](#dispose) | Dispose of WebDriver. |
+|	[DoSendKeys](#dosendkeys) | Sends keys to an active element. |
 |	[DumpSessions](#dumpsessions) | Prints information about active Appium sessions to output. |
 |	[ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
 |	[FindElementByAccessibilityId](#findelementbyaccessibilityid) | Search for an element using Accessibility ID. |
@@ -87,6 +88,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |	[RemoveApp](#removeapp) | Remove an app from the device |
 |	[ResetApp](#resetapp) | Reset the currently running app for this session |
 |	[SaveSession](#savesession) | Saves session information for use by ReconnectSession. |
+|	[SeSFind](#sesfind) | Finds an element given it's locator string. |
 |	[SetContext](#setcontext) | Sets current context. |
 |	[SetOrientation](#setorientation) | Sets device orienataion. |
 |	[SetUrl](#seturl) | Sets the URL the browser is currently displaying. |
@@ -128,7 +130,7 @@ Actions()
 
 Activates an application by it's ID. 
 Find iOS default application IDs [here](https://support.apple.com/guide/deployment/bundle-ids-for-native-iphone-and-ipad-apps-depece748c41/web).
-For Android application ID is Package Name, e.g. com.google.chrome.
+For Android application ID is Package Name, e.g. com.android.chrome.
 
 ```javascript
 ActivateApp(appId) 
@@ -372,6 +374,28 @@ Dispose()
 
 
 <a name="see.also.appiumdriver.dispose"></a>
+
+<a name="DoSendKeys"></a>    
+#### DoSendKeys
+
+Sends keys to an active element. Requires Rapise 8.1+.
+
+```javascript
+DoSendKeys(txt) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| txt | string |	Keys to send. Supports patterns like in [Global.DoSendKeys](/Libraries/Global/#dosendkeys). |
+
+
+
+
+
+<a name="see.also.appiumdriver.dosendkeys"></a>
 
 <a name="DumpSessions"></a>    
 #### DumpSessions
@@ -1429,6 +1453,31 @@ SaveSession()
 
 
 <a name="see.also.appiumdriver.savesession"></a>
+
+<a name="SeSFind"></a>    
+#### SeSFind
+
+Finds an element given it's locator string. Requires Rapise 8.1+.
+
+```javascript
+SeSFind(selector, objectType, selectorType, objectName) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| selector | string |	Selector query, format depends on a selector type. |
+| objectType | string |	Type of an object: android, ios or web. Possible values: "android", "ios", "web"<br>Optional, Default: "web". |
+| selectorType | string |	Type of a selector: acc, css, id, ios, xpath. Possible values: "acc", "css", "id", "ios", "xpath"<br>Optional, Default: "xpath". |
+| objectName | string |	Name to assign to the found object. Used in the report.<br>Optional. |
+
+
+
+
+
+<a name="see.also.appiumdriver.sesfind"></a>
 
 <a name="SetContext"></a>    
 #### SetContext

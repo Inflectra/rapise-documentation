@@ -123,7 +123,7 @@ Accessors: GetHeight
 #### Visible
 
 
-Returns `true` if the element is visible on screen. Requires Rapise 8.0+
+Returns `true` if the element is visible on screen. Requires Rapise 8.0+.
 
 			
 	

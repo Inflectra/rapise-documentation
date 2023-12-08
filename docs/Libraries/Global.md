@@ -41,6 +41,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |	[DoMouseMove](#domousemove) | Moves mouse to the specified position. |
 |	[DoPlayManual](#doplaymanual) | Executes a manual test. |
 |	[DoRestoreWindow](#dorestorewindow) | Restores window that matches given title and class name. |
+|	[DoRunTest](#doruntest) | Executes a given test in isolated environment (new process is created). |
 |	[DoRunTestSet](#doruntestset) | Executes a test set. |
 |	[DoSendKeys](#dosendkeys) | Sends series of keystrokes to a currently focused application. |
 |	[DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
@@ -354,10 +355,10 @@ DoInvokeTestParallel(
 	"t2/t2.sstest",
 	{
 		"THR01": {
-			g_browserLibrary: 'Selenium Chrome'
+			g_browserLibrary: 'Selenium - Chrome'
 		},
 		"THR02": {
-			g_browserLibrary: 'Selenium Firefox'
+			g_browserLibrary: 'Selenium - Edge'
 		}
 	}
 );
@@ -459,7 +460,7 @@ DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)
 | cmdLine | string |	Command line to an executable with parameters. |
 | wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
 | attachIfExists | boolean |	Try to find a process with the same executable path instead of launching it.<br>Optional, Default: "false". |
-| attachToWindow | string |	When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "null". |
+| attachToWindow | string |	When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "". |
 
 
 
@@ -701,6 +702,29 @@ boolean: `true` if window was found, otherwise `false`.
 
 
 <a name="see.also.global.dorestorewindow"></a>
+
+<a name="DoRunTest"></a>    
+#### DoRunTest
+
+Executes a given test in isolated environment (new process is created). Requires Rapise 8.1+.
+
+```javascript
+DoRunTest(testPath, optionalParams) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| testPath | string |	Path to .sstest to execute. |
+| optionalParams | object |	Object containing {name:'value',...} pairs to be passed as parameters to the test.<br>Optional. |
+
+
+
+
+
+<a name="see.also.global.doruntest"></a>
 
 <a name="DoRunTestSet"></a>    
 #### DoRunTestSet

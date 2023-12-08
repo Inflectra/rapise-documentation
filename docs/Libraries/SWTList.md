@@ -4,7 +4,7 @@ Summary: Java SWT List.
 
 Java SWT List.
  
-Extends [UIAObject](UIAObject.md)
+Extends [SWTObject](SWTObject.md)
 
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 

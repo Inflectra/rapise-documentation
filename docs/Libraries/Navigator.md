@@ -36,6 +36,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[Back](#back) | Goes back to the previous page in the browser history. |
+|	[CheckObjectActive](#checkobjectactive) | Checks if object is active by its id or XPath. |
 |	[CheckObjectEnabled](#checkobjectenabled) | Checks if object is enabled by its id or XPath. |
 |	[CheckObjectExists](#checkobjectexists) | Checks if object is found on the screen by its id or XPath. |
 |	[CheckObjectVisible](#checkobjectvisible) | Checks if object is visible on the screen by its id or XPath. |
@@ -204,6 +205,33 @@ Back()
 
 
 <a name="see.also.navigator.back"></a>
+
+<a name="CheckObjectActive"></a>    
+#### CheckObjectActive
+
+Checks if object is active by its id or XPath.
+
+```javascript
+CheckObjectActive(xpathOrObjId) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
+
+
+
+
+**Returns:**
+
+`true` if object is active, `false` otherwise.
+
+
+
+<a name="see.also.navigator.checkobjectactive"></a>
 
 <a name="CheckObjectEnabled"></a>    
 #### CheckObjectEnabled

@@ -1,9 +1,11 @@
-Summary: UIAutomation UIAObject.
+Summary: Java SWT Object.
 
-# UIAObject
+# SWTObject
 
-UIAutomation UIAObject.
+Java SWT Object.
  
+Extends [UIAObject](UIAObject.md)
+
 Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
@@ -322,7 +324,7 @@ DoClick(x, y)
 
 
 
-<a name="see.also.uiaobject.doclick"></a>
+<a name="see.also.swtobject.doclick"></a>
 
 <a name="DoDumpWidget"></a>    
 #### DoDumpWidget
@@ -355,7 +357,7 @@ string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write
 
 
 
-<a name="see.also.uiaobject.dodumpwidget"></a>
+<a name="see.also.swtobject.dodumpwidget"></a>
 
 <a name="DoFindByLocation"></a>    
 #### DoFindByLocation
@@ -382,7 +384,7 @@ DoFindByLocation(strLocation)
 
 
 
-<a name="see.also.uiaobject.dofindbylocation"></a>
+<a name="see.also.swtobject.dofindbylocation"></a>
 
 <a name="DoFindByText"></a>    
 #### DoFindByText
@@ -410,7 +412,7 @@ DoFindByText(textOrRegexp, depth)
 
 
 
-<a name="see.also.uiaobject.dofindbytext"></a>
+<a name="see.also.swtobject.dofindbytext"></a>
 
 <a name="DoFindElementByCondition"></a>    
 #### DoFindElementByCondition
@@ -438,7 +440,7 @@ DoFindElementByCondition(scope, condition)
 
 
 
-<a name="see.also.uiaobject.dofindelementbycondition"></a>
+<a name="see.also.swtobject.dofindelementbycondition"></a>
 
 <a name="DoFindElementsByCondition"></a>    
 #### DoFindElementsByCondition
@@ -466,7 +468,7 @@ DoFindElementsByCondition(scope, condition)
 
 
 
-<a name="see.also.uiaobject.dofindelementsbycondition"></a>
+<a name="see.also.swtobject.dofindelementsbycondition"></a>
 
 <a name="DoGetWidgetProperty"></a>    
 #### DoGetWidgetProperty
@@ -493,7 +495,7 @@ string: Property value if successful, an empty string if the property can not be
 
 
 
-<a name="see.also.uiaobject.dogetwidgetproperty"></a>
+<a name="see.also.swtobject.dogetwidgetproperty"></a>
 
 	
 

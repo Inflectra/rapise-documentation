@@ -21,6 +21,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |	[Actions](#actions) | Gets Actions object. |
+|	[AlertIsPresent](#alertispresent) | Checks if alert is displayed. |
 |	[ClearSessions](#clearsessions) | Deletes active sessions on Selenium grid. |
 |	[Close](#close) | Close the Browser and Dispose of WebDriver. |
 |	[Cookies](#cookies) | Gets Cookies object. |
@@ -51,9 +52,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |	[GetCurrentWindowHandle](#getcurrentwindowhandle) | Gets the current window handle, which is an opaque handle to this window that uniquely identifies it within this driver instance. |
 |	[GetDebuggerAddress](#getdebuggeraddress) |  |
 |	[GetPageSource](#getpagesource) | Gets the source of the page last loaded by the browser. |
-|	[GetProfileCapability](#getprofilecapability) |  |
 |	[GetScreenshot](#getscreenshot) | Gets the screenshot of the page. |
-|	[GetScreenshotIW](#getscreenshotiw) |  |
 |	[GetSessionId](#getsessionid) |  |
 |	[GetTitle](#gettitle) | Gets the title of the current browser window. |
 |	[GetUrl](#geturl) | Gets the URL the browser is currently displaying. |
@@ -96,6 +95,21 @@ Actions()
 
 
 <a name="see.also.webdriver.actions"></a>
+
+<a name="AlertIsPresent"></a>    
+#### AlertIsPresent
+
+Checks if alert is displayed.
+
+```javascript
+AlertIsPresent() 
+```
+
+
+
+
+
+<a name="see.also.webdriver.alertispresent"></a>
 
 <a name="ClearSessions"></a>    
 #### ClearSessions
@@ -807,28 +821,6 @@ GetPageSource()
 
 <a name="see.also.webdriver.getpagesource"></a>
 
-<a name="GetProfileCapability"></a>    
-#### GetProfileCapability
-
-
-
-```javascript
-GetProfileCapability(name) 
-```
-
-
-**Parameters:**
-
-|	**Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| name |  |	 |
-
-
-
-
-
-<a name="see.also.webdriver.getprofilecapability"></a>
-
 <a name="GetScreenshot"></a>    
 #### GetScreenshot
 
@@ -843,21 +835,6 @@ GetScreenshot()
 
 
 <a name="see.also.webdriver.getscreenshot"></a>
-
-<a name="GetScreenshotIW"></a>    
-#### GetScreenshotIW
-
-
-
-```javascript
-GetScreenshotIW() 
-```
-
-
-
-
-
-<a name="see.also.webdriver.getscreenshotiw"></a>
 
 <a name="GetSessionId"></a>    
 #### GetSessionId

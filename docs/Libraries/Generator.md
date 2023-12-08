@@ -23,6 +23,7 @@ Use Generator object to produce unique and formatted data input. Requires Rapise
 |	[Create](#create) | Creates generator object in Spira. |
 |	[Format](#format) | Formats string according to a template. |
 |	[GetNextValue](#getnextvalue) | Calculates next value of the generator according to a template. |
+|	[RandomString](#randomstring) | Generates a random alphanumeric string of a given length. |
 
 
 
@@ -143,6 +144,33 @@ string | <br>number: Next generated value or null
 
 
 <a name="see.also.generator.getnextvalue"></a>
+
+<a name="RandomString"></a>    
+#### RandomString
+
+Generates a random alphanumeric string of a given length. Requires Rapise 8.1+
+
+```javascript
+RandomString(length) 
+```
+
+
+**Parameters:**
+
+|	**Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| length | number |	Length of the string to return. |
+
+
+
+
+**Returns:**
+
+string: Generated string.
+
+
+
+<a name="see.also.generator.randomstring"></a>
 
 	
 
