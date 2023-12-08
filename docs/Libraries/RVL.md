@@ -66,6 +66,17 @@ Executes specified test in parallel threads passing additional arguments specifi
 * [Rapise with Selenium Grid - Parallel Test Execution](https://youtu.be/L8xMZureYtI) (video)
 * [Rapise with Selenium Grid - Nested Parallel Test Execution](https://youtu.be/5W3KyVH83wc) (video)
 
+## DoRunTest
+
+```javascript
+DoRunTest(/**string*/ sstestPath)
+```
+
+Executes specified test using [Global.DoRunTest](Global.md#DoRunTest) but passing any extra parameters as 'params' object to invoked test. Requires Rapise 8.1+.
+			
+* `sstestPath`: Path to test
+* **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)        
+
 ## Exit
 
 ```javascript
@@ -95,7 +106,7 @@ Example. Suppose we have the following definitions of dropdowns:
 
 ![States Dropdown](../RVL/img/RVL_GetDropdownValue_states.png)
 
-Then the call
+Then the call 
 
 ```javascript
 var stateCode = RVL.GetDropdownValue(stateName,
