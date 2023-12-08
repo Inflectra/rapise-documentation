@@ -7732,6 +7732,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../SWTObject/" class="md-nav__link">
+        SWTObject
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SWTTree/" class="md-nav__link">
         SWTTree
       </a>
@@ -9566,6 +9578,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dosendkeys" class="md-nav__link">
+    DoSendKeys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dumpsessions" class="md-nav__link">
     DumpSessions
   </a>
@@ -9932,6 +9951,13 @@
           <li class="md-nav__item">
   <a href="#savesession" class="md-nav__link">
     SaveSession
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesfind" class="md-nav__link">
+    SeSFind
   </a>
   
 </li>
@@ -11765,6 +11791,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dosendkeys" class="md-nav__link">
+    DoSendKeys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dumpsessions" class="md-nav__link">
     DumpSessions
   </a>
@@ -12136,6 +12169,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#sesfind" class="md-nav__link">
+    SeSFind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setcontext" class="md-nav__link">
     SetContext
   </a>
@@ -12294,6 +12334,10 @@
 <tr>
 <td><a href="#dispose">Dispose</a></td>
 <td>Dispose of WebDriver.</td>
+</tr>
+<tr>
+<td><a href="#dosendkeys">DoSendKeys</a></td>
+<td>Sends keys to an active element.</td>
 </tr>
 <tr>
 <td><a href="#dumpsessions">DumpSessions</a></td>
@@ -12508,6 +12552,10 @@
 <td>Saves session information for use by ReconnectSession.</td>
 </tr>
 <tr>
+<td><a href="#sesfind">SeSFind</a></td>
+<td>Finds an element given it's locator string.</td>
+</tr>
+<tr>
 <td><a href="#setcontext">SetContext</a></td>
 <td>Sets current context.</td>
 </tr>
@@ -12564,7 +12612,7 @@
 <h4 id="activateapp">ActivateApp<a class="headerlink" href="#activateapp" title="Permanent link">&para;</a></h4>
 <p>Activates an application by it's ID. 
 Find iOS default application IDs <a href="https://support.apple.com/guide/deployment/bundle-ids-for-native-iphone-and-ipad-apps-depece748c41/web">here</a>.
-For Android application ID is Package Name, e.g. com.google.chrome.</p>
+For Android application ID is Package Name, e.g. com.android.chrome.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">ActivateApp</span><span class="p">(</span><span class="nx">appId</span><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12745,6 +12793,29 @@ For Android application ID is Package Name, e.g. com.google.chrome.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Dispose</span><span class="p">()</span><span class="w"> </span>
 </code></pre></div>
 <p><a name="see.also.appiumdriver.dispose"></a></p>
+<p><a name="DoSendKeys"></a>    </p>
+<h4 id="dosendkeys">DoSendKeys<a class="headerlink" href="#dosendkeys" title="Permanent link">&para;</a></h4>
+<p>Sends keys to an active element. Requires Rapise 8.1+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>txt</td>
+<td>string</td>
+<td>Keys to send. Supports patterns like in <a href="/Libraries/Global/#dosendkeys">Global.DoSendKeys</a>.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.appiumdriver.dosendkeys"></a></p>
 <p><a name="DumpSessions"></a>    </p>
 <h4 id="dumpsessions">DumpSessions<a class="headerlink" href="#dumpsessions" title="Permanent link">&para;</a></h4>
 <p>Prints information about active Appium sessions to output.</p>
@@ -13628,6 +13699,44 @@ For Android application ID is Package Name, e.g. com.google.chrome.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SaveSession</span><span class="p">()</span><span class="w"> </span>
 </code></pre></div>
 <p><a name="see.also.appiumdriver.savesession"></a></p>
+<p><a name="SeSFind"></a>    </p>
+<h4 id="sesfind">SeSFind<a class="headerlink" href="#sesfind" title="Permanent link">&para;</a></h4>
+<p>Finds an element given it's locator string. Requires Rapise 8.1+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSFind</span><span class="p">(</span><span class="nx">selector</span><span class="p">,</span><span class="w"> </span><span class="nx">objectType</span><span class="p">,</span><span class="w"> </span><span class="nx">selectorType</span><span class="p">,</span><span class="w"> </span><span class="nx">objectName</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selector</td>
+<td>string</td>
+<td>Selector query, format depends on a selector type.</td>
+</tr>
+<tr>
+<td>objectType</td>
+<td>string</td>
+<td>Type of an object: android, ios or web. Possible values: "android", "ios", "web"<br>Optional, Default: "web".</td>
+</tr>
+<tr>
+<td>selectorType</td>
+<td>string</td>
+<td>Type of a selector: acc, css, id, ios, xpath. Possible values: "acc", "css", "id", "ios", "xpath"<br>Optional, Default: "xpath".</td>
+</tr>
+<tr>
+<td>objectName</td>
+<td>string</td>
+<td>Name to assign to the found object. Used in the report.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.appiumdriver.sesfind"></a></p>
 <p><a name="SetContext"></a>    </p>
 <h4 id="setcontext">SetContext<a class="headerlink" href="#setcontext" title="Permanent link">&para;</a></h4>
 <p>Sets current context.</p>

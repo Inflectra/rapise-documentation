@@ -4389,6 +4389,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#doruntest" class="md-nav__link">
+    DoRunTest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doruntestset" class="md-nav__link">
     DoRunTestSet
   </a>
@@ -8142,6 +8149,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../SWTObject/" class="md-nav__link">
+        SWTObject
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SWTTree/" class="md-nav__link">
         SWTTree
       </a>
@@ -11630,6 +11649,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#doruntest" class="md-nav__link">
+    DoRunTest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doruntestset" class="md-nav__link">
     DoRunTestSet
   </a>
@@ -11956,6 +11982,10 @@ record or learn this object, it is always automatically available in any test.</
 <tr>
 <td><a href="#dorestorewindow">DoRestoreWindow</a></td>
 <td>Restores window that matches given title and class name.</td>
+</tr>
+<tr>
+<td><a href="#doruntest">DoRunTest</a></td>
+<td>Executes a given test in isolated environment (new process is created).</td>
 </tr>
 <tr>
 <td><a href="#doruntestset">DoRunTestSet</a></td>
@@ -12384,10 +12414,10 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <span class="w">    </span><span class="s2">&quot;t2/t2.sstest&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="s2">&quot;THR01&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">g_browserLibrary</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Selenium Chrome&#39;</span>
+<span class="w">            </span><span class="nx">g_browserLibrary</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Selenium - Chrome&#39;</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="s2">&quot;THR02&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">g_browserLibrary</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Selenium Firefox&#39;</span>
+<span class="w">            </span><span class="nx">g_browserLibrary</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Selenium - Edge&#39;</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">);</span>
@@ -12508,7 +12538,7 @@ to attach if it is already launched.</p>
 <tr>
 <td>attachToWindow</td>
 <td>string</td>
-<td>When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "null".</td>
+<td>When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "".</td>
 </tr>
 </tbody>
 </table>
@@ -12755,6 +12785,34 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><strong>Returns:</strong></p>
 <p>boolean: <code>true</code> if window was found, otherwise <code>false</code>.</p>
 <p><a name="see.also.global.dorestorewindow"></a></p>
+<p><a name="DoRunTest"></a>    </p>
+<h4 id="doruntest">DoRunTest<a class="headerlink" href="#doruntest" title="Permanent link">&para;</a></h4>
+<p>Executes a given test in isolated environment (new process is created). Requires Rapise 8.1+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRunTest</span><span class="p">(</span><span class="nx">testPath</span><span class="p">,</span><span class="w"> </span><span class="nx">optionalParams</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>testPath</td>
+<td>string</td>
+<td>Path to .sstest to execute.</td>
+</tr>
+<tr>
+<td>optionalParams</td>
+<td>object</td>
+<td>Object containing {name:'value',...} pairs to be passed as parameters to the test.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.global.doruntest"></a></p>
 <p><a name="DoRunTestSet"></a>    </p>
 <h4 id="doruntestset">DoRunTestSet<a class="headerlink" href="#doruntestset" title="Permanent link">&para;</a></h4>
 <p>Executes a test set. Results are shown in the report of the calling test.</p>

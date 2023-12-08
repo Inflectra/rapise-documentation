@@ -4398,6 +4398,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#base64decode" class="md-nav__link">
+    Base64Decode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base64encode" class="md-nav__link">
+    Base64Encode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#charat" class="md-nav__link">
     CharAt
   </a>
@@ -4449,6 +4463,13 @@
           <li class="md-nav__item">
   <a href="#format" class="md-nav__link">
     Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incrementdate" class="md-nav__link">
+    IncrementDate
   </a>
   
 </li>
@@ -7981,6 +8002,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../SWTObject/" class="md-nav__link">
+        SWTObject
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SWTTree/" class="md-nav__link">
         SWTTree
       </a>
@@ -11322,6 +11355,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#base64decode" class="md-nav__link">
+    Base64Decode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base64encode" class="md-nav__link">
+    Base64Encode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#charat" class="md-nav__link">
     CharAt
   </a>
@@ -11373,6 +11420,13 @@
           <li class="md-nav__item">
   <a href="#format" class="md-nav__link">
     Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incrementdate" class="md-nav__link">
+    IncrementDate
   </a>
   
 </li>
@@ -11551,6 +11605,14 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#base64decode">Base64Decode</a></td>
+<td>Decodes base64 string.</td>
+</tr>
+<tr>
+<td><a href="#base64encode">Base64Encode</a></td>
+<td>Converts string to base64 format.</td>
+</tr>
+<tr>
 <td><a href="#charat">CharAt</a></td>
 <td>Returns a new string consisting of the single UTF-16 code unit located at the specified <code>index</code> into the <code>str</code>.</td>
 </tr>
@@ -11581,6 +11643,10 @@
 <tr>
 <td><a href="#format">Format</a></td>
 <td>Format given <code>formatStr</code> template string by expanding properties of <code>nameValueJsonObj</code> as {param1}, {param2} etc template params.</td>
+</tr>
+<tr>
+<td><a href="#incrementdate">IncrementDate</a></td>
+<td>Increments a date/time string with a given offset.</td>
 </tr>
 <tr>
 <td><a href="#join">Join</a></td>
@@ -11669,6 +11735,52 @@
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
+<p><a name="Base64Decode"></a>    </p>
+<h4 id="base64decode">Base64Decode<a class="headerlink" href="#base64decode" title="Permanent link">&para;</a></h4>
+<p>Decodes base64 string. Requires Rapise 8.1+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Base64Decode</span><span class="p">(</span><span class="nx">base64EncodedData</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>base64EncodedData</td>
+<td>string</td>
+<td>Base64 encoded string.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.text.base64decode"></a></p>
+<p><a name="Base64Encode"></a>    </p>
+<h4 id="base64encode">Base64Encode<a class="headerlink" href="#base64encode" title="Permanent link">&para;</a></h4>
+<p>Converts string to base64 format. Requires Rapise 8.1+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Base64Encode</span><span class="p">(</span><span class="nx">plainText</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plainText</td>
+<td>string</td>
+<td>Input string to encode.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.text.base64encode"></a></p>
 <p><a name="CharAt"></a>    </p>
 <h4 id="charat">CharAt<a class="headerlink" href="#charat" title="Permanent link">&para;</a></h4>
 <p>Returns a new string consisting of the single UTF-16 code unit located at the specified <code>index</code> into the <code>str</code>.</p>
@@ -11915,6 +12027,65 @@
 <p><strong>Returns:</strong></p>
 <p>string: Formatted string</p>
 <p><a name="see.also.text.format"></a></p>
+<p><a name="IncrementDate"></a>    </p>
+<h4 id="incrementdate">IncrementDate<a class="headerlink" href="#incrementdate" title="Permanent link">&para;</a></h4>
+<p>Increments a date/time string with a given offset. Requires Rapise 8.1+.
+1. Parses date using given format specifier.
+    Formatting is described here: <a href="https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.85).aspx</a>
+    Example: yyyy-MM-dd HH:mm
+2. Adds/Subtracts specified number of years, months, days, hours, minutes.
+    The number may be negative or positive, i.e. months=2 adds 2 months, months=-3 goes 3 months back, months=0 leaves months intact.
+3. Formats the date back and returns.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">IncrementDate</span><span class="p">(</span><span class="nx">dstr</span><span class="p">,</span><span class="w"> </span><span class="nx">fmt</span><span class="p">,</span><span class="w"> </span><span class="nx">years</span><span class="p">,</span><span class="w"> </span><span class="nx">months</span><span class="p">,</span><span class="w"> </span><span class="nx">days</span><span class="p">,</span><span class="w"> </span><span class="nx">hours</span><span class="p">,</span><span class="w"> </span><span class="nx">minutes</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dstr</td>
+<td>string</td>
+<td>Date/time string. If not set then current date/time is used.</td>
+</tr>
+<tr>
+<td>fmt</td>
+<td>string</td>
+<td>Date/time format.</td>
+</tr>
+<tr>
+<td>years</td>
+<td>number</td>
+<td>Year increment/decrement.</td>
+</tr>
+<tr>
+<td>months</td>
+<td>number</td>
+<td>Month increment/decrement.</td>
+</tr>
+<tr>
+<td>days</td>
+<td>number</td>
+<td>Day increment/decrement.</td>
+</tr>
+<tr>
+<td>hours</td>
+<td>number</td>
+<td>Hour increment/decrement.</td>
+</tr>
+<tr>
+<td>minutes</td>
+<td>number</td>
+<td>Minute increment/decrement.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.text.incrementdate"></a></p>
 <p><a name="Join"></a>    </p>
 <h4 id="join">Join<a class="headerlink" href="#join" title="Permanent link">&para;</a></h4>
 <p>Concatenate all of the elements in <code>arr</code> array (or an array-like object), separated by commas or a specified <code>separator</code> string. If the array has only one item, then that item will be returned without using the separator.</p>

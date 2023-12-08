@@ -5009,6 +5009,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dofindbylocation" class="md-nav__link">
+    DoFindByLocation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dofindbytext" class="md-nav__link">
     DoFindByText
   </a>
@@ -7944,6 +7951,18 @@
     <li class="md-nav__item">
       <a href="../SWTList/" class="md-nav__link">
         SWTList
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SWTObject/" class="md-nav__link">
+        SWTObject
       </a>
     </li>
   
@@ -11434,6 +11453,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dofindbylocation" class="md-nav__link">
+    DoFindByLocation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dofindbytext" class="md-nav__link">
     DoFindByText
   </a>
@@ -11606,6 +11632,10 @@
 <tr>
 <td><a href="#dodumpwidget">DoDumpWidget</a></td>
 <td>Dumps Spy data for the object.</td>
+</tr>
+<tr>
+<td><a href="#dofindbylocation">DoFindByLocation</a></td>
+<td>Finds nested element by its location string.</td>
 </tr>
 <tr>
 <td><a href="#dofindbytext">DoFindByText</a></td>
@@ -11806,6 +11836,31 @@
 <p><strong>Returns:</strong></p>
 <p>string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write succeeded, 'false' - otherwise.</p>
 <p><a name="see.also.uiaobject.dodumpwidget"></a></p>
+<p><a name="DoFindByLocation"></a>    </p>
+<h4 id="dofindbylocation">DoFindByLocation<a class="headerlink" href="#dofindbylocation" title="Permanent link">&para;</a></h4>
+<p>Finds nested element by its location string. Supports /Id, .. (up) and <em>(any), i.e. ../</em>[3]/Button[1] - go to parent, then 4<sup>th</sup> child, then find 2<sup>nd</sup> button. Requires Rapise 8.1+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoFindByLocation</span><span class="p">(</span><span class="nx">strLocation</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strLocation</td>
+<td>string</td>
+<td>Relative location of element.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><a href="./">UIAObject</a>: UIAObject if found, null otherwise</p>
+<p><a name="see.also.uiaobject.dofindbylocation"></a></p>
 <p><a name="DoFindByText"></a>    </p>
 <h4 id="dofindbytext">DoFindByText<a class="headerlink" href="#dofindbytext" title="Permanent link">&para;</a></h4>
 <p>Find nested element by its text (Value and Name of each element are compared with specified text or regular expression).</p>

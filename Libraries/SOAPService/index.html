@@ -7732,6 +7732,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../SWTObject/" class="md-nav__link">
+        SWTObject
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SWTTree/" class="md-nav__link">
         SWTTree
       </a>
@@ -9203,6 +9215,34 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#proxyhost" class="md-nav__link">
+    ProxyHost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyport" class="md-nav__link">
+    ProxyPort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxypwd" class="md-nav__link">
+    ProxyPwd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyuser" class="md-nav__link">
+    ProxyUser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#responsebodyobject" class="md-nav__link">
     ResponseBodyObject
   </a>
@@ -9274,6 +9314,13 @@
           <li class="md-nav__item">
   <a href="#doremoverequestheader" class="md-nav__link">
     DoRemoveRequestHeader
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dosetproxy" class="md-nav__link">
+    DoSetProxy
   </a>
   
 </li>
@@ -11253,6 +11300,34 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#proxyhost" class="md-nav__link">
+    ProxyHost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyport" class="md-nav__link">
+    ProxyPort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxypwd" class="md-nav__link">
+    ProxyPwd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxyuser" class="md-nav__link">
+    ProxyUser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#responsebodyobject" class="md-nav__link">
     ResponseBodyObject
   </a>
@@ -11329,6 +11404,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dosetproxy" class="md-nav__link">
+    DoSetProxy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doverify" class="md-nav__link">
     DoVerify
   </a>
@@ -11380,6 +11462,30 @@
 <td>The name of the request operation</td>
 <td>GetName</td>
 <td></td>
+</tr>
+<tr>
+<td><a href="#proxyhost">ProxyHost</a></td>
+<td>Proxy host name.</td>
+<td>GetProxyHost</td>
+<td>SetProxyHost</td>
+</tr>
+<tr>
+<td><a href="#proxyport">ProxyPort</a></td>
+<td>Proxy port number.</td>
+<td>GetProxyPort</td>
+<td>SetProxyPort</td>
+</tr>
+<tr>
+<td><a href="#proxypwd">ProxyPwd</a></td>
+<td>Proxy password.</td>
+<td>GetProxyPwd</td>
+<td>SetProxyPwd</td>
+</tr>
+<tr>
+<td><a href="#proxyuser">ProxyUser</a></td>
+<td>Proxy user name.</td>
+<td>GetProxyUser</td>
+<td>SetProxyUser</td>
 </tr>
 <tr>
 <td><a href="#responsebodyobject">ResponseBodyObject</a></td>
@@ -11441,6 +11547,10 @@
 <td>Remove one pre-defined request header by name.</td>
 </tr>
 <tr>
+<td><a href="#dosetproxy">DoSetProxy</a></td>
+<td>Sets proxy for this request.</td>
+</tr>
+<tr>
 <td><a href="#doverify">DoVerify</a></td>
 <td>Checks that a given part of response equals the expected value.</td>
 </tr>
@@ -11465,6 +11575,26 @@ Sample code:</p>
 <p>The name of the request operation</p>
 <p>Type: string</p>
 <p>Accessors: GetName</p>
+<p><a name="ProxyHost"></a></p>
+<h4 id="proxyhost">ProxyHost<a class="headerlink" href="#proxyhost" title="Permanent link">&para;</a></h4>
+<p>Proxy host name. Requires Rapise 8.1+.</p>
+<p>Type: string</p>
+<p>Accessors: GetProxyHost, SetProxyHost</p>
+<p><a name="ProxyPort"></a></p>
+<h4 id="proxyport">ProxyPort<a class="headerlink" href="#proxyport" title="Permanent link">&para;</a></h4>
+<p>Proxy port number. Requires Rapise 8.1+.</p>
+<p>Type: string</p>
+<p>Accessors: GetProxyPort, SetProxyPort</p>
+<p><a name="ProxyPwd"></a></p>
+<h4 id="proxypwd">ProxyPwd<a class="headerlink" href="#proxypwd" title="Permanent link">&para;</a></h4>
+<p>Proxy password. Requires Rapise 8.1+.</p>
+<p>Type: string</p>
+<p>Accessors: GetProxyPwd, SetProxyPwd</p>
+<p><a name="ProxyUser"></a></p>
+<h4 id="proxyuser">ProxyUser<a class="headerlink" href="#proxyuser" title="Permanent link">&para;</a></h4>
+<p>Proxy user name. Requires Rapise 8.1+.</p>
+<p>Type: string</p>
+<p>Accessors: GetProxyUser, SetProxyUser</p>
 <p><a name="ResponseBodyObject"></a></p>
 <h4 id="responsebodyobject">ResponseBodyObject<a class="headerlink" href="#responsebodyobject" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP response deserialized from SOAP into a JavaScript object.</p>
@@ -11639,6 +11769,44 @@ Sample code:</p>
 </tbody>
 </table>
 <p><a name="see.also.soapservice.doremoverequestheader"></a></p>
+<p><a name="DoSetProxy"></a>    </p>
+<h4 id="dosetproxy">DoSetProxy<a class="headerlink" href="#dosetproxy" title="Permanent link">&para;</a></h4>
+<p>Sets proxy for this request. Requires Rapise 8.1+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">DoSetProxy</span><span class="p">(</span><span class="nx">host</span><span class="p">,</span><span class="w"> </span><span class="nx">port</span><span class="p">,</span><span class="w"> </span><span class="nx">user</span><span class="p">,</span><span class="w"> </span><span class="nx">pwd</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>string</td>
+<td>Proxy host name or IP address.</td>
+</tr>
+<tr>
+<td>port</td>
+<td>string</td>
+<td>Proxy port.</td>
+</tr>
+<tr>
+<td>user</td>
+<td>string</td>
+<td>Proxy user name.<br>Optional.</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>string</td>
+<td>Proxy password.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.soapservice.dosetproxy"></a></p>
 <p><a name="DoVerify"></a>    </p>
 <h4 id="doverify">DoVerify<a class="headerlink" href="#doverify" title="Permanent link">&para;</a></h4>
 <p>Checks that a given part of response equals the expected value.</p>

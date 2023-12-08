@@ -4331,6 +4331,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#checkobjectactive" class="md-nav__link">
+    CheckObjectActive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#checkobjectenabled" class="md-nav__link">
     CheckObjectEnabled
   </a>
@@ -8284,6 +8291,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../SWTObject/" class="md-nav__link">
+        SWTObject
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SWTTree/" class="md-nav__link">
         SWTTree
       </a>
@@ -8736,6 +8755,13 @@
           <li class="md-nav__item">
   <a href="#back" class="md-nav__link">
     Back
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkobjectactive" class="md-nav__link">
+    CheckObjectActive
   </a>
   
 </li>
@@ -12252,6 +12278,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#checkobjectactive" class="md-nav__link">
+    CheckObjectActive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#checkobjectenabled" class="md-nav__link">
     CheckObjectEnabled
   </a>
@@ -12758,6 +12791,10 @@
 <td>Goes back to the previous page in the browser history.</td>
 </tr>
 <tr>
+<td><a href="#checkobjectactive">CheckObjectActive</a></td>
+<td>Checks if object is active by its id or XPath.</td>
+</tr>
+<tr>
 <td><a href="#checkobjectenabled">CheckObjectEnabled</a></td>
 <td>Checks if object is enabled by its id or XPath.</td>
 </tr>
@@ -13046,6 +13083,31 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <div class="highlight"><pre><span></span><code><span class="nx">Back</span><span class="p">()</span><span class="w"> </span>
 </code></pre></div>
 <p><a name="see.also.navigator.back"></a></p>
+<p><a name="CheckObjectActive"></a>    </p>
+<h4 id="checkobjectactive">CheckObjectActive<a class="headerlink" href="#checkobjectactive" title="Permanent link">&para;</a></h4>
+<p>Checks if object is active by its id or XPath.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">CheckObjectActive</span><span class="p">(</span><span class="nx">xpathOrObjId</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xpathOrObjId</td>
+<td>objectId</td>
+<td>XPath or ID. XPath is detected by leading "." or "/".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p><code>true</code> if object is active, <code>false</code> otherwise.</p>
+<p><a name="see.also.navigator.checkobjectactive"></a></p>
 <p><a name="CheckObjectEnabled"></a>    </p>
 <h4 id="checkobjectenabled">CheckObjectEnabled<a class="headerlink" href="#checkobjectenabled" title="Permanent link">&para;</a></h4>
 <p>Checks if object is enabled by its id or XPath.</p>
