@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_0/" class="md-tabs__link">
+      <a href="../../New/8_1/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4106,6 +4106,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#doruntest" class="md-nav__link">
+    DoRunTest
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exit" class="md-nav__link">
     Exit
   </a>
@@ -4614,6 +4621,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doruntest" class="md-nav__link">
+    DoRunTest
+  </a>
   
 </li>
       
@@ -11158,6 +11172,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_1/" class="md-nav__link">
+        Release Notes for 8.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_0/" class="md-nav__link">
         Release Notes for 8.0
       </a>
@@ -11388,6 +11414,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#doruntest" class="md-nav__link">
+    DoRunTest
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exit" class="md-nav__link">
     Exit
   </a>
@@ -11505,6 +11538,14 @@
 <li><a href="https://youtu.be/L8xMZureYtI">Rapise with Selenium Grid - Parallel Test Execution</a> (video)</li>
 <li><a href="https://youtu.be/5W3KyVH83wc">Rapise with Selenium Grid - Nested Parallel Test Execution</a> (video)</li>
 </ul>
+<h2 id="doruntest">DoRunTest<a class="headerlink" href="#doruntest" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nx">DoRunTest</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">)</span>
+</code></pre></div>
+<p>Executes specified test using <a href="../Global/#DoRunTest">Global.DoRunTest</a> but passing any extra parameters as 'params' object to invoked test. Requires Rapise 8.1+.</p>
+<ul>
+<li><code>sstestPath</code>: Path to test</li>
+<li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a>        </li>
+</ul>
 <h2 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">Exit</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="cm">/**boolean*/</span><span class="w"> </span><span class="nx">isError</span><span class="p">)</span>
 </code></pre></div>
@@ -11526,7 +11567,7 @@
 </ul>
 <p>Example. Suppose we have the following definitions of dropdowns:</p>
 <p><img alt="States Dropdown" src="../../RVL/img/RVL_GetDropdownValue_states.png" /></p>
-<p>Then the call</p>
+<p>Then the call </p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">stateCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">RVL</span><span class="p">.</span><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="nx">stateName</span><span class="p">,</span>
 <span class="w">                                     </span><span class="s2">&quot;Functions.SetState.stateName&quot;</span><span class="p">,</span>
 <span class="w">                                     </span><span class="s2">&quot;stateCode&quot;</span><span class="p">)</span>

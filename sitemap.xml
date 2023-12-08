@@ -3381,6 +3381,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rapisedoc.inflectra.com/New/8_1/</loc>
+         <lastmod>2023-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rapisedoc.inflectra.com/New/Roadmap/</loc>
          <lastmod>2023-12-08</lastmod>
          <changefreq>daily</changefreq>
