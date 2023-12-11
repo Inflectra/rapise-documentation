@@ -10787,6 +10787,53 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#chrome-for-testing" class="md-nav__link">
+    Chrome for Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Chrome for Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chrome-for-testing-dialog" class="md-nav__link">
+    Chrome for Testing Dialog
+  </a>
+  
+    <nav class="md-nav" aria-label="Chrome for Testing Dialog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    Filters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binaries-location" class="md-nav__link">
+    Binaries Location
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updating-webdriver-dlls-in-rapise" class="md-nav__link">
     Updating WebDriver DLLs in Rapise
   </a>
@@ -11309,6 +11356,53 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#chrome-for-testing" class="md-nav__link">
+    Chrome for Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Chrome for Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chrome-for-testing-dialog" class="md-nav__link">
+    Chrome for Testing Dialog
+  </a>
+  
+    <nav class="md-nav" aria-label="Chrome for Testing Dialog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    Filters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binaries-location" class="md-nav__link">
+    Binaries Location
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updating-webdriver-dlls-in-rapise" class="md-nav__link">
     Updating WebDriver DLLs in Rapise
   </a>
@@ -11434,6 +11528,30 @@
 </ul>
 <p>The file inside the zip archive is called <strong>IEDriverServer.exe</strong> and you need to copy it into the <strong>C:\Program Files
 (x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
+<h2 id="chrome-for-testing">Chrome for Testing<a class="headerlink" href="#chrome-for-testing" title="Permanent link">&para;</a></h2>
+<p>In 2023 Google <a href="https://developer.chrome.com/blog/chrome-for-testing">introduced</a> <code>Chrome for Testing</code> - a new Chrome flavor that specifically targets web app testing and automation use cases. It addresses <code>auto-update: great for users, painful for developers</code> problem. In Rapise we implemented an easy way of managing <code>Chrome for Testing</code> binaries. It allows downloading Chrome binaries as well as automatic creation of <a href="../selenium_settings_dialog/#selenium-profiles">browser profiles</a>.</p>
+<h3 id="chrome-for-testing-dialog">Chrome for Testing Dialog<a class="headerlink" href="#chrome-for-testing-dialog" title="Permanent link">&para;</a></h3>
+<p>To open <code>Chrome for Testing</code> dialog use main menu <code>Tools &gt; Chrome for Testing</code>. It will show the list of available Chrome versions. </p>
+<p><img alt="Chrome for Testing Dialog" src="../img/chrome_for_testing_dialog.png" /></p>
+<p>The list is taken from</p>
+<div class="highlight"><pre><span></span><code>https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+</code></pre></div>
+<h4 id="filters">Filters<a class="headerlink" href="#filters" title="Permanent link">&para;</a></h4>
+<p>You may filter the list, use search tokens separated by space and Rapise will do search in text of <strong>Version</strong> and <strong>Status</strong> columns. Space serves as an AND logical operator. Let's see a few filter examples:</p>
+<ul>
+<li><code>available</code> - displays all downloaded Chrome versions,</li>
+<li><code>121 win64</code> - finds all 64-bit versions of Chrome with a version number that contains 121.</li>
+</ul>
+<h4 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>When a <code>Not loaded</code> version is selected use <code>Download</code> button to download the binaries and create a profile. </li>
+<li>When an <code>Available</code> version is selected the button name changes to <code>Create Profile</code>, use it to create a profile referencing the selected Chrome version.</li>
+</ul>
+<p><img alt="Chrome for Testing Profile" src="../img/chrome_for_testing_profile.png" /></p>
+<h4 id="binaries-location">Binaries Location<a class="headerlink" href="#binaries-location" title="Permanent link">&para;</a></h4>
+<p>Chrome binaries are downloaded into </p>
+<div class="highlight"><pre><span></span><code>c:\ProgramData\Inflectra\Rapise\SeleniumChrome
+</code></pre></div>
 <h2 id="updating-webdriver-dlls-in-rapise">Updating WebDriver DLLs in Rapise<a class="headerlink" href="#updating-webdriver-dlls-in-rapise" title="Permanent link">&para;</a></h2>
 <p>If the version of WebDriver DLLs shipped with Rapise is not compatible with your browser you may update the corresponding DLLs. Just go to the main Selenium website: <a href="http://www.seleniumhq.org/download/">http://www.seleniumhq.org/download/</a> and then download the <strong>C# WebDriver Bindings</strong>:</p>
 <p><img alt="clip0004" src="../img/setting_up_selenium3.png" /></p>
