@@ -38,6 +38,16 @@ Set **SplashScreen** to **False** to prevent the splash screen from appearing.
     * `true`: An object added to the Object Repository for each request. Then it is initialized using `var <request_object_id> = SeS(<request_object_id>)`.
     * `false`: Don't add anything to the object tree. Each request is initialized as `var <request_object_id> = /**RESTRequest*/Session.GetRESTRequest('<definition>.rest', '<request_id>')`. This approach makes it easier to generate re-usable functions doing REST calls without need to load objects. See [Session.GetRESTRequest](../Libraries/Session.md#getrestrequest).
 
+#### API Proxy Settings
+
+* **Proxy Enabled**: Activates proxy settings listed below. By default it is `false`.
+* **Proxy Host**: Host name or IP address of a proxy server.
+* **Proxy Port**: Proxy port number.
+* **Proxy User Name**: Name of a user to log into the proxy server.
+* **Proxy User Password**: Password of a user to log into the proxy server.
+
+If no proxy is specified then Rapise uses OS settings. There is also a way to set proxy on [session](../Libraries/Session.md#setproxy) or [REST](../Libraries/RESTService.md#dosetproxy) / [SOAP](../Libraries/SOAPService.md#dosetproxy) request level.
+
 ### Debugger
 
 ![Debugger Options](./img/options_dialog_debugger_node.png)

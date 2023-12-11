@@ -436,7 +436,7 @@ Action menu for a test set allows to
 8. `Open in Spira` - open current item in a browser window.
 
 !!! note
-	For execution of a test set on a selected automation host (#2,#3) Rapise will use a special test set with the name of the automation host.
+	For execution of a test set on a selected automation host (#2,#3) Rapise will use a special test set with the name of the automation host. Since Rapise 8.1 there is a checkbox to allow execution of the original test set.
 
 #### Create New Test Set
 

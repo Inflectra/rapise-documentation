@@ -130,6 +130,44 @@ Download the **IEDriverServer\_XXXX\_X.X.X.zip** to your local PC:
 The file inside the zip archive is called **IEDriverServer.exe** and you need to copy it into the **C:\\Program Files
 (x86)\\Inflectra\\Rapise\\Bin** folder (or wherever you installed Rapise).
 
+## Chrome for Testing
+
+In 2023 Google [introduced](https://developer.chrome.com/blog/chrome-for-testing) `Chrome for Testing` - a new Chrome flavor that specifically targets web app testing and automation use cases. It addresses `auto-update: great for users, painful for developers` problem. In Rapise we implemented an easy way of managing `Chrome for Testing` binaries. It allows downloading Chrome binaries as well as automatic creation of [browser profiles](selenium_settings_dialog.md#selenium-profiles).
+
+### Chrome for Testing Dialog
+
+To open `Chrome for Testing` dialog use main menu `Tools > Chrome for Testing`. It will show the list of available Chrome versions. 
+
+![Chrome for Testing Dialog](./img/chrome_for_testing_dialog.png)
+
+The list is taken from
+
+```
+https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+```
+
+#### Filters
+
+You may filter the list, use search tokens separated by space and Rapise will do search in text of **Version** and **Status** columns. Space serves as an AND logical operator. Let's see a few filter examples:
+
+- `available` - displays all downloaded Chrome versions,
+- `121 win64` - finds all 64-bit versions of Chrome with a version number that contains 121.
+
+#### Actions
+
+- When a `Not loaded` version is selected use `Download` button to download the binaries and create a profile. 
+- When an `Available` version is selected the button name changes to `Create Profile`, use it to create a profile referencing the selected Chrome version.
+
+![Chrome for Testing Profile](./img/chrome_for_testing_profile.png)
+
+#### Binaries Location
+
+Chrome binaries are downloaded into 
+
+```
+c:\ProgramData\Inflectra\Rapise\SeleniumChrome
+```
+
 ## Updating WebDriver DLLs in Rapise
 
 If the version of WebDriver DLLs shipped with Rapise is not compatible with your browser you may update the corresponding DLLs. Just go to the main Selenium website: [http://www.seleniumhq.org/download/](http://www.seleniumhq.org/download/) and then download the **C# WebDriver Bindings**:

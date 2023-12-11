@@ -213,11 +213,11 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 
 *Default*:
 
-![Tools](./img/menu_tools.png)
+![Tools](./img/menu_tools.png){width="160px"} 
 
 *Manual*:
 
-![Manual](./img/menu_tools_manual.png)
+![Manual](./img/menu_tools_manual.png){width="160px"}
 
 * **Spy** - dropdown to select active [Spy](ses_spy_dialog.md). You use the Spy to look at the running application and find specific objects that you want to perform an [operation](actions.md) or [verification](checkpoints.md) on.
 * **Debugger** - toggles [debugger](internal_debugger.md). 
@@ -226,6 +226,7 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 * **Npm Console** - show an `npm console` for the current testing [framework](../Intro/framework.md). This way you may quickly install new packages or initialize using existing `package.json`.
 * **Web Services** - allows you to add a new [web service](web_service_testing.md) definition to your Rapise test. Clicking on this displays the [Add Web Service](dialog_add_web_service.md) dialog box.
 * **Object Manager** - open the [Object Manager](object_manager.md) add-in; this add-in is used to copy recorded objects between test scripts.
+* **Chrome for Testing** - open [Chrome for Testing dialog](setting_up_selenium.md#chrome-for-testing-dialog).
 * **RPA Monitor** - open [RPA Monitor](/Manuals/Rpa/).
 * **Rapise Launcher** - starts [Rapise Launcher](/Guide/spiratest_integration/#using-rapiselauncher).
 

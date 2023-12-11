@@ -10,6 +10,13 @@ To display and edit javascript files.  The editor supports [Syntax Highlighting
 
 Use the [Test Files View](test_files_dialog.md) to open a javascript file.  The javascript file will be opened in a **Source Editor**, in the [Content View](content_view.md).  The [Edit Popup](menu_and_toolbars.md) of the Main Menu will also be populated with text editor-specific options.
 
+## Code Formatting
+
+Since Rapise 8.1 it is possible to automatically format a JavaScript document:
+
+1. Make the document active.
+2. Use menu `Edit > Format Document`.
+
 ## OnTextSaved.cmd
 
 This feature enables post-processing of the saved text files. This may be achieved by defining a file `OnTextSaved.cmd`.
