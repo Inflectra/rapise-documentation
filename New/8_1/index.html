@@ -11239,7 +11239,7 @@
 <li>
 <p>Add support for connecting with Web Spy to WEBVIEWs on Mobile targets [IN:8571]</p>
 <div class="admonition info">
-<p>When mobile testing session is in propgress launch Web Spy to connect to a WEBVIEW displayed on a mobile device.</p>
+<p>When mobile testing session is in progress launch Web Spy to connect to a WEBVIEW displayed on a mobile device.</p>
 </div>
 </li>
 <li>
@@ -11249,7 +11249,15 @@
 </ul>
 <h3 id="rvl-enhancements-improvements">RVL Enhancements &amp; Improvements<a class="headerlink" href="#rvl-enhancements-improvements" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Drag&amp;Drop sheet into RVL should generate RVL.DoPlaySheet for local sheets [IN:8874]</li>
+<li>
+<p>Question mark (?) in Flow column of RVL [IN:8080]</p>
+<div class="admonition info">
+<p>Applicable to <code>Object.DoAction</code> type of steps in RVL. If an object is not found, don't do the action and do not report an error. Use to interact with objects that may not appear during playback (e.g. Accept Cookies button).</p>
+</div>
+</li>
+<li>
+<p>Drag&amp;Drop sheet into RVL should generate RVL.DoPlaySheet for local sheets [IN:8874]</p>
+</li>
 <li>Double click on boolean action param in RVL should negate current value  [IN:8956]</li>
 </ul>
 <h3 id="new-object-api">New Object API<a class="headerlink" href="#new-object-api" title="Permanent link">&para;</a></h3>
@@ -11267,13 +11275,25 @@
 </ul>
 <h3 id="improvements">Improvements<a class="headerlink" href="#improvements" title="Permanent link">&para;</a></h3>
 <ul>
+<li>In Debugger disable Continue, Step In, Step Out, Step Over buttons when we are not paused [IN:7505]</li>
 <li>UIAutomation Spy, add popup menu item to call Default Action [IN:7663]</li>
 <li>Browserstack support, allow setting username in a profile and access key in an external file [IN:7939]</li>
 <li>Upgrade JavaScript parser from ES2015 to ES2020 [IN:8051]</li>
 <li>Update Object Manager Icons [IN:8101]</li>
+<li>In Mobile and Web Spy rename top menu Spy to Spy Menu [IN:8117]</li>
+<li>Ignore tag in the Execution monitor (show colored/formatted messages) [IN:8223]</li>
 <li>Navigator.DoScreenshot should add screenshots to the Screen Flow area and allow labels [IN:8240]</li>
 <li>On test set run automatically create an automation host for a local machine if missing in the Spira project [IN:8305]</li>
-<li>Dashboard, exclude test cases with <code>internal</code> tag from showing in the tree [IN:8309]</li>
+<li>F12 for DoPlayTest/DoPlaySheet/DoPlayScript [IN:8306]</li>
+<li>
+<p>Encrypt toolbar item for built-in Excel editor to encrypt passwords in data sheets [IN:8307]</p>
+<div class="admonition info">
+<p>In built-in Excel editor select a cell and click Encrypt button in the Cells group on the toolbar.</p>
+</div>
+</li>
+<li>
+<p>Dashboard, exclude test cases with <code>internal</code> tag from showing in the tree [IN:8309]</p>
+</li>
 <li>Update default mobile profiles for Android [IN:8332]</li>
 <li>AppiumDriver.FindElementByXPath and others should not throw exceptions when element is not found [IN:8335]</li>
 <li>Allow to include unlinked test cases into a Test Set in the Dashboard [IN:8406]</li>
@@ -11287,6 +11307,7 @@
 <li>Improve heuristics for detecting window name when learning/re-learning [IN:8477]</li>
 <li>Improve support for recording/learning SVG elements [IN:8494]</li>
 <li>Disable Activation menu item until we get information about the license [IN:8518]</li>
+<li>Add Verbose Level to the list of built-in framework parameters [IN:8519]</li>
 <li>UIAutomation, improve object name detection (sometimes use ID instead of Text1, Text2) [IN:8659]</li>
 <li>
 <p>Allow /../ in UIAutomation locators to select parent element [IN:8660]</p>
@@ -11309,6 +11330,9 @@
 <li>When new browser/mobile profile is created the active test must switch to it [IN:8784]</li>
 <li><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f680.svg" title=":rocket:" /> Optimize Test Case tree reload [IN:8809]</li>
 <li>Update UsingReporting sample to include HTML generation in the end [IN:8812]</li>
+<li>Allow to import files into Shared section in Framework Mode [IN:8876]</li>
+<li>It would be great to have Rename for Shared files [IN:8878]</li>
+<li>Add popup menu Reveal in Explorer for Folders [IN:8879]</li>
 <li><a href="/Guide/test_to_play_selector/#configurations">Allow choosing of an active configuration in Choose Test Case dialog</a> [IN:8886]</li>
 <li>Show shared PO objects as [Objects@POName] [IN:8893]</li>
 <li><a href="/Guide/spiratest_integration/#server-polling">Add Connection Timeout setting for Rapise Launcher</a> [IN:8897]</li>
@@ -11322,7 +11346,18 @@
 <p>Add column number limit to Spreadsheet. [IN:8972]</p>
 </li>
 <li>Rerun Failed Tests on Host must copy Release information to a host-specific Test Set [IN:8991]</li>
-<li><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a1.svg" title=":bulb:" /> Change icon for .trp file [IN:9002]</li>
+<li>
+<p>Make LastObject and LastAction from RVL available in JavaScript [IN:8993]</p>
+<div class="admonition info">
+<p>it's now possible to use these variable in callbacks, such as SeSOnReportMessage.</p>
+</div>
+</li>
+<li>
+<p><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a1.svg" title=":bulb:" /> Change icon for .trp file [IN:9002]</p>
+</li>
+<li><img alt="🪛" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1fa9b.svg" title=":screwdriver:" /> SAPUI5 table structure changed, update DomSAPTable object [IN:9064]</li>
+<li>When running multiple test cases - show the report in Hierarchical, Collapsed mode [IN:9071]</li>
+<li><code>Play All</code> and <code>Play All (Recursive)</code> for Test Case groups [IN:9094]</li>
 </ul>
 <h3 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11353,6 +11388,7 @@
 <li>Navigator.DoScreenshot is crashing if Alert/Confirmation is shown [IN:8467]</li>
 <li>Forbid Page Object names: User, Main, Objects [IN:8469]</li>
 <li>Global.DoLaunch should also attach to a process with exactly same path as provided [IN:8486]</li>
+<li>SaveAs does not copy Profiles folder [IN:8487]</li>
 <li>Recording Activity dialog, Edit action, Action dropdown is empty [IN:8488]</li>
 <li>If Do<code>Action</code> returns 0 it should not be considered as failure  [IN:8489]</li>
 <li>Self-Healing feature is broken in Framework Mode [IN:8505]</li>
@@ -11380,6 +11416,7 @@
 <li>Calling local sheet with <code>RVL.DoPlayTest</code> producing failed test report [IN:8875]</li>
 <li>Forbid creation of Test Cases and Modules with reserved names [IN:8880]</li>
 <li>Adding <code>Cross Browser</code> library to an existing desktop test produces an error [IN:8889]</li>
+<li>Dropdown for Mobile and Selenium profiles is terribly slow [IN:8920]</li>
 <li>Combobox recording in Selenium-Edge does not work [IN:8930]</li>
 <li>Offline Deactivation shows error and it's not clear what to do next [IN:8931]</li>
 <li>UIAutomation PasswordBox SetText is not properly recorded [IN:8947]</li>
@@ -11388,6 +11425,7 @@
 <li>Saving of old type repository can corrupt the repository in Spira [IN:8992]</li>
 <li>Saving JS file in a test with SOAP Service reloads SOAP panel [IN:9018]</li>
 <li>Recording of a Web combobox is catching body behind the dropdown [IN:9020]</li>
+<li>RapiseLauncher leaves test sets in <code>In Progress</code> state in case of internal errors [IN:9062]</li>
 </ul>
                 
               
