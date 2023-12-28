@@ -1,13 +1,18 @@
 pushd %~dp0
 
+rem note! don't forget to rebuild site before running this one (documents refer to images from site/ subfolder)
+
 call version.cmd
 call toc.cmd
 
-python ./tools/mkdocs2pandoc.py --width 120 -o temp.pd
+cd tools
+python mkdocsyml.py --output ../mkdocspdf.yml --filters "'UITAP'" "repo_name:" "repo_url:" "google_analytics:" "pymdownx.emoji:"
+popd
 
-pandoc -f markdown+grid_tables+table_captions --reference-doc=tools/custom-reference.docx --toc --toc-depth=3 -s temp.pd -o rapise_%VER%.docx
+python ./tools/mkdocs2pandoc.py --config-file mkdocspdf.yml --width 120 -o temp.pd
+
+pandoc --verbose -f markdown+grid_tables+table_captions --reference-doc=tools/custom-reference.docx --toc --toc-depth=3 -s temp.pd -o rapise_%VER%.docx
 
 del /f/q temp.pd
-
 
 popd

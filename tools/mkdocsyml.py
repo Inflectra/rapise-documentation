@@ -23,15 +23,26 @@ print('Saving output to: '+result_file)
 include_regex = re.compile(r"([ \t]+)#([a-z0-9]+)", re.IGNORECASE)
 
 def main():
+    skip_prefix = None
     with open(result_file, "w+", encoding='utf-8') as output:
         with open(template_file, encoding='utf-8') as input:
             for l in input:
+                
+                if skip_prefix!=None:
+                    if l.startswith(skip_prefix):
+                        continue
+                    else:
+                        skip_prefix = None
+                
                 match = include_regex.match(l)
                 if match is None:
                       if args.filters is None or not any(substring in l for substring in args.filters):
                         output.write(l)
                       else:
-                        print("Skip filtered: "+l)
+                        skip_prefix = l[:len(l) - len(l.lstrip())]
+                        if len(skip_prefix)==0:
+                            skip_prefix = None
+                        print("Skip filtered: ",l,"Prefix: ",skip_prefix)
                 else:
                     indent = match.group(1)
                     library = match.group(2)

@@ -137,7 +137,7 @@ class PandocConverter:
         lines."""
         lines = []
 
-        pages = self.flatten_pages(self.config['pages'])
+        pages = self.flatten_pages(self.config['nav'])
 
         f_exclude = mkdocs_pandoc.filters.exclude.ExcludeFilter(
                 exclude=self.exclude)
