@@ -111,6 +111,10 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 
 -----
 
+* **Format Document** [format](./source_editor.md#code-formatting) current JavaScript or JSON document.
+
+-----
+
 * **Toggle Breakpoint** (Shortcut: F9) inserts or removes a breakpoint at the current cursor position.
 * **Show All Breakpoint** Display all breakpoints in the [Warnings](./warning_view.md) window, where you can click them to go to their location. You may then click on them to open corresponding location.
 * **Remove All Breakpoint** remove all breakpoints in the current test project.

@@ -17,6 +17,10 @@ Since Rapise 8.1 it is possible to automatically format a JavaScript document:
 1. Make the document active.
 2. Use menu `Edit > Format Document`.
 
+The formatting is performed via [js-beaitify](https://beautifier.io/). The default configuration is taken from the built-in file `C:\Program Files (x86)\Inflectra\Rapise\Engine\InstrumentJS\jsbeautify.config.json`.
+
+You can apply custom formatting rules by saving a configuration into a file `jsbeautify.config.json`. To override formatting rules, you can either store jsbeautify.config.json in the root folder of your testing framework and save it together with your framework, or save it as `c:\Users\Public\Documents\Rapise\jsbeautify.config.json`. If you save it in this location, it will be applied for any formatted document (except those that have per-framework configuration).
+
 ## OnTextSaved.cmd
 
 This feature enables post-processing of the saved text files. This may be achieved by defining a file `OnTextSaved.cmd`.

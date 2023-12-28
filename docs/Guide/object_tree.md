@@ -34,18 +34,24 @@ The node represents framework [test cases](./Frameworks/frameworks.md#test-cases
 
 #### Test Cases Root Context Menu
 
-![Test Cases Root](./img/object_tree_context_testcases.png){width="232px"}
+![Test Cases Root](./img/object_tree_context_testcases.png){width="266px"}
 
 - **Create Test Case** - Add new [test case](./Frameworks/frameworks.md#test-cases) to the root.
 - **Import Test Case** - [Import Test Case](./Frameworks/frameworks.md#importing-test-cases) to the root.
+- **Play All** - Run all root test cases except those marked with `template` or `skip` tags.
+- **Play All (Recursive)** - Run all test cases except those marked with `template` or `skip` tags.
+- **Reveal in Explorer** - Open `TestCases` folder in file explorer.
 - **Reload** - Reload all test cases (may be needed if test were synchronized with remote repository).
 
 #### Test Cases Group Context Menu
 
-![Test Cases Group](./img/object_tree_context_testcasegroup.png){width="230px"}
+![Test Cases Group](./img/object_tree_context_testcasegroup.png){width="259px"}
 
 - **Create Test Case** - Add new [test case](./Frameworks/frameworks.md#test-cases) to this group.
 - **Import Test Case** - [Import Test Case](./Frameworks/frameworks.md#importing-test-cases) to this group.
+- **Play All** - Run all test cases from this folder except those marked with `template` or `skip` tags.
+- **Play All (Recursive)** - Run all test cases in this folder and its subfolders except those marked with `template` or `skip` tags.
+- **Reveal in Explorer** - Open `TestCases` folder in file explorer.
 
 #### Test Case Context Menu
 
@@ -64,10 +70,11 @@ The node represents framework [test cases](./Frameworks/frameworks.md#test-cases
 
 When you right-click with the ++shift++ key pressed, the context menu will have two additional options:
 
-![Test Case Tags](./img/object_tree_tc_tags.png){width="166px"}
+![Test Case Tags](./img/object_tree_tc_tags.png){width="247px"}
 
 - **draft**: Toggles the `draft` state of the test case. This is useful for marking a test case as incomplete.
 - **template**: Marks the test case as a template. Template test cases are not displayed in the [Spira Dashboard](spira_dashboard_2.md). It is assumed that templates will be used to create test cases using the **Clone** functionality.
+- **skip**: Ignore this test case when using **Play All** or **Play All (Recursive)**
 
 The `draft` and `template` states affect the display of the context menu:
 
@@ -87,6 +94,8 @@ Template:
 
 ![Objects](./img/object_tree_context_tc_objects.png){width="251px"}
 
+- **Collapse All** - Collapse all object windows.
+- **Expand All** - Expand all object windows.
 - **Reload** - Re-read information from this Object Repository.
 - **Object Manager** - Opens the [Object Manager](object_manager.md).
 
@@ -114,13 +123,26 @@ The node displays shared assets, including common JavaScript files (`*.js`), Obj
 
 #### Shared Node Context Menu
 
-![Shared](./img/object_tree_context_shared.png){width="235px"}
+![Shared](./img/object_tree_context_shared.png){width="266px"}
 
 - **New JavaScript File...** - create and add a `.js` file.
 - **New Spreadsheet...** - create and add a `.xlsx` file.
+- **New Text File...** - create and add a `.txt` file.
 - **New JSON File...** - create and add a `.json` file.
 - **New File...** - create and add other type of file.
+- **New Dropdowns.xlsx** - create [Dropdowns.xlsx](./Frameworks/frameworks.md#dropdownsxlsx). This item is only visible if there is no `Dropdowns.xlsx` yet.
+- **Reveal In Explorer** - open `Shared` folder in file explorer.
+- **Import File** - Import a file (usually spreadsheet or text)
 - **Reload** - Update a shared files view.
+
+#### Shared File Context Menu
+
+![Shared File](./img/object_tree_context_shared_file.png){width="244px"}
+
+- **Rename** - change the name of a file.
+- **Make a Copy** - create a duplicate shared file with identical contents.
+- **Remove from Disk** - deletes the file from Test as well as from the disk.
+- **Reveal in Explorer** - opens the file explorer and highlights this particular file.
 
 ### Modules / Page Objects Node
 
