@@ -2,7 +2,7 @@
 
 author:   Alexey Grinevich
 email:    alexey.grinevich@inflectra.com
-version:  0.0.1
+version:  1.0.1
 classroom: false
 
 import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@6e1c697/scorm/common/codingQuiz/README.md

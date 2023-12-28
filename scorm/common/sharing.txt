@@ -1,28 +1,15 @@
 Sharing your md:
 
-https://liascript.github.io/course/?<path>
+https://inflectra.github.io/liascript/course/?
 
 I.e.:
-https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md#2
+https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md#2
 
 
 
-https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/xpathQuiz/README.md
 
-https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/js_basic/README.md
-
-https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/xpath_basic/README.md
-
-https://liascript.github.io/course/?https://raw.githubusercontent.com/Inflectra/rapise-documentation/master/scorm/js_basic/README.md
+https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@ab61b167/scorm/js_basic/README.md
 
 
-https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/xpath_basic/README.md
-
-https://liascript.github.io/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/xpath_advanced/README.md#1
-
-
-https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@74bc547/scorm/js_basic/README.md
-
-
-https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@74bc547/scorm/xpath_basic/README.md#1
+https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@ab61b167/scorm/xpath_basic/README.md#1
 
