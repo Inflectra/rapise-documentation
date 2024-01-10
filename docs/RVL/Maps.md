@@ -12,11 +12,11 @@ An RVL script has at least 7 [columns](Columns.md). However the *Map* may take a
 
 Typical declaration of map looks like:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--      |:--         |:--         |:--          |:--          |:--
-*Map* |`MapType`|**MapName**|           |             |             |
-...   | ...     | ...        |            |             |             |
-*End* |         |            |            |             |             |
+| Flow  | Type      | Object      | Action | ParamName | ParamType | ParamValue |
+| ----- | --------- | ----------- | ------ | --------- | --------- | ---------- |
+| *Map* | `MapType` | **MapName** |        |           |           |            |
+| ...   | ...       | ...         |        |           |           |            |
+| *End* |           |             |        |           |           |            |
 
 Where `MapType` is either inplace: *Table*, *Rows*, *Columns*, or external: *Range* or *Database*.
 
@@ -51,25 +51,25 @@ See [Loops](Loops.md#Map) part for `Map` type of loops.
 
 A `Rows` Map is the most useful for data feeds. Each of the set of values is a row in a table that look like:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--      |:--         |:--         |:--          |:--          |:--
-*Map* | `Rows`  |***MapName***|           |             |             |
-      | **Col1**|  **Col2**  |  **Col3**  |  **Col4**   |             |
-      | val11   |  val12     |   val13    |  val14      |             |
-      | ...     |            |            |             |             |
-      | ...     |            |            |             |             |
-*End* |         |            |            |             |             |
+| Flow  | Type     | Object        | Action   | ParamName | ParamType | ParamValue |
+| ----- | -------- | ------------- | -------- | --------- | --------- | ---------- |
+| *Map* | `Rows`   | ***MapName*** |          |           |           |            |
+|       | **Col1** | **Col2**      | **Col3** | **Col4**  |           |            |
+|       | val11    | val12         | val13    | val14     |           |            |
+|       | ...      |               |          |           |           |            |
+|       | ...      |               |          |           |           |            |
+| *End* |          |               |          |           |           |            |
 
 `This` and comments are specific features of the `Rows` Map. For example, only the 2nd row of data will be executed in this case:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--      |:--         |:--         |:--          |:--          |:--
-*Map* | `Rows`  |***MapName***|           |             |             |
-      | **Col1**|  **Col2**  |  **Col3**  |  **Col4**   |             |
-      | ...     |            |            |             |             |
-***This***|***...***|            |            |             |             |
-      | ...     |            |            |             |             |
-*End* |         |            |            |             |             |
+| Flow       | Type      | Object        | Action   | ParamName | ParamType | ParamValue |
+| ---------- | --------- | ------------- | -------- | --------- | --------- | ---------- |
+| *Map*      | `Rows`    | ***MapName*** |          |           |           |            |
+|            | **Col1**  | **Col2**      | **Col3** | **Col4**  |           |            |
+|            | ...       |               |          |           |           |            |
+| ***This*** | ***...*** |               |          |           |           |            |
+|            | ...       |               |          |           |           |            |
+| *End*      |           |               |          |           |           |            |
 
 `Rows` are designed to be iterated in a [Loop](Loops.md)
 
@@ -83,13 +83,13 @@ In real example it looks like this:
 
 A `Columns` Map is a convenient way for representing data when you have many options combined in few sets. 
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--      |:--         |:--         |:--          |:--          |:--
-*Map* |`Columns`|***MapName***|           |             |             |
-      | **Row1**| ...        |            |             |             |
-      | **Row2**| ...        |            |             |             |
-      | **Row3**| ...        |            |             |             |
-*End* |         |            |            |             |             |
+| Flow  | Type      | Object        | Action | ParamName | ParamType | ParamValue |
+| ----- | --------- | ------------- | ------ | --------- | --------- | ---------- |
+| *Map* | `Columns` | ***MapName*** |        |           |           |            |
+|       | **Row1**  | ...           |        |           |           |            |
+|       | **Row2**  | ...           |        |           |           |            |
+|       | **Row3**  | ...           |        |           |           |            |
+| *End* |           |               |        |           |           |            |
 
 The same may be represented as `Rows` but would require many columns and sometimes it is harder to read. So columns is ideal for storing configuration structures:
 
@@ -101,14 +101,14 @@ When a `Columns` Map is used in the Loop, then the iteration is performed throug
 
 A Table map has both columns and rows named.
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--      |:--         |:--         |:--          |:--          |:--
-*Map* | `Table` |***MapName***|           |             |             |
-      |         | **Col1**   |  **Col2**  |  **Col3**   |  **Col4**   |
-      | **Row1**| ...        |            |             |             |
-      | **Row2**| ...        |            |             |             |
-      | **Row3**| ...        |            |             |             |
-*End* |         |            |            |             |             |
+| Flow  | Type     | Object        | Action   | ParamName | ParamType | ParamValue |
+| ----- | -------- | ------------- | -------- | --------- | --------- | ---------- |
+| *Map* | `Table`  | ***MapName*** |          |           |           |            |
+|       |          | **Col1**      | **Col2** | **Col3**  | **Col4**  |            |
+|       | **Row1** | ...           |          |           |           |            |
+|       | **Row2** | ...           |          |           |           |            |
+|       | **Row3** | ...           |          |           |           |            |
+| *End* |          |               |          |           |           |            |
 
 ![Table](./img/Maps_Table.png)
 

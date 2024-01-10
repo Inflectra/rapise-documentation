@@ -6,7 +6,6 @@
 2. Allows you to repeat a set of actions for a given number of iterations.
 3. Lets you repeat a loop body while some [Condition](Conditions.md) is satisfied.
 
-
 ### Loop Map
 
 A [Map](Maps.md) allows both reading script data from the table defined in the same script or from external data source such as spreadsheet, file or database. Once a Map is defined, the loop is the simplest way of traversing it.
@@ -26,6 +25,7 @@ The loop goes through either the map rows or through the map columns depending o
 * For `Columns` and `Table` types of Map, the iteration goes through the columns.
 
 ### Loop Variable
+
 ![Variable Loop](./img/Loops_Variable.png)
 
 | Flow | Type         | Object    | Action | ParamName | ParamType | ParamValue |
