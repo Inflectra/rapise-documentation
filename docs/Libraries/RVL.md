@@ -140,11 +140,11 @@ Set additional locator options for specified object. This is a way to modify var
 
 Example:
 
-*Flow*|*Type* |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
-:--  |:--     |:--         |:--         |:--          |:--         |:--
-     | Action | RVL     | SetLocatorOpts    |  **objectid**| **objectid** | MyButton 
-     | Param  |            |            |  **locator_param1**| **string**| **new value1**  
-     | Param  |            |            |  **locator_param2**| **string**| **new value2**  
+| Flow | Type   | Object | Action         | ParamName          | ParamType    | ParamValue     |
+| :--- | :----- | :----- | :------------- | :----------------- | :----------- | :------------- |
+|      | Action | RVL    | SetLocatorOpts | **objectid**       | **objectid** | MyButton       |
+|      | Param  |        |                | **locator_param1** | **string**   | **new value1** |
+|      | Param  |        |                | **locator_param2** | **string**   | **new value2** |
 
 All params going after `objectid` are optional and depend on specified object's locator.
 
@@ -158,12 +158,13 @@ FormatString(/**string*/fmtString, {optname:optvalue,...})
 
 Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: `My name is {name}`.
 
-*Flow*|*Type* |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
-:--  |:--     |:--         |:--         |:--          |:--         |:--
-     | Action | RVL     | FormatString    |  **fmtString**| **string** | `{first} plus {second} equals to {result}`
-     | Param  |            |            |  **first**| **string**| `one`  
-     | Param  |            |            |  **second**| **string**| `five`  
-     | Param  |            |            |  **result**| **string**| `6`
+
+| Flow | Type   | Object | Action       | ParamName     | ParamType  | ParamValue                                 |
+| :--- | :----- | :----- | :----------- | :------------ | :--------- | :----------------------------------------- |
+|      | Action | RVL    | FormatString | **fmtString** | **string** | `{first} plus {second} equals to {result}` |
+|      | Param  |        |              | **first**     | **string** | `one`                                      |
+|      | Param  |        |              | **second**    | **string** | `five`                                     |
+|      | Param  |        |              | **result**    | **string** | `6`                                        |
 
 This Action should put string value `one plus five equals to 6` into the variable LastResult.
 

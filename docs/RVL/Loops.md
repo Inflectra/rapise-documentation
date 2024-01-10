@@ -11,12 +11,12 @@
 
 A [Map](Maps.md) allows both reading script data from the table defined in the same script or from external data source such as spreadsheet, file or database. Once a Map is defined, the loop is the simplest way of traversing it.
 
-*Flow*| *Type*| *Object*   | *Action*   | *ParamName* | *ParamType*| *ParamValue*
-:--  |:--     |:--         |:--         |:--          |:--         |:--
-Loop |`Map` | *MapName*  |            |             |            |            
-     | ...    |            | ...        |  ...        | ...        | ...           
-     |        |            |            |             |            |            
-End  |        |            |            |             |            |
+| Flow | Type  | Object    | Action | ParamName | ParamType | ParamValue |
+| ---- | ----- | --------- | ------ | --------- | --------- | ---------- |
+| Loop | `Map` | *MapName* |        |           |           |            |
+|      | ...   |           | ...    | ...       | ...       | ...        |
+|      |       |           |        |           |           |            |
+| End  |       |           |        |           |           |            |
 
 Where *MapName* should be name of the map declared earlier in the same script.
 
@@ -25,16 +25,15 @@ The loop goes through either the map rows or through the map columns depending o
 * For `Rows`, `Range` or `Database` type of Map, the loop goes through rows. I.e. 1st iteration points to 1st Row, then 2nd iteration points to 2nd row etc.
 * For `Columns` and `Table` types of Map, the iteration goes through the columns.
 
-
 ### Loop Variable
 ![Variable Loop](./img/Loops_Variable.png)
 
-*Flow*| *Type*| *Object*   | *Action*   | *ParamName* | *ParamType*| *ParamValue*
-:--   |:--     |:--         |:--         |:--          |:--         |:--
-Loop  | **Variable** | *VarName*   |     |  `from`       | number     | 1
-      | Param  |            |            |  `to`         | number     | 10           
-      | ...    |            | ...        |  ...        | ...        | ...           
-End   |        |            |            |             |            |
+| Flow | Type         | Object    | Action | ParamName | ParamType | ParamValue |
+| ---- | ------------ | --------- | ------ | --------- | --------- | ---------- |
+| Loop | **Variable** | *VarName* |        | `from`    | number    | 1          |
+|      | Param        |           |        | `to`      | number    | 10         |
+|      | ...          |           | ...    | ...       | ...       | ...        |
+| End  |              |           |        |           |           |            |
 
 Where:
 
@@ -43,8 +42,6 @@ Where:
 * *from* initial value of the loop variable
 * *to* final value of the loop variable
 * *step* optional, default is 1. Loop step to increment in each iteration.
-
-
 
 ### Loop Condition
 

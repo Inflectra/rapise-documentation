@@ -8,9 +8,9 @@ Variables may be used in [Params](Params.md) to [Conditions](Conditions.md) and 
 
 This line declares a variable without any values. Its value may be assigned later:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      |**Variable**|         |            |   `MyVar1`   |             |            
+| Flow | Type         | Object | Action | ParamName | ParamType | ParamValue |
+| ---- | ------------ | ------ | ------ | --------- | --------- | ---------- |
+|      | **Variable** |        |        | `MyVar1`  |           |            |
 
 ## Local Variables
 
@@ -27,9 +27,9 @@ var globalVar = "Value";
 
 Then in the RVL you may declare `globalVar` as global and access it (read or assign values). Declaring a variable as global is simple:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      |*Variable*|           |**Global**  |`globalVar`  |             | 
+| Flow | Type       | Object | Action     | ParamName   | ParamType | ParamValue |
+| ---- | ---------- | ------ | ---------- | ----------- | --------- | ---------- |
+|      | *Variable* |        | **Global** | `globalVar` |           |            |
 
 Global variables are useful for exchanging and/or sharing data between different RVL scripts or between *RVL* and *JavaScript*.
 
@@ -47,9 +47,9 @@ This helps to make sheets using global variables to be executable standalone. I.
 
 This line declares and assigns value *5* to a variable `MyVar2`:
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      |**Variable**|         |            |   `MyVar2`   |   *number*  | *5*           
+| Flow | Type         | Object | Action | ParamName | ParamType | ParamValue |
+| ---- | ------------ | ------ | ------ | --------- | --------- | ---------- |
+|      | **Variable** |        |        | `MyVar2`  | *number*  | *5*        |
 
 If the variable is declared earlier, then assignment just changes its value. If the variable is not yet declared, then assignment is actually a declaration with assignment.
 
@@ -57,20 +57,20 @@ If the variable is declared earlier, then assignment just changes its value. If 
 
 If an action returns a value it can be assigned to a variable via `Output`.
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      | **Variable** |         |              | `OsVersion`   |     |      
-      | **Action**   | Global  | GetOsVersion |               |     |      
-      | **Output**   |         |              |               | variable | OsVersion
+| Flow | Type         | Object | Action       | ParamName   | ParamType | ParamValue |
+| ---- | ------------ | ------ | ------------ | ----------- | --------- | ---------- |
+|      | **Variable** |        |              | `OsVersion` |           |            |
+|      | **Action**   | Global | GetOsVersion |             |           |            |
+|      | **Output**   |        |              |             | variable  | OsVersion  |
 
 ### Auto Assignment
 
 There are two auto assigned variables in RVL:  `LastResult` and `LastObject`. If an action returns some value then it is assigned to `LastResult`. `LastObject` is effectively an alias to the last used object in **Object** column.
 
-*Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--   |:--     |:--          |:--         |:--          |:--          |:--
-      | **Action**   | Global  | GetOsVersion |               |     |      
-      | **Action**   | Tester  | Message      |               | variable | **LastResult**
+| Flow | Type       | Object | Action       | ParamName | ParamType | ParamValue     |
+| ---- | ---------- | ------ | ------------ | --------- | --------- | -------------- |
+|      | **Action** | Global | GetOsVersion |           |           |                |
+|      | **Action** | Tester | Message      |           | variable  | **LastResult** |
 
 This snippet prints OS version to the report.
 
@@ -78,22 +78,22 @@ This snippet prints OS version to the report.
 
 Any [Params](Params.md) value may accept a *variable*:
 
-...|*Type*| ...| *ParamName* | *ParamType*|*ParamValue*
----|----  |----|:--          |:--         | :--
-...|Param |    |  text       | *variable* | `MyVar1`           
+| Flow | Type  | Object | Action | ParamName | ParamType  | ParamValue |
+| ---- | ----- | ------ | ------ | --------- | ---------- | ---------- |
+| ...  | Param |        |        | text      | *variable* | `MyVar1`   |
 
 Any [Params](Params.md) value may accept an *expression* using variables:
 
-...|*Type*| ...| *ParamName* | *ParamType*| *ParamValue*
----|----  |----|:--          |:--         |:--
-...|Param |    |  text       |*expression*| `MyVar2 + 4`           
+| Flow | Type  | Object | Action | ParamName | ParamType    | ParamValue   |
+| ---- | ----- | ------ | ------ | --------- | ------------ | ------------ |
+| ...  | Param |        |        | text      | *expression* | `MyVar2 + 4` |
 
 Any [Action](Actions.md) may write its return value to a variable using the *Output* statement:
 
-*Flow*| *Type*| *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-:--  |:--     |:--         |:--         |:--          |:--         |:--
-     | Action | Global     | DoTrim     |  str        | string     |   text to trim              
-     | Output |            |            |             | variable   | `MyVar1`          
+| Flow | Type   | Object | Action | ParamName | ParamType | ParamValue   |
+| ---- | ------ | ------ | ------ | --------- | --------- | ------------ |
+|      | Action | Global | DoTrim | str       | string    | text to trim |
+|      | Output |        |        |           | variable  | `MyVar1`     |
 
 The Output value may then be used as a param value in actions, conditions, assertions and expressions.
 
@@ -105,24 +105,24 @@ One may use an expression to change the value of a variable. Here are several co
 
     If no param to *Increment* is specified then `1` is assumed:
 
-      *Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-      :--   |:--     |:--          |:--         |:--          |:--          |:--
-            |*Variable*|           |**Increment**  |`numVar`  |     |  
+      | Flow | Type       | Object | Action        | ParamName | ParamType | ParamValue |
+      | ---- | ---------- | ------ | ------------- | --------- | --------- | ---------- |
+      |      | *Variable* |        | **Increment** | `numVar`  |           |            |
 
       Otherwise it is any *value*:
 
-      *Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-      :--   |:--     |:--          |:--         |:--          |:--          |:--
-            |*Variable*|           |**Increment**  |`numVar`  | `number`   | *value* 
+      | Flow | Type       | Object | Action        | ParamName | ParamType | ParamValue |
+      | ---- | ---------- | ------ | ------------- | --------- | --------- | ---------- |
+      |      | *Variable* |        | **Increment** | `numVar`  | `number`  | *value*    |
 
 2. *Decrement* is the same as increment but the value is subtracted from the variable.
 
 3. *Append* adds the value as text to the specified variable. This operation is useful for constructing text messages:
 
-      *Flow*| *Type*  | *Object*   | *Action*   | *ParamName* | *ParamType* | *ParamValue*
-      :--   |:--     |:--          |:--         |:--          |:--          |:--
-            |*Variable*|           |**Append**  |`textVar`  | `string`   | Final value: 
-            |*Variable*|           |**Append**  |`textVar`  | `variable`   | `numVar` 
+      | Flow   | Type       | Object   | Action     | ParamName   | ParamType   | ParamValue   |
+      | ------ | ---------- | -------- | ---------- | ----------- | ----------- | ------------ |
+      |        | *Variable* |          | **Append** | `textVar`   | `string`    | Final value: |
+      |        | *Variable* |          | **Append** | `textVar`   | `variable`  | `numVar`     |
 
       In this example if `textVar` was empty and `numVar` had value `5` then the final value of `textVar` is the following text:
       `Final value: 5`

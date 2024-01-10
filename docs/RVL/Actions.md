@@ -2,10 +2,10 @@
 
 In RVL Action always refers to an operation performed with object.
 
-| *Flow* | *Type* | *Object* | *Action* | *ParamName* | *ParamType* | *ParamValue* |
-| ------ | ------ | -------- | -------- | ----------- | ----------- | ------------ |
-|        | Action | MyButton | DoClick  | x           | number      | 5            |
-|        | Param  |          |          | y           | number      | 7            |
+| Flow | Type   | Object   | Action  | ParamName | ParamType | ParamValue |
+| ---- | ------ | -------- | ------- | --------- | --------- | ---------- |
+|      | Action | MyButton | DoClick | x         | number    | 5          |
+|      | Param  |          |         | y         | number    | 7          |
 
 If row type is `Action` then there must be *Object* and *Action* cells defined.
 
@@ -42,9 +42,9 @@ Actions with a "?" in the `Flow` cell are considered conditional. This means tha
 
 For example, if the `AcceptCookies` object is found, it is clicked on:
 
-| *Flow* | *Type* | *Object* | *Action* | *ParamName* | *ParamType* | *ParamValue* |
-| ------ | ------ | -------- | -------- | ----------- | ----------- | ------------ |
-| ? | Action | AcceptCookies | DoClick | | | |
+| Flow | Type   | Object        | Action  | ParamName | ParamType | ParamValue |
+| ---- | ------ | ------------- | ------- | --------- | --------- | ---------- |
+| ?    | Action | AcceptCookies | DoClick |           |           |            |
 
 If the object is not found, the conditional action simply moves on without leaving any trace in the report.
 

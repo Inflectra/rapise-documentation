@@ -13,45 +13,44 @@ Condition accepts one or two [Params](Params.md).
 
 Binary condition with two *Param*s named `param1` and `param2`:
 
-| ... | *Type*    | ... | *Action*           | *ParamName* | ... |
-| --- | --------- | --- | ------------------ | ----------- | --- |
-| --  | Param     |     |                    | param1      |
-| --  | Condition |     | *param1 == param2* |             |
-| --  | Param     |     |                    | param2      |
+| ... | Type      | ... | Action             | ParamName | ... |
+| --- | --------- | --- | ------------------ | --------- | --- |
+|     | Param     |     |                    | param1    |     |
+|     | Condition |     | *param1 == param2* |           |     |
+|     | Param     |     |                    | param2    |     |
 
 Binary condition with *Action* and *Param* named `output1` and `param2`:
 
-| ... | *Type*    | *Object* | *Action*            | *ParamName* | ... |
-| --- | --------- | -------- | ------------------- | ----------- | --- |
-| --  | Action    | MyButton | GetText             |             |
-| --  | Condition |          | *output1 == param2* |             |
-| --  | Param     |          |                     | param2      |
+| ... | Type      | Object   | Action              | ParamName | ... |
+| --- | --------- | -------- | ------------------- | --------- | --- |
+|     | Action    | MyButton | GetText             |           |     |
+|     | Condition |          | *output1 == param2* |           |     |
+|     | Param     |          |                     | param2    |     |
 
 Binary condition with two *Action*s named `output1` and `output2`:
 
-| ... | *Type*    | *Object*  | *Action*             | *ParamName* | ... |
-| --- | --------- | --------- | -------------------- | ----------- | --- |
-| --  | Action    | MyButton1 | GetText              |             |
-| --  | Condition |           | *output1 != output2* |             |
-| --  | Action    | MyButton2 | GetText              |             |
-
+| ... | Type      | Object    | Action               | ParamName | ... |
+| --- | --------- | --------- | -------------------- | --------- | --- |
+|     | Action    | MyButton1 | GetText              |           |     |
+|     | Condition |           | *output1 != output2* |           |     |
+|     | Action    | MyButton2 | GetText              |           |     |
 
 Unary condition with *Param* `param1`:
 
-| ... | *Type*    | ... | *Action*         | *ParamName* | ... |
-| --- | --------- | --- | ---------------- | ----------- | --- |
-| --  | Param     |     |                  | param1      |
-| --  | Condition |     | *param1 IsFalse* |             |
+| ... | Type      | ... | Action           | ParamName | ... |
+| --- | --------- | --- | ---------------- | --------- | --- |
+|     | Param     |     |                  | param1    |     |
+|     | Condition |     | *param1 IsFalse* |           |     |
 
 Unary condition with *Action* `output1`:
 
-| ...       | *Type*   | *Object*           | *Action* | *ParamName* | ... |
-| --------- | -------- | ------------------ | -------- | ----------- | --- |
-|-| Action    | MyButton | GetEnabled       |          |
-|-| Condition |          | *output1 IsTrue* |          |
-
+| ... | Type      | Object   | Action           | ParamName | ... |
+| --- | --------- | -------- | ---------------- | --------- | --- |
+|     | Action    | MyButton | GetEnabled       |           |     |
+|     | Condition |          | *output1 IsTrue* |           |     |
 
 ## All Conditions
+
 ### Unary conditions with *Param*
 
 | *Caption*          | *Description*                                                      |
@@ -63,7 +62,6 @@ Unary condition with *Action* `output1`:
 | `param1` IsSet     | Check if `param1` is NOT null, false, 0, empty string or undefined |
 | `param1` IsNotSet  | Check if `param1` is null, 0, false, empty string or undefined     |
 
-
 ### Unary conditions with *Action*
 
 | *Caption*           | *Description*                                                       |
@@ -74,7 +72,6 @@ Unary condition with *Action* `output1`:
 | `output1` IsNotNull | Check if `output1` is NOT null                                      |
 | `output1` IsSet     | Check if `output1` is NOT null, false, 0, empty string or undefined |
 | `output1` IsNotSet  | Check if `output1` is null, 0, false, empty string or undefined     |
-
 
 ### Binary conditions with *Param*s
 
@@ -89,7 +86,6 @@ Unary condition with *Action* `output1`:
 | `param1` contains `param2`  | Check if `param1` contains `param2` as substring    |
 | CmpImage `param1`, `param2` | Compare 1st image and image represented by `param2` |
 
-
 ### Binary conditions with *Action* and *Param*
 
 | *Caption*                    | *Description*                                       |
@@ -102,7 +98,6 @@ Unary condition with *Action* `output1`:
 | `output1` < `param2`         | Check if `output1` is less than `param2`            |
 | `output1` contains `param2`  | Check if `output1` contains `param2` as substring   |
 | CmpImage `output1`, `param2` | Compare 1st image and image represented by `param2` |
-
 
 ### Binary conditions with *Action*s
 
@@ -119,26 +114,28 @@ Unary condition with *Action* `output1`:
 
 
 ## *And*, *Or* Conditions
+
 It is possible to make more complex conditions by using *And* and *Or* keyword in the *Flow* column.
 
-| *Flow*    | *Type* | ...              | *Action* | *ParamName* | *ParamType* | *ParamValue* |
-| --------- | ------ | ---------------- | -------- | ----------- | ----------- | ------------ |
-| If        | Param  |                  |          | param1      | *variable*  | `Result1`    |
-|-| Condition |        | *param1 IsFalse* |          |
-| **And**   | Param  |                  |          | param1      | *variable*  | `Result2`    |
-|-| Condition |        | *param1 IsTrue*  |          |
-| ...       | ...    |                  | ...      | ...         | ...         | ...          |
+| Flow    | Type      | Object | Action           | ParamName | ParamType  | ParamValue |
+| ------- | --------- | ------ | ---------------- | --------- | ---------- | ---------- |
+| If      | Param     |        |                  | param1    | *variable* | `Result1`  |
+|         | Condition |        | *param1 IsFalse* |           |            |            |
+| **And** | Param     |        |                  | param1    | *variable* | `Result2`  |
+|         | Condition |        | *param1 IsTrue*  |           |            |            |
+| #       | If Block  |        |                  |           |            |            |
+| End     | of If     |        |                  |           |            |            |
 
 This piece forms a condition checking that `Result1` is false AND `Result2` is true at the same time.
 
-
-| *Flow*    | *Type* | *Object*          | *Action*   | *ParamName* | *ParamType* | *ParamValue* |
-| --------- | ------ | ----------------- | ---------- | ----------- | ----------- | ------------ |
-| If        | Action | MyButton          | GetEnabled |             |             |              |
-|-| Condition |        | *output1 IsFalse* |            |
-| **Or**    | Param  |                   |            | param1      | *variable*  | `Result1`    |
-|-| Condition |        | *param1 IsTrue*   |            |
-|-| ...       | ...    |                   | ...        | ...         | ...         | ...          |
+| Flow   | Type      | Object   | Action            | ParamName | ParamType  | ParamValue |
+| ------ | --------- | -------- | ----------------- | --------- | ---------- | ---------- |
+| If     | Action    | MyButton | GetEnabled        |           |            |            |
+|        | Condition |          | *output1 IsFalse* |           |            |            |
+| **Or** | Param     |          |                   | param1    | *variable* | `Result1`  |
+|        | Condition |          | *param1 IsTrue*   |           |            |            |
+| #      | If Block  |          |                   |           |            |            |
+| End    | of If     |          |                   |           |            |            |
 
 This piece forms a condition checking that *MyButton* is Enabled OR `Result2` is true at the same time.
 
@@ -150,10 +147,11 @@ Condition is never used alone. You may find examples of conditions in chapters d
 
 All binary conditions with `param2` take 3 rows. Sometimes it is more convenient to use shorter 2 row syntax where `param2` value is specified on the same row as the condition itself:
 
-| ... | *Type*    | ... | *Action*           | *ParamName* | ... |
-| --- | --------- | --- | ------------------ | ----------- | --- |
-| --  | Param     |     |                    | param1      |
-| --  | Condition |     | *param1 == param2* | **param2**      |
+| Flow | Type      | Object | Action             | ParamName  | ParamType | ParamValue |
+| ---- | --------- | ------ | ------------------ | ---------- | --------- | ---------- |
+|      | Param     |        |                    | param1     | ...       | ...        |
+|      | Condition |        | *param1 == param2* | **param2** | ...       | ...        |
+|      |           |        |                    |            |           |            |
 
 Here is the same condition presented in 3 rows (default) and 2 rows (short) form:
 
