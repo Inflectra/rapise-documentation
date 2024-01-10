@@ -1,0 +1,10 @@
+| Functions.SetState.stateName | stateCode |
+| ---------------------------- | --------- |
+| Alabama                      | AL        |
+| Alaska                       | AK        |
+| Arizona                      | AZ        |
+| Arkansas                     | AR        |
+| California                   | CA        |
+| Colorado                     | CO        |
+| Connecticut                  | CT        |
+| Delaware                     | DE        |

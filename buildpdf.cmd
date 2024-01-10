@@ -13,6 +13,6 @@ python ./tools/mkdocs2pandoc.py --config-file mkdocspdf.yml --width 120 -o temp.
 
 pandoc --verbose -f markdown+grid_tables+table_captions --reference-doc=tools/custom-reference.docx --toc --toc-depth=3 -s temp.pd -o rapise_%VER%.docx
 
-del /f/q temp.pd
+rem del /f/q temp.pd
 
 popd

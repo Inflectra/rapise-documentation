@@ -16,6 +16,13 @@ The formula bar lets you see/edit the contents of the currently selected cell as
 
 ![spreadsheet-editor-formula](./img/spreadsheet_editor2.png)
 
+## Encrypting a Cell
+
+There might be occasions when you need your XLS files to hold sensitive information (like passwords). In such scenarios, you have the convenience of encrypting these values. Later, you can decrypt them using [Global.DoDecrypt](../Libraries/Global.md#dodecrypt) prior to using them as function parameters.
+
+![Encrypt Image](./img/spreadsheet_editor_spreadsheet-editor-encrypt.png)
+
+
 ## Spreadsheet Grid
 
 The main spreadsheet grid lets you see the cells in the spreadsheet, select a range and use the [Spreadsheet ribbon](toolbar_spreadsheet.md) to change the format:

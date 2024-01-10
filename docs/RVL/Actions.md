@@ -2,12 +2,12 @@
 
 In RVL Action always refers to an operation performed with object.
 
-*Flow*| *Type*| *Object*   | *Action*   | *ParamName* | *ParamType*| *ParamValue*
-:--  |:--     |:--         |:--         |:--          |:--         |:--
-     | Action | MyButton   | DoClick    |  x          | number     | 5           
-     | Param  |            |            |  y          | number     | 7           
+| *Flow* | *Type* | *Object* | *Action* | *ParamName* | *ParamType* | *ParamValue* |
+| ------ | ------ | -------- | -------- | ----------- | ----------- | ------------ |
+|        | Action | MyButton | DoClick  | x           | number      | 5            |
+|        | Param  |          |          | y           | number      | 7            |
 
-If row type is `Action` then there must be *Object* and *Action* cells defined. 
+If row type is `Action` then there must be *Object* and *Action* cells defined.
 
 **Note**: In this example we call an operation that would look in JavaScript as follows:
 ```javascript
@@ -36,7 +36,20 @@ Each Object has its own set of actions. You may also see them in the object tree
 
 An *Action* may have any number of parameters. See [Params](Params.md) for more info.
 
+## Conditional Actions
+
+Actions with a "?" in the `Flow` cell are considered conditional. This means that the **Action** is only executed if the object is found.
+
+For example, if the `AcceptCookies` object is found, it is clicked on:
+
+| *Flow* | *Type* | *Object* | *Action* | *ParamName* | *ParamType* | *ParamValue* |
+| ------ | ------ | -------- | -------- | ----------- | ----------- | ------------ |
+| ? | Action | AcceptCookies | DoClick | | | |
+
+If the object is not found, the conditional action simply moves on without leaving any trace in the report.
+
 ## Editing Action
+
 An Action may have both mandatory and optional params. When action is selected from the dropdown its params are displayed:
 
 ![DoLaunch parameters](./img/Actions_ActionParams.png)
@@ -53,7 +66,6 @@ You may see that all parameters are applied in this case.
 
 - ***Note:*** if you you already have have the same action and select it with ++shift++ key again, no optional params are applied. You need to clean the *Action* cell and re-select it with ++shift++ if you want to achieve the desired effect.
 
-
 ## Examples
 
 Action without parameters
@@ -64,5 +76,4 @@ Action with single parameter. In RVL each parameter takes one line with *Action*
 
 Action with many parameters:
 ![Many parameters](./img/Actions_ActionParams_Optional.png)
-
 
