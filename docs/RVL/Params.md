@@ -24,12 +24,12 @@ The last 3 columns in the RVL table are used for passing parameters:
 
 In RVL each parameter takes one row:
 
-| ... | Type  | ... | ParamName  | ParamType | ParamValue |
-| --- | ----- | --- | ---------- | --------- | ---------- |
-| ... | Param |     | text       | string    | John Smith |
-| ... | Param |     | x          | number    | 5          |
-| ... | Param |     | y          | number    | 7          |
-| ... | Param |     | forceEvent | boolean   | true       |
+| Flow | Type  | Object | Action | ParamName  | ParamType | ParamValue |
+| ---- | ----- | ------ | ------ | ---------- | --------- | ---------- |
+| ...  | Param |        |        | text       | string    | John Smith |
+| ...  | Param |        |        | x          | number    | 5          |
+| ...  | Param |        |        | y          | number    | 7          |
+| ...  | Param |        |        | forceEvent | boolean   | true       |
 
 ## Param Arrays
 
