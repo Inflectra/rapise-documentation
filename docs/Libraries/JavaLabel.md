@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,31 +29,31 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-		
+    
 

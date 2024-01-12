@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -23,8 +23,8 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-		
+    
 

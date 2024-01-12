@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,84 +38,84 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
+|  [DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemsCount"></a>
 #### ItemsCount
 
 
 Number of tabs in the panel
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemsCount
-			
-		
+      
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected tab
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedTab"></a>
 #### SelectedTab
 
 
 Text of the selected tab
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedTab
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 
 Selects the tab by name.
 
 ```javascript
-DoSelectTab(name, x, y, forceEvent) 
+SeS('SomeGWTExtTabPanel').DoSelectTab(name, x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string \| number |	Tab name to select |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
-| forceEvent | boolean |	pass 'true' to force browser event without actual mouse click.<br>Optional. |
+| name | string \| number |  Tab name to select |
+| x | number |  X-coordinate of location relative to object's left border |
+| y | number |  Y-coordinate of location relative to object's top border |
+| forceEvent | boolean |  pass 'true' to force browser event without actual mouse click.<br>Optional. |
 
 
 
@@ -128,5 +128,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.gwtexttabpanel.doselecttab"></a>
 
-	
+  
 

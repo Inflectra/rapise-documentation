@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -48,7 +48,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -57,418 +57,418 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAddSelection](#doaddselection) | Adds selection of specified option in multi-select element. |
-|	[DoClick](#doclick) | Clicks on HTML element (button, link). |
-|	[DoDblClick](#dodblclick) | Double-Clicks on HTML element (button, link). |
-|	[DoDOMChildAt](#dodomchildat) | Returns n-th child (zero-based). |
-|	[DoDOMChildrenCount](#dodomchildrencount) | Returns number of children elements for this one. |
-|	[DoDOMConvert](#dodomconvert) | Creates a clone of this object converted to a requested type. |
-|	[DoDOMFindParentWithAttribute](#dodomfindparentwithattribute) | Returns parent element (if any) with given attribute matching given string or 'regex:. |
-|	[DoDOMGetAttribute](#dodomgetattribute) | Returns specified attribute. |
-|	[DoDOMGetAttributes](#dodomgetattributes) | Returns all attributes of a node. |
-|	[DoDOMNextSibling](#dodomnextsibling) | Returns next sibling element for this one. |
-|	[DoDOMParent](#dodomparent) | Returns parent element having this element. |
-|	[DoDOMPrevSibling](#dodomprevsibling) | Return previous sibling element for this one. |
-|	[DoDOMQueryCss](#dodomquerycss) | Gets array of elements matching CSS selector on this object. |
-|	[DoDOMQueryValue](#dodomqueryvalue) | Executes an xpath query that may return a value of string, number or boolean type. |
-|	[DoDOMQueryXPath](#dodomqueryxpath) | Gets array of elements matching XPath query on this object. |
-|	[DoDOMRoot](#dodomroot) | Returns Root element having this element. |
-|	[DoEnsureVisible](#doensurevisible) | Makes sure specified element is visible on the screen. |
-|	[DoGetRect](#dogetrect) | Finds screen rectangle for this object. |
-|	[DoGetSelection](#dogetselection) | Gets selected options text of a SELECT element. |
-|	[DoMouseMove](#domousemove) | Moves mouse on HTML element with offset. |
-|	[DoSelect](#doselect) | Selects specified element in &lt;select&gt; control. |
-|	[DoSetCheck](#dosetcheck) | Sets specified state of check box. |
-|	[DoSetText](#dosettext) | Sets text for input edit or textarea. |
+|  [DoAddSelection](#doaddselection) | Adds selection of specified option in multi-select element. |
+|  [DoClick](#doclick) | Clicks on HTML element (button, link). |
+|  [DoDblClick](#dodblclick) | Double-Clicks on HTML element (button, link). |
+|  [DoDOMChildAt](#dodomchildat) | Returns n-th child (zero-based). |
+|  [DoDOMChildrenCount](#dodomchildrencount) | Returns number of children elements for this one. |
+|  [DoDOMConvert](#dodomconvert) | Creates a clone of this object converted to a requested type. |
+|  [DoDOMFindParentWithAttribute](#dodomfindparentwithattribute) | Returns parent element (if any) with given attribute matching given string or 'regex:. |
+|  [DoDOMGetAttribute](#dodomgetattribute) | Returns specified attribute. |
+|  [DoDOMGetAttributes](#dodomgetattributes) | Returns all attributes of a node. |
+|  [DoDOMNextSibling](#dodomnextsibling) | Returns next sibling element for this one. |
+|  [DoDOMParent](#dodomparent) | Returns parent element having this element. |
+|  [DoDOMPrevSibling](#dodomprevsibling) | Return previous sibling element for this one. |
+|  [DoDOMQueryCss](#dodomquerycss) | Gets array of elements matching CSS selector on this object. |
+|  [DoDOMQueryValue](#dodomqueryvalue) | Executes an xpath query that may return a value of string, number or boolean type. |
+|  [DoDOMQueryXPath](#dodomqueryxpath) | Gets array of elements matching XPath query on this object. |
+|  [DoDOMRoot](#dodomroot) | Returns Root element having this element. |
+|  [DoEnsureVisible](#doensurevisible) | Makes sure specified element is visible on the screen. |
+|  [DoGetRect](#dogetrect) | Finds screen rectangle for this object. |
+|  [DoGetSelection](#dogetselection) | Gets selected options text of a SELECT element. |
+|  [DoMouseMove](#domousemove) | Moves mouse on HTML element with offset. |
+|  [DoSelect](#doselect) | Selects specified element in &lt;select&gt; control. |
+|  [DoSetCheck](#dosetcheck) | Sets specified state of check box. |
+|  [DoSetText](#dosettext) | Sets text for input edit or textarea. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Alt"></a>
 #### Alt
 
 
 Alt of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetAlt
-			
-		
+      
+    
 <a name="Checked"></a>
 #### Checked
 
 
 'Checked' state of the element.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetChecked
-			
-		
+      
+    
 <a name="Class"></a>
 #### Class
 
 
 Class of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetClass
-			
-		
+      
+    
 <a name="ClientX"></a>
 #### ClientX
 
 
 X-coordinate of the top left corner of the element relative to browser window.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetClientX
-			
-		
+      
+    
 <a name="ClientY"></a>
 #### ClientY
 
 
 Y-coordinate of the top left corner of the element relative to browser window.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetClientY
-			
-		
+      
+    
 <a name="Enabled"></a>
 #### Enabled
 
 
 'Enabled' state of the element.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetEnabled, SetEnabled
-			
-		
+      
+    
 <a name="Height"></a>
 #### Height
 
 
 Height of the element.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetHeight
-			
-		
+      
+    
 <a name="Href"></a>
 #### Href
 
 
 HREF of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetHref
-			
-		
+      
+    
 <a name="Id"></a>
 #### Id
 
 
 ID of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetId
-			
-		
+      
+    
 <a name="InnerText"></a>
 #### InnerText
 
 
 Inner text of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetInnerText
-			
-		
+      
+    
 <a name="Label"></a>
 #### Label
 
 
 Label of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetLabel
-			
-		
+      
+    
 <a name="Name"></a>
 #### Name
 
 
 Name of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetName
-			
-		
+      
+    
 <a name="NodeText"></a>
 #### NodeText
 
 
 Text of the element without children.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetNodeText
-			
-		
+      
+    
 <a name="PageTitle"></a>
 #### PageTitle
 
 
 Title of the HTML document.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetPageTitle
-			
-		
+      
+    
 <a name="PageURL"></a>
 #### PageURL
 
 
 Location URL of the HTML document.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetPageURL
-			
-		
+      
+    
 <a name="Style"></a>
 #### Style
 
 
 Style of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetStyle
-			
-		
+      
+    
 <a name="Tag"></a>
 #### Tag
 
 
 Tag of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetTag
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the element with normalized spaces.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText
-			
-		
+      
+    
 <a name="Title"></a>
 #### Title
 
 
 Title of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetTitle
-			
-		
+      
+    
 <a name="Value"></a>
 #### Value
 
 
 Value of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetValue
-			
-		
+      
+    
 <a name="Visible"></a>
 #### Visible
 
 
 Returns `true` if the element is visible on screen. Requires Rapise 6.6+
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetVisible
-			
-		
+      
+    
 <a name="X"></a>
 #### X
 
 
 X-coordinate of the top left corner of the element.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetX
-			
-		
+      
+    
 <a name="XPath"></a>
 #### XPath
 
 
 XPath of the element.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetXPath
-			
-		
+      
+    
 <a name="Y"></a>
 #### Y
 
 
 Y-coordinate of the top left corner of the element.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetY
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 
 Adds selection of specified option in multi-select element.
 
 ```javascript
-DoAddSelection(optionText) 
+SeS('SomeHTMLObject').DoAddSelection(optionText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| optionText | string |	Element to select |
+| optionText | string |  Element to select |
 
 
 
@@ -487,17 +487,17 @@ boolean: 'true' if successful, 'false' otherwise'
 Clicks on HTML element (button, link).
 
 ```javascript
-DoClick(x, y, forceEvent) 
+SeS('SomeHTMLObject').DoClick(x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| forceEvent | boolean |  Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -516,17 +516,17 @@ boolean: 'true' if successful, 'false' otherwise'
 Double-Clicks on HTML element (button, link).
 
 ```javascript
-DoDblClick(x, y, forceEvent) 
+SeS('SomeHTMLObject').DoDblClick(x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| forceEvent | boolean |  Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -545,15 +545,15 @@ boolean: 'true' if successful, 'false' otherwise'
 Returns n-th child (zero-based).
 
 ```javascript
-DoDOMChildAt(n) 
+SeS('SomeHTMLObject').DoDOMChildAt(n)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| n | number |	n Index of the child element. |
+| n | number |  n Index of the child element. |
 
 
 
@@ -572,7 +572,7 @@ DoDOMChildAt(n)
 Returns number of children elements for this one.
 
 ```javascript
-DoDOMChildrenCount() 
+SeS('SomeHTMLObject').DoDOMChildrenCount()
 ```
 
 
@@ -592,15 +592,15 @@ number: Number of children elements.
 Creates a clone of this object converted to a requested type.
 
 ```javascript
-DoDOMConvert(type) 
+SeS('SomeHTMLObject').DoDOMConvert(type)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| type | string |	Type of an object. |
+| type | string |  Type of an object. |
 
 
 
@@ -619,16 +619,16 @@ DoDOMConvert(type)
 Returns parent element (if any) with given attribute matching given string or 'regex:...' expression.
 
 ```javascript
-DoDOMFindParentWithAttribute(attrName, match) 
+SeS('SomeHTMLObject').DoDOMFindParentWithAttribute(attrName, match)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| attrName | string |	Name of an attribute. |
-| match | string |	Match string. |
+| attrName | string |  Name of an attribute. |
+| match | string |  Match string. |
 
 
 
@@ -647,15 +647,15 @@ DoDOMFindParentWithAttribute(attrName, match)
 Returns specified attribute.
 
 ```javascript
-DoDOMGetAttribute(attrName) 
+SeS('SomeHTMLObject').DoDOMGetAttribute(attrName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| attrName | string |	Name of an attribute. |
+| attrName | string |  Name of an attribute. |
 
 
 
@@ -674,7 +674,7 @@ object: Attribute value.
 Returns all attributes of a node.
 
 ```javascript
-DoDOMGetAttributes() 
+SeS('SomeHTMLObject').DoDOMGetAttributes()
 ```
 
 
@@ -694,7 +694,7 @@ array: Array of attributes.
 Returns next sibling element for this one.
 
 ```javascript
-DoDOMNextSibling() 
+SeS('SomeHTMLObject').DoDOMNextSibling()
 ```
 
 
@@ -714,7 +714,7 @@ DoDOMNextSibling()
 Returns parent element having this element.
 
 ```javascript
-DoDOMParent() 
+SeS('SomeHTMLObject').DoDOMParent()
 ```
 
 
@@ -734,7 +734,7 @@ DoDOMParent()
 Return previous sibling element for this one.
 
 ```javascript
-DoDOMPrevSibling() 
+SeS('SomeHTMLObject').DoDOMPrevSibling()
 ```
 
 
@@ -754,15 +754,15 @@ DoDOMPrevSibling()
 Gets array of elements matching CSS selector on this object.
 
 ```javascript
-DoDOMQueryCss(css) 
+SeS('SomeHTMLObject').DoDOMQueryCss(css)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| css | string |	CSS selector. |
+| css | string |  CSS selector. |
 
 
 
@@ -781,15 +781,15 @@ array: Array of matched elements.
 Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then `null` is returned. Requires Rapise 6.4+
 
 ```javascript
-DoDOMQueryValue(xpath) 
+SeS('SomeHTMLObject').DoDOMQueryValue(xpath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	Absolute or relative xpath query. e.g. `count(//div)`, `//a[1]/@href='/Home'`, `./li/text()` |
+| xpath | string |  Absolute or relative xpath query. e.g. `count(//div)`, `//a[1]/@href='/Home'`, `./li/text()` |
 
 
 
@@ -808,15 +808,15 @@ string | <br>number | <br>boolean: Result of the query or null if the query is i
 Gets array of elements matching XPath query on this object.
 
 ```javascript
-DoDOMQueryXPath(xpath) 
+SeS('SomeHTMLObject').DoDOMQueryXPath(xpath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	Xpath query. |
+| xpath | string |  Xpath query. |
 
 
 
@@ -835,7 +835,7 @@ array: Array of matched elements.
 Returns Root element having this element.
 
 ```javascript
-DoDOMRoot() 
+SeS('SomeHTMLObject').DoDOMRoot()
 ```
 
 
@@ -855,16 +855,16 @@ DoDOMRoot()
 Makes sure specified element is visible on the screen.
 
 ```javascript
-DoEnsureVisible(vAlign, hAlign) 
+SeS('SomeHTMLObject').DoEnsureVisible(vAlign, hAlign)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| vAlign | string |	One of "start", "center", "end", or "nearest". Defaults to "start".<br>Optional. |
-| hAlign | string |	One of "start", "center", "end", or "nearest". Defaults to "nearest".<br>Optional. |
+| vAlign | string |  One of "start", "center", "end", or "nearest". Defaults to "start".<br>Optional. |
+| hAlign | string |  One of "start", "center", "end", or "nearest". Defaults to "nearest".<br>Optional. |
 
 
 
@@ -883,7 +883,7 @@ object: Rectangle of the element if it became visible, 'null' otherwise.
 Finds screen rectangle for this object.
 
 ```javascript
-DoGetRect() 
+SeS('SomeHTMLObject').DoGetRect()
 ```
 
 
@@ -903,15 +903,15 @@ object: object {x, y, w, h}
 Gets selected options text of a SELECT element. Example: 'Option1,Option2'.
 
 ```javascript
-DoGetSelection(delim) 
+SeS('SomeHTMLObject').DoGetSelection(delim)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| delim | string |	Separator between options.<br>Optional, Default: ",". |
+| delim | string |  Separator between options.<br>Optional, Default: ",". |
 
 
 
@@ -930,16 +930,16 @@ boolean: String with option values separated by delim.
 Moves mouse on HTML element with offset.
 
 ```javascript
-DoMouseMove(x, y) 
+SeS('SomeHTMLObject').DoMouseMove(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -958,15 +958,15 @@ boolean: 'true' if successful, 'false' otherwise'
 Selects specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.
 
 ```javascript
-DoSelect(txt) 
+SeS('SomeHTMLObject').DoSelect(txt)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txt | string |	Element to select |
+| txt | string |  Element to select |
 
 
 
@@ -985,15 +985,15 @@ boolean: 'true' if successful, 'false' otherwise'
 Sets specified state of check box.
 
 ```javascript
-DoSetCheck(bcheck) 
+SeS('SomeHTMLObject').DoSetCheck(bcheck)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| bcheck | boolean |	State to set |
+| bcheck | boolean |  State to set |
 
 
 
@@ -1012,15 +1012,15 @@ boolean: 'true' if successful, 'false' otherwise'
 Sets text for input edit or textarea.
 
 ```javascript
-DoSetText(txt) 
+SeS('SomeHTMLObject').DoSetText(txt)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txt | string |	Text to set |
+| txt | string |  Text to set |
 
 
 
@@ -1033,5 +1033,5 @@ boolean: 'true' if successful, 'false' otherwise'
 
 <a name="see.also.htmlobject.dosettext"></a>
 
-	
+  
 

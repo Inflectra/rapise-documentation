@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,36 +26,36 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFindChild](#dofindchild) | Searches for specific item in the menu. |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoFindChild](#dofindchild) | Searches for specific item in the menu. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoFindChild"></a>    
 #### DoFindChild
 
 Searches for specific item in the menu.
 
 ```javascript
-DoFindChild(path, separator, pathType) 
+SeS('SomeJQueryMenu').DoFindChild(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -74,17 +74,17 @@ DoFindChild(path, separator, pathType)
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, separator, pathType) 
+SeS('SomeJQueryMenu').DoMenu(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -97,5 +97,5 @@ DoMenu(path, separator, pathType)
 
 <a name="see.also.jquerymenu.domenu"></a>
 
-	
+  
 

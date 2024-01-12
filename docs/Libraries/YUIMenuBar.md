@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,36 +26,36 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFindChild](#dofindchild) | Searches for specific item in the menu. |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoFindChild](#dofindchild) | Searches for specific item in the menu. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoFindChild"></a>    
 #### DoFindChild
 
 Searches for specific item in the menu.
 
 ```javascript
-DoFindChild(path, separator, pathType) 
+SeS('SomeYUIMenuBar').DoFindChild(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'index'. |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'index'. |
 
 
 
@@ -74,17 +74,17 @@ DoFindChild(path, separator, pathType)
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, separator, pathType) 
+SeS('SomeYUIMenuBar').DoMenu(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'index'. |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'index'. |
 
 
 
@@ -97,5 +97,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.yuimenubar.domenu"></a>
 
-	
+  
 

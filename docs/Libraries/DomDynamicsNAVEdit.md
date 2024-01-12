@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,55 +36,55 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#doclick) | Clicks on the edit field. |
-|	[DoOpen](#doopen) | Opens lookup table for this edit field. |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoClick](#doclick) | Clicks on the edit field. |
+|  [DoOpen](#doopen) | Opens lookup table for this edit field. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClick"></a>    
 #### DoClick
 
 Clicks on the edit field.
 
 ```javascript
-DoClick(x, y, forceEvent) 
+SeS('SomeDomDynamicsNAVEdit').DoClick(x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X coordinate to click.<br>Optional. |
-| y | number |	Y coordinate to click.<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
+| x | number |  X coordinate to click.<br>Optional. |
+| y | number |  Y coordinate to click.<br>Optional. |
+| forceEvent | boolean |  Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -103,17 +103,17 @@ boolean: 'true' if successful, 'false' otherwise'
 Opens lookup table for this edit field.
 
 ```javascript
-DoOpen(x, y, forceEvent) 
+SeS('SomeDomDynamicsNAVEdit').DoOpen(x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X coordinate to click.<br>Optional. |
-| y | number |	Y coordinate to click.<br>Optional. |
-| forceEvent | boolean |	Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
+| x | number |  X coordinate to click.<br>Optional. |
+| y | number |  Y coordinate to click.<br>Optional. |
+| forceEvent | boolean |  Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -132,15 +132,15 @@ boolean: 'true' if successful, 'false' otherwise
 Sets text value of this object.
 
 ```javascript
-DoSetText(value) 
+SeS('SomeDomDynamicsNAVEdit').DoSetText(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	Text value. |
+| value | string |  Text value. |
 
 
 
@@ -153,5 +153,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.domdynamicsnavedit.dosettext"></a>
 
-	
+  
 

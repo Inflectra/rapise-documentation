@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,34 +26,34 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoMenu"></a>    
 #### DoMenu
 
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, separator) 
+SeS('SomeDynamicsNAVToolBar').DoMenu(path, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -66,5 +66,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dynamicsnavtoolbar.domenu"></a>
 
-	
+  
 

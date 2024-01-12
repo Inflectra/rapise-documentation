@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,55 +38,55 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoGetRowCaption](#dogetrowcaption) | Gets caption of the row with index. |
-|	[DoGetRowColor](#dogetrowcolor) | Gets color of the row with index. |
-|	[DoGetRowRect](#dogetrowrect) | Gets rectangle of the row with index. |
-|	[DoGetRowValue](#dogetrowvalue) | Gets value of the row with index. |
-|	[DoSetRowValue](#dosetrowvalue) | Sets value of the row with index. |
+|  [DoGetRowCaption](#dogetrowcaption) | Gets caption of the row with index. |
+|  [DoGetRowColor](#dogetrowcolor) | Gets color of the row with index. |
+|  [DoGetRowRect](#dogetrowrect) | Gets rectangle of the row with index. |
+|  [DoGetRowValue](#dogetrowvalue) | Gets value of the row with index. |
+|  [DoSetRowValue](#dosetrowvalue) | Sets value of the row with index. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="RowCount"></a>
 #### RowCount
 
 
 Number of rows in the table.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetRowCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoGetRowCaption"></a>    
 #### DoGetRowCaption
 
 Gets caption of the row with index.
 
 ```javascript
-DoGetRowCaption(rowIndex) 
+SeS('SomeDXPropertyGridControl').DoGetRowCaption(rowIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| rowIndex | number |	Row index |
+| rowIndex | number |  Row index |
 
 
 
@@ -105,15 +105,15 @@ string: Row caption
 Gets color of the row with index.
 
 ```javascript
-DoGetRowColor(rowIndex) 
+SeS('SomeDXPropertyGridControl').DoGetRowColor(rowIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| rowIndex | number |	Row index |
+| rowIndex | number |  Row index |
 
 
 
@@ -132,15 +132,15 @@ string: Row color
 Gets rectangle of the row with index.
 
 ```javascript
-DoGetRowRect(rowIndex) 
+SeS('SomeDXPropertyGridControl').DoGetRowRect(rowIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| rowIndex | number |	Row index |
+| rowIndex | number |  Row index |
 
 
 
@@ -159,15 +159,15 @@ object: Row rectangle {x, y, w, h}.
 Gets value of the row with index.
 
 ```javascript
-DoGetRowValue(rowIndex) 
+SeS('SomeDXPropertyGridControl').DoGetRowValue(rowIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| rowIndex | number |	Row index |
+| rowIndex | number |  Row index |
 
 
 
@@ -186,16 +186,16 @@ object: Row value
 Sets value of the row with index.
 
 ```javascript
-DoSetRowValue(rowIndex, value) 
+SeS('SomeDXPropertyGridControl').DoSetRowValue(rowIndex, value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| rowIndex | number |	Row index |
-| value | string |	Value to set |
+| rowIndex | number |  Row index |
+| value | string |  Value to set |
 
 
 
@@ -208,5 +208,5 @@ boolean: 'true' if successful
 
 <a name="see.also.dxpropertygridcontrol.dosetrowvalue"></a>
 
-	
+  
 

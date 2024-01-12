@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,81 +38,81 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#doselecttab) | Selects a specific tab of the accordion. |
+|  [DoSelectTab](#doselecttab) | Selects a specific tab of the accordion. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemsCount"></a>
 #### ItemsCount
 
 
 Gets the number of tabs
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemsCount
-			
-		
+      
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Gets the index of the selected tab
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedTab"></a>
 #### SelectedTab
 
 
 Gets the text of the selected tab
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedTab
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 
 Selects a specific tab of the accordion.
 
 ```javascript
-DoSelectTab(tabName) 
+SeS('SomeJQueryAccordion').DoSelectTab(tabName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabName | string |	The name of the tab to select |
+| tabName | string |  The name of the tab to select |
 
 
 
@@ -125,5 +125,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.jqueryaccordion.doselecttab"></a>
 
-	
+  
 

@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,33 +26,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSearch](#dosearch) | Performs action search. |
+|  [DoSearch](#dosearch) | Performs action search. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSearch"></a>    
 #### DoSearch
 
 Performs action search.
 
 ```javascript
-DoSearch(text) 
+SeS('SomeDomDynamicsAXActionSearch').DoSearch(text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text | string |	Name of action to search. |
+| text | string |  Name of action to search. |
 
 
 
@@ -60,5 +60,5 @@ DoSearch(text)
 
 <a name="see.also.domdynamicsaxactionsearch.dosearch"></a>
 
-	
+  
 

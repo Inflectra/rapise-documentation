@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -36,7 +36,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -45,226 +45,226 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#doaction) | Performs default action for an object. |
-|	[DoAnalogPlay](#doanalogplay) | Plays analog recording using coordinates relative to this object. |
-|	[DoClick](#doclick) | Performs left click at the center of an object. |
-|	[DoEnsureVisible](#doensurevisible) | Makes sure specified element is visible on the screen. |
-|	[DoLButtonDown](#dolbuttondown) | Performs left mouse button down. |
-|	[DoLButtonUp](#dolbuttonup) | Performs left mouse button up. |
-|	[DoLClick](#dolclick) | Performs a left click at the center of an object or at the specified location. |
-|	[DoLDClick](#doldclick) | Performs a left double click at the center of an object or at the specified location. |
-|	[DoMButtonDown](#dombuttondown) | Performs middle mouse button down. |
-|	[DoMButtonUp](#dombuttonup) | Performs middle mouse button up. |
-|	[DoMClick](#domclick) | Performs a middle click at the center of an object or at the specified location. |
-|	[DoMDClick](#domdclick) | Performs a middle double click at the center of an object or at the specified location. |
-|	[DoMouseMove](#domousemove) | Moves mouse cursor to a location relative to this object position. |
-|	[DoRButtonDown](#dorbuttondown) | Performs right mouse button down. |
-|	[DoRButtonUp](#dorbuttonup) | Performs right mouse button up. |
-|	[DoRClick](#dorclick) | Performs a right click at the center of an object or at the specified location. |
-|	[DoRDClick](#dordclick) | Performs a right double click at the center of an object or at the specified location. |
-|	[DoSendKeys](#dosendkeys) | Sends series of keystrokes to an object. |
-|	[DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
+|  [DoAction](#doaction) | Performs default action for an object. |
+|  [DoAnalogPlay](#doanalogplay) | Plays analog recording using coordinates relative to this object. |
+|  [DoClick](#doclick) | Performs left click at the center of an object. |
+|  [DoEnsureVisible](#doensurevisible) | Makes sure specified element is visible on the screen. |
+|  [DoLButtonDown](#dolbuttondown) | Performs left mouse button down. |
+|  [DoLButtonUp](#dolbuttonup) | Performs left mouse button up. |
+|  [DoLClick](#dolclick) | Performs a left click at the center of an object or at the specified location. |
+|  [DoLDClick](#doldclick) | Performs a left double click at the center of an object or at the specified location. |
+|  [DoMButtonDown](#dombuttondown) | Performs middle mouse button down. |
+|  [DoMButtonUp](#dombuttonup) | Performs middle mouse button up. |
+|  [DoMClick](#domclick) | Performs a middle click at the center of an object or at the specified location. |
+|  [DoMDClick](#domdclick) | Performs a middle double click at the center of an object or at the specified location. |
+|  [DoMouseMove](#domousemove) | Moves mouse cursor to a location relative to this object position. |
+|  [DoRButtonDown](#dorbuttondown) | Performs right mouse button down. |
+|  [DoRButtonUp](#dorbuttonup) | Performs right mouse button up. |
+|  [DoRClick](#dorclick) | Performs a right click at the center of an object or at the specified location. |
+|  [DoRDClick](#dordclick) | Performs a right double click at the center of an object or at the specified location. |
+|  [DoSendKeys](#dosendkeys) | Sends series of keystrokes to an object. |
+|  [DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Bitmap"></a>
 #### Bitmap
 
 
 UI Image of the object.
 
-			
-	
-			
+      
+  
+      
 Type: ImageWrapper
-			
-			
+      
+      
 Accessors: GetBitmap
-			
-		
+      
+    
 <a name="BWBitmap"></a>
 #### BWBitmap
 
 
 UI Image of the object in 1-bit format (black&white).
 
-			
-	
-			
+      
+  
+      
 Type: ImageWrapper
-			
-			
+      
+      
 Accessors: GetBWBitmap
-			
-		
+      
+    
 <a name="Class"></a>
 #### Class
 
 
 Class of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetClass
-			
-		
+      
+    
 <a name="Height"></a>
 #### Height
 
 
 Height of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetHeight
-			
-		
+      
+    
 <a name="Name"></a>
 #### Name
 
 
 Name of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetName
-			
-		
+      
+    
 <a name="ObjectType"></a>
 #### ObjectType
 
 
 SeSMatcherRule type for this object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetObjectType
-			
-		
+      
+    
 <a name="State"></a>
 #### State
 
 
 State of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetState
-			
-		
+      
+    
 <a name="Value"></a>
 #### Value
 
 
 Value of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetValue, SetValue
-			
-		
+      
+    
 <a name="Width"></a>
 #### Width
 
 
 Width of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetWidth
-			
-		
+      
+    
 <a name="WindowText"></a>
 #### WindowText
 
 
 Window text of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetWindowText, SetWindowText
-			
-		
+      
+    
 <a name="X"></a>
 #### X
 
 
 X-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetX
-			
-		
+      
+    
 <a name="Y"></a>
 #### Y
 
 
 Y-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetY
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAction"></a>    
 #### DoAction
 
 Performs default action for an object. If the object doesn't have default action then 'LClick' is performed.
 
 ```javascript
-DoAction() 
+SeS('SomeSimpleGraphics').DoAction()
 ```
 
 
@@ -279,17 +279,17 @@ DoAction()
 Plays analog recording using coordinates relative to this object.
 
 ```javascript
-DoAnalogPlay(path, left, top) 
+SeS('SomeSimpleGraphics').DoAnalogPlay(path, left, top)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path to analog recording (usually an .arf file). |
-| left | number |	X-coordinate of top-left corner of the analog area, relative to object top-left corner<br>Optional. |
-| top | number |	Y-coordinate of the top-left corner of the analog area, relative to object top-left corner.<br>Optional. |
+| path | string |  Path to analog recording (usually an .arf file). |
+| left | number |  X-coordinate of top-left corner of the analog area, relative to object top-left corner<br>Optional. |
+| top | number |  Y-coordinate of the top-left corner of the analog area, relative to object top-left corner.<br>Optional. |
 
 
 
@@ -303,17 +303,17 @@ DoAnalogPlay(path, left, top)
 Performs left click at the center of an object. It is a customizable variant of LClick action.
 
 ```javascript
-DoClick(clickType, xOffset, yOffset) 
+SeS('SomeSimpleGraphics').DoClick(clickType, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| clickType | string |  Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -332,7 +332,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Makes sure specified element is visible on the screen.
 
 ```javascript
-DoEnsureVisible() 
+SeS('SomeSimpleGraphics').DoEnsureVisible()
 ```
 
 
@@ -347,7 +347,7 @@ DoEnsureVisible()
 Performs left mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoLButtonUp', otherwise it may lock mouse cursor.
 
 ```javascript
-DoLButtonDown() 
+SeS('SomeSimpleGraphics').DoLButtonDown()
 ```
 
 
@@ -362,7 +362,7 @@ DoLButtonDown()
 Performs left mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoLButtonDown', otherwise it will have no effect.
 
 ```javascript
-DoLButtonUp() 
+SeS('SomeSimpleGraphics').DoLButtonUp()
 ```
 
 
@@ -377,16 +377,16 @@ DoLButtonUp()
 Performs a left click at the center of an object or at the specified location.
 
 ```javascript
-DoLClick(x, y) 
+SeS('SomeSimpleGraphics').DoLClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -405,16 +405,16 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Performs a left double click at the center of an object or at the specified location.
 
 ```javascript
-DoLDClick(x, y) 
+SeS('SomeSimpleGraphics').DoLDClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -433,7 +433,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Performs middle mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoMButtonUp', otherwise it may lock mouse cursor.
 
 ```javascript
-DoMButtonDown() 
+SeS('SomeSimpleGraphics').DoMButtonDown()
 ```
 
 
@@ -448,7 +448,7 @@ DoMButtonDown()
 Performs middle mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoMButtonDown', otherwise it will have no effect.
 
 ```javascript
-DoMButtonUp() 
+SeS('SomeSimpleGraphics').DoMButtonUp()
 ```
 
 
@@ -463,16 +463,16 @@ DoMButtonUp()
 Performs a middle click at the center of an object or at the specified location.
 
 ```javascript
-DoMClick(x, y) 
+SeS('SomeSimpleGraphics').DoMClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -491,16 +491,16 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Performs a middle double click at the center of an object or at the specified location.
 
 ```javascript
-DoMDClick(x, y) 
+SeS('SomeSimpleGraphics').DoMDClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -519,17 +519,17 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Moves mouse cursor to a location relative to this object position.
 
 ```javascript
-DoMouseMove(x, y, duration) 
+SeS('SomeSimpleGraphics').DoMouseMove(x, y, duration)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
-| duration | number |	Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: "0". |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| duration | number |  Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: "0". |
 
 
 
@@ -543,7 +543,7 @@ DoMouseMove(x, y, duration)
 Performs right mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoRButtonUp', otherwise it may lock mouse cursor.
 
 ```javascript
-DoRButtonDown() 
+SeS('SomeSimpleGraphics').DoRButtonDown()
 ```
 
 
@@ -558,7 +558,7 @@ DoRButtonDown()
 Performs right mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoRButtonDown', otherwise it will have no effect.
 
 ```javascript
-DoRButtonUp() 
+SeS('SomeSimpleGraphics').DoRButtonUp()
 ```
 
 
@@ -573,16 +573,16 @@ DoRButtonUp()
 Performs a right click at the center of an object or at the specified location.
 
 ```javascript
-DoRClick(x, y) 
+SeS('SomeSimpleGraphics').DoRClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -601,16 +601,16 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Performs a right double click at the center of an object or at the specified location.
 
 ```javascript
-DoRDClick(x, y) 
+SeS('SomeSimpleGraphics').DoRDClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -629,15 +629,15 @@ boolean: 'true' if operation is successful, 'false' otherwise
 Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a>
 
 ```javascript
-DoSendKeys(keys) 
+SeS('SomeSimpleGraphics').DoSendKeys(keys)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| keys | string |	A sequence of keystrokes. |
+| keys | string |  A sequence of keystrokes. |
 
 
 
@@ -651,15 +651,15 @@ DoSendKeys(keys)
 Sends text to the active application as is (while SendKeys also supports sending special keys).
 
 ```javascript
-DoSendText(text) 
+SeS('SomeSimpleGraphics').DoSendText(text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text | string |	A sequence of keystrokes. |
+| text | string |  A sequence of keystrokes. |
 
 
 
@@ -667,5 +667,5 @@ DoSendText(text)
 
 <a name="see.also.simplegraphics.dosendtext"></a>
 
-	
+  
 

@@ -15,7 +15,7 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [iOSObject](iOSObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,88 +36,88 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#doselecttab) | Selects the tab by name or index. |
+|  [DoSelectTab](#doselecttab) | Selects the tab by name or index. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
+      
+    
 <a name="SelectedTab"></a>
 #### SelectedTab
 
 
 Selected tab name.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedTab
-			
-		
+      
+    
 <a name="TabName"></a>
 #### TabName
 
 
 Name of the tab at index
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index | number | Index of the tab. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetTabName
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 
 Selects the tab by name or index.
 
 ```javascript
-DoSelectTab(tabNameIndex) 
+SeS('SomeiOSTabBar').DoSelectTab(tabNameIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabNameIndex | string \| number |	Tab name or index. |
+| tabNameIndex | string \| number |  Tab name or index. |
 
 
 
@@ -130,5 +130,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.iostabbar.doselecttab"></a>
 
-	
+  
 

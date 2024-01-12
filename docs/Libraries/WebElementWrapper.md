@@ -11,7 +11,7 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,62 +20,62 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Clear](#clear) | Clears the content of this element. |
-|	[Click](#click) | Clicks this element. |
-|	[ClickAt](#clickat) | Clicks this element at the specified location. |
-|	[ContextClick](#contextclick) | Opens context menu for this element. |
-|	[DoubleClick](#doubleclick) | Performs double click on this element. |
-|	[FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
-|	[FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
-|	[FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementByLinkText](#findelementbylinktext) | Finds the first of elements that match the link text supplied. |
-|	[FindElementByName](#findelementbyname) | Finds the first of elements that match the name supplied. |
-|	[FindElementByPartialLinkText](#findelementbypartiallinktext) | Finds the first of elements that match the part of the link text supplied. |
-|	[FindElementByTagName](#findelementbytagname) | Finds the first of elements that match the DOM Tag supplied. |
-|	[FindElementByXPath](#findelementbyxpath) | Finds the first of elements that match the XPath supplied. |
-|	[FindElementsByClassName](#findelementsbyclassname) | Finds a list of elements that match the class name supplied. |
-|	[FindElementsByCssSelector](#findelementsbycssselector) | Finds all elements matching the specified CSS selector. |
-|	[FindElementsById](#findelementsbyid) | Finds the first element in the page that matches the ID supplied. |
-|	[FindElementsByLinkText](#findelementsbylinktext) | Finds a list of elements that match the link text supplied. |
-|	[FindElementsByName](#findelementsbyname) | Finds a list of elements that match the name supplied. |
-|	[FindElementsByPartialLinkText](#findelementsbypartiallinktext) | Finds a list of elements that match the part of the link text supplied. |
-|	[FindElementsByTagName](#findelementsbytagname) | Finds a list of elements that match the DOM Tag supplied. |
-|	[FindElementsByXPath](#findelementsbyxpath) | Finds a list of elements that match the XPath supplied. |
-|	[GetAttribute](#getattribute) | Gets the value of the specified attribute for this element. |
-|	[GetCoordinates](#getcoordinates) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
-|	[GetCssValue](#getcssvalue) | Gets the value of a CSS property of this element. |
-|	[GetDisplayed](#getdisplayed) | Gets a value indicating whether or not this element is displayed. |
-|	[GetEnabled](#getenabled) | Gets a value indicating whether or not this element is enabled. |
-|	[GetHashCode](#gethashcode) | Method to get the hash code of the element. |
-|	[GetId](#getid) | Gets internal element id. |
-|	[GetLocation](#getlocation) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
-|	[GetLocationOnScreenOnceScrolledIntoView](#getlocationonscreenoncescrolledintoview) | Gets the point where the element would be when scrolled into view. |
-|	[GetScreenshotIW](#getscreenshotiw) | Gets screenshot of the element. |
-|	[GetSelected](#getselected) | Gets a value indicating whether or not this element is selected. |
-|	[GetSize](#getsize) | Gets a 'Size' object containing the height and width of this element. |
-|	[GetTagName](#gettagname) | Gets the tag name of this element. |
-|	[GetText](#gettext) | Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed. |
-|	[SelectOptionByText](#selectoptionbytext) | Selects option from select element. |
-|	[SendKeys](#sendkeys) | Simulates typing text into the element. |
-|	[Submit](#submit) | Submits this element to the web server. |
+|  [Clear](#clear) | Clears the content of this element. |
+|  [Click](#click) | Clicks this element. |
+|  [ClickAt](#clickat) | Clicks this element at the specified location. |
+|  [ContextClick](#contextclick) | Opens context menu for this element. |
+|  [DoubleClick](#doubleclick) | Performs double click on this element. |
+|  [FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
+|  [FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
+|  [FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
+|  [FindElementByLinkText](#findelementbylinktext) | Finds the first of elements that match the link text supplied. |
+|  [FindElementByName](#findelementbyname) | Finds the first of elements that match the name supplied. |
+|  [FindElementByPartialLinkText](#findelementbypartiallinktext) | Finds the first of elements that match the part of the link text supplied. |
+|  [FindElementByTagName](#findelementbytagname) | Finds the first of elements that match the DOM Tag supplied. |
+|  [FindElementByXPath](#findelementbyxpath) | Finds the first of elements that match the XPath supplied. |
+|  [FindElementsByClassName](#findelementsbyclassname) | Finds a list of elements that match the class name supplied. |
+|  [FindElementsByCssSelector](#findelementsbycssselector) | Finds all elements matching the specified CSS selector. |
+|  [FindElementsById](#findelementsbyid) | Finds the first element in the page that matches the ID supplied. |
+|  [FindElementsByLinkText](#findelementsbylinktext) | Finds a list of elements that match the link text supplied. |
+|  [FindElementsByName](#findelementsbyname) | Finds a list of elements that match the name supplied. |
+|  [FindElementsByPartialLinkText](#findelementsbypartiallinktext) | Finds a list of elements that match the part of the link text supplied. |
+|  [FindElementsByTagName](#findelementsbytagname) | Finds a list of elements that match the DOM Tag supplied. |
+|  [FindElementsByXPath](#findelementsbyxpath) | Finds a list of elements that match the XPath supplied. |
+|  [GetAttribute](#getattribute) | Gets the value of the specified attribute for this element. |
+|  [GetCoordinates](#getcoordinates) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
+|  [GetCssValue](#getcssvalue) | Gets the value of a CSS property of this element. |
+|  [GetDisplayed](#getdisplayed) | Gets a value indicating whether or not this element is displayed. |
+|  [GetEnabled](#getenabled) | Gets a value indicating whether or not this element is enabled. |
+|  [GetHashCode](#gethashcode) | Method to get the hash code of the element. |
+|  [GetId](#getid) | Gets internal element id. |
+|  [GetLocation](#getlocation) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
+|  [GetLocationOnScreenOnceScrolledIntoView](#getlocationonscreenoncescrolledintoview) | Gets the point where the element would be when scrolled into view. |
+|  [GetScreenshotIW](#getscreenshotiw) | Gets screenshot of the element. |
+|  [GetSelected](#getselected) | Gets a value indicating whether or not this element is selected. |
+|  [GetSize](#getsize) | Gets a 'Size' object containing the height and width of this element. |
+|  [GetTagName](#gettagname) | Gets the tag name of this element. |
+|  [GetText](#gettext) | Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed. |
+|  [SelectOptionByText](#selectoptionbytext) | Selects option from select element. |
+|  [SendKeys](#sendkeys) | Simulates typing text into the element. |
+|  [Submit](#submit) | Submits this element to the web server. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="Clear"></a>    
 #### Clear
 
 Clears the content of this element.
 
 ```javascript
-Clear() 
+WebDriver.FindElementById('username').Clear()
 ```
 
 
@@ -90,7 +90,7 @@ Clear()
 Clicks this element.
 
 ```javascript
-Click() 
+WebDriver.FindElementById('username').Click()
 ```
 
 
@@ -105,16 +105,16 @@ Click()
 Clicks this element at the specified location.
 
 ```javascript
-ClickAt(x, y) 
+WebDriver.FindElementById('username').ClickAt(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	 |
-| y | number |	 |
+| x | number |   |
+| y | number |   |
 
 
 
@@ -128,7 +128,7 @@ ClickAt(x, y)
 Opens context menu for this element.
 
 ```javascript
-ContextClick() 
+WebDriver.FindElementById('username').ContextClick()
 ```
 
 
@@ -143,7 +143,7 @@ ContextClick()
 Performs double click on this element.
 
 ```javascript
-DoubleClick() 
+WebDriver.FindElementById('username').DoubleClick()
 ```
 
 
@@ -158,15 +158,15 @@ DoubleClick()
 Finds the first element in the page that matches the CSS Class supplied.
 
 ```javascript
-FindElementByClassName(className) 
+WebDriver.FindElementById('username').FindElementByClassName(className)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| className | string |	CSS class name of the element. |
+| className | string |  CSS class name of the element. |
 
 
 
@@ -185,15 +185,15 @@ FindElementByClassName(className)
 Finds the first element matching the specified CSS selector.
 
 ```javascript
-FindElementByCssSelector(cssSelector) 
+WebDriver.FindElementById('username').FindElementByCssSelector(cssSelector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cssSelector | string |	The CSS selector to match. |
+| cssSelector | string |  The CSS selector to match. |
 
 
 
@@ -212,15 +212,15 @@ FindElementByCssSelector(cssSelector)
 Finds the first element in the page that matches the ID supplied.
 
 ```javascript
-FindElementById(id) 
+WebDriver.FindElementByTagName('section').FindElementById('h3')
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| id | string |	ID of the element. |
+| id | string |  ID of the element. |
 
 
 
@@ -239,15 +239,15 @@ FindElementById(id)
 Finds the first of elements that match the link text supplied.
 
 ```javascript
-FindElementByLinkText(linkText) 
+WebDriver.FindElementById('username').FindElementByLinkText(linkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| linkText | string |	Link text of element. |
+| linkText | string |  Link text of element. |
 
 
 
@@ -266,15 +266,15 @@ FindElementByLinkText(linkText)
 Finds the first of elements that match the name supplied.
 
 ```javascript
-FindElementByName(name) 
+WebDriver.FindElementById('username').FindElementByName(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of the element on the page. |
+| name | string |  Name of the element on the page. |
 
 
 
@@ -293,15 +293,15 @@ FindElementByName(name)
 Finds the first of elements that match the part of the link text supplied.
 
 ```javascript
-FindElementByPartialLinkText(partialLinkText) 
+WebDriver.FindElementById('username').FindElementByPartialLinkText(partialLinkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| partialLinkText | string |	Part of the link text. |
+| partialLinkText | string |  Part of the link text. |
 
 
 
@@ -320,15 +320,15 @@ FindElementByPartialLinkText(partialLinkText)
 Finds the first of elements that match the DOM Tag supplied.
 
 ```javascript
-FindElementByTagName(tagName) 
+WebDriver.FindElementById('username').FindElementByTagName(tagName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tagName | string |	DOM tag Name of the element being searched. |
+| tagName | string |  DOM tag Name of the element being searched. |
 
 
 
@@ -347,15 +347,15 @@ FindElementByTagName(tagName)
 Finds the first of elements that match the XPath supplied.
 
 ```javascript
-FindElementByXPath(xpath) 
+WebDriver.FindElementById('username').FindElementByXPath(xpath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	xpath to the element. |
+| xpath | string |  xpath to the element. |
 
 
 
@@ -374,15 +374,15 @@ FindElementByXPath(xpath)
 Finds a list of elements that match the class name supplied.
 
 ```javascript
-FindElementsByClassName(className) 
+WebDriver.FindElementById('username').FindElementsByClassName(className)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| className | string |	className of the element. |
+| className | string |  className of the element. |
 
 
 
@@ -401,15 +401,15 @@ FindElementsByClassName(className)
 Finds all elements matching the specified CSS selector.
 
 ```javascript
-FindElementsByCssSelector(cssSelector) 
+WebDriver.FindElementById('username').FindElementsByCssSelector(cssSelector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cssSelector | string |	The CSS selector to match. |
+| cssSelector | string |  The CSS selector to match. |
 
 
 
@@ -428,15 +428,15 @@ FindElementsByCssSelector(cssSelector)
 Finds the first element in the page that matches the ID supplied.
 
 ```javascript
-FindElementsById(id) 
+WebDriver.FindElementById('username').FindElementsById(id)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| id | string |	ID of the element. |
+| id | string |  ID of the element. |
 
 
 
@@ -455,15 +455,15 @@ FindElementsById(id)
 Finds a list of elements that match the link text supplied.
 
 ```javascript
-FindElementsByLinkText(linkText) 
+WebDriver.FindElementById('username').FindElementsByLinkText(linkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| linkText | string |	Link text of element. |
+| linkText | string |  Link text of element. |
 
 
 
@@ -482,15 +482,15 @@ FindElementsByLinkText(linkText)
 Finds a list of elements that match the name supplied.
 
 ```javascript
-FindElementsByName(name) 
+WebDriver.FindElementById('username').FindElementsByName(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of the element on the page. |
+| name | string |  Name of the element on the page. |
 
 
 
@@ -509,15 +509,15 @@ FindElementsByName(name)
 Finds a list of elements that match the part of the link text supplied.
 
 ```javascript
-FindElementsByPartialLinkText(partialLinkText) 
+WebDriver.FindElementById('username').FindElementsByPartialLinkText(partialLinkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| partialLinkText | string |	Part of the link text. |
+| partialLinkText | string |  Part of the link text. |
 
 
 
@@ -536,15 +536,15 @@ FindElementsByPartialLinkText(partialLinkText)
 Finds a list of elements that match the DOM Tag supplied.
 
 ```javascript
-FindElementsByTagName(tagName) 
+WebDriver.FindElementById('username').FindElementsByTagName(tagName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tagName | string |	DOM tag Name of the element being searched. |
+| tagName | string |  DOM tag Name of the element being searched. |
 
 
 
@@ -563,15 +563,15 @@ FindElementsByTagName(tagName)
 Finds a list of elements that match the XPath supplied.
 
 ```javascript
-FindElementsByXPath(xpath) 
+WebDriver.FindElementById('username').FindElementsByXPath(xpath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	xpath to the element. |
+| xpath | string |  xpath to the element. |
 
 
 
@@ -590,15 +590,15 @@ FindElementsByXPath(xpath)
 Gets the value of the specified attribute for this element.
 
 ```javascript
-GetAttribute(attributeName) 
+WebDriver.FindElementById('username').GetAttribute(attributeName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| attributeName |  |	 |
+| attributeName |  |   |
 
 
 
@@ -612,7 +612,7 @@ GetAttribute(attributeName)
 Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page.
 
 ```javascript
-GetCoordinates() 
+WebDriver.FindElementById('username').GetCoordinates()
 ```
 
 
@@ -627,15 +627,15 @@ GetCoordinates()
 Gets the value of a CSS property of this element.
 
 ```javascript
-GetCssValue(propertyName) 
+WebDriver.FindElementById('username').GetCssValue(propertyName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| propertyName |  |	 |
+| propertyName |  |   |
 
 
 
@@ -649,7 +649,7 @@ GetCssValue(propertyName)
 Gets a value indicating whether or not this element is displayed.
 
 ```javascript
-GetDisplayed() 
+WebDriver.FindElementById('username').GetDisplayed()
 ```
 
 
@@ -664,7 +664,7 @@ GetDisplayed()
 Gets a value indicating whether or not this element is enabled.
 
 ```javascript
-GetEnabled() 
+WebDriver.FindElementById('username').GetEnabled()
 ```
 
 
@@ -679,7 +679,7 @@ GetEnabled()
 Method to get the hash code of the element.
 
 ```javascript
-GetHashCode() 
+WebDriver.FindElementById('username').GetHashCode()
 ```
 
 
@@ -694,7 +694,7 @@ GetHashCode()
 Gets internal element id.
 
 ```javascript
-GetId() 
+WebDriver.FindElementById('username').GetId()
 ```
 
 
@@ -709,7 +709,7 @@ GetId()
 Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page.
 
 ```javascript
-GetLocation() 
+WebDriver.FindElementById('username').GetLocation()
 ```
 
 
@@ -724,7 +724,7 @@ GetLocation()
 Gets the point where the element would be when scrolled into view.
 
 ```javascript
-GetLocationOnScreenOnceScrolledIntoView() 
+WebDriver.FindElementById('username').GetLocationOnScreenOnceScrolledIntoView()
 ```
 
 
@@ -739,7 +739,7 @@ GetLocationOnScreenOnceScrolledIntoView()
 Gets screenshot of the element.
 
 ```javascript
-GetScreenshotIW() 
+WebDriver.FindElementById('username').GetScreenshotIW()
 ```
 
 
@@ -754,7 +754,7 @@ GetScreenshotIW()
 Gets a value indicating whether or not this element is selected.
 
 ```javascript
-GetSelected() 
+WebDriver.FindElementById('username').GetSelected()
 ```
 
 
@@ -769,7 +769,7 @@ GetSelected()
 Gets a 'Size' object containing the height and width of this element.
 
 ```javascript
-GetSize() 
+WebDriver.FindElementById('username').GetSize()
 ```
 
 
@@ -784,7 +784,7 @@ GetSize()
 Gets the tag name of this element.
 
 ```javascript
-GetTagName() 
+WebDriver.FindElementById('username').GetTagName()
 ```
 
 
@@ -799,7 +799,7 @@ GetTagName()
 Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed.
 
 ```javascript
-GetText() 
+WebDriver.FindElementById('username').GetText()
 ```
 
 
@@ -814,15 +814,15 @@ GetText()
 Selects option from select element.
 
 ```javascript
-SelectOptionByText(option) 
+WebDriver.FindElementById('username').SelectOptionByText(option)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| option |  |	 |
+| option |  |   |
 
 
 
@@ -836,15 +836,15 @@ SelectOptionByText(option)
 Simulates typing text into the element.
 
 ```javascript
-SendKeys(text) 
+WebDriver.FindElementById('username').SendKeys(text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text |  |	 |
+| text |  |   |
 
 
 
@@ -858,7 +858,7 @@ SendKeys(text)
 Submits this element to the web server.
 
 ```javascript
-Submit() 
+WebDriver.FindElementById('username').Submit()
 ```
 
 
@@ -867,5 +867,5 @@ Submit()
 
 <a name="see.also.webelementwrapper.submit"></a>
 
-	
+  
 

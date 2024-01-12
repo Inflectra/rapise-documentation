@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -31,7 +31,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -40,81 +40,81 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex, SetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedItem"></a>
 #### SelectedItem
 
 
 Selected item of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedItem, SetSelectedItem
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects an item of this object.
 
 ```javascript
-DoSelectItem(item) 
+SeS('SomeUltraComboEditor').DoSelectItem(item)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| item | string \| number |	Item index or text value  to select. |
+| item | string \| number |  Item index or text value  to select. |
 
 
 
@@ -127,7 +127,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.ultracomboeditor.doselectitem"></a>
 
-	
+  
 
 
 
@@ -137,7 +137,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -147,7 +147,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -156,51 +156,51 @@ boolean: 'true' if success, 'false' otherwise.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetText"></a>    
 #### DoSetText
 
 Sets text value of this object.
 
 ```javascript
-DoSetText(val) 
+SeS('SomeUltraComboEditor').DoSetText(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | string |	Text value. |
+| val | string |  Text value. |
 
 
 
@@ -213,5 +213,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.ultracomboeditor.dosettext"></a>
 
-	
+  
 

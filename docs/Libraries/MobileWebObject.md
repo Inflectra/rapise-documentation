@@ -13,7 +13,7 @@ Web Mobile Object.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -33,7 +33,7 @@ Web Mobile Object.
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -42,212 +42,212 @@ Web Mobile Object.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#doaction) | Clicks in the middle of the control. |
-|	[DoClear](#doclear) | Clears the text of the object. |
-|	[DoClick](#doclick) | Clicks in the middle of the control. |
-|	[DoDoubleClick](#dodoubleclick) | Double clicks in the middle of the control. |
-|	[DoEnsureVisible](#doensurevisible) | Ensure that a child item with the specified text is visible on screen. |
-|	[DoSendKeys](#dosendkeys) | Send a text to the object in character-by-character mode. |
+|  [DoAction](#doaction) | Clicks in the middle of the control. |
+|  [DoClear](#doclear) | Clears the text of the object. |
+|  [DoClick](#doclick) | Clicks in the middle of the control. |
+|  [DoDoubleClick](#dodoubleclick) | Double clicks in the middle of the control. |
+|  [DoEnsureVisible](#doensurevisible) | Ensure that a child item with the specified text is visible on screen. |
+|  [DoSendKeys](#dosendkeys) | Send a text to the object in character-by-character mode. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ChildAt"></a>
 #### ChildAt
 
 
 Child object at index.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index | number | Index of the object to get. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetChildAt
-			
-		
+      
+    
 <a name="ChildCount"></a>
 #### ChildCount
 
 
 Number of child items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetChildCount
-			
-		
+      
+    
 <a name="Class"></a>
 #### Class
 
 
 Class name of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetClass
-			
-		
+      
+    
 <a name="Height"></a>
 #### Height
 
 
 Height of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetHeight
-			
-		
+      
+    
 <a name="Name"></a>
 #### Name
 
 
 Name of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetName
-			
-		
+      
+    
 <a name="ObjectType"></a>
 #### ObjectType
 
 
 Type of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetObjectType
-			
-		
+      
+    
 <a name="Property"></a>
 #### Property
 
 
 Value of a named property of the object.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | name | string | Property name. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetProperty
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText
-			
-		
+      
+    
 <a name="Width"></a>
 #### Width
 
 
 Width of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetWidth
-			
-		
+      
+    
 <a name="X"></a>
 #### X
 
 
 X-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetX
-			
-		
+      
+    
 <a name="Y"></a>
 #### Y
 
 
 Y-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetY
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAction"></a>    
 #### DoAction
 
 Clicks in the middle of the control.
 
 ```javascript
-DoAction() 
+SeS('SomeMobileWebObject').DoAction()
 ```
 
 
@@ -267,7 +267,7 @@ boolean: 'true' if success, 'false' otherwise.
 Clears the text of the object.
 
 ```javascript
-DoClear() 
+SeS('SomeMobileWebObject').DoClear()
 ```
 
 
@@ -287,7 +287,7 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks in the middle of the control.
 
 ```javascript
-DoClick() 
+SeS('SomeMobileWebObject').DoClick()
 ```
 
 
@@ -307,7 +307,7 @@ boolean: 'true' if success, 'false' otherwise.
 Double clicks in the middle of the control.
 
 ```javascript
-DoDoubleClick() 
+SeS('SomeMobileWebObject').DoDoubleClick()
 ```
 
 
@@ -327,7 +327,7 @@ boolean: 'true' if success, 'false' otherwise.
 Ensure that a child item with the specified text is visible on screen.
 
 ```javascript
-DoEnsureVisible() 
+SeS('SomeMobileWebObject').DoEnsureVisible()
 ```
 
 
@@ -347,15 +347,15 @@ boolean: 'true' if success, 'false' otherwise.
 Send a text to the object in character-by-character mode.
 
 ```javascript
-DoSendKeys(keys) 
+SeS('SomeMobileWebObject').DoSendKeys(keys)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| keys | string |	Text to type into the object. |
+| keys | string |  Text to type into the object. |
 
 
 
@@ -368,5 +368,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.mobilewebobject.dosendkeys"></a>
 
-	
+  
 

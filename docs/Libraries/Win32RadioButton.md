@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetCheck](#dosetcheck) | Sets check state of the object. |
+|  [DoSetCheck](#dosetcheck) | Sets check state of the object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Checked"></a>
 #### Checked
 
 
 Check state of the button. 'true' if the button is checked, 'false' otherwise.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetChecked, SetChecked
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetCheck"></a>    
 #### DoSetCheck
 
 Sets check state of the object.
 
 ```javascript
-DoSetCheck(bcheck) 
+SeS('SomeWin32RadioButton').DoSetCheck(bcheck)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| bcheck | boolean |	Desired check state for the item. |
+| bcheck | boolean |  Desired check state for the item. |
 
 
 
@@ -91,7 +91,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.win32radiobutton.dosetcheck"></a>
 
-	
+  
 
 
 
@@ -101,7 +101,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -109,8 +109,8 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-		
+    
 

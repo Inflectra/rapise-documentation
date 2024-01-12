@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,81 +38,81 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetValue](#dosetvalue) | Sets the value of current object. |
+|  [DoSetValue](#dosetvalue) | Sets the value of current object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="MaxValue"></a>
 #### MaxValue
 
 
 Maximum value of the object or 'false' if value can't be read.
 
-			
-	
-			
+      
+  
+      
 Type: number|boolean
-			
-			
+      
+      
 Accessors: GetMaxValue, SetMaxValue
-			
-		
+      
+    
 <a name="MinValue"></a>
 #### MinValue
 
 
 Minimum value of the object or 'false' if value can't be read.
 
-			
-	
-			
+      
+  
+      
 Type: number|boolean
-			
-			
+      
+      
 Accessors: GetMinValue, SetMinValue
-			
-		
+      
+    
 <a name="Value"></a>
 #### Value
 
 
 Value of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetValue, SetValue
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetValue"></a>    
 #### DoSetValue
 
 Sets the value of current object.
 
 ```javascript
-DoSetValue(val) 
+SeS('SomeUIAProgressBar').DoSetValue(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | number |	Value to set |
+| val | number |  Value to set |
 
 
 
@@ -125,5 +125,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.uiaprogressbar.dosetvalue"></a>
 
-	
+  
 

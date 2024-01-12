@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,84 +38,84 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoExpand](#doexpand) | Expands the combobox. |
-|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|  [DoExpand](#doexpand) | Expands the combobox. |
+|  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex, SetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedItem"></a>
 #### SelectedItem
 
 
 Text of the selected item in a single string.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedItem, SetSelectedItem
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoExpand"></a>    
 #### DoExpand
 
 Expands the combobox.
 
 ```javascript
-DoExpand(x, y, forceEvent) 
+SeS('SomeGWTExtComboBox').DoExpand(x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-coordinate of location relative to object's left border |
-| y | number |	Y-coordinate of location relative to object's top border |
-| forceEvent | boolean |	pass 'true' to force browser event without actual mouse click.<br>Optional. |
+| x | number |  X-coordinate of location relative to object's left border |
+| y | number |  Y-coordinate of location relative to object's top border |
+| forceEvent | boolean |  pass 'true' to force browser event without actual mouse click.<br>Optional. |
 
 
 
@@ -134,15 +134,15 @@ boolean: 'true' if success, 'false' otherwise.
 Selects an item of this object.
 
 ```javascript
-DoSelectItem(item) 
+SeS('SomeGWTExtComboBox').DoSelectItem(item)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| item | string \| number |	Item index or text value  to select. |
+| item | string \| number |  Item index or text value  to select. |
 
 
 
@@ -155,5 +155,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.gwtextcombobox.doselectitem"></a>
 
-	
+  
 

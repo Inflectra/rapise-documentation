@@ -13,7 +13,7 @@ iOS Object.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -37,7 +37,7 @@ iOS Object.
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -46,276 +46,276 @@ iOS Object.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#doaction) | Clicks in the middle of the control. |
-|	[DoClear](#doclear) | Clears the text of the object. |
-|	[DoClick](#doclick) | Clicks in the middle of the control if offset is not specified. |
-|	[DoEnsureVisible](#doensurevisible) | Ensure that a child item with the specified text is visible on screen. |
-|	[DoFindByXPath](#dofindbyxpath) | Finds an element by relative XPath expression. |
-|	[DoLongPress](#dolongpress) | Performs long press in the middle of the control if offset is not specified. |
-|	[DoPress](#dopress) | Presses in the middle of the control if offset is not specified. |
-|	[DoSendKeys](#dosendkeys) | Send a text to the object in character-by-character mode. |
-|	[DoTap](#dotap) | Taps the control. |
-|	[DoTwoFingerTap](#dotwofingertap) | Taps the control with two fingers. |
+|  [DoAction](#doaction) | Clicks in the middle of the control. |
+|  [DoClear](#doclear) | Clears the text of the object. |
+|  [DoClick](#doclick) | Clicks in the middle of the control if offset is not specified. |
+|  [DoEnsureVisible](#doensurevisible) | Ensure that a child item with the specified text is visible on screen. |
+|  [DoFindByXPath](#dofindbyxpath) | Finds an element by relative XPath expression. |
+|  [DoLongPress](#dolongpress) | Performs long press in the middle of the control if offset is not specified. |
+|  [DoPress](#dopress) | Presses in the middle of the control if offset is not specified. |
+|  [DoSendKeys](#dosendkeys) | Send a text to the object in character-by-character mode. |
+|  [DoTap](#dotap) | Taps the control. |
+|  [DoTwoFingerTap](#dotwofingertap) | Taps the control with two fingers. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ChildAt"></a>
 #### ChildAt
 
 
 Child object at index.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index | number | Index of the object to get. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetChildAt
-			
-		
+      
+    
 <a name="ChildCount"></a>
 #### ChildCount
 
 
 Number of child items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetChildCount
-			
-		
+      
+    
 <a name="Class"></a>
 #### Class
 
 
 Class name of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetClass
-			
-		
+      
+    
 <a name="Height"></a>
 #### Height
 
 
 Height of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetHeight
-			
-		
+      
+    
 <a name="Label"></a>
 #### Label
 
 
 Label of the iOS object
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetLabel
-			
-		
+      
+    
 <a name="Name"></a>
 #### Name
 
 
 Name of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetName
-			
-		
+      
+    
 <a name="NextSibling"></a>
 #### NextSibling
 
 
 `iOSObject` for the next sibling element. Requires Rapise 6.6+
 
-			
-	
-			
+      
+  
+      
 Type: iOSObject
-			
-			
+      
+      
 Accessors: GetNextSibling
-			
-		
+      
+    
 <a name="ObjectType"></a>
 #### ObjectType
 
 
 Type of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetObjectType
-			
-		
+      
+    
 <a name="Parent"></a>
 #### Parent
 
 
 `iOSObject` for the parent element. Requires Rapise 6.6+
 
-			
-	
-			
+      
+  
+      
 Type: iOSObject
-			
-			
+      
+      
 Accessors: GetParent
-			
-		
+      
+    
 <a name="PrevSibling"></a>
 #### PrevSibling
 
 
 `iOSObject` for the previous sibling element. Requires Rapise 6.6+
 
-			
-	
-			
+      
+  
+      
 Type: iOSObject
-			
-			
+      
+      
 Accessors: GetPrevSibling
-			
-		
+      
+    
 <a name="Property"></a>
 #### Property
 
 
 Value of a named property of the object.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | name | string | Property name. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetProperty
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText
-			
-		
+      
+    
 <a name="Width"></a>
 #### Width
 
 
 Width of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetWidth
-			
-		
+      
+    
 <a name="X"></a>
 #### X
 
 
 X-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetX
-			
-		
+      
+    
 <a name="Y"></a>
 #### Y
 
 
 Y-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetY
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAction"></a>    
 #### DoAction
 
 Clicks in the middle of the control.
 
 ```javascript
-DoAction() 
+SeS('SomeiOSObject').DoAction()
 ```
 
 
@@ -335,7 +335,7 @@ boolean: 'true' if success, 'false' otherwise.
 Clears the text of the object.
 
 ```javascript
-DoClear() 
+SeS('SomeiOSObject').DoClear()
 ```
 
 
@@ -355,16 +355,16 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks in the middle of the control if offset is not specified. Clicking with offset requires Rapise 8.0+.
 
 ```javascript
-DoClick(x, y) 
+SeS('SomeiOSObject').DoClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -383,7 +383,7 @@ boolean: 'true' if success, 'false' otherwise.
 Ensure that a child item with the specified text is visible on screen.
 
 ```javascript
-DoEnsureVisible() 
+SeS('SomeiOSObject').DoEnsureVisible()
 ```
 
 
@@ -403,15 +403,15 @@ boolean: 'true' if success, 'false' otherwise.
 Finds an element by relative XPath expression. Requires Rapise 6.6+
 
 ```javascript
-DoFindByXPath(xpath) 
+SeS('SomeiOSObject').DoFindByXPath(xpath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	Relative XPath expression. |
+| xpath | string |  Relative XPath expression. |
 
 
 
@@ -430,16 +430,16 @@ DoFindByXPath(xpath)
 Performs long press in the middle of the control if offset is not specified. Requires Rapise 8.0+.
 
 ```javascript
-DoLongPress(x, y) 
+SeS('SomeiOSObject').DoLongPress(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -458,17 +458,17 @@ boolean: 'true' if success, 'false' otherwise.
 Presses in the middle of the control if offset is not specified. Requires Rapise 8.0+.
 
 ```javascript
-DoPress(x, y, duration) 
+SeS('SomeiOSObject').DoPress(x, y, duration)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
-| duration | number |	Duration of press action.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| duration | number |  Duration of press action.<br>Optional. |
 
 
 
@@ -487,15 +487,15 @@ boolean: 'true' if success, 'false' otherwise.
 Send a text to the object in character-by-character mode.
 
 ```javascript
-DoSendKeys(keys) 
+SeS('SomeiOSObject').DoSendKeys(keys)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| keys | string |	Text to type into the object. |
+| keys | string |  Text to type into the object. |
 
 
 
@@ -514,7 +514,7 @@ boolean: 'true' if success, 'false' otherwise.
 Taps the control.
 
 ```javascript
-DoTap() 
+SeS('SomeiOSObject').DoTap()
 ```
 
 
@@ -534,7 +534,7 @@ boolean: 'true' if success, 'false' otherwise.
 Taps the control with two fingers.
 
 ```javascript
-DoTwoFingerTap() 
+SeS('SomeiOSObject').DoTwoFingerTap()
 ```
 
 
@@ -548,5 +548,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.iosobject.dotwofingertap"></a>
 
-	
+  
 

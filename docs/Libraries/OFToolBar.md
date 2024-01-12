@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -30,7 +30,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -39,73 +39,73 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#doclickitem) | Performs click on the navigation item |
+|  [DoClickItem](#doclickitem) | Performs click on the navigation item |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemChecked"></a>
 #### ItemChecked
 
 
 Check if item is checked.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetItemChecked, SetItemChecked
-			
-		
+      
+    
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
 
 Returns item index by its name. 'false' if name is not found.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | name | string |  |
 
 
-	
-			
+  
+      
 Type: number|boolean
-			
-			
+      
+      
 Accessors: GetItemIndexByName
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickItem"></a>    
 #### DoClickItem
 
 Performs click on the navigation item
 
 ```javascript
-DoClickItem(nameCaptionIndex) 
+SeS('SomeOFToolBar').DoClickItem(nameCaptionIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| nameCaptionIndex | string \| number |	index, name or caption of the item to be selected. |
+| nameCaptionIndex | string \| number |  index, name or caption of the item to be selected. |
 
 
 
@@ -118,5 +118,5 @@ boolean: 'true' if successful, 'false' otherwise.
 
 <a name="see.also.oftoolbar.doclickitem"></a>
 
-	
+  
 

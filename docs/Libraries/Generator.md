@@ -11,7 +11,7 @@ Use Generator object to produce unique and formatted data input. Requires Rapise
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,39 +20,39 @@ Use Generator object to produce unique and formatted data input. Requires Rapise
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Create](#create) | Creates generator object in Spira. |
-|	[Format](#format) | Formats string according to a template. |
-|	[GetNextValue](#getnextvalue) | Calculates next value of the generator according to a template. |
-|	[RandomString](#randomstring) | Generates a random alphanumeric string of a given length. |
+|  [Create](#create) | Creates generator object in Spira. |
+|  [Format](#format) | Formats string according to a template. |
+|  [GetNextValue](#getnextvalue) | Calculates next value of the generator according to a template. |
+|  [RandomString](#randomstring) | Generates a random alphanumeric string of a given length. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="Create"></a>    
 #### Create
 
 Creates generator object in Spira. To get next value from the generator use `GetNextValue`. Generator object can be used by parallel tests and simultaneously by different users.
 
 ```javascript
-Create(name, type, value, projectNameOrId) 
+Generator.Create(name, type, value, projectNameOrId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Unique name of the generator. |
-| type | string |	Type of the generator. Supported types: increment. |
-| value | string \| number |	Initial value of the generator. |
-| projectNameOrId | string \| number |	Name or ID of a Spira project that should host the generator. |
+| name | string |  Unique name of the generator. |
+| type | string |  Type of the generator. Supported types: increment. |
+| value | string \| number |  Initial value of the generator. |
+| projectNameOrId | string \| number |  Name or ID of a Spira project that should host the generator. |
 
 
 
@@ -95,15 +95,15 @@ Supported patterns:
 |	COMPANY	|	Random company name	|	Earthmark
 
 ```javascript
-Format(template) 
+Generator.Format(template)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| template | string |	Template string. |
+| template | string |  Template string. |
 
 
 
@@ -122,17 +122,17 @@ string | <br>number: Value generated using a template.
 Calculates next value of the generator according to a template. The template can be empty, can contain {value} placeholder or be a function.
 
 ```javascript
-GetNextValue(name, template, projectNameOrId) 
+Generator.GetNextValue(name, template, projectNameOrId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Unique name of the generator. |
-| template | string \| function |	Template for the value to return. If template is empty then generated value is returned as is. If it is a string then generated value replaces placeholder {value}. Template can be a function that receives the next value and calculates the value to return. |
-| projectNameOrId | string \| number |	Name or ID of a Spira project that hosts the generator. |
+| name | string |  Unique name of the generator. |
+| template | string \| function |  Template for the value to return. If template is empty then generated value is returned as is. If it is a string then generated value replaces placeholder {value}. Template can be a function that receives the next value and calculates the value to return. |
+| projectNameOrId | string \| number |  Name or ID of a Spira project that hosts the generator. |
 
 
 
@@ -151,15 +151,15 @@ string | <br>number: Next generated value or null
 Generates a random alphanumeric string of a given length. Requires Rapise 8.1+
 
 ```javascript
-RandomString(length) 
+Generator.RandomString(length)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| length | number |	Length of the string to return. |
+| length | number |  Length of the string to return. |
 
 
 
@@ -172,5 +172,5 @@ string: Generated string.
 
 <a name="see.also.generator.randomstring"></a>
 
-	
+  
 

@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,45 +36,45 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoPageDown](#dopagedown) | Clicks the PageDown spinner button. |
-|	[DoPageUp](#dopageup) | Clicks the PageUp spinner button. |
-|	[DoSetValue](#dosetvalue) | Sets the value of the spinner. |
+|  [DoPageDown](#dopagedown) | Clicks the PageDown spinner button. |
+|  [DoPageUp](#dopageup) | Clicks the PageUp spinner button. |
+|  [DoSetValue](#dosetvalue) | Sets the value of the spinner. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Value"></a>
 #### Value
 
 
 Gets/Sets the value of the spinner
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetValue, SetValue
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoPageDown"></a>    
 #### DoPageDown
 
 Clicks the PageDown spinner button.
 
 ```javascript
-DoPageDown() 
+SeS('SomeJQuerySpinner').DoPageDown()
 ```
 
 
@@ -94,7 +94,7 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks the PageUp spinner button.
 
 ```javascript
-DoPageUp() 
+SeS('SomeJQuerySpinner').DoPageUp()
 ```
 
 
@@ -114,15 +114,15 @@ boolean: 'true' if success, 'false' otherwise.
 Sets the value of the spinner.
 
 ```javascript
-DoSetValue(value) 
+SeS('SomeJQuerySpinner').DoSetValue(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | number |	The desired value of the spinner. |
+| value | number |  The desired value of the spinner. |
 
 
 
@@ -135,5 +135,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.jqueryspinner.dosetvalue"></a>
 
-	
+  
 

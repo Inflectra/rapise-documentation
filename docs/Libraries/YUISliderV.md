@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,33 +26,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoChange](#dochange) | Changes slider position. |
+|  [DoChange](#dochange) | Changes slider position. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoChange"></a>    
 #### DoChange
 
 Changes slider position.
 
 ```javascript
-DoChange(value) 
+SeS('SomeYUISliderV').DoChange(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | number |	Slider position to set. |
+| value | number |  Slider position to set. |
 
 
 
@@ -65,5 +65,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.yuisliderv.dochange"></a>
 
-	
+  
 

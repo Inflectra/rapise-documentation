@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,98 +38,98 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCheckItem](#docheckitem) | Checks items of this object. |
-|	[DoClickItem](#doclickitem) | Clicks the specified item |
-|	[DoSelectItem](#doselectitem) | Selects items of this object. |
+|  [DoCheckItem](#docheckitem) | Checks items of this object. |
+|  [DoClickItem](#doclickitem) | Clicks the specified item |
+|  [DoSelectItem](#doselectitem) | Selects items of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemChecked"></a>
 #### ItemChecked
 
 
 Check if item is checked.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | nameCaptionIndex | string \| number | index, name or caption of the item. |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetItemChecked
-			
-		
+      
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
+      
+    
 <a name="ItemSelected"></a>
 #### ItemSelected
 
 
 Check if item is selected.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | nameCaptionIndex | string \| number | index, name or caption of the item. |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetItemSelected
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoCheckItem"></a>    
 #### DoCheckItem
 
 Checks items of this object.
 
 ```javascript
-DoCheckItem(nameCaptionIndex, bCheck) 
+SeS('SomeMSComList').DoCheckItem(nameCaptionIndex, bCheck)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| nameCaptionIndex | string \| number |	index, name or caption of the item. |
-| bCheck | boolean |	Desired check state for the item. |
+| nameCaptionIndex | string \| number |  index, name or caption of the item. |
+| bCheck | boolean |  Desired check state for the item. |
 
 
 
@@ -148,18 +148,18 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks the specified item
 
 ```javascript
-DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset) 
+SeS('SomeMSComList').DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| nameCaptionIndex | string \| number |	index, name or caption of the item. |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| nameCaptionIndex | string \| number |  index, name or caption of the item. |
+| clickType | string |  Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -178,16 +178,16 @@ boolean: 'true' if successful, 'false' otherwise
 Selects items of this object. First it clears existing selection.
 
 ```javascript
-DoSelectItem(nameCaptionIndex, bSelect) 
+SeS('SomeMSComList').DoSelectItem(nameCaptionIndex, bSelect)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| nameCaptionIndex | string \| number |	index, name or caption of the item. |
-| bSelect | boolean |	Desired selected state for the item. |
+| nameCaptionIndex | string \| number |  index, name or caption of the item. |
+| bSelect | boolean |  Desired selected state for the item. |
 
 
 
@@ -200,5 +200,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.mscomlist.doselectitem"></a>
 
-	
+  
 

@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -31,7 +31,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -40,81 +40,81 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Performs click on the option set item |
+|  [DoSelectItem](#doselectitem) | Performs click on the option set item |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedItem"></a>
 #### SelectedItem
 
 
 Selected item of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedItem
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the selected item in a single string.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Performs click on the option set item
 
 ```javascript
-DoSelectItem(captionIndex) 
+SeS('SomeUltraOptionSet').DoSelectItem(captionIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| captionIndex | string \| number |	index or caption of the item to be selected. |
+| captionIndex | string \| number |  index or caption of the item to be selected. |
 
 
 
@@ -127,5 +127,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.ultraoptionset.doselectitem"></a>
 
-	
+  
 

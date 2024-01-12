@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -33,7 +33,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -42,112 +42,112 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoSelectItem](#doselectitem) | Selects an item of this object. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemIndex"></a>
 #### ItemIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetItemIndex, SetItemIndex
-			
-		
+      
+    
 <a name="ItemName"></a>
 #### ItemName
 
 
 Name of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetItemName
-			
-		
+      
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex, SetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedText"></a>
 #### SelectedText
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedText, SetSelectedText
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects an item of this object.
 
 ```javascript
-DoSelectItem(val) 
+SeS('SomeDXLookUpEdit').DoSelectItem(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | number |	index of value to select |
+| val | number |  index of value to select |
 
 
 
@@ -166,15 +166,15 @@ boolean: 'true' if success, 'false' otherwise.
 Sets text value of this object.
 
 ```javascript
-DoSetText(val) 
+SeS('SomeDXLookUpEdit').DoSetText(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | string |	Text value. |
+| val | string |  Text value. |
 
 
 
@@ -187,5 +187,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dxlookupedit.dosettext"></a>
 
-	
+  
 

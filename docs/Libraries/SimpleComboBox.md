@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects item of this object. |
+|  [DoSelectItem](#doselectitem) | Selects item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects item of this object.
 
 ```javascript
-DoSelectItem(itemName) 
+SeS('SomeSimpleComboBox').DoSelectItem(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	This is a name of item to select. Or an array of item names in the case of multi-select. |
+| itemName | string |  This is a name of item to select. Or an array of item names in the case of multi-select. |
 
 
 
@@ -91,7 +91,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <a name="see.also.simplecombobox.doselectitem"></a>
 
-	
+  
 
 
 
@@ -101,7 +101,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -111,7 +111,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -120,51 +120,51 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects item of this object. |
+|  [DoSelectItem](#doselectitem) | Selects item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects item of this object.
 
 ```javascript
-DoSelectItem(itemName) 
+SeS('SomeSimpleComboBox').DoSelectItem(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	This is a name of item to select. |
+| itemName | string |  This is a name of item to select. |
 
 
 
@@ -177,5 +177,5 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <a name="see.also.simplecombobox.doselectitem"></a>
 
-	
+  
 

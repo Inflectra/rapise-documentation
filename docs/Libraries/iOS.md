@@ -11,7 +11,7 @@ Global object. Use it to perform actions not related to a particular object. You
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,47 +20,47 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFlick](#doflick) | Flick action. |
-|	[DoGoToUrl](#dogotourl) | Opens URL in active browser. |
-|	[DoScreenshot](#doscreenshot) | Makes screenshot of a device. |
-|	[DoShake](#doshake) | Shakes device. |
-|	[DoSwipe](#doswipe) | Swipe action. |
-|	[DoTap](#dotap) | Tap screen. |
-|	[GetCapability](#getcapability) | Gets capability with specified name. |
-|	[GetContext](#getcontext) | Gets current context. |
-|	[GetDeviceOrientation](#getdeviceorientation) | Gets device orientation. |
-|	[SetContext](#setcontext) | Sets context. |
-|	[SetDeviceOrientation](#setdeviceorientation) | Sets device orientation. |
+|  [DoFlick](#doflick) | Flick action. |
+|  [DoGoToUrl](#dogotourl) | Opens URL in active browser. |
+|  [DoScreenshot](#doscreenshot) | Makes screenshot of a device. |
+|  [DoShake](#doshake) | Shakes device. |
+|  [DoSwipe](#doswipe) | Swipe action. |
+|  [DoTap](#dotap) | Tap screen. |
+|  [GetCapability](#getcapability) | Gets capability with specified name. |
+|  [GetContext](#getcontext) | Gets current context. |
+|  [GetDeviceOrientation](#getdeviceorientation) | Gets device orientation. |
+|  [SetContext](#setcontext) | Sets context. |
+|  [SetDeviceOrientation](#setdeviceorientation) | Sets device orientation. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoFlick"></a>    
 #### DoFlick
 
 Flick action.
 
 ```javascript
-DoFlick(endX, endY, startX, startY, touchCount) 
+iOS.DoFlick(endX, endY, startX, startY, touchCount)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| endX | number |	x coordinate where swipe ends (in pixels or relative units) |
-| endY | number |	y coordinate where swipe ends (in pixels or relative units) |
-| startX | number |	x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| startY | number |	y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| touchCount | number |	how many fingers to swipe with<br>Optional. |
+| endX | number |  x coordinate where swipe ends (in pixels or relative units) |
+| endY | number |  y coordinate where swipe ends (in pixels or relative units) |
+| startX | number |  x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| startY | number |  y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| touchCount | number |  how many fingers to swipe with<br>Optional. |
 
 
 
@@ -79,15 +79,15 @@ DoFlick(endX, endY, startX, startY, touchCount)
 Opens URL in active browser.
 
 ```javascript
-DoGoToUrl(url) 
+iOS.DoGoToUrl(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	 |
+| url | string |   |
 
 
 
@@ -106,15 +106,15 @@ DoGoToUrl(url)
 Makes screenshot of a device.
 
 ```javascript
-DoScreenshot(txtLabel) 
+iOS.DoScreenshot(txtLabel)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txtLabel | string |	Label of a screenshot in the report.<br>Optional. |
+| txtLabel | string |  Label of a screenshot in the report.<br>Optional. |
 
 
 
@@ -133,7 +133,7 @@ DoScreenshot(txtLabel)
 Shakes device.
 
 ```javascript
-DoShake() 
+iOS.DoShake()
 ```
 
 
@@ -153,20 +153,20 @@ DoShake()
 Swipe action.
 
 ```javascript
-DoSwipe(endX, endY, startX, startY, duration, touchCount) 
+iOS.DoSwipe(endX, endY, startX, startY, duration, touchCount)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| endX | number |	x coordinate where swipe ends (in pixels or relative units) |
-| endY | number |	y coordinate where swipe ends (in pixels or relative units) |
-| startX | number |	x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| startY | number |	y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| duration | number |	time (in seconds) to spend performing the swipe/drag<br>Optional. |
-| touchCount | number |	how many fingers to swipe with<br>Optional. |
+| endX | number |  x coordinate where swipe ends (in pixels or relative units) |
+| endY | number |  y coordinate where swipe ends (in pixels or relative units) |
+| startX | number |  x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| startY | number |  y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| duration | number |  time (in seconds) to spend performing the swipe/drag<br>Optional. |
+| touchCount | number |  how many fingers to swipe with<br>Optional. |
 
 
 
@@ -185,19 +185,19 @@ DoSwipe(endX, endY, startX, startY, duration, touchCount)
 Tap screen.
 
 ```javascript
-DoTap(x, y, duration, tapCount, touchCount) 
+iOS.DoTap(x, y, duration, tapCount, touchCount)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	x coordinate to tap (in pixels or relative units)<br>Optional. |
-| y | number |	y coordinate to tap (in pixels or relative units)<br>Optional. |
-| duration | number |	how long (in seconds) to tap<br>Optional. |
-| tapCount | number |	how many times to tap<br>Optional. |
-| touchCount | number |	how many fingers to tap with<br>Optional. |
+| x | number |  x coordinate to tap (in pixels or relative units)<br>Optional. |
+| y | number |  y coordinate to tap (in pixels or relative units)<br>Optional. |
+| duration | number |  how long (in seconds) to tap<br>Optional. |
+| tapCount | number |  how many times to tap<br>Optional. |
+| touchCount | number |  how many fingers to tap with<br>Optional. |
 
 
 
@@ -216,15 +216,15 @@ DoTap(x, y, duration, tapCount, touchCount)
 Gets capability with specified name.
 
 ```javascript
-GetCapability(name) 
+iOS.GetCapability(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of a capability. |
+| name | string |  Name of a capability. |
 
 
 
@@ -243,7 +243,7 @@ Capability string.
 Gets current context.
 
 ```javascript
-GetContext() 
+iOS.GetContext()
 ```
 
 
@@ -263,7 +263,7 @@ Either NATIVE_APP or WEBVIEW_1.
 Gets device orientation.
 
 ```javascript
-GetDeviceOrientation() 
+iOS.GetDeviceOrientation()
 ```
 
 
@@ -283,15 +283,15 @@ Device orientation.
 Sets context.
 
 ```javascript
-SetContext(name) 
+iOS.SetContext(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Either NATIVE_APP or WEBVIEW_1. |
+| name | string |  Either NATIVE_APP or WEBVIEW_1. |
 
 
 
@@ -305,15 +305,15 @@ SetContext(name)
 Sets device orientation.
 
 ```javascript
-SetDeviceOrientation(orientation) 
+iOS.SetDeviceOrientation(orientation)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| orientation | number |	ORIENTATION_PORTRAIT, ORIENTATION_LANDSCAPE |
+| orientation | number |  ORIENTATION_PORTRAIT, ORIENTATION_LANDSCAPE |
 
 
 
@@ -326,5 +326,5 @@ Device orientation.
 
 <a name="see.also.ios.setdeviceorientation"></a>
 
-	
+  
 

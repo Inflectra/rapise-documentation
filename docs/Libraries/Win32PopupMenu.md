@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#doclickitem) | Performs click on an item of this object. |
+|  [DoClickItem](#doclickitem) | Performs click on an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickItem"></a>    
 #### DoClickItem
 
 Performs click on an item of this object.
 
 ```javascript
-DoClickItem(itemName) 
+SeS('SomeWin32PopupMenu').DoClickItem(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	Name of the item to click |
+| itemName | string |  Name of the item to click |
 
 
 
@@ -91,5 +91,5 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 <a name="see.also.win32popupmenu.doclickitem"></a>
 
-	
+  
 

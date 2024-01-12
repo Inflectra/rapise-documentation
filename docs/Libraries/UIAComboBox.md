@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,89 +38,89 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
-|	[DoSetText](#dosettext) | Set text into combobox with an edit box. |
+|  [DoSelectItem](#doselectitem) | Selects an item of this object. |
+|  [DoSetText](#dosettext) | Set text into combobox with an edit box. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
 
 Returns item name by its index.'false' if name is not found.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index | number | Index of the item |
 
 
-	
-			
+  
+      
 Type: string|boolean
-			
-			
+      
+      
 Accessors: GetItemNameByIndex
-			
-		
+      
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex, SetSelectedIndex
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects an item of this object.
 
 ```javascript
-DoSelectItem(item) 
+SeS('SomeUIAComboBox').DoSelectItem(item)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| item | string \| number |	Item index or text value  to select. |
+| item | string \| number |  Item index or text value  to select. |
 
 
 
@@ -139,15 +139,15 @@ boolean: 'true' if success, 'false' otherwise.
 Set text into combobox with an edit box.
 
 ```javascript
-DoSetText(newText) 
+SeS('SomeUIAComboBox').DoSetText(newText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| newText | string |	Text to set |
+| newText | string |  Text to set |
 
 
 
@@ -160,5 +160,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.uiacombobox.dosettext"></a>
 
-	
+  
 

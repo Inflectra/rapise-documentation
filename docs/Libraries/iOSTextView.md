@@ -15,7 +15,7 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [iOSObject](iOSObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetText"></a>    
 #### DoSetText
 
 Sets text value of this object.
 
 ```javascript
-DoSetText(value) 
+SeS('SomeiOSTextView').DoSetText(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	Text value. |
+| value | string |  Text value. |
 
 
 
@@ -91,5 +91,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.iostextview.dosettext"></a>
 
-	
+  
 

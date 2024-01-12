@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,75 +38,75 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoNextMonth](#donextmonth) | Clicks on 'Next Month' selector. |
-|	[DoPrevMonth](#doprevmonth) | Clicks on 'Previous Month' selector. |
-|	[DoSelectDate](#doselectdate) | Selects specific date in the date picker. |
+|  [DoNextMonth](#donextmonth) | Clicks on 'Next Month' selector. |
+|  [DoPrevMonth](#doprevmonth) | Clicks on 'Previous Month' selector. |
+|  [DoSelectDate](#doselectdate) | Selects specific date in the date picker. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Day"></a>
 #### Day
 
 
 Current day displayed by the date picker.
 
-			
-	
-			
+      
+  
+      
 Type: string|number
-			
-			
+      
+      
 Accessors: GetDay
-			
-		
+      
+    
 <a name="Month"></a>
 #### Month
 
 
 Current month displayed by the date picker.
 
-			
-	
-			
+      
+  
+      
 Type: string|number
-			
-			
+      
+      
 Accessors: GetMonth
-			
-		
+      
+    
 <a name="Year"></a>
 #### Year
 
 
 Current year displayed by the date picker.
 
-			
-	
-			
+      
+  
+      
 Type: string|number
-			
-			
+      
+      
 Accessors: GetYear
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoNextMonth"></a>    
 #### DoNextMonth
 
 Clicks on 'Next Month' selector.
 
 ```javascript
-DoNextMonth() 
+SeS('SomeDomDynamicsAXDatePicker').DoNextMonth()
 ```
 
 
@@ -126,7 +126,7 @@ boolean: 'true' if success, 'false' otherwise
 Clicks on 'Previous Month' selector.
 
 ```javascript
-DoPrevMonth() 
+SeS('SomeDomDynamicsAXDatePicker').DoPrevMonth()
 ```
 
 
@@ -146,15 +146,15 @@ boolean: 'true' if success, 'false' otherwise
 Selects specific date in the date picker.
 
 ```javascript
-DoSelectDate(dateValue) 
+SeS('SomeDomDynamicsAXDatePicker').DoSelectDate(dateValue)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| dateValue | number |	New date to select |
+| dateValue | number |  New date to select |
 
 
 
@@ -167,5 +167,5 @@ boolean: 'true' if success, 'false' otherwise
 
 <a name="see.also.domdynamicsaxdatepicker.doselectdate"></a>
 
-	
+  
 

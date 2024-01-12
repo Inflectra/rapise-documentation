@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,51 +38,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetText"></a>    
 #### DoSetText
 
 Sets text value of this object.
 
 ```javascript
-DoSetText(val) 
+SeS('SomeDXButtonEdit').DoSetText(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | string |	Text value. |
+| val | string |  Text value. |
 
 
 
@@ -95,7 +95,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dxbuttonedit.dosettext"></a>
 
-	
+  
 
 
 
@@ -105,7 +105,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -116,7 +116,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -125,74 +125,74 @@ boolean: 'true' if success, 'false' otherwise.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickButton](#doclickbutton) | Selects an item of this object. |
+|  [DoClickButton](#doclickbutton) | Selects an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ButtonCount"></a>
 #### ButtonCount
 
 
 Number of buttons in this control.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetButtonCount
-			
-		
+      
+    
 <a name="ButtonKind"></a>
 #### ButtonKind
 
 
 Kind of a button at index. Returns one of Glyph, Ellipsis, Delete, OK, Plus, Minus, Redo, Undo or DropDown
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index | number | index of button |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetButtonKind
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickButton"></a>    
 #### DoClickButton
 
 Selects an item of this object.
 
 ```javascript
-DoClickButton(index, isLeft) 
+SeS('SomeDXButtonEdit').DoClickButton(index, isLeft)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	index of button to select |
-| isLeft | boolean |	set to 'true' if buttons are at the left of the control<br>Optional, Default: "false". |
+| index | number |  index of button to select |
+| isLeft | boolean |  set to 'true' if buttons are at the left of the control<br>Optional, Default: "false". |
 
 
 
@@ -205,5 +205,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dxbuttonedit.doclickbutton"></a>
 
-	
+  
 

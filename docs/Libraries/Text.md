@@ -11,7 +11,7 @@ Text object. Use it to perform text manipulations.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,63 +20,63 @@ Text object. Use it to perform text manipulations.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Base64Decode](#base64decode) | Decodes base64 string. |
-|	[Base64Encode](#base64encode) | Converts string to base64 format. |
-|	[CharAt](#charat) | Returns a new string consisting of the single UTF-16 code unit located at the specified `index` into the `str`. |
-|	[CharCodeAt](#charcodeat) | Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given `index` into the `str`. |
-|	[Concat](#concat) | Append `str2` to `str1`. |
-|	[Contains](#contains) | Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning `true` or `false` as appropriate. |
-|	[EndsWith](#endswith) | Determines whether a `str` ends with the characters of `substr`. |
-|	[FileContains](#filecontains) | Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning `true` or `false` as appropriate. |
-|	[FirstIndex](#firstindex) | The first index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
-|	[Format](#format) | Format given `formatStr` template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params. |
-|	[IncrementDate](#incrementdate) | Increments a date/time string with a given offset. |
-|	[Join](#join) | Concatenate all of the elements in `arr` array (or an array-like object), separated by commas or a specified `separator` string. |
-|	[LastIndex](#lastindex) | The last index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
-|	[Limit](#limit) | Limit `str` to be not more than `maxLength` chars. |
-|	[PadEnd](#padend) | Pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. |
-|	[PadStart](#padstart) | Pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. |
-|	[Repeat](#repeat) | Returns a new string which contains the specified number of copies of `str`, concatenated together. |
-|	[ReplaceAll](#replaceall) | Replace all occurences of `oldValue` in `str` with `newValue` . |
-|	[ReplaceFirst](#replacefirst) | Replace first occurence of `oldValue` in `str` with `newValue` . |
-|	[Split](#split) | Divides `str` into an ordered list of substrings, puts these substrings into an array, and returns the array. |
-|	[SplitAt](#splitat) | Get `atInd`th item after split. |
-|	[SplitCount](#splitcount) | Get number of parts that will occur after splitting given `str` with given `separator`. |
-|	[StartsWith](#startswith) | Determines whether `str` begins with the characters of `substr`. |
-|	[Substr](#substr) | Extract `length` characters from a `str`, counting from the `start` index. |
-|	[Substring](#substring) | Text.Substring() extracts characters from `indexStart` up to but not including `indexEnd`. |
-|	[ToLowercase](#tolowercase) | Returns `str` value converted to lowercase. |
-|	[ToString](#tostring) | Convert anything to a string. |
-|	[ToUppercase](#touppercase) | Returns the `str` value converted to uppercase. |
-|	[Trim](#trim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
-|	[TrimEnd](#trimend) | Strips trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
-|	[TrimStart](#trimstart) | Strips leading white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
+|  [Base64Decode](#base64decode) | Decodes base64 string. |
+|  [Base64Encode](#base64encode) | Converts string to base64 format. |
+|  [CharAt](#charat) | Returns a new string consisting of the single UTF-16 code unit located at the specified `index` into the `str`. |
+|  [CharCodeAt](#charcodeat) | Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given `index` into the `str`. |
+|  [Concat](#concat) | Append `str2` to `str1`. |
+|  [Contains](#contains) | Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning `true` or `false` as appropriate. |
+|  [EndsWith](#endswith) | Determines whether a `str` ends with the characters of `substr`. |
+|  [FileContains](#filecontains) | Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning `true` or `false` as appropriate. |
+|  [FirstIndex](#firstindex) | The first index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
+|  [Format](#format) | Format given `formatStr` template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params. |
+|  [IncrementDate](#incrementdate) | Increments a date/time string with a given offset. |
+|  [Join](#join) | Concatenate all of the elements in `arr` array (or an array-like object), separated by commas or a specified `separator` string. |
+|  [LastIndex](#lastindex) | The last index at which a given `substr` can be found in the `str`, or -1 if it is not present. |
+|  [Limit](#limit) | Limit `str` to be not more than `maxLength` chars. |
+|  [PadEnd](#padend) | Pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. |
+|  [PadStart](#padstart) | Pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. |
+|  [Repeat](#repeat) | Returns a new string which contains the specified number of copies of `str`, concatenated together. |
+|  [ReplaceAll](#replaceall) | Replace all occurences of `oldValue` in `str` with `newValue` . |
+|  [ReplaceFirst](#replacefirst) | Replace first occurence of `oldValue` in `str` with `newValue` . |
+|  [Split](#split) | Divides `str` into an ordered list of substrings, puts these substrings into an array, and returns the array. |
+|  [SplitAt](#splitat) | Get `atInd`th item after split. |
+|  [SplitCount](#splitcount) | Get number of parts that will occur after splitting given `str` with given `separator`. |
+|  [StartsWith](#startswith) | Determines whether `str` begins with the characters of `substr`. |
+|  [Substr](#substr) | Extract `length` characters from a `str`, counting from the `start` index. |
+|  [Substring](#substring) | Text.Substring() extracts characters from `indexStart` up to but not including `indexEnd`. |
+|  [ToLowercase](#tolowercase) | Returns `str` value converted to lowercase. |
+|  [ToString](#tostring) | Convert anything to a string. |
+|  [ToUppercase](#touppercase) | Returns the `str` value converted to uppercase. |
+|  [Trim](#trim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
+|  [TrimEnd](#trimend) | Strips trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
+|  [TrimStart](#trimstart) | Strips leading white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="Base64Decode"></a>    
 #### Base64Decode
 
 Decodes base64 string. Requires Rapise 8.1+.
 
 ```javascript
-Base64Decode(base64EncodedData) 
+Text.Base64Decode(base64EncodedData)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| base64EncodedData | string |	Base64 encoded string. |
+| base64EncodedData | string |  Base64 encoded string. |
 
 
 
@@ -90,15 +90,15 @@ Base64Decode(base64EncodedData)
 Converts string to base64 format. Requires Rapise 8.1+.
 
 ```javascript
-Base64Encode(plainText) 
+Text.Base64Encode(plainText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| plainText | string |	Input string to encode. |
+| plainText | string |  Input string to encode. |
 
 
 
@@ -112,16 +112,16 @@ Base64Encode(plainText)
 Returns a new string consisting of the single UTF-16 code unit located at the specified `index` into the `str`.
 
 ```javascript
-CharAt(str, index) 
+Text.CharAt(str, index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to extract from. |
-| index | number |	Character position. |
+| str | string |  Text to extract from. |
+| index | number |  Character position. |
 
 
 
@@ -140,16 +140,16 @@ string: Char at `index`.
 Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given `index` into the `str`.
 
 ```javascript
-CharCodeAt(str, index) 
+Text.CharCodeAt(str, index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to search in. |
-| index | number |	Character position. |
+| str | string |  Text to search in. |
+| index | number |  Character position. |
 
 
 
@@ -168,16 +168,16 @@ number: Char code at `index`.
 Append `str2` to `str1`.
 
 ```javascript
-Concat(str1, str2) 
+Text.Concat(str1, str2)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str1 | string |	1st part. |
-| str2 | string |	2nd part (may be array). |
+| str1 | string |  1st part. |
+| str2 | string |  2nd part (may be array). |
 
 
 
@@ -196,16 +196,16 @@ string: Combined string
 Perform a case-sensitive search to determine whether `substr` may be found within `str`, returning `true` or `false` as appropriate.
 
 ```javascript
-Contains(str, substr) 
+Text.Contains(str, substr)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to search in. |
-| substr | string |	Substring to find. |
+| str | string |  Text to search in. |
+| substr | string |  Substring to find. |
 
 
 
@@ -224,16 +224,16 @@ boolean: `true` if `substr` was found in `str`.
 Determines whether a `str` ends with the characters of `substr`.
 
 ```javascript
-EndsWith(str, substr) 
+Text.EndsWith(str, substr)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to search in. |
-| substr | string |	Substring to find. |
+| str | string |  Text to search in. |
+| substr | string |  Substring to find. |
 
 
 
@@ -252,16 +252,16 @@ boolean: `true` or `false` as appropriate
 Perform a case-sensitive search (find in file) to determine whether `substr` may be found within a text file represented by `filePath`, returning `true` or `false` as appropriate.
 
 ```javascript
-FileContains(filePath, substr) 
+Text.FileContains(filePath, substr)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| filePath | string |	File Path. |
-| substr | string |	Text to modify. |
+| filePath | string |  File Path. |
+| substr | string |  Text to modify. |
 
 
 
@@ -280,17 +280,17 @@ boolean: `true` if `substr` was found in the file.
 The first index at which a given `substr` can be found in the `str`, or -1 if it is not present. Search starts from `fromIndex`.
 
 ```javascript
-FirstIndex(str, substr, fromIndex) 
+Text.FirstIndex(str, substr, fromIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to search in. |
-| substr | string |	Substring to find. |
-| fromIndex | number |	An integer representing the index at which to start the search. Defaults to 0.<br>Optional. |
+| str | string |  Text to search in. |
+| substr | string |  Substring to find. |
+| fromIndex | number |  An integer representing the index at which to start the search. Defaults to 0.<br>Optional. |
 
 
 
@@ -310,16 +310,16 @@ Format given `formatStr` template string by expanding properties of `nameValueJs
 				Designed to be called from JavaScript. If you need to call it from `RVL` then consider using `RVL.FormatString` instead.
 
 ```javascript
-Format(formatStr, nameValueJsonObj) 
+Text.Format(formatStr, nameValueJsonObj)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| formatStr | string |	Format with template placeholders {a}, {value}, {x} etc. |
-| nameValueJsonObj | object |	JSON-formatted object, with properties used as input parameter names. |
+| formatStr | string |  Format with template placeholders {a}, {value}, {x} etc. |
+| nameValueJsonObj | object |  JSON-formatted object, with properties used as input parameter names. |
 
 
 
@@ -344,21 +344,21 @@ Increments a date/time string with a given offset. Requires Rapise 8.1+.
 3. Formats the date back and returns.
 
 ```javascript
-IncrementDate(dstr, fmt, years, months, days, hours, minutes) 
+Text.IncrementDate(dstr, fmt, years, months, days, hours, minutes)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| dstr | string |	Date/time string. If not set then current date/time is used. |
-| fmt | string |	Date/time format. |
-| years | number |	Year increment/decrement. |
-| months | number |	Month increment/decrement. |
-| days | number |	Day increment/decrement. |
-| hours | number |	Hour increment/decrement. |
-| minutes | number |	Minute increment/decrement. |
+| dstr | string |  Date/time string. If not set then current date/time is used. |
+| fmt | string |  Date/time format. |
+| years | number |  Year increment/decrement. |
+| months | number |  Month increment/decrement. |
+| days | number |  Day increment/decrement. |
+| hours | number |  Hour increment/decrement. |
+| minutes | number |  Minute increment/decrement. |
 
 
 
@@ -372,16 +372,16 @@ IncrementDate(dstr, fmt, years, months, days, hours, minutes)
 Concatenate all of the elements in `arr` array (or an array-like object), separated by commas or a specified `separator` string. If the array has only one item, then that item will be returned without using the separator.
 
 ```javascript
-Join(arr, separator) 
+Text.Join(arr, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| arr | array |	Input array. |
-| separator | string |	Join separator (default - ',')<br>Optional. |
+| arr | array |  Input array. |
+| separator | string |  Join separator (default - ',')<br>Optional. |
 
 
 
@@ -400,17 +400,17 @@ string: A string with all array elements joined. If arr.length is 0, the empty s
 The last index at which a given `substr` can be found in the `str`, or -1 if it is not present. Search backwards from `fromIndex`.
 
 ```javascript
-LastIndex(str, substr, fromIndex) 
+Text.LastIndex(str, substr, fromIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to search in. |
-| substr | string |	Substring to find. |
-| fromIndex | number |	An integer representing the index at which to start the search. Defaults to 0.<br>Optional. |
+| str | string |  Text to search in. |
+| substr | string |  Substring to find. |
+| fromIndex | number |  An integer representing the index at which to start the search. Defaults to 0.<br>Optional. |
 
 
 
@@ -429,17 +429,17 @@ number: Index or -1
 Limit `str` to be not more than `maxLength` chars. If `ellipsis` is specified, it is appended to the string.
 
 ```javascript
-Limit(str, maxLength, ellipsis) 
+Text.Limit(str, maxLength, ellipsis)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to limit. |
-| maxLength | number |	The maximum allowed length of the resulting string. |
-| ellipsis | string |	The padding text to append to the end if the string was actually shortened.<br>Optional. |
+| str | string |  Text to limit. |
+| maxLength | number |  The maximum allowed length of the resulting string. |
+| ellipsis | string |  The padding text to append to the end if the string was actually shortened.<br>Optional. |
 
 
 
@@ -458,17 +458,17 @@ string: Whole or shortened string.
 Pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied to the end of the `str`.
 
 ```javascript
-PadEnd(str, targetLength, padString) 
+Text.PadEnd(str, targetLength, padString)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to pad. |
-| targetLength | number |	The length of the resulting string once the current str has been padded. If the value is less than str.length, then str is returned as-is. |
-| padString | string |	The string to pad the current str with. |
+| str | string |  Text to pad. |
+| targetLength | number |  The length of the resulting string once the current str has been padded. If the value is less than str.length, then str is returned as-is. |
+| padString | string |  The string to pad the current str with. |
 
 
 
@@ -487,17 +487,17 @@ string: A String of the specified `targetLength` with `padString` applied from t
 Pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the `str`.
 
 ```javascript
-PadStart(str, targetLength, padString) 
+Text.PadStart(str, targetLength, padString)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to pad. |
-| targetLength | number |	The length of the resulting string once the current str has been padded. If the value is less than str.length, then str is returned as-is. |
-| padString | string |	The string to pad the current str with. |
+| str | string |  Text to pad. |
+| targetLength | number |  The length of the resulting string once the current str has been padded. If the value is less than str.length, then str is returned as-is. |
+| padString | string |  The string to pad the current str with. |
 
 
 
@@ -516,16 +516,16 @@ string: A String of the specified `targetLength` with `padString` applied from t
 Returns a new string which contains the specified number of copies of `str`, concatenated together.
 
 ```javascript
-Repeat(str, count) 
+Text.Repeat(str, count)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to repeat. |
-| count | number |	Number of times to repeat. |
+| str | string |  Text to repeat. |
+| count | number |  Number of times to repeat. |
 
 
 
@@ -544,17 +544,17 @@ string: string containing the specified number of copies of the given string.
 Replace all occurences of `oldValue` in `str` with `newValue` .
 
 ```javascript
-ReplaceAll(str, oldValue, newValue) 
+Text.ReplaceAll(str, oldValue, newValue)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to modify. |
-| oldValue | string |	Substring to find. |
-| newValue | string |	Replacement value. |
+| str | string |  Text to modify. |
+| oldValue | string |  Substring to find. |
+| newValue | string |  Replacement value. |
 
 
 
@@ -573,17 +573,17 @@ string: Text after replace.
 Replace first occurence of `oldValue` in `str` with `newValue` .
 
 ```javascript
-ReplaceFirst(str, oldValue, newValue) 
+Text.ReplaceFirst(str, oldValue, newValue)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to modify. |
-| oldValue | string |	Substring to find. |
-| newValue | string |	Replacement value. |
+| str | string |  Text to modify. |
+| oldValue | string |  Substring to find. |
+| newValue | string |  Replacement value. |
 
 
 
@@ -602,16 +602,16 @@ string: Text after replace.
 Divides `str` into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a `separator`.
 
 ```javascript
-Split(str, separator) 
+Text.Split(str, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to split. |
-| separator | string |	Split separator |
+| str | string |  Text to split. |
+| separator | string |  Split separator |
 
 
 
@@ -630,17 +630,17 @@ array: Array of strings
 Get `atInd`th item after split. If `atInd`<0 or `atInd` is more than split array size, `null` is returned.
 
 ```javascript
-SplitAt(str, separator, atInd) 
+Text.SplitAt(str, separator, atInd)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to split. |
-| separator | string |	Split separator |
-| atInd | number |	0-based index of item |
+| str | string |  Text to split. |
+| separator | string |  Split separator |
+| atInd | number |  0-based index of item |
 
 
 
@@ -659,16 +659,16 @@ string: Item string or null, if index is out of scope.
 Get number of parts that will occur after splitting given `str` with given `separator`.
 
 ```javascript
-SplitCount(str, separator) 
+Text.SplitCount(str, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to split. |
-| separator | string |	Split separator |
+| str | string |  Text to split. |
+| separator | string |  Split separator |
 
 
 
@@ -687,16 +687,16 @@ number: Number of split parts
 Determines whether `str` begins with the characters of `substr`.
 
 ```javascript
-StartsWith(str, substr) 
+Text.StartsWith(str, substr)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to search in. |
-| substr | string |	Substring to find. |
+| str | string |  Text to search in. |
+| substr | string |  Substring to find. |
 
 
 
@@ -722,17 +722,17 @@ Extract `length` characters from a `str`, counting from the `start` index.
 - For both start and length, `NaN` is treated as 0.
 
 ```javascript
-Substr(str, start, length) 
+Text.Substr(str, start, length)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to extract from. |
-| start | number |	where to start the substring. |
-| length | number |	how many characters to return.<br>Optional. |
+| str | string |  Text to extract from. |
+| start | number |  where to start the substring. |
+| length | number |  how many characters to return.<br>Optional. |
 
 
 
@@ -757,17 +757,17 @@ Text.Substring() extracts characters from `indexStart` up to but not including `
 Any argument value that is less than 0 or greater than `str.length` is treated as if it were 0 and `str.length`, respectively.
 
 ```javascript
-Substring(str, indexStart, indexEnd) 
+Text.Substring(str, indexStart, indexEnd)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to extract from. |
-| indexStart | number |	The index of the first character to include in the returned substring. |
-| indexEnd | number |	The index of the first character to exclude from the returned substring.<br>Optional. |
+| str | string |  Text to extract from. |
+| indexStart | number |  The index of the first character to include in the returned substring. |
+| indexEnd | number |  The index of the first character to exclude from the returned substring.<br>Optional. |
 
 
 
@@ -786,15 +786,15 @@ string: Substring
 Returns `str` value converted to lowercase.
 
 ```javascript
-ToLowercase(str) 
+Text.ToLowercase(str)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to process. |
+| str | string |  Text to process. |
 
 
 
@@ -813,15 +813,15 @@ string: Lowercase value.
 Convert anything to a string.
 
 ```javascript
-ToString(anyObj) 
+Text.ToString(anyObj)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| anyObj | object |	Object of any type |
+| anyObj | object |  Object of any type |
 
 
 
@@ -840,15 +840,15 @@ string: string representation of the object
 Returns the `str` value converted to uppercase.
 
 ```javascript
-ToUppercase(str) 
+Text.ToUppercase(str)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	Text to process. |
+| str | string |  Text to process. |
 
 
 
@@ -868,17 +868,17 @@ Strips leading and trailing white-space from a string, replaces sequences of whi
 Whitespace characters are [ \\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 ```javascript
-Trim(str, global, trimChars) 
+Text.Trim(str, global, trimChars)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	String to trim. |
-| global | boolean |	If 'true' then global trim is performed (whitespaces in the middle are substituted with a single space). If 'false' only ends are trimmed.<br>Optional, Default: "false". |
-| trimChars | string |	String with each char to be subject for trim.<br>Optional. |
+| str | string |  String to trim. |
+| global | boolean |  If 'true' then global trim is performed (whitespaces in the middle are substituted with a single space). If 'false' only ends are trimmed.<br>Optional, Default: "false". |
+| trimChars | string |  String with each char to be subject for trim.<br>Optional. |
 
 
 
@@ -898,16 +898,16 @@ Strips trailing white-space from a string, replaces sequences of whitespace char
 Whitespace characters are [ \\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 ```javascript
-TrimEnd(str, trimChars) 
+Text.TrimEnd(str, trimChars)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	String to trim. |
-| trimChars | string |	String with each char to be subject for trim.<br>Optional. |
+| str | string |  String to trim. |
+| trimChars | string |  String with each char to be subject for trim.<br>Optional. |
 
 
 
@@ -927,16 +927,16 @@ Strips leading white-space from a string, replaces sequences of whitespace chara
 Whitespace characters are [ \\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 ```javascript
-TrimStart(str, trimChars) 
+Text.TrimStart(str, trimChars)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	String to trim. |
-| trimChars | string |	String with each char to be subject for trim.<br>Optional. |
+| str | string |  String to trim. |
+| trimChars | string |  String with each char to be subject for trim.<br>Optional. |
 
 
 
@@ -949,5 +949,5 @@ string: Trimmed string.
 
 <a name="see.also.text.trimstart"></a>
 
-	
+  
 

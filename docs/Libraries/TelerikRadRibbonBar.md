@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -28,37 +28,37 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickApplicationButton](#doclickapplicationbutton) | Clicks an application button on the ribbon. |
-|	[DoClickItem](#doclickitem) | Clicks on an item on the ribbon. |
-|	[DoClickTab](#doclicktab) | Clicks on a tab in the ribbon. |
+|  [DoClickApplicationButton](#doclickapplicationbutton) | Clicks an application button on the ribbon. |
+|  [DoClickItem](#doclickitem) | Clicks on an item on the ribbon. |
+|  [DoClickTab](#doclicktab) | Clicks on a tab in the ribbon. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickApplicationButton"></a>    
 #### DoClickApplicationButton
 
 Clicks an application button on the ribbon.
 
 ```javascript
-DoClickApplicationButton(caption, xOffset, yOffset) 
+SeS('SomeTelerikRadRibbonBar').DoClickApplicationButton(caption, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Caption of the application button to click. |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| caption | string |  Caption of the application button to click. |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -77,17 +77,17 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks on an item on the ribbon.
 
 ```javascript
-DoClickItem(caption, xOffset, yOffset) 
+SeS('SomeTelerikRadRibbonBar').DoClickItem(caption, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Caption of an item to click. |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| caption | string |  Caption of an item to click. |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -106,17 +106,17 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks on a tab in the ribbon.
 
 ```javascript
-DoClickTab(caption, xOffset, yOffset) 
+SeS('SomeTelerikRadRibbonBar').DoClickTab(caption, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Caption of a tab to click. |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| caption | string |  Caption of a tab to click. |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -129,5 +129,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.telerikradribbonbar.doclicktab"></a>
 
-	
+  
 

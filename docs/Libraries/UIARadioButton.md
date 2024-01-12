@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,25 +26,25 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetCheck](#dosetcheck) | Sets check state of the object. |
+|  [DoSetCheck](#dosetcheck) | Sets check state of the object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetCheck"></a>    
 #### DoSetCheck
 
 Sets check state of the object.
 
 ```javascript
-DoSetCheck() 
+SeS('SomeUIARadioButton').DoSetCheck()
 ```
 
 
@@ -58,5 +58,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.uiaradiobutton.dosetcheck"></a>
 
-	
+  
 

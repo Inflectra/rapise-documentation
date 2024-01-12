@@ -15,7 +15,7 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -24,29 +24,29 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoScrollDown](#doscrolldown) | Scrolls content to show lower area. |
-|	[DoScrollLeft](#doscrollleft) | Scrolls content to show area to the left. |
-|	[DoScrollRight](#doscrollright) | Scrolls content to show area to the right. |
-|	[DoScrollToElementWithName](#doscrolltoelementwithname) | Scrolls to an sub control with name. |
-|	[DoScrollUp](#doscrollup) | Scrolls content to show upper area. |
+|  [DoScrollDown](#doscrolldown) | Scrolls content to show lower area. |
+|  [DoScrollLeft](#doscrollleft) | Scrolls content to show area to the left. |
+|  [DoScrollRight](#doscrollright) | Scrolls content to show area to the right. |
+|  [DoScrollToElementWithName](#doscrolltoelementwithname) | Scrolls to an sub control with name. |
+|  [DoScrollUp](#doscrollup) | Scrolls content to show upper area. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoScrollDown"></a>    
 #### DoScrollDown
 
 Scrolls content to show lower area.
 
 ```javascript
-DoScrollDown() 
+SeS('SomeiOSScrollView').DoScrollDown()
 ```
 
 
@@ -66,7 +66,7 @@ boolean: 'true' if success, 'false' otherwise.
 Scrolls content to show area to the left.
 
 ```javascript
-DoScrollLeft() 
+SeS('SomeiOSScrollView').DoScrollLeft()
 ```
 
 
@@ -86,7 +86,7 @@ boolean: 'true' if success, 'false' otherwise.
 Scrolls content to show area to the right.
 
 ```javascript
-DoScrollRight() 
+SeS('SomeiOSScrollView').DoScrollRight()
 ```
 
 
@@ -106,15 +106,15 @@ boolean: 'true' if success, 'false' otherwise.
 Scrolls to an sub control with name.
 
 ```javascript
-DoScrollToElementWithName(name) 
+SeS('SomeiOSScrollView').DoScrollToElementWithName(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Sub control name. |
+| name | string |  Sub control name. |
 
 
 
@@ -133,7 +133,7 @@ boolean: 'true' if success, 'false' otherwise.
 Scrolls content to show upper area.
 
 ```javascript
-DoScrollUp() 
+SeS('SomeiOSScrollView').DoScrollUp()
 ```
 
 
@@ -147,5 +147,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.iosscrollview.doscrollup"></a>
 
-	
+  
 

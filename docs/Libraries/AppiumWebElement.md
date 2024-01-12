@@ -11,7 +11,7 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,63 +20,63 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Clear](#clear) |  |
-|	[Click](#click) |  |
-|	[FindElementByAccessibilityId](#findelementbyaccessibilityid) |  |
-|	[FindElementByAndroidUIAutomator](#findelementbyandroiduiautomator) |  |
-|	[FindElementByClassName](#findelementbyclassname) |  |
-|	[FindElementByCssSelector](#findelementbycssselector) |  |
-|	[FindElementById](#findelementbyid) |  |
-|	[FindElementByIosUIAutomation](#findelementbyiosuiautomation) |  |
-|	[FindElementByLinkText](#findelementbylinktext) |  |
-|	[FindElementByName](#findelementbyname) |  |
-|	[FindElementByPartialLinkText](#findelementbypartiallinktext) |  |
-|	[FindElementByTagName](#findelementbytagname) |  |
-|	[FindElementByXPath](#findelementbyxpath) |  |
-|	[FindElementsByAccessibilityId](#findelementsbyaccessibilityid) |  |
-|	[FindElementsByAndroidUIAutomator](#findelementsbyandroiduiautomator) |  |
-|	[FindElementsByClassName](#findelementsbyclassname) |  |
-|	[FindElementsByCssSelector](#findelementsbycssselector) |  |
-|	[FindElementsById](#findelementsbyid) |  |
-|	[FindElementsByIosUIAutomation](#findelementsbyiosuiautomation) |  |
-|	[FindElementsByLinkText](#findelementsbylinktext) |  |
-|	[FindElementsByName](#findelementsbyname) |  |
-|	[FindElementsByPartialLinkText](#findelementsbypartiallinktext) |  |
-|	[FindElementsByTagName](#findelementsbytagname) |  |
-|	[FindElementsByXPath](#findelementsbyxpath) |  |
-|	[GetAttribute](#getattribute) |  |
-|	[GetCoordinates](#getcoordinates) |  |
-|	[GetCssValue](#getcssvalue) |  |
-|	[GetDisplayed](#getdisplayed) |  |
-|	[GetEnabled](#getenabled) |  |
-|	[GetHashCode](#gethashcode) |  |
-|	[GetLocation](#getlocation) |  |
-|	[GetLocationOnScreenOnceScrolledIntoView](#getlocationonscreenoncescrolledintoview) |  |
-|	[GetSelected](#getselected) |  |
-|	[GetSize](#getsize) |  |
-|	[GetTagName](#gettagname) |  |
-|	[GetText](#gettext) |  |
-|	[SendKeys](#sendkeys) |  |
-|	[SetImmediateValue](#setimmediatevalue) |  |
-|	[Submit](#submit) |  |
+|  [Clear](#clear) |  |
+|  [Click](#click) |  |
+|  [FindElementByAccessibilityId](#findelementbyaccessibilityid) |  |
+|  [FindElementByAndroidUIAutomator](#findelementbyandroiduiautomator) |  |
+|  [FindElementByClassName](#findelementbyclassname) |  |
+|  [FindElementByCssSelector](#findelementbycssselector) |  |
+|  [FindElementById](#findelementbyid) |  |
+|  [FindElementByIosUIAutomation](#findelementbyiosuiautomation) |  |
+|  [FindElementByLinkText](#findelementbylinktext) |  |
+|  [FindElementByName](#findelementbyname) |  |
+|  [FindElementByPartialLinkText](#findelementbypartiallinktext) |  |
+|  [FindElementByTagName](#findelementbytagname) |  |
+|  [FindElementByXPath](#findelementbyxpath) |  |
+|  [FindElementsByAccessibilityId](#findelementsbyaccessibilityid) |  |
+|  [FindElementsByAndroidUIAutomator](#findelementsbyandroiduiautomator) |  |
+|  [FindElementsByClassName](#findelementsbyclassname) |  |
+|  [FindElementsByCssSelector](#findelementsbycssselector) |  |
+|  [FindElementsById](#findelementsbyid) |  |
+|  [FindElementsByIosUIAutomation](#findelementsbyiosuiautomation) |  |
+|  [FindElementsByLinkText](#findelementsbylinktext) |  |
+|  [FindElementsByName](#findelementsbyname) |  |
+|  [FindElementsByPartialLinkText](#findelementsbypartiallinktext) |  |
+|  [FindElementsByTagName](#findelementsbytagname) |  |
+|  [FindElementsByXPath](#findelementsbyxpath) |  |
+|  [GetAttribute](#getattribute) |  |
+|  [GetCoordinates](#getcoordinates) |  |
+|  [GetCssValue](#getcssvalue) |  |
+|  [GetDisplayed](#getdisplayed) |  |
+|  [GetEnabled](#getenabled) |  |
+|  [GetHashCode](#gethashcode) |  |
+|  [GetLocation](#getlocation) |  |
+|  [GetLocationOnScreenOnceScrolledIntoView](#getlocationonscreenoncescrolledintoview) |  |
+|  [GetSelected](#getselected) |  |
+|  [GetSize](#getsize) |  |
+|  [GetTagName](#gettagname) |  |
+|  [GetText](#gettext) |  |
+|  [SendKeys](#sendkeys) |  |
+|  [SetImmediateValue](#setimmediatevalue) |  |
+|  [Submit](#submit) |  |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="Clear"></a>    
 #### Clear
 
 
 
 ```javascript
-Clear() 
+AppiumDriver.FindElementByAccessibilityId('UserName')Clear()
 ```
 
 
@@ -91,7 +91,7 @@ Clear()
 
 
 ```javascript
-Click() 
+AppiumDriver.FindElementByAccessibilityId('UserName')Click()
 ```
 
 
@@ -106,15 +106,15 @@ Click()
 
 
 ```javascript
-FindElementByAccessibilityId(selector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByAccessibilityId(selector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector |  |   |
 
 
 
@@ -128,15 +128,15 @@ FindElementByAccessibilityId(selector)
 
 
 ```javascript
-FindElementByAndroidUIAutomator(selector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByAndroidUIAutomator(selector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector |  |   |
 
 
 
@@ -150,15 +150,15 @@ FindElementByAndroidUIAutomator(selector)
 
 
 ```javascript
-FindElementByClassName(className) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByClassName(className)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| className |  |	 |
+| className |  |   |
 
 
 
@@ -172,15 +172,15 @@ FindElementByClassName(className)
 
 
 ```javascript
-FindElementByCssSelector(cssSelector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByCssSelector(cssSelector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cssSelector |  |	 |
+| cssSelector |  |   |
 
 
 
@@ -194,15 +194,15 @@ FindElementByCssSelector(cssSelector)
 
 
 ```javascript
-FindElementById(id) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementById(id)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| id |  |	 |
+| id |  |   |
 
 
 
@@ -216,15 +216,15 @@ FindElementById(id)
 
 
 ```javascript
-FindElementByIosUIAutomation(selector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByIosUIAutomation(selector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector |  |   |
 
 
 
@@ -238,15 +238,15 @@ FindElementByIosUIAutomation(selector)
 
 
 ```javascript
-FindElementByLinkText(linkText) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByLinkText(linkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| linkText |  |	 |
+| linkText |  |   |
 
 
 
@@ -260,15 +260,15 @@ FindElementByLinkText(linkText)
 
 
 ```javascript
-FindElementByName(name) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByName(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name |  |	 |
+| name |  |   |
 
 
 
@@ -282,15 +282,15 @@ FindElementByName(name)
 
 
 ```javascript
-FindElementByPartialLinkText(partialLinkText) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByPartialLinkText(partialLinkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| partialLinkText |  |	 |
+| partialLinkText |  |   |
 
 
 
@@ -304,15 +304,15 @@ FindElementByPartialLinkText(partialLinkText)
 
 
 ```javascript
-FindElementByTagName(tagName) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByTagName(tagName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tagName |  |	 |
+| tagName |  |   |
 
 
 
@@ -326,15 +326,15 @@ FindElementByTagName(tagName)
 
 
 ```javascript
-FindElementByXPath(xpath) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementByXPath(xpath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath |  |	 |
+| xpath |  |   |
 
 
 
@@ -348,15 +348,15 @@ FindElementByXPath(xpath)
 
 
 ```javascript
-FindElementsByAccessibilityId(selector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByAccessibilityId(selector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector |  |   |
 
 
 
@@ -370,15 +370,15 @@ FindElementsByAccessibilityId(selector)
 
 
 ```javascript
-FindElementsByAndroidUIAutomator(selector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByAndroidUIAutomator(selector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector |  |   |
 
 
 
@@ -392,15 +392,15 @@ FindElementsByAndroidUIAutomator(selector)
 
 
 ```javascript
-FindElementsByClassName(className) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByClassName(className)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| className |  |	 |
+| className |  |   |
 
 
 
@@ -414,15 +414,15 @@ FindElementsByClassName(className)
 
 
 ```javascript
-FindElementsByCssSelector(cssSelector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByCssSelector(cssSelector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cssSelector |  |	 |
+| cssSelector |  |   |
 
 
 
@@ -436,15 +436,15 @@ FindElementsByCssSelector(cssSelector)
 
 
 ```javascript
-FindElementsById(id) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsById(id)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| id |  |	 |
+| id |  |   |
 
 
 
@@ -458,15 +458,15 @@ FindElementsById(id)
 
 
 ```javascript
-FindElementsByIosUIAutomation(selector) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByIosUIAutomation(selector)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| selector |  |	 |
+| selector |  |   |
 
 
 
@@ -480,15 +480,15 @@ FindElementsByIosUIAutomation(selector)
 
 
 ```javascript
-FindElementsByLinkText(linkText) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByLinkText(linkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| linkText |  |	 |
+| linkText |  |   |
 
 
 
@@ -502,15 +502,15 @@ FindElementsByLinkText(linkText)
 
 
 ```javascript
-FindElementsByName(name) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByName(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name |  |	 |
+| name |  |   |
 
 
 
@@ -524,15 +524,15 @@ FindElementsByName(name)
 
 
 ```javascript
-FindElementsByPartialLinkText(partialLinkText) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByPartialLinkText(partialLinkText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| partialLinkText |  |	 |
+| partialLinkText |  |   |
 
 
 
@@ -546,15 +546,15 @@ FindElementsByPartialLinkText(partialLinkText)
 
 
 ```javascript
-FindElementsByTagName(tagName) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByTagName(tagName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tagName |  |	 |
+| tagName |  |   |
 
 
 
@@ -568,15 +568,15 @@ FindElementsByTagName(tagName)
 
 
 ```javascript
-FindElementsByXPath(xpath) 
+AppiumDriver.FindElementByAccessibilityId('UserName')FindElementsByXPath(xpath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath |  |	 |
+| xpath |  |   |
 
 
 
@@ -590,15 +590,15 @@ FindElementsByXPath(xpath)
 
 
 ```javascript
-GetAttribute(attributeName) 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetAttribute(attributeName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| attributeName |  |	 |
+| attributeName |  |   |
 
 
 
@@ -612,7 +612,7 @@ GetAttribute(attributeName)
 
 
 ```javascript
-GetCoordinates() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetCoordinates()
 ```
 
 
@@ -627,15 +627,15 @@ GetCoordinates()
 
 
 ```javascript
-GetCssValue(propertyName) 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetCssValue(propertyName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| propertyName |  |	 |
+| propertyName |  |   |
 
 
 
@@ -649,7 +649,7 @@ GetCssValue(propertyName)
 
 
 ```javascript
-GetDisplayed() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetDisplayed()
 ```
 
 
@@ -664,7 +664,7 @@ GetDisplayed()
 
 
 ```javascript
-GetEnabled() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetEnabled()
 ```
 
 
@@ -679,7 +679,7 @@ GetEnabled()
 
 
 ```javascript
-GetHashCode() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetHashCode()
 ```
 
 
@@ -694,7 +694,7 @@ GetHashCode()
 
 
 ```javascript
-GetLocation() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetLocation()
 ```
 
 
@@ -709,7 +709,7 @@ GetLocation()
 
 
 ```javascript
-GetLocationOnScreenOnceScrolledIntoView() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetLocationOnScreenOnceScrolledIntoView()
 ```
 
 
@@ -724,7 +724,7 @@ GetLocationOnScreenOnceScrolledIntoView()
 
 
 ```javascript
-GetSelected() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetSelected()
 ```
 
 
@@ -739,7 +739,7 @@ GetSelected()
 
 
 ```javascript
-GetSize() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetSize()
 ```
 
 
@@ -754,7 +754,7 @@ GetSize()
 
 
 ```javascript
-GetTagName() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetTagName()
 ```
 
 
@@ -769,7 +769,7 @@ GetTagName()
 
 
 ```javascript
-GetText() 
+AppiumDriver.FindElementByAccessibilityId('UserName')GetText()
 ```
 
 
@@ -784,15 +784,15 @@ GetText()
 
 
 ```javascript
-SendKeys(text) 
+AppiumDriver.FindElementByAccessibilityId('UserName')SendKeys(text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text |  |	 |
+| text |  |   |
 
 
 
@@ -806,15 +806,15 @@ SendKeys(text)
 
 
 ```javascript
-SetImmediateValue(value) 
+AppiumDriver.FindElementByAccessibilityId('UserName')SetImmediateValue(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value |  |	 |
+| value |  |   |
 
 
 
@@ -828,7 +828,7 @@ SetImmediateValue(value)
 
 
 ```javascript
-Submit() 
+AppiumDriver.FindElementByAccessibilityId('UserName')Submit()
 ```
 
 
@@ -837,5 +837,5 @@ Submit()
 
 <a name="see.also.appiumwebelement.submit"></a>
 
-	
+  
 

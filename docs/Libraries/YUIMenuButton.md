@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,43 +36,43 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#doclick) | Clicks the menu button. |
+|  [DoClick](#doclick) | Clicks the menu button. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Active"></a>
 #### Active
 
 
 Active state of the button. If the button is active it is highlighted in YUI. Usually to make an object Active user needs to move mouse over the object
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetActive
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClick"></a>    
 #### DoClick
 
 Clicks the menu button.
 
 ```javascript
-DoClick() 
+SeS('SomeYUIMenuButton').DoClick()
 ```
 
 
@@ -86,5 +86,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.yuimenubutton.doclick"></a>
 
-	
+  
 

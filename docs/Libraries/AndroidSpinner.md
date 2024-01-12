@@ -15,7 +15,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -24,33 +24,33 @@ Extends [AndroidObject](AndroidObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects an item with the specified name. |
+|  [DoSelectItem](#doselectitem) | Selects an item with the specified name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects an item with the specified name.
 
 ```javascript
-DoSelectItem(name) 
+SeS('SomeAndroidSpinner').DoSelectItem(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | number |	Item name. |
+| name | number |  Item name. |
 
 
 
@@ -63,5 +63,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.androidspinner.doselectitem"></a>
 
-	
+  
 

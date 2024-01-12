@@ -11,7 +11,7 @@ This is a JavaScript wrapper for RESTRequest
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,47 +20,47 @@ This is a JavaScript wrapper for RESTRequest
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
-|	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
-|	[GetCredential](#getcredential) | The HTTP Basic Authentication Credentials (if any). |
-|	[GetHeader](#getheader) | HTTP header |
-|	[GetMethod](#getmethod) | The HTTP Method being used for the request (GET, POST, etc. |
-|	[GetName](#getname) | The name of the request operation |
-|	[GetParameter](#getparameter) | Access request parameters. |
-|	[GetRequestBodyText](#getrequestbodytext) | The body of the HTTP request in raw text format |
-|	[GetUrl](#geturl) | The URL being used to access the web service |
-|	[SetCredential](#setcredential) | The HTTP Basic Authentication Credentials (if any). |
-|	[SetHeader](#setheader) | HTTP header |
-|	[SetMethod](#setmethod) | The HTTP Method being used for the request (GET, POST, etc. |
-|	[SetParameter](#setparameter) | Access request parameters. |
-|	[SetRequestBodyText](#setrequestbodytext) | The body of the HTTP request in raw text format |
-|	[SetUrl](#seturl) | The URL being used to access the web service |
+|  [DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
+|  [DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
+|  [GetCredential](#getcredential) | The HTTP Basic Authentication Credentials (if any). |
+|  [GetHeader](#getheader) | HTTP header |
+|  [GetMethod](#getmethod) | The HTTP Method being used for the request (GET, POST, etc. |
+|  [GetName](#getname) | The name of the request operation |
+|  [GetParameter](#getparameter) | Access request parameters. |
+|  [GetRequestBodyText](#getrequestbodytext) | The body of the HTTP request in raw text format |
+|  [GetUrl](#geturl) | The URL being used to access the web service |
+|  [SetCredential](#setcredential) | The HTTP Basic Authentication Credentials (if any). |
+|  [SetHeader](#setheader) | HTTP header |
+|  [SetMethod](#setmethod) | The HTTP Method being used for the request (GET, POST, etc. |
+|  [SetParameter](#setparameter) | Access request parameters. |
+|  [SetRequestBodyText](#setrequestbodytext) | The body of the HTTP request in raw text format |
+|  [SetUrl](#seturl) | The URL being used to access the web service |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoRemoveParameter"></a>    
 #### DoRemoveParameter
 
 Remove one pre-defined parameter.
 
 ```javascript
-DoRemoveParameter(name) 
+RESTRequest.DoRemoveParameter(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Parameter name |
+| name | string |  Parameter name |
 
 
 
@@ -74,15 +74,15 @@ DoRemoveParameter(name)
 Remove one pre-defined request header by name.
 
 ```javascript
-DoRemoveRequestHeader(name) 
+RESTRequest.DoRemoveRequestHeader(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Header name |
+| name | string |  Header name |
 
 
 
@@ -106,7 +106,7 @@ SeS("Operation_Name").SetCredential(credential);
 Another way is to pass user name and password as first and second parameter respectively, e.g. `SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");`
 
 ```javascript
-GetCredential() 
+RESTRequest.GetCredential()
 ```
 
 
@@ -121,15 +121,15 @@ GetCredential()
 HTTP header
 
 ```javascript
-GetHeader(name) 
+RESTRequest.GetHeader(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Header Name |
+| name | string |  Header Name |
 
 
 
@@ -143,7 +143,7 @@ GetHeader(name)
 The HTTP Method being used for the request (GET, POST, etc.)
 
 ```javascript
-GetMethod() 
+RESTRequest.GetMethod()
 ```
 
 
@@ -158,7 +158,7 @@ GetMethod()
 The name of the request operation
 
 ```javascript
-GetName() 
+RESTRequest.GetName()
 ```
 
 
@@ -173,15 +173,15 @@ GetName()
 Access request parameters. Request Body, Headers and Url is then pre-processed by replacing each {paramName} entry with paramName's value.
 
 ```javascript
-GetParameter(name) 
+RESTRequest.GetParameter(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of a parameter. |
+| name | string |  Name of a parameter. |
 
 
 
@@ -195,7 +195,7 @@ GetParameter(name)
 The body of the HTTP request in raw text format
 
 ```javascript
-GetRequestBodyText() 
+RESTRequest.GetRequestBodyText()
 ```
 
 
@@ -210,7 +210,7 @@ GetRequestBodyText()
 The URL being used to access the web service
 
 ```javascript
-GetUrl() 
+RESTRequest.GetUrl()
 ```
 
 
@@ -235,16 +235,16 @@ SeS("Operation_Name").SetCredential(credential);
 Another way is to pass user name and password as first and second parameter respectively, e.g. `SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");`
 
 ```javascript
-SetCredential(value, value2) 
+RESTRequest.SetCredential(value, value2)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string \| object |	User name or full object with credentials. |
-| value2 | string |	Password string. Do not set this parameter if you pass object as the first one. |
+| value | string \| object |  User name or full object with credentials. |
+| value2 | string |  Password string. Do not set this parameter if you pass object as the first one. |
 
 
 
@@ -258,16 +258,16 @@ SetCredential(value, value2)
 HTTP header
 
 ```javascript
-SetHeader(name, value) 
+RESTRequest.SetHeader(name, value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Header Name |
-| value | string |	Header Value |
+| name | string |  Header Name |
+| value | string |  Header Value |
 
 
 
@@ -281,15 +281,15 @@ SetHeader(name, value)
 The HTTP Method being used for the request (GET, POST, etc.)
 
 ```javascript
-SetMethod(method) 
+RESTRequest.SetMethod(method)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| method | string |	New request method (if you ever need it!) |
+| method | string |  New request method (if you ever need it!) |
 
 
 
@@ -303,16 +303,16 @@ SetMethod(method)
 Access request parameters. Request Body, Headers and Url is then pre-processed by replacing each {paramName} entry with paramName's value.
 
 ```javascript
-SetParameter(name, value) 
+RESTRequest.SetParameter(name, value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of a parameter. |
-| value | string |	Value of a parameter |
+| name | string |  Name of a parameter. |
+| value | string |  Value of a parameter |
 
 
 
@@ -326,15 +326,15 @@ SetParameter(name, value)
 The body of the HTTP request in raw text format
 
 ```javascript
-SetRequestBodyText(body) 
+RESTRequest.SetRequestBodyText(body)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| body | string |	New version of request data |
+| body | string |  New version of request data |
 
 
 
@@ -348,15 +348,15 @@ SetRequestBodyText(body)
 The URL being used to access the web service
 
 ```javascript
-SetUrl(url) 
+RESTRequest.SetUrl(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	New Url |
+| url | string |  New Url |
 
 
 
@@ -364,5 +364,5 @@ SetUrl(url)
 
 <a name="see.also.restrequest.seturl"></a>
 
-	
+  
 

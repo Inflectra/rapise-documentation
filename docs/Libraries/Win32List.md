@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects item of this object. |
+|  [DoSelectItem](#doselectitem) | Selects item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects item of this object.
 
 ```javascript
-DoSelectItem(itemName) 
+SeS('SomeWin32List').DoSelectItem(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	This is a name of item to select. Or an array of item names in the case of multi-select. |
+| itemName | string |  This is a name of item to select. Or an array of item names in the case of multi-select. |
 
 
 
@@ -91,7 +91,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <a name="see.also.win32list.doselectitem"></a>
 
-	
+  
 
 
 
@@ -101,7 +101,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -110,33 +110,33 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoExpand](#doexpand) | Expands an item of this object. |
+|  [DoExpand](#doexpand) | Expands an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoExpand"></a>    
 #### DoExpand
 
 Expands an item of this object.
 
 ```javascript
-DoExpand(itemName) 
+SeS('SomeWin32List').DoExpand(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	Name of the item to expand |
+| itemName | string |  Name of the item to expand |
 
 
 
@@ -149,5 +149,5 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 <a name="see.also.win32list.doexpand"></a>
 
-	
+  
 

@@ -11,7 +11,7 @@ File object. Use it to perform actions not related to a particular object. You d
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,49 +20,49 @@ File object. Use it to perform actions not related to a particular object. You d
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Append](#append) | Appends text to a file. |
-|	[Copy](#copy) | Copy file `srcFileName` to `dstFileOrFolder`. |
-|	[CreateFolder](#createfolder) | Creates a folder. |
-|	[Delete](#delete) | Deletes a file. |
-|	[DeleteFolder](#deletefolder) | Deletes a folder. |
-|	[Exists](#exists) | Checks if file exists or not. |
-|	[Find](#find) | <p>Find files in folder using wildcard pattern (including * and ?). |
-|	[FolderExists](#folderexists) | Checks if folder exists. |
-|	[FolderInfo](#folderinfo) | Gets information about a folder. |
-|	[Include](#include) | Includes code from a file. |
-|	[IncludeOnce](#includeonce) | Includes code from a file if it was not included earlier. |
-|	[Info](#info) | Gets information about a file. |
-|	[Read](#read) | Reads UTF-8 encoded text file. |
-|	[ResolvePath](#resolvepath) | Finds the file in test folders and calculates its absolute path. |
-|	[Touch](#touch) | Sets file modification time to current time. |
-|	[Write](#write) | Writes text file. |
+|  [Append](#append) | Appends text to a file. |
+|  [Copy](#copy) | Copy file `srcFileName` to `dstFileOrFolder`. |
+|  [CreateFolder](#createfolder) | Creates a folder. |
+|  [Delete](#delete) | Deletes a file. |
+|  [DeleteFolder](#deletefolder) | Deletes a folder. |
+|  [Exists](#exists) | Checks if file exists or not. |
+|  [Find](#find) | <p>Find files in folder using wildcard pattern (including * and ?). |
+|  [FolderExists](#folderexists) | Checks if folder exists. |
+|  [FolderInfo](#folderinfo) | Gets information about a folder. |
+|  [Include](#include) | Includes code from a file. |
+|  [IncludeOnce](#includeonce) | Includes code from a file if it was not included earlier. |
+|  [Info](#info) | Gets information about a file. |
+|  [Read](#read) | Reads UTF-8 encoded text file. |
+|  [ResolvePath](#resolvepath) | Finds the file in test folders and calculates its absolute path. |
+|  [Touch](#touch) | Sets file modification time to current time. |
+|  [Write](#write) | Writes text file. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="Append"></a>    
 #### Append
 
 Appends text to a file.
 
 ```javascript
-Append(fileName, text) 
+File.Append(fileName, text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to append text. |
-| text | string |	Text to append to the file. |
+| fileName | string |  Name of the file to append text. |
+| text | string |  Text to append to the file. |
 
 
 
@@ -76,16 +76,16 @@ Append(fileName, text)
 Copy file `srcFileName` to `dstFileOrFolder`. If destination file exists, it gets overwritten. Requires Rapise 8.0+.
 
 ```javascript
-Copy(srcFileName, dstFileOrFolder) 
+File.Copy(srcFileName, dstFileOrFolder)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| srcFileName | string |	Character string file specification, which can include wildcard characters, for one or more files to be copied. |
-| dstFileOrFolder | string |	Character string destination where the file or files from source are to be copied. Wildcard characters are not allowed. |
+| srcFileName | string |  Character string file specification, which can include wildcard characters, for one or more files to be copied. |
+| dstFileOrFolder | string |  Character string destination where the file or files from source are to be copied. Wildcard characters are not allowed. |
 
 
 
@@ -104,15 +104,15 @@ true if succeeded, false otherwise.
 Creates a folder.
 
 ```javascript
-CreateFolder(folderPath) 
+File.CreateFolder(folderPath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| folderPath | string |	Path to a folder. |
+| folderPath | string |  Path to a folder. |
 
 
 
@@ -126,15 +126,15 @@ CreateFolder(folderPath)
 Deletes a file.
 
 ```javascript
-Delete(fileName) 
+File.Delete(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to delete. |
+| fileName | string |  Name of the file to delete. |
 
 
 
@@ -148,15 +148,15 @@ Delete(fileName)
 Deletes a folder.
 
 ```javascript
-DeleteFolder(folderPath) 
+File.DeleteFolder(folderPath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| folderPath | string |	Path to a folder. |
+| folderPath | string |  Path to a folder. |
 
 
 
@@ -170,15 +170,15 @@ DeleteFolder(folderPath)
 Checks if file exists or not.
 
 ```javascript
-Exists(fileName) 
+File.Exists(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to check. |
+| fileName | string |  Name of the file to check. |
 
 
 
@@ -207,20 +207,20 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 </pre>
 
 ```javascript
-Find(path, searchPattern, recursive, firstOnly, files, folders) 
+File.Find(path, searchPattern, recursive, firstOnly, files, folders)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path to a folder to search in. |
-| searchPattern | string |	Search pattern (may include * and ? wildcards, but no regexp). |
-| recursive | boolean |	'true' for folder and subfolders.<br>Optional, Default: "false". |
-| firstOnly | boolean |	Return only first matching item (if any).<br>Optional, Default: "false". |
-| files | boolean |	Return matching files.<br>Optional, Default: "true". |
-| folders | boolean |	Return matching folders.<br>Optional, Default: "false". |
+| path | string |  Path to a folder to search in. |
+| searchPattern | string |  Search pattern (may include * and ? wildcards, but no regexp). |
+| recursive | boolean |  'true' for folder and subfolders.<br>Optional, Default: "false". |
+| firstOnly | boolean |  Return only first matching item (if any).<br>Optional, Default: "false". |
+| files | boolean |  Return matching files.<br>Optional, Default: "true". |
+| folders | boolean |  Return matching folders.<br>Optional, Default: "false". |
 
 
 
@@ -239,15 +239,15 @@ string: \n-separated string where each line is a path to the found item.
 Checks if folder exists.
 
 ```javascript
-FolderExists(folderPath) 
+File.FolderExists(folderPath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| folderPath | string |	Path to a folder. |
+| folderPath | string |  Path to a folder. |
 
 
 
@@ -266,15 +266,15 @@ true if folder exists, false - otherwise.
 Gets information about a folder.
 
 ```javascript
-FolderInfo(folderPath) 
+File.FolderInfo(folderPath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| folderPath | string |	Path to a folder. |
+| folderPath | string |  Path to a folder. |
 
 
 
@@ -296,15 +296,15 @@ Normally used together with eval statement, i.e.:
 `eval( File.Include('myfile.js') )`
 
 ```javascript
-Include(fileName) 
+File.Include(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to load. |
+| fileName | string |  Name of the file to load. |
 
 
 
@@ -325,15 +325,15 @@ Normally used together with eval statement, i.e.:
 `eval( File.IncludeOnce('myfile.js') )`
 
 ```javascript
-IncludeOnce(fileName) 
+File.IncludeOnce(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to load. |
+| fileName | string |  Name of the file to load. |
 
 
 
@@ -352,15 +352,15 @@ Contents of the source file for evaluation.
 Gets information about a file.
 
 ```javascript
-Info(fileName) 
+File.Info(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file. |
+| fileName | string |  Name of the file. |
 
 
 
@@ -380,15 +380,15 @@ e.g. DateLastModified, Size, Type, Name, Path.
 Reads UTF-8 encoded text file.
 
 ```javascript
-Read(fileName) 
+File.Read(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to read. |
+| fileName | string |  Name of the file to read. |
 
 
 
@@ -407,16 +407,16 @@ Contents of the text file as string.
 Finds the file in test folders and calculates its absolute path.
 
 ```javascript
-ResolvePath(fileName, relTo) 
+File.ResolvePath(fileName, relTo)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to resolve path. |
-| relTo | string |	Resolve path relative to a given File or Dir.<br>Optional. |
+| fileName | string |  Name of the file to resolve path. |
+| relTo | string |  Resolve path relative to a given File or Dir.<br>Optional. |
 
 
 
@@ -435,15 +435,15 @@ Absolute path of the file.
 Sets file modification time to current time.
 
 ```javascript
-Touch(fileName) 
+File.Touch(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to touch. |
+| fileName | string |  Name of the file to touch. |
 
 
 
@@ -457,16 +457,16 @@ Touch(fileName)
 Writes text file.
 
 ```javascript
-Write(fileName, text) 
+File.Write(fileName, text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of the file to write. |
-| text | string |	Text to write into the file. |
+| fileName | string |  Name of the file to write. |
+| text | string |  Text to write into the file. |
 
 
 
@@ -474,5 +474,5 @@ Write(fileName, text)
 
 <a name="see.also.file.write"></a>
 
-	
+  
 

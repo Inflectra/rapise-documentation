@@ -11,7 +11,7 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,35 +20,35 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[GetCapability](#getcapability) |  |
-|	[HasCapability](#hascapability) |  |
-|	[SetCapability](#setcapability) |  |
+|  [GetCapability](#getcapability) |  |
+|  [HasCapability](#hascapability) |  |
+|  [SetCapability](#setcapability) |  |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="GetCapability"></a>    
 #### GetCapability
 
 
 
 ```javascript
-GetCapability(capability) 
+AppiumDriver.CreateDesiredCapabilities().GetCapability(capability)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| capability |  |	 |
+| capability |  |   |
 
 
 
@@ -62,15 +62,15 @@ GetCapability(capability)
 
 
 ```javascript
-HasCapability(capability) 
+AppiumDriver.CreateDesiredCapabilities().HasCapability(capability)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| capability |  |	 |
+| capability |  |   |
 
 
 
@@ -84,16 +84,16 @@ HasCapability(capability)
 
 
 ```javascript
-SetCapability(capability, capabilityValue) 
+AppiumDriver.CreateDesiredCapabilities().SetCapability(capability, capabilityValue)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| capability |  |	 |
-| capabilityValue |  |	 |
+| capability |  |   |
+| capabilityValue |  |   |
 
 
 
@@ -101,5 +101,5 @@ SetCapability(capability, capabilityValue)
 
 <a name="see.also.appiumcapabilities.setcapability"></a>
 
-	
+  
 

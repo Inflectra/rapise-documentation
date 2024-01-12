@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -28,36 +28,36 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoGetSubmenuProperty](#dogetsubmenuproperty) | Gets submenu property. |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoGetSubmenuProperty](#dogetsubmenuproperty) | Gets submenu property. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoGetSubmenuProperty"></a>    
 #### DoGetSubmenuProperty
 
 Gets submenu property.
 
 ```javascript
-DoGetSubmenuProperty(path, property, separator) 
+SeS('SomeOracleFormsMenuBar').DoGetSubmenuProperty(path, property, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| property | string |	Name of a property. Available properties can be seen in Java Spy. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| property | string |  Name of a property. Available properties can be seen in Java Spy. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -76,16 +76,16 @@ string | <br>boolean: Submenu property, 'false' otherwise.
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, separator) 
+SeS('SomeOracleFormsMenuBar').DoMenu(path, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -98,5 +98,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.oracleformsmenubar.domenu"></a>
 
-	
+  
 

@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -39,7 +39,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -48,275 +48,275 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#doclick) | Performs left click at the center of an object. |
-|	[DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
-|	[DoFindByLocation](#dofindbylocation) | Finds nested element by its location string. |
-|	[DoFindByText](#dofindbytext) | Find nested element by its text (Value and Name of each element are compared with specified text or regular expression). |
-|	[DoFindElementByCondition](#dofindelementbycondition) | Finds first element matching the condition. |
-|	[DoFindElementsByCondition](#dofindelementsbycondition) | Finds all elements matching the condition |
-|	[DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
+|  [DoClick](#doclick) | Performs left click at the center of an object. |
+|  [DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
+|  [DoFindByLocation](#dofindbylocation) | Finds nested element by its location string. |
+|  [DoFindByText](#dofindbytext) | Find nested element by its text (Value and Name of each element are compared with specified text or regular expression). |
+|  [DoFindElementByCondition](#dofindelementbycondition) | Finds first element matching the condition. |
+|  [DoFindElementsByCondition](#dofindelementsbycondition) | Finds all elements matching the condition |
+|  [DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="AutomationId"></a>
 #### AutomationId
 
 
 Automation ID of UI Automation object
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetAutomationId
-			
-		
+      
+    
 <a name="ChildAt"></a>
 #### ChildAt
 
 
 Object for nth child of this object's UI Automation node
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | ind | number | Zero-based index for a required child |
 
 
-	
-			
+  
+      
 Type: UIAObject
-			
-			
+      
+      
 Accessors: GetChildAt
-			
-		
+      
+    
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
 
 Number of UI Automation nodes within current node
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetChildrenCount
-			
-		
+      
+    
 <a name="Height"></a>
 #### Height
 
 
 Height of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetHeight
-			
-		
+      
+    
 <a name="IndexInParent"></a>
 #### IndexInParent
 
 
 Object's order index in parent UI Automation node
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetIndexInParent
-			
-		
+      
+    
 <a name="Name"></a>
 #### Name
 
 
 Name of of UI Automation object
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetName
-			
-		
+      
+    
 <a name="NextSibling"></a>
 #### NextSibling
 
 
 Object for UI Automation next sibling node
 
-			
-	
-			
+      
+  
+      
 Type: UIAObject
-			
-			
+      
+      
 Accessors: GetNextSibling
-			
-		
+      
+    
 <a name="Parent"></a>
 #### Parent
 
 
 Object for UI Automation parent node
 
-			
-	
-			
+      
+  
+      
 Type: UIAObject
-			
-			
+      
+      
 Accessors: GetParent
-			
-		
+      
+    
 <a name="PrevSibling"></a>
 #### PrevSibling
 
 
 Object for UI Automation previous sibling node
 
-			
-	
-			
+      
+  
+      
 Type: UIAObject
-			
-			
+      
+      
 Accessors: GetPrevSibling
-			
-		
+      
+    
 <a name="TypeName"></a>
 #### TypeName
 
 
 Type name of UI Automation object
 
-			
-	
-			
+      
+  
+      
 Type: String
-			
-			
+      
+      
 Accessors: GetTypeName
-			
-		
+      
+    
 <a name="Value"></a>
 #### Value
 
 
 Value of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetValue
-			
-		
+      
+    
 <a name="Visible"></a>
 #### Visible
 
 
 Returns `true` if the element is visible, otherwise - `false`. Requires Rapise 6.6+
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetVisible
-			
-		
+      
+    
 <a name="Width"></a>
 #### Width
 
 
 Width of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetWidth
-			
-		
+      
+    
 <a name="X"></a>
 #### X
 
 
 X-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetX
-			
-		
+      
+    
 <a name="Y"></a>
 #### Y
 
 
 Y-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetY
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClick"></a>    
 #### DoClick
 
 Performs left click at the center of an object. It is a customizable variant of LClick action.
 
 ```javascript
-DoClick(x, y) 
+SeS('SomeUIAObject').DoClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -330,21 +330,21 @@ DoClick(x, y)
 Dumps Spy data for the object.
 
 ```javascript
-DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps) 
+SeS('SomeUIAObject').DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: "false". |
-| maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0". |
-| trimValue | number |	Determines maximum length of a property value. Excess characters are truncated.<br>Optional, Default: "256". |
-| indent | string |	Indentation string for child objects and properties.<br>Optional, Default: "\". |
-| filePath | string |	If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "". |
-| append | boolean |	If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false". |
-| ignoreProps | Array |	Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: "undefined". |
+| dumpProperties | boolean |  If 'true' then includes properties to the result.<br>Optional, Default: "false". |
+| maxDepth | number |  Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0". |
+| trimValue | number |  Determines maximum length of a property value. Excess characters are truncated.<br>Optional, Default: "256". |
+| indent | string |  Indentation string for child objects and properties.<br>Optional, Default: "\". |
+| filePath | string |  If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "". |
+| append | boolean |  If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false". |
+| ignoreProps | Array |  Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: "undefined". |
 
 
 
@@ -363,15 +363,15 @@ string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write
 Finds nested element by its location string. Supports /Id, .. (up) and *(any), i.e. ../*[3]/Button[1] - go to parent, then 4th child, then find 2nd button. Requires Rapise 8.1+.
 
 ```javascript
-DoFindByLocation(strLocation) 
+SeS('SomeUIAObject').DoFindByLocation(strLocation)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| strLocation | string |	Relative location of element. |
+| strLocation | string |  Relative location of element. |
 
 
 
@@ -390,16 +390,16 @@ DoFindByLocation(strLocation)
 Find nested element by its text (Value and Name of each element are compared with specified text or regular expression).
 
 ```javascript
-DoFindByText(textOrRegexp, depth) 
+SeS('SomeUIAObject').DoFindByText(textOrRegexp, depth)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| textOrRegexp | string |	plain string or regexp:... expression to match |
-| depth | number |	depth level for search (default is 3)<br>Optional, Default: "3". |
+| textOrRegexp | string |  plain string or regexp:... expression to match |
+| depth | number |  depth level for search (default is 3)<br>Optional, Default: "3". |
 
 
 
@@ -418,16 +418,16 @@ DoFindByText(textOrRegexp, depth)
 Finds first element matching the condition. Requires Rapise 6.6+
 
 ```javascript
-DoFindElementByCondition(scope, condition) 
+SeS('SomeUIAObject').DoFindElementByCondition(scope, condition)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scope | string |	Scope for element search. Possible values: "Element", "Children", "Descendants", "Subtree", "Parent", "Ancestors" |
-| condition | expression |	UIAutomation2 locator or condition object. |
+| scope | string |  Scope for element search. Possible values: "Element", "Children", "Descendants", "Subtree", "Parent", "Ancestors" |
+| condition | expression |  UIAutomation2 locator or condition object. |
 
 
 
@@ -446,16 +446,16 @@ DoFindElementByCondition(scope, condition)
 Finds all elements matching the condition
 
 ```javascript
-DoFindElementsByCondition(scope, condition) 
+SeS('SomeUIAObject').DoFindElementsByCondition(scope, condition)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scope | string |	Scope for element search. Possible values: "Element", "Children", "Descendants", "Subtree", "Parent", "Ancestors" |
-| condition | expression |	UIAutomation2 locator or condition object. |
+| scope | string |  Scope for element search. Possible values: "Element", "Children", "Descendants", "Subtree", "Parent", "Ancestors" |
+| condition | expression |  UIAutomation2 locator or condition object. |
 
 
 
@@ -474,15 +474,15 @@ DoFindElementsByCondition(scope, condition)
 Returns the value of a property with a given name. Names of available properties can be seen in Spy.
 
 ```javascript
-DoGetWidgetProperty(name) 
+SeS('SomeUIAObject').DoGetWidgetProperty(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Property name. |
+| name | string |  Property name. |
 
 
 
@@ -495,5 +495,5 @@ string: Property value if successful, an empty string if the property can not be
 
 <a name="see.also.uiaobject.dogetwidgetproperty"></a>
 
-	
+  
 

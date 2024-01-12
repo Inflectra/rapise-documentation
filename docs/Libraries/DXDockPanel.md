@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -32,7 +32,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -41,103 +41,103 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectPanel](#doselectpanel) | Selects the tab by name. |
+|  [DoSelectPanel](#doselectpanel) | Selects the tab by name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemsCount"></a>
 #### ItemsCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemsCount
-			
-		
+      
+    
 <a name="PanelName"></a>
 #### PanelName
 
 
 Name of the panel at index
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index |  |  |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetPanelName
-			
-		
+      
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedPanel"></a>
 #### SelectedPanel
 
 
 Title of the selected panel
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedPanel
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectPanel"></a>    
 #### DoSelectPanel
 
 Selects the tab by name.
 
 ```javascript
-DoSelectPanel(panelName) 
+SeS('SomeDXDockPanel').DoSelectPanel(panelName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| panelName | string |	Panel name to select |
+| panelName | string |  Panel name to select |
 
 
 
@@ -150,5 +150,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dxdockpanel.doselectpanel"></a>
 
-	
+  
 

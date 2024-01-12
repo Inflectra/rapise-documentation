@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,51 +38,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Image"></a>
 #### Image
 
 
 'true' if there is image loaded into the editor, 'false' otherwise.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetImage
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetText"></a>    
 #### DoSetText
 
 Sets text value of this object.
 
 ```javascript
-DoSetText(val) 
+SeS('SomeDXImageEdit').DoSetText(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | string |	Text value. |
+| val | string |  Text value. |
 
 
 
@@ -95,5 +95,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dximageedit.dosettext"></a>
 
-	
+  
 

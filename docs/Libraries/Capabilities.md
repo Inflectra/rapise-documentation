@@ -11,7 +11,7 @@ This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.F
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,35 +20,35 @@ This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.F
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[GetCapability](#getcapability) | Gets a capability of the browser. |
-|	[HasCapability](#hascapability) | Gets a value indicating whether the browser has a given capability. |
-|	[SetCapability](#setcapability) | Sets a capability of the browser. |
+|  [GetCapability](#getcapability) | Gets a capability of the browser. |
+|  [HasCapability](#hascapability) | Gets a value indicating whether the browser has a given capability. |
+|  [SetCapability](#setcapability) | Sets a capability of the browser. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="GetCapability"></a>    
 #### GetCapability
 
 Gets a capability of the browser.
 
 ```javascript
-GetCapability(capability) 
+WebDriver.CreateDesiredCapabilities().GetCapability(capability)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| capability | string |	The capability to get. |
+| capability | string |  The capability to get. |
 
 
 
@@ -67,15 +67,15 @@ capability value.
 Gets a value indicating whether the browser has a given capability.
 
 ```javascript
-HasCapability(capability) 
+WebDriver.CreateDesiredCapabilities().HasCapability(capability)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| capability | string |	The capability to get. |
+| capability | string |  The capability to get. |
 
 
 
@@ -94,16 +94,16 @@ HasCapability(capability)
 Sets a capability of the browser.
 
 ```javascript
-SetCapability(capability, capabilityValue) 
+WebDriver.CreateDesiredCapabilities().SetCapability(capability, capabilityValue)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| capability | string |	The capability to get. |
-| capabilityValue | string |	The value for the capability. |
+| capability | string |  The capability to get. |
+| capabilityValue | string |  The value for the capability. |
 
 
 
@@ -111,5 +111,5 @@ SetCapability(capability, capabilityValue)
 
 <a name="see.also.capabilities.setcapability"></a>
 
-	
+  
 

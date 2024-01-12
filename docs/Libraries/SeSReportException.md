@@ -11,7 +11,7 @@ Used to show exception in the report.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,33 +20,33 @@ Used to show exception in the report.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SeSReportException](#sesreportexception) | Used to show exception in the report. |
+|  [SeSReportException](#sesreportexception) | Used to show exception in the report. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="SeSReportException"></a>    
 #### SeSReportException
 
 Used to show exception in the report.
 
 ```javascript
-SeSReportException(e) 
+SeSReportException.SeSReportException(e)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| e | Error |	Error object. |
+| e | Error |  Error object. |
 
 
 
@@ -54,5 +54,5 @@ SeSReportException(e)
 
 <a name="see.also.sesreportexception.sesreportexception"></a>
 
-	
+  
 

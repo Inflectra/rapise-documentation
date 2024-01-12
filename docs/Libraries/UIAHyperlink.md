@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,43 +36,43 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#doaction) | Performs default action on this button. |
+|  [DoAction](#doaction) | Performs default action on this button. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ToggleState"></a>
 #### ToggleState
 
 
 For toggle button this property contains its toggle state
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetToggleState, SetToggleState
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAction"></a>    
 #### DoAction
 
 Performs default action on this button.
 
 ```javascript
-DoAction() 
+SeS('SomeUIAHyperlink').DoAction()
 ```
 
 
@@ -86,5 +86,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.uiahyperlink.doaction"></a>
 
-	
+  
 

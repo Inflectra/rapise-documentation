@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,33 +26,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects an item of this object.
 
 ```javascript
-DoSelectItem(item) 
+SeS('SomeDynamicsAXMenuDropDown').DoSelectItem(item)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| item | string \| number |	Item index or text value  to select. |
+| item | string \| number |  Item index or text value  to select. |
 
 
 
@@ -65,5 +65,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dynamicsaxmenudropdown.doselectitem"></a>
 
-	
+  
 

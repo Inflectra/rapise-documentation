@@ -11,7 +11,7 @@ Global object. Use it to perform actions not related to a particular object. You
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,51 +20,51 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFlick](#doflick) | Flick action. |
-|	[DoGoToUrl](#dogotourl) | Opens URL in active browser. |
-|	[DoPressBack](#dopressback) | Presses Back button. |
-|	[DoPressHome](#dopresshome) | Presses Home button. |
-|	[DoPressKeyCode](#dopresskeycode) | Presses key with code. |
-|	[DoPressMenu](#dopressmenu) | Presses Menu button. |
-|	[DoScreenshot](#doscreenshot) | Makes screenshot of a device. |
-|	[DoStartActivity](#dostartactivity) | Starts activity. |
-|	[DoStartVideoRecording](#dostartvideorecording) | Starts video recording on a device. |
-|	[DoStopVideoRecording](#dostopvideorecording) | Stops video recording on a device. |
-|	[DoSwipe](#doswipe) | Swipe action. |
-|	[DoTap](#dotap) | Tap screen. |
-|	[GetCapability](#getcapability) | Gets capability with specified name. |
-|	[GetContext](#getcontext) | Gets current context. |
-|	[SetContext](#setcontext) | Sets context. |
+|  [DoFlick](#doflick) | Flick action. |
+|  [DoGoToUrl](#dogotourl) | Opens URL in active browser. |
+|  [DoPressBack](#dopressback) | Presses Back button. |
+|  [DoPressHome](#dopresshome) | Presses Home button. |
+|  [DoPressKeyCode](#dopresskeycode) | Presses key with code. |
+|  [DoPressMenu](#dopressmenu) | Presses Menu button. |
+|  [DoScreenshot](#doscreenshot) | Makes screenshot of a device. |
+|  [DoStartActivity](#dostartactivity) | Starts activity. |
+|  [DoStartVideoRecording](#dostartvideorecording) | Starts video recording on a device. |
+|  [DoStopVideoRecording](#dostopvideorecording) | Stops video recording on a device. |
+|  [DoSwipe](#doswipe) | Swipe action. |
+|  [DoTap](#dotap) | Tap screen. |
+|  [GetCapability](#getcapability) | Gets capability with specified name. |
+|  [GetContext](#getcontext) | Gets current context. |
+|  [SetContext](#setcontext) | Sets context. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoFlick"></a>    
 #### DoFlick
 
 Flick action.
 
 ```javascript
-DoFlick(endX, endY, startX, startY, touchCount) 
+Android.DoFlick(endX, endY, startX, startY, touchCount)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| endX | number |	x coordinate where swipe ends (in pixels or relative units) |
-| endY | number |	y coordinate where swipe ends (in pixels or relative units) |
-| startX | number |	x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| startY | number |	y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| touchCount | number |	how many fingers to swipe with<br>Optional. |
+| endX | number |  x coordinate where swipe ends (in pixels or relative units) |
+| endY | number |  y coordinate where swipe ends (in pixels or relative units) |
+| startX | number |  x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| startY | number |  y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| touchCount | number |  how many fingers to swipe with<br>Optional. |
 
 
 
@@ -83,15 +83,15 @@ DoFlick(endX, endY, startX, startY, touchCount)
 Opens URL in active browser.
 
 ```javascript
-DoGoToUrl(url) 
+Android.DoGoToUrl(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	 |
+| url | string |   |
 
 
 
@@ -110,7 +110,7 @@ DoGoToUrl(url)
 Presses Back button.
 
 ```javascript
-DoPressBack() 
+Android.DoPressBack()
 ```
 
 
@@ -130,7 +130,7 @@ DoPressBack()
 Presses Home button.
 
 ```javascript
-DoPressHome() 
+Android.DoPressHome()
 ```
 
 
@@ -150,15 +150,15 @@ DoPressHome()
 Presses key with code.
 
 ```javascript
-DoPressKeyCode(keyCode) 
+Android.DoPressKeyCode(keyCode)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| keyCode | number |	Key code: http://developer.android.com/reference/android/view/KeyEvent.html |
+| keyCode | number |  Key code: http://developer.android.com/reference/android/view/KeyEvent.html |
 
 
 
@@ -177,7 +177,7 @@ DoPressKeyCode(keyCode)
 Presses Menu button.
 
 ```javascript
-DoPressMenu() 
+Android.DoPressMenu()
 ```
 
 
@@ -197,15 +197,15 @@ DoPressMenu()
 Makes screenshot of a device.
 
 ```javascript
-DoScreenshot(txtLabel) 
+Android.DoScreenshot(txtLabel)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txtLabel | string |	Label of a screenshot in the report.<br>Optional. |
+| txtLabel | string |  Label of a screenshot in the report.<br>Optional. |
 
 
 
@@ -224,16 +224,16 @@ DoScreenshot(txtLabel)
 Starts activity.
 
 ```javascript
-DoStartActivity(appPackage, appActivity) 
+Android.DoStartActivity(appPackage, appActivity)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| appPackage | string |	Package name. |
-| appActivity | string |	Activity name. |
+| appPackage | string |  Package name. |
+| appActivity | string |  Activity name. |
 
 
 
@@ -252,7 +252,7 @@ DoStartActivity(appPackage, appActivity)
 Starts video recording on a device.
 
 ```javascript
-DoStartVideoRecording() 
+Android.DoStartVideoRecording()
 ```
 
 
@@ -272,7 +272,7 @@ DoStartVideoRecording()
 Stops video recording on a device.
 
 ```javascript
-DoStopVideoRecording() 
+Android.DoStopVideoRecording()
 ```
 
 
@@ -292,20 +292,20 @@ DoStopVideoRecording()
 Swipe action.
 
 ```javascript
-DoSwipe(endX, endY, startX, startY, duration, touchCount) 
+Android.DoSwipe(endX, endY, startX, startY, duration, touchCount)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| endX | number |	x coordinate where swipe ends (in pixels or relative units) |
-| endY | number |	y coordinate where swipe ends (in pixels or relative units) |
-| startX | number |	x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| startY | number |	y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
-| duration | number |	time (in seconds) to spend performing the swipe/drag<br>Optional. |
-| touchCount | number |	how many fingers to swipe with<br>Optional. |
+| endX | number |  x coordinate where swipe ends (in pixels or relative units) |
+| endY | number |  y coordinate where swipe ends (in pixels or relative units) |
+| startX | number |  x coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| startY | number |  y coordinate where swipe begins (in pixels or relative units)<br>Optional. |
+| duration | number |  time (in seconds) to spend performing the swipe/drag<br>Optional. |
+| touchCount | number |  how many fingers to swipe with<br>Optional. |
 
 
 
@@ -324,19 +324,19 @@ DoSwipe(endX, endY, startX, startY, duration, touchCount)
 Tap screen.
 
 ```javascript
-DoTap(x, y, duration, tapCount, touchCount) 
+Android.DoTap(x, y, duration, tapCount, touchCount)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	x coordinate to tap (in pixels or relative units)<br>Optional. |
-| y | number |	y coordinate to tap (in pixels or relative units)<br>Optional. |
-| duration | number |	how long (in seconds) to tap<br>Optional. |
-| tapCount | number |	how many times to tap<br>Optional. |
-| touchCount | number |	how many fingers to tap with<br>Optional. |
+| x | number |  x coordinate to tap (in pixels or relative units)<br>Optional. |
+| y | number |  y coordinate to tap (in pixels or relative units)<br>Optional. |
+| duration | number |  how long (in seconds) to tap<br>Optional. |
+| tapCount | number |  how many times to tap<br>Optional. |
+| touchCount | number |  how many fingers to tap with<br>Optional. |
 
 
 
@@ -355,15 +355,15 @@ DoTap(x, y, duration, tapCount, touchCount)
 Gets capability with specified name.
 
 ```javascript
-GetCapability(name) 
+Android.GetCapability(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of a capability. |
+| name | string |  Name of a capability. |
 
 
 
@@ -382,7 +382,7 @@ Capability string.
 Gets current context.
 
 ```javascript
-GetContext() 
+Android.GetContext()
 ```
 
 
@@ -402,15 +402,15 @@ Either NATIVE_APP or WEBVIEW_1.
 Sets context.
 
 ```javascript
-SetContext(name) 
+Android.SetContext(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Either NATIVE_APP or WEBVIEW_1. |
+| name | string |  Either NATIVE_APP or WEBVIEW_1. |
 
 
 
@@ -418,5 +418,5 @@ SetContext(name)
 
 <a name="see.also.android.setcontext"></a>
 
-	
+  
 

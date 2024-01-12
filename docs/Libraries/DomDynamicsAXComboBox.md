@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,44 +36,44 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoOpen](#doopen) | Expands combo box. |
-|	[DoSetText](#dosettext) | Sets text into the edit field of a combo box. |
+|  [DoOpen](#doopen) | Expands combo box. |
+|  [DoSetText](#dosettext) | Sets text into the edit field of a combo box. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Selected value.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoOpen"></a>    
 #### DoOpen
 
 Expands combo box.
 
 ```javascript
-DoOpen() 
+SeS('SomeDomDynamicsAXComboBox').DoOpen()
 ```
 
 
@@ -88,15 +88,15 @@ DoOpen()
 Sets text into the edit field of a combo box.
 
 ```javascript
-DoSetText(text) 
+SeS('SomeDomDynamicsAXComboBox').DoSetText(text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text | string |	Value to input. |
+| text | string |  Value to input. |
 
 
 
@@ -104,5 +104,5 @@ DoSetText(text)
 
 <a name="see.also.domdynamicsaxcombobox.dosettext"></a>
 
-	
+  
 

@@ -15,7 +15,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [AndroidObject](AndroidObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [AndroidObject](AndroidObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetCheck](#dosetcheck) | Sets check state of the object. |
+|  [DoSetCheck](#dosetcheck) | Sets check state of the object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Checked"></a>
 #### Checked
 
 
 Check state of the button. 'true' if the button is checked, 'false' otherwise.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetChecked, SetChecked
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetCheck"></a>    
 #### DoSetCheck
 
 Sets check state of the object.
 
 ```javascript
-DoSetCheck(bcheck) 
+SeS('SomeAndroidRadioButton').DoSetCheck(bcheck)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| bcheck | boolean |	Desired check state for the item. |
+| bcheck | boolean |  Desired check state for the item. |
 
 
 
@@ -91,5 +91,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.androidradiobutton.dosetcheck"></a>
 
-	
+  
 

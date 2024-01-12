@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -28,34 +28,34 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoMenu"></a>    
 #### DoMenu
 
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, separator) 
+SeS('SomeTelerikRadMenu').DoMenu(path, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -68,7 +68,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.telerikradmenu.domenu"></a>
 
-	
+  
 
 
 
@@ -78,7 +78,7 @@ boolean: 'true' if success, 'false' otherwise.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -87,33 +87,33 @@ boolean: 'true' if success, 'false' otherwise.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#doclickitem) | Perform Click on the navigation item |
+|  [DoClickItem](#doclickitem) | Perform Click on the navigation item |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickItem"></a>    
 #### DoClickItem
 
 Perform Click on the navigation item
 
 ```javascript
-DoClickItem(menuItemName) 
+SeS('SomeTelerikRadMenu').DoClickItem(menuItemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| menuItemName | string |	Menuitem name to click at. |
+| menuItemName | string |  Menuitem name to click at. |
 
 
 
@@ -126,5 +126,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.telerikradmenu.doclickitem"></a>
 
-	
+  
 

@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -31,7 +31,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -40,142 +40,142 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCollapse](#docollapse) | Collapses specific node in the tree. |
-|	[DoExpand](#doexpand) | Expands a specific node in the tree. |
-|	[DoSelectItem](#doselectitem) | Selects specified item in the tree. |
+|  [DoCollapse](#docollapse) | Collapses specific node in the tree. |
+|  [DoExpand](#doexpand) | Expands a specific node in the tree. |
+|  [DoSelectItem](#doselectitem) | Selects specified item in the tree. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Checked"></a>
 #### Checked
 
 
 Checked state of the selected node or a node specified by the input parameters.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetChecked, SetChecked
-			
-		
+      
+    
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
 
 Number of children of the selected node or a node specified by the input parameters.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: string|boolean
-			
-			
+      
+      
 Accessors: GetChildrenCount, SetChildrenCount
-			
-		
+      
+    
 <a name="Expanded"></a>
 #### Expanded
 
 
 Expanded state of the selected node or a node specified by the input parameters.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetExpanded, SetExpanded
-			
-		
+      
+    
 <a name="NodeText"></a>
 #### NodeText
 
 
 Text of the selected node or a node specified by the input parameters.
 
-			
-	
-			
+      
+  
+      
 Type: string|boolean
-			
-			
+      
+      
 Accessors: GetNodeText, SetNodeText
-			
-		
+      
+    
 <a name="Selected"></a>
 #### Selected
 
 
 Selected state of the selected node or a node specified by the input parameters
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetSelected, SetSelected
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoCollapse"></a>    
 #### DoCollapse
 
 Collapses specific node in the tree.
 
 ```javascript
-DoCollapse(path, separator, pathType) 
+SeS('SomeSWTTree').DoCollapse(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -194,15 +194,15 @@ boolean: 'true' if success, 'false' otherwise.
 Expands a specific node in the tree.
 
 ```javascript
-DoExpand(node) 
+SeS('SomeSWTTree').DoExpand(node)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| node | string |	Name of the node |
+| node | string |  Name of the node |
 
 
 
@@ -221,15 +221,15 @@ boolean: 'true' if successful, 'false' otherwise.
 Selects specified item in the tree.
 
 ```javascript
-DoSelectItem(value) 
+SeS('SomeSWTTree').DoSelectItem(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	Item to select |
+| value | string |  Item to select |
 
 
 
@@ -242,5 +242,5 @@ boolean: 'true' if successful, 'false' otherwise.
 
 <a name="see.also.swttree.doselectitem"></a>
 
-	
+  
 

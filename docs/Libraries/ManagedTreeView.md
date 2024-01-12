@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -35,7 +35,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -44,202 +44,202 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickNode](#doclicknode) | Clicks specific node in the tree. |
-|	[DoCollapse](#docollapse) | Collapses specific node in the tree. |
-|	[DoExpand](#doexpand) | Expands specific node in the tree. |
-|	[DoSetCheck](#dosetcheck) | Set 'checked' state of the specified node |
+|  [DoClickNode](#doclicknode) | Clicks specific node in the tree. |
+|  [DoCollapse](#docollapse) | Collapses specific node in the tree. |
+|  [DoExpand](#doexpand) | Expands specific node in the tree. |
+|  [DoSetCheck](#dosetcheck) | Set 'checked' state of the specified node |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Checked"></a>
 #### Checked
 
 
 Checked state of the selected node or a node specified by the input parameters.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetChecked
-			
-		
+      
+    
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
 
 Number of children of the selected node or a node specified by the input parameters.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: string|boolean
-			
-			
+      
+      
 Accessors: GetChildrenCount
-			
-		
+      
+    
 <a name="Expanded"></a>
 #### Expanded
 
 
 Expanded state of the selected node or a node specified by the input parameters.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetExpanded
-			
-		
+      
+    
 <a name="IndexPath"></a>
 #### IndexPath
 
 
 Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6', 'false' if fails
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: string|boolean
-			
-			
+      
+      
 Accessors: GetIndexPath
-			
-		
+      
+    
 <a name="NodeText"></a>
 #### NodeText
 
 
 Text of the selected node or a node specified by the input parameters.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: string|boolean
-			
-			
+      
+      
 Accessors: GetNodeText
-			
-		
+      
+    
 <a name="Selected"></a>
 #### Selected
 
 
 Selected state of the selected node or a node specified by the input parameters
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | path | string | Path of the node |
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetSelected
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 ;-combined text of all selected nodes.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickNode"></a>    
 #### DoClickNode
 
 Clicks specific node in the tree.
 
 ```javascript
-DoClickNode(path, separator, pathType, xOffset, yOffset) 
+SeS('SomeManagedTreeView').DoClickNode(path, separator, pathType, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -258,17 +258,17 @@ boolean: 'true' if success, 'false' otherwise.
 Collapses specific node in the tree.
 
 ```javascript
-DoCollapse(path, separator, pathType) 
+SeS('SomeManagedTreeView').DoCollapse(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -287,17 +287,17 @@ boolean: 'true' if success, 'false' otherwise.
 Expands specific node in the tree.
 
 ```javascript
-DoExpand(path, separator, pathType) 
+SeS('SomeManagedTreeView').DoExpand(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -316,18 +316,18 @@ boolean: 'true' if success, 'false' otherwise.
 Set 'checked' state of the specified node
 
 ```javascript
-DoSetCheck(bcheck, path, separator, pathType) 
+SeS('SomeManagedTreeView').DoSetCheck(bcheck, path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| bcheck | boolean |	Check state to set |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| bcheck | boolean |  Check state to set |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -340,5 +340,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.managedtreeview.dosetcheck"></a>
 
-	
+  
 

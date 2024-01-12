@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects item of this object. |
+|  [DoSelectItem](#doselectitem) | Selects item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects item of this object.
 
 ```javascript
-DoSelectItem(itemName) 
+SeS('SomeWin32TreeCheckable').DoSelectItem(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	This is a name of item to select. Or an array of item names in the case of multi-select. |
+| itemName | string |  This is a name of item to select. Or an array of item names in the case of multi-select. |
 
 
 
@@ -91,7 +91,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <a name="see.also.win32treecheckable.doselectitem"></a>
 
-	
+  
 
 
 
@@ -101,7 +101,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -111,7 +111,7 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -120,51 +120,51 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCheckItem](#docheckitem) | Checks an item of this object. |
+|  [DoCheckItem](#docheckitem) | Checks an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoCheckItem"></a>    
 #### DoCheckItem
 
 Checks an item of this object.
 
 ```javascript
-DoCheckItem(itemName) 
+SeS('SomeWin32TreeCheckable').DoCheckItem(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	Name of the item to check |
+| itemName | string |  Name of the item to check |
 
 
 
@@ -172,7 +172,7 @@ DoCheckItem(itemName)
 
 <a name="see.also.win32treecheckable.docheckitem"></a>
 
-	
+  
 
 
 
@@ -182,7 +182,7 @@ DoCheckItem(itemName)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -191,33 +191,33 @@ DoCheckItem(itemName)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoExpand](#doexpand) | Expands an item of this object. |
+|  [DoExpand](#doexpand) | Expands an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoExpand"></a>    
 #### DoExpand
 
 Expands an item of this object.
 
 ```javascript
-DoExpand(itemName) 
+SeS('SomeWin32TreeCheckable').DoExpand(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	Name of the item to expand |
+| itemName | string |  Name of the item to expand |
 
 
 
@@ -230,5 +230,5 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 <a name="see.also.win32treecheckable.doexpand"></a>
 
-	
+  
 

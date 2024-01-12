@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,53 +36,53 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#doclick) | Clicks the button. |
-|	[DoMenu](#domenu) | Clicks menu of the split button. |
+|  [DoClick](#doclick) | Clicks the button. |
+|  [DoMenu](#domenu) | Clicks menu of the split button. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Active"></a>
 #### Active
 
 
 Active state of the button. If the button is active it is highlightedin YUI. Usually to make an object Active user needs to move mouseover the object.
 
-			
-	
-			
+      
+  
+      
 Type: Boolean
-			
-			
+      
+      
 Accessors: GetActive
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClick"></a>    
 #### DoClick
 
 Clicks the button.
 
 ```javascript
-DoClick(x, y) 
+SeS('SomeYUISplitButton').DoClick(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	x coordinate to click<br>Optional. |
-| y | number |	y coordinate to click<br>Optional. |
+| x | number |  x coordinate to click<br>Optional. |
+| y | number |  y coordinate to click<br>Optional. |
 
 
 
@@ -101,7 +101,7 @@ boolean: 'true' if successful, 'false' otherwise
 Clicks menu of the split button.
 
 ```javascript
-DoMenu() 
+SeS('SomeYUISplitButton').DoMenu()
 ```
 
 
@@ -115,5 +115,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.yuisplitbutton.domenu"></a>
 
-	
+  
 

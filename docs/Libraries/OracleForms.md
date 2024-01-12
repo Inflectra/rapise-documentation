@@ -11,7 +11,7 @@ OracleForms Global Helper Object.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,40 +20,40 @@ OracleForms Global Helper Object.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoLOVSelect](#dolovselect) | Get title of currently displayed LOV selection window. |
-|	[DoMenu](#domenu) |  |
-|	[DoPressNotificationButton](#dopressnotificationbutton) | Get message of currently displayed notification window. |
-|	[GetLOVTitle](#getlovtitle) |  |
-|	[GetNotificationMessage](#getnotificationmessage) |  |
-|	[GetNotificationTitle](#getnotificationtitle) | Get status bar message. |
-|	[GetStatusMessage](#getstatusmessage) |  |
+|  [DoLOVSelect](#dolovselect) | Get title of currently displayed LOV selection window. |
+|  [DoMenu](#domenu) |  |
+|  [DoPressNotificationButton](#dopressnotificationbutton) | Get message of currently displayed notification window. |
+|  [GetLOVTitle](#getlovtitle) |  |
+|  [GetNotificationMessage](#getnotificationmessage) |  |
+|  [GetNotificationTitle](#getnotificationtitle) | Get status bar message. |
+|  [GetStatusMessage](#getstatusmessage) |  |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoLOVSelect"></a>    
 #### DoLOVSelect
 
 Get title of currently displayed LOV selection window.
 
 ```javascript
-DoLOVSelect(txtOrInd, timeout) 
+OracleForms.DoLOVSelect(txtOrInd, timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txtOrInd | string \| number |	 |
-| timeout | number |	 |
+| txtOrInd | string \| number |   |
+| timeout | number |   |
 
 
 
@@ -72,16 +72,16 @@ popup window title.
 
 
 ```javascript
-DoMenu(menuPath, sep) 
+OracleForms.DoMenu(menuPath, sep)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| menuPath | string |	 |
-| sep | string |	 |
+| menuPath | string |   |
+| sep | string |   |
 
 
 
@@ -95,15 +95,15 @@ DoMenu(menuPath, sep)
 Get message of currently displayed notification window.
 
 ```javascript
-DoPressNotificationButton(label) 
+OracleForms.DoPressNotificationButton(label)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| label | string |	 |
+| label | string |   |
 
 
 
@@ -122,7 +122,7 @@ popup window message.
 
 
 ```javascript
-GetLOVTitle() 
+OracleForms.GetLOVTitle()
 ```
 
 
@@ -137,7 +137,7 @@ GetLOVTitle()
 
 
 ```javascript
-GetNotificationMessage() 
+OracleForms.GetNotificationMessage()
 ```
 
 
@@ -152,15 +152,15 @@ GetNotificationMessage()
 Get status bar message.
 
 ```javascript
-GetNotificationTitle(timeout) 
+OracleForms.GetNotificationTitle(timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| timeout | number |	 |
+| timeout | number |   |
 
 
 
@@ -179,7 +179,7 @@ status bar message text.
 
 
 ```javascript
-GetStatusMessage() 
+OracleForms.GetStatusMessage()
 ```
 
 
@@ -188,5 +188,5 @@ GetStatusMessage()
 
 <a name="see.also.oracleforms.getstatusmessage"></a>
 
-	
+  
 

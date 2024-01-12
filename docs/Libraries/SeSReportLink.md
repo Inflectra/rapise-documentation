@@ -11,7 +11,7 @@ Used to show link (url and text) in the report.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,34 +20,34 @@ Used to show link (url and text) in the report.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SeSReportLink](#sesreportlink) | Used to show link (url and text) in the report. |
+|  [SeSReportLink](#sesreportlink) | Used to show link (url and text) in the report. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="SeSReportLink"></a>    
 #### SeSReportLink
 
 Used to show link (url and text) in the report.
 
 ```javascript
-SeSReportLink(url, text) 
+SeSReportLink.SeSReportLink(url, text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	Actual link. |
-| text | string |	Text to show in the report. |
+| url | string |  Actual link. |
+| text | string |  Text to show in the report. |
 
 
 
@@ -55,5 +55,5 @@ SeSReportLink(url, text)
 
 <a name="see.also.sesreportlink.sesreportlink"></a>
 
-	
+  
 

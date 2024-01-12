@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -30,7 +30,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -39,73 +39,73 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
+|  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
 
 Returns item index by its name. 'false' if name is not found.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | name | string |  |
 
 
-	
-			
+  
+      
 Type: number|boolean
-			
-			
+      
+      
 Accessors: GetItemIndexByName
-			
-		
+      
+    
 <a name="Value"></a>
 #### Value
 
 
 Value of the object.
 
-			
-	
-			
+      
+  
+      
 Type: text
-			
-			
+      
+      
 Accessors: GetValue, SetValue
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
 Selects an item of this object.
 
 ```javascript
-DoSelectItem(item) 
+SeS('SomeVPopList').DoSelectItem(item)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| item | string \| number |	Item index or text value  to select. |
+| item | string \| number |  Item index or text value  to select. |
 
 
 
@@ -118,5 +118,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.vpoplist.doselectitem"></a>
 
-	
+  
 

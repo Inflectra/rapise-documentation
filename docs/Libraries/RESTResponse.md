@@ -11,7 +11,7 @@ This is a JavaScript wrapper for RESTResponse
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -21,7 +21,7 @@ This is a JavaScript wrapper for RESTResponse
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -30,53 +30,53 @@ This is a JavaScript wrapper for RESTResponse
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[GetHeader](#getheader) | HTTP header |
-|	[GetIsErrorStatus](#getiserrorstatus) | 'true' when there was an error |
-|	[GetResponseBodyText](#getresponsebodytext) | The body of the HTTP response in raw text format |
-|	[GetStatusCode](#getstatuscode) | HTTP response code |
-|	[GetStatusText](#getstatustext) | Text version of the response code |
+|  [GetHeader](#getheader) | HTTP header |
+|  [GetIsErrorStatus](#getiserrorstatus) | 'true' when there was an error |
+|  [GetResponseBodyText](#getresponsebodytext) | The body of the HTTP response in raw text format |
+|  [GetStatusCode](#getstatuscode) | HTTP response code |
+|  [GetStatusText](#getstatustext) | Text version of the response code |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="GetResponseBodyObject"></a>
 #### GetResponseBodyObject
 
 
 The body of the HTTP response as a JSON object
 
-			
-	
-			
+      
+  
+      
 Type: 
-			
-			
-		
-	
-	
+      
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="GetHeader"></a>    
 #### GetHeader
 
 HTTP header
 
 ```javascript
-GetHeader(name) 
+RESTResponse.GetHeader(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Header Name |
+| name | string |  Header Name |
 
 
 
@@ -90,7 +90,7 @@ GetHeader(name)
 'true' when there was an error
 
 ```javascript
-GetIsErrorStatus() 
+RESTResponse.GetIsErrorStatus()
 ```
 
 
@@ -105,7 +105,7 @@ GetIsErrorStatus()
 The body of the HTTP response in raw text format
 
 ```javascript
-GetResponseBodyText() 
+RESTResponse.GetResponseBodyText()
 ```
 
 
@@ -120,7 +120,7 @@ GetResponseBodyText()
 HTTP response code
 
 ```javascript
-GetStatusCode() 
+RESTResponse.GetStatusCode()
 ```
 
 
@@ -135,7 +135,7 @@ GetStatusCode()
 Text version of the response code
 
 ```javascript
-GetStatusText() 
+RESTResponse.GetStatusText()
 ```
 
 
@@ -144,5 +144,5 @@ GetStatusText()
 
 <a name="see.also.restresponse.getstatustext"></a>
 
-	
+  
 

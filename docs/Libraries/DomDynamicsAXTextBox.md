@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,52 +36,52 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSetText"></a>    
 #### DoSetText
 
 Sets text value of this object.
 
 ```javascript
-DoSetText(value, hitEnter) 
+SeS('SomeDomDynamicsAXTextBox').DoSetText(value, hitEnter)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	Text value. |
-| hitEnter | boolean |	Pass 'true' to additionally hit enter after entering the text.<br>Optional, Default: "false". |
+| value | string |  Text value. |
+| hitEnter | boolean |  Pass 'true' to additionally hit enter after entering the text.<br>Optional, Default: "false". |
 
 
 
@@ -94,5 +94,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.domdynamicsaxtextbox.dosettext"></a>
 
-	
+  
 

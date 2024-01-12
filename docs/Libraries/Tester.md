@@ -11,7 +11,7 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -24,7 +24,7 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -33,148 +33,148 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[AddImageToReport](#addimagetoreport) | Adds image to the report. |
-|	[Assert](#assert) | Checks if condition is 'true' and saves corresponding Report entry. |
-|	[AssertContains](#assertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
-|	[AssertEndsWith](#assertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
-|	[AssertEqual](#assertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
-|	[AssertFalse](#assertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
-|	[AssertGreater](#assertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
-|	[AssertGreaterOrEqual](#assertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
-|	[AssertImage](#assertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
-|	[AssertLess](#assertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
-|	[AssertLessOrEqual](#assertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
-|	[AssertNotContains](#assertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
-|	[AssertNotEqual](#assertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
-|	[AssertNotNull](#assertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
-|	[AssertNotSet](#assertnotset) | Checks if `val` is not set (i.e. |
-|	[AssertNull](#assertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
-|	[AssertSet](#assertset) | Checks if `val` is set (i.e. |
-|	[AssertStartsWith](#assertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
-|	[BeginTest](#begintest) | Marks beginning of a test with a given name. |
-|	[BlockTest](#blocktest) | Stops test execution and exits with Blocked status. |
-|	[CaptureDesktopImage](#capturedesktopimage) | Captures screenshot of the desktop and adds it to the report. |
-|	[CaptureObjectImage](#captureobjectimage) | Captures screenshot of an object and adds it to the report. |
-|	[CaptureWindowImage](#capturewindowimage) | Captures screenshot of an application window matched by title and class and adds it to the report. |
-|	[DumpCmdArgsJson](#dumpcmdargsjson) | Dump node.json with all arguments. |
-|	[EndTest](#endtest) | Marks end of a currently executed test. |
-|	[ExpectFailure](#expectfailure) | Set Tester to expect a failed assertion with given message or data. |
-|	[ExpectFailureDone](#expectfailuredone) | If `messageOrData` is set, checks that given assertion failed at least once. |
-|	[FailTest](#failtest) | Stops test execution and sets it's status to failed. |
-|	[GetEntryTestName](#getentrytestname) | Retrieves the name of the test that was run by the user. |
-|	[GetParam](#getparam) | Read parameter field passed into the Test function by field name. |
-|	[GetReportAttribute](#getreportattribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
-|	[GetTestName](#gettestname) | Returns name of the running test. |
-|	[GetTestStatus](#getteststatus) | Gets status of currently executed test. |
-|	[IgnoreStatus](#ignorestatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
-|	[Message](#message) | Saves corresponding Report message. |
-|	[MessageBox](#messagebox) | Shows message box to user. |
-|	[MessageBoxPrompt](#messageboxprompt) | Shows message box with question to the user and checks if user presses "Yes" or "No". |
-|	[PopReportAttribute](#popreportattribute) | Resets an attribute to its previous value. |
-|	[PushReportAttribute](#pushreportattribute) | <p>Maintains "stacked" attributes. |
-|	[ResetReportAttribute](#resetreportattribute) | Removes report attribute previously set by SetReportAttribute. |
-|	[SetReportAttribute](#setreportattribute) | Set persistent attribute. |
-|	[SoftAssert](#softassert) | Is identical to Tester.Assert. |
-|	[SoftAssertAll](#softassertall) | Fail test if there were any previous failures. |
-|	[SoftAssertContains](#softassertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
-|	[SoftAssertEndsWith](#softassertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
-|	[SoftAssertEqual](#softassertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
-|	[SoftAssertFalse](#softassertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
-|	[SoftAssertGreater](#softassertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
-|	[SoftAssertGreaterOrEqual](#softassertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
-|	[SoftAssertImage](#softassertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
-|	[SoftAssertLess](#softassertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
-|	[SoftAssertLessOrEqual](#softassertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
-|	[SoftAssertNotContains](#softassertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
-|	[SoftAssertNotEqual](#softassertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
-|	[SoftAssertNotNull](#softassertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
-|	[SoftAssertNotSet](#softassertnotset) | Checks if `val` is not set (i.e. |
-|	[SoftAssertNull](#softassertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
-|	[SoftAssertSet](#softassertset) | Checks if `val` is set (i.e. |
-|	[SoftAssertStartsWith](#softassertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
-|	[SuppressReport](#suppressreport) | In SuppressReport mode all assertions are ignored. |
+|  [AddImageToReport](#addimagetoreport) | Adds image to the report. |
+|  [Assert](#assert) | Checks if condition is 'true' and saves corresponding Report entry. |
+|  [AssertContains](#assertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
+|  [AssertEndsWith](#assertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
+|  [AssertEqual](#assertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
+|  [AssertFalse](#assertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
+|  [AssertGreater](#assertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
+|  [AssertGreaterOrEqual](#assertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
+|  [AssertImage](#assertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
+|  [AssertLess](#assertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
+|  [AssertLessOrEqual](#assertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
+|  [AssertNotContains](#assertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
+|  [AssertNotEqual](#assertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
+|  [AssertNotNull](#assertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
+|  [AssertNotSet](#assertnotset) | Checks if `val` is not set (i.e. |
+|  [AssertNull](#assertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
+|  [AssertSet](#assertset) | Checks if `val` is set (i.e. |
+|  [AssertStartsWith](#assertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
+|  [BeginTest](#begintest) | Marks beginning of a test with a given name. |
+|  [BlockTest](#blocktest) | Stops test execution and exits with Blocked status. |
+|  [CaptureDesktopImage](#capturedesktopimage) | Captures screenshot of the desktop and adds it to the report. |
+|  [CaptureObjectImage](#captureobjectimage) | Captures screenshot of an object and adds it to the report. |
+|  [CaptureWindowImage](#capturewindowimage) | Captures screenshot of an application window matched by title and class and adds it to the report. |
+|  [DumpCmdArgsJson](#dumpcmdargsjson) | Dump node.json with all arguments. |
+|  [EndTest](#endtest) | Marks end of a currently executed test. |
+|  [ExpectFailure](#expectfailure) | Set Tester to expect a failed assertion with given message or data. |
+|  [ExpectFailureDone](#expectfailuredone) | If `messageOrData` is set, checks that given assertion failed at least once. |
+|  [FailTest](#failtest) | Stops test execution and sets it's status to failed. |
+|  [GetEntryTestName](#getentrytestname) | Retrieves the name of the test that was run by the user. |
+|  [GetParam](#getparam) | Read parameter field passed into the Test function by field name. |
+|  [GetReportAttribute](#getreportattribute) | Gets report attribute previously set by PushReportAttribute or SetReportAttribute. |
+|  [GetTestName](#gettestname) | Returns name of the running test. |
+|  [GetTestStatus](#getteststatus) | Gets status of currently executed test. |
+|  [IgnoreStatus](#ignorestatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
+|  [Message](#message) | Saves corresponding Report message. |
+|  [MessageBox](#messagebox) | Shows message box to user. |
+|  [MessageBoxPrompt](#messageboxprompt) | Shows message box with question to the user and checks if user presses "Yes" or "No". |
+|  [PopReportAttribute](#popreportattribute) | Resets an attribute to its previous value. |
+|  [PushReportAttribute](#pushreportattribute) | <p>Maintains "stacked" attributes. |
+|  [ResetReportAttribute](#resetreportattribute) | Removes report attribute previously set by SetReportAttribute. |
+|  [SetReportAttribute](#setreportattribute) | Set persistent attribute. |
+|  [SoftAssert](#softassert) | Is identical to Tester.Assert. |
+|  [SoftAssertAll](#softassertall) | Fail test if there were any previous failures. |
+|  [SoftAssertContains](#softassertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
+|  [SoftAssertEndsWith](#softassertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
+|  [SoftAssertEqual](#softassertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
+|  [SoftAssertFalse](#softassertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
+|  [SoftAssertGreater](#softassertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
+|  [SoftAssertGreaterOrEqual](#softassertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
+|  [SoftAssertImage](#softassertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
+|  [SoftAssertLess](#softassertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
+|  [SoftAssertLessOrEqual](#softassertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
+|  [SoftAssertNotContains](#softassertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
+|  [SoftAssertNotEqual](#softassertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
+|  [SoftAssertNotNull](#softassertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
+|  [SoftAssertNotSet](#softassertnotset) | Checks if `val` is not set (i.e. |
+|  [SoftAssertNull](#softassertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
+|  [SoftAssertSet](#softassertset) | Checks if `val` is set (i.e. |
+|  [SoftAssertStartsWith](#softassertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
+|  [SuppressReport](#suppressreport) | In SuppressReport mode all assertions are ignored. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Fail"></a>
 #### Fail
 
 
 Test status, test failed. Constant, equal to 0.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
-		
+      
+      
+    
 <a name="Info"></a>
 #### Info
 
 
 Test status, test is neither passed nor failed. Constant, equal to -2.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
-		
+      
+      
+    
 <a name="Pass"></a>
 #### Pass
 
 
 Test status, test passed. Constant, equal to 1.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
-		
+      
+      
+    
 <a name="Unresolved"></a>
 #### Unresolved
 
 
 Test status, test status is unresolved, test terminated unexpectedly. Constant, equal to -1.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
-		
-	
-	
+      
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="AddImageToReport"></a>    
 #### AddImageToReport
 
 Adds image to the report.
 
 ```javascript
-AddImageToReport(path, caption) 
+Tester.AddImageToReport(path, caption)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path to an image |
-| caption | string |	Caption for the entry added to the report |
+| path | string |  Path to an image |
+| caption | string |  Caption for the entry added to the report |
 
 
 
@@ -190,18 +190,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-Assert(message, condition, data, tags) 
+Tester.Assert(message, condition, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| condition | boolean |	If 'true' - assertion is considered passed. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| condition | boolean |  If 'true' - assertion is considered passed. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -217,19 +217,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertContains(message, str, substr, data, tags) 
+Tester.AssertContains(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -245,19 +245,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertEndsWith(message, str, substr, data, tags) 
+Tester.AssertEndsWith(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -273,19 +273,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertEqual(message, obj1, obj2, data, tags) 
+Tester.AssertEqual(message, obj1, obj2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| obj1 | object |	First object to compare. |
-| obj2 | object |	Second object to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| obj1 | object |  First object to compare. |
+| obj2 | object |  Second object to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -301,18 +301,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertFalse(message, val, data, tags) 
+Tester.AssertFalse(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -328,19 +328,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertGreater(message, n1, n2, data, tags) 
+Tester.AssertGreater(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | number |	First value to compare. |
-| n2 | number |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | number |  First value to compare. |
+| n2 | number |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -356,19 +356,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertGreaterOrEqual(message, n1, n2, data, tags) 
+Tester.AssertGreaterOrEqual(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | number |	First value to compare. |
-| n2 | number |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | number |  First value to compare. |
+| n2 | number |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -384,19 +384,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertImage(message, img1, path, data, tags) 
+Tester.AssertImage(message, img1, path, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| img1 | object |	ImageWrapper object (1st image to compare). |
-| path | string |	Path to the second image to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| img1 | object |  ImageWrapper object (1st image to compare). |
+| path | string |  Path to the second image to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -412,19 +412,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertLess(message, n1, n2, data, tags) 
+Tester.AssertLess(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | number |	First value to compare. |
-| n2 | number |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | number |  First value to compare. |
+| n2 | number |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -440,19 +440,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertLessOrEqual(message, n1, n2, data, tags) 
+Tester.AssertLessOrEqual(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | object |	First value to compare. |
-| n2 | object |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | object |  First value to compare. |
+| n2 | object |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -468,19 +468,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNotContains(message, str, substr, data, tags) 
+Tester.AssertNotContains(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -496,19 +496,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNotEqual(message, obj1, obj2, data, tags) 
+Tester.AssertNotEqual(message, obj1, obj2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| obj1 | object |	First object to compare. |
-| obj2 | object |	Second object to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| obj1 | object |  First object to compare. |
+| obj2 | object |  Second object to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -524,18 +524,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNotNull(message, val, data, tags) 
+Tester.AssertNotNull(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -551,18 +551,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNotSet(message, val, data, tags) 
+Tester.AssertNotSet(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -578,18 +578,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertNull(message, val, data, tags) 
+Tester.AssertNull(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -605,18 +605,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertSet(message, val, data, tags) 
+Tester.AssertSet(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -632,19 +632,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-AssertStartsWith(message, str, substr, data, tags) 
+Tester.AssertStartsWith(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -658,18 +658,18 @@ AssertStartsWith(message, str, substr, data, tags)
 Marks beginning of a test with a given name.
 
 ```javascript
-BeginTest(name, path, optionalParams, data) 
+Tester.BeginTest(name, path, optionalParams, data)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Test name |
-| path | string |	Path to the test, that is executed. This string will be shown as a comment.<br>Optional. |
-| optionalParams | object |	Params to pass into Test(...) function.<br>Optional. |
-| data | array |	Additional info to put into report (array of SeSReportText())<br>Optional. |
+| name | string |  Test name |
+| path | string |  Path to the test, that is executed. This string will be shown as a comment.<br>Optional. |
+| optionalParams | object |  Params to pass into Test(...) function.<br>Optional. |
+| data | array |  Additional info to put into report (array of SeSReportText())<br>Optional. |
 
 
 
@@ -683,15 +683,15 @@ BeginTest(name, path, optionalParams, data)
 Stops test execution and exits with Blocked status.
 
 ```javascript
-BlockTest(message) 
+Tester.BlockTest(message)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Reason why the test is blocked.<br>Optional, Default: "Test execution blocked". |
+| message | string |  Reason why the test is blocked.<br>Optional, Default: "Test execution blocked". |
 
 
 
@@ -705,15 +705,15 @@ BlockTest(message)
 Captures screenshot of the desktop and adds it to the report.
 
 ```javascript
-CaptureDesktopImage(caption) 
+Tester.CaptureDesktopImage(caption)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Image title for the report. |
+| caption | string |  Image title for the report. |
 
 
 
@@ -727,16 +727,16 @@ CaptureDesktopImage(caption)
 Captures screenshot of an object and adds it to the report.
 
 ```javascript
-CaptureObjectImage(caption, objId) 
+Tester.CaptureObjectImage(caption, objId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Image title for the report. |
-| objId | objectId |	Id of an object or SeSObject instance. |
+| caption | string |  Image title for the report. |
+| objId | objectId |  Id of an object or SeSObject instance. |
 
 
 
@@ -750,18 +750,18 @@ CaptureObjectImage(caption, objId)
 Captures screenshot of an application window matched by title and class and adds it to the report.
 
 ```javascript
-CaptureWindowImage(caption, windowTitle, windowClass, bringToFront) 
+Tester.CaptureWindowImage(caption, windowTitle, windowClass, bringToFront)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Image title for the report. |
-| windowTitle | string |	String or regular expression to match window title. |
-| windowClass | string |	String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
-| bringToFront | boolean |	Set to 'false' to not restore the window before making the image.<br>Optional, Default: "true". |
+| caption | string |  Image title for the report. |
+| windowTitle | string |  String or regular expression to match window title. |
+| windowClass | string |  String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
+| bringToFront | boolean |  Set to 'false' to not restore the window before making the image.<br>Optional, Default: "true". |
 
 
 
@@ -775,16 +775,16 @@ CaptureWindowImage(caption, windowTitle, windowClass, bringToFront)
 Dump node.json with all arguments.
 
 ```javascript
-DumpCmdArgsJson(optNodeJsonPath, mkPackageJson) 
+Tester.DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| optNodeJsonPath | string |	node.json path<br>Optional. |
-| mkPackageJson | string |	Generate package.json for the test<br>Optional. |
+| optNodeJsonPath | string |  node.json path<br>Optional. |
+| mkPackageJson | string |  Generate package.json for the test<br>Optional. |
 
 
 
@@ -798,7 +798,7 @@ DumpCmdArgsJson(optNodeJsonPath, mkPackageJson)
 Marks end of a currently executed test. Calculates test results and performs finalization of test execution.
 
 ```javascript
-EndTest() 
+Tester.EndTest()
 ```
 
 
@@ -816,15 +816,15 @@ such error happens, it is reported as an expected Passed assertion. Requires Rap
 When null is passed, all expectations are reset.
 
 ```javascript
-ExpectFailure(messageOrData) 
+Tester.ExpectFailure(messageOrData)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| messageOrData | string |	Text to match against assertion message & data. |
+| messageOrData | string |  Text to match against assertion message & data. |
 
 
 
@@ -840,15 +840,15 @@ If `messageOrData` is null or empty, checks that all expected failed assertions 
 Requires Rapise 8.0+.
 
 ```javascript
-ExpectFailureDone(messageOrData) 
+Tester.ExpectFailureDone(messageOrData)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| messageOrData | string |	Text to match against assertion message & data.<br>Optional, Default: "null". |
+| messageOrData | string |  Text to match against assertion message & data.<br>Optional, Default: "null". |
 
 
 
@@ -862,16 +862,16 @@ ExpectFailureDone(messageOrData)
 Stops test execution and sets it's status to failed.
 
 ```javascript
-FailTest(message, internal) 
+Tester.FailTest(message, internal)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Failure description.<br>Optional, Default: "Test stopped on error". |
-| internal |  |	For internal use<br>Optional, Default: "null". |
+| message | string |  Failure description.<br>Optional, Default: "Test stopped on error". |
+| internal |  |  For internal use<br>Optional, Default: "null". |
 
 
 
@@ -889,7 +889,7 @@ to the original test case, and GetTestName will change depending on the
 current test case being executed.
 
 ```javascript
-GetEntryTestName() 
+Tester.GetEntryTestName()
 ```
 
 
@@ -904,16 +904,16 @@ GetEntryTestName()
 Read parameter field passed into the Test function by field name.
 
 ```javascript
-GetParam(paramName, defaultValue) 
+Tester.GetParam(paramName, defaultValue)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| paramName | string |	Parameter name |
-| defaultValue | string |	Default value |
+| paramName | string |  Parameter name |
+| defaultValue | string |  Default value |
 
 
 
@@ -927,15 +927,15 @@ GetParam(paramName, defaultValue)
 Gets report attribute previously set by PushReportAttribute or SetReportAttribute.
 
 ```javascript
-GetReportAttribute(name) 
+Tester.GetReportAttribute(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Attribute name. |
+| name | string |  Attribute name. |
 
 
 
@@ -949,7 +949,7 @@ GetReportAttribute(name)
 Returns name of the running test.
 
 ```javascript
-GetTestName() 
+Tester.GetTestName()
 ```
 
 
@@ -964,7 +964,7 @@ GetTestName()
 Gets status of currently executed test.
 
 ```javascript
-GetTestStatus() 
+Tester.GetTestStatus()
 ```
 
 
@@ -999,15 +999,15 @@ just for information purposes (i.e. it does not affect final test status).</p>
 </pre>
 
 ```javascript
-IgnoreStatus(ignore) 
+Tester.IgnoreStatus(ignore)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| ignore | boolean |	Set to 'true' to report all messages but ignore the status (Pass/Fail) |
+| ignore | boolean |  Set to 'true' to report all messages but ignore the status (Pass/Fail) |
 
 
 
@@ -1022,17 +1022,17 @@ Saves corresponding Report message.
 Message may contain some additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-Message(message, data, tags) 
+Tester.Message(message, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1046,15 +1046,15 @@ Message(message, data, tags)
 Shows message box to user. Use it for verbose and manual testing.
 
 ```javascript
-MessageBox(message) 
+Tester.MessageBox(message)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to display. |
+| message | string |  Message to display. |
 
 
 
@@ -1070,15 +1070,15 @@ Shows message box with question to the user and checks if user presses "Yes" or 
   "No" => "Fail" is reported.
 
 ```javascript
-MessageBoxPrompt(question) 
+Tester.MessageBoxPrompt(question)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| question | string |	Question to display. |
+| question | string |  Question to display. |
 
 
 
@@ -1092,15 +1092,15 @@ MessageBoxPrompt(question)
 Resets an attribute to its previous value. See PushReportAttribute for more information.
 
 ```javascript
-PopReportAttribute(name) 
+Tester.PopReportAttribute(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Attribute name to recall from stack. |
+| name | string |  Attribute name to recall from stack. |
 
 
 
@@ -1143,16 +1143,16 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 </pre>
 
 ```javascript
-PushReportAttribute(name, value) 
+Tester.PushReportAttribute(name, value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Attribute name to recall from stack. |
-| value | string |	New attribute value. |
+| name | string |  Attribute name to recall from stack. |
+| value | string |  New attribute value. |
 
 
 
@@ -1166,15 +1166,15 @@ PushReportAttribute(name, value)
 Removes report attribute previously set by SetReportAttribute.
 
 ```javascript
-ResetReportAttribute(name) 
+Tester.ResetReportAttribute(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Attribute name. |
+| name | string |  Attribute name. |
 
 
 
@@ -1190,16 +1190,16 @@ Set persistent attribute. It will be set for all subsequent report items
 the ResetReportAttribute function.
 
 ```javascript
-SetReportAttribute(name, value) 
+Tester.SetReportAttribute(name, value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Attribute name to set. |
-| value | string |	New attribute value. |
+| name | string |  Attribute name to set. |
+| value | string |  New attribute value. |
 
 
 
@@ -1213,18 +1213,18 @@ SetReportAttribute(name, value)
 Is identical to Tester.Assert. But when an assertion fails, don't stop execution and just record the failure. Later you may call `Tester.SoftAssertAll(..)` that will stop execution if at least one assertion failed.
 
 ```javascript
-SoftAssert(message, condition, data, tags) 
+Tester.SoftAssert(message, condition, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| condition | boolean |	If 'true' - assertion is considered passed. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| condition | boolean |  If 'true' - assertion is considered passed. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| object[] \| string |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1238,15 +1238,15 @@ SoftAssert(message, condition, data, tags)
 Fail test if there were any previous failures. This method is designed to be used after one or many calls to `Tester.SoftAssert(...)`.
 
 ```javascript
-SoftAssertAll(message) 
+Tester.SoftAssertAll(message)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
+| message | string |  Message to put in the report. |
 
 
 
@@ -1262,19 +1262,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertContains(message, str, substr, data, tags) 
+Tester.SoftAssertContains(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1290,19 +1290,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertEndsWith(message, str, substr, data, tags) 
+Tester.SoftAssertEndsWith(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1318,19 +1318,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertEqual(message, obj1, obj2, data, tags) 
+Tester.SoftAssertEqual(message, obj1, obj2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| obj1 | object |	First object to compare. |
-| obj2 | object |	Second object to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| obj1 | object |  First object to compare. |
+| obj2 | object |  Second object to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1346,18 +1346,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertFalse(message, val, data, tags) 
+Tester.SoftAssertFalse(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1373,19 +1373,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertGreater(message, n1, n2, data, tags) 
+Tester.SoftAssertGreater(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | number |	First value to compare. |
-| n2 | number |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | number |  First value to compare. |
+| n2 | number |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1401,19 +1401,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertGreaterOrEqual(message, n1, n2, data, tags) 
+Tester.SoftAssertGreaterOrEqual(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | number |	First value to compare. |
-| n2 | number |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | number |  First value to compare. |
+| n2 | number |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1429,19 +1429,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertImage(message, img1, path, data, tags) 
+Tester.SoftAssertImage(message, img1, path, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| img1 | object |	ImageWrapper object (1st image to compare). |
-| path | string |	Path to the second image to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| img1 | object |  ImageWrapper object (1st image to compare). |
+| path | string |  Path to the second image to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1457,19 +1457,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertLess(message, n1, n2, data, tags) 
+Tester.SoftAssertLess(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | number |	First value to compare. |
-| n2 | number |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | number |  First value to compare. |
+| n2 | number |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1485,19 +1485,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertLessOrEqual(message, n1, n2, data, tags) 
+Tester.SoftAssertLessOrEqual(message, n1, n2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| n1 | object |	First value to compare. |
-| n2 | object |	Second value to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| n1 | object |  First value to compare. |
+| n2 | object |  Second value to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1513,19 +1513,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotContains(message, str, substr, data, tags) 
+Tester.SoftAssertNotContains(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1541,19 +1541,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotEqual(message, obj1, obj2, data, tags) 
+Tester.SoftAssertNotEqual(message, obj1, obj2, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| obj1 | object |	First object to compare. |
-| obj2 | object |	Second object to compare. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| obj1 | object |  First object to compare. |
+| obj2 | object |  Second object to compare. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1569,18 +1569,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotNull(message, val, data, tags) 
+Tester.SoftAssertNotNull(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1596,18 +1596,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNotSet(message, val, data, tags) 
+Tester.SoftAssertNotSet(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1623,18 +1623,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertNull(message, val, data, tags) 
+Tester.SoftAssertNull(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1650,18 +1650,18 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertSet(message, val, data, tags) 
+Tester.SoftAssertSet(message, val, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| val | object |	Value to check. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| val | object |  Value to check. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1677,19 +1677,19 @@ Assertion is an atomic piece of verification. Assertion may contain some
 additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
-SoftAssertStartsWith(message, str, substr, data, tags) 
+Tester.SoftAssertStartsWith(message, str, substr, data, tags)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |	Message to put in the report. |
-| str | string |	String to search in. |
-| substr | string |	Substring to find. |
-| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |	Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
-| tags | object |	Hash of attributes to set for this particular log entry.<br>Optional. |
+| message | string |  Message to put in the report. |
+| str | string |  String to search in. |
+| substr | string |  Substring to find. |
+| data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
+| tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
 
 
@@ -1711,15 +1711,15 @@ This mode is like IgnoreStatus mode but no status messages are added to report.
 ```
 
 ```javascript
-SuppressReport(suppress) 
+Tester.SuppressReport(suppress)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| suppress | boolean |	Set to 'True' to suppress adding anything into the report. |
+| suppress | boolean |  Set to 'True' to suppress adding anything into the report. |
 
 
 
@@ -1727,5 +1727,5 @@ SuppressReport(suppress)
 
 <a name="see.also.tester.suppressreport"></a>
 
-	
+  
 

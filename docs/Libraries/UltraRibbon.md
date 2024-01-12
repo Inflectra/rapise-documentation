@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -31,7 +31,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -40,107 +40,107 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickApplicationButton](#doclickapplicationbutton) | Clicks an application button on the ribbon. |
-|	[DoClickItem](#doclickitem) | Clicks on an item on the ribbon. |
-|	[DoClickTab](#doclicktab) | Clicks on a tab in the ribbon. |
-|	[DoItemDropSelect](#doitemdropselect) | Clicks specific item in the drop control. |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoClickApplicationButton](#doclickapplicationbutton) | Clicks an application button on the ribbon. |
+|  [DoClickItem](#doclickitem) | Clicks on an item on the ribbon. |
+|  [DoClickTab](#doclicktab) | Clicks on a tab in the ribbon. |
+|  [DoItemDropSelect](#doitemdropselect) | Clicks specific item in the drop control. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="DropdownCount"></a>
 #### DropdownCount
 
 
 NUmber of dropdown controls.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | caption | string | Name of a dropdown. |
 
 
-	
-			
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetDropdownCount
-			
-		
+      
+    
 <a name="ItemValue"></a>
 #### ItemValue
 
 
 Value of an item.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | caption | string | Name of an item. |
 
 
-	
-			
+  
+      
 Type: string|number|boolean
-			
-			
+      
+      
 Accessors: GetItemValue
-			
-		
+      
+    
 <a name="ToggleState"></a>
 #### ToggleState
 
 
 Toggle state of a button
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | caption | string | Name of a button. |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetToggleState
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickApplicationButton"></a>    
 #### DoClickApplicationButton
 
 Clicks an application button on the ribbon.
 
 ```javascript
-DoClickApplicationButton(xOffset, yOffset) 
+SeS('SomeUltraRibbon').DoClickApplicationButton(xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -159,17 +159,17 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks on an item on the ribbon.
 
 ```javascript
-DoClickItem(caption, xOffset, yOffset) 
+SeS('SomeUltraRibbon').DoClickItem(caption, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Caption of an item to click. |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| caption | string |  Caption of an item to click. |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -188,17 +188,17 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks on a tab in the ribbon.
 
 ```javascript
-DoClickTab(caption, xOffset, yOffset) 
+SeS('SomeUltraRibbon').DoClickTab(caption, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Caption of a tab to click. |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| caption | string |  Caption of a tab to click. |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -217,16 +217,16 @@ boolean: 'true' if success, 'false' otherwise.
 Clicks specific item in the drop control.
 
 ```javascript
-DoItemDropSelect(caption, item) 
+SeS('SomeUltraRibbon').DoItemDropSelect(caption, item)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| caption | string |	Caption of the drop control. |
-| item | string |	Item to select. |
+| caption | string |  Caption of the drop control. |
+| item | string |  Item to select. |
 
 
 
@@ -245,16 +245,16 @@ boolean: 'true' if success, 'false' otherwise.
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, separator) 
+SeS('SomeUltraRibbon').DoMenu(path, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -267,5 +267,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.ultraribbon.domenu"></a>
 
-	
+  
 

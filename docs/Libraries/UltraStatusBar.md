@@ -17,7 +17,7 @@ Extends [ManagedObject](ManagedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,38 +27,38 @@ Extends [ManagedObject](ManagedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Status Bar Text.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | ind | number | Status bar section index. If not specified, the text of all sections is combined with ';' as a separator.<br>Optional. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-		
+    
 

@@ -7,7 +7,7 @@ Some common tasks related to script execution, such as calling scripts, executin
 ## DoPlayScript
 
 ```javascript
-DoPlayScript(/**string*/ scriptPath, /**string*/ sheetName)
+RVL.DoPlayScript(/**string*/ scriptPath, /**string*/ sheetName)
 ```
 
 Play RVL sheet `sheetName` from workbook `scriptPath` passing `[extraParams]` for variable values.
@@ -19,7 +19,7 @@ Play RVL sheet `sheetName` from workbook `scriptPath` passing `[extraParams]` fo
 ## DoPlaySheet
 
 ```javascript
-DoPlaySheet(/**string*/ sheetName)
+RVL.DoPlaySheet(/**string*/ sheetName)
 ```
 
 Play RVL sheet `sheetName` from current workbook passing `[extraParams]` for variable values.
@@ -30,7 +30,7 @@ Play RVL sheet `sheetName` from current workbook passing `[extraParams]` for var
 ## DoPlayTest
 
 ```javascript
-DoPlayTest(/**string*/ sstestPath)
+RVL.DoPlayTest(/**string*/ sstestPath)
 ```
 
 Executes specified test with passing of additional arguments specified as `extraParams`. It is an analog of [Global.DoInvokeTest](Global.md#DoInvokeTest)
@@ -50,7 +50,7 @@ function Test(params)
 ## DoPlayTestParallel
 
 ```javascript
-DoPlayTestParallel(/**string*/ sstestPath, /**objectId*/ threadsMap)
+RVL.DoPlayTestParallel(/**string*/ sstestPath, /**objectId*/ threadsMap)
 ```
 
 Executes specified test in parallel threads passing additional arguments specified by in `threadsMap` map. There are as many threads as there are rows in the map.
@@ -69,30 +69,38 @@ Executes specified test in parallel threads passing additional arguments specifi
 ## DoRunTest
 
 ```javascript
-DoRunTest(/**string*/ sstestPath)
+RVL.DoRunTest(/**string*/ sstestPath)
 ```
 
 Executes specified test using [Global.DoRunTest](Global.md#DoRunTest) but passing any extra parameters as 'params' object to invoked test. Requires Rapise 8.1+.
 			
 * `sstestPath`: Path to test
-* **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)        
+* **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)
 
 ## Exit
 
-```javascript
-Exit(/**string*/ message, /**boolean*/ isError)
-```
-
-Break execution at the specified line
+Break execution at the specified line, with given message added to the report. This method should be called from within RVL sheet only.
 
 * `message`: Exit message
 * `isError`: Specify 'false' if you want just exit without exit message
 
+Example 1: Exit normally, return value of `ReturnValue` variable:
+
+| Flow | Type   | Object | Action | ParamName   | ParamType    | ParamValue  |
+| ---- | ------ | ------ | ------ | ----------- | ------------ | ----------- |
+|      | Action | RVL    | Exit   | **message** | **variable** | ReturnValue |
+
+Example 2: Exit with error:
+
+| Flow | Type   | Object | Action | ParamName          | ParamType   | ParamValue       |
+| ---- | ------ | ------ | ------ | ------------------ | ----------- | ---------------- |
+|      | Action | RVL    | Exit   | **message**        | **string**  | Execution Failed |
+|      | Param  |        |        | **isError**        | **boolean** | **true**         |
+
 ## GetDropdownValue
 
 ```javascript
-GetDropdownValue(/**string*/ id, /**string*/ idList,
-                 /**string*/ valList, /**string*/ xlsPath)
+RVL.GetDropdownValue(/**string*/id, /**string*/idList, /**string*/valList, /**string*/xlsPath)
 ```
 
 Remap dropdown value from one list to another
@@ -106,7 +114,7 @@ Example. Suppose we have the following definitions of dropdowns:
 
 ![States Dropdown](../RVL/img/RVL_GetDropdownValue_states.png)
 
-Then the call 
+Then the call
 
 ```javascript
 var stateCode = RVL.GetDropdownValue(stateName,
@@ -120,18 +128,20 @@ See also [RVL Editor Param Dropdowns](../Guide/rvl_editor.md#param-dropdowns)
 
 ## Return
 
-```javascript
-Return(/**string*/ message)
-```
-
-Return from specified line. This method should be called from within RVL.
+Finish execution of current sheet. This method should be called from within RVL sheet only.
 
 * `message`: Return message
+
+Example 1: Finish execution of current sheet, return value of `ReturnValue` variable:
+
+| Flow | Type   | Object | Action | ParamName   | ParamType    | ParamValue  |
+| ---- | ------ | ------ | ------ | ----------- | ------------ | ----------- |
+|      | Action | RVL    | Return | **message** | **variable** | ReturnValue |
 
 ## SetLocatorOpts
 
 ```javascript
-SetLocatorOpts(/**objectid*/ objectid, {optname:optvalue,...})
+RVL.SetLocatorOpts(/**objectid*/ objectid, {optname:optvalue,...})
 ```
 
 Set additional locator options for specified object. This is a way to modify various script parameters such as `locator`, `xpath`, `url` and thus find different objects.
@@ -141,7 +151,7 @@ Set additional locator options for specified object. This is a way to modify var
 Example:
 
 | Flow | Type   | Object | Action         | ParamName          | ParamType    | ParamValue     |
-| :--- | :----- | :----- | :------------- | :----------------- | :----------- | :------------- |
+| ---- | ------ | ------ | -------------- | ------------------ | ------------ | -------------- |
 |      | Action | RVL    | SetLocatorOpts | **objectid**       | **objectid** | MyButton       |
 |      | Param  |        |                | **locator_param1** | **string**   | **new value1** |
 |      | Param  |        |                | **locator_param2** | **string**   | **new value2** |
@@ -153,14 +163,13 @@ If you want to reset all values to default value call this method with just `obj
 ## FormatString
 
 ```javascript
-FormatString(/**string*/fmtString, {optname:optvalue,...})
+RVL.FormatString(/**string*/fmtString, {optname:optvalue,...})
 ```
 
 Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: `My name is {name}`.
 
-
 | Flow | Type   | Object | Action       | ParamName     | ParamType  | ParamValue                                 |
-| :--- | :----- | :----- | :----------- | :------------ | :--------- | :----------------------------------------- |
+| ---- | ------ | ------ | ------------ | ------------- | ---------- | ------------------------------------------ |
 |      | Action | RVL    | FormatString | **fmtString** | **string** | `{first} plus {second} equals to {result}` |
 |      | Param  |        |              | **first**     | **string** | `one`                                      |
 |      | Param  |        |              | **second**    | **string** | `five`                                     |
@@ -173,7 +182,7 @@ This Action should put string value `one plus five equals to 6` into the variabl
 ## CurrentScriptPath
 
 ```javascript
-GetCurrentScriptPath()
+RVL.GetCurrentScriptPath()
 ```
 
 Return path to currently executed `.rvl.xls` file.
@@ -181,7 +190,7 @@ Return path to currently executed `.rvl.xls` file.
 ## CurrentScriptSheet
 
 ```javascript
-GetCurrentScriptSheet()
+RVL.GetCurrentScriptSheet()
 ```
 
 Return sheet name of the currently executed `.rvl.xls` file.

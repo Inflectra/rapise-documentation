@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -28,40 +28,40 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoFullText](#dofulltext) | Returns text representation of the menu or saves it to a file. |
-|	[DoGetSubmenuCount](#dogetsubmenucount) | Gets the number of submenu items for a given menu path. |
-|	[DoGetSubmenuProperty](#dogetsubmenuproperty) | Gets submenu property. |
-|	[DoGetSubmenuText](#dogetsubmenutext) | Gets submenu text. |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoFullText](#dofulltext) | Returns text representation of the menu or saves it to a file. |
+|  [DoGetSubmenuCount](#dogetsubmenucount) | Gets the number of submenu items for a given menu path. |
+|  [DoGetSubmenuProperty](#dogetsubmenuproperty) | Gets submenu property. |
+|  [DoGetSubmenuText](#dogetsubmenutext) | Gets submenu text. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoFullText"></a>    
 #### DoFullText
 
 Returns text representation of the menu or saves it to a file.
 
 ```javascript
-DoFullText(separator, filePath, append, includeSeparators) 
+SeS('SomeJavaSwingMenuBar').DoFullText(separator, filePath, append, includeSeparators)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| filePath | string |	Name of a file that should hold text representation of the menu. |
-| append | boolean |	If 'false' then file should be overwritten, if 'true' then data should be appended.<br>Optional, Default: "false". |
-| includeSeparators | boolean |	If 'true' then menu separators are included to the result.<br>Optional, Default: "false". |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| filePath | string |  Name of a file that should hold text representation of the menu. |
+| append | boolean |  If 'false' then file should be overwritten, if 'true' then data should be appended.<br>Optional, Default: "false". |
+| includeSeparators | boolean |  If 'true' then menu separators are included to the result.<br>Optional, Default: "false". |
 
 
 
@@ -80,16 +80,16 @@ number | <br>boolean: Text representation of the menu, 'true' if the file was su
 Gets the number of submenu items for a given menu path.
 
 ```javascript
-DoGetSubmenuCount(path, separator) 
+SeS('SomeJavaSwingMenuBar').DoGetSubmenuCount(path, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -108,18 +108,18 @@ number | <br>boolean: Number of submenu items, 'false' otherwise.
 Gets submenu property.
 
 ```javascript
-DoGetSubmenuProperty(path, index, property, separator) 
+SeS('SomeJavaSwingMenuBar').DoGetSubmenuProperty(path, index, property, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| index | number |	Index of the submenu. |
-| property | string |	Name of a property. Available properties can be seen in Java Spy. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| index | number |  Index of the submenu. |
+| property | string |  Name of a property. Available properties can be seen in Java Spy. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -138,17 +138,17 @@ string | <br>boolean: Submenu property, 'false' otherwise.
 Gets submenu text.
 
 ```javascript
-DoGetSubmenuText(path, index, separator) 
+SeS('SomeJavaSwingMenuBar').DoGetSubmenuText(path, index, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| index | number |	Index of the submenu. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| index | number |  Index of the submenu. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -167,16 +167,16 @@ string | <br>boolean: Submenu text, 'false' otherwise.
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, separator) 
+SeS('SomeJavaSwingMenuBar').DoMenu(path, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -189,5 +189,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.javaswingmenubar.domenu"></a>
 
-	
+  
 

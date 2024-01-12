@@ -11,7 +11,7 @@ Global object. Use it to perform actions not related to a particular object. You
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,86 +20,86 @@ Global object. Use it to perform actions not related to a particular object. You
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[_DoLoadObjects](#_doloadobjects) |  |
-|	[DoAnalogPlay](#doanalogplay) | Performs Analog Playback of events recorded in a file. |
-|	[DoAppActivate](#doappactivate) | Activates window with the specified title. |
-|	[DoClick](#doclick) | Performs mouse click at the current position. |
-|	[DoCmd](#docmd) | Executes a BAT/CMD file specified in cmdLine. |
-|	[DoCompareJsObjects](#docomparejsobjects) | Compares two JavaScript objects and prints differences to the report. |
-|	[DoDecrypt](#dodecrypt) | Decrypts a piece of text. |
-|	[DoEncrypt](#doencrypt) | Encrypts a piece of text. |
-|	[DoHorizontalScroll](#dohorizontalscroll) | Simulates mouse horizontal wheel scroll gesture. |
-|	[DoInvokeTest](#doinvoketest) | Invokes another test (aka subtest). |
-|	[DoInvokeTestParallel](#doinvoketestparallel) | Executes specified test in few parallel threads. |
-|	[DoKillByName](#dokillbyname) | Terminates a given process. |
-|	[DoKillByPid](#dokillbypid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
-|	[DoLaunch](#dolaunch) | Executes a command specified in cmdLine. |
-|	[DoLoadObjects](#doloadobjects) | Loads objects from external .objects.js file. |
-|	[DoMaximizeWindow](#domaximizewindow) | Maximizes window that matches given title and class name. |
-|	[DoMessageBox](#domessagebox) | Shows message box (popup message) to a user. |
-|	[DoMinimizeWindow](#dominimizewindow) | Minimizes window that matches given title and class name. |
-|	[DoMouseMove](#domousemove) | Moves mouse to the specified position. |
-|	[DoPlayManual](#doplaymanual) | Executes a manual test. |
-|	[DoRestoreWindow](#dorestorewindow) | Restores window that matches given title and class name. |
-|	[DoRunTest](#doruntest) | Executes a given test in isolated environment (new process is created). |
-|	[DoRunTestSet](#doruntestset) | Executes a test set. |
-|	[DoSendKeys](#dosendkeys) | Sends series of keystrokes to a currently focused application. |
-|	[DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
-|	[DoSetScreenResolution](#dosetscreenresolution) | Sets screen resolution. |
-|	[DoSleep](#dosleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
-|	[DoTrim](#dotrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
-|	[DoTypePassword](#dotypepassword) | Types encrypted password into a control which has a focus. |
-|	[DoVerticalScroll](#doverticalscroll) | Simulates mouse vertical wheel scroll gesture. |
-|	[DoWaitFor](#dowaitfor) | Waits for object specified by objectId to become available. |
-|	[DoWaitForProperty](#dowaitforproperty) | Waits for specified value of object's property. |
-|	[DoWaitForWindow](#dowaitforwindow) | Waits for window specified by title/class name to become available. |
-|	[GetClipboardText](#getclipboardtext) | Reads text stored in the windows clipboard. |
-|	[GetCurrentDir](#getcurrentdir) | Gets current directory path. |
-|	[GetFileAsByteArray](#getfileasbytearray) | Reads file and returns its content as array of bytes. |
-|	[GetFirstDayOfWeek](#getfirstdayofweek) | Returns first day of week for current user. |
-|	[GetFullPath](#getfullpath) | Constructs an absolute file name using working directory (WORKDIR) of the test. |
-|	[GetOsOwner](#getosowner) | Reads OS registered owner from the registry. |
-|	[GetOsPath](#getospath) | Returns OS root path. |
-|	[GetOsType](#getostype) | Reads OS type from the registry. |
-|	[GetOsVersion](#getosversion) | Reads OS service pack version from the registry. |
-|	[GetProperty](#getproperty) | Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise. |
-|	[GetRapiseVersion](#getrapiseversion) | Reads Rapise version. |
-|	[GetSpecialFolderPath](#getspecialfolderpath) | Returns path to a special folder specified by one of possible values. |
-|	[GetTestCasePath](#gettestcasepath) | Finds full path to a Test Case. |
-|	[SetClipboardText](#setclipboardtext) | Updates clipboard text |
-|	[SetConfigPath](#setconfigpath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
-|	[SetFileAsByteArray](#setfileasbytearray) | Creates or rewrites file and fills with contents of the provided byte array. |
-|	[SetProperty](#setproperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
-|	[SetWindowPosition](#setwindowposition) | Change position of the window with the specified title (and class, if specified). |
-|	[SetWindowSize](#setwindowsize) | Change size of the window with the specified title (and class, if specified). |
+|  [_DoLoadObjects](#_doloadobjects) |  |
+|  [DoAnalogPlay](#doanalogplay) | Performs Analog Playback of events recorded in a file. |
+|  [DoAppActivate](#doappactivate) | Activates window with the specified title. |
+|  [DoClick](#doclick) | Performs mouse click at the current position. |
+|  [DoCmd](#docmd) | Executes a BAT/CMD file specified in cmdLine. |
+|  [DoCompareJsObjects](#docomparejsobjects) | Compares two JavaScript objects and prints differences to the report. |
+|  [DoDecrypt](#dodecrypt) | Decrypts a piece of text. |
+|  [DoEncrypt](#doencrypt) | Encrypts a piece of text. |
+|  [DoHorizontalScroll](#dohorizontalscroll) | Simulates mouse horizontal wheel scroll gesture. |
+|  [DoInvokeTest](#doinvoketest) | Invokes another test (aka subtest). |
+|  [DoInvokeTestParallel](#doinvoketestparallel) | Executes specified test in few parallel threads. |
+|  [DoKillByName](#dokillbyname) | Terminates a given process. |
+|  [DoKillByPid](#dokillbypid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
+|  [DoLaunch](#dolaunch) | Executes a command specified in cmdLine. |
+|  [DoLoadObjects](#doloadobjects) | Loads objects from external .objects.js file. |
+|  [DoMaximizeWindow](#domaximizewindow) | Maximizes window that matches given title and class name. |
+|  [DoMessageBox](#domessagebox) | Shows message box (popup message) to a user. |
+|  [DoMinimizeWindow](#dominimizewindow) | Minimizes window that matches given title and class name. |
+|  [DoMouseMove](#domousemove) | Moves mouse to the specified position. |
+|  [DoPlayManual](#doplaymanual) | Executes a manual test. |
+|  [DoRestoreWindow](#dorestorewindow) | Restores window that matches given title and class name. |
+|  [DoRunTest](#doruntest) | Executes a given test in isolated environment (new process is created). |
+|  [DoRunTestSet](#doruntestset) | Executes a test set. |
+|  [DoSendKeys](#dosendkeys) | Sends series of keystrokes to a currently focused application. |
+|  [DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
+|  [DoSetScreenResolution](#dosetscreenresolution) | Sets screen resolution. |
+|  [DoSleep](#dosleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
+|  [DoTrim](#dotrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
+|  [DoTypePassword](#dotypepassword) | Types encrypted password into a control which has a focus. |
+|  [DoVerticalScroll](#doverticalscroll) | Simulates mouse vertical wheel scroll gesture. |
+|  [DoWaitFor](#dowaitfor) | Waits for object specified by objectId to become available. |
+|  [DoWaitForProperty](#dowaitforproperty) | Waits for specified value of object's property. |
+|  [DoWaitForWindow](#dowaitforwindow) | Waits for window specified by title/class name to become available. |
+|  [GetClipboardText](#getclipboardtext) | Reads text stored in the windows clipboard. |
+|  [GetCurrentDir](#getcurrentdir) | Gets current directory path. |
+|  [GetFileAsByteArray](#getfileasbytearray) | Reads file and returns its content as array of bytes. |
+|  [GetFirstDayOfWeek](#getfirstdayofweek) | Returns first day of week for current user. |
+|  [GetFullPath](#getfullpath) | Constructs an absolute file name using working directory (WORKDIR) of the test. |
+|  [GetOsOwner](#getosowner) | Reads OS registered owner from the registry. |
+|  [GetOsPath](#getospath) | Returns OS root path. |
+|  [GetOsType](#getostype) | Reads OS type from the registry. |
+|  [GetOsVersion](#getosversion) | Reads OS service pack version from the registry. |
+|  [GetProperty](#getproperty) | Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise. |
+|  [GetRapiseVersion](#getrapiseversion) | Reads Rapise version. |
+|  [GetSpecialFolderPath](#getspecialfolderpath) | Returns path to a special folder specified by one of possible values. |
+|  [GetTestCasePath](#gettestcasepath) | Finds full path to a Test Case. |
+|  [SetClipboardText](#setclipboardtext) | Updates clipboard text |
+|  [SetConfigPath](#setconfigpath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
+|  [SetFileAsByteArray](#setfileasbytearray) | Creates or rewrites file and fills with contents of the provided byte array. |
+|  [SetProperty](#setproperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
+|  [SetWindowPosition](#setwindowposition) | Change position of the window with the specified title (and class, if specified). |
+|  [SetWindowSize](#setwindowsize) | Change size of the window with the specified title (and class, if specified). |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="_DoLoadObjects"></a>    
 #### _DoLoadObjects
 
 
 
 ```javascript
-_DoLoadObjects(objectsFilePath, checkDuplicates, addToMap) 
+Global._DoLoadObjects(objectsFilePath, checkDuplicates, addToMap)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| objectsFilePath | string |	 |
-| checkDuplicates | bool |	 |
-| addToMap | bool |	 |
+| objectsFilePath | string |   |
+| checkDuplicates | bool |   |
+| addToMap | bool |   |
 
 
 
@@ -113,17 +113,17 @@ _DoLoadObjects(objectsFilePath, checkDuplicates, addToMap)
 Performs Analog Playback of events recorded in a file.
 
 ```javascript
-DoAnalogPlay(path, left, top) 
+Global.DoAnalogPlay(path, left, top)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	This is a path to a file with recorded analog events. |
-| left | number |	X-coordinate of top-left corner of the analog area. |
-| top | number |	Y-coordinate of the top-left corner of the analog area. |
+| path | string |  This is a path to a file with recorded analog events. |
+| left | number |  X-coordinate of top-left corner of the analog area. |
+| top | number |  Y-coordinate of the top-left corner of the analog area. |
 
 
 
@@ -138,15 +138,15 @@ Activates window with the specified title. I.e. Global.DoAppActivate("Calculator
 will bring running instance (if any) of Windows Calculator to the foreground.
 
 ```javascript
-DoAppActivate(title) 
+Global.DoAppActivate(title)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| title | string |	Title of an application window. |
+| title | string |  Title of an application window. |
 
 
 
@@ -165,15 +165,15 @@ See:
 Performs mouse click at the current position.
 
 ```javascript
-DoClick(clickType) 
+Global.DoClick(clickType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
+| clickType | string |  Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
 
 
 
@@ -187,18 +187,18 @@ DoClick(clickType)
 Executes a BAT/CMD file specified in cmdLine. Optionally one may specify working dir. Requires Rapise 6.4+
 
 ```javascript
-DoCmd(cmdLine, wrkDir, wait, show) 
+Global.DoCmd(cmdLine, wrkDir, wait, show)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cmdLine | string |	Command line to execute. Contains path to a batch file and parameters. |
-| wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
-| wait | boolean |	If `true` - Wait until batch process exit. If `false` - immediately proceed to the next test steps.<br>Optional, Default: "true". |
-| show | boolean |	If `true` - maximize the command line window. If `false` - minimize the command line window.<br>Optional, Default: "true". |
+| cmdLine | string |  Command line to execute. Contains path to a batch file and parameters. |
+| wrkDir | string |  Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
+| wait | boolean |  If `true` - Wait until batch process exit. If `false` - immediately proceed to the next test steps.<br>Optional, Default: "true". |
+| show | boolean |  If `true` - maximize the command line window. If `false` - minimize the command line window.<br>Optional, Default: "true". |
 
 
 
@@ -217,17 +217,17 @@ number: Error code returned by the batch process. 0 - indicates success if `wait
 Compares two JavaScript objects and prints differences to the report.
 
 ```javascript
-DoCompareJsObjects(msg, obj1, obj2) 
+Global.DoCompareJsObjects(msg, obj1, obj2)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| msg | string |	Message to write into report. |
-| obj1 | object |	First object. |
-| obj2 | object |	Second object. |
+| msg | string |  Message to write into report. |
+| obj1 | object |  First object. |
+| obj2 | object |  Second object. |
 
 
 
@@ -246,15 +246,15 @@ boolean: 'true' if two objects are equal, 'false' otherwise.
 Decrypts a piece of text.
 
 ```javascript
-DoDecrypt(encryptedText) 
+Global.DoDecrypt(encryptedText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| encryptedText | string |	Text to decrypt. |
+| encryptedText | string |  Text to decrypt. |
 
 
 
@@ -273,15 +273,15 @@ string: Decrypted text.
 Encrypts a piece of text.
 
 ```javascript
-DoEncrypt(plainText) 
+Global.DoEncrypt(plainText)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| plainText | string |	Text to encrypt. |
+| plainText | string |  Text to encrypt. |
 
 
 
@@ -300,15 +300,15 @@ string: Encrypted text.
 Simulates mouse horizontal wheel scroll gesture. Requires Rapise 6.5+
 
 ```javascript
-DoHorizontalScroll(scrollAmountInClicks) 
+Global.DoHorizontalScroll(scrollAmountInClicks)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scrollAmountInClicks | number |	The amount to scroll in clicks. A positive value indicates that the wheel was rotated to the right; a negative value indicates that the wheel was rotated to the left. |
+| scrollAmountInClicks | number |  The amount to scroll in clicks. A positive value indicates that the wheel was rotated to the right; a negative value indicates that the wheel was rotated to the left. |
 
 
 
@@ -323,16 +323,16 @@ Invokes another test (aka subtest). The subtest should have the
 set of libraries as calling test. Otherwise it may lead to a conflict.
 
 ```javascript
-DoInvokeTest(pathToTest, optionalParams) 
+Global.DoInvokeTest(pathToTest, optionalParams)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| pathToTest | string |	Path to .sstest file. |
-| optionalParams | object |	Parameters to pass into entry point Test() function of the subtest. I.e. it is called as Test(optionalParams).<br>Optional, Default: "[object Object]". |
+| pathToTest | string |  Path to .sstest file. |
+| optionalParams | object |  Parameters to pass into entry point Test() function of the subtest. I.e. it is called as Test(optionalParams).<br>Optional, Default: "[object Object]". |
 
 
 
@@ -365,17 +365,17 @@ DoInvokeTestParallel(
 ```
 
 ```javascript
-DoInvokeTestParallel(testPath, threads, commonParams) 
+Global.DoInvokeTestParallel(testPath, threads, commonParams)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| testPath | string |	Path to .sstest to execute. |
-| threads | object |	Structure, defining parallel threads to execute. |
-| commonParams | object |	Object containing {name:'value',...} pairs to be passed as parameters to all tests.<br>Optional. |
+| testPath | string |  Path to .sstest to execute. |
+| threads | object |  Structure, defining parallel threads to execute. |
+| commonParams | object |  Object containing {name:'value',...} pairs to be passed as parameters to all tests.<br>Optional. |
 
 
 
@@ -394,15 +394,15 @@ boolean: true, if execution finished with exit code 0 (all tests executed succes
 Terminates a given process.
 
 ```javascript
-DoKillByName(processName) 
+Global.DoKillByName(processName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| processName | string |	Executable name to kill (such as 'iexplore.exe'). |
+| processName | string |  Executable name to kill (such as 'iexplore.exe'). |
 
 
 
@@ -421,15 +421,15 @@ boolean: 'true' if the process was terminated, 'false' otherwise.
 Terminates a given process or the last process created by DoLaunch if 'pid' is not specified.
 
 ```javascript
-DoKillByPid(pid) 
+Global.DoKillByPid(pid)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| pid | number |	ID of the process.<br>Optional. |
+| pid | number |  ID of the process.<br>Optional. |
 
 
 
@@ -449,18 +449,18 @@ Executes a command specified in cmdLine. Optionally one may specify working dir,
 to attach if it is already launched.
 
 ```javascript
-DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow) 
+Global.DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cmdLine | string |	Command line to an executable with parameters. |
-| wrkDir | string |	Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
-| attachIfExists | boolean |	Try to find a process with the same executable path instead of launching it.<br>Optional, Default: "false". |
-| attachToWindow | string |	When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "". |
+| cmdLine | string |  Command line to an executable with parameters. |
+| wrkDir | string |  Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
+| attachIfExists | boolean |  Try to find a process with the same executable path instead of launching it.<br>Optional, Default: "false". |
+| attachToWindow | string |  When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "". |
 
 
 
@@ -479,15 +479,15 @@ number: ID of the new process (positive number) or an error code (negative numbe
 Loads objects from external .objects.js file.
 
 ```javascript
-DoLoadObjects(objectsFilePath) 
+Global.DoLoadObjects(objectsFilePath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| objectsFilePath | string |	Path to *.objects.js file. |
+| objectsFilePath | string |  Path to *.objects.js file. |
 
 
 
@@ -506,16 +506,16 @@ object: saved_script_objects or null if the load was unsuccessful.
 Maximizes window that matches given title and class name. Requires Rapise 7.2+
 
 ```javascript
-DoMaximizeWindow(title, className) 
+Global.DoMaximizeWindow(title, className)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| title | string |	Title of a window to search for. Use exact value or `regex:` expression. |
-| className | string |	Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+| title | string |  Title of a window to search for. Use exact value or `regex:` expression. |
+| className | string |  Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
 
 
 
@@ -573,16 +573,16 @@ The function returns a number representation of a button pressed by user:
 ```
 
 ```javascript
-DoMessageBox(prompt, buttons) 
+Global.DoMessageBox(prompt, buttons)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| prompt | string |	Message to display. |
-| buttons | number |	Buttons to show. Possible values: 0, 1, 2, 3, 4, 5, 16, 32, 48, 64, 0, 256, 512, 768, 0, 4096<br>Optional, Default: "0". |
+| prompt | string |  Message to display. |
+| buttons | number |  Buttons to show. Possible values: 0, 1, 2, 3, 4, 5, 16, 32, 48, 64, 0, 256, 512, 768, 0, 4096<br>Optional, Default: "0". |
 
 
 
@@ -601,16 +601,16 @@ number: A number representation of a button pressed by user.
 Minimizes window that matches given title and class name. Requires Rapise 7.2+
 
 ```javascript
-DoMinimizeWindow(title, className) 
+Global.DoMinimizeWindow(title, className)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| title | string |	Title of a window to search for. Use exact value or `regex:` expression. |
-| className | string |	Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+| title | string |  Title of a window to search for. Use exact value or `regex:` expression. |
+| className | string |  Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
 
 
 
@@ -629,17 +629,17 @@ boolean: `true` if window was found, otherwise `false`.
 Moves mouse to the specified position.
 
 ```javascript
-DoMouseMove(x, y, duration) 
+Global.DoMouseMove(x, y, duration)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	Absolute X-coordinate of the target mouse position. |
-| y | number |	Absolute Y-coordinate of the target mouse position. |
-| duration | number |	Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: "0". |
+| x | number |  Absolute X-coordinate of the target mouse position. |
+| y | number |  Absolute Y-coordinate of the target mouse position. |
+| duration | number |  Mouse move duration (milliseconds). If 0 - do immediate move.<br>Optional, Default: "0". |
 
 
 
@@ -653,16 +653,16 @@ DoMouseMove(x, y, duration)
 Executes a manual test. Results are shown in the report of the calling test.
 
 ```javascript
-DoPlayManual(rmtFilePath, rmtParams) 
+Global.DoPlayManual(rmtFilePath, rmtParams)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| rmtFilePath | string |	Path to manual test (.rmt) file. |
-| rmtParams | object |	Additional parameters to pass to the manual test executor.<br>Optional. |
+| rmtFilePath | string |  Path to manual test (.rmt) file. |
+| rmtParams | object |  Additional parameters to pass to the manual test executor.<br>Optional. |
 
 
 
@@ -681,16 +681,16 @@ boolean: 'true' if the manual test passed, 'false' otherwise.
 Restores window that matches given title and class name. Requires Rapise 7.2+
 
 ```javascript
-DoRestoreWindow(title, className) 
+Global.DoRestoreWindow(title, className)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| title | string |	Title of a window to search for. Use exact value or `regex:` expression. |
-| className | string |	Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+| title | string |  Title of a window to search for. Use exact value or `regex:` expression. |
+| className | string |  Class name of a window to search for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
 
 
 
@@ -709,16 +709,16 @@ boolean: `true` if window was found, otherwise `false`.
 Executes a given test in isolated environment (new process is created). Requires Rapise 8.1+.
 
 ```javascript
-DoRunTest(testPath, optionalParams) 
+Global.DoRunTest(testPath, optionalParams)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| testPath | string |	Path to .sstest to execute. |
-| optionalParams | object |	Object containing {name:'value',...} pairs to be passed as parameters to the test.<br>Optional. |
+| testPath | string |  Path to .sstest to execute. |
+| optionalParams | object |  Object containing {name:'value',...} pairs to be passed as parameters to the test.<br>Optional. |
 
 
 
@@ -732,16 +732,16 @@ DoRunTest(testPath, optionalParams)
 Executes a test set. Results are shown in the report of the calling test.
 
 ```javascript
-DoRunTestSet(testSetFilePath, testSetParams) 
+Global.DoRunTestSet(testSetFilePath, testSetParams)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| testSetFilePath | string |	Path to a test set file. |
-| testSetParams | object |	Additional parameters to pass for each test in the test set.<br>Optional. |
+| testSetFilePath | string |  Path to a test set file. |
+| testSetParams | object |  Additional parameters to pass for each test in the test set.<br>Optional. |
 
 
 
@@ -755,15 +755,15 @@ DoRunTestSet(testSetFilePath, testSetParams)
 Sends series of keystrokes to a currently focused application.
 
 ```javascript
-DoSendKeys(keys) 
+Global.DoSendKeys(keys)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| keys | string |	Keystrokes, including special characters and control symbols. |
+| keys | string |  Keystrokes, including special characters and control symbols. |
 
 
 
@@ -777,15 +777,15 @@ DoSendKeys(keys)
 Sends text to the active application as is (while SendKeys also supports sending special keys). Requires Rapise 6.5+
 
 ```javascript
-DoSendText(text) 
+Global.DoSendText(text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text | string |	Text to input. |
+| text | string |  Text to input. |
 
 
 
@@ -799,16 +799,16 @@ DoSendText(text)
 Sets screen resolution. Use to run UI tests in unattended RDP sessions.
 
 ```javascript
-DoSetScreenResolution(width, height) 
+Global.DoSetScreenResolution(width, height)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| width | number |	Screen width in pixels |
-| height | number |	Screen height in pixels |
+| width | number |  Screen width in pixels |
+| height | number |  Screen height in pixels |
 
 
 
@@ -822,15 +822,15 @@ DoSetScreenResolution(width, height)
 Pauses execution for given number of milliseconds (1000 = 1 second).
 
 ```javascript
-DoSleep(millis) 
+Global.DoSleep(millis)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| millis | number |	Number of milliseconds to sleep. |
+| millis | number |  Number of milliseconds to sleep. |
 
 
 
@@ -845,17 +845,17 @@ Strips leading and trailing white-space from a string, replaces sequences of whi
 Whitespace characters are [\\f\\n\\r\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff].
 
 ```javascript
-DoTrim(str, global, trimChars) 
+Global.DoTrim(str, global, trimChars)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| str | string |	String to trim. |
-| global | boolean |	If 'true' then global trim is performed (whitespaces in the middle are substituted with a single space). If 'false' only ends are trimmed.<br>Optional, Default: "false". |
-| trimChars | string |	String with each char to be subject for trim.<br>Optional. |
+| str | string |  String to trim. |
+| global | boolean |  If 'true' then global trim is performed (whitespaces in the middle are substituted with a single space). If 'false' only ends are trimmed.<br>Optional, Default: "false". |
+| trimChars | string |  String with each char to be subject for trim.<br>Optional. |
 
 
 
@@ -874,15 +874,15 @@ string: Trimmed string.
 Types encrypted password into a control which has a focus.
 
 ```javascript
-DoTypePassword(encryptedPassword) 
+Global.DoTypePassword(encryptedPassword)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| encryptedPassword | string |	Password to type. Encrypted. |
+| encryptedPassword | string |  Password to type. Encrypted. |
 
 
 
@@ -901,15 +901,15 @@ string: 'true'
 Simulates mouse vertical wheel scroll gesture. Requires Rapise 6.5+
 
 ```javascript
-DoVerticalScroll(scrollAmountInClicks) 
+Global.DoVerticalScroll(scrollAmountInClicks)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scrollAmountInClicks | number |	The amount to scroll in clicks. A positive value indicates that the wheel was rotated forward, away from the user; a negative value indicates that the wheel was rotated backward, toward the user. |
+| scrollAmountInClicks | number |  The amount to scroll in clicks. A positive value indicates that the wheel was rotated forward, away from the user; a negative value indicates that the wheel was rotated backward, toward the user. |
 
 
 
@@ -924,17 +924,17 @@ Waits for object specified by objectId to become available. Function returns if 
 was found or timeout.
 
 ```javascript
-DoWaitFor(objectId, timeout, sleepTimeIfFound) 
+Global.DoWaitFor(objectId, timeout, sleepTimeIfFound)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| objectId | objectid |	Id of an object to wait for. |
-| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
-| sleepTimeIfFound | number |	Wait time (milliseconds) after object is found.<br>Optional, Default: "0". |
+| objectId | objectid |  Id of an object to wait for. |
+| timeout | number |  Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
+| sleepTimeIfFound | number |  Wait time (milliseconds) after object is found.<br>Optional, Default: "0". |
 
 
 
@@ -970,19 +970,19 @@ function(value)
 Use the callback if you need to check more complex condition than equality.
 
 ```javascript
-DoWaitForProperty(obj, getterName, propValue, timeout, params) 
+Global.DoWaitForProperty(obj, getterName, propValue, timeout, params)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| obj | objectid \| SeSObject |	Id of an object to wait for or object itself. |
-| getterName | string |	Property getter function name. |
-| propValue | string \| number \| boolean \| function |	Desired property value or callback function (see description). |
-| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
-| params | array \| string \| number \| boolean |	Parameters for property getter function.<br>Optional. |
+| obj | objectid \| SeSObject |  Id of an object to wait for or object itself. |
+| getterName | string |  Property getter function name. |
+| propValue | string \| number \| boolean \| function |  Desired property value or callback function (see description). |
+| timeout | number |  Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
+| params | array \| string \| number \| boolean |  Parameters for property getter function.<br>Optional. |
 
 
 
@@ -1002,17 +1002,17 @@ Waits for window specified by title/class name to become available. Function ret
 was found or timeout. Requires Rapise 7.2+
 
 ```javascript
-DoWaitForWindow(title, className, timeout) 
+Global.DoWaitForWindow(title, className, timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| title | string |	Title of a window to wait for. Use exact value or `regex:` expression. |
-| className | string |	Class name of a window to wait for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
-| timeout | number |	Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
+| title | string |  Title of a window to wait for. Use exact value or `regex:` expression. |
+| className | string |  Class name of a window to wait for. Use exact value or `regex:` expression. Empty or null value matches any class name.<br>Optional, Default: "". |
+| timeout | number |  Maximum time to wait (milliseconds).<br>Optional, Default: "10000". |
 
 
 
@@ -1031,7 +1031,7 @@ boolean: `true` if window was found, otherwise `false`.
 Reads text stored in the windows clipboard.
 
 ```javascript
-GetClipboardText() 
+Global.GetClipboardText()
 ```
 
 
@@ -1051,7 +1051,7 @@ string: Clipboard text
 Gets current directory path.
 
 ```javascript
-GetCurrentDir() 
+Global.GetCurrentDir()
 ```
 
 
@@ -1071,15 +1071,15 @@ string: Path of the current directory.
 Reads file and returns its content as array of bytes. May be useful for binary files and for passing data to web services.
 
 ```javascript
-GetFileAsByteArray(fileName) 
+Global.GetFileAsByteArray(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Filename to read (recommended to use absolute file name). |
+| fileName | string |  Filename to read (recommended to use absolute file name). |
 
 
 
@@ -1098,7 +1098,7 @@ object: Array of bytes.
 Returns first day of week for current user.
 
 ```javascript
-GetFirstDayOfWeek() 
+Global.GetFirstDayOfWeek()
 ```
 
 
@@ -1118,15 +1118,15 @@ number: 0 - Sunday, 1 - Monday.
 Constructs an absolute file name using working directory (WORKDIR) of the test.
 
 ```javascript
-GetFullPath(fileName) 
+Global.GetFullPath(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Name of a file. |
+| fileName | string |  Name of a file. |
 
 
 
@@ -1145,7 +1145,7 @@ string: Absolute file name.
 Reads OS registered owner from the registry.
 
 ```javascript
-GetOsOwner() 
+Global.GetOsOwner()
 ```
 
 
@@ -1165,7 +1165,7 @@ string: OS registered owner.
 Returns OS root path.
 
 ```javascript
-GetOsPath() 
+Global.GetOsPath()
 ```
 
 
@@ -1185,7 +1185,7 @@ string: OS root path without the trailing backslash, e.g. 'C:\Windows'.
 Reads OS type from the registry.
 
 ```javascript
-GetOsType() 
+Global.GetOsType()
 ```
 
 
@@ -1205,7 +1205,7 @@ string: OS type string.
 Reads OS service pack version from the registry.
 
 ```javascript
-GetOsVersion() 
+Global.GetOsVersion()
 ```
 
 
@@ -1225,17 +1225,17 @@ string: Service pack version.
 Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise.
 
 ```javascript
-GetProperty(name, defValue, configPath) 
+Global.GetProperty(name, defValue, configPath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of a property |
-| defValue | string \| number \| boolean |	Default value to return if property does not exist<br>Optional. |
-| configPath | string |	Path to options file (.json, .xlsx).<br>Optional. |
+| name | string |  Name of a property |
+| defValue | string \| number \| boolean |  Default value to return if property does not exist<br>Optional. |
+| configPath | string |  Path to options file (.json, .xlsx).<br>Optional. |
 
 
 
@@ -1254,15 +1254,15 @@ string | <br>number | <br>boolean: Property value. If a property does not exist 
 Reads Rapise version. If 'optMinVersion' is specified, then returns true/false depending on 'optMinVersion' less than actual Rapise version.
 
 ```javascript
-GetRapiseVersion(optMinVersion) 
+Global.GetRapiseVersion(optMinVersion)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| optMinVersion | string |	Minimum version to check<br>Optional. |
+| optMinVersion | string |  Minimum version to check<br>Optional. |
 
 
 
@@ -1308,15 +1308,15 @@ Returns path to a special folder specified by one of possible values.
 </table>
 
 ```javascript
-GetSpecialFolderPath(folder) 
+Global.GetSpecialFolderPath(folder)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| folder | string |	Folder Id. Possible values: "ApplicationData", "CommonApplicationData", "CommonProgramFiles", "Cookies", "Desktop", "DesktopDirectory", "Favorites", "History", "InternetCache", "LocalApplicationData", "MyComputer", "MyDocuments", "MyMusic", "ProgramFiles", "Programs", "Recent", "SendTo", "StartMenu", "Startup", "System", "Templates" |
+| folder | string |  Folder Id. Possible values: "ApplicationData", "CommonApplicationData", "CommonProgramFiles", "Cookies", "Desktop", "DesktopDirectory", "Favorites", "History", "InternetCache", "LocalApplicationData", "MyComputer", "MyDocuments", "MyMusic", "ProgramFiles", "Programs", "Recent", "SendTo", "StartMenu", "Startup", "System", "Templates" |
 
 
 
@@ -1336,15 +1336,15 @@ Finds full path to a Test Case.
 The Path is resolved for file path or for TC alias name.
 
 ```javascript
-GetTestCasePath(pathToTest) 
+Global.GetTestCasePath(pathToTest)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| pathToTest | string |	Path to .sstest file or Test Case alias name. |
+| pathToTest | string |  Path to .sstest file or Test Case alias name. |
 
 
 
@@ -1363,15 +1363,15 @@ string: path to .sstest
 Updates clipboard text
 
 ```javascript
-SetClipboardText(txt) 
+Global.SetClipboardText(txt)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txt | string |	Text to store into clipboard. |
+| txt | string |  Text to store into clipboard. |
 
 
 
@@ -1390,15 +1390,15 @@ boolean: 'true' when clipboard is set.
 Set default path for config file instead of default %WORKDIR%\Config.json. Supports .xlsx and .json file format. This path is used by default for further calls to Global.GetProperty and Global.SetProperty
 
 ```javascript
-SetConfigPath(defPath) 
+Global.SetConfigPath(defPath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| defPath | string |	New config path, i.e. %WORKDIR%\Config.xlsx |
+| defPath | string |  New config path, i.e. %WORKDIR%\Config.xlsx |
 
 
 
@@ -1417,16 +1417,16 @@ string: Previous config path
 Creates or rewrites file and fills with contents of the provided byte array.
 
 ```javascript
-SetFileAsByteArray(fileName, bytes) 
+Global.SetFileAsByteArray(fileName, bytes)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Filename to write (recommended to use absolute file name). |
-| bytes | array |	Array of bytes to write. |
+| fileName | string |  Filename to write (recommended to use absolute file name). |
+| bytes | array |  Array of bytes to write. |
 
 
 
@@ -1445,17 +1445,17 @@ number: Number of bytes written.
 Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. If the file does not exist it will be created.
 
 ```javascript
-SetProperty(name, value, configPath) 
+Global.SetProperty(name, value, configPath)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Name of a property. |
-| value | string \| number \| boolean |	Value to set. |
-| configPath | string |	Path to options file (.json, .xlsx).<br>Optional. |
+| name | string |  Name of a property. |
+| value | string \| number \| boolean |  Value to set. |
+| configPath | string |  Path to options file (.json, .xlsx).<br>Optional. |
 
 
 
@@ -1474,18 +1474,18 @@ boolean: 'true' if property value set successfully, 'false' otherwise.
 Change position of the window with the specified title (and class, if specified).
 
 ```javascript
-SetWindowPosition(x, y, windowTitle, windowClass) 
+Global.SetWindowPosition(x, y, windowTitle, windowClass)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	Position left offset in pixels. |
-| y | number |	Position top offset in pixels. |
-| windowTitle | string |	String or regular expression to match window title. |
-| windowClass | string |	String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
+| x | number |  Position left offset in pixels. |
+| y | number |  Position top offset in pixels. |
+| windowTitle | string |  String or regular expression to match window title. |
+| windowClass | string |  String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
 
 
 
@@ -1499,18 +1499,18 @@ SetWindowPosition(x, y, windowTitle, windowClass)
 Change size of the window with the specified title (and class, if specified).
 
 ```javascript
-SetWindowSize(width, height, windowTitle, windowClass) 
+Global.SetWindowSize(width, height, windowTitle, windowClass)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| width | number |	New width in pixels. |
-| height | number |	New height in pixels. |
-| windowTitle | string |	String or regular expression to match window title. |
-| windowClass | string |	String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
+| width | number |  New width in pixels. |
+| height | number |  New height in pixels. |
+| windowTitle | string |  String or regular expression to match window title. |
+| windowClass | string |  String or regular expression to match window class.<br>Optional, Default: "regex:.*". |
 
 
 
@@ -1518,5 +1518,5 @@ SetWindowSize(width, height, windowTitle, windowClass)
 
 <a name="see.also.global.setwindowsize"></a>
 
-	
+  
 

@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -33,7 +33,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -42,116 +42,116 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCollapse](#docollapse) | Collapses an item of this object. |
-|	[DoExpand](#doexpand) | Expands an item of this object. |
-|	[DoGetValue](#dogetvalue) | Gets value of a grid item with a given label. |
-|	[DoSelectItem](#doselectitem) | Selects an item of this object. |
-|	[DoSetValue](#dosetvalue) | Sets value of an grid item of this object. |
-|	[DoShowDropDown](#doshowdropdown) | Show dropdown (or custom dialog) for an item. |
+|  [DoCollapse](#docollapse) | Collapses an item of this object. |
+|  [DoExpand](#doexpand) | Expands an item of this object. |
+|  [DoGetValue](#dogetvalue) | Gets value of a grid item with a given label. |
+|  [DoSelectItem](#doselectitem) | Selects an item of this object. |
+|  [DoSetValue](#dosetvalue) | Sets value of an grid item of this object. |
+|  [DoShowDropDown](#doshowdropdown) | Show dropdown (or custom dialog) for an item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Expanded"></a>
 #### Expanded
 
 
 True if selected item is expanded
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetExpanded
-			
-		
+      
+    
 <a name="SelectedItem"></a>
 #### SelectedItem
 
 
 Returns the structure with label, value, expanded fields
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedItem
-			
-		
+      
+    
 <a name="SelectedLabel"></a>
 #### SelectedLabel
 
 
 Label of the selected item.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedLabel
-			
-		
+      
+    
 <a name="SelectedText"></a>
 #### SelectedText
 
 
 Text of the selected item.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedText
-			
-		
+      
+    
 <a name="VisibleRowCount"></a>
 #### VisibleRowCount
 
 
 Number of visible rows
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetVisibleRowCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoCollapse"></a>    
 #### DoCollapse
 
 Collapses an item of this object.
 
 ```javascript
-DoCollapse(val) 
+SeS('SomeManagedPropertyGrid').DoCollapse(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | string \| number |	name/index of the value to Collapse. |
+| val | string \| number |  name/index of the value to Collapse. |
 
 
 
@@ -170,15 +170,15 @@ boolean: 'true' if success, 'false' otherwise.
 Expands an item of this object.
 
 ```javascript
-DoExpand(val) 
+SeS('SomeManagedPropertyGrid').DoExpand(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | string \| number |	name/index of the value to Expand. |
+| val | string \| number |  name/index of the value to Expand. |
 
 
 
@@ -197,15 +197,15 @@ boolean: 'true' if success, 'false' otherwise.
 Gets value of a grid item with a given label.
 
 ```javascript
-DoGetValue(label) 
+SeS('SomeManagedPropertyGrid').DoGetValue(label)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| label | string \| number |	Property grid row label or index |
+| label | string \| number |  Property grid row label or index |
 
 
 
@@ -224,15 +224,15 @@ object: Item Value
 Selects an item of this object.
 
 ```javascript
-DoSelectItem(indexLabel) 
+SeS('SomeManagedPropertyGrid').DoSelectItem(indexLabel)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| indexLabel | string \| number |	name/index of the value to select. |
+| indexLabel | string \| number |  name/index of the value to select. |
 
 
 
@@ -251,16 +251,16 @@ boolean: 'true' if success, 'false' otherwise.
 Sets value of an grid item of this object.
 
 ```javascript
-DoSetValue(label, val) 
+SeS('SomeManagedPropertyGrid').DoSetValue(label, val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| label | string \| number |	Property grid row label or index |
-| val | string \| number |	value to set |
+| label | string \| number |  Property grid row label or index |
+| val | string \| number |  value to set |
 
 
 
@@ -279,15 +279,15 @@ boolean: 'true' if success, 'false' otherwise.
 Show dropdown (or custom dialog) for an item.
 
 ```javascript
-DoShowDropDown(indexLabel) 
+SeS('SomeManagedPropertyGrid').DoShowDropDown(indexLabel)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| indexLabel | string \| number |	name/index of the item to show dropdown for. |
+| indexLabel | string \| number |  name/index of the item to show dropdown for. |
 
 
 
@@ -300,5 +300,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.managedpropertygrid.doshowdropdown"></a>
 
-	
+  
 

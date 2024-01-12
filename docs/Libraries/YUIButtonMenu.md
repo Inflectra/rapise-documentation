@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,25 +26,25 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#doclick) | Clicks on the menu container. |
+|  [DoClick](#doclick) | Clicks on the menu container. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClick"></a>    
 #### DoClick
 
 Clicks on the menu container.
 
 ```javascript
-DoClick() 
+SeS('SomeYUIButtonMenu').DoClick()
 ```
 
 
@@ -58,5 +58,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.yuibuttonmenu.doclick"></a>
 
-	
+  
 

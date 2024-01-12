@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -28,25 +28,25 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoShowPopup](#doshowpopup) | Show popup |
+|  [DoShowPopup](#doshowpopup) | Show popup |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoShowPopup"></a>    
 #### DoShowPopup
 
 Show popup
 
 ```javascript
-DoShowPopup() 
+SeS('SomeDXDropDownButton').DoShowPopup()
 ```
 
 
@@ -55,5 +55,5 @@ DoShowPopup()
 
 <a name="see.also.dxdropdownbutton.doshowpopup"></a>
 
-	
+  
 

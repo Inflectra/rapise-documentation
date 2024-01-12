@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -30,7 +30,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -39,121 +39,121 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#doclickitem) | ClickItem |
-|	[DoSetCheck](#dosetcheck) | SetCheck |
+|  [DoClickItem](#doclickitem) | ClickItem |
+|  [DoSetCheck](#dosetcheck) | SetCheck |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCaption"></a>
 #### ItemCaption
 
 
 The caption of the button on the toolbar
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | nameCaptionIndex | number \| string | Index, name or caption of the item. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetItemCaption
-			
-		
+      
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 The number of the items in the toolbar
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
+      
+    
 <a name="ItemStyle"></a>
 #### ItemStyle
 
 
 The style of the button on the toolbar
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | nameCaptionIndex | number \| string | Index, name or caption of the item. |
 
 
-	
-			
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemStyle
-			
-		
+      
+    
 <a name="ItemValue"></a>
 #### ItemValue
 
 
 Returns 'true' if element with nameCaptionIndex has value
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | nameCaptionIndex | number \| string | Index, name or caption of the item. |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetItemValue
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickItem"></a>    
 #### DoClickItem
 
 ClickItem
 
 ```javascript
-DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset) 
+SeS('SomeMSComCtlToolbar').DoClickItem(nameCaptionIndex, clickType, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| nameCaptionIndex | string \| number |	index, name or caption of the item to be selected. |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| nameCaptionIndex | string \| number |  index, name or caption of the item to be selected. |
+| clickType | string |  Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -172,16 +172,16 @@ boolean: 'true' if success, 'false' otherwise.
 SetCheck
 
 ```javascript
-DoSetCheck(bcheck, nameCaptionIndex) 
+SeS('SomeMSComCtlToolbar').DoSetCheck(bcheck, nameCaptionIndex)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| bcheck | boolean |	Check state to set |
-| nameCaptionIndex | string \| number |	index, name or caption of the item to be selected. |
+| bcheck | boolean |  Check state to set |
+| nameCaptionIndex | string \| number |  index, name or caption of the item to be selected. |
 
 
 
@@ -194,5 +194,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.mscomctltoolbar.dosetcheck"></a>
 
-	
+  
 

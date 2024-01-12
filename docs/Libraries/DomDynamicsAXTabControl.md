@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,96 +38,96 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoCollapse](#docollapse) | Collapses specific tab in a tab control. |
-|	[DoExpand](#doexpand) | Expands specific tab in a tab control. |
+|  [DoCollapse](#docollapse) | Collapses specific tab in a tab control. |
+|  [DoExpand](#doexpand) | Expands specific tab in a tab control. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Expanded"></a>
 #### Expanded
 
 
 State of a tab with name. Returns 'true' if the tab is expanded, 'false' - otherwise.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | tabName | string | Name of a tab. |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetExpanded
-			
-		
+      
+    
 <a name="ItemsCount"></a>
 #### ItemsCount
 
 
 Number of tabs.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemsCount
-			
-		
+      
+    
 <a name="TabName"></a>
 #### TabName
 
 
 Name of a tab at index
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index | number | Index of a tab. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetTabName
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoCollapse"></a>    
 #### DoCollapse
 
 Collapses specific tab in a tab control.
 
 ```javascript
-DoCollapse(tabName) 
+SeS('SomeDomDynamicsAXTabControl').DoCollapse(tabName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabName | string |	Name of a tab |
+| tabName | string |  Name of a tab |
 
 
 
@@ -146,15 +146,15 @@ boolean: 'true' if success, 'false' otherwise.
 Expands specific tab in a tab control.
 
 ```javascript
-DoExpand(tabName) 
+SeS('SomeDomDynamicsAXTabControl').DoExpand(tabName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabName | string |	Name of a tab |
+| tabName | string |  Name of a tab |
 
 
 
@@ -167,5 +167,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.domdynamicsaxtabcontrol.doexpand"></a>
 
-	
+  
 

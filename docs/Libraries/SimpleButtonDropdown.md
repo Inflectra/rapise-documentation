@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -24,25 +24,25 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#doaction) | Presses button using mouse click or default action. |
+|  [DoAction](#doaction) | Presses button using mouse click or default action. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAction"></a>    
 #### DoAction
 
 Presses button using mouse click or default action.
 
 ```javascript
-DoAction() 
+SeS('SomeSimpleButtonDropdown').DoAction()
 ```
 
 
@@ -51,7 +51,7 @@ DoAction()
 
 <a name="see.also.simplebuttondropdown.doaction"></a>
 
-	
+  
 
 
 
@@ -61,7 +61,7 @@ DoAction()
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -70,25 +70,25 @@ DoAction()
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoDropdown](#dodropdown) | Opens dropdown. |
+|  [DoDropdown](#dodropdown) | Opens dropdown. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoDropdown"></a>    
 #### DoDropdown
 
 Opens dropdown.
 
 ```javascript
-DoDropdown() 
+SeS('SomeSimpleButtonDropdown').DoDropdown()
 ```
 
 
@@ -97,5 +97,5 @@ DoDropdown()
 
 <a name="see.also.simplebuttondropdown.dodropdown"></a>
 
-	
+  
 

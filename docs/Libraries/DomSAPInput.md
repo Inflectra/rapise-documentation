@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -27,7 +27,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -36,43 +36,43 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoOpen](#doopen) | Clicks right-side icon of the input. |
+|  [DoOpen](#doopen) | Clicks right-side icon of the input. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoOpen"></a>    
 #### DoOpen
 
 Clicks right-side icon of the input.
 
 ```javascript
-DoOpen() 
+SeS('SomeDomSAPInput').DoOpen()
 ```
 
 
@@ -86,5 +86,5 @@ boolean: 'true' if successful, 'false' otherwise
 
 <a name="see.also.domsapinput.doopen"></a>
 
-	
+  
 

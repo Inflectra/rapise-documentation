@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -30,7 +30,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -39,73 +39,73 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectDoc](#doselectdoc) | Selects a doc by name. |
+|  [DoSelectDoc](#doselectdoc) | Selects a doc by name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="DocName"></a>
 #### DocName
 
 
 Name of the doc at index
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | index |  |  |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetDocName
-			
-		
+      
+    
 <a name="ItemsCount"></a>
 #### ItemsCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemsCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectDoc"></a>    
 #### DoSelectDoc
 
 Selects a doc by name.
 
 ```javascript
-DoSelectDoc(docName) 
+SeS('SomeDXDocumentsHost').DoSelectDoc(docName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| docName | string |	Doc name to select |
+| docName | string |  Doc name to select |
 
 
 
@@ -118,5 +118,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dxdocumentshost.doselectdoc"></a>
 
-	
+  
 

@@ -20,4 +20,5 @@
    - **WebDriver [WebDriver]**
 
 3. **User Functions**
-   - **User Variables**
+
+4. **User Variables**

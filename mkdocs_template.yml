@@ -334,6 +334,7 @@ nav:
       - 'RVL Object': 'Libraries/RVL.md'
       - 'Map Object': 'Libraries/Map.md'
       - 'Input Parameters': 'RVL/RVL_DoPlay.md'      
+      - 'RVL Cheatsheet': 'RVL/Cheatsheet.md'
 - 'Libraries':
     - 'Libraries': 'Libraries/libraries.md'
     #global

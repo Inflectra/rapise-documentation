@@ -11,7 +11,7 @@ Used to show long text message in the report.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,34 +20,34 @@ Used to show long text message in the report.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[SeSReportText](#sesreporttext) | Used to show long text message in the report. |
+|  [SeSReportText](#sesreporttext) | Used to show long text message in the report. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="SeSReportText"></a>    
 #### SeSReportText
 
 Used to show long text message in the report.
 
 ```javascript
-SeSReportText(txt, caption) 
+SeSReportText.SeSReportText(txt, caption)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txt | string |	Message text. |
-| caption | string |	Message caption.<br>Optional. |
+| txt | string |  Message text. |
+| caption | string |  Message caption.<br>Optional. |
 
 
 
@@ -55,5 +55,5 @@ SeSReportText(txt, caption)
 
 <a name="see.also.sesreporttext.sesreporttext"></a>
 
-	
+  
 

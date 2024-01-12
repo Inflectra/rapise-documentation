@@ -15,7 +15,7 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -26,7 +26,7 @@ Extends [iOSObject](iOSObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -35,60 +35,60 @@ Extends [iOSObject](iOSObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoNextPage](#donextpage) | Navigates to next page. |
-|	[DoPrevPage](#doprevpage) | Navigates to previous page. |
-|	[DoSelectPage](#doselectpage) | Selects a page at index. |
+|  [DoNextPage](#donextpage) | Navigates to next page. |
+|  [DoPrevPage](#doprevpage) | Navigates to previous page. |
+|  [DoSelectPage](#doselectpage) | Selects a page at index. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
+      
+    
 <a name="PageIndex"></a>
 #### PageIndex
 
 
 Selected page index.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetPageIndex
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoNextPage"></a>    
 #### DoNextPage
 
 Navigates to next page.
 
 ```javascript
-DoNextPage() 
+SeS('SomeiOSPageIndicator').DoNextPage()
 ```
 
 
@@ -108,7 +108,7 @@ boolean: 'true' if success, 'false' otherwise.
 Navigates to previous page.
 
 ```javascript
-DoPrevPage() 
+SeS('SomeiOSPageIndicator').DoPrevPage()
 ```
 
 
@@ -128,15 +128,15 @@ boolean: 'true' if success, 'false' otherwise.
 Selects a page at index.
 
 ```javascript
-DoSelectPage(index) 
+SeS('SomeiOSPageIndicator').DoSelectPage(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	Index of the page. |
+| index | number |  Index of the page. |
 
 
 
@@ -149,5 +149,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.iospageindicator.doselectpage"></a>
 
-	
+  
 

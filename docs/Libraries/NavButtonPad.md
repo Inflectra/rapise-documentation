@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -35,7 +35,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -44,156 +44,156 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClick](#doclick) | Click button by caption or no (1-based index) |
+|  [DoClick](#doclick) | Click button by caption or no (1-based index) |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ButtonCaption"></a>
 #### ButtonCaption
 
 
 Caption of a button with specified index
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | textOrId | string \| number | button 'no' (1-based index) |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetButtonCaption
-			
-		
+      
+    
 <a name="ColumnCount"></a>
 #### ColumnCount
 
 
 Number of columns on a page
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetColumnCount
-			
-		
+      
+    
 <a name="FullInfo"></a>
 #### FullInfo
 
 
 JSON-formatted info for all buttons
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetFullInfo
-			
-		
+      
+    
 <a name="FullText"></a>
 #### FullText
 
 
 TAB-separated table with button captions
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetFullText
-			
-		
+      
+    
 <a name="PageCount"></a>
 #### PageCount
 
 
 Number of pages
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetPageCount
-			
-		
+      
+    
 <a name="RowCount"></a>
 #### RowCount
 
 
 Number of rows on a page
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetRowCount
-			
-		
+      
+    
 <a name="ToggleState"></a>
 #### ToggleState
 
 
 ToggleState of the button
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | textOrId | string \| number | caption or 'no' (1-based index) |
 
 
-	
-			
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetToggleState
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClick"></a>    
 #### DoClick
 
 Click button by caption or no (1-based index)
 
 ```javascript
-DoClick(textOrId, timeout) 
+SeS('SomeNavButtonPad').DoClick(textOrId, timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| textOrId | string \| number |	caption or 'no' (1-based index) |
-| timeout | number |	number of milliseconds to wait for a button to appear<br>Optional, Default: "5000". |
+| textOrId | string \| number |  caption or 'no' (1-based index) |
+| timeout | number |  number of milliseconds to wait for a button to appear<br>Optional, Default: "5000". |
 
 
 
@@ -206,5 +206,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.navbuttonpad.doclick"></a>
 
-	
+  
 

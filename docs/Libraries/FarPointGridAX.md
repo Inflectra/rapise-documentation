@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -39,7 +39,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -48,42 +48,42 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoActivateCell](#doactivatecell) | Make specified cell active |
-|	[DoClearCell](#doclearcell) | Clear specified cell range |
-|	[DoClickCell](#doclickcell) | Clicks the specified cell |
-|	[DoExportGrid](#doexportgrid) | Save Grid data to file |
-|	[DoFullText](#dofulltext) | Return whole grid as text |
+|  [DoActivateCell](#doactivatecell) | Make specified cell active |
+|  [DoClearCell](#doclearcell) | Clear specified cell range |
+|  [DoClickCell](#doclickcell) | Clicks the specified cell |
+|  [DoExportGrid](#doexportgrid) | Save Grid data to file |
+|  [DoFullText](#dofulltext) | Return whole grid as text |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="CellComboList"></a>
 #### CellComboList
 
 
 Get array of dropdown values for a given cell.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | row | number | Row index |
 | col | number | Column index |
 
 
-	
-			
+  
+      
 Type: array
-			
-			
+      
+      
 Accessors: GetCellComboList
-			
-		
+      
+    
 <a name="CellInfo"></a>
 #### CellInfo
 
@@ -144,75 +144,75 @@ row
 col
 </pre>
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | row | number | Row index |
 | col | number | Column index |
 
 
-	
-			
+  
+      
 Type: object
-			
-			
+      
+      
 Accessors: GetCellInfo
-			
-		
+      
+    
 <a name="ColumnCount"></a>
 #### ColumnCount
 
 
 Number of columns in the grid.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetColumnCount
-			
-		
+      
+    
 <a name="ColumnHeaders"></a>
 #### ColumnHeaders
 
 
 Get array of column captions.
 
-			
-	
-			
+      
+  
+      
 Type: array
-			
-			
+      
+      
 Accessors: GetColumnHeaders
-			
-		
+      
+    
 <a name="ColumnIndex"></a>
 #### ColumnIndex
 
 
 Get column index by name.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | colName | string | Column name |
 
 
-	
-			
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetColumnIndex
-			
-		
+      
+    
 <a name="ColumnInfo"></a>
 #### ColumnInfo
 
@@ -228,22 +228,22 @@ Index
 Visible
 </pre>
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | col | number | Column index |
 
 
-	
-			
+  
+      
 Type: object
-			
-			
+      
+      
 Accessors: GetColumnInfo
-			
-		
+      
+    
 <a name="GridInfo"></a>
 #### GridInfo
 
@@ -275,45 +275,45 @@ TopRow
 LeftCol
 </pre>
 
-			
-	
-			
+      
+  
+      
 Type: object
-			
-			
+      
+      
 Accessors: GetGridInfo
-			
-		
+      
+    
 <a name="RowCount"></a>
 #### RowCount
 
 
 Number of rows in the table.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetRowCount
-			
-		
+      
+    
 <a name="RowHeaders"></a>
 #### RowHeaders
 
 
 Get array of row captions.
 
-			
-	
-			
+      
+  
+      
 Type: array
-			
-			
+      
+      
 Accessors: GetRowHeaders
-			
-		
+      
+    
 <a name="RowInfo"></a>
 #### RowInfo
 
@@ -345,136 +345,136 @@ TopRow
 LeftCol
 </pre>
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | row | number | Row index |
 
 
-	
-			
+  
+      
 Type: object
-			
-			
+      
+      
 Accessors: GetRowInfo
-			
-		
+      
+    
 <a name="SelectedCells"></a>
 #### SelectedCells
 
 
 Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | asArray | boolean | If set to true, function returns an array. |
 | rowcolSep | string | row separator<br>Optional. |
 | cellSep | string | cell separator<br>Optional. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedCells
-			
-		
+      
+    
 <a name="SelectedColumn"></a>
 #### SelectedColumn
 
 
 Index of the selected column.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedColumn, SetSelectedColumn
-			
-		
+      
+    
 <a name="SelectedRow"></a>
 #### SelectedRow
 
 
 Index of the selected row.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedRow, SetSelectedRow
-			
-		
+      
+    
 <a name="SelectedRowsCount"></a>
 #### SelectedRowsCount
 
 
 Get number of selected rows.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedRowsCount
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the specified cell.
 
-			
+      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
-| -------- | -------- | --------------- |	
+| -------- | -------- | --------------- |  
 | row | number | Zero-based index if the row. |
 | col | number | Zero-based index of the column. |
 
 
-	
-			
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoActivateCell"></a>    
 #### DoActivateCell
 
 Make specified cell active
 
 ```javascript
-DoActivateCell(row, col) 
+SeS('SomeFarPointGridAX').DoActivateCell(row, col)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| row | number |	Column to use |
-| col | number |	Column to use |
+| row | number |  Column to use |
+| col | number |  Column to use |
 
 
 
@@ -488,18 +488,18 @@ DoActivateCell(row, col)
 Clear specified cell range
 
 ```javascript
-DoClearCell(col1, row1, col2, row2) 
+SeS('SomeFarPointGridAX').DoClearCell(col1, row1, col2, row2)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| col1 | number |	Column to use |
-| row1 | number |	Column to use |
-| col2 | number |	Column to use |
-| row2 | number |	Column to use |
+| col1 | number |  Column to use |
+| row1 | number |  Column to use |
+| col2 | number |  Column to use |
+| row2 | number |  Column to use |
 
 
 
@@ -513,19 +513,19 @@ DoClearCell(col1, row1, col2, row2)
 Clicks the specified cell
 
 ```javascript
-DoClickCell(col, row, clickType, xOffset, yOffset) 
+SeS('SomeFarPointGridAX').DoClickCell(col, row, clickType, xOffset, yOffset)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| col | number |	Zero-based index of the column. |
-| row | number |	Zero-based index if the row. |
-| clickType | string |	Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
-| xOffset | number |	X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| yOffset | number |	Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+| col | number |  Zero-based index of the column. |
+| row | number |  Zero-based index if the row. |
+| clickType | string |  Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
+| xOffset | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| yOffset | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -544,16 +544,16 @@ boolean: 'true' if successful, 'false' otherwise
 Save Grid data to file
 
 ```javascript
-DoExportGrid(fileName, type) 
+SeS('SomeFarPointGridAX').DoExportGrid(fileName, type)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Path to destination file |
-| type | string |	Export file format (EXCEL, HTML, XML). Empty ("") for tab-separated text Possible values: "EXCEL", "HTML", "XML", ""<br>Optional, Default: "L". |
+| fileName | string |  Path to destination file |
+| type | string |  Export file format (EXCEL, HTML, XML). Empty ("") for tab-separated text Possible values: "EXCEL", "HTML", "XML", ""<br>Optional, Default: "L". |
 
 
 
@@ -567,16 +567,16 @@ DoExportGrid(fileName, type)
 Return whole grid as text
 
 ```javascript
-DoFullText(saveToFile, fileName) 
+SeS('SomeFarPointGridAX').DoFullText(saveToFile, fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| saveToFile | boolean |	'true' if you need to have copy of the text in the file |
-| fileName | string |	Path to destination file |
+| saveToFile | boolean |  'true' if you need to have copy of the text in the file |
+| fileName | string |  Path to destination file |
 
 
 
@@ -584,5 +584,5 @@ DoFullText(saveToFile, fileName)
 
 <a name="see.also.farpointgridax.dofulltext"></a>
 
-	
+  
 

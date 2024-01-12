@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -24,25 +24,25 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#doaction) | Presses the button. |
+|  [DoAction](#doaction) | Presses the button. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAction"></a>    
 #### DoAction
 
 Presses the button.
 
 ```javascript
-DoAction() 
+SeS('SomeSimpleLink').DoAction()
 ```
 
 
@@ -51,5 +51,5 @@ DoAction()
 
 <a name="see.also.simplelink.doaction"></a>
 
-	
+  
 

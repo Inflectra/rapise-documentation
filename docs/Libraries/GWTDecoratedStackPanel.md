@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,33 +26,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelect](#doselect) | Selects specified panel. |
+|  [DoSelect](#doselect) | Selects specified panel. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelect"></a>    
 #### DoSelect
 
 Selects specified panel.
 
 ```javascript
-DoSelect(name) 
+SeS('SomeGWTDecoratedStackPanel').DoSelect(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Panel name to select. |
+| name | string |  Panel name to select. |
 
 
 
@@ -65,5 +65,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.gwtdecoratedstackpanel.doselect"></a>
 
-	
+  
 

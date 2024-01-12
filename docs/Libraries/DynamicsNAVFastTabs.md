@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,35 +26,35 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
+|  [DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 
 Selects the tab by name.
 
 ```javascript
-DoSelectTab(tabName, toggleAdditionalFields, additionalFieldsButtonName) 
+SeS('SomeDynamicsNAVFastTabs').DoSelectTab(tabName, toggleAdditionalFields, additionalFieldsButtonName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabName | string |	Tab name to select. |
-| toggleAdditionalFields | boolean |	Set to `true` to click on `Show more fields` button inside the tab. Supported in Rapise 6.4+.<br>Optional, Default: "false". |
-| additionalFieldsButtonName | string |	If `Show more fields` button is named differently in your locale you need to specify it. Supported in Rapise 6.4+.<br>Optional, Default: "Show more fields". |
+| tabName | string |  Tab name to select. |
+| toggleAdditionalFields | boolean |  Set to `true` to click on `Show more fields` button inside the tab. Supported in Rapise 6.4+.<br>Optional, Default: "false". |
+| additionalFieldsButtonName | string |  If `Show more fields` button is named differently in your locale you need to specify it. Supported in Rapise 6.4+.<br>Optional, Default: "Show more fields". |
 
 
 
@@ -67,5 +67,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dynamicsnavfasttabs.doselecttab"></a>
 
-	
+  
 

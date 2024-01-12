@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -31,7 +31,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -40,82 +40,82 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectColor](#doselectcolor) | Selects a color. |
-|	[DoSetText](#dosettext) | Sets text value of this object. |
+|  [DoSelectColor](#doselectcolor) | Selects a color. |
+|  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="SelectedColor"></a>
 #### SelectedColor
 
 
 Selected color of the object
 
-			
-	
-			
+      
+  
+      
 Type: struct
-			
-			
+      
+      
 Accessors: GetSelectedColor, SetSelectedColor
-			
-		
+      
+    
 <a name="SelectedText"></a>
 #### SelectedText
 
 
 Text of the selected item in a single string.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedText, SetSelectedText
-			
-		
+      
+    
 <a name="Text"></a>
 #### Text
 
 
 Text of the object, 'false' if text can not be read.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetText, SetText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectColor"></a>    
 #### DoSelectColor
 
 Selects a color.
 
 ```javascript
-DoSelectColor(val) 
+SeS('SomeDXColorEdit').DoSelectColor(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | struct |	structure with three fields '{R, G, B}'. |
+| val | struct |  structure with three fields '{R, G, B}'. |
 
 
 
@@ -134,15 +134,15 @@ boolean: 'true' if successful, 'false' otherwise
 Sets text value of this object.
 
 ```javascript
-DoSetText(val) 
+SeS('SomeDXColorEdit').DoSetText(val)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| val | string |	Text value. |
+| val | string |  Text value. |
 
 
 
@@ -155,5 +155,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.dxcoloredit.dosettext"></a>
 
-	
+  
 

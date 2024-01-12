@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -26,33 +26,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSearch](#dosearch) | Performs navigation search. |
+|  [DoSearch](#dosearch) | Performs navigation search. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSearch"></a>    
 #### DoSearch
 
 Performs navigation search.
 
 ```javascript
-DoSearch(text) 
+SeS('SomeDomDynamicsAXNavigationSearch').DoSearch(text)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text | string |	Name of a page to search. |
+| text | string |  Name of a page to search. |
 
 
 
@@ -60,5 +60,5 @@ DoSearch(text)
 
 <a name="see.also.domdynamicsaxnavigationsearch.dosearch"></a>
 
-	
+  
 

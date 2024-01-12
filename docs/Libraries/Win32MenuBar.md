@@ -15,7 +15,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -25,7 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -34,51 +34,51 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickItem](#doclickitem) | Performs click on an item of this object. |
+|  [DoClickItem](#doclickitem) | Performs click on an item of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemCount"></a>
 #### ItemCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemCount
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickItem"></a>    
 #### DoClickItem
 
 Performs click on an item of this object.
 
 ```javascript
-DoClickItem(itemName) 
+SeS('SomeWin32MenuBar').DoClickItem(itemName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| itemName | string |	Name of the item to click |
+| itemName | string |  Name of the item to click |
 
 
 
@@ -91,7 +91,7 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 <a name="see.also.win32menubar.doclickitem"></a>
 
-	
+  
 
 
 
@@ -101,7 +101,7 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -110,34 +110,34 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoMenu](#domenu) | Performs click on the menu item. |
+|  [DoMenu](#domenu) | Performs click on the menu item. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoMenu"></a>    
 #### DoMenu
 
 Performs click on the menu item.
 
 ```javascript
-DoMenu(path, sep) 
+SeS('SomeWin32MenuBar').DoMenu(path, sep)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path from the menu root to a leaf item with components delimited by separator parameter. |
-| sep | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| path | string |  Path from the menu root to a leaf item with components delimited by separator parameter. |
+| sep | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -150,5 +150,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.win32menubar.domenu"></a>
 
-	
+  
 

@@ -11,7 +11,7 @@ Database object. Use it to read and write ADO data sources.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,43 +20,43 @@ Database object. Use it to read and write ADO data sources.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAttach](#doattach) | Attaches to a Database with given ADO connection string and SQL query. |
-|	[DoMoveToRow](#domovetorow) | Moves to a given row. |
-|	[DoRandom](#dorandom) | Selects random row and column in the recordset. |
-|	[DoSequential](#dosequential) | Advances to the next row in the table. |
-|	[GetColumnCount](#getcolumncount) | Gets columns count. |
-|	[GetColumnName](#getcolumnname) | Gets column name. |
-|	[GetColumnNames](#getcolumnnames) | Gets column names. |
-|	[GetCurrentRowIndex](#getcurrentrowindex) | Get zero based current row index. |
-|	[GetRowCount](#getrowcount) | Gets rows count. |
-|	[GetValue](#getvalue) | Gets value by column name, and, optionally, row number. |
+|  [DoAttach](#doattach) | Attaches to a Database with given ADO connection string and SQL query. |
+|  [DoMoveToRow](#domovetorow) | Moves to a given row. |
+|  [DoRandom](#dorandom) | Selects random row and column in the recordset. |
+|  [DoSequential](#dosequential) | Advances to the next row in the table. |
+|  [GetColumnCount](#getcolumncount) | Gets columns count. |
+|  [GetColumnName](#getcolumnname) | Gets column name. |
+|  [GetColumnNames](#getcolumnnames) | Gets column names. |
+|  [GetCurrentRowIndex](#getcurrentrowindex) | Get zero based current row index. |
+|  [GetRowCount](#getrowcount) | Gets rows count. |
+|  [GetValue](#getvalue) | Gets value by column name, and, optionally, row number. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAttach"></a>    
 #### DoAttach
 
 Attaches to a Database with given ADO connection string and SQL query.
 
 ```javascript
-DoAttach(connection_string, sql) 
+Database.DoAttach(connection_string, sql)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| connection_string | string |	ADO connection string. |
-| sql |  |	SQL Query (i.e. 'select * from Customers')<br>Optional. |
+| connection_string | string |  ADO connection string. |
+| sql |  |  SQL Query (i.e. 'select * from Customers')<br>Optional. |
 
 
 
@@ -75,15 +75,15 @@ true, if successful
 Moves to a given row.
 
 ```javascript
-DoMoveToRow(rowInd) 
+Database.DoMoveToRow(rowInd)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| rowInd | number |	Row index to set active. |
+| rowInd | number |  Row index to set active. |
 
 
 
@@ -97,7 +97,7 @@ DoMoveToRow(rowInd)
 Selects random row and column in the recordset.
 
 ```javascript
-DoRandom() 
+Database.DoRandom()
 ```
 
 
@@ -117,7 +117,7 @@ DoRandom()
 Advances to the next row in the table. When the end of the range is reached DoSequential returns 'false'.
 
 ```javascript
-DoSequential() 
+Database.DoSequential()
 ```
 
 
@@ -137,7 +137,7 @@ DoSequential()
 Gets columns count.
 
 ```javascript
-GetColumnCount() 
+Database.GetColumnCount()
 ```
 
 
@@ -157,15 +157,15 @@ Number of Columns in the result set.
 Gets column name.
 
 ```javascript
-GetColumnName(ind) 
+Database.GetColumnName(ind)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| ind | number |	Column index. |
+| ind | number |  Column index. |
 
 
 
@@ -184,7 +184,7 @@ Name of column in the spreadsheet.
 Gets column names.
 
 ```javascript
-GetColumnNames() 
+Database.GetColumnNames()
 ```
 
 
@@ -204,7 +204,7 @@ Array of column names in the table.
 Get zero based current row index.
 
 ```javascript
-GetCurrentRowIndex() 
+Database.GetCurrentRowIndex()
 ```
 
 
@@ -219,7 +219,7 @@ GetCurrentRowIndex()
 Gets rows count.
 
 ```javascript
-GetRowCount() 
+Database.GetRowCount()
 ```
 
 
@@ -239,16 +239,16 @@ Number of rows in the result set.
 Gets value by column name, and, optionally, row number. Returns current cell value after DoSequential or DoRandom if params not set.
 
 ```javascript
-GetValue(columnId, rowId) 
+Database.GetValue(columnId, rowId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| columnId | Number \| String |	Column index or name. If not set 1st column is used.<br>Optional. |
-| rowId | number |	Row index. If not set current row is used.<br>Optional. |
+| columnId | Number \| String |  Column index or name. If not set 1st column is used.<br>Optional. |
+| rowId | number |  Row index. If not set current row is used.<br>Optional. |
 
 
 
@@ -256,5 +256,5 @@ GetValue(columnId, rowId)
 
 <a name="see.also.database.getvalue"></a>
 
-	
+  
 

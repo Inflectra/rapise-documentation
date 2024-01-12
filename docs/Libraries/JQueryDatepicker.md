@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -28,7 +28,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -37,60 +37,60 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoNextMonth](#donextmonth) | Changes to the next month. |
-|	[DoPrevMonth](#doprevmonth) | Changes to the previous month. |
-|	[DoSelectDate](#doselectdate) | Selects a specific day in the current month. |
+|  [DoNextMonth](#donextmonth) | Changes to the next month. |
+|  [DoPrevMonth](#doprevmonth) | Changes to the previous month. |
+|  [DoSelectDate](#doselectdate) | Selects a specific day in the current month. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="Month"></a>
 #### Month
 
 
 Gets the currently selected month
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetMonth
-			
-		
+      
+    
 <a name="Year"></a>
 #### Year
 
 
 Gets the currently selected year
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetYear
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoNextMonth"></a>    
 #### DoNextMonth
 
 Changes to the next month.
 
 ```javascript
-DoNextMonth() 
+SeS('SomeJQueryDatepicker').DoNextMonth()
 ```
 
 
@@ -110,7 +110,7 @@ boolean: 'true' if success, 'false' otherwise.
 Changes to the previous month.
 
 ```javascript
-DoPrevMonth() 
+SeS('SomeJQueryDatepicker').DoPrevMonth()
 ```
 
 
@@ -130,15 +130,15 @@ boolean: 'true' if success, 'false' otherwise.
 Selects a specific day in the current month.
 
 ```javascript
-DoSelectDate(dateValue) 
+SeS('SomeJQueryDatepicker').DoSelectDate(dateValue)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| dateValue | number |	The day of the month to choose |
+| dateValue | number |  The day of the month to choose |
 
 
 
@@ -151,5 +151,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.jquerydatepicker.doselectdate"></a>
 
-	
+  
 

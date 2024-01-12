@@ -19,7 +19,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,44 +38,44 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoPlay](#doplay) | Plays the animation of this object. |
-|	[DoStop](#dostop) | Stops the animation of this object. |
+|  [DoPlay](#doplay) | Plays the animation of this object. |
+|  [DoStop](#dostop) | Stops the animation of this object. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="IsPlaying"></a>
 #### IsPlaying
 
 
 true if animation is playing, 'false' otherwise
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetIsPlaying
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoPlay"></a>    
 #### DoPlay
 
 Plays the animation of this object.
 
 ```javascript
-DoPlay() 
+SeS('SomeAnimationControl').DoPlay()
 ```
 
 
@@ -95,7 +95,7 @@ boolean: 'true' if success, 'false' otherwise.
 Stops the animation of this object.
 
 ```javascript
-DoStop() 
+SeS('SomeAnimationControl').DoStop()
 ```
 
 
@@ -109,5 +109,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.animationcontrol.dostop"></a>
 
-	
+  
 

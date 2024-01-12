@@ -11,7 +11,7 @@ Use Spira object to communicate with Spira during playback of tests. With Spira 
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,36 +20,36 @@ Use Spira object to communicate with Spira during playback of tests. With Spira 
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[CreateIncident](#createincident) | Creates an incident in Spira. |
-|	[RunTestSet](#runtestset) | Schedules a test set to execute as soon as possible. |
+|  [CreateIncident](#createincident) | Creates an incident in Spira. |
+|  [RunTestSet](#runtestset) | Schedules a test set to execute as soon as possible. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="CreateIncident"></a>    
 #### CreateIncident
 
 Creates an incident in Spira..
 
 ```javascript
-CreateIncident(name, description, projectNameOrId) 
+Spira.CreateIncident(name, description, projectNameOrId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Subject of an incident. |
-| description | string |	Description of an incident |
-| projectNameOrId | string |	Name or ID of a Spira project to add the incident. |
+| name | string |  Subject of an incident. |
+| description | string |  Description of an incident |
+| projectNameOrId | string |  Name or ID of a Spira project to add the incident. |
 
 
 
@@ -68,17 +68,17 @@ number: ID of created incident or 0 in case of error.
 Schedules a test set to execute as soon as possible.
 
 ```javascript
-RunTestSet(nameOrId, token, projectNameOrId) 
+Spira.RunTestSet(nameOrId, token, projectNameOrId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| nameOrId |  |	Name or ID of the Test Set to run. |
-| token | string |	Automation host token. |
-| projectNameOrId | string |	Name or ID of a Spira project that contains the Test Set. |
+| nameOrId |  |  Name or ID of the Test Set to run. |
+| token | string |  Automation host token. |
+| projectNameOrId | string |  Name or ID of a Spira project that contains the Test Set. |
 
 
 
@@ -91,5 +91,5 @@ boolean: `true` if the test set scheduled successfully, otherwise - `false`.
 
 <a name="see.also.spira.runtestset"></a>
 
-	
+  
 

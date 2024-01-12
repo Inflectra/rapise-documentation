@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -33,7 +33,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -42,140 +42,140 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoAction](#doaction) | Clicks in the middle of the control. |
-|	[DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
-|	[DoFindByLabel](#dofindbylabel) | Find nested element by its label (getLabel() property of each element is compared with specified text or regular expression). |
-|	[DoFindByName](#dofindbyname) | Find nested element by its name (getName() property of each element is compared with specified text or regular expression). |
-|	[DoFindByText](#dofindbytext) | Find nested element by its text (getText() property of each element is compared with specified text or regular expression). |
-|	[DoFindElementByCondition](#dofindelementbycondition) | Finds first element matching the condition. |
-|	[DoFindElementsByCondition](#dofindelementsbycondition) | Finds all elements matching the condition |
-|	[DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
+|  [DoAction](#doaction) | Clicks in the middle of the control. |
+|  [DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
+|  [DoFindByLabel](#dofindbylabel) | Find nested element by its label (getLabel() property of each element is compared with specified text or regular expression). |
+|  [DoFindByName](#dofindbyname) | Find nested element by its name (getName() property of each element is compared with specified text or regular expression). |
+|  [DoFindByText](#dofindbytext) | Find nested element by its text (getText() property of each element is compared with specified text or regular expression). |
+|  [DoFindElementByCondition](#dofindelementbycondition) | Finds first element matching the condition. |
+|  [DoFindElementsByCondition](#dofindelementsbycondition) | Finds all elements matching the condition |
+|  [DoGetWidgetProperty](#dogetwidgetproperty) | Returns the value of a property with a given name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ControlType"></a>
 #### ControlType
 
 
 Type of the object.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetControlType
-			
-		
+      
+    
 <a name="Enabled"></a>
 #### Enabled
 
 
 'Enabled' state of the element.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetEnabled
-			
-		
+      
+    
 <a name="Height"></a>
 #### Height
 
 
 Height of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetHeight
-			
-		
+      
+    
 <a name="Parent"></a>
 #### Parent
 
 
 Object for UI Automation parent node
 
-			
-	
-			
+      
+  
+      
 Type: UIAObject
-			
-			
+      
+      
 Accessors: GetParent
-			
-		
+      
+    
 <a name="Width"></a>
 #### Width
 
 
 Width of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetWidth
-			
-		
+      
+    
 <a name="X"></a>
 #### X
 
 
 X-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetX
-			
-		
+      
+    
 <a name="Y"></a>
 #### Y
 
 
 Y-coordinate of the top left corner of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetY
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoAction"></a>    
 #### DoAction
 
 Clicks in the middle of the control.
 
 ```javascript
-DoAction() 
+SeS('SomeJavaObject').DoAction()
 ```
 
 
@@ -195,21 +195,21 @@ boolean: 'true' if success, 'false' otherwise.
 Dumps Spy data for the object.
 
 ```javascript
-DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps) 
+SeS('SomeJavaObject').DoDumpWidget(dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| dumpProperties | boolean |	If 'true' then includes properties to the result.<br>Optional, Default: "false". |
-| maxDepth | number |	Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0". |
-| trimValue | number |	Determines maximum length of a property value. Excess characters are truncated.<br>Optional, Default: "256". |
-| indent | string |	Indentation string for child objects and properties.<br>Optional, Default: "\". |
-| filePath | string |	If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "". |
-| append | boolean |	If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false". |
-| ignoreProps | Array |	Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: "undefined". |
+| dumpProperties | boolean |  If 'true' then includes properties to the result.<br>Optional, Default: "false". |
+| maxDepth | number |  Determines max recursion depth. If '0' then dumps current object only, if '1' - dumps direct children as well, etc. If '-1' then dumps the whole subtree of objects.<br>Optional, Default: "0". |
+| trimValue | number |  Determines maximum length of a property value. Excess characters are truncated.<br>Optional, Default: "256". |
+| indent | string |  Indentation string for child objects and properties.<br>Optional, Default: "\". |
+| filePath | string |  If 'filePath' is set then outputs result to corresponding file.<br>Optional, Default: "". |
+| append | boolean |  If 'true' then file should be overwritten, if 'false' then data should be appended.<br>Optional, Default: "false". |
+| ignoreProps | Array |  Contains the names of the properties which must be ignored when writing into a file.<br>Optional, Default: "undefined". |
 
 
 
@@ -228,16 +228,16 @@ string | <br>boolean: Object data if 'filePath' is not set, 'true' if file write
 Find nested element by its label (getLabel() property of each element is compared with specified text or regular expression).
 
 ```javascript
-DoFindByLabel(textOrRegexp, depth) 
+SeS('SomeJavaObject').DoFindByLabel(textOrRegexp, depth)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| textOrRegexp | string |	plain string or regexp:... expression to match |
-| depth | number |	depth level for search (default is 3)<br>Optional, Default: "3". |
+| textOrRegexp | string |  plain string or regexp:... expression to match |
+| depth | number |  depth level for search (default is 3)<br>Optional, Default: "3". |
 
 
 
@@ -256,16 +256,16 @@ DoFindByLabel(textOrRegexp, depth)
 Find nested element by its name (getName() property of each element is compared with specified text or regular expression).
 
 ```javascript
-DoFindByName(textOrRegexp, depth) 
+SeS('SomeJavaObject').DoFindByName(textOrRegexp, depth)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| textOrRegexp | string |	plain string or regexp:... expression to match |
-| depth | number |	depth level for search (default is 3)<br>Optional, Default: "3". |
+| textOrRegexp | string |  plain string or regexp:... expression to match |
+| depth | number |  depth level for search (default is 3)<br>Optional, Default: "3". |
 
 
 
@@ -284,16 +284,16 @@ DoFindByName(textOrRegexp, depth)
 Find nested element by its text (getText() property of each element is compared with specified text or regular expression).
 
 ```javascript
-DoFindByText(textOrRegexp, depth) 
+SeS('SomeJavaObject').DoFindByText(textOrRegexp, depth)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| textOrRegexp | string |	plain string or regexp:... expression to match |
-| depth | number |	depth level for search (default is 3)<br>Optional, Default: "3". |
+| textOrRegexp | string |  plain string or regexp:... expression to match |
+| depth | number |  depth level for search (default is 3)<br>Optional, Default: "3". |
 
 
 
@@ -312,15 +312,15 @@ DoFindByText(textOrRegexp, depth)
 Finds first element matching the condition.
 
 ```javascript
-DoFindElementByCondition(condition) 
+SeS('SomeJavaObject').DoFindElementByCondition(condition)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| condition | expression |	Object in a form {propname1:propvalue1, propname2:propregexp2,...}. I.e.: {'text':'regex:Enter .*'} |
+| condition | expression |  Object in a form {propname1:propvalue1, propname2:propregexp2,...}. I.e.: {'text':'regex:Enter .*'} |
 
 
 
@@ -339,15 +339,15 @@ DoFindElementByCondition(condition)
 Finds all elements matching the condition
 
 ```javascript
-DoFindElementsByCondition(condition) 
+SeS('SomeJavaObject').DoFindElementsByCondition(condition)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| condition | expression |	Object in a form {propname1:propvalue1, propname2:propregexp2,...}. I.e.: {'text':'regex:Enter .*'} |
+| condition | expression |  Object in a form {propname1:propvalue1, propname2:propregexp2,...}. I.e.: {'text':'regex:Enter .*'} |
 
 
 
@@ -366,15 +366,15 @@ DoFindElementsByCondition(condition)
 Returns the value of a property with a given name. Names of available properties can be seen in Spy.
 
 ```javascript
-DoGetWidgetProperty(name) 
+SeS('SomeJavaObject').DoGetWidgetProperty(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Property name. |
+| name | string |  Property name. |
 
 
 
@@ -387,5 +387,5 @@ string: Property value if successful, an empty string if the property can not be
 
 <a name="see.also.javaobject.dogetwidgetproperty"></a>
 
-	
+  
 

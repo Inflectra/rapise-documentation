@@ -11,7 +11,7 @@ Session object for SOAP and REST services.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,56 +20,56 @@ Session object for SOAP and REST services.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
-|	[DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
-|	[GetCredential](#getcredential) | Returns HTTP Basic Authentication credentials (if any). |
-|	[GetNewRequest](#getnewrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
-|	[GetParameters](#getparameters) | Return common request parameters (array of `[{'Name':somename,'Value':somevalue},. |
-|	[GetProxyHost](#getproxyhost) | Returns proxy host. |
-|	[GetProxyPort](#getproxyport) | Returns proxy port. |
-|	[GetProxyPwd](#getproxypwd) | Returns proxy password. |
-|	[GetProxyUser](#getproxyuser) | Returns proxy user name. |
-|	[GetRequestHeaders](#getrequestheaders) | Return common HTTP Headers applied to each REST or SOAP request (array of `[{'Name':somename,'Value':somevalue},. |
-|	[GetRESTRequest](#getrestrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
-|	[SetBaseUrl](#setbaseurl) | Enable URL replacement for all further requests. |
-|	[SetCredential](#setcredential) | Sets HTTP Basic Authentication Credentials. |
-|	[SetIgnoreStatus](#setignorestatus) | Set to `true` to prevent REST requests with non 200 status code from failing the test. |
-|	[SetParameter](#setparameter) | Sets common request parameter. |
-|	[SetParameters](#setparameters) | Sets common request parameters. |
-|	[SetProxy](#setproxy) | Sets proxy settings for the Session. |
-|	[SetProxyHost](#setproxyhost) | Sets proxy host. |
-|	[SetProxyPort](#setproxyport) | Sets proxy port. |
-|	[SetProxyPwd](#setproxypwd) | Sets proxy password. |
-|	[SetProxyUser](#setproxyuser) | Sets proxy user name. |
-|	[SetRequestHeader](#setrequestheader) | Sets common request header. |
-|	[SetRequestHeaders](#setrequestheaders) | Sets common HTTP Headers applied to each REST or SOAP request. |
-|	[SetUrl](#seturl) | Deprecated. |
+|  [DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
+|  [DoRemoveRequestHeader](#doremoverequestheader) | Remove one pre-defined request header by name. |
+|  [GetCredential](#getcredential) | Returns HTTP Basic Authentication credentials (if any). |
+|  [GetNewRequest](#getnewrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
+|  [GetParameters](#getparameters) | Return common request parameters (array of `[{'Name':somename,'Value':somevalue},. |
+|  [GetProxyHost](#getproxyhost) | Returns proxy host. |
+|  [GetProxyPort](#getproxyport) | Returns proxy port. |
+|  [GetProxyPwd](#getproxypwd) | Returns proxy password. |
+|  [GetProxyUser](#getproxyuser) | Returns proxy user name. |
+|  [GetRequestHeaders](#getrequestheaders) | Return common HTTP Headers applied to each REST or SOAP request (array of `[{'Name':somename,'Value':somevalue},. |
+|  [GetRESTRequest](#getrestrequest) | Create new `RESTService` object with 'GET' method and specified `url`. |
+|  [SetBaseUrl](#setbaseurl) | Enable URL replacement for all further requests. |
+|  [SetCredential](#setcredential) | Sets HTTP Basic Authentication Credentials. |
+|  [SetIgnoreStatus](#setignorestatus) | Set to `true` to prevent REST requests with non 200 status code from failing the test. |
+|  [SetParameter](#setparameter) | Sets common request parameter. |
+|  [SetParameters](#setparameters) | Sets common request parameters. |
+|  [SetProxy](#setproxy) | Sets proxy settings for the Session. |
+|  [SetProxyHost](#setproxyhost) | Sets proxy host. |
+|  [SetProxyPort](#setproxyport) | Sets proxy port. |
+|  [SetProxyPwd](#setproxypwd) | Sets proxy password. |
+|  [SetProxyUser](#setproxyuser) | Sets proxy user name. |
+|  [SetRequestHeader](#setrequestheader) | Sets common request header. |
+|  [SetRequestHeaders](#setrequestheaders) | Sets common HTTP Headers applied to each REST or SOAP request. |
+|  [SetUrl](#seturl) | Deprecated. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoRemoveParameter"></a>    
 #### DoRemoveParameter
 
 Remove one pre-defined parameter. Requires Rapise 6.6+
 
 ```javascript
-DoRemoveParameter(name) 
+Session.DoRemoveParameter(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Parameter name |
+| name | string |  Parameter name |
 
 
 
@@ -83,15 +83,15 @@ DoRemoveParameter(name)
 Remove one pre-defined request header by name. Requires Rapise 6.6+
 
 ```javascript
-DoRemoveRequestHeader(name) 
+Session.DoRemoveRequestHeader(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Header name |
+| name | string |  Header name |
 
 
 
@@ -105,7 +105,7 @@ DoRemoveRequestHeader(name)
 Returns HTTP Basic Authentication credentials (if any).
 
 ```javascript
-GetCredential() 
+Session.GetCredential()
 ```
 
 
@@ -120,16 +120,16 @@ GetCredential()
 Create new `RESTService` object with 'GET' method and specified `url`.
 
 ```javascript
-GetNewRequest(url, name) 
+Session.GetNewRequest(url, name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	Request URL |
-| name | string |	Request name used to display in the report<br>Optional. |
+| url | string |  Request URL |
+| name | string |  Request name used to display in the report<br>Optional. |
 
 
 
@@ -143,7 +143,7 @@ GetNewRequest(url, name)
 Return common request parameters (array of `[{'Name':somename,'Value':somevalue},...]`)
 
 ```javascript
-GetParameters() 
+Session.GetParameters()
 ```
 
 
@@ -158,7 +158,7 @@ GetParameters()
 Returns proxy host. Requires Rapise 8.1+.
 
 ```javascript
-GetProxyHost() 
+Session.GetProxyHost()
 ```
 
 
@@ -173,7 +173,7 @@ GetProxyHost()
 Returns proxy port. Requires Rapise 8.1+.
 
 ```javascript
-GetProxyPort() 
+Session.GetProxyPort()
 ```
 
 
@@ -188,7 +188,7 @@ GetProxyPort()
 Returns proxy password. Requires Rapise 8.1+.
 
 ```javascript
-GetProxyPwd() 
+Session.GetProxyPwd()
 ```
 
 
@@ -203,7 +203,7 @@ GetProxyPwd()
 Returns proxy user name. Requires Rapise 8.1+.
 
 ```javascript
-GetProxyUser() 
+Session.GetProxyUser()
 ```
 
 
@@ -218,7 +218,7 @@ GetProxyUser()
 Return common HTTP Headers applied to each REST or SOAP request (array of `[{'Name':somename,'Value':somevalue},...]`)
 
 ```javascript
-GetRequestHeaders() 
+Session.GetRequestHeaders()
 ```
 
 
@@ -233,16 +233,16 @@ GetRequestHeaders()
 Create new `RESTService` object with 'GET' method and specified `url`.
 
 ```javascript
-GetRESTRequest(defNameOrPath, id) 
+Session.GetRESTRequest(defNameOrPath, id)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| defNameOrPath | string |	Path to the .rest definition file |
-| id | string |	Name of the request (as specified in the .rest definition file) |
+| defNameOrPath | string |  Path to the .rest definition file |
+| id | string |  Name of the request (as specified in the .rest definition file) |
 
 
 
@@ -256,16 +256,16 @@ GetRESTRequest(defNameOrPath, id)
 Enable URL replacement for all further requests. If request URL starts with oldUrl then replace the beginning with newUrl. Requires Rapise 6.6+
 
 ```javascript
-SetBaseUrl(oldUrl, newUrl) 
+Session.SetBaseUrl(oldUrl, newUrl)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| oldUrl | string |	URL to find |
-| newUrl | string |	new URL to use instead of oldUrl |
+| oldUrl | string |  URL to find |
+| newUrl | string |  new URL to use instead of oldUrl |
 
 
 
@@ -288,16 +288,16 @@ SeS("Operation_Name").SetCredential(credential);
 Another way is to pass user name and password as first and second parameter respectively, e.g. `SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");`
 
 ```javascript
-SetCredential(value, value2) 
+Session.SetCredential(value, value2)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string \| object |	User name or full object with credentials. |
-| value2 | string |	Password string. Do not set this parameter if you pass object as the first one. |
+| value | string \| object |  User name or full object with credentials. |
+| value2 | string |  Password string. Do not set this parameter if you pass object as the first one. |
 
 
 
@@ -311,15 +311,15 @@ SetCredential(value, value2)
 Set to `true` to prevent REST requests with non 200 status code from failing the test. It would `<req>.DoExecute()` will just return `true`/`false` but the line in report will always be marked as `Passed`.
 
 ```javascript
-SetIgnoreStatus(ignore) 
+Session.SetIgnoreStatus(ignore)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| ignore | boolean |	`true` to ignore status code |
+| ignore | boolean |  `true` to ignore status code |
 
 
 
@@ -333,16 +333,16 @@ SetIgnoreStatus(ignore)
 Sets common request parameter. This parameter will be applied to all further REST and SOAP requests.
 
 ```javascript
-SetParameter(name, value) 
+Session.SetParameter(name, value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Parameter name |
-| value | string |	Parameter value |
+| name | string |  Parameter name |
+| value | string |  Parameter value |
 
 
 
@@ -360,16 +360,16 @@ Sets common request parameters. These parameters will be applied to all further 
 - Single parameter as 2 input parameters: `Session.SetParameters(name,value)`.
 
 ```javascript
-SetParameters(requestParam, optValueVal) 
+Session.SetParameters(requestParam, optValueVal)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| requestParam | object |	Parameters or single parameter. |
-| optValueVal | string |	Parameter value, when specified. If this value is set, then 'requestParam' should be a string and method signature will be `Session.SetParameters('name','value')`<br>Optional. |
+| requestParam | object |  Parameters or single parameter. |
+| optValueVal | string |  Parameter value, when specified. If this value is set, then 'requestParam' should be a string and method signature will be `Session.SetParameters('name','value')`<br>Optional. |
 
 
 
@@ -383,18 +383,18 @@ SetParameters(requestParam, optValueVal)
 Sets proxy settings for the Session. Requires Rapise 8.1+.
 
 ```javascript
-SetProxy(host, port, user, pwd) 
+Session.SetProxy(host, port, user, pwd)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| host | string |	Proxy host name or IP address. |
-| port | string |	Proxy port. |
-| user | string |	Proxy user name. |
-| pwd | string |	Proxy password. |
+| host | string |  Proxy host name or IP address. |
+| port | string |  Proxy port. |
+| user | string |  Proxy user name. |
+| pwd | string |  Proxy password. |
 
 
 
@@ -408,15 +408,15 @@ SetProxy(host, port, user, pwd)
 Sets proxy host. Requires Rapise 8.1+.
 
 ```javascript
-SetProxyHost(value) 
+Session.SetProxyHost(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	Host name or IP address. |
+| value | string |  Host name or IP address. |
 
 
 
@@ -430,15 +430,15 @@ SetProxyHost(value)
 Sets proxy port. Requires Rapise 8.1+.
 
 ```javascript
-SetProxyPort(value) 
+Session.SetProxyPort(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	Port number. |
+| value | string |  Port number. |
 
 
 
@@ -452,15 +452,15 @@ SetProxyPort(value)
 Sets proxy password. Requires Rapise 8.1+.
 
 ```javascript
-SetProxyPwd(value) 
+Session.SetProxyPwd(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	Proxy password. |
+| value | string |  Proxy password. |
 
 
 
@@ -474,15 +474,15 @@ SetProxyPwd(value)
 Sets proxy user name. Requires Rapise 8.1+.
 
 ```javascript
-SetProxyUser(value) 
+Session.SetProxyUser(value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| value | string |	User name. |
+| value | string |  User name. |
 
 
 
@@ -496,16 +496,16 @@ SetProxyUser(value)
 Sets common request header. This header will be applied to all further REST and SOAP requests.
 
 ```javascript
-SetRequestHeader(name, value) 
+Session.SetRequestHeader(name, value)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	HTTP header name |
-| value | string |	HTTP header value |
+| name | string |  HTTP header name |
+| value | string |  HTTP header value |
 
 
 
@@ -523,16 +523,16 @@ Sets common HTTP Headers applied to each REST or SOAP request. Accepts one of:
 - Single header as 2 input parameters: `Session.SetRequestHeaders(name, value)`
 
 ```javascript
-SetRequestHeaders(requestParam, optValueVal) 
+Session.SetRequestHeaders(requestParam, optValueVal)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| requestParam | object |	Header(s) object or single header name. |
-| optValueVal | string |	Header value, when specified. If this value is set, then 'requestParam' should be a string and method signature will be `Session.SetRequestHeaders('name','value')`<br>Optional. |
+| requestParam | object |  Header(s) object or single header name. |
+| optValueVal | string |  Header value, when specified. If this value is set, then 'requestParam' should be a string and method signature will be `Session.SetRequestHeaders('name','value')`<br>Optional. |
 
 
 
@@ -546,16 +546,16 @@ SetRequestHeaders(requestParam, optValueVal)
 Deprecated. Same as `SetBaseUrl`.
 
 ```javascript
-SetUrl(oldUrl, newUrl) 
+Session.SetUrl(oldUrl, newUrl)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| oldUrl | string |	URL to find |
-| newUrl | string |	new URL to use instead of oldUrl |
+| oldUrl | string |  URL to find |
+| newUrl | string |  new URL to use instead of oldUrl |
 
 
 
@@ -563,5 +563,5 @@ SetUrl(oldUrl, newUrl)
 
 <a name="see.also.session.seturl"></a>
 
-	
+  
 

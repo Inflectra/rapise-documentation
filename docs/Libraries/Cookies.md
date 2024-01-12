@@ -11,7 +11,7 @@ This is a JavaScript wrapper for Cookies of Selenium .NET library.
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -20,38 +20,38 @@ This is a JavaScript wrapper for Cookies of Selenium .NET library.
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[AddCookie](#addcookie) | Adds a cookie to the current page. |
-|	[AllCookies](#allcookies) | Gets all cookies defined for the current page. |
-|	[DeleteAllCookies](#deleteallcookies) | Deletes the cookie with the specified name from the page. |
-|	[DeleteCookie](#deletecookie) | Deletes the specified cookie from the page. |
-|	[DeleteCookieNamed](#deletecookienamed) | Deletes the cookie with the specified name from the page. |
-|	[GetCookieNamed](#getcookienamed) | Gets a cookie with the specified name. |
+|  [AddCookie](#addcookie) | Adds a cookie to the current page. |
+|  [AllCookies](#allcookies) | Gets all cookies defined for the current page. |
+|  [DeleteAllCookies](#deleteallcookies) | Deletes the cookie with the specified name from the page. |
+|  [DeleteCookie](#deletecookie) | Deletes the specified cookie from the page. |
+|  [DeleteCookieNamed](#deletecookienamed) | Deletes the cookie with the specified name from the page. |
+|  [GetCookieNamed](#getcookienamed) | Gets a cookie with the specified name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
-	
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="AddCookie"></a>    
 #### AddCookie
 
 Adds a cookie to the current page.
 
 ```javascript
-AddCookie(cookie) 
+Cookies.AddCookie(cookie)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cookie | Cookie |	Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}. |
+| cookie | Cookie |  Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}. |
 
 
 
@@ -65,7 +65,7 @@ AddCookie(cookie)
 Gets all cookies defined for the current page.
 
 ```javascript
-AllCookies() 
+Cookies.AllCookies()
 ```
 
 
@@ -80,7 +80,7 @@ AllCookies()
 Deletes the cookie with the specified name from the page.
 
 ```javascript
-DeleteAllCookies() 
+Cookies.DeleteAllCookies()
 ```
 
 
@@ -95,15 +95,15 @@ DeleteAllCookies()
 Deletes the specified cookie from the page.
 
 ```javascript
-DeleteCookie(cookie) 
+Cookies.DeleteCookie(cookie)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cookie | Cookie |	Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}. |
+| cookie | Cookie |  Cookie object, e.g. {Name: "CookieName", Value: "CookieValue", Domain: "example.com", Path: "/", Expiry: "2018-12-28T13:15.00-05:00"}. |
 
 
 
@@ -117,15 +117,15 @@ DeleteCookie(cookie)
 Deletes the cookie with the specified name from the page.
 
 ```javascript
-DeleteCookieNamed(name) 
+Cookies.DeleteCookieNamed(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	The name of the cookie to be deleted. |
+| name | string |  The name of the cookie to be deleted. |
 
 
 
@@ -139,15 +139,15 @@ DeleteCookieNamed(name)
 Gets a cookie with the specified name.
 
 ```javascript
-GetCookieNamed(name) 
+Cookies.GetCookieNamed(name)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	The name of the cookie to retrieve. |
+| name | string |  The name of the cookie to retrieve. |
 
 
 
@@ -155,5 +155,5 @@ GetCookieNamed(name)
 
 <a name="see.also.cookies.getcookienamed"></a>
 
-	
+  
 

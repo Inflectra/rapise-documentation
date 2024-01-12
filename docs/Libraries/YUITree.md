@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -32,7 +32,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -41,133 +41,133 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoClickNode](#doclicknode) | Clicks specific node in the tree. |
-|	[DoCollapse](#docollapse) | Collapses specific node in the tree. |
-|	[DoExpand](#doexpand) | Expands specific node in the tree. |
-|	[DoFindChild](#dofindchild) | Finds child node by its path from the current node and remembers it as the current node. |
-|	[DoFindNode](#dofindnode) | Searches for specific node in the tree and remembers it as the current node. |
-|	[DoGetPath](#dogetpath) | Returns path to the current node. |
+|  [DoClickNode](#doclicknode) | Clicks specific node in the tree. |
+|  [DoCollapse](#docollapse) | Collapses specific node in the tree. |
+|  [DoExpand](#doexpand) | Expands specific node in the tree. |
+|  [DoFindChild](#dofindchild) | Finds child node by its path from the current node and remembers it as the current node. |
+|  [DoFindNode](#dofindnode) | Searches for specific node in the tree and remembers it as the current node. |
+|  [DoGetPath](#dogetpath) | Returns path to the current node. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
 
 Children count of the current node in the tree.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetChildrenCount
-			
-		
+      
+    
 <a name="Expanded"></a>
 #### Expanded
 
 
 Expanded state of the current node. Use DoFindNode to set current node. 0 - if the node is collapsed, 1 - if the node is expanded, 2 - if the node is a leaf.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetExpanded
-			
-		
+      
+    
 <a name="NodeIndex"></a>
 #### NodeIndex
 
 
 Zero based index of the current node. Use DoFindNode to set current node.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetNodeIndex
-			
-		
+      
+    
 <a name="NodeText"></a>
 #### NodeText
 
 
 Text of the current node. Use DoFindNode to set current node.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetNodeText
-			
-		
+      
+    
 <a name="Selected"></a>
 #### Selected
 
 
 Selected state of the current node. Use DoFindNode to set current node. 'true' if the node is selected, 'false' otherwise.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
+      
+      
 Accessors: GetSelected
-			
-		
+      
+    
 <a name="SelectedNodeText"></a>
 #### SelectedNodeText
 
 
 Text of the selected node.
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedNodeText
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoClickNode"></a>    
 #### DoClickNode
 
 Clicks specific node in the tree.
 
 ```javascript
-DoClickNode(path, separator, pathType) 
+SeS('SomeYUITree').DoClickNode(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -186,17 +186,17 @@ boolean: 'true' if success, 'false' otherwise.
 Collapses specific node in the tree.
 
 ```javascript
-DoCollapse(path, separator, pathType) 
+SeS('SomeYUITree').DoCollapse(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -215,17 +215,17 @@ boolean: 'true' if success, 'false' otherwise.
 Expands specific node in the tree.
 
 ```javascript
-DoExpand(path, separator, pathType) 
+SeS('SomeYUITree').DoExpand(path, separator, pathType)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
 
@@ -244,18 +244,18 @@ boolean: 'true' if success, 'false' otherwise.
 Finds child node by its path from the current node and remembers it as the current node. If current node is not set then Root node is used.
 
 ```javascript
-DoFindChild(path, separator, pathType, expand) 
+SeS('SomeYUITree').DoFindChild(path, separator, pathType, expand)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
-| expand | boolean |	is set to true, then found node is expanded |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| expand | boolean |  is set to true, then found node is expanded |
 
 
 
@@ -274,18 +274,18 @@ DoFindChild(path, separator, pathType, expand)
 Searches for specific node in the tree and remembers it as the current node.
 
 ```javascript
-DoFindNode(path, separator, pathType, expand) 
+SeS('SomeYUITree').DoFindNode(path, separator, pathType, expand)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| path | string |	Path of the node |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
-| expand | boolean |	is set to true, then found node is expanded |
+| path | string |  Path of the node |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| expand | boolean |  is set to true, then found node is expanded |
 
 
 
@@ -304,16 +304,16 @@ DoFindNode(path, separator, pathType, expand)
 Returns path to the current node.
 
 ```javascript
-DoGetPath(pathType, separator) 
+SeS('SomeYUITree').DoGetPath(pathType, separator)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| pathType | string |	Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
-| separator | string |	Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
+| pathType | string |  Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
+| separator | string |  Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
 
@@ -326,5 +326,5 @@ string: Path to the current node
 
 <a name="see.also.yuitree.dogetpath"></a>
 
-	
+  
 

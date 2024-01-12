@@ -11,7 +11,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -26,7 +26,7 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -35,169 +35,169 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[Back](#back) | Goes back to the previous page in the browser history. |
-|	[CheckObjectActive](#checkobjectactive) | Checks if object is active by its id or XPath. |
-|	[CheckObjectEnabled](#checkobjectenabled) | Checks if object is enabled by its id or XPath. |
-|	[CheckObjectExists](#checkobjectexists) | Checks if object is found on the screen by its id or XPath. |
-|	[CheckObjectVisible](#checkobjectvisible) | Checks if object is visible on the screen by its id or XPath. |
-|	[Close](#close) | Closes browser. |
-|	[Detach](#detach) | Disconnects from a browser. |
-|	[DoActivateWindow](#doactivatewindow) | Makes specified browser window active and focused. |
-|	[DoCheckAlert](#docheckalert) | Waits until browser alert with a given text. |
-|	[DoCheckConfirmation](#docheckconfirmation) | Waits until browser confirmation with a given text. |
-|	[DoCheckPrompt](#docheckprompt) | Waits until browser prompt with a given text. |
-|	[DoClickUntilOnScreen](#doclickuntilonscreen) | Clicks on a given element until another element appears on screen. |
-|	[DoClickWhileOnScreen](#doclickwhileonscreen) | Clicks on an element until it disappears. |
-|	[DoCloseTab](#doclosetab) | Closes currently selected tab. |
-|	[DoCloseWindow](#doclosewindow) | Closes currently active browser window. |
-|	[DoCreateTab](#docreatetab) | Creates new browser tab. |
-|	[DoCreateWindow](#docreatewindow) | Creates a new browser window. |
-|	[DOMFindByAttributeValue](#domfindbyattributevalue) | Looks for a web element by specific attribute value through all frames. |
-|	[DOMFindByName](#domfindbyname) | Looks for a web element by its name through all frames. |
-|	[DOMFindByText](#domfindbytext) | Looks for a web element by its text contents through all frames. |
-|	[DOMFindByXPath](#domfindbyxpath) | Looks for a web element by specific local XPath value through all frames. |
-|	[DoMoveWindow](#domovewindow) | Sets the position of the active browser window. |
-|	[DOMQueryValue](#domqueryvalue) | Executes an xpath query that may return a value of string, number or boolean type. |
-|	[DoResizeWindow](#doresizewindow) | Sets size of the active browser window. |
-|	[DoScreenshot](#doscreenshot) | Makes screenshot of the browser window. |
-|	[DoSelectTab](#doselecttab) | Selects browser tab by title or URL. |
-|	[DoSendKeys](#dosendkeys) | Sends keys to an active element on a page. |
-|	[DoSetExpectedConfirmResult](#dosetexpectedconfirmresult) | Sets boolean value to return as a result of next browser `confirm` request. |
-|	[DoSetExpectedPromptResult](#dosetexpectedpromptresult) | Sets text to return as a result of next browser `prompt` request. |
-|	[DoWaitFor](#dowaitfor) | Waits for object to appear in the current browser. |
-|	[DoWaitForEnabled](#dowaitforenabled) | Waits for object to become enabled. |
-|	[DoWaitForVisible](#dowaitforvisible) | Waits for object to appear in the screen. |
-|	[ExecJS](#execjs) | Executes given JavaScript statement in a browser and returns results. |
-|	[ExecPageJS](#execpagejs) | Executes given JavaScript statement in a browser in the context of the current page. |
-|	[Find](#find) | Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`. |
-|	[Forward](#forward) | Goes forward to the next page in the browser history. |
-|	[GetActiveTabId](#getactivetabid) | Gets Id of active browser tab. |
-|	[GetActiveTabTitle](#getactivetabtitle) | Gets title of active browser tab. |
-|	[GetActiveTabUrl](#getactivetaburl) | Gets URL of active browser tab. |
-|	[GetActiveWindowId](#getactivewindowid) | Gets active browser window Id. |
-|	[GetActiveWindowTitle](#getactivewindowtitle) | Gets active browser window title. |
-|	[GetActiveWindowUrl](#getactivewindowurl) | Gets active browser window URL. |
-|	[GetPerformance](#getperformance) | Reads performance information from currently used browser. |
-|	[GetPosition](#getposition) | Gets position of the top-left corner of the browser window. |
-|	[GetSize](#getsize) | Gets size of the browser window. |
-|	[GetTabIdAt](#gettabidat) | Gets browser tab Id. |
-|	[GetTabIndexById](#gettabindexbyid) | Gets index of the browser tab by Id. |
-|	[GetTabsCount](#gettabscount) | Gets number of browser tabs. |
-|	[GetTabTitleAt](#gettabtitleat) | Gets browser tab title. |
-|	[GetTabUrlAt](#gettaburlat) | Gets browser tab URL. |
-|	[GetWindowIdAt](#getwindowidat) | Gets browser window Id. |
-|	[GetWindowsCount](#getwindowscount) | Gets the number of browser windows. |
-|	[GetWindowTitleAt](#getwindowtitleat) | Gets browser window title. |
-|	[GetWindowUrlAt](#getwindowurlat) | Gets browser window URL. |
-|	[KillBrowser](#killbrowser) | Kills the browser process. |
-|	[LaunchBrowser](#launchbrowser) | Launches browser, but does not connect to it. |
-|	[Maximize](#maximize) | Maximizes browser window. |
-|	[Navigate](#navigate) | Redirects browser to a specified URL. |
-|	[Open](#open) | Opens a browser. |
-|	[Refresh](#refresh) | Reloads the current page. |
-|	[SelectBrowserProfile](#selectbrowserprofile) | Selects browser profile to use for testing. |
-|	[SeSFind](#sesfind) | Waits for object to appear on screen. |
-|	[SetPosition](#setposition) | Positions top-left corner of the browser window at specifid location. |
-|	[SetSize](#setsize) | Sets size if the browser window. |
+|  [Back](#back) | Goes back to the previous page in the browser history. |
+|  [CheckObjectActive](#checkobjectactive) | Checks if object is active by its id or XPath. |
+|  [CheckObjectEnabled](#checkobjectenabled) | Checks if object is enabled by its id or XPath. |
+|  [CheckObjectExists](#checkobjectexists) | Checks if object is found on the screen by its id or XPath. |
+|  [CheckObjectVisible](#checkobjectvisible) | Checks if object is visible on the screen by its id or XPath. |
+|  [Close](#close) | Closes browser. |
+|  [Detach](#detach) | Disconnects from a browser. |
+|  [DoActivateWindow](#doactivatewindow) | Makes specified browser window active and focused. |
+|  [DoCheckAlert](#docheckalert) | Waits until browser alert with a given text. |
+|  [DoCheckConfirmation](#docheckconfirmation) | Waits until browser confirmation with a given text. |
+|  [DoCheckPrompt](#docheckprompt) | Waits until browser prompt with a given text. |
+|  [DoClickUntilOnScreen](#doclickuntilonscreen) | Clicks on a given element until another element appears on screen. |
+|  [DoClickWhileOnScreen](#doclickwhileonscreen) | Clicks on an element until it disappears. |
+|  [DoCloseTab](#doclosetab) | Closes currently selected tab. |
+|  [DoCloseWindow](#doclosewindow) | Closes currently active browser window. |
+|  [DoCreateTab](#docreatetab) | Creates new browser tab. |
+|  [DoCreateWindow](#docreatewindow) | Creates a new browser window. |
+|  [DOMFindByAttributeValue](#domfindbyattributevalue) | Looks for a web element by specific attribute value through all frames. |
+|  [DOMFindByName](#domfindbyname) | Looks for a web element by its name through all frames. |
+|  [DOMFindByText](#domfindbytext) | Looks for a web element by its text contents through all frames. |
+|  [DOMFindByXPath](#domfindbyxpath) | Looks for a web element by specific local XPath value through all frames. |
+|  [DoMoveWindow](#domovewindow) | Sets the position of the active browser window. |
+|  [DOMQueryValue](#domqueryvalue) | Executes an xpath query that may return a value of string, number or boolean type. |
+|  [DoResizeWindow](#doresizewindow) | Sets size of the active browser window. |
+|  [DoScreenshot](#doscreenshot) | Makes screenshot of the browser window. |
+|  [DoSelectTab](#doselecttab) | Selects browser tab by title or URL. |
+|  [DoSendKeys](#dosendkeys) | Sends keys to an active element on a page. |
+|  [DoSetExpectedConfirmResult](#dosetexpectedconfirmresult) | Sets boolean value to return as a result of next browser `confirm` request. |
+|  [DoSetExpectedPromptResult](#dosetexpectedpromptresult) | Sets text to return as a result of next browser `prompt` request. |
+|  [DoWaitFor](#dowaitfor) | Waits for object to appear in the current browser. |
+|  [DoWaitForEnabled](#dowaitforenabled) | Waits for object to become enabled. |
+|  [DoWaitForVisible](#dowaitforvisible) | Waits for object to appear in the screen. |
+|  [ExecJS](#execjs) | Executes given JavaScript statement in a browser and returns results. |
+|  [ExecPageJS](#execpagejs) | Executes given JavaScript statement in a browser in the context of the current page. |
+|  [Find](#find) | Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`. |
+|  [Forward](#forward) | Goes forward to the next page in the browser history. |
+|  [GetActiveTabId](#getactivetabid) | Gets Id of active browser tab. |
+|  [GetActiveTabTitle](#getactivetabtitle) | Gets title of active browser tab. |
+|  [GetActiveTabUrl](#getactivetaburl) | Gets URL of active browser tab. |
+|  [GetActiveWindowId](#getactivewindowid) | Gets active browser window Id. |
+|  [GetActiveWindowTitle](#getactivewindowtitle) | Gets active browser window title. |
+|  [GetActiveWindowUrl](#getactivewindowurl) | Gets active browser window URL. |
+|  [GetPerformance](#getperformance) | Reads performance information from currently used browser. |
+|  [GetPosition](#getposition) | Gets position of the top-left corner of the browser window. |
+|  [GetSize](#getsize) | Gets size of the browser window. |
+|  [GetTabIdAt](#gettabidat) | Gets browser tab Id. |
+|  [GetTabIndexById](#gettabindexbyid) | Gets index of the browser tab by Id. |
+|  [GetTabsCount](#gettabscount) | Gets number of browser tabs. |
+|  [GetTabTitleAt](#gettabtitleat) | Gets browser tab title. |
+|  [GetTabUrlAt](#gettaburlat) | Gets browser tab URL. |
+|  [GetWindowIdAt](#getwindowidat) | Gets browser window Id. |
+|  [GetWindowsCount](#getwindowscount) | Gets the number of browser windows. |
+|  [GetWindowTitleAt](#getwindowtitleat) | Gets browser window title. |
+|  [GetWindowUrlAt](#getwindowurlat) | Gets browser window URL. |
+|  [KillBrowser](#killbrowser) | Kills the browser process. |
+|  [LaunchBrowser](#launchbrowser) | Launches browser, but does not connect to it. |
+|  [Maximize](#maximize) | Maximizes browser window. |
+|  [Navigate](#navigate) | Redirects browser to a specified URL. |
+|  [Open](#open) | Opens a browser. |
+|  [Refresh](#refresh) | Reloads the current page. |
+|  [SelectBrowserProfile](#selectbrowserprofile) | Selects browser profile to use for testing. |
+|  [SeSFind](#sesfind) | Waits for object to appear on screen. |
+|  [SetPosition](#setposition) | Positions top-left corner of the browser window at specifid location. |
+|  [SetSize](#setsize) | Sets size if the browser window. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="AutoOpen"></a>
 #### AutoOpen
 
 
 During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance.If AutoOpen is 'false' it does nothing. Default value is 'true'.Applicable to Chrome, Firefox and Internet Explorer. Selenium targets are not affected by this property.Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|false) to set the value.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
-		
+      
+      
+    
 <a name="EnsureVisibleHorizontalAlignment"></a>
 #### EnsureVisibleHorizontalAlignment
 
 
 One of "start", "center", "end", or "nearest". Defaults to "nearest".
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
-		
+      
+      
+    
 <a name="EnsureVisibleScrollBehavior"></a>
 #### EnsureVisibleScrollBehavior
 
 
 One of default scroll behaviors: "auto", "smooth" or "instant". Defaults ot "instant".
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
-		
+      
+      
+    
 <a name="EnsureVisibleVerticalAlignment"></a>
 #### EnsureVisibleVerticalAlignment
 
 
 One of "start", "center", "end", or "nearest". Defaults to "start".
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
-		
+      
+      
+    
 <a name="NativeEvents"></a>
 #### NativeEvents
 
 
 Set it to true to use native keyboard and mouse input. Overrides browser profile settings. Does not affect Selenium targets. Requires Rapise 6.3+
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
-		
+      
+      
+    
 <a name="QuitIfNotConnected"></a>
 #### QuitIfNotConnected
 
 
 If connection to browser fails - open plugin page and quit. If set to 'false' - just return 'false' in Open call.
 
-			
-	
-			
+      
+  
+      
 Type: boolean
-			
-			
-		
-	
-	
+      
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="Back"></a>    
 #### Back
 
 Goes back to the previous page in the browser history. Requires Rapise 8.0+.
 
 ```javascript
-Back() 
+Navigator.Back()
 ```
 
 
@@ -212,15 +212,15 @@ Back()
 Checks if object is active by its id or XPath.
 
 ```javascript
-CheckObjectActive(xpathOrObjId) 
+Navigator.CheckObjectActive(xpathOrObjId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
+| xpathOrObjId | objectId |  XPath or ID. XPath is detected by leading "." or "/". |
 
 
 
@@ -239,15 +239,15 @@ CheckObjectActive(xpathOrObjId)
 Checks if object is enabled by its id or XPath.
 
 ```javascript
-CheckObjectEnabled(xpathOrObjId) 
+Navigator.CheckObjectEnabled(xpathOrObjId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
+| xpathOrObjId | objectId |  XPath or ID. XPath is detected by leading "." or "/". |
 
 
 
@@ -266,15 +266,15 @@ CheckObjectEnabled(xpathOrObjId)
 Checks if object is found on the screen by its id or XPath.
 
 ```javascript
-CheckObjectExists(xpathOrObjId) 
+Navigator.CheckObjectExists(xpathOrObjId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
+| xpathOrObjId | objectId |  XPath or ID. XPath is detected by leading "." or "/". |
 
 
 
@@ -293,15 +293,15 @@ CheckObjectExists(xpathOrObjId)
 Checks if object is visible on the screen by its id or XPath.
 
 ```javascript
-CheckObjectVisible(xpathOrObjId) 
+Navigator.CheckObjectVisible(xpathOrObjId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading "." or "/". |
+| xpathOrObjId | objectId |  XPath or ID. XPath is detected by leading "." or "/". |
 
 
 
@@ -320,15 +320,15 @@ CheckObjectVisible(xpathOrObjId)
 Closes browser. Finishes session.
 
 ```javascript
-Close(url) 
+Navigator.Close(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	Not used - can leave empty.Returns `true` if the browser closed successfully, otherwise - `false`. |
+| url | string |  Not used - can leave empty.Returns `true` if the browser closed successfully, otherwise - `false`. |
 
 
 
@@ -342,7 +342,7 @@ Close(url)
 Disconnects from a browser. Make Navigator ready for a new browser instance connection.
 
 ```javascript
-Detach() 
+Navigator.Detach()
 ```
 
 
@@ -357,15 +357,15 @@ Detach()
 Makes specified browser window active and focused. Requires Rapise 6.5+
 
 ```javascript
-DoActivateWindow(titleOrUrl) 
+Navigator.DoActivateWindow(titleOrUrl)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| titleOrUrl | string |	string or regex matching URL or window title. |
+| titleOrUrl | string |  string or regex matching URL or window title. |
 
 
 
@@ -379,15 +379,15 @@ DoActivateWindow(titleOrUrl)
 Waits until browser alert with a given text. Wait timeout is 10 seconds.
 
 ```javascript
-DoCheckAlert(msg) 
+Navigator.DoCheckAlert(msg)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| msg | string |	Alert text. Can be exact text or regular expression. |
+| msg | string |  Alert text. Can be exact text or regular expression. |
 
 
 
@@ -406,16 +406,16 @@ DoCheckAlert(msg)
 Waits until browser confirmation with a given text. Wait timeout is 10 seconds.
 
 ```javascript
-DoCheckConfirmation(msg, result) 
+Navigator.DoCheckConfirmation(msg, result)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| msg | string |	Confirmation text. Can be exact text or regular expression. |
-| result | string |	Not used - can leave empty.<br>Optional. |
+| msg | string |  Confirmation text. Can be exact text or regular expression. |
+| result | string |  Not used - can leave empty.<br>Optional. |
 
 
 
@@ -434,16 +434,16 @@ DoCheckConfirmation(msg, result)
 Waits until browser prompt with a given text. Wait timeout is 10 seconds.
 
 ```javascript
-DoCheckPrompt(msg, result) 
+Navigator.DoCheckPrompt(msg, result)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| msg | string |	Prompt text. Can be exact text or regular expression. |
-| result | string |	Not used - can leave empty.<br>Optional. |
+| msg | string |  Prompt text. Can be exact text or regular expression. |
+| result | string |  Not used - can leave empty.<br>Optional. |
 
 
 
@@ -462,21 +462,21 @@ DoCheckPrompt(msg, result)
 Clicks on a given element until another element appears on screen. Requires Rapise 6.3+
 
 ```javascript
-DoClickUntilOnScreen(xpathOrObjIdToClick, xpathOrObjIdToExpect, attempts, delay, x, y, forceEvent) 
+Navigator.DoClickUntilOnScreen(xpathOrObjIdToClick, xpathOrObjIdToExpect, attempts, delay, x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjIdToClick | objectId |	Object Id or XPath of an element to click. |
-| xpathOrObjIdToExpect | objectId |	Object Id or XPath of an element that should appear on screen. |
-| attempts | number |	Max number of clicks. Default is 2.<br>Optional. |
-| delay | number |	Delay between attempts. Default is 1000 milliseconds.<br>Optional. |
-| x | number |	X-offset from the top-left corner of the object. Default is object width/2.<br>Optional. |
-| y | number |	Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional. |
-| forceEvent | boolean |	Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional. |
+| xpathOrObjIdToClick | objectId |  Object Id or XPath of an element to click. |
+| xpathOrObjIdToExpect | objectId |  Object Id or XPath of an element that should appear on screen. |
+| attempts | number |  Max number of clicks. Default is 2.<br>Optional. |
+| delay | number |  Delay between attempts. Default is 1000 milliseconds.<br>Optional. |
+| x | number |  X-offset from the top-left corner of the object. Default is object width/2.<br>Optional. |
+| y | number |  Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional. |
+| forceEvent | boolean |  Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional. |
 
 
 
@@ -495,20 +495,20 @@ expected object if successful, otherwise - null.
 Clicks on an element until it disappears. Requires Rapise 6.3+
 
 ```javascript
-DoClickWhileOnScreen(xpathOrObjId, attempts, delay, x, y, forceEvent) 
+Navigator.DoClickWhileOnScreen(xpathOrObjId, attempts, delay, x, y, forceEvent)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectid |	Object Id or XPath of an element to click. |
-| attempts | number |	Max number of clicks. Default is 2.<br>Optional. |
-| delay | number |	Delay between attempts. Default is 1000 milliseconds.<br>Optional. |
-| x | number |	X-offset from the top-left corner of the object. Default is object width/2.<br>Optional. |
-| y | number |	Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional. |
-| forceEvent | boolean |	Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional. |
+| xpathOrObjId | objectid |  Object Id or XPath of an element to click. |
+| attempts | number |  Max number of clicks. Default is 2.<br>Optional. |
+| delay | number |  Delay between attempts. Default is 1000 milliseconds.<br>Optional. |
+| x | number |  X-offset from the top-left corner of the object. Default is object width/2.<br>Optional. |
+| y | number |  Y-offset from the top-left corner of the object. Default is object height/2.<br>Optional. |
+| forceEvent | boolean |  Default is false. Set to true to use browser level event for the click. Overrides browser profile settings.<br>Optional. |
 
 
 
@@ -527,7 +527,7 @@ true if object disappeared, otherwise - false.
 Closes currently selected tab. Requires Rapise 6.5+
 
 ```javascript
-DoCloseTab() 
+Navigator.DoCloseTab()
 ```
 
 
@@ -542,7 +542,7 @@ DoCloseTab()
 Closes currently active browser window. Requires Rapise 6.5+
 
 ```javascript
-DoCloseWindow() 
+Navigator.DoCloseWindow()
 ```
 
 
@@ -557,15 +557,15 @@ DoCloseWindow()
 Creates new browser tab. Requires Rapise 6.5+
 
 ```javascript
-DoCreateTab(url) 
+Navigator.DoCreateTab(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	new page URL |
+| url | string |  new page URL |
 
 
 
@@ -579,15 +579,15 @@ DoCreateTab(url)
 Creates a new browser window. Requires Rapise 6.5+
 
 ```javascript
-DoCreateWindow(url) 
+Navigator.DoCreateWindow(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	page URL. |
+| url | string |  page URL. |
 
 
 
@@ -601,19 +601,19 @@ DoCreateWindow(url)
 Looks for a web element by specific attribute value through all frames. `attrValue` is checked against each element's `attrName` attribute.
 
 ```javascript
-DOMFindByAttributeValue(attrName, attrValue, tagName, findAll, timeout) 
+Navigator.DOMFindByAttributeValue(attrName, attrValue, tagName, findAll, timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| attrName | string |	Name of the attribute to check. May be `@attr` or `attr`. |
-| attrValue | string |	Expected attribute value. |
-| tagName | string |	Tag name, default is * (any tag).<br>Optional. |
-| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
-| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
+| attrName | string |  Name of the attribute to check. May be `@attr` or `attr`. |
+| attrValue | string |  Expected attribute value. |
+| tagName | string |  Tag name, default is * (any tag).<br>Optional. |
+| findAll | boolean |  Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |  Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
@@ -632,18 +632,18 @@ array | <br>object: If `findAll` is set to `false` then just first found [elemen
 Looks for a web element by its name through all frames. Name is checked against @name and @id attribute of each element
 
 ```javascript
-DOMFindByName(name, tagName, findAll, timeout) 
+Navigator.DOMFindByName(name, tagName, findAll, timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| name | string |	Expected element name to search for. |
-| tagName | string |	Tag name, default is * (any tag).<br>Optional. |
-| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
-| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
+| name | string |  Expected element name to search for. |
+| tagName | string |  Tag name, default is * (any tag).<br>Optional. |
+| findAll | boolean |  Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |  Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
@@ -662,18 +662,18 @@ array | <br>object: If `findAll` is set to `false` then just first found [elemen
 Looks for a web element by its text contents through all frames. `text` is checked against each element text contents.
 
 ```javascript
-DOMFindByText(text, tagName, findAll, timeout) 
+Navigator.DOMFindByText(text, tagName, findAll, timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| text | string |	Expected text to search for. |
-| tagName | string |	Tag name, default is * (any tag).<br>Optional. |
-| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
-| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
+| text | string |  Expected text to search for. |
+| tagName | string |  Tag name, default is * (any tag).<br>Optional. |
+| findAll | boolean |  Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |  Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
@@ -692,17 +692,17 @@ array | <br>object: If `findAll` is set to `false` then just first found [elemen
 Looks for a web element by specific local XPath value through all frames. If XPath is local (i.e. //img) then search will be performed for all images in all nested frames.
 
 ```javascript
-DOMFindByXPath(xpath, findAll, timeout) 
+Navigator.DOMFindByXPath(xpath, findAll, timeout)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	Local XPath to execute for each frame. |
-| findAll | boolean |	Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
-| timeout | number |	Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
+| xpath | string |  Local XPath to execute for each frame. |
+| findAll | boolean |  Defines if we return just first element (`false`, default) or all found elements (`true`). Default is `false`.<br>Optional. |
+| timeout | number |  Timeout in milliseconds to keep trying to find an element. Default behavior is just do single attempt.<br>Optional. |
 
 
 
@@ -721,16 +721,16 @@ array | <br>object: If `findAll` is set to `false` then just first found [elemen
 Sets the position of the active browser window. Requires Rapise 6.5+
 
 ```javascript
-DoMoveWindow(left, top) 
+Navigator.DoMoveWindow(left, top)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| left | number |	offset in pixels from the corner of the display. |
-| top | number |	offset in pixels from the corner of the display. |
+| left | number |  offset in pixels from the corner of the display. |
+| top | number |  offset in pixels from the corner of the display. |
 
 
 
@@ -744,16 +744,16 @@ DoMoveWindow(left, top)
 Executes an xpath query that may return a value of string, number or boolean type. If the result of the query is an array of nodes - a combined string is returned (;-separated text values of nodes). If the query returns nothing (invalid query or nothing matches) then `null` is returned. Requires Rapise 6.4+
 
 ```javascript
-DOMQueryValue(xpathOrObjId, query) 
+Navigator.DOMQueryValue(xpathOrObjId, query)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectId |	XPath or ID. XPath is detected by leading '.' or '/'. If the value is empty then this parameter defaults to `/html`. |
-| query | string |	Absolute or relative xpath query. e.g. `count(//div)`, `//a[1]/@href='/Home'`, `./li/text()` |
+| xpathOrObjId | objectId |  XPath or ID. XPath is detected by leading '.' or '/'. If the value is empty then this parameter defaults to `/html`. |
+| query | string |  Absolute or relative xpath query. e.g. `count(//div)`, `//a[1]/@href='/Home'`, `./li/text()` |
 
 
 
@@ -772,16 +772,16 @@ string | <br>number | <br>boolean: Result of the query or null in the case if th
 Sets size of the active browser window. Requires Rapise 6.5+
 
 ```javascript
-DoResizeWindow(width, height) 
+Navigator.DoResizeWindow(width, height)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| width | number |	New width of the browser window in pixels. |
-| height | number |	New height of the browser window in pixels. |
+| width | number |  New width of the browser window in pixels. |
+| height | number |  New height of the browser window in pixels. |
 
 
 
@@ -795,15 +795,15 @@ DoResizeWindow(width, height)
 Makes screenshot of the browser window.
 
 ```javascript
-DoScreenshot(fileName) 
+Navigator.DoScreenshot(fileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| fileName | string |	Save the screenshot to a file if name is specified. Otherwise - add to report.<br>Optional. |
+| fileName | string |  Save the screenshot to a file if name is specified. Otherwise - add to report.<br>Optional. |
 
 
 
@@ -817,15 +817,15 @@ DoScreenshot(fileName)
 Selects browser tab by title or URL. Requires Rapise 6.5+
 
 ```javascript
-DoSelectTab(titleOrUrl) 
+Navigator.DoSelectTab(titleOrUrl)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| titleOrUrl | string |	string or regex matching tab URL or title. |
+| titleOrUrl | string |  string or regex matching tab URL or title. |
 
 
 
@@ -839,15 +839,15 @@ DoSelectTab(titleOrUrl)
 Sends keys to an active element on a page. Requires Rapise 8.0+.
 
 ```javascript
-DoSendKeys(txt) 
+Navigator.DoSendKeys(txt)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txt | string |	Keys to send. Supports patterns like in [Global.DoSendKeys](/Libraries/Global/#dosendkeys). |
+| txt | string |  Keys to send. Supports patterns like in [Global.DoSendKeys](/Libraries/Global/#dosendkeys). |
 
 
 
@@ -861,15 +861,15 @@ DoSendKeys(txt)
 Sets boolean value to return as a result of next browser `confirm` request.
 
 ```javascript
-DoSetExpectedConfirmResult(expectedRes) 
+Navigator.DoSetExpectedConfirmResult(expectedRes)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| expectedRes | string |	The text to be returned in the next request. |
+| expectedRes | string |  The text to be returned in the next request. |
 
 
 
@@ -883,15 +883,15 @@ DoSetExpectedConfirmResult(expectedRes)
 Sets text to return as a result of next browser `prompt` request.
 
 ```javascript
-DoSetExpectedPromptResult(expectedRes) 
+Navigator.DoSetExpectedPromptResult(expectedRes)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| expectedRes | string |	The text to be returned in the next request. |
+| expectedRes | string |  The text to be returned in the next request. |
 
 
 
@@ -905,17 +905,17 @@ DoSetExpectedPromptResult(expectedRes)
 Waits for object to appear in the current browser. Object may be hidden or disabled. Requires Rapise 6.3+
 
 ```javascript
-DoWaitFor(xpathOrObjId, timeout, params) 
+Navigator.DoWaitFor(xpathOrObjId, timeout, params)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
-| timeout | number |	Max time to wait. Default is 10000 milliseconds.<br>Optional. |
-| params | object |	Overrides locator options.<br>Optional. |
+| xpathOrObjId | objectid |  Object Id or XPath of an element to check. |
+| timeout | number |  Max time to wait. Default is 10000 milliseconds.<br>Optional. |
+| params | object |  Overrides locator options.<br>Optional. |
 
 
 
@@ -934,17 +934,17 @@ found object, otherwise - false.
 Waits for object to become enabled. Requires Rapise 7.4+
 
 ```javascript
-DoWaitForEnabled(xpathOrObjId, timeout, params) 
+Navigator.DoWaitForEnabled(xpathOrObjId, timeout, params)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
-| timeout | number |	Max time to wait. Default is 10000 milliseconds.<br>Optional. |
-| params | object |	Overrides locator options.<br>Optional. |
+| xpathOrObjId | objectid |  Object Id or XPath of an element to check. |
+| timeout | number |  Max time to wait. Default is 10000 milliseconds.<br>Optional. |
+| params | object |  Overrides locator options.<br>Optional. |
 
 
 
@@ -963,17 +963,17 @@ found object, otherwise - false.
 Waits for object to appear in the screen. Requires Rapise 7.4+
 
 ```javascript
-DoWaitForVisible(xpathOrObjId, timeout, params) 
+Navigator.DoWaitForVisible(xpathOrObjId, timeout, params)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
-| timeout | number |	Max time to wait. Default is 10000 milliseconds.<br>Optional. |
-| params | object |	Overrides locator options.<br>Optional. |
+| xpathOrObjId | objectid |  Object Id or XPath of an element to check. |
+| timeout | number |  Max time to wait. Default is 10000 milliseconds.<br>Optional. |
+| params | object |  Overrides locator options.<br>Optional. |
 
 
 
@@ -992,16 +992,16 @@ found object, otherwise - false.
 Executes given JavaScript statement in a browser and returns results.
 
 ```javascript
-ExecJS(scriptText, obj) 
+Navigator.ExecJS(scriptText, obj)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scriptText | string |	JavaScript code. |
-| obj | HTMLObject |	You may pass object to use in the JavaScript statement. Reference it as `el` or `arguments[0]`.<br>Optional. |
+| scriptText | string |  JavaScript code. |
+| obj | HTMLObject |  You may pass object to use in the JavaScript statement. Reference it as `el` or `arguments[0]`.<br>Optional. |
 
 
 
@@ -1020,16 +1020,16 @@ Result of code execution.
 Executes given JavaScript statement in a browser in the context of the current page. It means the script may accessJS variables and functions declared on the page. Requires Rapise 6.5+
 
 ```javascript
-ExecPageJS(scriptText, obj) 
+Navigator.ExecPageJS(scriptText, obj)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| scriptText | string |	JavaScript code. |
-| obj | HTMLObject |	You may pass object to use in the JavaScript statement. The script will be executed in a frame, containing given obj.<br>Optional. |
+| scriptText | string |  JavaScript code. |
+| obj | HTMLObject |  You may pass object to use in the JavaScript statement. The script will be executed in a frame, containing given obj.<br>Optional. |
 
 
 
@@ -1048,18 +1048,18 @@ Result of code execution.
 Returns [HTMLObject](HTMLObject.md) wrapping DOM element for a given `xpath`.
 
 ```javascript
-Find(xpath, url, title, objInfo) 
+Navigator.Find(xpath, url, title, objInfo)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpath | string |	Location path of a DOM element. |
-| url | string |	URL. If new Navigator is launched, the URL is used.<br>Optional. |
-| title | string |	The title of the HTML document that is being searched. |
-| objInfo | SeSObjectInfo |	A populated `SeSObjectInfo` object. |
+| xpath | string |  Location path of a DOM element. |
+| url | string |  URL. If new Navigator is launched, the URL is used.<br>Optional. |
+| title | string |  The title of the HTML document that is being searched. |
+| objInfo | SeSObjectInfo |  A populated `SeSObjectInfo` object. |
 
 
 
@@ -1078,7 +1078,7 @@ Find(xpath, url, title, objInfo)
 Goes forward to the next page in the browser history. Requires Rapise 8.0+.
 
 ```javascript
-Forward() 
+Navigator.Forward()
 ```
 
 
@@ -1093,7 +1093,7 @@ Forward()
 Gets Id of active browser tab. Id may be used as parameter to Navigator.DoSelectTab(). Requires Rapise 6.5+
 
 ```javascript
-GetActiveTabId() 
+Navigator.GetActiveTabId()
 ```
 
 
@@ -1108,7 +1108,7 @@ GetActiveTabId()
 Gets title of active browser tab. Requires Rapise 6.5+
 
 ```javascript
-GetActiveTabTitle() 
+Navigator.GetActiveTabTitle()
 ```
 
 
@@ -1123,7 +1123,7 @@ GetActiveTabTitle()
 Gets URL of active browser tab. Requires Rapise 6.5+
 
 ```javascript
-GetActiveTabUrl() 
+Navigator.GetActiveTabUrl()
 ```
 
 
@@ -1138,7 +1138,7 @@ GetActiveTabUrl()
 Gets active browser window Id. Id is an internal identifier. May be used as a parameter to Navigator.DoActivateWindow(). Requires Rapise 6.5+
 
 ```javascript
-GetActiveWindowId() 
+Navigator.GetActiveWindowId()
 ```
 
 
@@ -1153,7 +1153,7 @@ GetActiveWindowId()
 Gets active browser window title. Requires Rapise 6.5+
 
 ```javascript
-GetActiveWindowTitle() 
+Navigator.GetActiveWindowTitle()
 ```
 
 
@@ -1168,15 +1168,15 @@ GetActiveWindowTitle()
 Gets active browser window URL. Requires Rapise 6.5+
 
 ```javascript
-GetActiveWindowUrl(index) 
+Navigator.GetActiveWindowUrl(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	 |
+| index | number |   |
 
 
 
@@ -1190,16 +1190,16 @@ GetActiveWindowUrl(index)
 Reads performance information from currently used browser. Performance numbersare based on output from window.performance structure of the web page. See alsohttp://www.w3.org/TR/navigation-timing/#processing-model
 
 ```javascript
-GetPerformance(resources, dontWriteReport) 
+Navigator.GetPerformance(resources, dontWriteReport)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| resources | boolean |	optional, bool. Set to true if you want to dump information about resource timing into the report<br>Optional. |
-| dontWriteReport | boolean |	optional, Set to true if you want just return page load time and write nothing to report<br>Optional. |
+| resources | boolean |  optional, bool. Set to true if you want to dump information about resource timing into the report<br>Optional. |
+| dontWriteReport | boolean |  optional, Set to true if you want just return page load time and write nothing to report<br>Optional. |
 
 
 
@@ -1218,7 +1218,7 @@ number: page open time (in milliseconds)
 Gets position of the top-left corner of the browser window. This function is DPI aware.
 
 ```javascript
-GetPosition() 
+Navigator.GetPosition()
 ```
 
 
@@ -1238,7 +1238,7 @@ object: {X, Y}
 Gets size of the browser window. This function is DPI aware.
 
 ```javascript
-GetSize() 
+Navigator.GetSize()
 ```
 
 
@@ -1258,15 +1258,15 @@ object: {Width, Height}
 Gets browser tab Id. Id may be used as parameter to Navigator.DoSelectTab(). Requires Rapise 6.5+
 
 ```javascript
-GetTabIdAt(index) 
+Navigator.GetTabIdAt(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	number from 0 to Navigator.GetTabsCount() |
+| index | number |  number from 0 to Navigator.GetTabsCount() |
 
 
 
@@ -1280,15 +1280,15 @@ GetTabIdAt(index)
 Gets index of the browser tab by Id. Index may be used as param to GetTabIdAt/GetTabUrlAt/GetTabTitleAt. Requires Rapise 6.5+
 
 ```javascript
-GetTabIndexById(tabId) 
+Navigator.GetTabIndexById(tabId)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabId | number |	 |
+| tabId | number |   |
 
 
 
@@ -1302,7 +1302,7 @@ GetTabIndexById(tabId)
 Gets number of browser tabs. Requires Rapise 6.5+
 
 ```javascript
-GetTabsCount() 
+Navigator.GetTabsCount()
 ```
 
 
@@ -1317,15 +1317,15 @@ GetTabsCount()
 Gets browser tab title. Requires Rapise 6.5+
 
 ```javascript
-GetTabTitleAt(index) 
+Navigator.GetTabTitleAt(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	number from 0 to Navigator.GetTabsCount() |
+| index | number |  number from 0 to Navigator.GetTabsCount() |
 
 
 
@@ -1339,15 +1339,15 @@ GetTabTitleAt(index)
 Gets browser tab URL. Requires Rapise 6.5+
 
 ```javascript
-GetTabUrlAt(index) 
+Navigator.GetTabUrlAt(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	number from 0 to Navigator.GetTabsCount() |
+| index | number |  number from 0 to Navigator.GetTabsCount() |
 
 
 
@@ -1361,15 +1361,15 @@ GetTabUrlAt(index)
 Gets browser window Id. Id is an internal identifier. May be used as a parameter to Navigator.DoActivateWindow(). Requires Rapise 6.5+
 
 ```javascript
-GetWindowIdAt(index) 
+Navigator.GetWindowIdAt(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	number from 0 to Navigator.GetWindowsCount() |
+| index | number |  number from 0 to Navigator.GetWindowsCount() |
 
 
 
@@ -1383,7 +1383,7 @@ GetWindowIdAt(index)
 Gets the number of browser windows. Requires Rapise 6.5+
 
 ```javascript
-GetWindowsCount() 
+Navigator.GetWindowsCount()
 ```
 
 
@@ -1398,15 +1398,15 @@ GetWindowsCount()
 Gets browser window title. Requires Rapise 6.5+
 
 ```javascript
-GetWindowTitleAt(index) 
+Navigator.GetWindowTitleAt(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	number from 0 to Navigator.GetWindowsCount() |
+| index | number |  number from 0 to Navigator.GetWindowsCount() |
 
 
 
@@ -1420,15 +1420,15 @@ GetWindowTitleAt(index)
 Gets browser window URL. Requires Rapise 6.5+
 
 ```javascript
-GetWindowUrlAt(index) 
+Navigator.GetWindowUrlAt(index)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| index | number |	number from 0 to Navigator.GetWindowsCount() |
+| index | number |  number from 0 to Navigator.GetWindowsCount() |
 
 
 
@@ -1442,7 +1442,7 @@ GetWindowUrlAt(index)
 Kills the browser process. The browser to kill is detected from browser profile settings. Requires Rapise 6.4+
 
 ```javascript
-KillBrowser() 
+Navigator.KillBrowser()
 ```
 
 
@@ -1457,15 +1457,15 @@ KillBrowser()
 Launches browser, but does not connect to it. Recommended for applications with basic authentication. Requires Rapise 6.5+
 
 ```javascript
-LaunchBrowser(url) 
+Navigator.LaunchBrowser(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url |  |	Initial url, may be empty.<br>Optional. |
+| url |  |  Initial url, may be empty.<br>Optional. |
 
 
 
@@ -1479,7 +1479,7 @@ LaunchBrowser(url)
 Maximizes browser window.
 
 ```javascript
-Maximize() 
+Navigator.Maximize()
 ```
 
 
@@ -1494,15 +1494,15 @@ Maximize()
 Redirects browser to a specified URL.
 
 ```javascript
-Navigate(url) 
+Navigator.Navigate(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	The URL to navigate to. |
+| url | string |  The URL to navigate to. |
 
 
 
@@ -1516,15 +1516,15 @@ Navigate(url)
 Opens a browser. If URL is specified, goes to URL.
 
 ```javascript
-Open(url) 
+Navigator.Open(url)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| url | string |	Start URL for opening browser. Can be `null`. |
+| url | string |  Start URL for opening browser. Can be `null`. |
 
 
 
@@ -1538,7 +1538,7 @@ Open(url)
 Reloads the current page. Requires Rapise 8.0+.
 
 ```javascript
-Refresh() 
+Navigator.Refresh()
 ```
 
 
@@ -1553,15 +1553,15 @@ Refresh()
 Selects browser profile to use for testing.
 
 ```javascript
-SelectBrowserProfile(profileName) 
+Navigator.SelectBrowserProfile(profileName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| profileName | string |	name of a browser profile. |
+| profileName | string |  name of a browser profile. |
 
 
 
@@ -1575,16 +1575,16 @@ SelectBrowserProfile(profileName)
 Waits for object to appear on screen. Uses test [ObjectLookup... settings](https://rapisedoc.inflectra.com/Guide/settings_dialog/#execution). Requires Rapise 6.4+
 
 ```javascript
-SeSFind(xpathOrObjId, params) 
+Navigator.SeSFind(xpathOrObjId, params)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| xpathOrObjId | objectid |	Object Id or XPath of an element to check. |
-| params | object |	Overrides locator options.<br>Optional. |
+| xpathOrObjId | objectid |  Object Id or XPath of an element to check. |
+| params | object |  Overrides locator options.<br>Optional. |
 
 
 
@@ -1603,16 +1603,16 @@ found object, otherwise - `false`.
 Positions top-left corner of the browser window at specifid location. This function is DPI aware.
 
 ```javascript
-SetPosition(x, y) 
+Navigator.SetPosition(x, y)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |	X-offset from the top-left corner of the screen. |
-| y | number |	Y-offset from the top-left corner of the screen. |
+| x | number |  X-offset from the top-left corner of the screen. |
+| y | number |  Y-offset from the top-left corner of the screen. |
 
 
 
@@ -1626,16 +1626,16 @@ SetPosition(x, y)
 Sets size if the browser window. This function is DPI aware.
 
 ```javascript
-SetSize(width, height) 
+Navigator.SetSize(width, height)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| width | number |	New width of the browser window. |
-| height | number |	New height of the browser window. |
+| width | number |  New width of the browser window. |
+| height | number |  New height of the browser window. |
 
 
 
@@ -1643,5 +1643,5 @@ SetSize(width, height)
 
 <a name="see.also.navigator.setsize"></a>
 
-	
+  
 

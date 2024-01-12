@@ -17,7 +17,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-	
+  
 
 ### Property Summary
 
@@ -29,7 +29,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-	
+  
 <!-- ============================== action summary ========================== -->
 
 
@@ -38,81 +38,81 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|	[DoSelectTab](#doselecttab) | Selects the tab by name. |
+|  [DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
 
 <!-- ============================== property detail ========================== -->
-	
+  
 ### Property Detail
-		
+    
 <a name="ItemsCount"></a>
 #### ItemsCount
 
 
 Number of items.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetItemsCount
-			
-		
+      
+    
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
 
 Index of the selected element of the object.
 
-			
-	
-			
+      
+  
+      
 Type: number
-			
-			
+      
+      
 Accessors: GetSelectedIndex
-			
-		
+      
+    
 <a name="SelectedTab"></a>
 #### SelectedTab
 
 
 Text of the selected tab
 
-			
-	
-			
+      
+  
+      
 Type: string
-			
-			
+      
+      
 Accessors: GetSelectedTab
-			
-		
-	
-	
+      
+    
+  
+  
 <!-- ============================== action detail ========================== -->
-	
+  
 ### Action Detail
-		
+    
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 
 Selects the tab by name.
 
 ```javascript
-DoSelectTab(tabName) 
+SeS('SomeSmartGwtTabControl').DoSelectTab(tabName)
 ```
 
 
 **Parameters:**
 
-|	**Name** | **Type** | **Description** |
+|  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| tabName | string |	Tab name to select |
+| tabName | string |  Tab name to select |
 
 
 
@@ -125,5 +125,5 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.smartgwttabcontrol.doselecttab"></a>
 
-	
+  
 
