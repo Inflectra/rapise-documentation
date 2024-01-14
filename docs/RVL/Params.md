@@ -52,7 +52,22 @@ Several functions of the [RVL Object](../Libraries/RVL.md) support variable para
 
 Custom parameters added by user manually, by specifying row type `Param` and assigning any required param name.
 
-![Extra Parameters](./img/Params_ExtraParams.png)
+=== "Screenshot"
+    ![Extra Parameters](./img/Params_ExtraParams.png)
+=== "Transcript"
+    | Flow | Type   | Object | Action       | ParamName    | ParamType | ParamValue              |
+    | ---- | ------ | ------ | ------------ | ------------ | --------- | ----------------------- |
+    |      |        |        |              |              |           |                         |
+    |      | Action | RVL    | DoPlaySheet  | sheetName    | string    | SheetWithParams         |
+    |      | Param  |        |              | User         | string    | ExtUser                 |
+    |      | Param  |        |              | Password     | string    | ExtPassword             |
+    |      | Param  |        |              | OtherVarName | string    | somevalue               |
+    |      |        |        |              |              |           |                         |
+    |      | Action | RVL    | DoPlayScript | scriptPath   | string    | %WORKDIR%\Main.rvl.xlsx |
+    |      | Param  |        |              | sheetName    | string    | SheetWithParams         |
+    |      | Param  |        |              | Password     | string    | OnlyPasswordChanged     |
+    |      |        |        |              |              |           |                         |
+    
 
 There my be as many extra parameters as needed.
 
@@ -96,4 +111,16 @@ This allows saving space while keeping same readability. See also [short conditi
 
 If map is defined in the script it may be used directly as a parameter. *ParamType* should be set to Map Name and *ParamValue* is a column (or row) name:
 
-![Map Param](./img/Params_MapValue.png)
+=== "Screenshot"
+    ![Map Param](./img/Params_MapValue.png)
+=== "Transcript"
+    | Flow | Type   | Object   | Action  | ParamName | ParamType | ParamValue |
+    | ---- | ------ | -------- | ------- | --------- | --------- | ---------- |
+    | Map  | Rows   | Logins   |         |           |           |            |
+    |      | Login  | Password |         |           |           |            |
+    |      | John   | pass1    |         |           |           |            |
+    |      | Sarah  | pass2    |         |           |           |            |
+    | End  | of Map |          |         |           |           |            |
+    |      |        |          |         |           |           |            |
+    |      | Action | Tester   | Message | message   | Logins    | Password   |
+    

@@ -28,12 +28,40 @@ In RVL Action always refers to an operation performed with object.
 
 Compare object property *InnerText* with expected value:
 
-![Assertion](./img/Assertion_GetInnerTextCompare.png)
+=== "Screenshot"
+    ![Assertion](./img/Assertion_GetInnerTextCompare.png)
+=== "Transcript"
+    | Flow | Type      | Object        | Action            | ParamName | ParamType | ParamValue                           |
+    | ---- | --------- | ------------- | ----------------- | --------- | --------- | ------------------------------------ |
+    |      | Assert    |               |                   | message   | string    | Verify that: InnerText=Sister Carrie |
+    |      | Action    | Sister_Carrie | GetInnerText      |           |           |                                      |
+    |      | Condition |               | output1 == param2 |           |           |                                      |
+    |      | Param     |               |                   | param2    | string    | Sister Carrie                        |
 
 Check if object exists on the screen:
 
-![Assertion object exists](./img/Assertion_ObjectExists.png)
+=== "Screenshot"
+    ![Assertion object exists](./img/Assertion_ObjectExists.png)
+=== "Transcript"
+    
+    | Flow | Type                                     | Object | Action        | ParamName | ParamType | ParamValue                               |
+    | ---- | ---------------------------------------- | ------ | ------------- | --------- | --------- | ---------------------------------------- |
+    | #    | Check that object 'Sister_Carrie' exists |        |               |           |           |                                          |
+    |      | Assert                                   |        |               | message   | string    | Check that object 'Sister_Carrie' exists |
+    |      | Action                                   | Global | DoWaitFor     | objectId  | objectid  | Sister_Carrie                            |
+    |      | Condition                                |        | output1 IsSet |           |           |                                          |
+    
 
 Check if variable `Age` has value '74':
 
-![Assertion check variable value](./img/Assertion_CheckVariableValue.png)
+=== "Screenshot"
+    ![Assertion check variable value](./img/Assertion_CheckVariableValue.png)
+=== "Transcript"
+    | Flow | Type                                        | Object | Action           | ParamName | ParamType | ParamValue        |
+    | ---- | ------------------------------------------- | ------ | ---------------- | --------- | --------- | ----------------- |
+    | #    | Check that variable 'Age' contains value 74 |        |                  |           |           |                   |
+    |      | Assert                                      |        |                  | message   | string    | Check that Age=74 |
+    |      | Param                                       |        |                  | param1    | variable  | Age               |
+    |      | Condition                                   |        | param1 == param2 |           |           |                   |
+    |      | Param                                       |        |                  | param2    | string    | 74                |
+    

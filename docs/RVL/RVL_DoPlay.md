@@ -25,11 +25,37 @@ Play RVL sheet `sheetName` from current workbook.
 
 So the following call:
 
-![Extra Params Call](./img/RVL_DoPlay_ExtraParams.png)
+=== "Screenshot"
+    ![Extra Params Call](./img/RVL_DoPlay_ExtraParams.png)
+=== "Transcript"
+    Sheet name: RVL
+    
+    | Flow | Type   | Object | Action      | ParamName    | ParamType | ParamValue      |
+    | ---- | ------ | ------ | ----------- | ------------ | --------- | --------------- |
+    |      |        |        |             |              |           |                 |
+    |      | Action | RVL    | DoPlaySheet | sheetName    | string    | SheetWithParams |
+    |      | Param  |        |             | User         | string    | ExtUser         |
+    |      | Param  |        |             | Password     | string    | ExtPassword     |
+    |      | Param  |        |             | OtherVarName | string    | somevalue       |
+    |      |        |        |             |              |           |                 |
+    
 
 passes `User=ExtUser`, `Password=ExtPassword`, `OtherVarName=somevalue` to the destination script. It may now be used as follows:
 
-![Extra Param Values](./img/RVL_DoPlay_ExtraParams_Values.png)
+=== "Screenshot"
+    ![Extra Param Values](./img/RVL_DoPlay_ExtraParams_Values.png)
+=== "Transcript"
+    Sheet name: SheetWithParams
+    
+    | Flow | Type     | Object | Action  | ParamName | ParamType | ParamValue     |
+    | ---- | -------- | ------ | ------- | --------- | --------- | -------------- |
+    |      | Variable |        |         | User      | string    | DefUser        |
+    |      | Variable |        |         | Password  | string    | DefPassword    |
+    |      |          |        |         |           |           |                |
+    |      | Action   | Tester | Message | message   | string    | Logging In as: |
+    |      | Param    |        |         | message   | variable  | User           |
+    |      | Param    |        |         | message   | string    | /              |
+    |      | Param    |        |         | message   | variable  | Password       |
 
 So **local** variable `User` is assigned to value `ExtUser` when called. However, if you play this sheet using `Play Sheet` then this variable would have value `DefUser`.
 

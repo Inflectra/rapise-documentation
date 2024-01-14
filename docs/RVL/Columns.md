@@ -2,7 +2,24 @@
 
 RVL script is a spreadsheet containing set of 7 columns in fixed order:
 
-![Columns](./img/Columns.png)
+=== "Screenshot"
+    ![Columns](./img/Columns.png)
+=== "Transcript"
+    | Flow | Type   | Object | Action  | ParamName    | ParamType | ParamValue |
+    | ---- | ------ | ------ | ------- | ------------ | --------- | ---------- |
+    | #    | My scenario goes here |        |        |              |           |            |
+    |      | Action | Global | DoLaunch | cmdLine      | string    | calc       |
+    |      | Param  |        |          | wrkDir       | string    | .          |
+    |      | Param  |        |          | attachIfExists | boolean | true       |
+    |      | Param  |        |          | attachToWindow | string  | Calculator |
+    |      | Action | _1     | DoClick  | x            | number    | 18         |
+    |      | Param  |        |          | y            | number    | 15         |
+    |      | Action | Add    | DoClick  | x            | number    | 21         |
+    |      | Param  |        |          | y            | number    | 19         |
+    |      | Action | _2     | DoClick  | x            | number    | 14         |
+    |      | Param  |        |          | y            | number    | 13         |
+    |      | Action | Equals | DoClick  | x            | number    | 12         |
+    |      | Param  |        |          | y            | number    | 23
 
 ## Default Columns
 
@@ -55,11 +72,26 @@ By default RVL always displays column `H`. It is sometimes useful (to store temp
 
 One may show more columns. To do this open the file (i.e. `Main.rvl.xlsx`) in the spreadsheet editor or Excel and define some values in columns `I`, `J` etc respectively:
 
-![Excel Columns](./img/CustomColumnsExcel.png)
+=== "Screenshot"
+    ![Excel Columns](./img/CustomColumnsExcel.png)
+=== "Transcript"
+    Sheet name: RVL
+    
+    | A    | B    | C      | D      | E         | F         | G          | H   | I   | J   | K   |
+    | ---- | ---- | ------ | ------ | --------- | --------- | ---------- | --- | --- | --- | --- |
+    | Flow | Type | Object | Action | ParamName | ParamType | ParamValue | H   | I   | J   | K   |
+    |      |      |        |        |           |           |            |     |     |     |     |
+    |      |      |        |        |           |           |            |     |     |     |     |
 
 Now if you re-open this document in RVL these columns will also be displayed:
 
-![Excel Columns](./img/CustomColumnsRVL.png)
+=== "Screenshot"
+    ![Excel Columns](./img/CustomColumnsRVL.png)
+=== "Transcript"
+    | Flow | Type | Object | Action | ParamName | ParamType | ParamValue | H   | I   | J   | K   |
+    | ---- | ---- | ------ | ------ | --------- | --------- | ---------- | --- | --- | --- | --- |
+    |      |      |        |        |           |           |            |     |     |     |     |
+    |      |      |        |        |           |           |            |     |     |     |     |
 
 The usage of this columns is up to you. You may use them just for information or make them 'live' by assigning custom actions as will be described in the next section.
 

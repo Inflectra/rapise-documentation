@@ -37,7 +37,19 @@ Global variables are useful for exchanging and/or sharing data between different
 
 Special parameter name `defaultValue` of the Global variable definition allows setting default value. This may be needed when you don't know if variable was set before calling this script. So the value will only be assigned is variable is currently undefined. Otherwise the Variable keeps its defined value.
 
-![defaultValue](./img/RVL_Variable_DefaultValue.png)
+=== "Screenshot"
+    ![defaultValue](./img/RVL_Variable_DefaultValue.png)
+=== "Transcript"
+    | Flow | Type     | Object | Action | ParamName    | ParamType | ParamValue |
+    | ---- | -------- | ------ | ------ | ------------ | --------- | ---------- |
+    |      | Variable | Global |        | g_loginName  |           |            |
+    |      | Param    |        |        | defaultValue | string    | librarian  |
+    |      |          |        |        |              |           |            |
+    |      | Variable | Global |        | g_password   |           |            |
+    |      | Param    |        |        | defaultValue | string    | librarian  |
+    |      | Variable | Global |        | g_name       |           |            |
+    |      | Param    |        |        | defaultValue | string    | librarian  |
+    |      |          |        |        |              |           |            |
 
 This helps to make sheets using global variables to be executable standalone. I.e. you may use [Play This Sheet](../Guide/rvl_editor.md#context-menu) in RVL and be sure that Global variable will have a value.
 
@@ -136,26 +148,139 @@ When declaring a variable with the `objectid` *ParamType*, you are indicating to
 1. The type of the object when the `objectid` matches the ID from the object repository.
 2. The type by name when the `objectid` matches a well-known object type. You can find object names in the documentation for each library. For example, the topic [Java Objects](/Libraries/ses_lib_java) lists all known object types for the Java library.
 
-      ![Object Rules](./img/Variables_object_rules.png)
+    === "Screenshot"
+        ![Object Rules](./img/Variables_object_rules.png)
+    === "Transcript"
+        **Documentation Navigation**
+        
+        - `#`
+        - `User's Guide`
+        - `RVL`
+        - `Libraries`
+        - `Manuals`
+        - `KB`
+        - `Education`
+        - `Release Notes`
+        
+        **Libraries Section**
+        
+        - `ActiveXC1 >`
+        - `ActiveXSft >`
+        - `FarPoint >`
+        - `VSFlexGrid >`
+        - `Java >`
+            - **Java Objects**
+                - `JavaButton`
+                - `JavaCheckBox`
+                - `JavaChoice`
+                - `JavaLabel`
+                - `JavaList`
+                - `JavaObject`
+                - `JavaSwingButton`
+        
+        (*Note: The image also includes a navigation flow marked with a dotted line, connecting the 'Java' section with 'JavaButton', then leading to a list of Java components including 'JavaCheckBox', 'JavaChoice', 'JavaLabel', 'JavaList', 'JavaObject', and 'JavaSwingButton'.*)
 
-      Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type [HTMLObject](/Libraries/HTMLObject), as shown in the object properties:
+    Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type [HTMLObject](/Libraries/HTMLObject), as shown in the object properties:
 
-      ![Object Type](./img/Variables_object_type_properties.png)
+    === "Screenshot"
+        ![Object Type](./img/Variables_object_type_properties.png)
+    === "Transcript"
+        Test Management Interface
+        
+        **Test Cases Section**
+        
+        - `Test Cases`
+          - `Author Management`
+            - `![Full - Author Management](link-to-green-check-icon) Full - Author Management`
+            - `![Check](link-to-check-icon) Check Author Summary`
+            - `![Create](link-to-plus-icon) Create a New Author`
+            - `[Objects]`
+              - `[Inflectra | Library Information System]`
+                - `> Add`
+                - `> Age`
+                - `> Name`
+              - `[Library Information System | Author]`
+              - `[Library Information System | Book M]`
+              - `[RVL]`
+            - `![Edit](link-to-pencil-icon) Edit Existing Author`
+        
+        **Object Tree Tab**
+        
+        - `Object Tree`
+        - `Files`
+        
+        **Properties Panel**
+        
+        - `Properties`
+            - `Class: Selenium`
+            - `Flavor: Button`
+            - `Ignore Object Name: True`
+            - `Library: Selenium`
+            - `Name: Add`
+            - `Role:`
+            - `Text:`
+            - `Type: ![HTML Object](link-to-red-circled-icon) HTMLObject`
+            - `Window:`
+            - `ID:`
+            - `Type: HTMLObject`
+        
+        (*Note: The image indicates a software interface with a navigation tree on the top and properties of a selected object at the bottom. Selected object is `Add`. The properties are for an object of class 'Selenium' and type 'HTMLObject'. *)
 
 The RVL editor knows how to handle such a variable and provides necessary hints to choose an action for it:
 
-![Variable Action](./img/Variables_variable_action.png)
+=== "Screenshot"
+    ![Variable Action](./img/Variables_variable_action.png)
+=== "Transcript"
+    | Flow | Type     | Object     | Action         | ParamName  | ParamType | ParamValue                                 |
+    | ---- | -------- | ---------- | -------------- | ---------- | --------- | ------------------------------------------ |
+    |      | Variable |            |                | EditAuthor | objectid  | HTMLObject                                 |
+    |      | Action   | Navigator  | DOMFindByXpath | xpath      | string    | //td[normalize-space(.)='Charles Dickens'] |
+    |      | Action   | EditAuthor | DoClick        |            |           |                                            |
 
 ## Examples
 
 Variables may be declared as *Local* or *Global*. Declaration may or may not contain initial value
 
-![Variable Declarations](./img/Variables_Declaration.png)
+=== "Screenshot"
+    ![Variable Declarations](./img/Variables_Declaration.png)
+=== "Transcript"
+    | Flow | Type                                                                          | Object | Action | ParamName  | ParamType | ParamValue |
+    | ---- | ----------------------------------------------------------------------------- | ------ | ------ | ---------- | --------- | ---------- |
+    | #    | Declare global variables. If it is assigned earlier then keep its value       |        |        |            |           |            |
+    |      | Variable                                                                      |        | Global | g_bookName |           |            |
+    | #    | Declare global variables and assign its value                                 |        |        |            |           |            |
+    |      | Variable                                                                      |        | Global | g_genre    | string    | NonFiction |
+    | #    | Declare local variable without value with explicit Local keyword              |        |        |            |           |            |
+    |      | Variable                                                                      |        | Local  | Osversion  |           |            |
+    | #    | Declare local variables and assign initial values, use explicit local keyword |        |        |            |           |            |
+    |      | Variable                                                                      |        | Local  | StringVar  | string    | some text  |
+    |      | Variable                                                                      |        | Local  | NumVar     | number    | 35         |
+    |      | Variable                                                                      |        | Local  | BoolVar    | boolean   | false      |
+    | #    | Declare local variable without value                                          |        |        |            |           |            |
+    |      | Variable                                                                      |        |        | Osversion  |           |            |
+    | #    | Declare and assign local variables                                            |        |        |            |           |            |
+    |      | Variable                                                                      |        |        | StringVar  | string    | some text  |
+    |      | Variable                                                                      |        |        | NumVar     | number    | 35         |
+    |      | Variable                                                                      |        |        | BoolVar    | boolean   | false      |
 
 Variables may accept output from the *Action*:
 
-![Variable Output](./img/Variables_Output.png)
+=== "Screenshot"
+    ![Variable Output](./img/Variables_Output.png)
+=== "Transcript"
+    | Flow | Type     | Object | Action       | ParamName | ParamType | ParamValue |
+    | ---- | -------- | ------ | ------------ | --------- | --------- | ---------- |
+    |      | Variable |        | Local        | OsVersion |           |            |
+    |      | Action   | Global | GetOsVersion | Output    |           |            |
+    |      | Output   |        |              |           | variable  | OsVersion  |
+    |      |          |        |              |           |           |            |
 
 Variables may be used as input to the *Action*:
 
-![Variable AsParam](./img/Variables_AsParam.png)
+=== "Screenshot"
+    ![Variable AsParam](./img/Variables_AsParam.png)
+=== "Transcript"
+    | Flow | Type                        | Object | Action  | ParamName | ParamType | ParamValue |
+    | ---- | --------------------------- | ------ | ------- | --------- | --------- | ---------- |
+    | #    | Use variable as a parameter |        |         |           |           |            |
+    |      | Action                      | Tester | Message | message   | variable  | OsVersion  |

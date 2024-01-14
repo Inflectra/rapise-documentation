@@ -155,10 +155,47 @@ All binary conditions with `param2` take 3 rows. Sometimes it is more convenient
 
 Here is the same condition presented in 3 rows (default) and 2 rows (short) form:
 
-![2 row condition syntax](./img/Conditions_2Row.png)
+=== "Screenshot"
+    ![2 row condition syntax](./img/Conditions_2Row.png)
+=== "Transcript"
+    
+    | Flow | Type                     | Object | Action           | ParamName | ParamType | ParamValue |
+    | ---- | ------------------------ | ------ | ---------------- | --------- | --------- | ---------- |
+    | #    | 3 rows condition         |        |                  |           |           |            |
+    | If   | Param                    |        |                  | param1    | string    | TBD        |
+    |      | Condition                |        | param1 == param2 |           |           |            |
+    |      | Param                    |        |                  | param2    | string    | TBD        |
+    | End  | of If                    |        |                  |           |           |            |
+    | #    | Same condition in 2 rows |        |                  |           |           |            |
+    | If   | Param                    |        |                  | param1    | string    | TBD        |
+    |      | Condition                |        | param1 == param2 | param2    | string    | TBD        |
+    | End  | of If                    |        |                  |           |           |            |
+    
 
 2 rows condition syntax together with [If-Else](IfElse.md) may be used to mimic a `switch` statement:
 
-![IfElse_Switch](./img/Conditions_IfElseSwitch.png)
+=== "Screenshot"
+    ![IfElse_Switch](./img/Conditions_IfElseSwitch.png)
+=== "Transcript"
+    | Flow   | Type                                | Object | Action           | ParamName | ParamType | ParamValue |
+    | ------ | ----------------------------------- | ------ | ---------------- | --------- | --------- | ---------- |
+    | #      | Global variable, assigned elsewhere |        |                  |           |           |            |
+    |        | Variable                            |        | Global           | Direction |           |            |
+    | If     | Param                               |        |                  | param1    | variable  | Direction  |
+    |        | Condition                           |        | param1 == param2 |           |           |            |
+    |        | Param                               |        |                  | param2    | string    | Up         |
+    | #      | Case 'Up'                           |        |                  |           |           |            |
+    | ElseIf | Param                               |        |                  | param1    | variable  | Direction  |
+    |        | Condition                           |        | param1 == param2 |           |           |            |
+    |        | Param                               |        |                  | param2    | string    | Down       |
+    | #      | Case 'Down'                         |        |                  |           |           |            |
+    | ElseIf | Param                               |        |                  | param1    | variable  | Direction  |
+    |        | Condition                           |        | param1 == param2 | param2    | string    | Left |
+    | #      | Case 'Left'                         |        |                  |           |           |            |
+    | ElseIf | Param                               |        |                  | param1    | variable  | Direction  |
+    |        | Condition                           |        | param1 == param2 |           |           |            |
+    |        | Param                               |        |                  | param2    | string    | Right      |
+    | #      | Case 'Right'                        |        |                  |           |           |            |
+    | End    | of ElseIf                           |        |                  |           |           |            |
 
 If there is an `Action` result used instead of `param` then it is recommended to first save it to the [Variable](Variables.md).

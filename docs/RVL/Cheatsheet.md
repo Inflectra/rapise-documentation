@@ -1,6 +1,6 @@
-# RVL Cheatsheet
+# RVL Quick Reference Guide
 
-RVL script is a table with 7 columns (Flow, Type, Object, Action, ParamName, ParamType, ParamValue). Each RVL script contains a bunch RVL operations stored in this table. Operation is one of: Action, Comment, Variable, Loop, Map, empty row etc. Example operations are listed below in this section.
+An RVL script is structured as a table with seven columns: Flow, Type, Object, Action, ParamName, ParamType, and ParamValue. Each RVL script comprises numerous RVL operations, which are stored within this table. An operation can be an Action, Comment, Variable, Loop, Map, an empty row, among others. Examples of these operations can be found in the subsequent section of this guide.
 
 ## Empty RVL
 
@@ -36,8 +36,7 @@ var MyVar = "TBD"
 JS Representation of this RVL:
 
 ```javascript
-if(typeof(MyVar)=='undefined')
-    MyVar = "TBD"
+if(typeof(MyVar)=='undefined') MyVar = "TBD"
 ```
 
 ## RVL Map with local data, contains 4 columns (Col,Col1, COl2, Col3)
@@ -50,7 +49,6 @@ if(typeof(MyVar)=='undefined')
 |      | r2                      | r21    | r22    | r23       |           |            |
 | #    | Add more rows if needed |        |        |           |           |            |
 | End  | of Map                  |        |        |           |           |            |
-
 
 ## RVL Map - read values from excel spreadsheet
 
@@ -116,17 +114,17 @@ if( "TBD" == "TBD" )
 
 ## Conditional If-Else
 
-| Flow | Type         | Object | Action | ParamName        | ParamType | ParamValue |
-| ---- | ------------ | ------ | ------ | ---------------- | --------- | ---------- |
-| If   | Param        |        |        | param1           | string    | TBD        |
-|      | Condition    |        |        | param1 == param2 |           |            |
-|      | Param        |        | param2 | string           | TBD       |            |
-| #    | If actions   |        |        |                  |           |            |
-|      |              |        |        |                  |           |            |
-| Else |              |        |        |                  |           |            |
-| #    | Else actions |        |        |                  |           |            |
-|      |              |        |        |                  |           |            |
-| End  | of Else      |        |        |                  |           |            |
+| Flow | Type         | Object | Action           | ParamName | ParamType | ParamValue |
+| ---- | ------------ | ------ | ---------------- | --------- | --------- | ---------- |
+| If   | Param        |        |                  | param1    | string    | TBD        |
+|      | Condition    |        | param1 == param2 |           |           |            |
+|      | Param        |        |                  | param2    | string    | TBD        |
+| #    | If actions   |        |                  |           |           |            |
+|      |              |        |                  |           |           |            |
+| Else |              |        |                  |           |           |            |
+| #    | Else actions |        |                  |           |           |            |
+|      |              |        |                  |           |           |            |
+| End  | of Else      |        |                  |           |           |            |
 
 JS Representation of this RVL:
 
@@ -167,6 +165,7 @@ if( "TBD1" == "TBD2" )
 ```
 
 ## Multiline comment
+
 | Flow | Type                                 | Object | Action | ParamName | ParamType | ParamValue |
 | ---- | ------------------------------------ | ------ | ------ | --------- | --------- | ---------- |
 | /*   | This is a multi-line comment.        |        |        |           |           |            |

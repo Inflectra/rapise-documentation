@@ -26,14 +26,23 @@ The loop goes through either the map rows or through the map columns depending o
 
 ### Loop Variable
 
-![Variable Loop](./img/Loops_Variable.png)
+=== "Screenshot"
+    ![Variable Loop](./img/Loops_Variable.png)
+=== "Transcript"
+    | Flow | Type      | Object | Action | ParamName | ParamType | ParamValue |
+    | ---- | --------- | ------ | ------ | --------- | --------- | ---------- |
+    | Loop | Variable  | i      |        | from      | number    | 1          |
+    |      | Param     |        |        | to        | number    | 10         |
+    | #    | Loop body |        |        |           |           |            |
+    | End  |           |        |        |           |           |            |
 
-| Flow | Type         | Object    | Action | ParamName | ParamType | ParamValue |
-| ---- | ------------ | --------- | ------ | --------- | --------- | ---------- |
-| Loop | **Variable** | *VarName* |        | `from`    | number    | 1          |
-|      | Param        |           |        | `to`      | number    | 10         |
-|      | ...          |           | ...    | ...       | ...       | ...        |
-| End  |              |           |        |           |           |            |
+| Flow | Type         | Object    | Action | ParamName | ParamType | ParamValue   |
+| ---- | ------------ | --------- | ------ | --------- | --------- | ------------ |
+| Loop | **Variable** | *VarName* |        | `from`    | number    | *from value* |
+|      | Param        |           |        | `to`      | number    | *to value*   |
+|      | Param        |           |        | `step`    | number    | *step value* |
+|      | ...          |           | ...    | ...       | ...       | ...          |
+| End  |              |           |        |           |           |              |
 
 Where:
 
@@ -45,6 +54,15 @@ Where:
 
 ### Loop Condition
 
-![Loop with Condition](./img/Loops_Condition.png)
+=== "Screenshot"
+    ![Loop with Condition](./img/Loops_Condition.png)
+=== "Transcript"
+    | Flow | Type      | Object | Action          | ParamName | ParamType | ParamValue |
+    | ---- | --------- | ------ | --------------- | --------- | --------- | ---------- |
+    | Loop | Param     |        |                 | param1    | variable  | ind        |
+    |      | Condition |        | param1 < param2 |           |           |            |
+    |      | Param     |        |                 | param2    | number    | 2          |
+    | #    | Loop body |        |                 |           |           |            |
+    | End  |           |        |                 |           |           |            |
 
-Loop repeats while condition is satisfied (i.e. `while(someCondition)`).
+Loop repeats while condition is satisfied (i.e. `while( param1 < param2 )`).

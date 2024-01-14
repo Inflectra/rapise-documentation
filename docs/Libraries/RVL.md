@@ -59,7 +59,31 @@ Executes specified test in parallel threads passing additional arguments specifi
 * `threadsMap`: The name of the map defining params. 1st column - Thread ID (alphanumeric, i.e. THREAD01), other columns - parameter variables, i.e. column name `g_browserLibrary`, values 'Selenium Chrome', 'Selenium Firefox', etc.
 * **[extraParams]**: Global variable values common for all threads.
 
-![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
+=== "Screenshot"
+    ![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
+=== "Transcript"
+    | Flow | Type     | Object        | Action             | ParamName        | ParamType  | ParamValue                |
+    | ---- | -------- | ------------- | ------------------ | ---------------- | ---------- | ------------------------- |
+    | Map  | Rows     | Users         |                    |                  |            |                           |
+    |      | Thread   | g_loginName   | g_password         | g_name           |            |                           |
+    |      | lib      | librarian     | librarian          | librarian        |            |                           |
+    |      | adm      | administrator | PleaseChange       | administrator    |            |                           |
+    |      | bor      | borrower      | borrower           | borrower         |            |                           |
+    | End  | of Map   |               |                    |                  |            |                           |
+    |      |          |               |                    |                  |            |                           |
+    |      | Variable | Global        |                    | g_browserProfile |            |                           |
+    |      |          |               |                    |                  |            |                           |
+    |      | Action   | Tester        | Message            | message          | string     | Launching MR for Browser: |
+    |      | Param    |               |                    | message          | variable   | g_browserProfile          |
+    |      |          |               |                    |                  |            |                           |
+    |      | Action   | RVL           | DoPlayTestParallel | sstestPath       | string     | MassLoginsTest.sstest     |
+    |      | Param    |               |                    | threadsMap       | expression | Users                     |
+    |      | Param    |               |                    | g_browserLibrary | variable   | g_browserProfile          |
+    |      | Param    |               |                    | g_entryPointName | string     | RVLSpecialEntryPoint      |
+    |      | Param    |               |                    | g_rvlScriptSheet | string     | Login                     |
+    |      |          |               |                    |                  |            |                           |
+
+    In this example **extraParams** are: `g_browserLibrary`, `g_entryPointName`, `g_rvlScriptSheet`.
 
 ### See Also
 
@@ -112,7 +136,19 @@ Remap dropdown value from one list to another
 
 Example. Suppose we have the following definitions of dropdowns:
 
-![States Dropdown](../RVL/img/RVL_GetDropdownValue_states.png)
+=== "Screenshot"
+    ![States Dropdown](../RVL/img/RVL_GetDropdownValue_states.png)
+=== "Transcript"
+    | Functions.SetState.stateName | stateCode |
+    | ---------------------------- | --------- |
+    | Alabama                      | AL        |
+    | Alaska                       | AK        |
+    | Arizona                      | AZ        |
+    | Arkansas                     | AR        |
+    | California                   | CA        |
+    | Colorado                     | CO        |
+    | Connecticut                  | CT        |
+    | Delaware                     | DE        |
 
 Then the call
 
