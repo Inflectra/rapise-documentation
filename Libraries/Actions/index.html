@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/Actions/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11446,7 +11428,7 @@
 <p><a name="Build"></a>    </p>
 <h4 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h4>
 <p>Builds the sequence of actions.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Build</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">KeyDown</span><span class="p">(</span><span class="s2">&quot;Shift&quot;</span><span class="p">).</span><span class="nx">Click</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">KeyUp</span><span class="p">(</span><span class="s2">&quot;Shift&quot;</span><span class="p">).</span><span class="nx">Build</span><span class="p">().</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
@@ -11455,7 +11437,7 @@
 <h4 id="click">Click<a class="headerlink" href="#click" title="Permanent link">&para;</a></h4>
 <p>Clicks the mouse on the specified element. 
 If no element is specified clicks the mouse at the last known mouse coordinates.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Click</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">Click</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11481,7 +11463,7 @@ If no element is specified clicks the mouse at the last known mouse coordinates.
 <h4 id="clickandhold">ClickAndHold<a class="headerlink" href="#clickandhold" title="Permanent link">&para;</a></h4>
 <p>Clicks and holds the mouse button down on the specified element.
 If no element is specified clicks and holds the mouse button at the last known mouse coordinates.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">ClickAndHold</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">ClickAndHold</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11507,7 +11489,7 @@ If no element is specified clicks and holds the mouse button at the last known m
 <h4 id="contextclick">ContextClick<a class="headerlink" href="#contextclick" title="Permanent link">&para;</a></h4>
 <p>Right-clicks the mouse on the specified element.
 If no element is specified right-clicks the mouse at the last known mouse coordinates.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">ContextClick</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">ContextClick</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11533,7 +11515,7 @@ If no element is specified right-clicks the mouse at the last known mouse coordi
 <h4 id="doubleclick">DoubleClick<a class="headerlink" href="#doubleclick" title="Permanent link">&para;</a></h4>
 <p>Double-clicks the mouse on the specified element.
 If no element is specified double-clicks the mouse at the last known mouse coordinates.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoubleClick</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">DoubleClick</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11558,7 +11540,7 @@ If no element is specified double-clicks the mouse at the last known mouse coord
 <p><a name="DragAndDrop"></a>    </p>
 <h4 id="draganddrop">DragAndDrop<a class="headerlink" href="#draganddrop" title="Permanent link">&para;</a></h4>
 <p>Performs a drag-and-drop operation from one element to another.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DragAndDrop</span><span class="p">(</span><span class="nx">source</span><span class="p">,</span><span class="w"> </span><span class="nx">target</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">DragAndDrop</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">,</span><span class="nx">target</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11588,7 +11570,7 @@ If no element is specified double-clicks the mouse at the last known mouse coord
 <p><a name="DragAndDropToOffset"></a>    </p>
 <h4 id="draganddroptooffset">DragAndDropToOffset<a class="headerlink" href="#draganddroptooffset" title="Permanent link">&para;</a></h4>
 <p>Performs a drag-and-drop operation on one element to a specified offset.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DragAndDropToOffset</span><span class="p">(</span><span class="nx">source</span><span class="p">,</span><span class="w"> </span><span class="nx">offsetX</span><span class="p">,</span><span class="w"> </span><span class="nx">offsetY</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">DragAndDropToOffset</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11624,7 +11606,7 @@ If no element is specified double-clicks the mouse at the last known mouse coord
 <h4 id="keydown">KeyDown<a class="headerlink" href="#keydown" title="Permanent link">&para;</a></h4>
 <p>Sends a modifier key down message to the specified element in the browser.
 If no element is specified sends a modifier key down message to the browser.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">KeyDown</span><span class="p">(</span><span class="nx">theKey</span><span class="p">,</span><span class="w"> </span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">KeyDown</span><span class="p">(</span><span class="s2">&quot;Shift&quot;</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11655,7 +11637,7 @@ If no element is specified sends a modifier key down message to the browser.</p>
 <h4 id="keyup">KeyUp<a class="headerlink" href="#keyup" title="Permanent link">&para;</a></h4>
 <p>Sends a modifier key up message to the specified element in the browser.
 If no element is specified sends a modifier key up message to the browser.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">KeyUp</span><span class="p">(</span><span class="nx">theKey</span><span class="p">,</span><span class="w"> </span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">KeyUp</span><span class="p">(</span><span class="s2">&quot;Shift&quot;</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11685,7 +11667,7 @@ If no element is specified sends a modifier key up message to the browser.</p>
 <p><a name="MoveByOffset"></a>    </p>
 <h4 id="movebyoffset">MoveByOffset<a class="headerlink" href="#movebyoffset" title="Permanent link">&para;</a></h4>
 <p>Moves the mouse to the specified offset of the last known mouse coordinates.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">MoveByOffset</span><span class="p">(</span><span class="nx">offsetX</span><span class="p">,</span><span class="w"> </span><span class="nx">offsetY</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">MoveByOffset</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="mf">100</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11716,7 +11698,7 @@ If no element is specified sends a modifier key up message to the browser.</p>
 <h4 id="movetoelement">MoveToElement<a class="headerlink" href="#movetoelement" title="Permanent link">&para;</a></h4>
 <p>Moves the mouse to the specified offset of the top-left corner of the specified element.
 If offset is not specified moves the mouse to the specified element.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">MoveToElement</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="nx">offsetX</span><span class="p">,</span><span class="w"> </span><span class="nx">offsetY</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">MoveByOffset</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">,</span><span class="mf">100</span><span class="p">,</span><span class="mf">100</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11751,14 +11733,14 @@ If offset is not specified moves the mouse to the specified element.</p>
 <p><a name="Perform"></a>    </p>
 <h4 id="perform">Perform<a class="headerlink" href="#perform" title="Permanent link">&para;</a></h4>
 <p>Performs the currently built action.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Perform</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">KeyDown</span><span class="p">(</span><span class="s2">&quot;Alt&quot;</span><span class="p">).</span><span class="nx">DoubleClick</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">KeyUp</span><span class="p">(</span><span class="s2">&quot;Alt&quot;</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><a name="see.also.actions.perform"></a></p>
 <p><a name="Release"></a>    </p>
 <h4 id="release">Release<a class="headerlink" href="#release" title="Permanent link">&para;</a></h4>
 <p>Releases the mouse button on the specified element.
 If no element is specified releases the mouse button at the last known mouse coordinates.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Release</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">Release</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11784,7 +11766,7 @@ If no element is specified releases the mouse button at the last known mouse coo
 <h4 id="sendkeys">SendKeys<a class="headerlink" href="#sendkeys" title="Permanent link">&para;</a></h4>
 <p>Sends a sequence of keystrokes to the specified element in the browser.
 If no element is specified sends a sequence of keystrokes to the browser.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SendKeys</span><span class="p">(</span><span class="nx">keysToSend</span><span class="p">,</span><span class="w"> </span><span class="nx">el</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">SendKeys</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span><span class="nx">obj</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11915,7 +11897,7 @@ If no element is specified sends a sequence of keystrokes to the browser.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

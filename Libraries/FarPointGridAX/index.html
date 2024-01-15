@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/FarPointGridAX/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11661,6 +11643,8 @@
 </table>
 <p>Type: array</p>
 <p>Accessors: GetCellComboList</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetCellComboList</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">col</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="CellInfo"></a></p>
 <h4 id="cellinfo">CellInfo<a class="headerlink" href="#cellinfo" title="Permanent link">&para;</a></h4>
 <p>Returns object with following fields.</p>
@@ -11743,16 +11727,22 @@ col
 </table>
 <p>Type: object</p>
 <p>Accessors: GetCellInfo</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetCellInfo</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">col</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="ColumnCount"></a></p>
 <h4 id="columncount">ColumnCount<a class="headerlink" href="#columncount" title="Permanent link">&para;</a></h4>
 <p>Number of columns in the grid.</p>
 <p>Type: number</p>
 <p>Accessors: GetColumnCount</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetColumnCount</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="ColumnHeaders"></a></p>
 <h4 id="columnheaders">ColumnHeaders<a class="headerlink" href="#columnheaders" title="Permanent link">&para;</a></h4>
 <p>Get array of column captions.</p>
 <p>Type: array</p>
 <p>Accessors: GetColumnHeaders</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetColumnHeaders</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="ColumnIndex"></a></p>
 <h4 id="columnindex">ColumnIndex<a class="headerlink" href="#columnindex" title="Permanent link">&para;</a></h4>
 <p>Get column index by name.</p>
@@ -11775,6 +11765,8 @@ col
 </table>
 <p>Type: number</p>
 <p>Accessors: GetColumnIndex</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetColumnIndex</span><span class="p">(</span><span class="nx">colName</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="ColumnInfo"></a></p>
 <h4 id="columninfo">ColumnInfo<a class="headerlink" href="#columninfo" title="Permanent link">&para;</a></h4>
 <p>Returns object with following fields.</p>
@@ -11807,6 +11799,8 @@ Visible
 </table>
 <p>Type: object</p>
 <p>Accessors: GetColumnInfo</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetColumnInfo</span><span class="p">(</span><span class="nx">col</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="GridInfo"></a></p>
 <h4 id="gridinfo">GridInfo<a class="headerlink" href="#gridinfo" title="Permanent link">&para;</a></h4>
 <p>Returns object with following fields.</p>
@@ -11838,16 +11832,22 @@ LeftCol
 
 <p>Type: object</p>
 <p>Accessors: GetGridInfo</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetGridInfo</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="RowCount"></a></p>
 <h4 id="rowcount">RowCount<a class="headerlink" href="#rowcount" title="Permanent link">&para;</a></h4>
 <p>Number of rows in the table.</p>
 <p>Type: number</p>
 <p>Accessors: GetRowCount</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetRowCount</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="RowHeaders"></a></p>
 <h4 id="rowheaders">RowHeaders<a class="headerlink" href="#rowheaders" title="Permanent link">&para;</a></h4>
 <p>Get array of row captions.</p>
 <p>Type: array</p>
 <p>Accessors: GetRowHeaders</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetRowHeaders</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="RowInfo"></a></p>
 <h4 id="rowinfo">RowInfo<a class="headerlink" href="#rowinfo" title="Permanent link">&para;</a></h4>
 <p>Returns object with following fields.</p>
@@ -11896,6 +11896,8 @@ LeftCol
 </table>
 <p>Type: object</p>
 <p>Accessors: GetRowInfo</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetRowInfo</span><span class="p">(</span><span class="nx">row</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="SelectedCells"></a></p>
 <h4 id="selectedcells">SelectedCells<a class="headerlink" href="#selectedcells" title="Permanent link">&para;</a></h4>
 <p>Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells.</p>
@@ -11928,21 +11930,33 @@ LeftCol
 </table>
 <p>Type: string</p>
 <p>Accessors: GetSelectedCells</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetSelectedCells</span><span class="p">(</span><span class="nx">asArray</span><span class="p">,</span><span class="w"> </span><span class="nx">rowcolSep</span><span class="p">,</span><span class="w"> </span><span class="nx">cellSep</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="SelectedColumn"></a></p>
 <h4 id="selectedcolumn">SelectedColumn<a class="headerlink" href="#selectedcolumn" title="Permanent link">&para;</a></h4>
 <p>Index of the selected column.</p>
 <p>Type: number</p>
 <p>Accessors: GetSelectedColumn, SetSelectedColumn</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetSelectedColumn</span><span class="p">()</span>
+
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">SetSelectedColumn</span><span class="p">(</span><span class="nx">col</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="SelectedRow"></a></p>
 <h4 id="selectedrow">SelectedRow<a class="headerlink" href="#selectedrow" title="Permanent link">&para;</a></h4>
 <p>Index of the selected row.</p>
 <p>Type: number</p>
 <p>Accessors: GetSelectedRow, SetSelectedRow</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetSelectedRow</span><span class="p">()</span>
+
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">SetSelectedRow</span><span class="p">(</span><span class="nx">row</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="SelectedRowsCount"></a></p>
 <h4 id="selectedrowscount">SelectedRowsCount<a class="headerlink" href="#selectedrowscount" title="Permanent link">&para;</a></h4>
 <p>Get number of selected rows.</p>
 <p>Type: number</p>
 <p>Accessors: GetSelectedRowsCount</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetSelectedRowsCount</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Text"></a></p>
 <h4 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h4>
 <p>Text of the specified cell.</p>
@@ -11970,13 +11984,17 @@ LeftCol
 </table>
 <p>Type: string</p>
 <p>Accessors: GetText, SetText</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">GetText</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">col</span><span class="p">)</span>
+
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">SetText</span><span class="p">(</span><span class="nx">col</span><span class="p">,</span><span class="w"> </span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span>
+</code></pre></div>
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoActivateCell"></a>    </p>
 <h4 id="doactivatecell">DoActivateCell<a class="headerlink" href="#doactivatecell" title="Permanent link">&para;</a></h4>
 <p>Make specified cell active</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoActivateCell</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">col</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">DoActivateCell</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">col</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12004,7 +12022,7 @@ LeftCol
 <p><a name="DoClearCell"></a>    </p>
 <h4 id="doclearcell">DoClearCell<a class="headerlink" href="#doclearcell" title="Permanent link">&para;</a></h4>
 <p>Clear specified cell range</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClearCell</span><span class="p">(</span><span class="nx">col1</span><span class="p">,</span><span class="w"> </span><span class="nx">row1</span><span class="p">,</span><span class="w"> </span><span class="nx">col2</span><span class="p">,</span><span class="w"> </span><span class="nx">row2</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">DoClearCell</span><span class="p">(</span><span class="nx">col1</span><span class="p">,</span><span class="w"> </span><span class="nx">row1</span><span class="p">,</span><span class="w"> </span><span class="nx">col2</span><span class="p">,</span><span class="w"> </span><span class="nx">row2</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12042,7 +12060,7 @@ LeftCol
 <p><a name="DoClickCell"></a>    </p>
 <h4 id="doclickcell">DoClickCell<a class="headerlink" href="#doclickcell" title="Permanent link">&para;</a></h4>
 <p>Clicks the specified cell</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">col</span><span class="p">,</span><span class="w"> </span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">clickType</span><span class="p">,</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="nx">col</span><span class="p">,</span><span class="w"> </span><span class="nx">row</span><span class="p">,</span><span class="w"> </span><span class="nx">clickType</span><span class="p">,</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12087,7 +12105,7 @@ LeftCol
 <p><a name="DoExportGrid"></a>    </p>
 <h4 id="doexportgrid">DoExportGrid<a class="headerlink" href="#doexportgrid" title="Permanent link">&para;</a></h4>
 <p>Save Grid data to file</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoExportGrid</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">DoExportGrid</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12115,7 +12133,7 @@ LeftCol
 <p><a name="DoFullText"></a>    </p>
 <h4 id="dofulltext">DoFullText<a class="headerlink" href="#dofulltext" title="Permanent link">&para;</a></h4>
 <p>Return whole grid as text</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoFullText</span><span class="p">(</span><span class="nx">saveToFile</span><span class="p">,</span><span class="w"> </span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeFarPointGridAX&#39;</span><span class="p">).</span><span class="nx">DoFullText</span><span class="p">(</span><span class="nx">saveToFile</span><span class="p">,</span><span class="w"> </span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12244,7 +12262,7 @@ LeftCol
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

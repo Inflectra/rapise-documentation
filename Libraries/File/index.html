@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/File/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11481,7 +11463,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="Append"></a>    </p>
 <h4 id="append">Append<a class="headerlink" href="#append" title="Permanent link">&para;</a></h4>
 <p>Appends text to a file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Append</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Append</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11509,7 +11491,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="Copy"></a>    </p>
 <h4 id="copy">Copy<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h4>
 <p>Copy file <code>srcFileName</code> to <code>dstFileOrFolder</code>. If destination file exists, it gets overwritten. Requires Rapise 8.0+.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Copy</span><span class="p">(</span><span class="nx">srcFileName</span><span class="p">,</span><span class="w"> </span><span class="nx">dstFileOrFolder</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Copy</span><span class="p">(</span><span class="nx">srcFileName</span><span class="p">,</span><span class="w"> </span><span class="nx">dstFileOrFolder</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11539,7 +11521,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="CreateFolder"></a>    </p>
 <h4 id="createfolder">CreateFolder<a class="headerlink" href="#createfolder" title="Permanent link">&para;</a></h4>
 <p>Creates a folder.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">CreateFolder</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">CreateFolder</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11562,7 +11544,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="Delete"></a>    </p>
 <h4 id="delete">Delete<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h4>
 <p>Deletes a file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Delete</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Delete</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11585,7 +11567,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="DeleteFolder"></a>    </p>
 <h4 id="deletefolder">DeleteFolder<a class="headerlink" href="#deletefolder" title="Permanent link">&para;</a></h4>
 <p>Deletes a folder.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DeleteFolder</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">DeleteFolder</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11608,7 +11590,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="Exists"></a>    </p>
 <h4 id="exists">Exists<a class="headerlink" href="#exists" title="Permanent link">&para;</a></h4>
 <p>Checks if file exists or not.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Exists</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Exists</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11644,7 +11626,7 @@ Result may be converted to array like that:
 var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 </pre>
 
-<div class="highlight"><pre><span></span><code><span class="nx">Find</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">searchPattern</span><span class="p">,</span><span class="w"> </span><span class="nx">recursive</span><span class="p">,</span><span class="w"> </span><span class="nx">firstOnly</span><span class="p">,</span><span class="w"> </span><span class="nx">files</span><span class="p">,</span><span class="w"> </span><span class="nx">folders</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Find</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">searchPattern</span><span class="p">,</span><span class="w"> </span><span class="nx">recursive</span><span class="p">,</span><span class="w"> </span><span class="nx">firstOnly</span><span class="p">,</span><span class="w"> </span><span class="nx">files</span><span class="p">,</span><span class="w"> </span><span class="nx">folders</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11694,7 +11676,7 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 <p><a name="FolderExists"></a>    </p>
 <h4 id="folderexists">FolderExists<a class="headerlink" href="#folderexists" title="Permanent link">&para;</a></h4>
 <p>Checks if folder exists.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11719,7 +11701,7 @@ var arrFiles = File.Find("c:/Temp", "*.txt", true).split('\n');
 <p><a name="FolderInfo"></a>    </p>
 <h4 id="folderinfo">FolderInfo<a class="headerlink" href="#folderinfo" title="Permanent link">&para;</a></h4>
 <p>Gets information about a folder.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">FolderInfo</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">FolderInfo</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11747,7 +11729,7 @@ e.g. Path, SubFolders and Files enumeration.</p>
 <p>Includes code from a file.
 Normally used together with eval statement, i.e.:
 <code>eval( File.Include('myfile.js') )</code></p>
-<div class="highlight"><pre><span></span><code><span class="nx">Include</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Include</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11774,7 +11756,7 @@ Normally used together with eval statement, i.e.:
 <p>Includes code from a file if it was not included earlier.
 Normally used together with eval statement, i.e.:
 <code>eval( File.IncludeOnce('myfile.js') )</code></p>
-<div class="highlight"><pre><span></span><code><span class="nx">IncludeOnce</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">IncludeOnce</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11799,7 +11781,7 @@ Normally used together with eval statement, i.e.:
 <p><a name="Info"></a>    </p>
 <h4 id="info">Info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h4>
 <p>Gets information about a file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Info</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Info</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11825,7 +11807,7 @@ e.g. DateLastModified, Size, Type, Name, Path.</p>
 <p><a name="Read"></a>    </p>
 <h4 id="read">Read<a class="headerlink" href="#read" title="Permanent link">&para;</a></h4>
 <p>Reads UTF-8 encoded text file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Read</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Read</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11850,7 +11832,7 @@ e.g. DateLastModified, Size, Type, Name, Path.</p>
 <p><a name="ResolvePath"></a>    </p>
 <h4 id="resolvepath">ResolvePath<a class="headerlink" href="#resolvepath" title="Permanent link">&para;</a></h4>
 <p>Finds the file in test folders and calculates its absolute path.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">ResolvePath</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">relTo</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">ResolvePath</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">relTo</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11880,7 +11862,7 @@ e.g. DateLastModified, Size, Type, Name, Path.</p>
 <p><a name="Touch"></a>    </p>
 <h4 id="touch">Touch<a class="headerlink" href="#touch" title="Permanent link">&para;</a></h4>
 <p>Sets file modification time to current time.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Touch</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Touch</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11903,7 +11885,7 @@ e.g. DateLastModified, Size, Type, Name, Path.</p>
 <p><a name="Write"></a>    </p>
 <h4 id="write">Write<a class="headerlink" href="#write" title="Permanent link">&para;</a></h4>
 <p>Writes text file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Write</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">File</span><span class="p">.</span><span class="nx">Write</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12032,7 +12014,7 @@ e.g. DateLastModified, Size, Type, Name, Path.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

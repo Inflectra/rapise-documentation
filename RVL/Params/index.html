@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/RVL/Params/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4123,6 +4093,18 @@
     <li class="md-nav__item">
       <a href="../RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11201,35 +11183,35 @@
 <thead>
 <tr>
 <th>...</th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>...</td>
-<td align="left">text</td>
-<td align="left">string</td>
-<td align="left">John Smith</td>
+<td>text</td>
+<td>string</td>
+<td>John Smith</td>
 </tr>
 <tr>
 <td>...</td>
-<td align="left">x</td>
-<td align="left">number</td>
-<td align="left">5</td>
+<td>x</td>
+<td>number</td>
+<td>5</td>
 </tr>
 <tr>
 <td>...</td>
-<td align="left">y</td>
-<td align="left">number</td>
-<td align="left">7</td>
+<td>y</td>
+<td>number</td>
+<td>7</td>
 </tr>
 <tr>
 <td>...</td>
-<td align="left">forceEvent</td>
-<td align="left">boolean</td>
-<td align="left">true</td>
+<td>forceEvent</td>
+<td>boolean</td>
+<td>true</td>
 </tr>
 </tbody>
 </table>
@@ -11252,12 +11234,13 @@
 <table>
 <thead>
 <tr>
-<th>...</th>
-<th><em>Type</em></th>
-<th>...</th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
@@ -11265,33 +11248,37 @@
 <td>...</td>
 <td>Param</td>
 <td></td>
-<td align="left">text</td>
-<td align="left">string</td>
-<td align="left">John Smith</td>
+<td></td>
+<td>text</td>
+<td>string</td>
+<td>John Smith</td>
 </tr>
 <tr>
 <td>...</td>
 <td>Param</td>
 <td></td>
-<td align="left">x</td>
-<td align="left">number</td>
-<td align="left">5</td>
+<td></td>
+<td>x</td>
+<td>number</td>
+<td>5</td>
 </tr>
 <tr>
 <td>...</td>
 <td>Param</td>
 <td></td>
-<td align="left">y</td>
-<td align="left">number</td>
-<td align="left">7</td>
+<td></td>
+<td>y</td>
+<td>number</td>
+<td>7</td>
 </tr>
 <tr>
 <td>...</td>
 <td>Param</td>
 <td></td>
-<td align="left">forceEvent</td>
-<td align="left">boolean</td>
-<td align="left">true</td>
+<td></td>
+<td>forceEvent</td>
+<td>boolean</td>
+<td>true</td>
 </tr>
 </tbody>
 </table>
@@ -11300,51 +11287,51 @@
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Action</td>
-<td align="left">Tester</td>
-<td align="left">Message</td>
-<td align="left"><strong>message</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left">MyVar1 value:</td>
+<td></td>
+<td>Action</td>
+<td>Tester</td>
+<td>Message</td>
+<td><strong>message</strong></td>
+<td><strong>string</strong></td>
+<td>MyVar1 value:</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>message</strong></td>
-<td align="left"><strong>variable</strong></td>
-<td align="left"><strong>MyVar1</strong></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>message</strong></td>
+<td><strong>variable</strong></td>
+<td><strong>MyVar1</strong></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>message</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left">MyVar2 value:</td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>message</strong></td>
+<td><strong>string</strong></td>
+<td>MyVar2 value:</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>message</strong></td>
-<td align="left"><strong>variable</strong></td>
-<td align="left"><strong>MyVar2</strong></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>message</strong></td>
+<td><strong>variable</strong></td>
+<td><strong>MyVar2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -11355,7 +11342,117 @@
 <h2 id="extra-parameters">Extra Parameters<a class="headerlink" href="#extra-parameters" title="Permanent link">&para;</a></h2>
 <p>Several functions of the <a href="../../Libraries/RVL/">RVL Object</a> support variable parameters (<a href="../RVL_DoPlay/"><code>RVL.DoPlaySheet</code></a>, <a href="../RVL_DoPlay/"><code>RVL.DoPlayScript</code></a>, <a href="../../Libraries/RVL/#setlocatoropts"><code>RVL.SetLocatorOpts</code></a>, <a href="../../Libraries/RVL/#formatstring"><code>RVL.FormatString</code></a>, <a href="../../Libraries/RVL/#doplaytest"><code>RVL.DoPlayTest</code></a>) and <a href="../../Libraries/RVL/#doplaytestparallel"><code>RVL.DoPlayTestParallel</code></a>) support extra parameters.</p>
 <p>Custom parameters added by user manually, by specifying row type <code>Param</code> and assigning any required param name.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Extra Parameters" src="../img/Params_ExtraParams.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>DoPlaySheet</td>
+<td>sheetName</td>
+<td>string</td>
+<td>SheetWithParams</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>User</td>
+<td>string</td>
+<td>ExtUser</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>Password</td>
+<td>string</td>
+<td>ExtPassword</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>OtherVarName</td>
+<td>string</td>
+<td>somevalue</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>DoPlayScript</td>
+<td>scriptPath</td>
+<td>string</td>
+<td>%WORKDIR%\Main.rvl.xlsx</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>sheetName</td>
+<td>string</td>
+<td>SheetWithParams</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>Password</td>
+<td>string</td>
+<td>OnlyPasswordChanged</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>There my be as many extra parameters as needed.</p>
 <h2 id="mixed-rows">Mixed Rows<a class="headerlink" href="#mixed-rows" title="Permanent link">&para;</a></h2>
 <p>In some cases it is convenient to mix parameter cells with an <em>Action</em> or <em>Condition</em>. </p>
@@ -11363,33 +11460,33 @@
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Action</td>
-<td align="left">MyButton</td>
-<td align="left">DoClick</td>
-<td align="left"><strong>x</strong></td>
-<td align="left"><strong>number</strong></td>
-<td align="left"><strong>5</strong></td>
+<td></td>
+<td>Action</td>
+<td>MyButton</td>
+<td>DoClick</td>
+<td><strong>x</strong></td>
+<td><strong>number</strong></td>
+<td><strong>5</strong></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">y</td>
-<td align="left">number</td>
-<td align="left">7</td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>y</td>
+<td>number</td>
+<td>7</td>
 </tr>
 </tbody>
 </table>
@@ -11397,42 +11494,42 @@
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Action</td>
-<td align="left">MyButton</td>
-<td align="left">DoClick</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>Action</td>
+<td>MyButton</td>
+<td>DoClick</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>x</strong></td>
-<td align="left"><strong>number</strong></td>
-<td align="left"><strong>5</strong></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>x</strong></td>
+<td><strong>number</strong></td>
+<td><strong>5</strong></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">y</td>
-<td align="left">number</td>
-<td align="left">7</td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>y</td>
+<td>number</td>
+<td>7</td>
 </tr>
 </tbody>
 </table>
@@ -11440,33 +11537,33 @@
 <table>
 <thead>
 <tr>
-<th align="left">...</th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">param1</td>
-<td align="left">string</td>
-<td align="left">Text1</td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param1</td>
+<td>string</td>
+<td>Text1</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Condition</td>
-<td align="left"></td>
-<td align="left">param1!=param2</td>
-<td align="left"><strong>param2</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><strong>Text2</strong></td>
+<td></td>
+<td>Condition</td>
+<td></td>
+<td>param1!=param2</td>
+<td><strong>param2</strong></td>
+<td><strong>string</strong></td>
+<td><strong>Text2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -11474,49 +11571,132 @@
 <table>
 <thead>
 <tr>
-<th align="left">...</th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">param1</td>
-<td align="left">string</td>
-<td align="left">Text1</td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param1</td>
+<td>string</td>
+<td>Text1</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Condition</td>
-<td align="left"></td>
-<td align="left">param1!=param2</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>Condition</td>
+<td></td>
+<td>param1!=param2</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>param2</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><strong>Text2</strong></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>param2</strong></td>
+<td><strong>string</strong></td>
+<td><strong>Text2</strong></td>
 </tr>
 </tbody>
 </table>
 <p>This allows saving space while keeping same readability. See also <a href="../Conditions/#short-condition-syntax">short condition syntax</a> for real live example of mixed rows usage.</p>
 <h2 id="map-params">Map Params<a class="headerlink" href="#map-params" title="Permanent link">&para;</a></h2>
 <p>If map is defined in the script it may be used directly as a parameter. <em>ParamType</em> should be set to Map Name and <em>ParamValue</em> is a column (or row) name:</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Map Param" src="../img/Params_MapValue.png" /></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Rows</td>
+<td>Logins</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Login</td>
+<td>Password</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>John</td>
+<td>pass1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Sarah</td>
+<td>pass2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td>of Map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Tester</td>
+<td>Message</td>
+<td>message</td>
+<td>Logins</td>
+<td>Password</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
                 
               
               
@@ -11619,7 +11799,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

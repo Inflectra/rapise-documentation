@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/MobileWebObject/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11593,31 +11575,43 @@
 </table>
 <p>Type: string</p>
 <p>Accessors: GetChildAt</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetChildAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="ChildCount"></a></p>
 <h4 id="childcount">ChildCount<a class="headerlink" href="#childcount" title="Permanent link">&para;</a></h4>
 <p>Number of child items.</p>
 <p>Type: number</p>
 <p>Accessors: GetChildCount</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetChildCount</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Class"></a></p>
 <h4 id="class">Class<a class="headerlink" href="#class" title="Permanent link">&para;</a></h4>
 <p>Class name of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetClass</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetClass</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Height"></a></p>
 <h4 id="height">Height<a class="headerlink" href="#height" title="Permanent link">&para;</a></h4>
 <p>Height of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetHeight</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetHeight</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Name"></a></p>
 <h4 id="name">Name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
 <p>Name of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetName</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetName</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="ObjectType"></a></p>
 <h4 id="objecttype">ObjectType<a class="headerlink" href="#objecttype" title="Permanent link">&para;</a></h4>
 <p>Type of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetObjectType</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetObjectType</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Property"></a></p>
 <h4 id="property">Property<a class="headerlink" href="#property" title="Permanent link">&para;</a></h4>
 <p>Value of a named property of the object.</p>
@@ -11640,33 +11634,43 @@
 </table>
 <p>Type: string</p>
 <p>Accessors: GetProperty</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="Text"></a></p>
 <h4 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h4>
 <p>Text of the object, 'false' if text can not be read.</p>
 <p>Type: string</p>
 <p>Accessors: GetText</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetText</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Width"></a></p>
 <h4 id="width">Width<a class="headerlink" href="#width" title="Permanent link">&para;</a></h4>
 <p>Width of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetWidth</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetWidth</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="X"></a></p>
 <h4 id="x">X<a class="headerlink" href="#x" title="Permanent link">&para;</a></h4>
 <p>X-coordinate of the top left corner of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetX</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetX</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Y"></a></p>
 <h4 id="y">Y<a class="headerlink" href="#y" title="Permanent link">&para;</a></h4>
 <p>Y-coordinate of the top left corner of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetY</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">GetY</span><span class="p">()</span>
+</code></pre></div>
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoAction"></a>    </p>
 <h4 id="doaction">DoAction<a class="headerlink" href="#doaction" title="Permanent link">&para;</a></h4>
 <p>Clicks in the middle of the control.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAction</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
@@ -11674,7 +11678,7 @@
 <p><a name="DoClear"></a>    </p>
 <h4 id="doclear">DoClear<a class="headerlink" href="#doclear" title="Permanent link">&para;</a></h4>
 <p>Clears the text of the object.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClear</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">DoClear</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
@@ -11682,7 +11686,7 @@
 <p><a name="DoClick"></a>    </p>
 <h4 id="doclick">DoClick<a class="headerlink" href="#doclick" title="Permanent link">&para;</a></h4>
 <p>Clicks in the middle of the control.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClick</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
@@ -11690,7 +11694,7 @@
 <p><a name="DoDoubleClick"></a>    </p>
 <h4 id="dodoubleclick">DoDoubleClick<a class="headerlink" href="#dodoubleclick" title="Permanent link">&para;</a></h4>
 <p>Double clicks in the middle of the control.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoDoubleClick</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">DoDoubleClick</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
@@ -11698,7 +11702,7 @@
 <p><a name="DoEnsureVisible"></a>    </p>
 <h4 id="doensurevisible">DoEnsureVisible<a class="headerlink" href="#doensurevisible" title="Permanent link">&para;</a></h4>
 <p>Ensure that a child item with the specified text is visible on screen.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoEnsureVisible</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">DoEnsureVisible</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if success, 'false' otherwise.</p>
@@ -11706,7 +11710,7 @@
 <p><a name="DoSendKeys"></a>    </p>
 <h4 id="dosendkeys">DoSendKeys<a class="headerlink" href="#dosendkeys" title="Permanent link">&para;</a></h4>
 <p>Send a text to the object in character-by-character mode.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeMobileWebObject&#39;</span><span class="p">).</span><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11832,7 +11836,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

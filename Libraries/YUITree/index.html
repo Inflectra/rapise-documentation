@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/YUITree/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11478,38 +11460,50 @@
 <p>Children count of the current node in the tree.</p>
 <p>Type: number</p>
 <p>Accessors: GetChildrenCount</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">GetChildrenCount</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Expanded"></a></p>
 <h4 id="expanded">Expanded<a class="headerlink" href="#expanded" title="Permanent link">&para;</a></h4>
 <p>Expanded state of the current node. Use DoFindNode to set current node. 0 - if the node is collapsed, 1 - if the node is expanded, 2 - if the node is a leaf.</p>
 <p>Type: number</p>
 <p>Accessors: GetExpanded</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">GetExpanded</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="NodeIndex"></a></p>
 <h4 id="nodeindex">NodeIndex<a class="headerlink" href="#nodeindex" title="Permanent link">&para;</a></h4>
 <p>Zero based index of the current node. Use DoFindNode to set current node.</p>
 <p>Type: number</p>
 <p>Accessors: GetNodeIndex</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">GetNodeIndex</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="NodeText"></a></p>
 <h4 id="nodetext">NodeText<a class="headerlink" href="#nodetext" title="Permanent link">&para;</a></h4>
 <p>Text of the current node. Use DoFindNode to set current node.</p>
 <p>Type: string</p>
 <p>Accessors: GetNodeText</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">GetNodeText</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Selected"></a></p>
 <h4 id="selected">Selected<a class="headerlink" href="#selected" title="Permanent link">&para;</a></h4>
 <p>Selected state of the current node. Use DoFindNode to set current node. 'true' if the node is selected, 'false' otherwise.</p>
 <p>Type: boolean</p>
 <p>Accessors: GetSelected</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">GetSelected</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="SelectedNodeText"></a></p>
 <h4 id="selectednodetext">SelectedNodeText<a class="headerlink" href="#selectednodetext" title="Permanent link">&para;</a></h4>
 <p>Text of the selected node.</p>
 <p>Type: string</p>
 <p>Accessors: GetSelectedNodeText</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">GetSelectedNodeText</span><span class="p">()</span>
+</code></pre></div>
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoClickNode"></a>    </p>
 <h4 id="doclicknode">DoClickNode<a class="headerlink" href="#doclicknode" title="Permanent link">&para;</a></h4>
 <p>Clicks specific node in the tree.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClickNode</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">DoClickNode</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11544,7 +11538,7 @@
 <p><a name="DoCollapse"></a>    </p>
 <h4 id="docollapse">DoCollapse<a class="headerlink" href="#docollapse" title="Permanent link">&para;</a></h4>
 <p>Collapses specific node in the tree.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoCollapse</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">DoCollapse</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11579,7 +11573,7 @@
 <p><a name="DoExpand"></a>    </p>
 <h4 id="doexpand">DoExpand<a class="headerlink" href="#doexpand" title="Permanent link">&para;</a></h4>
 <p>Expands specific node in the tree.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoExpand</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">DoExpand</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11614,7 +11608,7 @@
 <p><a name="DoFindChild"></a>    </p>
 <h4 id="dofindchild">DoFindChild<a class="headerlink" href="#dofindchild" title="Permanent link">&para;</a></h4>
 <p>Finds child node by its path from the current node and remembers it as the current node. If current node is not set then Root node is used.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoFindChild</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">,</span><span class="w"> </span><span class="nx">expand</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">DoFindChild</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">,</span><span class="w"> </span><span class="nx">expand</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11654,7 +11648,7 @@
 <p><a name="DoFindNode"></a>    </p>
 <h4 id="dofindnode">DoFindNode<a class="headerlink" href="#dofindnode" title="Permanent link">&para;</a></h4>
 <p>Searches for specific node in the tree and remembers it as the current node.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoFindNode</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">,</span><span class="w"> </span><span class="nx">expand</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">DoFindNode</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">pathType</span><span class="p">,</span><span class="w"> </span><span class="nx">expand</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11694,7 +11688,7 @@
 <p><a name="DoGetPath"></a>    </p>
 <h4 id="dogetpath">DoGetPath<a class="headerlink" href="#dogetpath" title="Permanent link">&para;</a></h4>
 <p>Returns path to the current node.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoGetPath</span><span class="p">(</span><span class="nx">pathType</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeYUITree&#39;</span><span class="p">).</span><span class="nx">DoGetPath</span><span class="p">(</span><span class="nx">pathType</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11825,7 +11819,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

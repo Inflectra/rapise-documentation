@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/Tester/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -12413,7 +12395,7 @@ You do not need to record or learn this object, it is always automatically avail
 <p><a name="AddImageToReport"></a>    </p>
 <h4 id="addimagetoreport">AddImageToReport<a class="headerlink" href="#addimagetoreport" title="Permanent link">&para;</a></h4>
 <p>Adds image to the report.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AddImageToReport</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">caption</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AddImageToReport</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">caption</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12443,7 +12425,7 @@ You do not need to record or learn this object, it is always automatically avail
 <p>Checks if condition is 'true' and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Assert</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">condition</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">condition</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12483,7 +12465,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>str</code> contains <code>substr</code> somewhere and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12528,7 +12510,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks that <code>str</code> has <code>substr</code> in the end and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertEndsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEndsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12573,7 +12555,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if obj1 equals to obj2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12618,7 +12600,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>false</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12658,7 +12640,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 greater than n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertGreater</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertGreater</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12703,7 +12685,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 greater or equal than n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertGreaterOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertGreaterOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12748,7 +12730,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertImage</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">img1</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertImage</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">img1</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12793,7 +12775,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 is less than n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertLess</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertLess</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12838,7 +12820,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 differs from n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertLessOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertLessOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12883,7 +12865,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks that <code>str</code> does not contain <code>substr</code> anywhere and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNotContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertNotContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12928,7 +12910,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if obj1 differs from obj2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNotEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertNotEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12973,7 +12955,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>NotNull</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13013,7 +12995,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13053,7 +13035,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>null</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13093,7 +13075,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13133,7 +13115,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>str</code> begins with <code>substr</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">AssertStartsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertStartsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13176,7 +13158,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="BeginTest"></a>    </p>
 <h4 id="begintest">BeginTest<a class="headerlink" href="#begintest" title="Permanent link">&para;</a></h4>
 <p>Marks beginning of a test with a given name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">BeginTest</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">optionalParams</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">BeginTest</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">optionalParams</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13214,7 +13196,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="BlockTest"></a>    </p>
 <h4 id="blocktest">BlockTest<a class="headerlink" href="#blocktest" title="Permanent link">&para;</a></h4>
 <p>Stops test execution and exits with Blocked status.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">BlockTest</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">BlockTest</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13237,7 +13219,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="CaptureDesktopImage"></a>    </p>
 <h4 id="capturedesktopimage">CaptureDesktopImage<a class="headerlink" href="#capturedesktopimage" title="Permanent link">&para;</a></h4>
 <p>Captures screenshot of the desktop and adds it to the report.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">CaptureDesktopImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">CaptureDesktopImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13260,7 +13242,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="CaptureObjectImage"></a>    </p>
 <h4 id="captureobjectimage">CaptureObjectImage<a class="headerlink" href="#captureobjectimage" title="Permanent link">&para;</a></h4>
 <p>Captures screenshot of an object and adds it to the report.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">CaptureObjectImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span><span class="w"> </span><span class="nx">objId</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">CaptureObjectImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span><span class="w"> </span><span class="nx">objId</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13288,7 +13270,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="CaptureWindowImage"></a>    </p>
 <h4 id="capturewindowimage">CaptureWindowImage<a class="headerlink" href="#capturewindowimage" title="Permanent link">&para;</a></h4>
 <p>Captures screenshot of an application window matched by title and class and adds it to the report.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">CaptureWindowImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span><span class="w"> </span><span class="nx">windowTitle</span><span class="p">,</span><span class="w"> </span><span class="nx">windowClass</span><span class="p">,</span><span class="w"> </span><span class="nx">bringToFront</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">CaptureWindowImage</span><span class="p">(</span><span class="nx">caption</span><span class="p">,</span><span class="w"> </span><span class="nx">windowTitle</span><span class="p">,</span><span class="w"> </span><span class="nx">windowClass</span><span class="p">,</span><span class="w"> </span><span class="nx">bringToFront</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13326,7 +13308,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="DumpCmdArgsJson"></a>    </p>
 <h4 id="dumpcmdargsjson">DumpCmdArgsJson<a class="headerlink" href="#dumpcmdargsjson" title="Permanent link">&para;</a></h4>
 <p>Dump node.json with all arguments.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DumpCmdArgsJson</span><span class="p">(</span><span class="nx">optNodeJsonPath</span><span class="p">,</span><span class="w"> </span><span class="nx">mkPackageJson</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">DumpCmdArgsJson</span><span class="p">(</span><span class="nx">optNodeJsonPath</span><span class="p">,</span><span class="w"> </span><span class="nx">mkPackageJson</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13354,7 +13336,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p><a name="EndTest"></a>    </p>
 <h4 id="endtest">EndTest<a class="headerlink" href="#endtest" title="Permanent link">&para;</a></h4>
 <p>Marks end of a currently executed test. Calculates test results and performs finalization of test execution.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">EndTest</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">EndTest</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.tester.endtest"></a></p>
 <p><a name="ExpectFailure"></a>    </p>
@@ -13362,7 +13344,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Set Tester to expect a failed assertion with given message or data. When 
 such error happens, it is reported as an expected Passed assertion. Requires Rapise 8.0+.</p>
 <p>When null is passed, all expectations are reset.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">ExpectFailure</span><span class="p">(</span><span class="nx">messageOrData</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">ExpectFailure</span><span class="p">(</span><span class="nx">messageOrData</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13387,7 +13369,7 @@ such error happens, it is reported as an expected Passed assertion. Requires Rap
 <p>If <code>messageOrData</code> is set, checks that given assertion failed at least once.
 If <code>messageOrData</code> is null or empty, checks that all expected failed assertions failed.
 Requires Rapise 8.0+.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">ExpectFailureDone</span><span class="p">(</span><span class="nx">messageOrData</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">ExpectFailureDone</span><span class="p">(</span><span class="nx">messageOrData</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13410,7 +13392,7 @@ Requires Rapise 8.0+.</p>
 <p><a name="FailTest"></a>    </p>
 <h4 id="failtest">FailTest<a class="headerlink" href="#failtest" title="Permanent link">&para;</a></h4>
 <p>Stops test execution and sets it's status to failed.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">FailTest</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">internal</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">FailTest</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">internal</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13442,13 +13424,13 @@ value is the same as Tester.GetTestName. But in cases where one test
 calls another test, Tester.GetEntryTestName will remain equal to
 to the original test case, and GetTestName will change depending on the 
 current test case being executed.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetEntryTestName</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">GetEntryTestName</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.tester.getentrytestname"></a></p>
 <p><a name="GetParam"></a>    </p>
 <h4 id="getparam">GetParam<a class="headerlink" href="#getparam" title="Permanent link">&para;</a></h4>
 <p>Read parameter field passed into the Test function by field name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetParam</span><span class="p">(</span><span class="nx">paramName</span><span class="p">,</span><span class="w"> </span><span class="nx">defaultValue</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">GetParam</span><span class="p">(</span><span class="nx">paramName</span><span class="p">,</span><span class="w"> </span><span class="nx">defaultValue</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13476,7 +13458,7 @@ current test case being executed.</p>
 <p><a name="GetReportAttribute"></a>    </p>
 <h4 id="getreportattribute">GetReportAttribute<a class="headerlink" href="#getreportattribute" title="Permanent link">&para;</a></h4>
 <p>Gets report attribute previously set by PushReportAttribute or SetReportAttribute.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">GetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13499,13 +13481,13 @@ current test case being executed.</p>
 <p><a name="GetTestName"></a>    </p>
 <h4 id="gettestname">GetTestName<a class="headerlink" href="#gettestname" title="Permanent link">&para;</a></h4>
 <p>Returns name of the running test.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetTestName</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">GetTestName</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.tester.gettestname"></a></p>
 <p><a name="GetTestStatus"></a>    </p>
 <h4 id="getteststatus">GetTestStatus<a class="headerlink" href="#getteststatus" title="Permanent link">&para;</a></h4>
 <p>Gets status of currently executed test.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetTestStatus</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">GetTestStatus</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>One of: 
@@ -13529,7 +13511,7 @@ just for information purposes (i.e. it does not affect final test status).</p>
   // The overall test is passed because failed assertion is ignored.
 </pre>
 
-<div class="highlight"><pre><span></span><code><span class="nx">IgnoreStatus</span><span class="p">(</span><span class="nx">ignore</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">IgnoreStatus</span><span class="p">(</span><span class="nx">ignore</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13553,7 +13535,7 @@ just for information purposes (i.e. it does not affect final test status).</p>
 <h4 id="message">Message<a class="headerlink" href="#message" title="Permanent link">&para;</a></h4>
 <p>Saves corresponding Report message.
 Message may contain some additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Message</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13586,7 +13568,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 <p><a name="MessageBox"></a>    </p>
 <h4 id="messagebox">MessageBox<a class="headerlink" href="#messagebox" title="Permanent link">&para;</a></h4>
 <p>Shows message box to user. Use it for verbose and manual testing.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">MessageBox</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">MessageBox</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13611,7 +13593,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 <p>Shows message box with question to the user and checks if user presses "Yes" or "No".
   "Yes" =&gt; "Pass" goes to the report with this message.
   "No" =&gt; "Fail" is reported.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">MessageBoxPrompt</span><span class="p">(</span><span class="nx">question</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">MessageBoxPrompt</span><span class="p">(</span><span class="nx">question</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13634,7 +13616,7 @@ Message may contain some additional data (links, images, comments) set via 'data
 <p><a name="PopReportAttribute"></a>    </p>
 <h4 id="popreportattribute">PopReportAttribute<a class="headerlink" href="#popreportattribute" title="Permanent link">&para;</a></h4>
 <p>Resets an attribute to its previous value. See PushReportAttribute for more information.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">PopReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">PopReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13684,7 +13666,7 @@ another scenario (scenario Login) and then continues its own test actions.</p>
  }
 </pre>
 
-<div class="highlight"><pre><span></span><code><span class="nx">PushReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">PushReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13712,7 +13694,7 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 <p><a name="ResetReportAttribute"></a>    </p>
 <h4 id="resetreportattribute">ResetReportAttribute<a class="headerlink" href="#resetreportattribute" title="Permanent link">&para;</a></h4>
 <p>Removes report attribute previously set by SetReportAttribute.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">ResetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">ResetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13737,7 +13719,7 @@ another scenario (scenario Login) and then continues its own test actions.</p>
 <p>Set persistent attribute. It will be set for all subsequent report items
 (assertions, tests, requirements, and so on). It may be changed by calling
 the ResetReportAttribute function.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SetReportAttribute</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13765,7 +13747,7 @@ the ResetReportAttribute function.</p>
 <p><a name="SoftAssert"></a>    </p>
 <h4 id="softassert">SoftAssert<a class="headerlink" href="#softassert" title="Permanent link">&para;</a></h4>
 <p>Is identical to Tester.Assert. But when an assertion fails, don't stop execution and just record the failure. Later you may call <code>Tester.SoftAssertAll(..)</code> that will stop execution if at least one assertion failed.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssert</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">condition</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssert</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">condition</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13803,7 +13785,7 @@ the ResetReportAttribute function.</p>
 <p><a name="SoftAssertAll"></a>    </p>
 <h4 id="softassertall">SoftAssertAll<a class="headerlink" href="#softassertall" title="Permanent link">&para;</a></h4>
 <p>Fail test if there were any previous failures. This method is designed to be used after one or many calls to <code>Tester.SoftAssert(...)</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertAll</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertAll</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13828,7 +13810,7 @@ the ResetReportAttribute function.</p>
 <p>Checks if <code>str</code> contains <code>substr</code> somewhere and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13873,7 +13855,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks that <code>str</code> has <code>substr</code> in the end and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertEndsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertEndsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13918,7 +13900,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if obj1 equals to obj2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13963,7 +13945,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>false</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertFalse</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14003,7 +13985,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 greater than n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertGreater</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertGreater</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14048,7 +14030,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 greater or equal than n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertGreaterOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertGreaterOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14093,7 +14075,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertImage</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">img1</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertImage</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">img1</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14138,7 +14120,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 is less than n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertLess</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertLess</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14183,7 +14165,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if n1 differs from n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertLessOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertLessOrEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">n1</span><span class="p">,</span><span class="w"> </span><span class="nx">n2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14228,7 +14210,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks that <code>str</code> does not contain <code>substr</code> anywhere and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertNotContains</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14273,7 +14255,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if obj1 differs from obj2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertNotEqual</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14318,7 +14300,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>NotNull</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertNotNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14358,7 +14340,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertNotSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14398,7 +14380,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is <code>null</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertNull</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14438,7 +14420,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>val</code> is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertSet</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">val</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14478,7 +14460,7 @@ additional data (links, images, comments) set via 'data' parameter.</p>
 <p>Checks if <code>str</code> begins with <code>substr</code> and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SoftAssertStartsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SoftAssertStartsWith</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nx">substr</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14527,7 +14509,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
 <span class="w">  </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj1&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span><span class="w"> </span><span class="c1">// No line will be added to report and operation status will be ignored</span>
 <span class="w">  </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">SuppressReport</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nx">SuppressReport</span><span class="p">(</span><span class="nx">suppress</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SuppressReport</span><span class="p">(</span><span class="nx">suppress</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -14651,7 +14633,7 @@ This mode is like IgnoreStatus mode but no status messages are added to report.<
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

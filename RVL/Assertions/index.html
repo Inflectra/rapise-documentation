@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/RVL/Assertions/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4095,6 +4065,18 @@
     <li class="md-nav__item">
       <a href="../RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11145,12 +11127,13 @@
 <table>
 <thead>
 <tr>
-<th>...</th>
-<th><em>Type</em></th>
-<th>...</th>
-<th><em>Action</em></th>
-<th><em>ParamName</em></th>
-<th>...</th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
@@ -11161,6 +11144,7 @@
 <td></td>
 <td>message</td>
 <td>string</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
@@ -11169,12 +11153,14 @@
 <td></td>
 <td>param1</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>Condition</td>
 <td></td>
 <td><em>condition statement</em></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -11185,6 +11171,7 @@
 <td></td>
 <td>param2</td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -11193,61 +11180,238 @@
 <table>
 <thead>
 <tr>
-<th align="left">...</th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Assert</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">message</td>
-<td align="left">string</td>
-<td align="left">Assertion text to be displayed in the report</td>
+<td></td>
+<td>Assert</td>
+<td></td>
+<td></td>
+<td>message</td>
+<td>string</td>
+<td>Assertion text to be displayed in the report</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">param1</td>
-<td align="left">string</td>
-<td align="left">Text1</td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param1</td>
+<td>string</td>
+<td>Text1</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Condition</td>
-<td align="left"></td>
-<td align="left">param1!=param2</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>Condition</td>
+<td></td>
+<td>param1!=param2</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">param2</td>
-<td align="left">string</td>
-<td align="left">Text2</td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param2</td>
+<td>string</td>
+<td>Text2</td>
 </tr>
 </tbody>
 </table>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Compare object property <em>InnerText</em> with expected value:</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Assertion" src="../img/Assertion_GetInnerTextCompare.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Assert</td>
+<td></td>
+<td></td>
+<td>message</td>
+<td>string</td>
+<td>Verify that: InnerText=Sister Carrie</td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Sister_Carrie</td>
+<td>GetInnerText</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Condition</td>
+<td></td>
+<td>output1 == param2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param2</td>
+<td>string</td>
+<td>Sister Carrie</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>Check if object exists on the screen:</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Assertion object exists" src="../img/Assertion_ObjectExists.png" /></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#</td>
+<td>Check that object 'Sister_Carrie' exists</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Assert</td>
+<td></td>
+<td></td>
+<td>message</td>
+<td>string</td>
+<td>Check that object 'Sister_Carrie' exists</td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Global</td>
+<td>DoWaitFor</td>
+<td>objectId</td>
+<td>objectid</td>
+<td>Sister_Carrie</td>
+</tr>
+<tr>
+<td></td>
+<td>Condition</td>
+<td></td>
+<td>output1 IsSet</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>Check if variable <code>Age</code> has value '74':</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Assertion check variable value" src="../img/Assertion_CheckVariableValue.png" /></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#</td>
+<td>Check that variable 'Age' contains value 74</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Assert</td>
+<td></td>
+<td></td>
+<td>message</td>
+<td>string</td>
+<td>Check that Age=74</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param1</td>
+<td>variable</td>
+<td>Age</td>
+</tr>
+<tr>
+<td></td>
+<td>Condition</td>
+<td></td>
+<td>param1 == param2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>param2</td>
+<td>string</td>
+<td>74</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
                 
               
               
@@ -11350,7 +11514,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

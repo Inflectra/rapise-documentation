@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/SimpleGraphics/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11831,74 +11813,102 @@
 <p>UI Image of the object.</p>
 <p>Type: ImageWrapper</p>
 <p>Accessors: GetBitmap</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetBitmap</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="BWBitmap"></a></p>
 <h4 id="bwbitmap">BWBitmap<a class="headerlink" href="#bwbitmap" title="Permanent link">&para;</a></h4>
 <p>UI Image of the object in 1-bit format (black&amp;white).</p>
 <p>Type: ImageWrapper</p>
 <p>Accessors: GetBWBitmap</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetBWBitmap</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Class"></a></p>
 <h4 id="class">Class<a class="headerlink" href="#class" title="Permanent link">&para;</a></h4>
 <p>Class of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetClass</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetClass</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Height"></a></p>
 <h4 id="height">Height<a class="headerlink" href="#height" title="Permanent link">&para;</a></h4>
 <p>Height of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetHeight</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetHeight</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Name"></a></p>
 <h4 id="name">Name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
 <p>Name of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetName</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetName</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="ObjectType"></a></p>
 <h4 id="objecttype">ObjectType<a class="headerlink" href="#objecttype" title="Permanent link">&para;</a></h4>
 <p>SeSMatcherRule type for this object.</p>
 <p>Type: string</p>
 <p>Accessors: GetObjectType</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetObjectType</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="State"></a></p>
 <h4 id="state">State<a class="headerlink" href="#state" title="Permanent link">&para;</a></h4>
 <p>State of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetState</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetState</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Value"></a></p>
 <h4 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h4>
 <p>Value of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetValue, SetValue</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetValue</span><span class="p">()</span>
+
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">SetValue</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="Width"></a></p>
 <h4 id="width">Width<a class="headerlink" href="#width" title="Permanent link">&para;</a></h4>
 <p>Width of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetWidth</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetWidth</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="WindowText"></a></p>
 <h4 id="windowtext">WindowText<a class="headerlink" href="#windowtext" title="Permanent link">&para;</a></h4>
 <p>Window text of the object.</p>
 <p>Type: string</p>
 <p>Accessors: GetWindowText, SetWindowText</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetWindowText</span><span class="p">()</span>
+
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">SetWindowText</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span>
+</code></pre></div>
 <p><a name="X"></a></p>
 <h4 id="x">X<a class="headerlink" href="#x" title="Permanent link">&para;</a></h4>
 <p>X-coordinate of the top left corner of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetX</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetX</span><span class="p">()</span>
+</code></pre></div>
 <p><a name="Y"></a></p>
 <h4 id="y">Y<a class="headerlink" href="#y" title="Permanent link">&para;</a></h4>
 <p>Y-coordinate of the top left corner of the object.</p>
 <p>Type: number</p>
 <p>Accessors: GetY</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">GetY</span><span class="p">()</span>
+</code></pre></div>
 <!-- ============================== action detail ========================== -->
 
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoAction"></a>    </p>
 <h4 id="doaction">DoAction<a class="headerlink" href="#doaction" title="Permanent link">&para;</a></h4>
 <p>Performs default action for an object. If the object doesn't have default action then 'LClick' is performed.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAction</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoAction</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.doaction"></a></p>
 <p><a name="DoAnalogPlay"></a>    </p>
 <h4 id="doanalogplay">DoAnalogPlay<a class="headerlink" href="#doanalogplay" title="Permanent link">&para;</a></h4>
 <p>Plays analog recording using coordinates relative to this object.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAnalogPlay</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">left</span><span class="p">,</span><span class="w"> </span><span class="nx">top</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoAnalogPlay</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">left</span><span class="p">,</span><span class="w"> </span><span class="nx">top</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11931,7 +11941,7 @@
 <p><a name="DoClick"></a>    </p>
 <h4 id="doclick">DoClick<a class="headerlink" href="#doclick" title="Permanent link">&para;</a></h4>
 <p>Performs left click at the center of an object. It is a customizable variant of LClick action.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClick</span><span class="p">(</span><span class="nx">clickType</span><span class="p">,</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">(</span><span class="nx">clickType</span><span class="p">,</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11966,25 +11976,25 @@
 <p><a name="DoEnsureVisible"></a>    </p>
 <h4 id="doensurevisible">DoEnsureVisible<a class="headerlink" href="#doensurevisible" title="Permanent link">&para;</a></h4>
 <p>Makes sure specified element is visible on the screen.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoEnsureVisible</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoEnsureVisible</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.doensurevisible"></a></p>
 <p><a name="DoLButtonDown"></a>    </p>
 <h4 id="dolbuttondown">DoLButtonDown<a class="headerlink" href="#dolbuttondown" title="Permanent link">&para;</a></h4>
 <p>Performs left mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoLButtonUp', otherwise it may lock mouse cursor.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoLButtonDown</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoLButtonDown</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.dolbuttondown"></a></p>
 <p><a name="DoLButtonUp"></a>    </p>
 <h4 id="dolbuttonup">DoLButtonUp<a class="headerlink" href="#dolbuttonup" title="Permanent link">&para;</a></h4>
 <p>Performs left mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoLButtonDown', otherwise it will have no effect.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoLButtonUp</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoLButtonUp</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.dolbuttonup"></a></p>
 <p><a name="DoLClick"></a>    </p>
 <h4 id="dolclick">DoLClick<a class="headerlink" href="#dolclick" title="Permanent link">&para;</a></h4>
 <p>Performs a left click at the center of an object or at the specified location.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoLClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoLClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12014,7 +12024,7 @@
 <p><a name="DoLDClick"></a>    </p>
 <h4 id="doldclick">DoLDClick<a class="headerlink" href="#doldclick" title="Permanent link">&para;</a></h4>
 <p>Performs a left double click at the center of an object or at the specified location.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoLDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoLDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12044,19 +12054,19 @@
 <p><a name="DoMButtonDown"></a>    </p>
 <h4 id="dombuttondown">DoMButtonDown<a class="headerlink" href="#dombuttondown" title="Permanent link">&para;</a></h4>
 <p>Performs middle mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoMButtonUp', otherwise it may lock mouse cursor.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMButtonDown</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoMButtonDown</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.dombuttondown"></a></p>
 <p><a name="DoMButtonUp"></a>    </p>
 <h4 id="dombuttonup">DoMButtonUp<a class="headerlink" href="#dombuttonup" title="Permanent link">&para;</a></h4>
 <p>Performs middle mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoMButtonDown', otherwise it will have no effect.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMButtonUp</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoMButtonUp</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.dombuttonup"></a></p>
 <p><a name="DoMClick"></a>    </p>
 <h4 id="domclick">DoMClick<a class="headerlink" href="#domclick" title="Permanent link">&para;</a></h4>
 <p>Performs a middle click at the center of an object or at the specified location.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoMClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12086,7 +12096,7 @@
 <p><a name="DoMDClick"></a>    </p>
 <h4 id="domdclick">DoMDClick<a class="headerlink" href="#domdclick" title="Permanent link">&para;</a></h4>
 <p>Performs a middle double click at the center of an object or at the specified location.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoMDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12116,7 +12126,7 @@
 <p><a name="DoMouseMove"></a>    </p>
 <h4 id="domousemove">DoMouseMove<a class="headerlink" href="#domousemove" title="Permanent link">&para;</a></h4>
 <p>Moves mouse cursor to a location relative to this object position.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMouseMove</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">duration</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">duration</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12149,19 +12159,19 @@
 <p><a name="DoRButtonDown"></a>    </p>
 <h4 id="dorbuttondown">DoRButtonDown<a class="headerlink" href="#dorbuttondown" title="Permanent link">&para;</a></h4>
 <p>Performs right mouse button down. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: This action must be followed by 'DoRButtonUp', otherwise it may lock mouse cursor.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRButtonDown</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoRButtonDown</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.dorbuttondown"></a></p>
 <p><a name="DoRButtonUp"></a>    </p>
 <h4 id="dorbuttonup">DoRButtonUp<a class="headerlink" href="#dorbuttonup" title="Permanent link">&para;</a></h4>
 <p>Performs right mouse button up. This method does not change cursor coordinates. Make sure that you use 'DoMouseMove' to position mouse cursor properly before calling this method. Note: Use this action after 'DoRButtonDown', otherwise it will have no effect.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRButtonUp</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoRButtonUp</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.simplegraphics.dorbuttonup"></a></p>
 <p><a name="DoRClick"></a>    </p>
 <h4 id="dorclick">DoRClick<a class="headerlink" href="#dorclick" title="Permanent link">&para;</a></h4>
 <p>Performs a right click at the center of an object or at the specified location.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoRClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12191,7 +12201,7 @@
 <p><a name="DoRDClick"></a>    </p>
 <h4 id="dordclick">DoRDClick<a class="headerlink" href="#dordclick" title="Permanent link">&para;</a></h4>
 <p>Performs a right double click at the center of an object or at the specified location.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoRDClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12221,7 +12231,7 @@
 <p><a name="DoSendKeys"></a>    </p>
 <h4 id="dosendkeys">DoSendKeys<a class="headerlink" href="#dosendkeys" title="Permanent link">&para;</a></h4>
 <p>Sends series of keystrokes to an object. For example: DoSendKeys('^F') - sends {CTRL} + {F}. See <a displaytype="text" defaultstyle="true" type="weblink" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.aspx" target="_blank" styleclass="Normal" translate="true">MSDN Article for SendKeys</a></p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12244,7 +12254,7 @@
 <p><a name="DoSendText"></a>    </p>
 <h4 id="dosendtext">DoSendText<a class="headerlink" href="#dosendtext" title="Permanent link">&para;</a></h4>
 <p>Sends text to the active application as is (while SendKeys also supports sending special keys).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSendText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeSimpleGraphics&#39;</span><span class="p">).</span><span class="nx">DoSendText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12368,7 +12378,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/Database/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11372,7 +11354,7 @@
 <p><a name="DoAttach"></a>    </p>
 <h4 id="doattach">DoAttach<a class="headerlink" href="#doattach" title="Permanent link">&para;</a></h4>
 <p>Attaches to a Database with given ADO connection string and SQL query.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">connection_string</span><span class="p">,</span><span class="w"> </span><span class="nx">sql</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">DoAttach</span><span class="p">(</span><span class="nx">connection_string</span><span class="p">,</span><span class="w"> </span><span class="nx">sql</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11402,7 +11384,7 @@
 <p><a name="DoMoveToRow"></a>    </p>
 <h4 id="domovetorow">DoMoveToRow<a class="headerlink" href="#domovetorow" title="Permanent link">&para;</a></h4>
 <p>Moves to a given row.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="nx">rowInd</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">DoMoveToRow</span><span class="p">(</span><span class="nx">rowInd</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11425,7 +11407,7 @@
 <p><a name="DoRandom"></a>    </p>
 <h4 id="dorandom">DoRandom<a class="headerlink" href="#dorandom" title="Permanent link">&para;</a></h4>
 <p>Selects random row and column in the recordset.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRandom</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">DoRandom</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>'false' if the the DB is is not connected, 'true' - otherwise.</p>
@@ -11434,7 +11416,7 @@
 <h4 id="dosequential">DoSequential<a class="headerlink" href="#dosequential" title="Permanent link">&para;</a></h4>
 <p>Advances to the next row in the table. 
 When the end of the range is reached DoSequential returns 'false'.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSequential</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>'false' if being called when active row is the last row or the recordset is not attached, 'true' - otherwise.</p>
@@ -11442,7 +11424,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p><a name="GetColumnCount"></a>    </p>
 <h4 id="getcolumncount">GetColumnCount<a class="headerlink" href="#getcolumncount" title="Permanent link">&para;</a></h4>
 <p>Gets columns count.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetColumnCount</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">GetColumnCount</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>Number of Columns in the result set.</p>
@@ -11450,7 +11432,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p><a name="GetColumnName"></a>    </p>
 <h4 id="getcolumnname">GetColumnName<a class="headerlink" href="#getcolumnname" title="Permanent link">&para;</a></h4>
 <p>Gets column name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">ind</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">GetColumnName</span><span class="p">(</span><span class="nx">ind</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11475,7 +11457,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p><a name="GetColumnNames"></a>    </p>
 <h4 id="getcolumnnames">GetColumnNames<a class="headerlink" href="#getcolumnnames" title="Permanent link">&para;</a></h4>
 <p>Gets column names.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetColumnNames</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">GetColumnNames</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>Array of column names in the table.</p>
@@ -11483,13 +11465,13 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p><a name="GetCurrentRowIndex"></a>    </p>
 <h4 id="getcurrentrowindex">GetCurrentRowIndex<a class="headerlink" href="#getcurrentrowindex" title="Permanent link">&para;</a></h4>
 <p>Get zero based current row index.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentRowIndex</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">GetCurrentRowIndex</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.database.getcurrentrowindex"></a></p>
 <p><a name="GetRowCount"></a>    </p>
 <h4 id="getrowcount">GetRowCount<a class="headerlink" href="#getrowcount" title="Permanent link">&para;</a></h4>
 <p>Gets rows count.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetRowCount</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">GetRowCount</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>Number of rows in the result set.</p>
@@ -11497,7 +11479,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
 <p><a name="GetValue"></a>    </p>
 <h4 id="getvalue">GetValue<a class="headerlink" href="#getvalue" title="Permanent link">&para;</a></h4>
 <p>Gets value by column name, and, optionally, row number. Returns current cell value after DoSequential or DoRandom if params not set.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetValue</span><span class="p">(</span><span class="nx">columnId</span><span class="p">,</span><span class="w"> </span><span class="nx">rowId</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Database</span><span class="p">.</span><span class="nx">GetValue</span><span class="p">(</span><span class="nx">columnId</span><span class="p">,</span><span class="w"> </span><span class="nx">rowId</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11626,7 +11608,7 @@ When the end of the range is reached DoSequential returns 'false'.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

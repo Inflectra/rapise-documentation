@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/RVL/Preamble/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4066,6 +4036,18 @@
     <li class="md-nav__item">
       <a href="../RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11099,8 +11081,190 @@
 <p>Preamble is a beginning of each RVL sheet containing common data definitions.</p>
 <p>Preamble is executed every time when one does <a href="../../Guide/rvl_editor/#context-menu">Play Selection</a> or <a href="../../Guide/rvl_editor/#context-menu">Play From Here</a> in RVL. So if the piece that you try to have executed refers <a href="../Variables/">Variables</a> or <a href="../Maps/">Maps</a> then executed statement will 'see' them as if they are part of the selection.</p>
 <p>The preamble is detected automatically. Everything before first <a href="../Actions/">Action</a>, <a href="../Assertions/">Assertion</a>, <a href="../Loops/">Loop</a> or <a href="../Conditions/">Condition</a> is a preamble.</p>
-<p>For example, Preamble here ends at the row 10 (because row 11 is <strong>Action</strong>)
-<img alt="Preamble" src="../img/Preamble_Script.png" /></p>
+<p>For example, Preamble here ends at the row 10 (because row 11 is <strong>Action</strong>)</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
+<p><img alt="Preamble" src="../img/Preamble_Script.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Variable</td>
+<td></td>
+<td>Login</td>
+<td>string</td>
+<td>librarian</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Variable</td>
+<td></td>
+<td>Global</td>
+<td>g_password</td>
+<td>string</td>
+<td>librarian</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Rows</td>
+<td>MyMap1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Col</td>
+<td>Col1</td>
+<td>Col2</td>
+<td>Col3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>r1</td>
+<td>r11</td>
+<td>r12</td>
+<td>r13</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td>of Map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#</td>
+<td>Following action ends the preamble</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Tester</td>
+<td>Message</td>
+<td>message</td>
+<td>string</td>
+<td>Starting Script</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Tester</td>
+<td>Message</td>
+<td>message</td>
+<td>string</td>
+<td>Login name:</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>message</td>
+<td>variable</td>
+<td>Login</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Tester</td>
+<td>Message</td>
+<td>message</td>
+<td>string</td>
+<td>Value from Map:</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>MyMap1</td>
+<td>Col</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>DoPlaySheet</td>
+<td>sheetName</td>
+<td>string</td>
+<td>DefaultValue</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
                 
               
               
@@ -11203,7 +11367,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/RESTRequest/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11464,7 +11446,7 @@
 <p><a name="DoRemoveParameter"></a>    </p>
 <h4 id="doremoveparameter">DoRemoveParameter<a class="headerlink" href="#doremoveparameter" title="Permanent link">&para;</a></h4>
 <p>Remove one pre-defined parameter.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">DoRemoveParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11487,7 +11469,7 @@
 <p><a name="DoRemoveRequestHeader"></a>    </p>
 <h4 id="doremoverequestheader">DoRemoveRequestHeader<a class="headerlink" href="#doremoverequestheader" title="Permanent link">&para;</a></h4>
 <p>Remove one pre-defined request header by name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">DoRemoveRequestHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11517,13 +11499,13 @@ Sample code:</p>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
 <p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCredential</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">GetCredential</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.restrequest.getcredential"></a></p>
 <p><a name="GetHeader"></a>    </p>
 <h4 id="getheader">GetHeader<a class="headerlink" href="#getheader" title="Permanent link">&para;</a></h4>
 <p>HTTP header</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">GetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11546,19 +11528,19 @@ Sample code:</p>
 <p><a name="GetMethod"></a>    </p>
 <h4 id="getmethod">GetMethod<a class="headerlink" href="#getmethod" title="Permanent link">&para;</a></h4>
 <p>The HTTP Method being used for the request (GET, POST, etc.)</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetMethod</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">GetMethod</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.restrequest.getmethod"></a></p>
 <p><a name="GetName"></a>    </p>
 <h4 id="getname">GetName<a class="headerlink" href="#getname" title="Permanent link">&para;</a></h4>
 <p>The name of the request operation</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetName</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">GetName</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.restrequest.getname"></a></p>
 <p><a name="GetParameter"></a>    </p>
 <h4 id="getparameter">GetParameter<a class="headerlink" href="#getparameter" title="Permanent link">&para;</a></h4>
 <p>Access request parameters. Request Body, Headers and Url is then pre-processed by replacing each {paramName} entry with paramName's value.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">GetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11581,13 +11563,13 @@ Sample code:</p>
 <p><a name="GetRequestBodyText"></a>    </p>
 <h4 id="getrequestbodytext">GetRequestBodyText<a class="headerlink" href="#getrequestbodytext" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP request in raw text format</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetRequestBodyText</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">GetRequestBodyText</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.restrequest.getrequestbodytext"></a></p>
 <p><a name="GetUrl"></a>    </p>
 <h4 id="geturl">GetUrl<a class="headerlink" href="#geturl" title="Permanent link">&para;</a></h4>
 <p>The URL being used to access the web service</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetUrl</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">GetUrl</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.restrequest.geturl"></a></p>
 <p><a name="SetCredential"></a>    </p>
@@ -11600,7 +11582,7 @@ Sample code:</p>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Operation_Name&quot;</span><span class="p">).</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">credential</span><span class="p">);</span>
 </code></pre></div>
 <p>Another way is to pass user name and password as first and second parameter respectively, e.g. <code>SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");</code></p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">value2</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">SetCredential</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">value2</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11628,7 +11610,7 @@ Sample code:</p>
 <p><a name="SetHeader"></a>    </p>
 <h4 id="setheader">SetHeader<a class="headerlink" href="#setheader" title="Permanent link">&para;</a></h4>
 <p>HTTP header</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">SetHeader</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11656,7 +11638,7 @@ Sample code:</p>
 <p><a name="SetMethod"></a>    </p>
 <h4 id="setmethod">SetMethod<a class="headerlink" href="#setmethod" title="Permanent link">&para;</a></h4>
 <p>The HTTP Method being used for the request (GET, POST, etc.)</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetMethod</span><span class="p">(</span><span class="nx">method</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">SetMethod</span><span class="p">(</span><span class="nx">method</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11679,7 +11661,7 @@ Sample code:</p>
 <p><a name="SetParameter"></a>    </p>
 <h4 id="setparameter">SetParameter<a class="headerlink" href="#setparameter" title="Permanent link">&para;</a></h4>
 <p>Access request parameters. Request Body, Headers and Url is then pre-processed by replacing each {paramName} entry with paramName's value.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">SetParameter</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11707,7 +11689,7 @@ Sample code:</p>
 <p><a name="SetRequestBodyText"></a>    </p>
 <h4 id="setrequestbodytext">SetRequestBodyText<a class="headerlink" href="#setrequestbodytext" title="Permanent link">&para;</a></h4>
 <p>The body of the HTTP request in raw text format</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetRequestBodyText</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">SetRequestBodyText</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11730,7 +11712,7 @@ Sample code:</p>
 <p><a name="SetUrl"></a>    </p>
 <h4 id="seturl">SetUrl<a class="headerlink" href="#seturl" title="Permanent link">&para;</a></h4>
 <p>The URL being used to access the web service</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">RESTRequest</span><span class="p">.</span><span class="nx">SetUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11854,7 +11836,7 @@ Sample code:</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/RVL/Maps/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4210,6 +4180,18 @@
     <li class="md-nav__item">
       <a href="../RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11372,49 +11354,114 @@
                 <h1 id="maps">Maps<a class="headerlink" href="#maps" title="Permanent link">&para;</a></h1>
 <p>A <em>Map</em> is designed to be an easy way to define tables of data. Items in the map may be accessed by name (if defined) or by index.</p>
 <p>The indexed dimensions in the map may also be iterated by the [Loop][Loops.md] function, thus making it useful feature for Data-Driven Testing.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Map" src="../img/Maps_MapSample.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Rows</td>
+<td>Logins</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Login</strong></td>
+<td><strong>Password</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>John</td>
+<td>pass1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Sarah</td>
+<td>pass2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td>of Map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>An RVL script has at least 7 <a href="../Columns/">columns</a>. However the <em>Map</em> may take as many columns as needed.</p>
 <h2 id="map-definition">Map Definition<a class="headerlink" href="#map-definition" title="Permanent link">&para;</a></h2>
 <p>Typical declaration of map looks like:</p>
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><em>Map</em></td>
-<td align="left"><code>MapType</code></td>
-<td align="left"><strong>MapName</strong></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>Map</em></td>
+<td><code>MapType</code></td>
+<td><strong>MapName</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left">...</td>
-<td align="left">...</td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"><em>End</em></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>End</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -11434,7 +11481,90 @@
 <p>External maps are defined in an external spreadsheet, file or a database.</p>
 <h2 id="using-maps">Using Maps<a class="headerlink" href="#using-maps" title="Permanent link">&para;</a></h2>
 <p>Once map is defined it may be used as a regular <a href="../../Libraries/Map/">Object</a>. </p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Map as Object" src="../img/Maps_MapAsObject.png" /></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Rows</td>
+<td>Logins</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Login</td>
+<td>Password</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>John</td>
+<td>pass1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Sarah</td>
+<td>pass2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td>of Map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#</td>
+<td>Move to next sequential row in Login map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Login</td>
+<td>DoSequential</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <h3 id="reading-in-a-loop">Reading in a Loop<a class="headerlink" href="#reading-in-a-loop" title="Permanent link">&para;</a></h3>
 <p>See <a href="../Loops/#Map">Loops</a> part for <code>Map</code> type of loops.</p>
 <h2 id="maps-types">Maps Types<a class="headerlink" href="#maps-types" title="Permanent link">&para;</a></h2>
@@ -11443,69 +11573,69 @@
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><em>Map</em></td>
-<td align="left"><code>Rows</code></td>
-<td align="left"><strong><em>MapName</em></strong></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>Map</em></td>
+<td><code>Rows</code></td>
+<td><strong><em>MapName</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Col1</strong></td>
-<td align="left"><strong>Col2</strong></td>
-<td align="left"><strong>Col3</strong></td>
-<td align="left"><strong>Col4</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Col1</strong></td>
+<td><strong>Col2</strong></td>
+<td><strong>Col3</strong></td>
+<td><strong>Col4</strong></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">val11</td>
-<td align="left">val12</td>
-<td align="left">val13</td>
-<td align="left">val14</td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>val11</td>
+<td>val12</td>
+<td>val13</td>
+<td>val14</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"><em>End</em></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>End</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -11513,219 +11643,679 @@
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><em>Map</em></td>
-<td align="left"><code>Rows</code></td>
-<td align="left"><strong><em>MapName</em></strong></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>Map</em></td>
+<td><code>Rows</code></td>
+<td><strong><em>MapName</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Col1</strong></td>
-<td align="left"><strong>Col2</strong></td>
-<td align="left"><strong>Col3</strong></td>
-<td align="left"><strong>Col4</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Col1</strong></td>
+<td><strong>Col2</strong></td>
+<td><strong>Col3</strong></td>
+<td><strong>Col4</strong></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"><strong><em>This</em></strong></td>
-<td align="left"><strong><em>...</em></strong></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><strong><em>This</em></strong></td>
+<td><strong><em>...</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"><em>End</em></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>End</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p><code>Rows</code> are designed to be iterated in a <a href="../Loops/">Loop</a></p>
 <p>In real example it looks like this:</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Map" src="../img/Maps_This.png" /></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Rows</td>
+<td>MyMap1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Login</strong></td>
+<td><strong>Password</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>John</td>
+<td>testpass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Sarah</td>
+<td>testpass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>This</td>
+<td>Jim</td>
+<td>testpass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Peter</td>
+<td>testpass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>John</td>
+<td>testpass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Fred</td>
+<td>testpass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p><a href="../Comments/">Comments</a> may also be used to skip specific rows or row sets.</p>
 <h3 id="columns-map">Columns Map<a class="headerlink" href="#columns-map" title="Permanent link">&para;</a></h3>
 <p>A <code>Columns</code> Map is a convenient way for representing data when you have many options combined in few sets. </p>
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><em>Map</em></td>
-<td align="left"><code>Columns</code></td>
-<td align="left"><strong><em>MapName</em></strong></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>Map</em></td>
+<td><code>Columns</code></td>
+<td><strong><em>MapName</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Row1</strong></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Row1</strong></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Row2</strong></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Row2</strong></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Row3</strong></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Row3</strong></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"><em>End</em></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>End</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p>The same may be represented as <code>Rows</code> but would require many columns and sometimes it is harder to read. So columns is ideal for storing configuration structures:</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Columns" src="../img/Maps_Columns.png" /></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Columns</td>
+<td>ConfigData</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+<td><a href="http://localhost:8080/">http://localhost:8080/</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Login</td>
+<td>testuser</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Password</td>
+<td>testpass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Age</td>
+<td>44</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>When a <code>Columns</code> Map is used in the Loop, then the iteration is performed through the columns and addresses the rows by name within the loop. I.e. the 1<sup>st</sup> iteration chooses 1<sup>st</sup> column, 2<sup>nd</sup> goes to 2<sup>nd</sup> column and so on.</p>
 <h3 id="table-map">Table Map<a class="headerlink" href="#table-map" title="Permanent link">&para;</a></h3>
 <p>A Table map has both columns and rows named.</p>
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><em>Map</em></td>
-<td align="left"><code>Table</code></td>
-<td align="left"><strong><em>MapName</em></strong></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>Map</em></td>
+<td><code>Table</code></td>
+<td><strong><em>MapName</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>Col1</strong></td>
-<td align="left"><strong>Col2</strong></td>
-<td align="left"><strong>Col3</strong></td>
-<td align="left"><strong>Col4</strong></td>
-<td align="left"></td>
+<td></td>
+<td></td>
+<td><strong>Col1</strong></td>
+<td><strong>Col2</strong></td>
+<td><strong>Col3</strong></td>
+<td><strong>Col4</strong></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Row1</strong></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Row1</strong></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Row2</strong></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Row2</strong></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"><strong>Row3</strong></td>
-<td align="left">...</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td></td>
+<td><strong>Row3</strong></td>
+<td>...</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td align="left"><em>End</em></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td><em>End</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Table" src="../img/Maps_Table.png" /></p>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Table</td>
+<td>TableMap</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Staging</td>
+<td>QA</td>
+<td>Prod</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+<td><a href="http://staging.myho">http://staging.myho</a>...</td>
+<td><a href="http://qa.myhost.co">http://qa.myhost.co</a>...</td>
+<td><a href="http://myhost.com/">http://myhost.com/</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>User</td>
+<td>test</td>
+<td>qatest</td>
+<td>john</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Password</td>
+<td>pass</td>
+<td>pass</td>
+<td>QAasd*&amp;8983</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Age</td>
+<td>33</td>
+<td>33</td>
+<td>33</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>When a <code>Table</code> Map is used in the Loop, then the iteration is performed through the columns and addresses the rows by name within the loop. I.e. 1<sup>st</sup> iteration chooses 1<sup>st</sup> column, 2<sup>nd</sup> goes to 2<sup>nd</sup> column and so on.</p>
 <p>It is convenient to use a <code>Table</code> Map when you have several columns and many rows so it perfectly fits into the screen. For example you may have several alternative configuration sections and want to use them depending on the situation. In the example below we have several sites (Testing, QA, Prod) each having own Url, Login etc. So we want to quickly switch between sites when working with test.</p>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Table Config Columns" src="../img/Maps_TableColumns.png" /></p>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Table</td>
+<td>TableMap</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Staging</td>
+<td>QA</td>
+<td>Prod</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+<td><a href="http://staging.myho">http://staging.myho</a>...</td>
+<td><a href="http://qa.myhost.com/">http://qa.myhost.com/</a></td>
+<td><a href="http://myhost.com/">http://myhost.com/</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>User</td>
+<td>test</td>
+<td>qatest</td>
+<td>john</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Password</td>
+<td>pass</td>
+<td>pass</td>
+<td>QAasd*&amp;8983</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Age</td>
+<td>33</td>
+<td>33</td>
+<td>33</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td>of Map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>TableMap</td>
+<td>DoMoveToColumn</td>
+<td>colInd</td>
+<td>string</td>
+<td>QA</td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Navigator</td>
+<td>Open</td>
+<td>url</td>
+<td>TableMap</td>
+<td>Url</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <h3 id="range-map">Range Map<a class="headerlink" href="#range-map" title="Permanent link">&para;</a></h3>
 <p><code>Range</code> map contains no in-place data, but defines a region in the external spreadsheet to read information from.</p>
+<div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Range Map" src="../img/Maps_Range.png" /></p>
+</div>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Range</td>
+<td>MyMap1</td>
+<td></td>
+<td>fileName</td>
+<td>string</td>
+<td>Calc.xls</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>sheetName</td>
+<td>string</td>
+<td>Data$</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>fromRow</td>
+<td>number</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>fromCol</td>
+<td>number</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>toRow</td>
+<td>number</td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>toCol</td>
+<td>number</td>
+<td>10</td>
+</tr>
+<tr>
+<td>End</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>A <code>Range</code> map definition contains a number of required parameters:</p>
 <ul>
 <li><em>fileName</em> Path to file containing data.  It may point to .xls, .xlsx or .csv file. If when it is empty we assume that data is stored in the same .rvl.xls spreadsheet as the script.</li>
@@ -11741,10 +12331,104 @@
 <li><em>hasColumnNames</em> boolean. By default it is <code>true</code> meaning that 1<sup>st</sup> rows is assumed to contain column names. Once it is <code>false</code> the columns will have no names and may only be accessed by 0-based index.</li>
 </ul>
 <p>Data in the <code>Range</code> map is assumed to be similar to <a href="#rows-map"><code>Rows</code></a> map, but defined externally. Looping is done by rows. Typical external file containing data may look like that:</p>
+<div class="tabbed-set" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Range Data" src="../img/Maps_RangeData.png" /></p>
+</div>
+<input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><label for="__tabbed_8_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item1</td>
+<td>Operation</td>
+<td>Item2</td>
+<td>Result</td>
+</tr>
+<tr>
+<td>15</td>
+<td>+</td>
+<td>13</td>
+<td>28</td>
+</tr>
+<tr>
+<td>5</td>
+<td>*</td>
+<td>6</td>
+<td>30</td>
+</tr>
+<tr>
+<td>19</td>
+<td>-</td>
+<td>3</td>
+<td>16</td>
+</tr>
+<tr>
+<td>8</td>
+<td>/</td>
+<td>4</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <h3 id="database-map">Database Map<a class="headerlink" href="#database-map" title="Permanent link">&para;</a></h3>
 <p>A <code>Database</code> map contains no in-place data, but defines a connection to the database result set. </p>
+<div class="tabbed-set" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Database Map" src="../img/Maps_Database.png" /></p>
+</div>
+<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Database</td>
+<td>MyMap1</td>
+<td></td>
+<td>connectionString</td>
+<td>string</td>
+<td>MYSQL1</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>query</td>
+<td>string</td>
+<td>select * from contacts</td>
+</tr>
+<tr>
+<td>End</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>The <code>Database</code> map definition contains two parameters:</p>
 <ul>
 <li><em>connectionString</em> ADO connection string. </li>
@@ -11765,7 +12449,37 @@
 </code></pre></div></td></tr></table></div>
 
 <p>An example below refers to ODBC Data Source defined as follows:</p>
+<div class="tabbed-set" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Database ODBC data source" src="../img/Maps_DatabaseODBC.png" /></p>
+</div>
+<input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><label for="__tabbed_10_2">Transcript</label><div class="tabbed-content">
+<p>Screenshot start Maps_DatabaseODBC.png</p>
+<p>[ODBC Data Source Administrator (32-bit)]</p>
+<ul>
+<li>
+<p><strong>User DSN</strong> | <strong>System DSN</strong> | <strong>File DSN</strong> | <strong>Drivers</strong> | <strong>Tracing</strong> | <strong>Connection Pooling</strong> | <strong>About</strong></p>
+</li>
+<li>
+<p><strong>System Data Sources:</strong></p>
+<ul>
+<li>Name: MYSQL1</li>
+<li>Platform: 32-bit</li>
+<li>Driver: MySQL ODBC 5.1 Driver</li>
+</ul>
+</li>
+<li>
+<p>[Add...] [Remove] [Configure...]</p>
+</li>
+<li>
+<p>An ODBC System data source stores information about how to connect to the indicated data provider. A System data source is visible to all users of this computer, including NT services.</p>
+</li>
+<li>
+<p>[OK] [Cancel] [Apply] [Help]</p>
+</li>
+</ul>
+<p>Screenshot end Maps_DatabaseODBC.png</p>
+</div>
+</div>
                 
               
               
@@ -11868,7 +12582,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

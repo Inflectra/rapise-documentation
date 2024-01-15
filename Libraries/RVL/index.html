@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/RVL/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4195,6 +4165,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11493,7 +11475,7 @@
 <p>Some common tasks related to script execution, such as calling scripts, executing separate sheets, returning, exiting and bailing out is served by RVL.</p>
 <h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
 <h2 id="doplayscript">DoPlayScript<a class="headerlink" href="#doplayscript" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlayScript</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">scriptPath</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayScript</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">scriptPath</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">)</span>
 </code></pre></div>
 <p>Play RVL sheet <code>sheetName</code> from workbook <code>scriptPath</code> passing <code>[extraParams]</code> for variable values.</p>
 <ul>
@@ -11502,7 +11484,7 @@
 <li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
 <h2 id="doplaysheet">DoPlaySheet<a class="headerlink" href="#doplaysheet" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlaySheet</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlaySheet</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">)</span>
 </code></pre></div>
 <p>Play RVL sheet <code>sheetName</code> from current workbook passing <code>[extraParams]</code> for variable values.</p>
 <ul>
@@ -11510,7 +11492,7 @@
 <li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
 <h2 id="doplaytest">DoPlayTest<a class="headerlink" href="#doplaytest" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTest</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayTest</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">)</span>
 </code></pre></div>
 <p>Executes specified test with passing of additional arguments specified as <code>extraParams</code>. It is an analog of <a href="../Global/#DoInvokeTest">Global.DoInvokeTest</a></p>
 <ul>
@@ -11524,7 +11506,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="doplaytestparallel">DoPlayTestParallel<a class="headerlink" href="#doplaytestparallel" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlayTestParallel</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">,</span><span class="w"> </span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">threadsMap</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayTestParallel</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">,</span><span class="w"> </span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">threadsMap</span><span class="p">)</span>
 </code></pre></div>
 <p>Executes specified test in parallel threads passing additional arguments specified by in <code>threadsMap</code> map. There are as many threads as there are rows in the map.</p>
 <ul>
@@ -11539,24 +11521,80 @@
 <li><a href="https://youtu.be/5W3KyVH83wc">Rapise with Selenium Grid - Nested Parallel Test Execution</a> (video)</li>
 </ul>
 <h2 id="doruntest">DoRunTest<a class="headerlink" href="#doruntest" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRunTest</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoRunTest</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">sstestPath</span><span class="p">)</span>
 </code></pre></div>
 <p>Executes specified test using <a href="../Global/#DoRunTest">Global.DoRunTest</a> but passing any extra parameters as 'params' object to invoked test. Requires Rapise 8.1+.</p>
 <ul>
 <li><code>sstestPath</code>: Path to test</li>
-<li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a>        </li>
+<li><strong>[extraParams]</strong>: default variable values see <a href="../../RVL/RVL_DoPlay/">RVL Extra Params</a></li>
 </ul>
 <h2 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">Exit</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="cm">/**boolean*/</span><span class="w"> </span><span class="nx">isError</span><span class="p">)</span>
-</code></pre></div>
-<p>Break execution at the specified line</p>
+<p>Break execution at the specified line, with given message added to the report. This method should be called from within RVL sheet only.</p>
 <ul>
 <li><code>message</code>: Exit message</li>
 <li><code>isError</code>: Specify 'false' if you want just exit without exit message</li>
 </ul>
+<p>Example 1: Exit normally, return value of <code>ReturnValue</code> variable:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>Exit</td>
+<td><strong>message</strong></td>
+<td><strong>variable</strong></td>
+<td>ReturnValue</td>
+</tr>
+</tbody>
+</table>
+<p>Example 2: Exit with error:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>Exit</td>
+<td><strong>message</strong></td>
+<td><strong>string</strong></td>
+<td>Execution Failed</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>isError</strong></td>
+<td><strong>boolean</strong></td>
+<td><strong>true</strong></td>
+</tr>
+</tbody>
+</table>
 <h2 id="getdropdownvalue">GetDropdownValue<a class="headerlink" href="#getdropdownvalue" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">idList</span><span class="p">,</span>
-<span class="w">                 </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">valList</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">xlsPath</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="nx">idList</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="nx">valList</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="nx">xlsPath</span><span class="p">)</span>
 </code></pre></div>
 <p>Remap dropdown value from one list to another</p>
 <ul>
@@ -11567,7 +11605,7 @@
 </ul>
 <p>Example. Suppose we have the following definitions of dropdowns:</p>
 <p><img alt="States Dropdown" src="../../RVL/img/RVL_GetDropdownValue_states.png" /></p>
-<p>Then the call </p>
+<p>Then the call</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">stateCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">RVL</span><span class="p">.</span><span class="nx">GetDropdownValue</span><span class="p">(</span><span class="nx">stateName</span><span class="p">,</span>
 <span class="w">                                     </span><span class="s2">&quot;Functions.SetState.stateName&quot;</span><span class="p">,</span>
 <span class="w">                                     </span><span class="s2">&quot;stateCode&quot;</span><span class="p">)</span>
@@ -11575,14 +11613,37 @@
 <p>would return state code for state name. I.e. if <code>stateName="Colorado"</code> then returned value is "CO".</p>
 <p>See also <a href="../../Guide/rvl_editor/#param-dropdowns">RVL Editor Param Dropdowns</a></p>
 <h2 id="return">Return<a class="headerlink" href="#return" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">Return</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">message</span><span class="p">)</span>
-</code></pre></div>
-<p>Return from specified line. This method should be called from within RVL.</p>
+<p>Finish execution of current sheet. This method should be called from within RVL sheet only.</p>
 <ul>
 <li><code>message</code>: Return message</li>
 </ul>
+<p>Example 1: Finish execution of current sheet, return value of <code>ReturnValue</code> variable:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>Return</td>
+<td><strong>message</strong></td>
+<td><strong>variable</strong></td>
+<td>ReturnValue</td>
+</tr>
+</tbody>
+</table>
 <h2 id="setlocatoropts">SetLocatorOpts<a class="headerlink" href="#setlocatoropts" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">SetLocatorOpts</span><span class="p">(</span><span class="cm">/**objectid*/</span><span class="w"> </span><span class="nx">objectid</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">SetLocatorOpts</span><span class="p">(</span><span class="cm">/**objectid*/</span><span class="w"> </span><span class="nx">objectid</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
 </code></pre></div>
 <p>Set additional locator options for specified object. This is a way to modify various script parameters such as <code>locator</code>, <code>xpath</code>, <code>url</code> and thus find different objects.</p>
 <ul>
@@ -11592,110 +11653,110 @@
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Action</td>
-<td align="left">RVL</td>
-<td align="left">SetLocatorOpts</td>
-<td align="left"><strong>objectid</strong></td>
-<td align="left"><strong>objectid</strong></td>
-<td align="left">MyButton</td>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>SetLocatorOpts</td>
+<td><strong>objectid</strong></td>
+<td><strong>objectid</strong></td>
+<td>MyButton</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>locator_param1</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><strong>new value1</strong></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>locator_param1</strong></td>
+<td><strong>string</strong></td>
+<td><strong>new value1</strong></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>locator_param2</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><strong>new value2</strong></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>locator_param2</strong></td>
+<td><strong>string</strong></td>
+<td><strong>new value2</strong></td>
 </tr>
 </tbody>
 </table>
 <p>All params going after <code>objectid</code> are optional and depend on specified object's locator.</p>
 <p>If you want to reset all values to default value call this method with just <code>objectid</code> and no additional parameters.</p>
 <h2 id="formatstring">FormatString<a class="headerlink" href="#formatstring" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">FormatString</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">fmtString</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">FormatString</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">fmtString</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">optname</span><span class="o">:</span><span class="nx">optvalue</span><span class="p">,...})</span>
 </code></pre></div>
 <p>Format string according to the specified template. Template may contain placeholder values enclosed in curly braces, i.e.: <code>My name is {name}</code>.</p>
 <table>
 <thead>
 <tr>
-<th align="left"><em>Flow</em></th>
-<th align="left"><em>Type</em></th>
-<th align="left"><em>Object</em></th>
-<th align="left"><em>Action</em></th>
-<th align="left"><em>ParamName</em></th>
-<th align="left"><em>ParamType</em></th>
-<th align="left"><em>ParamValue</em></th>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"></td>
-<td align="left">Action</td>
-<td align="left">RVL</td>
-<td align="left">FormatString</td>
-<td align="left"><strong>fmtString</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><code>{first} plus {second} equals to {result}</code></td>
+<td></td>
+<td>Action</td>
+<td>RVL</td>
+<td>FormatString</td>
+<td><strong>fmtString</strong></td>
+<td><strong>string</strong></td>
+<td><code>{first} plus {second} equals to {result}</code></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>first</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><code>one</code></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>first</strong></td>
+<td><strong>string</strong></td>
+<td><code>one</code></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>second</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><code>five</code></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>second</strong></td>
+<td><strong>string</strong></td>
+<td><code>five</code></td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">Param</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><strong>result</strong></td>
-<td align="left"><strong>string</strong></td>
-<td align="left"><code>6</code></td>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td><strong>result</strong></td>
+<td><strong>string</strong></td>
+<td><code>6</code></td>
 </tr>
 </tbody>
 </table>
 <p>This Action should put string value <code>one plus five equals to 6</code> into the variable LastResult.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h2 id="currentscriptpath">CurrentScriptPath<a class="headerlink" href="#currentscriptpath" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentScriptPath</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">GetCurrentScriptPath</span><span class="p">()</span>
 </code></pre></div>
 <p>Return path to currently executed <code>.rvl.xls</code> file.</p>
 <h2 id="currentscriptsheet">CurrentScriptSheet<a class="headerlink" href="#currentscriptsheet" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentScriptSheet</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">GetCurrentScriptSheet</span><span class="p">()</span>
 </code></pre></div>
 <p>Return sheet name of the currently executed <code>.rvl.xls</code> file.</p>
                 
@@ -11800,7 +11861,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

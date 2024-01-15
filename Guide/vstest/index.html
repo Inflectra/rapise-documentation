@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/vstest/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4268,6 +4238,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11726,9 +11708,13 @@
 <p>Download and place this PowerShell script to your Git repository:</p>
 <p><a href="https://github.com/Inflectra/rapise-testadapter/blob/master/RapiseInstall.ps1">RapiseInstall.ps1</a></p>
 <p>This script downloads and installs Rapise. It also installs Rapise extension into Chrome browser. In your pipeline add a PowerShell task to execute this script. Pass Rapise version to install as a parameter.</p>
-<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/rapise_install_task_classic.png" /></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Task Classic UI" src="../img/rapise_install_task_classic.png" /></p>
 </details>
-<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<details class="example">
+<summary>YAML</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PowerShell@2</span>
 <span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Install</span><span class="nv"> </span><span class="s">Rapise&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
@@ -11745,9 +11731,13 @@
 <p>To run Rapise tests with a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops">Visual Studio Test</a> task install <a href="https://www.nuget.org/packages/Rapise.TestAdapter/">Rapise.TestAdapter NuGet package</a>.</p>
 <h4 id="nuget-tool-installer">NuGet Tool Installer<a class="headerlink" href="#nuget-tool-installer" title="Permanent link">&para;</a></h4>
 <p>First you need to install NuGet itself. Add <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/nuget?view=azure-devops">NuGet tool installer</a> task.</p>
-<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/nuget_tool_installer.png" /></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Task Classic UI" src="../img/nuget_tool_installer.png" /></p>
 </details>
-<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<details class="example">
+<summary>YAML</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NuGetToolInstaller@0</span>
 <span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Use</span><span class="nv"> </span><span class="s">NuGet&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
@@ -11758,9 +11748,13 @@
 <p>Then add <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget?view=azure-devops">NuGet</a> task. Set <strong>command</strong> to <code>custom</code> and specify the command line:</p>
 <div class="highlight"><pre><span></span><code>install Rapise.TestAdapter -Version $(RapiseTestAdapterVersion)
 </code></pre></div>
-<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/nuget_rapise_testadapter.png" /></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Task Classic UI" src="../img/nuget_rapise_testadapter.png" /></p>
 </details>
-<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<details class="example">
+<summary>YAML</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NuGetCommand@2</span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;NuGet</span><span class="nv"> </span><span class="s">Install</span><span class="nv"> </span><span class="s">Rapise.TestAdapter&#39;</span>
 <span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
@@ -11776,10 +11770,14 @@
 <h3 id="visual-studio-test-platform-installer-task">Visual Studio Test Platform Installer Task<a class="headerlink" href="#visual-studio-test-platform-installer-task" title="Permanent link">&para;</a></h3>
 <p>If you plan to run tests on a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> that does not have Visual Studio installed you need to add <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops">Visual Studio Test Platform Installer</a> task.</p>
 <!-- /* cSpell:disable */ -->
-<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/></p>
 </details>
 <!-- /* cSpell:enable */ -->
-<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<details class="example">
+<summary>YAML</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VisualStudioTestPlatformInstaller@1</span>
 <span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Visual</span><span class="nv"> </span><span class="s">Studio</span><span class="nv"> </span><span class="s">Test</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Installer&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
@@ -11788,9 +11786,13 @@
 </details>
 <h3 id="visual-studio-test-task">Visual Studio Test Task<a class="headerlink" href="#visual-studio-test-task" title="Permanent link">&para;</a></h3>
 <p>To run tests you need <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops">Visual Studio Test</a> task.</p>
-<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/visual_studio_test_task.png" /></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Task Classic UI" src="../img/visual_studio_test_task.png" /></p>
 </details>
-<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<details class="example">
+<summary>YAML</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;VsTest</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Run</span><span class="nv"> </span><span class="s">Rapise</span><span class="nv"> </span><span class="s">Tests&#39;</span>
 <span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
@@ -11862,9 +11864,13 @@
 </code></pre></div>
 <h3 id="publish-test-results">Publish Test Results<a class="headerlink" href="#publish-test-results" title="Permanent link">&para;</a></h3>
 <p>To publish test results (for later review and downloading) use <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops">Publish Build Artifacts</a> task. Execution results are copied to <code>$(Agent.TempDirectory)\TestResults</code>.</p>
-<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/publish_testresults.png" /></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Task Classic UI" src="../img/publish_testresults.png" /></p>
 </details>
-<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<details class="example">
+<summary>YAML</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Publish</span><span class="nv"> </span><span class="s">Artifact:</span><span class="nv"> </span><span class="s">TestResults&#39;</span>
 <span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
@@ -11874,18 +11880,26 @@
 </details>
 <h3 id="pipeline-example">Pipeline Example<a class="headerlink" href="#pipeline-example" title="Permanent link">&para;</a></h3>
 <p>As a result of pipeline configuration you may end up with something like this:</p>
-<details class="example"><summary>Classic UI</summary><p><img alt="Pipeline Example" src="../img/azure_pipeline_example.png" /></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Pipeline Example" src="../img/azure_pipeline_example.png" /></p>
 </details>
 <h3 id="self-hosted-windows-agents">Self-hosted Windows Agents<a class="headerlink" href="#self-hosted-windows-agents" title="Permanent link">&para;</a></h3>
 <p>Azure DevOps can run tests in a hosted environment as well. If you plan to run tests inside your computer network download and connect <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a>.</p>
 <h3 id="logs-and-reports">Logs and Reports<a class="headerlink" href="#logs-and-reports" title="Permanent link">&para;</a></h3>
 <p>After every execution of the Visual Studio Test task you will get logs and reports.</p>
-<details class="example"><summary>Log</summary><p><img alt="Azure Logs" src="../img/azure_pipeline_execution_log.png" /></p>
+<details class="example">
+<summary>Log</summary>
+<p><img alt="Azure Logs" src="../img/azure_pipeline_execution_log.png" /></p>
 </details>
-<details class="example"><summary>Summary</summary><p><img alt="Azure Report" src="../img/azure_pipeline_execution_summary.png" /></p>
+<details class="example">
+<summary>Summary</summary>
+<p><img alt="Azure Report" src="../img/azure_pipeline_execution_summary.png" /></p>
 </details>
 <p>You can also see an individual report of a test (with attachments).</p>
-<details class="example"><summary>Attachments</summary><p><img alt="Azure Details" src="../img/azure_pipeline_execution_test_attachments.png" /></p>
+<details class="example">
+<summary>Attachments</summary>
+<p><img alt="Azure Details" src="../img/azure_pipeline_execution_test_attachments.png" /></p>
 </details>
 <p>Attachments include reports in Test Anything Protocol (TAP) and Rapise (TRP) formats, output and error logs and video recording (if enabled in .runsettings).</p>
 <h2 id="run-tests-with-vstestconsoleexe">Run Tests with VSTest.Console.exe<a class="headerlink" href="#run-tests-with-vstestconsoleexe" title="Permanent link">&para;</a></h2>
@@ -11920,9 +11934,13 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
 <h3 id="run-tests-in-parallel">Run Tests in Parallel<a class="headerlink" href="#run-tests-in-parallel" title="Permanent link">&para;</a></h3>
 <p>Visual Studio Test Platform can run tests in parallel. Users of vstest.console.exe will recognize this as the <a href="https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options">/Parallel switch</a>. It does so by launching a test host process on each available core, and handing it tests to execute.</p>
 <p>Here is how to set this switch in an Azure Pipeline (Visual Studio Test task).</p>
-<details class="example"><summary>Classic UI</summary><p><img alt="Task Classic UI" src="../img/azure_pipeline_vstest_parallel.png" /></p>
+<details class="example">
+<summary>Classic UI</summary>
+<p><img alt="Task Classic UI" src="../img/azure_pipeline_vstest_parallel.png" /></p>
 </details>
-<details class="example"><summary>YAML</summary><div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
+<details class="example">
+<summary>YAML</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VSTest@2</span>
 <span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;VsTest</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">testAssemblies&#39;</span>
 <span class="nt">inputs</span><span class="p">:</span>
@@ -11938,7 +11956,9 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
 <h3 id="multi-configuration-testing">Multi-Configuration Testing<a class="headerlink" href="#multi-configuration-testing" title="Permanent link">&para;</a></h3>
 <p>The Visual Studio Test task supports running tests in parallel across multiple agents (or machines). To run multiple jobs using multi-configuration option, you identify variables named multipliers, and specify a list of values for each multiplier. A separate job is run for each value combination. Define one or more variables on the Variables tab of the pipeline or in a variable group. Each variable, known in this context as a multiplier variable, must be defined as a comma-delimited list of the values you want to pass individually to the agents.</p>
 <p>Let's assume we want to run same set of tests on different versions of browsers. Here is the example.</p>
-<details class="example"><summary>Multiplier Configuration</summary><p><img alt="Multiplier" src="../img/azure_pipeline_multiplier.png" />
+<details class="example">
+<summary>Multiplier Configuration</summary>
+<p><img alt="Multiplier" src="../img/azure_pipeline_multiplier.png" />
 <img alt="Configuration" src="../img/azure_pipeline_multi_configuration.png" /></p>
 </details>
 <h2 id="run-tests-on-azure-and-report-to-spira">Run Tests on Azure and Report to Spira<a class="headerlink" href="#run-tests-on-azure-and-report-to-spira" title="Permanent link">&para;</a></h2>
@@ -12055,7 +12075,7 @@ Find <code>VSTest.Console.exe</code> in <code>C:\Tools\Microsoft.TestPlatform.16
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

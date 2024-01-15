@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Libraries/Global/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4055,6 +4025,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -12128,7 +12110,7 @@ record or learn this object, it is always automatically available in any test.</
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="_DoLoadObjects"></a>    </p>
 <h4 id="_doloadobjects">_DoLoadObjects<a class="headerlink" href="#_doloadobjects" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="nx">_DoLoadObjects</span><span class="p">(</span><span class="nx">objectsFilePath</span><span class="p">,</span><span class="w"> </span><span class="nx">checkDuplicates</span><span class="p">,</span><span class="w"> </span><span class="nx">addToMap</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">_DoLoadObjects</span><span class="p">(</span><span class="nx">objectsFilePath</span><span class="p">,</span><span class="w"> </span><span class="nx">checkDuplicates</span><span class="p">,</span><span class="w"> </span><span class="nx">addToMap</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12161,7 +12143,7 @@ record or learn this object, it is always automatically available in any test.</
 <p><a name="DoAnalogPlay"></a>    </p>
 <h4 id="doanalogplay">DoAnalogPlay<a class="headerlink" href="#doanalogplay" title="Permanent link">&para;</a></h4>
 <p>Performs Analog Playback of events recorded in a file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAnalogPlay</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">left</span><span class="p">,</span><span class="w"> </span><span class="nx">top</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoAnalogPlay</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">left</span><span class="p">,</span><span class="w"> </span><span class="nx">top</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12195,7 +12177,7 @@ record or learn this object, it is always automatically available in any test.</
 <h4 id="doappactivate">DoAppActivate<a class="headerlink" href="#doappactivate" title="Permanent link">&para;</a></h4>
 <p>Activates window with the specified title. I.e. Global.DoAppActivate("Calculator")
 will bring running instance (if any) of Windows Calculator to the foreground.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoAppActivate</span><span class="p">(</span><span class="nx">title</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoAppActivate</span><span class="p">(</span><span class="nx">title</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12220,7 +12202,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p><a name="DoClick"></a>    </p>
 <h4 id="doclick">DoClick<a class="headerlink" href="#doclick" title="Permanent link">&para;</a></h4>
 <p>Performs mouse click at the current position.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoClick</span><span class="p">(</span><span class="nx">clickType</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoClick</span><span class="p">(</span><span class="nx">clickType</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12243,7 +12225,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p><a name="DoCmd"></a>    </p>
 <h4 id="docmd">DoCmd<a class="headerlink" href="#docmd" title="Permanent link">&para;</a></h4>
 <p>Executes a BAT/CMD file specified in cmdLine. Optionally one may specify working dir. Requires Rapise 6.4+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoCmd</span><span class="p">(</span><span class="nx">cmdLine</span><span class="p">,</span><span class="w"> </span><span class="nx">wrkDir</span><span class="p">,</span><span class="w"> </span><span class="nx">wait</span><span class="p">,</span><span class="w"> </span><span class="nx">show</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoCmd</span><span class="p">(</span><span class="nx">cmdLine</span><span class="p">,</span><span class="w"> </span><span class="nx">wrkDir</span><span class="p">,</span><span class="w"> </span><span class="nx">wait</span><span class="p">,</span><span class="w"> </span><span class="nx">show</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12283,7 +12265,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p><a name="DoCompareJsObjects"></a>    </p>
 <h4 id="docomparejsobjects">DoCompareJsObjects<a class="headerlink" href="#docomparejsobjects" title="Permanent link">&para;</a></h4>
 <p>Compares two JavaScript objects and prints differences to the report.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoCompareJsObjects</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoCompareJsObjects</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span><span class="w"> </span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">obj2</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12318,7 +12300,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p><a name="DoDecrypt"></a>    </p>
 <h4 id="dodecrypt">DoDecrypt<a class="headerlink" href="#dodecrypt" title="Permanent link">&para;</a></h4>
 <p>Decrypts a piece of text.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoDecrypt</span><span class="p">(</span><span class="nx">encryptedText</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoDecrypt</span><span class="p">(</span><span class="nx">encryptedText</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12343,7 +12325,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p><a name="DoEncrypt"></a>    </p>
 <h4 id="doencrypt">DoEncrypt<a class="headerlink" href="#doencrypt" title="Permanent link">&para;</a></h4>
 <p>Encrypts a piece of text.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoEncrypt</span><span class="p">(</span><span class="nx">plainText</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoEncrypt</span><span class="p">(</span><span class="nx">plainText</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12368,7 +12350,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <p><a name="DoHorizontalScroll"></a>    </p>
 <h4 id="dohorizontalscroll">DoHorizontalScroll<a class="headerlink" href="#dohorizontalscroll" title="Permanent link">&para;</a></h4>
 <p>Simulates mouse horizontal wheel scroll gesture. Requires Rapise 6.5+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoHorizontalScroll</span><span class="p">(</span><span class="nx">scrollAmountInClicks</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoHorizontalScroll</span><span class="p">(</span><span class="nx">scrollAmountInClicks</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12392,7 +12374,7 @@ will bring running instance (if any) of Windows Calculator to the foreground.</p
 <h4 id="doinvoketest">DoInvokeTest<a class="headerlink" href="#doinvoketest" title="Permanent link">&para;</a></h4>
 <p>Invokes another test (aka subtest). The subtest should have the
 set of libraries as calling test. Otherwise it may lead to a conflict.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="nx">pathToTest</span><span class="p">,</span><span class="w"> </span><span class="nx">optionalParams</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="nx">pathToTest</span><span class="p">,</span><span class="w"> </span><span class="nx">optionalParams</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12434,7 +12416,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">);</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nx">DoInvokeTestParallel</span><span class="p">(</span><span class="nx">testPath</span><span class="p">,</span><span class="w"> </span><span class="nx">threads</span><span class="p">,</span><span class="w"> </span><span class="nx">commonParams</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTestParallel</span><span class="p">(</span><span class="nx">testPath</span><span class="p">,</span><span class="w"> </span><span class="nx">threads</span><span class="p">,</span><span class="w"> </span><span class="nx">commonParams</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12469,7 +12451,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <p><a name="DoKillByName"></a>    </p>
 <h4 id="dokillbyname">DoKillByName<a class="headerlink" href="#dokillbyname" title="Permanent link">&para;</a></h4>
 <p>Terminates a given process.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoKillByName</span><span class="p">(</span><span class="nx">processName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoKillByName</span><span class="p">(</span><span class="nx">processName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12494,7 +12476,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <p><a name="DoKillByPid"></a>    </p>
 <h4 id="dokillbypid">DoKillByPid<a class="headerlink" href="#dokillbypid" title="Permanent link">&para;</a></h4>
 <p>Terminates a given process or the last process created by DoLaunch if 'pid' is not specified.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoKillByPid</span><span class="p">(</span><span class="nx">pid</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoKillByPid</span><span class="p">(</span><span class="nx">pid</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12520,7 +12502,7 @@ set of libraries as calling test. Otherwise it may lead to a conflict.</p>
 <h4 id="dolaunch">DoLaunch<a class="headerlink" href="#dolaunch" title="Permanent link">&para;</a></h4>
 <p>Executes a command specified in cmdLine. Optionally one may specify working dir, and window name
 to attach if it is already launched.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">cmdLine</span><span class="p">,</span><span class="w"> </span><span class="nx">wrkDir</span><span class="p">,</span><span class="w"> </span><span class="nx">attachIfExists</span><span class="p">,</span><span class="w"> </span><span class="nx">attachToWindow</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="nx">cmdLine</span><span class="p">,</span><span class="w"> </span><span class="nx">wrkDir</span><span class="p">,</span><span class="w"> </span><span class="nx">attachIfExists</span><span class="p">,</span><span class="w"> </span><span class="nx">attachToWindow</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12560,7 +12542,7 @@ to attach if it is already launched.</p>
 <p><a name="DoLoadObjects"></a>    </p>
 <h4 id="doloadobjects">DoLoadObjects<a class="headerlink" href="#doloadobjects" title="Permanent link">&para;</a></h4>
 <p>Loads objects from external .objects.js file.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoLoadObjects</span><span class="p">(</span><span class="nx">objectsFilePath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLoadObjects</span><span class="p">(</span><span class="nx">objectsFilePath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12585,7 +12567,7 @@ to attach if it is already launched.</p>
 <p><a name="DoMaximizeWindow"></a>    </p>
 <h4 id="domaximizewindow">DoMaximizeWindow<a class="headerlink" href="#domaximizewindow" title="Permanent link">&para;</a></h4>
 <p>Maximizes window that matches given title and class name. Requires Rapise 7.2+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMaximizeWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoMaximizeWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12647,7 +12629,7 @@ numbers to create a final value for the buttons parameter, use only one number f
     vbYes = 6 - Yes button was clicked. 
     vbNo = 7 - No button was clicked. 
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMessageBox</span><span class="p">(</span><span class="nx">prompt</span><span class="p">,</span><span class="w"> </span><span class="nx">buttons</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoMessageBox</span><span class="p">(</span><span class="nx">prompt</span><span class="p">,</span><span class="w"> </span><span class="nx">buttons</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12677,7 +12659,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoMinimizeWindow"></a>    </p>
 <h4 id="dominimizewindow">DoMinimizeWindow<a class="headerlink" href="#dominimizewindow" title="Permanent link">&para;</a></h4>
 <p>Minimizes window that matches given title and class name. Requires Rapise 7.2+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMinimizeWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoMinimizeWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12707,7 +12689,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoMouseMove"></a>    </p>
 <h4 id="domousemove">DoMouseMove<a class="headerlink" href="#domousemove" title="Permanent link">&para;</a></h4>
 <p>Moves mouse to the specified position.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoMouseMove</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">duration</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoMouseMove</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">duration</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12740,7 +12722,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoPlayManual"></a>    </p>
 <h4 id="doplaymanual">DoPlayManual<a class="headerlink" href="#doplaymanual" title="Permanent link">&para;</a></h4>
 <p>Executes a manual test. Results are shown in the report of the calling test.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoPlayManual</span><span class="p">(</span><span class="nx">rmtFilePath</span><span class="p">,</span><span class="w"> </span><span class="nx">rmtParams</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoPlayManual</span><span class="p">(</span><span class="nx">rmtFilePath</span><span class="p">,</span><span class="w"> </span><span class="nx">rmtParams</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12770,7 +12752,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoRestoreWindow"></a>    </p>
 <h4 id="dorestorewindow">DoRestoreWindow<a class="headerlink" href="#dorestorewindow" title="Permanent link">&para;</a></h4>
 <p>Restores window that matches given title and class name. Requires Rapise 7.2+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRestoreWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoRestoreWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12800,7 +12782,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoRunTest"></a>    </p>
 <h4 id="doruntest">DoRunTest<a class="headerlink" href="#doruntest" title="Permanent link">&para;</a></h4>
 <p>Executes a given test in isolated environment (new process is created). Requires Rapise 8.1+.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRunTest</span><span class="p">(</span><span class="nx">testPath</span><span class="p">,</span><span class="w"> </span><span class="nx">optionalParams</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoRunTest</span><span class="p">(</span><span class="nx">testPath</span><span class="p">,</span><span class="w"> </span><span class="nx">optionalParams</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12828,7 +12810,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoRunTestSet"></a>    </p>
 <h4 id="doruntestset">DoRunTestSet<a class="headerlink" href="#doruntestset" title="Permanent link">&para;</a></h4>
 <p>Executes a test set. Results are shown in the report of the calling test.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoRunTestSet</span><span class="p">(</span><span class="nx">testSetFilePath</span><span class="p">,</span><span class="w"> </span><span class="nx">testSetParams</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoRunTestSet</span><span class="p">(</span><span class="nx">testSetFilePath</span><span class="p">,</span><span class="w"> </span><span class="nx">testSetParams</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12856,7 +12838,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoSendKeys"></a>    </p>
 <h4 id="dosendkeys">DoSendKeys<a class="headerlink" href="#dosendkeys" title="Permanent link">&para;</a></h4>
 <p>Sends series of keystrokes to a currently focused application.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">keys</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12879,7 +12861,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoSendText"></a>    </p>
 <h4 id="dosendtext">DoSendText<a class="headerlink" href="#dosendtext" title="Permanent link">&para;</a></h4>
 <p>Sends text to the active application as is (while SendKeys also supports sending special keys). Requires Rapise 6.5+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSendText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoSendText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12902,7 +12884,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoSetScreenResolution"></a>    </p>
 <h4 id="dosetscreenresolution">DoSetScreenResolution<a class="headerlink" href="#dosetscreenresolution" title="Permanent link">&para;</a></h4>
 <p>Sets screen resolution. Use to run UI tests in unattended RDP sessions.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSetScreenResolution</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoSetScreenResolution</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12930,7 +12912,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <p><a name="DoSleep"></a>    </p>
 <h4 id="dosleep">DoSleep<a class="headerlink" href="#dosleep" title="Permanent link">&para;</a></h4>
 <p>Pauses execution for given number of milliseconds (1000 = 1 second).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoSleep</span><span class="p">(</span><span class="nx">millis</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoSleep</span><span class="p">(</span><span class="nx">millis</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12954,7 +12936,7 @@ numbers to create a final value for the buttons parameter, use only one number f
 <h4 id="dotrim">DoTrim<a class="headerlink" href="#dotrim" title="Permanent link">&para;</a></h4>
 <p>Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. 
 Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff].</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoTrim</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nb">global</span><span class="p">,</span><span class="w"> </span><span class="nx">trimChars</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoTrim</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span><span class="w"> </span><span class="nb">global</span><span class="p">,</span><span class="w"> </span><span class="nx">trimChars</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12989,7 +12971,7 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 <p><a name="DoTypePassword"></a>    </p>
 <h4 id="dotypepassword">DoTypePassword<a class="headerlink" href="#dotypepassword" title="Permanent link">&para;</a></h4>
 <p>Types encrypted password into a control which has a focus.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoTypePassword</span><span class="p">(</span><span class="nx">encryptedPassword</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoTypePassword</span><span class="p">(</span><span class="nx">encryptedPassword</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13014,7 +12996,7 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 <p><a name="DoVerticalScroll"></a>    </p>
 <h4 id="doverticalscroll">DoVerticalScroll<a class="headerlink" href="#doverticalscroll" title="Permanent link">&para;</a></h4>
 <p>Simulates mouse vertical wheel scroll gesture. Requires Rapise 6.5+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoVerticalScroll</span><span class="p">(</span><span class="nx">scrollAmountInClicks</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoVerticalScroll</span><span class="p">(</span><span class="nx">scrollAmountInClicks</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13038,7 +13020,7 @@ Whitespace characters are [\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029
 <h4 id="dowaitfor">DoWaitFor<a class="headerlink" href="#dowaitfor" title="Permanent link">&para;</a></h4>
 <p>Waits for object specified by objectId to become available. Function returns if object
 was found or timeout.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoWaitFor</span><span class="p">(</span><span class="nx">objectId</span><span class="p">,</span><span class="w"> </span><span class="nx">timeout</span><span class="p">,</span><span class="w"> </span><span class="nx">sleepTimeIfFound</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="nx">objectId</span><span class="p">,</span><span class="w"> </span><span class="nx">timeout</span><span class="p">,</span><span class="w"> </span><span class="nx">sleepTimeIfFound</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13087,7 +13069,7 @@ in the case of timeout.</p>
 <span class="p">}</span>
 </code></pre></div>
 Use the callback if you need to check more complex condition than equality.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoWaitForProperty</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span><span class="w"> </span><span class="nx">getterName</span><span class="p">,</span><span class="w"> </span><span class="nx">propValue</span><span class="p">,</span><span class="w"> </span><span class="nx">timeout</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitForProperty</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span><span class="w"> </span><span class="nx">getterName</span><span class="p">,</span><span class="w"> </span><span class="nx">propValue</span><span class="p">,</span><span class="w"> </span><span class="nx">timeout</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13133,7 +13115,7 @@ Use the callback if you need to check more complex condition than equality.</p>
 <h4 id="dowaitforwindow">DoWaitForWindow<a class="headerlink" href="#dowaitforwindow" title="Permanent link">&para;</a></h4>
 <p>Waits for window specified by title/class name to become available. Function returns if window
 was found or timeout. Requires Rapise 7.2+</p>
-<div class="highlight"><pre><span></span><code><span class="nx">DoWaitForWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">,</span><span class="w"> </span><span class="nx">timeout</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitForWindow</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">className</span><span class="p">,</span><span class="w"> </span><span class="nx">timeout</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13168,7 +13150,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetClipboardText"></a>    </p>
 <h4 id="getclipboardtext">GetClipboardText<a class="headerlink" href="#getclipboardtext" title="Permanent link">&para;</a></h4>
 <p>Reads text stored in the windows clipboard.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetClipboardText</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetClipboardText</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>string: Clipboard text</p>
@@ -13176,7 +13158,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetCurrentDir"></a>    </p>
 <h4 id="getcurrentdir">GetCurrentDir<a class="headerlink" href="#getcurrentdir" title="Permanent link">&para;</a></h4>
 <p>Gets current directory path.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetCurrentDir</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetCurrentDir</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>string: Path of the current directory.</p>
@@ -13184,7 +13166,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetFileAsByteArray"></a>    </p>
 <h4 id="getfileasbytearray">GetFileAsByteArray<a class="headerlink" href="#getfileasbytearray" title="Permanent link">&para;</a></h4>
 <p>Reads file and returns its content as array of bytes. May be useful for binary files and for passing data to web services.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetFileAsByteArray</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetFileAsByteArray</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13209,7 +13191,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetFirstDayOfWeek"></a>    </p>
 <h4 id="getfirstdayofweek">GetFirstDayOfWeek<a class="headerlink" href="#getfirstdayofweek" title="Permanent link">&para;</a></h4>
 <p>Returns first day of week for current user.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetFirstDayOfWeek</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetFirstDayOfWeek</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>number: 0 - Sunday, 1 - Monday.</p>
@@ -13217,7 +13199,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetFullPath"></a>    </p>
 <h4 id="getfullpath">GetFullPath<a class="headerlink" href="#getfullpath" title="Permanent link">&para;</a></h4>
 <p>Constructs an absolute file name using working directory (WORKDIR) of the test.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetFullPath</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetFullPath</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13242,7 +13224,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetOsOwner"></a>    </p>
 <h4 id="getosowner">GetOsOwner<a class="headerlink" href="#getosowner" title="Permanent link">&para;</a></h4>
 <p>Reads OS registered owner from the registry.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetOsOwner</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetOsOwner</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>string: OS registered owner.</p>
@@ -13250,7 +13232,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetOsPath"></a>    </p>
 <h4 id="getospath">GetOsPath<a class="headerlink" href="#getospath" title="Permanent link">&para;</a></h4>
 <p>Returns OS root path.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetOsPath</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetOsPath</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>string: OS root path without the trailing backslash, e.g. 'C:\Windows'.</p>
@@ -13258,7 +13240,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetOsType"></a>    </p>
 <h4 id="getostype">GetOsType<a class="headerlink" href="#getostype" title="Permanent link">&para;</a></h4>
 <p>Reads OS type from the registry.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetOsType</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetOsType</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>string: OS type string.</p>
@@ -13266,7 +13248,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetOsVersion"></a>    </p>
 <h4 id="getosversion">GetOsVersion<a class="headerlink" href="#getosversion" title="Permanent link">&para;</a></h4>
 <p>Reads OS service pack version from the registry.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetOsVersion</span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetOsVersion</span><span class="p">()</span>
 </code></pre></div>
 <p><strong>Returns:</strong></p>
 <p>string: Service pack version.</p>
@@ -13274,7 +13256,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetProperty"></a>    </p>
 <h4 id="getproperty">GetProperty<a class="headerlink" href="#getproperty" title="Permanent link">&para;</a></h4>
 <p>Reads property value from file 'optConfig' if set, or from %WORKDIR%\Config.json otherwise.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">defValue</span><span class="p">,</span><span class="w"> </span><span class="nx">configPath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">defValue</span><span class="p">,</span><span class="w"> </span><span class="nx">configPath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13309,7 +13291,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <p><a name="GetRapiseVersion"></a>    </p>
 <h4 id="getrapiseversion">GetRapiseVersion<a class="headerlink" href="#getrapiseversion" title="Permanent link">&para;</a></h4>
 <p>Reads Rapise version. If 'optMinVersion' is specified, then returns true/false depending on 'optMinVersion' less than actual Rapise version.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetRapiseVersion</span><span class="p">(</span><span class="nx">optMinVersion</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetRapiseVersion</span><span class="p">(</span><span class="nx">optMinVersion</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13362,7 +13344,7 @@ was found or timeout. Requires Rapise 7.2+</p>
                 <tr><td>Templates</td><td>The directory that serves as a common repository for document templates.</td></tr> 
 </table>
 
-<div class="highlight"><pre><span></span><code><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="nx">folder</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetSpecialFolderPath</span><span class="p">(</span><span class="nx">folder</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13388,7 +13370,7 @@ was found or timeout. Requires Rapise 7.2+</p>
 <h4 id="gettestcasepath">GetTestCasePath<a class="headerlink" href="#gettestcasepath" title="Permanent link">&para;</a></h4>
 <p>Finds full path to a Test Case.
 The Path is resolved for file path or for TC alias name.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">GetTestCasePath</span><span class="p">(</span><span class="nx">pathToTest</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">GetTestCasePath</span><span class="p">(</span><span class="nx">pathToTest</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13413,7 +13395,7 @@ The Path is resolved for file path or for TC alias name.</p>
 <p><a name="SetClipboardText"></a>    </p>
 <h4 id="setclipboardtext">SetClipboardText<a class="headerlink" href="#setclipboardtext" title="Permanent link">&para;</a></h4>
 <p>Updates clipboard text</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetClipboardText</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">SetClipboardText</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13438,7 +13420,7 @@ The Path is resolved for file path or for TC alias name.</p>
 <p><a name="SetConfigPath"></a>    </p>
 <h4 id="setconfigpath">SetConfigPath<a class="headerlink" href="#setconfigpath" title="Permanent link">&para;</a></h4>
 <p>Set default path for config file instead of default %WORKDIR%\Config.json. Supports .xlsx and .json file format. This path is used by default for further calls to Global.GetProperty and Global.SetProperty</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetConfigPath</span><span class="p">(</span><span class="nx">defPath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">SetConfigPath</span><span class="p">(</span><span class="nx">defPath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13463,7 +13445,7 @@ The Path is resolved for file path or for TC alias name.</p>
 <p><a name="SetFileAsByteArray"></a>    </p>
 <h4 id="setfileasbytearray">SetFileAsByteArray<a class="headerlink" href="#setfileasbytearray" title="Permanent link">&para;</a></h4>
 <p>Creates or rewrites file and fills with contents of the provided byte array.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetFileAsByteArray</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">bytes</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">SetFileAsByteArray</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">bytes</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13493,7 +13475,7 @@ The Path is resolved for file path or for TC alias name.</p>
 <p><a name="SetProperty"></a>    </p>
 <h4 id="setproperty">SetProperty<a class="headerlink" href="#setproperty" title="Permanent link">&para;</a></h4>
 <p>Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. If the file does not exist it will be created.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">configPath</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">SetProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">configPath</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13528,7 +13510,7 @@ The Path is resolved for file path or for TC alias name.</p>
 <p><a name="SetWindowPosition"></a>    </p>
 <h4 id="setwindowposition">SetWindowPosition<a class="headerlink" href="#setwindowposition" title="Permanent link">&para;</a></h4>
 <p>Change position of the window with the specified title (and class, if specified).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetWindowPosition</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">windowTitle</span><span class="p">,</span><span class="w"> </span><span class="nx">windowClass</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">SetWindowPosition</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">windowTitle</span><span class="p">,</span><span class="w"> </span><span class="nx">windowClass</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13566,7 +13548,7 @@ The Path is resolved for file path or for TC alias name.</p>
 <p><a name="SetWindowSize"></a>    </p>
 <h4 id="setwindowsize">SetWindowSize<a class="headerlink" href="#setwindowsize" title="Permanent link">&para;</a></h4>
 <p>Change size of the window with the specified title (and class, if specified).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SetWindowSize</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">windowTitle</span><span class="p">,</span><span class="w"> </span><span class="nx">windowClass</span><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="nx">Global</span><span class="p">.</span><span class="nx">SetWindowSize</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">windowTitle</span><span class="p">,</span><span class="w"> </span><span class="nx">windowClass</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13705,7 +13687,7 @@ The Path is resolved for file path or for TC alias name.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

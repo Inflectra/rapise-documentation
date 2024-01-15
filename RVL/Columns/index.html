@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/RVL/Columns/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../../Guide/cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -4123,6 +4093,18 @@
     <li class="md-nav__item">
       <a href="../RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11197,9 +11179,148 @@
                 
                 <h1 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link">&para;</a></h1>
 <p>RVL script is a spreadsheet containing set of 7 columns in fixed order:</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Columns" src="../img/Columns.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#</td>
+<td>My scenario goes here</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Global</td>
+<td>DoLaunch</td>
+<td>cmdLine</td>
+<td>string</td>
+<td>calc</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>wrkDir</td>
+<td>string</td>
+<td>.</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>attachIfExists</td>
+<td>boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>attachToWindow</td>
+<td>string</td>
+<td>Calculator</td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>_1</td>
+<td>DoClick</td>
+<td>x</td>
+<td>number</td>
+<td>18</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>y</td>
+<td>number</td>
+<td>15</td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Add</td>
+<td>DoClick</td>
+<td>x</td>
+<td>number</td>
+<td>21</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>y</td>
+<td>number</td>
+<td>19</td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>_2</td>
+<td>DoClick</td>
+<td>x</td>
+<td>number</td>
+<td>14</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>y</td>
+<td>number</td>
+<td>13</td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Equals</td>
+<td>DoClick</td>
+<td>x</td>
+<td>number</td>
+<td>12</td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>y</td>
+<td>number</td>
+<td>23</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <h2 id="default-columns">Default Columns<a class="headerlink" href="#default-columns" title="Permanent link">&para;</a></h2>
-<details class="abstract"><summary>1 - Flow</summary><p>This column is dedicated to specifying structural information such as blocks, branches (If-Else), loops.</p>
+<details class="abstract">
+<summary>1 - Flow</summary>
+<p>This column is dedicated to specifying structural information such as blocks, branches (If-Else), loops.</p>
 <p>Also it contains information about single row and multi row comments. Possible values are limited by the list:</p>
 <ul>
 <li><code>\#</code> or <code>//</code> - single row  comment</li>
@@ -11208,7 +11329,9 @@
 <li><code>If</code> - conditional branch. Row type must be <code>Condition</code>. The row may be followed with one or more <code>ElseIf</code> statements, zero or one <code>Else</code> statement and then should end with <code>End</code>.</li>
 </ul>
 </details>
-<details class="abstract"><summary>2 - Type</summary><p>Type of operation specified in this row. One of: </p>
+<details class="abstract">
+<summary>2 - Type</summary>
+<p>Type of operation specified in this row. One of: </p>
 <ul>
 <li><code>Action</code> - row defines an action. Action is a call for operation for one of the objects. Object is defined in the next column. See <a href="../Actions/">Actions</a>.</li>
 <li><code>Param</code> - signals that this row contains action parameter or condition parameter defined in last 3 columns (<code>ParamName</code>, <code>ParamType</code> and <code>ParamValue</code>).</li>
@@ -11218,13 +11341,21 @@
 <li><code>Condition</code></li>
 </ul>
 </details>
-<details class="abstract"><summary>3 - Object</summary><p>Id of the object to be used for an action. Rapise provides set of predefined global objects and objects recorded/learned from the AUT.</p>
+<details class="abstract">
+<summary>3 - Object</summary>
+<p>Id of the object to be used for an action. Rapise provides set of predefined global objects and objects recorded/learned from the AUT.</p>
 </details>
-<details class="abstract"><summary>4 - Action</summary><p>One of the actions applicable to the object selected in the previous column: <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code> etc.</p>
+<details class="abstract">
+<summary>4 - Action</summary>
+<p>One of the actions applicable to the object selected in the previous column: <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code> etc.</p>
 </details>
-<details class="abstract"><summary>5 - ParamName</summary><p>Name of a parameter to the action selected in the previous column. See <a href="../Params/">Params</a> for more details.</p>
+<details class="abstract">
+<summary>5 - ParamName</summary>
+<p>Name of a parameter to the action selected in the previous column. See <a href="../Params/">Params</a> for more details.</p>
 </details>
-<details class="abstract"><summary>6 - ParamType</summary><p>The type of a parameter determines valid input for the next <code>ParamValue</code> column.</p>
+<details class="abstract">
+<summary>6 - ParamType</summary>
+<p>The type of a parameter determines valid input for the next <code>ParamValue</code> column.</p>
 <ul>
 <li><code>bool</code> - <em>ParamValue</em> should be <code>true</code> or <code>false</code>,</li>
 <li><code>string</code> - <em>ParamValue</em> is a text string</li>
@@ -11233,15 +11364,131 @@
 <li><em><code>Map Name</code></em> - <em>ParamValue</em> is a column name from the given <code>Map</code>. Usually this feature is used for data driven testing.</li>
 </ul>
 </details>
-<details class="abstract"><summary>7 - ParamValue</summary><p>This columns defines actual values passed to actions. Depends on the <em>ParamType</em>.</p>
+<details class="abstract">
+<summary>7 - ParamValue</summary>
+<p>This columns defines actual values passed to actions. Depends on the <em>ParamType</em>.</p>
 </details>
 <p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p>
 <h2 id="adding-custom-columns">Adding Custom Columns<a class="headerlink" href="#adding-custom-columns" title="Permanent link">&para;</a></h2>
 <p>By default RVL always displays column <code>H</code>. It is sometimes useful (to store temp value, add a note etc).</p>
 <p>One may show more columns. To do this open the file (i.e. <code>Main.rvl.xlsx</code>) in the spreadsheet editor or Excel and define some values in columns <code>I</code>, <code>J</code> etc respectively:</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Excel Columns" src="../img/CustomColumnsExcel.png" /></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Transcript</label><div class="tabbed-content">
+<p>Sheet name: RVL</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+<th>G</th>
+<th>H</th>
+<th>I</th>
+<th>J</th>
+<th>K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flow</td>
+<td>Type</td>
+<td>Object</td>
+<td>Action</td>
+<td>ParamName</td>
+<td>ParamType</td>
+<td>ParamValue</td>
+<td>H</td>
+<td>I</td>
+<td>J</td>
+<td>K</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>Now if you re-open this document in RVL these columns will also be displayed:</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Excel Columns" src="../img/CustomColumnsRVL.png" /></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Transcript</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+<th>H</th>
+<th>I</th>
+<th>J</th>
+<th>K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>The usage of this columns is up to you. You may use them just for information or make them 'live' by assigning custom actions as will be described in the next section.</p>
 <h2 id="custom-column-actions">Custom Column Actions<a class="headerlink" href="#custom-column-actions" title="Permanent link">&para;</a></h2>
 <p>RVL is flexible and one may use more columns to implement custom script logic.</p>
@@ -11386,7 +11633,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

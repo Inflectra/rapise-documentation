@@ -25,7 +25,7 @@
         <link rel="canonical" href="https://rapisedoc.inflectra.com/Guide/object_tree/">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-6.2.8">
     
     
       
@@ -113,36 +113,6 @@
         </div>
       </div>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -484,7 +454,7 @@
   
     <li class="md-nav__item">
       <a href="../cheatsheet/" class="md-nav__link">
-        Cheatsheet
+        Cheat Sheet
       </a>
     </li>
   
@@ -2635,6 +2605,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#shared-file-context-menu" class="md-nav__link">
+    Shared File Context Menu
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4275,6 +4252,18 @@
     <li class="md-nav__item">
       <a href="../../RVL/RVL_DoPlay/" class="md-nav__link">
         Input Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RVL/Cheatsheet/" class="md-nav__link">
+        RVL Cheat Sheet
       </a>
     </li>
   
@@ -11418,6 +11407,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#shared-file-context-menu" class="md-nav__link">
+    Shared File Context Menu
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11519,17 +11515,23 @@
 <h3 id="test-cases-node">Test Cases Node<a class="headerlink" href="#test-cases-node" title="Permanent link">&para;</a></h3>
 <p>The node represents framework <a href="../Frameworks/frameworks/#test-cases">test cases</a>.</p>
 <h4 id="test-cases-root-context-menu">Test Cases Root Context Menu<a class="headerlink" href="#test-cases-root-context-menu" title="Permanent link">&para;</a></h4>
-<p><img alt="Test Cases Root" src="../img/object_tree_context_testcases.png" width="232px" /></p>
+<p><img alt="Test Cases Root" src="../img/object_tree_context_testcases.png" width="266px" /></p>
 <ul>
 <li><strong>Create Test Case</strong> - Add new <a href="../Frameworks/frameworks/#test-cases">test case</a> to the root.</li>
 <li><strong>Import Test Case</strong> - <a href="../Frameworks/frameworks/#importing-test-cases">Import Test Case</a> to the root.</li>
+<li><strong>Play All</strong> - Run all root test cases except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Play All (Recursive)</strong> - Run all test cases except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Reveal in Explorer</strong> - Open <code>TestCases</code> folder in file explorer.</li>
 <li><strong>Reload</strong> - Reload all test cases (may be needed if test were synchronized with remote repository).</li>
 </ul>
 <h4 id="test-cases-group-context-menu">Test Cases Group Context Menu<a class="headerlink" href="#test-cases-group-context-menu" title="Permanent link">&para;</a></h4>
-<p><img alt="Test Cases Group" src="../img/object_tree_context_testcasegroup.png" width="230px" /></p>
+<p><img alt="Test Cases Group" src="../img/object_tree_context_testcasegroup.png" width="259px" /></p>
 <ul>
 <li><strong>Create Test Case</strong> - Add new <a href="../Frameworks/frameworks/#test-cases">test case</a> to this group.</li>
 <li><strong>Import Test Case</strong> - <a href="../Frameworks/frameworks/#importing-test-cases">Import Test Case</a> to this group.</li>
+<li><strong>Play All</strong> - Run all test cases from this folder except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Play All (Recursive)</strong> - Run all test cases in this folder and its subfolders except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Reveal in Explorer</strong> - Open <code>TestCases</code> folder in file explorer.</li>
 </ul>
 <h4 id="test-case-context-menu">Test Case Context Menu<a class="headerlink" href="#test-case-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Test Case" src="../img/object_tree_context_tc.png" width="278px" /></p>
@@ -11545,10 +11547,11 @@
 </ul>
 <h4 id="test-case-tags">Test Case Tags<a class="headerlink" href="#test-case-tags" title="Permanent link">&para;</a></h4>
 <p>When you right-click with the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key pressed, the context menu will have two additional options:</p>
-<p><img alt="Test Case Tags" src="../img/object_tree_tc_tags.png" width="166px" /></p>
+<p><img alt="Test Case Tags" src="../img/object_tree_tc_tags.png" width="247px" /></p>
 <ul>
 <li><strong>draft</strong>: Toggles the <code>draft</code> state of the test case. This is useful for marking a test case as incomplete.</li>
 <li><strong>template</strong>: Marks the test case as a template. Template test cases are not displayed in the <a href="../spira_dashboard_2/">Spira Dashboard</a>. It is assumed that templates will be used to create test cases using the <strong>Clone</strong> functionality.</li>
+<li><strong>skip</strong>: Ignore this test case when using <strong>Play All</strong> or <strong>Play All (Recursive)</strong></li>
 </ul>
 <p>The <code>draft</code> and <code>template</code> states affect the display of the context menu:</p>
 <p>Default:</p>
@@ -11560,6 +11563,8 @@
 <h4 id="test-case-object-repository-context-menu">Test Case Object Repository Context Menu<a class="headerlink" href="#test-case-object-repository-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Objects" src="../img/object_tree_context_tc_objects.png" width="251px" /></p>
 <ul>
+<li><strong>Collapse All</strong> - Collapse all object windows.</li>
+<li><strong>Expand All</strong> - Expand all object windows.</li>
 <li><strong>Reload</strong> - Re-read information from this Object Repository.</li>
 <li><strong>Object Manager</strong> - Opens the <a href="../object_manager/">Object Manager</a>.</li>
 </ul>
@@ -11579,13 +11584,25 @@
 <h3 id="shared-node">Shared Node<a class="headerlink" href="#shared-node" title="Permanent link">&para;</a></h3>
 <p>The node displays shared assets, including common JavaScript files (<code>*.js</code>), Object Repositories (<code>Objects.js</code>), Spreadsheets (<code>*.xlsx</code>, <code>*.xls</code>, <code>*.csv</code>), WebService definitions  (<code>*.rest</code>, <code>*.soap</code>) and other file types (<code>*.json</code>, <code>*.txt</code>, etc.).</p>
 <h4 id="shared-node-context-menu">Shared Node Context Menu<a class="headerlink" href="#shared-node-context-menu" title="Permanent link">&para;</a></h4>
-<p><img alt="Shared" src="../img/object_tree_context_shared.png" width="235px" /></p>
+<p><img alt="Shared" src="../img/object_tree_context_shared.png" width="266px" /></p>
 <ul>
 <li><strong>New JavaScript File...</strong> - create and add a <code>.js</code> file.</li>
 <li><strong>New Spreadsheet...</strong> - create and add a <code>.xlsx</code> file.</li>
+<li><strong>New Text File...</strong> - create and add a <code>.txt</code> file.</li>
 <li><strong>New JSON File...</strong> - create and add a <code>.json</code> file.</li>
 <li><strong>New File...</strong> - create and add other type of file.</li>
+<li><strong>New Dropdowns.xlsx</strong> - create <a href="../Frameworks/frameworks/#dropdownsxlsx">Dropdowns.xlsx</a>. This item is only visible if there is no <code>Dropdowns.xlsx</code> yet.</li>
+<li><strong>Reveal In Explorer</strong> - open <code>Shared</code> folder in file explorer.</li>
+<li><strong>Import File</strong> - Import a file (usually spreadsheet or text)</li>
 <li><strong>Reload</strong> - Update a shared files view.</li>
+</ul>
+<h4 id="shared-file-context-menu">Shared File Context Menu<a class="headerlink" href="#shared-file-context-menu" title="Permanent link">&para;</a></h4>
+<p><img alt="Shared File" src="../img/object_tree_context_shared_file.png" width="244px" /></p>
+<ul>
+<li><strong>Rename</strong> - change the name of a file.</li>
+<li><strong>Make a Copy</strong> - create a duplicate shared file with identical contents.</li>
+<li><strong>Remove from Disk</strong> - deletes the file from Test as well as from the disk.</li>
+<li><strong>Reveal in Explorer</strong> - opens the file explorer and highlights this particular file.</li>
 </ul>
 <h3 id="modules-page-objects-node">Modules / Page Objects Node<a class="headerlink" href="#modules-page-objects-node" title="Permanent link">&para;</a></h3>
 <p>The node contains <a href="../Frameworks/pageobjects/">Module / Page Objects</a> defined in this testing framework.</p>
@@ -11731,7 +11748,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.be24ec5b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
