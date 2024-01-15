@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
@@ -30,60 +29,65 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
+
+```javascript
+value = SeS('SomeLWTextComponent').GetText()
+
+SeS('SomeLWTextComponent').SetText()
+```
+
+
 <a name="Value"></a>
 #### Value
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetValue, SetValue
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeLWTextComponent').GetValue()
+
+SeS('SomeLWTextComponent').SetValue()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSetText"></a>    
 #### DoSetText
 

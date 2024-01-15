@@ -11,13 +11,11 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Actions](#actions) | Gets Actions object. |
@@ -73,14 +71,13 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Actions"></a>    
 #### Actions
 

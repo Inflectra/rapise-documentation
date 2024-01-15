@@ -17,27 +17,24 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelect](#doselect) | Selects specified panel. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelect"></a>    
 #### DoSelect
 

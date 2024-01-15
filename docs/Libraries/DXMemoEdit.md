@@ -19,55 +19,55 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXMemoEdit').GetText()
+
+SeS('SomeDXMemoEdit').SetText(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSetText"></a>    
 #### DoSetText
 

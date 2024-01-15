@@ -15,55 +15,53 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSimpleList').GetItemCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 
@@ -101,27 +99,24 @@ boolean: 'true' if operation is successful, 'false' otherwise
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoExpand](#doexpand) | Expands an item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoExpand"></a>    
 #### DoExpand
 
@@ -159,55 +154,53 @@ boolean: 'true' if operation was successful, 'false' otherwise
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoCheckItem](#docheckitem) | Checks an item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSimpleList').GetItemCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoCheckItem"></a>    
 #### DoCheckItem
 

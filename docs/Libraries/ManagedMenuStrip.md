@@ -19,23 +19,20 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [IsEnabled](#isenabled) | Checks if given menu item is enabled. | GetIsEnabled |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickItem](#doclickitem) | Perform Click on the navigation item |
@@ -47,18 +44,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="IsEnabled"></a>
 #### IsEnabled
 
-
 Checks if given menu item is enabled.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -67,20 +61,24 @@ Checks if given menu item is enabled.
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetIsEnabled
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeManagedMenuStrip').GetIsEnabled(/**string*/ path, /**string*/ separator)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickItem"></a>    
 #### DoClickItem
 

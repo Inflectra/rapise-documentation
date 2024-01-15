@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemsCount](#itemscount) | Number of items. | GetItemsCount |  |
@@ -32,76 +31,81 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemsCount"></a>
 #### ItemsCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemsCount
-      
-    
+
+```javascript
+value = SeS('SomeDXTabControl').GetItemsCount()
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeDXTabControl').GetSelectedIndex()
+
+SeS('SomeDXTabControl').SetSelectedIndex(/**number*/ index)
+```
+
+
 <a name="SelectedTab"></a>
 #### SelectedTab
 
-
 Text of the selected tab
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedTab, SetSelectedTab
-      
-    
+
+```javascript
+value = SeS('SomeDXTabControl').GetSelectedTab()
+
+SeS('SomeDXTabControl').SetSelectedTab(/*string*/ tabName)
+```
+
+
 <a name="TabName"></a>
 #### TabName
 
-
 Name of the tab at index
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -109,20 +113,24 @@ Name of the tab at index
 | index | number |  |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetTabName
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXTabControl').GetTabName(/**number*/ index)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 

@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [SelectedColor](#selectedcolor) | Selected color of the object | GetSelectedColor | SetSelectedColor |
@@ -31,13 +30,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectColor](#doselectcolor) | Selects a color. |
@@ -45,62 +42,73 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="SelectedColor"></a>
 #### SelectedColor
 
-
 Selected color of the object
 
-      
-  
-      
+
+
 Type: struct
-      
-      
+
+
 Accessors: GetSelectedColor, SetSelectedColor
-      
-    
+
+```javascript
+value = SeS('SomeDXColorEdit').GetSelectedColor()
+
+SeS('SomeDXColorEdit').SetSelectedColor(value)
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText, SetSelectedText
-      
-    
+
+```javascript
+value = SeS('SomeDXColorEdit').GetSelectedText()
+
+SeS('SomeDXColorEdit').SetSelectedText(value)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXColorEdit').GetText()
+
+SeS('SomeDXColorEdit').SetText(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectColor"></a>    
 #### DoSelectColor
 

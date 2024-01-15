@@ -11,13 +11,11 @@ Database object. Use it to read and write ADO data sources.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAttach](#doattach) | Attaches to a Database with given ADO connection string and SQL query. |
@@ -33,14 +31,13 @@ Database object. Use it to read and write ADO data sources.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAttach"></a>    
 #### DoAttach
 

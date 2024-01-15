@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Expanded](#expanded) | State of a tab with name. | GetExpanded |  |
@@ -29,13 +28,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoCollapse](#docollapse) | Collapses specific tab in a tab control. |
@@ -43,18 +40,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 State of a tab with name. Returns 'true' if the tab is expanded, 'false' - otherwise.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -62,36 +56,40 @@ State of a tab with name. Returns 'true' if the tab is expanded, 'false' - other
 | tabName | string | Name of a tab. |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXTabControl').GetExpanded(/**string*/ tabName)
+```
+
+
 <a name="ItemsCount"></a>
 #### ItemsCount
 
-
 Number of tabs.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemsCount
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXTabControl').GetItemsCount()
+```
+
+
 <a name="TabName"></a>
 #### TabName
 
-
 Name of a tab at index
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -99,20 +97,24 @@ Name of a tab at index
 | index | number | Index of a tab. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetTabName
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDomDynamicsAXTabControl').GetTabName(/**number*/ index)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoCollapse"></a>    
 #### DoCollapse
 

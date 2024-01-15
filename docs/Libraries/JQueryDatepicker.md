@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Month](#month) | Gets the currently selected month | GetMonth |  |
@@ -28,13 +27,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoNextMonth](#donextmonth) | Changes to the next month. |
@@ -43,47 +40,50 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Month"></a>
 #### Month
 
-
 Gets the currently selected month
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetMonth
-      
-    
+
+```javascript
+value = SeS('SomeJQueryDatepicker').GetMonth()
+```
+
+
 <a name="Year"></a>
 #### Year
 
-
 Gets the currently selected year
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetYear
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJQueryDatepicker').GetYear()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoNextMonth"></a>    
 #### DoNextMonth
 

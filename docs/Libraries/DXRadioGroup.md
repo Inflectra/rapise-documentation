@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
@@ -31,75 +30,80 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects Item |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeDXRadioGroup').GetItemCount()
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeDXRadioGroup').GetSelectedIndex()
+
+SeS('SomeDXRadioGroup').SetSelectedIndex(value)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the label of the object
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXRadioGroup').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 

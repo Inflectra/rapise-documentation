@@ -15,10 +15,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell | SetCell |
@@ -34,13 +33,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell |
@@ -48,18 +45,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -68,36 +62,44 @@ Text of the specified cell.
 | columnIndex | number | Zero-based index if the row. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell, SetCell
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetCell(/**number*/rowIndex, /**number*/columnIndex)
+
+SeS('SomeFarPointGrid').SetCell(/**number*/rowIndex, /**number*/columnIndex, /**string*/value)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount, SetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetColumnCount()
+
+SeS('SomeFarPointGrid').SetColumnCount(/**number*/value)
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -105,36 +107,44 @@ Caption of a column.
 | columnIndex | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName, SetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetColumnName(/**number*/columnIndex)
+
+SeS('SomeFarPointGrid').SetColumnName(/**number*/columnIndex, /**string*/value)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount, SetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetRowCount()
+
+SeS('SomeFarPointGrid').SetRowCount(/**number*/value)
+```
+
+
 <a name="SelectedCells"></a>
 #### SelectedCells
 
-
 Selected cells.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -144,95 +154,113 @@ Selected cells.
 | cellSep |  |  |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetSelectedCells, SetSelectedCells
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetSelectedCells(/**boolean*/asArray, /**string*/rowcolSep, /**string*/cellSep)
+
+SeS('SomeFarPointGrid').SetSelectedCells(/**number*/top, /**number*/left, /**number*/bottom, /**number*/right)
+```
+
+
 <a name="SelectedColumn"></a>
 #### SelectedColumn
 
-
 Index of the selected column.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumn
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetSelectedColumn()
+```
+
+
 <a name="SelectedColumnCount"></a>
 #### SelectedColumnCount
 
-
 Number of selected columns.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetSelectedColumnCount()
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Index of the selected row.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetSelectedRow()
+```
+
+
 <a name="SelectedRowCount"></a>
 #### SelectedRowCount
 
-
 Number of selected rows.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRowCount
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGrid').GetSelectedRowCount()
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the currently focused cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeFarPointGrid').GetText()
+
+SeS('SomeFarPointGrid').SetText(/**string*/value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

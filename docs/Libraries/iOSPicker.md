@@ -15,55 +15,53 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [SelectedItem](#selecteditem) | Text of the selected item. | GetSelectedItem |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects an item with the specified name. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="SelectedItem"></a>
 #### SelectedItem
 
-
 Text of the selected item.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItem
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeiOSPicker').GetSelectedItem()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 

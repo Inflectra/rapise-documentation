@@ -11,13 +11,11 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddColumn](#doaddcolumn) | Appends a column with specified name. |
@@ -48,14 +46,13 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddColumn"></a>    
 #### DoAddColumn
 

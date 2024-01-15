@@ -19,23 +19,20 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [IsPlaying](#isplaying) | true if animation is playing, 'false' otherwise | GetIsPlaying |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoPlay](#doplay) | Plays the animation of this object. |
@@ -43,32 +40,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="IsPlaying"></a>
 #### IsPlaying
 
-
 true if animation is playing, 'false' otherwise
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetIsPlaying
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeAnimationControl').GetIsPlaying()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoPlay"></a>    
 #### DoPlay
 

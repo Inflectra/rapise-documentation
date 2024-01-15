@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
@@ -39,13 +38,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddSelection](#doaddselection) | Extends selection. |
@@ -57,48 +54,49 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetCell(/**Number*/row, /**Number*/col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetColumnCount()
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -106,36 +104,40 @@ Caption of a column.
 | col | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetColumnName(/**number*/ col)
+```
+
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetItemCount()
+```
+
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -143,21 +145,23 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetItemIndexByName(name)
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -166,51 +170,57 @@ Returns item name by its index.'false' if name is not found.
 | column | number | Zero-based index of a column |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetItemNameByIndex(index, column)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetRowCount()
+```
+
+
 <a name="SelectedColumnCount"></a>
 #### SelectedColumnCount
 
-
 Number of selected columns.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetSelectedColumnCount()
+```
+
+
 <a name="SelectedColumns"></a>
 #### SelectedColumns
 
-
 Returns string of indexes delimited by separator or array of indexes of selected columns.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -219,21 +229,23 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetSelectedColumns
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetSelectedColumns(asArray, separator)
+```
+
+
 <a name="SelectedIndices"></a>
 #### SelectedIndices
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -242,21 +254,23 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedIndices
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetSelectedIndices(asArray, separator)
+```
+
+
 <a name="SelectedItems"></a>
 #### SelectedItems
 
-
 Text of all the selected items in a single string. Items are divided by ';' separator.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -265,50 +279,58 @@ Text of all the selected items in a single string. Items are divided by ';' sepa
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItems
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetSelectedItems(asArray, separator)
+```
+
+
 <a name="SelectionCount"></a>
 #### SelectionCount
 
-
 Number of selected items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectionCount
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetSelectionCount()
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the currently focused cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeC1TrueDBList').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 

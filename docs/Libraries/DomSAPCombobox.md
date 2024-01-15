@@ -17,55 +17,53 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Text](#text) | Text of the object, 'false' if text can not be read. | GetText |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDomSAPCombobox').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 

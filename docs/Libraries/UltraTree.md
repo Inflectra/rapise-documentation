@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [CellText](#celltext) | Cell text for the cell specified by rowPath and col | GetCellText |  |
@@ -37,13 +36,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Click the cell specified by row name or index and column name or index |
@@ -54,18 +51,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="CellText"></a>
 #### CellText
 
-
 Cell text for the cell specified by rowPath and col
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -74,21 +68,23 @@ Cell text for the cell specified by rowPath and col
 | column | number \| string | Column index or column name. Default is 0<br>Optional. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCellText
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetCellText(/**string|number*/ rowPath, /**number|string*/ column)
+```
+
+
 <a name="Checked"></a>
 #### Checked
 
-
 Checked state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -98,21 +94,23 @@ Checked state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetChecked
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetChecked(path, separator, pathType)
+```
+
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Number of children of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -122,21 +120,23 @@ Number of children of the selected node or a node specified by the input paramet
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetChildrenCount(path, separator, pathType)
+```
+
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 Expanded state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -146,21 +146,23 @@ Expanded state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetExpanded(path, separator, pathType)
+```
+
+
 <a name="IndexPath"></a>
 #### IndexPath
 
-
 Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6', 'false' if fails
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -170,21 +172,23 @@ Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetIndexPath
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetIndexPath(path, separator, pathType)
+```
+
+
 <a name="NodeElement"></a>
 #### NodeElement
 
 
 
-
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -194,21 +198,23 @@ Accessors: GetIndexPath
 | column | number \| string | Column index or column name. Default is 0<br>Optional. |
 
 
-  
-      
+
+
 Type: undefined @param {string|number} path Path of the top level node to select. If integer number is passed then the top level node is searched by index.
-      
-      
+
+
 Accessors: GetNodeElement
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetNodeElement(path, separator, pathType, column)
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -218,21 +224,23 @@ Text of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetNodeText(path, separator, pathType)
+```
+
+
 <a name="Selected"></a>
 #### Selected
 
-
 Selected state of the selected node or a node specified by the input parameters
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -242,35 +250,41 @@ Selected state of the selected node or a node specified by the input parameters
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelected
-      
-    
+
+```javascript
+value = SeS('SomeUltraTree').GetSelected(path, separator, pathType)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 ;-combined text of all selected nodes.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeUltraTree').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

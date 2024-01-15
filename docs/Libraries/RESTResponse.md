@@ -11,23 +11,20 @@ This is a JavaScript wrapper for RESTResponse
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** |
 | ------------ | --------------- |
 | [GetResponseBodyObject](#getresponsebodyobject) | The body of the HTTP response as a JSON object |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [GetHeader](#getheader) | HTTP header |
@@ -38,30 +35,27 @@ This is a JavaScript wrapper for RESTResponse
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="GetResponseBodyObject"></a>
 #### GetResponseBodyObject
 
-
 The body of the HTTP response as a JSON object
 
-      
-  
-      
+
+
 Type: 
-      
-      
-    
-  
-  
+
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="GetHeader"></a>    
 #### GetHeader
 

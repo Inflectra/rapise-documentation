@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
@@ -28,46 +27,43 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickItem](#doclickitem) | Performs click on the item |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmUnifiedInterfaceList').GetItemCount()
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -75,20 +71,24 @@ Returns item name by its index.'false' if name is not found.
 | index | number | Index of the item |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDomDynamicsCrmUnifiedInterfaceList').GetItemNameByIndex(/**number*/ index)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickItem"></a>    
 #### DoClickItem
 

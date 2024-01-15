@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemChecked](#itemchecked) | Check if item is checked. | GetItemChecked |  |
@@ -29,13 +28,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoCheckItem](#docheckitem) | Checks items of this object. |
@@ -44,18 +41,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemChecked"></a>
 #### ItemChecked
 
-
 Check if item is checked.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -63,36 +57,40 @@ Check if item is checked.
 | nameCaptionIndex | string \| number | index, name or caption of the item. |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetItemChecked
-      
-    
+
+```javascript
+value = SeS('SomeMSComList').GetItemChecked(nameCaptionIndex)
+```
+
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeMSComList').GetItemCount()
+```
+
+
 <a name="ItemSelected"></a>
 #### ItemSelected
 
-
 Check if item is selected.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -100,20 +98,24 @@ Check if item is selected.
 | nameCaptionIndex | string \| number | index, name or caption of the item. |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetItemSelected
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeMSComList').GetItemSelected(nameCaptionIndex)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoCheckItem"></a>    
 #### DoCheckItem
 

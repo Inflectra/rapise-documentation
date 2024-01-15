@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Increment](#increment) | The value of increment for spin. | GetIncrement | SetIncrement |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoDown](#dodown) | Decrements the Value of an object. |
@@ -48,92 +45,111 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Increment"></a>
 #### Increment
 
-
 The value of increment for spin.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetIncrement, SetIncrement
-      
-    
+
+```javascript
+value = SeS('SomeDXSpinEdit').GetIncrement()
+
+SeS('SomeDXSpinEdit').SetIncrement(value)
+```
+
+
 <a name="MaxValue"></a>
 #### MaxValue
 
-
 Maximum value of the object or 'false' if value can't be read.
 
-      
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetMaxValue, SetMaxValue
-      
-    
+
+```javascript
+value = SeS('SomeDXSpinEdit').GetMaxValue()
+
+SeS('SomeDXSpinEdit').SetMaxValue(value)
+```
+
+
 <a name="MinValue"></a>
 #### MinValue
 
-
 Minimum value of the object or 'false' if value can't be read.
 
-      
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetMinValue, SetMinValue
-      
-    
+
+```javascript
+value = SeS('SomeDXSpinEdit').GetMinValue()
+
+SeS('SomeDXSpinEdit').SetMinValue(value)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
+
+```javascript
+value = SeS('SomeDXSpinEdit').GetText()
+
+SeS('SomeDXSpinEdit').SetText(value)
+```
+
+
 <a name="Value"></a>
 #### Value
 
-
 Value of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetValue, SetValue
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXSpinEdit').GetValue()
+
+SeS('SomeDXSpinEdit').SetValue(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoDown"></a>    
 #### DoDown
 

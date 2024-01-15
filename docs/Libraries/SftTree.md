@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ChildrenCount](#childrencount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount |  |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickNode](#doclicknode) | Clicks specific node in the tree. |
@@ -49,18 +46,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Number of children of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -70,21 +64,23 @@ Number of children of the selected node or a node specified by the input paramet
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeSftTree').GetChildrenCount(path, separator, pathType)
+```
+
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 Expanded state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -94,36 +90,42 @@ Expanded state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded, SetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeSftTree').GetExpanded(path, separator, pathType)
+
+SeS('SomeSftTree').SetExpanded(/**boolean*/ value, path, separator, pathType)
+```
+
+
 <a name="ItemsCount"></a>
 #### ItemsCount
 
-
 Number of rows in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemsCount
-      
-    
+
+```javascript
+value = SeS('SomeSftTree').GetItemsCount()
+```
+
+
 <a name="Node"></a>
 #### Node
 
-
 Selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -133,21 +135,23 @@ Selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetNode
-      
-    
+
+```javascript
+value = SeS('SomeSftTree').GetNode(path, separator, pathType)
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -158,21 +162,25 @@ Text of the selected node or a node specified by the input parameters.
 | column | number | Zero-based index of a column.<br>Optional, Default: "0". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetNodeText, SetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeSftTree').GetNodeText(path, separator, pathType, column)
+
+SeS('SomeSftTree').SetNodeText(/**string*/ value, path, separator, pathType, column)
+```
+
+
 <a name="Selected"></a>
 #### Selected
 
-
 Selected state of the selected node or a node specified by the input parameters
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -182,21 +190,25 @@ Selected state of the selected node or a node specified by the input parameters
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelected, SetSelected
-      
-    
+
+```javascript
+value = SeS('SomeSftTree').GetSelected(path, separator, pathType)
+
+SeS('SomeSftTree').SetSelected(/**boolean*/ value, path, separator, pathType)
+```
+
+
 <a name="SiblingsAfter"></a>
 #### SiblingsAfter
 
-
 Number of siblings after the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -206,20 +218,24 @@ Number of siblings after the selected node or a node specified by the input para
 | pathType |  |  |
 
 
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSiblingsAfter
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSftTree').GetSiblingsAfter(path, separator, pathType)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickNode"></a>    
 #### DoClickNode
 

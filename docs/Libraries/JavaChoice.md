@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
@@ -30,60 +29,65 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeJavaChoice').GetSelectedIndex()
+
+SeS('SomeJavaChoice').SetSelectedIndex(value)
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText, SetSelectedText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJavaChoice').GetSelectedText()
+
+SeS('SomeJavaChoice').SetSelectedText(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 

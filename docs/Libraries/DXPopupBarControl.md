@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Item](#item) | Caption of the item specified by index | GetItem |  |
@@ -30,31 +29,26 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickItem](#doclickitem) | Performs click on the navigation item |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Item"></a>
 #### Item
 
-
 Caption of the item specified by index
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -62,35 +56,41 @@ Caption of the item specified by index
 | ind | number | Index of an item to get caption |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetItem
-      
-    
+
+```javascript
+value = SeS('SomeDXPopupBarControl').GetItem(/**number*/ind)
+```
+
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXPopupBarControl').GetItemCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickItem"></a>    
 #### DoClickItem
 

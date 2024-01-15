@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
@@ -29,13 +28,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoExpand](#doexpand) | Expands the combobox. |
@@ -43,62 +40,73 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtComboBox').GetSelectedIndex()
+
+SeS('SomeGWTExtComboBox').SetSelectedIndex(index)
+```
+
+
 <a name="SelectedItem"></a>
 #### SelectedItem
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItem, SetSelectedItem
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtComboBox').GetSelectedItem()
+
+SeS('SomeGWTExtComboBox').SetSelectedItem(name)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeGWTExtComboBox').GetText()
+
+SeS('SomeGWTExtComboBox').SetText(name)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoExpand"></a>    
 #### DoExpand
 

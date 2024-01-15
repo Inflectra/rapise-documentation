@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCaption](#itemcaption) | The caption of the button on the toolbar | GetItemCaption |  |
@@ -30,13 +29,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickItem](#doclickitem) | ClickItem |
@@ -44,18 +41,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCaption"></a>
 #### ItemCaption
 
-
 The caption of the button on the toolbar
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -63,36 +57,40 @@ The caption of the button on the toolbar
 | nameCaptionIndex | number \| string | Index, name or caption of the item. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetItemCaption
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlToolbar').GetItemCaption(/**number|string*/ nameCaptionIndex)
+```
+
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 The number of the items in the toolbar
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlToolbar').GetItemCount()
+```
+
+
 <a name="ItemStyle"></a>
 #### ItemStyle
 
-
 The style of the button on the toolbar
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -100,21 +98,23 @@ The style of the button on the toolbar
 | nameCaptionIndex | number \| string | Index, name or caption of the item. |
 
 
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemStyle
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlToolbar').GetItemStyle(/**number|string*/ nameCaptionIndex)
+```
+
+
 <a name="ItemValue"></a>
 #### ItemValue
 
-
 Returns 'true' if element with nameCaptionIndex has value
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -122,20 +122,24 @@ Returns 'true' if element with nameCaptionIndex has value
 | nameCaptionIndex | number \| string | Index, name or caption of the item. |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetItemValue
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeMSComCtlToolbar').GetItemValue(/**number|string*/ nameCaptionIndex)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickItem"></a>    
 #### DoClickItem
 

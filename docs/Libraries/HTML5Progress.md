@@ -17,41 +17,40 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="MaxValue"></a>
 #### MaxValue
 
-
 Maximum value of the object or 'false' if value can't be read.
 
-      
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetMaxValue
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeHTML5Progress').GetMaxValue()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-    
+  
 

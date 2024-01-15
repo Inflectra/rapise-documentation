@@ -15,10 +15,9 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
@@ -27,61 +26,60 @@ Extends [iOSObject](iOSObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectTab](#doselecttab) | Selects the tab by name or index. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeiOSTabBar').GetItemCount()
+```
+
+
 <a name="SelectedTab"></a>
 #### SelectedTab
 
-
 Selected tab name.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedTab
-      
-    
+
+```javascript
+value = SeS('SomeiOSTabBar').GetSelectedTab()
+```
+
+
 <a name="TabName"></a>
 #### TabName
 
-
 Name of the tab at index
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -89,20 +87,24 @@ Name of the tab at index
 | index | number | Index of the tab. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetTabName
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeiOSTabBar').GetTabName(index)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 

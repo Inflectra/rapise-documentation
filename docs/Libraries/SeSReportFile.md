@@ -11,34 +11,31 @@ Used to attach a file to the report.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [SeSReportFile](#sesreportfile) | Used to attach a file to the report. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="SeSReportFile"></a>    
 #### SeSReportFile
 
 Used to attach a file to the report.
 
 ```javascript
-SeSReportFile.SeSReportFile(path, caption)
+Tester.Message("Log File", [new SeSReportFile("d:\\temp\\app.log", "Application Log File")])
 ```
 
 

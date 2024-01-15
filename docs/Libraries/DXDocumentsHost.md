@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [DocName](#docname) | Name of the doc at index | GetDocName |  |
@@ -30,31 +29,26 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectDoc](#doselectdoc) | Selects a doc by name. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="DocName"></a>
 #### DocName
 
-
 Name of the doc at index
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -62,35 +56,41 @@ Name of the doc at index
 | index |  |  |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetDocName
-      
-    
+
+```javascript
+value = SeS('SomeDXDocumentsHost').GetDocName(/**number*/ index)
+```
+
+
 <a name="ItemsCount"></a>
 #### ItemsCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemsCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXDocumentsHost').GetItemsCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectDoc"></a>    
 #### DoSelectDoc
 

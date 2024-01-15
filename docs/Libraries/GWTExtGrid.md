@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
@@ -33,31 +32,26 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -66,36 +60,40 @@ Text of the specified cell.
 | col | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtGrid').GetCell(/**number*/row, /**number*/col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtGrid').GetColumnCount()
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -103,80 +101,92 @@ Caption of a column.
 | col | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtGrid').GetColumnName(/**number*/col)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtGrid').GetRowCount()
+```
+
+
 <a name="SelectedColumn"></a>
 #### SelectedColumn
 
-
 Index of the selected column.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumn
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtGrid').GetSelectedColumn()
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Index of the selected row.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtGrid').GetSelectedRow()
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the currently focused cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeGWTExtGrid').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

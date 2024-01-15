@@ -15,10 +15,9 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
@@ -26,13 +25,11 @@ Extends [iOSObject](iOSObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoNextPage](#donextpage) | Navigates to next page. |
@@ -41,47 +38,50 @@ Extends [iOSObject](iOSObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeiOSPageIndicator').GetItemCount()
+```
+
+
 <a name="PageIndex"></a>
 #### PageIndex
 
-
 Selected page index.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetPageIndex
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeiOSPageIndicator').GetPageIndex()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoNextPage"></a>    
 #### DoNextPage
 

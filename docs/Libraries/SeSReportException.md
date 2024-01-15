@@ -11,34 +11,31 @@ Used to show exception in the report.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [SeSReportException](#sesreportexception) | Used to show exception in the report. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="SeSReportException"></a>    
 #### SeSReportException
 
 Used to show exception in the report.
 
 ```javascript
-SeSReportException.SeSReportException(e)
+Tester.Assert("Connection Failed", false, new SeSReportException(ex))
 ```
 
 

@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
@@ -31,31 +30,26 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -63,50 +57,62 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeOFTabBar').GetItemIndexByName(name)
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeOFTabBar').GetSelectedIndex()
+
+SeS('SomeOFTabBar').SetSelectedIndex(value)
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText, SetSelectedText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeOFTabBar').GetSelectedText()
+
+SeS('SomeOFTabBar').SetSelectedText(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 

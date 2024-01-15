@@ -15,10 +15,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [AutomationId](#automationid) | Automation ID of UI Automation object | GetAutomationId |  |
@@ -39,13 +38,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClick](#doclick) | Performs left click at the center of an object. |
@@ -58,33 +55,32 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="AutomationId"></a>
 #### AutomationId
 
-
 Automation ID of UI Automation object
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetAutomationId
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetAutomationId()
+```
+
+
 <a name="ChildAt"></a>
 #### ChildAt
 
-
 Object for nth child of this object's UI Automation node
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -92,215 +88,245 @@ Object for nth child of this object's UI Automation node
 | ind | number | Zero-based index for a required child |
 
 
-  
-      
+
+
 Type: UIAObject
-      
-      
+
+
 Accessors: GetChildAt
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetChildAt(ind)
+```
+
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Number of UI Automation nodes within current node
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetChildrenCount()
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetHeight()
+```
+
+
 <a name="IndexInParent"></a>
 #### IndexInParent
 
-
 Object's order index in parent UI Automation node
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetIndexInParent
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetIndexInParent()
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 Name of of UI Automation object
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetName()
+```
+
+
 <a name="NextSibling"></a>
 #### NextSibling
 
-
 Object for UI Automation next sibling node
 
-      
-  
-      
+
+
 Type: UIAObject
-      
-      
+
+
 Accessors: GetNextSibling
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetNextSibling()
+```
+
+
 <a name="Parent"></a>
 #### Parent
 
-
 Object for UI Automation parent node
 
-      
-  
-      
+
+
 Type: UIAObject
-      
-      
+
+
 Accessors: GetParent
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetParent()
+```
+
+
 <a name="PrevSibling"></a>
 #### PrevSibling
 
-
 Object for UI Automation previous sibling node
 
-      
-  
-      
+
+
 Type: UIAObject
-      
-      
+
+
 Accessors: GetPrevSibling
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetPrevSibling()
+```
+
+
 <a name="TypeName"></a>
 #### TypeName
 
-
 Type name of UI Automation object
 
-      
-  
-      
+
+
 Type: String
-      
-      
+
+
 Accessors: GetTypeName
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetTypeName()
+```
+
+
 <a name="Value"></a>
 #### Value
 
-
 Value of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetValue
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetValue()
+```
+
+
 <a name="Visible"></a>
 #### Visible
 
-
 Returns `true` if the element is visible, otherwise - `false`. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetVisible
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetVisible()
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetWidth()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeUIAObject').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeUIAObject').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClick"></a>    
 #### DoClick
 

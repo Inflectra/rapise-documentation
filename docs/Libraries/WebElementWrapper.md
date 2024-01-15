@@ -11,13 +11,11 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Clear](#clear) | Clears the content of this element. |
@@ -61,14 +59,13 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Clear"></a>    
 #### Clear
 

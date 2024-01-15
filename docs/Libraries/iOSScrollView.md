@@ -15,13 +15,11 @@ Extends [iOSObject](iOSObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoScrollDown](#doscrolldown) | Scrolls content to show lower area. |
@@ -32,14 +30,13 @@ Extends [iOSObject](iOSObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoScrollDown"></a>    
 #### DoScrollDown
 

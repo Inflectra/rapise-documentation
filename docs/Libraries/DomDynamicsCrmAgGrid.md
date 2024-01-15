@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
@@ -34,13 +33,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell. |
@@ -48,18 +45,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -68,36 +62,40 @@ Text of the specified cell.
 | col | string \| number | Name of a column or zero-based column index. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetCell(/**number|string*/row, /**string|number*/col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetColumnCount()
+```
+
+
 <a name="ColumnIndex"></a>
 #### ColumnIndex
 
-
 Index of a column with a given name.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -105,21 +103,23 @@ Index of a column with a given name.
 | columnName | string | Name of a column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnIndex
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetColumnIndex(/**string*/columnName)
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -127,66 +127,74 @@ Caption of a column.
 | columnIndex | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetColumnName(/**number*/columnIndex)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetRowCount()
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Index of the selected row.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetSelectedRow()
+```
+
+
 <a name="SelectedRowCount"></a>
 #### SelectedRowCount
 
-
 Number of selected rows.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRowCount
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetSelectedRowCount()
+```
+
+
 <a name="SelectedRows"></a>
 #### SelectedRows
 
-
 Selected rows.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -195,20 +203,24 @@ Selected rows.
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetSelectedRows
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDomDynamicsCrmAgGrid').GetSelectedRows(/**boolean*/asArray, /**string*/separator)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

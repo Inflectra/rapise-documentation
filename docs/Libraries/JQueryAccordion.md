@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemsCount](#itemscount) | Gets the number of tabs | GetItemsCount |  |
@@ -29,75 +28,78 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectTab](#doselecttab) | Selects a specific tab of the accordion. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemsCount"></a>
 #### ItemsCount
 
-
 Gets the number of tabs
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemsCount
-      
-    
+
+```javascript
+value = SeS('SomeJQueryAccordion').GetItemsCount()
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Gets the index of the selected tab
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeJQueryAccordion').GetSelectedIndex()
+```
+
+
 <a name="SelectedTab"></a>
 #### SelectedTab
 
-
 Gets the text of the selected tab
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedTab
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJQueryAccordion').GetSelectedTab()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 

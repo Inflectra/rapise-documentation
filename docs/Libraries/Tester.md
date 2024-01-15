@@ -11,10 +11,9 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** |
 | ------------ | --------------- |
 | [Fail](#fail) | Test status, test failed. |
@@ -24,13 +23,11 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [AddImageToReport](#addimagetoreport) | Adds image to the report. |
@@ -96,69 +93,60 @@ Tester object. Use it to perform assertions during test playback and output rele
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Fail"></a>
 #### Fail
 
-
 Test status, test failed. Constant, equal to 0.
 
-      
-  
-      
+
+
 Type: number
-      
-      
-    
+
+
+
 <a name="Info"></a>
 #### Info
 
-
 Test status, test is neither passed nor failed. Constant, equal to -2.
 
-      
-  
-      
+
+
 Type: number
-      
-      
-    
+
+
+
 <a name="Pass"></a>
 #### Pass
 
-
 Test status, test passed. Constant, equal to 1.
 
-      
-  
-      
+
+
 Type: number
-      
-      
-    
+
+
+
 <a name="Unresolved"></a>
 #### Unresolved
 
-
 Test status, test status is unresolved, test terminated unexpectedly. Constant, equal to -1.
 
-      
-  
-      
+
+
 Type: number
-      
-      
-    
-  
-  
+
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="AddImageToReport"></a>    
 #### AddImageToReport
 

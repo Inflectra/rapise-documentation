@@ -13,10 +13,9 @@ This behavior pattern implements REST service client.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
@@ -42,13 +41,11 @@ This behavior pattern implements REST service client.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoExecute](#doexecute) | Executes a REST service operation, substitutes any of the provided parameter values if necessary. |
@@ -59,14 +56,12 @@ This behavior pattern implements REST service client.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Credential"></a>
 #### Credential
-
 
 The HTTP Basic Authentication Credentials (if any).
 Sample code:
@@ -80,52 +75,61 @@ SeS("Operation_Name").SetCredential(credential);
 
 Another way is to pass user name and password as first and second parameter respectively, e.g. `SeS("Operation_Name").SetCredential("fredbloggs", "MyPassword");`
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetCredential, SetCredential
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetCredential()
+
+SeS('SomeRESTService').SetCredential(value, value2)
+```
+
+
 <a name="Method"></a>
 #### Method
 
-
 The HTTP Method being used for the request (GET, POST, etc.)
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetMethod, SetMethod
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetMethod()
+
+SeS('SomeRESTService').SetMethod(value)
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 The name of the request operation
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetName()
+```
+
+
 <a name="Parameter"></a>
 #### Parameter
 
-
 Get/Set single parameter by name.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -133,17 +137,22 @@ Get/Set single parameter by name.
 | name | string | Name of a parameter. |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetParameter, SetParameter
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetParameter(/**string*/name)
+
+SeS('SomeRESTService').SetParameter(/**string*/name, /**string*/value)
+```
+
+
 <a name="Parameters"></a>
 #### Parameters
-
 
 The list of parameters available for this request url.
 Sample code:
@@ -158,78 +167,98 @@ for (var i = 0; i < parameters.length; i++)
 }
 ```
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetParameters, SetParameters
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetParameters()
+
+SeS('SomeRESTService').SetParameters(name, value)
+```
+
+
 <a name="ProxyHost"></a>
 #### ProxyHost
 
-
 Proxy host name. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyHost, SetProxyHost
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetProxyHost()
+
+SeS('SomeRESTService').SetProxyHost(value)
+```
+
+
 <a name="ProxyPort"></a>
 #### ProxyPort
 
-
 Proxy port number. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyPort, SetProxyPort
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetProxyPort()
+
+SeS('SomeRESTService').SetProxyPort(value)
+```
+
+
 <a name="ProxyPwd"></a>
 #### ProxyPwd
 
-
 Proxy password. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyPwd, SetProxyPwd
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetProxyPwd()
+
+SeS('SomeRESTService').SetProxyPwd(value)
+```
+
+
 <a name="ProxyUser"></a>
 #### ProxyUser
 
-
 Proxy user name. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyUser, SetProxyUser
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetProxyUser()
+
+SeS('SomeRESTService').SetProxyUser(value)
+```
+
+
 <a name="RequestBodyObject"></a>
 #### RequestBodyObject
-
 
 The body of the HTTP request as a JavaScript object.
 Sample code:
@@ -243,37 +272,44 @@ SeS("LibraryInformationSystem_Insert_Book").SetRequestBodyObject(book);
 SeS("LibraryInformationSystem_Insert_Book").DoExecute({"session_id":sessionId});
 ```
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetRequestBodyObject, SetRequestBodyObject
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetRequestBodyObject()
+
+SeS('SomeRESTService').SetRequestBodyObject(value)
+```
+
+
 <a name="RequestBodyText"></a>
 #### RequestBodyText
 
-
 The body of the HTTP request in raw text format
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetRequestBodyText, SetRequestBodyText
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetRequestBodyText()
+
+SeS('SomeRESTService').SetRequestBodyText(value)
+```
+
+
 <a name="RequestHeader"></a>
 #### RequestHeader
 
-
 Get/Set Single HTTP header by name.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -281,17 +317,22 @@ Get/Set Single HTTP header by name.
 | name | string | HTTP Header name. |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetRequestHeader, SetRequestHeader
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetRequestHeader(/**string*/name)
+
+SeS('SomeRESTService').SetRequestHeader(/**string*/name, /**string*/value)
+```
+
+
 <a name="RequestHeaders"></a>
 #### RequestHeaders
-
 
 The list of HTTP headers that are part of this request.
 Sample code:
@@ -305,18 +346,22 @@ for (var i = 0; i < headers.length; i++)
 }
 ```
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetRequestHeaders, SetRequestHeaders
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetRequestHeaders()
+
+SeS('SomeRESTService').SetRequestHeaders(value, optValueVal)
+```
+
+
 <a name="ResponseBodyObject"></a>
 #### ResponseBodyObject
-
 
 The body of the HTTP response deserialized from JSON into a JavaScript object.
 Sample code:
@@ -326,33 +371,37 @@ SeS("LibraryInformationSystem_Get_BookById").DoExecute({"session_id":sessionId, 
 var book = SeS("LibraryInformationSystem_Get_BookById").GetResponseBodyObject();
 ```
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetResponseBodyObject
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetResponseBodyObject(jsonPath, info)
+```
+
+
 <a name="ResponseBodyText"></a>
 #### ResponseBodyText
 
-
 The body of the HTTP response in raw text format
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetResponseBodyText
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetResponseBodyText()
+```
+
+
 <a name="ResponseHeaders"></a>
 #### ResponseHeaders
-
 
 Returns the list of HTTP headers returned from the HTTP response.
 Sample code:
@@ -366,81 +415,94 @@ for (var i = 0; i < headers.length; i++)
 }
 ```
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetResponseHeaders
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetResponseHeaders()
+```
+
+
 <a name="ResponseIsErrorStatus"></a>
 #### ResponseIsErrorStatus
 
-
 Returns 'true 'if an HTTP error code came back from the web service
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetResponseIsErrorStatus
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetResponseIsErrorStatus()
+```
+
+
 <a name="ResponseStatusCode"></a>
 #### ResponseStatusCode
 
-
 HTTP response code
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetResponseStatusCode
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetResponseStatusCode()
+```
+
+
 <a name="ResponseStatusText"></a>
 #### ResponseStatusText
 
-
 Text version of the response code
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetResponseStatusText
-      
-    
+
+```javascript
+value = SeS('SomeRESTService').GetResponseStatusText()
+```
+
+
 <a name="Url"></a>
 #### Url
 
-
 The URL being used to access the web service
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetUrl, SetUrl
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeRESTService').GetUrl()
+
+SeS('SomeRESTService').SetUrl(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoExecute"></a>    
 #### DoExecute
 

@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
@@ -30,13 +29,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell. |
@@ -45,18 +42,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -65,36 +59,40 @@ Text of the specified cell.
 | col | string \| number | Name of a column or zero-based column index. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXGrid').GetCell(/**number|string*/row, /**string|number*/col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXGrid').GetColumnCount()
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -102,35 +100,41 @@ Caption of a column.
 | columnIndex | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXGrid').GetColumnName(/**number*/columnIndex)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDomDynamicsAXGrid').GetRowCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

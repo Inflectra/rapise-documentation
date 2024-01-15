@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
@@ -31,46 +30,43 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects an item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingPopupMenu').GetItemCount()
+```
+
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -78,21 +74,23 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingPopupMenu').GetItemIndexByName(name)
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -100,20 +98,24 @@ Returns item name by its index.'false' if name is not found.
 | index | number | Index of the item |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJavaSwingPopupMenu').GetItemNameByIndex(index)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 

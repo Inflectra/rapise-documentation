@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Checked](#checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked | SetChecked |
@@ -32,13 +31,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickNode](#doclicknode) | Clicks specific node in the tree. |
@@ -48,18 +45,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Checked"></a>
 #### Checked
 
-
 Checked state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -69,21 +63,25 @@ Checked state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetChecked, SetChecked
-      
-    
+
+```javascript
+value = SeS('SomeUIATree').GetChecked(path, separator, pathType)
+
+SeS('SomeUIATree').SetChecked(path, /**boolean*/ value, separator, pathType)
+```
+
+
 <a name="ChildAt"></a>
 #### ChildAt
 
-
 Child at index of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -94,21 +92,23 @@ Child at index of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetChildAt
-      
-    
+
+```javascript
+value = SeS('SomeUIATree').GetChildAt(path, index, separator, pathType)
+```
+
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Number of children of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -118,21 +118,23 @@ Number of children of the selected node or a node specified by the input paramet
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeUIATree').GetChildrenCount(path, separator, pathType)
+```
+
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 Expanded state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -142,21 +144,25 @@ Expanded state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded, SetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeUIATree').GetExpanded(path, separator, pathType)
+
+SeS('SomeUIATree').SetExpanded(path, separator, pathType)
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -166,21 +172,23 @@ Text of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeUIATree').GetNodeText(path, separator, pathType)
+```
+
+
 <a name="Selected"></a>
 #### Selected
 
-
 Selected state of the selected node or a node specified by the input parameters
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -190,20 +198,26 @@ Selected state of the selected node or a node specified by the input parameters
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelected, SetSelected
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeUIATree').GetSelected(path, separator, pathType)
+
+SeS('SomeUIATree').SetSelected(path, separator, pathType)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickNode"></a>    
 #### DoClickNode
 

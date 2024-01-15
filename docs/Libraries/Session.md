@@ -11,13 +11,11 @@ Session object for SOAP and REST services.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
@@ -47,14 +45,13 @@ Session object for SOAP and REST services.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoRemoveParameter"></a>    
 #### DoRemoveParameter
 

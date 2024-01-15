@@ -11,13 +11,11 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [GetCapability](#getcapability) |  |
@@ -26,14 +24,13 @@ This is a JavaScript wrapper for DesiredCapabilities of AppiumDotNet library.<b
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="GetCapability"></a>    
 #### GetCapability
 

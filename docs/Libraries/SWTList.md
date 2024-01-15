@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount | SetItemCount |
@@ -34,13 +33,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddSelection](#doaddselection) | Extends selection. |
@@ -50,33 +47,34 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount, SetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeSWTList').GetItemCount()
+
+SeS('SomeSWTList').SetItemCount()
+```
+
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -84,21 +82,23 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeSWTList').GetItemIndexByName(name)
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -106,36 +106,40 @@ Returns item name by its index.'false' if name is not found.
 | index | number | Index of the item |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
+
+```javascript
+value = SeS('SomeSWTList').GetItemNameByIndex(index)
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeSWTList').GetSelectedIndex()
+```
+
+
 <a name="SelectedIndices"></a>
 #### SelectedIndices
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -144,65 +148,81 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedIndices
-      
-    
+
+```javascript
+value = SeS('SomeSWTList').GetSelectedIndices(asArray, separator)
+```
+
+
 <a name="SelectedItems"></a>
 #### SelectedItems
 
-
 Text of all the selected items in a single string. Items are divided by ';' separator.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItems, SetSelectedItems
-      
-    
+
+```javascript
+value = SeS('SomeSWTList').GetSelectedItems()
+
+SeS('SomeSWTList').SetSelectedItems()
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText, SetSelectedText
-      
-    
+
+```javascript
+value = SeS('SomeSWTList').GetSelectedText()
+
+SeS('SomeSWTList').SetSelectedText(itemtext)
+```
+
+
 <a name="SelectionCount"></a>
 #### SelectionCount
 
-
 Number of selected items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectionCount, SetSelectionCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSWTList').GetSelectionCount()
+
+SeS('SomeSWTList').SetSelectionCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 

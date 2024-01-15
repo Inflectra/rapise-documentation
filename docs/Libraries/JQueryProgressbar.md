@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue |  |
@@ -29,61 +28,65 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="MaxValue"></a>
 #### MaxValue
 
-
 Maximum value of the object or 'false' if value can't be read.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetMaxValue
-      
-    
+
+```javascript
+value = SeS('SomeJQueryProgressbar').GetMaxValue()
+```
+
+
 <a name="MinValue"></a>
 #### MinValue
 
-
 Minimum value of the object or 'false' if value can't be read.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetMinValue
-      
-    
+
+```javascript
+value = SeS('SomeJQueryProgressbar').GetMinValue()
+```
+
+
 <a name="Value"></a>
 #### Value
 
-
 Current value of the progress bar.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetValue
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJQueryProgressbar').GetValue()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-    
+  
 

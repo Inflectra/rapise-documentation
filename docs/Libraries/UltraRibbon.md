@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [DropdownCount](#dropdowncount) | NUmber of dropdown controls. | GetDropdownCount |  |
@@ -31,13 +30,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickApplicationButton](#doclickapplicationbutton) | Clicks an application button on the ribbon. |
@@ -48,18 +45,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="DropdownCount"></a>
 #### DropdownCount
 
-
 NUmber of dropdown controls.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -67,21 +61,23 @@ NUmber of dropdown controls.
 | caption | string | Name of a dropdown. |
 
 
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetDropdownCount
-      
-    
+
+```javascript
+value = SeS('SomeUltraRibbon').GetDropdownCount(caption)
+```
+
+
 <a name="ItemValue"></a>
 #### ItemValue
 
-
 Value of an item.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -89,21 +85,23 @@ Value of an item.
 | caption | string | Name of an item. |
 
 
-  
-      
+
+
 Type: string|number|boolean
-      
-      
+
+
 Accessors: GetItemValue
-      
-    
+
+```javascript
+value = SeS('SomeUltraRibbon').GetItemValue(caption)
+```
+
+
 <a name="ToggleState"></a>
 #### ToggleState
 
-
 Toggle state of a button
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -111,20 +109,24 @@ Toggle state of a button
 | caption | string | Name of a button. |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetToggleState
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeUltraRibbon').GetToggleState(caption)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickApplicationButton"></a>    
 #### DoClickApplicationButton
 

@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemChecked](#itemchecked) | Check if item is checked. | GetItemChecked | SetItemChecked |
@@ -30,46 +29,45 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickItem](#doclickitem) | Performs click on the navigation item |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemChecked"></a>
 #### ItemChecked
 
-
 Check if item is checked.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetItemChecked, SetItemChecked
-      
-    
+
+```javascript
+value = SeS('SomeOFToolBar').GetItemChecked(nameOrInd)
+
+SeS('SomeOFToolBar').SetItemChecked(nameOrInd, bValue)
+```
+
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -77,20 +75,24 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeOFToolBar').GetItemIndexByName(name)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickItem"></a>    
 #### DoClickItem
 

@@ -17,41 +17,40 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Disabled](#disabled) | Disable state of the button. | GetDisabled |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Disabled"></a>
 #### Disabled
 
-
 Disable state of the button.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetDisabled
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeGWTPushButton').GetDisabled()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-    
+  
 

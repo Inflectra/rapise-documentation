@@ -11,13 +11,11 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Actions](#actions) | Gets Actions object. |
@@ -102,14 +100,13 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Actions"></a>    
 #### Actions
 

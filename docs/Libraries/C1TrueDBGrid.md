@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell |
@@ -48,48 +45,49 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBGrid').GetCell(/**Number*/row, /**Number*/col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBGrid').GetColumnCount()
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -97,80 +95,92 @@ Caption of a column.
 | col | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBGrid').GetColumnName(/**number*/ col)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBGrid').GetRowCount()
+```
+
+
 <a name="SelectedColumn"></a>
 #### SelectedColumn
 
-
 Index of the selected column.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumn
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBGrid').GetSelectedColumn()
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Index of the selected row.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeC1TrueDBGrid').GetSelectedRow()
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the currently focused cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeC1TrueDBGrid').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

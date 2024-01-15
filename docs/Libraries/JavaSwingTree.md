@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ChildrenCount](#childrencount) | Number of children of the selected node or a node specified by the input parameters. | GetChildrenCount |  |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickNode](#doclicknode) | Clicks specific node in the tree. |
@@ -48,18 +45,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Number of children of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -69,21 +63,23 @@ Number of children of the selected node or a node specified by the input paramet
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTree').GetChildrenCount(path, separator, pathType)
+```
+
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 Expanded state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -93,21 +89,23 @@ Expanded state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTree').GetExpanded(path, separator, pathType)
+```
+
+
 <a name="IndexPath"></a>
 #### IndexPath
 
-
 Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6', 'false' if fails
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -117,21 +115,23 @@ Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetIndexPath
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTree').GetIndexPath(path, separator, pathType)
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -141,21 +141,23 @@ Text of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTree').GetNodeText(path, separator, pathType)
+```
+
+
 <a name="Selected"></a>
 #### Selected
 
-
 Selected state of the selected node or a node specified by the input parameters
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -165,20 +167,24 @@ Selected state of the selected node or a node specified by the input parameters
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelected
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJavaSwingTree').GetSelected(path, separator, pathType)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickNode"></a>    
 #### DoClickNode
 

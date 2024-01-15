@@ -19,23 +19,20 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Month](#month) | Current month displayed by the date picker. | GetMonth |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoNextMonth](#donextmonth) | Clicks on 'Next Month' selector. |
@@ -44,32 +41,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Month"></a>
 #### Month
 
-
 Current month displayed by the date picker.
 
-      
-  
-      
+
+
 Type: string|number
-      
-      
+
+
 Accessors: GetMonth
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXDateEdit').GetMonth()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoNextMonth"></a>    
 #### DoNextMonth
 

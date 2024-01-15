@@ -19,55 +19,53 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Image](#image) | 'true' if there is image loaded into the editor, 'false' otherwise. | GetImage |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Image"></a>
 #### Image
 
-
 'true' if there is image loaded into the editor, 'false' otherwise.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetImage
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXImageEdit').GetImage()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSetText"></a>    
 #### DoSetText
 

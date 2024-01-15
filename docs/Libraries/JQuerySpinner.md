@@ -17,23 +17,20 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Value](#value) | Gets/Sets the value of the spinner | GetValue | SetValue |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoPageDown](#dopagedown) | Clicks the PageDown spinner button. |
@@ -42,32 +39,35 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Value"></a>
 #### Value
 
-
 Gets/Sets the value of the spinner
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetValue, SetValue
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJQuerySpinner').GetValue()
+
+SeS('SomeJQuerySpinner').SetValue(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoPageDown"></a>    
 #### DoPageDown
 

@@ -13,10 +13,9 @@ Web Mobile Object.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ChildAt](#childat) | Child object at index. | GetChildAt |  |
@@ -33,13 +32,11 @@ Web Mobile Object.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAction](#doaction) | Clicks in the middle of the control. |
@@ -51,18 +48,15 @@ Web Mobile Object.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ChildAt"></a>
 #### ChildAt
 
-
 Child object at index.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -70,96 +64,108 @@ Child object at index.
 | index | number | Index of the object to get. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetChildAt
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetChildAt(index)
+```
+
+
 <a name="ChildCount"></a>
 #### ChildCount
 
-
 Number of child items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetChildCount
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetChildCount()
+```
+
+
 <a name="Class"></a>
 #### Class
 
-
 Class name of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetClass
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetClass()
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetHeight()
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 Name of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetName()
+```
+
+
 <a name="ObjectType"></a>
 #### ObjectType
 
-
 Type of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetObjectType
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetObjectType()
+```
+
+
 <a name="Property"></a>
 #### Property
 
-
 Value of a named property of the object.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -167,80 +173,92 @@ Value of a named property of the object.
 | name | string | Property name. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProperty
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetProperty(name)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetText()
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetWidth()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeMobileWebObject').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeMobileWebObject').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAction"></a>    
 #### DoAction
 

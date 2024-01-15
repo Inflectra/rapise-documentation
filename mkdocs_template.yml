@@ -82,7 +82,7 @@ nav:
     - 'Frameworks': 'Guide/Frameworks/frameworks.md'
     - 'Parameters and Configurations': 'Guide/Frameworks/parameters.md'
     - 'Page Objects / Modules': 'Guide/Frameworks/pageobjects.md'
-    - 'Cheatsheet': 'Guide/cheatsheet.md'
+    - 'Cheat Sheet': 'Guide/cheatsheet.md'
 
 - 'User''s Guide':
     - 'About this Guide': 'Guide/about_this_guide.md'
@@ -333,7 +333,7 @@ nav:
       - 'RVL Object': 'Libraries/RVL.md'
       - 'Map Object': 'Libraries/Map.md'
       - 'Input Parameters': 'RVL/RVL_DoPlay.md'      
-      - 'RVL Cheatsheet': 'RVL/Cheatsheet.md'
+      - 'RVL Cheat Sheet': 'RVL/Cheatsheet.md'
 - 'Libraries':
     - 'Libraries': 'Libraries/libraries.md'
     #global

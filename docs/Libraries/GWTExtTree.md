@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ChildrenCount](#childrencount) | Children count of the current node in the tree. | GetChildrenCount |  |
@@ -32,13 +31,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickNode](#doclicknode) | Clicks specific node in the tree. |
@@ -50,107 +47,118 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Children count of the current node in the tree.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtTree').GetChildrenCount()
+```
+
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 Expanded state of the current node. Use DoFindNode to set current node. 0 - if the node is collapsed, 1 - if the node is expanded, 2 - if the node is a leaf.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtTree').GetExpanded()
+```
+
+
 <a name="NodeIndex"></a>
 #### NodeIndex
 
-
 Zero based index of the current node. Use DoFindNode to set current node.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetNodeIndex
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtTree').GetNodeIndex()
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the current node. Use DoFindNode to set current node.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtTree').GetNodeText()
+```
+
+
 <a name="Selected"></a>
 #### Selected
 
-
 Selected state of the current node. Use DoFindNode to set current node. 'true' if the node is selected, 'false' otherwise.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelected
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtTree').GetSelected()
+```
+
+
 <a name="SelectedNodeText"></a>
 #### SelectedNodeText
 
-
 Text of the selected node.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedNodeText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeGWTExtTree').GetSelectedNodeText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickNode"></a>    
 #### DoClickNode
 

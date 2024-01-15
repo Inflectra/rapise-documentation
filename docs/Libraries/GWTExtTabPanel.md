@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemsCount](#itemscount) | Number of tabs in the panel | GetItemsCount |  |
@@ -29,75 +28,78 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectTab](#doselecttab) | Selects the tab by name. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemsCount"></a>
 #### ItemsCount
 
-
 Number of tabs in the panel
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemsCount
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtTabPanel').GetItemsCount()
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected tab
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeGWTExtTabPanel').GetSelectedIndex()
+```
+
+
 <a name="SelectedTab"></a>
 #### SelectedTab
 
-
 Text of the selected tab
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedTab
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeGWTExtTabPanel').GetSelectedTab()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectTab"></a>    
 #### DoSelectTab
 

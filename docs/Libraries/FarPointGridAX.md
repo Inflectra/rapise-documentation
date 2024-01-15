@@ -15,10 +15,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [CellComboList](#cellcombolist) | Get array of dropdown values for a given cell. | GetCellComboList |  |
@@ -39,13 +38,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoActivateCell](#doactivatecell) | Make specified cell active |
@@ -56,18 +53,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="CellComboList"></a>
 #### CellComboList
 
-
 Get array of dropdown values for a given cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -76,17 +70,20 @@ Get array of dropdown values for a given cell.
 | col | number | Column index |
 
 
-  
-      
+
+
 Type: array
-      
-      
+
+
 Accessors: GetCellComboList
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetCellComboList(row, col)
+```
+
+
 <a name="CellInfo"></a>
 #### CellInfo
-
 
 <p>Returns object with following fields.</p>
 
@@ -144,7 +141,6 @@ row
 col
 </pre>
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -153,51 +149,57 @@ col
 | col | number | Column index |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetCellInfo
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetCellInfo(row, col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetColumnCount()
+```
+
+
 <a name="ColumnHeaders"></a>
 #### ColumnHeaders
 
-
 Get array of column captions.
 
-      
-  
-      
+
+
 Type: array
-      
-      
+
+
 Accessors: GetColumnHeaders
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetColumnHeaders()
+```
+
+
 <a name="ColumnIndex"></a>
 #### ColumnIndex
 
-
 Get column index by name.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -205,17 +207,20 @@ Get column index by name.
 | colName | string | Column name |
 
 
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnIndex
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetColumnIndex(colName)
+```
+
+
 <a name="ColumnInfo"></a>
 #### ColumnInfo
-
 
 <p>Returns object with following fields.</p>
 
@@ -228,7 +233,6 @@ Index
 Visible
 </pre>
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -236,18 +240,21 @@ Visible
 | col | number | Column index |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetColumnInfo
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetColumnInfo(col)
+```
+
+
 <a name="GridInfo"></a>
 #### GridInfo
 
-
 <p>Returns object with following fields.</p>
 
 <pre>
@@ -275,48 +282,54 @@ TopRow
 LeftCol
 </pre>
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetGridInfo
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetGridInfo()
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetRowCount()
+```
+
+
 <a name="RowHeaders"></a>
 #### RowHeaders
 
-
 Get array of row captions.
 
-      
-  
-      
+
+
 Type: array
-      
-      
+
+
 Accessors: GetRowHeaders
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetRowHeaders()
+```
+
+
 <a name="RowInfo"></a>
 #### RowInfo
-
 
 <p>Returns object with following fields.</p>
 
@@ -345,7 +358,6 @@ TopRow
 LeftCol
 </pre>
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -353,21 +365,23 @@ LeftCol
 | row | number | Row index |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetRowInfo
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetRowInfo(row)
+```
+
+
 <a name="SelectedCells"></a>
 #### SelectedCells
 
-
 Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -377,66 +391,78 @@ Returns string of cell coordinates delimited by separators or an array of coordi
 | cellSep | string | cell separator<br>Optional. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedCells
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetSelectedCells(asArray, rowcolSep, cellSep)
+```
+
+
 <a name="SelectedColumn"></a>
 #### SelectedColumn
 
-
 Index of the selected column.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumn, SetSelectedColumn
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetSelectedColumn()
+
+SeS('SomeFarPointGridAX').SetSelectedColumn(col)
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Index of the selected row.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRow, SetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetSelectedRow()
+
+SeS('SomeFarPointGridAX').SetSelectedRow(row)
+```
+
+
 <a name="SelectedRowsCount"></a>
 #### SelectedRowsCount
 
-
 Get number of selected rows.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRowsCount
-      
-    
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetSelectedRowsCount()
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -445,20 +471,26 @@ Text of the specified cell.
 | col | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeFarPointGridAX').GetText(row, col)
+
+SeS('SomeFarPointGridAX').SetText(col, row, value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoActivateCell"></a>    
 #### DoActivateCell
 

@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
@@ -36,13 +35,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddSelection](#doaddselection) | Extends selection. |
@@ -52,33 +49,32 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetItemCount()
+```
+
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -86,21 +82,23 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetItemIndexByName(name)
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -108,36 +106,42 @@ Returns item name by its index.'false' if name is not found.
 | index | number | Index of the item |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetItemNameByIndex(index)
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectedIndex()
+
+SeS('SomeTelerikRadListControl').SetSelectedIndex(value)
+```
+
+
 <a name="SelectedIndices"></a>
 #### SelectedIndices
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -146,65 +150,75 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedIndices
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectedIndices(asArray, separator)
+```
+
+
 <a name="SelectedItems"></a>
 #### SelectedItems
 
-
 Text of all the selected items in a single string. Items are divided by ';' separator.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItems
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectedItems()
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectedText()
+```
+
+
 <a name="SelectionCount"></a>
 #### SelectionCount
 
-
 Number of selected items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectionCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectionCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 
@@ -322,10 +336,9 @@ boolean: 'true' if success, 'false' otherwise.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
@@ -336,13 +349,11 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddSelection](#doaddselection) | Extends selection. |
@@ -352,18 +363,15 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -371,21 +379,23 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetItemIndexByName()
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -393,21 +403,23 @@ Returns item name by its index.'false' if name is not found.
 | index | number | Index of the item |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetItemNameByIndex()
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -416,21 +428,23 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectedIndex()
+```
+
+
 <a name="SelectedIndices"></a>
 #### SelectedIndices
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -439,35 +453,41 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedIndices
-      
-    
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectedIndices()
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeTelerikRadListControl').GetSelectedText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 

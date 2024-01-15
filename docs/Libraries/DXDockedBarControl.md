@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Item](#item) | Caption of the item specified by index | GetItem |  |
@@ -32,31 +31,26 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickItem](#doclickitem) | Performs click on the navigation item |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Item"></a>
 #### Item
 
-
 Caption of the item specified by index
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -64,36 +58,40 @@ Caption of the item specified by index
 | ind | number | Index of an item to get caption |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetItem
-      
-    
+
+```javascript
+value = SeS('SomeDXDockedBarControl').GetItem(/**number*/ind)
+```
+
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeDXDockedBarControl').GetItemCount()
+```
+
+
 <a name="ItemEnabled"></a>
 #### ItemEnabled
 
-
 Enabled state of an item at index. Returns boolean value.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -101,21 +99,23 @@ Enabled state of an item at index. Returns boolean value.
 | ind | number | Zero-based index of an item. |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetItemEnabled
-      
-    
+
+```javascript
+value = SeS('SomeDXDockedBarControl').GetItemEnabled(/**number*/ind)
+```
+
+
 <a name="ItemTooltip"></a>
 #### ItemTooltip
 
-
 Tooltip assigned to an item at index.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -123,20 +123,24 @@ Tooltip assigned to an item at index.
 | ind | number | Zero-based index of an item. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetItemTooltip
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXDockedBarControl').GetItemTooltip(/**number*/ind)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickItem"></a>    
 #### DoClickItem
 

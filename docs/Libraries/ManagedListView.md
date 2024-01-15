@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [CheckBoxes](#checkboxes) | Returns true if items have checkboxes near them. | GetCheckBoxes |  |
@@ -37,13 +36,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddSelection](#doaddselection) | Extends selection. |
@@ -56,48 +53,49 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="CheckBoxes"></a>
 #### CheckBoxes
 
-
 Returns true if items have checkboxes near them.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetCheckBoxes
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetCheckBoxes()
+```
+
+
 <a name="CheckedCount"></a>
 #### CheckedCount
 
-
 Returns number of checked items in ListView.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetCheckedCount
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetCheckedCount()
+```
+
+
 <a name="CheckedIndices"></a>
 #### CheckedIndices
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -106,36 +104,40 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCheckedIndices
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetCheckedIndices(asArray, separator)
+```
+
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetItemCount()
+```
+
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -143,21 +145,23 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetItemIndexByName(name)
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -165,21 +169,23 @@ Returns item name by its index.'false' if name is not found.
 | index | number | Index of the item |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetItemNameByIndex(index)
+```
+
+
 <a name="SelectedIndices"></a>
 #### SelectedIndices
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -188,21 +194,23 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedIndices
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetSelectedIndices(asArray, separator)
+```
+
+
 <a name="SelectedItems"></a>
 #### SelectedItems
 
-
 Text of all the selected items in a single string. Items are divided by ';' separator.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -211,35 +219,41 @@ Text of all the selected items in a single string. Items are divided by ';' sepa
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItems
-      
-    
+
+```javascript
+value = SeS('SomeManagedListView').GetSelectedItems(asArray, separator)
+```
+
+
 <a name="SelectionCount"></a>
 #### SelectionCount
 
-
 Number of selected items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectionCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeManagedListView').GetSelectionCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 

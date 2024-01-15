@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
@@ -40,13 +39,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell |
@@ -54,18 +51,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -74,36 +68,40 @@ Text of the specified cell.
 | col | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetCell(/**number*/row,/**number*/col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetColumnCount()
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -111,36 +109,40 @@ Caption of a column.
 | col | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetColumnName(/**number*/col)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the table.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetRowCount()
+```
+
+
 <a name="SelectedCells"></a>
 #### SelectedCells
 
-
 Returns string of cell coordinates delimited by separators or an array of coordinate objects for selected cells.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -150,51 +152,57 @@ Returns string of cell coordinates delimited by separators or an array of coordi
 | cellSep | string | cell separator<br>Optional. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedCells
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetSelectedCells(asArray, rowcolSep, cellSep)
+```
+
+
 <a name="SelectedColumn"></a>
 #### SelectedColumn
 
-
 Index of the selected column.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumn
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetSelectedColumn()
+```
+
+
 <a name="SelectedColumnCount"></a>
 #### SelectedColumnCount
 
-
 Number of selected columns.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetSelectedColumnCount()
+```
+
+
 <a name="SelectedColumns"></a>
 #### SelectedColumns
 
-
 Returns string of indexes delimited by separator or array of indexes of selected columns.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -203,51 +211,57 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetSelectedColumns
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetSelectedColumns(asArray, separator)
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Index of the selected row.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetSelectedRow()
+```
+
+
 <a name="SelectedRowCount"></a>
 #### SelectedRowCount
 
-
 Number of selected rows.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRowCount
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetSelectedRowCount()
+```
+
+
 <a name="SelectedRows"></a>
 #### SelectedRows
 
-
 Returns string of indexes delimited by separator or array of indexes of selected rows.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -256,35 +270,41 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetSelectedRows
-      
-    
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetSelectedRows(asArray, separator)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the currently focused cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJavaSwingTable').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

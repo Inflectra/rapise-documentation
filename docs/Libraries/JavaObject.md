@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ControlType](#controltype) | Type of the object. | GetControlType |  |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAction](#doaction) | Clicks in the middle of the control. |
@@ -53,122 +50,135 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ControlType"></a>
 #### ControlType
 
-
 Type of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetControlType
-      
-    
+
+```javascript
+value = SeS('SomeJavaObject').GetControlType()
+```
+
+
 <a name="Enabled"></a>
 #### Enabled
 
-
 'Enabled' state of the element.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetEnabled
-      
-    
+
+```javascript
+value = SeS('SomeJavaObject').GetEnabled()
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeJavaObject').GetHeight()
+```
+
+
 <a name="Parent"></a>
 #### Parent
 
-
 Object for UI Automation parent node
 
-      
-  
-      
+
+
 Type: UIAObject
-      
-      
+
+
 Accessors: GetParent
-      
-    
+
+```javascript
+value = SeS('SomeJavaObject').GetParent()
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeJavaObject').GetWidth()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeJavaObject').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJavaObject').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAction"></a>    
 #### DoAction
 

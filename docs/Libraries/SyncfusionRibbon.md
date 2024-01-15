@@ -19,23 +19,20 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [SelectedTab](#selectedtab) | Text of the selected tab | GetSelectedTab | SetSelectedTab |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickItem](#doclickitem) | Performs click on the ribbon item given by caption or tooltip text |
@@ -43,32 +40,35 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="SelectedTab"></a>
 #### SelectedTab
 
-
 Text of the selected tab
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedTab, SetSelectedTab
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSyncfusionRibbon').GetSelectedTab()
+
+SeS('SomeSyncfusionRibbon').SetSelectedTab(/**string*/value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickItem"></a>    
 #### DoClickItem
 

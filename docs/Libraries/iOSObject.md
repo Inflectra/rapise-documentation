@@ -13,10 +13,9 @@ iOS Object.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ChildAt](#childat) | Child object at index. | GetChildAt |  |
@@ -37,13 +36,11 @@ iOS Object.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAction](#doaction) | Clicks in the middle of the control. |
@@ -59,18 +56,15 @@ iOS Object.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ChildAt"></a>
 #### ChildAt
 
-
 Child object at index.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -78,156 +72,176 @@ Child object at index.
 | index | number | Index of the object to get. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetChildAt
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetChildAt(index)
+```
+
+
 <a name="ChildCount"></a>
 #### ChildCount
 
-
 Number of child items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetChildCount
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetChildCount()
+```
+
+
 <a name="Class"></a>
 #### Class
 
-
 Class name of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetClass
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetClass()
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetHeight()
+```
+
+
 <a name="Label"></a>
 #### Label
 
-
 Label of the iOS object
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetLabel
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetLabel()
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 Name of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetName()
+```
+
+
 <a name="NextSibling"></a>
 #### NextSibling
 
-
 `iOSObject` for the next sibling element. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: iOSObject
-      
-      
+
+
 Accessors: GetNextSibling
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetNextSibling()
+```
+
+
 <a name="ObjectType"></a>
 #### ObjectType
 
-
 Type of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetObjectType
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetObjectType()
+```
+
+
 <a name="Parent"></a>
 #### Parent
 
-
 `iOSObject` for the parent element. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: iOSObject
-      
-      
+
+
 Accessors: GetParent
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetParent()
+```
+
+
 <a name="PrevSibling"></a>
 #### PrevSibling
 
-
 `iOSObject` for the previous sibling element. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: iOSObject
-      
-      
+
+
 Accessors: GetPrevSibling
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetPrevSibling()
+```
+
+
 <a name="Property"></a>
 #### Property
 
-
 Value of a named property of the object.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -235,80 +249,92 @@ Value of a named property of the object.
 | name | string | Property name. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProperty
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetProperty(name)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetText()
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetWidth()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeiOSObject').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeiOSObject').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAction"></a>    
 #### DoAction
 

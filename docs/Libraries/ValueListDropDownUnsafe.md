@@ -19,15 +19,13 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-    
+  
 
 
 
@@ -37,10 +35,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ControlType](#controltype) | Type of the object. | GetControlType |  |
@@ -53,13 +50,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoDumpWidget](#dodumpwidget) | Dumps Spy data for the object. |
@@ -69,122 +64,135 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ControlType"></a>
 #### ControlType
 
-
 Type of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetControlType
-      
-    
+
+```javascript
+value = SeS('SomeValueListDropDownUnsafe').GetControlType()
+```
+
+
 <a name="Enabled"></a>
 #### Enabled
 
-
 'Enabled' state of the element.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetEnabled
-      
-    
+
+```javascript
+value = SeS('SomeValueListDropDownUnsafe').GetEnabled()
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeValueListDropDownUnsafe').GetHeight()
+```
+
+
 <a name="Visible"></a>
 #### Visible
 
-
 Returns `true` if the element is visible on screen. Requires Rapise 8.0+.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetVisible
-      
-    
+
+```javascript
+value = SeS('SomeValueListDropDownUnsafe').GetVisible()
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeValueListDropDownUnsafe').GetWidth()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeValueListDropDownUnsafe').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeValueListDropDownUnsafe').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoDumpWidget"></a>    
 #### DoDumpWidget
 

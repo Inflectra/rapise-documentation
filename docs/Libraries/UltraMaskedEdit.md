@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [MaxValue](#maxvalue) | Maximum value of the object or 'false' if value can't be read. | GetMaxValue | SetMaxValue |
@@ -31,75 +30,84 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="MaxValue"></a>
 #### MaxValue
 
-
 Maximum value of the object or 'false' if value can't be read.
 
-      
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetMaxValue, SetMaxValue
-      
-    
+
+```javascript
+value = SeS('SomeUltraMaskedEdit').GetMaxValue()
+
+SeS('SomeUltraMaskedEdit').SetMaxValue(value)
+```
+
+
 <a name="MinValue"></a>
 #### MinValue
 
-
 Minimum value of the object or 'false' if value can't be read.
 
-      
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetMinValue, SetMinValue
-      
-    
+
+```javascript
+value = SeS('SomeUltraMaskedEdit').GetMinValue()
+
+SeS('SomeUltraMaskedEdit').SetMinValue(value)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeUltraMaskedEdit').GetText()
+
+SeS('SomeUltraMaskedEdit').SetText(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSetText"></a>    
 #### DoSetText
 

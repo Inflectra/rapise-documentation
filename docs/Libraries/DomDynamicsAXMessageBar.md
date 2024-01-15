@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemCount](#itemcount) | Number of messages. | GetItemCount |  |
@@ -29,36 +28,34 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of messages.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXMessageBar').GetItemCount()
+```
+
+
 <a name="ItemText"></a>
 #### ItemText
 
-
 Text of an item at index.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -66,31 +63,37 @@ Text of an item at index.
 | index | number | Index of a message. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetItemText
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXMessageBar').GetItemText(/**number*/ index)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the first item.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDomDynamicsAXMessageBar').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-    
+  
 

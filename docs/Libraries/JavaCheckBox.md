@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Checked](#checked) | Check state of the button. | GetChecked | SetChecked |
@@ -30,60 +29,65 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSetCheck](#dosetcheck) | Sets check state of the object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Checked"></a>
 #### Checked
 
-
 Check state of the button. 'true' if the button is checked, 'false' otherwise.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetChecked, SetChecked
-      
-    
+
+```javascript
+value = SeS('SomeJavaCheckBox').GetChecked()
+
+SeS('SomeJavaCheckBox').SetChecked(value)
+```
+
+
 <a name="Value"></a>
 #### Value
 
-
 Value of the object.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetValue, SetValue
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeJavaCheckBox').GetValue()
+
+SeS('SomeJavaCheckBox').SetValue(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSetCheck"></a>    
 #### DoSetCheck
 

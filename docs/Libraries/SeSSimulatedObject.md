@@ -14,10 +14,9 @@ This is a rule for simulated objects.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Bitmap](#bitmap) | UI Image of the object. | GetBitmap |  |
@@ -35,13 +34,11 @@ This is a rule for simulated objects.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAction](#doaction) | Performs default action for an object. |
@@ -66,197 +63,224 @@ This is a rule for simulated objects.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Bitmap"></a>
 #### Bitmap
 
-
 UI Image of the object.
 
-      
-  
-      
+
+
 Type: ImageWrapper
-      
-      
+
+
 Accessors: GetBitmap
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetBitmap()
+```
+
+
 <a name="BWBitmap"></a>
 #### BWBitmap
 
-
 UI Image of the object in 1-bit format (black&white).
 
-      
-  
-      
+
+
 Type: ImageWrapper
-      
-      
+
+
 Accessors: GetBWBitmap
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetBWBitmap()
+```
+
+
 <a name="Class"></a>
 #### Class
 
-
 Class of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetClass
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetClass()
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetHeight()
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 Name of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetName()
+```
+
+
 <a name="ObjectType"></a>
 #### ObjectType
 
-
 SeSMatcherRule type for this object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetObjectType
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetObjectType()
+```
+
+
 <a name="State"></a>
 #### State
 
-
 State of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetState
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetState()
+```
+
+
 <a name="Value"></a>
 #### Value
 
-
 Value of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetValue, SetValue
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetValue()
+
+SeS('SomeSeSSimulatedObject').SetValue(value)
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetWidth()
+```
+
+
 <a name="WindowText"></a>
 #### WindowText
 
-
 Window text of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetWindowText, SetWindowText
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetWindowText()
+
+SeS('SomeSeSSimulatedObject').SetWindowText(value)
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSeSSimulatedObject').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAction"></a>    
 #### DoAction
 

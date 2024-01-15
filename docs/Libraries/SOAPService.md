@@ -13,10 +13,9 @@ This behavior pattern implements SOAP service client.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Credential](#credential) | The HTTP Basic Authentication Credentials (if any). | GetCredential | SetCredential |
@@ -33,13 +32,11 @@ This behavior pattern implements SOAP service client.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoExecute](#doexecute) | Executes a SOAP service operation, substituting any of the provided parameter values if necessary. |
@@ -51,14 +48,12 @@ This behavior pattern implements SOAP service client.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Credential"></a>
 #### Credential
-
 
 The HTTP Basic Authentication Credentials (if any).
 Sample code:
@@ -70,97 +65,118 @@ credential.Password = "MyPassword";
 SeS("Operation_Name").SetCredential(credential);
 ```
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetCredential, SetCredential
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetCredential()
+
+SeS('SomeSOAPService').SetCredential(value, value2)
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 The name of the request operation
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetName()
+```
+
+
 <a name="ProxyHost"></a>
 #### ProxyHost
 
-
 Proxy host name. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyHost, SetProxyHost
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetProxyHost()
+
+SeS('SomeSOAPService').SetProxyHost(value)
+```
+
+
 <a name="ProxyPort"></a>
 #### ProxyPort
 
-
 Proxy port number. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyPort, SetProxyPort
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetProxyPort()
+
+SeS('SomeSOAPService').SetProxyPort(value)
+```
+
+
 <a name="ProxyPwd"></a>
 #### ProxyPwd
 
-
 Proxy password. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyPwd, SetProxyPwd
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetProxyPwd()
+
+SeS('SomeSOAPService').SetProxyPwd(value)
+```
+
+
 <a name="ProxyUser"></a>
 #### ProxyUser
 
-
 Proxy user name. Requires Rapise 8.1+.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProxyUser, SetProxyUser
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetProxyUser()
+
+SeS('SomeSOAPService').SetProxyUser(value)
+```
+
+
 <a name="ResponseBodyObject"></a>
 #### ResponseBodyObject
 
-
 The body of the HTTP response deserialized from SOAP into a JavaScript object.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -169,32 +185,37 @@ The body of the HTTP response deserialized from SOAP into a JavaScript object.
 | info | object | Empty object that will receive error information if any. Access as info.error in a calling function.<br>Optional. |
 
 
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetResponseBodyObject
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetResponseBodyObject(jsonPath,info)
+```
+
+
 <a name="ResponseBodyText"></a>
 #### ResponseBodyText
 
-
 The body of the HTTP response in raw text format.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetResponseBodyText
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetResponseBodyText()
+```
+
+
 <a name="ResponseHeaders"></a>
 #### ResponseHeaders
-
 
 Returns the list of HTTP headers returned with the HTTP response.
 Sample code:
@@ -208,51 +229,60 @@ for (var i = 0; i < headers.length; i++)
 }
 ```
 
-      
-  
-      
+
+
 Type: object
-      
-      
+
+
 Accessors: GetResponseHeaders
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetResponseHeaders()
+```
+
+
 <a name="ResponseIsErrorStatus"></a>
 #### ResponseIsErrorStatus
 
-
 Returns 'true 'if an HTTP error code came back from the web service.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetResponseIsErrorStatus
-      
-    
+
+```javascript
+value = SeS('SomeSOAPService').GetResponseIsErrorStatus()
+```
+
+
 <a name="Url"></a>
 #### Url
 
-
 The URL being used to access the web service.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetUrl, SetUrl
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSOAPService').GetUrl()
+
+SeS('SomeSOAPService').SetUrl(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoExecute"></a>    
 #### DoExecute
 

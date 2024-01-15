@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell |  |
@@ -36,13 +35,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickBottomCell](#doclickbottomcell) | Clicks floating bottom cell in the specified column. |
@@ -55,18 +52,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -75,21 +69,23 @@ Text of the specified cell.
 | col | string \| number | Name of a column or zero-based column index. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetCell(/**number|string*/row, /**string|number*/col)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the grid.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -97,21 +93,23 @@ Number of columns in the grid.
 | headerIndex | number | Zero-based index of a header row. Optional. Default value is zero. |
 
 
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetColumnCount(/**number*/ headerIndex)
+```
+
+
 <a name="ColumnId"></a>
 #### ColumnId
 
-
 Internal ID of a column with a given name. If the column is not available in the viewport returns empty string. The ID can be used instead of a column name in ClickCell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -119,21 +117,23 @@ Internal ID of a column with a given name. If the column is not available in the
 | columnName | string | Name of a column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnId
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetColumnId(/**string*/columnName)
+```
+
+
 <a name="ColumnIndex"></a>
 #### ColumnIndex
 
-
 Index of a column with a given name. If the column is not available in the viewport returns -1
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -141,21 +141,23 @@ Index of a column with a given name. If the column is not available in the viewp
 | columnName | string | Name of a column. |
 
 
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnIndex
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetColumnIndex(/**string*/columnName)
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -163,21 +165,23 @@ Caption of a column.
 | columnIndex | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetColumnName(/**number*/columnIndex)
+```
+
+
 <a name="ColumnVisible"></a>
 #### ColumnVisible
 
-
 Returns true if a column is visible on screen, otherwise - false.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -185,66 +189,74 @@ Returns true if a column is visible on screen, otherwise - false.
 | columnIndex | number | Index of a column. |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetColumnVisible
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetColumnVisible(/**number*/columnIndex)
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetRowCount()
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Index of the selected row.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetSelectedRow()
+```
+
+
 <a name="SelectedRowCount"></a>
 #### SelectedRowCount
 
-
 Number of selected rows.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRowCount
-      
-    
+
+```javascript
+value = SeS('SomeAgGrid').GetSelectedRowCount()
+```
+
+
 <a name="SelectedRows"></a>
 #### SelectedRows
 
-
 Selected rows.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -253,20 +265,24 @@ Selected rows.
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetSelectedRows
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeAgGrid').GetSelectedRows(/**boolean*/asArray, /**string*/separator)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickBottomCell"></a>    
 #### DoClickBottomCell
 

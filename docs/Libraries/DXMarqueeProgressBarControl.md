@@ -19,41 +19,40 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Working](#working) | Gets or sets a value indicating whether the control can respond to user interaction | GetWorking |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Working"></a>
 #### Working
 
-
 Gets or sets a value indicating whether the control can respond to user interaction
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetWorking
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXMarqueeProgressBarControl').GetWorking()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-    
+  
 

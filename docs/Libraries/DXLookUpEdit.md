@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ItemIndex](#itemindex) | Index of the selected element of the object. | GetItemIndex | SetItemIndex |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSelectItem](#doselectitem) | Selects an item of this object. |
@@ -47,92 +44,109 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ItemIndex"></a>
 #### ItemIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetItemIndex, SetItemIndex
-      
-    
+
+```javascript
+value = SeS('SomeDXLookUpEdit').GetItemIndex()
+
+SeS('SomeDXLookUpEdit').SetItemIndex(value)
+```
+
+
 <a name="ItemName"></a>
 #### ItemName
 
-
 Name of the selected element of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetItemName
-      
-    
+
+```javascript
+value = SeS('SomeDXLookUpEdit').GetItemName()
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeDXLookUpEdit').GetSelectedIndex()
+
+SeS('SomeDXLookUpEdit').SetSelectedIndex(value)
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText, SetSelectedText
-      
-    
+
+```javascript
+value = SeS('SomeDXLookUpEdit').GetSelectedText()
+
+SeS('SomeDXLookUpEdit').SetSelectedText(value)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXLookUpEdit').GetText()
+
+SeS('SomeDXLookUpEdit').SetText(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSelectItem"></a>    
 #### DoSelectItem
 

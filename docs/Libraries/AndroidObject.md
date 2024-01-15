@@ -13,10 +13,9 @@ Android Object.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ChildAt](#childat) | Child object at index. | GetChildAt |  |
@@ -36,13 +35,11 @@ Android Object.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAction](#doaction) | Clicks in the middle of the control. |
@@ -56,18 +53,15 @@ Android Object.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ChildAt"></a>
 #### ChildAt
 
-
 Child object at index.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -75,141 +69,159 @@ Child object at index.
 | index | number | Index of the object to get. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetChildAt
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetChildAt(index)
+```
+
+
 <a name="ChildCount"></a>
 #### ChildCount
 
-
 Number of child items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetChildCount
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetChildCount()
+```
+
+
 <a name="Class"></a>
 #### Class
 
-
 Class name of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetClass
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetClass()
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetHeight()
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 Name of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetName()
+```
+
+
 <a name="NextSibling"></a>
 #### NextSibling
 
-
 `AndroidObject` for the next sibling element. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: AndroidObject
-      
-      
+
+
 Accessors: GetNextSibling
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetNextSibling()
+```
+
+
 <a name="ObjectType"></a>
 #### ObjectType
 
-
 Type of the object.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetObjectType
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetObjectType()
+```
+
+
 <a name="Parent"></a>
 #### Parent
 
-
 `AndroidObject` for the parent element. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: AndroidObject
-      
-      
+
+
 Accessors: GetParent
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetParent()
+```
+
+
 <a name="PrevSibling"></a>
 #### PrevSibling
 
-
 `AndroidObject` for the previous sibling element. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: AndroidObject
-      
-      
+
+
 Accessors: GetPrevSibling
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetPrevSibling()
+```
+
+
 <a name="Property"></a>
 #### Property
 
-
 Value of a named property of the object.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -217,80 +229,92 @@ Value of a named property of the object.
 | name | string | Property name. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetProperty
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetProperty(name)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetText()
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetWidth()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeAndroidObject').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeAndroidObject').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAction"></a>    
 #### DoAction
 

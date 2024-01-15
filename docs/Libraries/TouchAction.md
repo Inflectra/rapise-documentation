@@ -11,13 +11,11 @@ This is a JavaScript wrapper for TouchAction of Appium .NET library. Requires Ra
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Cancel](#cancel) | Cancels the touch action. |
@@ -31,14 +29,13 @@ This is a JavaScript wrapper for TouchAction of Appium .NET library. Requires Ra
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Cancel"></a>    
 #### Cancel
 

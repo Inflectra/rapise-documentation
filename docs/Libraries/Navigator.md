@@ -11,10 +11,9 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** |
 | ------------ | --------------- |
 | [AutoOpen](#autoopen) | During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance. |
@@ -26,13 +25,11 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Back](#back) | Goes back to the previous page in the browser history. |
@@ -102,95 +99,82 @@ Navigator object. This is used to provide functions for manipulating the web bro
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="AutoOpen"></a>
 #### AutoOpen
 
-
 During playback when Rapise connects to a browser for the first time and can not locate an object and AutoOpen is 'true' it launches a new browser instance.If AutoOpen is 'false' it does nothing. Default value is 'true'.Applicable to Chrome, Firefox and Internet Explorer. Selenium targets are not affected by this property.Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|false) to set the value.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
-    
+
+
+
 <a name="EnsureVisibleHorizontalAlignment"></a>
 #### EnsureVisibleHorizontalAlignment
 
-
 One of "start", "center", "end", or "nearest". Defaults to "nearest".
 
-      
-  
-      
+
+
 Type: string
-      
-      
-    
+
+
+
 <a name="EnsureVisibleScrollBehavior"></a>
 #### EnsureVisibleScrollBehavior
 
-
 One of default scroll behaviors: "auto", "smooth" or "instant". Defaults ot "instant".
 
-      
-  
-      
+
+
 Type: string
-      
-      
-    
+
+
+
 <a name="EnsureVisibleVerticalAlignment"></a>
 #### EnsureVisibleVerticalAlignment
 
-
 One of "start", "center", "end", or "nearest". Defaults to "start".
 
-      
-  
-      
+
+
 Type: string
-      
-      
-    
+
+
+
 <a name="NativeEvents"></a>
 #### NativeEvents
 
-
 Set it to true to use native keyboard and mouse input. Overrides browser profile settings. Does not affect Selenium targets. Requires Rapise 6.3+
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
-    
+
+
+
 <a name="QuitIfNotConnected"></a>
 #### QuitIfNotConnected
 
-
 If connection to browser fails - open plugin page and quit. If set to 'false' - just return 'false' in Open call.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
-    
-  
-  
+
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Back"></a>    
 #### Back
 

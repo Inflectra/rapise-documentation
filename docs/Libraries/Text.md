@@ -11,13 +11,11 @@ Text object. Use it to perform text manipulations.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Base64Decode](#base64decode) | Decodes base64 string. |
@@ -54,14 +52,13 @@ Text object. Use it to perform text manipulations.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Base64Decode"></a>    
 #### Base64Decode
 

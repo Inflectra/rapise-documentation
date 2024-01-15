@@ -11,13 +11,11 @@ OracleForms Global Helper Object.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoLOVSelect](#dolovselect) | Get title of currently displayed LOV selection window. |
@@ -30,14 +28,13 @@ OracleForms Global Helper Object.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoLOVSelect"></a>    
 #### DoLOVSelect
 

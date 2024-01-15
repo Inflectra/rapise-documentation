@@ -11,13 +11,11 @@ This is a JavaScript wrapper for RESTRequest
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoRemoveParameter](#doremoveparameter) | Remove one pre-defined parameter. |
@@ -38,14 +36,13 @@ This is a JavaScript wrapper for RESTRequest
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoRemoveParameter"></a>    
 #### DoRemoveParameter
 

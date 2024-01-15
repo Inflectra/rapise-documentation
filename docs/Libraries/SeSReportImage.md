@@ -11,34 +11,31 @@ Used to show a bitmap picture in the report.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [SeSReportImage](#sesreportimage) | Used to show a bitmap picture in the report. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="SeSReportImage"></a>    
 #### SeSReportImage
 
 Used to show a bitmap picture in the report.
 
 ```javascript
-SeSReportImage.SeSReportImage(imgWrapperOrPath, caption)
+Tester.Message("Graph", new SeSReportFile("d:\\temp\\graph.png", "External Image"))
 ```
 
 

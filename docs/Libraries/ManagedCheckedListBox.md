@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [CheckedCount](#checkedcount) | Returns number of checked items in ListView. | GetCheckedCount |  |
@@ -39,13 +38,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddSelection](#doaddselection) | Extends selection. |
@@ -57,33 +54,32 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="CheckedCount"></a>
 #### CheckedCount
 
-
 Returns number of checked items in ListView.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetCheckedCount
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetCheckedCount()
+```
+
+
 <a name="CheckedIndices"></a>
 #### CheckedIndices
 
-
 Array of indices of checked elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -92,21 +88,23 @@ Array of indices of checked elements.
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetCheckedIndices
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetCheckedIndices(asArray, separator)
+```
+
+
 <a name="CheckedItems"></a>
 #### CheckedItems
 
-
 Array of item names of checked elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -115,36 +113,40 @@ Array of item names of checked elements.
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetCheckedItems
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetCheckedItems(asArray, separator)
+```
+
+
 <a name="ItemCount"></a>
 #### ItemCount
 
-
 Number of items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetItemCount
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetItemCount()
+```
+
+
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
 
-
 Returns item index by its name. 'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -152,21 +154,23 @@ Returns item index by its name. 'false' if name is not found.
 | name | string |  |
 
 
-  
-      
+
+
 Type: number|boolean
-      
-      
+
+
 Accessors: GetItemIndexByName
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetItemIndexByName(name)
+```
+
+
 <a name="ItemNameByIndex"></a>
 #### ItemNameByIndex
 
-
 Returns item name by its index.'false' if name is not found.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -174,36 +178,42 @@ Returns item name by its index.'false' if name is not found.
 | index | number | Index of the item |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetItemNameByIndex
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetItemNameByIndex(index)
+```
+
+
 <a name="SelectedIndex"></a>
 #### SelectedIndex
 
-
 Index of the selected element of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedIndex, SetSelectedIndex
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetSelectedIndex()
+
+SeS('SomeManagedCheckedListBox').SetSelectedIndex(value)
+```
+
+
 <a name="SelectedIndices"></a>
 #### SelectedIndices
 
-
 Returns string of indexes delimited by separator or array of indexes of selected elements.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -212,65 +222,75 @@ Returns string of indexes delimited by separator or array of indexes of selected
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedIndices
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetSelectedIndices(asArray, separator)
+```
+
+
 <a name="SelectedItems"></a>
 #### SelectedItems
 
-
 Text of all the selected items in a single string. Items are divided by ';' separator.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItems
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetSelectedItems()
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item in a single string.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText
-      
-    
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetSelectedText()
+```
+
+
 <a name="SelectionCount"></a>
 #### SelectionCount
 
-
 Number of selected items.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectionCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeManagedCheckedListBox').GetSelectionCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 

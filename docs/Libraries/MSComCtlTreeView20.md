@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Checked](#checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked |  |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickNode](#doclicknode) | Clicks specific node in the tree. |
@@ -49,18 +46,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Checked"></a>
 #### Checked
 
-
 Checked state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -70,21 +64,23 @@ Checked state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetChecked
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlTreeView20').GetChecked(path, separator, pathType)
+```
+
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Number of children of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -94,21 +90,23 @@ Number of children of the selected node or a node specified by the input paramet
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlTreeView20').GetChildrenCount(path, separator, pathType)
+```
+
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 Expanded state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -118,21 +116,23 @@ Expanded state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlTreeView20').GetExpanded(path, separator, pathType)
+```
+
+
 <a name="IndexPath"></a>
 #### IndexPath
 
-
 Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6', 'false' if fails
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -142,21 +142,23 @@ Index path of the specified or selected tree node i.e. string in form '0;5;2;1;6
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetIndexPath
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlTreeView20').GetIndexPath(path, separator, pathType)
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -166,21 +168,23 @@ Text of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlTreeView20').GetNodeText(path, separator, pathType)
+```
+
+
 <a name="Selected"></a>
 #### Selected
 
-
 Selected state of the selected node or a node specified by the input parameters
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -190,35 +194,41 @@ Selected state of the selected node or a node specified by the input parameters
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelected
-      
-    
+
+```javascript
+value = SeS('SomeMSComCtlTreeView20').GetSelected(path, separator, pathType)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 ;-combined text of all selected nodes.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeMSComCtlTreeView20').GetText()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickNode"></a>    
 #### DoClickNode
 

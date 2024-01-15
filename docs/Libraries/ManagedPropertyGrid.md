@@ -19,10 +19,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Expanded](#expanded) | True if selected item is expanded | GetExpanded |  |
@@ -33,13 +32,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoCollapse](#docollapse) | Collapses an item of this object. |
@@ -51,92 +48,101 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 True if selected item is expanded
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeManagedPropertyGrid').GetExpanded()
+```
+
+
 <a name="SelectedItem"></a>
 #### SelectedItem
 
-
 Returns the structure with label, value, expanded fields
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedItem
-      
-    
+
+```javascript
+value = SeS('SomeManagedPropertyGrid').GetSelectedItem()
+```
+
+
 <a name="SelectedLabel"></a>
 #### SelectedLabel
 
-
 Label of the selected item.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedLabel
-      
-    
+
+```javascript
+value = SeS('SomeManagedPropertyGrid').GetSelectedLabel()
+```
+
+
 <a name="SelectedText"></a>
 #### SelectedText
 
-
 Text of the selected item.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetSelectedText
-      
-    
+
+```javascript
+value = SeS('SomeManagedPropertyGrid').GetSelectedText()
+```
+
+
 <a name="VisibleRowCount"></a>
 #### VisibleRowCount
 
-
 Number of visible rows
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetVisibleRowCount
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeManagedPropertyGrid').GetVisibleRowCount()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoCollapse"></a>    
 #### DoCollapse
 

@@ -11,13 +11,11 @@ File object. Use it to perform actions not related to a particular object. You d
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Append](#append) | Appends text to a file. |
@@ -39,14 +37,13 @@ File object. Use it to perform actions not related to a particular object. You d
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Append"></a>    
 #### Append
 

@@ -17,23 +17,20 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Active](#active) | Active state of the button. | GetActive |  |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClick](#doclick) | Clicks the button. |
@@ -41,32 +38,33 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Active"></a>
 #### Active
 
-
 Active state of the button. If the button is active it is highlightedin YUI. Usually to make an object Active user needs to move mouseover the object.
 
-      
-  
-      
+
+
 Type: Boolean
-      
-      
+
+
 Accessors: GetActive
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeYUISplitButton').GetActive()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClick"></a>    
 #### DoClick
 

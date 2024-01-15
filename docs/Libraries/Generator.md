@@ -11,13 +11,11 @@ Use Generator object to produce unique and formatted data input. Requires Rapise
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Create](#create) | Creates generator object in Spira. |
@@ -27,14 +25,13 @@ Use Generator object to produce unique and formatted data input. Requires Rapise
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Create"></a>    
 #### Create
 

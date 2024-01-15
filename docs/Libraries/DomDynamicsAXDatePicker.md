@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Day](#day) | Current day displayed by the date picker. | GetDay |  |
@@ -29,13 +28,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoNextMonth](#donextmonth) | Clicks on 'Next Month' selector. |
@@ -44,62 +41,67 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Day"></a>
 #### Day
 
-
 Current day displayed by the date picker.
 
-      
-  
-      
+
+
 Type: string|number
-      
-      
+
+
 Accessors: GetDay
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXDatePicker').GetDay()
+```
+
+
 <a name="Month"></a>
 #### Month
 
-
 Current month displayed by the date picker.
 
-      
-  
-      
+
+
 Type: string|number
-      
-      
+
+
 Accessors: GetMonth
-      
-    
+
+```javascript
+value = SeS('SomeDomDynamicsAXDatePicker').GetMonth()
+```
+
+
 <a name="Year"></a>
 #### Year
 
-
 Current year displayed by the date picker.
 
-      
-  
-      
+
+
 Type: string|number
-      
-      
+
+
 Accessors: GetYear
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDomDynamicsAXDatePicker').GetYear()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoNextMonth"></a>    
 #### DoNextMonth
 

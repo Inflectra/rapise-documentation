@@ -11,13 +11,11 @@ Use Spira object to communicate with Spira during playback of tests. With Spira 
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [CreateIncident](#createincident) | Creates an incident in Spira. |
@@ -25,14 +23,13 @@ Use Spira object to communicate with Spira during playback of tests. With Spira 
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="CreateIncident"></a>    
 #### CreateIncident
 

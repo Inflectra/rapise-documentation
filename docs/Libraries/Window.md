@@ -11,13 +11,11 @@ This is a JavaScript wrapper for Window of Selenium .NET library.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [FullScreen](#fullscreen) | Sets the current window to full screen if it is not already in that state. |
@@ -30,14 +28,13 @@ This is a JavaScript wrapper for Window of Selenium .NET library.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="FullScreen"></a>    
 #### FullScreen
 

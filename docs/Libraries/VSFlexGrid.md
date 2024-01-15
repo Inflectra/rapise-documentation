@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Cell](#cell) | Text of the specified cell. | GetCell | SetCell |
@@ -38,13 +37,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell. |
@@ -53,18 +50,15 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Cell"></a>
 #### Cell
 
-
 Text of the specified cell.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -73,36 +67,44 @@ Text of the specified cell.
 | columnIndex | number | Zero-based index if the row. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetCell, SetCell
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetCell(/**number*/rowIndex, /**number*/columnIndex)
+
+SeS('SomeVSFlexGrid').SetCell(/**number*/rowIndex, /**number*/columnIndex, /**string*/value)
+```
+
+
 <a name="ColumnCount"></a>
 #### ColumnCount
 
-
 Number of columns in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetColumnCount, SetColumnCount
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetColumnCount()
+
+SeS('SomeVSFlexGrid').SetColumnCount(/**number*/cols)
+```
+
+
 <a name="ColumnName"></a>
 #### ColumnName
 
-
 Caption of a column.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -110,81 +112,97 @@ Caption of a column.
 | columnIndex | number | Zero-based index of the column. |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetColumnName, SetColumnName
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetColumnName(/**number*/columnIndex)
+
+SeS('SomeVSFlexGrid').SetColumnName(/**number*/columnIndex, /**string*/value)
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetHeight()
+```
+
+
 <a name="RowCount"></a>
 #### RowCount
 
-
 Number of rows in the grid.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetRowCount, SetRowCount
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetRowCount()
+
+SeS('SomeVSFlexGrid').SetRowCount(/**number*/cols)
+```
+
+
 <a name="SelectedRow"></a>
 #### SelectedRow
 
-
 Checked state of the selected node or a node specified by the input parameters.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelectedRow, SetSelectedRow
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetSelectedRow()
+
+SeS('SomeVSFlexGrid').SetSelectedRow(/**number*/row,/**boolean*/sel)
+```
+
+
 <a name="SelectedRowCount"></a>
 #### SelectedRowCount
 
-
 Number of selected rows.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetSelectedRowCount
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetSelectedRowCount()
+```
+
+
 <a name="SelectedRows"></a>
 #### SelectedRows
 
-
 Selected rows.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -193,80 +211,96 @@ Selected rows.
 | separator | string | Separator character. Possible values: ";", ",", "\", "/"<br>Optional, Default: ";". |
 
 
-  
-      
+
+
 Type: array|string
-      
-      
+
+
 Accessors: GetSelectedRows, SetSelectedRows
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetSelectedRows(/**boolean*/asArray, /**string*/separator)
+
+SeS('SomeVSFlexGrid').SetSelectedRows(/**boolean*/asArray, /**string*/separator, /**array|string*/values)
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the currently focused cell.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetText()
+
+SeS('SomeVSFlexGrid').SetText(/**string*/value)
+```
+
+
 <a name="Width"></a>
 #### Width
 
-
 Width of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetWidth
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetWidth()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetX()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the object.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeVSFlexGrid').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickCell"></a>    
 #### DoClickCell
 

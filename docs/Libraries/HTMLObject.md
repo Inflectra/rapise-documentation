@@ -15,10 +15,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Alt](#alt) | Alt of the element. | GetAlt |  |
@@ -48,13 +47,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoAddSelection](#doaddselection) | Adds selection of specified option in multi-select element. |
@@ -83,377 +80,426 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Alt"></a>
 #### Alt
 
-
 Alt of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetAlt
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetAlt()
+```
+
+
 <a name="Checked"></a>
 #### Checked
 
-
 'Checked' state of the element.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetChecked
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetChecked()
+```
+
+
 <a name="Class"></a>
 #### Class
 
-
 Class of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetClass
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetClass()
+```
+
+
 <a name="ClientX"></a>
 #### ClientX
 
-
 X-coordinate of the top left corner of the element relative to browser window.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetClientX
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetClientX()
+```
+
+
 <a name="ClientY"></a>
 #### ClientY
 
-
 Y-coordinate of the top left corner of the element relative to browser window.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetClientY
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetClientY()
+```
+
+
 <a name="Enabled"></a>
 #### Enabled
 
-
 'Enabled' state of the element.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetEnabled, SetEnabled
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetEnabled()
+
+SeS('SomeHTMLObject').SetEnabled(value)
+```
+
+
 <a name="Height"></a>
 #### Height
 
-
 Height of the element.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetHeight
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetHeight()
+```
+
+
 <a name="Href"></a>
 #### Href
 
-
 HREF of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetHref
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetHref()
+```
+
+
 <a name="Id"></a>
 #### Id
 
-
 ID of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetId
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetId()
+```
+
+
 <a name="InnerText"></a>
 #### InnerText
 
-
 Inner text of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetInnerText
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetInnerText()
+```
+
+
 <a name="Label"></a>
 #### Label
 
-
 Label of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetLabel
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetLabel()
+```
+
+
 <a name="Name"></a>
 #### Name
 
-
 Name of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetName
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetName()
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the element without children.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetNodeText()
+```
+
+
 <a name="PageTitle"></a>
 #### PageTitle
 
-
 Title of the HTML document.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetPageTitle
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetPageTitle()
+```
+
+
 <a name="PageURL"></a>
 #### PageURL
 
-
 Location URL of the HTML document.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetPageURL
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetPageURL()
+```
+
+
 <a name="Style"></a>
 #### Style
 
-
 Style of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetStyle
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetStyle()
+```
+
+
 <a name="Tag"></a>
 #### Tag
 
-
 Tag of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetTag
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetTag()
+```
+
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the element with normalized spaces.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetText()
+```
+
+
 <a name="Title"></a>
 #### Title
 
-
 Title of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetTitle
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetTitle()
+```
+
+
 <a name="Value"></a>
 #### Value
 
-
 Value of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetValue
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetValue()
+```
+
+
 <a name="Visible"></a>
 #### Visible
 
-
 Returns `true` if the element is visible on screen. Requires Rapise 6.6+
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetVisible
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetVisible()
+```
+
+
 <a name="X"></a>
 #### X
 
-
 X-coordinate of the top left corner of the element.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetX
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetX()
+```
+
+
 <a name="XPath"></a>
 #### XPath
 
-
 XPath of the element.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetXPath
-      
-    
+
+```javascript
+value = SeS('SomeHTMLObject').GetXPath()
+```
+
+
 <a name="Y"></a>
 #### Y
 
-
 Y-coordinate of the top left corner of the element.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetY
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeHTMLObject').GetY()
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 

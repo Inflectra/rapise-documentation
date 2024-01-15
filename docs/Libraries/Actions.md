@@ -11,13 +11,11 @@ This is a JavaScript wrapper for Actions of Selenium .NET library.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Build](#build) | Builds the sequence of actions. |
@@ -37,14 +35,13 @@ This is a JavaScript wrapper for Actions of Selenium .NET library.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Build"></a>    
 #### Build
 

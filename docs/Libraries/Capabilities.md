@@ -11,13 +11,11 @@ This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.F
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [GetCapability](#getcapability) | Gets a capability of the browser. |
@@ -26,14 +24,13 @@ This is a JavaScript wrapper for DesiredCapabilities of Selenium .NET library.F
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="GetCapability"></a>    
 #### GetCapability
 

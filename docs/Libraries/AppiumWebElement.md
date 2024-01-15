@@ -11,13 +11,11 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [Clear](#clear) |  |
@@ -62,14 +60,13 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="Clear"></a>    
 #### Clear
 

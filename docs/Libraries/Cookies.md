@@ -11,13 +11,11 @@ This is a JavaScript wrapper for Cookies of Selenium .NET library.
 
 <!-- ============================== property summary ========================== -->
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [AddCookie](#addcookie) | Adds a cookie to the current page. |
@@ -29,14 +27,13 @@ This is a JavaScript wrapper for Cookies of Selenium .NET library.
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
-  
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="AddCookie"></a>    
 #### AddCookie
 

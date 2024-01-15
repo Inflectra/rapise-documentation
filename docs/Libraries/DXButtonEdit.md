@@ -19,55 +19,55 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Text](#text) | Text of the object, 'false' if text can not be read. | GetText | SetText |
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoSetText](#dosettext) | Sets text value of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Text"></a>
 #### Text
 
-
 Text of the object, 'false' if text can not be read.
 
-      
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetText, SetText
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXButtonEdit').GetText()
+
+SeS('SomeDXButtonEdit').SetText(value)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoSetText"></a>    
 #### DoSetText
 
@@ -105,10 +105,9 @@ boolean: 'true' if success, 'false' otherwise.
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [ButtonCount](#buttoncount) | Number of buttons in this control. | GetButtonCount |  |
@@ -116,46 +115,43 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoClickButton](#doclickbutton) | Selects an item of this object. |
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="ButtonCount"></a>
 #### ButtonCount
 
-
 Number of buttons in this control.
 
-      
-  
-      
+
+
 Type: number
-      
-      
+
+
 Accessors: GetButtonCount
-      
-    
+
+```javascript
+value = SeS('SomeDXButtonEdit').GetButtonCount()
+```
+
+
 <a name="ButtonKind"></a>
 #### ButtonKind
 
-
 Kind of a button at index. Returns one of Glyph, Ellipsis, Delete, OK, Plus, Minus, Redo, Undo or DropDown
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -163,20 +159,24 @@ Kind of a button at index. Returns one of Glyph, Ellipsis, Delete, OK, Plus, Min
 | index | number | index of button |
 
 
-  
-      
+
+
 Type: string
-      
-      
+
+
 Accessors: GetButtonKind
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeDXButtonEdit').GetButtonKind(index)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoClickButton"></a>    
 #### DoClickButton
 

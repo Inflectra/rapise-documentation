@@ -17,10 +17,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 <!-- ============================== property summary ========================== -->
 
-  
+
 
 ### Property Summary
-
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
 | [Checked](#checked) | Checked state of the selected node or a node specified by the input parameters. | GetChecked | SetChecked |
@@ -31,13 +30,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-  
 <!-- ============================== action summary ========================== -->
 
 
 
 ### Action Summary
-
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoCollapse](#docollapse) | Collapses specific node in the tree. |
@@ -46,33 +43,34 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-
 <!-- ============================== property detail ========================== -->
-  
+
 ### Property Detail
-    
+
 <a name="Checked"></a>
 #### Checked
 
-
 Checked state of the selected node or a node specified by the input parameters.
 
-      
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetChecked, SetChecked
-      
-    
+
+```javascript
+value = SeS('SomeSWTTree').GetChecked()
+
+SeS('SomeSWTTree').SetChecked(/**boolean*/value)
+```
+
+
 <a name="ChildrenCount"></a>
 #### ChildrenCount
 
-
 Number of children of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -82,21 +80,25 @@ Number of children of the selected node or a node specified by the input paramet
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetChildrenCount, SetChildrenCount
-      
-    
+
+```javascript
+value = SeS('SomeSWTTree').GetChildrenCount(path, separator, pathType)
+
+SeS('SomeSWTTree').SetChildrenCount(/**string*/value)
+```
+
+
 <a name="Expanded"></a>
 #### Expanded
 
-
 Expanded state of the selected node or a node specified by the input parameters.
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -106,36 +108,44 @@ Expanded state of the selected node or a node specified by the input parameters.
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetExpanded, SetExpanded
-      
-    
+
+```javascript
+value = SeS('SomeSWTTree').GetExpanded(path, separator, pathType)
+
+SeS('SomeSWTTree').SetExpanded(path, separator, pathType)
+```
+
+
 <a name="NodeText"></a>
 #### NodeText
 
-
 Text of the selected node or a node specified by the input parameters.
 
-      
-  
-      
+
+
 Type: string|boolean
-      
-      
+
+
 Accessors: GetNodeText, SetNodeText
-      
-    
+
+```javascript
+value = SeS('SomeSWTTree').GetNodeText()
+
+SeS('SomeSWTTree').SetNodeText(/**string*/value)
+```
+
+
 <a name="Selected"></a>
 #### Selected
 
-
 Selected state of the selected node or a node specified by the input parameters
 
-      
 **Getter Parameters:**
 
 | **Name** | **Type** | **Description** |
@@ -145,20 +155,26 @@ Selected state of the selected node or a node specified by the input parameters
 | pathType | string | Path type. Can be one of 'name', 'id' or 'index'. Possible values: "name", "index", "id"<br>Optional, Default: "name". |
 
 
-  
-      
+
+
 Type: boolean
-      
-      
+
+
 Accessors: GetSelected, SetSelected
-      
-    
-  
-  
+
+```javascript
+value = SeS('SomeSWTTree').GetSelected(path, separator, pathType)
+
+SeS('SomeSWTTree').SetSelected(path, separator, pathType)
+```
+
+
+
+
 <!-- ============================== action detail ========================== -->
-  
+
 ### Action Detail
-    
+
 <a name="DoCollapse"></a>    
 #### DoCollapse
 
