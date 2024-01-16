@@ -163,7 +163,7 @@ Gets a cell value by its coordinates. It returns the current cell value after `D
 | End  | of Map |        |         |           |           |            |
 |      |        |        |         |           |           |            |
 |      | Action | Logins | GetCell | columnId  | string    | login      |
-|      |        |        |         | rowId     | number    | 3          |
+|      | Param  |        |         | rowId     | number    | 3          |
 |      |        |        |         |           |           |            |
 
 ## ColumnCell
