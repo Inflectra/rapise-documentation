@@ -59,7 +59,33 @@ Executes specified test in parallel threads passing additional arguments specifi
 * `threadsMap`: The name of the map defining params. 1st column - Thread ID (alphanumeric, i.e. THREAD01), other columns - parameter variables, i.e. column name `g_browserLibrary`, values 'Selenium Chrome', 'Selenium Firefox', etc.
 * **[extraParams]**: Global variable values common for all threads.
 
-![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
+=== "Screenshot"
+    ![DoPlayTestParallel](../RVL/img/RVL_DoPlayParallel.png)
+=== "Transcript"
+    Sheets: RVL | Browsers | Users | **Login**
+
+    | Flow | Type     | Object        | Action             | ParamName        | ParamType  | ParamValue                |
+    | ---- | -------- | ------------- | ------------------ | ---------------- | ---------- | ------------------------- |
+    | Map  | Rows     | Users         |                    |                  |            |                           |
+    |      | Thread   | g_loginName   | g_password         | g_name           |            |                           |
+    |      | lib      | librarian     | librarian          | librarian        |            |                           |
+    |      | adm      | administrator | PleaseChange       | administrator    |            |                           |
+    |      | bor      | borrower      | borrower           |                  |            |                           |
+    | End  | of Map   |               |                    |                  |            |                           |
+    |      |          |               |                    |                  |            |                           |
+    |      | Variable |               | Global             | g_browserProfile |            |                           |
+    |      |          |               |                    |                  |            |                           |
+    |      | Action   | Tester        | Message            | message          | string     | Launching MR for Browser: |
+    |      | Param    |               |                    | message          | variable   | g_browserProfile          |
+    |      |          |               |                    |                  |            |                           |
+    |      | Action   | RVL           | DoPlayTestParallel | sstestPath       | string     | MassLoginsTest.sstest     |
+    |      | Param    |               |                    | threadsMap       | expression | Users                     |
+    |      | Param    |               |                    | g_browserLibrary | variable   | g_browserProfile          |
+    |      | Param    |               |                    | g_entryPointName | string     | RVL Special EntryPoint    |
+    |      | Param    |               |                    | g_rvlScriptSheet | string     | Login                     |
+    |      |          |               |                    |                  |            |                           |
+
+    (Note: In this example extraParams are `g_browserLibrary`, `g_entryPointName`, `g_rvlScriptSheet`)
 
 ### See Also
 
@@ -73,7 +99,7 @@ RVL.DoRunTest(/**string*/ sstestPath)
 ```
 
 Executes specified test using [Global.DoRunTest](Global.md#DoRunTest) but passing any extra parameters as 'params' object to invoked test. Requires Rapise 8.1+.
-			
+
 * `sstestPath`: Path to test
 * **[extraParams]**: default variable values see [RVL Extra Params](../RVL/RVL_DoPlay.md)
 
