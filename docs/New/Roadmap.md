@@ -73,3 +73,4 @@ We are also going to expand our AI research and equip Rapise with AI-based featu
 
 - **SAP desktop** GUI support
 - **Flutter** framework support
+= **Appium 2.0** support
