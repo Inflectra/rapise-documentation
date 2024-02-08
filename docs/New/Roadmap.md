@@ -10,12 +10,14 @@
 
 ## Version 8.2 (Q2 2024)
 
-- AI: Generate data to use for Data-Driven Testing.
+- **AI**: Generate data to use for Data-Driven Testing.
     - Example: generate 10 fake company names
     - Example: generate more data lines for this spreadsheet
-- AI: AI(text) command in RVL to perform actions based on high level text description.
+- **AI**: AI(text) command in RVL to perform actions based on high level text description.
     - Example: log into the system with username `librarian` and password `librarian`
     - Example: open Books section
+- **Appium 2.0** support
+- Enhance **CSS** selectors to pierce open **Shadow DOM**
 
 ## 2024
 
@@ -73,4 +75,3 @@ We are also going to expand our AI research and equip Rapise with AI-based featu
 
 - **SAP desktop** GUI support
 - **Flutter** framework support
-- **Appium 2.0** support
