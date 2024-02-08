@@ -3,6 +3,50 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB796', 'Useful Page Objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB796.aspx">KB796</a> Useful Page Objects
+
+Sample framework including general purpose page objects that you may find useful in your test cases (KeyboardHelper, ListChecker, ManagedHelper, StringChecker, TableHandler). Help pressing special keys, comparing lists, accessing managed popup windows, checking unique strings and string formatting, working with standard web table (<table/>).
+
+### <a onclick="return RegisterKbClick('KB790', 'How to resign a third-party .ipa file to run it on a real iOS device')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB790.aspx">KB790</a> How to resign a third-party .ipa file to run it on a real iOS device
+
+You may receive an .ipa file from a development team or download one published by a third-party vendor. In order to create and run automation scripts using a real iOS device you need to resign the .ipa file with your provisioning profile and development certificate. Learn how to do it from this article.
+
+### <a onclick="return RegisterKbClick('KB780', 'Chrome for Testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB780.aspx">KB780</a> Chrome for Testing
+
+This is the mirror of https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json Using links from this JSON file you may download specific versions of Chrome that do not auto-update.
+
+### <a onclick="return RegisterKbClick('KB776', 'How to run a sub-test in isolated mode')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB776.aspx">KB776</a> How to run a sub-test in isolated mode
+
+Sometimes there is a need to execute another test (sub-test) from a Rapise test. Doing so with Global.DoInvokeTest or RVL.DoPlayTest will run the sub-test in the context of the calling test, it will reuse same browser profile or mobile profile, it will use same loaded libraries. Such mode of execution may produce different results compared with running the sub-test standalone. To run the sub-test in isolated mode use Global.DoInvokeTestParallel and RVL.DoPlayTestParallel.
+
+### <a onclick="return RegisterKbClick('KB775', 'Where to find Rapise installation logs')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB775.aspx">KB775</a> Where to find Rapise installation logs
+
+In rare cases Rapise installation fails. There may be different reasons for this including AV software, security configuration or corrupted Windows system. To help Rapise team to find out the root cause you may zip and share Rapise installation logs.
+
+### <a onclick="return RegisterKbClick('KB774', 'How to automate testing of Flutter Web applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB774.aspx">KB774</a> How to automate testing of Flutter Web applications
+
+In most cases Flutter Web applications are built with CanvasKit renderer (flutter build web --web-renderer canvaskit). It means that by default UI elements of an application are not visible to test automation tools. They see just the big pane that covers all browser window. So does Rapise. However, there is a simple workaround that can be applied to solve this problem.
+
+### <a onclick="return RegisterKbClick('KB772', 'If you have Rapise version lower than 8.0.28.45 and Chrome 115+')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB772.aspx">KB772</a> If you have Rapise version lower than 8.0.28.45 and Chrome 115+
+
+Since version 115 of Chrome the central storage of chromedriver executables has changed. If you have Rapise version older than 8.0.28.45 than you need to take special steps to continue testing on Chrome 115 and above.
+
+### <a onclick="return RegisterKbClick('KB771', 'How to generate an HTML report using own template and convert it to PDF')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB771.aspx">KB771</a> How to generate an HTML report using own template and convert it to PDF
+
+Rapise can export an execution report in HTML format, it even allows to choose from a few predefined templates. However you may want to create own template or customize existing one and export the report automatically at the end of test execution. Also you may want to convert generated HTML report to PDF format. Learn how from this article.
+
+### <a onclick="return RegisterKbClick('KB767', 'Rapise 8.0: how to use Rapise with Git and Spira')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB767.aspx">KB767</a> Rapise 8.0: how to use Rapise with Git and Spira
+
+If your team has only one or two test automation engineers, the best option for storing files of a testing framework is within SpiraTest. This approach is straightforward to implement and does not require specific configuration of test sets. However, if your testing framework is expected to grow significantly and you have multiple automation engineers, it is recommended to incorporate Git into your set of tools. Using Git offers several important benefits: Improved file loading speed: By integrating Git with RapiseLauncher, the process of loading files from a repository is significantly faster. This can save valuable time, especially when dealing with larger frameworks or complex test suites. Comprehensive source control features: Git provides a wide range of source control capabilities, including branching and merging. These features are essential for managing changes and collaborating effectively when multiple team members are working on the same codebase. It allows for better organization, tracking, and merging of code changes, ensuring a streamlined development process. Enhanced teamwork: Git simplifies collaboration in a team environment. It allows team members to work on different branches or even different features concurrently, while providing mechanisms to merge and synchronize their work seamlessly. This enables better coordination and reduces the risk of conflicts when integrating changes made by multiple developers. By incorporating Git into your testing workflow, you can optimize file loading speed, leverage powerful source control features, and foster a more efficient and collaborative team environment.
+
+### <a onclick="return RegisterKbClick('KB765', 'Rapise 8.0: how to use Page Objects/Modules')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB765.aspx">KB765</a> Rapise 8.0: how to use Page Objects/Modules
+
+When writing automated tests, it is often necessary to create shared modules that can be used by multiple test cases. These modules serve various purposes, such as handling authentication for applications with a login page, performing necessary actions after test case completion, or working with custom controls within the application, such as dropdown menus, form fields, or grid/table controls. In Rapise 8.0, you have the ability to address all these requirements. Rapise supports two types of modules: RVL (Rapise Visual Language) and JavaScript-based modules. These modules provide a flexible and powerful approach to handle common functionalities across your test cases. By using RVL modules, you can visually create reusable components that encapsulate specific actions or sequences of steps. For example, you can create an RVL module that handles the authentication process by entering credentials and clicking the login button. This module can then be easily reused across multiple test cases that require login functionality. Alternatively, you can leverage JavaScript-based modules in Rapise 8.0. JavaScript is a versatile programming language that allows you to create custom functions and logic to handle complex scenarios. With JavaScript-based modules, you can implement specific interactions with custom controls or perform actions that are not easily achievable through the visual interface of Rapise. Both RVL and JavaScript-based modules in Rapise provide a seamless way to organize and reuse common functionalities within your automated tests. They help improve maintainability, reduce duplication of code, and enhance overall test efficiency.
+
+### <a onclick="return RegisterKbClick('KB764', 'How to switch between applications in a Mobile test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB764.aspx">KB764</a> How to switch between applications in a Mobile test
+
+Sometimes mobile testing scenarios involve interactions with built-in applications installed on a device. For example you may need to open Messages, locate SMS with a one-time code and use it in your application.
+
 ### <a onclick="return RegisterKbClick('KB760', 'Rapise 8.0: using multiselect and datacolumn parameters for comprehensive testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB760.aspx">KB760</a> Rapise 8.0: using multiselect and datacolumn parameters for comprehensive testing
 
 The true strength of test automation lies in its capability to execute the same test cases with varying input parameters. In Rapise 8.0, you can achieve this by utilizing multiselect and datacolumn parameters. Let's now explore a specific example to illustrate this concept.
@@ -133,7 +177,7 @@ This function is useful for scripting DragNDrop for web tests.
 
 ### <a onclick="return RegisterKbClick('KB662', 'Check if Excel Sheet Exists')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB662.aspx">KB662</a> Check if Excel Sheet Exists
 
-Function to check if give Excel workbook contains a sheet with given name.
+Function to check if a given Excel workbook contains a sheet with the given name.
 
 ### <a onclick="return RegisterKbClick('KB655', 'How to work with Shadow DOM via Native Selenium API in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB655.aspx">KB655</a> How to work with Shadow DOM via Native Selenium API in Rapise
 
@@ -261,7 +305,7 @@ If a desktop application is dynamic and recorded locators do not work then there
 
 ### <a onclick="return RegisterKbClick('KB572', 'Specifying Timeout for REST Calls')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB572.aspx">KB572</a> Specifying Timeout for REST Calls
 
-Rapise REST module uses 100seconds timeout by default. Since Rapise 6.6 you may make it longer or shorter.
+Rapise REST module uses 100 seconds timeout by default. Since Rapise 6.6 you may make it longer or shorter.
 
 ### <a onclick="return RegisterKbClick('KB570', 'Easy Way to Dump Sheet Variables')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB570.aspx">KB570</a> Easy Way to Dump Sheet Variables
 
@@ -407,7 +451,7 @@ Imaging you have a table with dynamic data on the page. It is not possible to le
 
 Sometimes you need to specify object and data for it in the map. Here we will show how to make it using Rapise built in maps and available APIs.
 
-### <a onclick="return RegisterKbClick('KB503', 'Accessing svg elements via XPath')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB503.aspx">KB503</a> Accessing svg elements via XPath
+### <a onclick="return RegisterKbClick('KB503', 'Accessing svg elements via XPath or CSS')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB503.aspx">KB503</a> Accessing svg elements via XPath or CSS
 
 By default straight forward XPath to SVG primitives will not work.  So XPath ending like .../svg[2]/path will fail. Here is a workaround.
 
@@ -487,7 +531,7 @@ Sometimes you need to go through all links to check something. Here are two ways
 
 When you execute Rapise tests via Rapise Launcher - test reports and logs are automatically uploaded to Spira. But verbose level is always set to Level 1 by Rapise Launcher. If you need more detailed log set verbose to 2 or 3 in test case properties.
 
-### <a onclick="return RegisterKbClick('KB472', 'Read PDF Text wih Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB472.aspx">KB472</a> Read PDF Text wih Rapise
+### <a onclick="return RegisterKbClick('KB472', 'Read PDF Text with Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB472.aspx">KB472</a> Read PDF Text with Rapise
 
 Sometimes you need to check that some text is available in the PDF document. Sometimes you need to extract some value from it. So you need access to plain text content of the document.  Here we explain how to do it with Rapise.
 
@@ -513,7 +557,7 @@ If a test needs to verify existence or absence of a specific option in a dropdow
 
 ### <a onclick="return RegisterKbClick('KB458', 'How to start Rapise Launcher on Windows Boot')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB458.aspx">KB458</a> How to start Rapise Launcher on Windows Boot
 
-Windows may reboot because of various reasons. If you use a machine to run Rapise tests on regular basis than you want Rapise Launcher to be started automatically after system reboot. The most reliable method that works with any Windows edition is to use Task Scheduler.
+Windows may reboot because of various reasons. If you use a machine to run Rapise tests on regular basis than you want RapiseLauncher to be started automatically after system reboot.
 
 ### <a onclick="return RegisterKbClick('KB457', 'How to organize custom code in User.js')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB457.aspx">KB457</a> How to organize custom code in User.js
 
@@ -521,11 +565,11 @@ Every test has a User.js file and it is a place to put custom code and functions
 
 ### <a onclick="return RegisterKbClick('KB453', 'Working Directory of a Test and Relative Paths')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB453.aspx">KB453</a> Working Directory of a Test and Relative Paths
 
-When Rapise starts execution of a test it sets working directory. If a test refers to a file using a relative path then the absolute path is calculated using the working directory.
+When Rapise starts execution of a test, it sets working directory. If a test refers to a file using a relative path then the absolute path is calculated using the working directory.
 
 ### <a onclick="return RegisterKbClick('KB448', 'How to create a Rapise web object from XPath')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB448.aspx">KB448</a> How to create a Rapise web object from XPath
 
-In some cases it may be convenient to construct Rapise Objects dynamically rather than capture in advance  with record/learn. In Web tests you can do it via Navigator.Find.
+In some cases it may be convenient to construct Rapise Objects dynamically rather than capture in advance with record/learn. In Web tests you can do it via Navigator.Find and Navigator.SeSFind.
 
 ### <a onclick="return RegisterKbClick('KB446', 'Getting browser console logs')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB446.aspx">KB446</a> Getting browser console logs
 
@@ -597,7 +641,7 @@ Once you have your Firefox updated to version 64 Rapise may have problems connec
 
 ### <a onclick="return RegisterKbClick('KB418', 'Is it Possible to Automate an iOS Web App using Rapise?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB418.aspx">KB418</a> Is it Possible to Automate an iOS Web App using Rapise?
 
-Yes, in general, Rapise can automate most web applications using mobile Safari running on iOS (either on a real or simulated device). However there are some limitations.
+Yes, in general, Rapise can automate most web applications using mobile Safari running on iOS (either on a real or simulated device). However there are some limitations. This article is obsolete. The recommended way of testing Web applications is to record tests on a desktop browser via Selenium-based profile and then execute using Mobile profiles. See How to run a cross-browser test on a mobile device for more details.
 
 ### <a onclick="return RegisterKbClick('KB417', 'How to manipulate browser cookies using Selenium API in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB417.aspx">KB417</a> How to manipulate browser cookies using Selenium API in Rapise
 
@@ -705,13 +749,13 @@ Working example of test framework designed to maximize flexibility and get the m
 
 ### <a onclick="return RegisterKbClick('KB367', 'Storing Values Across Test Cases and Sessions in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB367.aspx">KB367</a> Storing Values Across Test Cases and Sessions in Rapise
 
-Sometimes test set requires a value passing through the sequence of test cases. Good example is User ID assigned during sign it and then used in subsequent test cases. Another use case is when test case requires some input value that should always be unique.
+Sometimes test set requires a value passing through the sequence of test cases. Good example is User ID assigned during sign-in and then used in subsequent test cases. Another use case is when test case requires some input value that should always be unique.
 
 ### <a onclick="return RegisterKbClick('KB366', 'How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics NAV')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB366.aspx">KB366</a> How to ensure that a Fast Tab is expanded and scrolled into view in Dynamics NAV
 
 Many views in Dynamics NAV have several collapsible panes: General, Lines, Invoice Details, etc. They are also known as Fast Tabs.  Learn how to ensure that a Fast Tab is expanded and scrolled into view before entering data into the fields in this tab. Requires Rapise 5.7+
 
-### <a onclick="return RegisterKbClick('KB364', 'How to ensure that web element is visible before interacting with it?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB364.aspx">KB364</a> How to ensure that web element is visible before interacting with it?
+### <a onclick="return RegisterKbClick('KB364', 'How to ensure that a web element is visible before interacting with it?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB364.aspx">KB364</a> How to ensure that a web element is visible before interacting with it?
 
 Sometimes an element on a web page may be invisible because it is out of a viewport.  Real user scrolls a page vertically and horizontally to reach such an element. How to achieve same behavior with Rapise?
 
@@ -783,7 +827,7 @@ When you have a user defined function in Rapise, you sometimes want to jump to i
 
 Sometimes you want to have multiple nested loops to test a set of test data (for example loop over a list of users, and for each user, loop over a list of browsers). In JavaScript you can use standard nested loops, this article explains how you can do the same using RVL.
 
-### <a onclick="return RegisterKbClick('KB339', 'Where Does Rapise Log Errors?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB339.aspx">KB339</a> Where Does Rapise Log Errors?
+### <a onclick="return RegisterKbClick('KB339', 'Where does Rapise log errors?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB339.aspx">KB339</a> Where does Rapise log errors?
 
 Sometimes when you are using Rapise, you see an error on the screen, or something doesn't work as expected. In that case, our support team will need a copy of the log file that is likely to contain the error message. This article explains how to get that log file.
 
@@ -909,7 +953,7 @@ Sometimes we need to track the time taken by an operation. This KB contains sugg
 
 ### <a onclick="return RegisterKbClick('KB293', 'How to store Rapise tests in Git and run them with SpiraTeam')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB293.aspx">KB293</a> How to store Rapise tests in Git and run them with SpiraTeam
 
-In some cases it is convenient to store tests in the same Git repository where source code of an application under test is located. For example, if you are using Visual Studio Team Services.  From this article you will learn how to execute Rapise tests stored in a Git repository with SpiraTeam and leverage the power of SpiraTeam reporting and analysis features.
+In some cases it is convenient to store tests in the same Git repository where source code of an application under test is located. For example, if you are using Visual Studio Team Services.  From this article you will learn how to execute Rapise tests stored in a Git repository with SpiraTeam and leverage the power of SpiraTeam reporting and analysis features. This article is obsolete. There is much simpler approach with use of RapiseLauncher Extension for Azure DevOps.
 
 ### <a onclick="return RegisterKbClick('KB292', 'Dynamics NAV Support in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB292.aspx">KB292</a> Dynamics NAV Support in Rapise
 
@@ -921,7 +965,7 @@ Sometimes we need to disable screenshots for a while (during some long loop) or 
 
 ### <a onclick="return RegisterKbClick('KB290', 'How to create Spira-friendly Test Set with shared functions and files')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB290.aspx">KB290</a> How to create Spira-friendly Test Set with shared functions and files
 
-The notion of the integrated test framework usually implies common functions and shared data between tests.  Here we provide sample configuration making sharing Spira-friendly.
+The notion of the integrated test framework usually implies common functions and shared data between tests.  Here we provide sample configuration making sharing Spira-friendly. This article is obsolete. If you are on Rapise 8.0+ then we recommend to follow the new Framework Mode methodology and start with the Benefits of using the new Framework mode KB article.
 
 ### <a onclick="return RegisterKbClick('KB289', 'How Object Recognition Works in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx">KB289</a> How Object Recognition Works in Rapise
 
@@ -973,7 +1017,7 @@ Appium requires certain version of Chrome to work with. Even Android 7.0 is ship
 
 ### <a onclick="return RegisterKbClick('KB275', 'JSON in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB275.aspx">KB275</a> JSON in Rapise
 
-This topic describes how to read and write JSON data in Rapise
+This topic describes how to read and write JSON data in Rapise.
 
 ### <a onclick="return RegisterKbClick('KB274', 'Using Rapise Mobile with a Cloud Device Farm')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB274.aspx">KB274</a> Using Rapise Mobile with a Cloud Device Farm
 
@@ -1041,7 +1085,7 @@ A customer of ours was using Rapise on a computer that was also running the ANSI
 
 ### <a onclick="return RegisterKbClick('KB247', 'Formatting dates in JavaScript')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB247.aspx">KB247</a> Formatting dates in JavaScript
 
-This is a short sample demonstrating how one can format a date
+This is a short sample demonstrating how one can format a date.
 
 ### <a onclick="return RegisterKbClick('KB243', 'Changing REST Headers When Web Service Testing')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB243.aspx">KB243</a> Changing REST Headers When Web Service Testing
 
@@ -1093,7 +1137,7 @@ When you install Rapise onto a computer that does not have Visual Studio or the 
 
 ### <a onclick="return RegisterKbClick('KB218', 'Testing Adobe AIR Applications on Mobile Devices')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB218.aspx">KB218</a> Testing Adobe AIR Applications on Mobile Devices
 
-We have had a couple of questions about whether Rapise can test Adobe AIR based applications running on mobile devices using platforms such as Android. This article provides some background and also describes the support Rapise has.
+We have had a couple of questions about whether Rapise can test Adobe AIR based applications running on mobile devices using platforms such as Android. This article provides some background and also describes the support Rapise has. [We have depreciated support for testing Adobe Flex/Flash applications in Rapise 5.0 and later, so this article is provided for use by existing customers]
 
 ### <a onclick="return RegisterKbClick('KB219', 'What to do When Rapise Doesn't Display the Web Page DOM?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB219.aspx">KB219</a> What to do When Rapise Doesn't Display the Web Page DOM?
 
@@ -1109,11 +1153,11 @@ Sometimes you have a web test where you need to test the contents of two browser
 
 ### <a onclick="return RegisterKbClick('KB215', 'Fixing the 'Method Not Found' error when using Appium for Mobile Testing in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB215.aspx">KB215</a> Fixing the 'Method Not Found' error when using Appium for Mobile Testing in Rapise
 
-If you receive the following error message when performing Mobile device testing with Rapise, this article provides the necessary solution:Method not found:'OpenQA.Selenium.RemoteCommandInfoRepositoryOpenQA.Selenium.RemoteCommandInfoRepository.get_Instance()'.
+If you receive the following error message when performing Mobile device testing with Rapise, this article provides the necessary solution:Method not found:'OpenQA.Selenium.RemoteCommandInfoRepositoryOpenQA.Selenium.RemoteCommandInfoRepository.get_Instance()'. Note: related to Appium DLL version  1.3.0.1 and  Selenium WebDriver v2.48.0.
 
 ### <a onclick="return RegisterKbClick('KB209', 'Testing Web Applications that use SVG')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB209.aspx">KB209</a> Testing Web Applications that use SVG
 
-One of the more challenging types of web application is that with uses embedded SVG (Scalable Vector Graphics) in additional to HTML DOM elements. This article describes how to use Rapise to write automated testing scripts for such applications.
+One of the more challenging types of web application is that with uses of embedded SVG (Scalable Vector Graphics) in additional to HTML DOM elements. This article describes how to use Rapise to write automated testing scripts for such applications.
 
 ### <a onclick="return RegisterKbClick('KB205', 'Rapise 3.x / 4.0 Does not Connect to Chrome x64 Bit')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB205.aspx">KB205</a> Rapise 3.x / 4.0 Does not Connect to Chrome x64 Bit
 
@@ -1125,7 +1169,7 @@ It is a common situation that desktop applications written using Microsoft Windo
 
 ### <a onclick="return RegisterKbClick('KB202', 'Reading the Details of Files on the Windows File System')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB202.aspx">KB202</a> Reading the Details of Files on the Windows File System
 
-In the KB62 article - Accessing Files using Rapise we explain how to access the names, versions and locations of files on the Windows file system. One customer asked - can we verify any file details other than version. This article provides sample code for accessing other information.
+In the KB62 article - Accessing Files using Rapise we explain how to access the names, versions and locations of files on the Windows file system. One customer asked - can we verify any file details other than version. This article provides sample code for accessing other information. Note: if you have Rapise 5.5+ then you may simply use File.Info action.
 
 ### <a onclick="return RegisterKbClick('KB203', 'Accessing the Windows Registry using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB203.aspx">KB203</a> Accessing the Windows Registry using Rapise
 
@@ -1137,7 +1181,7 @@ When you are using the global Rapise Spreadsheet object on a system running the 
 
 ### <a onclick="return RegisterKbClick('KB200', 'Testing MS-Word With Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB200.aspx">KB200</a> Testing MS-Word With Rapise
 
-We had some customers that were looking to record some tests against Microsoft Word 2010. When testing against MS-Word 2010 there are actually two parts to the application:There is the application ribbon (the menus, navigation, etc.)There is the MS-Word text window where your content is actually displayedThis article provides some strategies for dealing with both areas.
+We had some customers that were looking to record some tests against Microsoft Word 2010. When testing against MS-Word 2010 there are actually two parts to the application: There is the application ribbon (the menus, navigation, etc.) There is the MS-Word text window where your content is actually displayed This article provides some strategies for dealing with both areas.
 
 ### <a onclick="return RegisterKbClick('KB194', 'When recording with Chrome, Rapise does not record actions within frames')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB194.aspx">KB194</a> When recording with Chrome, Rapise does not record actions within frames
 
@@ -1145,7 +1189,7 @@ When creating web tests with Chrome, objects within cross-frames are not recogni
 
 ### <a onclick="return RegisterKbClick('KB193', 'Using Rapise to test websites that contain frames')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB193.aspx">KB193</a> Using Rapise to test websites that contain frames
 
-If the website under test contains frames, that presents some challenges to test automation. This article gives tips for success and explains the current limitations.
+If the website under test contains frames, that presents some challenges to test automation. This article gives tips for success and explains the current limitations. This article is obsolete. Please use Selenium-based profiles for Web testing. Read about Rapise XPath extensions here.
 
 ### <a onclick="return RegisterKbClick('KB192', 'Different XPath Options in Rapise 4.0')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB192.aspx">KB192</a> Different XPath Options in Rapise 4.0
 
@@ -1157,7 +1201,7 @@ The v4.0 release of Rapise adds enhanced attribute filtering to the Web Spy as w
 
 ### <a onclick="return RegisterKbClick('KB185', 'Using Global.DoLoadObjects to Use Rapise Objects from External File')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB185.aspx">KB185</a> Using Global.DoLoadObjects to Use Rapise Objects from External File
 
-One of the challenges using an automated testing tool is to organize things in a way that it is logical enough to find something quickly, structured enough to avoid duplication and simple enough to maintain and upgrade. This statement is also true for Rapise objects. A common requirement is to deal with the same objects within a flow of different test cases. For instance, if an application has “Log In” functionality then many, many tests will require logging-in and logging-out. Each test will have this object in its own object tree. However this causes trouble if a change in the application affects the recognition of the Log In object. All of the test cases will need to be updated. In such situations it is much more convenient to have the “Log In” objects placed into their own file and re-used by other tests.
+One of the challenges using an automated testing tool is to organize things in a way that it is logical enough to find something quickly, structured enough to avoid duplication and simple enough to maintain and upgrade. This statement is also true for Rapise objects. A common requirement is to deal with the same objects within a flow of different test cases. For instance, if an application has “Log In” functionality then many, many tests will require logging-in and logging-out. Each test will have this object in its own object tree. However this causes trouble if a change in the application affects the recognition of the Log In object. All of the test cases will need to be updated. In such situations it is much more convenient to have the “Log In” objects placed into their own file and re-used by other tests. This article is obsolete. In Rapise 8.0 and above the recommended approach is to use Page Objects / Modules.
 
 ### <a onclick="return RegisterKbClick('KB186', 'Global.DoWaitFor vs Global.DoWaitForProperty')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB186.aspx">KB186</a> Global.DoWaitFor vs Global.DoWaitForProperty
 
@@ -1209,7 +1253,7 @@ When you have a multi-select list in a web application, you may need to check wh
 
 ### <a onclick="return RegisterKbClick('KB164', 'Calling Rapise DoX functions without reporting result')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB164.aspx">KB164</a> Calling Rapise DoX functions without reporting result
 
-When you use a DoX command in Rapise to perform a specific command (e.g. DoDOMChildrenCount() to get a number of object's DOM children), in the report an extra step -- assert -- is created during test execution. Sometimes you want to be able to call a function 'quietly' without it affecting the report.
+When you use a DoX command in Rapise to perform a specific command (e.g. DoDOMChildrenCount() to get a number of object's DOM children), in the report an extra step -- assert -- is created during test execution. Sometimes you want to be able to call a function 'quietly' without it affecting the report.
 
 ### <a onclick="return RegisterKbClick('KB163', 'Accessing the Computed Style Properties of an HTML DOM Object')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB163.aspx">KB163</a> Accessing the Computed Style Properties of an HTML DOM Object
 
@@ -1233,7 +1277,7 @@ This article describes the process and provides an example for accessing the Spi
 
 ### <a onclick="return RegisterKbClick('KB146', 'How to Use Sub-Tests and Common Objects with REST Web Service Tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB146.aspx">KB146</a> How to Use Sub-Tests and Common Objects with REST Web Service Tests
 
-It is often useful to have a common set of code libraries and objects that can be reused amongst multiple tests. With Rapise this can be done by creating a common test and then including it into the other actual tests. However due to the way REST web service tests are stored, there are some slight changes needed to handle REST services. This articles describes the process.
+It is often useful to have a common set of code libraries and objects that can be reused amongst multiple tests. With Rapise this can be done by creating a common test and then including it into the other actual tests. However due to the way REST web service tests are stored, there are some slight changes needed to handle REST services. This articles describes the process. Note: if you have Rapise 8.0+ there is a simpler way, just create a module for REST service calls.
 
 ### <a onclick="return RegisterKbClick('KB143', 'Rapise Won't Record Steps or Display Reports')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB143.aspx">KB143</a> Rapise Won't Record Steps or Display Reports
 
@@ -1241,7 +1285,7 @@ If you are running Rapise and you suddenly start to find that none of your recor
 
 ### <a onclick="return RegisterKbClick('KB142', 'Scripts created with Rapise 2.1 or earlier no longer playing back correctly in Rapise 2.2 or later')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB142.aspx">KB142</a> Scripts created with Rapise 2.1 or earlier no longer playing back correctly in Rapise 2.2 or later
 
-In Rapise 2.2, "DoClick" behavior was changed, so we don't do a click but rather just position the mouse over the control and do API-level "click" event. However we provided a way to enable backward compatibility.
+In Rapise 2.2, "DoClick" behavior was changed, so we don't do a click but rather just position the mouse over the control and do API-level "click" event. However we provided a way to enable backward compatibility. This article is obsolete.
 
 ### <a onclick="return RegisterKbClick('KB141', 'Testing Silverlight Applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB141.aspx">KB141</a> Testing Silverlight Applications
 
@@ -1265,15 +1309,15 @@ Anti-virus software is very sensitive to test automation tools. This is normal, 
 
 ### <a onclick="return RegisterKbClick('KB136', 'How are Global Functions stored and recalled?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB136.aspx">KB136</a> How are Global Functions stored and recalled?
 
-We need to call many common functions from a common library frequently.
+Q: We need to call many common functions from a common library frequently.
 
 ### <a onclick="return RegisterKbClick('KB134', 'Why is My Flex application recorded as mouse clicks?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB134.aspx">KB134</a> Why is My Flex application recorded as mouse clicks?
 
-A Flex application requires some instrumentation to be ready for testing. By default Flash player has security restrictions preventing Rapise from accessing the application contents. Please, check the this help topic to learn more about Adobe Flex testing.
+A Flex application requires some instrumentation to be ready for testing. By default Flash player has security restrictions preventing Rapise from accessing the application contents. Please, check the this help topic to learn more about Adobe Flex testing. This article is obsolete. Flex support was removed from Rapise.
 
 ### <a onclick="return RegisterKbClick('KB133', 'The Recorder asks for a Library. Which should I choose?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB133.aspx">KB133</a> The Recorder asks for a Library. Which should I choose?
 
-In most cases "Auto" is the best choice. Manual selection of libraries may be needed in more advanced scenarios and is intended for experienced users.
+In most cases Auto is the best choice. Manual selection of libraries may be needed in more advanced scenarios and is intended for experienced users.
 
 ### <a onclick="return RegisterKbClick('KB132', 'Does Rapise work with Windows UAC?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB132.aspx">KB132</a> Does Rapise work with Windows UAC?
 
@@ -1325,7 +1369,7 @@ This guide describes the different types of mouse events and how they are record
 
 ### <a onclick="return RegisterKbClick('KB112', 'Re-Using Test Logic')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB112.aspx">KB112</a> Re-Using Test Logic
 
-It is common for test scenarios to share similar pieces of functionality. A good example of such sharing is login logic. This guide outlines ways in which you can share such logic to avoid having repeated code in your tests.
+It is common for test scenarios to share similar pieces of functionality. A good example of such sharing is login logic. This guide outlines ways in which you can share such logic to avoid having repeated code in your tests. This article is obsolete. To find out about re-using test parts, modules and page objects please refer to Rapise 8.0: how to use Page Objects/Modules.
 
 ### <a onclick="return RegisterKbClick('KB116', 'Working with HTML XPath')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB116.aspx">KB116</a> Working with HTML XPath
 
@@ -1333,7 +1377,7 @@ When testing web applications you will often need to use XPath to query the brow
 
 ### <a onclick="return RegisterKbClick('KB117', 'Working with HTML Tables containing Dynamic Data')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB117.aspx">KB117</a> Working with HTML Tables containing Dynamic Data
 
-Many web sites use HTML tables to display lists of tabular data. When testing such applications you will often need to dynamically search for items in the table to verify that the application under test performed correctly. This guide outlines best practices for accessing data held in HTML tables.
+Many web sites use HTML tables to display lists of tabular data. When testing such applications you will often need to dynamically search for items in the table to verify that the application under test performed correctly. This guide outlines best practices for accessing data held in HTML tables. This article is obsolete. For dealing with dynamic table data please refer to How to define and use a dynamic Web locator article.
 
 ### <a onclick="return RegisterKbClick('KB122', 'Change Object Value or Text')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB122.aspx">KB122</a> Change Object Value or Text
 
@@ -1377,7 +1421,7 @@ An old (December 9th, 2014) security update for Microsoft Windows and Internet E
 
 ### <a onclick="return RegisterKbClick('KB102', 'How to Get Rapise Trace Logging Information')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB102.aspx">KB102</a> How to Get Rapise Trace Logging Information
 
-When using Rapise, it is often useful to see how Rapise is identifying objects in the Application Under Test (AUT) and if necessary find out why Rapise is not able to locate a specific object. This article outlines how to increase the logging level in Rapise.
+When using Rapise, it is often useful to see how Rapise is identifying objects in the Application Under Test (AUT) and if necessary find out why Rapise is not able to locate a specific object. This article outlines how to increase the logging level in Rapise. This article is obsolete. There is no ribbon in Rapise since version 6. If you have Rapise 6.0+ then follow these steps to change the verbose level.
 
 ### <a onclick="return RegisterKbClick('KB101', 'Automating HTML File Upload Boxes')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB101.aspx">KB101</a> Automating HTML File Upload Boxes
 
@@ -1397,7 +1441,7 @@ When you have a rich text box in a web application, the process for recording a 
 
 ### <a onclick="return RegisterKbClick('KB89', 'Adding Support for Custom Flex Controls')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB89.aspx">KB89</a> Adding Support for Custom Flex Controls
 
-By default the Rapise Flex library supports a wide variety of Flex controls which will be capable of testing the majority of application. However sometimes there will be an unknown objects which will be learnt as a generic object with FlexObject flavor. The article describes support for such custom Flex controls:
+By default the Rapise Flex library supports a wide variety of Flex controls which will be capable of testing the majority of application. However sometimes there will be an unknown objects which will be learnt as a generic object with FlexObject flavor. The article describes support for such custom Flex controls. This article is obsolete. Flex support was removed from Rapise since Flex is dead already for a long time.
 
 ### <a onclick="return RegisterKbClick('KB87', 'Using Rapise to Validate Display of Data Grid Data')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB87.aspx">KB87</a> Using Rapise to Validate Display of Data Grid Data
 
@@ -1405,7 +1449,7 @@ One common requirement is to run a query in an application being tested and ver
 
 ### <a onclick="return RegisterKbClick('KB86', 'Choosing the Web Browser in Rapise from SpiraTest / SpiraTeam')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB86.aspx">KB86</a> Choosing the Web Browser in Rapise from SpiraTest / SpiraTeam
 
-When writing a web test in Rapise you will often want to run the same test script in all three web browsers (IE, Firefox and Chrome). You will want to be able to choose the Test Script from within Rapise when debugging the test and then from a Test Set in SpiraTest when you move the test into production. This article explains the process.
+When writing a web test in Rapise you will often want to run the same test script in all three web browsers (IE, Firefox and Chrome). You will want to be able to choose the Test Script from within Rapise when debugging the test and then from a Test Set in SpiraTest when you move the test into production. This article explains the process. This article is obsolete. For modern way of running Rapise tests in multiple browsers please refer to Rapise 8.0: how to run test cases on different browsers.
 
 ### <a onclick="return RegisterKbClick('KB85', 'Sending Special Keys to the Current Application')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB85.aspx">KB85</a> Sending Special Keys to the Current Application
 
@@ -1433,7 +1477,7 @@ Sometimes when automating a test, you need to access the local Windows clipboard
 
 ### <a onclick="return RegisterKbClick('KB65', 'Testing Win32 applications to verify that controls change display state')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB65.aspx">KB65</a> Testing Win32 applications to verify that controls change display state
 
-Sometimes you may have a button (or other control) that  can have a different appearance depending on the different focus statuses.For example, the default status without focus is a grey image, whereas when the mouse hovering over it becomes blue. Then when the mouse left button is held down on the button (and not released), the image changes to a red image.Finally, when the button is activated using the tab key to tab into the button and the mouse is somewhere else, it has a fourth color. This article discusses solutions for how to test these kinds of situation
+Sometimes you may have a button (or other control) that  can have a different appearance depending on the different focus statuses.For example, the default status without focus is a grey image, whereas when the mouse hovering over it becomes blue. Then when the mouse left button is held down on the button (and not released), the image changes to a red image.Finally, when the button is activated using the tab key to tab into the button and the mouse is somewhere else, it has a fourth color. This article discusses solutions for how to test these kinds of situationю
 
 ### <a onclick="return RegisterKbClick('KB64', 'Using Navigator.ExecJS to execute JavaScript code inside a browser')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB64.aspx">KB64</a> Using Navigator.ExecJS to execute JavaScript code inside a browser
 
@@ -1445,7 +1489,7 @@ Sometimes you need to be able to test the state of a specific Win32 object in Ra
 
 ### <a onclick="return RegisterKbClick('KB62', 'Accessing Files and I/O functions using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB62.aspx">KB62</a> Accessing Files and I/O functions using Rapise
 
-Sometimes using Rapise you need to access files on the Windows filesystem, either for testing purposes, or to object test data stored in a flat CSV, TSV or text file. This sample illustrates how you can access the File System using Rapise and the Windows FileSystemObject (http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx).
+Sometimes using Rapise you need to access files on the Windows filesystem, either for testing purposes, or to object test data stored in a flat CSV, TSV or text file. This sample illustrates how you can access the File System using Rapise and the Windows FileSystemObject (http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx). Alternatively you may also use File global object.
 
 ### <a onclick="return RegisterKbClick('KB59', 'Using Simulated Objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB59.aspx">KB59</a> Using Simulated Objects
 
@@ -1457,7 +1501,7 @@ Sometimes if you have installed a program that associates itself with the .js fi
 
 ### <a onclick="return RegisterKbClick('KB57', 'Accessing Child Objects in a Java AWT/Swing application')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB57.aspx">KB57</a> Accessing Child Objects in a Java AWT/Swing application
 
-This article describes how to access child objects of a Learned Java AWT/Swing object when using the Rapise Java library. Sometimes when you Learn a top-level object, you want to be able to programmatically query the object to locate the child objects that are visible in the Java SPY.
+This article describes how to access child objects of a Learned Java AWT/Swing object when using the Rapise Java library. Sometimes when you Learn a top-level object, you want to be able to programmatically query the object to locate the child objects that are visible in the Java Spy.
 
 ### <a onclick="return RegisterKbClick('KB56', 'Accessing child components of a WPF / Silverlight ListBox')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB56.aspx">KB56</a> Accessing child components of a WPF / Silverlight ListBox
 
@@ -1465,7 +1509,7 @@ When you have a WPF or Silverlight application that has a list box (or other c
 
 ### <a onclick="return RegisterKbClick('KB50', 'Dynamically changing object locators for WPF/Silverlight applications')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB50.aspx">KB50</a> Dynamically changing object locators for WPF/Silverlight applications
 
-Sometimes you will have controls in a WPF or Silverlight application which use dynamic lists. Depending on certain settings, the widgets in the list will appear in different places. This means that a Learned Rapise object which works fine if its in the original ListBox[0] location position is then played-back when it's displayed in another position, it will be ListBox[1] or [2]. Unlike the XPath option with web testing, Rapise doesn't currently allow regular expressions (Regex) in locators stored inside the objects.js file. This article describes a way around the problem:
+Sometimes you will have controls in a WPF or Silverlight application which use dynamic lists. Depending on certain settings, the widgets in the list will appear in different places. This means that a learned Rapise object which works fine if its in the original ListBox[0] location position is not found during playback when it's displayed in another position, e.g.  ListBox[1] or [2]. Unlike the XPath option with web testing, Rapise doesn't currently allow regular expressions (Regex) in locators stored inside the Objects.js file. This article describes a way around the problem. This article is obsolete. Rapise supports regular expressions in UIAutomation locators since version 6. Read this article for more details.
 
 ### <a onclick="return RegisterKbClick('KB47', 'Executing a process and checking if it's still running')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB47.aspx">KB47</a> Executing a process and checking if it's still running
 
@@ -1477,7 +1521,7 @@ Sometimes you want to be able to open a browser window and execute JavaScript co
 
 ### <a onclick="return RegisterKbClick('KB40', 'Extending RapiseLauncher inactivity timeout')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB40.aspx">KB40</a> Extending RapiseLauncher inactivity timeout
 
-When executing Rapise scripts from SpiraTest using RapiseLauncher there is a 10-minute inactivity timeout. If your scripts have periods of inactivity that last longer than 10 minutes, you may need to extend the default timeout. This article describes the steps for doing this.
+When executing Rapise scripts from SpiraTest using RapiseLauncher there is a 10-minute inactivity timeout. If your scripts have periods of inactivity that last longer than 10 minutes, you may need to extend the default timeout. This article describes the steps for doing this. This article is obsolete.  Since Rapise 5 there is no default timeout anymore.
 
 ### <a onclick="return RegisterKbClick('KB39', 'Executing SQL Database Queries from Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB39.aspx">KB39</a> Executing SQL Database Queries from Rapise
 
@@ -1497,7 +1541,7 @@ Often you need to be able to check for the presence of an object and then depend
 
 ### <a onclick="return RegisterKbClick('KB27', 'Using Rapise to extract test data from an Excel sheet')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB27.aspx">KB27</a> Using Rapise to extract test data from an Excel sheet
 
-Often you want to be able to parameterize your Rapise tests to have a common set of test functions that can use different combinations of test data. You can use a MS-Excel spreadsheet to store the test data and use Rapise to read out the matching values. This articles provides a sample for doing this.
+Often you want to be able to parameterize your Rapise tests to have a common set of test functions that can use different combinations of test data. You can use a MS-Excel spreadsheet to store the test data and use Rapise to read out the matching values. This articles provides a sample for doing this. This article is obsolete. For modern ways of making data-driven tests please refer to Data-Driven Testing documentation topic.
 
 ### <a onclick="return RegisterKbClick('KB26', 'Passing Parameters to a Rapise script through the command line')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB26.aspx">KB26</a> Passing Parameters to a Rapise script through the command line
 
@@ -1505,7 +1549,7 @@ This article describes the syntax for passing parameters from the Windows 32-bit
 
 ### <a onclick="return RegisterKbClick('KB25', 'Using Global.DoInvokeTest() to pass parameters between tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB25.aspx">KB25</a> Using Global.DoInvokeTest() to pass parameters between tests
 
-Sometimes you want a test script to be able to call another sub-test as part of its operation. You can do this using the Global.DoInvokeTest('path to test', [parameters]); function. This articles provides a more detailed example for doing this. The high-level information can be found in the knowledge base at: KB127 - Passing Test Parameters
+Sometimes you want a test script to be able to call another sub-test as part of its operation. You can do this using the Global.DoInvokeTest('path to test', [parameters]); function. This articles provides a more detailed example for doing this. The high-level information can be found in the knowledge base at: KB127 - Passing Test Parameters.
 
 ### <a onclick="return RegisterKbClick('KB24', 'How to handle Windows/Objects that have names that change')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB24.aspx">KB24</a> How to handle Windows/Objects that have names that change
 
@@ -1513,11 +1557,11 @@ When using Rapise to record test scripts against Windows, Java, Flex, or other t
 
 ### <a onclick="return RegisterKbClick('KB18', 'How Do I Ensure No Other Browser Windows Open')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB18.aspx">KB18</a> How Do I Ensure No Other Browser Windows Open
 
-When running a test you will often want to make sure there are no other browser windows open. This is commonly done either at the start or end of the test. This article describes how you do this.
+When running a test you will often want to make sure there are no other browser windows open. This is commonly done either at the start or end of the test. This article describes how you do this. This article is obsolete. With Selenium-based connectors (default option since Rapise 7.3) opened browser windows are longer an issue. One may continue to use regular browsers. Rapise will use isolated browser profiles to run tests.
 
 ### <a onclick="return RegisterKbClick('KB19', 'How to successfully include and use common functions and objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB19.aspx">KB19</a> How to successfully include and use common functions and objects
 
-It is often useful to have a common set of code libraries and objects that can be reused amongst multiple tests. With Rapise this can be done by creating a common test and then including it into the other actual tests. This article describes the process
+It is often useful to have a common set of code libraries and objects that can be reused amongst multiple tests. With Rapise this can be done by creating a common test and then including it into the other actual tests. This article describes the process. This article is obsolete. To get information on how to use common  functions and objects across test cases please refer to Frameworks (recommended, requires Rapise 8.0+) or Legacy Frameworks (requires Rapise 7.0+) topics.
 
 ### <a onclick="return RegisterKbClick('KB17', 'Running a Rapise script from the command-line on a 64-bit machine')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB17.aspx">KB17</a> Running a Rapise script from the command-line on a 64-bit machine
 
@@ -1525,7 +1569,7 @@ If you try and run a Rapise script from the command-line on a 64-bit machine you
 
 ### <a onclick="return RegisterKbClick('KB13', 'Test-Scripts suddenly moving/clicking at false locations')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB13.aspx">KB13</a> Test-Scripts suddenly moving/clicking at false locations
 
-If you have your browser zoom set to a value that is not 100% when recording or playing back scripts it will affect the playback reliability. Specifically Rapise will click/move at/to false locations in the test browser.You need to set your browser zoom to 100% before doing any playback/recording activities.
+If you have your browser zoom set to a value that is not 100% when recording or playing back scripts it will affect the playback reliability. Specifically Rapise may click/move at/to false locations in the test browser. You need to set your browser zoom to 100% before doing any playback/recording activities.
 
 ### <a onclick="return RegisterKbClick('KB11', 'How do I change the URL of the website being tested in Rapise.')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB11.aspx">KB11</a> How do I change the URL of the website being tested in Rapise.
 
