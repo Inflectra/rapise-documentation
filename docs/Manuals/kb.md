@@ -5,7 +5,7 @@
 
 ### <a onclick="return RegisterKbClick('KB796', 'Useful Page Objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB796.aspx">KB796</a> Useful Page Objects
 
-Sample framework including general purpose page objects that you may find useful in your test cases (KeyboardHelper, ListChecker, ManagedHelper, StringChecker, TableHandler). Help pressing special keys, comparing lists, accessing managed popup windows, checking unique strings and string formatting, working with standard web table (<table/>).
+Sample framework including general purpose page objects that you may find useful in your test cases (KeyboardHelper, ListChecker, ManagedHelper, StringChecker, TableHandler). Help pressing special keys, comparing lists, accessing managed popup windows, checking unique strings and string formatting, working with standard web table.
 
 ### <a onclick="return RegisterKbClick('KB790', 'How to resign a third-party .ipa file to run it on a real iOS device')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB790.aspx">KB790</a> How to resign a third-party .ipa file to run it on a real iOS device
 
