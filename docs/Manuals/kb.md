@@ -3,6 +3,10 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB798', 'Testing mobile applications built with Ionic framework')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB798.aspx">KB798</a> Testing mobile applications built with Ionic framework
+
+Ionic is an open source UI toolkit for building performant, high-quality mobile apps using web technologies — HTML, CSS, and JavaScript. This means that being mobile, Ionic applications are web applications by nature. And it is much more convenient to test them via WebDriver rather than Appium. Requires Rapise 8.1+.
+
 ### <a onclick="return RegisterKbClick('KB796', 'Useful Page Objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB796.aspx">KB796</a> Useful Page Objects
 
 Sample framework including general purpose page objects that you may find useful in your test cases (KeyboardHelper, ListChecker, ManagedHelper, StringChecker, TableHandler). Help pressing special keys, comparing lists, accessing managed popup windows, checking unique strings and string formatting, working with standard web table.
