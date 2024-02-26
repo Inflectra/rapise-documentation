@@ -2,6 +2,7 @@
 
 !!! important
     Starting from Rapise 8.0, the default JavaScript engine used is [NodeJS](https://nodejs.org/) v14.15.3 runtime.
+    Starting from Rapise 8.1, the default JavaScript engine used is [NodeJS](https://nodejs.org/) v18.18.0 runtime.
 
 In versions prior to 6.7, Rapise used **Microsoft JScript** with **WScript** as the only available JavaScript engine. This document provides a language reference for that older version.
 
