@@ -32,6 +32,7 @@ RVL script is a spreadsheet containing set of 7 columns in fixed order:
     - `/*` - begin of multi row comment (comment is valid up to line starting with `*/`)
     - `*/` - end of multi row comment started earlier from `/*`
     - `If` - conditional branch. Row type must be `Condition`. The row may be followed with one or more `ElseIf` statements, zero or one `Else` statement and then should end with `End`.
+    - `?` - [conditional action](/RVL/Actions/#conditional-actions).
 
 ??? abstract "2 - Type"
     Type of operation specified in this row. One of: 

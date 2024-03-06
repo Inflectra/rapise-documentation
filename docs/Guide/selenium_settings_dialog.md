@@ -68,8 +68,8 @@ In addition, there are some settings, unique to running Selenium WebDriver tests
 
 ![selenium\_settings\_browserstack](./img/selenium_settings_dialog2.png)
 
-- **BrowserStack**
-    - **browserstack.key** - This needs to be populated with your Browserstack cloud access key.
+- **[BrowserStack](https://www.browserstack.com/automate?utm_source=rapise&utm_medium=partnered)**
+    - **browserstack.key** - This needs to be populated with your [Browserstack](https://www.browserstack.com/automate?utm_source=rapise&utm_medium=partnered) cloud access key.
     - **browserstack.user** - This needs to be populated with your Browserstack username.
     - **device** - Specifies a particular mobile device for the test environment (mobile web only).
     - **os_version** - Use this capability to specify the OS version of the device.
