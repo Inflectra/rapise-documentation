@@ -1,6 +1,6 @@
 <!-- 
 
-import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@af3d283/scorm/common/xpathQuiz/README.md
+import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@7fc4741/scorm/common/xpathQuiz/README.md
 
 mode: Textbook
 
@@ -208,9 +208,9 @@ Try `//*[@id='2']` and observe the same result with Plum being selected:
 `position()` returns the position of the node within its parent's list of child nodes. It is typically used within square brackets `[ ]` in an XPath expression to filter nodes based on their position.
 
 ``` xml @xpathExample(` `,`//li[position()=2]`)
-<ul _root _expectedText="2">
+<ul _root>
     <li id="1">Carrot</li>
-    <li id="2">Plum</li>
+    <li id="2" _correct>Plum</li>
     <li id="3">Apple</li>
 </ul>
 ```
@@ -305,7 +305,6 @@ Once we may reach parent node, we may also reach one of it other children:
 Logical operators helps making more focused and more resilient locators.
 
 ### And
-
 
 ``` ascii
         //tagname[@attr1='value1' and @attr1='value2']
