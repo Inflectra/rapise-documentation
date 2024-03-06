@@ -72,6 +72,8 @@ function domPrint(el) {
                 renderNode(cn, offset+'  ', false);
             }  
         } else if(node.hasChildNodes()||node.shadowRoot) {
+            if(node.hasAttribute('_internal')) return false;
+            if(node.hasChildNodes()&&(''+node.tagName).toLowerCase()=='head'&&node.childNodes.length==1&&node.childNodes[0].hasAttribute('_internal')) return false;
             nodeStart += '>';
             if(sameLine) {
                 lines[lines.length-1] += nodeStart;
@@ -150,6 +152,7 @@ function prefill(id) {
         const doc = thisframe.contentDocument.documentElement;
         allframes.push(thisframe);
         var style = thisframe.contentDocument.createElement('style');
+        style.id = 'frame-example-style';
         style.type = 'text/css';
         style.innerHTML = `
         .highlightFound {
@@ -165,6 +168,7 @@ function prefill(id) {
             overflow: hidden;
         }
         `;
+        style.setAttribute('_internal','true');
         thisframe.contentDocument.getElementsByTagName('head')[0].appendChild(style);
         let hasNested = false;
         const alliframes = doc.querySelectorAll('iframe');
@@ -370,7 +374,7 @@ function runXPath(id, inp, send, isCss, bValidate, nodeset) {
         if(expectedXPath) {
             if( (""+expectedXPath).trim().toLowerCase()!=(""+inp).trim().toLowerCase() ) {
                 if (expectedCount && wrong==0 && correct==expectedCount) {
-                    throw new Error('You found correct node, but input query is expected. Please, check the question and correct your query.')
+                    throw new Error('You found correct node, but another input query is expected. Please, check the question and correct your query.')
                 }
                 return false;
             } else {

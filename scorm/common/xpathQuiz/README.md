@@ -542,3 +542,18 @@ Select rows before requred one:
 @xpath1PExample(`#plum`,CP2,1,true,true)
 
 @xpath1PExample(`li:nth-child(2)`,CP2,1,true,true)
+
+# Full XPath
+
+We have 3 buttons:
+
+``` xml @xpathQuiz(`Get **full** XPath to a button **2**:`)
+<span _expectedXPath="/html/body/span/button[2]">
+    <button>1</button>
+    <button _correct>2</button>
+    <button>3</button>
+</span>
+
+
+
+```
