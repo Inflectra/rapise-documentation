@@ -1,12 +1,14 @@
 <!-- 
 
-import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@7fc4741/scorm/common/xpathQuiz/README.md
+import: https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@0901fe7/scorm/common/xpathQuiz/README.md
 
 mode: Textbook
 
 -->
 
 # XPath Essentials
+
+This is an interactive tutorial for XPath. It contains explanations and working examples that you may run while reading. In the end, you may find an [exam](#exam) session. Your final goal is to answer all exam quiz questions correctly.
 
 In [Rapise](https://www.inflectra.com/Rapise/) and WebDriver automation XPath comes into play to find specific elements on the webpage.
 
@@ -153,16 +155,6 @@ Now, let's say we want to pick the second bold element:
 
 This way, by using **[2]** after the tag name, we can specifically choose the second occurrence of that element.
 
-### Exercise
-
-``` xml @xpathQuiz(`Select 3rd **li** item by index:`)
-<ul _root _expectedXPath="//li[3]">
-    <li>Carrot</li>
-    <li>Plum</li>
-    <li>Apple</li>
-</ul>
-```
-
 ## XPath Using Attribute
 
 When we realize the need for more precise XPath values, we start considering attributes.
@@ -227,7 +219,7 @@ Try `//*[@id='2']` and observe the same result with Plum being selected:
 
 In the previous examples, we focused on a part of the document. That worked well because we used the `//` XPath locator, which searches everywhere. In this example, we're displaying the entire document. It's a bit longer and usually starts with `<html>`, containing `<body>` within it. That's why the complete XPath often begins with `/html/body`:
 
-``` xml @xpathExample(`Full XPath to Milk`,`/html/body/dl/dt[2]`)
+``` xml @xpathExample(`Full (*absolute*) XPath to Milk`,`/html/body/dl/dt[2]`)
 <dl>
   <dt>Coffee</dt>
   <dd>- black hot drink</dd>
@@ -239,24 +231,9 @@ In the previous examples, we focused on a part of the document. That worked well
 
 > Note: While Milk is the 3rd child of `<dl>`, it is the 2nd `<dt>` inside `<dl>`. That's why we used `.../dt[2]`.
 
-### Exercise
-
-We have 3 buttons:
-
-``` xml @xpathQuiz(`Get **full** XPath to a button **2**:`)
-<span _expectedXPath="/html/body/span/button[2]">
-    <button>1</button>
-    <button _correct>2</button>
-    <button>3</button>
-</span>
-
-
-
-```
-
 ## Relative XPath
 
-In Selenium docs, if an XPath begins with `//`, it's named relative. But this can be a bit confusing because `//` always starts searching from the root, hiding another feature - querying from a specific spot in the DOM. So, when we talk about **relative** XPath queries, we mean starting from any place in the XML, except the root. Anything starting from the DOM root, like `//`, is, in our view, should be referred as an **absolute** XPath query.
+In Selenium docs, if an XPath begins with `//`, it's named relative. But this can be a bit confusing because `//` always starts searching from the root, hiding another feature - querying from a specific spot in the DOM. So, when we talk about **relative XPath** queries, we mean starting from any place in the XML, except the root. Anything starting from the DOM root, like `//`, is, in our view, should be referred as an **absolute** XPath query.
 
 ### Relative XPath in XML
 
@@ -435,7 +412,7 @@ friend!
 
 > Here, `Hello,`, `<b>`, and `friend!` are three children of `<p>`. But only `Hello,` and `friend!` are text nodes. In this case, `//p/text()` returns the first child, which is `Hello,`.
 
-### Selecting full text with `normalize-space()`
+### Selecting full text
 
 How do we capture the entire text content of a paragraph as it appears on the screen?
 
@@ -471,7 +448,7 @@ If we pass multiple nodes, `normalize-space` only uses the first one, like this:
     <li>Apple is <i>red</i></li>
 </ul>
 ```
- 
+
 So if we want to capture the whole list, we need to `normalize-space` its common root:
 
 ``` xml @xpathExample(`Get full list as text:`,`normalize-space(//ul)`)
@@ -544,7 +521,7 @@ Here, we just identified a `<li>` element by a part of its message. This method 
 
 This is often used together with `contains(...)` to find a node by a part of its text:
 
-``` xml @xpathExample(`We need to find a button containint 'not good':`,`//button[contains(normalize-space(.),"not good")]`)
+``` xml @xpathExample(`We need to find a button containing 'not good':`,`//button[contains(normalize-space(.),"not good")]`)
 <body _root>
     <button _correct _oneline><b>Weather</b> is <i>good</i></button>
     <button _oneline><b>Weather</b> is not <i>good</i></button>
@@ -808,7 +785,7 @@ In CSS, we can use **#** notation to select the **id** attribute of an element.
 </ul>
 ```
 
-### CSS name
+### CSS class
 
 In CSS, we use the **.** notation to select elements based on their **class** attribute.
 
@@ -1182,3 +1159,158 @@ Master XPath with this cheat sheet: [XPath Quick Reference](https://devhints.io/
 **CSS Cheat Sheet**
 
 Get to know CSS selectors: [CSS Selectors Reference](https://www.w3schools.com/cssref/css_selectors.php)
+
+## Exam
+
+Your goal is to provide right answer for each of the questions below.
+
+### Exam Index
+
+``` xml @xpathQuiz(`Select 3rd **li** item by [index](#xpath-using-index):`)
+<ul _root _expectedXPath="//li[3]">
+    <li>Carrot</li>
+    <li>Plum</li>
+    <li>Apple</li>
+</ul>
+```
+
+### Exercise Absolute
+
+We have 3 buttons:
+
+``` xml @xpathQuiz(`Get **full** ([absolute](#absolute-xpath)) XPath to a button **2**:`)
+<span _expectedXPath="/html/body/span/button[2]">
+    <button>1</button>
+    <button _correct>2</button>
+    <button>3</button>
+</span>
+
+
+
+```
+
+### Exercise Relative
+
+``` xml @xpathQuiz(`Using [relative XPath](#relative-xpath-in-xml) make path from Apple to Wildberries`)
+<ul _root>
+    <li _current>Apple</li>
+    <li>Orange</li>
+    <li>Mango</li>
+    <li _correct>Wildberries</li>
+</ul>
+```
+
+### Exercise Resilient
+
+We have two versions of the same site:
+
+**Old Version:**
+
+``` xml @xpathPart(orep1)
+<ol _root>
+    <li id="1">One</li>
+    <li id="2">Two</li>
+    <li id="3" _correct>Three</li>
+</ol>
+```
+
+**New Version:**
+
+``` xml @xpathPart(orep2)
+<ul _root>
+    <li name="one">- One</li>
+    <li name="two">- Two</li>
+    <li name="three" _correct>- Three</li>
+</ul>
+```
+
+Make a locator that finds the row number 3 in [both](#or) old version and new version:
+
+@xpath2PQuiz(orep1,orep2)
+
+### Exercise Full Text
+
+``` xml @xpathQuiz(`Get [full text](#selecting-full-text) of the welcome message:)
+<div _root><p id="welcome_message" _oneline _expectedText="Welcome, Administrator !">
+    Welcome, <i>Administrator</i> <b>!</b>
+</p>
+<a href="#logout">Logout</>
+</div>
+
+```
+
+
+### Exercise Find By Text
+
+``` xml @xpathQuiz(`We need to find a button containing 'very good':`)
+<body _root>
+    <button _correct _oneline>This hotel is <b>very</b> <i>good</i></button>
+    <button _oneline>This hotel is not so <i>good</i></button>
+</body>
+
+```
+
+### Exercise By Class
+
+``` xml @xpathQuiz(`Select all **li** items having [class](#selecting-class) **ok**`)
+<ul _root>
+    <li class="active ok" _correct>Test 1</li>
+    <li class="notok">Test 2</li>
+    <li class="ok disabled" _correct>Test 3</li>
+    <li class="default notok">Test 4</li>
+    <li class="ok" _correct>Test 5</li>
+</ul>
+```
+
+### Exercise Count
+
+``` xml @xpathQuiz(`Count number of **em** elements:`)
+<p _root _expectedText="3" _oneline>
+    A basket contained a <em>lemon</em>, two <em>apples</em>, and two <em>white plums</em>.
+</p>
+```
+
+### Exercise CSS Class
+
+``` xml @cssQuiz(`Using CSS select all **li** items having [class](#css-class) **ok**`)
+<ul _root>
+    <li class="active ok" _correct>Test 1</li>
+    <li class="notok">Test 2</li>
+    <li class="ok disabled" _correct>Test 3</li>
+    <li class="default notok">Test 4</li>
+    <li class="ok" _correct>Test 5</li>
+</ul>
+```
+
+### Exercise Rapise iframe Selector
+
+``` xml @xpathQuiz(`Select the **button** with id **targetButton**. Note the [iframe](#path-to-iframe):`)
+<div _root>
+<iframe id='rootFrame1' src='frame1.html'> 
+    <button _root>Click me!</button>
+</iframe>
+<hr/>
+<iframe id='rootFrame2' src='frame2.html'> 
+    <button id='targetButton' _root _correct>Click me!</button>
+</iframe>
+</div>
+
+
+```
+
+### Exercise Shadow DOM
+
+``` xml @xpathQuiz(`Find a **button** element within [Shadow DOM](#shadow-dom-locators)`)
+<template id="custom-button"><span><button _correct>Custom Button in Shadow DOM</button></span></template>
+<script>customElements.define("custom-button", class extends HTMLElement {
+    constructor() { super();
+      this.attachShadow({ mode: "open" }).appendChild(document.getElementById("custom-button").content.cloneNode(true));
+    }});</script>
+<div _root>
+    <custom-button/>
+</div>
+```
+
+### You are Done
+
+> Here the exam ends. If all your answers are correct, mark the training incident as Resolved. Otherwise don't hesitate to share your problems and questions!
