@@ -83,7 +83,6 @@ Before we start talking about how to use JavaScript, let's understand why it's i
 
 > The information in this tutorial comes from [learn-js.org](https://www.learn-js.org/). Our tutorial focuses on the basics needed to get a simple understanding of JavaScript, specifically the basics from the 1999 version (ES3). The most recent version is ES11 (2020). If you want to explore more and go deeper, feel free to visit [learn-js.org](https://www.learn-js.org/); it's a free resource.
 
-
 ## Is JavaScript for Browsers?
 
 JavaScript was originally created for adding interactivity and dynamic behavior to **web browsers**. However, it has **evolved** significantly over the years.
@@ -92,27 +91,11 @@ JavaScript is not limited to just browsers anymore. With the introduction of env
 
 Some tools, such as Inflectra [Rapise](https://www.inflectra.com/Rapise/) use JavaScript as a default programming language to implement advanced scenarios including desktop, mobile, API and web automation.
 
-**Which of the following statements about JavaScript is correct?**
-
-<!-- data-solution-button="off" -->
-    [[ ]] JavaScript is used exclusively within web browsers.
-    [[ ]] JavaScript can only modify web page content and cannot interact with server-side scripts.
-    [[x]] JavaScript is a versatile language that can be used for server-side development, desktop applications, mobile apps, and IoT devices, not just web browsers.
-    [[ ]] JavaScript was replaced by Node.js for server-side scripting and is no longer in use.
-
 ## Is JavaScript the same as Java?
 
 No, JavaScript and **Java** are two distinct programming languages, each with its own design and purpose.
 
 > Their similarities in name do not reflect their functionality—**Java** is to JavaScript what a car is to carpet: they are completely different despite the apparent similarity in their names.
-
-**Is JavaScript the same as Java**?
-
-<!-- data-solution-button="off" -->
-    [[ ]] JavaScript and **Java** are the same.
-    [[ ]] JavaScript is a nickname for **Java**.
-    [[X]] JavaScript and **Java** are different programming languages.
-    [[ ]] **Java** is a newer version of JavaScript.
 
 ## JavaScript vs JScript
 
@@ -140,12 +123,6 @@ While working example is an interactive piece that you may execute by pressing t
 3+2
 ```
 <script>@input</script>
-
-Finally, we have quizzes where you supposed to give an answer and then press `Check` button. For example, here the answer is already correct, just click `Check` to proceed:
-
-``` javascript @codingQuiz(` `)
-25
-```
 
 ## Hello, World!
 
@@ -185,70 +162,6 @@ var escapingQuotes = 'Escaping a quote: \'Single quotes\' or "Double quotes"';
 ```
 
 This way, you can include single quotes within double quotes and vice versa, or escape the quotes using the backslash to have them as part of the string.
-
-## Typical Errors
-
-Let's go over a number of typical errors that may cause you troubles while working with this course. Here they are:
-
-Each open `(` should have corresponding closing `)`. Each opening `{` should have corresponding closing `}`.
-
-Fix the code:
-
-``` javascript @codingQuiz(` `)
-console.log("Hallo Welt"
-```
-
-In a similar way each opening `"` should have matching closing `"`.
-
-Fix the code:
-
-``` javascript @codingQuiz2(`a!="Hi"?"wrong":`,`const a=`)
-"Hi
-```
-
-Orphaned curly brace is always a problem.
-
-Fix the code:
-
-``` javascript @codingQuiz(`TotalAmount()`)
-function TotalAmount()
-}
-```
-
-We separate parameter names with comma `,`.
-
-Fix the code:
-
-``` javascript @codingQuiz(`Sum(3,3)!=6?"wrong":`)
-function Sum(a b)
-{
-    return a+b;
-}
-```
-
-We have three ways to declare a text constant, i.e. `"text"`, `'text'` and `\`text\``.
-
-Fix the code:
-
-``` javascript @codingQuiz(`str!="Some string"?"wrong":`)
-var str = "Some string'
-```
-
-From the text editor's perspective our writing is all wrong. We use " for quotes while it is actually an Inch sign. Text processors fix it to real quote which is “. Common problem is a mess between " and “. 
-
-Fix the code:
-
-``` javascript @codingQuiz(`str!="Another string"?"wrong":`)
-var str = “Another string”
-```
-
-What if we need to use a quoted string inside our string? You may use escaping or multiple quotes string.
-
-Fix the code:
-
-``` javascript @codingQuiz(`!window.checkVar(str,"str",'Some "quoted text" inside',console,send)?"wrong":`)
-var str = "Some "quoted text" inside"
-```
 
 ## Variables and Types
 
@@ -294,28 +207,6 @@ console.log(emptyVariable);
 ```
 <script>@input
 ""</script>
-
-### Exercise
-
-You must define the following variables:
-
-1. A number called `myNumber` which contains the number `4`:
-
-``` javascript @codingQuiz(`console.log("myNumber is equal to "+myNumber);!(myNumber==4)?"wrong":`)
-var myNumber =
-```
-
-2. A string called `myString` which contains the sentence `Variables are great.`:
-
-``` javascript @codingQuiz(`console.log("myString is equal to " + myString);!(myString=="Variables are great.")?"wrong":`)
-var 
-```
-
-3. A boolean called `myBoolean` which contains the value `false`:
-
-``` javascript @codingQuiz(`console.log("myBoolean is equal to " + myBoolean);!(myBoolean==false)?"wrong":`)
-var
-```
 
 ## Arrays
 
@@ -365,19 +256,6 @@ console.log(myArray);
 @input
 ""
 </script>
-
-### Exercise
-
-You must define an array variable `myArray` with the following three entries:
-
-1. A string which has the value of `"What is the meaning of life?"`
-2. A number which has a value of `42`
-3. A boolean which has a value of `true`
-
-``` javascript @codingQuiz(`!window.checkArray(myArray,"myArray",["What is the meaning of life?", 42, true],console,send)?"try again":`)
-
-
-```
 
 ## Manipulating Arrays
 
@@ -470,25 +348,6 @@ console.log(myArray); // prints [0,1,2,8,9]
 
 After splicing the array, it will only contain the part before and after the splicing. The splice is equal to all the variables between 3 and 7 (inclusive), and the remainder of the array, which contains all variables between 0 and 2 (inclusive), and 8 to 9 (inclusive).
 
-### Exercise
-
-In this exercise, you must manipulate the array called `myArray` and do the following:
-
-1. Push the number 42 to the end of the array
-2. Shift a variable from the beginning of the array
-
-``` javascript @codingQuiz(`!window.checkArray(myArray,"myArray",["What is the meaning of life?", 42],console,send)?"try again":`)
-var myArray = [true, "What is the meaning of life?"];
-// TODO: write your code here:
-// 1. Push the number 42 to the end of the array
-
-// 2. Shift a variable from the beginning of the array
-
-
-console.log(myArray[0]);
-console.log(myArray[1]);
-```
-
 ## Operators
 
 Every variable in JavaScript is type casted automatically so any operator between two variables will always give some kind of result. 
@@ -579,23 +438,6 @@ JavaScript also has a `Math` module which contains more advanced functions:
 Math.abs(-3)
 ```
 <script>@input</script>
-
-### Exercise
-
-In this exercise, you do the following:
-
-1. Connect the `firstName` and `lastName` to construct the variable `fullName`, but with a space (`" "`) in between the first and last name.
-2. Multiply the variable `myNumber` by 2 and put the result in `meaningOfLife`.
-
-``` javascript @codingQuiz(`!window.checkVar(fullName,"fullName","John Smith",console,send)||!window.checkVar(meaningOfLife,"meaningOfLife",42,console,send)?"try again":`)
-var firstName = "John";
-var lastName = "Smith";
-var myNumber = 21;
-
-// TODO: change the following code
-var fullName = null;
-var meaningOfLife = null;
-```
 
 ## Conditions
 
@@ -886,19 +728,6 @@ console.log(greet("Eric"));      // prints out Hello Eric!
 ""
 </script>
 
-### Exercise
-
-Define a function called `multiplyFive` which accepts a number and returns that number multiplied by 5.
-
-``` javascript @codingQuiz(`multiplyFive(7)!=35?"Wrong":`)
-// TODO: define the function multiplyFive here
-
-console.log(multiplyFive(3));
-console.log(multiplyFive(4));
-console.log(multiplyFive(5));
-console.log(multiplyFive(6));
-```
-
 ## Objects
 
 JavaScript is a functional language, and for object oriented programming it uses both objects and functions, but objects are usually used as a data structure, similar to a dictionary in Python or a map in Java. In this tutorial, we will learn how to use objects as a data structure. The advanced tutorials explain more about object oriented JavaScript.
@@ -959,9 +788,199 @@ for (var member in personObject)
 
 Note that methods of objects in JavaScript have a fixed order, like arrays.
 
-### Exercise
+## What Comes Next?
 
-You must define an object called `person` with the following members:
+This course concludes at this juncture, but it's important to note that we've only scratched the surface of JavaScript's capabilities. Our focus has primarily been on features available as of 1999.
+
+JavaScript is a dynamic and continually evolving language, continually acquiring new features and applications. There are numerous fantastic features to explore, including callbacks, `class`es, `let` and `const` declarations, `for...of` loops, spread operators, arrow functions, tag templates, and much more.
+
+The JavaScript covered in this course provides a solid foundation for real-world testing scenarios. We believe that simplicity and clarity in language are crucial for effective testing, as tests should be straightforward and easy to comprehend and maintain.
+
+In [Rapise](https://www.inflectra.com/Rapise), you have the flexibility to use both older and the latest versions of JavaScript. Rapise itself is built using a basic language to ensure backward compatibility and straightforward usage.
+
+For those seeking more comprehensive courses, both free and paid options are available. One such resource is [lear-js.org](https://learn-js.org), which served as the foundation for this course.
+
+## Exam
+
+Here in the final section we have quizzes where you supposed to give an answer and then press `Check` button. For example, here the answer is already correct, just click `Check` to proceed:
+
+``` javascript @codingQuiz(` `)
+25
+```
+
+First, answer a couple of generic questions about JavaScript.
+
+**Is JavaScript the same as Java**?
+
+<!-- data-solution-button="off" -->
+    [[ ]] JavaScript and **Java** are the same.
+    [[ ]] JavaScript is a nickname for **Java**.
+    [[X]] JavaScript and **Java** are different programming languages.
+    [[ ]] **Java** is a newer version of JavaScript.
+
+
+**Which of the following statements about JavaScript is correct?**
+
+<!-- data-solution-button="off" -->
+    [[ ]] JavaScript is used exclusively within web browsers.
+    [[ ]] JavaScript can only modify web page content and cannot interact with server-side scripts.
+    [[x]] JavaScript is a versatile language that can be used for server-side development, desktop applications, mobile apps, and IoT devices, not just web browsers.
+    [[ ]] JavaScript was replaced by Node.js for server-side scripting and is no longer in use.
+
+Now proceed to following sections to resolve the coding quizzes.
+
+### Typical Errors
+
+Let's go over a number of typical errors that may cause you troubles while working with this course. Here they are:
+
+Each open `(` should have corresponding closing `)`. Each opening `{` should have corresponding closing `}`.
+
+Fix the code:
+
+``` javascript @codingQuiz(` `)
+console.log("Hallo Welt"
+```
+
+In a similar way each opening `"` should have matching closing `"`.
+
+Fix the code:
+
+``` javascript @codingQuiz2(`a!="Hi"?"wrong":`,`const a=`)
+"Hi
+```
+
+Orphaned curly brace is always a problem.
+
+Fix the code:
+
+``` javascript @codingQuiz(`TotalAmount()`)
+function TotalAmount()
+}
+```
+
+We separate parameter names with comma `,`.
+
+Fix the code:
+
+``` javascript @codingQuiz(`Sum(3,3)!=6?"wrong":`)
+function Sum(a b)
+{
+    return a+b;
+}
+```
+
+We have three ways to declare a text constant, i.e. `"text"`, `'text'` and `\`text\``.
+
+Fix the code:
+
+``` javascript @codingQuiz(`str!="Some string"?"wrong":`)
+var str = "Some string'
+```
+
+From the text editor's perspective our writing is all wrong. We use " for quotes while it is actually an Inch sign. Text processors fix it to real quote which is “. Common problem is a mess between " and “. 
+
+Fix the code:
+
+``` javascript @codingQuiz(`str!="Another string"?"wrong":`)
+var str = “Another string”
+```
+
+What if we need to use a quoted string inside our string? You may use escaping or multiple quotes string.
+
+Fix the code:
+
+``` javascript @codingQuiz(`!window.checkVar(str,"str",'Some "quoted text" inside',console,send)?"wrong":`)
+var str = "Some "quoted text" inside"
+```
+
+### Variables
+
+You must define the following [variables](#variables-and-types):
+
+1. A number called `myNumber` which contains the number `4`:
+
+``` javascript @codingQuiz(`console.log("myNumber is equal to "+myNumber);!(myNumber==4)?"wrong":`)
+var myNumber =
+```
+
+2. A string called `myString` which contains the sentence `Variables are great.`:
+
+``` javascript @codingQuiz(`console.log("myString is equal to " + myString);!(myString=="Variables are great.")?"wrong":`)
+var 
+```
+
+3. A boolean called `myBoolean` which contains the value `false`:
+
+``` javascript @codingQuiz(`console.log("myBoolean is equal to " + myBoolean);!(myBoolean==false)?"wrong":`)
+var
+```
+
+### Arrays
+
+You must define an [array](#arrays) variable `myArray` with the following three entries:
+
+1. A string which has the value of `"What is the meaning of life?"`
+2. A number which has a value of `42`
+3. A boolean which has a value of `true`
+
+``` javascript @codingQuiz(`!window.checkArray(myArray,"myArray",["What is the meaning of life?", 42, true],console,send)?"try again":`)
+
+
+```
+
+### Array Manipulations
+
+In this exercise, you must [manipulate the array](#manipulating-arrays) called `myArray` and do the following:
+
+1. Push the number 42 to the end of the array
+2. Shift a variable from the beginning of the array
+
+``` javascript @codingQuiz(`!window.checkArray(myArray,"myArray",["What is the meaning of life?", 42],console,send)?"try again":`)
+var myArray = [true, "What is the meaning of life?"];
+// TODO: write your code here:
+// 1. Push the number 42 to the end of the array
+
+// 2. Shift a variable from the beginning of the array
+
+
+console.log(myArray[0]);
+console.log(myArray[1]);
+```
+
+
+### String Manipulations
+
+In this exercise, you do the following:
+
+1. [Connect](#the-addition-operator) the `firstName` and `lastName` to construct the variable `fullName`, but with a space (`" "`) in between the first and last name.
+2. Multiply the variable `myNumber` by 2 and put the result in `meaningOfLife`.
+
+``` javascript @codingQuiz(`!window.checkVar(fullName,"fullName","John Smith",console,send)||!window.checkVar(meaningOfLife,"meaningOfLife",42,console,send)?"try again":`)
+var firstName = "John";
+var lastName = "Smith";
+var myNumber = 21;
+
+// TODO: change the following code
+var fullName = null;
+var meaningOfLife = null;
+```
+
+### Define a Function
+
+Define a [function](#functions) called `multiplyFive` which accepts a number and returns that number multiplied by 5.
+
+``` javascript @codingQuiz(`multiplyFive(7)!=35?"Wrong":`)
+// TODO: define the function multiplyFive here
+
+console.log(multiplyFive(3));
+console.log(multiplyFive(4));
+console.log(multiplyFive(5));
+console.log(multiplyFive(6));
+```
+
+### Define an Object
+
+You must define an [object](#objects) called `person` with the following members:
 
 1. The member `firstName` of the person is "Jane"
 2. The member `lastName` of the person is "Smith"
@@ -1009,14 +1028,6 @@ var animal = {
 }
 ```
 
-## What Comes Next?
+### You are Done
 
-This course concludes at this juncture, but it's important to note that we've only scratched the surface of JavaScript's capabilities. Our focus has primarily been on features available as of 1999.
-
-JavaScript is a dynamic and continually evolving language, continually acquiring new features and applications. There are numerous fantastic features to explore, including callbacks, `class`es, `let` and `const` declarations, `for...of` loops, spread operators, arrow functions, tag templates, and much more.
-
-The JavaScript covered in this course provides a solid foundation for real-world testing scenarios. We believe that simplicity and clarity in language are crucial for effective testing, as tests should be straightforward and easy to comprehend and maintain.
-
-In [Rapise](https://www.inflectra.com/Rapise), you have the flexibility to use both older and the latest versions of JavaScript. Rapise itself is built using a basic language to ensure backward compatibility and straightforward usage.
-
-For those seeking more comprehensive courses, both free and paid options are available. One such resource is [lear-js.org](https://learn-js.org), which served as the foundation for this course.
+Here the exam ends. If all your answers are correct, mark the training incident as Resolved. Otherwise don't hesitate to share your problems and questions!
