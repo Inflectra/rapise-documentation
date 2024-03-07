@@ -270,7 +270,6 @@ Expected with correct hint:
 </ul>
 ```
 
-
 # XPath Quiz 6 _expectedText
 
 ``` xml @xpathQuiz(`Select //li[2]/text()`)
@@ -329,6 +328,21 @@ Now select both bolds in one query:
 
 @xpath2PQuiz(QP7A,QP7B)
 
+# XPath Quiz 8 (iframe)
+
+``` xml @xpathQuiz(`Select the **button** with id **dst**:`)
+<div _root>
+<iframe id='rootFrame1' src='frame1.html'> 
+    <button _root>Click me!</button>
+</iframe>
+<hr/>
+<iframe id='rootFrame2' src='frame2.html'> 
+    <button id='dst' _root _correct>Click me!</button>
+</iframe>
+</div>
+
+
+```
 
 # XPath Example 1
 

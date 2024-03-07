@@ -406,6 +406,16 @@ function runXPath(id, inp, send, isCss, bValidate, nodeset) {
                         return true
                     }
                 }
+            } else if(expectedCount==0) {
+                if(wrong>0) {
+                    if(correct>0) {
+                        throw new Error('Query returns some unexpected nodes in addition to expected.')
+                    } else {
+                        throw new Error('Query returns some unexpected nodes.')
+                    }
+                } else if(correct>0) {
+                    return true;
+                }
             }
         }
     } else {
