@@ -669,7 +669,7 @@ The `preceding-sibling` axis selects all siblings before the current node.
 </div>
 ```
 
-``` xml @xpathExample(`Note, that **July** is a current node. Now get previous **summer** months`,`./preceding-sibling::span[@season="summer"]`)
+``` xml @xpathExample(`Note, that **July** is a current node. Now get previous **summer** months`,`./preceding-sibling::span[<at>season="summer"]`)
 <div _root _expectedXPath='./preceding-sibling::span'>
     <span season='spring' _correct>March</span>
     <span season='spring' >April</span>
