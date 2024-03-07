@@ -187,7 +187,7 @@ Here, we utilized the fact that each list item has a unique `id` attribute. Addi
 
 Try `//*[@id='2']` and observe the same result with Plum being selected:
 
-``` xml @xpathExample(`Observe the same result with Plum being selected:`,`//*[@id='2']`)
+``` xml @xpathExample(`Observe the same result with Plum being selected:`,`//*[<at>id='2']`)
 <ul _root>
     <li id="1">Carrot</li>
     <li _correct id="2">Plum</li>
