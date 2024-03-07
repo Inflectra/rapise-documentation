@@ -1230,7 +1230,7 @@ Make a locator that finds the row number 3 in [both](#or) old version and new ve
 
 ### Exercise Full Text
 
-``` xml @xpathQuiz(`Get [full text](#selecting-full-text) of the welcome message:)
+``` xml @xpathQuiz(`Get [full text](#selecting-full-text) of the welcome message:`)
 <div _root><p id="welcome_message" _oneline _expectedText="Welcome, Administrator !">
     Welcome, <i>Administrator</i> <b>!</b>
 </p>
