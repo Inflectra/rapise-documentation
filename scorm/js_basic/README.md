@@ -130,12 +130,6 @@ There is a tradition to start learning computer languages from implementing the 
 
 In this tutorial, we will only focus on learning the language itself, and therefore we will only use one function to print out our results called `console.log`.
 
-Go ahead, and fix it so it outputs `Hello, World!` and then press **Check** to proceed.
-
-``` javascript @codingQuiz2(`str!="Hello, World!"?"":"OK"+`,`console.log2=console.log;let str='';console.log=(t)=>{console.log2(t);str=t;};`)
-console.log('Goodbye, World!')
-```
-
 ## Strings
 
 In JavaScript, both single (' ') and double (" ") quotes are used to denote strings. You can use either of them to define a string.
@@ -555,22 +549,6 @@ In this example, "Private" an "Sergeant" both trigger the first sentence, "Comma
 
 Using the `switch` statement in general is not recommended, because forgetting the `break` keyword causes very confusing results.
 
-### Exercise
-
-In this exercise, you must construct an `if` inside the `checkNumber` function statement that checks if the number `myNumber` is equal to 42. If that is the case, the function must print out using `console.log` the word `correct`. If `myNumber` is not equal to 42, the function must print out using `console.log` the word `incorrect`.
-
-``` javascript @codingQuiz2(`const exp="incorrect"+nl+"incorrect"+nl+"correct"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)}; `)
-function checkNumber(myNumber)
-{
-    // TODO: write your code here
-
-}
-
-checkNumber(3);
-checkNumber(7);
-checkNumber(42);
-
-```
 
 ## Loops
 
@@ -679,19 +657,6 @@ for (var i = 0; i < 100; i++)
 <script>@input
 ""
 </script>
-
-### Exercise
-
-In this exercise, you must write a `for` loop that iterates on the `myArray` variable and prints out all of its members using `console.log`.
-
-``` javascript @codingQuiz2(`const exp="What is the meaning of life?"+nl+"The meaning of life is"+nl+"42"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):"OK"+`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)};`)
-var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
-
-// TODO: modify this code
-for ()
-{
-}
-```
 
 ## Functions
 
@@ -802,10 +767,16 @@ For those seeking more comprehensive courses, both free and paid options are ava
 
 ## Exam
 
-Here in the final section we have quizzes where you supposed to give an answer and then press `Check` button. For example, here the answer is already correct, just click `Check` to proceed:
+Here in the final section we have quizzes where you supposed to give an answer and then press **Check** button. For example, here the answer is already correct, just click **Check** to proceed:
 
 ``` javascript @codingQuiz(` `)
 25
+```
+
+Go ahead, and fix it so it outputs `Hello, World!` and then press **Check** to proceed.
+
+``` javascript @codingQuiz2(`str!="Hello, World!"?"":"OK"+`,`console.log2=console.log;let str='';console.log=(t)=>{console.log2(t);str=t;};`)
+console.log('Goodbye, World!')
 ```
 
 First, answer a couple of generic questions about JavaScript.
@@ -947,7 +918,6 @@ console.log(myArray[0]);
 console.log(myArray[1]);
 ```
 
-
 ### String Manipulations
 
 In this exercise, you do the following:
@@ -978,6 +948,37 @@ console.log(multiplyFive(5));
 console.log(multiplyFive(6));
 ```
 
+### Write a Condition
+
+In this exercise, you must construct an `if` inside the `checkNumber` function statement that [checks](#the-if-statement) if the number `myNumber` is equal to 42. If that is the case, the function must print out using `console.log` the word `correct`. If `myNumber` is not equal to 42, the function must print out using `console.log` the word `incorrect`.
+
+``` javascript @codingQuiz2(`const exp="incorrect"+nl+"incorrect"+nl+"correct"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)}; `)
+function checkNumber(myNumber)
+{
+    // TODO: write your code here
+
+}
+
+checkNumber(3);
+checkNumber(7);
+checkNumber(42);
+
+```
+
+### Write a Loop
+
+In this exercise, you must write a [for](#the-for-loop) loop that iterates on the `myArray` variable and prints out all of its members using `console.log`.
+
+``` javascript @codingQuiz2(`const exp="What is the meaning of life?"+nl+"The meaning of life is"+nl+"42"+nl;str!=exp?(console.error("expected:"),console.debug(exp),""):"OK"+`,`const nl = String.fromCharCode(10);let str="";console.log2=console.log;console.log=(t)=>{str+=t+nl;console.log2(t)};`)
+var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
+
+// TODO: modify this code
+for ()
+{
+}
+```
+
+
 ### Define an Object
 
 You must define an [object](#objects) called `person` with the following members:
@@ -993,7 +994,7 @@ var person;
 
 ```
 
-## More Typical Errors
+### More Typical Errors
 
 Let's check some more typical errors similar to what we did last time.
 
