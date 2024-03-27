@@ -6,6 +6,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Season 2023
 
+- [Rapise 8.1](https://youtu.be/xVN40UBCobo)
 - [Rapise 8.0](https://youtu.be/wi2cXiVnchY)
 
 #### Inflectra Ninja Sessions
