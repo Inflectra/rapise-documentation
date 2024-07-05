@@ -6,15 +6,15 @@
 
 *Default*:
 
-![Test](./img/menu_and_toolbars_file_default.png)
+![Test](./img/menu_and_toolbars_file_default.png){width="540px"}
 
 *Framework*:
 
-![Framework](./img/menu_and_toolbars_file_framework.png)
+![Framework](./img/menu_and_toolbars_file_framework.png){width="646px"}
 
 *Manual*:
 
-![Manual](./img/menu_and_toolbars_file_manual.png)
+![Manual](./img/menu_and_toolbars_file_manual.png){width="328px"}
 
 The File menu provides quick access to all the File management functions in Rapise. Many of these are also available on the main [toolbar](#main-toolbar).
 
@@ -56,7 +56,7 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 
 *JavaScript*:
 
-![JavaScript](./img/menu_edit_js.png)
+![JavaScript](./img/menu_edit_js.png){width="198px"}
 
 *RVL*:
 
@@ -174,9 +174,13 @@ The **View** menu contents depend on the active editor currently open in the [co
 
 The **Test** menu contents depend on the active editor currently open in the [content view](content_view.md).
 
-*Default*:
+*Default*
 
-![Default](./img/menu_test.png)
+![F](./img/menu_test_framework.png){width="172px"}
+
+*Legacy/Sub-Tests*:
+
+![L](./img/menu_test.png)
 
 *Manual*:
 
@@ -195,6 +199,7 @@ The **Test** menu contents depend on the active editor currently open in the [co
 * **Open Root ......** - Open the root of current test framework in this Rapise window. Only visible then we are in sub-test of any nesting level.
 * **Open Parent ......** - Open parent test containing this sub-test in this Rapise window. This item is only visible when parent is not yet a framework root (i.e. we have a deeply nested test case).
 * **Spira Properties** - opens the [Spira Properties dialog](spira_properties_dialog.md) that allows you to see the name of the SpiraTest project and test case that the current Rapise test is linked to.
+* **Playback Settings** - opens [Test Execution Parameters](test_to_play_selector.md#test-execution-parameters) dialog, that allows to change local playback parameters of the current framework, use it if you need to change parameters before executing [RVL > Play](rvl_editor.md#context-menu) actions. 
 * **Record Manual**
     * Manual: start the [Select Application to Record](select_an_application_to_record_dialog.md) dialog box. This dialog box is the same one that you'll use for automated testing, however when you click through the application under test it will record [manual test steps](manual_test_editor.md) instead of automated script code.
 

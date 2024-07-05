@@ -78,3 +78,6 @@
 
     - 'TouchAction': 'Libraries/TouchAction.md'
 
+    - 'ActionSequence': 'Libraries/ActionSequence.md'
+
+    - 'PointerInputDevice': 'Libraries/PointerInputDevice.md'

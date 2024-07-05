@@ -29,6 +29,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |  [CreateAppiumDriver](#createappiumdriver) | Connects to a mobile target using given Appium uri and capabilities. |
 |  [CreateDesiredCapabilities](#createdesiredcapabilities) |  |
 |  [CreateDriverForSession](#createdriverforsession) | Connects to active Appium session with given URL and Id. |
+|  [CreatePointerInput](#createpointerinput) | Gets PointerInputDevice object. |
 |  [CreateTouchAction](#createtouchaction) | Gets TouchAction object. |
 |  [DeactiveIMEEngine](#deactiveimeengine) | Deactivate the currently Active IME Engine on the device. |
 |  [Dispose](#dispose) | Dispose of WebDriver. |
@@ -78,6 +79,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |  [IsLocked](#islocked) | Check whether the device is locked or not |
 |  [LaunchApp](#launchapp) | Launch the app-under-test on the device |
 |  [OpenNotifications](#opennotifications) | Open Android notifications (Emulator only) |
+|  [PerformActions](#performactions) | Performs W3C actions. |
 |  [PressKeyCode](#presskeycode) | Press a particular key on Device |
 |  [PullFile](#pullfile) | Retrieve a file from the device's file system. |
 |  [PushFile](#pushfile) | Place a file onto the device in a particular place. |
@@ -326,6 +328,46 @@ true if successful, false otherwise.
 
 
 <a name="see.also.appiumdriver.createdriverforsession"></a>
+
+<a name="CreatePointerInput"></a>    
+#### CreatePointerInput
+
+Gets PointerInputDevice object. Requires Rapise 8.2+.
+			 
+```javascript
+var element = AppiumDriver.FindElementByXPath("//*[@text='Login']");
+var p = AppiumDriver.CreatePointerInput("Touch", "finger");
+var sequence = p.CreateActionSequence(p);
+var move = p.CreatePointerMoveElement(element, 0, 0, 0);
+var actionPress = p.CreatePointerDown("Touch");
+var pause = p.CreatePause(50);
+var actionRelease = p.CreatePointerUp("Touch");
+
+sequence.AddAction(move);
+sequence.AddAction(actionPress);
+sequence.AddAction(pause);
+sequence.AddAction(actionRelease);
+
+AppiumDriver.PerformActions(sequence);
+```
+
+```javascript
+AppiumDriver.CreatePointerInput(kind, name)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| kind | string |  Touch, Mouse or Pen. |
+| name | string |  Name of the pointer device. Whatever you like. |
+
+
+
+
+
+<a name="see.also.appiumdriver.createpointerinput"></a>
 
 <a name="CreateTouchAction"></a>    
 #### CreateTouchAction
@@ -1294,6 +1336,28 @@ AppiumDriver.OpenNotifications()
 
 
 <a name="see.also.appiumdriver.opennotifications"></a>
+
+<a name="PerformActions"></a>    
+#### PerformActions
+
+Performs W3C actions. Requires Rapise 8.2+. See [CreatePointerInput](#createpointerinput) for usage example.
+
+```javascript
+AppiumDriver.PerformActions(sequence)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| sequence | ActionSequence |  Array of ActionSequence objects. |
+
+
+
+
+
+<a name="see.also.appiumdriver.performactions"></a>
 
 <a name="PressKeyCode"></a>    
 #### PressKeyCode

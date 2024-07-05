@@ -61,6 +61,37 @@ Example of a locator:
 
 Find the example of a simple page with Shadow DOM on [UI Testing Playground](http://uitestingplayground.com/shadowdom).
 
+#### Piercing Shadow DOM 
+
+Rapise 8.2+ is able to pierce Shadow DOM. It means that if a CSS selector does not use `@#@` delimiter described above then Rapise will search for an element without taking into account Shadow DOM borders.
+
+For example on this page:
+
+```html
+<section>
+  <div>
+    <guid-generator>
+      # shadow-root (open)
+      <input class="edit-field" id="editField">
+      <button class="button-generate" id="buttonGenerate"><i class="fa fa-cog"></i></button>
+      <button class="button-copy" id="buttonCopy"><i class="fa fa-clone"></i></button>
+    </guid-generator>
+  </div>
+</section>
+```
+
+we may find `<input>` element with
+
+```css
+css=input
+css=input[id='editField']
+css=guid-generator input
+css=guid-generator > input
+```
+
+!!! note
+    Shadow DOM piercing feature may break existing tests as locators recorded earlier may start to find more elements. In this case make locators more specific.
+
 ## Automatic XPath Generation on Record and Learn
 
 When you do a [recording](recording.md) session, interact with web elements or [learn](object_learning.md) them - Rapise generates XPath [locators](https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx) for the elements. You can view XPath of an object in the property grid:

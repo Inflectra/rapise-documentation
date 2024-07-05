@@ -26,12 +26,13 @@ Global object. Use it to perform actions not related to a particular object. You
 |  [DoCompareJsObjects](#docomparejsobjects) | Compares two JavaScript objects and prints differences to the report. |
 |  [DoDecrypt](#dodecrypt) | Decrypts a piece of text. |
 |  [DoEncrypt](#doencrypt) | Encrypts a piece of text. |
+|  [DoFindProcess](#dofindprocess) | Finds a process by executable path and, maybe, part of command line. |
 |  [DoHorizontalScroll](#dohorizontalscroll) | Simulates mouse horizontal wheel scroll gesture. |
 |  [DoInvokeTest](#doinvoketest) | Invokes another test (aka subtest). |
 |  [DoInvokeTestParallel](#doinvoketestparallel) | Executes specified test in few parallel threads. |
 |  [DoKillByName](#dokillbyname) | Terminates a given process. |
 |  [DoKillByPid](#dokillbypid) | Terminates a given process or the last process created by DoLaunch if 'pid' is not specified. |
-|  [DoLaunch](#dolaunch) | Executes a command specified in cmdLine. |
+|  [DoLaunch](#dolaunch) | Executes a command specified by the cmdLine parameter. |
 |  [DoLoadObjects](#doloadobjects) | Loads objects from external .objects.js file. |
 |  [DoMaximizeWindow](#domaximizewindow) | Maximizes window that matches given title and class name. |
 |  [DoMessageBox](#domessagebox) | Shows message box (popup message) to a user. |
@@ -44,7 +45,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |  [DoSendKeys](#dosendkeys) | Sends series of keystrokes to a currently focused application. |
 |  [DoSendText](#dosendtext) | Sends text to the active application as is (while SendKeys also supports sending special keys). |
 |  [DoSetScreenResolution](#dosetscreenresolution) | Sets screen resolution. |
-|  [DoSleep](#dosleep) | Pauses execution for given number of milliseconds (1000 = 1 second). |
+|  [DoSleep](#dosleep) | Delays/pauses execution for a given number of milliseconds (1000 = 1 second). |
 |  [DoTrim](#dotrim) | Strips leading and trailing white-space from a string, replaces sequences of whitespace characters by a single space, and returns the resulting string. |
 |  [DoTypePassword](#dotypepassword) | Types encrypted password into a control which has a focus. |
 |  [DoVerticalScroll](#doverticalscroll) | Simulates mouse vertical wheel scroll gesture. |
@@ -291,6 +292,34 @@ string: Encrypted text.
 
 <a name="see.also.global.doencrypt"></a>
 
+<a name="DoFindProcess"></a>    
+#### DoFindProcess
+
+Finds a process by executable path and, maybe, part of command line. Requires Rapise 8.1.29.39+
+
+```javascript
+Global.DoFindProcess(exeName, partOfCmd)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| exeName | string |  Command line to an executable with parameters. |
+| partOfCmd | string |  Command line (or regular expression)<br>Optional, Default: "". |
+
+
+
+
+**Returns:**
+
+number: ID of the new process (positive number) or an error code (negative number)
+
+
+
+<a name="see.also.global.dofindprocess"></a>
+
 <a name="DoHorizontalScroll"></a>    
 #### DoHorizontalScroll
 
@@ -442,11 +471,11 @@ boolean: 'true' if the process was terminated, 'false' otherwise.
 <a name="DoLaunch"></a>    
 #### DoLaunch
 
-Executes a command specified in cmdLine. Optionally one may specify working dir, and window name
-to attach if it is already launched.
+Executes a command specified by the cmdLine parameter. Use to start external desktop apllications. Optionally specify the working dir and window name
+to attach if the application is already running. Example: `Global.DoLaunch("calc.exe")`
 
 ```javascript
-Global.DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)
+Global.DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow, wait, parentProcess)
 ```
 
 
@@ -454,10 +483,12 @@ Global.DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| cmdLine | string |  Command line to an executable with parameters. |
+| cmdLine | string |  Command line with the executable file name/path and parameters. |
 | wrkDir | string |  Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
 | attachIfExists | boolean |  Try to find a process with the same executable path instead of launching it.<br>Optional, Default: "false". |
 | attachToWindow | string |  When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "". |
+| wait | bool |  Try to find a process with the same executable path instead of launching it. Requires Rapise 8.1.29.39+<br>Optional, Default: "false". |
+| parentProcess | number \| string |  Optional parent process. By default parent process will be a current script's process. May be ID or executable path to the process. Requires Rapise 8.1.29.39+<br>Optional, Default: "0". |
 
 
 
@@ -816,7 +847,7 @@ Global.DoSetScreenResolution(width, height)
 <a name="DoSleep"></a>    
 #### DoSleep
 
-Pauses execution for given number of milliseconds (1000 = 1 second).
+Delays/pauses execution for a given number of milliseconds (1000 = 1 second). Use to wait given amount of time and then continue running the test.
 
 ```javascript
 Global.DoSleep(millis)
@@ -827,7 +858,7 @@ Global.DoSleep(millis)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| millis | number |  Number of milliseconds to sleep. |
+| millis | number |  Number of milliseconds to wait/sleep. |
 
 
 

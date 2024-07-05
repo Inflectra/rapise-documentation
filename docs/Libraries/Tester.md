@@ -64,7 +64,7 @@ Tester object. Use it to perform assertions during test playback and output rele
 |  [GetTestName](#gettestname) | Returns name of the running test. |
 |  [GetTestStatus](#getteststatus) | Gets status of currently executed test. |
 |  [IgnoreStatus](#ignorestatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
-|  [Message](#message) | Saves corresponding Report message. |
+|  [Message](#message) | Writes a message to the report. |
 |  [MessageBox](#messagebox) | Shows message box to user. |
 |  [MessageBoxPrompt](#messageboxprompt) | Shows message box with question to the user and checks if user presses "Yes" or "No". |
 |  [PopReportAttribute](#popreportattribute) | Resets an attribute to its previous value. |
@@ -1006,7 +1006,7 @@ Tester.IgnoreStatus(ignore)
 <a name="Message"></a>    
 #### Message
 
-Saves corresponding Report message.
+Writes a message to the report. Use for logging purposes.
 Message may contain some additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
@@ -1018,7 +1018,7 @@ Tester.Message(message, data, tags)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| message | string |  Message to put in the report |
+| message | string |  Text to write into the report. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 

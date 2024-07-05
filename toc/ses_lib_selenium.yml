@@ -6,9 +6,13 @@
 
     - 'Actions': 'Libraries/Actions.md'
 
+    - 'ActionSequence': 'Libraries/ActionSequence.md'
+
     - 'Capabilities': 'Libraries/Capabilities.md'
 
     - 'Cookies': 'Libraries/Cookies.md'
+
+    - 'PointerInputDevice': 'Libraries/PointerInputDevice.md'
 
     - 'Screenshot': 'Libraries/Screenshot.md'
     

@@ -119,6 +119,10 @@ The default profile looks like this:
     - `skipAttribute(node, attr, value)` allows to skip recording of some attributes in specific cases. The function must return `true` if an attribute should not be recorded.
     - `clickable(el)` fine grained control over which element is considered clickable. When the function returns `true` the element is considered clickable, if `false` - then default algorithm (element is clickable or not) is used. Requires Rapise 6.5+.
 
+### treatMouseUpAsClick, treatMouseDownAsClick
+
+In rare cases when a Web app is interfering into default mouse clicks processing mechanism it may be necessary to set `record.treatMouseUpAsClick` or `record.treatMouseDownAsClick` to `true`. It will enable Rapise to record clicks that are processed by the application inside MouseUp or MouseDown events.
+
 ## Anchors
 
 When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element (including the anchor element itself) then XPath of the element will start/or be replaced with XPath of the anchor element.

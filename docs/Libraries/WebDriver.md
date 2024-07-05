@@ -25,6 +25,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  [Cookies](#cookies) | Gets Cookies object. |
 |  [CreateDriver](#createdriver) | This will create a WebDriver for currently selected Browser profile. |
 |  [CreateDriverForSession](#createdriverforsession) | Connects to active Selenium session with given URL and Id. |
+|  [CreatePointerInput](#createpointerinput) | Gets PointerInputDevice object. |
 |  [Dispose](#dispose) | Dispose of WebDriver. |
 |  [DownloadDriver](#downloaddriver) | This will download required binary (e.g. |
 |  [DumpSessions](#dumpsessions) | Prints information about active Selenium sessions to output. |
@@ -56,6 +57,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  [GetUrl](#geturl) | Gets the URL the browser is currently displaying. |
 |  [GetWindowHandles](#getwindowhandles) | Gets the window handles of open browser windows. |
 |  [Navigate](#navigate) | Gets Navigation object with the following actions: Back, Forward, Refresh, GotToUrl(url). |
+|  [PerformActions](#performactions) | Performs W3C actions. |
 |  [Quit](#quit) | Disconnects from the Browser. |
 |  [ReconnectSession](#reconnectsession) | Reads session information produced by SaveSession and connects to the mobile target. |
 |  [SaveSession](#savesession) | Saves session information for use by ReconnectSession. |
@@ -210,6 +212,46 @@ true if successful, false otherwise.
 
 
 <a name="see.also.webdriver.createdriverforsession"></a>
+
+<a name="CreatePointerInput"></a>    
+#### CreatePointerInput
+
+Gets PointerInputDevice object. Requires Rapise 8.2+.
+
+```javascript
+var element = WebDriver.FindElementByXPath("//button[@id='Login']");
+var p = WebDriver.CreatePointerInput("Mouse", "pointer");
+var sequence = p.CreateActionSequence(p);
+var move = p.CreatePointerMoveElement(element, 5, 5, 0);
+var actionPress = p.CreatePointerDown("Left");
+var pause = p.CreatePause(50);
+var actionRelease = p.CreatePointerUp("Left");
+
+sequence.AddAction(move);
+sequence.AddAction(actionPress);
+sequence.AddAction(pause);
+sequence.AddAction(actionRelease);
+
+WebDriver.PerformActions(sequence);
+```
+
+```javascript
+WebDriver.CreatePointerInput(kind, name)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| kind | string |  Touch, Mouse or Pen. |
+| name | string |  Name of the pointer device. Whatever you like. |
+
+
+
+
+
+<a name="see.also.webdriver.createpointerinput"></a>
 
 <a name="Dispose"></a>    
 #### Dispose
@@ -918,6 +960,28 @@ WebDriver.Navigate()
 
 
 <a name="see.also.webdriver.navigate"></a>
+
+<a name="PerformActions"></a>    
+#### PerformActions
+
+Performs W3C actions. Requires Rapise 8.2+. See [CreatePointerInput](#createpointerinput) for usage example.
+
+```javascript
+WebDriver.PerformActions(sequence)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| sequence | ActionSequence |  Array of ActionSequence objects. |
+
+
+
+
+
+<a name="see.also.webdriver.performactions"></a>
 
 <a name="Quit"></a>    
 #### Quit

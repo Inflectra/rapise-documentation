@@ -74,15 +74,16 @@ extra:
 nav:
 - '#':
     - 'RapiseDocs': 'index.md'
+    - 'AI': 'Intro/ai.md'
+    - 'Automation Tips': 'Intro/automation.md'    
+    - 'Cheat Sheet': 'Guide/cheatsheet.md'
+    - 'Data-Driven Testing': 'Intro/ddt.md'
+    - 'DevOps': 'Intro/devops.md'
+    - 'Frameworks': 'Guide/Frameworks/frameworks.md'
     - 'Know Your Way Around': 'Intro/orientation.md'
     - 'Knowledge Base': 'Manuals/kb.md'
-    - 'Automation Tips': 'Intro/automation.md'
-    - 'DevOps': 'Intro/devops.md'
-    - 'Data-Driven Testing': 'Intro/ddt.md'
-    - 'Frameworks': 'Guide/Frameworks/frameworks.md'
-    - 'Parameters and Configurations': 'Guide/Frameworks/parameters.md'
     - 'Page Objects / Modules': 'Guide/Frameworks/pageobjects.md'
-    - 'Cheat Sheet': 'Guide/cheatsheet.md'
+    - 'Parameters and Configurations': 'Guide/Frameworks/parameters.md'
 
 - 'User''s Guide':
     - 'About this Guide': 'Guide/about_this_guide.md'
@@ -398,6 +399,7 @@ nav:
     - 'Training': 'Intro/training.md'
     - 'Playground': 'Intro/uitap.md'
 - 'Release Notes':
+    - 'Release Notes for 8.2': 'New/8_2.md'
     - 'Release Notes for 8.1': 'New/8_1.md'
     - 'Release Notes for 8.0': 'New/8_0.md'
     - 'Release Notes for 7.4': 'New/7_4.md'

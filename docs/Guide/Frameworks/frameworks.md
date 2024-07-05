@@ -69,6 +69,15 @@ For instance, if you tag a file as `User.js`, it will be automatically loaded wh
 
 ![Tagging a File as Shared](./img/frameworks_tag_file_shared.png)
 
+!!! note
+   To auto load a shared file on playback only set `shared` tag.
+
+!!! note
+   To auto load a shared file on playback and recording set `shared,recorder` tags.
+
+!!! note
+   To auto load a shared file on recording only set `shared,recorder,skip` tag.
+
 Furthermore, if you tag an arbitrary `Objects.js` file with the `shared` tag, all the objects defined within it will be accessible in any test case.
 
 ### Object Repositories

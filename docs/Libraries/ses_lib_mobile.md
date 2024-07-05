@@ -48,3 +48,5 @@
 - [AppiumDriver](AppiumDriver.md)
 - [AppiumWebElement](AppiumWebElement.md)
 - [TouchAction](TouchAction.md)
+- [ActionSequence](ActionSequence.md)
+- [PointerInputDevice](PointerInputDevice.md)

@@ -32,10 +32,12 @@ This file may be stored either common folder:
 Or in the root of current [test framework](../Intro/framework.md).
 
 The cmd file receives the following inputs
+
 * `%1` - file path (c:\Path\To\Test\File.js)
 * `%2` - test working directory (c:\Path\To\Test)
 
 Also Rapise sets two environment variables:
+
 * `%SHIFT_PRESSED%` is `yes` when user presses **Shift** key
 * `%CONTROL_PRESSED%` is `yes` when user presses **Ctrl** key
 
@@ -55,4 +57,13 @@ if "%SHIFT_PRESSED%"=="yes" (
         @call "%~dp0node_modules\.bin\js-beautify.cmd" -r --config "%~dp0jsbeautify.config.json" %1 >OnTextSaved.log 2>&1
     )
 )
+```
+
+## OnSave.cmd
+
+This file enables additional post-processing of the saved text files. It follows same rules as `OnTextSaved.cmd`. For example, you may use it to add new files to Git and commit changes on save:
+
+```
+git add * >>gitadd.log
+git commit -a -m "Autosave" >>gitcommit.log
 ```
