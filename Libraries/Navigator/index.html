@@ -13902,7 +13902,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p><a name="DoSetExpectedConfirmResult"></a>    </p>
 <h4 id="dosetexpectedconfirmresult">DoSetExpectedConfirmResult<a class="headerlink" href="#dosetexpectedconfirmresult" title="Permanent link">&para;</a></h4>
 <p>Sets boolean value to return as a result of next browser <code>confirm</code> request.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Navigator</span><span class="p">.</span><span class="nx">DoSetExpectedConfirmResult</span><span class="p">(</span><span class="nx">expectedRes</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Navigator</span><span class="p">.</span><span class="nx">DoSetExpectedConfirmResult</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13915,9 +13915,9 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </thead>
 <tbody>
 <tr>
-<td>expectedRes</td>
-<td>string</td>
-<td>The text to be returned in the next request.</td>
+<td>result</td>
+<td>boolean</td>
+<td>Confirmation result, <code>true</code> or <code>false</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -13925,7 +13925,7 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 <p><a name="DoSetExpectedPromptResult"></a>    </p>
 <h4 id="dosetexpectedpromptresult">DoSetExpectedPromptResult<a class="headerlink" href="#dosetexpectedpromptresult" title="Permanent link">&para;</a></h4>
 <p>Sets text to return as a result of next browser <code>prompt</code> request.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Navigator</span><span class="p">.</span><span class="nx">DoSetExpectedPromptResult</span><span class="p">(</span><span class="nx">expectedRes</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Navigator</span><span class="p">.</span><span class="nx">DoSetExpectedPromptResult</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -13938,9 +13938,9 @@ Use Navigator.GetAutoOpen() to read the value and Navigator.SetAutoOpen(true|fal
 </thead>
 <tbody>
 <tr>
-<td>expectedRes</td>
-<td>string</td>
-<td>The text to be returned in the next request.</td>
+<td>result</td>
+<td>string  |  object</td>
+<td>Expected prompt result.</td>
 </tr>
 </tbody>
 </table>

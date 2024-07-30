@@ -12094,8 +12094,13 @@
 <p><a name="see.also.text.firstindex"></a></p>
 <p><a name="Format"></a>    </p>
 <h4 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h4>
-<p>Format given <code>formatStr</code> template string by expanding properties of <code>nameValueJsonObj</code> as {param1}, {param2} etc template params.".
-                Designed to be called from JavaScript. If you need to call it from <code>RVL</code> then consider using <code>RVL.FormatString</code> instead.</p>
+<p>Format given <code>formatStr</code> template string by expanding properties of <code>nameValueJsonObj</code> as {param1}, {param2} etc template params.".</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Text</span><span class="p">.</span><span class="nx">Format</span><span class="p">(</span><span class="s2">&quot;{h} {w}!&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">h</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">w</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;World&quot;</span><span class="p">});</span>
+</code></pre></div>
+<p>Additionally you may call it with multiple string values and refer to them by index.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Text</span><span class="p">.</span><span class="nx">Format</span><span class="p">(</span><span class="s2">&quot;{0} {1}!&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;World&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>Designed to be called from JavaScript. If you need to call it from <code>RVL</code> then consider using <code>RVL.FormatString</code> instead.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Text</span><span class="p">.</span><span class="nx">Format</span><span class="p">(</span><span class="nx">formatStr</span><span class="p">,</span><span class="w"> </span><span class="nx">nameValueJsonObj</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12125,13 +12130,18 @@
 <p><a name="see.also.text.format"></a></p>
 <p><a name="IncrementDate"></a>    </p>
 <h4 id="incrementdate">IncrementDate<a class="headerlink" href="#incrementdate" title="Permanent link">&para;</a></h4>
-<p>Increments a date/time string with a given offset. Requires Rapise 8.1+.
-1. Parses date using given format specifier.
-    Formatting is described here: <a href="https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.85).aspx</a>
-    Example: yyyy-MM-dd HH:mm
-2. Adds/Subtracts specified number of years, months, days, hours, minutes.
-    The number may be negative or positive, i.e. months=2 adds 2 months, months=-3 goes 3 months back, months=0 leaves months intact.
-3. Formats the date back and returns.</p>
+<p>Increments a date/time string with a given offset. Requires Rapise 8.1+.</p>
+<ol>
+<li>
+<p>Parses date using given format specifier.    Formatting is described <a href="https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings">here</a>.</p>
+<p>Example: <code>yyyy-MM-dd HH:mm</code></p>
+</li>
+<li>
+<p>Adds/Subtracts specified number of years, months, days, hours, minutes.
+        The number may be negative or positive, i.e. months=2 adds 2 months, months=-3 goes 3 months back, months=0 leaves months intact.</p>
+</li>
+<li>Formats the date back and returns.</li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="nx">Text</span><span class="p">.</span><span class="nx">IncrementDate</span><span class="p">(</span><span class="nx">dstr</span><span class="p">,</span><span class="w"> </span><span class="nx">fmt</span><span class="p">,</span><span class="w"> </span><span class="nx">years</span><span class="p">,</span><span class="w"> </span><span class="nx">months</span><span class="p">,</span><span class="w"> </span><span class="nx">days</span><span class="p">,</span><span class="w"> </span><span class="nx">hours</span><span class="p">,</span><span class="w"> </span><span class="nx">minutes</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
