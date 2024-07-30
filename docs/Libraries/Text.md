@@ -304,7 +304,18 @@ number: Index or -1
 #### Format
 
 Format given `formatStr` template string by expanding properties of `nameValueJsonObj` as {param1}, {param2} etc template params.".
-				Designed to be called from JavaScript. If you need to call it from `RVL` then consider using `RVL.FormatString` instead.
+
+```javascript
+Text.Format("{h} {w}!", {h: "Hello", w: "World"});
+```
+
+Additionally you may call it with multiple string values and refer to them by index.
+
+```javascript
+Text.Format("{0} {1}!", "Hello", "World");
+```
+
+Designed to be called from JavaScript. If you need to call it from `RVL` then consider using `RVL.FormatString` instead.
 
 ```javascript
 Text.Format(formatStr, nameValueJsonObj)
@@ -333,11 +344,13 @@ string: Formatted string
 #### IncrementDate
 
 Increments a date/time string with a given offset. Requires Rapise 8.1+.
-1. Parses date using given format specifier.
-	Formatting is described here: https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.85).aspx
-	Example: yyyy-MM-dd HH:mm
+
+1. Parses date using given format specifier.	Formatting is described [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
+
+    Example: `yyyy-MM-dd HH:mm`
+
 2. Adds/Subtracts specified number of years, months, days, hours, minutes.
-	The number may be negative or positive, i.e. months=2 adds 2 months, months=-3 goes 3 months back, months=0 leaves months intact.
+		The number may be negative or positive, i.e. months=2 adds 2 months, months=-3 goes 3 months back, months=0 leaves months intact.
 3. Formats the date back and returns.
 
 ```javascript

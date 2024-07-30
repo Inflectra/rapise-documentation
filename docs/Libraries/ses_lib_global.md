@@ -30,4 +30,6 @@
 
 - [Tester](Tester.md)
 
+- [Text](Text.md)
+
 - [WebDriver](WebDriver.md)

@@ -845,7 +845,7 @@ Navigator.DoSendKeys(txt)
 Sets boolean value to return as a result of next browser `confirm` request.
 
 ```javascript
-Navigator.DoSetExpectedConfirmResult(expectedRes)
+Navigator.DoSetExpectedConfirmResult(result)
 ```
 
 
@@ -853,7 +853,7 @@ Navigator.DoSetExpectedConfirmResult(expectedRes)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| expectedRes | string |  The text to be returned in the next request. |
+| result | boolean |  Confirmation result, `true` or `false`. |
 
 
 
@@ -867,7 +867,7 @@ Navigator.DoSetExpectedConfirmResult(expectedRes)
 Sets text to return as a result of next browser `prompt` request.
 
 ```javascript
-Navigator.DoSetExpectedPromptResult(expectedRes)
+Navigator.DoSetExpectedPromptResult(result)
 ```
 
 
@@ -875,7 +875,7 @@ Navigator.DoSetExpectedPromptResult(expectedRes)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| expectedRes | string |  The text to be returned in the next request. |
+| result | string  \|  object |  Expected prompt result. |
 
 
 
