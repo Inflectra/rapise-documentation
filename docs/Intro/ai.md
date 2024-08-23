@@ -3,9 +3,23 @@
 <div class="ai-watermark">
 </div>
 
-The new Generative Artificial Intelligence features (GenAI) we have introduced in Rapise 8.2 are designed to assist human testers in creating automation test scripts more efficiently and easily. We have designed it to be a flexible and extensible platform for customers to access our existing GenAI features and craft their use cases. The goal of the functionality is to shorten the chain from a human-readable test scenario to a working automation script. In addition, the functionality will simplify test script maintenance, speed up synthetic test data generation, and act as a general-purpose assistant to the automation engineer and manual tester.
+Rapise 8.2 harnesses the power of Generative AI to streamline and optimize your test automation workflows. Designed with flexibility and extensibility in mind, our platform allows you to leverage our AI features for your unique testing needs.
 
-See it in action:
+## Key Benefits
+
+- Accelerated script development: Translate human-readable test scenarios into functional automation scripts rapidly, reducing development time and effort.
+- Simplified script maintenance: AI-powered assistance helps maintain and update test scripts as your application evolves, ensuring test suite longevity.
+- Synthetic test data generation: Generate realistic and diverse test data sets on demand, improving test coverage and effectiveness.
+- Intelligent assistance: Both automation engineers and manual testers benefit from AI-powered guidance and support throughout the testing process.
+
+## Technical Highlights
+
+- Flexible AI integration: Customize and extend AI features to match your specific testing requirements.
+- Seamless collaboration: Bridge the gap between human testers and automation tools, fostering a more efficient and collaborative testing environment.
+
+## Video Tutorials
+
+Explore Rapise AI video tutorials to see these features in action and start revolutionizing your test automation process today.
 
 - [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nsm6OxusGnzY8iBE-nEp36C)
 - [Rapise AI 01 - API Key](https://youtu.be/ztMQsWBDfAg)
