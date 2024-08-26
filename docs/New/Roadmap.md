@@ -8,16 +8,13 @@
     If you have any feedback or suggestions regarding this roadmap, please email us at support@inflectra.com.
 
 
-## Version 8.2 (Q2 2024)
+## Version 8.3 (Q4 2024)
 
-- **AI**: Generate data to use for Data-Driven Testing.
-    - Example: generate 10 fake company names
-    - Example: generate more data lines for this spreadsheet
-- **AI**: AI(text) command in RVL to perform actions based on high level text description.
-    - Example: log into the system with username `librarian` and password `librarian`
-    - Example: open Books section
-- **Appium 2.0** support
-- Enhance **CSS** selectors to pierce open **Shadow DOM**
+- Add support for Appium Windows Driver
+- Integrate with Playwright
+- Enhance CSS locators
+- AI features fixes and improvements
+- Performance optimization for test frameworks with 20k+ test cases
 
 ## 2024
 
@@ -63,13 +60,49 @@ We are also going to expand our AI research and equip Rapise with AI-based featu
 
 ### Smart Features (AI-based)
 
-- Generate a Page Object/Module based on text description.
-- Generate test cases for a framework based on AUT description.
-- Generate RVL/JavaScript code and object repository from text description.
-- Built-in assistant to perform certain actions based on text prompts.
-- Add OCR capabilities.
-- Element locator based on computer vision.
-- Visual checkpoints.
+#### Chat with Rapise
+
+Interact with the opened testing framework to ask questions and create test cases or page objects from a text prompt.
+
+##### Prompt Examples
+
+1. How many test cases do I have?
+2. How many draft test cases are in my framework?
+3. How many test cases are currently in a failed status?
+4. Are there any failed test cases?
+5. Create a new test case: "View Authors" in the "Author Management" folder.
+6. Generate an RVL module named "LoginPage" with actions: DoLogin, DoLogout.
+
+##### Chat Example 
+
+Generate test case templates for a framework based on the description of the application under test (AUT):
+
+- Generate 20 test case templates for a Library Information System website that manages a list of books and authors.
+- Organize the generated test case names into logical groups based on the functional areas of the application.
+- Create test case folders and templates for each group.
+
+#### Computer Vision-Based Element Locator
+
+This locator should be capable of identifying an element's bounding rectangle using a page screenshot and a text prompt. It can be used during test step generation and for automatic locator self-healing.
+
+**Examples:**
+
+- Locate the "Username" text field.
+- Locate the "Edit" button for the book *The Adventures of Tom Sawyer*.
+
+#### Visual Checkpoints
+
+Implement functionality to capture screenshots of the UI at predefined points in the test flow and compare them to baseline images. Any visual differences beyond a configurable threshold (e.g., pixel-level or layout variations) will be automatically flagged as failures for review.
+
+#### Add OCR Capabilities
+
+Leverage AI to extract text from UI elements when accessing it through the DOM is not possible.
+
+#### AI Technology
+
+- Improve token spending by leveraging more optimal RAG and prompt tuning methods.
+- Improve automatic error correction efficiency by automatic try & fix loops.
+- Add support for Google and Amazon models.
 
 ### Technologies
 
