@@ -1,0 +1,551 @@
+# AI in Rapise
+
+There are two major interfaces to interact with AI in Rapise:
+
+- **[AI Dashboard](#ai-dashboard)**
+
+    With AI Dashboard you may configure AI options, chat with AI and see chat history. 
+
+- **[AI Panel](#ai-panel)**
+    
+    AI Panel is bound to active RVL document and is used for translating AI Commands into executable JavaScript code. 
+
+## AI Dashboard
+
+### How to Open
+
+To open the dashboard use main menu `View > AI Dashboard`.
+
+The dashboard has three pages.
+
+=== "Screenshot"
+    ![Dashboard Tabs](./img/ai_dashboard_tabs.png){width="436px"}
+=== "Transcript"
+    AI Dashboard tabs: Settings, Chats, Snapshots.
+
+- **Settings**, use it to set AI Api Key, choose default model and set framework specific options.
+- **Chats**, on this page you will see history of AI chats, you may open any of them and continue interacting with AI.
+- **Snapshots**, you may star chats and they will appear on this page.
+
+### Settings
+
+With the first release of AI features Rapise supports OpenAI and Azure OpenAI models. To use OpenAI models you need just [OpenAI Api Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key). For [Azure OpenAI](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key) you will also need to specify the endpoint URL.
+
+=== "Screenshot"
+    ![Dashboard Settings](./img/ai_dashboard_settings.png){width="870px"}
+=== "Transcript"
+    **Options**
+
+    Scope *global*  
+    - `global` (selected)  
+    - `local [create]`
+
+    Please select an agent workflow for AI Command:  
+    - `AI Command` (dropdown option)
+
+    Enter parameters for the default model:  
+    - `gpt-4o-mini`
+
+    - (Obscured text for input)
+
+    Base URL:  
+    - (Empty field)
+
+**Test Model** (Button)
+
+
+You may create options local to current testing framework. Just click `local[create]` button. If local options exist, Rapise prefers them over global ones.
+
+### Chats
+
+On Chats page you may select one of previous chats and continue interaction with AI. Also you may create a new chat. When creating a chat you'll be prompted to select a workflow. Supported workflows:
+
+#### AI Chat
+
+This is a generic chat with an AI model. You may ask questions and get answers. You may augment prompts with screenshots and files.
+
+=== "Screenshot"
+    ![AI Chat](./img/ai_workflow_ai_chat.png){width="1123px"}
+=== "Transcript"
+    **USER**: What are main features of a good UI testing framework?
+
+    **AI**: A good UI testing framework should have several key features to ensure it is effective, efficient, and user-friendly. Here are the main features to consider:
+
+    1. **Cross-Browser Compatibility**: The framework should support testing across multiple browsers (e.g., Chrome, Firefox, Safari, Edge) to ensure consistent behavior of the application.
+
+    2. **Cross-Platform Support**: It should be able to test applications on various platforms (e.g., web, mobile, desktop) to accommodate different user environments.
+
+    3. **Ease of Use**: The framework should have a user-friendly interface and clear documentation, making it easy for testers and developers to write and maintain tests.
+
+#### AI Command
+
+This type of chat is usually created by Rapise when processing an AI Command. Result of prompt processing is JavaScript code. When working with this chat you may edit generated code, copy code to insert into a JavaScript file or convert code to RVL and apply to active RVL sheet.
+
+=== "Screenshot"
+    ![AI Command](./img/ai_workflow_ai_command.png){width="1123px"}
+=== "Transcript"
+    **USER**: Open browser at https://libraryinformationsystem.org
+
+    **AI**: 
+
+    ```javascript
+    Navigator.Open("https://libraryinformationsystem.org")
+    ```
+
+#### Generate Data List
+
+Generates a list of data values. The list can be inserted into an RVL sheet directly from the chat.
+
+1. Prompt AI to generate a list of values. E.g.: `Generate 10 fake company names`
+
+    === "Screenshot"
+        ![Generate List](./img/ai_workflow_generate_list.png){width="1123px"}
+    === "Transcript"
+        **USER**: Generate 10 fake company names
+
+        **AI**: 
+        ```
+        Companies
+        InnovaTech  
+        EcoSphere  
+        NexGen Solutions  
+        Quantum Dynamics  
+        AeroFusion  
+        CrestWave  
+        PixelForge  
+        VitaNova  
+        Stratosphere Innovations  
+        BluePeak Industries  
+        ```
+
+
+2. Open RVL file and sheet where you want to insert the result
+3. Return to AI Dashboard and click Apply. Also you may edit values before inserting to RVL.
+
+    ![Apply List](./img/ai_workflow_generate_list_apply.png){width="689px"}
+
+4. The list will be inserted into RVL.
+
+    === "Screenshot"
+        ![List Result](./img/ai_workflow_generate_list_result.png){width="431px"}
+    === "Transcribe"
+        | Flow | Type                     | Object    | Action | ParamName | ParamType | ParamValue |
+        | ---- | ------------------------ | --------- | ------ | --------- | --------- | ---------- |
+        | Map  | Rows                     | Companies |        |           |           |            |
+        |      | Companies                |           |        |           |           |            |
+        |      | Innovatech               |           |        |           |           |            |
+        |      | EcoSphere                |           |        |           |           |            |
+        |      | NexGen Solutions         |           |        |           |           |            |
+        |      | Quantum Dynamics         |           |        |           |           |            |
+        |      | AeroFusion               |           |        |           |           |            |
+        |      | CrestWave                |           |        |           |           |            |
+        |      | PixelForge               |           |        |           |           |            |
+        |      | VitaNova                 |           |        |           |           |            |
+        |      | Stratosphere Innovations |           |        |           |           |            |
+        |      | BluePeak Industries      |           |        |           |           |            |
+        | End  |                          |           |        |           |           |            |
+
+#### Generate Data Table
+
+Generates a table with columns and rows. The result can be directly inserted into an RVL sheet as Map. The workflow is just like for Generate Data List.
+
+1. Prompt AI to generate a table of values. E.g.: `Generate a table with 10 records and columns: Zip, City, Street Address`.
+
+    === "Screenshot"
+        ![Generate Table](./img/ai_workflow_generate_table.png){width="1102px"}
+    === "Transcribe"
+        **USER**: Generate a table with 10 records and columns: Zip, City, Street Address
+
+        **AI**: 
+        ```json
+        {  
+        "data": [  
+            {  
+            "Zip": "10001",  
+            "City": "New York",  
+            "Street Address": "123 Main St"  
+            },  
+            {  
+            "Zip": "20001",  
+            "City": "Washington",  
+            "Street Address": "456 Elm St"  
+            },  
+            {  
+            "Zip": "30301",  
+            "City": "Atlanta",  
+            "Street Address": "789 Pine St"  
+            },  
+            {  
+            "Zip": "60601",  
+            "City": "Chicago",  
+            "Street Address": "101 Maple St"  
+            },  
+            {  
+            "Zip": "70112",  
+            "City": "New Orleans",  
+            "Street Address": "202 Oak St"  
+            },  
+            {  
+            "Zip": "94105",  
+            "City": "San Francisco",  
+            "Street Address": "303 Cedar St"  
+            },  
+            {  
+            "Zip": "33101",  
+            "City": "Miami",  
+            "Street Address": "404 Birch St"  
+            },  
+            {  
+            "Zip": "80202",  
+            "City": "Denver",  
+            "Street Address": "505 Walnut St"  
+            },  
+            {  
+            "Zip": "98101",  
+            "City": "Seattle",  
+            "Street Address": "606 Spruce St"  
+            },  
+            {  
+            "Zip": "85001",  
+            "City": "Phoenix",  
+            "Street Address": "707 Palm St"  
+            }  
+        ]  
+        }  
+        ```
+
+2. Apply the AI response and get the result.
+
+    === "Screenshot"
+        ![Table Result](./img/ai_workflow_generate_table_result.png){width="546px"}
+    === "Transcribe"
+        | Flow  | Type  | Object        | Action              | ParamName | ParamType | ParamValue |
+        | ----- | ------| ------------- | ------------------- | --------- | --------- | ---------- |
+        | Map   | Rows  | TBD           |                     |           |           |            |
+        |       | Zip   | City          | Street Address      |           |           |            |
+        |       | 10001 | New York      | 123 Main St         |           |           |            |
+        |       | 20001 | Washington    | 456 Elm St          |           |           |            |
+        |       | 30301 | Atlanta       | 789 Pine St         |           |           |            |
+        |       | 60601 | Chicago       | 101 Maple St        |           |           |            |
+        |       | 70112 | New Orleans   | 202 Oak St          |           |           |            |
+        |       | 94105 | San Francisco | 303 Cedar St        |           |           |            |
+        |       | 33101 | Miami         | 404 Birch St        |           |           |            |
+        |       | 80202 | Denver        | 505 Walnut St       |           |           |            |
+        |       | 98101 | Seattle       | 606 Spruce St       |           |           |            |
+        |       | 85001 | Phoenix       | 707 Palm St         |           |           |            |
+        | End   |       |               |                     |           |           |            |
+
+#### Generate More Rows
+
+Use to generate mode data for existing table.
+
+1. Select a row in existing RVL table.
+
+    === "Screenshot"
+        ![Select Row](./img/ai_workflow_generate_more_select.png){width="564px"}
+    === "Transcribe"
+        | Flow  | Type  | Object        | Action              | ParamName | ParamType | ParamValue |
+        | ----- | ------| ------------- | ------------------- | --------- | --------- | ---------- |
+        | Map   | Rows  | TBD           |                     |           |           |            |
+        |       | Zip   | City          | Street Address      |           |           |            |
+        |       | 10001 | New York      | 123 Main St         |           |           |            |
+        |       | 20001 | Washington    | 456 Elm St          |           |           |            |
+        |       | 30301 | Atlanta       | 789 Pine St         |           |           |            |
+        |       | 60601 | Chicago       | 101 Maple St        |           |           |            |
+        |       | 70112 | New Orleans   | 202 Oak St          |           |           |            |
+        |       | 94105 | San Francisco | 303 Cedar St        |           |           |            |
+        |       | 33101 | Miami         | 404 Birch St        |           |           |            |
+        |       | 80202 | Denver        | 505 Walnut St       |           |           |            |
+        |       | 98101 | Seattle       | 606 Spruce St       |           |           |            |
+        |       | 85001 | Phoenix       | 707 Palm St         |           |           |            |
+        | End   |       |               |                     |           |           |            |    
+
+2. In AI Dashboard create a Generate More Rows chat and send a prompt to AI. E.g. `Generate 10 more records with cities from countries other than USA`.
+
+    === "Screenshot"
+        ![Generate Rows](./img/ai_workflow_generate_more_prompt.png){width="1101px"}
+    === "Transcribe"
+        **USER**: Generate 10 more records with cities from countries other than USA
+
+        **AI**: 
+        ```json
+        {  
+        "data": [  
+            {  
+            "Zip": "10115",  
+            "City": "Berlin",  
+            "Street Address": "Friedrichstraße 123"  
+            },  
+            {  
+            "Zip": "M5A 1A1",  
+            "City": "Toronto",  
+            "Street Address": "Queen St E 456"  
+            },  
+            {  
+            "Zip": "SW1A 1AA",  
+            "City": "London",  
+            "Street Address": "Buckingham Palace Road 1"  
+            },  
+            {  
+            "Zip": "1000",  
+            "City": "Brussels",  
+            "Street Address": "Rue de la Loi 10"  
+            },  
+            {  
+            "Zip": "1010",  
+            "City": "Vienna",  
+            "Street Address": "Karntnerring 5"  
+            },  
+            {  
+            "Zip": "1100",  
+            "City": "Athens",  
+            "Street Address": "Syntagma Square 2"  
+            },  
+            {  
+            "Zip": "75001",  
+            "City": "Paris",  
+            "Street Address": "Rue de Rivoli 20"  
+            },  
+            {  
+            "Zip": "2000",  
+            "City": "Copenhagen",  
+            "Street Address": "Købmagergade 30"  
+            },  
+            {  
+            "Zip": "1010",  
+            "City": "Amsterdam",  
+            "Street Address": "Damstraat 1"  
+            },  
+            {  
+            "Zip": "1010",  
+            "City": "Madrid",  
+            "Street Address": "Gran Vía 45"  
+            }  
+        ]  
+        }  
+        ```    
+
+3. Apply generated values and get the result.
+
+    === "Screenshot"
+        ![Rows Result](./img/ai_workflow_generate_more_result.png){width="565px"}
+    === "Transcribe"
+        | Flow  | Type     | Object        | Action              | ParamName | ParamType | ParamValue |
+        | ----- | -------- | ------------- | ------------------- | --------- | --------- | ---------- |
+        | Map   | Rows     | TBD           |                     |           |           |            |
+        |       | Zip      | City          | Street Address      |           |           |            |
+        |       | 10001    | New York      | 123 Main St         |           |           |            |
+        |       | 20001    | Washington    | 456 Elm St          |           |           |            |
+        |       | 30301    | Atlanta       | 789 Pine St         |           |           |            |
+        |       | 60601    | Chicago       | 101 Maple St        |           |           |            |
+        |       | 70112    | New Orleans   | 202 Oak St          |           |           |            |
+        |       | 94105    | San Francisco | 303 Cedar St        |           |           |            |
+        |       | 33101    | Miami         | 404 Birch St        |           |           |            |
+        |       | 80202    | Denver        | 505 Walnut St       |           |           |            |
+        |       | 98101    | Seattle       | 606 Spruce St       |           |           |            |
+        |       | 85001    | Phoenix       | 707 Palm St         |           |           |            |
+        |       | 10115    | Berlin        | Friedrichstraße 123 |           |           |            |
+        |       | M5A 1A1  | Toronto       | Queen St E 456      |           |           |            |
+        |       | SW1A 1AA | London        | Buckingham Palace R |           |           |            |
+        |       | 1000     | Brussels      | Rue de la Loi 10    |           |           |            |
+        |       | 1010     | Vienna        | Karntnerring 5      |           |           |            |
+        |       | 1100     | Athens        | Syntagma Square 2   |           |           |            |
+        |       | 75001    | Paris         | Rue de Rivoli 20    |           |           |            |
+        |       | 2000     | Copenhagen    | Købmagergade 30     |           |           |            |
+        |       | 1010     | Amsterdam     | Damstraat 1         |           |           |            |
+        |       | 1010     | Madrid        | Gran Vía 45         |           |           |            |
+        | End   |          |               |                     |           |           |            |
+
+#### Test Scenario from Text
+
+Generates a sequence of AI Commands from a text prompt. 
+
+1. Provide a high level description of a scenario you want to implement. E.g.: `Generate an end-to-end scenario to create and delete a book in a web based Library Information System`. A step-by-step scenario will be generated.
+
+    === "Screenshot"
+        ![Scenario from Text](./img/ai_workflow_ai_scenario_from_text.png){width="1102px"}
+    === "Transcribe"
+        **USER**: Generate an end-to-end scenario to create and delete a book in a web based Library Information System  
+
+        **AI**:
+        ```markdown
+        1. Open the web browser and navigate to the Library Information System URL {library_url}.  
+        2. Click on the "Login" button.  
+        3. Enter the username {username} in the username field.  
+        4. Enter the password {password} in the password field.  
+        5. Click on the "Submit" button to log in.  
+        6. Once logged in, navigate to the "Books" section of the system.  
+        7. Click on the "Add New Book" button.  
+        8. Fill in the book title {book_title} in the title field.  
+        9. Fill in the author name {author_name} in the author field.  
+        10. Fill in the ISBN number {isbn_number} in the ISBN field.  
+        11. Select the genre {genre} from the dropdown menu.  
+        12. Click on the "Save" button to create the book entry.  
+        13. Verify that the book {book_title} appears in the list of books.  
+        14. Locate the newly created book {book_title} in the list.  
+        15. Click on the "Delete" button next to the book {book_title}.  
+        16. Confirm the deletion in the pop-up dialog.  
+        17. Verify that the book {book_title} no longer appears in the list of books.  
+        18. Log out of the Library Information System.
+        ```                   
+
+2. Select an RVL sheet for insertion, return back to AI Dashboard and click Apply icon. A sequence of AI commands will be inserted into the RVL sheet.
+
+    === "Screenshot"
+        ![Scenario from Text Result](./img/ai_workflow_ai_scenario_from_text_result.png){width="970px"}
+    === "Transcribe"
+        | Flow | Type  | Object | Action                                                                    | ParamName   | ParamType | ParamValue  |
+        | ---- | ----- | ------ | ------------------------------------------------------------------------- | ----------- | --------- | ----------- |
+        |      | AI    |        | Open the web browser and navigate to the Library Information System URL   |             |           |             |
+        |      | Param |        |                                                                           | library_url | string    | library_url |
+        |      | AI    |        | Click on the "Login" button.                                              |             |           |             |
+        |      | AI    |        | Enter the username {username} in the username field.                      |             |           |             |
+        |      | Param |        |                                                                           | username    | string    | username    |
+        |      | AI    |        | Enter the password {password} in the password field.                      |             |           |             |
+        |      | Param |        |                                                                           | password    | string    | password    |
+        |      | AI    |        | Click on the "Submit" button to log in.                                   |             |           |             |
+        |      | AI    |        | Once logged in, navigate to the "Books" section of the system.            |             |           |             |
+        |      | AI    |        | Click on the "Add New Book" button.                                       |             |           |             |
+        |      | AI    |        | Fill in the book title {book_title} in the title field.                   |             |           |             |
+        |      | Param |        |                                                                           | book_title  | string    | book_title  |
+        |      | AI    |        | Fill in the author name {author_name} in the author field.                |             |           |             |
+        |      | Param |        |                                                                           | author_name | string    | author_name |
+        |      | AI    |        | Fill in the ISBN number {isbn_number} in the ISBN field.                  |             |           |             |
+        |      | Param |        |                                                                           | isbn_number | string    | isbn_number |
+        |      | AI    |        | Select the genre {genre} from the dropdown menu.                          |             |           |             |
+        |      | Param |        |                                                                           | genre       | string    | genre       |
+        |      | AI    |        | Click on the "Save" button to create the book entry.                      |             |           |             |
+        |      | AI    |        | Verify that the book {book_title} appears in the list of books.           |             |           |             |
+        |      | Param |        |                                                                           | book_title  | string    | book_title  |
+        |      | AI    |        | Locate the newly created book {book_title} in the list.                   |             |           |             |
+        |      | Param |        |                                                                           | book_title  | string    | book_title  |
+        |      | AI    |        | Click on the "Delete" button next to the book {book_title}.               |             |           |             |
+        |      | Param |        |                                                                           | book_title  | string    | book_title  |
+        |      | AI    |        | Confirm the deletion in the pop-up dialog.                                |             |           |             |
+        |      | AI    |        | Verify that the book {book_title} no longer appears in the list of books. |             |           |             |
+        |      | Param |        |                                                                           | book_title  | string    | book_title  |
+        |      | AI    |        | Log out of the Library Information System.                                |             |           |             |
+
+
+#### Test Scenario from Image
+
+Generates a sequence of AI Commands given an image and a text prompt.
+
+1. In AUT reach the screen/page you want to use.
+
+    === "Screenshot"
+        ![Scenario from Image - AUT](./img/ai_workflow_ai_scenario_from_image_form.png){width="600px"}
+    === "Transcribe"
+        **Library Information System**  
+        Logged in as Librarian, **Logout**
+
+        ---
+
+        **Create New Book**
+
+        **Name**  
+        _Enter book name_ (text input)
+
+        **Author**  
+        _A.A. Milne_ (dropdown selection)
+
+        **Genre**  
+        _Adventure_ (dropdown selection)
+
+        **Out of Print**  
+        [ ] (checkbox)
+
+        _10/07/2020_ (date picker)
+
+        [Save Book] (button)
+  
+
+2. In AI Dashboard create Test Scenario from Image chat and supply the image and a text prompt. E.g.: `Fill the form`.
+
+    === "Screenshot"
+        ![Scenario from Image - Prompt](./img/ai_workflow_ai_scenario_from_image_prompt.png){width="1242px"}
+    === "Transcribe"
+        **USER**: Fill the form (screenshot of the form is attached)
+
+        **AI**:
+        ```markdown  
+        1. Enter {book_name} in the "Name" field.  
+        2. Select {author_name} from the "Author" dropdown.  
+        3. Select {genre} from the "Genre" dropdown.  
+        4. Check the "Out of Print" checkbox if {out_of_print} is true.  
+        5. Enter {date} in the date field.  
+        6. Click the "Save Book" button. 
+        ``` 
+
+3. Select an RVL sheet for insertion, return back to AI Dashboard and click Apply icon. A sequence of AI commands will be inserted into the RVL sheet.
+
+    === "Screenshot"
+        ![Scenario from Image - Result](./img/ai_workflow_ai_scenario_from_image_result.png){width="986px"}
+    === "Transcribe"
+        | Flow | Type  | Object | Action                                                       | ParamName    | ParamType | ParamValue   |
+        | ---- | ----- | ------ | ------------------------------------------------------------ | ------------ | --------- | ------------ |
+        |      | AI    |        | Enter {book_name} in the "Name" field.                       |              |           |              |
+        |      | Param |        |                                                              | book_name    | string    | book_name    |
+        |      | AI    |        | Select {author_name} from the "Author" dropdown.             |              |           |              |
+        |      | Param |        |                                                              | author_name  | string    | author_name  |
+        |      | AI    |        | Select {genre} from the "Genre" dropdown.                    |              |           |              |
+        |      | Param |        |                                                              | genre        | string    | genre        |
+        |      | AI    |        | Check the "Out of Print" checkbox if {out_of_print} is true. |              |           |              |
+        |      | Param |        |                                                              | out_of_print | string    | out_of_print |
+        |      | AI    |        | Enter {date} in the date field.                              |              |           |              |
+        |      | Param |        |                                                              | date         | string    | date         |
+        |      | AI    |        | Click the "Save Book" button.                                |              |           |              |
+
+### Snapshots
+
+On these page find starred chats. To add a chat to Snapshots find it in history and place mouse pointer over it's top right corner to reveal `...` icon:
+
+![Session Menu](./img/ai_dashboard_session_menu.png){width="249px"}
+
+Click the icon to expand the popup menu and choose `Snapshot`.
+
+![Make Snapshot](./img/ai_dashboard_session_make_snapshot.png){width="246px"}
+
+If you do not need a chat on the Snapshots page you may remove it.
+
+## AI Panel
+
+AI panel is used to work with AI Commands. 
+
+### How to Open
+
+To open the panel double click the line number of an AI Command or click `Show AI Panel` button that is displayed when you hover mouse over the corresponding cell.
+
+![AI Panel](./img/ai_panel_open.png){width="1133px"}
+
+It's also possible to work with multiple AI Commands at once, just select a range of commands and click `Show AI Panel`.
+
+![AI Panel Multiple Commands](./img/ai_panel_multiple_commands.png){width="1135px"}
+
+### Command Menu
+
+You can do a number of actions with each command.
+
+![Command Menu](./img/ai_panel_command_menu.png){width="179px"}
+
+- :fontawesome-inflectra-generate: - generate/regenerate code for the command.
+- <span class="nocolor">:heroicons-outline-play:</span> - run the code for this command.
+- <span class="nocolor">:heroicons-outline-document-duplicate:</span> - copy ID of the command to clipboard.
+- <span class="nocolor">:heroicons-outline-chat-bubble-left-right:</span> - open corresponding chat session in AI Dashboard.
+- <span class="nocolor">:heroicons-outline-hand-thumb-up:</span> - like the result of code generation. It will be used as an example in subsequent AI Command prompts.
+- <span class="nocolor">:heroicons-outline-hand-thumb-down:</span> - dislike result of code generation. It will be used as negative example in subsequent AI Command prompts.
+
+### Panel Menu
+
+The panel also has top level menu.
+
+![Top Level Menu](./img/ai_panel_menu.png){width="58px"}
+![More Menu Items](./img/ai_panel_menu_more_items.png){width="128px"}
+
+- :fontawesome-inflectra-generateall: - generate/regenerate code for all the commands opened in AI Panel.
+- <span class="nocolor">:heroicons-outline-forward:</span> - run all the commands opened in AI Panel one-by-one.
+- <span class="nocolor">:heroicons-outline-window:</span> - undock the panel.
+- <span class="nocolor">:heroicons-outline-arrow-right:</span> - dock the panel right.
+- <span class="nocolor">:heroicons-outline-arrow-down:</span> - dock the panel bottom .
+- <span class="nocolor">:heroicons-outline-eye-slash:</span> - hide the panel.
+- <span class="nocolor">:heroicons-outline-arrow-uturn-up:</span> - open Workflow selection page.

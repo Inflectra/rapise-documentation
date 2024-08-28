@@ -25,6 +25,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - material/.icons 
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -66,8 +69,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: 'https://github.com/inflectra'
-    - icon: fontawesome/brands/twitter
-      link: 'https://twitter.com/inflectra'
+    - icon: fontawesome/brands/x-twitter
+      link: 'https://x.com/inflectra'
     - icon: fontawesome/solid/link
       link: 'https://www.linkedin.com/company/inflectra-corporation/'
 
@@ -384,6 +387,7 @@ nav:
         #domsap
 - 'Manuals':
     - 'Rapise Installation Guide': 'Manuals/Rapise_Installation_Guide.md'
+    - 'AI in Rapise': 'Guide/ai_dashboard.md'
     - 'Spira Dashboard': 'Guide/spira_dashboard_2.md'
     - 'SpiraTest Integration': 'Guide/spiratest_integration.md'    
     - 'Preparing for Web Testing': 'Guide/setting_up_selenium.md'

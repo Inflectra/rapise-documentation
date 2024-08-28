@@ -90,3 +90,7 @@
 .md-content {
   position: relative;
 }
+
+span.nocolor svg {
+  fill: none !important; 
+}
