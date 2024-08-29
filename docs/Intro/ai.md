@@ -17,6 +17,11 @@ Rapise 8.2 harnesses the power of Generative AI to streamline and optimize your 
 - Flexible AI integration: Customize and extend AI features to match your specific testing requirements.
 - Seamless collaboration: Bridge the gap between human testers and automation tools, fostering a more efficient and collaborative testing environment.
 
+## Read the Docs
+
+- [AI Dashboard](../Guide/ai_dashboard.md#ai-dashboard)
+- [AI Panel](../Guide/ai_dashboard.md#ai-panel)
+
 ## Video Tutorials
 
 Explore Rapise AI video tutorials to see these features in action and start revolutionizing your test automation process today.
