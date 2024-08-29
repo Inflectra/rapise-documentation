@@ -520,6 +520,10 @@ It’s also possible to work with multiple AI Commands simultaneously. Simply se
 
 ![AI Panel Multiple Commands](./img/ai_panel_multiple_commands.png){width="1135px"}
 
+There is also a toolbar button that shows all AI Commands on the active RVL sheet.
+
+![AI Panel Show All Commands](./img/ai_panel_open_from_toolbar.png){width="530px"}
+
 ### Command Menu
 
 You can perform various actions with each command.
