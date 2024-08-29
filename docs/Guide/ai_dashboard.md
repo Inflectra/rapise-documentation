@@ -1,5 +1,13 @@
 # AI in Rapise
 
+## Overview
+
+We have integrated AI capabilities directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Moreover, the AI in Rapise is well-versed with Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise and specialized responses. In its initial release, Rapise’s AI features include RVL and JavaScript code generation, as well as data generation functionalities. Rapise 8.2 supports OpenAI and Azure OpenAI models, including multimodal ones that can accept image input. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.
+
+A key feature of Rapise 8.2 is the AI Command, which translates human-readable test step descriptions into executable code using AI. Once the code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command.
+
+When using AI Commands, the recommended workflow for test creation is as follows: first, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository, and finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can review and edit. Once all commands are translated into code, the test case is ready for execution.
+
 Rapise provides two primary interfaces for interacting with AI:
 
 - The **[AI Dashboard](#ai-dashboard)** allows you to configure AI options, chat with the AI, and view your chat history.
