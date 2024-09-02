@@ -2,27 +2,71 @@
 
 In RVL, the `AI` action is used to trigger static AI code generation. The format of the AI command without parameters is:
 
-| Flow | Type | Object                                              | Action | ParamName | ParamType | ParamValue |
-| ---- | ---- | ---------------------------------------------------- | ------ | --------- | --------- | ---------- |
-|      | AI   | <td colspan=5>Command text explaining the command step</td> |        |           |           |            |
+<table>
+	<tr>
+		<th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td>AI</td>
+		<td colspan="5">Command text explaining the command step</td>
+	</tr>
+</table>
 
 Example:
 
 === "Screenshot"
     ![Login as librarian](img/AI_login_as_librarian.png)
 === "Transcript"
-    | Flow | Type | Object                                               | Action | ParamName | ParamType | ParamValue |
-    | ---- | ---- | ----------------------------------------------------- | ------ | --------- | --------- | ---------- |
-    |      | AI   | <td colspan=5>Login to the system as librarian/librarian</td> |        |           |           |            |
+    <table>
+        <tr>
+            <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>AI</td>
+            <td colspan="5">Login to the system as librarian/librarian</td>
+        </tr>
+    </table>
 
 Or together with parameters:
 
-| Flow | Type  | Object                                                  | Action | ParamName | ParamType | ParamValue |
-| ---- | ----- | ------------------------------------------------------- | ------ | --------- | --------- | ---------- |
-|      | AI    | <td colspan=5>Command text explaining the command step and using **{someParam1}**, **{someParam2}**, {**...**} etc</td> |        |           |           |            |
-|      | Param |                                                         |        | **someParam1**  | string    | ...  |
-|      | Param |                                                         |        | **someParam2**  | string    | ...  |
-|      | Param |                                                         |        | **...**         | string    | ...  |
+<table>
+	<tr>
+		<th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td>AI</td><td colspan="5">Command text explaining the command step and using <strong>{someParam1}</strong>, <strong>{someParam2}</strong>, {<strong>...</strong>} etc</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Param</td>
+		<td></td>
+		<td></td>
+		<td><strong>someParam1</strong></td>
+		<td>string</td>
+		<td>...</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Param</td>
+		<td></td>
+		<td></td>
+		<td><strong>someParam2</strong></td>
+		<td>string</td>
+		<td>...</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Param</td>
+		<td></td>
+		<td></td>
+		<td><strong>...</strong></td>
+		<td>string</td>
+		<td>...</td>
+	</tr>
+</table>
 
 i.e. if you want to pass some parameter, you need to mention it in the AI command in curly braces, i.e. **{param1}** and then have a parameter with the same name without curly braces - **param1**.
 
@@ -33,11 +77,33 @@ Example:
 === "Screenshot"
     ![Login with params](img/AI_login_as_librarian_params.png)
 === "Transcript"
-    | Flow | Type  | Object                                                  | Action | ParamName | ParamType | ParamValue |
-    | ---- | ----- | ------------------------------------------------------- | ------ | --------- | --------- | ---------- |
-    |      | AI    | <td colspan=5>Login to the system as {username}/{password}</td> |        |           |           |            |
-    |      | Param |                                                         |        | username  | string    | librarian  |
-    |      | Param |                                                         |        | password  | string    | librarian  |
+    <table>
+        <tr>
+            <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>AI</td><td colspan="5">Login to the system as {username}/{password}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Param</td>
+            <td></td>
+            <td></td>
+            <td>username</td>
+            <td>string</td>
+            <td>librarian</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Param</td>
+            <td></td>
+            <td></td>
+            <td>password</td>
+            <td>string</td>
+            <td>librarian</td>
+        </tr>
+    </table>
 
 ## Editing and Multiline Commands
 
