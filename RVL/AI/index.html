@@ -11480,112 +11480,71 @@
                 <h1 id="ai">AI<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
 <p>In RVL, the <code>AI</code> action is used to trigger static AI code generation. The format of the AI command without parameters is:</p>
 <table>
-<thead>
-<tr>
-<th>Flow</th>
-<th>Type</th>
-<th>Object</th>
-<th>Action</th>
-<th>ParamName</th>
-<th>ParamType</th>
-<th>ParamValue</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>AI</td>
-<td><td colspan=5>Command text explaining the command step</td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+    <tr>
+        <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AI</td>
+        <td colspan="5">Command text explaining the command step</td>
+    </tr>
 </table>
+
 <p>Example:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Login as librarian" src="../img/AI_login_as_librarian.png" /></p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Transcript</label><div class="tabbed-content">
-<table>
-<thead>
-<tr>
-<th>Flow</th>
-<th>Type</th>
-<th>Object</th>
-<th>Action</th>
-<th>ParamName</th>
-<th>ParamType</th>
-<th>ParamValue</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>AI</td>
-<td><td colspan=5>Login to the system as librarian/librarian</td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><table>
+    <tr>
+        <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AI</td>
+        <td colspan="5">Login to the system as librarian/librarian</td>
+    </tr>
+</table></p>
 </div>
 </div>
 <p>Or together with parameters:</p>
 <table>
-<thead>
-<tr>
-<th>Flow</th>
-<th>Type</th>
-<th>Object</th>
-<th>Action</th>
-<th>ParamName</th>
-<th>ParamType</th>
-<th>ParamValue</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>AI</td>
-<td><td colspan=5>Command text explaining the command step and using <strong>{someParam1}</strong>, <strong>{someParam2}</strong>, {<strong>...</strong>} etc</td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Param</td>
-<td></td>
-<td></td>
-<td><strong>someParam1</strong></td>
-<td>string</td>
-<td>...</td>
-</tr>
-<tr>
-<td></td>
-<td>Param</td>
-<td></td>
-<td></td>
-<td><strong>someParam2</strong></td>
-<td>string</td>
-<td>...</td>
-</tr>
-<tr>
-<td></td>
-<td>Param</td>
-<td></td>
-<td></td>
-<td><strong>...</strong></td>
-<td>string</td>
-<td>...</td>
-</tr>
-</tbody>
+    <tr>
+        <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AI</td><td colspan="5">Command text explaining the command step and using <strong>{someParam1}</strong>, <strong>{someParam2}</strong>, {<strong>...</strong>} etc</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Param</td>
+        <td></td>
+        <td></td>
+        <td><strong>someParam1</strong></td>
+        <td>string</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Param</td>
+        <td></td>
+        <td></td>
+        <td><strong>someParam2</strong></td>
+        <td>string</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Param</td>
+        <td></td>
+        <td></td>
+        <td><strong>...</strong></td>
+        <td>string</td>
+        <td>...</td>
+    </tr>
 </table>
+
 <p>i.e. if you want to pass some parameter, you need to mention it in the AI command in curly braces, i.e. <strong>{param1}</strong> and then have a parameter with the same name without curly braces - <strong>param1</strong>.</p>
 <p>AI command parameters represent dynamic values that may vary during the execution. So the generated code stays intact while values may be different.</p>
 <p>Example:</p>
@@ -11593,48 +11552,33 @@
 <p><img alt="Login with params" src="../img/AI_login_as_librarian_params.png" /></p>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Transcript</label><div class="tabbed-content">
-<table>
-<thead>
-<tr>
-<th>Flow</th>
-<th>Type</th>
-<th>Object</th>
-<th>Action</th>
-<th>ParamName</th>
-<th>ParamType</th>
-<th>ParamValue</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>AI</td>
-<td><td colspan=5>Login to the system as {username}/{password}</td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Param</td>
-<td></td>
-<td></td>
-<td>username</td>
-<td>string</td>
-<td>librarian</td>
-</tr>
-<tr>
-<td></td>
-<td>Param</td>
-<td></td>
-<td></td>
-<td>password</td>
-<td>string</td>
-<td>librarian</td>
-</tr>
-</tbody>
-</table>
+<p><table>
+    <tr>
+        <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AI</td><td colspan="5">Login to the system as {username}/{password}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Param</td>
+        <td></td>
+        <td></td>
+        <td>username</td>
+        <td>string</td>
+        <td>librarian</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Param</td>
+        <td></td>
+        <td></td>
+        <td>password</td>
+        <td>string</td>
+        <td>librarian</td>
+    </tr>
+</table></p>
 </div>
 </div>
 <h2 id="editing-and-multiline-commands">Editing and Multiline Commands<a class="headerlink" href="#editing-and-multiline-commands" title="Permanent link">&para;</a></h2>
