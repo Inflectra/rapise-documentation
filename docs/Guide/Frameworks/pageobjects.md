@@ -148,3 +148,19 @@ In RVL mode you do [recording](/Guide/rvl_editor#features) just like you do for 
 When incorporating a Web Service (`.soap` or `.rest`) into your Page Object, it is advisable to use JavaScript instead of RVL (Rapise Visual Language) for creating the Page Object.
 
 When [generating](/Guide/rest_definition_editor#script-steps) a recorded script, it will be placed in the Page Object's `Main.js` file, which is not executed. Therefore, you will need to manually copy the generated script from `Main.js` and paste it into the appropriate action within the `<PageObjectName>.js` file.
+
+## Importing Page Objects
+
+In Rapise, you can import pre-built Page Objects from other frameworks.
+
+![Import PO](./img/import_page_object.png){width="364px"}
+
+Additionally, the Rapise team has created a collection of Page Objects that you can download and use.
+
+[Useful Page Objects](https://github.com/Inflectra/rapise-powerpack/tree/master/FWUsefulPageObjects)
+
+Starting with Rapise version 8.2 and later, importing any of these Useful Page Objects is just a few clicks away.
+
+![Import UPO](./img/import_useful_page_object.png){width="788px"}
+
+If you already have one of these Useful Page Objects installed and attempt to install it again, Rapise will check the version and, if a newer one is available on GitHub, it will offer you the option to upgrade.
