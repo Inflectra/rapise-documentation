@@ -96,6 +96,7 @@ But if we have a variable for that, it would try to use it when generating code.
 Repository objects play a critical role in contextualizing AI actions within the testing framework. They serve as references to UI elements, enabling the AI-generated commands to interact appropriately with these elements.
 
 There are three ways of having repository objects in the test:
+
 1. Use objects belonging to the test case.
 2. Explicitly include objects using the [Repository](./Repository.md) command.
 
@@ -195,6 +196,9 @@ Once we have this example, the generation for other cases also changes. I.e.:
 
 ![Other Cases](img/AI_other_cases_check.png)
 
+!!! note
+    Rapise looks for AIExamples.txt file in two folders: %WORKDIR%/AI and %WORKDIR%/Shared. If both files exist then information from both of them is used.
+
 ### Shared Instructions
 
 Shared instructions streamline the AI code generation process by providing general guidelines and frameworks that apply across multiple test cases. These instructions ensure consistency and standardization in the AI-generated code.
@@ -222,6 +226,9 @@ In this example, we may see that it is clever enough to do clear only before the
 
 ![Clear](img/AI_clear2.png)
 
+!!! note
+    Rapise looks for AIPrompt.txt file in two folders: %WORKDIR%/AI and %WORKDIR%/Shared. If both files exist then information from both of them is used.
+
 ## Naming
 
 Now, with AI, naming of objects, actions, and methods as well as descriptive comments become even more important. The better you express your application and API, the better AI may combine it to implement the test. It all together helps to improve both the quality of test cases and the integrity of the testing framework.
@@ -233,3 +240,8 @@ When working with AI-generated commands, it is crucial to be mindful of token co
 In Rapise, the whole approach is intended to save cost while maximizing efficiency. Rapise provides AI with well-defined objects and page objects, and AI uses them to generate the code. The generation is done while the test is created, and no AI access is required during runtime.
 
 The only exception is if you updated the AI command and didn't re-generate it—then the test will generate and save it to the cache before executing the command. But in most cases, executing the test does not spend any tokens.
+
+## See Also
+
+- [AI Dashboard](../Guide/ai_dashboard.md#ai-dashboard)
+- [AI Panel](../Guide/ai_dashboard.md#ai-panel)

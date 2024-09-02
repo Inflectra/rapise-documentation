@@ -19,6 +19,7 @@ Rapise 8.2 harnesses the power of Generative AI to streamline and optimize your 
 
 ## Read the Docs
 
+- [AI Command](../RVL/AI.md)
 - [AI Dashboard](../Guide/ai_dashboard.md#ai-dashboard)
 - [AI Panel](../Guide/ai_dashboard.md#ai-panel)
 

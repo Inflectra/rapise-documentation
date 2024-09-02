@@ -4,9 +4,9 @@
 
 We have integrated AI capabilities directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Moreover, the AI in Rapise is well-versed with Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise and specialized responses. In its initial release, Rapise’s AI features include RVL and JavaScript code generation, as well as data generation functionalities. Rapise 8.2 supports OpenAI and Azure OpenAI models, including multimodal ones that can accept image input. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.
 
-A key feature of Rapise 8.2 is the AI Command, which translates human-readable test step descriptions into executable code using AI. Once the code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command.
+A key feature of Rapise 8.2 is the [AI Command](../RVL/AI.md), which translates human-readable test step descriptions into executable code using AI. Once the code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command.
 
-When using AI Commands, the recommended workflow for test creation is as follows: first, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository, and finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can review and edit. Once all commands are translated into code, the test case is ready for execution.
+When using [AI Commands](../RVL/AI.md), the recommended workflow for test creation is as follows: first, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository, and finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can review and edit. Once all commands are translated into code, the test case is ready for execution.
 
 Rapise provides two primary interfaces for interacting with AI:
 
@@ -516,7 +516,7 @@ If you no longer need a chat on the Snapshots page, you can remove it.
 
 ## AI Panel
 
-AI panel is used to work with AI Commands. 
+AI panel is used to work with [AI Commands](../RVL/AI.md). 
 
 ### How to Open
 
@@ -542,8 +542,8 @@ You can perform various actions with each command.
 - <span class="nocolor">:heroicons-outline-play:</span> - run the code for this command.
 - <span class="nocolor">:heroicons-outline-document-duplicate:</span> - copy the command ID to the clipboard.
 - <span class="nocolor">:heroicons-outline-chat-bubble-left-right:</span> - open the corresponding chat session in the AI Dashboard.
-- <span class="nocolor">:heroicons-outline-hand-thumb-up:</span> - like the result of code generation. This will be used as a positive example in subsequent AI Command prompts.
-- <span class="nocolor">:heroicons-outline-hand-thumb-down:</span> - dislike the result of code generation. This will be used as a negative example in subsequent AI Command prompts.
+- <span class="nocolor">:heroicons-outline-hand-thumb-up:</span> - like the result of code generation. This will be used as a [positive example](../RVL/AI.md#tuning-with-positive-and-negative-examples) in subsequent AI Command prompts.
+- <span class="nocolor">:heroicons-outline-hand-thumb-down:</span> - dislike the result of code generation. This will be used as a [negative example](../RVL/AI.md#tuning-with-positive-and-negative-examples) in subsequent AI Command prompts.
 
 ### Panel Menu
 
@@ -571,4 +571,5 @@ When you work with AI in Rapise, it creates a set of folders in the root framewo
         - **sessions** - high-level information about AI chat sessions (name, ID, timestamp).
         - **options.json** - local [options](#settings) that override the global ones stored in `C:\ProgramData\Inflectra\Rapise\AI\options.json`. 
         - **screenshot.base64** - last screenshot taken in [Chats](#chats).
-
+        - **AIExamples.txt** - the list of liked/disliked [examples](../RVL/AI.md#tuning-with-positive-and-negative-examples) of generated code.
+        - **AIPrompt.txt** - [text to add to each AI prompt](../RVL/AI.md#shared-instructions) for AI Command processing.
