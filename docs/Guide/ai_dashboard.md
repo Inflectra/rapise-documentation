@@ -401,7 +401,7 @@ Generates a sequence of AI Commands based on a text prompt.
         <table>
           <thead>
             <tr>
-              <th>Flow</th>
+              <th style="min-width: 0 !important">Flow</th>
               <th>Type</th>
               <th>Object</th>
               <th>Action</th>
@@ -678,7 +678,7 @@ Generates a sequence of AI Commands from an image and a text prompt.
     === "Transcribe"
         <table>
           <tr>
-            <th>Flow</th>
+            <th style="min-width: 0 !important">Flow</th>
             <th>Type</th>
             <th>Object</th>
             <th>Action</th>
@@ -690,8 +690,6 @@ Generates a sequence of AI Commands from an image and a text prompt.
             <td></td>
             <td>AI</td>
             <td colspan="4">Enter {book_name} in the "Name" field.</td>
-            <td></td>
-            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -708,8 +706,6 @@ Generates a sequence of AI Commands from an image and a text prompt.
             <td>AI</td>
             <td colspan="4">Select {author_name} from the "Author" dropdown.</td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td></td>
@@ -724,8 +720,6 @@ Generates a sequence of AI Commands from an image and a text prompt.
             <td></td>
             <td>AI</td>
             <td colspan="4">Select {genre} from the "Genre" dropdown.</td>
-            <td></td>
-            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -742,8 +736,6 @@ Generates a sequence of AI Commands from an image and a text prompt.
             <td>AI</td>
             <td colspan="4">Check the "Out of Print" checkbox if {out_of_print} is true.</td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td></td>
@@ -759,8 +751,6 @@ Generates a sequence of AI Commands from an image and a text prompt.
             <td>AI</td>
             <td colspan="4">Enter {date} in the date field.</td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td></td>
@@ -775,8 +765,6 @@ Generates a sequence of AI Commands from an image and a text prompt.
             <td></td>
             <td>AI</td>
             <td colspan="4">Click the "Save Book" button.</td>
-            <td></td>
-            <td></td>
             <td></td>
           </tr>
         </table>
