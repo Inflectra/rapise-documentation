@@ -1,4 +1,5 @@
-pushd %~dp0
-cd tools
+pushd %~dp0\tools
 python mkdocsyml.py --filter "hide_site_name:" "prebuild_index: True"
+
+echo "#######done mkdocs.py"
 popd

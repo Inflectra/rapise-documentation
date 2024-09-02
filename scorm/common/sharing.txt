@@ -1,3 +1,5 @@
+
+
 Sharing your md:
 
 https://inflectra.github.io/liascript/course/?
@@ -6,6 +8,10 @@ I.e.:
 https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/common/codingQuiz/README.md#2
 
 
+
+https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/js_basic/README.md
+
+https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation/scorm/xpath_basic/README.md
 
 
 https://inflectra.github.io/liascript/course/?https://cdn.jsdelivr.net/gh/Inflectra/rapise-documentation@ab61b167/scorm/js_basic/README.md

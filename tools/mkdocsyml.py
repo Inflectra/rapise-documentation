@@ -55,3 +55,5 @@ def include_library(library, indent, output):
                 output.write(indent + l)
 
 main()
+
+print('Done saving output to: '+result_file)
