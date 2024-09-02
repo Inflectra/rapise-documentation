@@ -398,38 +398,228 @@ Generates a sequence of AI Commands based on a text prompt.
     === "Screenshot"
         ![Scenario from Text Result](./img/ai_workflow_ai_scenario_from_text_result.png){width="970px"}
     === "Transcribe"
-        | Flow | Type  | Object | Action                                                                    | ParamName   | ParamType | ParamValue  |
-        | ---- | ----- | ------ | ------------------------------------------------------------------------- | ----------- | --------- | ----------- |
-        |      | AI    |        | Open the web browser and navigate to the Library Information System URL   |             |           |             |
-        |      | Param |        |                                                                           | library_url | string    | library_url |
-        |      | AI    |        | Click on the "Login" button.                                              |             |           |             |
-        |      | AI    |        | Enter the username {username} in the username field.                      |             |           |             |
-        |      | Param |        |                                                                           | username    | string    | username    |
-        |      | AI    |        | Enter the password {password} in the password field.                      |             |           |             |
-        |      | Param |        |                                                                           | password    | string    | password    |
-        |      | AI    |        | Click on the "Submit" button to log in.                                   |             |           |             |
-        |      | AI    |        | Once logged in, navigate to the "Books" section of the system.            |             |           |             |
-        |      | AI    |        | Click on the "Add New Book" button.                                       |             |           |             |
-        |      | AI    |        | Fill in the book title {book_title} in the title field.                   |             |           |             |
-        |      | Param |        |                                                                           | book_title  | string    | book_title  |
-        |      | AI    |        | Fill in the author name {author_name} in the author field.                |             |           |             |
-        |      | Param |        |                                                                           | author_name | string    | author_name |
-        |      | AI    |        | Fill in the ISBN number {isbn_number} in the ISBN field.                  |             |           |             |
-        |      | Param |        |                                                                           | isbn_number | string    | isbn_number |
-        |      | AI    |        | Select the genre {genre} from the dropdown menu.                          |             |           |             |
-        |      | Param |        |                                                                           | genre       | string    | genre       |
-        |      | AI    |        | Click on the "Save" button to create the book entry.                      |             |           |             |
-        |      | AI    |        | Verify that the book {book_title} appears in the list of books.           |             |           |             |
-        |      | Param |        |                                                                           | book_title  | string    | book_title  |
-        |      | AI    |        | Locate the newly created book {book_title} in the list.                   |             |           |             |
-        |      | Param |        |                                                                           | book_title  | string    | book_title  |
-        |      | AI    |        | Click on the "Delete" button next to the book {book_title}.               |             |           |             |
-        |      | Param |        |                                                                           | book_title  | string    | book_title  |
-        |      | AI    |        | Confirm the deletion in the pop-up dialog.                                |             |           |             |
-        |      | AI    |        | Verify that the book {book_title} no longer appears in the list of books. |             |           |             |
-        |      | Param |        |                                                                           | book_title  | string    | book_title  |
-        |      | AI    |        | Log out of the Library Information System.                                |             |           |             |
-
+        <table>
+          <thead>
+            <tr>
+              <th>Flow</th>
+              <th>Type</th>
+              <th>Object</th>
+              <th>Action</th>
+              <th>ParamName</th>
+              <th>ParamType</th>
+              <th>ParamValue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Open the web browser and navigate to the Library Information System URL</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>library_url</td>
+              <td>string</td>
+              <td>library_url</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Click on the "Login" button.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Enter the username {username} in the username field.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>username</td>
+              <td>string</td>
+              <td>username</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Enter the password {password} in the password field.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>password</td>
+              <td>string</td>
+              <td>password</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Click on the "Submit" button to log in.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Once logged in, navigate to the "Books" section of the system.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Click on the "Add New Book" button.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Fill in the book title {book_title} in the title field.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>book_title</td>
+              <td>string</td>
+              <td>book_title</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Fill in the author name {author_name} in the author field.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>author_name</td>
+              <td>string</td>
+              <td>author_name</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Fill in the ISBN number {isbn_number} in the ISBN field.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>isbn_number</td>
+              <td>string</td>
+              <td>isbn_number</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Select the genre {genre} from the dropdown menu.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>genre</td>
+              <td>string</td>
+              <td>genre</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Click on the "Save" button to create the book entry.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Verify that the book {book_title} appears in the list of books.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>book_title</td>
+              <td>string</td>
+              <td>book_title</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Locate the newly created book {book_title} in the list.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>book_title</td>
+              <td>string</td>
+              <td>book_title</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Click on the "Delete" button next to the book {book_title}.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>book_title</td>
+              <td>string</td>
+              <td>book_title</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Confirm the deletion in the pop-up dialog.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Verify that the book {book_title} no longer appears in the list of books.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Param</td>
+              <td></td>
+              <td></td>
+              <td>book_title</td>
+              <td>string</td>
+              <td>book_title</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>AI</td>
+              <td colspan="4">Log out of the Library Information System.</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
 
 #### Test Scenario from Image
 
@@ -486,19 +676,111 @@ Generates a sequence of AI Commands from an image and a text prompt.
     === "Screenshot"
         ![Scenario from Image - Result](./img/ai_workflow_ai_scenario_from_image_result.png){width="986px"}
     === "Transcribe"
-        | Flow | Type  | Object | Action                                                       | ParamName    | ParamType | ParamValue   |
-        | ---- | ----- | ------ | ------------------------------------------------------------ | ------------ | --------- | ------------ |
-        |      | AI    |        | Enter {book_name} in the "Name" field.                       |              |           |              |
-        |      | Param |        |                                                              | book_name    | string    | book_name    |
-        |      | AI    |        | Select {author_name} from the "Author" dropdown.             |              |           |              |
-        |      | Param |        |                                                              | author_name  | string    | author_name  |
-        |      | AI    |        | Select {genre} from the "Genre" dropdown.                    |              |           |              |
-        |      | Param |        |                                                              | genre        | string    | genre        |
-        |      | AI    |        | Check the "Out of Print" checkbox if {out_of_print} is true. |              |           |              |
-        |      | Param |        |                                                              | out_of_print | string    | out_of_print |
-        |      | AI    |        | Enter {date} in the date field.                              |              |           |              |
-        |      | Param |        |                                                              | date         | string    | date         |
-        |      | AI    |        | Click the "Save Book" button.                                |              |           |              |
+        <table>
+          <tr>
+            <th>Flow</th>
+            <th>Type</th>
+            <th>Object</th>
+            <th>Action</th>
+            <th>ParamName</th>
+            <th>ParamType</th>
+            <th>ParamValue</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>AI</td>
+            <td colspan="4">Enter {book_name} in the "Name" field.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Param</td>
+            <td></td>
+            <td></td>
+            <td>book_name</td>
+            <td>string</td>
+            <td>book_name</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>AI</td>
+            <td colspan="4">Select {author_name} from the "Author" dropdown.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Param</td>
+            <td></td>
+            <td></td>
+            <td>author_name</td>
+            <td>string</td>
+            <td>author_name</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>AI</td>
+            <td colspan="4">Select {genre} from the "Genre" dropdown.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Param</td>
+            <td></td>
+            <td></td>
+            <td>genre</td>
+            <td>string</td>
+            <td>genre</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>AI</td>
+            <td colspan="4">Check the "Out of Print" checkbox if {out_of_print} is true.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Param</td>
+            <td></td>
+            <td></td>
+            <td>out_of_print</td>
+            <td>string</td>
+            <td>out_of_print</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>AI</td>
+            <td colspan="4">Enter {date} in the date field.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Param</td>
+            <td></td>
+            <td></td>
+            <td>date</td>
+            <td>string</td>
+            <td>date</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>AI</td>
+            <td colspan="4">Click the "Save Book" button.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
 
 ### Snapshots
 
