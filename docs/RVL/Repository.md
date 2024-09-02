@@ -1,10 +1,10 @@
 # Repository
 
-In RVL, the AI action is employed to trigger static AI code generation. It can be used on its own as shown below:
+In RVL, the Repository declaration is used to import objects from external repositories into the current RVL sheet:
 
 | Flow | Type       | Object   | Action | ParamName | ParamType | ParamValue |
 | ---- | ---------- | -------- | ------ | --------- | --------- | ---------- |
-|      | Repository | *prefix* | <td colspan=4>*path* |           |           |            |
+|      | Repository | *prefix*<td colspan=4>*path* |           |           |            |
 
 Here, **path** refers to the `Objects.js` file that contains the object definitions, and **prefix** is a string you can specify to be appended to each object's ID.
 
