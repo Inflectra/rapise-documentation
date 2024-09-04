@@ -4,6 +4,11 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ## Series
 
+### Season 2024
+
+- [Rapise 8.2](https://youtu.be/n7coxYI28dA)
+- [AI in Rapise(short videos, playlist)](https://www.youtube.com/playlist?list=PL1GncVUgF5nsm6OxusGnzY8iBE-nEp36C)
+
 ### Season 2023
 
 - [Rapise 8.1](https://youtu.be/xVN40UBCobo)
