@@ -6,6 +6,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Season 2024
 
+- [Harness AI to Simplify Test Automation](https://youtu.be/YiSu_iuST24)
 - [Rapise 8.2](https://youtu.be/n7coxYI28dA)
 - [AI in Rapise(short videos, playlist)](https://www.youtube.com/playlist?list=PL1GncVUgF5nsm6OxusGnzY8iBE-nEp36C)
 

@@ -388,3 +388,7 @@ The language reference covers EcmaScript v2 supported by default JScript Engine.
      <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56reconAlternationGrouping.htm" title="Alternation and Grouping">Alternation and Grouping</a></li>
      <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56reconBackreferences.htm" title="Backreferences">Backreferences</a></li>
   </ul>
+
+## See Also
+
+- [The Modern JavaScript Tutorial](https://javascript.info/)
