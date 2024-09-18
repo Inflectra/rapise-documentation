@@ -843,3 +843,17 @@ When you work with AI in Rapise, it creates a set of folders in the root framewo
         - **screenshot.base64** - last screenshot taken in [Chats](#chats).
         - **AIExamples.txt** - the list of liked/disliked [examples](../RVL/AI.md#tuning-with-positive-and-negative-examples) of generated code.
         - **AIPrompt.txt** - [text to add to each AI prompt](../RVL/AI.md#shared-instructions) for AI Command processing.
+
+!!! note
+    When you put a framework under source control it is important to add 
+
+      - `options.json`
+      - `AIExamples.txt`
+      - `AIPrompt.txt`
+      - `commands` folder with all the files in it.
+
+    The following folders are optional (this is just an archive of AI chats)
+    
+      - `messages`
+      - `sessions`
+  
