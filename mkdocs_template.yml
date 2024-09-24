@@ -55,6 +55,8 @@ theme:
   favicon: 'img/favicon.ico'
   logo: 'img/logo.svg'
   custom_dir: material
+  icon:
+    repo: 'logo'
 
 extra_css:
   - stylesheets/spira.css
