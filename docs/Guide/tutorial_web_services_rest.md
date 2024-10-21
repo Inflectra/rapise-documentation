@@ -338,7 +338,7 @@ To make the template test script more useful, we should make the following chang
 
 The complete updated test script looks like the following. We have highlighted the new/changed lines in yellow:
 
-```javascript m=1
+```javascript
 function Test(params)
 {
 	//First get the session
