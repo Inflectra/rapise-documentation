@@ -8210,6 +8210,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#computedstyle" class="md-nav__link">
+    ComputedStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#enabled" class="md-nav__link">
     Enabled
   </a>
@@ -8317,6 +8324,13 @@
           <li class="md-nav__item">
   <a href="#visible" class="md-nav__link">
     Visible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#width" class="md-nav__link">
+    Width
   </a>
   
 </li>
@@ -8489,6 +8503,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dolclick" class="md-nav__link">
+    DoLClick
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#domousemove" class="md-nav__link">
     DoMouseMove
   </a>
@@ -8496,8 +8517,29 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dorclick" class="md-nav__link">
+    DoRClick
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doremoveselection" class="md-nav__link">
+    DoRemoveSelection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doselect" class="md-nav__link">
     DoSelect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dosendkeys" class="md-nav__link">
+    DoSendKeys
   </a>
   
 </li>
@@ -11663,6 +11705,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#computedstyle" class="md-nav__link">
+    ComputedStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#enabled" class="md-nav__link">
     Enabled
   </a>
@@ -11770,6 +11819,13 @@
           <li class="md-nav__item">
   <a href="#visible" class="md-nav__link">
     Visible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#width" class="md-nav__link">
+    Width
   </a>
   
 </li>
@@ -11942,6 +11998,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dolclick" class="md-nav__link">
+    DoLClick
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#domousemove" class="md-nav__link">
     DoMouseMove
   </a>
@@ -11949,8 +12012,29 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dorclick" class="md-nav__link">
+    DoRClick
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doremoveselection" class="md-nav__link">
+    DoRemoveSelection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doselect" class="md-nav__link">
     DoSelect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dosendkeys" class="md-nav__link">
+    DoSendKeys
   </a>
   
 </li>
@@ -11990,7 +12074,7 @@
                 <h1 id="htmlobject">HTMLObject<a class="headerlink" href="#htmlobject" title="Permanent link">&para;</a></h1>
 <p>This object contains actions and properties for DOM elements of Web page.</p>
 <p>Extends <a href="../SeSSimulatedObject/">SeSSimulatedObject</a></p>
-<p><strong>Behavior Pattern: HTMLFirefoxBehavior</strong></p>
+<p><strong>Behavior Pattern: HTMLSeleniumBehavior</strong></p>
 <!-- ============================== property summary ========================== -->
 
 <h3 id="property-summary">Property Summary<a class="headerlink" href="#property-summary" title="Permanent link">&para;</a></h3>
@@ -12032,6 +12116,12 @@
 <td><a href="#clienty">ClientY</a></td>
 <td>Y-coordinate of the top left corner of the element relative to browser window.</td>
 <td>GetClientY</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#computedstyle">ComputedStyle</a></td>
+<td>Gets the value of a given CSS property of an element, after applying active stylesheets and resolving any basic computation this value may contain.</td>
+<td>GetComputedStyle</td>
 <td></td>
 </tr>
 <tr>
@@ -12122,12 +12212,18 @@
 <td><a href="#value">Value</a></td>
 <td>Value of the element.</td>
 <td>GetValue</td>
-<td></td>
+<td>SetValue</td>
 </tr>
 <tr>
 <td><a href="#visible">Visible</a></td>
 <td>Returns <code>true</code> if the element is visible on screen.</td>
 <td>GetVisible</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#width">Width</a></td>
+<td>Width of the element.</td>
+<td>GetWidth</td>
 <td></td>
 </tr>
 <tr>
@@ -12163,7 +12259,7 @@
 <tbody>
 <tr>
 <td><a href="#doaddselection">DoAddSelection</a></td>
-<td>Adds selection of specified option in multi-select element.</td>
+<td>Adds selection of the specified option in the multi-select element.</td>
 </tr>
 <tr>
 <td><a href="#doclick">DoClick</a></td>
@@ -12238,12 +12334,28 @@
 <td>Gets selected options text of a SELECT element.</td>
 </tr>
 <tr>
+<td><a href="#dolclick">DoLClick</a></td>
+<td>Directly invokes the click method on the HTML element.</td>
+</tr>
+<tr>
 <td><a href="#domousemove">DoMouseMove</a></td>
 <td>Moves mouse on HTML element with offset.</td>
 </tr>
 <tr>
+<td><a href="#dorclick">DoRClick</a></td>
+<td>Right-clicks on the HTML element.</td>
+</tr>
+<tr>
+<td><a href="#doremoveselection">DoRemoveSelection</a></td>
+<td>Deselects the specified option in the multi-select element.</td>
+</tr>
+<tr>
 <td><a href="#doselect">DoSelect</a></td>
-<td>Selects specified element in &lt;select&gt; control.</td>
+<td>Selects the specified element in &lt;select&gt; control.</td>
+</tr>
+<tr>
+<td><a href="#dosendkeys">DoSendKeys</a></td>
+<td>Keys to send.</td>
 </tr>
 <tr>
 <td><a href="#dosetcheck">DoSetCheck</a></td>
@@ -12292,6 +12404,30 @@
 <p>Type: number</p>
 <p>Accessors: GetClientY</p>
 <div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">GetClientY</span><span class="p">()</span>
+</code></pre></div>
+<p><a name="ComputedStyle"></a></p>
+<h4 id="computedstyle">ComputedStyle<a class="headerlink" href="#computedstyle" title="Permanent link">&para;</a></h4>
+<p>Gets the value of a given CSS property of an element, after applying active stylesheets and resolving any basic computation this value may contain.</p>
+<p><strong>Getter Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>optFieldName</td>
+<td>string</td>
+<td>CSS property name.</td>
+</tr>
+</tbody>
+</table>
+<p>Type: string</p>
+<p>Accessors: GetComputedStyle</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">GetComputedStyle</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">optFieldName</span><span class="p">)</span>
 </code></pre></div>
 <p><a name="Enabled"></a></p>
 <h4 id="enabled">Enabled<a class="headerlink" href="#enabled" title="Permanent link">&para;</a></h4>
@@ -12397,8 +12533,10 @@
 <h4 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h4>
 <p>Value of the element.</p>
 <p>Type: string</p>
-<p>Accessors: GetValue</p>
+<p>Accessors: GetValue, SetValue</p>
 <div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">GetValue</span><span class="p">()</span>
+
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">SetValue</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span>
 </code></pre></div>
 <p><a name="Visible"></a></p>
 <h4 id="visible">Visible<a class="headerlink" href="#visible" title="Permanent link">&para;</a></h4>
@@ -12406,6 +12544,13 @@
 <p>Type: boolean</p>
 <p>Accessors: GetVisible</p>
 <div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">GetVisible</span><span class="p">()</span>
+</code></pre></div>
+<p><a name="Width"></a></p>
+<h4 id="width">Width<a class="headerlink" href="#width" title="Permanent link">&para;</a></h4>
+<p>Width of the element.</p>
+<p>Type: number</p>
+<p>Accessors: GetWidth</p>
+<div class="highlight"><pre><span></span><code><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">GetWidth</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="X"></a></p>
 <h4 id="x">X<a class="headerlink" href="#x" title="Permanent link">&para;</a></h4>
@@ -12433,7 +12578,7 @@
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="DoAddSelection"></a>    </p>
 <h4 id="doaddselection">DoAddSelection<a class="headerlink" href="#doaddselection" title="Permanent link">&para;</a></h4>
-<p>Adds selection of specified option in multi-select element.</p>
+<p>Adds selection of the specified option in the multi-select element.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoAddSelection</span><span class="p">(</span><span class="nx">optionText</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12449,7 +12594,7 @@
 <tr>
 <td>optionText</td>
 <td>string</td>
-<td>Element to select</td>
+<td>Element to add to selection</td>
 </tr>
 </tbody>
 </table>
@@ -12494,35 +12639,8 @@
 <p><a name="DoDblClick"></a>    </p>
 <h4 id="dodblclick">DoDblClick<a class="headerlink" href="#dodblclick" title="Permanent link">&para;</a></h4>
 <p>Double-Clicks on HTML element (button, link).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoDblClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">forceEvent</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoDblClick</span><span class="p">()</span>
 </code></pre></div>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>x</td>
-<td>number</td>
-<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional.</td>
-</tr>
-<tr>
-<td>y</td>
-<td>number</td>
-<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional.</td>
-</tr>
-<tr>
-<td>forceEvent</td>
-<td>boolean</td>
-<td>Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false".</td>
-</tr>
-</tbody>
-</table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
 <p><a name="see.also.htmlobject.dodblclick"></a></p>
@@ -12817,6 +12935,36 @@
 <p><strong>Returns:</strong></p>
 <p>boolean: String with option values separated by delim.</p>
 <p><a name="see.also.htmlobject.dogetselection"></a></p>
+<p><a name="DoLClick"></a>    </p>
+<h4 id="dolclick">DoLClick<a class="headerlink" href="#dolclick" title="Permanent link">&para;</a></h4>
+<p>Directly invokes the click method on the HTML element.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoLClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.dolclick"></a></p>
 <p><a name="DoMouseMove"></a>    </p>
 <h4 id="domousemove">DoMouseMove<a class="headerlink" href="#domousemove" title="Permanent link">&para;</a></h4>
 <p>Moves mouse on HTML element with offset.</p>
@@ -12847,9 +12995,42 @@
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
 <p><a name="see.also.htmlobject.domousemove"></a></p>
+<p><a name="DoRClick"></a>    </p>
+<h4 id="dorclick">DoRClick<a class="headerlink" href="#dorclick" title="Permanent link">&para;</a></h4>
+<p>Right-clicks on the HTML element.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoRClick</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.dorclick"></a></p>
+<p><a name="DoRemoveSelection"></a>    </p>
+<h4 id="doremoveselection">DoRemoveSelection<a class="headerlink" href="#doremoveselection" title="Permanent link">&para;</a></h4>
+<p>Deselects the specified option in the multi-select element.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoRemoveSelection</span><span class="p">(</span><span class="nx">optionText</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>optionText</td>
+<td>string</td>
+<td>Element to remove from selection</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: 'true' if successful, 'false' otherwise'</p>
+<p><a name="see.also.htmlobject.doremoveselection"></a></p>
 <p><a name="DoSelect"></a>    </p>
 <h4 id="doselect">DoSelect<a class="headerlink" href="#doselect" title="Permanent link">&para;</a></h4>
-<p>Selects specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.</p>
+<p>Selects the specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoSelect</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -12872,10 +13053,10 @@
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
 <p><a name="see.also.htmlobject.doselect"></a></p>
-<p><a name="DoSetCheck"></a>    </p>
-<h4 id="dosetcheck">DoSetCheck<a class="headerlink" href="#dosetcheck" title="Permanent link">&para;</a></h4>
-<p>Sets specified state of check box.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoSetCheck</span><span class="p">(</span><span class="nx">bcheck</span><span class="p">)</span>
+<p><a name="DoSendKeys"></a>    </p>
+<h4 id="dosendkeys">DoSendKeys<a class="headerlink" href="#dosendkeys" title="Permanent link">&para;</a></h4>
+<p>Keys to send. Supports patterns like in <a href="/Libraries/Global/#dosendkeys">Global.DoSendKeys</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoSendKeys</span><span class="p">(</span><span class="nx">txt</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -12888,7 +13069,30 @@
 </thead>
 <tbody>
 <tr>
-<td>bcheck</td>
+<td>txt</td>
+<td>string</td>
+<td>A sequence of keystrokes.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.htmlobject.dosendkeys"></a></p>
+<p><a name="DoSetCheck"></a>    </p>
+<h4 id="dosetcheck">DoSetCheck<a class="headerlink" href="#dosetcheck" title="Permanent link">&para;</a></h4>
+<p>Sets specified state of check box.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoSetCheck</span><span class="p">(</span><span class="nx">state</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>state</td>
 <td>boolean</td>
 <td>State to set</td>
 </tr>

@@ -11320,6 +11320,10 @@
                 <h1 id="sending-special-keys-to-the-current-application">Sending Special Keys to the Current Application<a class="headerlink" href="#sending-special-keys-to-the-current-application" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>You can use the <a href="/Libraries/Global/#DoSendKeys">Global.DoSendKeys</a> action to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. <code>Page Down</code>, or <code>CTRL + Key</code>). This article explains the way to do this.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For Web applications, use <a href="/Libraries/Navigator/#DoSendKeys">Navigator.DoSendKeys</a> and <a href="/Libraries/HTMLObject/#DoSendKeys">HTMLObject.DoSendKeys</a> which accept the same patterns listed below.</p>
+</div>
 <p><img alt="DoSendKeys Demo" src="../img/global_dosendkeys.gif" /></p>
 <h2 id="special-characters">Special Characters<a class="headerlink" href="#special-characters" title="Permanent link">&para;</a></h2>
 <p>To send special characters, you just use the list available in the Windows API <code>SendKeys.Send</code> function:</p>

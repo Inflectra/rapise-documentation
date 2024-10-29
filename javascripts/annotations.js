@@ -165,6 +165,24 @@ var annotations =
         ]
     },
     {
+        name: "htmlobject.dosendkeys",
+        refs: [
+            {
+                text: "Sending Special Keys to the current applications",
+                link: "/Guide/sending_special_keys_to_the_c/"
+            }
+        ]
+    },    
+    {
+        name: "navigator.dosendkeys",
+        refs: [
+            {
+                text: "Sending Special Keys to the current applications",
+                link: "/Guide/sending_special_keys_to_the_c/"
+            }
+        ]
+    },
+    {
         name: "global.doinvoketest",
         refs: [
             {
