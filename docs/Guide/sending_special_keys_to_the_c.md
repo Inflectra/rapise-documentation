@@ -4,6 +4,9 @@
 
 You can use the [Global.DoSendKeys](/Libraries/Global/#DoSendKeys) action to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. `Page Down`, or `CTRL + Key`). This article explains the way to do this.
 
+!!! important
+    For Web applications, use [Navigator.DoSendKeys](/Libraries/Navigator/#DoSendKeys) and [HTMLObject.DoSendKeys](/Libraries/HTMLObject/#DoSendKeys) which accept the same patterns listed below.
+
 ![DoSendKeys Demo](./img/global_dosendkeys.gif)
 
 ## Special Characters

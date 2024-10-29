@@ -10,7 +10,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 
 
 
-**Behavior Pattern: HTMLFirefoxBehavior**
+**Behavior Pattern: HTMLSeleniumBehavior**
 
 
 <!-- ============================== property summary ========================== -->
@@ -25,6 +25,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | [Class](#class) | Class of the element. | GetClass |  |
 | [ClientX](#clientx) | X-coordinate of the top left corner of the element relative to browser window. | GetClientX |  |
 | [ClientY](#clienty) | Y-coordinate of the top left corner of the element relative to browser window. | GetClientY |  |
+| [ComputedStyle](#computedstyle) | Gets the value of a given CSS property of an element, after applying active stylesheets and resolving any basic computation this value may contain. | GetComputedStyle |  |
 | [Enabled](#enabled) | 'Enabled' state of the element. | GetEnabled | SetEnabled |
 | [Height](#height) | Height of the element. | GetHeight |  |
 | [Href](#href) | HREF of the element. | GetHref |  |
@@ -39,8 +40,9 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | [Tag](#tag) | Tag of the element. | GetTag |  |
 | [Text](#text) | Text of the element with normalized spaces. | GetText |  |
 | [Title](#title) | Title of the element. | GetTitle |  |
-| [Value](#value) | Value of the element. | GetValue |  |
+| [Value](#value) | Value of the element. | GetValue | SetValue |
 | [Visible](#visible) | Returns `true` if the element is visible on screen. | GetVisible |  |
+| [Width](#width) | Width of the element. | GetWidth |  |
 | [X](#x) | X-coordinate of the top left corner of the element. | GetX |  |
 | [XPath](#xpath) | XPath of the element. | GetXPath |  |
 | [Y](#y) | Y-coordinate of the top left corner of the element. | GetY |  |
@@ -54,7 +56,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Action Summary
 |  **Action** | **Description** | 
 | ----------- | --------------- |
-|  [DoAddSelection](#doaddselection) | Adds selection of specified option in multi-select element. |
+|  [DoAddSelection](#doaddselection) | Adds selection of the specified option in the multi-select element. |
 |  [DoClick](#doclick) | Clicks on HTML element (button, link). |
 |  [DoDblClick](#dodblclick) | Double-Clicks on HTML element (button, link). |
 |  [DoDOMChildAt](#dodomchildat) | Returns n-th child (zero-based). |
@@ -73,8 +75,12 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |  [DoEnsureVisible](#doensurevisible) | Makes sure specified element is visible on the screen. |
 |  [DoGetRect](#dogetrect) | Finds screen rectangle for this object. |
 |  [DoGetSelection](#dogetselection) | Gets selected options text of a SELECT element. |
+|  [DoLClick](#dolclick) | Directly invokes the click method on the HTML element. |
 |  [DoMouseMove](#domousemove) | Moves mouse on HTML element with offset. |
-|  [DoSelect](#doselect) | Selects specified element in &lt;select&gt; control. |
+|  [DoRClick](#dorclick) | Right-clicks on the HTML element. |
+|  [DoRemoveSelection](#doremoveselection) | Deselects the specified option in the multi-select element. |
+|  [DoSelect](#doselect) | Selects the specified element in &lt;select&gt; control. |
+|  [DoSendKeys](#dosendkeys) | Keys to send. |
 |  [DoSetCheck](#dosetcheck) | Sets specified state of check box. |
 |  [DoSetText](#dosettext) | Sets text for input edit or textarea. |
 
@@ -166,6 +172,30 @@ Accessors: GetClientY
 
 ```javascript
 value = SeS('SomeHTMLObject').GetClientY()
+```
+
+
+<a name="ComputedStyle"></a>
+#### ComputedStyle
+
+Gets the value of a given CSS property of an element, after applying active stylesheets and resolving any basic computation this value may contain.
+
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |  
+| optFieldName | string | CSS property name. |
+
+
+
+
+Type: string
+
+
+Accessors: GetComputedStyle
+
+```javascript
+value = SeS('SomeHTMLObject').GetComputedStyle(/**string*/optFieldName)
 ```
 
 
@@ -419,10 +449,12 @@ Value of the element.
 Type: string
 
 
-Accessors: GetValue
+Accessors: GetValue, SetValue
 
 ```javascript
 value = SeS('SomeHTMLObject').GetValue()
+
+SeS('SomeHTMLObject').SetValue(value)
 ```
 
 
@@ -440,6 +472,23 @@ Accessors: GetVisible
 
 ```javascript
 value = SeS('SomeHTMLObject').GetVisible()
+```
+
+
+<a name="Width"></a>
+#### Width
+
+Width of the element.
+
+
+
+Type: number
+
+
+Accessors: GetWidth
+
+```javascript
+value = SeS('SomeHTMLObject').GetWidth()
 ```
 
 
@@ -503,7 +552,7 @@ value = SeS('SomeHTMLObject').GetY()
 <a name="DoAddSelection"></a>    
 #### DoAddSelection
 
-Adds selection of specified option in multi-select element.
+Adds selection of the specified option in the multi-select element.
 
 ```javascript
 SeS('SomeHTMLObject').DoAddSelection(optionText)
@@ -514,7 +563,7 @@ SeS('SomeHTMLObject').DoAddSelection(optionText)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| optionText | string |  Element to select |
+| optionText | string |  Element to add to selection |
 
 
 
@@ -562,17 +611,8 @@ boolean: 'true' if successful, 'false' otherwise'
 Double-Clicks on HTML element (button, link).
 
 ```javascript
-SeS('SomeHTMLObject').DoDblClick(x, y, forceEvent)
+SeS('SomeHTMLObject').DoDblClick()
 ```
-
-
-**Parameters:**
-
-|  **Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
-| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
-| forceEvent | boolean |  Pass 'true' to force browser event without actual mouse click<br>Optional, Default: "false". |
 
 
 
@@ -970,6 +1010,34 @@ boolean: String with option values separated by delim.
 
 <a name="see.also.htmlobject.dogetselection"></a>
 
+<a name="DoLClick"></a>    
+#### DoLClick
+
+Directly invokes the click method on the HTML element.
+
+```javascript
+SeS('SomeHTMLObject').DoLClick(x, y)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise'
+
+
+
+<a name="see.also.htmlobject.dolclick"></a>
+
 <a name="DoMouseMove"></a>    
 #### DoMouseMove
 
@@ -998,10 +1066,57 @@ boolean: 'true' if successful, 'false' otherwise'
 
 <a name="see.also.htmlobject.domousemove"></a>
 
+<a name="DoRClick"></a>    
+#### DoRClick
+
+Right-clicks on the HTML element.
+
+```javascript
+SeS('SomeHTMLObject').DoRClick()
+```
+
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise'
+
+
+
+<a name="see.also.htmlobject.dorclick"></a>
+
+<a name="DoRemoveSelection"></a>    
+#### DoRemoveSelection
+
+Deselects the specified option in the multi-select element.
+
+```javascript
+SeS('SomeHTMLObject').DoRemoveSelection(optionText)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| optionText | string |  Element to remove from selection |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise'
+
+
+
+<a name="see.also.htmlobject.doremoveselection"></a>
+
 <a name="DoSelect"></a>    
 #### DoSelect
 
-Selects specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.
+Selects the specified element in &lt;select&gt; control. Since Rapise 6.3 also supports OL and UL lists.
 
 ```javascript
 SeS('SomeHTMLObject').DoSelect(txt)
@@ -1025,13 +1140,13 @@ boolean: 'true' if successful, 'false' otherwise'
 
 <a name="see.also.htmlobject.doselect"></a>
 
-<a name="DoSetCheck"></a>    
-#### DoSetCheck
+<a name="DoSendKeys"></a>    
+#### DoSendKeys
 
-Sets specified state of check box.
+Keys to send. Supports patterns like in [Global.DoSendKeys](/Libraries/Global/#dosendkeys).
 
 ```javascript
-SeS('SomeHTMLObject').DoSetCheck(bcheck)
+SeS('SomeHTMLObject').DoSendKeys(txt)
 ```
 
 
@@ -1039,7 +1154,29 @@ SeS('SomeHTMLObject').DoSetCheck(bcheck)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| bcheck | boolean |  State to set |
+| txt | string |  A sequence of keystrokes. |
+
+
+
+
+
+<a name="see.also.htmlobject.dosendkeys"></a>
+
+<a name="DoSetCheck"></a>    
+#### DoSetCheck
+
+Sets specified state of check box.
+
+```javascript
+SeS('SomeHTMLObject').DoSetCheck(state)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| state | boolean |  State to set |
 
 
 
