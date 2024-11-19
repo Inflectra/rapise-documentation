@@ -22,7 +22,9 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 |  [Click](#click) | Clicks this element. |
 |  [ClickAt](#clickat) | Clicks this element at the specified location. |
 |  [ContextClick](#contextclick) | Opens context menu for this element. |
+|  [ContextClickAt](#contextclickat) | Opens context menu for this element. |
 |  [DoubleClick](#doubleclick) | Performs double click on this element. |
+|  [DoubleClickAt](#doubleclickat) | Performs double click on this element. |
 |  [FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
 |  [FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
 |  [FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
@@ -40,19 +42,23 @@ This is a JavaScript wrapper for RemoteWebElement of Selenium .NET library.For 
 |  [FindElementsByTagName](#findelementsbytagname) | Finds a list of elements that match the DOM Tag supplied. |
 |  [FindElementsByXPath](#findelementsbyxpath) | Finds a list of elements that match the XPath supplied. |
 |  [GetAttribute](#getattribute) | Gets the value of the specified attribute for this element. |
-|  [GetCoordinates](#getcoordinates) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
+|  [GetComputedAccessibleLabel](#getcomputedaccessiblelabel) | Gets the computed accessible label of this element. |
+|  [GetComputedAccessibleRole](#getcomputedaccessiblerole) | Gets the computed accessible role of this element. |
+|  [GetCoordinates](#getcoordinates) | Gets a `Point` object containing the coordinates of the upper-left corner of this element relative to the upper-left corner of the page. |
 |  [GetCssValue](#getcssvalue) | Gets the value of a CSS property of this element. |
 |  [GetDisplayed](#getdisplayed) | Gets a value indicating whether or not this element is displayed. |
+|  [GetDomAttribute](#getdomattribute) | Gets the value of a declared HTML attribute of this element. |
+|  [GetDomProperty](#getdomproperty) | Gets the value of a JavaScript property of this element. |
 |  [GetEnabled](#getenabled) | Gets a value indicating whether or not this element is enabled. |
 |  [GetHashCode](#gethashcode) | Method to get the hash code of the element. |
 |  [GetId](#getid) | Gets internal element id. |
-|  [GetLocation](#getlocation) | Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page. |
+|  [GetLocation](#getlocation) | Gets a `Point` object containing the coordinates of the upper-left corner of this element relative to the upper-left corner of the page. |
 |  [GetLocationOnScreenOnceScrolledIntoView](#getlocationonscreenoncescrolledintoview) | Gets the point where the element would be when scrolled into view. |
 |  [GetScreenshotIW](#getscreenshotiw) | Gets screenshot of the element. |
 |  [GetSelected](#getselected) | Gets a value indicating whether or not this element is selected. |
 |  [GetSize](#getsize) | Gets a 'Size' object containing the height and width of this element. |
 |  [GetTagName](#gettagname) | Gets the tag name of this element. |
-|  [GetText](#gettext) | Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed. |
+|  [GetText](#gettext) | Gets the innerText of this element, without any leading or trailing whitespace, and with other whitespace collapsed. |
 |  [SelectOptionByText](#selectoptionbytext) | Selects option from select element. |
 |  [SendKeys](#sendkeys) | Simulates typing text into the element. |
 |  [Submit](#submit) | Submits this element to the web server. |
@@ -110,8 +116,8 @@ WebDriver.FindElementById('username').ClickAt(x, y)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| x | number |   |
-| y | number |   |
+| x | number |  Horizontal offset from the top-left corner of the element. |
+| y | number |  Vertical offset from the top-left corner of the element. |
 
 
 
@@ -134,6 +140,29 @@ WebDriver.FindElementById('username').ContextClick()
 
 <a name="see.also.webelementwrapper.contextclick"></a>
 
+<a name="ContextClickAt"></a>    
+#### ContextClickAt
+
+Opens context menu for this element. Requires Rapise 8.3+.
+
+```javascript
+WebDriver.FindElementById('username').ContextClickAt(x, y)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |  Horizontal offset from the top-left corner of the element. |
+| y | number |  Vertical offset from the top-left corner of the element. |
+
+
+
+
+
+<a name="see.also.webelementwrapper.contextclickat"></a>
+
 <a name="DoubleClick"></a>    
 #### DoubleClick
 
@@ -148,6 +177,29 @@ WebDriver.FindElementById('username').DoubleClick()
 
 
 <a name="see.also.webelementwrapper.doubleclick"></a>
+
+<a name="DoubleClickAt"></a>    
+#### DoubleClickAt
+
+Performs double click on this element. Requires Rapise 8.3+.
+
+```javascript
+WebDriver.FindElementById('username').DoubleClickAt(x, y)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |  Horizontal offset from the top-left corner of the element. |
+| y | number |  Vertical offset from the top-left corner of the element. |
+
+
+
+
+
+<a name="see.also.webelementwrapper.doubleclickat"></a>
 
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName
@@ -595,7 +647,7 @@ WebDriver.FindElementById('username').GetAttribute(attributeName)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| attributeName |  |   |
+| attributeName | string |  Name of the element attribute. |
 
 
 
@@ -603,10 +655,40 @@ WebDriver.FindElementById('username').GetAttribute(attributeName)
 
 <a name="see.also.webelementwrapper.getattribute"></a>
 
+<a name="GetComputedAccessibleLabel"></a>    
+#### GetComputedAccessibleLabel
+
+Gets the computed accessible label of this element. Requires Rapise 8.3+.
+
+```javascript
+WebDriver.FindElementById('username').GetComputedAccessibleLabel()
+```
+
+
+
+
+
+<a name="see.also.webelementwrapper.getcomputedaccessiblelabel"></a>
+
+<a name="GetComputedAccessibleRole"></a>    
+#### GetComputedAccessibleRole
+
+Gets the computed accessible role of this element. Requires Rapise 8.3+.
+
+```javascript
+WebDriver.FindElementById('username').GetComputedAccessibleRole()
+```
+
+
+
+
+
+<a name="see.also.webelementwrapper.getcomputedaccessiblerole"></a>
+
 <a name="GetCoordinates"></a>    
 #### GetCoordinates
 
-Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page.
+Gets a `Point` object containing the coordinates of the upper-left corner of this element relative to the upper-left corner of the page.
 
 ```javascript
 WebDriver.FindElementById('username').GetCoordinates()
@@ -654,6 +736,50 @@ WebDriver.FindElementById('username').GetDisplayed()
 
 
 <a name="see.also.webelementwrapper.getdisplayed"></a>
+
+<a name="GetDomAttribute"></a>    
+#### GetDomAttribute
+
+Gets the value of a declared HTML attribute of this element. Requires Rapise 8.3+.
+
+```javascript
+WebDriver.FindElementById('username').GetDomAttribute(attributeName)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| attributeName | string |  Name of the declared element attribute. |
+
+
+
+
+
+<a name="see.also.webelementwrapper.getdomattribute"></a>
+
+<a name="GetDomProperty"></a>    
+#### GetDomProperty
+
+Gets the value of a JavaScript property of this element. Requires Rapise 8.3+.
+
+```javascript
+WebDriver.FindElementById('username').GetDomProperty(propertyName)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| propertyName | string |  Name of the DOM property to read. |
+
+
+
+
+
+<a name="see.also.webelementwrapper.getdomproperty"></a>
 
 <a name="GetEnabled"></a>    
 #### GetEnabled
@@ -703,7 +829,7 @@ WebDriver.FindElementById('username').GetId()
 <a name="GetLocation"></a>    
 #### GetLocation
 
-Gets a 'Point' object containing the coordinates of theupper-left corner of this element relative to the upper-leftcorner of the page.
+Gets a `Point` object containing the coordinates of the upper-left corner of this element relative to the upper-left corner of the page.
 
 ```javascript
 WebDriver.FindElementById('username').GetLocation()
@@ -793,7 +919,7 @@ WebDriver.FindElementById('username').GetTagName()
 <a name="GetText"></a>    
 #### GetText
 
-Gets the innerText of this element, without any leading ortrailing whitespace, and with other whitespace collapsed.
+Gets the innerText of this element, without any leading or trailing whitespace, and with other whitespace collapsed.
 
 ```javascript
 WebDriver.FindElementById('username').GetText()

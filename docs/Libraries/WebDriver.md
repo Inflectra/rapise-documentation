@@ -20,6 +20,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 | ----------- | --------------- |
 |  [Actions](#actions) | Gets Actions object. |
 |  [AlertIsPresent](#alertispresent) | Checks if alert is displayed. |
+|  [Cleanup](#cleanup) | Cleans up folders created by temporary Chrome profiles in `C:\Windows\SystemTemp`. |
 |  [ClearSessions](#clearsessions) | Deletes active sessions on Selenium grid. |
 |  [Close](#close) | Close the Browser and Dispose of WebDriver. |
 |  [Cookies](#cookies) | Gets Cookies object. |
@@ -30,6 +31,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  [DownloadDriver](#downloaddriver) | This will download required binary (e.g. |
 |  [DumpSessions](#dumpsessions) | Prints information about active Selenium sessions to output. |
 |  [ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
+|  [FindElement](#findelement) | Finds the first element in the page that matches By selector. |
 |  [FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
 |  [FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
 |  [FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
@@ -38,6 +40,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  [FindElementByPartialLinkText](#findelementbypartiallinktext) | Finds the first of elements that match the part of the link text supplied. |
 |  [FindElementByTagName](#findelementbytagname) | Finds the first of elements that match the DOM Tag supplied. |
 |  [FindElementByXPath](#findelementbyxpath) | Finds the first of elements that match the XPath supplied. |
+|  [FindElements](#findelements) | Finds a list of elements that match the supplied By object. |
 |  [FindElementsByClassName](#findelementsbyclassname) | Finds a list of elements that match the class name supplied. |
 |  [FindElementsByCssSelector](#findelementsbycssselector) | Finds all elements matching the specified CSS selector. |
 |  [FindElementsById](#findelementsbyid) | Finds the first element in the page that matches the ID supplied. |
@@ -109,6 +112,21 @@ WebDriver.AlertIsPresent()
 
 
 <a name="see.also.webdriver.alertispresent"></a>
+
+<a name="Cleanup"></a>    
+#### Cleanup
+
+Cleans up folders created by temporary Chrome profiles in `C:\Windows\SystemTemp`. These folders are named as scoped_dir* and may occupy significant disk space. Requires Rapise 8.3+.
+
+```javascript
+WebDriver.Cleanup()
+```
+
+
+
+
+
+<a name="see.also.webdriver.cleanup"></a>
 
 <a name="ClearSessions"></a>    
 #### ClearSessions
@@ -338,6 +356,34 @@ Null, string or element depending on the script.
 
 <a name="see.also.webdriver.executescript"></a>
 
+<a name="FindElement"></a>    
+#### FindElement
+
+Finds the first element in the page that matches By selector.
+
+```javascript
+WebDriver.FindElement(by, by)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| by | By |  By object. |
+| by | By |  By object |
+
+
+
+
+**Returns:**
+
+element or null.
+
+
+
+<a name="see.also.webdriver.findelement"></a>
+
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName
 
@@ -553,6 +599,34 @@ element or null.
 
 
 <a name="see.also.webdriver.findelementbyxpath"></a>
+
+<a name="FindElements"></a>    
+#### FindElements
+
+Finds a list of elements that match the supplied By object.
+
+```javascript
+WebDriver.FindElements(by, by)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| by | By |  By object. |
+| by | By |  By object |
+
+
+
+
+**Returns:**
+
+array of elements.
+
+
+
+<a name="see.also.webdriver.findelements"></a>
 
 <a name="FindElementsByClassName"></a>    
 #### FindElementsByClassName
