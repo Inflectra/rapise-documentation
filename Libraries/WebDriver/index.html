@@ -4468,6 +4468,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#clearsessions" class="md-nav__link">
     ClearSessions
   </a>
@@ -4538,6 +4545,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#findelement" class="md-nav__link">
+    FindElement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#findelementbyclassname" class="md-nav__link">
     FindElementByClassName
   </a>
@@ -4589,6 +4603,13 @@
           <li class="md-nav__item">
   <a href="#findelementbyxpath" class="md-nav__link">
     FindElementByXPath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findelements" class="md-nav__link">
+    FindElements
   </a>
   
 </li>
@@ -8731,6 +8752,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#clearsessions" class="md-nav__link">
     ClearSessions
   </a>
@@ -8801,6 +8829,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#findelement" class="md-nav__link">
+    FindElement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#findelementbyclassname" class="md-nav__link">
     FindElementByClassName
   </a>
@@ -8852,6 +8887,13 @@
           <li class="md-nav__item">
   <a href="#findelementbyxpath" class="md-nav__link">
     FindElementByXPath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findelements" class="md-nav__link">
+    FindElements
   </a>
   
 </li>
@@ -12063,6 +12105,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#clearsessions" class="md-nav__link">
     ClearSessions
   </a>
@@ -12133,6 +12182,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#findelement" class="md-nav__link">
+    FindElement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#findelementbyclassname" class="md-nav__link">
     FindElementByClassName
   </a>
@@ -12184,6 +12240,13 @@
           <li class="md-nav__item">
   <a href="#findelementbyxpath" class="md-nav__link">
     FindElementByXPath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findelements" class="md-nav__link">
+    FindElements
   </a>
   
 </li>
@@ -12454,6 +12517,10 @@
 <td>Checks if alert is displayed.</td>
 </tr>
 <tr>
+<td><a href="#cleanup">Cleanup</a></td>
+<td>Cleans up folders created by temporary Chrome profiles in <code>C:\Windows\SystemTemp</code>.</td>
+</tr>
+<tr>
 <td><a href="#clearsessions">ClearSessions</a></td>
 <td>Deletes active sessions on Selenium grid.</td>
 </tr>
@@ -12494,6 +12561,10 @@
 <td>Executes JavaScript in the context of the currently selected frame or window.</td>
 </tr>
 <tr>
+<td><a href="#findelement">FindElement</a></td>
+<td>Finds the first element in the page that matches By selector.</td>
+</tr>
+<tr>
 <td><a href="#findelementbyclassname">FindElementByClassName</a></td>
 <td>Finds the first element in the page that matches the CSS Class supplied.</td>
 </tr>
@@ -12524,6 +12595,10 @@
 <tr>
 <td><a href="#findelementbyxpath">FindElementByXPath</a></td>
 <td>Finds the first of elements that match the XPath supplied.</td>
+</tr>
+<tr>
+<td><a href="#findelements">FindElements</a></td>
+<td>Finds a list of elements that match the supplied By object.</td>
 </tr>
 <tr>
 <td><a href="#findelementsbyclassname">FindElementsByClassName</a></td>
@@ -12672,6 +12747,12 @@
 <div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">AlertIsPresent</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="see.also.webdriver.alertispresent"></a></p>
+<p><a name="Cleanup"></a>    </p>
+<h4 id="cleanup">Cleanup<a class="headerlink" href="#cleanup" title="Permanent link">&para;</a></h4>
+<p>Cleans up folders created by temporary Chrome profiles in <code>C:\Windows\SystemTemp</code>. These folders are named as scoped_dir* and may occupy significant disk space. Requires Rapise 8.3+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Cleanup</span><span class="p">()</span>
+</code></pre></div>
+<p><a name="see.also.webdriver.cleanup"></a></p>
 <p><a name="ClearSessions"></a>    </p>
 <h4 id="clearsessions">ClearSessions<a class="headerlink" href="#clearsessions" title="Permanent link">&para;</a></h4>
 <p>Deletes active sessions on Selenium grid.</p>
@@ -12870,6 +12951,36 @@
 <p><strong>Returns:</strong></p>
 <p>Null, string or element depending on the script.</p>
 <p><a name="see.also.webdriver.executescript"></a></p>
+<p><a name="FindElement"></a>    </p>
+<h4 id="findelement">FindElement<a class="headerlink" href="#findelement" title="Permanent link">&para;</a></h4>
+<p>Finds the first element in the page that matches By selector.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">FindElement</span><span class="p">(</span><span class="nx">by</span><span class="p">,</span><span class="w"> </span><span class="nx">by</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>by</td>
+<td>By</td>
+<td>By object.</td>
+</tr>
+<tr>
+<td>by</td>
+<td>By</td>
+<td>By object</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>element or null.</p>
+<p><a name="see.also.webdriver.findelement"></a></p>
 <p><a name="FindElementByClassName"></a>    </p>
 <h4 id="findelementbyclassname">FindElementByClassName<a class="headerlink" href="#findelementbyclassname" title="Permanent link">&para;</a></h4>
 <p>Finds the first element in the page that matches the CSS Class supplied.</p>
@@ -13070,6 +13181,36 @@
 <p><strong>Returns:</strong></p>
 <p>element or null.</p>
 <p><a name="see.also.webdriver.findelementbyxpath"></a></p>
+<p><a name="FindElements"></a>    </p>
+<h4 id="findelements">FindElements<a class="headerlink" href="#findelements" title="Permanent link">&para;</a></h4>
+<p>Finds a list of elements that match the supplied By object.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">FindElements</span><span class="p">(</span><span class="nx">by</span><span class="p">,</span><span class="w"> </span><span class="nx">by</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>by</td>
+<td>By</td>
+<td>By object.</td>
+</tr>
+<tr>
+<td>by</td>
+<td>By</td>
+<td>By object</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>array of elements.</p>
+<p><a name="see.also.webdriver.findelements"></a></p>
 <p><a name="FindElementsByClassName"></a>    </p>
 <h4 id="findelementsbyclassname">FindElementsByClassName<a class="headerlink" href="#findelementsbyclassname" title="Permanent link">&para;</a></h4>
 <p>Finds a list of elements that match the class name supplied.</p>
