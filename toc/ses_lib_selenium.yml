@@ -8,15 +8,19 @@
 
     - 'ActionSequence': 'Libraries/ActionSequence.md'
 
+    - 'By': 'Libraries/By.md'
+
     - 'Capabilities': 'Libraries/Capabilities.md'
 
     - 'Cookies': 'Libraries/Cookies.md'
 
     - 'PointerInputDevice': 'Libraries/PointerInputDevice.md'
 
+    - 'RelativeBy': 'Libraries/RelativeBy.md'
+
     - 'Screenshot': 'Libraries/Screenshot.md'
-    
-    - 'WebDriver': 'Libraries/WebDriver.md'    
+
+    - 'WebDriver': 'Libraries/WebDriver.md'
 
     - 'WebElementWrapper': 'Libraries/WebElementWrapper.md'
 

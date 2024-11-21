@@ -31,10 +31,10 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  [DownloadDriver](#downloaddriver) | This will download required binary (e.g. |
 |  [DumpSessions](#dumpsessions) | Prints information about active Selenium sessions to output. |
 |  [ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
-|  [FindElement](#findelement) | Finds the first element in the page that matches By selector. |
-|  [FindElementByClassName](#findelementbyclassname) | Finds the first element in the page that matches the CSS Class supplied. |
+|  [FindElement](#findelement) | Finds the first element on the page that matches By selector. |
+|  [FindElementByClassName](#findelementbyclassname) | Finds the first element on the page that matches the CSS Class supplied. |
 |  [FindElementByCssSelector](#findelementbycssselector) | Finds the first element matching the specified CSS selector. |
-|  [FindElementById](#findelementbyid) | Finds the first element in the page that matches the ID supplied. |
+|  [FindElementById](#findelementbyid) | Finds the first element on the page that matches the ID supplied. |
 |  [FindElementByLinkText](#findelementbylinktext) | Finds the first of elements that match the link text supplied. |
 |  [FindElementByName](#findelementbyname) | Finds the first of elements that match the name supplied. |
 |  [FindElementByPartialLinkText](#findelementbypartiallinktext) | Finds the first of elements that match the part of the link text supplied. |
@@ -43,7 +43,7 @@ This is a JavaScript wrapper for RemoteWebDriver of Selenium .NET library.
 |  [FindElements](#findelements) | Finds a list of elements that match the supplied By object. |
 |  [FindElementsByClassName](#findelementsbyclassname) | Finds a list of elements that match the class name supplied. |
 |  [FindElementsByCssSelector](#findelementsbycssselector) | Finds all elements matching the specified CSS selector. |
-|  [FindElementsById](#findelementsbyid) | Finds the first element in the page that matches the ID supplied. |
+|  [FindElementsById](#findelementsbyid) | Finds the first element on the page that matches the ID supplied. |
 |  [FindElementsByLinkText](#findelementsbylinktext) | Finds a list of elements that match the link text supplied. |
 |  [FindElementsByName](#findelementsbyname) | Finds a list of elements that match the name supplied. |
 |  [FindElementsByPartialLinkText](#findelementsbypartiallinktext) | Finds a list of elements that match the part of the link text supplied. |
@@ -359,7 +359,7 @@ Null, string or element depending on the script.
 <a name="FindElement"></a>    
 #### FindElement
 
-Finds the first element in the page that matches By selector.
+Finds the first element on the page that matches By selector. Requires Rapise 8.3+.
 
 ```javascript
 WebDriver.FindElement(by, by)
@@ -387,7 +387,7 @@ element or null.
 <a name="FindElementByClassName"></a>    
 #### FindElementByClassName
 
-Finds the first element in the page that matches the CSS Class supplied.
+Finds the first element on the page that matches the CSS Class supplied.
 
 ```javascript
 WebDriver.FindElementByClassName(className)
@@ -441,7 +441,7 @@ element ot null.
 <a name="FindElementById"></a>    
 #### FindElementById
 
-Finds the first element in the page that matches the ID supplied.
+Finds the first element on the page that matches the ID supplied.
 
 ```javascript
 WebDriver.FindElementById(id)
@@ -603,7 +603,7 @@ element or null.
 <a name="FindElements"></a>    
 #### FindElements
 
-Finds a list of elements that match the supplied By object.
+Finds a list of elements that match the supplied By object. Requires Rapise 8.3+.
 
 ```javascript
 WebDriver.FindElements(by, by)
@@ -685,7 +685,7 @@ array of elements.
 <a name="FindElementsById"></a>    
 #### FindElementsById
 
-Finds the first element in the page that matches the ID supplied.
+Finds the first element on the page that matches the ID supplied.
 
 ```javascript
 WebDriver.FindElementsById(id)
