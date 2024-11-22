@@ -12662,9 +12662,31 @@
 <p><a name="see.also.htmlobject.doclick"></a></p>
 <p><a name="DoDblClick"></a>    </p>
 <h4 id="dodblclick">DoDblClick<a class="headerlink" href="#dodblclick" title="Permanent link">&para;</a></h4>
-<p>Double-Clicks on HTML element (button, link).</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoDblClick</span><span class="p">()</span>
+<p>Double-Clicks on HTML element (button, link). Offsets are supported in Rapise 8.3+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoDblClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
 <p><a name="see.also.htmlobject.dodblclick"></a></p>
@@ -13021,9 +13043,31 @@
 <p><a name="see.also.htmlobject.domousemove"></a></p>
 <p><a name="DoRClick"></a>    </p>
 <h4 id="dorclick">DoRClick<a class="headerlink" href="#dorclick" title="Permanent link">&para;</a></h4>
-<p>Right-clicks on the HTML element.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoRClick</span><span class="p">()</span>
+<p>Right-clicks on the HTML element. Offsets are supported in Rapise 8.3+.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;SomeHTMLObject&#39;</span><span class="p">).</span><span class="nx">DoRClick</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span>
 </code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional.</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <p>boolean: 'true' if successful, 'false' otherwise'</p>
 <p><a name="see.also.htmlobject.dorclick"></a></p>
