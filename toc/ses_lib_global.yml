@@ -7,7 +7,7 @@
     - 'Global': 'Libraries/Global.md'
     - 'iOS': 'Libraries/iOS.md'
     - 'Navigator': 'Libraries/Navigator.md'
-    - 'Screenshot': 'Libraries/Screenshot.md'
+    - 'Ocr': 'Libraries/Ocr.md'
     - 'SeSReportException': 'Libraries/SeSReportException.md'
     - 'SeSReportFile': 'Libraries/SeSReportFile.md'
     - 'SeSReportImage': 'Libraries/SeSReportImage.md'
@@ -18,4 +18,3 @@
     - 'Spreadsheet': 'Libraries/Spreadsheet.md'
     - 'Tester': 'Libraries/Tester.md'
     - 'Text': 'Libraries/Text.md'
-    - 'WebDriver': 'Libraries/WebDriver.md'

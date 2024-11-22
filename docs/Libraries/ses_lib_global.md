@@ -14,7 +14,7 @@
 
 - [Navigator](Navigator.md)
 
-- [Screenshot](Screenshot.md)
+- [Ocr](Ocr.md)
 
 - [SeSReportException](SeSReportException.md)
 
@@ -31,5 +31,3 @@
 - [Tester](Tester.md)
 
 - [Text](Text.md)
-
-- [WebDriver](WebDriver.md)
