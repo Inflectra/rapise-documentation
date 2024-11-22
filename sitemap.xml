@@ -2161,6 +2161,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rapisedoc.inflectra.com/Libraries/Ocr/</loc>
+         <lastmod>2024-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rapisedoc.inflectra.com/Libraries/OracleEnhLabledIconButton/</loc>
          <lastmod>2024-11-22</lastmod>
          <changefreq>daily</changefreq>
