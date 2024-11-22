@@ -32,22 +32,22 @@ Tester object. Use it to perform assertions during test playback and output rele
 | ----------- | --------------- |
 |  [AddImageToReport](#addimagetoreport) | Adds image to the report. |
 |  [Assert](#assert) | Checks if condition is 'true' and saves corresponding Report entry. |
-|  [AssertContains](#assertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
-|  [AssertEndsWith](#assertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
-|  [AssertEqual](#assertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
-|  [AssertFalse](#assertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
-|  [AssertGreater](#assertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
-|  [AssertGreaterOrEqual](#assertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
-|  [AssertImage](#assertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
-|  [AssertLess](#assertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
-|  [AssertLessOrEqual](#assertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
-|  [AssertNotContains](#assertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
-|  [AssertNotEqual](#assertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
-|  [AssertNotNull](#assertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
+|  [AssertContains](#assertcontains) | Checks if `str` contains `substr` somewhere and writes corresponding message to the Report. |
+|  [AssertEndsWith](#assertendswith) | Checks that `str` has `substr` at the end and writes corresponding message to the Report. |
+|  [AssertEqual](#assertequal) | Checks if obj1 equals to obj2 and writes corresponding message to the Report. |
+|  [AssertFalse](#assertfalse) | Checks if `val` is `false` and writes corresponding message to the Report. |
+|  [AssertGreater](#assertgreater) | Checks if n1 is greater than n2 and writes corresponding message to the Report. |
+|  [AssertGreaterOrEqual](#assertgreaterorequal) | Checks if n1 is greater or equal than n2 and writes corresponding message to the Report. |
+|  [AssertImage](#assertimage) | Checks if 'img1' equals to image stored at 'path' and writes corresponding message to the Report. |
+|  [AssertLess](#assertless) | Checks if n1 is less than n2 and writes corresponding message to the Report. |
+|  [AssertLessOrEqual](#assertlessorequal) | Checks if n1 is less or equal from n2 and saves corresponding Report entry. |
+|  [AssertNotContains](#assertnotcontains) | Checks that `str` does not contain `substr` anywhere and writes corresponding message to the Report. |
+|  [AssertNotEqual](#assertnotequal) | Checks if obj1 differs from obj2 and writes corresponding message to the Report. |
+|  [AssertNotNull](#assertnotnull) | Checks if `val` is not `null` and writes corresponding message to the Report. |
 |  [AssertNotSet](#assertnotset) | Checks if `val` is not set (i.e. |
-|  [AssertNull](#assertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
+|  [AssertNull](#assertnull) | Checks if `val` is `null` and writes corresponding message to the Report. |
 |  [AssertSet](#assertset) | Checks if `val` is set (i.e. |
-|  [AssertStartsWith](#assertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
+|  [AssertStartsWith](#assertstartswith) | Checks if `str` begins with `substr` and writes corresponding message to the Report. |
 |  [BeginTest](#begintest) | Marks beginning of a test with a given name. |
 |  [BlockTest](#blocktest) | Stops test execution and exits with Blocked status. |
 |  [CaptureDesktopImage](#capturedesktopimage) | Captures screenshot of the desktop and adds it to the report. |
@@ -73,22 +73,22 @@ Tester object. Use it to perform assertions during test playback and output rele
 |  [SetReportAttribute](#setreportattribute) | Set persistent attribute. |
 |  [SoftAssert](#softassert) | Is identical to Tester.Assert. |
 |  [SoftAssertAll](#softassertall) | Fail test if there were any previous failures. |
-|  [SoftAssertContains](#softassertcontains) | Checks if `str` contains `substr` somewhere and saves corresponding Report entry. |
-|  [SoftAssertEndsWith](#softassertendswith) | Checks that `str` has `substr` in the end and saves corresponding Report entry. |
-|  [SoftAssertEqual](#softassertequal) | Checks if obj1 equals to obj2 and saves corresponding Report entry. |
-|  [SoftAssertFalse](#softassertfalse) | Checks if `val` is `false` and saves corresponding Report entry. |
-|  [SoftAssertGreater](#softassertgreater) | Checks if n1 greater than n2 and saves corresponding Report entry. |
-|  [SoftAssertGreaterOrEqual](#softassertgreaterorequal) | Checks if n1 greater or equal than n2 and saves corresponding Report entry. |
-|  [SoftAssertImage](#softassertimage) | Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry. |
-|  [SoftAssertLess](#softassertless) | Checks if n1 is less than n2 and saves corresponding Report entry. |
-|  [SoftAssertLessOrEqual](#softassertlessorequal) | Checks if n1 differs from n2 and saves corresponding Report entry. |
-|  [SoftAssertNotContains](#softassertnotcontains) | Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry. |
-|  [SoftAssertNotEqual](#softassertnotequal) | Checks if obj1 differs from obj2 and saves corresponding Report entry. |
-|  [SoftAssertNotNull](#softassertnotnull) | Checks if `val` is `NotNull` and saves corresponding Report entry. |
+|  [SoftAssertContains](#softassertcontains) | Checks if `str` contains `substr` somewhere and writes corresponding message to the Report. |
+|  [SoftAssertEndsWith](#softassertendswith) | Checks that `str` has `substr` at the end and writes corresponding message to the Report. |
+|  [SoftAssertEqual](#softassertequal) | Checks if obj1 equals to obj2 and writes corresponding message to the Report. |
+|  [SoftAssertFalse](#softassertfalse) | Checks if `val` is `false` and writes corresponding message to the Report. |
+|  [SoftAssertGreater](#softassertgreater) | Checks if n1 is greater than n2 and writes corresponding message to the Report. |
+|  [SoftAssertGreaterOrEqual](#softassertgreaterorequal) | Checks if n1 is greater or equal than n2 and writes corresponding message to the Report. |
+|  [SoftAssertImage](#softassertimage) | Checks if 'img1' equals to image stored at 'path' and writes corresponding message to the Report. |
+|  [SoftAssertLess](#softassertless) | Checks if n1 is less than n2 and writes corresponding message to the Report. |
+|  [SoftAssertLessOrEqual](#softassertlessorequal) | Checks if n1 is less or equal from n2 and saves corresponding Report entry. |
+|  [SoftAssertNotContains](#softassertnotcontains) | Checks that `str` does not contain `substr` anywhere and writes corresponding message to the Report. |
+|  [SoftAssertNotEqual](#softassertnotequal) | Checks if obj1 differs from obj2 and writes corresponding message to the Report. |
+|  [SoftAssertNotNull](#softassertnotnull) | Checks if `val` is not `null` and writes corresponding message to the Report. |
 |  [SoftAssertNotSet](#softassertnotset) | Checks if `val` is not set (i.e. |
-|  [SoftAssertNull](#softassertnull) | Checks if `val` is `null` and saves corresponding Report entry. |
+|  [SoftAssertNull](#softassertnull) | Checks if `val` is `null` and writes corresponding message to the Report. |
 |  [SoftAssertSet](#softassertset) | Checks if `val` is set (i.e. |
-|  [SoftAssertStartsWith](#softassertstartswith) | Checks if `str` begins with `substr` and saves corresponding Report entry. |
+|  [SoftAssertStartsWith](#softassertstartswith) | Checks if `str` begins with `substr` and writes corresponding message to the Report. |
 |  [SuppressReport](#suppressreport) | In SuppressReport mode all assertions are ignored. |
 
 
@@ -200,7 +200,7 @@ Tester.Assert(message, condition, data, tags)
 <a name="AssertContains"></a>    
 #### AssertContains
 
-Checks if `str` contains `substr` somewhere and saves corresponding Report entry.
+Checks if `str` contains `substr` somewhere and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -228,7 +228,7 @@ Tester.AssertContains(message, str, substr, data, tags)
 <a name="AssertEndsWith"></a>    
 #### AssertEndsWith
 
-Checks that `str` has `substr` in the end and saves corresponding Report entry.
+Checks that `str` has `substr` at the end and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -256,7 +256,7 @@ Tester.AssertEndsWith(message, str, substr, data, tags)
 <a name="AssertEqual"></a>    
 #### AssertEqual
 
-Checks if obj1 equals to obj2 and saves corresponding Report entry.
+Checks if obj1 equals to obj2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -270,8 +270,8 @@ Tester.AssertEqual(message, obj1, obj2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| obj1 | object |  First object to compare. |
-| obj2 | object |  Second object to compare. |
+| obj1 | object |  First value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
+| obj2 | object |  Second value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -284,7 +284,7 @@ Tester.AssertEqual(message, obj1, obj2, data, tags)
 <a name="AssertFalse"></a>    
 #### AssertFalse
 
-Checks if `val` is `false` and saves corresponding Report entry.
+Checks if `val` is `false` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -311,7 +311,7 @@ Tester.AssertFalse(message, val, data, tags)
 <a name="AssertGreater"></a>    
 #### AssertGreater
 
-Checks if n1 greater than n2 and saves corresponding Report entry.
+Checks if n1 is greater than n2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -325,8 +325,8 @@ Tester.AssertGreater(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | number |  First value to compare. |
-| n2 | number |  Second value to compare. |
+| n1 | number |  First numeric value to compare. |
+| n2 | number |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -339,7 +339,7 @@ Tester.AssertGreater(message, n1, n2, data, tags)
 <a name="AssertGreaterOrEqual"></a>    
 #### AssertGreaterOrEqual
 
-Checks if n1 greater or equal than n2 and saves corresponding Report entry.
+Checks if n1 is greater or equal than n2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -353,8 +353,8 @@ Tester.AssertGreaterOrEqual(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | number |  First value to compare. |
-| n2 | number |  Second value to compare. |
+| n1 | number |  First numeric value to compare. |
+| n2 | number |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -367,7 +367,7 @@ Tester.AssertGreaterOrEqual(message, n1, n2, data, tags)
 <a name="AssertImage"></a>    
 #### AssertImage
 
-Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
+Checks if 'img1' equals to image stored at 'path' and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -395,7 +395,7 @@ Tester.AssertImage(message, img1, path, data, tags)
 <a name="AssertLess"></a>    
 #### AssertLess
 
-Checks if n1 is less than n2 and saves corresponding Report entry.
+Checks if n1 is less than n2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -409,8 +409,8 @@ Tester.AssertLess(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | number |  First value to compare. |
-| n2 | number |  Second value to compare. |
+| n1 | number |  First numeric value to compare. |
+| n2 | number |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -423,7 +423,7 @@ Tester.AssertLess(message, n1, n2, data, tags)
 <a name="AssertLessOrEqual"></a>    
 #### AssertLessOrEqual
 
-Checks if n1 differs from n2 and saves corresponding Report entry.
+Checks if n1 is less or equal from n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -437,8 +437,8 @@ Tester.AssertLessOrEqual(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | object |  First value to compare. |
-| n2 | object |  Second value to compare. |
+| n1 | object |  First numeric value to compare. |
+| n2 | object |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -451,7 +451,7 @@ Tester.AssertLessOrEqual(message, n1, n2, data, tags)
 <a name="AssertNotContains"></a>    
 #### AssertNotContains
 
-Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry.
+Checks that `str` does not contain `substr` anywhere and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -479,7 +479,7 @@ Tester.AssertNotContains(message, str, substr, data, tags)
 <a name="AssertNotEqual"></a>    
 #### AssertNotEqual
 
-Checks if obj1 differs from obj2 and saves corresponding Report entry.
+Checks if obj1 differs from obj2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -493,8 +493,8 @@ Tester.AssertNotEqual(message, obj1, obj2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| obj1 | object |  First object to compare. |
-| obj2 | object |  Second object to compare. |
+| obj1 | object |  First value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
+| obj2 | object |  Second value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -507,7 +507,7 @@ Tester.AssertNotEqual(message, obj1, obj2, data, tags)
 <a name="AssertNotNull"></a>    
 #### AssertNotNull
 
-Checks if `val` is `NotNull` and saves corresponding Report entry.
+Checks if `val` is not `null` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -534,7 +534,7 @@ Tester.AssertNotNull(message, val, data, tags)
 <a name="AssertNotSet"></a>    
 #### AssertNotSet
 
-Checks if `val` is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
+Checks if `val` is not set (i.e. it is null, 0, false or "") and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -561,7 +561,7 @@ Tester.AssertNotSet(message, val, data, tags)
 <a name="AssertNull"></a>    
 #### AssertNull
 
-Checks if `val` is `null` and saves corresponding Report entry.
+Checks if `val` is `null` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -588,7 +588,7 @@ Tester.AssertNull(message, val, data, tags)
 <a name="AssertSet"></a>    
 #### AssertSet
 
-Checks if `val` is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
+Checks if `val` is set (i.e. not false, not 0, not null, not "") and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -615,7 +615,7 @@ Tester.AssertSet(message, val, data, tags)
 <a name="AssertStartsWith"></a>    
 #### AssertStartsWith
 
-Checks if `str` begins with `substr` and saves corresponding Report entry.
+Checks if `str` begins with `substr` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1245,7 +1245,7 @@ Tester.SoftAssertAll(message)
 <a name="SoftAssertContains"></a>    
 #### SoftAssertContains
 
-Checks if `str` contains `substr` somewhere and saves corresponding Report entry.
+Checks if `str` contains `substr` somewhere and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1273,7 +1273,7 @@ Tester.SoftAssertContains(message, str, substr, data, tags)
 <a name="SoftAssertEndsWith"></a>    
 #### SoftAssertEndsWith
 
-Checks that `str` has `substr` in the end and saves corresponding Report entry.
+Checks that `str` has `substr` at the end and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1301,7 +1301,7 @@ Tester.SoftAssertEndsWith(message, str, substr, data, tags)
 <a name="SoftAssertEqual"></a>    
 #### SoftAssertEqual
 
-Checks if obj1 equals to obj2 and saves corresponding Report entry.
+Checks if obj1 equals to obj2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1315,8 +1315,8 @@ Tester.SoftAssertEqual(message, obj1, obj2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| obj1 | object |  First object to compare. |
-| obj2 | object |  Second object to compare. |
+| obj1 | object |  First value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
+| obj2 | object |  Second value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1329,7 +1329,7 @@ Tester.SoftAssertEqual(message, obj1, obj2, data, tags)
 <a name="SoftAssertFalse"></a>    
 #### SoftAssertFalse
 
-Checks if `val` is `false` and saves corresponding Report entry.
+Checks if `val` is `false` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1356,7 +1356,7 @@ Tester.SoftAssertFalse(message, val, data, tags)
 <a name="SoftAssertGreater"></a>    
 #### SoftAssertGreater
 
-Checks if n1 greater than n2 and saves corresponding Report entry.
+Checks if n1 is greater than n2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1370,8 +1370,8 @@ Tester.SoftAssertGreater(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | number |  First value to compare. |
-| n2 | number |  Second value to compare. |
+| n1 | number |  First numeric value to compare. |
+| n2 | number |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1384,7 +1384,7 @@ Tester.SoftAssertGreater(message, n1, n2, data, tags)
 <a name="SoftAssertGreaterOrEqual"></a>    
 #### SoftAssertGreaterOrEqual
 
-Checks if n1 greater or equal than n2 and saves corresponding Report entry.
+Checks if n1 is greater or equal than n2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1398,8 +1398,8 @@ Tester.SoftAssertGreaterOrEqual(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | number |  First value to compare. |
-| n2 | number |  Second value to compare. |
+| n1 | number |  First numeric value to compare. |
+| n2 | number |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1412,7 +1412,7 @@ Tester.SoftAssertGreaterOrEqual(message, n1, n2, data, tags)
 <a name="SoftAssertImage"></a>    
 #### SoftAssertImage
 
-Checks if 'img1' equals to image stored at 'path' and saves corresponding Report entry.
+Checks if 'img1' equals to image stored at 'path' and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1440,7 +1440,7 @@ Tester.SoftAssertImage(message, img1, path, data, tags)
 <a name="SoftAssertLess"></a>    
 #### SoftAssertLess
 
-Checks if n1 is less than n2 and saves corresponding Report entry.
+Checks if n1 is less than n2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1454,8 +1454,8 @@ Tester.SoftAssertLess(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | number |  First value to compare. |
-| n2 | number |  Second value to compare. |
+| n1 | number |  First numeric value to compare. |
+| n2 | number |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1468,7 +1468,7 @@ Tester.SoftAssertLess(message, n1, n2, data, tags)
 <a name="SoftAssertLessOrEqual"></a>    
 #### SoftAssertLessOrEqual
 
-Checks if n1 differs from n2 and saves corresponding Report entry.
+Checks if n1 is less or equal from n2 and saves corresponding Report entry.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1482,8 +1482,8 @@ Tester.SoftAssertLessOrEqual(message, n1, n2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| n1 | object |  First value to compare. |
-| n2 | object |  Second value to compare. |
+| n1 | object |  First numeric value to compare. |
+| n2 | object |  Second numeric value to compare. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1496,7 +1496,7 @@ Tester.SoftAssertLessOrEqual(message, n1, n2, data, tags)
 <a name="SoftAssertNotContains"></a>    
 #### SoftAssertNotContains
 
-Checks that `str` does not contain `substr` anywhere and saves corresponding Report entry.
+Checks that `str` does not contain `substr` anywhere and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1524,7 +1524,7 @@ Tester.SoftAssertNotContains(message, str, substr, data, tags)
 <a name="SoftAssertNotEqual"></a>    
 #### SoftAssertNotEqual
 
-Checks if obj1 differs from obj2 and saves corresponding Report entry.
+Checks if obj1 differs from obj2 and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1538,8 +1538,8 @@ Tester.SoftAssertNotEqual(message, obj1, obj2, data, tags)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | message | string |  Message to put in the report. |
-| obj1 | object |  First object to compare. |
-| obj2 | object |  Second object to compare. |
+| obj1 | object |  First value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
+| obj2 | object |  Second value to compare. It can be a number, a string, a boolean value, an array or an object with fields. |
 | data | SeSReportLink \| SeSReportText \| SeSReportImage \| Object[] |  Additional information to put in the report. If 'string' is passed, then data is considered as additional comment attribute. Or 'array' may be passed. Each entry in the array should be one of: SeSReportLink, SeSReportImage, SeSReportText, SeSReportFile.<br>Optional. |
 | tags | object |  Hash of attributes to set for this particular log entry.<br>Optional. |
 
@@ -1552,7 +1552,7 @@ Tester.SoftAssertNotEqual(message, obj1, obj2, data, tags)
 <a name="SoftAssertNotNull"></a>    
 #### SoftAssertNotNull
 
-Checks if `val` is `NotNull` and saves corresponding Report entry.
+Checks if `val` is not `null` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1579,7 +1579,7 @@ Tester.SoftAssertNotNull(message, val, data, tags)
 <a name="SoftAssertNotSet"></a>    
 #### SoftAssertNotSet
 
-Checks if `val` is not set (i.e. it is null, 0, false or "") and saves corresponding Report entry.
+Checks if `val` is not set (i.e. it is null, 0, false or "") and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1606,7 +1606,7 @@ Tester.SoftAssertNotSet(message, val, data, tags)
 <a name="SoftAssertNull"></a>    
 #### SoftAssertNull
 
-Checks if `val` is `null` and saves corresponding Report entry.
+Checks if `val` is `null` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1633,7 +1633,7 @@ Tester.SoftAssertNull(message, val, data, tags)
 <a name="SoftAssertSet"></a>    
 #### SoftAssertSet
 
-Checks if `val` is set (i.e. not false, not 0, not null, not "") and saves corresponding Report entry.
+Checks if `val` is set (i.e. not false, not 0, not null, not "") and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 
@@ -1660,7 +1660,7 @@ Tester.SoftAssertSet(message, val, data, tags)
 <a name="SoftAssertStartsWith"></a>    
 #### SoftAssertStartsWith
 
-Checks if `str` begins with `substr` and saves corresponding Report entry.
+Checks if `str` begins with `substr` and writes corresponding message to the Report.
 Assertion is an atomic piece of verification. Assertion may contain some 
 additional data (links, images, comments) set via 'data' parameter.
 

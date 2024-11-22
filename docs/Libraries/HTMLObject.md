@@ -608,11 +608,19 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="DoDblClick"></a>    
 #### DoDblClick
 
-Double-Clicks on HTML element (button, link).
+Double-Clicks on HTML element (button, link). Offsets are supported in Rapise 8.3+.
 
 ```javascript
-SeS('SomeHTMLObject').DoDblClick()
+SeS('SomeHTMLObject').DoDblClick(x, y)
 ```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
@@ -1069,11 +1077,19 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="DoRClick"></a>    
 #### DoRClick
 
-Right-clicks on the HTML element.
+Right-clicks on the HTML element. Offsets are supported in Rapise 8.3+.
 
 ```javascript
-SeS('SomeHTMLObject').DoRClick()
+SeS('SomeHTMLObject').DoRClick(x, y)
 ```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| x | number |  X offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the width.<br>Optional. |
+| y | number |  Y offset to click within object. Calculated from the top-left corner. Default is a center. Floating point in the range (-2, 2) means percentage of the height.<br>Optional. |
 
 
 
