@@ -12,10 +12,6 @@
 
 ![Framework](./img/menu_and_toolbars_file_framework.png){width="646px"}
 
-*Manual*:
-
-![Manual](./img/menu_and_toolbars_file_manual.png){width="328px"}
-
 The File menu provides quick access to all the File management functions in Rapise. Many of these are also available on the main [toolbar](#main-toolbar).
 
 * **Create New**
@@ -37,15 +33,6 @@ The File menu provides quick access to all the File management functions in Rapi
 * **Save As**  - creates a new, differently named copy of the test project and all files explicitly included into it.
 * **Exit** - exits Rapise.
 
------
-
-* **Save Manual Test to Spira**
-    * Manual: Upload all modified steps to the [Spira](spiratest_integration.md) Test Case.
-* **Save Manual Test Locally**
-    * Manual: Save manual Test Case Steps as a local .rmt file.
-* **Reload Manual Test from Spira**
-    * Manual: Reload test steps from the [Spira](spiratest_integration.md) Test Case overriding local changes.
-
 ## Edit
 
 The **Edit** menu provides tools for editing currently open script file. Menu contents depend on the active editor currently open in the [content view](content_view.md).
@@ -64,7 +51,7 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
 
 *Manual*:
 
-![Manual](./img/menu_edit_manual.png)
+![Manual](./img/menu_edit_manual.png){width="306px"}
 
 * **Find**, **Find in Files** - search using the [Find and Replace Dialog](find_and_replace_dialog.md).
 
@@ -89,6 +76,15 @@ The **Edit** menu provides tools for editing currently open script file. Menu co
     * Manual: Move selected step Up.
 * **Down**
     * Manual: Move selected step Down.
+
+-----
+
+* **Save Manual Test to Spira**
+    * Manual: Upload all modified steps to the [Spira](spiratest_integration.md) Test Case.
+* **Save Manual Test Locally**
+    * Manual: Save manual Test Case Steps as a local .rmt file.
+* **Reload Manual Test from Spira**
+    * Manual: Load/Reload test steps from the [Spira](spiratest_integration.md) Test Case overriding local changes.
 
 -----
 
