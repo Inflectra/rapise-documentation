@@ -101,6 +101,28 @@ In addition, there are some settings, unique to running Appium mobile device tes
 - **instrumentApp** - instrument the application.
 - **testName** - name of the test.
 
+## Parameterizing a Profile
+
+Since Rapise 8.3 it is possible to use [framework parameters](Frameworks/parameters.md) in mobile profiles. The syntax is
+
+```
+{Parameter Name}
+```
+
+For example `app` capability (e.g. a path to an APK file) can be defined by a framework parameter and then used as
+
+```
+{ApkPath}
+```
+
+Another example is setting `platformVersion`.
+
+```
+{{PlatformVersion}}
+```
+
+![Profile with Parameters](./img/mobile_profile_parameters.png)
+
 ## See Also
 
 - For details check out [Appium Desired Capabilities](http://appium.io/docs/en/writing-running-appium/caps/) page.

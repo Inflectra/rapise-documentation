@@ -75,6 +75,35 @@ In addition, there are some settings, unique to running Selenium WebDriver tests
     - **os_version** - Use this capability to specify the OS version of the device.
     - **realMobile** - Use this flag to test mobile websites on a physical mobile device.
 
+## Parameterizing a Profile
+
+Since Rapise 8.3 it is possible to use [framework parameters](Frameworks/parameters.md) in browser profiles. The syntax is
+
+```
+{Parameter Name}
+```
+
+For example [permanent browser profile path](https://www.inflectra.com/Support/KnowledgeBase/KB686.aspx) can be defined by a framework parameter and then used as
+
+```
+["user-data-dir={UserDataDir}"]
+```
+
+Another example is setting [download folder location](https://www.inflectra.com/Support/KnowledgeBase/KB683.aspx).
+
+```
+{"download.default_directory": "{DownloadFolder}"}
+```
+
+Note that the values of parameters may have to contain double backslash as they must be valid escaped JavaScript strings.
+
+```
+UserDataDir=C:\\ProgramData\\Inflectra\\Rapise\\Temp\\Chrome
+DownloadFolder=C:\\ProgramData\\Inflectra\\Rapise\\Temp\\Downloads
+```
+
+![Profile with Parameters](./img/browser_profile_parameters.png)
+
 ## See Also
 
 - For the list of standard capabilities please refer to [Selenium repository](https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities).
