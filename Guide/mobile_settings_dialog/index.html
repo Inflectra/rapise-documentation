@@ -2583,6 +2583,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parameterizing-a-profile" class="md-nav__link">
+    Parameterizing a Profile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -3493,6 +3500,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameterizing-a-profile" class="md-nav__link">
+    Parameterizing a Profile
+  </a>
   
 </li>
       
@@ -11592,6 +11606,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parameterizing-a-profile" class="md-nav__link">
+    Parameterizing a Profile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -11687,6 +11708,17 @@
 <li><strong>instrumentApp</strong> - instrument the application.</li>
 <li><strong>testName</strong> - name of the test.</li>
 </ul>
+<h2 id="parameterizing-a-profile">Parameterizing a Profile<a class="headerlink" href="#parameterizing-a-profile" title="Permanent link">&para;</a></h2>
+<p>Since Rapise 8.3 it is possible to use <a href="../Frameworks/parameters/">framework parameters</a> in mobile profiles. The syntax is</p>
+<div class="highlight"><pre><span></span><code>{Parameter Name}
+</code></pre></div>
+<p>For example <code>app</code> capability (e.g. a path to an APK file) can be defined by a framework parameter and then used as</p>
+<div class="highlight"><pre><span></span><code>{ApkPath}
+</code></pre></div>
+<p>Another example is setting <code>platformVersion</code>.</p>
+<div class="highlight"><pre><span></span><code>{{PlatformVersion}}
+</code></pre></div>
+<p><img alt="Profile with Parameters" src="../img/mobile_profile_parameters.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li>For details check out <a href="http://appium.io/docs/en/writing-running-appium/caps/">Appium Desired Capabilities</a> page.</li>

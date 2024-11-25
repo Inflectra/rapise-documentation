@@ -2752,6 +2752,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parameterizing-a-profile" class="md-nav__link">
+    Parameterizing a Profile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -3687,6 +3694,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameterizing-a-profile" class="md-nav__link">
+    Parameterizing a Profile
+  </a>
   
 </li>
       
@@ -11511,6 +11525,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parameterizing-a-profile" class="md-nav__link">
+    Parameterizing a Profile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -11583,6 +11604,21 @@ Where the port number used by Selenium is <code>4444</code> (default) and the <c
 </ul>
 </li>
 </ul>
+<h2 id="parameterizing-a-profile">Parameterizing a Profile<a class="headerlink" href="#parameterizing-a-profile" title="Permanent link">&para;</a></h2>
+<p>Since Rapise 8.3 it is possible to use <a href="../Frameworks/parameters/">framework parameters</a> in browser profiles. The syntax is</p>
+<div class="highlight"><pre><span></span><code>{Parameter Name}
+</code></pre></div>
+<p>For example <a href="https://www.inflectra.com/Support/KnowledgeBase/KB686.aspx">permanent browser profile path</a> can be defined by a framework parameter and then used as</p>
+<div class="highlight"><pre><span></span><code>[&quot;user-data-dir={UserDataDir}&quot;]
+</code></pre></div>
+<p>Another example is setting <a href="https://www.inflectra.com/Support/KnowledgeBase/KB683.aspx">download folder location</a>.</p>
+<div class="highlight"><pre><span></span><code>{&quot;download.default_directory&quot;: &quot;{DownloadFolder}&quot;}
+</code></pre></div>
+<p>Note that the values of parameters may have to contain double backslash as they must be valid escaped JavaScript strings.</p>
+<div class="highlight"><pre><span></span><code>UserDataDir=C:\\ProgramData\\Inflectra\\Rapise\\Temp\\Chrome
+DownloadFolder=C:\\ProgramData\\Inflectra\\Rapise\\Temp\\Downloads
+</code></pre></div>
+<p><img alt="Profile with Parameters" src="../img/browser_profile_parameters.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li>For the list of standard capabilities please refer to <a href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities">Selenium repository</a>.</li>
