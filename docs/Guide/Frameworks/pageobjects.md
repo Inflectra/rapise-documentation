@@ -155,6 +155,8 @@ In Rapise, you can import pre-built Page Objects from other frameworks.
 
 ![Import PO](./img/import_page_object.png){width="364px"}
 
+## Public Page Objects
+
 Additionally, the Rapise team has created a collection of Page Objects that you can download and use.
 
 [Useful Page Objects](https://github.com/Inflectra/rapise-powerpack/tree/master/FWUsefulPageObjects)

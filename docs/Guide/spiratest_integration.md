@@ -224,6 +224,10 @@ The system will display the progress dialog while the files are being downloaded
 
 If an error occurs during the download, a message box will be displayed, otherwise the dialog box will simply close and Rapise will open the loaded test.
 
+### Loading a Clean Copy
+
+If you’ve already loaded the test case on the machine, made some modifications to the files, and want to re-download all files while discarding your local changes, simply check the `Get Clean Copy` checkbox before clicking `OK` button. Requires Rapise 8.3+.
+
 ## Synchronizing
 
 !!! important

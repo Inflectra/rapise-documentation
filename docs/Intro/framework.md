@@ -87,6 +87,10 @@ Shared Libraries and Shared Functions more powerful with pre-defined [dropdowns]
 
 ![Param Dropdown](../Guide/img/framework_dropdowns.png)
 
+#### Dropdowns for Page Objects
+
+In Rapise 8.3, we’ve introduced support for a local Dropdowns.xlsx file for [Page Objects](../Guide/Frameworks/pageobjects.md). This is particularly useful because Page Objects created in [Framework Mode](../Guide/Frameworks/frameworks.md) can be shared across multiple frameworks, and there may also be [Public Page Objects](../Guide/Frameworks/pageobjects.md#public-page-objects).
+
 ### Config.xlsx
 
 There is a [Config](../Libraries/Global.md#SetConfigPath) file, that may be used for further [Global.GetProperty](../Libraries/Global.md#getproperty) and [Global.SetProperty](/Libraries/Global/#setproperty). This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).

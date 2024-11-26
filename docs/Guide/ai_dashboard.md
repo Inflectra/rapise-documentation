@@ -836,24 +836,31 @@ When you work with AI in Rapise, it creates a set of folders in the root framewo
 
 - Root Framework Folder
     - **AI** - root folder for AI-related files.
-        - **commands** - cache for AI Commands, containing generated JavaScript code. This folder must be stored along with the framework; do not delete it.
+        - **commands** - cache for AI Commands, containing generated JavaScript code. This folder must be stored along with the framework; do not delete it. **[Deprecated]**
         - **messages** - archive of AI chat messages.
         - **sessions** - high-level information about AI chat sessions (name, ID, timestamp).
         - **options.json** - local [options](#settings) that override the global ones stored in `C:\ProgramData\Inflectra\Rapise\AI\options.json`. 
         - **screenshot.base64** - last screenshot taken in [Chats](#chats).
         - **AIExamples.txt** - the list of liked/disliked [examples](../RVL/AI.md#tuning-with-positive-and-negative-examples) of generated code.
         - **AIPrompt.txt** - [text to add to each AI prompt](../RVL/AI.md#shared-instructions) for AI Command processing.
+        - **ai.commands.json** - Since Rapise 8.3 command cache is split per Test Case/Page Object folders. For each RVL file that contains AI commands an `ai.commands.json` is created in the same folder as the RVL file.
 
-!!! note
-    When you put a framework under source control it is important to add 
+### Source Control
 
-      - `options.json`
-      - `AIExamples.txt`
-      - `AIPrompt.txt`
-      - `commands` folder with all the files in it.
+When you put a framework under source control it is important to add 
 
-    The following folders are optional (this is just an archive of AI chats)
-    
-      - `messages`
-      - `sessions`
+  - `options.json`
+  - `AIExamples.txt`
+  - `AIPrompt.txt`
+  - `commands` folder with all the files in it. **[Deprecated]**
+  - `ai.commands.json` files  
+
+The following folders are optional (this is just an archive of AI chats)
+
+  - `messages`
+  - `sessions`
   
+
+### Rapise 8.3 AI Command Cache Changes
+
+If you have AI tests created with Rapise 8.2, all code generated for AI commands will be still successfully loaded from `AI\commands` folder. If you will regenerate code for a command or generate code for a new command, it will be placed into corresponding `ai.commands.json` file located in the same folder as the RVL file.

@@ -139,7 +139,7 @@ Type: string
 <a name="EnsureVisibleVerticalAlignment"></a>
 #### EnsureVisibleVerticalAlignment
 
-One of "start", "center", "end", or "nearest". Defaults to "start".
+One of "start", "center", "end", or "nearest". Defaults to "center".
 
 
 
