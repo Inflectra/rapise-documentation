@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_2/" class="md-tabs__link">
+      <a href="../../New/8_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10943,6 +10943,26 @@
     Framework Folders
   </a>
   
+    <nav class="md-nav" aria-label="Framework Folders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-control" class="md-nav__link">
+    Source Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapise-83-ai-command-cache-changes" class="md-nav__link">
+    Rapise 8.3 AI Command Cache Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -11189,6 +11209,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../New/8_3/" class="md-nav__link">
+        Release Notes for 8.3
+      </a>
+    </li>
+  
+
           
             
   
@@ -11541,6 +11573,26 @@
   <a href="#framework-folders" class="md-nav__link">
     Framework Folders
   </a>
+  
+    <nav class="md-nav" aria-label="Framework Folders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-control" class="md-nav__link">
+    Source Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapise-83-ai-command-cache-changes" class="md-nav__link">
+    Rapise 8.3 AI Command Cache Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -12969,33 +13021,35 @@ Logged in as Librarian, <strong>Logout</strong></p>
 <ul>
 <li>Root Framework Folder<ul>
 <li><strong>AI</strong> - root folder for AI-related files.<ul>
-<li><strong>commands</strong> - cache for AI Commands, containing generated JavaScript code. This folder must be stored along with the framework; do not delete it.</li>
+<li><strong>commands</strong> - cache for AI Commands, containing generated JavaScript code. This folder must be stored along with the framework; do not delete it. <strong>[Deprecated]</strong></li>
 <li><strong>messages</strong> - archive of AI chat messages.</li>
 <li><strong>sessions</strong> - high-level information about AI chat sessions (name, ID, timestamp).</li>
 <li><strong>options.json</strong> - local <a href="#settings">options</a> that override the global ones stored in <code>C:\ProgramData\Inflectra\Rapise\AI\options.json</code>. </li>
 <li><strong>screenshot.base64</strong> - last screenshot taken in <a href="#chats">Chats</a>.</li>
 <li><strong>AIExamples.txt</strong> - the list of liked/disliked <a href="../../RVL/AI/#tuning-with-positive-and-negative-examples">examples</a> of generated code.</li>
 <li><strong>AIPrompt.txt</strong> - <a href="../../RVL/AI/#shared-instructions">text to add to each AI prompt</a> for AI Command processing.</li>
+<li><strong>ai.commands.json</strong> - Since Rapise 8.3 command cache is split per Test Case/Page Object folders. For each RVL file that contains AI commands an <code>ai.commands.json</code> is created in the same folder as the RVL file.</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<h3 id="source-control">Source Control<a class="headerlink" href="#source-control" title="Permanent link">&para;</a></h3>
 <p>When you put a framework under source control it is important to add </p>
 <ul>
 <li><code>options.json</code></li>
 <li><code>AIExamples.txt</code></li>
 <li><code>AIPrompt.txt</code></li>
-<li><code>commands</code> folder with all the files in it.</li>
+<li><code>commands</code> folder with all the files in it. <strong>[Deprecated]</strong></li>
+<li><code>ai.commands.json</code> files  </li>
 </ul>
 <p>The following folders are optional (this is just an archive of AI chats)</p>
 <ul>
 <li><code>messages</code></li>
 <li><code>sessions</code></li>
 </ul>
-</div>
+<h3 id="rapise-83-ai-command-cache-changes">Rapise 8.3 AI Command Cache Changes<a class="headerlink" href="#rapise-83-ai-command-cache-changes" title="Permanent link">&para;</a></h3>
+<p>If you have AI tests created with Rapise 8.2, all code generated for AI commands will be still successfully loaded from <code>AI\commands</code> folder. If you will regenerate code for a command or generate code for a new command, it will be placed into corresponding <code>ai.commands.json</code> file located in the same folder as the RVL file.</p>
                 
               
               

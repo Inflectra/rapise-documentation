@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_2/" class="md-tabs__link">
+      <a href="../../New/8_3/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -11016,6 +11016,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_3/" class="md-nav__link">
+        Release Notes for 8.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_2/" class="md-nav__link">
         Release Notes for 8.2
       </a>
@@ -11296,6 +11308,19 @@
     Dropdowns.xlsx
   </a>
   
+    <nav class="md-nav" aria-label="Dropdowns.xlsx">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dropdowns-for-page-objects" class="md-nav__link">
+    Dropdowns for Page Objects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -11425,6 +11450,8 @@
 <h3 id="dropdownsxlsx">Dropdowns.xlsx<a class="headerlink" href="#dropdownsxlsx" title="Permanent link">&para;</a></h3>
 <p>Shared Libraries and Shared Functions more powerful with pre-defined <a href="../../Guide/rvl_editor/#param-dropdowns">dropdowns</a>. For example, you may have a function <code>NavigateToModule</code> used across your framework and switching to an application module. Since we have fixed number of modules in the app (it may be a big number, but still fixed) we may define a dropdown list to make it easier for test creator to navigate without risk of doing a typo and without loss of time to find correct naming.</p>
 <p><img alt="Param Dropdown" src="../../Guide/img/framework_dropdowns.png" /></p>
+<h4 id="dropdowns-for-page-objects">Dropdowns for Page Objects<a class="headerlink" href="#dropdowns-for-page-objects" title="Permanent link">&para;</a></h4>
+<p>In Rapise 8.3, we’ve introduced support for a local Dropdowns.xlsx file for <a href="../../Guide/Frameworks/pageobjects/">Page Objects</a>. This is particularly useful because Page Objects created in <a href="../../Guide/Frameworks/frameworks/">Framework Mode</a> can be shared across multiple frameworks, and there may also be <a href="../../Guide/Frameworks/pageobjects/#public-page-objects">Public Page Objects</a>.</p>
 <h3 id="configxlsx">Config.xlsx<a class="headerlink" href="#configxlsx" title="Permanent link">&para;</a></h3>
 <p>There is a <a href="../../Libraries/Global/#SetConfigPath">Config</a> file, that may be used for further <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a> and <a href="/Libraries/Global/#setproperty">Global.SetProperty</a>. This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).</p>
 <p>It is also explained in <a href="https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&amp;t=534">this</a> video.</p>
