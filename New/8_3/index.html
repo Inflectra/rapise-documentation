@@ -11396,6 +11396,7 @@
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB881.aspx">Import manual test cases directly from Spira</a> [IN:10116]</li>
 <li>AI: Add support of AWS Bedrock [IN:10340]</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB880.aspx">Add ability to run Playwright code on a connected browser instance</a> [IN:10367]</li>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB883.aspx">AiTester public page object to run AI queries during test execution</a> [IN:10421]</li>
 </ul>
 <h3 id="rvl-enhancements-improvements">RVL Enhancements &amp; Improvements<a class="headerlink" href="#rvl-enhancements-improvements" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11434,16 +11435,20 @@
 <li>File Replace should support insertion of \t\r\n in Extended mode [IN:10022]</li>
 <li><a href="/Intro/framework/#dropdowns-for-page-objects">Page Objects should support their own Dropdowns.xlsx</a> [IN:10041]</li>
 <li>AI: allow to include files into AiPrompt.txt [IN:10096]</li>
+<li>Add headless browser profiles to be available out of the box [IN:10134]</li>
 <li>Auto-commit changes when editing Configurations and Parameters [IN:10142]</li>
 <li><a href="/Libraries/Navigator/#ensurevisibleverticalalignment">Change Navigator default vertical scrolling to <code>center</code></a> [IN:10201]</li>
 <li>Improve button sizing for 125% display scaling [IN:10214]</li>
 <li>Add support for re-connecting to Chrome 129+ [IN:10224]</li>
 <li>Upgrade to Selenium 4.25 and Appium 6.0.0 .NET bindings [IN:10246]</li>
 <li>Auto commit changes in Test Set Custom Properties and Test Case Custom Properties grids [IN:10336]</li>
+<li>AI Dashboard: If FW has local options, select them by default when showing settings [IN:10347]</li>
 <li><a href="/Guide/ai_dashboard/#rapise-83-ai-command-cache-changes">AI: new AI Command cache format, store commands near RVL files</a> [IN:10351]</li>
+<li>Allow using AI server at script runtime [IN:10415]</li>
 </ul>
 <h3 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h3>
 <ul>
+<li>Database.DoAttach query - handling returned empty set [IN:9356]</li>
 <li>Don't allow saving 2<sup>nd</sup> framework with the same name as existing one. [IN:9869]</li>
 <li>SetLocatorOpts and objectid - should pass a modified locator [IN:9948]</li>
 <li>RVL.SetLocatorOpts is not compatible with external objects [IN:10016]</li>
@@ -11457,10 +11462,16 @@
 <li>HTMLObject.DoSetCheck is not working [IN:10200]</li>
 <li>AgGrid.DoSetCheckbox should accept checked state as a parameter [IN:10208]</li>
 <li>Page Object Parameter descriptions missing from AI prompt [IN:10210]</li>
+<li>Framework.json is not updated when shared tag is set on Objects.js of a page object [IN:10211]</li>
 <li>Actions parameter is added to the repository object after editing xpath or action in Recording Activity Dialog [IN:10311]</li>
 <li>Max 50 chars are visible in Test Case name in Spira Dashboard [IN:10332]</li>
+<li>Assertion with Image should be shown red when fails, now it is black [IN:10333]</li>
+<li>Test Framework Save As should copy AI/commands folder [IN:10346]</li>
 <li>NodeJS may return 0x80131029 timeout exit code even when execution of a test was successful [IN:10362]</li>
+<li>Find&amp;Replace in RVL is vanishing parameters. Should not do that. [IN:10366]</li>
+<li>Analog exit code 100 when 0 is expected [IN:10372]</li>
 <li>Infinite recursion when closing a browser [IN:10373]</li>
+<li>Global.DoPlayAnalog and Global.DoLaunch with wait=true return incorrect process exit code [IN:10409]</li>
 </ul>
                 
               
