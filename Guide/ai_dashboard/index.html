@@ -10828,6 +10828,26 @@
     Settings
   </a>
   
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-bedrock" class="md-nav__link">
+    Amazon Bedrock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy" class="md-nav__link">
+    Proxy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -11459,6 +11479,26 @@
     Settings
   </a>
   
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-bedrock" class="md-nav__link">
+    Amazon Bedrock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy" class="md-nav__link">
+    Proxy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -11642,26 +11682,28 @@
 <h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h3>
 <p>In its initial release, Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an <a href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key">OpenAI Api Key</a>. For <a href="https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key">Azure OpenAI</a>, you also need to specify the endpoint URL.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
-<p><img alt="Dashboard Settings" src="../img/ai_dashboard_settings.png" width="870px" /></p>
+<p><img alt="Dashboard Settings" src="../img/ai_dashboard_settings.png" width="900px" /></p>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Transcript</label><div class="tabbed-content">
-<p><strong>Options</strong></p>
-<p>Scope <em>global</em><br />
-- <code>global</code> (selected)<br />
-- <code>local [create]</code></p>
-<p>Please select an agent workflow for AI Command:<br />
-- <code>AI Command</code> (dropdown option)</p>
-<p>Enter parameters for the default model:<br />
-- <code>gpt-4o-mini</code></p>
+<p><strong>Options Tab</strong></p>
 <ul>
-<li>(Obscured text for input)</li>
+<li><em>Scope</em>: <code>global</code> | <code>local</code> (Selected: <strong>local</strong>)</li>
 </ul>
-<p>Base URL:<br />
-- (Empty field)</p>
-<p><strong>Test Model</strong> (Button)</p>
+<p><strong>Default Model</strong></p>
+<ul>
+<li><em>Provider</em>: <code>Amazon Bedrock</code> | <code>Azure</code> | <code>OpenAI</code> (Selected: <strong>OpenAI</strong>)</li>
+<li><em>Model Name</em>: <code>gpt-4o</code></li>
+<li><em>API Key</em>: <em>[hidden]</em></li>
+<li><em>Proxy</em>: <code>http://localhost:8000</code></li>
+</ul>
+<p><strong>Test Model</strong>: [Button]</p>
 </div>
 </div>
 <p>You can create options that are local to the current testing framework. Simply click the <code>local[create]</code> button. If local options exist, Rapise will prioritize them over global ones. To delete local options, click <code>... &gt; Delete Local</code>.</p>
+<h4 id="amazon-bedrock">Amazon Bedrock<a class="headerlink" href="#amazon-bedrock" title="Permanent link">&para;</a></h4>
+<p>Rapise 8.3 adds support for <a href="https://aws.amazon.com/bedrock">Amazon Bedrock</a>. To configure Amazon Bedrock connection specify AWS Region, AWS Access Key and AWS Secret Access Key.</p>
+<h4 id="proxy">Proxy<a class="headerlink" href="#proxy" title="Permanent link">&para;</a></h4>
+<p>If you are behind a proxy, specify it's URL in the <code>Proxy</code> field (works for all providers).</p>
 <h3 id="chats">Chats<a class="headerlink" href="#chats" title="Permanent link">&para;</a></h3>
 <p>On the Chats page, you can select a previous chat and continue interacting with the AI. You can also start a new chat. When creating a new chat, you’ll be prompted to select a workflow. Supported workflows include:</p>
 <h4 id="ai-chat">AI Chat<a class="headerlink" href="#ai-chat" title="Permanent link">&para;</a></h4>
