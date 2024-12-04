@@ -6,6 +6,9 @@ This section explains **how to setup your environment for mobile testing**, once
 
 Rapise uses a third-party open-source tool called [Appium](http://appium.io) that is used to actually host the mobile devices and Rapise essentially communicates to the device via Appium.
 
+!!! important
+    The latest manual for configuring Android testing is available in the [knowledge base](https://www.inflectra.com/Support/KnowledgeBase/KB828.aspx).
+
 ## Testing Architectures
 
 Rapise runs on Windows computers (PC) and Android devices (both real and simulated) can be tested on either an Apple Macintosh (Mac) computer or a PC. So this means that there are two separate possible testing environments that you may need to setup:

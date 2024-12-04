@@ -8,6 +8,9 @@ explains the process for using Rapise to actually perform mobile testing.
 
 Rapise uses a third-party open-source tool called [Appium](http://appium.io>) that is used to actually host the mobile devices and Rapise essentially communicates to the device via Appium.
 
+!!! important
+    The latest manual for configuring iOS testing is available in the [knowledge base](https://www.inflectra.com/Support/KnowledgeBase/KB805.aspx).
+
 ## Testing Architecture
 
 Since Rapise runs on Windows computers (PC) and iOS devices (both real and simulated) can only be tested on an Apple Macintosh (Mac) computer, it is necessary that you install **Appium** and **Apple Xcode** onto the Mac and connect to Appium over the network from Rapise running on your PC.
