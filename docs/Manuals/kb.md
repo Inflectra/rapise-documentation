@@ -3,6 +3,94 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB883', 'AiTester Public Page Object')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB883.aspx">KB883</a> AiTester Public Page Object
+
+Rapise 8.3 introduces AI-powered capabilities for executing test cases. To leverage this feature, integrate the AiTester public page object into your framework. With AiTester, you can send text and image-augmented queries to AI models hosted by  OpenAI, Azure OpenAI, and Amazon Bedrock. Example applications include generating data, performing image-based verifications (e.g., detecting discrepancies or counting visual elements), and more.
+
+### <a onclick="return RegisterKbClick('KB881', 'Importing Manual Test Cases from Spira to Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB881.aspx">KB881</a> Importing Manual Test Cases from Spira to Rapise
+
+If you have manual tests saved in Spira and want to automate some of them, you can import these tests into a Rapise Framework. From there, you can automate the steps using the record-and-edit features or leverage AI tools for automation.
+
+### <a onclick="return RegisterKbClick('KB880', 'Run Playwright code with Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB880.aspx">KB880</a> Run Playwright code with Rapise
+
+If you already have Playwright tests and want to execute them using Rapise, or if you need Playwright's advanced features for complex scenarios, you can now run Playwright code directly within Rapise tests. Requires Rapise 8.3+.
+
+### <a onclick="return RegisterKbClick('KB879', 'Using Appium Windows Driver with Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB879.aspx">KB879</a> Using Appium Windows Driver with Rapise
+
+If you need to migrate your existing Windows UI tests built for Appium Windows Driver to Rapise, here is how you can do it. Requires Rapise 8.3+.
+
+### <a onclick="return RegisterKbClick('KB875', 'Downloading a file using Rapise API')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB875.aspx">KB875</a> Downloading a file using Rapise API
+
+If we need to download a binary file for which you have an URL, then here is the snippet.
+
+### <a onclick="return RegisterKbClick('KB866', 'Comparing strings with wildcard in RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB866.aspx">KB866</a> Comparing strings with wildcard in RVL
+
+Sometimes you need to check if string is matching specific pattern (i.e. has variable part like date, time etc). This topic covers the way to compare it in RVL.
+
+### <a onclick="return RegisterKbClick('KB865', 'Enable Camera Access for Chrome and Edge')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB865.aspx">KB865</a> Enable Camera Access for Chrome and Edge
+
+Some web applications interact with camera. Each time browser requests camera access browser shows the prompt that blocks the page. Here we show how to bypass this prompt.
+
+### <a onclick="return RegisterKbClick('KB861', 'Integration with ExtentReports')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB861.aspx">KB861</a> Integration with ExtentReports
+
+ExtentReports is a popular logger-style reporting library for automated tests. Since Rapise 8.2 there is a simple way of using it for custom reporting.
+
+### <a onclick="return RegisterKbClick('KB860', 'ChromeDriver update: onbeforeunload is not fired any more since 126.0.6465.0')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB860.aspx">KB860</a> ChromeDriver update: onbeforeunload is not fired any more since 126.0.6465.0
+
+Since version 126.0.6465.0 ChromeDriver behaves according to W3C standard. Specifically: Whenever active sessions is a list containing exactly one item, and that item is a HTTP session, but is not a BiDi session, then in the steps to fire beforeunload, implementations must act as if showing an unload prompt is likely to be annoying, deceptive, or pointless. This means that beforeunload prompts are never shown when there's an active HTTP-only session.
+
+### <a onclick="return RegisterKbClick('KB858', 'Rapise failed to install. How to resolve?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB858.aspx">KB858</a> Rapise failed to install. How to resolve?
+
+If you are facing issues installing Rapise, here are some common causes and resolutions that may help.
+
+### <a onclick="return RegisterKbClick('KB851', 'Generating OTP Passwords')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB851.aspx">KB851</a> Generating OTP Passwords
+
+Many applications require users to enter one-time passwords to login. In this article we describe how to implement OTP generator in Rapise.
+
+### <a onclick="return RegisterKbClick('KB844', 'How to specify additional arguments to Chrome embedded into Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB844.aspx">KB844</a> How to specify additional arguments to Chrome embedded into Rapise
+
+Rapise hosts embedded Chrome controls to display Start Page and Spira Dashboard. In rare cases it is necessary to pass additional arguments to the browser. For example proxy settings. Requires Rapise 8.1.29.44+.
+
+### <a onclick="return RegisterKbClick('KB834', 'Interrupting and customizing reporting messages')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB834.aspx">KB834</a> Interrupting and customizing reporting messages
+
+Sometimes you need to have alternative reporting or to change/tweak some reporting messages to better fit your needs. It is possible via SeSOnReportMessage.
+
+### <a onclick="return RegisterKbClick('KB833', 'How to use two different browser instances in one test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB833.aspx">KB833</a> How to use two different browser instances in one test
+
+Sometimes, an automation scenario may require performing steps in two separate browser sessions that don't share cookies and cache. In this article, we'll describe how to manage multiple browsers within the same test script and switch between them.
+
+### <a onclick="return RegisterKbClick('KB828', 'Android Testing Hints (April 2024 version)')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB828.aspx">KB828</a> Android Testing Hints (April 2024 version)
+
+Most complex part in Mobile testing is connecting to a simulator or device. In this article we describe steps necessary to configure the testing environment. Note: In brackets we specify versions of software components we used at the time of writing this article.
+
+### <a onclick="return RegisterKbClick('KB827', 'Running Rapise GUI Tests with Jenkins (April 2024 version)')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB827.aspx">KB827</a> Running Rapise GUI Tests with Jenkins (April 2024 version)
+
+The recommended approach is to use SpiraTest and RapiseLauncher for automated test execution. However, in some cases, this may not be an option. This article describes how to run Rapise tests using Jenkins.
+
+### <a onclick="return RegisterKbClick('KB820', 'Date manipulation in JavaScript')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB820.aspx">KB820</a> Date manipulation in JavaScript
+
+When testing applications, you might often need to work with dates obtained from the application. This article provides a couple of helpful templates to get you started with parsing and manipulating these dates.
+
+### <a onclick="return RegisterKbClick('KB813', 'Drawing in Mobile Tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB813.aspx">KB813</a> Drawing in Mobile Tests
+
+When testing mobile applications, you may need to draw graphics, such as a signature. This article provides a helper function that you can copy and customize for your tests.
+
+### <a onclick="return RegisterKbClick('KB810', 'BrowserStack Camera Image Injection')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB810.aspx">KB810</a> BrowserStack Camera Image Injection
+
+BrowserStack enables you to test image capture and QR/Bar code scanning from BrowserStack’s mobile device camera. If your mobile app has features, such as check scanning, profile image capture, and QR/Bar code scanning, you can use this feature to automate the testing of such a feature in your app.
+
+### <a onclick="return RegisterKbClick('KB808', 'iOS Testing Hints (Personal Team)')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB808.aspx">KB808</a> iOS Testing Hints (Personal Team)
+
+This is the second part of the iOS Testing Hints series. It describes how to configure real device testing if you dp not have a paid membership with Apple Developer.
+
+### <a onclick="return RegisterKbClick('KB805', 'iOS Testing Hints (March 2024 version)')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB805.aspx">KB805</a> iOS Testing Hints (March 2024 version)
+
+Most complex part in Mobile testing is connecting to a simulator or device. In this article we describe steps necessary to configure the testing environment. Note: In brackets we specify versions of software components we used at the time of writing this article.
+
+### <a onclick="return RegisterKbClick('KB803', 'Invoking async/Promise from Rapise Script')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB803.aspx">KB803</a> Invoking async/Promise from Rapise Script
+
+Rapise Scripts are sequential. Sometimes you need to call a library that only has async API (i.e. OpenAI) and thus need to do it sequentially.
+
 ### <a onclick="return RegisterKbClick('KB798', 'Testing mobile applications built with Ionic framework')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB798.aspx">KB798</a> Testing mobile applications built with Ionic framework
 
 Ionic is an open source UI toolkit for building performant, high-quality mobile apps using web technologies — HTML, CSS, and JavaScript. This means that being mobile, Ionic applications are web applications by nature. And it is much more convenient to test them via WebDriver rather than Appium. Requires Rapise 8.1+.
@@ -945,7 +1033,7 @@ There are several types of delays one can use to slow down test execution. Impli
 
 ### <a onclick="return RegisterKbClick('KB300', 'Running Rapise GUI Tests with Jenkins')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx">KB300</a> Running Rapise GUI Tests with Jenkins
 
-Recommended approach is to use SpiraTest and RapiseLauncher designed for this task. In some cases it is not an option and we need to execute a test directly.
+Recommended approach is to use SpiraTest and RapiseLauncher designed for this task. In some cases it is not an option and we need to execute a test directly. Note: this manual is out of date. Please refer to the new one for Jenkins 2.440 instead.
 
 ### <a onclick="return RegisterKbClick('KB299', 'Installing Rapise on PC without Internet Access')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB299.aspx">KB299</a> Installing Rapise on PC without Internet Access
 
@@ -1371,7 +1459,7 @@ By design Rapise tries to record user activity on the highest possible level. Th
 
 This guide describes the different types of mouse events and how they are recorded in Rapise.
 
-### <a onclick="return RegisterKbClick('KB112', 'Re-Using Test Logic')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB112.aspx">KB112</a> Re-Using Test Logic
+### <a onclick="return RegisterKbClick('KB112', 'Re-Using Test Logic [obsolete]')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB112.aspx">KB112</a> Re-Using Test Logic [obsolete]
 
 It is common for test scenarios to share similar pieces of functionality. A good example of such sharing is login logic. This guide outlines ways in which you can share such logic to avoid having repeated code in your tests. This article is obsolete. To find out about re-using test parts, modules and page objects please refer to Rapise 8.0: how to use Page Objects/Modules.
 
