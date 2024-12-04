@@ -64,6 +64,7 @@ Tester object. Use it to perform assertions during test playback and output rele
 |  [GetTestName](#gettestname) | Returns name of the running test. |
 |  [GetTestStatus](#getteststatus) | Gets status of currently executed test. |
 |  [IgnoreStatus](#ignorestatus) | <p>In IgnoreStatus mode the assertion status is always treated as "Info". |
+|  [Log](#log) | Appends a message to the log file/output view. |
 |  [Message](#message) | Writes a message to the report. |
 |  [MessageBox](#messagebox) | Shows message box to user. |
 |  [MessageBoxPrompt](#messageboxprompt) | Shows message box with question to the user and checks if user presses "Yes" or "No". |
@@ -1003,10 +1004,32 @@ Tester.IgnoreStatus(ignore)
 
 <a name="see.also.tester.ignorestatus"></a>
 
+<a name="Log"></a>    
+#### Log
+
+Appends a message to the log file/output view. Does not affect the report. Intended use is for debugging purposes.
+
+```javascript
+Tester.Log(message)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| message | string |  Text to write into the report. |
+
+
+
+
+
+<a name="see.also.tester.log"></a>
+
 <a name="Message"></a>    
 #### Message
 
-Writes a message to the report. Use for logging purposes.
+Writes a message to the report.
 Message may contain some additional data (links, images, comments) set via 'data' parameter.
 
 ```javascript
