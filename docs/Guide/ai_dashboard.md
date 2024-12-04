@@ -35,30 +35,33 @@ The dashboard comprises three pages:
 
 In its initial release, Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an [OpenAI Api Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key). For [Azure OpenAI](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key), you also need to specify the endpoint URL.
 
+
 === "Screenshot"
-    ![Dashboard Settings](./img/ai_dashboard_settings.png){width="870px"}
+    ![Dashboard Settings](./img/ai_dashboard_settings.png){width="900px"}
 === "Transcript"
-    **Options**
+    **Options Tab**
 
-    Scope *global*  
-    - `global` (selected)  
-    - `local [create]`
+    - *Scope*: `global` | `local` (Selected: **local**)
 
-    Please select an agent workflow for AI Command:  
-    - `AI Command` (dropdown option)
+    **Default Model**
 
-    Enter parameters for the default model:  
-    - `gpt-4o-mini`
+    - *Provider*: `Amazon Bedrock` | `Azure` | `OpenAI` (Selected: **OpenAI**)
+    - *Model Name*: `gpt-4o`
+    - *API Key*: *[hidden]*
+    - *Proxy*: `http://localhost:8000`
 
-    - (Obscured text for input)
-
-    Base URL:  
-    - (Empty field)
-
-    **Test Model** (Button)
+    **Test Model**: [Button]
 
 
 You can create options that are local to the current testing framework. Simply click the `local[create]` button. If local options exist, Rapise will prioritize them over global ones. To delete local options, click `... > Delete Local`.
+
+#### Amazon Bedrock
+
+Rapise 8.3 adds support for [Amazon Bedrock](https://aws.amazon.com/bedrock). To configure Amazon Bedrock connection specify AWS Region, AWS Access Key and AWS Secret Access Key.
+
+#### Proxy
+
+If you are behind a proxy, specify it's URL in the `Proxy` field (works for all providers).
 
 ### Chats
 
