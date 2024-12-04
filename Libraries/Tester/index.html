@@ -4732,6 +4732,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    Log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#message" class="md-nav__link">
     Message
   </a>
@@ -12060,6 +12067,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    Log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#message" class="md-nav__link">
     Message
   </a>
@@ -12437,6 +12451,10 @@ You do not need to record or learn this object, it is always automatically avail
 <tr>
 <td><a href="#ignorestatus">IgnoreStatus</a></td>
 <td><p>In IgnoreStatus mode the assertion status is always treated as "Info".</td>
+</tr>
+<tr>
+<td><a href="#log">Log</a></td>
+<td>Appends a message to the log file/output view.</td>
 </tr>
 <tr>
 <td><a href="#message">Message</a></td>
@@ -13705,9 +13723,32 @@ just for information purposes (i.e. it does not affect final test status).</p>
 </tbody>
 </table>
 <p><a name="see.also.tester.ignorestatus"></a></p>
+<p><a name="Log"></a>    </p>
+<h4 id="log">Log<a class="headerlink" href="#log" title="Permanent link">&para;</a></h4>
+<p>Appends a message to the log file/output view. Does not affect the report. Intended use is for debugging purposes.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Log</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Text to write into the report.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="see.also.tester.log"></a></p>
 <p><a name="Message"></a>    </p>
 <h4 id="message">Message<a class="headerlink" href="#message" title="Permanent link">&para;</a></h4>
-<p>Writes a message to the report. Use for logging purposes.
+<p>Writes a message to the report.
 Message may contain some additional data (links, images, comments) set via 'data' parameter.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span>
 </code></pre></div>
