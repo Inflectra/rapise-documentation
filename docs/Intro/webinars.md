@@ -6,6 +6,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Season 2024
 
+- [Rapise 8.3](https://youtu.be/8PO7YMUFUes)
 - [Harness AI to Simplify Test Automation](https://youtu.be/YiSu_iuST24)
 - [Rapise 8.2](https://youtu.be/n7coxYI28dA)
 - [AI in Rapise(short videos, playlist)](https://www.youtube.com/playlist?list=PL1GncVUgF5nsm6OxusGnzY8iBE-nEp36C)
@@ -105,6 +106,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 ### Highlights
 
+- [Rapise 8.3](https://youtu.be/8PO7YMUFUes)
 - [Rapise 8.2](https://youtu.be/n7coxYI28dA)
 - [Rapise 8.1](https://youtu.be/xVN40UBCobo)
 - [Rapise 8.0](https://youtu.be/wi2cXiVnchY)
@@ -123,6 +125,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 ### Introductions
 
 - [Getting Started Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5ntLDCyJMx5L9hKE8ainRCDd)
+- [Rapise Tips & Hacks Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nslUwC33q2NokDRtfJVxjE4)
 - [Using Rapise with SpiraTest](https://youtu.be/5ybrBQOzez8)
 - [Introduction To Powerful New Rapise 6](https://youtu.be/dAtSwNawL8Q)
 - [Discover Test Automation With Rapise 6](https://youtu.be/nBJ5QKEEguM)
