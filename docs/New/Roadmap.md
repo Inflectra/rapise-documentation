@@ -8,21 +8,39 @@
     If you have any feedback or suggestions regarding this roadmap, please email us at support@inflectra.com.
 
 
-## Version 8.3 (Q4 2024)
+## Version 8.4 (Q2 2025)
 
-- Add support for Appium Windows Driver
-- Integrate with Playwright
-- Enhance CSS locators
-- AI features fixes and improvements
-- Performance optimization for test frameworks with 20k+ test cases
+- Dynamic Test Sets support
+- Support for Google Gemini models
+- AI-based failure/report analysis
 
-## 2024
+## 2025
 
 We will continue to work on deep integration between Rapise, Spira and Git. The focus is on simplicity of building test frameworks and execution of tests. Also as usual we will keep up-to-date our support for selected CRM/ERP systems: Microsoft Dynamics family of products, Salesforce, Oracle and SAP.
 
-We are also going to expand our AI research and equip Rapise with AI-based features. These features will help in areas such as test data generation, test case creation, code generation, manual test conversion, UI element recognition and framework management.
+We are also going to continue our AI research and enhance Rapise with more AI-based features. These features will help in areas such as manual to automated test case conversion, augmented recording and framework management.
 
 ## Backlog
+
+### Smart Features (AI-based)
+
+### Agentic Workflow Support
+
+Ability to chat with Spira and Rapise and perform high level tasks like data export/import, perform data analysis and do complex user-based scenarios.
+
+#### Computer Vision-Based Element Locator
+
+This locator should be capable of identifying an element's bounding rectangle using a page screenshot and a text prompt. It can be used during test step generation and for automatic locator self-healing.
+
+**Examples:**
+
+- Locate the "Username" text field.
+- Locate the "Edit" button for the book *The Adventures of Tom Sawyer*.
+
+#### AI Technology
+
+- Improve token spending by leveraging more optimal RAG and prompt tuning methods.
+- Improve automatic error correction efficiency by automatic try & fix loops.
 
 ### SpiraTest Integration Enhancements
 
@@ -49,7 +67,6 @@ We are also going to expand our AI research and equip Rapise with AI-based featu
 
 - **GitHub Actions** - run Rapise tests as a step of GitHub CI/CD workflow.
 - **Proxy setting for JMeter Configuration** - make it easier to record Rapise API tests with JMeter.
-- **Reporter API**: Callbacks to plug in third-party reporting engines.
 - **Jenkins plugin**: Plugin to simplify running Rapise tests from Jenkins.
 - **Visual Studio Code integration**: Code helper for Rapise objects/actions. Start recording/playback from VS Code.
 - **Azure Test Plans integration**: Linking to a test case in an Azure Test Plan.
@@ -57,8 +74,6 @@ We are also going to expand our AI research and equip Rapise with AI-based featu
 ### Features
 
 - **FileCompare** - add FileCompare UI to assist with adding file checkpoints on recording, updating checkpoints and analyzing differences after execution for files (txt, PDF, doc, JSON, csv) and text fields of runtime objects (Window text, Object Value).
-
-### Smart Features (AI-based)
 
 #### Chat with Rapise
 
@@ -80,29 +95,6 @@ Generate test case templates for a framework based on the description of the app
 - Generate 20 test case templates for a Library Information System website that manages a list of books and authors.
 - Organize the generated test case names into logical groups based on the functional areas of the application.
 - Create test case folders and templates for each group.
-
-#### Computer Vision-Based Element Locator
-
-This locator should be capable of identifying an element's bounding rectangle using a page screenshot and a text prompt. It can be used during test step generation and for automatic locator self-healing.
-
-**Examples:**
-
-- Locate the "Username" text field.
-- Locate the "Edit" button for the book *The Adventures of Tom Sawyer*.
-
-#### Visual Checkpoints
-
-Implement functionality to capture screenshots of the UI at predefined points in the test flow and compare them to baseline images. Any visual differences beyond a configurable threshold (e.g., pixel-level or layout variations) will be automatically flagged as failures for review.
-
-#### Add OCR Capabilities
-
-Leverage AI to extract text from UI elements when accessing it through the DOM is not possible.
-
-#### AI Technology
-
-- Improve token spending by leveraging more optimal RAG and prompt tuning methods.
-- Improve automatic error correction efficiency by automatic try & fix loops.
-- Add support for Google and Amazon models.
 
 ### Technologies
 
