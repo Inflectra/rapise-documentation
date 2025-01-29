@@ -11396,7 +11396,7 @@
 <span class="w">    </span><span class="na">[Test]</span><span class="w"> </span><span class="cm">/* – THIS IS AN ATTRIBUTE FOR STANDARD NUnit Test */</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">MyTest1</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Check equality&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Check equality&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -11414,7 +11414,7 @@
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TestIEandFirefox</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">exitCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
-<span class="w">        </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -11502,7 +11502,7 @@ course of a session.</p>
 <span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TestSeS</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">exitCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
-<span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now you also have a snippet, by which you can easily add <code>TestSeS</code> method with <code>[SeSNUnitTest(@"&lt;path to .sstest&gt;")]</code> attribute. Right
@@ -11515,7 +11515,7 @@ click in class body and from opened context menu select <code>Insert Snippet…<
 <span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TestSeS</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">exitCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SeSNUnitHelper</span><span class="p">.</span><span class="n">TestExecute</span><span class="p">();</span>
-<span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>You just need to add path of <code>.sstest</code>  file to <code>SeSNUnitTest</code> attribute. If you add code via snippet in standard SeSNUnit Test project you will have two <code>TestSeS</code> methods, so don’t forget to change the name of one of them.</p>
