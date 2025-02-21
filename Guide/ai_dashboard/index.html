@@ -10836,6 +10836,26 @@
     Amazon Bedrock
   </a>
   
+    <nav class="md-nav" aria-label="Amazon Bedrock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anthropic" class="md-nav__link">
+    Anthropic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nova" class="md-nav__link">
+    Nova
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -11487,6 +11507,26 @@
     Amazon Bedrock
   </a>
   
+    <nav class="md-nav" aria-label="Amazon Bedrock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anthropic" class="md-nav__link">
+    Anthropic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nova" class="md-nav__link">
+    Nova
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -11702,6 +11742,14 @@
 <p>You can create options that are local to the current testing framework. Simply click the <code>local[create]</code> button. If local options exist, Rapise will prioritize them over global ones. To delete local options, click <code>... &gt; Delete Local</code>.</p>
 <h4 id="amazon-bedrock">Amazon Bedrock<a class="headerlink" href="#amazon-bedrock" title="Permanent link">&para;</a></h4>
 <p>Rapise 8.3 adds support for <a href="https://aws.amazon.com/bedrock">Amazon Bedrock</a>. To configure Amazon Bedrock connection specify AWS Region, AWS Access Key and AWS Secret Access Key.</p>
+<p>You will also need to provide a <code>Model ID</code>. Here are a few examples:</p>
+<h5 id="anthropic">Anthropic<a class="headerlink" href="#anthropic" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>arn:aws:bedrock:us-east-1:ACCOUNT_ID:inference-profile/us.anthropic.claude-3-5-sonnet-20241022-v2:0
+</code></pre></div>
+<h5 id="nova">Nova<a class="headerlink" href="#nova" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>amazon.nova-pro-v1:0
+</code></pre></div>
+<p>See also <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">Supported foundation models in Amazon Bedrock</a>.</p>
 <h4 id="proxy">Proxy<a class="headerlink" href="#proxy" title="Permanent link">&para;</a></h4>
 <p>If you are behind a proxy, specify it's URL in the <code>Proxy</code> field (works for all providers).</p>
 <h3 id="chats">Chats<a class="headerlink" href="#chats" title="Permanent link">&para;</a></h3>
