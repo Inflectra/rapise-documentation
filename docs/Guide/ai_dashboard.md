@@ -59,6 +59,22 @@ You can create options that are local to the current testing framework. Simply c
 
 Rapise 8.3 adds support for [Amazon Bedrock](https://aws.amazon.com/bedrock). To configure Amazon Bedrock connection specify AWS Region, AWS Access Key and AWS Secret Access Key.
 
+You will also need to provide a `Model ID`. Here are a few examples:
+
+##### Anthropic
+
+```
+arn:aws:bedrock:us-east-1:ACCOUNT_ID:inference-profile/us.anthropic.claude-3-5-sonnet-20241022-v2:0
+```
+
+##### Nova
+
+```
+amazon.nova-pro-v1:0
+```
+
+See also [Supported foundation models in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html).
+
 #### Proxy
 
 If you are behind a proxy, specify it's URL in the `Proxy` field (works for all providers).
