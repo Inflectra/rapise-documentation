@@ -125,18 +125,6 @@ All cached information regarding AI interactions is saved in the `%WORKDIR%\AI` 
 
 Every `AI` action is performed within a specific context, which can include several elements such as previous actions, variables, repository objects, positive and negative examples, and shared instructions.
 
-### AI Prompt Comments
-
-AI prompt comments start with `##` and are passed directly to the `AI` command prompt. Such comments help clarify some common details that may assist in interpreting commands.
-
-For example, this testing framework has page objects `POAPI` and `POCommon`. Each has a `DoLogin` command, i.e., `POPAPI.DoLogin` and `POCommon.DoLogin`. So, it is up to AI to choose which one to use when generating code. In this example, it preferred to use API:
-
-![Login with POAPI](img/AI_login_poapi.png)
-
-Now if we want the test case to use the UI, we may need an additional instruction. We start it with `##` to let Rapise know that it is for `AI`. We want to tell that all the actions in this RVL should be done using UI, not API, and here is the result:
-
-![Login with POCommon](img/AI_login_pocommon.png)
-
 ### Previous Actions
 
 It is often necessary to reference previous actions to ensure that the current AI-generated command harmonizes well with preceding steps. This helps maintain continuity and coherence in the automated sequence of steps within the test case.
@@ -265,6 +253,18 @@ Once we have this example, the generation for other cases also changes. I.e.:
 !!! note
     Rapise looks for AIExamples.txt file in two folders: %WORKDIR%/AI and %WORKDIR%/Shared. If both files exist then information from both of them is used.
 
+### AI Prompt Comments
+
+AI prompt comments start with `##` and are passed directly to the `AI` command prompt. Such comments help clarify some common details that may assist in interpreting commands.
+
+For example, this testing framework has page objects `POAPI` and `POCommon`. Each has a `DoLogin` command, i.e., `POPAPI.DoLogin` and `POCommon.DoLogin`. So, it is up to AI to choose which one to use when generating code. In this example, it preferred to use API:
+
+![Login with POAPI](img/AI_login_poapi.png)
+
+Now if we want the test case to use the UI, we may need an additional instruction. We start it with `##` to let Rapise know that it is for `AI`. We want to tell that all the actions in this RVL should be done using UI, not API, and here is the result:
+
+![Login with POCommon](img/AI_login_pocommon.png)
+
 ### Shared Instructions
 
 Shared instructions streamline the AI code generation process by providing general guidelines and frameworks that apply across multiple test cases. These instructions ensure consistency and standardization in the AI-generated code.
@@ -294,6 +294,40 @@ In this example, we may see that it is clever enough to do clear only before the
 
 !!! note
     Rapise looks for AIPrompt.txt file in two folders: %WORKDIR%/AI and %WORKDIR%/Shared. If both files exist then information from both of them is used.
+
+### Including Prompts in Prompts
+
+At times, you may want to merge multiple external prompts into the prompts for a specific RVL sheet.
+
+For example, consider the extra prompt shown below:
+
+![Extra Prompt](img/AI_extra_prompt_to_include.png)
+
+To apply this extra prompt only to certain sheets, you can explicitly include it using the following directive within RVL sheet:
+
+```
+##	#include AI\ReportingPrompt.txt
+```
+
+Where path is full path from the root of the framework, that you may get from file properties:
+
+![Include Extra Prompt](img/AI_include_extra_prompt.png)
+
+Similarly, you can embed one prompt file within another. For instance:
+
+```
+#include AI/SomePrompt.txt
+```
+
+For example, we may include a `ToolsPrompt.txt` like that:
+
+![Tools Prompt](img/AI_tools_prompt.png)
+
+In this scenario, `ToolsPrompt.txt` itself includes `AI\ReportingPrompt.txt`, resulting in:
+
+![Tools Prompt Result](img/AI_tools_prompt_result.png)
+
+As seen above, conditions from both prompts are applied when generating the code.
 
 ## Naming
 
