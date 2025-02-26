@@ -11763,19 +11763,19 @@
 <h3 id="including-prompts-in-prompts">Including Prompts in Prompts<a class="headerlink" href="#including-prompts-in-prompts" title="Permanent link">&para;</a></h3>
 <p>At times, you may want to merge multiple external prompts into the prompts for a specific RVL sheet.</p>
 <p>For example, consider the extra prompt shown below:</p>
-<p><img alt="Extra Prompt" src="../img/AI_extra_prompt_to_include.png" /></p>
+<p><img alt="Extra Prompt" src="img/AI_extra_prompt_to_include.png" /></p>
 <p>To apply this extra prompt only to certain sheets, you can explicitly include it using the following directive within RVL sheet:</p>
 <div class="highlight"><pre><span></span><code>##  #include AI\ReportingPrompt.txt
 </code></pre></div>
 <p>Where path is full path from the root of the framework, that you may get from file properties:</p>
-<p><img alt="Include Extra Prompt" src="../img/AI_include_extra_prompt.png" /></p>
+<p><img alt="Include Extra Prompt" src="img/AI_include_extra_prompt.png" /></p>
 <p>Similarly, you can embed one prompt file within another. For instance:</p>
 <div class="highlight"><pre><span></span><code>#include AI/SomePrompt.txt
 </code></pre></div>
 <p>For example, we may include a <code>ToolsPrompt.txt</code> like that:</p>
-<p><img alt="Tools Prompt" src="../img/AI_tools_prompt.png" /></p>
+<p><img alt="Tools Prompt" src="img/AI_tools_prompt.png" /></p>
 <p>In this scenario, <code>ToolsPrompt.txt</code> itself includes <code>AI\ReportingPrompt.txt</code>, resulting in:</p>
-<p><img alt="Tools Prompt Result" src="../img/AI_tools_prompt_result.png" /></p>
+<p><img alt="Tools Prompt Result" src="img/AI_tools_prompt_result.png" /></p>
 <p>As seen above, conditions from both prompts are applied when generating the code.</p>
 <h2 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h2>
 <p>Now, with AI, naming of objects, actions, and methods as well as descriptive comments become even more important. The better you express your application and API, the better AI may combine it to implement the test. It all together helps to improve both the quality of test cases and the integrity of the testing framework.</p>
