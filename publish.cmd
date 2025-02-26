@@ -1,4 +1,5 @@
 git pull  
+git push
 
 call toc.cmd
 
