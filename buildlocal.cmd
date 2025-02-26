@@ -1,9 +1,9 @@
 pushd %~dp0
 cd tools
-python mkdocsyml.py --output ../mkdocslocal.yml --filters "'UITAP'" "repo_name:" "repo_url:" "google_analytics:"
+call python mkdocsyml.py --output ../mkdocslocal.yml --filters "'UITAP'" "repo_name:" "repo_url:" "google_analytics:" || echo "Python script failed"
 popd
 
-mkdocs build --config-file mkdocslocal.yml --clean
+call mkdocs build --config-file mkdocslocal.yml --clean
 
 del /s/f/q HelpSite.zip
 
