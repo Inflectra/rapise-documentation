@@ -1,5 +1,8 @@
 # SpiraTest Integration
 
+!!! important
+	Minimal supported version of Spira is 6.15.1.0.
+
 ## Overview
 
 [SpiraTest](https://www.inflectra.com/SpiraTest/) is a web-based quality assurance and **test management system** with integrated release scheduling and defect tracking. SpiraTest includes the ability to handle manual, exploratory and automated tests, record the results and log any associated defects.
