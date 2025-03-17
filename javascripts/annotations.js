@@ -626,7 +626,16 @@ var annotations =
                 link: "https://www.inflectra.com/Support/KnowledgeBase/KB574.aspx"
             }
         ]
-    }
+    },
+    {
+        name: "webdriver.actions",
+        refs: [
+            {
+                text: "Actions object",
+                link: "/Libraries/Actions/#build"
+            }
+        ]
+    }    
 ]
 
 function RapiseAnnotateItem(itemName, refs)
