@@ -119,6 +119,11 @@ Since Rapise 7.4 you may schedule a test set directly from the dashboard. Naviga
 
 ![Schedule](./img/schedule.png)
 
+### Dynamic Test Sets
+
+In Rapise 8.4, we added support for [Dynamic Test Sets](dynamic_test_sets.md), a powerful feature that lets you execute targeted tests based on specific criteria. Instead of manually selecting individual test cases, you can now define a test set using properties like name, tags, and parameters, similar to filtering in tools like Microsoft VSTest. This allows you to focus your testing efforts on particular scenarios, such as smoke tests or regression tests for a specific bug fix.
+
+
 ### CSV Editor
 
 Since Rapise 7.3 you may use convenient CSV editor to create and change Test Set attachments, especially those used as [Input Data Table](#input-data-table).
