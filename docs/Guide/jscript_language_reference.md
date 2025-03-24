@@ -18,7 +18,7 @@ You can set the desired engine in two locations:
 
 ### Features
 
-1. NodeJS v14 contains most of latest features of JavaScript including [EcmaScript2015 (ES6) and beyond](https://nodejs.org/en/docs/es6/). You may see more detailed list of features [here](https://node.green/).
+1. NodeJS v18 contains most of latest features of JavaScript including [EcmaScript2015 (ES6) and beyond](https://nodejs.org/en/docs/es6/). You may see more detailed list of features [here](https://node.green/).
 2. You may find the most complete and up to date language reference at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).
 3. You may use most of available [npm](https://www.npm.org/) packages in your test scripts. You may include `node_modules` folders in the root of your testing framework (i.e. `%WORKDIR%\node_modules`).
 
@@ -28,9 +28,36 @@ You can set the desired engine in two locations:
 
 2. Rapise has own copy of **node.exe** installed. So if you have npm modules installed globally and need to use them in your test, you have to install them locally into the framework.
 
+### Npm Console
+
+This section assumes your testing framework is running with NodeJS enabled (which is the case unless you are using an older testing framework).
+
+You can integrate external NPM modules and packages into your test scripts. However, when using an external package, be sure to install it using Rapise's built-in package manager. Installing via a global package manager (if available) makes the packages visible to global scripts but not within Rapise tests. Instead, use the internal `npm` console provided by Rapise, which is tied to the NodeJS instance running your tests.
+
+To access the internal `npm` console, go to the `Tools > Npm Console` [menu](manu_and_toolbars.md#tools).
+
+After opening the console, you can install any package as usual.
+
+You have the option to save the installed packages alongside your tests, or simply save the `package.json` or `package_lock.json` files and restore the dependencies when needed.
+
+```javascript
+function _NpmInit()
+{
+    // Restore packages if necessary.
+    // This assumes that the framework root folder contains a package.json file.
+    if (!File.FolderExists(g_workDir + '\\node_modules'))
+    {
+        const npmCmd = g_helper.ResolvePath("InstrumentJS/npm.cmd");
+        Global.DoCmd('"' + npmCmd + '"' + " install --prefix \"" + g_workDir + "\"", g_workDir, true, false);
+    }
+}
+```
+
+For example, you may call `_NpmInit` from [SeSOnTestInit()](understanding_the_script.md#sesontestinig) function.
+
 ## [Reference](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm)
 
-The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no `Array.join` or `String.trim`. 
+The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no `Array.join` or `String.trim`.
 
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfFeatureInformation.htm" title="Feature Information">Feature Information</a></li>
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpecmafeatures.htm" title="Microsoft JScript Features - ECMA">Microsoft JScript Features - ECMA</a></li>
