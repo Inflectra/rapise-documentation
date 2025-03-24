@@ -45,9 +45,9 @@ In its initial release, Rapise supports both OpenAI and Azure OpenAI models. To 
 
     **Default Model**
 
-    - *Provider*: `Amazon Bedrock` | `Azure` | `OpenAI` (Selected: **OpenAI**)
-    - *Model Name*: `gpt-4o`
-    - *API Key*: *[hidden]*
+    - *Provider*: `Amazon Bedrock` | `Azure` | `OpenAI` | Google (Selected: **Google**)
+    - *Model Name*: `gemini-2.0-flash`
+    - *API Key*: `API Key`
     - *Proxy*: `http://localhost:8000`
 
     **Test Model**: [Button]
@@ -74,6 +74,22 @@ amazon.nova-pro-v1:0
 ```
 
 See also [Supported foundation models in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html).
+
+#### Azure
+
+If you have an Azure deployment with OpenAI models, we've got you covered. Just specify the deployment URL, model name and the api key. The deployment URL looks like
+
+```
+https://your-deployment-name.openai.azure.com/
+```
+
+#### OpenAI
+
+Dealing directly with OpenAI models is easy. You do not need to provide any URLs, just specify an API key and a model name.
+
+#### Google
+
+Rapise 8.4 adds support for Gemini models. You may find available model IDs in [https://aistudio.google.com](https://aistudio.google.com). We've got decent results with `gemini-2.0-flash` and `gemini-2.0-pro-exp-02-05`.
 
 #### Proxy
 
