@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_3/" class="md-tabs__link">
+      <a href="../../New/8_4/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1588,6 +1588,13 @@
           <li class="md-nav__item">
   <a href="#limitations" class="md-nav__link">
     Limitations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npm-console" class="md-nav__link">
+    Npm Console
   </a>
   
 </li>
@@ -11111,6 +11118,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#npm-console" class="md-nav__link">
+    Npm Console
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11394,6 +11408,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_4/" class="md-nav__link">
+        Release Notes for 8.4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_3/" class="md-nav__link">
         Release Notes for 8.3
       </a>
@@ -11633,6 +11659,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#npm-console" class="md-nav__link">
+    Npm Console
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11795,7 +11828,7 @@ Starting from Rapise 8.1, the default JavaScript engine used is <a href="https:/
 <h2 id="nodejs-support-features-and-limitations">NodeJS Support Features and Limitations<a class="headerlink" href="#nodejs-support-features-and-limitations" title="Permanent link">&para;</a></h2>
 <h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
 <ol>
-<li>NodeJS v14 contains most of latest features of JavaScript including <a href="https://nodejs.org/en/docs/es6/">EcmaScript2015 (ES6) and beyond</a>. You may see more detailed list of features <a href="https://node.green/">here</a>.</li>
+<li>NodeJS v18 contains most of latest features of JavaScript including <a href="https://nodejs.org/en/docs/es6/">EcmaScript2015 (ES6) and beyond</a>. You may see more detailed list of features <a href="https://node.green/">here</a>.</li>
 <li>You may find the most complete and up to date language reference at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a>.</li>
 <li>You may use most of available <a href="https://www.npm.org/">npm</a> packages in your test scripts. You may include <code>node_modules</code> folders in the root of your testing framework (i.e. <code>%WORKDIR%\node_modules</code>).</li>
 </ol>
@@ -11808,8 +11841,26 @@ Starting from Rapise 8.1, the default JavaScript engine used is <a href="https:/
 <p>Rapise has own copy of <strong>node.exe</strong> installed. So if you have npm modules installed globally and need to use them in your test, you have to install them locally into the framework.</p>
 </li>
 </ol>
+<h3 id="npm-console">Npm Console<a class="headerlink" href="#npm-console" title="Permanent link">&para;</a></h3>
+<p>This section assumes your testing framework is running with NodeJS enabled (which is the case unless you are using an older testing framework).</p>
+<p>You can integrate external NPM modules and packages into your test scripts. However, when using an external package, be sure to install it using Rapise's built-in package manager. Installing via a global package manager (if available) makes the packages visible to global scripts but not within Rapise tests. Instead, use the internal <code>npm</code> console provided by Rapise, which is tied to the NodeJS instance running your tests.</p>
+<p>To access the internal <code>npm</code> console, go to the <code>Tools &gt; Npm Console</code> <a href="manu_and_toolbars.md#tools">menu</a>.</p>
+<p>After opening the console, you can install any package as usual.</p>
+<p>You have the option to save the installed packages alongside your tests, or simply save the <code>package.json</code> or <code>package_lock.json</code> files and restore the dependencies when needed.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">_NpmInit</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Restore packages if necessary.</span>
+<span class="w">    </span><span class="c1">// This assumes that the framework root folder contains a package.json file.</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">File</span><span class="p">.</span><span class="nx">FolderExists</span><span class="p">(</span><span class="nx">g_workDir</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;\\node_modules&#39;</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">npmCmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">g_helper</span><span class="p">.</span><span class="nx">ResolvePath</span><span class="p">(</span><span class="s2">&quot;InstrumentJS/npm.cmd&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoCmd</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">npmCmd</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&quot;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; install --prefix \&quot;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">g_workDir</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">g_workDir</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>For example, you may call <code>_NpmInit</code> from <a href="../understanding_the_script/#sesontestinig">SeSOnTestInit()</a> function.</p>
 <h2 id="reference"><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm">Reference</a><a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
-<p>The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no <code>Array.join</code> or <code>String.trim</code>. </p>
+<p>The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no <code>Array.join</code> or <code>String.trim</code>.</p>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfFeatureInformation.htm" title="Feature Information">Feature Information</a></li>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpecmafeatures.htm" title="Microsoft JScript Features - ECMA">Microsoft JScript Features - ECMA</a></li>
 <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpnonecmafeatures.htm" title="Microsoft JScript Features - Non-ECMA">Microsoft JScript Features - Non-ECMA</a></li>

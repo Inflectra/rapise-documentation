@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_3/" class="md-tabs__link">
+      <a href="../../New/8_4/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -10859,6 +10859,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    Azure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openai" class="md-nav__link">
+    OpenAI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google" class="md-nav__link">
+    Google
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#proxy" class="md-nav__link">
     Proxy
   </a>
@@ -11267,6 +11288,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_4/" class="md-nav__link">
+        Release Notes for 8.4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_3/" class="md-nav__link">
         Release Notes for 8.3
       </a>
@@ -11542,6 +11575,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    Azure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openai" class="md-nav__link">
+    OpenAI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google" class="md-nav__link">
+    Google
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#proxy" class="md-nav__link">
     Proxy
   </a>
@@ -11743,9 +11797,9 @@
 </ul>
 <p><strong>Default Model</strong></p>
 <ul>
-<li><em>Provider</em>: <code>Amazon Bedrock</code> | <code>Azure</code> | <code>OpenAI</code> (Selected: <strong>OpenAI</strong>)</li>
-<li><em>Model Name</em>: <code>gpt-4o</code></li>
-<li><em>API Key</em>: <em>[hidden]</em></li>
+<li><em>Provider</em>: <code>Amazon Bedrock</code> | <code>Azure</code> | <code>OpenAI</code> | Google (Selected: <strong>Google</strong>)</li>
+<li><em>Model Name</em>: <code>gemini-2.0-flash</code></li>
+<li><em>API Key</em>: <code>API Key</code></li>
 <li><em>Proxy</em>: <code>http://localhost:8000</code></li>
 </ul>
 <p><strong>Test Model</strong>: [Button]</p>
@@ -11762,6 +11816,14 @@
 <div class="highlight"><pre><span></span><code>amazon.nova-pro-v1:0
 </code></pre></div>
 <p>See also <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">Supported foundation models in Amazon Bedrock</a>.</p>
+<h4 id="azure">Azure<a class="headerlink" href="#azure" title="Permanent link">&para;</a></h4>
+<p>If you have an Azure deployment with OpenAI models, we've got you covered. Just specify the deployment URL, model name and the api key. The deployment URL looks like</p>
+<div class="highlight"><pre><span></span><code>https://your-deployment-name.openai.azure.com/
+</code></pre></div>
+<h4 id="openai">OpenAI<a class="headerlink" href="#openai" title="Permanent link">&para;</a></h4>
+<p>Dealing directly with OpenAI models is easy. You do not need to provide any URLs, just specify an API key and a model name.</p>
+<h4 id="google">Google<a class="headerlink" href="#google" title="Permanent link">&para;</a></h4>
+<p>Rapise 8.4 adds support for Gemini models. You may find available model IDs in <a href="https://aistudio.google.com">https://aistudio.google.com</a>. We've got decent results with <code>gemini-2.0-flash</code> and <code>gemini-2.0-pro-exp-02-05</code>.</p>
 <h4 id="proxy">Proxy<a class="headerlink" href="#proxy" title="Permanent link">&para;</a></h4>
 <p>If you are behind a proxy, specify it's URL in the <code>Proxy</code> field (works for all providers).</p>
 <h3 id="chats">Chats<a class="headerlink" href="#chats" title="Permanent link">&para;</a></h3>
