@@ -18,11 +18,7 @@ Object Tree has build in filtering and display mode switches.
 
 ![Filter](./img/object_tree_filter.png){width="241px"}
 
-- *Filter* - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box.
-- Display modes switch:
-    - `id` - show object IDs in the tree.
-    - `n` - show object names in the tree.
-    - `id[n]` - show each object in format `object_id [ object_name ]` in the tree.
+- *Filter* - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box or press `X` icon or press ++esc++ on your keyboard.
 
 ## Testing Framework Mode
 
@@ -41,6 +37,8 @@ The node represents framework [test cases](./Frameworks/frameworks.md#test-cases
 - **Play All** - Run all root test cases except those marked with `template` or `skip` tags.
 - **Play All (Recursive)** - Run all test cases except those marked with `template` or `skip` tags.
 - **Reveal in Explorer** - Open `TestCases` folder in file explorer.
+- **Expand All** - Expand all nodes below.
+- **Collapse All** - Collapse all nodes below.
 - **Reload** - Reload all test cases (may be needed if test were synchronized with remote repository).
 
 #### Test Cases Group Context Menu
