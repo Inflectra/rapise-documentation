@@ -65,7 +65,7 @@ number: ID of created incident or 0 in case of error.
 Schedules a test set to execute as soon as possible.
 
 ```javascript
-Spira.RunTestSet(nameOrId, token, projectNameOrId)
+Spira.RunTestSet(nameOrId, token, projectNameOrId, utcTime, utcDate)
 ```
 
 
@@ -76,6 +76,8 @@ Spira.RunTestSet(nameOrId, token, projectNameOrId)
 | nameOrId |  |  Name or ID of the Test Set to run. |
 | token | string |  Automation host token. |
 | projectNameOrId | string |  Name or ID of a Spira project that contains the Test Set. |
+| utcTime | string |  UTC time, formatted as HH:mm or HH:mm:ss, e.g. 16:45. Default time is current time.<br>Optional. |
+| utcDate | string |  UTC date, formatted as YYYY-MM-DD, e.g. 2024-12-19. Default value is current date.<br>Optional. |
 
 
 

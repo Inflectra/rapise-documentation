@@ -20,6 +20,7 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 | ----------- | --------------- |
 |  [DoAddColumn](#doaddcolumn) | Appends a column with specified name. |
 |  [DoAddRow](#doaddrow) | Appends a new row. |
+|  [DoAddSheet](#doaddsheet) | Adds new sheet to a new or existing spreadsheet file |
 |  [DoAttach](#doattach) | Loads a sheet from Excel file (.xls, *.xlsx) or csv file (*.txt, *.csv). |
 |  [DoCompare](#docompare) | Compares two spreadsheets. |
 |  [DoCreate](#docreate) | Creates a new spreadsheet file. |
@@ -31,6 +32,7 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 |  [DoRandom](#dorandom) | Selects random row and column in the range. |
 |  [DoRemoveColumn](#doremovecolumn) | Removes a column at index. |
 |  [DoRemoveRow](#doremoverow) | Removes a row at index. |
+|  [DoRemoveSheet](#doremovesheet) | Remove a sheet from existing spreadsheet file |
 |  [DoSave](#dosave) | Saves the spreadsheet. |
 |  [DoSequential](#dosequential) | Advances to the next row in the range. |
 |  [GetCell](#getcell) | Cell value by its coordinates. |
@@ -99,6 +101,37 @@ boolean: true if successful, false otherwise.
 
 
 <a name="see.also.spreadsheet.doaddrow"></a>
+
+<a name="DoAddSheet"></a>    
+#### DoAddSheet
+
+Adds new sheet to a new or existing spreadsheet file
+
+```javascript
+Spreadsheet.DoAddSheet(fileName, sheetName, columnNames, rowCount, separator)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| fileName | string |  Path to a file. Extension defines file format. Supported extensions: .xls, .xlsx, *.csv, *.txt. |
+| sheetName | string |  Name of the sheet.<br>Optional, Default: "Sheet1". |
+| columnNames | string \| array |  Array of column names or string with column names comma separated.<br>Optional. |
+| rowCount | number |  Initial number of rows with values.<br>Optional, Default: "10". |
+| separator | string |  Separator for values in csv files.<br>Optional, Default: ",". |
+
+
+
+
+**Returns:**
+
+boolean: true if successful, false otherwise.
+
+
+
+<a name="see.also.spreadsheet.doaddsheet"></a>
 
 <a name="DoAttach"></a>    
 #### DoAttach
@@ -177,7 +210,7 @@ Spreadsheet.DoCreate(fileName, sheetName, columnNames, rowCount, separator)
 | ---------- | -------- | --------------- |
 | fileName | string |  Path to a file. Extension defines file format. Supported extensions: .xls, .xlsx, *.csv, *.txt. |
 | sheetName | string |  Name of the first sheet.<br>Optional, Default: "Sheet1". |
-| columnNames | array |  Array of column names.<br>Optional. |
+| columnNames | string \| array |  Array of column names or string with column names comma separated.<br>Optional. |
 | rowCount | number |  Initial number of rows with values.<br>Optional, Default: "10". |
 | separator | string |  Separator for values in csv files.<br>Optional, Default: ",". |
 
@@ -389,6 +422,34 @@ boolean: true if successful, false otherwise.
 
 
 <a name="see.also.spreadsheet.doremoverow"></a>
+
+<a name="DoRemoveSheet"></a>    
+#### DoRemoveSheet
+
+Remove a sheet from existing spreadsheet file
+
+```javascript
+Spreadsheet.DoRemoveSheet(fileName, sheetName)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| fileName | string |  Path to a file. Extension defines file format. Supported extensions: .xls, .xlsx, *.csv, *.txt. |
+| sheetName | string |  Name of the sheet.<br>Optional, Default: "Sheet1". |
+
+
+
+
+**Returns:**
+
+boolean: true if successful, false otherwise.
+
+
+
+<a name="see.also.spreadsheet.doremovesheet"></a>
 
 <a name="DoSave"></a>    
 #### DoSave

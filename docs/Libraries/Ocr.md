@@ -25,6 +25,7 @@ Optical Character Resolution (OCR) object. Use it to recognize text on the scree
 |  [DoExtractFromScreen](#doextractfromscreen) | Does OCR for a given rectangle. |
 |  [DoExtractFromWindow](#doextractfromwindow) | Does OCR for a window that contains a given object. |
 |  [DoSelectOcrEngine](#doselectocrengine) | Selects OCR engine by name. |
+|  [DoSetOcrOption](#dosetocroption) | Sets an OCR option. |
 
 
 
@@ -225,6 +226,29 @@ Ocr.DoSelectOcrEngine(ocrName)
 
 
 <a name="see.also.ocr.doselectocrengine"></a>
+
+<a name="DoSetOcrOption"></a>    
+#### DoSetOcrOption
+
+Sets an OCR option. Supported options depend on the selected OCR engine. For example for `windows` OCR engine: Ocr.DoSetOcrOption('language', 'es-ES')
+
+```javascript
+Ocr.DoSetOcrOption(name, value)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| name | string |  Option name. |
+| value | string |  Option value. |
+
+
+
+
+
+<a name="see.also.ocr.dosetocroption"></a>
 
   
 
