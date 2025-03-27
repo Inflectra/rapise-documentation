@@ -41,6 +41,14 @@ See [Adding Files for Test Folder](#adding-files-from-test-folder).
 * ... same as context menu for [Folder Node](#folder-context-menu)
 * **Rebuild Framework Metadata...**: Forces the regeneration of metadata for the entire framework.
 
+## Filtering
+
+Object Tree has build in filtering and display mode switches.
+
+![Filter](img/test_files_dialog_filter.png){width="241px"}
+
+- *Filter* - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box or press `X` icon or press ++esc++ on your keyboard.
+
 ## Folder Node
 
 Shows contents of the [Folder or Filter Group](#folders-and-filter-groups).
@@ -49,7 +57,7 @@ Shows contents of the [Folder or Filter Group](#folders-and-filter-groups).
 
 Right click on a folder to see:
 
-![Folder Menu](./img/test_files_dialog_context_folder.png)
+![Folder Menu](img/test_files_dialog_context_folder.png)
 
 * **Reload**: Refresh group contents. Use it for [filter groups](../test_files_dialog/#filtergroup)  ('IsFilterGroup' is set to 'True' in group properties), e.g. for Report group.
 * **Add File(s)**: Add an existing file to the test.
@@ -64,6 +72,7 @@ Right click on a folder to see:
 * **New Group**:  Create a logical grouping of files in the test. This will **not** add a folder to the file system.
 * **New Folder**:  Create a real folder in the test. This will add a folder to the file system.
 * **New Sub-Test**: Launch Create Sub-Test dialog.
+* **Add All Files**: In [Show Files and Folders](#show-files-and-folders) mode, you may add all external files at once using this menu items.
 * **Remove from Test**: Remove the selected grouping from the test.  This does **not** delete included files from your hard disk.
 * **Remove All from Disk**: Remove all files included into the selected grouping from your hard disk.
 
