@@ -4448,6 +4448,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#doaddsheet" class="md-nav__link">
+    DoAddSheet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doattach" class="md-nav__link">
     DoAttach
   </a>
@@ -4520,6 +4527,13 @@
           <li class="md-nav__item">
   <a href="#doremoverow" class="md-nav__link">
     DoRemoveRow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doremovesheet" class="md-nav__link">
+    DoRemoveSheet
   </a>
   
 </li>
@@ -11519,6 +11533,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#doaddsheet" class="md-nav__link">
+    DoAddSheet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#doattach" class="md-nav__link">
     DoAttach
   </a>
@@ -11591,6 +11612,13 @@
           <li class="md-nav__item">
   <a href="#doremoverow" class="md-nav__link">
     DoRemoveRow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doremovesheet" class="md-nav__link">
+    DoRemoveSheet
   </a>
   
 </li>
@@ -11721,6 +11749,10 @@
 <td>Appends a new row.</td>
 </tr>
 <tr>
+<td><a href="#doaddsheet">DoAddSheet</a></td>
+<td>Adds new sheet to a new or existing spreadsheet file</td>
+</tr>
+<tr>
 <td><a href="#doattach">DoAttach</a></td>
 <td>Loads a sheet from Excel file (.xls, <em>.xlsx) or csv file (</em>.txt, *.csv).</td>
 </tr>
@@ -11763,6 +11795,10 @@
 <tr>
 <td><a href="#doremoverow">DoRemoveRow</a></td>
 <td>Removes a row at index.</td>
+</tr>
+<tr>
+<td><a href="#doremovesheet">DoRemoveSheet</a></td>
+<td>Remove a sheet from existing spreadsheet file</td>
 </tr>
 <tr>
 <td><a href="#dosave">DoSave</a></td>
@@ -11852,6 +11888,51 @@
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
 <p><a name="see.also.spreadsheet.doaddrow"></a></p>
+<p><a name="DoAddSheet"></a>    </p>
+<h4 id="doaddsheet">DoAddSheet<a class="headerlink" href="#doaddsheet" title="Permanent link">&para;</a></h4>
+<p>Adds new sheet to a new or existing spreadsheet file</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoAddSheet</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">,</span><span class="w"> </span><span class="nx">columnNames</span><span class="p">,</span><span class="w"> </span><span class="nx">rowCount</span><span class="p">,</span><span class="w"> </span><span class="nx">separator</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td>string</td>
+<td>Path to a file. Extension defines file format. Supported extensions: .xls, .xlsx, *.csv, *.txt.</td>
+</tr>
+<tr>
+<td>sheetName</td>
+<td>string</td>
+<td>Name of the sheet.<br>Optional, Default: "Sheet1".</td>
+</tr>
+<tr>
+<td>columnNames</td>
+<td>string | array</td>
+<td>Array of column names or string with column names comma separated.<br>Optional.</td>
+</tr>
+<tr>
+<td>rowCount</td>
+<td>number</td>
+<td>Initial number of rows with values.<br>Optional, Default: "10".</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>string</td>
+<td>Separator for values in csv files.<br>Optional, Default: ",".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: true if successful, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doaddsheet"></a></p>
 <p><a name="DoAttach"></a>    </p>
 <h4 id="doattach">DoAttach<a class="headerlink" href="#doattach" title="Permanent link">&para;</a></h4>
 <p>Loads a sheet from Excel file (.xls, <em>.xlsx) or csv file (</em>.txt, *.csv).</p>
@@ -11960,8 +12041,8 @@ and all cell values must be equal. When strict mode is off then spreadsheet2 mus
 </tr>
 <tr>
 <td>columnNames</td>
-<td>array</td>
-<td>Array of column names.<br>Optional.</td>
+<td>string | array</td>
+<td>Array of column names or string with column names comma separated.<br>Optional.</td>
 </tr>
 <tr>
 <td>rowCount</td>
@@ -12134,6 +12215,36 @@ which is considred to contain column names) and columns on the sheet.</p>
 <p><strong>Returns:</strong></p>
 <p>boolean: true if successful, false otherwise.</p>
 <p><a name="see.also.spreadsheet.doremoverow"></a></p>
+<p><a name="DoRemoveSheet"></a>    </p>
+<h4 id="doremovesheet">DoRemoveSheet<a class="headerlink" href="#doremovesheet" title="Permanent link">&para;</a></h4>
+<p>Remove a sheet from existing spreadsheet file</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoRemoveSheet</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td>string</td>
+<td>Path to a file. Extension defines file format. Supported extensions: .xls, .xlsx, *.csv, *.txt.</td>
+</tr>
+<tr>
+<td>sheetName</td>
+<td>string</td>
+<td>Name of the sheet.<br>Optional, Default: "Sheet1".</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: true if successful, false otherwise.</p>
+<p><a name="see.also.spreadsheet.doremovesheet"></a></p>
 <p><a name="DoSave"></a>    </p>
 <h4 id="dosave">DoSave<a class="headerlink" href="#dosave" title="Permanent link">&para;</a></h4>
 <p>Saves the spreadsheet.</p>

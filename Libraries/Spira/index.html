@@ -11443,7 +11443,7 @@
 <p><a name="RunTestSet"></a>    </p>
 <h4 id="runtestset">RunTestSet<a class="headerlink" href="#runtestset" title="Permanent link">&para;</a></h4>
 <p>Schedules a test set to execute as soon as possible.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">Spira</span><span class="p">.</span><span class="nx">RunTestSet</span><span class="p">(</span><span class="nx">nameOrId</span><span class="p">,</span><span class="w"> </span><span class="nx">token</span><span class="p">,</span><span class="w"> </span><span class="nx">projectNameOrId</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Spira</span><span class="p">.</span><span class="nx">RunTestSet</span><span class="p">(</span><span class="nx">nameOrId</span><span class="p">,</span><span class="w"> </span><span class="nx">token</span><span class="p">,</span><span class="w"> </span><span class="nx">projectNameOrId</span><span class="p">,</span><span class="w"> </span><span class="nx">utcTime</span><span class="p">,</span><span class="w"> </span><span class="nx">utcDate</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -11469,6 +11469,16 @@
 <td>projectNameOrId</td>
 <td>string</td>
 <td>Name or ID of a Spira project that contains the Test Set.</td>
+</tr>
+<tr>
+<td>utcTime</td>
+<td>string</td>
+<td>UTC time, formatted as HH:mm or HH<img alt="🇲🇲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f1f2-1f1f2.svg" title=":mm:" />ss, e.g. 16:45. Default time is current time.<br>Optional.</td>
+</tr>
+<tr>
+<td>utcDate</td>
+<td>string</td>
+<td>UTC date, formatted as YYYY-MM-DD, e.g. 2024-12-19. Default value is current date.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
