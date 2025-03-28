@@ -1168,15 +1168,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#viewing-the-objects-to-merge" class="md-nav__link">
-    Viewing the Objects to Merge
+  <a href="#viewing-objects" class="md-nav__link">
+    Viewing Objects
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#merging-the-objects" class="md-nav__link">
-    Merging the Objects
+  <a href="#copying-objects" class="md-nav__link">
+    Copying Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-objects" class="md-nav__link">
+    Deleting Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-objects" class="md-nav__link">
+    Moving Objects
   </a>
   
 </li>
@@ -11353,15 +11367,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#viewing-the-objects-to-merge" class="md-nav__link">
-    Viewing the Objects to Merge
+  <a href="#viewing-objects" class="md-nav__link">
+    Viewing Objects
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#merging-the-objects" class="md-nav__link">
-    Merging the Objects
+  <a href="#copying-objects" class="md-nav__link">
+    Copying Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-objects" class="md-nav__link">
+    Deleting Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-objects" class="md-nav__link">
+    Moving Objects
   </a>
   
 </li>
@@ -11386,41 +11414,45 @@
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
 <p>Use menu <code>Tools &gt; Object Manager</code>.</p>
 <p>In <a href="../Frameworks/frameworks/">testing framework</a> mode you may open an <strong>Object Manager</strong> from the context menu of the corresponding object repository:</p>
-<p><img alt="Object Manager Context Menu" src="../Frameworks/img/frameworks_launch_object_manager.png" /></p>
+<p><img alt="Object Manager Context Menu" src="../Frameworks/img/frameworks_launch_object_manager.png" width="293px" /></p>
 <h2 id="choosing-files-to-merge">Choosing Files to Merge<a class="headerlink" href="#choosing-files-to-merge" title="Permanent link">&para;</a></h2>
 <p>In the example above we have opened up a test case that has some objects. Now we need to open up another test that also has some objects. To do this, click on the dropdown button to the right of the <strong>Dst</strong> (destination) text box to open up a Rapise test object file (<code>Objects.js</code>):</p>
 <p><img alt="object_manager_destination" src="../img/object_manager_object_manager_destination.png" /></p>
 <p>Once you have selected the file, the <strong>Object Manager</strong> dialog will display the list of objects to be merged (see next section).</p>
 <p>If you click on the dropdown button in left hand side of the dialog box, marked <strong>Src</strong> (Source), you will be able to select a different Rapise test object file (<code>Objects.js</code>) that you want to copy the objects <strong>from</strong>.</p>
 <p>If you want to make the current test the <strong>Destination</strong> rather than the <strong>Source</strong> (i.e. you want to add objects to the current test rather than exporting from the current test), simply click the <strong>switch sides</strong> <code>&lt;--&gt;</code> icon and the current test will be moved to the destination:</p>
-<p><img alt="Switch sides" src="../img/object_manager_switch_sides.png" /></p>
-<h2 id="viewing-the-objects-to-merge">Viewing the Objects to Merge<a class="headerlink" href="#viewing-the-objects-to-merge" title="Permanent link">&para;</a></h2>
-<p>Once you have selected both the source and destination object files, the system will display the dialog that lets you see all the objects defined the source and destination tests. You can now choose which objects to add/delete to/from the destination test:</p>
+<p><img alt="Switch sides" src="../img/object_manager_switch_sides.png" width="505" /></p>
+<h2 id="viewing-objects">Viewing Objects<a class="headerlink" href="#viewing-objects" title="Permanent link">&para;</a></h2>
+<p>Once you have selected both the source and destination object files, the system will display the dialog that lets you see all the objects defined in the source and destination tests. You can now choose which objects to add/delete to/from the destination test:</p>
 <p><img alt="Merge" src="../img/object_manager_merge.png" /></p>
 <p>For each object in the <strong>object manager</strong> you will see an <code>&gt;</code> expand icon in the <strong>left-hand</strong> side. When you click on this icon it will expand the object to display its properties. If the same object is in both the source and destination, you will see the properties of both versions on the left and right hand sides respectively. If it only exists in the source or destination, then it will only show the properties on the appropriate side:</p>
 <p><img alt="Expanded" src="../img/object_manager_expanded.png" /></p>
 <p>Each object in the source object list will be displayed with one of two icons:</p>
 <ul>
-<li><strong>equals (=)</strong> - this means that the same object exists in both the <strong>source</strong> and <strong>destination</strong> test object files.</li>
-<li><strong>not-equals (≠)</strong> - this means that the object only exists in the <strong>source</strong> file and not in the <strong>destination</strong> or vice-versa</li>
+<li><strong>equals (=)</strong> - this means that the same object exists in both the <strong>source</strong> and <strong>destination</strong> test object files and all their properties are equal.</li>
+<li><strong>not-equals (≠)</strong> - this means that the object either exists in the <strong>source</strong> file or <strong>destination</strong> file only or that there are object properties with different values.</li>
 </ul>
 <p>You can see which file(s) an objects is defined in (source, destination or both) by looking for the <code>...</code> icon. If you see this on the left hand side only, this object only exists in the source file, if you see it in the right-hand side, it only exists in the destination.</p>
 <p>If you see it on both sides then it exists in both the source and destination:</p>
 <p><img alt="Merge" src="../img/object_manager_merge.png" /></p>
-<h2 id="merging-the-objects">Merging the Objects<a class="headerlink" href="#merging-the-objects" title="Permanent link">&para;</a></h2>
+<h2 id="copying-objects">Copying Objects<a class="headerlink" href="#copying-objects" title="Permanent link">&para;</a></h2>
 <p>To add an object from the <strong>source &gt; destination</strong> test (for example the 'Name' object in this example) select the row in question:</p>
 <p><img alt="Add from left" src="../img/object_manager_add_from_left.png" /></p>
-<p>Then click on the <strong>'Copy Object to the Right (F5)'</strong> icon in the toolbar. This will copy the object from the source to the destination:</p>
+<p>Then click on the <strong>Copy Right</strong> icon in the toolbar or use shortcut (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-f5">F5</kbd></span>). This will copy the object from the source to the destination:</p>
 <p><img alt="Add from left result" src="../img/object_manager_add_from_left_result.png" /></p>
 <p>You can tell that the object has been copied because the <strong>not-equals (≠)</strong> sign changes to the <strong>equals option (=)</strong>.</p>
+<p>There is also an option to copy all objects to destination, just use <strong>Copy All Right</strong> button on the toolbar.</p>
+<h2 id="deleting-objects">Deleting Objects<a class="headerlink" href="#deleting-objects" title="Permanent link">&para;</a></h2>
 <p>Conversely, to remove an object (e.g. <strong>Username</strong>) from the destination, simply select the row:</p>
 <p><img alt="Select to remove" src="../img/object_manager_select_to_remove.png" /></p>
-<p>Then click on the '<strong>Remove from Destination (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-d">D</kbd></span>)'</strong>:</p>
+<p>Then click on the <strong>Remove Right</strong> or use shortcut (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-d">D</kbd></span>):</p>
 <p><img alt="Removed" src="../img/object_manager_remove_result.png" /></p>
 <p>The object will now have been removed from the <strong>destination</strong> object tree.</p>
 <blockquote>
 <p><strong>Warning:</strong> All of the changes you make to the objects file are committed immediately, so only delete objects in the destination test that you no longer want to be part of the test.</p>
 </blockquote>
+<h2 id="moving-objects">Moving Objects<a class="headerlink" href="#moving-objects" title="Permanent link">&para;</a></h2>
+<p>In Rapise 8.4, we've added the ability to move objects. Two new buttons have been added to the toolbar: Move Right and Move All Right. A good use case for using these buttons is when you've recorded something into a test case but want to move the functionality and objects to a Page Object/Module.</p>
                 
               
               

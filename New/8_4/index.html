@@ -11433,16 +11433,23 @@
 </ul>
 <h3 id="improvements">Improvements<a class="headerlink" href="#improvements" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Object Manager should support <code>Move</code> and <code>Move All</code>operations [IN:8065]</li>
+<li><a href="/Guide/object_manager/">Object Manager should support <code>Move</code> and <code>Move All</code>operations</a> [IN:8065]</li>
 <li>Move to .NET 4.8 [IN:8944]</li>
 <li>Search for File Name in Files view [IN:9482]</li>
-<li>Auto commit edits in Test Set details [IN:10272]</li>
+<li>Auto commit edits in Test Set details in Spira Dashboard [IN:10272]</li>
 <li><a href="/Libraries/Spira/#runtestset">Upgrade Spira.RunTestSet to support explicit date and time</a> [IN:10489]</li>
 <li>Automatically set Git credentials for a new test set based on Default test set [IN:10563]</li>
 <li>Update required geckodriver version to 0.35.0 [IN:10584]</li>
 <li>We should capture on-failure screenshot before TestFinish [IN:10588]</li>
-<li>Ability to skip default Chrome/Edge  arguments in Selenium profiles [IN:10608]</li>
-<li>Sync with Spira should respect testCasesFolderId [IN:10650]</li>
+<li>
+<p>Ability to skip default Chrome/Edge arguments in Selenium profiles [IN:10608]</p>
+<div class="admonition info">
+<p>To exclude a default argument add it to <code>args</code> capability and use ! char before the argument name, e.g.  ["!disable-web-security"].  Default arguments include: disable-web-security, disable-site-isolation-trials, remote-allow-origins=*</p>
+</div>
+</li>
+<li>
+<p>Sync with Spira should respect testCasesFolderId [IN:10650]</p>
+</li>
 <li>Optimize Object Tree search for big frameworks [IN:10651]</li>
 <li>Rapise should check for a valid perpetual license even if there is a floating one in Spira [IN:10679]</li>
 <li>Add Close All But This option to Tab menu [IN:10692]</li>
