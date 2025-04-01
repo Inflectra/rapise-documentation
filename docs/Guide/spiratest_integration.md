@@ -85,6 +85,14 @@ Additionally enter
 !!! note
     You need to be running SpiraTest / SpiraTeam v4.0 or later to use the integration with Rapise.
 
+### Artifact Permissions
+
+To fully leverage Rapise & Spira integration, the user account needs the following [artifact permissions](https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Users/#artifact-specific-permissions) in Spira:
+
+![Artifact Permissions](./img/spira_artifact_permissions.png)
+
+If you want to use an existing product role, Manager is a good option. You can also create and customize [your own role](https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Users/#view-edit-product-roles) if needed.
+
 ## Using the Spira Dashboard
 
 !!! important
