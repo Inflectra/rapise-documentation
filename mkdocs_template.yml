@@ -409,7 +409,6 @@ nav:
     - 'Training': 'Intro/training.md'
     - 'Playground': 'Intro/uitap.md'
 - 'Release Notes':
-    - 'Release Notes for 8.4': 'New/8_4.md'
     - 'Release Notes for 8.3': 'New/8_3.md'
     - 'Release Notes for 8.2': 'New/8_2.md'
     - 'Release Notes for 8.1': 'New/8_1.md'
