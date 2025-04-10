@@ -3,7 +3,27 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
-### <a onclick="return RegisterKbClick('KB883', 'AiTester Public Page Object')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB883.aspx">KB883</a> AiTester Public Page Object
+### <a onclick="return RegisterKbClick('KB895', 'How to disable password manager leak detection in Chrome')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB895.aspx">KB895</a> How to disable password manager leak detection in Chrome
+
+Test accounts frequently utilize weak passwords. Chrome's built-in password leak detection can flag these, resulting in warning dialogs that interrupt testing and lead to test failures. Refer to this article for instructions on disabling password leak detection in Chrome.
+
+### <a onclick="return RegisterKbClick('KB894', 'RapiseUtils Public Module')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB894.aspx">KB894</a> RapiseUtils Public Module
+
+Along with the release of Rapise 8.4, we introduced RapiseUtils public module. Its purpose is to help automate tasks related to the maintenance of a testing framework, data import, and more. In the initial release, we present a feature to import manual tests from Spira in bulk.
+
+### <a onclick="return RegisterKbClick('KB893', 'TestRunner Public Module')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB893.aspx">KB893</a> TestRunner Public Module
+
+Rapise 8.4 introduces an easy method to run multiple test sets and rerun failed test sets across multiple products. To leverage these features, integrate the TestRunner  module into your framework. With TestRunner, you can also do AI-poweredroot cause analysis of failed test cases, analyze historical data of test case runs and generate reports in PDF format, and more.
+
+### <a onclick="return RegisterKbClick('KB892', 'How to fix `session not created` bug on Edge 133+  start')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB892.aspx">KB892</a> How to fix `session not created` bug on Edge 133+  start
+
+If you are running Web tests on MS Edge version 133 or 134 (latest version at 2025-03-20) you may receive an error on MS Edge start: "session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir (SessionNotCreated)". Learn how to fix it from this article.
+
+### <a onclick="return RegisterKbClick('KB884', 'AiRobot Public Module')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB884.aspx">KB884</a> AiRobot Public Module
+
+AiRobot utilizes Anthropic Computer Use feature to enable automated exploratory testing. This also allows execution of some manual test directly with minimal or no conversion.
+
+### <a onclick="return RegisterKbClick('KB883', 'AiTester Public Module')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB883.aspx">KB883</a> AiTester Public Module
 
 Rapise 8.3 introduces AI-powered capabilities for executing test cases. To leverage this feature, integrate the AiTester public page object into your framework. With AiTester, you can send text and image-augmented queries to AI models hosted by  OpenAI, Azure OpenAI, and Amazon Bedrock. Example applications include generating data, performing image-based verifications (e.g., detecting discrepancies or counting visual elements), and more.
 
