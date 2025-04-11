@@ -128,6 +128,8 @@ Now that you have floating licenses available, when you connect Rapise to Spira 
 
 ![configuration](./img/spira_connection_settings.png){width="508px"}
 
+To get your API Key follow [these steps](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key).
+
 Rapise automatically requests a floating license from Spira and will use that license until Rapise is closed or an administrator clicks the **End Session** button in Spira:
 
 ![end session](./img/end_session.png)
