@@ -144,6 +144,12 @@ C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s %theirs -d %mine
 
 The merging of `.sstest` files is fully automatic (usually it is `Test.sstest` for a Test Case or `Framework.sstest` for a framework root). So once you hit *Merge...*, no UI is shown and the merged file is automatically generated.
 
+If you want to enable automatic `.sstest` merge with your git client, you may use it like that:
+
+```cmd
+C:\Program Files (x86)\Inflectra\Rapise\Extensions\DiffMerge\Tools\SstestMerge.cmd -s %theirs -d %mine
+```
+
 ## Adding a Custom Diff Tool
 
 You have the option to incorporate additional known diff tools into Rapise. If your team utilizes multiple tools, that's perfectly fine. You can define all of them together, and Rapise will select the first one it finds. To achieve this, you need to create a file named MergeTools.yml in one of two locations:
