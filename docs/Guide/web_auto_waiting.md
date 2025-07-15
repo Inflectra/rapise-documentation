@@ -111,12 +111,17 @@ You only need to define the properties you want to override.
 
 **Example: Always Assume Elements are Interactable**
 
-If your application uses a global overlay that intercepts clicks, the `ReceivesEvents` check will always fail. To bypass this specific check for all actions, you can add this to your test:
+If your application uses a global overlay that intercepts clicks, the `ReceivesEvents` check will always fail. To bypass this specific check for all actions, you can add this to your framework:
 
 ```javascript
-// Tell Auto-Wait to ignore if an element is covered by another
-Navigator.autoWaitOverride = { ReceivesEvents: true };
+// Common.js
+SeSOnTestInit(function() {
+   ...
+   Navigator.autoWaitOverride = { ReceivesEvents: true };
+   ...
+});
 ```
+
 
 **Caution:** Use this feature judiciously. Overriding a check removes a layer of protection and can lead to tests failing with less obvious errors if the element truly is not ready. It is best used for application-wide workarounds. For more targeted fixes, use the callback method described next.
 
@@ -166,20 +171,24 @@ Your callback function's return value determines the outcome of the wait attempt
 
 **Example 1: Ignoring an Overlay for a Specific Button**
 
-Imagine a "Submit" button is consistently covered by a transparent overlay, but other elements are not. A global override is too broad. We can use the callback to target just that button.
+Imagine a "Submit" button is consistently covered by a transparent overlay, but other elements are not. A global override is too broad. We can use the callback to target just that button. You may define the callback within SeSOnTestInit for your testing framework.
 
 ```javascript
-SeSOnNavigatorAutoWait(function(/**HTMLObject*/obj, action, elInfo, xOffset, yOffset, attempt) {
-    // If the action is a click on our specific 'Submit' button
-    if (action == 'click' && obj.GetId() == 'submit_button') {
-        // We only care if it's visible and enabled. We ignore if it receives events.
-        if (elInfo.Visible && elInfo.Enabled) {
-            return true; // It's ready, proceed with the click!
-        }
-    }
-    
-    // For all other elements and actions, use the default Rapise logic
-    return false; 
+
+// Common.js
+SeSOnTestInit(function() {
+   SeSOnNavigatorAutoWait(function(/**HTMLObject*/obj, action, elInfo, xOffset, yOffset, attempt) {
+      // If the action is a click on our specific 'Submit' button
+      if (action == 'click' && obj.GetId() == 'submit_button') {
+         // We only care if it's visible and enabled. We ignore if it receives events.
+         if (elInfo.Visible && elInfo.Enabled) {
+               return true; // It's ready, proceed with the click!
+         }
+      }
+      
+      // For all other elements and actions, use the default Rapise logic
+      return false; 
+   });
 });
 ```
 
@@ -188,16 +197,20 @@ SeSOnNavigatorAutoWait(function(/**HTMLObject*/obj, action, elInfo, xOffset, yOf
 Some elements show a "spinner" or have a "loading" CSS class while their content is being updated. The element might be visible and enabled, but not truly ready. We can use the callback to wait for this class to be removed.
 
 ```javascript
-SeSOnNavigatorAutoWait(function(/**HTMLObject*/obj, action, elInfo, xOffset, yOffset, attempt) {
-    // Check for a 'loading' class on the element
-    var className = obj.GetClass("class") || "";
-    if (className.indexOf("loading") !== -1) {
-        // If it has the 'loading' class, it's not ready. Skip default checks and try again.
-        return null; 
-    }
-    
-    // If no 'loading' class, fall back to the default Rapise checks
-    return false; 
+
+// Common.js
+SeSOnTestInit(function() {
+   SeSOnNavigatorAutoWait(function(/**HTMLObject*/obj, action, elInfo, xOffset, yOffset, attempt) {
+      // Check for a 'loading' class on the element
+      var className = obj.GetClass("class") || "";
+      if (className.indexOf("loading") !== -1) {
+         // If it has the 'loading' class, it's not ready. Skip default checks and try again.
+         return null; 
+      }
+      
+      // If no 'loading' class, fall back to the default Rapise checks
+      return false; 
+   });
 });
 ```
 
@@ -206,23 +219,29 @@ SeSOnNavigatorAutoWait(function(/**HTMLObject*/obj, action, elInfo, xOffset, yOf
 Sometimes you want a strict check initially, but if the element is still not ready, you might want to relax the conditions. The `attempt` parameter is perfect for this.
 
 ```javascript
-SeSOnNavigatorAutoWait(function(obj, action, elInfo, xOffset, yOffset, attempt) {
-    if (action == 'click') {
-        // For the first 5 attempts, require the element to receive events.
-        if (attempt < 5) {
-            return false; // Use default logic, which is strict.
-        } else {
-            // After 5 attempts, if it's still not ready, relax the rule.
-            // As long as it's visible and enabled, let's try to click it anyway.
-            if (elInfo.Visible && elInfo.Enabled) {
-                Log("AutoWait: Relaxing 'ReceivesEvents' check after " + attempt + " attempts.");
-                return true; // Force the click to proceed.
-            }
-        }
-    }
 
-    // For other actions, or for the first 5 click attempts, use default logic.
-    return false;
+// Common.js or Main.js
+
+SeSOnTestInit(function() {
+
+   SeSOnNavigatorAutoWait(function(obj, action, elInfo, xOffset, yOffset, attempt) {
+      if (action == 'click') {
+         // For the first 5 attempts, require the element to receive events.
+         if (attempt < 5) {
+               return false; // Use default logic, which is strict.
+         } else {
+               // After 5 attempts, if it's still not ready, relax the rule.
+               // As long as it's visible and enabled, let's try to click it anyway.
+               if (elInfo.Visible && elInfo.Enabled) {
+                  Log("AutoWait: Relaxing 'ReceivesEvents' check after " + attempt + " attempts.");
+                  return true; // Force the click to proceed.
+               }
+         }
+      }
+
+      // For other actions, or for the first 5 click attempts, use default logic.
+      return false;
+   });
 });
 ```
 
