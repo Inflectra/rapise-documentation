@@ -29,8 +29,11 @@ This is a JavaScript wrapper for Actions of Selenium .NET library.
 |  [KeyUp](#keyup) | Sends a modifier key up message to the specified element in the browser. |
 |  [MoveByOffset](#movebyoffset) | Moves the mouse to the specified offset of the last known mouse coordinates. |
 |  [MoveToElement](#movetoelement) | Moves the mouse to the specified offset of the top-left corner of the specified element. |
+|  [MoveToLocation](#movetolocation) | Moves the mouse from the upper left corner of the current viewport by the provided offset. |
 |  [Perform](#perform) | Performs the currently built action. |
 |  [Release](#release) | Releases the mouse button on the specified element. |
+|  [ScrollByAmount](#scrollbyamount) | Scrolls by provided amounts with the origin in the top left corner of the viewport. |
+|  [ScrollFromOrigin](#scrollfromorigin) | Scrolls by provided amount based on a provided origin. |
 |  [SendKeys](#sendkeys) | Sends a sequence of keystrokes to the specified element in the browser. |
 
 
@@ -340,6 +343,34 @@ A self-reference.
 
 <a name="see.also.actions.movetoelement"></a>
 
+<a name="MoveToLocation"></a>    
+#### MoveToLocation
+
+Moves the mouse from the upper left corner of the current viewport by the provided offset.
+
+```javascript
+WebDriver.Actions().MoveToLocation(100,100).Perform();
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| offsetX | number |  The horizontal offset to which to move the mouse. |
+| offsetY | number |  The vertical offset to which to move the mouse. |
+
+
+
+
+**Returns:**
+
+A self-reference.
+
+
+
+<a name="see.also.actions.movetolocation"></a>
+
 <a name="Perform"></a>    
 #### Perform
 
@@ -381,6 +412,65 @@ A self-reference.
 
 
 <a name="see.also.actions.release"></a>
+
+<a name="ScrollByAmount"></a>    
+#### ScrollByAmount
+
+Scrolls by provided amounts with the origin in the top left corner of the viewport.
+
+```javascript
+WebDriver.Actions().ScrollByAmount(0,10).Perform();
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| deltaX | number |  Distance along X axis to scroll using the wheel. A negative value scrolls left. |
+| deltaY | number |  Distance along Y axis to scroll using the wheel. A negative value scrolls up. |
+
+
+
+
+**Returns:**
+
+A self-reference.
+
+
+
+<a name="see.also.actions.scrollbyamount"></a>
+
+<a name="ScrollFromOrigin"></a>    
+#### ScrollFromOrigin
+
+Scrolls by provided amount based on a provided origin.
+
+```javascript
+WebDriver.Actions().ScrollFromOrigin(0,10).Perform();
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| el | WebElementWrapper |  The element from which to scroll. If null - Viewport is used insted.<br>Optional. |
+| offsetX | number |  The horizontal offset to which to move the mouse. |
+| offsetY | number |  The vertical offset to which to move the mouse. |
+| deltaX | number |  Distance along X axis to scroll using the wheel. A negative value scrolls left. |
+| deltaY | number |  Distance along Y axis to scroll using the wheel. A negative value scrolls up. |
+
+
+
+
+**Returns:**
+
+A self-reference.
+
+
+
+<a name="see.also.actions.scrollfromorigin"></a>
 
 <a name="SendKeys"></a>    
 #### SendKeys

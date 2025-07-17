@@ -18,6 +18,8 @@ iOS Object.
 ### Property Summary
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
+| [Bitmap](#bitmap) | UI Image of the object. | GetBitmap |  |
+| [BWBitmap](#bwbitmap) | UI Image of the object in 1-bit format (black&white). | GetBWBitmap |  |
 | [ChildAt](#childat) | Child object at index. | GetChildAt |  |
 | [ChildCount](#childcount) | Number of child items. | GetChildCount |  |
 | [Class](#class) | Class name of the object. | GetClass |  |
@@ -59,6 +61,40 @@ iOS Object.
 <!-- ============================== property detail ========================== -->
 
 ### Property Detail
+
+<a name="Bitmap"></a>
+#### Bitmap
+
+UI Image of the object.
+
+
+
+Type: ImageWrapper
+
+
+Accessors: GetBitmap
+
+```javascript
+value = SeS('SomeiOSObject').GetBitmap()
+```
+
+
+<a name="BWBitmap"></a>
+#### BWBitmap
+
+UI Image of the object in 1-bit format (black&white).
+
+
+
+Type: ImageWrapper
+
+
+Accessors: GetBWBitmap
+
+```javascript
+value = SeS('SomeiOSObject').GetBWBitmap()
+```
+
 
 <a name="ChildAt"></a>
 #### ChildAt

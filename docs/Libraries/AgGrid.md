@@ -459,7 +459,7 @@ boolean: 'true' if successful, 'false' otherwise
 Clicks floating bottom cell in the specified column.
 
 ```javascript
-SeS('SomeAgGrid').DoSetCheckbox(row, col)
+SeS('SomeAgGrid').DoSetCheckbox(row, col, bCheck)
 ```
 
 
@@ -469,6 +469,7 @@ SeS('SomeAgGrid').DoSetCheckbox(row, col)
 | ---------- | -------- | --------------- |
 | row | number \| string |  Zero-based index if the row or text of a cell in the specified column. |
 | col | string \| number |  Column name or zero-based index of the column. |
+| bCheck | boolean |  State to set |
 
 
 

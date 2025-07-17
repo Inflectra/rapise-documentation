@@ -55,7 +55,6 @@ This is a JavaScript wrapper for AppiumWebElement of AppiumDotNet library.<br>h
 |  [GetTagName](#gettagname) |  |
 |  [GetText](#gettext) |  |
 |  [SendKeys](#sendkeys) |  |
-|  [SetImmediateValue](#setimmediatevalue) |  |
 |  [Submit](#submit) |  |
 
 
@@ -796,28 +795,6 @@ AppiumDriver.FindElementByAccessibilityId('UserName')SendKeys(text)
 
 
 <a name="see.also.appiumwebelement.sendkeys"></a>
-
-<a name="SetImmediateValue"></a>    
-#### SetImmediateValue
-
-
-
-```javascript
-AppiumDriver.FindElementByAccessibilityId('UserName')SetImmediateValue(value)
-```
-
-
-**Parameters:**
-
-|  **Name** | **Type** | **Description** |
-| ---------- | -------- | --------------- |
-| value |  |   |
-
-
-
-
-
-<a name="see.also.appiumwebelement.setimmediatevalue"></a>
 
 <a name="Submit"></a>    
 #### Submit

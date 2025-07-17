@@ -30,9 +30,9 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |  [CreateDesiredCapabilities](#createdesiredcapabilities) |  |
 |  [CreateDriverForSession](#createdriverforsession) | Connects to active Appium session with given URL and Id. |
 |  [CreatePointerInput](#createpointerinput) | Gets PointerInputDevice object. |
-|  [CreateTouchAction](#createtouchaction) | Gets TouchAction object. |
 |  [DeactiveIMEEngine](#deactiveimeengine) | Deactivate the currently Active IME Engine on the device. |
 |  [Dispose](#dispose) | Dispose of WebDriver. |
+|  [DoScreenshot](#doscreenshot) | Makes screenshot of a device. |
 |  [DoSendKeys](#dosendkeys) | Sends keys to an active element. |
 |  [DumpSessions](#dumpsessions) | Prints information about active Appium sessions to output. |
 |  [ExecuteScript](#executescript) | Executes JavaScript in the context of the currently selected frame or window. |
@@ -96,6 +96,7 @@ This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https
 |  [StartActivity](#startactivity) | Start an Android activity by providing package name and activity name |
 |  [StartRecordingScreen](#startrecordingscreen) | Starts video recording on a device. |
 |  [StopRecordingScreen](#stoprecordingscreen) | Stops video recording on a device. |
+|  [TerminateApp](#terminateapp) | Close the application. |
 |  [ToggleAirplaneMode](#toggleairplanemode) | Toggle airplane mode on device |
 |  [ToggleLocationServices](#togglelocationservices) | Switch the state of the location service |
 |  [ToggleWifi](#togglewifi) | Switch the state of the WiFi service |
@@ -369,21 +370,6 @@ AppiumDriver.CreatePointerInput(kind, name)
 
 <a name="see.also.appiumdriver.createpointerinput"></a>
 
-<a name="CreateTouchAction"></a>    
-#### CreateTouchAction
-
-Gets TouchAction object. Requires Rapise 8.0+.
-
-```javascript
-AppiumDriver.CreateTouchAction()
-```
-
-
-
-
-
-<a name="see.also.appiumdriver.createtouchaction"></a>
-
 <a name="DeactiveIMEEngine"></a>    
 #### DeactiveIMEEngine
 
@@ -413,6 +399,33 @@ AppiumDriver.Dispose()
 
 
 <a name="see.also.appiumdriver.dispose"></a>
+
+<a name="DoScreenshot"></a>    
+#### DoScreenshot
+
+Makes screenshot of a device.
+
+```javascript
+AppiumDriver.DoScreenshot(txtLabel)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| txtLabel | string |  Label of a screenshot in the report.<br>Optional. |
+
+
+
+
+**Returns:**
+
+'true' if successful, 'false' otherwise.
+
+
+
+<a name="see.also.appiumdriver.doscreenshot"></a>
 
 <a name="DoSendKeys"></a>    
 #### DoSendKeys
@@ -1685,6 +1698,28 @@ AppiumDriver.StopRecordingScreen()
 
 
 <a name="see.also.appiumdriver.stoprecordingscreen"></a>
+
+<a name="TerminateApp"></a>    
+#### TerminateApp
+
+Close the application.
+
+```javascript
+AppiumDriver.TerminateApp(appId)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| appId | string |  Application Id |
+
+
+
+
+
+<a name="see.also.appiumdriver.terminateapp"></a>
 
 <a name="ToggleAirplaneMode"></a>    
 #### ToggleAirplaneMode
