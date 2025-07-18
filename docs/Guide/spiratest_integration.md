@@ -520,6 +520,7 @@ The panel has the following options:
 - **Read Ahead** - how far ahead in minutes the program should read the schedule for the Automation host. Tests that are scheduled further in advance will not show up as a pending test on the status screen.
 - **Connection Timeout** - Consider a request to Spira failed after specified time. Requires Rapise 8.1+. <a class="headerlink" href="#connection-timeout" title="Permanent link">¶</a>
 - **Automatically run tests that are overdue** - when this is checked, any tests that are pulled from the SpiraTest server that has a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this check, they will be executed as soon as the poll is finished.
+- **Run in load-balancing mode (adv. users)** - when this is checked, test sets are executed in [load balancing mode](#load-balancing-mode).
 
 #### Options
 
@@ -654,6 +655,100 @@ git clone https://%GitUser%:%GitPassword%@%GitUrlWithoutProtocol% %GitTargetPath
 ```
 
 RapiseLauncher is using this CMD file to clone a Git repository. Environment variables `GitUrl`, `GitUrlWithoutProtocol`, `GitUser`, `GitPassword`, `GitBranch`, `GitTargetPath` are set by RapiseLauncher automatically and can be used inside the CMD file. `GitTargetPath` points to the folder where a repository must be cloned.
+
+Here is one more comprehensive example of GitClone.cmd. If a repository was cloned before, it just removes all the files that are not in Git, rolls back any modifications and pulls updates. It makes repeatable clones faster.
+
+```
+echo %GitUrlWithoutProtocol%
+echo %GitBranch%
+@echo off
+
+:: Check if the folder exists
+if exist "%GitTargetPath%" (
+    echo Folder exists. Reverting local changes and pulling latest updates...
+
+    :: Navigate to the directory
+    pushd "%GitTargetPath%"
+
+    :: Ensure the folder is a valid Git repository
+    if exist ".git" (
+        :: Revert any local changes
+        git reset --hard
+        git clean -fd
+
+		if "%GitBranch%" neq "" (
+			git checkout -B "%GitBranch%" origin/%GitBranch%
+		)
+
+        :: Pull the latest changes
+        git pull
+    ) else (
+        echo The directory exists but is not a Git repository. Exiting.
+    )
+    popd
+) else (
+    echo Folder does not exist. Cloning the repository...
+
+    :: Clone the repository into the destination folder, using the specified branch if provided
+    if "%GitBranch%" neq "" (
+        git clone -b "%GitBranch%" https://%GitUser%:%GitPassword%@%GitUrlWithoutProtocol% %GitTargetPath%
+		git checkout -B "%GitBranch%" origin/%GitBranch%
+    ) else (
+        git clone https://%GitUser%:%GitPassword%@%GitUrlWithoutProtocol% %GitTargetPath%
+    )
+)
+
+echo Done!
+```
+
+### Agent Pools
+
+Rapise 8.5 introduces a powerful way to run your automated tests faster than ever. If you manage multiple test sets and execution hosts, you can now group your hosts into a dynamic `pool` to run tests in parallel, significantly reducing the total execution time.
+
+**How It Works**
+
+Instead of assigning each test set to a specific machine, you can now create a host pool. Simply configure multiple execution hosts (with RapiseLauncher installed) to share the same **Automation Host Token**.
+
+When you schedule your tests, you assign them all to this single, shared Host Token. Rapise then treats the entire pool as one powerful, logical host.
+
+For example, let's say you have 12 test sets and 3 hosts in a pool. When the tests are scheduled to run, the system automatically distributes the work. The 3 hosts will immediately begin executing the first 3 test sets in parallel. As soon as a host finishes its test, it instantly picks up the next available one from the queue.
+
+**The Benefits**
+
+- **Maximum Speed:** This dynamic distribution ensures your hosts are never idle, completing your entire test suite in a fraction of the time.
+- **Ultimate Simplicity:** You no longer need to manually balance the workload by assigning specific tests to specific machines. Just point all your tests to the host pool and let Rapise handle the rest.
+
+This feature is perfect for teams looking to optimize their CI/CD pipelines and get test results faster.
+
+### Load Balancing Mode
+
+**For advanced users only**
+
+While host pools are great for running many separate test sets, what if your challenge is a single, massive test set with hundreds of test cases? Rapise 8.5 introduces **Load Balancing Mode** to solve this exact problem.
+
+This powerful feature allows a pool of execution hosts to work together to complete a *single test set* much faster. Instead of one machine working through every test case sequentially, the load is distributed across the entire pool.
+
+**How It Works**
+
+Imagine you have one test set with 12 test cases and a pool of 3 execution hosts.
+
+1.  First, you enable **Load Balancing Mode** in the [RapiseLauncher settings](#client-configuration) on each of the 3 hosts.
+2.  Then, you assign them all the same Automation Host Token to create the pool.
+3.  When you schedule the large test set to run, all three hosts will start working on it simultaneously. The first host takes test case #1, the second takes #2, and the third takes #3. As soon as a host finishes its case, it immediately grabs the next available one from the queue (#4, #5, and so on) until the entire test set is complete.
+
+**Key Benefits**
+
+- **Drastically Reduced Execution Time:** Completes large test suites in a fraction of the time.
+- **Simplified Test Management:** You no longer need to manually split large test sets into smaller ones just to distribute the workload.
+
+**Important Considerations**
+
+This mode is designed for straightforward test suites. For it to work, the test set must meet the following conditions:
+
+- All test cases must be independent of each other.
+- It must be a standard test set, not a dynamic one.
+- It cannot be used with features that already involve complex execution patterns, like parallel execution on a single host or running a test with multiple data configurations.
+
 
 ## See Also
 
