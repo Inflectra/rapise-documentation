@@ -3,6 +3,18 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB903', 'How to create Test Sets outside of Rapise Framework saved to Spira')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB903.aspx">KB903</a> How to create Test Sets outside of Rapise Framework saved to Spira
+
+When you define test sets inside a Rapise Framework, they are managed automatically by Rapise when you do `Save to Spira`.  In some cases there is a need to define test sets outside of a Rapise Framework.
+
+### <a onclick="return RegisterKbClick('KB901', 'Calling MongoDB from Rapise Test')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB901.aspx">KB901</a> Calling MongoDB from Rapise Test
+
+If you need to access MongoDB while executing the test script, here is an example how it may be done.
+
+### <a onclick="return RegisterKbClick('KB898', 'Technical Architcture When Using Azure OpenAI with Spira & Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB898.aspx">KB898</a> Technical Architcture When Using Azure OpenAI with Spira & Rapise
+
+Although most of our customers are using the Inflectra.ai native artificial intelligence functionality in our platforms, we also offer options for customers to use OpenAI hosted in Microsoft Azure as an alternative. This is useful for customers that are using Microsoft Azure rather than Amazon Web Services (AWS). In this article we provide the technical architecture information for integrating Spira and Rapise with OpenAI.
+
 ### <a onclick="return RegisterKbClick('KB895', 'How to disable password manager leak detection in Chrome')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB895.aspx">KB895</a> How to disable password manager leak detection in Chrome
 
 Test accounts frequently utilize weak passwords. Chrome's built-in password leak detection can flag these, resulting in warning dialogs that interrupt testing and lead to test failures. Refer to this article for instructions on disabling password leak detection in Chrome.
