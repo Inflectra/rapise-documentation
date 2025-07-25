@@ -724,7 +724,7 @@ This feature is perfect for teams looking to optimize their CI/CD pipelines and 
 
 **For advanced users only**
 
-While host pools are great for running many separate test sets, what if your challenge is a single, massive test set with hundreds of test cases? Rapise 8.5 introduces **Load Balancing Mode** to solve this exact problem.
+While [agent pools](#agent-pools) are great for running many separate test sets, what if your challenge is a single, massive test set with hundreds of test cases? Rapise 8.5 introduces **Load Balancing Mode** to solve this exact problem.
 
 This powerful feature allows a pool of execution hosts to work together to complete a *single test set* much faster. Instead of one machine working through every test case sequentially, the load is distributed across the entire pool.
 
