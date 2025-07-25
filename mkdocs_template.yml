@@ -127,6 +127,7 @@ nav:
                 - 'Relative Analog Recording': 'Guide/relative_analog_learning.md'
             - 'Simulated Objects': 'Guide/simulated_objects.md'
             - 'Object Manager': 'Guide/object_manager.md'
+            - 'Object Templates': 'Guide/object_templates.md'
         - 'Object Libraries':
             - 'Object Libraries': 'Guide/recording_library.md'
             - 'Custom Libraries':

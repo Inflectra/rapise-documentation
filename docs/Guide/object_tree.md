@@ -142,36 +142,30 @@ The node displays shared assets, including common JavaScript files (`*.js`), Obj
 - **Remove from Disk** - deletes the file from Test as well as from the disk.
 - **Reveal in Explorer** - opens the file explorer and highlights this particular file.
 
-### Modules / Page Objects Node
+### Modules / Pages Node
 
-The node contains [Module / Page Objects](./Frameworks/pageobjects.md) defined in this testing framework.
+The node contains [Modules / Page Objects](./Frameworks/pageobjects.md) defined in this testing framework.
 
-#### Page Objects Context Menu
+#### Modules / Pages Context Menu
 
-![Page Objects](./img/object_tree_context_pageobjects.png){width="257px"}
+![Page Objects Context Menu](./img/object_tree_context_pageobjects.png){width="257px"}
 
 - **Create Module / Page Object** - add new [Module / Page Object](./Frameworks/pageobjects.md).
 - **Import Module / Page Object** - import existing [Module / Page Object](./Frameworks/pageobjects.md) from another testing framework.
 
-![Page Object](./img/object_tree_context_pageobject.png){width="206px"}
+#### Page Object Context Menu
+
+![Page Object Context Menu](./img/object_tree_context_pageobject.png){width="206px"}
 
 - **Reload** - refresh information about this module.
+- **Add Repository Object** – Creates a new Object Repository and adds an object to it. This option is available only if no Object Repository currently exists and a [template repository](./object_templates.md) has been defined.
 - **Delete** - remove this module.
+
+#### Module / Page Action Context Menu
 
 ![Page Object Action](./img/object_tree_context_pageobject_action.png){width="254px"}
 
 - **Invoke &lt;Some Action&gt;** - play this action alone.
-
-## Single Test Mode
-
-### Context Menu (root node)
-
-Right click the **Object Tree** node to see:
-
-![Object Tree Root](./img/object_tree_context_singleroot.png){width="271px"}
-
-- **Reload** - checks for new objects to display.
-- **Object Manager** - run an [Object Manager](object_manager.md).
 
 ### Context Menu (window)
 
@@ -180,6 +174,8 @@ Right click the **Window** node to see:
 ![Object Window](./img/object_tree_context_singlewindow.png){width="192px"}
 
 - **Remove** remove window and all contained objects.
+- **Add Repository Object** - Add an object from template to this window. This menu item is only available when a [template repository](./object_templates.md) is defined for the current testing framework.
+
 
 ### Context Menu (object)
 
@@ -193,3 +189,14 @@ Right click on an object in the **Object Tree** dialog to see:
 - **Clone** makes a copy of the object definition and adds the cloned version into the tree. You can then make changes to the cloned copy.
 - **Add Parameter** opens up a dialog box that lets you add a custom parameter to the learned object definition (stored in the `Objects.js` file).
 - **Delete** simply removes the selected object from the tree.
+- **Add Repository Object** - Add an object from template to this object's window. This menu item is only available when a [template repository](./object_templates.md) is defined for the current testing framework.
+
+### Context Menu (Object Repository)
+
+Right click the **Object Tree** node to see:
+
+![Object Tree Root](./img/object_tree_context_singleroot.png){width="271px"}
+
+- **Reload** - checks for new objects to display.
+- **Object Manager** - run an [Object Manager](object_manager.md).
+- **Add Repository Object** - Add an object from template to this repository. This menu item is only available when a [template repository](./object_templates.md) is defined for the current testing framework.
