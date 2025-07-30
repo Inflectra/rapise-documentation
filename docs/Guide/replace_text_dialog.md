@@ -4,16 +4,16 @@
 
 ## Purpose
 
-Replace occurrences of the **Search Term** text with the **Replacement Text** in the currently visible [Source Editor](source_editor.md).
+Replaces occurrences of the **Search Term** with the **Replacement Text** in the currently visible [Source Editor](source_editor.md).
 
 ## How to Open
 
-Use main menu `Edit > Find`.
+From the main menu, select `Edit > Find`.
 
 ## Replace Tab
 
-- **Find what**: Place the string you would like to search for in the **Find what** text box.
-- **Look In:** this option specifies where the search will take place. You can limit the search to: current document, current selection, current test, the entire test and subtests, or a specific folder.
-- **Match case option:** If unselected, case is ignored in the search.
-- **Match whole word option**:  If set to true, parts of words will not count as matches.
-- **Replace with text-box**: All occurrences of the string in the **Find what** text-box will be replaced with the string in the **Replace with** text-box when you press the **Replace** button.
+*   **Find what**: Enter the string you want to search for.
+*   **Look In**: Specifies where the search will take place. You can limit the search to the current document, current selection, current test, the entire test and subtests, or a specific folder.
+*   **Match case**: If unselected, the search ignores case.
+*   **Match whole word**: If selected, only whole words will be matched.
+*   **Replace with** text box: When the **Replace** button is pressed, all occurrences of the string specified in the **Find what** text box are replaced by the string entered in this text box.

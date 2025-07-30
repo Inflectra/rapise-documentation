@@ -4,8 +4,8 @@
 
 ## Preparing the Environment
 
-- [Preparing Environment for Android Mobile Testing](/Manuals/Preparing_for_Android_Testing/)
-- [Preparing Environment for iOS Mobile Testing](/Manuals/Preparing_for_iOS_Testing/)
+- [Preparing the Environment for Android Mobile Testing](/Manuals/Preparing_for_Android_Testing/)
+- [Preparing the Environment for iOS Mobile Testing](/Manuals/Preparing_for_iOS_Testing/)
 
 ## Tutorials
 

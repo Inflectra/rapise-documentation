@@ -4,11 +4,11 @@
 
 ## Purpose
 
-You use the **Choose Scripting Language** dialog to choose between writing your tests in the [Rapise Visual Language (RVL)](visual_language.md) scriptless table language, or in the [JavaScript script editor](javascript_ide.md).
+You use the **Choose Scripting Language** dialog to choose between writing your tests in the [Rapise Visual Language (RVL)](visual_language.md) (a scriptless table language) or in the [JavaScript script editor](javascript_ide.md).
 
 ## How to Open
 
-This dialog is automatically opened after you click **Create** in the [Create New Test](create_new_test_dialog.md) dialog.
+This dialog automatically opens after you click **Create** in the [Create New Test](create_new_test_dialog.md) dialog.
 
 ## Misc
-If you click the "Don't Ask" checkbox, Rapise will default to your last selection automatically when you create a test. You can change this options in the main [Global Settings dialog](options_dialog.md).
+If you select the "Don't Ask" checkbox, Rapise will automatically default to your last selection when you create a test. You can change this option in the main [Global Settings dialog](options_dialog.md).

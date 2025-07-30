@@ -75,11 +75,11 @@ Now, each object is available with its prefix. For example, to click on the "Aut
 
 ## Using Drag & Drop
 
-You can either declare the repository by typing it manually or add it by dragging and dropping the [Objects] node into the RVL:
+You can either declare a repository by typing it manually or add it by dragging and dropping the [Objects] node into the RVL:
 
 ![Drag&Drop Repository](img/Repository_drag_drop.png)
 
-By default, the prefix is assigned as **&lt;test case name&gt;/**, where &lt;test case name&gt; represents the name of the test case owning the repository, and **/** is used as a delimiter for readability.
+By default, the prefix is assigned as **&lt;test case name&gt;/**, where &lt;test case name&gt; represents the name of the test case that owns the repository, and **/** is used as a delimiter for readability.
 
 ## Preamble
 

@@ -6,7 +6,7 @@ The **JavaScript IDE** includes an [editor](source_editor.md) and a [debugger](i
 
 ## Usage
 
-Simply [open a script](source_editor.md) to view the editing features; create a [breakpoint](breakpoints.md) and [play](playback.md) the script to view the [debugging features](internal_debugger.md).
+Simply [open a script](source_editor.md) to view the editing features; create a [breakpoint](breakpoints.md) and [run](playback.md) the script to view the [debugging features](internal_debugger.md).
 
 ## See Also
 

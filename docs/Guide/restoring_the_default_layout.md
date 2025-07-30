@@ -1,18 +1,18 @@
 # Restoring the Default Layout
 
-There are two ways to restore the default layout of Rapise panes: (1) On Startup, and (2) In the Global Settings.
+There are two ways to restore the default layout of Rapise panes: on startup, and through the Global Settings dialog.
 
 ## On Startup
 
-Press the ++shift++ key while you open Rapise.  Keep the ++shift++ key down until Rapise is done initializing.
+Press the ++shift++ key while opening Rapise. Keep the ++shift++ key pressed until Rapise has finished initializing.
 
 ## Global Settings Dialog
 
-1. Click menu `Settings > Global`. The **Rapise Settings** dialog will appear.
+1. Click `Settings > Global`. The **Rapise Settings** dialog will appear.
 2. Navigate to the **Utilities** tab of the dialog.
-3. Click on the **Reset Layout** button.
+3. Click the **Reset Layout** button.
 
-Rapise will restart and the layout will be returned to the default.
+Rapise will restart, and the layout will be restored to its default.
 
 ## See Also
 

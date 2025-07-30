@@ -2,15 +2,15 @@
 
 ## Purpose
 
-**Object libraries** define what objects and interactions Rapise understands during [Recording](recording.md) and [Learning](object_learning.md).  Most Object Libraries are specific to an application or a set of applications.
+**Object libraries** define the objects and interactions Rapise understands during [Recording](recording.md) and [Learning](object_learning.md). Most object libraries are specific to an application or a set of applications.
 
 ## Usage
 
 Rapise comes with many different object libraries. See the list of libraries and supported control types below.
 
-> **Note:** Selecting **Auto** as the application recording library will cause Rapise to select the one that it deems is most appropriate.
+> **Note:** Selecting **Auto** as the application recording library will cause Rapise to select the one it deems most appropriate.
 
-> **Note:** You can [add your own](custom_libraries.md) Recording library - one that understands the objects in your application.
+> **Note:** You can [add your own](custom_libraries.md) recording library—one that understands the objects in your application.
 
 ## Libraries
 
@@ -58,6 +58,6 @@ Rapise comes with many different object libraries. See the list of libraries and
 ## See Also
 
 - [Recording](recording.md)
-- To write an Object library specific to your application, see [Custom Libraries](custom_libraries.md).
+- To write an object library specific to your application, see [Custom Libraries](custom_libraries.md).
 - [Cross Browser Testing](cross_browser_testing.md)
-- If you interact with an object that is not defined in your chosen recording library, it will be treated as a [Simulated Object](simulated_objects.md).
+- If you interact with an object that is not defined in your chosen recording library, it will be treated as a [simulated object](simulated_objects.md).

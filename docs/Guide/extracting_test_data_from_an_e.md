@@ -1,20 +1,20 @@
-# Extracting Test Data From an Excel Spreadsheet
+# Extracting Test Data from an Excel Spreadsheet
 
 ## Overview
 
-Often you want to be able to parameterize your Rapise tests to have a common set of test functions that can use different combinations of test data. You can use a MS-Excel spreadsheet to store the test data and use Rapise to read out the matching values. This articles provides a sample for doing this.
+Often, you may want to parameterize your Rapise tests so that a common set of test functions can use different combinations of test data. You can use an MS Excel spreadsheet to store test data and use Rapise to read the corresponding values. This article provides a sample demonstrating this.
 
 ## Recommended Solution
 
 ### RVL
 
-The most simple and straight-forward way to accomplish this is to use [RVL Maps](../RVL/Maps.md).
+The simplest and most straightforward way to accomplish this is to use [RVL Maps](../RVL/Maps.md).
 
-Also, if your goal is to store Configuration data as `.xlsx` then we recommend to simply use [Global.GetProperty](../Libraries/Global.md#getproperty).
+Also, if your goal is to store configuration data in an `.xlsx` file, we recommend simply using [Global.GetProperty](../Libraries/Global.md#getproperty).
 
 ### JavaScript
 
-In this example we have a spreadsheet that contains some lookup data:
+In this example, we have a spreadsheet that contains lookup data:
 
 |**Test** |  **Test Data** |
 |-------- | -------------- |
@@ -24,9 +24,9 @@ In this example we have a spreadsheet that contains some lookup data:
 | Test4   | valuetest4     |
 | Test5   | valuetest5     |
 
-We want to dynamically query this Excel sheet and find the test data associated with a specific case. For example if we query for `Test2` we want to return back the test data `valuetest2`.
+We want to dynamically query this Excel sheet to find the test data associated with a specific case. For example, if we query for `Test2`, we want to return the test data `valuetest2`.
 
-The function that will do this uses the built-in [Spreadsheet](/Libraries/Spreadsheet/) object:
+The function that accomplishes this uses the built-in [Spreadsheet](/Libraries/Spreadsheet/) object:
 
 ```javascript
 function FindValueFromFile(filename, valueToFind)

@@ -2,30 +2,30 @@
 
 ## Overview
 
-**Microsoft Dynamics AX** (usually referred to as just **AX**) - is an ERP system for mid-size to large enterprises. It is the most robust, scalable, and functionally rich enterprise resource planning system in the Microsoft Dynamics family of products. The system was originally known as Axapta, owned by the Danish software company Damgaard.
+**Microsoft Dynamics AX** (usually referred to as just **AX**) is an ERP system for mid-size to large enterprises. It is the most robust, scalable, and functionally rich enterprise resource planning system in the Microsoft Dynamics family of products. The system was originally known as Axapta, owned by the Danish software company Damgaard.
 
-Dynamics AX consists of a client-server architecture with a thick-client ERP interface for entering/adding data in the system:
+Dynamics AX consists of a client-server architecture with a thick-client ERP interface for entering and adding data in the system:
 
 ![dynamics-ax-overview](./img/dynamics_ax1.png)
 
-Rapise includes specialized libraries for testing Dynamics AX applications that are built-upon the standard [Microsoft Windows](windows_applications.md) **UIAutomation** library with special extensions for handling [unique AX controls](/Libraries/ses_lib_dynamicsax/) such as tree views, the navigation explorer and the various grids used to edit data. In addition Rapise can test the following extensions to Dynamics AX:
+Rapise includes specialized libraries for testing Dynamics AX applications that are built upon the standard [Microsoft Windows](windows_applications.md) **UIAutomation** library with special extensions for handling [unique AX controls](/Libraries/ses_lib_dynamicsax/) such as tree views, the navigation explorer, and the various grids used to edit data. In addition, Rapise can test the following extensions to Dynamics AX:
 
 - **Dynamics AX Management Reporter** - Rapise can test this extension using its **Generic** [Windows library](windows_applications.md).
 - **Dynamics AX Web Portals** - Rapise can test the various web portals using its [web browser libraries](web_testing.md).
 
 ## Start Recording a New Test
 
-First you need to create a new Basic test and start recording session. Choose Dynamics AX from the list of applications:
+To start recording a new test, first create a new Basic test and begin a recording session. Choose Dynamics AX from the list of applications:
 
 ![AppChooser](./img/dynamicsaxappchooser.png)
 
-Then press `Select` button to start recording. Rapise will automatically plug the UIAutomation and DynamicsAX libraries.
+Then press the `Select` button to start recording. Rapise will automatically load the UIAutomation and DynamicsAX libraries.
 
 - **Microsoft UI Automation** is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by means other than standard input. UI Automation also allows automated test scripts to interact with the UI. 
 
-- **DynamicsAX** library supports set of controls specific to Microsoft Dynamics AX 2012 application. 
+- **DynamicsAX** library supports a set of controls specific to the Microsoft Dynamics AX 2012 application. 
 
-When recording is completed you can see attached libraries in the code of `Main.js` file:
+Once recording is complete, you can see the attached libraries in the code of `Main.js` file:
 
 ```javascript
 g_load_libraries=["UIAutomation", "DynamicsAX"];
@@ -33,47 +33,47 @@ g_load_libraries=["UIAutomation", "DynamicsAX"];
 
 ## Automatic Adjustment of `Window Title` Object Property
 
-Main window title of Dynamics AX is dynamic by nature.
+The main window title of Dynamics AX is dynamic in nature.
 
 ![DynamicsAX Title](./img/dynamicsaxtitle.png)
 
-It contains not only application name but also domain and AOS information and session Id. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression in object properties. Here it is:
+It contains not only the application name, but also domain and AOS information, and the session ID. Therefore, it may differ between test recording and test playback. To address this problem, Rapise automatically replaces the actual window title with a regular expression in object properties. Here it is:
     
         regex:.Microsoft Dynamics AX.*
 
-So recorded object properties automatically adjusted as
+So recorded object properties are automatically adjusted as:
 
 ![Object Properties](./img/dynamicsaxobjectproperties.png)
 
-Also Rapise automatically sets `Record Title` in test settings to the same regular expression so you do not need to choose the Dynamics AX main window during subsequent recording sessions.
+Rapise also automatically sets the `Record Title` in test settings to the same regular expression, so you do not need to choose the Dynamics AX main window during subsequent recording sessions.
 
 ![Test Settings](./img/dynamicsaxtestsettings.png)
 
 ## Titles of Child Windows
 
-Child windows of Dynamics AX also may have dynamic titles. Rapise does not know all the available patterns, so for child windows you need to write regular expressions yourself. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the `window title` property automatically. In other words when Rapise learns a new object and it's `window title` is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.
+Child windows in Dynamics AX may also have dynamic titles. Rapise does not know all available patterns, so for child windows, you need to write regular expressions yourself. The good news is that you only need to do this for one object in each such window. For subsequent learned objects, Rapise will automatically change the `window title` property. In other words, when Rapise learns a new object and its `window title` is matched by a regular expression of a previously learned object, the title property is automatically replaced by this regular expression.
 
 ## Object Location
 
-Object location property has the form of
+The object's location property has the form:
 
         id1/id2/id3...
 
-where ids refer to parent objects along the path to the top window object. Sometimes such ids also can be dynamic, e.g.:
+where IDs refer to parent objects along the path to the top window object. Sometimes, such IDs can also be dynamic, for example:
 
         Dimensions display (1 - k13) - Sales order: S30014323, CE15P, Sales order: S30014323/InventDimParmFixed/Pane/View/Style
 
-In this case change dynamic parts by corresponding regular expressions. In the above example updated location looks like:
+In this case, change dynamic parts to corresponding regular expressions. In the example above, the updated location looks like:
 
         regex:Dimensions display.*/InventDimParmFixed/Pane/View/Style
 
-Here is updated location in the property grid:
+Here is the updated location in the property grid:
 
 ![Object Location](./img/dynamicsaxobjectlocation.png)
 
-## How to Launch Dynamics AX Client
+## How to Launch the Dynamics AX Client
 
-If in your test you want to check that Dynamics AX application is installed and running place this function into `User.js`:
+If you want to check if the Dynamics AX application is installed and running in your test, place this function into `User.js`:
 
 ```javascript
 function DynamicsAXLaunch()
@@ -117,7 +117,7 @@ function DynamicsAXLaunch()
 }
 ```
 
-You can now use this function in RVL
+You can now use this function in RVL:
 
 ![dax launch rvl](./img/daxlaunchrvl.png)
 
@@ -129,13 +129,13 @@ DynamicsAXLaunch();
 
 ## Recording Actions and Learning Objects
 
-During recording while you interact with Dynamics AX controls Rapise captures actions and displays them in the recording dialog.
+During recording, as you interact with Dynamics AX controls, Rapise captures actions and displays them in the recording dialog.
 
 ![Recording Dialog](./img/dynamicsaxrecordingdialog.png)
 
-When recording is finished Rapise automatically generates the test.
+Once recording is finished, Rapise automatically generates the test.
 
-In [Rapise Visual Language(RVL)](/RVL/Overview/) it looks like
+In [Rapise Visual Language (RVL)](/RVL/Overview/), it looks like:
 
 ![dax recorded rvl](./img/daxrecordedrvl.png)
 
@@ -168,13 +168,13 @@ function Test(params)
 }
 ```
 
-If Rapise does not capture any interaction or captures it wrongly then try to [learn](object_learning.md) the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press ++ctrl+2++ shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. `Pause/Resume` button is located at the right side of the [Recording Activity dialog](recording_activity_dialog.md).
+If Rapise does not capture an interaction or captures it incorrectly, then try to [learn](object_learning.md) the object. In this case, Rapise will add it to the object tree but will not capture the action, requiring you to add the code to the test manually later. To learn an object during a recording session, place the mouse cursor over it and press the ++ctrl+2++ shortcut. It is advisable to pause recording before learning objects. This will prevent Rapise from intercepting mouse and keyboard input and attempting to record your interactions. The `Pause/Resume` button is located on the right side of the [Recording Activity dialog](recording_activity_dialog.md).
 
 ## Tips for Interacting with Objects
 
 ## Text Box
 
-To allow Rapise to capture the entered text interact with a text box in two steps:
+To allow Rapise to capture the entered text, interact with a text box in two steps:
 
 1. Click into the edit box
 2. Type text using keyboard
@@ -185,16 +185,16 @@ Dynamics AX has several types of combo boxes.
 
 ### Standard Combo Box
 
-Standard combo box like `Worker type` in the `Hire New Worker` form.
+Standard combo boxes, like `Worker type` in the `Hire New Worker` form.
   
 ![dax simple combo](./img/daxsimplecombo.png)
 
-Rapise treats such combo boxes as atomic objects abd records them as [DynamicsAXComboBox](/Libraries/DynamicsAXComboBox/). To record interaction with the combo box
+Rapise treats such combo boxes as atomic objects and records them as [DynamicsAXComboBox](/Libraries/ses_lib_dynamicsax/DynamicsAXComboBox.js). To record interaction with the combo box:
 
-1. Click on the combo box to expand the dropwdown with choices
+1. Click on the combo box to expand the dropdown with choices
 2. Select a value from the list
 
-Generated script step looks like:
+The generated script step looks like:
 
 **RVL**
 
@@ -208,11 +208,11 @@ SeS('Worker_type').DoSelectItem("Employee");
 
 ### Table Filter Combo
 
-Table filter combo is recognized as a pair of objects: `Scope` and `DropDown`. The `Scope` is of type [DynamicsAXMenuItem](/Libraries/DynamicsAXMenuItem/) and used to open the `DropDown` of type [DynamicsAXMenuDropDownList](/Libraries/DynamicsAXMenuDropDownList/).
+A table filter combo is recognized as a pair of objects: `Scope` and `DropDown`. The `Scope` object is of type [DynamicsAXMenuItem](/Libraries/ses_lib_dynamicsax/DynamicsAXMenuItem.js) and is used to open the `DropDown` object of type [DynamicsAXMenuDropDownList](/Libraries/ses_lib_dynamicsax/DynamicsAXMenuDropDownList.js).
 
 ![Table Filter](./img/dynamicsaxtablefilter.png)
 
-Recorded steps look like:
+The recorded steps look like:
 
 **RVL**
 
@@ -229,11 +229,11 @@ SeS('DropDown').DoSelectItem("Search name");
 
 ### Lookup Field
 
-Lookup field consists of an edit box, open button and a dropdown table. Record lookup interactions in three steps:
+A lookup field consists of an edit box, an open button, and a dropdown table. Record lookup interactions in three steps:
 
-1. Click the edit field. Recorded as [DynamicsAXTextBox](/Libraries/DynamicsAXTextBox/).
-2. Click the open button. Recorded as [UIAObject](/Libraries/UIAObject/).
-3. Click the value in the dropdown grid. Recorded as [DynamicsAXTable](/Libraries/DynamicsAXTable/).
+1. Click the edit field. Recorded as [DynamicsAXTextBox](/Libraries/ses_lib_dynamicsax/DynamicsAXTextBox.js).
+2. Click the open button. Recorded as [UIAObject](/Libraries/ses_lib_dynamicsax/UIAObject.js).
+3. Click the value in the dropdown grid. Recorded as [DynamicsAXTable](/Libraries/ses_lib_dynamicsax/DynamicsAXTable.js).
 
 ![Lookup Field](./img/dynamicsaxlookupfield.png)
 
@@ -254,7 +254,7 @@ SeS('Grid').DoClickCell("SOFTWARE", "Customer group");
 
 ## Address Bar
 
-Click in empty area of the address bar and enter the address where you want to navigate. Rapise will capture [DynamicsAXAddressBar](/Libraries/DynamicsAXAddressBar/) object and record `DoSetText` action.
+Click in an empty area of the address bar and enter the address to which you want to navigate. Rapise will capture the [DynamicsAXAddressBar](/Libraries/ses_lib_dynamicsax/DynamicsAXAddressBar.js) object and record the `DoSetText` action.
 
 ![Address Bar](./img/dynamicsaxaddressbar.png)
 
@@ -270,7 +270,7 @@ SeS('AddressBarContainer').DoSetText('DAT/Retail essentials/Employees/Users');
 
 ## Menu
 
-Rapise supports both recording and learning of the main menu. When recording make sure you click on every component along the path. E.g. you want to navigate to `File > View > Modules > General ledger`. During recording click on `File`, `View`, `Modules` and `General ledger`. Captured menu object has type [DynamicsAXMenu](/Libraries/DynamicsAXMenu/). Generated script looks like:
+Rapise supports both recording and learning for the main menu. When recording, make sure you click on every component along the path. For example, if you want to navigate to `File > View > Modules > General ledger`. During recording, click on `File`, `View`, `Modules`, and `General ledger`. The captured menu object has the type [DynamicsAXMenu](/Libraries/ses_lib_dynamicsax/DynamicsAXMenu.js). The generated script looks like:
 
 **RVL**
 
@@ -283,15 +283,15 @@ Rapise supports both recording and learning of the main menu. When recording mak
 SeS('File').DoMenu("File;View;Modules;General ledger");
 ```
 
-Rapise captures menu as top level object (`File` in the example above). Notice that menu path components are separated with `;`. If you want for example to open menu `File > Tools > Telephone list` then use `File;Tools;Telephone list` as `path` parameter.
+Rapise captures the menu as a top-level object (`File` in the example above). Notice that menu path components are separated by `;`. For example, if you want to open the menu `File > Tools > Telephone list`, then use `File;Tools;Telephone list` as the `path` parameter.
 
 ## Table
 
-Rapise recognizes Dynamics AX grids as [DynamicsAXTable](/Libraries/DynamicsAXTable/)
+Rapise recognizes Dynamics AX grids as a [DynamicsAXTable](/Libraries/ses_lib_dynamicsax/DynamicsAXTable.js).
 
 ![Grid](./img/dynamicsaxgrid.png)
 
-When you click on a cell in a table Rapise records column name and value in the cell. The generated click step looks like:
+When you click on a cell in a table, Rapise records the column name and value in the cell. The generated click step looks like:
 
 **RVL**
 
@@ -303,15 +303,15 @@ When you click on a cell in a table Rapise records column name and value in the 
 SeS('ListPageGrid').DoClickCell("Contoso Retail Chicago", "Name");
 ```
 
-Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  [DynamicsAXTable](/Libraries/DynamicsAXTable/) for more details.
+Rapise can click cells based on column name and value, as well as using column and row indexes. Rapise can also read column names, column count, and row count. Check [DynamicsAXTable](/Libraries/ses_lib_dynamicsax/DynamicsAXTable.js) for more details.
 
 ## Infolog
 
-In some case Dynamics AX can report an error using Infolog window.
+In some cases, Dynamics AX can report an error using the Infolog window.
 
 ![Infolog](./img/dynamicsaxinfolog.png)
 
-To obtain text of the messages in this window learn the Tree object - place cursor over the error text and press ++ctrl+2++ shortcut. The object is learned as [UIATree](/Libraries/UIATree/). In the case of infolog tree - all nodes are immediate children of the root. So in the example shown on the image above the tree contains two child nodes of the tree node. To get the number of messages and read individual messages use `GetChildrenCount` and `GetChildAt` actions of [UIATree](/Libraries/UIATree/).
+To obtain the text of the messages in this window, learn the Tree object by placing the cursor over the error text and pressing the ++ctrl+2++ shortcut. The object is learned as a [UIATree](/Libraries/ses_lib_dynamicsax/UIATree.js). In the case of the Infolog tree, all nodes are immediate children of the root. So, in the example shown in the image above, the tree contains two child nodes of the tree node. To get the number of messages and read individual messages, use the `GetChildrenCount` and `GetChildAt` actions of [UIATree](/Libraries/ses_lib_dynamicsax/UIATree.js).
 
 **RVL**
 
@@ -330,25 +330,25 @@ var messageText = SeS('Tree').GetChildAt(0, 1);
 
 ## Type to filter Field
 
-Almost each standard grid in Dynamics AX has a text field for filtering grid data.
+Almost every standard grid in Dynamics AX has a text field for filtering grid data.
 
 ![Type To Filter](./img/dynamicsaxtypetofilter.png)
 
-When you learn this field it has a name `Type to filter`.
+When you learn this field, it has the name `Type to filter`.
 
 ![Type To Filter Properties](./img/dynamicsaxtypetofilterproperties.png)
 
-However when this field gets focus it's name changes to `Text box`. To enable Rapise to find this field during playback set `Ignore Object Name` property of the object to `True`.
+However, when this field gets focus, its name changes to `Text box`. To enable Rapise to find this field during playback, set the `Ignore Object Name` property of the object to `True`.
 
 ![Ignore Object Name](./img/dynamicsaxignoreobjectname.png)
 
-## Dynamics AX Cook Book
+## Dynamics AX Cookbook
 
 ## Maximize/Minimize/Restore Window
 
-You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id `AddressBarContainer`.
+You can maximize a window using any object inside it as a starting point. In the examples below, we will use the object with the ID `AddressBarContainer`.
 
-First place the following code into your `User.js`:
+First, place the following code into your `User.js`:
 
 ```javascript
 function MaximizeWindow(/**objectId*/ objectId)
@@ -383,7 +383,7 @@ MinimizeWindow("AddressBarContainer");
 
 ## Scroll to the Bottom of a Grid
 
-If your grid looks like this and you want to scroll to the last record of it learn the `Last Record` button and click on it during test playback.
+If your grid looks like this and you want to scroll to its last record, learn the `Last Record` button and click on it during test playback.
 
 ![Grid to Scroll](./img/dynamicsaxgridtoscroll.png)
 
@@ -399,11 +399,11 @@ SeS('Last_Record').DoClick();
 
 ## Scroll and Click on a Cell in a Grid
 
-If you know the value of a cell in a grid then Rapise will automatically scroll the grid before click.
+If you know the value of a cell in a grid, Rapise will automatically scroll the grid before clicking.
 
 ![Scroll Before Click](./img/dynamicsaxscrollbeforeclick.png)  
 
-Assume that you want to click on a cell with value `Alen Shen` in a column `Search name`. This cell is not visible on the picture and requires scrolling to show up. The following script performs the click:
+Assume that you want to click on a cell with the value `Alen Shen` in the `Search name` column. This cell is not visible in the picture and requires scrolling to become visible. The following script performs the click:
 
 **RVL**
 
@@ -415,7 +415,7 @@ Assume that you want to click on a cell with value `Alen Shen` in a column `Sear
 SeS('CustomerGrid').DoClickCell("Alen Shen", "Search name");
 ```
 
-If you do not know the value of a cell you can get it this way
+If you do not know the value of a cell, you can retrieve it this way:
 
 **RVL**
 
@@ -428,7 +428,7 @@ var cellValue = SeS('CustomerGrid').GetCell(9, "Search name");
 Tester.Message(cellValue);
 ```
 
-Where 9 is row number.
+Where `9` is the row number.
 
 ## See Also
 

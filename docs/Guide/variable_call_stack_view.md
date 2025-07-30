@@ -4,15 +4,15 @@
 
 ## Purpose
 
-Lists the functions in the current call stack.  Beneath each function, variables/objects local to that function are listed with their value and type.
+Lists the functions in the current call stack. For each function, its local variables and objects are listed with their values and types.
 
 ## How to Open
 
-Begin [debugging](internal_debugger.md) a script.  The **Variable/Call Stack View** will open automatically.
+Begin [debugging](internal_debugger.md) a script. The **Variable/Call Stack View** will open automatically.
 
 ## Go to a Function Definition
 
-Double click on a function to go to its definition.
+Double-click a function to go to its definition.
 
 ## Call Stack View Optimization
 

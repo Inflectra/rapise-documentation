@@ -1,6 +1,6 @@
 # Webinars
 
-For upcoming webinars please check the [Events page](https://www.inflectra.com/Company/Events.aspx) on our company website.
+For upcoming webinars, please check the [Events page](https://www.inflectra.com/Company/Events.aspx) on our company website.
 
 ## Series
 
@@ -13,7 +13,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 - [Rapise 8.3](https://youtu.be/8PO7YMUFUes)
 - [Harness AI to Simplify Test Automation](https://youtu.be/YiSu_iuST24)
 - [Rapise 8.2](https://youtu.be/n7coxYI28dA)
-- [AI in Rapise(short videos, playlist)](https://www.youtube.com/playlist?list=PL1GncVUgF5nsm6OxusGnzY8iBE-nEp36C)
+- [AI in Rapise (short videos, playlist)](https://www.youtube.com/playlist?list=PL1GncVUgF5nsm6OxusGnzY8iBE-nEp36C)
 
 ### Season 2023
 
@@ -23,7 +23,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 #### Inflectra Ninja Sessions
 
 - [Running Salesforce Tests in Parallel in Rapise](https://youtu.be/tXrwrV8UxuI)
-- [Automating File Upload in Web Applications With Rapise](https://youtu.be/IwremHEBXhg)
+- [Automating File Upload in Web Applications with Rapise](https://youtu.be/IwremHEBXhg)
 - [Typical Configuration Tasks for Selenium with Rapise - Chrome Profile](https://youtu.be/-ckOo5H1vMg)
 
 ### Season 2022
@@ -36,10 +36,10 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 ### Season 2021
 
 - [Parallel Execution of Tests with Rapise & SpiraTest](https://youtu.be/bNoWZjOE3hQ)
-- [Playing UFT-QTP Scripts with Rapise ](https://youtu.be/g0_WIOfsO9A)
-- [Testing OracleForms Applications with Rapise](https://youtu.be/Q4st6PvUEi4)
+- [Playing UFT-QTP Scripts with Rapise](https://youtu.be/g0_WIOfsO9A)
+- [Testing Oracle Forms Applications with Rapise](https://youtu.be/Q4st6PvUEi4)
 - [Mobile Testing in a Device Cloud with Rapise](https://youtu.be/Y1D97Uoqr_s)
-- [Behavior Driven Testing with Rapise and Cucumber JS](https://youtu.be/Ygk0tlZyzOw)
+- [Behavior-Driven Testing with Rapise and Cucumber JS](https://youtu.be/Ygk0tlZyzOw)
 
 ### InflectraCon 2020
 
@@ -59,7 +59,7 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 - [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5ntxsfThnzrxpOtm9d0tpHYU)
 - [New Features in Rapise v6.6](https://youtu.be/BIgOIxkZ5Hk)
-- [25 Tips and Tricks of Using Rapise](https://youtu.be/54aJDS8sUKU)
+- [25 Tips and Tricks for Using Rapise](https://youtu.be/54aJDS8sUKU)
 - [Scriptless, Codeless, Visual](https://youtu.be/jFnZeYG7m9A)
 - [How to Benefit From Self-Healing Locators](https://youtu.be/ulgL-RnGuHo)
 - [Web Recorder Configuration in Rapise](https://youtu.be/Ha3an86-Elg)
@@ -69,12 +69,12 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nsHW149TNZaH-njldo-aWwS)
 
 - [Part 1: From Manual to Automated Testing](https://youtu.be/YakGP-O-LBs)
-- [Part 2: Is Application Ready for Test Automation?](https://youtu.be/ofQOr0hsfRo)
-- [Part 3: Choosing A Test Automation Tool: 8 Features That Matter](https://youtu.be/vZySLLNusg0)
+- [Part 2: Is an Application Ready for Test Automation?](https://youtu.be/ofQOr0hsfRo)
+- [Part 3: Choosing a Test Automation Tool: 8 Features That Matter](https://youtu.be/vZySLLNusg0)
 - [Part 4: Friends & Foes of Software Test Automation](https://youtu.be/eQ-mhBPRk58)
 - [Part 5: Codeless Test Automation](https://youtu.be/mzuzEyClF98)
 - [Part 6: Scenarios, or Why Some Automation Projects Fail](https://youtu.be/lVnqiRjRo_k)
-- [Part 7: AI In Test Automation](https://youtu.be/cjy6dIy5wGg)
+- [Part 7: AI in Test Automation](https://youtu.be/cjy6dIy5wGg)
 
 ### Planet Test Automation
 
@@ -90,21 +90,21 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 
 [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nti06ttVw4gFsNrXWcQ1y9b)
 
-- [Working With Navigation & Menus](https://youtu.be/RYiHNrcfw80)
-- [Tables, Grids And Trees](https://youtu.be/SUy-hqaIh4s)
+- [Working with Navigation & Menus](https://youtu.be/RYiHNrcfw80)
+- [Tables, Grids, and Trees](https://youtu.be/SUy-hqaIh4s)
 - [Dropdown Controls, Date Pickers & Sliders](https://youtu.be/Wl90j4ZY6lg)
-- [Little Known Ways To Leverage RVL](https://youtu.be/f6OLM9ZajZw)
-- [5 Ways To Use Rapise Frameworks](https://youtu.be/LrFJeAs742E)
+- [Little-Known Ways to Leverage RVL](https://youtu.be/f6OLM9ZajZw)
+- [5 Ways to Use Rapise Frameworks](https://youtu.be/LrFJeAs742E)
 
 ### Testing Microsoft Dynamics
 
 [Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nu0YJcl7PHo0dn6iMbOQmM6)
 
-- [How To Test MS Dynamics NAV Through The UI Like A Pro](https://youtu.be/ZBRBdNnFl-0)
-- [How To Test MS Dynamics AX Through The UI Like A Pro](https://youtu.be/aIh8sMTkQ18)
-- [How To Test MS Dynamics 365 for Sales Through The UI Like A Pro](https://youtu.be/mV7xKc7tdrc)
-- [How To Test MS Dynamics 365 for Finance & Operations Through The UI](https://youtu.be/nZYc2qqJtWA)
-- [How To Test MS Dynamics Unified Service Desk Through The UI](https://youtu.be/ehRRo0H88Mk)
+- [How to Test MS Dynamics NAV Through the UI Like a Pro](https://youtu.be/ZBRBdNnFl-0)
+- [How to Test MS Dynamics AX Through the UI Like a Pro](https://youtu.be/aIh8sMTkQ18)
+- [How to Test MS Dynamics 365 for Sales Through the UI Like a Pro](https://youtu.be/mV7xKc7tdrc)
+- [How to Test MS Dynamics 365 for Finance & Operations Through the UI](https://youtu.be/nZYc2qqJtWA)
+- [How to Test MS Dynamics Unified Service Desk Through the UI](https://youtu.be/ehRRo0H88Mk)
 
 ## Singles
 
@@ -132,6 +132,6 @@ For upcoming webinars please check the [Events page](https://www.inflectra.com/C
 - [Getting Started Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5ntLDCyJMx5L9hKE8ainRCDd)
 - [Rapise Tips & Hacks Playlist](https://www.youtube.com/playlist?list=PL1GncVUgF5nslUwC33q2NokDRtfJVxjE4)
 - [Using Rapise with SpiraTest](https://youtu.be/5ybrBQOzez8)
-- [Introduction To Powerful New Rapise 6](https://youtu.be/dAtSwNawL8Q)
-- [Discover Test Automation With Rapise 6](https://youtu.be/nBJ5QKEEguM)
-- [Codeless Test Automation - 10 Features Of Scriptless Test Automation Tools](https://youtu.be/kbyLnnXlpwQ)
+- [Introduction to Powerful New Rapise 6](https://youtu.be/dAtSwNawL8Q)
+- [Discover Test Automation with Rapise 6](https://youtu.be/nBJ5QKEEguM)
+- [Codeless Test Automation: 10 Features of Scriptless Test Automation Tools](https://youtu.be/kbyLnnXlpwQ)

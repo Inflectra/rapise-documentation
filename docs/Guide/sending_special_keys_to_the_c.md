@@ -2,20 +2,20 @@
 
 ## Overview
 
-You can use the [Global.DoSendKeys](/Libraries/Global/#DoSendKeys) action to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. `Page Down`, or `CTRL + Key`). This article explains the way to do this.
+You can use the [Global.DoSendKeys](/Libraries/Global/#DoSendKeys) action to send keypresses to the current application. Sometimes, you may need to send special control keys to the application (e.g., `Page Down` or `CTRL + Key`). This article explains how to do this.
 
 !!! important
-    For Web applications, use [Navigator.DoSendKeys](/Libraries/Navigator/#DoSendKeys) and [HTMLObject.DoSendKeys](/Libraries/HTMLObject/#DoSendKeys) which accept the same patterns listed below.
+    For web applications, use [Navigator.DoSendKeys](/Libraries/Navigator/#DoSendKeys) and [HTMLObject.DoSendKeys](/Libraries/HTMLObject/#DoSendKeys). Both accept the same patterns listed below.
 
 ![DoSendKeys Demo](./img/global_dosendkeys.gif)
 
 ## Special Characters
 
-To send special characters, you just use the list available in the Windows API `SendKeys.Send` function:
+To send special characters, refer to the list available in the Windows API's `SendKeys.Send` function:
 
 [http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send(v=vs.110).aspx](http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send%28v=vs.110%29.aspx)
 
-To specify characters that aren't displayed when you press a key, such as `ENTER` or `TAB`, and keys that represent actions rather than characters, use the codes in the following table:
+To specify characters that are not displayed when you press a key (such as `ENTER` or `TAB`), or keys that represent actions rather than literal characters, use the codes in the following table:
 
 | **Key**                                | **Code**                            |
 | -------------------------------------- | ----------------------------------- |
@@ -60,11 +60,11 @@ To specify characters that aren't displayed when you press a key, such as `ENTER
 | Keypad multiply                        | {MULTIPLY}                          |
 | Keypad divide                          | {DIVIDE}                            |
 
-The plus sign (+), caret (^), percent sign (%), tilde (~), and parentheses () have special meanings to SendKeys. To specify one of these characters, enclose it within braces ({}). For example, to specify the plus sign, use "{+}". To specify brace characters, use "{{}" and "{}}".
+The plus sign (+), caret (^), percent sign (%), tilde (~), and parentheses `()` have special meanings within SendKeys. To specify one of these characters, enclose it within braces (`{}`). For example, to specify the plus sign, use `{+}`. To specify brace characters, use `{{}` and `{}}`.
 
 ## SHIFT, CTRL and ALT
 
-To specify keys combined with any combination of the SHIFT, CTRL, and ALT keys, precede the key code with one or more of the following codes:
+To specify keys combined with a combination of the SHIFT, CTRL, and ALT keys, precede the key code with one or more of the following symbols:
 
 | **Key**   | **Code**  |
 | --------- | --------- |
@@ -76,7 +76,7 @@ To specify keys combined with any combination of the SHIFT, CTRL, and ALT keys, 
 
 In this example Rapise sends various key combinations to Windows Notepad.
 
-> Note: [Global.DoSleep](/Libraries/Global/#DoSleep) is used to slow down test execution and make test steps visible.
+> Note: [Global.DoSleep](/Libraries/Global/#DoSleep) is used to slow down test execution and make the test steps visible.
 
 **RVL version**
 
@@ -109,7 +109,7 @@ Global.DoSleep(1000);
 Global.DoKillByPid();
 ```
 
-To run RVL or JavaScript version of this example place the following function to User.js.
+To run RVL or JavaScript version of this example, place the following function in User.js.
 
 ```javascript
 function ActivateNotepad()

@@ -1,12 +1,12 @@
 # Sheet Preamble
 
-Preamble is a beginning of each RVL sheet containing common data definitions.
+A preamble is the section at the beginning of each RVL sheet that contains common data definitions.
 
-Preamble is executed every time when one does [Play Selection](../Guide/rvl_editor.md#context-menu) or [Play From Here](../Guide/rvl_editor.md#context-menu) in RVL. So if the piece that you try to have executed refers [Variables](Variables.md), [Repositories](Repository.md) or [Maps](Maps.md) then executed statement will 'see' them as if they are part of the selection.
+The preamble is executed every time you use [Play Selection](../Guide/rvl_editor.md#context-menu) or [Play From Here](../Guide/rvl_editor.md#context-menu) in RVL. This means that if a selection refers to any [Variables](Variables.md), [Repositories](Repository.md), or [Maps](Maps.md) from the preamble, the executed statement will recognize them as if they were part of the selection.
 
-The preamble is detected automatically. Everything before first [Action](Actions.md), [Assertion](Assertions.md), [Loop](Loops.md) or [Condition](Conditions.md) is a preamble.
+The preamble is detected automatically. Everything before the first [Action](Actions.md), [Assertion](Assertions.md), [Loop](Loops.md), or [Condition](Conditions.md) is considered the preamble.
 
-For example, Preamble here ends at the row 10 (because row 11 is **Action**)
+For example, the preamble here ends on row 10 because row 11 contains an **Action**.
 === "Screenshot"
     ![Preamble](./img/Preamble_Script.png)
 === "Transcript"

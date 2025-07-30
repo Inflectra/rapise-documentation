@@ -1,12 +1,12 @@
-# Changing the URL of Website being Tested
+# Changing the URL of the Website Under Test
 
 ## Question
 
-We are in the process of adding a new testing server that we would like to be able to run automation scripts against. I just wanted to see if there is a process documented for converting scripts and objects to point to a different web address?
+We are adding a new testing server and want to run automation scripts against it. Is there a documented process for converting scripts and objects to point to a different web address?
 
 ## Recommended Solution
 
-You do not need to convert scripts and objects. You can keep the script the same and just add the following code at the start of the test:
+You do not need to convert scripts and objects. You can keep the script as is and add the following code at the start of the test:
 
 ```javascript
 Navigator.Open('http://www.website.com');
@@ -19,7 +19,7 @@ g_webSiteBaseUrl = 'http://www.website.com';
 Navigator.Open(g_webSiteBaseUrl);
 ```
 
-The variable may be defined by external execution engine like [SpiraTest](spiratest_integration.md).
+The variable can be defined by an external execution engine, such as [SpiraTest](spiratest_integration.md).
 
 ## See Also
 

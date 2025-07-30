@@ -15,18 +15,18 @@ Use **Tester.PushReportAttribute** or **Tester.SetReportAttribute** to set value
 ```javascript
 Tester.PushReportAttribute("columnName", "value");
 
-// ...some test steps...       //the rows corresponding to these steps will have
-                               //value in their columnName column
+// ...some test steps...       // The rows corresponding to these steps will have
+                               // value in their columnName column.
 
 Tester.PushReportAttribute("columnName", "value2");
 
-// ...some test steps...       //the rows corresponding to these steps will have
-                               //value2 in their columnName column
+// ...some test steps...       // The rows corresponding to these steps will have
+                               // value2 in their columnName column.
 
-Tester.PopReportAttribute("columnName"); //test steps proceeding this will be back to value
+Tester.PopReportAttribute("columnName"); // Subsequent test steps will revert to the previous value for this column.
 ```
 
-If columnName does not exist, it will be added to the report.
+If `columnName` does not exist, it will be added to the report.
 
 **SetReportAttribute**
 
@@ -34,7 +34,7 @@ If columnName does not exist, it will be added to the report.
 Tester.SetReportAttribute("columnName", "value");
 ```
 
-If `columnName` does not exist, it will be added to the report.  Column `columnName` will be populated with `value` for rows created after this function call (unless specified otherwise).
+If `columnName` does not exist, it will be added to the report. For rows created after this function call, `columnName` will be populated with `value` (unless specified otherwise).
 
 ## Adding Data
 
@@ -47,10 +47,10 @@ Tester.Message("description", "data", "columnValuePairs");
 
 - **description** is a string.
 - **expression** is the boolean expression that the assertion tests.
-- **data** is an array of data objects.  Each data element is written to its own row below the assert/message row with which it is associated.  Data can be text, a link, or an image.  The following is an array with text, link, and image data.
-- **columnValuePairs** is an object with key/value pairs.  Column names are the keys.  If the specified column does not exist, it will be created. Example: `{requirement: "Req1.2.3", paragraph: "12.5"}`
+- **data** is an array of data objects. Each data element is written to its own row, appearing below the associated assert/message row. Data can be text, a link, or an image. The following is an example of an array containing text, link, and image data.
+- **columnValuePairs** is an object with key/value pairs. Column names serve as the keys. If the specified column does not exist, it will be created. Example: `{requirement: "Req1.2.3", paragraph: "12.5"}`
 
-Example of **data** array:
+Example **data** array:
 
 ```javascript
 [
@@ -63,4 +63,4 @@ Example of **data** array:
 ## See Also
 
 - [Automated Reporting](automated_reporting.md)
-- The [test samples](sample_tests.md) include a sample about reporting (Reporting.sstest)
+- The [test samples](sample_tests.md) include a reporting sample (Reporting.sstest).

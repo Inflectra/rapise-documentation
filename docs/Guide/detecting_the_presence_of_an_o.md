@@ -1,10 +1,10 @@
 # Detecting the presence of an object
 
-Often you need to be able to check for the presence of an object and then depending on whether the object is visible perform one of two possible sets of operations. This article explains the recommended way of doing this.
+Often, you need to check for the presence of an object and then, depending on its visibility, perform one of two possible sets of operations. This article explains the recommended way to do this.
 
 ## Recommended Solution
 
-You can use the special `Global.DoWaitFor('object id')` command to perform the check:
+You can use the `Global.DoWaitFor('object id')` command to perform the check:
 
 ```javascript
 if(Global.DoWaitFor('Object ID'))

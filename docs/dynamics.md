@@ -1,14 +1,14 @@
 # Microsoft Dynamics Testing
 
-Rapise provides out of the box support for the following different versions of Microsoft Dynamics:
+Rapise provides out-of-the-box support for the following versions of Microsoft Dynamics:
 
-- [Dynamics AX](/Guide/dynamics_ax/) - Rapise provides specialized support for the Dynamics AX core user interface plus add-ons such as the Management Reporter.
-- [Dynamics NAV](/Guide/dynamics_nav/) - Rapise provides specialized support for the Dynamics NAV desktop and web core user interface including Dynamics 365 Business Central.
-- [Dynamics CRM/365 for Sales](/Guide/dynamics_crm/) - Rapise uses its native web library support for Dynamics CRM, with Dynamics-CRM specific extensions included for unique CRM components (e.g. data grids).
+- [Dynamics AX](/Guide/dynamics_ax/) - Rapise provides specialized support for the Dynamics AX core user interface and add-ons such as the Management Reporter.
+- [Dynamics NAV](/Guide/dynamics_nav/) - Rapise provides specialized support for the Dynamics NAV desktop and web core user interface, including Dynamics 365 Business Central.
+- [Dynamics CRM/365 for Sales](/Guide/dynamics_crm/) - Rapise uses its native web library support for Dynamics CRM, with Dynamics CRM-specific extensions for unique CRM components (e.g., data grids).
 - [Dynamics 365 for Finance and Operations](/Guide/dynamics_365/) - Rapise includes built-in support for Dynamics 365 ERP components.
-- [Unified Service Desk](/Guide/unified_service_desk/) - Hybrid application with IE browser components embedded into desktop interface.
+- [Unified Service Desk](/Guide/unified_service_desk/) - A hybrid application with IE browser components embedded in the desktop interface.
 
-## Which One Do you Have?
+## Which One Do You Have?
 
 - [KB272](https://www.inflectra.com/Support/KnowledgeBase/KB272.aspx) Microsoft Dynamics Solutions - Which One Do You Have?
 

@@ -4,13 +4,13 @@
 
 ## Purpose
 
-To display the properties of the object, file, or folder you last clicked on.  Objects are in the [Object Tree View](object_tree.md) and files/folders are in the [Test Files View](test_files_dialog.md).
+Displays the properties of the last-clicked object, file, or folder. Objects are in the [Object Tree View](object_tree.md) and files/folders are in the [Test Files View](test_files_dialog.md).
 
-Some properties are longer than fit into the editor field. So you may use `...` button:
+Some properties are too long to fit into the editor field. Therefore, you can use the `...` button:
 
 ![properties dialog](./img/properties2.png)
 
-to show **Value Editor**:
+to open the **Value Editor**:
 
 ![properties dialog](./img/properties3.png)
 

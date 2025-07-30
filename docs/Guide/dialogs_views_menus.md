@@ -1,6 +1,6 @@
 # Dialogs, Views, and Menus
 
-This section details the Rapise GUI.  Each subsection describes the function of a particular Dialog, View, or Menu. The purpose and consequences of all buttons, options, lists, and check boxes are listed.
+This section details the Rapise GUI. Each subsection describes the function of a particular dialog, view, or menu, outlining the purpose and behavior of all buttons, options, lists, and checkboxes.
 
 - A - I:
     - [Add Web Service Dialog](dialog_add_web_service.md)

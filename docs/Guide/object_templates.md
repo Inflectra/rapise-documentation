@@ -2,15 +2,15 @@
 
 ## Purpose
 
-The **Object Templates** feature allows you to model test cases using placeholder repository objects before you’ve learned them from the application. This is useful when designing [Modules / Page Objects](./Frameworks/pageobjects.md) ahead of actual implementation.
+The **Object Templates** feature allows you to model test cases using placeholder repository objects before you learn them from the application. This is useful when designing [Modules / Page Objects](./Frameworks/pageobjects.md) prior to actual implementation.
 
 Object Templates are only available when working in [Testing Framework](./Frameworks/frameworks.md) mode.
 
 ## How to Use
 
-Right-click on a **Test Case**, **Page Object / Module**, or **Object Repository Window** in the Object Tree. You will see the **Add Repository Object**.
+Right-click on a **Test Case**, **Page Object / Module**, or **Object Repository Window** in the Object Tree. The **Add Repository Object** option will appear.
 
-This command inserts a repository object that is copied from a predefined **template** object.
+This command inserts a repository object copied from a predefined **template** object.
 
 ### One-Time Setup: Creating a Template
 
@@ -25,79 +25,77 @@ If no template is defined, you will see an error like this:
 
     You need to have a template object.
 
-    I was unable to find an Objects.js repository marked with a tag `template`.
+    I was unable to find an Objects.js repository marked with the `template` tag.
 
-    Create a Module or a Test Case with a single object, and mark its Objects.js with a `template` tag to use this feature.
+    Create a Module or a Test Case with a single object, and mark its Objects.js with the `template` tag to use this feature.
 
 Follow these steps to define a template:
 
-1. **Create a Test Case**
+1.  **Create a Test Case**
 
-   Create a new [test case](./Frameworks/frameworks.md#test-cases), for example named `Template`.
+    Create a new [test case](./Frameworks/frameworks.md#test-cases), for example, named `Template`.
 
-   ![Create Test Case](img/tc_create_test_case.png)
-   ![Test Case Name - Template](img/tc_create_test_case_template.png)
+    ![Create Test Case](img/tc_create_test_case.png)
+    ![Test Case Name - Template](img/tc_create_test_case_template.png)
 
-2. **Assign Tags**
+2.  **Assign Tags**
 
-   Right-click the test case while holding ++shift++, then select **Tags**.
+    Right-click the test case while holding ++shift++; then select **Tags**.
 
-   ![Assign Tags - Draft & Skip](img/tc_test_case_tags_template_skip.png)
+    ![Assign Tags - Draft & Skip](img/tc_test_case_tags_template_skip.png)
 
-   Add the following tags:
+    Add the following tags:
 
-   - `template` – marks the test case and its repository as a template.
-   - `skip` – optional; prevents the test from being executed or displayed in [Spira Dashboard](spira_dashboard_2.md).
+    -   `template` – Marks the test case and its repository as a template.
+    -   `skip` – Optional; prevents the test from being executed or displayed in [Spira Dashboard](spira_dashboard_2.md).
 
-   ![Test Case with Template Tag](img/tc_template_tc.png)
+    ![Test Case with Template Tag](img/tc_template_tc.png)
 
-3. **Learn an Object**
+3.  **Learn an Object**
 
-   Start the recorder and learn a UI object:
+    Start the recorder and learn a UI object:
 
-   ![Start Recording](img/tc_template_record.png)
-   ![Learn a Button Object](img/tc_learn_login_button.png)
+    ![Start Recording](img/tc_template_record.png)
+    ![Learn a Button Object](img/tc_learn_login_button.png)
 
-   After recording, press **Finish**.
+    After recording, press **Finish**.
 
-4. **Rename Objects (Optional)**
+4.  **Rename Objects (Optional)**
 
-   - Rename the learned object to something meaningful, like `Button`.
+    -   Rename the learned object to something meaningful, such as `Button`.
 
-     ![Rename](img/tc_object_rename.png)
-     ![Rename to Button](img/tc_rename_to_button.png)
+        ![Rename](img/tc_object_rename.png)
+        ![Rename to Button](img/tc_rename_to_button.png)
 
-   - You may also rename the containing window.
+    -   You may also rename the containing window.
 
-     ![Where to Rename a Window](img/tc_rename_window.png)
+        ![Where to Rename a Window](img/tc_rename_window.png)
 
-5. **Tag the Repository**
+5.  **Tag the Repository**
 
-   - Switch to **Test Files** view.
+    -   Switch to the **Test Files** view.
 
-     ![Show in Test Files Tree](img/tc_show_test_files_tree.png)
+        ![Show in Test Files Tree](img/tc_show_test_files_tree.png)
 
-   - Select the `Objects.js` file next to the `Main` file.
+    -   Select the `Objects.js` file next to the `Main` file.
 
-   - In the **Properties** panel, set the `Tags` field to `template`.
+    -   In the **Properties** panel, set the `Tags` field to `template`.
 
-     ![Template Object.js Tags](img/tc_object_js_template.png)
-     ![Template Object.js set template Tags](img/tc_object_js_set_template_tag.png)
+        ![Template Object.js Tags](img/tc_object_js_template.png)
+        ![Template Object.js set template Tags](img/tc_object_js_set_template_tag.png)
 
 ## Adding Repository Objects from Template
 
-Once the template is defined, you can add repository objects from it into other test cases or page objects.
+Once the template is defined, you can add repository objects from it to other test cases or page objects.
 
 ### Adding to a Test Case or Module
 
-Right-click on a test case or module in the Object Tree and choose:
-
-**Add Repository Object**
+Right-click on a test case or module in the Object Tree and choose the **Add Repository Object** option:
 
 === "Screenshot"
     ![Add Repository Object](img/tc_add_repository_object.png)
 === "Transcript"
-    User right-clicks on TestCases/CreateInvoice and chooses **Add Repository Object**.
+    The user right-clicks on TestCases/CreateInvoice and chooses **Add Repository Object**.
 
 You will be prompted to provide a new object ID:
 
@@ -139,9 +137,9 @@ Select the object you want to insert and click **OK**.
 
 ## Summary
 
-- **Object Templates** allow designing tests before real object learning.
-- You must first create a test case or module and mark its `Objects.js` with the `template` tag.
-- Use **Add Repository Object** from the Object Tree to insert template-based objects.
-- Supports inserting into test cases, page objects, object windows, or alongside other objects.
-- Multiple template objects can be defined, and users will be prompted to select one when adding.
-- Tagging test cases with `skip` and `template` ensures clean integration with dashboards and test sets.
+-   **Object Templates** allow for designing tests before actual object learning.
+-   You must first create a test case or module and mark its `Objects.js` with the `template` tag.
+-   Use **Add Repository Object** from the Object Tree to insert template-based objects.
+-   Supports insertion into test cases, page objects, object windows, or alongside other objects.
+-   Multiple template objects can be defined, and users will be prompted to select one when adding.
+-   Tagging test cases with `skip` and `template` ensures clean integration with dashboards and test sets.

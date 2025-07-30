@@ -1,6 +1,6 @@
 # Desktop Testing
 
-If you plan to record and playback the very first desktop test - check out the tutorials:
+If you plan to record and play back your first desktop test, check out the following tutorials:
 
 - [Tutorial: Windows Testing](/Guide/twodialogs_sample/)
 - [Tutorial: Java Testing](Guide/tutorial_java_testing.md)

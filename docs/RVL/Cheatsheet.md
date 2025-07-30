@@ -1,6 +1,6 @@
 # RVL Quick Reference Guide
 
-An RVL script is structured as a table with seven columns: Flow, Type, Object, Action, ParamName, ParamType, and ParamValue. Each RVL script comprises numerous RVL operations, which are stored within this table. An operation can be an Action, Comment, Variable, Loop, Map, an empty row, among others. Examples of these operations can be found in the subsequent section of this guide.
+An RVL script is structured as a table with seven columns: Flow, Type, Object, Action, ParamName, ParamType, and ParamValue. Each RVL script consists of multiple RVL operations, which are stored in this table. An operation can be an Action, Comment, Variable, Loop, Map, or an empty row, among other types. Examples of these operations are provided in the following sections of this guide.
 
 ## Empty RVL
 
@@ -26,7 +26,7 @@ JS Representation of this RVL:
 var MyVar = "TBD"
 ```
 
-## RVL Global Variable - contains defaultValue. It is only used if variable were not yet initialized before
+## RVL Global Variable - with a defaultValue. It is only used if the variable has not yet been initialized.
 
 | Flow | Type     | Object | Action | ParamName    | ParamType | ParamValue |
 | ---- | -------- | ------ | ------ | ------------ | --------- | ---------- |
@@ -39,7 +39,7 @@ JS Representation of this RVL:
 if(typeof(MyVar)=='undefined') MyVar = "TBD"
 ```
 
-## RVL Map with local data, contains 4 columns (Col,Col1, COl2, Col3)
+## RVL Map with local data, containing 4 columns (Col, Col1, Col2, Col3)
 
 | Flow | Type                    | Object | Action | ParamName | ParamType | ParamValue |
 | ---- | ----------------------- | ------ | ------ | --------- | --------- | ---------- |
@@ -50,7 +50,7 @@ if(typeof(MyVar)=='undefined') MyVar = "TBD"
 | #    | Add more rows if needed |        |        |           |           |            |
 | End  | of Map                  |        |        |           |           |            |
 
-## RVL Map - read values from excel spreadsheet
+## RVL Map - Reads values from an Excel spreadsheet
 
 | Flow | Type   | Object | Action | ParamName | ParamType | ParamValue          |
 | ---- | ------ | ------ | ------ | --------- | --------- | ------------------- |
@@ -64,7 +64,7 @@ JS Representation of this RVL:
 var MyMap1 = Spreadsheet.DoAttach("%WORKDIR%\\Data.xlsx","Sheet1")
 ```
 
-## Assertion statement
+## Assertion Statement
 
 | Flow | Type      | Object | Action           | ParamName | ParamType | ParamValue     |
 | ---- | --------- | ------ | ---------------- | --------- | --------- | -------------- |
@@ -79,7 +79,7 @@ JS Representation of this RVL:
 Tester.Assert("Report message", "Value 1"=="Value 2")
 ```
 
-## Action, Call DoLaunch for an object Global
+## Action: Calling DoLaunch on the Global Object
 
 | Flow | Type   | Object | Action   | ParamName | ParamType | ParamValue       |
 | ---- | ------ | ------ | -------- | --------- | --------- | ---------------- |
@@ -92,7 +92,7 @@ JS Representation of this RVL:
 Global.DoLaunch("c:\\temp\\calc.exe", "c:\\temp")
 ```
 
-## Conditional If statement
+## Conditional If Statement
 
 | Flow | Type       | Object | Action           | ParamName | ParamType | ParamValue |
 | ---- | ---------- | ------ | ---------------- | --------- | --------- | ---------- |
@@ -137,7 +137,7 @@ if( "TBD" == "TBD" )
 } // of Else
 ```
 
-## Conditional if-elseif-else
+## Conditional If-ElseIf
 
 | Flow   | Type           | Object | Action           | ParamName | ParamType | ParamValue |
 | ------ | -------------- | ------ | ---------------- | --------- | --------- | ---------- |
@@ -164,14 +164,14 @@ if( "TBD1" == "TBD2" )
 } // of ElseIf
 ```
 
-## Multiline comment
+## Multi-Line Comment
 
-| Flow | Type                                 | Object | Action | ParamName | ParamType | ParamValue |
-| ---- | ------------------------------------ | ------ | ------ | --------- | --------- | ---------- |
-| /*   | This is a multi-line comment.        |        |        |           |           |            |
-|      | It includes all lines from "/*"      |        |        |           |           |            |
-|      | Up to final  "*/" in the flow column |        |        |           |           |            |
-| */   |                                      |        |        |           |           |            |
+| Flow | Type                                   | Object | Action | ParamName | ParamType | ParamValue |
+| ---- | -------------------------------------- | ------ | ------ | --------- | --------- | ---------- |
+| /*   | This is a multi-line comment.          |        |        |           |           |            |
+|      | It includes all lines from "/*"        |        |        |           |           |            |
+|      | up to the final "*/" in the Flow column |        |        |           |           |            |
+| */   |                                        |        |        |           |           |            |
 
 JS Representation of this RVL:
 
@@ -179,11 +179,11 @@ JS Representation of this RVL:
 /*
 This is a multi-line comment.
 It includes all lines from "/*"
-Up to final  "*\/" in the flow column
+up to the final "*\/" in the Flow column
 */
 ```
 
-## Loop through map
+## Looping Through a Map
 
 | Flow | Type      | Object | Action  | ParamName | ParamType | ParamValue |
 | ---- | --------- | ------ | ------- | --------- | --------- | ---------- |
@@ -202,7 +202,7 @@ while(MyMap1.DoSequential())
 }
 ```
 
-## Loop by variable i (similar to "for var i from 1 to 10" loop)
+## Loop with Variable i (similar to a "for var i from 1 to 10" loop)
 
 | Flow | Type      | Object | Action | ParamName | ParamType | ParamValue |
 | ---- | --------- | ------ | ------ | --------- | --------- | ---------- |
@@ -221,7 +221,7 @@ for(var i=1;i<=10;i++)
 }
 ```
 
-## Loop by condition (while loop)
+## Loop with a Condition (While Loop)
 
 | Flow | Type      | Object | Action           | ParamName | ParamType | ParamValue |
 | ---- | --------- | ------ | ---------------- | --------- | --------- | ---------- |

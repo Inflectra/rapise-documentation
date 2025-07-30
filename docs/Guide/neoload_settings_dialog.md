@@ -7,14 +7,14 @@
 
 ## Purpose
 
-The purpose of this dialog is to allow you to specify the global options for integrating Rapise with [NeoLoad](neoload_integration.md), the performance testing tool from Neotys.
+This dialog allows you to specify the global options for integrating Rapise with [NeoLoad](neoload_integration.md), the performance testing tool from Neotys.
 
 ## How to Open
 
-Use menu `Settings > NeoLoad Integration`.
+Open it by navigating to `Settings > NeoLoad Integration`.
 
-Normally there is no any reason to change these settings, but for completeness they are described below:
+While there is typically no need to change these settings, they are described below for completeness:
 
-- **NeoLoad Data Exchange URL** - this is the URL to the NeoLoad data exchange API
-- **NeoLoad Proxy Address** - this is the IP address and prt of the NeoLoad HTTP proxy
-- **NeoLoad REST Service URL** - this is the URL to the NeoLoad recording service REST API
+- **NeoLoad Data Exchange URL** - The URL for the NeoLoad data exchange API.
+- **NeoLoad Proxy Address** - The IP address and port of the NeoLoad HTTP proxy.
+- **NeoLoad REST Service URL** - The URL for the NeoLoad recording service REST API.

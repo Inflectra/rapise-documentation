@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The **eval** keyword lets you use external functions and data structures in your test script; `eval` is a JavaScript reserved word.
+The `eval` keyword enables you to incorporate external functions and data structures into your test script. (Note: `eval` is a JavaScript reserved word.)
 
 ## Usage
 
@@ -17,11 +17,11 @@ function Test()
 }
 ```
 
-You may add an include statement by dragging a `.js` file from the [Test Files](test_files_dialog.md) tree and dropping it into `.js` script.
+You can add an include statement by dragging a `.js` file from the [Test Files](test_files_dialog.md) tree and dropping it into your `.js` script.
 
-It is recommended to put common functions and variables into [Common.js](Frameworks/frameworks.md#managing-common-data) file in your framework. However, if you have another .js file or files, you can add an include statement(s) directly into `Common.js`.
+It is recommended to place common functions and variables into the [Common.js](Frameworks/frameworks.md#managing-common-data) file within your framework. However, if you have other `.js` files, you can add include statements directly into `Common.js`.
 
-Additionally, you have the option to tag your external `.js` file as `shared`, which will automatically load it for each test run. This eliminates the need for an include statement.
+Additionally, you can tag your external `.js` file as `shared`. This automatically loads the file for each test run, eliminating the need for an include statement.
 
 ![Tag as Shared](./img/including_other_files_tag_as_shared.png)
 

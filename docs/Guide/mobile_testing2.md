@@ -6,7 +6,7 @@ Rapise lets you record and play automated tests against native applications on a
 
 ## Usage
 
-Since the process for testing mobile devices depends heavily on the platform being used, we have split the guide into four separate sections:
+Since the process for testing mobile devices depends heavily on the platform used, we have split this guide into four separate sections:
 
 - [Preparing Environment for iOS Mobile Testing](/Manuals/Preparing_for_iOS_Testing/)
 - [Mobile Testing using iOS](mobile_testing_ios.md)
@@ -15,7 +15,7 @@ Since the process for testing mobile devices depends heavily on the platform bei
 
 ## Samples
 
-You can find the mobile sample tests and sample Applications (called AUTAndroid for Android and AUTiOS for Apple iOS) at the following locations:
+You can find the mobile sample tests and sample applications (AUTAndroid for Android and AUTiOS for Apple iOS) at the following locations:
 
 - [AUTAndroid Repository](https://github.com/Inflectra/AUTAndroid)
 - [AUTiOS Repository](https://github.com/Inflectra/AUTiOS)

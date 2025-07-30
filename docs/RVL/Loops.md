@@ -1,14 +1,14 @@
 # Loops
 
-*Loops* serve several needs in RVL:
+*Loops* serve several purposes in RVL:
 
-1. Iterate through [Maps](Maps.md) to make data-driven testing easier.
-2. Allows you to repeat a set of actions for a given number of iterations.
-3. Lets you repeat a loop body while some [Condition](Conditions.md) is satisfied.
+1.  Iterate through [Maps](Maps.md) to make data-driven testing easier.
+2.  Repeat a set of actions for a specified number of iterations.
+3.  Repeat a loop body while a [Condition](Conditions.md) is satisfied.
 
 ### Loop Map
 
-A [Map](Maps.md) allows both reading script data from the table defined in the same script or from external data source such as spreadsheet, file or database. Once a Map is defined, the loop is the simplest way of traversing it.
+A [Map](Maps.md) allows you to read script data from a table defined in the same script or from an external data source, such as a spreadsheet, file, or database. Once a Map is defined, a loop is the simplest way to traverse it.
 
 | Flow | Type  | Object    | Action | ParamName | ParamType | ParamValue |
 | ---- | ----- | --------- | ------ | --------- | --------- | ---------- |
@@ -17,12 +17,12 @@ A [Map](Maps.md) allows both reading script data from the table defined in the s
 |      |       |           |        |           |           |            |
 | End  |       |           |        |           |           |            |
 
-Where *MapName* should be name of the map declared earlier in the same script.
+Where *MapName* should be the name of the map declared earlier in the same script.
 
-The loop goes through either the map rows or through the map columns depending on the type of map:
+The loop iterates through either the map rows or the map columns, depending on the map type:
 
-* For `Rows`, `Range` or `Database` type of Map, the loop goes through rows. I.e. 1st iteration points to 1st Row, then 2nd iteration points to 2nd row etc.
-* For `Columns` and `Table` types of Map, the iteration goes through the columns.
+*   For `Rows`, `Range`, or `Database` map types, the loop iterates through the rows. For example, the first iteration corresponds to the first row, the second iteration corresponds to the second row, and so on.
+*   For `Columns` and `Table` map types, the loop iterates through the columns.
 
 ### Loop Variable
 
@@ -46,11 +46,11 @@ The loop goes through either the map rows or through the map columns depending o
 
 Where:
 
-* *VarName* is an optional name of variable. It may be avoided if the goal is just to do specified number of iterations. If *VarName* is set, then the corresponding variable is assigned with the `from` value and incremented up to the `to` value throughout the loop. If *VarName* refers to an existing local or global variable then it is used, otherwise a local variable named *VarName* is created.
+*   *VarName* is the optional name of a variable. It can be omitted if the goal is simply to perform a specified number of iterations. If *VarName* is set, the corresponding variable is assigned the `from` value and is incremented in each iteration until it reaches the `to` value. If *VarName* refers to an existing local or global variable, that variable is used. Otherwise, a new local variable named *VarName* is created.
 
-* *from* initial value of the loop variable
-* *to* final value of the loop variable
-* *step* optional, default is 1. Loop step to increment in each iteration.
+*   *from* The initial value of the loop variable.
+*   *to* The final value of the loop variable.
+*   *step* The value by which the variable is incremented in each iteration. This parameter is optional and defaults to 1.
 
 ### Loop Condition
 
@@ -65,4 +65,4 @@ Where:
     | #    | Loop body |        |                 |           |           |            |
     | End  |           |        |                 |           |           |            |
 
-Loop repeats while condition is satisfied (i.e. `while( param1 < param2 )`).
+The loop repeats as long as the condition is satisfied (e.g., `while( param1 < param2 )`).

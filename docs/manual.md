@@ -1,6 +1,6 @@
 # Manual Testing
 
-If you plan to create the very first manual test - check out the tutorial:
+If you plan to create your first manual test, check out this tutorial:
 
 - [Tutorial: Manual Testing](/Guide/tutorial_exploratory_testing/)
 

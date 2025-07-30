@@ -1,15 +1,15 @@
 # Actions
 
-In RVL Action always refers to an operation performed with object.
+In RVL, an `Action` always refers to an operation performed on an object.
 
 | Flow | Type   | Object   | Action  | ParamName | ParamType | ParamValue |
 | ---- | ------ | -------- | ------- | --------- | --------- | ---------- |
 |      | Action | MyButton | DoClick | x         | number    | 5          |
 |      | Param  |          |         | y         | number    | 7          |
 
-If row type is `Action` then there must be *Object* and *Action* cells defined.
+If the row type is `Action`, then the *Object* and *Action* cells must be defined.
 
-**Note**: In this example we call an operation that would look in JavaScript as follows:
+**Note**: In this example, we call an operation that would look like the following in JavaScript:
 
 ```javascript
 SeS('MyButton').DoClick(5,7);
@@ -17,7 +17,7 @@ SeS('MyButton').DoClick(5,7);
 
 ## Object Actions
 
-`Object` is an ID of learned or Global object. Available objects may be found in the `Object Tree`:
+An `Object` is an ID of a learned or Global object. Available objects can be found in the `Object Tree`:
 
 === "Screenshot"
     ![Object Tree](./img/Actions_ObjectTree.png)
@@ -46,13 +46,13 @@ SeS('MyButton').DoClick(5,7);
     
     4. **User Variables**
 
-*Object tree* contains list of available objects, including:
+The *Object Tree* contains a list of available objects, including:
 
-1. *Local objects* (1) learned recorded or learned from the application under test.
+1. *Local objects* (1): Objects recorded or learned from the application under test.
 
-2. *Global object*. Always available set of objects containing most common utility functions and operations.
+2. *Global objects*: A set of always-available objects containing common utility functions and operations.
 
-3. *Functions*. Represent global JavaScript functions. Each time you define a global function in .user.js file it becomes available for calling from RVL with special object ID Functions.
+3. *Functions*: Global JavaScript functions. Each time you define a global function in a `.user.js` file, it becomes available to be called from RVL with the special object ID `Functions`.
 
 === "Screenshot"
     ![Functions](./img/Actions_Functions.png)
@@ -63,7 +63,7 @@ SeS('MyButton').DoClick(5,7);
     |      | Param  |           |            | b2        | boolean   | false      |
     |      | Param  |           |            | n3        | number    | 0          |
 
-Each Object has its own set of actions. You may also see them in the object tree:
+Each object has its own set of actions. You can also see them in the object tree:
 
 === "Screenshot"
     ![Object Tree](./img/Actions_ObjectTree_Actions.png)
@@ -79,23 +79,23 @@ Each Object has its own set of actions. You may also see them in the object tree
     |        | DoButtonUp      |
     |        | DoDClick        |
 
-An *Action* may have any number of parameters. See [Params](Params.md) for more info.
+An *Action* can have any number of parameters. See [Params](Params.md) for more information.
 
 ## Conditional Actions
 
 Actions with a "?" in the `Flow` cell are considered conditional. This means that the **Action** is only executed if the object is found.
 
-For example, if the `AcceptCookies` object is found, it is clicked on:
+For example, if the `AcceptCookies` object is found, it is clicked:
 
 | Flow | Type   | Object        | Action  | ParamName | ParamType | ParamValue |
 | ---- | ------ | ------------- | ------- | --------- | --------- | ---------- |
 | ?    | Action | AcceptCookies | DoClick |           |           |            |
 
-If the object is not found, the conditional action simply moves on without leaving any trace in the report.
+If the object is not found, the conditional action is skipped, leaving no trace in the report.
 
-## Editing Action
+## Editing an Action
 
-An Action may have both mandatory and optional params. When action is selected from the dropdown its params are displayed:
+An Action can have both mandatory and optional parameters. When an action is selected from the dropdown menu, its parameters are displayed:
 
 === "Screenshot"
     ![DoLaunch parameters](./img/Actions_ActionParams.png)
@@ -111,7 +111,7 @@ An Action may have both mandatory and optional params. When action is selected f
     |      |        |        |          |                |           |            |
     
 
-By default RVL editor pre-fills only mandatory params for you when you select an action from the dropdown. In this example `DoLaunch` has one mandatory parameter `cmdLine` so here is what you get when you select it:
+By default, the RVL editor pre-fills only the mandatory parameters for you when you select an action from the dropdown menu. In this example, `DoLaunch` has one mandatory parameter, `cmdLine`, so this is what you get when you select it:
 
 === "Screenshot"
     ![DoLaunch parameters](./img/Actions_ActionParams_Mandatory.png)
@@ -121,7 +121,7 @@ By default RVL editor pre-fills only mandatory params for you when you select an
     |      | Action | Global | DoLaunch | cmdLine   | string    |            |
     
 
-However the situation is differs if you hold the ++shift++ key while choosing an Action from the dropdown:
+However, the situation is different if you hold the ++shift++ key while choosing an action from the dropdown menu:
 
 === "Screenshot"
     ![DoLaunch parameters](./img/Actions_ActionParams_Optional.png)
@@ -133,9 +133,9 @@ However the situation is differs if you hold the ++shift++ key while choosing an
     |      | Param  |        |          | attachIfExists | boolean   | false      |
     |      | Param  |        |          | attachToWindow | string    | null       |
 
-You may see that all parameters are applied in this case.
+You can see that all parameters are applied in this case.
 
-- ***Note:*** if you you already have have the same action and select it with ++shift++ key again, no optional params are applied. You need to clean the *Action* cell and re-select it with ++shift++ if you want to achieve the desired effect.
+- ***Note:*** If you already have the same action and select it with the ++shift++ key again, no optional parameters are applied. You need to clear the *Action* cell and re-select it with ++shift++ to achieve the desired effect.
 
 ## Examples
 
@@ -149,7 +149,7 @@ Action without parameters
     |      | Action        | A Home | DoClick |           |           |            |
     
 
-Action with single parameter. In RVL each parameter takes one line with *Action*=`Param`. However for the 1st param there is an exception. It may occupy the same line as `Action` itself:
+Action with a single parameter. In RVL, the first parameter can occupy the same line as the `Action` itself. Any subsequent parameters must each take a new line with the `Type` set to `Param`:
 === "Screenshot"
     ![Action with single parameter](./img/Actions_ActionParams_SingleParam.png)
 === "Transcript"

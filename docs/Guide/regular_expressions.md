@@ -2,21 +2,21 @@
 
 ## Purpose
 
-A **regular expression** is a sequence of characters that describes how to construct a set of strings.  It is composed of character literals and [special characters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Each character literal represents one single character (such as "a", "b", "C", "1").  The special characters can represent a character, many characters, or a choice about how to select characters.
+A **regular expression** is a sequence of characters that defines a search pattern for strings. It is composed of character literals and [special characters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Each character literal represents a single character (such as "a", "b", "C", "1"). Special characters can represent a character, multiple characters, or define choices for matching characters.
 
 ## Usage
 
-In Rapise, you must prepend regular expressions with the string **regex:**.  So the regular expression describing all strings would be: **regex:.\***
+In Rapise, you must prefix regular expressions with the string **regex:**. For example, the regular expression to match all strings is: **regex:.\***
 
-There are three uses for regular expressions in Rapise: (1) in [Object Locators](object_locator.md), (2) in [action overriding code](actions.md), (3) in [Custom Libraries](custom_libraries.md).
+Regular expressions have three uses in Rapise: (1) in [Object Locators](object_locator.md), (2) in [action overriding code](actions.md), and (3) in [Custom Libraries](custom_libraries.md).
 
 ## Examples
 
-In [Object Locator](object_locator.md) to match a dynamic Window Title:
+Within an [Object Locator](object_locator.md) to match a dynamic Window Title:
 
 ![window title](./img/regex1.png)
 
-`regex:.*Microsoft Dynamics NAV` matches any Window Title ending with `Microsoft Dynamics NAV`, e.g.
+`regex:.*Microsoft Dynamics NAV` matches any Window Title ending with `Microsoft Dynamics NAV`, for example:
 
     Posted Sales Shipments - Microsoft Dynamics NAV
 

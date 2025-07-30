@@ -12,7 +12,7 @@ The **Find Results** view is part of the [Default Layout](restoring_the_default_
 
 ## Messages
 
-Double click on a message to go to the corresponding source line.
+Double-click a message to go to the corresponding source line.
 
 ## Widgets
 
@@ -20,7 +20,7 @@ Double click on a message to go to the corresponding source line.
 
 From left to right:
 
-- The text box is a search box.
+- A search box.
 - **Find Next Entry**
 - **Copy Selected**
 - **Clear All Text**

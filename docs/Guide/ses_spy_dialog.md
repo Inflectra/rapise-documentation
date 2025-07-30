@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The **Spy dialog** is used to investigate hierarchy of UI elements in the application under test.
+The **Spy dialog** is used to inspect the hierarchy of UI elements within the application under test.
 
 ## How to Open
 
@@ -15,11 +15,11 @@ There are three ways to open the Spy dialog:
 2. Select `Tools > Spy` from the main menu
 3. Click the **Spy** button on the [Recording Activity Dialog](recording_activity_dialog.md)
 
-    > Note: If you use this method, the dialog has an extra **Learn Object** button.
+    > Note: If you use this method, the dialog will include an additional **Learn Object** button.
 
 ## Choosing the type of Spy
 
-You can change the type of Spy that will be launched by clicking on the down arrow to the right of the Spy icon in the main application toolbar:
+You can change the type of Spy that will be launched by clicking the down arrow to the right of the Spy icon on the main application toolbar:
 
 ![spy_choose_library](./img/object_spy1.png)
 

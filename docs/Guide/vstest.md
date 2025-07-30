@@ -1,20 +1,20 @@
 # Azure DevOps Integration v3
 
-This section describes how to execute Rapise tests in [Azure DevOps pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) or locally with [Microsoft.TestPlatform](https://www.nuget.org/packages/Microsoft.TestPlatform).
+This section describes how to run Rapise tests in [Azure DevOps pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) or locally using [Microsoft.TestPlatform](https://www.nuget.org/packages/Microsoft.TestPlatform).
 
-If you are using **SpiraTeam**, you should check the section about using [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
+If you are using **SpiraTeam**, you should check the section on the [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
 
 ## Azure DevOps
 
-We assume that Rapise tests are stored in a Git repository and Azure DevOps pipeline is connected to it. You may run Rapise tests both on [self-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) and [Microsoft-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml).
+We assume that Rapise tests are stored in a Git repository and the Azure DevOps pipeline is connected to it. You can run Rapise tests both on [self-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) and [Microsoft-hosted Windows Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml).
 
 ### Rapise Test Adapter Task
 
-To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task you need to install Rapise and Rapise Test Adapter for VSTest. The best way to do it is to use [Rapise Test Adapter Extension](https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapisetestadapter-azure) from Azure Marketplace. After this extension is installed add the Rapise Test Adapter task yo your pipeline.
+To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task, you need to install Rapise and Rapise Test Adapter for VSTest. The best way to do it is to use the [Rapise Test Adapter Extension](https://marketplace.visualstudio.com/items?itemName=EvilDauphin.inflectra-rapisetestadapter-azure) from Azure Marketplace. After this extension is installed, add the Rapise Test Adapter task to your pipeline.
 
  ![Find Rapise Test Adapter Task](./img/rapise_test_adapter_task_search.png)
 
- In the task settings you may choose what versions of Rapise and Rapise Test Adapter to install.
+ In the task settings, you can choose which versions of Rapise and Rapise Test Adapter to install.
 
  ![Rapise Test Adapter Task Settings](./img/rapise_test_adapter_task.png)
 
@@ -25,13 +25,13 @@ To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us
 !!! important
     Skip this section if you are using [Rapise Test Adapter Task](#rapise-test-adapter-task)
 
-In order to run Rapise tests on a Microsoft-hosted Windows Agent you need to configure Rapise Installation task. If you are running on a self-hosted Windows Agent you may install Rapise manually once and use it in every pipeline run.
+To run Rapise tests on a Microsoft-hosted Windows Agent, you need to configure the Rapise Installation task. If you are running on a self-hosted Windows Agent, you can install Rapise manually once and then use it in every pipeline run.
 
-Download and place this PowerShell script to your Git repository:
+Download and place this PowerShell script in your Git repository:
 
 [RapiseInstall.ps1](https://github.com/Inflectra/rapise-testadapter/blob/master/RapiseInstall.ps1)
 
-This script downloads and installs Rapise. It also installs Rapise extension into Chrome browser. In your pipeline add a PowerShell task to execute this script. Pass Rapise version to install as a parameter.
+This script downloads and installs Rapise. It also installs the Rapise extension in the Chrome browser. In your pipeline, add a PowerShell task to execute this script. Pass the Rapise version to install as a parameter.
 
 ??? example "Classic UI"
     ![Task Classic UI](./img/rapise_install_task_classic.png)
@@ -53,11 +53,11 @@ This script downloads and installs Rapise. It also installs Rapise extension int
 !!! important
     Skip this section if you are using [Rapise Test Adapter Task](#rapise-test-adapter-task)
 
-To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task install [Rapise.TestAdapter NuGet package](https://www.nuget.org/packages/Rapise.TestAdapter/).
+To run Rapise tests with a [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task, install the [Rapise.TestAdapter NuGet package](https://www.nuget.org/packages/Rapise.TestAdapter/).
 
 #### NuGet Tool Installer
 
-First you need to install NuGet itself. Add [NuGet tool installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/nuget?view=azure-devops) task.
+First, you need to install NuGet itself. Add the [NuGet tool installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/nuget?view=azure-devops) task.
 
 ??? example "Classic UI"
     ![Task Classic UI](./img/nuget_tool_installer.png)
@@ -74,7 +74,7 @@ First you need to install NuGet itself. Add [NuGet tool installer](https://docs.
 
 #### Rapise.TestAdapter NuGet Package
 
- Then add [NuGet](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget?view=azure-devops) task. Set **command** to `custom` and specify the command line:
+Then, add the [NuGet](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget?view=azure-devops) task. Set **command** to `custom` and specify the command line:
 
 ```
 install Rapise.TestAdapter -Version $(RapiseTestAdapterVersion)
@@ -94,7 +94,7 @@ install Rapise.TestAdapter -Version $(RapiseTestAdapterVersion)
         arguments: 'install Rapise.TestAdapter -Version $(RapiseTestAdapterVersion)'
     ```    
 
-In the pipeline settings set **RapiseTestAdapterVersion** variable to the Rapise.TestAdapter version you want to install (e.g. 1.0.11).
+In the pipeline settings, set the **RapiseTestAdapterVersion** variable to the Rapise.TestAdapter version you want to install (e.g. 1.0.11).
 
 ![RapiseTestAdapterVersion Variable](./img/rapise_testadapter_version.png)
 
@@ -106,7 +106,7 @@ $(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib
 
 ### Visual Studio Test Platform Installer Task
 
-If you plan to run tests on a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) that does not have Visual Studio installed you need to add [Visual Studio Test Platform Installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops) task.
+If you plan to run tests on a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) that does not have Visual Studio installed, you need to add the [Visual Studio Test Platform Installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer?view=azure-devops) task.
 <!-- /* cSpell:disable */ -->
 ??? example "Classic UI"
     <img alt="Task Classic UI" src="/Guide/img/azure_pipeline_test_platfforms.png" width="385"/>
@@ -123,7 +123,7 @@ If you plan to run tests on a [Self-hosted Windows Agent](https://docs.microsoft
 
 ### Visual Studio Test Task
 
-To run tests you need [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task.
+To run tests, you need the [Visual Studio Test](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) task.
 
 ??? example "Classic UI"
     ![Task Classic UI](./img/visual_studio_test_task.png)
@@ -145,23 +145,23 @@ To run tests you need [Visual Studio Test](https://docs.microsoft.com/en-us/azur
         configuration: '$(BuildConfiguration)'
     ```
 
-Make sure that path to custom test set adapters is set to
+Make sure that the path to custom test adapters is set to
 
 ```
 $(Build.Repository.LocalPath)\Rapise.TestAdapter.$(RapiseTestAdapterVersion)\lib\net472
 ```
 
-Specify patterns to search for `*.sstest` files in the **test files** section (`testAssemblyVer2` in YAML).
+Specify patterns to search for `*.sstest` files in the **Test files** section (`testAssemblyVer2` in YAML).
 
-If you added Visual Studio Test Platform Installer task on the previous step do not forget to set **Test platform version** to `Installed by Tools Installer` (`vsTestVersion: toolsInstaller` in YAML).
+If you added the Visual Studio Test Platform Installer task in the previous step, do not forget to set the **Test platform version** to `Installed by Tools Installer` (`vsTestVersion: toolsInstaller` in YAML).
 
 
 !!! tip
-    Rapise.TestAdapter also supports filtering, parameters and .runsettings files (specified via Visual Studio Test task options).
+    Rapise.TestAdapter also supports filtering, parameters, and .runsettings files (specified via Visual Studio Test task options).
    
 #### Test Filter Criteria
 
-Rapise.TestAdapter supports [filter criteria](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) based on FullyQualifiedName test property (equals to  *.sstest file name). To specify a filter set `testFiltercriteria` in YAML or `Test filter criteria` in the Classic UI task editor.
+Rapise.TestAdapter supports [filter criteria](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) based on the `FullyQualifiedName` test property (which equals the *.sstest file name). To specify a filter, set `testFiltercriteria` in YAML or `Test filter criteria` in the Classic UI task editor.
 
 Example:
 
@@ -173,9 +173,9 @@ FullyQualifiedName~LIS
 
 Parameters can be set via
 
-- .runsettings file,
-- `overrideTestrunParameters` YAML option or
-- **Override test run parameters** field in the Classic UI task editor.
+- a .runsettings file,
+- the `overrideTestrunParameters` YAML option, or
+- the **Override test run parameters** field in the Classic UI task editor.
 
 !!! note
     Parameter names must be prefixed with **g_**.
@@ -191,7 +191,7 @@ Example:
 
 #### .runsettings
 
-[.runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) is used to pass parameters and to enable [video recorder](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019#videorecorder-data-collector).
+A [.runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) is used to pass parameters and to enable the [video recorder](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019#videorecorder-data-collector).
 
 Example:
 
@@ -220,7 +220,7 @@ Example:
 
 ### Publish Test Results
 
-To publish test results (for later review and downloading) use [Publish Build Artifacts](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops) task. Execution results are copied to `$(Agent.TempDirectory)\TestResults`.
+To publish test results (for later review and downloading), use the [Publish Build Artifacts](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops) task. Execution results are copied to `$(Agent.TempDirectory)\TestResults`.
 
 ??? example "Classic UI"
     ![Task Classic UI](./img/publish_testresults.png)
@@ -238,18 +238,18 @@ To publish test results (for later review and downloading) use [Publish Build Ar
 
 ### Pipeline Example
 
-As a result of pipeline configuration you may end up with something like this:
+As a result of your pipeline configuration, you may end up with something like this:
 
 ??? example "Classic UI"
     ![Pipeline Example](./img/azure_pipeline_example.png)
 
 ### Self-hosted Windows Agents
 
-Azure DevOps can run tests in a hosted environment as well. If you plan to run tests inside your computer network download and connect [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows).
+Azure DevOps can run tests in a hosted environment as well. If you plan to run tests inside your computer network, download and connect a [Self-hosted Windows Agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows).
 
 ### Logs and Reports
 
-After every execution of the Visual Studio Test task you will get logs and reports.
+After every execution of the Visual Studio Test task, you will get logs and reports.
 
 ??? example "Log"
     ![Azure Logs](./img/azure_pipeline_execution_log.png)
@@ -257,12 +257,12 @@ After every execution of the Visual Studio Test task you will get logs and repor
 ??? example "Summary"
     ![Azure Report](./img/azure_pipeline_execution_summary.png)
 
-You can also see an individual report of a test (with attachments).
+You can also see an individual test report (with attachments).
 
 ??? example "Attachments"
     ![Azure Details](./img/azure_pipeline_execution_test_attachments.png)
 
-Attachments include reports in Test Anything Protocol (TAP) and Rapise (TRP) formats, output and error logs and video recording (if enabled in .runsettings).
+Attachments include reports in Test Anything Protocol (TAP) and Rapise (TRP) formats, output and error logs, and video recording (if enabled in .runsettings).
 
 ## Run Tests with VSTest.Console.exe
 
@@ -285,7 +285,7 @@ Find `VSTest.Console.exe` in `C:\Tools\Microsoft.TestPlatform.16.7.1\tools\net45
     nuget install Rapise.TestAdapter
     ```
     
-4. You may now create a .cmd file and put it near Rapise tests. E.g.
+4. You can now create a .cmd file and place it near your Rapise tests. For example,
 
     ```
     vstest.console.exe /TestAdapterPath:C:\Tools\Rapise.TestAdapter.1.0.11\lib\net472 /Settings:local.runsettings /TestCaseFilter:FullyQualifiedName~LIS *\*.sstest
@@ -294,15 +294,15 @@ Find `VSTest.Console.exe` in `C:\Tools\Microsoft.TestPlatform.16.7.1\tools\net45
 ## Parallel Execution
 
 !!! note
-    If you are using SpiraTest you may be interested in [another way](/Guide/spira_dashboard_2/#parallel-execution) of parallel execution.
+    If you are using SpiraTest, you may be interested in [another way](/Guide/spira_dashboard_2/#parallel-execution) of parallel execution.
 
-Two levels of parallelism are possible. They may be used independently and combined together as well.
+Two levels of parallelism are possible. They can be used independently or combined.
 
 ### Run Tests in Parallel
 
-Visual Studio Test Platform can run tests in parallel. Users of vstest.console.exe will recognize this as the [/Parallel switch](https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options). It does so by launching a test host process on each available core, and handing it tests to execute.
+Visual Studio Test Platform can run tests in parallel. Users of `vstest.console.exe` will recognize this as the [/Parallel switch](https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options). It does so by launching a test host process on each available core and handing it tests to execute.
 
-Here is how to set this switch in an Azure Pipeline (Visual Studio Test task).
+Here is how to set this switch in an Azure Pipeline (Visual Studio Test task):
 
 ??? example "Classic UI"
     ![Task Classic UI](./img/azure_pipeline_vstest_parallel.png)
@@ -321,13 +321,13 @@ Here is how to set this switch in an Azure Pipeline (Visual Studio Test task).
         configuration: '$(BuildConfiguration)'
     ```
 
-This way of parallel execution is good for running API tests and Web tests (provided that [Selenium profiles](selenium_settings_dialog.md) are used)
+This method of parallel execution is effective for running API tests and Web tests (provided that [Selenium profiles](selenium_settings_dialog.md) are used).
 
 ### Multi-Configuration Testing
 
-The Visual Studio Test task supports running tests in parallel across multiple agents (or machines). To run multiple jobs using multi-configuration option, you identify variables named multipliers, and specify a list of values for each multiplier. A separate job is run for each value combination. Define one or more variables on the Variables tab of the pipeline or in a variable group. Each variable, known in this context as a multiplier variable, must be defined as a comma-delimited list of the values you want to pass individually to the agents.
+The Visual Studio Test task supports running tests in parallel across multiple agents (or machines). To run multiple jobs using the multi-configuration option, you identify variables named multipliers and specify a list of values for each multiplier. A separate job is run for each value combination. Define one or more variables on the Variables tab of the pipeline or in a variable group. Each variable, known in this context as a multiplier variable, must be defined as a comma-delimited list of the values you want to pass individually to the agents.
 
-Let's assume we want to run same set of tests on different versions of browsers. Here is the example.
+Let's assume we want to run the same set of tests on different browser versions. Here is the example.
 
 ??? example "Multiplier Configuration"
     ![Multiplier](./img/azure_pipeline_multiplier.png)
@@ -335,7 +335,7 @@ Let's assume we want to run same set of tests on different versions of browsers.
 
 ## Run Tests on Azure and Report to Spira
 
-If you plan to use Azure VMs to run tests and want to see the results in Spira check out [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
+If you plan to use Azure VMs to run tests and want to see the results in Spira, check out the [RapiseLauncher extension](vstest_rl.md) for Azure DevOps.
 
 ## See Also
 

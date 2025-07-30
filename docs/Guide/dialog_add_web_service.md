@@ -8,13 +8,13 @@
 
 ### Framework Mode
 
-You have the option to add a REST or SOAP web service to the currently active Test Case or Module/Page Object in the editor. The term "current" refers to the item that is currently selected or being edited.
+You can add a REST or SOAP web service to the currently active Test Case or Module/Page Object in the editor. The term "current" refers to the item that is currently selected or being edited.
 
-Here are the corresponding images:
+The corresponding images are shown below:
 
 ![Current Test Case](./img/dialog_add_web_service_current_test_case.png)
 
-When you access *Tools / Web Services*, it will display the correct path:
+When you access *Tools > Web Services*, the correct path will be displayed:
 
 ![Web Service Name](./img/dialog_add_web_service_service_test_name.png){width="615px"}
 
@@ -27,12 +27,12 @@ Once the service is created, it will be available under the Services node:
 
 ### Single Test Mode
 
-Adds a new REST or SOAP web service to your Rapise test. It adds the web service as a `.rest` or `.soap` file that is added to the **Services** folder of the **Files** section:
+Adds a new REST or SOAP web service to your Rapise test. It adds the web service as a `.rest` or `.soap` file to the **Services** folder within the **Files** section:
 
 ![Files Services](./img/dialog_add_web_service_files.png)
 
 ## How to Open
 
-Click on the `Tools > Web Services` menu item.
+Click the `Tools > Web Services` menu item.
 
 ![Tools > Web Services](./img/dialog_add_web_service_menu.png){width="133px"}

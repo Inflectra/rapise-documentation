@@ -1,8 +1,8 @@
 # Scriptless/Codeless Testing
 
-With Rapise you can record and playback a test without writing a single line of code. This is referred to as codeless test automation.
+With Rapise, you can record and play back a test without writing a single line of code. This is referred to as codeless test automation.
 
-In Rapise you achieve codeless automation via Rapise Visual Language (RVL).
+In Rapise, you achieve codeless automation via the Rapise Visual Language (RVL).
 
 - [About RVL](./Guide/visual_language.md)
 - [Why RVL?](./RVL/Overview.md)

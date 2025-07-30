@@ -1,10 +1,10 @@
 # Robotic Process Automation
 
-Since version 6.3 Rapise includes **RPA Monitor**.
+Since version 6.3, Rapise has included the **RPA Monitor**.
 
 <img src="/Manuals/img/rpa_monitor.png" width="729" />
 
-RPA Monitor runs agents based on configuration specified in a JSON file (usually `rpa_config.json`). This file has the following structure:
+The RPA Monitor runs agents based on a configuration specified in a JSON file (usually `rpa_config.json`). This file has the following structure:
 
 ```json
 {
@@ -25,15 +25,15 @@ RPA Monitor runs agents based on configuration specified in a JSON file (usually
 }
 ```
 
-RPA Monitor supports different types of agents.
+The RPA Monitor supports different types of agents.
 
 ## Agent Types
 
 ### RpaQueue
 
-Any scenario must have a queue that will process commands triggered by other agents.
+Each scenario must have a queue to process commands triggered by other agents.
 
-Queue specification is always the same:
+The queue specification is always the same:
 
 ```json
 {
@@ -46,11 +46,11 @@ Queue specification is always the same:
 }
 ```
 
-The queue ensures that commands are processed sequentially and no more than one Rapise test is executed at the same time.
+The queue ensures that commands are processed sequentially and that no more than one Rapise test is executed at the same time.
 
 ### RpaFolderMonitor
 
-This type of agent monitors a specific folder and triggers actions when new items are created, changed or deleted in this folder.
+This type of agent monitors a specific folder and triggers actions when items are created, changed, or deleted in it.
 
 Example:
 
@@ -81,13 +81,13 @@ Supported event names:
 - changed
 - deleted
 
-Placeholders for triggered command arguments:
+Placeholders for the triggered command's arguments:
 
-- {file_name} - full path of an item.
+- `{file_name}` - The full path of an item.
 
 ### RpaTimer
 
-Timer agent triggers a command on regular basis.
+A timer agent triggers a command on a regular basis.
 
 Example:
 
@@ -105,7 +105,7 @@ Example:
 }
 ```
 
-Timer interval is specified in milliseconds.
+The timer interval is specified in milliseconds.
 
 ## Launching RPA Monitor
 
@@ -115,7 +115,7 @@ Timer interval is specified in milliseconds.
 "<Rapise Bin Folder>\RPAMonitor.exe" "<path to JSON file with configuration>"
 ```
 
-Usually `<Rapise Bin Folder>` is `C:\Program Files (x86)\Inflectra\Rapise\Bin`
+Usually, `<Rapise Bin Folder>` is `C:\Program Files (x86)\Inflectra\Rapise\Bin`.
 
 Example:
 
@@ -125,11 +125,11 @@ Example:
 
 ### From Rapise Menu
 
-Use menu `Tools > RPA Monitor`. Rapise will search for `rpa_config.json` in the current test folder and its parent folders. Most nested `rpa_config.json` will be passed to the RPA Monitor.
+Select `Tools > RPA Monitor`. Rapise searches for `rpa_config.json` in the current test folder and its parent folders. The most deeply nested `rpa_config.json` file is passed to the RPA Monitor.
 
 ## Running Spira Test Case
 
-If you want to run a Rapise test linked to Spira (to collect execution results in Spira) you may trigger Rapise Launcher in minimized mode by passing project and test set id to it. The test set should contain the test case you want to run.  `-minimized` switch tells RapiseLauncher to not show up on screen.
+If you want to run a Rapise test linked to Spira (to collect execution results in Spira), you can trigger the Rapise Launcher in minimized mode by passing the project and test set IDs to it. The test set must contain the test case you want to run. The `-minimized` switch prevents the RapiseLauncher window from being displayed.
 
 Example:
 

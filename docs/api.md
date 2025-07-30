@@ -1,11 +1,11 @@
-# REST/SOAP API testing
+# REST/SOAP API Testing
 
-Rapise can test REST/SOAP APIs. We recommend to start from the tutorials:
+Rapise can test REST/SOAP APIs. We recommend starting with these tutorials:
 
-- [Tutorial: REST Web Services](/Guide/tutorial_web_services_rest/)
-- [Tutorial: SOAP Web Services](/Guide/tutorial_soap_web_services/)
+- [Tutorial: REST Web Services](Guide/tutorial_web_services_rest.md)
+- [Tutorial: SOAP Web Services](Guide/tutorial_soap_web_services.md)
 
-In-depth documentation on Web Service testing:
+In-depth documentation on Web Service Testing:
 
 [Web Service Testing](/Guide/web_service_testing/)
 

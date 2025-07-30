@@ -1,10 +1,10 @@
 # Comments
 
-## Single Row Comments
+## Single-Line Comments
 
-RVL has two types of single line comments depending on the purpose.
+RVL has two types of single-line comments.
 
-Sometimes comment is used to exclude line of code from execution. 
+One type is used to prevent a line of code from being executed.
 
 === "Screenshot"
     ![Disable Execution](./img/Comment_SingleLine_Disable.png)
@@ -16,28 +16,28 @@ Sometimes comment is used to exclude line of code from execution.
     | //   | Action | Global | DoLaunch | cmdLine   | string    | calc.exe   |
     
 
-There is a special type of single row comments intended to put long text comments into the document.
+The other type is for adding long, descriptive comments to your script.
 
-Single row comment is displayed as long text providing that:
-1. Flow is set to `#` or `//`
-2. Text is completely typed into the `Type` cell.
-3. Other cells after `Type` are empty.
+A comment is displayed as long text provided that:
+1. The `Flow` cell is set to `#` or `//`.
+2. The comment text is entered entirely into the `Type` cell.
+3. All other cells in the row after the `Type` cell are empty.
 
-In such case the text is displayed through the whole line:
+In this case, the comment is displayed across the entire row:
 
 === "Screenshot"
     ![Comment text](./img/Comment_SingleLine_Text.png)
 === "Transcript"
     | Flow | Type                                                                                   | Object | Action  | ParamName | ParamType | ParamValue |
     | ---- | -------------------------------------------------------------------------------------- | ------ | ------- | --------- | --------- | ---------- |
-    | #    | My scenario goes here. We are going to perform arithmetical operation with Calculator. |        |         |           |           |            |
+    | #    | My scenario goes here. We are going to perform an arithmetic operation with the Calculator. |        |         |           |           |            |
     |      | Action                                                                                 | _1     | DoClick | x         | number    | 18         |
     |      |                                                                                        |        |         | y         | number    | 15         |
 
 
-## Multiple Row Comments
+## Multi-Line Comments
 
-Used to disable several rows of script:
+Multi-line comments are used to disable several rows of a script:
 
 === "Screenshot"
     ![Disable Execution Multiline](./img/Comment_MultiLine_Disable.png)
@@ -49,5 +49,3 @@ Used to disable several rows of script:
     |      | Action    | Global | GetCurrentDir |           |           |            |
     |      | Condition |        | output IsTrue |           |           |            |
     | */   |           |        |               |           |           |            |
-    
-

@@ -1,4 +1,4 @@
-# Verbose Levels
+# Verbose Level
 
 ## Purpose
 
@@ -6,7 +6,7 @@ The **Verbose Level** affects the amount of information written to the [Output V
 
 ## Usage
 
-The **Verbose Level** is set via menu `Tools > Verbose Level > ...`:
+The **Verbose Level** is set via the menu `Tools > Verbose Level > ...`:
 
 ![verbosity level](./img/verbosity_levels1.png)
 

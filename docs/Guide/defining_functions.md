@@ -2,37 +2,37 @@
 
 ## Purpose
 
-The Rapise test script is in JavaScript. You may define as many JavaScript functions as you would like to call from your test script.
+The Rapise test script is in JavaScript. You can define any number of JavaScript functions to call from your test script.
 
 ## Usage
 
-There are three ways to maintain additional functions: (1) In `Common.js` (2) Inside your test script and (3) in an external file.
+There are three ways to define additional functions: (1) in `Common.js`, (2) inside your test script, and (3) in an external file.
 
 ## Inside your Test Script
 
 ### In Common.js
 
-Preferred way is to have a [testing framework](Frameworks/frameworks.md#managing-common-data) and with shared file. Its default name `Common.js` although you may have other files marked with `shared` tag and thus being automatically loaded during playback and shown in the shared node.
+The preferred way is to use a [testing framework](Frameworks/frameworks.md#managing-common-data) with a shared file. Its default name is `Common.js`, although you may use other files marked with a `shared` tag. These files are automatically loaded during playback and displayed in the shared node.
 
 ![Common.js](./img/defining_functions_commonjs.png)
 
 ### In User.js
 
-It is recommended to put test case specific functions into `User.js` file available in any test from its creation (in most cases it is not needed and `Common.js` is preferred:
+It is recommended to put test-case-specific functions into the `User.js` file. This file is available for any test from its creation (in most cases, `User.js` is not needed, and `Common.js` is preferred).
 
 ![User.js from toolbar](./img/defining_functions_userjs_toolbar.png)
 
-This file is automatically attached into every script. All variables and functions defined in it may be used in the test. User-defined functions are also available under the **Functions** node in the Object Tree:
+This file is automatically attached to every script. All variables and functions defined in it can be used in the test. User-defined functions are also available under the **Functions** node in the Object Tree:
 
 ![Functions](./img/defining_functions_user_function.png)
 
-You may also open `User.js` from the [Files Tree](test_files_dialog.md):
+You can also open `User.js` from the [Files Tree](test_files_dialog.md):
 
 ![User.js files](./img/defining_functions_files_userjs.png)
 
 ## In an External File
 
-You can define your function in another file and include it. Although more common is to include external files into `Common.js` or into `User.js`:
+You can define your functions in another file and include them. However, it is more common to include external files in `Common.js` or `User.js`:
 >  
 For example:
 

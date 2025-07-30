@@ -4,26 +4,26 @@
 DoPlayScript(/**string*/ scriptPath, /**string*/ sheetName)
 ```
 
-Play RVL sheet `sheetName` from workbook `scriptPath`.
+Plays an RVL sheet `sheetName` from the workbook `scriptPath`.
 
-* `scriptPath`: Path to script
-* `sheetName`: Excel sheet containing the script
-* **[extraParams]**: default variable values
+*   `scriptPath`: The path to the script.
+*   `sheetName`: The name of the Excel sheet containing the script.
+*   **[extraParams]**: Default values for local variables.
 
 ```javascript
 DoPlaySheet(/**string*/ sheetName)
 ```
 
-Play RVL sheet `sheetName` from current workbook.
+Plays an RVL sheet `sheetName` from the current workbook.
 
-* `sheetName`: Excel sheet containing the script
-* **[extraParams]**: default variable values
+*   `sheetName`: The name of the Excel sheet containing the script.
+*   **[extraParams]**: Default values for local variables.
 
 ## Passing Input Parameters
 
-[Extra parameters](../RVL/Params.md#extra-parameters) **[extraParams]** used in these calls are default values for **local** variables defined in the destination scripts.
+The [extra parameters](../RVL/Params.md#extra-parameters) (**[extraParams]**) used in these calls provide initial values for **local** variables defined in the destination script.
 
-So the following call:
+For example, the following call:
 
 === "Screenshot"
     ![Extra Params Call](./img/RVL_DoPlay_ExtraParams.png)
@@ -40,7 +40,7 @@ So the following call:
     |      |        |        |             |              |           |                 |
     
 
-passes `User=ExtUser`, `Password=ExtPassword`, `OtherVarName=somevalue` to the destination script. It may now be used as follows:
+passes `User=ExtUser`, `Password=ExtPassword`, and `OtherVarName=somevalue` to the destination script. The destination script can then use these values as follows:
 
 === "Screenshot"
     ![Extra Param Values](./img/RVL_DoPlay_ExtraParams_Values.png)
@@ -57,6 +57,6 @@ passes `User=ExtUser`, `Password=ExtPassword`, `OtherVarName=somevalue` to the d
     |      | Param    |        |         | message   | string    | /              |
     |      | Param    |        |         | message   | variable  | Password       |
 
-So **local** variable `User` is assigned to value `ExtUser` when called. However, if you play this sheet using `Play Sheet` then this variable would have value `DefUser`.
+In this case, the **local** variable `User` is assigned the value `ExtUser` from the calling script. However, if you play this sheet directly using `Play Sheet`, the variable will be assigned its default value of `DefUser`.
 
-This helps to make sheets more universal: it should be possible to execute the sheet or any statement in a sheet alone as well as call it from outside and pass parameters.
+This mechanism makes sheets more versatile, allowing them to be executed standalone or called from another script with parameters.

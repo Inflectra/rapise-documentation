@@ -1,8 +1,8 @@
 # If - Else
 
-`If` using for branching statements in RVL.
+`If` is used for branching statements in RVL.
 
-Basic branch statement has 2 parts: 1st row is `If` flow with [Condition](Conditions.md):
+A basic branch statement has two parts: the first row is the `If` flow with a [Condition](Conditions.md):
 
 ## If
 
@@ -14,11 +14,11 @@ Basic branch statement has 2 parts: 1st row is `If` flow with [Condition](Condit
 |      | ***some*** | ***actions*** | ***go***              | ***here*** |
 | End  |            |               |                       |            |
 
-Actions after `If` condition and up to `End` statement are executed when condition is truth.
+The actions after the `If` condition and before the `End` statement are executed when the condition is true.
 
 ## If-Else
 
-`If-Else` statement is similar to `If` with one extension. It contains an alternative `Else` section that is executed when `If` condition is false:
+The `If-Else` statement is similar to `If`, with one extension. It contains an alternative `Else` section that is executed when the `If` condition is false:
 
 | Flow | Type        | ...           | Action                | ParamName  | ... |
 | ---- | ----------- | ------------- | --------------------- | ---------- | --- |
@@ -32,9 +32,9 @@ Actions after `If` condition and up to `End` statement are executed when conditi
 
 ## If-ElseIf
 
-`ElseIf` is a way to establish a chain of conditions. Each condition is evaluated with previous is false.
+`ElseIf` is a way to establish a chain of conditions. Each condition is evaluated only when the previous one is false.
 
-`If-Else` statement is similar to `If` with one extension. It contains an alternative `Else` section that is executed when `If` condition is false:
+The `If-Else` statement is similar to `If`, with one extension. It contains an alternative `Else` section that is executed when the `If` condition is false:
 
 | Flow   | Type        | ...           | Action                | ParamName  | ... |
 | ------ | ----------- | ------------- | --------------------- | ---------- | --- |
@@ -48,7 +48,7 @@ Actions after `If` condition and up to `End` statement are executed when conditi
 | #      | ***other*** | ***actions*** | ***go***              | ***here*** |     |
 | End    |             |               |                       |            |     |
 
-There may be many ElseIf` blocks:
+There may be many `ElseIf` blocks:
 
 | Flow   | Type        | Object        | Action                | ParamName  | ParamType | ParamValue |
 | ------ | ----------- | ------------- | --------------------- | ---------- | --------- | ---------- |
@@ -66,7 +66,7 @@ There may be many ElseIf` blocks:
 | #      | ***other*** | ***actions*** | ***go***              | ***here*** |           |            |
 | End    |             |               |                       |            |           |            |
 
-And there might also be an `Else` block in the end:
+An `Else` block can also be included at the end:
 
 | Flow   | Type        | Object        | Action                | ParamName  | ParamType | ParamValue |
 | ------ | ----------- | ------------- | --------------------- | ---------- | --------- | ---------- |
@@ -88,7 +88,7 @@ And there might also be an `Else` block in the end:
 
 ## Examples
 
-Check if `Log In` link available. If so, do login:
+Check if the `Log In` link is available. If so, log in:
 
 === "Screenshot"
     ![If Check Object Exists](./img/IfElse_CheckLogin.png)
@@ -104,7 +104,7 @@ Check if `Log In` link available. If so, do login:
     |      | Action     | ctl00$MainContent$LoginUser$LoginButton | DoClick       |           |           |            |
     | End  |            |                                         |               |           |           |            |
 
-Check if we use old version of OS and assign a variable `OldWindows` accordingly:
+Check if an old version of the OS is in use and assign the `OldWindows` variable accordingly:
 
 === "Screenshot"
     ![If Check OS Version](./img/IfElse_CheckOldOs.png)

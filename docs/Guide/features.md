@@ -1,6 +1,6 @@
 # Features
 
-Rapise is a feature-rich test automation system, however all the features have been designed to make test automation as easy as possible.
+Rapise is a feature-rich test automation system. However, all its features have been designed to make test automation as easy as possible.
 
 Most of the features of Rapise fall into one of five categories:
 
@@ -24,7 +24,7 @@ Most of the features of Rapise fall into one of five categories:
 6. Extending Rapise to learn new or extended libraries of capabilities.
     - [Custom Libraries](custom_libraries.md)
 
-Depending on the application set being tested, not all of these features are necessarily needed for every situation. For each feature, the docs describe:
+Depending on the application set being tested, not all of these features are necessary in every situation. For each feature, the documentation describes:
 
 1. The reason you might use a given feature.
 

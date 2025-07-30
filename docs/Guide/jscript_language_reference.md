@@ -1,8 +1,8 @@
 # JScript Language Reference
 
 !!! important
-    Starting from Rapise 8.0, the default JavaScript engine used is [NodeJS](https://nodejs.org/) v14.15.3 runtime.
-    Starting from Rapise 8.1, the default JavaScript engine used is [NodeJS](https://nodejs.org/) v18.18.0 runtime.
+    Starting from Rapise 8.0, the default JavaScript engine is [NodeJS](https://nodejs.org/) v14.15.3 runtime.
+    Starting from Rapise 8.1, the default JavaScript engine is [NodeJS](https://nodejs.org/) v18.18.0 runtime.
 
 In versions prior to 6.7, Rapise used **Microsoft JScript** with **WScript** as the only available JavaScript engine. This document provides a language reference for that older version.
 
@@ -10,23 +10,23 @@ If you have existing tests or testing frameworks that are not compatible with **
 
 You can set the desired engine in two locations:
 
-1. In the [Test Settings](settings_dialog.md#execution) (choose from **Default**, **Node**, **WScript**). The **Default** option uses the engine defined in the [Global Options](options_dialog.md#execution).
+1.  In the [Test Settings](settings_dialog.md#execution) (choose from **Default**, **Node**, **WScript**). The **Default** option uses the engine defined in the [Global Options](options_dialog.md#execution).
 
-2. In the [Global Options](options_dialog.md#execution) (choose from **Default**, **Node**, **WScript**). The **Default** option means **Node**.
+2.  In the [Global Options](options_dialog.md#execution) (choose from **Default**, **Node**, **WScript**). The **Default** option means **Node**.
 
 ## NodeJS Support Features and Limitations
 
 ### Features
 
-1. NodeJS v18 contains most of latest features of JavaScript including [EcmaScript2015 (ES6) and beyond](https://nodejs.org/en/docs/es6/). You may see more detailed list of features [here](https://node.green/).
-2. You may find the most complete and up to date language reference at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).
-3. You may use most of available [npm](https://www.npm.org/) packages in your test scripts. You may include `node_modules` folders in the root of your testing framework (i.e. `%WORKDIR%\node_modules`).
+1.  NodeJS v18 contains most of the latest features of JavaScript, including [EcmaScript2015 (ES6) and beyond](https://nodejs.org/en/docs/es6/). A more detailed list of features is available [here](https://node.green/).
+2.  The most complete and up-to-date language reference can be found at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).
+3.  You can use most available [npm](https://www.npm.org/) packages in your test scripts. You can include `node_modules` folders in the root of your testing framework (i.e., `%WORKDIR%\node_modules`).
 
 ### Limitations
 
-1. NodeJS engine now runs in 32 bit mode. This is required to keep compatibility with `ActiveXObject` support that is an essential part of **WScript** but has to be emulated in **NodeJS**.
+1.  The NodeJS engine now runs in 32-bit mode. This is required to maintain compatibility with `ActiveXObject` support, which is an essential part of **WScript** but must be emulated in **NodeJS**.
 
-2. Rapise has own copy of **node.exe** installed. So if you have npm modules installed globally and need to use them in your test, you have to install them locally into the framework.
+2.  Rapise has its own copy of **node.exe** installed. Therefore, if you have npm modules installed globally and need to use them in your tests, you must install them locally within the framework.
 
 ### Npm Console
 
@@ -34,11 +34,11 @@ This section assumes your testing framework is running with NodeJS enabled (whic
 
 You can integrate external NPM modules and packages into your test scripts. However, when using an external package, be sure to install it using Rapise's built-in package manager. Installing via a global package manager (if available) makes the packages visible to global scripts but not within Rapise tests. Instead, use the internal `npm` console provided by Rapise, which is tied to the NodeJS instance running your tests.
 
-To access the internal `npm` console, go to the `Tools > Npm Console` [menu](manu_and_toolbars.md#tools).
+To access the internal `npm` console, go to the `Tools > Npm Console` [menu](menu_and_toolbars.md#tools).
 
 After opening the console, you can install any package as usual.
 
-You have the option to save the installed packages alongside your tests, or simply save the `package.json` or `package_lock.json` files and restore the dependencies when needed.
+You have the option to save the installed packages alongside your tests or simply save the `package.json` or `package-lock.json` files and restore the dependencies when needed.
 
 ```javascript
 function _NpmInit()
@@ -53,11 +53,11 @@ function _NpmInit()
 }
 ```
 
-For example, you may call `_NpmInit` from [SeSOnTestInit()](understanding_the_script.md#sesontestinig) function.
+For example, you can call `_NpmInit` from the [SeSOnTestInit()](understanding_the_script.md#sesontestinig) function.
 
 ## [Reference](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm)
 
-The language reference covers EcmaScript v2 supported by default JScript Engine. It is missing majority of latest features, properties and methods. For example, there is no `Array.join` or `String.trim`.
+The language reference covers EcmaScript v2, which is supported by the default JScript Engine. It is missing the majority of the latest features, properties, and methods. For example, there is no `Array.join` or `String.trim`.
 
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfFeatureInformation.htm" title="Feature Information">Feature Information</a></li>
   <li><a href="http://jsdoc.inflectra.com/Default.aspx?href=html/js56jsgrpecmafeatures.htm" title="Microsoft JScript Features - ECMA">Microsoft JScript Features - ECMA</a></li>

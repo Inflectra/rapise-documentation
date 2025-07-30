@@ -16,15 +16,15 @@
 
 ++ctrl+i++ - Insert Row
 
-++ctrl+d++- Delete Row
+++ctrl+d++ - Delete Row
 
 ++shift+enter++ - Add Row After
 
 ++ctrl+down++ - Show dropdown for the current cell
 
-++f2++ - enter edit mode for the selected cell (So LEFT and RIGHT keys move the cursor in the editor field)
+++f2++ - Enter edit mode for the selected cell (where LEFT and RIGHT keys move the cursor in the editor field)
 
-++ctrl+p++ - show optional params for a selected action
+++ctrl+p++ - Show optional parameters for the selected action
 
 ## Source Editor
 
@@ -36,29 +36,29 @@
 
 ++ctrl+a++ - Select All
 
-++ctrl++ + / - Comment/Uncomment selected block of JS code.
+++ctrl++ + / - Comment or uncomment the selected block of JS code.
 
 ++tab++ - Tabify Selection
 
 ++shift+tab++ - Untabify selection
 
-++ctrl+0++ - Collapse all foldings
+++ctrl+0++ - Collapse all folds
 
-++ctrl+1++ - Collapse folding level 1
+++ctrl+1++ - Collapse fold level 1
 
-++shift+ctrl+1++ - Expand folding level 1
+++shift+ctrl+1++ - Expand fold level 1
 
-++ctrl+2++ - Collapse folding level 2
+++ctrl+2++ - Collapse fold level 2
 
-++shift+ctrl+2++ - Expand folding level 2
+++shift+ctrl+2++ - Expand fold level 2
 
-++ctrl+3++ - Collapse folding level 3
+++ctrl+3++ - Collapse fold level 3
 
-++shift+ctrl+3++ - Expand folding level 3
+++shift+ctrl+3++ - Expand fold level 3
 
-++ctrl+4++ - Collapse folding level 4
+++ctrl+4++ - Collapse fold level 4
 
-++shift+ctrl+4++ - Expand folding level 4
+++shift+ctrl+4++ - Expand fold level 4
 
 ++f9++ - Toggle breakpoint
 
@@ -70,7 +70,7 @@
 
 ++f11++ - Step Into Function/Procedure
 
-++shift+f11++ - Step out
+++shift+f11++ - Step Out
 
 ++f10++ - Step Over
 
@@ -92,14 +92,14 @@
 
 ## Spy: UIAutomation, Java, Accessible, Managed
 
-++ctrl+g++ - Start tracking / Stop tracking and show currently selected object properties
+++ctrl+g++ - Start/Stop tracking and show properties of the currently selected object
 
 ## Web Spy
 
 ++ctrl+g++ - Get snapshot
-++ctrl+t++ - Start/stop tracking
+++ctrl+t++ - Start/Stop tracking
 
 ## Special Shortcuts
 
 ++shift+ctrl+e++ - Add Engine as a Sub-Test
-++shift+ctrl+f5++ - Generate Global Object Metadata: (shortcut only works in source editor with a file [containing](global_objects.md#compile-metadata) `SeSGlobalObject`).
+++shift+ctrl+f5++ - Generate Global Object Metadata (This shortcut only works in the Source Editor with a file [containing](global_objects.md#compile-metadata) `SeSGlobalObject`).

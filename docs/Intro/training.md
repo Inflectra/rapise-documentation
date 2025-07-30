@@ -1,30 +1,30 @@
 # Training
 
-We can train your QA team to effectively use Rapise for UI test automation. If you are switching from manual testing it is a highly recommended option for you. Please contact sales@inflectra.com to arrange.
+We can train your QA team to use Rapise effectively for UI test automation. If you are switching from manual testing, this is a highly recommended option. Please contact sales@inflectra.com to make arrangements.
 
-Training may be a part of [Rapise Quick-Start implementation package](https://www.inflectra.com/Company/Article/jump-starting-your-rapise-test-automation-project-997.aspx).
+Training can be part of the [Rapise Quick-Start implementation package](https://www.inflectra.com/Company/Article/jump-starting-your-rapise-test-automation-project-997.aspx).
 
 ## Overview
 
-The proposed training is an interactive process. Our instructors both provide online sessions and give lab tasks to check the level of understanding of participants. 
+The training is an interactive process. Our instructors provide online sessions and assign lab tasks to check the participants' level of understanding.
 
-The implementation of lab tasks by the participants requires them to have the necessary prerequisites (have a computer available, Rapise is installed and licensed on the computer, have access to training SpiraTest instance and have certain amount of time to attend sessions and complete lab tasks).
+To complete the lab tasks, participants must have the necessary prerequisites: a computer with Rapise installed and licensed, access to the training SpiraTest instance, and enough time to attend sessions and complete the tasks.
 
-We provide sessions via Zoom. The length of each session is about 1 hour. Each session starts from review of lab tasks assigned in the previous session and comments about any common issues. Also it contains a Q&A section for questions asked in the previous session. Then at the end of the session there is another Q&A section where instructors collect new questions: some questions are answered immediately and others are answered in the next session.
+Sessions are conducted via Zoom. Each session lasts about one hour. Each session starts with a review of the lab tasks from the previous session and a discussion of any common issues. It also includes a Q&A section to address questions from the previous session. At the end of the session, there is another Q&A section where instructors take new questions. Some questions are answered immediately, while others are addressed in the next session.
 
-We expect that participants deliver lab results at the end of the day following the day of a session and then the next day our instructors check the completed lab tasks. This process allows to have two sessions per week.
+We expect participants to submit their lab results by the end of the day following a session. Our instructors will then check the completed lab tasks on the following day. This process allows for two sessions per week.
 
 ## Prerequisites
 
-Each person attending training should have:
+Each person attending the training should have:
 
-- Individual PC with Rapise installed
-- Access to training SpiraTest instance
-- Access to demo applications
+- An individual PC with Rapise installed
+- Access to the training SpiraTest instance
+- Access to the demo applications
 
 ## Sample Training Plan
 
-We adjust training plans according to customer needs. Here is an example of such a plan.
+We adjust training plans based on customer needs. The following is a sample plan.
 
 ### Session 1: Rapise Basics
 
@@ -40,7 +40,7 @@ We adjust training plans according to customer needs. Here is an example of such
 
 !!! example "Lab Tasks"
 
-Record and playback a simple test. Upload result to SpiraTest.
+Record and play back a simple test. Upload the result to SpiraTest.
 
 ### Session 2: Rapise Visual Language
 
@@ -61,7 +61,7 @@ Implement a test scenario in RVL.
 
 !!! example "Lab Tasks"
 
-Write a function in JavaScript according to a specification.
+Write a JavaScript function according to a provided specification.
 
 ### Session 4: Cross-browser Testing
 
@@ -70,11 +70,11 @@ Write a function in JavaScript according to a specification.
 - Cross-browser Testing
 - Web Testing
 - Web Spy
-- XPATH
+- XPath
 
 !!! example "Lab Tasks"
 
-Using WebSpy build and test XPATH expressions for specific elements on a given Web page.
+Using WebSpy, build and test XPath expressions for specific elements on a given web page.
 
 ### Session 5: SpiraTest Integration
 
@@ -86,7 +86,7 @@ Using WebSpy build and test XPATH expressions for specific elements on a given W
 
 !!! example "Lab Tasks"
 
-Save a test to SpiraTest and execute it via RapiseLauncher with passing configuration parameters from SpiraTest.
+Save a test to SpiraTest and execute it via RapiseLauncher, passing configuration parameters from SpiraTest.
 
 ### Session 6: Frameworks
 
@@ -98,7 +98,7 @@ Save a test to SpiraTest and execute it via RapiseLauncher with passing configur
 
 !!! example "Lab Tasks"
 
-Implement a demo test case using features of the presented framework.
+Implement a demo test case using the features of the presented framework.
 
 ### Session 7: Dynamics 365 for Sales
 
@@ -110,14 +110,14 @@ Implement a demo test case using features of the presented framework.
 
 !!! example "Lab Tasks"
 
-Implement a test case for demo Dynamics CRM instance.
+Implement a test case for the demo Dynamics CRM instance.
 
 ### Session 8: JavaScript in Rapise
 
 !!! info "Topics"
 
-- How to write Custom Functions using Rapise API
+- Writing custom functions using the Rapise API
 
 !!! example "Lab Tasks"
 
-Write a custom function interacting with Web elements on the page and using Rapise API.
+Write a custom function that interacts with web elements on the page using the Rapise API.

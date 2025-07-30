@@ -6,30 +6,30 @@
 
 ## Usage
 
-You can filter the report view while the file is open.  Directly above the first row of the report, there is a row of filter cells.  Each one has a **matching criteria** button ![report filtering, a button](./img/report_filtering1.png), a text-box to specify a filter value, a drop-down menu with **predefined filter values**, and a **clear** button ![report filtering, clear button](./img/report_filtering2.png):
+You can filter the report view while the file is open. Directly above the report's first row, you will find a row of filter cells. Each one has a **matching criteria** button ![report filtering, a button](./img/report_filtering1.png), a text box for specifying a filter value, a drop-down menu with **predefined filter values**, and a **clear** button ![report filtering, clear button](./img/report_filtering2.png):
 
 ![report filtering, filter cells.zoom70](./img/report_filtering3.png)
 
 ## Matching Criteria
 
-Matching criteria determine how to compare the filter string value you input with the values in the report.  You can select from 16 matching criteria.  Press the button marked **A** above the column you are filtering to see the possible criteria:
+Matching criteria determine how to compare the filter string value you input with the values in the report. You can select from 16 matching criteria. Press the button marked **A** above the column you are filtering to see the possible criteria:
 
 ![report filtering, matching criteria](./img/report_filtering4.png)
 
 ## Predefined Filter Values
 
-If we expand the filter cell's drop-down menu, we will see a list of predefined filtering options:
+Expanding the filter cell's drop-down menu reveals a list of predefined filtering options:
 
 ![report filtering, predefined values](./img/report_filtering5.png)
 
-- **(Custom)**: This option has to do with the next section *Custom Filter Options*.
+- **(Custom)**: This option relates to the next section, *Custom Filter Options*.
 - **(Blanks)**: Matches all rows where the value for this column is blank.
-- **(NonBlanks)**: Matches all rows there the value for this column is not blank.
+- **(NonBlanks)**: Matches all rows where the value for this column is not blank.
 - All other predefined values are copied from cells in the column you are filtering.
 
 ## Custom Filter Option
 
-To create a filter with multiple matching criteria and filter values, select **(Custom)** from the filter cell's drop-down menu.  The **Enter filter criteria for... Dialog** will open.  Instructions for how to use it are [here](enter_filter_criteria_for____d.md).
+To create a filter with multiple matching criteria and filter values, select **(Custom)** from the filter cell's drop-down menu. The **Enter filter criteria for... Dialog** will open. Instructions for how to use it are [here](enter_filter_criteria_for____d.md).
 
 ![report filtering, custom option](./img/report_filtering6.png)
 

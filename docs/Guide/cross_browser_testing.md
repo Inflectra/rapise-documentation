@@ -2,7 +2,7 @@
 
 ## Choosing the Browser When Creating a Test
 
-When you first create a Rapise test with the **Methodology** set to **Web** you will be asked to choose the initial [web browser profile](selenium_settings_dialog.md):
+When you first create a Rapise test with the **Methodology** set to **Web**, you will be asked to choose the initial [web browser profile](selenium_settings_dialog.md):
 
 ![new_test_browser_profile_select](./img/cross_browser_testing1.png){width="466px"}
 
@@ -10,35 +10,35 @@ You can run your recording in a different browser than the one in which it was r
 
 ## Selecting a new Playback Browser
 
-In the right top corner of Rapise window expand the dropdown with available browser.
+In the top-right corner of the Rapise window, expand the dropdown with available browsers.
 
 ![available browsers](./img/cross_browser_testing2.png){width="236px"}
 
-Change the browser to either one of the [Selenium WebDriver](selenium_webdriver.md) based browser profiles, or one of the [native browsers](browser_settings.md) such as Firefox, Internet Explorer or Chrome.
+Change the browser to either one of the [Selenium WebDriver](selenium_webdriver.md)-based browser profiles, or one of the [native browsers](browser_settings.md) such as Firefox, Internet Explorer, or Chrome.
 
-Once you have changed this setting, [Playback](playback.md) the script normally and it will playback in the selected browser.
+Once you have changed this setting, [playback](playback.md) the script normally, and the script will play back in the selected browser.
 
 Changing this setting will effectively set the value of the `g_browserLibrary` global variable.
 
 !!! note
-	In Rapise 6.3+ you may define [local profiles](selenium_settings_dialog.md#local-selenium-profiles).
+	In Rapise 6.3+, you may define [local profiles](selenium_settings_dialog.md#local-selenium-profiles).
 
 !!! important
- 	Since Rapise 7.3 it is recommended to use [Selenium WebDriver](selenium_webdriver.md) based profiles for all web tests.
+ 	Since Rapise 7.3, it is recommended to use [Selenium WebDriver](selenium_webdriver.md)-based profiles for all web tests.
 
 ## Playback in Multiple Browsers
 
 ### Using Framework Parameters
 
 !!! important "Rapise 8"
-	In Rapise 8 and above the recommended way of multi-browser testing is via [framework parameters](./Frameworks/parameters.md).
+	In Rapise 8 and above, the recommended way of multi-browser testing is via [framework parameters](./Frameworks/parameters.md).
 
-	Check out the KB article: [Rapise 8.0: how to run test cases on different browsers](https://www.inflectra.com/Support/KnowledgeBase/KB750.aspx).
+	Check out the KB article: [Rapise 8.0: How to Run Test Cases on Different Browsers](https://www.inflectra.com/Support/KnowledgeBase/KB750.aspx).
 
 ### Using Input Data Table
 
 !!! important "Rapise 7"
-	In Rapise 7 the recommended way of multi-browser testing is via [Input Data Table](spira_dashboard_2.md#input-data-table).
+	In Rapise 7, the recommended way of multi-browser testing is via [Input Data Table](spira_dashboard_2.md#input-data-table).
 	
 	Check out the webinar: [Parallel Execution of Tests with Rapise & SpiraTest](https://youtu.be/bNoWZjOE3hQ).
 
@@ -46,7 +46,7 @@ Changing this setting will effectively set the value of the `g_browserLibrary` g
 
 ==obsolete==
 
-Executing a test in multiple browsers is slightly more complicated. We recommend that you use **SpiraTest Test Sets** where you may define multiple test cases pointing to the same Test with a different **g_browserLibrary** parameter value.
+Executing a test in multiple browsers is slightly more complicated. We recommend that you use **SpiraTest Test Sets**, where you may define multiple test cases pointing to the same Test with a different **g_browserLibrary** parameter value.
 
 See the [SpiraTest Integration](spiratest_integration.md#using-parameterized-test-cases) topic for detailed information.
 
@@ -71,11 +71,11 @@ Navigator.Close();
 !!! important
 	`Navigator.Close` is required to switch the browser.
 
-In RVL it will look like:
+In RVL, it will look like:
 
 ![selectbrowserprofile](./img/cross_browser_testing_selectbrowserprofile.png)
 
-Or, the same using the Loop:
+Or, the same using a loop:
 
 ![selectbrowserprofile loop](./img/cross_browser_testing_selectbrowserprofile_loop.png)
 
@@ -83,24 +83,24 @@ Or, the same using the Loop:
 
 ==obsolete==
 
-To iterate through browsers in Rapise create a new test with **Web** methodology. 
+To iterate through browsers in Rapise, create a new test with **Web** methodology. 
 
-Now add a reference to the Web test you want to run in different browsers. In the `Files` view right click the test node and choose `Add File(s)...`. Provide the path to `*.sstest` file. You will see the reference added to the `Files` view.
+Now, add a reference to the Web test you want to run in different browsers. In the `Files` view, right-click the test node and choose `Add File(s)...`. Provide the path to the `*.sstest` file. You will see the reference added to the `Files` view.
 
 ![test reference](./img/cross_browser_testing_testreference.png)
 
-Drag the reference to the editor window. Rapise will generate `DoInvokeTest` call.
+Drag the reference to the editor window. Rapise will generate a `DoInvokeTest` call.
 
 ![invoke test](./img/cross_browser_testing_dragdroptest.png)
 
-To execute a test with a given browser profile you need a pair of commands.
+To execute a test with a given browser profile, you need a pair of commands.
 
 ```javascript
 Navigator.SelectBrowserProfile("BROWSER PROFILE");
 Global.DoInvokeTest('PATH TO THE TEST');
 ```
 
-So to run the test in three different browsers we get the following content of the `Test.js`:
+So, to run the test in three different browsers, we get the following content for `Test.js`:
 
 ```javascript
 function Test(params)
@@ -116,6 +116,6 @@ function Test(params)
 g_load_libraries=["Web"];
 ```
 
-In RVL it will look like:
+In RVL, it will look like:
 
 ![rvl](./img/cross_browser_testing_rvl.png)

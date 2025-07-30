@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Rapise provides **Code Completion** for class, method and field names.
+Rapise provides **Code Completion** for class, method, and field names.
 
 ## Usage
 
@@ -12,53 +12,53 @@ Begin typing a class, method, or field name. Press ++ctrl+space++ to open a list
 
 ## Advanced
 
-Rapise has built-in code completion logic that lets it suggest the available list of functions for a specific object. However since JavaScript is fundamentally an un-typed language, for the code completion to work, there are some tips and tricks that you can use.
+Rapise has built-in code completion logic that suggests available functions for a specific object. However, since JavaScript is fundamentally an untyped language, for code completion to work, there are some tips and tricks you can use.
 
-Rapise scans for variable definitions when one saves the `.js` source file. So if anything goes wrong (no hints) then first thing is to save the file.
+Rapise scans for variable definitions when you save the `.js` source file. So, if anything goes wrong (e.g., no hints), the first thing to do is save the file.
 
-One may define a variable as simple as:
+You can define a variable as simply as:
 
 ```javascript
 var p;
 ```
 
-In this example `p` is just a variable with undefined type. It may be used as number, string or object. So Rapise has no idea of how to deal with it. So if you type a dot after  `p.` no code-completion window appears.
+In this example, `p` is just a variable with an undefined type. It may be used as a number, string, or object. So, Rapise has no idea how to deal with it. So, if you type `p` and then a dot, no code completion window appears.
 
-There are several ways of giving Rapise a "hint" about the variable type:
+There are several ways to give Rapise a "hint" about the variable type:
 
 ## Static Assignment
 
-First, is static assignment. Suppose you specify some constant value when defining a variable:
+First is static assignment. Suppose you specify a constant value when defining a variable:
 
 ```javascript
 var p = "some string";
 ```
 
-In this case Rapise knows the type of `p`. So it would assist you when you type a dot `.` after `p`:
+In this case, Rapise knows the type of `p`. So it will assist you when you type `p` and then a dot:
 
 ![code_completion_1](./img/code_helper2.png)
 
 ## Using Comments to Suggest the Type
 
-In some cases variable type is not clear from its definition or assignments is not static:
+In some cases, a variable's type is not clear from its definition, or its assignments are not static:
 
 ```javascript
 var v1 = input;
 var v2;
 ```
 
-To deal with such cases the code should be instrumented. For example, if we know that input is string and v2 will be used as number then we may explain it to Rapise by placing variable type using special comment: `/**var_type*/` right together with var definition. It should be placed right either between `var` keyword and variable name or right after an assignment operation (`=`), if any. I.e.:
+To deal with such cases, the code should be instrumented. For example, if we know that `input` is a string and `v2` will be used as a number, then we can explain it to Rapise by placing the variable type using a special comment: `/**var_type*/` right next to the variable definition. It should be placed either right between the `var` keyword and the variable name, or immediately after an assignment operation (`=`), if one exists. I.e.:
 
 ```javascript
 var v1 = /**string*/ input;
 var /**number*/ v2;
 ```
 
-So now Rapise will be able to display the list of available methods and properties:
+Now, Rapise will be able to display the list of available methods and properties:
 
 ![code_completion_2](./img/code_helper3.png)
 
-Another common case is a function parameter. If you have function that is defined:
+Another common case is a function parameter. If you have a function defined as follows:
 
 ```javascript
 function my_func(patient_index, patient_name)
@@ -66,17 +66,17 @@ function my_func(patient_index, patient_name)
 }
 ```
 
-The type of parameters `patient_index` and `patient_name` are not known, but may be explained in a similar way:
+The types of parameters `patient_index` and `patient_name` are not known, but can be explained in a similar way:
 
 ```javascript
 function my_func(/**number*/ patient_index, /**string*/ patient_name)
 ```
 
-So it becomes known to Rapise:
+This makes it known to Rapise:
 
 ![code_completion_3](./img/code_helper4.png)
 
-Code completion for variable names is useful when you have multiple variables or function parameters and need to type them quickly. In this case ++ctrl+space++ key combination will bring up a list of variables and functions starting with just typed keyword.
+Code completion for variable names is useful when you have multiple variables or function parameters, and need to type them quickly. In this case, the ++ctrl+space++ key combination brings up a list of variables and functions starting with the keyword you just typed.
 
 ## Code Completion for Objects
 
@@ -86,21 +86,21 @@ If you type
 SeS("<object ID>").
 ```
 
-A list of available actions and properties will be suggested for repository object with the given ID.
+A list of available actions and properties will be suggested for the repository object with the given ID.
 
-Since Rapise 6.4 you may specify type of a dynamically created object as well.
+Since Rapise 6.4, you can also specify the type of a dynamically created object.
 
 ```javascript
 var username = /**HTMLObject*/ Navigator.Find("//button[id='username']");
 ```
 
-Save the edited file to let Rapise re-parse it. Then you may type
+Save the edited file to allow Rapise to re-parse it. Then you can type
 
 ```javascript
 username.
 ```
 
-and Rapise will suggest actions and properties for the [HTMLObject](/Libraries/HTMLObject/) type.
+and Rapise suggests actions and properties for the [HTMLObject](/Libraries/HTMLObject/) type.
 
 ## See Also
 

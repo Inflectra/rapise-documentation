@@ -4,11 +4,11 @@
 
 ## Purpose
 
-The **Output** View displays Rapise output.  The amount of output depends on the [Verbosity Level](verbosity_levels.md).
+The **Output** View displays Rapise output. The amount of output depends on the [Verbosity Level](verbosity_levels.md).
 
 ## How to Open
 
-The **Errors View** is hidden in the [Default Layout](restoring_the_default_layout.md). You may then show it using `View > Show > Output`.
+The **Errors View** is hidden in the [Default Layout](restoring_the_default_layout.md). You can then show it using `View > Show > Output`.
 
 ## Writing to the Output View
 
@@ -22,4 +22,4 @@ Use the global `Log()` function to write to the **Output View**.
 * The icons from left to right are **Find Next Entry** ![view widgets, find next entry](./img/Tool.Find_Next32.png)
 , **Copy Selected** ![view widgets, copy selected](./img/Tool.Copy32.png)
 , **Clear All Text** ![view widgets, clear all text](./img/Tool.Clear32.png).
-* Right tool `Hide` used to collapse whole bottom panel. You may then show it using `View > Show > Output`.
+* The `Hide` tool on the right is used to collapse the entire bottom panel. You can then show it using `View > Show > Output`.

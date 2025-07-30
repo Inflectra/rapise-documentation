@@ -1,19 +1,19 @@
-# How to Integrate Rapise into DevOps Pipeline
+# How to Integrate Rapise into a DevOps Pipeline
 
 ## SpiraTest (recommended)
 
-For test management and execution we recommend to use [SpiraTest](https://www.inflectra.com/SpiraTest/). Check out the [integration guide](/Guide/spiratest_integration/) and [demonstration video](https://youtu.be/5ybrBQOzez8).
+For test management and execution, we recommend using [SpiraTest](https://www.inflectra.com/SpiraTest/). Check out the [integration guide](/Guide/spiratest_integration/) and [demonstration video](https://youtu.be/5ybrBQOzez8).
 
 ## Microsoft Tools
 
-If you use Azure DevOps or TFS we also have a solution:
+If you use Azure DevOps or TFS, we also have a solution:
 
 - Azure DevOps integration v3 [manual](../Guide/vstest.md) and [video](https://youtu.be/BIgOIxkZ5Hk?t=507)
 - [RapiseLauncher Extension](../Guide/vstest_rl.md) for Azure DevOps
 
 ## Jenkins (and all others)
 
-Rapise has command line interface and produces test reports in XML and Text formats. This is the key for integration with other tools. Use [Jenkins integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx) as an example.
+Rapise has a command-line interface and produces test reports in XML and text formats. This enables integration with other tools. Refer to the [Jenkins integration](https://www.inflectra.com/Support/KnowledgeBase/KB300.aspx) guide as an example.
 
 ## Linux / MacOS / Docker
 
@@ -42,7 +42,7 @@ npx rapise <path to .sstest>
 
 #### Running RapiseLauncher
 
-Before using RapiseLauncher for the first time, you must obtain a `RepositoryConnection.xml` file from a Windows machine where your [Spira connection credentials](../Guide/spiratest_integration.md#spiratest-server-connection) have been configured. After obtaining the file, you can edit it directly to change any configuration property except for the API Key.
+Before using RapiseLauncher for the first time, you must obtain a `RepositoryConnection.xml` file from a Windows machine where your [Spira connection credentials](../Guide/spiratest_integration.md#spiratest-server-connection) have been configured. After obtaining the file, you can edit it directly to change any configuration property except the API Key.
 
 If `RepositoryConnection.xml` is in the same directory as your project or located in `~/.rapise`, you can launch RapiseLauncher with a simple command:
 
@@ -83,7 +83,7 @@ Options:
 
 Below are sample .yml files for running Rapise tests with AWS CodeBuild, Azure DevOps, GitHub Actions, and Docker.
 
-Web tests are typically run in headless mode. If a GUI emulation is required (i.e., for non-headless execution), you will need to install a virtual framebuffer like [Xvfb](https://x.org/releases/X11R7.7/doc/man/man1/Xvfb.1.xhtml) on the execution machine.
+Web tests are typically run in headless mode. If GUI emulation is required (i.e., for non-headless execution), you will need to install a virtual framebuffer like [Xvfb](https://x.org/releases/X11R7.7/doc/man/man1/Xvfb.1.xhtml) on the execution machine.
 
 #### AWS CodeBuild
 
@@ -92,17 +92,17 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
     version: 0.2
 
     phases:
-    install:
+      install:
         runtime-versions:
-        nodejs: 22
+          nodejs: 22
         commands:
-        - echo "Installing Rapise..."
-        - npm install rapise.tgz
+          - echo "Installing Rapise..."
+          - npm install rapise.tgz
 
-    build:
+      build:
         commands:
-        - echo "Starting UI tests in headless mode..."
-        - npx rapiselauncher -c RepositoryConnection.xml -t 925 --details --param "g_browserLibrary=Selenium - ChromeHeadless"
+          - echo "Starting UI tests in headless mode..."
+          - npx rapiselauncher -c RepositoryConnection.xml -t 925 --details --param "g_browserLibrary=Selenium - ChromeHeadless"
     ```
 
 #### Azure DevOps
@@ -112,55 +112,55 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
     trigger: none
 
     pool:
-    vmImage: ubuntu-latest
+      vmImage: ubuntu-latest
 
     steps:
     - script: lsb_release -a
-    displayName: 'Print OS Version'
+      displayName: 'Print OS Version'
 
     - task: NodeTool@0
-    inputs:
+      inputs:
         versionSpec: '22.x'
-    displayName: 'Install Node.js 22'
+      displayName: 'Install Node.js 22'
 
     - script: |
         echo "Installing Rapise..."
         npm install rapise.tgz
-    displayName: 'Install Rapise'
-    workingDirectory: $(Build.SourcesDirectory) # Ensure working directory is the root of the repo
+      displayName: 'Install Rapise'
+      workingDirectory: $(Build.SourcesDirectory) # Ensure working directory is the root of the repo
 
     - script: |
         echo "Launching Rapise..."
         npx rapiselauncher -c RepositoryConnection.xml -t 925 --details --param "g_browserLibrary=Selenium - ChromeHeadless"
-    displayName: 'Run Rapise Launcher'
-    workingDirectory: $(Build.SourcesDirectory) # Ensure working directory is the root of the repo    
+      displayName: 'Run Rapise Launcher'
+      workingDirectory: $(Build.SourcesDirectory) # Ensure working directory is the root of the repo    
     ```
 === "xvfb-pipeline.yml"
     ```
     trigger: none
 
     pool:
-    vmImage: ubuntu-latest
+      vmImage: ubuntu-latest
 
     steps:
     - script: lsb_release -a
-    displayName: 'Print OS Version'
+      displayName: 'Print OS Version'
 
     - task: NodeTool@0
-    inputs:
+      inputs:
         versionSpec: '22.x'
-    displayName: 'Install Node.js 22'
+      displayName: 'Install Node.js 22'
     
     - script: |
         sudo apt-get update
         sudo apt-get install -y xvfb
-    displayName: 'Install Xvfb'
+      displayName: 'Install Xvfb'
 
     - script: |
         echo "Installing Rapise..."
         npm install rapise.tgz
-    displayName: 'Install Rapise'
-    workingDirectory: $(Build.SourcesDirectory) # Ensure working directory is the root of the repo
+      displayName: 'Install Rapise'
+      workingDirectory: $(Build.SourcesDirectory) # Ensure working directory is the root of the repo
 
     - script: |
         # This entire block is executed within the virtual display environment
@@ -174,8 +174,8 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
         echo "--- Rapise execution complete ---"
         
         EOF
-    displayName: 'Run Rapise Launcher with Xvfb'
-    workingDirectory: $(Build.SourcesDirectory)
+      displayName: 'Run Rapise Launcher with Xvfb'
+      workingDirectory: $(Build.SourcesDirectory)
     ```
 #### GitHub Actions
 
@@ -183,39 +183,39 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
     ```
     name: Run Rapise Tests
 
-    # This makes the workflow manually triggerable from the Actions tab
-    # It's the direct equivalent of Azure DevOps' "trigger: none"
+    # This makes the workflow manually triggerable from the Actions tab.
+    # It's the direct equivalent of Azure DevOps' "trigger: none".
     on:
-    workflow_dispatch:
+      workflow_dispatch:
 
     jobs:
-    run-rapise:
+      run-rapise:
         # This is the equivalent of "pool: vmImage: ubuntu-latest"
         runs-on: ubuntu-latest
 
         steps:
         # Step 1: Check out the repository code
-        # This is done automatically in Azure DevOps, but is a required explicit step in GitHub Actions.
+        # This is done automatically in Azure DevOps, but it is a required explicit step in GitHub Actions.
         - name: Check out repository
-            uses: actions/checkout@v4
+          uses: actions/checkout@v4
 
         # Step 2: Install Node.js
-        # This is the equivalent of the "NodeTool@0" task
+        # This is the equivalent of the "NodeTool@0" task.
         - name: Install Node.js 22
-            uses: actions/setup-node@v4
-            with:
+          uses: actions/setup-node@v4
+          with:
             node-version: '22.x'
 
         # Step 3: Install Rapise
-        # The 'run' keyword is the equivalent of 'script'
+        # The 'run' keyword is the equivalent of 'script'.
         - name: Install Rapise
-            run: |
+          run: |
             echo "Installing Rapise..."
             npm install rapise.tgz
 
         # Step 4: Run the Rapise Launcher
         - name: Run Rapise Launcher
-            run: |
+          run: |
             echo "Launching Rapise..."
             npx rapiselauncher -c RepositoryConnection.xml -t 925 --details --param "g_browserLibrary=Selenium - ChromeHeadless"
     ```
@@ -223,43 +223,43 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
     ```
     name: Run Rapise Tests xvfb
 
-    # This makes the workflow manually triggerable from the Actions tab
-    # It's the direct equivalent of Azure DevOps' "trigger: none"
+    # This makes the workflow manually triggerable from the Actions tab.
+    # It's the direct equivalent of Azure DevOps' "trigger: none".
     on:
-    workflow_dispatch:
+      workflow_dispatch:
 
     jobs:
-    run-rapise:
+      run-rapise:
         # This is the equivalent of "pool: vmImage: ubuntu-latest"
         runs-on: ubuntu-latest
 
         steps:
         # Step 1: Check out the repository code
-        # This is done automatically in Azure DevOps, but is a required explicit step in GitHub Actions.
+        # This is done automatically in Azure DevOps, but it is a required explicit step in GitHub Actions.
         - name: Check out repository
-            uses: actions/checkout@v4
+          uses: actions/checkout@v4
 
         # Step 2: Install Node.js
-        # This is the equivalent of the "NodeTool@0" task
+        # This is the equivalent of the "NodeTool@0" task.
         - name: Install Node.js 22
-            uses: actions/setup-node@v4
-            with:
+          uses: actions/setup-node@v4
+          with:
             node-version: '22.x'
             
-        # Step 3: Install xfvb
+        # Step 3: Install Xvfb
         - name: Install Xvfb
-            run: sudo apt-get update && sudo apt-get install -y xvfb
+          run: sudo apt-get update && sudo apt-get install -y xvfb
 
         # Step 4: Install Rapise
-        # The 'run' keyword is the equivalent of 'script'
+        # The 'run' keyword is the equivalent of 'script'.
         - name: Install Rapise
-            run: |
+          run: |
             echo "Installing Rapise..."
             npm install rapise.tgz
 
         # Step 5: Run the Rapise Launcher
         - name: Run Rapise Launcher with Xvfb
-            run: |
+          run: |
             # This entire block is executed within the virtual display environment
             xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" bash <<'EOF'
             
@@ -271,7 +271,7 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
                 echo "--- Rapise execution complete ---"
             
             EOF
-            working-directory: ${{ github.workspace }}
+          working-directory: ${{ github.workspace }}
     ```   
 
 #### Docker
@@ -279,23 +279,23 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
 === "docker-compose.yml"
     ```
     services:
-    rapise-tester:
+      rapise-tester:
         build: .
         volumes:
-        # This single line maps your current project directory on the host ('.')
-        # to the /app directory inside the container.
-        - ./:/app
-        # THIS IS THE FIX: This tells Docker to create an anonymous volume
-        # at /app/node_modules, effectively preserving the one from the image
-        # and preventing the host from overwriting it.
-        - /app/node_modules
+          # This single line maps your current project directory on the host ('.')
+          # to the /app directory inside the container.
+          - ./:/app
+          # THIS IS THE FIX: This tells Docker to create an anonymous volume
+          # at /app/node_modules, effectively preserving the one from the image
+          # and preventing the host from overwriting it.
+          - /app/node_modules
 
     # Add this entire "networks" section at the bottom
     networks:
-    default:
+      default:
         driver: bridge
         driver_opts:
-        com.docker.network.driver.mtu: "1400" # Good starting point for most VPNs
+          com.docker.network.driver.mtu: "1400" # Good starting point for most VPNs
     ```
 === "Dockerfile"
     ```
@@ -349,9 +349,9 @@ Web tests are typically run in headless mode. If a GUI emulation is required (i.
     ```
 === "rapise.tgz"
     ```
-    Should be located in the same directory as Dockerfile.
+    Should be located in the same directory as the Dockerfile.
     ```
 === "RepositoryConnection.xml"
     ```
-    Should be located in the same directory as Dockerfile.
+    Should be located in the same directory as the Dockerfile.
     ```

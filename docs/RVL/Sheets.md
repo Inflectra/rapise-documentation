@@ -1,6 +1,6 @@
 # RVL Sheets
 
-RVL script may contain one or more sheets distributed over one or more workbooks.
+An RVL script may contain one or more sheets distributed across one or more workbooks.
 
 === "Screenshot"
     ![Sheets](./img/Sheets.png)
@@ -13,25 +13,25 @@ RVL script may contain one or more sheets distributed over one or more workbooks
     | ---- | ---- | ------ | ----------- | --------- | --------- | ---------- |
     |      | Action | RVL    | DoPlaySheet | sheetName | string    | Browsers   |
 
-Sheet is an atomic building block for implementing test frameworks and sharing logic.
+A sheet is an atomic building block for implementing test frameworks and sharing logic.
 
-For example, there may be a Sheet called `Login` and it may be re-used by **CreateNewBook**, **CreateExistingBook**  and other test scenarios that require **Login** logic.
+For example, there may be a sheet called `Login` that can be reused by **CreateNewBook**, **CreateExistingBook**, and other test scenarios that require **Login** logic.
 
-Default sheet name is `RVL`. You may rename it. You may add more sheets.
+The default sheet name is `RVL`. You can rename it and add more sheets.
 
-RVL sheet is executable when it have 7 pre-defined [Columns](Columns.md). The workbook may contain both executable and data sheets.
+An RVL sheet is executable when it has 7 predefined [Columns](Columns.md). A workbook may contain both executable and data sheets.
 
 ## Calling Sheets
 
-It is possible to do calls between scripts using [RVL.DoPlayScript](../Libraries/RVL.md#doplayscript) and [RVL.DoPlaySheet](../Libraries/RVL.md#doplaysheet).
+You can make calls between scripts using [RVL.DoPlayScript](../Libraries/RVL.md#doplayscript) and [RVL.DoPlaySheet](../Libraries/RVL.md#doplaysheet).
 
 ## Passing Parameters
 
-It is possible to pass parameters between sheets. See [Passing Input Parameters](RVL_DoPlay.md#passing-input-parameters)
+You can pass parameters between sheets. See [Passing Input Parameters](RVL_DoPlay.md#passing-input-parameters).
 
 ## Passing Maps
 
-You may pass a [Map](Maps.md) between sheets as  [input parameters](RVL_DoPlay.md#passing-input-parameters).
+You can pass a [Map](Maps.md) between sheets as [input parameters](RVL_DoPlay.md#passing-input-parameters).
 
 For example, here we pass a map `FullLoginData`:
 
@@ -76,4 +76,4 @@ as a value to override the map `UserLogins` on the `Login` sheet:
 
 ## RVL File
 
-Default file format for RVL scripts is an Excel workbook. It makes it easier to combine data with script logic. Any RVL file has extension `.rvl.xlsx` and may be open in **MS Excel** directly.
+The default file format for RVL scripts is an Excel workbook, which makes it easier to combine data with script logic. Any RVL file has the `.rvl.xlsx` extension and can be opened directly in **MS Excel**.

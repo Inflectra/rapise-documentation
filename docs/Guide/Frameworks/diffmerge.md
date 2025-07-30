@@ -1,30 +1,30 @@
 # Diff / Merge Tools
 
-Diff and merge tools serve the purpose of examining modifications and resolving inconsistencies.
+Diff and merge tools are used for examining modifications and resolving inconsistencies.
 
-Diff tools come in handy when you have made alterations and wish to compare them with the original, unaltered version.
+Diff tools are useful when you want to compare changes you've made with the original, unaltered version.
 
 ## Rapise Merge
 
-Whenever the [Save to Spira](../spiratest_integration.md#saving-a-test-to-spiratest) button is pressed in Rapise, the tool will examine which files have been modified.
+Whenever the [Save to Spira](../spiratest_integration.md#saving-a-test-to-spiratest) button is pressed in Rapise, the tool examines which files have been modified.
 
 ![Spira Diff Merge](./img/diffmerge_spira_diff_merge.png)
 
-(1) If a file is accompanied by a "Diff..." button, it indicates that the file has been altered compared to the version currently stored in Spira. Clicking the button will...
+(1) If a file has a "Diff..." button, it indicates that the file has been altered compared to the version currently stored in Spira. Clicking this button will...
 
-(2) If a file displays a "Resolve..." button, it signifies a conflict where the file has been modified both locally and remotely in parallel. Clicking the button will prompt the display of a merge conflict resolution dialog.
+(2) If a file displays a "Resolve..." button, it signifies a conflict where the file has been modified both locally and remotely in parallel. Clicking this button will display a merge conflict resolution dialog.
 
 ## Default Diff Tools
 
-Rapise does not have built-in diff/merge tools, except for two specific cases:
+Rapise does not have built-in diff/merge tools, with two exceptions:
 
-1. *RVLMerge* is used to compare and merge `.xlsx` files, including RVL (`.rvl.xlsx`) files.
+1.  *RVLMerge* is used to compare and merge `.xlsx` files, including RVL (`.rvl.xlsx`) files.
 
-2. *sstestmerge* is used for silent 3-way merging of conflicting `.sstest` files.
+2.  *sstestmerge* is used for silent 3-way merging of conflicting `.sstest` files.
 
-For other file types, Rapise relies on the already installed merge tools. There are various options available, both free and paid, and developers often have their preferred choices.
+For other file types, Rapise relies on already installed merge tools. Various options are available, both free and paid, and developers often have their preferred choices.
 
-If Rapise recognizes a specific merge tool, it will utilize it. Currently, Rapise is aware of the following tools, as defined in the `MergeTools.yml` configuration file:
+If Rapise recognizes a specific merge tool, it utilizes it. Currently, Rapise is aware of the following tools, as defined in the `MergeTools.yml` configuration file:
 
 ```yml
 tools:
@@ -108,33 +108,33 @@ tools:
     - '%LocalAppData%\Programs\WinMerge\WinMergeU.exe'
 ```
 
-## Built in Tools
+## Built-in Tools
 
 ### RVL and Spreadsheets
 
-By default, *RVLMerge* is automatically installed. Unless specified otherwise, it will be displayed when you choose to show the diff for an RVL or a spreadsheet.
+By default, *RVLMerge* is automatically installed. Unless specified otherwise, it is displayed when you choose to show the diff for an RVL or a spreadsheet.
 
 ![RVLMerge](./img/diffmerge_rvl_merge.png)
 
 ### Using with Git
 
-You can integrate *RVLMerge* with your current Git diff/merge tool by using its command line interface.
+You can integrate *RVLMerge* with your current Git diff/merge tool using its command line interface.
 
-For performing a diff, you can use the following command:
+To perform a diff, use the following command:
 
 ```cmd
 C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s <src> -d <dst>
 ```
 
-Here, `<src>` represents the path to the unmodified (base or remote) version, and `<dst>` represents the path to the final version, which will also be the target for the merge results.
+Here, `<src>` represents the path to the unmodified (base or remote) version, and `<dst>` represents the path to the final version, which will also be the target for merge results.
 
-For example, in [TortoiseGit](https://tortoisegit.org/), the diff command would look like this:
+For example, in [TortoiseGit](https://tortoisegit.org/), the diff command looks like this:
 
 ```cmd
 C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s %base -d %mine
 ```
 
-Similarly, for performing a merge, you can use the following command:
+Similarly, to perform a merge, use the following command:
 
 ```cmd
 C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s %theirs -d %mine
@@ -142,9 +142,9 @@ C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s %theirs -d %mine
 
 ### Sstest
 
-The merging of `.sstest` files is fully automatic (usually it is `Test.sstest` for a Test Case or `Framework.sstest` for a framework root). So once you hit *Merge...*, no UI is shown and the merged file is automatically generated.
+The merging of `.sstest` files is fully automatic (typically `Test.sstest` for a Test Case or `Framework.sstest` for a framework root). So once you click *Merge...*, no UI is shown, and the merged file is automatically generated.
 
-If you want to enable automatic `.sstest` merge with your git client, you may use it like that:
+To enable automatic `.sstest` merge with your Git client, you can use it as follows:
 
 ```cmd
 C:\Program Files (x86)\Inflectra\Rapise\Extensions\DiffMerge\Tools\SstestMerge.cmd -s %theirs -d %mine
@@ -152,15 +152,15 @@ C:\Program Files (x86)\Inflectra\Rapise\Extensions\DiffMerge\Tools\SstestMerge.c
 
 ## Adding a Custom Diff Tool
 
-You have the option to incorporate additional known diff tools into Rapise. If your team utilizes multiple tools, that's perfectly fine. You can define all of them together, and Rapise will select the first one it finds. To achieve this, you need to create a file named MergeTools.yml in one of two locations:
+You can incorporate additional known diff tools into Rapise. If your team uses multiple tools, that's perfectly fine. You can define all of them together, and Rapise selects the first one it finds. To do this, you need to create a file named `MergeTools.yml` in one of two locations:
 
-In the root directory of your testing framework, such as `C:\Users\UserName\Documents\My Rapise Tests\LIS\MergeTools.yml`. When defined in this location, it becomes specific to the testing framework. Loading it from Spira or Git will provide the associated diff definitions.
+In the root directory of your testing framework, such as `C:\Users\UserName\Documents\My Rapise Tests\LIS\MergeTools.yml`. When defined in this location, it becomes specific to the testing framework. Loading it from Spira or Git provides the associated diff definitions.
 
-In the `c:\Users\Public\Documents\Rapise\` directory. When defined here, it applies to all tests and frameworks on the given computer.
+In the `C:\Users\Public\Documents\Rapise\` directory. When defined here, it applies to all tests and frameworks on the given computer.
 
 If you have a `MergeTools.yml` file in both locations, the one in the framework directory takes precedence.
 
-The `MergeTools.yml` file follows the following format:
+The `MergeTools.yml` file follows this format:
 
 ```yml
 %YAML 1.2

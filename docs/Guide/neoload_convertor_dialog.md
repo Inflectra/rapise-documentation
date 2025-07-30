@@ -1,4 +1,4 @@
-# NeoLoad Convertor Dialog
+# NeoLoad Converter Dialog
 
 !!! important
     NeoLoad integration has been removed in Rapise 7.0.
@@ -7,39 +7,39 @@
 
 ## Purpose
 
-The purpose of this dialog is to allow you to convert a functional test script from Rapise into a protocol-based performance script that can be executed using the [NeoLoad](neoload_integration.md) performance testing tool from Neotys.
+This dialog enables the conversion of a functional test script from Rapise into a protocol-based performance script executable by the [NeoLoad](neoload_integration.md) performance testing tool from Neotys.
 
 ## How to Open
 
-Use menu `Tools > Convert to Neoload`.
+To open this dialog, navigate to `Tools > Convert to Neoload`.
 
 ## Virtual User
 
-In this field, you need to enter the name of the virtual user to create in NeoLoad:
+In this field, specify the name of the virtual user to be created in NeoLoad:
 
-- The default value is "VirtualUser"
-- If the name is already used, then it is automatically renamed using “_X” suffix, with X an integer incremented.
-- If the name has invalid characters then they will be escaped as an underscore (_).
+-   The default value is "VirtualUser".
+-   If the name is already in use, it is automatically renamed by appending the suffix “_X”, where X is an incrementing integer.
+-   If the name contains invalid characters, they are escaped as an underscore (_).
 
 ## Base Container
 
-This specifies the base container  where we want to start the recording (Init / Actions / End)
+This specifies the base container where recording should start (Init / Actions / End).
 
-- The default value is Actions.
+-   The default value is Actions.
 
 ## Container/Business Transaction
 
-This is used to specify the current recording container in NeoLoad. It is just based on a single level. There is no way to specify a tree of containers.
+This specifies the current recording container in NeoLoad. It is limited to a single level; it does not support specifying a tree of containers.
 
-- The default is no container.
-- If the name is already used then it will be made unique by adding \_1, \_2, etc.
-- If the name is empty then no container will be used.
+-   By default, no container is used.
+-   If the name is already in use, it is made unique by appending `_1`, `_2`, and so on.
+-   If the name is left empty, no container will be used.
 
 ## Detect Dynamic Parameters
 
-When you check this box, Rapise tells NeoLoad to scan the protocol traffic to look for known dynamic parameters (e.g. Session IDs, ASP.NET ViewState) that change on each HTTP request and need to be parameterized by NeoLoad to ensure the performance scripts are robust and well-defined (v.s. having a hardcoded Session ID).
+When this box is checked, Rapise instructs NeoLoad to scan the protocol traffic for known dynamic parameters (e.g., Session IDs, ASP.NET ViewState) that change with each HTTP request. These parameters must be parameterized by NeoLoad to ensure the performance scripts are robust and well-defined, avoiding hardcoded Session IDs.
 
 ## Actions
 
-- **Convert** will start the Rapise &gt; NeoLoad test conversion process
-- **Cancel** will abort the conversion and return you to Rapise
+-   **Convert** initiates the Rapise &gt; NeoLoad test conversion process.
+-   **Cancel** cancels the conversion and returns you to Rapise.

@@ -1,8 +1,8 @@
 # Assertions
 
-*Assert* is an essential operation for testing and validation. RVL provides special structure for it to make it more readable.
+*Assert* is an essential operation for testing and validation. RVL provides a special structure for it to make it more readable.
 
-Assertion has 2 parts: 1st row is Assert containing assertion message and then goes [Condition](Conditions.md):
+An assertion has two parts: the first row is Assert, which contains the assertion message, followed by the [Condition](Conditions.md):
 
 | Flow | Type      | Object | Action                | ParamName | ParamType | ParamValue |
 | ---- | --------- | ------ | --------------------- | --------- | --------- | ---------- |
@@ -12,9 +12,9 @@ Assertion has 2 parts: 1st row is Assert containing assertion message and then g
 |      | Param     |        |                       | param2    |           |            |
 
 
-Assertion first line is always the same except the *Param Value*.
+The first line of an assertion is always the same, except for the *Param Value*.
 
-In RVL Action always refers to an operation performed with object.
+In RVL, Action always refers to an operation performed on an object.
 
 | Flow | Type      | Object | Action         | ParamName | ParamType | ParamValue                                   |
 | ---- | --------- | ------ | -------------- | --------- | --------- | -------------------------------------------- |
@@ -26,7 +26,7 @@ In RVL Action always refers to an operation performed with object.
 
 ## Examples
 
-Compare object property *InnerText* with expected value:
+Compare an object's *InnerText* property with an expected value:
 
 === "Screenshot"
     ![Assertion](./img/Assertion_GetInnerTextCompare.png)
@@ -38,7 +38,7 @@ Compare object property *InnerText* with expected value:
     |      | Condition |               | output1 == param2 |           |           |                                      |
     |      | Param     |               |                   | param2    | string    | Sister Carrie                        |
 
-Check if object exists on the screen:
+Check if an object exists on the screen:
 
 === "Screenshot"
     ![Assertion object exists](./img/Assertion_ObjectExists.png)
@@ -52,7 +52,7 @@ Check if object exists on the screen:
     |      | Condition                                |        | output1 IsSet |           |           |                                          |
     
 
-Check if variable `Age` has value '74':
+Check if the variable `Age` has the value '74':
 
 === "Screenshot"
     ![Assertion check variable value](./img/Assertion_CheckVariableValue.png)
@@ -64,4 +64,3 @@ Check if variable `Age` has value '74':
     |      | Param                                       |        |                  | param1    | variable  | Age               |
     |      | Condition                                   |        | param1 == param2 |           |           |                   |
     |      | Param                                       |        |                  | param2    | string    | 74                |
-    

@@ -8,19 +8,19 @@ Use the **Verify Object Properties** dialog during [recording](recording.md) to 
 
 ## How to Open
 
-1. First, open the [Recording Activity Dialog](recording_activity_dialog.md).
+1. Open the [Recording Activity Dialog](recording_activity_dialog.md).
 2. Position the mouse over an object and press `Ctrl+1`, or
 3. Press the `Verify` button and then click the target object with the mouse cursor.
 
 ## Create a Checkpoint
 
-Your checkpoint will be associated with a particular object.  That object's properties will be listed in the **Verify Object Properties** dialog.  Check those properties that you wish to verify during [playback](playback.md).  Enter expected values for the selected properties in the **Value** column. 
+Your checkpoint will be associated with a particular object. The object's properties will be listed in the **Verify Object Properties** dialog. Select the properties you wish to verify during [playback](playback.md). Enter expected values for the selected properties in the **Value** column. 
 
 > Note: The **Bitmap** and **BWBitmap** properties are images of the object.
 
 ![verify object property, height](./img/verify_object_properties2.png)
 
-Press the `OK` button.  The **Verify Object Properties** dialog will close, and the [Recording Activity](recording_activity_dialog.md) dialog will contain a new **Verify** action:
+Press the `OK` button. The **Verify Object Properties** dialog will close, and the [Recording Activity](recording_activity_dialog.md) dialog will display a new **Verify** action:
 
 ![verify object properties recording activity](./img/verify_object_properties3.png)
 
@@ -35,11 +35,11 @@ Or, in JavaScript mode:
 
 ## Check Object Exists
 
-Since Rapise 6.6 the **Verify Object Properties** dialog shows `Exists` property. It adds [Global.DoWaitFor](../Libraries/Global.md#dowaitfor) action to the recording.
+Starting with Rapise 6.6, the **Verify Object Properties** dialog includes the `Exists` property. It adds a [Global.DoWaitFor](../Libraries/Global.md#dowaitfor) action to the recording.
 
 ## Check Object Visible
 
-Since Rapise 6.6 the **Verify Object Properties** dialog shows `Visible` property. It checks that the object is visible on screen.
+Starting with Rapise 6.6, the **Verify Object Properties** dialog includes the `Visible` property. This verifies that the object is visible on screen.
 
 ## See Also
 

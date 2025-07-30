@@ -2,7 +2,7 @@
 
 ## Purpose
 
-You can create objects and invoke methods from both managed and unmanaged dlls.
+You can create objects and invoke methods from both managed and unmanaged DLLs.
 
 ## Usage
 
@@ -24,7 +24,7 @@ The **Register** and **ShellExecute** methods of the DynamicWrapper object can b
 var UserWrap = WScript.CreateObject("DynamicWrapper");
 UserWrap.Register("shell32.dll", "ShellExecute", "I=hssssl", "f=s", "r=l");
 UserWrap.Register("USER32.DLL", "MessageBoxA", "I=HsSu", "f=s", "R=l");
-UserWrap.MessageBoxA( null, "" + elapsed, "Time Elapsed:",  0x30 );
+UserWrap.MessageBoxA( null, "" + elapsed, "Time Elapsed:",  0x30 );
 ```
 
 ## Test Samples

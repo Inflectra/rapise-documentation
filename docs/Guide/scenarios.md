@@ -2,15 +2,15 @@
 
 ## Purpose
 
-> Note: Starting from Rapise 8.0, it is recommended to utilize [Test Cases](Frameworks/frameworks.md#test-cases) and [Modules / Page Objects](Frameworks/pageobjects.md) for creating scenarios and maintaining reusable building blocks respectively.
+> Note: As of Rapise 8.0, it is recommended to use [Test Cases](Frameworks/frameworks.md#test-cases) and [Modules / Page Objects](Frameworks/pageobjects.md) for creating scenarios and maintaining reusable building blocks, respectively.
 
-Scenarios serve as reusable building blocks that can be incorporated into your test scripts. They offer a way to structure and organize your tests, making them more modular and maintainable. Scenarios can be included in both fully automated test scripts and predominantly [manual test script](semi_manual_testing.md).
+Scenarios serve as reusable building blocks that can be incorporated into your test scripts. They provide a way to structure and organize your tests, making them more modular and maintainable. Scenarios can be included in both fully automated test scripts and predominantly [manual test scripts](semi_manual_testing.md).
 
-Another valuable application of scenarios is in [Web Service](web_service_testing.md) test recording. When you record script steps for a Web Service test and click on [Create Script](tutorial_web_services_rest.md#3a-generating-rest-test-scripts), the recorded steps in JavaScript form are appended to the `Test()` function. At this point, you can wrap them into separate scenarios using the method described in this chapter.
+Another valuable application of scenarios is in [Web Service](web_service_testing.md) test recording. When you record script steps for a Web Service test and click on [Create Script](tutorial_web_services_rest.md#3a-generating-rest-test-scripts), the recorded JavaScript steps are appended to the `Test()` function. At this point, you can wrap them into separate scenarios using the method described in this chapter.
 
 ## Creating Scenarios
 
-Let's say for example that you have the following Rapise test that was recorded from our sample library information web application:
+For example, consider the following Rapise test, recorded from our sample library information web application:
 <!-- /* cSpell:disable */ -->
 ```javascript
 function Test()
@@ -40,21 +40,21 @@ function Test()
 }
 ```
 <!-- /* cSpell:enable */ -->
-If we want to break up this monolithic test into individual functions (called scenarios), simply highlight the test you want to extract (for example the Login steps):
+To break up this monolithic test into individual functions (scenarios), highlight the desired section (for example, the Login steps):
 
 ![scenarios_1](./img/scenarios1.png)
 
-Then right-click on the section and choose the option to **Extract User Scenario**:
+Then right-click on the section and choose **Extract User Scenario**:
 
 ![scenarios_2](./img/scenarios2.png)
 
-Now in the dialog box that appears, give the scenario a name (e.g. Login):
+In the dialog box that appears, give the scenario a name (e.g., 'Login'):
 
 ![scenarios\_3](./img/scenarios3.png)
 
 This will extract the highlighted section into its own scenario.
 
-In `Main.js` we get
+The `Main.js` file will be updated as follows:
 
 ```javascript
 function Test()
@@ -79,7 +79,7 @@ function Test()
 }
 ```
 
-In `User.js` we get
+The `User.js` file will contain the following:
 <!-- /* cSpell:disable */ -->
 ```javascript
 /** @scenario Login */
@@ -98,7 +98,7 @@ function Login()
 <!-- /* cSpell:enable */ -->
 ## Usage in Automated Tests
 
-When you create a new test in Rapise it will contain a `Main.js` file that contains the main test code and a `User`.js file that contains any user-defined functions (called Scenarios). For example in the following test:
+When you create a new test in Rapise, it includes a `Main.js` file for the main test code and a `User.js` file for user-defined functions (scenarios). For example, in the following test:
 
 ```javascript
 function Test()
@@ -156,15 +156,15 @@ function CreateBook(name, author, genre)
 }
 ```
 <!-- /* cSpell:enable */ -->
-If you go to the [Object Tree](object_tree.md) you will see these user functions/scenarios displayed:
+In the [Object Tree](object_tree.md), you will see these user functions/scenarios displayed:
 
 ![object\_tree\_user\_functions](./img/scenarios4.png)
 
-You can then drag and drop those into the test script editor to include in the main test script.
+You can then drag and drop them into the test script editor to include in the main test script.
 
 ## Usage in Manual Tests
 
-When you create a new test in Rapise it will contain a `Main.js` file that contains the main test code and a `User.js` file that contains any user-defined functions (called Scenarios). For example you may have the following scenario defined in the `User.js` file:
+When you create a new test in Rapise, it includes a `Main.js` file for the main test code and a `User.js` file for user-defined functions (scenarios). For example, you may have the following scenario defined in the `User.js` file:
 <!-- /* cSpell:disable */ -->
 ```javascript
 /** @scenario Login */
@@ -181,17 +181,17 @@ function Login()
 }
 ```
 <!-- /* cSpell:enable */ -->
-You can now include that in a [manual test step](semi_manual_testing.md), by simply making the test step description start with an "@" symbol to denote that it is a scenario:
+You can now include it in a [manual test step](semi_manual_testing.md) by simply prefixing the test step description with an "@" symbol to denote that it is a scenario:
 
 ```javascript
 @Login();
 ```
 
-Then when the manual test is executed, that one step will be passed to the scripting engine for automated execution.
+Then, when the manual test is executed, that step will be passed to the scripting engine for automated execution.
 
 ## Example
 
-If you open the **CreateNewBook** sample (located in `C:\\Users\\Public\\Documents\\Rapise\\Samples\\CreateNewBook`) you will see a test that has multiple scenarios.
+If you open the **CreateNewBook** sample (located at `C:\\Users\\Public\\Documents\\Rapise\\Samples\\CreateNewBook`), you will see a test that has multiple scenarios.
 
 ## See Also
 

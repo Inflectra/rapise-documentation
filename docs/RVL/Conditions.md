@@ -1,15 +1,15 @@
 # Conditions
 
-Conditions used in `If` and `Assert` statements. 
+Conditions are used in `If` and `Assert` statements.
 
 ## Types of Conditions
 
-Condition accepts one or two [Params](Params.md). 
+A condition accepts one or two [Params](Params.md).
 
-1. There might be just one *Param*. Such condition is called *unary*, for example `param1 is true` or `output1 is true`.
-2. There might be second *Param*. Such condition is called *binary*, for example `param1 == param2`. 
-3. Condition parameter may be either *Param* or *Action* output.
-4. *Param* is some fixed *value*, *variable* or *expression*.
+1.  A condition may have just one *Param*. This is called a *unary* condition, for example, `param1 is true` or `output1 is true`.
+2.  A condition may have a second *Param*. This is called a *binary* condition, for example, `param1 == param2`.
+3.  A condition parameter may be either a *Param* or an *Action* output.
+4.  A *Param* is a fixed *value*, *variable*, or *expression*.
 
 Binary condition with two *Param*s named `param1` and `param2`:
 
@@ -55,67 +55,67 @@ Unary condition with *Action* `output1`:
 
 | *Caption*          | *Description*                                                      |
 | ------------------ | ------------------------------------------------------------------ |
-| `param1` IsTrue    | Check if `param1` is true                                          |
-| `param1` IsFalse   | Check if `param1` is false                                         |
-| `param1` IsNull    | Check if `param1` is null                                          |
-| `param1` IsNotNull | Check if `param1` is NOT null                                      |
-| `param1` IsSet     | Check if `param1` is NOT null, false, 0, empty string or undefined |
-| `param1` IsNotSet  | Check if `param1` is null, 0, false, empty string or undefined     |
+| `param1` IsTrue    | Checks if `param1` is true.                                        |
+| `param1` IsFalse   | Checks if `param1` is false.                                       |
+| `param1` IsNull    | Checks if `param1` is null.                                        |
+| `param1` IsNotNull | Checks if `param1` is NOT null.                                    |
+| `param1` IsSet     | Checks if `param1` is NOT null, false, 0, an empty string, or undefined. |
+| `param1` IsNotSet  | Checks if `param1` is null, 0, false, an empty string, or undefined.   |
 
 ### Unary conditions with *Action*
 
 | *Caption*           | *Description*                                                       |
 | ------------------- | ------------------------------------------------------------------- |
-| `output1` IsTrue    | Check if `output1` is true                                          |
-| `output1` IsFalse   | Check if `output1` is false                                         |
-| `output1` IsNull    | Check if `output1` is null                                          |
-| `output1` IsNotNull | Check if `output1` is NOT null                                      |
-| `output1` IsSet     | Check if `output1` is NOT null, false, 0, empty string or undefined |
-| `output1` IsNotSet  | Check if `output1` is null, 0, false, empty string or undefined     |
+| `output1` IsTrue    | Checks if `output1` is true.                                        |
+| `output1` IsFalse   | Checks if `output1` is false.                                       |
+| `output1` IsNull    | Checks if `output1` is null.                                        |
+| `output1` IsNotNull | Checks if `output1` is NOT null.                                    |
+| `output1` IsSet     | Checks if `output1` is NOT null, false, 0, an empty string, or undefined. |
+| `output1` IsNotSet  | Checks if `output1` is null, 0, false, an empty string, or undefined.   |
 
 ### Binary conditions with *Param*s
 
-| *Caption*                   | *Description*                                       |
-| --------------------------- | --------------------------------------------------- |
-| `param1` == `param2`        | Check if `param1` equals to `param2`                |
-| `param1` != `param2`        | Check if `param1` NOT equal to `param2`             |
-| `param1` > `param2`         | Check if `param1` is more than `param2`             |
-| `param1` >= `param2`        | Check if `param1` is more or equal to `param2`      |
-| `param1` <= `param2`        | Check if `param1` is less or equal to `param2`      |
-| `param1` < `param2`         | Check if `param1` is less than `param2`             |
-| `param1` contains `param2`  | Check if `param1` contains `param2` as substring    |
-| CmpImage `param1`, `param2` | Compare 1st image and image represented by `param2` |
+| *Caption*                   | *Description*                                                    |
+| --------------------------- | ---------------------------------------------------------------- |
+| `param1` == `param2`        | Checks if `param1` is equal to `param2`.                         |
+| `param1` != `param2`        | Checks if `param1` is NOT equal to `param2`.                     |
+| `param1` > `param2`         | Checks if `param1` is greater than `param2`.                     |
+| `param1` >= `param2`        | Checks if `param1` is greater than or equal to `param2`.         |
+| `param1` <= `param2`        | Checks if `param1` is less than or equal to `param2`.            |
+| `param1` < `param2`         | Checks if `param1` is less than `param2`.                        |
+| `param1` contains `param2`  | Checks if `param1` contains `param2` as a substring.             |
+| CmpImage `param1`, `param2` | Compares the first image with the image represented by `param2`. |
 
 ### Binary conditions with *Action* and *Param*
 
-| *Caption*                    | *Description*                                       |
-| ---------------------------- | --------------------------------------------------- |
-| `output1` == `param2`        | Check if `output1` equals to `param2`               |
-| `output1` != `param2`        | Check if `output1` NOT equal to `param2`            |
-| `output1` > `param2`         | Check if `output1` is more than `param2`            |
-| `output1` >= `param2`        | Check if `output1` is more or equal to `param2`     |
-| `output1` <= `param2`        | Check if `output1` is less or equal to `param2`     |
-| `output1` < `param2`         | Check if `output1` is less than `param2`            |
-| `output1` contains `param2`  | Check if `output1` contains `param2` as substring   |
-| CmpImage `output1`, `param2` | Compare 1st image and image represented by `param2` |
+| *Caption*                    | *Description*                                                    |
+| ---------------------------- | ---------------------------------------------------------------- |
+| `output1` == `param2`        | Checks if `output1` is equal to `param2`.                        |
+| `output1` != `param2`        | Checks if `output1` is NOT equal to `param2`.                    |
+| `output1` > `param2`         | Checks if `output1` is greater than `param2`.                    |
+| `output1` >= `param2`        | Checks if `output1` is greater than or equal to `param2`.        |
+| `output1` <= `param2`        | Checks if `output1` is less than or equal to `param2`.           |
+| `output1` < `param2`         | Checks if `output1` is less than `param2`.                       |
+| `output1` contains `param2`  | Checks if `output1` contains `param2` as a substring.            |
+| CmpImage `output1`, `param2` | Compares the first image with the image represented by `param2`. |
 
 ### Binary conditions with *Action*s
 
-| *Caption*                     | *Description*                                        |
-| ----------------------------- | ---------------------------------------------------- |
-| `output1` == `output2`        | Check if `output1` equals to `output2`               |
-| `output1` != `output2`        | Check if `output1` NOT equal to `output2`            |
-| `output1` > `output2`         | Check if `output1` is more than `output2`            |
-| `output1` >= `output2`        | Check if `output1` is more or equal to `output2`     |
-| `output1` <= `output2`        | Check if `output1` is less or equal to `output2`     |
-| `output1` < `output2`         | Check if `output1` is less than `output2`            |
-| `output1` contains `output2`  | Check if `output1` contains `output2` as substring   |
-| CmpImage `output1`, `output2` | Compare 1st image and image represented by `output2` |
+| *Caption*                     | *Description*                                                     |
+| ----------------------------- | ----------------------------------------------------------------- |
+| `output1` == `output2`        | Checks if `output1` is equal to `output2`.                        |
+| `output1` != `output2`        | Checks if `output1` is NOT equal to `output2`.                    |
+| `output1` > `output2`         | Checks if `output1` is greater than `output2`.                    |
+| `output1` >= `output2`        | Checks if `output1` is greater than or equal to `output2`.        |
+| `output1` <= `output2`        | Checks if `output1` is less than or equal to `output2`.           |
+| `output1` < `output2`         | Checks if `output1` is less than `output2`.                       |
+| `output1` contains `output2`  | Checks if `output1` contains `output2` as a substring.            |
+| CmpImage `output1`, `output2` | Compares the first image with the image represented by `output2`. |
 
 
 ## *And*, *Or* Conditions
 
-It is possible to make more complex conditions by using *And* and *Or* keyword in the *Flow* column.
+It is possible to create more complex conditions by using the *And* and *Or* keywords in the *Flow* column.
 
 | Flow    | Type      | Object | Action           | ParamName | ParamType  | ParamValue |
 | ------- | --------- | ------ | ---------------- | --------- | ---------- | ---------- |
@@ -126,7 +126,7 @@ It is possible to make more complex conditions by using *And* and *Or* keyword i
 | #       | If Block  |        |                  |           |            |            |
 | End     | of If     |        |                  |           |            |            |
 
-This piece forms a condition checking that `Result1` is false AND `Result2` is true at the same time.
+This example forms a condition that checks if `Result1` is false AND `Result2` is true.
 
 | Flow   | Type      | Object   | Action            | ParamName | ParamType  | ParamValue |
 | ------ | --------- | -------- | ----------------- | --------- | ---------- | ---------- |
@@ -137,15 +137,15 @@ This piece forms a condition checking that `Result1` is false AND `Result2` is t
 | #      | If Block  |          |                   |           |            |            |
 | End    | of If     |          |                   |           |            |            |
 
-This piece forms a condition checking that *MyButton* is Enabled OR `Result2` is true at the same time.
+This example forms a condition that checks if *MyButton* is not enabled OR `Result1` is true.
 
 ## Examples
 
-Condition is never used alone. You may find examples of conditions in chapters devoted to [Assertions](Assertions.md) and [If-Then-Else](IfElse.md).
+A condition is never used alone. You can find examples of conditions in the chapters on [Assertions](Assertions.md) and [If-Then-Else](IfElse.md).
 
 ## Short Condition Syntax
 
-All binary conditions with `param2` take 3 rows. Sometimes it is more convenient to use shorter 2 row syntax where `param2` value is specified on the same row as the condition itself:
+All binary conditions with `param2` take 3 rows. Sometimes it is more convenient to use a shorter, 2-row syntax where the `param2` value is specified on the same row as the condition itself:
 
 | Flow | Type      | Object | Action             | ParamName  | ParamType | ParamValue |
 | ---- | --------- | ------ | ------------------ | ---------- | --------- | ---------- |
@@ -153,7 +153,7 @@ All binary conditions with `param2` take 3 rows. Sometimes it is more convenient
 |      | Condition |        | *param1 == param2* | **param2** | ...       | ...        |
 |      |           |        |                    |            |           |            |
 
-Here is the same condition presented in 3 rows (default) and 2 rows (short) form:
+Here is the same condition presented in 3-row (default) and 2-row (short) forms:
 
 === "Screenshot"
     ![2 row condition syntax](./img/Conditions_2Row.png)
@@ -172,7 +172,7 @@ Here is the same condition presented in 3 rows (default) and 2 rows (short) form
     | End  | of If                    |        |                  |           |           |            |
     
 
-2 rows condition syntax together with [If-Else](IfElse.md) may be used to mimic a `switch` statement:
+The 2-row condition syntax, together with [If-Else](IfElse.md), can be used to mimic a `switch` statement:
 
 === "Screenshot"
     ![IfElse_Switch](./img/Conditions_IfElseSwitch.png)
@@ -198,4 +198,4 @@ Here is the same condition presented in 3 rows (default) and 2 rows (short) form
     | #      | Case 'Right'                        |        |                  |           |           |            |
     | End    | of ElseIf                           |        |                  |           |           |            |
 
-If there is an `Action` result used instead of `param` then it is recommended to first save it to the [Variable](Variables.md).
+When using an `Action` result instead of a `param`, it is recommended to first save the result to a [Variable](Variables.md).

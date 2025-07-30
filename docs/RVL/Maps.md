@@ -1,8 +1,8 @@
 # Maps
 
-A *Map* is designed to be an easy way to define tables of data. Items in the map may be accessed by name (if defined) or by index.
+A *Map* is an easy way to define tables of data. Items in the map may be accessed by name (if defined) or by index.
 
-The indexed dimensions in the map may also be iterated by the [Loop][Loops.md] function, thus making it useful feature for Data-Driven Testing.
+The indexed dimensions in the map can also be iterated over using the [Loop][Loops.md] function, making it a useful feature for Data-Driven Testing.
 
 === "Screenshot"
     ![Map](./img/Maps_MapSample.png)
@@ -15,11 +15,11 @@ The indexed dimensions in the map may also be iterated by the [Loop][Loops.md] f
     |      | Sarah     | pass2        |        |           |           |            |
     | End  | of Map    |              |        |           |           |            |
 
-An RVL script has at least 7 [columns](Columns.md). However the *Map* may take as many columns as needed.
+An RVL script has at least 7 [columns](Columns.md). However, a *Map* may take as many columns as needed.
 
 ## Map Definition
 
-Typical declaration of map looks like:
+A typical map declaration looks like this:
 
 | Flow  | Type      | Object      | Action | ParamName | ParamType | ParamValue |
 | ----- | --------- | ----------- | ------ | --------- | --------- | ---------- |
@@ -27,11 +27,11 @@ Typical declaration of map looks like:
 | ...   | ...       | ...         |        |           |           |            |
 | *End* |           |             |        |           |           |            |
 
-Where `MapType` is either inplace: *Table*, *Rows*, *Columns*, or external: *Range* or *Database*.
+Where `MapType` is either in-place (*Table*, *Rows*, *Columns*) or external (*Range* or *Database*).
 
 ### In-place Maps
 
-In-place map data is defined right in the RVL script. In-place map rows may be selected using *This* flow or skipped with a [Comment](Comments.md). So in-place maps serve as a part of the executable script.
+In-place map data is defined directly in the RVL script. Rows in an in-place map may be selected using the *This* flow or skipped using a [Comment](Comments.md). Therefore, in-place maps serve as part of the executable script.
 
 * *Table*
 * *Rows*
@@ -42,11 +42,11 @@ In-place map data is defined right in the RVL script. In-place map rows may be s
 * *Range*
 * *Database*
 
-External maps are defined in an external spreadsheet, file or a database.
+External maps are defined in an external spreadsheet, file, or database.
 
 ## Using Maps
 
-Once map is defined it may be used as a regular [Object](../Libraries/Map.md). 
+Once a map is defined, it may be used as a regular [Object](../Libraries/Map.md).
 
 === "Screenshot"
     ![Map as Object](./img/Maps_MapAsObject.png)
@@ -60,17 +60,17 @@ Once map is defined it may be used as a regular [Object](../Libraries/Map.md).
     | End  | of Map                                   |          |              |           |           |            |
     | #    | Move to next sequential row in Login map |          |              |           |           |            |
     |      | Action                                   | Login    | DoSequential |           |           |            |
-    
+
 
 ### Reading in a Loop
 
-See [Loops](Loops.md#Map) part for `Map` type of loops.
+See the [Loops](Loops.md#Map) section for `Map` type loops.
 
-## Maps Types
+## Map Types
 
 ### Rows Map
 
-A `Rows` Map is the most useful for data feeds. Each of the set of values is a row in a table that look like:
+A `Rows` Map is most useful for data feeds. Each set of values is a row in a table that looks like this:
 
 | Flow  | Type     | Object        | Action   | ParamName | ParamType | ParamValue |
 | ----- | -------- | ------------- | -------- | --------- | --------- | ---------- |
@@ -92,9 +92,9 @@ A `Rows` Map is the most useful for data feeds. Each of the set of values is a r
 |            | ...       |               |          |           |           |            |
 | *End*      |           |               |          |           |           |            |
 
-`Rows` are designed to be iterated in a [Loop](Loops.md)
+`Rows` are designed to be iterated over in a [Loop](Loops.md).
 
-In real example it looks like this:
+A real example looks like this:
 
 === "Screenshot"
     ![Map](./img/Maps_This.png)
@@ -110,13 +110,13 @@ In real example it looks like this:
     |      | John      | testpass     |        |           |           |            |
     |      | Fred      | testpass     |        |           |           |            |
     | End  |           |              |        |           |           |            |
-    
+
 
 [Comments](Comments.md) may also be used to skip specific rows or row sets.
 
 ### Columns Map
 
-A `Columns` Map is a convenient way for representing data when you have many options combined in few sets. 
+A `Columns` Map is a convenient way to represent data when you have many options combined into a few sets.
 
 | Flow  | Type      | Object        | Action | ParamName | ParamType | ParamValue |
 | ----- | --------- | ------------- | ------ | --------- | --------- | ---------- |
@@ -126,7 +126,7 @@ A `Columns` Map is a convenient way for representing data when you have many opt
 |       | **Row3**  | ...           |        |           |           |            |
 | *End* |           |               |        |           |           |            |
 
-The same may be represented as `Rows` but would require many columns and sometimes it is harder to read. So columns is ideal for storing configuration structures:
+The same data could be represented using `Rows`, but that would require many columns and would sometimes be harder to read. Therefore, `Columns` is ideal for storing configuration structures:
 
 === "Screenshot"
     ![Columns](./img/Maps_Columns.png)
@@ -142,11 +142,11 @@ The same may be represented as `Rows` but would require many columns and sometim
     | End  |          |                        |        |           |           |            |
     
 
-When a `Columns` Map is used in the Loop, then the iteration is performed through the columns and addresses the rows by name within the loop. I.e. the 1st iteration chooses 1st column, 2nd goes to 2nd column and so on.
+When a `Columns` Map is used in a Loop, the iteration is performed through the columns, and the rows are addressed by name within the loop. I.e., the first iteration chooses the first column, the second iteration chooses the second column, and so on.
 
 ### Table Map
 
-A Table map has both columns and rows named.
+A `Table` map has both named columns and named rows.
 
 | Flow  | Type     | Object        | Action   | ParamName | ParamType | ParamValue |
 | ----- | -------- | ------------- | -------- | --------- | --------- | ---------- |
@@ -173,9 +173,9 @@ A Table map has both columns and rows named.
     |      |          |                        |                        |                    |           |            |
     
 
-When a `Table` Map is used in the Loop, then the iteration is performed through the columns and addresses the rows by name within the loop. I.e. 1st iteration chooses 1st column, 2nd goes to 2nd column and so on.
+When a `Table` Map is used in a Loop, the iteration is performed through the columns, and the rows are addressed by name within the loop. I.e., the first iteration chooses the first column, the second iteration chooses the second column, and so on.
 
-It is convenient to use a `Table` Map when you have several columns and many rows so it perfectly fits into the screen. For example you may have several alternative configuration sections and want to use them depending on the situation. In the example below we have several sites (Testing, QA, Prod) each having own Url, Login etc. So we want to quickly switch between sites when working with test.
+Using a `Table` Map is convenient when you have several columns and many rows, as it fits well on the screen. For example, you may have several alternative configuration sections that you want to use depending on the situation. In the example below, we have several sites (Testing, QA, Prod), each with its own URL, Login, etc. This allows us to quickly switch between sites when working with the test.
 
 === "Screenshot"
     ![Table Config Columns](./img/Maps_TableColumns.png)
@@ -195,7 +195,7 @@ It is convenient to use a `Table` Map when you have several columns and many row
 
 ### Range Map
 
-`Range` map contains no in-place data, but defines a region in the external spreadsheet to read information from.
+A `Range` map contains no in-place data; instead, it defines a region in an external spreadsheet to read information from.
 
 === "Screenshot"
     ![Range Map](./img/Maps_Range.png)
@@ -213,19 +213,19 @@ It is convenient to use a `Table` Map when you have several columns and many row
 
 A `Range` map definition contains a number of required parameters:
 
-* *fileName* Path to file containing data.  It may point to .xls, .xlsx or .csv file. If when it is empty we assume that data is stored in the same .rvl.xls spreadsheet as the script.
-* *sheetName* Excel Sheet name. May be empty for .csv spreadsheets.
-* *fromRow* 0-based index of the first row containing data. Usually first row is assigned as a header containing column names.
-* *fromCol* 0-based index of the first column containing data.
-* *toRow* final row index. If set to -1 then final row is detected automatically (as last row containing some data in the 1st column)
-* *toCol* final column index. If set to -1 then final column is detected automatically as last column containing data in the 1st row.
+* *fileName* The path to the file containing data. It may point to an .xls, .xlsx, or .csv file. If it is empty, the data is assumed to be stored in the same .rvl.xls spreadsheet as the script.
+* *sheetName* The Excel Sheet name. May be empty for .csv spreadsheets.
+* *fromRow* The 0-based index of the first row containing data. Usually, the first row is a header containing column names.
+* *fromCol* The 0-based index of the first column containing data.
+* *toRow* The final row index. If set to -1, the final row is detected automatically (as the last row containing data in the first column).
+* *toCol* The final column index. If set to -1, the final column is detected automatically as the last column containing data in the first row.
 
-Also there are a hidden parameters:
+There are also hidden parameters:
 
-* *chooseRow* select rows with matching value of the 1st column. May be used to pre-select some specific row in a Map. For example, if Map contains credentials, and 1st column is *User Name* then `chooseRow=Some Name` limits a Map to that user.
-* *hasColumnNames* boolean. By default it is `true` meaning that 1st rows is assumed to contain column names. Once it is `false` the columns will have no names and may only be accessed by 0-based index.
+* *chooseRow* Selects rows with a matching value in the first column. It may be used to pre-select a specific row in a Map. For example, if a Map contains credentials and the first column is *User Name*, then `chooseRow=Some Name` limits the Map to that user.
+* *hasColumnNames* A boolean value. By default, it is `true`, meaning the first row is assumed to contain column names. If it is `false`, the columns will have no names and can only be accessed by their 0-based index.
 
-Data in the `Range` map is assumed to be similar to [`Rows`](#rows-map) map, but defined externally. Looping is done by rows. Typical external file containing data may look like that:
+Data in a `Range` map is assumed to be similar to a [`Rows`](#rows-map) map but defined externally. Looping is done by row. A typical external file containing data may look like this:
 
 === "Screenshot"
     ![Range Data](./img/Maps_RangeData.png)
@@ -240,7 +240,7 @@ Data in the `Range` map is assumed to be similar to [`Rows`](#rows-map) map, but
 
 ### Database Map
 
-A `Database` map contains no in-place data, but defines a connection to the database result set. 
+A `Database` map contains no in-place data; instead, it defines a connection to a database result set.
 
 === "Screenshot"
     ![Database Map](./img/Maps_Database.png)
@@ -254,12 +254,12 @@ A `Database` map contains no in-place data, but defines a connection to the data
 
 The `Database` map definition contains two parameters:
 
-* *connectionString* ADO connection string. 
-* *query* usually it is an SQL query to execute.
+* *connectionString* ADO connection string.
+* *query* Usually, this is the SQL query to execute.
 
-*connectionString* parameter allows accessing wide variety of different database sources. You may learn ore here: [https://docs.microsoft.com/en-us/sql/ado/reference/ado-api/connectionstring-property-ado](https://docs.microsoft.com/en-us/sql/ado/reference/ado-api/connectionstring-property-ado).
+The *connectionString* parameter allows access to a wide variety of different database sources. You can learn more here: [https://docs.microsoft.com/en-us/sql/ado/reference/ado-api/connectionstring-property-ado](https://docs.microsoft.com/en-us/sql/ado/reference/ado-api/connectionstring-property-ado).
 
-Some samples of typical ADO connection string values:
+Some examples of typical ADO connection string values:
 
 #### Microsoft Access
 
@@ -273,7 +273,7 @@ Some samples of typical ADO connection string values:
 
     Provider=MSDASQL; Driver={Microsoft Text Driver (*.txt; *.csv)}; DBQ=C:\path\;
 
-An example below refers to ODBC Data Source defined as follows:
+The example below refers to an ODBC Data Source defined as follows:
 
 === "Screenshot"
     ![Database ODBC data source](./img/Maps_DatabaseODBC.png)

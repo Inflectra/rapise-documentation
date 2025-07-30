@@ -1,24 +1,24 @@
 # Oracle Forms Support
 
 ## Overview
-Rapise [Oracle Forms Library](../Libraries/ses_lib_oracleforms.md) enables recording, learning and playback of various [Oracle Forms](https://www.oracle.com/application-development/technologies/forms/forms.html) controls. 
+Rapise [Oracle Forms Library](../Libraries/ses_lib_oracleforms.md) enables recording, learning, and playback of various [Oracle Forms](https://www.oracle.com/application-development/technologies/forms/forms.html) controls.
 
 ![Oracle Forms Test Screen](./img/of_test.png)
 
 ## Supported Oracle Forms Versions
-Rapise 7.1 has support for **Oracle Forms** version 10 and higher.
+Rapise 7.1 supports **Oracle Forms** versions 10 and higher.
 
 ## Supported Java Versions
 
-Integration should work with other versions of Java (5 and higher). 
+Integration works with Java versions 5 and higher.
 
 ## Preparing Environment
 
 ### 1. Java Support
-Don't forget to deploy Rapise Java bridge as described [here](./java_awt_swing_testing.md#java-bridge-installation).
+Ensure you deploy the Rapise Java bridge as described [here](./java_awt_swing_testing.md#java-bridge-installation).
 
 ### 2. _JAVA_OPTIONS
-You need to set environment variable `_JAVA_OPTIONS`.
+You need to set the environment variable `_JAVA_OPTIONS`.
 
 ```
 "-javaagent:C:\Program Files (x86)\Inflectra\Rapise\Extensions\JavaWrapper\Agents\PreMainAgent.jar" "-Djava.security.policy=C:\Program Files (x86)\Inflectra\Rapise\Extensions\JavaWrapper\Agents\file.policy"
@@ -26,7 +26,7 @@ You need to set environment variable `_JAVA_OPTIONS`.
 
 ![_JAVA_OPTIONS](./img/of_java_options.png)
 
-It may be set it through system or user Environment variables. Also, if your application is launched through the .bat file, you may assign `_JAVA_OPTIONS` there:
+It can be set through system or user environment variables. Alternatively, if your application is launched from a .bat file, you can set `_JAVA_OPTIONS` there:
 
 ```cmd
 ...
@@ -35,30 +35,28 @@ set _JAVA_OPTIONS="-javaagent:C:\Program Files (x86)\Inflectra\Rapise\Extensions
 rem <launch of the application.jar>
 ```
 
-Setting `_JAVA_OPTIONS` globally may affect other software or tools, so, in case of any problems you may remove this variable or rename it to something else.
+Setting `_JAVA_OPTIONS` globally may affect other software or tools. Therefore, if you encounter any problems, you can remove this variable or rename it to another name.
 
 ### 3. Change the Launch URL
-See [Launching Oracle Forms Application](#launching-oracle-forms-application) to learn more about the changes to the launch process that needs to be done to enable testing
-
+See [Launching Oracle Forms Application](#launching-oracle-forms-application) to learn more about the changes to the launch process that need to be made to enable testing.
 
 ## Launching Oracle Forms Application
-There are two major ways on how your application may be started: using **Internet Explorer** or using **Java Web Start** (`.jnlp` file).
+There are two major ways your application can be started: using **Internet Explorer** or **Java Web Start** (`.jnlp` file).
 
-In either case, you need to make sure that the URL to the application contains the following parameters:
+In either case, you need to make sure that the application URL contains the following parameters:
 
 ### From Internet Explorer
 You need to append the following parameter to the URL:
 `...&record=names`
 
-In case of **Internet Explorer** this means that URL contains this part:
+For **Internet Explorer**, this means the URL must contain this part:
 
 ![URL IE](./img/of_ie_url.png)
 
 ### From Java Web Start .jnlp File
-``...&38;record=names`
+`...&record=names`
 
 ![URL JNLP](./img/of_jnlp_url.png)
 
-
 ## Global Object
-Rapise [Oracle Forms Library](../Libraries/ses_lib_oracleforms.md)  includes [OracleForms](../Libraries/OracleForms.md) global object. It mostly used to deal with main menu, notifications and status bar.
+Rapise [Oracle Forms Library](../Libraries/ses_lib_oracleforms.md) includes the [OracleForms](../Libraries/OracleForms.md) global object. It is mostly used to deal with the main menu, notifications, and status bar.

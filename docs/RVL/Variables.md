@@ -1,12 +1,12 @@
 # Variables
 
-In RVL, variables are useful for storing intermediate results as well as accessing and passing global values to external *JavaScript* functions.
+In RVL, variables are useful for storing intermediate results, as well as accessing and passing global values to external *JavaScript* functions.
 
-Variables may be used in [Params](Params.md) to [Conditions](Conditions.md) and in [Actions](Actions.md).
+Variables may be used in [Params](Params.md), [Conditions](Conditions.md), and [Actions](Actions.md).
 
 ## Declaring
 
-This line declares a variable without any values. Its value may be assigned later:
+This line declares a variable without a value. Its value may be assigned later:
 
 | Flow | Type         | Object | Action | ParamName | ParamType | ParamValue |
 | ---- | ------------ | ------ | ------ | --------- | --------- | ---------- |
@@ -14,28 +14,28 @@ This line declares a variable without any values. Its value may be assigned late
 
 ## Local Variables
 
-By default declared variables are assumed to be local. Local variables may be used only within the current RVL script and not visible from other RVL scripts or *JavaScript* code.
+By default, declared variables are assumed to be local. Local variables may be used only within the current RVL script and are not visible to other RVL scripts or *JavaScript* code.
 
 ## Global Variables
 
-You may have a *JavaScript* variable defined in the user *Functions* file (`*.user.js`), i.e.:
+You may have a *JavaScript* variable defined in the user *Functions* file (`*.user.js`), for example:
 
 ```javascript
-// Piece from User.js
+// Snippet from User.js
 var globalVar = "Value";
 ```
 
-Then in the RVL you may declare `globalVar` as global and access it (read or assign values). Declaring a variable as global is simple:
+Then, in RVL, you can declare `globalVar` as global and access it (read or assign values). Declaring a variable as global is simple:
 
 | Flow | Type       | Object | Action     | ParamName   | ParamType | ParamValue |
 | ---- | ---------- | ------ | ---------- | ----------- | --------- | ---------- |
 |      | *Variable* |        | **Global** | `globalVar` |           |            |
 
-Global variables are useful for exchanging and/or sharing data between different RVL scripts or between *RVL* and *JavaScript*.
+Global variables are useful for sharing data between different RVL scripts or between *RVL* and *JavaScript*.
 
 ### Default Value for Global Variable
 
-Special parameter name `defaultValue` of the Global variable definition allows setting default value. This may be needed when you don't know if variable was set before calling this script. So the value will only be assigned is variable is currently undefined. Otherwise the Variable keeps its defined value.
+The special parameter `defaultValue` in a global variable definition allows you to set a default value. This is useful when you do not know if the variable was set before the script was called. The value will be assigned only if the variable is currently undefined. Otherwise, the variable keeps its existing value.
 
 === "Screenshot"
     ![defaultValue](./img/RVL_Variable_DefaultValue.png)
@@ -51,23 +51,23 @@ Special parameter name `defaultValue` of the Global variable definition allows s
     |      | Param    |        |        | defaultValue | string    | librarian  |
     |      |          |        |        |              |           |            |
 
-This helps to make sheets using global variables to be executable standalone. I.e. you may use [Play This Sheet](../Guide/rvl_editor.md#context-menu) in RVL and be sure that Global variable will have a value.
+This helps make sheets that use global variables executable standalone. i.e., you can use [Play This Sheet](../Guide/rvl_editor.md#context-menu) in RVL and be sure that the global variable will have a value.
 
 ## Assigning
 
 ### Assignment Expression
 
-This line declares and assigns value *5* to a variable `MyVar2`:
+This line declares and assigns the value *5* to a variable `MyVar2`:
 
 | Flow | Type         | Object | Action | ParamName | ParamType | ParamValue |
 | ---- | ------------ | ------ | ------ | --------- | --------- | ---------- |
 |      | **Variable** |        |        | `MyVar2`  | *number*  | *5*        |
 
-If the variable is declared earlier, then assignment just changes its value. If the variable is not yet declared, then assignment is actually a declaration with assignment.
+If a variable has been previously declared, an assignment simply changes its value. If a variable has not been declared, an assignment acts as both a declaration and an assignment.
 
 ### Action Output
 
-If an action returns a value it can be assigned to a variable via `Output`.
+If an action returns a value, it can be assigned to a variable via `Output`.
 
 | Flow | Type         | Object | Action       | ParamName   | ParamType | ParamValue |
 | ---- | ------------ | ------ | ------------ | ----------- | --------- | ---------- |
@@ -77,14 +77,14 @@ If an action returns a value it can be assigned to a variable via `Output`.
 
 ### Auto Assignment
 
-There are two auto assigned variables in RVL:  `LastResult` and `LastObject`. If an action returns some value then it is assigned to `LastResult`. `LastObject` is effectively an alias to the last used object in **Object** column.
+There are two auto-assigned variables in RVL: `LastResult` and `LastObject`. If an action returns a value, it is assigned to `LastResult`. `LastObject` is effectively an alias to the last used object in the **Object** column.
 
 | Flow | Type       | Object | Action       | ParamName | ParamType | ParamValue     |
 | ---- | ---------- | ------ | ------------ | --------- | --------- | -------------- |
 |      | **Action** | Global | GetOsVersion |           |           |                |
 |      | **Action** | Tester | Message      |           | variable  | **LastResult** |
 
-This snippet prints OS version to the report.
+This snippet prints the OS version to the report.
 
 ## Using
 
@@ -107,27 +107,27 @@ Any [Action](Actions.md) may write its return value to a variable using the *Out
 |      | Action | Global | DoTrim | str       | string    | text to trim |
 |      | Output |        |        |           | variable  | `MyVar1`     |
 
-The Output value may then be used as a param value in actions, conditions, assertions and expressions.
+The Output value may then be used as a parameter value in actions, conditions, assertions, and expressions.
 
 ## Variable Actions
 
-One may use an expression to change the value of a variable. Here are several common variable operations that may be used to modify variable values:
+You can use an expression to change the value of a variable. Here are several common operations for modifying variable values:
 
-1. *Increment* is an operation where numeric value is increased by `1` or any other specified value. The variable must have a numeric value. Otherwise the result is `NaN`.
+1. *Increment* is an operation where a numeric value is increased by `1` or any other specified value. The variable must have a numeric value. Otherwise, the result is `NaN`.
 
-    If no param to *Increment* is specified then `1` is assumed:
+    If no parameter is specified for *Increment*, `1` is assumed:
 
       | Flow | Type       | Object | Action        | ParamName | ParamType | ParamValue |
       | ---- | ---------- | ------ | ------------- | --------- | --------- | ---------- |
       |      | *Variable* |        | **Increment** | `numVar`  |           |            |
 
-      Otherwise it is any *value*:
+      Otherwise, the increment is the specified *value*:
 
       | Flow | Type       | Object | Action        | ParamName | ParamType | ParamValue |
       | ---- | ---------- | ------ | ------------- | --------- | --------- | ---------- |
       |      | *Variable* |        | **Increment** | `numVar`  | `number`  | *value*    |
 
-2. *Decrement* is the same as increment but the value is subtracted from the variable.
+2. *Decrement* is similar to increment, but the value is subtracted from the variable.
 
 3. *Append* adds the value as text to the specified variable. This operation is useful for constructing text messages:
 
@@ -136,17 +136,17 @@ One may use an expression to change the value of a variable. Here are several co
       |        | *Variable* |          | **Append** | `textVar`   | `string`    | Final value: |
       |        | *Variable* |          | **Append** | `textVar`   | `variable`  | `numVar`     |
 
-      In this example if `textVar` was empty and `numVar` had value `5` then the final value of `textVar` is the following text:
+      In this example, if `textVar` was empty and `numVar` had the value `5`, then the final value of `textVar` is the following text:
       `Final value: 5`
 
 ## Variables as Objects
 
-A variable in Rapise can hold an object from the repository, and when it is a repository object, it can have actions that can be executed.
+A variable in Rapise can hold an object from the repository. Such a variable can have actions that can be executed.
 
-When declaring a variable with the `objectid` *ParamType*, you are indicating to the RVL editor that the variable has either:
+When declaring a variable with the `objectid` *ParamType*, you indicate to the RVL editor that its type is one of the following:
 
-1. The type of the object when the `objectid` matches the ID from the object repository.
-2. The type by name when the `objectid` matches a well-known object type. You can find object names in the documentation for each library. For example, the topic [Java Objects](/Libraries/ses_lib_java) lists all known object types for the Java library.
+1. The type of the object from the object repository whose ID matches the `objectid`.
+2. A well-known object type whose name matches the `objectid`. You can find object names in the documentation for each library. For example, the topic [Java Objects](/Libraries/ses_lib_java) lists all known object types for the Java library.
 
     === "Screenshot"
         ![Object Rules](./img/Variables_object_rules.png)
@@ -224,9 +224,9 @@ When declaring a variable with the `objectid` *ParamType*, you are indicating to
             - `ID:`
             - `Type: HTMLObject`
         
-        (*Note: The image indicates a software interface with a navigation tree on the top and properties of a selected object at the bottom. Selected object is `Add`. The properties are for an object of class 'Selenium' and type 'HTMLObject'. *)
+        (*Note: The image indicates a software interface with a navigation tree at the top and the properties of a selected object at the bottom. The selected object is `Add`. The properties are for an object of class 'Selenium' and type 'HTMLObject'. *)
 
-The RVL editor knows how to handle such a variable and provides necessary hints to choose an action for it:
+The RVL editor knows how to handle such a variable and provides hints to help you choose an action for it:
 
 === "Screenshot"
     ![Variable Action](./img/Variables_variable_action.png)
@@ -239,31 +239,31 @@ The RVL editor knows how to handle such a variable and provides necessary hints 
 
 ## Examples
 
-Variables may be declared as *Local* or *Global*. Declaration may or may not contain initial value
+Variables may be declared as *Local* or *Global*. A declaration may or may not contain an initial value.
 
 === "Screenshot"
     ![Variable Declarations](./img/Variables_Declaration.png)
 === "Transcript"
-    | Flow | Type                                                                          | Object | Action | ParamName  | ParamType | ParamValue |
-    | ---- | ----------------------------------------------------------------------------- | ------ | ------ | ---------- | --------- | ---------- |
-    | #    | Declare global variables. If it is assigned earlier then keep its value       |        |        |            |           |            |
-    |      | Variable                                                                      |        | Global | g_bookName |           |            |
-    | #    | Declare global variables and assign its value                                 |        |        |            |           |            |
-    |      | Variable                                                                      |        | Global | g_genre    | string    | NonFiction |
-    | #    | Declare local variable without value with explicit Local keyword              |        |        |            |           |            |
-    |      | Variable                                                                      |        | Local  | Osversion  |           |            |
-    | #    | Declare local variables and assign initial values, use explicit local keyword |        |        |            |           |            |
-    |      | Variable                                                                      |        | Local  | StringVar  | string    | some text  |
-    |      | Variable                                                                      |        | Local  | NumVar     | number    | 35         |
-    |      | Variable                                                                      |        | Local  | BoolVar    | boolean   | false      |
-    | #    | Declare local variable without value                                          |        |        |            |           |            |
-    |      | Variable                                                                      |        |        | Osversion  |           |            |
-    | #    | Declare and assign local variables                                            |        |        |            |           |            |
-    |      | Variable                                                                      |        |        | StringVar  | string    | some text  |
-    |      | Variable                                                                      |        |        | NumVar     | number    | 35         |
-    |      | Variable                                                                      |        |        | BoolVar    | boolean   | false      |
+    | Flow | Type                                                                        | Object | Action | ParamName  | ParamType | ParamValue |
+    | ---- | --------------------------------------------------------------------------- | ------ | ------ | ---------- | --------- | ---------- |
+    | #    | Declare a global variable. If it was assigned earlier, it keeps its value   |        |        |            |           |            |
+    |      | Variable                                                                    |        | Global | g_bookName |           |            |
+    | #    | Declare a global variable and assign its value                              |        |        |            |           |            |
+    |      | Variable                                                                    |        | Global | g_genre    | string    | NonFiction |
+    | #    | Declare a local variable without a value, using the explicit Local keyword  |        |        |            |           |            |
+    |      | Variable                                                                    |        | Local  | Osversion  |           |            |
+    | #    | Declare local variables and assign initial values, using the explicit local keyword |        |        |            |           |            |
+    |      | Variable                                                                    |        | Local  | StringVar  | string    | some text  |
+    |      | Variable                                                                    |        | Local  | NumVar     | number    | 35         |
+    |      | Variable                                                                    |        | Local  | BoolVar    | boolean   | false      |
+    | #    | Declare a local variable without a value                                    |        |        |            |           |            |
+    |      | Variable                                                                    |        |        | Osversion  |           |            |
+    | #    | Declare and assign local variables                                          |        |        |            |           |            |
+    |      | Variable                                                                    |        |        | StringVar  | string    | some text  |
+    |      | Variable                                                                    |        |        | NumVar     | number    | 35         |
+    |      | Variable                                                                    |        |        | BoolVar    | boolean   | false      |
 
-Variables may accept output from the *Action*:
+Variables can accept the output from an *Action*:
 
 === "Screenshot"
     ![Variable Output](./img/Variables_Output.png)
@@ -275,12 +275,12 @@ Variables may accept output from the *Action*:
     |      | Output   |        |              |           | variable  | OsVersion  |
     |      |          |        |              |           |           |            |
 
-Variables may be used as input to the *Action*:
+Variables can be used as input for an *Action*:
 
 === "Screenshot"
     ![Variable AsParam](./img/Variables_AsParam.png)
 === "Transcript"
     | Flow | Type                        | Object | Action  | ParamName | ParamType | ParamValue |
     | ---- | --------------------------- | ------ | ------- | --------- | --------- | ---------- |
-    | #    | Use variable as a parameter |        |         |           |           |            |
+    | #    | Use a variable as a parameter |        |         |           |           |            |
     |      | Action                      | Tester | Message | message   | variable  | OsVersion  |

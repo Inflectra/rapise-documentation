@@ -4,7 +4,7 @@ The **Auto-Waiting** feature in Rapise enhances the reliability of web tests by 
 
 ## What is Auto-Waiting?
 
-Auto-Waiting ensures that actions like clicks, typing, or selecting elements are only performed when the targeted web element is:
+Auto-Waiting ensures that actions such as clicks, typing, or selecting elements are only performed when the targeted web element is:
 
 - **Visible** on the screen.
 - **Enabled** and ready for interaction.
@@ -73,7 +73,7 @@ You can modify these settings to control both the default object lookup wait and
 
 ### Max Auto-Wait Time Calculation
 
-The max wait time is determined by:
+The maximum wait time is determined by:
 
 ```
 Total Auto-Wait Time = g_autoWaitAttempts * g_autoWaitAttemptInterval
@@ -81,19 +81,19 @@ Total Auto-Wait Time = g_autoWaitAttempts * g_autoWaitAttemptInterval
 
 ## Important Notes
 
-1. **Action-Specific Feature:** Auto-Waiting is only invoked when performing actions such as `DoClick` or `DoSetText`. It does not apply to object search methods like [Navigator.Find](/Libraries/Navigator/#find), `SeS(id)`, or [Navigator.SeSFind](/Libraries/Navigator/#sesfind).
+1.  **Action-Specific Feature:** Auto-Waiting is only invoked for actions such as `DoClick` or `DoSetText`. It does not apply to object search methods like [Navigator.Find](/Libraries/Navigator/#find), `SeS(id)`, or [Navigator.SeSFind](/Libraries/Navigator/#sesfind).
 
-2. **Assumes Object Existence:** Auto-Waiting operates under the assumption that the target object exists. If you need to wait for an object to be created or appear in the DOM, use methods like `SeS(id)` or [Navigator.SeSFind](/Libraries/Navigator/#sesfind). These methods respect the global `Object Lookup Attempts` and `Object Lookup Attempt Interval` settings.
+2.  **Assumes Object Existence:** Auto-Waiting operates under the assumption that the target object exists. If you need to wait for an object to be created or appear in the DOM, use methods like `SeS(id)` or [Navigator.SeSFind](/Libraries/Navigator/#sesfind). These methods respect the global `Object Lookup Attempts` and `Object Lookup Attempt Interval` settings.
 
 ## Fine-Tuning Auto-Wait Logic
 
-Auto-Wait relies on standard application UI behavior. However, some UI frameworks are designed in ways that require tweaking the default logic. For example, a framework might cover the entire screen with an invisible frame that captures all inputs and clicks, then forwards them to a specific element. From the Auto-Wait point of view, the target element is not interactable because it is covered by another element. In such cases, we may want to relax the default limitations.
+Auto-Wait relies on standard application UI behavior. However, some UI frameworks are designed in ways that require tweaking the default logic. For example, a framework might cover the entire screen with an invisible frame that captures all inputs and clicks, then forwards them to a specific element. From Auto-Wait's perspective, the target element is not interactable because it is covered by another element. In such cases, we may want to relax the default limitations.
 
-There are two ways to fine-tune the logic. The first is to disable a specific check globally. The second, more powerful method, is to completely override the auto-wait checker logic with a custom function.
+There are two ways to fine-tune the logic. The first is to disable a specific check globally. The second, more powerful method, is to completely override the Auto-Wait checker logic with a custom function.
 
 ### Override Probing
 
-For simple cases where a specific check consistently fails due to your application's design, you can disable it entirely. This is done by defining a `Navigator.autoWaitOverride` object. This object can have properties corresponding to the internal checks, and setting a property to `true` forces Auto-Wait to assume that check has passed.
+For simple cases where a specific check consistently fails due to your application's design, you can disable it entirely. This is done by defining a `Navigator.autoWaitOverride` object. This object can have properties corresponding to the internal checks, and setting a property to `true` forces Auto-Wait to assume that the check has passed.
 
 The available properties are:
 
@@ -122,12 +122,11 @@ SeSOnTestInit(function() {
 });
 ```
 
-
 **Caution:** Use this feature judiciously. Overriding a check removes a layer of protection and can lead to tests failing with less obvious errors if the element truly is not ready. It is best used for application-wide workarounds. For more targeted fixes, use the callback method described next.
 
 ### Define a SeSOnNavigatorAutoWait Callback
 
-For the ultimate control over the auto-wait logic, you can define a callback function. This function is executed at each wait attempt and allows you to implement custom logic to decide if the element is ready for the specified action.
+For ultimate control over the Auto-Wait logic, you can define a callback function. This function is executed at each wait attempt and allows you to implement custom logic to decide if the element is ready for the specified action.
 
 This approach is ideal for complex scenarios, such as:
 - Applying special logic only to certain types of elements.
@@ -171,7 +170,7 @@ Your callback function's return value determines the outcome of the wait attempt
 
 **Example 1: Ignoring an Overlay for a Specific Button**
 
-Imagine a "Submit" button is consistently covered by a transparent overlay, but other elements are not. A global override is too broad. We can use the callback to target just that button. You may define the callback within SeSOnTestInit for your testing framework.
+Imagine a "Submit" button is consistently covered by a transparent overlay, but other elements are not. A global override is too broad. We can use the callback to target just that button. You can define the callback within SeSOnTestInit for your testing framework.
 
 ```javascript
 

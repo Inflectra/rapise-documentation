@@ -38,4 +38,3 @@ Explore Rapise AI video tutorials to see these features in action and start revo
 - [Rapise AI 08 - Data for Negative Test](https://youtu.be/GbyeZAdSg4c)
 - [Rapise AI 09 - SpiraTest Manual to AI](https://youtu.be/ZXm8v6uQCoE)
 - [Rapise AI 10 - Generate RVL Code to Fill a Form](https://youtu.be/FF3aS8418Bc)
-

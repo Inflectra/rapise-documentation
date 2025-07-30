@@ -8,11 +8,9 @@ The Start Page is intended to be a convenient entry point for Rapise beginners.
 
 The Start Page provides:
 
-1. Links to tutorials and webinars.
-2. Links to sample tests. This displays a list of available Rapise
-samples. Some samples are shipped with Rapise while others are provided
-from the online public repository.
-    - The **Fetch Samples** button is used to download/update additional samples from online public repository.
+1.  Links to tutorials and webinars.
+2.  Links to sample tests, displaying a list of available Rapise samples. Some samples are shipped with Rapise while others are provided from the online public repository.
+    *   The **Fetch Samples** button is used to download and update additional samples from the online public repository.
 
 ## How to Open
 

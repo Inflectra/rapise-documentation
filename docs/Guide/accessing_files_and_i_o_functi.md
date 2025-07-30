@@ -2,11 +2,11 @@
 
 ## Overview
 
-Sometimes using Rapise you need to access files on the Windows file system, either for testing purposes, or to object test data stored in a flat CSV, TSV or text file.
+When using Rapise, you sometimes need to access files on the Windows file system, either for testing purposes or to access test data stored in flat CSV, TSV, or text files.
 
 ## File Global Object
 
-Normally file operations in Rapise are done with global [File](/Libraries/File/) object.
+File operations in Rapise are typically performed using the global [File](/Libraries/File/) object.
 
 ```javascript
 function Test()
@@ -50,7 +50,7 @@ function Test()
 
 ## FileSystemObject
 
-Alternatively you can can access the file system using the `FileSystemObject`.
+Alternatively, you can access the file system using the `FileSystemObject`.
 
 <http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx>
 

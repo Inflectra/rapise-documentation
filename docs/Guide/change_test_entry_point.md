@@ -1,6 +1,6 @@
 # Change Test Entry Point
 
-Rapise assumes that the entry point of a test - [Test()](understanding_the_script.md) function is defined in a file specified in [ScriptPath](../settings_dialog/#scriptpath) property of the [Settings](settings_dialog.md) dialog. If you want to place [Test()](understanding_the_script.md) function in another file then do not forget to update ScriptPath property of the test.
+Rapise assumes that the entry point of a test—the [Test()](understanding_the_script.md) function—is defined in the file specified by the [ScriptPath](../settings_dialog/#scriptpath) property in the [Settings](settings_dialog.md) dialog. If you want to place the [Test()](understanding_the_script.md) function in another file, remember to update the ScriptPath property for the test.
 
 ## See Also
 

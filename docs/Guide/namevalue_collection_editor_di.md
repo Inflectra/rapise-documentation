@@ -4,21 +4,20 @@
 
 ## Purpose
 
-To specify **Custom Strings** and their values.
+Specifies custom strings and their values.
 
 ## How to Open
 
-Open from the [Settings Dialog](settings_dialog.md), **TestParams** option:
+To open: Select the **TestParams** option in the [Settings Dialog](settings_dialog.md).
 
 ![namevalue collection editor dialog, how to open](./img/namevalue_collection_editor_di2.png)
 
 ## Widgets
 
-- **Add** a custom string.  If you press **Add**, you'll see this:
+- **Add**: Adds a custom string. Clicking **Add** displays the following:
 
 ![namevalue collection editor dialog, add](./img/namevalue_collection_editor_di3.png)
 
-- **Remove:** removes selected custom string.
-- **OK**: Save changes and close dialog.
-- **Cancel**: Close dialog without saving changes.
-
+- **Remove**: Removes the selected custom string.
+- **OK**: Saves changes and closes the dialog.
+- **Cancel**: Closes the dialog without saving changes.
