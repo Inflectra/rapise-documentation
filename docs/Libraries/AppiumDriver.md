@@ -2,7 +2,8 @@ Summary: This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.
 
 # AppiumDriver
 
-This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.<br>https://github.com/appium/appium-dotnet-driver
+This is a JavaScript wrapper for AppiumDriver of AppiumDotNet library.
+<br>https://github.com/appium/appium-dotnet-driver
 
 
 
@@ -441,7 +442,7 @@ AppiumDriver.DoSendKeys(txt)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| txt | string |  Keys to send. Supports patterns like in [Global.DoSendKeys](/Libraries/Global/#dosendkeys). |
+| txt | string |  Keys to send. Supports patterns like in [Global.DoSendKeys](Global.md#dosendkeys). |
 
 
 

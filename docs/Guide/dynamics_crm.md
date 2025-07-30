@@ -29,7 +29,7 @@ The latest version of Dynamics CRM is called **Dynamics 365 for Sales**. It is a
 All versions of Dynamics CRM are completely web-based and use a web browser to access the user interface. Therefore, when recording a test using Rapise, you will use the same web browser libraries that are used for other [web tests](web_testing.md):
 
 *   Most of the Dynamics CRM user interface will be tested using the **standard browser library** for your web browser of choice (e.g., Internet Explorer HTML, Firefox HTML, and Chrome HTML).
-*   In addition, Rapise has specialized support for certain controls within CRM. For that reason, you'll also see the [DomDynamicsCrm](/Libraries/ses_lib_dynamicscrm/) library added to your test, in addition to the browser one. This **DomDynamicsCrm** library adds additional rules that identify certain CRM objects to make testing easier.
+*   In addition, Rapise has specialized support for certain controls within CRM. For that reason, you'll also see the [DomDynamicsCrm](../Libraries/ses_lib_dynamicscrm.md) library added to your test, in addition to the browser one. This **DomDynamicsCrm** library adds additional rules that identify certain CRM objects to make testing easier.
 
 When you record your first test, you'll get the following library selection code generated automatically by Rapise:
 
@@ -65,7 +65,7 @@ One of the most important UI elements within Dynamics CRM/365 is the sortable, f
 
 The Dynamics CRM/365 Grid is used on many different screens within Dynamics CRM/365 (e.g., Leads, Accounts, etc.), and it is very common to interact with it in test scripts.
 
-When you record operations on such a grid, or simply learn the entire grid using ++ctrl+2++, you will learn the [DomDynamicsCrmGrid](/Libraries/DomDynamicsCrmGrid/) or [DomDynamicsCrmUnifiedInterfaceGrid](/Libraries/DomDynamicsCrmUnifiedInterfaceGrid/) object:
+When you record operations on such a grid, or simply learn the entire grid using ++ctrl+2++, you will learn the [DomDynamicsCrmGrid](../Libraries/DomDynamicsCrmGrid.md) or [DomDynamicsCrmUnifiedInterfaceGrid](../Libraries/DomDynamicsCrmUnifiedInterfaceGrid.md) object:
 
 ![dynamics-crm-grid-methods](./img/dynamics_crm7.png)
 

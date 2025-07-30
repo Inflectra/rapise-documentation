@@ -9,14 +9,14 @@ The last three columns in the RVL table are used for passing parameters:
 | ... | y          | number    | 7          |
 | ... | forceEvent | boolean   | true       |
 
-*   The fifth column, *ParamName*, specifies the name of the parameter. While it does not affect execution, it is important for readability and for understanding the provided input options. The *ParamName* is significant in cases such as [RVL.DoPlayTest](/Libraries/RVL#doplaytest), [RVL.DoPlaySheet](/Libraries/RVL#doplaysheet), [RVL.SetLocatorOpt](/Libraries/RVL#setlocatoropts), and [RVL.FormatString](/Libraries/RVL#formatstring). See [Extra Parameters](#extra-parameters) for more information.
+*   The fifth column, *ParamName*, specifies the name of the parameter. While it does not affect execution, it is important for readability and for understanding the provided input options. The *ParamName* is significant in cases such as [RVL.DoPlayTest](../Libraries/RVL.md#doplaytest), [RVL.DoPlaySheet](../Libraries/RVL.md#doplaysheet), [RVL.SetLocatorOpt](../Libraries/RVL.md#setlocatoropts), and [RVL.FormatString](../Libraries/RVL.md#formatstring). See [Extra Parameters](#extra-parameters) for more information.
 *   The sixth column, *ParamType*, specifies the value type. This may be a basic scalar type (`number`, `string`, `boolean`) or one of the following special types:
     *   `expression` - Any valid JavaScript expression that may involve global variables, functions, and local variables.
     *   `variable` - The parameter value is read from a variable.
     *   `objectid` - The ID of one of the learned Objects.
     *   `password` - Means the value is an encrypted string that is decrypted at runtime.
     *   `relpath` - Means a path relative to the location of the current RVL file. This parameter is automatically translated to a full path before being passed to the action/function.
-    *   `testparam` - The value of the [parameter](/Guide/Frameworks/parameters) passed to the test.
+    *   `testparam` - The value of the [parameter](../Guide/Frameworks/parameters.md) passed to the test.
     *   `<mapname>` - See [Map Params](#map-params).
 *   The seventh column, *ParamValue*, specifies the value acceptable for the corresponding *ParamType*. For `boolean`, it can be either `true` or `false`. For `number`, it can be any floating-point number (e.g., `3.14`). For `string`, it can be any text without quotes or escape characters. For `relpath`, it should be a valid relative path, and for `testparam`, it is the name of the parameter (e.g., `Browser`).
 

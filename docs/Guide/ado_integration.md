@@ -1,7 +1,7 @@
 # Azure DevOps Integration v2
 
 !!! tip
-    This documentation section is deprecated. There is a new way to integrate Rapise and Azure DevOps. Please refer to [Azure DevOps Integration v3](/Guide/vstest/).
+    This documentation section is deprecated. There is a new way to integrate Rapise and Azure DevOps. Please refer to [Azure DevOps Integration v3](vstest.md).
 
 This topic explains how to run Rapise tests with [Node-Tap](https://node-tap.org/) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 
@@ -57,7 +57,7 @@ The framework's root folder contains the following:
 Each Rapise test within this framework resides in a direct subfolder of the root folder:
 
 ```
-AzureDevOpsFriendlyArchitecture 
+AzureDevopsFriendlyArchitecture 
 |
 |-CreateNewBook
 |-FailedLogin

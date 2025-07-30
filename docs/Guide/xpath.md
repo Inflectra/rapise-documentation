@@ -128,7 +128,7 @@ Then, learn this object as **Oliver_Twist** so that you can access it in your co
 
 ### Dynamic Queries
 
-In addition to learning objects based on a specific XPath, you can use the [HTMLObject.DoDOMQueryXPath](/Libraries/HTMLObject/#DoDOMQueryXPath) action to query for elements on the web page:
+In addition to learning objects based on a specific XPath, you can use the [HTMLObject.DoDOMQueryXPath](../Libraries/HTMLObject.md#DoDOMQueryXPath) action to query for elements on the web page:
 
 ```javascript
 var res = SeS('MainContent_grdBooks').DoDOMQueryXPath('.//td[text()="Oliver Twist"]');

@@ -30,7 +30,7 @@ This approach has both advantages and disadvantages. We do not recommend using i
 
 ## How it Works
 
-To leave an application running and save session information, use the [AppiumDriver.SaveSession](/Libraries/AppiumDriver/#SaveSession) call within the [TestFinish](understanding_the_script.md) block of your test.
+To leave an application running and save session information, use the [AppiumDriver.SaveSession](../Libraries/AppiumDriver.md#SaveSession) call within the [TestFinish](understanding_the_script.md) block of your test.
 
 !!! information
     In Rapise 8.0+, explicitly calling `AppiumDriver.SaveSession()` is no longer required.
@@ -42,7 +42,7 @@ function TestFinish()
 }
 ```
 
-To reconnect to the running application, use the [AppiumDriver.ReconnectSession](/Libraries/AppiumDriver/#ReconnectSession) call within the [TestPrepare](understanding_the_script.md) block of your test.
+To reconnect to the running application, use the [AppiumDriver.ReconnectSession](../Libraries/AppiumDriver.md#ReconnectSession) call within the [TestPrepare](understanding_the_script.md) block of your test.
 
 ```javascript
 function TestPrepare()
@@ -51,7 +51,7 @@ function TestPrepare()
 }
 ```
 
-If you want Rapise to launch a new application session when no saved session exists, pass `true` to the [AppiumDriver.ReconnectSession](/Libraries/AppiumDriver/#ReconnectSession) call.
+If you want Rapise to launch a new application session when no saved session exists, pass `true` to the [AppiumDriver.ReconnectSession](../Libraries/AppiumDriver.md#ReconnectSession) call.
 
 ```javascript
 function TestPrepare()

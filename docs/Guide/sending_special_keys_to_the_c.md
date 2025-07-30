@@ -2,10 +2,10 @@
 
 ## Overview
 
-You can use the [Global.DoSendKeys](/Libraries/Global/#DoSendKeys) action to send keypresses to the current application. Sometimes, you may need to send special control keys to the application (e.g., `Page Down` or `CTRL + Key`). This article explains how to do this.
+You can use the [Global.DoSendKeys](../Libraries/Global.md#DoSendKeys) action to send keypresses to the current application. Sometimes, you may need to send special control keys to the application (e.g., `Page Down` or `CTRL + Key`). This article explains how to do this.
 
 !!! important
-    For web applications, use [Navigator.DoSendKeys](/Libraries/Navigator/#DoSendKeys) and [HTMLObject.DoSendKeys](/Libraries/HTMLObject/#DoSendKeys). Both accept the same patterns listed below.
+    For web applications, use [Navigator.DoSendKeys](../Libraries/Navigator.md#DoSendKeys) and [HTMLObject.DoSendKeys](../Libraries/HTMLObject.md#DoSendKeys). Both accept the same patterns listed below.
 
 ![DoSendKeys Demo](./img/global_dosendkeys.gif)
 
@@ -76,7 +76,7 @@ To specify keys combined with a combination of the SHIFT, CTRL, and ALT keys, pr
 
 In this example Rapise sends various key combinations to Windows Notepad.
 
-> Note: [Global.DoSleep](/Libraries/Global/#DoSleep) is used to slow down test execution and make the test steps visible.
+> Note: [Global.DoSleep](../Libraries/Global.md#DoSleep) is used to slow down test execution and make the test steps visible.
 
 **RVL version**
 

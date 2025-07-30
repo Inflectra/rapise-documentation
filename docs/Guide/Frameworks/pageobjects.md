@@ -55,7 +55,7 @@ There are two ways of creating a **Page Object (PO)** or **Module**:
     ![Add Main Menu](./img/add_page_object_main_menu.png)
 
 2.  Context menu:
-    -   Right-click on the **Page Objects / Modules** node in the [object tree](/Guide/object_tree).
+    -   Right-click on the **Page Objects / Modules** node in the [object tree](../object_tree.md).
     ![Add Context Menu](./img/add_page_object_context_menu.png)
 
 ### Page Object - RVL vs JS
@@ -80,7 +80,7 @@ The method of adding an action to a Page Object varies depending on the chosen l
 
 When in RVL mode, adding a sheet creates a new action, with the exception of two specific sheets:
 
-1.  The `RVL` sheet, which is the default sheet. It is typically left empty in the Page Object or may contain an internal test that can be executed via the [Play this Sheet](/Guide/rvl_editor#context-menu) context menu.
+1.  The `RVL` sheet, which is the default sheet. It is typically left empty in the Page Object or may contain an internal test that can be executed via the [Play this Sheet](../rvl_editor.md#context-menu) context menu.
 
 2.  The `PageObject` sheet, which is the default sheet within the Page Object. It is intended to include a comment with a detailed description of the action, displayed to the user.
 
@@ -106,7 +106,7 @@ In certain situations, you may want to call a `DoAction` but ignore its output v
 
 ## Description, Parameters and Return Values
 
-Defining and documenting parameters and return values in JavaScript mode is straightforward and follows the same format as for [global objects](/Guide/global_objects#format).
+Defining and documenting parameters and return values in JavaScript mode is straightforward and follows the same format as for [global objects](../global_objects.md#format).
 
 When creating an action in RVL, necessary placeholders are generated:
 
@@ -141,13 +141,13 @@ For RVL Modules, you can run any part of the module using standard RVL features 
 
 ## Page Object Recording
 
-In RVL mode, you perform [recording](/Guide/rvl_editor#features) just as you would for a standard RVL test case.
+In RVL mode, you perform [recording](../rvl_editor.md#features) just as you would for a standard RVL test case.
 
 ## Page Object and Web Service
 
 When incorporating a Web Service (`.soap` or `.rest`) into your Page Object, it is advisable to use JavaScript instead of RVL (Rapise Visual Language) for creating the Page Object.
 
-When [generating](/Guide/rest_definition_editor#script-steps) a recorded script, it will be placed in the Page Object's `Main.js` file, which is not executed. Therefore, you will need to manually copy the generated script from `Main.js` and paste it into the appropriate action within the `<PageObjectName>.js` file.
+When [generating](../rest_definition_editor.md#script-steps) a recorded script, it will be placed in the Page Object's `Main.js` file, which is not executed. Therefore, you will need to manually copy the generated script from `Main.js` and paste it into the appropriate action within the `<PageObjectName>.js` file.
 
 ## Importing Page Objects
 

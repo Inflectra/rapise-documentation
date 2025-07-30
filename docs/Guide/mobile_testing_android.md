@@ -8,7 +8,7 @@ This tutorial provides a **simple example** of using Rapise to record and play b
 
 ## Setting up Environment
 
-First, you need to [install Appium and Android Studio](/Manuals/Preparing_for_Android_Testing/).
+First, you need to [install Appium and Android Studio](../Manuals/Preparing_for_Android_Testing.md).
 
 Launch the **Android Virtual Device Manager** from the menu:
 

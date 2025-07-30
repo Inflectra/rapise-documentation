@@ -19,7 +19,7 @@ In Variant A, you choose `Functions` as an object and then select the custom fun
 
 Let's see how to define your own global object.
 
-First, you need a JavaScript file where you will define the object's actions and declare the object itself. A good candidate for such a file is the main file of a [user-defined library](/Guide/tutorial_custom_library/#2-libuser) or simply `User.js`.
+First, you need a JavaScript file where you will define the object's actions and declare the object itself. A good candidate for such a file is the main file of a [user-defined library](tutorial_custom_library.md#2-libuser) or simply `User.js`.
 
 We'll use an example to explain the format of object definition. Here is the definition of a global object `MyApp`.
 

@@ -1159,7 +1159,7 @@ boolean: 'true' if successful, 'false' otherwise'
 <a name="DoSendKeys"></a>    
 #### DoSendKeys
 
-Keys to send. Supports patterns like in [Global.DoSendKeys](/Libraries/Global/#dosendkeys).
+Keys to send. Supports patterns like in [Global.DoSendKeys](Global.md#dosendkeys).
 
 ```javascript
 SeS('SomeHTMLObject').DoSendKeys(txt)

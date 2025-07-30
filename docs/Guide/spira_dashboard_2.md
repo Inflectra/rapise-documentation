@@ -156,7 +156,7 @@ Once credentials are tested and saved, it is time to navigate to a test set and 
 
 ## How to Open
 
-To open the dashboard, use the [main menu](/Guide/menu_and_toolbars/#view): View > Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup, open the [Rapise Settings](/Guide/options_dialog/#settings) dialog and set the `ShowDashboardOnStartup` flag to `true`.
+To open the dashboard, use the [main menu](menu_and_toolbars.md#view): View > Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup, open the [Rapise Settings](options_dialog.md#settings) dialog and set the `ShowDashboardOnStartup` flag to `true`.
 
 ## Navigation
 
@@ -344,7 +344,7 @@ Click the `Create Custom Properties for Rapise` button to add the following cust
 	- Input data (string, empty by default, requires Rapise 7.1+)
 	- Record videos (boolean, default is false)
 	- Verbose level (integer, default is 1)
-	- [GitUrl, GitUser, GitPassword, GitBranch, GitRoot](/Guide/git_integration/#using-spira-custom-properties) (string, empty by default)
+	- [GitUrl, GitUser, GitPassword, GitBranch, GitRoot](git_integration.md#using-spira-custom-properties) (string, empty by default)
 	- [Git Credentials](#git-credentials-storage) (dropdown value choice, requires Rapise 7.3)
 
 Clicking the button more than once is safe. If a custom property exists, Rapise won't create a duplicate. To create the custom properties, you will need to enter administrator credentials (username and API Key).
@@ -380,7 +380,7 @@ The Action menu for a test case allows you to
 4. Add default parameters to the test case (legacy; use Test Set level custom properties to control verbose and video recording). The list of default parameters includes:
 	- g_verboseLevel = 1
 	- g_enableVideoRecording = false
-5. `Open This Test` in Rapise. It is a shortcut for [Open a test from SpiraTest](/Guide/spiratest_integration/#opening-a-test-from-spiratest).
+5. `Open This Test` in Rapise. It is a shortcut for [Open a test from SpiraTest](spiratest_integration.md/#opening-a-test-from-spiratest).
 6. `Rename` a test case or a test case folder.
 7. `Delete` a test case.
 8. `Open in Spira` - opens the current item in a browser window.

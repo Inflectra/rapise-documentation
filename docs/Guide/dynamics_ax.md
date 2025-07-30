@@ -8,7 +8,7 @@ Dynamics AX consists of a client-server architecture with a thick-client ERP int
 
 ![dynamics-ax-overview](./img/dynamics_ax1.png)
 
-Rapise includes specialized libraries for testing Dynamics AX applications that are built upon the standard [Microsoft Windows](windows_applications.md) **UIAutomation** library with special extensions for handling [unique AX controls](/Libraries/ses_lib_dynamicsax/) such as tree views, the navigation explorer, and the various grids used to edit data. In addition, Rapise can test the following extensions to Dynamics AX:
+Rapise includes specialized libraries for testing Dynamics AX applications that are built upon the standard [Microsoft Windows](windows_applications.md) **UIAutomation** library with special extensions for handling [unique AX controls](../Libraries/ses_lib_dynamicsax.md) such as tree views, the navigation explorer, and the various grids used to edit data. In addition, Rapise can test the following extensions to Dynamics AX:
 
 - **Dynamics AX Management Reporter** - Rapise can test this extension using its **Generic** [Windows library](windows_applications.md).
 - **Dynamics AX Web Portals** - Rapise can test the various web portals using its [web browser libraries](web_testing.md).
@@ -21,7 +21,7 @@ To start recording a new test, first create a new Basic test and begin a recordi
 
 Then press the `Select` button to start recording. Rapise will automatically load the UIAutomation and DynamicsAX libraries.
 
-- **Microsoft UI Automation** is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by means other than standard input. UI Automation also allows automated test scripts to interact with the UI. 
+- **Microsoft UI Automation** is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by other means than standard input. UI Automation also allows automated test scripts to interact with the UI. 
 
 - **DynamicsAX** library supports a set of controls specific to the Microsoft Dynamics AX 2012 application. 
 
@@ -135,7 +135,7 @@ During recording, as you interact with Dynamics AX controls, Rapise captures act
 
 Once recording is finished, Rapise automatically generates the test.
 
-In [Rapise Visual Language (RVL)](/RVL/Overview/), it looks like:
+In [Rapise Visual Language (RVL)](../RVL/Overview.md), it looks like:
 
 ![dax recorded rvl](./img/daxrecordedrvl.png)
 
@@ -189,7 +189,7 @@ Standard combo boxes, like `Worker type` in the `Hire New Worker` form.
   
 ![dax simple combo](./img/daxsimplecombo.png)
 
-Rapise treats such combo boxes as atomic objects and records them as [DynamicsAXComboBox](/Libraries/ses_lib_dynamicsax/DynamicsAXComboBox.js). To record interaction with the combo box:
+Rapise treats such combo boxes as atomic objects and records them as [DynamicsAXComboBox](../Libraries/DynamicsAXComboBox.md). To record interaction with the combo box:
 
 1. Click on the combo box to expand the dropdown with choices
 2. Select a value from the list
@@ -208,7 +208,7 @@ SeS('Worker_type').DoSelectItem("Employee");
 
 ### Table Filter Combo
 
-A table filter combo is recognized as a pair of objects: `Scope` and `DropDown`. The `Scope` object is of type [DynamicsAXMenuItem](/Libraries/ses_lib_dynamicsax/DynamicsAXMenuItem.js) and is used to open the `DropDown` object of type [DynamicsAXMenuDropDownList](/Libraries/ses_lib_dynamicsax/DynamicsAXMenuDropDownList.js).
+A table filter combo is recognized as a pair of objects: `Scope` and `DropDown`. The `Scope` object is of type [DynamicsAXMenuItem](../Libraries/DynamicsAXMenuItem.md) and is used to open the `DropDown` object of type [DynamicsAXMenuDropDownList](../Libraries/DynamicsAXMenuDropDownList.md).
 
 ![Table Filter](./img/dynamicsaxtablefilter.png)
 
@@ -231,9 +231,9 @@ SeS('DropDown').DoSelectItem("Search name");
 
 A lookup field consists of an edit box, an open button, and a dropdown table. Record lookup interactions in three steps:
 
-1. Click the edit field. Recorded as [DynamicsAXTextBox](/Libraries/ses_lib_dynamicsax/DynamicsAXTextBox.js).
-2. Click the open button. Recorded as [UIAObject](/Libraries/ses_lib_dynamicsax/UIAObject.js).
-3. Click the value in the dropdown grid. Recorded as [DynamicsAXTable](/Libraries/ses_lib_dynamicsax/DynamicsAXTable.js).
+1. Click the edit field. Recorded as [DynamicsAXTextBox](../Libraries/DynamicsAXTextBox.md).
+2. Click the open button. Recorded as [UIAObject](../Libraries/UIAObject.md).
+3. Click the value in the dropdown grid. Recorded as [DynamicsAXTable](../Libraries/DynamicsAXTable.md).
 
 ![Lookup Field](./img/dynamicsaxlookupfield.png)
 
@@ -254,7 +254,7 @@ SeS('Grid').DoClickCell("SOFTWARE", "Customer group");
 
 ## Address Bar
 
-Click in an empty area of the address bar and enter the address to which you want to navigate. Rapise will capture the [DynamicsAXAddressBar](/Libraries/ses_lib_dynamicsax/DynamicsAXAddressBar.js) object and record the `DoSetText` action.
+Click in an empty area of the address bar and enter the address to which you want to navigate. Rapise will capture the [DynamicsAXAddressBar](../Libraries/DynamicsAXAddressBar.md) object and record the `DoSetText` action.
 
 ![Address Bar](./img/dynamicsaxaddressbar.png)
 
@@ -270,7 +270,7 @@ SeS('AddressBarContainer').DoSetText('DAT/Retail essentials/Employees/Users');
 
 ## Menu
 
-Rapise supports both recording and learning for the main menu. When recording, make sure you click on every component along the path. For example, if you want to navigate to `File > View > Modules > General ledger`. During recording, click on `File`, `View`, `Modules`, and `General ledger`. The captured menu object has the type [DynamicsAXMenu](/Libraries/ses_lib_dynamicsax/DynamicsAXMenu.js). The generated script looks like:
+Rapise supports both recording and learning for the main menu. When recording, make sure you click on every component along the path. For example, if you want to navigate to `File > View > Modules > General ledger`. During recording, click on `File`, `View`, `Modules`, and `General ledger`. The captured menu object has the type [DynamicsAXMenu](../Libraries/DynamicsAXMenu.md). The generated script looks like:
 
 **RVL**
 
@@ -287,7 +287,7 @@ Rapise captures the menu as a top-level object (`File` in the example above). No
 
 ## Table
 
-Rapise recognizes Dynamics AX grids as a [DynamicsAXTable](/Libraries/ses_lib_dynamicsax/DynamicsAXTable.js).
+Rapise recognizes Dynamics AX grids as a [DynamicsAXTable](../Libraries/DynamicsAXTable.md).
 
 ![Grid](./img/dynamicsaxgrid.png)
 
@@ -303,7 +303,7 @@ When you click on a cell in a table, Rapise records the column name and value in
 SeS('ListPageGrid').DoClickCell("Contoso Retail Chicago", "Name");
 ```
 
-Rapise can click cells based on column name and value, as well as using column and row indexes. Rapise can also read column names, column count, and row count. Check [DynamicsAXTable](/Libraries/ses_lib_dynamicsax/DynamicsAXTable.js) for more details.
+Rapise can click cells based on column name and value, as well as using column and row indexes. Rapise can also read column names, column count, and row count. Check [DynamicsAXTable](../Libraries/DynamicsAXTable.md) for more details.
 
 ## Infolog
 
@@ -311,7 +311,7 @@ In some cases, Dynamics AX can report an error using the Infolog window.
 
 ![Infolog](./img/dynamicsaxinfolog.png)
 
-To obtain the text of the messages in this window, learn the Tree object by placing the cursor over the error text and pressing the ++ctrl+2++ shortcut. The object is learned as a [UIATree](/Libraries/ses_lib_dynamicsax/UIATree.js). In the case of the Infolog tree, all nodes are immediate children of the root. So, in the example shown in the image above, the tree contains two child nodes of the tree node. To get the number of messages and read individual messages, use the `GetChildrenCount` and `GetChildAt` actions of [UIATree](/Libraries/ses_lib_dynamicsax/UIATree.js).
+To obtain the text of the messages in this window, learn the Tree object by placing the cursor over the error text and pressing the ++ctrl+2++ shortcut. The object is learned as a [UIATree](../Libraries/UIATree.md). In the case of the Infolog tree, all nodes are immediate children of the root. So, in the example shown in the image above, the tree contains two child nodes of the tree node. To get the number of messages and read individual messages, use the `GetChildrenCount` and `GetChildAt` actions of [UIATree](../Libraries/UIATree.md).
 
 **RVL**
 

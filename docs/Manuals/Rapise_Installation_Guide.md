@@ -8,7 +8,7 @@ This installation guide outlines how to set up a working installation of Rapise,
 
 It assumes a basic understanding of how to set up and administer a Windows® workstation, and also assumes that you have access to a valid administrator-level account that can install software.
 
-For information on how to use the features of Rapise, please refer to either the [Rapise Quick Start Guide](/Guide/tutorial_record_and_playback/) or the [Rapise User's Guide](/Guide/overview/) instead.
+For information on how to use the features of Rapise, please refer to either the [Rapise Quick Start Guide](../Guide/tutorial_record_and_playback.md) or the [Rapise User's Guide](../Guide/overview.md) instead.
 
 ## Installing Rapise
 
@@ -39,7 +39,7 @@ The minimum hardware and software requirements for running Rapise are:
 
 Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that it has been pre-installed for you), you then need to make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place and will install any missing prerequisites (apart from the Microsoft .NET Framework) automatically.
 
-####  Microsoft .NET 4.7.2
+#### Microsoft .NET 4.7.2
 
 On Windows 10 and Windows Server 2016 installations (with all the latest updates), the Microsoft .NET Framework meets the minimum requirements, whereas on earlier operating systems, you might need to manually add the .NET 4.7.2 components to the factory configuration.
 

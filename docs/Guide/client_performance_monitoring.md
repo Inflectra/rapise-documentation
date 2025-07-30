@@ -69,7 +69,7 @@ You can open the Results Filter dialog by pressing the `…` button.
 
 ## NeoLoad Object API Reference
 
-The methods of the global `NeoLoad` object are described [on this page](/Libraries/NeoLoad/).
+The methods of the global `NeoLoad` object are described [on this page](../Libraries/NeoLoad.md).
 
 ## How to Use
 

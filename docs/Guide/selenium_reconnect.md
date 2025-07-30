@@ -29,7 +29,7 @@ This approach has its pros and cons. We do not recommend using it for completely
 
 ### Rapise 6.x
 
-To leave the application running and save session information, use the [WebDriver.SaveSession](/Libraries/WebDriver/#SaveSession) call within the [TestFinish](understanding_the_script.md) block of your test.
+To leave the application running and save session information, use the [WebDriver.SaveSession](../Libraries/WebDriver.md#SaveSession) call within the [TestFinish](understanding_the_script.md) block of your test.
 
 ```javascript
 function TestFinish()
@@ -38,7 +38,7 @@ function TestFinish()
 }
 ```
 
-To reconnect to the running application, use the [WebDriver.ReconnectSession](/Libraries/WebDriver/#ReconnectSession) call within the [TestPrepare](understanding_the_script.md) block of your test.
+To reconnect to the running application, use the [WebDriver.ReconnectSession](../Libraries/WebDriver.md#ReconnectSession) call within the [TestPrepare](understanding_the_script.md) block of your test.
 
 ```javascript
 function TestPrepare()
@@ -47,7 +47,7 @@ function TestPrepare()
 }
 ```
 
-If you want Rapise to launch a new browser session if no session is saved, pass `true` to the [WebDriver.ReconnectSession](/Libraries/WebDriver/#ReconnectSession) call.
+If you want Rapise to launch a new browser session if no session is saved, pass `true` to the [WebDriver.ReconnectSession](../Libraries/WebDriver.md#ReconnectSession) call.
 
 ```javascript
 function TestPrepare()

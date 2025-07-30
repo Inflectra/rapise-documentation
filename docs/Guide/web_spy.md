@@ -62,7 +62,7 @@ When you right-click an element, a popup menu opens with the following options:
 
 - **Copy** - copies node text to the clipboard (no attribute truncation).
 - **Highlight** - highlights the element in the browser.
-- **Learn** - expands the list of [various XPath locators](/Guide/web_settings/#different-types-of-xpath) generated for the element. Click an item in this list, and Rapise will learn the object with the selected XPath.
+- **Learn** - expands the list of [various XPath locators](web_settings.md#different-types-of-xpath) generated for the element. Click an item in this list, and Rapise will learn the object with the selected XPath.
 
 ![Learn Context Menu](./img/web_spy_learn_context_menu.png)
 
@@ -122,7 +122,7 @@ When you click **Test**, it will display all DOM elements that match the query:
 
 You can then refine the query to find only the items you want to test.
 
-In either case, if you can adjust the query to match only a single element, you can then click the appropriate **Learn** button next to the **XPath** or **CSS** edit fields. This will learn the specified query as a new object that can be scripted against in Rapise. This is very useful if you want to dynamically select an object based on its content rather than a hard-coded ID or position. Additionally, you can add an assertion to the test by clicking **Verify**. This will display [properties of the object](/Guide/verify_object_properties/). You can set checkboxes next to properties you want to check during playback.
+In either case, if you can adjust the query to match only a single element, you can then click the appropriate **Learn** button next to the **XPath** or **CSS** edit fields. This will learn the specified query as a new object that can be scripted against in Rapise. This is very useful if you want to dynamically select an object based on its content rather than a hard-coded ID or position. Additionally, you can add an assertion to the test by clicking **Verify**. This will display [properties of the object](verify_object_properties.md). You can set checkboxes next to properties you want to check during playback.
 
 Additionally, in the test results view, when you click a result:
 

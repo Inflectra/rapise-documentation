@@ -47,7 +47,7 @@ The **Object** column is used to select an object from the object tree:
 ![Object column](./img/visual_language5.png)
 
 !!! note
-    This dropdown displays all objects from the object tree, [global utility objects](/Libraries/ses_lib_global/), as well as the `Functions` object, which allows you to call custom functions (written in JavaScript).
+    This dropdown displays all objects from the object tree, [global utility objects](../Libraries/ses_lib_global.md), as well as the `Functions` object, which allows you to call custom functions (written in JavaScript).
 
 The **Action** column defines the action to perform on the selected object.
 

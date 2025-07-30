@@ -4,7 +4,7 @@
 
 Recording refers to Rapise tracking your interactions with an application.
 
-Rapise observes the actions you take while using the [AUT](glossary.md) and transforms them into a script ([RVL](/RVL/Overview/) or JavaScript) that you can execute using the `Play` button. The script can be extended and modified for specific purposes.
+Rapise observes the actions you take while using the [AUT](glossary.md) and transforms them into a script ([RVL](../RVL/Overview.md) or JavaScript) that you can execute using the `Play` button. The script can be extended and modified for specific purposes.
 
 ## Usage
 
@@ -26,7 +26,7 @@ To ensure successful recording of your interactions with the AUT, navigate slowl
 
 When you are done recording, press the `Finish` button in the RA dialog or press ++ctrl+3++. The RA dialog will disappear, and you will see an automatically generated script opened in Rapise.
 
-For **Mobile Testing**, you will need to use the `Spy` button, which allows you to select a specific object using the [Mobile Spy](../object_spy_mobile/):
+For **Mobile Testing**, you will need to use the `Spy` button, which allows you to select a specific object using the [Mobile Spy](object_spy_mobile.md):
 
 ![recording_activity_dialog_mobile_empty](./img/recording2.png)
 
@@ -36,4 +36,4 @@ For **Mobile Testing**, you will need to use the `Spy` button, which allows you 
 -   The RA dialog is described more thoroughly in [Recording Activity > Dialog](recording_activity_dialog.md).
 -   To learn how to run the script, see [Playback](playback.md). To learn how to modify the script, see [Scripting](scripting.md).
 -   For a detailed tutorial, see [Tutorial: Record and Playback](tutorial_record_and_playback.md) in the Getting Started section.
--   For more information on the Spy capability, see [Object > Spy](../object_spy/).
+-   For more information on the Spy capability, see [Object > Spy](object_spy.md).

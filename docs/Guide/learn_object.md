@@ -92,7 +92,7 @@ Press the `Finish` button or ++ctrl+3++ to end the recording session.
 
 You will now see that Rapise has **learned** about the `OK` button. The Object Tree in the upper-left pane of Rapise will have a new entry called `OK` (shown here expanded). The list of items contained under the `OK` button entry in the Object Tree is the set of methods and properties available for the `OK` object.
 
-Actions and properties have different icons. The items are grouped by library. For example, the `DoAction()` method is unique to the `OK` [UIAButton](/Libraries/UIAButton/) object, whereas the `DoClick()` method is generic and available for all Windows objects.
+Actions and properties have different icons. The items are grouped by library. For example, the `DoAction()` method is unique to the `OK` [UIAButton](../Libraries/UIAButton.md) object, whereas the `DoClick()` method is generic and available for all Windows objects.
 
 Notice that `DoAction` is listed. Recall that in the previous section, when we recorded pressing the button, the `DoAction` method was chosen for the button-press action.
 

@@ -46,7 +46,7 @@ The data table we just created is an object in the Rapise object repository and 
 
 <img src="/Guide/img/ddt_data_map_object.png" width="526" />
 
-For a detailed description of actions that can be performed on data tables, refer to the [Map Object](/Libraries/Map/) reference.
+For a detailed description of actions that can be performed on data tables, refer to the [Map Object](../Libraries/Map.md) reference.
 
 Let's advance to the next row in our table before printing values.
 
@@ -82,7 +82,7 @@ When the test is run, data is now sourced from `Data.xlsx`. Notice that in `Data
 
 <img src="/Guide/img/ddt_spreadsheet_report.png" width="632" />
 
-If we perform a [loop](/RVL/Loops/) with the Data map, Rapise will iterate through all lines during execution.
+If we perform a [loop](../RVL/Loops.md) with the Data map, Rapise will iterate through all lines during execution.
 
 <img src="/Guide/img/ddt_spreadsheet_loop.png" width="870" />
 
@@ -110,7 +110,7 @@ while(Spreadsheet.DoSequential())
 }
 ```
 
-A description of all `Spreadsheet` actions and properties is available [here](/Libraries/Spreadsheet/).
+A description of all `Spreadsheet` actions and properties is available [here](../Libraries/Spreadsheet.md).
 
 Open the `UsingSpreadsheet` sample test from the start page to see a working example (scroll down the list of samples).
 

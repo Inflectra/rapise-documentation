@@ -146,7 +146,7 @@ A variable in Rapise can hold an object from the repository. Such a variable can
 When declaring a variable with the `objectid` *ParamType*, you indicate to the RVL editor that its type is one of the following:
 
 1. The type of the object from the object repository whose ID matches the `objectid`.
-2. A well-known object type whose name matches the `objectid`. You can find object names in the documentation for each library. For example, the topic [Java Objects](/Libraries/ses_lib_java) lists all known object types for the Java library.
+2. A well-known object type whose name matches the `objectid`. You can find object names in the documentation for each library. For example, the topic [Java Objects](../Libraries/ses_lib_java.md) lists all known object types for the Java library.
 
     === "Screenshot"
         ![Object Rules](./img/Variables_object_rules.png)
@@ -180,7 +180,7 @@ When declaring a variable with the `objectid` *ParamType*, you indicate to the R
         
         (*Note: The image also includes a navigation flow marked with a dotted line, connecting the 'Java' section with 'JavaButton', then leading to a list of Java components including 'JavaCheckBox', 'JavaChoice', 'JavaLabel', 'JavaList', 'JavaObject', and 'JavaSwingButton'.*)
 
-    Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type [HTMLObject](/Libraries/HTMLObject), as shown in the object properties:
+    Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type [HTMLObject](../Libraries/HTMLObject.md), as shown in the object properties:
 
     === "Screenshot"
         ![Object Type](./img/Variables_object_type_properties.png)

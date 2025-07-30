@@ -100,7 +100,7 @@ Save the edited file to allow Rapise to re-parse it. Then you can type
 username.
 ```
 
-and Rapise suggests actions and properties for the [HTMLObject](/Libraries/HTMLObject/) type.
+and Rapise suggests actions and properties for the [HTMLObject](../Libraries/HTMLObject.md) type.
 
 ## See Also
 

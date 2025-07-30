@@ -1,16 +1,16 @@
 # Mobile Testing
 
-- [Mobile Testing in Rapise](/Guide/mobile_testing2/)
+- [Mobile Testing in Rapise](Guide/mobile_testing2.md)
 
 ## Preparing the Environment
 
-- [Preparing the Environment for Android Mobile Testing](/Manuals/Preparing_for_Android_Testing/)
-- [Preparing the Environment for iOS Mobile Testing](/Manuals/Preparing_for_iOS_Testing/)
+- [Preparing the Environment for Android Mobile Testing](Manuals/Preparing_for_Android_Testing.md)
+- [Preparing the Environment for iOS Mobile Testing](Manuals/Preparing_for_iOS_Testing.md)
 
 ## Tutorials
 
-- [Mobile Testing on Android](/Guide/mobile_testing_android/)
-- [Mobile Testing on iOS](/Guide/mobile_testing_ios/)
+- [Mobile Testing on Android](Guide/mobile_testing_android.md)
+- [Mobile Testing on iOS](Guide/mobile_testing_ios.md)
 
 ## Webinars
 
@@ -18,4 +18,4 @@
 
 ## See Also
 
-- [Mobile Spy](/Guide/object_spy_mobile/)
+- [Mobile Spy](Guide/object_spy_mobile.md)

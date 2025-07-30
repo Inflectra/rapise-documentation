@@ -93,7 +93,7 @@ In Rapise 8.3, we’ve introduced support for a local Dropdowns.xlsx file for [P
 
 ### Config.xlsx
 
-There is a [Config](../Libraries/Global.md#SetConfigPath) file that can be used with [Global.GetProperty](../Libraries/Global.md#getproperty) and [Global.SetProperty](/Libraries/Global/#setproperty). This is an easy way to read and store various input configuration data, such as logins and URLs, as well as output data (e.g., an Internal Invoice ID used in subsequent test cases).
+There is a [Config](../Libraries/Global.md#SetConfigPath) file that can be used with [Global.GetProperty](../Libraries/Global.md#getproperty) and [Global.SetProperty](../Libraries/Global.md#setproperty). This is an easy way to read and store various input configuration data, such as logins and URLs, as well as output data (e.g., an Internal Invoice ID used in subsequent test cases).
 
 It is also explained in [this](https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&t=534) video.
 
@@ -119,7 +119,7 @@ For more complex cases, you can have additional `.js` files and [include](https:
 
 ### Profiles
 
-Local [Web](/Guide/browser_settings/#local-browser-profiles) or [Mobile](/Guide/mobile_settings_dialog/#local-mobile-profiles) Profiles make it easier to configure the browsers for the entire framework.
+Local [Web](../Guide/browser_settings.md#local-browser-profiles) or [Mobile](../Guide/mobile_settings_dialog.md#local-mobile-profiles) Profiles make it easier to configure the browsers for the entire framework.
 
 ### WebAppProfile.json
 

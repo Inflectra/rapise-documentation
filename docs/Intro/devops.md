@@ -2,7 +2,7 @@
 
 ## SpiraTest (recommended)
 
-For test management and execution, we recommend using [SpiraTest](https://www.inflectra.com/SpiraTest/). Check out the [integration guide](/Guide/spiratest_integration/) and [demonstration video](https://youtu.be/5ybrBQOzez8).
+For test management and execution, we recommend using [SpiraTest](https://www.inflectra.com/SpiraTest/). Check out the [integration guide](../Guide/spiratest_integration.md) and [demonstration video](https://youtu.be/5ybrBQOzez8).
 
 ## Microsoft Tools
 

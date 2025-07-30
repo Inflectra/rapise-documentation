@@ -6,7 +6,7 @@ When using Rapise, you sometimes need to access files on the Windows file system
 
 ## File Global Object
 
-File operations in Rapise are typically performed using the global [File](/Libraries/File/) object.
+File operations in Rapise are typically performed using the global [File](../Libraries/File.md) object.
 
 ```javascript
 function Test()

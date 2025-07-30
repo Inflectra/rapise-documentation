@@ -8,9 +8,9 @@ Rapise lets you record and play automated tests against native applications on a
 
 Since the process for testing mobile devices depends heavily on the platform used, we have split this guide into four separate sections:
 
-- [Preparing Environment for iOS Mobile Testing](/Manuals/Preparing_for_iOS_Testing/)
+- [Preparing Environment for iOS Mobile Testing](../Manuals/Preparing_for_iOS_Testing.md)
 - [Mobile Testing using iOS](mobile_testing_ios.md)
-- [Preparing Environment for Android Mobile Testing](/Manuals/Preparing_for_Android_Testing/)
+- [Preparing Environment for Android Mobile Testing](../Manuals/Preparing_for_Android_Testing.md)
 - [Mobile Testing using Android](mobile_testing_android.md)
 
 ## Samples

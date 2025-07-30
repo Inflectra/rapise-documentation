@@ -17,16 +17,16 @@ Also, if your goal is to store configuration data in an `.xlsx` file, we recomme
 In this example, we have a spreadsheet that contains lookup data:
 
 |**Test** |  **Test Data** |
-|-------- | -------------- |
-| Test1   | valuetest1     |
-| Test2   | valuetest2     |
-| Test3   | valuetest3     |
-| Test4   | valuetest4     |
-| Test5   | valuetest5     |
+|-------- | --------------|
+| Test1   | valuetest1    |
+| Test2   | valuetest2    |
+| Test3   | valuetest3    |
+| Test4   | valuetest4    |
+| Test5   | valuetest5    |
 
 We want to dynamically query this Excel sheet to find the test data associated with a specific case. For example, if we query for `Test2`, we want to return the test data `valuetest2`.
 
-The function that accomplishes this uses the built-in [Spreadsheet](/Libraries/Spreadsheet/) object:
+The function that accomplishes this uses the built-in [Spreadsheet](../Libraries/Spreadsheet.md) object:
 
 ```javascript
 function FindValueFromFile(filename, valueToFind)

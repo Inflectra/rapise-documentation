@@ -18,7 +18,7 @@ The sample tests are described below.
 
 ## ActiveX
 
-These samples demonstrate the testing of Microsoft ActiveX/COM controls used in Visual Basic applications, including the MSComCtl library. The samples include the [Microsoft FlexGrid Control](/Libraries/MSFlexGrid/), [MS Common Toolbar Control](/Libraries/MSComCtlToolbar/), [Microsoft Tabbed Dialog Control](/Libraries/SSTab/), [TabStrip](/Libraries/TabStrip20/), and Microsoft Windows Common Controls 6.0 [MSCOMCTL.OCX].
+These samples demonstrate the testing of Microsoft ActiveX/COM controls used in Visual Basic applications, including the MSComCtl library. The samples include the [Microsoft FlexGrid Control](../Libraries/MSFlexGrid.md), [MS Common Toolbar Control](../Libraries/MSComCtlToolbar.md), [Microsoft Tabbed Dialog Control](../Libraries/SSTab.md), [TabStrip](../Libraries/TabStrip20.md), and Microsoft Windows Common Controls 6.0 [MSCOMCTL.OCX].
 
 ## AnalogRecorder
 
@@ -38,19 +38,19 @@ This sample demonstrates using Rapise to test an installation of [Microsoft Dyna
 
 ## FarPoint
 
-This sample script demonstrates using the [FarPoint library](/Libraries/FarPointGrid/) to test the FarPoint Spreadsheet Control.
+This sample script demonstrates using the [FarPoint library](../Libraries/FarPointGrid.md) to test the FarPoint Spreadsheet Control.
 
 ## Java
 
-This sample tests a Java AWT/Swing application. This sample demonstrates the capabilities of the [Java library](/Libraries/ses_lib_java/). The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, and menu.
+This sample tests a Java AWT/Swing application. This sample demonstrates the capabilities of the [Java library](../Libraries/ses_lib_java.md). The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, and menu.
 
 ## Java SWT
 
-This sample tests a Java SWT/RCP application. This sample demonstrates the capabilities of the [SWT](/Libraries/ses_lib_swt/) and [UIAutomation](/Libraries/ses_lib_uiautomation/) libraries. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, and menu.
+This sample tests a Java SWT/RCP application. This sample demonstrates the capabilities of the [SWT](../Libraries/ses_lib_swt.md) and [UIAutomation](../Libraries/ses_lib_uiautomation.md) libraries. The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, and menu.
 
 ## jQuery-UI
 
-This sample illustrates using the [jQuery HTML DOM extension library](/Libraries/ses_lib_jquery/) that allows you to record/playback test scripts against web applications using widgets from the jQuery JavaScript library framework.
+This sample illustrates using the [jQuery HTML DOM extension library](../Libraries/ses_lib_jquery.md) that allows you to record/playback test scripts against web applications using widgets from the jQuery JavaScript library framework.
 
 ## Library Information System
 
@@ -62,15 +62,15 @@ These tests can be used to test the sample library information system web applic
 
 ## Managed
 
-This sample tests a .NET 2.0 application. This sample demonstrates the capabilities of the [Managed library](/Libraries/ses_lib_managed/). The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, grid, list box, list view, and menu.
+This sample tests a .NET 2.0 application. This sample demonstrates the capabilities of the [Managed library](../Libraries/ses_lib_managed.md). The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, grid, list box, list view, and menu.
 
 ## QtFramework
 
-This sample tests a sample [Qt Framework](qt_framework_testing.md) cross-platform application. This sample demonstrates the capabilities of the [QtFramework library](/Libraries/QWidget/). The application under test contains various standard Qt widgets, such as: button, edit, tree, and combo box.
+This sample tests a sample [Qt Framework](qt_framework_testing.md) cross-platform application. This sample demonstrates the capabilities of the [QtFramework library](../Libraries/QWidget.md). The application under test contains various standard Qt widgets, such as: button, edit, tree, and combo box.
 
 ## Silverlight
 
-This sample tests a Silverlight web application. This sample demonstrates the capabilities of the [UIAutomation library](/Libraries/ses_lib_uiautomation/). The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, and menu.
+This sample tests a Silverlight web application. This sample demonstrates the capabilities of the [UIAutomation library](../Libraries/ses_lib_uiautomation.md). The application under test contains various standard GUI controls, such as: button, edit, tree, combo box, and menu.
 
 ## SimulatedObject
 
@@ -119,11 +119,11 @@ This sample demonstrates the usage of the Windows Registry. The registry is quer
 
 This sample illustrates various [reporting](automated_reporting.md) features:
 
-1.  Regular reporting ([Tester.Assert](/Libraries/Tester/#Assert), [Tester.Message](/Libraries/Tester/#Message))
-2.  Custom attributes ([Tester.SetReportAttribute](/Libraries/Tester/#SetReportAttribute), [Tester.ResetReportAttribute](/Libraries/Tester/#ResetReportAttribute))
-3.  Stacked attributes ([Tester.PushReportAttribute](/Libraries/Tester/#PushReportAttribute), [Tester.PopReportAttribute](/Libraries/Tester/#PopReportAttribute))
-4.  Nested Tests ([Tester.BeginTest](/Libraries/Tester/#BeginTest), [Tester.EndTest](/Libraries/Tester/#EndTest))
-5.  Inserting Links, Text, and Images into the report (tags parameter, [SeSReportText](/Libraries/SeSReportText/), [SeSReportLink](/Libraries/SeSReportLink/), [SeSReportImage](/Libraries/SeSReportImage/))
+1.  Regular reporting ([Tester.Assert](../Libraries/Tester.md#Assert), [Tester.Message](../Libraries/Tester.md#Message))
+2.  Custom attributes ([Tester.SetReportAttribute](../Libraries/Tester.md#SetReportAttribute), [Tester.ResetReportAttribute](../Libraries/Tester.md#ResetReportAttribute))
+3.  Stacked attributes ([Tester.PushReportAttribute](../Libraries/Tester.md#PushReportAttribute), [Tester.PopReportAttribute](../Libraries/Tester.md#PopReportAttribute))
+4.  Nested Tests ([Tester.BeginTest](../Libraries/Tester.md#BeginTest), [Tester.EndTest](../Libraries/Tester.md#EndTest))
+5.  Inserting Links, Text, and Images into the report (tags parameter, [SeSReportText](../Libraries/SeSReportText.md), [SeSReportLink](../Libraries/SeSReportLink.md), [SeSReportImage](../Libraries/SeSReportImage.md))
 
 ## UsingSelenium
 

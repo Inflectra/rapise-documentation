@@ -59,7 +59,7 @@ Right-click on a folder to see:
 
 ![Folder Menu](img/test_files_dialog_context_folder.png)
 
-*   **Reload**: Refreshes group contents. Use for [filter groups](../test_files_dialog/#filtergroup) ('IsFilterGroup' is set to 'True' in group properties), e.g., for the Report group.
+*   **Reload**: Refreshes group contents. Use for [filter groups](test_files_dialog.md/#filtergroup) ('IsFilterGroup' is set to 'True' in group properties), e.g., for the Report group.
 *   **Add File(s)**: Adds an existing file to the test.
 *   **Create**
     *   **Text File**: Creates a `.txt` file and adds it to the test.

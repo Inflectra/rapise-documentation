@@ -294,7 +294,7 @@ Find `VSTest.Console.exe` in `C:\Tools\Microsoft.TestPlatform.16.7.1\tools\net45
 ## Parallel Execution
 
 !!! note
-    If you are using SpiraTest, you may be interested in [another way](/Guide/spira_dashboard_2/#parallel-execution) of parallel execution.
+    If you are using SpiraTest, you may be interested in [another way](spira_dashboard_2.md#parallel-execution) of parallel execution.
 
 Two levels of parallelism are possible. They can be used independently or combined.
 

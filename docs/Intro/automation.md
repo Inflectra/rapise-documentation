@@ -14,11 +14,11 @@ You are testing a web application where elements use dynamic IDs that change on 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1QBA7TunnOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! info "How to Fix"
-    - [Object Not Found - How to Fix (schema)](/Guide/object_not_found/)
+    - [Object Not Found - How to Fix (schema)](../Guide/object_not_found.md)
     - [Check that Rapise can find an object on the screen](https://www.inflectra.com/Support/KnowledgeBase/KB375.aspx)
-    - [Configure Web Recording with Web Application Profile](/Guide/web_app_profile/)
-    - [Use WebSpy to build a better element locator manually](/Guide/web_spy/)
-    - [Turn On Self-Healing Locators](/Guide/web_self_healing/)
+    - [Configure Web Recording with Web Application Profile](../Guide/web_app_profile.md)
+    - [Use WebSpy to build a better element locator manually](../Guide/web_spy.md)
+    - [Turn On Self-Healing Locators](../Guide/web_self_healing.md)
 
 ### Reason #2
 

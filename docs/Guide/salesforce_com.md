@@ -39,7 +39,7 @@ One of the most important UI elements inside Salesforce.com is the sortable, fil
 The Salesforce.com Grid is used in many different screens inside Salesforce.com (e.g., leads, quotes, etc.), and it is very common to interact with it in test scripts.
 
 When you record operations on such a grid, or simply learn the entire grid using ++ctrl+2++, you will learn the **SalesforceGrid** object.
-In addition to the standard HTML object methods and properties, you can perform [the following special functions on the grid](/Libraries/DomSalesforceGrid/):
+In addition to the standard HTML object methods and properties, you can perform [the following special functions on the grid](../Libraries/DomSalesforceGrid.md):
 
 -   **DoClickCell()** - Clicks the specified cell by specifying the x-index, y-index, and the type of click (left-click, right-click, etc.).
 -   **DoClickText()** - Clicks a specific text inside the grid.

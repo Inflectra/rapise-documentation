@@ -17,14 +17,14 @@ Additionally, if an element is **partially visible**, Rapise will attempt to scr
 
 The Auto-Waiting feature is applied to the following actions:
 
-- [DoMouseMove](/Libraries/HTMLObject/#domousemove)  
-- [DoClick](/Libraries/HTMLObject/#doclick)  
-- [DoDblClick](/Libraries/HTMLObject/#dodblclick)  
-- [DoRClick](/Libraries/HTMLObject/#dorclick)  
-- [DoSendKeys](/Libraries/HTMLObject/#dosendkeys)  
-- [DoSetText](/Libraries/HTMLObject/#dosettext)  
-- [DoSelect](/Libraries/HTMLObject/#doselect)  
-- [DoSetCheck](/Libraries/HTMLObject/#dosetcheck)  
+- [DoMouseMove](../Libraries/HTMLObject.md#domousemove)  
+- [DoClick](../Libraries/HTMLObject.md#doclick)  
+- [DoDblClick](../Libraries/HTMLObject.md#dodblclick)  
+- [DoRClick](../Libraries/HTMLObject.md#dorclick)  
+- [DoSendKeys](../Libraries/HTMLObject.md#dosendkeys)  
+- [DoSetText](../Libraries/HTMLObject.md#dosettext)  
+- [DoSelect](../Libraries/HTMLObject.md#doselect)  
+- [DoSetCheck](../Libraries/HTMLObject.md#dosetcheck)  
 
 ### Mouse Move Action
 
@@ -81,9 +81,9 @@ Total Auto-Wait Time = g_autoWaitAttempts * g_autoWaitAttemptInterval
 
 ## Important Notes
 
-1.  **Action-Specific Feature:** Auto-Waiting is only invoked for actions such as `DoClick` or `DoSetText`. It does not apply to object search methods like [Navigator.Find](/Libraries/Navigator/#find), `SeS(id)`, or [Navigator.SeSFind](/Libraries/Navigator/#sesfind).
+1.  **Action-Specific Feature:** Auto-Waiting is only invoked for actions such as `DoClick` or `DoSetText`. It does not apply to object search methods like [Navigator.Find](../Libraries/Navigator.md#find), `SeS(id)`, or [Navigator.SeSFind](../Libraries/Navigator.md#sesfind).
 
-2.  **Assumes Object Existence:** Auto-Waiting operates under the assumption that the target object exists. If you need to wait for an object to be created or appear in the DOM, use methods like `SeS(id)` or [Navigator.SeSFind](/Libraries/Navigator/#sesfind). These methods respect the global `Object Lookup Attempts` and `Object Lookup Attempt Interval` settings.
+2.  **Assumes Object Existence:** Auto-Waiting operates under the assumption that the target object exists. If you need to wait for an object to be created or appear in the DOM, use methods like `SeS(id)` or [Navigator.SeSFind](../Libraries/Navigator.md#sesfind). These methods respect the global `Object Lookup Attempts` and `Object Lookup Attempt Interval` settings.
 
 ## Fine-Tuning Auto-Wait Logic
 

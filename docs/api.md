@@ -7,7 +7,7 @@ Rapise can test REST/SOAP APIs. We recommend starting with these tutorials:
 
 In-depth documentation on Web Service Testing:
 
-[Web Service Testing](/Guide/web_service_testing/)
+[Web Service Testing](Guide/web_service_testing.md)
 
 ## Webinars
 
@@ -16,5 +16,5 @@ In-depth documentation on Web Service Testing:
 
 ## See Also
 
-- [Testing REST Web Services](/Guide/rest_web_service/)
-- [Testing SOAP Web Services](/Guide/soap_web_services/)
+- [Testing REST Web Services](Guide/rest_web_service.md)
+- [Testing SOAP Web Services](Guide/soap_web_services.md)

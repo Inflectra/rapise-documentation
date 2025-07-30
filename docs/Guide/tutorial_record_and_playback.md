@@ -2,7 +2,7 @@
 
 In this section, you will learn how to record and execute a Rapise script against a web application. We will be using a demo application called [**Library Information System**](http://libraryinformationsystem.org/). Our test will be simple: it will log on to the library catalog, navigate to the main menu, and click on all of the menu options to ensure the links are working.
 
-You are viewing the **codeless** version of the tutorial. It demonstrates usage of [Rapise Visual Language](/RVL/Overview/). To view the JavaScript-based tutorial, click [here](tutorial_web_using_javascript.md).
+You are viewing the **codeless** version of the tutorial. It demonstrates usage of [Rapise Visual Language](../RVL/Overview.md). To view the JavaScript-based tutorial, click [here](tutorial_web_using_javascript.md).
 
 ## Open Rapise and Create New Test
 

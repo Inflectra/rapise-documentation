@@ -229,8 +229,8 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 *   **Web Services** - Allows you to add a new [web service](web_service_testing.md) definition to your Rapise test. Clicking this displays the [Add Web Service](dialog_add_web_service.md) dialog box.
 *   **Object Manager** - Opens the [Object Manager](object_manager.md) add-in, which is used to copy recorded objects between test scripts.
 *   **Chrome for Testing** - Opens the [Chrome for Testing dialog](setting_up_selenium.md#chrome-for-testing-dialog).
-*   **RPA Monitor** - Opens the [RPA Monitor](/Manuals/Rpa/).
-*   **Rapise Launcher** - Starts the [Rapise Launcher](/Guide/spiratest_integration/#using-rapiselauncher).
+*   **RPA Monitor** - Opens the [RPA Monitor](../Manuals/Rpa.md).
+*   **Rapise Launcher** - Starts the [Rapise Launcher](spiratest_integration.md#using-rapiselauncher).
 
 ## Settings
 
