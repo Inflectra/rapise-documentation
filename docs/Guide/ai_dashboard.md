@@ -33,7 +33,7 @@ The dashboard comprises three pages:
 
 ### Settings
 
-In its initial release, Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key). For [Azure OpenAI](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key), you also need to specify the endpoint URL.
+In its initial release (8.2), Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key). For [Azure OpenAI](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key), you also need to specify the endpoint URL.
 
 === "Screenshot"
     ![Dashboard Settings](./img/ai_dashboard_settings.png){width="900px"}
@@ -52,6 +52,9 @@ In its initial release, Rapise supports both OpenAI and Azure OpenAI models. To 
     **Test Model**: [Button]
 
 You can create options that are local to the current testing framework. Simply click the `local[create]` button. If local options exist, Rapise will prioritize them over global ones. To delete local options, click `... > Delete Local`.
+
+!!! note
+    You can press ++shift+ctrl+q++ in the AI Dashboard to reveal additional and experimental settings.
 
 #### Amazon Bedrock
 
