@@ -29,7 +29,7 @@
     
     
       
-        <title>NeoLoad Convertor Dialog - RapiseDocs</title>
+        <title>NeoLoad Converter Dialog - RapiseDocs</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#neoload-convertor-dialog" class="md-skip">
+        <a href="#neoload-converter-dialog" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              NeoLoad Convertor Dialog
+              NeoLoad Converter Dialog
             
           </span>
         </div>
@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1110,6 +1110,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11028,6 +11040,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11319,41 +11343,41 @@
               
                 
                 
-                <h1 id="neoload-convertor-dialog">NeoLoad Convertor Dialog<a class="headerlink" href="#neoload-convertor-dialog" title="Permanent link">&para;</a></h1>
+                <h1 id="neoload-converter-dialog">NeoLoad Converter Dialog<a class="headerlink" href="#neoload-converter-dialog" title="Permanent link">&para;</a></h1>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>NeoLoad integration has been removed in Rapise 7.0.</p>
 </div>
 <p><img alt="neoload-conversion-dialog" src="../img/neoload_convertor_dialog1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The purpose of this dialog is to allow you to convert a functional test script from Rapise into a protocol-based performance script that can be executed using the <a href="../neoload_integration/">NeoLoad</a> performance testing tool from Neotys.</p>
+<p>This dialog enables the conversion of a functional test script from Rapise into a protocol-based performance script executable by the <a href="../neoload_integration/">NeoLoad</a> performance testing tool from Neotys.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>Use menu <code>Tools &gt; Convert to Neoload</code>.</p>
+<p>To open this dialog, navigate to <code>Tools &gt; Convert to Neoload</code>.</p>
 <h2 id="virtual-user">Virtual User<a class="headerlink" href="#virtual-user" title="Permanent link">&para;</a></h2>
-<p>In this field, you need to enter the name of the virtual user to create in NeoLoad:</p>
+<p>In this field, specify the name of the virtual user to be created in NeoLoad:</p>
 <ul>
-<li>The default value is "VirtualUser"</li>
-<li>If the name is already used, then it is automatically renamed using “_X” suffix, with X an integer incremented.</li>
-<li>If the name has invalid characters then they will be escaped as an underscore (_).</li>
+<li>The default value is "VirtualUser".</li>
+<li>If the name is already in use, it is automatically renamed by appending the suffix “_X”, where X is an incrementing integer.</li>
+<li>If the name contains invalid characters, they are escaped as an underscore (_).</li>
 </ul>
 <h2 id="base-container">Base Container<a class="headerlink" href="#base-container" title="Permanent link">&para;</a></h2>
-<p>This specifies the base container  where we want to start the recording (Init / Actions / End)</p>
+<p>This specifies the base container where recording should start (Init / Actions / End).</p>
 <ul>
 <li>The default value is Actions.</li>
 </ul>
 <h2 id="containerbusiness-transaction">Container/Business Transaction<a class="headerlink" href="#containerbusiness-transaction" title="Permanent link">&para;</a></h2>
-<p>This is used to specify the current recording container in NeoLoad. It is just based on a single level. There is no way to specify a tree of containers.</p>
+<p>This specifies the current recording container in NeoLoad. It is limited to a single level; it does not support specifying a tree of containers.</p>
 <ul>
-<li>The default is no container.</li>
-<li>If the name is already used then it will be made unique by adding _1, _2, etc.</li>
-<li>If the name is empty then no container will be used.</li>
+<li>By default, no container is used.</li>
+<li>If the name is already in use, it is made unique by appending <code>_1</code>, <code>_2</code>, and so on.</li>
+<li>If the name is left empty, no container will be used.</li>
 </ul>
 <h2 id="detect-dynamic-parameters">Detect Dynamic Parameters<a class="headerlink" href="#detect-dynamic-parameters" title="Permanent link">&para;</a></h2>
-<p>When you check this box, Rapise tells NeoLoad to scan the protocol traffic to look for known dynamic parameters (e.g. Session IDs, ASP.NET ViewState) that change on each HTTP request and need to be parameterized by NeoLoad to ensure the performance scripts are robust and well-defined (v.s. having a hardcoded Session ID).</p>
+<p>When this box is checked, Rapise instructs NeoLoad to scan the protocol traffic for known dynamic parameters (e.g., Session IDs, ASP.NET ViewState) that change with each HTTP request. These parameters must be parameterized by NeoLoad to ensure the performance scripts are robust and well-defined, avoiding hardcoded Session IDs.</p>
 <h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Convert</strong> will start the Rapise &gt; NeoLoad test conversion process</li>
-<li><strong>Cancel</strong> will abort the conversion and return you to Rapise</li>
+<li><strong>Convert</strong> initiates the Rapise &gt; NeoLoad test conversion process.</li>
+<li><strong>Cancel</strong> cancels the conversion and returns you to Rapise.</li>
 </ul>
                 
               

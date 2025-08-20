@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -4304,6 +4316,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getcurrentvalue" class="md-nav__link">
+    GetCurrentValue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getnextvalue" class="md-nav__link">
     GetNextValue
   </a>
@@ -4313,6 +4332,13 @@
           <li class="md-nav__item">
   <a href="#randomstring" class="md-nav__link">
     RandomString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    Reset
   </a>
   
 </li>
@@ -11113,6 +11139,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11372,6 +11410,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getcurrentvalue" class="md-nav__link">
+    GetCurrentValue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getnextvalue" class="md-nav__link">
     GetNextValue
   </a>
@@ -11381,6 +11426,13 @@
           <li class="md-nav__item">
   <a href="#randomstring" class="md-nav__link">
     RandomString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    Reset
   </a>
   
 </li>
@@ -11427,12 +11479,20 @@
 <td>Formats string according to a template.</td>
 </tr>
 <tr>
+<td><a href="#getcurrentvalue">GetCurrentValue</a></td>
+<td>Calculates actual value of the generator according to a template.</td>
+</tr>
+<tr>
 <td><a href="#getnextvalue">GetNextValue</a></td>
 <td>Calculates next value of the generator according to a template.</td>
 </tr>
 <tr>
 <td><a href="#randomstring">RandomString</a></td>
 <td>Generates a random alphanumeric string of a given length.</td>
+</tr>
+<tr>
+<td><a href="#reset">Reset</a></td>
+<td>Set Generator Value.</td>
 </tr>
 </tbody>
 </table>
@@ -11474,7 +11534,7 @@
 <tr>
 <td>projectNameOrId</td>
 <td>string | number</td>
-<td>Name or ID of a Spira project that should host the generator.</td>
+<td>Name or ID of a Spira project that should host the generator.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -11613,6 +11673,41 @@
 <p><strong>Returns:</strong></p>
 <p>string | <br>number: Value generated using a template.</p>
 <p><a name="see.also.generator.format"></a></p>
+<p><a name="GetCurrentValue"></a>    </p>
+<h4 id="getcurrentvalue">GetCurrentValue<a class="headerlink" href="#getcurrentvalue" title="Permanent link">&para;</a></h4>
+<p>Calculates actual value of the generator according to a template. The template can be empty, can contain {value} placeholder or be a function.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Generator</span><span class="p">.</span><span class="nx">GetCurrentValue</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">template</span><span class="p">,</span><span class="w"> </span><span class="nx">projectNameOrId</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Unique name of the generator.</td>
+</tr>
+<tr>
+<td>template</td>
+<td>string</td>
+<td>Template for the value to return. If template is empty then generated value is returned as is. If it is a string then generated value replaces placeholder {value}. Template can be a function that receives the next value and calculates the value to return.<br>Optional, Default: "{value}".</td>
+</tr>
+<tr>
+<td>projectNameOrId</td>
+<td>string | number</td>
+<td>Name or ID of a Spira project that hosts the generator.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>string | <br>number: Actual value or null</p>
+<p><a name="see.also.generator.getcurrentvalue"></a></p>
 <p><a name="GetNextValue"></a>    </p>
 <h4 id="getnextvalue">GetNextValue<a class="headerlink" href="#getnextvalue" title="Permanent link">&para;</a></h4>
 <p>Calculates next value of the generator according to a template. The template can be empty, can contain {value} placeholder or be a function.</p>
@@ -11635,13 +11730,13 @@
 </tr>
 <tr>
 <td>template</td>
-<td>string | function</td>
-<td>Template for the value to return. If template is empty then generated value is returned as is. If it is a string then generated value replaces placeholder {value}. Template can be a function that receives the next value and calculates the value to return.</td>
+<td>string</td>
+<td>Template for the value to return. If template is empty then generated value is returned as is. If it is a string then generated value replaces placeholder {value}. Template can be a function that receives the next value and calculates the value to return.<br>Optional, Default: "{value}".</td>
 </tr>
 <tr>
 <td>projectNameOrId</td>
 <td>string | number</td>
-<td>Name or ID of a Spira project that hosts the generator.</td>
+<td>Name or ID of a Spira project that hosts the generator.<br>Optional.</td>
 </tr>
 </tbody>
 </table>
@@ -11673,6 +11768,41 @@
 <p><strong>Returns:</strong></p>
 <p>string: Generated string.</p>
 <p><a name="see.also.generator.randomstring"></a></p>
+<p><a name="Reset"></a>    </p>
+<h4 id="reset">Reset<a class="headerlink" href="#reset" title="Permanent link">&para;</a></h4>
+<p>Set Generator Value.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Generator</span><span class="p">.</span><span class="nx">Reset</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">projectNameOrId</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Unique name of the generator.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string | number</td>
+<td>New value of the generator.</td>
+</tr>
+<tr>
+<td>projectNameOrId</td>
+<td>string | number</td>
+<td>Name or ID of a Spira project that hosts the generator.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>string | <br>number: Generator Id</p>
+<p><a name="see.also.generator.reset"></a></p>
                 
                   
                 

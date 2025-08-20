@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11095,6 +11107,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11367,32 +11391,32 @@
                 
                 <h1 id="playback">Playback<a class="headerlink" href="#playback" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>When you record a test, Rapise translates your actions into a script When you <strong>playback</strong> the test, the script is executed.</p>
+<p>When you record a test, Rapise translates your actions into a script. When you <strong>play back</strong> the test, the script is executed.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>You can either run your script from the <a href="../command_line/">Command Line</a>, or you can play it back while Rapise is open (described below):</p>
+<p>You can either run your script from the <a href="../command_line/">Command Line</a> or play it back while Rapise is open (as described below):</p>
 <ol>
 <li>
-<p>You will first need to <a href="../open_a_test/">open your test or framework</a>.  There is no need to have the AUT (Application Under Test) open. Rapise will open the AUT before it begins execution of the test.</p>
+<p>You will first need to <a href="../open_a_test/">open your test or framework</a>. There is no need to have the AUT (Application Under Test) open. Rapise will open the AUT before it begins test execution.</p>
 </li>
 <li>
-<p>Now, press the play button at the top of the Rapise toolbar.
+<p>Now, press the Play button at the top of the Rapise toolbar.
 <img alt="play icon" src="../img/playback1.png" /></p>
 </li>
 <li>
-<p>In <a href="../Frameworks/frameworks/">testing framework</a> mode you may be prompted to select test case to executed:</p>
+<p>In <a href="../Frameworks/frameworks/">testing framework</a> mode, you may be prompted to select a test case to execute:</p>
 <p><img alt="Test case to execute" src="../img/playback_prompt_test_case_to_execute.png" /></p>
 </li>
 <li>
-<p>Alternatively, you have the option to select a specific test case from the beginning by clicking on the <code>Play</code> button next to it in the <a href="../object_tree/">object tree</a>:</p>
+<p>Alternatively, you can select a specific test case from the <a href="../object_tree/">object tree</a> by clicking the <code>Play</code> button next to it:</p>
 <p><img alt="Play from object tree" src="../img/playback_play_from_object_tree.png" /></p>
 </li>
 <li>
-<p>During test execution, Rapise displays an execution monitor dialog box that lets the user see the progress of testing playback. The dialog is only shown during test execution and can be turned off in the <a href="../options_dialog/">Options</a> dialog.  The following is a screenshot of the test execution monitor.</p>
+<p>During test execution, Rapise displays an execution monitor dialog box that allows the user to see the progress of test playback. This dialog is only shown during test execution and can be turned off in the <a href="../options_dialog/">Options</a> dialog. The following is a screenshot of the test execution monitor.</p>
 <p><img alt="playback_execution_monitor" src="../img/playback2.png" /></p>
-<p>The user can pause or stop the test execution by clicking either the <code>Pause</code> or <code>Stop</code> button.</p>
+<p>The user can pause or stop test execution by clicking either the <code>Pause</code> or <code>Stop</code> button.</p>
 </li>
 <li>
-<p>When Rapise is done executing the test, results will be displayed in a table.  The rows with green text are steps that passed; the rows with red text are steps that failed.  The following is a screenshot of test results where every step passed:</p>
+<p>When Rapise has finished executing the test, results are displayed in a table. Rows with green text indicate passed steps; rows with red text indicate failed steps. The following screenshot shows test results where every step passed:</p>
 <p><img alt="test results.zoom70" src="../img/playback3.png" /></p>
 </li>
 </ol>
@@ -11400,17 +11424,17 @@
 <p>Shows test execution status during playback.</p>
 <p><img alt="playback_execution_monitor" src="../img/playback2.png" /></p>
 <ul>
-<li>Progress bar shows test execution progress. This is just an estimate (number of actions executed compared to previous number of actions)</li>
-<li><code>Passed:</code>, <code>Failed:</code>, <code>Unresolved:</code> - number of actions with corresponding execution status.</li>
-<li><strong>Stop</strong> (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-f12">F12</kbd></span>) - terminate execution.</li>
-<li><strong>Pause</strong> - hold test execution until another press of the same button.</li>
-<li><strong>Hide</strong> - hide execution monitor itself. The monitor can be turned off at all in the <a href="../options_dialog/">Options</a> dialog.</li>
+<li>The progress bar shows test execution progress. This is an estimate (based on the number of actions executed relative to the total estimated actions).</li>
+<li><code>Passed:</code>, <code>Failed:</code>, <code>Unresolved:</code> - Number of actions with the corresponding execution status.</li>
+<li><strong>Stop</strong> (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-f12">F12</kbd></span>) - Terminates execution.</li>
+<li><strong>Pause</strong> - Holds test execution until the button is pressed again.</li>
+<li><strong>Hide</strong> - Hides the execution monitor. The monitor can be permanently disabled in the <a href="../options_dialog/">Options</a> dialog.</li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li>For more information about the report, see <a href="../automated_reporting/">Automated Reporting</a>.</li>
 <li>For information about recording a test, see <a href="../recording/">Recording</a>.</li>
-<li>For instructions on using the <strong>Command Line</strong>, look <a href="../command_line/">HERE</a>.</li>
+<li>For instructions on using the <strong>Command Line</strong>, see <a href="../command_line/">Command Line</a>.</li>
 </ul>
                 
               

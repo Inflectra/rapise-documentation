@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11100,6 +11112,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11378,52 +11402,52 @@
                 
                 
                 <h1 id="data-driven-testing">Data-Driven Testing<a class="headerlink" href="#data-driven-testing" title="Permanent link">&para;</a></h1>
-<p>Many test automation scenarios require performing same steps with different data. For example, login into application with different user credentials, or enter several lines of a sales order into a table. This is data-driven testing. From this article you will learn how to do this in Rapise Visual Language (RVL) and JavaScript modes.  You will also learn how to define data within a test and in an external spreadsheet.</p>
+<p>Many test automation scenarios require performing the same steps with different data. For example, you might need to log into an application with various user credentials, or enter several lines of a sales order into a table. This approach is known as data-driven testing. In this article, you will learn how to accomplish this in Rapise Visual Language (RVL) and JavaScript modes. You will also learn how to define data within a test and in an external spreadsheet.</p>
 <h2 id="ddt-in-rvl">DDT in RVL<a class="headerlink" href="#ddt-in-rvl" title="Permanent link">&para;</a></h2>
-<p>Let's start from <a href="../visual_language/">RVL mode</a> first. With RVL you can delegate low-level complex automation tasks to a developer team and focus on testing scenarios and data used to fill forms and tables.</p>
+<p>Let's begin with <a href="../visual_language/">RVL mode</a>. With RVL, you can delegate low-level, complex automation tasks to a development team and focus on testing scenarios and the data used to fill forms and tables.</p>
 <h2 id="embedded-data">Embedded Data<a class="headerlink" href="#embedded-data" title="Permanent link">&para;</a></h2>
-<p>First, define data schema. In the Flow column of RVL spreadsheet choose Map.</p>
+<p>First, define the data schema. In the Flow column of the RVL spreadsheet, choose Map.</p>
 <p><img src="/Guide/img/ddt_data_map.png" width="190" /></p>
-<p>Then hit <span class="keys"><kbd class="key-tab">Tab</kbd></span> on the keyboard and Rapise will generate a template for the data table.</p>
+<p>Then, press <span class="keys"><kbd class="key-tab">Tab</kbd></span> on the keyboard, and Rapise will generate a template for the data table.</p>
 <p><img src="/Guide/img/ddt_data_map_template.png" width="579" /></p>
-<p>Give this new map a name and define columns and initial set of rows with values.</p>
+<p>Give this new map a name and define its columns and an initial set of rows with values.</p>
 <p><img src="/Guide/img/ddt_data_map_values.png" width="453" /></p>
-<p>In our example the map has name <code>Data</code> and it has three columns: <code>FirstName</code>, <code>LastName</code> and <code>Company</code>. It also has two rows with data values.</p>
-<p>Now in our test we can just use the map and refer to it's columns by name.</p>
+<p>In our example, the map is named <code>Data</code> and has three columns: <code>FirstName</code>, <code>LastName</code>, and <code>Company</code>. It also includes two rows with data values.</p>
+<p>Now, in our test, we can simply use the map and refer to its columns by name.</p>
 <p><img src="/Guide/img/ddt_data_map_message.png" width="845" /></p>
-<p>Data becomes one of parameter types.</p>
+<p>Data becomes one of the parameter types.</p>
 <p><img src="/Guide/img/ddt_data_map_type.png" width="153" /></p>
-<p>And when Data is selected as a parameter type then column names are available in the drop down.</p>
+<p>And when Data is selected as a parameter type, the column names are available in the drop-down list.</p>
 <p><img src="/Guide/img/ddt_data_map_columns.png" width="309" /></p>
-<p>Now our RVL looks like this.</p>
+<p>Our RVL now looks like this.</p>
 <p><img src="/Guide/img/ddt_data_map_rvl.png" width="885" /></p>
-<p>Execution of the test produces the report. The test simply prints first line of the data table.</p>
+<p>Executing the test produces the report. The test simply prints the first line of the data table.</p>
 <p><img src="/Guide/img/ddt_data_map_report.png" width="742" /></p>
-<p>The data table we just created is an object in Rapise object repository and it has actions. With actions one can manipulate active row and column index and read arbitrary data from the table.</p>
+<p>The data table we just created is an object in the Rapise object repository and has actions. With these actions, one can manipulate the active row and column index and read arbitrary data from the table.</p>
 <p><img src="/Guide/img/ddt_data_map_object.png" width="526" /></p>
-<p>For the detailed description of actions one can do upon data tables refer to <a href="/Libraries/Map/">Map Object</a> reference.</p>
-<p>Let's advance to next row in our table before printing values.</p>
+<p>For a detailed description of actions that can be performed on data tables, refer to the <a href="../../Libraries/Map/">Map Object</a> reference.</p>
+<p>Let's advance to the next row in our table before printing values.</p>
 <p><img src="/Guide/img/ddt_data_map_sequential.png" width="862" /></p>
-<p>After execution the report displays data from the second row.</p>
+<p>After execution, the report displays data from the second row.</p>
 <p><img src="/Guide/img/ddt_data_map_report2.png" width="620" /></p>
 <h2 id="excel-data">Excel Data<a class="headerlink" href="#excel-data" title="Permanent link">&para;</a></h2>
-<p>Now we are ready to put data into external spreadsheet. Let's create one. In the <code>Files</code> view right click <code>Scripts</code> folder and choose <code>Create &gt; Spreadsheet...</code></p>
+<p>Now, we are ready to place data into an external spreadsheet. Let's create one. In the <code>Files</code> view, right-click the <code>Scripts</code> folder and choose <code>Create &gt; Spreadsheet...</code></p>
 <p><img src="/Guide/img/ddt_spreadsheet.png" width="360" /></p>
-<p>We'll go with default options.</p>
+<p>We will proceed with the default options.</p>
 <p><img src="/Guide/img/ddt_spreadsheet_create.png" width="603" /></p>
-<p>Rapise has built-in spreadsheet editor and you do not need Excel to be installed on the machine.</p>
+<p>Rapise has a built-in spreadsheet editor, so you do not need Excel to be installed on the machine.</p>
 <p><img src="/Guide/img/ddt_spreadsheet_editor.png" width="492" /></p>
-<p>Let's bind to this spreadsheet in RVL. Insert a line below <code>Data</code> map we created in previous section. In the <code>Flow</code> column choose <code>Map</code> and then set map type to <code>Range</code>.</p>
+<p>Let's bind to this spreadsheet in RVL. Insert a line below the <code>Data</code> map we created in the previous section. In the <code>Flow</code> column, choose <code>Map</code> and then set the map type to <code>Range</code>.</p>
 <p><img src="/Guide/img/ddt_spreadsheet_range.png" width="430" /></p>
-<p>Give the map same name Data and make sure that it references Data.xlsx which we just created.</p>
+<p>Give the map the same name, <code>Data</code>, and ensure that it references <code>Data.xlsx</code>, which we just created.</p>
 <p><img src="/Guide/img/ddt_spreadsheet_binding.png" width="862" /></p>
-<p>Running the test. Now data is taken from the <code>Data.xlsx</code>. Notice that in <code>Data.xlsx</code> we named columns same way as in the previous section.</p>
+<p>When the test is run, data is now sourced from <code>Data.xlsx</code>. Notice that in <code>Data.xlsx</code>, we named the columns in the same way as in the previous section.</p>
 <p><img src="/Guide/img/ddt_spreadsheet_report.png" width="632" /></p>
-<p>If we'll do a <a href="/RVL/Loops/">loop</a> with Data map Rapise will iterate through all lines on execution.</p>
+<p>If we perform a <a href="../../RVL/Loops/">loop</a> with the Data map, Rapise will iterate through all lines during execution.</p>
 <p><img src="/Guide/img/ddt_spreadsheet_loop.png" width="870" /></p>
 <p><img src="/Guide/img/ddt_spreadsheet_report2.png" width="623" /></p>
 <h2 id="ddt-in-javascript">DDT in JavaScript<a class="headerlink" href="#ddt-in-javascript" title="Permanent link">&para;</a></h2>
-<p>One can read data from a spreadsheet in JavaScript mode as well.  There is a global Spreadsheet object that is available in every test. Here is an example of Spreadsheet API usage.</p>
+<p>Data can also be read from a spreadsheet in JavaScript mode. A global <code>Spreadsheet</code> object is available in every test. Here is an example of <code>Spreadsheet</code> API usage.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoAttach</span><span class="p">(</span><span class="s1">&#39;Calc.xls&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Calc Data&#39;</span><span class="p">);</span>
 <span class="k">while</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">DoSequential</span><span class="p">())</span>
 <span class="p">{</span>
@@ -11440,16 +11464,16 @@
 <span class="w">                   </span><span class="nx">CheckResult</span><span class="p">(</span><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetCell</span><span class="p">(</span><span class="s2">&quot;Result&quot;</span><span class="p">)));</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Description of all Spreadsheet actions and properties is available <a href="/Libraries/Spreadsheet/">here</a>.</p>
-<p>Open <code>UsingSpreadsheet</code> sample test from the start page to see a working example (scroll the list of samples down).</p>
+<p>A description of all <code>Spreadsheet</code> actions and properties is available <a href="../../Libraries/Spreadsheet/">here</a>.</p>
+<p>Open the <code>UsingSpreadsheet</code> sample test from the start page to see a working example (scroll down the list of samples).</p>
 <p><img src="/Guide/img/ddt_sampletest.png" width="1177" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://youtu.be/gh8pop9LIb0?t=222">Data-Driven Testing (webinar)</a></li>
-<li>How To: Easily Attaching RVL Script to an External Spreadsheet in Rapise (<a href="https://youtu.be/iuWCXmzZsow">watch video</a>)</li>
+<li>How To: Easily Attach an RVL Script to an External Spreadsheet in Rapise (<a href="https://youtu.be/iuWCXmzZsow">watch video</a>)</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB432.aspx">KB432</a> Writing data to an Excel spreadsheet</li>
 <li><a href="https://www.inflectra.com/support/knowledgebase/kb27.aspx">KB27</a> Using Rapise to extract test data from an Excel sheet </li>
-<li><a href="https://www.inflectra.com/Ideas/Entry/rapise--data-driven-testing-using-the-spreadsheet--288.aspx">Blog: </a> Data Driven Testing using the Spreadsheet object (JavaScript)</li>
+<li><a href="https://www.inflectra.com/Ideas/Entry/rapise--data-driven-testing-using-the-spreadsheet--288.aspx">Blog: </a> Data-Driven Testing using the <code>Spreadsheet</code> object (JavaScript)</li>
 <li><a href="../data_driven_testing/">Data-driven testing tutorial (JavaScript)</a></li>
 <li><a href="../Frameworks/parameters/">Parameters and Configurations</a></li>
 </ul>

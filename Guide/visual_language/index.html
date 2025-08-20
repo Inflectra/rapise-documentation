@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -3921,8 +3933,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#power-of-dropdowns" class="md-nav__link">
-    Power of Dropdowns
+  <a href="#the-power-of-dropdowns" class="md-nav__link">
+    The Power of Dropdowns
   </a>
   
 </li>
@@ -11090,6 +11102,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11335,8 +11359,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#power-of-dropdowns" class="md-nav__link">
-    Power of Dropdowns
+  <a href="#the-power-of-dropdowns" class="md-nav__link">
+    The Power of Dropdowns
   </a>
   
 </li>
@@ -11360,55 +11384,46 @@
                 
                 
                 <h1 id="rapise-visual-language-rvl">Rapise Visual Language (RVL)<a class="headerlink" href="#rapise-visual-language-rvl" title="Permanent link">&para;</a></h1>
-<p>Rapise includes a <strong>scriptless</strong> approach to writing automated tests as well as the option to use the built-in <a href="../javascript_ide/">JavaScript IDE</a>.</p>
-<p>This section gives an overview of the <strong>Rapise Visual Language (RVL)</strong> option and why you would use it.</p>
+<p>Rapise offers a <strong>scriptless</strong> approach to writing automated tests, as well as the option to use the built-in <a href="../javascript_ide/">JavaScript IDE</a>.</p>
+<p>This section provides an overview of the <strong>Rapise Visual Language (RVL)</strong> option and its purpose and advantages.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>For more information on RVL's syntax and constructs, please refer to the separate <a href="../rvl_editor/">RVL section</a> of this user manual.</p>
 </div>
 <h2 id="what-is-scriptless-testing">What is Scriptless Testing<a class="headerlink" href="#what-is-scriptless-testing" title="Permanent link">&para;</a></h2>
 <p><img alt="clip0148" src="../img/rvl_about.png" /></p>
-<p>Let's imagine we're recording a simple automated web test against the sample <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a> website that comes with Rapise:</p>
+<p>Imagine recording a simple automated web test against the sample <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a> website included with Rapise:</p>
 <p><img alt="clip0148" src="../img/visual_language1.png" /></p>
-<p>Now in this script, we'll perform the following actions to verify that you can login correctly (the happy path):</p>
+<p>For this script, we will perform the following actions to verify a successful login (the happy path):</p>
 <ol>
-<li>
-<p>Click on the login button</p>
-</li>
-<li>
-<p>Enter your username and password</p>
-</li>
-<li>
-<p>Click on the submit button</p>
-</li>
-<li>
-<p>Once the home page loads, verify the name of the logged in user at the top-right</p>
-</li>
+<li>Click the login button</li>
+<li>Enter the username and password</li>
+<li>Click the submit button</li>
+<li>Once the home page loads, verify the logged-in user's name in the top-right corner</li>
 </ol>
-<p>If you use the JavaScript <a href="../scripting_choice_dialog/">scripting option</a>, what will be recorded is a JavaScript test script that looks something like the following:</p>
+<p>If you use the JavaScript <a href="../scripting_choice_dialog/">scripting option</a>, Rapise records a JavaScript test script similar to the following:</p>
 <p><img alt="clip0149" src="../img/visual_language2.png" /></p>
-<p>You can drag and drop objects and actions from the object tree on the left-hand side into the test script, but for automation engineers that are not programmers, we found that in many cases the resulting scripts are not easy to understand and the syntax can be fiddly to get right. All Java, JavaScript, C#, C++, C programmers out there know that you need curly braces, semi-colons at the end of each line, etc. but for others, it's not so obvious.</p>
-<p>So to make automated testing and the power of Rapise's object based testing <strong>easier and more accessible</strong>, you can use the alternative RVL methodology.</p>
+<p>You can drag and drop objects and actions from the object tree on the left into the test script. However, for automation engineers who are not programmers, we found that the resulting scripts are often difficult to understand, and the syntax can be tricky to get right. While programmers familiar with Java, JavaScript, C#, C++, or C understand the need for curly braces, semicolons at the end of each line, and other syntax rules, these conventions are not as intuitive for others.</p>
+<p>To make automated testing and the power of Rapise's object-based testing <strong>easier and more accessible</strong>, Rapise offers the alternative RVL methodology.</p>
 <h3 id="rvl">RVL<a class="headerlink" href="#rvl" title="Permanent link">&para;</a></h3>
-<p>Let's imagine that we perform the exact same set of steps, recording the test script using the Rapise Visual Language approach. As a result we get:</p>
+<p>Imagine performing the exact same set of steps, recording the test script using the Rapise Visual Language approach. The result is:</p>
 <p><img alt="Steps RVL" src="../img/visual_language3.png" /></p>
-<p>What you'll notice is that each of the recorded actions has now become a series of rows in the grid.</p>
-<p>The <strong>Type</strong> column sets the type of a row (perform an action, comment, make an assertion that a value matches what was expected, set a variable, be a parameter or output to the current test report):</p>
+<p>Each recorded action becomes a series of rows in the grid.</p>
+<p>The <strong>Type</strong> column specifies the row's type (e.g., performing an action, adding a comment, asserting that a value matches expectations, setting a variable, defining a parameter, or capturing output for the current test report):</p>
 <p><img alt="Type column" src="../img/visual_language4.png" /></p>
-<p>The <strong>Object</strong> column is used to select the object from the object
-tree:</p>
+<p>The <strong>Object</strong> column is used to select an object from the object tree:</p>
 <p><img alt="Object column" src="../img/visual_language5.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This dropdown shows all the objects from the object tree, <a href="/Libraries/ses_lib_global/">global utility objects</a> as well as <code>Functions</code> object which you can use to call custom functions (written in JavaScript).</p>
+<p>This dropdown displays all objects from the object tree, <a href="../../Libraries/ses_lib_global/">global utility objects</a>, as well as the <code>Functions</code> object, which allows you to call custom functions (written in JavaScript).</p>
 </div>
-<p>The <strong>Action</strong> column defines what to do with the selected object.</p>
+<p>The <strong>Action</strong> column defines the action to perform on the selected object.</p>
 <p><img alt="Action column" src="../img/visual_language8.png" /></p>
-<p>Finally, the remaining columns (<strong>ParamName</strong>, <strong>ParamType</strong>, <strong>ParamValue</strong>) contain any parameter values, with subsequent rows being used if necessary:</p>
+<p>Finally, the remaining columns (<strong>ParamName</strong>, <strong>ParamType</strong>, <strong>ParamValue</strong>) contain parameter values, with subsequent rows used as needed:</p>
 <p><img alt="Param columns" src="../img/visual_language6.png" /></p>
-<p>This means that once you have learned the objects during testing, anyone can compose the test just by adding rows to the grid and then just picking the appropriate objects and actions.</p>
-<h3 id="power-of-dropdowns">Power of Dropdowns<a class="headerlink" href="#power-of-dropdowns" title="Permanent link">&para;</a></h3>
-<p>RVL dropdowns help you spend less time on editing test steps. When you expand the Object dropdown you see available objects. When an object is selected the Action dropdown shows applicable actions. If a selected action accepts parameters then parameter names and types are generated automatically.</p>
+<p>This means that once the objects have been learned during testing, anyone can compose a test by adding rows to the grid and selecting the appropriate objects and actions.</p>
+<h3 id="the-power-of-dropdowns">The Power of Dropdowns<a class="headerlink" href="#the-power-of-dropdowns" title="Permanent link">&para;</a></h3>
+<p>RVL dropdowns help reduce the time spent on editing test steps. When the Object dropdown is expanded, available objects are displayed. When an object is selected, the Action dropdown displays applicable actions. If a selected action accepts parameters, then parameter names and types are automatically generated.</p>
 <p><img alt="RVL Editing" data-gifffer="/Guide/img/visual_language.gif" /></p>
                 
               

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -2660,42 +2672,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modules-page-objects-node" class="md-nav__link">
-    Modules / Page Objects Node
+  <a href="#modules-pages-node" class="md-nav__link">
+    Modules / Pages Node
   </a>
   
-    <nav class="md-nav" aria-label="Modules / Page Objects Node">
+    <nav class="md-nav" aria-label="Modules / Pages Node">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#page-objects-context-menu" class="md-nav__link">
-    Page Objects Context Menu
+  <a href="#modules-pages-context-menu" class="md-nav__link">
+    Modules / Pages Context Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#page-object-context-menu" class="md-nav__link">
+    Page Object Context Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-page-action-context-menu" class="md-nav__link">
+    Module / Page Action Context Menu
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#single-test-mode" class="md-nav__link">
-    Single Test Mode
-  </a>
-  
-    <nav class="md-nav" aria-label="Single Test Mode">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#context-menu-root-node" class="md-nav__link">
-    Context Menu (root node)
-  </a>
   
 </li>
         
@@ -2709,6 +2715,13 @@
           <li class="md-nav__item">
   <a href="#context-menu-object" class="md-nav__link">
     Context Menu (object)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-menu-object-repository" class="md-nav__link">
+    Context Menu (Object Repository)
   </a>
   
 </li>
@@ -11257,6 +11270,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11618,42 +11643,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modules-page-objects-node" class="md-nav__link">
-    Modules / Page Objects Node
+  <a href="#modules-pages-node" class="md-nav__link">
+    Modules / Pages Node
   </a>
   
-    <nav class="md-nav" aria-label="Modules / Page Objects Node">
+    <nav class="md-nav" aria-label="Modules / Pages Node">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#page-objects-context-menu" class="md-nav__link">
-    Page Objects Context Menu
+  <a href="#modules-pages-context-menu" class="md-nav__link">
+    Modules / Pages Context Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#page-object-context-menu" class="md-nav__link">
+    Page Object Context Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-page-action-context-menu" class="md-nav__link">
+    Module / Page Action Context Menu
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#single-test-mode" class="md-nav__link">
-    Single Test Mode
-  </a>
-  
-    <nav class="md-nav" aria-label="Single Test Mode">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#context-menu-root-node" class="md-nav__link">
-    Context Menu (root node)
-  </a>
   
 </li>
         
@@ -11667,6 +11686,13 @@
           <li class="md-nav__item">
   <a href="#context-menu-object" class="md-nav__link">
     Context Menu (object)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-menu-object-repository" class="md-nav__link">
+    Context Menu (Object Repository)
   </a>
   
 </li>
@@ -11692,62 +11718,62 @@
                 <h1 id="object-tree-view">Object Tree View<a class="headerlink" href="#object-tree-view" title="Permanent link">&para;</a></h1>
 <p><img alt="Object Tree View" src="../img/object_tree_view.png" width="241px" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The purpose of the Object Tree View varies depending on whether the current context is a standalone test or a <a href="../Frameworks/frameworks/">testing framework</a>.</p>
+<p>The purpose of the Object Tree View varies based on whether the current context is a standalone test or a <a href="../Frameworks/frameworks/">testing framework</a>.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>The Object Tree View is always visible by default, unless you have explicitly switched to a different view. If you want to display the Object Tree View again, go to <code>View &gt; Show &gt; Objects</code>.</p>
+<p>The Object Tree View is always visible by default, unless you have explicitly switched to a different view. To display the Object Tree View again, go to <code>View &gt; Show &gt; Objects</code>.</p>
 <p>The <strong>Objects</strong> dialog is a component of the <a href="../restoring_the_default_layout/">Default Layout</a>.</p>
 <h2 id="filtering">Filtering<a class="headerlink" href="#filtering" title="Permanent link">&para;</a></h2>
-<p>Object Tree has build in filtering and display mode switches.</p>
+<p>The Object Tree has built-in filtering and display mode switches.</p>
 <p><img alt="Filter" src="../img/object_tree_filter.png" width="241px" /></p>
 <ul>
-<li><em>Filter</em> - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box or press <code>X</code> icon or press <span class="keys"><kbd class="key-escape">Esc</kbd></span> on your keyboard.</li>
+<li><em>Filter</em> - A quick filter to narrow down the range displayed in the object tree. It updates the tree as you type. To cancel the filtering, simply remove everything from this input box, press the <code>X</code> icon, or press <span class="keys"><kbd class="key-escape">Esc</kbd></span> on your keyboard.</li>
 </ul>
 <h2 id="testing-framework-mode">Testing Framework Mode<a class="headerlink" href="#testing-framework-mode" title="Permanent link">&para;</a></h2>
-<p>When a <a href="../Frameworks/frameworks/">Testing Framework</a> is currently open, the Tree View includes additional nodes.</p>
+<p>When a <a href="../Frameworks/frameworks/">Testing Framework</a> is open, the Tree View includes additional nodes.</p>
 <h3 id="test-cases-node">Test Cases Node<a class="headerlink" href="#test-cases-node" title="Permanent link">&para;</a></h3>
-<p>The node represents framework <a href="../Frameworks/frameworks/#test-cases">test cases</a>.</p>
+<p>This node represents framework <a href="../Frameworks/frameworks/#test-cases">test cases</a>.</p>
 <h4 id="test-cases-root-context-menu">Test Cases Root Context Menu<a class="headerlink" href="#test-cases-root-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Test Cases Root" src="../img/object_tree_context_testcases.png" width="266px" /></p>
 <ul>
-<li><strong>Create Test Case</strong> - Add new <a href="../Frameworks/frameworks/#test-cases">test case</a> to the root.</li>
-<li><strong>Import Test Case</strong> - <a href="../Frameworks/frameworks/#importing-test-cases">Import Test Case</a> to the root.</li>
-<li><strong>Play All</strong> - Run all root test cases except those marked with <code>template</code> or <code>skip</code> tags.</li>
-<li><strong>Play All (Recursive)</strong> - Run all test cases except those marked with <code>template</code> or <code>skip</code> tags.</li>
-<li><strong>Reveal in Explorer</strong> - Open <code>TestCases</code> folder in file explorer.</li>
-<li><strong>Expand All</strong> - Expand all nodes below.</li>
-<li><strong>Collapse All</strong> - Collapse all nodes below.</li>
-<li><strong>Reload</strong> - Reload all test cases (may be needed if test were synchronized with remote repository).</li>
+<li><strong>Create Test Case</strong> - Adds a new <a href="../Frameworks/frameworks/#test-cases">test case</a> to the root.</li>
+<li><strong>Import Test Case</strong> - <a href="../Frameworks/frameworks/#importing-test-cases">Imports a Test Case</a> to the root.</li>
+<li><strong>Play All</strong> - Runs all root test cases except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Play All (Recursive)</strong> - Runs all test cases except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Reveal in Explorer</strong> - Opens the <code>TestCases</code> folder in your file explorer.</li>
+<li><strong>Expand All</strong> - Expands all nodes below.</li>
+<li><strong>Collapse All</strong> - Collapses all nodes below.</li>
+<li><strong>Reload</strong> - Reloads all test cases (this may be needed if tests were synchronized with a remote repository).</li>
 </ul>
 <h4 id="test-cases-group-context-menu">Test Cases Group Context Menu<a class="headerlink" href="#test-cases-group-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Test Cases Group" src="../img/object_tree_context_testcasegroup.png" width="259px" /></p>
 <ul>
-<li><strong>Create Test Case</strong> - Add new <a href="../Frameworks/frameworks/#test-cases">test case</a> to this group.</li>
-<li><strong>Import Test Case</strong> - <a href="../Frameworks/frameworks/#importing-test-cases">Import Test Case</a> to this group.</li>
-<li><strong>Play All</strong> - Run all test cases from this folder except those marked with <code>template</code> or <code>skip</code> tags.</li>
-<li><strong>Play All (Recursive)</strong> - Run all test cases in this folder and its subfolders except those marked with <code>template</code> or <code>skip</code> tags.</li>
-<li><strong>Reveal in Explorer</strong> - Open <code>TestCases</code> folder in file explorer.</li>
+<li><strong>Create Test Case</strong> - Adds a new <a href="../Frameworks/frameworks/#test-cases">test case</a> to this group.</li>
+<li><strong>Import Test Case</strong> - <a href="../Frameworks/frameworks/#importing-test-cases">Imports a Test Case</a> to this group.</li>
+<li><strong>Play All</strong> - Runs all test cases from this folder, except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Play All (Recursive)</strong> - Runs all test cases in this folder and its subfolders, except those marked with <code>template</code> or <code>skip</code> tags.</li>
+<li><strong>Reveal in Explorer</strong> - Opens the <code>TestCases</code> folder in your file explorer.</li>
 </ul>
 <h4 id="test-case-context-menu">Test Case Context Menu<a class="headerlink" href="#test-case-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Test Case" src="../img/object_tree_context_tc.png" width="278px" /></p>
 <ul>
-<li><strong>Play</strong> - Execute this test case.</li>
-<li><strong>Record</strong> - Start recorder for this test case.</li>
-<li><strong>Reload</strong> - Re-read information about this test case.</li>
-<li><strong>Last Report</strong> - Open last execution report for this test case (if any).</li>
-<li><strong>Clone</strong> - Make a Clone of the test case</li>
-<li><strong>Move</strong> - Move this Test Case into new or existing Folder (Re-Group)</li>
-<li><strong>Rename</strong> - Change Alias name (folder name will stay the same)</li>
-<li><strong>Delete</strong> - Remove a test case</li>
+<li><strong>Play</strong> - Executes this test case.</li>
+<li><strong>Record</strong> - Starts the recorder for this test case.</li>
+<li><strong>Reload</strong> - Re-reads information about this test case.</li>
+<li><strong>Last Report</strong> - Opens the last execution report for this test case (if available).</li>
+<li><strong>Clone</strong> - Clones the test case.</li>
+<li><strong>Move</strong> - Moves this test case into a new or existing folder (re-groups it).</li>
+<li><strong>Rename</strong> - Changes the alias name (the folder name will remain the same).</li>
+<li><strong>Delete</strong> - Removes the test case.</li>
 </ul>
 <h4 id="test-case-tags">Test Case Tags<a class="headerlink" href="#test-case-tags" title="Permanent link">&para;</a></h4>
-<p>When you right-click with the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key pressed, the context menu will have two additional options:</p>
+<p>When you right-click with the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key pressed, the context menu will include options to manage the following tags:</p>
 <p><img alt="Test Case Tags" src="../img/object_tree_tc_tags.png" width="247px" /></p>
 <ul>
-<li><strong>draft</strong>: Toggles the <code>draft</code> state of the test case. This is useful for marking a test case as incomplete.</li>
-<li><strong>template</strong>: Marks the test case as a template. Template test cases are not displayed in the <a href="../spira_dashboard_2/">Spira Dashboard</a>. It is assumed that templates will be used to create test cases using the <strong>Clone</strong> functionality.</li>
-<li><strong>skip</strong>: Ignore this test case when using <strong>Play All</strong> or <strong>Play All (Recursive)</strong></li>
+<li><strong>draft</strong>: Toggles the <code>draft</code> state of the test case, which is useful for marking it as incomplete.</li>
+<li><strong>template</strong>: Marks the test case as a template. Template test cases are not displayed in the <a href="../spira_dashboard_2/">Spira Dashboard</a>, as it is assumed they will be used to create test cases using the <strong>Clone</strong> functionality.</li>
+<li><strong>skip</strong>: Ignores this test case when using <strong>Play All</strong> or <strong>Play All (Recursive)</strong>.</li>
 </ul>
-<p>The <code>draft</code> and <code>template</code> states affect the display of the context menu:</p>
+<p>The <code>draft</code> and <code>template</code> states affect the context menu's display:</p>
 <p>Default:</p>
 <p><img alt="Test Case Default" src="../img/object_tree_tc_default.png" width="192px" /></p>
 <p>Draft:</p>
@@ -11757,88 +11783,93 @@
 <h4 id="test-case-object-repository-context-menu">Test Case Object Repository Context Menu<a class="headerlink" href="#test-case-object-repository-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Objects" src="../img/object_tree_context_tc_objects.png" width="251px" /></p>
 <ul>
-<li><strong>Collapse All</strong> - Collapse all object windows.</li>
-<li><strong>Expand All</strong> - Expand all object windows.</li>
-<li><strong>Reload</strong> - Re-read information from this Object Repository.</li>
+<li><strong>Collapse All</strong> - Collapses all object windows.</li>
+<li><strong>Expand All</strong> - Expands all object windows.</li>
+<li><strong>Reload</strong> - Re-reads information from this Object Repository.</li>
 <li><strong>Object Manager</strong> - Opens the <a href="../object_manager/">Object Manager</a>.</li>
 </ul>
 <h4 id="test-case-rvl-sheet-context-menu">Test Case RVL Sheet Context Menu<a class="headerlink" href="#test-case-rvl-sheet-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Sheet" src="../img/object_tree_context_tc_sheet.png" width="225px" /></p>
 <ul>
-<li><strong>Play this Sheet</strong> - Execute given RVL Sheet.</li>
+<li><strong>Play this Sheet</strong> - Executes the given RVL Sheet.</li>
 </ul>
 <h3 id="user-functions-and-variables">User Functions and Variables<a class="headerlink" href="#user-functions-and-variables" title="Permanent link">&para;</a></h3>
-<p>Rapise scans available shared JavaScript files and extracts information about global user defined <a href="../global_variables/">functions and variables</a> into these nodes.</p>
+<p>Rapise scans available shared JavaScript files and extracts information about global, user-defined <a href="../global_variables/">functions and variables</a> into these nodes.</p>
 <h4 id="user-functionsvariables-context-menu">User Functions/Variables Context Menu<a class="headerlink" href="#user-functionsvariables-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Functions" src="../img/object_tree_context_functions.png" width="171px" /></p>
 <p><img alt="Variables" src="../img/object_tree_context_variables.png" width="171px" /></p>
 <ul>
-<li><strong>Reload</strong> - Re-read information about known Functions/Variables.</li>
+<li><strong>Reload</strong> - Re-reads information about known functions and variables.</li>
 </ul>
 <h3 id="shared-node">Shared Node<a class="headerlink" href="#shared-node" title="Permanent link">&para;</a></h3>
-<p>The node displays shared assets, including common JavaScript files (<code>*.js</code>), Object Repositories (<code>Objects.js</code>), Spreadsheets (<code>*.xlsx</code>, <code>*.xls</code>, <code>*.csv</code>), WebService definitions  (<code>*.rest</code>, <code>*.soap</code>) and other file types (<code>*.json</code>, <code>*.txt</code>, etc.).</p>
+<p>This node displays shared assets, including common JavaScript files (<code>*.js</code>), Object Repositories (<code>Objects.js</code>), spreadsheets (<code>*.xlsx</code>, <code>*.xls</code>, <code>*.csv</code>), web service definitions (<code>*.rest</code>, <code>*.soap</code>), and other file types (<code>*.json</code>, <code>*.txt</code>, etc.).</p>
 <h4 id="shared-node-context-menu">Shared Node Context Menu<a class="headerlink" href="#shared-node-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Shared" src="../img/object_tree_context_shared.png" width="266px" /></p>
 <ul>
-<li><strong>New JavaScript File...</strong> - create and add a <code>.js</code> file.</li>
-<li><strong>New Spreadsheet...</strong> - create and add a <code>.xlsx</code> file.</li>
-<li><strong>New Text File...</strong> - create and add a <code>.txt</code> file.</li>
-<li><strong>New JSON File...</strong> - create and add a <code>.json</code> file.</li>
-<li><strong>New File...</strong> - create and add other type of file.</li>
-<li><strong>New Dropdowns.xlsx</strong> - create <a href="../Frameworks/frameworks/#dropdownsxlsx">Dropdowns.xlsx</a>. This item is only visible if there is no <code>Dropdowns.xlsx</code> yet.</li>
-<li><strong>Reveal In Explorer</strong> - open <code>Shared</code> folder in file explorer.</li>
-<li><strong>Import File</strong> - Import a file (usually spreadsheet or text)</li>
-<li><strong>Reload</strong> - Update a shared files view.</li>
+<li><strong>New JavaScript File...</strong> - Creates and adds a <code>.js</code> file.</li>
+<li><strong>New Spreadsheet...</strong> - Creates and adds a <code>.xlsx</code> file.</li>
+<li><strong>New Text File...</strong> - Creates and adds a <code>.txt</code> file.</li>
+<li><strong>New JSON File...</strong> - Creates and adds a <code>.json</code> file.</li>
+<li><strong>New File...</strong> - Creates and adds another type of file.</li>
+<li><strong>New Dropdowns.xlsx</strong> - Creates <a href="../Frameworks/frameworks/#dropdownsxlsx">Dropdowns.xlsx</a>. This item is only visible if <code>Dropdowns.xlsx</code> does not yet exist.</li>
+<li><strong>Reveal In Explorer</strong> - Opens the <code>Shared</code> folder in your file explorer.</li>
+<li><strong>Import File</strong> - Imports a file (usually a spreadsheet or text file).</li>
+<li><strong>Reload</strong> - Updates the shared files view.</li>
 </ul>
 <h4 id="shared-file-context-menu">Shared File Context Menu<a class="headerlink" href="#shared-file-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Shared File" src="../img/object_tree_context_shared_file.png" width="244px" /></p>
 <ul>
-<li><strong>Rename</strong> - change the name of a file.</li>
-<li><strong>Make a Copy</strong> - create a duplicate shared file with identical contents.</li>
-<li><strong>Remove from Disk</strong> - deletes the file from Test as well as from the disk.</li>
-<li><strong>Reveal in Explorer</strong> - opens the file explorer and highlights this particular file.</li>
+<li><strong>Rename</strong> - Changes the name of a file.</li>
+<li><strong>Make a Copy</strong> - Creates a duplicate shared file with identical contents.</li>
+<li><strong>Remove from Disk</strong> - Deletes the file from the test as well as from the disk.</li>
+<li><strong>Reveal in Explorer</strong> - Opens the file explorer and highlights this particular file.</li>
 </ul>
-<h3 id="modules-page-objects-node">Modules / Page Objects Node<a class="headerlink" href="#modules-page-objects-node" title="Permanent link">&para;</a></h3>
-<p>The node contains <a href="../Frameworks/pageobjects/">Module / Page Objects</a> defined in this testing framework.</p>
-<h4 id="page-objects-context-menu">Page Objects Context Menu<a class="headerlink" href="#page-objects-context-menu" title="Permanent link">&para;</a></h4>
-<p><img alt="Page Objects" src="../img/object_tree_context_pageobjects.png" width="257px" /></p>
+<h3 id="modules-pages-node">Modules / Pages Node<a class="headerlink" href="#modules-pages-node" title="Permanent link">&para;</a></h3>
+<p>This node contains <a href="../Frameworks/pageobjects/">Modules / Page Objects</a> defined within this testing framework.</p>
+<h4 id="modules-pages-context-menu">Modules / Pages Context Menu<a class="headerlink" href="#modules-pages-context-menu" title="Permanent link">&para;</a></h4>
+<p><img alt="Page Objects Context Menu" src="../img/object_tree_context_pageobjects.png" width="257px" /></p>
 <ul>
-<li><strong>Create Module / Page Object</strong> - add new <a href="../Frameworks/pageobjects/">Module / Page Object</a>.</li>
-<li><strong>Import Module / Page Object</strong> - import existing <a href="../Frameworks/pageobjects/">Module / Page Object</a> from another testing framework.</li>
+<li><strong>Create Module / Page Object</strong> - Adds a new <a href="../Frameworks/pageobjects/">Module / Page Object</a>.</li>
+<li><strong>Import Module / Page Object</strong> - Imports an existing <a href="../Frameworks/pageobjects/">Module / Page Object</a> from another testing framework.</li>
 </ul>
-<p><img alt="Page Object" src="../img/object_tree_context_pageobject.png" width="206px" /></p>
+<h4 id="page-object-context-menu">Page Object Context Menu<a class="headerlink" href="#page-object-context-menu" title="Permanent link">&para;</a></h4>
+<p><img alt="Page Object Context Menu" src="../img/object_tree_context_pageobject.png" width="206px" /></p>
 <ul>
-<li><strong>Reload</strong> - refresh information about this module.</li>
-<li><strong>Delete</strong> - remove this module.</li>
+<li><strong>Reload</strong> - Refreshes information about this module.</li>
+<li><strong>Add Repository Object</strong> – Creates a new Object Repository and adds an object to it. This option is only available if no Object Repository currently exists and a <a href="../object_templates/">template repository</a> has been defined.</li>
+<li><strong>Delete</strong> - Removes this module.</li>
 </ul>
+<h4 id="module-page-action-context-menu">Module / Page Action Context Menu<a class="headerlink" href="#module-page-action-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Page Object Action" src="../img/object_tree_context_pageobject_action.png" width="254px" /></p>
 <ul>
-<li><strong>Invoke &lt;Some Action&gt;</strong> - play this action alone.</li>
-</ul>
-<h2 id="single-test-mode">Single Test Mode<a class="headerlink" href="#single-test-mode" title="Permanent link">&para;</a></h2>
-<h3 id="context-menu-root-node">Context Menu (root node)<a class="headerlink" href="#context-menu-root-node" title="Permanent link">&para;</a></h3>
-<p>Right click the <strong>Object Tree</strong> node to see:</p>
-<p><img alt="Object Tree Root" src="../img/object_tree_context_singleroot.png" width="271px" /></p>
-<ul>
-<li><strong>Reload</strong> - checks for new objects to display.</li>
-<li><strong>Object Manager</strong> - run an <a href="../object_manager/">Object Manager</a>.</li>
+<li><strong>Invoke &lt;Some Action&gt;</strong> - Plays this action alone.</li>
 </ul>
 <h3 id="context-menu-window">Context Menu (window)<a class="headerlink" href="#context-menu-window" title="Permanent link">&para;</a></h3>
-<p>Right click the <strong>Window</strong> node to see:</p>
+<p>Right-click the <strong>Window</strong> node to see:</p>
 <p><img alt="Object Window" src="../img/object_tree_context_singlewindow.png" width="192px" /></p>
 <ul>
-<li><strong>Remove</strong> remove window and all contained objects.</li>
+<li><strong>Remove</strong> - Removes the window and all contained objects.</li>
+<li><strong>Add Repository Object</strong> - Adds an object from a template to this window. This menu item is only available when a <a href="../object_templates/">template repository</a> is defined for the current testing framework.</li>
 </ul>
 <h3 id="context-menu-object">Context Menu (object)<a class="headerlink" href="#context-menu-object" title="Permanent link">&para;</a></h3>
-<p>Right click on an object in the <strong>Object Tree</strong> dialog to see:</p>
+<p>Right-click an object in the <strong>Object Tree</strong> dialog to see:</p>
 <p><img alt="object tree, context menu 2" src="../img/object_tree_context_object.png" width="222px" /></p>
 <ul>
-<li><strong>Flash</strong> opens the application/url where the object is located.  A frame will blink around the object to show you where it is on the page.</li>
-<li><strong>Re-Learn</strong> will open up the <a href="../recording/">Recorder</a>, allowing you to re-learn the object. This is useful if the AUT has changed and the object definition will no longer correctly locate the object.</li>
-<li><strong>Rename</strong> opens Rename dialog for the object.</li>
-<li><strong>Clone</strong> makes a copy of the object definition and adds the cloned version into the tree. You can then make changes to the cloned copy.</li>
-<li><strong>Add Parameter</strong> opens up a dialog box that lets you add a custom parameter to the learned object definition (stored in the <code>Objects.js</code> file).</li>
-<li><strong>Delete</strong> simply removes the selected object from the tree.</li>
+<li><strong>Flash</strong> - Opens the application/URL where the object is located. A frame will blink around the object to show its position on the page.</li>
+<li><strong>Re-Learn</strong> - Opens the <a href="../recording/">Recorder</a>, allowing you to re-learn the object. This is useful if the AUT has changed and the object definition no longer correctly locates the object.</li>
+<li><strong>Rename</strong> - Opens the Rename dialog for the object.</li>
+<li><strong>Clone</strong> - Makes a copy of the object definition and adds the cloned version to the tree. You can then make changes to the cloned copy.</li>
+<li><strong>Add Parameter</strong> - Opens a dialog box that allows you to add a custom parameter to the learned object definition (stored in the <code>Objects.js</code> file).</li>
+<li><strong>Delete</strong> - Simply removes the selected object from the tree.</li>
+<li><strong>Add Repository Object</strong> - Adds an object from a template to this object's window. This menu item is only available when a <a href="../object_templates/">template repository</a> is defined for the current testing framework.</li>
+</ul>
+<h3 id="context-menu-object-repository">Context Menu (Object Repository)<a class="headerlink" href="#context-menu-object-repository" title="Permanent link">&para;</a></h3>
+<p>Right-click the <strong>Object Tree</strong> node to see:</p>
+<p><img alt="Object Tree Root" src="../img/object_tree_context_singleroot.png" width="271px" /></p>
+<ul>
+<li><strong>Reload</strong> - Checks for new objects to display.</li>
+<li><strong>Object Manager</strong> - Runs an <a href="../object_manager/">Object Manager</a>.</li>
+<li><strong>Add Repository Object</strong> - Adds an object from a template to this repository. This menu item is only available when a <a href="../object_templates/">template repository</a> is defined for the current testing framework.</li>
 </ul>
                 
               

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11093,6 +11105,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11365,9 +11389,9 @@
                 
                 <h1 id="accessing-files-and-io-functions">Accessing Files and I/O Functions<a class="headerlink" href="#accessing-files-and-io-functions" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Sometimes using Rapise you need to access files on the Windows file system, either for testing purposes, or to object test data stored in a flat CSV, TSV or text file.</p>
+<p>When using Rapise, you sometimes need to access files on the Windows file system, either for testing purposes or to access test data stored in flat CSV, TSV, or text files.</p>
 <h2 id="file-global-object">File Global Object<a class="headerlink" href="#file-global-object" title="Permanent link">&para;</a></h2>
-<p>Normally file operations in Rapise are done with global <a href="/Libraries/File/">File</a> object.</p>
+<p>File operations in Rapise are typically performed using the global <a href="../../Libraries/File/">File</a> object.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">fn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;TestFile.txt&quot;</span><span class="p">;</span>
@@ -11407,7 +11431,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="filesystemobject">FileSystemObject<a class="headerlink" href="#filesystemobject" title="Permanent link">&para;</a></h2>
-<p>Alternatively you can can access the file system using the <code>FileSystemObject</code>.</p>
+<p>Alternatively, you can access the file system using the <code>FileSystemObject</code>.</p>
 <p><a href="http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx">http://msdn.microsoft.com/en-us/library/aa242706(v=vs.60).aspx</a></p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>

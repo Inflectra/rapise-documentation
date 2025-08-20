@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -8309,6 +8321,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#movetolocation" class="md-nav__link">
+    MoveToLocation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#perform" class="md-nav__link">
     Perform
   </a>
@@ -8318,6 +8337,20 @@
           <li class="md-nav__item">
   <a href="#release" class="md-nav__link">
     Release
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollbyamount" class="md-nav__link">
+    ScrollByAmount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollfromorigin" class="md-nav__link">
+    ScrollFromOrigin
   </a>
   
 </li>
@@ -11185,6 +11218,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11507,6 +11552,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#movetolocation" class="md-nav__link">
+    MoveToLocation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#perform" class="md-nav__link">
     Perform
   </a>
@@ -11516,6 +11568,20 @@
           <li class="md-nav__item">
   <a href="#release" class="md-nav__link">
     Release
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollbyamount" class="md-nav__link">
+    ScrollByAmount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollfromorigin" class="md-nav__link">
+    ScrollFromOrigin
   </a>
   
 </li>
@@ -11605,12 +11671,24 @@
 <td>Moves the mouse to the specified offset of the top-left corner of the specified element.</td>
 </tr>
 <tr>
+<td><a href="#movetolocation">MoveToLocation</a></td>
+<td>Moves the mouse from the upper left corner of the current viewport by the provided offset.</td>
+</tr>
+<tr>
 <td><a href="#perform">Perform</a></td>
 <td>Performs the currently built action.</td>
 </tr>
 <tr>
 <td><a href="#release">Release</a></td>
 <td>Releases the mouse button on the specified element.</td>
+</tr>
+<tr>
+<td><a href="#scrollbyamount">ScrollByAmount</a></td>
+<td>Scrolls by provided amounts with the origin in the top left corner of the viewport.</td>
+</tr>
+<tr>
+<td><a href="#scrollfromorigin">ScrollFromOrigin</a></td>
+<td>Scrolls by provided amount based on a provided origin.</td>
 </tr>
 <tr>
 <td><a href="#sendkeys">SendKeys</a></td>
@@ -11928,6 +12006,36 @@ If offset is not specified moves the mouse to the specified element.</p>
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
 <p><a name="see.also.actions.movetoelement"></a></p>
+<p><a name="MoveToLocation"></a>    </p>
+<h4 id="movetolocation">MoveToLocation<a class="headerlink" href="#movetolocation" title="Permanent link">&para;</a></h4>
+<p>Moves the mouse from the upper left corner of the current viewport by the provided offset.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">MoveToLocation</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="mf">100</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>offsetX</td>
+<td>number</td>
+<td>The horizontal offset to which to move the mouse.</td>
+</tr>
+<tr>
+<td>offsetY</td>
+<td>number</td>
+<td>The vertical offset to which to move the mouse.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>A self-reference.</p>
+<p><a name="see.also.actions.movetolocation"></a></p>
 <p><a name="Perform"></a>    </p>
 <h4 id="perform">Perform<a class="headerlink" href="#perform" title="Permanent link">&para;</a></h4>
 <p>Performs the currently built action.</p>
@@ -11960,6 +12068,81 @@ If no element is specified releases the mouse button at the last known mouse coo
 <p><strong>Returns:</strong></p>
 <p>A self-reference.</p>
 <p><a name="see.also.actions.release"></a></p>
+<p><a name="ScrollByAmount"></a>    </p>
+<h4 id="scrollbyamount">ScrollByAmount<a class="headerlink" href="#scrollbyamount" title="Permanent link">&para;</a></h4>
+<p>Scrolls by provided amounts with the origin in the top left corner of the viewport.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">ScrollByAmount</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">10</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deltaX</td>
+<td>number</td>
+<td>Distance along X axis to scroll using the wheel. A negative value scrolls left.</td>
+</tr>
+<tr>
+<td>deltaY</td>
+<td>number</td>
+<td>Distance along Y axis to scroll using the wheel. A negative value scrolls up.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>A self-reference.</p>
+<p><a name="see.also.actions.scrollbyamount"></a></p>
+<p><a name="ScrollFromOrigin"></a>    </p>
+<h4 id="scrollfromorigin">ScrollFromOrigin<a class="headerlink" href="#scrollfromorigin" title="Permanent link">&para;</a></h4>
+<p>Scrolls by provided amount based on a provided origin.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Actions</span><span class="p">().</span><span class="nx">ScrollFromOrigin</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">10</span><span class="p">).</span><span class="nx">Perform</span><span class="p">();</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>el</td>
+<td>WebElementWrapper</td>
+<td>The element from which to scroll. If null - Viewport is used insted.<br>Optional.</td>
+</tr>
+<tr>
+<td>offsetX</td>
+<td>number</td>
+<td>The horizontal offset to which to move the mouse.</td>
+</tr>
+<tr>
+<td>offsetY</td>
+<td>number</td>
+<td>The vertical offset to which to move the mouse.</td>
+</tr>
+<tr>
+<td>deltaX</td>
+<td>number</td>
+<td>Distance along X axis to scroll using the wheel. A negative value scrolls left.</td>
+</tr>
+<tr>
+<td>deltaY</td>
+<td>number</td>
+<td>Distance along Y axis to scroll using the wheel. A negative value scrolls up.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>A self-reference.</p>
+<p><a name="see.also.actions.scrollfromorigin"></a></p>
 <p><a name="SendKeys"></a>    </p>
 <h4 id="sendkeys">SendKeys<a class="headerlink" href="#sendkeys" title="Permanent link">&para;</a></h4>
 <p>Sends a sequence of keystrokes to the specified element in the browser.

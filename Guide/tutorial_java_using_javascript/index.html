@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1170,6 +1170,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11088,6 +11100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11352,73 +11376,73 @@
                 
                 
                 <h1 id="tutorial-java-testing-javascript">Tutorial: Java Testing (JavaScript)<a class="headerlink" href="#tutorial-java-testing-javascript" title="Permanent link">&para;</a></h1>
-<p>In this section, you will learn how to record and execute a Rapise script against a Java applications. We will show you have to test the following three different types of Java application:</p>
+<p>In this section, you will learn how to record and execute a Rapise script against Java applications. We will show you how to test the following three different types of Java applications:</p>
 <ul>
 <li>Java AWT Apps</li>
 <li>Java Swing Apps</li>
 <li>Java SWT Apps</li>
 </ul>
-<p>This version of the tutorial uses the JavaScript test editor option in Rapise. If you'd prefer to use the <a href="../visual_language/">Rapise Visual Language (RVL)</a>, please go to the main <a href="../tutorial_java_testing/">Tutorial</a> instead.</p>
+<p>This version of the tutorial uses the JavaScript test editor option in Rapise. If you'd prefer to use the <a href="../visual_language/">Rapise Visual Language (RVL)</a>, please refer to the main <a href="../tutorial_java_testing/">Tutorial</a> instead.</p>
 <h2 id="example-1-launching-the-sample-awtswing-application">Example 1 - Launching the Sample AWT/Swing Application<a class="headerlink" href="#example-1-launching-the-sample-awtswing-application" title="Permanent link">&para;</a></h2>
-<p>On the <a href="../start_page/">Start Page</a> of Rapise, click on the <strong>Fetch Samples</strong> button to make sure you have all of the latest samples available.</p>
-<p>Then go to</p>
+<p>On the <a href="../start_page/">Start Page</a> of Rapise, click the <strong>Fetch Samples</strong> button to ensure you have all the latest samples available.</p>
+<p>Then, navigate to</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\Java\AUTJAVA
 </code></pre></div></td></tr></table></div>
 
-<p>and right-click on the <code>x86run.cmd</code> file and choose <strong>Run as Administrator</strong>.</p>
-<p>If you have Java configured correctly, you will see:</p>
+<p>and right-click the <code>x86run.cmd</code> file and choose <strong>Run as Administrator</strong>.</p>
+<p>If Java is configured correctly, you will see:</p>
 <p><img alt="awtswing_sample1" src="../img/autjava.png" /></p>
-<p>If the application doesn't start correctly, make sure you have Java SE and the <a href="../java_awt_swing_testing/">Rapise Java Bridge</a> installed and the JAVA_HOME environment variable correctly set to your Java Runtime (JRE). For more details on this, please refer to: <a href="../java_awt_swing_testing/">Java AWT/Swing Testing</a>.</p>
-<p>Once the application is started, open up Rapise and click <code>File &gt; New Test</code>:</p>
+<p>If the application doesn't start correctly, ensure Java SE and the <a href="../java_awt_swing_testing/">Rapise Java Bridge</a> are installed, and the <code>JAVA_HOME</code> environment variable is correctly set to your Java Runtime (JRE). For more details, please refer to: <a href="../java_awt_swing_testing/">Java AWT/Swing Testing</a>.</p>
+<p>Once the application is started, open Rapise and click <code>File &gt; New Test</code>:</p>
 <p><img alt="clip0128" src="../img/tutorial_java_testing2.png" /></p>
-<p>Enter the name <code>Java Test 1</code> as the name and choose <strong>Basic: Windows Desktop Application</strong> as the methodology.</p>
-<p>Choose the <strong>JavaScript</strong> option during test creation instead of RVL.</p>
+<p>Enter <code>Java Test 1</code> as the name and choose <strong>Basic: Windows Desktop Application</strong> as the methodology.</p>
+<p>Choose the <strong>JavaScript</strong> option during test creation, instead of RVL.</p>
 <p><img alt="clip0129" src="../img/scripting_language_javascript.png" /></p>
 <p>Once the test is created, you will see:</p>
 <p><img alt="newtestcreatedscreen" src="../img/tutorial_java_using_javascript4.png" /></p>
-<p>Click on the <strong>Record</strong> button to display the <a href="../select_an_application_to_record_dialog/">"Select an Application to Record"</a> dialog:</p>
+<p>Click the <strong>Record</strong> button to display the <a href="../select_an_application_to_record_dialog/">"Select an Application to Record"</a> dialog:</p>
 <p><img alt="sar_dialog_java" src="../img/tutorial_java_testing5.png" /></p>
-<p>Choose the <strong>AUT JAVA</strong> process from the list of running applications, change the library selection from Auto to <strong>Java</strong> and click <strong>Select</strong>.</p>
-<p>Now in the sample application click on some of the AWT and/or Swing controls. Rapise will record the actions:</p>
+<p>Choose the <strong>AUT JAVA</strong> process from the list of running applications, change the library selection from <code>Auto</code> to <strong>Java</strong>, and click <strong>Select</strong>.</p>
+<p>Now, in the sample application, click some of the AWT and/or Swing controls. Rapise will record your actions:</p>
 <p><img alt="rad_java1" src="../img/tutorial_java_testing6.png" /></p>
 <p>When you click <strong>Finish</strong>, you will see the recorded test script and learned objects:</p>
 <p><img alt="testscript_java" src="../img/tutorial_java_using_javascript7.png" /></p>
-<p>You can drag and drop any of the learned objects from the left-hand pane into the main test script. You can also just type <strong>SeS("button1")</strong> (for example) and Rapise will display the list of available functions.</p>
+<p>You can drag and drop any learned objects from the left-hand pane into the main test script. You can also simply type <code>SeS("button1")</code> (for example), and Rapise will display the list of available functions.</p>
 <p>When you click <strong>Play</strong>, Rapise will play back your test script against the application:</p>
 <p><img alt="clip0132" src="../img/tutorial_java_testing9.png" /></p>
-<p>Sometimes you need to learn objects that are not visible or are obscured by other objects. To help with this, Rapise has the Object Spy tool. The Spy tool lets you see the objects in the application in a hierarchy that you can learn. When you are in the middle of recording, click on the <strong>Spy</strong> button and Rapise will display the <a href="../object_spy_java/">Java Spy</a>:</p>
+<p>Sometimes, you need to learn objects that are not visible or are obscured by other objects. To assist with this, Rapise provides the Object Spy tool. The Spy tool allows you to view the objects in the application within a hierarchy that you can learn. While recording, click the <strong>Spy</strong> button, and Rapise will display the <a href="../object_spy_java/">Java Spy</a>:</p>
 <p><img alt="sample_java_spy" src="../img/tutorial_java_testing11.png" /></p>
-<p>You can then use the <a href="../object_spy_java/">Java Spy</a> to track and find objects in the application hierarchy. You can navigate to parent objects by right-clicking on them and choosing <strong>Parent</strong>. Once you have found the desired object, click on the <strong>Learn Object</strong> in the Spy toolbar and Rapise will add the object in the Spy to the list of learned objects that you can test against.</p>
+<p>You can then use the <a href="../object_spy_java/">Java Spy</a> to track and find objects within the application hierarchy. You can navigate to parent objects by right-clicking them and choosing <strong>Parent</strong>. Once you have found the desired object, click the <strong>Learn Object</strong> button in the Spy toolbar, and Rapise will add the object from the Spy to the list of learned objects that you can test against.</p>
 <h2 id="example-2-launching-the-sample-swt-application">Example 2 - Launching the Sample SWT Application<a class="headerlink" href="#example-2-launching-the-sample-swt-application" title="Permanent link">&para;</a></h2>
-<p>On the <a href="../start_page/">Start Page</a> of Rapise, click on the <strong>Fetch Samples</strong> button to make sure you have all of the latest samples available.</p>
-<p>Then go to</p>
+<p>On the <a href="../start_page/">Start Page</a> of Rapise, click the <strong>Fetch Samples</strong> button to ensure you have all the latest samples available.</p>
+<p>Then, navigate to</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\JavaSWT\AUTJavaSWT
 </code></pre></div></td></tr></table></div>
 
-<p>and double-click on the <code>JavaSWTAUT.bat</code> file to start the sample application.</p>
-<p>If you have Java configured correctly, you will see:</p>
+<p>and double-click the <code>JavaSWTAUT.bat</code> file to start the sample application.</p>
+<p>If Java is configured correctly, you will see:</p>
 <p><img alt="sample_app_swt" src="../img/tutorial_java_testing12.png" /></p>
-<p>If the application doesn't start correctly, make sure you have Java SE installed and the JAVA_HOME environment variable correctly set to your Java Runtime (JRE). For more details on this, please refer to: <a href="../java_swt/">Java SWT Testing</a>.</p>
-<p>Once the application is started, open up Rapise and click the menu <code>FIle &gt; New Test</code>:</p>
+<p>If the application doesn't start correctly, ensure Java SE is installed and the <code>JAVA_HOME</code> environment variable is correctly set to your Java Runtime (JRE). For more details, please refer to: <a href="../java_swt/">Java SWT Testing</a>.</p>
+<p>Once the application is started, open Rapise and click <code>File &gt; New Test</code>:</p>
 <p><img alt="clip0128" src="../img/tutorial_java_testing2.png" /></p>
-<p>Enter the name "Java Test 2" as the name and choose <strong>Basic: Windows Desktop Application</strong> as the methodology.</p>
-<p>Choose the <strong>JavaScript</strong> option during test creation instead of RVL.</p>
+<p>Enter <code>Java Test 2</code> as the name and choose <strong>Basic: Windows Desktop Application</strong> as the methodology.</p>
+<p>Choose the <strong>JavaScript</strong> option during test creation, instead of RVL.</p>
 <p><img alt="clip0129" src="../img/scripting_language_javascript.png" /></p>
 <p>Once the test is created, you will see:</p>
 <p><img alt="newtestcreatedscreen" src="../img/tutorial_java_using_javascript4.png" /></p>
-<p>Click on the <strong>Record</strong> button to display the <a href="../select_an_application_to_record_dialog/">Select an Application to Record</a> dialog:</p>
+<p>Click the <strong>Record</strong> button to display the <a href="../select_an_application_to_record_dialog/">Select an Application to Record</a> dialog:</p>
 <p><img alt="sar_dialog_swt" src="../img/tutorial_java_testing13.png" /></p>
-<p>Choose the <strong>Test Java SWT Application</strong> from the list of running applications, change the library selection from Auto to <strong>UI Automation</strong> and <strong>SWT</strong> and click <strong>Select</strong>.</p>
-<p>Now in the sample application click on some of the SWT controls. Rapise will record the actions:</p>
+<p>Choose <strong>Test Java SWT Application</strong> from the list of running applications, change the library selection from <code>Auto</code> to <strong>UI Automation</strong> and <strong>SWT</strong>, and click <strong>Select</strong>.</p>
+<p>Now, in the sample application, click some of the SWT controls. Rapise will record your actions:</p>
 <p><img alt="rad_swt" src="../img/tutorial_java_testing14.png" /></p>
 <p>When you click <strong>Finish</strong>, you will see the recorded test script and learned objects:</p>
 <p><img alt="testscript_swt" src="../img/tutorial_java_using_javascript14.png" /></p>
-<p>You can drag and drop any of the learned objects from the left-hand pane into the main test script. You can also just type <strong>SeS("OK")</strong> (for example) and Rapise will display the list of available functions.</p>
+<p>You can drag and drop any learned objects from the left-hand pane into the main test script. You can also simply type <code>SeS("OK")</code> (for example), and Rapise will display the list of available functions.</p>
 <p>When you click <strong>Play</strong>, Rapise will play back your test script against the application:</p>
 <p><img alt="report_swt_sample" src="../img/tutorial_java_using_javascript15.png" /></p>
-<p>Sometimes you need to learn objects that are not visible or are obscured by other objects. To help with this, Rapise has the Object Spy tool. The Spy tool lets you see the objects in the application in a hierarchy that you can learn. When you are in the middle of recording, click on the <strong>Spy</strong> button and Rapise will display the <a href="../object_spy_uiautomation/">UIAutomation Spy</a>:</p>
+<p>Sometimes, you need to learn objects that are not visible or are obscured by other objects. To assist with this, Rapise provides the Object Spy tool. The Spy tool allows you to view the objects in the application within a hierarchy that you can learn. While recording, click the <strong>Spy</strong> button, and Rapise will display the <a href="../object_spy_uiautomation/">UIAutomation Spy</a>:</p>
 <p><img alt="sample_swt_spy" src="../img/tutorial_java_testing20.png" /></p>
-<p>You can then use the <a href="../object_spy_uiautomation/">UIAutomation Spy</a> to track and find objects in the application hierarchy. You can navigate to parent objects by right-clicking on them and choosing <strong>Parent</strong>. Once you have found the desired object, click on the <strong>Learn Object</strong> in the Spy toolbar and Rapise will add the object in the Spy to the list of learned objects that you can test against.</p>
+<p>You can then use the <a href="../object_spy_uiautomation/">UIAutomation Spy</a> to track and find objects within the application hierarchy. You can navigate to parent objects by right-clicking them and choosing <strong>Parent</strong>. Once you have found the desired object, click the <strong>Learn Object</strong> button in the Spy toolbar, and Rapise will add the object from the Spy to the list of learned objects that you can test against.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../java_awt_swing_testing/">Java AWT/Swing Testing</a></li>

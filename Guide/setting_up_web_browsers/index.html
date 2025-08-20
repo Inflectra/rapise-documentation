@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11130,6 +11142,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11436,73 +11460,70 @@
                 
                 
                 <h1 id="setting-up-web-browsers">Setting Up Web Browsers<a class="headerlink" href="#setting-up-web-browsers" title="Permanent link">&para;</a></h1>
-<p>Before you can use Rapise with certain web browsers to do web testing, you will need to install plugins so that Rapise can communicate with them.</p>
+<p>Before you can use Rapise with certain web browsers to perform web testing, you will need to install plugins to enable communication between Rapise and these browsers.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Since Rapise 7.3 it is recommended to use <a href="../selenium_webdriver/">Selenium WebDriver</a> based browser connectors for all web tests. Native Rapise plugins are considered outdated and should only be used for legacy tests and backward compatibility.</p>
+<p>Since Rapise 7.3, it is recommended to use <a href="../selenium_webdriver/">Selenium WebDriver</a>-based browser connectors for all web tests. Native Rapise plugins are considered outdated and should only be used for legacy tests and backward compatibility.</p>
 </div>
 <h2 id="internet-explorer">Internet Explorer<a class="headerlink" href="#internet-explorer" title="Permanent link">&para;</a></h2>
-<p>Unlike the other web browsers, there are actually no steps needed to configure IE. Once Rapise is installed, it is ready to connect to IE for recording, playback and learning without any configuration steps.</p>
+<p>Unlike other web browsers, Internet Explorer requires no configuration steps. Once Rapise is installed, it is ready to connect to Internet Explorer for recording, playback, and learning without any further configuration.</p>
 <h2 id="firefox">Firefox<a class="headerlink" href="#firefox" title="Permanent link">&para;</a></h2>
-<p>In order to test web applications using the Firefox web browser, you will need to install an extension for Firefox that allows Rapise to
-interact with it:</p>
+<p>To test web applications using the Firefox web browser, you will need to install a Firefox extension that allows Rapise to interact with it:</p>
 <ol>
 <li>
-<p>Click the following URL to open the extension page in a new tab: <a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/" target="_blank"><a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/">https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/</a></a></p>
+<p>Click the following link to open the extension page in a new tab: <a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/" target="_blank"><a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/">https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/</a></a></p>
 </li>
 <li>
-<p>Click on the <code>Add to Firefox</code> button to install the Add-On into your instance of Firefox.</p>
+<p>Click the <code>Add to Firefox</code> button to install the extension into your Firefox instance.</p>
 <p><img alt="add to firefox" src="../img/setting_up_web_browsers2.png" /></p>
 </li>
 <li>
-<p>When installation is complete restart Firefox.</p>
+<p>Once installation is complete, restart Firefox.</p>
 </li>
 <li>
-<p>Firefox is ready to be used with Rapise for automated testing.</p>
+<p>Firefox is then ready for automated testing with Rapise.</p>
 </li>
 </ol>
-<p><strong><em>Note:</em></strong> Rapise requires localhost port 4247 to be accessible for correct operation. Please, make sure that this port is unblocked in
-your Firewall.</p>
+<p><strong><em>Note:</em></strong> Rapise requires localhost port 4247 to be accessible for correct operation. Please ensure this port is unblocked in your firewall.</p>
 <h2 id="firefox-for-rapise-65">Firefox For Rapise 6.5<a class="headerlink" href="#firefox-for-rapise-65" title="Permanent link">&para;</a></h2>
-<p>Rapise 6.5 and higher requires you to update RapiseFirefox extension. Simply click the link below and update extension to the latest version.</p>
+<p>For Rapise 6.5 and higher, you must update the RapiseFirefox extension. Simply click the link below to update the extension to the latest version.</p>
 <p><a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/" target="_blank"><a href="https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/">https://addons.mozilla.org/en-US/firefox/addon/rapisefirefox/</a></a></p>
 <h2 id="chrome">Chrome<a class="headerlink" href="#chrome" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Chrome extension and <code>Chrome HTML</code> browser profile have been deprecated. The reason is that <a href="https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/" target="_blank">Google is going to remove MV2 extensions from the store <sup><span class="twemoji small-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M432 320h-32a16 16 0 00-16 16v112H64V128h144a16 16 0 0016-16V80a16 16 0 00-16-16H48a48 48 0 00-48 48v352a48 48 0 0048 48h352a48 48 0 0048-48V336a16 16 0 00-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 000 34L157.67 377a24 24 0 0034 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 00-24-24z"/></svg></span></sup></a>. At Inflectra we decided not to migrate to MV3 extension format because it is unlikely possible due to security changes (primary reason of appearance of MV3). To make Chrome based testing possible we implemented <a href="https://www.inflectra.com/Ideas/Entry/spotlight-rapise-selenium-based-recording-chrome-1348.aspx" target="_blank">Selenium Based Recorder <sup><span class="twemoji small-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M432 320h-32a16 16 0 00-16 16v112H64V128h144a16 16 0 0016-16V80a16 16 0 00-16-16H48a48 48 0 00-48 48v352a48 48 0 0048 48h352a48 48 0 0048-48V336a16 16 0 00-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 000 34L157.67 377a24 24 0 0034 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 00-24-24z"/></svg></span></sup></a>. So please consider switching to <a href="/Guide/selenium_webdriver/#recording-using-selenium">Selenium - Chrome</a> browser profile.</p>
+<p>The Chrome extension and <code>Chrome HTML</code> browser profile have been deprecated. This is because <a href="https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/" target="_blank">Google is going to remove MV2 extensions from the store <sup><span class="twemoji small-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M432 320h-32a16 16 0 00-16 16v112H64V128h144a16 16 0 0016-16V80a16 16 0 00-16-16H48a48 48 0 00-48 48v352a48 48 0 0048 48h352a48 48 0 0048-48V336a16 16 0 00-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 000 34L157.67 377a24 24 0 0034 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 00-24-24z"/></svg></span></sup></a>. At Inflectra, we decided not to migrate to the MV3 extension format because it is unlikely possible due to security changes (the primary reason for the appearance of MV3). To enable Chrome-based testing, we implemented a <a href="https://www.inflectra.com/Ideas/Entry/spotlight-rapise-selenium-based-recording-chrome-1348.aspx" target="_blank">Selenium-Based Recorder <sup><span class="twemoji small-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M432 320h-32a16 16 0 00-16 16v112H64V128h144a16 16 0 0016-16V80a16 16 0 00-16-16H48a48 48 0 00-48 48v352a48 48 0 0048 48h352a48 48 0 0048-48V336a16 16 0 00-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 000 34L157.67 377a24 24 0 0034 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 00-24-24z"/></svg></span></sup></a>. Therefore, please consider switching to the <a href="../selenium_webdriver/#recording-using-selenium">Selenium - Chrome</a> browser profile.</p>
 </div>
-<p>In order to test web applications using the Google Chrome browser, you will need to install an extension for Chrome that allows Rapise to
-interact with it:</p>
+<p>To test web applications using the Google Chrome web browser, you will need to install a Chrome extension that allows Rapise to interact with it:</p>
 <ol>
 <li>
-<p>Click the following URL to open the extension page in a new tab: <a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank"><a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc">https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc</a></a></p>
+<p>Click the following link to open the extension page in a new tab: <a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank"><a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc">https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc</a></a></p>
 <p><img alt="add to chrome" src="../img/setting_up_web_browsers6.png" /></p>
 </li>
 <li>
-<p>Click on the ‘Add to Chrome’ button to install the Add-On into your instance of Chrome.</p>
+<p>Click the ‘Add to Chrome’ button to install the extension into your Chrome instance.</p>
 </li>
 <li>
-<p>It is recommended to set the <strong>Allow access to file URLs</strong> and <strong>Allow in incognito</strong> checkboxes so that web pages opened from the local folder (using the file:// protocol) and in incognito Chrome windows can be also accessed by Rapise when running automated browser tests. To do this right click this link <a href="chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank">chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc</a> and choose <code>Copy link address</code>, then paste the value to a new tab in Chrome:</p>
+<p>It is recommended to enable the <strong>Allow access to file URLs</strong> and <strong>Allow in incognito</strong> checkboxes to ensure Rapise can also access web pages opened from local folders (using the <code>file://</code> protocol) and in incognito Chrome windows when running automated browser tests. To do this, right-click this link <a href="chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank">chrome://extensions/?id=ibngcigigdlhaekbaknfbpcbgilmhahc</a>, choose <code>Copy link address</code>, and then paste the value into a new Chrome tab:</p>
 <p><img alt="checkboxes" src="../img/setting_up_web_browsers7.png" /></p>
 </li>
 <li>
-<p>When installation is complete restart Chrome.</p>
+<p>Once installation is complete, restart Chrome.</p>
 </li>
 </ol>
 <h2 id="chrome-for-rapise-65">Chrome For Rapise 6.5<a class="headerlink" href="#chrome-for-rapise-65" title="Permanent link">&para;</a></h2>
-<p>Rapise 6.5 and higher requires you to update RapiseChrome extension. Simply click the link below and update extension to the latest version.</p>
+<p>For Rapise 6.5 and higher, you must update the RapiseChrome extension. Simply click the link below to update the extension to the latest version.</p>
 <p><a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc" target="_blank"><a href="https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc">https://chrome.google.com/webstore/detail/rapisechromeextension/ibngcigigdlhaekbaknfbpcbgilmhahc</a></a></p>
 <h2 id="chromium-applications">Chromium Applications<a class="headerlink" href="#chromium-applications" title="Permanent link">&para;</a></h2>
-<p>The Rapise extension installation procedure differs in the case of testing Chromium applications. Below are the recommended steps to enable automation for such applications:</p>
+<p>The procedure for installing the Rapise extension differs when testing Chromium applications. Follow these recommended steps to enable automation for such applications:</p>
 <ol>
 <li>
-<p>Refer this <a href="http://www.chromium.org/administrators/pre-installed-extensions">http://www.chromium.org/administrators/pre-installed-extensions</a> to install an extension for a Chromium application. Getting the ID of current version of the Chrome Extension is easy. Install it into a regular Chrome browser following the instructions above, and then check the information in Chrome by following this URL: <a href="chrome://settings/extensionSettings">chrome://settings/extensionSettings</a></p>
+<p>Refer to <a href="http://www.chromium.org/administrators/pre-installed-extensions">http://www.chromium.org/administrators/pre-installed-extensions</a> for instructions on how to install an extension for a Chromium application. It is easy to obtain the ID of the current version of the Chrome Extension. Install it in a regular Chrome browser by following the instructions above, and then check the information in Chrome by navigating to this URL: <a href="chrome://settings/extensionSettings">chrome://settings/extensionSettings</a>.</p>
 </li>
 <li>
-<p>Choose the <strong>Chrome HTML</strong> library in the <strong>Select an Application for Record</strong> dialog in Rapise when recording tests rather than <strong>Auto</strong>. The Rapise library auto-detection logic may fail because the executable name is not <code>chrome.exe</code>.</p>
+<p>In the Rapise <strong>Select an Application for Record</strong> dialog, choose the <strong>Chrome HTML</strong> library when recording tests, rather than <strong>Auto</strong>. Rapise's library auto-detection logic may fail because the executable name is not <code>chrome.exe</code>.</p>
 </li>
 <li>
-<p>After following the steps below to modify the Windows registry, Rapise should be able to record and learn the application correctly.</p>
+<p>After modifying the Windows registry as described below, Rapise should be able to record and learn the application correctly.</p>
 <p>HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\Extensions\malnpehoofemabajdignefgdoppndaeb\path\</p>
 <p>TYPE: REG_SZ</p>
 <p>VALUE: "C:\path\to\your\RapiseChrome.crx"</p>
@@ -11511,22 +11532,22 @@ interact with it:</p>
 <p>VALUE: "1.6.0"</p>
 </li>
 <li>
-<p>For the playback to execute correctly you need to set the following line in the beginning of your <code>User.js</code> file:</p>
+<p>For correct playback, you need to add the following line at the beginning of your <code>User.js</code> file:</p>
 </li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">g_browserExecutablePath</span><span class="o">=</span><span class="s1">&#39;C:\\the\\path\\to\\chromium-based\\app.exe&#39;</span><span class="p">;</span>
 </code></pre></div>
-<p>With that change in place, the recorded test should be able to play.</p>
+<p>With this change, the recorded test should play correctly.</p>
 <h2 id="chrome-frame-applications">Chrome Frame Applications<a class="headerlink" href="#chrome-frame-applications" title="Permanent link">&para;</a></h2>
-<p>The following configuration enables testing of Chrome Frame applications by Rapise:</p>
+<p>The following configuration enables Rapise to test Chrome Frame applications:</p>
 <ol>
 <li>
-<p>A ‘packed’ copy of the RapiseChrome.crx extension is provided with the Rapise installation. It can be located in the </p>
+<p>A 'packed' copy of the RapiseChrome.crx extension is provided with the Rapise installation. It can be found in the </p>
 <p><code>C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\Chrome</code></p>
-<p>folder of your installation.</p>
+<p>installation folder.</p>
 </li>
 <li>
-<p>Enter the following data to the Windows registry:</p>
+<p>Add the following data to the Windows registry:</p>
 <p>[HKEY_CURRENT_USER\Software\Google\ChromeFrame]</p>
 <p>"EnableGCFProtocol"=dword:00000001</p>
 <p>"IsDefaultRenderer"=dword:00000001</p>
@@ -11536,35 +11557,34 @@ interact with it:</p>
 <p>"version"="1.6.0"</p>
 </li>
 <li>
-<p>In the Rapise <strong>Select Application to Record</strong> dialog box, explicitly choose the <strong>Chrome HTML</strong> library rather than using <strong>Auto</strong>.</p>
+<p>In the Rapise <strong>Select Application to Record</strong> dialog box, explicitly choose the <strong>Chrome HTML</strong> library instead of <strong>Auto</strong>.</p>
 </li>
 <li>
-<p>Record the test script as you would normally. Note that there should be no Chrome browser or any Chrome applications running when IE with Chrome Frame is started and recording is being performed.</p>
+<p>Record the test script as you normally would. Note that no Chrome browser or Chrome applications should be running when Internet Explorer with Chrome Frame is started and recording is performed.</p>
 </li>
 </ol>
-<p>You will need to make some changes to the recorded test to ensure that it plays correctly. Insert this line in the beginning of the <code>User.js</code> file:</p>
+<p>You will need to make some changes to the recorded test to ensure correct playback. Insert this line at the beginning of the <code>User.js</code> file:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_browserExecutablePath</span><span class="o">=</span><span class="s2">&quot;iexplore.exe&quot;</span><span class="p">;</span>
 </code></pre></div>
-<p>Check to make sure you have Internet Explorer browser executable available at the specified path on your PC and correct it if necessary.</p>
+<p>Ensure the Internet Explorer browser executable is available at the specified path on your PC, and correct it if necessary.</p>
 <h2 id="edge">Edge<a class="headerlink" href="#edge" title="Permanent link">&para;</a></h2>
-<p>In order to test web applications using the Microsoft Edge browser, you will need to install an extension for Edge that allows Rapise to
-interact with it:</p>
+<p>To test web applications using the Microsoft Edge web browser, you will need to install an Edge extension that allows Rapise to interact with it:</p>
 <ol>
 <li>
-<p>Right click the following URL and choose <code>Open link in new tab</code> to open the extension page: <a href="https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh" target="_blank"><a href="https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh">https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh</a></a></p>
+<p>Right-click the following URL and choose <code>Open link in new tab</code> to open the extension page: <a href="https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh" target="_blank"><a href="https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh">https://microsoftedge.microsoft.com/addons/detail/rapisemsedgeextension/ohghmiancfhdndeciiojhgalcfhllblh</a></a></p>
 </li>
 <li>
-<p>Click on the ‘Get’ button to install the Add-On into your instance of Edge.</p>
+<p>Click the ‘Get’ button to install the extension into your Edge instance.</p>
 </li>
 <li>
-<p>It is recommended to set the <strong>Allow in InPrivate</strong> and <strong>Allow access to file URLs</strong> checkboxes so that web pages opened from the local folder (using the file:// protocol) and in InPrivate Edge windows can be also accessed by Rapise when running automated browser tests. To do this right click this link <a href="edge://extensions/?id=ohghmiancfhdndeciiojhgalcfhllblh" target="_blank">edge://extensions/?id=ohghmiancfhdndeciiojhgalcfhllblh</a> and choose <code>Copy link</code>, then paste the value to a new tab in Edge.</p>
+<p>It is recommended to enable the <strong>Allow in InPrivate</strong> and <strong>Allow access to file URLs</strong> checkboxes to ensure Rapise can also access web pages opened from local folders (using the <code>file://</code> protocol) and in InPrivate Edge windows when running automated browser tests. To do this, right-click this link <a href="edge://extensions/?id=ohghmiancfhdndeciiojhgalcfhllblh" target="_blank">edge://extensions/?id=ohghmiancfhdndeciiojhgalcfhllblh</a>, choose <code>Copy link</code>, and then paste the value into a new Edge tab.</p>
 </li>
 <li>
-<p>When installation is complete restart Edge.</p>
+<p>Once installation is complete, restart Edge.</p>
 </li>
 </ol>
 <h2 id="using-other-browsers-with-rapise">Using Other Browsers with Rapise<a class="headerlink" href="#using-other-browsers-with-rapise" title="Permanent link">&para;</a></h2>
-<p>If you would like to test your applications using <strong>other web browsers (Safari or Opera)</strong> you can use the <a href="../selenium_webdriver/">Selenium WebDriver</a> libraries that are provided with Rapise. To <a href="../setting_up_selenium/">setup the Selenium web browser libraries</a>, please refer to <a href="../setting_up_selenium/">this topic</a>.</p>
+<p>To test your applications using <strong>other web browsers (such as Safari or Opera)</strong>, you can use the <a href="../selenium_webdriver/">Selenium WebDriver</a> libraries provided with Rapise. For instructions on how to <a href="../setting_up_selenium/">set up the Selenium web browser libraries</a>, please refer to <a href="../setting_up_selenium/">this topic</a>.</p>
                 
               
               

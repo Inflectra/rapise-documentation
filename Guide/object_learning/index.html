@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1198,6 +1198,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11116,6 +11128,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11409,27 +11433,27 @@
                 
                 <h1 id="learning">Learning<a class="headerlink" href="#learning" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Objects are the controls and items on the screen of the AUT.  <strong>Learning</strong> an object refers to the process of Rapise collecting enough information about the on-screen item to be able to reference the item when the test script is run without ambiguity and regardless of its location on the UI.</p>
-<p>When Rapise <strong>learns</strong> an object, it records the object's type, its name and how to find the object again (locator).  It saves everything it learns to the script so that the object can be identified when the test is run.  Rapise gives the object a simple name so that you can easily refer to it later if you decide to modify the script.</p>
+<p>Objects are the controls and items on the screen of the AUT. <strong>Learning</strong> an object refers to the process by which Rapise collects sufficient information about an on-screen item to reference it unambiguously during test script execution, regardless of its location on the UI.</p>
+<p>When Rapise <strong>learns</strong> an object, it records the object's type, its name, and its locator (how to find the object again). It saves everything it learns to the script so that the object can be identified when the test is run. Rapise gives the object a simple name so that you can easily refer to it later if you decide to modify the script.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Objects are learned in three ways: (1) automatically during recording, (2) manually using Learn button, (3) using the <a href="../object_spy/">Spy</a> tool.</p>
+<p>Objects are learned in three ways: (1) automatically during recording, (2) manually using the Learn button, and (3) using the <a href="../object_spy/">Spy</a> tool.</p>
 <h2 id="1-automatic-learn">1. Automatic Learn<a class="headerlink" href="#1-automatic-learn" title="Permanent link">&para;</a></h2>
-<p>During a Recording session, Rapise learns about each object with which you interact.  For details, see <a href="../recording/">Recording</a>.</p>
+<p>During a recording session, Rapise learns about each object with which you interact. For details, see <a href="../recording/">Recording</a>.</p>
 <h2 id="2-manual-learn">2. Manual Learn<a class="headerlink" href="#2-manual-learn" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Open the <strong>Recording Activity Dialog</strong>. Instructions are <a href="../recording_activity_dialog/">HERE</a>.</li>
-<li>Place your mouse over the object you wish to learn.  It should become surrounded by a purple box.</li>
+<li>Open the <strong>Recording Activity Dialog</strong>. For instructions, see <a href="../recording_activity_dialog/">HERE</a>.</li>
+<li>Place your mouse over the object you wish to learn. It should become surrounded by a purple box.</li>
 <li>Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span>.</li>
 <li>You will see a new entry in the Recording Activity Dialog, signifying that the object was learned.</li>
 </ol>
 <h2 id="3-spy-tool">3. Spy Tool<a class="headerlink" href="#3-spy-tool" title="Permanent link">&para;</a></h2>
-<p>During a Recording session, you can also click on the <strong>Spy</strong> button inspect the object hierarchy of the application you are testing. The Spy lets you pick specific objects that might not be visible on the screen, or may be parent/child objects of the one highlighted. When you have found the correct object in the Spy, you can use the <strong>Learn Object</strong> button inside the Spy to add it to Rapise's learned object list.</p>
+<p>During a recording session, you can also click the <strong>Spy</strong> button to inspect the object hierarchy of the application you are testing. The Spy allows you to select specific objects that might not be visible on the screen, or that may be parent/child objects of the one highlighted. When you have found the correct object in the Spy, you can use the <strong>Learn Object</strong> button inside the Spy to add it to Rapise's learned object list.</p>
 <h2 id="the-object-tree">The Object Tree<a class="headerlink" href="#the-object-tree" title="Permanent link">&para;</a></h2>
 <p>Regardless of how you learn the object, it will be displayed in the <a href="../object_tree/">Object tree</a>:</p>
 <p><img alt="object_tree_html" src="../img/object_learning1.png" /></p>
-<p>Each object has various properties and actions that can be performed on it. Expanding the object name lets you see the available actions and properties:</p>
+<p>Each object has various properties and actions that can be performed on it. Expanding the object name allows you to view the available actions and properties:</p>
 <p><img alt="object_tree_html_expanded" src="../img/object_learning2.png" /></p>
-<p>Everything Rapise learns about an object is saved in <strong>saved_script_objects</strong> array. You can see this variable defined in the <code>Objects.js</code> file that will be listed in the Files tab of the Rapise. The following shows what Rapise saved about the "Please enter your name" text box in the <a href="../twodialogs_sample/">Tutorial: Windows Testing</a>:</p>
+<p>Everything Rapise learns about an object is saved in the <code>saved_script_objects</code> array. You can see this variable defined in the <code>Objects.js</code> file, which is listed in Rapise's Files tab. The following shows what Rapise saved about the "Please enter your name" text box in the <a href="../twodialogs_sample/">Tutorial: Windows Testing</a>:</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Please_enter_your_name_&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="s2">&quot;locations&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
@@ -11457,7 +11481,7 @@
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../recording/">Recording</a></li>
-<li>Learning invisible  and <a href="../simulated_objects/">Simulated Objects</a> is slightly more complicated.  You can find information on both in the <a href="../recording_activity_dialog/">Recording Activity Dialog</a> section.</li>
+<li>Learning invisible objects and <a href="../simulated_objects/">Simulated Objects</a> is slightly more complicated; you can find information on both in the <a href="../recording_activity_dialog/">Recording Activity Dialog</a> section.</li>
 <li><a href="../learn_object/">Learn Object</a></li>
 </ul>
                 

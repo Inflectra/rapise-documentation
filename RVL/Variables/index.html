@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11159,6 +11171,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11498,10 +11522,10 @@
                 
                 
                 <h1 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h1>
-<p>In RVL, variables are useful for storing intermediate results as well as accessing and passing global values to external <em>JavaScript</em> functions.</p>
-<p>Variables may be used in <a href="../Params/">Params</a> to <a href="../Conditions/">Conditions</a> and in <a href="../Actions/">Actions</a>.</p>
+<p>In RVL, variables are useful for storing intermediate results, as well as accessing and passing global values to external <em>JavaScript</em> functions.</p>
+<p>Variables may be used in <a href="../Params/">Params</a>, <a href="../Conditions/">Conditions</a>, and <a href="../Actions/">Actions</a>.</p>
 <h2 id="declaring">Declaring<a class="headerlink" href="#declaring" title="Permanent link">&para;</a></h2>
-<p>This line declares a variable without any values. Its value may be assigned later:</p>
+<p>This line declares a variable without a value. Its value may be assigned later:</p>
 <table>
 <thead>
 <tr>
@@ -11527,13 +11551,13 @@
 </tbody>
 </table>
 <h2 id="local-variables">Local Variables<a class="headerlink" href="#local-variables" title="Permanent link">&para;</a></h2>
-<p>By default declared variables are assumed to be local. Local variables may be used only within the current RVL script and not visible from other RVL scripts or <em>JavaScript</em> code.</p>
+<p>By default, declared variables are assumed to be local. Local variables may be used only within the current RVL script and are not visible to other RVL scripts or <em>JavaScript</em> code.</p>
 <h2 id="global-variables">Global Variables<a class="headerlink" href="#global-variables" title="Permanent link">&para;</a></h2>
-<p>You may have a <em>JavaScript</em> variable defined in the user <em>Functions</em> file (<code>*.user.js</code>), i.e.:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Piece from User.js</span>
+<p>You may have a <em>JavaScript</em> variable defined in the user <em>Functions</em> file (<code>*.user.js</code>), for example:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Snippet from User.js</span>
 <span class="kd">var</span><span class="w"> </span><span class="nx">globalVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Value&quot;</span><span class="p">;</span>
 </code></pre></div>
-<p>Then in the RVL you may declare <code>globalVar</code> as global and access it (read or assign values). Declaring a variable as global is simple:</p>
+<p>Then, in RVL, you can declare <code>globalVar</code> as global and access it (read or assign values). Declaring a variable as global is simple:</p>
 <table>
 <thead>
 <tr>
@@ -11558,9 +11582,9 @@
 </tr>
 </tbody>
 </table>
-<p>Global variables are useful for exchanging and/or sharing data between different RVL scripts or between <em>RVL</em> and <em>JavaScript</em>.</p>
+<p>Global variables are useful for sharing data between different RVL scripts or between <em>RVL</em> and <em>JavaScript</em>.</p>
 <h3 id="default-value-for-global-variable">Default Value for Global Variable<a class="headerlink" href="#default-value-for-global-variable" title="Permanent link">&para;</a></h3>
-<p>Special parameter name <code>defaultValue</code> of the Global variable definition allows setting default value. This may be needed when you don't know if variable was set before calling this script. So the value will only be assigned is variable is currently undefined. Otherwise the Variable keeps its defined value.</p>
+<p>The special parameter <code>defaultValue</code> in a global variable definition allows you to set a default value. This is useful when you do not know if the variable was set before the script was called. The value will be assigned only if the variable is currently undefined. Otherwise, the variable keeps its existing value.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="defaultValue" src="../img/RVL_Variable_DefaultValue.png" /></p>
 </div>
@@ -11654,10 +11678,10 @@
 </table>
 </div>
 </div>
-<p>This helps to make sheets using global variables to be executable standalone. I.e. you may use <a href="../../Guide/rvl_editor/#context-menu">Play This Sheet</a> in RVL and be sure that Global variable will have a value.</p>
+<p>This helps make sheets that use global variables executable standalone. i.e., you can use <a href="../../Guide/rvl_editor/#context-menu">Play This Sheet</a> in RVL and be sure that the global variable will have a value.</p>
 <h2 id="assigning">Assigning<a class="headerlink" href="#assigning" title="Permanent link">&para;</a></h2>
 <h3 id="assignment-expression">Assignment Expression<a class="headerlink" href="#assignment-expression" title="Permanent link">&para;</a></h3>
-<p>This line declares and assigns value <em>5</em> to a variable <code>MyVar2</code>:</p>
+<p>This line declares and assigns the value <em>5</em> to a variable <code>MyVar2</code>:</p>
 <table>
 <thead>
 <tr>
@@ -11682,9 +11706,9 @@
 </tr>
 </tbody>
 </table>
-<p>If the variable is declared earlier, then assignment just changes its value. If the variable is not yet declared, then assignment is actually a declaration with assignment.</p>
+<p>If a variable has been previously declared, an assignment simply changes its value. If a variable has not been declared, an assignment acts as both a declaration and an assignment.</p>
 <h3 id="action-output">Action Output<a class="headerlink" href="#action-output" title="Permanent link">&para;</a></h3>
-<p>If an action returns a value it can be assigned to a variable via <code>Output</code>.</p>
+<p>If an action returns a value, it can be assigned to a variable via <code>Output</code>.</p>
 <table>
 <thead>
 <tr>
@@ -11728,7 +11752,7 @@
 </tbody>
 </table>
 <h3 id="auto-assignment">Auto Assignment<a class="headerlink" href="#auto-assignment" title="Permanent link">&para;</a></h3>
-<p>There are two auto assigned variables in RVL:  <code>LastResult</code> and <code>LastObject</code>. If an action returns some value then it is assigned to <code>LastResult</code>. <code>LastObject</code> is effectively an alias to the last used object in <strong>Object</strong> column.</p>
+<p>There are two auto-assigned variables in RVL: <code>LastResult</code> and <code>LastObject</code>. If an action returns a value, it is assigned to <code>LastResult</code>. <code>LastObject</code> is effectively an alias to the last used object in the <strong>Object</strong> column.</p>
 <table>
 <thead>
 <tr>
@@ -11762,7 +11786,7 @@
 </tr>
 </tbody>
 </table>
-<p>This snippet prints OS version to the report.</p>
+<p>This snippet prints the OS version to the report.</p>
 <h2 id="using">Using<a class="headerlink" href="#using" title="Permanent link">&para;</a></h2>
 <p>Any <a href="../Params/">Params</a> value may accept a <em>variable</em>:</p>
 <table>
@@ -11848,13 +11872,13 @@
 </tr>
 </tbody>
 </table>
-<p>The Output value may then be used as a param value in actions, conditions, assertions and expressions.</p>
+<p>The Output value may then be used as a parameter value in actions, conditions, assertions, and expressions.</p>
 <h2 id="variable-actions">Variable Actions<a class="headerlink" href="#variable-actions" title="Permanent link">&para;</a></h2>
-<p>One may use an expression to change the value of a variable. Here are several common variable operations that may be used to modify variable values:</p>
+<p>You can use an expression to change the value of a variable. Here are several common operations for modifying variable values:</p>
 <ol>
 <li>
-<p><em>Increment</em> is an operation where numeric value is increased by <code>1</code> or any other specified value. The variable must have a numeric value. Otherwise the result is <code>NaN</code>.</p>
-<p>If no param to <em>Increment</em> is specified then <code>1</code> is assumed:</p>
+<p><em>Increment</em> is an operation where a numeric value is increased by <code>1</code> or any other specified value. The variable must have a numeric value. Otherwise, the result is <code>NaN</code>.</p>
+<p>If no parameter is specified for <em>Increment</em>, <code>1</code> is assumed:</p>
 <table>
 <thead>
 <tr>
@@ -11879,7 +11903,7 @@
 </tr>
 </tbody>
 </table>
-<p>Otherwise it is any <em>value</em>:</p>
+<p>Otherwise, the increment is the specified <em>value</em>:</p>
 <table>
 <thead>
 <tr>
@@ -11906,7 +11930,7 @@
 </table>
 </li>
 <li>
-<p><em>Decrement</em> is the same as increment but the value is subtracted from the variable.</p>
+<p><em>Decrement</em> is similar to increment, but the value is subtracted from the variable.</p>
 </li>
 <li>
 <p><em>Append</em> adds the value as text to the specified variable. This operation is useful for constructing text messages:</p>
@@ -11943,17 +11967,17 @@
 </tr>
 </tbody>
 </table>
-<p>In this example if <code>textVar</code> was empty and <code>numVar</code> had value <code>5</code> then the final value of <code>textVar</code> is the following text:
+<p>In this example, if <code>textVar</code> was empty and <code>numVar</code> had the value <code>5</code>, then the final value of <code>textVar</code> is the following text:
   <code>Final value: 5</code></p>
 </li>
 </ol>
 <h2 id="variables-as-objects">Variables as Objects<a class="headerlink" href="#variables-as-objects" title="Permanent link">&para;</a></h2>
-<p>A variable in Rapise can hold an object from the repository, and when it is a repository object, it can have actions that can be executed.</p>
-<p>When declaring a variable with the <code>objectid</code> <em>ParamType</em>, you are indicating to the RVL editor that the variable has either:</p>
+<p>A variable in Rapise can hold an object from the repository. Such a variable can have actions that can be executed.</p>
+<p>When declaring a variable with the <code>objectid</code> <em>ParamType</em>, you indicate to the RVL editor that its type is one of the following:</p>
 <ol>
-<li>The type of the object when the <code>objectid</code> matches the ID from the object repository.</li>
+<li>The type of the object from the object repository whose ID matches the <code>objectid</code>.</li>
 <li>
-<p>The type by name when the <code>objectid</code> matches a well-known object type. You can find object names in the documentation for each library. For example, the topic <a href="/Libraries/ses_lib_java">Java Objects</a> lists all known object types for the Java library.</p>
+<p>A well-known object type whose name matches the <code>objectid</code>. You can find object names in the documentation for each library. For example, the topic <a href="../../Libraries/ses_lib_java/">Java Objects</a> lists all known object types for the Java library.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Object Rules" src="../img/Variables_object_rules.png" /></p>
 </div>
@@ -11992,7 +12016,7 @@
 <p>(<em>Note: The image also includes a navigation flow marked with a dotted line, connecting the 'Java' section with 'JavaButton', then leading to a list of Java components including 'JavaCheckBox', 'JavaChoice', 'JavaLabel', 'JavaList', 'JavaObject', and 'JavaSwingButton'.</em>)</p>
 </div>
 </div>
-<p>Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type <a href="/Libraries/HTMLObject">HTMLObject</a>, as shown in the object properties:</p>
+<p>Additionally, you can use the type specified in the object's definition properties. For example, most web objects have the type <a href="../../Libraries/HTMLObject/">HTMLObject</a>, as shown in the object properties:</p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Object Type" src="../img/Variables_object_type_properties.png" /></p>
 </div>
@@ -12041,12 +12065,12 @@
 </ul>
 </li>
 </ul>
-<p>(*Note: The image indicates a software interface with a navigation tree on the top and properties of a selected object at the bottom. Selected object is <code>Add</code>. The properties are for an object of class 'Selenium' and type 'HTMLObject'. *)</p>
+<p>(*Note: The image indicates a software interface with a navigation tree at the top and the properties of a selected object at the bottom. The selected object is <code>Add</code>. The properties are for an object of class 'Selenium' and type 'HTMLObject'. *)</p>
 </div>
 </div>
 </li>
 </ol>
-<p>The RVL editor knows how to handle such a variable and provides necessary hints to choose an action for it:</p>
+<p>The RVL editor knows how to handle such a variable and provides hints to help you choose an action for it:</p>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Variable Action" src="../img/Variables_variable_action.png" /></p>
 </div>
@@ -12096,7 +12120,7 @@
 </div>
 </div>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>Variables may be declared as <em>Local</em> or <em>Global</em>. Declaration may or may not contain initial value</p>
+<p>Variables may be declared as <em>Local</em> or <em>Global</em>. A declaration may or may not contain an initial value.</p>
 <div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Variable Declarations" src="../img/Variables_Declaration.png" /></p>
 </div>
@@ -12116,7 +12140,7 @@
 <tbody>
 <tr>
 <td>#</td>
-<td>Declare global variables. If it is assigned earlier then keep its value</td>
+<td>Declare a global variable. If it was assigned earlier, it keeps its value</td>
 <td></td>
 <td></td>
 <td></td>
@@ -12134,7 +12158,7 @@
 </tr>
 <tr>
 <td>#</td>
-<td>Declare global variables and assign its value</td>
+<td>Declare a global variable and assign its value</td>
 <td></td>
 <td></td>
 <td></td>
@@ -12152,7 +12176,7 @@
 </tr>
 <tr>
 <td>#</td>
-<td>Declare local variable without value with explicit Local keyword</td>
+<td>Declare a local variable without a value, using the explicit Local keyword</td>
 <td></td>
 <td></td>
 <td></td>
@@ -12170,7 +12194,7 @@
 </tr>
 <tr>
 <td>#</td>
-<td>Declare local variables and assign initial values, use explicit local keyword</td>
+<td>Declare local variables and assign initial values, using the explicit local keyword</td>
 <td></td>
 <td></td>
 <td></td>
@@ -12206,7 +12230,7 @@
 </tr>
 <tr>
 <td>#</td>
-<td>Declare local variable without value</td>
+<td>Declare a local variable without a value</td>
 <td></td>
 <td></td>
 <td></td>
@@ -12262,7 +12286,7 @@
 </table>
 </div>
 </div>
-<p>Variables may accept output from the <em>Action</em>:</p>
+<p>Variables can accept the output from an <em>Action</em>:</p>
 <div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Variable Output" src="../img/Variables_Output.png" /></p>
 </div>
@@ -12320,7 +12344,7 @@
 </table>
 </div>
 </div>
-<p>Variables may be used as input to the <em>Action</em>:</p>
+<p>Variables can be used as input for an <em>Action</em>:</p>
 <div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Variable AsParam" src="../img/Variables_AsParam.png" /></p>
 </div>
@@ -12340,7 +12364,7 @@
 <tbody>
 <tr>
 <td>#</td>
-<td>Use variable as a parameter</td>
+<td>Use a variable as a parameter</td>
 <td></td>
 <td></td>
 <td></td>

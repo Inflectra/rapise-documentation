@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11088,6 +11100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11353,7 +11377,7 @@
                 
                 <h1 id="including-other-files">Including other Files<a class="headerlink" href="#including-other-files" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The <strong>eval</strong> keyword lets you use external functions and data structures in your test script; <code>eval</code> is a JavaScript reserved word.</p>
+<p>The <code>eval</code> keyword enables you to incorporate external functions and data structures into your test script. (Note: <code>eval</code> is a JavaScript reserved word.)</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>See the example below:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="p">(</span><span class="nx">File</span><span class="p">.</span><span class="nx">Include</span><span class="p">(</span><span class="s2">&quot;myfunctions.js&quot;</span><span class="p">));</span>
@@ -11363,9 +11387,9 @@
 <span class="w">    </span><span class="c1">// Use something from myfunction.js</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>You may add an include statement by dragging a <code>.js</code> file from the <a href="../test_files_dialog/">Test Files</a> tree and dropping it into <code>.js</code> script.</p>
-<p>It is recommended to put common functions and variables into <a href="../Frameworks/frameworks/#managing-common-data">Common.js</a> file in your framework. However, if you have another .js file or files, you can add an include statement(s) directly into <code>Common.js</code>.</p>
-<p>Additionally, you have the option to tag your external <code>.js</code> file as <code>shared</code>, which will automatically load it for each test run. This eliminates the need for an include statement.</p>
+<p>You can add an include statement by dragging a <code>.js</code> file from the <a href="../test_files_dialog/">Test Files</a> tree and dropping it into your <code>.js</code> script.</p>
+<p>It is recommended to place common functions and variables into the <a href="../Frameworks/frameworks/#managing-common-data">Common.js</a> file within your framework. However, if you have other <code>.js</code> files, you can add include statements directly into <code>Common.js</code>.</p>
+<p>Additionally, you can tag your external <code>.js</code> file as <code>shared</code>. This automatically loads the file for each test run, eliminating the need for an include statement.</p>
 <p><img alt="Tag as Shared" src="../img/including_other_files_tag_as_shared.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>

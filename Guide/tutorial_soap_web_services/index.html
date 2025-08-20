@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1190,6 +1190,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11108,6 +11120,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11392,132 +11416,112 @@
                 
                 
                 <h1 id="tutorial-soap-web-services">Tutorial: SOAP Web Services<a class="headerlink" href="#tutorial-soap-web-services" title="Permanent link">&para;</a></h1>
-<p>In this section you shall learn how to test a SOAP web services API using Rapise. We shall be using a demo application called <strong>Library Information System</strong> that has a dummy SOAP web service API available for learning purposes. You can access this sample application at <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a>, and its SOAP web service API can be found at:</p>
+<p>In this section, you will learn how to test a SOAP web services API using Rapise. We will be using a demo application called <strong>Library Information System</strong> that has a dummy SOAP web service API available for learning purposes. You can access this sample application at <a href="http://www.libraryinformationsystem.org">http://www.libraryinformationsystem.org</a>, and its SOAP web service API can be found at:</p>
 <p><a href="http://www.libraryinformationsystem.org/Services/SoapService.aspx">http://www.libraryinformationsystem.org/Services/SoapService.aspx</a></p>
 <h2 id="what-is-soap-and-what-is-a-soap-web-service">What is SOAP and what is a SOAP web service?<a class="headerlink" href="#what-is-soap-and-what-is-a-soap-web-service" title="Permanent link">&para;</a></h2>
 <!-- /* cSpell:disable */ -->
 <blockquote>
-<p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web servicesmake use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.</p>
+<p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, which allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web services make use of the Web Service Definition Language (WSDL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to SOAP web services needs to match the format specified in the WSDL.</p>
 </blockquote>
 <!-- /* cSpell:enable */ -->
 <blockquote>
-<p>SOAP web services are fully self-descripting, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.</p>
+<p>SOAP web services are fully self-describing, so most clients do not directly work with the SOAP XML language. Instead, they use a client-side proxy generator that creates client object representations of the web service (e.g., Java, .NET objects). Web service consumers interact with these language-specific representations of the SOAP web service. However, when these SOAP calls fail, you need a way to test them that includes inspecting the raw SOAP XML that is actually being sent.</p>
 </blockquote>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Creating a SOAP web service test in Rapise consists of the following
-steps:</p>
+<p>Creating a SOAP web service test in Rapise consists of the following steps:</p>
 <ol>
 <li>
-<p>Using the SOAP web services studio to inspect the SOAP WSDL</p>
+<p>Using the SOAP web services studio to inspect the SOAP WSDL.</p>
 </li>
 <li>
-<p>Invoke the various SOAP operations and verify that they return the expected data in the expected format.</p>
+<p>Invoking the various SOAP operations and verifying that they return the expected data in the expected format.</p>
 </li>
 <li>
 <p>Generating the test script in JavaScript that uses the learned Rapise web service objects based on the WSDL.</p>
 </li>
 </ol>
-<p>We shall discuss each of these steps in turn.</p>
+<p>We will discuss each of these steps in turn.</p>
 <h3 id="1-inspecting-the-soap-wsdl-endpoint">1. Inspecting the SOAP WSDL Endpoint<a class="headerlink" href="#1-inspecting-the-soap-wsdl-endpoint" title="Permanent link">&para;</a></h3>
-<p>Create a new test in Rapise called <code>MySoapTest1.sstest</code>. For methodology, choose <strong>Basic: Windows Desktop Application (Windows Native, .NET, Java, WPF etc)</strong> and Rapise will create a new blank test project.</p>
+<p>Create a new test in Rapise called <code>MySoapTest1.sstest</code>. For methodology, choose <strong>Basic: Windows Desktop Application (Windows Native, .NET, Java, WPF, etc.)</strong>, and Rapise will create a new blank test project.</p>
 <p><img alt="Test Type" src="../img/tutorial_web_services_rest_testtype.png" /></p>
-<p>Language selection prompt is shown. For Web Services it is recommended to use <code>JavaScript</code>. </p>
+<p>A language selection prompt is shown. For Web Services, it is recommended to use <code>JavaScript</code>. </p>
 <p><img alt="Test Language" src="../img/tutorial_web_services_rest_jslang.png" /></p>
-<p>Once you have created it, choose  <code>Tools &gt; Web Services</code> menu to add a new web service definition to your test project:</p>
+<p>Once you have created it, choose the <code>Tools &gt; Web Services</code> menu to add a new web service definition to your test project:</p>
 <p><img alt="Tools-&gt;Web Services" src="../img/tutorial_web_services_rest1.png" /></p>
 <p>This will display the Add New Web Service dialog box:</p>
 <p><img alt="tutorial_soap_pic1" src="../img/tutorial_soap_web_services2.png" /></p>
 <p>Choose <strong>SOAP</strong> as the type of web service you want to create.</p>
-<p>Then, enter the name of the web service that you're going to add, in this case enter <strong>"LibraryInformationSystem.soap"</strong> and click <code>Create</code>.</p>
-<p>This will add the SOAP web services definition file to your test
-project:</p>
+<p>Then, enter the name of the web service you are going to add; in this case, enter <strong>"LibraryInformationSystem.soap"</strong> and click <code>Create</code>.</p>
+<p>This will add the SOAP web service definition file to your test project:</p>
 <p><img alt="tutorial_soap_pic2" src="../img/tutorial_soap_web_services3.png" /></p>
-<p>In the <strong>Endpoint</strong> section of the <a href="../toolbar_soap/">SOAP toolbar</a>, enter the following URL to the sample application's WSDL file:</p>
+<p>In the <strong>Endpoint</strong> section of the <a href="../toolbar_soap/">SOAP toolbar</a>, enter the following URL for the sample application's WSDL file:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nx">http</span><span class="p">:</span><span class="c1">//www.libraryinformationsystem.org/Services/SoapService.svc?wsdl</span>
 </code></pre></div></td></tr></table></div>
 
-<p>then click the <code>Get WSDL</code> to load the list of SOAP operations:</p>
+<p>Then click <code>Get WSDL</code> to load the list of SOAP operations:</p>
 <p><img alt="tutorial_soap_pic3" src="../img/tutorial_soap_web_services3.png" /></p>
-<p>Now click on the <strong>Connection_Authenticate</strong> operation in the SOAP
-explorer:</p>
+<p>Now, click on the <strong>Connection_Authenticate</strong> operation in the SOAP explorer:</p>
 <p><img alt="tutorial_soap_pic4" src="../img/tutorial_soap_web_services4.png" /></p>
-<p>This is the first operation we will need to invoke since it is used to authenticate with the online library system before calling the other functions.</p>
-<p>You can click on each of the different SOAP operations (e.g. for inserting, retrieving, deleting or updating a book) and the SOAP studio will display the expected input and output parameters as well as any headers.</p>
-<p>In the next section we shall be performing the following actions:</p>
+<p>This is the first operation we will need to invoke, as it is used to authenticate with the online library system before calling other functions.</p>
+<p>You can click on each of the different SOAP operations (e.g., for inserting, retrieving, deleting, or updating a book), and the SOAP studio will display the expected input and output parameters, as well as any headers.</p>
+<p>In the next section, we will be performing the following actions:</p>
 <ul>
 <li>
-<p>Authenticating as a specific user</p>
+<p>Authenticating as a specific user.</p>
 </li>
 <li>
-<p>Viewing the list of books</p>
+<p>Viewing the list of books.</p>
 </li>
 <li>
-<p>Inserting a new book</p>
+<p>Inserting a new book.</p>
 </li>
 <li>
-<p>Viewing the updated list of books</p>
+<p>Viewing the updated list of books.</p>
 </li>
 <li>
-<p>Disconnecting</p>
+<p>Disconnecting.</p>
 </li>
 </ul>
-<p>Each one will involve calling a specific SOAP operation with some input parameters, viewing the data returned and adding a verification step if appropriate.</p>
+<p>Each one will involve calling a specific SOAP operation with some input parameters, viewing the data returned, and adding a verification step if appropriate.</p>
 <h2 id="2-invoking-the-soap-actions">2. Invoking the SOAP Actions<a class="headerlink" href="#2-invoking-the-soap-actions" title="Permanent link">&para;</a></h2>
-<p>Starting with the <strong>Connection_Authenticate</strong> operation that we had selected, click on the two Input parameters in turn and enter values:</p>
+<p>Starting with the <strong>Connection_Authenticate</strong> operation that we selected, click on the two input parameters in turn and enter values:</p>
 <ul>
 <li><strong>userName</strong> = librarian</li>
 <li><strong>password</strong> = librarian</li>
 </ul>
-<p>Then click the <code>Invoke</code> button underneath:</p>
+<p>Then click the <code>Invoke</code> button underneath.</p>
 <p><img alt="Invoke" src="../img/tutorial_soap_web_services6.png" /></p>
-<p>You can see that the response to our Invoked operation as a simple
-boolean value of <strong>True</strong> returned. That indicated that we authenticated
-correctly. If you try putting in an incorrect login/password, you'll get
-back <strong>False</strong> instead.</p>
-<p>If you have a SOAP web service that doesn't behave as expected, you may
-want to view the raw SOAP XML that is being sent to/from the web
-service. To view this, click on the <strong>Request/Response</strong> tab of the SOAP
-studio editor and the following will be displayed:</p>
+<p>You can see that the response to our invoked operation was a simple boolean value of <strong>True</strong>. This indicated that authentication was successful. If you try entering an incorrect login/password, you will get back <strong>False</strong> instead.</p>
+<p>If you have a SOAP web service that doesn't behave as expected, you may want to view the raw SOAP XML that is being sent to or from the web service. To view this, click on the <strong>Request/Response</strong> tab of the SOAP studio editor, and the following will be displayed:</p>
 <p><img alt="Request/Response" src="../img/tutorial_soap_web_services7.png" /></p>
-<p>This view lets you see the Request and Response HTTP headers body, with
-the body displayed in a friendly, easy to read color-coded XML format.
-That way you can easily invoke the SOAP operations using the Rapise SOAP
-studio GUI and view the raw SOAP XML being sent to/from the server. This
-is invaluable when debugging a failing SOAP web service.</p>
-<p>In the case of our test of <strong>Connection_Authenticate</strong>, we can now
-click the <code>Record</code> button (next to <code>Send</code>) to add this operation to our
-list of recorded test steps:</p>
+<p>This view lets you see the Request and Response HTTP headers and body, with the body displayed in a friendly, easy-to-read, color-coded XML format. That way, you can easily invoke the SOAP operations using the Rapise SOAP studio GUI and view the raw SOAP XML being sent to or from the server. This is invaluable when debugging a failing SOAP web service.</p>
+<p>In the case of our <strong>Connection_Authenticate</strong> test, we can now click the <code>Record</code> button (next to <code>Send</code>) to add this operation to our list of recorded test steps:</p>
 <p><img alt="Steps" src="../img/tutorial_soap_web_services8.png" /></p>
-<p>Once you have added the operation to the list of recorded steps, you can
-go one step further and ask Rapise to verify the data returned. To do
-that, click on the <code>Verify</code> button that is displayed next to the
-<code>Record</code> button. The step will now switch to <strong>bold</strong> to indicate that
-a verification step is also included.</p>
+<p>Once you have added the operation to the list of recorded steps, you can go one step further and ask Rapise to verify the data returned. To do that, click the <code>Verify</code> button that is displayed next to the <code>Record</code> button. The step will now switch to <strong>bold</strong> to indicate that a verification step is also included.</p>
 <p><img alt="tutorial_soap_pic8" src="../img/tutorial_soap_web_services9.png" /></p>
-<p>Now we need to repeat this process for the following additional
-operations:</p>
+<p>Now we need to repeat this process for the following additional operations:</p>
 <ul>
 <li>
 <p><strong>Book_Retrieve</strong></p>
 </li>
 <li>
 <ul>
-<li>No Input Parameters</li>
+<li>No input parameters.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Press <code>Invoke</code> to test the retrieve</li>
+<li>Press <code>Invoke</code> to test the retrieval.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Press <code>Record</code> to record the test script</li>
+<li>Press <code>Record</code> to record the test script.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Click <code>Verify</code> to add a verification step</li>
+<li>Click <code>Verify</code> to add a verification step.</li>
 </ul>
 </li>
 <li>
@@ -11570,12 +11574,12 @@ operations:</p>
 </li>
 <li>
 <ul>
-<li>Press <code>Invoke</code> to test the insert</li>
+<li>Press <code>Invoke</code> to test the insertion.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Press <code>Record</code> to record the test script</li>
+<li>Press <code>Record</code> to record the test script.</li>
 </ul>
 <p><img alt="AddBook params" src="../img/tutorial_soap_web_services10.png" /></p>
 </li>
@@ -11584,22 +11588,22 @@ operations:</p>
 </li>
 <li>
 <ul>
-<li>No Input Parameters</li>
+<li>No input parameters.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Press <code>Invoke</code> to test the retrieve</li>
+<li>Press <code>Invoke</code> to test the retrieval.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Press <code>Record</code> to record the test script</li>
+<li>Press <code>Record</code> to record the test script.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Click <code>Verify</code> to add a verification step</li>
+<li>Click <code>Verify</code> to add a verification step.</li>
 </ul>
 </li>
 <li>
@@ -11607,30 +11611,27 @@ operations:</p>
 </li>
 <li>
 <ul>
-<li>No Input Parameters</li>
+<li>No input parameters.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Press <code>Invoke</code> to test the retrieve</li>
+<li>Press <code>Invoke</code> to test the disconnection.</li>
 </ul>
 </li>
 <li>
 <ul>
-<li>Press <code>Record</code> to record the test script</li>
+<li>Press <code>Record</code> to record the test script.</li>
 </ul>
 </li>
 </ul>
-<p>Once you have completed all these steps, you will see the following
-recorded in the <strong>SOAP Script Steps</strong> box:</p>
+<p>Once you have completed all these steps, you will see the following recorded in the <strong>SOAP Script Steps</strong> box:</p>
 <p><img alt="Steps" src="../img/tutorial_soap_web_services11.png" /></p>
-<p>Now that we have recorded the operations and verifications, we can
-proceed to generate the test script in Rapise that will regression test
-the web service.</p>
+<p>Now that we have recorded the operations and verifications, we can proceed to generate the test script in Rapise that will regression test the web service.</p>
 <h2 id="3-generating-the-rapise-test-script">3. Generating the Rapise Test Script<a class="headerlink" href="#3-generating-the-rapise-test-script" title="Permanent link">&para;</a></h2>
-<p>In the SOAP Script Steps toolbar, click on the <code>Create Script</code> button to generate the initial test script:</p>
+<p>In the SOAP Script Steps toolbar, click the <code>Create Script</code> button to generate the initial test script:</p>
 <p><img alt="Create Script" src="../img/tutorial_soap_web_services12.png" /></p>
-<p>Click on the <code>Test</code> shortcut in the main toolbar, and Rapise will display the <code>Main.js</code> file.</p>
+<p>Click the <code>Test</code> shortcut in the main toolbar, and Rapise will display the <code>Main.js</code> file.</p>
 <p>In the main Rapise test script file, you will see the following generated:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
@@ -11654,8 +11655,7 @@ the web service.</p>
 
 <span class="p">}</span>
 </code></pre></div>
-<p>You will see each of the SOAP functions called in turn, with
-verification code automatically added.</p>
+<p>You will see each of the SOAP functions called in turn, with verification code automatically added.</p>
 <p>We can add some comments to make it easier to read:</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">//Authenticate</span>
 
@@ -11683,11 +11683,9 @@ verification code automatically added.</p>
 
 <span class="w">    </span><span class="nx">LibraryInformationSystem</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Connection_Disconnect&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{});</span>
 </code></pre></div>
-<p>When you click the <code>Play</code> button in the main toolbar, you will see
-the following result:</p>
+<p>When you click the <code>Play</code> button in the main toolbar, you will see the following result:</p>
 <p><img alt="tutorial_soap_pic12" src="../img/tutorial_soap_web_services13.png" /></p>
-<p>Congratulations! You have recorded and executed a <a href="../soap_web_services/">SOAP web service
-test</a>.</p>
+<p>Congratulations! You have recorded and executed a <a href="../soap_web_services/">SOAP web service test</a>.</p>
                 
               
               

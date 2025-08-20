@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1110,6 +1110,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11028,6 +11040,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11325,80 +11349,80 @@
 <p>NeoLoad integration has been removed in Rapise 7.0.</p>
 </div>
 <h2 id="concept-and-architecture">Concept and Architecture<a class="headerlink" href="#concept-and-architecture" title="Permanent link">&para;</a></h2>
-<p>The purpose of this integration is to satisfy the following use case.</p>
+<p>The purpose of this integration is to address the following use case:</p>
 <blockquote>
-<p>The tester wants to measure the speed of the user interface that a user would experience whilst performing a protocol-level load test:</p>
+<p>The tester wants to measure the speed of the user interface that a user would experience while performing a protocol-level load test:</p>
 <ul>
-<li>How long does each transaction take whilst 1000 VUs are hitting the same system</li>
-<li>The user interface could be web, mobile or thick client (e.g. ERP system)</li>
+<li>How long does each transaction take while 1000 VUs are hitting the same system?</li>
+<li>The user interface could be web, mobile, or a thick client (e.g., an ERP system).</li>
 </ul>
 </blockquote>
-<p>The following describes the technical architecture that would need to be in place:</p>
+<p>The following describes the technical architecture required:</p>
 <p><img alt="clip0065" src="../img/client_performance_monitoring1.png" /></p>
-<p>The process flow for the above architecture would be as follows:</p>
+<p>The process flow for the above architecture is as follows:</p>
 <ol>
-<li>User schedules the performance test in SpiraTest.</li>
-<li>RemoteLaunch connected to the NeoLoad controller and SpiraTest initiates the start of the testing.</li>
+<li>A user schedules the performance test in SpiraTest.</li>
+<li>RemoteLaunch, connected to the NeoLoad controller and SpiraTest, initiates the start of the testing.</li>
 <li>The NeoLoad controller sends commands to the NeoLoad load generators to start the performance scenario.</li>
-<li>During the performance scenario, NeoLoad calls Rapise through its command-line to start a specific test</li>
-<li>At specific points in the Rapise function test (which is grouped into transactions), timing code in the Rapise script (see next section) will call the NeoLoad REST API to report back the timing for the transaction block.<ul>
-<li>The NeoLoad controller will need to correlate each of the blocks with the appropriate transaction in the performance scenario.</li>
+<li>During the performance scenario, NeoLoad calls Rapise via its command line to start a specific test.</li>
+<li>At specific points in the Rapise function test (which is grouped into transactions), timing code in the Rapise script (see next section) calls the NeoLoad REST API to report the timing for the transaction block.<ul>
+<li>The NeoLoad controller correlates each block with the appropriate transaction in the performance scenario.</li>
 </ul>
 </li>
-<li>At the end of the performance test, RemoteLaunch will read the entire performance test and send back the results to SpiraTest.</li>
+<li>At the end of the performance test, RemoteLaunch reads the entire performance test and sends the results back to SpiraTest.</li>
 </ol>
 <h2 id="neoload-global-object">NeoLoad Global Object<a class="headerlink" href="#neoload-global-object" title="Permanent link">&para;</a></h2>
-<p>Rapise has a global object named NeoLoad which is capable of sending client performance metrics to the NeoLoad controller.</p>
+<p>Rapise includes a global object named <code>NeoLoad</code> that can send client performance metrics to the NeoLoad controller.</p>
 <p><img alt="clip0058" src="../img/client_performance_monitoring2.png" /></p>
-<p>NeoLoad will display the received data in a both tree and graph views.</p>
+<p>NeoLoad displays the received data in both tree and graph views.</p>
 <h2 id="neoload-tree-view">NeoLoad Tree View<a class="headerlink" href="#neoload-tree-view" title="Permanent link">&para;</a></h2>
 <p><img alt="clip0059" src="../img/client_performance_monitoring3.png" /></p>
-<p>The root of the tree is the name of a script that was executed by Rapise. On the first level we have three groups:</p>
+<p>The root of the tree is the name of the script executed by Rapise. The first level contains three groups:</p>
 <ul>
-<li>LG Performance – this is a folder of a load generator essential metrics captured by Rapise: CPU, Memory, Network Sent/Received bytes.</li>
-<li>Page Load – this folder contains nodes for each page and nested resource. Duration values are obtained using Window.performance structure. See also <a href="http://www.w3.org/TR/navigation-timing/#processing-model">http://www.w3.org/TR/navigation-timing/#processing-model</a></li>
-<li>Transactions – this folder contains counters for transactions defined by a script.</li>
+<li>LG Performance – This folder contains essential load generator metrics captured by Rapise: CPU, Memory, and Network Sent/Received bytes.</li>
+<li>Page Load – This folder contains nodes for each page and nested resource. Duration values are obtained using the <code>Window.performance</code> structure. See also <a href="http://www.w3.org/TR/navigation-timing/#processing-model">http://www.w3.org/TR/navigation-timing/#processing-model</a></li>
+<li>Transactions – This folder contains counters for transactions defined by a script.</li>
 </ul>
 <h2 id="graph-view">Graph View<a class="headerlink" href="#graph-view" title="Permanent link">&para;</a></h2>
 <p>Each leaf node can be dragged to the graph view for visualization:</p>
 <p><img alt="clip0060" src="../img/client_performance_monitoring4.png" /></p>
 <h2 id="performance-filters">Performance Filters<a class="headerlink" href="#performance-filters" title="Permanent link">&para;</a></h2>
-<p>Performance results obtained from different runs can be filtered using result filter on the toolbar.</p>
+<p>Performance results obtained from different runs can be filtered using the results filter on the toolbar.</p>
 <p><img alt="clip0061" src="../img/client_performance_monitoring5.png" /></p>
-<p>You can open the Results Filter dialogs by pressing <code>…</code> button.</p>
+<p>You can open the Results Filter dialog by pressing the <code>…</code> button.</p>
 <p><img alt="clip0062" src="../img/client_performance_monitoring6.png" /></p>
 <ul>
-<li>Platform is a combination of hardware – OS. Hardware is passed by a user script, OS is determined by Rapise automatically. E.g. hardware1 – Microsoft Windows 8.1 Pro.</li>
-<li>Client Software is Rapise.</li>
-<li>Location is supplied by a script. E.g. location1.</li>
-<li>Script is a combination of script name and time stamp. E.g.</li>
+<li>Platform – a combination of hardware and OS. Hardware is passed by a user script; OS is determined automatically by Rapise. E.g., <code>hardware1 – Microsoft Windows 8.1 Pro</code>.</li>
+<li>Client Software – Rapise.</li>
+<li>Location – supplied by a script. E.g., <code>location1</code>.</li>
+<li>Script – a combination of script name and timestamp. E.g.,</li>
 <li><img alt="clip0063" src="../img/client_performance_monitoring7.png" /></li>
 </ul>
 <h2 id="neoload-object-api-reference">NeoLoad Object API Reference<a class="headerlink" href="#neoload-object-api-reference" title="Permanent link">&para;</a></h2>
-<p>The methods of the global NeoLoad object are described <a href="/Libraries/NeoLoad/">on this page</a>.</p>
+<p>The methods of the global <code>NeoLoad</code> object are described <a href="../../Libraries/NeoLoad/">on this page</a>.</p>
 <h2 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
-<p>In order to send performance metrics to NeoLoad you need to add a sequence of calls to your script.</p>
-<p>First, connect to the NeoLoad. When this call is executed NeoLoad must be running a script, otherwise an error will be returned.</p>
-<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CreateClient</span><span class="p">(</span><span class="s2">&quot;hardware1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;location1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Broadcom 802.11ac Network Adapter \_2&quot;</span><span class="p">);</span>
+<p>To send performance metrics to NeoLoad, you need to add a sequence of calls to your script.</p>
+<p>First, connect to NeoLoad. When this call is executed, NeoLoad must be running a script; otherwise, an error will be returned.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CreateClient</span><span class="p">(</span><span class="s2">&quot;hardware1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;location1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Broadcom 802.11ac Network Adapter _2&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>Let’s look at the following block:</p>
+<p>Consider the following code block:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureHostPerformance</span><span class="p">();</span>
 <span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">StartTransaction</span><span class="p">(</span><span class="s1">&#39;T Home&#39;</span><span class="p">);</span>
-<span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureBrowserPerformance</span><span class="p">(</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log\_In&#39;</span><span class="p">).</span><span class="nx">GetPageURL</span><span class="p">());</span>
+<span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureBrowserPerformance</span><span class="p">(</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">GetPageURL</span><span class="p">());</span>
 <span class="c1">//Click on Log In</span>
-<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log\_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
-<span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureBrowserPerformance</span><span class="p">(</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username\_&#39;</span><span class="p">).</span><span class="nx">GetPageURL</span><span class="p">());</span>
+<span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
+<span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CaptureBrowserPerformance</span><span class="p">(</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Username_&#39;</span><span class="p">).</span><span class="nx">GetPageURL</span><span class="p">());</span>
 <span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">EndTransaction</span><span class="p">(</span><span class="s1">&#39;T Home&#39;</span><span class="p">);</span>
 </code></pre></div>
 <ul>
-<li>CaptureHostPerformance call sends immediate values of CPU, Memory and Network load to the NeoLoad controller.</li>
-<li>StartTransaction/EndTransaction calls define a transaction with name ‘T Home’. Upon EndTransaction call the duration of it is sent to the NeoLoad controller.</li>
-<li>CalculateBrowserPerformance call sends page load performance metrics to the NeoLoad controller.</li>
+<li><code>CaptureHostPerformance</code> sends immediate values of CPU, memory, and network load to the NeoLoad controller.</li>
+<li><code>StartTransaction</code>/<code>EndTransaction</code> calls define a transaction named <code>T Home</code>. Upon the <code>EndTransaction</code> call, its duration is sent to the NeoLoad controller.</li>
+<li><code>CaptureBrowserPerformance</code> sends page load performance metrics to the NeoLoad controller.</li>
 </ul>
 <p>There is also a general call that can send any user-defined metric to the NeoLoad controller:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">NeoLoad</span><span class="p">.</span><span class="nx">CapturePerformanceValue</span><span class="p">(</span><span class="s2">&quot;First Level Folder&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Transaction1|Duration&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;milliseconds&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">120</span><span class="p">);</span>
 </code></pre></div>
-<p>Components of the second parameters can be separated by |. It allows to add more levels to the tree.</p>
+<p>Components of the second parameter can be separated by <code>|</code>. This allows you to add more levels to the tree.</p>
                 
               
               

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11088,6 +11100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11353,18 +11377,17 @@
                 
                 <h1 id="checkpoints-aka-verification-points">Checkpoints (aka Verification Points)<a class="headerlink" href="#checkpoints-aka-verification-points" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>A <strong>Checkpoint</strong> is defined by two things:</p>
+<p>A <strong>Checkpoint</strong> is defined by two components:</p>
 <ol>
-<li>a location in the test execution path and</li>
-<li>a subset of AUT state.  </li>
+<li>a location in the test execution path, and</li>
+<li>a subset of the AUT's state.</li>
 </ol>
-<p>Each time the checkpoint executes, the AUT state is compared to a predefined value.  Discrepancies are noted, and may show a regression in program behavior in the test execution <a href="../automated_reporting/">report</a>.</p>
+<p>Each time the checkpoint is executed, the AUT's state is compared to a predefined value. Any discrepancies are noted and may indicate a regression in program behavior in the test execution <a href="../automated_reporting/">report</a>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>A checkpoint can be added in two ways:</p>
 <ol>
-<li>during recording, with the <a href="../verify_object_properties/">Verify Object Properties dialog</a>, or</li>
-<li>by manually adding an <a href="../assertions/">Assertion</a> to the test
-script.</li>
+<li>during recording, using the <a href="../verify_object_properties/">Verify Object Properties dialog</a>, or</li>
+<li>by manually adding an <a href="../assertions/">Assertion</a> to the test script.</li>
 </ol>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>

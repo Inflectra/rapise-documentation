@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11081,6 +11093,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11338,13 +11362,11 @@
                 
                 
                 <h1 id="using-native-selenium-code">Using Native Selenium Code<a class="headerlink" href="#using-native-selenium-code" title="Permanent link">&para;</a></h1>
-<p>When using the standard Rapise <a href="../recording/">Record, Learn</a>, and <a href="../web_spy/">Web Spy</a> tools you can create your web tests using the Rapise built-in <a href="../object_tree/">Object Tree</a>. This lets you design your tests using a higher level of abstraction than working
-directly with <a href="../selenium_webdriver/">Selenium WebDriver</a>.</p>
-<p>For example you can learn an object <code>SeS("EditButton")</code> that points to a dynamic <a href="../xpath/">XPATH</a> or <a href="../css/">CSS</a> query that the automation engineer knows will be accurate even if the data on the page changes (for example). The QA analyst can then simply drag and drop these Rapise objects from the <a href="../object_tree/">Object Tree</a> into the test script (e.g. <code>SeS("EditButton").DoClick()</code>) to perform the desired action.</p>
-<p>Sometimes however you will want to be able to run standard Selenium raw WebDriver code inside Rapise using the standard <a href="http://www.seleniumhq.org/docs/03_webdriver.jsp">Selenium WebDriver API functions</a>. Rapise allows you to do this using the special <strong>WebDriver</strong> global object:</p>
+<p>When using the standard Rapise [Record, Learn], and <a href="../web_spy/">Web Spy</a> tools, you can create your web tests using the Rapise built-in <a href="../object_tree/">Object Tree</a>. This lets you design your tests using a higher level of abstraction than working directly with <a href="../selenium_webdriver/">Selenium WebDriver</a>.</p>
+<p>For example, you can learn an object <code>SeS("EditButton")</code> that points to a dynamic <a href="../xpath/">XPATH</a> or <a href="../css/">CSS</a> query that the automation engineer knows will be accurate even if the data on the page changes. The QA analyst can then simply drag and drop these Rapise objects from the <a href="../object_tree/">Object Tree</a> into the test script (e.g. <code>SeS("EditButton").DoClick()</code>) to perform the desired action.</p>
+<p>Sometimes, however, you will want to run raw Selenium WebDriver code inside Rapise using the standard <a href="http://www.seleniumhq.org/docs/03_webdriver.jsp">Selenium WebDriver API functions</a>. Rapise allows you to do this using the special <strong>WebDriver</strong> global object:</p>
 <p><img alt="clip0023" src="../img/using_native_selenium_code1.png" /></p>
-<p>The <strong>WebDriver</strong> object implements the various standard Selenium WebDriver API calls for automating the web browser. There is a sample
-available for Rapise called <strong>UsingSelenium</strong> (you can open it from the <code>View &gt; Start Page</code>) that illustrates using the WebDriver code directly, but for completeness, here is a sample that uses the <a href="http://libraryinformationsystem.org"><strong>www.libraryinformationsystem.org</strong></a> web site and performs some simple actions:</p>
+<p>The <strong>WebDriver</strong> object implements the various standard Selenium WebDriver API calls for automating the web browser. There is a sample available for Rapise called <strong>UsingSelenium</strong> (you can open it from the <code>View &gt; Start Page</code>) that illustrates using the WebDriver code directly, but for completeness, here is a sample that uses the <a href="http://libraryinformationsystem.org"><strong>www.libraryinformationsystem.org</strong></a> web site and performs some simple actions:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Open and connect the browser</span>
 <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">CreateDriver</span><span class="p">();</span>
 
@@ -11378,23 +11400,21 @@ available for Rapise called <strong>UsingSelenium</strong> (you can open it from
 <span class="c1">//Shut down Selenium</span>
 <span class="nx">WebDriver</span><span class="p">.</span><span class="nx">Quit</span><span class="p">()</span>
 </code></pre></div>
-<p><strong>More sophisticated sample</strong> is available in <a href="https://github.com/Inflectra/rapise-samples/tree/master/SeleniumAPI">rapise-samples repository</a>.</p>
-<p>When you click <code>Play</code> to playback your Selenium script, make sure you have selected one of the Selenium web browser profiles. If you have
-selected a native browser profile (e.g. “Firefox HTML” instead of “Selenium – Firefox”) you will get the error message “WebDriver” is not
-defined.</p>
+<p><strong>A more sophisticated sample</strong> is available in <a href="https://github.com/Inflectra/rapise-samples/tree/master/SeleniumAPI">rapise-samples repository</a>.</p>
+<p>When you click <code>Play</code> to play back your Selenium script, make sure you have selected one of the Selenium web browser profiles. If you have selected a native browser profile (e.g. “Firefox HTML” instead of “Selenium – Firefox”), you will get the error message “WebDriver” is not defined.</p>
 <h2 id="code-completion-for-the-selenium-webelement-objects">Code Completion for the Selenium WebElement Objects<a class="headerlink" href="#code-completion-for-the-selenium-webelement-objects" title="Permanent link">&para;</a></h2>
-<p>When you are using functions such as <code>FindElementsById()</code> in your code, the returned object will be a Selenium <a href="../../Libraries/WebElementWrapper/">Web Element</a>.</p>
-<p>Assign <code>WebElement</code> to a variable and benefit from intellisense and code-completion feature.</p>
+<p>When you are using functions such as <code>FindElementById()</code> in your code, the returned object will be a Selenium <a href="../../Libraries/WebElementWrapper/">Web Element</a>.</p>
+<p>Assign a <code>WebElement</code> to a variable to benefit from IntelliSense and code completion.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">logInLink</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">FindElementById</span><span class="p">(</span><span class="s2">&quot;HeadLoginView_HeadLoginStatus&quot;</span><span class="p">);</span>
 </code></pre></div>
 <p><img alt="Code Completion" src="../img/using_native_selenium_code2.png" /></p>
 <h2 id="interoperability-with-rapise-objects">Interoperability with Rapise Objects<a class="headerlink" href="#interoperability-with-rapise-objects" title="Permanent link">&para;</a></h2>
 <p>In addition to being able to use raw Selenium code on its own, you can also use a mixture of Rapise object-based code and raw Selenium WebDriver code.</p>
-<p>For example, you are using the standard Rapise approach (using learned <code>SeS('object')</code> objects) for testing but at some point want to switch to Selenium API to call a couple of WebElement functions on a learned object, you can use the special <strong>element</strong> property:</p>
+<p>For example, if you are using the standard Rapise approach (using learned <code>SeS('object')</code> objects) for testing but at some point want to switch to the Selenium API to call a couple of <code>WebElement</code> functions on a learned object, you can use the special <strong>element</strong> property:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="cm">/**WebElementWrapper*/</span><span class="w"> </span><span class="nx">webElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;MyObject&#39;</span><span class="p">).</span><span class="nx">element</span><span class="p">;</span>
 </code></pre></div>
 <p>Prefixing the variable with <code>/**WebElementWrapper*/</code> enables code completion for it.</p>
-<p>If you want to do the reverse and be able to create a Rapise <code>SeS('object')</code> on the fly from a physical object on the web page, you can do the <code>Navigator.SeSFind(xpath)</code> function that returns a Rapise <strong>SeSObject</strong>, in the same way that <code>SeS('id')</code> does normally:</p>
+<p>If you want to do the reverse and create a Rapise <code>SeS('object')</code> on the fly from a physical object on the web page, you can use the <code>Navigator.SeSFind(xpath)</code> function, which returns a Rapise <strong>SeSObject</strong> in the same way that <code>SeS('id')</code> does normally:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">sesObj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">SeSFind</span><span class="p">(</span><span class="s2">&quot;//body//div[@id=&#39;logArea&#39;]&quot;</span><span class="p">);</span>
 </code></pre></div>
                 

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11079,6 +11091,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11336,9 +11360,9 @@
                 
                 
                 <h1 id="detecting-the-presence-of-an-object">Detecting the presence of an object<a class="headerlink" href="#detecting-the-presence-of-an-object" title="Permanent link">&para;</a></h1>
-<p>Often you need to be able to check for the presence of an object and then depending on whether the object is visible perform one of two possible sets of operations. This article explains the recommended way of doing this.</p>
+<p>Often, you need to check for the presence of an object and then, depending on its visibility, perform one of two possible sets of operations. This article explains the recommended way to do this.</p>
 <h2 id="recommended-solution">Recommended Solution<a class="headerlink" href="#recommended-solution" title="Permanent link">&para;</a></h2>
-<p>You can use the special <code>Global.DoWaitFor('object id')</code> command to perform the check:</p>
+<p>You can use the <code>Global.DoWaitFor('object id')</code> command to perform the check:</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoWaitFor</span><span class="p">(</span><span class="s1">&#39;Object ID&#39;</span><span class="p">))</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">// Object is available</span>

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -10877,8 +10889,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preparing-android-emulator" class="md-nav__link">
-    Preparing Android Emulator
+  <a href="#preparing-an-android-emulator" class="md-nav__link">
+    Preparing an Android Emulator
   </a>
   
 </li>
@@ -10904,8 +10916,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preparing-android-emulator_1" class="md-nav__link">
-    Preparing Android Emulator
+  <a href="#preparing-an-android-emulator_1" class="md-nav__link">
+    Preparing an Android Emulator
   </a>
   
 </li>
@@ -11118,6 +11130,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
           
             
   
@@ -11369,8 +11393,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preparing-android-emulator" class="md-nav__link">
-    Preparing Android Emulator
+  <a href="#preparing-an-android-emulator" class="md-nav__link">
+    Preparing an Android Emulator
   </a>
   
 </li>
@@ -11396,8 +11420,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preparing-android-emulator_1" class="md-nav__link">
-    Preparing Android Emulator
+  <a href="#preparing-an-android-emulator_1" class="md-nav__link">
+    Preparing an Android Emulator
   </a>
   
 </li>
@@ -11429,26 +11453,26 @@
                 
                 <h1 id="preparing-environment-for-android-mobile-testing-with-rapise">Preparing Environment for Android Mobile Testing with Rapise<a class="headerlink" href="#preparing-environment-for-android-mobile-testing-with-rapise" title="Permanent link">&para;</a></h1>
 <p>Rapise lets you record and play automated tests against native applications on a variety of mobile devices using the Android operating system. Rapise gives you the flexibility to test your applications on either real or simulated devices.</p>
-<p>This section explains <strong>how to setup your environment for mobile testing</strong>, once that is done, you can the go to the section that explains the process for using Rapise to actually perform mobile testing.</p>
-<p>Rapise uses a third-party open-source tool called <a href="http://appium.io">Appium</a> that is used to actually host the mobile devices and Rapise essentially communicates to the device via Appium.</p>
+<p>This section explains <strong>how to set up your environment for mobile testing</strong>. Once that is done, you can then go to the section that explains the process of using Rapise for mobile testing.</p>
+<p>Rapise uses a third-party, open-source tool called <a href="http://appium.io">Appium</a> to host mobile devices. Rapise essentially communicates with the device via Appium.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The latest manual for configuring Android testing is available in the <a href="https://www.inflectra.com/Support/KnowledgeBase/KB828.aspx">knowledge base</a>.</p>
 </div>
 <h2 id="testing-architectures">Testing Architectures<a class="headerlink" href="#testing-architectures" title="Permanent link">&para;</a></h2>
-<p>Rapise runs on Windows computers (PC) and Android devices (both real and simulated) can be tested on either an Apple Macintosh (Mac) computer or a PC. So this means that there are two separate possible testing environments that you may need to setup:</p>
+<p>Rapise runs on Windows computers (PCs). Android devices (both real and simulated) can be tested on either an Apple Macintosh (Mac) computer or a PC. This means there are two possible testing environments that you may need to set up:</p>
 <ul>
 <li>
-<p><strong>Using a Mac to Host Android Emulator and Devices.</strong> It will be necessary to install <strong>Appium</strong> and <strong>Android Studio</strong> onto the Mac and connect to Appium over the network from Rapise running on your PC.</p>
+<p><strong>Using a Mac to Host Android Emulator and Devices.</strong> It will be necessary to install <strong>Appium</strong> and <strong>Android Studio</strong> on the Mac and connect to Appium over the network from Rapise running on your PC.</p>
 </li>
 <li>
-<p><strong>Using a PC to Host Android Emulator and Devices.</strong> You can either install <strong>Appium</strong> and <strong>Android Studio</strong> onto a separate PC or you can simply use the same PC that is running Rapise. The only difference will be whether the URL used to connect to Appium is a localhost URL or one pointing to the other PC.</p>
+<p><strong>Using a PC to Host Android Emulator and Devices.</strong> You can either install <strong>Appium</strong> and <strong>Android Studio</strong> on a separate PC or you can simply use the same PC that is running Rapise. The only difference will be whether the URL used to connect to Appium is a localhost URL or one pointing to the other PC.</p>
 </li>
 </ul>
-<p>The steps for setting each of these will be described separately.</p>
-<p>For physical Android devices the architecture looks like:</p>
+<p>The steps for setting up each of these will be described separately.</p>
+<p>For physical Android devices, the architecture looks like this:</p>
 <p><img alt="" src="../img/Preparing_for_Android_Testing1.png" /></p>
-<p>For simulated Android devices (using the Android Virtual Device Manager) the architecture looks like:</p>
+<p>For simulated Android devices (using the Android Virtual Device Manager), the architecture looks like this:</p>
 <p><img alt="" src="../img/Preparing_for_Android_Testing2.png" /></p>
 <h2 id="using-a-mac-to-host-android-emulator-and-devices">Using a Mac to Host Android Emulator and Devices<a class="headerlink" href="#using-a-mac-to-host-android-emulator-and-devices" title="Permanent link">&para;</a></h2>
 <p>The first thing you need to do is install the latest version of Appium. The easiest way to install it is to use Terminal.</p>
@@ -11456,22 +11480,22 @@
 &gt;<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>appium
 </code></pre></div>
 <p>More <a href="http://appium.io/docs/en/about-appium/getting-started/index.html#installing-appium">about Appium installation</a>.</p>
-<p>Once that is installed, you will then need to download and install the latest version of Java SE Development Kit (JDK) from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle website</a>. Once that has been installed, make sure that the <strong>JAVA_HOME</strong> environment variable has been set.</p>
-<p>Once that is installed, you will then need to install the Android Studio (you may already have it installed if you are doing Android development). You can download it from <a href="https://developer.android.com/studio/">Android Developer site</a>.</p>
+<p>Once Appium is installed, download and install the latest version of the Java SE Development Kit (JDK) from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle website</a>. After installation, make sure the <strong>JAVA_HOME</strong> environment variable has been set.</p>
+<p>Next, install Android Studio (you may already have it installed if you do Android development). You can download it from the <a href="https://developer.android.com/studio/">Android Developer site</a>.</p>
 <p>More <a href="https://developer.android.com/studio/install#mac">about Android Studio installation</a>.</p>
-<p>Once it has installed, you will use the <strong>Android SDK Manager</strong> to download and install the necessary packages:</p>
+<p>After installation, use the <strong>Android SDK Manager</strong> to download and install the necessary packages:</p>
 <p><img alt="Menu SDK Manager" src="../img/Preparing_for_Android_Testing3.png" width="230px" /></p>
 <p><img alt="Android SDK Platforms" src="../img/Preparing_for_Android_Testing4.png" /></p>
-<h3 id="preparing-android-emulator">Preparing Android Emulator<a class="headerlink" href="#preparing-android-emulator" title="Permanent link">&para;</a></h3>
-<p>If you want to test using the Android Emulator, make sure you have installed it using the SDK manager.</p>
+<h3 id="preparing-an-android-emulator">Preparing an Android Emulator<a class="headerlink" href="#preparing-an-android-emulator" title="Permanent link">&para;</a></h3>
+<p>If you want to test using the Android Emulator, make sure you have installed it using the SDK Manager.</p>
 <p><img alt="Android SDK Tools" src="../img/Preparing_for_Android_Testing5.png" /></p>
-<p>Then you can launch (from the main menu of the Android Studio) the <strong>Android Virtual Device Manager</strong>.</p>
+<p>Then you can launch the <strong>Android Virtual Device Manager</strong> from the Android Studio main menu.</p>
 <p><img alt="Menu Device Manager" src="../img/Preparing_for_Android_Testing6.png" width="227px" /></p>
 <p><img alt="http://content.screencast.com/users/JingRegister/folders/Jing/media/2124ee2b-d7b0-4f59-a2a1-c2d0ea862233/00000017.png" src="../img/Preparing_for_Android_Testing7.png" /></p>
-<p>In this case you can just create the Android Virtual Device, Start it and then connect to it using Rapise.</p>
+<p>In this case, you can just create the Android Virtual Device, start it, and then connect to it using Rapise.</p>
 <h3 id="preparing-a-physical-android-device">Preparing a Physical Android Device<a class="headerlink" href="#preparing-a-physical-android-device" title="Permanent link">&para;</a></h3>
-<p>If you are going to be testing a physical Android device, you will need to do the following.</p>
-<p>The Settings app on Android includes a screen called <strong>Developer options</strong> that lets you configure system behaviors that help you profile and debug your app performance.</p>
+<p>If you are going to test a physical Android device, you will need to do the following.</p>
+<p>The Settings app on Android includes a screen called <strong>Developer options</strong> that lets you configure system behaviors that help you profile and debug your app's performance.</p>
 <p><strong>Enable developer options and debugging</strong></p>
 <p>On Android 4.1 and lower, the <strong>Developer options</strong> screen is available by default. On Android 4.2 and higher, you must enable this screen as follows:</p>
 <ol>
@@ -11480,39 +11504,39 @@
 <li>Tap <code>Build number</code> 7 times.</li>
 <li>Return to the previous screen to find <code>Developer options</code> near the bottom.</li>
 </ol>
-<p>If you can not find the <code>Build number</code> option read more <a href="https://developer.android.com/studio/debug/dev-options">about Developer Options and USB Debugging</a>.</p>
+<p>If you cannot find the <code>Build number</code> option, read more <a href="https://developer.android.com/studio/debug/dev-options">about Developer Options and USB Debugging</a>.</p>
 <p>At the top of the <code>Developer options</code> screen, you can toggle the options on and off.</p>
 <p><img alt="Device Developer Settings" src="../img/Preparing_for_Android_Testing8.png" width="300px" /></p>
-<p>You probably want to keep this on. When off, most options are disabled except those that don't require communication between the device and your development computer.</p>
-<p>Next, you should scroll down a little and enable <strong>USB debugging</strong>. This allows Android Studio and other SDK tools to recognize your device when connected via USB, so you can use the debugger and other tools.</p>
-<p>You are now ready to start mobile testing of your Android Device and Android Emulator.</p>
+<p>You should keep this on. When off, most options are disabled except those that don't require communication between the device and your development computer.</p>
+<p>Next, scroll down and enable <strong>USB debugging</strong>. This allows Android Studio and other SDK tools to recognize your device when connected via USB, so you can use the debugger and other tools.</p>
+<p>You are now ready to start mobile testing on your Android device and Android Emulator.</p>
 <h2 id="using-a-pc-to-host-android-emulator-and-devices">Using a PC to Host Android Emulator and Devices<a class="headerlink" href="#using-a-pc-to-host-android-emulator-and-devices" title="Permanent link">&para;</a></h2>
 <p>The first thing you need to do is install the latest version of Appium.
-The easiest way to install it is to use Command Prompt.</p>
+The easiest way to install it is to use the Command Prompt.</p>
 <ol>
 <li>Install NodeJS and NPM as <a href="http://nodejs.org/">described here</a>.</li>
 <li>Install Appium</li>
 </ol>
 <div class="highlight"><pre><span></span><code>&gt;<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>appium
 </code></pre></div>
-<p>Once that is installed, you will then need to download and install the latest version of Java SE Development Kit (JDK) from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle website</a>. Once that has been installed, make sure that the  <strong>JAVA_HOME</strong> environment variable has been set.</p>
-<p>Once that is installed, you will then need to install the Android Studio (you may already have it installed if you are doing Android development). You can download it from <a href="https://developer.android.com/studio/">Android Developer site</a>.</p>
-<p>Make sure you have <strong>ANDROID_HOME</strong> environment variable set to point to Android SDK. In most cases it should point to</p>
+<p>Once Appium is installed, download and install the latest version of the Java SE Development Kit (JDK) from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle website</a>. After installation, make sure the <strong>JAVA_HOME</strong> environment variable has been set.</p>
+<p>Next, install Android Studio (you may already have it installed if you do Android development). You can download it from the <a href="https://developer.android.com/studio/">Android Developer site</a>.</p>
+<p>Make sure the <strong>ANDROID_HOME</strong> environment variable is set to point to the Android SDK. In most cases, it should point to:</p>
 <div class="highlight"><pre><span></span><code>c:\Users\&lt;user name&gt;\AppData\Local\Android\sdk
 </code></pre></div>
 <p>More <a href="https://developer.android.com/studio/install#windows">about Android Studio installation</a></p>
-<p>Once it has installed, you will use the <strong>Android SDK Manager</strong> to download and install the necessary packages.</p>
+<p>After installation, use the <strong>Android SDK Manager</strong> to download and install the necessary packages.</p>
 <p><img alt="Menu SDK Manager" src="../img/Preparing_for_Android_Testing3.png" width="230px" /></p>
 <p><img alt="" src="../img/Preparing_for_Android_Testing10.png" width="968px" /></p>
-<h3 id="preparing-android-emulator_1">Preparing Android Emulator<a class="headerlink" href="#preparing-android-emulator_1" title="Permanent link">&para;</a></h3>
-<p>If you want to test using the Android Emulator, make sure you have installed it using the SDK manager.</p>
+<h3 id="preparing-an-android-emulator_1">Preparing an Android Emulator<a class="headerlink" href="#preparing-an-android-emulator_1" title="Permanent link">&para;</a></h3>
+<p>If you want to test using the Android Emulator, make sure you have installed it using the SDK Manager.</p>
 <p><img alt="" src="../img/Preparing_for_Android_Testing11.png" /></p>
-<p>Then you can launch (from the main menu of the Android Studio) the <strong>Android Virtual Device Manager</strong>.</p>
+<p>Then you can launch the <strong>Android Virtual Device Manager</strong> from the Android Studio main menu.</p>
 <p><img alt="Menu Device Manager" src="../img/Preparing_for_Android_Testing6.png" width="227px" /></p>
 <p><img alt="" src="../img/Preparing_for_Android_Testing13.png" width="551px" /></p>
-<p>In this case you can just create the Android Virtual Device, Start it and then connect to it using Rapise.</p>
+<p>In this case, you can just create the Android Virtual Device, start it, and then connect to it using Rapise.</p>
 <h3 id="preparing-a-physical-android-device_1">Preparing a Physical Android Device<a class="headerlink" href="#preparing-a-physical-android-device_1" title="Permanent link">&para;</a></h3>
-<p>Steps are <a href="#preparing-a-physical-android-device">the same as for Mac</a>.</p>
+<p>The steps are <a href="#preparing-a-physical-android-device">the same as for Mac</a>.</p>
                 
               
               

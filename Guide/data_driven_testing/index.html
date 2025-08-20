@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11163,6 +11175,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11503,12 +11527,12 @@
                 
                 <h1 id="data-driven-testing-javascript">Data-Driven Testing (JavaScript)<a class="headerlink" href="#data-driven-testing-javascript" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p><strong>Data Driven Testing</strong> is an automated testing technique in which test case data is separated from test case logic.  Each set of test case data consists of input values and a set of expected output values.  The actual output values are compared to the expected output values to determine whether the test passed.</p>
-<p>You can perform data-driven testing either using an MS-Excel <a href="/Libraries/Spreadsheet/">spreadsheet</a> as the datasource or a relational <a href="/Libraries/Database/">database</a>.</p>
+<p><strong>Data-driven testing</strong> is an automated testing technique in which test case data is separated from test case logic. Each set of test case data consists of input values and a set of expected output values. The actual output values are compared to the expected output values to determine whether the test passed.</p>
+<p>You can perform data-driven testing using either an MS-Excel <a href="../../Libraries/Spreadsheet/">spreadsheet</a> as the data source or a relational <a href="../../Libraries/Database/">database</a>.</p>
 <h2 id="using-an-ms-excel-spreadsheet">Using an MS-Excel Spreadsheet<a class="headerlink" href="#using-an-ms-excel-spreadsheet" title="Permanent link">&para;</a></h2>
-<p>The <a href="/Libraries/Spreadsheet/"><strong>Spreadsheet</strong></a> object is useful for implementing data-driven tests. It allows you to connect to, query, and read an excel spreadsheet from your test script.  To create a data-driven test, you will:</p>
+<p>The <a href="../../Libraries/Spreadsheet/"><strong>Spreadsheet</strong></a> object is useful for implementing data-driven tests. It allows you to connect to, query, and read an Excel spreadsheet from your test script. To create a data-driven test, you will:</p>
 <h3 id="1-record-a-test">1. Record a Test<a class="headerlink" href="#1-record-a-test" title="Permanent link">&para;</a></h3>
-<p>The exact inputs you use for the recording will not matter as much as your interactions with the objects.  The following excerpt was recorded using <a href="http://www.google.com">www.google.com</a>:</p>
+<p>The exact inputs you use for the recording will not matter as much as your interactions with the objects. The following excerpt was recorded using <a href="http://www.google.com">www.google.com</a>:</p>
 <p><div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">//Set Text Inflectra in q</span>
@@ -11517,9 +11541,9 @@
 <span class="w">        </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj2&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
 </code></pre></div>
-The actions recorded were: (1) Type <strong>Inflectra</strong> into the search box. (2) Press the <strong>Google Search</strong> button.</p>
+The recorded actions were: (1) Type <strong>Inflectra</strong> into the search box. (2) Press the <strong>Google Search</strong> button.</p>
 <h3 id="2-parameterize-the-test-function">2. Parameterize the Test() Function<a class="headerlink" href="#2-parameterize-the-test-function" title="Permanent link">&para;</a></h3>
-<p>The <code>Test()</code> function has all of the procedural logic for the test.  Replace input values with variables.  Encapsulate the logic in a nested function with one parameter for each variable you created.  As an example, we will parameterize the <code>Test()</code> function we created in step one:</p>
+<p>The <code>Test()</code> function contains all of the procedural logic for the test. Replace input values with variables. Encapsulate the logic in a nested function with one parameter for each variable you created. For example, we will parameterize the <code>Test()</code> function we created in step one:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">Logic</span><span class="p">(</span><span class="nx">searchterm</span><span class="p">)</span>
@@ -11534,17 +11558,17 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="3-create-the-test-case-data">3. Create the Test Case Data<a class="headerlink" href="#3-create-the-test-case-data" title="Permanent link">&para;</a></h3>
-<p>Create a spreadsheet with name <strong>searchterms.xlsx</strong>. For this right click the test node and choose <code>Create &gt; Spreadsheet...</code>.</p>
+<p>Create a spreadsheet named <strong>searchterms.xlsx</strong>. To do this, right-click the test node and choose <code>Create &gt; Spreadsheet...</code>.</p>
 <p><img alt="create spreadsheet" src="../img/data_driven_createspreadsheet.png" /></p>
-<p>Enter the name and click <code>Create</code> button.</p>
+<p>Enter the name and click the <code>Create</code> button.</p>
 <p><img alt="spreadsheet name" src="../img/data_driven_spreadsheetname.png" /></p>
-<p>In the spreadsheet create a column for every variable in step two.  Add columns for any expected output values you wish to verify. Each row is a test case. In our google example, we only have one input value (<code>searchterm</code>) and we're not comparing any expected output values, so we will only need one column in our spreadsheet.</p>
+<p>In the spreadsheet, create a column for every variable from step two. Add columns for any expected output values you wish to verify. Each row is a test case. In our Google example, we only have one input value (<code>searchterm</code>), and we're not comparing any expected output values, so we will only need one column in our spreadsheet.</p>
 <p><img alt="data driven testing,spreadsheet" src="../img/data_driven_testing1.png" /></p>
 <h3 id="4-attach-spreadsheet-object-to-searchtermsxlsx">4. Attach Spreadsheet Object to searchterms.xlsx<a class="headerlink" href="#4-attach-spreadsheet-object-to-searchtermsxlsx" title="Permanent link">&para;</a></h3>
-<p>Drag the <strong>searchterms.xlsx</strong> from files tree into appropriate place in your test source:</p>
+<p>Drag the <strong>searchterms.xlsx</strong> from the files tree into the appropriate place in your test source:</p>
 <p><img alt="spreadsheetdragfile" src="../img/data_driven_testing3.png" /></p>
 <h3 id="5-use-spreadsheet-to-access-the-test-case-data">5. Use Spreadsheet to Access the Test Case Data<a class="headerlink" href="#5-use-spreadsheet-to-access-the-test-case-data" title="Permanent link">&para;</a></h3>
-<p>In our example, we use a <a href="/Libraries/Spreadsheet/"><strong>Spreadsheet</strong></a> object and run the test logic once for every row.</p>
+<p>In our example, we use a <a href="../../Libraries/Spreadsheet/"><strong>Spreadsheet</strong></a> object to run the test logic once for every row.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">Logic</span><span class="p">(</span><span class="nx">searchterm</span><span class="p">)</span>
@@ -11568,9 +11592,9 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="using-a-relational-database">Using a Relational Database<a class="headerlink" href="#using-a-relational-database" title="Permanent link">&para;</a></h2>
-<p>Rapise comes with the <a href="/Libraries/Database/">Database</a> query global object that allows you to send SQL queries to a database and then iterate through the results. The process for creating such a data-driven test is as follows:</p>
+<p>Rapise comes with the <a href="../../Libraries/Database/">Database</a> global object, which allows you to send SQL queries to a database and then iterate through the results. The process for creating such a data-driven test is as follows:</p>
 <h3 id="1-record-a-test_1">1. Record a Test<a class="headerlink" href="#1-record-a-test_1" title="Permanent link">&para;</a></h3>
-<p>The exact inputs you use for the recording will not matter as much as your interactions with the objects.  The following excerpt was recorded using <a href="http://www.google.com">www.google.com</a>:</p>
+<p>The exact inputs you use for the recording will not matter as much as your interactions with the objects. The following excerpt was recorded using <a href="http://www.google.com">www.google.com</a>:</p>
 <p><div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">//Set Text Inflectra in q</span>
@@ -11579,9 +11603,9 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
 <span class="w">        </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Obj2&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
 </code></pre></div>
-The actions recorded were: (1) Type <strong>Inflectra</strong> into the search box. (2) Press the <strong>Google Search</strong> button.</p>
+The recorded actions were: (1) Type <strong>Inflectra</strong> into the search box. (2) Press the <strong>Google Search</strong> button.</p>
 <h3 id="2-parameterize-the-test-function_1">2. Parameterize the Test() Function<a class="headerlink" href="#2-parameterize-the-test-function_1" title="Permanent link">&para;</a></h3>
-<p>The <code>Test()</code> function has all of the procedural logic for the test.  Replace input values with variables.  Encapsulate the logic in a nested function with one parameter for each variable you created.  As an example, we will parameterize  the <code>Test()</code> function we created in step one:</p>
+<p>The <code>Test()</code> function contains all of the procedural logic for the test. Replace input values with variables. Encapsulate the logic in a nested function with one parameter for each variable you created. For example, we will parameterize the <code>Test()</code> function we created in step one:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">Logic</span><span class="p">(</span><span class="nx">searchterm</span><span class="p">)</span>
@@ -11596,16 +11620,16 @@ The actions recorded were: (1) Type <strong>Inflectra</strong> into the search b
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="3-use-database-to-connect-the-test-case-data">3. Use Database to Connect the Test Case Data.<a class="headerlink" href="#3-use-database-to-connect-the-test-case-data" title="Permanent link">&para;</a></h3>
-<p>This assumes that you already have an <strong>ODBC</strong> or <strong>OLE DB</strong> compatible relational database that contains the necessary test data. You drag the <code>Database</code> global object into the script editor:</p>
+<p>This assumes that you already have an <strong>ODBC</strong>- or <strong>OLE DB</strong>-compatible relational database that contains the necessary test data. Drag the <code>Database</code> global object into the script editor:</p>
 <p><img alt="data driven testing,database" src="../img/data_driven_testing4.png" /></p>
-<p>and then use:</p>
+<p>and then use the following methods:</p>
 <ul>
-<li><strong>Database.DoAttach()</strong> - to make the database connection and specify the SQL query</li>
-<li><strong>Database.GetRowCount()</strong> - to verify that there is data</li>
-<li><strong>Database.DoSequential()</strong> - to loop through the data set row by row</li>
-<li><strong>Database.GetValue()</strong> - to get that row's data</li>
+<li><strong>Database.DoAttach()</strong> - to make the database connection and specify the SQL query.</li>
+<li><strong>Database.GetRowCount()</strong> - to verify that there is data.</li>
+<li><strong>Database.DoSequential()</strong> - to loop through the data set row by row.</li>
+<li><strong>Database.GetValue()</strong> - to get that row's data.</li>
 </ul>
-<p>Here is an example of the code needed to loop through a list of records (taken from the SpiraTest database as an example) and call our <code>Logic()</code> parameterized function with the appropriate test data:</p>
+<p>Here is an example of the code needed to loop through a list of records (taken from the SpiraTest database) and call our <code>Logic()</code> parameterized function with the appropriate test data:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Database</span><span class="p">.</span><span class="nx">DoAttach</span><span class="p">(</span><span class="s1">&#39;Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SpiraTest;Data Source=.&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;SELECT * FROM TST_PROJECT&#39;</span><span class="w"> </span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Successfully Connected&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">success</span><span class="p">);</span>
 

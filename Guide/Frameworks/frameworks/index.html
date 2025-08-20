@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../New/8_4/" class="md-tabs__link">
+      <a href="../../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1475,6 +1475,18 @@
     <li class="md-nav__item">
       <a href="../../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11393,6 +11405,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11968,48 +11992,48 @@
                 <h1 id="testing-frameworks">Testing Frameworks<a class="headerlink" href="#testing-frameworks" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>In different parts of the documentation and in knowledge base articles we use term <strong>Framework mode</strong> to refer to this kind of framework with built-in support for modules, test cases and test sets. Requires Rapise 8.0+</p>
+<p>In different parts of the documentation and in knowledge base articles, we use the term <strong>Framework mode</strong> to refer to this type of framework with built-in support for modules, test cases, and test sets. Requires Rapise 8.0+</p>
 </div>
 <p>A testing framework is a collection of guidelines, libraries, and tools that provide a standard way of organizing and executing tests.</p>
-<p>Previous versions of Rapise (pre 8.0) already had all the necessary tools for developing testing frameworks. With those tools that have been available for a long time, it is possible to build a variety of testing frameworks. But the availability of variety leads to difficulties in choosing the best combination of tools to obtain the optimal result.</p>
-<p>We have analyzed the best practices of Rapise for this purpose and tuned the IDE to support the best practices we encountered.</p>
+<p>Previous versions of Rapise (pre-8.0) already included all the necessary tools for developing testing frameworks. While these long-available tools allowed for the creation of a variety of frameworks, this very flexibility led to difficulties in choosing the optimal combination of tools.</p>
+<p>We analyzed Rapise's best practices for this purpose and tuned the IDE to support the identified practices.</p>
 <p>From our point of view, a good testing framework should have the following features:</p>
 <ol>
 <li>
-<p><a href="#grouping-of-test-cases">Grouping of test cases</a>. Test cases can be organized in subfolders and each test case can have separate RVL Sheets and functions.</p>
+<p><a href="#grouping-of-test-cases">Grouping of test cases</a>. Test cases can be organized into subfolders, and each test case can have separate RVL sheets and functions.</p>
 </li>
 <li>
 <p><a href="#managing-common-data">Managing common data</a> - spreadsheets, configurations, functions, parameters, scripts, libraries, object repositories.</p>
 </li>
 <li>
-<p><a href="#object-repositories">Object repositories</a>. A repository may be for a test case, a common one for different test cases, or a common one for a Page Object.</p>
+<p><a href="#object-repositories">Object repositories</a>. A repository can be specific to a test case, shared among different test cases, or dedicated to a Page Object.</p>
 </li>
 <li>
-<p><a href="#refactoring">Refactoring</a>. Moving, renaming, cloning, importing and exporting test cases is necessary to easily organize the framework as it grows and develops.</p>
+<p><a href="#refactoring">Refactoring</a>. Moving, renaming, cloning, importing, and exporting test cases are necessary to easily organize the framework as it grows and develops.</p>
 </li>
 <li>
-<p><a href="#cloning-of-the-entire-testing-framework">Cloning of the entire testing framework</a>. Ability to clone and save the framework as a whole, preserving settings for test management - test sets and configurations.</p>
+<p><a href="#cloning-of-the-entire-testing-framework">Cloning of the entire testing framework</a>. The ability to clone and save the framework as a whole, preserving test management settings—test sets and configurations.</p>
 </li>
 <li>
-<p><a href="#parametrization">Parametrization</a>, including runtime settings (intervals, screenshots), and configuration settings (initial URL, startup paths, etc.).</p>
+<p><a href="#parametrization">Parametrization</a>, including runtime settings (e.g., intervals, screenshots) and configuration settings (e.g., initial URL, startup paths).</p>
 </li>
 <li>
-<p>An elaborate <a href="#framework-development-workflow">framework development workflow</a>. As a rule, it is impossible to foresee everything at the beginning of development.  It also takes time to learn all the features of Rapise. That said, the first test cases should appear as early as possible. A good workflow allows you to get started quickly, without having to fully explore all the features and without sacrificing the quality of the framework in the future.</p>
+<p>An elaborate <a href="#framework-development-workflow">framework development workflow</a>. As a rule, it's impossible to foresee everything at the beginning of development. Learning all of Rapise's features also takes time. However, the first test cases should be developed as early as possible. A good workflow allows for a quick start without needing to fully explore all features and without sacrificing the future quality of the framework.</p>
 </li>
 <li>
-<p>A <a href="#navigation-system">navigation system</a> is necessary to navigate a framework with hundreds or thousands of test cases and dozens of configurations. Moreover, the capabilities for internal documentation of individual test cases, functions, and Page Objects are important.</p>
+<p>A <a href="#navigation-system">navigation system</a> is necessary to navigate a framework with hundreds or thousands of test cases and dozens of configurations. Furthermore, capabilities for internal documentation of individual test cases, functions, and Page Objects are important.</p>
 </li>
 <li>
-<p><a href="#integration-with-test-management">Integration with test management</a>. Test sets, night runs, work with flaky tests, launch history.</p>
+<p><a href="#integration-with-test-management">Integration with test management</a>. Test sets, nightly runs, management of flaky tests, and launch history.</p>
 </li>
 <li>
-<p><a href="#collaboration-and-distributed-development">Teamwork and distributed development</a>. Distributed development and test launches where different participants have different levels of knowledge and expertise. If you're developing a medical system, for example, someone will know medicine better, and someone will know test automation better. And it is important to ensure harmonious interaction between the different members of the team.</p>
+<p><a href="#collaboration-and-distributed-development">Teamwork and distributed development</a>. Distributed development and test launches involve participants with varying levels of knowledge and expertise. For example, if you're developing a medical system, one person might have deep medical knowledge while another excels in test automation. It's crucial to ensure harmonious interaction among the different team members.</p>
 </li>
 <li>
-<p><a href="#maintenance">Maintenance</a>. testing frameworks are developed for the long term, which means that they must be constantly maintained. It is perfectly normal for a test to fail with minimal changes to the application, and hence the convenience of constantly fixing them comes to the forefront.</p>
+<p><a href="#maintenance">Maintenance</a>. Testing frameworks are developed for the long term, meaning they require constant maintenance. It's perfectly normal for a test to fail with minimal changes to the application, so the convenience of consistently fixing them becomes paramount.</p>
 </li>
 <li>
-<p><a href="#mixed-mode-tests">Mixed Mode Tests</a>. Integration tests often interact with several different types of applications. There's the mobile client, the web app, the desktop, and the API. And the usability of interaction with all of these applications comes to the force.</p>
+<p><a href="#mixed-mode-tests">Mixed Mode Tests</a>. Integration tests often interact with several different types of applications. These can include the mobile client, web application, desktop application, and API. And the usability of interacting with all of these applications becomes crucial.</p>
 </li>
 </ol>
 <h2 id="testing-framework-features">Testing Framework Features<a class="headerlink" href="#testing-framework-features" title="Permanent link">&para;</a></h2>
@@ -12020,10 +12044,10 @@
 <p>Alternatively, you can move the test case to a different folder later to regroup it:</p>
 <p><img alt="Move Test Case" src="../img/move_test_case.png" /></p>
 <h3 id="managing-common-data">Managing Common Data<a class="headerlink" href="#managing-common-data" title="Permanent link">&para;</a></h3>
-<p>In Rapise, the shared folder plays a vital role in organizing resources that are shared across test cases, modules, and page objects. Typically, the shared folder includes the following:</p>
+<p>In Rapise, the shared folder plays a vital role in organizing resources that are shared across test cases, modules, and page objects. Typically, the shared folder contains the following:</p>
 <ol>
 <li>
-<p>Input data files in formats like spreadsheet (<code>.xlsx</code>), JSON (<code>.json</code>), CSV, or plain text.</p>
+<p>Input data files in formats such as spreadsheets (<code>.xlsx</code>), JSON (<code>.json</code>), CSV, or plain text.</p>
 </li>
 <li>
 <p><code>.js</code> files containing common functions.</p>
@@ -12036,24 +12060,24 @@
 </li>
 </ol>
 <p>By default, the framework provides a <code>Common.js</code> file where you can place all your common functions.</p>
-<p>If you wish to make any file shared, you can locate it in the <a href="/Guide/test_files_dialog">Files View</a> tab and tag it as <code>shared</code>.</p>
+<p>To make any file shared, you can locate it in the <a href="../../test_files_dialog/">Files View</a> tab and tag it as <code>shared</code>.</p>
 <p>For instance, if you tag a file as <code>User.js</code>, it will be automatically loaded when any other test case is started:</p>
 <p><img alt="Tagging a File as Shared" src="../img/frameworks_tag_file_shared.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>To auto-load a shared file on playback only, set the <code>shared</code> tag.</p>
 </div>
-<p>To auto load a shared file on playback only set <code>shared</code> tag.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>To auto-load a shared file on playback and recording, set the <code>shared,recorder</code> tags.</p>
 </div>
-<p>To auto load a shared file on playback and recording set <code>shared,recorder</code> tags.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>To auto-load a shared file on recording only, set the <code>shared,recorder,skip</code> tag.</p>
 </div>
-<p>To auto load a shared file on recording only set <code>shared,recorder,skip</code> tag.</p>
-<p>Furthermore, if you tag an arbitrary <code>Objects.js</code> file with the <code>shared</code> tag, all the objects defined within it will be accessible in any test case.</p>
+<p>Furthermore, if you tag any <code>Objects.js</code> file with the <code>shared</code> tag, all objects defined within it will be accessible in any test case.</p>
 <h3 id="object-repositories">Object Repositories<a class="headerlink" href="#object-repositories" title="Permanent link">&para;</a></h3>
-<p>The objects recorded by the Rapise recorder can be categorized into three types:</p>
+<p>Objects recorded by the Rapise recorder can be categorized into three types:</p>
 <ol>
 <li>
 <p>Test case-specific objects.</p>
@@ -12077,10 +12101,10 @@
 <p><img alt="PO Objects" src="../img/frameworks_po_objects.png" /></p>
 </li>
 <li>
-<p>Any of these repositories can be made global by tagging its corresponding <code>Objects.js</code> file with the <code>shared</code> tag in the <a href="/Guide/test_files_dialog">Files View</a>. For example, if the <em>AppNavigation</em> repository is marked as <code>shared</code>, any recording or learning performed in the <em>AppNavigation</em> repository will automatically update the global object repository.</p>
+<p>Any of these repositories can be made global by tagging its corresponding <code>Objects.js</code> file with the <code>shared</code> tag in the <a href="../../test_files_dialog/">Files View</a>. For example, if the <em>AppNavigation</em> repository is marked as <code>shared</code>, any recording or learning performed within it will automatically update the global object repository.</p>
 </li>
 </ol>
-<p>You can utilize the <a href="/Guide/object_manager">Object Manager</a> to copy objects between different repositories.</p>
+<p>You can utilize the <a href="../../object_manager/">Object Manager</a> to copy objects between different repositories.</p>
 <h3 id="refactoring">Refactoring<a class="headerlink" href="#refactoring" title="Permanent link">&para;</a></h3>
 <p>The testing framework offers several features that facilitate refactoring activities:</p>
 <ol>
@@ -12109,38 +12133,38 @@
 <p>Deleting an object from the repository.</p>
 </li>
 </ol>
-<p>For example, when moving a test case, it can be a gradual process. First, we clone the original test case, allowing both versions to coexist (e.g., for different versions of the application under test). Then, once the old test case becomes irrelevant, we delete it. In this way, we utilize the combination of <em>clone</em> and <em>delete</em> operations instead of a direct <em>move</em>.</p>
+<p>For example, moving a test case can be a gradual process. First, clone the original test case, allowing both versions to coexist (e.g., for different versions of the application under test). Then, once the old test case becomes irrelevant, delete it. In this way, you can utilize the combination of <em>clone</em> and <em>delete</em> operations instead of a direct <em>move</em>.</p>
 <h3 id="cloning-of-the-entire-testing-framework">Cloning of the Entire testing framework<a class="headerlink" href="#cloning-of-the-entire-testing-framework" title="Permanent link">&para;</a></h3>
-<p>A full copy of the entire testing framework may be needed. For example, if you want to separate different test versions for different product versions.</p>
-<p>This can also be achieved by maintaining a common unified testing framework with different configurations. Or by using GIT branches. These are the methods we recommend using. But this requires a higher level of test organization, so at first a full copy of the framework may be the easiest and most efficient solution. In addition, Spira gives you the option to clone the product. If such a product has a testing framework, cloning it also becomes logical.</p>
-<p>You can do it with <code>File &gt; Save As...</code> menu. Once you have a copy, you can save it to another product in Spira.</p>
+<p>A full copy of the entire testing framework might be needed. For example, to separate different test versions for different product versions.</p>
+<p>This can also be achieved by maintaining a common unified testing framework with different configurations. Or by using Git branches. These are the methods we recommend. However, these methods require a higher level of test organization, so initially, a full copy of the framework might be the easiest and most efficient solution. Additionally, Spira offers the option to clone the product. If such a product includes a testing framework, cloning it also becomes a logical step.</p>
+<p>You can do this using the <code>File &gt; Save As...</code> menu. Once you have a copy, you can save it to another product in Spira.</p>
 <h3 id="parametrization">Parametrization<a class="headerlink" href="#parametrization" title="Permanent link">&para;</a></h3>
 <p>As the testing framework evolves, the number of configuration parameters typically increases. Initially, you can start without parameters and gradually add them as needed.</p>
 <p>The testing framework parameters can be divided into two groups:</p>
 <ol>
 <li>
-<p>Logical parameters of the test, such as the application path, initial URL, path to the test data file, etc.</p>
+<p>Logical parameters of the test, such as application path, initial URL, and path to the test data file.</p>
 </li>
 <li>
-<p>Runtime environment parameters, such as the web browser profile name (<code>g_browserProfile</code>), command interval (<code>g_commandInterval</code>), stopping the test at the first error, capturing screenshots during the test, etc.</p>
+<p>Runtime environment parameters, such as the web browser profile name (<code>g_browserProfile</code>), command interval (<code>g_commandInterval</code>), stopping the test at the first error, and capturing screenshots during the test.</p>
 </li>
 </ol>
-<p>The logical parameters of the test can be configured in the Spira Dashboard on the <a href="../parameters/">parameters</a> tab.</p>
-<p>To set the runtime environment parameters, you can click the button in the <code>Choose Test Case</code> to play selector dialog:</p>
+<p>The logical test parameters can be configured in the Spira Dashboard on the <a href="../parameters/">parameters</a> tab.</p>
+<p>To set runtime environment parameters, click the button in the <code>Choose Test Case</code> to Play selector dialog:</p>
 <p><img alt="Parameter Button" src="../img/frameworks_param_button.png" /></p>
 <h3 id="framework-development-workflow">Framework Development Workflow<a class="headerlink" href="#framework-development-workflow" title="Permanent link">&para;</a></h3>
 <p>When embarking on the creation of your first test framework, it's natural to wonder where to begin. How can you ensure that you plan ahead and leverage the full benefits of test frameworks, such as data and logic separation, page objects, and flexible configurations, without the need for extensive rework?</p>
-<p>If you already have experience creating frameworks in Rapise, you likely have a template and established procedure. However, if you're still learning, we recommend following the workflow outlined below.</p>
+<p>If you already have experience creating frameworks in Rapise, you likely have a template and an established procedure. However, if you're still learning, we recommend following the workflow outlined below.</p>
 <h4 id="step-one-test-cases">Step One: Test Cases<a class="headerlink" href="#step-one-test-cases" title="Permanent link">&para;</a></h4>
-<p>Start by creating a new framework and implementing a selection of test cases. It's crucial to choose the right test cases at this stage. Avoid overly complex or time-consuming ones, as some test cases can be as substantial as the framework itself. It's wise to postpone their implementation to later stages. Begin by implementing a set of 2-5 <em>small</em> test cases. This approach will yield quick results that you can demonstrate and help you plan your next steps effectively.</p>
+<p>Start by creating a new framework and implementing a selection of test cases. It's crucial to choose the right test cases at this stage. Avoid overly complex or time-consuming ones, as some test cases can be as substantial as the framework itself. It's wise to postpone their implementation until later stages. Begin by implementing a set of 2-5 <em>small</em> test cases. This approach will yield quick results that you can demonstrate and help you plan your next steps effectively.</p>
 <h4 id="step-two-regular-runs">Step Two: Regular Runs<a class="headerlink" href="#step-two-regular-runs" title="Permanent link">&para;</a></h4>
-<p>The sooner you establish regular, automated test runs, the better. You don't need to wait until you have an extensive suite of test cases; even running 1-2 tests regularly, such as nightly runs, is sufficient. By doing so, you can gather valuable statistics about the reliability of your tests right from the start. For instance, you may discover that a particular test case occasionally encounters intermittent issues and fails 1 time out of 10. Identifying these patterns early on and accumulating a history of such occurrences increases the likelihood of pinpointing reliability issues and improving your test case.</p>
-<p>Organize regular test runs by saving your framework in Spira and setting up test runs in the <a href="/Guide/spira_dashboard_2">Spira Dashboard</a>.</p>
+<p>The sooner you establish regular, automated test runs, the better. You don't need to wait until you have an extensive suite of test cases; even running 1-2 tests regularly, such as nightly runs, is sufficient. By doing so, you can gather valuable statistics about the reliability of your tests right from the start. For instance, you might discover that a particular test case occasionally encounters intermittent issues and fails 1 out of 10 times. Identifying these patterns early and accumulating a history of such occurrences increases the likelihood of pinpointing reliability issues and improving your test case.</p>
+<p>Organize regular test runs by saving your framework in Spira and setting up test runs in the <a href="../../spira_dashboard_2/">Spira Dashboard</a>.</p>
 <h4 id="step-three-page-objects">Step Three: Page Objects<a class="headerlink" href="#step-three-page-objects" title="Permanent link">&para;</a></h4>
-<p>Analyze the implemented test cases to identify common patterns or actions that occur repeatedly. You will likely find scenarios such as:</p>
+<p>Analyze the implemented test cases to identify common patterns or actions that occur repeatedly. You'll likely find scenarios such as:</p>
 <ol>
 <li>
-<p>Running the application at the start and closing it at the end in multiple test cases.</p>
+<p>Launching the application at the start and closing it at the end in multiple test cases.</p>
 </li>
 <li>
 <p>Logging into the application in several test cases.</p>
@@ -12149,42 +12173,42 @@
 <p>Navigating to specific forms or pages within the application in multiple test cases.</p>
 </li>
 <li>
-<p>Many pages/dialogs in your application have same type of grid and you need to click on the row in such grid time after time.</p>
+<p>Many pages or dialogs in your application have the same type of grid, requiring you to click on rows repeatedly.</p>
 </li>
 </ol>
-<p>These are typical examples, but there may be other recurring patterns in your specific case. If you observe any such patterns, it's time to create a <a href="../pageobjects/">Page Object</a>. This object will encapsulate the necessary steps, such as <em>DoLaunch</em>, <em>DoLogin</em>, and <em>DoClose</em> as well as <em>DoClickRow</em>. You can then modify your test cases to utilize the new <a href="../pageobjects/">Page Object</a>, simplifying their structure and enhancing maintainability.</p>
+<p>These are typical examples, but other recurring patterns may exist in your specific case. If you observe any such patterns, it's time to create a <a href="../pageobjects/">Page Object</a>. This object will encapsulate the necessary steps, such as <em>DoLaunch</em>, <em>DoLogin</em>, <em>DoClose</em>, and <em>DoClickRow</em>. You can then modify your test cases to utilize the new <a href="../pageobjects/">Page Object</a>, simplifying their structure and enhancing maintainability.</p>
 <h4 id="step-four-parameters-and-configurations">Step Four: Parameters and Configurations<a class="headerlink" href="#step-four-parameters-and-configurations" title="Permanent link">&para;</a></h4>
-<p>As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications may have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The <a href="../parameters/">parameters editor</a> can be used to set these parameters, allowing your framework to become more flexible and adaptable.</p>
+<p>As you continue developing your framework and adding more test cases, pay attention to the need for configurable parameters. In some cases, applications might have different variants that vary in initial URLs or login parameters. To accommodate these variations, consider defining parameters for each test case launch. The <a href="../parameters/">parameters editor</a> can be used to set these parameters, allowing your framework to become more flexible and adaptable.</p>
 <h4 id="step-nnnn-whats-next">Step NNNN: What's Next<a class="headerlink" href="#step-nnnn-whats-next" title="Permanent link">&para;</a></h4>
 <p>As your framework grows in complexity, you will encounter new challenges and opportunities for improvement. Here are some additional features that you might find useful:</p>
 <ul>
 <li>
-<p><a href="/Guide/rvl_editor#param-dropdowns">Dropdowns</a> for more versatile parameter options.</p>
+<p><a href="../../rvl_editor/#param-dropdowns">Dropdowns</a> for more versatile parameter options.</p>
 </li>
 <li>
-<p><a href="/Guide/data_driven_testing">Data Driven Testing</a> for executing tests with different input data sets.</p>
+<p><a href="../../data_driven_testing/">Data Driven Testing</a> for executing tests with different input data sets.</p>
 </li>
 <li>
-<p><a href="/Guide/git_integration">Git Integration</a> for version control and collaboration.</p>
+<p><a href="../../git_integration/">Git Integration</a> for version control and collaboration.</p>
 </li>
 <li>
-<p><a href="/Guide/spira_dashboard_2#parallel-execution">Parallel Execution</a> for faster test execution across multiple environments.</p>
+<p><a href="../../spira_dashboard_2/#parallel-execution">Parallel Execution</a> for faster test execution across multiple environments.</p>
 </li>
 </ul>
 <h3 id="navigation-system">Navigation System<a class="headerlink" href="#navigation-system" title="Permanent link">&para;</a></h3>
-<p>Test cases can be easily accessed through the <a href="/Guide/object_tree">Object Tree</a> or the <a href="/Guide/spira_dashboard_2">Spira Dashboard</a>.</p>
-<p>Object repositories are organized hierarchically within test cases and Page Objects. If you're looking for a specific object, you can use the <a href="/Guide/object_tree#filtering">Object Filter</a> to quickly locate it.</p>
+<p>Test cases can be easily accessed through the <a href="../../object_tree/">Object Tree</a> or the <a href="../../spira_dashboard_2/">Spira Dashboard</a>.</p>
+<p>Object repositories are organized hierarchically within test cases and Page Objects. If you're looking for a specific object, you can use the <a href="../../object_tree/#filtering">Object Filter</a> to quickly locate it.</p>
 <p>To share an object repository, simply assign the <code>shared</code> tag to the corresponding <code>Objects.js</code> file in the Files Tree.</p>
 <p>You can quickly navigate to the definition of any function or Page Object method in RVL or script mode by pressing the <span class="keys"><kbd class="key-f12">F12</kbd></span> key.</p>
 <p>Common functions and variables are displayed in the object tree for easy reference:</p>
 <p><img alt="Functions and Variables" src="../img/frameworks_global_funcs_and_vars.png" /></p>
 <p>The structure of each RVL file is also visible, allowing you to quickly locate specific lines of code.</p>
-<p>Rapise provides a global <a href="/Guide/find_and_replace_dialog">find and replace</a> functionality, accessible through the <code>Edit &gt; Find in Files</code> menu or by using the shortcut <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-f">F</kbd></span>.</p>
+<p>Rapise provides global <a href="../../find_and_replace_dialog/">find and replace</a> functionality, accessible through the <code>Edit &gt; Find in Files</code> menu or by using the shortcut <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-f">F</kbd></span>.</p>
 <h4 id="data-script-and-configuration-files">Data, Script, and Configuration Files<a class="headerlink" href="#data-script-and-configuration-files" title="Permanent link">&para;</a></h4>
-<p>To easily access data, script, and configuration files, you can find them within the Shared node in the <a href="/Guide/object_tree">Object Tree</a>. Shared <code>.js</code> files are automatically loaded when any test case within the framework is launched. This allows you to use functions or variables defined in the shared file throughout the entire framework.</p>
+<p>To easily access data, script, and configuration files, you can find them within the Shared node in the <a href="../../object_tree/">Object Tree</a>. Shared <code>.js</code> files are automatically loaded when any test case within the framework is launched. This allows you to use functions or variables defined in the shared file throughout the entire framework.</p>
 <h3 id="integration-with-test-management">Integration with Test Management<a class="headerlink" href="#integration-with-test-management" title="Permanent link">&para;</a></h3>
-<p>In order to streamline your test management process, you can utilize the integration with the <a href="/Guide/spira_dashboard_2">Spira Dashboard</a>. Within the dashboard, you have the ability to define test sets and configurations for your tests.</p>
-<p>We highly recommend using <a href="/Guide/spiratest_integration">Spira</a> for comprehensive test management. By leveraging Spira, you can easily deploy your test sets with a single click using the <a href="/Guide/spiratest_integration#saving-a-test-to-spiratest">Sync to Spira</a> feature. This integration provides you with access to essential test management functionalities, including:</p>
+<p>To streamline your test management process, you can utilize the integration with the <a href="../../spira_dashboard_2/">Spira Dashboard</a>. Within the dashboard, you can define test sets and configurations for your tests.</p>
+<p>We highly recommend using <a href="../../spiratest_integration/">Spira</a> for comprehensive test management. By leveraging Spira, you can easily deploy your test sets with a single click using the <a href="../../spiratest_integration/#saving-a-test-to-spiratest">Sync to Spira</a> feature. This integration provides you with access to essential test management functionalities, including:</p>
 <ol>
 <li>
 <p>Scheduled or nightly test runs.</p>
@@ -12197,8 +12221,8 @@
 </li>
 </ol>
 <h3 id="collaboration-and-distributed-development">Collaboration and Distributed Development<a class="headerlink" href="#collaboration-and-distributed-development" title="Permanent link">&para;</a></h3>
-<p>When working in a small team of 1-3 members, integrating with <a href="/Guide/spira_dashboard_2">Spira</a> is an excellent solution. However, for larger teams, a combination of <a href="/Guide/spira_dashboard_2">Spira</a> and <a href="/Guide/git_integration">Git</a> may be more suitable.</p>
-<p>Since Rapise 8, we have enhanced the integration with <a href="../diffmerge/">Diff/Merge</a> tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them together.</p>
+<p>When working in a small team of 1-3 members, integrating with <a href="../../spira_dashboard_2/">Spira</a> is an excellent solution. However, for larger teams, a combination of <a href="../../spira_dashboard_2/">Spira</a> and <a href="../../git_integration/">Git</a> might be more suitable.</p>
+<p>Since Rapise 8, we've enhanced the integration with <a href="../diffmerge/">Diff/Merge</a> tools, which greatly facilitates distributed development. This means that even if you and another developer make changes to the same file or test, the outcomes of your work are not lost, and you can easily merge them.</p>
 <h3 id="maintenance">Maintenance<a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h3>
 <p>Rapise provides several features that facilitate quick and convenient support and correction of test case logic:</p>
 <ol>
@@ -12209,81 +12233,83 @@
 <p>Test run report with error location: The test run report includes the specific location where an error occurred, making it easier to identify and troubleshoot issues.</p>
 </li>
 <li>
-<p><a href="/Guide/settings_dialog#execution">Stop on error</a>: This option allows you to configure the test to stop at the first encountered error. It enables you to analyze the application's state and determine if any changes are causing the error.</p>
+<p><a href="../../settings_dialog/#execution">Stop on error</a>: This option allows you to configure the test to stop at the first encountered error. It enables you to analyze the application's state and determine if any changes are causing the error.</p>
 </li>
 <li>
 <p>Running individual test cases: You can execute a specific test case independently for focused testing or troubleshooting.</p>
 </li>
 <li>
-<p>Running individual RVL sheets: It is possible to run a specific RVL sheet within a test case, allowing targeted testing of particular functionality.</p>
+<p>Running individual RVL sheets: You can run a specific RVL sheet within a test case, allowing targeted testing of particular functionality.</p>
 </li>
 <li>
-<p>Running a specific area in the RVL sheet: You can execute a selected portion of the RVL sheet, enabling precise testing of specific scenarios.</p>
+<p>Running a specific area in an RVL sheet: You can execute a selected portion of an RVL sheet, enabling precise testing of specific scenarios.</p>
 </li>
 <li>
 <p>Running a single Page Object action: You have the flexibility to execute a single action within a Page Object, allowing isolated testing and debugging.</p>
 </li>
 <li>
-<p>Running a part of a Page Object action: Similar to running a specific area in the RVL sheet, this feature enables you to execute a specific part of an action for granular testing.</p>
+<p>Running a part of a Page Object action: Similar to running a specific area in an RVL sheet, this feature enables you to execute a specific part of an action for granular testing.</p>
 </li>
 <li>
-<p><a href="/Guide/object_tree#context-menu-object">Flash</a> and <a href="/Guide/object_tree#context-menu-object">Relearn</a>: These features assist in analyzing and fixing changed or problematic objects in the repository by refreshing their recognition and learning.</p>
+<p><a href="../../object_tree/#context-menu-object">Flash</a> and <a href="../../object_tree/#context-menu-object">Relearn</a>: These features assist in analyzing and fixing changed or problematic objects in the repository by refreshing their recognition and learning.</p>
 </li>
 <li>
-<p>Web Spy with <a href="/Guide/web_spy#maintenance-mode">maintenance mode</a>: Web Spy provides a maintenance mode that helps efficiently fix multiple objects in the repository simultaneously.</p>
+<p>Web Spy with <a href="../../web_spy/#maintenance-mode">maintenance mode</a>: Web Spy provides a maintenance mode that helps efficiently fix multiple objects in the repository simultaneously.</p>
 </li>
 <li>
-<p>Shared object repositories: When a commonly used object's location changes across multiple test cases, it is easier to update it when it is part of a shared repository.</p>
+<p>Shared object repositories: When a commonly used object's location changes across multiple test cases, it's easier to update it if it's part of a shared repository.</p>
 </li>
 <li>
 <p><a href="../pageobjects/">Page Objects</a> with shared actions: By using Page Objects with shared actions, you can make updates to a single Page Object to resolve issues in multiple test cases that utilize it.</p>
 </li>
 </ol>
 <h3 id="mixed-mode-tests">Mixed Mode Tests<a class="headerlink" href="#mixed-mode-tests" title="Permanent link">&para;</a></h3>
-<p>Mixed mode tests, also known as cross-application testing, involve the testing of multiple applications or systems simultaneously. This form of testing focuses on verifying the interactions and interoperability between different software applications.</p>
-<p>In mixed mode tests, the primary objective is to ensure the proper behavior and smooth flow of data between interconnected applications or systems. This type of testing is commonly employed in scenarios where various software components need to communicate and exchange data. Examples include testing web interfaces, desktop interfaces, web services, APIs, and distributed systems.</p>
-<p>Rapise provides the capability to connect different <a href="/Guide/change_the_libraries_being_use#how-to-change-the-libraries">libraries</a> for recording and playing tests. You can record tests that involve different types of applications either all at once or in separate parts.</p>
+<p>Mixed-mode tests, also known as cross-application testing, involve the simultaneous testing of multiple applications or systems. This form of testing focuses on verifying the interactions and interoperability among different software applications.</p>
+<p>In mixed-mode tests, the primary objective is to ensure the proper behavior and smooth flow of data among interconnected applications or systems. This type of testing is commonly employed in scenarios where various software components need to communicate and exchange data. Examples include testing web interfaces, desktop interfaces, web services, APIs, and distributed systems.</p>
+<p>Rapise provides the capability to connect different <a href="../../change_the_libraries_being_use/#how-to-change-the-libraries">libraries</a> for recording and playing tests. You can record tests that involve different types of applications either all at once or in separate parts.</p>
 <h2 id="testing-framework-contents">Testing Framework Contents<a class="headerlink" href="#testing-framework-contents" title="Permanent link">&para;</a></h2>
 <h3 id="test-cases">Test Cases<a class="headerlink" href="#test-cases" title="Permanent link">&para;</a></h3>
-<p>Each testing framework is a collection of Test Cases. Each test case may have its own object repository. Each test case may call Page Objects and other test cases via <code>RVL.DoInvokeTest</code>. Each test case may have its own Web Service/API calls.</p>
+<p>Each testing framework is a collection of test cases. Each test case may have its own object repository. Each test case may call Page Objects and other test cases via <code>RVL.DoInvokeTest</code>. Each test case may have its own Web Service/API calls.</p>
 <h3 id="page-objects">Page Objects<a class="headerlink" href="#page-objects" title="Permanent link">&para;</a></h3>
-<p>It is convenient to put the logic and objects common for specific testing framework into <a href="/Guide/Frameworks/pageobjects">Page Objects</a>.</p>
+<p>It is convenient to place logic and objects common to a specific testing framework into <a href="../pageobjects/">Page Objects</a>.</p>
 <h3 id="shared-files-and-repositories">Shared Files and Repositories<a class="headerlink" href="#shared-files-and-repositories" title="Permanent link">&para;</a></h3>
-<p>Configuration, data, common functions, objects - multiple <a href="#data-script-and-configuration-files">assets</a> specific to a testing framework.</p>
+<p>Configuration, data, common functions, objects—multiple <a href="#data-script-and-configuration-files">assets</a> specific to a testing framework.</p>
 <h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
-<p><a href="/Guide/Frameworks/parameters">Parameters</a> and configurations required for flexibility of the testing framework.</p>
+<p><a href="../parameters/">Parameters</a> and configurations required for framework flexibility.</p>
 <h3 id="test-sets">Test Sets<a class="headerlink" href="#test-sets" title="Permanent link">&para;</a></h3>
-<p><a href="/Guide/spira_dashboard_2">Spira Dashboard</a> helps with all essential test management activities: management and execution of test sets. Test set helps grouping the test cases using different criteria for different purposes.</p>
+<p><a href="../../spira_dashboard_2/">Spira Dashboard</a> assists with all essential test management activities: managing and executing test sets. Test sets help group test cases using different criteria for various purposes.</p>
 <h2 id="testing-framework-common-actions">Testing Framework Common Actions<a class="headerlink" href="#testing-framework-common-actions" title="Permanent link">&para;</a></h2>
 <h3 id="creating-a-new-testing-framework">Creating a New Testing Framework<a class="headerlink" href="#creating-a-new-testing-framework" title="Permanent link">&para;</a></h3>
 <p>To create a new testing framework, follow these steps:</p>
 <ol>
 <li>Go to <em>File &gt; Create New &gt; Test Automation Framework</em>.</li>
 <li>Provide a name for your framework in the <em>Name</em> field.</li>
-<li>Select the folder where you want to create the framework. For now, you can choose to keep it in your working folder. Later, you can link it to Spira (and possibly Git) if needed.</li>
-<li>Choose the <em>primary type of test</em> for your framework. If your application is web-based, select the Web option. If it is desktop or mobile-based, choose the corresponding option. If your application consists of multiple parts (e.g., web, desktop, some mobile, and API), you can choose any option. The primary type selection is for convenience and can be modified later if necessary.</li>
+<li>Select the folder where you want to create the framework. For now, you can keep it in your working folder. Later, you can link it to Spira (and possibly Git) if needed.</li>
+<li>Choose the <em>primary type of test</em> for your framework. If your application is web-based, select the Web option. If it is desktop or mobile-based, choose the corresponding option. If your application consists of multiple parts (e.g., web, desktop, mobile, and API), you can choose any option. The primary type selection is for convenience and can be modified later if necessary.</li>
 </ol>
 <p><img alt="New Framework" src="../img/frameworks_create_new_framework.png" /></p>
 <h3 id="creating-a-test-case">Creating a Test Case<a class="headerlink" href="#creating-a-test-case" title="Permanent link">&para;</a></h3>
 <p>There are two methods to create a new test case:</p>
 <ol>
-<li>Method 1: Use the main menu option <em>File/Add To Framework/Test Case</em>.</li>
-</ol>
+<li>
+<p>Method 1: Use the main menu option <em>File/Add To Framework/Test Case</em>.</p>
 <p><img alt="New test case main menu" src="../img/frameworks_new_test_case_main_menu.png" /></p>
-<ol>
-<li>Method 2: Use the context menu by right-clicking on the <em>Test Cases</em> root node or a test case folder node.</li>
-</ol>
+</li>
+<li>
+<p>Method 2: Use the context menu by right-clicking on the <em>Test Cases</em> root node or a test case folder node.</p>
 <p><img alt="Context menu for root node" src="../img/frameworks_add_test_case_root.png" /></p>
 <p><img alt="Context menu for folder node" src="../img/frameworks_add_test_case_group.png" /></p>
+</li>
+</ol>
 <p>After selecting one of these methods, a <em>Create New Test Case</em> dialog will appear where you can specify the name and folder for the test case.</p>
 <p><img alt="Name and folder" src="../img/frameworks_new_tc_name_and_folder.png" /></p>
 <h4 id="test-case-naming">Test Case Naming<a class="headerlink" href="#test-case-naming" title="Permanent link">&para;</a></h4>
 <p>Test case naming can vary based on personal preference and project requirements. Some people prefer shorter names for test cases and organize them into folders, such as <em>Modules/Invoices/Create</em>. Others prefer longer, more descriptive names, like <em>Modules/Invoices/Create New Invoice With Single Item</em>.</p>
-<p>Rapise supports both approaches, and the choice of naming convention can affect how you refer to test cases within your scripts, specifically when using <code>RVL.DoPlayTest</code> function.</p>
-<p>When using the shorter naming convention, you need to refer to the test case by its full path:</p>
+<p>Rapise supports both approaches, and the chosen naming convention can affect how you refer to test cases within your scripts, specifically when using the <code>RVL.DoPlayTest</code> function.</p>
+<p>When using the shorter naming convention, you must refer to the test case by its full path:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayTest</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%/Test Cases/Modules/Invoices/Create/Test.sstest&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p>However, with longer, more descriptive names, you can reference the test case by only using the last part of the name, assuming it is unique:</p>
+<p>However, with longer, more descriptive names, you can reference the test case by using only the last part of the name, assuming it is unique:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">RVL</span><span class="p">.</span><span class="nx">DoPlayTest</span><span class="p">(</span><span class="s1">&#39;Create New Invoice With Single Item&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>It's important to note that when dragging and dropping a test case into the RVL editor, the generated call may vary depending on whether the ++Shift++ key is pressed or not.</p>
@@ -12292,32 +12318,34 @@
 <p>With ++Shift++ key pressed:</p>
 <p><img alt="Shift+Drag&amp;Drop a Test Case" src="../img/frameworks_shift_drag_drop_test_case.png" /></p>
 <h3 id="renaming-test-cases">Renaming Test Cases<a class="headerlink" href="#renaming-test-cases" title="Permanent link">&para;</a></h3>
-<p>To rename a test case in Rapise, you can use the <code>Rename</code> option available for each test case. Simply right-click on the test case and select the <code>Rename</code> option.</p>
+<p>To rename a test case in Rapise, use the <code>Rename</code> option available for each test case. Simply right-click on the test case and select the <code>Rename</code> option.</p>
 <p><img alt="Rename Test Case" src="../img/frameworks_rename_tc.png" /></p>
-<p>Renaming a test case will affect how it is presented in the Test Cases tree. It will also change the name by which you can reference the test case when calling it using <code>RVL.DoPlayTest</code> by name.</p>
+<p>Renaming a test case will affect how it is presented in the Test Cases tree. It will also change the name by which you can reference the test case when calling it by name using <code>RVL.DoPlayTest</code>.</p>
 <p>It's important to note that renaming a test case does not change any file or folder names. Therefore, you may notice that the paths to the test case remain the same even after renaming:</p>
 <p><img alt="Rename Test Case Example" src="../img/frameworks_rename_tc1.png" /></p>
 <p><img alt="Rename Test Case Results" src="../img/frameworks_rename_tc_result.png" /></p>
 <h3 id="moving-test-cases">Moving Test Cases<a class="headerlink" href="#moving-test-cases" title="Permanent link">&para;</a></h3>
 <p>To move a test case in Rapise, you have the option to move it into an existing folder or into a new folder.</p>
-<p>The simplest way to move a test case is by using drag and drop. Just click and hold the test case, then drag it to the desired location in the test case tree.</p>
+<p>The simplest way to move a test case is by dragging and dropping it. Simply click and hold the test case, then drag it to the desired location in the test case tree.</p>
 <p><img alt="Move Test Case via Drag&amp;Drop" src="../img/frameworks_move_drag_drop.png" /></p>
 <p>Alternatively, you can use the context menu to move a test case. Right-click on the test case you want to move and select the <em>Move</em> option. From there, you can choose an existing folder or create a new folder to move the test case into.</p>
 <p><img alt="Move Test Case via Context Menu" src="../img/frameworks_move_context_menu.png" /></p>
 <h3 id="importing-test-cases">Importing Test Cases<a class="headerlink" href="#importing-test-cases" title="Permanent link">&para;</a></h3>
-<p>Importing test cases can be beneficial when you have a standalone test that you want to integrate into your framework or when you want to import a test case from another framework.</p>
-<p>However, there is a limitation to keep in mind. The imported test case should not contain embedded sub-tests or function as a framework itself.</p>
+<p>Importing test cases can be beneficial when you have a standalone test to integrate into your framework or when importing a test case from another framework.</p>
+<p>However, keep a limitation in mind. The imported test case should not contain embedded sub-tests or function as a framework itself.</p>
 <p>To import a test case, you have two options:</p>
 <ol>
-<li>Import into a specific folder: Right-click on the folder where you want to import the test case, then select the "Import Test Case" option from the context menu.</li>
-</ol>
+<li>
+<p>Import into a specific folder: Right-click on the folder where you want to import the test case, then select the "Import Test Case" option from the context menu.</p>
 <p><img alt="Import Test Case via Context Menu" src="../img/frameworks_import_test_case.png" /></p>
-<ol>
-<li>Import into the root: Go to the main menu and navigate to <em>File &gt; Add to Framework &gt; Import External Test Case</em>. This will import the test case into the root of your framework.</li>
-</ol>
+</li>
+<li>
+<p>Import into the root: Go to the main menu and navigate to <em>File &gt; Add to Framework &gt; Import External Test Case</em>. This imports the test case into the root of your framework.</p>
 <p><img alt="Import Test Case via Main Menu" src="../img/frameworks_import_test_case_main_menu.png" /></p>
+</li>
+</ol>
 <h3 id="importing-page-objects-modules">Importing Page Objects / Modules<a class="headerlink" href="#importing-page-objects-modules" title="Permanent link">&para;</a></h3>
-<p>Importing a Page Object or module follows a similar process to importing a Test Case. You have two options to import them:</p>
+<p>Importing a Page Object or module follows a process similar to importing a Test Case. You have two options to import them:</p>
 <ol>
 <li>
 <p>Import from the main menu: Go to <em>File &gt; Add to Framework &gt; Import External Module / Page Object</em>. This option allows you to import a Page Object or module into your framework.</p>
@@ -12327,7 +12355,7 @@
 </li>
 </ol>
 <h3 id="copying-moving-repository-objects">Copying / Moving Repository Objects<a class="headerlink" href="#copying-moving-repository-objects" title="Permanent link">&para;</a></h3>
-<p>There are situations where you may need to transfer repository objects between test cases or from a Test Case to a Page Object. To accomplish this, you can use the <a href="/Guide/object_manager">Object Manager</a> feature in Rapise. Here's how:</p>
+<p>There are situations where you might need to transfer repository objects between test cases or from a Test Case to a Page Object. To accomplish this, use the <a href="../../object_manager/">Object Manager</a> feature in Rapise. Here's how:</p>
 <ol>
 <li>
 <p>Right-click on the <code>[Objects]</code> node in the Object Tree.</p>
@@ -12339,24 +12367,24 @@
 <p><img alt="Launch Object Manager" src="../img/frameworks_launch_object_manager.png" /></p>
 <p>The Object Manager provides a convenient interface for copying or moving repository objects between different locations within your framework.</p>
 <h3 id="defining-global-functions">Defining Global Functions<a class="headerlink" href="#defining-global-functions" title="Permanent link">&para;</a></h3>
-<p>To make a function or variable globally accessible across multiple test cases or modules, you can define them in the <code>Common.js</code> file or any other <code>.js</code> file located in the <code>Shared</code> node. These shared functions and variables can be accessed from any part of your framework.</p>
+<p>To make a function or variable globally accessible across multiple test cases or modules, define them in the <code>Common.js</code> file or any other <code>.js</code> file located in the <code>Shared</code> node. These shared functions and variables can be accessed from any part of your framework.</p>
 <p>In the object tree, you can find the shared functions and variables under the <code>Functions</code> and <code>Variables</code> nodes respectively.</p>
 <h3 id="defining-local-functions">Defining Local Functions<a class="headerlink" href="#defining-local-functions" title="Permanent link">&para;</a></h3>
-<p>If you need to define a function or variable that is specific to a particular test case, you can do so in the Test Case <code>User</code> file. To access the User file, you can either click on <em>View/User</em> or use the <em>User</em> button on the toolbar:</p>
+<p>If you need to define a function or variable specific to a particular test case, you can do so in the Test Case <code>User</code> file. To access the User file, you can either click <em>View/User</em> or use the <em>User</em> button on the toolbar:</p>
 <p><img alt="Show User File" src="../img/frameworks_show_user.png" /></p>
 <p>By defining functions locally in the User file, they will be accessible only within that specific test case.</p>
 <h3 id="global-objects-and-test-cases">Global Objects and Test Cases<a class="headerlink" href="#global-objects-and-test-cases" title="Permanent link">&para;</a></h3>
-<p>The contents of the Global Object node can vary depending on the selected test case or Module/Page Object. The available objects may change based on the specific technology or context of the test case.</p>
-<p>For example, if you have a test case named <code>Desktop Calc</code> that uses desktop technology, and another test case named <code>Web Calc</code> that uses web technology, the Global Object node will display different objects depending on which test case you are editing. When editing the desktop test case, you may not see the <a href="/Libraries/Navigator">Navigator</a> object, but it will be displayed when editing the web test case.</p>
+<p>The contents of the Global Object node can vary depending on the selected test case or Module/Page Object. The available objects might change based on the specific technology or context of the test case.</p>
+<p>For example, if you have a test case named <code>Desktop Calc</code> that uses desktop technology, and another test case named <code>Web Calc</code> that uses web technology, the Global Object node will display different objects depending on which test case you are editing. When editing the desktop test case, you might not see the <a href="../../../Libraries/Navigator/">Navigator</a> object, but it will be displayed when editing the web test case.</p>
 <h3 id="recording-test-cases-and-page-objects">Recording Test Cases and Page Objects<a class="headerlink" href="#recording-test-cases-and-page-objects" title="Permanent link">&para;</a></h3>
 <p><img alt="Record Button" src="../img/frameworks_record_button.png" /></p>
 <p>The behavior of the toolbar's <em>Record</em> button depends on the currently selected file. Here's how it behaves in different scenarios:</p>
 <ol>
 <li>
-<p>If no file is selected and you click on <em>Record</em> in the toolbar, it will display the <em>Select Test Case to Record</em> dialog. This dialog will list only the test cases available in the framework.</p>
+<p>If no file is selected and you click <em>Record</em> in the toolbar, it will display the <em>Select Test Case to Record</em> dialog. This dialog will list only the test cases available in the framework.</p>
 </li>
 <li>
-<p>If you are currently editing a test case and click on <em>Record</em>, the same dialog will appear, but the currently edited test case will be pre-selected.</p>
+<p>If you are currently editing a test case and click <em>Record</em>, the same dialog will appear, but the currently edited test case will be pre-selected.</p>
 </li>
 <li>
 <p>If you are editing the code of a Page Object and press <em>Record</em>, it will show all test cases and the specific Page Object in the dialog. The Page Object will be pre-selected.</p>
@@ -12364,26 +12392,26 @@
 </ol>
 <p><img alt="Record PageObject pre-selected" src="../img/frameworks_record_po_preselected.png" /></p>
 <h3 id="running-a-specific-test-case">Running a Specific Test Case<a class="headerlink" href="#running-a-specific-test-case" title="Permanent link">&para;</a></h3>
-<p>To run a whole test case, you have two options:</p>
+<p>To run an entire test case, you have two options:</p>
 <ol>
 <li>
-<p>Click on the <em>Play</em> button on the toolbar.</p>
+<p>Click the <em>Play</em> button on the toolbar.</p>
 </li>
 <li>
-<p>Click on the <em>Play</em> icon next to the test case.</p>
+<p>Click the <em>Play</em> icon next to the test case.</p>
 </li>
 </ol>
 <p><img alt="Play Test Case" src="../img/frameworks_play_test_case.png" /></p>
 <h3 id="running-a-batch-of-test-cases">Running a Batch of Test Cases<a class="headerlink" href="#running-a-batch-of-test-cases" title="Permanent link">&para;</a></h3>
-<p>There are two ways to run a batch of test cases: locally and test set based.</p>
-<p>For local batch execution, you can create another test case that will call the required test cases one-by-one using the <code>RVL.DoPlayTest</code> function.</p>
-<p>In the following example, we have a test case called <code>!Full - Author Management</code>. The exclamation mark (!) at the beginning of the name ensures that it is shown first in its folder when sorted. This test case calls other test cases from a specific folder one-by-one. We have added them to the test case using <code>Shift</code>+Drag&amp;Drop, so they are called by their full names instead of their paths.</p>
+<p>There are two ways to run a batch of test cases: locally and test-set based.</p>
+<p>For local batch execution, you can create another test case that calls the required test cases one by one using the <code>RVL.DoPlayTest</code> function.</p>
+<p>In the following example, we have a test case named <code>!Full - Author Management</code>. The exclamation mark (!) at the beginning of the name ensures that it is shown first in its folder when sorted. This test case calls other test cases from a specific folder one by one. We have added them to the test case using <code>Shift</code>+Drag&amp;Drop, so they are called by their full names instead of their paths.</p>
 <p><img alt="Full Folder Run Test Case" src="../img/frameworks_full_folder_run.png" /></p>
-<p>A limitation of this approach is that the overall status of the <code>!Full - Author Management</code> test case is displayed, but it doesn't reflect the status of the individual test cases it contains (such as <code>Create New Author</code>, <code>Edit Existing Author</code>, etc.). If you require a batch execution with detailed status and other test-management related features, it is recommended to consider running test sets using <a href="/Guide/spira_dashboard_2">Spira Dashboard</a>. This allows for better tracking of individual test case statuses and provides additional test management capabilities.</p>
+<p>A limitation of this approach is that while the overall status of the <code>!Full - Author Management</code> test case is displayed, it doesn't reflect the status of the individual test cases it contains (e.g., <code>Create New Author</code>, <code>Edit Existing Author</code>). If you require batch execution with detailed status and other test-management related features, it's recommended to consider running test sets using the <a href="../../spira_dashboard_2/">Spira Dashboard</a>. This allows for better tracking of individual test case statuses and provides additional test management capabilities.</p>
 <h3 id="running-test-sets-with-spira">Running Test Sets with Spira<a class="headerlink" href="#running-test-sets-with-spira" title="Permanent link">&para;</a></h3>
-<p>Use <a href="/Guide/spira_dashboard_2">Spira Dashboard</a> to define, configure, schedule and run test sets and to see execution history.</p>
+<p>Use <a href="../../spira_dashboard_2/">Spira Dashboard</a> to define, configure, schedule, and run test sets and to view execution history.</p>
 <h2 id="legacy-frameworks">Legacy Frameworks<a class="headerlink" href="#legacy-frameworks" title="Permanent link">&para;</a></h2>
-<p>Before the release of Rapise 8, the process of defining a test framework was not as streamlined. You can find more detailed information about it in the <a href="/Intro/framework">framework</a> topic.</p>
+<p>Before the release of Rapise 8, the process of defining a test framework was not as streamlined. You can find more detailed information about it in the <a href="../../../Intro/framework/">framework</a> topic.</p>
                 
               
               

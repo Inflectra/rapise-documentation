@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11316,6 +11328,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11670,94 +11694,94 @@
                 
                 <h1 id="mobile-settings-dialog">Mobile Settings Dialog<a class="headerlink" href="#mobile-settings-dialog" title="Permanent link">&para;</a></h1>
 <h2 id="mobile-profiles">Mobile Profiles<a class="headerlink" href="#mobile-profiles" title="Permanent link">&para;</a></h2>
-<p>Use Mobile Settings Dialog to configure <code>Mobile Profiles</code>. A mobile profile specifies how to connect to a simulator or device via <a href="http://appium.io/">Appium</a>. You may configure as many profiles as you need to run your tests on different devices.</p>
-<p>Mobile Settings Dialog box displays the list of mobile profiles that have been configured for use by Rapise and lets you create a new profile, modify a profile or make a new profile based on an existing one.</p>
+<p>Use the Mobile Settings Dialog to configure <code>Mobile Profiles</code>. A mobile profile specifies how to connect to a simulator or device via <a href="http://appium.io/">Appium</a>. You may configure as many profiles as you need to run your tests on different devices.</p>
+<p>The Mobile Settings Dialog displays the list of mobile profiles configured for use by Rapise, allowing you to create new profiles, modify existing ones, or duplicate them.</p>
 <p><img alt="mobile settings dialog" src="../img/mobile_settings_dialog1.png" /></p>
-<p>Global profiles are stored inside <code>c:\ProgramData\Inflectra\Rapise\MobileProfiles</code> folder.</p>
+<p>Global profiles are stored in the <code>c:\ProgramData\Inflectra\Rapise\MobileProfiles</code> folder.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>You can open this dialog box from two places:</p>
+<p>You can open this dialog from the following locations:</p>
 <ul>
 <li>From the <a href="../menu_and_toolbars/#settings">main Rapise menu</a> <code>Settings &gt; Mobile</code>.</li>
-<li>From the <a href="../object_spy_mobile/">Mobile Spy</a> tool when you click on the <code>Edit Profiles</code> toolbar button.</li>
+<li>From the <a href="../object_spy_mobile/">Mobile Spy</a> tool when you click the <code>Edit Profiles</code> toolbar button.</li>
 <li>
-<p>Using ellipsis button in the top right corner of Rapise window:</p>
+<p>Using the ellipsis button in the top-right corner of the Rapise window:</p>
 <p><img alt="" src="../img/mobile_settings_dialog_open_profiles_ellipsis.png" width="217px" /></p>
 </li>
 </ul>
 <h2 id="menu-options">Menu Options<a class="headerlink" href="#menu-options" title="Permanent link">&para;</a></h2>
-<p>This dialog box has the following menu options:</p>
+<p>This dialog has the following menu options:</p>
 <ul>
-<li><strong>Select Profile</strong> - this dropdown list lets you select a different mobile profile to be displayed in the dialog.</li>
-<li><strong>Save</strong> - this button will save the changes to the current mobile profile.</li>
-<li><strong>Test URL</strong> - this button will test the Connection (URL) from Rapise to <a href="http://appium.io/">Appium</a> (which is used to manage the devices).</li>
-<li><strong>Duplicate</strong> - this button will create a new mobile profile based on the currently viewed one.</li>
-<li><strong>Create</strong> - this button will create a new empty mobile profile that you can edit.</li>
-<li><strong>Rename</strong> - this button will change the name of the current mobile profile being edited.</li>
-<li><strong>Delete</strong> - this button will delete the currently displayed mobile profile. There is no undo, so be careful!</li>
+<li><strong>Select Profile</strong> - This dropdown list allows you to select a different mobile profile for display in the dialog.</li>
+<li><strong>Save</strong> - This button saves changes to the current mobile profile.</li>
+<li><strong>Test URL</strong> - This button tests the connection (URL) from Rapise to <a href="http://appium.io/">Appium</a> (which manages the devices).</li>
+<li><strong>Duplicate</strong> - This button creates a new mobile profile based on the currently viewed one.</li>
+<li><strong>Create</strong> - This button creates a new, empty mobile profile that you can edit.</li>
+<li><strong>Rename</strong> - This button changes the name of the current mobile profile.</li>
+<li><strong>Delete</strong> - This button deletes the currently displayed mobile profile. There is no undo, so use caution!</li>
 </ul>
 <h2 id="local-mobile-profiles">Local Mobile Profiles<a class="headerlink" href="#local-mobile-profiles" title="Permanent link">&para;</a></h2>
-<p>Rapise version 6.3+ enables creation of profiles local to a test. It allows storing profiles together with tests (inside SpiraTest or Git repository) and eliminates the need to configure profiles manually on each execution host.</p>
-<p>To create a local profile just press <code>Duplicate</code> for one of global profiles and set <code>Local</code> checkbox before clicking <code>OK</code> button. Global and Local profile may have same name, in this case Local profile is used for execution.</p>
+<p>Rapise version 6.3+ allows creating profiles local to a test. It enables profiles to be stored together with tests (inside SpiraTest or a Git repository), eliminating the need to configure profiles manually on each execution host.</p>
+<p>To create a local profile, simply press <code>Duplicate</code> for one of the global profiles and select the <code>Local</code> checkbox before clicking the <code>OK</code> button. Global and local profiles may have the same name; in this case, the local profile is used for execution.</p>
 <p><img alt="Creating Local Mobile Profile" src="../img/create_local_profile_mobile.png" /></p>
-<p>If a test contains local mobile profiles they can be seen in the dropdowns.</p>
+<p>If a test contains local mobile profiles, they can be seen in the dropdowns.</p>
 <p><img alt="Profile List for Playback" src="../img/select_local_profile_mobile.png" width="218px" /></p>
 <p><img alt="Profile List for Configuration" src="../img/profile_list_local_global_mobile.png" width="322px" /></p>
-<p>Local profiles are stored inside <code>&lt;Test Root&gt;\Profiles\MobileProfiles</code> folder.</p>
+<p>Local profiles are stored in the <code>&lt;Test Root&gt;\Profiles\MobileProfiles</code> folder.</p>
 <h2 id="profile-options">Profile Options<a class="headerlink" href="#profile-options" title="Permanent link">&para;</a></h2>
 <h3 id="connection">Connection<a class="headerlink" href="#connection" title="Permanent link">&para;</a></h3>
-<p>This section lets you enter the URL used to connect to the Appium server which hosts the mobile devices being tested. It is typically of the form:</p>
+<p>This section allows you to enter the URL used to connect to the Appium server that hosts the mobile devices being tested. It is typically of the form:</p>
 <div class="highlight"><pre><span></span><code>http://server:4723/wd/hub
 </code></pre></div>
-<p>Where the port number used by Appium is 4723 by default and the /ed/hub suffix is added.</p>
+<p>By default, the port number used by Appium is 4723, and the <code>/wd/hub</code> suffix is added.</p>
 <h3 id="shared">Shared<a class="headerlink" href="#shared" title="Permanent link">&para;</a></h3>
 <p>This section contains common capabilities.</p>
 <h3 id="platform-specific">Platform Specific<a class="headerlink" href="#platform-specific" title="Permanent link">&para;</a></h3>
-<p>In this section set platform specific options (iOS and Android).</p>
+<p>In this section, set platform-specific options (for iOS and Android).</p>
 <h3 id="device-cloud">Device Cloud<a class="headerlink" href="#device-cloud" title="Permanent link">&para;</a></h3>
-<p>In addition, there are some settings, unique to running Appium mobile device tests using different device clouds.</p>
+<p>In addition, some settings are unique to running Appium mobile device tests using different device clouds.</p>
 <h4 id="browserstack">BrowserStack<a class="headerlink" href="#browserstack" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>browserstack.appium_version</strong> - use this capability to set the Appium version in your test scripts.</li>
-<li><strong>browserstack.key</strong> - this needs to be populated with your Browserstack cloud access key.</li>
-<li><strong>browserstack.user</strong> - this needs to be populated with your Browserstack username.</li>
-<li><strong>device</strong> - specifies a particular mobile device for the test environment.</li>
-<li><strong>os_version</strong> - use this capability to specify the OS version of the device.</li>
-<li><strong>realMobile</strong> - use this flag to test on a physical mobile device.</li>
+<li><strong>browserstack.appium_version</strong> - Use this capability to set the Appium version in your test scripts.</li>
+<li><strong>browserstack.key</strong> - This needs to be populated with your Browserstack cloud access key.</li>
+<li><strong>browserstack.user</strong> - This needs to be populated with your Browserstack username.</li>
+<li><strong>device</strong> - Specifies a particular mobile device for the test environment.</li>
+<li><strong>os_version</strong> - Use this capability to specify the OS version of the device.</li>
+<li><strong>realMobile</strong> - Use this flag to test on a physical mobile device.</li>
 </ul>
 <h4 id="kobiton">Kobiton<a class="headerlink" href="#kobiton" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>accessKey</strong> - this needs to be populated with your Kobiton cloud access key.</li>
-<li><strong>captureScreenshots</strong> - this can be set to determine if you want to capture screenshots or not.</li>
-<li><strong>deviceGroup</strong> - the default value is group device belonged to. Group device value could be either: ORGANIZATION or KOBITON. System will filter device in any existing group if you set deviceGroup is empty.</li>
-<li><strong>sessionDescription</strong> - the description of the session (e.g. "This is an example for iOS web").</li>
-<li><strong>sessionName</strong> - the name of the session being performed (e.g. "Automation test session on second device").</li>
-<li><strong>username</strong> - this needs to be populated with your Kobiton username.</li>
+<li><strong>accessKey</strong> - This needs to be populated with your Kobiton cloud access key.</li>
+<li><strong>captureScreenshots</strong> - This can be set to determine whether to capture screenshots.</li>
+<li><strong>deviceGroup</strong> - The default value is the group the device belongs to. The device group value can be either: <code>ORGANIZATION</code> or <code>KOBITON</code>. The system will filter devices in any existing group if <code>deviceGroup</code> is left empty.</li>
+<li><strong>sessionDescription</strong> - The description of the session (e.g. "This is an example for iOS web").</li>
+<li><strong>sessionName</strong> - The name of the session being performed (e.g. "Automation test session on second device").</li>
+<li><strong>username</strong> - This needs to be populated with your Kobiton username.</li>
 </ul>
 <h4 id="seetest">SeeTest<a class="headerlink" href="#seetest" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>appBuildVersion</strong> - used only when installing a cloud application. Specifies the application build version for installation.</li>
-<li><strong>applicationClearData</strong> - clears the application data. When one of noReset or fullReset or both is set true, then applicationClearData will have no effect. </li>
-<li><strong>appReleaseVersion</strong> - used only when installing a cloud application. Specifies the application release version for installation.</li>
-<li><strong>deviceQuery</strong> - it is a special type of capability which describes one or more capabilities in a single query like input.</li>
-<li><strong>dontGoHomeOnQuit</strong> - the device  will remain in last left state even after ending the test.</li>
-<li><strong>installOnlyForUpdate</strong> - install the application only if the desired version is different from the application version on the device (or if the app does not exist on the device). Otherwise, keep the application on the device.</li>
-<li><strong>instrumentApp</strong> - instrument the application.</li>
-<li><strong>testName</strong> - name of the test.</li>
+<li><strong>appBuildVersion</strong> - Used only when installing a cloud application. Specifies the application build version for installation.</li>
+<li><strong>applicationClearData</strong> - Clears the application data. If <code>noReset</code>, <code>fullReset</code>, or both are set to <code>true</code>, then <code>applicationClearData</code> will have no effect. </li>
+<li><strong>appReleaseVersion</strong> - Used only when installing a cloud application. Specifies the application release version for installation.</li>
+<li><strong>deviceQuery</strong> - It is a special type of capability that describes one or more capabilities as a single query-like input.</li>
+<li><strong>dontGoHomeOnQuit</strong> - The device will remain in its last state even after the test ends.</li>
+<li><strong>installOnlyForUpdate</strong> - Install the application only if the desired version is different from the application version on the device (or if the app does not exist on the device). Otherwise, keep the application on the device.</li>
+<li><strong>instrumentApp</strong> - Instrument the application.</li>
+<li><strong>testName</strong> - Name of the test.</li>
 </ul>
 <h2 id="parameterizing-a-profile">Parameterizing a Profile<a class="headerlink" href="#parameterizing-a-profile" title="Permanent link">&para;</a></h2>
-<p>Since Rapise 8.3 it is possible to use <a href="../Frameworks/parameters/">framework parameters</a> in mobile profiles. The syntax is</p>
+<p>Since Rapise 8.3, it is possible to use <a href="../Frameworks/parameters/">framework parameters</a> in mobile profiles. The syntax is:</p>
 <div class="highlight"><pre><span></span><code>{Parameter Name}
 </code></pre></div>
-<p>For example <code>app</code> capability (e.g. a path to an APK file) can be defined by a framework parameter and then used as</p>
+<p>For example, the <code>app</code> capability (e.g., a path to an APK file) can be defined by a framework parameter and then used as:</p>
 <div class="highlight"><pre><span></span><code>{ApkPath}
 </code></pre></div>
-<p>Another example is setting <code>platformVersion</code>.</p>
+<p>Another example is setting <code>platformVersion</code>:</p>
 <div class="highlight"><pre><span></span><code>{{PlatformVersion}}
 </code></pre></div>
 <p><img alt="Profile with Parameters" src="../img/mobile_profile_parameters.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li>For details check out <a href="http://appium.io/docs/en/writing-running-appium/caps/">Appium Desired Capabilities</a> page.</li>
+<li>For details, check out <a href="http://appium.io/docs/en/writing-running-appium/caps/">Appium Desired Capabilities</a> page.</li>
 </ul>
                 
               

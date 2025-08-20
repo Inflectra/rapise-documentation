@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11127,6 +11139,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11437,14 +11461,14 @@
 <p>This feature requires Rapise 6.6+</p>
 </div>
 <h2 id="why">Why<a class="headerlink" href="#why" title="Permanent link">&para;</a></h2>
-<p>If you are building a framework and write custom functions in JavaScript you may combine the functions and define a global object. It will make RVL more readable and easier to write.</p>
-<p>Compare variants A and B.</p>
+<p>If you are building a framework and writing custom functions in JavaScript, you may combine the functions and define a global object. This will make RVL more readable and easier to write.</p>
+<p>Compare Variant A and Variant B.</p>
 <p><img alt="RVL Example" src="../img/global_object_rvl_example.png" /></p>
-<p>In variant A you choose <code>Functions</code> as an object and then select the custom function. In variant B you choose the global object and then it's action. The global object and it's actions can be seen in the Object Tree:</p>
+<p>In Variant A, you choose <code>Functions</code> as an object and then select the custom function. In Variant B, you choose the global object and then its action. The global object and its actions can be seen in the Object Tree:</p>
 <p><img alt="Object Tree" src="../img/global_object_in_object_tree.png" /></p>
 <h2 id="how">How<a class="headerlink" href="#how" title="Permanent link">&para;</a></h2>
 <p>Let's see how to define your own global object.</p>
-<p>First, you need a JavaScript file where you will define the actions of the object and declare the object itself. A good candidate for such a file is the main file of a <a href="/Guide/tutorial_custom_library/#2-libuser">user-defined library</a> or simply <code>User.js</code>.</p>
+<p>First, you need a JavaScript file where you will define the object's actions and declare the object itself. A good candidate for such a file is the main file of a <a href="../tutorial_custom_library/#2-libuser">user-defined library</a> or simply <code>User.js</code>.</p>
 <p>We'll use an example to explain the format of object definition. Here is the definition of a global object <code>MyApp</code>.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1">// MyApp definition</span>
@@ -11468,21 +11492,21 @@
 <span class="nx">_paramInfoMyApp_Login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">_description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Logs into the application&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">_type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">_returns</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;`true` if login is ok&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">_returns</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;`true` if login is successful&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">username</span><span class="o">:</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Name of the user&quot;</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="nx">password</span><span class="o">:</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pwd of the user&quot;</span>
+<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Password of the user&quot;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 
 <span class="nx">SeSGlobalObject</span><span class="p">(</span><span class="s2">&quot;MyApp&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
-<p>Every action of <code>MyApp</code> object is prefixed with <code>MyApp_</code>. We have three such actions: <code>Launch</code>,<code>Close</code> and <code>Login</code>.</p>
+<p>Every action of the <code>MyApp</code> object is prefixed with <code>MyApp_</code>. We have three such actions: <code>Launch</code>, <code>Close</code>, and <code>Login</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Launch</span><span class="p">()</span>
 <span class="p">{</span>
 
@@ -11498,40 +11522,40 @@
 <span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Logging as &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">password</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>To declare the object use <code>SeSGlobalObject</code> call. It must be placed after definitions of all the actions. </p>
+<p>To declare the object, use the <code>SeSGlobalObject</code> call. It must be placed after the definitions of all the actions.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSGlobalObject</span><span class="p">(</span><span class="s2">&quot;MyApp&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>You may specify action parameter types through comments <code>/**&lt;type&gt;*/</code>.</p>
+<p>You can specify action parameter types through comments <code>/**&lt;type&gt;*/</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MyApp_Login</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">username</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">password</span><span class="p">)</span>
 </code></pre></div>
-<p>You may also describe actions and parameters using <code>paramInfo</code> objects (should have a name of format <code>_paramInfo&lt;action function name&gt;</code>).</p>
+<p>You can also describe actions and parameters using <code>paramInfo</code> objects (which should be named in the format <code>_paramInfo&lt;action function name&gt;</code>).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">_paramInfoMyApp_Login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">_description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Logs into the application&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">_type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">_returns</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;`true` if login is ok&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">_returns</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;`true` if login is successful&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">username</span><span class="o">:</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Name of the user&quot;</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="nx">password</span><span class="o">:</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pwd of the user&quot;</span>
+<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Password of the user&quot;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="compile-metadata">Compile Metadata<a class="headerlink" href="#compile-metadata" title="Permanent link">&para;</a></h2>
-<p>When the object is declared you need to compile the metadata for it. To do this open the file where you defined the object and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-f5">F5</kbd></span>.</p>
+<p>Once the object is declared, you need to compile the metadata for it. To do this, open the file where you defined the object and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-f5">F5</kbd></span>.</p>
 <h2 id="object-icons">Object Icons<a class="headerlink" href="#object-icons" title="Permanent link">&para;</a></h2>
-<p>If you want a specific icon for your object then create two <code>.png</code> files with dimensions <code>16x16</code> and <code>32x32</code>, name them as <code>&lt;object name&gt;16.png</code> and <code>&lt;object name&gt;32.png</code> and place them beside the file where you declared the object.</p>
+<p>If you want a specific icon for your object, create two <code>.png</code> files with dimensions <code>16x16</code> and <code>32x32</code>. Name them <code>&lt;object name&gt;16.png</code> and <code>&lt;object name&gt;32.png</code>, and place them in the same directory as the file where you declared the object.</p>
 <h2 id="global-object-vs-page-object">Global Object vs Page Object<a class="headerlink" href="#global-object-vs-page-object" title="Permanent link">&para;</a></h2>
 <p>When comparing a <strong>Global Object</strong> and a <a href="../Frameworks/pageobjects/">Page Object</a>, the following points should be noted:</p>
 <ol>
 <li>The structure of a Global Object is identical to that of a Page Object in JavaScript mode.</li>
 <li>However, a Page Object can have its own object repository and use objects from it.</li>
-<li>This includes widgets and API entry points that are available for a Page Object.</li>
+<li>This includes widgets and API entry points that are available to a Page Object.</li>
 <li>A Global Object can be defined in a <a href="../custom_libraries/">custom Library</a>.</li>
 <li>A Page Object can only be defined as part of a <a href="../Frameworks/frameworks/">testing framework</a>.</li>
-<li>It is not possible to import or move a single Global Object, but it is possible to copy the entire Library that contains it.</li>
+<li>It is not possible to import or move a single Global Object; however, it is possible to copy the entire Library that contains it.</li>
 <li>A Page Object can be imported from one testing framework to another.</li>
 </ol>
 <h3 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h3>

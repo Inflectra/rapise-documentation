@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -2125,11 +2137,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-steps-for-converting-a-rapise-test" class="md-nav__link">
-    The Steps for Converting a Rapise Test
+  <a href="#steps-for-converting-a-rapise-test" class="md-nav__link">
+    Steps for Converting a Rapise Test
   </a>
   
-    <nav class="md-nav" aria-label="The Steps for Converting a Rapise Test">
+    <nav class="md-nav" aria-label="Steps for Converting a Rapise Test">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2140,15 +2152,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-or-open-existing-load-project" class="md-nav__link">
-    Create or Open Existing Load Project
+  <a href="#create-or-open-an-existing-load-project" class="md-nav__link">
+    Create or Open an Existing Load Project
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#open-a-test-script-in-rapise-to-be-converted" class="md-nav__link">
-    Open a Test Script in Rapise to be Converted
+  <a href="#open-a-rapise-test-script-for-conversion" class="md-nav__link">
+    Open a Rapise Test Script for Conversion
   </a>
   
 </li>
@@ -11183,6 +11195,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11435,11 +11459,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-steps-for-converting-a-rapise-test" class="md-nav__link">
-    The Steps for Converting a Rapise Test
+  <a href="#steps-for-converting-a-rapise-test" class="md-nav__link">
+    Steps for Converting a Rapise Test
   </a>
   
-    <nav class="md-nav" aria-label="The Steps for Converting a Rapise Test">
+    <nav class="md-nav" aria-label="Steps for Converting a Rapise Test">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -11450,15 +11474,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-or-open-existing-load-project" class="md-nav__link">
-    Create or Open Existing Load Project
+  <a href="#create-or-open-an-existing-load-project" class="md-nav__link">
+    Create or Open an Existing Load Project
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#open-a-test-script-in-rapise-to-be-converted" class="md-nav__link">
-    Open a Test Script in Rapise to be Converted
+  <a href="#open-a-rapise-test-script-for-conversion" class="md-nav__link">
+    Open a Rapise Test Script for Conversion
   </a>
   
 </li>
@@ -11543,7 +11567,7 @@
                 
                 <h1 id="convert-functional-to-load-test">Convert Functional to Load Test<a class="headerlink" href="#convert-functional-to-load-test" title="Permanent link">&para;</a></h1>
 <h2 id="jmeter">JMeter<a class="headerlink" href="#jmeter" title="Permanent link">&para;</a></h2>
-<p>This section explains how to transform an existing test script written in Rapise into a performance scenario within the JMeter. Learn how to easily convert Rapise tests for HTTP/HTTPS applications into JMeter scripts based on the respective protocols. These scripts can then be executed by numerous virtual users (VUs) to simulate a significant load on the tested application.</p>
+<p>This section explains how to transform an existing Rapise test script into a performance testing scenario within JMeter. Learn how to easily convert Rapise tests for HTTP/HTTPS applications into JMeter scripts. These scripts can then be executed by a large number of virtual users (VUs) to simulate a significant load on the tested application.</p>
 <ul>
 <li>Video: <a href="https://youtu.be/LbCvrBvAPjA">Converting Rapise script into JMeter load scenario</a></li>
 </ul>
@@ -11552,81 +11576,78 @@
 <p class="admonition-title">Important</p>
 <p>NeoLoad integration has been removed in Rapise 7.0.</p>
 </div>
-<p>This aspect of the Rapise-NeoLoad integration describes the process for taking an existing test script written in Rapise and converting it seamlessly into a performance scenario in the NeoLoad load testing system. This feature allows you to convert Rapise tests for HTTP/HTTPS based applications into protocol-based NeoLoad scripts that can be executed by a large number of <strong>virtual users (VUs)</strong> that simulate a load on the application being tested.</p>
+<p>This section describes how to seamlessly convert an existing Rapise test script into a performance scenario in NeoLoad. This feature allows you to convert Rapise tests for HTTP/HTTPS-based applications into protocol-based NeoLoad scripts. These scripts can then be executed by a large number of <strong>virtual users (VUs)</strong> to simulate a load on the application being tested.</p>
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
-<p>In order to use the integration with NeoLoad, you need to have the following:</p>
+<p>To use the integration with NeoLoad, you must have the following:</p>
 <ul>
 <li>Rapise 5.0 or above</li>
 <li>NeoLoad 5.1 or above</li>
 </ul>
-<p>Both tools must be installed on the same Windows host. NeoLoad must have a license with Recording API enabled. The default trial version does not have this capability. The Rapise test needs to be testing an application that uses HTTP/HTTPs or other NeoLoad supported protocols.</p>
-<h3 id="the-steps-for-converting-a-rapise-test">The Steps for Converting a Rapise Test<a class="headerlink" href="#the-steps-for-converting-a-rapise-test" title="Permanent link">&para;</a></h3>
+<p>Both tools must be installed on the same Windows host. NeoLoad must have a license with Recording API enabled. The default trial version does not have this capability. The Rapise test must target an application that uses HTTP/HTTPS or other NeoLoad-supported protocols.</p>
+<h3 id="steps-for-converting-a-rapise-test">Steps for Converting a Rapise Test<a class="headerlink" href="#steps-for-converting-a-rapise-test" title="Permanent link">&para;</a></h3>
 <h4 id="launch-neoload">Launch NeoLoad<a class="headerlink" href="#launch-neoload" title="Permanent link">&para;</a></h4>
-<p>Open NeoLoad via the Start menu or using a command line:</p>
+<p>Open NeoLoad via the Start menu or from the command line:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>c:\Program Files (x86)\NeoLoad 5.1\bin\NeoLoadGUI.exe
 </code></pre></div></td></tr></table></div>
 
 <p><img alt="neoload ui" src="../img/convert_functional_to_load_tes1.png" /></p>
-<h4 id="create-or-open-existing-load-project">Create or Open Existing Load Project<a class="headerlink" href="#create-or-open-existing-load-project" title="Permanent link">&para;</a></h4>
+<h4 id="create-or-open-an-existing-load-project">Create or Open an Existing Load Project<a class="headerlink" href="#create-or-open-an-existing-load-project" title="Permanent link">&para;</a></h4>
 <p>Use menu <code>File &gt; New</code> or <code>File &gt; Open</code>.</p>
 <p><img alt="neoload project" src="../img/convert_functional_to_load_tes2.png" /></p>
-<h4 id="open-a-test-script-in-rapise-to-be-converted">Open a Test Script in Rapise to be Converted<a class="headerlink" href="#open-a-test-script-in-rapise-to-be-converted" title="Permanent link">&para;</a></h4>
-<p>Inside Rapise, open the script you want to convert. Make sure the application it is testing is a web-based application using the HTTP/HTTPS protocols:</p>
+<h4 id="open-a-rapise-test-script-for-conversion">Open a Rapise Test Script for Conversion<a class="headerlink" href="#open-a-rapise-test-script-for-conversion" title="Permanent link">&para;</a></h4>
+<p>Inside Rapise, open the script you want to convert. Ensure the application being tested is web-based and uses HTTP/HTTPS protocols:</p>
 <p><img alt="rapise test" src="../img/convert_functional_to_load_tes3.png" /></p>
 <p>Ensure that the Internet Explorer HTML library is set in the test parameters.</p>
 <p><img alt="ie browser" src="../img/convert_functional_to_load_tes4.png" /></p>
 <h4 id="open-conversion-dialog">Open Conversion Dialog<a class="headerlink" href="#open-conversion-dialog" title="Permanent link">&para;</a></h4>
 <p>From the main menu select <code>Tools &gt; Convert to NeoLoad</code>.</p>
-<p>This will display the <a href="../neoload_convertor_dialog/">NeoLoad convertor dialog</a>. On this dialog box, set the following parameters:</p>
+<p>This will display the <a href="../neoload_convertor_dialog/">NeoLoad converter dialog</a>. In this dialog box, set the following parameters:</p>
 <p><img alt="neoload-conversion-dialog" src="../img/convert_functional_to_load_tes6.png" /></p>
 <p><strong>Virtual User</strong></p>
-<p>In this field, you need to enter the name of the virtual user to create in NeoLoad:</p>
+<p>In this field, enter the name of the virtual user to create in NeoLoad:</p>
 <ul>
 <li>The default value is "VirtualUser"</li>
-<li>If the name is already used, then it is automatically renamed using “_X” suffix, with X an integer incremented.</li>
-<li>If the name has invalid characters then they will be escaped as an underscore (_).</li>
+<li>If the name is already used, it is automatically renamed with an “_X” suffix, where X is an incremented integer.</li>
+<li>If the name contains invalid characters, they will be replaced with an underscore (_).</li>
 </ul>
 <p><strong>Base Container</strong></p>
-<p>This specifies the base container  where we want to start the recording (Init / Actions / End).</p>
+<p>This specifies the base container where recording should start (Init / Actions / End).</p>
 <ul>
 <li>The default value is Actions.</li>
 </ul>
 <p><strong>Container/Business Transaction</strong></p>
-<p>This is used to specify the current recording container in NeoLoad. It is just based on a single level. There is no way to specify a tree of containers.</p>
+<p>This specifies the current recording container in NeoLoad. It is limited to a single level. There is no way to specify a tree of containers.</p>
 <ul>
-<li>The default is no container.</li>
-<li>If the name is already used then it will be made unique by adding _1, _2, etc.</li>
-<li>If the name is empty then no container will be used.</li>
+<li>The default is "no container."</li>
+<li>If the name is already used, it will be made unique by adding <code>_1</code>, <code>_2</code>, etc.</li>
+<li>If the name is empty, no container will be used.</li>
 </ul>
 <p><strong>Detect Dynamic Parameters</strong></p>
-<p>When you check this box, Rapise tells NeoLoad to scan the protocol traffic to look for known dynamic parameters (e.g. Session IDs, ASP.NET ViewState) that change on each HTTP request and need to be parameterized by NeoLoad to ensure the performance scripts are robust and well-defined (v.s. having a hardcoded Session ID).</p>
-<p>In the NeoLoad tree it looks this way:</p>
+<p>When this box is checked, Rapise instructs NeoLoad to scan the protocol traffic to identify known dynamic parameters (e.g., Session IDs, ASP.NET ViewState) that change on each HTTP request. These parameters need to be parameterized by NeoLoad to ensure the performance scripts are robust and well-defined, instead of having a hardcoded Session ID.</p>
+<p>In the NeoLoad tree, it appears as follows:</p>
 <p><img alt="neoload tree" src="../img/convert_functional_to_load_tes7.png" /></p>
 <h4 id="press-convert-button">Press Convert Button<a class="headerlink" href="#press-convert-button" title="Permanent link">&para;</a></h4>
-<p>After pressing Convert button Rapise will launch the test and NeoLoad will start capturing network traffic. When test playback is finished
-you’ll see the dialog:</p>
+<p>After pressing the Convert button, Rapise will launch the test and NeoLoad will start capturing network traffic. When test playback is finished, the following dialog will appear:</p>
 <p><img alt="conversion completed" src="../img/convert_functional_to_load_tes8.png" /></p>
 <h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
-<p>During conversion you may get a few error messages. This section provides a list of common messages and their solution.</p>
+<p>During conversion, you might encounter a few error messages. This section provides a list of common messages and their solutions.</p>
 <h4 id="unable-to-connect-to-the-remote-server">Unable to connect to the remote server<a class="headerlink" href="#unable-to-connect-to-the-remote-server" title="Permanent link">&para;</a></h4>
 <p><img alt="clip0053" src="../img/convert_functional_to_load_tes9.png" /></p>
-<p>If you get this message, check that NeoLoad is running. Usually this message means that NeoLoad is not started or another application is using port 7400, preventing NeoLoad binding to it.</p>
+<p>If you encounter this message, ensure that NeoLoad is running. Typically, this message indicates that NeoLoad is not running or another application is using port 7400, preventing NeoLoad from binding to it.</p>
 <h4 id="no-project-is-open">No project is open<a class="headerlink" href="#no-project-is-open" title="Permanent link">&para;</a></h4>
 <p><img alt="clip0054" src="../img/convert_functional_to_load_tes10.png" /></p>
-<p>If you get this message, check that a project is opened in NeoLoad.</p>
+<p>If you encounter this message, ensure that a project is open in NeoLoad.</p>
 <h4 id="neoload-is-not-ready-for-recording">NeoLoad is not ready for recording<a class="headerlink" href="#neoload-is-not-ready-for-recording" title="Permanent link">&para;</a></h4>
 <p><img alt="clip0055" src="../img/convert_functional_to_load_tes11.png" /></p>
-<p>If you get this message, it means that NeoLoad is in the recording state. To fix the issue, you need to stop the existing recording in
-NeoLoad.</p>
+<p>If you encounter this message, it indicates that NeoLoad is already in a recording state. To resolve the issue, stop the existing recording in NeoLoad.</p>
 <h3 id="neoload-integration-settings">NeoLoad Integration Settings<a class="headerlink" href="#neoload-integration-settings" title="Permanent link">&para;</a></h3>
-<p>There are a few global options for the Rapise – NeoLoad integration. To reach them use menu <code>Settings &gt; NeoLoad Integration</code>.</p>
+<p>There are a few global options for the Rapise-NeoLoad integration. To access them, use the menu <code>Settings &gt; NeoLoad Integration</code>.</p>
 <p><img alt="clip0057" src="../img/convert_functional_to_load_tes13.png" /></p>
-<p>This is the <a href="../neoload_settings_dialog/">NeoLoad Settings</a> dialog. Normally there is no any reason to change these settings, but for
-completeness they are described below:</p>
+<p>This is the <a href="../neoload_settings_dialog/">NeoLoad Settings</a> dialog. Normally, there is no reason to change these settings, but for completeness, they are described below:</p>
 <ul>
-<li><strong>NeoLoad Data Exchange URL</strong> - this is the URL to the NeoLoad data exchange API</li>
-<li><strong>NeoLoad Proxy Address</strong> - this is the IP address and prt of the NeoLoad HTTP proxy</li>
-<li><strong>NeoLoad REST Service URL</strong> - this is the URL to the NeoLoad recording service REST API</li>
+<li><strong>NeoLoad Data Exchange URL</strong> - The URL for the NeoLoad data exchange API.</li>
+<li><strong>NeoLoad Proxy Address</strong> - The IP address and port of the NeoLoad HTTP proxy.</li>
+<li><strong>NeoLoad REST Service URL</strong> - The URL for the NeoLoad recording service REST API.</li>
 </ul>
                 
               

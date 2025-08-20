@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1177,6 +1177,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11095,6 +11107,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11367,35 +11391,35 @@
                 
                 <h1 id="recording-and-learning">Recording and Learning<a class="headerlink" href="#recording-and-learning" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>To understand what different objects might be found on a UI screen, and how to recognize them, record their characteristics and interact with them using Rapise.</p>
+<p>To understand the types of objects found on a UI screen, and to learn how to recognize, record their characteristics, and interact with them using Rapise.</p>
 <h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<p>A UI screen entity (object) may consist of many different parts and components.  Actions on these objects, and usage of these controls, must be captured in different ways, depending on the properties of the object.  Rapise provides five fundamental methods for capturing objects and corresponding user actions:</p>
+<p>A UI screen entity (object) may consist of many different parts and components. Actions performed on these objects, and the usage of these controls, must be captured in different ways, depending on the object's properties. Rapise provides five fundamental methods for capturing objects and corresponding user actions:</p>
 <ol>
 <li>
-<p><strong>Recording</strong> - Rapise is able to track user interactions with AUT and automatically capture affected objects and corresponding user actions.  See <a href="../recording/">Recording</a> for more information.</p>
+<p><strong>Recording</strong> - Rapise can track user interactions with an AUT and automatically capture the affected objects and corresponding user actions. See <a href="../recording/">Recording</a> for more information.</p>
 </li>
 <li>
-<p><strong>Learning</strong> - there are cases when it is not necessary or is not possible to track user interactions with AUT. In this case user can manually point to an object that should be captured by Rapise. See <a href="../object_learning/">Learning</a> for more information.</p>
+<p><strong>Learning</strong> - There are cases when it is not necessary or possible to track user interactions with an AUT. In such cases, a user can manually point to an object for Rapise to capture. See <a href="../object_learning/">Learning</a> for more information.</p>
 </li>
 <li>
-<p><strong>Analog Recording (Absolute/Relative)</strong> - this is for objects that are not standard in some important way, and so activity on them cannot be captured using recording or cannot be specified after learning. <a href="../absolute_analog_learning/">Absolute Analog Recording</a> is used to track mouse usage (movement and clicks) and keyboard events.  For absolute analog recording, the positions these events are recorded relative to the top-left corner of the system screen.  (In contrast, in <a href="../relative_analog_learning/">Relative Analog Recording</a>, the events are recorded relative to the upper-left corner of the selected objects.)  The events are recorded in a file of type arf (Analog Recording File).</p>
+<p><strong>Analog Recording (Absolute/Relative)</strong> - This method is used for objects that are not standard in some important way, meaning activity on them cannot be captured using standard recording or specified after learning. <a href="../absolute_analog_learning/">Absolute Analog Recording</a> tracks mouse usage (movement and clicks) and keyboard events. For absolute analog recording, the positions of these events are recorded relative to the top-left corner of the system screen. (In contrast, in <a href="../relative_analog_learning/">Relative Analog Recording</a>, events are recorded relative to the upper-left corner of the selected objects.) These events are recorded in a file of type .arf (Analog Recording File).</p>
 </li>
-<li><strong>Simulated Object Recording</strong> - a Rapise user can use simulated objects when some objects are not natively supported by Rapise (e.g. their internal structure, properties and actions are unknown).  In this case, what is recorded are mouse clicks and keyboard activity.  Compare  to Analog Recording when all mouse and keyboard actions are recorded, including mouse up/down, mouse move events. See <a href="../simulated_objects/">Simulated Objects</a> for more information.</li>
-<li><strong>Manual Recording</strong> - In addition to providing automated testing functionality, Rapise enables you to <a href="../manual_test_editor/">create manual tests</a> (ones that will be <a href="../manual_playback/">carried out by a human tester</a>) rapidly without having to laboriously enter in test steps and screenshots by hand. It does this by using the same recording mechanism used for automated testing to <a href="../manual_testing_recording/">create a manual test case</a> that contains a list of the tester's interactions and screenshots of what was performed. This is useful for exploratory testing and is a huge time saver.</li>
+<li><strong>Simulated Object Recording</strong> - Rapise users can employ simulated objects when certain objects are not natively supported by Rapise (e.g., their internal structure, properties, and actions are unknown). In this case, only mouse clicks and keyboard activity are recorded. This differs from Analog Recording, where all mouse and keyboard actions—including mouse up/down and mouse move events—are recorded. See <a href="../simulated_objects/">Simulated Objects</a> for more information.</li>
+<li><strong>Manual Recording</strong> - In addition to providing automated testing functionality, Rapise enables you to <a href="../manual_test_editor/">create manual tests</a> (ones that will be <a href="../manual_playback/">carried out by a human tester</a>) rapidly without having to laboriously enter test steps and screenshots by hand. It does this by leveraging the same recording mechanism used for automated testing to <a href="../manual_testing_recording/">create a manual test case</a> that includes a list of the tester's interactions and screenshots of the actions performed. This feature is useful for exploratory testing and is a huge time-saver.</li>
 </ol>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Before an operation (press, enter text, select, click, etc.) can be performed on an object automatically, Rapise must be able to identify the object.  That identification must be able to locate the object definitively, and it must be able to duplicate the action or operation precisely.  This carries several implications.  Firstly, if the AUT is in a different position on the screen when it is started, Rapise must still be able to find the objects in the AUT window.  Secondly, if the positioning of objects on the AUT window is proportional or relative to the screen size of shape, Rapise must still be able to locate the object.</p>
-<p>A secondary set of considerations relates to the fact that the AUT UI layout maybe sensitive to the context of the state of the application.  For example, consider the case of a word processor.  Pressing the "bold" button doesn't predict what the result will be unless it is known whether the text highlighted is currently bold or not.  A far more illustrative example is that of the Microsoft Paint utility.  The Microsoft Paint utility is the subject of a Inflectra sample, <a href="../sample_tests/">Simulated Object</a>.</p>
-<p>The most instructive way to identify the objects to Rapise is to practice with the tool and different types of objects.  The best methodology to use is as follows:</p>
+<p>Before an operation (e.g., press, enter text, select, click) can be automatically performed on an object, Rapise must be able to identify that object. This identification must definitively locate the object and precisely duplicate the action or operation. This has several implications. Firstly, if the AUT starts in a different screen position, Rapise must still be able to find the objects within the AUT window. Secondly, if object positioning within the AUT window is proportional or relative to the screen size or shape, Rapise must still be able to locate the object.</p>
+<p>A secondary set of considerations relates to the fact that the AUT UI layout may be sensitive to the application's current state or context. For example, pressing the "bold" button in a word processor doesn't predict the outcome unless it's known whether the highlighted text is currently bold. A more illustrative example is the Microsoft Paint utility. The Microsoft Paint utility is the subject of an Inflectra sample, <a href="../sample_tests/">Simulated Object</a>.</p>
+<p>The most instructive way to identify objects for Rapise is to practice with the tool and different object types. The best methodology to use is as follows:</p>
 <ol>
 <li>
 <p>First, try to use Record/Learn to learn the object and record actions in a single step.</p>
 </li>
 <li>
-<p>If learning.recording fails to record actions in the grid, use the <a href="../object_spy/">Object Spy</a> to observe the object carefully and discover what libraries and classes are being used by the AUT.</p>
+<p>If learning/recording fails to record actions in the grid, use the <a href="../object_spy/">Object Spy</a> to observe the object carefully and discover which libraries and classes the AUT is using.</p>
 </li>
 <li>
-<p>Use Verify (++ctrl+1+) from the Recording Activity dialog to get summary information about the object.</p>
+<p>Use Verify (++ctrl+1+) from the Recording Activity dialog to obtain summary information about the object.</p>
 </li>
 <li>
 <p>Use a more appropriate set of libraries when selecting the AUT prior to recording.</p>
@@ -11407,16 +11431,16 @@
 <p>Use Analog Recording with relative positioning to identify and locate the object.</p>
 </li>
 <li>
-<p>Use Simulated Object Recording to track the actions required and at the positions required.</p>
+<p>Use Simulated Object Recording to track the required actions at the required positions.</p>
 </li>
 <li>
-<p>Look for <a href="../custom_libraries/">custom libraries</a> that support the technology being used by the AUT.</p>
+<p>Look for <a href="../custom_libraries/">custom libraries</a> that support the technology employed by the AUT.</p>
 </li>
 <li>
 <p>Build your own custom library to support the technology in use by the AUT.</p>
 </li>
 <li>
-<p>Finally if it will not be worth developing automated tests for this AUT, use the <a href="../manual_testing_recording/">manual recording feature</a> to speed up your manual test writing.</p>
+<p>Finally, if developing automated tests for this AUT is not feasible, use the <a href="../manual_testing_recording/">manual recording feature</a> to speed up manual test writing.</p>
 </li>
 </ol>
 <h2 id="see-also">See Also:<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

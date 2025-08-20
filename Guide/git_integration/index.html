@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11221,6 +11233,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11621,28 +11645,28 @@
                 
                 <h1 id="rapise-and-git-integration">Rapise and Git Integration<a class="headerlink" href="#rapise-and-git-integration" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p><a href="https://git-scm.com/">Git</a> has become the de-facto standard for code versioning.</p>
-<p><a href="../spiratest_integration/">SpiraTest Integration</a> built into Rapise meets basic needs of distributed development, source control and file versioning. However the growth of the team and increasing complexity of project as well as introduction of CI/CD and build pipelines making it more natural to use <strong>Git</strong> for the test source management.</p>
-<p>Also it is common practice to store test files together with source code and documentation, and this makes another vote for having it all in <strong>Git</strong> repository.</p>
+<p><a href="https://git-scm.com/">Git</a> has become the de facto standard for code versioning.</p>
+<p><a href="../spiratest_integration/">SpiraTest Integration</a> built into Rapise addresses the basic needs of distributed development, source control, and file versioning. However, the growth of the team, increasing project complexity, and the introduction of CI/CD and build pipelines make it more natural to use <strong>Git</strong> for test source management.</p>
+<p>It is also common practice to store test files alongside source code and documentation, which further supports using a <strong>Git</strong> repository for all assets.</p>
 <h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
-<p>You probably don't need <strong>Git</strong> support, if you are developing few or many tests alone or in a small team.</p>
-<p>And you will benefit from <strong>Git</strong> if it is already used in your project, or you have a large project containing many dependent tests, shared data and files.</p>
+<p>You probably don't need <strong>Git</strong> support if you are developing tests alone or in a small team.</p>
+<p>You will, however, benefit from <strong>Git</strong> if it is already used in your project, or if you have a large project containing many dependent tests, shared data, and files.</p>
 <h2 id="git-repository">Git Repository<a class="headerlink" href="#git-repository" title="Permanent link">&para;</a></h2>
-<p>Having <strong>Git</strong> means having one more node on the diagram:</p>
+<p>Integrating <strong>Git</strong> introduces one more node on the diagram:</p>
 <p><img alt="Git Integration" src="../img/git_integration_overview.png" /></p>
-<p>In addition to Rapise used for test development and SpiraTeam used for test management, we have a <strong>Git Repository</strong> used for source version control.</p>
-<p>When linking a test case to Spira, Rapise should know that test sources are managed by Git and don't need to be stored into the repository.</p>
+<p>In addition to Rapise, used for test development, and SpiraTeam, used for test management, a <strong>Git Repository</strong> is introduced for source version control.</p>
+<p>When linking a test case to Spira, Rapise needs to be aware that test sources are managed by Git and do not need to be stored in the Spira repository.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="git-client">Git Client<a class="headerlink" href="#git-client" title="Permanent link">&para;</a></h3>
-<p>In the majority of cases when tests are managed by Git, the source repository contains additional information and files.</p>
-<p>You need to have a <a href="https://git-scm.com/download/gui/windows">git client</a> installed.</p>
-<p>All standard Git operations, such as <strong>commit</strong>, <strong>fetch</strong>, <strong>pull</strong> and <strong>push</strong> are done externally in the git client.</p>
+<p>In the majority of cases where tests are managed by Git, the source repository contains additional information and files.</p>
+<p>A <a href="https://git-scm.com/download/gui/windows">Git client</a> must be installed.</p>
+<p>All standard Git operations, such as <strong>commit</strong>, <strong>fetch</strong>, <strong>pull</strong>, and <strong>push</strong>, are done externally using the Git client.</p>
 <h2 id="linking-new-test-to-spira">Linking New Test to Spira<a class="headerlink" href="#linking-new-test-to-spira" title="Permanent link">&para;</a></h2>
-<p>When using <strong>Save to Spira</strong> button, Rapise checks if current test is stored within the <strong>Git</strong> repository folder structure. And, if existing repository has been identified, the following prompt is shown:</p>
+<p>When the <strong>Save to Spira</strong> button is used, Rapise checks if the current test is stored within the <strong>Git</strong> repository folder structure. If an existing repository is identified, the following prompt is shown:</p>
 <p><img alt="Git Prompt" src="../img/git_integration_existing_repository.png" width="406px" /></p>
-<p>This means that Rapise detected that folder containing the test is within the <code>.git</code> repository structure. And it suggests to keep your test files in <strong>Git</strong> and only put a link into the Spira Test Case.</p>
+<p>This means that Rapise detected that the folder containing the test is within the <code>.git</code> repository structure. It suggests keeping your test files in <strong>Git</strong> and only a link is placed into the Spira Test Case.</p>
 <h3 id="how-it-is-stored-in-spira">How It is Stored in Spira<a class="headerlink" href="#how-it-is-stored-in-spira" title="Permanent link">&para;</a></h3>
-<p>When Test Case is Saved to Spira in a <strong>standard</strong> manner, it shows the folder that is created in Spira Documents:</p>
+<p>When a Test Case is saved to Spira in a <strong>standard</strong> manner, it shows the folder created in Spira Documents:</p>
 <p><img alt="Doc Folder" src="../img/git_integration_documents_folder.png" width="570px" /></p>
 <p>After saving, the folder will contain test file versions:</p>
 <p><img alt="Doc Files" src="../img/git_integration_documents_files.png" width="876px" /></p>
@@ -11650,27 +11674,27 @@
 <p><img alt="TC Link" src="../img/git_integration_spira_tc.png" width="577px" /></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Rapise 7 and lower mirrors folder structure of a test. If there are sub-tests then corresponding sub-folders are created in Documents of Spira.  </p>
-<p>Rapise 8.0+ creates plain structure. All files are stored within the main folder of a test. This type of repository increases saving/loading speed.</p>
+<p>Rapise 7 and lower mirrors the folder structure of a test. If there are sub-tests, corresponding sub-folders are created in Spira's Documents.</p>
+<p>Rapise 8.0+ creates a flat structure. All files are stored within the main folder of a test. This structure increases saving/loading speed.</p>
 <p><img alt="" src="../img/git_integration_spira_plain_structure.png" width="525px" /></p>
 </div>
 <h3 id="how-it-is-stored-in-git">How It is Stored in Git<a class="headerlink" href="#how-it-is-stored-in-git" title="Permanent link">&para;</a></h3>
-<p>When the test stays in <strong>Git</strong> then a folder in Spira is also created (in pre Rapise 8.0 the root folder is used):</p>
+<p>When the test remains in <strong>Git</strong>, a folder is also created in Spira (for Rapise versions prior to 8.0, the root folder is used):</p>
 <p><img alt="" src="../img/git_integration_git_spira_folder.png" width="570px" /></p>
-<p>Spira Documents section contains only one item - a link to a local file starting with <code>%GITROOT%</code>:</p>
+<p>The Spira Documents section contains only one item: a link to a local file starting with <code>%GITROOT%</code>:</p>
 <p><img alt="TC Link Git Doc" src="../img/git_integration_doc_link.png" width="809px" /></p>
-<p>And the Test Case uses that link:</p>
+<p>And the Test Case references that link:</p>
 <p><img alt="TC Link Git" src="../img/git_integration_git_tc.png" width="571px" /></p>
-<p>This means that to access this file, there should be an environment variable <code>%GITROOT%</code> pointing to the root of the local repository containing the test.</p>
+<p>This means that to access this file, an environment variable <code>%GITROOT%</code> must exist that points to the root of the local repository containing the test.</p>
 <h2 id="saving-existing-test-and-synctospiracmd">Saving Existing Test and SyncToSpira.cmd<a class="headerlink" href="#saving-existing-test-and-synctospiracmd" title="Permanent link">&para;</a></h2>
-<p>If Test stored in <strong>Git</strong> and linked to <strong>Spira</strong> then pressing on <a href="../spiratest_integration/#saving-a-test-to-spiratest">Save to Spira</a> link again have no visual effect - the test is already linked to test case and file versioning should be done by user using the installed <strong>git client</strong>.</p>
-<p>Sometimes we want to sync test file with <strong>Git</strong> every time we press <code>Save to Spira</code>. It is common practice to do <strong>commit</strong>, <strong>pull</strong> and then <strong>push</strong> every time we press it. This may be achieved by defining a file <code>SyncToSpira.cmd</code>.</p>
-<p>This file may be stored either common folder:</p>
+<p>If a test is stored in <strong>Git</strong> and linked to <strong>Spira</strong>, pressing the <a href="../spiratest_integration/#saving-a-test-to-spiratest">Save to Spira</a> link again will have no visual effect; the test is already linked to the test case, and file versioning should be performed by the user using the installed <strong>Git client</strong>.</p>
+<p>Sometimes, it is desirable to sync test files with <strong>Git</strong> every time <code>Save to Spira</code> is pressed. It is common practice to perform a <strong>commit</strong>, <strong>pull</strong>, and then <strong>push</strong> every time the button is pressed. This can be achieved by creating a file named <code>SyncToSpira.cmd</code>.</p>
+<p>This file may be stored in either a common folder:</p>
 <p><code>c:\Users\Public\Documents\Rapise\SyncToSpira.cmd</code></p>
-<p>Or in the root of current <a href="../../Intro/framework/">test framework</a>.</p>
-<p>It gets path to the framework root as a 1<sup>st</sup> parameter (%1) and path to <code>.sstest</code> as 2<sup>nd</sup> (%2).</p>
+<p>Or in the root of the current <a href="../../Intro/framework/">test framework</a>.</p>
+<p>It receives the path to the framework root as its first parameter (%1) and the path to the <code>.sstest</code> file as its second parameter (%2).</p>
 <h3 id="basic-synctospiracmd">Basic SyncToSpira.cmd<a class="headerlink" href="#basic-synctospiracmd" title="Permanent link">&para;</a></h3>
-<p>Simplest, command line only implementation may look like that:</p>
+<p>The simplest, command-line-only implementation might look like this:</p>
 <div class="highlight"><pre><span></span><code>@echo Test is being saved to Spira %2
 @echo Framework Root: %1
 pushd %1
@@ -11682,7 +11706,7 @@ git push
 popd
 </code></pre></div>
 <h3 id="interactive-synctospiracmd">Interactive SyncToSpira.cmd<a class="headerlink" href="#interactive-synctospiracmd" title="Permanent link">&para;</a></h3>
-<p>Depending on your preferred git client, you may specify different implementations of <code>Save to Spira</code>. For example, here is an interactive version of it using <a href="https://tortoisegit.org/">TortoiseGit</a>:</p>
+<p>Depending on your preferred Git client, you may specify different implementations for <code>Save to Spira</code>. For example, here is an interactive version using <a href="https://tortoisegit.org/">TortoiseGit</a>:</p>
 <div class="highlight"><pre><span></span><code>@echo ===============================
 @echo Test is being saved to Spira %2
 @echo Framework Root: %1
@@ -11700,33 +11724,33 @@ popd
 @echo ===============================
 </code></pre></div>
 <h2 id="executing-with-rapiselauncher">Executing With RapiseLauncher<a class="headerlink" href="#executing-with-rapiselauncher" title="Permanent link">&para;</a></h2>
-<p><strong>RapiseLauncher</strong> may <a href="../spiratest_integration/#executing-the-test-sets">execute</a> scheduled test sets containing Test Cases linked to <strong>Git</strong> and having <code>%GITROOT%</code> in the file reference just like other test cases. Depending on how you want the source code to be checked out during execution there are two ways on specifying the <code>%GITROOT%</code>.</p>
+<p><strong>RapiseLauncher</strong> may <a href="../spiratest_integration/#executing-the-test-sets">execute</a> scheduled test sets containing Test Cases linked to <strong>Git</strong> and referencing <code>%GITROOT%</code>, just like other test cases. Depending on how you want the source code to be checked out during execution, there are two ways to specify <code>%GITROOT%</code>.</p>
 <h3 id="checkout-by-rapiselauncher">Checkout By RapiseLauncher<a class="headerlink" href="#checkout-by-rapiselauncher" title="Permanent link">&para;</a></h3>
-<p>There are two ways on telling <strong>RapiseLauncher</strong> where the origin from which <strong>Git</strong> is supposed to do a checkout: using Spira custom properties or using system environment variables.</p>
+<p>There are two ways to tell <strong>RapiseLauncher</strong> the origin from which <strong>Git</strong> should perform a checkout: using Spira custom properties or system environment variables.</p>
 <h4 id="using-git-credentials-in-spira-dashboard">Using Git Credentials in Spira Dashboard<a class="headerlink" href="#using-git-credentials-in-spira-dashboard" title="Permanent link">&para;</a></h4>
 <p>This is the recommended and most convenient way. It is described in <a href="../spira_dashboard_2/#git-credentials-storage">Spira Dashboard section</a>.</p>
 <h4 id="using-test-set-custom-properties-in-spira">Using Test Set Custom Properties in Spira<a class="headerlink" href="#using-test-set-custom-properties-in-spira" title="Permanent link">&para;</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Rapise 8.0+</p>
-<p>If you have Rapise 8.0+ you may set Git properties for any test set without creating custom properties. You may do it in <a href="../spira_dashboard_2/">Spira Dashboard</a> in Test Sets view:</p>
+<p>With Rapise 8.0+, you can set Git properties for any test set without creating custom properties. This can be done in <a href="../spira_dashboard_2/">Spira Dashboard</a> in the Test Sets view:</p>
 <p><img alt="" src="../img/git_integration_git_custom_properties.png" width="832px" /></p>
 </div>
 <p>In this case, you need to add custom fields to the Test Set definition in <strong>Spira</strong>:</p>
 <p><img alt="Spira TS Fields" src="../img/git_integration_git_tsprops.png" /></p>
 <ul>
-<li><strong>GitUrl</strong> - Git remote repository URL. I.e. <code>https://github.com/Inflectra/rapise-samples</code>.</li>
-<li><strong>GitUser</strong> - optional. Needed when repository is protected and requires an authentication.</li>
+<li><strong>GitUrl</strong> - Git remote repository URL. E.g., <code>https://github.com/Inflectra/rapise-samples</code>.</li>
+<li><strong>GitUser</strong> - optional. Needed when the repository is protected and requires an authentication.</li>
 <li><strong>GitPassword</strong> - optional. Username for authentication.</li>
-<li><strong>GitBranch</strong> - optional. You link test case to specific branch instead of default <code>master</code> branch.</li>
-<li><strong>GitRoot</strong> - optional. Target folder for checkout. If empty or absent, default Rapise Launcher temp folder is used.</li>
+<li><strong>GitBranch</strong> - optional. Links the test case to a specific branch instead of the default <code>master</code> branch.</li>
+<li><strong>GitRoot</strong> - optional. Target folder for checkout. If empty or not specified, the default Rapise Launcher temp folder is used.</li>
 </ul>
 <h4 id="using-system-environment-variables">Using System Environment Variables<a class="headerlink" href="#using-system-environment-variables" title="Permanent link">&para;</a></h4>
-<p>In this case you may have only one checkout source for all test sets executed by <strong>RapiseLauncher</strong> on the given host. It is fine if your host is dedicated to run tests from specific repository and is a bit easier to set up.</p>
-<p>In this case you need to define system variables named exactly the same as corresponding custom properties described in the previous block: <strong>GitUrl</strong>, <strong>GitUser</strong>, <strong>GitPassword</strong>, <strong>GitBranch</strong>, <strong>GitRoot</strong>. All but <strong>GitUrl</strong> are optional.</p>
-<p>When both Environment Variable and Spira Custom Property are defined and custom property value is non-empty, then Custom Property's value is used.</p>
+<p>In this case, only one checkout source can be used for all test sets executed by <strong>RapiseLauncher</strong> on a given host. This is suitable if your host is dedicated to running tests from a specific repository and is slightly easier to set up.</p>
+<p>Here, you need to define system variables named exactly the same as the corresponding custom properties described in the previous block: <strong>GitUrl</strong>, <strong>GitUser</strong>, <strong>GitPassword</strong>, <strong>GitBranch</strong>, <strong>GitRoot</strong>. All but <strong>GitUrl</strong> are optional.</p>
+<p>When both an Environment Variable and a Spira Custom Property are defined, and the custom property value is non-empty, the Custom Property's value is used.</p>
 <h3 id="checkout-externally">Checkout Externally<a class="headerlink" href="#checkout-externally" title="Permanent link">&para;</a></h3>
-<p>In CI/CD systems it is typical that test sources are checked out before the pipeline execution and already present on the local drive. In this case no need to define custom properties for Test Set (or, if already defined, leave them empty). The only thing that is required is <code>GITROOT</code> variable that should point to the root of the local <strong>Git</strong> repository.</p>
-<p>For example, if the pipeline checks the sources to <code>c:\Build</code> folder from the <strong>Url</strong> <code>https://github.com/Inflectra/rapise-samples</code> the <code>GITROOT</code> should be set to <code>C:\Build</code> so that the test link <code>%GITROOT%\CreateNewAuthor.sstest</code> gets correctly resolved to <code>c:\Build\rapise-samples\CreateNewAuthor\CreateNewAuthor.sstest</code>.</p>
+<p>In CI/CD systems, it is typical for test sources to be checked out before the pipeline execution and already present on the local drive. In this case, there is no need to define custom properties for the Test Set (or, if already defined, leave them empty). The only requirement is the <code>GITROOT</code> variable, which should point to the root of the local <strong>Git</strong> repository.</p>
+<p>For example, if the pipeline checks out the sources to the <code>c:\Build</code> folder from the <strong>Url</strong> <code>https://github.com/Inflectra/rapise-samples</code>, then <code>GITROOT</code> should be set to <code>C:\Build</code> so that the test link <code>%GITROOT%\CreateNewAuthor.sstest</code> is correctly resolved to <code>c:\Build\rapise-samples\CreateNewAuthor\CreateNewAuthor.sstest</code>.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=BIgOIxkZ5Hk&amp;t=25s">Demo of Git Integration (video)</a></li>

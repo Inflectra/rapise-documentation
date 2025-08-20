@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11109,6 +11121,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11396,69 +11420,69 @@
                 <h1 id="spira-dashboard">Spira Dashboard<a class="headerlink" href="#spira-dashboard" title="Permanent link">&para;</a></h1>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>In Rapise 7 we've updated the dashboard. It now has all new look and features. <a href="../spira_dashboard_2/">Learn more</a>.</p>
+<p>In Rapise 7, we've updated the dashboard. It now has an all-new look and new features. <a href="../spira_dashboard_2/">Learn more</a>.</p>
 </div>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>This page displays information from the SpiraTest or SpiraTeam server that this instance of Rapise is connected to. More details on using Rapise with either SpiraTest or SpiraTeam can be found in the separate <strong>Using Rapise with SpiraTest Guide</strong>. A copy of this guide should be in the <code>Start &gt; Programs</code> menu created by the Rapise installer.</p>
-<p>The dashboard displays information about the current Spira project, including the associated test cases, test sets and automation hosts:</p>
-<p>A typical Spira dashboard will look like the following:</p>
+<p>This page displays information from the SpiraTest or SpiraTeam server to which this instance of Rapise is connected. For more details on using Rapise with either SpiraTest or SpiraTeam, refer to the separate <strong>Using Rapise with SpiraTest Guide</strong>. A copy of this guide is available in the <code>Start &gt; Programs</code> menu created by the Rapise installer.</p>
+<p>The dashboard displays information about the current Spira project, including the associated test cases, test sets, and automation hosts:</p>
+<p>A typical Spira dashboard will appear as follows:</p>
 <p><img alt="spira.dashboard.screenshot" src="../img/spira_dashboard1.png" /></p>
-<p>Each of the sections is explained separately below:</p>
+<p>Each section is explained in detail below:</p>
 <h2 id="spira-loginsign-up">Spira Login/Sign-Up<a class="headerlink" href="#spira-loginsign-up" title="Permanent link">&para;</a></h2>
-<p>This section will display the name of the currently configured Spira user (if there is one) together with the option to either login to an existing Spira instance or to sign-up for a new one:</p>
+<p>This section displays the name of the currently configured Spira user (if one is configured), along with options to log in to an existing Spira instance or sign up for a new one:</p>
 <p><img alt="spira_dashboard_login2" src="../img/spira_dashboard2.png" /></p>
 <ul>
-<li><strong>Login</strong>: this will log you into the instance of Spira listed in the <strong>Connection Info</strong> section</li>
-<li><strong>Sign Up</strong>: this link will take you to the Inflectra website where you can sign up for a Spira account.</li>
-<li><strong>Auto Login</strong>: if you select this option, Rapise will automatically login to Spira when it first starts up.</li>
+<li><strong>Login</strong>: Logs you into the Spira instance listed in the <strong>Connection Info</strong> section.</li>
+<li><strong>Sign Up</strong>: Takes you to the Inflectra website to sign up for a Spira account.</li>
+<li><strong>Auto Login</strong>: If selected, Rapise automatically logs in to Spira upon startup.</li>
 </ul>
-<p>Once you login to the instance of Spira, the widget will change to the following:</p>
+<p>Once you log in to the Spira instance, the widget updates as follows:</p>
 <p><img alt="spira_dashboard_login1" src="../img/spira_dashboard3.png" /></p>
 <ul>
-<li><strong>Logout</strong>: this will log you out of the instance of Spira listed in the <strong>Connection Info</strong> section</li>
+<li><strong>Logout</strong>: Logs you out of the Spira instance listed in the <strong>Connection Info</strong> section.</li>
 </ul>
 <h2 id="connection-info">Connection Info<a class="headerlink" href="#connection-info" title="Permanent link">&para;</a></h2>
-<p>This section will display the URL, login and corresponding local repository folder for the current Spira instance (if one has been set).</p>
+<p>This section displays the URL, login, and corresponding local repository folder for the current Spira instance (if configured).</p>
 <p><img alt="spira_dashboard_connection_info" src="../img/spira_dashboard4.png" /></p>
-<p>To change the current connection (or to set one up if this is a new installation of Rapise), click on the <strong>[Edit Connection Settings]</strong> button. That will display the <a href="../spiratest_integration/">Connection Settings</a> dialog box:</p>
+<p>To change the current connection (or to set one up if this is a new Rapise installation), click the <strong>[Edit Connection Settings]</strong> button. This displays the <a href="../spiratest_integration/">Connection Settings</a> dialog box:</p>
 <p><img alt="spira_connection_settings" src="../img/spira_dashboard5.png" /></p>
-<p>You can then change the current Spira connection using this dialog box. See the topic on <a href="../spiratest_integration/">Spira Integration</a> for more details.</p>
+<p>Use this dialog box to change the current Spira connection. See the topic on <a href="../spiratest_integration/">Spira Integration</a> for more details.</p>
 <h2 id="automation-hosts">Automation Hosts<a class="headerlink" href="#automation-hosts" title="Permanent link">&para;</a></h2>
-<p>This section will display a list of the <strong>automation hosts</strong> available in the currently selected Spira project:</p>
+<p>This section displays a list of <strong>automation hosts</strong> available in the currently selected Spira project:</p>
 <p><img alt="spira_dashboard_automation_hosts" src="../img/spira_dashboard6.png" /></p>
-<p>An <strong>automation host</strong> is a notional computer that Spira uses to assign specific <strong>test sets</strong> to specific computers running Rapise. This allows you to schedule tests to run on different computers remotely. When you first connect to Spira, it will not know which automation host the current machine matches.</p>
-<p>Using the dropdown list you can select one of the displayed automation hosts:</p>
+<p>An <strong>automation host</strong> is a notional computer used by Spira to assign specific <strong>test sets</strong> to specific computers running Rapise. This allows you to schedule tests to run on different computers remotely. When you first connect to Spira, it does not know which automation host the current machine matches.</p>
+<p>Use the dropdown list to select one of the available automation hosts:</p>
 <p><img alt="spira_dashboard_automation_hosts2" src="../img/spira_dashboard7.png" /></p>
-<p>That will tell Rapise that this local computer is in fact this Spira automation host. Any test sets scheduled in Spira for this automation host will now be executed on this computer running Rapise.</p>
-<p>If you don't see the current automation host listed, you can click on the <strong>Create Host for this Machine</strong> button to create a new automation host entry for the current computer:</p>
+<p>This tells Rapise that this local computer corresponds to the selected Spira automation host. Any test sets scheduled in Spira for this automation host will be executed on this computer running Rapise.</p>
+<p>If you do not see the current automation host listed, you can click the <strong>Create Host for this Machine</strong> button to create a new automation host entry for this machine:</p>
 <p><img alt="spira_dashboard_automation_hosts3" src="../img/spira_dashboard8.png" /></p>
-<p>This screen lets you enter a display name (Name), system name (Token) and long description for a new automation host that Rapise will create in the current Spira project. Click <strong>[OK]</strong> to confirm the new automation host.</p>
+<p>This screen allows you to enter a display name (Name), a system name (Token), and a long description for a new automation host that Rapise will create in the current Spira project. Click <strong>[OK]</strong> to confirm the new automation host.</p>
 <h2 id="test-cases">Test Cases<a class="headerlink" href="#test-cases" title="Permanent link">&para;</a></h2>
-<p>This section displays a list of <strong>test cases</strong> that are either created by the current Spira user or are assigned to the current Spira user:</p>
+<p>This section displays a list of <strong>test cases</strong> that are either created by or assigned to the current Spira user:</p>
 <p><img alt="spira_dashboard_test_cases1" src="../img/spira_dashboard9.png" /></p>
-<p>Each test cases will be displayed with the ID, name and long description of the test case together with an icon that indicates the type of test case:</p>
+<p>Each test case is displayed with its ID, name, and long description, along with an icon indicating the test case type:</p>
 <ol>
-<li><img alt="ManualTest-WithSteps" src="../img/spira_dashboard10.png" /> - Manual test case that has no automation script attached.</li>
-<li><img alt="RapiseTest-WithSteps" src="../img/spira_dashboard11.png" /> - Test case that has an existing Rapise test attached.</li>
-<li><img alt="AutoTest-WithSteps" src="../img/spira_dashboard12.png" /> - Test case that has a non-Rapise automation script attached.</li>
+<li><img alt="ManualTest-WithSteps" src="../img/spira_dashboard10.png" /> - Manual test case with no automation script attached.</li>
+<li><img alt="RapiseTest-WithSteps" src="../img/spira_dashboard11.png" /> - Test case with an existing Rapise test attached.</li>
+<li><img alt="AutoTest-WithSteps" src="../img/spira_dashboard12.png" /> - Test case with a non-Rapise automation script attached.</li>
 </ol>
-<p>Clicking on the hyperlink ID will open up the test case inside Spira in your web browser. For test cases that have a linked Rapise test, there will be an <strong>Open</strong> button available. Clicking on this button will open the test in Rapise. For test cases that do not have a linked Rapise test, there is the <strong>Save As...</strong> option that lets you save the current Rapise script against the test case.</p>
-<p>In addition there are two other options available:</p>
+<p>Clicking the hyperlink ID opens the test case in Spira within your web browser. For test cases with a linked Rapise test, an <strong>Open</strong> button is available. Clicking this button opens the test in Rapise. For test cases without a linked Rapise test, the <strong>Save As...</strong> option allows you to save the current Rapise script against the test case.</p>
+<p>Additionally, two other options are available:</p>
 <ul>
 <li>
-<p><strong>Create Test Set:</strong> Clicking on this button will allow you to create a new <strong>test set</strong> inside Spira. It will display the following dialog box when you select at least one test case and click the button:</p>
+<p><strong>Create Test Set:</strong> Clicking this button allows you to create a new <strong>test set</strong> in Spira. It displays the following dialog box when you select at least one test case and click the button:</p>
 <p><img alt="spira_dashboard_test_cases_new_test_set" src="../img/spira_dashboard13.png" /></p>
-<p>Enter in the name of the test set you want to create and click [OK].</p>
+<p>Enter the name of the test set to create and click [OK].</p>
 </li>
 <li>
-<p><strong>Add to Test Set:</strong> When you select <em>at least one test case</em> and <em>one test set</em>, then click this button it will add the selected test cases to a specific test set.</p>
+<p><strong>Add to Test Set:</strong> When you select <em>at least one test case</em> and <em>one test set</em>, clicking this button adds the selected test cases to the specified test set.</p>
 </li>
 </ul>
 <h2 id="test-sets">Test Sets<a class="headerlink" href="#test-sets" title="Permanent link">&para;</a></h2>
-<p>This section displays a list of <strong>test set</strong> that are either created by the current Spira user, are assigned to the current Spira user, or are assigned to the automation host that this instance of Rapise is installed on:</p>
+<p>This section displays a list of <strong>test sets</strong> that are either created by the current Spira user, assigned to the current Spira user, or assigned to the automation host on which this instance of Rapise is installed:</p>
 <p><img alt="spira_dashboard_test_sets" src="../img/spira_dashboard14.png" /></p>
-<p>Each test set will be displayed with the ID, name and long description of the test set.
-Clicking on the hyperlink ID will open up the test set inside Spira in your web browser. For test sets that are marked as <strong>automated</strong>, there will be an <strong>Execute</strong> button available. Clicking on this button will execute the test in <strong>RapiseLauncher</strong>. This is described in more detail in the <a href="../spiratest_integration/">SpiraTest Integration</a> topic.</p>
+<p>Each test set is displayed with its ID, name, and long description.
+Clicking the hyperlink ID opens the test set in Spira within your web browser. For test sets marked as <strong>automated</strong>, an <strong>Execute</strong> button is available. Clicking this button executes the test in <strong>RapiseLauncher</strong>. This is described in more detail in the <a href="../spiratest_integration/">SpiraTest Integration</a> topic.</p>
                 
               
               

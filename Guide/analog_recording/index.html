@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1172,6 +1172,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11090,6 +11102,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11355,20 +11379,20 @@
                 
                 <h1 id="analog-recording">Analog Recording<a class="headerlink" href="#analog-recording" title="Permanent link">&para;</a></h1>
 <h2 id="concept">Concept<a class="headerlink" href="#concept" title="Permanent link">&para;</a></h2>
-<p>Sometimes you have to automate the testing of an application that contains some controls or elements that are not standard objects that can be recognized by Rapise. For example you may have a drawing canvas inside an application that allows you to annotate a diagram. You can use the standard Rapise libraries for the rest of the controls but the actual drawing events cannot be captured that way. Analog recording is available to ‘fill in the gaps’ in such scenarios.</p>
-<p>During <strong>Analog Recording</strong>, Rapise records mouse movements, keyboard inputs, and clicks and stores them in a special .ARF (Analog Recording File) format file:</p>
+<p>Sometimes, when automating the testing of an application, you may encounter controls or elements that Rapise cannot recognize as standard objects. For example, you may have a drawing canvas inside an application that allows you to annotate a diagram. You can use the standard Rapise libraries for the other controls, but the actual drawing events cannot be captured that way. Analog recording is available to 'fill in the gaps' in such scenarios.</p>
+<p>During <strong>Analog Recording</strong>, Rapise records mouse movements, keyboard inputs, and clicks, storing them in a special .ARF (Analog Recording File) format:</p>
 <p><img alt="analog_recording_file" src="../img/analog_recording1.png" /></p>
 <p>There are two types of Analog Recording: <strong>Absolute</strong> and <strong>Relative</strong>.</p>
 <ul>
-<li><a href="../absolute_analog_learning/"><strong>Absolute</strong></a>: Mouse coordinates are recorded relative to the top left corner of the screen.</li>
-<li><a href="../relative_analog_learning/"><strong>Relative</strong></a>:  Mouse coordinates are recorded relative to the top left corner of the object beneath the mouse cursor.</li>
+<li><a href="../absolute_analog_learning/"><strong>Absolute</strong></a>: Mouse coordinates are recorded relative to the top-left corner of the screen.</li>
+<li><a href="../relative_analog_learning/"><strong>Relative</strong></a>: Mouse coordinates are recorded relative to the top-left corner of the object beneath the mouse cursor.</li>
 </ul>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>When you are <a href="../recording_activity_dialog/">recording your test</a> using the application you may come to a point where there are user actions that you need to record that don’t have any identifiable objects (for example drawing a signature). You can click on the ‘Analog’ button on the recorder to engage Analog mode:</p>
+<p>When you are <a href="../recording_activity_dialog/">recording your test</a> using the application, you may reach a point where you need to record user actions that don’t have any identifiable objects (for example, drawing a signature). You can click the 'Analog' button on the recorder to engage Analog mode:</p>
 <p><img alt="analog_recording_1" src="../img/do_absolute_analog_recording2.png" /></p>
-<p>Now when you use the mouse and keyboard to test the application, Rapise is storing the coordinates of your mouse clicks and keyboard events and storing them in a separate .ARF file that is part of your test project.</p>
+<p>Now, when you use the mouse and keyboard to test the application, Rapise stores the coordinates of your mouse clicks and keyboard events in a separate .ARF file that is part of your test project.</p>
 <p><img alt="analog_recording_2" src="../img/do_absolute_analog_recording3.png" /></p>
-<p>Once completed, the entire analog section is included as one step within the complete test script so you can include an analog sequence within a test script that contains other non-analog events. This lets you have the robustness of true object-based recording for 95% of your test and analog when you need it for the remaining 5%. This is the best of both worlds.</p>
+<p>Once completed, the entire analog section is included as a single step within the complete test script, allowing you to include an analog sequence within a test script that contains other non-analog events. This provides the robustness of true object-based recording for 95% of your test and analog recording when you need it for the remaining 5%. This is the best of both worlds.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../recording_activity_dialog/">Recording Activity Dialog</a></li>

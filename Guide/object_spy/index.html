@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11102,6 +11114,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11382,31 +11406,31 @@
                 <h1 id="object-spy">Object Spy<a class="headerlink" href="#object-spy" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>The <strong>Object Spy</strong> allows you to inspect an object's properties and state.</p>
-<p>Many controls on <a href="../glossary/">User Interfaces</a> are compound objects or there may be many instances of a similar object.  To be sure to select precisely the correct object, or to select the correct object from a collection of similar objects, the object's properties can be used to further identify the correct instance.</p>
+<p>Many controls on <a href="../glossary/">User Interfaces</a> are compound objects, or there may be many instances of similar objects. To ensure you select precisely the correct object—or the correct object from a collection of similar objects—its properties can be used to further identify the specific instance.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h2 id="select-spy">Select Spy<a class="headerlink" href="#select-spy" title="Permanent link">&para;</a></h2>
-<p>To spy on an object choose the type of <strong>Object Spy</strong> that you want to use. This can be done by using the menu <code>Tools &gt; Spy &gt; ...</code> or by clicking the down-arrow next to the Spy icon in the <a href="../menu_and_toolbars/">toolbar</a>:</p>
+<p>To spy on an object, choose the type of <strong>Object Spy</strong> you want to use. You can do this by using the menu <code>Tools &gt; Spy &gt; ...</code> or by clicking the down-arrow next to the Spy icon in the <a href="../menu_and_toolbars/">toolbar</a>:</p>
 <p><img alt="spy_choose_spy" src="../img/object_spy1.png" /></p>
 <p>There are <strong>6</strong> types of Spy available:</p>
 <ol>
-<li><a href="../object_spy_accessible/"><strong>Accessible</strong></a> - This is used to inspect applications that expose their properties using the Microsoft Active Accessibility (MSAA) technology. This is typically used by applications written in MFC, ATL, Qt, C++ and Visual Basic.</li>
-<li><a href="../object_spy_java/"><strong>Java</strong></a> - This is used to inspect applications written using the Java AWT and Swing UI frameworks.</li>
-<li><a href="../object_spy_managed/"><strong>Managed</strong></a> - This is used to inspect applications written in .NET 1.1, .NET 2.0, .NET 4.0 using Microsoft Windows Forms.</li>
-<li><a href="../object_spy_mobile/"><strong>Mobile</strong></a> - This is used to inspect mobile applications running on iOS or Android devices as well as the iOS or Android simulator.</li>
-<li><a href="../object_spy_uiautomation/"><strong>UIAutomation</strong></a> - This is used to inspect applications that expose their properties using the Microsoft's newer UIAutomation technology. This is typically used by applications written in WPF, Silverlight and Java SWT.</li>
-<li><a href="../web_spy/"><strong>Web</strong></a> - This is used to inspect Web application running in browsers: Internet Explorer, Chrome, Firefox or any browser accessible via Selenium.</li>
+<li><a href="../object_spy_accessible/"><strong>Accessible</strong></a> - Used to inspect applications that expose their properties using Microsoft Active Accessibility (MSAA) technology. Typically used by applications written in MFC, ATL, Qt, C++, and Visual Basic.</li>
+<li><a href="../object_spy_java/"><strong>Java</strong></a> - Used to inspect applications written using the Java AWT and Swing UI frameworks.</li>
+<li><a href="../object_spy_managed/"><strong>Managed</strong></a> - Used to inspect applications written in .NET 1.1, .NET 2.0, .NET 4.0 using Microsoft Windows Forms.</li>
+<li><a href="../object_spy_mobile/"><strong>Mobile</strong></a> - Used to inspect mobile applications running on iOS or Android devices, as well as on iOS or Android simulators.</li>
+<li><a href="../object_spy_uiautomation/"><strong>UIAutomation</strong></a> - Used to inspect applications that expose their properties using Microsoft's newer UIAutomation technology. Typically used by applications written in WPF, Silverlight, and Java SWT.</li>
+<li><a href="../web_spy/"><strong>Web</strong></a> - Used to inspect web applications running in browsers: Internet Explorer, Chrome, Firefox, or any browser accessible via Selenium.</li>
 </ol>
-<p>For more details on each Spy type, refer to specific topic above.</p>
+<p>For more details on each Spy type, refer to the specific topics above.</p>
 <h2 id="object-tracking">Object Tracking<a class="headerlink" href="#object-tracking" title="Permanent link">&para;</a></h2>
-<p>Open the <strong>Spy Dialog</strong>.  This can be done directly using the <strong>Spy</strong> button in the main Rapise <a href="../menu_and_toolbars/">toolbar</a>, or by pressing the <strong>Spy</strong> button in the <a href="../recording_activity_dialog/">Recording Activity</a> dialog during recording or learning.</p>
+<p>You can open the <strong>Spy Dialog</strong> directly using the <strong>Spy</strong> button in the main Rapise <a href="../menu_and_toolbars/">toolbar</a>, or by pressing the <strong>Spy</strong> button in the <a href="../recording_activity_dialog/">Recording Activity</a> dialog during recording or learning.</p>
 <ol>
-<li>Click the <strong>Start Tracking</strong> button (or press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> (or <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-t">T</kbd></span> in Web Spy).</li>
-<li>As your mouse moves over different objects, you will see the contents of the Object Spy dialog change as it collects information about the object.</li>
-<li>Mouse over the object you wish to spy on and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span>.  The reduced-size tracking dialog will be expanded into the the larger <a href="../ses_spy_dialog/">Object Spy Dialog</a>, presenting all the available information for the object.</li>
+<li>Click the <strong>Start Tracking</strong> button (or press ++Ctrl+G++ (or ++Ctrl+T++ in Web Spy)).</li>
+<li>As your mouse moves over different objects, the contents of the Object Spy dialog will change as it collects information about the object.</li>
+<li>Hover over the object you wish to spy on and press ++Ctrl+G++. The reduced-size tracking dialog will expand into the larger <a href="../ses_spy_dialog/">Object Spy Dialog</a>, presenting all available information for the object.</li>
 </ol>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li>See the <a href="../ses_spy_dialog/">Object Spy Dialog</a> for more details.</li>
+<li>Refer to the <a href="../ses_spy_dialog/">Object Spy Dialog</a> for more details.</li>
 </ul>
                 
               

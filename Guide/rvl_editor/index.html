@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11386,6 +11398,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11780,192 +11804,185 @@
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p><a href="../visual_language/">Rapise Visual Language</a> Editor</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>Use the <strong>RVL</strong> button on the main toolbar to open an RVL (<code>.rvl.xlsx</code>) file. The file will be opened by the <strong>RVL Editor</strong> in the <a href="../content_view/">Content View</a>.</p>
+<p>Use the <strong>RVL</strong> button on the main toolbar to open an RVL (<code>.rvl.xlsx</code>) file. The file will be opened by the <strong>RVL Editor</strong> in the <a href="../content_view/">Content View</a>.</p>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<p>Editor has support for all RVL statements including</p>
+<p>The editor supports all RVL statements, including:</p>
 <ul>
-<li><a href="../../RVL/Variables/">Variables</a>,</li>
-<li><a href="../../RVL/Actions/">Actions</a>,</li>
-<li><a href="../../RVL/Assertions/">Assertions</a>,</li>
-<li><a href="../../RVL/Maps/">Maps</a>,</li>
-<li><a href="../../RVL/IfElse/">If-Else</a>,</li>
+<li><a href="../../RVL/Variables/">Variables</a></li>
+<li><a href="../../RVL/Actions/">Actions</a></li>
+<li><a href="../../RVL/Assertions/">Assertions</a></li>
+<li><a href="../../RVL/Maps/">Maps</a></li>
+<li><a href="../../RVL/IfElse/">If-Else</a></li>
 <li><a href="../../RVL/Loops/">Loops</a></li>
 </ul>
-<p>statements.</p>
-<p>RVL is a recordable language. Rapise recorder is translates captured actions to objects stored in the <a href="../object_tree/">object repository</a> and a set of actions. Each recorded chunk may be inserted into desired place in the selected sheet:</p>
+<p>RVL is a recordable language. The Rapise recorder translates captured actions into objects stored in the <a href="../object_tree/">object repository</a> and a set of actions. Each recorded chunk can be inserted into the desired place in the selected sheet:</p>
 <p><img alt="Recording" src="../img/rvl_editor_recording.png" /></p>
-<p>Usually recording is with together with scripting and, maybe, some JavaScript for advanced tasks.</p>
+<p>Recording is usually performed in conjunction with scripting and, potentially, some JavaScript for advanced tasks.</p>
 <h2 id="rvl-scripting">RVL Scripting<a class="headerlink" href="#rvl-scripting" title="Permanent link">&para;</a></h2>
-<p>In addition to recording one may use RVL editor for authoring scripts. You may drag&amp;drop actions from the Object Tree into the RVL. Also RVL editor is both keyboard and mouse friendly. You may either type whole or parts of commands and rely on auto-completion OR simply select a dropdown in each cell of the row.</p>
-<p>When writing or modifying a script it is recommended to go left-to-right for script creation.</p>
+<p>In addition to recording, you can use the RVL editor for authoring scripts. You may drag and drop actions from the Object Tree into the RVL. The RVL editor is also both keyboard and mouse friendly. You can either type whole commands or parts of them and rely on autocompletion, or simply select from a dropdown in a cell of the row.</p>
+<p>When writing or modifying a script, it is recommended to work from left to right for script creation.</p>
 <h2 id="auto-completion">Auto Completion<a class="headerlink" href="#auto-completion" title="Permanent link">&para;</a></h2>
-<p>RVL Editor supports Auto completions. For example, if you type <code>I</code> in the flow column:</p>
+<p>The RVL Editor supports autocompletion. For example, if you type <code>I</code> in the flow column:</p>
 <p><img alt="Flow I" src="../img/rvl_editor_flow_i.png" /></p>
-<p>And hit <span class="keys"><kbd class="key-tab">Tab</kbd></span> key the whole <strong>If</strong> statement is created:</p>
+<p>And hit the <span class="keys"><kbd class="key-tab">Tab</kbd></span> key, the whole <strong>If</strong> statement is created:</p>
 <p><img alt="Flow If" src="../img/rvl_editor_flow_if.png" /></p>
 <blockquote>
-<p><strong>Note</strong>: <span class="keys"><kbd class="key-tab">Tab</kbd></span> is a trigger for auto-completion. If you use cursor keys or mouse to leave the cell then auto completion will not be executed.</p>
+<p><strong>Note</strong>: <span class="keys"><kbd class="key-tab">Tab</kbd></span> is a trigger for autocompletion. If you use cursor keys or the mouse to leave the cell, autocompletion will not be executed.</p>
 </blockquote>
-<p>If you go to last line and change <strong>End</strong> with <strong>ElseIf</strong></p>
+<p>If you go to the last line and change <strong>End</strong> to <strong>ElseIf</strong>:</p>
 <p><img alt="Flow If" src="../img/rvl_editor_flow_if_elseif.png" /></p>
-<p>then alternative branch is appended:</p>
+<p>Then an alternative branch is appended:</p>
 <p><img alt="Flow If" src="../img/rvl_editor_flow_if_elseif1.png" /></p>
-<p>Similar logic works for Params, Conditions, Maps, Loops, Assertions and so on.</p>
+<p>Similar logic works for Params, Conditions, Maps, Loops, Assertions, and so on.</p>
 <h2 id="disabling-cell-auto-correction">Disabling Cell Auto Correction<a class="headerlink" href="#disabling-cell-auto-correction" title="Permanent link">&para;</a></h2>
-<p>Sometimes autocompletion prevents one from entering a desired value. For example, you have a global object <code>navigator</code> and typing it into the <strong>Object</strong> columns automatically changes it to <code>Navigator</code>.</p>
-<p>The solution is to enter the cell for editing text and pressing <code>F2</code>. It will disable all autocompletion for this cell and then you may type any value.</p>
+<p>Sometimes autocompletion prevents you from entering a desired value. For example, you have a global object <code>navigator</code>, and typing it into the <strong>Object</strong> column automatically changes it to <code>Navigator</code>.</p>
+<p>The solution is to enter the cell to edit text and press <code>F2</code>. This will disable autocompletion for this cell, and then you can type any value.</p>
 <h2 id="action-params">Action Params<a class="headerlink" href="#action-params" title="Permanent link">&para;</a></h2>
-<p>When you select an action from the list <strong>RVL Editor</strong> automatically fills default action params. For example, if we choose: </p>
+<p>When you select an action from the list, the <strong>RVL Editor</strong> automatically fills in default action parameters. For example, if we choose:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_global_dolaunch0.png" /></p>
-<p>And press <span class="keys"><kbd class="key-tab">Tab</kbd></span> after <code>DoLaunch</code> <strong>RVL Editor</strong> fills default param:</p>
+<p>And press <span class="keys"><kbd class="key-tab">Tab</kbd></span> after <code>DoLaunch</code>, the <strong>RVL Editor</strong> fills in the default parameter:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_global_dolaunch1.png" /></p>
-<p><code>DoLaunch</code> has one required parameter <code>cmdLine</code>. Also it has a number of optional parameters. They are not added by default to make script more concise. However, you may need all or some of them. So you may add them by pressing <code>Params</code> button on <a href="../menu_and_toolbars/#rvl-toolbar">RVL Toolbar</a>:</p>
+<p><code>DoLaunch</code> has one required parameter, <code>cmdLine</code>. It also has a number of optional parameters. They are not added by default to make the script more concise. However, you might need all or some of them. So you can add them by pressing the <code>Params</code> button on the <a href="../menu_and_toolbars/#rvl-toolbar">RVL Toolbar</a>:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_global_dolaunch2.png" /></p>
-<p>It is also possible to add params one-by-one using the dropdown in the <strong>ParamName</strong> column:</p>
+<p>It is also possible to add parameters one-by-one using the dropdown in the <strong>ParamName</strong> column:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_global_dolaunch3.png" /></p>
 <h2 id="password-param-value">Password Param Value<a class="headerlink" href="#password-param-value" title="Permanent link">&para;</a></h2>
-<p>Once column <strong>ParamType</strong> set to <code>password</code>, <strong>ParamValue</strong> should be an encrypted string. Setting encrypted value is simple:</p>
+<p>Once the <strong>ParamType</strong> column is set to <code>password</code>, <strong>ParamValue</strong> should be an encrypted string. Setting an encrypted value is simple:</p>
 <ol>
-<li>
-<p>Change <strong>ParamType</strong> to <code>string</code>.</p>
-</li>
-<li>
-<p>Type plain value to be encrypted into <strong>ParamValue</strong>.</p>
-</li>
-<li>
-<p>Switch <strong>ParamType</strong> to <code>password</code> - plain value becomes encrypted.</p>
-</li>
+<li>Change <strong>ParamType</strong> to <code>string</code>.</li>
+<li>Type the plain value to be encrypted into <strong>ParamValue</strong>.</li>
+<li>Switch <strong>ParamType</strong> to <code>password</code> - the plain value becomes encrypted.</li>
 </ol>
 <h2 id="param-dropdowns">Param Dropdowns<a class="headerlink" href="#param-dropdowns" title="Permanent link">&para;</a></h2>
-<p>It is possible to define own list of dropdown values for any parameter. In most cases it is defined for custom functions.</p>
-<p>For example, we may have function <code>SetState(stateCode)</code> where we expect pre-defined limited set of state code values.</p>
+<p>It is possible to define your own list of dropdown values for any parameter. In most cases, this is defined for custom functions.</p>
+<p>For example, you might have a function <code>SetState(stateCode)</code> where you expect a predefined, limited set of state code values.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">SetState</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">stateName</span><span class="p">)</span>
 </code></pre></div>
-<p>We may define dropdown for <code>stateName</code> parameter, so that RVL editor suggest the following list:</p>
+<p>You can define a dropdown for the <code>stateName</code> parameter so that the RVL editor suggests the following list:</p>
 <p><img alt="States" src="../img/rvl_dropdowns_states.png" /></p>
 <p>The values for this dropdown are defined in the spreadsheet:</p>
 <p><img alt="States" src="../img/rvl_dropdowns_xls_states.png" /></p>
-<p>Moreover, we define a code for each state name, so it may be re-mapped in the implementation of the <code>SetState</code> function using </p>
+<p>Moreover, a code is defined for each state name, so it can be re-mapped in the implementation of the <code>SetState</code> function:</p>
 <p><img alt="States" src="../img/rvl_dropdowns_xls_stateCodes.png" /></p>
-<p>Dropdown values are defined in file <code>Dropdowns.xlsx</code>, that may be added to the test using the<a href="../test_files_dialog/#context-menu-folder">Create/Spreadsheet...</a> menu item.</p>
-<p>The full key to find matching dropdown is <code>objectid</code>.<code>method</code>.<code>paramName</code>. If not found, it will check <code>method.paramNam</code> and <code>paramName</code> columns:</p>
+<p>Dropdown values are defined in the file <code>Dropdowns.xlsx</code>, which can be added to the test using the <a href="../test_files_dialog/#context-menu-folder">Create/Spreadsheet...</a> menu item.</p>
+<p>The full key to find a matching dropdown is <code>objectid</code>.<code>method</code>.<code>paramName</code>. If not found, it will check the <code>method.paramName</code> and <code>paramName</code> columns:</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Example</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>objectid.method.paramName</code></td>
-<td><code>Global.DoLaunch.cmdLine</code></td>
+<td style="text-align: left;"><code>objectid`.`method`.`paramName</code></td>
+<td style="text-align: left;"><code>Global.DoLaunch.cmdLine</code></td>
 </tr>
 <tr>
-<td></td>
-<td><code>Functions.SetState.stateName</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Functions.SetState.stateName</code></td>
 </tr>
 <tr>
-<td></td>
-<td><code>MyButton.DoClick.clickType</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>MyButton.DoClick.clickType</code></td>
 </tr>
 <tr>
-<td><code>object_type.method.paramName</code></td>
-<td><code>VSFlexGrid.DoClickCell.row</code></td>
+<td style="text-align: left;"><code>object_type`.`method`.`paramName</code></td>
+<td style="text-align: left;"><code>VSFlexGrid.DoClickCell.row</code></td>
 </tr>
 <tr>
-<td><code>method</code>.<code>paramName</code></td>
-<td><code>SetState.stateName</code></td>
+<td style="text-align: left;"><code>method`.`paramName</code></td>
+<td style="text-align: left;"><code>SetState.stateName</code></td>
 </tr>
 <tr>
-<td><code>paramName</code></td>
-<td><code>stateName</code></td>
+<td style="text-align: left;"><code>paramName</code></td>
+<td style="text-align: left;"><code>stateName</code></td>
 </tr>
 </tbody>
 </table>
-<p>The dropdown may be defined in the current (next to <code>Main.rvl.xlsx</code>), in parent test and so on up to the framework root (the folder pointed by the <code>%WORKDIR%</code>).</p>
+<p>The dropdown can be defined in the current (next to <code>Main.rvl.xlsx</code>), in the parent test, and so on, up to the framework root (the folder pointed to by <code>%WORKDIR%</code>).</p>
 <p><img alt="States" src="../img/rvl_dropdowns_nesting.png" /></p>
-<p>RVL Editor always tries to find best match for dropdown column starting from nearest <code>Dropdowns.xlsx</code> and climbing up to the framework root.</p>
-<p>Dropdowns may also be mapped to other values. I.e. human-readable menu area names to learned object IDs, state names to state codes, element names to XPath statements and so on. This mapping is done by adjacent columns in <code>Dropdowns.xlsx</code>. The mapping may be one to many, so we may define both state code, state order number, state capital for the same state name by adding corresponding columns.</p>
+<p>The RVL Editor always tries to find the best match for a dropdown column, starting from the nearest <code>Dropdowns.xlsx</code> and climbing up to the framework root.</p>
+<p>Dropdowns can also be mapped to other values, i.e., human-readable menu area names to learned object IDs, state names to state codes, element names to XPath statements, and so on. This mapping is done by adjacent columns in <code>Dropdowns.xlsx</code>. The mapping can be one-to-many, so you can define the state code, state order number, and state capital for the same state name by adding corresponding columns.</p>
 <h2 id="full-line-comments">Full Line Comments<a class="headerlink" href="#full-line-comments" title="Permanent link">&para;</a></h2>
-<p>Anything typed into the <strong>Type</strong> cell of the commented line is expanded to as many cells as needed to show the text. This is similar to the way Excel extends cell text across sibling empty cells:</p>
+<p>Anything typed into the <strong>Type</strong> cell of the commented line is expanded to fill as many cells as needed to display the text. This is similar to the way Excel extends cell text across sibling empty cells:</p>
 <p><img alt="DoLaunch" src="../img/rvl_editor_comment_line.png" /></p>
 <h2 id="context-menu">Context Menu<a class="headerlink" href="#context-menu" title="Permanent link">&para;</a></h2>
 <p><img alt="RVL Context Menu" src="../img/rvl_editor_context_menu.png" width="215" /></p>
 <ul>
-<li><strong>Find '<code>&lt;object&gt;</code>' in Object Tree</strong> - this menu item is only available when you click on the cell from the <strong>Object</strong> column.</li>
-<li><strong>Flash '<code>&lt;object&gt;</code>'</strong> - flash the object.</li>
-<li><strong>Show XPath/Location for '<code>&lt;object&gt;</code>'</strong> - show the location string for the object.</li>
-<li><strong>Rename '<code>&lt;object&gt;</code>'...</strong> - rename object in the object repository and fix all references in the current sheet.</li>
-<li><strong>Play This Sheet</strong> - execute actions from the active sheet.</li>
-<li><strong>Play Selection</strong> - execute selected range of actions only. Useful for tweaking tricky actions and checking the result immediately.</li>
-<li><strong>Play From Here</strong> - start execution at selected line and proceed until the end. Useful to continue script from the point where it stopped.</li>
-<li><strong>Ins Row</strong> - insert new row before the active one.</li>
-<li><strong>Del Row</strong> - delete all selected rows.</li>
-<li><strong>Cut</strong>, <strong>Copy</strong>, <strong>Paste</strong> - standard clipboard operations.</li>
-<li><strong>Clear in Selection</strong> - clears cell values in selected region.</li>
-<li><strong>Select All Rows</strong> - select full sheet.</li>
-<li><strong>Insert Selected Rows Here</strong> - clone rows at the current location.</li>
-<li><strong>Move Selected Rows Here</strong> - move rows to the current location.</li>
-<li><strong>Copy Selection as JavaScript</strong> - translate selected range to the equivalent JavaScript and put its text to the clipboard.</li>
-<li><strong>Copy Selection as Text</strong> - put selected range as tab-separated text to the clipboard.</li>
-<li><strong>Wrap Selection Info If</strong> - enclose selected range into <a href="../../RVL/IfElse/">branch</a>.</li>
-<li><strong>Wrap Selection Into Loop</strong> - enclose selected range into <a href="../../RVL/Loops/">loop</a>.</li>
-<li><strong>Extract Selection as new Sheet</strong> - make new sheet and move selected range into it.</li>
+<li><strong>Find '<code>&lt;object&gt;</code>' in Object Tree</strong> - This menu item is only available when you click on a cell in the <strong>Object</strong> column.</li>
+<li><strong>Flash '<code>&lt;object&gt;</code>'</strong> - Flashes the object.</li>
+<li><strong>Show XPath/Location for '<code>&lt;object&gt;</code>'</strong> - Shows the location string for the object.</li>
+<li><strong>Rename '<code>&lt;object&gt;</code>'...</strong> - Renames the object in the object repository and fixes all references in the current sheet.</li>
+<li><strong>Play This Sheet</strong> - Executes actions from the active sheet.</li>
+<li><strong>Play Selection</strong> - Executes only the selected range of actions. Useful for tweaking tricky actions and checking the result immediately.</li>
+<li><strong>Play From Here</strong> - Starts execution at the selected line and proceeds until the end. Useful to continue a script from the point where it stopped.</li>
+<li><strong>Ins Row</strong> - Inserts a new row before the active one.</li>
+<li><strong>Del Row</strong> - Deletes all selected rows.</li>
+<li><strong>Cut</strong>, <strong>Copy</strong>, <strong>Paste</strong> - Standard clipboard operations.</li>
+<li><strong>Clear in Selection</strong> - Clears cell values in the selected region.</li>
+<li><strong>Select All Rows</strong> - Selects the entire sheet.</li>
+<li><strong>Insert Selected Rows Here</strong> - Clones rows at the current location.</li>
+<li><strong>Move Selected Rows Here</strong> - Moves rows to the current location.</li>
+<li><strong>Copy Selection as JavaScript</strong> - Translates the selected range to the equivalent JavaScript and puts the text to the clipboard.</li>
+<li><strong>Copy Selection as Text</strong> - Puts the selected range as tab-separated text to the clipboard.</li>
+<li><strong>Wrap Selection Into If</strong> - Encloses the selected range into a <a href="../../RVL/IfElse/">branch</a>.</li>
+<li><strong>Wrap Selection Into Loop</strong> - Encloses the selected range into a <a href="../../RVL/Loops/">loop</a>.</li>
+<li><strong>Extract Selection as new Sheet</strong> - Creates a new sheet and moves the selected range into it.</li>
 </ul>
 <h2 id="sheet-tab-context-menu">Sheet Tab Context Menu<a class="headerlink" href="#sheet-tab-context-menu" title="Permanent link">&para;</a></h2>
 <p><img alt="Tab Context Menu" src="../img/rvl_editor_tab_context_menu.png" /></p>
 <ul>
-<li><strong>Play this Sheet</strong> - execute given sheet.</li>
-<li><strong>Rename...</strong> - change sheet tab name.</li>
-<li><strong>Remove Sheet '<code>&lt;sheet name&gt;</code>'</strong> - delete sheet form the workbook.</li>
-<li><strong>Copy RVL DoPlaySheet</strong> - copy call statement for the selected sheet for inserting into the other RVL sheet in the same workbook.</li>
-<li><strong>Copy RVL DoPlaySheet</strong> - copy call statement for the selected sheet for inserting into the other RVL workbook.</li>
-<li><strong>Copy RVL.DoPlayScript(...)</strong> - copy JavaScript code to execute this sheet (call sheet from JavaScript).</li>
+<li><strong>Play this Sheet</strong> - Executes the current sheet.</li>
+<li><strong>Rename...</strong> - Changes the sheet tab name.</li>
+<li><strong>Remove Sheet '<code>&lt;sheet name&gt;</code>'</strong> - Deletes the sheet from the workbook.</li>
+<li><strong>Copy RVL DoPlaySheet</strong> - Copies the call statement for the selected sheet for inserting into another RVL sheet in the same workbook.</li>
+<li><strong>Copy RVL DoPlaySheet</strong> - Copy call statement for the selected sheet for inserting into the other RVL workbook.</li>
+<li><strong>Copy RVL.DoPlayScript(...)</strong> - Copies JavaScript code to execute this sheet (call sheet from JavaScript).</li>
 </ul>
 <h2 id="functions-object">Functions Object<a class="headerlink" href="#functions-object" title="Permanent link">&para;</a></h2>
-<p>Suppose we have some functions defined in the <code>User.js</code> file:</p>
+<p>Suppose you have some functions defined in the <code>User.js</code> file:</p>
 <p><img alt="User functions" src="../img/rvl_editor_functions2.png" /></p>
-<p>Calling JavaScript from RVL is done via the <code>Functions</code> Object. It is not available in the object repository and is only shown in RVL Objects dropdown:</p>
+<p>Calling JavaScript from RVL is performed via the <code>Functions</code> Object. It is not available in the object repository and is only displayed in the RVL Objects dropdown:</p>
 <p><img alt="User functions" src="../img/rvl_editor_functions1.png" /></p>
-<p>Once selected it shows all user defined functions from the <code>User.js</code> file:</p>
+<p>Once selected, it displays all user-defined functions from the <code>User.js</code> file:</p>
 <p><img alt="User functions" src="../img/rvl_editor_functions3.png" /></p>
 <h2 id="file-extensions">File Extensions<a class="headerlink" href="#file-extensions" title="Permanent link">&para;</a></h2>
-<p>RVL has following file extensions:</p>
+<p>RVL has the following file extensions:</p>
 <ul>
 <li><code>rvl.xlsx</code></li>
 <li><code>rvl.xls</code></li>
 </ul>
-<p>RVL is designed to be a simple grid language and it may be edited in any spreadsheet editor supporting <code>.xls</code> or <code>.xlsx</code> files (i.e. Microsoft Excel)</p>
+<p>RVL is designed to be a simple grid language and it can be edited in any spreadsheet editor that supports <code>.xls</code> or <code>.xlsx</code> files (e.g., Microsoft Excel).</p>
 <h2 id="rvl-editor-shortcuts">RVL Editor Shortcuts<a class="headerlink" href="#rvl-editor-shortcuts" title="Permanent link">&para;</a></h2>
 <ul>
-<li><span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> - inserts an empty line after the selected cell.</li>
-<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-d">D</kbd></span> - deletes the line of the selected cell.</li>
-<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-p">P</kbd></span> - reveals optional parameters for an action in the current line, acts as click on <code>Params</code> button on the RVL toolbar.</li>
+<li><span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> - Inserts an empty line after the selected cell.</li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-d">D</kbd></span> - Deletes the line of the selected cell.</li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-p">P</kbd></span> - Reveals optional parameters for an action in the current line, acting like a click on the <code>Params</code> button on the RVL Toolbar.</li>
 </ul>
 <h2 id="rvl-toolbox">RVL Toolbox<a class="headerlink" href="#rvl-toolbox" title="Permanent link">&para;</a></h2>
-<p>Since Rapise 6.7 you may use RVL Toolbox to quickly find RVL snippets, KB articles and documentation links. The toolbox is located on the right side of the RVL editor.</p>
+<p>Since Rapise 6.7, you can use the RVL Toolbox to quickly find RVL snippets, KB articles, and documentation links. The toolbox is located on the right side of the RVL editor.</p>
 <p><img alt="RVL Toolbox" src="../img/rvl_toolbox.png" /></p>
-<p>The toolbox consists of three parts.</p>
+<p>The toolbox consists of three parts:</p>
 <ol>
-<li>Search field. Enter text here to filter the list of items.</li>
-<li>List of items. Select an item to preview. Some of the items can be dragged right into RVL area.</li>
-<li>Preview pane. It has description of selected item. Click links to get more information.</li>
+<li>Search field: Enter text here to filter the list of items.</li>
+<li>List of items: Select an item to preview. Some items can be dragged directly into the RVL area.</li>
+<li>Preview pane: Displays a description of the selected item. Click links to get more information.</li>
 </ol>
 <p><img alt="RVL Toolbox Controls" src="../img/rvl_toolbox_controls.png" /></p>
-<p>If you select an item in the toolbox and see a yellow box with text <code>Drag selected item to insert into RVL</code> you may drag the item to RVL area.</p>
+<p>If you select an item in the toolbox and see a yellow box with text <code>Drag selected item to insert into RVL</code>, you can drag the item to the RVL area.</p>
 <p><img alt="RVL Toolbox DragDrop" src="../img/rvl_toolbox_dragdrop.png" /></p>
-<p>There is also and advanced way of using the toolbox:</p>
+<p>There is also an advanced way of using the toolbox:</p>
 <ol>
-<li>Start typing what you want to do in Actions column (the line must be empty),</li>
-<li>then hit <span class="keys"><kbd class="key-enter">Enter</kbd></span> and choose an item from the list using arrow keys,</li>
-<li>then hit <span class="keys"><kbd class="key-enter">Enter</kbd></span> again to insert the snippet into RVL.</li>
+<li>Start typing what you want to do in the <strong>Actions</strong> column (the line must be empty).</li>
+<li>Then hit <span class="keys"><kbd class="key-enter">Enter</kbd></span> and choose an item from the list using the arrow keys.</li>
+<li>Then hit <span class="keys"><kbd class="key-enter">Enter</kbd></span> again to insert the snippet into the RVL.</li>
 </ol>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rWgcl4eWyJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p>If you want to keep the toolbox hidden then unpin it.</p>
+<p>If you want to keep the toolbox hidden, unpin it.</p>
 <p><img alt="Unpin RVL Toolbox" src="../img/rvl_toolbox_auto_hide.png" /></p>
-<p>Move mouse over the Toolbox label to reveal the list of items.</p>
+<p>Move the mouse over the Toolbox label to reveal the list of items.</p>
 <p><img alt="Reveal RVL Toolbox" src="../img/rvl_toolbox_reveal.png" /></p>
 <h2 id="navigate-to-definition-f12">Navigate to Definition (F12)<a class="headerlink" href="#navigate-to-definition-f12" title="Permanent link">&para;</a></h2>
 <p>To quickly navigate to the location where a specific function or Page Object action is defined, follow these steps:</p>
@@ -11977,22 +11994,22 @@
 <p><img alt="f12 1" src="../img/rvl_editor_f12_1.png" /></p>
 <p><img alt="f12 2" src="../img/rvl_editor_f12_2.png" /></p>
 <h2 id="define-a-map-by-dragdrop">Define a Map by Drag&amp;Drop<a class="headerlink" href="#define-a-map-by-dragdrop" title="Permanent link">&para;</a></h2>
-<p>When you drag and drop a spreadsheet (<code>.xlsx</code>) into RVL, a <a href="../../RVL/Maps/">map</a> is created. This map refers to the data file using an absolute path, starting from the framework root represented by <code>%WORKDIR%</code>.</p>
+<p>When you drag and drop a spreadsheet (<code>.xlsx</code>) into the RVL, a <a href="../../RVL/Maps/">map</a> is created. This map refers to the data file using an absolute path, starting from the framework root (represented by <code>%WORKDIR%</code>).</p>
 <p><img alt="Map, Absolute" src="../img/rvl_editor_drag.png" /></p>
 <p>However, if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while performing the same action, the map is created with a relative path instead. This relative path is based on the current <code>rvl.xlsx</code> file.</p>
 <p><img alt="Map, Relative" src="../img/rvl_editor_shift_drag.png" /></p>
 <h2 id="doplaytest-via-dragdrop">DoPlayTest via Drag&amp;Drop<a class="headerlink" href="#doplaytest-via-dragdrop" title="Permanent link">&para;</a></h2>
-<p>When you drag and drop a test case into RVL, a <code>RVL.DoPlayTest</code> call is created. The call refers to the test case using an absolute path, starting from the framework root represented by <code>%WORKDIR%</code>.</p>
+<p>When you drag and drop a test case into the RVL, a <code>RVL.DoPlayTest</code> call is created. The call refers to the test case using an absolute path, starting from the framework root (represented by <code>%WORKDIR%</code>).</p>
 <p><img alt="TestCase Drag&amp;Drop" src="../img/rvl_editor_testcase_drag.png" /></p>
-<p>However, if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while performing the same action, the map is created with the test alias name (short name) instead:</p>
+<p>However, if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while performing the same action, the call is created with the test alias name (short name) instead:</p>
 <p><img alt="TestCase Shift+Drag&amp;Drop" src="../img/rvl_editor_testcase_shift_drag.png" /></p>
-<p>Short names are useful when all test cases have unique names. Usually it means longer naming, i.e. instead of <code>Invoices/Create</code> test case should be named <code>Invoices/Create new Invoice</code> so it does not collide with <code>Orders/Create</code>.</p>
+<p>Short names are useful when all test cases have unique names. This usually entails longer naming conventions; for example, instead of <code>Invoices/Create</code>, a test case should be named <code>Invoices/Create new Invoice</code> to avoid collisions with other test cases like <code>Orders/Create</code>.</p>
 <h2 id="dragdrop-for-doplaytest">Drag&amp;Drop for DoPlayTest<a class="headerlink" href="#dragdrop-for-doplaytest" title="Permanent link">&para;</a></h2>
-<p>When you drag and drop a <a href="../Frameworks/frameworks/#test-cases">test case</a> into RVL, it generates a <code>RVL.DoPlayTest</code> call. This call references the test case using an absolute path starting from the framework root, represented by <code>%WORKDIR%</code>.</p>
+<p>When you drag and drop a <a href="../Frameworks/frameworks/#test-cases">test case</a> into the RVL, it generates a <code>RVL.DoPlayTest</code> call. This call references the test case using an absolute path starting from the framework root, represented by <code>%WORKDIR%</code>.</p>
 <p><img alt="Drag&amp;Drop TestCase" src="../img/rvl_editor_testcase_drag.png" /></p>
 <p>However, if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while performing the same action, the same call is created with the test alias name (short name) instead:</p>
 <p><img alt="Shift+Drag&amp;Drop TestCase" src="../img/rvl_editor_testcase_shift_drag.png" /></p>
-<p>Short names are particularly useful when each test case has a unique name. In such cases, longer naming conventions can be used to differentiate test cases, for example, using <code>Invoices/Create new Invoice</code> instead of <code>Invoices/Create</code> to avoid collisions with other test cases like <code>Orders/Create</code>.</p>
+<p>Short names are particularly useful when each test case has a unique name. In such cases, longer naming conventions can be used to differentiate test cases; for example, using <code>Invoices/Create new Invoice</code> instead of <code>Invoices/Create</code> to avoid collisions with other test cases like <code>Orders/Create</code>.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../visual_language/">About RVL</a></li>

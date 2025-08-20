@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11186,6 +11198,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11552,7 +11576,7 @@
                 
                 
                 <h1 id="ai">AI<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
-<p>In RVL, the <code>AI</code> action is used to trigger static AI code generation. The format of the AI command without parameters is:</p>
+<p>In RVL, the <code>AI</code> action is used to trigger static AI code generation. The format of the <code>AI</code> command without parameters is:</p>
 <table>
     <tr>
         <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
@@ -11581,7 +11605,7 @@
 </table></p>
 </div>
 </div>
-<p>Or together with parameters:</p>
+<p>Or with parameters:</p>
 <table>
     <tr>
         <th>Flow</th><th>Type</th><th>Object</th><th>Action</th><th>ParamName</th><th>ParamType</th><th>ParamValue</th>
@@ -11619,8 +11643,8 @@
     </tr>
 </table>
 
-<p>i.e. if you want to pass some parameter, you need to mention it in the AI command in curly braces, i.e. <strong>{param1}</strong> and then have a parameter with the same name without curly braces - <strong>param1</strong>.</p>
-<p>AI command parameters represent dynamic values that may vary during the execution. So the generated code stays intact while values may be different.</p>
+<p>For example, if you want to pass a parameter, you must mention it in the <code>AI</code> command text in curly braces (e.g., <strong>{param1}</strong>) and then define a parameter with the same name but without curly braces (<strong>param1</strong>).</p>
+<p><code>AI</code> command parameters represent dynamic values that may vary during execution. This allows the generated code to remain intact while the values may be different.</p>
 <p>Example:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Login with params" src="../img/AI_login_as_librarian_params.png" /></p>
@@ -11656,34 +11680,34 @@
 </div>
 </div>
 <h2 id="editing-and-multiline-commands">Editing and Multiline Commands<a class="headerlink" href="#editing-and-multiline-commands" title="Permanent link">&para;</a></h2>
-<p>If the row type is <code>AI</code> then there should be a non-empty command description. An <code>AI</code> command may be multiline with limited formatting options (bold and italic).</p>
+<p>An <code>AI</code> row must have a non-empty command description. An <code>AI</code> command can be multiline with limited formatting options (bold and italic).</p>
 <p><img alt="Login multiline" src="../img/AI_login_as_librarian_multiline.png" /></p>
-<p>When editing a cell and want to add a new line, you need to press the F2 button. Then hitting ENTER will add a new line.</p>
+<p>To add a new line while editing a cell, press F2. Then, pressing Enter will add a new line.</p>
 <h3 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h3>
-<p>Each AI action will be transformed into a JavaScript code snippet. Given the unpredictable nature of today’s LLMs, all the AI activity is expected to be performed once and reviewed by the test developer. No AI interactions are carried out during runtime to avoid intermittent and unpredictable results. The AI-generated code gets cached and is reused when you play the test.</p>
+<p>Each <code>AI</code> action is transformed into a JavaScript code snippet. Given the unpredictable nature of today’s LLMs, all AI activity is expected to be performed once and reviewed by the test developer. No AI interactions are carried out during runtime to avoid intermittent and unpredictable results. The AI-generated code gets cached and is reused when you play the test.</p>
 <p>All cached information regarding AI interactions is saved in the <code>%WORKDIR%\AI</code> subfolder.</p>
 <p><img alt="AI Subfolder" src="../img/AI_ai_subfolder.png" /></p>
 <h4 id="action-context">Action Context<a class="headerlink" href="#action-context" title="Permanent link">&para;</a></h4>
 <p>Every <code>AI</code> action is performed within a specific context, which can include several elements such as previous actions, variables, repository objects, positive and negative examples, and shared instructions.</p>
 <h3 id="previous-actions">Previous Actions<a class="headerlink" href="#previous-actions" title="Permanent link">&para;</a></h3>
-<p>It is often necessary to reference previous actions to ensure that the current AI-generated command harmonizes well with preceding steps. This helps maintain continuity and coherence in the automated sequence of steps within the test case.</p>
-<p>For example, here the 2<sup>nd</sup> action adds an author named after the logged-in user for testing purposes:</p>
+<p>It is often necessary to reference previous actions to ensure that the current AI-generated command is consistent with preceding steps. This helps maintain continuity and coherence in the automated sequence of steps within the test case.</p>
+<p>For example, in the following image, the second action adds an author with the same name as the logged-in user for testing purposes:</p>
 <p><img alt="Add Librarian as an Author" src="../img/AI_add_author_as_user.png" /></p>
-<p>Note that the <code>AI</code> command in row 3 uses <em>same name</em> and the generated code uses <code>librarian</code> from the previous command. I.e., the command is assumed within the context.</p>
+<p>Note that the <code>AI</code> command in row 3 uses the phrase <em>same name</em>, and the generated code uses <code>librarian</code> from the previous command. This means the command is interpreted within the context of the preceding steps.</p>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
-<p>Variables allow dynamic data to be used in AI command code. For example, <strong>POCommon.DoCreateAuthor</strong> has 2 parameters - <code>authorName</code> and <code>authorAge</code>. The default behavior of AI is to use reasonable values when creating an author, in this case, it is 30:</p>
+<p>Variables allow dynamic data to be used in the AI-generated code. For example, <strong>POCommon.DoCreateAuthor</strong> has two parameters: <code>authorName</code> and <code>authorAge</code>. The default behavior of the AI is to use reasonable values when creating an author. In this case, it uses 30 for the age:</p>
 <p><img alt="Create Author Default" src="../img/AI_create_author_default.png" /></p>
-<p>But if we have a variable for that, it would try to use it when generating code. See how it used the <code>authorAge</code> variable:</p>
+<p>However, if a variable is available, the AI will use it when generating the code. See how it used the <code>authorAge</code> variable:</p>
 <p><img alt="Create Author with Variable" src="../img/AI_create_author_with_var.png" /></p>
 <h3 id="repository-objects">Repository Objects<a class="headerlink" href="#repository-objects" title="Permanent link">&para;</a></h3>
-<p>Repository objects play a critical role in contextualizing AI actions within the testing framework. They serve as references to UI elements, enabling the AI-generated commands to interact appropriately with these elements.</p>
-<p>There are three ways of having repository objects in the test:</p>
+<p>Repository objects play a critical role in contextualizing <code>AI</code> actions within the testing framework. They serve as references to UI elements, enabling the AI-generated commands to interact appropriately with these elements.</p>
+<p>There are two ways to include repository objects in the test:</p>
 <ol>
 <li>Use objects belonging to the test case.</li>
 <li>Explicitly include objects using the <a href="../Repository/">Repository</a> command.</li>
 </ol>
 <h4 id="test-case-repository">Test Case Repository<a class="headerlink" href="#test-case-repository" title="Permanent link">&para;</a></h4>
-<p>In the example below, we have a Calculator application. The calculator UI is a set of buttons and a result display. We learned all objects using the Learn tool:</p>
+<p>In the example below, we have a Calculator application. Its UI consists of a set of buttons and a result display. We have learned all objects using the Learn tool:</p>
 <table>
 <thead>
 <tr>
@@ -11698,65 +11722,65 @@
 </tr>
 </tbody>
 </table>
-<p>Now we want to implement simple calculation examples, such as checking that 12.5 + 2.5 = 15. AI helps us link it all together like this:</p>
+<p>Now, we want to implement a simple calculation, such as checking that 12.5 + 2.5 = 15. The AI can generate the necessary steps as follows:</p>
 <p><img alt="Calc AI full example" src="../img/AI_calc_example.png" /></p>
-<p>Here you may see that it split the input into individual button clicks (12.5 is Click on 1, Click on 2, Click on Decimal Separator, Click on 5).</p>
+<p>Here, you can see that the AI split the input <code>12.5</code> into individual button clicks: <code>Click on 1</code>, <code>Click on 2</code>, <code>Click on Decimal Separator</code>, and <code>Click on 5</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Clear&quot;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">()</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">()</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">()</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Decimal_separator&quot;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">()</span>
 <span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;5&quot;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">()</span>
 </code></pre></div>
-<p>So to summarize, it re-used the test case's own repository to implement user actions.</p>
+<p>In summary, it reused the test case's own repository to implement the user actions.</p>
 <h4 id="using-external-repository">Using External Repository<a class="headerlink" href="#using-external-repository" title="Permanent link">&para;</a></h4>
-<p>The <code>AI</code> command understands external <a href="../Repository/">Repositories</a> just like local repositories. So whatever is defined using the <code>Repository</code> command will be used.</p>
+<p>The <code>AI</code> command recognizes external <a href="../Repository/">Repositories</a> as well as local repositories. Anything defined using the <code>Repository</code> command will be used.</p>
 <p><img alt="Action with External Objects" src="../img/AI_external_repo_o_actions.png" /></p>
-<p>Each object belonging to an external repository will also be wrapped into the <code>O(id)</code> wrapper, which is needed to map from the external repository ID containing the prefix to an actual object:</p>
+<p>Each object from an external repository is wrapped in the <code>O(id)</code> function. This wrapper is needed to map the external repository ID, which contains a prefix, to the actual object:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="nx">O</span><span class="p">(</span><span class="s2">&quot;CalcButtons/Subtract&quot;</span><span class="p">)).</span><span class="nx">DoClick</span><span class="p">();</span>
 </code></pre></div>
 <h3 id="tuning-with-positive-and-negative-examples">Tuning with Positive and Negative Examples<a class="headerlink" href="#tuning-with-positive-and-negative-examples" title="Permanent link">&para;</a></h3>
-<p>Incorporating positive and negative examples can substantially enhance the accuracy and reliability of AI-generated commands. By providing examples of both correct and incorrect outputs, you can guide the AI in generating more precise and relevant code.</p>
-<p>Here is an example. Suppose that we have an <code>AI</code> command that is supposed to validate the output of the calculator. Here are the results of generation:</p>
+<p>Incorporating positive and negative examples can substantially enhance the accuracy and reliability of AI-generated commands. By providing examples of both correct and incorrect outputs, you can guide the AI to generate more precise and relevant code.</p>
+<p>For example, suppose we have an <code>AI</code> command that is supposed to validate the calculator's output. Here is the initial result of the code generation:</p>
 <p><img alt="Check Result" src="../img/AI_generate_check_result.png" /></p>
-<p>It is trying to use a non-existing action <em>DoVerifyText</em>, and thus the snippet code will fail when executed:</p>
+<p>It is trying to use a non-existent action <em>DoVerifyText</em>, and thus the code snippet will fail when executed:</p>
 <p><img alt="DoVerifyText Fail" src="../img/AI_doverifytext_fail.png" /></p>
-<p>One way to proceed is to declare that this code is not good by using the <strong>thumbs down</strong> icon:</p>
+<p>One way to proceed is to mark the code as incorrect by clicking the <strong>thumbs down</strong> icon:</p>
 <p><img alt="Thumbs Down" src="../img/AI_thumbs_down.png" /></p>
-<p>This way, the example is registered in <code>AIExamples.txt</code>, which will be used with each subsequent call to AI as a reference:</p>
+<p>This way, the example is registered in <code>AIExamples.txt</code>, which will be used with each subsequent call to the AI as a reference:</p>
 <p><img alt="Wrong Example" src="../img/AI_example_wrong.png" /></p>
-<p>And subsequent attempts to generate code will use alternative ways for the same:</p>
+<p>Subsequent attempts to generate code will use alternative approaches:</p>
 <p><img alt="Alternative Example" src="../img/AI_example_alternative.png" /></p>
-<p>The code is still wrong, but it is closer to what is needed and may be tweaked.</p>
-<p>You may tweak <code>AIExamples.txt</code> any time later by adding/removing positive and negative examples. You may open it from the <code>Shared/AI</code> node.</p>
+<p>The code is still wrong, but it is closer to what is needed and can be tweaked.</p>
+<p>You can tweak <code>AIExamples.txt</code> at any time by adding or removing positive and negative examples. You can open it from the <code>Shared/AI</code> node.</p>
 <p><img alt="AIExamples.txt location" src="../img/AI_aiexamples_location.png" /></p>
-<p>We may provide a good example to AI by changing the code. For example, the validation above:</p>
+<p>We can provide a good example to the AI by correcting the code. For example, the validation above:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Result&quot;</span><span class="p">).</span><span class="nx">GetText</span><span class="p">(),</span><span class="w"> </span><span class="s2">&quot;15&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>Needs to be tweaked because <code>GetText()</code> returns the name of the object, while the actual result of the calculation is returned from the <code>GetValue()</code> as we can see it from the <strong>Verify Object Properties</strong> dialog:</p>
+<p>This code needs to be tweaked because <code>GetText()</code> returns the name of the object, while the actual result of the calculation is returned by <code>GetValue()</code>. We can see this in the <strong>Verify Object Properties</strong> dialog:</p>
 <p><img alt="Verify Properties" src="../img/AI_result_text.png" /></p>
-<p>Also, we see that the calc result may contain spaces, so the result of 3+2 will actually be "5 ". So we need to trim it for comparison (i.e., use Text.Trim).</p>
-<p>One more correction: <strong>Tester.Assert...</strong> methods always expect the 1<sup>st</sup> parameter to be a message for the assertion. So putting it all together, we may prune the validation manually to be like:</p>
+<p>Also, we can see that the calculator result may contain spaces; for example, the result of 3+2 will actually be <code>"5 "</code>. We need to trim the result for comparison (i.e., by using <code>Text.Trim</code>).</p>
+<p>One more correction is needed: <code>Tester.Assert...</code> methods always expect the first parameter to be an assertion message. Putting it all together, we can manually correct the validation code to be:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">AssertEqual</span><span class="p">(</span><span class="s2">&quot;Check that the result is 15&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Text</span><span class="p">.</span><span class="nx">Trim</span><span class="p">(</span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;Result&quot;</span><span class="p">).</span><span class="nx">GetValue</span><span class="p">()),</span><span class="w"> </span><span class="s2">&quot;15&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>After executing it and making sure it is working, we may mark it as a reference example for other parts of the testing framework by using the <strong>thumbs up</strong>:</p>
+<p>After executing it and making sure it is working, we can mark it as a positive example for other parts of the testing framework by clicking the <strong>thumbs up</strong> icon:</p>
 <p><img alt="Thumbs Up" src="../img/AI_thumbs_up.png" /></p>
-<p>And it gets registered in <code>AIExamples.txt</code> as a positive example:</p>
+<p>It then gets registered in <code>AIExamples.txt</code> as a positive example:</p>
 <p><img alt="Positive Example" src="../img/AI_positive_example.png" /></p>
-<p>Once we have this example, the generation for other cases also changes. I.e.:</p>
+<p>Once this positive example is registered, the code generation for similar cases will also improve. For example:</p>
 <p><img alt="Other Cases" src="../img/AI_other_cases_check.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Rapise looks for AIExamples.txt file in two folders: %WORKDIR%/AI and %WORKDIR%/Shared. If both files exist then information from both of them is used.</p>
+<p>Rapise looks for the <code>AIExamples.txt</code> file in two folders: <code>%WORKDIR%/AI</code> and <code>%WORKDIR%/Shared</code>. If both files exist, information from both is used.</p>
 </div>
 <h3 id="ai-prompt-comments">AI Prompt Comments<a class="headerlink" href="#ai-prompt-comments" title="Permanent link">&para;</a></h3>
-<p>AI prompt comments start with <code>##</code> and are passed directly to the <code>AI</code> command prompt. Such comments help clarify some common details that may assist in interpreting commands.</p>
-<p>For example, this testing framework has page objects <code>POAPI</code> and <code>POCommon</code>. Each has a <code>DoLogin</code> command, i.e., <code>POPAPI.DoLogin</code> and <code>POCommon.DoLogin</code>. So, it is up to AI to choose which one to use when generating code. In this example, it preferred to use API:</p>
+<p>AI prompt comments start with <code>##</code> and are passed directly to the <code>AI</code> command prompt. Such comments help clarify details that may assist the AI in interpreting commands.</p>
+<p>For example, this testing framework has page objects <code>POAPI</code> and <code>POCommon</code>. Each has a <code>DoLogin</code> command: <code>POPAPI.DoLogin</code> and <code>POCommon.DoLogin</code>. It is up to the AI to choose which one to use when generating code. In this example, it preferred to use the API:</p>
 <p><img alt="Login with POAPI" src="../img/AI_login_poapi.png" /></p>
-<p>Now if we want the test case to use the UI, we may need an additional instruction. We start it with <code>##</code> to let Rapise know that it is for <code>AI</code>. We want to tell that all the actions in this RVL should be done using UI, not API, and here is the result:</p>
+<p>If we want the test case to use the UI instead, we can add an instruction for the AI. This instruction must start with <code>##</code> to let Rapise know that it is for the <code>AI</code>. We want to specify that all actions in this RVL should be done using the UI, not the API. Here is the result:</p>
 <p><img alt="Login with POCommon" src="../img/AI_login_pocommon.png" /></p>
 <h3 id="shared-instructions">Shared Instructions<a class="headerlink" href="#shared-instructions" title="Permanent link">&para;</a></h3>
 <p>Shared instructions streamline the AI code generation process by providing general guidelines and frameworks that apply across multiple test cases. These instructions ensure consistency and standardization in the AI-generated code.</p>
-<p>Shared instructions are defined in the file <code>%WORKDIR%/Shared/AIPrompt.txt</code>. Anything from this file gets appended to each AI request.</p>
+<p>Shared instructions are defined in the file <code>%WORKDIR%/Shared/AIPrompt.txt</code>. The contents of this file are appended to each AI request.</p>
 <table>
 <thead>
 <tr>
@@ -11771,42 +11795,42 @@
 </tr>
 </tbody>
 </table>
-<p>For example, when we do a test for Calculator, we always want to press the Clear or C button before doing any subsequent calculation.</p>
+<p>For example, when we test the Calculator, we always want to press the <code>Clear</code> or <code>C</code> button before performing any subsequent calculation.</p>
 <p><img alt="Example Prompt" src="../img/AI_aiprompt_txt.png" /></p>
-<p>Once it is defined, we need to re-generate code. And we may see that each test now begins with the same instruction:</p>
+<p>Once this is defined, we need to regenerate the code. We can then see that each test begins with the same instruction:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="nx">O</span><span class="p">(</span><span class="s2">&quot;CalcButtons/Clear&quot;</span><span class="p">)).</span><span class="nx">DoClick</span><span class="p">()</span>
 </code></pre></div>
-<p>I.e.:
+<p>For example:
 <img alt="Clear" src="../img/AI_clear1.png" /></p>
-<p>In this example, we may see that it is clever enough to do clear only before the calculation starts, and not before we need to check the result:</p>
+<p>In this example, we can see that the AI is clever enough to insert the <code>clear</code> command only before a new calculation starts, not before checking the result:</p>
 <p><img alt="Clear" src="../img/AI_clear2.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Rapise looks for AIPrompt.txt file in two folders: %WORKDIR%/AI and %WORKDIR%/Shared. If both files exist then information from both of them is used.</p>
+<p>Rapise looks for the <code>AIPrompt.txt</code> file in two folders: <code>%WORKDIR%/AI</code> and <code>%WORKDIR%/Shared</code>. If both files exist, information from both is used.</p>
 </div>
 <h3 id="including-prompts-in-prompts">Including Prompts in Prompts<a class="headerlink" href="#including-prompts-in-prompts" title="Permanent link">&para;</a></h3>
 <p>At times, you may want to merge multiple external prompts into the prompts for a specific RVL sheet.</p>
 <p>For example, consider the extra prompt shown below:</p>
 <p><img alt="Extra Prompt" src="../img/AI_extra_prompt_to_include.png" /></p>
-<p>To apply this extra prompt only to certain sheets, you can explicitly include it using the following directive within RVL sheet:</p>
+<p>To apply this extra prompt only to certain sheets, you can explicitly include it using the following directive within the RVL sheet:</p>
 <div class="highlight"><pre><span></span><code>##  #include AI\ReportingPrompt.txt
 </code></pre></div>
-<p>Where path is full path from the root of the framework, that you may get from file properties:</p>
+<p>Where <code>path</code> is the full path from the root of the framework, which you can get from the file properties:</p>
 <p><img alt="Include Extra Prompt" src="../img/AI_include_extra_prompt.png" /></p>
 <p>Similarly, you can embed one prompt file within another. For instance:</p>
 <div class="highlight"><pre><span></span><code>#include AI/SomePrompt.txt
 </code></pre></div>
-<p>For example, we may include a <code>ToolsPrompt.txt</code> like that:</p>
+<p>For example, we can include a <code>ToolsPrompt.txt</code> file like this:</p>
 <p><img alt="Tools Prompt" src="../img/AI_tools_prompt.png" /></p>
 <p>In this scenario, <code>ToolsPrompt.txt</code> itself includes <code>AI\ReportingPrompt.txt</code>, resulting in:</p>
 <p><img alt="Tools Prompt Result" src="../img/AI_tools_prompt_result.png" /></p>
 <p>As seen above, conditions from both prompts are applied when generating the code.</p>
 <h2 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h2>
-<p>Now, with AI, naming of objects, actions, and methods as well as descriptive comments become even more important. The better you express your application and API, the better AI may combine it to implement the test. It all together helps to improve both the quality of test cases and the integrity of the testing framework.</p>
+<p>With the introduction of AI, the naming of objects, actions, and methods, as well as the use of descriptive comments, becomes even more important. The better you express your application and API, the better the AI can combine them to implement the test. All of this together helps to improve both the quality of the test cases and the integrity of the testing framework.</p>
 <h2 id="token-saving">Token Saving<a class="headerlink" href="#token-saving" title="Permanent link">&para;</a></h2>
-<p>When working with AI-generated commands, it is crucial to be mindful of token consumption, as excessive use can lead to costs. Strategies for saving tokens include optimizing prompts, reusing parameterized commands, and minimizing unnecessary elaboration in command descriptions. This ensures that the AI-driven testing process remains efficient and cost-effective.</p>
-<p>In Rapise, the whole approach is intended to save cost while maximizing efficiency. Rapise provides AI with well-defined objects and page objects, and AI uses them to generate the code. The generation is done while the test is created, and no AI access is required during runtime.</p>
-<p>The only exception is if you updated the AI command and didn't re-generate it—then the test will generate and save it to the cache before executing the command. But in most cases, executing the test does not spend any tokens.</p>
+<p>When working with AI-generated commands, it is crucial to be mindful of token consumption, as excessive use can lead to increased costs. Strategies for saving tokens include optimizing prompts, reusing parameterized commands, and minimizing unnecessary elaboration in command descriptions. This ensures that the AI-driven testing process remains efficient and cost-effective.</p>
+<p>In Rapise, the whole approach is intended to save costs while maximizing efficiency. Rapise provides the AI with well-defined objects and page objects, and the AI uses them to generate the code. The generation is done while the test is created, and no AI access is required during runtime.</p>
+<p>The only exception is if you updated an <code>AI</code> command and did not regenerate it—then the test will generate and save it to the cache before executing the command. However, in most cases, executing the test does not consume any tokens.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../Guide/ai_dashboard/#ai-dashboard">AI Dashboard</a></li>

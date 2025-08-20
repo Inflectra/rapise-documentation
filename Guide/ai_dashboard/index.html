@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11288,6 +11300,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11757,9 +11781,9 @@
                 
                 <h1 id="ai-in-rapise">AI in Rapise<a class="headerlink" href="#ai-in-rapise" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>We have integrated AI capabilities directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Moreover, the AI in Rapise is well-versed with Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise and specialized responses. In its initial release, Rapise’s AI features include RVL and JavaScript code generation, as well as data generation functionalities. Rapise 8.2 supports OpenAI and Azure OpenAI models, including multimodal ones that can accept image input. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.</p>
-<p>A key feature of Rapise 8.2 is the <a href="../../RVL/AI/">AI Command</a>, which translates human-readable test step descriptions into executable code using AI. Once the code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command (including objects linked with <a href="../../RVL/Repository/">Repository command</a>).</p>
-<p>When using <a href="../../RVL/AI/">AI Commands</a>, the recommended workflow for test creation is as follows: first, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository, and finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can review and edit. Once all commands are translated into code, the test case is ready for execution.</p>
+<p>AI capabilities have been integrated directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Additionally, the AI in Rapise is well-versed in Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise, specialized responses. In its initial release, Rapise's AI features include RVL and JavaScript code generation, along with data generation capabilities. Rapise 8.2 supports OpenAI and Azure OpenAI models, including multimodal ones that can accept image input. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.</p>
+<p>A key feature of Rapise 8.2 is the <a href="../../RVL/AI/">AI Command</a>, which translates human-readable test step descriptions into executable code using AI. Once code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command (including objects linked with the <a href="../../RVL/Repository/">Repository command</a>).</p>
+<p>When using <a href="../../RVL/AI/">AI Commands</a>, the recommended workflow for test creation is as follows: First, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository; finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can then review and edit. Once all commands are translated into code, the test case is ready for execution.</p>
 <p>Rapise provides two primary interfaces for interacting with AI:</p>
 <ul>
 <li>
@@ -11786,7 +11810,7 @@
 <li><strong>Snapshots</strong>: Starred chats will appear on this page.</li>
 </ul>
 <h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h3>
-<p>In its initial release, Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an <a href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key">OpenAI Api Key</a>. For <a href="https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key">Azure OpenAI</a>, you also need to specify the endpoint URL.</p>
+<p>In its initial release (8.2), Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an <a href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key">OpenAI API Key</a>. For <a href="https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key">Azure OpenAI</a>, you also need to specify the endpoint URL.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Dashboard Settings" src="../img/ai_dashboard_settings.png" width="900px" /></p>
 </div>
@@ -11806,8 +11830,12 @@
 </div>
 </div>
 <p>You can create options that are local to the current testing framework. Simply click the <code>local[create]</code> button. If local options exist, Rapise will prioritize them over global ones. To delete local options, click <code>... &gt; Delete Local</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can press <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-q">Q</kbd></span> in the AI Dashboard to reveal additional and experimental settings.</p>
+</div>
 <h4 id="amazon-bedrock">Amazon Bedrock<a class="headerlink" href="#amazon-bedrock" title="Permanent link">&para;</a></h4>
-<p>Rapise 8.3 adds support for <a href="https://aws.amazon.com/bedrock">Amazon Bedrock</a>. To configure Amazon Bedrock connection specify AWS Region, AWS Access Key and AWS Secret Access Key.</p>
+<p>Rapise 8.3 adds support for <a href="https://aws.amazon.com/bedrock">Amazon Bedrock</a>. To configure an Amazon Bedrock connection, specify the AWS Region, AWS Access Key, and AWS Secret Access Key.</p>
 <p>You will also need to provide a <code>Model ID</code>. Here are a few examples:</p>
 <h5 id="anthropic">Anthropic<a class="headerlink" href="#anthropic" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code>arn:aws:bedrock:us-east-1:ACCOUNT_ID:inference-profile/us.anthropic.claude-3-5-sonnet-20241022-v2:0
@@ -11817,15 +11845,15 @@
 </code></pre></div>
 <p>See also <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">Supported foundation models in Amazon Bedrock</a>.</p>
 <h4 id="azure">Azure<a class="headerlink" href="#azure" title="Permanent link">&para;</a></h4>
-<p>If you have an Azure deployment with OpenAI models, we've got you covered. Just specify the deployment URL, model name and the api key. The deployment URL looks like</p>
+<p>If you have an Azure deployment with OpenAI models, we've got you covered. Just specify the deployment URL, model name, and the API key. The deployment URL looks like</p>
 <div class="highlight"><pre><span></span><code>https://your-deployment-name.openai.azure.com/
 </code></pre></div>
 <h4 id="openai">OpenAI<a class="headerlink" href="#openai" title="Permanent link">&para;</a></h4>
-<p>Dealing directly with OpenAI models is easy. You do not need to provide any URLs, just specify an API key and a model name.</p>
+<p>Dealing directly with OpenAI models is easy. You do not need to provide any URLs; just specify an API key and a model name.</p>
 <h4 id="google">Google<a class="headerlink" href="#google" title="Permanent link">&para;</a></h4>
-<p>Rapise 8.4 adds support for Gemini models. You may find available model IDs in <a href="https://aistudio.google.com">https://aistudio.google.com</a>. We've got decent results with <code>gemini-2.0-flash</code> and <code>gemini-2.0-pro-exp-02-05</code>.</p>
+<p>Rapise 8.4 adds support for Gemini models. You can find available model IDs at <a href="https://aistudio.google.com">https://aistudio.google.com</a>. We've achieved good results with <code>gemini-2.0-flash</code> and <code>gemini-2.0-pro-exp-02-05</code>.</p>
 <h4 id="proxy">Proxy<a class="headerlink" href="#proxy" title="Permanent link">&para;</a></h4>
-<p>If you are behind a proxy, specify it's URL in the <code>Proxy</code> field (works for all providers).</p>
+<p>If you are behind a proxy, specify its URL in the <code>Proxy</code> field (works for all providers).</p>
 <h3 id="chats">Chats<a class="headerlink" href="#chats" title="Permanent link">&para;</a></h3>
 <p>On the Chats page, you can select a previous chat and continue interacting with the AI. You can also start a new chat. When creating a new chat, you’ll be prompted to select a workflow. Supported workflows include:</p>
 <h4 id="ai-chat">AI Chat<a class="headerlink" href="#ai-chat" title="Permanent link">&para;</a></h4>
@@ -11865,7 +11893,7 @@
 <p>Generates a list of data values that can be directly inserted into an RVL sheet from the chat.</p>
 <ol>
 <li>
-<p>Prompt AI to generate a list of values. E.g.: <code>Generate 10 fake company names</code>.</p>
+<p>Prompt the AI to generate a list of values. For example: <code>Generate 10 fake company names</code>.</p>
 <div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Generate List" src="../img/ai_workflow_generate_list.png" width="1123px" /></p>
 </div>
@@ -12046,7 +12074,7 @@ BluePeak Industries
 <p>Generates a table with columns and rows. The result can be directly inserted into an RVL sheet as a Map. The workflow is similar to generating a Data List.</p>
 <ol>
 <li>
-<p>Prompt AI to generate a table of values. E.g.: <code>Generate a table with 10 records and columns: Zip, City, Street Address</code>.</p>
+<p>Prompt the AI to generate a table of values. For example: <code>Generate a table with 10 records and columns: Zip, City, Street Address</code>.</p>
 <div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Generate Table" src="../img/ai_workflow_generate_table.png" width="1102px" /></p>
 </div>
@@ -12699,7 +12727,7 @@ BluePeak Industries
 <p>Generates a sequence of AI Commands based on a text prompt.</p>
 <ol>
 <li>
-<p>Provide a high-level description of the scenario you want to implement. For example: <code>Generate an end-to-end scenario to create and delete a book in a web based Library Information System</code>. A step-by-step scenario will be generated.</p>
+<p>Provide a high-level description of the scenario you want to implement. For example: <code>Generate an end-to-end scenario to create and delete a book in a web-based Library Information System</code>. A step-by-step scenario will be generated.</p>
 <div class="tabbed-set" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Scenario from Text" src="../img/ai_workflow_ai_scenario_from_text.png" width="1102px" /></p>
 </div>
@@ -12964,7 +12992,7 @@ BluePeak Industries
 <p>Generates a sequence of AI Commands from an image and a text prompt.</p>
 <ol>
 <li>
-<p>In the AUT, navigate to the screen/page you want to use.</p>
+<p>In the AUT, navigate to the screen or page you want to use.</p>
 <div class="tabbed-set" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><label for="__tabbed_14_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Scenario from Image - AUT" src="../img/ai_workflow_ai_scenario_from_image_form.png" width="600px" /></p>
 </div>
@@ -13107,18 +13135,18 @@ Logged in as Librarian, <strong>Logout</strong></p>
 </li>
 </ol>
 <h3 id="snapshots">Snapshots<a class="headerlink" href="#snapshots" title="Permanent link">&para;</a></h3>
-<p>On this page, find starred chats. To add a chat to Snapshots, locate it in history, and hover your mouse pointer over its top-right corner to reveal the <code>...</code> icon:</p>
+<p>On this page, you can find starred chats. To add a chat to Snapshots, locate it in history and hover your mouse pointer over its top-right corner to reveal the <code>...</code> icon:</p>
 <p><img alt="Session Menu" src="../img/ai_dashboard_session_menu.png" width="249px" /></p>
-<p>Click the icon to expand the popup menu and select <code>Snapshot</code>.</p>
+<p>Click the icon to expand the pop-up menu and select <code>Snapshot</code>.</p>
 <p><img alt="Make Snapshot" src="../img/ai_dashboard_session_make_snapshot.png" width="246px" /></p>
 <p>If you no longer need a chat on the Snapshots page, you can remove it.</p>
 <p><img alt="Delete Snapshot" src="../img/ai_dashboard_snapshots.png" width="386px" /></p>
 <h2 id="ai-panel">AI Panel<a class="headerlink" href="#ai-panel" title="Permanent link">&para;</a></h2>
-<p>AI panel is used to work with <a href="../../RVL/AI/">AI Commands</a>. </p>
+<p>The AI panel is used to work with <a href="../../RVL/AI/">AI Commands</a>. </p>
 <h3 id="how-to-open_1">How to Open<a class="headerlink" href="#how-to-open_1" title="Permanent link">&para;</a></h3>
 <p>To open the panel, double-click the line number of an AI Command or click the <code>Show AI Panel</code> button that appears when you hover your mouse over the corresponding cell.</p>
 <p><img alt="AI Panel" src="../img/ai_panel_open.png" width="1133px" /></p>
-<p>It’s also possible to work with multiple AI Commands simultaneously. Simply select a range of commands and click <code>Show AI Panel</code>.</p>
+<p>It's also possible to work with multiple AI Commands simultaneously. Simply select a range of commands and click <code>Show AI Panel</code>.</p>
 <p><img alt="AI Panel Multiple Commands" src="../img/ai_panel_multiple_commands.png" width="1135px" /></p>
 <p>There is also a toolbar button that shows all AI Commands on the active RVL sheet.</p>
 <p><img alt="AI Panel Show All Commands" src="../img/ai_panel_open_from_toolbar.png" width="530px" /></p>
@@ -13192,14 +13220,14 @@ Logged in as Librarian, <strong>Logout</strong></p>
 <li><strong>screenshot.base64</strong> - last screenshot taken in <a href="#chats">Chats</a>.</li>
 <li><strong>AIExamples.txt</strong> - the list of liked/disliked <a href="../../RVL/AI/#tuning-with-positive-and-negative-examples">examples</a> of generated code.</li>
 <li><strong>AIPrompt.txt</strong> - <a href="../../RVL/AI/#shared-instructions">text to add to each AI prompt</a> for AI Command processing.</li>
-<li><strong>ai.commands.json</strong> - Since Rapise 8.3 command cache is split per Test Case/Page Object folders. For each RVL file that contains AI commands an <code>ai.commands.json</code> is created in the same folder as the RVL file.</li>
+<li><strong>ai.commands.json</strong> - Since Rapise 8.3 command cache is split per Test Case/Page Object folders. For each RVL file that contains AI commands, an <code>ai.commands.json</code> is created in the same folder as the RVL file.</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <h3 id="source-control">Source Control<a class="headerlink" href="#source-control" title="Permanent link">&para;</a></h3>
-<p>When you put a framework under source control it is important to add </p>
+<p>When you put a framework under source control, it is important to add:</p>
 <ul>
 <li><code>options.json</code></li>
 <li><code>AIExamples.txt</code></li>
@@ -13207,13 +13235,13 @@ Logged in as Librarian, <strong>Logout</strong></p>
 <li><code>commands</code> folder with all the files in it. <strong>[Deprecated]</strong></li>
 <li><code>ai.commands.json</code> files  </li>
 </ul>
-<p>The following folders are optional (this is just an archive of AI chats)</p>
+<p>The following folders are optional (this is just an archive of AI chats):</p>
 <ul>
 <li><code>messages</code></li>
 <li><code>sessions</code></li>
 </ul>
 <h3 id="rapise-83-ai-command-cache-changes">Rapise 8.3 AI Command Cache Changes<a class="headerlink" href="#rapise-83-ai-command-cache-changes" title="Permanent link">&para;</a></h3>
-<p>If you have AI tests created with Rapise 8.2, all code generated for AI commands will be still successfully loaded from <code>AI\commands</code> folder. If you will regenerate code for a command or generate code for a new command, it will be placed into corresponding <code>ai.commands.json</code> file located in the same folder as the RVL file.</p>
+<p>If you have AI tests created with Rapise 8.2, all code generated for AI commands will still be successfully loaded from the <code>AI\commands</code> folder. If you regenerate code for a command or generate code for a new command, it will be placed into the corresponding <code>ai.commands.json</code> file located in the same folder as the RVL file.</p>
                 
               
               

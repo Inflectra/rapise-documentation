@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11162,6 +11174,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11501,25 +11525,25 @@
                 
                 <h1 id="web-testing-using-xpath-queries">Web Testing - Using XPath Queries<a class="headerlink" href="#web-testing-using-xpath-queries" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>When testing web applications you will explicitly or implicitly use <strong>XPath</strong> expressions to query the browser <strong>DOM</strong> for elements based on the scenario under test. This section explains how XPath queries are used in Rapise and how to make your browser testing more flexible and adaptive to changes in the application you test.</p>
+<p>When testing web applications, you will explicitly or implicitly use <strong>XPath</strong> expressions to query the browser's <strong>DOM</strong> for elements based on the scenario under test. This section explains how XPath queries are used in Rapise and how to make your browser testing more flexible and adaptive to changes in the application under test.</p>
 <h2 id="xpath-fundamentals">XPath Fundamentals<a class="headerlink" href="#xpath-fundamentals" title="Permanent link">&para;</a></h2>
-<p>XPath uses path expressions to select nodes in an <strong>XML</strong> document such as <strong>HTML</strong>. The node is selected by following a path or steps.</p>
-<p>Refer to <a href="https://www.w3schools.com/xml/xpath_intro.asp">XPATH Tutorial</a> for more details.</p>
+<p>XPath uses path expressions to select nodes in an <strong>XML</strong> document such as <strong>HTML</strong>. A node is selected by following a path or steps.</p>
+<p>Refer to <a href="https://www.w3schools.com/xml/xpath_intro.asp">XPath Tutorial</a> for more details.</p>
 <h2 id="rapise-xpath-extensions">Rapise XPath Extensions<a class="headerlink" href="#rapise-xpath-extensions" title="Permanent link">&para;</a></h2>
 <h3 id="frames">Frames<a class="headerlink" href="#frames" title="Permanent link">&para;</a></h3>
-<p>Web pages sometimes use <strong>HTML</strong> frames. The XPath works inside the frame contents. Rapise has a special syntax (that is not part of standard XPath) to combine multiple XPath statements into a single line:</p>
+<p>Web pages sometimes use <strong>HTML</strong> frames. XPath works on the content within a frame. Rapise has a special syntax (that is not part of standard XPath) to combine multiple locators into a single line:</p>
 <div class="highlight"><pre><span></span><code><span class="o">//</span><span class="nt">frame</span><span class="o">[</span><span class="p">@</span><span class="k">name</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="o">]@@@//</span><span class="nt">a</span><span class="o">[</span><span class="nt">3</span><span class="o">]</span>
 </code></pre></div>
-<p>The special statement <code>@@@</code> is used as a separator for XPath statements pointing to constituent frames.</p>
-<p>The top-level frame is found by name <code>main</code></p>
+<p>The special <code>@@@</code> string is used as a separator to combine locators for frames and the elements within them.</p>
+<p>The top-level frame is found by its name, <code>main</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="o">//</span><span class="nt">frame</span><span class="o">[</span><span class="p">@</span><span class="k">name</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="o">]</span>
 </code></pre></div>
-<p>Then the frame's contents is searched for the <code>&lt;a&gt;</code> element that is a 3d child of it's parent element.</p>
+<p>Then, the frame's content is searched for the <code>&lt;a&gt;</code> element that is the 3<sup>rd</sup> child of its parent element.</p>
 <div class="highlight"><pre><span></span><code><span class="o">//</span><span class="nt">a</span><span class="o">[</span><span class="nt">3</span><span class="o">]</span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Segments of a locator separated by <code>@@@</code> can be both <a href="./#frames">xpath</a> and <a href="../css/#frames">css</a>. For example the following locators are equivalent:</p>
+<p>Segments of a locator separated by <code>@@@</code> can be either XPath or CSS. For example, the following locators are equivalent:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -11530,7 +11554,7 @@
 </code></pre></div></td></tr></table></div>
 </div>
 <h3 id="shadow-dom">Shadow DOM<a class="headerlink" href="#shadow-dom" title="Permanent link">&para;</a></h3>
-<p>Another XPath extension is related to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM">Shadow DOM</a>. It's borders are typically closed for XPath. In such a case a locator for an element inside Shadow DOM has two parts separated by <code>@#@</code> delimiter. First part (can be XPATH or CSS) should point to the Shadow Root in the Light DOM. Second part (always CSS) should point to a child element of the Shadow Root. In the case of nested Shadow DOMs there will be multiple <code>@#@</code> delimiters.</p>
+<p>Another XPath extension is related to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM">Shadow DOM</a>. Its borders are typically closed to XPath. In such cases, a locator for an element inside a Shadow DOM has two parts separated by the <code>@#@</code> delimiter. The first part (which can be XPath or CSS) must point to the Shadow Root in the Light DOM. The second part (which is always CSS) must point to a child element of the Shadow Root. In the case of nested Shadow DOMs, there will be multiple <code>@#@</code> delimiters.</p>
 <p>Example of a locator:</p>
 <p><em>automatically built by WebSpy</em>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="nt">html</span><span class="o">/</span><span class="nt">body</span><span class="o">[</span><span class="nt">1</span><span class="o">]/</span><span class="nt">section</span><span class="o">[</span><span class="nt">1</span><span class="o">]/</span><span class="nt">div</span><span class="o">/</span><span class="nt">guid-generator</span><span class="o">[</span><span class="nt">1</span><span class="o">]@</span><span class="err">#</span><span class="p">@</span><span class="k">css</span><span class="o">=</span><span class="nt">input</span><span class="p">:</span><span class="nd">first-of-type</span>
@@ -11538,10 +11562,10 @@
 <em>after manual editing</em>
 <div class="highlight"><pre><span></span><code><span class="o">//</span><span class="nt">guid-generator</span><span class="o">@</span><span class="err">#</span><span class="p">@</span><span class="k">css</span><span class="o">=</span><span class="nt">input</span>
 </code></pre></div></p>
-<p>Find the example of a simple page with Shadow DOM on <a href="http://uitestingplayground.com/shadowdom">UI Testing Playground</a>.</p>
+<p>Find an example of a simple page with a Shadow DOM on <a href="http://uitestingplayground.com/shadowdom">UI Testing Playground</a>.</p>
 <h4 id="piercing-shadow-dom">Piercing Shadow DOM<a class="headerlink" href="#piercing-shadow-dom" title="Permanent link">&para;</a></h4>
-<p>Rapise 8.2+ is able to pierce Shadow DOM. It means that if a CSS selector does not use <code>@#@</code> delimiter described above then Rapise will search for an element without taking into account Shadow DOM borders.</p>
-<p>For example on this page:</p>
+<p>Rapise 8.2+ can pierce the Shadow DOM. This means that if a CSS selector does not use the <code>@#@</code> delimiter described above, Rapise will search for an element without regard to Shadow DOM boundaries.</p>
+<p>For example, on this page:</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">guid-generator</span><span class="p">&gt;</span>
@@ -11553,7 +11577,7 @@
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>we may find <code>&lt;input&gt;</code> element with</p>
+<p>we can find the <code>&lt;input&gt;</code> element with:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">css</span><span class="o">=</span><span class="nt">input</span>
 <span class="nt">css</span><span class="o">=</span><span class="nt">input</span><span class="o">[</span><span class="nt">id</span><span class="o">=</span><span class="s1">&#39;editField&#39;</span><span class="o">]</span>
 <span class="nt">css</span><span class="o">=</span><span class="nt">guid-generator</span><span class="w"> </span><span class="nt">input</span>
@@ -11561,36 +11585,36 @@
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Shadow DOM piercing feature may break existing tests as locators recorded earlier may start to find more elements. In this case make locators more specific.</p>
+<p>The Shadow DOM piercing feature may break existing tests, as previously recorded locators may start to find additional elements. In this case, make your locators more specific.</p>
 </div>
 <h2 id="automatic-xpath-generation-on-record-and-learn">Automatic XPath Generation on Record and Learn<a class="headerlink" href="#automatic-xpath-generation-on-record-and-learn" title="Permanent link">&para;</a></h2>
-<p>When you do a <a href="../recording/">recording</a> session, interact with web elements or <a href="../object_learning/">learn</a> them - Rapise generates XPath <a href="https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx">locators</a> for the elements. You can view XPath of an object in the property grid:</p>
+<p>When you start a <a href="../recording/">recording</a> session, interact with web elements, or <a href="../object_learning/">learn</a> them, Rapise generates XPath <a href="https://www.inflectra.com/Support/KnowledgeBase/KB289.aspx">locators</a> for them. You can view the XPath of an object in the property grid:</p>
 <p><img alt="xpath locator" src="../img/xpath_locator.png" width="412px" /></p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="in-web-spy">In Web Spy<a class="headerlink" href="#in-web-spy" title="Permanent link">&para;</a></h3>
-<p>In some advanced cases you may need to construct XPath query manually. For this purpose we recommend using the <a href="../web_spy/">Web Spy</a> tool:</p>
+<p>In some advanced cases, you may need to construct an XPath query manually. For this purpose, we recommend using the <a href="../web_spy/">Web Spy</a> tool:</p>
 <p><img alt="xpath edit" src="../img/xpath1.png" width="622px" /></p>
-<p>If you enter in the XPath query at the top, when you click <strong>Test</strong> it will display all of the DOM elements that match the query:</p>
+<p>If you enter an XPath query at the top and click <strong>Test</strong>, Rapise will display all the DOM elements that match the query:</p>
 <p><img alt="xpath results" src="../img/xpath2.png" width="434px" /></p>
-<p>You can now refine the query to only find the item you want to test.</p>
-<p>When you have created the query in the Web Spy that returns the HTML element that you were expecting, you can click on the <strong>Learn</strong> button in the Web Spy toolbar to learn that element. What this will do is create a new Rapise object in the <a href="../object_tree/">Object Tree</a> that maps to this specific XPath.</p>
-<p>For example, if you want to find a specific book in a grid of books</p>
+<p>You can now refine the query to find only the item you want to test.</p>
+<p>When you have created a query in Web Spy that returns the expected HTML element, you can click the <strong>Learn</strong> button in the Web Spy toolbar to learn that element. This creates a new Rapise object in the <a href="../object_tree/">Object Tree</a> that maps to this specific XPath.</p>
+<p>For example, to find a specific book in a grid of books:</p>
 <p><img alt="book table" src="../img/xpath_book_table.png" width="718px" /></p>
-<p>you can search by its name using <code>text()</code> XPath function:</p>
+<p>you can search by its name using the <code>text()</code> XPath function:</p>
 <div class="highlight"><pre><span></span><code>//td[text()=&#39;Oliver Twist&#39;]
 </code></pre></div>
-<p>Then learn this object as <strong>Oliver_Twist</strong> so that you can access it in your code as <code>SeS("Oliver_Twist")</code>. Every time you call a function on <strong>Oliver_Twist</strong>, Rapise will use the learned XPath expression and use that to evaluate which HTML element in the web page to access.</p>
+<p>Then, learn this object as <strong>Oliver_Twist</strong> so that you can access it in your code as <code>SeS("Oliver_Twist")</code>. Every time you call a function on <strong>Oliver_Twist</strong>, Rapise uses the learned XPath expression to find the corresponding HTML element on the web page.</p>
 <h3 id="dynamic-queries">Dynamic Queries<a class="headerlink" href="#dynamic-queries" title="Permanent link">&para;</a></h3>
-<p>In addition to learning objects based on specific XPath, there is <a href="/Libraries/HTMLObject/#DoDOMQueryXPath">HTMLObject.DoDOMQueryXPath</a> action that can be used to query for elements in the web page:</p>
+<p>In addition to learning objects based on a specific XPath, you can use the <a href="../../Libraries/HTMLObject/#DoDOMQueryXPath">HTMLObject.DoDOMQueryXPath</a> action to query for elements on the web page:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;MainContent_grdBooks&#39;</span><span class="p">).</span><span class="nx">DoDOMQueryXPath</span><span class="p">(</span><span class="s1">&#39;.//td[text()=&quot;Oliver Twist&quot;]&#39;</span><span class="p">);</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 </code></pre></div>
-<p>This will dynamically query for any HTML element that is a child of the learned <strong>MainContent_grdBooks</strong> object that matches the XPath. In this example it will look for any table cell that has the content of the book name.</p>
-<p>You can also find an object dynamically without having any object in the object tree. To do this use <a href="../../Libraries/Navigator/#sesfind">Navigator.SeSFind</a> action.</p>
+<p>This action dynamically queries for any HTML element that is a child of the learned <strong>MainContent_grdBooks</strong> object and matches the specified XPath. In this example, it looks for any table cell containing the book's name.</p>
+<p>You can also find an object dynamically without having an object in the Object Tree. To do this, use the <a href="../../Libraries/Navigator/#sesfind">Navigator.SeSFind</a> action.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB282.aspx">KB282</a> Elastic XPATH Expressions</li>
-<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB363.aspx">KB363</a> How to define a profile for Web Application in Rapise</li>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB282.aspx">KB282</a>: Elastic XPath Expressions</li>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB363.aspx">KB363</a>: How to Define a Profile for a Web Application in Rapise</li>
 </ul>
                 
               

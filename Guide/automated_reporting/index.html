@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11163,6 +11175,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11503,29 +11527,29 @@
                 
                 <h1 id="automated-reporting">Automated Reporting<a class="headerlink" href="#automated-reporting" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Each time you playback a test, Rapise <strong>automatically generates a report</strong> detailing the steps of the test, the data values used, and the outcome of each step.</p>
+<p>Each time you play back a test, Rapise <strong>automatically generates a report</strong> detailing the test steps, the data values used, and the outcome of each step.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Execute your test using the instructions <a href="../playback/">here</a>.  When the test is complete a report file (ending in <strong>.trp</strong>) will open in the <a href="../content_view/">Content View</a>.  It will look like this:</p>
+<p>Execute your test using the instructions <a href="../playback/">here</a>. When the test is complete, a report file (ending in <strong>.trp</strong>) will open in the <a href="../content_view/">Content View</a>. It will look like this:</p>
 <p><img alt="report.zoom70" src="../img/automated_reporting1.png" /></p>
-<p>The first row (with a white background) is used for <a href="../report_filtering/">Report Filtering</a>.  The rows below that each represent a step in the test.  The rows with green text represent success; the rows with red text represent failure. You can reposition the columns by dragging and dropping the column names.</p>
+<p>The first row (with a white background) is used for <a href="../report_filtering/">Report Filtering</a>. The rows below that each represent a test step. The rows with green text represent success; the rows with red text represent failure. You can reposition the columns by dragging and dropping the column names.</p>
 <h2 id="the-columns">The Columns<a class="headerlink" href="#the-columns" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>#</strong>: For displaying icons.</li>
+<li><strong>#</strong>: Displays icons.</li>
 <li><strong>Name</strong>: The test name.</li>
 <li><strong>Start</strong>: The time the test step began executing.</li>
-<li><strong>Type</strong>: Can be one of the following values: Test; Assert; Message.</li>
-<li><strong>Comment</strong>: Assertions and messages have associated comments. They are displayed here.</li>
-<li><strong>Status</strong>: Whether the step passed, failed, or was merely informational.</li>
+<li><strong>Type</strong>: Can be one of the following values: Test, Assert, or Message.</li>
+<li><strong>Comment</strong>: Assertions and messages have associated comments, which are displayed here.</li>
+<li><strong>Status</strong>: Indicates whether the step passed, failed, or was merely informational.</li>
 </ul>
-<p>See also <a href="../assertions/">assertions</a> for more information about possible type of report comparisons.</p>
+<p>See also <a href="../assertions/">assertions</a> for more information about possible types of report comparisons.</p>
 <h2 id="spira-column-mapping">Spira Column Mapping<a class="headerlink" href="#spira-column-mapping" title="Permanent link">&para;</a></h2>
-<p>Whenever the test is executed using the <a href="../spiratest_integration/#using-rapiselauncher">RapiseLauncher</a> its results are uploaded to the <a href="../spiratest_integration/">SpiraTest</a>. The set of columns displayed by the <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/#test-run-steps">Test Run Details</a> view differs from Rapise Report Viewer, so the following mapping occurs:</p>
+<p>Whenever a test is executed using the <a href="../spiratest_integration/#using-rapiselauncher">RapiseLauncher</a>, its results are uploaded to <a href="../spiratest_integration/">SpiraTest</a>. The set of columns displayed by the <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/#test-run-steps">Test Run Details</a> view differs from the Rapise Report Viewer, so the following mapping is applied:</p>
 <p><img alt="Spira Column Mapping" src="../img/automated_reporting_spiracolumnmapping.png" /></p>
-<p>There is always a source <code>.trp</code> file attached to the test run, you may find it to in the test run <strong>Attachments</strong> tab:</p>
+<p>There is always a source <code>.trp</code> file attached to the test run; you may also find it in the test run's <strong>Attachments</strong> tab:</p>
 <p><img alt="TestRun Attachments" src="../img/automated_reporting_spiratrattachments.png" /></p>
-<p>So you may download it and open using Rapise to see the full featured automated test report.</p>
+<p>So you may download it and open it using Rapise to see the full-featured automated test report.</p>
 <h3 id="custom-spira-column-mapping">Custom Spira Column Mapping<a class="headerlink" href="#custom-spira-column-mapping" title="Permanent link">&para;</a></h3>
-<p>You may have more fine grained control over SpiraTest column display by applying <code>tags</code> parameter to the <a href="../../Libraries/Tester/#assert">Tester.Assert</a> function.</p>
+<p>You may have more fine-grained control over SpiraTest column display by applying the <code>tags</code> parameter to the <a href="../../Libraries/Tester/#assert">Tester.Assert</a> function.</p>
 <p><div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span>
 <span class="w">        </span><span class="s2">&quot;Assertion Message&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="kc">true</span><span class="p">,</span>
@@ -11533,64 +11557,64 @@
 <span class="w">        </span><span class="p">{</span><span class="s2">&quot;expectedResult&quot;</span><span class="o">:</span><span class="s2">&quot;expected&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;sampleData&quot;</span><span class="o">:</span><span class="s2">&quot;sampleData&quot;</span><span class="p">}</span>
 <span class="w">    </span><span class="p">);</span>
 </code></pre></div>
-In this case <a href="../report_viewer/">ReportViewer</a> shows two additional columns - <strong>ExpectedResult</strong> and <strong>SampleData</strong> and uses them to fill corresponding columns in the Spira test report.</p>
+In this case, the <a href="../report_viewer/">ReportViewer</a> shows two additional columns—<strong>ExpectedResult</strong> and <strong>SampleData</strong>—and uses them to fill corresponding columns in the Spira test report.</p>
 <blockquote>
-<p>Note: Assertion message, ActualResult or SampleData may contain a reference to the Manual Test Step in format <code>[TS:X]</code>, where <code>X</code> is the number representing the Test Step ID. This is useful when you migrating manual test cases to automated scripts and want to keep the trace to manual test steps in the report.</p>
+<p>Note: Assertion message, ActualResult, or SampleData may contain a reference to the Manual Test Step in the format <code>[TS:X]</code>, where <code>X</code> is the number representing the Test Step ID. This is useful when you are migrating manual test cases to automated scripts and want to maintain traceability to manual test steps in the report.</p>
 </blockquote>
 <h2 id="report-formats">Report Formats<a class="headerlink" href="#report-formats" title="Permanent link">&para;</a></h2>
-<p>Whenever one runs a test, the report will be stored in the following formats:</p>
+<p>When a test is run, the report will be stored in the following formats:</p>
 <ol>
-<li><code>.trp</code> - default Rapise test report format. Contains all information, status and images. Rapise displays it using built in <a href="../report_viewer/">Report Viewer</a>.</li>
-<li><code>.tap</code> - pure text, <strong>Test Anything Protocol</strong> <a href="https://testanything.org/">formatted</a> output. Usually saved as <code>last.tap</code>. It is a simplest way for integrating the test into external/custom execution pipelines.</li>
-<li><code>index.html</code> and <code>imageNNN.png</code> - flow output. It is saved into <code>&lt;test folder&gt;\Reports\&lt;Date_Time&gt;\</code> folder:
+<li><code>.trp</code> - The default Rapise test report format. Contains all information, status, and images. Rapise displays it using its built-in <a href="../report_viewer/">Report Viewer</a>.</li>
+<li><code>.tap</code> - Pure text, <strong>Test Anything Protocol</strong>-formatted output. Usually saved as <code>last.tap</code>. It is the simplest way for integrating tests into external or custom execution pipelines.</li>
+<li><code>index.html</code> and <code>imageNNN.png</code> - Flow output. It is saved in the <code>&lt;test folder&gt;\Reports\&lt;Date_Time&gt;\</code> folder:
      <img alt="Flow Index" src="../img/automated_reporting_flowindexhtml.png" /></li>
 </ol>
 <h2 id="export-report">Export Report<a class="headerlink" href="#export-report" title="Permanent link">&para;</a></h2>
-<p>Report may be exported as <code>.xls</code>, <code>.pdf</code>, <code>.xps</code> or <code>.html</code> using the <a href="../menu_and_toolbars/#report">Report</a> popup menu.</p>
+<p>Reports can be exported as <code>.xls</code>, <code>.pdf</code>, <code>.xps</code>, or <code>.html</code> using the <a href="../menu_and_toolbars/#report">Report</a> pop-up menu.</p>
 <h3 id="export-as-html-dialog">Export as HTML Dialog<a class="headerlink" href="#export-as-html-dialog" title="Permanent link">&para;</a></h3>
-<p><strong>HTML</strong> export supports a number of templates. So if you do <code>Report/Export as HTML</code> you then have to specify the export format using the following dialog:</p>
+<p><strong>HTML</strong> export supports a number of templates. Therefore, if you select <code>Report/Export as HTML</code>, you will then need to specify the export format using the following dialog:</p>
 <p><img alt="Export To Html Dialog" src="../img/automated_reporting_exporthtml.png" /></p>
-<p><strong>Report File</strong> - source <code>.trp</code> to be used for export.</p>
-<p><strong>Report Type</strong> - choose one of the following export templates:</p>
+<p><strong>Report File</strong> – The source <code>.trp</code> file to be used for export.</p>
+<p><strong>Report Type</strong> – Choose one of the following export templates:</p>
 <ul>
-<li>Full Execution Report (images embedded into html) - full report, combined in a single file.</li>
-<li>Full Execution Report (images saved as separate files) - same as previous, but all images are saved next to the main <code>.html</code> file.</li>
-<li>High level report (only test status) - short report containing only test-level status.</li>
+<li>Full Execution Report (images embedded in HTML) - A full report, combined into a single file.</li>
+<li>Full Execution Report (images saved as separate files) - The same as the previous option, but all images are saved alongside the main <code>.html</code> file.</li>
+<li>High-level report (only test status) - A short report containing only test-level status.</li>
 </ul>
-<p><strong>Destination HTML</strong> - path to the target <code>.html</code> file.</p>
+<p><strong>Destination HTML</strong> – The path to the target <code>.html</code> file.</p>
 <h3 id="exporting-report-with-javascript">Exporting Report With JavaScript<a class="headerlink" href="#exporting-report-with-javascript" title="Permanent link">&para;</a></h3>
-<p>This type of export may also be done from <strong>JavaScript</strong> code.</p>
+<p>This type of export can also be performed from <strong>JavaScript</strong> code.</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">ldr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Rapise.LogLoader&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">ldr</span><span class="p">.</span><span class="nx">LoadTrp</span><span class="p">(</span><span class="s2">&quot;Reports\\ReportAssertions_2020-11-04_15-20.trp&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">ldr</span><span class="p">.</span><span class="nx">ExportAsHtml</span><span class="p">(</span><span class="s2">&quot;C:\\Program Files (x86)\\Inflectra\\Rapise\\Extensions\\TrpExporter\\FullReportImgTpl.tt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;FullReport.html&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>If you want to perform post-processing of the report for a specific test case, you can combine the code with the <a href="../understanding_the_script/#sesontestreportready">SeSOnTestReportReady</a> event. This event allows you to execute custom code when the test report is ready for a given test case.</p>
+<p>If you want to perform post-processing of the report for a specific test case, you can combine this code with the <a href="../understanding_the_script/#sesontestreportready">SeSOnTestReportReady</a> event. This event allows you to execute custom code when the test report for a given test case is ready.</p>
 <h2 id="column-grouping">Column Grouping<a class="headerlink" href="#column-grouping" title="Permanent link">&para;</a></h2>
-<p>Report viewer enables grouping rows by column values. Just drag the column header to this section:</p>
+<p>The Report Viewer enables grouping rows by column values. Just drag the column header to this section:</p>
 <p><img alt="report, drag a column here" src="../img/automated_reporting2.png" /></p>
-<p>Use to order by the values in the chosen column.  The result of dragging the <strong>Status</strong> column over looks like this:</p>
+<p>This section allows you to group and order rows by the values in the chosen column. The result of dragging the <strong>Status</strong> column over looks like this:</p>
 <p><img alt="report, status dragged.zoom70" src="../img/automated_reporting3.png" /></p>
 <p>You can expand each item to see the corresponding report rows:</p>
 <p><img alt="report, status dragged, expanded.zoom70" src="../img/automated_reporting4.png" /></p>
-<p>Drag the <strong>Status</strong> icon back to undo the sort:</p>
+<p>Drag the <strong>Status</strong> icon back to undo the grouping:</p>
 <p><img alt="report, status dragged back.zoom70" src="../img/automated_reporting5.png" /></p>
 <h2 id="todo-rows">TODO Rows<a class="headerlink" href="#todo-rows" title="Permanent link">&para;</a></h2>
-<p>Whenever <strong>Name</strong> starts with <code>TODO</code> the viewer automatically does the following:</p>
+<p>Whenever a <strong>Name</strong> column value starts with <code>TODO</code>, the viewer automatically performs the following actions:</p>
 <ul>
 <li>
-<p>If report row <strong>Type</strong> is <strong>Info</strong> then it is highlighted in Yellow and TODO counter is incremented:</p>
+<p>If a report row's <strong>Type</strong> is <strong>Info</strong>, it is highlighted in yellow, and the TODO counter is incremented:</p>
 <p><img alt="TODO" src="../img/automated_reporting_todo.png" /></p>
 </li>
 <li>
-<p>If report row <strong>Type</strong> is <strong>Assert</strong> then it stays green or red, but TODO counter is still incremented.</p>
+<p>If a report row's <strong>Type</strong> is <strong>Assert</strong>, it remains green or red, but the TODO counter is still incremented.</p>
 </li>
 </ul>
-<p>If you hover over last execution status in Rapise main window, the tooltip would contain then total number of TODO items found in the report (i.e. TODO counter):</p>
+<p>If you hover over the last execution status in the Rapise main window, the tooltip will then contain the total number of TODO items found in the report (i.e., the TODO counter):</p>
 <p><img alt="TODO Counter" src="../img/automated_reporting_todo_counter.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../report_filtering/">Report Filtering</a></li>
-<li>The report output file is specified in the <a href="../settings_dialog/">Settings Dialog</a> (<strong>Settings</strong> &gt; <strong>ReportPath</strong>).</li>
+<li>The report output file is specified in the <a href="../settings_dialog/">Settings Dialog</a> under <strong>Settings</strong> &gt; <strong>ReportPath</strong>.</li>
 </ul>
                 
               

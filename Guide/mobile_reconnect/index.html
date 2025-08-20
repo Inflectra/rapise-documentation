@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11109,6 +11121,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11394,64 +11418,64 @@
                 
                 
                 <h1 id="reconnect-mobile-session">Reconnect Mobile Session<a class="headerlink" href="#reconnect-mobile-session" title="Permanent link">&para;</a></h1>
-<p>Since <strong>version 6.2</strong> Rapise is able to reconnect mobile sessions. It makes possible many usage scenarios that save a lot of time because you do not need to relaunch the application and perform manual steps to reach desired application state.</p>
+<p>Since <strong>version 6.2</strong>, Rapise supports reconnecting mobile sessions. This enables many time-saving usage scenarios, as it eliminates the need to relaunch the application and manually perform steps to reach a desired application state.</p>
 <h2 id="maintenance-scenario">Maintenance Scenario<a class="headerlink" href="#maintenance-scenario" title="Permanent link">&para;</a></h2>
 <ol>
-<li>You run a test and it fails at some point because some object is not found on screen.</li>
+<li>You run a test, and it fails at some point because an object is not found on screen.</li>
 <li>You use the <a href="../object_spy_mobile/">Mobile Spy</a> to reconnect to the application and analyze the cause of the failure.</li>
 <li>You use the Mobile Spy to re-learn the object.</li>
-<li>You run the test exactly from the step where it stopped working to make sure the test is fixed.</li>
+<li>You run the test starting exactly from the step where it failed to ensure the test is fixed.</li>
 </ol>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aLAUAGLqluA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="multi-session-recording-scenario">Multi Session Recording Scenario<a class="headerlink" href="#multi-session-recording-scenario" title="Permanent link">&para;</a></h2>
 <ol>
-<li>You record first steps of a test case.</li>
+<li>You record the initial steps of a test case.</li>
 <li>You run the test to make sure it works as expected (optional).</li>
-<li>You start next recording session and reconnect to the application. No time is wasted for launching the application and performing steps manually to prepare it for recording.</li>
+<li>You start the next recording session and reconnect to the application. This saves time by eliminating the need to launch the application and manually perform steps to prepare it for recording.</li>
 </ol>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xPB2dpXb91k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="reusing-session-to-run-multiple-tests">Reusing Session to Run Multiple Tests<a class="headerlink" href="#reusing-session-to-run-multiple-tests" title="Permanent link">&para;</a></h2>
-<p>Since application launch is time consuming operation in mobile testing you may run multiple tests on the same application instance.</p>
+<p>Since launching an application is a time-consuming operation in mobile testing, you can run multiple tests on the same application instance.</p>
 <ol>
-<li>You run a test and it leaves the application running.</li>
-<li>You run next test and so on.</li>
+<li>You run a test, and it leaves the application running.</li>
+<li>You run the next test, and so on.</li>
 </ol>
-<p>This approach has pros and cons. We do not recommend to use it for completely independent test cases. It makes sense, however, to use it to break down a long test into separate modules and run them sequentially.</p>
+<p>This approach has both advantages and disadvantages. We do not recommend using it for completely independent test cases. However, it makes sense to use it to break down a long test into separate modules and run them sequentially.</p>
 <h2 id="how-it-works">How it Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
-<p>To leave application running and save session information use <a href="/Libraries/AppiumDriver/#SaveSession">AppiumDriver.SaveSession</a> call in <a href="../understanding_the_script/">TestFinish</a> block of your test.</p>
+<p>To leave an application running and save session information, use the <a href="../../Libraries/AppiumDriver/#SaveSession">AppiumDriver.SaveSession</a> call within the <a href="../understanding_the_script/">TestFinish</a> block of your test.</p>
 <div class="admonition information">
 <p class="admonition-title">Information</p>
-<p>In Rapise 8.0+ there is no need to explicitly call <code>AppiumDriver.SaveSession()</code>.</p>
+<p>In Rapise 8.0+, explicitly calling <code>AppiumDriver.SaveSession()</code> is no longer required.</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestFinish</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">AppiumDriver</span><span class="p">.</span><span class="nx">SaveSession</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>To reconnect to the running application use <a href="/Libraries/AppiumDriver/#ReconnectSession">AppiumDriver.ReconnectSession</a> call in <a href="../understanding_the_script/">TestPrepare</a> block of your test.</p>
+<p>To reconnect to the running application, use the <a href="../../Libraries/AppiumDriver/#ReconnectSession">AppiumDriver.ReconnectSession</a> call within the <a href="../understanding_the_script/">TestPrepare</a> block of your test.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">AppiumDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>If you want Rapise to launch a new application session if there is no saved one pass <code>true</code> to <a href="/Libraries/AppiumDriver/#ReconnectSession">AppiumDriver.ReconnectSession</a> call.</p>
+<p>If you want Rapise to launch a new application session when no saved session exists, pass <code>true</code> to the <a href="../../Libraries/AppiumDriver/#ReconnectSession">AppiumDriver.ReconnectSession</a> call.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">AppiumDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <blockquote>
-<p>Note: <a href="../understanding_the_script/">TestPrepare</a>  block is executed when you do recording or execution of a test. It is also executed if you do selective execution of RVL (<a href="../rvl_editor/#context-menu">Play Selection, Play From Here, etc.</a>).</p>
+<p>Note: The <a href="../understanding_the_script/">TestPrepare</a> block is executed when recording or executing a test. It is also executed during selective execution of RVL (<a href="../rvl_editor/#context-menu">Play Selection, Play From Here, etc.</a>).</p>
 </blockquote>
 <h2 id="active-session">Active Session<a class="headerlink" href="#active-session" title="Permanent link">&para;</a></h2>
-<p>When you launch a Mobile Spy from the main toolbar it first checks if Appium server has active sessions. If there are active sessions then the Spy connects to one of them. You may switch the session using the dropdown on the spy toolbar.</p>
+<p>When you launch Mobile Spy from the main toolbar, it first checks if the Appium server has active sessions. If active sessions exist, the Spy connects to one of them. You can switch the session using the dropdown on the Spy toolbar.</p>
 <p><img src="/Guide/img/mobile_spy_active_sessions.png" width="780" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../mobile_testing2/">Mobile Testing</a>, for an overview of mobile testing with sub-sections on testing.</li>
-<li><a href="../object_spy_mobile/">Mobile Object Spy</a> - for information on how Rapise connects to the device and lets you view the objects in the tested application.</li>
+<li><a href="../mobile_testing2/">Mobile Testing</a> - for an overview of mobile testing, including its sub-sections.</li>
+<li><a href="../object_spy_mobile/">Mobile Object Spy</a> - for information on how Rapise connects to a device and allows you to view objects in the tested application.</li>
 </ul>
                 
               

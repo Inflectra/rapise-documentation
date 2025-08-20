@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11229,6 +11241,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11636,11 +11660,11 @@
                 <h1 id="test-files-view">Test Files View<a class="headerlink" href="#test-files-view" title="Permanent link">&para;</a></h1>
 <p><img alt="Overview" src="../img/test_files_dialog_overview.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The <strong>Test Files</strong> dialog allows you to navigate and alter the Test hierarchy, including the following:</p>
+<p>The <strong>Test Files</strong> dialog allows you to navigate and manage the test hierarchy, including the following:</p>
 <ul>
-<li>The main JavaScript script files (<code>*.js</code>)</li>
+<li>Main JavaScript script files (<code>*.js</code>)</li>
 <li>RVL Files (<code>*.rvl.xlsx</code>)</li>
-<li>The report files (<code>*.trp</code>)</li>
+<li>Report files (<code>*.trp</code>)</li>
 <li>Images captured during execution using <a href="../checkpoints/">Checkpoints</a></li>
 <li>REST web services (<code>*.rest</code>)</li>
 <li>SOAP web services (<code>*.soap</code>)</li>
@@ -11650,81 +11674,81 @@
 <li>Other data files (<code>*.txt</code>)</li>
 </ul>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>Click <code>View &gt; Show &gt; Test Files</code> menu.</p>
+<p>Navigate to <code>View &gt; Show &gt; Test Files</code>.</p>
 <h2 id="root-node">Root Node<a class="headerlink" href="#root-node" title="Permanent link">&para;</a></h2>
 <p>Framework root (for <a href="../Frameworks/frameworks/">framework</a> mode) or test root (for single test mode).</p>
 <h3 id="show-files-and-folders">Show Files and Folders<a class="headerlink" href="#show-files-and-folders" title="Permanent link">&para;</a></h3>
-<p>Root node features special button that facilitates adding files from disk:</p>
+<p>The root node features a special button that facilitates adding files from disk:</p>
 <p><img alt="Show Files Button" src="../img/test_files_dialog_show_files.png" /></p>
-<p>See <a href="#adding-files-from-test-folder">Adding Files for Test Folder</a>.</p>
+<p>See <a href="#adding-files-from-test-folder">Adding Files from Test Folder</a>.</p>
 <h3 id="root-context-menu">Root Context Menu<a class="headerlink" href="#root-context-menu" title="Permanent link">&para;</a></h3>
 <p><img alt="Root Menu" src="../img/test_files_dialog_context_root.png" /></p>
 <ul>
 <li><strong>Reload</strong>: Refreshes objects and test cases.</li>
-<li>... same as context menu for <a href="#folder-context-menu">Folder Node</a></li>
+<li>... Same as the context menu for <a href="#folder-context-menu">Folder Node</a></li>
 <li><strong>Rebuild Framework Metadata...</strong>: Forces the regeneration of metadata for the entire framework.</li>
 </ul>
 <h2 id="filtering">Filtering<a class="headerlink" href="#filtering" title="Permanent link">&para;</a></h2>
-<p>Object Tree has build in filtering and display mode switches.</p>
+<p>The Object Tree has built-in filtering and display mode switches.</p>
 <p><img alt="Filter" src="../img/test_files_dialog_filter.png" width="241px" /></p>
 <ul>
-<li><em>Filter</em> - quick filter to narrow down range displayed in the object tree. Updates the tree while you type. If you want to cancel the filtering then simply remove everything from this input box or press <code>X</code> icon or press <span class="keys"><kbd class="key-escape">Esc</kbd></span> on your keyboard.</li>
+<li><em>Filter</em> - A quick filter to narrow down the range displayed in the object tree. Updates the tree while you type. To cancel filtering, simply remove everything from this input box, press the <code>X</code> icon, or press <span class="keys"><kbd class="key-escape">Esc</kbd></span> on your keyboard.</li>
 </ul>
 <h2 id="folder-node">Folder Node<a class="headerlink" href="#folder-node" title="Permanent link">&para;</a></h2>
-<p>Shows contents of the <a href="#folders-and-filter-groups">Folder or Filter Group</a>.</p>
+<p>Shows the contents of a <a href="#folders-and-filter-groups">Folder or Filter Group</a>.</p>
 <h3 id="folder-context-menu">Folder Context Menu<a class="headerlink" href="#folder-context-menu" title="Permanent link">&para;</a></h3>
-<p>Right click on a folder to see:</p>
+<p>Right-click on a folder to see:</p>
 <p><img alt="Folder Menu" src="../img/test_files_dialog_context_folder.png" /></p>
 <ul>
-<li><strong>Reload</strong>: Refresh group contents. Use it for <a href="../test_files_dialog/#filtergroup">filter groups</a>  ('IsFilterGroup' is set to 'True' in group properties), e.g. for Report group.</li>
-<li><strong>Add File(s)</strong>: Add an existing file to the test.</li>
+<li><strong>Reload</strong>: Refreshes group contents. Use for <a href="./#filtergroup">filter groups</a> ('IsFilterGroup' is set to 'True' in group properties), e.g., for the Report group.</li>
+<li><strong>Add File(s)</strong>: Adds an existing file to the test.</li>
 <li><strong>Create</strong><ul>
-<li><strong>Text File</strong>: Create <code>.txt</code> file and add it to the test.</li>
-<li><strong>JavaScript File</strong>: Create <code>.js</code> file and add it to the test.</li>
-<li><strong>JSON File</strong>: Create <code>.json</code> file and add it to the test.</li>
-<li><strong>Spreadsheet</strong>: Create new <code>.xlsx</code> or <code>.xls</code> file and add it to the test.</li>
-<li><strong>File</strong>: Aks for name and extension and create an empty file.</li>
-<li><strong>WebAppProfile.json</strong>: Add new <code>WebAppProfile.json</code> to this test project.</li>
-<li><strong>User Lib</strong>: Create shared user library for this test and sub-tests.</li>
+<li><strong>Text File</strong>: Creates a <code>.txt</code> file and adds it to the test.</li>
+<li><strong>JavaScript File</strong>: Creates a <code>.js</code> file and adds it to the test.</li>
+<li><strong>JSON File</strong>: Creates a <code>.json</code> file and adds it to the test.</li>
+<li><strong>Spreadsheet</strong>: Creates a new <code>.xlsx</code> or <code>.xls</code> file and adds it to the test.</li>
+<li><strong>File</strong>: Asks for a name and extension, then creates an empty file.</li>
+<li><strong>WebAppProfile.json</strong>: Adds a new <code>WebAppProfile.json</code> to this test project.</li>
+<li><strong>User Lib</strong>: Creates a shared user library for this test and sub-tests.</li>
 </ul>
 </li>
-<li><strong>New Group</strong>:  Create a logical grouping of files in the test. This will <strong>not</strong> add a folder to the file system.</li>
-<li><strong>New Folder</strong>:  Create a real folder in the test. This will add a folder to the file system.</li>
-<li><strong>New Sub-Test</strong>: Launch Create Sub-Test dialog.</li>
-<li><strong>Add All Files</strong>: In <a href="#show-files-and-folders">Show Files and Folders</a> mode, you may add all external files at once using this menu items.</li>
-<li><strong>Remove from Test</strong>: Remove the selected grouping from the test.  This does <strong>not</strong> delete included files from your hard disk.</li>
-<li><strong>Remove All from Disk</strong>: Remove all files included into the selected grouping from your hard disk.</li>
+<li><strong>New Group</strong>: Creates a logical grouping of files in the test. This does <strong>not</strong> add a folder to the file system.</li>
+<li><strong>New Folder</strong>: Creates a real folder in the test. This adds a folder to the file system.</li>
+<li><strong>New Sub-Test</strong>: Launches the Create Sub-Test dialog.</li>
+<li><strong>Add All Files</strong>: In <a href="#show-files-and-folders">Show Files and Folders</a> mode, you may add all external files at once using this menu item.</li>
+<li><strong>Remove from Test</strong>: Removes the selected grouping from the test. This does <strong>not</strong> delete its included files from your hard disk.</li>
+<li><strong>Remove All from Disk</strong>: Removes all files within the selected grouping from your hard disk.</li>
 </ul>
 <h2 id="file-node">File Node<a class="headerlink" href="#file-node" title="Permanent link">&para;</a></h2>
-<p>Shows all files actually added to the test / framework.</p>
+<p>Shows all files actually added to the test or framework.</p>
 <h3 id="context-menu-file">Context Menu (File)<a class="headerlink" href="#context-menu-file" title="Permanent link">&para;</a></h3>
-<p>Right click on a file to see:</p>
+<p>Right-click on a file to see:</p>
 <p><img alt="File Menu" src="../img/test_files_dialog_context_file.png" /></p>
 <ul>
-<li><strong>Open</strong>: Open the file in Rapise.</li>
-<li><strong>Open as Spreadsheet</strong>: Open this file using built in <a href="../spreadsheet_editor/">Spreadsheet editor</a>. May be used to open <code>.rvl.xlsx</code> in spreadsheet editor if you, for example, need to add columns.</li>
-<li><strong>Open as Text</strong>: Open this file using built in <a href="../source_editor/">Text Editor</a>. May be used to open <code>.csv</code> in source editor if you, for example, need to add columns.</li>
-<li><strong>Open Externally</strong>: Open the file using associated program. E.g. if a Notepad is registered in Windows to open TXT files, then TXT file will be opened by Notepad.</li>
-<li><strong>Reveal in Explorer</strong>: Open Windows File Explorer and show this file in it.</li>
-<li><strong>Remove from Test</strong>: Remove the file from your test.  This does <strong>not</strong> delete the file from your hard disk.</li>
-<li><strong>Remove from Disk</strong>: Remove the file from your test and hard drive.</li>
-<li><strong>Create Data Object</strong>: Only available for <code>.xls</code> and <code>.xlsx</code> files. Create Spreadsheet Data Object in the object tree.</li>
+<li><strong>Open</strong>: Opens the file in Rapise.</li>
+<li><strong>Open as Spreadsheet</strong>: Opens this file using the built-in <a href="../spreadsheet_editor/">Spreadsheet editor</a>. Can be used to open <code>.rvl.xlsx</code> in the spreadsheet editor if, for example, you need to add columns.</li>
+<li><strong>Open as Text</strong>: Opens this file using the built-in <a href="../source_editor/">Text Editor</a>. Can be used to open <code>.csv</code> in the source editor if, for example, you need to add columns.</li>
+<li><strong>Open Externally</strong>: Opens the file using the associated program. For example, if Notepad is registered in Windows to open TXT files, a TXT file will be opened by Notepad.</li>
+<li><strong>Reveal in Explorer</strong>: Opens Windows File Explorer and displays this file within it.</li>
+<li><strong>Remove from Test</strong>: Removes the file from your test. This does <strong>not</strong> delete the file from your hard disk.</li>
+<li><strong>Remove from Disk</strong>: Removes the file from your test and hard disk.</li>
+<li><strong>Create Data Object</strong>: Only available for <code>.xls</code> and <code>.xlsx</code> files. Creates a Spreadsheet Data Object in the object tree.</li>
 </ul>
 <h2 id="rvl-sheet">RVL Sheet<a class="headerlink" href="#rvl-sheet" title="Permanent link">&para;</a></h2>
-<p><code>rvl.xlsx</code> file node automatically expands to show available sheets and their contents.</p>
+<p>An <code>rvl.xlsx</code> file node automatically expands to show available sheets and their contents.</p>
 <h3 id="context-menu-for-rvl-sheet">Context Menu for RVL Sheet<a class="headerlink" href="#context-menu-for-rvl-sheet" title="Permanent link">&para;</a></h3>
 <p><img alt="RVL Sheet Menu" src="../img/test_files_dialog_context_rvl_sheet.png" /></p>
 <ul>
-<li><strong>Play this Sheet</strong>: execute given RVL sheet.</li>
+<li><strong>Play this Sheet</strong>: Executes the given RVL sheet.</li>
 </ul>
 <h2 id="sub-test-node">Sub-Test Node<a class="headerlink" href="#sub-test-node" title="Permanent link">&para;</a></h2>
 <p>Sub-test nodes represent various types of sub-tests such as Test Cases, Page Objects, and other supplementary sub-tests.</p>
 <h3 id="context-menu-for-sub-test">Context Menu for Sub-Test<a class="headerlink" href="#context-menu-for-sub-test" title="Permanent link">&para;</a></h3>
-<p>Right click on a sub-test to see:</p>
+<p>Right-click on a sub-test to see:</p>
 <p><img alt="Sub-Test Menu" src="../img/test_files_dialog_context_subtest.png" /></p>
 <p>See <a href="../tests_and_sub_tests/#sub-test-context-menu">menu item descriptions</a></p>
 <h2 id="folders-and-filter-groups">Folders and Filter Groups<a class="headerlink" href="#folders-and-filter-groups" title="Permanent link">&para;</a></h2>
-<p>A <strong>Group</strong> is a virtual folder that may or may not have a physical representation on disk. <strong>Filter groups</strong> retrieve their contents from disk based on a specified path and wildcard. A <strong>RealFolder</strong> is an actual folder that has the same name as the group and its path matches the <strong>FilterPath</strong> of the group.</p>
+<p>A <strong>Group</strong> is a virtual folder that may or may not have a physical representation on disk. <strong>Filter groups</strong> retrieve their contents from disk based on a specified path and wildcard. A <strong>RealFolder</strong> is an actual folder that has the same name as the group and whose path matches the group's <strong>FilterPath</strong>.</p>
 <h3 id="folder-properties">Folder Properties<a class="headerlink" href="#folder-properties" title="Permanent link">&para;</a></h3>
 <p>You can configure a filter group or real folder by editing the group properties:</p>
 <p><img alt="Folder Properties" src="../img/test_files_dialog_folder_properties.png" /></p>
@@ -11739,7 +11763,7 @@
 <p><img alt="Filter Group" src="../img/test_files_dialog5.png" /></p>
 <ol>
 <li>
-<p><strong>Show files in folder</strong>: This option enables a combined view where you can see both the files and folders inside the test folder, including those that have already been added to the test project and those that have not yet been added.</p>
+<p><strong>Show files in folder</strong>: This option enables a combined view where you can see both the files and folders inside the test folder, including both those already added to the test project and those not yet added.</p>
 </li>
 <li>
 <p>If a folder has not been added to the project, a <code>+</code> icon is displayed. Clicking on it adds a filter group for that folder.</p>

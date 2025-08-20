@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -4016,8 +4028,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#editing-action" class="md-nav__link">
-    Editing Action
+  <a href="#editing-an-action" class="md-nav__link">
+    Editing an Action
   </a>
   
 </li>
@@ -11091,6 +11103,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11335,8 +11359,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#editing-action" class="md-nav__link">
-    Editing Action
+  <a href="#editing-an-action" class="md-nav__link">
+    Editing an Action
   </a>
   
 </li>
@@ -11362,7 +11386,7 @@
                 
                 
                 <h1 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h1>
-<p>In RVL Action always refers to an operation performed with object.</p>
+<p>In RVL, an <code>Action</code> always refers to an operation performed on an object.</p>
 <table>
 <thead>
 <tr>
@@ -11396,12 +11420,12 @@
 </tr>
 </tbody>
 </table>
-<p>If row type is <code>Action</code> then there must be <em>Object</em> and <em>Action</em> cells defined.</p>
-<p><strong>Note</strong>: In this example we call an operation that would look in JavaScript as follows:</p>
+<p>If the row type is <code>Action</code>, then the <em>Object</em> and <em>Action</em> cells must be defined.</p>
+<p><strong>Note</strong>: In this example, we call an operation that would look like the following in JavaScript:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;MyButton&#39;</span><span class="p">).</span><span class="nx">DoClick</span><span class="p">(</span><span class="mf">5</span><span class="p">,</span><span class="mf">7</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="object-actions">Object Actions<a class="headerlink" href="#object-actions" title="Permanent link">&para;</a></h2>
-<p><code>Object</code> is an ID of learned or Global object. Available objects may be found in the <code>Object Tree</code>:</p>
+<p>An <code>Object</code> is an ID of a learned or Global object. Available objects can be found in the <code>Object Tree</code>:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Object Tree" src="../img/Actions_ObjectTree.png" /></p>
 </div>
@@ -11441,16 +11465,16 @@
 </ol>
 </div>
 </div>
-<p><em>Object tree</em> contains list of available objects, including:</p>
+<p>The <em>Object Tree</em> contains a list of available objects, including:</p>
 <ol>
 <li>
-<p><em>Local objects</em> (1) learned recorded or learned from the application under test.</p>
+<p><em>Local objects</em> (1): Objects recorded or learned from the application under test.</p>
 </li>
 <li>
-<p><em>Global object</em>. Always available set of objects containing most common utility functions and operations.</p>
+<p><em>Global objects</em>: A set of always-available objects containing common utility functions and operations.</p>
 </li>
 <li>
-<p><em>Functions</em>. Represent global JavaScript functions. Each time you define a global function in .user.js file it becomes available for calling from RVL with special object ID Functions.</p>
+<p><em>Functions</em>: Global JavaScript functions. Each time you define a global function in a <code>.user.js</code> file, it becomes available to be called from RVL with the special object ID <code>Functions</code>.</p>
 </li>
 </ol>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
@@ -11501,7 +11525,7 @@
 </table>
 </div>
 </div>
-<p>Each Object has its own set of actions. You may also see them in the object tree:</p>
+<p>Each object has its own set of actions. You can also see them in the object tree:</p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Object Tree" src="../img/Actions_ObjectTree_Actions.png" /></p>
 </div>
@@ -11550,10 +11574,10 @@
 </table>
 </div>
 </div>
-<p>An <em>Action</em> may have any number of parameters. See <a href="../Params/">Params</a> for more info.</p>
+<p>An <em>Action</em> can have any number of parameters. See <a href="../Params/">Params</a> for more information.</p>
 <h2 id="conditional-actions">Conditional Actions<a class="headerlink" href="#conditional-actions" title="Permanent link">&para;</a></h2>
 <p>Actions with a "?" in the <code>Flow</code> cell are considered conditional. This means that the <strong>Action</strong> is only executed if the object is found.</p>
-<p>For example, if the <code>AcceptCookies</code> object is found, it is clicked on:</p>
+<p>For example, if the <code>AcceptCookies</code> object is found, it is clicked:</p>
 <table>
 <thead>
 <tr>
@@ -11578,9 +11602,9 @@
 </tr>
 </tbody>
 </table>
-<p>If the object is not found, the conditional action simply moves on without leaving any trace in the report.</p>
-<h2 id="editing-action">Editing Action<a class="headerlink" href="#editing-action" title="Permanent link">&para;</a></h2>
-<p>An Action may have both mandatory and optional params. When action is selected from the dropdown its params are displayed:</p>
+<p>If the object is not found, the conditional action is skipped, leaving no trace in the report.</p>
+<h2 id="editing-an-action">Editing an Action<a class="headerlink" href="#editing-an-action" title="Permanent link">&para;</a></h2>
+<p>An Action can have both mandatory and optional parameters. When an action is selected from the dropdown menu, its parameters are displayed:</p>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="DoLaunch parameters" src="../img/Actions_ActionParams.png" /></p>
 </div>
@@ -11656,7 +11680,7 @@
 </table>
 </div>
 </div>
-<p>By default RVL editor pre-fills only mandatory params for you when you select an action from the dropdown. In this example <code>DoLaunch</code> has one mandatory parameter <code>cmdLine</code> so here is what you get when you select it:</p>
+<p>By default, the RVL editor pre-fills only the mandatory parameters for you when you select an action from the dropdown menu. In this example, <code>DoLaunch</code> has one mandatory parameter, <code>cmdLine</code>, so this is what you get when you select it:</p>
 <div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="DoLaunch parameters" src="../img/Actions_ActionParams_Mandatory.png" /></p>
 </div>
@@ -11687,7 +11711,7 @@
 </table>
 </div>
 </div>
-<p>However the situation is differs if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while choosing an Action from the dropdown:</p>
+<p>However, the situation is different if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while choosing an action from the dropdown menu:</p>
 <div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="DoLaunch parameters" src="../img/Actions_ActionParams_Optional.png" /></p>
 </div>
@@ -11745,9 +11769,9 @@
 </table>
 </div>
 </div>
-<p>You may see that all parameters are applied in this case.</p>
+<p>You can see that all parameters are applied in this case.</p>
 <ul>
-<li><strong><em>Note:</em></strong> if you you already have have the same action and select it with <span class="keys"><kbd class="key-shift">Shift</kbd></span> key again, no optional params are applied. You need to clean the <em>Action</em> cell and re-select it with <span class="keys"><kbd class="key-shift">Shift</kbd></span> if you want to achieve the desired effect.</li>
+<li><strong><em>Note:</em></strong> If you already have the same action and select it with the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key again, no optional parameters are applied. You need to clear the <em>Action</em> cell and re-select it with <span class="keys"><kbd class="key-shift">Shift</kbd></span> to achieve the desired effect.</li>
 </ul>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Action without parameters</p>
@@ -11790,7 +11814,7 @@
 </table>
 </div>
 </div>
-<p>Action with single parameter. In RVL each parameter takes one line with <em>Action</em>=<code>Param</code>. However for the 1<sup>st</sup> param there is an exception. It may occupy the same line as <code>Action</code> itself:</p>
+<p>Action with a single parameter. In RVL, the first parameter can occupy the same line as the <code>Action</code> itself. Any subsequent parameters must each take a new line with the <code>Type</code> set to <code>Param</code>:</p>
 <div class="tabbed-set" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Action with single parameter" src="../img/Actions_ActionParams_SingleParam.png" /></p>
 </div>

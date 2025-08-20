@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11086,6 +11098,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11351,31 +11375,31 @@
                 
                 <h1 id="qt-framework">Qt Framework<a class="headerlink" href="#qt-framework" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Rapise includes support for testing applications written using the Qt Framework written using QWidget controls.</p>
+<p>Rapise supports testing applications built with the Qt Framework, specifically those using QWidget controls.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Rapise fully supports the test automation of Qt based applications. To ensure that Rapise can access the UI elements and properties in the Qt application, MSAA (Microsoft Active Accessibility) support for your Qt application must be enabled. This provides additional information on Qt UI elements to automation software like Rapise and can be accomplished by shipping and loading the "Accessible Plug-in" included in the Qt SDK (Software Development Kit) with the Qt application under test (see below).</p>
-<p><strong>Loading Accessible Plug-in for your Qt application:</strong></p>
+<p>Rapise fully supports the test automation of Qt-based applications. To ensure Rapise can access the UI elements and properties of the Qt application, MSAA (Microsoft Active Accessibility) support must be enabled. This provides additional information about Qt UI elements to automation software like Rapise. It can be accomplished by deploying and loading the "Accessible Plug-in," which is included in the Qt SDK (Software Development Kit), with the Qt application under test (see below).</p>
+<p><strong>Loading the Accessible Plug-in for your Qt Application:</strong></p>
 <ol>
 <li>
-<p>Copy the "<strong>accessible</strong>" directory (and all its contents) from the <strong>Qt SDK</strong> (used to build the application under test) installation folder to the folder of the automated application (e.g. “<strong>Program Files/Your-Application/plugins</strong>”). If you do not have access to the Qt SDK which the Qt application is developed with, please contact the developer of the application and request the "accessible" directory from him.</p>
+<p>Copy the "<strong>accessible</strong>" directory (and all its contents) from the <strong>Qt SDK</strong> (used to build the application under test) installation directory to the automated application's installation directory (e.g., "<strong>Program Files/Your-Application/plugins</strong>"). If you do not have access to the Qt SDK used to develop the Qt application, please contact the application's developer and request the "accessible" directory from them.</p>
 </li>
 <li>
-<p>Create a file called "<strong>qt.conf</strong>" (or append if the file already exists) in the root directory of the automated application (e.g. "<strong>Program Files/Your-Application</strong>") with following content (copy and paste the following two lines):</p>
-</li>
-</ol>
+<p>Create a file named "<strong>qt.conf</strong>" (or append to it if the file already exists) in the root directory of the automated application (e.g., "<strong>Program Files/Your-Application</strong>") with the following content (copy and paste the following two lines):</p>
 <div class="highlight"><pre><span></span><code>[Paths]
 Plugins = plugins
 </code></pre></div>
+</li>
+</ol>
 <h2 id="sample">Sample<a class="headerlink" href="#sample" title="Permanent link">&para;</a></h2>
-<p>In the Samples section of the Rapise Start Page you should see our sample Qt Framework AUT:</p>
+<p>In the Samples section of the Rapise Start Page, you will find our sample Qt Framework AUT:</p>
 <p><img alt="Qt_sample_application" src="../img/qt_framework_testing1.png" /></p>
-<p>You can use this application with Rapise to try out the Qt Framework testing capabilities:</p>
+<p>You can use this application with Rapise to explore its Qt Framework testing capabilities:</p>
 <ul>
 <li>
-<p>You should record tests using the special <strong>Qt Framework</strong> library</p>
+<p>You should record tests using the dedicated <strong>Qt Framework</strong> library.</p>
 </li>
 <li>
-<p>You should use the <a href="../object_spy_accessible/">Accessible Spy</a> for inspecting objects.</p>
+<p>You should use the <a href="../object_spy_accessible/">Accessible Spy</a> to inspect objects.</p>
 </li>
 </ul>
                 

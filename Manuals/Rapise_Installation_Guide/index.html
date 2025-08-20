@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11219,6 +11231,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11619,15 +11643,14 @@
                 
                 <h1 id="rapise-installation-guide">Rapise Installation Guide<a class="headerlink" href="#rapise-installation-guide" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>Rapise® is a next generation software test automation tool that leverages the power of open architecture to improve application quality and reduce time to market.</p>
-<p>This installation guide outlines how to setup a working installation of Rapise including the installation of any dependencies and prerequisites. It also provides information on obtaining an evaluation or production license key from Inflectra so that you can use the software.</p>
-<p>It assumes a basic understanding of how to setup and administer a Windows® workstation, and also assumes that you have access to a valid Administrator level account that can install software.</p>
-<p>For information on how to use the features of Rapise please refer to either the <a href="/Guide/tutorial_record_and_playback/">Rapise Quick Start Guide</a> or the <a href="/Guide/overview/">Rapise User's Guide</a> instead.</p>
+<p>Rapise® is a next-generation software test automation tool that leverages the power of open architecture to improve application quality and reduce time to market.</p>
+<p>This installation guide outlines how to set up a working installation of Rapise, including the installation of any dependencies and prerequisites. It also provides information on obtaining an evaluation or production license key from Inflectra so that you can use the software.</p>
+<p>It assumes a basic understanding of how to set up and administer a Windows® workstation, and also assumes that you have access to a valid administrator-level account that can install software.</p>
+<p>For information on how to use the features of Rapise, please refer to either the <a href="../../Guide/tutorial_record_and_playback/">Rapise Quick Start Guide</a> or the <a href="../../Guide/overview/">Rapise User's Guide</a> instead.</p>
 <h2 id="installing-rapise">Installing Rapise<a class="headerlink" href="#installing-rapise" title="Permanent link">&para;</a></h2>
-<p>This section outlines how to prepare your system for installation of Rapise, and how to actually install the software using the provided
-installation package.</p>
-<p>The first sub-section will outline what hardware and software configurations are supported and the exact installation sequence for different versions of Microsoft® Windows®. The second sub-section will explain how to load the Rapise software onto the computer, and discuss common problems and solutions.</p>
-<p>The minimum hardware and software requirements for running the Rapise are:</p>
+<p>This section outlines how to prepare your system for the installation of Rapise, and how to install the software using the provided installation package.</p>
+<p>The first sub-section will outline what hardware and software configurations are supported and the exact installation sequence for different versions of Microsoft® Windows®. The second sub-section will explain how to load the Rapise software onto the computer and discuss common problems and solutions.</p>
+<p>The minimum hardware and software requirements for running Rapise are:</p>
 <table>
 <thead>
 <tr>
@@ -11695,122 +11718,118 @@ installation package.</p>
 </tbody>
 </table>
 <h3 id="system-prerequisites">System Prerequisites<a class="headerlink" href="#system-prerequisites" title="Permanent link">&para;</a></h3>
-<p>Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that has been pre-installed for you), you need to then make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place, and will install any missing perquisites (apart from the Microsoft .NET Framework) automatically.</p>
+<p>Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that it has been pre-installed for you), you then need to make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place and will install any missing prerequisites (apart from the Microsoft .NET Framework) automatically.</p>
 <h4 id="microsoft-net-472">Microsoft .NET 4.7.2<a class="headerlink" href="#microsoft-net-472" title="Permanent link">&para;</a></h4>
-<p>On Windows 10 and Windows 2016 Server installations (with all latest updates) Microsoft .NET Framework meets minimum requirements, whereas on earlier operating systems, you might need to manually add the .NET 4.7.2 components to the factory configuration.</p>
-<p>To install the .NET Framework, launch Internet Explorer and enter the URL: <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472">https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472</a>. From this page there will be links to download and install the appropriate version of the .NET Framework. </p>
+<p>On Windows 10 and Windows Server 2016 installations (with all the latest updates), the Microsoft .NET Framework meets the minimum requirements, whereas on earlier operating systems, you might need to manually add the .NET 4.7.2 components to the factory configuration.</p>
+<p>To install the .NET Framework, launch Internet Explorer and enter the URL: <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472">https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472</a>. This page provides links to download and install the appropriate version of the .NET Framework.</p>
 <h3 id="remove-any-previous-versions">Remove any Previous Versions<a class="headerlink" href="#remove-any-previous-versions" title="Permanent link">&para;</a></h3>
 <p>Before installing the current version of Rapise, we recommend first uninstalling any previous versions of Rapise to ensure you have a clean installation. To do this, go to <code>Start &gt; Control Panel &gt; Programs and Features</code>:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide4.png" /></p>
-<p>The click the "Rapise" entry and confirm that you want to install the existing installed version.</p>
+<p>Then click the "Rapise" entry and confirm that you want to uninstall the existing version.</p>
 <h3 id="installing-the-software">Installing the Software<a class="headerlink" href="#installing-the-software" title="Permanent link">&para;</a></h3>
-<p>Now that all the prerequisites have been correctly installed, you are now ready to install Rapise onto your system. To perform the
-installation, you will need the installation package downloaded from the Inflectra® website.</p>
+<p>Now that all the prerequisites have been correctly installed, you are ready to install Rapise on your system. To perform the installation, you will need the installation package downloaded from the Inflectra® website.</p>
 <p>To start the installation, double-click on the Rapise installation package (it will have a filename of the form Rapise-vX.X.X.X.exe), and the Windows Installer will display the following dialog box:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide5.png" /></p>
 <p>The first screen in the installation wizard outlines the Inflectra End User License Agreement (EULA). Please read this carefully as it describes the legal contract between you -- the user of the software -- and Inflectra® Corporation, the developer and publisher. Once you have read the agreement and understood your rights and obligations, select the checkbox marked "I agree to the license terms and conditions" and click the <code>Install</code> button.</p>
-<p>This will begin the process of installing Rapise onto your system. If you are installing Rapise onto Windows Vista or newer, then you may be prompted by the Windows User Access Control (UAC) security system to confirm that you want to install a new piece of software:</p>
+<p>This will begin the process of installing Rapise onto your system. If you are installing Rapise onto Windows Vista or newer, you may be prompted by the Windows User Access Control (UAC) security system to confirm that you want to install a new piece of software:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide6.png" /></p>
-<p>Click the option that confirms you want to proceed with the install.</p>
+<p>Click the option that confirms you want to proceed with the installation.</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide5.png" /></p>
-<p>The installer will then display a progress bar that gradually fills as the installation proceeds. Once the installation is complete, the
-following message will be displayed:</p>
+<p>The installer will then display a progress bar that gradually fills as the installation proceeds. Once the installation is complete, the following message will be displayed:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide7.png" /></p>
 <p>Congratulations! You have successfully installed Rapise onto your system.</p>
-<p>You should now have a Rapise shortcut icon added to your Windows Desktop and if you click on <strong>Start &gt; Program Files &gt; Inflectra &gt; Rapise</strong>, you should see the new Rapise program group:</p>
+<p>You should now have a Rapise shortcut icon added to your Windows Desktop, and if you click on <strong>Start &gt; Program Files &gt; Inflectra &gt; Rapise</strong>, you should see the new Rapise program group:</p>
 <p><img alt="windows menu" src="../img/Rapise_Installation_Guide8.png" /></p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>As we announced back in June 2021, there have been plans to provide our Rapise test automation platform with a new floating license option, in addition to the fixed licensing system that we've had since the launch of the product. Well the big day has arrived - we are pleased to announce that you can now purchase Rapise floating licenses as part of your existing Spira subscription, with both monthly and annual options.</p>
+<p>As we announced back in June 2021, there have been plans to provide our Rapise test automation platform with a new floating license option, in addition to the fixed licensing system that we've had since the launch of the product. We are pleased to announce that you can now purchase Rapise floating licenses as part of your existing Spira subscription, with both monthly and annual options.</p>
 <h3 id="floating-license">Floating License<a class="headerlink" href="#floating-license" title="Permanent link">&para;</a></h3>
 <h4 id="how-to-purchase">How to Purchase<a class="headerlink" href="#how-to-purchase" title="Permanent link">&para;</a></h4>
-<p>Unlike fixed licenses which are purchased from our website as a standalone purchase, Rapise uses our Spira test management platform to manage its floating licenses. So you will need to first login to <a href="https://www.inflectra.com/CustomerArea/">Customer Portal</a> on our website. From here, you need to locate your SpiraTest, SpiraTeam or SpiraPlan cloud subscription and click the <strong>Customize</strong> button:</p>
+<p>Unlike fixed licenses, which are purchased from our website as a standalone purchase, Rapise uses our Spira test management platform to manage its floating licenses. You will need to first log in to the <a href="https://www.inflectra.com/CustomerArea/">Customer Portal</a> on our website. From here, you need to locate your SpiraTest, SpiraTeam, or SpiraPlan cloud subscription and click the <strong>Customize</strong> button:</p>
 <p><img alt="subscriptions" src="../img/my_cloud_subscriptions.png" /></p>
-<p>(If you are not using the cloud version of Spira, then unfortunately at this time you cannot use floating licenses)</p>
-<p>Once you click on the Customize button you can choose the number of Rapise floating licenses you want to purchase:</p>
+<p>(If you are not using the cloud version of Spira, then unfortunately at this time, you cannot use floating licenses.)</p>
+<p>Once you click the Customize button, you can choose the number of Rapise floating licenses you want to purchase:</p>
 <p><img alt="purchase" src="../img/purchase_addons.png" /></p>
-<p>If you have a monthly Spira subscription, the Rapise floating licenses will also be charged monthly, whereas if you have an annual Spira subscription, then the Rapise floating licenses will similarly be part of the annual renewal. Once you have completed the purchase of the floating licenses, you will see a new Rapise subscription add-on in your Customer Area homepage:</p>
+<p>If you have a monthly Spira subscription, the Rapise floating licenses will also be charged monthly, whereas if you have an annual Spira subscription, the Rapise floating licenses will similarly be part of the annual renewal. Once you have completed the purchase of the floating licenses, you will see a new Rapise subscription add-on on your Customer Area homepage:</p>
 <p><img alt="pending" src="../img/license_pending.png" /></p>
-<p>It will be initially in the <code>Pending</code> status while our cloud servers complete the task of updating your Spira instance with the number of Rapise licenses. Once that task is completed, you will get an email letting you know, and the status will change to <code>Active</code>.</p>
+<p>It will initially be in the <code>Pending</code> status while our cloud servers complete the task of updating your Spira instance with the number of Rapise licenses. Once that task is completed, you will receive an email notification, and the status will change to <code>Active</code>.</p>
 <p><img alt="active" src="../img/license_active.png" /></p>
 <h4 id="how-to-manage">How to Manage<a class="headerlink" href="#how-to-manage" title="Permanent link">&para;</a></h4>
 <p>Once the subscription add-on has been provisioned, you will see a new menu entry in the <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Integration/">System Administration: Integration</a> section of your Spira instance:</p>
 <p><img alt="manage" src="../img/rapise_floating_licenses.png" width="377px" /></p>
-<p>When you click on this link you will see how many Rapise floating licenses are available as well as how many are currently in use (initially the list will be empty):</p>
+<p>When you click this link, you will see how many Rapise floating licenses are available as well as how many are currently in use (initially, the list will be empty):</p>
 <p><img alt="administration" src="../img/floating_license_administration.png" /></p>
 <p>You can now connect Rapise to your Spira instance to use the new floating licenses.</p>
 <h4 id="how-to-configure">How to Configure<a class="headerlink" href="#how-to-configure" title="Permanent link">&para;</a></h4>
-<p>Now that you have floating licenses available, when you connect Rapise to Spira as you would normally to start writing tests:</p>
+<p>Now that you have floating licenses available, connect Rapise to Spira as you normally would to start writing tests:</p>
 <p><img alt="configuration" src="../img/spira_connection_settings.png" width="508px" /></p>
-<p>To get your API Key follow <a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">these steps</a>.</p>
+<p>To get your API Key, follow <a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">these steps</a>.</p>
 <p>Rapise automatically requests a floating license from Spira and will use that license until Rapise is closed or an administrator clicks the <strong>End Session</strong> button in Spira:</p>
 <p><img alt="end session" src="../img/end_session.png" /></p>
-<p>The advantage of the floating licenses is that you can have all your computers install Rapise and they will only use a license when Rapise is active, vs. having to purchase a fixed license for a machine regardless of whether that machine is actually using the license. In addition, it lets you purchase Rapise licenses monthly bundled with your existing Spira subscription.</p>
+<p>The advantage of floating licenses is that you can install Rapise on all your computers, and they will only consume a license when Rapise is active. This contrasts with fixed licenses, which require you to purchase a license for each machine, regardless of whether that machine is actively using it. In addition, it lets you purchase Rapise licenses monthly, bundled with your existing Spira subscription.</p>
 <h3 id="fixed-license">Fixed License<a class="headerlink" href="#fixed-license" title="Permanent link">&para;</a></h3>
-<p>Once you have successfully installed Rapise, you will need to activate it with a license key (either a temporary evaluation key or a permanent production key). This section describes the process for activating your copy of Rapise as well as how to perform updates to the license key and potentially move it to another computer.</p>
+<p>Once you have successfully installed Rapise, you will need to activate it with a license key (either a temporary evaluation key or a permanent production key). This section describes the process for activating your copy of Rapise as well as how to update the license key and potentially move it to another computer.</p>
 <h4 id="getting-your-activation-code">Getting Your Activation Code<a class="headerlink" href="#getting-your-activation-code" title="Permanent link">&para;</a></h4>
 <p>When you first launch Rapise after installation, it will display the following dialog box:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide9.png" width="538px" /></p>
 <p>You should now enter the alphanumeric activation code from the Customer Area of the Inflectra website (the same page that you downloaded the installation package from). It will be displayed in the <code>My Licenses</code> section of the webpage. An example page is shown below:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide10.png" /></p>
-<p>There are two kinds of activation code:</p>
+<p>There are two kinds of activation codes:</p>
 <ul>
 <li>Evaluation Activation Codes -- these start with the letters <strong>DMO</strong></li>
 <li>Production Activation Codes -- these start with the letters <strong>SDM</strong></li>
 </ul>
-<p>You should enter the appropriate activation code into the Rapise activation wizard and choose the option to either activate online or offline. If you are connected to the Internet, online activation is easier. If you are not connected to the Internet (e.g. working in a secure environment), then you will need to use the offline activation option.</p>
-<p>The following sections will explain how each of the options work:</p>
+<p>You should enter the appropriate activation code into the Rapise activation wizard and choose the option to either activate online or offline. If you are connected to the Internet, online activation is easier. If you are not connected to the Internet (e.g., working in a secure environment), you will need to use the offline activation option.</p>
+<p>The following sections will explain how each of the options works:</p>
 <h4 id="activating-online">Activating Online<a class="headerlink" href="#activating-online" title="Permanent link">&para;</a></h4>
-<p>To use online activation, make sure you are connected to the Internet, enter the activation code, choose <code>Activate Online</code> and click the
-<code>Finish</code> button:</p>
+<p>To use online activation, make sure you are connected to the Internet, enter the activation code, choose <code>Activate Online</code>, and click the <code>Finish</code> button:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide11.png" width="538px" /></p>
-<p>The activation system will contact our activation server, process the activation code and activate the license. The application will start automatically and if you visit the Customer Area of our website, you will see that it is listed as activated, with a license key displayed:</p>
+<p>The activation system will contact our activation server, process the activation code, and activate the license. The application will start automatically, and if you visit the Customer Area of our website, you will see that it is listed as activated, with a license key displayed:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide12.png" /></p>
 <h4 id="activating-offline">Activating Offline<a class="headerlink" href="#activating-offline" title="Permanent link">&para;</a></h4>
-<p>To use offline activation, enter the activation code, choose <code>Activate Offline</code> and click the <code>Next</code> button:</p>
+<p>To use offline activation, enter the activation code, choose <code>Activate Offline</code>, and click the <code>Next</code> button:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide13.png" width="538px" /></p>
 <p>This will bring up the Offline Activation screen:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide14.png" width="538px" /></p>
-<p>Click on the <code>Save</code> button to save the Rapise.LIC file to your hard drive.</p>
-<p>Copy across the Rapise.LIC file to a computer that has Internet access and open up the Customer Area of our website:</p>
+<p>Click the <code>Save</code> button to save the Rapise.LIC file to your hard drive.</p>
+<p>Copy the Rapise.LIC file to a computer that has Internet access and open the Customer Area of our website:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide10.png" /></p>
-<p>Click on the <strong>Activate</strong> link which will take you to the Offline Activation part of our website:</p>
+<p>Click the <strong>Activate</strong> link, which will take you to the Offline Activation part of our website:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide15.png" /></p>
-<p>Click on the <code>Browse</code> button and navigate to the place where the Rapise.LIC file is stored. Then click on the <code>Activate</code> button to begin the activation process. Assuming that the License file is valid, the website will activate the license and take you back to the Customer Area where the license key will be displayed:</p>
+<p>Click the <code>Browse</code> button and navigate to the place where the Rapise.LIC file is stored. Then click the <code>Activate</code> button to begin the activation process. Assuming that the license file is valid, the website will activate the license and take you back to the Customer Area, where the license key will be displayed:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide12.png" /></p>
-<p>Click on the License Key hyperlink and you will be prompted to save the Rapise.CDM file to your hard drive. Save this file and then copy it across to the computer that has Rapise installed. Now on the Offline Activation screen:</p>
+<p>Click the License Key hyperlink and you will be prompted to save the Rapise.CDM file to your hard drive. Save this file and then copy it to the computer that has Rapise installed. Now, on the Offline Activation screen:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide14.png" width="538px" /></p>
-<p>Click the Step 3 <code>Open</code> button and browse to the Rapise.CDM file. Once you have the file selected, click on the <code>Finish</code> button to complete the activation. Assuming that the Rapise.CDM file is valid, the application will start.</p>
+<p>Click the Step 3 <code>Open</code> button and browse to the Rapise.CDM file. Once you have the file selected, click the <code>Finish</code> button to complete the activation. Assuming that the Rapise.CDM file is valid, the application will start.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you have any problems activating your installation, please go to <a href="https://www.inflectra.com/Support">https://www.inflectra.com/Support</a> and contact Inflectra customer support and they will help you resolve your problem.</p>
+<p>If you have any problems activating your installation, please go to <a href="https://www.inflectra.com/Support">https://www.inflectra.com/Support</a> and contact Inflectra customer support, and they will help you resolve your problem.</p>
 </div>
 <h4 id="upgrading-from-demo-license">Upgrading from Demo License<a class="headerlink" href="#upgrading-from-demo-license" title="Permanent link">&para;</a></h4>
-<p>If you have installed a demonstration license, when the expiration date is reached the software functionality will be limited and you will be prompted to purchase a commercial license. To purchase the commercial license, go to <a href="http://www.inflectra.com/Rapise">http://www.inflectra.com/Rapise</a> and click on the appropriate Purchase link to obtain a commercial production license.</p>
-<p>Once you have purchased the license your Customer Area will display a new activation code. Simply start up Rapise, enter the new activation code and follow the process described in sections <a href="#activating-online">Activating Online</a> or <a href="#activating-offline">Activating Offline</a>.</p>
-<p>If you want to upgrade your license <strong>before</strong> the demonstration license is expired, you need to click on the menu <strong>Help &gt; Activation</strong>:</p>
+<p>If you have installed a demonstration license, when the expiration date is reached, the software's functionality will be limited, and you will be prompted to purchase a commercial license. To purchase the commercial license, go to <a href="http://www.inflectra.com/Rapise">http://www.inflectra.com/Rapise</a> and click the appropriate Purchase link to obtain a commercial production license.</p>
+<p>Once you have purchased the license, your Customer Area will display a new activation code. Simply start Rapise, enter the new activation code, and follow the process described in the <a href="#activating-online">Activating Online</a> or <a href="#activating-offline">Activating Offline</a> sections.</p>
+<p>If you want to upgrade your license <strong>before</strong> the demonstration license expires, you need to click <strong>Help &gt; Activation</strong>:</p>
 <p><img alt="help activation" src="../img/Rapise_Installation_Guide16.png" width="152px" /></p>
 <p>This will bring up the Activation dialog box:</p>
 <p><img alt="activation dialog" src="../img/Rapise_Installation_Guide17.png" width="411px" /></p>
-<p>Click on the <code>Enter Activation Code</code> button and then follow the process described in sections <a href="#activating-online">Activating Online</a> or <a href="#activating-offline">Activating Offline</a> to activate the product with the new production license.</p>
-<p>Without a valid license Rapise will continue to work but without <strong>Recording</strong> and <strong>Playback</strong> functionality.</p>
+<p>Click the <code>Enter Activation Code</code> button and then follow the process described in the <a href="#activating-online">Activating Online</a> or <a href="#activating-offline">Activating Offline</a> sections to activate the product with the new production license.</p>
+<p>Without a valid license, Rapise will continue to work, but its <strong>Recording</strong> and <strong>Playback</strong> functionality will be disabled.</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide_no_license.png" width="382px" /></p>
 <h4 id="transferring-to-another-computer">Transferring to Another Computer<a class="headerlink" href="#transferring-to-another-computer" title="Permanent link">&para;</a></h4>
-<p>Sometimes you need to transfer your Rapise license from one computer to another, or the computer it's installed on needs to be rebuilt. In either case, it's important that you first deactivate the product from the current computer, otherwise you will be prevented from activating the product on the new / rebuilt computer.</p>
-<p>To deactivate your current installation, you need to click on the <strong>Activation</strong> button in the Help section of the Rapise Test ribbon:</p>
+<p>Sometimes you need to transfer your Rapise license from one computer to another, or the computer it's installed on needs to be rebuilt. In either case, it's important that you first deactivate the product from the current computer; otherwise, you will be prevented from activating the product on the new/rebuilt computer.</p>
+<p>To deactivate your current installation, you need to click the <strong>Activation</strong> button in the Help section of the Rapise Test ribbon:</p>
 <p><img alt="help activation" src="../img/Rapise_Installation_Guide16.png" width="152px" /></p>
 <p>This will bring up the Activation dialog box:</p>
 <p><img alt="activation dialog" src="../img/Rapise_Installation_Guide17.png" width="411px" /></p>
-<p>Click on the <code>Deactivate</code> button and activation system will contact our activation server, process the deactivation code and deactivate the license. If you visit the Customer Area of our website, you will see that it is listed as deactivated, with the option to activate it now available:</p>
+<p>Click the <code>Deactivate</code> button, and the activation system will contact our activation server, process the deactivation code, and deactivate the license. If you visit the Customer Area of our website, you will see that it is listed as deactivated, with the option to activate it now available:</p>
 <p><img alt="" src="../img/Rapise_Installation_Guide10.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you have any problems deactivating your installation, please go to <a href="https://www.inflectra.com/Support">https://www.inflectra.com/Support</a> and contact Inflectra customer support and they will help you resolve your problem.</p>
+<p>If you have any problems deactivating your installation, please go to <a href="https://www.inflectra.com/Support">https://www.inflectra.com/Support</a> and contact Inflectra customer support, and they will help you resolve your problem.</p>
 </div>
 <h2 id="legal-notices">Legal Notices<a class="headerlink" href="#legal-notices" title="Permanent link">&para;</a></h2>
 <p>This publication is provided as is without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
 <p>This publication could include technical inaccuracies or typographical errors. Changes are periodically added to the information contained herein; these changes will be incorporated in new editions of the publication. Inflectra® Corporation may make improvements and/or changes in the product(s) and/or program(s) and/or service(s) described in this publication at any time.</p>
-<p>The sections in this guide that discuss internet web security are provided as suggestions and guidelines. Internet security is constantly evolving field, and our suggestions are no substitute for an up-to-date understanding of the vulnerabilities inherent in deploying internet or
-web applications, and Inflectra<sup>®</sup> cannot be held liable for any losses due to breaches of security, compromise of data or other cyber-attacks that may result from following our recommendations.</p>
+<p>The sections in this guide that discuss internet web security are provided as suggestions and guidelines. Internet security is a constantly evolving field, and our suggestions are no substitute for an up-to-date understanding of the vulnerabilities inherent in deploying internet or web applications. Inflectra® cannot be held liable for any losses due to breaches of security, compromise of data, or other cyber-attacks that may result from following our recommendations.</p>
 <p>The section of the manual that describes modifying the Windows System Registry ("Registry") should only be attempted by experienced Windows administrators who are familiar with its organization and contents. Inflectra® cannot be held liable for any losses due to damage to the system registry made by inexperienced personnel.</p>
 <p>SpiraTest®, SpiraTeam®, Rapise® and Inflectra® are either trademarks or registered trademarks of Inflectra Corporation in the United States of America and other countries. Microsoft®, Windows®, Explorer® and Microsoft Project® are registered trademarks of Microsoft Corporation.</p>
 <p>All other trademarks and product names are property of their respective holders.</p>

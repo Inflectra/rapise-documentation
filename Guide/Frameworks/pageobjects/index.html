@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../New/8_4/" class="md-tabs__link">
+      <a href="../../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1248,6 +1248,18 @@
     <li class="md-nav__item">
       <a href="../../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11166,6 +11178,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11512,13 +11536,13 @@
                 
                 
                 <h1 id="page-objects-modules">Page Objects / Modules<a class="headerlink" href="#page-objects-modules" title="Permanent link">&para;</a></h1>
-<p>The term <strong>Modules</strong> can be used as a synonym for <strong>Page Objects</strong>. The concept and benefits remain the same—creating modular and reusable components that represent different pages or user interfaces of a web application.</p>
-<p>In the context of testing frameworks, a <a href="https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/">Page Object</a> is a design pattern used to enhance the maintainability and reusability of automated tests, particularly in web application testing. It provides an object-oriented approach to represent the different pages or user interfaces of a web application.</p>
+<p>The term <strong>Modules</strong> can serve as a synonym for <strong>Page Objects</strong>. The concept and benefits remain consistent: creating modular and reusable components that represent different pages or user interfaces of a web application.</p>
+<p>In the context of testing frameworks, a <a href="https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/">Page Object</a> is a design pattern used to enhance the maintainability and reusability of automated tests, particularly in web application testing. It provides an object-oriented approach for representing the different pages or user interfaces of a web application.</p>
 <p>The main idea behind the <strong>Page Object</strong> pattern is to encapsulate the elements, actions, and behaviors of a web page within a dedicated <strong>module</strong>.</p>
 <p>Here are some key aspects and benefits of using <strong>Page Objects</strong>:</p>
 <ol>
 <li>
-<p>Abstraction of Web Elements: The <strong>Page Object</strong> encapsulates the object repository (such as buttons, text fields, dropdowns, etc.) present on a specific page. It provides a layer of abstraction, allowing tests to interact with the elements using intuitive methods rather than directly dealing with individual repository objects or HTML tags.</p>
+<p>Abstraction of Web Elements: The <strong>Page Object</strong> encapsulates the object repository (such as buttons, text fields, dropdowns, etc.) found on a specific page. It provides a layer of abstraction, allowing tests to interact with the elements using intuitive methods rather than directly manipulating individual repository objects or HTML tags.</p>
 </li>
 <li>
 <p>Reusability and Maintainability: By separating the page-specific logic into <strong>Page Objects</strong>, the code becomes more modular and reusable. Changes in the application's user interface or functionality can be easily handled by updating the relevant <strong>Page Object</strong> class, rather than modifying the tests themselves.</p>
@@ -11530,25 +11554,25 @@
 <p>Centralized Locators: The Page Object pattern centralizes the locators or selectors used to identify web elements on a particular page. This reduces duplication and allows for easier maintenance if the locators change, as they can be updated in a single location within the Page Object class.</p>
 </li>
 </ol>
-<p>While the typical usage of <strong>Page Objects</strong> or <strong>modules</strong> in testing frameworks revolves around encapsulating individual web pages or user interfaces, they can also be expanded to encapsulate groups of functionality within an application. This allows for a more comprehensive and organized approach to testing, including tasks such as navigation through the application.</p>
+<p>While the typical usage of <strong>Page Objects</strong> or <strong>modules</strong> in testing frameworks primarily focuses on encapsulating individual web pages or user interfaces, they can also be extended to encapsulate groups of functionality within an application. This allows for a more comprehensive and organized approach to testing, including tasks such as navigation through the application.</p>
 <p>In addition to representing a single page or UI element, a <strong>Page Object</strong> or module can be designed to encapsulate a logical grouping of related functionality within the application. This could include a set of pages that are interconnected or share a common purpose, or even a specific workflow or user journey across multiple pages.</p>
 <p>For example, consider an e-commerce application that consists of various pages such as a product listing page, product details page, shopping cart page, and checkout page. Instead of creating separate <strong>Page Objects</strong> for each individual page, a <strong>module</strong> could be created to encapsulate the entire shopping flow, including navigating between these pages and performing actions related to the shopping process (e.g., adding items to the cart, updating quantities, and completing the checkout).</p>
-<p>By encapsulating a group of functionality within a single module, the tests can focus on testing that specific area of the application or a complete workflow. This approach offers several advantages:</p>
+<p>By encapsulating a group of related functionalities within a single module, the tests can focus on testing that specific area of the application or a complete workflow. This approach offers several advantages:</p>
 <ol>
 <li>
 <p>Improved Modularity: The encapsulation of related functionality within a module enhances code organization and modularity. It allows for a more cohesive representation of the application's features, making the tests easier to understand and maintain.</p>
 </li>
 <li>
-<p>Seamless Navigation: The module can provide methods or actions for navigating through different pages or steps within the application. This simplifies the test code by abstracting the navigation logic and makes it more readable and intuitive.</p>
+<p>Seamless Navigation: The module can provide methods or actions to navigate through different pages or steps within the application. This simplifies the test code by abstracting the navigation logic and making it more readable and intuitive.</p>
 </li>
 <li>
-<p>Reusability: Since a module encapsulates a group of functionality, it can be reused across multiple tests or scenarios that involve the same set of features. This promotes code reusability, reduces duplication, and saves effort in maintaining similar test code in different places.</p>
+<p>Reusability: Since a module encapsulates a group of related functionalities, it can be reused across multiple tests or scenarios that involve the same set of features. This promotes code reusability, reduces duplication, and saves effort in maintaining similar test code in different places.</p>
 </li>
 <li>
-<p>Clearer Test Scenarios: By encapsulating related functionality within a module, test scenarios can be defined more clearly. It becomes easier to create tests that cover specific user journeys or workflows, making the test cases more meaningful and representative of real-world usage.</p>
+<p>Clearer Test Scenarios: By encapsulating related functionality within a module, test scenarios can be more clearly defined. It becomes easier to create tests that cover specific user journeys or workflows, making the test cases more meaningful and representative of real-world usage.</p>
 </li>
 </ol>
-<p>In summary, while Page Objects or Modules are commonly associated with encapsulating individual web pages, they can be expanded to encapsulate groups of functionality within an application. This approach enhances code organization, simplifies navigation, promotes reusability, and enables clearer test scenarios for comprehensive testing of various application features or workflows.</p>
+<p>In summary, while Page Objects or Modules are commonly associated with encapsulating individual web pages, they can also be extended to encapsulate groups of functionality within an application. This approach enhances code organization, simplifies navigation, promotes reusability, and enables clearer test scenarios for comprehensive testing of various application features or workflows.</p>
 <h2 id="page-objects-vs-test-cases">Page Objects vs Test Cases<a class="headerlink" href="#page-objects-vs-test-cases" title="Permanent link">&para;</a></h2>
 <p>What are the differences between <strong>Page Objects / Modules</strong> and <strong>Test Cases</strong>?</p>
 <ul>
@@ -11568,83 +11592,87 @@
 <h2 id="creating-a-page-object-module">Creating a Page Object / Module<a class="headerlink" href="#creating-a-page-object-module" title="Permanent link">&para;</a></h2>
 <p>There are two ways of creating a <strong>Page Object (PO)</strong> or <strong>Module</strong>:</p>
 <ol>
-<li>Main menu:</li>
 <li>
-<p>Go to <strong>File</strong> &gt; <strong>Add to Framework</strong> &gt; <strong>Page Object / Module</strong>.
-   <img alt="Add Main Menu" src="../img/add_page_object_main_menu.png" /></p>
+<p>Main menu:</p>
+<ul>
+<li>Go to <strong>File</strong> &gt; <strong>Add to Framework</strong> &gt; <strong>Page Object / Module</strong>.
+<img alt="Add Main Menu" src="../img/add_page_object_main_menu.png" /></li>
+</ul>
 </li>
 <li>
 <p>Context menu:</p>
+<ul>
+<li>Right-click on the <strong>Page Objects / Modules</strong> node in the <a href="../../object_tree/">object tree</a>.
+<img alt="Add Context Menu" src="../img/add_page_object_context_menu.png" /></li>
+</ul>
 </li>
-<li>Right-click on the <strong>Page Objects / Modules</strong> node in the <a href="/Guide/object_tree">object tree</a>.
-   <img alt="Add Context Menu" src="../img/add_page_object_context_menu.png" /></li>
 </ol>
 <h3 id="page-object-rvl-vs-js">Page Object - RVL vs JS<a class="headerlink" href="#page-object-rvl-vs-js" title="Permanent link">&para;</a></h3>
-<p>Whenever you create a Page Object, you have two options: RVL mode or JavaScript mode.</p>
-<p>RVL is appropriate in most cases when the module mostly covers some plain scenarios - a set of interactions with the application.</p>
-<p>JavaScript may be handy in two cases:</p>
+<p>When you create a Page Object, you have two options: RVL mode or JavaScript mode.</p>
+<p>RVL is appropriate in most cases when the module primarily covers straightforward scenarios, involving a set of interactions with the application.</p>
+<p>JavaScript is particularly useful in two cases:</p>
 <ol>
 <li>
-<p>Whenever you need something where scripting is more appropriate (write loops, use arrays, do some data and string manipulations). Or when you work with JSON data where JavaScript appears to be the most handy handler.</p>
+<p>When you need something where scripting is more appropriate (write loops, use arrays, perform data and string manipulations). Or when you work with JSON data where JavaScript appears to be the most suitable handler.</p>
 </li>
 <li>
-<p>Whenever you have some web service interactions. Web services usually include JSON data as payload/responses, so JavaScript is more useful.</p>
+<p>When you have web service interactions. Web services usually include JSON data as payload/responses, so JavaScript is more useful.</p>
 </li>
 </ol>
 <p>In all other cases, choose RVL.</p>
 <h2 id="adding-page-object-actions">Adding Page Object Actions<a class="headerlink" href="#adding-page-object-actions" title="Permanent link">&para;</a></h2>
-<p>The method of adding an action for the object varies depending on the chosen language: RVL or JavaScript.</p>
+<p>The method of adding an action to a Page Object varies depending on the chosen language: RVL or JavaScript.</p>
 <h3 id="rvl-mode">RVL Mode<a class="headerlink" href="#rvl-mode" title="Permanent link">&para;</a></h3>
 <p>When in RVL mode, adding a sheet creates a new action, with the exception of two specific sheets:</p>
 <ol>
 <li>
-<p>The <code>RVL</code> sheet, which is the default sheet. It is typically left empty in the Page Object or may contain an internal test executed via the <a href="/Guide/rvl_editor#context-menu">Play this Sheet</a> context menu.</p>
+<p>The <code>RVL</code> sheet, which is the default sheet. It is typically left empty in the Page Object or may contain an internal test that can be executed via the <a href="../../rvl_editor/#context-menu">Play this Sheet</a> context menu.</p>
 </li>
 <li>
-<p>The <code>PageObject</code> sheet, which is the default sheet for the Page Object. It is intended to include a comment with a detailed description of the action, which will be displayed to the user.</p>
+<p>The <code>PageObject</code> sheet, which is the default sheet within the Page Object. It is intended to include a comment with a detailed description of the action, displayed to the user.</p>
 </li>
 </ol>
 <p><img alt="PO Description" src="../img/pageobjects_po_description.png" /></p>
 <p>Any other sheet is considered an action. The action name should be alphanumeric, meaning it should not contain spaces and should start with a letter or an underscore.</p>
 <h3 id="javascript-mode">JavaScript Mode<a class="headerlink" href="#javascript-mode" title="Permanent link">&para;</a></h3>
 <p>In JavaScript mode, a Page Object / Module is equivalent to a <a href="../../global_objects/">Global Object</a>. All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.</p>
-<p>The distinction between a global object and a Page Object lies in their usage and features. Typically, a global object encompasses various functionalities like PDF support, text manipulations, and other utilities. It does not involve an object repository or web services. On the other hand, a page object can include an object repository and is often specific to an application, representing its unique characteristics and functionality.</p>
+<p>The distinction between a global object and a Page Object lies in their usage and features. Typically, a global object encompasses various functionalities like PDF support, text manipulations, and other utilities. It does not involve an object repository or web services. On the other hand, a Page Object can include an object repository and is often specific to an application, representing its unique characteristics and functionality.</p>
 <h2 id="action-naming-and-reporting">Action Naming and Reporting<a class="headerlink" href="#action-naming-and-reporting" title="Permanent link">&para;</a></h2>
-<p>The preferred name for an action is <code>DoAction</code>. When this name is used, the result of the action is checked and reflected in the report. Checking the result involves verifying if the return value is 0, <code>false</code>, or an empty string, indicating a failed action. The inclusion of the <code>Do</code> prefix ensures that the result is checked and a line about the action is included in the report.</p>
-<p>Alternatively, you can name the action simply as <code>Action</code>. In this case, the action will not be displayed in the report, although it may have a return value that will not be checked.</p>
+<p>The preferred name for an action is <code>DoAction</code>. When this name is used, the result of the action is checked and reflected in the report. Checking the result involves verifying that a return value of 0, <code>false</code>, or an empty string indicates a failed action. The inclusion of the <code>Do</code> prefix ensures that the result is checked and a line about the action is included in the report.</p>
+<p>Alternatively, you can name the action simply <code>Action</code>. In this case, the action will not be displayed in the report, although it may have a return value that will not be checked.</p>
 <p>It is common to have actions with names like <code>GetSmth</code> or <code>SetSmth</code>. These actions are meant to update or return a value but are not reflected in the report, similar to the behavior of <code>Action</code>.</p>
 <p>In certain situations, you may want to call a <code>DoAction</code> but ignore its output value and exclude it from the report. To achieve this, you can prefix the action name with an underscore, such as <code>_DoAction</code>, resulting in an empty execution report.</p>
 <h2 id="description-parameters-and-return-values">Description, Parameters and Return Values<a class="headerlink" href="#description-parameters-and-return-values" title="Permanent link">&para;</a></h2>
-<p>Defining parameters and returning values as well as documenting them is straight forward in JavaScript mode is same as for <a href="/Guide/global_objects#format">global objects</a></p>
-<p>When creating an action in RVL, it generates necessary placeholders:</p>
+<p>Defining and documenting parameters and return values in JavaScript mode is straightforward and follows the same format as for <a href="../../global_objects/#format">global objects</a>.</p>
+<p>When creating an action in RVL, necessary placeholders are generated:</p>
 <p><img alt="Default RVL Action" src="../img/default_action.png" /></p>
 <p>Where:</p>
 <ol>
-<li>Is an action description. You may see it when choosing an action:</li>
-</ol>
+<li>
+<p>This is an action description. You can see it when choosing an action:</p>
 <p><img alt="Action Description Dropdown" src="../img/pageobjects_action_description_dropdown.png" /></p>
 <p>or when hovering over it in the tree:</p>
 <p><img alt="Hovering Action Description" src="../img/pageobjects_action_description_hover.png" /></p>
-<ol>
-<li>
-<p>Parameters. Zero or more. All variable definitions appearing before <code>ReturnValue</code> variable assumed to be action parameters. Everything after <code>ReturnValue</code> are just internal variables needed for given action.</p>
 </li>
 <li>
-<p>Variable <code>ReturnValue</code>. May contain an action result (you may assign it through the course of the action)</p>
+<p>Parameters (zero or more). All variable definitions appearing before the <code>ReturnValue</code> variable are assumed to be action parameters. Everything after <code>ReturnValue</code> consists of internal variables needed for a given action.</p>
+</li>
+<li>
+<p>The <code>ReturnValue</code> variable. May contain an action result (you can assign it during the action's execution).</p>
 </li>
 </ol>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p>To call a Page Object, you can use <code>MyObject.DoAction</code> directly in both RVL and JavaScript modes.</p>
 <p><img alt="PO Call RVL" src="../img/pageobjects_po_call_rvl.png" />
 <img alt="PO Call JS" src="../img/pageobjects_po_call_js.png" /></p>
-<p>Alternatively, you can invoke a single action for the Page Object itself by using the context menu and selecting "Invoke <em>ActionName</em>()".</p>
+<p>Alternatively, you can invoke a specific action within the Page Object itself by using the context menu and selecting "Invoke <em>ActionName</em>()".</p>
 <p><img alt="Invoke Action" src="../img/pageobjects_invoke_action.png" /></p>
 <p>For RVL Modules, you can run any part of the module using standard RVL features such as Play Selection or Play this Sheet.</p>
 <h2 id="page-object-recording">Page Object Recording<a class="headerlink" href="#page-object-recording" title="Permanent link">&para;</a></h2>
-<p>In RVL mode you do <a href="/Guide/rvl_editor#features">recording</a> just like you do for usual test case with RVL.</p>
+<p>In RVL mode, you perform <a href="../../rvl_editor/#features">recording</a> just as you would for a standard RVL test case.</p>
 <h2 id="page-object-and-web-service">Page Object and Web Service<a class="headerlink" href="#page-object-and-web-service" title="Permanent link">&para;</a></h2>
 <p>When incorporating a Web Service (<code>.soap</code> or <code>.rest</code>) into your Page Object, it is advisable to use JavaScript instead of RVL (Rapise Visual Language) for creating the Page Object.</p>
-<p>When <a href="/Guide/rest_definition_editor#script-steps">generating</a> a recorded script, it will be placed in the Page Object's <code>Main.js</code> file, which is not executed. Therefore, you will need to manually copy the generated script from <code>Main.js</code> and paste it into the appropriate action within the <code>&lt;PageObjectName&gt;.js</code> file.</p>
+<p>When <a href="../../rest_definition_editor/#script-steps">generating</a> a recorded script, it will be placed in the Page Object's <code>Main.js</code> file, which is not executed. Therefore, you will need to manually copy the generated script from <code>Main.js</code> and paste it into the appropriate action within the <code>&lt;PageObjectName&gt;.js</code> file.</p>
 <h2 id="importing-page-objects">Importing Page Objects<a class="headerlink" href="#importing-page-objects" title="Permanent link">&para;</a></h2>
 <p>In Rapise, you can import pre-built Page Objects from other frameworks.</p>
 <p><img alt="Import PO" src="../img/import_page_object.png" width="364px" /></p>

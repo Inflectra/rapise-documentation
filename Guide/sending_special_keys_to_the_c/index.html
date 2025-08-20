@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11100,6 +11112,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11379,16 +11403,16 @@
                 
                 <h1 id="sending-special-keys-to-the-current-application">Sending Special Keys to the Current Application<a class="headerlink" href="#sending-special-keys-to-the-current-application" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>You can use the <a href="/Libraries/Global/#DoSendKeys">Global.DoSendKeys</a> action to send keypresses to the current application. Sometimes you will want to send special control keys to the application (e.g. <code>Page Down</code>, or <code>CTRL + Key</code>). This article explains the way to do this.</p>
+<p>You can use the <a href="../../Libraries/Global/#DoSendKeys">Global.DoSendKeys</a> action to send keypresses to the current application. Sometimes, you may need to send special control keys to the application (e.g., <code>Page Down</code> or <code>CTRL + Key</code>). This article explains how to do this.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>For Web applications, use <a href="/Libraries/Navigator/#DoSendKeys">Navigator.DoSendKeys</a> and <a href="/Libraries/HTMLObject/#DoSendKeys">HTMLObject.DoSendKeys</a> which accept the same patterns listed below.</p>
+<p>For web applications, use <a href="../../Libraries/Navigator/#DoSendKeys">Navigator.DoSendKeys</a> and <a href="../../Libraries/HTMLObject/#DoSendKeys">HTMLObject.DoSendKeys</a>. Both accept the same patterns listed below.</p>
 </div>
 <p><img alt="DoSendKeys Demo" src="../img/global_dosendkeys.gif" /></p>
 <h2 id="special-characters">Special Characters<a class="headerlink" href="#special-characters" title="Permanent link">&para;</a></h2>
-<p>To send special characters, you just use the list available in the Windows API <code>SendKeys.Send</code> function:</p>
+<p>To send special characters, refer to the list available in the Windows API's <code>SendKeys.Send</code> function:</p>
 <p><a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send%28v=vs.110%29.aspx">http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send(v=vs.110).aspx</a></p>
-<p>To specify characters that aren't displayed when you press a key, such as <code>ENTER</code> or <code>TAB</code>, and keys that represent actions rather than characters, use the codes in the following table:</p>
+<p>To specify characters that are not displayed when you press a key (such as <code>ENTER</code> or <code>TAB</code>), or keys that represent actions rather than literal characters, use the codes in the following table:</p>
 <table>
 <thead>
 <tr>
@@ -11559,9 +11583,9 @@
 </tr>
 </tbody>
 </table>
-<p>The plus sign (+), caret (^), percent sign (%), tilde (~), and parentheses () have special meanings to SendKeys. To specify one of these characters, enclose it within braces ({}). For example, to specify the plus sign, use "{+}". To specify brace characters, use "{{}" and "{}}".</p>
+<p>The plus sign (+), caret (^), percent sign (%), tilde (~), and parentheses <code>()</code> have special meanings within SendKeys. To specify one of these characters, enclose it within braces (<code>{}</code>). For example, to specify the plus sign, use <code>{+}</code>. To specify brace characters, use <code>{{}</code> and <code>{}}</code>.</p>
 <h2 id="shift-ctrl-and-alt">SHIFT, CTRL and ALT<a class="headerlink" href="#shift-ctrl-and-alt" title="Permanent link">&para;</a></h2>
-<p>To specify keys combined with any combination of the SHIFT, CTRL, and ALT keys, precede the key code with one or more of the following codes:</p>
+<p>To specify keys combined with a combination of the SHIFT, CTRL, and ALT keys, precede the key code with one or more of the following symbols:</p>
 <table>
 <thead>
 <tr>
@@ -11587,7 +11611,7 @@
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <p>In this example Rapise sends various key combinations to Windows Notepad.</p>
 <blockquote>
-<p>Note: <a href="/Libraries/Global/#DoSleep">Global.DoSleep</a> is used to slow down test execution and make test steps visible.</p>
+<p>Note: <a href="../../Libraries/Global/#DoSleep">Global.DoSleep</a> is used to slow down test execution and make the test steps visible.</p>
 </blockquote>
 <p><strong>RVL version</strong></p>
 <p><img alt="DoSendKeys in RVL" src="../img/dosendkeys_rvl.png" /></p>
@@ -11615,7 +11639,7 @@
 <span class="c1">// Close notepad</span>
 <span class="nx">Global</span><span class="p">.</span><span class="nx">DoKillByPid</span><span class="p">();</span>
 </code></pre></div>
-<p>To run RVL or JavaScript version of this example place the following function to User.js.</p>
+<p>To run RVL or JavaScript version of this example, place the following function in User.js.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">ActivateNotepad</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">wnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">g_util</span><span class="p">.</span><span class="nx">FindWindow</span><span class="p">(</span><span class="s2">&quot;regex:.*&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Untitled - Notepad&quot;</span><span class="p">);</span>

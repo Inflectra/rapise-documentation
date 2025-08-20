@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -3459,6 +3471,53 @@
   <a href="#important-notes" class="md-nav__link">
     Important Notes
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fine-tuning-auto-wait-logic" class="md-nav__link">
+    Fine-Tuning Auto-Wait Logic
+  </a>
+  
+    <nav class="md-nav" aria-label="Fine-Tuning Auto-Wait Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#override-probing" class="md-nav__link">
+    Override Probing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-a-sesonnavigatorautowait-callback" class="md-nav__link">
+    Define a SeSOnNavigatorAutoWait Callback
+  </a>
+  
+    <nav class="md-nav" aria-label="Define a SeSOnNavigatorAutoWait Callback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callback-signature" class="md-nav__link">
+    Callback Signature
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practical-examples" class="md-nav__link">
+    Practical Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -11156,6 +11215,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11468,6 +11539,53 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#fine-tuning-auto-wait-logic" class="md-nav__link">
+    Fine-Tuning Auto-Wait Logic
+  </a>
+  
+    <nav class="md-nav" aria-label="Fine-Tuning Auto-Wait Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#override-probing" class="md-nav__link">
+    Override Probing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-a-sesonnavigatorautowait-callback" class="md-nav__link">
+    Define a SeSOnNavigatorAutoWait Callback
+  </a>
+  
+    <nav class="md-nav" aria-label="Define a SeSOnNavigatorAutoWait Callback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callback-signature" class="md-nav__link">
+    Callback Signature
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practical-examples" class="md-nav__link">
+    Practical Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     Summary
   </a>
@@ -11490,7 +11608,7 @@
                 <h1 id="auto-waiting-in-web-tests">Auto-Waiting in Web Tests<a class="headerlink" href="#auto-waiting-in-web-tests" title="Permanent link">&para;</a></h1>
 <p>The <strong>Auto-Waiting</strong> feature in Rapise enhances the reliability of web tests by ensuring that web elements are in the correct state before performing actions on them. This feature is available for <strong>Selenium Profiles</strong> and was introduced in <strong>Rapise 8.3</strong>.</p>
 <h2 id="what-is-auto-waiting">What is Auto-Waiting?<a class="headerlink" href="#what-is-auto-waiting" title="Permanent link">&para;</a></h2>
-<p>Auto-Waiting ensures that actions like clicks, typing, or selecting elements are only performed when the targeted web element is:</p>
+<p>Auto-Waiting ensures that actions such as clicks, typing, or selecting elements are only performed when the targeted web element is:</p>
 <ul>
 <li><strong>Visible</strong> on the screen.</li>
 <li><strong>Enabled</strong> and ready for interaction.</li>
@@ -11501,14 +11619,14 @@
 <h2 id="actions-supported-by-auto-waiting">Actions Supported by Auto-Waiting<a class="headerlink" href="#actions-supported-by-auto-waiting" title="Permanent link">&para;</a></h2>
 <p>The Auto-Waiting feature is applied to the following actions:</p>
 <ul>
-<li><a href="/Libraries/HTMLObject/#domousemove">DoMouseMove</a>  </li>
-<li><a href="/Libraries/HTMLObject/#doclick">DoClick</a>  </li>
-<li><a href="/Libraries/HTMLObject/#dodblclick">DoDblClick</a>  </li>
-<li><a href="/Libraries/HTMLObject/#dorclick">DoRClick</a>  </li>
-<li><a href="/Libraries/HTMLObject/#dosendkeys">DoSendKeys</a>  </li>
-<li><a href="/Libraries/HTMLObject/#dosettext">DoSetText</a>  </li>
-<li><a href="/Libraries/HTMLObject/#doselect">DoSelect</a>  </li>
-<li><a href="/Libraries/HTMLObject/#dosetcheck">DoSetCheck</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#domousemove">DoMouseMove</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#doclick">DoClick</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#dodblclick">DoDblClick</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#dorclick">DoRClick</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#dosendkeys">DoSendKeys</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#dosettext">DoSetText</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#doselect">DoSelect</a>  </li>
+<li><a href="../../Libraries/HTMLObject/#dosetcheck">DoSetCheck</a>  </li>
 </ul>
 <h3 id="mouse-move-action">Mouse Move Action<a class="headerlink" href="#mouse-move-action" title="Permanent link">&para;</a></h3>
 <p>This action waits for the element to:</p>
@@ -11550,18 +11668,158 @@
 </ul>
 <p>You can modify these settings to control both the default object lookup wait and the Auto-Wait timing.</p>
 <h3 id="max-auto-wait-time-calculation">Max Auto-Wait Time Calculation<a class="headerlink" href="#max-auto-wait-time-calculation" title="Permanent link">&para;</a></h3>
-<p>The max wait time is determined by:</p>
+<p>The maximum wait time is determined by:</p>
 <div class="highlight"><pre><span></span><code>Total Auto-Wait Time = g_autoWaitAttempts * g_autoWaitAttemptInterval
 </code></pre></div>
 <h2 id="important-notes">Important Notes<a class="headerlink" href="#important-notes" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p><strong>Action-Specific Feature:</strong> Auto-Waiting is only invoked when performing actions such as <code>DoClick</code> or <code>DoSetText</code>. It does not apply to object search methods like <a href="/Libraries/Navigator/#find">Navigator.Find</a>, <code>SeS(id)</code>, or <a href="/Libraries/Navigator/#sesfind">Navigator.SeSFind</a>.</p>
+<p><strong>Action-Specific Feature:</strong> Auto-Waiting is only invoked for actions such as <code>DoClick</code> or <code>DoSetText</code>. It does not apply to object search methods like <a href="../../Libraries/Navigator/#find">Navigator.Find</a>, <code>SeS(id)</code>, or <a href="../../Libraries/Navigator/#sesfind">Navigator.SeSFind</a>.</p>
 </li>
 <li>
-<p><strong>Assumes Object Existence:</strong> Auto-Waiting operates under the assumption that the target object exists. If you need to wait for an object to be created or appear in the DOM, use methods like <code>SeS(id)</code> or <a href="/Libraries/Navigator/#sesfind">Navigator.SeSFind</a>. These methods respect the global <code>Object Lookup Attempts</code> and <code>Object Lookup Attempt Interval</code> settings.</p>
+<p><strong>Assumes Object Existence:</strong> Auto-Waiting operates under the assumption that the target object exists. If you need to wait for an object to be created or appear in the DOM, use methods like <code>SeS(id)</code> or <a href="../../Libraries/Navigator/#sesfind">Navigator.SeSFind</a>. These methods respect the global <code>Object Lookup Attempts</code> and <code>Object Lookup Attempt Interval</code> settings.</p>
 </li>
 </ol>
+<h2 id="fine-tuning-auto-wait-logic">Fine-Tuning Auto-Wait Logic<a class="headerlink" href="#fine-tuning-auto-wait-logic" title="Permanent link">&para;</a></h2>
+<p>Auto-Wait relies on standard application UI behavior. However, some UI frameworks are designed in ways that require tweaking the default logic. For example, a framework might cover the entire screen with an invisible frame that captures all inputs and clicks, then forwards them to a specific element. From Auto-Wait's perspective, the target element is not interactable because it is covered by another element. In such cases, we may want to relax the default limitations.</p>
+<p>There are two ways to fine-tune the logic. The first is to disable a specific check globally. The second, more powerful method, is to completely override the Auto-Wait checker logic with a custom function.</p>
+<h3 id="override-probing">Override Probing<a class="headerlink" href="#override-probing" title="Permanent link">&para;</a></h3>
+<p>For simple cases where a specific check consistently fails due to your application's design, you can disable it entirely. This is done by defining a <code>Navigator.autoWaitOverride</code> object. This object can have properties corresponding to the internal checks, and setting a property to <code>true</code> forces Auto-Wait to assume that the check has passed.</p>
+<p>The available properties are:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Navigator</span><span class="p">.</span><span class="nx">autoWaitOverride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Visible</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">          </span><span class="c1">// Assume the element is always visible on screen</span>
+<span class="w">    </span><span class="nx">Stable</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">           </span><span class="c1">// Assume the element has stopped moving</span>
+<span class="w">    </span><span class="nx">ReceivesEvents</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">   </span><span class="c1">// Assume the element is the top-most element at its coordinates</span>
+<span class="w">    </span><span class="nx">Enabled</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">          </span><span class="c1">// Assume the element is enabled for interaction</span>
+<span class="w">    </span><span class="nx">Editable</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w">          </span><span class="c1">// Assume the element is editable (for text input)</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>You only need to define the properties you want to override.</p>
+<p><strong>Example: Always Assume Elements are Interactable</strong></p>
+<p>If your application uses a global overlay that intercepts clicks, the <code>ReceivesEvents</code> check will always fail. To bypass this specific check for all actions, you can add this to your framework:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Common.js</span>
+<span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="p">...</span>
+<span class="w">   </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">autoWaitOverride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ReceivesEvents</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">};</span>
+<span class="w">   </span><span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><strong>Caution:</strong> Use this feature judiciously. Overriding a check removes a layer of protection and can lead to tests failing with less obvious errors if the element truly is not ready. It is best used for application-wide workarounds. For more targeted fixes, use the callback method described next.</p>
+<h3 id="define-a-sesonnavigatorautowait-callback">Define a SeSOnNavigatorAutoWait Callback<a class="headerlink" href="#define-a-sesonnavigatorautowait-callback" title="Permanent link">&para;</a></h3>
+<p>For ultimate control over the Auto-Wait logic, you can define a callback function. This function is executed at each wait attempt and allows you to implement custom logic to decide if the element is ready for the specified action.</p>
+<p>This approach is ideal for complex scenarios, such as:
+- Applying special logic only to certain types of elements.
+- Waiting for a custom "loading" attribute or class to disappear.
+- Relaxing conditions after a few failed attempts.</p>
+<p>To use it, you define the <code>SeSOnNavigatorAutoWait</code> callback function in your test script.</p>
+<h4 id="callback-signature">Callback Signature<a class="headerlink" href="#callback-signature" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nx">SeSOnNavigatorAutoWait</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**HTMLObject*/</span><span class="w"> </span><span class="nx">obj</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">action</span><span class="p">,</span><span class="w"> </span><span class="cm">/**object*/</span><span class="w"> </span><span class="nx">elInfo</span><span class="p">,</span><span class="w"> </span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">,</span><span class="w"> </span><span class="cm">/**number*/</span><span class="nx">attempt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Your custom logic here</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>obj</code> (<code>HTMLObject</code>): The Rapise test object representing the web element being targeted. You can use this to get its ID, XPath, or other properties.</li>
+<li>
+<p><code>action</code> (<code>string</code>): The type of action being attempted. Possible values are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Corresponds To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>move</code></td>
+<td style="text-align: left;"><code>DoMouseMove</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>click</code></td>
+<td style="text-align: left;"><code>DoClick</code>, <code>DoDblClick</code>, <code>DoRClick</code>, <code>DoSelect</code>, <code>DoSetCheck</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>settext</code></td>
+<td style="text-align: left;"><code>DoSetText</code>, <code>DoSendKeys</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>elInfo</code> (<code>object</code>): An object containing the results of the standard Rapise checks for this attempt. Its properties are <code>Visible</code>, <code>Stable</code>, <code>ReceivesEvents</code>, <code>Enabled</code>, and <code>Editable</code>.</p>
+</li>
+<li><code>xOffset</code>, <code>yOffset</code> (<code>number</code>): The coordinates within the element where the action will occur.</li>
+<li><code>attempt</code> (<code>number</code>): The current attempt number (starts at 0).</li>
+</ul>
+<p><strong>Return Values:</strong></p>
+<p>Your callback function's return value determines the outcome of the wait attempt:</p>
+<ul>
+<li><code>return true;</code>: The condition is met. Auto-Waiting stops, and the action proceeds immediately.</li>
+<li><code>return false;</code>: Your custom condition was not met. Rapise will now proceed with its <strong>default</strong> built-in checks for the current action. This allows you to add a pre-check without replacing the standard logic.</li>
+<li><code>return null;</code>: Your custom condition was not met, and you want to <strong>skip</strong> the default Rapise checks for this attempt. The wait will fail for this attempt and proceed to the next one.</li>
+</ul>
+<h4 id="practical-examples">Practical Examples<a class="headerlink" href="#practical-examples" title="Permanent link">&para;</a></h4>
+<p><strong>Example 1: Ignoring an Overlay for a Specific Button</strong></p>
+<p>Imagine a "Submit" button is consistently covered by a transparent overlay, but other elements are not. A global override is too broad. We can use the callback to target just that button. You can define the callback within SeSOnTestInit for your testing framework.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Common.js</span>
+<span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="nx">SeSOnNavigatorAutoWait</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**HTMLObject*/</span><span class="nx">obj</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">,</span><span class="w"> </span><span class="nx">elInfo</span><span class="p">,</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">attempt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// If the action is a click on our specific &#39;Submit&#39; button</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;click&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">obj</span><span class="p">.</span><span class="nx">GetId</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;submit_button&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="c1">// We only care if it&#39;s visible and enabled. We ignore if it receives events.</span>
+<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">elInfo</span><span class="p">.</span><span class="nx">Visible</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">elInfo</span><span class="p">.</span><span class="nx">Enabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">               </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// It&#39;s ready, proceed with the click!</span>
+<span class="w">         </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="c1">// For all other elements and actions, use the default Rapise logic</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span>
+<span class="w">   </span><span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><strong>Example 2: Waiting for a Spinner to Disappear</strong></p>
+<p>Some elements show a "spinner" or have a "loading" CSS class while their content is being updated. The element might be visible and enabled, but not truly ready. We can use the callback to wait for this class to be removed.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Common.js</span>
+<span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="nx">SeSOnNavigatorAutoWait</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**HTMLObject*/</span><span class="nx">obj</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">,</span><span class="w"> </span><span class="nx">elInfo</span><span class="p">,</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">attempt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Check for a &#39;loading&#39; class on the element</span>
+<span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">className</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">obj</span><span class="p">.</span><span class="nx">GetClass</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">className</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;loading&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="c1">// If it has the &#39;loading&#39; class, it&#39;s not ready. Skip default checks and try again.</span>
+<span class="w">         </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="c1">// If no &#39;loading&#39; class, fall back to the default Rapise checks</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span>
+<span class="w">   </span><span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><strong>Example 3: Relaxing Conditions After Several Attempts</strong></p>
+<p>Sometimes you want a strict check initially, but if the element is still not ready, you might want to relax the conditions. The <code>attempt</code> parameter is perfect for this.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Common.js or Main.js</span>
+
+<span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">   </span><span class="nx">SeSOnNavigatorAutoWait</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">,</span><span class="w"> </span><span class="nx">elInfo</span><span class="p">,</span><span class="w"> </span><span class="nx">xOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">yOffset</span><span class="p">,</span><span class="w"> </span><span class="nx">attempt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;click&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="c1">// For the first 5 attempts, require the element to receive events.</span>
+<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">attempt</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">               </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// Use default logic, which is strict.</span>
+<span class="w">         </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">               </span><span class="c1">// After 5 attempts, if it&#39;s still not ready, relax the rule.</span>
+<span class="w">               </span><span class="c1">// As long as it&#39;s visible and enabled, let&#39;s try to click it anyway.</span>
+<span class="w">               </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">elInfo</span><span class="p">.</span><span class="nx">Visible</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">elInfo</span><span class="p">.</span><span class="nx">Enabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                  </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;AutoWait: Relaxing &#39;ReceivesEvents&#39; check after &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">attempt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; attempts.&quot;</span><span class="p">);</span>
+<span class="w">                  </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// Force the click to proceed.</span>
+<span class="w">               </span><span class="p">}</span>
+<span class="w">         </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="c1">// For other actions, or for the first 5 click attempts, use default logic.</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">   </span><span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p>Auto-Waiting improves the robustness of web tests by ensuring elements are interactable before executing actions. Its default settings and configurability make it a powerful tool for handling dynamic web applications. Adjusting Auto-Wait settings or disabling it when necessary can help tailor the testing process to your specific requirements.</p>
                 

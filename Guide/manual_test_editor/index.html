@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11115,6 +11127,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11408,35 +11432,35 @@
                 <h1 id="manual-test-editor">Manual Test Editor<a class="headerlink" href="#manual-test-editor" title="Permanent link">&para;</a></h1>
 <p><img alt="manual_test_editor" src="../img/manual_test_editor1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The <strong>Manual Test Editor</strong> lets you create and edit manual test cases that are stored in <a href="../spiratest_integration/">Spira</a>. These manual test cases contain a high level description of the test case as well a detailed set of steps and associated expected results that make up the manual test script. These manual tests can be <a href="../manual_playback/">executed manually</a> in Rapise (or in Spira) as well as used as the basis for creating a related automated test script. Such automated test scripts may be linked to individual test steps by means of the <a href="../scenarios/">test scenario</a> approach.</p>
+<p>The <strong>Manual Test Editor</strong> allows you to create and edit manual test cases that are stored in <a href="../spiratest_integration/">Spira</a>. These manual test cases contain a high-level description of the test case, as well as a detailed set of steps and associated expected results that constitute the manual test script. These manual tests can be <a href="../manual_playback/">executed manually</a> in Rapise (or in Spira) and also serve as the basis for creating a related automated test script. Such automated test scripts can be linked to individual test steps using the <a href="../scenarios/">test scenario</a> approach.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>You can open the <strong>Manual</strong> toolbar by either clicking on the <strong>Manual Steps</strong> icon on the main <a href="../menu_and_toolbars/#main-toolbar">Main Toolbar</a> or clicking on the <strong>ManualSteps.rmt</strong> file in the <a href="../test_files_dialog/">Files</a> tab. The <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a> will be displayed whenever you have the Manual Test Editor open.</p>
+<p>You can open the <strong>Manual</strong> toolbar by either clicking the <strong>Manual Steps</strong> icon on the main <a href="../menu_and_toolbars/#main-toolbar">Main Toolbar</a> or clicking the <strong>ManualSteps.rmt</strong> file in the <a href="../test_files_dialog/">Files</a> tab. The <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a> is displayed whenever the Manual Test Editor is open.</p>
 <h2 id="test-case-namedescription">Test Case Name/Description<a class="headerlink" href="#test-case-namedescription" title="Permanent link">&para;</a></h2>
 <p><img alt="manual_test_editor_test_case" src="../img/manual_test_editor2.png" width="493px" /></p>
-<p>This section lets you edit the name and long formatted description of the test case. The rich text editor lets you choose the font name, font size, text color, highlight color, style (bold, underline, italic) as well as provides easy ability to add links, bullets and numbered lists.</p>
-<p>In addition there is a button that lets you <a href="../image_capture/">add screenshots</a>.</p>
+<p>This section allows you to edit the name and long, formatted description of the test case. The rich text editor allows you to choose the font name, font size, text color, highlight color, and style (bold, underline, italic). It also provides an easy way to add links, bullet points, and numbered lists.</p>
+<p>Additionally, there is a button that allows you to <a href="../image_capture/">add screenshots</a>.</p>
 <h2 id="test-step-editor">Test Step Editor<a class="headerlink" href="#test-step-editor" title="Permanent link">&para;</a></h2>
 <p><img alt="manual_test_editor_test_steps" src="../img/manual_test_editor3.png" width="634px" /></p>
-<p>This section lets you add, edit and delete test steps from the manual test case. Each of the test steps contains four fields:</p>
+<p>This section allows you to add, edit, and delete test steps from the manual test case. Each test step contains four fields:</p>
 <ul>
 <li>
-<p><strong>Step ID</strong> - this contains the position number of the test step (e.g. step 1) as well as the ID of the test step as it exists in Spira. If you click on the [TS:xxx] label it will automatically copy this into the Windows clipboard. This allows you to easily paste the ID of the test step into your automated test scripts which allows Rapise to <a href="../spiratest_integration/">report back test results to Spira</a> against specific test steps.</p>
+<p><strong>Step ID</strong> - This field contains the position number of the test step (e.g., step 1) and the ID of the test step as it exists in Spira. Clicking the [TS:xxx] label automatically copies the ID to the Windows clipboard. This allows you to easily paste the test step's ID into your automated test scripts, enabling Rapise to <a href="../spiratest_integration/">report test results back to Spira</a> against specific test steps.</p>
 </li>
 <li>
-<p><strong>Description</strong> - this is a description of the test procedure that the tester should perform.</p>
+<p><strong>Description</strong> - This field describes the test procedure that the tester should perform.</p>
 </li>
 <li>
-<p><strong>Expected Result</strong> - This is a description of the expected result that should be observed if the system being tested performs correctly.</p>
+<p><strong>Expected Result</strong> - This field describes the expected outcome if the system under test performs correctly.</p>
 </li>
 <li>
-<p><strong>Sample Data</strong> - This is an optional field that contains any sample data that should be used in the test</p>
+<p><strong>Sample Data</strong> - This optional field contains any sample data to be used in the test.</p>
 </li>
 </ul>
-<p>Each of the fields provides a rich text editor lets you choose the font name, font size, text color, highlight color, style (bold, underline, italic) as well as provides easy ability to add links, bullets and numbered lists. In addition there is a button that lets you <a href="../image_capture/">add screenshots</a> to the test step.</p>
-<p>For ease of editing, you can navigate between the rows and columns using the <strong>ALT + Arrow keys</strong> on the keyboard.</p>
+<p>Each of these fields provides a rich text editor that allows you to choose the font name, font size, text color, highlight color, and style (bold, underline, italic). It also provides an easy way to add links, bullet points, and numbered lists. Additionally, there is a button that allows you to <a href="../image_capture/">add screenshots</a> to the test step.</p>
+<p>For ease of editing, you can navigate between rows and columns using the <strong>ALT + Arrow keys</strong> on the keyboard.</p>
 <h2 id="automating-test-steps">Automating Test Steps<a class="headerlink" href="#automating-test-steps" title="Permanent link">&para;</a></h2>
-<p>Sometimes you have a primarily manual test case that you want to automate certain steps of. For example you may want to automate the setup of the test data or login to the application before carrying out manual testing. Such a test is called a <a href="../semi_manual_testing/">semi-manual test</a>.</p>
-<p>To do this, you enter the syntax <strong>@FunctionName();</strong> in the Description box of the test step. Then when you run the test, that step will be executed automatically. The <strong>@FunctionName();</strong> refers to a JavaScript <a href="../defining_functions/">user function</a> called <code>function FunctionName()</code> in the <code>User.js</code> file.</p>
+<p>Sometimes, you may have a primarily manual test case where you want to automate certain steps. For example, you might want to automate the setup of test data or the login process to an application before carrying out manual testing. Such a test is called a <a href="../semi_manual_testing/">semi-manual test</a>.</p>
+<p>To do this, enter the syntax <strong>@FunctionName();</strong> in the test step's Description box. Then, when you run the test, that step is executed automatically. The <strong>@FunctionName();</strong> refers to a JavaScript <a href="../defining_functions/">user function</a> named <code>function FunctionName()</code> in the <code>User.js</code> file.</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <p><img alt="manual_test_editor_scenario_name" src="../img/manual_test_editor4.png" /></p>
                 

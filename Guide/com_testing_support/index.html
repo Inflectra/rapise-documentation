@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11102,6 +11114,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11381,15 +11405,15 @@
                 
                 <h1 id="com-testing-support">COM Testing Support<a class="headerlink" href="#com-testing-support" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Microsoft's <strong>Component Object Model</strong> (COM) is a standard for communication between separately engineered software components (<a href="http://www.microsoft.com/com/default.mspx">source</a>).  Any object with a COM interface can be created and used remotely.</p>
+<p>Microsoft's <strong>Component Object Model</strong> (COM) is a standard for communication between separately engineered software components (<a href="http://www.microsoft.com/com/default.mspx">source</a>). Any object with a COM interface can be created and used remotely.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h2 id="creating-a-com-object">Creating a COM Object<a class="headerlink" href="#creating-a-com-object" title="Permanent link">&para;</a></h2>
-<p>You can create a COM object using Windows' <strong>ActiveXObject</strong> class.  Once the object is created, method invocation is the same as with any other object in your program.  The methods available will depend on the object's COM interface.  The following example shows how to create an instance of the Word application and open a file.</p>
+<p>You can create a COM object using Windows' <strong>ActiveXObject</strong> class. Once the object is created, you can invoke its methods just as you would with any other object in your program. The methods available will depend on the object's COM interface. The following example shows how to create an instance of the Word application and open a file.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;Word.Application&quot;</span><span class="p">);</span>
 <span class="nx">doc</span><span class="p">.</span><span class="nx">Documents</span><span class="p">.</span><span class="nx">Open</span><span class="p">(</span><span class="nx">wordFileName</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="test-samples">Test Samples<a class="headerlink" href="#test-samples" title="Permanent link">&para;</a></h2>
-<p>There are several <a href="../sample_tests/">test samples</a> that show how to Unit Test application modules via COM interface:</p>
+<p>There are several <a href="../sample_tests/">test samples</a> that show how to unit test application modules via COM interface:</p>
 <ul>
 <li>UsingMSWord</li>
 <li>UsingMSExcel</li>

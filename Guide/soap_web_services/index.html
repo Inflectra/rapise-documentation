@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11109,6 +11121,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11398,45 +11422,45 @@
 
 <h2 id="what-is-soap-and-what-is-a-soap-web-service">What is SOAP and what is a SOAP web service?<a class="headerlink" href="#what-is-soap-and-what-is-a-soap-web-service" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web services make use of the Web Service Definition Language (WDSL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML that can then be passed to the web service. The XML passed to the SOAP web services needs to match the format specified in the WSDL.</p>
+<p>SOAP is the **S**imple **O**bject **A**ccess **P**rotocol, and allows you to make API calls over HTTP/HTTPS using specially formatted XML. SOAP web services use the Web Service Definition Language (WSDL) and communicate using HTTP POST requests. They are essentially a serialization of RPC object calls into XML for transmission to the web service. The XML passed to the SOAP web service must match the format specified in the WSDL.</p>
 </blockquote>
 <!-- /* cSpell:enable */ -->
 <blockquote>
-<p>SOAP web services are fully self-descriptive, so most clients do not directly work with the SOAP XML language, but instead use a client-side proxy generator that creates client object representations of the web service (e.g. Java, .NET objects). The web service consumers interact with these language-specific representations of the SOAP web service. However when these SOAP calls fail you need a way of testing them that includes being able to inspect the raw SOAP XML that is actually being sent.</p>
+<p>SOAP web services are fully self-descriptive, so most clients do not directly interact with the raw SOAP XML, but instead use a client-side proxy generator that creates client-side object representations of the web service (e.g., Java, .NET objects). Web service consumers interact with these language-specific representations of the SOAP web service. However, when these SOAP calls fail, you need a way to test them that allows you to inspect the raw SOAP XML that was actually sent.</p>
 </blockquote>
 <h2 id="how-does-rapise-test-soap-web-services">How does Rapise test SOAP web services?<a class="headerlink" href="#how-does-rapise-test-soap-web-services" title="Permanent link">&para;</a></h2>
 <p>Creating a SOAP web service test in Rapise consists of the following steps:</p>
 <ol>
 <li>
-<p>Using the <a href="../soap_definition_editor/">SOAP test studio</a> to create the various SOAP web service test actions and verify that they return the expected data in the expected format.</p>
+<p>Using the <a href="../soap_definition_editor/">SOAP test studio</a> to create the necessary SOAP web service test actions and verify that they return data in the expected format.</p>
 </li>
 <li>
-<p>Saving each of these SOAP API functions as Rapise learned objects.</p>
+<p>Saving each of these SOAP API functions as Rapise-learned objects.</p>
 </li>
 <li>
-<p>Generating the <a href="../scripting/">test script</a> in Javascript that uses the learned Rapise web service objects.</p>
+<p>Generating the <a href="../scripting/">test script</a> in JavaScript that uses the Rapise-learned web service objects.</p>
 </li>
 </ol>
 <h2 id="rapise-soap-testing-studio">Rapise SOAP Testing Studio<a class="headerlink" href="#rapise-soap-testing-studio" title="Permanent link">&para;</a></h2>
-<p>When you add a SOAP web service to your Rapise test project, you get a new SOAP definition file (<code>.soap</code>) that will store all of the test invocations against a specific SOAP web service:</p>
+<p>When you add a SOAP web service to your Rapise test project, you get a new SOAP definition file (<code>.soap</code>) that stores all test invocations for a specific SOAP web service:</p>
 <p><img alt="soap definition editor" src="../img/soap_web_services1.png" /></p>
-<p>The SOAP test studio (illustrated above) works by connecting to the WSDL location that you specify in the <strong>Endpoint</strong> part of the <a href="../toolbar_soap/">Toolbar</a>:</p>
+<p>The SOAP test studio (illustrated above) connects to the WSDL location specified in the <strong>Endpoint</strong> section of the <a href="../toolbar_soap/">Toolbar</a>:</p>
 <p><img alt="Toolbar SOAP Endpoint" src="../img/soap_web_services2.png" /></p>
-<p>When you enter in the URL to your SOAP Web Service WSDL file and click <code>Get WSDL</code>, Rapise will download the WSDL file and display the list of available methods in the SOAP explorer:</p>
+<p>When you enter the URL of your SOAP web service's WSDL file and click <code>Get WSDL</code>, Rapise downloads the WSDL file and displays the list of available methods in the SOAP explorer:</p>
 <p><img alt="SOAP Methods" src="../img/soap_web_services3.png" /></p>
-<p>Clicking on one of the available methods (e.g. <strong>"Connection_Authenticate"</strong>) will display that method in the main SOAP editor. Normally you will start using the <strong>Invoke</strong> tab of the SOAP editor:</p>
+<p>Clicking one of the available methods (e.g., <strong>"Connection_Authenticate"</strong>) displays that method in the main SOAP editor. Typically, you start by using the <strong>Invoke</strong> tab of the SOAP editor:</p>
 <p><img alt="Invoke" src="../img/soap_web_services4.png" /></p>
-<p>This is where you can tell Rapise to invoke the method, pass any expected parameters and view the response from the service.</p>
-<p>If the SOAP method expects input parameters, they will be displayed in the "Body" section of the Input in a treeview. You can expand the tree and fill in the various values. In the example above, we have passed the login and password as parameters.</p>
+<p>This is where you can tell Rapise to invoke the method, pass any required parameters, and view the response from the service.</p>
+<p>If the SOAP method requires input parameters, they are displayed in the "Body" section of the Input as a tree view. You can expand the tree and enter the various values. In the example above, the login and password are passed as parameters.</p>
 <p><img alt="Body Parameters" src="../img/soap_web_services_inputvalue.png" /></p>
-<p>When you click the <code>Invoke</code> button, Rapise will send the SOAP request to the API and display the returned output in the Output section. In this case we get the value "True" back, indicating that our authentication request was successful.</p>
+<p>When you click the <code>Invoke</code> button, Rapise sends the SOAP request to the API and displays the returned output in the Output section. In this case, the value "True" is returned, indicating successful authentication.</p>
 <p><img alt="Invoke Result" src="../img/soap_web_services_invokeres.png" /></p>
-<p>You can also click on the <strong>Request/Response</strong> tab to view the raw SOAP XML that was sent to and from the server. This is very useful when debugging a service that does not work as expected.</p>
+<p>You can also click the <strong>Request/Response</strong> tab to view the raw SOAP XML that was sent to and from the server. This is very useful when debugging a service that is not working as expected.</p>
 <p><img alt="Request/Response Tab" src="../img/soap_web_services_requestresponse.png" /></p>
 <h2 id="web-service-object-recognition">Web Service Object Recognition<a class="headerlink" href="#web-service-object-recognition" title="Permanent link">&para;</a></h2>
-<p>Unlike the REST web service testing editor, each SOAP endpoint will generate a single Rapise SOAP object in the object tree:
+<p>Unlike the REST web service testing editor, each SOAP endpoint generates a single Rapise SOAP object in the object tree:
 <img alt="soap_object_tree" src="../img/soap_web_services6.png" /></p>
-<p>The object WebServicesSOAP maps to a corresponding <code>.soap</code> file in the Rapise project. Such an object can be used for all of the web service requests in that file:</p>
+<p>The <code>WebServicesSOAP</code> object maps to a corresponding <code>.soap</code> file in the Rapise project. Such an object can be used for all web service requests in that file:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">WebServicesSOAP</span><span class="o">=</span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;WebServicesSOAP&#39;</span><span class="p">);</span>
 <span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Connection_Authenticate&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;userName&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;librarian&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;password&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;librarian&quot;</span><span class="p">},</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="p">);</span>
 <span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Book_Retrieve&#39;</span><span class="p">);</span>
@@ -11444,21 +11468,21 @@
 <span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Book_Insert&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;book&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w">   </span><span class="s2">&quot;Author&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;AuthorId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;AuthorIdSpecified&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DateAddedIso&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2016-10-02T20:00:00&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Genre&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;GenreId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;GenreIdSpecified&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">   </span><span class="s2">&quot;Id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w">   </span><span class="s2">&quot;IdSpecified&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">   </span><span class="s2">&quot;IsOutOfPrint&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">   </span><span class="s2">&quot;IsOutOfPrintSpecified&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">   </span><span class="s2">&quot;Name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;A Christmas Carol&quot;</span><span class="w"> </span><span class="p">}}</span><span class="w"> </span><span class="p">);</span>
 <span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Resp: &quot;</span><span class="o">+</span><span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">RequestProperties</span><span class="p">.</span><span class="nx">requestPayLoad</span><span class="p">);</span>
 </code></pre></div>
-<p>In the example above, the same object "WebServicesSOAP" is being used with <code>DoExecute</code> with different SOAP methods passed as the first parameter (<strong>"Connection_Authenticate"</strong>, <strong>"Book_Retrieve"</strong>, <strong>"Book_Insert"</strong>).</p>
+<p>In the example above, the <code>WebServicesSOAP</code> object is used with <code>DoExecute</code> and different SOAP methods passed as the first parameter (<strong>"Connection_Authenticate"</strong>, <strong>"Book_Retrieve"</strong>, <strong>"Book_Insert"</strong>).</p>
 <h2 id="generating-rapise-soap-test-scripts">Generating Rapise SOAP Test Scripts<a class="headerlink" href="#generating-rapise-soap-test-scripts" title="Permanent link">&para;</a></h2>
-<p>To save time, Rapise can generate the test scripts code automatically for you (instead of having to write it by hand). To do that, after you have verified that a particular method works as expected, when you click the <strong>Invoke</strong> command, then click the <code>Record</code> button to record the step, and if you want to verify the data returned, also click on the <code>Verify</code> button. That will generate the following:</p>
+<p>To save time, Rapise can generate the test script code automatically, eliminating the need for manual scripting. To do so, after verifying that a particular method works as expected, click the <strong>Invoke</strong> command. Then, click the <code>Record</code> button to record the step. If you want to verify the returned data, also click the <code>Verify</code> button. This generates the following:</p>
 <p><img alt="SOAP Script Steps" src="../img/soap_web_services7.png" /></p>
-<p>The steps recorded will be in <strong>bold</strong> type if they include a verification step, and will be in normal type if they are simply invoked with no verification. When you click the <code>Create Script</code> button, the following will be generated:</p>
+<p>The recorded steps are in <strong>bold</strong> type if they include a verification step, and are in normal type if they are simply invoked without verification. When you click the <code>Create Script</code> button, the following is generated:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Connection_Authenticate&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;userName&quot;</span><span class="o">:</span><span class="s2">&quot;librarian&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="o">:</span><span class="s2">&quot;librarian&quot;</span><span class="p">});</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Connection_Authenticate Response&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">GetResponseObject</span><span class="p">(),</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;Body&quot;</span><span class="o">:</span><span class="p">{</span><span class="s2">&quot;Connection_AuthenticateResult&quot;</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span><span class="s2">&quot;Connection_AuthenticateResultSpecified&quot;</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span><span class="s2">&quot;Headers&quot;</span><span class="o">:</span><span class="p">{}});</span>
 <span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Book\_Retrieve&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{});</span>
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s1">&#39;Book_Retrieve Response&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">GetResponseObject</span><span class="p">(),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">});</span>
 <span class="nx">WebServicesSOAP</span><span class="p">.</span><span class="nx">DoExecute</span><span class="p">(</span><span class="s1">&#39;Connection_Disconnect&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{});</span>
 </code></pre></div>
-<p>The script is always generated within the <code>Test()</code> function of the current <code>Main.js</code> file. The term <em>current</em> refers to the <code>Main.js</code> file of the test, test case, or Page Object / Module to which this <code>.soap</code> definition belongs.</p>
-<p>In the case of a Page Object, you would need to cut the generated code from <code>Test()</code> and paste it into the corresponding <code>&lt;PageObject&gt;_DoAction</code> function.</p>
+<p>The script is always generated within the <code>Test()</code> function of the current <code>Main.js</code> file. The term <em>current</em> refers to the <code>Main.js</code> file of the test, test case, or Page Object/Module to which this <code>.soap</code> definition is associated.</p>
+<p>In the case of a Page Object, you must cut the generated code from <code>Test()</code> and paste it into the corresponding <code>&lt;PageObject&gt;_DoAction</code> function.</p>
 <h2 id="playback-of-soap-tests">Playback of SOAP Tests<a class="headerlink" href="#playback-of-soap-tests" title="Permanent link">&para;</a></h2>
-<p>Once you have created your SOAP web service tests, you can use the standard <a href="../playback/">Playback</a> functionality in Rapise to execute your test and display the report:
+<p>Once you create your SOAP web service tests, you can use the standard <a href="../playback/">Playback</a> functionality in Rapise to execute your tests and display the report:
 <img alt="soap_playback" src="../img/soap_web_services8.png" /></p>
                 
               

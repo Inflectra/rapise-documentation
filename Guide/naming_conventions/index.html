@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11095,6 +11107,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11367,21 +11391,21 @@
                 
                 <h1 id="naming-conventions">Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The Rapise engine and API follow some simple naming conventions.</p>
+<p>The Rapise engine and API follow simple naming conventions.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>You will find descriptions of the naming conventions below.  Note: italicized text represents placeholders.</p>
+<p>You will find descriptions of the naming conventions below. Note: Italicized text represents placeholders.</p>
 <ul>
-<li>SeS*&lt;...&gt;* - public functions for user</li>
+<li>SeS*&lt;...&gt;* - public functions for users</li>
 <li>Do*&lt;Action&gt;* - action implementations</li>
 <li>_<em>&lt;somevar&gt;</em> and _<em>&lt;somename&gt;</em> - private functions and objects</li>
 <li>g_<em>&lt;varname&gt;</em> - system global variable.</li>
 </ul>
 <h2 id="private-variables-and-functions-in-the-object-tree">Private Variables and Functions in the Object Tree<a class="headerlink" href="#private-variables-and-functions-in-the-object-tree" title="Permanent link">&para;</a></h2>
 <p>Any custom function or variable that you define in <code>User.js</code>, <code>Common.js</code>, or any other <code>.js</code> file will be displayed in the corresponding node of the object tree.</p>
-<p>However, there are two exceptions that can help you hide internal functions or variables from the tree:</p>
+<p>However, there are two exceptions that help you hide internal functions or variables from the tree:</p>
 <ol>
 <li>
-<p>If you prefix a function name with an underscore, such as _myFunc, those functions will be automatically filtered and not displayed in the tree.</p>
+<p>If you prefix a function name with an underscore, such as _myFunc, these functions will be automatically filtered and not displayed in the tree.</p>
 </li>
 <li>
 <p>You can use <code>/** @private */</code> and <code>/** @ignore */</code> comments to indicate that a function or variable should be treated as private or ignored, respectively.</p>
@@ -11389,7 +11413,7 @@
 </ol>
 <p><img alt="Public and Private" src="../img/naming_conventions_private_functions.png" /></p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>Here are some examples to clarify the above conventions:</p>
+<p>Here are some examples to clarify these conventions:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;object&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// gets the object named &quot;object&quot;</span>
 <span class="nx">DoClick</span><span class="p">()</span><span class="w">     </span><span class="c1">// public action function to click on something</span>
 <span class="nx">_mydata</span><span class="w">       </span><span class="c1">// private variable called mydata</span>

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11122,6 +11134,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11421,22 +11445,22 @@
                 
                 <h1 id="defining-functions">Defining Functions<a class="headerlink" href="#defining-functions" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The Rapise test script is in JavaScript. You may define as many JavaScript functions as you would like to call from your test script.</p>
+<p>The Rapise test script is in JavaScript. You can define any number of JavaScript functions to call from your test script.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>There are three ways to maintain additional functions: (1) In <code>Common.js</code> (2) Inside your test script and (3) in an external file.</p>
+<p>There are three ways to define additional functions: (1) in <code>Common.js</code>, (2) inside your test script, and (3) in an external file.</p>
 <h2 id="inside-your-test-script">Inside your Test Script<a class="headerlink" href="#inside-your-test-script" title="Permanent link">&para;</a></h2>
 <h3 id="in-commonjs">In Common.js<a class="headerlink" href="#in-commonjs" title="Permanent link">&para;</a></h3>
-<p>Preferred way is to have a <a href="../Frameworks/frameworks/#managing-common-data">testing framework</a> and with shared file. Its default name <code>Common.js</code> although you may have other files marked with <code>shared</code> tag and thus being automatically loaded during playback and shown in the shared node.</p>
+<p>The preferred way is to use a <a href="../Frameworks/frameworks/#managing-common-data">testing framework</a> with a shared file. Its default name is <code>Common.js</code>, although you may use other files marked with a <code>shared</code> tag. These files are automatically loaded during playback and displayed in the shared node.</p>
 <p><img alt="Common.js" src="../img/defining_functions_commonjs.png" /></p>
 <h3 id="in-userjs">In User.js<a class="headerlink" href="#in-userjs" title="Permanent link">&para;</a></h3>
-<p>It is recommended to put test case specific functions into <code>User.js</code> file available in any test from its creation (in most cases it is not needed and <code>Common.js</code> is preferred:</p>
+<p>It is recommended to put test-case-specific functions into the <code>User.js</code> file. This file is available for any test from its creation (in most cases, <code>User.js</code> is not needed, and <code>Common.js</code> is preferred).</p>
 <p><img alt="User.js from toolbar" src="../img/defining_functions_userjs_toolbar.png" /></p>
-<p>This file is automatically attached into every script. All variables and functions defined in it may be used in the test. User-defined functions are also available under the <strong>Functions</strong> node in the Object Tree:</p>
+<p>This file is automatically attached to every script. All variables and functions defined in it can be used in the test. User-defined functions are also available under the <strong>Functions</strong> node in the Object Tree:</p>
 <p><img alt="Functions" src="../img/defining_functions_user_function.png" /></p>
-<p>You may also open <code>User.js</code> from the <a href="../test_files_dialog/">Files Tree</a>:</p>
+<p>You can also open <code>User.js</code> from the <a href="../test_files_dialog/">Files Tree</a>:</p>
 <p><img alt="User.js files" src="../img/defining_functions_files_userjs.png" /></p>
 <h2 id="in-an-external-file">In an External File<a class="headerlink" href="#in-an-external-file" title="Permanent link">&para;</a></h2>
-<p>You can define your function in another file and include it. Although more common is to include external files into <code>Common.js</code> or into <code>User.js</code>:</p>
+<p>You can define your functions in another file and include them. However, it is more common to include external files in <code>Common.js</code> or <code>User.js</code>:</p>
 <blockquote>
 <p>For example:</p>
 </blockquote>

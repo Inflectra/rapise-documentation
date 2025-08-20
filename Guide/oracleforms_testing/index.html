@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11154,6 +11166,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11487,42 +11511,42 @@
                 
                 <h1 id="oracle-forms-support">Oracle Forms Support<a class="headerlink" href="#oracle-forms-support" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Rapise <a href="../../Libraries/ses_lib_oracleforms/">Oracle Forms Library</a> enables recording, learning and playback of various <a href="https://www.oracle.com/application-development/technologies/forms/forms.html">Oracle Forms</a> controls. </p>
+<p>Rapise <a href="../../Libraries/ses_lib_oracleforms/">Oracle Forms Library</a> enables recording, learning, and playback of various <a href="https://www.oracle.com/application-development/technologies/forms/forms.html">Oracle Forms</a> controls.</p>
 <p><img alt="Oracle Forms Test Screen" src="../img/of_test.png" /></p>
 <h2 id="supported-oracle-forms-versions">Supported Oracle Forms Versions<a class="headerlink" href="#supported-oracle-forms-versions" title="Permanent link">&para;</a></h2>
-<p>Rapise 7.1 has support for <strong>Oracle Forms</strong> version 10 and higher.</p>
+<p>Rapise 7.1 supports <strong>Oracle Forms</strong> versions 10 and higher.</p>
 <h2 id="supported-java-versions">Supported Java Versions<a class="headerlink" href="#supported-java-versions" title="Permanent link">&para;</a></h2>
-<p>Integration should work with other versions of Java (5 and higher). </p>
+<p>Integration works with Java versions 5 and higher.</p>
 <h2 id="preparing-environment">Preparing Environment<a class="headerlink" href="#preparing-environment" title="Permanent link">&para;</a></h2>
 <h3 id="1-java-support">1. Java Support<a class="headerlink" href="#1-java-support" title="Permanent link">&para;</a></h3>
-<p>Don't forget to deploy Rapise Java bridge as described <a href="../java_awt_swing_testing/#java-bridge-installation">here</a>.</p>
+<p>Ensure you deploy the Rapise Java bridge as described <a href="../java_awt_swing_testing/#java-bridge-installation">here</a>.</p>
 <h3 id="2-_java_options">2. _JAVA_OPTIONS<a class="headerlink" href="#2-_java_options" title="Permanent link">&para;</a></h3>
-<p>You need to set environment variable <code>_JAVA_OPTIONS</code>.</p>
+<p>You need to set the environment variable <code>_JAVA_OPTIONS</code>.</p>
 <div class="highlight"><pre><span></span><code>&quot;-javaagent:C:\Program Files (x86)\Inflectra\Rapise\Extensions\JavaWrapper\Agents\PreMainAgent.jar&quot; &quot;-Djava.security.policy=C:\Program Files (x86)\Inflectra\Rapise\Extensions\JavaWrapper\Agents\file.policy&quot;
 </code></pre></div>
 <p><img alt="_JAVA_OPTIONS" src="../img/of_java_options.png" /></p>
-<p>It may be set it through system or user Environment variables. Also, if your application is launched through the .bat file, you may assign <code>_JAVA_OPTIONS</code> there:</p>
+<p>It can be set through system or user environment variables. Alternatively, if your application is launched from a .bat file, you can set <code>_JAVA_OPTIONS</code> there:</p>
 <div class="highlight"><pre><span></span><code>...
 set _JAVA_OPTIONS=&quot;-javaagent:C:\Program Files (x86)\Inflectra\Rapise\Extensions\JavaWrapper\Agents\PreMainAgent.jar&quot; &quot;-Djava.security.policy=C:\Program Files (x86)\Inflectra\Rapise\Extensions\JavaWrapper\Agents\file.policy&quot;
 ...
 rem &lt;launch of the application.jar&gt;
 </code></pre></div>
-<p>Setting <code>_JAVA_OPTIONS</code> globally may affect other software or tools, so, in case of any problems you may remove this variable or rename it to something else.</p>
+<p>Setting <code>_JAVA_OPTIONS</code> globally may affect other software or tools. Therefore, if you encounter any problems, you can remove this variable or rename it to another name.</p>
 <h3 id="3-change-the-launch-url">3. Change the Launch URL<a class="headerlink" href="#3-change-the-launch-url" title="Permanent link">&para;</a></h3>
-<p>See <a href="#launching-oracle-forms-application">Launching Oracle Forms Application</a> to learn more about the changes to the launch process that needs to be done to enable testing</p>
+<p>See <a href="#launching-oracle-forms-application">Launching Oracle Forms Application</a> to learn more about the changes to the launch process that need to be made to enable testing.</p>
 <h2 id="launching-oracle-forms-application">Launching Oracle Forms Application<a class="headerlink" href="#launching-oracle-forms-application" title="Permanent link">&para;</a></h2>
-<p>There are two major ways on how your application may be started: using <strong>Internet Explorer</strong> or using <strong>Java Web Start</strong> (<code>.jnlp</code> file).</p>
-<p>In either case, you need to make sure that the URL to the application contains the following parameters:</p>
+<p>There are two major ways your application can be started: using <strong>Internet Explorer</strong> or <strong>Java Web Start</strong> (<code>.jnlp</code> file).</p>
+<p>In either case, you need to make sure that the application URL contains the following parameters:</p>
 <h3 id="from-internet-explorer">From Internet Explorer<a class="headerlink" href="#from-internet-explorer" title="Permanent link">&para;</a></h3>
 <p>You need to append the following parameter to the URL:
 <code>...&amp;record=names</code></p>
-<p>In case of <strong>Internet Explorer</strong> this means that URL contains this part:</p>
+<p>For <strong>Internet Explorer</strong>, this means the URL must contain this part:</p>
 <p><img alt="URL IE" src="../img/of_ie_url.png" /></p>
 <h3 id="from-java-web-start-jnlp-file">From Java Web Start .jnlp File<a class="headerlink" href="#from-java-web-start-jnlp-file" title="Permanent link">&para;</a></h3>
-<p><code>`...&amp;38;record=names</code></p>
+<p><code>...&amp;record=names</code></p>
 <p><img alt="URL JNLP" src="../img/of_jnlp_url.png" /></p>
 <h2 id="global-object">Global Object<a class="headerlink" href="#global-object" title="Permanent link">&para;</a></h2>
-<p>Rapise <a href="../../Libraries/ses_lib_oracleforms/">Oracle Forms Library</a>  includes <a href="../../Libraries/OracleForms/">OracleForms</a> global object. It mostly used to deal with main menu, notifications and status bar.</p>
+<p>Rapise <a href="../../Libraries/ses_lib_oracleforms/">Oracle Forms Library</a> includes the <a href="../../Libraries/OracleForms/">OracleForms</a> global object. It is mostly used to deal with the main menu, notifications, and status bar.</p>
                 
               
               

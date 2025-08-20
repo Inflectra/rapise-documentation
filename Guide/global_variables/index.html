@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11122,6 +11134,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11422,14 +11446,14 @@
                 <h1 id="global-variables">Global Variables<a class="headerlink" href="#global-variables" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p><strong>Global variables</strong> are variables that can be accessed anywhere in the script.</p>
-<p>A global variable may be declared one or more times. For example, you may declare it in <a href="../../RVL/Variables/#global-variables">RVL</a> and in <em>JavaScript</em> to share the same value.</p>
+<p>A global variable can be declared multiple times. For example, you may declare it in <a href="../../RVL/Variables/#global-variables">RVL</a> and in <em>JavaScript</em> to share the same value.</p>
 <p>Usually, global variables are defined in the <a href="../../RVL/Sheets/">RVL Sheet</a>, <code>Common.js</code>, or in one of the <code>User.js</code> files.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="using-rvl">Using RVL<a class="headerlink" href="#using-rvl" title="Permanent link">&para;</a></h3>
 <p>See <a href="../../RVL/Variables/#global-variables">Global Variables in RVL</a>.</p>
 <h3 id="using-userjs">Using User.js<a class="headerlink" href="#using-userjs" title="Permanent link">&para;</a></h3>
-<p>Any variable defined in the <code>User.js</code> is assumed to be a global variable.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Note, the variable should be declared outside the scope of any function to be global</span>
+<p>Any variable defined in <code>User.js</code> is considered a global variable.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Note: The variable should be declared outside the scope of any function to be global</span>
 <span class="kd">var</span><span class="w"> </span><span class="nx">g_myGlobalVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span>
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">SomeFunction</span><span class="p">()</span>
@@ -11438,25 +11462,25 @@
 <span class="p">...</span>
 </code></pre></div>
 <h3 id="using-commonjs">Using Common.js<a class="headerlink" href="#using-commonjs" title="Permanent link">&para;</a></h3>
-<p>You may want to have a common file with global variable re-used across different tests. In this case you need to include the <code>Common.js</code> in the root of the <code>User.js</code> (it is not recommended to do include from within the <code>Test()</code> function).</p>
+<p>You may want to have a common file with global variables reused across different tests. In this case, you need to include <code>Common.js</code> in the root <code>User.js</code> file (it is not recommended to include it from within the <code>Test()</code> function).</p>
 <p><code>Common.js</code>:
 <div class="highlight"><pre><span></span><code><span class="c1">// Global variable lazy declaration:</span>
 <span class="kd">var</span><span class="w"> </span><span class="nx">g_myGlobalVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span>
 </code></pre></div></p>
 <h3 id="using-sesontestinit">Using SeSOnTestInit<a class="headerlink" href="#using-sesontestinit" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>Note:</strong> This is an older way of defining local variables. Since Rapise 3 new way is preferred.</p>
+<p><strong>Note:</strong> This is an older way of defining local variables. Since Rapise 3, a new way is preferred.</p>
 </blockquote>
 <p>Define your global variables in <a href="../understanding_the_script/#sesontestinig">SeSOnTestInit()</a>. Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample <code>SeSOnTestInit()</code> below.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nb">global</span><span class="p">.</span><span class="nx">number_of_visited_links</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// This variable becomes global</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">local_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// This variable is local for TestInit function</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">local_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// This variable is local for TestInit function</span>
 <span class="p">});</span>
 </code></pre></div>
-<p>The keyword <strong>var</strong> gives variables local scope. A variable initialized <code>global.varname=...</code> automatically becomes a global.</p>
+<p>The <code>var</code> keyword creates variables with local scope. A variable initialized with <code>global.varname=...</code> automatically becomes a global variable.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li>See <a href="../multiple_recordings/">Making Multiple Recordings</a> for details on what effect the script recorder will have on your test script.</li>
+<li>See <a href="../multiple_recordings/">Making Multiple Recordings</a> for details on the effect the script recorder will have on your test script.</li>
 <li>For details on the structure of the test script, see <a href="../understanding_the_script/">Understanding the Script</a>.</li>
 </ul>
                 

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11091,6 +11103,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11362,8 +11386,8 @@
                 
                 
                 <h1 id="if-else">If - Else<a class="headerlink" href="#if-else" title="Permanent link">&para;</a></h1>
-<p><code>If</code> using for branching statements in RVL.</p>
-<p>Basic branch statement has 2 parts: 1<sup>st</sup> row is <code>If</code> flow with <a href="../Conditions/">Condition</a>:</p>
+<p><code>If</code> is used for branching statements in RVL.</p>
+<p>A basic branch statement has two parts: the first row is the <code>If</code> flow with a <a href="../Conditions/">Condition</a>:</p>
 <h2 id="if">If<a class="headerlink" href="#if" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -11419,9 +11443,9 @@
 </tr>
 </tbody>
 </table>
-<p>Actions after <code>If</code> condition and up to <code>End</code> statement are executed when condition is truth.</p>
+<p>The actions after the <code>If</code> condition and before the <code>End</code> statement are executed when the condition is true.</p>
 <h2 id="if-else_1">If-Else<a class="headerlink" href="#if-else_1" title="Permanent link">&para;</a></h2>
-<p><code>If-Else</code> statement is similar to <code>If</code> with one extension. It contains an alternative <code>Else</code> section that is executed when <code>If</code> condition is false:</p>
+<p>The <code>If-Else</code> statement is similar to <code>If</code>, with one extension. It contains an alternative <code>Else</code> section that is executed when the <code>If</code> condition is false:</p>
 <table>
 <thead>
 <tr>
@@ -11493,8 +11517,8 @@
 </tbody>
 </table>
 <h2 id="if-elseif">If-ElseIf<a class="headerlink" href="#if-elseif" title="Permanent link">&para;</a></h2>
-<p><code>ElseIf</code> is a way to establish a chain of conditions. Each condition is evaluated with previous is false.</p>
-<p><code>If-Else</code> statement is similar to <code>If</code> with one extension. It contains an alternative <code>Else</code> section that is executed when <code>If</code> condition is false:</p>
+<p><code>ElseIf</code> is a way to establish a chain of conditions. Each condition is evaluated only when the previous one is false.</p>
+<p>The <code>If-Else</code> statement is similar to <code>If</code>, with one extension. It contains an alternative <code>Else</code> section that is executed when the <code>If</code> condition is false:</p>
 <table>
 <thead>
 <tr>
@@ -11581,7 +11605,7 @@
 </tr>
 </tbody>
 </table>
-<p>There may be many ElseIf` blocks:</p>
+<p>There may be many <code>ElseIf</code> blocks:</p>
 <table>
 <thead>
 <tr>
@@ -11714,7 +11738,7 @@
 </tr>
 </tbody>
 </table>
-<p>And there might also be an <code>Else</code> block in the end:</p>
+<p>An <code>Else</code> block can also be included at the end:</p>
 <table>
 <thead>
 <tr>
@@ -11866,7 +11890,7 @@
 </tbody>
 </table>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>Check if <code>Log In</code> link available. If so, do login:</p>
+<p>Check if the <code>Log In</code> link is available. If so, log in:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="If Check Object Exists" src="../img/IfElse_CheckLogin.png" /></p>
 </div>
@@ -11960,7 +11984,7 @@
 </table>
 </div>
 </div>
-<p>Check if we use old version of OS and assign a variable <code>OldWindows</code> accordingly:</p>
+<p>Check if an old version of the OS is in use and assign the <code>OldWindows</code> variable accordingly:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="If Check OS Version" src="../img/IfElse_CheckOldOs.png" /></p>
 </div>

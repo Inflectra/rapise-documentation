@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -3475,22 +3487,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#take-no-action" class="md-nav__link">
-    Take no Action
+  <a href="#no-action-required" class="md-nav__link">
+    No Action Required
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-match-details-to-build-webappprofile" class="md-nav__link">
-    Use Match Details to Build WebAppProfile
+  <a href="#using-match-details-to-build-a-webappprofile" class="md-nav__link">
+    Using Match Details to Build a WebAppProfile
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-object-manager" class="md-nav__link">
-    Use Object Manager
+  <a href="#using-the-object-manager" class="md-nav__link">
+    Using the Object Manager
   </a>
   
 </li>
@@ -11163,6 +11175,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11415,22 +11439,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#take-no-action" class="md-nav__link">
-    Take no Action
+  <a href="#no-action-required" class="md-nav__link">
+    No Action Required
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-match-details-to-build-webappprofile" class="md-nav__link">
-    Use Match Details to Build WebAppProfile
+  <a href="#using-match-details-to-build-a-webappprofile" class="md-nav__link">
+    Using Match Details to Build a WebAppProfile
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-object-manager" class="md-nav__link">
-    Use Object Manager
+  <a href="#using-the-object-manager" class="md-nav__link">
+    Using the Object Manager
   </a>
   
 </li>
@@ -11502,45 +11526,45 @@
                 
                 
                 <h1 id="self-healing-web-locators">Self-healing Web Locators<a class="headerlink" href="#self-healing-web-locators" title="Permanent link">&para;</a></h1>
-<p>Since <strong>version 6.2</strong> Rapise gets self-healing Web element locators. It means significant improvement in two areas of automated testing of Web applications:</p>
+<p>Since <strong>version 6.2</strong>, Rapise has included self-healing web element locators. This represents a significant improvement in two areas of automated web application testing:</p>
 <ol>
-<li>Better recording experience. Modern applications more and more use dynamically generated IDs and Class Names that change on every page reload. It leads to necessity to fix locators after recording. With self-healing locators Rapise is able to guess and find required elements without the need for manual locator tweaking.</li>
-<li>More efficient maintenance of tests. Developers modify applications and break Web element locators from time to time. Nobody can predict how a locator may change. If locator is broken Rapise tries to find most matching element and generate new locator for it.</li>
+<li>Better recording experience. Modern applications increasingly use dynamically generated IDs and class names that change with every page reload. This often necessitates fixing locators after recording. With self-healing locators, Rapise can intelligently locate the required elements without manual locator tweaking.</li>
+<li>More efficient test maintenance. Developers occasionally modify applications in ways that break web element locators. No one can predict precisely how a locator might change. If a locator is broken, Rapise attempts to find the most matching element and generate a new locator for it.</li>
 </ol>
 <h2 id="how-to-enable">How to Enable<a class="headerlink" href="#how-to-enable" title="Permanent link">&para;</a></h2>
-<p>To enable self-healing features set <code>g_aiEnable</code> flag in <a href="../understanding_the_script/">TestPrepare</a> block of your test.</p>
+<p>To enable self-healing features, set the <code>g_aiEnable</code> flag in your test's <a href="../understanding_the_script/">TestPrepare</a> block.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">g_aiEnable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>When this flag is set Rapise generates full-path locator for each recorded element. The full-path locator includes information about all attributes of an element and attributes of its ancestors in the DOM tree.</p>
+<p>When this flag is set, Rapise generates a full-path locator for each recorded element. The full-path locator includes information about all attributes of an element and its ancestors in the DOM tree.</p>
 <h2 id="how-it-works">How it Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
-<p>When you run a test and an element is found with traditional XPath locator then full-path locator is not used. There is nothing to repair. But if XPath generated for an element during recording or manually created by a tester is not valid then full-path locator is used to find the most suitable element on the page. When full-path locator is used you get the following healing notification in the report:</p>
+<p>When you run a test and an element is found using a traditional XPath locator, the full-path locator is not used. There is nothing to repair in such cases. However, if the XPath generated for an element during recording (or manually created by a tester) is not valid, the full-path locator is used to find the most suitable element on the page. When the full-path locator is used, you will see the following healing notification in the report:</p>
 <p><img src="/Guide/img/web_self_healing_report.png" width="784" /></p>
-<p>The healing notification indicates that an element was found with some confidence, it is a number from zero to 100%. In the notification details you can find the difference between recorded and matched elements. You can also see the images of the recorded and found elements. This information is a clue to either accept found element or manually fix the test.</p>
+<p>The healing notification indicates that an element was found with a certain level of confidence, expressed as a percentage from zero to 100%. In the notification details, you can find the difference between the recorded and matched elements. You can also see images of both the recorded and found elements. This information provides a clue to either accept the found element or manually fix the test.</p>
 <p>The format of the element locator difference report is:</p>
 <div class="highlight"><pre><span></span><code>Level: N, attribute: A, expected: V1, actual: V2
 </code></pre></div>
 <ul>
-<li>If <strong>N</strong> equals 0 it means the element node in the DOM tree. 1 means immediate ancestor of the element. Level increases until DOM tree root is reached.</li>
-<li><strong>A</strong> is attribute name.</li>
-<li><strong>V1</strong> - expected/recorded attribute value.</li>
-<li><strong>V2</strong> - actual value of this attribute captured during playback of the test.</li>
+<li>If <strong>N</strong> equals 0, it refers to the element node in the DOM tree. A value of 1 indicates the element's immediate ancestor. The level increases until the DOM tree root is reached.</li>
+<li><strong>A</strong> is the attribute name.</li>
+<li><strong>V1</strong>: The expected/recorded attribute value.</li>
+<li><strong>V2</strong>: The actual value of this attribute, captured during test playback.</li>
 </ul>
-<p>First image in the details of the difference report is expected/recorded snapshot of the element. Second image is what was shot during playback.</p>
+<p>The first image in the difference report details is the expected/recorded snapshot of the element. The second image shows what was captured during playback.</p>
 <h2 id="usage-scenarios">Usage Scenarios<a class="headerlink" href="#usage-scenarios" title="Permanent link">&para;</a></h2>
-<h3 id="take-no-action">Take no Action<a class="headerlink" href="#take-no-action" title="Permanent link">&para;</a></h3>
-<p>This is the simplest yet powerful approach. If a test passes and all elements are found with pretty good confidence then there may be no reason to fix the test.</p>
-<h3 id="use-match-details-to-build-webappprofile">Use Match Details to Build WebAppProfile<a class="headerlink" href="#use-match-details-to-build-webappprofile" title="Permanent link">&para;</a></h3>
-<p>When you analyze differences between expected and found elements you may get ideas to start using or improve your <a href="../web_app_profile/">WebAppProfile</a>.</p>
-<h3 id="use-object-manager">Use Object Manager<a class="headerlink" href="#use-object-manager" title="Permanent link">&para;</a></h3>
-<p>During playback Rapise takes snapshots of elements found by full-path locator. So after playback you can use Object Manager to replace old locators with new ones. If there are healing notifications after test playback Rapise automatically shows the prompt to open Object Manager. You can turn this prompt off, see the next section.</p>
+<h3 id="no-action-required">No Action Required<a class="headerlink" href="#no-action-required" title="Permanent link">&para;</a></h3>
+<p>This is a simple yet powerful approach. If a test passes and all elements are found with sufficiently high confidence, there may be no reason to fix the test.</p>
+<h3 id="using-match-details-to-build-a-webappprofile">Using Match Details to Build a WebAppProfile<a class="headerlink" href="#using-match-details-to-build-a-webappprofile" title="Permanent link">&para;</a></h3>
+<p>When you analyze the differences between expected and found elements, you may gain insights to start using or improve your <a href="../web_app_profile/">WebAppProfile</a>.</p>
+<h3 id="using-the-object-manager">Using the Object Manager<a class="headerlink" href="#using-the-object-manager" title="Permanent link">&para;</a></h3>
+<p>During playback, Rapise takes snapshots of elements found by the full-path locator. Thus, after playback, you can use the Object Manager to replace old locators with new ones. If there are healing notifications after test playback, Rapise automatically prompts you to open the Object Manager. You can disable this prompt; refer to the next section.</p>
 <p><img src="/Guide/img/web_self_healing_prompt.png" width="443"></p>
 <p><img src="/Guide/img/web_self_healing_object_manager.png" width="890"></p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
 <h3 id="threshold">Threshold<a class="headerlink" href="#threshold" title="Permanent link">&para;</a></h3>
-<p>By default match of an element is accepted when confidence is not less than 96%. You can change the threshold in <a href="../understanding_the_script/">TestPrepare</a> block by setting <code>g_aiFplConfidence</code>:</p>
+<p>By default, a match for an element is accepted when the confidence is not less than 96%. You can change the threshold in the <a href="../understanding_the_script/">TestPrepare</a> block by setting <code>g_aiFplConfidence</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">g_aiEnable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
@@ -11548,7 +11572,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="object-manager-prompt">Object Manager Prompt<a class="headerlink" href="#object-manager-prompt" title="Permanent link">&para;</a></h3>
-<p>To suppress prompt to use Object Manager when test playback contains healing notifications set <code>g_aiMergePromptEnable</code> to <code>false</code>:</p>
+<p>To suppress the prompt to use the Object Manager when test playback contains healing notifications, set <code>g_aiMergePromptEnable</code> to <code>false</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">g_aiEnable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
@@ -11556,11 +11580,11 @@
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h3>
-<p>To disable automatic capturing of recording screenshots <code>g_aiCaptureRecordingScreenshots</code> to <code>false</code>.</p>
+<p>To disable automatic capturing of recording screenshots, set <code>g_aiCaptureRecordingScreenshots</code> to <code>false</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_aiCaptureRecordingScreenshots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
 </code></pre></div>
 <h3 id="playback">Playback<a class="headerlink" href="#playback" title="Permanent link">&para;</a></h3>
-<p>During playback when an element can not be found using XPath locator - Rapise starts applying the self-healing locator. The number of initial attempts before switching on self-healing is configurable (since Rapise 6.5). Usage of self-healing at the very first attempts to find an element is not recommended since a page may not be fully loaded and wrong element may be chosen by the algorithm. First self-healing attempt is set by the variable. 21 is the default value. You may change it to any number that is lower than <code>g_objectLookupAttempts</code>.</p>
+<p>During playback, when an element cannot be found using an XPath locator, Rapise starts applying the self-healing locator. The number of initial attempts before switching to self-healing is configurable (since Rapise 6.5). Using self-healing during the very first attempts to find an element is not recommended, as a page may not be fully loaded, and the algorithm might select the wrong element. The first self-healing attempt is set by this variable. The default value is 21. You may change it to any number lower than <code>g_objectLookupAttempts</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_aiFirstAttemptNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">21</span><span class="p">;</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

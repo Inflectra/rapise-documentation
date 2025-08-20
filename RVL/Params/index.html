@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11098,6 +11110,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11376,7 +11400,7 @@
                 
                 
                 <h1 id="params">Params<a class="headerlink" href="#params" title="Permanent link">&para;</a></h1>
-<p>The last 3 columns in the RVL table are used for passing parameters:</p>
+<p>The last three columns in the RVL table are used for passing parameters:</p>
 <table>
 <thead>
 <tr>
@@ -11414,21 +11438,21 @@
 </tbody>
 </table>
 <ul>
-<li>The 5<sup>th</sup> column - <em>ParamName</em> - specifies the name of the parameter. While it does not affect execution, it is important for readability and understanding the provided input options. The <em>ParamName</em> is significant in cases such as <a href="/Libraries/RVL#doplaytest">RVL.DoPlayTest</a>, <a href="/Libraries/RVL#doplaysheet">RVL.DoPlaySheet</a>, <a href="/Libraries/RVL#setlocatoropts">RVL.SetLocatorOpt</a>, and <a href="/Libraries/RVL#formatstring">RVL.FormatString</a>. See <a href="#extra-parameters">extra parameters</a> for more information.</li>
-<li>The 6<sup>th</sup> column - <em>ParamType</em> - value type. This may be a basic scalar type (<code>number</code>, <code>string</code>, <code>boolean</code>) as well as one of the following additional 'special' types:<ul>
-<li><code>expression</code> - any valid JavaScript expression that may involve global variables and functions and local variables.</li>
-<li><code>variable</code> - the parameter value is read from a variable.</li>
-<li><code>objectid</code> - ID of one of the learned Objects.</li>
-<li><code>password</code> - means that value is encrypted string that is decrypted in runtime.</li>
-<li><code>relpath</code> - means path relative to position of the current RVL file. This parameter is automatically translated to a full path before being passed into the action/function.</li>
-<li><code>testparam</code> - the value of the <a href="/Guide/Frameworks/parameters">parameter</a> passed to the test.</li>
-<li><code>&lt;mapname&gt;</code> - see <a href="#map-params">Map params</a>.</li>
+<li>The fifth column, <em>ParamName</em>, specifies the name of the parameter. While it does not affect execution, it is important for readability and for understanding the provided input options. The <em>ParamName</em> is significant in cases such as <a href="../../Libraries/RVL/#doplaytest">RVL.DoPlayTest</a>, <a href="../../Libraries/RVL/#doplaysheet">RVL.DoPlaySheet</a>, <a href="../../Libraries/RVL/#setlocatoropts">RVL.SetLocatorOpt</a>, and <a href="../../Libraries/RVL/#formatstring">RVL.FormatString</a>. See <a href="#extra-parameters">Extra Parameters</a> for more information.</li>
+<li>The sixth column, <em>ParamType</em>, specifies the value type. This may be a basic scalar type (<code>number</code>, <code>string</code>, <code>boolean</code>) or one of the following special types:<ul>
+<li><code>expression</code> - Any valid JavaScript expression that may involve global variables, functions, and local variables.</li>
+<li><code>variable</code> - The parameter value is read from a variable.</li>
+<li><code>objectid</code> - The ID of one of the learned Objects.</li>
+<li><code>password</code> - Means the value is an encrypted string that is decrypted at runtime.</li>
+<li><code>relpath</code> - Means a path relative to the location of the current RVL file. This parameter is automatically translated to a full path before being passed to the action/function.</li>
+<li><code>testparam</code> - The value of the <a href="../../Guide/Frameworks/parameters/">parameter</a> passed to the test.</li>
+<li><code>&lt;mapname&gt;</code> - See <a href="#map-params">Map Params</a>.</li>
 </ul>
 </li>
-<li>The 7<sup>th</sup> column - <em>ParamValue</em> - specifies the value acceptable for the corresponding <em>ParamType</em>. For <code>boolean</code>, it can be either <code>true</code> or <code>false</code>. For <code>number</code>, it can be any floating point number (e.g., <code>3.14</code>). For <code>string</code>, it can be any text without quotes or escape signs. For <code>relpath</code>, it should be a valid relative path, and for <code>testparam</code>, it is the name of the parameter (e.g., <code>Browser</code>).</li>
+<li>The seventh column, <em>ParamValue</em>, specifies the value acceptable for the corresponding <em>ParamType</em>. For <code>boolean</code>, it can be either <code>true</code> or <code>false</code>. For <code>number</code>, it can be any floating-point number (e.g., <code>3.14</code>). For <code>string</code>, it can be any text without quotes or escape characters. For <code>relpath</code>, it should be a valid relative path, and for <code>testparam</code>, it is the name of the parameter (e.g., <code>Browser</code>).</li>
 </ul>
 <h2 id="param-rows">Param Rows<a class="headerlink" href="#param-rows" title="Permanent link">&para;</a></h2>
-<p>In RVL each parameter takes one row:</p>
+<p>In RVL, each parameter takes one row:</p>
 <table>
 <thead>
 <tr>
@@ -11481,7 +11505,7 @@
 </tbody>
 </table>
 <h2 id="param-arrays">Param Arrays<a class="headerlink" href="#param-arrays" title="Permanent link">&para;</a></h2>
-<p>Some methods accept arrays of values as input values. For example <code>Tester.Message</code> may take its 1<sup>st</sup> <code>message</code> parameter as an array and prints them combined. Making an array is easy, several consequent parameters having the same name are combined into an array, i.e.:</p>
+<p>Some methods accept arrays as input values. For example, <code>Tester.Message</code> may take its first <code>message</code> parameter as an array and print the combined elements. To create an array, combine several consecutive parameters that have the same name:</p>
 <table>
 <thead>
 <tr>
@@ -11533,13 +11557,13 @@
 </tr>
 </tbody>
 </table>
-<p>Should report a message like:</p>
+<p>This reports a message like:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>MyVar1 value: 25 MyVar2 value: 33
 </code></pre></div></td></tr></table></div>
 
 <h2 id="extra-parameters">Extra Parameters<a class="headerlink" href="#extra-parameters" title="Permanent link">&para;</a></h2>
-<p>Several functions of the <a href="../../Libraries/RVL/">RVL Object</a> support variable parameters (<a href="../RVL_DoPlay/"><code>RVL.DoPlaySheet</code></a>, <a href="../RVL_DoPlay/"><code>RVL.DoPlayScript</code></a>, <a href="../../Libraries/RVL/#setlocatoropts"><code>RVL.SetLocatorOpts</code></a>, <a href="../../Libraries/RVL/#formatstring"><code>RVL.FormatString</code></a>, <a href="../../Libraries/RVL/#doplaytest"><code>RVL.DoPlayTest</code></a>) and <a href="../../Libraries/RVL/#doplaytestparallel"><code>RVL.DoPlayTestParallel</code></a>) support extra parameters.</p>
-<p>Custom parameters added by user manually, by specifying row type <code>Param</code> and assigning any required param name.</p>
+<p>Several functions of the <a href="../../Libraries/RVL/">RVL Object</a> support extra parameters, including <a href="../RVL_DoPlay/"><code>RVL.DoPlaySheet</code></a>, <a href="../RVL_DoPlay/"><code>RVL.DoPlayScript</code></a>, <a href="../../Libraries/RVL/#setlocatoropts"><code>RVL.SetLocatorOpts</code></a>, <a href="../../Libraries/RVL/#formatstring"><code>RVL.FormatString</code></a>, <a href="../../Libraries/RVL/#doplaytest"><code>RVL.DoPlayTest</code></a>, and <a href="../../Libraries/RVL/#doplaytestparallel"><code>RVL.DoPlayTestParallel</code></a>.</p>
+<p>Custom parameters are added manually by specifying the row type as <code>Param</code> and assigning a parameter name.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Extra Parameters" src="../img/Params_ExtraParams.png" /></p>
 </div>
@@ -11651,10 +11675,10 @@
 </table>
 </div>
 </div>
-<p>There my be as many extra parameters as needed.</p>
+<p>There may be as many extra parameters as needed.</p>
 <h2 id="mixed-rows">Mixed Rows<a class="headerlink" href="#mixed-rows" title="Permanent link">&para;</a></h2>
-<p>In some cases it is convenient to mix parameter cells with an <em>Action</em> or <em>Condition</em>. </p>
-<p>For example, the 1<sup>st</sup> parameter of an <em>Action</em> may share the <code>Action</code> row:</p>
+<p>In some cases, it is convenient to mix parameter cells with an <em>Action</em> or <em>Condition</em>.</p>
+<p>For example, the first parameter of an <em>Action</em> can share the <code>Action</code> row:</p>
 <table>
 <thead>
 <tr>
@@ -11688,7 +11712,7 @@
 </tr>
 </tbody>
 </table>
-<p>And this is equivalent to putting it in the next row:</p>
+<p>This is equivalent to putting it on the next row:</p>
 <table>
 <thead>
 <tr>
@@ -11731,7 +11755,7 @@
 </tr>
 </tbody>
 </table>
-<p>Or <code>param2</code> of the <a href="../Conditions/">condition</a> may be on the same row:</p>
+<p>Alternatively, <code>param2</code> of the <a href="../Conditions/">condition</a> can be on the same row:</p>
 <table>
 <thead>
 <tr>
@@ -11765,7 +11789,7 @@
 </tr>
 </tbody>
 </table>
-<p>Which is equivalent to:</p>
+<p>This is equivalent to:</p>
 <table>
 <thead>
 <tr>
@@ -11808,9 +11832,9 @@
 </tr>
 </tbody>
 </table>
-<p>This allows saving space while keeping same readability. See also <a href="../Conditions/#short-condition-syntax">short condition syntax</a> for real live example of mixed rows usage.</p>
+<p>This saves space while maintaining readability. See also <a href="../Conditions/#short-condition-syntax">short condition syntax</a> for a real-life example of mixed row usage.</p>
 <h2 id="map-params">Map Params<a class="headerlink" href="#map-params" title="Permanent link">&para;</a></h2>
-<p>If map is defined in the script it may be used directly as a parameter. <em>ParamType</em> should be set to Map Name and <em>ParamValue</em> is a column (or row) name:</p>
+<p>If a map is defined in the script, it can be used directly as a parameter. <em>ParamType</em> should be set to the map name, and <em>ParamValue</em> should be a column (or row) name:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Map Param" src="../img/Params_MapValue.png" /></p>
 </div>

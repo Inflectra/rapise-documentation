@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11109,6 +11121,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11395,34 +11419,34 @@
                 
                 <h1 id="manual-testing-recording">Manual Testing: Recording<a class="headerlink" href="#manual-testing-recording" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>As described in the main <a href="../manual_testing/">Manual Testing</a> topic, sometimes it is not possible to automate the testing of a specific application, however Rapise is also a powerful manual test generation system that can help you <strong>create test cases 5x faster</strong> than simply creating test cases by hand step by step.</p>
-<p>This section describes how you can record a set of steps automatically by <strong>simply using the application being tested</strong>. Unlike an automated test however, Rapise will store a human-readable description of what was performed along with a <a href="../image_capture/">screenshot</a>, rather than actual computer code that can be played back by a computer.</p>
+<p>As described in the main <a href="../manual_testing/">Manual Testing</a> topic, sometimes it is not possible to automate the testing of a specific application; however, Rapise is also a powerful manual test generation system that can help you <strong>create test cases 5x faster</strong> than simply creating test cases manually, step by step.</p>
+<p>This section describes how you can automatically record a set of steps by <strong>simply using the application being tested</strong>. Unlike an automated test, however, Rapise stores a human-readable description of the actions performed, along with a <a href="../image_capture/">screenshot</a>, rather than actual computer code that can be played back.</p>
 <h2 id="step-1-creating-a-new-test">Step 1 - Creating a New Test<a class="headerlink" href="#step-1-creating-a-new-test" title="Permanent link">&para;</a></h2>
-<p>To start manual testing, simply create your test as normal using the <a href="../create_a_new_test/">New Test</a> dialog box. Then once the test has been created, click on the <code>Tools &gt; Manual Steps</code> menu and then you will be taken to the <a href="../manual_test_editor/">Manual Editor</a> with the <a href="../menu_and_toolbars/#manual-toolbar">Manual Test Toolbar</a> visible:</p>
+<p>To start manual testing, create your test as normal using the <a href="../create_a_new_test/">New Test</a> dialog box. Once the test has been created, click <code>Tools &gt; Manual Steps</code>. This will take you to the <a href="../manual_test_editor/">Manual Editor</a> with the <a href="../menu_and_toolbars/#manual-toolbar">Manual Test Toolbar</a> visible:</p>
 <p><img alt="Manual Toolbar" src="../img/manual_testing_recording1.png" /></p>
 <p>The test step list will initially be empty.</p>
 <h2 id="step-2-recording-some-steps">Step 2 - Recording Some Steps<a class="headerlink" href="#step-2-recording-some-steps" title="Permanent link">&para;</a></h2>
-<p>Now you should open up the application you want to record from. In this example we shall be testing the built-in <strong>Microsoft Paint</strong> application. This is a good candidate for manual testing as a lot of the functionality is hard to test automatically since there is a simple drawing canvas rather than discrete buttons and data elements to test.</p>
-<p>To make sure that we have screenshots recorded, whilst keeping the size of the screenshots reasonable, use the following recording options:</p>
+<p>Now, open the application you want to record. In this example, we will be testing the built-in <strong>Microsoft Paint</strong> application. This is a good candidate for manual testing, as much of its functionality is difficult to test automatically due to its simple drawing canvas rather than discrete buttons and data elements.</p>
+<p>To ensure that screenshots are recorded while keeping their size reasonable, use the following recording options:</p>
 <p><img alt="manual_recording_2" src="../img/manual_testing_recording3.png" /></p>
-<p>Now click the <strong>Record Manual</strong> button and choose MS-Paint from the list of running applications in <a href="../select_an_application_to_record_dialog/">Select Application to Record</a> dialog and then click <strong>'Select'</strong> to start recording.</p>
-<p>As you click through the application, the recording will display the list of steps and actions being captured:</p>
+<p>Now click the <strong>Record Manual</strong> button and choose MS-Paint from the list of running applications in the <a href="../select_an_application_to_record_dialog/">Select Application to Record</a> dialog, then click <strong>'Select'</strong> to begin recording.</p>
+<p>As you interact with the application, the recording displays the captured steps and actions:</p>
 <p><img alt="manual_recording_3" src="../img/manual_testing_recording4.png" /></p>
-<p>In this example, we created a new canvas, chose the Pencil tool, created a drawing using the pencil, entered some text and then made it bold:</p>
+<p>In this example, we created a new canvas, chose the Pencil tool, created a drawing using the pencil, entered some text, and then made it bold:</p>
 <p><img alt="manual_recording_3b" src="../img/manual_testing_recording5.png" /></p>
-<p>When you click <strong>Finish</strong> to complete the recording, Rapise will now display the list of populated manual test steps with the embedded screen captures:</p>
+<p>When you click <strong>Finish</strong> to complete the recording, Rapise displays the populated list of manual test steps with the embedded screen captures:</p>
 <p><img alt="manual_recording_4" src="../img/manual_testing_recording6.png" /></p>
-<p>Notice that each recorded test step already has a <code>Description</code> and an <code>Expected Result</code> with a screenshot of what the user was doing. In addition, the <code>Sample Data</code> contains the equivalent of Rapise automation code for reference. This can be useful later if you will decide to automate this test.</p>
+<p>Notice that each recorded test step already has a <code>Description</code> and an <code>Expected Result</code>, along with a screenshot of the user's actions. In addition, the <code>Sample Data</code> contains the equivalent of Rapise automation code for reference. This can be useful later if you decide to automate this test.</p>
 <h2 id="step-3-editing-the-steps">Step 3 - Editing the Steps<a class="headerlink" href="#step-3-editing-the-steps" title="Permanent link">&para;</a></h2>
-<p>Typically you may want to <strong>add some additional steps</strong> (e.g. we added a line to describe the process of starting up MS Paint), <strong>delete any duplicate/unnecessary steps</strong> and <strong>reword them</strong> so that they make the most sense to the tester. In our example we used the <a href="../manual_test_editor/">manual editing</a> screen to update the steps as follows:</p>
+<p>Typically, you may want to <strong>add additional steps</strong> (e.g., we added a step to describe the process of starting MS Paint), <strong>delete any duplicate or unnecessary steps</strong>, and <strong>reword them</strong> to make the most sense to the tester. In our example, we used the <a href="../manual_test_editor/">manual editing</a> screen to update the steps as follows:</p>
 <p><img alt="manual_recording_5" src="../img/manual_testing_recording7.png" /></p>
-<p>Click <strong>Save</strong> to make sure the updates are all saved locally. Now before you can <a href="../manual_testing_playback/">execute these tests</a>, you will need to Save them to <a href="../spiratest_integration/">Spira</a> (our web-based test management system).</p>
+<p>Click <strong>Save</strong> to ensure all updates are saved locally. Before you can <a href="../manual_testing_playback/">execute these tests</a>, you will need to save them to <a href="../spiratest_integration/">Spira</a>, our web-based test management system.</p>
 <h2 id="step-4-saving-to-spira">Step 4 - Saving to Spira<a class="headerlink" href="#step-4-saving-to-spira" title="Permanent link">&para;</a></h2>
-<p>Click on the option to <strong>Save to Spira</strong>, you will be asked to confirm the creation of the document folder in Spira that will hold the test files:</p>
+<p>Click the <strong>Save to Spira</strong> option. You will be asked to confirm the creation of the document folder in Spira where the test files will be stored:</p>
 <p><img alt="manual_recording_6" src="../img/manual_testing_recording8.png" /></p>
-<p>Click on <strong>Create</strong> and then click <strong>OK</strong> in the <code>Synchronize Files</code> dialog. The manual test will be saved to Spira. You will see that this process adds the unique Spira test step IDs to each step. They are displayed using the format [TS:xxx]. This special token [TS:xxx] can be used in <code>Tester.Assert</code> commands to relate specific <a href="../checkpoints/">verification points</a> with test steps during automated testing.</p>
+<p>Click <strong>Create</strong>, then click <strong>OK</strong> in the <code>Synchronize Files</code> dialog. The manual test will be saved to Spira. This process adds unique Spira test step IDs to each step. They are displayed in the format [TS:xxx]. This special token, [TS:xxx], can be used in <code>Tester.Assert</code> commands to relate specific <a href="../checkpoints/">verification points</a> with test steps during automated testing.</p>
 <p><img alt="manual_recording_7" src="../img/manual_testing_recording9.png" /></p>
-<p>Now that the test has been saved in Spira, you can click on the <strong>View Manual Test in Spira</strong> toolbar button to see how the test steps look inside Spira.</p>
+<p>Now that the test has been saved in Spira, you can click the <strong>View Manual Test in Spira</strong> toolbar button to view the test steps in Spira.</p>
 <p><img alt="view manual in spira" src="../img/manual_testing_recording_view_manual_in_spira.png" /></p>
 <p><img alt="manual_recording_8" src="../img/manual_testing_recording10.png" /></p>
 <p>Now this test case is ready for <a href="../manual_playback/">manual playback</a>.</p>

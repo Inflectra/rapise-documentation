@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11102,6 +11114,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11382,37 +11406,37 @@
                 <h1 id="source-editor">Source Editor<a class="headerlink" href="#source-editor" title="Permanent link">&para;</a></h1>
 <p><img alt="source editor" src="../img/source_editor1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>To display and edit javascript files.  The editor supports <a href="../syntax_highlighting/">Syntax Highlighting</a>, <a href="../syntax_checking/">Syntax Checking</a>, <a href="../code_folding/">Code Folding</a> and <a href="../code_helper/">Code Completion</a>.</p>
+<p>Displays and edits JavaScript files. The editor supports <a href="../syntax_highlighting/">Syntax Highlighting</a>, <a href="../syntax_checking/">Syntax Checking</a>, <a href="../code_folding/">Code Folding</a>, and <a href="../code_helper/">Code Completion</a>.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>Use the <a href="../test_files_dialog/">Test Files View</a> to open a javascript file.  The javascript file will be opened in a <strong>Source Editor</strong>, in the <a href="../content_view/">Content View</a>.  The <a href="../menu_and_toolbars/">Edit Popup</a> of the Main Menu will also be populated with text editor-specific options.</p>
+<p>Use the <a href="../test_files_dialog/">Test Files View</a> to open a JavaScript file. The JavaScript file opens in a <strong>Source Editor</strong> within the <a href="../content_view/">Content View</a>. The Main Menu's <a href="../menu_and_toolbars/">Edit Popup</a> is also populated with text editor-specific options.</p>
 <h2 id="code-formatting">Code Formatting<a class="headerlink" href="#code-formatting" title="Permanent link">&para;</a></h2>
-<p>Since Rapise 8.1 it is possible to automatically format a JavaScript document:</p>
+<p>Beginning with Rapise 8.1, you can automatically format a JavaScript document:</p>
 <ol>
 <li>Make the document active.</li>
-<li>Use menu <code>Edit &gt; Format Document</code>.</li>
+<li>Use the <code>Edit &gt; Format Document</code> menu option.</li>
 </ol>
-<p>The formatting is performed via <a href="https://beautifier.io/">js-beaitify</a>. The default configuration is taken from the built-in file <code>C:\Program Files (x86)\Inflectra\Rapise\Engine\InstrumentJS\jsbeautify.config.json</code>.</p>
-<p>You can apply custom formatting rules by saving a configuration into a file <code>jsbeautify.config.json</code>. To override formatting rules, you can either store jsbeautify.config.json in the root folder of your testing framework and save it together with your framework, or save it as <code>c:\Users\Public\Documents\Rapise\jsbeautify.config.json</code>. If you save it in this location, it will be applied for any formatted document (except those that have per-framework configuration).</p>
+<p>The formatting is performed via <a href="https://beautifier.io/">js-beautify</a>. The default configuration is based on the built-in file <code>C:\Program Files (x86)\Inflectra\Rapise\Engine\InstrumentJS\jsbeautify.config.json</code>.</p>
+<p>You can apply custom formatting rules by saving a configuration to a file named <code>jsbeautify.config.json</code>. To override formatting rules, you can either store <code>jsbeautify.config.json</code> in the root folder of your testing framework and save it with your framework, or save it as <code>c:\Users\Public\Documents\Rapise\jsbeautify.config.json</code>. If saved in this location, it will apply to all formatted documents (unless a per-framework configuration exists).</p>
 <h2 id="ontextsavedcmd">OnTextSaved.cmd<a class="headerlink" href="#ontextsavedcmd" title="Permanent link">&para;</a></h2>
-<p>This feature enables post-processing of the saved text files. This may be achieved by defining a file <code>OnTextSaved.cmd</code>.</p>
-<p>This file may be stored either common folder:</p>
+<p>This feature enables post-processing of saved text files. This is achieved by defining an <code>OnTextSaved.cmd</code> file.</p>
+<p>This file may be stored in one of two locations:</p>
 <p><code>c:\Users\Public\Documents\Rapise\OnTextSaved.cmd</code></p>
-<p>Or in the root of current <a href="../../Intro/framework/">test framework</a>.</p>
-<p>The cmd file receives the following inputs</p>
+<p>Or in the root of the current <a href="../../Intro/framework/">test framework</a>.</p>
+<p>The <code>.cmd</code> file receives the following arguments:</p>
 <ul>
 <li><code>%1</code> - file path (c:\Path\To\Test\File.js)</li>
 <li><code>%2</code> - test working directory (c:\Path\To\Test)</li>
 </ul>
-<p>Also Rapise sets two environment variables:</p>
+<p>Rapise also sets two environment variables:</p>
 <ul>
-<li><code>%SHIFT_PRESSED%</code> is <code>yes</code> when user presses <strong>Shift</strong> key</li>
-<li><code>%CONTROL_PRESSED%</code> is <code>yes</code> when user presses <strong>Ctrl</strong> key</li>
+<li><code>%SHIFT_PRESSED%</code> is <code>yes</code> when the user presses <strong>Shift</strong> key</li>
+<li><code>%CONTROL_PRESSED%</code> is <code>yes</code> when the user presses <strong>Ctrl</strong> key</li>
 </ul>
-<p>You may find an example of configured <code>OnTextSaved.cmd</code> used to beautify a <strong>JavaScript</strong> file. </p>
-<p>If <code>.cmd</code> modifies the file, Rapise editor would immediately reload it.</p>
-<p>If <code>.cmd</code> produces any output, it would be reflected in the Rapise <a href="../output_view/">output view</a>.</p>
-<p>If <code>.cmd</code> file produces any errors, these are reflected in the <a href="../warning_view/">warnings view</a>.</p>
-<p>You may find real live example of <code>OnTextSaved.cmd</code> at <a href="https://github.com/Inflectra/rapise-powerpack/tree/master/JSBeautify">https://github.com/Inflectra/rapise-powerpack/tree/master/JSBeautify</a>.</p>
+<p>You can find an example of a configured <code>OnTextSaved.cmd</code> file that beautifies a <strong>JavaScript</strong> file.</p>
+<p>If the <code>.cmd</code> file modifies the text file, the Rapise editor immediately reloads it.</p>
+<p>If the <code>.cmd</code> file produces any output, it is reflected in the Rapise <a href="../output_view/">output view</a>.</p>
+<p>If the <code>.cmd</code> file produces any errors, these are reflected in the <a href="../warning_view/">warnings view</a>.</p>
+<p>You can find a real-world example of the <code>OnTextSaved.cmd</code> file at <a href="https://github.com/Inflectra/rapise-powerpack/tree/master/JSBeautify">https://github.com/Inflectra/rapise-powerpack/tree/master/JSBeautify</a>.</p>
 <div class="highlight"><pre><span></span><code>if &quot;%SHIFT_PRESSED%&quot;==&quot;yes&quot; (
     if &quot;%~x1&quot;==&quot;.js&quot; (
         @call &quot;%~dp0node_modules\.bin\js-beautify.cmd&quot; -r --config &quot;%~dp0jsbeautify.config.json&quot; %1 &gt;OnTextSaved.log 2&gt;&amp;1
@@ -11420,7 +11444,7 @@
 )
 </code></pre></div>
 <h2 id="onsavecmd">OnSave.cmd<a class="headerlink" href="#onsavecmd" title="Permanent link">&para;</a></h2>
-<p>This file enables additional post-processing of the saved text files. It follows same rules as <code>OnTextSaved.cmd</code>. For example, you may use it to add new files to Git and commit changes on save:</p>
+<p>This file enables additional post-processing of saved text files. It follows the same rules as <code>OnTextSaved.cmd</code>. For example, you can use it to add new files to Git and commit changes on save:</p>
 <div class="highlight"><pre><span></span><code>git add * &gt;&gt;gitadd.log
 git commit -a -m &quot;Autosave&quot; &gt;&gt;gitcommit.log
 </code></pre></div>

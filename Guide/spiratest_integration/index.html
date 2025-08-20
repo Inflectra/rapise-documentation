@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -2451,6 +2463,20 @@
           <li class="md-nav__item">
   <a href="#git-for-windows" class="md-nav__link">
     Git for Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-pools" class="md-nav__link">
+    Agent Pools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancing-mode" class="md-nav__link">
+    Load Balancing Mode
   </a>
   
 </li>
@@ -11484,6 +11510,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#agent-pools" class="md-nav__link">
+    Agent Pools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancing-mode" class="md-nav__link">
+    Load Balancing Mode
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11728,6 +11768,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
           
             
   
@@ -12272,6 +12324,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#agent-pools" class="md-nav__link">
+    Agent Pools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancing-mode" class="md-nav__link">
+    Load Balancing Mode
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -12300,90 +12366,90 @@
                 <h1 id="spiratest-integration">SpiraTest Integration<a class="headerlink" href="#spiratest-integration" title="Permanent link">&para;</a></h1>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Minimal supported version of Spira is 6.15.1.0.</p>
+<p>The minimum supported version of Spira is 6.15.1.0.</p>
 </div>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.inflectra.com/SpiraTest/">SpiraTest</a> is a web-based quality assurance and <strong>test management system</strong> with integrated release scheduling and defect tracking. SpiraTest includes the ability to handle manual, exploratory and automated tests, record the results and log any associated defects.</p>
-<p>When you use SpiraTest with Rapise you get the ability to store your Rapise automated tests inside the central SpiraTest document repository with full version control and test scheduling capabilities:</p>
+<p><a href="https://www.inflectra.com/SpiraTest/">SpiraTest</a> is a web-based quality assurance and <strong>test management system</strong> with integrated release scheduling and defect tracking. It supports manual, exploratory, and automated tests, allowing you to record results and log any associated defects.</p>
+<p>When you use SpiraTest with Rapise, you can store your Rapise automated tests within the central SpiraTest document repository with full version control and test scheduling capabilities:</p>
 <p><img alt="Architecture" src="../img/spiratest_integration1.png" /></p>
-<p>You can record and create your test cases using Rapise, upload them to SpiraTest and then schedule the tests to be executed on multiple remote computers to execute the tests immediately or according to a predefined schedule. The results are then reported back to SpiraTest where they are archived as part of the project. Also the test results can be used to update requirements' <strong>test coverage</strong> and other key metrics in real-time.</p>
-<p>In addition, you can also create exploratory manual tests, save them to SpiraTest and then execute them from within Rapise. This gives you access to more powerful screen capture and annotation functionality than is possible solely using SpiraTest.</p>
+<p>You can record and create your test cases using Rapise, upload them to SpiraTest, and then schedule them for execution on multiple remote computers, either immediately or according to a predefined schedule. The results are then reported back to SpiraTest, where they are archived as part of the project. The test results can also be used to update requirements' <strong>test coverage</strong> and other key metrics in real-time.</p>
+<p>Additionally, you can create exploratory manual tests, save them to SpiraTest, and then execute them from within Rapise. This gives you access to more powerful screen capture and annotation functionality than is available solely within SpiraTest.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><a href="https://www.inflectra.com/SpiraTeam/">SpiraTeam</a> and <a href="https://www.inflectra.com/SpiraPlan/">SpiraPlan</a> include <strong>SpiraTest</strong> as part of its functionality, so wherever you see references to <strong>SpiraTest</strong> in this section, it applies equally to <strong>SpiraTeam</strong> and <strong>SpiraPlan</strong>.</p>
+<p><a href="https://www.inflectra.com/SpiraTeam/">SpiraTeam</a> and <a href="https://www.inflectra.com/SpiraPlan/">SpiraPlan</a> include <strong>SpiraTest</strong> as part of their functionality. Therefore, wherever <strong>SpiraTest</strong> is referenced in this section, it applies equally to <strong>SpiraTeam</strong> and <strong>SpiraPlan</strong>.</p>
 </div>
 <h2 id="configuring-spiratest">Configuring SpiraTest<a class="headerlink" href="#configuring-spiratest" title="Permanent link">&para;</a></h2>
-<p>Before you can use SpiraTest to manage your Rapise automated tests you need to perform some initial configuration. This section assumes that you already have a working installation of SpiraTest or SpiraTeam v4.2 or later. If not, please refer to the <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/Installing-SpiraPlan/">SpiraTest Installation and Administration Guide</a> for details on how to install SpiraTest.</p>
+<p>Before you can use SpiraTest to manage your Rapise automated tests, you must perform some initial configuration. This section assumes that you already have a working installation of SpiraTest or SpiraTeam v4.2 or later. If not, please refer to the <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/Installing-SpiraPlan/">SpiraTest Installation and Administration Guide</a> for details about installing SpiraTest.</p>
 <h2 id="configuring-the-rapise-automation-engine">Configuring the Rapise Automation Engine<a class="headerlink" href="#configuring-the-rapise-automation-engine" title="Permanent link">&para;</a></h2>
-<p>Log in to SpiraTest as a system administrator and go into SpiraTest main Administration page</p>
+<p>Log in to SpiraTest as a system administrator, navigate to the SpiraTest main Administration page</p>
 <p><img alt="Admin Page Gear" src="../img/spiratest_integration_admin_page_gear.png" /></p>
-<p>and click on the <code>Test Automation</code> link under <strong>Integration</strong>.</p>
+<p>and click the <code>Test Automation</code> link under <strong>Integration</strong>.</p>
 <p><img alt="Test Automation Link" src="../img/spiratest_integration_integration_test_automation.png" /></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Depending on when you first installed SpiraTest, you may already have an entry for Rapise, since versions 3.2 and later of SpiraTest automatically ship with a default entry for Rapise.</p>
+<p>Depending on when you first installed SpiraTest, you may already have an entry for Rapise, as versions 3.2 and later of SpiraTest automatically include a default entry for Rapise.</p>
 </div>
-<p>If <strong>Rapise</strong> is missing in the list of automation engines, click the <code>Add</code> button to enter the new test automation engine details page. The fields required are as follows:</p>
+<p>If <strong>Rapise</strong> is missing from the list of automation engines, click the <code>Add</code> button to open the new test automation engine details page. The required fields are as follows:</p>
 <p><img alt="rapise test automation engine" src="../img/using_rapise_with_spiratest_guide4.png" /></p>
 <ul>
 <li><strong>Name</strong>: This is the short display name of the automation engine. It can be anything that is meaningful to your users.</li>
 <li><strong>Description</strong>: This is the long description of the automation engine. It can be anything that is meaningful to your users. (Optional)</li>
-<li><strong>Active</strong>: If checked, the engine is active and able to be used for any project.</li>
-<li><strong>Token</strong>: This needs to be the assigned unique token for the automation engine and is used to tell SpiraTest which engine to actually use for a given test case. For Rapise this should always be set to <strong>Rapise</strong>.</li>
+<li><strong>Active</strong>: If checked, the engine is active and available for use in any project.</li>
+<li><strong>Token</strong>: This must be the unique token assigned to the automation engine and is used to specify which engine SpiraTest should use for a given test case. For Rapise, this should always be set to <strong>Rapise</strong>.</li>
 </ul>
-<p>Once you have finished, click the <code>Insert</code> button and you will be taken back to the Automation Engine list page, with Rapise listed as an available automation engine:</p>
+<p>Once complete, click the <code>Insert</code> button, and you will be returned to the Automation Engine list page, with Rapise listed as an available automation engine:</p>
 <p><img alt="all test automaton engines" src="../img/using_rapise_with_spiratest_guide5.png" /></p>
 <h2 id="connecting-to-spiratest">Connecting to SpiraTest<a class="headerlink" href="#connecting-to-spiratest" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>SpiraTest connection settings are shared between Rapise and <a href="#client-configuration">RapiseLauncher</a>.</p>
 </div>
-<p>The first thing you need to do is to configure the connection to SpiraTest. Click <code>Settings &gt; SpiraTest</code> menu:</p>
+<p>First, you need to configure the connection to SpiraTest. Click the <code>Settings &gt; SpiraTest</code> menu item:</p>
 <p><img alt="spira_tools_options" src="../img/spiratest_integration2.png" /></p>
-<p>This brings up the dialog box that lets you configure the connection to SpiraTest:</p>
+<p>This brings up the dialog box that allows you to configure the connection to SpiraTest:</p>
 <p><img alt="SpiraTest Connection Settings" src="../img/spiratest_integration3.png" /></p>
 <h3 id="credentials">Credentials<a class="headerlink" href="#credentials" title="Permanent link">&para;</a></h3>
-<p>Enter the </p>
+<p>Enter the following details:</p>
 <ul>
-<li>SpiraTest <strong>URL</strong>,  e.g. <a href="https://my-company.spiraservice.net/">https://my-company.spiraservice.net/</a></li>
-<li><strong>User Name</strong>, login name you use to access SpiraTest or dedicated account for running Rapise tests.</li>
-<li><strong><a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">API Key</a></strong> </li>
+<li>SpiraTest <strong>URL</strong>, e.g. <a href="https://my-company.spiraservice.net/">https://my-company.spiraservice.net/</a></li>
+<li><strong>User Name</strong>, the login name you use to access SpiraTest, or a dedicated account for running Rapise tests.</li>
+<li><strong><a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">API Key</a></strong></li>
 </ul>
 <p>and then click the <code>Test</code> button to verify that the connection information is correct.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are with Rapise 6 or older then use password instead of the API key. </p>
+<p>If you are using Rapise 6 or older, use a password instead of the API key.</p>
 </div>
 <h3 id="repository-and-token">Repository and Token<a class="headerlink" href="#repository-and-token" title="Permanent link">&para;</a></h3>
-<p>Additionally enter</p>
+<p>Additionally, enter the:</p>
 <ul>
 <li>
-<p><strong>Default Repository Path</strong>, a folder to use for local copies of SpiraTest repositories.</p>
+<p><strong>Default Repository Path</strong>, the folder to use for local copies of SpiraTest repositories.</p>
 </li>
 <li>
-<p><strong>Token</strong>, the identifier of the current machine that Rapise is installed on. It needs to match the <code>Token</code> name of the corresponding <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Automation-Host-Management/">Automation Host</a> in SpiraTest.</p>
+<p><strong>Token</strong>, the identifier of the current machine on which Rapise is installed. It must match the <code>Token</code> name of the corresponding <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Automation-Host-Management/">Automation Host</a> in SpiraTest.</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You need to be running SpiraTest / SpiraTeam v4.0 or later to use the integration with Rapise.</p>
+<p>You must be running SpiraTest / SpiraTeam v4.0 or later to use the integration with Rapise.</p>
 </div>
 <h3 id="artifact-permissions">Artifact Permissions<a class="headerlink" href="#artifact-permissions" title="Permanent link">&para;</a></h3>
-<p>To fully leverage Rapise &amp; Spira integration, the user account needs the following <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Users/#artifact-specific-permissions">artifact permissions</a> in Spira:</p>
+<p>To fully leverage Rapise &amp; Spira integration, the user account requires the following <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Users/#artifact-specific-permissions">artifact permissions</a> in Spira:</p>
 <p><img alt="Artifact Permissions" src="../img/spira_artifact_permissions.png" /></p>
-<p>If you want to use an existing product role, Manager is a good option. You can also create and customize <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Users/#view-edit-product-roles">your own role</a> if needed.</p>
+<p>If you want to use an existing product role, the Manager role is a good option. You can also create and customize <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Users/#view-edit-product-roles">your own role</a> if needed.</p>
 <h2 id="using-the-spira-dashboard">Using the Spira Dashboard<a class="headerlink" href="#using-the-spira-dashboard" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If you are reading this guide for the first time we recommend to proceed to the <a href="#creating-a-rapise-test-from-a-spiratest-test-case">next section</a> and after learning the basics return here. This section comes to play when you are planning to create a real big set of tests for your application.</p>
+<p>If you are reading this guide for the first time, we recommend proceeding to the <a href="#creating-a-rapise-test-from-a-spiratest-test-case">next section</a> and returning here after learning the basics. This section is most relevant when you plan to create a large set of tests for your application.</p>
 </div>
-<p>You can interact with SpiraTest using the <a href="../spira_dashboard_2/">Spira Dashboard</a> that is available from the <code>View &gt; Spira Dashboard</code> menu. This provides a convenient way of working with SpiraTest, allowing you to quickly create, save and open test cases from SpiraTest.</p>
+<p>You can interact with SpiraTest using the <a href="../spira_dashboard_2/">Spira Dashboard</a>, available from the <code>View &gt; Spira Dashboard</code> menu. This provides a convenient way of working with SpiraTest, allowing you to quickly create, save, and open test cases from SpiraTest.</p>
 <h3 id="frameworks">Frameworks<a class="headerlink" href="#frameworks" title="Permanent link">&para;</a></h3>
-<p>If you are just starting your test automation project and have Rapise 8.0+ we highly recommend to use new <a href="../Frameworks/frameworks/">Framework mode</a> and use new <mark class="critic">Sync with Spira</mark> <a href="../spira_dashboard_2/#framework-view-rapise-80">button</a> that handles everything: creation of test sets and test cases as well as file uploading/downloading. The framework mode also has simplified way of <a href="../Frameworks/parameters/">handling parameters and configurations</a>.</p>
+<p>If you are just starting your test automation project and have Rapise 8.0+, we highly recommend using the new <a href="../Frameworks/frameworks/">Framework mode</a> and the new <mark class="critic">Sync with Spira</mark> <a href="../spira_dashboard_2/#framework-view-rapise-80">button</a> that handles everything: creation of test sets and test cases, as well as file uploading/downloading. The framework mode also has a simplified way of <a href="../Frameworks/parameters/">handling parameters and configurations</a>.</p>
 <h2 id="creating-a-rapise-test-from-a-spiratest-test-case">Creating a Rapise Test From a SpiraTest Test Case<a class="headerlink" href="#creating-a-rapise-test-from-a-spiratest-test-case" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>In this section we describe a simplified process to give a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application we recommend to review the <a href="#frameworks">Frameworks section</a>. </p>
+<p>In this section, we describe a simplified process to provide a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application, we recommend reviewing the <a href="#frameworks">Frameworks section</a>.</p>
 </div>
 <p>To create a new Rapise test linked to a SpiraTest test case, go to <code>File &gt; Create New &gt; New Test</code>. This will bring up the following dialog box:</p>
 <p><img alt="create_new_test_from_spira1" src="../img/spiratest_integration5.png" /></p>
@@ -12399,131 +12465,131 @@
 <p><img alt="create_new_test_from_spira2" src="../img/spiratest_integration6.png" /></p>
 </li>
 </ol>
-<p>Now either create a new test case by using the <code>New Test Case</code> button or simply click on a test case that you previously created in SpiraTest.</p>
+<p>Now, either create a new test case by using the <code>New Test Case</code> button or simply click a test case that you previously created in SpiraTest.</p>
 <p><img alt="create_new_test_from_spira3" src="../img/spiratest_integration7.png" /></p>
-<p>Once you are satisfied that this is the correct test case, choose the desired <strong>methodology</strong> (Basic, Manual-only, Mobile or Web), choose browser profile if it is a Web test and choose scripting mode (RVL or JavaScript). Rapise will now create a local test folder and files inside <a href="#repository-and-token">Default Repository Path</a> based on this Spira test case.</p>
+<p>Once you are satisfied that this is the correct test case, choose the desired <strong>methodology</strong> (Basic, Manual-only, Mobile, or Web), choose a browser profile if it is a Web test, and choose a scripting mode (RVL or JavaScript). Rapise will now create a local test folder and files inside the <a href="#repository-and-token">Default Repository Path</a> based on this Spira test case.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>At this point the new test is stored locally only. To put it's files into SpiraTest you need to save it, see next section.</p>
+<p>At this point, the new test is stored locally only. To put its files into SpiraTest, you must save it. See the next section.</p>
 </div>
 <h2 id="saving-a-test-to-spiratest">Saving a Test to SpiraTest<a class="headerlink" href="#saving-a-test-to-spiratest" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>In this section we describe a simplified process to give a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application we recommend to review the <a href="../Frameworks/frameworks/">Frameworks section</a> first. </p>
+<p>In this section, we describe a simplified process to provide a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application, we recommend reviewing the <a href="../Frameworks/frameworks/">Frameworks section</a> first.</p>
 </div>
-<p>You may need to save a test into SpiraTest in 3 cases:</p>
+<p>You may need to save a test to SpiraTest in three cases:</p>
 <ol>
-<li>You just created the test like described in the previous section.</li>
-<li>You made changes to the test you saved into SpiraTest earlier.</li>
-<li>You want to link existing Rapise test (not saved into SpiraTest and not linked to a SpiraTest test case) to a test case in SpiraTest.</li>
+<li>You just created the test as described in the previous section.</li>
+<li>You made changes to the test you saved to SpiraTest earlier.</li>
+<li>You want to link an existing Rapise test (not yet saved to SpiraTest and not linked to a SpiraTest test case) to a test case in SpiraTest.</li>
 </ol>
-<p>To save a Rapise test into SpiraTest you need to make sure that the following has been setup first:</p>
+<p>To save a Rapise test to SpiraTest, you must first ensure that the following has been set up:</p>
 <ol>
-<li>You have a project created in SpiraTest to store the Rapise tests in. The Rapise tests will be stored in a repository located inside the <strong>Planning &gt; Documents</strong> section of the project.</li>
-<li>The user you will be connecting to SpiraTest with has the permissions to <strong>create new document folders</strong>.</li>
-<li>You have created the Test Case in SpiraTest that the Rapise test will be associated with. This is important because without being associated to a SpiraTest Test Case, you will not be able to schedule and execute the tests using SpiraTest and <a href="#using-rapiselauncher">RapiseLauncher</a>.</li>
-<li>You have <a href="#configuring-the-rapise-automation-engine">created an AutomationEngine in SpiraTest</a> that has the token name <strong>Rapise</strong>. This will be used to identify Rapise automation scripts inside SpiraTest.</li>
+<li>You have a project created in SpiraTest in which to store the Rapise tests. The Rapise tests will be stored in a repository located within the <strong>Planning &gt; Documents</strong> section of the project.</li>
+<li>The user account you will be connecting to SpiraTest with has permissions to <strong>create new document folders</strong>.</li>
+<li>You have created the Test Case in SpiraTest with which the Rapise test will be associated. This is important because without being associated with a SpiraTest Test Case, you will not be able to schedule and execute the tests using SpiraTest and <a href="#using-rapiselauncher">RapiseLauncher</a>.</li>
+<li>You have <a href="#configuring-the-rapise-automation-engine">created an AutomationEngine in SpiraTest</a> with the token name <strong>Rapise</strong>. This will be used to identify Rapise automation scripts within SpiraTest.</li>
 </ol>
-<p>Once you have setup SpiraTest accordingly, click <code>File &gt; Sync with Spira</code>.</p>
+<p>Once you have set up SpiraTest accordingly, click <code>File &gt; Sync with Spira</code>.</p>
 <p>If the test is not linked to a SpiraTest Test Case, it will bring up the <code>Save Test to Spira</code> dialog box:</p>
 <p><img alt="spira_save_test2" src="../img/spiratest_integration9.png" /></p>
-<p>The first thing you will need to do is choose the SpiraTest project from the dropdown list. This will then update the list of test case folders displayed in the top pane of the dialog box.</p>
-<p>Once you have chosen the desired project, you need to expand the test case folders in SpiraTest and choose the existing Test Case that you want to attach the Rapise test to:</p>
+<p>First, choose the SpiraTest project from the dropdown list. This will update the list of test case folders displayed in the top pane of the dialog box.</p>
+<p>Once you have chosen the desired project, expand the test case folders in SpiraTest and choose the existing Test Case to which you want to attach the Rapise test:</p>
 <p><img alt="spira_save_test3" src="../img/spiratest_integration10.png" /></p>
 <p>You can also create a new folder by clicking the <code>New Folder</code> button.</p>
-<p>When you expand the folders to display the list of contained test cases, it will display the Name and ID of each test case together with an icon that indicates the type of a test case:</p>
+<p>When you expand the folders to display the list of contained test cases, it will display the Name and ID of each test case together with an icon that indicates the type of test case:</p>
 <ol>
 <li><img alt="ManualTest-WithSteps" src="../img/spiratest_integration11.png" /> - Manual test case that has no automation script attached. (Repository Path will also be blank)</li>
 <li><img alt="RapiseTest-WithSteps" src="../img/spiratest_integration12.png" /> - Test case that has an existing Rapise test attached.</li>
 <li><img alt="AutoTest-WithSteps" src="../img/spiratest_integration13.png" /> - Test case that has a non-Rapise automation script attached.</li>
 </ol>
-<p>You can create a new test case by using the <code>New Test Case</code> button or simply click on a test case that you previously created in Spira. Choose a test case that has icon (1) and doesn't have an associated Repository path.</p>
+<p>You can create a new test case by using the <code>New Test Case</code> button or simply click a test case that you previously created in Spira. Choose a test case that has icon type (1) and does not have an associated Repository Path.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Test cases with icon type (3) cannot be used with Rapise for adding or updating scripts.</p>
 </div>
-<p>Once you have chosen the appropriate test case, click the <code>Save</code> button. That will bring up the <strong>Create File Repository in Spira</strong> dialog box:</p>
+<p>Once you have chosen the appropriate test case, click the <code>Save</code> button. This will bring up the <strong>Create File Repository in Spira</strong> dialog box:</p>
 <p><img alt="spira_save_create_repository" src="../img/spiratest_integration14.png" /></p>
-<p>This dialog box will let you know where the Rapise script will be stored in SpiraTest and also the location of the repository local directory used to store the <code>working copy</code> of the Rapise test. Click <code>Create</code> to confirm.</p>
+<p>This dialog box will inform you where the Rapise script will be stored in SpiraTest and the location of the local repository directory used to store the <code>working copy</code> of the Rapise test. Click <code>Create</code> to confirm.</p>
 <p><img alt="spira_save_test4" src="../img/spiratest_integration15.png" /></p>
-<p>A dialog box will be displayed that lists all the files in the local working directory and shows which ones will be checked-in to SpiraTest. The system will filter out result and report files that shouldn't be uploaded. You can change which files are filtered out and also selectively include/exclude files. Once you are happy with the list of files being checked-in, click the <code>OK</code> button:</p>
-<p>Rapise will display the progress dialog while the files are being uploaded to the server:</p>
+<p>A dialog box will be displayed that lists all files in the local working directory and shows which will be checked in to SpiraTest. The system will filter out result and report files that should not be uploaded. You can change which files are filtered out, and also selectively include or exclude files. Once you are happy with the list of files being checked in, click the <code>OK</code> button:</p>
+<p>Rapise will display a progress dialog while the files are being uploaded to the server:</p>
 <p><img alt="spira_save_test5" src="../img/spiratest_integration16.png" /></p>
-<p>If an error occurs during the save, a message box will be displayed, otherwise the dialog box will simply close and the confirmation appear.</p>
+<p>If an error occurs during the save, a message box will be displayed; otherwise, the dialog box will simply close and a confirmation will appear.</p>
 <p><img alt="Save OK Confirmation" src="../img/spiratest_integration_saved_to_spira.png" /></p>
 <h2 id="loading-a-test-from-spiratest">Loading a Test from SpiraTest<a class="headerlink" href="#loading-a-test-from-spiratest" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>In this section we describe a simplified process to give a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application we recommend to review the <a href="../Frameworks/frameworks/">Frameworks section</a> first. </p>
+<p>In this section, we describe a simplified process to provide a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application, we recommend reviewing the <a href="../Frameworks/frameworks/">Frameworks section</a> first.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If you already loaded the test from SpiraTest earlier and wish to update the local copy with changes saved into SpiraTest by a team member then proceed to <a href="#synchronizing">Synchronizing</a> section.</p>
+<p>If you have already loaded the test from SpiraTest and wish to update the local copy with changes saved to SpiraTest by a team member, then proceed to the <a href="#synchronizing">Synchronizing</a> section.</p>
 </div>
-<p>To load a Rapise test from SpiraTest you need to make sure that the following has been setup first:</p>
+<p>To load a Rapise test from SpiraTest, you must first ensure that the following has been set up:</p>
 <ol>
 <li>You have already configured the <a href="#connecting-to-spiratest">connection to the SpiraTest service</a>.</li>
-<li>The user you will be connecting to SpiraTest with has the permission to view the project that the tests are being stored in.</li>
+<li>The user account you will be connecting to SpiraTest with has permission to view the project where the tests are stored.</li>
 </ol>
-<p>Once you have setup SpiraTest accordingly, click on the <code>File &gt; Load from Spira</code> menu.</p>
-<p>That will bring up the <code>Load Test from Spira</code> dialog box:</p>
+<p>Once you have set up SpiraTest accordingly, click the <code>File &gt; Load from Spira</code> menu item.</p>
+<p>This will bring up the <code>Load Test from Spira</code> dialog box:</p>
 <p><img alt="spira_open_test2" src="../img/spiratest_integration18.png" /></p>
-<p>The first thing you will need to do is choose the SpiraTest project from the dropdown list. Once you have done that, the system will display the list of test case folders in this project.</p>
-<p>Once you have chosen the project, you need to expand the test case folders in SpiraTest and choose the existing Test Case that you want to load:</p>
+<p>First, choose the SpiraTest project from the dropdown list. Once selected, the system will display the list of test case folders in this project.</p>
+<p>Once you have chosen the project, expand the test case folders in SpiraTest and choose the existing Test Case that you want to load:</p>
 <p><img alt="spira_open_test3" src="../img/spiratest_integration19.png" /></p>
-<p>When you expand the folders to display the list of contained test cases, it will display the Name, ID and Repository Path for each test case that has associated Rapise test.</p>
+<p>When you expand the folders to display the list of contained test cases, it will display the Name, ID, and Repository Path for each test case that has an associated Rapise test.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Only test cases that have an attached/linked Rapise test script will be displayed in this view.</p>
 </div>
-<p>Notice <code>To Folder</code> edit field. By default a test is loaded into <a href="#repository-and-token">Default Repository Path</a>, but you may load a test into any folder (requires Rapise 8.0+).</p>
+<p>Note the <code>To Folder</code> edit field. By default, a test is loaded into the <a href="#repository-and-token">Default Repository Path</a>, but you can load a test into any folder (requires Rapise 8.0+).</p>
 <p>Once you have chosen the appropriate test case, click the <code>Load</code> button to load the test case:</p>
 <p><img alt="spira_open_test4" src="../img/spiratest_integration20.png" /></p>
-<p>A dialog box will be displayed that lists all the files on the server which will be downloaded from SpiraTest. You can change which files are to be downloaded. Once you are happy with the list of files being checked-out, click the <code>OK</code> button:</p>
-<p>The system will display the progress dialog while the files are being downloaded from the server.</p>
+<p>A dialog box will be displayed that lists all files on the server that will be downloaded from SpiraTest. You can change which files are to be downloaded. Once you are happy with the list of files being checked out, click the <code>OK</code> button:</p>
+<p>The system will display a progress dialog while the files are being downloaded from the server.</p>
 <p><img alt="spira_save_test5" src="../img/spiratest_integration16.png" /></p>
-<p>If an error occurs during the download, a message box will be displayed, otherwise the dialog box will simply close and Rapise will open the loaded test.</p>
+<p>If an error occurs during the download, a message box will be displayed; otherwise, the dialog box will simply close, and Rapise will open the loaded test.</p>
 <h3 id="loading-a-clean-copy">Loading a Clean Copy<a class="headerlink" href="#loading-a-clean-copy" title="Permanent link">&para;</a></h3>
-<p>If you’ve already loaded the test case on the machine, made some modifications to the files, and want to re-download all files while discarding your local changes, simply check the <code>Get Clean Copy</code> checkbox before clicking <code>OK</code> button. Requires Rapise 8.3+.</p>
+<p>If you have already loaded the test case on the machine, made modifications to the files, and want to re-download all files while discarding your local changes, simply check the <code>Get Clean Copy</code> checkbox before clicking the <code>OK</code> button. Requires Rapise 8.3+.</p>
 <h2 id="synchronizing">Synchronizing<a class="headerlink" href="#synchronizing" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>In this section we describe a simplified process to give a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application we recommend to review the <a href="../Frameworks/frameworks/">Frameworks section</a> first. </p>
+<p>In this section, we describe a simplified process to provide a basic understanding of SpiraTest integration. Once you are ready to start implementing a set of tests for your application, we recommend reviewing the <a href="../Frameworks/frameworks/">Frameworks section</a> first.</p>
 </div>
-<p>When you have a Rapise test previously loaded from SpiraTest or saved to SpiraTest then continue to use <code>File &gt; Sync with Spira</code> to upload local changes and/or download changes made by other team members. Suppose for example, you have some files modified locally and want to update them in the SpiraTest repository. When you initiate <code>Sync with Spira</code>, Rapise will show you which files have been modified locally and which have been modified in the SpiraTest repository. The synchronization dialog allows you to choose a desired action for each file: upload, download or keep intact the local version (uncheck the file).</p>
+<p>When you have a Rapise test previously loaded from SpiraTest or saved to SpiraTest, continue to use <code>File &gt; Sync with Spira</code> to upload local changes and/or download changes made by other team members. For example, suppose you have files modified locally and want to update them in the SpiraTest repository. When you initiate <code>Sync with Spira</code>, Rapise will show you which files have been modified locally and which have been modified in the SpiraTest repository. The synchronization dialog allows you to choose a desired action for each file: upload, download, or keep the local version intact (uncheck the file).</p>
 <p><img alt="Synchronization Dialog" src="../img/spiratest_integration_synchronizing_files.png" /></p>
-<p>Since Rapise 8.0 it is possible to view differences between server and local file versions, notice <code>Diff...</code> buttons.</p>
+<p>Since Rapise 8.0, it is possible to view differences between server and local file versions; note the <code>Diff...</code> buttons.</p>
 <h2 id="viewing-the-spiratest-properties-of-a-test">Viewing the SpiraTest Properties of a Test<a class="headerlink" href="#viewing-the-spiratest-properties-of-a-test" title="Permanent link">&para;</a></h2>
-<p>To see which SpiraTest <strong>project</strong> and <strong>test case</strong>  the current Rapise test is associated with, chose <code>Test &gt; Spira Properties</code> menu item. This will bring up the Spira Properties dialog box:</p>
+<p>To see which SpiraTest <strong>project</strong> and <strong>test case</strong> the current Rapise test is associated with, choose <code>Test &gt; Spira Properties</code> menu item. This will bring up the Spira Properties dialog box:</p>
 <p><img alt="spira_properties" src="../img/spiratest_integration21.png" /></p>
-<p>This will display the name of the current Rapise test together with the name of the SpiraTest project, test folder and test case that this test is associated with.</p>
-<p>If you would to save the current Rapise test into a new SpiraTest project or if you want to save it against a new test case in the same project, you must first unlink the test. To do this click on the <code>Unlink from Test Case</code> button. This will tell Rapise to remove the stored SpiraTest information from the <code>.sstest</code> file so that it can be associated with a new project and/or test case in SpiraTest.</p>
+<p>This will display the name of the current Rapise test together with the name of the SpiraTest project, test folder, and test case that this test is associated with.</p>
+<p>If you would like to save the current Rapise test to a new SpiraTest project or save it against a new test case in the same project, you must first unlink the test. To do this, click the <code>Unlink from Test Case</code> button. This will instruct Rapise to remove the stored SpiraTest information from the <code>.sstest</code> file so that it can be associated with a new project and/or test case in SpiraTest.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This operation cannot be undone so please make sure you really want to unlink the current test.</p>
+<p>This operation cannot be undone, so please ensure you genuinely want to unlink the current test.</p>
 </div>
 <h2 id="viewing-the-spiratest-repository">Viewing the SpiraTest Repository<a class="headerlink" href="#viewing-the-spiratest-repository" title="Permanent link">&para;</a></h2>
-<p>If you open up the project in SpiraTest and click on the <code>Planning &gt; Documents</code> link, you will be taken to the central document repository that now includes your new Rapise test folders. Rapise tests are saved into <code>Root Folder &gt; Rapise Tests</code>.</p>
+<p>If you open the project in SpiraTest and click the <code>Planning &gt; Documents</code> link, you will be directed to the central document repository that now includes your new Rapise test folders. Rapise tests are saved to <code>Root Folder &gt; Rapise Tests</code>.</p>
 <p><img alt="documents" src="../img/using_rapise_with_spiratest_guide27.png" /></p>
-<p>To see the different revisions of a file, simply click on the hyperlink for a repository item and a preview of the file is displayed:</p>
+<p>To see the different revisions of a file, simply click the hyperlink for a repository item, and a preview of the file is displayed:</p>
 <p><img alt="preview" src="../img/using_rapise_with_spiratest_guide28.png" /></p>
-<p>If you click on the <code>Versions</code> tab, the list of previous revisions will be displayed:</p>
+<p>If you click the <code>Versions</code> tab, the list of previous revisions will be displayed:</p>
 <p><img alt="versions" src="../img/using_rapise_with_spiratest_guide29.png" /></p>
-<p>If you click on the <code>Testing &gt; Test Cases</code> tab and then click on the test case that was previously created, you will see that it has its Automation information populated:</p>
+<p>If you click the <code>Testing &gt; Test Cases</code> tab and then click the test case that was previously created, you will see that its Automation information has been populated:</p>
 <p><img alt="automation info" src="../img/using_rapise_with_spiratest_guide30.png" /></p>
-<p>This shows you that the <code>Login to Application</code> test case is linked to the corresponding Rapise test stored in the SpiraTest document repository (in the <code>LoginToApplication</code> folder). You can click on the <code>LoginToApplication.sstest</code> hyperlink and it will automatically take you to the corresponding <code>.sstest</code> file in the SpiraTest document repository:</p>
+<p>This shows you that the <code>Login to Application</code> test case is linked to the corresponding Rapise test stored in the SpiraTest document repository (in the <code>LoginToApplication</code> folder). You can click the <code>LoginToApplication.sstest</code> hyperlink, and it will automatically direct you to the corresponding <code>.sstest</code> file in the SpiraTest document repository:</p>
 <p><img alt="sstest" src="../img/using_rapise_with_spiratest_guide31.png" /></p>
 <h2 id="using-parameterized-test-cases">Using Parameterized Test Cases<a class="headerlink" href="#using-parameterized-test-cases" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>This is a legacy approach to parameters passing. If you are just starting with Rapise please follow this <a href="../Frameworks/parameters/">guide</a>.</p>
+<p>This is a legacy approach to passing parameters. If you are just starting with Rapise, please follow this <a href="../Frameworks/parameters/">guide</a>.</p>
 </div>
-<p>Often you will have an automated test script that you want to run several times using:</p>
+<p>Often, you will have an automated test script that you want to run several times, using:</p>
 <ul>
-<li>Different browsers (e.g. Chrome, Edge and Safari)</li>
+<li>Different browsers (e.g., Chrome, Edge, and Safari)</li>
 <li>Different test data</li>
 </ul>
-<p>You can define the various test parameters for both these cases and have SpiraTest pass the values through to the Rapise automated test. For example, in the Automation (or Test Steps) section of a test case (you may learn how to create one from this <a href="../tutorial_record_and_playback/">tutorial</a>), click the <code>Edit Parameters</code> link </p>
+<p>You can define the various test parameters for both these scenarios and have SpiraTest pass the values to the Rapise automated test. For example, in the Automation (or Test Steps) section of a test case (you can learn how to create one from this <a href="../tutorial_record_and_playback/">tutorial</a>), click the <code>Edit Parameters</code> link</p>
 <p><img alt="Edit Parameters Button" src="../img/spiratest_integration_edit_parameters.png" /></p>
 <p>and enter the following information:</p>
 <p><img alt="test case parameters" src="../img/using_rapise_with_spiratest_guide32.png" /></p>
@@ -12532,12 +12598,12 @@
 <li><strong>g_book_author</strong> - the name of the author for the new book being created.</li>
 <li><strong>g_book_genre</strong> - the name of the genre for the new book being created.</li>
 <li><strong>g_book_name</strong> - the title/name of the new book being created.</li>
-<li><strong>g_browserLibrary</strong> - the name of the <a href="../selenium_settings_dialog/">browser profile</a> we should use to run the test. The name of this parameter is reserved, while the first three may be different.</li>
+<li><strong>g_browserLibrary</strong> - the name of the <a href="../selenium_settings_dialog/">browser profile</a> to use to run the test. The name of this parameter is reserved, whereas the first three can be customized.</li>
 </ul>
-<p>Now for these parameters to actually affect the Rapise test, you need to make sure that the Rapise test is expecting these variables and knows how to handle them. Conventionally in Rapise, all <strong>global variables</strong> are prefixed with <code>g_</code> which is why we have similarly named the SpiraTest parameter names.</p>
-<p>If your test is implemented in RVL, you may define these variables right in RVL sheet using <a href="../../RVL/Variables/#assigning">Global Variables</a>. No need to define <code>g_browserLibrary</code> because it is built-in. Note, that to print this parameter value we use <code>g_browserProfile</code>.</p>
+<p>For these parameters to affect the Rapise test, you must ensure that the Rapise test is expecting these variables and knows how to handle them. Conventionally, in Rapise, all <strong>global variables</strong> are prefixed with <code>g_</code>, which is why we have similarly named the SpiraTest parameters.</p>
+<p>If your test is implemented in RVL, you may define these variables directly in the RVL sheet using <a href="../../RVL/Variables/#assigning">Global Variables</a>. There is no need to define <code>g_browserLibrary</code> because it is built-in. Note that to print this parameter value, we use <code>g_browserProfile</code>.</p>
 <p><img alt="parameters in rvl" src="../img/using_rapise_with_spiratest_rvl_vars.png" /></p>
-<p>In JavaScript mode declare parameters in <code>Main.js</code> like this.</p>
+<p>In JavaScript mode, declare parameters in <code>Main.js</code> as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestInit</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">// Input variables - allows to configure parameters in SpiraTest.</span>
@@ -12570,190 +12636,191 @@
 
 <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">]</span>
 </code></pre></div>
-<p>This code will check to see if the variables are provided by SpiraTest and if not, it will use some defaults. This is useful when you want to be able to run the test directly from Rapise and from SpiraTest without having to make changes to the test script.</p>
+<p>This code will check if the variables are provided by SpiraTest, and if not, it will use default values. This is useful when you want to run the test directly from Rapise and from SpiraTest without having to make changes to the test script.</p>
 <p>These global variables (<code>g_book_name</code>, <code>g_book_author</code>, <code>g_book_genre</code>) can now be used in the Rapise test script at the appropriate points in the playback.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Parameters in Rapise and SpiraTest are case-sensitive, so make sure that your parameter names in SpiraTest match those in Rapise exactly, including the specific case.</p>
+<p>Parameters in Rapise and SpiraTest are case-sensitive, so make sure that your parameter names in SpiraTest match those in Rapise exactly, including case sensitivity.</p>
 </div>
 <h2 id="scheduling-the-tests">Scheduling the Tests<a class="headerlink" href="#scheduling-the-tests" title="Permanent link">&para;</a></h2>
-<p>Now that we have our Rapise automated test uploaded to SpiraTest and associated with a test case, we can now schedule the test to be executed. The first thing we need to do is setup the list of automation hosts.</p>
+<p>Now that we have our Rapise automated test uploaded to SpiraTest and associated with a test case, we can schedule the test for execution. First, we need to set up the list of automation hosts.</p>
 <h3 id="configuring-the-automation-hosts">Configuring the Automation Hosts<a class="headerlink" href="#configuring-the-automation-hosts" title="Permanent link">&para;</a></h3>
-<p>When you execute Rapise automated tests from SpiraTest, you have the ability to specify which computer(s) it will be executed on. We call those different computers, the <strong>automated hosts</strong>. Each automation host needs to have a copy of Rapise installed on it.</p>
+<p>When you execute Rapise automated tests from SpiraTest, you can specify the computer(s) on which they will be executed. We refer to these computers as <strong>automation hosts</strong>. Each automation host must have a copy of Rapise installed.</p>
 <p>Go to <code>Testing &gt; Automation Hosts</code> in SpiraTest to display the list of automation hosts:</p>
 <p><img alt="automation hosts" src="../img/using_rapise_with_spiratest_guide33.png" /></p>
-<p>Make sure that you have created an Automation Host for each computer that is going to run an automated test case. The name and description can be set to anything you like, but the Token field must be set to a <a href="#repository-and-token">unique name for each computer</a>.</p>
-<p>Once you have at least one Automation Host configured, we need to next create the test sets that will be scheduled to execute on these hosts.</p>
+<p>Make sure that you have created an Automation Host for each computer that will run an automated test case. The name and description can be set to anything meaningful, but the Token field must be set to a <a href="#repository-and-token">unique name for each computer</a>.</p>
+<p>Once you have at least one Automation Host configured, we next need to create the test sets that will be scheduled for execution on these hosts.</p>
 <h3 id="creating-and-scheduling-the-test-sets">Creating and Scheduling the Test Sets<a class="headerlink" href="#creating-and-scheduling-the-test-sets" title="Permanent link">&para;</a></h3>
-<p>Inside SpiraTest, click on <code>Testing &gt; Test Sets</code> to display the list of existing test sets:</p>
+<p>Inside SpiraTest, click <code>Testing &gt; Test Sets</code> to display the list of existing test sets:</p>
 <p><img alt="test sets" src="../img/using_rapise_with_spiratest_guide34.png" /></p>
-<p>Now click on <strong>New Test Set</strong> to create a new test set that will contain our automated test case:</p>
+<p>Now, click <strong>New Test Set</strong> to create a new test set that will contain our automated test case:</p>
 <p><img alt="new test set" src="../img/using_rapise_with_spiratest_guide35.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Unlike manual test cases, automated test cases must be executed within a test set -- they cannot be executed directly from the test case.</p>
+<p>Unlike manual test cases, automated test cases must be executed within a test set; they cannot be executed directly from the test case.</p>
 </div>
-<p>Now click on the hyperlink of our new test set to display the test set details page:</p>
+<p>Now, click the hyperlink of our new test set to display the test set details page:</p>
 <p><img alt="test set details" src="../img/using_rapise_with_spiratest_guide36.png" /></p>
 <p>Scroll down to the <strong>Test Cases</strong> section:</p>
 <p><img alt="test cases section" src="../img/using_rapise_with_spiratest_guide37.png" /></p>
-<p>First, click on the <code>Add</code> button in the <strong>Test Cases</strong> tab to bring up the dialog box that lets us add new test cases to the set:</p>
+<p>First, click the <code>Add</code> button in the <strong>Test Cases</strong> tab to bring up the dialog box that allows us to add new test cases to the set:</p>
 <p><img alt="Add Test Cases" src="../img/spiratest_integration_add_test_cases.png" /></p>
-<p>Click on <code>Root</code> to expand the tree of folders and choose a folder:</p>
+<p>Click <code>Root</code> to expand the tree of folders and choose a folder:</p>
 <p><img alt="Choose Test Case Folder" src="../img/spiratest_integration_choose_test_case_folder.png" /></p>
 <p>Choose <a href="#using-parameterized-test-cases">the parameterized test case</a> and click the <code>Save</code> button.</p>
 <p><img alt="add test cases" src="../img/using_rapise_with_spiratest_guide38.png" /></p>
-<p>The test case will now be added to the set. Perform the same action again so that we have the separate instances of our parameterized test case:</p>
+<p>The test case will now be added to the set. Perform the same action again to have separate instances of our parameterized test case:</p>
 <p><img alt="test case added" src="../img/using_rapise_with_spiratest_guide39.png" /></p>
-<p>Since in this example we have parameterized test cases inside the automated test set, we need to set their values by right-clicking on each test case in turn and choose <code>Edit Parameters</code>:</p>
+<p>Since this example includes parameterized test cases within the automated test set, we need to set their values by right-clicking each test case in turn and choosing <code>Edit Parameters</code>:</p>
 <p><img alt="parameters" src="../img/using_rapise_with_spiratest_guide40.png" /></p>
 <p>Enter the parameter values and click <code>Save</code> to commit the change. This allows you to have the same test case in the test set multiple times with different data for each instance of the test case.</p>
 <p><img alt="test cases with parameters" src="../img/using_rapise_with_spiratest_guide41.png" /></p>
-<p>Now that we have the test case added to the set, we need schedule the test set for execution by filling in the following fields:</p>
+<p>Now that we have the test case added to the set, we need to schedule the test set for execution by filling in the following fields:</p>
 <p><img alt="scheduling" src="../img/using_rapise_with_spiratest_guide42.png" /></p>
 <ul>
 <li><strong>Automation Host</strong> - the name of the automation host that will be running the automated test set.</li>
-<li><strong>Planned Date</strong> - the date and time that you want the scenario to begin. Note that multiple test sets scheduled at the exact same time will be scheduled by Test Set ID order.</li>
-<li><strong>Status</strong> - this needs to be set to <strong>Not Started</strong> for RapiseLauncher to pick up the scheduled test set. When you change the Planned Date, the status automatically switches back to <strong>Not Started</strong>.</li>
-<li><strong>Type</strong> - this needs to be set to <strong>Automated</strong> for automated testing.</li>
+<li><strong>Planned Date</strong> - the date and time that you want the scenario to begin. Note that multiple test sets scheduled at the exact same time will be executed according to Test Set ID order.</li>
+<li><strong>Status</strong> - this must be set to <strong>Not Started</strong> for RapiseLauncher to pick up the scheduled test set. When you change the Planned Date, the status automatically switches back to <strong>Not Started</strong>.</li>
+<li><strong>Type</strong> - this must be set to <strong>Automated</strong> for automated testing.</li>
 </ul>
 <h3 id="executing-the-test-sets">Executing the Test Sets<a class="headerlink" href="#executing-the-test-sets" title="Permanent link">&para;</a></h3>
-<p>Once you have set the various test set fields (as described above), the RapiseLauncher instance running on the assigned automation host will periodically poll SpiraTest for new test sets. Once it retrieves the new test set, it will add it to its list of test sets to be executed. Once execution begins it will change the status of the test set to <strong>In Progress</strong>, and once test execution is done, the status of the test set will change to either <strong>Completed</strong> (the automation engine has been  launched and the test has completed) -- or <strong>Blocked</strong> (RapiseLauncher was not able to execute the automated test).</p>
-<p>If you want to immediately execute the test case on your local computer, instead of setting the <strong>Automation Host</strong>, <strong>Status</strong> and <strong>Planned Date</strong> fields, you can click the <code>Execute</code> icon on the test set itself. This will cause RapiseLauncher on the local computer to immediately start executing the current test set.</p>
-<p>In either case, once all the test cases in the test set have been completed, the status of the test set will switch to <strong>Completed</strong> and the individual test cases in the set will display a status based on the results of the Rapise test:</p>
+<p>Once you have set the various test set fields (as described above), the RapiseLauncher instance running on the assigned automation host will periodically poll SpiraTest for new test sets. Once it retrieves the new test set, it will add it to its list of test sets to be executed. Once execution begins, it will change the status of the test set to <strong>In Progress</strong>, and once test execution is complete, the status of the test set will change to either <strong>Completed</strong> (the automation engine has been launched and the test has completed); or <strong>Blocked</strong> (RapiseLauncher was not able to execute the automated test).</p>
+<p>If you want to immediately execute the test case on your local computer, instead of setting the <strong>Automation Host</strong>, <strong>Status</strong>, and <strong>Planned Date</strong> fields, you can click the <code>Execute</code> icon for the test set itself. This will cause RapiseLauncher on the local computer to immediately start executing the current test set.</p>
+<p>In either case, once all test cases in the test set have been completed, the status of the test set will switch to <strong>Completed</strong>, and the individual test cases in the set will display a status based on the results of the Rapise test:</p>
 <ul>
-<li><strong>Passed</strong> - the Rapise automated test ran successfully and all the test conditions in the test script passed.</li>
+<li><strong>Passed</strong> - the Rapise automated test ran successfully, and all test conditions in the test script passed.</li>
 <li><strong>Failed</strong> - the Rapise automated test ran successfully, but at least one test condition in the test script failed.</li>
 <li><strong>Blocked</strong> - the Rapise automated test did not run successfully.</li>
 </ul>
-<p>If you receive the <strong>Blocked</strong> status for either the test set or the test cases you should look into the <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/">test run</a> details in SpiraTest to find out the reason.</p>
+<p>If you receive the <strong>Blocked</strong> status for either the test set or the test cases, you should examine the <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/">test run</a> details in SpiraTest to determine the reason.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While the tests are executing you may see browser or application windows launch as Rapise executes the appropriate tests.</p>
+<p>While the tests are executing, you may see browser or application windows launch as Rapise executes the appropriate tests.</p>
 </div>
-<p>Once the tests have completed, you can log back into SpiraTest and see the execution status of your test sets:</p>
+<p>Once the tests have completed, you can log back in to SpiraTest and see the execution status of your test sets:</p>
 <p><img alt="execution results" src="../img/using_rapise_with_spiratest_guide43.png" /></p>
-<p>If you click on a Test Run in that test set, you will see the following information:</p>
+<p>If you click a Test Run in that test set, you will see the following information:</p>
 <p><img alt="test run" src="../img/using_rapise_with_spiratest_guide44.png" /></p>
-<p>If you have configured RapiseLauncher to capture screenshots during execution, they will be embedded into the report:</p>
+<p>If you have configured RapiseLauncher to capture screenshots during execution, they will be embedded in the report:</p>
 <p><img alt="attachments tab" src="../img/using_rapise_with_spiratest_guide45.png" /></p>
 <p>So, you now have a complete record of the automated test execution in SpiraTest, with the execution status of the appropriate test case and test steps updated, and a complete log of the testing activities.</p>
-<p>The Attachments tab of a test run contains all the screenshots, the original report and log files:</p>
+<p>The Attachments tab of a test run contains all screenshots, the original report, and log files:</p>
 <p><img alt="Attached Report" src="../img/testrun_attachments.png" /></p>
 <h4 id="block-execution">Block Execution<a class="headerlink" href="#block-execution" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This feature requires Rapise 6.6+.</p>
 </div>
-<p>If you have a test set that contains several test cases and failure of some test case makes further execution of the test set unwanted you may do this by returning exit code <code>-99</code> from the failed test. It can be done via <code>WScript.Quit(-99)</code> statement.</p>
+<p>If you have a test set that contains several test cases, and if the failure of one test case makes further execution of the test set undesirable, you can achieve this by returning exit code <code>-99</code> from the failed test. This can be done via the <code>WScript.Quit(-99)</code> statement.</p>
 <h2 id="using-rapiselauncher">Using RapiseLauncher<a class="headerlink" href="#using-rapiselauncher" title="Permanent link">&para;</a></h2>
-<p><strong>RapiseLauncher</strong> is a separate application that installs with Rapise. It allows you to remotely schedule the automated tests in SpiraTest and have RapiseLauncher automatically invoke the tests according to the schedule.</p>
+<p><strong>RapiseLauncher</strong> is a separate application that installs with Rapise. It allows you to remotely schedule automated tests in SpiraTest, and allows RapiseLauncher to automatically invoke the tests according to the schedule.</p>
 <h3 id="configuring-rapiselauncher">Configuring RapiseLauncher<a class="headerlink" href="#configuring-rapiselauncher" title="Permanent link">&para;</a></h3>
-<p>RapiseLauncher installs along with the main Rapise application. You may launch it from Rapise using <a href="../menu_and_toolbars/#tools">main menu</a> <code>Tools &gt; Rapise Launcher</code>.</p>
+<p>RapiseLauncher is installed alongside the main Rapise application. You can launch it from Rapise using the <a href="../menu_and_toolbars/#tools">main menu</a> <code>Tools &gt; Rapise Launcher</code>.</p>
 <p>It can also be found in the <code>Start &gt; Programs &gt; Inflectra</code> program folder:</p>
 <p><img alt="rapise launcher icon" src="../img/using_rapise_with_spiratest_guide46.png" /></p>
 <h3 id="basic-unattended-operation">Basic Unattended Operation<a class="headerlink" href="#basic-unattended-operation" title="Permanent link">&para;</a></h3>
-<p>When run, the program will start minimized to the system tray and will start its polling of the server. Polling will occur every 'x' minutes (5 by default) for any automated test sets that are scheduled to be run. When time comes for a test to be launched, it will start Rapise to execute the test. Rapise will then perform the test activities and report the results back to SpiraTest.</p>
-<p>At the end of the test, the program will go back and resume scanning for tests that need to be executed. Typically (unless there is a bug in the test or application being tested) no user input is ever needed from the application itself.</p>
+<p>When launched, the program will start minimized to the system tray and begin polling the server. Polling will occur every 'x' minutes (5 minutes by default) for any automated test sets that are scheduled for execution. When it is time for a test to be launched, it will start Rapise to execute the test. Rapise will then perform the test activities and report the results back to SpiraTest.</p>
+<p>At the end of the test, the program will return to scanning for tests that need execution. Typically (unless there is a bug in the test or the application being tested), no user input is ever needed from the application itself.</p>
 <h3 id="client-configuration">Client Configuration<a class="headerlink" href="#client-configuration" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>SpiraTest connection settings are shared between <a href="#connecting-to-spiratest">Rapise</a> and RapiseLauncher.</p>
 </div>
-<p>By right clicking on the system tray icon and selecting <code>Configuration</code>, the application's window will open to the configuration panel.</p>
+<p>By right-clicking the system tray icon and selecting <code>Configuration</code>, the application's window will open to the configuration panel.</p>
 <p><img alt="Client Configuration" src="../img/using_rapise_with_spiratest_guide47.png" width="658px" /></p>
 <p>The panel has the following options:</p>
 <h4 id="spiratest-server-connection">SpiraTest Server Connection<a class="headerlink" href="#spiratest-server-connection" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>URL</strong> - the URL of the SpiraTest installation. Be sure to not put <code>/Login.aspx</code> or any other page in the string, this should be just the root URL of the application's install.</li>
-<li><strong>User Name</strong> - the SpiraTest login id of the user that you want the tests reported as. Note that while the application is polling and updating test results, if the user is logged into a web browser session, they will get kicked out.</li>
-<li><strong>API Key</strong>-  the <a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key">API Key</a> for the User Name above.</li>
-<li><strong>Test</strong> - clicking this will test the login to make sure the application can connect to the server properly.</li>
-<li><strong>Repository</strong> - this is the Windows folder to store local copies of tests to execute.It is applicable when the next option is unchecked.</li>
-<li><strong>Use Temp Folder for Test Execution</strong> - this is the default and recommended option, the Temp folder is located in <code>C:\ProgramData\Inflectra\Rapise\Temp</code>.</li>
+<li><strong>URL</strong> - the URL of the SpiraTest installation. Do not include <code>/Login.aspx</code> or any other page in the string; this should be just the root URL of the application's installation.</li>
+<li><strong>User Name</strong> - the SpiraTest login ID of the user under whom you want the test results reported. Note that while the application is polling and updating test results, if the user is logged in to a web browser session, they will be logged out.</li>
+<li><strong>API Key</strong>- the <a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/?_ga=2.209824854.2141741329.1643112840-308801923.1641378277#how-to-get-or-make-your-rss-token-or-api-key">API Key</a> for the User Name above.</li>
+<li><strong>Test</strong> - Clicking this will test the login to ensure the application can connect to the server properly.</li>
+<li><strong>Repository</strong> - This is the Windows folder for storing local copies of tests to execute. It is applicable when the subsequent option is unchecked.</li>
+<li><strong>Use Temp Folder for Test Execution</strong> - This is the default and recommended option. The Temp folder is located in <code>C:\ProgramData\Inflectra\Rapise\Temp</code>.</li>
 </ul>
 <h4 id="server-polling">Server Polling<a class="headerlink" href="#server-polling" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><strong>Automation Host Token</strong> - this field is required, and uniquely identifies the local testing machine. Any scheduled tests assigned to the Automation Host on SpiraTest will get polled for this machine. Except in special circumstances, this ID should be unique among all testing machines.</p>
+<p><strong>Automation Host Token</strong> - This field is required and uniquely identifies the local testing machine. Any scheduled tests assigned to the Automation Host in SpiraTest will be polled for by this machine. Except in special circumstances, this ID must be unique among all testing machines.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>This field must match the string that is entered into the Automation Host Details screen in the <strong>Token</strong> field, or scheduled tests will not be recognized.</p>
+<p>This field must match the string that is entered in the Automation Host Details screen in the <strong>Token</strong> field, or scheduled tests will not be recognized.</p>
 </div>
 </li>
 <li>
-<p><strong>Polling Frequency</strong> - how often in minutes the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 5 minutes, and should be fine for most installations. Note that tests will still be executed on their scheduled time, this is simply how often the program will talk to the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.</p>
+<p><strong>Polling Frequency</strong> - The frequency in minutes at which the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 5 minutes and should be sufficient for most installations. Note that tests will still be executed at their scheduled time; this simply determines how often the program communicates with the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.</p>
 </li>
-<li><strong>Read Ahead</strong> - how far ahead in minutes the program should read the schedule for the Automation host. Tests that are scheduled further in advance will not show up as a pending test on the status screen.</li>
-<li><strong>Connection Timeout</strong> - Consider a request to Spira failed after specified time. Requires Rapise 8.1+. <a class="headerlink" href="#connection-timeout" title="Permanent link">¶</a></li>
-<li><strong>Automatically run tests that are overdue</strong> - when this is checked, any tests that are pulled from the SpiraTest server that has a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this check, they will be executed as soon as the poll is finished.</li>
+<li><strong>Read Ahead</strong> - How far in advance (in minutes) the program should read the schedule for the Automation host. Tests that are scheduled further in advance will not appear as a pending test on the status screen.</li>
+<li><strong>Connection Timeout</strong> - A request to Spira is considered failed after the specified time. Requires Rapise 8.1+. <a class="headerlink" href="#connection-timeout" title="Permanent link">¶</a></li>
+<li><strong>Automatically run tests that are overdue</strong> - When this is checked, any tests pulled from the SpiraTest server that have a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this option enabled, they will be executed as soon as the poll is complete.</li>
+<li><strong>Run in load-balancing mode (adv. users)</strong> - When this is checked, test sets are executed in <a href="#load-balancing-mode">load balancing mode</a>.</li>
 </ul>
 <h4 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>Capture screenshots during playback</strong> - selecting this option will instruct RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest at the end of the execution. The screenshots will then be linked to the test run inside SpiraTest.</li>
-<li><strong>Continue test set execution if test case returns Blocked status</strong> - by default Blocked test case stops execution of a test set, set this checkbox to run all test cases no matter what. This option requires Rapise 7.3+</li>
-<li><strong>Do not upload Test Run attachments</strong> - if this option is set, RapiseLauncher does not upload screenshots and log files to SpiraTest to save database space. Use this option in exceptional cases if your SpiraTest instance is running out of space. Requires Rapise 8.0+.</li>
-<li><strong>RDP screen width &amp; height</strong> - when RDP session is disconnected via <a href="#tray-icon-menu">RapiseLauncher tray icon menu</a> set screen resolution to specified width and height.</li>
-<li><strong>Start at logon</strong> -- set this checkbox to let Windows automatically launch Rapise Launcher at user logon. Useful when your server is rebooted regularly. This option requires Rapise 6.3+</li>
+<li><strong>Capture screenshots during playback</strong> - Selecting this option instructs RapiseLauncher to capture screenshots of the objects being recognized during testing and upload them to SpiraTest upon completion of the execution. The screenshots will then be linked to the test run within SpiraTest.</li>
+<li><strong>Continue test set execution if test case returns Blocked status</strong> - By default, a Blocked test case stops the execution of a test set. Check this option to run all test cases regardless of status. This option requires Rapise 7.3+</li>
+<li><strong>Do not upload Test Run attachments</strong> - If this option is set, RapiseLauncher does not upload screenshots and log files to SpiraTest to conserve database space. Use this option in exceptional cases, such as when your SpiraTest instance is running out of space. Requires Rapise 8.0+.</li>
+<li><strong>RDP screen width &amp; height</strong> - When an RDP session is disconnected via the <a href="#tray-icon-menu">RapiseLauncher tray icon menu</a>, the screen resolution is set to the specified width and height.</li>
+<li><strong>Start at logon</strong> -- Check this option to have Windows automatically launch RapiseLauncher at user logon. This is useful when your server is rebooted regularly. This option requires Rapise 6.3+</li>
 </ul>
-<p>Since Rapise 7.2 one may use <code>Open Log</code> button to quickly open the RapiseLauncher log in the default text viewer.</p>
+<p>Since Rapise 7.2, you can use the <code>Open Log</code> button to quickly open the RapiseLauncher log in the default text viewer.</p>
 <h3 id="status-screen">Status Screen<a class="headerlink" href="#status-screen" title="Permanent link">&para;</a></h3>
-<p>The status screen is usually hidden, but can be brought up for display by double-clicking on the system tray icon:</p>
+<p>The status screen is usually hidden but can be brought up for display by double-clicking the system tray icon:</p>
 <p><img src="/Guide/img/using_rapise_with_spiratest_guide49.png" width="632" /></p>
-<p>The top of the screen shows the current status, whether it's running a test or waiting to poll the server for an update. It will also show any errors present on the application, like a registration error or configuration issue. Under the status bar is a list of any pending or executing tests that are scheduled for this testing machine. The list will get cleared at every poll, so tests that have executed since the previous poll will still be on the list, and will show their execution status:</p>
+<p>The top of the screen shows the current status, indicating whether it's running a test or waiting to poll the server for an update. It will also show any errors present in the application, such as a registration error or configuration issue. Below the status bar is a list of any pending or executing tests that are scheduled for this testing machine. The list is cleared at every poll, so tests that have executed since the previous poll will still be on the list and show their execution status:</p>
 <ul>
-<li><strong>Green Arrow</strong> - a green arrow indicates that the test is still running, or RapiseLauncher is waiting for a reply from Rapise.</li>
-<li><strong>Blue Checkbox</strong> - a blue checkbox indicates that the test is completed, regardless of status of the individual test steps in the scheduled test set.</li>
-<li><strong>Red Error</strong> - a red error indicator indicates that Rapise ran into an issue (outside of test results). In this case, any further tests will be marked as blocked, as the issue needs to be corrected within Rapise or the Rapise test script.</li>
-<li><strong>No Indication</strong> - no indication means that the test is currently awaiting for its scheduled date to start. Note that only one test will be launched at a time, so that if two tests are scheduled at the same time, the one with the lower TestSet ID will be executed first, then as soon as it's finished, the second scheduled test will be run.</li>
+<li><strong>Green Arrow</strong> - A green arrow indicates that the test is still running, or RapiseLauncher is waiting for a reply from Rapise.</li>
+<li><strong>Blue Checkbox</strong> - A blue checkbox indicates that the test is completed, regardless of the status of the individual test steps in the scheduled test set.</li>
+<li><strong>Red Error</strong> - A red error indicator indicates that Rapise encountered an issue (outside of test results). In this case, any further tests will be marked as blocked, as the issue must be corrected within Rapise or the Rapise test script.</li>
+<li><strong>No Indication</strong> - No indication means that the test is currently awaiting its scheduled start date. Note that only one test will be launched at a time, so if two tests are scheduled at the same time, the one with the lower TestSet ID will be executed first, and as soon as it is finished, the second scheduled test will be run.</li>
 </ul>
 <h4 id="buttons">Buttons<a class="headerlink" href="#buttons" title="Permanent link">&para;</a></h4>
-<p>By highlighting a test that has not been executed yet, you can click the <code>Force Execute</code> button. This will cause the selected test to have its scheduled date to the current time, causing it to be immediately executed (or, if another test is already running, next in line for execution).</p>
-<p>At any time the <code>Force Poll</code> button can be clicked, causing RapiseLauncher to initiate an immediate poll of the SpiraTest server to check for pending runs. The timers for the next server poll will be reset when the button is clicked.</p>
-<p>To stop of execution of a running Test Set, select it in the list and click <code>Cancel Execution</code> button.</p>
+<p>By highlighting a test that has not been executed yet, you can click the <code>Force Execute</code> button. This will cause the selected test to have its scheduled date set to the current time, leading to its immediate execution (or, if another test is already running, placing it next in line for execution).</p>
+<p>At any time, the <code>Force Poll</code> button can be clicked, causing RapiseLauncher to initiate an immediate poll of the SpiraTest server to check for pending runs. The timers for the next server poll will be reset when the button is clicked.</p>
+<p>To stop the execution of a running Test Set, select it in the list and click the <code>Cancel Execution</code> button.</p>
 <h3 id="tray-icon-menu">Tray Icon Menu<a class="headerlink" href="#tray-icon-menu" title="Permanent link">&para;</a></h3>
-<p>Instead of operating from the application window, all functions exist on the tray icon menu as well, as well as some additional commands:</p>
+<p>Instead of operating from the application window, all functions are available from the tray icon menu, along with some additional commands:</p>
 <p><img alt="tray menu" src="../img/using_rapise_with_spiratest_guide50.png" /></p>
 <ul>
-<li><strong>Pause / Resume</strong> - the Pause/Resume option pauses or resumes the timers for polling and executing tests. If a test or server poll is already in progress, it will not cancel these. However, after the are finished, no further polls or tests will be run.</li>
-<li><strong>Poll Now</strong> - this will force a server poll for upcoming tests, and reset the poll timer.</li>
-<li><strong>Disconnect RDP Session</strong> - this will disconnect current RDP session and will leave the system in a state ready for execution of UI tests. After disconnect RapiseLauncher will set screen resolution according to <a href="#client-configuration">configuration</a> (width/height options). This feature is a convenient way to perform steps described in <a href="https://www.inflectra.com/Support/KnowledgeBase/KB325.aspx">KB325</a>.</li>
-<li><strong>Configuration</strong> - opens the main window to the Configuration page.</li>
-<li><strong>Help &gt; About</strong> - opens the About window, which displays information about Rapise Launcher.</li>
-<li><strong>Help &gt; View Help</strong> - opens this help page.</li>
-<li><strong>Exit</strong> - will completely exit the program. Doing this will cancel any tests currently running and shut down the program. Any tests that were waiting to be executed will not execute until the program is restarted and the polling is resumed.</li>
+<li><strong>Pause / Resume</strong> - The Pause/Resume option pauses or resumes the timers for polling and executing tests. If a test or server poll is already in progress, it will not cancel these. However, after they are finished, no further polls or tests will be executed.</li>
+<li><strong>Poll Now</strong> - This forces a server poll for upcoming tests and resets the poll timer.</li>
+<li><strong>Disconnect RDP Session</strong> - This disconnects the current RDP session and leaves the system in a state ready for execution of UI tests. After disconnection, RapiseLauncher will set the screen resolution according to the <a href="#client-configuration">configuration</a> (width/height options). This feature is a convenient way to perform the steps described in <a href="https://www.inflectra.com/Support/KnowledgeBase/KB325.aspx">KB325</a>.</li>
+<li><strong>Configuration</strong> - Opens the main window to the Configuration page.</li>
+<li><strong>Help &gt; About</strong> - Opens the About window, which displays information about RapiseLauncher.</li>
+<li><strong>Help &gt; View Help</strong> - Opens this help page.</li>
+<li><strong>Exit</strong> - Completely exits the program. This will cancel any tests currently running and shut down the program. Any tests that were waiting to be executed will not execute until the program is restarted and polling is resumed.</li>
 </ul>
 <p>You can double-click the tray icon to bring up the main window on the Status page.</p>
 <h3 id="running-rapiselauncher-from-a-build-script">Running RapiseLauncher from a Build Script<a class="headerlink" href="#running-rapiselauncher-from-a-build-script" title="Permanent link">&para;</a></h3>
-<p>Normally you schedule tests in SpiraTest using the <strong>Planned Date</strong> field of the test sets and let the various instances of RapiseLauncher poll SpiraTest for upcoming tests. In addition (as described in the <em>SpiraTest User Manual</em>) you can execute a test set on the local machine immediately by clicking the <strong>Execute</strong> button within SpiraTeam.</p>
-<p>However there are situations where you want to be able to launch an automated Rapise test script from an external batch file or build script (e.g. as part of a continuous integration environment) and have those tests report their results back into SpiraTest. You can achieve this by using the special command-line argument <code>--testset</code> which is passed to RapiseLauncher. For more details on this parameter see the next section.</p>
+<p>Normally, you schedule tests in SpiraTest using the <strong>Planned Date</strong> field of the test sets, allowing the various instances of RapiseLauncher to poll SpiraTest for upcoming tests. Additionally (as described in the <em>SpiraTest User Manual</em>), you can execute a test set on the local machine immediately by clicking the <strong>Execute</strong> button within SpiraTeam.</p>
+<p>However, there are situations where you want to launch an automated Rapise test script from an external batch file or build script (e.g., as part of a continuous integration environment) and have those tests report their results back to SpiraTest. You can achieve this by using the special command-line argument <code>--testset</code>, which is passed to RapiseLauncher. For more details on this parameter, see the next section.</p>
 <h3 id="command-line-arguments">Command line arguments<a class="headerlink" href="#command-line-arguments" title="Permanent link">&para;</a></h3>
 <p>For debugging and additional options when running the program, the following command-line arguments are available:</p>
 <ul>
-<li><strong>-config:[Path to RepositoryConnection.xml]</strong> allows defining path to custom RapiseLauncher configuration. It may be used when RapiseLauncher is executed in remote pipeline. You may create <code>RepositoryConnection.xml</code> on you dev host (by setting the configuration using standard settings dialog), and then copy the configured file from <code>C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml</code> to your source tree and pass it using this parameter.</li>
-<li><strong>-minimized</strong> starts the application in minimized mode. Normal action is to show the list of pending runs.</li>
-<li><strong>-paused</strong> starts the application with timers Paused instead of active.</li>
+<li><strong>-config:[Path to RepositoryConnection.xml]</strong> allows defining the path to a custom RapiseLauncher configuration. It can be used when RapiseLauncher is executed in a remote pipeline. You can create <code>RepositoryConnection.xml</code> on your dev host (by setting the configuration using the standard settings dialog), and then copy the configured file from <code>C:\ProgramData\Inflectra\Rapise\RepositoryConnection.xml</code> to your source tree and pass it using this parameter.</li>
+<li><strong>-minimized</strong> Starts the application in minimized mode. The normal action is to show the list of pending runs.</li>
+<li><strong>-paused</strong> Starts the application with timers paused instead of active.</li>
 <li>
 <p><strong>-param:[name]=[value]</strong> sets a global variable for every executed test. For example:</p>
 <div class="highlight"><pre><span></span><code>-param:g_enableVideoRecording=true
 </code></pre></div>
-<p>Param argument can be used multiple times:</p>
+<p>The <code>-param</code> argument can be used multiple times:</p>
 <div class="highlight"><pre><span></span><code>-param:g_verboseLevel=3 -param:g_enableVideoRecording=true
 </code></pre></div>
 </li>
 <li>
-<p><strong>-poll</strong> forces the program to do an initial poll upon startup. Normal action is to wait the pending time before doing the initial poll.</p>
+<p><strong>-poll</strong> Forces the program to perform an initial poll upon startup. The normal action is to wait for the pending time before performing the initial poll.</p>
 </li>
-<li><strong>-project:[Project ID]</strong> allows you to tell RapiseLauncher which project the test set specified with the <strong>-testset</strong> argument lives in. This speeds up the time it takes Rapise to locate and retrieve the test set (optional).</li>
-<li><strong>-testset:[Test Set ID]</strong> allows you to tell RapiseLauncher to execute a specific test set on the remote computer (e.g. <strong>-testset:45</strong> runs test set <code>TX00045</code>). Since Rapise 6.7 one may pass a comma separated list of test set Ids (e.g. <strong>-testset:45,46,47</strong>). Listed test sets are executed sequentially.</li>
-<li><strong>-trace</strong> enables tracelogging to the EventLog for debugging and watching tests execute.</li>
+<li><strong>-project:[Project ID]</strong> Allows RapiseLauncher to identify the project where the test set specified with the <strong>-testset</strong> argument resides. This speeds up the time Rapise takes to locate and retrieve the test set (optional).</li>
+<li><strong>-testset:[Test Set ID]</strong> Allows RapiseLauncher to execute a specific test set on the remote computer (e.g., <strong>-testset:45</strong> runs test set <code>TX00045</code>). Since Rapise 6.7, you can pass a comma-separated list of Test Set IDs (e.g., <strong>-testset:45,46,47</strong>). Listed test sets are executed sequentially.</li>
+<li><strong>-trace</strong> Enables trace logging to the Event Log for debugging and watching tests execute.</li>
 <li>
-<p><strong>-width:[width] -height:[height]</strong> sets the screen resolution. Width must be in the range <code>[1024, 7680]</code>, height - <code>[768, 4320]</code>. Allowed width/height combinations are determined by the operating system where you run RapiseLauncher. Most typical resolutions are </p>
+<p><strong>-width:[width] -height:[height]</strong> Sets the screen resolution. Width must be in the range <code>[1024, 7680]</code>, height - <code>[768, 4320]</code>. Allowed width/height combinations are determined by the operating system where you run RapiseLauncher. Most typical resolutions are:</p>
 <div class="highlight"><pre><span></span><code>[1024, 768], [1280, 720], [1920, 1080]
 </code></pre></div>
 </li>
 <li>
-<p><strong>filename</strong> must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution on. Optional.</p>
+<p><strong>filename</strong> Must be the last item on the command line. This is a <code>TST</code> file downloaded from SpiraTest to start immediate execution. Optional.</p>
 </li>
 </ul>
 <h3 id="record-playback-videos">Record Playback Videos<a class="headerlink" href="#record-playback-videos" title="Permanent link">&para;</a></h3>
@@ -12761,32 +12828,109 @@
 <p class="admonition-title">Note</p>
 <p>This feature requires Rapise 6.6+.</p>
 </div>
-<p>RapiseLauncher can record video of test playback. To enable video capture pass <code>g_enableVideoRecording=true</code> via a <a href="#using-parameterized-test-cases">Test Case parameter</a>. For video recording RapiseLauncher uses <code>Microsoft.TestPlatform</code> NuGet package.When this feature is used for the first time RapiseLauncher downloads <code>Microsoft.TestPlatform</code> using <code>nuget.exe</code> and puts it into <code>&lt;Public Documents&gt;\Rapise\VideoRecorder</code> folder.</p>
-<p>By default the video recorder is executed with these parameters:</p>
+<p>RapiseLauncher can record videos of test playback. To enable video capture, pass <code>g_enableVideoRecording=true</code> via a <a href="#using-parameterized-test-cases">Test Case parameter</a>. For video recording, RapiseLauncher uses the <code>Microsoft.TestPlatform</code> NuGet package. When this feature is used for the first time, RapiseLauncher downloads <code>Microsoft.TestPlatform</code> using <code>nuget.exe</code> and places it in the <code>&lt;Public Documents&gt;\Rapise\VideoRecorder</code> folder.</p>
+<p>By default, the video recorder is executed with these parameters:</p>
 <div class="highlight"><pre><span></span><code>-noaudio -bitRate 512 -frameRate 2
 </code></pre></div>
-<p>You may change them by defining a Test Case parameter with name <code>g_videoRecorderArguments</code>.</p>
+<p>You can change them by defining a Test Case parameter named <code>g_videoRecorderArguments</code>.</p>
 <p>Recorded video is attached to the test run as ScreenCapture.wmv.</p>
 <h3 id="using-test-set-attachments">Using Test Set Attachments<a class="headerlink" href="#using-test-set-attachments" title="Permanent link">&para;</a></h3>
-<p>You may attach some data to Test Set and use it during test execution. It is a convenient way to pass configuration and data files for the test set. It may be used as an alternative to defining Spira Configurations.</p>
-<p>You may open test attachment using the <code>%ARTIFACTS%</code> environment variable. If this is a standalone test then <code>ARTIFACTS</code> resolves to <code>WORKDIR</code> (framework root). When executed from Spira it will be a separate temp folder where RapiseLauncher downloaded everything attached to the Test Set.</p>
-<p><em>Example Usage:</em></p>
+<p>You can attach data to a Test Set and use it during test execution. This is a convenient way to pass configuration and data files for the test set. It can be used as an alternative to defining Spira Configurations.</p>
+<p>You can open test attachments using the <code>%ARTIFACTS%</code> environment variable. If this is a standalone test, then <code>ARTIFACTS</code> resolves to <code>WORKDIR</code> (framework root). When executed from Spira, it will be a separate temporary folder where RapiseLauncher downloads everything attached to the Test Set.</p>
+<p><strong>Example Usage:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">GetProperty</span><span class="p">(</span><span class="s2">&quot;Url&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;http://default/url&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;%ARTIFACTS%/Config.xlsx&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>So by default it would load <code>Config.xlsx</code>  from the test framework root, but in the RapiseLauncher mode it will open the config file from the temp location where everything is downloaded. And if Test Set has file <code>Config.xlsx</code> attached then will be used to read the <code>Url</code> property.</p>
+<p>So, by default, it would load <code>Config.xlsx</code> from the test framework root, but in RapiseLauncher mode, it will open the config file from the temporary location where everything is downloaded. And if the Test Set has the <code>Config.xlsx</code> file attached, it will be used to read the <code>Url</code> property.</p>
 <h3 id="parameters-passed-from-rapiselauncher-to-rapise">Parameters Passed from RapiseLauncher to Rapise<a class="headerlink" href="#parameters-passed-from-rapiselauncher-to-rapise" title="Permanent link">&para;</a></h3>
-<p>When RapiseLauncher runs a test it passes a bunch of global variables to it. Those variables describe project, test set, test case and release scope of the test.</p>
+<p>When RapiseLauncher runs a test, it passes a set of global variables to it. These variables describe the project, test set, test case, and release scope of the test.</p>
 <p>See this <a href="https://www.inflectra.com/Support/KnowledgeBase/KB543.aspx">KB</a> article for details.</p>
 <h3 id="git-for-windows">Git for Windows<a class="headerlink" href="#git-for-windows" title="Permanent link">&para;</a></h3>
-<p>This feature requires Rapise 7.3+. By default Rapise is using LibGit2Sharp library to clone Git repositories. It is a great library and it works in 99% of cases. However if you are behind a proxy you may need to configure RapiseLauncher to use <a href="https://git-scm.com/download/win">Git for Windows</a> instead of LibGit2Sharp. Configuration is simple. Just create  a file <code>c:\Users\Public\Documents\Rapise\GitClone.cmd</code> with the following content:</p>
+<p>This feature requires Rapise 7.3+. By default, Rapise uses the LibGit2Sharp library to clone Git repositories. It is a robust library and works in 99% of cases. However, if you are behind a proxy, you may need to configure RapiseLauncher to use <a href="https://git-scm.com/download/win">Git for Windows</a> instead of LibGit2Sharp. Configuration is simple: just create a file <code>c:\Users\Public\Documents\Rapise\GitClone.cmd</code> with the following content:</p>
 <div class="highlight"><pre><span></span><code>echo %GitUrlWithoutProtocol%
 @echo off
 git clone https://%GitUser%:%GitPassword%@%GitUrlWithoutProtocol% %GitTargetPath%
 </code></pre></div>
-<p>RapiseLauncher is using this CMD file to clone a Git repository. Environment variables <code>GitUrl</code>, <code>GitUrlWithoutProtocol</code>, <code>GitUser</code>, <code>GitPassword</code>, <code>GitBranch</code>, <code>GitTargetPath</code> are set by RapiseLauncher automatically and can be used inside the CMD file. <code>GitTargetPath</code> points to the folder where a repository must be cloned.</p>
+<p>RapiseLauncher uses this CMD file to clone a Git repository. Environment variables <code>GitUrl</code>, <code>GitUrlWithoutProtocol</code>, <code>GitUser</code>, <code>GitPassword</code>, <code>GitBranch</code>, and <code>GitTargetPath</code> are set by RapiseLauncher automatically and can be used within the CMD file. <code>GitTargetPath</code> points to the folder where a repository should be cloned.</p>
+<p>Here is a more comprehensive example of GitClone.cmd. If a repository was cloned before, it removes all files not tracked by Git, rolls back any modifications, and pulls updates. This makes repeatable clones faster.</p>
+<div class="highlight"><pre><span></span><code>echo %GitUrlWithoutProtocol%
+echo %GitBranch%
+@echo off
+
+:: Check if the folder exists
+if exist &quot;%GitTargetPath%&quot; (
+    echo Folder exists. Reverting local changes and pulling latest updates...
+
+    :: Navigate to the directory
+    pushd &quot;%GitTargetPath%&quot;
+
+    :: Ensure the folder is a valid Git repository
+    if exist &quot;.git&quot; (
+        :: Revert any local changes
+        git reset --hard
+        git clean -fd
+
+        if &quot;%GitBranch%&quot; neq &quot;&quot; (
+            git checkout -B &quot;%GitBranch%&quot; origin/%GitBranch%
+        )
+
+        :: Pull the latest changes
+        git pull
+    ) else (
+        echo The directory exists but is not a Git repository. Exiting.
+    )
+    popd
+) else (
+    echo Folder does not exist. Cloning the repository...
+
+    :: Clone the repository into the destination folder, using the specified branch if provided
+    if &quot;%GitBranch%&quot; neq &quot;&quot; (
+        git clone -b &quot;%GitBranch%&quot; https://%GitUser%:%GitPassword%@%GitUrlWithoutProtocol% %GitTargetPath%
+        git checkout -B &quot;%GitBranch%&quot; origin/%GitBranch%
+    ) else (
+        git clone https://%GitUser%:%GitPassword%@%GitUrlWithoutProtocol% %GitTargetPath%
+    )
+)
+
+echo Done!
+</code></pre></div>
+<h3 id="agent-pools">Agent Pools<a class="headerlink" href="#agent-pools" title="Permanent link">&para;</a></h3>
+<p>Rapise 8.5 introduces a powerful way to run your automated tests faster than ever. If you manage multiple test sets and execution hosts, you can now group your hosts into a dynamic <code>pool</code> to run tests in parallel, significantly reducing the total execution time.</p>
+<p><strong>How It Works</strong></p>
+<p>Instead of assigning each test set to a specific machine, you can now create a host pool. Simply configure multiple execution hosts (with RapiseLauncher installed) to share the same <strong>Automation Host Token</strong>.</p>
+<p>When you schedule your tests, you assign them all to this single, shared Host Token. Rapise then treats the entire pool as one powerful, logical host.</p>
+<p>For example, let's say you have 12 test sets and 3 hosts in a pool. When the tests are scheduled to run, the system automatically distributes the work. The 3 hosts will immediately begin executing the first 3 test sets in parallel. As soon as a host finishes its test, it instantly picks up the next available one from the queue.</p>
+<p><strong>The Benefits</strong></p>
+<ul>
+<li><strong>Maximum Speed:</strong> This dynamic distribution ensures your hosts are never idle, completing your entire test suite in a fraction of the time.</li>
+<li><strong>Ultimate Simplicity:</strong> You no longer need to manually balance the workload by assigning specific tests to specific machines. Just point all your tests to the host pool and let Rapise handle the rest.</li>
+</ul>
+<p>This feature is perfect for teams looking to optimize their CI/CD pipelines and get test results faster.</p>
+<h3 id="load-balancing-mode">Load Balancing Mode<a class="headerlink" href="#load-balancing-mode" title="Permanent link">&para;</a></h3>
+<p><strong>For advanced users only</strong></p>
+<p>While <a href="#agent-pools">agent pools</a> are great for running many separate test sets, what if your challenge is a single, massive test set with hundreds of test cases? Rapise 8.5 introduces <strong>Load Balancing Mode</strong> to solve this exact problem.</p>
+<p>This powerful feature allows a pool of execution hosts to work together to complete a <em>single test set</em> much faster. Instead of one machine working through every test case sequentially, the load is distributed across the entire pool.</p>
+<p><strong>How It Works</strong></p>
+<p>Imagine you have one test set with 12 test cases and a pool of 3 execution hosts.</p>
+<ol>
+<li>First, you enable <strong>Load Balancing Mode</strong> in the <a href="#client-configuration">RapiseLauncher settings</a> on each of the 3 hosts.</li>
+<li>Then, you assign them all the same Automation Host Token to create the pool.</li>
+<li>When you schedule the large test set to run, all three hosts will start working on it simultaneously. The first host takes test case #1, the second takes #2, and the third takes #3. As soon as a host finishes its case, it immediately grabs the next available one from the queue (#4, #5, and so on) until the entire test set is complete.</li>
+</ol>
+<p><strong>Key Benefits</strong></p>
+<ul>
+<li><strong>Drastically Reduced Execution Time:</strong> Completes large test suites in a fraction of the time.</li>
+<li><strong>Simplified Test Management:</strong> You no longer need to manually split large test sets into smaller ones just to distribute the workload.</li>
+</ul>
+<p><strong>Important Considerations</strong></p>
+<p>This mode is designed for straightforward test suites. For it to work, the test set must meet the following conditions:</p>
+<ul>
+<li>All test cases must be independent of each other.</li>
+<li>It must be a standard test set, not a dynamic one.</li>
+<li>It cannot be used with features that already involve complex execution patterns, like parallel execution on a single host or running a test with multiple data configurations.</li>
+</ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../spira_dashboard_2/">Using Spira Dashboard</a> </li>
+<li><a href="../spira_dashboard_2/">Using Spira Dashboard</a></li>
 <li><a href="https://youtu.be/5ybrBQOzez8">Using Rapise with SpiraTest (video)</a></li>
 <li><a href="https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx">Data Driven Testing with Test Configurations</a></li>
 <li><a href="../vstest_rl/">RapiseLauncher extension</a> for Azure DevOps.</li>

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11084,6 +11096,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11348,14 +11372,14 @@
                 
                 
                 <h1 id="loops">Loops<a class="headerlink" href="#loops" title="Permanent link">&para;</a></h1>
-<p><em>Loops</em> serve several needs in RVL:</p>
+<p><em>Loops</em> serve several purposes in RVL:</p>
 <ol>
 <li>Iterate through <a href="../Maps/">Maps</a> to make data-driven testing easier.</li>
-<li>Allows you to repeat a set of actions for a given number of iterations.</li>
-<li>Lets you repeat a loop body while some <a href="../Conditions/">Condition</a> is satisfied.</li>
+<li>Repeat a set of actions for a specified number of iterations.</li>
+<li>Repeat a loop body while a <a href="../Conditions/">Condition</a> is satisfied.</li>
 </ol>
 <h3 id="loop-map">Loop Map<a class="headerlink" href="#loop-map" title="Permanent link">&para;</a></h3>
-<p>A <a href="../Maps/">Map</a> allows both reading script data from the table defined in the same script or from external data source such as spreadsheet, file or database. Once a Map is defined, the loop is the simplest way of traversing it.</p>
+<p>A <a href="../Maps/">Map</a> allows you to read script data from a table defined in the same script or from an external data source, such as a spreadsheet, file, or database. Once a Map is defined, a loop is the simplest way to traverse it.</p>
 <table>
 <thead>
 <tr>
@@ -11407,11 +11431,11 @@
 </tr>
 </tbody>
 </table>
-<p>Where <em>MapName</em> should be name of the map declared earlier in the same script.</p>
-<p>The loop goes through either the map rows or through the map columns depending on the type of map:</p>
+<p>Where <em>MapName</em> should be the name of the map declared earlier in the same script.</p>
+<p>The loop iterates through either the map rows or the map columns, depending on the map type:</p>
 <ul>
-<li>For <code>Rows</code>, <code>Range</code> or <code>Database</code> type of Map, the loop goes through rows. I.e. 1<sup>st</sup> iteration points to 1<sup>st</sup> Row, then 2<sup>nd</sup> iteration points to 2<sup>nd</sup> row etc.</li>
-<li>For <code>Columns</code> and <code>Table</code> types of Map, the iteration goes through the columns.</li>
+<li>For <code>Rows</code>, <code>Range</code>, or <code>Database</code> map types, the loop iterates through the rows. For example, the first iteration corresponds to the first row, the second iteration corresponds to the second row, and so on.</li>
+<li>For <code>Columns</code> and <code>Table</code> map types, the loop iterates through the columns.</li>
 </ul>
 <h3 id="loop-variable">Loop Variable<a class="headerlink" href="#loop-variable" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
@@ -11534,13 +11558,13 @@
 <p>Where:</p>
 <ul>
 <li>
-<p><em>VarName</em> is an optional name of variable. It may be avoided if the goal is just to do specified number of iterations. If <em>VarName</em> is set, then the corresponding variable is assigned with the <code>from</code> value and incremented up to the <code>to</code> value throughout the loop. If <em>VarName</em> refers to an existing local or global variable then it is used, otherwise a local variable named <em>VarName</em> is created.</p>
+<p><em>VarName</em> is the optional name of a variable. It can be omitted if the goal is simply to perform a specified number of iterations. If <em>VarName</em> is set, the corresponding variable is assigned the <code>from</code> value and is incremented in each iteration until it reaches the <code>to</code> value. If <em>VarName</em> refers to an existing local or global variable, that variable is used. Otherwise, a new local variable named <em>VarName</em> is created.</p>
 </li>
 <li>
-<p><em>from</em> initial value of the loop variable</p>
+<p><em>from</em> The initial value of the loop variable.</p>
 </li>
-<li><em>to</em> final value of the loop variable</li>
-<li><em>step</em> optional, default is 1. Loop step to increment in each iteration.</li>
+<li><em>to</em> The final value of the loop variable.</li>
+<li><em>step</em> The value by which the variable is incremented in each iteration. This parameter is optional and defaults to 1.</li>
 </ul>
 <h3 id="loop-condition">Loop Condition<a class="headerlink" href="#loop-condition" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
@@ -11609,7 +11633,7 @@
 </table>
 </div>
 </div>
-<p>Loop repeats while condition is satisfied (i.e. <code>while( param1 &lt; param2 )</code>).</p>
+<p>The loop repeats as long as the condition is satisfied (e.g., <code>while( param1 &lt; param2 )</code>).</p>
                 
               
               

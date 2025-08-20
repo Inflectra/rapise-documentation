@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1110,6 +1110,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11028,6 +11040,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11315,49 +11339,49 @@
                 <h1 id="azure-devops-integration-v2">Azure DevOps Integration v2<a class="headerlink" href="#azure-devops-integration-v2" title="Permanent link">&para;</a></h1>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>This documentation section is deprecated. There is a new way of integrating Rapise and Azure DevOps. Please refer to <a href="/Guide/vstest/">Azure DevOps Integration v3</a>.</p>
+<p>This documentation section is deprecated. There is a new way to integrate Rapise and Azure DevOps. Please refer to <a href="../vstest/">Azure DevOps Integration v3</a>.</p>
 </div>
-<p>From this topic you will learn how to run Rapise tests with <a href="https://node-tap.org/">Node-Tap</a> and <a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a>.</p>
+<p>This topic explains how to run Rapise tests with <a href="https://node-tap.org/">Node-Tap</a> and <a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a>.</p>
 <h2 id="node-tap">Node-Tap<a class="headerlink" href="#node-tap" title="Permanent link">&para;</a></h2>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<p>Download and install <a href="https://nodejs.org">Node.js</a>. Open command prompt and run the following commands to make sure you have Node.js and <a href="https://www.npmjs.com">npm</a> installed:</p>
+<p>Download and install <a href="https://nodejs.org">Node.js</a>. Open a command prompt and run the following commands to ensure you have Node.js and <a href="https://www.npmjs.com">npm</a> installed:</p>
 <p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;node<span class="w"> </span>--version
 v10.16.3
 
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;npm<span class="w"> </span>--version
 <span class="m">6</span>.9.0
 </code></pre></div>
-Install <code>Node-Tap</code> package with <code>npm</code>:</p>
+Install the <code>Node-Tap</code> package using <code>npm</code>:</p>
 <p><div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>tap<span class="w"> </span>-g
 </code></pre></div>
-Discover the folder where Node-Tap is installed:</p>
+Locate the folder where Node-Tap is installed:</p>
 <p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;npm<span class="w"> </span>list<span class="w"> </span>tap<span class="w"> </span>-g
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm
 --<span class="w"> </span>tap@14.6.9
 </code></pre></div>
-Configure system variable <code>NODE_PATH</code> and set it to <code>node_modules</code> subfolder. In our case it is:</p>
+Configure the system variable <code>NODE_PATH</code> and set its value to the <code>node_modules</code> subfolder. In our example, this is:</p>
 <p><div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\n</span>ode_modules
 </code></pre></div>
 <img src="/Guide/img/set_node_path.png" width="800"/></p>
-<p>Relaunch Command Prompt and verify the system variable:</p>
+<p>Relaunch the Command Prompt and verify the system variable:</p>
 <div class="highlight"><pre><span></span><code>C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra&gt;echo<span class="w"> </span>%NODE_PATH%
 C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\n</span>ode_modules
 </code></pre></div>
 <h2 id="test-framework">Test Framework<a class="headerlink" href="#test-framework" title="Permanent link">&para;</a></h2>
-<p>As a starting point you may use <a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/AzureDevOpsFriendlyArchhitecture">sample framework</a> we published on GitHub.</p>
-<p>The root folder of the framework contains:</p>
+<p>As a starting point, you can use the <a href="https://github.com/Inflectra/rapise-framework-examples/tree/master/AzureDevOpsFriendlyArchhitecture">sample framework</a> we published on GitHub.</p>
+<p>The framework's root folder contains the following:</p>
 <ul>
-<li><code>rapise.js</code> - node.js module capable of running Rapise tests;</li>
-<li><code>runtest.cmd</code> - command file used by <code>rapise.js</code>, adjust <code>SES_ENGINE_HOME</code> variable in this file if needed;</li>
-<li><code>fixunit.js</code>, <code>tap2xunit.cmd</code> - these two files convert execution results from TAP format to XUnit format accepted by Azure DevOps.</li>
+<li><code>rapise.js</code> - a Node.js module that can run Rapise tests;</li>
+<li><code>runtest.cmd</code> - a command file used by <code>rapise.js</code>; adjust the <code>SES_ENGINE_HOME</code> variable in this file if needed;</li>
+<li><code>fixunit.js</code>, <code>tap2xunit.cmd</code> - these two files convert execution results from TAP format to XUnit format, which is accepted by Azure DevOps.</li>
 </ul>
-<p>Each Rapise test in this framework is a direct subfolder of the root folder:</p>
-<div class="highlight"><pre><span></span><code>AzureDevOpsFriendlyArchitecture 
+<p>Each Rapise test within this framework resides in a direct subfolder of the root folder:</p>
+<div class="highlight"><pre><span></span><code>AzureDevopsFriendlyArchitecture 
 |
 |-CreateNewBook
 |-FailedLogin
 </code></pre></div>
-<p><code>test</code> folder contains entries for Node-Tap. These are files with predefined content and names equal to names of Rapise tests. </p>
+<p>The <code>test</code> folder contains entries for Node-Tap. These are files with predefined content, and their names match those of the Rapise tests. </p>
 <div class="highlight"><pre><span></span><code>AzureDevOpsFriendlyArchitecture 
 |
 |- test
@@ -11365,7 +11389,7 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
     |-CreateNewBook.js
     |-FailedLogin.js
 </code></pre></div>
-<p>Predefined content of the files is:</p>
+<p>The predefined content of these files is:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">rapise</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;../rapise&#39;</span><span class="p">)</span>
 <span class="kd">var</span><span class="w"> </span><span class="nx">tap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;tap&#39;</span><span class="p">)</span>
 <span class="kd">var</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">);</span>
@@ -11376,20 +11400,20 @@ C:<span class="se">\U</span>sers<span class="se">\i</span>nflectra<span class="s
 <span class="w">    </span><span class="nx">tap</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">exit_code</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">testName</span><span class="p">);</span><span class="w">    </span>
 <span class="p">})</span>
 </code></pre></div>
-<p>There is also <code>tap-parallel-not-ok</code> in <code>tests</code> folder that instructs Node-Tap to run tests sequentially.</p>
+<p>The <code>tests</code> folder also contains <code>tap-parallel-not-ok</code>, which instructs Node-Tap to run tests sequentially.</p>
 <h2 id="run-tests-with-tap">Run Tests with Tap<a class="headerlink" href="#run-tests-with-tap" title="Permanent link">&para;</a></h2>
-<p>To run tests on a local machine open command prompt in the root folder of the framework and execute:</p>
+<p>To run tests on a local machine, open a command prompt in the framework's root folder and execute:</p>
 <p><div class="highlight"><pre><span></span><code>tap
 </code></pre></div>
 You should see tests running:
 <img alt="Node-Tap Execution" src="../img/node_tap_execution.png" /></p>
-<p>To pass parameters to a Rapise test specify <code>--test-arg</code>. The value is JSON stringified object. Every property of this object will be evaluated by Rapise as a global variable:</p>
+<p>To pass parameters to a Rapise test, specify <code>--test-arg</code>. The value should be a JSON stringified object. Every property of this object will be evaluated by Rapise as a global variable:</p>
 <div class="highlight"><pre><span></span><code>tap<span class="w"> </span>--test-arg<span class="o">=</span><span class="s2">&quot;{&#39;g_browserLibrary&#39;:&#39;Selenium - Chrome&#39;}&quot;</span>
 </code></pre></div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QEH5a9vqymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="azure-devops-pipeline-v1">Azure DevOps Pipeline v1<a class="headerlink" href="#azure-devops-pipeline-v1" title="Permanent link">&para;</a></h2>
-<p>To run tests in Azure DevOps you need to <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops">configure a pipeline</a>. Here is the template to run Rapise tests:</p>
+<p>To run tests in Azure DevOps, you need to <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops">configure a pipeline</a>. Here is the template for running Rapise tests:</p>
 <p><strong>azure-pipelines.yml</strong>
 <div class="highlight"><pre><span></span><code><span class="c1"># Starter pipeline</span>
 <span class="c1"># Start with a minimal pipeline that you can customize to build and deploy your code.</span>
@@ -11435,19 +11459,19 @@ You should see tests running:
 <span class="w">    </span><span class="nt">testRunTitle</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Basic</span><span class="nv"> </span><span class="s">Tests&#39;</span>
 <span class="w">    </span><span class="nt">failTaskOnFailedTests</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div></p>
-<p>The pipeline above assumes that <code>default</code> agent pool contains a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> installed on a machine with Rapise and Node-Tap (see <a href="#prerequisites">Prerequisites</a>).</p>
+<p>The pipeline above assumes that the <code>default</code> agent pool contains a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Self-hosted Windows Agent</a> installed on a machine with Rapise and Node-Tap (see <a href="#prerequisites">Prerequisites</a>).</p>
 <p><a href="https://youtu.be/iPVplfqKj50?t=730">See the video</a> to learn how to install and configure a self-hosted agent.</p>
 <p>The pipeline consists of the following steps:</p>
 <ol>
-<li>Run tests via <code>tap</code> command. You can pass parameters if needed.</li>
-<li>Convert TAP formatted execution results to XUnit formatted reports.</li>
-<li>Adjust XUnit reports for better processing by Azure DevOps.</li>
-<li>Gather logs and reports in TAP/TRP formats in <code>reports</code> folder for <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops">Publish Build Artifacts task</a>.</li>
-<li>Upload test results to Azure with <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results">Publish Test Results task</a>.</li>
+<li>Run tests via the <code>tap</code> command. You can pass parameters if needed.</li>
+<li>Convert TAP-formatted execution results to XUnit-formatted reports.</li>
+<li>Adjust XUnit reports for improved processing by Azure DevOps.</li>
+<li>Gather logs and reports in TAP/TRP formats in the <code>reports</code> folder for the <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops">Publish Build Artifacts task</a>.</li>
+<li>Upload test results to Azure using the <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results">Publish Test Results task</a>.</li>
 </ol>
-<p>After execution of the pipeline one can review test results:</p>
+<p>After the pipeline executes, you can review test results:</p>
 <p><img alt="Test Report" src="../img/azure_tap_report.png" /></p>
-<p>and reports/logs (.tap, .trp, .log):</p>
+<p>and reports/logs (.tap, .trp, .log files):</p>
 <p><img alt="Test Logs" src="../img/azure_artifacts.png" /></p>
 <blockquote>
 <p>Note: TRP files are standard reports you can view with Rapise.</p>
@@ -11455,7 +11479,7 @@ You should see tests running:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/niRPLRMgenI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="azure-devops-pipeline-v2">Azure DevOps Pipeline v2<a class="headerlink" href="#azure-devops-pipeline-v2" title="Permanent link">&para;</a></h2>
-<p>If you do not want each step of a Rapise test to be reported as test case in Azure DevOps use modified pipeline version:</p>
+<p>If you do not want each step of a Rapise test to be reported as a test case in Azure DevOps, use the modified pipeline version:</p>
 <p><strong>azure-pipelines-summary.yml</strong>
 <div class="highlight"><pre><span></span><code><span class="c1"># Starter pipeline</span>
 <span class="c1"># Start with a minimal pipeline that you can customize to build and deploy your code.</span>
@@ -11501,7 +11525,7 @@ You should see tests running:
 <span class="w">    </span><span class="nt">testRunTitle</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Basic</span><span class="nv"> </span><span class="s">Tests&#39;</span>
 <span class="w">    </span><span class="nt">failTaskOnFailedTests</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
-It calls <code>summarize.js</code> to adjust XUnit reports. Azure DevOps report for this pipeline looks like:</p>
+This pipeline calls <code>summarize.js</code> to adjust the XUnit reports. The Azure DevOps report for this pipeline looks like this:</p>
 <p><img alt="Test Report Summary" src="../img/azure_tap_report_summary.png" /></p>
 <p>Detailed logs and reports (.tap, .trp, .log files) are also available for download as a ZIP archive:</p>
 <p><img alt="Test Logs" src="../img/azure_artifacts.png" /></p>

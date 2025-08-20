@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1110,6 +1110,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11028,6 +11040,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11323,42 +11347,42 @@
 <h2 id="screenshot">Screenshot<a class="headerlink" href="#screenshot" title="Permanent link">&para;</a></h2>
 <p><img alt="incident_logging" src="../img/incident_logging1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The <strong>New Incident</strong> logging dialog box lets you log a new incident (also known as a bug or defect) into a connected <a href="../spiratest_integration/">SpiraTest</a> instance. If you logged the new incident during a <a href="../manual_playback/">manual test execution</a>, it will be linked to the current test run.</p>
+<p>The <strong>New Incident</strong> dialog box allows you to log a new incident (also known as a bug or defect) into a connected <a href="../spiratest_integration/">SpiraTest</a> instance. If you log the new incident during a <a href="../manual_playback/">manual test execution</a>, it will be linked to the current test run.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>You can open the <strong>New Incident</strong> using <code>Tools &gt; New Incident</code> menu, or by clicking the <code>Log Incident</code> button on the <a href="../manual_playback/">Manual Playback</a> dialog box.</p>
+<p>You can open the <strong>New Incident</strong> dialog box using the <code>Tools &gt; New Incident</code> menu, or by clicking the <code>Log Incident</code> button within the <a href="../manual_playback/">Manual Playback</a> dialog box.</p>
 <h2 id="details-description">Details / Description<a class="headerlink" href="#details-description" title="Permanent link">&para;</a></h2>
 <p><img alt="incident_logging_details" src="../img/incident_logging2.png" /></p>
-<p>The <strong>Details/Description</strong> section lets you enter the short name and long description of the new incident as well as the following fields:</p>
+<p>The <strong>Details/Description</strong> section allows you to enter a short name and a long description for the new incident, along with the following fields:</p>
 <ul>
-<li><strong>Type</strong> - the type of the incident (e.g. bug)</li>
-<li><strong>Detected By</strong> - who found the bug (typically your user)</li>
-<li><strong>Priority</strong> - how important the bug is</li>
-<li><strong>Severity</strong> - how critical the bug is</li>
-<li><strong>Owned By</strong> - who the bug should be assigned to (or left unassigned)</li>
-<li><strong>Detected Release</strong> - which version of the system was the bug found in</li>
-<li><strong>Resolved Release</strong> - which version of the system should the bug be fixed in</li>
-<li><strong>Verified Release</strong> - which version of the system was the bug retested in</li>
-<li><strong>Custom Fields</strong> - in addition any custom fields created in your Spira instance will be displayed</li>
+<li><strong>Type</strong> - The type of incident (e.g., bug).</li>
+<li><strong>Detected By</strong> - The user who detected the bug (typically your current user).</li>
+<li><strong>Priority</strong> - The importance level of the bug.</li>
+<li><strong>Severity</strong> - The criticality level of the bug.</li>
+<li><strong>Owned By</strong> - The user to whom the bug should be assigned (or left unassigned).</li>
+<li><strong>Detected Release</strong> - The version of the system in which the bug was found.</li>
+<li><strong>Resolved Release</strong> - The version of the system in which the bug should be fixed.</li>
+<li><strong>Verified Release</strong> - The version of the system in which the bug was retested.</li>
+<li><strong>Custom Fields</strong> - Any custom fields created in your Spira instance will also be displayed.</li>
 </ul>
 <h2 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">&para;</a></h2>
 <p><img alt="incident_logging_comments" src="../img/incident_logging3.png" /></p>
-<p>The <strong>Comments</strong> section lets you enter a comment that will be logged with the new incident. The field is a rich text field that can contain formatted text.</p>
+<p>The <strong>Comments</strong> section allows you to enter a comment that will be logged with the new incident. This is a rich text field that can contain formatted text.</p>
 <h2 id="schedule">Schedule<a class="headerlink" href="#schedule" title="Permanent link">&para;</a></h2>
 <p><img alt="incident_logging_schedule" src="../img/incident_logging4.png" /></p>
-<p>The Schedule section lets you enter in schedule/effort related information for the new incident:</p>
+<p>The <strong>Schedule</strong> section allows you to enter schedule and effort-related information for the new incident:</p>
 <ul>
-<li><strong>Start Date</strong> - This is the planned start date of the new incident</li>
-<li><strong>End Date</strong> - This is the planned completion date of the new incident</li>
-<li><strong>Estimated Effort</strong> - This is the number of hours the incident is expected to take</li>
-<li><strong>Actual Effort</strong> - This is the number of hours that were actually expended</li>
-<li><strong>Remaining Effort</strong> - This is the number of hours remaining to fix the incident
-In addition, the following calculated fields will be displayed:</li>
-<li><strong>Percent Complete</strong> - This is the measure of much of the incident has been completed. It is calculated from 100% - (Remaining Effort / Estimated Effort)</li>
-<li><strong>Projected Effort</strong> - This the current measure of how long the incident is expected to take based on current information. It is calculated from (Actual Effort + Remaining Effort)</li>
+<li><strong>Start Date</strong> - The planned start date for the new incident.</li>
+<li><strong>End Date</strong> - The planned completion date for the new incident.</li>
+<li><strong>Estimated Effort</strong> - The number of hours the incident is expected to take.</li>
+<li><strong>Actual Effort</strong> - The number of hours actually expended.</li>
+<li><strong>Remaining Effort</strong> - The number of hours remaining to fix the incident.
+Additionally, the following calculated fields will be displayed:</li>
+<li><strong>Percent Complete</strong> - A measure of how much of the incident has been completed. It is calculated as: 100% - (Remaining Effort / Estimated Effort).</li>
+<li><strong>Projected Effort</strong> - The current measure of how long the incident is expected to take, based on current information. It is calculated as: (Actual Effort + Remaining Effort).</li>
 </ul>
 <h2 id="attachments">Attachments<a class="headerlink" href="#attachments" title="Permanent link">&para;</a></h2>
 <p><img alt="incident_logging_attachments" src="../img/incident_logging5.png" /></p>
-<p>This section displays the list of attachments associated with the new incident. Since Rapise already has a <a href="../image_capture/">screenshot capture</a> utility built-in, this section is typically not used.</p>
+<p>This section displays a list of attachments associated with the new incident. Since Rapise has a built-in <a href="../image_capture/">screenshot capture</a> utility, this section is typically not used.</p>
                 
               
               

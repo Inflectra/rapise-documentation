@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -3966,15 +3978,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#single-row-comments" class="md-nav__link">
-    Single Row Comments
+  <a href="#single-line-comments" class="md-nav__link">
+    Single-Line Comments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multiple-row-comments" class="md-nav__link">
-    Multiple Row Comments
+  <a href="#multi-line-comments" class="md-nav__link">
+    Multi-Line Comments
   </a>
   
 </li>
@@ -11077,6 +11089,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11307,15 +11331,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#single-row-comments" class="md-nav__link">
-    Single Row Comments
+  <a href="#single-line-comments" class="md-nav__link">
+    Single-Line Comments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multiple-row-comments" class="md-nav__link">
-    Multiple Row Comments
+  <a href="#multi-line-comments" class="md-nav__link">
+    Multi-Line Comments
   </a>
   
 </li>
@@ -11334,9 +11358,9 @@
                 
                 
                 <h1 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">&para;</a></h1>
-<h2 id="single-row-comments">Single Row Comments<a class="headerlink" href="#single-row-comments" title="Permanent link">&para;</a></h2>
-<p>RVL has two types of single line comments depending on the purpose.</p>
-<p>Sometimes comment is used to exclude line of code from execution. </p>
+<h2 id="single-line-comments">Single-Line Comments<a class="headerlink" href="#single-line-comments" title="Permanent link">&para;</a></h2>
+<p>RVL has two types of single-line comments.</p>
+<p>One type is used to prevent a line of code from being executed.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Disable Execution" src="../img/Comment_SingleLine_Disable.png" /></p>
 </div>
@@ -11376,12 +11400,12 @@
 </table>
 </div>
 </div>
-<p>There is a special type of single row comments intended to put long text comments into the document.</p>
-<p>Single row comment is displayed as long text providing that:
-1. Flow is set to <code>#</code> or <code>//</code>
-2. Text is completely typed into the <code>Type</code> cell.
-3. Other cells after <code>Type</code> are empty.</p>
-<p>In such case the text is displayed through the whole line:</p>
+<p>The other type is for adding long, descriptive comments to your script.</p>
+<p>A comment is displayed as long text provided that:
+1. The <code>Flow</code> cell is set to <code>#</code> or <code>//</code>.
+2. The comment text is entered entirely into the <code>Type</code> cell.
+3. All other cells in the row after the <code>Type</code> cell are empty.</p>
+<p>In this case, the comment is displayed across the entire row:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Comment text" src="../img/Comment_SingleLine_Text.png" /></p>
 </div>
@@ -11401,7 +11425,7 @@
 <tbody>
 <tr>
 <td>#</td>
-<td>My scenario goes here. We are going to perform arithmetical operation with Calculator.</td>
+<td>My scenario goes here. We are going to perform an arithmetic operation with the Calculator.</td>
 <td></td>
 <td></td>
 <td></td>
@@ -11430,8 +11454,8 @@
 </table>
 </div>
 </div>
-<h2 id="multiple-row-comments">Multiple Row Comments<a class="headerlink" href="#multiple-row-comments" title="Permanent link">&para;</a></h2>
-<p>Used to disable several rows of script:</p>
+<h2 id="multi-line-comments">Multi-Line Comments<a class="headerlink" href="#multi-line-comments" title="Permanent link">&para;</a></h2>
+<p>Multi-line comments are used to disable several rows of a script:</p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Disable Execution Multiline" src="../img/Comment_MultiLine_Disable.png" /></p>
 </div>

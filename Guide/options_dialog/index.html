@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11163,6 +11175,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11504,85 +11528,87 @@
                 <h1 id="rapise-settings-dialog">Rapise Settings Dialog<a class="headerlink" href="#rapise-settings-dialog" title="Permanent link">&para;</a></h1>
 <p><img alt="options dialog, general tab" src="../img/options_dialog1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Use the <strong>Rapise Settings</strong> dialog to change the global options. Your changes will apply to all tests.</p>
+<p>Use the <strong>Rapise Settings</strong> dialog to change global options. Your changes will apply to all tests.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>User <code>Settings &gt; Global</code> menu item.</p>
+<p>Use the <code>Settings &gt; Global</code> menu item.</p>
 <h2 id="global-settings">Global Settings<a class="headerlink" href="#global-settings" title="Permanent link">&para;</a></h2>
 <h3 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h3>
 <p><img alt="options.dialog.misc" src="../img/options_dialog4.png" /></p>
 <ul>
-<li><strong>SplashScreen</strong>: A splash screen is the image that appears while a program initializes.  The Rapise splash screen looks like this:</li>
-</ul>
+<li>
+<p><strong>SplashScreen</strong>: A splash screen is an image that appears while a program initializes. The Rapise splash screen looks like this:</p>
 <p><img alt="splashscreen" src="../img/options_dialog3.png" /></p>
 <p>Set <strong>SplashScreen</strong> to <strong>False</strong> to prevent the splash screen from appearing.</p>
+</li>
+</ul>
 <h3 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
 <p><img alt="options.dialog.api" src="../img/options_dialog_api.png" /></p>
 <ul>
-<li><strong>API Callback Timeout</strong>: Defaults to 10000. Number of milliseconds to wait when doing <a href="../rest_web_service/#before-request-and-after-response-rest-callbacks">Before-Request and After-Response REST Callbacks</a>. The timeout applies to each callback call individually.</li>
-<li><strong>Generate Full Name</strong>: If 'Record REST Objects' is <code>true</code>, then<ul>
-<li><code>true</code>: Generate long name for objects and variables, i.e. 'Libraryinformationsystem_Login'</li>
-<li><code>false</code>: Generate short name, i.e. 'Login'</li>
+<li><strong>API Callback Timeout</strong>: Defaults to 10000. This is the number of milliseconds to wait when performing <a href="../rest_web_service/#before-request-and-after-response-rest-callbacks">Before-Request and After-Response REST Callbacks</a>. The timeout applies to each callback call individually.</li>
+<li><strong>Generate Full Name</strong>: If 'Record REST Objects' is <code>true</code>:<ul>
+<li><code>true</code>: Generates a long name for objects and variables, e.g., 'Libraryinformationsystem_Login'</li>
+<li><code>false</code>: Generates a short name, e.g., 'Login'</li>
 </ul>
 </li>
-<li><strong>Generate Short REST Path</strong>: If 'Record REST Objects' is <code>false</code>, then<ul>
-<li><code>true</code>: Generate short path, i.e. 'RESTDef.rest'</li>
-<li><code>false</code>: Generate full path, i.e. '%WORKDIR%/SubTest/RESTDef.rest'. May be needed when you have <strong>.rest</strong> definition files with the same name in your framework.</li>
+<li><strong>Generate Short REST Path</strong>: If 'Record REST Objects' is <code>false</code>:<ul>
+<li><code>true</code>: Generates a short path, e.g., 'RESTDef.rest'</li>
+<li><code>false</code>: Generates a full path, e.g., '%WORKDIR%/SubTest/RESTDef.rest'. This may be needed when you have <code>.rest</code> definition files with the same name in your framework.</li>
 </ul>
 </li>
-<li><strong>Record Failed REST Actions</strong>: <code>true</code> means: If recorded REST action is failed, generate <code>.DoExecute(...,true)</code> that <a href="../../Libraries/RESTService/#doexecute">ignores</a> the response code so generated test is passing.</li>
-<li><strong>Record REST Objects</strong>: Generate Object for Each REST request.<ul>
-<li><code>true</code>: An object added to the Object Repository for each request. Then it is initialized using <code>var &lt;request_object_id&gt; = SeS(&lt;request_object_id&gt;)</code>.</li>
-<li><code>false</code>: Don't add anything to the object tree. Each request is initialized as <code>var &lt;request_object_id&gt; = /**RESTRequest*/Session.GetRESTRequest('&lt;definition&gt;.rest', '&lt;request_id&gt;')</code>. This approach makes it easier to generate re-usable functions doing REST calls without need to load objects. See <a href="../../Libraries/Session/#getrestrequest">Session.GetRESTRequest</a>.</li>
+<li><strong>Record Failed REST Actions</strong>: If <code>true</code>, then if a recorded REST action fails, <code>DoExecute(...,true)</code> is generated. This ignores the response code, allowing the generated test to pass.</li>
+<li><strong>Record REST Objects</strong>: Generates an object for each REST request.<ul>
+<li><code>true</code>: An object is added to the Object Repository for each request. It is then initialized using <code>var &lt;request_object_id&gt; = SeS(&lt;request_object_id&gt;)</code>.</li>
+<li><code>false</code>: No object is added to the object tree. Each request is initialized as <code>var &lt;request_object_id&gt; = /**RESTRequest*/Session.GetRESTRequest('&lt;definition&gt;.rest', '&lt;request_id&gt;')</code>. This approach makes it easier to generate reusable functions for REST calls without needing to load objects. See <a href="../../Libraries/Session/#getrestrequest">Session.GetRESTRequest</a>.</li>
 </ul>
 </li>
 </ul>
 <h4 id="api-proxy-settings">API Proxy Settings<a class="headerlink" href="#api-proxy-settings" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>Proxy Enabled</strong>: Activates proxy settings listed below. By default it is <code>false</code>.</li>
-<li><strong>Proxy Host</strong>: Host name or IP address of a proxy server.</li>
-<li><strong>Proxy Port</strong>: Proxy port number.</li>
-<li><strong>Proxy User Name</strong>: Name of a user to log into the proxy server.</li>
-<li><strong>Proxy User Password</strong>: Password of a user to log into the proxy server.</li>
+<li><strong>Proxy Enabled</strong>: Activates the proxy settings listed below. By default, it is <code>false</code>.</li>
+<li><strong>Proxy Host</strong>: The host name or IP address of a proxy server.</li>
+<li><strong>Proxy Port</strong>: The proxy port number.</li>
+<li><strong>Proxy User Name</strong>: The name of a user for logging into the proxy server.</li>
+<li><strong>Proxy User Password</strong>: The password for a user to log into the proxy server.</li>
 </ul>
-<p>If no proxy is specified then Rapise uses OS settings. There is also a way to set proxy on <a href="../../Libraries/Session/#setproxy">session</a> or <a href="../../Libraries/RESTService/#dosetproxy">REST</a> / <a href="../../Libraries/SOAPService/#dosetproxy">SOAP</a> request level.</p>
+<p>If no proxy is specified, Rapise uses the operating system's settings. Proxies can also be set at the <a href="../../Libraries/Session/#setproxy">session</a>, <a href="../../Libraries/RESTService/#dosetproxy">REST</a>, or <a href="../../Libraries/SOAPService/#dosetproxy">SOAP</a> request level.</p>
 <h3 id="debugger">Debugger<a class="headerlink" href="#debugger" title="Permanent link">&para;</a></h3>
 <p><img alt="Debugger Options" src="../img/options_dialog_debugger_node.png" /></p>
 <ul>
 <li>
-<p><strong>Optimize Call Stack</strong>: If <strong>True</strong>, removes redundant information from the call stack view. See also <a href="../variable_call_stack_view/#call-stack-view-optimization">Call Stack View Optimization</a>.</p>
+<p><strong>Optimize Call Stack</strong>: If <code>True</code>, redundant information is removed from the call stack view. See also <a href="../variable_call_stack_view/#call-stack-view-optimization">Call Stack View Optimization</a>.</p>
 </li>
 <li>
-<p><strong>Remember Debugger Layout</strong>: If <strong>True</strong>, Rapise will remember the window layout for debug mode separately. For example, this may be useful if you want to work full screen while authoring the Test and half-screen to debug. This way the AUT and the Rapise debugger fit on the screen.</p>
+<p><strong>Remember Debugger Layout</strong>: If <code>True</code>, Rapise remembers the window layout for debug mode separately. For example, this may be useful if you want to work full screen while authoring a test and half-screen when debugging. This allows the AUT and the Rapise debugger to fit on the screen.</p>
 </li>
 </ul>
 <h3 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h3>
 <p><img alt="execution" src="../img/options_dialog_execution.png" /></p>
 <ul>
-<li><strong>JSEngineType</strong>: Set preferred  <a href="../jscript_language_reference/">JavaScript Engine</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>). Where <strong>Default</strong> means <strong>Node</strong>.</li>
+<li><strong>JSEngineType</strong>: Sets the preferred <a href="../jscript_language_reference/">JavaScript Engine</a> (one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>), where <strong>Default</strong> means <strong>Node</strong>.</li>
 </ul>
 <h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h3>
 <p><img alt="options.dialog.settings" src="../img/options_dialog5.png" /></p>
 <ul>
-<li><strong>Always use Test.sstest</strong>: Defaults to <strong>False</strong>. If set to <strong>True</strong>, the test file name is set to <code>Test.sstest</code> rather than <code>&lt;test folder name&gt;.sstest</code>. This may be useful in rare cases when your testing framework has deep nested structure, you have very long file names and need to fit into 260 chars of Windows <code>MAX_PATH</code> limit.</li>
-<li><strong>AutoReloadModifiedFiles</strong>: If set to <strong>True</strong>, any files you modify outside of Rapise are automatically reloaded in Rapise.</li>
-<li><strong>Confirm Object Removal</strong>: Ask when deleting object form the <a href="../object_tree/">Object Tree</a>.</li>
-<li><strong>DefaultFolder</strong> specifies  where new tests are kept before you explicitly save them.  The location is relative to the Rapise executable.</li>
-<li><strong>Default Scripting Language</strong>: JavaScript, RVL or Ask. </li>
-<li><strong>LoadLastTestOnStartup</strong>: If set to <strong>True</strong>, Rapise will open the last test you worked on and saved.  If set to <strong>False</strong>, Rapise will create a new test named MyTest&lt;#&gt; where &lt;#&gt; is an integer.  A folder for MyTest&lt;#&gt; is created in the folder specified by the <strong>DefaultFolder</strong> option.</li>
-<li><strong>NormalizeFileName</strong>: If set to <strong>True</strong>, files are referred to (in the <code>*.sstest</code> file) using a a path relative to the <code>*.sstest</code> file.  Otherwise, their absolute path is used.</li>
+<li><strong>Always use Test.sstest</strong>: Defaults to <strong>False</strong>. If set to <strong>True</strong>, the test file name is <code>Test.sstest</code> rather than <code>&lt;test folder name&gt;.sstest</code>. This may be useful in rare cases when your testing framework has a deeply nested structure, you have very long file names, and need to fit within the 260-character Windows <code>MAX_PATH</code> limit.</li>
+<li><strong>AutoReloadModifiedFiles</strong>: If set to <strong>True</strong>, any files modified outside of Rapise are automatically reloaded within Rapise.</li>
+<li><strong>Confirm Object Removal</strong>: Prompts for confirmation when deleting an object from the <a href="../object_tree/">Object Tree</a>.</li>
+<li><strong>DefaultFolder</strong>: Specifies where new tests are stored before you explicitly save them. The location is relative to the Rapise executable.</li>
+<li><strong>Default Scripting Language</strong>: JavaScript, RVL, or Ask.</li>
+<li><strong>LoadLastTestOnStartup</strong>: If set to <strong>True</strong>, Rapise opens the last test you worked on and saved. If set to <strong>False</strong>, Rapise creates a new test named <code>MyTest&lt;#&gt;</code>, where <code>&lt;#&gt;</code> is an integer. A folder for <code>MyTest&lt;#&gt;</code> is created in the folder specified by the <strong>DefaultFolder</strong> option.</li>
+<li><strong>NormalizeFileName</strong>: If set to <strong>True</strong>, files are referred to (in the <code>*.sstest</code> file) using a path relative to the <code>*.sstest</code> file. Otherwise, their absolute path is used.</li>
 <li>
-<p><strong>RecentTests</strong>: The maximum number of recent files displayed in the <strong>Recent Tests</strong> list.  To see the Recent Tests list, open the Application Menu:</p>
+<p><strong>RecentTests</strong>: The maximum number of recent files to display in the <strong>Recent Tests</strong> list. To view the Recent Tests list, open the Application Menu:</p>
 <p><img alt="options dialog, recent projects" src="../img/options_dialog8.png" /></p>
 </li>
 <li>
-<p><strong>ShowCommonFileAliases</strong>: Legacy, not needed since Rapise 6.0.</p>
+<p><strong>ShowCommonFileAliases</strong>: This is a legacy setting, not needed since Rapise 6.0.</p>
 </li>
-<li><strong>Enable Execution Monitor</strong>: specifies whether the execution monitor dialog box will be displayed during <a href="../playback/">playback</a>.</li>
-<li><strong>ShowDashboardOnStartUp</strong>: If <strong>True</strong>, the <a href="../spira_dashboard_2/">Spira Dashboard</a> will open automatically when Rapise is opened.</li>
-<li><strong>ShowStartPageOnStartUp</strong>: If <strong>True</strong>, the <a href="../start_page/">Start Page</a> will open automatically when Rapise is opened.</li>
+<li><strong>Enable Execution Monitor</strong>: Specifies whether the execution monitor dialog box is displayed during <a href="../playback/">playback</a>.</li>
+<li><strong>ShowDashboardOnStartUp</strong>: If <strong>True</strong>, the <a href="../spira_dashboard_2/">Spira Dashboard</a> opens automatically when Rapise is opened.</li>
+<li><strong>ShowStartPageOnStartUp</strong>: If <strong>True</strong>, the <a href="../start_page/">Start Page</a> opens automatically when Rapise is opened.</li>
 <li><strong>Spira Integration</strong>: Enables all dialogs and menus for <a href="../spiratest_integration/">SpiraTest Integration</a>.</li>
-<li><strong>Temp Folder</strong>:  default folder for temporary tests.</li>
-<li><strong>Test Auto Upgrade</strong>: if set to <strong>True</strong> each opened <code>.sstest</code> file is automatically upgraded to the latest format.</li>
+<li><strong>Temp Folder</strong>: The default folder for temporary tests.</li>
+<li><strong>Test Auto Upgrade</strong>: If set to <strong>True</strong>, each opened <code>.sstest</code> file is automatically upgraded to the latest format.</li>
 </ul>
 <h3 id="recorder">Recorder<a class="headerlink" href="#recorder" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11592,30 +11618,32 @@
 <p><img alt="options dialog, framestyle basic" src="../img/options_dialog6.png" /> <img alt="options dialog, framestyle modern" src="../img/options_dialog7.png" /></p>
 </li>
 <li>
-<p><strong>DefaultSpy</strong> specifies which of the various types of <a href="../object_spy/">Object Spy</a> will be displayed by default.</p>
+<p><strong>DefaultSpy</strong>: Specifies which of the various types of <a href="../object_spy/">Object Spy</a> is displayed by default.</p>
 </li>
-<li><strong>GenerateComments</strong>: <strong>True</strong> to automatically generate JavaScript or RVL comment for each recorded action.</li>
+<li><strong>GenerateComments</strong>: Set to <strong>True</strong> to automatically generate a JavaScript or RVL comment for each recorded action.</li>
 </ul>
 <h3 id="text-editor">Text Editor<a class="headerlink" href="#text-editor" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Convert Tabs to Spaces</strong>: <strong>True</strong> to force tabs to spaces conversion for the text editor.</li>
-<li><strong>Tab Size</strong>: Editor Tab Size</li>
+<li><strong>Convert Tabs to Spaces</strong>: Set to <strong>True</strong> to force tabs to spaces conversion in the text editor.</li>
+<li><strong>Tab Size</strong>: The tab size for the editor.</li>
 </ul>
 <h2 id="utilities">Utilities<a class="headerlink" href="#utilities" title="Permanent link">&para;</a></h2>
 <p><img alt="options dialog, recent projects" src="../img/options_dialog9.png" /></p>
-<p>Utility functions</p>
+<p>Utility Functions</p>
 <ul>
-<li>Set of <strong>Open</strong> buttons:</li>
+<li>
+<p>A set of <strong>Open</strong> buttons:</p>
+<ul>
 <li><strong>Open Web Profiles Folder</strong></li>
 <li><strong>Open Selenium Profiles Folder</strong></li>
 <li><strong>Open Mobile Profiles Folder</strong></li>
 <li><strong>Open Samples Folder</strong></li>
 <li><strong>Open User Libraries Folder</strong></li>
-<li>
-<p><strong>Open Application Log Folder</strong></p>
+<li><strong>Open Application Log Folder</strong></li>
+</ul>
 </li>
 <li>
-<p><strong>Reset Layout</strong> - Pressing the <strong>Reset Layout</strong> button restores the <a href="../restoring_the_default_layout/">default layout</a>.  Rapise will restart.</p>
+<p><strong>Reset Layout</strong> - Pressing the <strong>Reset Layout</strong> button restores the <a href="../restoring_the_default_layout/">default layout</a>. Rapise will restart.</p>
 </li>
 </ul>
                 

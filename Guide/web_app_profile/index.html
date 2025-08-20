@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11149,6 +11161,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11474,16 +11498,16 @@
                 
                 
                 <h1 id="web-application-profile">Web Application Profile<a class="headerlink" href="#web-application-profile" title="Permanent link">&para;</a></h1>
-<p>Each web application is unique in terms of assigning attributes to elements and this complicates the process of generating XPath locators. Some applications assign dynamic IDs to elements, some use ARIA attributes and some do not, some values of class attribute have meaning related to element position and some just used for element styling. There are also cases when an app contains hidden DOM layers which stack on top of each other. So usage of same set of attributes for generating XPath is not efficient and may lead to weak locators that break after application reloading or slight modification. To cope with these problems Rapise introduces Web App Profile. It is a simple JSON file of a defined structure that instructs Rapise how to build XPath for elements in a particular application. From this topic you will learn how to define a profile for your web application.</p>
+<p>Each web application is unique in how it assigns attributes to elements, which complicates the process of generating XPath locators. Some applications assign dynamic IDs to elements; some use ARIA attributes while others do not; and some class attribute values are meaningful for element positioning, while others are used purely for styling. There are also cases where an app contains hidden DOM layers that stack on top of each other. Therefore, using the same set of attributes for generating XPaths is not efficient and may lead to weak locators that break after an application reloads or undergoes slight modifications. To address these challenges, Rapise introduces the Web App Profile. It is a simple JSON file with a defined structure that instructs Rapise how to build XPaths for elements in a particular application. This topic explains how to define a profile for your web application.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In some cases we refer to Web Application Profile as Web Recorder Configuration. These terms are synonyms.</p>
+<p>In some cases, <code>Web Application Profile</code> is also referred to as <code>Web Recorder Configuration</code>. These terms are synonyms.</p>
 </div>
 <h2 id="purpose-of-webappprofile">Purpose of WebAppProfile<a class="headerlink" href="#purpose-of-webappprofile" title="Permanent link">&para;</a></h2>
 <p><code>WebAppProfile</code> serves as an instruction to Rapise on how to record XPath locators for elements in a given application.</p>
-<p><code>WebAppProfile</code> addresses one of the challenges in web UI test automation: generation of resilient XPath locators during test recording.</p>
+<p><code>WebAppProfile</code> addresses one of the challenges in web UI test automation: the generation of resilient XPath locators during test recording.</p>
 <h2 id="adding-webappprofile-to-a-test">Adding WebAppProfile to a Test<a class="headerlink" href="#adding-webappprofile-to-a-test" title="Permanent link">&para;</a></h2>
-<p>To create <code>WebAppProfile.json</code> file in your test navigate to <code>Files</code> tab, right click <code>Scripts</code> folder and choose <code>Create... &gt; WebAppProfile.json</code>.</p>
+<p>To create a <code>WebAppProfile.json</code> file in your test, navigate to the <code>Files</code> tab, right-click the <code>Scripts</code> folder, and choose <code>Create... &gt; WebAppProfile.json</code>.</p>
 <p><img src="/Guide/img/web_app_profile_create.gif" width="746"/></p>
 <p>The default profile looks like this:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -11568,14 +11592,14 @@
 <h2 id="webappprofile-format">WebAppProfile Format<a class="headerlink" href="#webappprofile-format" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><code>record.attributes</code> array contains definition of attributes to record.</p>
+<p><code>record.attributes</code> array contains the definition of attributes to record.</p>
 <ul>
 <li><code>name</code> is the only required property for an attribute. It is case insensitive.</li>
-<li><code>notEmpty</code> is <code>false</code> by default. If set to <code>true</code> then the attribute will be recorded only if it has non empty value.</li>
-<li><code>exclude</code> is a regular expression. If attribute value matches the regexp then the attribute is not recorded.</li>
+<li><code>notEmpty</code> is <code>false</code> by default. If set to <code>true</code>, the attribute will be recorded only if it has a non-empty value.</li>
+<li><code>exclude</code> is a regular expression. If an attribute's value matches the regexp, the attribute is not recorded.</li>
 </ul>
 <blockquote>
-<p>Note: Rapise 6.4+ supports <code>text</code> attribute that is mapped to inner text of leaf elements.</p>
+<p>Note: Rapise 6.4+ supports the <code>text</code> attribute, which is mapped to the inner text of leaf elements.</p>
 </blockquote>
 </li>
 <li>
@@ -11588,20 +11612,20 @@
 <li><code>xpath</code> is the only required property for an anchor.</li>
 </ul>
 </li>
-<li><code>record.clickable.classes</code> is an array of classes that indicate clickable elements. By default Rapise does not record clicks on DIVs, SPANs and some other elements. By listing classes of elements that can be clicked you may change the default behavior. Requires Rapise 6.4+</li>
-<li><code>record.handlers</code> is an objects that defines functions injected into the recorder. Requires Rapise 6.4+<ul>
-<li><code>elementName(el)</code> builds a name for a given element. This name is used as object ID in the object repository. If this function returns <code>null</code> then default algorithm is used to build the name.</li>
-<li><code>skipAttribute(node, attr, value)</code> allows to skip recording of some attributes in specific cases. The function must return <code>true</code> if an attribute should not be recorded.</li>
-<li><code>clickable(el)</code> fine grained control over which element is considered clickable. When the function returns <code>true</code> the element is considered clickable, if <code>false</code> - then default algorithm (element is clickable or not) is used. Requires Rapise 6.5+.</li>
+<li><code>record.clickable.classes</code> is an array of classes that indicate clickable elements. By default, Rapise does not record clicks on DIVs, SPANs, and some other elements. By listing classes of elements that can be clicked, you may change this default behavior. Requires Rapise 6.4+</li>
+<li><code>record.handlers</code> is an object that defines functions injected into the recorder. Requires Rapise 6.4+<ul>
+<li><code>elementName(el)</code> builds a name for a given element. This name is used as the object ID in the object repository. If this function returns <code>null</code>, the default algorithm is used to build the name.</li>
+<li><code>skipAttribute(node, attr, value)</code> allows skipping the recording of some attributes in specific cases. The function must return <code>true</code> if an attribute should not be recorded.</li>
+<li><code>clickable(el)</code> provides fine-grained control over which element is considered clickable. When the function returns <code>true</code>, the element is considered clickable; if <code>false</code>, the default algorithm (determining if the element is clickable or not) is used. Requires Rapise 6.5+.</li>
 </ul>
 </li>
 </ul>
 <h3 id="treatmouseupasclick-treatmousedownasclick">treatMouseUpAsClick, treatMouseDownAsClick<a class="headerlink" href="#treatmouseupasclick-treatmousedownasclick" title="Permanent link">&para;</a></h3>
-<p>In rare cases when a Web app is interfering into default mouse clicks processing mechanism it may be necessary to set <code>record.treatMouseUpAsClick</code> or <code>record.treatMouseDownAsClick</code> to <code>true</code>. It will enable Rapise to record clicks that are processed by the application inside MouseUp or MouseDown events.</p>
+<p>In rare cases where a web app interferes with the default mouse click processing mechanism, it may be necessary to set <code>record.treatMouseUpAsClick</code> or <code>record.treatMouseDownAsClick</code> to <code>true</code>. This will enable Rapise to record clicks that are processed by the application within MouseUp or MouseDown events.</p>
 <h2 id="anchors">Anchors<a class="headerlink" href="#anchors" title="Permanent link">&para;</a></h2>
-<p>When XPath of an element is being recorded and the element belongs to the sub-tree of an anchor element (including the anchor element itself) then XPath of the element will start/or be replaced with XPath of the anchor element.</p>
+<p>When an element's XPath is being recorded, and the element belongs to the sub-tree of an anchor element (including the anchor element itself), the element's XPath will either start with or be replaced by the anchor element's XPath.</p>
 <h3 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h3>
-<p>Let's look at the example. Here we have a table built with DIVs and ARIA roles.</p>
+<p>Let's look at an example. Here, we have a table built with DIVs and ARIA roles.</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;Customers&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;grid&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">span</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;cell&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Contoso&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
@@ -11610,29 +11634,29 @@
     ...
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>If we record just using <code>title</code> attribute and it's value is unique for the page we'll end up with a locator</p>
+<p>If we record using just the <code>title</code> attribute, and its value is unique for the page, we'll end up with a locator:</p>
 <div class="highlight"><pre><span></span><code>//span[@title=&#39;Contoso&#39;]
 </code></pre></div>
-<p>However if we define an anchor</p>
+<p>However, if we define an anchor:</p>
 <div class="highlight"><pre><span></span><code>//div[@id=&#39;Customers&#39;]
 </code></pre></div>
-<p>we'll get the locator as</p>
+<p>we'll get the locator as:</p>
 <div class="highlight"><pre><span></span><code>//div[@id=&#39;Customers&#39;]//span[@title=&#39;Contoso&#39;]
 </code></pre></div>
-<p>The locator is now bound to the table. If another element with <code>Contoso</code> title appears somewhere on the page (outside the table) we'll find the correct element.</p>
+<p>The locator is now bound to the table. If another element with the <code>Contoso</code> title appears somewhere on the page (outside the table), we'll still find the correct element.</p>
 <h3 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h3>
-<p>Here is more complex and real-life example. In <a href="https://dynamics.microsoft.com/en-us/business-central/overview/">Microsoft Dynamics 365 Business Central</a> application when you navigate through the forms they are loaded into the DOM tree inside DIV elements with <code>spa-view</code> class. When you move from one form to another - old forms are not unloaded and continue to stay in the DOM tree. They just have lower <code>z-index</code> then currently active form.</p>
+<p>Here is a more complex, real-life example. In the <a href="https://dynamics.microsoft.com/en-us/business-central/overview/">Microsoft Dynamics 365 Business Central</a> application, when you navigate through forms, they are loaded into the DOM tree inside DIV elements with the <code>spa-view</code> class. When you move from one form to another, old forms are not unloaded and continue to stay in the DOM tree. They just have a lower <code>z-index</code> than the currently active form.</p>
 <p><img src="/Guide/img/web_app_profile_hidden_layers.png" width="485"/></p>
-<p>It means that when Rapise searches for an element during test playback it should work with the topmost <code>spa-view</code>.</p>
-<p>To achieve this goal we define an anchor in WebAppProfile for the application</p>
+<p>This means that when Rapise searches for an element during test playback, it should work with the topmost <code>spa-view</code>.</p>
+<p>To achieve this goal, we define an anchor in the WebAppProfile for the application:</p>
 <div class="highlight"><pre><span></span><code>//div[contains(concat(&#39; &#39;, @class, &#39; &#39;), &#39; spa-view &#39;) and position()=last()]
 </code></pre></div>
-<p>Here is an example of automatically recorded XPath</p>
+<p>Here is an example of automatically recorded XPath:</p>
 <div class="highlight"><pre><span></span><code>//div[contains(concat(&#39; &#39;, @class, &#39; &#39;), &#39; spa-view &#39;) and position()=last()]//span[@aria-label=&#39;Customers&#39;]
 </code></pre></div>
-<p>The anchor prevents us from finding elements that are not visible to user and ensure that if we find an element it belongs to an active form.</p>
+<p>The anchor prevents finding elements that are not visible to the user and ensures that if an element is found, it belongs to an active form.</p>
 <h3 id="example-3">Example 3<a class="headerlink" href="#example-3" title="Permanent link">&para;</a></h3>
-<p>Requires Rapise 6.4+. An anchor may be used to rewrite XPath for an element completely. It means if an anchor points to an element then it will be used instead of XPath expression generated using attributes. Let's assume we have a page</p>
+<p>Requires Rapise 6.4+. An anchor may be used to completely rewrite an element's XPath. This means if an anchor points to an element, it will be used instead of an XPath expression generated using attributes. Let's assume we have a page:</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>
@@ -11644,16 +11668,16 @@
     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>If we have an anchor defined like</p>
+<p>If we have an anchor defined like:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nx">xpath</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;//input[../../td/span[text()=&#39;UserName&#39;]]&quot;</span><span class="p">}</span>
 </code></pre></div>
-<p>and we click on the field then instead of something like</p>
+<p>and we click on the field, then instead of something like:</p>
 <div class="highlight"><pre><span></span><code>//input[@title=&#39;Enter email or user ID:&#39;]
 </code></pre></div>
 <p>the recorder will use the anchor.</p>
 <h2 id="xpath-minimization">XPath Minimization<a class="headerlink" href="#xpath-minimization" title="Permanent link">&para;</a></h2>
-<p>Rapise always tries to build the minimal XPath locator possible with a given set of attributes, classes and anchors. <a href="https://www.inflectra.com/support/knowledgebase/kb282.aspx">Full XPath is not an option</a>.</p>
-<p>Let's assume we have a page</p>
+<p>Rapise always tries to build the minimal XPath locator possible with a given set of attributes, classes, and anchors. <a href="https://www.inflectra.com/support/knowledgebase/kb282.aspx">Full XPath is not an option</a>.</p>
+<p>Let's assume we have a page:</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">span</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Account&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
@@ -11662,11 +11686,11 @@
     ...
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>and XPath</p>
+<p>and XPath:</p>
 <div class="highlight"><pre><span></span><code>//span[@title=&#39;Account&#39;]
 </code></pre></div>
-<p>finds a single node, then it is a good minimal locator for the element.</p>
-<p>Compare with full XPath</p>
+<p>finds a single node, it is a good minimal locator for the element.</p>
+<p>Compare with full XPath:</p>
 <div class="highlight"><pre><span></span><code>/div[1]/div[1]/span[@title=&#39;Account&#39;]
 </code></pre></div>
 <p>that may easily become broken with page layout changes.</p>

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11093,6 +11105,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11365,40 +11389,40 @@
                 
                 <h1 id="salesforcecom">Salesforce.com<a class="headerlink" href="#salesforcecom" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p><strong>Salesforce.com</strong> is a cloud-based Customer Relationship Management (CRM) and Sales Force Automation (SFA) platform that is delivered as a Software as a Service (CRM) solution. It provides companies with an interface for case management and task management, and a system for automatically routing and escalating important events.</p>
+<p><strong>Salesforce.com</strong> is a cloud-based Customer Relationship Management (CRM) and Sales Force Automation (SFA) platform delivered as a Software as a Service (SaaS) solution. It provides companies with an interface for case management and task management, and a system for automatically routing and escalating important events.</p>
 <p><img alt="salesforce_dashboard" src="../img/salesforce_com1.png" /></p>
-<p>Rapise provides out of the box support for testing Salesforce.com and provides <a href="../recording_library/">additional libraries</a> for making the testing even easier and more productive.</p>
+<p>Rapise provides out-of-the-box support for testing Salesforce.com and includes <a href="../recording_library/">additional libraries</a> to make testing even easier and more productive.</p>
 <h2 id="recording-a-salesforcecom-test">Recording a Salesforce.com Test<a class="headerlink" href="#recording-a-salesforcecom-test" title="Permanent link">&para;</a></h2>
-<p><strong>Salesforce.com</strong> is completely web-based and you use a web browser to access the user interface. Therefore when recording a test using Rapise, you use the same web browser libraries that you use to record other web tests:</p>
+<p><strong>Salesforce.com</strong> is completely web-based, and you use a web browser to access its user interface. Therefore, when recording a test using Rapise, you use the same web browser libraries that are used for other web tests:</p>
 <ul>
-<li>Most of the Salesforce.com user interface will be tested using the <strong>standard browser library</strong> for your web browser of choice (e.g. Internet Explorer HTML, Firefox HTML, and Chrome HTML).</li>
-<li>In addition, there are special controls inside Salesforce.com that Rapise has specialized support for. For that reason you'll also see the DomSalesforce library added to your test as well as the browser one. This <strong>DomSalesforce</strong> library adds additional rules that identify certain Salesforce.com objects (e.g. the main Grid) to make testing easier.</li>
+<li>Most of the Salesforce.com user interface will be tested using the <strong>standard browser library</strong> for your web browser of choice (e.g., Internet Explorer HTML, Firefox HTML, and Chrome HTML).</li>
+<li>In addition, there are special controls inside Salesforce.com that Rapise has specialized support for. For that reason, you'll also see the DomSalesforce library added to your test alongside the browser library. This <strong>DomSalesforce</strong> library adds additional rules that identify certain Salesforce.com objects (e.g., the main Grid) to make testing easier.</li>
 </ul>
 <p>When you record your first test, you'll see the following library selection code generated automatically by Rapise:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DomSalesforce&quot;</span><span class="p">];</span>
 </code></pre></div>
-<p>If you don’t see the <strong>DomSalesforce</strong> library listed in your test, then you will need to <a href="../change_the_libraries_being_use/">manually change it</a> using the <code>[ ] Libraries</code> button on the tool menu.</p>
+<p>If the <strong>DomSalesforce</strong> library is not listed in your test, you will need to <a href="../change_the_libraries_being_use/">manually add it</a> using the <code>[ ] Libraries</code> button on the tool menu.</p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
-<p>Many of the screens in Salesforce.com use simple HTML form fields such as text boxes, dropdown lists, etc.:</p>
+<p>Many of the screens in Salesforce.com use simple HTML form fields such as text boxes, drop-down lists, etc.:</p>
 <p><img alt="salesforce_fields" src="../img/salesforce_com2.png" /></p>
 <p>Rapise will recognize these objects using the standard web browser HTML libraries.</p>
 <p><strong><em>Salesforce.com Grid</em></strong>
-One of the the most important UI elements inside Salesforce.com is the sortable, filterable grid:</p>
+One of the most important UI elements inside Salesforce.com is the sortable, filterable grid:</p>
 <p><img alt="salesforce_grid" src="../img/salesforce_com3.png" /></p>
-<p>The Salesforce.com Grid is used in lots of different screens inside Salesforce.com (e.g. leads, quotes, etc.) and it is very common to need to interact with it in test scripts.</p>
-<p>When you record operations on such a grid or simply learn the entire grid using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> you will learn the <strong>SalesforceGrid</strong> object
-In additional to the standard HTML object methods and properties, you have <a href="/Libraries/DomSalesforceGrid/">the following special functions that you can perform on the grid</a>:</p>
+<p>The Salesforce.com Grid is used in many different screens inside Salesforce.com (e.g., leads, quotes, etc.), and it is very common to interact with it in test scripts.</p>
+<p>When you record operations on such a grid, or simply learn the entire grid using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span>, you will learn the <strong>SalesforceGrid</strong> object.
+In addition to the standard HTML object methods and properties, you can perform <a href="../../Libraries/DomSalesforceGrid/">the following special functions on the grid</a>:</p>
 <ul>
-<li><strong>DoClickCell()</strong> - Clicks the specified cell when you specify the x-index, y-index, the type of click (left-click, right-click, etc.).</li>
-<li><strong>DoClickText()</strong> - Clicks on a specific text inside the grid.</li>
+<li><strong>DoClickCell()</strong> - Clicks the specified cell by specifying the x-index, y-index, and the type of click (left-click, right-click, etc.).</li>
+<li><strong>DoClickText()</strong> - Clicks a specific text inside the grid.</li>
 <li><strong>GetCell</strong> - Gets the text of the specified cell.</li>
-<li><strong>GetColumnCount</strong> - Gets the number of columns in grid.</li>
+<li><strong>GetColumnCount</strong> - Gets the number of columns in the grid.</li>
 <li><strong>GetColumnName</strong> - Gets the caption of a column.</li>
-<li><strong>GetRowCount</strong> - Gets the number of rows in grid.</li>
+<li><strong>GetRowCount</strong> - Gets the number of rows in the grid.</li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://github.com/Inflectra/rapise-sfdc">Get the framework for testing Salesforce (github)</a></li>
+<li><a href="https://github.com/Inflectra/rapise-sfdc">Get the framework for testing Salesforce (GitHub)</a></li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB313.aspx">KB: Testing Visualforce components in Salesforce</a></li>
 <li><a href="https://youtu.be/Ge24OgI0VJ8">Webinar: Testing Salesforce.com with Rapise</a></li>
 <li><a href="https://youtu.be/2JBBMzYkil8">Webinar: Testing Salesforce Lightning with Rapise</a></li>

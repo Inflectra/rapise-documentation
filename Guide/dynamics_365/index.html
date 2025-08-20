@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11102,6 +11114,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11381,43 +11405,43 @@
                 
                 <h1 id="dynamics-365-for-finance-and-operations">Dynamics 365 for Finance and Operations<a class="headerlink" href="#dynamics-365-for-finance-and-operations" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Microsoft has created a new cloud-based SaaS-only combined ERP/CRM solution called <strong>Microsoft Dynamics 365</strong>. This provides a new web-based version of <a href="../dynamics_ax/">Dynamics AX</a> (renamed Dynamics 365 for Finance and Operations) and an updated Microsoft Dynamics CRM Online.</p>
-<p>This new integrated, ERP/CRM is provided solely through Microsoft Azure and is completely web-based. There are two main modules that Rapise has specialized support for:</p>
+<p>Microsoft has developed a new cloud-based, SaaS-only ERP/CRM solution called <strong>Microsoft Dynamics 365</strong>. This solution offers a new web-based version of <a href="../dynamics_ax/">Dynamics AX</a> (now rebranded as Dynamics 365 for Finance and Operations) and an updated Microsoft Dynamics CRM Online.</p>
+<p>This new integrated ERP/CRM solution is hosted exclusively on Microsoft Azure and is entirely web-based. Rapise offers specialized support for two main modules:</p>
 <ol>
-<li><strong>Dynamics 365 for Finance and Operations</strong> – this is the subject of this section, please read on if you are testing these modules.</li>
-<li><strong>Dynamics 365 for Sales</strong> – this is a rebrand of <a href="../dynamics_crm/">Dynamics CRM</a> and is covered in <a href="../dynamics_crm/">corresponding section</a>.</li>
+<li><strong>Dynamics 365 for Finance and Operations</strong> – This is the subject of this section. Continue reading if you are testing these modules.</li>
+<li><strong>Dynamics 365 for Sales</strong> – a rebrand of [Dynamics CRM], which is covered in the <a href="../dynamics_crm/">corresponding section</a>.</li>
 </ol>
 <p><img alt="clip0142" src="../img/dynamics_3651.png" /></p>
 <h2 id="recording-a-test">Recording a Test<a class="headerlink" href="#recording-a-test" title="Permanent link">&para;</a></h2>
-<p>Dynamics 365 for Finance and Operations is completely web-based (unlike Dynamics AX) and you use a web browser to access the user interface. Therefore when recording a test using Rapise, you use the same web browser libraries that you use to record other web tests:</p>
+<p>Dynamics 365 for Finance and Operations is entirely web-based (unlike Dynamics AX), and its user interface is accessed via a web browser. Therefore, when recording a test with Rapise, you use the same web browser libraries as you would for other web tests:</p>
 <ul>
-<li>Most of the Dynamics 365 user interface will be tested using the <a href="/Libraries/HTMLObject/">standard browser library</a> for your web browser of choice (e.g.  Internet Explorer HTML, Firefox HTML, and Chrome HTML).</li>
-<li>In addition, there are special controls inside Dynamics 365 that Rapise has specialized support for. For that reason you'll also see the <a href="/Libraries/ses_lib_dynamics365/">DomDynamicsAx</a> library added to your test as well as the browser one. This <strong>DomDynamicsAx</strong> library adds additional rules that identify certain Dynamics 365 objects to make testing easier.</li>
+<li>Most of the Dynamics 365 user interface can be tested using the <a href="../../Libraries/HTMLObject/">standard browser library</a> for your chosen web browser (e.g., Internet Explorer HTML, Firefox HTML, or Chrome HTML).</li>
+<li>In addition, there are special controls within Dynamics 365 for which Rapise offers specialized support. For this reason, you will also see the <a href="../../Libraries/ses_lib_dynamics365/">DomDynamicsAx</a> library added to your test alongside the browser library. This <strong>DomDynamicsAx</strong> library adds additional rules to identify specific Dynamics 365 objects, making testing easier.</li>
 </ul>
-<p>When you record your first test, you'll see the following library selection code generated automatically by Rapise:</p>
+<p>When you record your first test, you will see the following library selection code automatically generated by Rapise:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DomDynamicsAx&quot;</span><span class="p">];</span>
 </code></pre></div>
-<p>If you don’t see the <strong>DomDynamicsAx</strong> library listed in your test, then you will need to <a href="../change_the_libraries_being_use/">manually add it</a>.</p>
+<p>If you do not see the <strong>DomDynamicsAx</strong> library listed in your test, you will need to <a href="../change_the_libraries_being_use/">manually add it</a>.</p>
 <h2 id="recording-and-learning-objects">Recording and Learning Objects<a class="headerlink" href="#recording-and-learning-objects" title="Permanent link">&para;</a></h2>
-<p>During recording while you interact with Dynamics 365, Rapise captures objects and displays them in the <a href="../object_learning/">object tree</a>:</p>
+<p>During recording, as you interact with Dynamics 365, Rapise captures objects and displays them in the <a href="../object_learning/">object tree</a>:</p>
 <p><img alt="clip0143" src="../img/dynamics_3652.png" /></p>
-<p>Some of these objects will be standard HTML DOM objects (e.g. button):</p>
+<p>Some of these objects will be standard HTML DOM objects (e.g., a button):</p>
 <p><img alt="clip0144" src="../img/dynamics_3653.png" /></p>
-<p>and others will be specific to Dynamics 365:</p>
+<p>Others will be specific to Dynamics 365:</p>
 <p><img alt="clip0145" src="../img/dynamics_3654.png" /></p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
-<p>One of the most important UI elements inside Dynamics 365 is the multi-level menu bar:</p>
+<p>One of the most important UI elements within Dynamics 365 is the multi-level menu bar:</p>
 <p><img alt="clip0146" src="../img/dynamics_3655.png" /></p>
-<p>The Dynamics 365 menu bar is used to quickly and easily navigate between different parts of the application and it is very common to need to interact with it in test scripts.</p>
-<p><a href="../object_learning/">Learn</a> the menu using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> on the menu open button:</p>
+<p>The Dynamics 365 menu bar is used to quickly and easily navigate between different parts of the application, and interacting with it in test scripts is very common.</p>
+<p>To learn the menu, use <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> on the menu open button:</p>
 <p><img alt="menu open button" src="../img/dynamics_3657.png" /></p>
-<p>Rapise will learn the <a href="/Libraries/DomDynamicsAXMenuBar/">DomDynamicsAXMenuBar</a> object:</p>
+<p>Rapise learns the <a href="../../Libraries/DomDynamicsAXMenuBar/">DomDynamicsAXMenuBar</a> object:</p>
 <p><img alt="clip0147" src="../img/dynamics_3656.png" /></p>
-<p>In additional to the standard HTML object methods and properties, you have <a href="/Libraries/DomDynamicsAXMenuBar/">the special functions that you can perform on the menu</a>:</p>
+<p>In addition to the standard HTML object methods and properties, you can perform <a href="../../Libraries/DomDynamicsAXMenuBar/">special functions on the menu</a>:</p>
 <ul>
-<li><strong>DoMenu(path, separator)</strong> – selects the menu entries in specified path, using the specified separator (or semicolon if none specified).</li>
+<li><strong>DoMenu(path, separator)</strong> – selects the menu entries in the specified path, using the specified separator (or a semicolon if none is specified).</li>
 </ul>
-<p>Here is a sample test that was recorded using Dynamics 365 for Finance and Operations and Rapise.</p>
+<p>Here is a sample test recorded using Dynamics 365 for Finance and Operations with Rapise.</p>
 <p><strong>RVL</strong></p>
 <p><img alt="recorded purchase order" src="../img/dynamics_3658.png" /></p>
 <p><strong>JavaScript</strong></p>

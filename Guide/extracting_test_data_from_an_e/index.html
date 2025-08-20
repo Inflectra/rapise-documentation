@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11106,6 +11118,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11389,15 +11413,15 @@
               
                 
                 
-                <h1 id="extracting-test-data-from-an-excel-spreadsheet">Extracting Test Data From an Excel Spreadsheet<a class="headerlink" href="#extracting-test-data-from-an-excel-spreadsheet" title="Permanent link">&para;</a></h1>
+                <h1 id="extracting-test-data-from-an-excel-spreadsheet">Extracting Test Data from an Excel Spreadsheet<a class="headerlink" href="#extracting-test-data-from-an-excel-spreadsheet" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Often you want to be able to parameterize your Rapise tests to have a common set of test functions that can use different combinations of test data. You can use a MS-Excel spreadsheet to store the test data and use Rapise to read out the matching values. This articles provides a sample for doing this.</p>
+<p>Often, you may want to parameterize your Rapise tests so that a common set of test functions can use different combinations of test data. You can use an MS Excel spreadsheet to store test data and use Rapise to read the corresponding values. This article provides a sample demonstrating this.</p>
 <h2 id="recommended-solution">Recommended Solution<a class="headerlink" href="#recommended-solution" title="Permanent link">&para;</a></h2>
 <h3 id="rvl">RVL<a class="headerlink" href="#rvl" title="Permanent link">&para;</a></h3>
-<p>The most simple and straight-forward way to accomplish this is to use <a href="../../RVL/Maps/">RVL Maps</a>.</p>
-<p>Also, if your goal is to store Configuration data as <code>.xlsx</code> then we recommend to simply use <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a>.</p>
+<p>The simplest and most straightforward way to accomplish this is to use <a href="../../RVL/Maps/">RVL Maps</a>.</p>
+<p>Also, if your goal is to store configuration data in an <code>.xlsx</code> file, we recommend simply using <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a>.</p>
 <h3 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
-<p>In this example we have a spreadsheet that contains some lookup data:</p>
+<p>In this example, we have a spreadsheet that contains lookup data:</p>
 <table>
 <thead>
 <tr>
@@ -11428,8 +11452,8 @@
 </tr>
 </tbody>
 </table>
-<p>We want to dynamically query this Excel sheet and find the test data associated with a specific case. For example if we query for <code>Test2</code> we want to return back the test data <code>valuetest2</code>.</p>
-<p>The function that will do this uses the built-in <a href="/Libraries/Spreadsheet/">Spreadsheet</a> object:</p>
+<p>We want to dynamically query this Excel sheet to find the test data associated with a specific case. For example, if we query for <code>Test2</code>, we want to return the test data <code>valuetest2</code>.</p>
+<p>The function that accomplishes this uses the built-in <a href="../../Libraries/Spreadsheet/">Spreadsheet</a> object:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">FindValueFromFile</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span><span class="w"> </span><span class="nx">valueToFind</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">//Open the spreadsheet</span>

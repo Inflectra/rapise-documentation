@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11123,6 +11135,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11424,74 +11448,75 @@
                 <h1 id="test-settings-view">Test Settings View<a class="headerlink" href="#test-settings-view" title="Permanent link">&para;</a></h1>
 <p><img alt="settings dialog" src="../img/settings_dialog1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Use the Settings Dialog to change Test-specific settings.</p>
+<p>Use the Settings Dialog to change test-specific settings.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>Use <code>Test &gt; Test Settings</code> <a href="../menu_and_toolbars/#Test">menu</a> item to open settings in the expandable dialog window.</p>
-<p>Another way is to choose root node in the <a href="../test_files_dialog/">file view</a> to see test settings in the <a href="../properties/">property</a> view.</p>
+<p>Use the <code>Test &gt; Test Settings</code> <a href="../menu_and_toolbars/#Test">menu</a> item to open the settings dialog window.</p>
+<p>Another way is to choose the root node in the <a href="../test_files_dialog/">file view</a> to see test settings in the <a href="../properties/">property</a> view.</p>
 <h2 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">&para;</a></h2>
 <p><img alt="settings dialog, advanced" src="../img/settings_dialog2.png" /></p>
 <ul>
 <li>
-<p><strong>CommandLine</strong> is a freeform text box.  Use it to specify values for global variables (beginning in <strong>g_</strong>) to pass the <a href="../recording/">recorder</a> and <a href="../playback/">player</a>.  You can view which global variables are available in the source files (such as <strong>Player.js,</strong> <strong>SeSCommon.js</strong>, etc).</p>
+<p><strong>CommandLine</strong> is a free-form text box. Use it to specify values for global variables (beginning with <strong>g_</strong>) that are passed to the <a href="../recording/">recorder</a> and <a href="../playback/">player</a>. You can view which global variables are available in the source files (such as <strong>Player.js</strong>, <strong>SeSCommon.js</strong>, etc.).</p>
 </li>
 <li>
-<p><strong>EntryPoint</strong> JavaScript function name (<code>g_entryPointName</code> variable) used as a test entry point. Normally <code>Test</code>, however it may be changed to execute a single scenario, i.e.: <code>MyScenario</code>.</p>
+<p><strong>EntryPoint</strong> The JavaScript function name (<code>g_entryPointName</code> variable) used as a test entry point. Normally <code>Test</code>; however, it can be changed to execute a single scenario, for example: <code>MyScenario</code>.</p>
 </li>
 <li>
-<p><strong>WorkDir</strong> Defines test root directory (<code>%WORKDIR%</code> environment variable) relative to this test's folder.</p>
-<p>Usually it is equal to <code>.</code> (root test). In the sub-test it is <code>../.</code>, in sub-sub-test it is <code>../../.</code>. This way if you have common scenario used across tests and it refers to a data file using <code>%WORKDIR%\Data.xlsx</code> then all sub-tests will be able to find it. This feature together with a concept of <a href="../tests_and_sub_tests/">sub-tests</a> help to build test <a href="https://www.inflectra.com/support/knowledgebase/kb371.aspx">frameworks</a>.</p>
+<p><strong>WorkDir</strong> Defines the test root directory (<code>%WORKDIR%</code> environment variable) relative to the test's folder.</p>
+<p>Usually, it is equal to <code>.</code> (the root test). For a sub-test, it is <code>../.</code>; for a sub-sub-test, it is <code>../../.</code>. This way, if you have a common scenario used across tests that refers to a data file using <code>%WORKDIR%\Data.xlsx</code>, then all sub-tests will be able to find it. This feature, together with the concept of <a href="../tests_and_sub_tests/">sub-tests</a>, helps to build test <a href="https://www.inflectra.com/support/knowledgebase/kb371.aspx">frameworks</a>.</p>
 </li>
 <li>
-<p><strong>CommandLine</strong> is a freeform text box.  Use it to specify values for global variables (beginning in <strong>g_</strong>) to pass the <a href="../recording/">recorder</a> and <a href="../playback/">player</a>.  You can view which global variables are available in the source files (such as <strong>Player.js,</strong> <strong>SeSCommon.js</strong>, etc).</p>
+<p><strong>CommandLine</strong> is a free-form text box. Use it to specify values for global variables (beginning with <strong>g_</strong>) that are passed to the <a href="../recording/">recorder</a> and <a href="../playback/">player</a>. You can view which global variables are available in the source files (such as <strong>Player.js</strong>, <strong>SeSCommon.js</strong>, etc.).</p>
 </li>
 </ul>
 <h2 id="testparams">TestParams<a class="headerlink" href="#testparams" title="Permanent link">&para;</a></h2>
 <p>The TestParams section includes various custom test parameters:</p>
 <p>Click to open the <a href="../namevalue_collection_editor_di/">TestParams Collection Editor Dialog</a>.</p>
-<p>There is a build-in set of test parameters for <a href="../cross_browser_testing/">cross-browser testing</a>. When you open up a test that uses one of the HTML libraries it will display the following built-in test parameter that you can use to change the <strong>playback browser</strong>:</p>
+<p>There is a built-in set of test parameters for <a href="../cross_browser_testing/">cross-browser testing</a>. When you open a test that uses one of the HTML libraries, it will display the following built-in test parameter that you can use to change the <strong>playback browser</strong>:</p>
 <p><img alt="settings_dialog_browser_selector" src="../img/settings_dialog6.png" /></p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p><img alt="settings dialog, execution" src="../img/settings_dialog3.png" /></p>
 <ul>
-<li><strong>CacheObjects</strong>: Remember object locations and try to reuse them for speed.  This is helpful with dialog based applications.</li>
-<li><strong>CommandInterval</strong>: Time interval (in milliseconds) between script commands during script execution.</li>
+<li><strong>CacheObjects</strong>: Remembers object locations and attempts to reuse them for improved speed. This is helpful for dialog-based applications.</li>
+<li><strong>CommandInterval</strong>: The time interval (in milliseconds) between script commands during script execution.</li>
 </ul>
 <hr />
 <ul>
-<li><strong>IterationsCount</strong>: Your test script will be executed this many times consecutively during <a href="../playback/">Playback</a>.</li>
-<li><strong>JS Engine</strong>: one of <strong>Default</strong>, <strong>Node</strong>, <strong>WScript</strong>. Where <strong>Default</strong> means use <strong>JSEngineType</strong> defined in the <a href="../options_dialog/#execution">Global Options</a>. Otherwise use <a href="../jscript_language_reference/">nodejs</a> or <a href="../jscript_language_reference/">JScript/WScript</a> engine correspondingly.</li>
-<li><strong>ObjectLookupAttemptInterval</strong>: This is the time Rapise will wait between attempts to locate an object.</li>
-<li><strong>ObjectLookupAttempts</strong>: This is the number of times Rapise will attempt to locate an object.</li>
-<li><strong>Show Report</strong>: Display report after execution. Default is <strong>True</strong>.</li>
-<li><strong>StopOnError</strong>: Terminate script execution after the first error. So failing test cases fail quicker. Default is <strong>True</strong>.</li>
+<li><strong>IterationsCount</strong>: Your test script will be executed this many times consecutively during <a href="../playback/">playback</a>.</li>
+<li><strong>JS Engine</strong>: One of <strong>Default</strong>, <strong>Node</strong>, or <strong>WScript</strong>. <strong>Default</strong> means using the <strong>JSEngineType</strong> defined in the <a href="../options_dialog/#execution">Global Options</a>. Otherwise, use the <a href="../jscript_language_reference/">Node.js</a> or <a href="../jscript_language_reference/">JScript/WScript</a> engine, respectively.</li>
+<li><strong>ObjectLookupAttemptInterval</strong>: The time Rapise will wait between attempts to locate an object.</li>
+<li><strong>ObjectLookupAttempts</strong>: The number of times Rapise will attempt to locate an object.</li>
+<li><strong>Show Report</strong>: Displays the report after execution. Default is <strong>True</strong>.</li>
+<li><strong>StopOnError</strong>: Terminates script execution after the first error, so failing test cases fail more quickly. Default is <strong>True</strong>.</li>
 </ul>
 <h2 id="recording">Recording<a class="headerlink" href="#recording" title="Permanent link">&para;</a></h2>
 <p><img alt="settings dialog, recording" src="../img/settings_dialog4.png" /></p>
 <ul>
 <li>
-<p><strong>BeautifySavedObjects</strong> affects how the <a href="../recording/">Script Recorder</a> writes object information to your test script.  If <strong>False</strong>, the object definition will be written as a single line, if <strong>True</strong>, the object definition will be written in a manner that takes more space, but is easier to read and change.</p>
-<p>Objects that were learned in previous recordings are affected by the value of <strong>BeautifySavedObjects</strong>.</p>
+<p><strong>BeautifySavedObjects</strong>: Affects how the <a href="../recording/">Script Recorder</a> writes object information to your test script.</p>
+<p>If <strong>False</strong>, the object definition will be written as a single line. If <strong>True</strong>, the object definition will be written in a manner that takes more space but is easier to read and modify.
+Objects learned in previous recordings are affected by the value of <strong>BeautifySavedObjects</strong>.</p>
 </li>
 </ul>
 <h2 id="screen-capture">Screen Capture<a class="headerlink" href="#screen-capture" title="Permanent link">&para;</a></h2>
 <p><img alt="settings dialog, screen capture" src="../img/settings_dialog5.png" width="570px" /></p>
 <ul>
-<li><strong>Capture Cursor</strong>: Set this to <strong>True</strong> if you want to include cursor position marker on the captured screenshot.</li>
-<li><strong>Capture Execution</strong>: Set this to <strong>True</strong> if you want to save screen images after each <code>Do&lt;Action&gt;</code> during playback.</li>
-<li><strong>Capture Recording</strong>: Set this to <strong>True</strong> if you want to save screen images after each recorded action during recording.</li>
-<li><strong>Include in Report</strong>: Set this to <strong>True</strong> to include the saved images in the execution report during playback.</li>
-<li><strong>Screenshot on Failure</strong>: Capture desktop image if a test has just failed.</li>
-<li><strong>Widget Only</strong>: Set this to <strong>True</strong> to only save the widget area in the screenshot, as opposed to the whole window.</li>
+<li><strong>Capture Cursor</strong>: Set this to <strong>True</strong> to include a cursor position marker on the captured screenshot.</li>
+<li><strong>Capture Execution</strong>: Set this to <strong>True</strong> to save screen images after each <code>Do&lt;Action&gt;</code> during playback.</li>
+<li><strong>Capture Recording</strong>: Set this to <strong>True</strong> to save screen images after each recorded action during recording.</li>
+<li><strong>Include in Report</strong>: Set this to <strong>True</strong> to include saved images in the execution report during playback.</li>
+<li><strong>Screenshot on Failure</strong>: Captures a desktop image if a test has just failed.</li>
+<li><strong>Widget Only</strong>: Set this to <strong>True</strong> to save only the widget area in the screenshot, as opposed to the entire window.</li>
 </ul>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
 <p><img alt="settings dialog, settings" src="../img/settings_dialog7.png" /></p>
 <!-- /* cSpell:disable */ -->
 <ul>
-<li><strong>UserFunctionsPath</strong>: Path (relative to the test directory) to the file with user-defined functions utilized in this test.  Normally this file has name in form <code>User.js</code>.</li>
-<li><strong>ObjectsPath</strong>: Path (relative to the test directory) to file containing object tree information. This file contains <code>saved_script_objects</code> structure with all object locators gathered during recording and learning. Normally this file has name in form <code>Objects.js</code>.</li>
-<li><strong>ReportPath</strong>: Path (relative to the test directory) to the test's report file. Normally this file has extension form <code>.trp</code> which stands for **T**est **R**eport.</li>
-<li><strong>ScriptPath</strong>: Path (relative to the test directory) to the test script.</li>
-<li><strong>TestPath</strong>: Path to the test definition file (<code>*.sstest</code>).</li>
+<li><strong>UserFunctionsPath</strong>: The path (relative to the test directory) to the file containing user-defined functions used in this test. Normally, this file is named <code>User.js</code>.</li>
+<li><strong>ObjectsPath</strong>: The path (relative to the test directory) to the file containing object tree information. This file contains the <code>saved_script_objects</code> structure with all object locators gathered during recording and learning. Normally, this file is named <code>Objects.js</code>.</li>
+<li><strong>ReportPath</strong>: The path (relative to the test directory) to the test's report file. Normally, this file has the extension <code>.trp</code>, which stands for **T**est **R**eport.</li>
+<li><strong>ScriptPath</strong>: The path (relative to the test directory) to the test script.</li>
+<li><strong>TestPath</strong>: The path to the test definition file (<code>*.sstest</code>).</li>
 </ul>
 <!-- /* cSpell:enable */ -->
                 

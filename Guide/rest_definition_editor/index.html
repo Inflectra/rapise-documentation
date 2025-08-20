@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11116,6 +11128,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11412,17 +11436,17 @@
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>The <strong>REST Definition Editor</strong> allows you to edit <a href="../rest_web_service/">REST web service</a> definition files (<code>.rest</code>).</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>Use the <a href="../dialog_add_web_service/">Add Web Service Dialog</a> to create a new REST definition (<code>.rest</code>) file.  The definition file will be opened in a <strong>REST Editor</strong> in the <a href="../content_view/">Content View</a>.</p>
-<p>Or, you can double-click on an existing <code>.rest</code> file in the <a href="../test_files_dialog/">Test Files View</a> explorer window. The definition file will be opened in a <strong>REST Editor</strong> in the <a href="../content_view/">Content View</a>.  The <a href="../toolbar_rest/">REST Toolbar</a> is also open on the top of the editor.</p>
+<p>Use the <a href="../dialog_add_web_service/">Add Web Service Dialog</a> to create a new REST definition (<code>.rest</code>) file. The definition file then opens in a <strong>REST Editor</strong> within the <a href="../content_view/">Content View</a>.</p>
+<p>Alternatively, you can double-click an existing <code>.rest</code> file in the <a href="../test_files_dialog/">Test Files View</a> explorer window. The definition file then opens in a <strong>REST Editor</strong> within the <a href="../content_view/">Content View</a>. The <a href="../toolbar_rest/">REST Toolbar</a> also becomes visible at the top of the editor.</p>
 <h2 id="request">Request<a class="headerlink" href="#request" title="Permanent link">&para;</a></h2>
 <p><img alt="REST Editor" src="../img/rest_definition_editor3.png" /></p>
-<p>The request form has several sections that you need to populate:</p>
+<p>The request form has several sections to populate:</p>
 <ul>
-<li><strong>Method</strong> - the type of HTTP request being made (GET, POST, PUT, DELETE, etc.)</li>
-<li><strong>URL</strong> - the URL of the web service request with any parameter tokens included (e.g. {session_id} in our example above)</li>
-<li><strong>Credentials</strong> - Any HTTP Basic Authentication Headers</li>
-<li><strong>Headers</strong> - Any other HTTP headers (both standard and custom)</li>
-<li><strong>Parameters</strong> - Any parameters that have been defined in the URL that will be called from the Rapise test script.</li>
+<li><strong>Method</strong> - The type of HTTP request (GET, POST, PUT, DELETE, etc.).</li>
+<li><strong>URL</strong> - The URL of the web service request, with any included parameter tokens (e.g., {session_id} in the example above).</li>
+<li><strong>Credentials</strong> - Any HTTP Basic Authentication headers.</li>
+<li><strong>Headers</strong> - Any other HTTP headers (both standard and custom).</li>
+<li><strong>Parameters</strong> - Any parameters defined in the URL that are called from the Rapise test script.</li>
 <li><strong>Body</strong> - The body of the request (for POST and PUT requests). This can be in any text-serialized format such as XML or JSON.</li>
 </ul>
 <h2 id="response">Response<a class="headerlink" href="#response" title="Permanent link">&para;</a></h2>
@@ -11434,34 +11458,24 @@
 <p><img alt="rest_definition_editor_json" src="../img/rest_definition_editor6.png" /></p>
 <p>This displays the output from the last web service request. It has several tabs:</p>
 <ul>
-<li><strong>Response Header</strong> - Displays a list of the HTTP response headers (name and value). If the request received a <code>200 OK</code> code back, it's displayed in green, if it receives an error code back, it's displayed in red.</li>
-<li><strong>Response Body</strong></li>
-<li>
-<ul>
+<li><strong>Response Header</strong> - Displays a list of the HTTP response headers (name and value). If the request received a <code>200 OK</code> code, it is displayed in green; if it receives an error code, it is displayed in red.</li>
+<li><strong>Response Body</strong><ul>
 <li><strong>Raw</strong> - Displays the raw text of the HTTP response body received from the server.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li><strong>XML</strong> - If the received body content is identified as XML, this tab displays nicely formatted XML that is easier to read than the raw response body.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li><strong>JSON</strong> - If the received body content is identified as JSON, this tab displays nicely formatted, indented JSON that is easier to read than the raw response body.</li>
+<li><strong>XML</strong> - If the received body content is identified as XML, this tab displays well-formatted XML that is easier to read than the raw response body.</li>
+<li><strong>JSON</strong> - If the received body content is identified as JSON, this tab displays well-formatted, indented JSON that is easier to read than the raw response body.</li>
 </ul>
 </li>
 </ul>
 <h2 id="operation-explorer">Operation Explorer<a class="headerlink" href="#operation-explorer" title="Permanent link">&para;</a></h2>
 <p><img alt="rest_definition_editor_explorer" src="../img/rest_definition_editor7.png" /></p>
-<p>This section lets you add, open, delete and clone REST requests in the definition file.</p>
+<p>This section allows you to add, open, delete, and clone REST requests within the definition file.</p>
 <ul>
 <li>
 <p><code>Add request</code> - Adds a new REST operation to the current <code>.rest</code> definition file.</p>
 <p><img alt="Add Request" src="../img/rest_definition_editor_addrequest.png" /></p>
 </li>
 <li>
-<p><code>Clone request</code> - Makes a copy of the currently selected REST operation and allows you to give the copy a new name.</p>
+<p><code>Clone request</code> - Creates a copy of the currently selected REST operation and allows you to give the copy a new name.</p>
 <p><img alt="Clone Request" src="../img/rest_definition_editor_clonerequest.png" /></p>
 </li>
 <li>
@@ -11471,25 +11485,24 @@
 </ul>
 <h2 id="script-steps">Script Steps<a class="headerlink" href="#script-steps" title="Permanent link">&para;</a></h2>
 <p><img alt="REST Create Script" src="../img/tutorial_web_services_rest32.png" /></p>
-<p>The <strong>REST Script Steps</strong> tab in the bottom view lets you see the list of recorded REST operations and use them to create your <a href="../scripting/">test script</a> in the main test file.</p>
+<p>The <strong>REST Script Steps</strong> tab in the bottom view allows you to view the list of recorded REST operations and use them to create your <a href="../scripting/">test script</a> in the main test file.</p>
 <ul>
 <li>
-<p><code>Create Script</code> - This takes all of the recorded steps and
-automatically creates the matching JavaScript code in your test script.</p>
+<p><code>Create Script</code> - Takes all recorded steps and automatically creates the matching JavaScript code in your test script.</p>
 </li>
 <li>
-<p><code>Remote Step</code> - This removes the recorded step from the script box</p>
+<p><code>Remove Step</code> - Removes the recorded step from the script box.</p>
 </li>
 <li>
-<p><code>Clean</code> - This removes all of the recorded steps from the script box.</p>
+<p><code>Clear</code> - Removes all recorded steps from the script box.</p>
 </li>
 </ul>
 <blockquote>
-<p>Each of the steps displayed in the script box will contain the name of the REST operation along with its HTTP method (GET, POST, PUT, DELETE, etc.). Steps displayed in <strong>bold*</strong> with an asterisk also have a <a href="../checkpoints/">verification point recorded</a>. That means when the script is generated, it will include a <code>Tester.Assert</code> function to verify the results.</p>
+<p>Each step displayed in the script box contains the name of the REST operation and its HTTP method (GET, POST, PUT, DELETE, etc.). Steps displayed in <strong>bold*</strong> and marked with an asterisk also have a <a href="../checkpoints/">verification point</a> recorded. This means that when the script is generated, it includes a <code>Tester.Assert</code> function to verify the results.</p>
 </blockquote>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li>For more info on REST Web Services, see <a href="../rest_web_service/">REST Web Services</a>.</li>
+<li>For more information on REST Web Services, see <a href="../rest_web_service/">REST Web Services</a>.</li>
 <li>For a tutorial on creating a REST web service test, see the <a href="../tutorial_web_services_rest/">Web Services REST Tutorial</a>.</li>
 </ul>
                 

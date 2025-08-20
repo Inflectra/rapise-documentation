@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11166,6 +11178,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11447,60 +11471,60 @@
 <h2 id="web-browser-profile">Web Browser Profile<a class="headerlink" href="#web-browser-profile" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Since Rapise 7.3 it is recommended to use <a href="../selenium_webdriver/">Selenium WebDriver</a> based profiles for all web tests. Web browser profiles are considered outdated and should only be used for legacy tests and backward compatibility.</p>
+<p>Since Rapise 7.3, it is recommended to use <a href="../selenium_webdriver/">Selenium WebDriver</a>-based profiles for all web tests. Web browser profiles are considered outdated and should only be used for legacy tests and backward compatibility.</p>
 </div>
-<p>Use Browser Settings Dialog to configure <code>Web Browser Profiles</code>. A browser profile specifies</p>
+<p>Use the Browser Settings Dialog to configure <code>Web Browser Profiles</code>. A browser profile specifies:</p>
 <ul>
-<li>type of a browser (<strong>IE</strong>, <strong>Chrome</strong>, <strong>Firefox</strong>),</li>
-<li>browser launch parameters</li>
+<li>the type of browser (<strong>IE</strong>, <strong>Chrome</strong>, <strong>Firefox</strong>),</li>
+<li>browser launch parameters,</li>
 <li>and other profile options.</li>
 </ul>
-<p>Rapise uses currently <a href="../cross_browser_testing/">active browser profile</a> to do recording and playback.</p>
+<p>Rapise uses the currently <a href="../cross_browser_testing/">active browser profile</a> for recording and playback.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You may want to create additional browser profiles if you have several different versions of a web browser on the same machine (e.g. Firefox Latest vs. Firefox ESR, or different versions of Chrome portable) or if you want to be able to run a browser with different command-line options (e.g. Chrome normal, Chrome incognito mode, Chrome with specific screen size).</p>
+<p>You may want to create additional browser profiles if you have several different versions of a web browser on the same machine (e.g., Firefox Latest vs. Firefox ESR, or different versions of Chrome portable) or if you want to run a browser with different command-line options (e.g., Chrome normal, Chrome incognito mode, Chrome with a specific screen size).</p>
 </div>
-<p>Browser Settings Dialog box displays the list of native (not using <a href="../selenium_settings_dialog/">Selenium</a>) web browsers that have been configured for use by Rapise and lets you create a new browser profile, modify a profile or make a new profile based on an existing one.</p>
+<p>The Browser Settings Dialog box displays the list of native (not using <a href="../selenium_settings_dialog/">Selenium</a>) web browsers that have been configured for use by Rapise. It also lets you create a new browser profile, modify an existing profile, or create a new profile based on an existing one.</p>
 <p><img alt="browser_settings" src="../img/browser_settings1.png" /></p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>You can open this dialog box using main menu <code>Settings &gt; Browser</code> or by pressing <code>...</code> button in the top right corner of Rapise window.</p>
+<p>You can open this dialog box using the main menu (<code>Settings &gt; Browser</code>) or by pressing the <code>...</code> button in the top-right corner of the Rapise window.</p>
 <p><img alt="browser_settings_button" src="../img/browser_settings2.png" /></p>
 <h2 id="toolbar-controls">Toolbar Controls<a class="headerlink" href="#toolbar-controls" title="Permanent link">&para;</a></h2>
 <p>This dialog box has the following toolbar controls:</p>
 <ul>
-<li><strong>Select Profile</strong> - This dropdown list lets you select a different web browser profile to be displayed in the dialog.</li>
-<li><strong>Test</strong> - This button will test the connection from Rapise to the specified browser</li>
-<li><strong>Duplicate</strong> - This button will create a new browser profile based on the currently viewed one.</li>
-<li><strong>Create</strong> - This button will create a new empty browser profile that you can edit.</li>
-<li><strong>Rename</strong> - This button will change the name of the current browser profile being edited.</li>
-<li><strong>Delete</strong> - This button will delete the currently displayed browser profile. There is no undo, so be careful!</li>
+<li><strong>Select Profile</strong> - This dropdown list allows you to select a different web browser profile to be displayed in the dialog.</li>
+<li><strong>Test</strong> - This button tests the connection from Rapise to the specified browser.</li>
+<li><strong>Duplicate</strong> - This button creates a new browser profile based on the currently viewed one.</li>
+<li><strong>Create</strong> - This button creates a new, empty browser profile that you can edit.</li>
+<li><strong>Rename</strong> - This button changes the name of the current browser profile being edited.</li>
+<li><strong>Delete</strong> - This button deletes the currently displayed browser profile. There is no undo, so exercise caution!</li>
 </ul>
 <h2 id="profile-options">Profile Options<a class="headerlink" href="#profile-options" title="Permanent link">&para;</a></h2>
-<p>This section has various settings, each of which are described below:</p>
+<p>This section has various settings, each of which is described below:</p>
 <ul>
-<li><strong>Browser Library</strong> - The type of browser being used, currently can be:<ul>
+<li><strong>Browser Library</strong> - The type of browser being used. Currently, this can be:<ul>
 <li>Internet Explorer HTML</li>
 <li>Chrome HTML</li>
 <li>Firefox HTML</li>
 </ul>
 </li>
-<li><strong>Browser Path</strong> - The path to the location of the web browser executable (e.g. chrome.exe, iexplore.exe, firefox.exe) on the computer</li>
-<li><strong>CMD Line Parameters</strong> - Any command-line parameters to pass to the web browser (e.g. -extoff for IE safe mode)</li>
-<li><strong>Default Click Mode</strong> -Species the default 'click mode' for tests using this web browser profile<ul>
-<li>auto - This tries to locate an element on the screen, moves the mouse over it and then sends the appropriate DOM 'click' event (the default)</li>
-<li>event - Just sends the DOM click event to the element with no prior mouse-move</li>
-<li>click - Simulates an actual click on the element rather than sending a DOM click event</li>
+<li><strong>Browser Path</strong> - The path to the web browser executable (e.g., <code>chrome.exe</code>, <code>iexplore.exe</code>, <code>firefox.exe</code>) on the computer.</li>
+<li><strong>CMD Line Parameters</strong> - Any command-line parameters to pass to the web browser (e.g., <code>-extoff</code> for IE safe mode).</li>
+<li><strong>Default Click Mode</strong> - Specifies the default 'click mode' for tests using this web browser profile.<ul>
+<li>auto - Tries to locate an element on the screen, moves the mouse over it, and then sends the appropriate DOM 'click' event (the default).</li>
+<li>event - Sends the DOM click event to the element with no prior mouse movement.</li>
+<li>click - Simulates an actual click on the element rather than sending a DOM click event.</li>
 </ul>
 </li>
 </ul>
 <h2 id="local-browser-profiles">Local Browser Profiles<a class="headerlink" href="#local-browser-profiles" title="Permanent link">&para;</a></h2>
-<p>Rapise version 6.3+ enables creation of profiles local to a test. It allows storing profiles together with tests (inside SpiraTest or Git repository) and eliminates the need to configure profiles manually on each execution host.</p>
-<p>To create a local profile just press Duplicate for one of global profiles and set Local checkbox before clicking OK button. Global and Local profile may have same name, in this case Local profile is used for execution.</p>
+<p>Rapise version 6.3+ enables the creation of profiles local to a test. It allows storing profiles together with tests (inside a SpiraTest or Git repository) and eliminates the need to configure profiles manually on each execution host.</p>
+<p>To create a local profile, simply click <code>Duplicate</code> for one of the global profiles and select the <code>Local</code> checkbox before clicking <code>OK</code>. Global and local profiles may have the same name; in this case, the local profile is used for execution.</p>
 <p><img alt="Creating Local Browser Profile" src="../img/create_local_profile.png" /></p>
-<p>If a test contains local browser profiles they can be seen in the dropdowns.</p>
+<p>If a test contains local browser profiles, they can be seen in the dropdowns.</p>
 <p><img alt="Profile List for Playback" src="../img/select_local_profile.png" /></p>
 <p><img alt="Profile List for Configuration" src="../img/profile_list_local_global.png" /></p>
-<p>Local profiles are stored inside <code>&lt;Test Root&gt;\Profiles\BrowserProfiles</code> and <code>&lt;Test Root&gt;\Profiles\SeleniumProfiles</code> folders.</p>
+<p>Local profiles are stored inside the <code>&lt;Test Root&gt;\Profiles\BrowserProfiles</code> and <code>&lt;Test Root&gt;\Profiles\SeleniumProfiles</code> folders.</p>
                 
               
               

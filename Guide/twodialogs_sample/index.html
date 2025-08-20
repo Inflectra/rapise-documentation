@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1212,6 +1212,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11130,6 +11142,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11436,111 +11460,111 @@
                 
                 
                 <h1 id="tutorial-windows-testing-rvl">Tutorial: Windows Testing (RVL)<a class="headerlink" href="#tutorial-windows-testing-rvl" title="Permanent link">&para;</a></h1>
-<p>This section outlines the usage of Rapise for testing a simple Windows Desktop <a href="../glossary/">Application Under Test (AUT)</a>. This version of the tutorial uses the <strong>Rapise Visual Language (RVL) scriptless</strong> mode. If you're interested in the <a href="../tutorial_windows_using_javascript/">JavaScript version</a>, we have a separate tutorial.</p>
-<p>Please run the application now. You will find it in the samples directory where you installed Rapise. By default, that will be</p>
+<p>This section outlines how to use Rapise for testing a simple Windows Desktop <a href="../glossary/">Application Under Test (AUT)</a>. This version of the tutorial uses the <strong>Rapise Visual Language (RVL) scriptless</strong> mode. If you're interested in the <a href="../tutorial_windows_using_javascript/">JavaScript version</a>, we have a separate tutorial.</p>
+<p>Please run the application. You will find it in the samples directory where you installed Rapise. By default, it is typically located at:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe
 </code></pre></div></td></tr></table></div>
 
 <p>You will see the following:</p>
 <p><img alt="twodialogsempty" src="../img/twodialogs_sample1.png" /></p>
-<p>Please run the application a few times and observe its behaviour.  </p>
+<p>Please run the application a few times and observe its behavior.</p>
 <ul>
-<li>If you press the <code>OK</code> button with the first edit box empty, the application will complain and return you to the dialog box.</li>
-<li>If you put text in the first edit box but not the second, you will be shown a single line of text in a read-only edit box.</li>
-<li>If you enter text in the second edit box as well as the first, pressing OK will put two lines of summary information in the read-only edit box.</li>
+<li>If you click the <code>OK</code> button with the first edit box empty, the application will display an error and return to the dialog box.</li>
+<li>If you enter text in the first edit box but not the second, you will be shown a single line of text in a read-only edit box.</li>
+<li>If you enter text in the second edit box as well as the first, clicking OK will display two lines of summary information in the read-only edit box.</li>
 </ul>
-<p>An adequate testing strategy for this over-simple application might be to:</p>
+<p>An adequate testing strategy for this very simple application could include:</p>
 <ol>
-<li>Put data in the first text box but not the second, and verify that the summary information is correct.</li>
-<li>Press the OK button with no data in either text box, and verify that a message box is displayed.</li>
-<li>Verify that if the success "Thank You" message is displayed the edit box input fields are cleared (but not the summary information).</li>
+<li>Enter data into the first text box but not the second, and verify that the summary information is correct.</li>
+<li>Click the OK button with no data in either text box, and verify that a message box is displayed.</li>
+<li>Verify that the edit box input fields are cleared if the success "Thank You" message is displayed (while the summary information remains unchanged).</li>
 </ol>
-<p>If at this point you do not understand what the application is supposed to do, or the application is not behaving as described here, please contact Support and clarify the details before proceeding.</p>
+<p>If at this point you do not understand what the application is supposed to do, or the application is not behaving as described here, please contact Support and clarify the situation before proceeding.</p>
 <p>Now, let's use Rapise to implement the first of these tests.</p>
 <h2 id="step-1-run-the-application">Step 1. Run the Application<a class="headerlink" href="#step-1-run-the-application" title="Permanent link">&para;</a></h2>
-<p>Run the TwoDialogs application and leave it in its default start state. Once you execute the TwoDialogs.exe application it will be displayed on the screen:</p>
+<p>Run the TwoDialogs application and leave it in its default state. Once executed, the TwoDialogs.exe application will be displayed on the screen:</p>
 <p><img alt="twodialogsrecording" src="../img/twodialogs_sample2.png" /></p>
 <h2 id="step-2-start-rapise">Step 2. Start Rapise<a class="headerlink" href="#step-2-start-rapise" title="Permanent link">&para;</a></h2>
-<p>Start Rapise and make the window a conveniently large size.  Click on the <code>File</code> menu (top left).  Choose the first option there, "New Test."</p>
+<p>Start Rapise and resize the window to a convenient size. Click the <code>File</code> menu (top left). Choose the first option, "New Test."</p>
 <p><img alt="createnewseleted" src="../img/twodialogs_sample4.png" /></p>
 <h2 id="step-3-create-new-test">Step 3. Create New Test<a class="headerlink" href="#step-3-create-new-test" title="Permanent link">&para;</a></h2>
-<p>Navigate to the desired path using the <code>...</code> button on the <strong>Create New Test</strong> dialog. Enter the name of the new test script we're going to write (e.g. "TwoDialogsTest"). Click on the <strong>Basic: Windows Desktop Application</strong> methodology. This should always be used for testing Windows desktop applications:</p>
+<p>Navigate to the desired path using the <code>...</code> button on the <strong>Create New Test</strong> dialog. Enter a name for the new test script (e.g., "TwoDialogsTest"). Select the <strong>Basic: Windows Desktop Application</strong> methodology. This methodology should always be used for testing Windows desktop applications:</p>
 <p><img alt="createnewdialog" src="../img/twodialogs_sample5.png" /></p>
 <p>The following dialog will be displayed:</p>
 <p><img alt="clip0105" src="../img/scripting_language_rvl.png" /></p>
-<p>Click on the <strong>RVL (Rapise Visual Language)</strong> button.  You will now see the following:</p>
+<p>Click the <strong>RVL (Rapise Visual Language)</strong> button. You will now see the following:</p>
 <p><img alt="rapise new test rvl" src="../img/twodialogs_sample7.png" /></p>
 <h2 id="step-4-start-recording">Step 4. Start Recording<a class="headerlink" href="#step-4-start-recording" title="Permanent link">&para;</a></h2>
-<p>Press the "<strong>Record</strong>" button on the toolbar.  It has an icon like this:</p>
+<p>Click the "<strong>Record</strong>" button on the toolbar. It has an icon like this:</p>
 <p><img alt="recordlearnbutton" src="../img/twodialogs_sample8.png" /></p>
 <p>You will see an application selection dialog like the following.</p>
 <p><img alt="selectapptwodialogs" src="../img/twodialogs_sample9.png" /></p>
 <ul>
 <li>Select the "Inflectra Rapise Two Dialogs Sample" entry.</li>
 <li>Leave the library selection as "Auto."</li>
-<li>Press the "Select" button at the bottom right.</li>
+<li>Click the "Select" button at the bottom right.</li>
 </ul>
 <h2 id="step-5-recording-guidelines">Step 5. Recording Guidelines<a class="headerlink" href="#step-5-recording-guidelines" title="Permanent link">&para;</a></h2>
-<p>Rapise will pause while it starts the necessary background processes and hooks into the running AUT. Once those tasks are complete, you will see the following "Recording Activity" for "Inflectra Rapise Two Dialogs Sample" dialog:</p>
+<p>Rapise will pause while it starts the necessary background processes and connects to the running AUT. Once those tasks are complete, you will see the "Recording Activity" dialog for "Inflectra Rapise Two Dialogs Sample":</p>
 <p><img alt="recordingactivityemptytwodialogs" src="../img/twodialogs_sample10.png" /></p>
 <p>The AUT will be brought to the foreground and Rapise will be minimized.</p>
 <p>You will achieve best results in recording if you observe the following guidelines:</p>
 <ol>
-<li>Work slowly while recording.  Perform one action and wait for the results to be recorded in the Recording Activity dialog as a new grid line-item before going to the next item.</li>
-<li>Use the mouse to select controls and operate them.  Avoid using keyboard shortcuts and keyboard commands.</li>
+<li>Work slowly while recording. Perform one action and wait for the results to be recorded in the Recording Activity dialog as a new line item before going to the next item.</li>
+<li>Use the mouse to select controls and operate them. Avoid using keyboard shortcuts and keyboard commands.</li>
 </ol>
 <h2 id="step-6-record-the-activity-in-the-application">Step 6. Record the Activity in the Application<a class="headerlink" href="#step-6-record-the-activity-in-the-application" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Click in the first edit box in the TwoDialogs application.</li>
-<li>Type a name in this first edit box.</li>
-<li>Place mouse over the Summary field with 'Thank you' text and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-1">1</kbd></span></li>
+<li>Click the first edit box in the TwoDialogs application.</li>
+<li>Enter a name in this first edit box.</li>
+<li>Hover the mouse over the Summary field and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-1">1</kbd></span></li>
 </ul>
-<p>Rapise will open <a href="../verify_object_properties/">Verify Object Properties</a> dialog.</p>
+<p>Rapise will open the <a href="../verify_object_properties/">Verify Object Properties</a> dialog.</p>
 <p><img alt="object properties" src="../img/twodialogs_verify.png" /></p>
-<p>Set checkbox on <code>Value</code> property and click <code>OK</code> button.</p>
-<p>Watch the Recording activity dialog as you operate the AUT interface. As you press a button or fill a field, notice that the grid in the Recording activity has entries added to it.</p>
+<p>Select the checkbox for the <code>Value</code> property and click the <code>OK</code> button.</p>
+<p>Watch the Recording Activity dialog as you operate the AUT interface. As you click a button or fill a field, notice that new entries are added to the grid in the Recording Activity dialog.</p>
 <p><img alt="twodialogsrecording" src="../img/twodialogs_sample2.png" /></p>
 <p>As you take these actions, you will see the Recording Activity grid update accordingly:</p>
 <p><img alt="recordingactivitygridtwodialogs2" src="../img/twodialogs_sample11.png" /></p>
-<p>For a full explanation of the controls on this dialog, refer to the reference for <a href="../recording_activity_dialog/">Recording Activity Dialog</a>.</p>
-<p>When you have finished recording the activity for the AUT, press the <code>Finish</code> button or <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-3">3</kbd></span>.</p>
+<p>For a full explanation of the controls on this dialog, refer to the <a href="../recording_activity_dialog/">Recording Activity Dialog</a> documentation.</p>
+<p>When you have finished recording your activity in the AUT, click the <code>Finish</code> button or press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-3">3</kbd></span>.</p>
 <p><strong>Note</strong>: Do not terminate the TwoDialogs application.</p>
 <p>When you do this, the <strong>Recording Activity</strong> dialog will be closed and the AUT will lose focus.</p>
 <p>Rapise will now ask you to confirm that you want to add the recorded steps to the current location in the test grid:</p>
 <p><img alt="append to end" src="../img/twodialogs_sample12.png" /></p>
-<p>Click <code>Append to End</code>, then Rapise will change the view to display the newly recorded test steps.  It will look something like the following:</p>
+<p>Click <code>Append to End</code>, and Rapise will then display the newly recorded test steps. It will look something like the following:</p>
 <p><img alt="steps in RVL" src="../img/twodialogs_sample13.png" /></p>
-<p>Notice that the two steps of the test are automatically documented as Action commands in the test grid, and that they correspond precisely and in the same order as the way they appeared in the Recording Activity dialog during recording. In addition, the Verify checkpoint has been recorded as an Assert…Condition set of steps in the grid.</p>
+<p>Notice that the two steps of the test are automatically documented as Action commands in the test grid. They correspond precisely and in the same order as they appeared in the Recording Activity dialog during recording. In addition, the Verify checkpoint has been recorded as an Assert…Condition set of steps in the grid.</p>
 <h2 id="step-7-execute-the-test">Step 7: Execute The Test<a class="headerlink" href="#step-7-execute-the-test" title="Permanent link">&para;</a></h2>
-<p>Press the "Play" button on the ribbon or the toolbar.</p>
+<p>Click the "Play" button on the ribbon or the toolbar.</p>
 <p><img alt="play icon" src="../img/twodialogs_sample14.png" /></p>
-<p>As the script runs, the Rapise window will be minimized to the taskbar and you will see the results of the script's activities on the TwoDialogs application window.</p>
-<p>At the end of the script execution, the Rapise window will be restored and the view will be of the report for the test:</p>
+<p>As the script runs, the Rapise window will be minimized to the taskbar and you will see the results of the script's activities in the TwoDialogs application window.</p>
+<p>At the end of the script execution, the Rapise window will be restored and the test report will be displayed:</p>
 <p><img alt="runreporttwodialogs" src="../img/twodialogs_sample15.png" /></p>
 <h2 id="step-8-a-refinement-on-the-launching-of-twodialogsexe">Step 8: A Refinement on the Launching of TwoDialogs.exe.<a class="headerlink" href="#step-8-a-refinement-on-the-launching-of-twodialogsexe" title="Permanent link">&para;</a></h2>
-<p>To date, we have operated on the assumption that the TwoDialogs sample program (application) is running.  If this situation remained, the test script would require that the AUT be running before the script started.  That would require that the person running the test remembered where it resided.  To overcome this, Rapise provides a way to have the script run the program (AUT) before beginning the test.</p>
-<p>Rapise comes with a series of useful Global utility objects that can do things such as start applications, kill processes, access the file system, etc. To launch the TwoDialogs application at the start of the test, go to the first row in the test grid and click <code>Insert Row Before</code> icon on the toolbar:</p>
+<p>To date, we have assumed that the TwoDialogs sample program (application) is running. If this were the case, the test script would require the AUT to be running before the script started. This would mean that the person running the test would need to remember its location. To overcome this, Rapise provides a way for the script to launch the program (AUT) before beginning the test.</p>
+<p>Rapise comes with a series of useful Global utility objects that can perform actions such as start applications, kill processes, and access the file system. To launch the TwoDialogs application at the start of the test, go to the first row in the test grid and click the <code>Insert Row Before</code> icon on the toolbar:</p>
 <p><img alt="insert row" src="../img/twodialogs_sample16.png" /></p>
-<p>Now in the new row that was created, choose <strong>Action</strong> as the <strong>Type</strong> column:</p>
+<p>In the newly created row, choose <strong>Action</strong> in the <strong>Type</strong> column:</p>
 <p><img alt="choose action" src="../img/twodialogs_sample17.png" /></p>
-<p>Then in the next cell, choose <strong>Global</strong> as the object:</p>
+<p>Then in the next cell, choose <strong>Global</strong> in the <strong>Object</strong> column:</p>
 <p><img alt="choose global object" src="../img/twodialogs_sample18.png" /></p>
-<p>Then in the next cell, choose <strong>DoLaunch</strong> and press <code>ENTER</code> on the keyboard:</p>
+<p>Then in the next cell, choose <strong>DoLaunch</strong> and press <code>ENTER</code>.</p>
 <p><img alt="choose DoLaunch" src="../img/twodialogs_sample19.png" /></p>
-<p>Now you just need to enter in the location of the TwoDialogs application in the final cell (ParamValue):</p>
+<p>Now you just need to enter the location of the TwoDialogs application into the final cell, <code>ParamValue</code>:</p>
 <div class="highlight"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\TwoDialogs\TwoDialogs.exe
 </code></pre></div>
 <p><img alt="cmdLine" src="../img/twodialogs_sample20.png" /></p>
 <p>Now if you click <strong>Play</strong>, Rapise will launch the application and then complete the recorded test steps.</p>
 <h2 id="advanced-testing-using-the-object-spy">Advanced Testing using the Object Spy<a class="headerlink" href="#advanced-testing-using-the-object-spy" title="Permanent link">&para;</a></h2>
-<p>Sometimes you need to learn objects that are not visible or are obscured by other objects. To help with this, Rapise has the Object Spy tool. The Spy tool lets you see the objects in the application in a hierarchy that you can learn.</p>
-<p>When you are in the middle of recording, click on the <strong>Spy</strong> button and Rapise will display the <a href="../object_spy_uiautomation/">UIAutomation Spy</a>:</p>
+<p>Sometimes you need to learn objects that are not visible or obscured by other objects. To help with this, Rapise includes the Object Spy tool. The Spy tool lets you view the objects in the application within a learnable hierarchy.</p>
+<p>When you are in the middle of recording, click the <strong>Spy</strong> button and Rapise will display the <a href="../object_spy_uiautomation/">UIAutomation Spy</a>:</p>
 <p><img alt="twodialogs_spy1" src="../img/twodialogs_sample21.png" /></p>
-<p>Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> on the keyboard to start tracking. Hover the mouse over one of the text boxes in the TwoDialogs application and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> again to stop tracking:</p>
+<p>Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> to start tracking. Hover the mouse over one of the text boxes in the TwoDialogs application and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> again to stop tracking:</p>
 <p><img alt="twodialogs_spy2" src="../img/twodialogs_sample22.png" /></p>
-<p>This shows you the object you selected, together with its various Windows attributes. If you want to see its place in the hierarchy of the application, right click on <strong>Edit</strong> in the top-left pane and choose <strong>Parent</strong>. That will display its parent objects:</p>
+<p>This displays the object you selected, along with its various Windows attributes. If you want to understand its position in the application's hierarchy, right-click <strong>Edit</strong> in the top-left pane and choose <strong>Parent</strong>. This will display its parent objects:</p>
 <p><img alt="twodialogs_spy3" src="../img/twodialogs_sample23.png" /></p>
-<p>For example in this view you can see all text boxes, the labels and some of the Windows standard objects (the Window title bar, OK and Cancel buttons, etc.). Each of these can be expanded to show their children, and any of the objects can be Learned by clicking the <strong>Learn Object</strong> button in the top of the Spy. Once learned, you can use one of the options described above to write a test using it.</p>
+<p>For example, in this view you can see all text boxes, the labels, and some of the standard Windows objects (the Window title bar, OK and Cancel buttons, etc.). Each of these can be expanded to show its children, and any of the objects can be Learned by clicking the <strong>Learn Object</strong> button at the top of the Spy. Once learned, you can use one of the options described above to write a test using them.</p>
                 
               
               

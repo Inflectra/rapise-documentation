@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11102,6 +11114,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11388,21 +11412,21 @@
 <p><strong>PushReportAttribute</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">PushReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="p">);</span>
 
-<span class="c1">// ...some test steps...       //the rows corresponding to these steps will have</span>
-<span class="w">                               </span><span class="c1">//value in their columnName column</span>
+<span class="c1">// ...some test steps...       // The rows corresponding to these steps will have</span>
+<span class="w">                               </span><span class="c1">// value in their columnName column.</span>
 
 <span class="nx">Tester</span><span class="p">.</span><span class="nx">PushReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span><span class="p">);</span>
 
-<span class="c1">// ...some test steps...       //the rows corresponding to these steps will have</span>
-<span class="w">                               </span><span class="c1">//value2 in their columnName column</span>
+<span class="c1">// ...some test steps...       // The rows corresponding to these steps will have</span>
+<span class="w">                               </span><span class="c1">// value2 in their columnName column.</span>
 
-<span class="nx">Tester</span><span class="p">.</span><span class="nx">PopReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">//test steps proceeding this will be back to value</span>
+<span class="nx">Tester</span><span class="p">.</span><span class="nx">PopReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Subsequent test steps will revert to the previous value for this column.</span>
 </code></pre></div>
-<p>If columnName does not exist, it will be added to the report.</p>
+<p>If <code>columnName</code> does not exist, it will be added to the report.</p>
 <p><strong>SetReportAttribute</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SetReportAttribute</span><span class="p">(</span><span class="s2">&quot;columnName&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>If <code>columnName</code> does not exist, it will be added to the report.  Column <code>columnName</code> will be populated with <code>value</code> for rows created after this function call (unless specified otherwise).</p>
+<p>If <code>columnName</code> does not exist, it will be added to the report. For rows created after this function call, <code>columnName</code> will be populated with <code>value</code> (unless specified otherwise).</p>
 <h2 id="adding-data">Adding Data<a class="headerlink" href="#adding-data" title="Permanent link">&para;</a></h2>
 <p>Data must be associated with an <strong>Assert</strong> row or a <strong>Message</strong> row.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;expression&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;columnValuePairs&quot;</span><span class="p">);</span>
@@ -11411,10 +11435,10 @@
 <ul>
 <li><strong>description</strong> is a string.</li>
 <li><strong>expression</strong> is the boolean expression that the assertion tests.</li>
-<li><strong>data</strong> is an array of data objects.  Each data element is written to its own row below the assert/message row with which it is associated.  Data can be text, a link, or an image.  The following is an array with text, link, and image data.</li>
-<li><strong>columnValuePairs</strong> is an object with key/value pairs.  Column names are the keys.  If the specified column does not exist, it will be created. Example: <code>{requirement: "Req1.2.3", paragraph: "12.5"}</code></li>
+<li><strong>data</strong> is an array of data objects. Each data element is written to its own row, appearing below the associated assert/message row. Data can be text, a link, or an image. The following is an example of an array containing text, link, and image data.</li>
+<li><strong>columnValuePairs</strong> is an object with key/value pairs. Column names serve as the keys. If the specified column does not exist, it will be created. Example: <code>{requirement: "Req1.2.3", paragraph: "12.5"}</code></li>
 </ul>
-<p>Example of <strong>data</strong> array:</p>
+<p>Example <strong>data</strong> array:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span>
 <span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">SeSReportText</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">),</span>
 <span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">SeSReportLink</span><span class="p">(</span><span class="s2">&quot;urlString&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;linkText&quot;</span><span class="p">),</span>
@@ -11424,7 +11448,7 @@
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../automated_reporting/">Automated Reporting</a></li>
-<li>The <a href="../sample_tests/">test samples</a> include a sample about reporting (Reporting.sstest)</li>
+<li>The <a href="../sample_tests/">test samples</a> include a reporting sample (Reporting.sstest).</li>
 </ul>
                 
               

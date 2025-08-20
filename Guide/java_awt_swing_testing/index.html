@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11147,6 +11159,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11473,19 +11497,19 @@
                 
                 <h1 id="java-awtswing-testing">Java AWT/Swing Testing<a class="headerlink" href="#java-awtswing-testing" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Rapise supports the testing of Java applications using either the Abstract Window Toolkit (AWT) or Swing graphic user interface toolkits. For maximum flexibility, Rapise can connect to your choice of JVM.</p>
+<p>Rapise supports the testing of Java applications using either the Abstract Window Toolkit (AWT) or Swing graphical user interface toolkits. For maximum flexibility, Rapise can connect to a JVM of your choice.</p>
 <h2 id="supported-java-versions">Supported Java Versions<a class="headerlink" href="#supported-java-versions" title="Permanent link">&para;</a></h2>
 <p>The Rapise Java Bridge is currently compatible with any version of the JRE, from Java 3 to Java 18.</p>
-<p>For Java 9 and above, Rapise Java Bridge works in Windows Enterprise and non-Enterprise editions if the application is running with Java JDK. For applications running with Java JRE, Rapise Java Bridge works only in Windows editions other than Enterprise.</p>
+<p>For Java 9 and above, the Rapise Java Bridge works in both Windows Enterprise and non-Enterprise editions when the application runs with a Java JDK. For applications running with a Java JRE, it works only in Windows editions other than Enterprise.</p>
 <h2 id="java-bridge-installation">Java Bridge Installation<a class="headerlink" href="#java-bridge-installation" title="Permanent link">&para;</a></h2>
-<p>The most flexible way to run a Java application with automation is to modify the command line. This can be done with a <code>.bat</code> file containing the necessary changes to the command line or to the environment variables.</p>
-<p>For versions of Java 8 or less it is also possible to automatically install Rapise Java Bridge as an extension. Installing the extension affects all applications launched by this Java instance.</p>
+<p>The most flexible way to run a Java application with automation enabled is to modify the command line. This can be done using a <code>.bat</code> file that contains the necessary changes to the command line or environment variables.</p>
+<p>For Java versions 8 or earlier, it is also possible to automatically install the Rapise Java Bridge as an extension. Installing this extension affects all applications launched by this Java instance.</p>
 <h3 id="manual-installation-all-java-versions">Manual Installation (all Java versions)<a class="headerlink" href="#manual-installation-all-java-versions" title="Permanent link">&para;</a></h3>
 <h4 id="changing-the-command-line">Changing the Command Line<a class="headerlink" href="#changing-the-command-line" title="Permanent link">&para;</a></h4>
-<p>If you application is executed explicitly, i.e.:</p>
+<p>If your application is executed explicitly, for example:</p>
 <div class="highlight"><pre><span></span><code>java -cp . org.sample.MyButton
 </code></pre></div>
-<p>Then what you need is to add the following values:</p>
+<p>Then you need to add the following values:</p>
 <div class="highlight"><pre><span></span><code>set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
 set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
 set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
@@ -11493,10 +11517,10 @@ set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartes
 
 java.exe &quot;%EXT_OPTS%&quot; -cp &quot;%EXT_JARS%&quot;;. org.sample.MyButton
 </code></pre></div>
-<p>If your application is executed using the JAR file, i.e.:</p>
+<p>If your application is executed using a JAR file, for example:</p>
 <div class="highlight"><pre><span></span><code>java -jar applet.jar
 </code></pre></div>
-<p>Then you need to figure out <code>applet.jar</code>'s main class and pass it explicitly to the application while the JAR should be a part of the classpath i.e.:</p>
+<p>Then you need to determine <code>applet.jar</code>'s main class and pass it explicitly to the application, ensuring the JAR is part of the classpath, for example:</p>
 <div class="highlight"><pre><span></span><code>set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
 set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
 set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
@@ -11504,28 +11528,28 @@ set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartes
 
 java.exe &quot;%EXT_OPTS%&quot; -cp &quot;%EXT_JARS%&quot;;applet.jar com.smartesoft.java.aut.AwtFrame
 </code></pre></div>
-<p>Note, that we removed the <code>-jar</code> switch and added <code>applet.jar</code> to the <code>-cp</code> input key.</p>
-<p>If have a <code>.jar</code> file and need to figure out main class then you may run <code>cmd.exe</code> in a folder with <code>.jar</code> and use a command like that (just replace <code>applet.jar</code> appropriately):</p>
+<p>Note that we removed the <code>-jar</code> switch and added <code>applet.jar</code> to the <code>-cp</code> input key.</p>
+<p>If you have a <code>.jar</code> file and need to determine its main class, you can run <code>cmd.exe</code> in the folder containing the <code>.jar</code> and use a command like this (just replace <code>applet.jar</code> appropriately):</p>
 <div class="highlight"><pre><span></span><code>jar xf applet.jar META-INF/MANIFEST.MF &amp; type .\META-INF\MANIFEST.MF &amp; del /s/f/q META-INF &amp; rmdir META-INF
 </code></pre></div>
-<p>The output should contain Main-class (marked as yellow):</p>
+<p>The output should contain 'Main-class' (marked in yellow):</p>
 <p><img alt="java_awt_swing_testing_jarcmd.png" src="../img/java_awt_swing_testing_jarcmd.png" /></p>
-<p>so you may copy it and use in the modified application launcher. </p>
+<p>so you can copy it and use it in the modified application launcher.</p>
 <blockquote>
-<p><strong>Note:</strong> Sample <a href="../sample_tests/#java">Java</a> shipped with Rapise contains <code>x86run.cmd</code> that is launching the <code>applet.jar</code> with Rapise Java Bridge enabled. You may use it as a reference.</p>
+<p><strong>Note:</strong> The sample <a href="../sample_tests/#java">Java</a> shipped with Rapise contains <code>x86run.cmd</code>, which launches <code>applet.jar</code> with the Rapise Java Bridge enabled. You can use it as a reference.</p>
 </blockquote>
 <h3 id="automatic-installation-java-3-8">Automatic Installation (Java 3-8)<a class="headerlink" href="#automatic-installation-java-3-8" title="Permanent link">&para;</a></h3>
-<p>In order to use a particular Java Virtual Machine (JVM) with Rapise you need to install Java Bridge into it. Installation process consists of several simple steps:</p>
+<p>To use a particular Java Virtual Machine (JVM) with Rapise, you need to install the Java Bridge into it. The installation process consists of several simple steps:</p>
 <ol>
 <li>
-<p>Click on the <code>Settings &gt; Java</code> button. This will launch the Java Bridge installation dialog:</p>
+<p>Click the <code>Settings &gt; Java</code> button. This will launch the Java Bridge Installation dialog:</p>
 <p><img alt="options_dialog_install_java_bridge" src="../img/java_awt_swing_testing1.png" /></p>
 </li>
 <li>
-<p>Choose target JVM in the list of available Java machines and press Install button</p>
+<p>Choose the target JVM from the list of available Java machines and then press the 'Install' button.</p>
 </li>
 <li>
-<p>Verify that the installation is successful</p>
+<p>Verify that the installation was successful.</p>
 </li>
 </ol>
 <p>To verify that the bridge installed correctly, check that the following files have been installed inside your Java VM (typically found at <code>C:\Program Files (x86)\Java\jre1.x.x_xxx</code>):</p>
@@ -11535,48 +11559,48 @@ java.exe &quot;%EXT_OPTS%&quot; -cp &quot;%EXT_JARS%&quot;;applet.jar com.smarte
 <li><code>lib\ext\smartestudio-bridge.jar</code></li>
 <li><code>lib\ext\json.jar</code></li>
 </ul>
-<p>If you don't see <strong>all three of these files</strong> then it means the bridge was not installed correctly.</p>
+<p>If you don't see <strong>all three of these files</strong>, it means the bridge was not installed correctly.</p>
 <h2 id="troubleshooting-the-configuration">Troubleshooting the Configuration<a class="headerlink" href="#troubleshooting-the-configuration" title="Permanent link">&para;</a></h2>
 <!-- /* cSpell:disable */ -->
-<p>To help you make sure that your environment is correctly setup and also to help you try out Rapise, we have a sample application called AUTJava (AUT = <b>A</b>pplication <b>U</b>nder <b>T</b>est) that can be found in the folder:</p>
+<p>To help ensure your environment is set up correctly and to assist with trying out Rapise, we provide a sample application called AUTJava (AUT = <b>A</b>pplication <b>U</b>nder <b>T</b>est), which can be found in the folder:</p>
 <!-- /* cSpell:enable */ -->
 
 <p><code>C:\Users\Public\Documents\Rapise\Samples\Java\AUTJAVA</code></p>
 <p>To run the application, right-click on the x86run.cmd file and choose <strong>Run as Administrator</strong>.</p>
 <p><img alt="AUTJava" src="../img/autjava.png" /></p>
-<p>If the application doesn't appear correctly then you may need to set the <code>JAVA_HOME</code> environment variable.</p>
-<p>To do this, open up the Windows control panel and choose <code>System &gt; Advanced System Settings</code>:</p>
+<p>If the application doesn't appear correctly, you may need to set the <code>JAVA_HOME</code> environment variable.</p>
+<p>To do this, open the Windows Control Panel and choose <code>System &gt; Advanced System Settings</code>:</p>
 <p><img alt="EnvVariables" src="../img/java_awt_swing_testing3.png" /></p>
-<p>Click on the <strong>Environment Variables</strong> button:</p>
+<p>Click the <strong>Environment Variables</strong> button:</p>
 <p><img alt="EnvVariables 2" src="../img/java_awt_swing_testing4.png" /></p>
-<p>Click on the option to add a <strong>System Variable</strong> and then add the following:</p>
+<p>Click the option to add a <strong>System Variable</strong>, and then add the following:</p>
 <ul>
-<li>Variable = JAVA_HOME</li>
-<li>Value = C:\Program Files (x86)\Java\jre1.x.x_xxx</li>
+<li>Variable: <code>JAVA_HOME</code></li>
+<li>Value: <code>C:\Program Files (x86)\Java\jre1.x.x_xxx</code></li>
 </ul>
-<p><em>(you will need to match the location of your actual Java VM)</em></p>
+<p><em>(You will need to match the location of your actual Java VM.)</em></p>
 <p>Now you should be able to launch the AUTJava sample application.
 <img alt="AUTJava" src="../img/autjava.png" /></p>
-<p>To verify that Rapise is configured correctly, click on the SPY menu in Rapise and choose <strong>Java</strong>.</p>
-<p>Then click on the main <strong>Spy</strong> icon and the Java Spy will start up:
+<p>To verify that Rapise is configured correctly, click the <strong>Spy</strong> menu in Rapise and choose <strong>Java</strong>.</p>
+<p>Then click the main <strong>Spy</strong> icon, and the Java Spy will start:
 <img alt="Spy1" src="../img/java_awt_swing_testing5.png" /></p>
-<p>Click the <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> button combination to start tracking and then move the mouse over one of the buttons in the sample application and click <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> again.
+<p>Click the <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> button combination to start tracking. Then, move the mouse over one of the buttons in the sample application and click <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> again.
 You should see the following:</p>
 <p><img alt="Spy2-Good" src="../img/java_awt_swing_testing6.png" /></p>
-<p>Which shows that Rapise is able to see the AWT button (in this example) and its properties. However if you see the following instead:</p>
+<p>This shows that Rapise is able to see the AWT button (in this example) and its properties. However, if you see the following instead:</p>
 <p><img alt="Spy2-Bad" src="../img/java_awt_swing_testing7.png" /></p>
-<p>it means that you didn't run the sample application using <strong>"Run as Administrator</strong>", close the application and try again using <strong>"Run as Administrator"</strong> and you will see:</p>
+<p>it means that you didn't run the sample application using <strong>"Run as Administrator"</strong>. Close the application and try again using <strong>"Run as Administrator"</strong>, and you will see:</p>
 <p><img alt="Spy2-Good" src="../img/java_awt_swing_testing6.png" /></p>
-<p>You are now ready to start testing your real application. Make sure to also start it using <strong>"Run as Administrator</strong>".</p>
+<p>You are now ready to start testing your real application. Make sure to also launch it using <strong>"Run as Administrator"</strong>.</p>
 <h2 id="analyzing-the-java-application-using-the-java-spy">Analyzing the Java Application using the Java Spy<a class="headerlink" href="#analyzing-the-java-application-using-the-java-spy" title="Permanent link">&para;</a></h2>
-<p>With Spy you can walk along the tree of Java objects in your application.</p>
+<p>With Spy, you can navigate the tree of Java objects in your application.</p>
 <p><img alt="JavaSpy1" src="../img/java_awt_swing_testing8.png" /></p>
 <h2 id="save-to-file">Save to File<a class="headerlink" href="#save-to-file" title="Permanent link">&para;</a></h2>
 <p>You can save the Spy data for a particular node and all its descendants to a text file.</p>
 <p><img alt="JavaSpy2" src="../img/java_awt_swing_testing9.png" /></p>
 <p><img alt="JavaSpy3" src="../img/java_awt_swing_testing10.png" /></p>
 <h2 id="reflection-information">Reflection Information<a class="headerlink" href="#reflection-information" title="Permanent link">&para;</a></h2>
-<p>You can save reflection information for a java class used to implement a GUI control.</p>
+<p>You can save reflection information for a Java class used to implement a GUI control.</p>
 <p><img alt="JavaSpy4" src="../img/java_awt_swing_testing11.png" /></p>
 <p><img alt="JavaSpy5" src="../img/java_awt_swing_testing12.png" /></p>
                 

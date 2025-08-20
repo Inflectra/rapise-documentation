@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11149,6 +11161,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11475,33 +11499,29 @@
                 
                 <h1 id="web-testing-using-css-selectors">Web Testing - Using CSS Selectors<a class="headerlink" href="#web-testing-using-css-selectors" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>When testing web applications you will often want to use Cascading Style Sheets (CSS) selectors to query the browser DOM for elements based on the scenario under test. This section explains how you can use CSS selectors with Rapise to make your browser testing more flexible and adaptive to changes on the screen.</p>
-<p>CSS is an alternative to <a href="../xpath/">XPath</a> that is often better at selecting multiple elements from across different parts of the DOM Tree, unlike XPath which is strictly hierarchical. However since CSS is not always able to uniquely locate an object, when Rapise is used in recording mode, it will learn objects automatically using XPath.</p>
+<p>When testing web applications, you will often want to use Cascading Style Sheets (CSS) selectors to query the browser DOM for elements based on the scenario under test. This section explains how you can use CSS selectors with Rapise to make your browser testing more flexible and adaptive to changes on the screen.</p>
+<p>CSS is an alternative to <a href="../xpath/">XPath</a> that is often better at selecting multiple elements from across different parts of the DOM tree, unlike XPath, which is strictly hierarchical. However, since CSS is not always able to uniquely locate an object, when Rapise is used in recording mode, it will automatically learn objects using XPath.</p>
 <h2 id="css-fundamentals">CSS Fundamentals<a class="headerlink" href="#css-fundamentals" title="Permanent link">&para;</a></h2>
-<p>In CSS, selectors are patterns used to select the element(s) you want to style. Here are the different operators that you can use in CSS
-selectors:</p>
+<p>In CSS, selectors are patterns used to select the element(s) you want to style. Here are the different operators that you can use in CSS selectors:</p>
 <p><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selector Reference</a></p>
-<p>One limitation (as compared to XPath) is that there is not a way to select an element based on its contents. So it would not be possible to locate a cell in a grid (for example) based on the contents of the cell. For that you would need to use <a href="../xpath/">XPath</a>.</p>
+<p>One limitation (compared to XPath) is that there is no way to select an element based on its content. For example, it would not be possible to locate a cell in a grid based on its content. For that, you would need to use <a href="../xpath/">XPath</a>.</p>
 <h2 id="rapise-css-extensions">Rapise CSS Extensions<a class="headerlink" href="#rapise-css-extensions" title="Permanent link">&para;</a></h2>
 <h3 id="prefix">Prefix<a class="headerlink" href="#prefix" title="Permanent link">&para;</a></h3>
-<p>Since Rapise uses XPath as its primary means of locating an HTML element, when you <strong>Learn</strong> an object using CSS, Rapise will prefix the
-Locator (listed under the XPath property for that object in the <a href="../object_tree/">Object Tree</a>) with <code>css=</code> to let Rapise know that the locator is actually using a CSS selector.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">css</span><span class="o">=</span><span class="nt">html</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">form</span><span class="p">#</span><span class="nn">ctl01</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">div</span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">div</span><span class="p">:</span><span class="nd">first-of-type</span>
+<p>Since Rapise uses XPath as its primary means of locating an HTML element, when you <strong>Learn</strong> an object using CSS, Rapise prefixes the Locator (listed under the XPath property for that object in the <a href="../object_tree/">Object Tree</a>) with <code>css=</code> to indicate that the locator is actually using a CSS selector.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">css</span><span class="o">=</span><span class="nt">html</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">form</span><span class="p">#</span><span class="nn">ctl01</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">div</span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">div</span><span class="p">:</span><span class="nd">first-of-type</span>
 </code></pre></div>
 <h3 id="frames">Frames<a class="headerlink" href="#frames" title="Permanent link">&para;</a></h3>
-<p>Web pages sometimes use <strong>HTML</strong> frames. The CSS works inside the frame contents. Rapise has a special syntax (that is not part of standard CSS) to combine multiple CSS statements into a single line:</p>
+<p>Web pages sometimes use <strong>HTML</strong> frames. The CSS works inside the frame's content. Rapise has a special syntax (that is not part of standard CSS) to combine multiple CSS statements into a single line:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">css</span><span class="o">=</span><span class="nt">frame</span><span class="o">[</span><span class="nt">name</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="o">]@@</span><span class="p">@</span><span class="k">css</span><span class="o">=</span><span class="nt">a</span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span>
 </code></pre></div>
-<p>The special statement <code>@@@</code> is used as a separator for CSS statements pointing to constituent frames.</p>
-<p>The top-level frame is found by name <code>main</code></p>
+<p>The special statement <code>@@@</code> is used as a separator for CSS statements that point to constituent frames.</p>
+<p>The top-level frame is found by the name <code>main</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">frame</span><span class="o">[</span><span class="nt">name</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="o">]</span>
 </code></pre></div>
-<p>Then the frame's contents is searched for the <code>&lt;a&gt;</code> element that is a 3d child of it's parent element.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">a</span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span>
-</code></pre></div>
+<p>Then the frame's content is searched for the <code>&lt;a&gt;</code> element that is the third child of its parent element.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Segments of a locator separated by <code>@@@</code> can be both <a href="../xpath/#frames">xpath</a> and <a href="./#frames">css</a>. For example the following locators are equivalent:</p>
+<p>Segments of a locator separated by <code>@@@</code> can be both <a href="../xpath/#frames">XPath</a> and <a href="./#frames">CSS</a>. For example, the following locators are equivalent:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -11512,37 +11532,36 @@ Locator (listed under the XPath property for that object in the <a href="../obje
 </code></pre></div></td></tr></table></div>
 </div>
 <h3 id="shadow-dom">Shadow DOM<a class="headerlink" href="#shadow-dom" title="Permanent link">&para;</a></h3>
-<p>Another CSS extension is related to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM">Shadow DOM</a>. It's borders are typically closed for CSS. In such a case a locator for an element inside Shadow DOM has two parts separated by <code>@#@</code> delimiter. First part (can be <a href="../xpath/">XPATH</a> or CSS) should point to the Shadow Root in the Light DOM. Second part (always CSS) should point to a child element of the Shadow Root. In the case of nested Shadow DOMs there will be multiple <code>@#@</code> delimiters.</p>
+<p>Another CSS extension is related to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM">Shadow DOM</a>. Its borders are typically closed to CSS. In such a case, a locator for an element inside Shadow DOM has two parts, separated by the <code>@#@</code> delimiter. The first part (can be <a href="../xpath/">XPath</a> or CSS) should point to the Shadow Root in the Light DOM. The second part (always CSS) should point to a child element of the Shadow Root. In the case of nested Shadow DOMs, there will be multiple <code>@#@</code> delimiters.</p>
 <p>Example of a locator:</p>
-<p><em>automatically built by WebSpy</em>
+<p><em>Automatically built by WebSpy</em>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="nt">html</span><span class="o">/</span><span class="nt">body</span><span class="o">[</span><span class="nt">1</span><span class="o">]/</span><span class="nt">section</span><span class="o">[</span><span class="nt">1</span><span class="o">]/</span><span class="nt">div</span><span class="o">/</span><span class="nt">guid-generator</span><span class="o">[</span><span class="nt">1</span><span class="o">]@</span><span class="err">#</span><span class="p">@</span><span class="k">css</span><span class="o">=</span><span class="nt">input</span><span class="p">:</span><span class="nd">first-of-type</span>
 </code></pre></div>
-<em>after manual editing</em>
+<em>After manual editing</em>
 <div class="highlight"><pre><span></span><code><span class="o">//</span><span class="nt">guid-generator</span><span class="o">@</span><span class="err">#</span><span class="p">@</span><span class="k">css</span><span class="o">=</span><span class="nt">input</span>
 </code></pre></div>
 or
 <div class="highlight"><pre><span></span><code><span class="nt">css</span><span class="o">=</span><span class="nt">guid-generator</span><span class="o">@</span><span class="err">#</span><span class="p">@</span><span class="k">css</span><span class="o">=</span><span class="nt">input</span>
 </code></pre></div></p>
-<p>Find the example of a simple page with Shadow DOM on <a href="http://uitestingplayground.com/shadowdom">UI Testing Playground</a>.</p>
+<p>You can find an example of a simple page with Shadow DOM on <a href="http://uitestingplayground.com/shadowdom">UI Testing Playground</a>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>There are several different ways to use CSS selectors in Rapise.</p>
 <h3 id="in-web-spy">In Web Spy<a class="headerlink" href="#in-web-spy" title="Permanent link">&para;</a></h3>
-<p>To most easily use CSS selectors in Rapise, we recommend using the Web Spy tool. Make sure that CSS edit is enabled:</p>
+<p>To most easily use CSS selectors in Rapise, we recommend using the Web Spy tool. Make sure that CSS editing is enabled:</p>
 <p><img alt="css enabled" src="../img/css_enabled.png" width="483px" /></p>
-<p>If you enter in the CSS selector at the top, when you click <strong>Test</strong> </p>
+<p>If you enter the CSS selector at the top and then click <strong>Test</strong></p>
 <p><img alt="css edit" src="../img/css_edit.png" width="630px" /></p>
-<p>it will display all of the DOM elements that match the selector:</p>
+<p>it will display all of the DOM elements that match the selector.</p>
 <p><img alt="web_spy_css2" src="../img/css_results.png" width="445px" /></p>
-<p>You can now refine the query to only find the items you want to test.</p>
+<p>You can now refine the query to find only the items you want to test.</p>
 <h3 id="learning-objects">Learning Objects<a class="headerlink" href="#learning-objects" title="Permanent link">&para;</a></h3>
-<p>When you have created the query in the Web Spy that returns the HTML elements that you were expecting, you can click on the <strong>Learn</strong> button to learn that object. What this will do is create a new Rapise object in the <a href="../object_tree/">Object Tree</a> that
-maps to this specific CSS. That means that the "object" in Rapise is effectively a pointer to this specific CSS selector.</p>
-<p>For example, if you want to find a specific book in a grid of books by its CSS <code>class, style, ID</code> or other attribute, you can search using the appropriate CSS selector, then learn this object as <strong>Book_1</strong> so that you can access it in your code as <code>SeS("Book_1")</code>. Every time you call a function on <strong>Book_1</strong>, Rapise will use the learned CSS selector and use that to evaluate which HTML element in the web page to access.</p>
+<p>Once you have created the query in the Web Spy that returns the HTML elements you expect, you can click the <strong>Learn</strong> button to learn that object. This will create a new Rapise object in the <a href="../object_tree/">Object Tree</a> that maps to this specific CSS selector. This means that the "object" in Rapise is effectively a pointer to this specific CSS selector.</p>
+<p>For example, if you want to find a specific book in a grid of books by its CSS <code>class</code>, <code>style</code>, <code>ID</code>, or other attribute, you can search using the appropriate CSS selector, then learn this object as <strong>Book_1</strong> so that you can access it in your code as <code>SeS("Book_1")</code>. Every time you call a function on <strong>Book_1</strong>, Rapise uses the learned CSS selector to evaluate which HTML element on the web page to access.</p>
 <h3 id="dynamic-queries">Dynamic Queries<a class="headerlink" href="#dynamic-queries" title="Permanent link">&para;</a></h3>
-<p>In addition to learning objects based on specific CSS selector, there are a set of general functions that can be used to query for objects in the web page:</p>
+<p>In addition to learning objects based on specific CSS selectors, there is a set of general functions that can be used to query for objects on the web page:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Book_Management&#39;</span><span class="p">).</span><span class="nx">DoDOMQueryCss</span><span class="p">(</span><span class="s1">&#39;tr td[data=book1]&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>Will dynamically query for any HTML element that is a child of the learned <strong>Book Management</strong> object that matches the CSS selector. In this example it will look for any table cell in a table row that has the attribute <code>data="book1"</code>.</p>
+<p>This will dynamically query for any HTML element that is a child of the learned <strong>Book Management</strong> object and matches the CSS selector. In this example, it will look for any table cell in a table row that has the attribute <code>data="book1"</code>.</p>
                 
               
               

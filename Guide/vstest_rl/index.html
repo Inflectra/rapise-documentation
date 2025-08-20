@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11142,6 +11154,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11460,131 +11484,131 @@
                 
                 
                 <h1 id="rapiselauncher-extension-for-azure-devops">RapiseLauncher Extension for Azure DevOps<a class="headerlink" href="#rapiselauncher-extension-for-azure-devops" title="Permanent link">&para;</a></h1>
-<p>This section explains how to execute Rapise Spira Test Sets in <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops">Azure DevOps pipelines</a> using the <a href="../spiratest_integration/#using-rapiselauncher">RapiseLauncher</a>.</p>
+<p>This section explains how to execute Rapise test sets from <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops">Azure DevOps pipelines</a> using the <a href="../spiratest_integration/#using-rapiselauncher">RapiseLauncher</a>.</p>
 <h2 id="azure-devops">Azure DevOps<a class="headerlink" href="#azure-devops" title="Permanent link">&para;</a></h2>
-<p>We assume that Rapise tests are stored in a <a href="http://spiradoc.inflectra.com/">SpiraTeams</a>. Here we plan to configure a build pipeline for executing a SpiraTeam <a href="http://spiradoc.inflectra.com/Spira-User-Manual/Test-Set-Management/#test-set-details">Test Set</a> on a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&amp;tabs=yaml">Microsoft-hosted</a> agent.</p>
-<p>The benefit of the Microsoft-hosted agent is its configuration - it has latest version of web browsers, with relevant version of webdriver connectors. Everything is configured for the test run (updates and popups disabled, etc). RapiseLauncher may be used to execute Desktop UI tests, API tests, mobile tests and web tests. For web tests it is possible to use Rapise own Chrome extension, IE 11 or any <a href="../selenium_webdriver/">selenium webdriver</a>-based target. </p>
-<p>The same extension may be used for launching tests in <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops">self-hosted</a> Windows agents.</p>
-<p>Although in minimal configuration just <strong>RapiseLauncher</strong> step is enough, the pipeline definition may also include build, deploy or download of the AUT before the test execution. The results of test execution are then stored into the SpiraTeam. </p>
-<p>Once configured and executed the extension does the following:</p>
+<p>We assume that Rapise tests are stored in a <a href="http://spiradoc.inflectra.com/">SpiraTeam</a>. Here we plan to configure a build pipeline for executing a SpiraTeam <a href="http://spiradoc.inflectra.com/Spira-User-Manual/Test-Set-Management/#test-set-details">Test Set</a> on a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&amp;tabs=yaml">Microsoft-hosted</a> agent.</p>
+<p>The benefit of the Microsoft-hosted agent is its configuration: it has the latest versions of web browsers, with relevant versions of WebDriver connectors. Everything is configured for the test run (updates and pop-ups disabled, etc.). RapiseLauncher can be used to execute Desktop UI tests, API tests, mobile tests, and web tests. For web tests, it is possible to use Rapise's own Chrome extension, IE 11, or any <a href="../selenium_webdriver/">Selenium WebDriver</a>-based target.</p>
+<p>The same extension can be used for launching tests on <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops">self-hosted</a> Windows agents.</p>
+<p>Although in a minimal configuration the <strong>RapiseLauncher</strong> step alone is sufficient, the pipeline definition may also include building, deploying, or downloading the AUT before test execution. The results of test execution are then stored in SpiraTeam.</p>
+<p>Once configured and executed, the extension performs the following actions:</p>
 <ol>
-<li>Automatically download and install the <strong>RapiseLauncher</strong>.</li>
-<li>Downloads test files from the SpiraTeam.</li>
-<li>Execute the test set.</li>
-<li>Publish execution results, videos and logs back to SpiraTeam, so they are attached to the test run.</li>
+<li>Automatically downloads and installs the <strong>RapiseLauncher</strong>.</li>
+<li>Downloads test files from SpiraTeam.</li>
+<li>Executes the test set.</li>
+<li>Publishes execution results, videos, and logs back to SpiraTeam, where they are attached to the test run.</li>
 </ol>
-<p>The whole configuration process contains the following steps:</p>
+<p>The entire configuration process involves the following steps:</p>
 <ol>
-<li>Add Rapise extension to the organization using Visual Studio Marketplace.</li>
-<li>Configure <strong>SpiraTeam</strong> connection Point for the project.</li>
+<li>Add the Rapise extension to the organization using the Visual Studio Marketplace.</li>
+<li>Configure the <strong>SpiraTeam</strong> connection point for the project.</li>
 <li>Define a pipeline.</li>
-<li>Add <strong>RapiseLauncher</strong> task to the pipeline.</li>
-<li>Configure a pipeline definition for executing tests via <strong>RapiseLauncher</strong>.</li>
+<li>Add the <strong>RapiseLauncher</strong> task to the pipeline.</li>
+<li>Configure the pipeline definition for executing tests via <strong>RapiseLauncher</strong>.</li>
 </ol>
 <h3 id="step-1-install-marketplace-extension-for-the-organization">Step 1: Install Marketplace Extension for the Organization<a class="headerlink" href="#step-1-install-marketplace-extension-for-the-organization" title="Permanent link">&para;</a></h3>
-<p>In Azure DevOps go to <strong>Organization settings</strong>:</p>
+<p>In Azure DevOps, go to <strong>Organization settings</strong>:</p>
 <p><img alt="vstest_rl_orgsettings.png" src="../img/vstest_rl_orgsettings.png" /></p>
 <p>Choose <strong>Extensions</strong> and then <strong>Browse Marketplace</strong>:</p>
 <p><img alt="vstest_rl_orgextensions.png" src="../img/vstest_rl_orgextensions.png" /></p>
-<p>Type `Rapise', choose 'RapiseLauncher' extension:</p>
+<p>Type <code>Rapise</code>, then choose the 'RapiseLauncher' extension:</p>
 <p><img alt="vstest_rl_orgextensions_rapise.png" src="../img/vstest_rl_orgextensions_rapise.png" /></p>
 <p>Get it:</p>
 <p><img alt="vstest_rl_orgextensions_rapise_get.png" src="../img/vstest_rl_orgextensions_rapise_get.png" /></p>
 <p>And install it:</p>
 <p><img alt="vstest_rl_orgextensions_rapise_install.png" src="../img/vstest_rl_orgextensions_rapise_install.png" /></p>
-<p>Finally it shows up in the list of installed extensions:</p>
+<p>Finally, it shows up in the list of installed extensions:</p>
 <p><img alt="vstest_rl_orgextensions_rapise_installed.png" src="../img/vstest_rl_orgextensions_rapise_installed.png" /></p>
 <h3 id="step-2-connect-project-to-spirateam">Step 2: Connect Project to SpiraTeam<a class="headerlink" href="#step-2-connect-project-to-spirateam" title="Permanent link">&para;</a></h3>
-<p>Now define a service connection. It is a connection details for <strong>SpiraTeam</strong> used later to gather test set information. So we need ot open <strong>Project settings</strong>:</p>
+<p>Now, define a service connection. This provides connection details for <strong>SpiraTeam</strong>, which are used later to gather test set information. So, we need to open <strong>Project settings</strong>:</p>
 <p><img alt="vstest_rl_projsettings.png" src="../img/vstest_rl_projsettings.png" /></p>
 <p>Go to <strong>Service Connections</strong>:</p>
 <p><img alt="vstest_rl_serviceconnections.png" src="../img/vstest_rl_serviceconnections.png" /></p>
 <p>And <strong>Create service connection</strong>:</p>
 <p><img alt="vstest_rl_serviceconnections_create.png" src="../img/vstest_rl_serviceconnections_create.png" /></p>
-<p>Choose <strong>Spira service connection</strong> connection type (this type is added by the installed marketplace extension) and press <strong>Next</strong>:</p>
+<p>Choose the <strong>Spira service connection</strong> type (this type is added by the installed marketplace extension) and press <strong>Next</strong>:</p>
 <p><img alt="vstest_rl_serviceconnections_spira.png" src="../img/vstest_rl_serviceconnections_spira.png" /></p>
-<p>Now define connection details: SpiraTeam <strong>Server Url</strong>, <strong>Username</strong> and <a href="http://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">API Key</a>:
-<img alt="vstest_rl_serviceconnections_verify.png" src="../img/vstest_rl_serviceconnections_verify.png" /></p>
-<p>Then <strong>Verify</strong> it and give a <strong>Service connection name</strong>:</p>
+<p>Now define the connection details: SpiraTeam <strong>Server URL</strong>, <strong>Username</strong>, and <a href="http://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">API Key</a>:</p>
+<p><img alt="vstest_rl_serviceconnections_verify.png" src="../img/vstest_rl_serviceconnections_verify.png" /></p>
+<p>Then <strong>Verify</strong> it and provide a <strong>Service connection name</strong>:</p>
 <p><img alt="vstest_rl_serviceconnections_verifyandsave.png" src="../img/vstest_rl_serviceconnections_verifyandsave.png" /></p>
 <p>Finally, the connection shows up in the list:</p>
 <p><img alt="vstest_rl_serviceconnections_ready.png" src="../img/vstest_rl_serviceconnections_ready.png" /></p>
 <h3 id="step-3-define-a-pipeline">Step 3: Define a Pipeline<a class="headerlink" href="#step-3-define-a-pipeline" title="Permanent link">&para;</a></h3>
-<p>Defining a pipeline means telling the DevOps where to store the pipeline definition, where get the tests, what VM to use for execution and what parameters to pass.</p>
+<p>Defining a pipeline means telling Azure DevOps where to store the pipeline definition, where to get the tests, what VM to use for execution, and what parameters to pass.</p>
 <h4 id="define-a-repository">Define a Repository<a class="headerlink" href="#define-a-repository" title="Permanent link">&para;</a></h4>
-<p>In the case that you don't have a repository, just define one for the given project:</p>
+<p>In cases where you don't have a repository, simply define one for the given project:</p>
 <!-- /* cSpell:disable */ -->
 <p><img alt="vstest_rl_pipeline_create_0_preparerepo.png" src="../img/vstest_rl_pipeline_create_0_preparerepo.png" /></p>
 <!-- /* cSpell:enable */ -->
-<p>If you have a repo, then you may skip this step and use your repository connection on the next step.</p>
+<p>If you have a repo, you may skip this step and use your repository connection in the next step.</p>
 <h4 id="create-a-pipeline-definition">Create a Pipeline Definition<a class="headerlink" href="#create-a-pipeline-definition" title="Permanent link">&para;</a></h4>
-<p>Go to your project, expand <strong>Pipelines</strong> and choose <strong>Create Pipeline</strong>:</p>
+<p>Go to your project, expand <strong>Pipelines</strong>, and choose <strong>Create Pipeline</strong>:</p>
 <p><img alt="vstest_rl_pipeline_create.png" src="../img/vstest_rl_pipeline_create.png" /></p>
-<p>Select GIT repository type</p>
+<p>Select the GIT repository type:</p>
 <p><img alt="vstest_rl_pipeline_create_1_repo.png" src="../img/vstest_rl_pipeline_create_1_repo.png" /></p>
-<p>And repository itself:</p>
+<p>And the repository itself:</p>
 <p><img alt="vstest_rl_pipeline_create_2_selectrepo.png" src="../img/vstest_rl_pipeline_create_2_selectrepo.png" /></p>
-<p>Here we are creating new pipeline. But you may use existing one and just add test execution task to it.</p>
+<p>Here we are creating a new pipeline. However, you may use an existing one and just add a test execution task to it.</p>
 <p><img alt="vstest_rl_pipeline_create_3_selectpipeline.png" src="../img/vstest_rl_pipeline_create_3_selectpipeline.png" /></p>
-<p><strong>RapiseLauncher</strong> requires <strong>Windows</strong> host. You may use <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&amp;tabs=yaml">Microsoft Hosted agent</a>, or set an agent on your own VM or physical Windows machine. </p>
+<p><strong>RapiseLauncher</strong> requires a <strong>Windows</strong> host. You may use a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&amp;tabs=yaml">Microsoft-hosted agent</a>, or set up an agent on your own VM or physical Windows machine.</p>
 <p><img alt="vstest_rl_pipeline_create_4_vmimage.png" src="../img/vstest_rl_pipeline_create_4_vmimage.png" /></p>
 <h3 id="step-4-add-rapiselauncher-task">Step 4: Add RapiseLauncher Task<a class="headerlink" href="#step-4-add-rapiselauncher-task" title="Permanent link">&para;</a></h3>
-<p>Then you may use Assistant to configure the task.</p>
+<p>Then you may use the Assistant to configure the task.</p>
 <p><img alt="vstest_rl_pipeline_create_5_showassistant.png" src="../img/vstest_rl_pipeline_create_5_showassistant.png" /></p>
 <p><img alt="vstest_rl_pipeline_create_6_showassistant.png" src="../img/vstest_rl_pipeline_create_6_showassistant.png" /></p>
-<p>And filter by word 'Rapise'. We need a task <strong>Run Rapise Test Set</strong>:</p>
+<p>And filter by the word 'Rapise'. We need the task <strong>Run Rapise Test Set</strong>:</p>
 <p><img alt="vstest_rl_pipeline_create_7_showassistant_rapise.png" src="../img/vstest_rl_pipeline_create_7_showassistant_rapise.png" /></p>
-<p>Now we need to fill task execution parameters as follows:</p>
+<p>Now we need to configure the task execution parameters as follows:</p>
 <ul>
-<li><strong>SpiraTeam</strong> contains information for finding a test set</li>
-<li><strong>Spira service/server end point</strong> - choose spira connection defined earlier from the dropdown.
+<li>
+<p><strong>SpiraTeam</strong> contains information for finding a test set</p>
+<ul>
+<li><strong>Spira service/server endpoint</strong> - choose the Spira connection defined earlier from the dropdown.
     <img alt="vstest_rl_pipeline_create_9_ext_spira_proj.png" src="../img/vstest_rl_pipeline_create_9_ext_spira_proj.png" /></li>
-<li>
-<p><strong>Spira Product</strong></p>
-</li>
-<li>
-<p><strong>Spira Test Set</strong></p>
-</li>
-<li>
-<p><strong>Automation Host</strong></p>
-</li>
-<li>
-<p><strong>Execution Options</strong></p>
-</li>
-<li>
-<p><strong>Rapise Needs to Be Installed</strong> - if your VM is spawned for each test execution (i.e. you use <em>Microsoft-hosted Agent</em>), then the task may install it. You don't need to install Rapise if you use own agent and install in advance. Also you may have more than one <strong>Run Rapise Test Set</strong> tasks in your pipeline. In this case only the first one may need to install Rapise.</p>
-<ul>
-<li><strong>Rapise Version</strong> - we recommend to specify the same version that you used to create tests. I.e. <img alt="Rapise Version" src="../img/vstest_rl_pipeline_create_12_rapiseversion.png" /></li>
+<li><strong>Spira Product</strong></li>
+<li><strong>Spira Test Set</strong></li>
+<li><strong>Automation Host</strong></li>
 </ul>
 </li>
 <li>
-<p><strong>Advanced Execution Options</strong> </p>
+<p><strong>Execution Options</strong></p>
+<ul>
+<li><strong>Rapise Needs to Be Installed</strong> - if your VM is spun up for each test execution (i.e., you use a <em>Microsoft-hosted Agent</em>), then the task can install it. You don't need to install Rapise if you use your own agent and install it in advance. Also, you may have more than one <strong>Run Rapise Test Set</strong> task in your pipeline. In this case, only the first one needs to install Rapise.<ul>
+<li><strong>Rapise Version</strong> - we recommend specifying the same version that you used to create the tests. I.e. <img alt="Rapise Version" src="../img/vstest_rl_pipeline_create_12_rapiseversion.png" /></li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>Set Screen Resolution</strong> specify one of standard screen resolutions for test execution. It should be one of standard values (i.e. 1024x768, 1920x1080, etc., supported by the current execution host). Bigger resolution - more details on screenshots and video and more space is consumed by the recordings. </p>
+<p><strong>Advanced Execution Options</strong></p>
+<ul>
+<li>
+<p><strong>Set Screen Resolution</strong> - specify one of the standard screen resolutions for test execution. It should be one of the standard values (i.e., 1024x768, 1920x1080, etc., supported by the current execution host). A higher resolution results in more details on screenshots and video, but also consumes more space for recordings.</p>
 <ul>
 <li><strong>Width</strong></li>
 <li><strong>Height</strong></li>
 </ul>
 </li>
 <li>
-<p><strong>Record Video of Execution</strong> a <code>ScreenCapture.wmv</code> will be generated and saved as a <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/#attachments">Test Run attachment</a>.</p>
+<p><strong>Record Video of Execution</strong> - a <code>ScreenCapture.wmv</code> will be generated and saved as a <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Test-Run-Management/#attachments">Test Run attachment</a>.</p>
 <ul>
-<li><strong>Video Recording Options</strong> set of <a href="../spiratest_integration/#record-playback-videos">options</a> for <code>Microsoft.TestPlatform</code> video recorder.</li>
+<li><strong>Video Recording Options</strong> - a set of <a href="../spiratest_integration/#record-playback-videos">options</a> for the <code>Microsoft.TestPlatform</code> video recorder.</li>
 </ul>
 </li>
 <li>
-<p><strong>Publish RapiseLauncher Log</strong> when enabled, RapiseLauncher log is attached to pipeline build log.</p>
+<p><strong>Publish RapiseLauncher Log</strong> - when enabled, the RapiseLauncher log is attached to the pipeline build log.</p>
 <p><img alt="Log" src="../img/vstest_rl_pipeline_create_12_executionlog.png" /></p>
 </li>
 <li>
-<p><strong>GITROOT</strong> is only needed when your tests are stored in GIT and you check them out <a href="../git_integration/#checkout-externally">earlier</a> in the pipeline or even before launching the pipeline.</p>
+<p><strong>GITROOT</strong> is only needed if your tests are stored in Git and you check them out <a href="../git_integration/#checkout-externally">earlier</a> in the pipeline or even before launching the pipeline.</p>
+</li>
+</ul>
 </li>
 </ul>
 <p><img alt="vstest_rl_pipeline_create_10_ext_adv_obj.png" src="../img/vstest_rl_pipeline_create_10_ext_adv_obj.png" /></p>
-<p>Finally press <strong>Add</strong>. The task should show up in the <code>steps:</code> section of the yaml description:</p>
+<p>Finally, press <strong>Add</strong>. The task should appear in the <code>steps:</code> section of the YAML description:</p>
 <p><img alt="vstest_rl_pipeline_create_11_ext_yaml.png" src="../img/vstest_rl_pipeline_create_11_ext_yaml.png" /></p>
-<p>You may then tweak its configuration directly using the text editor.</p>
+<p>You can then tweak its configuration directly using the text editor.</p>
 <p><div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
 
@@ -11610,16 +11634,16 @@ And then execute.
 <img alt="vstest_rl_pipeline_create_14_ext_saverun.png" src="../img/vstest_rl_pipeline_create_14_ext_saverun.png" />
 <img alt="vstest_rl_pipeline_create_15_queue.png" src="../img/vstest_rl_pipeline_create_15_queue.png" /></p>
 <h3 id="step-5-pipeline-execution-results">Step 5: Pipeline Execution Results<a class="headerlink" href="#step-5-pipeline-execution-results" title="Permanent link">&para;</a></h3>
-<p>You may see history of pipeline job runs and test execution logs.</p>
-<p>From the pipeline runs history you may pick up any run:</p>
+<p>You can see the history of pipeline job runs and test execution logs.</p>
+<p>From the pipeline run history, you can select any run:</p>
 <p><img alt="vstest_rl_pipeline_runhistory_10" src="../img/vstest_rl_pipeline_runhistory_10.png" /></p>
 <p>And select the Job:</p>
 <p><img alt="vstest_rl_pipeline_runhistory_11" src="../img/vstest_rl_pipeline_runhistory_11.png" /></p>
-<p>The job run contains information of each pipeline step. <strong>RapiseLauncher</strong> is a step doing Rapise installation and test set launch.</p>
+<p>The job run contains information about each pipeline step. <strong>RapiseLauncher</strong> is the step that performs Rapise installation and test set launch.</p>
 <p><img alt="vstest_rl_pipeline_runhistory_12" src="../img/vstest_rl_pipeline_runhistory_12.png" /></p>
-<p>Also you may find testing reports and videos in the <strong>SpiraTeam</strong>:</p>
+<p>Also, you can find testing reports and videos in <strong>SpiraTeam</strong>:</p>
 <p><img alt="vstest_rl_pipeline_runhistory_13" src="../img/vstest_rl_pipeline_runhistory_13.png" /></p>
-<p>Log files and videos are in the Test Run <strong>Attachments</strong> tab:</p>
+<p>Log files and videos are located in the Test Run <strong>Attachments</strong> tab:</p>
 <p><img alt="vstest_rl_pipeline_runhistory_14" src="../img/vstest_rl_pipeline_runhistory_14.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>

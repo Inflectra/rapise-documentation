@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1192,6 +1192,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11194,6 +11206,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11487,78 +11511,73 @@
                 
                 <h1 id="mobile-testing-using-ios">Mobile Testing using iOS<a class="headerlink" href="#mobile-testing-using-ios" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Rapise lets you record and play automated tests on real iOS devices (iPad and iPhone) as well as test applications using the iOS simulator
-that ships with Xcode. No jailbreaking needed! With Rapise you can record on one device and playback on multiple.</p>
+<p>Rapise allows you to record and play automated tests on real iOS devices (iPad and iPhone) as well as to test applications using the iOS simulator that ships with Xcode. No jailbreaking needed! With Rapise, you can record on one device and play back on multiple.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<p>This section assumes that you have already installed and configured all of the necessary components. For details on this, please refer to the <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing Environment for iOS Mobile Testing</a> section.</p>
+<p>This section assumes that you have already installed and configured all of the necessary components. For details on this, see the <a href="../../Manuals/Preparing_for_iOS_Testing/">Preparing Environment for iOS Mobile Testing</a> section.</p>
 <h2 id="configure-the-mobile-profile">Configure the Mobile Profile<a class="headerlink" href="#configure-the-mobile-profile" title="Permanent link">&para;</a></h2>
-<p>To begin the actual mobile testing, <a href="../create_a_new_test/">create a new test</a>, using the <code>File &gt; Create New &gt; New Test</code> option in Rapise. Make sure you choose the mobile methodology option <strong>Mobile</strong>:</p>
+<p>To begin mobile testing, <a href="../create_a_new_test/">create a new test</a> using the <code>File &gt; Create New &gt; New Test</code> option in Rapise. Make sure you choose the <strong>Mobile</strong> methodology option:</p>
 <p><img alt="new test mobile ios" src="../img/mobile_testing_ios_new_test_mobile_ios.png" width="633px" /></p>
-<p>Once you have entered the name for the new test (with the mobile methodology selected) you will be asked to choose the mobile profile.
-Rapise ships with several default profiles, for now select the one that is closer to the device you want to test (we recommend the <strong>iOS App Simulator</strong> generic profile):</p>
+<p>Once you enter the name for the new test (with the mobile methodology selected), you will be asked to choose the mobile profile. Rapise ships with several default profiles. For now, select the one closest to the device you want to test (we recommend the <strong>iOS App Simulator</strong> generic profile):</p>
 <p><img alt="mobile_choose_profile_iphone" src="../img/mobile_testing_ios4.png" width="469px" /></p>
 <p>When you click the <code>OK</code> button, Rapise will ask you to choose the Scripting Language:</p>
 <p><img alt="Scripting Language" src="../img/tutorial_mobile_testing8.png" width="482px" /></p>
-<p>Please choose the <strong>Rapise Visual Language (RVL).</strong> Rapise will then create a new mobile test with the <strong>iOS App Simulator</strong> profile selected.</p>
+<p>Choose the <strong>Rapise Visual Language (RVL).</strong> Rapise will then create a new mobile test with the <strong>iOS App Simulator</strong> profile selected.</p>
 <p><img alt="" src="../img/mobile_testing_ios_ios_simulator_empty_rvl.png" width="884px" /></p>
-<p>Now you need to modify the profile so that it correctly matches the type of device you are testing and also so that it correctly points to the <strong>Appium</strong> server that you are using to host the mobile devices. Click <code>...</code> button in the top right corner of Rapise window</p>
+<p>Now you need to modify the profile so that it matches the type of device you are testing and points to the <strong>Appium</strong> server used to host the mobile devices. Click the <code>...</code> button in the top right corner of the Rapise window:</p>
 <p><img alt="open mobile profile button" src="../img/open_mobile_profile_button_ios.png" /></p>
 <p><img alt="mobile_settings_dialog_ios" src="../img/mobile_testing_ios5.png" />
-The example screeenshot above is for an iPhone X simulator running iOS 11.4. For any iOS device (real or simulated) you will need to
-provide the following:</p>
+The example screenshot above is for an iPhone X simulator running iOS 11.4. For any iOS device (real or simulated), you will need to provide the following details:</p>
 <ul>
 <li><strong>Uri</strong> - this is the URL to your Appium server. We shall discuss this shortly.</li>
-<li><strong>app</strong> - this needs to be the path (on the Mac running Appium) to the Application being tested on the device (e.g. <code>/Users/user.name/Library/Developer/Xcode/DerivedData/AUTiOS-gvdyymxgyzrfgqdfvfylapawjoyd/Build/Products/Debug-iphonesimulator/AUTiOS.app</code>)</li>
-<li><strong>deviceName</strong> - this needs to match the name of the device being connected.</li>
-<li><strong>platformName</strong> - this needs to be set to <strong>iOS</strong>.</li>
-<li><strong>platformVersion</strong> - this needs to be set to the correct version of iOS that the device is running.</li>
+<li><strong>app</strong> - this must be the path (on the Mac running Appium) to the application being tested on the device (e.g., <code>/Users/user.name/Library/Developer/Xcode/DerivedData/AUTiOS-gvdyymxgyzrfgqdfvfylapawjoyd/Build/Products/Debug-iphonesimulator/AUTiOS.app</code>)</li>
+<li><strong>deviceName</strong> - this must match the name of the device being connected.</li>
+<li><strong>platformName</strong> - this must be set to <strong>iOS</strong>.</li>
+<li><strong>platformVersion</strong> - this must be set to the iOS version running on the device.</li>
 </ul>
 <p>In addition, for physical devices only, you need to specify:</p>
 <ul>
 <li><strong>udid</strong> - the unique device identifier of the connected physical device (leave blank for simulated devices).</li>
 </ul>
-<p>Once you have entered in the information and saved the profile, make sure that Appium is running on the Mac and then click the <code>Test Url</code> button to verify the connection with Appium:</p>
+<p>Once you have entered the information and saved the profile, make sure that Appium is running on the Mac and then click the <code>Test URL</code> button to verify the connection to Appium:</p>
 <p><img alt="mobile_settings_dialog_ios_success" src="../img/mobile_testing_ios6.png" width="254px" /></p>
-<p>Now you can start testing your mobile iOS application.</p>
+<p>Now you can start testing your iOS mobile application.</p>
 <h2 id="using-the-mobile-spy">Using the Mobile Spy<a class="headerlink" href="#using-the-mobile-spy" title="Permanent link">&para;</a></h2>
-<p>The Mobile Spy will let you view an application running on the mobile device, take a snapshot of its screen and then interactively inspect the objects in the application being tested. This is a useful first step to make sure that Rapise recognizes the application and has access to the objects in the user interface.</p>
-<p>If you do not see Mobile Spy button <img alt="mobile spy button" src="../img/mobile_spy_button.png" /> on the toolbar then choose Mobile Spy from the main menu: <code>Tools &gt; Spy &gt; Mobile</code>. Click Mobile Spy button. Now click the <code>Get Snapshot</code> button to display the application specified in the <a href="../mobile_settings_dialog/">mobile profile</a> on the screen:</p>
+<p>The Mobile Spy allows you to view an application running on the mobile device, take a snapshot of its screen, and then interactively inspect the objects within the application under test. This is a useful first step to make sure that Rapise recognizes the application and has access to the objects in its user interface.</p>
+<p>If you do not see Mobile Spy button <img alt="mobile spy button" src="../img/mobile_spy_button.png" /> on the toolbar, choose Mobile Spy from the main menu: <code>Tools &gt; Spy &gt; Mobile</code>. Click the Mobile Spy button. Now click the <code>Get Snapshot</code> button to display the application specified in the <a href="../mobile_settings_dialog/">mobile profile</a> on the screen:</p>
 <p><img alt="spy_dialog_mobile_ios" src="../img/mobile_testing_ios7.png" /></p>
-<p>In the example above, we are displaying the sample iOS application that is available in <a href="https://github.com/Inflectra/AUTiOS">AUTiOS Repository</a>.</p>
-<p>If you click on one objects in the user interface, it will be highlighted in Red and the tree hierarchy on the left will expand to
-show the properties of that object:</p>
+<p>In the example above, the sample iOS application available in <a href="https://github.com/Inflectra/AUTiOS">AUTiOS Repository</a> is displayed.</p>
+<p>If you click on an object in the user interface, it will be highlighted in red and the tree hierarchy on the left expands to show the properties of that object:</p>
 <p><img alt="spy_dialog_mobile_ios_2" src="../img/mobile_testing_ios8.png" /></p>
-<p>If you want to view the contents of the Spy as a text file, just click <code>Spy &gt; Page Source</code> menu and you will see the contents of the Spy properties window as a text file.</p>
-<p>If you want to perform an action on the application (e.g. click on the selected item) use toolbar buttons.</p>
+<p>If you want to view the contents of the Spy as a text file, click the <code>Spy &gt; Page Source</code> menu, and the contents of the Spy properties window will be displayed as a text file.</p>
+<p>If you want to perform an action on the application (e.g., click on the selected item), use the toolbar buttons.</p>
 <p><img alt="toolbar events" src="../img/mobile_testing_ios9.png" /></p>
-<p>Now click on <code>Tap</code> and Rapise will send a tap event to the application, switching the application to the next page:</p>
+<p>Now click <code>Tap</code> and Rapise sends a tap event to the application, switching it to the next page:</p>
 <p><img alt="after tap screen" src="../img/mobile_testing_ios_next.png" /></p>
-<p>Assuming that you can see your application in the Spy and that the objects can be inspected (similar to that shown above) you can now begin the process of testing your mobile application. Click on <code>Spy &gt; Disconnect</code> menu
-to end your Spy session and close the Rapise Spy dialog. You will now be returned back to your test script.</p>
+<p>Assuming your application is visible in the Spy and its objects can be inspected (as shown above), you can now begin testing your mobile application. Click the <code>Spy &gt; Disconnect</code> menu option to end your Spy session and close the Rapise Spy dialog. You will now be returned to your test script.</p>
 <h2 id="recording-and-playing-a-test">Recording and Playing a Test<a class="headerlink" href="#recording-and-playing-a-test" title="Permanent link">&para;</a></h2>
-<p>With the new Rapise mobile test script open, click on the <code>Record</code> button on the toolbar and that will display the <a href="../recording_activity_dialog/">recording activity dialog</a>:</p>
+<p>With the new Rapise mobile test script open, click the <code>Record</code> button on the toolbar to display the <a href="../recording_activity_dialog/">recording activity dialog</a>:</p>
 <p><img alt="recording activity dialog_mobile" src="../img/tutorial_mobile_testing17.png" width="572px" /></p>
-<p>Now click on the <code>Spy</code> button and in the Rapise Spy click <code>Get Snapshot</code> button on the toolbar:</p>
+<p>Now click the <code>Spy</code> button, and in the Rapise Spy, click the <code>Get Snapshot</code> button on the toolbar:</p>
 <p><img alt="spy_dialog_mobile_ios" src="../img/mobile_testing_ios7.png" /></p>
-<p>We now want to record a click on one of the menu options, simply click on the <code>Basic Controls</code> list item on the screenshot you see in Mobile Spy:</p>
+<p>To record a click on one of the menu options, click the <code>Basic Controls</code> list item in the Mobile Spy screenshot:</p>
 <p><img alt="spy_dialog_mobile_ios_2" src="../img/mobile_testing_ios8.png" /></p>
-<p>Now click the <code>Tap</code> button to move the sample app to the next screen; Rapise will  automatically reload the page in the Mobile Spy to get the updated screen. Now highlight user name field, put text into the edit field on the toolbar and press <code>Send Keys</code> button.</p>
+<p>Now click the <code>Tap</code> button to move the sample app to the next screen; Rapise automatically reloads the page in the Mobile Spy to get the updated screen. Now highlight the user name field, enter text into the edit field on the toolbar, and press the <code>Send Keys</code> button.</p>
 <p><img alt="spy_dialog_mobile_ios_5" src="../img/mobile_testing_ios13.png" /></p>
-<p>Do the same for password field and record <code>tap</code> action on the <code>Login</code> and <code>Home (back arrow)</code> buttons. You will see the events in the recording activity dialog:</p>
+<p>Repeat for the password field and record a <code>Tap</code> action on the <code>Login</code> and <code>Home (back arrow)</code> buttons. You will see the events in the recording activity dialog:</p>
 <p><img alt="recording activity dialog mobile ios" src="../img/mobile_testing_ios14.png" width="572px" /></p>
-<p>Now click on the <code>Finish</code> button and you will be taken back to the test script. Click on <code>Append to End</code> button.</p>
+<p>Now click the <code>Finish</code> button and you will be returned to the test script. Click the <code>Append to End</code> button.</p>
 <p><img alt="append" src="../img/tutorial_mobile_testing_append.png" width="449px" /></p>
-<p>Find iOS objects listed and actions displayed on the RVL sheet:</p>
+<p>You will see iOS objects and actions displayed on the RVL sheet:</p>
 <p><img alt="object_tree_ios_recording" src="../img/mobile_testing_ios15.png" /></p>
-<p>Now to playback the test simply click <code>Play</code> in the Rapise toolbar and the test will play back in the <strong>iOS Simulator</strong>. This is the report of the test being executed.</p>
+<p>To play back the test, click <code>Play</code> in the Rapise toolbar. The test will then play back in the <strong>iOS Simulator</strong>. This is the test execution report.</p>
 <p><img alt="report_mobile_ios" src="../img/mobile_testing_ios16.png" /></p>
 <h2 id="sample-application-and-tests">Sample Application and Tests<a class="headerlink" href="#sample-application-and-tests" title="Permanent link">&para;</a></h2>
-<p>You can find the Android sample tests and sample Application in <a href="https://github.com/Inflectra/AUTiOS">AUTiOS Repository</a>.</p>
+<p>You can find the Android sample tests and sample application in <a href="https://github.com/Inflectra/AUTiOS">AUTiOS Repository</a>.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../mobile_testing2/">Mobile Testing</a>, for an overview of mobile testing with sub-sections on testing.</li>
-<li><a href="../mobile_settings_dialog/">Mobile Settings Dialog</a> - for information on setting up the different <strong>mobile profiles</strong> for the mobile devices you will be testing.</li>
-<li><a href="../object_spy_mobile/">Mobile Object Spy</a> - for information on how Rapise connects to the device and lets you view the objects in the tested application.</li>
+<li><a href="../mobile_testing2/">Mobile Testing</a>, for an overview of mobile testing with subsections.</li>
+<li><a href="../mobile_settings_dialog/">Mobile Settings Dialog</a> - for information on setting up mobile profiles for the devices you will be testing.</li>
+<li><a href="../object_spy_mobile/">Mobile Object Spy</a> - for information on how Rapise connects to the device and allows you to view the objects within the tested application.</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB381.aspx">KB381</a> iOS Testing Hints</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB280.aspx">KB280</a> How to specify Selenium or Appium capabilities which are not available through Rapise UI?</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB278.aspx">KB278</a> How to run a cross-browser test on a mobile device?</li>

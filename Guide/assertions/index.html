@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11109,6 +11121,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11395,15 +11419,15 @@
                 
                 <h1 id="assertions">Assertions<a class="headerlink" href="#assertions" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>An <strong>assert statement</strong> is a special Boolean condition that represents an assumption about program state at a particular point in test execution.  When an assert is encountered, the condition is evaluated.  A value of <strong>False</strong> indicates a program error.  In some languages, execution will halt if an assertion evaluates to <strong>False</strong>.  In Rapise, the result is logged to the report with failed status, and execution continues or not depending on <code>StopOnError</code> test option.</p>
+<p>An <strong>assert statement</strong> is a special Boolean condition that represents an assumption about program state at a particular point in test execution. When an assertion is encountered, the condition is evaluated. A value of <strong>False</strong> indicates a program error. In some languages, execution will halt if an assertion evaluates to <strong>False</strong>. In Rapise, the result is logged to the report with failed status, and execution continues or stops depending on the <code>StopOnError</code> test option.</p>
 <p>There are explicit and implicit assertions (or checkpoints) generated during the script execution and reflected in the report. Each report line is produced by one of the following statements:</p>
 <ul>
 <li>
-<p>RVL <a href="../../RVL/Actions/">Action</a> - has an implicit assertion as a side-effect. Success means successful action execution.
+<p>RVL <a href="../../RVL/Actions/">Action</a> - includes an implicit assertion as a side effect. Success indicates successful action execution.
     <img alt="RVL Action" src="../img/automated_reporting_rvlaction.png" /></p>
 </li>
 <li>
-<p>JavaScript <a href="../actions/">Action</a> - has an implicit assertion as a side-effect. Success means successful action execution.
+<p>JavaScript <a href="../actions/">Action</a> - includes an implicit assertion as a side effect. Success indicates successful action execution.
     <img alt="Code Action" src="../img/automated_reporting_codeaction.png" /></p>
 </li>
 <li>
@@ -11424,35 +11448,35 @@
 </li>
 </ul>
 <h2 id="soft-assertions">Soft Assertions<a class="headerlink" href="#soft-assertions" title="Permanent link">&para;</a></h2>
-<p>Default behavior of an Assertion statement is to stop test execution immediately (unless <a href="../settings_dialog/#execution">StopOnError</a> set explicitly to <code>false</code>). Sometimes it is preferable to have more fine grained control over test execution - so it stops or not stops.</p>
-<p>This is when <em>Soft</em> assertion comes into play. Soft assertion has 2 features:</p>
+<p>By default, an assertion statement stops test execution immediately (unless <a href="../settings_dialog/#execution">StopOnError</a> is explicitly set to <code>false</code>). Sometimes, it is preferable to have more fine-grained control over test execution, allowing it to continue or stop.</p>
+<p>This is where <em>soft</em> assertions come into play. Soft assertions offer two key features:</p>
 <ol>
 <li>
-<p>In case of failure it just reports it but does not stop the execution.</p>
+<p>If a failure occurs, it is merely reported, and execution does not stop.</p>
 </li>
 <li>
-<p>It is possible to stop execution based on previous set of <em>Soft</em> assertions by calling <a href="../../Libraries/Tester/#softassertall">Tester.SoftAssertAll</a>.</p>
+<p>It is possible to stop execution based on the results of previous <em>soft</em> assertions by calling <a href="../../Libraries/Tester/#softassertall">Tester.SoftAssertAll</a>.</p>
 </li>
 </ol>
-<p>Every <code>Assert*</code> method defined for the <a href="../../Libraries/Tester/">Tester</a> has corresponding <code>SoftAssert*</code> counterpart (i.e. <code>Tester.AssertEquals</code> and <code>Tester.SoftAssertEquals</code> etc).</p>
+<p>Every <code>Assert*</code> method defined for the <a href="../../Libraries/Tester/">Tester</a> has a corresponding <code>SoftAssert*</code> counterpart (e.g., <code>Tester.AssertEquals</code> and <code>Tester.SoftAssertEquals</code>).</p>
 <h2 id="create-a-checkpoint">Create a Checkpoint<a class="headerlink" href="#create-a-checkpoint" title="Permanent link">&para;</a></h2>
-<p>To create a <a href="../checkpoints/">checkpoint</a> using an assertion, you will have to manually alter the test script (another way is to use the <a href="../verify_object_properties/">Verify Object Properties</a> dialog during <a href="../recording/">Recording</a>):</p>
+<p>To create a <a href="../checkpoints/">checkpoint</a> using an assertion, you must manually alter the test script (another way is to use the <a href="../verify_object_properties/">Verify Object Properties</a> dialog during <a href="../recording/">Recording</a>):</p>
 <ol>
 <li><strong>Select a location</strong> in your script.</li>
-<li><strong>Query for the application state</strong>. For object properties use Get&lt;..&gt; methods.  For example:</li>
+<li><strong>Query for the application state</strong>. For object properties, use <code>Get&lt;...&gt;</code> methods. For example:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">xx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;OkButton&quot;</span><span class="p">).</span><span class="nx">GetX</span><span class="p">();</span><span class="w"> </span><span class="c1">// X position of the object</span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Customer&#39;</span><span class="p">).</span><span class="nx">GetBitmap</span><span class="p">();</span><span class="w"> </span><span class="c1">// Image of the object</span>
 </code></pre></div>
 <ol>
 <li>
-<p><strong>Save the state (optional)</strong>.  If you are creating an image checkpoint, you may want to save the image to a file.  </p>
+<p><strong>Save the state (optional)</strong>. If you are creating an image checkpoint, you might want to save the image to a file.</p>
 </li>
 <li>
 <p><strong>Compare</strong>. Use the <strong>ImageWrapper</strong> class to compare images.</p>
 </li>
 <li>
-<p><strong>Write an Assert Statement</strong>. Make an appropriate call to one of <strong>Tester.Assert</strong> methods. Besides a Boolean condition, pass additional data to be placed in the <a href="../writing_to_the_report/">Report</a>. Read about <a href="../../Libraries/Tester/#assert">Tester.Assert syntax</a> in the Libraries documentation part.</p>
+<p><strong>Write an Assert Statement</strong>. Make an appropriate call to one of the <code>Tester.Assert</code> methods. In addition to a Boolean condition, pass any additional data to be included in the <a href="../writing_to_the_report/">Report</a>. Read about <a href="../../Libraries/Tester/#assert">Tester.Assert syntax</a> in the Libraries documentation.</p>
 </li>
 </ol>
 <h2 id="example-simple-property-checkpoint">Example: Simple Property Checkpoint<a class="headerlink" href="#example-simple-property-checkpoint" title="Permanent link">&para;</a></h2>
@@ -11474,7 +11498,7 @@
 <p><img alt="bitmap fail" src="../img/assertion_bitmap_fail.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB330.aspx">KB330</a> Compare two SpreadSheets in Rapise</li>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB330.aspx">KB330</a> Compare two Spreadsheets in Rapise</li>
 <li>The <a href="../sample_tests/">test samples</a> include a <strong>UsingImageCheckpoint</strong> test</li>
 <li><a href="../verify_object_properties/">Verifying Object Properties</a></li>
 <li><a href="../writing_to_the_report/">Writing to the Report</a></li>

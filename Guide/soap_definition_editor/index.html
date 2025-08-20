@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11143,6 +11155,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11464,37 +11488,37 @@
                 <h1 id="soap-definition-editor">SOAP Definition Editor<a class="headerlink" href="#soap-definition-editor" title="Permanent link">&para;</a></h1>
 <p><img alt="soap_definition_editor" src="../img/soap_definition_editor1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>The <strong>SOAP Definition Editor</strong> allows you to edit <a href="../soap_web_services/">SOAP web service</a> definition files (<code>.soap</code>) that contain data downloaded from SOAP Web Service Definition Language (WSDL) URLs.</p>
+<p>The <strong>SOAP Definition Editor</strong> allows you to edit <a href="../soap_web_services/">SOAP web service</a> definition files (<code>.soap</code>) that contain definitions downloaded from WSDL (Web Service Definition Language) URLs.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>Use the <a href="../dialog_add_web_service/">Add Web Service Dialog</a> to create a new SOAP definition (<code>.soap</code>) file.  The definition file will be opened in a <strong>SOAP Editor</strong> in the <a href="../content_view/">Content View</a>.</p>
-<p>Or, you can double-click on an existing .soap file in the <a href="../test_files_dialog/">Test Files View</a> explorer window.  The definition file will be opened in a <strong>SOAP Editor</strong> in the <a href="../content_view/">Content View</a>.  The <a href="../toolbar_soap/">SOAP Toolbar</a> will also open.</p>
+<p>Use the <a href="../dialog_add_web_service/">Add Web Service Dialog</a> to create a new SOAP definition (<code>.soap</code>) file. The definition file will be opened in a <strong>SOAP Editor</strong> in the <a href="../content_view/">Content View</a>.</p>
+<p>Alternatively, you can double-click on an existing <code>.soap</code> file in the <a href="../test_files_dialog/">Test Files View</a> explorer window. The file will open in a <strong>SOAP Editor</strong> within the <a href="../content_view/">Content View</a>. The <a href="../toolbar_soap/">SOAP Toolbar</a> will also open.</p>
 <h2 id="invoke">Invoke<a class="headerlink" href="#invoke" title="Permanent link">&para;</a></h2>
 <p><img alt="soap_definition_editor_invoke" src="../img/soap_definition_editor3.png" /></p>
-<p>The invoke tab lets you visually choose a specific SOAP operation and execute it. It has the following sections:</p>
+<p>The Invoke tab allows you to visually select a specific SOAP operation and execute it. It has the following sections:</p>
 <ul>
 <li>
-<p><strong>Input</strong> - You can expand the various SOAP operations and see the input headers and body parameters that need to be sent to the function. You can click on each parameter and supply a value on the right-hand pane.</p>
+<p><strong>Input</strong> - You can expand the various SOAP operations and see the input headers and body parameters that must be sent to the function. Click on each parameter to supply a value in the right-hand pane.</p>
 </li>
 <li>
-<p><strong>Output</strong> - You can expand the various SOAP operations and see the output headers and result that should be returned from the operation (if successful). You can click on each header or the body and see the type of data returned.</p>
+<p><strong>Output</strong> - You can expand the various SOAP operations and see the output headers and results expected from the operation (if successful). Click on each header or the body to view the type of data returned.</p>
 </li>
 <li>
-<p><code>Invoke</code> - Once you have supplied the appropriate values, click the Invoke button send the SOAP request and get the data back from the request.</p>
+<p><code>Invoke</code> - Once you have supplied the appropriate values, click the <code>Invoke</code> button to send the SOAP request and receive the response data.</p>
 </li>
 <li>
-<p><code>Record</code> - Clicking this button after a successful invoke of the operation will add it to the list of recorded test scripts shown in the <a href="#soap-script-steps">SOAP Script Steps</a> output tab.</p>
+<p><code>Record</code> - Clicking this button after a successful invocation of the operation will add it to the list of recorded test steps shown in the <a href="#soap-script-steps">SOAP Script Steps</a> tab.</p>
 </li>
 <li>
-<p><code>Verify</code> - Clicking this button after the Record will add a <code>Tester.Assert(...)</code> <a href="../checkpoints/">verification checkpoint</a> to the recorded test script. This will make Rapise automatically verify all of the returned values.</p>
+<p><code>Verify</code> - Clicking this button after clicking the <code>Record</code> button will add a <code>Tester.Assert(...)</code> <a href="../checkpoints/">verification checkpoint</a> to the recorded test script. This ensures Rapise automatically verifies all returned values.</p>
 </li>
 </ul>
 <h2 id="request-response">Request / Response<a class="headerlink" href="#request-response" title="Permanent link">&para;</a></h2>
-<p>This tab displays the raw SOAP XML request and response. When a SOAP operation fails, this is useful when debugging since it lets you see the raw data being sent to the web service:</p>
+<p>This tab displays the raw SOAP XML request and response. When a SOAP operation fails, this is useful when debugging since it allows you to view the raw data exchanged with the web service:</p>
 <p><img alt="soap_definition_editor_request_response" src="../img/soap_definition_editor4.png" /></p>
-<p>Typically you will want to view this information in either <strong>Raw</strong> or <strong>XML</strong> modes since SOAP doesn't support JSON as a serialization format.</p>
+<p>Typically, you will want to view this information in either <strong>Raw</strong> or <strong>XML</strong> modes since SOAP does not support JSON as a serialization format.</p>
 <p><img alt="soap_definition_editor_request_response2" src="../img/soap_definition_editor5.png" /></p>
 <h2 id="response">Response<a class="headerlink" href="#response" title="Permanent link">&para;</a></h2>
-<p>The HTTP Response in SOAP XML format is formatted and displayed in the bottom section:</p>
+<p>The HTTP response, formatted in SOAP XML, is displayed in the bottom section:</p>
 <p><img alt="soap_definition_editor_response_body" src="../img/soap_definition_editor7.png" /></p>
 <p>This displays the output from the last web service request. It has several tabs:</p>
 <ul>
@@ -11503,7 +11527,7 @@
 <li><strong>SOAP Script Steps</strong></li>
 </ul>
 <h3 id="response-header">Response Header<a class="headerlink" href="#response-header" title="Permanent link">&para;</a></h3>
-<p>Displays a list of the HTTP response headers (name and value). If the request received a 200 OK code back, it's displayed in green, if it receives an error code back, it's displayed in red.</p>
+<p>Displays a list of the HTTP response headers (name and value). If the request receives a <code>200 OK</code> code, it is displayed in green; if it receives an error code, it is displayed in red.</p>
 <p><img alt="soap_definition_editor_response_headers" src="../img/soap_definition_editor6.png" /></p>
 <h3 id="response-body">Response Body<a class="headerlink" href="#response-body" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11511,31 +11535,31 @@
 <p><strong>Raw</strong> - Displays the raw text of the HTTP response body received from the server.</p>
 </li>
 <li>
-<p><strong>XML</strong> - If the received body content is identified as XML, this tab displays nicely formatted XML that is easier to read than the raw response body.</p>
+<p><strong>XML</strong> - If the received body content is identified as XML, this tab displays well-formatted XML, which is easier to read than the raw response body.</p>
 </li>
 </ul>
 <h3 id="soap-script-steps">SOAP Script Steps<a class="headerlink" href="#soap-script-steps" title="Permanent link">&para;</a></h3>
 <p><img alt="toolbar-soap-scriptsteps" src="../img/tutorial_soap_web_services11.png" /></p>
-<p>The Script Steps tab lets you see the list of recorded SOAP operations and use them to create your <a href="../scripting/">test script</a> in the main test file.</p>
+<p>The Script Steps tab allows you to view the list of recorded SOAP operations and use them to generate a <a href="../scripting/">test script</a> in the main test file.</p>
 <ul>
 <li>
-<p><strong>Create Script</strong> - This takes all of the recorded steps and automatically creates the matching JavaScript code in your test script.</p>
+<p><strong>Create Script</strong> - This takes all recorded steps and automatically generates the matching JavaScript code in your test script.</p>
 </li>
 <li>
-<p><strong>Remove Step</strong> - This removes the recorded step from the script box</p>
+<p><strong>Remove Step</strong> - This removes the recorded step from the list.</p>
 </li>
 <li>
-<p><strong>Clean</strong> - This removes all of the recorded steps from the script box.</p>
+<p><strong>Clean</strong> - This removes all recorded steps from the list.</p>
 </li>
 </ul>
-<p>Each of the steps displayed in the script box will contain the name of the SOAP operation along with the specified parameters in JSON format. Steps displayed in <strong>bold</strong> with an asterisk also have a <a href="../checkpoints/">verification point recorded</a>. That means when the script is generated, it will include <code>Tester.Assert</code> functions to verify the results.</p>
+<p>Each step displayed in the list contains the name of the SOAP operation along with its specified parameters in JSON format. Steps displayed in <strong>bold</strong> with an asterisk indicate a <a href="../checkpoints/">verification point</a> has been recorded. This means that when the script is generated, it will include <code>Tester.Assert</code> functions to verify the results.</p>
 <h2 id="operation-explorer">Operation Explorer<a class="headerlink" href="#operation-explorer" title="Permanent link">&para;</a></h2>
 <p><img alt="soap_definition_editor_explorer" src="../img/soap_web_services3.png" /></p>
-<p>This section lets you see all of the SOAP web service endpoints in the current WSDL file and view the individual operations.</p>
+<p>This section allows you to view all SOAP web service endpoints in the current WSDL file and the individual operations.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>For more info on SOAP Web Services, see <a href="../soap_web_services/">SOAP Web Services</a>.</p>
+<p>For more information about SOAP Web Services, see <a href="../soap_web_services/">SOAP Web Services</a>.</p>
 </li>
 <li>
 <p>For a tutorial on creating a SOAP web service test, see the <a href="../tutorial_soap_web_services/">Web Services SOAP Tutorial</a>.</p>

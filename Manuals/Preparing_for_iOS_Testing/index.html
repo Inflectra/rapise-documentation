@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11112,6 +11124,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11404,59 +11428,53 @@
                 
                 
                 <h1 id="preparing-environment-for-ios-mobile-testing-with-rapise">Preparing Environment for iOS Mobile Testing with Rapise<a class="headerlink" href="#preparing-environment-for-ios-mobile-testing-with-rapise" title="Permanent link">&para;</a></h1>
-<p>Rapise lets you record and play automated tests against native applications on a variety of mobile devices using Apple iOS. Rapise
-gives you the flexibility to test your applications on either real or simulated devices.</p>
-<p>This section explains <strong>how to setup your environment for mobile testing</strong>, once that is done, you can the go to the section that
-explains the process for using Rapise to actually perform mobile testing.</p>
-<p>Rapise uses a third-party open-source tool called <a href="http://appium.io&gt;">Appium</a> that is used to actually host the mobile devices and Rapise essentially communicates to the device via Appium.</p>
+<p>Rapise lets you record and play automated tests against native applications on a variety of mobile devices running Apple iOS. Rapise gives you the flexibility to test your applications on either real or simulated devices.</p>
+<p>This section explains <strong>how to set up your environment for mobile testing</strong>. Once that is done, you can then go to the section that explains the process for using Rapise to perform mobile testing.</p>
+<p>Rapise uses a third-party, open-source tool called <a href="http://appium.io">Appium</a> that is used to host mobile devices, and Rapise communicates with them via Appium.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The latest manual for configuring iOS testing is available in the <a href="https://www.inflectra.com/Support/KnowledgeBase/KB805.aspx">knowledge base</a>.</p>
 </div>
 <h2 id="testing-architecture">Testing Architecture<a class="headerlink" href="#testing-architecture" title="Permanent link">&para;</a></h2>
-<p>Since Rapise runs on Windows computers (PC) and iOS devices (both real and simulated) can only be tested on an Apple Macintosh (Mac) computer, it is necessary that you install <strong>Appium</strong> and <strong>Apple Xcode</strong> onto the Mac and connect to Appium over the network from Rapise running on your PC.</p>
-<p>For Physical iOS devices the architecture looks like:</p>
+<p>Since Rapise runs on Windows computers (PCs) and iOS devices (both real and simulated) can only be tested on an Apple Macintosh (Mac) computer, you need to install <strong>Appium</strong> and <strong>Apple Xcode</strong> onto the Mac and connect to Appium over the network from Rapise running on your PC.</p>
+<p>For physical iOS devices, the architecture looks like:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing1.png" /></p>
-<p>For simulated iOS devices (using the XCode iOS Simulator) the architecture looks like:</p>
+<p>For simulated iOS devices (using the Xcode iOS Simulator), the architecture looks like:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing2.png" /></p>
 <h2 id="using-a-mac-to-host-ios-simulator-and-devices">Using a Mac to Host iOS Simulator and Devices<a class="headerlink" href="#using-a-mac-to-host-ios-simulator-and-devices" title="Permanent link">&para;</a></h2>
-<p>The first thing you need to do is install Xcode from the Apple Mac app store. Make sure you include the <strong>iOS SDK</strong>, and also the <strong>iOS
-Simulator</strong> if you intend to test simulated iOS devices.</p>
+<p>The first thing you need to do is install Xcode from the Apple Mac App Store. Make sure you include the <strong>iOS SDK</strong> and the <strong>iOS Simulator</strong> if you intend to test on simulated iOS devices.</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing3.png" /></p>
-<p><em>(Please refer to the <a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/">Apple tutorial</a> if you are writing your first iOS application and need an introduction into how to develop for iOS).</em></p>
+<p><em>(Please refer to the <a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/">Apple tutorial</a> if you are writing your first iOS application and need an introduction to developing for iOS).</em></p>
 <h2 id="get-the-autios-source-code">Get the AUTiOS Source Code<a class="headerlink" href="#get-the-autios-source-code" title="Permanent link">&para;</a></h2>
-<p>Sample iOS application is hosted in <a href="https://github.com/Inflectra/AUTiOS">AUTiOS Repository</a>.</p>
+<p>The sample iOS application is hosted in the <a href="https://github.com/Inflectra/AUTiOS">AUTiOS Repository</a>.</p>
 <p>Launch Xcode on the Mac and check out the application from the repository:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing4.png" /></p>
-<p>Before you can actually build and deploy this project, you will need to register for an <strong>Apple ID</strong> and setup an Apple Developer account. You should check with your company to see if they have already joined the <strong>Apple iOS Developer Program</strong>, if not, you will need to join yourself and become a member. You can learn more about this at the <a href="https://developer.apple.com">Apple developer website</a>.</p>
+<p>Before you can build and deploy this project, you will need to register for an <strong>Apple ID</strong> and set up an Apple Developer account. You should check with your company to see if they have already joined the <strong>Apple iOS Developer Program</strong>; if not, you will need to join and become a member. You can learn more about this at the <a href="https://developer.apple.com">Apple developer website</a>.</p>
 <h2 id="join-your-ios-development-team">Join Your iOS Development Team<a class="headerlink" href="#join-your-ios-development-team" title="Permanent link">&para;</a></h2>
-<p>Assuming that either you or your company already has signed up for the iOS Developer Program, you will need to ask the administrator of your account (it might be you) to send an invitation to you if you are not already a member. The link for accepting such an invitation is
-typically:</p>
+<p>Assuming that either you or your company has already signed up for the iOS Developer Program, you will need to ask the administrator of your account (it might be you) to send you an invitation if you are not already a member. The link for accepting such an invitation is typically:</p>
 <p><a href="https://developer.apple.com/programs/start/jointeam/index.php?success=%2Fios%2Finvitation%2Faccept.action">https://developer.apple.com/programs/start/jointeam/index.php?success=%2Fios%2Finvitation%2Faccept.action</a></p>
-<p>Click on this link and accept the invitation.</p>
-<p>Meanwhile, back in Xcode Use the <strong>‘Add an Account…’</strong> to login with your <strong>Apple ID</strong>:</p>
+<p>Click this link and accept the invitation.</p>
+<p>Meanwhile, back in Xcode, use the <strong>‘Add an Account…’</strong> option to log in with your <strong>Apple ID</strong>:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing5.png" /></p>
 <h2 id="building-and-deploying-on-a-simulated-device">Building and Deploying on a Simulated Device<a class="headerlink" href="#building-and-deploying-on-a-simulated-device" title="Permanent link">&para;</a></h2>
 <p>Now that you have signed into Xcode using your developer account, you can select a simulated device and run the project on it:</p>
 <p><img alt="http://content.screencast.com/users/JingRegister/folders/Jing/media/75fc3d4f-9147-46c1-8ec8-b0aaff8edc46/00000019.png" src="../img/Preparing_for_iOS_Testing6.png" /></p>
-<p>Once you have selected the simulated iOS device you want to use, click the <strong>Product &gt; Build</strong> option to build the app for the targeted
-device. You can use the <strong>Run</strong> option to make sure that the app actually launches on this device before testing it with Rapise.</p>
+<p>Once you have selected the simulated iOS device you want to use, click the <strong>Product &gt; Build</strong> option to build the app for the targeted device. You can use the <strong>Run</strong> option to make sure that the app launches on this device before testing it with Rapise.</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing7.png" /></p>
-<p>Assuming that this is successful, you will see the AUTiOS running in the iOS Simulator:</p>
+<p>Assuming that this is successful, you will see AUTiOS running in the iOS Simulator:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing8.png" width="255px" /></p>
-<p>If you are only going to use Simulated devices (not recommended) then you can skip the next section and just continue with setting up
-<strong>Appium</strong>, as described in the main Mobile Testing topic.</p>
+<p>If you are only going to use simulated devices (not recommended), then you can skip the next section and continue with setting up <strong>Appium</strong>, as described in the main Mobile Testing topic.</p>
 <h2 id="building-and-deploying-on-a-physical-device">Building and Deploying on a Physical Device<a class="headerlink" href="#building-and-deploying-on-a-physical-device" title="Permanent link">&para;</a></h2>
-<p>Login with your <strong>Apple ID</strong> to <a href="http://developer.apple.com">http://developer.apple.com</a></p>
+<p>Log in to <a href="http://developer.apple.com">http://developer.apple.com</a> with your <strong>Apple ID</strong>.</p>
 <p>Choose Certificates, Identifiers &amp; Profiles:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing9.png" /></p>
 <p>Select Devices:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing10.png" width="278px" /></p>
 <p>Add your device's UDID to the list of registered iOS devices in the developer account:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing11.png" /></p>
-<p>You can find out the UDID by connecting it to the Mac and viewing the device inside Xcode.</p>
+<p>You can find the UDID by connecting the device to your Mac and viewing it inside Xcode.</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing12.png" /></p>
-<p>Then, back in Xcode choose your physical device, and use the <strong>Product &gt; Build and Run</strong> option to test that the app launches on the device:</p>
+<p>Then, back in Xcode, choose your physical device and use the <strong>Product &gt; Build and Run</strong> option to test that the app launches on the device:</p>
 <p><img alt="" src="../img/Preparing_for_iOS_Testing13.png" /></p>
 <h2 id="installing-appium-on-the-mac">Installing Appium on the Mac<a class="headerlink" href="#installing-appium-on-the-mac" title="Permanent link">&para;</a></h2>
 <p>The first thing you need to do is install the latest version of Appium. The easiest way to install it is to use Terminal.</p>
@@ -11464,7 +11482,7 @@ device. You can use the <strong>Run</strong> option to make sure that the app ac
 &gt;<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>appium
 </code></pre></div>
 <p>More <a href="http://appium.io/docs/en/about-appium/getting-started/index.html#installing-appium">about Appium installation</a>.</p>
-<p><em>You are now ready to start mobile testing of your iOS simulator or device.</em></p>
+<p><em>You are now ready to start mobile testing on your iOS simulator or device.</em></p>
                 
               
               

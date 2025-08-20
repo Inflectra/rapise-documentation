@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11111,6 +11123,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11399,21 +11423,21 @@
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>If your application doesn't work with the predefined <a href="../recording_library/">Recording Libraries</a>, you can create your own.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Your library can provide <strong>Basic</strong>, <strong>Advanced</strong> or <strong>Full</strong> support for your application.  Basic support allows you to define a global object with common functionality. Advanced allows enables <a href="../object_learning/">Learn</a> of application-specific object types, <a href="../scripting/">write test scripts</a>, and <a href="../playback/">Playback</a> your scripts. Full support allows you to <a href="../recording/">Record</a> as well.</p>
-<p>Create your library via <code>Create... &gt; User Lib...</code> menu.</p>
+<p>Your library can provide <strong>Basic</strong>, <strong>Advanced</strong>, or <strong>Full</strong> support for your application. Basic support allows you to define a global object with common functionality. Advanced support enables you to <a href="../object_learning/">Learn</a> application-specific object types, <a href="../scripting/">write test scripts</a>, and <a href="../playback/">Playback</a> your scripts. Full support also allows you to <a href="../recording/">Record</a>.</p>
+<p>Create your library using the <code>Create... &gt; User Lib...</code> menu.</p>
 <p><img alt="create lib" src="../img/tutorial_custom_library_create_userlib.png" /></p>
 <h2 id="basic-support">Basic Support<a class="headerlink" href="#basic-support" title="Permanent link">&para;</a></h2>
-<p>Define one or many application-specific <a href="../global_objects/">Global Objects</a>.</p>
+<p>Define one or more application-specific <a href="../global_objects/">Global Objects</a>.</p>
 <h2 id="advanced-support">Advanced Support<a class="headerlink" href="#advanced-support" title="Permanent link">&para;</a></h2>
 <p><strong>Add a Matcher Rule</strong> to the library for every object type in your application. The <code>SeSMatcherRule</code> includes information to identify the object and a set of behaviors.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="o">*</span><span class="nx">yourApplicationRule</span><span class="o">*</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">SeSMatcherRule</span><span class="p">(</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">object_type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*yourAppObject*&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">classname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*yourAppFrame*&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//You can use a [regular expression](regular_expressions.md) here</span>
+<span class="w">    </span><span class="nx">classname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*yourAppFrame*&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// You can use a [regular expression](regular_expressions.md) here</span>
 <span class="w">    </span><span class="nx">behavior</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="o">*</span><span class="nx">yourAppBehavior</span><span class="o">*</span><span class="p">]</span>
 <span class="p">})</span>
 </code></pre></div>
-<p><strong>Override Actions</strong>: Override actions in <strong>yourAppBehavior</strong> (above). The action definitions you provides will be used during <a href="../playback/">Playback</a>. Overriding actions does not affect recording.</p>
+<p><strong>Override Actions</strong>: Override actions in <strong>yourAppBehavior</strong> (above). The action definitions you provide will be used during <a href="../playback/">Playback</a>. Overriding actions does not affect recording.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">HTMLFirefoxBehavior</span><span class="w"> </span><span class="o">=</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">actions</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span>
@@ -11427,7 +11451,7 @@
 <span class="w"> </span><span class="p">}</span>
 </code></pre></div>
 <h2 id="full-support">Full Support<a class="headerlink" href="#full-support" title="Permanent link">&para;</a></h2>
-<p><strong>Enable Recording</strong>:  You can enable recording in two ways. If your application notifies the Accessibility Events interface about application events, you can override events in the <strong>behavior</strong> section of <strong>SeSMatcherRules</strong>:</p>
+<p><strong>Enable Recording</strong>: You can enable recording in two ways. If your application notifies the Accessibility Events interface about application events, you can override events in the <strong>behavior</strong> section of <code>SeSMatcherRule</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">newBehavior</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">actions</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="cm">/*section deleted for brevity*/</span><span class="p">}],</span>
 <span class="w">    </span><span class="nx">events</span><span class="o">:</span>
@@ -11464,13 +11488,13 @@
 <p><a href="https://www.inflectra.com/Ideas/Entry/techtuesday-automated-testing-of-complex-web-ui-co-479.aspx">Another Example of Creating a Custom Library</a></p>
 </li>
 <li>
-<p>To see what actions and events can be overridden, see <strong>SeSBehavior.js</strong> (in the Rapise <a href="../customizable_engine/">Engine)</a>.</p>
+<p>To see which actions and events can be overridden, see <strong>SeSBehavior.js</strong> (in the Rapise <a href="../customizable_engine/">Engine)</a>.</p>
 </li>
 <li>
-<p>Check the <strong>C:\Program Files(x86)\Inflectra\Rapise\Engine\Lib</strong> directory as an example of rapise core libraries.</p>
+<p>Check the <strong>C:\Program Files(x86)\Inflectra\Rapise\Engine\Lib</strong> directory for examples of Rapise core libraries.</p>
 </li>
 <li>
-<p>You can alter the behavior of an action without creating an entire library.  See the <a href="../actions/">Actions</a> section for more details.</p>
+<p>You can alter the behavior of an action without creating an entire library. See the <a href="../actions/">Actions</a> section for more details.</p>
 </li>
 </ul>
                 

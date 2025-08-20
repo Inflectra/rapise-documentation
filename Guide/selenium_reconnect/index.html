@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11108,6 +11120,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11392,55 +11416,55 @@
                 
                 
                 <h1 id="reconnect-webdriver-session">Reconnect WebDriver Session<a class="headerlink" href="#reconnect-webdriver-session" title="Permanent link">&para;</a></h1>
-<p>Since <strong>version 6.2</strong> Rapise is able to reconnect WebDriver sessions. It makes possible many usage scenarios that save a lot of time because you do not need to relaunch the browser and perform manual steps to reach desired application state.</p>
-<p>This feature is especially handy when you <a href="https://www.inflectra.com/Support/KnowledgeBase/KB278.aspx">use it with mobile browsers</a>.</p>
+<p>As of <strong>version 6.2</strong>, Rapise can reconnect WebDriver sessions. This enables many usage scenarios which save a significant amount of time by eliminating the need to relaunch the browser and perform manual steps to reach the desired application state.</p>
+<p>This feature is especially handy when <a href="https://www.inflectra.com/Support/KnowledgeBase/KB278.aspx">used with mobile browsers</a>.</p>
 <h2 id="maintenance-scenario">Maintenance Scenario<a class="headerlink" href="#maintenance-scenario" title="Permanent link">&para;</a></h2>
 <ol>
-<li>You run a test and it fails at some point because some object is not found on screen.</li>
+<li>You run a test, and it fails at some point because an object is not found on the screen.</li>
 <li>You use the <a href="../web_spy/">Web Spy</a> to reconnect to the application and analyze the cause of the failure.</li>
 <li>You use the Web Spy to re-learn the object.</li>
-<li>You run the test exactly from the step where it stopped working to make sure the test is fixed.</li>
+<li>You run the test from the exact step where it stopped working to confirm the fix.</li>
 </ol>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwFwj6ihzq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="reusing-session-to-run-multiple-tests">Reusing Session to Run Multiple Tests<a class="headerlink" href="#reusing-session-to-run-multiple-tests" title="Permanent link">&para;</a></h2>
-<p>Since application launch is time consuming operation in mobile testing you may run multiple tests on the same browser instance.</p>
+<p>Since application launch is a time-consuming operation in mobile testing, you can run multiple tests on the same browser instance.</p>
 <ol>
-<li>You run a test and it leaves the browser running.</li>
-<li>You run next test and so on.</li>
+<li>You run a test, and it leaves the browser running.</li>
+<li>You run the next test, and so on.</li>
 </ol>
-<p>This approach has pros and cons. We do not recommend to use it for completely independent test cases. It makes sense, however, to use it to break down a long test into separate modules and run them sequentially.</p>
+<p>This approach has its pros and cons. We do not recommend using it for completely independent test cases. It makes sense, however, to use it to break down a long test into separate modules and run them sequentially.</p>
 <h2 id="how-it-works">How it Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Rapise 7.0 handles browser session automatically. Until you do <code>Navigator.Close()</code> the session is kept alive and Rapise can reconnect to it.</p>
+<p>Rapise 7.0 handles browser sessions automatically. Until <code>Navigator.Close()</code> is called, the session is kept alive and Rapise can reconnect to it.</p>
 </div>
 <h3 id="rapise-6x">Rapise 6.x<a class="headerlink" href="#rapise-6x" title="Permanent link">&para;</a></h3>
-<p>To leave application running and save session information use <a href="/Libraries/WebDriver/#SaveSession">WebDriver.SaveSession</a> call in <a href="../understanding_the_script/">TestFinish</a> block of your test.</p>
+<p>To leave the application running and save session information, use the <a href="../../Libraries/WebDriver/#SaveSession">WebDriver.SaveSession</a> call within the <a href="../understanding_the_script/">TestFinish</a> block of your test.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestFinish</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">SaveSession</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>To reconnect to the running application use <a href="/Libraries/WebDriver/#ReconnectSession">WebDriver.ReconnectSession</a> call in <a href="../understanding_the_script/">TestPrepare</a> block of your test.</p>
+<p>To reconnect to the running application, use the <a href="../../Libraries/WebDriver/#ReconnectSession">WebDriver.ReconnectSession</a> call within the <a href="../understanding_the_script/">TestPrepare</a> block of your test.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>If you want Rapise to launch a new browser session if there is no saved one pass <code>true</code> to <a href="/Libraries/WebDriver/#ReconnectSession">WebDriver.ReconnectSession</a> call.</p>
+<p>If you want Rapise to launch a new browser session if no session is saved, pass <code>true</code> to the <a href="../../Libraries/WebDriver/#ReconnectSession">WebDriver.ReconnectSession</a> call.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestPrepare</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">ReconnectSession</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <blockquote>
-<p>Note: <a href="../understanding_the_script/">TestPrepare</a>  block is executed when you do recording or execution of a test. It is also executed if you do selective execution of RVL (<a href="../rvl_editor/#context-menu">Play Selection, Play From Here, etc.</a>).</p>
+<p>Note: The <a href="../understanding_the_script/">TestPrepare</a> block is executed when recording or executing a test. It is also executed during selective execution of RVL (<a href="../rvl_editor/#context-menu">Play Selection, Play From Here, etc.</a>).</p>
 </blockquote>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../selenium_webdriver/">Selenium WebDriver</a>, for an overview of Selenium based testing in Rapise.</li>
-<li><a href="../web_spy/">Web Spy</a>, for information on how to inspect state of an application loaded into a browser.</li>
+<li><a href="../selenium_webdriver/">Selenium WebDriver</a>, for an overview of Selenium-based testing in Rapise.</li>
+<li><a href="../web_spy/">Web Spy</a>, for information on how to inspect the state of an application loaded into a browser.</li>
 </ul>
                 
               

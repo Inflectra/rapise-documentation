@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11262,6 +11274,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11589,46 +11613,46 @@
                 
                 <h1 id="selenium-settings-dialog">Selenium Settings Dialog<a class="headerlink" href="#selenium-settings-dialog" title="Permanent link">&para;</a></h1>
 <h2 id="selenium-profiles">Selenium Profiles<a class="headerlink" href="#selenium-profiles" title="Permanent link">&para;</a></h2>
-<p>Rapise can <a href="../cross_browser_testing/">playback web tests</a> on Selenium nodes. Configure each Selenium node you need for testing in a separate profile using <code>Selenium Settings Dialog</code>.</p>
-<p>This dialog box displays the list of <code>Selenium Profiles</code> and lets you create a new profile, modify a profile or make a new profile based on an existing one.</p>
+<p>Rapise can <a href="../cross_browser_testing/">playback web tests</a> on Selenium nodes. Configure each Selenium node you need for testing in a separate profile using the <code>Selenium Settings Dialog</code>.</p>
+<p>This dialog box displays the list of <code>Selenium Profiles</code> and allows you to create a new profile, modify an existing one, or create a new profile based on an existing one.</p>
 <p><img alt="selenium_settings" src="../img/selenium_webdriver2.png" /></p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
 <p>You can open this dialog box from the Rapise <code>Settings &gt; Selenium</code> menu.</p>
 <h2 id="menu-options">Menu Options<a class="headerlink" href="#menu-options" title="Permanent link">&para;</a></h2>
 <p>This dialog box has the following menu options:</p>
 <ul>
-<li><strong>Select Profile</strong> - This dropdown list lets you select a different Selenium profile to be displayed in the dialog.</li>
-<li><strong>Save</strong> - This button will save the changes to the current Selenium profile.</li>
-<li><strong>Test</strong> - This button will test the Connection (URL) from Rapise to <a href="../selenium_webdriver/">Selenium WebDriver</a> (which is used to connect to the web browsers) and the connection from Selenium to the web browser.</li>
-<li><strong>Duplicate</strong> - This button will create a new Selenium profile based on the currently viewed one.</li>
-<li><strong>Create</strong> - This button will create a new empty Selenium profile that you can edit.</li>
-<li><strong>Rename</strong> - This button will change the name of the current Selenium profile being edited.</li>
-<li><strong>Delete</strong> - This button will delete the currently displayed Selenium profile. There is no undo, so be careful!</li>
+<li><strong>Select Profile</strong> - This dropdown list allows you to select a different Selenium profile to display in the dialog.</li>
+<li><strong>Save</strong> - This button saves the changes to the current Selenium profile.</li>
+<li><strong>Test</strong> - This button tests the connection (URL) from Rapise to <a href="../selenium_webdriver/">Selenium WebDriver</a> (which connects to web browsers) and the connection from Selenium to the web browser.</li>
+<li><strong>Duplicate</strong> - This button creates a new Selenium profile based on the currently viewed one.</li>
+<li><strong>Create</strong> - This button creates a new empty Selenium profile that you can edit.</li>
+<li><strong>Rename</strong> - This button changes the name of the current Selenium profile being edited.</li>
+<li><strong>Delete</strong> - This button deletes the currently displayed Selenium profile. There is no undo, so exercise caution!</li>
 </ul>
 <h2 id="local-selenium-profiles">Local Selenium Profiles<a class="headerlink" href="#local-selenium-profiles" title="Permanent link">&para;</a></h2>
-<p>Rapise version 6.3+ enables creation of profiles local to a test. It allows storing profiles together with tests (inside <code>SpiraTest</code> or <code>Git</code> repository) and eliminates the need to configure profiles manually on each execution host.</p>
-<p>To create a local profile just press <code>Duplicate</code> for one of global profiles and set <code>Local</code> checkbox before clicking <code>OK</code> button. Global and Local profile may have same name, in this case Local profile is used for execution.</p>
+<p>Rapise version 6.3+ enables the creation of profiles local to a test. It allows storing profiles together with tests (inside a <code>SpiraTest</code> or <code>Git</code> repository) and eliminates the need to manually configure profiles on each execution host.</p>
+<p>To create a local profile, simply press <code>Duplicate</code> for one of the global profiles and select the <code>Local</code> checkbox before clicking the <code>OK</code> button. Global and Local profiles may have the same name; in this case, the Local profile is used for execution.</p>
 <p><img alt="Create Local Selenium Profile" src="../img/selenium_settings_dialog_create_local_selenium_profile.png" /></p>
-<p>If a test contains local Selenium profiles they can be seen in the dropdowns.</p>
+<p>If a test contains local Selenium profiles, they can be seen in the dropdowns.</p>
 <p><img alt="Playback Profiles" src="../img/selenium_settings_dialog_select_local_selenium_profile.png" /></p>
 <p><img alt="" src="../img/selenium_settings_dialog_selenium_profile_list_local_global.png" /></p>
-<p>Local Selenium profiles are stored inside <code>&lt;Test Root&gt;\Profiles\SeleniumProfiles</code> folder.</p>
+<p>Local Selenium profiles are stored inside the <code>&lt;Test Root&gt;\Profiles\SeleniumProfiles</code> folder.</p>
 <h2 id="profile-options">Profile Options<a class="headerlink" href="#profile-options" title="Permanent link">&para;</a></h2>
 <h3 id="connection">Connection<a class="headerlink" href="#connection" title="Permanent link">&para;</a></h3>
-<p>This section lets you enter the URI used to connect to the <a href="../selenium_webdriver/">Selenium WebDriver</a> server which hosts the web browsers being tested. It is typically of the form: </p>
-<p><div class="highlight"><pre><span></span><code>http://server:4444/wd/hub
+<p>This section allows you to enter the URI used to connect to the <a href="../selenium_webdriver/">Selenium WebDriver</a> server that hosts the web browsers being tested. It is typically in the form:</p>
+<div class="highlight"><pre><span></span><code>http://server:4444/wd/hub
 </code></pre></div>
-Where the port number used by Selenium is <code>4444</code> (default) and the <code>/wd/hub</code> suffix is added.</p>
+<p>Here, the port number used by Selenium is <code>4444</code> (default), and the <code>/wd/hub</code> suffix is added.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If you are using web browsers on the local machine (that is running Rapise) you don't need to enter in a URI and can leave the entire field blank.</p>
+<p>If you are using web browsers on the local machine (the one running Rapise), you do not need to enter a URI and can leave the entire field blank.</p>
 </div>
 <h3 id="shared">Shared<a class="headerlink" href="#shared" title="Permanent link">&para;</a></h3>
 <p>This section contains common capabilities.</p>
 <h3 id="browser-specific">Browser Specific<a class="headerlink" href="#browser-specific" title="Permanent link">&para;</a></h3>
-<p>In this section set browser specific options. Use <code>Chrome Specific</code> section for configuring both <code>Chrome</code> and <code>Edge</code> browsers.</p>
+<p>In this section, set browser-specific options. Use the <code>Chrome Specific</code> section for configuring both <code>Chrome</code> and <code>Edge</code> browsers.</p>
 <h3 id="browserstack-settings">BrowserStack Settings<a class="headerlink" href="#browserstack-settings" title="Permanent link">&para;</a></h3>
-<p>In addition, there are some settings, unique to running Selenium WebDriver tests through the BrowserStack cloud platform:</p>
+<p>In addition, there are some settings unique to running Selenium WebDriver tests through the BrowserStack cloud platform:</p>
 <p><img alt="selenium_settings_browserstack" src="../img/selenium_settings_dialog2.png" /></p>
 <ul>
 <li><strong><a href="https://www.browserstack.com/automate?utm_source=rapise&amp;utm_medium=partnered">BrowserStack</a></strong><ul>
@@ -11641,23 +11665,23 @@ Where the port number used by Selenium is <code>4444</code> (default) and the <c
 </li>
 </ul>
 <h2 id="parameterizing-a-profile">Parameterizing a Profile<a class="headerlink" href="#parameterizing-a-profile" title="Permanent link">&para;</a></h2>
-<p>Since Rapise 8.3 it is possible to use <a href="../Frameworks/parameters/">framework parameters</a> in browser profiles. The syntax is</p>
+<p>Since Rapise 8.3, it is possible to use <a href="../Frameworks/parameters/">framework parameters</a> in browser profiles. The syntax is:</p>
 <div class="highlight"><pre><span></span><code>{Parameter Name}
 </code></pre></div>
-<p>For example <a href="https://www.inflectra.com/Support/KnowledgeBase/KB686.aspx">permanent browser profile path</a> can be defined by a framework parameter and then used as</p>
+<p>For example, a <a href="https://www.inflectra.com/Support/KnowledgeBase/KB686.aspx">permanent browser profile path</a> can be defined by a framework parameter and then used as:</p>
 <div class="highlight"><pre><span></span><code>[&quot;user-data-dir={UserDataDir}&quot;]
 </code></pre></div>
-<p>Another example is setting <a href="https://www.inflectra.com/Support/KnowledgeBase/KB683.aspx">download folder location</a>.</p>
+<p>Another example is setting the <a href="https://www.inflectra.com/Support/KnowledgeBase/KB683.aspx">download folder location</a>.</p>
 <div class="highlight"><pre><span></span><code>{&quot;download.default_directory&quot;: &quot;{DownloadFolder}&quot;}
 </code></pre></div>
-<p>Note that the values of parameters may have to contain double backslash as they must be valid escaped JavaScript strings.</p>
+<p>Note that the values of parameters may need to contain a double backslash as they must be valid escaped JavaScript strings.</p>
 <div class="highlight"><pre><span></span><code>UserDataDir=C:\\ProgramData\\Inflectra\\Rapise\\Temp\\Chrome
 DownloadFolder=C:\\ProgramData\\Inflectra\\Rapise\\Temp\\Downloads
 </code></pre></div>
 <p><img alt="Profile with Parameters" src="../img/browser_profile_parameters.png" /></p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li>For the list of standard capabilities please refer to <a href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities">Selenium repository</a>.</li>
+<li>For a list of standard capabilities, please refer to the <a href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities">Selenium repository</a>.</li>
 </ul>
                 
               

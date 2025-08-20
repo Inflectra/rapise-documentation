@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1192,6 +1192,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11194,6 +11206,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11487,75 +11511,75 @@
                 
                 <h1 id="mobile-testing-using-android">Mobile Testing using Android<a class="headerlink" href="#mobile-testing-using-android" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Rapise lets you record and play automated tests against native applications on a variety of mobile devices using either <a href="../mobile_testing_ios/">Apple iOS</a> or <a href="./">Android</a>. Rapise gives you the flexibility to test your applications on either real or simulated devices.</p>
-<p>This tutorial is a <strong>simple example</strong> of using Rapise to record and playback a simple test against a sample <strong>Android application</strong> running on the <strong>Android Emulator</strong> on your local PC. It does not require any physical mobile devices and only uses the PC that you have already installed Rapise on. <em>(There is <a href="../mobile_testing2/">other documentation</a> that describes the full range of mobile testing options)</em>.</p>
+<p>Rapise allows you to record and play back automated tests on native applications across a variety of mobile devices, including <a href="../mobile_testing_ios/">Apple iOS</a> or <a href="./">Android</a>. Rapise gives you the flexibility to test your applications on either real or simulated devices.</p>
+<p>This tutorial provides a <strong>simple example</strong> of using Rapise to record and play back a basic test on a sample <strong>Android application</strong> running on the <strong>Android Emulator</strong> on your local PC. It does not require any physical mobile devices and only uses the PC where you have already installed Rapise. <em>(Other documentation describes the full range of mobile testing options)</em>.</p>
 <h2 id="setting-up-environment">Setting up Environment<a class="headerlink" href="#setting-up-environment" title="Permanent link">&para;</a></h2>
-<p>The first thing you need to do is <a href="/Manuals/Preparing_for_Android_Testing/">install Appium and Android Studio</a>.</p>
-<p>Launch <strong>Android Virtual Device Manager</strong> from the menu:</p>
+<p>First, you need to <a href="../../Manuals/Preparing_for_Android_Testing/">install Appium and Android Studio</a>.</p>
+<p>Launch the <strong>Android Virtual Device Manager</strong> from the menu:</p>
 <p><img alt="Menu Device Manager" src="../../Manuals/img/Preparing_for_Android_Testing6.png" width="227px" />
 <img alt="android virtual device manager windows" src="../../Manuals/img/Preparing_for_Android_Testing13.png" width="551px" /></p>
-<p>Use the <code>Create Virtual Device...</code> button to create a Virtual Device. Learn more about <a href="https://developer.android.com/studio/run/managing-avds">how to create and manage virtual devices</a>.</p>
-<p>You can then start the device and then connect to it using Rapise.</p>
+<p>Use the <code>Create Virtual Device...</code> button to create a virtual device. Learn more about <a href="https://developer.android.com/studio/run/managing-avds">how to create and manage virtual devices</a>.</p>
+<p>You can then start the device and connect to it using Rapise.</p>
 <h2 id="configure-the-mobile-profile">Configure the Mobile Profile<a class="headerlink" href="#configure-the-mobile-profile" title="Permanent link">&para;</a></h2>
-<p>To begin the actual mobile testing, <a href="../create_a_new_test/">create a new test</a>, using the <code>File &gt; Create New &gt; New Test</code> option in Rapise. Make sure you choose the mobile methodology option <strong>Mobile</strong>:</p>
+<p>To begin mobile testing, <a href="../create_a_new_test/">create a new test</a> using the <code>File &gt; Create New &gt; New Test</code> option in Rapise. Make sure you choose the <strong>Mobile</strong> methodology option:</p>
 <p><img alt="create new test dialog mobile selected" src="../img/tutorial_mobile_testing6.png" width="633px" /></p>
-<p>Once you have entered the name for the new test you will be asked to choose the mobile profile. Rapise ships with several default profiles, for now select the one that is closer to the device you want to test (we recommend the <strong>Android App Simulator</strong> generic profile):</p>
+<p>Once you have entered the name for the new test, you will be asked to choose the mobile profile. Rapise ships with several default profiles; for now, select the one that is closest to the device you want to test (we recommend the generic <strong>Android App Simulator</strong> profile):</p>
 <p><img alt="mobile choose profile android generic" src="../img/tutorial_mobile_testing7.png" width="470px" /></p>
-<p>When you click the <code>OK</code> button, Rapise will ask you to choose the Scripting Language:</p>
+<p>When you click the <code>OK</code> button, Rapise will prompt you to choose the Scripting Language:</p>
 <p><img alt="Scripting Language" src="../img/tutorial_mobile_testing8.png" width="482px" /></p>
-<p>Please choose the <strong>Rapise Visual Language (RVL).</strong> Rapise will then create a new mobile test with the <strong>Android App Simulator</strong> profile selected.</p>
+<p>Choose the <strong>Rapise Visual Language (RVL).</strong> Rapise will then create a new mobile test with the <strong>Android App Simulator</strong> profile selected.</p>
 <p><img alt="New Mobile Android RVL" src="../img/tutorial_mobile_testing9.png" width="890px" /></p>
-<p>Now you need to modify the profile so that it correctly matches the type of device you are testing and also so that it correctly points to the <strong>Appium</strong> server that you are using to host the mobile devices. Click <code>...</code> button in the top right corner of Rapise window</p>
+<p>Now, you need to modify the profile so that it correctly matches the type of device you are testing and points to the <strong>Appium</strong> server you are using to host the mobile devices. Click the <code>...</code> button in the top right corner of the Rapise window</p>
 <p><img alt="open mobile profile button" src="../img/open_mobile_profile_button.png" width="270px" /></p>
-<p>to bring up the <a href="../mobile_settings_dialog/">Mobile Settings</a> dialog box:</p>
+<p>to open the <a href="../mobile_settings_dialog/">Mobile Settings</a> dialog box:</p>
 <p><img alt="mobile settings dialog android tutorial" src="../img/tutorial_mobile_testing10.png" /></p>
-<p>In the mobile profile screen, make sure you change the following:</p>
+<p>In the mobile profile screen, make sure you change the following settings:</p>
 <ul>
-<li><code>app</code> - this needs to the path to the Application being tested on the device. You can download one from <a href="https://github.com/Inflectra/AUTAndroid">AUTAndroid Repository</a>.</li>
-<li><code>deviceName</code> - for emulator testing it must be <code>Android Emulator</code>.</li>
-<li><code>platformName</code> - this needs to be set to <code>Android</code>.</li>
-<li><code>platformVersion</code> - this needs to be set to the same version of Android that the virtual device is running.</li>
+<li><code>app</code> - this needs to be the path to the application being tested on the device. You can download one from <a href="https://github.com/Inflectra/AUTAndroid">AUTAndroid Repository</a>.</li>
+<li><code>deviceName</code> - for emulator testing, it must be <code>Android Emulator</code>.</li>
+<li><code>platformName</code> - this must be set to <code>Android</code>.</li>
+<li><code>platformVersion</code> - this must be set to the same version of Android that the virtual device is running.</li>
 <li><code>automationName</code> - must be <code>UIAutomator2</code> for Android testing.</li>
 </ul>
-<p>Once you have entered in the information and saved the profile, make sure that Appium is running on the PC and then click the <code>Test Url</code> button to verify the connection with Appium:</p>
+<p>Once you have entered the information and saved the profile, make sure that Appium is running on the PC, and then click the <code>Test Url</code> button to verify the connection with Appium:</p>
 <p><img alt="mobile_settings_dialog_android_success" src="../img/tutorial_mobile_testing11.png" width="245px" /></p>
 <h2 id="using-the-mobile-spy">Using the Mobile Spy<a class="headerlink" href="#using-the-mobile-spy" title="Permanent link">&para;</a></h2>
-<p>The Mobile Spy will let you view an application running on the mobile device, take a snapshot of its screen and then interactively inspect the objects in the application being tested. This is a useful first step to make sure that Rapise recognizes the application and has access to the objects in the user interface.</p>
-<p>If you do not see Mobile Spy button <img alt="mobile spy button" src="../img/mobile_spy_button.png" /> on the toolbar then choose Mobile Spy from the main menu: <code>Tools &gt; Spy &gt; Mobile</code>. Click Mobile Spy button,  Mobile Spy will be displayed. Now click the <code>Get Snapshot</code> button to display the application specified in the <a href="../mobile_settings_dialog/">mobile profile</a> on the screen:</p>
+<p>The Mobile Spy allows you to view an application running on the mobile device, take a snapshot of its screen, and then interactively inspect the objects within the application being tested. This is a useful first step to ensure that Rapise recognizes the application and has access to the objects in the user interface.</p>
+<p>If the Mobile Spy button <img alt="mobile spy button" src="../img/mobile_spy_button.png" /> is not visible on the toolbar, choose Mobile Spy from the main menu: <code>Tools &gt; Spy &gt; Mobile</code>. Click the Mobile Spy button. The Mobile Spy will then be displayed. Now, click the <code>Get Snapshot</code> button to display the application specified in the <a href="../mobile_settings_dialog/">mobile profile</a> on the screen:</p>
 <p><img alt="spy_dialog_mobile_android" src="../img/tutorial_mobile_testing13.png" /></p>
-<p>In the example above, we are displaying the sample Android application that is available in <a href="https://github.com/Inflectra/AUTAndroid">AUTAndroid Repository</a>.</p>
-<p>If you click on one of objects in the user interface, it will be highlighted in Red and the tree hierarchy on the left will expand to show the properties of that object:</p>
+<p>The example above displays the sample Android application available in the <a href="https://github.com/Inflectra/AUTAndroid">AUTAndroid Repository</a>.</p>
+<p>If you click on one of the objects in the user interface, it will be highlighted in red, and the tree hierarchy on the left will expand to show the properties of that object:</p>
 <p><img alt="spy_dialog_mobile_android_2" src="../img/tutorial_mobile_testing14.png" /></p>
-<p>If you want to view the contents of the Spy as a text file, just click <code>Spy &gt; Page Source</code> menu and you will see the contents of the Spy properties window as a text file.</p>
-<p>If you want to perform an action on the application (e.g. click on the selected item) use toolbar buttons.</p>
+<p>To view the contents of the Spy as a text file, click the <code>Spy &gt; Page Source</code> menu option. You will then see the contents of the Spy properties window as a text file.</p>
+<p>To perform an action on the application (e.g., click on the selected item), use the toolbar buttons.</p>
 <p><img alt="mobile spy event buttons" src="../img/tutorial_mobile_testing15.png" /></p>
-<p>Now click on <code>Tap</code> and Rapise will send a tap event to the application, switching the application to the next page:</p>
+<p>Now, click <code>Tap</code>. Rapise will send a tap event to the application, switching it to the next page:</p>
 <p><img alt="spy_dialog_mobile_android_5" src="../img/tutorial_mobile_testing16.png" /></p>
-<p>Assuming that you can see your application in the Spy and that the objects can be inspected (similar to that shown above) you can now begin the process of testing your mobile application. Click on <code>Spy &gt; Disconnect</code> menu to end your Spy session and close the Rapise Spy dialog. You will now be returned back to your test script.</p>
+<p>Assuming you can see your application in the Spy and that the objects can be inspected (similar to what is shown above), you can now begin testing your mobile application. Click the <code>Spy &gt; Disconnect</code> menu option to end your Spy session and close the Rapise Spy dialog. You will now be returned to your test script.</p>
 <h2 id="recording-and-playing-a-test">Recording and Playing a Test<a class="headerlink" href="#recording-and-playing-a-test" title="Permanent link">&para;</a></h2>
-<p>With the new Rapise mobile test script open, click on the <code>Record</code> button on the toolbar and that will display the <a href="../recording_activity_dialog/">recording activity dialog</a>:</p>
+<p>With the new Rapise mobile test script open, click the <code>Record</code> button on the toolbar. This will display the <a href="../recording_activity_dialog/">recording activity dialog</a>:</p>
 <p><img alt="recording activity dialog_mobile" src="../img/tutorial_mobile_testing17.png" width="572px" /></p>
-<p>Now click on the <code>Spy</code> button and in the Rapise Spy click <code>Get Snapshot</code> button on the toolbar:</p>
+<p>Now, click the <code>Spy</code> button, and in the Rapise Spy, click the <code>Get Snapshot</code> button on the toolbar:</p>
 <p><img alt="spy_dialog_mobile_android_3" src="../img/tutorial_mobile_testing18.png" /></p>
-<p>We now want to record a click on one of the menu options, simply click on the <code>Login</code> button on the screenshot you see in Mobile Spy:</p>
+<p>We now want to record a click on one of the menu options. Simply click the <code>Login</code> button on the screenshot you see in Mobile Spy:</p>
 <p><img alt="spy_dialog_mobile_android_3" src="../img/tutorial_mobile_testing_login_menu.png" /></p>
-<p>Now click the <code>Tap</code> button to move the sample app to the next screen; Rapise will  automatically reload the page in the Mobile Spy to get the updated screen:</p>
+<p>Now, click the <code>Tap</code> button to move the sample app to the next screen. Rapise will automatically reload the page in the Mobile Spy to get the updated screen:</p>
 <p><img alt="spy_dialog_mobile_android_4" src="../img/tutorial_mobile_testing19.png" /></p>
-<p>Now highlight user name field, put text into the edit field on the toolbar and press <code>Send Keys</code> button. Do the same for password field and record tap action on the Login and Home (back arrow) buttons. You will see the events in the recording activity dialog:</p>
+<p>Now, highlight the user name field, enter text into the edit field on the toolbar, and press the <code>Send Keys</code> button. Do the same for the password field and record a tap action on the Login and Home (back arrow) buttons. You will see the events in the recording activity dialog:</p>
 <p><img alt="recording activity dialog_mobile_android" src="../img/tutorial_mobile_testing20.png" width="572px" /></p>
-<p>Now click on the <code>Finish</code> button and you will be taken back to the test script. Click on <code>Append to End</code> button.</p>
+<p>Now, click the <code>Finish</code> button, and you will be taken back to the test script. Click the <code>Append to End</code> button.</p>
 <p><img alt="append" src="../img/tutorial_mobile_testing_append.png" width="449px" /></p>
-<p>Find Android objects listed and actions displayed on the RVL sheet:</p>
+<p>You will find Android objects listed and actions displayed on the RVL sheet:</p>
 <p><img alt="clip0123" src="../img/tutorial_mobile_testing21.png" /></p>
-<p>Now to playback the test simply click <code>Play</code> in the Rapise toolbar and the test will play back in the <strong>Android Emulator</strong>. This is the report of the test being executed.</p>
+<p>To play back the test, simply click <code>Play</code> in the Rapise toolbar, and the test will play back in the <strong>Android Emulator</strong>. This is the report of the test execution.</p>
 <p><img alt="report_mobile_android" src="../img/tutorial_mobile_testing23.png" /></p>
 <h2 id="sample-application-and-tests">Sample Application and Tests<a class="headerlink" href="#sample-application-and-tests" title="Permanent link">&para;</a></h2>
-<p>You can find the Android sample tests and sample Application in <a href="https://github.com/Inflectra/AUTAndroid">AUTAndroid Repository</a>.</p>
+<p>You can find the Android sample tests and sample application in the <a href="https://github.com/Inflectra/AUTAndroid">AUTAndroid Repository</a>.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../mobile_testing2/">Mobile Testing</a>, for an overview of mobile testing with sub-sections on testing.</li>
+<li><a href="../mobile_testing2/">Mobile Testing</a>, for an overview of mobile testing and its sub-sections.</li>
 <li><a href="../mobile_settings_dialog/">Mobile Settings Dialog</a> - for information on setting up the different <strong>mobile profiles</strong> for the mobile devices you will be testing.</li>
-<li><a href="../object_spy_mobile/">Mobile Object Spy</a> - for information on how Rapise connects to the device and lets you view the objects in the tested application.</li>
+<li><a href="../object_spy_mobile/">Mobile Object Spy</a> - for information on how Rapise connects to the device and allows you to view the objects in the tested application.</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB382.aspx">KB382</a> Android Testing Hints</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB280.aspx">KB280</a> How to specify Selenium or Appium capabilities which are not available through Rapise UI?</li>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB278.aspx">KB278</a> How to run a cross-browser test on a mobile device?</li>

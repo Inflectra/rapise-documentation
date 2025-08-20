@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -432,11 +432,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#object-is-not-found" class="md-nav__link">
-    Object is Not Found
+  <a href="#object-not-found" class="md-nav__link">
+    Object Not Found
   </a>
   
-    <nav class="md-nav" aria-label="Object is Not Found">
+    <nav class="md-nav" aria-label="Object Not Found">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -459,8 +459,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#execute-tests-fast-and-reliable" class="md-nav__link">
-    Execute Tests Fast And Reliable
+  <a href="#execute-tests-fast-and-reliably" class="md-nav__link">
+    Execute Tests Fast and Reliably
   </a>
   
 </li>
@@ -1186,6 +1186,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11104,6 +11116,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11334,11 +11358,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#object-is-not-found" class="md-nav__link">
-    Object is Not Found
+  <a href="#object-not-found" class="md-nav__link">
+    Object Not Found
   </a>
   
-    <nav class="md-nav" aria-label="Object is Not Found">
+    <nav class="md-nav" aria-label="Object Not Found">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -11361,8 +11385,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#execute-tests-fast-and-reliable" class="md-nav__link">
-    Execute Tests Fast And Reliable
+  <a href="#execute-tests-fast-and-reliably" class="md-nav__link">
+    Execute Tests Fast and Reliably
   </a>
   
 </li>
@@ -11388,39 +11412,39 @@
                 
                 
                 <h1 id="how-to-solve-typical-automation-issues">How to Solve Typical Automation Issues<a class="headerlink" href="#how-to-solve-typical-automation-issues" title="Permanent link">&para;</a></h1>
-<h2 id="object-is-not-found">Object is Not Found<a class="headerlink" href="#object-is-not-found" title="Permanent link">&para;</a></h2>
+<h2 id="object-not-found">Object Not Found<a class="headerlink" href="#object-not-found" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
-<p>Q: I recorded a test, started playback and got <code>Object Not Found</code> message. What should I do?</p>
+<p>Q: I recorded a test, started playback, and got an <code>Object Not Found</code> message. What should I do?</p>
 <p>A: Don't panic! There are several common reasons why an object is not found during playback.</p>
 </div>
 <h3 id="reason-1-most-common">Reason #1 (most common)<a class="headerlink" href="#reason-1-most-common" title="Permanent link">&para;</a></h3>
-<p>You are testing a web application and elements in this application use dynamics IDs that change on every page load.</p>
+<p>You are testing a web application where elements use dynamic IDs that change on every page load.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1QBA7TunnOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="admonition info">
 <p class="admonition-title">How to Fix</p>
 <ul>
-<li><a href="/Guide/object_not_found/">Object Not Found - How to Fix (schema)</a></li>
-<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB375.aspx">Check that Rapise can find an object on screen</a></li>
-<li><a href="/Guide/web_app_profile/">Configure Web Recording with Web Application Profile</a></li>
-<li><a href="/Guide/web_spy/">Use WebSpy to build a better element Locator manually</a></li>
-<li><a href="/Guide/web_self_healing/">Turn On Self-Healing Locators</a></li>
+<li><a href="../../Guide/object_not_found/">Object Not Found - How to Fix (schema)</a></li>
+<li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB375.aspx">Check that Rapise can find an object on the screen</a></li>
+<li><a href="../../Guide/web_app_profile/">Configure Web Recording with Web Application Profile</a></li>
+<li><a href="../../Guide/web_spy/">Use WebSpy to build a better element locator manually</a></li>
+<li><a href="../../Guide/web_self_healing/">Turn On Self-Healing Locators</a></li>
 </ul>
 </div>
 <h3 id="reason-2">Reason #2<a class="headerlink" href="#reason-2" title="Permanent link">&para;</a></h3>
-<p>You are testing a very slow application and the object is not yet available when it is needed.</p>
+<p>You are testing a very slow application, and the object is not yet available when it is needed.</p>
 <div class="admonition info">
 <p class="admonition-title">How to Fix</p>
 <ul>
 <li><a href="https://www.inflectra.com/Support/KnowledgeBase/KB301.aspx">Ways to slow down test execution</a></li>
 </ul>
 </div>
-<h2 id="execute-tests-fast-and-reliable">Execute Tests Fast And Reliable<a class="headerlink" href="#execute-tests-fast-and-reliable" title="Permanent link">&para;</a></h2>
-<p>Let's talk about how to adjust an automated test to make it run fast and reliable.</p>
+<h2 id="execute-tests-fast-and-reliably">Execute Tests Fast and Reliably<a class="headerlink" href="#execute-tests-fast-and-reliably" title="Permanent link">&para;</a></h2>
+<p>Let's talk about how to adjust an automated test to make it run fast and reliably.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nCV0u6s9W0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="web-recorder-configuration">Web Recorder Configuration<a class="headerlink" href="#web-recorder-configuration" title="Permanent link">&para;</a></h2>
-<p>Rapise has a Web Recorder. When you start recording Rapise intercepts your keyboard and mouse and adds the UI elements you are interacting with to the Object Tree. For each such element Rapise generates an XPATH locator. Though it usually makes a great job generating XPATH locators for elements, default Web Recorder settings do not fit all Web Applications. For complex modern applications you may need to configure the Web Recorder to get the most out of it.</p>
+<p>Rapise has a Web Recorder. When you start recording, Rapise intercepts your keyboard and mouse and adds the UI elements you are interacting with to the Object Tree. For each such element, Rapise generates an XPATH locator. Although it usually does a great job of generating XPATH locators, the default Web Recorder settings do not suit all web applications. For complex, modern applications, you may need to configure the Web Recorder to get the most out of it.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v8UmALPdJIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
               

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11198,6 +11210,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11575,19 +11599,19 @@
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>When you <a href="../create_a_new_test/">create a new test</a> in Rapise, four files are created:</p>
 <ul>
-<li><strong>&lt;TestName&gt;.sstest</strong> - the test project file (e.g. MyTest.sstest)</li>
-<li><strong>Main.js</strong> - the main test script file that contains the entry point of the test - <code>Test</code> function.</li>
-<li><strong>Objects.js</strong> - the file that contains recorded objects.</li>
-<li><strong>User.js</strong> - the file that contains user defined functions.</li>
-<li><strong>Main.rvl.xlsx</strong> - an <a href="../rvl_editor/">RVL</a> file for RVL-enabled tests.</li>
+<li><strong>&lt;TestName&gt;.sstest</strong> – the test project file (e.g., MyTest.sstest)</li>
+<li><strong>Main.js</strong> – the main test script file, containing the test's entry point: the <code>Test</code> function.</li>
+<li><strong>Objects.js</strong> – the file containing recorded objects.</li>
+<li><strong>User.js</strong> – the file containing user-defined functions.</li>
+<li><strong>Main.rvl.xlsx</strong> – an <a href="../rvl_editor/">RVL</a> file.</li>
 </ul>
-<p>where <strong><em>&lt;TestName&gt;</em></strong> is the name of your Test.</p>
-<p>You can have as many JavaScript files in your test directory as you like, but <code>Main.js</code> is the main test script (unless you specify otherwise in the <a href="../settings_dialog/">Settings Dialog)</a>. When you record, your interactions are written to <code>Main.js</code> and objects are written to <code>Objects.js</code> when you Playback the test, <code>Main.js</code> is the script that will run.  All Rapise test scripts must have the same basic structure.</p>
+<p>where <strong><em>&lt;TestName&gt;</em></strong> is the name of your test.</p>
+<p>You can have as many JavaScript files in your test directory as needed, but <code>Main.js</code> is the main test script (unless specified otherwise in the <a href="../settings_dialog/">Settings Dialog)</a>). When you record, your interactions are written to <code>Main.js</code>, and objects are written to <code>Objects.js</code>. When you play back the test, <code>Main.js</code> is the script that will run. All Rapise test scripts must have the same basic structure.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>If you are going to modify the script, or create a test script from scratch, you will need to know the test script structure.</p>
+<p>To modify an existing script or create a test script from scratch, you need to understand the test script structure.</p>
 <h2 id="basic-script">Basic Script<a class="headerlink" href="#basic-script" title="Permanent link">&para;</a></h2>
 <h3 id="mainjs">Main.js<a class="headerlink" href="#mainjs" title="Permanent link">&para;</a></h3>
-<p><code>Main.js</code> always contains two things: <code>Test(param)</code> entry point function and <code>g_load_libraries</code> array containing the libraries needed for this test case.</p>
+<p><code>Main.js</code> always contains two elements: the <code>Test(param)</code> entry point function and the <code>g_load_libraries</code> array, which holds the libraries required for this test case.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Default entry point of the test</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
 <span class="p">{</span>
@@ -11598,92 +11622,92 @@
 <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">];</span><span class="w"> </span><span class="c1">// This script will load the Web library</span>
 </code></pre></div>
 <h3 id="userjs">User.js<a class="headerlink" href="#userjs" title="Permanent link">&para;</a></h3>
-<p><code>User.js</code> Is a place where to put functions and variables specific to a given test case.</p>
+<p><code>User.js</code> is where you place functions and variables specific to a given test case.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">//Put your custom functions and variables in this file</span>
 </code></pre></div>
 <h3 id="objectjs">Object.js<a class="headerlink" href="#objectjs" title="Permanent link">&para;</a></h3>
-<p><code>Object.js</code> is an object repository. You may consider it as a <code>JSON</code> definition assigned to a <code>saved_script_objects</code> variable.</p>
+<p><code>Object.js</code> is an object repository. Consider it a <code>JSON</code> definition assigned to the <code>saved_script_objects</code> variable.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">saved_script_objects</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
 <span class="p">{</span>
-<span class="w">   </span><span class="c1">//array of objects used in this script.</span>
+<span class="w">  </span><span class="c1">// array of objects used in this script.</span>
 <span class="p">};</span>
 </code></pre></div>
 <h3 id="mainrvlxlsx">Main.rvl.xlsx<a class="headerlink" href="#mainrvlxlsx" title="Permanent link">&para;</a></h3>
 <p>See <a href="../visual_language/">RVL</a></p>
 <h2 id="full-script">Full script<a class="headerlink" href="#full-script" title="Permanent link">&para;</a></h2>
-<p>The following callback functions are also recognized by Rapise and may be present in the test script. Put these functions either in <code>Main.js</code> or <code>User.js</code>.</p>
+<p>The following callback functions are also recognized by Rapise and may be present in the test script. These functions can be placed in either <code>Main.js</code> or <code>User.js</code>.</p>
 <h3 id="sesontestinit">SeSOnTestInit<a class="headerlink" href="#sesontestinit" title="Permanent link">&para;</a></h3>
-<p>This callback function is called once before script playback. It should be used to initialize script-wide data (counters, open datasets, etc).</p>
+<p>This callback function is called once before script playback begins. It should be used to initialize script-wide data (e.g., counters, open datasets).</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestInit</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
 <span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Initializing...&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><code>SeSOnTestInit</code> may be used multiple times. For example, one may use it in the <a href="../custom_libraries/">custom library</a> to launch an application or clean up the logs and then use it in the test to do test-specific actions.</p>
-<p>Please, note: <code>SeSOnTestInit</code> should be not be put into the <code>Test</code> because <code>Test</code> is invoked after initialization.</p>
+<p><code>SeSOnTestInit</code> may be used multiple times. For example, it can be used in a <a href="../custom_libraries/">custom library</a> to launch an application or clean up logs, and then used in the test to perform test-specific actions.</p>
+<p>Please note: <code>SeSOnTestInit</code> should not be placed within the <code>Test()</code> function, as <code>Test()</code> is invoked after initialization has completed.</p>
 <blockquote>
-<p>Deprecated: You may also define a global function <code>TestInit()</code> that works the same way as a callback. However if there are many such functions, only one will actually work.</p>
+<p>Deprecated: You may also define a global function <code>TestInit()</code> that works the same way as a callback. However, if multiple such functions are defined, only one will be executed.</p>
 </blockquote>
 <h3 id="sesontestfinish">SeSOnTestFinish<a class="headerlink" href="#sesontestfinish" title="Permanent link">&para;</a></h3>
-<p>This function defines a callback that is called once after test execution. It should be used to release resources (data sets, spreadsheets). It may also be used as an integration point with external test management or bug tracking systems.</p>
+<p>This function defines a callback called once after test execution. It should be used to release resources (e.g., datasets, spreadsheets). It can also serve as an integration point for external test management or bug tracking systems.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFinish</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
 <span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Finalizing...&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><code>SeSOnTestFinish</code> may be used multiple times. For example, one may use it in the custom library to close an application.</p>
+<p><code>SeSOnTestFinish</code> may be used multiple times. For example, it can be used in the custom library to close an application.</p>
 <blockquote>
-<p>Deprecated: You may also define a global function <code>TestFinish()</code> that works the same way as a callback. However if there are many such functions, only one will actually work.</p>
+<p>Deprecated: You may also define a global function <code>TestFinish()</code> that works the same way as a callback. However, if multiple such functions are defined, only one will be executed.</p>
 </blockquote>
 <h3 id="sesontestprepare">SeSOnTestPrepare<a class="headerlink" href="#sesontestprepare" title="Permanent link">&para;</a></h3>
-<p>For advanced users; <code>SeSOnTestPrepare</code> callback is called before recording and before playback. It may be used to properly initialize libraries.</p>
-<p>Please, note that <code>SeSOnTestPrepare</code> may be put into a <code>shared</code> file. In this case it will be executed for playback but not for recording (because recorder does not load shared files). But if you put it into your library, it will be executed in all cases when library is loaded.</p>
+<p>For advanced users, the <code>SeSOnTestPrepare</code> callback is called before both recording and playback. It can be used to properly initialize libraries.</p>
+<p>Please note that <code>SeSOnTestPrepare</code> can be placed into a <code>shared</code> file. In this case, it will be executed during playback but not during recording (because the recorder does not load shared files). However, if you place it in your library, it will be executed whenever the library is loaded.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestPrepare</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
 <span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Preparing...&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><code>SeSOnTestPrepare</code> may be used multiple times. For example, one may use it in the custom library to configure environment for the application and then use it in the test to do test-specific actions.</p>
-<p>Please, note: <code>SeSOnTestPrepare</code> should not be put into the <code>Test()</code> because <code>Test()</code> is invoked after initialization.</p>
+<p><code>SeSOnTestPrepare</code> may be used multiple times. For example, it can be used in a custom library to configure the environment for an application, and then in the test to perform test-specific actions.</p>
+<p>Please note: <code>SeSOnTestPrepare</code> should not be placed within the <code>Test()</code> function, as <code>Test()</code> is invoked after initialization.</p>
 <blockquote>
-<p>Deprecated:  You may also define a global function <code>TestPrepare()</code> that works the same way as a callback. However if there are many such functions, only one will actually work.</p>
+<p>Deprecated: You may also define a global function <code>TestPrepare()</code> that works the same way as a callback. However, if multiple such functions are defined, only one will be executed.</p>
 </blockquote>
 <h3 id="sesontestfailed">SeSOnTestFailed<a class="headerlink" href="#sesontestfailed" title="Permanent link">&para;</a></h3>
-<p>May be used to do something on test failure event.</p>
+<p>Can be used to perform actions upon a test failure event.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestFailed</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">status</span><span class="p">){</span>
 <span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test Failed&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><strong>status</strong> parameter will always be 0 (Failed) or -1 (Undefined).</p>
+<p>The <strong>status</strong> parameter will always be <code>0</code> (Failed) or <code>-1</code> (Undefined).</p>
 <h3 id="sesontestreportready">SeSOnTestReportReady<a class="headerlink" href="#sesontestreportready" title="Permanent link">&para;</a></h3>
-<p>Final point, called when report is closed and is ready for post-processing.</p>
+<p>This final callback is invoked when the report is closed and ready for post-processing.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnTestReportReady</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-<span class="w">    </span><span class="c1">// Don&#39;t use anything that writes to the report at this point!</span>
-<span class="w">    </span><span class="c1">// Only low level operations and functions: File, WScript.Shell etc.</span>
+<span class="w">    </span><span class="c1">// Do not use anything that writes to the report at this point!</span>
+<span class="w">    </span><span class="c1">// Only low-level operations and functions (e.g., File, WScript.Shell) should be used.</span>
 <span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Test done with status: &quot;</span><span class="o">+</span><span class="nx">g_testPassed</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">Log</span><span class="p">(</span><span class="s2">&quot;Report file: &quot;</span><span class="o">+</span><span class="nx">g_reportFileName</span><span class="p">);</span>
 <span class="p">})</span>
 </code></pre></div>
 <h3 id="sesonobjectnotfound">SeSOnObjectNotFound<a class="headerlink" href="#sesonobjectnotfound" title="Permanent link">&para;</a></h3>
-<p>Final point, called when object is not found on the screen.</p>
+<p>This callback is invoked when an object is not found on the screen.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnObjectNotFound</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">,</span><span class="w"> </span><span class="cm">/**object*/</span><span class="nx">params</span><span class="p">){</span>
 <span class="w">    </span><span class="c1">// When &#39;Back&#39; is not on the screen, use &#39;Home&#39; instead.</span>
 <span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">objectId</span><span class="o">==</span><span class="s1">&#39;Back&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Home&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><strong>objectId</strong> - object id; <strong>params</strong> - additional locator parameters (if any).</p>
+<p><strong>objectId</strong> – the object ID; <strong>params</strong> – additional locator parameters (if any).</p>
 <h3 id="sesonlocatorvalue">SeSOnLocatorValue<a class="headerlink" href="#sesonlocatorvalue" title="Permanent link">&para;</a></h3>
-<p>A way to modify default object locator value. Useful when you, for example.</p>
+<p>Allows modification of the default object locator value. This is useful, for example, when you need to dynamically change object locators.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnLocatorValue</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="cm">/**object*/</span><span class="nx">objInfo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// We use &#39;{home_xpath}&#39; as a placeholder to replace it with different value here.</span>
-<span class="w">    </span><span class="c1">// ID is accessible as objInfo.object_id</span>
+<span class="w">    </span><span class="c1">// We use &#39;{home_xpath}&#39; as a placeholder to replace with a different value here.</span>
+<span class="w">    </span><span class="c1">// The ID is accessible via objInfo.object_id</span>
 <span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">value</span><span class="o">==</span><span class="s1">&#39;{home_xpath}&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;//a[@href=&#39;Default.aspx&#39;]&quot;</span><span class="p">;</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="p">;</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><strong>value</strong> - value to replace; <strong>objInfo</strong> - all locator values.</p>
+<p><strong>value</strong> – the value to replace; <strong>objInfo</strong> – all locator values.</p>
 <h3 id="sesonreportmessage">SeSOnReportMessage<a class="headerlink" href="#sesonreportmessage" title="Permanent link">&para;</a></h3>
-<p>Allows interrupting <code>Tester._Report</code> and either changing it or checking it. <code>Tester._Report</code> is internally called by all <code>Tester.*Assert</code> calls executed by user or internally by other parts of Rapise (i.e. each <code>Obj.DoAction</code> writes a line into report).</p>
+<p>Allows intercepting <code>Tester._Report</code> messages to either change or inspect them. <code>Tester._Report</code> is called internally by all <code>Tester.*Assert</code> calls (whether executed by the user or other internal parts of Rapise). For example, each <code>Obj.DoAction</code> writes a line to the report.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeSOnReportMessage</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">type</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">status</span><span class="p">,</span><span class="w"> </span><span class="cm">/**SeSReportLink|SeSReportText|SeSReportImage|Object[]*/</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="cm">/**object*/</span><span class="w"> </span><span class="nx">tags</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="c1">// return true - skip the message from being reported</span>
-<span class="c1">// return false / nothing - proceed with this message</span>
+<span class="c1">// return true – skip the message from being reported</span>
+<span class="c1">// return false or undefined – proceed with this message</span>
 <span class="p">});</span>
 </code></pre></div>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11132,6 +11144,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11449,19 +11473,19 @@
 <p>This feature requires Rapise 8.4+.</p>
 </div>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Dynamic Test Sets provide a powerful way to execute targeted tests based on specific criteria. This feature allows you to include test cases into a test set using properties like name, fully qualified name, tags, and parameters.  This approach helps to focus on specific testing scenarios without needing to manually select test cases. This functionality mirrors filtering capabilities found in tools like Microsoft VSTest, making it familiar for users accustomed to that environment.</p>
+<p>Dynamic Test Sets provide a powerful way to execute targeted tests based on specific criteria. This feature allows you to include test cases in a test set using properties such as name, fully qualified name, tags, and parameters. This approach helps focus on specific testing scenarios without manually selecting test cases. This functionality mirrors filtering capabilities found in tools like Microsoft VSTest, making it familiar for users accustomed to that environment.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To use this feature you need to have Rapise connected to your instance of Spira.</p>
+<p>To use this feature, you need to have Rapise connected to your instance of Spira.</p>
 </div>
 <h2 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Targeted Execution:</strong> Run only the tests relevant to a particular scenario (e.g., smoke tests, regression tests for a specific bug fix).</li>
-<li><strong>Time Savings:</strong>  Avoid running unnecessary tests, leading to faster feedback cycles.</li>
-<li><strong>Resource Optimization:</strong>  Focus testing resources on the most critical areas.</li>
+<li><strong>Time Savings:</strong> Avoid running unnecessary tests, leading to faster feedback cycles.</li>
+<li><strong>Resource Optimization:</strong> Focus testing resources on the most critical areas.</li>
 <li><strong>Reduced Maintenance:</strong> Eliminate the need to manually create and maintain numerous static test sets for different scenarios.</li>
-<li><strong>Complex Querying:</strong>  Use Boolean operators (<code>&amp;</code> for AND, <code>|</code> for OR) and escape sequences to create sophisticated filter expressions.</li>
-<li><strong>Familiar Syntax</strong>: Mimics filter expressions of Microsoft VSTest.</li>
+<li><strong>Complex Querying:</strong> Use Boolean operators (<code>&amp;</code> for AND, <code>|</code> for OR) and escape sequences to create sophisticated filter expressions.</li>
+<li><strong>Familiar Syntax</strong>: Mimics Microsoft VSTest's filter expressions.</li>
 </ul>
 <h2 id="defining-a-dynamic-test-set">Defining a Dynamic Test Set<a class="headerlink" href="#defining-a-dynamic-test-set" title="Permanent link">&para;</a></h2>
 <p>To create and configure a Dynamic Test Set in Rapise, follow these steps inside the <a href="../spira_dashboard_2/">Spira Dashboard</a>:</p>
@@ -11481,17 +11505,17 @@
 <p><strong>Supported Properties:</strong></p>
 <ul>
 <li><code>Name</code>: The name of the test case.</li>
-<li><code>FullyQualifiedName</code>:  The full path to the test case within the Rapise framework (relative to the framework root).</li>
-<li><code>Tags</code>:  Tags associated with the test case in Rapise.</li>
+<li><code>FullyQualifiedName</code>: The full path to the test case within the Rapise framework (relative to the framework root).</li>
+<li><code>Tags</code>: Tags associated with the test case in Rapise.</li>
 <li><code>TestParams</code>: Parameters defined for the test case in Rapise.</li>
 <li><code>SpiraProperties</code>: Properties defined for the test case in Spira.</li>
 </ul>
-<p>The <strong>Tags</strong> property matches a value if at least one tag in the collection matches that value, and it does not match if none of the tags match. <strong>TestParams</strong> and <strong>SpiraProperties</strong> are collections of <code>name=value</code> pairs.</p>
+<p>The <strong>Tags</strong> property matches a value if at least one tag in its collection matches that value; it does not match otherwise. <strong>TestParams</strong> and <strong>SpiraProperties</strong> are collections of <code>name=value</code> pairs.</p>
 </li>
 <li>
 <p><strong>Allowed Operators:</strong></p>
 <ul>
-<li><code>=</code>:  Exact match.</li>
+<li><code>=</code>: Exact match.</li>
 <li><code>!=</code>: Not an exact match.</li>
 <li><code>~</code>: Contains (substring match).</li>
 <li><code>!~</code>: Does not contain.</li>
@@ -11500,8 +11524,8 @@
 <li>
 <p><strong>Boolean Operators:</strong></p>
 <ul>
-<li><code>&amp;</code>:  Logical AND.</li>
-<li><code>|</code>:  Logical OR.</li>
+<li><code>&amp;</code>: Logical AND.</li>
+<li><code>|</code>: Logical OR.</li>
 </ul>
 </li>
 <li>
@@ -11513,7 +11537,7 @@
 <p><strong>Preview:</strong> Use the <strong>Preview</strong> button to see a list of test cases that will be selected based on your current filter expression. This allows you to validate your filter before execution.</p>
 </li>
 <li>
-<p><strong>Synchronization</strong>: After setting up Dynamic Test Set save changes and synchronize your framework to Spira.</p>
+<p><strong>Synchronization</strong>: After setting up the Dynamic Test Set, save changes and synchronize your framework with Spira.</p>
 </li>
 </ol>
 <h2 id="escape-sequences">Escape Sequences<a class="headerlink" href="#escape-sequences" title="Permanent link">&para;</a></h2>
@@ -11544,7 +11568,7 @@
 </tr>
 <tr>
 <td><code>\|</code></td>
-<td><code>\|</code></td>
+<td><code>|</code></td>
 </tr>
 <tr>
 <td><code>\=</code></td>
@@ -11565,27 +11589,27 @@
 <ul>
 <li><strong><code>Name~Edit</code></strong>: Selects all test cases with names containing <code>Edit</code>.</li>
 <li><strong><code>FullyQualifiedName~SmokeTests</code></strong>: Selects all test cases whose full path includes <code>SmokeTests</code>.</li>
-<li><strong><code>Tags=testcase</code></strong>:  Selects all test cases because all of them have the default tag <code>testcase</code>.</li>
+<li><strong><code>Tags=testcase</code></strong>: Selects all test cases because all test cases have the default tag <code>testcase</code>.</li>
 <li><strong><code>Tags=stable&amp;Tags=UI</code></strong>: Selects test cases tagged with both <code>stable</code> and <code>UI</code>.</li>
 <li><strong><code>Tags=UI|Tags=API</code></strong>: Selects test cases tagged with either <code>UI</code> or <code>API</code>.</li>
-<li><strong><code>TestParams=author\=robin</code></strong>: Selects all test cases that have a TestParam with the name <code>author</code> and value equal to <code>robin</code>.</li>
+<li><strong><code>TestParams=author\=robin</code></strong>: Selects all test cases that have a TestParam with the name <code>author</code> and a value of <code>robin</code>.</li>
 <li><strong><code>(Tags!=internal&amp;Tags!=draft)&amp;FullyQualifiedName~SmokeTests</code></strong> - All test cases from the <code>SmokeTests</code> folder that are not marked with either the internal or draft tag.</li>
 <li><strong><code>Name=Login\&amp;Logout</code></strong>: Selects a test case with the literal name <code>Login&amp;Logout</code> (using the escape sequence for <code>&amp;</code>).</li>
 </ul>
 <h2 id="important-considerations">Important Considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Filter expressions are case-insensitive for values.</li>
-<li>The <code>Tags</code> property matches a value if at least one tag in the collection matches that value, and it does not match if none of the tags match.</li>
+<li>The <code>Tags</code> property matches a value if at least one tag in its collection matches that value; it does not match otherwise.</li>
 <li>Use parentheses <code>()</code> to group expressions and control the order of operations when using Boolean operators.</li>
 </ul>
 <h2 id="running-a-dynamic-test-set">Running a Dynamic Test Set<a class="headerlink" href="#running-a-dynamic-test-set" title="Permanent link">&para;</a></h2>
 <h3 id="running-with-rapiselauncher">Running with RapiseLauncher<a class="headerlink" href="#running-with-rapiselauncher" title="Permanent link">&para;</a></h3>
-<p>Dynamic Test Sets are no different from static Test Sets, so you may schedule their execution or execute them right from the Spira Dashboard.</p>
+<p>Dynamic Test Sets are no different than static Test Sets, so you can schedule their execution or execute them directly from the Spira Dashboard.</p>
 <h3 id="running-from-rapise">Running from Rapise<a class="headerlink" href="#running-from-rapise" title="Permanent link">&para;</a></h3>
-<p>You may also run a Dynamic Test Set right from Rapise.</p>
+<p>You can also run a Dynamic Test Set directly from Rapise.</p>
 <ol>
-<li>Click the <code>Play</code> button on the main toolbar of Rapise. The <code>Choose Test Case</code> dialog will open.</li>
-<li>Use the <code>Test Set...</code> dropdown at the bottom to choose a test set.  The required test cases will be selected automatically. In the case of a dynamic test set, the selected test cases should match the dynamic filter.</li>
+<li>Click the <code>Play</code> button on Rapise's main toolbar. The <code>Choose Test Case</code> dialog opens.</li>
+<li>Use the <code>Test Set...</code> dropdown at the bottom to choose a test set. The relevant test cases are selected automatically. For a dynamic test set, the selected test cases will match the dynamic filter.</li>
 <li>Click <code>OK</code> to start execution.</li>
 </ol>
                 

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11116,6 +11128,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11409,58 +11433,58 @@
                 
                 <h1 id="code-completion">Code Completion<a class="headerlink" href="#code-completion" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Rapise provides <strong>Code Completion</strong> for class, method and field names.</p>
+<p>Rapise provides <strong>Code Completion</strong> for class, method, and field names.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>Begin typing a class, method, or field name. Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-space">Space</kbd></span> to open a list of possible completions.</p>
 <p><img alt="code helper.zoom80" src="../img/code_helper1.png" /></p>
 <h2 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">&para;</a></h2>
-<p>Rapise has built-in code completion logic that lets it suggest the available list of functions for a specific object. However since JavaScript is fundamentally an un-typed language, for the code completion to work, there are some tips and tricks that you can use.</p>
-<p>Rapise scans for variable definitions when one saves the <code>.js</code> source file. So if anything goes wrong (no hints) then first thing is to save the file.</p>
-<p>One may define a variable as simple as:</p>
+<p>Rapise has built-in code completion logic that suggests available functions for a specific object. However, since JavaScript is fundamentally an untyped language, for code completion to work, there are some tips and tricks you can use.</p>
+<p>Rapise scans for variable definitions when you save the <code>.js</code> source file. So, if anything goes wrong (e.g., no hints), the first thing to do is save the file.</p>
+<p>You can define a variable as simply as:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">p</span><span class="p">;</span>
 </code></pre></div>
-<p>In this example <code>p</code> is just a variable with undefined type. It may be used as number, string or object. So Rapise has no idea of how to deal with it. So if you type a dot after  <code>p.</code> no code-completion window appears.</p>
-<p>There are several ways of giving Rapise a "hint" about the variable type:</p>
+<p>In this example, <code>p</code> is just a variable with an undefined type. It may be used as a number, string, or object. So, Rapise has no idea how to deal with it. So, if you type <code>p</code> and then a dot, no code completion window appears.</p>
+<p>There are several ways to give Rapise a "hint" about the variable type:</p>
 <h2 id="static-assignment">Static Assignment<a class="headerlink" href="#static-assignment" title="Permanent link">&para;</a></h2>
-<p>First, is static assignment. Suppose you specify some constant value when defining a variable:</p>
+<p>First is static assignment. Suppose you specify a constant value when defining a variable:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;some string&quot;</span><span class="p">;</span>
 </code></pre></div>
-<p>In this case Rapise knows the type of <code>p</code>. So it would assist you when you type a dot <code>.</code> after <code>p</code>:</p>
+<p>In this case, Rapise knows the type of <code>p</code>. So it will assist you when you type <code>p</code> and then a dot:</p>
 <p><img alt="code_completion_1" src="../img/code_helper2.png" /></p>
 <h2 id="using-comments-to-suggest-the-type">Using Comments to Suggest the Type<a class="headerlink" href="#using-comments-to-suggest-the-type" title="Permanent link">&para;</a></h2>
-<p>In some cases variable type is not clear from its definition or assignments is not static:</p>
+<p>In some cases, a variable's type is not clear from its definition, or its assignments are not static:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">v1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">;</span>
 <span class="kd">var</span><span class="w"> </span><span class="nx">v2</span><span class="p">;</span>
 </code></pre></div>
-<p>To deal with such cases the code should be instrumented. For example, if we know that input is string and v2 will be used as number then we may explain it to Rapise by placing variable type using special comment: <code>/**var_type*/</code> right together with var definition. It should be placed right either between <code>var</code> keyword and variable name or right after an assignment operation (<code>=</code>), if any. I.e.:</p>
+<p>To deal with such cases, the code should be instrumented. For example, if we know that <code>input</code> is a string and <code>v2</code> will be used as a number, then we can explain it to Rapise by placing the variable type using a special comment: <code>/**var_type*/</code> right next to the variable definition. It should be placed either right between the <code>var</code> keyword and the variable name, or immediately after an assignment operation (<code>=</code>), if one exists. I.e.:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">v1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">input</span><span class="p">;</span>
 <span class="kd">var</span><span class="w"> </span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">v2</span><span class="p">;</span>
 </code></pre></div>
-<p>So now Rapise will be able to display the list of available methods and properties:</p>
+<p>Now, Rapise will be able to display the list of available methods and properties:</p>
 <p><img alt="code_completion_2" src="../img/code_helper3.png" /></p>
-<p>Another common case is a function parameter. If you have function that is defined:</p>
+<p>Another common case is a function parameter. If you have a function defined as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">my_func</span><span class="p">(</span><span class="nx">patient_index</span><span class="p">,</span><span class="w"> </span><span class="nx">patient_name</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>The type of parameters <code>patient_index</code> and <code>patient_name</code> are not known, but may be explained in a similar way:</p>
+<p>The types of parameters <code>patient_index</code> and <code>patient_name</code> are not known, but can be explained in a similar way:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">my_func</span><span class="p">(</span><span class="cm">/**number*/</span><span class="w"> </span><span class="nx">patient_index</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">patient_name</span><span class="p">)</span>
 </code></pre></div>
-<p>So it becomes known to Rapise:</p>
+<p>This makes it known to Rapise:</p>
 <p><img alt="code_completion_3" src="../img/code_helper4.png" /></p>
-<p>Code completion for variable names is useful when you have multiple variables or function parameters and need to type them quickly. In this case <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-space">Space</kbd></span> key combination will bring up a list of variables and functions starting with just typed keyword.</p>
+<p>Code completion for variable names is useful when you have multiple variables or function parameters, and need to type them quickly. In this case, the <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-space">Space</kbd></span> key combination brings up a list of variables and functions starting with the keyword you just typed.</p>
 <h2 id="code-completion-for-objects">Code Completion for Objects<a class="headerlink" href="#code-completion-for-objects" title="Permanent link">&para;</a></h2>
 <p>If you type</p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;&lt;object ID&gt;&quot;</span><span class="p">).</span>
 </code></pre></div>
-<p>A list of available actions and properties will be suggested for repository object with the given ID.</p>
-<p>Since Rapise 6.4 you may specify type of a dynamically created object as well.</p>
+<p>A list of available actions and properties will be suggested for the repository object with the given ID.</p>
+<p>Since Rapise 6.4, you can also specify the type of a dynamically created object.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="cm">/**HTMLObject*/</span><span class="w"> </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">Find</span><span class="p">(</span><span class="s2">&quot;//button[id=&#39;username&#39;]&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>Save the edited file to let Rapise re-parse it. Then you may type</p>
+<p>Save the edited file to allow Rapise to re-parse it. Then you can type</p>
 <div class="highlight"><pre><span></span><code><span class="nx">username</span><span class="p">.</span>
 </code></pre></div>
-<p>and Rapise will suggest actions and properties for the <a href="/Libraries/HTMLObject/">HTMLObject</a> type.</p>
+<p>and Rapise suggests actions and properties for the <a href="../../Libraries/HTMLObject/">HTMLObject</a> type.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../source_editor/">Source Editor</a></li>

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11109,6 +11121,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11399,17 +11423,17 @@
 <p>Use the <strong>Verify Object Properties</strong> dialog during <a href="../recording/">recording</a> to add <a href="../checkpoints/">checkpoints</a>.</p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
 <ol>
-<li>First, open the <a href="../recording_activity_dialog/">Recording Activity Dialog</a>.</li>
+<li>Open the <a href="../recording_activity_dialog/">Recording Activity Dialog</a>.</li>
 <li>Position the mouse over an object and press <code>Ctrl+1</code>, or</li>
 <li>Press the <code>Verify</code> button and then click the target object with the mouse cursor.</li>
 </ol>
 <h2 id="create-a-checkpoint">Create a Checkpoint<a class="headerlink" href="#create-a-checkpoint" title="Permanent link">&para;</a></h2>
-<p>Your checkpoint will be associated with a particular object.  That object's properties will be listed in the <strong>Verify Object Properties</strong> dialog.  Check those properties that you wish to verify during <a href="../playback/">playback</a>.  Enter expected values for the selected properties in the <strong>Value</strong> column. </p>
+<p>Your checkpoint will be associated with a particular object. The object's properties will be listed in the <strong>Verify Object Properties</strong> dialog. Select the properties you wish to verify during <a href="../playback/">playback</a>. Enter expected values for the selected properties in the <strong>Value</strong> column. </p>
 <blockquote>
 <p>Note: The <strong>Bitmap</strong> and <strong>BWBitmap</strong> properties are images of the object.</p>
 </blockquote>
 <p><img alt="verify object property, height" src="../img/verify_object_properties2.png" /></p>
-<p>Press the <code>OK</code> button.  The <strong>Verify Object Properties</strong> dialog will close, and the <a href="../recording_activity_dialog/">Recording Activity</a> dialog will contain a new <strong>Verify</strong> action:</p>
+<p>Press the <code>OK</code> button. The <strong>Verify Object Properties</strong> dialog will close, and the <a href="../recording_activity_dialog/">Recording Activity</a> dialog will display a new <strong>Verify</strong> action:</p>
 <p><img alt="verify object properties recording activity" src="../img/verify_object_properties3.png" /></p>
 <p>The generated script will have a corresponding <a href="../assertions/">assert statement</a>:
 <img alt="verify object properties, code" src="../img/verify_object_properties4.png" /></p>
@@ -11417,9 +11441,9 @@
 <div class="highlight"><pre><span></span><code><span class="w">   </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Assert</span><span class="p">(</span><span class="s2">&quot;Verify that: InnerText=Log In&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Log_In1&#39;</span><span class="p">).</span><span class="nx">GetInnerText</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;Log In&quot;</span><span class="w"> </span><span class="p">);</span>
 </code></pre></div>
 <h2 id="check-object-exists">Check Object Exists<a class="headerlink" href="#check-object-exists" title="Permanent link">&para;</a></h2>
-<p>Since Rapise 6.6 the <strong>Verify Object Properties</strong> dialog shows <code>Exists</code> property. It adds <a href="../../Libraries/Global/#dowaitfor">Global.DoWaitFor</a> action to the recording.</p>
+<p>Starting with Rapise 6.6, the <strong>Verify Object Properties</strong> dialog includes the <code>Exists</code> property. It adds a <a href="../../Libraries/Global/#dowaitfor">Global.DoWaitFor</a> action to the recording.</p>
 <h2 id="check-object-visible">Check Object Visible<a class="headerlink" href="#check-object-visible" title="Permanent link">&para;</a></h2>
-<p>Since Rapise 6.6 the <strong>Verify Object Properties</strong> dialog shows <code>Visible</code> property. It checks that the object is visible on screen.</p>
+<p>Starting with Rapise 6.6, the <strong>Verify Object Properties</strong> dialog includes the <code>Visible</code> property. This verifies that the object is visible on screen.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../recording/">Recording</a></li>

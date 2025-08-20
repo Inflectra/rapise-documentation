@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11900,6 +11912,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -12547,59 +12571,59 @@
                 
                 
                 <h1 id="spira-dashboard">Spira Dashboard<a class="headerlink" href="#spira-dashboard" title="Permanent link">&para;</a></h1>
-<p>In Rapise 7 we completely reworked the Spira Dashboard. It has all new look and features. New dashboard reduces the need to open Spira in a browser window and also adds support for Flaky test handling, Rerun features and ability to run a test case/whole test set/or just failed test cases on a selected automation host.</p>
+<p>In Rapise 7, we completely reworked the Spira Dashboard. It features a completely new look and new features. The new dashboard reduces the need to open Spira in a browser window and also adds support for Flaky test handling, Rerun features, and the ability to run a test case, an entire test set, or only failed test cases on a selected automation host.</p>
 <p><img alt="Dashboard Overview" src="../img/spira_dashboard_overview.png" width="967px" /></p>
-<p>In Rapise 8 we added the <a href="../Frameworks/frameworks/">Framework mode</a> that has a different set of pages in the dashboard:</p>
+<p>In Rapise 8, we added the <a href="../Frameworks/frameworks/">Framework mode</a> that has a different set of pages in the dashboard:</p>
 <p><img alt="Framework Dashboard Overview" src="../img/spira_dashboard_2_framework_overview.png" width="1088px" /></p>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<p>If you are not familiar with the dashboard and it's basic features it is recommended to review <a href="#navigation">Navigation</a> and <a href="#tasks">Tasks</a> sections first.</p>
+<p>If you are not familiar with the dashboard and its basic features, we recommend reviewing the <a href="#navigation">Navigation</a> and <a href="#tasks">Tasks</a> sections.</p>
 <h3 id="flaky-tests">Flaky Tests<a class="headerlink" href="#flaky-tests" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To enable this feature setup custom properties as described <a href="#setup-custom-properties">below</a>.</p>
+<p>To enable this feature, set up custom properties as described <a href="#setup-custom-properties">below</a>.</p>
 </div>
-<p>If you see that some test may pass or fail randomly there is a way to mark it as Flaky. Simply find it in <a href="#test-cases-view">Test Cases View</a> and use <a href="#actions">Actions menu</a> to set the flag. Flaky test case is decorated with an icon (red flag):</p>
+<p>If you notice that a test passes or fails randomly, there is a way to mark it as Flaky. Simply find it in the <a href="#test-cases-view">Test Cases View</a> and use the <a href="#actions">Actions menu</a> to set the flag. A Flaky test case is decorated with an icon (red flag):</p>
 <p><img alt="Flaky Test Case" src="/Guide/img/spira_dashboard_flaky_test_case.png" width="460"/> </p>
-<p>When a test case marked as Flaky is executed - it's test run is marked as Flaky too.</p>
+<p>When a test case marked as Flaky is executed, its test run is also marked as Flaky.</p>
 <p><img alt="Flaky Test Case" src="/Guide/img/spira_dashboard_flaky_test_run.png" width="256"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Flaky flag makes it easier to distinguish random and important test run failures.</p>
+<p>The Flaky flag makes it easier to distinguish between random and important test run failures.</p>
 </div>
 <h3 id="automatic-rerun">Automatic Rerun<a class="headerlink" href="#automatic-rerun" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To enable this feature setup custom properties as described <a href="#setup-custom-properties">below</a>.</p>
+<p>To enable this feature, set up custom properties as described <a href="#setup-custom-properties">below</a>.</p>
 </div>
-<p>To instruct RapiseLauncher to rerun a failed test case use <ins class="critic">Max rerun attempts</ins> test set custom property. If a test case keeps failing it will be additionally executed specified number of times (by default it is zero). To stop rerunning tests if many of them finally failed use <ins class="critic">Do not rerun if N tests failed</ins> property. By default this property is zero and it means rerun all the tests in a test set if <ins class="critic">Max rerun attempts</ins> is set.</p>
+<p>To instruct RapiseLauncher to rerun a failed test case, use the <ins class="critic">Max rerun attempts</ins> test set custom property. If a test case continues to fail, it will be executed an additional specified number of times (by default, this is zero). To prevent rerunning tests if many of them eventually fail, use the <ins class="critic">Do not rerun if N tests failed</ins> property. By default, this property is zero, meaning that all tests in a test set will be rerun if <ins class="critic">Max rerun attempts</ins> is set.</p>
 <p><img alt="Rerun Settings" src="/Guide/img/spira_dashboard_rerun_test_set.png" width="345"/></p>
-<p>Test runs that correspond to reruns are decorated with icons. Number in a circle designates rerun attempt. </p>
+<p>Test runs that correspond to reruns are decorated with icons. The number in a circle designates the rerun attempt. </p>
 <p><img alt="Reruns" src="/Guide/img/spira_dashboard_rerun_test_runs.png" width="272"/></p>
 <h3 id="parallel-execution">Parallel Execution<a class="headerlink" href="#parallel-execution" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To enable this feature setup custom properties as described <a href="#setup-custom-properties">below</a>.</p>
+<p>To enable this feature, set up custom properties as described <a href="#setup-custom-properties">below</a>.</p>
 </div>
-<p>Since Rapise 7.1 - RapiseLauncher is able to perform parallel run for these types of tests:</p>
+<p>Since Rapise 7.1, RapiseLauncher is able to perform parallel runs for these types of tests:</p>
 <ol>
 <li>Web tests configured to run with Selenium WebDriver,</li>
 <li>Mobile tests,</li>
 <li>REST/SOAP API tests.</li>
 </ol>
-<p>In order to mark a test case ready for parallel run set the custom property <ins class="critic">Ready for parallel run</ins> in test case details.</p>
+<p>To mark a test case as ready for parallel execution, set the custom property <ins class="critic">Ready for parallel run</ins> in the test case details.</p>
 <p><img alt="Test Case Properties" src="/Guide/img/test-case-custom-properties.png" width="360"/></p>
-<p>If all test cases included into a test set have this property, the test set is configured for parallel run - RapiseLauncher will execute the test cases in parallel.</p>
-<p>To configure the test set use the custom properties <ins class="critic">Run tests in parallel</ins> and <ins class="critic">Max parallel tests</ins> (0 - no limit).</p>
-<p>Since Rapise 7.2 - RapiseLauncher can run configurations (see Input Data Table section below) in parallel. This feature is controlled via <ins class="critic">Unroll input data for parallel execution</ins> custom property of a test set. See the <a href="https://youtu.be/bNoWZjOE3hQ">Parallel Execution Webinar</a> for more details.</p>
+<p>If all test cases included in a test set have this property, and the test set is configured for parallel execution, RapiseLauncher will execute the test cases in parallel.</p>
+<p>To configure the test set, use the custom properties <ins class="critic">Run tests in parallel</ins> and <ins class="critic">Max parallel tests</ins> (where 0 means no limit).</p>
+<p>Since Rapise 7.2, RapiseLauncher can run configurations (see the Input Data Table section below) in parallel. This feature is controlled via the <ins class="critic">Unroll input data for parallel execution</ins> custom property of a test set. See the <a href="https://youtu.be/bNoWZjOE3hQ">Parallel Execution Webinar</a> for more details.</p>
 <h3 id="input-data-table">Input Data Table<a class="headerlink" href="#input-data-table" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To enable this feature setup custom properties as described <a href="#setup-custom-properties">below</a>.</p>
+<p>To enable this feature, set up custom properties as described <a href="#setup-custom-properties">below</a>.</p>
 </div>
-<p>Since Rapise 7.1 you may define a table with parameter values to automatically run same test set with different input data. It is an alternative to <a href="https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx">test configurations</a>.</p>
+<p>Since Rapise 7.1, you may define a table with parameter values to automatically run the same test set with different input data. It is an alternative to <a href="https://www.inflectra.com/ideas/Entry/spotlight-on-spiratest-53--data-driven-testing-wit-495.aspx">test configurations</a>.</p>
 <ol>
 <li>
-<p>Create a CSV or TXT file with parameter names and values. You may do it right from the dashboard (navigate to test set details and use Create New popup menu in the Attachments section). Example of the data file:</p>
+<p>Create a CSV or TXT file with parameter names and values. You may do this directly from the dashboard (navigate to test set details and use the "Create New" popup menu in the Attachments section). Example of the data file:</p>
 <div class="highlight"><span class="filename">Data.csv</span><pre><span></span><code>UserName,Password
 librarian,librarian
 borrower,borrower
@@ -12609,108 +12633,108 @@ borrower,borrower
 <p>Choose this attachment in the <ins class="critic">Input data</ins> custom property.</p>
 </li>
 </ol>
-<p>RapiseLauncher will run the test set same number of times as data rows in the input file. Every column name will become a global parameter passed to a test case.</p>
+<p>RapiseLauncher will run the test set the same number of times as there are data rows in the input file. Every column name will become a global parameter passed to the test case.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Besides attachments there is an option to use a file stored in the same Git repository as the testing framework. You may type a path to it in the <code>Input data</code> custom property. The path should contain <code>%GITROOT%</code> placeholder, e.g.:</p>
+<p>Besides attachments, there is an option to use a file stored in the same Git repository as the testing framework. You may type a path to it in the <code>Input data</code> custom property. The path should contain the <code>%GITROOT%</code> placeholder, for example:</p>
 <div class="highlight"><pre><span></span><code>%GITROOT%\Data\Logins.xlsx
 </code></pre></div>
 </div>
 <h3 id="test-matrix">Test Matrix<a class="headerlink" href="#test-matrix" title="Permanent link">&para;</a></h3>
-<p>If a Test Set is configured to run same Test Cases several times (each time with different input parameters) then one may view the Test Matrix based on produced Test Runs. Let's look at the example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. Browser type is specified via an input parameter (see Input Data Table section above for more details). Execution of the test set produces 4 x 2 = 10 test runs. After execution we find one of these test runs on the Test Runs page, right click it and choose <code>Test Matrix</code> menu item. Then we see the matrix:</p>
+<p>If a Test Set is configured to run the same Test Cases several times (each time with different input parameters), then you may view the Test Matrix based on the generated Test Runs. Let's look at an example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. The browser type is specified via an input parameter (see the Input Data Table section above for more details). Execution of the test set produces 4 x 2 = 10 test runs. After execution, find one of these test runs on the Test Runs page, right-click it, and choose the <code>Test Matrix</code> menu item. Then we see the matrix:</p>
 <p><img alt="Test Matrix" src="../img/test_matrix.png" /></p>
-<p>If there are more than one input parameter - it is possible to select the one you need from the dropdown. Clicking on a test case reveals the history of test runs for it (clickable).</p>
+<p>If there is more than one input parameter, it is possible to select the one you need from the dropdown list. Clicking on a test case reveals its history of test runs (clickable).</p>
 <h3 id="test-set-execution-plan">Test Set Execution Plan<a class="headerlink" href="#test-set-execution-plan" title="Permanent link">&para;</a></h3>
-<p>Since Rapise 7.3 you may view an execution plan for any test set. Navigate to Test Sets page in the dashboard, find the test set you need, expand Action menu for it (last column) and choose <code>Show Execution Plan...</code> menu item. Rapise will open a dialog with the execution plan for selected test set. In the execution plan you may see:</p>
+<p>Since Rapise 7.3, you may view an execution plan for any test set. Navigate to the Test Sets page in the dashboard, find the test set you need, expand the Action menu for it (in the last column), and choose the <code>Show Execution Plan...</code> menu item. Rapise will open a dialog with the execution plan for the selected test set. In the execution plan, you may see:</p>
 <ul>
-<li>Sequence of execution of test cases included into the test set</li>
-<li>Parameter values that will be passed to a test case by RapiseLauncher (all columns to the right of <code>Test Case</code> column)</li>
-<li><a href="#parallel-execution">Parallelism</a> level:<ul>
-<li>Sequential - all test cases are executed sequentially, all <a href="#input-data-table">configurations</a> are executed sequentially too.</li>
-<li>Parallel - all test cases are executed in parallel for each configuration, <a href="#input-data-table">configurations</a> are executed sequentially. In this case second column || is colored with green.</li>
-<li>Parallel configurations - all test cases and <a href="#input-data-table">configurations</a> are executed in parallel. In this case first column ||| is colored with green.</li>
+<li>The sequence of execution of test cases included in the test set</li>
+<li>Parameter values that will be passed to a test case by RapiseLauncher (all columns to the right of the <code>Test Case</code> column)</li>
+<li>The parallelism level:<ul>
+<li>Sequential - all test cases are executed sequentially, and all <a href="#input-data-table">configurations</a> are also executed sequentially.</li>
+<li>Parallel - all test cases are executed in parallel for each configuration, while <a href="#input-data-table">configurations</a> are executed sequentially. In this case, the second column <code>||</code> is colored green.</li>
+<li>Parallel configurations - all test cases and <a href="#input-data-table">configurations</a> are executed in parallel. In this case, the first column <code>|||</code> is colored green.</li>
 </ul>
 </li>
 </ul>
 <p><img alt="Execution Plan" src="../img/execution_plan.png" /></p>
 <h3 id="test-set-scheduling">Test Set Scheduling<a class="headerlink" href="#test-set-scheduling" title="Permanent link">&para;</a></h3>
-<p>Since Rapise 7.4 you may schedule a test set directly from the dashboard. Navigate to Test Sets page in the dashboard, find the test set you need, expand Action menu for it (last column) and choose <code>Schedule...</code> menu item. Rapise will open a dialog with scheduling options for selected test set. In the dialog you may specify:</p>
+<p>Since Rapise 7.4, you may schedule a test set directly from the dashboard. Navigate to the Test Sets page in the dashboard, find the test set you need, expand the Action menu for it (in the last column), and choose the <code>Schedule...</code> menu item. Rapise will open a dialog with scheduling options for the selected test set. In the dialog, you may specify:</p>
 <ul>
 <li>Date/time of execution</li>
-<li>Recurrence (One Time, Daily, etc.)</li>
+<li>Recurrence (One-Time, Daily, etc.)</li>
 <li>Automation Host</li>
 </ul>
 <p><img alt="Schedule" src="../img/schedule.png" /></p>
 <h3 id="dynamic-test-sets">Dynamic Test Sets<a class="headerlink" href="#dynamic-test-sets" title="Permanent link">&para;</a></h3>
 <p>In Rapise 8.4, we added support for <a href="../dynamic_test_sets/">Dynamic Test Sets</a>, a powerful feature that lets you execute targeted tests based on specific criteria. Instead of manually selecting individual test cases, you can now define a test set using properties like name, tags, and parameters, similar to filtering in tools like Microsoft VSTest. This allows you to focus your testing efforts on particular scenarios, such as smoke tests or regression tests for a specific bug fix.</p>
 <h3 id="csv-editor">CSV Editor<a class="headerlink" href="#csv-editor" title="Permanent link">&para;</a></h3>
-<p>Since Rapise 7.3 you may use convenient CSV editor to create and change Test Set attachments, especially those used as <a href="#input-data-table">Input Data Table</a>.</p>
+<p>Since Rapise 7.3, you may use a convenient CSV editor to create and change Test Set attachments, especially those used as an <a href="#input-data-table">Input Data Table</a>.</p>
 <p><img alt="CSV Editor" src="../img/csv_editor.png" /></p>
-<p>To view a CSV attachment there is no need to open it, just place mouse pointer over the attachment name:</p>
+<p>To view a CSV attachment, there is no need to open it; just place your mouse pointer over the attachment name:</p>
 <p><img alt="CSV Tooltip" src="../img/csv_tooltip.png" /></p>
 <h3 id="git-credentials-storage">Git Credentials Storage<a class="headerlink" href="#git-credentials-storage" title="Permanent link">&para;</a></h3>
-<p>Since Rapise 7.3 it is possible to share Git credentials between test sets. If you used Rapise, SpiraTest and Git together then you know that it was necessary to provide Git credentials for each test set. Now you can create Git credentials records via the dashboard and reference them in test sets.</p>
-<p>On the <code>Test Sets</code> page find <code>Git Credentials</code> button at the top and click on it.</p>
+<p>Since Rapise 7.3, it is possible to share Git credentials between test sets. If you have used Rapise, SpiraTest, and Git together, then you know it was previously necessary to provide Git credentials for each test set. Now, you can create Git credentials records via the dashboard and reference them in test sets.</p>
+<p>On the <code>Test Sets</code> page, find the <code>Git Credentials</code> button at the top and click on it.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In Rapise versions lower than 8.0 find <code>Git Credentials</code> button at the bottom of the main dashboard page. </p>
+<p>In Rapise versions lower than 8.0, find the <code>Git Credentials</code> button at the bottom of the main dashboard page. </p>
 </div>
-<p>You will see the dialog with configured Git credentials. If you are doing it for the first time - the dialog will be empty.</p>
+<p>You will see the dialog with configured Git credentials. If you are doing this for the first time, the dialog will be empty.</p>
 <p><img alt="Git Credentials Dialog" src="../img/git_credentials_dialog.png" /></p>
-<p>In the dialog one can add, edit and remove credentials. A set of credentials looks like this:</p>
+<p>In the dialog, one can add, edit, and remove credentials. A set of credentials looks like this:</p>
 <p><img alt="Git Credentials" src="../img/git_credentials_sample.png" /></p>
-<p>When credentials are tested and saved it is time to navigate to a test set and choose the credentials in the <ins class="critic">Git Credentials</ins> dropdown.</p>
+<p>Once credentials are tested and saved, it is time to navigate to a test set and choose the credentials from the <ins class="critic">Git Credentials</ins> dropdown.</p>
 <p><img alt="Git Credentials Assignment" src="../img/git_credentials_assign.png" /></p>
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>To open the dashboard use <a href="/Guide/menu_and_toolbars/#view">main menu</a> View &gt; Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup - open the <a href="/Guide/options_dialog/#settings">Rapise Settings</a> dialog and set <code>ShowDashboardOnStartup</code> flag to <code>true</code>.</p>
+<p>To open the dashboard, use the <a href="../menu_and_toolbars/#view">main menu</a>: View &gt; Spira Dashboard. If you wish Rapise to open the dashboard automatically on startup, open the <a href="../options_dialog/#settings">Rapise Settings</a> dialog and set the <code>ShowDashboardOnStartup</code> flag to <code>true</code>.</p>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
-<p>The dashboard contains top level menu to switch between views and a dropdown to switch between products/projects. There is also a button to refresh data and search field to filter data in the current view. Filtering is applied to a column with orange caption (usually <code>Name</code>).</p>
+<p>The dashboard contains a top-level menu to switch between views and a dropdown to switch between products/projects. There is also a button to refresh data and a search field to filter data in the current view. Filtering is applied to a column with an orange caption (usually <code>Name</code>).</p>
 <p><img alt="Dashboard Main Menu" src="../img/spira_dashboard_toplevel_menu.png" /></p>
 <h3 id="data-tables">Data Tables<a class="headerlink" href="#data-tables" title="Permanent link">&para;</a></h3>
-<p>In many cases first column of a data table contains ID of an item in Spira. You may click an ID to expand the corresponding item.</p>
+<p>In many cases, the first column of a data table contains the ID of an item in Spira. You may click an ID to expand the corresponding item.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In Rapise 7.3 and older clicking on ID opens corresponding item in a browser. To open an item in Rapise 7.4+ use Action column menu (Open in Spira).  </p>
+<p>In Rapise 7.3 and older, clicking on an ID opens the corresponding item in a browser. To open an item in Rapise 7.4+, use the Action column menu (Open in Spira).  </p>
 </div>
 <p><img alt="Data Table" src="../img/spira_dashboard_data_table.png" /></p>
-<p>Each data table has a menu opener (hamburger) located in the top right corner. The menu contains some predefined filters and also allows to reveal filter row and choose what columns to show (since Rapise 7.2 the list of columns to show is stored in the dashboard settings). Clicking a column caption turns on sorting.</p>
+<p>Each data table has a menu opener (hamburger) located in the top-right corner. The menu contains some predefined filters and also allows you to reveal the filter row and choose which columns to show (since Rapise 7.2, the list of columns to show is stored in the dashboard settings). Clicking a column caption turns on sorting.</p>
 <h3 id="hierarchical-tables">Hierarchical Tables<a class="headerlink" href="#hierarchical-tables" title="Permanent link">&para;</a></h3>
-<p>Many tables in the dashboard are hierarchical, clicking on item icon or item ID expands corresponding row and reveals nested items or item details.</p>
+<p>Many tables in the dashboard are hierarchical; clicking on an item icon or item ID expands the corresponding row and reveals nested items or item details.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you have Rapise 7.3 or older use <code>plus</code>/<code>minus</code> icons to expand/collapse.</p>
+<p>If you have Rapise 7.3 or older, use the <code>plus</code>/<code>minus</code> icons to expand/collapse.</p>
 </div>
 <p><img alt="Row Details" src="../img/spira_dashboard_row_details.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Since Rapise 7.1 you may use double click to expand/collapse row details. Double click anywhere on the row you want to expand/collapse.</p>
+<p>Since Rapise 7.1, you may use a double-click to expand/collapse row details. Double-click anywhere on the row you want to expand/collapse.</p>
 </div>
 <h3 id="tree-view">Tree View<a class="headerlink" href="#tree-view" title="Permanent link">&para;</a></h3>
-<p>Test cases and test sets may be placed into folders in Spira. The dashboard loads folder hierarchy. To navigate it click on folder icons.</p>
+<p>Test cases and test sets may be placed into folders in Spira. The dashboard loads the folder hierarchy. To navigate it, click on the folder icons.</p>
 <p><img alt="Folder Tree" src="/Guide/img/spira_dashboard_tree.png" width="400"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Since Rapise 7.1 you may use double click to expand/collapse folders. Double click anywhere on the row with folder you want to expand/collapse.</p>
+<p>Since Rapise 7.1, you may use a double-click to expand/collapse folders. Double-click anywhere on the row with the folder you want to expand/collapse.</p>
 </div>
 <h3 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h3>
-<p>Some tables include <code>Action</code> column. It allows the user to perform certain actions on an item displayed in the row where <code>Action</code> menu is expanded.</p>
+<p>Some tables include an <code>Action</code> column. It allows the user to perform certain actions on an item displayed in the row where the <code>Action</code> menu is expanded.</p>
 <p><img alt="Actions" src="/Guide/img/spira_dashboard_actions.png" width="250"/></p>
 <h2 id="tasks">Tasks<a class="headerlink" href="#tasks" title="Permanent link">&para;</a></h2>
-<p>Here is the list of tasks you may accomplish with the dashboard.</p>
+<p>Here is a list of tasks you may accomplish with the dashboard.</p>
 <h3 id="connect-to-spira">Connect To Spira<a class="headerlink" href="#connect-to-spira" title="Permanent link">&para;</a></h3>
-<p>If you did not connect Rapise to Spira yet, you will be prompted to enter the connection info.</p>
+<p>If you have not connected Rapise to Spira yet, you will be prompted to enter the connection information.</p>
 <p><img alt="No Connection" src="/Guide/img/spira_dashboard_connection.png" width="450"/></p>
-<p>To get your API Key follow <a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">these steps</a>.</p>
+<p>To get your API Key, follow <a href="https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key">these steps</a>.</p>
 <h3 id="assign-automation-host-token">Assign Automation Host Token<a class="headerlink" href="#assign-automation-host-token" title="Permanent link">&para;</a></h3>
-<p>If you did not assign an automation host token to the machine where Rapise is running you may do it in Automation Hosts view. You may even create a new host there.</p>
+<p>If you have not assigned an automation host token to the machine where Rapise is running, you may do so in the Automation Hosts view. You may even create a new host there.</p>
 <p><img alt="Automation Hosts" src="../img/spira_dashboard_automation_hosts.png" /></p>
 <h3 id="framework-view-rapise-80">Framework View (Rapise 8.0+)<a class="headerlink" href="#framework-view-rapise-80" title="Permanent link">&para;</a></h3>
-<p>The <a href="../Frameworks/frameworks/">Framework mode</a> was introduced in Rapise 8.0 to simplify test case and test set management, as well as the management of parameters, page objects/modules, object repositories, and shared code. The legacy <a href="../../Intro/framework/">Single Test mode</a> required dealing with <code>Sub-Tests</code> and linking tests to <code>SpiraTest</code> on a per test case basis, whereas in the <code>Framework mode</code>, there is a single button labeled <mark class="critic">Sync with Spira</mark> that handles everything. When this button is pressed, test cases and test sets are automatically synchronized with <code>SpiraTest</code>, and files are uploaded/downloaded.</p>
+<p>The <a href="../Frameworks/frameworks/">Framework mode</a> was introduced in Rapise 8.0 to simplify test case and test set management, as well as the management of parameters, page objects/modules, object repositories, and shared code. The legacy <a href="../../Intro/framework/">Single Test mode</a> required dealing with <code>Sub-Tests</code> and linking tests to <code>SpiraTest</code> on a per-test-case basis, whereas in the <code>Framework mode</code>, there is a single button labeled <mark class="critic">Sync with Spira</mark> that handles everything. When this button is pressed, test cases and test sets are automatically synchronized with <code>SpiraTest</code>, and files are uploaded/downloaded.</p>
 <p><img alt="Framework View" src="../img/spira_dashboard_2_framework_view.png" width="1350px" /></p>
 <h4 id="manage-test-sets">Manage Test Sets<a class="headerlink" href="#manage-test-sets" title="Permanent link">&para;</a></h4>
 <p>The <code>Framework view</code> has a dropdown with test sets defined in the current framework.</p>
 <p><img alt="Test Set Dropdown" src="../img/spira_dashboard_2_test_set_dropdown.png" width="494px" /></p>
-<p>Use <code>New Test Set</code> button (highlighted above) to create new test set. Below the test set dropdown find the controls related to the active/selected test set.</p>
+<p>Use the <code>New Test Set</code> button (highlighted above) to create a new test set. Below the test set dropdown, find the controls related to the active/selected test set.</p>
 <p><img alt="Test Set Details" src="../img/spira_dashboard_2_test_set_details.png" /></p>
 <ul>
 <li>1 - dropdown with the names of <a href="../Frameworks/parameters/#configurations">defined test set configurations</a>,</li>
@@ -12718,26 +12742,26 @@ borrower,borrower
 <li>3 - <code>Action</code> menu,</li>
 <li>4 - ID of the corresponding test set in <code>SpiraTest</code>.</li>
 </ul>
-<p><code>Action</code> dropdown allows to</p>
+<p>The <code>Action</code> dropdown allows you to</p>
 <p><img alt="Test Set Action Dropdown" src="../img/spira_dashboard_2_test_set_action_dropdown.png" width="176px" /></p>
 <ul>
 <li>Immediately <code>Execute</code> the test set on the local machine via <a href="../spiratest_integration/#using-rapiselauncher">RapiseLauncher</a>.</li>
-<li><code>Schedule</code> the test set for later execution (one time or recurrent).</li>
+<li><code>Schedule</code> the test set for later execution (one-time or recurrent).</li>
 <li><code>Rename</code> the test set.</li>
 <li><code>Delete</code> the test set.</li>
 <li><code>Open</code> the test set <code>in Spira</code> (in the default browser).</li>
 </ul>
 <h4 id="manage-test-cases">Manage Test Cases<a class="headerlink" href="#manage-test-cases" title="Permanent link">&para;</a></h4>
-<p>Below the test set controls find the list of test cases in the current framework. You may switch between viewing all test cases</p>
+<p>Below the test set controls, find the list of test cases in the current framework. You may switch between viewing all test cases</p>
 <p><img alt="All Test Cases Filter" src="../img/spira_dashboard_2_all_test_cases.png" width="739px" /></p>
-<p>or just included into the active test set.</p>
+<p>or just those included in the active test set.</p>
 <p><img alt="Included Test Cases Filter" src="../img/spira_dashboard_2_included_test_cases.png" width="737px" /></p>
-<p>In <code>All Test Cases</code> view use checkboxes to include/remove a test case. In <code>Included Test Cases</code> view use hamburger icons to reorder test cases.</p>
-<p>For every test case there is also <code>Action</code> dropdown that allows to <code>Open in Spira</code> corresponding test case. IDs on the right side of the test cases table are IDs of corresponding test cases in <code>SpiraTest</code>.</p>
+<p>In the <code>All Test Cases</code> view, use checkboxes to include or remove a test case. In the <code>Included Test Cases</code> view, use hamburger icons to reorder test cases.</p>
+<p>For every test case, there is also an <code>Action</code> dropdown that allows you to <code>Open in Spira</code> the corresponding test case. The IDs on the right side of the test cases table are the IDs of corresponding test cases in <code>SpiraTest</code>.</p>
 <h4 id="sync-with-spira">Sync with Spira<a class="headerlink" href="#sync-with-spira" title="Permanent link">&para;</a></h4>
-<p>When making changes such as creating, renaming, or deleting a test set, including or removing test cases, or reordering test cases, these actions are performed locally, and to update the <code>SpiraTest</code> side, use the <code>Sync with Spira</code> button.</p>
+<p>When making changes such as creating, renaming, or deleting a test set, including or removing test cases, or reordering test cases, these actions are performed locally; to update <code>SpiraTest</code>, use the <code>Sync with Spira</code> button.</p>
 <p><img alt="Sync with Spira Button" src="../img/spira_dashboard_2_sync_with_spira_button.png" width="350px" /></p>
-<p>Additionally, ensure to use this button after creating a new test case in the framework to make it available for inclusion in a test set.</p>
+<p>Additionally, ensure you use this button after creating a new test case in the framework to make it available for inclusion in a test set.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The <code>Sync with Spira</code> button is a powerful tool that manages various tasks, including creating test cases and test sets in SpiraTest, establishing links to Rapise tests, and facilitating file upload and download operations.</p>
@@ -12749,10 +12773,10 @@ borrower,borrower
 </ul>
 </div>
 <h4 id="execute-active-test-set">Execute Active Test Set<a class="headerlink" href="#execute-active-test-set" title="Permanent link">&para;</a></h4>
-<p>Use <code>Execute</code> button to launch selected test set on a local machine via <a href="../spiratest_integration/#using-rapiselauncher">RapiseLauncher</a>.</p>
+<p>Use the <code>Execute</code> button to launch the selected test set on a local machine via <a href="../spiratest_integration/#using-rapiselauncher">RapiseLauncher</a>.</p>
 <p><img alt="Execute Test Set Button" src="../img/spira_dashboard_2_execute_button.png" width="348px" /></p>
 <h3 id="parameters-view-rapise-80">Parameters View (Rapise 8.0+)<a class="headerlink" href="#parameters-view-rapise-80" title="Permanent link">&para;</a></h3>
-<p>Just like <a href="#framework-view-rapise-80">Framework View</a> this view is available in <a href="../Frameworks/frameworks/">new frameworks</a> created with Rapise 8.0+. It is used to manage framework parameters and configurations, and described <a href="../Frameworks/parameters/">here</a>.</p>
+<p>Just like the <a href="#framework-view-rapise-80">Framework View</a>, this view is available in <a href="../Frameworks/frameworks/">new frameworks</a> created with Rapise 8.0+. It is used to manage framework parameters and configurations and is described <a href="../Frameworks/parameters/">here</a>.</p>
 <p><img alt="" src="../img/spira_dashboard_2_parameters_view.png" width="802px" /></p>
 <h3 id="dashboard-view-legacy">Dashboard View (legacy)<a class="headerlink" href="#dashboard-view-legacy" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
@@ -12760,30 +12784,30 @@ borrower,borrower
 <p>This view is enabled for <a href="../../Intro/framework/">legacy tests and frameworks</a> and is not available in the new <a href="../Frameworks/frameworks/">Framework mode</a>. If you are dealing with a new framework created with Rapise 8.0+, a <a href="#framework-view-rapise-80">Framework View</a> is displayed.</p>
 </div>
 <h4 id="browse-framework-tests">Browse Framework Tests<a class="headerlink" href="#browse-framework-tests" title="Permanent link">&para;</a></h4>
-<p>The dashboard view shows tests included in the currently opened test framework (parent test and it's sub-tests).</p>
+<p>The dashboard view shows tests included in the currently opened test framework (parent test and its sub-tests).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Since Rapise 7.1 you may double click a test in this table to open it in Rapise.</p>
+<p>Since Rapise 7.1, you may double-click a test in this table to open it in Rapise.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Since Rapise 7.2 you may select tests using checkboxes in the first column and perform additional actions: </p>
+<p>Since Rapise 7.2, you may select tests using checkboxes in the first column and perform additional actions: </p>
 <ul>
-<li>create a test set from selected test cases, </li>
-<li>append selected test cases to existing test set</li>
+<li>create a test set from the selected test cases, </li>
+<li>append selected test cases to an existing test set</li>
 <li>execute selected test cases on the local host</li>
 <li>execute selected test cases on another automation host</li>
 </ul>
-<p>A test has a checkbox near it if it is linked to a test cases belonging to selected project.</p>
+<p>A test has a checkbox near it if it is linked to test cases belonging to the selected project.</p>
 </div>
 <h4 id="view-test-set-status-graph">View Test Set Status Graph<a class="headerlink" href="#view-test-set-status-graph" title="Permanent link">&para;</a></h4>
-<p>Requires Rapise 7.2. The Test Set Status graph shows the aggregated count of test cases in each execution status for each test set in the product. If you have the same test cases in multiple test sets they are all counted separately to make sure you can tell that tests have passed successfully across test sets. This is helpful when testing across different environments.</p>
+<p>Requires Rapise 7.2. The Test Set Status graph shows the aggregated count of test cases in each execution status for each test set in the product. If you have the same test cases in multiple test sets, they are all counted separately to ensure that tests have passed successfully across test sets. This is helpful when testing across different environments.</p>
 <h4 id="setup-custom-properties">Setup Custom Properties<a class="headerlink" href="#setup-custom-properties" title="Permanent link">&para;</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Since Rapise 8.0 custom properties are created from the <a href="#test-runs-view">Test Runs view</a>, because Rapise needs to create the properties for Test Runs only. Test Cases and Test Sets since Rapise 8.0 store the properties in it's description.</p>
+<p>Since Rapise 8.0, custom properties are created from the <a href="#test-runs-view">Test Runs view</a>, because Rapise needs to create the properties for Test Runs only. Test Cases and Test Sets, since Rapise 8.0, store the properties in their description.</p>
 </div>
-<p>Some features of the dashboard require additional custom properties to exist in Test Cases, Test Sets and Test Runs. Click <code>Create Custom Properties for Rapise</code> button to add the following custom properties in the selected project:</p>
+<p>Click the <code>Create Custom Properties for Rapise</code> button to add the following custom properties to the selected project:</p>
 <ul>
 <li>Test Runs<ul>
 <li>Flaky (boolean, default is false)</li>
@@ -12806,14 +12830,14 @@ borrower,borrower
 <li>Input data (string, empty by default, requires Rapise 7.1+)</li>
 <li>Record videos (boolean, default is false)</li>
 <li>Verbose level (integer, default is 1)</li>
-<li><a href="/Guide/git_integration/#using-spira-custom-properties">GitUrl, GitUser, GitPassword, GitBranch, GitRoot</a> (string, empty by default)</li>
+<li><a href="../git_integration/#using-spira-custom-properties">GitUrl, GitUser, GitPassword, GitBranch, GitRoot</a> (string, empty by default)</li>
 <li><a href="#git-credentials-storage">Git Credentials</a> (dropdown value choice, requires Rapise 7.3)</li>
 </ul>
 </li>
 </ul>
-<p>Clicking the button more than once is safe. If a custom property exists - Rapise won't create a duplicate. To create the custom properties you will need to enter administrator credentials (user name and API Key).</p>
+<p>Clicking the button more than once is safe. If a custom property exists, Rapise won't create a duplicate. To create the custom properties, you will need to enter administrator credentials (username and API Key).</p>
 <h4 id="perform-test-actions">Perform Test Actions<a class="headerlink" href="#perform-test-actions" title="Permanent link">&para;</a></h4>
-<p>Action menu for a test allows to</p>
+<p>The Action menu for a test allows you to</p>
 <ol>
 <li>Open the test in Rapise</li>
 <li>Link the test to a test case in Spira</li>
@@ -12822,85 +12846,85 @@ borrower,borrower
 </ol>
 <h3 id="test-cases-view">Test Cases View<a class="headerlink" href="#test-cases-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-test-cases">Browse Test Cases<a class="headerlink" href="#browse-test-cases" title="Permanent link">&para;</a></h4>
-<p>In the test cases view one may see the tree of test cases for a project, discover when a test case was last executed and status of execution.</p>
-<p>Since Rapise 7.2 one may change global Test Case filter from <code>All</code> to <code>My Assigned</code>. Rapise 8.0 adds one more filter - <code>Framework</code>.</p>
+<p>In the Test Cases view, you may see the tree of test cases for a project, discover when a test case was last executed, and its execution status.</p>
+<p>Since Rapise 7.2, you may change the global Test Case filter from <code>All</code> to <code>My Assigned</code>. Rapise 8.0 adds one more filter: <code>Framework</code>.</p>
 <h4 id="view-test-case-details">View Test Case Details<a class="headerlink" href="#view-test-case-details" title="Permanent link">&para;</a></h4>
-<p>Expanding a test case reveals last 10 runs of it. The details pane also shows test case parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
+<p>Expanding a test case reveals its last 10 runs. The details pane also shows test case parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
 <h4 id="perform-test-case-actions">Perform Test Case Actions<a class="headerlink" href="#perform-test-case-actions" title="Permanent link">&para;</a></h4>
-<p>Action menu for a test case allows to</p>
+<p>The Action menu for a test case allows you to</p>
 <ol>
 <li>Immediately <code>Execute</code> the test case on the local host.</li>
 <li><code>Execute</code> the test case on a selected Automation Host. It will run as soon as RapiseLauncher on that host is ready.</li>
 <li>Mark the test case as <code>Flaky</code> or remove the flag. </li>
-<li>Add default parameters to the test case  (legacy, use Test Set level custom properties to control verbose and video recording). The list of default parameters includes:<ul>
+<li>Add default parameters to the test case (legacy; use Test Set level custom properties to control verbose and video recording). The list of default parameters includes:<ul>
 <li>g_verboseLevel = 1</li>
 <li>g_enableVideoRecording = false</li>
 </ul>
 </li>
-<li><code>Open This Test</code> in Rapise. It is a shortcut for <a href="/Guide/spiratest_integration/#opening-a-test-from-spiratest">Open a test from SpiraTest</a>.</li>
+<li><code>Open This Test</code> in Rapise. It is a shortcut for <a href="../spiratest_integration/#opening-a-test-from-spiratest">Open a test from SpiraTest</a>.</li>
 <li><code>Rename</code> a test case or a test case folder.</li>
 <li><code>Delete</code> a test case.</li>
-<li><code>Open in Spira</code> - open current item in a browser window.</li>
+<li><code>Open in Spira</code> - opens the current item in a browser window.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For execution of a test case on a selected automation host (#2) - Rapise will use a special test set with the name of the automation host.</p>
+<p>For execution of a test case on a selected automation host (#2), Rapise will use a special test set with the name of the automation host.</p>
 </div>
 <h4 id="create-new-test-case">Create New Test Case<a class="headerlink" href="#create-new-test-case" title="Permanent link">&para;</a></h4>
-<p>If you want to create a test case in a specific folder - select corresponding row in the table, otherwise the test case will be created in the root folder. Click the <code>New Test Case</code> button at the bottom of the view and provide necessary details in the opened modal dialog.</p>
+<p>If you want to create a test case in a specific folder, select the corresponding row in the table; otherwise, the test case will be created in the root folder. Click the <code>New Test Case</code> button at the bottom of the view and provide the necessary details in the opened modal dialog.</p>
 <h3 id="test-sets-view">Test Sets View<a class="headerlink" href="#test-sets-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-test-sets">Browse Test Sets<a class="headerlink" href="#browse-test-sets" title="Permanent link">&para;</a></h4>
-<p>In the test sets view one may see the tree of test sets for a project, discover when a test set was last executed and status of execution.</p>
-<p>Since Rapise 7.2 one may change global Test Set filter from <code>All</code> to <code>My Assigned</code>.  Rapise 8.0 adds one more filter - <code>Framework</code>.</p>
-<p>Since Rapise 7.3 it is possible to change the way of calculating test set execution status. If you are using <a href="#automatic-rerun">rerun</a> features or include same test case multiple times into the same test set then it is recommended to set <code>Calculate Test Set Status from Test Runs</code> option:</p>
+<p>In the Test Sets view, you may see the tree of test sets for a project, discover when a test set was last executed, and its execution status.</p>
+<p>Since Rapise 7.2, you may change the global Test Set filter from <code>All</code> to <code>My Assigned</code>. Rapise 8.0 adds one more filter: <code>Framework</code>.</p>
+<p>Since Rapise 7.3, it is possible to change the way test set execution status is calculated. If you are using <a href="#automatic-rerun">rerun</a> features or include the same test case multiple times in the same test set, then it is recommended to set the <code>Calculate Test Set Status from Test Runs</code> option:</p>
 <p><img alt="Calculate Test Set Status from Test Runs" src="../img/calculate_test_set_status_option.jpg" width="335px" /></p>
-<p>If this option is not set then test set status is calculated based on the latest run for each included test case.</p>
+<p>If this option is not set, then the test set status is calculated based on the latest run for each included test case.</p>
 <h4 id="view-test-set-details">View Test Set Details<a class="headerlink" href="#view-test-set-details" title="Permanent link">&para;</a></h4>
 <p>Expanding a test set reveals the list of included test cases. The details pane also shows test set parameters (editable, requires Rapise 7.1+) and custom properties (editable).</p>
 <h5 id="add-test-cases">Add Test Cases<a class="headerlink" href="#add-test-cases" title="Permanent link">&para;</a></h5>
-<p>Press <code>Add Test Cases</code> to open the test cases tree, select test cases and append them to the test set.</p>
+<p>Press <code>Add Test Cases</code> to open the test cases tree, select test cases, and append them to the test set.</p>
 <h5 id="reorder-test-cases">Reorder Test Cases<a class="headerlink" href="#reorder-test-cases" title="Permanent link">&para;</a></h5>
-<p>Using hamburger icon next to a test case ID one may reorder test cases in a test set.</p>
+<p>Using the hamburger icon next to a test case ID, you may reorder test cases in a test set.</p>
 <h5 id="test-case-actions">Test Case Actions<a class="headerlink" href="#test-case-actions" title="Permanent link">&para;</a></h5>
-<p>Use Action menu to </p>
+<p>Use the Action menu to </p>
 <ol>
-<li>Remove a test case from the test</li>
+<li>Remove a test case from the test set</li>
 <li>Open a dialog to edit <code>Test Set Test Case</code> parameters (requires Rapise 7.1+)</li>
 </ol>
 <h4 id="perform-test-set-actions">Perform Test Set Actions<a class="headerlink" href="#perform-test-set-actions" title="Permanent link">&para;</a></h4>
-<p>Action menu for a test set allows to</p>
+<p>The Action menu for a test set allows you to</p>
 <ol>
 <li>Immediately <code>Execute</code> the test set on the local host.</li>
 <li><code>Execute</code> the test set on a selected Automation Host. It will run as soon as RapiseLauncher on that host is ready.</li>
-<li><code>Rerun</code> just failed test cases on a selected Automation Host.</li>
+<li><code>Rerun</code> just the failed test cases on a selected Automation Host.</li>
 <li><a href="#test-set-scheduling">Schedule</a> the test set.</li>
 <li><a href="#test-set-execution-plan">Show Execution Plan</a> for the test set.</li>
 <li><code>Rename</code> a test case or a test case folder.</li>
 <li><code>Delete</code> a test case.</li>
-<li><code>Open in Spira</code> - open current item in a browser window.</li>
+<li><code>Open in Spira</code> - opens the current item in a browser window.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For execution of a test set on a selected automation host (#2,#3) Rapise will use a special test set with the name of the automation host. Since Rapise 8.1 there is a checkbox to allow execution of the original test set.</p>
+<p>For execution of a test set on a selected automation host (#2, #3), Rapise will use a special test set with the name of the automation host. Since Rapise 8.1, there is a checkbox to allow execution of the original test set.</p>
 </div>
 <h4 id="create-new-test-set">Create New Test Set<a class="headerlink" href="#create-new-test-set" title="Permanent link">&para;</a></h4>
-<p>If you want to create a test set in a specific folder - select corresponding row in the table, otherwise the test set will be created in the root folder. Click the <code>New Test Set</code> button at the bottom of the view and provide necessary details in the opened modal dialog.</p>
+<p>If you want to create a test set in a specific folder, select the corresponding row in the table; otherwise, the test set will be created in the root folder. Click the <code>New Test Set</code> button at the bottom of the view and provide the necessary details in the opened modal dialog.</p>
 <h3 id="test-runs-view">Test Runs View<a class="headerlink" href="#test-runs-view" title="Permanent link">&para;</a></h3>
 <h4 id="browse-test-runs">Browse Test Runs<a class="headerlink" href="#browse-test-runs" title="Permanent link">&para;</a></h4>
-<p>This view shows most recent test run reports. One may see test run status and execution time and duration. If a test run is failed - Details column displays the first error message.</p>
-<p>Since Rapise 7.1 to view just test runs of a specific test set run use <code>Tag</code> column popup menu <code>Filter by Tag</code>. If you run the test set with different configurations then configuration number is reflected in the tag name, e.g. QZH_<code>Config3</code>. If a test run corresponds to automatic rerun of a failed test set it has suffix <code>Rerun</code>, e.g. DCB_<code>Rerun</code>. First three letters of the tag name is a random string. generated for test set run by RapiseLauncher.</p>
+<p>This view shows the most recent test run reports. You may see test run status, execution time, and duration. If a test run fails, the Details column displays the first error message.</p>
+<p>Since Rapise 7.1, to view just test runs of a specific test set run, use the <code>Tag</code> column popup menu <code>Filter by Tag</code>. If you run the test set with different configurations, then the configuration number is reflected in the tag name, e.g., QZH_<code>Config3</code>. If a test run corresponds to an automatic rerun of a failed test set, it has the suffix <code>Rerun</code>, e.g., DCB_<code>Rerun</code>. The first three letters of the tag name are a random string generated for the test set run by RapiseLauncher.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To enable <code>Filter by Tag</code> feature setup custom properties as described <a href="#setup-custom-properties">below</a>.</p>
+<p>To enable <code>Filter by Tag</code> feature, set up custom properties as described <a href="#setup-custom-properties">below</a>.</p>
 </div>
 <h4 id="view-test-run-details">View Test Run Details<a class="headerlink" href="#view-test-run-details" title="Permanent link">&para;</a></h4>
-<p>Expanding a test run reveals the report with execution status for every test step. The details pane also contains links to download test run attachments and execution log.</p>
+<p>Expanding a test run reveals the report with execution status for every test step. The details pane also contains links to download test run attachments and the execution log.</p>
 <h3 id="test-matrix-view">Test Matrix View<a class="headerlink" href="#test-matrix-view" title="Permanent link">&para;</a></h3>
-<p>Direct navigation to this page produces empty result. To see the Test Matrix navigate to the Test Runs view, right click Test Run tag and choose <code>Test Matrix</code> from popup menu.</p>
+<p>Direct navigation to this page produces an empty result. To see the Test Matrix, navigate to the Test Runs view, right-click a Test Run tag, and choose <code>Test Matrix</code> from the popup menu.</p>
 <h3 id="automation-hosts-view">Automation Hosts View<a class="headerlink" href="#automation-hosts-view" title="Permanent link">&para;</a></h3>
-<p>This view displays automation hosts configured in selected project. You may create a new one using the form on this page.</p>
+<p>This view displays automation hosts configured in the selected project. You may create a new one using the form on this page.</p>
 <h3 id="incidents-view">Incidents View<a class="headerlink" href="#incidents-view" title="Permanent link">&para;</a></h3>
-<p>This view displays last 500 incidents and allows to create new ones.</p>
+<p>This view displays the last 500 incidents and allows you to create new ones.</p>
                 
               
               

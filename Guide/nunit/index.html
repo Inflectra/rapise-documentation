@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11116,6 +11128,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11409,8 +11433,8 @@
                 
                 <h1 id="nunit">NUnit<a class="headerlink" href="#nunit" title="Permanent link">&para;</a></h1>
 <h2 id="about-nunit-integration">About NUnit Integration<a class="headerlink" href="#about-nunit-integration" title="Permanent link">&para;</a></h2>
-<p>SeSNUnit is a sample of using NUnit. We provide special attribute to help executing Rapise GUI tests from within NUnit tests.</p>
-<p>Standard NUnit test looks like this:</p>
+<p>SeSNUnit provides a sample of using NUnit. It includes a special attribute to facilitate the execution of Rapise GUI tests within NUnit tests.</p>
+<p>A standard NUnit test looks like this:</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">NUnit.Framework</span><span class="p">;</span>
 
@@ -11424,16 +11448,16 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Each test case is a function with a special attribute [<strong>Test</strong>]. NUnit uses it to find test cases, then collects cases in sets and so on.</p>
-<p>Rapise integration makes execution of Rapise tests as simple as execution of normal NUnit tests:</p>
+<p>Each test case is a function marked with the special <strong>[Test]</strong> attribute. NUnit uses this to discover test cases and organize them into sets.</p>
+<p>Rapise integration makes the execution of Rapise tests as straightforward as running normal NUnit tests:</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">NUnit.Framework</span><span class="p">;</span>
-<span class="k">using</span><span class="w"> </span><span class="nn">SeSNUnit</span><span class="p">;</span><span class="w"> </span><span class="c1">// We include Rapise helper class</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">SeSNUnit</span><span class="p">;</span><span class="w"> </span><span class="c1">// We include the Rapise helper class</span>
 
 <span class="na">[TestFixture]</span>
 <span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">PlayerTesting</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">// Next line means: this is an NUnit test that executes Cross Browser.sstest with Rapise</span>
+<span class="w">    </span><span class="c1">// This line indicates that this NUnit test executes CrossBrowser.sstest using Rapise.</span>
 <span class="w">    </span><span class="na">[SeSNUnitTest(@&quot;T:\Samples\Cross Browser\CrossBrowser.sstest&quot;)]</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TestIEandFirefox</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
@@ -11445,45 +11469,43 @@
 <p>Now we use another attribute to mark the test:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[SeSNUnitTest(@&quot;&lt;path to .sstest&gt;&quot;)]</span>
 </code></pre></div>
-<p>We just mark this test as a wrapper for concrete Rapise test instance.</p>
+<p>This attribute simply marks the test as a wrapper for a specific Rapise test instance.</p>
 <h2 id="installing-nunit">Installing NUnit<a class="headerlink" href="#installing-nunit" title="Permanent link">&para;</a></h2>
-<p>To run this sample you need NUnit. You can download NUnit from this site <a href="http://www.nunit.org/index.php?p=download">http://www.nunit.org/index.php?p=download</a>.</p>
-<p>Download and install NUnit package (for example, NUnit-2.4.8-net-2.0.msi).</p>
-<p>It is installation package file, so only thing that you need to do after download is to double click on that file.</p>
-<p>Run NUnit from the start menu:</p>
+<p>To run this sample, you need NUnit. You can download NUnit from this site <a href="http://www.nunit.org/index.php?p=download">http://www.nunit.org/index.php?p=download</a>.</p>
+<p>Download and install the NUnit package (for example, NUnit-2.4.8-net-2.0.msi).</p>
+<p>This is an installation package file, so the only thing you need to do after downloading is to double-click the file.</p>
+<p>Run NUnit from the Start menu:</p>
 <p><img alt="clip0066" src="../img/nunit1.png" /></p>
-<p>Select “OpenProject…” from “File” menu:</p>
+<p>Select “OpenProject…” from the “File” menu:</p>
 <p><img alt="clip0067" src="../img/nunit2.png" /></p>
-<p>In opened window find and select</p>
+<p>In the window that opens, find and select:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit\SeSSamplesNUnit\bin\Release\SeSSamplesNUnit.dll
 </code></pre></div></td></tr></table></div>
 
-<p>Press “Run” to start the test</p>
+<p>Press “Run” to start the test.</p>
 <p><img alt="clip0068" src="../img/nunit3.png" /></p>
-<p>After the test ended NUnit GUI must look like:</p>
+<p>After the test has finished, the NUnit GUI should look like this:</p>
 <p><img alt="clip0069" src="../img/nunit4.png" /></p>
 <h2 id="tree-display">Tree Display<a class="headerlink" href="#tree-display" title="Permanent link">&para;</a></h2>
-<p>There is a test tree in the left part of a window, it contains tests of current NUnit project.</p>
-<p>From this tree you can easily determine the test status. Successful tests are colored green, with a check mark. If any tests had failed, they would be marked red, with an X symbol.</p>
+<p>The left part of the window displays a test tree, which contains the tests for the current NUnit project.</p>
+<p>From this tree, you can easily determine the test status. Successful tests are colored green and display a check mark. If any tests fail, they are marked red with an 'X' symbol.</p>
 <h2 id="progress-bar">Progress Bar<a class="headerlink" href="#progress-bar" title="Permanent link">&para;</a></h2>
-<p>The progress bar shows the progress of the test. It is colored according to the "worst" result obtained: red if there were any failures, yellow if some tests were ignored and green for success.</p>
+<p>The progress bar shows the test's progress. Its color reflects the "worst" result obtained: red for any failures, yellow if some tests were ignored, and green for overall success.</p>
 <h2 id="result-tabs">Result Tabs<a class="headerlink" href="#result-tabs" title="Permanent link">&para;</a></h2>
-<p>The tabs in the right-hand part of the display show the results of running a test. The <strong>Errors and Failures</strong> tab displays the error
-message and stack trace for both unexpected exceptions and assertion failures. The <strong>Tests Not Run</strong> tab provides a list of all tests that
-were selected for running but were not run, together with the reason. The <strong>Console.Out</strong>, <strong>Console.Error</strong> and <strong>Trace Output</strong> tabs display text output from the tests.</p>
+<p>The tabs in the right-hand part of the display show the test run results. The <strong>Errors and Failures</strong> tab displays the error message and stack trace for both unexpected exceptions and assertion failures. The <strong>Tests Not Run</strong> tab provides a list of all tests that were selected for execution but were not run, along with the reason. The <strong>Console.Out</strong>, <strong>Console.Error</strong>, and <strong>Trace Output</strong> tabs display text output from the tests.</p>
 <h2 id="visual-studio-templates">Visual Studio Templates<a class="headerlink" href="#visual-studio-templates" title="Permanent link">&para;</a></h2>
-<p>Templates are available to help you creating tests in Visual Studio. To install them use run installer file: </p>
+<p>Templates are available to help you create tests in Visual Studio. To install them, run the installer file:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Extensions\UnitTesting\NUnit\SeSNUnit.vsi
 </code></pre></div></td></tr></table></div>
 
-<p>and follow the installation process</p>
+<p>and follow the installation process.</p>
 <p><img alt="clip0070" src="../img/nunit5.png" /></p>
-<p>This will add code snippets and project templates described below.</p>
+<p>This will add the code snippets and project templates described below.</p>
 <h2 id="creating-sesnunit-test">Creating SeSNUnit test<a class="headerlink" href="#creating-sesnunit-test" title="Permanent link">&para;</a></h2>
-<p>Maybe you will want to write your own SeSNUnit test.  We have special template which will help you to do that. In this part we’ll explain how to use it.</p>
-<p>The only thing you need to do is just to create <strong>SeSNUnitTests</strong> type project. For that open VS2005, on <strong>Start Page</strong> click on <code>Project...</code> (in the right side of <code>Create:</code>) and in opened window from <code>My Templates</code> part select <code>SeSNUnitTests</code>. If you want you can change name of dll. By default it is <code>SeSNUnitTests1</code>:</p>
+<p>You might want to write your own SeSNUnit test. We provide a special template to help you do this. In this section, we'll explain how to use it.</p>
+<p>The only thing you need to do is create an <strong>SeSNUnitTests</strong> type project. To do this, open VS2005, click <code>Project...</code> on the <strong>Start Page</strong> (to the right of <code>Create:</code>), and in the window that opens, select <code>SeSNUnitTests</code> from the <code>My Templates</code> section. You can change the name of the DLL if desired; by default, it is <code>SeSNUnitTests1</code>:</p>
 <p><img alt="clip0071" src="../img/nunit6.png" /></p>
-<p>In the created project Open <code>Fixture1.cs</code> file.  All necessary references are already added:</p>
+<p>In the created project, open the <code>Fixture1.cs</code> file. All necessary references are already added:</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">System.Collections.Generic</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">System.Text</span><span class="p">;</span>
@@ -11491,25 +11513,24 @@ were selected for running but were not run, together with the reason. The <stron
 <span class="k">using</span><span class="w"> </span><span class="nn">NUnit.Framework</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">SeSNUnit</span><span class="p">;</span>
 </code></pre></div>
-<p>File also contains <code>Fixture1class</code> with <code>[TestFixture]</code> attribute:</p>
+<p>The file also contains the <code>Fixture1</code> class with the <code>[TestFixture]</code> attribute:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[TestFixture]</span>
 <span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Fixture1</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>This is the attribute that marks a class that contains tests and, optionally, setup or teardown methods.</p>
-<p>There are a few restrictions on a class that is used as a test fixture.</p>
+<p>This attribute marks a class that contains tests and, optionally, setup or teardown methods.</p>
+<p>There are a few restrictions on classes used as test fixtures:</p>
 <ul>
 <li>It must be a publicly exported type.</li>
 <li>It must not be abstract.</li>
-<li>It must have a default constructor</li>
-<li>It must have no more than one of each of the following method types: <code>SetUp</code>, <code>TearDown</code>, <code>TestFixtureSetUp</code> and <code>TestFixtureTearDown</code>.</li>
+<li>It must have a default constructor.</li>
+<li>It must have no more than one of each of the following method types: <code>SetUp</code>, <code>TearDown</code>, <code>TestFixtureSetUp</code>, and <code>TestFixtureTearDown</code>.</li>
 </ul>
-<p>If any of these restrictions are violated the class will be shown as a non-runnable test fixture and will turn yellow in the NUnit GUI if you attempt to run it.</p>
-<p>In addition it is advisable that the constructor not have any side effects since NUnit may construct the object multiple times in the
-course of a session.</p>
-<p>In class we have <code>SetUp()</code> and <code>TearDown()</code> methods, and one more test method:</p>
+<p>If any of these restrictions are violated, the class will be shown as a non-runnable test fixture and will turn yellow in the NUnit GUI if you attempt to run it.</p>
+<p>Additionally, it is advisable that the constructor not have any side effects, as NUnit may construct the object multiple times during a session.</p>
+<p>Within the class, we have <code>SetUp()</code> and <code>TearDown()</code> methods, plus one test method:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[SetUp()]</span>
 <span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SetUp</span><span class="p">()</span>
 <span class="p">{</span>
@@ -11529,10 +11550,9 @@ course of a session.</p>
 <span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Now you also have a snippet, by which you can easily add <code>TestSeS</code> method with <code>[SeSNUnitTest(@"&lt;path to .sstest&gt;")]</code> attribute. Right
-click in class body and from opened context menu select <code>Insert Snippet…</code>:</p>
+<p>You now also have a snippet that allows you to easily add the <code>TestSeS</code> method with the <code>[SeSNUnitTest(@"&lt;path to .sstest&gt;")]</code> attribute. Right-click within the class body and, from the context menu that opens, select <code>Insert Snippet…</code>:</p>
 <p><img alt="clip0072" src="../img/nunit7.png" /></p>
-<p>From it select <strong>My Code Snippets</strong> (if your snippets are in <strong>My Code Snippets</strong> folder, otherwise select proper folder), and then <strong>SeSNUnitTest</strong>:</p>
+<p>From there, select <strong>My Code Snippets</strong> (if your snippets are in the <strong>My Code Snippets</strong> folder; otherwise, select the appropriate folder), and then <strong>SeSNUnitTest</strong>:</p>
 <p><img alt="clip0073" src="../img/nunit8.png" /></p>
 <p>This code will be added:</p>
 <div class="highlight"><pre><span></span><code><span class="na">[SeSNUnitTest(/*Insert path to .sstest file which must be run.*/)]</span>
@@ -11542,7 +11562,7 @@ click in class body and from opened context menu select <code>Insert Snippet…<
 <span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">exitCode</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>You just need to add path of <code>.sstest</code>  file to <code>SeSNUnitTest</code> attribute. If you add code via snippet in standard SeSNUnit Test project you will have two <code>TestSeS</code> methods, so don’t forget to change the name of one of them.</p>
+<p>You just need to add the path of the <code>.sstest</code> file to the <code>SeSNUnitTest</code> attribute. If you add code via the snippet in a standard SeSNUnit Test project, you will have two <code>TestSeS</code> methods, so remember to change the name of one of them.</p>
                 
               
               

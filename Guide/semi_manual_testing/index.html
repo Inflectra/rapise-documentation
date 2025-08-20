@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11088,6 +11100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11353,25 +11377,24 @@
                 
                 <h1 id="semi-manual-testing">Semi-Manual Testing<a class="headerlink" href="#semi-manual-testing" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>This is a useful technique when you want to have a predominantly manual test (executed by a tester) that has some steps that are automated by Rapise. These could be some of the initial setup tasks (e.g. logging in, starting the application) or just tasks that are well suited to automation.</p>
+<p>This technique is useful when you want a predominantly manual test (executed by a tester) to include some steps that are automated by Rapise. These steps could be initial setup tasks (e.g., logging in, starting the application) or simply tasks that are well-suited to automation.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Create your manual test either using the <a href="../manual_testing_recording/">recorder</a> or the <a href="../manual_test_editor/">manual test editor</a>. You can also just open up a test already created in <a href="../spiratest_integration/">Spira</a>.</p>
-<p>Next, inside Rapise, create a <a href="../scenarios/">test scenario</a> (function) that contains the necessary login. In this example we shall simply automate the launching of MS-Paint.</p>
-<p>Create a function in the <strong>User.js</strong> file with the following
-code:</p>
+<p>Create your manual test using either the <a href="../manual_testing_recording/">recorder</a> or the <a href="../manual_test_editor/">manual test editor</a>. Alternatively, you can open a test already created in <a href="../spiratest_integration/">Spira</a>.</p>
+<p>Next, within Rapise, create a <a href="../scenarios/">test scenario</a> (function) for the automated steps. In this example, we will simply automate the launching of MS-Paint.</p>
+<p>Create a function in the <strong>User.js</strong> file with the following code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">LaunchMsPaint</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoLaunch</span><span class="p">(</span><span class="s1">&#39;C:\\Windows\\system32\\mspaint.exe&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Now go to the <strong>Manual Steps</strong> section of Rapise by clicking on the <code>Tools &gt; Manual Steps</code> menu.</p>
-<p>Inside the first test step (for example), change the <strong>Description</strong> to the following:</p>
+<p>Now, navigate to the <strong>Manual Steps</strong> section of Rapise by clicking the <code>Tools &gt; Manual Steps</code> menu.</p>
+<p>For example, in the first test step, change the <strong>Description</strong> to the following:</p>
 <div class="highlight"><pre><span></span><code><span class="err">@</span><span class="nx">LaunchMsPaint</span><span class="p">();</span>
 <span class="c1">//User starts up the MS-Paint Application</span>
 </code></pre></div>
-<p>This will be contained within the actual test step itself:</p>
+<p>This will be displayed within the test step itself:</p>
 <p><img alt="semi_manual_1" src="../img/semi_manual_testing1.png" /></p>
-<p>Now, when you execute the test (using the normal <strong>Execute</strong> button on the main <a href="../menu_and_toolbars/#main-toolbar">Test toolbar</a> (<strong><em>not</em></strong> the Execute Manual icon on the <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a> ) what happens is that Rapise will execute the main <code>Test()</code> function that contains:</p>
+<p>Now, when you execute the test (using the normal <strong>Execute</strong> button on the main <a href="../menu_and_toolbars/#main-toolbar">Test toolbar</a> — <strong><em>not</em></strong> the Execute Manual icon on the <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a>), Rapise will execute the main <code>Test()</code> function, which contains:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">Global</span><span class="p">.</span><span class="nx">DoPlayManual</span><span class="p">(</span><span class="s1">&#39;ManualSteps.rmt&#39;</span><span class="p">);</span>
@@ -11379,16 +11402,11 @@ code:</p>
 
 <span class="nx">g_load_libraries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">];</span>
 </code></pre></div>
-<p>this instructs Rapise to use the <a href="../manual_playback/">manual
-playback</a> system.
-However when it gets to the first step, it will see the ampersand symbol
-(@) that denotes that this is actually an automated scenario and then
-call the following code:</p>
+<p>This instructs Rapise to use the <a href="../manual_playback/">manual playback</a> system. However, when it reaches the first step, Rapise will recognize the at symbol (@), which indicates an automated scenario, and then call the following code:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">//User starts up the MS-Paint Application</span>
 <span class="nx">LaunchMsPaint</span><span class="p">();</span>
 </code></pre></div>
-<p>Once the scenario has completed, Rapise will then return back to the
-manual test playback.</p>
+<p>Once the scenario has completed, Rapise will return to the manual test playback.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../manual_testing_playback/">Manual Playback</a></li>

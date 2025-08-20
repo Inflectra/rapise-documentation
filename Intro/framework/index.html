@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1110,6 +1110,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11028,6 +11040,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11424,38 +11448,38 @@
                 <h1 id="how-to-build-a-test-framework-with-rapise">How to Build a Test Framework with Rapise<a class="headerlink" href="#how-to-build-a-test-framework-with-rapise" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>In different parts of the documentation and in knowledge base articles we use term <strong>Single Test mode</strong> to refer to this kind of framework with a parent test and nested sub-tests.</p>
+<p>In different parts of the documentation and in knowledge base articles, we use the term <strong>Single Test mode</strong> to refer to this type of framework with a parent test and nested sub-tests.</p>
 </div>
-<p>Need to call one test from another? Need to run many tests? Have a test plan? It is time to build a testing framework. Learn how to do it with Rapise.</p>
+<p>Need to call one test from another? Need to run many tests? Have a test plan? It's time to build a testing framework. Learn how to do it with Rapise.</p>
 <h2 id="how-framework-tests-are-structured">How Framework Tests Are Structured<a class="headerlink" href="#how-framework-tests-are-structured" title="Permanent link">&para;</a></h2>
-<p>The Framework in Rapise is a regular test (<strong>Framework Root</strong>) containing a number of <a href="../../Guide/tests_and_sub_tests/">Sub-Tests</a> (<strong>Test Cases</strong> and <strong>Common Features</strong>)</p>
+<p>A Framework in Rapise is a regular test (<strong>Framework Root</strong>) containing a number of <a href="../../Guide/tests_and_sub_tests/">Sub-Tests</a> (<strong>Test Cases</strong> and <strong>Common Features</strong>).</p>
 <p><img alt="Framework" src="../../Guide/img/framework_overview.png" /></p>
-<p>Where <strong>Test Cases</strong> are final test scenarios and <strong>Common Features</strong> are parts that are re-used and shared between the test cases.</p>
-<p>When working with framework, the variable <a href="../../Guide/tests_and_sub_tests/#workdir-and-frameworks">%WORKDIR%</a> always points to the root test case. This helps to find all common assets and files. For example, we always know that we may call <code>Common Feature1.sstest</code> using path <code>%WORKDIR%\Common Feature1\Common Feature1.sstest</code>. So we may call it from any other test case, from other common feature, from library and so on.</p>
-<p>Also the same is true for accessing common <a href="../../Libraries/Global/#SetConfigPath">config</a> and data files. I.e.</p>
+<p><strong>Test Cases</strong> are the final test scenarios, and <strong>Common Features</strong> are reusable parts shared between the test cases.</p>
+<p>When working with a framework, the <code>[%WORKDIR%</code>](../Guide/tests_and_sub_tests.md#workdir-and-frameworks) variable always points to the root test. This helps locate all common assets and files. For example, you can always call <code>Common Feature1.sstest</code> using the path <code>%WORKDIR%\Common Feature1\Common Feature1.sstest</code>. You can call it from any other test case, another common feature, a library, and so on.</p>
+<p>The same is true for accessing common <a href="../../Libraries/Global/#SetConfigPath">config</a> and data files. For example:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Tester</span><span class="p">.</span><span class="nx">SetConfigPath</span><span class="p">(</span><span class="s1">&#39;%WORKDIR%\\Config.xlsx&#39;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="saving-a-framework-into-spira">Saving a Framework into Spira<a class="headerlink" href="#saving-a-framework-into-spira" title="Permanent link">&para;</a></h3>
-<p>The value of framework is in its consistency. There is one important rule that must be followed when saving framework to Spira:</p>
+<p>The value of a framework is in its consistency. There is one important rule to follow when saving a framework to Spira:</p>
 <blockquote>
-<p>Framework root must be saved first. You need to save it at least once before saving any sub-tests. This will make sure that correct directory structure is defined in Spira.</p>
+<p>The framework root must be saved first. You need to save it at least once before saving any sub-tests. This ensures that the correct directory structure is defined in Spira.</p>
 </blockquote>
-<p>Once you saved a root test to the Spira, all sub-tests always saved together with it, whenever you do it form the root or from any of sub-tests. Right after saving a root test case you have a framework and may start expanding it.</p>
+<p>Once you have saved a root test to Spira, all its sub-tests are always saved with it, whether you perform the save from the root test or from any of the sub-tests. Right after saving the root test, you have a framework and can start expanding it.</p>
 <h3 id="saving-a-framework-into-git">Saving a Framework into Git<a class="headerlink" href="#saving-a-framework-into-git" title="Permanent link">&para;</a></h3>
-<p>If you plan to maintain your framework using <strong>Git</strong> for <a href="../../Guide/git_integration/">source control</a>, please make sure to init git repository at framework root level or higher. Thus Rapise will be able to detect it.</p>
+<p>If you plan to maintain your framework using <strong>Git</strong> for <a href="../../Guide/git_integration/">source control</a>, make sure to initialize the Git repository at the framework root level or higher. This allows Rapise to detect it.</p>
 <h3 id="framework-navigation-root-test-parent-test-sub-tests">Framework Navigation: Root Test, Parent Test, Sub-Tests<a class="headerlink" href="#framework-navigation-root-test-parent-test-sub-tests" title="Permanent link">&para;</a></h3>
-<p>There is a number of features intended to help one switching between test and sub-tests.</p>
-<p>The <code>Files</code> <a href="../../Guide/test_files_dialog/">view</a> shows all nested sub-tests. You may open any of them by double-clicking on the <code>.sstest</code> node:</p>
+<p>There are a number of features to help you switch between tests and sub-tests.</p>
+<p>The <code>Files</code> <a href="../../Guide/test_files_dialog/">view</a> shows all nested sub-tests. You can open any of them by double-clicking on its <code>.sstest</code> node:</p>
 <p><img alt="Files View" src="../../Guide/img/framework_filesview.png" /></p>
-<p>The test opens in the current Rapise instance. You may also open it in a new window using the <strong>Open in New Rapise Window...</strong> command from the  <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">Context Menu</a>.</p>
-<p>You may then switch back to parent test or framework root by using <strong>Test/Open Root ......</strong> and <strong>Test/Open Parent .....</strong> <a href="../../Guide/menu_and_toolbars/#test">menu items</a>.</p>
+<p>The test opens in the current Rapise instance. You can also open it in a new window using the <strong>Open in New Rapise Window...</strong> command from the <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">context menu</a>.</p>
+<p>You can then switch back to the parent test or framework root using the <strong>Test/Open Root...</strong> and <strong>Test/Open Parent...</strong> <a href="../../Guide/menu_and_toolbars/#test">menu items</a>.</p>
 <h3 id="template-test-case-and-clone">Template Test Case and Clone<a class="headerlink" href="#template-test-case-and-clone" title="Permanent link">&para;</a></h3>
-<p>Usual practice in Framework is to use the <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">Clone</a> feature to produce new sub-tests. So the template test is created and pre-configured (to contain right lib, functions and file references) and then replicated for each next cloned test case.</p>
+<p>A common practice when using a Framework is to use the <a href="../../Guide/tests_and_sub_tests/#sub-test-context-menu">Clone</a> feature to create new sub-tests. A template test is created and pre-configured (to contain the right libraries, functions, and file references) and then replicated for each new test case.</p>
 <p><img alt="Clone" src="../../Guide/img/framework_template_clone.png" /></p>
 <h3 id="calling-other-tests">Calling Other Tests<a class="headerlink" href="#calling-other-tests" title="Permanent link">&para;</a></h3>
-<p>There is a number of ways to call one sub test from another. Usually the test representing a scenario calls another test representing common routine or shared step. It is possible to pass some parameters to the called sub-test.</p>
+<p>There are a number of ways to call one sub-test from another. Usually, a test representing a scenario calls another test representing a common routine or shared step. It is possible to pass parameters to the called sub-test.</p>
 <blockquote>
-<p>In most cases you may use Drag&amp;Drop from the <a href="../../Guide/test_files_dialog/">Files</a> view into text or RVL editor to generate a call statement.</p>
+<p>In most cases, you can use drag-and-drop from the <a href="../../Guide/test_files_dialog/">Files</a> view into the text or RVL editor to generate a call statement.</p>
 </blockquote>
 <h4 id="executing-full-test">Executing Full Test<a class="headerlink" href="#executing-full-test" title="Permanent link">&para;</a></h4>
 <p>From RVL:
@@ -11472,27 +11496,27 @@
 <p>From JS:
 <a href="../../Libraries/Global/#doinvoketestparallel">Global.DoInvokeTestParallel</a></p>
 <h3 id="dropdownsxlsx">Dropdowns.xlsx<a class="headerlink" href="#dropdownsxlsx" title="Permanent link">&para;</a></h3>
-<p>Shared Libraries and Shared Functions more powerful with pre-defined <a href="../../Guide/rvl_editor/#param-dropdowns">dropdowns</a>. For example, you may have a function <code>NavigateToModule</code> used across your framework and switching to an application module. Since we have fixed number of modules in the app (it may be a big number, but still fixed) we may define a dropdown list to make it easier for test creator to navigate without risk of doing a typo and without loss of time to find correct naming.</p>
+<p>Shared Libraries and Shared Functions are more powerful with pre-defined <a href="../../Guide/rvl_editor/#param-dropdowns">dropdowns</a>. For example, you may have a <code>NavigateToModule</code> function used across your framework to switch to an application module. Since the app has a fixed number of modules (it may be a large number, but it is still fixed), you can define a dropdown list. This makes it easier for the test creator to select a module, reducing the risk of typos and saving time searching for the correct name.</p>
 <p><img alt="Param Dropdown" src="../../Guide/img/framework_dropdowns.png" /></p>
 <h4 id="dropdowns-for-page-objects">Dropdowns for Page Objects<a class="headerlink" href="#dropdowns-for-page-objects" title="Permanent link">&para;</a></h4>
-<p>In Rapise 8.3, we’ve introduced support for a local Dropdowns.xlsx file for <a href="../../Guide/Frameworks/pageobjects/">Page Objects</a>. This is particularly useful because Page Objects created in <a href="../../Guide/Frameworks/frameworks/">Framework Mode</a> can be shared across multiple frameworks, and there may also be <a href="../../Guide/Frameworks/pageobjects/#public-page-objects">Public Page Objects</a>.</p>
+<p>In Rapise 8.3, we’ve introduced support for a local Dropdowns.xlsx file for <a href="../../Guide/Frameworks/pageobjects/">Page Objects</a>. This is particularly useful because Page Objects created in <a href="../../Guide/Frameworks/frameworks/">Framework Mode</a> can be shared across multiple frameworks, and there can also be <a href="../../Guide/Frameworks/pageobjects/#public-page-objects">Public Page Objects</a>.</p>
 <h3 id="configxlsx">Config.xlsx<a class="headerlink" href="#configxlsx" title="Permanent link">&para;</a></h3>
-<p>There is a <a href="../../Libraries/Global/#SetConfigPath">Config</a> file, that may be used for further <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a> and <a href="/Libraries/Global/#setproperty">Global.SetProperty</a>. This is an easy way to read and store various input configuration data: logins, URLs as well as output data (i.e. Internal Invoice ID used in the subsequent test cases).</p>
+<p>There is a <a href="../../Libraries/Global/#SetConfigPath">Config</a> file that can be used with <a href="../../Libraries/Global/#getproperty">Global.GetProperty</a> and <a href="../../Libraries/Global/#setproperty">Global.SetProperty</a>. This is an easy way to read and store various input configuration data, such as logins and URLs, as well as output data (e.g., an Internal Invoice ID used in subsequent test cases).</p>
 <p>It is also explained in <a href="https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsawBrTNYbBY-eUnccO5YZj&amp;t=534">this</a> video.</p>
 <h3 id="dataxlsx">Data.xlsx<a class="headerlink" href="#dataxlsx" title="Permanent link">&para;</a></h3>
-<p>It is typical implement some test cases as <a href="../ddt/">data driven</a>. And framework is a great place for storing the shared data files - usually <code>.xlsx</code> spreadsheets. Rapise has built in capabilities for <a href="../../Guide/test_files_dialog/#context-menu-folder">creating</a> and <a href="../../Guide/spreadsheet_editor/">editing</a> such spreadsheets.</p>
+<p>It is typical to implement some test cases as <a href="../ddt/">data-driven</a>. A framework is a great place for storing shared data files, which are usually <code>.xlsx</code> spreadsheets. Rapise has built-in capabilities for <a href="../../Guide/test_files_dialog/#context-menu-folder">creating</a> and <a href="../../Guide/spreadsheet_editor/">editing</a> these spreadsheets.</p>
 <h3 id="global-objects">Global Objects<a class="headerlink" href="#global-objects" title="Permanent link">&para;</a></h3>
-<p>It is useful to have one or more application specific <a href="../../Guide/global_objects/">global objects</a>, sharing functionality needed by majority of test cases in your framework. It may do anything, starting from login and navigation and up to string formatting or text validation.</p>
+<p>It is useful to have one or more application-specific <a href="../../Guide/global_objects/">global objects</a> that share functionality needed by the majority of test cases in your framework. They can do anything, from login and navigation to string formatting or text validation.</p>
 <p><img alt="Global Object" src="../../Guide/img/framework_global_object.png" /></p>
 <h3 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h3>
-<p>One may define a <a href="../../Guide/custom_libraries/">custom library</a> containing common functions, global objects or even rules for <a href="../../Guide/playback/">test playback</a>, <a href="../../Guide/object_learning/">object learning</a> and <a href="../../Guide/recording/">test recording</a>.</p>
+<p>You can define a <a href="../../Guide/custom_libraries/">custom library</a> containing common functions, global objects, or even rules for <a href="../../Guide/playback/">test playback</a>, <a href="../../Guide/object_learning/">object learning</a>, and <a href="../../Guide/recording/">test recording</a>.</p>
 <h3 id="sharing-js-files">Sharing JS Files<a class="headerlink" href="#sharing-js-files" title="Permanent link">&para;</a></h3>
-<p>Simple way to have common shared logic is to have a common <code>User.js</code> <a href="../../Guide/defining_functions/#in-userjs">file</a> defining some functions.</p>
-<p>For more complex cases, you may have additional <code>.js</code> files and <a href="https://www.inflectra.com/Support/KnowledgeBase/KB308.aspx">include</a> them in tests.</p>
+<p>A simple way to have common shared logic is to have a <code>User.js</code> <a href="../../Guide/defining_functions/#in-userjs">file</a> that defines common functions.</p>
+<p>For more complex cases, you can have additional <code>.js</code> files and <a href="https://www.inflectra.com/Support/KnowledgeBase/KB308.aspx">include</a> them in your tests.</p>
 <h3 id="profiles">Profiles<a class="headerlink" href="#profiles" title="Permanent link">&para;</a></h3>
-<p>Local <a href="/Guide/browser_settings/#local-browser-profiles">Web</a> or <a href="/Guide/mobile_settings_dialog/#local-mobile-profiles">Mobile</a> Profiles makes it easier to configure the browsers for the whole framework.</p>
+<p>Local <a href="../../Guide/browser_settings/#local-browser-profiles">Web</a> or <a href="../../Guide/mobile_settings_dialog/#local-mobile-profiles">Mobile</a> Profiles make it easier to configure the browsers for the entire framework.</p>
 <h3 id="webappprofilejson">WebAppProfile.json<a class="headerlink" href="#webappprofilejson" title="Permanent link">&para;</a></h3>
-<p>For web tests the <a href="../../Guide/web_app_profile/">WebAppProfile</a> may greatly improve the speed and quality of recording. The profile may be defined on the framework root and thus be effective when working on all the contained sub-tests.</p>
+<p>For web tests, the <a href="../../Guide/web_app_profile/">WebAppProfile</a> can greatly improve the speed and quality of recording. The profile can be defined on the framework root, making it effective when working on all its sub-tests.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://youtu.be/zROIrQs8tP0">Framework for Testing Web Applications with Rapise (video)</a></li>

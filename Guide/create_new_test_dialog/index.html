@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11142,6 +11154,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11462,55 +11486,55 @@
                 <h1 id="create-new-test-dialog">Create New Test Dialog<a class="headerlink" href="#create-new-test-dialog" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <p>The Create New Test Dialog allows you to create a new Rapise <a href="../Frameworks/frameworks/#test-cases">test case</a>, <a href="../Frameworks/frameworks/">testing framework</a>, or standalone test. You can choose to connect to Spira and store the new test in the central test management system, or you can save the test locally.</p>
-<p>If the test is intended to be the root of a larger test framework, it is recommended to refer to <a href="https://www.inflectra.com/support/knowledgebase/kb371.aspx">KB 371</a>. for further guidance.</p>
+<p>If the test is intended to be the root of a larger test framework, it is recommended to refer to <a href="https://www.inflectra.com/support/knowledgebase/kb371.aspx">KB 371</a> for further guidance.</p>
 <h2 id="framework-mode">Framework Mode<a class="headerlink" href="#framework-mode" title="Permanent link">&para;</a></h2>
 <h3 id="starting-a-new-testing-framework">Starting a New Testing Framework<a class="headerlink" href="#starting-a-new-testing-framework" title="Permanent link">&para;</a></h3>
 <p>Go to <code>File &gt; Create New &gt; Test Automation Framework</code> to <a href="../Frameworks/frameworks/#creating-a-new-testing-framework">create a new testing framework</a>.</p>
 <h3 id="adding-a-test-case-to-a-testing-framework">Adding a Test Case to a Testing Framework<a class="headerlink" href="#adding-a-test-case-to-a-testing-framework" title="Permanent link">&para;</a></h3>
 <p>Refer to the section on <a href="../Frameworks/frameworks/#creating-a-test-case">Creating a New Test Case</a>.</p>
 <h2 id="single-test-mode">Single Test Mode<a class="headerlink" href="#single-test-mode" title="Permanent link">&para;</a></h2>
-<p>In certain situations, such as quickly checking something or conducting proof of concept (POC) experiments, we often require individual tests. If your current test falls into this category, follow these steps to create a new test:</p>
+<p>In certain situations, such as quickly checking something or conducting proof of concept (POC) experiments, individual tests are often required. If your current test falls into this category, follow these steps to create a new test:</p>
 <p>Select <code>File &gt; Create New &gt; New Test</code>. This will initiate the creation process for a new test, as described below.</p>
 <h3 id="a-creating-in-spira">(a) Creating in Spira<a class="headerlink" href="#a-creating-in-spira" title="Permanent link">&para;</a></h3>
-<p>By default Rapise will ask you to save the new test into the <a href="https://www.inflectra.com/SpiraTest/">Spira</a> test management system:</p>
+<p>By default, Rapise will ask you to save the new test into the <a href="https://www.inflectra.com/SpiraTest/">Spira</a> test management system:</p>
 <p><img alt="Create in Spira 1" src="../img/create_new_test_dialog_spira1.png" /></p>
-<p>If you do not plan on using Spira for managing your test scripts (or you are not able to connect when you want to create the test), you can click on the <strong>Create Locally...</strong> to just create the test case <a href="#b-creating-locally">locally</a>. You can always save to Spira later on.</p>
-<p>Assuming that you have already <a href="../spiratest_integration/">configured the connection to Spira</a>, first you need to select the project in Spira. That will then display the test case folders and test cases in Spira:</p>
+<p>If you do not plan on using Spira for managing your test scripts (or are unable to connect when creating the test), you can click <strong>Create Locally...</strong> to create the test case <a href="#b-creating-locally">locally</a>. You can always save to Spira later.</p>
+<p>Assuming you have already <a href="../spiratest_integration/">configured the connection to Spira</a>, you first need to select the project in Spira. This will then display the test case folders and test cases in Spira:</p>
 <p><img alt="Create in Spira 2" src="../img/create_new_test_dialog_spira2.png" /></p>
-<p>If there is already a test case in Spira that has <em>not already been linked to Rapise</em>:</p>
+<p>If there is an existing test case in Spira that has <em>not yet been linked to Rapise</em>:</p>
 <p><img alt="Create in Spira 3" src="../img/create_new_test_dialog_spira3.png" /></p>
-<p>If you want to create a new test case in Spira to use, simply click <strong>New Test Case</strong>:</p>
+<p>If you want to create a new test case in Spira, simply click <strong>New Test Case</strong>:</p>
 <p><img alt="create_new_spira_test_case" src="../img/create_new_test_dialog4.png" /></p>
-<p>Then enter the name of the new test case and click <strong>OK</strong>. Once it has been created you can then select it in the test case list and click <strong>Create from Spira</strong>.</p>
-<p>Sometimes there is no existing folder inside Spira that makes sense to use. In which case you can first use the <strong>New Folder</strong> button to create an empty folder that new test cases can be created in:</p>
+<p>Then enter the name of the new test case and click <strong>OK</strong>. Once it has been created, you can then select it in the test case list and click <strong>Create from Spira</strong>.</p>
+<p>Sometimes there is no existing folder in Spira that makes sense to use. In which case, you can first use the <strong>New Folder</strong> button to create an empty folder for new test cases:</p>
 <p><img alt="create_new_spira_test_folder" src="../img/create_new_test_dialog5.png" /></p>
-<p>Regardless of which option you choose, you need to select a kind of the test to proceed.</p>
+<p>Regardless of which option you choose, you need to select a test type to proceed.</p>
 <h3 id="test-types">Test Types<a class="headerlink" href="#test-types" title="Permanent link">&para;</a></h3>
 <p>Rapise currently offers four types of tests:</p>
 <ul>
-<li><strong>Basic</strong>: Use this type for testing desktop applications or any testing that does not involve web browsers or mobile devices.</li>
-<li><strong>Manual</strong>: Select this type if you are creating or executing manual tests only.</li>
+<li><strong>Basic</strong>: Use this type for testing desktop applications or any other testing that does not involve web browsers or mobile devices.</li>
+<li><strong>Manual</strong>: Select this type only if you are creating or executing manual tests.</li>
 <li><strong>Mobile</strong>: Choose this type if you are testing applications running on mobile devices.</li>
 <li><strong>Web</strong>: Opt for this type if you are testing web applications running in a web browser.</li>
 </ul>
 <h3 id="scripting-language">Scripting Language<a class="headerlink" href="#scripting-language" title="Permanent link">&para;</a></h3>
-<p>Once you have created the test, Rapise will ask you to <a href="../scripting_choice_dialog/">choose the Scripting language</a> (<a href="../visual_language/">RVL</a> or <a href="../javascript_ide/">JavaScript</a>).</p>
+<p>Once you have created the test, Rapise will ask you to <a href="../scripting_choice_dialog/">choose the scripting language</a> (<a href="../visual_language/">RVL</a> or <a href="../javascript_ide/">JavaScript</a>).</p>
 <h3 id="b-creating-locally">(b) Creating Locally<a class="headerlink" href="#b-creating-locally" title="Permanent link">&para;</a></h3>
-<p>If you choose the option to <strong>Create Locally</strong> the following dialog box is displayed:</p>
+<p>If you choose the <strong>Create Locally</strong> option, the following dialog box is displayed:</p>
 <p><img alt="Create new test dialog" src="../img/create_new_test_dialog_new_standalone_test.png" /></p>
 <p>You need to enter the following information:</p>
 <ul>
-<li><strong>The name of the new test</strong> - please enter the name of the new test that you wish to create.</li>
-<li><strong>Folder</strong> - please choose the folder on your local computer that you wish to store the Rapise test in.</li>
-<li><strong>What kind of test do you want to create?</strong> - there are currently four methodologies available in Rapise:<ul>
-<li><strong>Basic</strong> - this should be used for testing desktop applications or any testing not involving web browsers or mobile devices.</li>
-<li><strong>Manual</strong> - this should be selected if you are only going to be creating or executing manual tests</li>
-<li><strong>Mobile</strong> - this should be selected if you are going to be testing apps running on mobile devices</li>
-<li><strong>Web</strong> - this should be selected if you are going to be testing web applications running in a web browser.</li>
+<li><strong>Test name</strong> - Enter the name of the new test.</li>
+<li><strong>Folder</strong> - Choose the folder on your local computer where you want to store the Rapise test.</li>
+<li><strong>Test type</strong> - Rapise currently offers four test types:<ul>
+<li><strong>Basic</strong> - Use this for testing desktop applications or other testing not involving web browsers or mobile devices.</li>
+<li><strong>Manual</strong> - Select this only if you will be creating or executing manual tests.</li>
+<li><strong>Mobile</strong> - Select this if you will be testing applications running on mobile devices.</li>
+<li><strong>Web</strong> - Select this if you will be testing web applications running in a web browser.</li>
 </ul>
 </li>
 </ul>
-<p>Once you click on the kind of test, Rapise will ask you to <a href="../scripting_choice_dialog/">choose the Scripting language</a> (<a href="../visual_language/">RVL</a> or <a href="../javascript_ide/">JavaScript</a>). Once you have chosen the scripting language, the new test will be created and saved locally.</p>
+<p>Once you select the test type, Rapise will ask you to <a href="../scripting_choice_dialog/">choose the scripting language</a> (<a href="../visual_language/">RVL</a> or <a href="../javascript_ide/">JavaScript</a>). Once you have chosen the scripting language, the new test will be created and saved locally.</p>
                 
               
               

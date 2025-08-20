@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11109,6 +11121,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11395,7 +11419,7 @@
                 
                 <h1 id="dll-testing">DLL Testing<a class="headerlink" href="#dll-testing" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>You can create objects and invoke methods from both managed and unmanaged dlls.</p>
+<p>You can create objects and invoke methods from both managed and unmanaged DLLs.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>Rapise provides API calls to work with managed DLLs. The Windows object <strong>WScript</strong> can be used with unmanaged DLLs.</p>
 <h2 id="managed-dlls">Managed DLLs<a class="headerlink" href="#managed-dlls" title="Permanent link">&para;</a></h2>
@@ -11412,7 +11436,7 @@
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">UserWrap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">WScript</span><span class="p">.</span><span class="nx">CreateObject</span><span class="p">(</span><span class="s2">&quot;DynamicWrapper&quot;</span><span class="p">);</span>
 <span class="nx">UserWrap</span><span class="p">.</span><span class="nx">Register</span><span class="p">(</span><span class="s2">&quot;shell32.dll&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ShellExecute&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;I=hssssl&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;f=s&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;r=l&quot;</span><span class="p">);</span>
 <span class="nx">UserWrap</span><span class="p">.</span><span class="nx">Register</span><span class="p">(</span><span class="s2">&quot;USER32.DLL&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;MessageBoxA&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;I=HsSu&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;f=s&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;R=l&quot;</span><span class="p">);</span>
-<span class="nx">UserWrap</span><span class="p">.</span><span class="nx">MessageBoxA</span><span class="p">(</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">elapsed</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Time Elapsed:&quot;</span><span class="p">,</span><span class="w">  </span><span class="mh">0x30</span><span class="w"> </span><span class="p">);</span>
+<span class="nx">UserWrap</span><span class="p">.</span><span class="nx">MessageBoxA</span><span class="p">(</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">elapsed</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Time Elapsed:&quot;</span><span class="p">,</span><span class="w">  </span><span class="mh">0x30</span><span class="w"> </span><span class="p">);</span>
 </code></pre></div>
 <h2 id="test-samples">Test Samples<a class="headerlink" href="#test-samples" title="Permanent link">&para;</a></h2>
 <p>There are two <a href="../sample_tests/">test samples</a> that illustrate working with DLLs:</p>

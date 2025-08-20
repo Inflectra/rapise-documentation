@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11088,6 +11100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11353,38 +11377,38 @@
                 
                 <h1 id="web-testing">Web Testing<a class="headerlink" href="#web-testing" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Rapise lets you record and play automated tests against web applications on a variety of web browsers including <strong>Google Chrome</strong>, <strong>Microsoft Edge</strong>, <strong>Mozilla Firefox</strong>, <strong>Internet Explorer</strong> and <strong>Safari</strong>. Rapise lets you record or create your tests against one browser and then play the same test back against all of the other browsers. It is called <strong>Cross Browser Testing</strong>.</p>
+<p>Rapise allows you to record and play back automated tests against web applications across a variety of web browsers, including <strong>Google Chrome</strong>, <strong>Microsoft Edge</strong>, <strong>Mozilla Firefox</strong>, <strong>Internet Explorer</strong>, and <strong>Safari</strong>. You can record or create tests against one browser and then play the same test back against all other browsers. This is known as <strong>Cross-Browser Testing</strong>.</p>
 <p><img alt="web_testing1" src="../img/web_testing1.png" /></p>
-<p>Rapise provides comprehensive support for testing Web applications. It uses the web browser Document Object Model (DOM) to interact with the current web page. The various web browsers on the market have various differences in DOM implementation. In many cases these differences are not significant. But sometimes they require special handling. Rapise tries to overcome the differences and make the recorded scripts as universal as possible.</p>
-<p>In addition, it is possible to have more control over the cross browser execution using the available APIs and configuration variables. You can also run the recording in multiple browsers in succession using either a Rapise <a href="../tests_and_sub_tests/">sub-test</a> or simply executing the test from our <a href="../spiratest_integration/">SpiraTest test management</a> system and passing through different parameter values.</p>
+<p>Rapise provides comprehensive support for testing web applications. It uses the web browser Document Object Model (DOM) to interact with the current web page. Web browsers on the market exhibit variations in their DOM implementation. In many cases, these differences are not significant, but sometimes they require special handling. Rapise aims to overcome these differences and make recorded scripts as universal as possible.</p>
+<p>Additionally, you can gain more control over cross-browser execution using the available APIs and configuration variables. You can also run recordings in multiple browsers in succession, either by using a Rapise <a href="../tests_and_sub_tests/">sub-test</a> or by simply executing the test from our <a href="../spiratest_integration/">SpiraTest test management</a> system and passing different parameter values.</p>
 <h2 id="dom-api">DOM API<a class="headerlink" href="#dom-api" title="Permanent link">&para;</a></h2>
-<p>In addition to the usual <a href="../recording/">recording</a>, <a href="../learn_object/">learning</a> and <a href="../playback/">playback</a> that is similar to testing other technologies (desktop, mobile, etc.) there are some unique functions that are available on all recorded web objects. Upon learning a web element in Rapise, you get an object of type <a href="/Libraries/HTMLObject/">HTMLObject</a>. Each <strong>HTMLObject</strong> provides set of functions to facilitate the cross-browser access to web element parents and children.</p>
+<p>In addition to the standard <a href="../recording/">recording</a>, <a href="../learn_object/">learning</a>, and <a href="../playback/">playback</a> functionalities, which are similar to testing other technologies (desktop, mobile, etc.), Rapise offers unique functions available for all recorded web objects. When you learn a web element in Rapise, you obtain an object of type <a href="../../Libraries/HTMLObject/">HTMLObject</a>. Each <strong>HTMLObject</strong> provides a set of functions to facilitate cross-browser access to web element parents and children.</p>
 <ul>
-<li><strong>DoDOMChildAt</strong> - Returns n-th child (zero-based).</li>
-<li><strong>DoDOMChildrenCount</strong> - Returns number of children elements for this one.</li>
-<li><strong>DoDOMFindParentWithAttribute</strong> - Returns parent element with given attribute matching given string or regex.</li>
-<li><strong>DoDOMGetAttribute</strong> - Returns specified attribute.</li>
-<li><strong>DoDOMNextSibling</strong> - Returns next sibling element for this one.</li>
-<li><strong>DoDOMParent</strong> - Returns parent element having this element.</li>
-<li><strong>DoDOMPrevSibling</strong> - Return previous sibling element for this one.</li>
-<li><strong>DoDOMRoot</strong> - Returns Root element having this element.</li>
+<li><strong>DoDOMChildAt</strong> - Returns the n-th child (zero-based).</li>
+<li><strong>DoDOMChildrenCount</strong> - Returns the number of child elements.</li>
+<li><strong>DoDOMFindParentWithAttribute</strong> - Returns the parent element with a given attribute matching a specified string or regex.</li>
+<li><strong>DoDOMGetAttribute</strong> - Returns the specified attribute.</li>
+<li><strong>DoDOMNextSibling</strong> - Returns the next sibling element.</li>
+<li><strong>DoDOMParent</strong> - Returns the parent element of this element.</li>
+<li><strong>DoDOMPrevSibling</strong> - Returns the previous sibling element.</li>
+<li><strong>DoDOMRoot</strong> - Returns the root element of this element.</li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../tutorial_record_and_playback/">Web Testing Tutorial</a> - a basic example of how to record, learn and playback tests using a our sample web application.</li>
-<li><a href="../web_spy/">Web Spy</a> - How to use the Web Spy to inspect web pages and dynamically query for HTML elements.</li>
-<li><a href="../web_app_profile/">Web Application Profile</a> - How to improve automatic generation of Web element locators.</li>
-<li><a href="../web_self_healing/">Self-healing Web Locators</a> - How to enable and use advanced maintenance features for Web testing.</li>
-<li><a href="../xpath/">XPath</a> - An explanation of the XPath language, how it can be used to dynamically query objects in web application and some examples.</li>
+<li><a href="../tutorial_record_and_playback/">Web Testing Tutorial</a> - A basic example of how to record, learn, and play back tests using our sample web application.</li>
+<li><a href="../web_spy/">Web Spy</a> - How to use the Web Spy to inspect web pages and dynamically query HTML elements.</li>
+<li><a href="../web_app_profile/">Web Application Profile</a> - How to improve the automatic generation of web element locators.</li>
+<li><a href="../web_self_healing/">Self-healing Web Locators</a> - How to enable and use advanced maintenance features for web testing.</li>
+<li><a href="../xpath/">XPath</a> - An explanation of the XPath language, how it can be used to dynamically query objects in web applications, and some examples.</li>
 <li><a href="../css/">CSS</a> - An explanation of how to use CSS selectors (common in frameworks such as jQuery) to dynamically query objects in web applications.</li>
 <li>
-<p><a href="../selenium_settings_dialog/">Selenium Profiles</a> - How to configure Rapise to playback tests on different browsers.</p>
+<p><a href="../selenium_settings_dialog/">Selenium Profiles</a> - How to configure Rapise to play back tests on different browsers.</p>
 </li>
 <li>
 <p>Legacy</p>
 <ul>
-<li><a href="../browser_settings/">Web Browser Profiles</a> - How to configure browsers to record and playback tests via Rapise native connectors.</li>
-<li><a href="../setting_up_web_browsers/">Setting up Web Browsers</a> - describes the steps needed to configure each of the web browsers to work with Rapise.</li>
+<li><a href="../browser_settings/">Web Browser Profiles</a> - How to configure browsers to record and play back tests via Rapise's native connectors.</li>
+<li><a href="../setting_up_web_browsers/">Setting up Web Browsers</a> - Describes the steps needed to configure each of the web browsers to work with Rapise.</li>
 </ul>
 </li>
 </ul>

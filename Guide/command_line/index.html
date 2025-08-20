@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11108,6 +11120,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11396,32 +11420,32 @@
 <p>Rapise test scripts can be run from the <strong>command line</strong>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="using-playbat">Using play.bat<a class="headerlink" href="#using-playbat" title="Permanent link">&para;</a></h3>
-<p>Simplest way to run a test directly is:</p>
+<p>The simplest way to run a test directly is:</p>
 <div class="highlight"><pre><span></span><code>&quot;C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat&quot; &lt;path_to_sstest_file&gt;
 </code></pre></div>
-<p>If you want to pass additional parameters as <code>JSON</code> then:</p>
+<p>If you want to pass additional parameters as <code>JSON</code>, then:</p>
 <div class="highlight"><pre><span></span><code>&quot;C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat&quot; &lt;path_to_sstest_file&gt; -config:LastConfig.json.user
 </code></pre></div>
-<p>In this case, the <code>LastConfig.json.user</code> file contains values from the last execution by Rapise itself, stored in the framework root. It contains the framework <a href="../Frameworks/parameters/">parameter</a> values, such as:</p>
+<p>In this case, the <code>LastConfig.json.user</code> file, stored in the framework root, contains values from the last execution by Rapise itself. It includes framework <a href="../Frameworks/parameters/">parameter</a> values, such as:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;Browser&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Selenium - Chrome&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;Mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Staging&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>You may customize this <code>JSON</code> file and point to it, i.e.:</p>
+<p>You may customize this <code>JSON</code> file and specify it, for example:</p>
 <div class="highlight"><pre><span></span><code>&quot;C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat&quot; &lt;path_to_sstest_file&gt; -config:CustomParams.json
 </code></pre></div>
-<p>It is also possible to point to a test case folder rather than to <code>Test.sstest</code>, i.e.:</p>
+<p>It is also possible to specify a test case folder rather than a <code>Test.sstest</code> file, for example:</p>
 <div class="highlight"><pre><span></span><code>&quot;C:\Program Files (x86)\Inflectra\Rapise\Engine\play.bat&quot; &quot;TestCases\Author Management\Create New Author&quot; -config:LastConfig.json.user
 </code></pre></div>
 <h3 id="using-sesexecutorjs">Using SeSExecutor.js<a class="headerlink" href="#using-sesexecutorjs" title="Permanent link">&para;</a></h3>
 <p>The form of the command is:</p>
 <p><code>%windir%\syswow64\cscript.exe "C:\Program Files (x86)\Inflectra\Rapise\Engine\SeSExecutor.js" &lt;path_to_sstest_file&gt; [evals*]</code></p>
 <p>where</p>
-<p><em>path_to_sstest_file</em> is a path to sstest file, e.g.  "C:\Program Files\Inflectra\Rapise\Samples\SmarteATM\SmarteATM.sstest"</p>
+<p><em>path_to_sstest_file</em> is a path to an sstest file, e.g., "C:\Program Files\Inflectra\Rapise\Samples\SmarteATM\SmarteATM.sstest"</p>
 <p><em>evals</em> (optional) is a statement like this:</p>
 <p><strong>-eval:*</strong><code>varname1</code><em>=*value1;<code>varname2</code></em>=<em>value2;...</em></p>
-<p><em>varname</em> is a global variable associated with an option in the <a href="../settings_dialog/">Settings Dialog</a>.  Global variables are prefixed with a <strong>g_.</strong> The global variables under the <strong>Execution</strong> and <strong>Recording</strong> headings can be found by clicking on the corresponding option in the Settings Dialog (see below):</p>
+<p><em>varname</em> is a global variable associated with an option in the <a href="../settings_dialog/">Settings Dialog</a>. Global variables are prefixed with <strong>g_</strong>. The global variables under the <strong>Execution</strong> and <strong>Recording</strong> headings can be found by clicking on the corresponding option in the Settings Dialog (see below):</p>
 <p><img alt="commandline evals" src="../img/command_line1.png" /></p>
 <p>Other variables include:</p>
 <ul>
@@ -11442,8 +11466,8 @@
 </li>
 </ul>
 <p>Exit Code:
-•   0 indicates a pass
-•   1 indicates failure</p>
+*   0 indicates a pass
+*   1 indicates failure</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li>

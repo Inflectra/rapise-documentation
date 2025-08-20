@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11135,6 +11147,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11448,12 +11472,12 @@
                 
                 
                 <h1 id="tutorial-custom-library">Tutorial: Custom Library<a class="headerlink" href="#tutorial-custom-library" title="Permanent link">&para;</a></h1>
-<p>In this section, you will learn how to create a <strong>Custom Library</strong> and add support for a third-party GUI control to Rapise.  We will be using a demo application called <strong>CustomControlApp</strong>. Our Custom Library  will be simple.  It will allow to  Record and Learn objects of <strong>CustomListboxControl</strong> type and also playback actions for this type of objects. This tutorial is complemented by a ready test <strong>CustomControlTest</strong> which you'll be able to examine and run.</p>
+<p>In this section, you will learn how to create a <strong>Custom Library</strong> to add support for a third-party GUI control to Rapise. We will use a demo application called <strong>CustomControlApp</strong>. Our Custom Library will be simple. It will allow recording and learning objects of the <strong>CustomListboxControl</strong> type, as well as playing back actions for this type of object. This tutorial is complemented by a ready-to-use test, <strong>CustomControlTest</strong>, which you can examine and run.</p>
 <h2 id="tutorial-data">Tutorial Data<a class="headerlink" href="#tutorial-data" title="Permanent link">&para;</a></h2>
 <p><strong>CustomControlApp Folder</strong></p>
 <div class="highlight"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\Extensibility\CustomLibrary\CustomControlApp
 </code></pre></div>
-<p>You may build this application yourself in Microsoft Visual Studio (C++) or use ready executable:</p>
+<p>You can build this application yourself in Microsoft Visual Studio (C++) or use the ready executable:</p>
 <div class="highlight"><pre><span></span><code>&lt;CustomControlApp folder&gt;\Release\CustomControlApp.exe
 </code></pre></div>
 <p><strong>CustomControlTest Folder</strong></p>
@@ -11462,29 +11486,29 @@
 <p><strong>Custom Library File</strong></p>
 <div class="highlight"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\Extensibility\CustomLibrary\CustomControlTest\Lib\LibUser\LibUser.js
 </code></pre></div>
-<p>If you prefer active experimentation learning style you may first skip to subsection 8 and after playing with the ready test and library start reading from the beginning.</p>
+<p>If you prefer an active experimentation learning style, you can first skip to subsection 8. After experimenting with the ready test and library, you can then start reading from the beginning.</p>
 <h2 id="1-application-under-test">1. Application Under Test<a class="headerlink" href="#1-application-under-test" title="Permanent link">&para;</a></h2>
-<p>CustomControlApp contains an object of type <strong>CustomListboxControl</strong>. The control is similar to a single-select listbox, but each line item has a corresponding <strong>progress bar</strong> indicator indicating a current value. Using the left/right cursor keys you can change the value of the currently focused item.</p>
+<p>CustomControlApp contains an object of type <strong>CustomListboxControl</strong>. The control is similar to a single-select listbox, but each line item has a corresponding <strong>progress bar</strong> indicator showing its current value. Using the left/right cursor keys, you can change the value of the currently focused item.</p>
 <p><img alt="customcontrolapp" src="../img/tutorial_custom_library1.png" /></p>
-<p>If you will try to record a test for <strong>CustomControlApp</strong> using just <strong>Generic</strong> library you'll see that <strong>CustomListboxControl</strong> is treated as <strong>Simulated Object</strong> and all interactions with it are recorded as mouse clicks and key presses. For some tests such functionality is sufficient, but if you want to be able to recognize <strong>CustomListboxControl</strong> as a list, get its items, select an item by name, set value for a particular item you need to create a <strong>Custom Library</strong>.</p>
+<p>If you try to record a test for <strong>CustomControlApp</strong> using just the <strong>Generic</strong> library, you'll see that <strong>CustomListboxControl</strong> is treated as a <strong>Simulated Object</strong>, and all interactions with it are recorded as mouse clicks and key presses. For some tests, such functionality is sufficient, but if you want to recognize <strong>CustomListboxControl</strong> as a list, get its items, select an item by name, or set a value for a particular item, you need to create a <strong>Custom Library</strong>.</p>
 <p><img alt="customcontrolapp, simulated object" src="../img/tutorial_custom_library2.png" /></p>
 <h2 id="2-libuser">2. LibUser<a class="headerlink" href="#2-libuser" title="Permanent link">&para;</a></h2>
-<p>In <code>Files</code> view right click the test node and choose <code>Create &gt; User Lib...</code></p>
+<p>In the <code>Files</code> view, right-click the test node and choose <code>Create &gt; User Lib...</code></p>
 <p><img alt="create userlib" src="../img/tutorial_custom_library_create_userlib.png" /></p>
-<p>Specify name of your library (<code>User</code>) and click <code>OK</code> button.</p>
+<p>Specify the name of your library (<code>User</code>) and click the <code>OK</code> button.</p>
 <p><img alt="library name" src="../img/tutorial_custom_library_libraryname.png" /></p>
-<p>LibUser library consists of two files:</p>
+<p><code>LibUser</code> library consists of two files:</p>
 <ol>
-<li><strong>LibUser.jslib</strong> which is a library declaration file.</li>
-<li><strong>LibUser.js</strong> which is a library definition file.</li>
+<li><strong>LibUser.jslib</strong>, which is a library declaration file.</li>
+<li><strong>LibUser.js</strong>, which is a library definition file.</li>
 </ol>
 <p><img alt="library files" src="../img/tutorial_custom_library_libraryfiles.png" /></p>
-<p>Double-click <code>LibUser.js</code> file to open it in the editor.</p>
+<p>Double-click the <code>LibUser.js</code> file to open it in the editor.</p>
 <h2 id="3-analyze-customlistboxcontrol-in-spy">3. Analyze CustomListboxControl in Spy<a class="headerlink" href="#3-analyze-customlistboxcontrol-in-spy" title="Permanent link">&para;</a></h2>
-<p>Launch <strong>CustomControlApp</strong> and open <a href="../ses_spy_dialog/">Spy</a>. Using the <strong>Accessible</strong> option in the Spy tool, spy on the <strong>CustomListboxControl</strong>. It is easy to see that <strong>CustomListboxControl</strong> has the following accessibility tree: <code>ROLE_SYSTEM_WINDOW</code> top node contains <code>ROLE_SYSTEM_LIST</code> child that in its turn may contain zero to many <code>ROLE_SYSTEM_SLIDER</code> nodes.</p>
+<p>Launch <strong>CustomControlApp</strong> and open <a href="../ses_spy_dialog/">Spy</a>. Using the <strong>Accessible</strong> option in the Spy tool, spy on the <strong>CustomListboxControl</strong>. It is easy to see that <strong>CustomListboxControl</strong> has the following accessibility tree: The <code>ROLE_SYSTEM_WINDOW</code> top node contains a <code>ROLE_SYSTEM_LIST</code> child, which in turn may contain zero to many <code>ROLE_SYSTEM_SLIDER</code> nodes.</p>
 <p><img alt="spy, customlistboxcontrol" src="../img/tutorial_custom_library4.png" /></p>
 <h2 id="4-create-matcher-rule-for-customlistboxcontrol">4. Create Matcher Rule for CustomListboxControl<a class="headerlink" href="#4-create-matcher-rule-for-customlistboxcontrol" title="Permanent link">&para;</a></h2>
-<p>With knowledge of <strong>CustomListboxControl</strong> accessibility tree we can create a <strong>matcher rule</strong> that will make <strong>CustomListboxControl</strong> recognizable by Rapise. Write the following code into <code>LibUser.js</code>:</p>
+<p>With knowledge of the <strong>CustomListboxControl</strong> accessibility tree, we can create a <strong>matcher rule</strong> that will make <strong>CustomListboxControl</strong> recognizable by Rapise. Write the following code into <code>LibUser.js</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/**</span>
 <span class="cm">    ROLE_SYSTEM_WINDOW</span>
 <span class="cm">        ROLE_SYSTEM_LIST (CustomListboxControl)</span>
@@ -11511,33 +11535,33 @@
 <span class="w">    </span><span class="p">]</span>
 <span class="p">});</span>
 </code></pre></div>
-<p>Each matcher rule (instance of <code>SeSMatcherRule</code>) is a tree like structure that describes a particular GUI control type. Each node in this tree is a rule object that is defined by the following simplified grammar:</p>
+<p>Each matcher rule (an instance of <code>SeSMatcherRule</code>) is a tree-like structure that describes a particular GUI control type. Each node in this tree is a rule object, defined by the following simplified grammar:</p>
 <div class="highlight"><pre><span></span><code>or_rules: (rule)+
 and_rules: (rule)+
 
 rule:
-    role
-    [save_to]
-    [zero_to_many]
-    [or_rules]
-    [and_rules]
+    role
+    [save_to]
+    [zero_to_many]
+    [or_rules]
+    [and_rules]
 </code></pre></div>
 <ul>
-<li><strong>object_type</strong> - the string that uniquely identifies this matcher rule and designates type of the control.</li>
-<li><strong>object_flavor</strong> - visual type of the control, it is used to show an appropriate icon in the <a href="../object_tree/">Object Tree</a> and to filter actions and properties in composite behavior patterns.</li>
-<li><strong>behavior</strong> - array of behavior patterns that define object actions, properties and events.</li>
-<li><strong>role</strong> - accessibility role of the corresponding node in the accessibility tree of the control. The role equals to a Role of the accessible element as displayed in the Spy.</li>
-<li><strong>or_rules</strong> - array of rules (defining child nodes) joined with logical OR. Any OR rule can be satisfied to consider child nodes matched.</li>
-<li><strong>and_rules</strong> - array of rules (defining child nodes) joined with logical AND. All AND rules must be satisfied to consider child nodes matched.</li>
-<li><strong>save_to</strong> - <code>SeSObject</code> created for accessibility tree node corresponding to this rule is assigned to the field with <code>save_to</code> name of the top level <code>SeSObject</code>. I.e. if rule has save_to: <code>items</code> element then you can access learned element using <code>SeS('ObjID').items</code>. In many cases such named fields are used in behavior patterns.</li>
-<li><strong>zero_to_many</strong> - if this property is present in the rule and set to 'true' then it means that parent rule may contain from zero to many of child nodes that match this rule.</li>
+<li><strong>object_type</strong> - the string that uniquely identifies this matcher rule and designates the type of the control.</li>
+<li><strong>object_flavor</strong> - the visual type of the control, used to show an appropriate icon in the <a href="../object_tree/">Object Tree</a> and to filter actions and properties in composite behavior patterns.</li>
+<li><strong>behavior</strong> - an array of behavior patterns that define object actions, properties, and events.</li>
+<li><strong>role</strong> - the accessibility role of the corresponding node in the control's accessibility tree. The role equals a Role of the accessible element as displayed in Spy.</li>
+<li><strong>or_rules</strong> - an array of rules (defining child nodes) joined with a logical OR. Any OR rule can be satisfied for child nodes to be considered matched.</li>
+<li><strong>and_rules</strong> - an array of rules (defining child nodes) joined with a logical AND. All AND rules must be satisfied for child nodes to be considered matched.</li>
+<li><strong>save_to</strong> - The <code>SeSObject</code> created for the accessibility tree node corresponding to this rule is assigned to the field with the <code>save_to</code> name of the top-level <code>SeSObject</code>. That is, if a rule has <code>save_to: items</code>, then you can access the learned element using <code>SeS('ObjID').items</code>. In many cases, such named fields are used in behavior patterns.</li>
+<li><strong>zero_to_many</strong> - If this property is present in the rule and set to 'true', it means that the parent rule may contain from zero to many child nodes that match this rule.</li>
 </ul>
 <h2 id="5-customlistboxcontrol-behavior">5. CustomListboxControl Behavior<a class="headerlink" href="#5-customlistboxcontrol-behavior" title="Permanent link">&para;</a></h2>
-<p>After defining the matcher rule we can proceed to <strong>behavior patterns</strong>. Behavior patterns operate with <code>SeSObject</code> contents, so they should not be aware about accessibility tree of the underlying GUI control and thus the same behavior pattern can be assigned to different matcher rules. There are a plenty of behavior patterns defined in</p>
+<p>After defining the matcher rule, we can proceed to <strong>behavior patterns</strong>. Behavior patterns operate with <code>SeSObject</code> contents, so they should not be aware of the underlying GUI control's accessibility tree. Thus, the same behavior pattern can be assigned to different matcher rules. There are plenty of behavior patterns defined in</p>
 <div class="highlight"><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Engine\SeSBehavior.js
 </code></pre></div>
-<p>After looking at those patterns it is possible to notice that <code>Win32ItemSelectable</code> pattern is the one that perfectly suites for capturing selection accessibility events and for selecting list items. This pattern contains <code>OnSelect</code> event that is called during recording when an item is selected in list and <code>DoSelectItem</code> action used to select desired item during playback.</p>
-<p>But using just <code>Win32ItemSelectable</code> behavior pattern is not sufficient. It does not support recording of progress bar value change events and it does not support setting progress bar value during playback. That is why we need to define new behavior pattern: <code>Win32CustomListboxControl</code>. Look at its code:</p>
+<p>After looking at those patterns, it is possible to notice that the <code>Win32ItemSelectable</code> pattern perfectly suits capturing selection accessibility events and selecting list items. This pattern contains an <code>OnSelect</code> event that is called during recording when an item is selected in a list, and a <code>DoSelectItem</code> action used to select the desired item during playback.</p>
+<p>But using just the <code>Win32ItemSelectable</code> behavior pattern is not sufficient. It does not support recording progress bar value change events, nor does it support setting the progress bar value during playback. That is why we need to define a new behavior pattern: <code>Win32CustomListboxControl</code>. Here is its code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">Win32CustomListboxControl</span><span class="w"> </span><span class="o">=</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">actions</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
@@ -11586,18 +11610,18 @@ rule:
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div>
-<p>During recording process <code>OnValueChange</code> function captures progress bar change events and calls <code>RegisterAction</code> function that adds <code>SetItemValue</code> action to the test.</p>
-<p>Put this code into <code>LibUser.js</code> <strong>before</strong> the rule created in the previous step.</p>
+<p>During the recording process, the <code>OnValueChange</code> function captures progress bar change events and calls the <code>RegisterAction</code> function, which adds the <code>SetItemValue</code> action to the test.</p>
+<p>Place this code into <code>LibUser.js</code> <strong>before</strong> the rule created in the previous step.</p>
 <h2 id="6-customlistboxcontrol-specific-accessibility-events">6. CustomListboxControl Specific Accessibility Events<a class="headerlink" href="#6-customlistboxcontrol-specific-accessibility-events" title="Permanent link">&para;</a></h2>
-<p>What accessibility events are fired when a user changes the progress bar value? You can use <a href="https://docs.microsoft.com/en-us/windows/desktop/winauto/accessible-event-watcher">Accessible Event Watcher</a> to find out. Launch <strong>CustomControlApp</strong> and start <strong>Accessible Event Watcher</strong>. Make sure that mode is set to <code>WinEvents (In Context)</code></p>
+<p>What accessibility events are fired when a user changes the progress bar value? You can use <a href="https://docs.microsoft.com/en-us/windows/desktop/winauto/accessible-event-watcher">Accessible Event Watcher</a> to find out. Launch <strong>CustomControlApp</strong> and start <strong>Accessible Event Watcher</strong>. Make sure that the mode is set to <code>WinEvents (In Context)</code>.</p>
 <p><img alt="customcontrolapp, accessible events" src="../img/tutorial_custom_library6.png" /></p>
-<p>Select an item in <strong>CustomControlApp</strong> and advance its progress bar using right key. <strong>Accessible Event Watcher</strong> will show you captured events:</p>
+<p>Select an item in <strong>CustomControlApp</strong> and advance its progress bar using the right key. <strong>Accessible Event Watcher</strong> will show you the captured events:</p>
 <p><img alt="customcontrolapp, accessible events filled" src="../img/tutorial_custom_library7.png" /></p>
-<p>You can see that changing progress bar leads to generation of <code>OBJ_VALUECHANGE</code> events. To get event name to use with Rapise open <a href="https://docs.microsoft.com/en-us/windows/desktop/winauto/event-constants">Event Constants</a> page and search for relevant value.</p>
+<p>You can see that changing the progress bar leads to the generation of <code>OBJ_VALUECHANGE</code> events. To get the event name to use with Rapise, open the <a href="https://docs.microsoft.com/en-us/windows/desktop/winauto/event-constants">Event Constants</a> page and search for the relevant value.</p>
 <!-- /* cSpell:disable */ -->
 <p><img alt="event constants" src="../img/tutorial_custom_library_event_sonstants.png" /></p>
 <!-- /* cSpell:enable */ -->
-<p>Not all accessibility events are processed and propagated by Rapise engine. <code>EVENT_OBJECT_VALUECHANGE</code> is one of such events. To consume this event and make an appropriate call to <code>OnValueChange</code> of <code>Win32CustomListboxControl</code> you need to add and register <strong>custom accessibility event handler</strong>:</p>
+<p>Not all accessibility events are processed and propagated by the Rapise engine. <code>EVENT_OBJECT_VALUECHANGE</code> is one such event. To consume this event and make an appropriate call to <code>OnValueChange</code> of <code>Win32CustomListboxControl</code>, you need to add and register a <strong>custom accessibility event handler</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/**</span>
 <span class="cm"> * Custom handler for EVENT_OBJECT_VALUECHANGE event</span>
 <span class="cm"> */</span>
@@ -11633,25 +11657,25 @@ rule:
 <span class="nx">g_customEventHandlers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">CustomRegisterAccessibleEvent</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="7-record-and-playback">7. Record and Playback<a class="headerlink" href="#7-record-and-playback" title="Permanent link">&para;</a></h2>
-<p>Update <code>LibUser.jslib</code> library definition for automatic loading.</p>
+<p>Update the <code>LibUser.jslib</code> library definition for automatic loading.</p>
 <p><img alt="auto load" src="../img/tutorial_custom_library_autoload.png" /></p>
-<p>Now you are ready to record and playback a test. Just remember that in <strong>Select an Application to Record</strong> dialog you need to uncheck <strong>Auto</strong> library and select <strong>Generic</strong> library.</p>
+<p>Now you are ready to record and play back a test. Just remember that in the <strong>Select an Application to Record</strong> dialog, you need to uncheck the <strong>Auto</strong> library and select the <strong>Generic</strong> library.</p>
 <p><img alt="generic, libuser" src="../img/tutorial_custom_library8.png" /></p>
-<p>Notice <strong>Action</strong> names in <strong>Recording Activity</strong> dialog, they correspond to <code>Win32ItemSelectable</code> and <code>Win32CustomListboxControl</code> behaviors.</p>
+<p>Notice the <strong>Action</strong> names in the <strong>Recording Activity</strong> dialog; they correspond to <code>Win32ItemSelectable</code> and <code>Win32CustomListboxControl</code> behaviors.</p>
 <p><img alt="sample recording" src="../img/tutorial_custom_library_sample_recording.png" /></p>
 <h2 id="8-customcontroltest">8. CustomControlTest<a class="headerlink" href="#8-customcontroltest" title="Permanent link">&para;</a></h2>
-<p>This tutorial is complemented by a ready test <strong>CustomControlTest</strong> which you can examine and run. Open <strong>CustomControlTest</strong> in Rapise from</p>
+<p>This tutorial is complemented by a ready-to-use test, <strong>CustomControlTest</strong>, which you can examine and run. Open <strong>CustomControlTest</strong> in Rapise from the following path:</p>
 <p><div class="highlight"><pre><span></span><code>C:\Users\Public\Documents\Rapise\Samples\Extensibility\CustomLibrary\CustomControlTest
 </code></pre></div>
 <img alt="custom library test" src="../img/tutorial_custom_library9.png" /></p>
-<p><strong>Tip</strong>: It is possible to launch CustomControlApp right from Rapise, just double click on CustomControlApp.exe in the file tree.</p>
+<p><strong>Tip</strong>: It is possible to launch CustomControlApp directly from Rapise; just double-click <code>CustomControlApp.exe</code> in the file tree.</p>
 <h2 id="9-wrap-up-implementation-sequence">9. Wrap-up: Implementation Sequence<a class="headerlink" href="#9-wrap-up-implementation-sequence" title="Permanent link">&para;</a></h2>
-<p>Full support for a custom object requires support for Recording, Learn and Playback. Let's go over created library and specify the purpose of each component in it.</p>
+<p>Full support for a custom object requires support for recording, learning, and playback. Let's review the created library and specify the purpose of each component.</p>
 <ul>
-<li><strong>Matcher Rule</strong> - it is used to recognize the object inside an application, required for Recording, Learn and Playback.</li>
-<li><strong>Events in Behavior Patterns</strong> - handling events is required for Recording.</li>
-<li><strong>Actions in Behavior Patterns</strong> - actions are used to examine or change state of the control, required for Playback.</li>
-<li><strong>Custom Accessibility Event Handler</strong> - required for Recording if some important events are not processed by Rapise engine by default.</li>
+<li><strong>Matcher Rule</strong> - It is used to recognize the object within an application, and is required for recording, learning, and playback.</li>
+<li><strong>Events in Behavior Patterns</strong> - Handling events is required for recording.</li>
+<li><strong>Actions in Behavior Patterns</strong> - Actions are used to examine or change the state of the control, and are required for playback.</li>
+<li><strong>Custom Accessibility Event Handler</strong> - Required for recording if some important events are not processed by the Rapise engine by default.</li>
 </ul>
                 
               

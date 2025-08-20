@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11139,6 +11151,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11458,14 +11482,14 @@
                 
                 
                 <h1 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">&para;</a></h1>
-<p>Conditions used in <code>If</code> and <code>Assert</code> statements. </p>
+<p>Conditions are used in <code>If</code> and <code>Assert</code> statements.</p>
 <h2 id="types-of-conditions">Types of Conditions<a class="headerlink" href="#types-of-conditions" title="Permanent link">&para;</a></h2>
-<p>Condition accepts one or two <a href="../Params/">Params</a>. </p>
+<p>A condition accepts one or two <a href="../Params/">Params</a>.</p>
 <ol>
-<li>There might be just one <em>Param</em>. Such condition is called <em>unary</em>, for example <code>param1 is true</code> or <code>output1 is true</code>.</li>
-<li>There might be second <em>Param</em>. Such condition is called <em>binary</em>, for example <code>param1 == param2</code>. </li>
-<li>Condition parameter may be either <em>Param</em> or <em>Action</em> output.</li>
-<li><em>Param</em> is some fixed <em>value</em>, <em>variable</em> or <em>expression</em>.</li>
+<li>A condition may have just one <em>Param</em>. This is called a <em>unary</em> condition, for example, <code>param1 is true</code> or <code>output1 is true</code>.</li>
+<li>A condition may have a second <em>Param</em>. This is called a <em>binary</em> condition, for example, <code>param1 == param2</code>.</li>
+<li>A condition parameter may be either a <em>Param</em> or an <em>Action</em> output.</li>
+<li>A <em>Param</em> is a fixed <em>value</em>, <em>variable</em>, or <em>expression</em>.</li>
 </ol>
 <p>Binary condition with two *Param*s named <code>param1</code> and <code>param2</code>:</p>
 <table>
@@ -11658,27 +11682,27 @@
 <tbody>
 <tr>
 <td><code>param1</code> IsTrue</td>
-<td>Check if <code>param1</code> is true</td>
+<td>Checks if <code>param1</code> is true.</td>
 </tr>
 <tr>
 <td><code>param1</code> IsFalse</td>
-<td>Check if <code>param1</code> is false</td>
+<td>Checks if <code>param1</code> is false.</td>
 </tr>
 <tr>
 <td><code>param1</code> IsNull</td>
-<td>Check if <code>param1</code> is null</td>
+<td>Checks if <code>param1</code> is null.</td>
 </tr>
 <tr>
 <td><code>param1</code> IsNotNull</td>
-<td>Check if <code>param1</code> is NOT null</td>
+<td>Checks if <code>param1</code> is NOT null.</td>
 </tr>
 <tr>
 <td><code>param1</code> IsSet</td>
-<td>Check if <code>param1</code> is NOT null, false, 0, empty string or undefined</td>
+<td>Checks if <code>param1</code> is NOT null, false, 0, an empty string, or undefined.</td>
 </tr>
 <tr>
 <td><code>param1</code> IsNotSet</td>
-<td>Check if <code>param1</code> is null, 0, false, empty string or undefined</td>
+<td>Checks if <code>param1</code> is null, 0, false, an empty string, or undefined.</td>
 </tr>
 </tbody>
 </table>
@@ -11693,27 +11717,27 @@
 <tbody>
 <tr>
 <td><code>output1</code> IsTrue</td>
-<td>Check if <code>output1</code> is true</td>
+<td>Checks if <code>output1</code> is true.</td>
 </tr>
 <tr>
 <td><code>output1</code> IsFalse</td>
-<td>Check if <code>output1</code> is false</td>
+<td>Checks if <code>output1</code> is false.</td>
 </tr>
 <tr>
 <td><code>output1</code> IsNull</td>
-<td>Check if <code>output1</code> is null</td>
+<td>Checks if <code>output1</code> is null.</td>
 </tr>
 <tr>
 <td><code>output1</code> IsNotNull</td>
-<td>Check if <code>output1</code> is NOT null</td>
+<td>Checks if <code>output1</code> is NOT null.</td>
 </tr>
 <tr>
 <td><code>output1</code> IsSet</td>
-<td>Check if <code>output1</code> is NOT null, false, 0, empty string or undefined</td>
+<td>Checks if <code>output1</code> is NOT null, false, 0, an empty string, or undefined.</td>
 </tr>
 <tr>
 <td><code>output1</code> IsNotSet</td>
-<td>Check if <code>output1</code> is null, 0, false, empty string or undefined</td>
+<td>Checks if <code>output1</code> is null, 0, false, an empty string, or undefined.</td>
 </tr>
 </tbody>
 </table>
@@ -11728,35 +11752,35 @@
 <tbody>
 <tr>
 <td><code>param1</code> == <code>param2</code></td>
-<td>Check if <code>param1</code> equals to <code>param2</code></td>
+<td>Checks if <code>param1</code> is equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>param1</code> != <code>param2</code></td>
-<td>Check if <code>param1</code> NOT equal to <code>param2</code></td>
+<td>Checks if <code>param1</code> is NOT equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>param1</code> &gt; <code>param2</code></td>
-<td>Check if <code>param1</code> is more than <code>param2</code></td>
+<td>Checks if <code>param1</code> is greater than <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>param1</code> &gt;= <code>param2</code></td>
-<td>Check if <code>param1</code> is more or equal to <code>param2</code></td>
+<td>Checks if <code>param1</code> is greater than or equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>param1</code> &lt;= <code>param2</code></td>
-<td>Check if <code>param1</code> is less or equal to <code>param2</code></td>
+<td>Checks if <code>param1</code> is less than or equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>param1</code> &lt; <code>param2</code></td>
-<td>Check if <code>param1</code> is less than <code>param2</code></td>
+<td>Checks if <code>param1</code> is less than <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>param1</code> contains <code>param2</code></td>
-<td>Check if <code>param1</code> contains <code>param2</code> as substring</td>
+<td>Checks if <code>param1</code> contains <code>param2</code> as a substring.</td>
 </tr>
 <tr>
 <td>CmpImage <code>param1</code>, <code>param2</code></td>
-<td>Compare 1<sup>st</sup> image and image represented by <code>param2</code></td>
+<td>Compares the first image with the image represented by <code>param2</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -11771,35 +11795,35 @@
 <tbody>
 <tr>
 <td><code>output1</code> == <code>param2</code></td>
-<td>Check if <code>output1</code> equals to <code>param2</code></td>
+<td>Checks if <code>output1</code> is equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> != <code>param2</code></td>
-<td>Check if <code>output1</code> NOT equal to <code>param2</code></td>
+<td>Checks if <code>output1</code> is NOT equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &gt; <code>param2</code></td>
-<td>Check if <code>output1</code> is more than <code>param2</code></td>
+<td>Checks if <code>output1</code> is greater than <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &gt;= <code>param2</code></td>
-<td>Check if <code>output1</code> is more or equal to <code>param2</code></td>
+<td>Checks if <code>output1</code> is greater than or equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &lt;= <code>param2</code></td>
-<td>Check if <code>output1</code> is less or equal to <code>param2</code></td>
+<td>Checks if <code>output1</code> is less than or equal to <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &lt; <code>param2</code></td>
-<td>Check if <code>output1</code> is less than <code>param2</code></td>
+<td>Checks if <code>output1</code> is less than <code>param2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> contains <code>param2</code></td>
-<td>Check if <code>output1</code> contains <code>param2</code> as substring</td>
+<td>Checks if <code>output1</code> contains <code>param2</code> as a substring.</td>
 </tr>
 <tr>
 <td>CmpImage <code>output1</code>, <code>param2</code></td>
-<td>Compare 1<sup>st</sup> image and image represented by <code>param2</code></td>
+<td>Compares the first image with the image represented by <code>param2</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -11814,40 +11838,40 @@
 <tbody>
 <tr>
 <td><code>output1</code> == <code>output2</code></td>
-<td>Check if <code>output1</code> equals to <code>output2</code></td>
+<td>Checks if <code>output1</code> is equal to <code>output2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> != <code>output2</code></td>
-<td>Check if <code>output1</code> NOT equal to <code>output2</code></td>
+<td>Checks if <code>output1</code> is NOT equal to <code>output2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &gt; <code>output2</code></td>
-<td>Check if <code>output1</code> is more than <code>output2</code></td>
+<td>Checks if <code>output1</code> is greater than <code>output2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &gt;= <code>output2</code></td>
-<td>Check if <code>output1</code> is more or equal to <code>output2</code></td>
+<td>Checks if <code>output1</code> is greater than or equal to <code>output2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &lt;= <code>output2</code></td>
-<td>Check if <code>output1</code> is less or equal to <code>output2</code></td>
+<td>Checks if <code>output1</code> is less than or equal to <code>output2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> &lt; <code>output2</code></td>
-<td>Check if <code>output1</code> is less than <code>output2</code></td>
+<td>Checks if <code>output1</code> is less than <code>output2</code>.</td>
 </tr>
 <tr>
 <td><code>output1</code> contains <code>output2</code></td>
-<td>Check if <code>output1</code> contains <code>output2</code> as substring</td>
+<td>Checks if <code>output1</code> contains <code>output2</code> as a substring.</td>
 </tr>
 <tr>
 <td>CmpImage <code>output1</code>, <code>output2</code></td>
-<td>Compare 1<sup>st</sup> image and image represented by <code>output2</code></td>
+<td>Compares the first image with the image represented by <code>output2</code>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="and-or-conditions"><em>And</em>, <em>Or</em> Conditions<a class="headerlink" href="#and-or-conditions" title="Permanent link">&para;</a></h2>
-<p>It is possible to make more complex conditions by using <em>And</em> and <em>Or</em> keyword in the <em>Flow</em> column.</p>
+<p>It is possible to create more complex conditions by using the <em>And</em> and <em>Or</em> keywords in the <em>Flow</em> column.</p>
 <table>
 <thead>
 <tr>
@@ -11917,7 +11941,7 @@
 </tr>
 </tbody>
 </table>
-<p>This piece forms a condition checking that <code>Result1</code> is false AND <code>Result2</code> is true at the same time.</p>
+<p>This example forms a condition that checks if <code>Result1</code> is false AND <code>Result2</code> is true.</p>
 <table>
 <thead>
 <tr>
@@ -11987,11 +12011,11 @@
 </tr>
 </tbody>
 </table>
-<p>This piece forms a condition checking that <em>MyButton</em> is Enabled OR <code>Result2</code> is true at the same time.</p>
+<p>This example forms a condition that checks if <em>MyButton</em> is not enabled OR <code>Result1</code> is true.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>Condition is never used alone. You may find examples of conditions in chapters devoted to <a href="../Assertions/">Assertions</a> and <a href="../IfElse/">If-Then-Else</a>.</p>
+<p>A condition is never used alone. You can find examples of conditions in the chapters on <a href="../Assertions/">Assertions</a> and <a href="../IfElse/">If-Then-Else</a>.</p>
 <h2 id="short-condition-syntax">Short Condition Syntax<a class="headerlink" href="#short-condition-syntax" title="Permanent link">&para;</a></h2>
-<p>All binary conditions with <code>param2</code> take 3 rows. Sometimes it is more convenient to use shorter 2 row syntax where <code>param2</code> value is specified on the same row as the condition itself:</p>
+<p>All binary conditions with <code>param2</code> take 3 rows. Sometimes it is more convenient to use a shorter, 2-row syntax where the <code>param2</code> value is specified on the same row as the condition itself:</p>
 <table>
 <thead>
 <tr>
@@ -12034,7 +12058,7 @@
 </tr>
 </tbody>
 </table>
-<p>Here is the same condition presented in 3 rows (default) and 2 rows (short) form:</p>
+<p>Here is the same condition presented in 3-row (default) and 2-row (short) forms:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="2 row condition syntax" src="../img/Conditions_2Row.png" /></p>
 </div>
@@ -12137,7 +12161,7 @@
 </table>
 </div>
 </div>
-<p>2 rows condition syntax together with <a href="../IfElse/">If-Else</a> may be used to mimic a <code>switch</code> statement:</p>
+<p>The 2-row condition syntax, together with <a href="../IfElse/">If-Else</a>, can be used to mimic a <code>switch</code> statement:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="IfElse_Switch" src="../img/Conditions_IfElseSwitch.png" /></p>
 </div>
@@ -12321,7 +12345,7 @@
 </table>
 </div>
 </div>
-<p>If there is an <code>Action</code> result used instead of <code>param</code> then it is recommended to first save it to the <a href="../Variables/">Variable</a>.</p>
+<p>When using an <code>Action</code> result instead of a <code>param</code>, it is recommended to first save the result to a <a href="../Variables/">Variable</a>.</p>
                 
               
               

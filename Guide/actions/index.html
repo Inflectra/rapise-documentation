@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11097,6 +11109,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11369,24 +11393,24 @@
                 
                 <h1 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p><strong>Actions</strong> are anything the user can do to a GUI control, such as click, select, fill with text, etc. You can override the behavior of an action, without creating or altering a <a href="../recording_library/">Recording Library</a>, using <strong>SeSOverrideAction()</strong>. Overriding an action affects <a href="../playback/">Playback</a>, but not <a href="../recording/">Recording</a>.</p>
+<p><strong>Actions</strong> represent any user interaction with a GUI control, such as clicking, selecting, or entering text. You can override the behavior of an action without creating or altering a <a href="../recording_library/">Recording Library</a> by using <strong>SeSOverrideAction()</strong>. Overriding an action affects <a href="../playback/">Playback</a>, but not <a href="../recording/">Recording</a>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p><strong>SeSOverrideAction()</strong> is used to override an action handler or add a new <strong>DoAction</strong> handler:</p>
+<p><strong>SeSOverrideAction()</strong> is used to override an existing action handler or to add a new <strong>DoAction</strong> handler:</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/**</span>
-<span class="cm"> * Overrides Behavior.</span>
-<span class="cm"> * this may be used if some behavior should be tweaked. Default action handler</span>
-<span class="cm"> * is passed to the callback as the first parameter.</span>
+<span class="cm"> * Overrides an object&#39;s behavior.</span>
+<span class="cm"> * This function can be used to tweak existing behavior. The default action handler</span>
+<span class="cm"> * is passed as the first parameter to the callback.</span>
 <span class="cm"> * https://www.inflectra.com/support/knowledgebase/kb354.aspx</span>
-<span class="cm"> * @param objectType Either object_type of the rule or regexp pattern for object_type.</span>
-<span class="cm"> * @param actionName action name. For example &quot;DoClick&quot;.</span>
-<span class="cm"> * @param callback new action handler for specified action.</span>
-<span class="cm"> * @returns &#39;true&#39; if object_type is found and replacement is successful, &#39;false&#39; otherwise.</span>
+<span class="cm"> * @param objectType The object type of the rule, or a regular expression pattern for the object type.</span>
+<span class="cm"> * @param actionName The name of the action (e.g., &quot;DoClick&quot;).</span>
+<span class="cm"> * @param callback The new action handler for the specified action.</span>
+<span class="cm"> * @returns &#39;true&#39; if the object type is found and the replacement is successful; otherwise, &#39;false&#39;.</span>
 <span class="cm"> */</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">SeSOverrideAction</span><span class="p">(</span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">objectType</span><span class="p">,</span><span class="w"> </span><span class="cm">/**string*/</span><span class="w"> </span><span class="nx">actionName</span><span class="p">,</span><span class="w"> </span><span class="nx">callback</span><span class="p">)</span>
 </code></pre></div>
-<p>In most cases <strong>SeSOverrideAction()</strong> should be called from within <a href="../understanding_the_script/#sesontestinit"><strong>SeSOnTestInit()</strong></a> callback.</p>
+<p>In most cases, <strong>SeSOverrideAction()</strong> should be called from within the <a href="../understanding_the_script/#sesontestinit"><strong>SeSOnTestInit()</strong></a> callback.</p>
 <h2 id="calling-base-actions">Calling Base Actions<a class="headerlink" href="#calling-base-actions" title="Permanent link">&para;</a></h2>
-<p>The function you are overriding is called the <strong>base action</strong>. It is passed to the overriding action as first <code>defaultActionHandler</code> parameter. You can call the <strong>base action</strong> like this:</p>
+<p>The function you are overriding is called the <strong>base action</strong>. It is passed to the overriding action as the first parameter, <code>defaultActionHandler</code>. You can call the <strong>base action</strong> as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MyHTMLObjectDoClick</span><span class="p">(</span><span class="nx">defaultActionHandler</span><span class="p">,</span><span class="w"> </span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">forceEvent</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="s2">&quot;Click on &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">object_name</span><span class="p">);</span>

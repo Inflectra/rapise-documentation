@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -3758,8 +3770,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dynamics-nav-cook-book" class="md-nav__link">
-    Dynamics NAV Cook Book
+  <a href="#dynamics-nav-cookbook" class="md-nav__link">
+    Dynamics NAV Cookbook
   </a>
   
 </li>
@@ -11184,6 +11196,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11503,8 +11527,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dynamics-nav-cook-book" class="md-nav__link">
-    Dynamics NAV Cook Book
+  <a href="#dynamics-nav-cookbook" class="md-nav__link">
+    Dynamics NAV Cookbook
   </a>
   
 </li>
@@ -11545,41 +11569,41 @@
                 
                 <h1 id="dynamics-nav">Dynamics NAV<a class="headerlink" href="#dynamics-nav" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>In this guide we describe how to master tests for Dynamics NAV desktop client using Rapise.</p>
+<p>In this guide, we describe how to create robust tests for the Dynamics NAV desktop client using Rapise.</p>
 <p><strong>Microsoft Dynamics NAV</strong> is an enterprise resource planning (ERP) software suite for midsize organizations. The system offers specialized functionality for manufacturing, distribution, government, retail, and other industries.</p>
 <h3 id="dynamics-nav-web-client-testing-note">Dynamics NAV Web Client Testing Note<a class="headerlink" href="#dynamics-nav-web-client-testing-note" title="Permanent link">&para;</a></h3>
-<p>Dynamics 365 Business Central is a successor of Dynamics NAV 2017 Web Client. Both solutions were built by Microsoft using same technology though they have a few differences. Rapise includes a library <a href="/Libraries/ses_lib_dynamicsnav/">DomDynamicsNAV</a> which makes test recording and playback of Dynamics NAV web clients a pleasant thing. <a href="https://www.inflectra.com/Support/KnowledgeBase/KB349.aspx">From this post</a> you will learn basics of recording a reliable test for these solutions as well as test playback troubleshooting methods. We'll use Dynamics 365 Business Central as system under test.</p>
+<p>Dynamics 365 Business Central is the successor to the Dynamics NAV 2017 Web Client. Both solutions were built by Microsoft using the same technology, though they have a few differences. Rapise includes the <a href="../../Libraries/ses_lib_dynamicsnav/">DomDynamicsNAV</a> library, which makes recording and playback of Dynamics NAV web client tests straightforward. <a href="https://www.inflectra.com/Support/KnowledgeBase/KB349.aspx">This post</a> will teach you the basics of recording reliable tests for these solutions, as well as methods for troubleshooting test playback. We'll use Dynamics 365 Business Central as the system under test.</p>
 <h2 id="start-recording-a-new-test">Start Recording a New Test<a class="headerlink" href="#start-recording-a-new-test" title="Permanent link">&para;</a></h2>
-<p>First you need to create a new Basic test and start recording session. Choose Dynamics NAV from the list of applications:</p>
+<p>First, you need to create a new Basic test and start a recording session. Choose Dynamics NAV from the list of applications:</p>
 <p><img alt="Application Chooser Dialog" src="../img/dynamicsnavappchooser.png" /></p>
-<p>Then press <code>Select</code> button to start recording. When recording is completed you will see that Rapise automatically attached necessary libraries in the code of <code>Main.js</code> file:</p>
+<p>Then, press the <code>Select</code> button to start recording. When recording is complete, you will see that Rapise automatically attached the necessary libraries in the <code>Main.js</code> file:</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;UIAutomation&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DynamicsNAV&quot;</span><span class="p">];</span>
 </code></pre></div>
 <ul>
 <li>
-<p><strong>Microsoft UI Automation</strong> is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by means other than standard input. UI Automation also allows automated test scripts to interact with the UI. </p>
+<p><strong>Microsoft UI Automation</strong> is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by other means than standard input. UI Automation also allows automated test scripts to interact with the UI. </p>
 </li>
 <li>
-<p><strong>DynamicsNAV</strong> library supports set of controls specific to Microsoft Dynamics NAV application.</p>
+<p>The <strong>DynamicsNAV</strong> library supports a set of controls specific to the Microsoft Dynamics NAV application.</p>
 </li>
 </ul>
 <h2 id="automatic-adjustment-of-window-title-object-property">Automatic Adjustment of <code>Window Title</code> Object Property<a class="headerlink" href="#automatic-adjustment-of-window-title-object-property" title="Permanent link">&para;</a></h2>
-<p>Main window title of Dynamics NAV is dynamic by nature.</p>
+<p>The main window title of Dynamics NAV is dynamic by nature.</p>
 <p><img alt="DynamicsNAV Main Window Title Example" src="../img/dynamicsnavtitle1.png" /></p>
-<p>It may contain not only application name but also name of currently active page or information about currently opened record. So it can be different at the time of test recording and test playback. To cope with this problem Rapise automatically replaces actual window title with a regular expression. You can see it in the object tree and properties of captured objects.</p>
+<p>It may contain not only the application name but also the name of the currently active page or information about the currently opened record. Thus, it can be different at the time of test recording and playback. To cope with this problem, Rapise automatically replaces the actual window title with a regular expression. You can see this in the object tree and properties of captured objects.</p>
 <p><img alt="Object Properties" src="../img/dynamicsnavobjectproperties.png" /></p>
 <p>Here it is:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="nl">regex:</span><span class="p">.</span><span class="o">*</span><span class="n">Microsoft</span><span class="w"> </span><span class="n">Dynamics</span><span class="w"> </span><span class="n">NAV</span>
 </code></pre></div></td></tr></table></div>
 
-<p>Also Rapise adjusts <code>Record Title</code> in test settings to the same regular expression so you do not need to choose the Dynamics NAV main window during subsequent recording sessions.</p>
+<p>Rapise also adjusts the <code>Record Title</code> in test settings to the same regular expression, so you do not need to choose the Dynamics NAV main window during subsequent recording sessions.</p>
 <p><img alt="Test Settings" src="../img/dynamicsnavtestsettings.png" /></p>
 <h3 id="titles-of-child-windows">Titles of Child Windows<a class="headerlink" href="#titles-of-child-windows" title="Permanent link">&para;</a></h3>
-<p>Child windows of Dynamics NAV also may have dynamic titles.</p>
+<p>Child windows of Dynamics NAV may also have dynamic titles.</p>
 <p><img alt="DynamicsNAV Window Title Example" src="../img/dynamicsnavtitle2.png" /></p>
-<p>Rapise tries to generate a regular expression for such titles as well. If it does not do so - write the expression yourself. But the good news is you need to do this for one object only in every such window. For further learned objects Rapise will change the <code>window title</code> property automatically. In other words when Rapise learns a new object and it's <code>window title</code> is matched by a regular expression of a previously learned object then the title property is automatically replaced by this regular expression.</p>
+<p>Rapise tries to generate a regular expression for such titles as well. If it does not, write the expression yourself. But the good news is that you only need to do this for one object in each such window. For subsequently learned objects, Rapise will automatically change the <code>window title</code> property. In other words, when Rapise learns a new object and its <code>window title</code> is matched by a regular expression of a previously learned object, the title property is automatically replaced by this regular expression.</p>
 <h2 id="how-to-launch-dynamics-nav-client">How to Launch Dynamics NAV Client<a class="headerlink" href="#how-to-launch-dynamics-nav-client" title="Permanent link">&para;</a></h2>
-<p>If in your test you want to check that Dynamics NAV application is installed and running place this function into <code>User.js</code>:</p>
+<p>If in your test you want to check that the Dynamics NAV application is installed and running, place this function into <code>User.js</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">DynamicsNAVLaunch</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">_NavIsRunning</span><span class="p">()</span>
@@ -11620,18 +11644,18 @@
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>You can now use this function in RVL</p>
+<p>You can now use this function in RVL:</p>
 <p><img alt="launch nav rvl" src="../img/dynamicsnavlaunchrvl.png" /></p>
 <p>and in JavaScript:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">DynamicsNAVLaunch</span><span class="p">();</span>
 </code></pre></div>
 <h2 id="recording-actions-and-learning-objects">Recording Actions and Learning Objects<a class="headerlink" href="#recording-actions-and-learning-objects" title="Permanent link">&para;</a></h2>
-<p>During recording while you interact with Dynamics NAV controls Rapise captures actions and displays them in the recording dialog.</p>
+<p>During recording, while you interact with Dynamics NAV controls, Rapise captures actions and displays them in the recording dialog.</p>
 <p><img alt="Recording Dialog" src="../img/dynamicsnavrecordingdialog.png" /></p>
-<p>After this recording session corresponding UI area looks as follows:</p>
+<p>After this recording session, the corresponding UI area looks as follows:</p>
 <p><img alt="Create New Customer" src="../img/dynamicsnavcreatenewcustomer.png" /></p>
-<p>When recording is finished Rapise automatically generates the test.</p>
-<p>In <a href="/RVL/Overview/">Rapise Visual Language(RVL)</a> it looks like</p>
+<p>When recording is finished, Rapise automatically generates the test.</p>
+<p>In <a href="../../RVL/Overview/">Rapise Visual Language (RVL)</a>, it looks like:</p>
 <p><img alt="test rvl" src="../img/dynamicsnavtestrvl.png" /></p>
 <p>In JavaScript:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">()</span>
@@ -11644,27 +11668,27 @@
 <span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;Address&#39;</span><span class="p">).</span><span class="nx">DoSetText</span><span class="p">(</span><span class="s2">&quot;1200 Market St&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>If Rapise does not capture any interaction or captures it wrongly then try to <a href="../object_learning/">learn</a> the object. In this case Rapise will add it to the object tree but will not capture the action and you'll add the code to the test manually later. To learn an object during recording session place mouse cursor over it and press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intersecting mouse and keyboard and attempting to record interactions you do. <code>Pause/Resume</code> button is located at the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
+<p>If Rapise does not capture any interaction or captures it incorrectly, try to <a href="../object_learning/">learn</a> the object. In this case, Rapise will add it to the object tree but will not capture the action, and you'll add the code to the test manually later. To learn an object during a recording session, place your mouse cursor over it and press the <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> shortcut. It makes sense to pause recording before learning objects. This will prevent Rapise from intercepting mouse and keyboard input and attempting to record your interactions. The <code>Pause/Resume</code> button is located on the right side of the <a href="../recording_activity_dialog/">Recording Activity dialog</a>.</p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
 <h2 id="text-box">Text Box<a class="headerlink" href="#text-box" title="Permanent link">&para;</a></h2>
-<p>To allow Rapise to capture the entered text interact with a text box in two steps:</p>
+<p>To allow Rapise to capture the entered text, interact with a text box in two steps:</p>
 <ol>
-<li>Click into the edit box</li>
-<li>Type text using keyboard</li>
+<li>Click into the edit box.</li>
+<li>Type text using the keyboard.</li>
 </ol>
 <h2 id="combobox">ComboBox<a class="headerlink" href="#combobox" title="Permanent link">&para;</a></h2>
-<p>Dynamics NAV combo box consists of three elements:</p>
+<p>A Dynamics NAV combo box consists of three elements:</p>
 <ul>
-<li>edit box,</li>
-<li>open button</li>
+<li>an edit box,</li>
+<li>an open button,</li>
 <li>and a dropdown table.</li>
 </ul>
 <p><img alt="Combo Box" src="../img/dynamicsnavcombobox.png" /></p>
-<p>For reliable recording of combo box interactions follow these steps:</p>
+<p>For reliable recording of combo box interactions, follow these steps:</p>
 <ul>
-<li>click on the edit box,</li>
-<li>click on the open button,</li>
-<li>click on a cell in the table.</li>
+<li>Click on the edit box.</li>
+<li>Click on the open button.</li>
+<li>Click on a cell in the table.</li>
 </ul>
 <p>Rapise will record this as:</p>
 <p><strong>RVL</strong></p>
@@ -11678,14 +11702,14 @@
 <span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;City&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
-<p>Rapise has complete support for Dynamics NAV grids/tables. It recognizes Dynamics NAV grids as <a href="/Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> object. Rapise can record user clicks on cells and also provides API to get the number of rows, columns, get column name by index.</p>
-<p>When you click on a cell in a table Rapise records column name and value in the cell. The generated click step looks like:</p>
+<p>Rapise offers complete support for Dynamics NAV grids/tables. It recognizes Dynamics NAV grids as <a href="../../Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> objects. Rapise can record user clicks on cells and also provides an API to get the number of rows and columns, and to get column names by index.</p>
+<p>When you click on a cell in a table, Rapise records the column name and value in the cell. The generated click step looks like:</p>
 <p><strong>RVL</strong></p>
 <p><img alt="dynamicsnavgridclickrvl" src="../img/dynamicsnavgridclickrvl.png" /></p>
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">).</span><span class="nx">DoClickCell</span><span class="p">(</span><span class="s2">&quot;Gmunden&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;City&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>Rapise can click cells based on column name and value as well as using column and row indexes. Also Rapise can read column names, column count and row count. Check  <a href="/Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> for more details.</p>
+<p>Rapise can click cells based on column name and value, as well as using column and row indexes. Rapise can also read column names, column count, and row count. Check <a href="../../Libraries/DynamicsNAVTable/">DynamicsNAVTable</a> for more details.</p>
 <p>Here is an example of interacting with a grid.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">grid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">SeS</span><span class="p">(</span><span class="s1">&#39;DataGridView&#39;</span><span class="p">);</span>
 
@@ -11712,10 +11736,10 @@
 <span class="w">    </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="nx">colIndex</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="dynamics-nav-cook-book">Dynamics NAV Cook Book<a class="headerlink" href="#dynamics-nav-cook-book" title="Permanent link">&para;</a></h2>
+<h2 id="dynamics-nav-cookbook">Dynamics NAV Cookbook<a class="headerlink" href="#dynamics-nav-cookbook" title="Permanent link">&para;</a></h2>
 <h2 id="maximizeminimizerestore-window">Maximize/Minimize/Restore Window<a class="headerlink" href="#maximizeminimizerestore-window" title="Permanent link">&para;</a></h2>
-<p>You can maximize a window using any object inside it as a starting point. In the examples below we will use the object with id <code>ToolBar</code>.</p>
-<p>First place the following code into your <code>User.js</code>:</p>
+<p>You can maximize a window using any object inside it as a starting point. In the examples below, we will use the object with ID <code>ToolBar</code>.</p>
+<p>First, place the following code into your <code>User.js</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MaximizeWindow</span><span class="p">(</span><span class="cm">/**objectId*/</span><span class="w"> </span><span class="nx">objectId</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Maximized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
@@ -11731,8 +11755,7 @@
 <span class="w">    </span><span class="nx">SeS</span><span class="p">(</span><span class="nx">objectId</span><span class="p">).</span><span class="nx">getDesktopWindow</span><span class="p">().</span><span class="nx">Iconic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Now you can use these functions in RVL and JavaScript.</p>
-<p><strong>RVL</strong></p>
+<p>Now you can use these functions in RVL:</p>
 <p><img alt="dynamicsnavmaximizervl" src="../img/dynamicsnavmaximizervl.png" /></p>
 <p><strong>JavaScript</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">MaximizeWindow</span><span class="p">(</span><span class="s2">&quot;ToolBar&quot;</span><span class="p">);</span>
@@ -11740,7 +11763,7 @@
 <span class="nx">MinimizeWindow</span><span class="p">(</span><span class="s2">&quot;ToolBar&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="scroll-to-a-specific-row-of-a-grid">Scroll to a Specific Row of a Grid<a class="headerlink" href="#scroll-to-a-specific-row-of-a-grid" title="Permanent link">&para;</a></h2>
-<p>Generally Dynamics NAV grids do not allow accessing cells which are not currently visible on screen. Using scrolling it is possible to make a specific row/column of a grid visible. If you perform <a href="/Libraries/DynamicsNAVTable/#DoClickCell">DoClickCell</a> action Rapise will automatically ensure that the cell is visible on screen. There is also explicit scroll action <a href="/Libraries/DynamicsNAVTable/#DoScrollTo">DoScrollTo</a>.</p>
+<p>Generally, Dynamics NAV grids do not allow accessing cells that are not currently visible on screen. Using scrolling, it is possible to make a specific row/column of a grid visible. If you perform a <a href="../../Libraries/DynamicsNAVTable/#DoClickCell">DoClickCell</a> action, Rapise will automatically ensure that the cell is visible on screen. There is also an explicit scroll action: <a href="../../Libraries/DynamicsNAVTable/#DoScrollTo">DoScrollTo</a>.</p>
 <p><strong>RVL</strong></p>
 <p><img alt="dynamicsnavgridscrollrvl" src="../img/dynamicsnavgridscrollrvl.png" /></p>
 <p><strong>JavaScript</strong></p>

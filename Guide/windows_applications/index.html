@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11086,6 +11098,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11352,7 +11376,7 @@
                 <h1 id="windows-applications">Windows Applications<a class="headerlink" href="#windows-applications" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Rapise provides comprehensive support for testing Microsoft Windows GUI applications, including applications written using <strong>Win32, MFC, ATL</strong>, Windows Forms, Visual Basic 6, Microsoft <strong>.NET</strong>, <strong>ActiveX</strong>, and Windows Presentation Framework (<strong>WPF</strong>).</p>
-<p>Specifically, Rapise has support for the following technologies used tobuild Windows applications:</p>
+<p>Specifically, Rapise supports the following technologies used to build Windows applications:</p>
 <ul>
 <li><strong>Win32 Applications</strong><ul>
 <li>Microsoft Foundation Classes (MFC)</li>
@@ -11389,26 +11413,24 @@
 <h2 id="choosing-the-right-windows-library">Choosing the Right Windows Library<a class="headerlink" href="#choosing-the-right-windows-library" title="Permanent link">&para;</a></h2>
 <p>Since applications are often built using a mixture of different Windows technologies and component frameworks, we recommend that you use the following approach when testing Windows desktop applications with Rapise:</p>
 <ol>
-<li><strong>First try recording using the "Auto" option</strong>, this will let Rapise inspect the application and use the most appropriate libraries. Usually Rapise finds the correct libraries using its auto-detection, but sometimes an application is unusual and the auto-detection fails. If auto-detection is not reliable for your application, move on to step 2.</li>
-<li>Select the "<strong>UIAutomation Object"</strong> Spy and try to inspect the application. If the Spy shows the real content of the application (i.e.
-you see object names and IDs) then it is worth trying to record a test with the corresponding library called "<strong>UIAutomation</strong>" - <a href="../select_an_application_to_record_dialog/">using the record application dialog box</a>. This library is best for modern Windows applications.</li>
-<li>If the recording is not picked up or does not play back correctly then the next step is to try recording with the "<strong>Generic</strong>" library. This is designed for older Windows Win32 applications. There is also a Spy tool for this library called the <strong>"Accessible Object"</strong> Spy.</li>
-<li>If you have <strong>third-party components</strong> from Infragistics, Telerik, DevExpress, ComponentOne, SyncFusion or FarPoint, you may also need to select those libraries in addition to <strong>Generic</strong>.</li>
-<li>If the recording is not sufficient then the last step is to try and record with the "<strong>Advanced Accessibility</strong>" library. This library
-contains definitions of accessible controls at a very basic level. It is not very sophisticated, but it is often sufficient for many cases and works across a wide range of applications.</li>
-<li>If neither of options below satisfy then it may be worth to try low level recording (<a href="https://www.inflectra.com/Support/KnowledgeBase/KB114.aspx">https://www.inflectra.com/Support/KnowledgeBase/KB114.aspx</a>).
+<li><strong>First, try recording using the "Auto" option.</strong> This will allow Rapise to inspect the application and use the most appropriate libraries. Rapise usually identifies the correct libraries using its auto-detection, but sometimes an application is unique, and auto-detection may fail. If auto-detection is not reliable for your application, move on to step 2.</li>
+<li>Select the "<strong>UIAutomation Object"</strong> Spy and try to inspect the application. If the Spy shows the real content of the application (i.e., you see object names and IDs), then it is worth trying to record a test with the corresponding library called "<strong>UIAutomation</strong>" <a href="../select_an_application_to_record_dialog/">using the record application dialog box</a>. This library is ideal for modern Windows applications.</li>
+<li>If the recording is not picked up or does not play back correctly, the next step is to try recording with the "<strong>Generic</strong>" library. This is designed for older Windows Win32 applications. There is also a Spy tool for this library called the <strong>"Accessible Object"</strong> Spy.</li>
+<li>If you have <strong>third-party components</strong> from Infragistics, Telerik, DevExpress, ComponentOne, SyncFusion, or FarPoint, you may also need to select those libraries in addition to <strong>Generic</strong>.</li>
+<li>If the recording is not sufficient, the last step is to try to record with the "<strong>Advanced Accessibility</strong>" library. This library contains definitions of accessible controls at a very basic level. It is not very sophisticated, but it is often sufficient for many cases and works across a wide range of applications.</li>
+<li>If none of the options above are satisfactory, it may be worth trying low-level recording (<a href="https://www.inflectra.com/Support/KnowledgeBase/KB114.aspx">https://www.inflectra.com/Support/KnowledgeBase/KB114.aspx</a>).
   </li>
 </ol>
 <h2 id="sample-applications">Sample Applications<a class="headerlink" href="#sample-applications" title="Permanent link">&para;</a></h2>
-<p>In the <a href="../sample_tests/">Samples index</a> of this manual we provide a full list of all the samples included with Rapise, however for Windows applications there are a couple of key ones that are worth exploring:</p>
+<p>In the <a href="../sample_tests/">Samples index</a> of this manual, we provide a full list of all the samples included with Rapise. However, for Windows applications, there are a couple of key ones worth exploring:</p>
 <p><strong><em>a) Two Dialogs</em></strong></p>
 <p>This is a simple Win32 MFC application that uses the <strong>Generic</strong> library and lets you try some basic testing scenarios.</p>
 <p><img alt="twodialogsempty" src="../img/windows_applications1.png" /></p>
 <p><strong><em>b) Sample ATM</em></strong></p>
-<p>This is a more robust Win32 MFC application that is based on a banking ATM. You should use the <strong>Generic</strong> library with this application:</p>
+<p>This is a more robust Win32 MFC application that simulates a banking ATM. You should use the <strong>Generic</strong> library with this application:</p>
 <p><img alt="sample_atm_desktop" src="../img/windows_applications2.png" /></p>
 <p><strong><em>c) WPF Sample Application</em></strong></p>
-<p>This application is a good test of the <strong>UIAutomation</strong> library and is a simple test application with all of the different types of control available for testing:</p>
+<p>This application is a good test of the <strong>UIAutomation</strong> library and serves as a simple test application demonstrating all the different types of controls available for testing:</p>
 <p><img alt="sample_app_wpf" src="../img/windows_applications3.png" /></p>
                 
               

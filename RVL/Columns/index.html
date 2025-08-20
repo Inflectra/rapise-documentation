@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../../Guide/object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11098,6 +11110,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11376,7 +11400,7 @@
                 
                 
                 <h1 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link">&para;</a></h1>
-<p>RVL script is a spreadsheet containing set of 7 columns in fixed order:</p>
+<p>An RVL script is a spreadsheet containing a set of 7 columns in a fixed order:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Columns" src="../img/Columns.png" /></p>
 </div>
@@ -11518,59 +11542,59 @@
 <h2 id="default-columns">Default Columns<a class="headerlink" href="#default-columns" title="Permanent link">&para;</a></h2>
 <details class="abstract">
 <summary>1 - Flow</summary>
-<p>This column is dedicated to specifying structural information such as blocks, branches (If-Else), loops.</p>
-<p>Also it contains information about single row and multi row comments. Possible values are limited by the list:</p>
+<p>This column is for specifying structural information, such as blocks, branches (If-Else), and loops.</p>
+<p>It also contains information about single-row and multi-row comments. Possible values are limited to the following:</p>
 <ul>
-<li><code>\#</code> or <code>//</code> - single row  comment</li>
-<li><code>/*</code> - begin of multi row comment (comment is valid up to line starting with <code>*/</code>)</li>
-<li><code>*/</code> - end of multi row comment started earlier from <code>/*</code></li>
-<li><code>If</code> - conditional branch. Row type must be <code>Condition</code>. The row may be followed with one or more <code>ElseIf</code> statements, zero or one <code>Else</code> statement and then should end with <code>End</code>.</li>
-<li><code>?</code> - <a href="/RVL/Actions/#conditional-actions">conditional action</a>.</li>
+<li><code>\#</code> or <code>//</code> - A single-row comment.</li>
+<li><code>/*</code> - The beginning of a multi-row comment (the comment is valid up to a line starting with <code>*/</code>).</li>
+<li><code>*/</code> - The end of a multi-row comment that was started with <code>/*</code>.</li>
+<li><code>If</code> - A conditional branch. The row type must be <code>Condition</code>. The row may be followed by one or more <code>ElseIf</code> statements, zero or one <code>Else</code> statement, and must then end with <code>End</code>.</li>
+<li><code>?</code> - A <a href="../Actions/#conditional-actions">conditional action</a>.</li>
 </ul>
 </details>
 <details class="abstract">
 <summary>2 - Type</summary>
-<p>Type of operation specified in this row. One of: </p>
+<p>The type of operation specified in this row. One of the following: </p>
 <ul>
-<li><code>Action</code> - row defines an action. Action is a call for operation for one of the objects. Object is defined in the next column. See <a href="../Actions/">Actions</a>.</li>
-<li><code>Param</code> - signals that this row contains action parameter or condition parameter defined in last 3 columns (<code>ParamName</code>, <code>ParamType</code> and <code>ParamValue</code>).</li>
-<li><code>Output</code> - this type of row must go after last Param for an action and defines a variable that should accept output value returned from the call to the Action.</li>
-<li><code>Variable</code> - this row defines or assigns value to a local or global variable. See <a href="../Variables/">Variables</a>.</li>
-<li><code>Assert</code> - first row for the Assertion. See <a href="../Assertions/">Assertions</a>.</li>
+<li><code>Action</code> - This row defines an action. An action is an operation called on one of the objects. The object is defined in the next column. See <a href="../Actions/">Actions</a>.</li>
+<li><code>Param</code> - Indicates that this row contains an action or condition parameter defined in the last three columns (<code>ParamName</code>, <code>ParamType</code>, and <code>ParamValue</code>).</li>
+<li><code>Output</code> - This type of row must follow the last <code>Param</code> for an action and defines a variable that accepts the output value returned from the action call.</li>
+<li><code>Variable</code> - This row defines or assigns a value to a local or global variable. See <a href="../Variables/">Variables</a>.</li>
+<li><code>Assert</code> - The first row of an Assertion. See <a href="../Assertions/">Assertions</a>.</li>
 <li><code>Condition</code></li>
 </ul>
 </details>
 <details class="abstract">
 <summary>3 - Object</summary>
-<p>Id of the object to be used for an action. Rapise provides set of predefined global objects and objects recorded/learned from the AUT.</p>
+<p>The ID of the object to be used for an action. Rapise provides a set of predefined global objects and objects recorded or learned from the AUT.</p>
 </details>
 <details class="abstract">
 <summary>4 - Action</summary>
-<p>One of the actions applicable to the object selected in the previous column: <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code> etc.</p>
+<p>One of the actions applicable to the object selected in the previous column: <code>DoAction</code>, <code>DoClick</code>, <code>GetText</code>, etc.</p>
 </details>
 <details class="abstract">
 <summary>5 - ParamName</summary>
-<p>Name of a parameter to the action selected in the previous column. See <a href="../Params/">Params</a> for more details.</p>
+<p>The name of a parameter for the action selected in the previous column. See <a href="../Params/">Params</a> for more details.</p>
 </details>
 <details class="abstract">
 <summary>6 - ParamType</summary>
-<p>The type of a parameter determines valid input for the next <code>ParamValue</code> column.</p>
+<p>The type of a parameter determines the valid input for the <code>ParamValue</code> column.</p>
 <ul>
-<li><code>bool</code> - <em>ParamValue</em> should be <code>true</code> or <code>false</code>,</li>
-<li><code>string</code> - <em>ParamValue</em> is a text string</li>
-<li><code>number</code> - <em>ParamValue</em> is an integer or floating point number,</li>
-<li><code>variable</code> - <em>ParamValue</em> is a variable name. Actual value is read from the variable.</li>
-<li><em><code>Map Name</code></em> - <em>ParamValue</em> is a column name from the given <code>Map</code>. Usually this feature is used for data driven testing.</li>
+<li><code>bool</code> - <code>ParamValue</code> should be <code>true</code> or <code>false</code>.</li>
+<li><code>string</code> - <code>ParamValue</code> is a text string.</li>
+<li><code>number</code> - <code>ParamValue</code> is an integer or floating-point number.</li>
+<li><code>variable</code> - <code>ParamValue</code> is a variable name. The actual value is read from the variable.</li>
+<li><em><code>Map Name</code></em> - <code>ParamValue</code> is a column name from the given <code>Map</code>. This feature is usually used for data-driven testing.</li>
 </ul>
 </details>
 <details class="abstract">
 <summary>7 - ParamValue</summary>
-<p>This columns defines actual values passed to actions. Depends on the <em>ParamType</em>.</p>
+<p>This column defines the actual values passed to actions. Its value depends on the <code>ParamType</code>.</p>
 </details>
-<p>In addition to these columns there may be any number of other columns used for storing supplementary data, comments, calculations, thoughts etc. Additional columns may be utilized for script itself (i.e. contain expected values or reference data).</p>
+<p>In addition to these columns, you can have any number of other columns for storing supplementary data, comments, calculations, thoughts, etc. These additional columns can be used by the script itself (e.g., to contain expected values or reference data).</p>
 <h2 id="adding-custom-columns">Adding Custom Columns<a class="headerlink" href="#adding-custom-columns" title="Permanent link">&para;</a></h2>
-<p>By default RVL always displays column <code>H</code>. It is sometimes useful (to store temp value, add a note etc).</p>
-<p>One may show more columns. To do this open the file (i.e. <code>Main.rvl.xlsx</code>) in the spreadsheet editor or Excel and define some values in columns <code>I</code>, <code>J</code> etc respectively:</p>
+<p>By default, RVL always displays column <code>H</code>. This is sometimes useful (e.g., to store a temporary value or add a note).</p>
+<p>You can show more columns. To do this, open the file (e.g., <code>Main.rvl.xlsx</code>) in a spreadsheet editor like Excel and define some values in columns <code>I</code>, <code>J</code>, etc.:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Excel Columns" src="../img/CustomColumnsExcel.png" /></p>
 </div>
@@ -11636,7 +11660,7 @@
 </table>
 </div>
 </div>
-<p>Now if you re-open this document in RVL these columns will also be displayed:</p>
+<p>Now, if you reopen this document in RVL, these columns will also be displayed:</p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Excel Columns" src="../img/CustomColumnsRVL.png" /></p>
 </div>
@@ -11688,43 +11712,47 @@
 </table>
 </div>
 </div>
-<p>The usage of this columns is up to you. You may use them just for information or make them 'live' by assigning custom actions as will be described in the next section.</p>
+<p>The usage of these columns is up to you. You can use them for informational purposes or make them 'live' by assigning custom actions, as described in the next section.</p>
 <h2 id="custom-column-actions">Custom Column Actions<a class="headerlink" href="#custom-column-actions" title="Permanent link">&para;</a></h2>
-<p>RVL is flexible and one may use more columns to implement custom script logic.</p>
-<p>The script occupies first 7 columns of the spreadsheet (<strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong>, <strong>E</strong>, <strong>F</strong>, <strong>G</strong>).</p>
-<p>By default the script also displays the column <strong>H</strong>. It may also display as many additional columns as needed (see previous <a href="#adding-custom-columns">section</a>). It may have some value but has no side effects, i.e.:</p>
+<p>RVL is flexible, and you can use more columns to implement custom script logic.</p>
+<p>The script occupies the first seven columns of the spreadsheet (<strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong>, <strong>E</strong>, <strong>F</strong>, and <strong>G</strong>).</p>
+<p>By default, the script also displays column <strong>H</strong>. It can also display as many additional columns as needed (see the previous <a href="#adding-custom-columns">section</a>). These columns can hold values but have no side effects by default. For example, they can be used to:</p>
 <ul>
-<li>Provide links (to requirements, documentation)</li>
-<li>Mark Status (review) and notes.</li>
+<li>Provide links (to requirements, documentation).</li>
+<li>Mark a status (e.g., for review) and add notes.</li>
 </ul>
-<p>However the script may see this value and use it for own purpose, i.e.:</p>
+<p>However, the script can read these values and use them for its own purposes, e.g., to:</p>
 <ul>
-<li>Set report attribute</li>
-<li>Assign global variable</li>
-<li>Do Screenshot</li>
-<li>Do custom action.</li>
+<li>Set a report attribute.</li>
+<li>Assign a global variable.</li>
+<li>Do a screenshot.</li>
+<li>Do a custom action.</li>
 </ul>
-<p>You may have one or more custom columns defined in the script to achieve necessary goals. This will require you to override <code>OnRVLScriptStep</code> function as described below.</p>
+<p>You can have one or more custom columns defined in the script to achieve specific goals. This will require you to override the <code>OnRVLScriptStep</code> function as described below.</p>
 <h2 id="onrvlscriptstep">OnRVLScriptStep<a class="headerlink" href="#onrvlscriptstep" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The information below requires some JavaScript knowledge. In most cases all you need is to copy relevant snippet from the documentation or KB to achieve desired behavior</p>
+<p>The information below requires some JavaScript knowledge. In most cases, all you need to do is copy the relevant snippet from the documentation or Knowledge Base (KB) to achieve the desired behavior.</p>
 </div>
-<p>Custom column actions are processed in the <code>OnRVLScriptStep</code> function that should be defined in the <code>User.js</code> file or in the <a href="../../Guide/custom_libraries/">custom library</a>.</p>
+<p>Custom column actions are processed in the <code>OnRVLScriptStep</code> function, which should be defined in the <code>User.js</code> file or in a <a href="../../Guide/custom_libraries/">custom library</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">OnRVLScriptStep</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="nx">place</span><span class="p">,</span><span class="w"> </span><span class="nx">status</span><span class="p">,</span><span class="w"> </span><span class="nx">ctx</span><span class="p">,</span><span class="w"> </span><span class="nx">stackItem</span><span class="p">)</span>
 </code></pre></div>
-<p>The function is mostly intended for internal use. Here you need information about the following parameters:</p>
+<p>The function is mostly intended for internal use. You will need information about the following parameters:</p>
 <ul>
-<li><code>item</code> - current RVL action item. We need to use the following property of this item:</li>
-<li><code>item.Startrow</code> - First RVL row for given item (in RVL each statement takes one or more rows).<ul>
-<li><code>item.Startrow.SheetRowIndex</code> - Row index in the current sheet.</li>
-<li><code>item.Startrow.Ext</code> - The structure, containing values for rows <code>H</code>, <code>I</code> and <code>J</code>, i.e.:</li>
-<li><code>item.Startrow.Ext.H</code> - Cell <code>H</code> for the current action</li>
-<li><code>item.Startrow.Ext.I</code> - Cell <code>I</code> for the current action</li>
-<li><code>item.Startrow.Ext.J</code> - Cell <code>J</code> for the current action</li>
+<li><code>item</code> - The current RVL action item. You need to use the following properties of this item:<ul>
+<li><code>item.Startrow</code> - The first RVL row for a given item (in RVL, each statement takes one or more rows).<ul>
+<li><code>item.Startrow.SheetRowIndex</code> - The row index in the current sheet.</li>
+<li><code>item.Startrow.Ext</code> - A structure containing values for columns <code>H</code>, <code>I</code>, <code>J</code>, etc. For example:<ul>
+<li><code>item.Startrow.Ext.H</code> - Cell <code>H</code> for the current action.</li>
+<li><code>item.Startrow.Ext.I</code> - Cell <code>I</code> for the current action.</li>
+<li><code>item.Startrow.Ext.J</code> - Cell <code>J</code> for the current action.</li>
 </ul>
 </li>
-<li><code>place</code> - One of <code>"before"</code> - callback just before executing row action, <code>"after"</code> - callback called after action has just been done.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>place</code> - One of <code>"before"</code> (a callback executed just before the row's action) or <code>"after"</code> (a callback executed just after the action is complete).</li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>

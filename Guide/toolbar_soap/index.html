@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11088,6 +11100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11355,32 +11379,32 @@
 <p><img alt="toolbar-soap" src="../img/toolbar_soap1.png" /></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
 <!-- /* cSpell:disable */ -->
-<p>The <strong>SOAP</strong> tab is for use with editing <a href="../soap_web_services/">SOAP web service</a> definition files (also known as **W**eb **S**ervice **D**efinition **L**anguage (WSDL) files).</p>
+<p>The <strong>SOAP</strong> tab is used for editing <a href="../soap_web_services/">SOAP web service</a> definition files, also known as **W**eb **S**ervice **D**efinition **L**anguage (WSDL) files.</p>
 <!-- /* cSpell:enable */ -->
 <h2 id="how-to-open">How to Open<a class="headerlink" href="#how-to-open" title="Permanent link">&para;</a></h2>
-<p>The <strong>SOAP</strong> tab is available anytime you have a SOAP definition file (<code>.soap</code>) file visible in the <a href="../content_view/">Content View</a>.</p>
-<p>You may also open it from the <code>View &gt; SOAP</code> menu items. This will open 1<sup>st</sup> <code>.soap</code> file in the project (if any). Otherwise it does nothing.</p>
-<p>If there is no <code>.soap</code> file yet in the project, you should use the <a href="../dialog_add_web_service/">Add Web Service Dialog</a>.</p>
+<p>The <strong>SOAP</strong> tab is available whenever a SOAP definition file (<code>.soap</code>) is visible in the <a href="../content_view/">Content View</a>.</p>
+<p>You can also open it from the <code>View &gt; SOAP</code> menu. This will open the first <code>.soap</code> file in the project (if any). Otherwise, it does nothing.</p>
+<p>If there is no <code>.soap</code> file in the project yet, use the <a href="../dialog_add_web_service/">Add Web Service Dialog</a>.</p>
 <h2 id="toolbar-controls">Toolbar Controls<a class="headerlink" href="#toolbar-controls" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><code>Save</code>  - Saves the current set of SOAP operations to the <code>.soap</code> file being edited.</p>
+<p><code>Save</code> - Saves the current set of SOAP operations to the <code>.soap</code> file being edited.</p>
 <p><img alt="Save" src="../img/toolbar_soap_save.png" /></p>
 </li>
 <li>
-<p><code>Endpoint</code> The Endpoint section lets you enter in the URL to the SOAP Web Service Definition Language (WSDL) file that contains a definition of all the SOAP operations exposed by the web service.</p>
-<p>You enter in the URL in the top box and then click the <code>Get WSDL</code> button.</p>
+<p><code>Endpoint</code> - The Endpoint field allows you to enter the URL for the SOAP WSDL file that defines all SOAP operations exposed by the web service.</p>
+<p>Enter the URL in the top box, then click the <code>Get WSDL</code> button.</p>
 <p><img alt="toolbar-soap-endpoint" src="../img/toolbar_soap_endpoint.png" /></p>
 </li>
 <li>
-<p><code>Get WSDL</code> - Update service definition based on the current <code>Endpoint</code> value. </p>
+<p><code>Get WSDL</code> - Updates the service definition based on the current <code>Endpoint</code> value. </p>
 </li>
 <li>
-<p><code>Custom Endpoint</code> - you can click on this button to toggle the display of the custom endpoint text box. This lets you override the default URL returned by the WSDL file and can be useful if you want to use the WSDL from one instance and invoke the operations against a different instance.</p>
+<p><code>Custom Endpoint</code> - Click this button to toggle the display of the custom endpoint text box. This allows you to override the default URL specified by the WSDL file and is useful for scenarios where you want to use the WSDL from one instance but invoke operations against a different instance.</p>
 <p><img alt="toolbar-soap-custom-endpoint" src="../img/toolbar_soap_custom_endpoint.png" /></p>
 </li>
 <li>
-<p><code>Add Credentials</code> - Allows you to add an HTTP basic authentication credential (username and password) to the SOAP operation. This is useful for SOAP operations that use HTTP basic authentication.</p>
+<p><code>Add Credentials</code> - Allows you to add HTTP basic authentication credentials (username and password) to the SOAP operation. This is useful for SOAP operations that require HTTP basic authentication.</p>
 <p><img alt="Add Credentials" src="../img/toolbar_soap_add_credentials.png" /></p>
 <p><img alt="Add Network Credentials Dialog" src="../img/tutorial_web_services_rest6.png" /></p>
 </li>

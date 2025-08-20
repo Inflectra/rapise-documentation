@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11129,6 +11141,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11435,39 +11459,39 @@
                 
                 <h1 id="cross-browser-testing">Cross Browser Testing<a class="headerlink" href="#cross-browser-testing" title="Permanent link">&para;</a></h1>
 <h2 id="choosing-the-browser-when-creating-a-test">Choosing the Browser When Creating a Test<a class="headerlink" href="#choosing-the-browser-when-creating-a-test" title="Permanent link">&para;</a></h2>
-<p>When you first create a Rapise test with the <strong>Methodology</strong> set to <strong>Web</strong> you will be asked to choose the initial <a href="../selenium_settings_dialog/">web browser profile</a>:</p>
+<p>When you first create a Rapise test with the <strong>Methodology</strong> set to <strong>Web</strong>, you will be asked to choose the initial <a href="../selenium_settings_dialog/">web browser profile</a>:</p>
 <p><img alt="new_test_browser_profile_select" src="../img/cross_browser_testing1.png" width="466px" /></p>
 <p>You can run your recording in a different browser than the one in which it was recorded.</p>
 <h2 id="selecting-a-new-playback-browser">Selecting a new Playback Browser<a class="headerlink" href="#selecting-a-new-playback-browser" title="Permanent link">&para;</a></h2>
-<p>In the right top corner of Rapise window expand the dropdown with available browser.</p>
+<p>In the top-right corner of the Rapise window, expand the dropdown with available browsers.</p>
 <p><img alt="available browsers" src="../img/cross_browser_testing2.png" width="236px" /></p>
-<p>Change the browser to either one of the <a href="../selenium_webdriver/">Selenium WebDriver</a> based browser profiles, or one of the <a href="../browser_settings/">native browsers</a> such as Firefox, Internet Explorer or Chrome.</p>
-<p>Once you have changed this setting, <a href="../playback/">Playback</a> the script normally and it will playback in the selected browser.</p>
+<p>Change the browser to either one of the <a href="../selenium_webdriver/">Selenium WebDriver</a>-based browser profiles, or one of the <a href="../browser_settings/">native browsers</a> such as Firefox, Internet Explorer, or Chrome.</p>
+<p>Once you have changed this setting, <a href="../playback/">playback</a> the script normally, and the script will play back in the selected browser.</p>
 <p>Changing this setting will effectively set the value of the <code>g_browserLibrary</code> global variable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In Rapise 6.3+ you may define <a href="../selenium_settings_dialog/#local-selenium-profiles">local profiles</a>.</p>
+<p>In Rapise 6.3+, you may define <a href="../selenium_settings_dialog/#local-selenium-profiles">local profiles</a>.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Since Rapise 7.3 it is recommended to use <a href="../selenium_webdriver/">Selenium WebDriver</a> based profiles for all web tests.</p>
+<p>Since Rapise 7.3, it is recommended to use <a href="../selenium_webdriver/">Selenium WebDriver</a>-based profiles for all web tests.</p>
 </div>
 <h2 id="playback-in-multiple-browsers">Playback in Multiple Browsers<a class="headerlink" href="#playback-in-multiple-browsers" title="Permanent link">&para;</a></h2>
 <h3 id="using-framework-parameters">Using Framework Parameters<a class="headerlink" href="#using-framework-parameters" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Rapise 8</p>
-<p>In Rapise 8 and above the recommended way of multi-browser testing is via <a href="../Frameworks/parameters/">framework parameters</a>.</p>
-<p>Check out the KB article: <a href="https://www.inflectra.com/Support/KnowledgeBase/KB750.aspx">Rapise 8.0: how to run test cases on different browsers</a>.</p>
+<p>In Rapise 8 and above, the recommended way of multi-browser testing is via <a href="../Frameworks/parameters/">framework parameters</a>.</p>
+<p>Check out the KB article: <a href="https://www.inflectra.com/Support/KnowledgeBase/KB750.aspx">Rapise 8.0: How to Run Test Cases on Different Browsers</a>.</p>
 </div>
 <h3 id="using-input-data-table">Using Input Data Table<a class="headerlink" href="#using-input-data-table" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Rapise 7</p>
-<p>In Rapise 7 the recommended way of multi-browser testing is via <a href="../spira_dashboard_2/#input-data-table">Input Data Table</a>.</p>
+<p>In Rapise 7, the recommended way of multi-browser testing is via <a href="../spira_dashboard_2/#input-data-table">Input Data Table</a>.</p>
 <p>Check out the webinar: <a href="https://youtu.be/bNoWZjOE3hQ">Parallel Execution of Tests with Rapise &amp; SpiraTest</a>.</p>
 </div>
 <h3 id="using-spiratest-and-test-case-parameters">Using SpiraTest and Test Case Parameters<a class="headerlink" href="#using-spiratest-and-test-case-parameters" title="Permanent link">&para;</a></h3>
 <p><mark>obsolete</mark></p>
-<p>Executing a test in multiple browsers is slightly more complicated. We recommend that you use <strong>SpiraTest Test Sets</strong> where you may define multiple test cases pointing to the same Test with a different <strong>g_browserLibrary</strong> parameter value.</p>
+<p>Executing a test in multiple browsers is slightly more complicated. We recommend that you use <strong>SpiraTest Test Sets</strong>, where you may define multiple test cases pointing to the same Test with a different <strong>g_browserLibrary</strong> parameter value.</p>
 <p>See the <a href="../spiratest_integration/#using-parameterized-test-cases">SpiraTest Integration</a> topic for detailed information.</p>
 <h3 id="changing-browser-with-selectbrowserprofile">Changing Browser with SelectBrowserProfile<a class="headerlink" href="#changing-browser-with-selectbrowserprofile" title="Permanent link">&para;</a></h3>
 <p><mark>obsolete</mark></p>
@@ -11486,22 +11510,22 @@
 <p class="admonition-title">Important</p>
 <p><code>Navigator.Close</code> is required to switch the browser.</p>
 </div>
-<p>In RVL it will look like:</p>
+<p>In RVL, it will look like:</p>
 <p><img alt="selectbrowserprofile" src="../img/cross_browser_testing_selectbrowserprofile.png" /></p>
-<p>Or, the same using the Loop:</p>
+<p>Or, the same using a loop:</p>
 <p><img alt="selectbrowserprofile loop" src="../img/cross_browser_testing_selectbrowserprofile_loop.png" /></p>
 <h3 id="using-doinvoketest">Using DoInvokeTest<a class="headerlink" href="#using-doinvoketest" title="Permanent link">&para;</a></h3>
 <p><mark>obsolete</mark></p>
-<p>To iterate through browsers in Rapise create a new test with <strong>Web</strong> methodology. </p>
-<p>Now add a reference to the Web test you want to run in different browsers. In the <code>Files</code> view right click the test node and choose <code>Add File(s)...</code>. Provide the path to <code>*.sstest</code> file. You will see the reference added to the <code>Files</code> view.</p>
+<p>To iterate through browsers in Rapise, create a new test with <strong>Web</strong> methodology. </p>
+<p>Now, add a reference to the Web test you want to run in different browsers. In the <code>Files</code> view, right-click the test node and choose <code>Add File(s)...</code>. Provide the path to the <code>*.sstest</code> file. You will see the reference added to the <code>Files</code> view.</p>
 <p><img alt="test reference" src="../img/cross_browser_testing_testreference.png" /></p>
-<p>Drag the reference to the editor window. Rapise will generate <code>DoInvokeTest</code> call.</p>
+<p>Drag the reference to the editor window. Rapise will generate a <code>DoInvokeTest</code> call.</p>
 <p><img alt="invoke test" src="../img/cross_browser_testing_dragdroptest.png" /></p>
-<p>To execute a test with a given browser profile you need a pair of commands.</p>
+<p>To execute a test with a given browser profile, you need a pair of commands.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;BROWSER PROFILE&quot;</span><span class="p">);</span>
 <span class="nx">Global</span><span class="p">.</span><span class="nx">DoInvokeTest</span><span class="p">(</span><span class="s1">&#39;PATH TO THE TEST&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>So to run the test in three different browsers we get the following content of the <code>Test.js</code>:</p>
+<p>So, to run the test in three different browsers, we get the following content for <code>Test.js</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Test</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">SelectBrowserProfile</span><span class="p">(</span><span class="s2">&quot;Selenium - Chrome&quot;</span><span class="p">);</span>
@@ -11514,7 +11538,7 @@
 
 <span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">];</span>
 </code></pre></div>
-<p>In RVL it will look like:</p>
+<p>In RVL, it will look like:</p>
 <p><img alt="rvl" src="../img/cross_browser_testing_rvl.png" /></p>
                 
               

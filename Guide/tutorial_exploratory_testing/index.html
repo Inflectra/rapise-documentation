@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1210,6 +1210,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11128,6 +11140,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11435,65 +11459,65 @@
                 
                 <h1 id="tutorial-manual-testing">Tutorial: Manual Testing<a class="headerlink" href="#tutorial-manual-testing" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p><strong>Exploratory manual testing</strong> is used for situations where you have a <strong>new or changing application</strong> and the user interface is still evolving. Traditional manual testing, where you create a test case ahead of time, define the prescriptive test steps and then assign it to the tester does not make sense in such cases. The solution is to perform <strong>exploratory testing</strong>, where you explore using the application at the same time as creating the test script. The created test script can then be published to your test management system (i.e. <a href="../spiratest_integration/">SpiraTest</a>) for future regression testing.</p>
-<p>Rapise can help <strong>accelerate and optimize</strong> exploratory manual testing. Rapise lets you walk through the application, capturing your interactions as you use it, recording screenshots of the objects and screens you interact with. From this, Rapise will create a fully formed test script ready to use.</p>
+<p><strong>Exploratory manual testing</strong> is used for situations where you have a <strong>new or changing application</strong> and the user interface is still evolving. Traditional manual testing, where you create a test case ahead of time, define prescriptive test steps, and then assign them to a tester, is not practical in such cases. The solution is to perform <strong>exploratory testing</strong>, where you explore the application while simultaneously creating the test script. The created test script can then be published to your test management system (i.e., <a href="../spiratest_integration/">SpiraTest</a>) for future regression testing.</p>
+<p>Rapise can help <strong>accelerate and optimize</strong> exploratory manual testing. Rapise lets you walk through the application, capturing your interactions as you use the application, and recording screenshots of the objects and screens you interact with. Based on this, Rapise will create a fully formed test script ready for use.</p>
 <h2 id="step-1-creating-a-new-test">Step 1 - Creating a New Test<a class="headerlink" href="#step-1-creating-a-new-test" title="Permanent link">&para;</a></h2>
-<p>To start manual testing, simply create your test as normal using the <a href="../create_a_new_test/">New Test</a> dialog box and choose <strong>Manual</strong> methodology: </p>
+<p>To start manual testing, simply create your test as normal using the <a href="../create_a_new_test/">New Test</a> dialog box and choose <strong>Manual</strong> methodology:</p>
 <p><img alt="Manual Methodology" src="../img/manual_testing_methodology.png" /></p>
-<p>Then once the test has been created, click on the <code>Tools &gt; Manual Steps</code> menu item and then you will be taken to the <a href="../manual_test_editor/">Manual Editor</a> with the <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a> visible.</p>
+<p>Once the test has been created, click the <code>Tools &gt; Manual Steps</code> menu item to be taken to the <a href="../manual_test_editor/">Manual Editor</a>, with the <a href="../menu_and_toolbars/#manual-toolbar">Manual Toolbar</a> visible.</p>
 <p>The test step list will initially be empty:</p>
 <p><img alt="Manual Steps" src="../img/manual_testing_recording1.png" /></p>
 <h2 id="step-2-recording-some-steps">Step 2 - Recording Some Steps<a class="headerlink" href="#step-2-recording-some-steps" title="Permanent link">&para;</a></h2>
-<p>Now you should open up the application you want to record from. In this example we shall be testing the built-in <strong>Microsoft Paint</strong> application. This is a good candidate for manual testing as a lot of the functionality is hard to test automatically since there is a simple drawing canvas rather than discrete buttons and data elements to test.</p>
-<p>To make sure that we have screenshots recorded, whilst keeping the size of the screenshots reasonable, use the following recording options:</p>
+<p>Now, open the application you want to record. In this example, we will be testing the built-in <strong>Microsoft Paint</strong> application. This is a good candidate for manual testing, as much of its functionality is difficult to test automatically due to its simple drawing canvas, rather than discrete buttons and data elements.</p>
+<p>To ensure that screenshots are recorded, while keeping their size reasonable, use the following recording options:</p>
 <p><img alt="manual_recording_2" src="../img/manual_testing_recording3.png" /></p>
-<p>Now click the <strong>Record Manual</strong> button (or menu <code>Test &gt; Record Manual</code>) and choose MS-Paint from the list of running applications in <a href="../select_an_application_to_record_dialog/">Select Application to Record</a> dialog and then click <strong>'Select'</strong> to start recording.</p>
+<p>Now click the <strong>Record Manual</strong> button (or menu <code>Test &gt; Record Manual</code>) and choose MS Paint from the list of running applications in the <a href="../select_an_application_to_record_dialog/">Select Application to Record</a> dialog, then click <strong>'Select'</strong> to start recording.</p>
 <p>As you click through the application, the recording will display the list of steps and actions being captured:</p>
 <p><img alt="manual_recording_3" src="../img/manual_testing_recording4.png" /></p>
-<p>In this example, we created a new canvas, chose the Pencil tool, created a drawing using the pencil, entered some text and then made it bold:</p>
+<p>In this example, we created a new canvas, chose the Pencil tool, drew a design using the pencil, entered some text, and then made it bold:</p>
 <p><img alt="manual_recording_3b" src="../img/manual_testing_recording5.png" /></p>
-<p>When you click <strong>Finish</strong> to complete the recording, Rapise will display the list of populated manual test steps with the embedded screen captures:</p>
+<p>When you click <strong>Finish</strong> to complete the recording, Rapise will display the list of populated manual test steps, complete with embedded screen captures:</p>
 <p><img alt="manual_recording_4" src="../img/manual_testing_recording6.png" /></p>
-<p>Notice that each recorded test step already has a <code>Description</code> and an <code>Expected Result</code> with a screenshot of what the user was doing. In addition, the <code>Sample Data</code> contains the equivalent of Rapise automation code for reference. This can be useful later if you will decide to automate this test.</p>
+<p>Notice that each recorded test step already has a <code>Description</code> and an <code>Expected Result</code>, along with a screenshot of the user's actions. In addition, the <code>Sample Data</code> contains the equivalent Rapise automation code for reference. This can be useful later if you decide to automate this test.</p>
 <h2 id="step-3-editing-the-steps">Step 3 - Editing the Steps<a class="headerlink" href="#step-3-editing-the-steps" title="Permanent link">&para;</a></h2>
-<p>Typically you may want to <strong>add some additional steps</strong> (e.g. we added a line to describe the process of starting up MS Paint), <strong>delete any duplicate/unnecessary steps</strong> and <strong>reword them</strong> so that they make the most sense to the tester. In our example we used the <a href="../manual_test_editor/">manual editing</a> screen to update the steps as follows:</p>
+<p>Typically, you may want to <strong>add some additional steps</strong> (e.g., we added a line to describe the process of starting MS Paint), <strong>delete any duplicate or unnecessary steps</strong>, and <strong>reword them</strong> to make the most sense to the tester. In our example, we used the <a href="../manual_test_editor/">manual editing</a> screen to update the steps as follows:</p>
 <p><img alt="manual_recording_5" src="../img/manual_testing_recording7.png" /></p>
-<p>Click <strong>Save</strong> to make sure the updates are all saved locally. Now before you can <a href="../manual_testing_playback/">execute these tests</a>, you will need to Save them to <a href="../spiratest_integration/">Spira</a> (our web-based test management system).</p>
+<p>Click <strong>Save</strong> to ensure all updates are saved locally. Before you can <a href="../manual_testing_playback/">execute these tests</a>, you will need to save them to <a href="../spiratest_integration/">Spira</a> (our web-based test management system).</p>
 <h2 id="step-4-saving-to-spira">Step 4 - Saving to Spira<a class="headerlink" href="#step-4-saving-to-spira" title="Permanent link">&para;</a></h2>
-<p>Click on the option to <strong>Save to Spira</strong>, you will be asked to confirm the creation of the document folder in Spira that will hold the test files:</p>
+<p>Click the <strong>Save to Spira</strong> option. You will be asked to confirm the creation of the document folder in Spira that will hold the test files:</p>
 <p><img alt="manual_recording_6" src="../img/manual_testing_recording8.png" /></p>
-<p>Click on <strong>Create</strong> and then click <strong>OK</strong> in the <code>Synchronize Files</code> dialog. The manual test will be saved to Spira. You will see that this process adds the unique Spira test step IDs to each step. They are displayed using the format [TS:xxx]. This special token [TS:xxx] can be used in <code>Tester.Assert</code> commands to relate specific <a href="../checkpoints/">verification points</a> with test steps during automated testing.</p>
+<p>Click <strong>Create</strong>, and then click <strong>OK</strong> in the <code>Synchronize Files</code> dialog. The manual test will be saved to Spira. You will see that this process adds unique Spira test step IDs to each step. They are displayed using the format [TS:xxx]. This special token [TS:xxx] can be used in <code>Tester.Assert</code> commands to relate specific <a href="../checkpoints/">verification points</a> with test steps during automated testing.</p>
 <p><img alt="manual_recording_7" src="../img/manual_testing_recording9.png" /></p>
-<p>Now that the test has been saved in Spira, you can click on the <strong>View Manual Test in Spira</strong> toolbar button to see how the test steps look inside Spira.</p>
+<p>Now that the test has been saved in Spira, you can click the <strong>View Manual Test in Spira</strong> toolbar button to see how the test steps appear within Spira.</p>
 <p><img alt="view manual in spira" src="../img/manual_testing_recording_view_manual_in_spira.png" /></p>
 <p><img alt="manual_recording_8" src="../img/manual_testing_recording10.png" /></p>
-<p>Now that we have finished the recording, we can now play back this manual test.</p>
+<p>Now that we have finished the recording, we can play back this manual test.</p>
 <h2 id="step-5-executing-the-manual-test">Step 5 - Executing the Manual Test<a class="headerlink" href="#step-5-executing-the-manual-test" title="Permanent link">&para;</a></h2>
-<p>Choose the Release from the list of those available in the project:</p>
+<p>Choose the Release from the list of available releases in the project:</p>
 <p><img alt="manual_playback_1" src="../img/manual_testing_playback2.png" width="232px" /></p>
-<p>Then click on the <strong>Execute</strong> icon to start manual test execution. That will bring up the <a href="../manual_playback/">manual playback</a> screen:</p>
+<p>Then, click the <strong>Execute</strong> icon to start manual test execution. This will bring up the <a href="../manual_playback/">manual playback</a> screen:</p>
 <p><img alt="manual_playback_2" src="../img/manual_testing_playback3.png" /></p>
-<p>On this screen, we shall follow through the steps listed in the test case. This involves opening up MS Paint, creating a new canvas, adding some lines using the pencil and then adding some text using the text tool. As you perform these steps, click on the <code>Pass</code> button to indicate that each step has passed. You can also minimize the manual playback screen by clicking the <code>&gt;|</code> button.</p>
-<p>Once you get to Step 6, we shall pretend that MS Paint failed to display the text correctly. Enter in the Actual Result a message to that effect:</p>
+<p>On this screen, we will follow the steps listed in the test case. This involves opening MS Paint, creating a new canvas, adding some lines using the pencil, and then adding some text using the text tool. As you perform these steps, click the <code>Pass</code> button to indicate that each step has passed. You can also minimize the manual playback screen by clicking the <code>&gt;|</code> button.</p>
+<p>Once you reach Step 6, we will pretend that MS Paint failed to display the text correctly. Enter a message to that effect in the Actual Result field:</p>
 <p><img alt="manual_playback_3" src="../img/manual_testing_playback4.png" /></p>
-<p>Next we shall attach a screenshot of what actually happened and log a test failure.</p>
+<p>Next, we will attach a screenshot of what actually happened and log a test failure.</p>
 <h2 id="step-6-capturing-and-annotating-a-screenshot">Step 6 - Capturing and Annotating a Screenshot<a class="headerlink" href="#step-6-capturing-and-annotating-a-screenshot" title="Permanent link">&para;</a></h2>
-<p>Click on the <strong>Image icon</strong> in the rich text editor associated with the <strong>Actual Result</strong> text box. That will bring up the <a href="../image_capture/">Drawing Tools</a> screen that asks you to draw a rectangle to select a portion of the current screen to capture:</p>
+<p>Click the <strong>Image icon</strong> in the rich text editor associated with the <strong>Actual Result</strong> text box. This will bring up the <a href="../image_capture/">Drawing Tools</a> screen, which prompts you to draw a rectangle to select a portion of the current screen for capture:</p>
 <p><img alt="manual_playback_4" src="../img/manual_testing_playback5.png" /></p>
-<p>If the MS Paint application is not in the foreground, just click <span class="keys"><kbd class="key-escape">Esc</kbd></span> on your keyboard to abort, rearrange your windows and then try again.
+<p>If the MS Paint application is not in the foreground, simply press <span class="keys"><kbd class="key-escape">Esc</kbd></span> on your keyboard to abort, rearrange your windows, and then try again.
 Once you have selected the rectangle, the drawing tools will display your selected image in the image editor:</p>
 <p><img alt="manual_playback_5" src="../img/manual_testing_playback6.png" width="540px" /></p>
-<p>You can now use the annotation tools to add labels, text and other items to explain the issue that you found:</p>
+<p>You can now use the annotation tools to add labels, text, and other items to explain the issue you found:</p>
 <p><img alt="manual_playback_6" src="../img/manual_testing_playback7.png" width="540px" /></p>
-<p>In the example above, we added a red ellipse, arrow and text to mark the issue that was seen in MS-Paint. Once you are happy with your image, click <strong>Accept</strong> and the image will be included in the test Actual Result:</p>
+<p>In the example above, we added a red ellipse, arrow, and text to mark the issue observed in MS Paint. Once you are satisfied with your image, click <strong>Accept</strong>, and the image will be included in the test's Actual Result:</p>
 <p><img alt="manual_playback_7" src="../img/manual_testing_playback8.png" /></p>
-<p>Finally, <strong>Fail</strong> the Step 6 and click on the <strong>Finish</strong> button.</p>
+<p>Finally, <strong>Fail</strong> Step 6 and click the <strong>Finish</strong> button.</p>
 <p><img alt="Fail Step" src="../img/manual_testing_playback_fail_step.png" width="453px" /></p>
 <p>The results will be posted to <a href="../spiratest_integration/">Spira</a>.</p>
 <h2 id="step-7-viewing-the-results">Step 7 - Viewing the Results<a class="headerlink" href="#step-7-viewing-the-results" title="Permanent link">&para;</a></h2>
-<p>Now to view the results in Spira, click on the <a href="../spira_dashboard/">View &gt; View Manual Test in Spira</a> menu. That will bring up the test case in Spira. Now click on the <code>Failed</code> hyperlink in Spira and the new test run will be displayed:</p>
+<p>To view the results in Spira, click the <a href="../spira_dashboard/">View &gt; View Manual Test in Spira</a> menu. This will bring up the test case in Spira. Now, click the <code>Failed</code> hyperlink in Spira, and the new test run will be displayed:</p>
 <p><img alt="manual_playback_10" src="../img/manual_testing_playback11.png" width="752px" /></p>
-<p>If you scroll down, you can see the individual test steps that were executed, with the associated actual result (including the captured screenshot):</p>
+<p>If you scroll down, you can see the individual test steps that were executed, along with the associated actual result (including the captured screenshot):</p>
 <p><img alt="manual_playback_11" src="../img/manual_testing_playback12.png" /></p>
 <p>Congratulations! You have now successfully executed a manual test using Rapise.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1175,6 +1175,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11093,6 +11105,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11365,103 +11389,25 @@
                 
                 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
 <h2 id="why-use-rapise">Why Use Rapise?<a class="headerlink" href="#why-use-rapise" title="Permanent link">&para;</a></h2>
-<p>Rapise was created to make software testing easy and manageable without
-being prohibitively expensive.</p>
-<p>Rapise was made easy for software test professionals, developers and
-professionals concerned with quality assurance to simply and quickly
-write a test to cover an application, a web page, or a single bug to
-prevent regression.</p>
+<p>Rapise was created to make software testing easy and manageable without being prohibitively expensive.</p>
+<p>Rapise was designed to enable software test professionals, developers, and quality assurance professionals to quickly and easily write tests that cover an application, a web page, or a single bug, helping to prevent regressions.</p>
 <h2 id="make-testing-fast-and-repeatable">Make Testing Fast and Repeatable<a class="headerlink" href="#make-testing-fast-and-repeatable" title="Permanent link">&para;</a></h2>
-<p>Consider for a moment what it is you do to test your software today.
-Most likely it has some <strong>user interface (UI)</strong>, probably a
-<strong>graphic user interface (GUI)</strong>.  So you will run the application,
-click around, perhaps in some way that gives you complete coverage of
-all the features (but probably not if it's a large application or web).
-Then you will login, if appropriate, and you will fetch some data and
-modify some data, test some more controls - edit boxes, buttons,
-drop-down lists, links, etc.  If you have just fixed a bug then you will
-focus on the area of the application where the bug occurred.  You will
-enter data that causes the bug, or go through the control sequence that
-causes the bug.</p>
-<p>Next time you come to fix a bug in this application, you will <strong>do the
-same thing again</strong>..  Once again, you will focus on the area where the
-bug was.</p>
-<p>Rapise presents you with <strong>two methods for capturing specific tests</strong>,
-and it will keep the test as a solo test or as part of a suite of tests
-that help you to qualify the application for release or a more formal QA
-process.  Rapise is designed to allow the developer or the test
-professional to add new tests quickly and so to build up a library of
-tests.</p>
+<p>Consider for a moment how you test your software today. Most likely, it has a <strong>user interface (UI)</strong>, probably a <strong>graphical user interface (GUI)</strong>. You will run the application, click around, perhaps in a way that attempts to give you complete coverage of all features (though probably not, if it's a large application or web application). Then you will log in, if appropriate, and fetch and modify data, testing various controls—edit boxes, buttons, drop-down lists, links, etc. If you have just fixed a bug, you will then focus on the area of the application where the bug occurred. You will enter data or go through the control sequence that causes the bug.</p>
+<p>The next time you need to fix a bug in this application, you will <strong>repeat the process</strong>. Again, you will focus on the area where the bug was.</p>
+<p>Rapise offers <strong>two methods for capturing specific tests</strong>. It can manage tests either individually or as part of a test suite, helping you to qualify the application for release or a more formal QA process. Rapise is designed to enable developers and test professionals to quickly add new tests and build up a comprehensive library.</p>
 <p>There are two methods for capturing tests:</p>
 <ol>
-<li><a href="../recording/">Record</a> and
-<a href="../playback/">playback</a>.  In this type of
-test creation, you turn on the recorder and perform the actions needed
-to execute the test.  Each test is saved to its own directory.  A test
-consists of a javascript <a href="../understanding_the_script/">test
-script</a>
-(<strong>.js</strong>), a meta-data file (<strong>*.sstest),</strong> and any number of
-additional supplementary scripts and data files.   The test script is
-automatically generated after recording; simple modifications are
-required to make the test <a href="../data_driven_testing/">data
-driven</a>.
-<a href="../checkpoints/">Checkpoints</a> can be added
-during recording, or manually into the script.\</li>
-<li><a href="../object_locator/">Object</a>-driven
-<a href="../object_learning/">learning</a>.   Rapise
-considers each item on the page or within the application window to be
-an object.  Examples are buttons, edit boxes, links, etc.  To create a
-test using this technique, you have Rapise
-"<a href="../object_learning/">learn</a>" each
-control, and it will keep a miniature
-<a href="../object_tree/">database</a> of all the
-controls you "teach" it.  To create a test, you write a script to
-instruct Rapise to perform a particular action on each object in the
-prescribed order.  As any point along the way, the script you write can
-instruct Rapise to look inside an object and read its data and compare
-that value or content with what you expect it to be.</li>
+<li><a href="../recording/">Record</a> and <a href="../playback/">playback</a>. In this type of test creation, you turn on the recorder and perform the necessary actions to execute the test. Each test is saved to its own directory. A test consists of a JavaScript <a href="../understanding_the_script/">test script</a> (<strong><code>.js</code></strong>), a metadata file (<strong><code>*.sstest</code></strong>), and any number of additional supplementary scripts and data files. The test script is automatically generated after recording; simple modifications are required to make the test <a href="../data_driven_testing/">data driven</a>. <a href="../checkpoints/">Checkpoints</a> can be added during recording or manually into the script.</li>
+<li><a href="../object_locator/">Object</a>-driven <a href="../object_learning/">learning</a>. Rapise considers each item on the page or within an application window to be an object. Examples include buttons, edit boxes, and links. To create a test using this technique, you have Rapise "<a href="../object_learning/">learn</a>" each control. Rapise then maintains a miniature <a href="../object_tree/">database</a> of all the controls it "learns". To create a test, you write a script to instruct Rapise to perform a particular action on each object in the prescribed order. At any point along the way, the script you write can instruct Rapise to look inside an object, read its data, and compare that value or content with your expected result.</li>
 </ol>
-<p>There are many methodologies with their own recommended approaches for
-designing testing strategies to ensure that application coverage is
-complete and meets the business requirements specification of the work
-being accomplished.  Inflectra in general, recommends that you <a href="../create_a_new_test/">create a
-new test</a> for each
-software requirement (to track progress) and for each issue in your
-issue tracking system (to test for regressions).</p>
+<p>Many methodologies offer recommended approaches for designing testing strategies to ensure complete application coverage and meet business requirements. Inflectra generally recommends that you <a href="../create_a_new_test/">create a new test</a> for each software requirement (to track progress) and for each issue in your issue tracking system (to test for regressions).</p>
 <h2 id="choice-of-scripting-or-scriptless-rapise-visual-language-rvl">Choice of Scripting or Scriptless Rapise Visual Language (RVL)<a class="headerlink" href="#choice-of-scripting-or-scriptless-rapise-visual-language-rvl" title="Permanent link">&para;</a></h2>
-<p>Rapise gives you the choice of recording/writing your tests in a full
-<a href="../scripting/">scripting language</a> -
-<a href="../javascript_ide/">JavaScript</a>, or the
-<a href="../visual_language/">Rapise Visual Language
-(RVL)</a> which provides
-a completely scriptless approach to writing tests (based on a simple
-table-based format). The RVL option is simpler for users that are not
-programmers but it has less flexibility than using JavaScript.</p>
-<p>You can have the best of both worlds, putting the more sophisticated
-steps into JavaScript
-<a href="../scenarios/">scenarios</a> and then
-including in the main RVL file.</p>
+<p>Rapise offers the choice of recording or writing your tests in a full <a href="../scripting/">scripting language</a>—<a href="../javascript_ide/">JavaScript</a>—or the <a href="../visual_language/">Rapise Visual Language (RVL)</a>, which provides a completely scriptless approach to writing tests (based on a simple table-based format). The RVL option is simpler for users who are not programmers, but it offers less flexibility than using JavaScript.</p>
+<p>You can have the best of both worlds by putting the more sophisticated steps into JavaScript <a href="../scenarios/">scenarios</a> and then including them in the main RVL file.</p>
 <h2 id="integration-with-test-management">Integration with Test Management<a class="headerlink" href="#integration-with-test-management" title="Permanent link">&para;</a></h2>
-<p>To help you manage the requirements and issue tracking processes and to
-ensure that you have adequate <strong>test coverage</strong>, Inflectra recommend
-that you use Rapise with a <strong>test management system</strong> such as
-<a href="../spiratest_integration/">SpiraTest</a>.
-That way you can maintain all your requirements, test cases and defects
-in a single place.</p>
-<p>Once you have created the test, you can
-<a href="../playback/">playback</a> your test from
-within Rapise, run it from the
-<a href="../command_line/">command-line</a> or execute
-it remotely using RapiseLauncher in conjunction with
-<a href="../spiratest_integration/">SpiraTest</a>.  A
-<a href="../automated_reporting/">report</a> detailing
-the outcome of each step of the test will be automatically generated.</p>
-<p><a href="../custom_libraries/">Recording</a>,
-<a href="../custom_libraries/">playback</a>, the
-<a href="../writing_to_the_report/">report</a>, and
-the Rapise
-<a href="../customizable_engine/">engine</a> are all
-customizable.</p>
+<p>To help you manage requirements and issue tracking processes and ensure adequate <strong>test coverage</strong>, Inflectra recommends that you use Rapise with a <strong>test management system</strong> such as <a href="../spiratest_integration/">SpiraTest</a>. That way you can maintain all your requirements, test cases, and defects in a single place.</p>
+<p>Once you have created a test, you can <a href="../playback/">play back</a> your test from within Rapise, run it from the <a href="../command_line/">command line</a>, or execute it remotely using RapiseLauncher in conjunction with <a href="../spiratest_integration/">SpiraTest</a>. A <a href="../automated_reporting/">report</a> detailing the outcome of each step of the test will be automatically generated.</p>
+<p><a href="../custom_libraries/">Recording</a>, <a href="../custom_libraries/">playback</a>, the <a href="../writing_to_the_report/">report</a>, and the Rapise <a href="../customizable_engine/">engine</a> are all customizable.</p>
                 
               
               

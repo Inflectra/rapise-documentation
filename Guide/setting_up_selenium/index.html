@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1112,6 +1112,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11225,6 +11237,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11630,21 +11654,21 @@
                 
                 
                 <h1 id="setting-up-selenium">Setting Up Selenium<a class="headerlink" href="#setting-up-selenium" title="Permanent link">&para;</a></h1>
-<p>This section describes the process for setting up Rapise to work with <a href="../selenium_webdriver/">Selenium</a>. Since Rapise is a Windows® application, you can use a single computer running Rapise to use the following web browsers:</p>
+<p>This section describes the process for setting up Rapise to work with <a href="../selenium_webdriver/">Selenium</a>. Since Rapise is a Windows® application, you can use a single computer running Rapise to test with the following web browsers:</p>
 <ul>
 <li>Google Chrome</li>
 <li>Microsoft Edge</li>
 <li>Internet Explorer</li>
 <li>Mozilla Firefox</li>
 </ul>
-<p>However because Safari only runs on Apple Mac computers, you will need to use two computers (a Mac running Safari) and a PC running Rapise to test using the Apple Safari web browser:</p>
+<p>However, because Safari only runs on Apple Mac computers, testing with Apple Safari requires two computers: a Mac running Safari and a PC running Rapise.</p>
 <p><img alt="clip0002" src="../img/setting_up_selenium1.png" /></p>
 <h2 id="configuring-selenium-on-a-pc">Configuring Selenium on a PC<a class="headerlink" href="#configuring-selenium-on-a-pc" title="Permanent link">&para;</a></h2>
-<p>Once you have installed Rapise on your local computer, you need to perform the following steps to configure each of the web browsers to use Selenium and Rapise:</p>
+<p>Once Rapise is installed on your local computer, you need to perform the following steps to configure each web browser for use with Selenium and Rapise:</p>
 <h3 id="rapise-73">Rapise 7.3+<a class="headerlink" href="#rapise-73" title="Permanent link">&para;</a></h3>
 <p>The process of configuring Rapise for interaction with browsers via Selenium WebDriver is now fully automatic.</p>
-<p>Rapise downloads WebDriver executables (chromedriver.exe, geckodriver.exe, etc.) when needed, it automatically detects version of required driver executable both for standalone browsers and embedded ones (e.g. Chrome in Microsoft Teams, Skype, Microsoft Unified Service Desk, etc.). Every downloaded driver executable is saved with version information in its name. Rapise automatically switches executables based on the executed test.</p>
-<p>Here is an example of</p>
+<p>Rapise downloads WebDriver executables (chromedriver.exe, geckodriver.exe, etc.) when needed. It automatically detects the version of the required driver executable for both standalone and embedded browsers (e.g., Chrome in Microsoft Teams, Skype, Microsoft Unified Service Desk, etc.). Each downloaded driver executable is saved with version information in its name. Rapise automatically switches executables based on the executed test.</p>
+<p>Here is an example of the</p>
 <div class="highlight"><pre><span></span><code>c:\ProgramData\Inflectra\Rapise\SeleniumDrivers 
 </code></pre></div>
 <p>folder on a machine with Rapise:</p>
@@ -11653,110 +11677,109 @@
 <p>This method is applicable to all browsers except Safari.</p>
 <ol>
 <li>Open <a href="../selenium_settings_dialog/">Selenium Settings Dialog</a></li>
-<li>Select the profile you need</li>
-<li>Configure profile settings</li>
-<li>Press <code>Test</code> button on the toolbar</li>
+<li>Select the desired profile.</li>
+<li>Configure profile settings.</li>
+<li>Press the <code>Test</code> button on the toolbar.</li>
 </ol>
-<p>If Selenium driver for selected browser is not installed yet or it is not compatible with the current version of the browser then Rapise will ask you a question. If your answer is <code>Yes</code> then Rapise will download the driver executable and place it into</p>
+<p>If the Selenium driver for the selected browser is not yet installed or is not compatible with the current version of the browser, Rapise will then prompt you. If you answer <code>Yes</code>, Rapise will download the driver executable and place it into</p>
 <div class="highlight"><pre><span></span><code>c:\ProgramData\Inflectra\Rapise\SeleniumDrivers 
 </code></pre></div>
 <p>This is the default folder where Rapise searches for Selenium drivers.</p>
-<p>To run tests that use Selenium profiles on machines that do not have Selenium drivers downloaded you may add the following into <code>TestInit</code> function:</p>
+<p>To run tests that use Selenium profiles on machines without downloaded Selenium drivers, you can add the following into <code>TestInit</code> function:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">WebDriver</span><span class="p">.</span><span class="nx">DownloadDriver</span><span class="p">();</span>
 </code></pre></div>
 <h4 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="/Libraries/WebDriver/#downloaddriver">WebDriver.DownloadDriver</a></li>
+<li><a href="../../Libraries/WebDriver/#downloaddriver">WebDriver.DownloadDriver</a></li>
 </ul>
 <h3 id="legacy">Legacy<a class="headerlink" href="#legacy" title="Permanent link">&para;</a></h3>
 <h4 id="chrome">Chrome<a class="headerlink" href="#chrome" title="Permanent link">&para;</a></h4>
-<p>To use Selenium with Google Chrome, you will need to download the latest version of the Chrome Driver:</p>
+<p>To use Selenium with Google Chrome, you will need to download the latest version of ChromeDriver:</p>
 <p><a href="http://chromedriver.storage.googleapis.com/index.html">http://chromedriver.storage.googleapis.com/index.html</a></p>
-<p>The list of versions at time of writing was:</p>
+<p>At the time of writing, the list of versions was:</p>
 <p><img alt="clip0007" src="../img/setting_up_selenium8.png" /></p>
-<p>When you click on the folder for the latest version you will see the various files that can be downloaded:</p>
+<p>Clicking the folder for the latest version displays the various files available for download:</p>
 <p><img alt="clip0008" src="../img/setting_up_selenium9.png" /></p>
-<p>Download the <strong>chromedriver_win32.zip</strong> to your local PC.</p>
-<p>The file inside the zip archive is called <strong>chromedriver.exe</strong> and you need to copy it into the <strong>C:\Program Files
-(x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
+<p>Download <strong>chromedriver_win32.zip</strong> to your local PC.</p>
+<p>The <strong>chromedriver.exe</strong> file inside the zip archive needs to be copied into the <strong>C:\Program Files
+(x86)\Inflectra\Rapise\Bin</strong> folder (or your Rapise installation directory).</p>
 <h4 id="firefox">Firefox<a class="headerlink" href="#firefox" title="Permanent link">&para;</a></h4>
-<p>To use Selenium with Mozilla Firefox, you will need to download the latest version of the Gecko Driver:</p>
+<p>To use Selenium with Mozilla Firefox, download the latest version of GeckoDriver:</p>
 <p><a href="https://github.com/mozilla/geckodriver/releases">https://github.com/mozilla/geckodriver/releases</a></p>
-<p>Download <strong>geckodriver-vx.xx.x-win32.zip</strong>  to your local PC.</p>
+<p>Download <strong>geckodriver-vx.xx.x-win32.zip</strong> to your local PC.</p>
 <p><img alt="Gecko" src="../img/setting_up_selenium_gecko.png" /></p>
-<p>The file inside the zip archive is called <strong>geckodriver.exe</strong> and you need to copy it into the <strong>C:\Program Files
-(x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
+<p>The <strong>geckodriver.exe</strong> file inside the zip archive needs to be copied into the <strong>C:\Program Files
+(x86)\Inflectra\Rapise\Bin</strong> folder (or your Rapise installation directory).</p>
 <h4 id="microsoft-edge">Microsoft Edge<a class="headerlink" href="#microsoft-edge" title="Permanent link">&para;</a></h4>
-<p>To use Selenium with Microsoft Edge, you will need to download the latest version of the Edge Driver from the Microsoft website:</p>
+<p>To use Selenium with Microsoft Edge, download the latest version of Edge WebDriver from the Microsoft website:</p>
 <p><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads</a></p>
 <p><img alt="selenium_webdriver_download_edge" src="../img/setting_up_selenium4.png" /></p>
-<p>Create a new folder on your local PC called:</p>
+<p>Create a new folder on your local PC, named:</p>
 <p><strong>C:\Program Files (x86)\Microsoft Web Driver</strong></p>
-<p>Download the <strong>MicrosoftWebDriver.exe</strong> to this local folder you just created:</p>
+<p>Download <strong>MicrosoftWebDriver.exe</strong> to the local folder you just created:</p>
 <p><img alt="selenium_webdriver_download_edge2" src="../img/setting_up_selenium5.png" /></p>
 <h4 id="internet-explorer">Internet Explorer<a class="headerlink" href="#internet-explorer" title="Permanent link">&para;</a></h4>
-<p>To use Selenium with Internet Explorer, you will need to download the latest version of the Internet Explorer IE Driver:</p>
+<p>To use Selenium with Internet Explorer, download the latest version of IEDriver:</p>
 <p><a href="http://selenium-release.storage.googleapis.com/index.html">http://selenium-release.storage.googleapis.com/index.html</a></p>
-<p>The list of versions at time of writing was:</p>
+<p>At the time of writing, the list of versions was:</p>
 <p><img alt="clip0005" src="../img/setting_up_selenium6.png" /></p>
-<p>When you click on the folder for the latest version you will see the various files that can be downloaded:</p>
+<p>Clicking the folder for the latest version displays the various files available for download:</p>
 <p><img alt="clip0006" src="../img/setting_up_selenium7.png" /></p>
-<p>Download the <strong>IEDriverServer_XXXX_X.X.X.zip</strong> to your local PC:</p>
+<p>Download <strong>IEDriverServer_XXXX_X.X.X.zip</strong> to your local PC:</p>
 <ul>
 <li>IEDriverServer_Win32_X.X.X.zip (for 32-bit Internet Explorer)</li>
 <li>IEDriverServer_x64_X.X.X.zip (for 64-bit Internet Explorer)</li>
 </ul>
-<p>The file inside the zip archive is called <strong>IEDriverServer.exe</strong> and you need to copy it into the <strong>C:\Program Files
-(x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise).</p>
+<p>The <strong>IEDriverServer.exe</strong> file inside the zip archive needs to be copied into the <strong>C:\Program Files
+(x86)\Inflectra\Rapise\Bin</strong> folder (or your Rapise installation directory).</p>
 <h2 id="chrome-for-testing">Chrome for Testing<a class="headerlink" href="#chrome-for-testing" title="Permanent link">&para;</a></h2>
-<p>In 2023 Google <a href="https://developer.chrome.com/blog/chrome-for-testing">introduced</a> <code>Chrome for Testing</code> - a new Chrome flavor that specifically targets web app testing and automation use cases. It addresses <code>auto-update: great for users, painful for developers</code> problem. In Rapise we implemented an easy way of managing <code>Chrome for Testing</code> binaries. It allows downloading Chrome binaries as well as automatic creation of <a href="../selenium_settings_dialog/#selenium-profiles">browser profiles</a>.</p>
+<p>In 2023, Google <a href="https://developer.chrome.com/blog/chrome-for-testing">introduced</a> <code>Chrome for Testing</code>—a new Chrome flavor that specifically targets web app testing and automation use cases. It addresses the problem of <code>auto-update: great for users, painful for developers</code>. In Rapise, we implemented an easy way to manage <code>Chrome for Testing</code> binaries. It allows for downloading Chrome binaries and automatic creation of <a href="../selenium_settings_dialog/#selenium-profiles">browser profiles</a>.</p>
 <h3 id="chrome-for-testing-dialog">Chrome for Testing Dialog<a class="headerlink" href="#chrome-for-testing-dialog" title="Permanent link">&para;</a></h3>
-<p>To open <code>Chrome for Testing</code> dialog use main menu <code>Tools &gt; Chrome for Testing</code>. It will show the list of available Chrome versions. </p>
+<p>To open the <code>Chrome for Testing</code> dialog, use the main menu <code>Tools &gt; Chrome for Testing</code>. This will display a list of available Chrome versions.</p>
 <p><img alt="Chrome for Testing Dialog" src="../img/chrome_for_testing_dialog.png" /></p>
-<p>The list is taken from</p>
+<p>The list is retrieved from:</p>
 <div class="highlight"><pre><span></span><code>https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
 </code></pre></div>
 <h4 id="filters">Filters<a class="headerlink" href="#filters" title="Permanent link">&para;</a></h4>
-<p>You may filter the list, use search tokens separated by space and Rapise will do search in text of <strong>Version</strong> and <strong>Status</strong> columns. Space serves as an AND logical operator. Let's see a few filter examples:</p>
+<p>You can filter the list by using search tokens separated by spaces; Rapise will search within the text of the <strong>Version</strong> and <strong>Status</strong> columns. A space serves as an AND logical operator. Here are a few filter examples:</p>
 <ul>
-<li><code>available</code> - displays all downloaded Chrome versions,</li>
-<li><code>121 win64</code> - finds all 64-bit versions of Chrome with a version number that contains 121.</li>
+<li><code>available</code> - Displays all downloaded Chrome versions.</li>
+<li><code>121 win64</code> - Finds all 64-bit versions of Chrome whose version number contains '121'.</li>
 </ul>
 <h4 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h4>
 <ul>
-<li>When a <code>Not loaded</code> version is selected use <code>Download</code> button to download the binaries and create a profile. </li>
-<li>When an <code>Available</code> version is selected the button name changes to <code>Create Profile</code>, use it to create a profile referencing the selected Chrome version.</li>
+<li>When a <code>Not loaded</code> version is selected, use the <code>Download</code> button to download the binaries and create a profile.</li>
+<li>When an <code>Available</code> version is selected, the button name changes to <code>Create Profile</code>; use it to create a profile referencing the selected Chrome version.</li>
 </ul>
 <p><img alt="Chrome for Testing Profile" src="../img/chrome_for_testing_profile.png" /></p>
 <h4 id="binaries-location">Binaries Location<a class="headerlink" href="#binaries-location" title="Permanent link">&para;</a></h4>
-<p>Chrome binaries are downloaded into </p>
+<p>Chrome binaries are downloaded to:</p>
 <div class="highlight"><pre><span></span><code>c:\ProgramData\Inflectra\Rapise\SeleniumChrome
 </code></pre></div>
 <h2 id="updating-webdriver-dlls-in-rapise">Updating WebDriver DLLs in Rapise<a class="headerlink" href="#updating-webdriver-dlls-in-rapise" title="Permanent link">&para;</a></h2>
-<p>If the version of WebDriver DLLs shipped with Rapise is not compatible with your browser you may update the corresponding DLLs. Just go to the main Selenium website: <a href="http://www.seleniumhq.org/download/">http://www.seleniumhq.org/download/</a> and then download the <strong>C# WebDriver Bindings</strong>:</p>
+<p>If the version of WebDriver DLLs shipped with Rapise is not compatible with your browser, you can update the corresponding DLLs. Go to the main Selenium website: <a href="http://www.seleniumhq.org/download/">http://www.seleniumhq.org/download/</a> and download <strong>C# WebDriver Bindings</strong>:</p>
 <p><img alt="clip0004" src="../img/setting_up_selenium3.png" /></p>
-<p>Download the <strong>Selenium-dotnet-x.x.x.zip</strong> file from the website. Proceed to unzip the archive and then look in the <strong>net40</strong> subfolder
-and extract the following two files and copy into the <strong>C:\Program Files (x86)\Inflectra\Rapise\Bin</strong> folder (or wherever you installed Rapise):</p>
+<p>Download <strong>Selenium-dotnet-x.x.x.zip</strong> from the website. Unzip the archive, then navigate to the <strong>net40</strong> subfolder, extract the following two files, and copy them into the <strong>C:\Program Files (x86)\Inflectra\Rapise\Bin</strong> folder (or your Rapise installation directory):</p>
 <ul>
 <li>WebDriver.dll</li>
 <li>WebDriver.Support.dll</li>
 </ul>
-<p><em>Note: You will need to close Rapise before copying these files into the Bin folder.</em></p>
+<p><em>Note: You must close Rapise before copying these files into the Bin folder.</em></p>
 <h2 id="installing-selenium-on-a-mac">Installing Selenium on a Mac<a class="headerlink" href="#installing-selenium-on-a-mac" title="Permanent link">&para;</a></h2>
-<p>The reason for using Selenium running on a Mac is to be able to execute tests against the Safari web browser. So although you can also use the Mac to test with Firefox, Opera and Chrome, we do not recommend this as it adds needless complexity.</p>
+<p>The primary reason for running Selenium on a Mac is to execute tests against the Safari web browser. While you can also use the Mac to test with Firefox, Opera, and Chrome, we do not recommend this approach, as it adds needless complexity.</p>
 <h3 id="safari">Safari<a class="headerlink" href="#safari" title="Permanent link">&para;</a></h3>
-<p>The first thing you need to do is download the latest version of the Selenium server for Apple Mac computers:</p>
+<p>First, download the latest version of the Selenium server for Apple Mac computers:</p>
 <p><a href="http://selenium-release.storage.googleapis.com/index.html">http://selenium-release.storage.googleapis.com/index.html</a></p>
-<p>The list of versions at time of writing was:</p>
+<p>At the time of writing, the list of versions was:</p>
 <p><img alt="clip0010" src="../img/setting_up_selenium6.png" /></p>
-<p>When you click on the folder for the latest version you will see the various files that can be downloaded:</p>
+<p>Clicking the folder for the latest version displays the various files available for download:</p>
 <p><img alt="clip0011" src="../img/setting_up_selenium7.png" /></p>
-<p>Download the <strong>selenium-server-standalone-X.XX.X.jar</strong> to the Mac.</p>
-<p>Run this Java application by double clicking the downloaded .JAR file in Finder. This will startup the Selenium server.</p>
-<p><em>Note: You will need to have the Java (ideally the latest version) installed on the Mac first.</em></p>
-<p>You are now ready to test web applications running on Safari. The final step is to tell Rapise where it can find that instance of Selenium. To do that, open up Rapise (on your PC) and click on <code>Settings &gt; Selenium</code> and then choose <strong>Safari</strong> profile:</p>
+<p>Download <strong>selenium-server-standalone-X.XX.X.jar</strong> to the Mac.</p>
+<p>Run this Java application by double-clicking the downloaded .JAR file in Finder. This will start the Selenium server.</p>
+<p><em>Note: You must have Java (ideally the latest version) installed on the Mac first.</em></p>
+<p>You are now ready to test web applications in Safari. The final step is to tell Rapise where to find that Selenium instance. To do this, open Rapise (on your PC), click <code>Settings &gt; Selenium</code>, and then select the <strong>Safari</strong> profile:</p>
 <p><img alt="clip0014" src="../img/setting_up_selenium14.png" /></p>
-<p>Now you need to change the <strong>Uri</strong> field to point to your Mac. The format of the URI will be:</p>
+<p>Now, change the <strong>Uri</strong> field to point to your Mac. The URI format is:</p>
 <ul>
 <li>http://&lt;IP or DNS name of MAC computer&gt;:4444/wd/hub</li>
 </ul>

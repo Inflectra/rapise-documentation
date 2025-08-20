@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../New/8_4/" class="md-tabs__link">
+      <a href="../../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1110,6 +1110,18 @@
     <li class="md-nav__item">
       <a href="../../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11028,6 +11040,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11273,10 +11297,10 @@
       
         <li class="md-nav__item">
   <a href="#built-in-tools" class="md-nav__link">
-    Built in Tools
+    Built-in Tools
   </a>
   
-    <nav class="md-nav" aria-label="Built in Tools">
+    <nav class="md-nav" aria-label="Built-in Tools">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -11326,15 +11350,15 @@
                 
                 
                 <h1 id="diff-merge-tools">Diff / Merge Tools<a class="headerlink" href="#diff-merge-tools" title="Permanent link">&para;</a></h1>
-<p>Diff and merge tools serve the purpose of examining modifications and resolving inconsistencies.</p>
-<p>Diff tools come in handy when you have made alterations and wish to compare them with the original, unaltered version.</p>
+<p>Diff and merge tools are used for examining modifications and resolving inconsistencies.</p>
+<p>Diff tools are useful when you want to compare changes you've made with the original, unaltered version.</p>
 <h2 id="rapise-merge">Rapise Merge<a class="headerlink" href="#rapise-merge" title="Permanent link">&para;</a></h2>
-<p>Whenever the <a href="../../spiratest_integration/#saving-a-test-to-spiratest">Save to Spira</a> button is pressed in Rapise, the tool will examine which files have been modified.</p>
+<p>Whenever the <a href="../../spiratest_integration/#saving-a-test-to-spiratest">Save to Spira</a> button is pressed in Rapise, the tool examines which files have been modified.</p>
 <p><img alt="Spira Diff Merge" src="../img/diffmerge_spira_diff_merge.png" /></p>
-<p>(1) If a file is accompanied by a "Diff..." button, it indicates that the file has been altered compared to the version currently stored in Spira. Clicking the button will...</p>
-<p>(2) If a file displays a "Resolve..." button, it signifies a conflict where the file has been modified both locally and remotely in parallel. Clicking the button will prompt the display of a merge conflict resolution dialog.</p>
+<p>(1) If a file has a "Diff..." button, it indicates that the file has been altered compared to the version currently stored in Spira. Clicking this button will...</p>
+<p>(2) If a file displays a "Resolve..." button, it signifies a conflict where the file has been modified both locally and remotely in parallel. Clicking this button will display a merge conflict resolution dialog.</p>
 <h2 id="default-diff-tools">Default Diff Tools<a class="headerlink" href="#default-diff-tools" title="Permanent link">&para;</a></h2>
-<p>Rapise does not have built-in diff/merge tools, except for two specific cases:</p>
+<p>Rapise does not have built-in diff/merge tools, with two exceptions:</p>
 <ol>
 <li>
 <p><em>RVLMerge</em> is used to compare and merge <code>.xlsx</code> files, including RVL (<code>.rvl.xlsx</code>) files.</p>
@@ -11343,8 +11367,8 @@
 <p><em>sstestmerge</em> is used for silent 3-way merging of conflicting <code>.sstest</code> files.</p>
 </li>
 </ol>
-<p>For other file types, Rapise relies on the already installed merge tools. There are various options available, both free and paid, and developers often have their preferred choices.</p>
-<p>If Rapise recognizes a specific merge tool, it will utilize it. Currently, Rapise is aware of the following tools, as defined in the <code>MergeTools.yml</code> configuration file:</p>
+<p>For other file types, Rapise relies on already installed merge tools. Various options are available, both free and paid, and developers often have their preferred choices.</p>
+<p>If Rapise recognizes a specific merge tool, it utilizes it. Currently, Rapise is aware of the following tools, as defined in the <code>MergeTools.yml</code> configuration file:</p>
 <div class="highlight"><pre><span></span><code>tools:
   TortoiseGitIDiff:
     mdi: false
@@ -11425,30 +11449,33 @@
     - &#39;%ProgramFiles(x86)%\WinMerge\WinMergeU.exe&#39;
     - &#39;%LocalAppData%\Programs\WinMerge\WinMergeU.exe&#39;
 </code></pre></div>
-<h2 id="built-in-tools">Built in Tools<a class="headerlink" href="#built-in-tools" title="Permanent link">&para;</a></h2>
+<h2 id="built-in-tools">Built-in Tools<a class="headerlink" href="#built-in-tools" title="Permanent link">&para;</a></h2>
 <h3 id="rvl-and-spreadsheets">RVL and Spreadsheets<a class="headerlink" href="#rvl-and-spreadsheets" title="Permanent link">&para;</a></h3>
-<p>By default, <em>RVLMerge</em> is automatically installed. Unless specified otherwise, it will be displayed when you choose to show the diff for an RVL or a spreadsheet.</p>
+<p>By default, <em>RVLMerge</em> is automatically installed. Unless specified otherwise, it is displayed when you choose to show the diff for an RVL or a spreadsheet.</p>
 <p><img alt="RVLMerge" src="../img/diffmerge_rvl_merge.png" /></p>
 <h3 id="using-with-git">Using with Git<a class="headerlink" href="#using-with-git" title="Permanent link">&para;</a></h3>
-<p>You can integrate <em>RVLMerge</em> with your current Git diff/merge tool by using its command line interface.</p>
-<p>For performing a diff, you can use the following command:</p>
+<p>You can integrate <em>RVLMerge</em> with your current Git diff/merge tool using its command line interface.</p>
+<p>To perform a diff, use the following command:</p>
 <div class="highlight"><pre><span></span><code>C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s &lt;src&gt; -d &lt;dst&gt;
 </code></pre></div>
-<p>Here, <code>&lt;src&gt;</code> represents the path to the unmodified (base or remote) version, and <code>&lt;dst&gt;</code> represents the path to the final version, which will also be the target for the merge results.</p>
-<p>For example, in <a href="https://tortoisegit.org/">TortoiseGit</a>, the diff command would look like this:</p>
+<p>Here, <code>&lt;src&gt;</code> represents the path to the unmodified (base or remote) version, and <code>&lt;dst&gt;</code> represents the path to the final version, which will also be the target for merge results.</p>
+<p>For example, in <a href="https://tortoisegit.org/">TortoiseGit</a>, the diff command looks like this:</p>
 <div class="highlight"><pre><span></span><code>C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s %base -d %mine
 </code></pre></div>
-<p>Similarly, for performing a merge, you can use the following command:</p>
+<p>Similarly, to perform a merge, use the following command:</p>
 <div class="highlight"><pre><span></span><code>C:\Program Files (x86)\Inflectra\RvlMerge\RvlMerge.exe -s %theirs -d %mine
 </code></pre></div>
 <h3 id="sstest">Sstest<a class="headerlink" href="#sstest" title="Permanent link">&para;</a></h3>
-<p>The merging of <code>.sstest</code> files is fully automatic (usually it is <code>Test.sstest</code> for a Test Case or <code>Framework.sstest</code> for a framework root). So once you hit <em>Merge...</em>, no UI is shown and the merged file is automatically generated.</p>
+<p>The merging of <code>.sstest</code> files is fully automatic (typically <code>Test.sstest</code> for a Test Case or <code>Framework.sstest</code> for a framework root). So once you click <em>Merge...</em>, no UI is shown, and the merged file is automatically generated.</p>
+<p>To enable automatic <code>.sstest</code> merge with your Git client, you can use it as follows:</p>
+<div class="highlight"><pre><span></span><code>C:\Program Files (x86)\Inflectra\Rapise\Extensions\DiffMerge\Tools\SstestMerge.cmd -s %theirs -d %mine
+</code></pre></div>
 <h2 id="adding-a-custom-diff-tool">Adding a Custom Diff Tool<a class="headerlink" href="#adding-a-custom-diff-tool" title="Permanent link">&para;</a></h2>
-<p>You have the option to incorporate additional known diff tools into Rapise. If your team utilizes multiple tools, that's perfectly fine. You can define all of them together, and Rapise will select the first one it finds. To achieve this, you need to create a file named MergeTools.yml in one of two locations:</p>
-<p>In the root directory of your testing framework, such as <code>C:\Users\UserName\Documents\My Rapise Tests\LIS\MergeTools.yml</code>. When defined in this location, it becomes specific to the testing framework. Loading it from Spira or Git will provide the associated diff definitions.</p>
-<p>In the <code>c:\Users\Public\Documents\Rapise\</code> directory. When defined here, it applies to all tests and frameworks on the given computer.</p>
+<p>You can incorporate additional known diff tools into Rapise. If your team uses multiple tools, that's perfectly fine. You can define all of them together, and Rapise selects the first one it finds. To do this, you need to create a file named <code>MergeTools.yml</code> in one of two locations:</p>
+<p>In the root directory of your testing framework, such as <code>C:\Users\UserName\Documents\My Rapise Tests\LIS\MergeTools.yml</code>. When defined in this location, it becomes specific to the testing framework. Loading it from Spira or Git provides the associated diff definitions.</p>
+<p>In the <code>C:\Users\Public\Documents\Rapise\</code> directory. When defined here, it applies to all tests and frameworks on the given computer.</p>
 <p>If you have a <code>MergeTools.yml</code> file in both locations, the one in the framework directory takes precedence.</p>
-<p>The <code>MergeTools.yml</code> file follows the following format:</p>
+<p>The <code>MergeTools.yml</code> file follows this format:</p>
 <div class="highlight"><pre><span></span><code>%YAML 1.2
 ---
 #

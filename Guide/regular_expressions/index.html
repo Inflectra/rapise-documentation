@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1116,6 +1116,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11088,6 +11100,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11353,14 +11377,14 @@
                 
                 <h1 id="regular-expressions">Regular Expressions<a class="headerlink" href="#regular-expressions" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>A <strong>regular expression</strong> is a sequence of characters that describes how to construct a set of strings.  It is composed of character literals and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">special characters</a>. Each character literal represents one single character (such as "a", "b", "C", "1").  The special characters can represent a character, many characters, or a choice about how to select characters.</p>
+<p>A <strong>regular expression</strong> is a sequence of characters that defines a search pattern for strings. It is composed of character literals and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">special characters</a>. Each character literal represents a single character (such as "a", "b", "C", "1"). Special characters can represent a character, multiple characters, or define choices for matching characters.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>In Rapise, you must prepend regular expressions with the string <strong>regex:</strong>.  So the regular expression describing all strings would be: <strong>regex:.*</strong></p>
-<p>There are three uses for regular expressions in Rapise: (1) in <a href="../object_locator/">Object Locators</a>, (2) in <a href="../actions/">action overriding code</a>, (3) in <a href="../custom_libraries/">Custom Libraries</a>.</p>
+<p>In Rapise, you must prefix regular expressions with the string <strong>regex:</strong>. For example, the regular expression to match all strings is: <strong>regex:.*</strong></p>
+<p>Regular expressions have three uses in Rapise: (1) in <a href="../object_locator/">Object Locators</a>, (2) in <a href="../actions/">action overriding code</a>, and (3) in <a href="../custom_libraries/">Custom Libraries</a>.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>In <a href="../object_locator/">Object Locator</a> to match a dynamic Window Title:</p>
+<p>Within an <a href="../object_locator/">Object Locator</a> to match a dynamic Window Title:</p>
 <p><img alt="window title" src="../img/regex1.png" /></p>
-<p><code>regex:.*Microsoft Dynamics NAV</code> matches any Window Title ending with <code>Microsoft Dynamics NAV</code>, e.g.</p>
+<p><code>regex:.*Microsoft Dynamics NAV</code> matches any Window Title ending with <code>Microsoft Dynamics NAV</code>, for example:</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Posted Sales Shipments - Microsoft Dynamics NAV
 </code></pre></div></td></tr></table></div>
 

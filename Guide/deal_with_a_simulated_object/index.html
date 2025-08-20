@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_4/" class="md-tabs__link">
+      <a href="../../New/8_5/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -1114,6 +1114,18 @@
     <li class="md-nav__item">
       <a href="../object_manager/" class="md-nav__link">
         Object Manager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_templates/" class="md-nav__link">
+        Object Templates
       </a>
     </li>
   
@@ -11079,6 +11091,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_5/" class="md-nav__link">
+        Release Notes for 8.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_4/" class="md-nav__link">
         Release Notes for 8.4
       </a>
@@ -11337,47 +11361,47 @@
                 
                 <h1 id="deal-with-a-simulated-object">Deal with a Simulated Object<a class="headerlink" href="#deal-with-a-simulated-object" title="Permanent link">&para;</a></h1>
 <h2 id="sample-application">Sample Application<a class="headerlink" href="#sample-application" title="Permanent link">&para;</a></h2>
-<p>The color box of Microsoft's Paint utility is a compound object that contains color tiles surrounded by a containing box. To understand this completely, start <code>mspaint.exe</code> from the Rapise.</p>
+<p>The color box of Microsoft's Paint utility is a compound object that contains color tiles surrounded by a containing box. To understand this completely, start <code>mspaint.exe</code> from Rapise.</p>
 <p>Steps:</p>
 <ol>
-<li>Open a new test under Rapise.</li>
+<li>Open a new test in Rapise.</li>
 <li>Press the <code>Record</code> button on the application bar.</li>
 <li>
-<p>When the <strong>Select an Application to Record</strong> dialog appears, select the Run Application tab. Enter <code>mspaint</code> in the <strong>Full path to application</strong> edit box.  Press the <code>Run</code> button.</p>
+<p>When the <strong>Select an Application to Record</strong> dialog appears, select the Run Application tab. Enter <code>mspaint</code> in the <strong>Full path to application</strong> edit box. Press the <code>Run</code> button.</p>
 <blockquote>
 <p>If you are unfamiliar with MS Paint, take a few minutes to play with it. In particular, notice the color selection box that appears on the upper-right of the application window.</p>
 </blockquote>
 <p><img alt="mspaint" src="../img/mspaint_toolbar.png" /></p>
 </li>
 <li>
-<p>Press <code>Ctrl+5</code> to spy on the UI.  Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> to spy on the Paint application. Notice several things about the behavior of the MS Paint application under the Object Spy.</p>
+<p>Press <code>Ctrl+5</code> to spy on the UI. Then, press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> to spy on the Paint application. Notice the following behaviors of the MS Paint application under the Object Spy:</p>
 <ol>
-<li>As you move the mouse inside the color box, the entire surrounding box will show a red highlight but the individual color tiles will not.</li>
-<li>Properties of the color box control have no clues on how to find a particular color.</li>
+<li>As you move the mouse inside the color box, the entire surrounding box will display a red highlight but the individual color tiles will not.</li>
+<li>Properties of the color box control do not provide clues for finding a particular color.</li>
 </ol>
 </li>
 </ol>
-<p>This combination makes it impossible for Rapise to identify and learn the colors as integral objects.</p>
-<p>The way in which Rapise can be <em>taught</em> to deal with the color box is by "simulating" it.</p>
-<p>In fact, Rapise will recognize these non-objects without you having to take particular action.  Let's discover this and what it means:</p>
+<p>This combination makes it impossible for Rapise to identify and learn colors as integral objects.</p>
+<p>Rapise can be <em>taught</em> to interact with the color box by "simulating" it.</p>
+<p>In fact, Rapise will recognize these non-objects without you needing to take any specific action. Let's explore what this means:</p>
 <ol>
-<li>Open a new test under Rapise; call it <code>MSPaint</code>.</li>
+<li>Open a new test in Rapise and name it <code>MSPaint</code>.</li>
 <li>Press the <code>Record</code> button on the application bar.</li>
-<li>When the <strong>Select an Application to Record</strong> dialog appears, clear all selection boxes in the library list box.  You will have to scroll that section of the dialog box to make sure all selections are clear.  We are choosing no loaded libraries so that Rapise will not be able to "cheat" and know about any objects on the screen.</li>
-<li>Select the Run Application tab.  Enter <code>mspaint</code> in the <strong>Full path to application</strong> edit box.  Press the <code>Run</code> button.
-    &gt; <strong>Note:</strong> Applications that reside in <code>C:\windows\system32</code> can be started by their names because <code>C:\windows\system32</code> must be in the system path.</li>
-<li>When the <strong>Recording Activity</strong> dialog is displayed, press <strong>Learn</strong> <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span></li>
-<li>Do a small amount of things in Paint.  For example:<ol>
-<li>Click on the red color in the palette.</li>
-<li>Click on the green color in the palette.</li>
-<li>Click on the blue color in the palette.</li>
+<li>When the <strong>Select an Application to Record</strong> dialog appears, clear all selection boxes in the library list. You may need to scroll this section of the dialog box to ensure all selections are cleared. We are choosing not to load any libraries so that Rapise cannot "cheat" by automatically recognizing objects on the screen.</li>
+<li>Select the Run Application tab. In the <strong>Full path to application</strong> edit box, enter <code>mspaint</code>. Then, press the <code>Run</code> button.
+    &gt; <strong>Note:</strong> Applications that reside in <code>C:\windows\system32</code> can be started by their names because <code>C:\windows\system32</code> are typically included in the system path.</li>
+<li>When the <strong>Recording Activity</strong> dialog appears, press <strong>Learn</strong> (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span>).</li>
+<li>Perform a few simple actions in Paint. For example:<ol>
+<li>Click the red color in the palette.</li>
+<li>Click the green color in the palette.</li>
+<li>Click the blue color in the palette.</li>
 </ol>
 </li>
 <li>
-<p>Look at the <strong>Recording Activity</strong> dialog grid.  It will be something like this:</p>
+<p>Examine the <strong>Recording Activity</strong> dialog grid. It should resemble the following:</p>
 <p><img alt="simulatedpaint" src="../img/deal_with_a_simulated_object1.png" /></p>
 <blockquote>
-<p>Notice that the three clicks in the color box were recorded as <strong>simulated</strong> objects.</p>
+<p>Notice that the three clicks within the color box were recorded as <strong>simulated</strong> objects.</p>
 </blockquote>
 </li>
 <li>
