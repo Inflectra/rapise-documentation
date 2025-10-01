@@ -1,6 +1,6 @@
 # Rapise Settings Dialog
 
-![options dialog, general tab](./img/options_dialog1.png)
+![options dialog, general tab](./img/options_dialog1.png){width=640}
 
 ## Purpose
 
@@ -11,16 +11,6 @@ Use the **Rapise Settings** dialog to change global options. Your changes will a
 Use the `Settings > Global` menu item.
 
 ## Global Settings
-
-### Misc
-
-![options.dialog.misc](./img/options_dialog4.png)
-
-*   **SplashScreen**: A splash screen is an image that appears while a program initializes. The Rapise splash screen looks like this:
-
-    ![splashscreen](./img/options_dialog3.png)
-
-    Set **SplashScreen** to **False** to prevent the splash screen from appearing.
 
 ### API
 
@@ -56,11 +46,51 @@ If no proxy is specified, Rapise uses the operating system's settings. Proxies c
 
 *   **Remember Debugger Layout**: If `True`, Rapise remembers the window layout for debug mode separately. For example, this may be useful if you want to work full screen while authoring a test and half-screen when debugging. This allows the AUT and the Rapise debugger to fit on the screen.
 
+### Directories
+
+*   **Help Files**: Path to a folder with help files.
+*   **Samples**: Path to a folder with application samples.
+*   **User Libraries**: Path to folder containing user-defined libraries (*.jslib).
+*   **User Scripts**: Path to folder used to search for include files.
+
 ### Execution
 
 ![execution](./img/options_dialog_execution.png)
 
 *   **JSEngineType**: Sets the preferred [JavaScript Engine](jscript_language_reference.md) (one of **Default**, **Node**, **WScript**), where **Default** means **Node**.
+
+### MCP Server
+
+*   **MCP Server Port**: Starts the MCP server on http://localhost:<port>/mcp. If the port is set to 0, no MCP server is started.
+
+### Misc
+
+![options.dialog.misc](./img/options_dialog4.png)
+
+*   **SplashScreen**: A splash screen is an image that appears while a program initializes. The Rapise splash screen looks like this:
+
+    ![splashscreen](./img/options_dialog3.png){width=480}
+
+    Set **SplashScreen** to **False** to prevent the splash screen from appearing.
+
+### Playback
+
+*   **Enable Execution Monitor**: Specifies whether the execution monitor dialog box is displayed during [playback](playback.md).
+
+### Recorder
+
+*   **FrameStyle**: Specifies which frame to draw around objects when you [Record](recording.md), [Learn](object_learning.md), and [Spy](object_spy.md).
+
+    The **Basic** frame is on the left and the **Modern** frame is on the right:
+
+    ![options dialog, framestyle basic](./img/options_dialog6.png) ![options dialog, framestyle modern](./img/options_dialog7.png)
+
+*   **DefaultSpy**: Specifies which of the various types of [Object Spy](object_spy.md) is displayed by default.
+*   **GenerateComments**: Set to **True** to automatically generate a JavaScript or RVL comment for each recorded action.
+
+### RVL Editor
+
+*   **AI Command Multiline Mode**: When set, pressing Enter while editing an AI command will add newline to the current command. Otherwise you need to explicitly enter multiline edit mode by pressing F2.
 
 ### Settings
 
@@ -78,23 +108,11 @@ If no proxy is specified, Rapise uses the operating system's settings. Proxies c
     ![options dialog, recent projects](./img/options_dialog8.png)
 
 *   **ShowCommonFileAliases**: This is a legacy setting, not needed since Rapise 6.0.
-*   **Enable Execution Monitor**: Specifies whether the execution monitor dialog box is displayed during [playback](playback.md).
 *   **ShowDashboardOnStartUp**: If **True**, the [Spira Dashboard](spira_dashboard_2.md) opens automatically when Rapise is opened.
 *   **ShowStartPageOnStartUp**: If **True**, the [Start Page](start_page.md) opens automatically when Rapise is opened.
 *   **Spira Integration**: Enables all dialogs and menus for [SpiraTest Integration](spiratest_integration.md).
 *   **Temp Folder**: The default folder for temporary tests.
 *   **Test Auto Upgrade**: If set to **True**, each opened `.sstest` file is automatically upgraded to the latest format.
-
-### Recorder
-
-*   **FrameStyle**: Specifies which frame to draw around objects when you [Record](recording.md), [Learn](object_learning.md), and [Spy](object_spy.md).
-
-    The **Basic** frame is on the left and the **Modern** frame is on the right:
-
-    ![options dialog, framestyle basic](./img/options_dialog6.png) ![options dialog, framestyle modern](./img/options_dialog7.png)
-
-*   **DefaultSpy**: Specifies which of the various types of [Object Spy](object_spy.md) is displayed by default.
-*   **GenerateComments**: Set to **True** to automatically generate a JavaScript or RVL comment for each recorded action.
 
 ### Text Editor
 

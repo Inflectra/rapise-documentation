@@ -43,6 +43,12 @@ Shows test execution status during playback.
 * **Pause** - Holds test execution until the button is pressed again.
 * **Hide** - Hides the execution monitor. The monitor can be permanently disabled in the [Options](options_dialog.md) dialog.
 
+## Replay RVL Selection
+
+Rapise now remembers the most recent selection of lines you executed in the RVL editor. To re-run that same selection instantly, use the keyboard shortcut: ++shift++ + **Play**.
+
+This feature is designed to streamline debugging. It allows you to efficiently repeat the common workflow of running a selection, analyzing the report, modifying your script, and then re-running the test without needing to select the lines again.
+
 ## See Also
 
 * For more information about the report, see [Automated Reporting](automated_reporting.md).

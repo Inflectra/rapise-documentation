@@ -56,6 +56,13 @@ You can create options that are local to the current testing framework. Simply c
 !!! note
     You can press ++shift+ctrl+q++ in the AI Dashboard to reveal additional and experimental settings.
 
+#### Inflectra.ai
+
+Rapise 8.6 introduces support for [Inflectra.ai](https://inflectra.ai). This integration enables users with an active Spira and Inflectra.ai account to generate [data, test scenarios](#chats), and [code](../RVL/AI.md) directly within Rapise. It simplifies the workflow by eliminating the need for separate accounts with external AI providers.
+Configuration is seamless. If [Inflectra.ai is enabled](https://spiradoc.inflectra.com/Spira-User-Manual/Inflectra-Ai-In-Spira/) in [your connected Spira instance](spiratest_integration.md#connecting-to-spiratest), it automatically becomes available in Rapise — no additional setup is required.
+
+<img src="/Guide/img/inflectra_ai.png" width="200"/>
+
 #### Amazon Bedrock
 
 Rapise 8.3 adds support for [Amazon Bedrock](https://aws.amazon.com/bedrock). To configure an Amazon Bedrock connection, specify the AWS Region, AWS Access Key, and AWS Secret Access Key.
