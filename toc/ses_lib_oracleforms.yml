@@ -4,6 +4,8 @@
 - 'OracleForms':
     - 'OracleForms Objects': 'Libraries/ses_lib_oracleforms.md'
 
+    - 'OracleForms': 'Libraries/OracleForms.md'
+
     - 'GlassMouseGrabProvider$Proxy': 'Libraries/GlassMouseGrabProvider$Proxy.md'
 
     - 'LWCheckbox': 'Libraries/LWCheckbox.md'

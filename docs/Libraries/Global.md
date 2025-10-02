@@ -475,7 +475,7 @@ Executes a command specified by the cmdLine parameter. Use to start external des
 to attach if the application is already running. Example: `Global.DoLaunch("calc.exe")`
 
 ```javascript
-Global.DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow, wait, parentProcess)
+Global.DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow, wait, parentProcess, redirectOutputPath, redirectErrorPath)
 ```
 
 
@@ -487,8 +487,10 @@ Global.DoLaunch(cmdLine, wrkDir, attachIfExists, attachToWindow, wait, parentPro
 | wrkDir | string |  Working directory. By default it is a directory of the test.<br>Optional, Default: ".". |
 | attachIfExists | boolean |  Try to find a process with the same executable path instead of launching it.<br>Optional, Default: "false". |
 | attachToWindow | string |  When attachIfExists is 'true' this parameter may be used to specify top window name to find a process to attach to.<br>Optional, Default: "". |
-| wait | bool |  Try to find a process with the same executable path instead of launching it. Requires Rapise 8.1.29.39+<br>Optional, Default: "false". |
+| wait | bool |  Wait for process end. Requires Rapise 8.1.29.39+<br>Optional, Default: "false". |
 | parentProcess | number \| string |  Optional parent process. By default parent process will be a current script's process. May be ID or executable path to the process. Requires Rapise 8.1.29.39+<br>Optional, Default: "0". |
+| redirectOutputPath | string |  Path where to save output. Use '<text>' if you want output returned as text.<br>Optional, Default: "". |
+| redirectErrorPath | string |  Path where to save errors. Use '<text>' if you want errors returned as text. If both redirectOutputPath and redirectErrorPath are set to '<text>' then returned string contains a mix of both output and error streams.<br>Optional, Default: "". |
 
 
 

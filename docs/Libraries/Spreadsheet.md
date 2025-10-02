@@ -43,6 +43,9 @@ Spreadsheet object. Use it to read and write Excel and text spreadsheets.
 |  [GetEOF](#geteof) | Gets EOF state. |
 |  [GetRange](#getrange) | Cell range used in DoSequential and in DoRandom. |
 |  [GetRowCount](#getrowcount) | Gets row count. |
+|  [GetSheetCount](#getsheetcount) | Get number of sheets in the Excel file (.xls, *.xlsx) |
+|  [GetSheetIndexByName](#getsheetindexbyname) | Finds a sheet index in the Excel file (.xls, *.xlsx) |
+|  [GetSheetNameByIndex](#getsheetnamebyindex) | Finds a sheet name in the Excel file (.xls, *.xlsx) by index |
 |  [SetCell](#setcell) | Sets cell value by its coordinates. |
 |  [SetRange](#setrange) | Cell range used in DoSequential and in DoRandom. |
 
@@ -683,6 +686,90 @@ number: Number of rows in the spreadsheet including the row with column names. -
 
 
 <a name="see.also.spreadsheet.getrowcount"></a>
+
+<a name="GetSheetCount"></a>    
+#### GetSheetCount
+
+Get number of sheets in the Excel file (.xls, *.xlsx)
+
+```javascript
+Spreadsheet.GetSheetCount(fileName)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| fileName | string |  Path to an Excel file. |
+
+
+
+
+**Returns:**
+
+number: Number of sheets
+
+
+
+<a name="see.also.spreadsheet.getsheetcount"></a>
+
+<a name="GetSheetIndexByName"></a>    
+#### GetSheetIndexByName
+
+Finds a sheet index in the Excel file (.xls, *.xlsx)
+
+```javascript
+Spreadsheet.GetSheetIndexByName(fileName, sheetName, startIndex)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| fileName | string |  Path to an Excel file. |
+| sheetName | string |  Sheet name to find. |
+| startIndex | number |  0-based index of the start sheet. It is 0 by default.<br>Optional. |
+
+
+
+
+**Returns:**
+
+number: 0-based index of the sheet, 'false' if not found
+
+
+
+<a name="see.also.spreadsheet.getsheetindexbyname"></a>
+
+<a name="GetSheetNameByIndex"></a>    
+#### GetSheetNameByIndex
+
+Finds a sheet name in the Excel file (.xls, *.xlsx) by index
+
+```javascript
+Spreadsheet.GetSheetNameByIndex(fileName, sheetIndex)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| fileName | string |  Path to an Excel file. |
+| sheetIndex | number |  0-based index of the sheet |
+
+
+
+
+**Returns:**
+
+string: Name of the sheet at sheetIndex
+
+
+
+<a name="see.also.spreadsheet.getsheetnamebyindex"></a>
 
 <a name="SetCell"></a>    
 #### SetCell
