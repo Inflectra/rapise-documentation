@@ -40,9 +40,68 @@ To run a single Rapise test, execute the following command:
 npx rapise <path to .sstest>
 ```
 
-#### Running RapiseLauncher
+#### Configuring the Spira Connection
 
-Before using RapiseLauncher for the first time, you must obtain a `RepositoryConnection.xml` file from a Windows machine where your [Spira connection credentials](../Guide/spiratest_integration.md#spiratest-server-connection) have been configured. After obtaining the file, you can edit it directly to change any configuration property except the API Key.
+RapiseLauncher offers three flexible ways to configure your connection to Spira. Choose the method that best suits your workflow, from initial setup to fully automated CI/CD pipelines.
+
+##### Manual Configuration
+
+This method is ideal for users who already have Rapise configured on a Windows machine and want to reuse those settings.
+
+1.  **Obtain the File:** Locate the `RepositoryConnection.xml` file on the Windows machine where your Spira connection is already configured in the Rapise application.
+2.  **Place the File:** Copy this file into the root directory of your project where you will run `npx rapiselauncher`.
+3.  **Run:** RapiseLauncher will automatically detect and use this file for its connection settings.
+
+You can manually edit this XML file to change properties like `SpiraServer` or `SpiraUser`.
+
+> **Important:** The `SpiraPassword` value in the file is an encrypted API Key. You **cannot** edit this value directly in a text editor. If you need to change your credentials, you must either use the `--set` option or allow the interactive setup to regenerate the file.
+
+##### Interactive Setup
+
+If you are setting up RapiseLauncher for the first time on a new machine without an existing configuration file, you can use the interactive mode.
+
+Simply run `rapiselauncher` without a `RepositoryConnection.xml` file and without using the `--set` flag. The process is as follows:
+
+1.  RapiseLauncher detects that no configuration is available.
+2.  It prompts you to enter the `SpiraServer` URL, `SpiraUser`, and `SpiraPassword` (this should be your plain-text API Key).
+3.  It then tests the connection using the details you provided.
+4.  If the connection is successful, it saves these details into a new `RepositoryConnection.xml` file in the default directory and proceeds to execute your command.
+
+This interactive mode is very useful for local development but is **not suitable for automated environments** like CI/CD, as it requires manual input.
+
+##### Dynamic Configuration
+
+The `--set` option allows you to provide Spira connection parameters directly on the command line. This is the preferred method for CI/CD environments as it is non-interactive and keeps credentials out of source control.
+
+The `--set` flag's sole purpose is to **create or update the configuration file on disk**.
+
+**Key Behavior:**
+When you use `--set`, RapiseLauncher will apply the specified settings to `RepositoryConnection.xml` and then **immediately exit**. It will not execute any tests in the same command.
+
+This creates a clear two-step workflow for automation:
+
+1.  **Configure:** Run `rapiselauncher` with `--set` parameters to ensure the environment is correctly configured.
+2.  **Execute:** Run `rapiselauncher` again, this time with your test parameters (`-p`, `-t`, etc.), to execute the tests using the newly saved configuration.
+
+**How it Works:**
+
+*   If `RepositoryConnection.xml` **exists**, the parameters provided via `--set` will update the corresponding values within that file.
+*   If `RepositoryConnection.pod` **does not exist**, a new file will be created with the settings you provide.
+
+**CI/CD Example:**
+
+```bash
+# Step 1: Set up the configuration. This command creates/updates the XML file and exits.
+npx rapiselauncher \
+  --set SpiraServer=$SPIRA_URL \
+  --set SpiraUser=$SPIRA_USERNAME \
+  --set SpiraPassword=$SPIRA_API_KEY
+
+# Step 2: Now that configuration is saved, execute the tests.
+npx rapiselauncher -t 101 --report test-results.xml
+```
+
+#### Running RapiseLauncher
 
 If `RepositoryConnection.xml` is in the same directory as your project or located in `~/.rapise`, you can launch RapiseLauncher with a simple command:
 
@@ -76,8 +135,33 @@ Options:
   -t, --testset  Test Set ID (comma-separated list)
       --windows  Run in Windows mode
       --details  Print results on exit
+      --report   Path to file for JUnit XML results output
+      --set      Set a Spira configuration parameter (e.g., --set SpiraServer=https://yourcompany.spiraservice.net/
+                 --set SpiraUser=FreddBloggs --set SpiraPassword=ApiKey)
   -h, --help     Show help
 ```
+
+##### Viewing and Reporting Test Results
+
+There are two primary ways to view the outcome of a test run:
+
+-   **Displaying a Summary (`--details`)**
+    The `--details` flag prints a summary of the test run results directly to the console upon completion. This is useful for a quick, immediate overview of the outcome.
+
+-   **Generating a JUnit XML Report (`--report`)**
+    For integration with CI/CD systems, use the `--report` option to generate a detailed test report in the **JUnit XML format**. This is a standard format widely supported by tools like Jenkins, GitLab CI, Azure DevOps, and AWS CodeBuild, allowing them to parse, display, and act upon the test results.
+
+**Example Usage:**
+
+```bash
+npx rapiselauncher -t 101,102 --report test-results.xml
+```
+
+This command runs test sets 101 and 102 and saves the results to a file named `test-results.xml`.
+
+Once generated, this XML file can be consumed by your CI/CD platform. For example, AWS CodeBuild can visualize the report like this:
+
+![](../Guide/img/aws_codebuild_junitxml.png){width=640}
 
 ### CI/CD Integration
 
