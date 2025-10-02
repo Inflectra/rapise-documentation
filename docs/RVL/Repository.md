@@ -8,7 +8,7 @@ In RVL, the Repository declaration is used to import objects from external repos
 
 Here, **path** refers to the `Objects.js` file that contains the object definitions, and **prefix** is a string you can specify to be appended to each object's ID.
 
-### Example:
+**Example**
 
 | Flow | Type       | Object   | Action | ParamName | ParamType | ParamValue |
 | ---- | ---------- | -------- | ------ | --------- | --------- | ---------- |
@@ -84,3 +84,35 @@ By default, the prefix is assigned as **&lt;test case name&gt;/**, where &lt;tes
 ## Preamble
 
 It is advisable to declare `Repository` entries in the RVL [preamble](./Preamble.md), which means placing them at the beginning of the script.
+
+## Common Repositories
+
+In addition to importing repositories directly in a sheet, RVL also supports **common repositories**.  
+These are repository declarations placed in [Common Sheets](Sheets.md#common-sheets) or in [Common.rvl.xlsx](Sheets.md#commonrvlxlsx).
+
+**Key points:**
+
+- Common repositories are declared in a **common sheet** (sheet name starting with `#`), typically `#Common` or `#Repos`.
+
+- Once declared, all objects from the repository are automatically available to **every sheet in the same workbook**.
+
+- When declared in **Common.rvl.xlsx**, the objects become available **framework-wide** to all workbooks and scripts.
+
+- This approach avoids repetition: instead of adding the same repository declaration in every sheet, you centralize it in one place.
+
+**Example (in `#Common` sheet):**
+
+| Flow | Type       | Object | Action | ParamName | ParamType | ParamValue                                      |
+| ---- | ---------- | ------ | ------ | --------- | --------- | ----------------------------------------------- |
+|      | Repository | Nav/   |        |           |           | %WORKDIR%\TestCases\Views\Nav\Objects.js        |
+|      | Repository | Authors/ |      |           |           | %WORKDIR%\TestCases\Views\Authors\Objects.js    |
+
+Now all sheets in the workbook can use objects like `Nav/Authors` or `Authors/Create_New`.
+
+**When to use:**
+
+- Place shared repositories in a workbook-level `#Common` sheet when they are needed across multiple sheets in the same `.rvl.xlsx`.
+
+- Place them in **Common.rvl.xlsx** when they are needed across the **entire testing framework**.
+
+See [Common Sheets](Sheets.md#common-sheets) and [Common.rvl.xlsx](Sheets.md#commonrvlxlsx) for more details.

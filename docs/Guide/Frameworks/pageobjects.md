@@ -58,6 +58,58 @@ There are two ways of creating a **Page Object (PO)** or **Module**:
     -   Right-click on the **Page Objects / Modules** node in the [object tree](../object_tree.md).
     ![Add Context Menu](./img/add_page_object_context_menu.png)
 
+### Naming and Namespaces
+
+A Page Object name should be **alphanumeric**: this means it must consist of letters (A–Z, a–z), numbers (0–9), or underscores (`_`). It cannot contain spaces or special characters such as `-`, `@`, `#`, or `.`. Examples of valid names include `LoginScreen`, `CartPage`, `_AdminPanel1`. Invalid names would be `login screen`, `cart-page`, or `123Main`.
+
+By default, if you create an object called `LoginScreen`, it will be placed in the **root namespace**:
+
+![LoginScreen Create](img/pageobjects_login_screen.png)
+
+![LoginScreen Module](img/pageobjects_root_object.png)
+
+As your project grows, you will need to group and organize Page Objects. This is where **namespaces** come into play.
+
+Namespaces use a dot-separated notation similar to **.NET namespaces** or **Java packages**. You can define them as `group.Module`, `group.subgroup.Module`, etc. For example:
+
+- `crm.leads.Editor`
+- `ecommerce.checkout.Cart`
+- `mobile.login.Screen`
+
+Package naming rules are the same as for identifiers: lowercase names are often used for groups (`crm`, `ecommerce`, `mobile`), while classes or modules typically use PascalCase (`Editor`, `Cart`, `Screen`). Once a namespace is assigned, it cannot be changed later.
+
+For example, if you define an object as `crm.leads.Editor`:
+
+![](img/pageobjects_crm_leads_editor.png)
+
+It will appear in a hierarchy under `crm > leads > Editor`:
+
+![](img/pageobjects_groups.png)
+
+### Accessing Objects with Namespaces
+
+In RVL you may refer to an object using its full namespace:
+
+| Flow | Type   | Object                | Action    | ParamName | ParamType | ParamValue |
+| ---- | ------ | --------------------- | --------- | --------- | --------- | ---------- |
+|      | Action | **crm.contacts.Editor** | DoRefresh |           |           |           |
+
+In JavaScript:
+
+```js
+SeS("crm.contacts.Editor").DoRefresh();
+//or
+crm.contacts.Editor.DoRefresh();
+```
+
+When using [AI commands](../../RVL/AI.md#including-and-excluding-modules--page-objects), you may include or exclude Page Objects by namespace. For example:
+
+```
+## #module crm.leads.*
+```
+
+This will include everything inside the `crm.leads` namespace.
+
 ### Page Object - RVL vs JS
 
 When you create a Page Object, you have two options: RVL mode or JavaScript mode.
@@ -87,6 +139,70 @@ When in RVL mode, adding a sheet creates a new action, with the exception of two
 ![PO Description](./img/pageobjects_po_description.png)
 
 Any other sheet is considered an action. The action name should be alphanumeric, meaning it should not contain spaces and should start with a letter or an underscore.
+
+### RVL Action Parameters
+
+When adding a Page Object action in the RVL editor you may specify **action parameters** directly in the action **signature**. This signature defines the parameter list, their types, and optional default values.  
+
+Supported formats:
+
+- **No parameters**
+  ```DoAction```  
+  or  
+  ```DoAction()```  
+
+- **String parameters**
+  ```DoAction(param1, param2)```  
+
+- **Typed parameters**
+  ```DoAction(/**string*/strParam, /**number*/numParam)```  
+  Types supported:
+  - `string` → text values
+  - `number` → covers int, float, double
+  - `boolean` → true/false values
+  - `object` → any other type or complex object
+
+- **Parameters with default values**  
+  You may also define defaults. Rapise infers the type from the default:
+  ```DoAction(param1 = "default", param2 = 5)```  
+  - `"default"` → string  
+  - `5` → number  
+  - `true` / `false` → boolean  
+
+This way, the signature both documents the parameters and ensures correct typing inside the RVL action.
+
+---
+
+**Examples**
+
+1. **Parameters with defaults in the action call:**
+
+```DoAdd(name=Jim,tel="+1323674",age=41,mail=j@a.co)```
+
+![Sign1](img/pageobjects_doadd_sign1.png)
+
+Produces this result:
+
+![Sign1 Result](img/pageobjects_doadd_sign1_result.png)
+
+---
+
+2. **Typed parameters in the action signature:**
+
+```DoAdd(/**string*/name,/**string*/tel,/**number*/age)```
+
+![Sign2](img/pageobjects_doadd_sign2.png)
+
+Produces this result:
+
+![Sign2 Result](img/pageobjects_doadd_sign2_result.png)
+
+---
+
+In summary:  
+- Use plain names when you only need parameter order.  
+- Add types via JSDoc-style comments (`/**type*/`) to make them explicit.  
+- Provide default values where appropriate to make actions easier to reuse without always specifying inputs.
 
 ### JavaScript Mode
 

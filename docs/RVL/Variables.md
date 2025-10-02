@@ -53,6 +53,31 @@ The special parameter `defaultValue` in a global variable definition allows you 
 
 This helps make sheets that use global variables executable standalone. i.e., you can use [Play This Sheet](../Guide/rvl_editor.md#context-menu) in RVL and be sure that the global variable will have a value.
 
+## Common Variables
+
+In addition to local and global variables, RVL also supports **common variables**.  
+These are variables declared in [Common Sheets](Sheets.md#common-sheets) or in [Common.rvl.xlsx](Sheets.md#commonrvlxlsx).
+
+**Key points:**
+
+- Common variables are declared just like local or global variables, but they live in a **common sheet** (a sheet whose name starts with `#`).
+- They are automatically visible to **all sheets** in the same workbook.
+- When defined in **Common.rvl.xlsx**, they become available across the **entire testing framework**.
+- The value of a common variable can be updated in one sheet and then reused in another, providing an easy way to share state across test flows.
+- If a sheet is played from outside (e.g., via `RVL.DoPlayScript`), common variables reset to their **default values** from the common sheet.
+
+**Example (in `#Vars` common sheet):**
+
+| Flow | Type     | Object | Action | ParamName | ParamType | ParamValue |
+| ---- | -------- | ------ | ------ | --------- | --------- | ---------- |
+|      | Variable |        |        | Age       | number    | 30         |
+
+If a test sheet sets `Age = 38` and then calls another sheet, the new sheet will see `Age = 38`.  
+When executed externally, `Age` resets back to the default value `30`.
+
+See [Common Sheets](Sheets.md#common-sheets) and [Common.rvl.xlsx](Sheets.md#commonrvlxlsx) for more details.
+
+
 ## Assigning
 
 ### Assignment Expression

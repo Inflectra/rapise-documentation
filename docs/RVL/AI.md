@@ -329,6 +329,89 @@ In this scenario, `ToolsPrompt.txt` itself includes `AI\ReportingPrompt.txt`, re
 
 As seen above, conditions from both prompts are applied when generating the code.
 
+## Including and Excluding Modules / Page Objects
+
+By default, the Rapise AI command processor considers **all Page Objects** when generating commands. However, in some scenarios you may want more fine-grained control over which Page Objects are included or excluded.
+
+To guide the AI, use the following syntax:
+
+```
+##  #module <name1>,<name2>,...
+```
+
+For example:
+
+```
+##  #module LoginForm,Book*
+```
+
+This hints that only `LoginForm` and all Page Objects starting with `Book` (such as `BookList`, `BookEdit`, `BookView`) should be considered for AI command generation.
+
+To **exclude** Page Objects, prefix their names with `!`. The special value `!*` excludes all modules, which is useful if you want to include only a specific subset.
+
+```
+##  #module !LoginForm,Book*
+```
+
+You can also split include/exclude rules across multiple lines:
+
+```
+##  #module LoginForm
+##  #module AuthorsList
+##  #module !Book*
+```
+
+### Examples
+
+Suppose we have two modules: `crm.leads.Editor` and `crm.contacts.Editor`, both with a `DoAdd` command.
+
+![CRM Modules](img/AI_crm_modules.png)
+
+And we have the AI command:
+
+```
+Add Jim Hocking, +3912348875, jimh1995@atmyspace.com
+```
+
+From the AI perspective, either `crm.leads.Editor` or `crm.contacts.Editor` could be chosen. The following examples show how to control this.
+
+**Example 1: Include Contacts**
+
+If we want to make sure only contacts are considered:
+
+```
+##  #module crm.contacts.Editor
+```
+
+or equivalently:
+
+```
+##  #module crm.contacts.*
+```
+
+![Include Contacts](img/AI_include_contacts.png)
+
+**Example 2: Exclude Contacts**
+
+If we know we do not want to deal with contacts:
+
+```
+##  #module !crm.contacts.*
+```
+
+![Exclude Contacts](img/AI_exclude_contacts.png)
+
+**Example 3: Mix Include and Exclude**
+
+You may mix include and exclude rules on the same line or across multiple lines:
+
+```
+##  #module !crm,*leads*
+```
+
+![Include and Exclude](img/AI_include_and_exclude.png)
+
+
 ## Naming
 
 With the introduction of AI, the naming of objects, actions, and methods, as well as the use of descriptive comments, becomes even more important. The better you express your application and API, the better the AI can combine them to implement the test. All of this together helps to improve both the quality of the test cases and the integrity of the testing framework.

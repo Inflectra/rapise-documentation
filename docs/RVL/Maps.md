@@ -44,6 +44,36 @@ In-place map data is defined directly in the RVL script. Rows in an in-place map
 
 External maps are defined in an external spreadsheet, file, or database.
 
+## Common Maps
+
+In addition to in-place and external maps, RVL supports **common maps**.  
+These are maps declared in [Common Sheets](Sheets.md#common-sheets) or in [Common.rvl.xlsx](Sheets.md#commonrvlxlsx).
+
+**Key points:**
+
+- Common maps are defined in a **common sheet** (sheet name starts with `#`) and are automatically visible to **all sheets** in the same workbook.
+
+- When defined inside **Common.rvl.xlsx**, the maps become available **framework-wide** to every RVL workbook.
+
+- The **iteration state** of a common map (e.g., current row/column) is shared across sheets **within the same workbook play**—useful for coordinated, data-driven flows.
+
+- If a sheet is started **from another script/workbook** (e.g., via `RVL.DoPlayScript`), the common map resets to its **default state** as defined in the common sheet.
+
+- You can still **override or pass** a map into a called sheet (see [Passing Maps](Sheets.md#passing-maps)).
+
+**Example (in `#Maps` common sheet):**
+
+| Flow | Type   | Object | Action | ParamName | ParamType | ParamValue |
+| ---- | ------ | ------ | ------ | --------- | --------- | ---------- |
+| Map  | Rows   | Logins |        |           |           |            |
+|      | Login  | Pass   |        |           |           |            |
+|      | John   | p1     |        |           |           |            |
+|      | Sarah  | p2     |        |           |           |            |
+| End  | of Map |        |        |           |           |            |
+
+Any sheet in the workbook can now iterate `Logins` (e.g., via [Loop](Loops.md#map)) or reference its values directly.
+
+
 ## Using Maps
 
 Once a map is defined, it may be used as a regular [Object](../Libraries/Map.md).
