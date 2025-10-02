@@ -90,7 +90,7 @@ If no proxy is specified, Rapise uses the operating system's settings. Proxies c
 
 ### RVL Editor
 
-*   **AI Command Multiline Mode**: When set, pressing Enter while editing an AI command will add newline to the current command. Otherwise you need to explicitly enter multiline edit mode by pressing F2.
+*   **AI Command Multiline Mode**: When set, pressing Enter while editing an AI command will add newline to the current command. Otherwise you need to explicitly enter multiline edit mode by pressing ++f2++.
 
 ### Settings
 
