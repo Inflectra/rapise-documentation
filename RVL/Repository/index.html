@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4110,13 +4110,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#adding-an-external-repository" class="md-nav__link">
     Adding an External Repository
   </a>
@@ -4147,6 +4140,13 @@
         <li class="md-nav__item">
   <a href="#preamble" class="md-nav__link">
     Preamble
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-repositories" class="md-nav__link">
+    Common Repositories
   </a>
   
 </li>
@@ -7599,6 +7599,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/ses_lib_oracleforms/" class="md-nav__link">
         OracleForms Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
       </a>
     </li>
   
@@ -11117,6 +11129,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11359,13 +11383,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#adding-an-external-repository" class="md-nav__link">
     Adding an External Repository
   </a>
@@ -11396,6 +11413,13 @@
         <li class="md-nav__item">
   <a href="#preamble" class="md-nav__link">
     Preamble
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-repositories" class="md-nav__link">
+    Common Repositories
   </a>
   
 </li>
@@ -11440,7 +11464,7 @@
 </tbody>
 </table>
 <p>Here, <strong>path</strong> refers to the <code>Objects.js</code> file that contains the object definitions, and <strong>prefix</strong> is a string you can specify to be appended to each object's ID.</p>
-<h3 id="example">Example:<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<p><strong>Example</strong></p>
 <table>
 <thead>
 <tr>
@@ -11550,6 +11574,69 @@
 <p>By default, the prefix is assigned as <strong>&lt;test case name&gt;/</strong>, where &lt;test case name&gt; represents the name of the test case that owns the repository, and <strong>/</strong> is used as a delimiter for readability.</p>
 <h2 id="preamble">Preamble<a class="headerlink" href="#preamble" title="Permanent link">&para;</a></h2>
 <p>It is advisable to declare <code>Repository</code> entries in the RVL <a href="../Preamble/">preamble</a>, which means placing them at the beginning of the script.</p>
+<h2 id="common-repositories">Common Repositories<a class="headerlink" href="#common-repositories" title="Permanent link">&para;</a></h2>
+<p>In addition to importing repositories directly in a sheet, RVL also supports <strong>common repositories</strong>.<br />
+These are repository declarations placed in <a href="../Sheets/#common-sheets">Common Sheets</a> or in <a href="../Sheets/#commonrvlxlsx">Common.rvl.xlsx</a>.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>
+<p>Common repositories are declared in a <strong>common sheet</strong> (sheet name starting with <code>#</code>), typically <code>#Common</code> or <code>#Repos</code>.</p>
+</li>
+<li>
+<p>Once declared, all objects from the repository are automatically available to <strong>every sheet in the same workbook</strong>.</p>
+</li>
+<li>
+<p>When declared in <strong>Common.rvl.xlsx</strong>, the objects become available <strong>framework-wide</strong> to all workbooks and scripts.</p>
+</li>
+<li>
+<p>This approach avoids repetition: instead of adding the same repository declaration in every sheet, you centralize it in one place.</p>
+</li>
+</ul>
+<p><strong>Example (in <code>#Common</code> sheet):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Repository</td>
+<td>Nav/</td>
+<td></td>
+<td></td>
+<td></td>
+<td>%WORKDIR%\TestCases\Views\Nav\Objects.js</td>
+</tr>
+<tr>
+<td></td>
+<td>Repository</td>
+<td>Authors/</td>
+<td></td>
+<td></td>
+<td></td>
+<td>%WORKDIR%\TestCases\Views\Authors\Objects.js</td>
+</tr>
+</tbody>
+</table>
+<p>Now all sheets in the workbook can use objects like <code>Nav/Authors</code> or <code>Authors/Create_New</code>.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>
+<p>Place shared repositories in a workbook-level <code>#Common</code> sheet when they are needed across multiple sheets in the same <code>.rvl.xlsx</code>.</p>
+</li>
+<li>
+<p>Place them in <strong>Common.rvl.xlsx</strong> when they are needed across the <strong>entire testing framework</strong>.</p>
+</li>
+</ul>
+<p>See <a href="../Sheets/#common-sheets">Common Sheets</a> and <a href="../Sheets/#commonrvlxlsx">Common.rvl.xlsx</a> for more details.</p>
                 
               
               

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4072,6 +4072,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#common-variables" class="md-nav__link">
+    Common Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assigning" class="md-nav__link">
     Assigning
   </a>
@@ -7663,6 +7670,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
         GlassMouseGrabProvider$Proxy
       </a>
@@ -11171,6 +11190,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11447,6 +11478,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#common-variables" class="md-nav__link">
+    Common Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assigning" class="md-nav__link">
     Assigning
   </a>
@@ -11679,6 +11717,45 @@
 </div>
 </div>
 <p>This helps make sheets that use global variables executable standalone. i.e., you can use <a href="../../Guide/rvl_editor/#context-menu">Play This Sheet</a> in RVL and be sure that the global variable will have a value.</p>
+<h2 id="common-variables">Common Variables<a class="headerlink" href="#common-variables" title="Permanent link">&para;</a></h2>
+<p>In addition to local and global variables, RVL also supports <strong>common variables</strong>.<br />
+These are variables declared in <a href="../Sheets/#common-sheets">Common Sheets</a> or in <a href="../Sheets/#commonrvlxlsx">Common.rvl.xlsx</a>.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>Common variables are declared just like local or global variables, but they live in a <strong>common sheet</strong> (a sheet whose name starts with <code>#</code>).</li>
+<li>They are automatically visible to <strong>all sheets</strong> in the same workbook.</li>
+<li>When defined in <strong>Common.rvl.xlsx</strong>, they become available across the <strong>entire testing framework</strong>.</li>
+<li>The value of a common variable can be updated in one sheet and then reused in another, providing an easy way to share state across test flows.</li>
+<li>If a sheet is played from outside (e.g., via <code>RVL.DoPlayScript</code>), common variables reset to their <strong>default values</strong> from the common sheet.</li>
+</ul>
+<p><strong>Example (in <code>#Vars</code> common sheet):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Variable</td>
+<td></td>
+<td></td>
+<td>Age</td>
+<td>number</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p>If a test sheet sets <code>Age = 38</code> and then calls another sheet, the new sheet will see <code>Age = 38</code>.<br />
+When executed externally, <code>Age</code> resets back to the default value <code>30</code>.</p>
+<p>See <a href="../Sheets/#common-sheets">Common Sheets</a> and <a href="../Sheets/#commonrvlxlsx">Common.rvl.xlsx</a> for more details.</p>
 <h2 id="assigning">Assigning<a class="headerlink" href="#assigning" title="Permanent link">&para;</a></h2>
 <h3 id="assignment-expression">Assignment Expression<a class="headerlink" href="#assignment-expression" title="Permanent link">&para;</a></h3>
 <p>This line declares and assigns the value <em>5</em> to a variable <code>MyVar2</code>:</p>

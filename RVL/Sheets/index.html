@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -3975,8 +3975,43 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#preamble" class="md-nav__link">
+    Preamble
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-in-sheets" class="md-nav__link">
+    Variables in Sheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-repositories" class="md-nav__link">
+    Importing Repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rvl-file" class="md-nav__link">
     RVL File
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-sheets" class="md-nav__link">
+    Common Sheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commonrvlxlsx" class="md-nav__link">
+    Common.rvl.xlsx
   </a>
   
 </li>
@@ -7595,6 +7630,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
         GlassMouseGrabProvider$Proxy
       </a>
@@ -11103,6 +11150,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11366,8 +11425,43 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#preamble" class="md-nav__link">
+    Preamble
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-in-sheets" class="md-nav__link">
+    Variables in Sheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-repositories" class="md-nav__link">
+    Importing Repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rvl-file" class="md-nav__link">
     RVL File
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-sheets" class="md-nav__link">
+    Common Sheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commonrvlxlsx" class="md-nav__link">
+    Common.rvl.xlsx
   </a>
   
 </li>
@@ -11423,6 +11517,9 @@
 <p>For example, there may be a sheet called <code>Login</code> that can be reused by <strong>CreateNewBook</strong>, <strong>CreateExistingBook</strong>, and other test scenarios that require <strong>Login</strong> logic.</p>
 <p>The default sheet name is <code>RVL</code>. You can rename it and add more sheets.</p>
 <p>An RVL sheet is executable when it has 7 predefined <a href="../Columns/">Columns</a>. A workbook may contain both executable and data sheets.</p>
+<p>Besides regular executable and data sheets, RVL also supports <strong>common sheets</strong>.<br />
+These sheets provide a way to centralize shared variables, maps, and repository definitions so they can be reused across multiple sheets.<br />
+See <a href="#common-sheets">Common Sheets</a> for details.</p>
 <h2 id="calling-sheets">Calling Sheets<a class="headerlink" href="#calling-sheets" title="Permanent link">&para;</a></h2>
 <p>You can make calls between scripts using <a href="../../Libraries/RVL/#doplayscript">RVL.DoPlayScript</a> and <a href="../../Libraries/RVL/#doplaysheet">RVL.DoPlaySheet</a>.</p>
 <h2 id="passing-parameters">Passing Parameters<a class="headerlink" href="#passing-parameters" title="Permanent link">&para;</a></h2>
@@ -11664,8 +11761,239 @@
 </table>
 </div>
 </div>
+<h2 id="preamble">Preamble<a class="headerlink" href="#preamble" title="Permanent link">&para;</a></h2>
+<p>Each RVL sheet may begin with a <strong>preamble</strong>—a section containing common data definitions such as variables, maps, and repository imports. The preamble is executed before any actions, assertions, loops, or conditions in the sheet. This ensures that all necessary data and objects are available for the main script logic.</p>
+<p>The preamble ends at the first row containing an action, assertion, loop, or condition. For example:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Variable</td>
+<td></td>
+<td>Login</td>
+<td>string</td>
+<td>librarian</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Variable</td>
+<td>Global</td>
+<td>g_password</td>
+<td>string</td>
+<td>librarian</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Map</td>
+<td>Rows</td>
+<td>MyMap1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Col</td>
+<td>Col1</td>
+<td>Col2</td>
+<td>Col3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>r1</td>
+<td>r11</td>
+<td>r12</td>
+<td>r13</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td>of Map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Action</td>
+<td>Tester</td>
+<td>Message</td>
+<td>message</td>
+<td>string</td>
+<td>Starting Script</td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="../Preamble/">Sheet Preamble</a> for more details.</p>
+<h2 id="variables-in-sheets">Variables in Sheets<a class="headerlink" href="#variables-in-sheets" title="Permanent link">&para;</a></h2>
+<p>Variables can be declared in the preamble or anywhere in the sheet. They are used to store intermediate results, pass data between actions, and share values with JavaScript code. Variables may be local (visible only within the sheet) or global (shared across sheets and scripts).</p>
+<p>Example variable declaration:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Variable</td>
+<td></td>
+<td></td>
+<td>MyVar1</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Global variable with default value:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Variable</td>
+<td>Global</td>
+<td></td>
+<td>g_loginName</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Param</td>
+<td></td>
+<td></td>
+<td>defaultValue</td>
+<td>string</td>
+<td>librarian</td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="../Variables/">Variables</a> for more information.</p>
+<h2 id="importing-repositories">Importing Repositories<a class="headerlink" href="#importing-repositories" title="Permanent link">&para;</a></h2>
+<p>To use objects from external repositories in a sheet, declare a <strong>Repository</strong> entry in the preamble. This imports objects and makes them available for use in actions.</p>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Repository</td>
+<td>Nav/</td>
+<td></td>
+<td>%WORKDIR%\TestCases\Views\Nav\Objects.js</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Objects from the repository can then be referenced in the sheet using their prefixed names (e.g., "Nav/Authors").</p>
+<p>See <a href="../Repository/">Repository</a> for more details.</p>
 <h2 id="rvl-file">RVL File<a class="headerlink" href="#rvl-file" title="Permanent link">&para;</a></h2>
 <p>The default file format for RVL scripts is an Excel workbook, which makes it easier to combine data with script logic. Any RVL file has the <code>.rvl.xlsx</code> extension and can be opened directly in <strong>MS Excel</strong>.</p>
+<h2 id="common-sheets">Common Sheets<a class="headerlink" href="#common-sheets" title="Permanent link">&para;</a></h2>
+<p>A <strong>common sheet</strong> in RVL is a special sheet within an <code>.rvl.xlsx</code> workbook whose name starts with <code>#</code>, such as <code>#Common</code>, <code>#Vars</code>, or <code>#Maps</code>. Common sheets are used to define shared data—variables, maps, and repositories—that are accessible from all other sheets in the same workbook. So each time you are creating an RVL sheet whose name starts with <code>#</code> you are adding a <strong>common sheet</strong>.</p>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>
+<p><strong>Preamble only:</strong> Common sheets may only contain preamble content (see <a href="../Preamble/">Preamble</a>). This means you can define Variables, Maps, and Repositories, but you cannot include actions, assertions, loops, or conditions.</p>
+</li>
+<li>
+<p><strong>Global visibility:</strong> Any variable, map, or repository defined in a common sheet is automatically visible and accessible in all other sheets within the same <code>.rvl.xlsx</code> file.</p>
+</li>
+<li>
+<p><strong>Local variable sharing:</strong> The value of a local variable defined in a common sheet is shared between sequential script calls within the same workbook. For example, if the main sheet assigns a value to a local variable defined in <code>#Vars</code> and then calls another sheet, the new sheet will see the updated value.</p>
+</li>
+<li>
+<p><strong>Reset on external call:</strong> If a sheet is played indirectly (e.g., from another RVL script or via JavaScript using <code>RVL.DoPlayScript</code>), all local variable values are reset to their defaults as defined in the common sheet.</p>
+</li>
+<li>
+<p><strong>Map state sharing:</strong> If a map is defined in a common sheet and is used or iterated in one sheet, its state (such as the current row) is shared with other sheets called within the same script. This allows for coordinated data-driven flows across multiple sheets.</p>
+</li>
+</ul>
+<p><strong>Example:</strong>
+Suppose you have a <code>#Vars</code> sheet with the following content:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Variable</td>
+<td></td>
+<td></td>
+<td>Age</td>
+<td>number</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p>If the main sheet assigns <code>Age = 38</code> and then calls another sheet, the called sheet will see <code>Age = 38</code>. However, if the sheet is played from another script, <code>Age</code> will be reset to <code>30</code>.</p>
+<p>Common sheets are a powerful way to centralize and share configuration, test data, and object repositories across multiple test flows in a single RVL workbook.</p>
+<h2 id="commonrvlxlsx">Common.rvl.xlsx<a class="headerlink" href="#commonrvlxlsx" title="Permanent link">&para;</a></h2>
+<p>The <strong>Common.rvl.xlsx</strong> file is a special workbook that extends the concept of common sheets to the entire testing framework.</p>
+<ol>
+<li>There is typically <strong>one Common.rvl.xlsx per testing framework</strong>.</li>
+<li>Once defined, it is automatically attached to every RVL sheet in the framework. All variables, maps, and repositories declared in it are therefore available globally.</li>
+<li>Unlike per-workbook common sheets, <strong>all sheet names inside Common.rvl.xlsx are treated as preambles</strong> regardless of their actual names.</li>
+<li>The logic is the same as with <a href="#common-sheets">Common Sheets</a>, but at the <strong>framework level</strong> instead of within a single <code>.rvl.xlsx</code>.</li>
+<li>A Common.rvl.xlsx can be created directly from the <strong>Object tree → Shared → New Common.rvl.xlsx</strong> <a href="../../Guide/object_tree/#shared-node-context-menu">context menu</a>.</li>
+</ol>
+<p>This makes Common.rvl.xlsx the central location for defining framework-wide defaults, shared test data, and reusable repositories, ensuring consistency across all RVL scripts.</p>
                 
               
               

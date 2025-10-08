@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -519,6 +519,40 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#configuring-the-spira-connection" class="md-nav__link">
+    Configuring the Spira Connection
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring the Spira Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-configuration" class="md-nav__link">
+    Manual Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-setup" class="md-nav__link">
+    Interactive Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-configuration" class="md-nav__link">
+    Dynamic Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#running-rapiselauncher" class="md-nav__link">
     Running RapiseLauncher
   </a>
@@ -529,6 +563,13 @@
           <li class="md-nav__item">
   <a href="#command-line" class="md-nav__link">
     Command Line
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-and-reporting-test-results" class="md-nav__link">
+    Viewing and Reporting Test Results
   </a>
   
 </li>
@@ -7689,6 +7730,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
         GlassMouseGrabProvider$Proxy
       </a>
@@ -11197,6 +11250,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11490,6 +11555,40 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#configuring-the-spira-connection" class="md-nav__link">
+    Configuring the Spira Connection
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring the Spira Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-configuration" class="md-nav__link">
+    Manual Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-setup" class="md-nav__link">
+    Interactive Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-configuration" class="md-nav__link">
+    Dynamic Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#running-rapiselauncher" class="md-nav__link">
     Running RapiseLauncher
   </a>
@@ -11500,6 +11599,13 @@
           <li class="md-nav__item">
   <a href="#command-line" class="md-nav__link">
     Command Line
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-and-reporting-test-results" class="md-nav__link">
+    Viewing and Reporting Test Results
   </a>
   
 </li>
@@ -11601,8 +11707,55 @@
 <p>To run a single Rapise test, execute the following command:</p>
 <div class="highlight"><pre><span></span><code>npx rapise &lt;path to .sstest&gt;
 </code></pre></div>
+<h4 id="configuring-the-spira-connection">Configuring the Spira Connection<a class="headerlink" href="#configuring-the-spira-connection" title="Permanent link">&para;</a></h4>
+<p>RapiseLauncher offers three flexible ways to configure your connection to Spira. Choose the method that best suits your workflow, from initial setup to fully automated CI/CD pipelines.</p>
+<h5 id="manual-configuration">Manual Configuration<a class="headerlink" href="#manual-configuration" title="Permanent link">&para;</a></h5>
+<p>This method is ideal for users who already have Rapise configured on a Windows machine and want to reuse those settings.</p>
+<ol>
+<li><strong>Obtain the File:</strong> Locate the <code>RepositoryConnection.xml</code> file on the Windows machine where your Spira connection is already configured in the Rapise application.</li>
+<li><strong>Place the File:</strong> Copy this file into the root directory of your project where you will run <code>npx rapiselauncher</code>.</li>
+<li><strong>Run:</strong> RapiseLauncher will automatically detect and use this file for its connection settings.</li>
+</ol>
+<p>You can manually edit this XML file to change properties like <code>SpiraServer</code> or <code>SpiraUser</code>.</p>
+<blockquote>
+<p><strong>Important:</strong> The <code>SpiraPassword</code> value in the file is an encrypted API Key. You <strong>cannot</strong> edit this value directly in a text editor. If you need to change your credentials, you must either use the <code>--set</code> option or allow the interactive setup to regenerate the file.</p>
+</blockquote>
+<h5 id="interactive-setup">Interactive Setup<a class="headerlink" href="#interactive-setup" title="Permanent link">&para;</a></h5>
+<p>If you are setting up RapiseLauncher for the first time on a new machine without an existing configuration file, you can use the interactive mode.</p>
+<p>Simply run <code>rapiselauncher</code> without a <code>RepositoryConnection.xml</code> file and without using the <code>--set</code> flag. The process is as follows:</p>
+<ol>
+<li>RapiseLauncher detects that no configuration is available.</li>
+<li>It prompts you to enter the <code>SpiraServer</code> URL, <code>SpiraUser</code>, and <code>SpiraPassword</code> (this should be your plain-text API Key).</li>
+<li>It then tests the connection using the details you provided.</li>
+<li>If the connection is successful, it saves these details into a new <code>RepositoryConnection.xml</code> file in the default directory and proceeds to execute your command.</li>
+</ol>
+<p>This interactive mode is very useful for local development but is <strong>not suitable for automated environments</strong> like CI/CD, as it requires manual input.</p>
+<h5 id="dynamic-configuration">Dynamic Configuration<a class="headerlink" href="#dynamic-configuration" title="Permanent link">&para;</a></h5>
+<p>The <code>--set</code> option allows you to provide Spira connection parameters directly on the command line. This is the preferred method for CI/CD environments as it is non-interactive and keeps credentials out of source control.</p>
+<p>The <code>--set</code> flag's sole purpose is to <strong>create or update the configuration file on disk</strong>.</p>
+<p><strong>Key Behavior:</strong>
+When you use <code>--set</code>, RapiseLauncher will apply the specified settings to <code>RepositoryConnection.xml</code> and then <strong>immediately exit</strong>. It will not execute any tests in the same command.</p>
+<p>This creates a clear two-step workflow for automation:</p>
+<ol>
+<li><strong>Configure:</strong> Run <code>rapiselauncher</code> with <code>--set</code> parameters to ensure the environment is correctly configured.</li>
+<li><strong>Execute:</strong> Run <code>rapiselauncher</code> again, this time with your test parameters (<code>-p</code>, <code>-t</code>, etc.), to execute the tests using the newly saved configuration.</li>
+</ol>
+<p><strong>How it Works:</strong></p>
+<ul>
+<li>If <code>RepositoryConnection.xml</code> <strong>exists</strong>, the parameters provided via <code>--set</code> will update the corresponding values within that file.</li>
+<li>If <code>RepositoryConnection.pod</code> <strong>does not exist</strong>, a new file will be created with the settings you provide.</li>
+</ul>
+<p><strong>CI/CD Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Step 1: Set up the configuration. This command creates/updates the XML file and exits.</span>
+npx<span class="w"> </span>rapiselauncher<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--set<span class="w"> </span><span class="nv">SpiraServer</span><span class="o">=</span><span class="nv">$SPIRA_URL</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--set<span class="w"> </span><span class="nv">SpiraUser</span><span class="o">=</span><span class="nv">$SPIRA_USERNAME</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--set<span class="w"> </span><span class="nv">SpiraPassword</span><span class="o">=</span><span class="nv">$SPIRA_API_KEY</span>
+
+<span class="c1"># Step 2: Now that configuration is saved, execute the tests.</span>
+npx<span class="w"> </span>rapiselauncher<span class="w"> </span>-t<span class="w"> </span><span class="m">101</span><span class="w"> </span>--report<span class="w"> </span>test-results.xml
+</code></pre></div>
 <h4 id="running-rapiselauncher">Running RapiseLauncher<a class="headerlink" href="#running-rapiselauncher" title="Permanent link">&para;</a></h4>
-<p>Before using RapiseLauncher for the first time, you must obtain a <code>RepositoryConnection.xml</code> file from a Windows machine where your <a href="../../Guide/spiratest_integration/#spiratest-server-connection">Spira connection credentials</a> have been configured. After obtaining the file, you can edit it directly to change any configuration property except the API Key.</p>
 <p>If <code>RepositoryConnection.xml</code> is in the same directory as your project or located in <code>~/.rapise</code>, you can launch RapiseLauncher with a simple command:</p>
 <div class="highlight"><pre><span></span><code>npx rapiselauncher
 </code></pre></div>
@@ -11623,8 +11776,29 @@ Options:
   -t, --testset  Test Set ID (comma-separated list)
       --windows  Run in Windows mode
       --details  Print results on exit
+      --report   Path to file for JUnit XML results output
+      --set      Set a Spira configuration parameter (e.g., --set SpiraServer=https://yourcompany.spiraservice.net/
+                 --set SpiraUser=FreddBloggs --set SpiraPassword=ApiKey)
   -h, --help     Show help
 </code></pre></div>
+<h5 id="viewing-and-reporting-test-results">Viewing and Reporting Test Results<a class="headerlink" href="#viewing-and-reporting-test-results" title="Permanent link">&para;</a></h5>
+<p>There are two primary ways to view the outcome of a test run:</p>
+<ul>
+<li>
+<p><strong>Displaying a Summary (<code>--details</code>)</strong>
+    The <code>--details</code> flag prints a summary of the test run results directly to the console upon completion. This is useful for a quick, immediate overview of the outcome.</p>
+</li>
+<li>
+<p><strong>Generating a JUnit XML Report (<code>--report</code>)</strong>
+    For integration with CI/CD systems, use the <code>--report</code> option to generate a detailed test report in the <strong>JUnit XML format</strong>. This is a standard format widely supported by tools like Jenkins, GitLab CI, Azure DevOps, and AWS CodeBuild, allowing them to parse, display, and act upon the test results.</p>
+</li>
+</ul>
+<p><strong>Example Usage:</strong></p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>rapiselauncher<span class="w"> </span>-t<span class="w"> </span><span class="m">101</span>,102<span class="w"> </span>--report<span class="w"> </span>test-results.xml
+</code></pre></div>
+<p>This command runs test sets 101 and 102 and saves the results to a file named <code>test-results.xml</code>.</p>
+<p>Once generated, this XML file can be consumed by your CI/CD platform. For example, AWS CodeBuild can visualize the report like this:</p>
+<p><img alt="" src="../../Guide/img/aws_codebuild_junitxml.png" width="640" /></p>
 <h3 id="cicd-integration">CI/CD Integration<a class="headerlink" href="#cicd-integration" title="Permanent link">&para;</a></h3>
 <p>Below are sample .yml files for running Rapise tests with AWS CodeBuild, Azure DevOps, GitHub Actions, and Docker.</p>
 <p>Web tests are typically run in headless mode. If GUI emulation is required (i.e., for non-headless execution), you will need to install a virtual framebuffer like <a href="https://x.org/releases/X11R7.7/doc/man/man1/Xvfb.1.xhtml">Xvfb</a> on the execution machine.</p>

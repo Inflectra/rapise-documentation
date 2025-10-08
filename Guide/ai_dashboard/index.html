@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -7534,6 +7534,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
         GlassMouseGrabProvider$Proxy
       </a>
@@ -10844,6 +10856,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#inflectraai" class="md-nav__link">
+    Inflectra.ai
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#amazon-bedrock" class="md-nav__link">
     Amazon Bedrock
   </a>
@@ -10957,6 +10976,26 @@
   <a href="#test-scenario-from-image" class="md-nav__link">
     Test Scenario from Image
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-code-assistant" class="md-nav__link">
+    AI Code Assistant
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Code Assistant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-refining-code" class="md-nav__link">
+    Tips for Refining Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -11300,6 +11339,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11572,6 +11623,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#inflectraai" class="md-nav__link">
+    Inflectra.ai
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#amazon-bedrock" class="md-nav__link">
     Amazon Bedrock
   </a>
@@ -11685,6 +11743,26 @@
   <a href="#test-scenario-from-image" class="md-nav__link">
     Test Scenario from Image
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-code-assistant" class="md-nav__link">
+    AI Code Assistant
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Code Assistant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-refining-code" class="md-nav__link">
+    Tips for Refining Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -11821,9 +11899,8 @@
 </ul>
 <p><strong>Default Model</strong></p>
 <ul>
-<li><em>Provider</em>: <code>Amazon Bedrock</code> | <code>Azure</code> | <code>OpenAI</code> | Google (Selected: <strong>Google</strong>)</li>
-<li><em>Model Name</em>: <code>gemini-2.0-flash</code></li>
-<li><em>API Key</em>: <code>API Key</code></li>
+<li><em>Provider</em>: <code>Inflectra.ai</code> | <code>Amazon Bedrock</code> | <code>Azure</code> | <code>OpenAI</code> | Google (Selected: <strong>Inflectra.ai</strong>)</li>
+<li><em>Label</em>: The Embedded Generative AI Engine for Scalable, Secure Software Delivery</li>
 <li><em>Proxy</em>: <code>http://localhost:8000</code></li>
 </ul>
 <p><strong>Test Model</strong>: [Button]</p>
@@ -11834,6 +11911,10 @@
 <p class="admonition-title">Note</p>
 <p>You can press <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-q">Q</kbd></span> in the AI Dashboard to reveal additional and experimental settings.</p>
 </div>
+<h4 id="inflectraai">Inflectra.ai<a class="headerlink" href="#inflectraai" title="Permanent link">&para;</a></h4>
+<p>Rapise 8.6 introduces support for <a href="https://inflectra.ai">Inflectra.ai</a>. This integration enables users with an active Spira and Inflectra.ai account to generate <a href="#chats">data, test scenarios</a>, and <a href="../../RVL/AI/">code</a> directly within Rapise. It simplifies the workflow by eliminating the need for separate accounts with external AI providers.
+Configuration is seamless. If <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Inflectra-Ai-In-Spira/">Inflectra.ai is enabled</a> in <a href="../spiratest_integration/#connecting-to-spiratest">your connected Spira instance</a>, it automatically becomes available in Rapise — no additional setup is required.</p>
+<p><img src="/Guide/img/inflectra_ai.png" width="200"/></p>
 <h4 id="amazon-bedrock">Amazon Bedrock<a class="headerlink" href="#amazon-bedrock" title="Permanent link">&para;</a></h4>
 <p>Rapise 8.3 adds support for <a href="https://aws.amazon.com/bedrock">Amazon Bedrock</a>. To configure an Amazon Bedrock connection, specify the AWS Region, AWS Access Key, and AWS Secret Access Key.</p>
 <p>You will also need to provide a <code>Model ID</code>. Here are a few examples:</p>
@@ -13134,6 +13215,69 @@ Logged in as Librarian, <strong>Logout</strong></p>
 </div>
 </li>
 </ol>
+<h4 id="ai-code-assistant">AI Code Assistant<a class="headerlink" href="#ai-code-assistant" title="Permanent link">&para;</a></h4>
+<p>With Rapise 8.6 and later, you can generate JavaScript code using AI while editing <code>.js</code> files. This chat type differs from the AI Command chat, which is designed to translate manual test steps into executable code. The <code>AI Code Assistant</code> is targeted toward test developers who need to implement functions in their framework — for example, creating actions for a JavaScript-based module.</p>
+<p><strong>How to Open</strong></p>
+<ul>
+<li>Open the <code>.js</code> file you want to edit.</li>
+<li>
+<p>Click the <strong>AI</strong> icon on the main toolbar to open the <strong>AI Panel</strong>. You may dock it to the right for convenience.</p>
+<p><img alt="AI Toolbar Button" src="../img/ai_panel_toolbar_button.png" width="480" /></p>
+</li>
+<li>
+<p>The <strong>AI Panel</strong> will automatically start the <code>AI Code Assistant</code> chat.</p>
+</li>
+</ul>
+<p><img alt="AI Code Assistant Chat, Empty" src="../img/ai_code_assistant_open_chat.png" /></p>
+<p>Alternatively, if the AI Panel is already open, select <code>AI Code Assistant</code> from the list of available chat types.</p>
+<p><img alt="AI Panel Workflows" src="../img/ai_panel_workflows.png" width="400px" /></p>
+<p><strong>How to Use</strong></p>
+<p>In the chat panel, write a prompt describing the function or code you want to generate. The assistant automatically includes the content and current cursor position of the active <code>.js</code> file in its context. You can also reference other files in your framework by using the <code>@&lt;file name&gt;</code> syntax in your prompt.</p>
+<p><img alt="Include File" src="../img/ai_code_assistant_include_file.png" width="500px" /></p>
+<p>Once the code is generated, click the <strong>Apply</strong> button to insert it into your active <code>.js</code> file.</p>
+<p><strong>Example</strong></p>
+<p>Suppose we need to add an action to an <code>AppHelper</code> module that clicks a button based on its displayed text.</p>
+<ul>
+<li>Open the <code>AppHelper.js</code> file.</li>
+<li>Start the <code>AI Code Assistant</code> chat.</li>
+<li>Write the following prompt:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Generate an action that given a button name will click it.
+</code></pre></div>
+<p>The AI will generate a function similar to this:</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/**  </span>
+<span class="cm"> * Clicks a button by its name.  </span>
+<span class="cm"> * @param {String} buttonName The name of the button to click.  </span>
+<span class="cm"> */</span><span class="w">  </span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">AppHelper_ClickButtonByName</span><span class="p">(</span><span class="cm">/**string*/</span><span class="nx">buttonName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<span class="w">    </span><span class="c1">// Find the button element using its name  </span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">buttonElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Navigator</span><span class="p">.</span><span class="nx">SeSFind</span><span class="p">(</span><span class="sb">`//button[text()=&#39;</span><span class="si">${</span><span class="nx">buttonName</span><span class="si">}</span><span class="sb">&#39;]`</span><span class="p">);</span><span class="w">  </span>
+
+<span class="w">    </span><span class="c1">// Check if the button element was found  </span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">buttonElement</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<span class="w">        </span><span class="c1">// Click the button  </span>
+<span class="w">        </span><span class="nx">buttonElement</span><span class="p">.</span><span class="nx">DoClick</span><span class="p">();</span><span class="w">  </span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<span class="w">        </span><span class="c1">// Log an error if the button was not found  </span>
+<span class="w">        </span><span class="nx">Tester</span><span class="p">.</span><span class="nx">Message</span><span class="p">(</span><span class="sb">`Button with name &quot;</span><span class="si">${</span><span class="nx">buttonName</span><span class="si">}</span><span class="sb">&quot; not found.`</span><span class="p">);</span><span class="w">  </span>
+<span class="w">    </span><span class="p">}</span><span class="w">  </span>
+<span class="p">}</span><span class="w">  </span>
+</code></pre></div>
+<p>Click the <code>Apply</code> button to insert the generated function into the <code>AppHelper.js</code> file.</p>
+<p><img alt="AI Code Assistant, Code Generated" src="../img/ai_code_assistant_generated_code.png" /></p>
+<p>The code will be inserted into the <code>AppHelper.js</code> file at the cursor's position. The final result will look like this:</p>
+<p><img alt="AI Code Assistant, Code Inserted" src="../img/ai_code_assistant_code_inserted.png" /></p>
+<h5 id="tips-for-refining-code">Tips for Refining Code<a class="headerlink" href="#tips-for-refining-code" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Edit before applying:</strong> You can edit the generated code directly in the AI Panel before inserting it into your file.</p>
+<p><img alt="Edit Code" src="../img/ai_code_assistant_edit_code.png" width="400px" /></p>
+</li>
+<li>
+<p><strong>Iterate with prompts:</strong> If the first result isn't perfect, continue the chat with follow-up prompts to refine the code.</p>
+</li>
+<li><strong>Use selected code as context:</strong> Select code in the editor before writing a prompt. This allows you to ask the AI to perform actions on a specific block of code, such as <code>Refactor the selected code</code> or <code>Add comments to this function</code>.</li>
+</ul>
 <h3 id="snapshots">Snapshots<a class="headerlink" href="#snapshots" title="Permanent link">&para;</a></h3>
 <p>On this page, you can find starred chats. To add a chat to Snapshots, locate it in history and hover your mouse pointer over its top-right corner to reveal the <code>...</code> icon:</p>
 <p><img alt="Session Menu" src="../img/ai_dashboard_session_menu.png" width="249px" /></p>

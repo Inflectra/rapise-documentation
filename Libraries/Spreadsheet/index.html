@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4621,6 +4621,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getsheetcount" class="md-nav__link">
+    GetSheetCount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsheetindexbyname" class="md-nav__link">
+    GetSheetIndexByName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsheetnamebyindex" class="md-nav__link">
+    GetSheetNameByIndex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setcell" class="md-nav__link">
     SetCell
   </a>
@@ -7768,6 +7789,18 @@
     <li class="md-nav__item">
       <a href="../ses_lib_oracleforms/" class="md-nav__link">
         OracleForms Objects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OracleForms/" class="md-nav__link">
+        OracleForms
       </a>
     </li>
   
@@ -11286,6 +11319,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11718,6 +11763,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getsheetcount" class="md-nav__link">
+    GetSheetCount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsheetindexbyname" class="md-nav__link">
+    GetSheetIndexByName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsheetnamebyindex" class="md-nav__link">
+    GetSheetNameByIndex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setcell" class="md-nav__link">
     SetCell
   </a>
@@ -11863,6 +11929,18 @@
 <tr>
 <td><a href="#getrowcount">GetRowCount</a></td>
 <td>Gets row count.</td>
+</tr>
+<tr>
+<td><a href="#getsheetcount">GetSheetCount</a></td>
+<td>Get number of sheets in the Excel file (.xls, *.xlsx)</td>
+</tr>
+<tr>
+<td><a href="#getsheetindexbyname">GetSheetIndexByName</a></td>
+<td>Finds a sheet index in the Excel file (.xls, *.xlsx)</td>
+</tr>
+<tr>
+<td><a href="#getsheetnamebyindex">GetSheetNameByIndex</a></td>
+<td>Finds a sheet name in the Excel file (.xls, *.xlsx) by index</td>
 </tr>
 <tr>
 <td><a href="#setcell">SetCell</a></td>
@@ -12426,6 +12504,96 @@ row in the range and returns 'false'.</p>
 <p><strong>Returns:</strong></p>
 <p>number: Number of rows in the spreadsheet including the row with column names. -1 if no spreadsheet is attached.</p>
 <p><a name="see.also.spreadsheet.getrowcount"></a></p>
+<p><a name="GetSheetCount"></a>    </p>
+<h4 id="getsheetcount">GetSheetCount<a class="headerlink" href="#getsheetcount" title="Permanent link">&para;</a></h4>
+<p>Get number of sheets in the Excel file (.xls, *.xlsx)</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetSheetCount</span><span class="p">(</span><span class="nx">fileName</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td>string</td>
+<td>Path to an Excel file.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>number: Number of sheets</p>
+<p><a name="see.also.spreadsheet.getsheetcount"></a></p>
+<p><a name="GetSheetIndexByName"></a>    </p>
+<h4 id="getsheetindexbyname">GetSheetIndexByName<a class="headerlink" href="#getsheetindexbyname" title="Permanent link">&para;</a></h4>
+<p>Finds a sheet index in the Excel file (.xls, *.xlsx)</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetSheetIndexByName</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">sheetName</span><span class="p">,</span><span class="w"> </span><span class="nx">startIndex</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td>string</td>
+<td>Path to an Excel file.</td>
+</tr>
+<tr>
+<td>sheetName</td>
+<td>string</td>
+<td>Sheet name to find.</td>
+</tr>
+<tr>
+<td>startIndex</td>
+<td>number</td>
+<td>0-based index of the start sheet. It is 0 by default.<br>Optional.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>number: 0-based index of the sheet, 'false' if not found</p>
+<p><a name="see.also.spreadsheet.getsheetindexbyname"></a></p>
+<p><a name="GetSheetNameByIndex"></a>    </p>
+<h4 id="getsheetnamebyindex">GetSheetNameByIndex<a class="headerlink" href="#getsheetnamebyindex" title="Permanent link">&para;</a></h4>
+<p>Finds a sheet name in the Excel file (.xls, *.xlsx) by index</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Spreadsheet</span><span class="p">.</span><span class="nx">GetSheetNameByIndex</span><span class="p">(</span><span class="nx">fileName</span><span class="p">,</span><span class="w"> </span><span class="nx">sheetIndex</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td>string</td>
+<td>Path to an Excel file.</td>
+</tr>
+<tr>
+<td>sheetIndex</td>
+<td>number</td>
+<td>0-based index of the sheet</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>string: Name of the sheet at sheetIndex</p>
+<p><a name="see.also.spreadsheet.getsheetnamebyindex"></a></p>
 <p><a name="SetCell"></a>    </p>
 <h4 id="setcell">SetCell<a class="headerlink" href="#setcell" title="Permanent link">&para;</a></h4>
 <p>Sets cell value by its coordinates. Sets active cell value after DoSequential or DoRandom if params not set.</p>

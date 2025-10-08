@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../New/8_5/" class="md-tabs__link">
+      <a href="../../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -531,6 +531,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#naming-and-namespaces" class="md-nav__link">
+    Naming and Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-objects-with-namespaces" class="md-nav__link">
+    Accessing Objects with Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#page-object-rvl-vs-js" class="md-nav__link">
     Page Object - RVL vs JS
   </a>
@@ -553,6 +567,13 @@
           <li class="md-nav__item">
   <a href="#rvl-mode" class="md-nav__link">
     RVL Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rvl-action-parameters" class="md-nav__link">
+    RVL Action Parameters
   </a>
   
 </li>
@@ -7670,6 +7691,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
         GlassMouseGrabProvider$Proxy
       </a>
@@ -11178,6 +11211,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11435,6 +11480,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#naming-and-namespaces" class="md-nav__link">
+    Naming and Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-objects-with-namespaces" class="md-nav__link">
+    Accessing Objects with Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#page-object-rvl-vs-js" class="md-nav__link">
     Page Object - RVL vs JS
   </a>
@@ -11457,6 +11516,13 @@
           <li class="md-nav__item">
   <a href="#rvl-mode" class="md-nav__link">
     RVL Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rvl-action-parameters" class="md-nav__link">
+    RVL Action Parameters
   </a>
   
 </li>
@@ -11607,6 +11673,58 @@
 </ul>
 </li>
 </ol>
+<h3 id="naming-and-namespaces">Naming and Namespaces<a class="headerlink" href="#naming-and-namespaces" title="Permanent link">&para;</a></h3>
+<p>A Page Object name should be <strong>alphanumeric</strong>: this means it must consist of letters (A–Z, a–z), numbers (0–9), or underscores (<code>_</code>). It cannot contain spaces or special characters such as <code>-</code>, <code>@</code>, <code>#</code>, or <code>.</code>. Examples of valid names include <code>LoginScreen</code>, <code>CartPage</code>, <code>_AdminPanel1</code>. Invalid names would be <code>login screen</code>, <code>cart-page</code>, or <code>123Main</code>.</p>
+<p>By default, if you create an object called <code>LoginScreen</code>, it will be placed in the <strong>root namespace</strong>:</p>
+<p><img alt="LoginScreen Create" src="../img/pageobjects_login_screen.png" /></p>
+<p><img alt="LoginScreen Module" src="../img/pageobjects_root_object.png" /></p>
+<p>As your project grows, you will need to group and organize Page Objects. This is where <strong>namespaces</strong> come into play.</p>
+<p>Namespaces use a dot-separated notation similar to <strong>.NET namespaces</strong> or <strong>Java packages</strong>. You can define them as <code>group.Module</code>, <code>group.subgroup.Module</code>, etc. For example:</p>
+<ul>
+<li><code>crm.leads.Editor</code></li>
+<li><code>ecommerce.checkout.Cart</code></li>
+<li><code>mobile.login.Screen</code></li>
+</ul>
+<p>Package naming rules are the same as for identifiers: lowercase names are often used for groups (<code>crm</code>, <code>ecommerce</code>, <code>mobile</code>), while classes or modules typically use PascalCase (<code>Editor</code>, <code>Cart</code>, <code>Screen</code>). Once a namespace is assigned, it cannot be changed later.</p>
+<p>For example, if you define an object as <code>crm.leads.Editor</code>:</p>
+<p><img alt="" src="../img/pageobjects_crm_leads_editor.png" /></p>
+<p>It will appear in a hierarchy under <code>crm &gt; leads &gt; Editor</code>:</p>
+<p><img alt="" src="../img/pageobjects_groups.png" /></p>
+<h3 id="accessing-objects-with-namespaces">Accessing Objects with Namespaces<a class="headerlink" href="#accessing-objects-with-namespaces" title="Permanent link">&para;</a></h3>
+<p>In RVL you may refer to an object using its full namespace:</p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Action</td>
+<td><strong>crm.contacts.Editor</strong></td>
+<td>DoRefresh</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>In JavaScript:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">SeS</span><span class="p">(</span><span class="s2">&quot;crm.contacts.Editor&quot;</span><span class="p">).</span><span class="nx">DoRefresh</span><span class="p">();</span>
+<span class="c1">//or</span>
+<span class="nx">crm</span><span class="p">.</span><span class="nx">contacts</span><span class="p">.</span><span class="nx">Editor</span><span class="p">.</span><span class="nx">DoRefresh</span><span class="p">();</span>
+</code></pre></div>
+<p>When using <a href="../../../RVL/AI/#including-and-excluding-modules--page-objects">AI commands</a>, you may include or exclude Page Objects by namespace. For example:</p>
+<div class="highlight"><pre><span></span><code>## #module crm.leads.*
+</code></pre></div>
+<p>This will include everything inside the <code>crm.leads</code> namespace.</p>
 <h3 id="page-object-rvl-vs-js">Page Object - RVL vs JS<a class="headerlink" href="#page-object-rvl-vs-js" title="Permanent link">&para;</a></h3>
 <p>When you create a Page Object, you have two options: RVL mode or JavaScript mode.</p>
 <p>RVL is appropriate in most cases when the module primarily covers straightforward scenarios, involving a set of interactions with the application.</p>
@@ -11634,6 +11752,63 @@
 </ol>
 <p><img alt="PO Description" src="../img/pageobjects_po_description.png" /></p>
 <p>Any other sheet is considered an action. The action name should be alphanumeric, meaning it should not contain spaces and should start with a letter or an underscore.</p>
+<h3 id="rvl-action-parameters">RVL Action Parameters<a class="headerlink" href="#rvl-action-parameters" title="Permanent link">&para;</a></h3>
+<p>When adding a Page Object action in the RVL editor you may specify <strong>action parameters</strong> directly in the action <strong>signature</strong>. This signature defines the parameter list, their types, and optional default values.  </p>
+<p>Supported formats:</p>
+<ul>
+<li>
+<p><strong>No parameters</strong>
+  <code>DoAction</code><br />
+  or<br />
+<code>DoAction()</code>  </p>
+</li>
+<li>
+<p><strong>String parameters</strong>
+  <code>DoAction(param1, param2)</code>  </p>
+</li>
+<li>
+<p><strong>Typed parameters</strong>
+  <code>DoAction(/**string*/strParam, /**number*/numParam)</code><br />
+  Types supported:</p>
+</li>
+<li><code>string</code> → text values</li>
+<li><code>number</code> → covers int, float, double</li>
+<li><code>boolean</code> → true/false values</li>
+<li>
+<p><code>object</code> → any other type or complex object</p>
+</li>
+<li>
+<p><strong>Parameters with default values</strong><br />
+  You may also define defaults. Rapise infers the type from the default:
+  <code>DoAction(param1 = "default", param2 = 5)</code>  </p>
+</li>
+<li><code>"default"</code> → string  </li>
+<li><code>5</code> → number  </li>
+<li><code>true</code> / <code>false</code> → boolean  </li>
+</ul>
+<p>This way, the signature both documents the parameters and ensures correct typing inside the RVL action.</p>
+<hr />
+<p><strong>Examples</strong></p>
+<ol>
+<li><strong>Parameters with defaults in the action call:</strong></li>
+</ol>
+<p><code>DoAdd(name=Jim,tel="+1323674",age=41,mail=j@a.co)</code></p>
+<p><img alt="Sign1" src="../img/pageobjects_doadd_sign1.png" /></p>
+<p>Produces this result:</p>
+<p><img alt="Sign1 Result" src="../img/pageobjects_doadd_sign1_result.png" /></p>
+<hr />
+<ol>
+<li><strong>Typed parameters in the action signature:</strong></li>
+</ol>
+<p><code>DoAdd(/**string*/name,/**string*/tel,/**number*/age)</code></p>
+<p><img alt="Sign2" src="../img/pageobjects_doadd_sign2.png" /></p>
+<p>Produces this result:</p>
+<p><img alt="Sign2 Result" src="../img/pageobjects_doadd_sign2_result.png" /></p>
+<hr />
+<p>In summary:<br />
+- Use plain names when you only need parameter order.<br />
+- Add types via JSDoc-style comments (<code>/**type*/</code>) to make them explicit.<br />
+- Provide default values where appropriate to make actions easier to reuse without always specifying inputs.</p>
 <h3 id="javascript-mode">JavaScript Mode<a class="headerlink" href="#javascript-mode" title="Permanent link">&para;</a></h3>
 <p>In JavaScript mode, a Page Object / Module is equivalent to a <a href="../../global_objects/">Global Object</a>. All the syntax, naming conventions, and documentation information for a global object also apply to a Page Object in JavaScript Mode.</p>
 <p>The distinction between a global object and a Page Object lies in their usage and features. Typically, a global object encompasses various functionalities like PDF support, text manipulations, and other utilities. It does not involve an object repository or web services. On the other hand, a Page Object can include an object repository and is often specific to an application, representing its unique characteristics and functionality.</p>

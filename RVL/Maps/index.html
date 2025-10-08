@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4101,6 +4101,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#common-maps" class="md-nav__link">
+    Common Maps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#using-maps" class="md-nav__link">
     Using Maps
   </a>
@@ -7689,6 +7696,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
         GlassMouseGrabProvider$Proxy
       </a>
@@ -11197,6 +11216,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11466,6 +11497,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#common-maps" class="md-nav__link">
+    Common Maps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#using-maps" class="md-nav__link">
     Using Maps
   </a>
@@ -11701,6 +11739,89 @@
 <li><em>Database</em></li>
 </ul>
 <p>External maps are defined in an external spreadsheet, file, or database.</p>
+<h2 id="common-maps">Common Maps<a class="headerlink" href="#common-maps" title="Permanent link">&para;</a></h2>
+<p>In addition to in-place and external maps, RVL supports <strong>common maps</strong>.<br />
+These are maps declared in <a href="../Sheets/#common-sheets">Common Sheets</a> or in <a href="../Sheets/#commonrvlxlsx">Common.rvl.xlsx</a>.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>
+<p>Common maps are defined in a <strong>common sheet</strong> (sheet name starts with <code>#</code>) and are automatically visible to <strong>all sheets</strong> in the same workbook.</p>
+</li>
+<li>
+<p>When defined inside <strong>Common.rvl.xlsx</strong>, the maps become available <strong>framework-wide</strong> to every RVL workbook.</p>
+</li>
+<li>
+<p>The <strong>iteration state</strong> of a common map (e.g., current row/column) is shared across sheets <strong>within the same workbook play</strong>—useful for coordinated, data-driven flows.</p>
+</li>
+<li>
+<p>If a sheet is started <strong>from another script/workbook</strong> (e.g., via <code>RVL.DoPlayScript</code>), the common map resets to its <strong>default state</strong> as defined in the common sheet.</p>
+</li>
+<li>
+<p>You can still <strong>override or pass</strong> a map into a called sheet (see <a href="../Sheets/#passing-maps">Passing Maps</a>).</p>
+</li>
+</ul>
+<p><strong>Example (in <code>#Maps</code> common sheet):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Type</th>
+<th>Object</th>
+<th>Action</th>
+<th>ParamName</th>
+<th>ParamType</th>
+<th>ParamValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Rows</td>
+<td>Logins</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Login</td>
+<td>Pass</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>John</td>
+<td>p1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Sarah</td>
+<td>p2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td>of Map</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Any sheet in the workbook can now iterate <code>Logins</code> (e.g., via <a href="../Loops/#map">Loop</a>) or reference its values directly.</p>
 <h2 id="using-maps">Using Maps<a class="headerlink" href="#using-maps" title="Permanent link">&para;</a></h2>
 <p>Once a map is defined, it may be used as a regular <a href="../../Libraries/Map/">Object</a>.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">

@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_5/" class="md-tabs__link">
+      <a href="../../New/8_6/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -4104,6 +4104,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#including-and-excluding-modules-page-objects" class="md-nav__link">
+    Including and Excluding Modules / Page Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Including and Excluding Modules / Page Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#naming" class="md-nav__link">
     Naming
   </a>
@@ -7690,6 +7710,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/OracleForms/" class="md-nav__link">
+        OracleForms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/GlassMouseGrabProvider%24Proxy/" class="md-nav__link">
         GlassMouseGrabProvider$Proxy
       </a>
@@ -11198,6 +11230,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/8_6/" class="md-nav__link">
+        Release Notes for 8.6
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_5/" class="md-nav__link">
         Release Notes for 8.5
       </a>
@@ -11542,6 +11586,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#including-and-excluding-modules-page-objects" class="md-nav__link">
+    Including and Excluding Modules / Page Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Including and Excluding Modules / Page Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#naming" class="md-nav__link">
     Naming
   </a>
@@ -11825,6 +11889,48 @@
 <p>In this scenario, <code>ToolsPrompt.txt</code> itself includes <code>AI\ReportingPrompt.txt</code>, resulting in:</p>
 <p><img alt="Tools Prompt Result" src="../img/AI_tools_prompt_result.png" /></p>
 <p>As seen above, conditions from both prompts are applied when generating the code.</p>
+<h2 id="including-and-excluding-modules-page-objects">Including and Excluding Modules / Page Objects<a class="headerlink" href="#including-and-excluding-modules-page-objects" title="Permanent link">&para;</a></h2>
+<p>By default, the Rapise AI command processor considers <strong>all Page Objects</strong> when generating commands. However, in some scenarios you may want more fine-grained control over which Page Objects are included or excluded.</p>
+<p>To guide the AI, use the following syntax:</p>
+<div class="highlight"><pre><span></span><code>##  #module &lt;name1&gt;,&lt;name2&gt;,...
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>##  #module LoginForm,Book*
+</code></pre></div>
+<p>This hints that only <code>LoginForm</code> and all Page Objects starting with <code>Book</code> (such as <code>BookList</code>, <code>BookEdit</code>, <code>BookView</code>) should be considered for AI command generation.</p>
+<p>To <strong>exclude</strong> Page Objects, prefix their names with <code>!</code>. The special value <code>!*</code> excludes all modules, which is useful if you want to include only a specific subset.</p>
+<div class="highlight"><pre><span></span><code>##  #module !LoginForm,Book*
+</code></pre></div>
+<p>You can also split include/exclude rules across multiple lines:</p>
+<div class="highlight"><pre><span></span><code>##  #module LoginForm
+##  #module AuthorsList
+##  #module !Book*
+</code></pre></div>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<p>Suppose we have two modules: <code>crm.leads.Editor</code> and <code>crm.contacts.Editor</code>, both with a <code>DoAdd</code> command.</p>
+<p><img alt="CRM Modules" src="../img/AI_crm_modules.png" /></p>
+<p>And we have the AI command:</p>
+<div class="highlight"><pre><span></span><code>Add Jim Hocking, +3912348875, jimh1995@atmyspace.com
+</code></pre></div>
+<p>From the AI perspective, either <code>crm.leads.Editor</code> or <code>crm.contacts.Editor</code> could be chosen. The following examples show how to control this.</p>
+<p><strong>Example 1: Include Contacts</strong></p>
+<p>If we want to make sure only contacts are considered:</p>
+<div class="highlight"><pre><span></span><code>##  #module crm.contacts.Editor
+</code></pre></div>
+<p>or equivalently:</p>
+<div class="highlight"><pre><span></span><code>##  #module crm.contacts.*
+</code></pre></div>
+<p><img alt="Include Contacts" src="../img/AI_include_contacts.png" /></p>
+<p><strong>Example 2: Exclude Contacts</strong></p>
+<p>If we know we do not want to deal with contacts:</p>
+<div class="highlight"><pre><span></span><code>##  #module !crm.contacts.*
+</code></pre></div>
+<p><img alt="Exclude Contacts" src="../img/AI_exclude_contacts.png" /></p>
+<p><strong>Example 3: Mix Include and Exclude</strong></p>
+<p>You may mix include and exclude rules on the same line or across multiple lines:</p>
+<div class="highlight"><pre><span></span><code>##  #module !crm,*leads*
+</code></pre></div>
+<p><img alt="Include and Exclude" src="../img/AI_include_and_exclude.png" /></p>
 <h2 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h2>
 <p>With the introduction of AI, the naming of objects, actions, and methods, as well as the use of descriptive comments, becomes even more important. The better you express your application and API, the better the AI can combine them to implement the test. All of this together helps to improve both the quality of the test cases and the integrity of the testing framework.</p>
 <h2 id="token-saving">Token Saving<a class="headerlink" href="#token-saving" title="Permanent link">&para;</a></h2>
