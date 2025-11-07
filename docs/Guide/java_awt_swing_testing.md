@@ -32,7 +32,7 @@ Then you need to add the following values:
 set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
 set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
 set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
-set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
+set EXT_OPTS=-Dsun.java2d.dpiaware=true -Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
 
 java.exe "%EXT_OPTS%" -cp "%EXT_JARS%";. org.sample.MyButton
 ```
@@ -49,7 +49,7 @@ Then you need to determine `applet.jar`'s main class and pass it explicitly to t
 set RAPISE_PATH=c:\Program Files (x86)\Inflectra\Rapise
 set EXT_PATH=%RAPISE_PATH%\Extensions\JavaWrapper
 set EXT_JARS=%EXT_PATH%\json.jar;%EXT_PATH%\jaccess.jar;%EXT_PATH%\smartestudio-bridge.jar
-set EXT_OPTS=-Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
+set EXT_OPTS=-Dsun.java2d.dpiaware=true -Djavax.accessibility.assistive_technologies=com.smartesoft.smartestudio.accessibility.AccessBridge
 
 java.exe "%EXT_OPTS%" -cp "%EXT_JARS%";applet.jar com.smartesoft.java.aut.AwtFrame
 ```
