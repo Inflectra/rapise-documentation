@@ -44,9 +44,8 @@ In its initial release (8.2), Rapise supports both OpenAI and Azure OpenAI model
 
     **Default Model**
 
-    - *Provider*: `Amazon Bedrock` | `Azure` | `OpenAI` | Google (Selected: **Google**)
-    - *Model Name*: `gemini-2.0-flash`
-    - *API Key*: `API Key`
+    - *Provider*: `Inflectra.ai` | `Amazon Bedrock` | `Azure` | `OpenAI` | Google (Selected: **Inflectra.ai**)
+    - *Label*: The Embedded Generative AI Engine for Scalable, Secure Software Delivery
     - *Proxy*: `http://localhost:8000`
 
     **Test Model**: [Button]
@@ -810,6 +809,85 @@ Generates a sequence of AI Commands from an image and a text prompt.
             <td></td>
           </tr>
         </table>
+
+#### AI Code Assistant
+
+With Rapise 8.6 and later, you can generate JavaScript code using AI while editing `.js` files. This chat type differs from the AI Command chat, which is designed to translate manual test steps into executable code. The `AI Code Assistant` is targeted toward test developers who need to implement functions in their framework — for example, creating actions for a JavaScript-based module.
+
+**How to Open**
+
+- Open the `.js` file you want to edit.
+- Click the **AI** icon on the main toolbar to open the **AI Panel**. You may dock it to the right for convenience.
+  
+    ![AI Toolbar Button](./img/ai_panel_toolbar_button.png){width=480}
+
+- The **AI Panel** will automatically start the `AI Code Assistant` chat.
+
+![AI Code Assistant Chat, Empty](./img/ai_code_assistant_open_chat.png)
+
+Alternatively, if the AI Panel is already open, select `AI Code Assistant` from the list of available chat types.
+
+![AI Panel Workflows](./img/ai_panel_workflows.png){width="400px"}
+
+**How to Use**
+
+In the chat panel, write a prompt describing the function or code you want to generate. The assistant automatically includes the content and current cursor position of the active `.js` file in its context. You can also reference other files in your framework by using the `@<file name>` syntax in your prompt.
+
+![Include File](./img/ai_code_assistant_include_file.png){width="500px"}
+
+Once the code is generated, click the **Apply** button to insert it into your active `.js` file.
+
+**Example**
+
+Suppose we need to add an action to an `AppHelper` module that clicks a button based on its displayed text.
+
+- Open the `AppHelper.js` file.
+- Start the `AI Code Assistant` chat.
+- Write the following prompt:
+
+
+```
+Generate an action that given a button name will click it.
+```
+
+The AI will generate a function similar to this:
+
+```javascript
+/**  
+ * Clicks a button by its name.  
+ * @param {String} buttonName The name of the button to click.  
+ */  
+function AppHelper_ClickButtonByName(/**string*/buttonName) {  
+    // Find the button element using its name  
+    const buttonElement = Navigator.SeSFind(`//button[text()='${buttonName}']`);  
+  
+    // Check if the button element was found  
+    if (buttonElement) {  
+        // Click the button  
+        buttonElement.DoClick();  
+    } else {  
+        // Log an error if the button was not found  
+        Tester.Message(`Button with name "${buttonName}" not found.`);  
+    }  
+}  
+```
+
+Click the `Apply` button to insert the generated function into the `AppHelper.js` file.
+
+![AI Code Assistant, Code Generated](./img/ai_code_assistant_generated_code.png)
+
+The code will be inserted into the `AppHelper.js` file at the cursor's position. The final result will look like this:
+
+![AI Code Assistant, Code Inserted](./img/ai_code_assistant_code_inserted.png)
+
+##### Tips for Refining Code
+
+- **Edit before applying:** You can edit the generated code directly in the AI Panel before inserting it into your file.
+
+    ![Edit Code](./img/ai_code_assistant_edit_code.png){width="400px"}
+
+- **Iterate with prompts:** If the first result isn't perfect, continue the chat with follow-up prompts to refine the code.
+- **Use selected code as context:** Select code in the editor before writing a prompt. This allows you to ask the AI to perform actions on a specific block of code, such as `Refactor the selected code` or `Add comments to this function`.
 
 ### Snapshots
 
