@@ -3662,6 +3662,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#handling-mtls-handshake" class="md-nav__link">
+    Handling mTLS Handshake
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#json-as-field-value" class="md-nav__link">
     JSON as Field Value
   </a>
@@ -11566,6 +11573,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#handling-mtls-handshake" class="md-nav__link">
+    Handling mTLS Handshake
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#json-as-field-value" class="md-nav__link">
     JSON as Field Value
   </a>
@@ -11842,6 +11856,11 @@
 <span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h3 id="handling-mtls-handshake">Handling mTLS Handshake<a class="headerlink" href="#handling-mtls-handshake" title="Permanent link">&para;</a></h3>
+<p>With mutual TLS (mTLS), the client presents a certificate to the server during the TLS handshake.<br />
+This certificate is typically stored in a PKCS#12 bundle (<code>.pfx</code> or <code>.p12</code>) that includes the client certificate and its private key.</p>
+<p>Use the request or Session parameters <code>PfxPath</code> and <code>PfxPassword</code> to provide the path to the <code>.pfx</code> file and its password.</p>
+<p><img alt="WS mTLS" src="../img/rest_service_mtls.png" /></p>
 <h3 id="json-as-field-value">JSON as Field Value<a class="headerlink" href="#json-as-field-value" title="Permanent link">&para;</a></h3>
 <p>Here is how you can pass a JSON value for a field:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
