@@ -2161,6 +2161,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rapisedoc.inflectra.com/Libraries/NeoLoad/</loc>
+         <lastmod>2025-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rapisedoc.inflectra.com/Libraries/OFTabBar/</loc>
          <lastmod>2025-11-11</lastmod>
          <changefreq>daily</changefreq>
