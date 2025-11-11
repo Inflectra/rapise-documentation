@@ -186,6 +186,15 @@ Here is an example of a minimal multipart request with one text field and one fi
 }
 ```
 
+### Handling mTLS Handshake
+
+With mutual TLS (mTLS), the client presents a certificate to the server during the TLS handshake.  
+This certificate is typically stored in a PKCS#12 bundle (`.pfx` or `.p12`) that includes the client certificate and its private key.
+
+Use the request or Session parameters `PfxPath` and `PfxPassword` to provide the path to the `.pfx` file and its password.
+
+![WS mTLS](img/rest_service_mtls.png)
+
 ### JSON as Field Value
 
 Here is how you can pass a JSON value for a field:
