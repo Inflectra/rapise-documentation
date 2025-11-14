@@ -6,6 +6,8 @@ For upcoming webinars, please check the [Events page](https://www.inflectra.com/
 
 ### Season 2025
 
+- [Rapise 8.6](https://youtu.be/LmMxUHEG_Po)
+- [Rapise 8.5](https://youtu.be/T5yxsvYyrGM)
 - [Rapise 8.4](https://youtu.be/G6vxq2GrZJk)
 
 ### Season 2024
@@ -110,6 +112,8 @@ For upcoming webinars, please check the [Events page](https://www.inflectra.com/
 
 ### Highlights
 
+- [Rapise 8.6](https://youtu.be/LmMxUHEG_Po)
+- [Rapise 8.5](https://youtu.be/T5yxsvYyrGM)
 - [Rapise 8.4](https://youtu.be/G6vxq2GrZJk)
 - [Rapise 8.3](https://youtu.be/8PO7YMUFUes)
 - [Rapise 8.2](https://youtu.be/n7coxYI28dA)
