@@ -12,7 +12,7 @@ For example, the preamble here ends on row 10 because row 11 contains an **Actio
 === "Transcript"
     | Flow | Type                               | Object | Action      | ParamName  | ParamType | ParamValue      |
     | ---- | ---------------------------------- | ------ | ----------- | ---------- | --------- | --------------- |
-    |      | Variable                           |        | Login       | string     | librarian |                 |
+    |      | Variable                           |        |             | Login      | string    | librarian       |
     |      | Variable                           |        | Global      | g_password | string    | librarian       |
     |      |                                    |        |             |            |           |                 |
     | Map  | Rows                               | MyMap1 |             |            |           |                 |
@@ -26,7 +26,7 @@ For example, the preamble here ends on row 10 because row 11 contains an **Actio
     |      | Param                              |        |             | message    | variable  | Login           |
     |      |                                    |        |             |            |           |                 |
     |      | Action                             | Tester | Message     | message    | string    | Value from Map: |
-    |      |                                    |        |             | MyMap1     | Col       |                 |
+    |      | Param                              |        |             | message    | MyMap1    | Col             |
     |      |                                    |        |             |            |           |                 |
     |      | Action                             | RVL    | DoPlaySheet | sheetName  | string    | DefaultValue    |
     |      |                                    |        |             |            |           |                 |
