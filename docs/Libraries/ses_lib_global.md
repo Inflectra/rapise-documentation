@@ -1,5 +1,7 @@
 # Global
 
+- [AiTester](AiTester.md)
+
 - [Android](Android.md)
 
 - [Database](Database.md)
@@ -15,6 +17,8 @@
 - [Navigator](Navigator.md)
 
 - [Ocr](Ocr.md)
+
+- [Playwright](Playwright.md)
 
 - [SeSReportException](SeSReportException.md)
 

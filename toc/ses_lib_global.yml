@@ -1,5 +1,6 @@
 - 'Global':
     - 'Global Objects': 'Libraries/ses_lib_global.md'
+    - 'AiTester': 'Libraries/AiTester.md'
     - 'Android': 'Libraries/Android.md'
     - 'Database': 'Libraries/Database.md'
     - 'File': 'Libraries/File.md'
@@ -8,6 +9,7 @@
     - 'iOS': 'Libraries/iOS.md'
     - 'Navigator': 'Libraries/Navigator.md'
     - 'Ocr': 'Libraries/Ocr.md'
+    - 'Playwright': 'Libraries/Playwright.md'
     - 'SeSReportException': 'Libraries/SeSReportException.md'
     - 'SeSReportFile': 'Libraries/SeSReportFile.md'
     - 'SeSReportImage': 'Libraries/SeSReportImage.md'

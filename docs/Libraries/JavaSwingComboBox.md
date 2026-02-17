@@ -24,6 +24,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 ### Property Summary
 | **Property** | **Description** | **Getter** | **Setter** |
 | ------------ | --------------- | ---------- | ---------- |
+| [ItemCount](#itemcount) | Number of items. | GetItemCount |  |
 | [ItemIndexByName](#itemindexbyname) | Returns item index by its name. | GetItemIndexByName |  |
 | [SelectedIndex](#selectedindex) | Index of the selected element of the object. | GetSelectedIndex | SetSelectedIndex |
 | [SelectedText](#selectedtext) | Text of the selected item in a single string. | GetSelectedText | SetSelectedText |
@@ -44,6 +45,23 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 <!-- ============================== property detail ========================== -->
 
 ### Property Detail
+
+<a name="ItemCount"></a>
+#### ItemCount
+
+Number of items.
+
+
+
+Type: number
+
+
+Accessors: GetItemCount
+
+```javascript
+value = SeS('SomeJavaSwingComboBox').GetItemCount()
+```
+
 
 <a name="ItemIndexByName"></a>
 #### ItemIndexByName
