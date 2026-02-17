@@ -265,6 +265,15 @@ In the `All Test Cases` view, use checkboxes to include or remove a test case. I
 
 For every test case, there is also an `Action` dropdown that allows you to `Open in Spira` the corresponding test case. The IDs on the right side of the test cases table are the IDs of corresponding test cases in `SpiraTest`.
 
+##### Quick Actions
+
+In Rapise 9.0+ to quickly add/remove test cases from a folder you may use popup menu for the folder or a nested test case:
+
+- **Check All** - include all test cases from the folder or if you clicked on a test case, from the parent folder.
+- **Uncheck All** - remove all test cases from the folder or if you clicked on a test case, from the parent folder.
+- **Check All (Recursive)** - include all test cases from the folder and all nested folders.
+- **Uncheck All (Recursive)** - remove all test cases from the folder and all nested folders.
+
 #### Sync with Spira
 
 When making changes such as creating, renaming, or deleting a test set, including or removing test cases, or reordering test cases, these actions are performed locally; to update `SpiraTest`, use the `Sync with Spira` button.
