@@ -1,106 +1,105 @@
-# Self-healing Web Locators
+# Self-Healing
 
-Since **version 6.2**, Rapise has included self-healing web element locators. This represents a significant improvement in two areas of automated web application testing:
+## Purpose
 
-1.  Better recording experience. Modern applications increasingly use dynamically generated IDs and class names that change with every page reload. This often necessitates fixing locators after recording. With self-healing locators, Rapise can intelligently locate the required elements without manual locator tweaking.
-2.  More efficient test maintenance. Developers occasionally modify applications in ways that break web element locators. No one can predict precisely how a locator might change. If a locator is broken, Rapise attempts to find the most matching element and generate a new locator for it.
+Self-Healing is a capability in Rapise that automatically recovers test execution when UI elements change or cannot be found using their original locators. Instead of failing immediately, tests attempt to locate objects using AI-based visual recognition and update the object repository with corrected locator information.
 
-## How to Enable
+## How Self-Healing Works
 
-To enable self-healing features, set the `g_aiEnable` flag in your test's [TestPrepare](understanding_the_script.md) block.
+When a test encounters an object that cannot be found:
 
-```javascript
-function TestPrepare()
-{
-    g_aiEnable = true;
-}
-```
+1. **Initial Lookup Fails**: The standard locator does not match any element on screen.
+2. **AI Recovery**: [SmartAction](./web_smart_action.md) uses the object's description to visually locate the element.
+3. **Object Found**: If successful, the test continues and records the new locator.
+4. **Patch Generation**: At test completion, a `.jspatch` file is created with all locator updates.
+5. **Review and Apply**: The [JSON Patch Editor](./web_smart_action.md#applying-patches-with-the-json-patch-editor) allows you to review and apply changes to the repository.
 
-When this flag is set, Rapise generates a full-path locator for each recorded element. The full-path locator includes information about all attributes of an element and its ancestors in the DOM tree.
+## Enabling AI Recorder
 
-## How it Works
+The `airecorder` tag controls whether self-healing information is captured during recording. It can be enabled at the framework level or per test case.
 
-When you run a test and an element is found using a traditional XPath locator, the full-path locator is not used. There is nothing to repair in such cases. However, if the XPath generated for an element during recording (or manually created by a tester) is not valid, the full-path locator is used to find the most suitable element on the page. When the full-path locator is used, you will see the following healing notification in the report:
+### Framework Level
 
-<img src="/Guide/img/web_self_healing_report.png" width="784" />
+When creating a new testing framework, you can enable the Self-Healing AI Recorder by checking the corresponding option in the Web Test Setup dialog:
 
-The healing notification indicates that an element was found with a certain level of confidence, expressed as a percentage from zero to 100%. In the notification details, you can find the difference between the recorded and matched elements. You can also see images of both the recorded and found elements. This information provides a clue to either accept the found element or manually fix the test.
+![Web Test Setup](./img/web_self_healing_add_framework.png)
 
-The format of the element locator difference report is:
+This sets the `airecorder` tag as the default for all new test cases added to the framework.
 
-```nohighlight
-Level: N, attribute: A, expected: V1, actual: V2
-```
+### Test Case Level
 
--   If **N** equals 0, it refers to the element node in the DOM tree. A value of 1 indicates the element's immediate ancestor. The level increases until the DOM tree root is reached.
--   **A** is the attribute name.
--   **V1**: The expected/recorded attribute value.
--   **V2**: The actual value of this attribute, captured during test playback.
+When adding a test case to the framework, the `airecorder` tag is shown in the Tags section. If it was enabled at the framework level, the tag is checked by default:
 
-The first image in the difference report details is the expected/recorded snapshot of the element. The second image shows what was captured during playback.
+![Add Test Case](./img/web_self_healing_add_test_case.png)
 
-## Usage Scenarios
+You can enable or disable the `airecorder` tag for each test case individually. The framework-level setting only affects the default state of the checkbox when creating a new test case. The tag can also be set or unset at any time after the test case is created.
 
-### No Action Required
+## Recording with Self-Healing
 
-This is a simple yet powerful approach. If a test passes and all elements are found with sufficiently high confidence, there may be no reason to fix the test.
+When the `airecorder` tag is enabled, the recorder captures all interactions as usual and then post-processes each object, populating it with `smart_object_description` and `smart_actions` properties. These properties provide the AI with enough context to re-locate objects when their original locators fail.
 
-### Using Match Details to Build a WebAppProfile
+The behavior of the recorded test depends on the recording mode.
 
-When you analyze the differences between expected and found elements, you may gain insights to start using or improve your [WebAppProfile](web_app_profile.md).
+### RVL Mode
 
-### Using the Object Manager
+When recording in RVL mode, the resulting test looks exactly the same as a regular RVL test. There are no visible changes to the test steps. Self-healing is invoked automatically at runtime: if an object cannot be located on the screen and it has `smart_*` properties in the repository, the RVL runtime calls [SmartAction](web_smart_action.md) behind the scenes to recover.
 
-During playback, Rapise takes snapshots of elements found by the full-path locator. Thus, after playback, you can use the Object Manager to replace old locators with new ones. If there are healing notifications after test playback, Rapise automatically prompts you to open the Object Manager. You can disable this prompt; refer to the next section.
+=== "Transcript"
+    | Flow | Type   | Object    | Action    | ParamName | ParamType | ParamValue |
+    | ---- | ------ | --------- | --------- | --------- | --------- | ---------- |
+    |      | Action | Username  | DoSetText | txt       | string    | librarian  |
+    |      | Action | Password  | DoSetText | txt       | string    | librarian  |
+    |      | Action | LoginBtn  | DoClick   |           |           |            |
 
-<img src="/Guide/img/web_self_healing_prompt.png" width="443">
+The test above is a standard RVL test. If `Username` cannot be found, the runtime checks for `smart_object_description` and `smart_actions` in the repository and uses them to locate the object via AI.
 
-<img src="/Guide/img/web_self_healing_object_manager.png" width="890">
+### JavaScript Mode
 
-## Configuration
-
-### Threshold
-
-By default, a match for an element is accepted when the confidence is not less than 96%. You can change the threshold in the [TestPrepare](understanding_the_script.md) block by setting `g_aiFplConfidence`:
+When recording in JavaScript mode, the recorded script uses `SmartAction` calls instead of the standard `SeS(...)` pattern:
 
 ```javascript
-function TestPrepare()
-{
-    g_aiEnable = true;
-    g_aiFplConfidence = 0.98;
-}
+// Standard recording (without airecorder):
+SeS('LoginBtn').DoClick();
+
+// Recording with airecorder tag:
+SmartAction('LoginBtn', 'DoClick', [],
+    "The 'Log In' button located below the password field in the login form",
+    "Click to submit login credentials"
+);
 ```
 
-### Object Manager Prompt
+The JavaScript mode has a distinct advantage: all information needed for self-healing is embedded directly in the script. Even if the object is completely missing from the repository, SmartAction can re-create it using the descriptions provided in the call. This makes JS-mode tests fully self-contained.
 
-To suppress the prompt to use the Object Manager when test playback contains healing notifications, set `g_aiMergePromptEnable` to `false`:
+### Comparison
 
-```javascript
-function TestPrepare()
-{
-    g_aiEnable = true;
-    g_aiMergePromptEnable = false;
-}
-```
+| Aspect | RVL Mode | JavaScript Mode |
+| ------ | -------- | --------------- |
+| Test appearance | Unchanged, standard RVL | Uses `SmartAction(...)` calls |
+| Self-healing data | Stored in object repository (`smart_*` properties) | Embedded in the script itself |
+| Object must exist in repository | Yes (with `smart_*` properties) | No, can be re-created from description |
+| Suitable for AI test generation | No | Yes |
 
-### Screenshots
+## AI-Assisted Test Generation
 
-To disable automatic capturing of recording screenshots, set `g_aiCaptureRecordingScreenshots` to `false`.
+The JavaScript mode is particularly useful for automatic test generation. Because `SmartAction` calls are self-contained (object description and action description are inline), you can:
 
-```javascript
-g_aiCaptureRecordingScreenshots = false;
-```
+1. Record several test cases with the `airecorder` tag to build a set of examples.
+2. Provide these examples to an AI chat or MCP tool.
+3. Ask the AI to generate additional test cases based on your description of new scenarios.
 
-### Playback
+The AI can produce valid `SmartAction` calls without needing access to the object repository, since all the context is present in the function arguments.
 
-During playback, when an element cannot be found using an XPath locator, Rapise starts applying the self-healing locator. The number of initial attempts before switching to self-healing is configurable (since Rapise 6.5). Using self-healing during the very first attempts to find an element is not recommended, as a page may not be fully loaded, and the algorithm might select the wrong element. The first self-healing attempt is set by this variable. The default value is 21. You may change it to any number lower than `g_objectLookupAttempts`.
+## Benefits
 
-```javascript
-g_aiFirstAttemptNumber = 21;
-```
+- **Reduced Maintenance**: Tests continue running despite minor UI changes.
+- **Automatic Updates**: New locators are captured without manual re-recording.
+- **Controlled Changes**: Review all updates before applying to the repository via the [JSON Patch Editor](./web_smart_action.md#applying-patches-with-the-json-patch-editor).
+- **Detailed Logging**: Self-healing events are recorded in the test report.
+- **Test Generation**: JS-mode SmartAction scripts serve as templates for AI-generated tests.
 
 ## See Also
 
--   [How to Benefit From Self-Healing Locators (video)](https://youtu.be/ulgL-RnGuHo)
--   [Web Testing](web_testing.md)
--   [Web Application Profile (aka Web Recorder Configuration)](web_app_profile.md)
+- [SmartAction](./web_smart_action.md)
+- [Object Learning](./object_learning.md)
+- [Object Locator](./object_locator.md)
+- [Recording](./recording.md)

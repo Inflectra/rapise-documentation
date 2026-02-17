@@ -293,6 +293,7 @@ nav:
             - 'Setting Up Web Browsers': 'Guide/setting_up_web_browsers.md'
             - 'Browser Settings Dialog': 'Guide/browser_settings.md'
             - 'Self-healing Locators': 'Guide/web_self_healing.md'
+            - 'SmartAction': 'Guide/web_smart_action.md'
         - 'Selenium WebDriver':
             - 'Selenium WebDriver': 'Guide/selenium_webdriver.md'
             - 'Setting Up Selenium': 'Guide/setting_up_selenium.md'
