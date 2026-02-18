@@ -19,13 +19,7 @@ Playwright integration helpers for Rapise.Provides:- Running Playwright test 
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoImportJsonReport](#doimportjsonreport) | Import report in JSON format produced by Playwright earlier. |
-|  [DoInvoke](#doinvoke) | Invoke user callback, passing current browser as a parameter: cb({page,expect,browser})
-Examples:
-```javascript
-Playwright.DoInvoke(async ({page,expect}) {
-	await expect(page).not.toHaveURL('error');
-})
-``` |
+|  [DoInvoke](#doinvoke) | Invoke user callback, passing current browser as a parameter: `cb({page,expect,browser})`. |
 |  [DoPlay](#doplay) | Run playwright test `cmdParams` and import results into Rapise test report. |
 |  [GetElementByAi](#getelementbyai) | Use query to find an element by plain text description. |
 
@@ -68,7 +62,8 @@ boolean: true if report parsed and processed.
 <a name="DoInvoke"></a>    
 #### DoInvoke
 
-Invoke user callback, passing current browser as a parameter: cb({page,expect,browser})
+Invoke user callback, passing current browser as a parameter: `cb({page,expect,browser})`.
+
 Examples:
 ```javascript
 Playwright.DoInvoke(async ({page,expect}) {
@@ -77,7 +72,7 @@ Playwright.DoInvoke(async ({page,expect}) {
 ```
 
 ```javascript
-Playwright.DoInvoke(`callBack`, callBack)
+Playwright.DoInvoke(callBack)
 ```
 
 
@@ -85,8 +80,7 @@ Playwright.DoInvoke(`callBack`, callBack)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| `callBack` | function |  your callback function fn(page,expect,browser) to invoke. |
-| callBack | function |  Async function to run: async ({page, expect, browser}) => { ... } |
+| callBack | function |  Async function to run: async ({page, expect, browser}) => \{ ... \} |
 
 
 
@@ -117,7 +111,7 @@ Playwright.DoPlay("--headed");
 ```
 
 ```javascript
-Playwright.DoPlay(`cmdParams`, cmdParams)
+Playwright.DoPlay(cmdParams)
 ```
 
 
@@ -125,8 +119,7 @@ Playwright.DoPlay(`cmdParams`, cmdParams)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| `cmdParams` | String |  additional parameters. The params is anything mentioned [here](https://playwright.dev/docs/test-cli) and going after `npx playwright test` |
-| cmdParams | string |  Additional Playwright CLI parameters after `playwright test --reporter=json`.<br>Optional, Default: "". |
+| cmdParams | string |  Additional Playwright CLI [parameters](https://playwright.dev/docs/test-cli) after `playwright test --reporter=json`.<br>Optional, Default: "". |
 
 
 
@@ -146,7 +139,7 @@ Use query to find an element by plain text description. The more detailed descri
 the better.
 
 ```javascript
-Playwright.GetElementByAi(`query`, query)
+Playwright.GetElementByAi(query)
 ```
 
 
@@ -154,7 +147,6 @@ Playwright.GetElementByAi(`query`, query)
 
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
-| `query` | string |  text AI query. |
 | query | string |  Plain text description of an element to find (the more specific the better). |
 
 
