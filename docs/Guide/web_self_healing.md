@@ -22,7 +22,7 @@ The `airecorder` tag controls whether self-healing information is captured durin
 
 When creating a new testing framework, you can enable the Self-Healing AI Recorder by checking the corresponding option in the Web Test Setup dialog:
 
-![Web Test Setup](./img/web_self_healing_add_framework.png)
+![Web Test Setup](./img/web_self_healing_add_framework.png){width="469px"}
 
 This sets the `airecorder` tag as the default for all new test cases added to the framework.
 
@@ -30,7 +30,7 @@ This sets the `airecorder` tag as the default for all new test cases added to th
 
 When adding a test case to the framework, the `airecorder` tag is shown in the Tags section. If it was enabled at the framework level, the tag is checked by default:
 
-![Add Test Case](./img/web_self_healing_add_test_case.png)
+![Add Test Case](./img/web_self_healing_add_test_case.png){width="668px"}
 
 You can enable or disable the `airecorder` tag for each test case individually. The framework-level setting only affects the default state of the checkbox when creating a new test case. The tag can also be set or unset at any time after the test case is created.
 

@@ -13,9 +13,9 @@ SmartAction follows a multi-level recovery process:
 1. **Standard Lookup**: First, attempts to find the object using the standard object repository.
 2. **AI-Based Recovery (Level 1)**: If not found, uses AI to locate the object based on its description.
 3. **Deep Inspection (Level 2)**: If still not found, performs a deeper AI analysis considering:
-   - Whether the object might appear with a different presentation
-   - Whether the page is still loading and we should wait
-   - Whether the action is optional and can be skipped
+    - Whether the object might appear with a different presentation
+    - Whether the page is still loading and we should wait
+    - Whether the action is optional and can be skipped
 
 ### Recovery Resolutions
 
