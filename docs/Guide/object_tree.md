@@ -32,6 +32,7 @@ This node represents framework [test cases](./Frameworks/frameworks.md#test-case
 
 ![Test Cases Root](./img/object_tree_context_testcases.png){width="266px"}
 
+
 - **Create Test Case** - Adds a new [test case](./Frameworks/frameworks.md#test-cases) to the root.
 - **Import Test Case** - [Imports a Test Case](./Frameworks/frameworks.md#importing-test-cases) to the root.
 - **Play All** - Runs all root test cases except those marked with `template` or `skip` tags.
@@ -39,6 +40,7 @@ This node represents framework [test cases](./Frameworks/frameworks.md#test-case
 - **Reveal in Explorer** - Opens the `TestCases` folder in your file explorer.
 - **Expand All** - Expands all nodes below.
 - **Collapse All** - Collapses all nodes below.
+- **Tags** - Edit default tags for the framework. Default tags are assigned to all newly created test cases.
 - **Reload** - Reloads all test cases (this may be needed if tests were synchronized with a remote repository).
 
 #### Test Cases Group Context Menu
@@ -63,6 +65,8 @@ This node represents framework [test cases](./Frameworks/frameworks.md#test-case
 - **Move** - Moves this test case into a new or existing folder (re-groups it).
 - **Rename** - Changes the alias name (the folder name will remain the same).
 - **Delete** - Removes the test case.
+- **Tags** - Edit tags for this test case.
+- **Add Repository Object** - add an object from the [template repository](./object_templates.md/#adding-repository-objects-from-template).
 
 #### Test Case Tags
 
@@ -138,7 +142,7 @@ This node displays shared assets, including common JavaScript files (`*.js`), Ob
 
 ![Shared File](./img/object_tree_context_shared_file.png){width="244px"}
 
-- **Rename** - Changes the name of a file.
+- **Rename** - Changes the name of a file. When you click **Rename** while holding the ++shift++ key, you can change both the file name and its extension. By default, the extension is hidden and preserved.
 - **Make a Copy** - Creates a duplicate shared file with identical contents.
 - **Remove from Disk** - Deletes the file from the test as well as from the disk.
 - **Reveal in Explorer** - Opens the file explorer and highlights this particular file.
@@ -195,8 +199,15 @@ Right-click an object in the **Object Tree** dialog to see:
 
 Right-click the **Object Tree** node to see:
 
-![Object Tree Root](./img/object_tree_context_singleroot.png){width="271px"}
+![Object Repository](./img/object_tree_context_singleroot.png){width="271px"}
 
 - **Reload** - Checks for new objects to display.
 - **Object Manager** - Runs an [Object Manager](object_manager.md).
 - **Add Repository Object** - Adds an object from a template to this repository. This menu item is only available when a [template repository](./object_templates.md) is defined for the current testing framework.
+- **Tags** - Repository tags (usually used to assign `shared` tag)
+
+### Context Menu (Shared Repository)
+
+![Shared Object Repository](./img/object_tree_shared_repository.png){width="271px"}
+
+- **Remove From Shared** - Unassign a `shared` tag.
