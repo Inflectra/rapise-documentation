@@ -3,6 +3,22 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB935', 'How to Use GitHub Secrets in Rapise Tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB935.aspx">KB935</a> How to Use GitHub Secrets in Rapise Tests
+
+Learn the three-step process to securely store credentials in GitHub, inject them into your CI/CD workflow as environment variables, and access them during Rapise test execution.
+
+### <a onclick="return RegisterKbClick('KB934', 'Redacting Image Content using Rapise and AI Tester')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB934.aspx">KB934</a> Redacting Image Content using Rapise and AI Tester
+
+Sometimes you may have images (e.g. an application screenshot) that need redacting (e.g. to remove private information such as PII) before they are included in a test report. With Rapise and its AI Tester functionality using Inflectra.ai you can easily redact such information before it's reported back to SpiraTest.
+
+### <a onclick="return RegisterKbClick('KB925', 'Integrating IoT hardware testing data into SpiraTest')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB925.aspx">KB925</a> Integrating IoT hardware testing data into SpiraTest
+
+A customer asked us "How can you use SpiraTest from Inflectra to help manage the testing of hardware systems and IoT devices that use ESP32. The goal would be to track sensor test results in SpiraTest instead of spreadsheets?" You can absolutely use SpiraTest to manage ESP32 / sensor testing and get out of spreadsheet hell. Think of SpiraTest as “the database + workflow” for all those rows and columns you’re currently juggling.
+
+### <a onclick="return RegisterKbClick('KB919', 'Rapise Global Variables Reference Guide')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB919.aspx">KB919</a> Rapise Global Variables Reference Guide
+
+Rapise provides a set of global variables that can be accessed in JavaScript to control test execution. This reference guide lists each available variable and its purpose, covering settings for playback timing, error handling, screenshots, and Spira integration. [r] - means that the variable is readonly.
+
 ### <a onclick="return RegisterKbClick('KB909', 'Reading Map Data in RVL')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB909.aspx">KB909</a> Reading Map Data in RVL
 
 This topic explains different ways of reading data from a Map in RVL.
