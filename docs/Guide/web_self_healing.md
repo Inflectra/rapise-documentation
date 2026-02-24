@@ -1,5 +1,8 @@
 # Self-Healing
 
+!!! important "AI-Powered Feature"
+    To use this feature, you need an active [Inflectra.ai](./ai_dashboard.md#inflectraai) subscription or you must bring your own tokens by configuring one of our [supported AI providers](./ai_dashboard.md#amazon-bedrock).
+
 ## Purpose
 
 Self-Healing is a capability in Rapise that automatically recovers test execution when UI elements change or cannot be found using their original locators. Instead of failing immediately, tests attempt to locate objects using AI-based visual recognition and update the object repository with corrected locator information.
