@@ -7,6 +7,12 @@
 
 Self-Healing is a capability in Rapise that automatically recovers test execution when UI elements change or cannot be found using their original locators. Instead of failing immediately, tests attempt to locate objects using AI-based visual recognition and update the object repository with corrected locator information.
 
+**Why is this important?**
+
+In modern software development, application UIs change frequently. Minor updates to a webpage's structure—such as modified CSS classes, changed element IDs, or DOM hierarchy shifts—often break traditional automated tests. This leads to false test failures, blocked release pipelines, and hours spent on manual script maintenance. 
+
+Self-healing solves this by making your test suite resilient to application updates. By relying on human-language intent and AI visual recognition rather than brittle underlying code, it ensures your automated tests keep running smoothly, drastically reducing maintenance overhead and increasing overall test reliability.
+
 ## How Self-Healing Works
 
 When a test encounters an object that cannot be found:
