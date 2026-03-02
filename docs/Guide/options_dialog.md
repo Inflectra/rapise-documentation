@@ -63,7 +63,8 @@ If no proxy is specified, Rapise uses the operating system's settings. Proxies c
 
 *   **MCP Server Port**: Starts the MCP server on http://localhost:&lt;port&gt;/mcp. If the port is set to 0, no MCP server is started.
 
-!!! note MCP is an experimental feature and it is disabled by default. Once you enable it, note that you must have only one instance of Rapise running and MCP server will work with it.
+!!! note 
+    MCP is an experimental feature and it is disabled by default. Once you enable it, note that you must have only one instance of Rapise running and MCP server will work with it.
 
 ### Misc
 
