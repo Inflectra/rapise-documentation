@@ -597,6 +597,7 @@ For debugging and additional options when running the program, the following com
 - **-poll** Forces the program to perform an initial poll upon startup. The normal action is to wait for the pending time before performing the initial poll.
 - **-project:[Project ID]** Allows RapiseLauncher to identify the project where the test set specified with the **-testset** argument resides. This speeds up the time Rapise takes to locate and retrieve the test set (optional).
 - **-testset:[Test Set ID]** Allows RapiseLauncher to execute a specific test set on the remote computer (e.g., **-testset:45** runs test set `TX00045`). Since Rapise 6.7, you can pass a comma-separated list of Test Set IDs (e.g., **-testset:45,46,47**). Listed test sets are executed sequentially.
+- **-report:[filename]** Saves the test execution report to the specified file in JUnit XML format. This is useful for integration with CI systems that can parse JUnit reports.
 - **-trace** Enables trace logging to the Event Log for debugging and watching tests execute.
 - **-width:[width] -height:[height]** Sets the screen resolution. Width must be in the range `[1024, 7680]`, height - `[768, 4320]`. Allowed width/height combinations are determined by the operating system where you run RapiseLauncher. Most typical resolutions are:
 
