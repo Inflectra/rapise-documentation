@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_6/" class="md-tabs__link">
+      <a href="../../New/9_0/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -2726,6 +2726,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#context-menu-shared-repository" class="md-nav__link">
+    Context Menu (Shared Repository)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3663,6 +3670,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web_smart_action/" class="md-nav__link">
+        SmartAction
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -4444,6 +4463,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Libraries/AiTester/" class="md-nav__link">
+        AiTester
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Libraries/Android/" class="md-nav__link">
         Android
       </a>
@@ -4530,6 +4561,18 @@
     <li class="md-nav__item">
       <a href="../../Libraries/Ocr/" class="md-nav__link">
         Ocr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Libraries/Playwright/" class="md-nav__link">
+        Playwright
       </a>
     </li>
   
@@ -11282,6 +11325,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/9_0/" class="md-nav__link">
+        Release Notes for 9.0
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_6/" class="md-nav__link">
         Release Notes for 8.6
       </a>
@@ -11721,6 +11776,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#context-menu-shared-repository" class="md-nav__link">
+    Context Menu (Shared Repository)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11766,6 +11828,7 @@
 <li><strong>Reveal in Explorer</strong> - Opens the <code>TestCases</code> folder in your file explorer.</li>
 <li><strong>Expand All</strong> - Expands all nodes below.</li>
 <li><strong>Collapse All</strong> - Collapses all nodes below.</li>
+<li><strong>Tags</strong> - Edit default tags for the framework. Default tags are assigned to all newly created test cases.</li>
 <li><strong>Reload</strong> - Reloads all test cases (this may be needed if tests were synchronized with a remote repository).</li>
 </ul>
 <h4 id="test-cases-group-context-menu">Test Cases Group Context Menu<a class="headerlink" href="#test-cases-group-context-menu" title="Permanent link">&para;</a></h4>
@@ -11788,6 +11851,8 @@
 <li><strong>Move</strong> - Moves this test case into a new or existing folder (re-groups it).</li>
 <li><strong>Rename</strong> - Changes the alias name (the folder name will remain the same).</li>
 <li><strong>Delete</strong> - Removes the test case.</li>
+<li><strong>Tags</strong> - Edit tags for this test case.</li>
+<li><strong>Add Repository Object</strong> - add an object from the <a href="../object_templates/#adding-repository-objects-from-template">template repository</a>.</li>
 </ul>
 <h4 id="test-case-tags">Test Case Tags<a class="headerlink" href="#test-case-tags" title="Permanent link">&para;</a></h4>
 <p>When you right-click with the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key pressed, the context menu will include options to manage the following tags:</p>
@@ -11844,7 +11909,7 @@
 <h4 id="shared-file-context-menu">Shared File Context Menu<a class="headerlink" href="#shared-file-context-menu" title="Permanent link">&para;</a></h4>
 <p><img alt="Shared File" src="../img/object_tree_context_shared_file.png" width="244px" /></p>
 <ul>
-<li><strong>Rename</strong> - Changes the name of a file.</li>
+<li><strong>Rename</strong> - Changes the name of a file. When you click <strong>Rename</strong> while holding the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key, you can change both the file name and its extension. By default, the extension is hidden and preserved.</li>
 <li><strong>Make a Copy</strong> - Creates a duplicate shared file with identical contents.</li>
 <li><strong>Remove from Disk</strong> - Deletes the file from the test as well as from the disk.</li>
 <li><strong>Reveal in Explorer</strong> - Opens the file explorer and highlights this particular file.</li>
@@ -11890,11 +11955,17 @@
 </ul>
 <h3 id="context-menu-object-repository">Context Menu (Object Repository)<a class="headerlink" href="#context-menu-object-repository" title="Permanent link">&para;</a></h3>
 <p>Right-click the <strong>Object Tree</strong> node to see:</p>
-<p><img alt="Object Tree Root" src="../img/object_tree_context_singleroot.png" width="271px" /></p>
+<p><img alt="Object Repository" src="../img/object_tree_context_singleroot.png" width="271px" /></p>
 <ul>
 <li><strong>Reload</strong> - Checks for new objects to display.</li>
 <li><strong>Object Manager</strong> - Runs an <a href="../object_manager/">Object Manager</a>.</li>
 <li><strong>Add Repository Object</strong> - Adds an object from a template to this repository. This menu item is only available when a <a href="../object_templates/">template repository</a> is defined for the current testing framework.</li>
+<li><strong>Tags</strong> - Repository tags (usually used to assign <code>shared</code> tag)</li>
+</ul>
+<h3 id="context-menu-shared-repository">Context Menu (Shared Repository)<a class="headerlink" href="#context-menu-shared-repository" title="Permanent link">&para;</a></h3>
+<p><img alt="Shared Object Repository" src="../img/object_tree_shared_repository.png" width="271px" /></p>
+<ul>
+<li><strong>Remove From Shared</strong> - Unassign a <code>shared</code> tag.</li>
 </ul>
                 
               
@@ -11951,7 +12022,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2025 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2026 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with

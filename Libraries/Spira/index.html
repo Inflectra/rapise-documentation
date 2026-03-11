@@ -293,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../New/8_6/" class="md-tabs__link">
+      <a href="../../New/9_0/" class="md-tabs__link">
         Release Notes
       </a>
     </li>
@@ -3435,6 +3435,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Guide/web_smart_action/" class="md-nav__link">
+        SmartAction
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -4220,6 +4232,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../AiTester/" class="md-nav__link">
+        AiTester
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Android/" class="md-nav__link">
         Android
       </a>
@@ -4306,6 +4330,18 @@
     <li class="md-nav__item">
       <a href="../Ocr/" class="md-nav__link">
         Ocr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Playwright/" class="md-nav__link">
+        Playwright
       </a>
     </li>
   
@@ -4443,6 +4479,13 @@
           <li class="md-nav__item">
   <a href="#runtestset" class="md-nav__link">
     RunTestSet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settestruncustomproperty" class="md-nav__link">
+    SetTestRunCustomProperty
   </a>
   
 </li>
@@ -11123,6 +11166,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../New/9_0/" class="md-nav__link">
+        Release Notes for 9.0
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../New/8_6/" class="md-nav__link">
         Release Notes for 8.6
       </a>
@@ -11405,6 +11460,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#settestruncustomproperty" class="md-nav__link">
+    SetTestRunCustomProperty
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11446,6 +11508,10 @@
 <td><a href="#runtestset">RunTestSet</a></td>
 <td>Schedules a test set to execute as soon as possible.</td>
 </tr>
+<tr>
+<td><a href="#settestruncustomproperty">SetTestRunCustomProperty</a></td>
+<td>Sets a custom property for the current test run in Spira.</td>
+</tr>
 </tbody>
 </table>
 <!-- ============================== property detail ========================== -->
@@ -11455,7 +11521,7 @@
 <h3 id="action-detail">Action Detail<a class="headerlink" href="#action-detail" title="Permanent link">&para;</a></h3>
 <p><a name="CreateIncident"></a>    </p>
 <h4 id="createincident">CreateIncident<a class="headerlink" href="#createincident" title="Permanent link">&para;</a></h4>
-<p>Creates an incident in Spira..</p>
+<p>Creates an incident in Spira.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Spira</span><span class="p">.</span><span class="nx">CreateIncident</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">description</span><span class="p">,</span><span class="w"> </span><span class="nx">projectNameOrId</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters:</strong></p>
@@ -11521,7 +11587,7 @@
 <tr>
 <td>utcTime</td>
 <td>string</td>
-<td>UTC time, formatted as HH:mm or HH:mm:ss, e.g. 16:45. Default time is current time.<br>Optional.</td>
+<td>UTC time, formatted as HH:mm or HH<img alt="🇲🇲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f1f2-1f1f2.svg" title=":mm:" />ss, e.g. 16:45. Default time is current time.<br>Optional.</td>
 </tr>
 <tr>
 <td>utcDate</td>
@@ -11533,6 +11599,39 @@
 <p><strong>Returns:</strong></p>
 <p>boolean: <code>true</code> if the test set scheduled successfully, otherwise - <code>false</code>.</p>
 <p><a name="see.also.spira.runtestset"></a></p>
+<p><a name="SetTestRunCustomProperty"></a>    </p>
+<h4 id="settestruncustomproperty">SetTestRunCustomProperty<a class="headerlink" href="#settestruncustomproperty" title="Permanent link">&para;</a></h4>
+<p>Sets a custom property for the current test run in Spira. 
+This function is utilized by RapiseLauncher to transmit custom data from an automated test script to the corresponding test run record in Spira.
+By using this function, you can enrich the test run results in Spira with valuable information generated during the execution of your Rapise tests.
+This data can then be used for more detailed analysis and reporting within Spira.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Spira</span><span class="p">.</span><span class="nx">SetTestRunCustomProperty</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The name of the test run custom property as defined in Spira. This name must match an existing custom property in your Spira project.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string | number | boolean</td>
+<td>The value to be assigned to the custom property.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<p>boolean: Always returns true.</p>
+<p><a name="see.also.spira.settestruncustomproperty"></a></p>
                 
                   
                 
@@ -11590,7 +11689,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Copyright 2006-2025 Inflectra Corporation, All Rights Reserved | en-US |
+            © Copyright 2006-2026 Inflectra Corporation, All Rights Reserved | en-US |
           </div>
         
         Made with
