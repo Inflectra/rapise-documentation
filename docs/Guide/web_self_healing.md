@@ -1,7 +1,11 @@
 # Self-Healing
 
 !!! important "AI-Powered Feature"
-    To use this feature, you need an active [Inflectra.ai](./ai_dashboard.md#inflectraai) subscription or you must bring your own tokens by configuring one of our [supported AI providers](./ai_dashboard.md#amazon-bedrock).
+    The easiest way to use this feature is with an [Inflectra.ai](./ai_dashboard.md#inflectraai) subscription in Spira, with Rapise [connected](./spiratest_integration.md#connecting-to-spiratest).
+
+    Inflectra.ai is included in cloud trials. For production Spira instances, make sure it is [enabled](https://spiradoc.inflectra.com/Spira-User-Manual/Inflectra-Ai-In-Spira/#getting-started).
+
+Alternatively, you can bring your own tokens by configuring one of the [supported AI providers](./ai_dashboard.md#amazon-bedrock).
 
 ## Purpose
 

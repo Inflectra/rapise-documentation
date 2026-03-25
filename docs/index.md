@@ -2,6 +2,7 @@
 
 === "Quick Links"
     - [Know Your Way Around](./Intro/orientation.md)
+    - [Self-Healing](./Guide/web_self_healing.md)
     - [Scriptless Testing](codeless.md)
     - [AI in Rapise](./Intro/ai.md)
     - [Frameworks](./Guide/Frameworks/frameworks.md)
