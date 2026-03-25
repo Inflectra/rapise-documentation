@@ -4,6 +4,10 @@ For upcoming webinars, please check the [Events page](https://www.inflectra.com/
 
 ## Series
 
+### Season 2026
+
+- [AI-based self-healing for Web tests](https://youtu.be/Rj5cq2IG37A)
+
 ### Season 2025
 
 - [Rapise 8.6](https://youtu.be/LmMxUHEG_Po)
