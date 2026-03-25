@@ -3,6 +3,22 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
+### <a onclick="return RegisterKbClick('KB945', 'Running Legacy Windows Tests using GitLab')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB945.aspx">KB945</a> Running Legacy Windows Tests using GitLab
+
+This topic covers configuration similar to one described for Jenkins integration.  It uses legacy Rapise tests scripts using play.cmd and runs on the Windows VM with GitLab-Runner.
+
+### <a onclick="return RegisterKbClick('KB943', 'How to Mock Geolocation and Auto-Accept Location Prompts in Firefox')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB943.aspx">KB943</a> How to Mock Geolocation and Auto-Accept Location Prompts in Firefox
+
+When creating automated web tests for applications that rely on location services, the browser will typically prompt the user to "Allow" or "Block" location access. Furthermore, you may need to test how your application behaves in specific geographic locations around the world. This article explains how to configure a Firefox browser profile (Selenium-based) in Rapise to automatically bypass the location access prompt (auto-accept) and supply specific, mock GPS coordinates to the application under test.
+
+### <a onclick="return RegisterKbClick('KB942', 'Simple Way to Run Rapise Tests Using GitHub Actions')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB942.aspx">KB942</a> Simple Way to Run Rapise Tests Using GitHub Actions
+
+This article describes how to use the rapiselauncher-node and rapiselauncher-win GitHub Actions to run Rapise tests stored in SpiraTest. These reusable actions handle Rapise installation, configuration, test execution, and artifact collection — so your workflow files stay clean and simple.
+
+### <a onclick="return RegisterKbClick('KB940', 'How to Run Rapise Tests Stored in SpiraTest using GitHub Actions')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB940.aspx">KB940</a> How to Run Rapise Tests Stored in SpiraTest using GitHub Actions
+
+A step-by-step guide on how to configure a GitHub Actions workflow to execute cross-platform Rapise tests stored in SpiraTest. This article covers setting up Spira credentials securely, creating the workflow YAML file, and customizing test parameters.
+
 ### <a onclick="return RegisterKbClick('KB935', 'How to Use GitHub Secrets in Rapise Tests')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB935.aspx">KB935</a> How to Use GitHub Secrets in Rapise Tests
 
 Learn the three-step process to securely store credentials in GitHub, inject them into your CI/CD workflow as environment variables, and access them during Rapise test execution.
