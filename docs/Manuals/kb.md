@@ -3,9 +3,9 @@
 !!! note ""
     We update this list regularly. For the most recent list of KBs please navigate to [Inflectra Knowledge Base](https://www.inflectra.com/Support/KnowledgeBase/rapise/List.aspx)
 
-### <a onclick="return RegisterKbClick('KB945', 'Running Legacy Windows Tests using GitLab')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB945.aspx">KB945</a> Running Legacy Windows Tests using GitLab
+### <a onclick="return RegisterKbClick('KB947', 'Running Rapise Tests with GitLab CI/CD')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB947.aspx">KB947</a> Running Rapise Tests with GitLab CI/CD
 
-This topic covers configuration similar to one described for Jenkins integration.  It uses legacy Rapise tests scripts using play.cmd and runs on the Windows VM with GitLab-Runner.
+This guide covers how to run Rapise automated tests from a GitLab pipeline.
 
 ### <a onclick="return RegisterKbClick('KB943', 'How to Mock Geolocation and Auto-Accept Location Prompts in Firefox')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB943.aspx">KB943</a> How to Mock Geolocation and Auto-Accept Location Prompts in Firefox
 
@@ -1267,10 +1267,6 @@ A customer had a question - is there a way to suppress the DoSetText or DoSendke
 
 One of our users had a webpage with a form. When it was submitted partially filled, the page came back (after being processed on the backend) with some errors about incomplete form. If the user tried to navigate away from this page via a link (or close the page/browser tab) he was prompted with browser's standard "Are you sure you want to leave this page?" dialog. He needed a way for Rapise to handle this popup when recording and playing back the web test.
 
-### <a onclick="return RegisterKbClick('KB231', 'Adobe Flash / Flex / AIR Support in Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB231.aspx">KB231</a> Adobe Flash / Flex / AIR Support in Rapise
-
-Rapise 4.0 supports the testing of Adobe AIR Flex applications using the Adobe Integrated Runtime (AIR). Rapise can test applications using a wide variety of different Flex controls and supports testing both Flex 3 and Flex 4 applications.Rapise 4.0 supports the testing of Adobe Flex applications that are executed by the Adobe Flash Player inside the Internet Explorer, Mozilla Firefox or Google Chrome web browsers. Rapise can test applications using a wide variety of different Flex controls and supports testing both Flex 3 and Flex 4 applications.[We have depreciated support for testing Adobe Flex/Flash applications in Rapise 5.0 and later, so this article is provided for use by existing customers]
-
 ### <a onclick="return RegisterKbClick('KB230', 'Unusual case where Rapise Cannot Click on Hyperlinks in IE')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB230.aspx">KB230</a> Unusual case where Rapise Cannot Click on Hyperlinks in IE
 
 We have found an occasional situation where Rapise is not able to click on hyperlinks (<A> tags) when you playback a test on IE. The same test works fine on other computers and on other browsers on the same computer.
@@ -1294,10 +1290,6 @@ When you are testing a Java application using either Swing or AWT you may run in
 ### <a onclick="return RegisterKbClick('KB221', 'Where do I get the Microsoft Script Debugger')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB221.aspx">KB221</a> Where do I get the Microsoft Script Debugger
 
 When you install Rapise onto a computer that does not have Visual Studio or the Microsoft Script Debugger installed you will get a message to install the debugger. This article provides the download link to the necessary debugger.
-
-### <a onclick="return RegisterKbClick('KB218', 'Testing Adobe AIR Applications on Mobile Devices')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB218.aspx">KB218</a> Testing Adobe AIR Applications on Mobile Devices
-
-We have had a couple of questions about whether Rapise can test Adobe AIR based applications running on mobile devices using platforms such as Android. This article provides some background and also describes the support Rapise has. [We have depreciated support for testing Adobe Flex/Flash applications in Rapise 5.0 and later, so this article is provided for use by existing customers]
 
 ### <a onclick="return RegisterKbClick('KB219', 'What to do When Rapise Doesn't Display the Web Page DOM?')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB219.aspx">KB219</a> What to do When Rapise Doesn't Display the Web Page DOM?
 
@@ -1378,10 +1370,6 @@ The Tester.EndTest() function in Rapise is described as: Marks end of a currentl
 ### <a onclick="return RegisterKbClick('KB183', 'Desktop Application Testing - Choosing the Right Library')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB183.aspx">KB183</a> Desktop Application Testing - Choosing the Right Library
 
 Suppose we have a situation that a thick-client (desktop) application under test (AUT) is based on a technology that is too old or not completely supported by Rapise. Rapise has a number of libraries for different types of apps. Usually Rapise finds the correct libraries using its auto-detection, but sometimes an application is unusual and the auto-detection fails.
-
-### <a onclick="return RegisterKbClick('KB182', 'How to automate the testing of TinyMCE Rich Text Boxes using Rapise')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB182.aspx">KB182</a> How to automate the testing of TinyMCE Rich Text Boxes using Rapise
-
-DEPRECATED Method described in this article does not work any more because browser security has changed since 2015. Now it is not possible to directly access client side JavaScript model. We have a new article that explains how to automate TinyMCE https://www.inflectra.com/Support/KnowledgeBase/KB541.aspx When you have a rich text box in a web application, the process for recording a test and playing it back will be different to a standard HTML plain text box. When you are using the popular TinyMCE rich text box you have more options to automate it by using its special client-side JavaScript API.
 
 ### <a onclick="return RegisterKbClick('KB181', 'Dynamically constructing the .rest file URLs to test REST APIs')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB181.aspx">KB181</a> Dynamically constructing the .rest file URLs to test REST APIs
 
@@ -1718,10 +1706,6 @@ When using Rapise to record test scripts against Windows, Java, Flex, or other t
 ### <a onclick="return RegisterKbClick('KB18', 'How Do I Ensure No Other Browser Windows Open')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB18.aspx">KB18</a> How Do I Ensure No Other Browser Windows Open
 
 When running a test you will often want to make sure there are no other browser windows open. This is commonly done either at the start or end of the test. This article describes how you do this. This article is obsolete. With Selenium-based connectors (default option since Rapise 7.3) opened browser windows are longer an issue. One may continue to use regular browsers. Rapise will use isolated browser profiles to run tests.
-
-### <a onclick="return RegisterKbClick('KB19', 'How to successfully include and use common functions and objects')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB19.aspx">KB19</a> How to successfully include and use common functions and objects
-
-It is often useful to have a common set of code libraries and objects that can be reused amongst multiple tests. With Rapise this can be done by creating a common test and then including it into the other actual tests. This article describes the process. This article is obsolete. To get information on how to use common  functions and objects across test cases please refer to Frameworks (recommended, requires Rapise 8.0+) or Legacy Frameworks (requires Rapise 7.0+) topics.
 
 ### <a onclick="return RegisterKbClick('KB17', 'Running a Rapise script from the command-line on a 64-bit machine')" target="_blank"  href="https://www.inflectra.com/Support/KnowledgeBase/KB17.aspx">KB17</a> Running a Rapise script from the command-line on a 64-bit machine
 

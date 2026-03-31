@@ -28,6 +28,8 @@ def extract_kbs():
                 text = wspace_regex.sub(" ", text)
             else:
                 text = ""
+            if "DEPRECATED" in text:
+                continue
             output.write("### <a onclick=\"return RegisterKbClick('" + kbno + "', '" + title + "')\" target=\"_blank\"  href=\"" + href + "\">" + kbno + "</a> " + title + "\n\n")
             output.write(text + "\n\n")
             
@@ -53,6 +55,8 @@ def convert_kbs():
                 text = text.replace(">", "&gt;")
             else:
                 text = ""
+            if "DEPRECATED" in text:
+                continue
             output.write(delimiter + '{ Id: "' + kbno + '", Title: "' + title + '", Href: "' + href +  '", Description: "' + text + '"}')
             delimiter = ",\n"
         output.write("\n]}")           
