@@ -66,6 +66,9 @@ This brings up the dialog box that allows you to configure the connection to Spi
 Enter the following details:
 
 - SpiraTest **URL**, e.g. https://my-company.spiraservice.net/
+
+    > **Note for Demo Instances:** If you are using a shared demo server (e.g., `https://demo-us.spiraservice.net/customername` or `https://demo-in.spiraservice.net/customername`), make sure to enter the **complete URL** including the trailing `/customername` portion. Removing the part after `.net` will result in connection errors.
+
 - **User Name**, the login name you use to access SpiraTest, or a dedicated account for running Rapise tests.
 - **[API Key](https://spiradoc.inflectra.com/HowTo-Guides/Users-profile-management/#how-to-get-or-make-your-rss-token-or-api-key)**
 

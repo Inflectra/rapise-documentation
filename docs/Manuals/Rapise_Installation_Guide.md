@@ -18,32 +18,31 @@ The first sub-section will outline what hardware and software configurations are
 
 The minimum hardware and software requirements for running Rapise are:
 
-| **Requirement**       | **Minimum Specification**                      |
-| --------------------- | ---------------------------------------------- |
-| **Processor:**        | Intel® or AMD® x86 or x64 compatible processor |
-| **Memory:**           | 2 GB, 4 GB recommended                         |
-| **Disk Space:**       | 5 GB                                           |
-| **Display:**          | HD (1280 x 720)                                |
-| **Operating System:** | Microsoft Windows 8.1 (x86 and x64)            |
-|                       | Microsoft Windows 10, 11                       |
-|                       | Microsoft Windows Server 2012 R1 / R2          |
-|                       | Microsoft Windows Server 2016, 2019, 2022      |
-| **Web Browsers:**     | Internet Explorer 8.0+                         |
-|                       | Mozilla Firefox                                |
-|                       | Google Chrome                                  |
-|                       | Microsoft Edge                                 |
-|                       | Apple Safari                                   |
-| **Other Components:** | .NET Framework 4.7.2                           |
+| **Requirement**       | **Minimum Specification**                                           |
+| --------------------- | ------------------------------------------------------------------- |
+| **Processor:**        | Intel® or AMD® multi-core processor (i3/i5/i7/Ryzen or better)      |
+| **Memory:**           | 8 GB minimum, 16 GB+ recommended                                    |
+| **Disk Space:**       | 128 GB minimum (Solid State Drive / SSD highly recommended)         |
+| **Display:**          | HD (1280 x 720) minimum, FHD (1920 x 1080) recommended              |
+| **Operating System:** | Microsoft Windows 11 (x64)                                          |
+|                       | Microsoft Windows Server 2019, 2022, 2025                           |
+| **Web Browsers:**     | Google Chrome                                                       |
+|                       | Microsoft Edge                                                      |
+|                       | Mozilla Firefox                                                     |
+|                       | Apple Safari                                                        |
+|                       | *Legacy support:* Internet Explorer 11                              |
+| **Other Components:** | .NET Framework 4.8 (or later)                                       |
 
 ### System Prerequisites
 
 Assuming that you have already installed the appropriate version of Microsoft Windows onto your computer (or that it has been pre-installed for you), you then need to make sure that the various prerequisites have been correctly added to your installation before trying to install Rapise. The Rapise installer will check to ensure that the various prerequisites are in place and will install any missing prerequisites (apart from the Microsoft .NET Framework) automatically.
 
-#### Microsoft .NET 4.7.2
+#### .NET Framework 4.8
 
-On Windows 10 and Windows Server 2016 installations (with all the latest updates), the Microsoft .NET Framework meets the minimum requirements, whereas on earlier operating systems, you might need to manually add the .NET 4.7.2 components to the factory configuration.
+On all supported operating systems (Windows 11, Windows Server 2019, 2022, and 2025), the Microsoft .NET Framework 4.8 is typically included by default and meets the minimum requirements. 
 
-To install the .NET Framework, launch Internet Explorer and enter the URL: <https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472>. This page provides links to download and install the appropriate version of the .NET Framework.
+If you are using a custom Windows environment or need to repair your installation, you can download the .NET 4.8 installer manually. To do this, open your web browser and navigate to:  
+[https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
 ### Remove any Previous Versions
 
