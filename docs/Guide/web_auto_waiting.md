@@ -55,7 +55,17 @@ These actions wait for the element to:
 ### Enabling and Disabling Auto-Waiting
 
 - **Enabled by default:** Auto-Waiting is automatically active for supported actions.
-- **Disabling Auto-Waiting:** Set the global variable `WebDriver.autoWait=false` to turn off Auto-Waiting.
+- **Disabling Auto-Waiting globally:** Set the global variable `g_autoWaitWeb = false` before the test runs. This can be done in `User.js`, `Common.js` (for frameworks), or passed as a test parameter.
+
+```javascript
+// User.js or Common.js
+g_autoWaitWeb = false;
+```
+
+!!! note "Added in Rapise 9.1"
+    The `g_autoWaitWeb` global variable provides a clean way to configure Auto-Waiting behavior at the framework level or via test parameters. In earlier versions, you needed to set `WebDriver.autoWait = false` after the WebDriver was initialized.
+
+- **Disabling Auto-Waiting at runtime:** If you need to disable Auto-Waiting after the browser is already open, set `WebDriver.autoWait = false`.
 
 ### Timing Configuration
 

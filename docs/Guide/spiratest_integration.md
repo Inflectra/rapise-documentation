@@ -519,6 +519,8 @@ The panel has the following options:
     !!! important
 		This field must match the string that is entered in the Automation Host Details screen in the **Token** field, or scheduled tests will not be recognized.
 
+- **Auto-create Automation Host** - When enabled (default), RapiseLauncher automatically creates the automation host in Spira if it does not exist. This simplifies initial setup—simply configure the Automation Host Token, and RapiseLauncher will register itself with Spira on first run. The created host uses the token as both its name and token value. Disable this option if you prefer to manually create automation hosts in Spira. Added in Rapise 9.1.
+
 - **Polling Frequency** - The frequency in minutes at which the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 5 minutes and should be sufficient for most installations. Note that tests will still be executed at their scheduled time; this simply determines how often the program communicates with the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.
 - **Read Ahead** - How far in advance (in minutes) the program should read the schedule for the Automation host. Tests that are scheduled further in advance will not appear as a pending test on the status screen.
 - **Connection Timeout** - A request to Spira is considered failed after the specified time. Requires Rapise 8.1+. <a class="headerlink" href="#connection-timeout" title="Permanent link">¶</a>

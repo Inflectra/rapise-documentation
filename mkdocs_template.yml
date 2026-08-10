@@ -79,7 +79,7 @@ extra:
 nav:
 - '#':
     - 'RapiseDocs': 'index.md'
-    - 'AI': 'Intro/ai.md'
+    - 'AI': 'AI/overview.md'
     - 'Automation Tips': 'Intro/automation.md'    
     - 'Cheat Sheet': 'Guide/cheatsheet.md'
     - 'Data-Driven Testing': 'Intro/ddt.md'
@@ -130,6 +130,7 @@ nav:
             - 'Object Templates': 'Guide/object_templates.md'
         - 'Object Libraries':
             - 'Object Libraries': 'Guide/recording_library.md'
+            - 'Library Parameters': 'Guide/library_parameters.md'
             - 'Custom Libraries':
                 - 'Custom Libraries': 'Guide/custom_libraries.md'
                 - 'Actions': 'Guide/actions.md'
@@ -271,7 +272,9 @@ nav:
         - 'Sending Special Keys to the Current Application': 'Guide/sending_special_keys_to_the_c.md'
     - 'Technologies':
         - 'Technologies': 'Guide/technologies.md'
-        - 'Desktop Testing': 'Guide/windows_applications.md'
+        - 'Desktop Testing':
+            - 'Desktop Testing': 'Guide/windows_applications.md'
+            - 'UIAutomation Locators': 'Guide/uiautomation_locator.md'
         - 'Mobile Testing':
             - 'Mobile Testing': 'Guide/mobile_testing2.md'
             - 'Preparing Environment for iOS Mobile Testing': 'Manuals/Preparing_for_iOS_Testing.md'
@@ -313,7 +316,9 @@ nav:
             - 'Unified Service Desk': 'Guide/unified_service_desk.md'
         - 'Salesforce.com': 'Guide/salesforce_com.md'
         - 'Qt Framework': 'Guide/qt_framework_testing.md'
-        - 'Java AWT/Swing': 'Guide/java_awt_swing_testing.md'
+        - 'Java AWT/Swing':
+            - 'Java AWT/Swing': 'Guide/java_awt_swing_testing.md'
+            - 'Java Locators': 'Guide/java_locator.md'
         - 'Java SWT': 'Guide/java_swt.md'
         - 'Oracle Forms': 'Guide/oracleforms_testing.md'
 
@@ -331,7 +336,7 @@ nav:
       - 'Columns': 'RVL/Columns.md'
       - 'Comments': 'RVL/Comments.md'
       - 'Conditions': 'RVL/Conditions.md'
-      - 'AI': 'RVL/AI.md'
+      - 'AI': 'AI/ai_command.md'
       - 'Actions': 'RVL/Actions.md'
       - 'Parameters': 'RVL/Params.md'
       - 'Variables': 'RVL/Variables.md'
@@ -392,9 +397,16 @@ nav:
         #salesforce
     - 'SAP':
         #domsap
+- 'AI':
+    - 'Overview': 'AI/overview.md'
+    - 'AI Dashboard': 'AI/ai_dashboard.md'
+    - 'AI Command': 'AI/ai_command.md'
+    - 'AiTranslator': 'AI/aitranslator.md'
+    - 'AiTester': 'AI/aitester.md'
+    - 'AiRobot': 'AI/airobot.md'
+    - 'Agentic Chat with MCP': 'AI/agentic_mcp.md'
 - 'Manuals':
     - 'Rapise Installation Guide': 'Manuals/Rapise_Installation_Guide.md'
-    - 'AI in Rapise': 'Guide/ai_dashboard.md'
     - 'Spira Dashboard': 'Guide/spira_dashboard_2.md'
     - 'SpiraTest Integration': 'Guide/spiratest_integration.md'
     - 'Dynamic Test Sets': 'Guide/dynamic_test_sets.md'
@@ -411,6 +423,7 @@ nav:
     - 'Training': 'Intro/training.md'
     - 'Playground': 'Intro/uitap.md'
 - 'Release Notes':
+    - 'Release Notes for 9.1': 'New/9_1.md'
     - 'Release Notes for 9.0': 'New/9_0.md'
     - 'Release Notes for 8.6': 'New/8_6.md'
     - 'Release Notes for 8.5': 'New/8_5.md'

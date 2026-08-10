@@ -54,6 +54,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |  [DoWaitForWindow](#dowaitforwindow) | Waits for window specified by title/class name to become available. |
 |  [GetClipboardText](#getclipboardtext) | Reads text stored in the windows clipboard. |
 |  [GetCurrentDir](#getcurrentdir) | Gets current directory path. |
+|  [GetEnv](#getenv) | Returns the value of a specified environment variable. |
 |  [GetFileAsByteArray](#getfileasbytearray) | Reads file and returns its content as array of bytes. |
 |  [GetFirstDayOfWeek](#getfirstdayofweek) | Returns first day of week for current user. |
 |  [GetFullPath](#getfullpath) | Constructs an absolute file name using working directory (WORKDIR) of the test. |
@@ -67,6 +68,7 @@ Global object. Use it to perform actions not related to a particular object. You
 |  [GetTestCasePath](#gettestcasepath) | Finds full path to a Test Case. |
 |  [SetClipboardText](#setclipboardtext) | Updates clipboard text |
 |  [SetConfigPath](#setconfigpath) | Set default path for config file instead of default %WORKDIR%\Config.json. |
+|  [SetEnv](#setenv) | Sets the value of a specified environment variable. |
 |  [SetFileAsByteArray](#setfileasbytearray) | Creates or rewrites file and fills with contents of the provided byte array. |
 |  [SetProperty](#setproperty) | Sets property value to file 'optConfig' if set, or to %WORKDIR%\Config.json otherwise. |
 |  [SetWindowPosition](#setwindowposition) | Change position of the window with the specified title (and class, if specified). |
@@ -1095,6 +1097,33 @@ string: Path of the current directory.
 
 <a name="see.also.global.getcurrentdir"></a>
 
+<a name="GetEnv"></a>    
+#### GetEnv
+
+Returns the value of a specified environment variable.
+
+```javascript
+Global.GetEnv(envVar)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| envVar | string |  Name of the environment variable. |
+
+
+
+
+**Returns:**
+
+string: The value of the environment variable.
+
+
+
+<a name="see.also.global.getenv"></a>
+
 <a name="GetFileAsByteArray"></a>    
 #### GetFileAsByteArray
 
@@ -1440,6 +1469,34 @@ string: Previous config path
 
 
 <a name="see.also.global.setconfigpath"></a>
+
+<a name="SetEnv"></a>    
+#### SetEnv
+
+Sets the value of a specified environment variable.
+
+```javascript
+Global.SetEnv(envVar, value)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| envVar | string |  Name of the environment variable. |
+| value | string |  Value to set for the environment variable. |
+
+
+
+
+**Returns:**
+
+string: The value that was set.
+
+
+
+<a name="see.also.global.setenv"></a>
 
 <a name="SetFileAsByteArray"></a>    
 #### SetFileAsByteArray

@@ -32,6 +32,7 @@ Specify the parameter name, type, and default value, then click `Create`.
 - **browser** - The list of [global and local browser profiles](../selenium_settings_dialog.md#local-selenium-profiles).
 - **mobile** - The list of [global and local mobile profiles](../mobile_settings_dialog.md#local-mobile-profiles).
 - **datacolumn** - A parameter to bind to a column in the data file.
+- **environment** - Reads value from an environment variable (added in Rapise 9.1).
 
 #### Single Select Parameter
 
@@ -140,6 +141,24 @@ The purpose of the `Data File` parameter is to instruct RapiseLauncher to execut
     ```
 
     To explore a practical application of multiselect and datacolumn parameters, please refer to [this knowledge base article](https://www.inflectra.com/Support/KnowledgeBase/KB760.aspx) for a real-life example.
+
+#### Environment Parameter
+
+!!! note "Added in Rapise 9.1"
+
+An `Environment` parameter reads its value from a system environment variable. This is useful when you need to access machine-specific or CI/CD pipeline configuration without hardcoding values in your test framework.
+
+To create an environment parameter, click the `Add Parameter` button, enter the parameter name (this must match the environment variable name, e.g., `OS`, `COMPUTERNAME`, `BUILD_NUMBER`), select `environment` as the type, and optionally specify a default value that will be used when the environment variable is not set.
+
+Environment parameters are displayed with a lock icon :material-lock-outline: in the Parameters table, indicating that their values are read from the system and cannot be edited directly in the dashboard.
+
+Use environment parameters in RVL just like any other parameter—select `testparam` as the ParamType and choose the parameter name. At runtime, Rapise reads the current value of the environment variable and uses it in your test.
+
+**Common use cases:**
+
+- Reading OS type or computer name for conditional test logic
+- Accessing CI/CD variables like `BUILD_NUMBER`, `BRANCH_NAME`, or `ENVIRONMENT`
+- Using deployment-specific settings without modifying test parameters
 
 ### Builtin Parameters
 

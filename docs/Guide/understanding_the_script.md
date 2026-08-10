@@ -175,6 +175,50 @@ SeSOnReportMessage(function(/**string*/ type, /**string*/ message, /**number*/ s
 });
 ```
 
+### SeSOnRVLScriptStep
+
+!!! note "Added in Rapise 9.1"
+
+This callback is invoked during RVL script execution at specific points, such as when an object is not found. It allows advanced customization of RVL playback behavior, including implementing custom recovery logic or integrating with AI-powered self-healing.
+
+```javascript
+SeSOnRVLScriptStep(function(item, place, status, ctx, stackItem, objInfo, paramVals) {
+    // item - the RVL action item being executed
+    // place - execution point: "objectnotfound", etc.
+    // status - current execution status
+    // ctx - execution context
+    // stackItem - current stack item
+    // objInfo - object information (resolved object ID)
+    // paramVals - evaluated parameter values
+    
+    // Return values (RVLPlayerControlAction):
+    // 1 - Continue (proceed with normal execution)
+    // 6 - Skip (skip this action)
+    // 7 - Fail (mark as failed)
+    
+    return 1; // Continue
+});
+```
+
+**Example: Custom handling when object is not found**
+
+```javascript
+SeSOnRVLScriptStep(function(item, place, status, ctx, stackItem, objInfo, paramVals) {
+    if (place == "objectnotfound") {
+        var objectId = item.ObjectId;
+        Log("Object not found: " + objectId);
+        
+        // Implement custom recovery logic here
+        // For example, try an alternative object or take a screenshot
+        
+        return 6; // Skip this action
+    }
+    return 1; // Continue normal execution
+});
+```
+
+This callback is primarily used internally by Rapise for features like SmartAction self-healing, but can be extended for custom recovery scenarios.
+
 ## See Also
 
 To specify a different test script, see the [Settings Dialog](settings_dialog.md). The test script is specified by **Settings** > **ScriptPath**.

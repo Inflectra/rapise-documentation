@@ -102,7 +102,7 @@ SeS("crm.contacts.Editor").DoRefresh();
 crm.contacts.Editor.DoRefresh();
 ```
 
-When using [AI commands](../../RVL/AI.md#including-and-excluding-modules--page-objects), you may include or exclude Page Objects by namespace. For example:
+When using [AI commands](../../AI/ai_command.md#including-and-excluding-modules--page-objects), you may include or exclude Page Objects by namespace. For example:
 
 ```
 ## #module crm.leads.*

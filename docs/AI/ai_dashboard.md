@@ -4,15 +4,15 @@
 
 AI capabilities have been integrated directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Additionally, the AI in Rapise is well-versed in Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise, specialized responses. In its initial release, Rapise's AI features include RVL and JavaScript code generation, along with data generation capabilities. Rapise 8.2 supports OpenAI and Azure OpenAI models, including multimodal ones that can accept image input. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.
 
-A key feature of Rapise 8.2 is the [AI Command](../RVL/AI.md), which translates human-readable test step descriptions into executable code using AI. Once code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command (including objects linked with the [Repository command](../RVL/Repository.md)).
+A key feature of Rapise 8.2 is the [AI Command](ai_command.md), which translates human-readable test step descriptions into executable code using AI. Once code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command (including objects linked with the [Repository command](../RVL/Repository.md)).
 
-When using [AI Commands](../RVL/AI.md), the recommended workflow for test creation is as follows: First, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository; finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can then review and edit. Once all commands are translated into code, the test case is ready for execution.
+When using [AI Commands](ai_command.md), the recommended workflow for test creation is as follows: First, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository; finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can then review and edit. Once all commands are translated into code, the test case is ready for execution.
 
 Rapise provides two primary interfaces for interacting with AI:
 
 - The **[AI Dashboard](#ai-dashboard)** allows you to configure AI options, chat with the AI, and view your chat history.
 
-- The **[AI Panel](#ai-panel)** is linked to the active RVL document and is used to translate [AI Commands](../RVL/AI.md) into executable JavaScript code.
+- The **[AI Panel](#ai-panel)** is linked to the active RVL document and is used to translate [AI Commands](ai_command.md) into executable JavaScript code.
 
 ## AI Dashboard
 
@@ -57,10 +57,20 @@ You can create options that are local to the current testing framework. Simply c
 
 #### Inflectra.ai
 
-Rapise 8.6 introduces support for [Inflectra.ai](https://inflectra.ai). This integration enables users with an active Spira and Inflectra.ai account to generate [data, test scenarios](#chats), and [code](../RVL/AI.md) directly within Rapise. It simplifies the workflow by eliminating the need for separate accounts with external AI providers.
-Configuration is seamless. If [Inflectra.ai is enabled](https://spiradoc.inflectra.com/Spira-User-Manual/Inflectra-Ai-In-Spira/) in [your connected Spira instance](spiratest_integration.md#connecting-to-spiratest), it automatically becomes available in Rapise — no additional setup is required.
+Rapise 8.6 introduces support for [Inflectra.ai](https://inflectra.ai). This integration enables users with an active Spira and Inflectra.ai account to generate [data, test scenarios](#chats), and [code](ai_command.md) directly within Rapise. It simplifies the workflow by eliminating the need for separate accounts with external AI providers.
+
+Configuration is seamless. If [Inflectra.ai is enabled](https://spiradoc.inflectra.com/Spira-User-Manual/Inflectra-Ai-In-Spira/) in [your connected Spira instance](../Guide/spiratest_integration.md#connecting-to-spiratest), it automatically becomes available in Rapise — no additional setup is required.
 
 <img src="/Guide/img/inflectra_ai.png" width="200"/>
+
+##### Rapise 9.1 Enhancements
+
+Rapise 9.1 expands Inflectra.ai support to include:
+
+- **[AiTranslator](aitranslator.md)**: Translate natural language test descriptions into executable SmartActions using Inflectra.ai as your AI provider
+- **[AiRobot](airobot.md)**: Run AI-powered exploratory testing through Inflectra.ai
+
+This means you can leverage all of Rapise's advanced AI testing features without configuring separate AI provider accounts—just connect to your Spira instance with Inflectra.ai enabled.
 
 #### Amazon Bedrock
 
@@ -98,9 +108,23 @@ Dealing directly with OpenAI models is easy. You do not need to provide any URLs
 
 Rapise 8.4 adds support for Gemini models. You can find available model IDs at [https://aistudio.google.com](https://aistudio.google.com). We've achieved good results with `gemini-2.0-flash` and `gemini-2.0-pro-exp-02-05`.
 
+#### Model ID Dropdown
+
+!!! note "Added in Rapise 9.1"
+
+The Model ID field is now a dropdown that makes it easier to switch between models. The dropdown offers:
+
+- **Previously used models**: Models you have successfully tested are remembered and appear in the dropdown for quick selection
+- **Configured models**: Models set up in the AI Dashboard settings are also included
+
+This eliminates the need to remember and type long model identifiers (like `us.anthropic.claude-sonnet-4-5-20250929-v1:0`) when switching between models. Simply click the Model ID field and select from the list of available options.
+
 #### Proxy
 
-If you are behind a proxy, specify its URL in the `Proxy` field (works for all providers).
+If you are behind a proxy, specify its URL in the `Proxy` field. The proxy is used for:
+
+- All AI provider connections (OpenAI, Azure, Amazon Bedrock, Inflectra.ai, Google)
+- Spira connections from AI Dashboard (added in Rapise 9.1)
 
 ### Chats
 
@@ -125,7 +149,7 @@ This is a general-purpose chat with an AI model. You can ask questions and recei
 
 #### AI Command
 
-This chat type is typically generated by Rapise when processing an [AI Command](../RVL/AI.md). The result of prompt processing is JavaScript code. In this chat, you can edit the generated code, copy it to a JavaScript file, or convert it to RVL and apply it to the active RVL sheet.
+This chat type is typically generated by Rapise when processing an [AI Command](ai_command.md). The result of prompt processing is JavaScript code. In this chat, you can edit the generated code, copy it to a JavaScript file, or convert it to RVL and apply it to the active RVL sheet.
 
 === "Screenshot"
     ![AI Command](./img/ai_workflow_ai_command.png){width="1123px"}
@@ -905,7 +929,7 @@ If you no longer need a chat on the Snapshots page, you can remove it.
 
 ## AI Panel
 
-The AI panel is used to work with [AI Commands](../RVL/AI.md). 
+The AI panel is used to work with [AI Commands](ai_command.md). 
 
 ### How to Open
 
@@ -921,6 +945,42 @@ There is also a toolbar button that shows all AI Commands on the active RVL shee
 
 ![AI Panel Show All Commands](./img/ai_panel_open_from_toolbar.png){width="530px"}
 
+### RVL AI Assistant
+
+!!! note "Added in Rapise 9.1"
+
+The RVL AI Assistant allows you to modify RVL sheets using natural language prompts. Instead of manually editing rows, you can describe the changes you want, and the AI generates an RVL patch that you can review and apply.
+
+**How to access:**
+
+Click the sparkles icon (:material-creation-outline:) next to the test case title in the AI Panel header. This opens the RVL AI Assistant chat interface.
+
+**How to use:**
+
+1. Open the AI Panel for your RVL sheet
+2. Click the sparkles icon next to the test case name to open the RVL AI Assistant
+3. Type a prompt describing the modification you want to make (e.g., "Parameterize entering username and password")
+4. Submit the prompt—the AI analyzes the current RVL content and generates a patch
+5. Review the proposed changes displayed as a table showing affected rows and their modifications
+6. Optionally edit the patch before applying
+7. Click **Apply** to update the RVL sheet with the changes
+
+**Example prompts:**
+
+- "Parameterize entering username and password"
+- "Add a verification step after login"
+- "Convert hardcoded values to variables"
+
+**Features:**
+
+- The assistant shows a visual diff of proposed changes with row numbers and modification indicators
+- You can continue the conversation to refine the patch
+- Prompt history (last 10) is available for quick reuse
+- Token usage is displayed for monitoring AI consumption
+- The patch can be edited before applying to make manual adjustments
+
+The RVL AI Assistant is particularly useful for refactoring existing test cases, adding parameterization, or making structural changes that would otherwise require editing multiple rows manually.
+
 ### Command Menu
 
 You can perform various actions with each command.
@@ -928,11 +988,42 @@ You can perform various actions with each command.
 ![Command Menu](./img/ai_panel_command_menu.png){width="179px"}
 
 - :fontawesome-inflectra-generate: - generate or regenerate code for the command.
+- :material-creation-outline: - edit the generated code using AI (added in Rapise 9.1). See [In-Place AI Editing](#in-place-ai-editing) below.
 - <span class="nocolor">:heroicons-outline-play:</span> - run the code for this command.
 - <span class="nocolor">:heroicons-outline-document-duplicate:</span> - copy the command ID to the clipboard.
 - <span class="nocolor">:heroicons-outline-chat-bubble-left-right:</span> - open the corresponding chat session in the AI Dashboard.
-- <span class="nocolor">:heroicons-outline-hand-thumb-up:</span> - like the result of code generation. This will be used as a [positive example](../RVL/AI.md#tuning-with-positive-and-negative-examples) in subsequent AI Command prompts.
-- <span class="nocolor">:heroicons-outline-hand-thumb-down:</span> - dislike the result of code generation. This will be used as a [negative example](../RVL/AI.md#tuning-with-positive-and-negative-examples) in subsequent AI Command prompts.
+- <span class="nocolor">:heroicons-outline-hand-thumb-up:</span> - like the result of code generation. This will be used as a [positive example](ai_command.md#tuning-with-positive-and-negative-examples) in subsequent AI Command prompts.
+- <span class="nocolor">:heroicons-outline-hand-thumb-down:</span> - dislike the result of code generation. This will be used as a [negative example](ai_command.md#tuning-with-positive-and-negative-examples) in subsequent AI Command prompts.
+
+### In-Place AI Editing
+
+!!! note "Added in Rapise 9.1"
+
+You can refine generated code directly in the AI Panel without opening a separate chat. Each command displays a sparkles icon (:material-creation-outline:) that enables in-place editing with AI assistance.
+
+**How to use:**
+
+1. Click the sparkles icon (:material-creation-outline:) next to any command with generated code
+2. An input field appears below the command where you can type your modification request
+3. Enter instructions describing how to change the code (e.g., "Use object ID: Login_Username" or "Add error handling")
+4. Press Enter or click the play button to submit
+5. The AI regenerates the code based on your instructions
+6. A confirmation message appears when the code is updated
+
+**Example use cases:**
+
+- Specify which object from the repository to use: `Use object ID: Login_Username`
+- Change the action type: `Use DoSetText instead of DoClick`
+- Add additional steps: `Also verify the field is visible before clicking`
+- Fix issues with generated code: `The element name should be Submit_Button`
+
+This feature streamlines the iterative refinement process—you can quickly adjust generated code without leaving the AI Panel or starting a new chat session.
+
+### Object Navigation
+
+!!! note "Added in Rapise 9.1"
+
+When SmartAction commands reference objects from your repository, the AI Panel displays the object IDs at the bottom of each command. You can click on an object ID to navigate directly to that object in the Object Tree, making it easy to inspect or modify the object's properties and locators.
 
 ### Panel Menu
 
@@ -960,8 +1051,8 @@ When you work with AI in Rapise, it creates a set of folders in the root framewo
         - **sessions** - high-level information about AI chat sessions (name, ID, timestamp).
         - **options.json** - local [options](#settings) that override the global ones stored in `C:\ProgramData\Inflectra\Rapise\AI\options.json`. 
         - **screenshot.base64** - last screenshot taken in [Chats](#chats).
-        - **AIExamples.txt** - the list of liked/disliked [examples](../RVL/AI.md#tuning-with-positive-and-negative-examples) of generated code.
-        - **AIPrompt.txt** - [text to add to each AI prompt](../RVL/AI.md#shared-instructions) for AI Command processing.
+        - **AIExamples.txt** - the list of liked/disliked [examples](ai_command.md#tuning-with-positive-and-negative-examples) of generated code.
+        - **AIPrompt.txt** - [text to add to each AI prompt](ai_command.md#shared-instructions) for AI Command processing.
         - **ai.commands.json** - Since Rapise 8.3 command cache is split per Test Case/Page Object folders. For each RVL file that contains AI commands, an `ai.commands.json` is created in the same folder as the RVL file.
 
 ### Source Control

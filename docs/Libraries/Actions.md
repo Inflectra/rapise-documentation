@@ -475,7 +475,7 @@ A self-reference.
 <a name="SendKeys"></a>    
 #### SendKeys
 
-Sends a sequence of keystrokes to the specified element in the browser.If no element is specified sends a sequence of keystrokes to the browser.
+Sends a sequence of keystrokes to the specified element in the browser.If no element is specified sends a sequence of keystrokes to the browser.Modifier keys (Ctrl, Shift, Alt, Meta) are held down until a NULL (\uE000) characteror end of string releases them, enabling chords like Ctrl+A.
 
 ```javascript
 WebDriver.Actions().SendKeys("hello",obj.element).Perform();

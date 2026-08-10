@@ -4,7 +4,7 @@
     - [Know Your Way Around](./Intro/orientation.md)
     - [Self-Healing](./Guide/web_self_healing.md)
     - [Scriptless Testing](codeless.md)
-    - [AI in Rapise](./Intro/ai.md)
+    - [AI in Rapise](./AI/overview.md)
     - [Frameworks](./Guide/Frameworks/frameworks.md)
 === "Platforms"
     - [Web Testing](web.md)

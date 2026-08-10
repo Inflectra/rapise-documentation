@@ -226,6 +226,35 @@ The [Framework mode](./Frameworks/frameworks.md) was introduced in Rapise 8.0 to
 
 ![Framework View](./img/spira_dashboard_2_framework_view.png){width="1350px"}
 
+#### Offline Mode (Without Spira Integration)
+
+!!! note "Added in Rapise 9.1"
+
+The Spira Dashboard can work with test frameworks even without Spira integration. This allows you to benefit from test set management, parameters, and local execution without requiring a Spira connection.
+
+**When Rapise is not connected to Spira:**
+
+- The dashboard provides access to the **Framework** and **Parameters** views
+- No project dropdown or user badge is displayed in the header
+- A plug icon (:material-power-plug:) appears in the top-right corner to connect to Spira when needed
+- You can create and manage test sets, include/exclude test cases, and execute test sets locally
+- The `Sync with Spira` button is not shown since there is no Spira connection
+
+**When a framework is not yet synced with Spira:**
+
+If Rapise is connected to Spira but the current framework has not been synchronized yet:
+
+- The **Framework** and **Parameters** views are fully functional
+- You can create test sets, configure parameters, and run tests locally
+- The `Sync with Spira` button is available to establish the connection when ready
+- Other dashboard views (Test Cases, Test Sets, Test Runs, etc.) become available after synchronization
+
+This offline capability is useful for:
+
+- Developing and testing frameworks locally before connecting to Spira
+- Running quick test executions without Spira infrastructure
+- Teams that want to use Rapise's framework features without requiring Spira licenses for all developers
+
 #### Manage Test Sets
 
 The `Framework view` has a dropdown with test sets defined in the current framework.
@@ -291,6 +320,50 @@ Additionally, ensure you use this button after creating a new test case in the f
 	- [Rapise 8.0: development flow for Test Automation Framework in Team Mode](https://www.inflectra.com/Support/KnowledgeBase/KB756.aspx)
 	- [Rapise 8.0: how to make a copy of a test automation framework](https://www.inflectra.com/Support/KnowledgeBase/KB753.aspx)
 
+##### Ignore Filter for Sync
+
+!!! note "Added in Rapise 9.1"
+
+You can control which files are excluded from Spira synchronization using a `.gitignore` file in your framework root directory. This provides more flexibility than the default extension-based filter.
+
+**Using .gitignore for Spira sync:**
+
+When a `.gitignore` file exists in your framework, the Synchronize Files dialog shows "Files/folders are filtered with .gitignore" at the bottom. Click the `.gitignore` link to open and edit the file.
+
+If no `.gitignore` file exists, the dialog displays the legacy "Extensions of files to exclude" field. Click "Use .gitignore instead" to create a `.gitignore` file with default content.
+
+**Default .gitignore content:**
+
+When you create a new `.gitignore` file via the sync dialog, it is populated with sensible defaults:
+
+```gitignore
+# Auto-generated from Rapise extension filter
+# Edit this file to control which files are synced with Spira
+
+*.tap
+*.trp
+*.log
+*.user
+*.cmd
+*.rmt
+*.rmtpng
+Reports/
+node_modules/
+SeleniumProfiles/
+
+# Always exclude
+*.bak
+Entries.json
+Repository.json
+```
+
+**Benefits of using .gitignore:**
+
+- Use the same ignore patterns for both Git and Spira sync
+- More powerful pattern matching than simple extension filtering
+- Exclude specific folders and files by path
+- Use negation patterns to include specific files that would otherwise be excluded
+
 #### Execute Active Test Set
 
 Use the `Execute` button to launch the selected test set on a local machine via [RapiseLauncher](./spiratest_integration.md#using-rapiselauncher).
@@ -302,6 +375,9 @@ Use the `Execute` button to launch the selected test set on a local machine via 
 Just like the [Framework View](#framework-view-rapise-80), this view is available in [new frameworks](./Frameworks/frameworks.md) created with Rapise 8.0+. It is used to manage framework parameters and configurations and is described [here](./Frameworks/parameters.md).
 
 ![](./img/spira_dashboard_2_parameters_view.png){width="802px"}
+
+!!! note "Rapise 9.1"
+    Added support for `environment` type parameters that read values from system environment variables. Environment parameters are displayed with a lock icon and are useful for accessing CI/CD variables or machine-specific settings.
 
 ### Dashboard View (legacy)
 

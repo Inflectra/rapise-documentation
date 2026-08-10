@@ -53,6 +53,14 @@ This displays the output from the last web service request. It has several tabs:
 
 This section allows you to add, open, delete, and clone REST requests within the definition file.
 
+### Filter Field
+
+!!! note "Added in Rapise 9.1"
+
+When working with REST definition files containing many requests, use the filter field at the top of the Operation Explorer to quickly find specific requests. Simply type part of the request name and the list will filter to show only matching requests. Clear the filter to show all requests again.
+
+### Operations
+
 *   `Add request` - Adds a new REST operation to the current `.rest` definition file.
 
     ![Add Request](./img/rest_definition_editor_addrequest.png)

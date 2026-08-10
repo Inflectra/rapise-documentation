@@ -1,11 +1,11 @@
 # Self-Healing
 
 !!! important "AI-Powered Feature"
-    The easiest way to use this feature is with an [Inflectra.ai](./ai_dashboard.md#inflectraai) subscription in Spira, with Rapise [connected](./spiratest_integration.md#connecting-to-spiratest).
+    The easiest way to use this feature is with an [Inflectra.ai](../AI/ai_dashboard.md#inflectraai) subscription in Spira, with Rapise [connected](./spiratest_integration.md#connecting-to-spiratest).
 
     Inflectra.ai is included in cloud trials. For production Spira instances, make sure it is [enabled](https://spiradoc.inflectra.com/Spira-User-Manual/Inflectra-Ai-In-Spira/#getting-started).
 
-Alternatively, you can bring your own tokens by configuring one of the [supported AI providers](./ai_dashboard.md#amazon-bedrock).
+Alternatively, you can bring your own tokens by configuring one of the [supported AI providers](../AI/ai_dashboard.md#amazon-bedrock).
 
 ## Purpose
 
@@ -26,6 +26,74 @@ When a test encounters an object that cannot be found:
 3. **Object Found**: If successful, the test continues and records the new locator.
 4. **Patch Generation**: At test completion, a `.jspatch` file is created with all locator updates.
 5. **Review and Apply**: The [JSON Patch Editor](./web_smart_action.md#applying-patches-with-the-json-patch-editor) allows you to review and apply changes to the repository.
+
+## Modernize Command
+
+!!! note "Added in Rapise 9.1"
+
+The **Modernize** command forces self-healing to run for all objects in a test, even those that are found successfully by their current locators. This is useful for proactively updating your object repository after significant application changes.
+
+### How to Use
+
+1. Select your test case or framework in the Test Tree
+2. Go to `Test > Modernize` menu
+3. The test runs with forced self-healing enabled for all objects
+4. A `.jspatch` file is generated in the `Reports` folder containing updated locators
+
+### When to Use Modernize
+
+- **After major application updates**: Proactively refresh locators before tests start failing
+- **Migration to new locator strategy**: Update all objects to use improved locators
+- **Periodic maintenance**: Keep your object repository aligned with the current application state
+- **Before release testing**: Ensure all locators are current before critical test runs
+
+### Technical Details
+
+The Modernize command sets `g_saAlwaysForceHealing=true` for the test execution. This causes the self-healing engine to process every object interaction, generating new locator patches regardless of whether the existing locators work.
+
+The resulting patch file is saved to:
+```
+Reports\Objects_YYYY-MM-DD_HH-mm-ss.jspatch
+```
+
+Use the [JSON Patch Editor](./web_smart_action.md#applying-patches-with-the-json-patch-editor) to review and apply the changes.
+
+## Disabling Self-Healing
+
+!!! note "Added in Rapise 9.1"
+
+In some scenarios, you may want to disable self-healing entirely or for specific objects. Rapise provides options for both global and per-object control.
+
+### Global Disable
+
+To disable self-healing for all objects in a test, set the global variable:
+
+```javascript
+g_saDisableHealing = true;
+```
+
+This can be set in `TestInit()`, `User.js`, or passed as a test parameter. When enabled, no self-healing attempts are made—objects that cannot be found by their locators will fail immediately.
+
+### Per-Object Disable
+
+To disable self-healing for a specific object while allowing it for others, set the `smart_object_disable_healing` property in the object repository:
+
+```javascript
+"MyButton": {
+    "locations": [...],
+    "smart_object_description": "Submit button",
+    "smart_object_disable_healing": true
+}
+```
+
+You can also set this property using the Object Editor in Rapise. The property appears in the **AI Healing** category as **Disable Healing**.
+
+### Use Cases
+
+- **Performance-critical tests**: Skip AI processing overhead for objects that rarely change
+- **Stable locators**: Objects with robust, unique locators that don't need healing
+- **Debugging**: Isolate issues by disabling healing temporarily
+- **Third-party components**: Objects that AI cannot reliably identify visually
 
 ## Enabling AI Recorder
 

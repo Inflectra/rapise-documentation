@@ -1,6 +1,8 @@
 - 'Global':
     - 'Global Objects': 'Libraries/ses_lib_global.md'
+    - 'AiRobot': 'Libraries/AiRobot.md'
     - 'AiTester': 'Libraries/AiTester.md'
+    - 'AiTranslator': 'Libraries/AiTranslator.md'
     - 'Android': 'Libraries/Android.md'
     - 'Database': 'Libraries/Database.md'
     - 'File': 'Libraries/File.md'

@@ -12,5 +12,6 @@ The *Parameters...* button in the [Choose Test Case Dialog](test_to_play_selecto
 
 ## See Also
 
+- [Library Parameters](library_parameters.md)
 - [Testing Frameworks](Frameworks/frameworks.md)
 - [Playback](playback.md)

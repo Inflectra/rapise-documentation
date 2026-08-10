@@ -136,10 +136,82 @@ Options:
       --windows  Run in Windows mode
       --details  Print results on exit
       --report   Path to file for JUnit XML results output
-      --set      Set a Spira configuration parameter (e.g., --set SpiraServer=https://yourcompany.spiraservice.net/
-                 --set SpiraUser=FreddBloggs --set SpiraPassword=ApiKey)
+      --set      Set a Spira configuration parameter (see table below)
+      --gitext   Use external Git script for cloning (see below)
+      --console  Run in console mode without UI (see below)
   -h, --help     Show help
 ```
+
+**Available `--set` Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `SpiraServer` | string | URL of the SpiraTest server |
+| `SpiraUser` | string | SpiraTest login username |
+| `SpiraPassword` | string | API Key for authentication |
+| `AutomationHost` | string | Automation Host Token |
+| `Launcher_AutoCreateHost` | boolean | Auto-create automation host in Spira (default: `true`). Added in Rapise 9.1 |
+| `Launcher_PollingFreq` | number | Polling frequency in minutes |
+| `Launcher_PollAhead` | number | How far ahead to read schedule (minutes) |
+| `Launcher_RunOverdue` | boolean | Run overdue tests automatically |
+| `Launcher_LoadBalancingMode` | boolean | Enable load balancing mode |
+| `Launcher_UseTempFolder` | boolean | Use temp folder for test execution |
+| `Launcher_CaptureScreenshots` | boolean | Capture screenshots during playback |
+| `Launcher_ContinueIfBlocked` | boolean | Continue test set if test case is blocked |
+| `ConnectionTimeout` | number | Connection timeout in milliseconds |
+
+**Example:**
+
+```bash
+# Disable auto-creation of automation host
+npx rapiselauncher --set Launcher_AutoCreateHost=false
+```
+
+##### External Git for Cloning
+
+!!! note "Added in Rapise 9.1"
+
+By default, RapiseLauncher uses an embedded Git library for cloning repositories. The `--gitext` option instructs RapiseLauncher to use an external Git script instead. This is useful when you need more control over the cloning process, such as when working behind a proxy or with custom authentication.
+
+When `--gitext` is specified, RapiseLauncher looks for:
+
+- **Windows**: `GitClone.cmd` in `C:\Users\Public\Documents\Rapise\`
+- **Linux/macOS**: `gitclone.sh` in `~/.rapise/`
+
+If the script does not exist, RapiseLauncher automatically creates a default script that handles common scenarios including incremental updates (pull instead of full clone when the repository already exists).
+
+**Example:**
+
+```bash
+npx rapiselauncher -t 101 --gitext
+```
+
+The script receives the following environment variables:
+
+| Variable | Description |
+|----------|-------------|
+| `GitUrl` | Full Git URL |
+| `GitUrlWithoutProtocol` | Git URL without the `https://` prefix |
+| `GitUser` | Username for authentication |
+| `GitPassword` | Password or token for authentication |
+| `GitBranch` | Branch to checkout |
+| `GitTargetPath` | Local folder where repository should be cloned |
+
+You can customize the generated script to fit your specific needs, such as adding proxy settings or custom SSH configurations.
+
+##### Console Mode
+
+!!! note "Added in Rapise 9.1"
+
+The `--console` flag runs RapiseLauncher in console-only mode without displaying the graphical user interface. All log messages are streamed directly to the console output, making it ideal for CI/CD pipelines and headless environments where a UI is not needed or available.
+
+**Example:**
+
+```bash
+npx rapiselauncher -t 101 --console
+```
+
+This is particularly useful when running tests in Docker containers or CI/CD agents where there is no display available.
 
 ##### Viewing and Reporting Test Results
 

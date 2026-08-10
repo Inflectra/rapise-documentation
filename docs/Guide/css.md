@@ -52,6 +52,50 @@ Then the frame's content is searched for the `<a>` element that is the third chi
         css=frame[name='main']@@@//a[3]
     ```
 
+### Visibility Pseudo-Classes
+
+!!! note "Added in Rapise 9.1"
+
+Rapise extends standard CSS with `:visible` and `:hidden` pseudo-classes, similar to [jQuery's visibility selectors](https://api.jquery.com/visible-selector/). These allow you to filter elements based on their visibility state.
+
+An element is considered **hidden** if:
+
+- It has `display: none`
+- It has `visibility: hidden`
+- It has `opacity: 0`
+
+An element is considered **visible** if none of the above conditions apply.
+
+**Examples:**
+
+```css
+/* Click only the visible Submit button (ignore hidden duplicates) */
+css=button.btn-submit:visible
+
+/* Select visible dropdown menu items after hover */
+css=.dropdown-menu li:visible
+
+/* Find the active tab panel */
+css=.tab-pane:visible
+
+/* Verify an error message is displayed */
+css=.error-message:visible
+
+/* Check that a loading spinner is hidden */
+css=.loading-spinner:hidden
+
+/* Verify a modal dialog is not visible */
+css=.modal-backdrop:hidden
+```
+
+This is particularly useful for:
+
+- Testing dropdown menus, tooltips, and popups that appear on hover or click
+- Verifying that error messages or validation hints are shown/hidden
+- Working with tab interfaces where only one panel is visible at a time
+- Checking loading indicators and progress overlays
+- Testing modal dialogs and their backdrop elements
+
 ### Shadow DOM
 
 Another CSS extension is related to [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM). Its borders are typically closed to CSS. In such a case, a locator for an element inside Shadow DOM has two parts, separated by the `@#@` delimiter. The first part (can be [XPath](xpath.md) or CSS) should point to the Shadow Root in the Light DOM. The second part (always CSS) should point to a child element of the Shadow Root. In the case of nested Shadow DOMs, there will be multiple `@#@` delimiters.

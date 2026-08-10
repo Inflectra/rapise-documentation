@@ -39,6 +39,7 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 | ----------- | --------------- |
 |  [DoClickCell](#doclickcell) | Clicks the specified cell. |
 |  [DoClickText](#doclicktext) | Clicks on a specific text inside the grid. |
+|  [DoDeleteItem](#dodeleteitem) | Deletes a row from the grid by clicking the row's more actions dropdown button and choosing the Delete option. |
 
 
 
@@ -217,6 +218,29 @@ SeS('SomeDomLightningGrid').DoClickText(text, index)
 
 
 <a name="see.also.domlightninggrid.doclicktext"></a>
+
+<a name="DoDeleteItem"></a>    
+#### DoDeleteItem
+
+Deletes a row from the grid by clicking the row's more actions dropdown button and choosing the Delete option.
+
+```javascript
+SeS('SomeDomLightningGrid').DoDeleteItem(text, col)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| text | string |  String value that the cell should contain to identify the row. |
+| col | string \| number |  Name or index of the column. Name is preferred. |
+
+
+
+
+
+<a name="see.also.domlightninggrid.dodeleteitem"></a>
 
   
 

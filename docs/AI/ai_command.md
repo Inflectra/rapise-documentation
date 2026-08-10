@@ -152,7 +152,7 @@ Repository objects play a critical role in contextualizing `AI` actions within t
 There are two ways to include repository objects in the test:
 
 1. Use objects belonging to the test case.
-2. Explicitly include objects using the [Repository](./Repository.md) command.
+2. Explicitly include objects using the [Repository](../RVL/Repository.md) command.
 
 #### Test Case Repository
 
@@ -180,7 +180,7 @@ In summary, it reused the test case's own repository to implement the user actio
 
 #### Using External Repository
 
-The `AI` command recognizes external [Repositories](Repository.md) as well as local repositories. Anything defined using the `Repository` command will be used.
+The `AI` command recognizes external [Repositories](../RVL/Repository.md) as well as local repositories. Anything defined using the `Repository` command will be used.
 
 ![Action with External Objects](img/AI_external_repo_o_actions.png)
 
@@ -426,5 +426,5 @@ The only exception is if you updated an `AI` command and did not regenerate itâ€
 
 ## See Also
 
-- [AI Dashboard](../Guide/ai_dashboard.md#ai-dashboard)
-- [AI Panel](../Guide/ai_dashboard.md#ai-panel)
+- [AI Dashboard](ai_dashboard.md#ai-dashboard)
+- [AI Panel](ai_dashboard.md#ai-panel)
