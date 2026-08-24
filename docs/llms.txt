@@ -1,0 +1,56 @@
+# Rapise
+
+> Rapise is an automated software testing tool for desktop, web, mobile, and API testing. It uses RVL (Rapise Visual Language) and JavaScript for test automation.
+
+Rapise documentation is organized into sections for different aspects of the tool.
+
+## LLM-Optimized Documentation
+
+- [llms-global.txt](llms-global.txt): Global utilities and Tester assertions
+- [llms-web.txt](llms-web.txt): Web testing with Selenium/WebDriver
+- [llms-rvl.txt](llms-rvl.txt): RVL (Rapise Visual Language) syntax and concepts
+- [llms-framework.txt](llms-framework.txt): Test framework structure and files
+- [llms-extending.txt](llms-extending.txt): Creating page objects and extension libraries
+
+## Full Documentation
+
+- Documentation: https://rapisedoc.inflectra.com/
+- Getting Started: https://rapisedoc.inflectra.com/Intro/overview/
+- User Guide: https://rapisedoc.inflectra.com/Guide/
+- RVL Reference: https://rapisedoc.inflectra.com/RVL/
+- API Reference: https://rapisedoc.inflectra.com/Libraries/
+- AI Features: https://rapisedoc.inflectra.com/AI/
+
+## Quick Reference
+
+### Object Interaction Pattern
+
+```javascript
+// Standard action (logs to report, fails test on error)
+SeS("ObjectId").DoClick();
+
+// Silent action (no report, no test failure on error)
+SeS("ObjectId")._DoClick();
+```
+
+### Common Global Functions
+
+```javascript
+Global.DoSleep(1000);                    // Pause 1 second
+Global.GetProperty("key", "default");    // Read config value
+Tester.Assert("message", condition);     // Assert with report
+Tester.Message("info");                  // Log to report
+```
+
+### RVL Structure
+
+RVL scripts are Excel spreadsheets with 7 columns:
+Flow | Type | Object | Action | ParamName | ParamType | ParamValue
+
+### Web Element Discovery
+
+```javascript
+Navigator.SeSFind("//button[@id='save']");     // XPath, retries, fails test
+Navigator.Find("//button[@id='save']");        // XPath, single attempt, returns null
+Navigator.DoWaitFor("//input", 5000);          // Wait up to 5s for element
+```

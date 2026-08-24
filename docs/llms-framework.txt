@@ -1,0 +1,558 @@
+# Rapise Test Framework Structure
+
+This document describes the file and folder structure of Rapise test frameworks.
+
+## Framework Root Structure
+
+```
+MyFramework/
+├── Framework.sstest          # Main framework file (open this in Rapise)
+├── Main.js                   # Framework entry point
+├── Objects.js                # Framework-level learned objects
+├── Common.js                 # Shared utility functions
+├── TestCases/                # Test case folders
+├── PageObjects/              # Page object modules
+├── Lib/LibFramework/         # Framework configuration (Parameters.json, Framework.json)
+├── Shared/                   # Shared config and data (Common.rvl.xlsx)
+├── AI/                       # AI-related files
+├── Profiles/                 # Browser/device profiles
+└── Reports/                  # Execution reports
+```
+
+---
+
+## Test Case Structure
+
+Each test case is a folder containing:
+
+```
+TestCases/
+└── Login Test/
+    ├── Test.sstest           # Test case file
+    ├── Main.js               # Test entry point
+    ├── Main.rvl.xlsx         # RVL script (if using RVL)
+    ├── Objects.js            # Test-specific learned objects
+    ├── User.js               # Custom JavaScript functions
+    ├── ai.commands.json      # AI-generated command mappings
+    └── Reports/              # Test execution reports
+```
+
+### Main.js
+
+Entry point that Rapise calls when executing the test:
+
+```javascript
+function Test(params)
+{
+    // For RVL-based tests
+    RVL.DoPlayScript("Main.rvl.xlsx", Tester.GetParam("sheetName", "RVL"));
+}
+
+// Libraries to load (comma-separated)
+g_load_libraries = ["Web"];
+```
+
+### Objects.js
+
+Contains learned UI objects:
+
+```javascript
+saved_script_objects = {
+    "LoginButton": {
+        "version": 0,
+        "object_type": "HTMLObject",
+        "object_name": "Login Button",
+        "object_library": "Chrome HTML",
+        "xpath": "//button[@id='login']",
+        "title": "Login Page",
+        "url": "https://example.com/login"
+    },
+    "UsernameField": {
+        "version": 0,
+        "object_type": "HTMLObject",
+        "object_name": "Username",
+        "xpath": "//input[@name='username']"
+    }
+};
+```
+
+Access objects in tests:
+
+```javascript
+SeS("LoginButton").DoClick();
+SeS("UsernameField").DoSetText("admin");
+```
+
+### User.js
+
+Custom functions available in both JavaScript and RVL:
+
+```javascript
+function Login(username, password) {
+    SeS("UsernameField").DoSetText(username);
+    SeS("PasswordField").DoSetText(password);
+    SeS("LoginButton").DoClick();
+    Global.DoSleep(2000);
+}
+
+function VerifyLoggedIn() {
+    var welcome = SeS("WelcomeMessage");
+    return welcome && welcome.GetText().indexOf("Welcome") >= 0;
+}
+```
+
+---
+
+## Page Objects
+
+Reusable UI component modules:
+
+```
+PageObjects/
+└── MyApp/
+    ├── Test.sstest           # Page object file
+    ├── Main.js               # Entry point (for testing page object)
+    ├── MyApp.js              # Page object implementation
+    ├── Objects.js            # Learned objects for this page
+    └── User.js               # Helper functions
+```
+
+### Page Object Implementation (MyApp.js)
+
+Functions starting with `Do` are auto-reported as actions. Returning `false` automatically fails the action (no `Tester.Assert` needed). Use underscore methods (`_DoClick`, `_DoSetText`) inside to avoid duplicate report entries.
+
+```javascript
+SeSPageObject("MyApp");
+
+/**
+ * Logs into the application
+ * @param username User name
+ * @param password User password
+ */
+function MyApp_DoLogin(/**string*/ username, /**string*/ password)
+{
+    // Underscore methods: don't double-report since DoLogin is already reported
+    SeS("UsernameField")._DoSetText(username);
+    SeS("PasswordField")._DoSetText(password);
+    SeS("LoginButton")._DoClick();
+    Global.DoSleep(2000);
+    return true;
+}
+
+/**
+ * Clicks a button by name
+ * @param name Button label or name attribute
+ */
+function MyApp_DoClickButton(/**string*/ name)
+{
+    var xpath = "//button[@name='" + name + "']"
+        + "|//button[normalize-space(.)='" + name + "']";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;  // Shows "Save" instead of XPath in report
+        return obj._DoClick();   // Underscore: don't double-report
+    }
+    return false;  // Returning false fails the DoClickButton action
+}
+```
+
+Usage in tests:
+
+```javascript
+MyApp.DoLogin("admin", "password123");
+MyApp.DoClickButton("Save");
+```
+
+### RVL-Based Page Objects
+
+Page objects can also be created using RVL instead of JavaScript. RVL is recommended for straightforward scenarios involving UI interactions. JavaScript is better for complex logic, loops, data manipulation, or web service interactions.
+
+**Folder structure:**
+
+```
+PageObjects/
+└── App/
+    ├── Test.sstest           # Page object file
+    ├── Main.js               # Entry point
+    ├── Main.rvl.xlsx         # RVL actions (sheets = actions)
+    ├── App.js                # Auto-generated JS wrapper
+    ├── Objects.js            # Learned objects
+    └── User.js               # Helper functions
+```
+
+**Key difference from JS-based:** In RVL mode, each **sheet** (except `RVL` and `PageObject`) becomes an action. The sheet name is the action name.
+
+**Main.rvl.xlsx sheets:**
+
+| Sheet | Purpose |
+|-------|---------|
+| `RVL` | Default sheet, typically empty or contains internal tests (required) |
+| `PageObject` | Contains action description shown in tooltips (required) |
+| `DoLogin` | Example action sheet - becomes `App.DoLogin()` |
+| `DoLogout` | Example action sheet - becomes `App.DoLogout()` |
+| `DoNavigate` | Example action sheet - becomes `App.DoNavigate()` |
+
+Users can define as many action sheets as needed with different names. The `RVL` and `PageObject` sheets are always required. Every other sheet defines an action of the Page Object.
+
+**Action Parameters in RVL:**
+
+Define parameters in the sheet name using signatures:
+
+```
+DoLogin(/**string*/usr, /**string*/pwd)
+DoAdd(name=Jim, age=41)
+```
+
+Supported parameter types: `string`, `number`, `boolean`, `object`.
+
+**Inside an RVL action sheet:**
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| # | DoLogin description | | | | | |
+| | Variable | | | usr | string | TBD |
+| | Variable | | | pwd | string | TBD |
+| | Variable | | | ReturnValue | | |
+| # | Action steps below | | | | | |
+| | Action | UsernameField | DoSetText | txt | variable | usr |
+| | Action | PasswordField | DoSetText | txt | variable | pwd |
+| | Action | LoginButton | DoClick | | | |
+
+Variables before `ReturnValue` are parameters. Assign `ReturnValue` during execution to return a value.
+
+**Auto-generated wrapper (App.js):**
+
+Rapise auto-generates JavaScript wrappers for RVL actions:
+
+```javascript
+//<autogenerated> - Don't edit!
+function App_DoLogin(/**string*/usr, /**string*/pwd)
+{
+    var res = SeSPageObjectRvlInvoke(
+        this,
+        __dirname+"\\Test.sstest",
+        __dirname+"\\Main.rvl.xlsx",
+        "DoLogin",
+        { usr: usr, pwd: pwd }
+    );
+    return res;
+}
+global.App_DoLogin = App_DoLogin;
+
+SeSPageObject("App");
+```
+
+**Usage (same as JS-based):**
+
+```javascript
+// In JavaScript
+App.DoLogin("admin", "password123");
+```
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | App | DoLogin | usr | string | admin |
+| | Param | | | pwd | string | password123 |
+
+---
+
+## Shared Configuration
+
+### Shared/Common.rvl.xlsx
+
+Special workbook for framework-wide RVL definitions. All variables, maps, and repositories declared here are automatically available in every RVL sheet across the entire framework.
+
+**Key characteristics:**
+- One per framework, located in `Shared/` folder
+- All sheets are treated as preambles (no actions, only definitions)
+- Variables, maps, and repositories become globally available
+- Create via Object tree → Shared → New Common.rvl.xlsx
+
+**Example Common.rvl.xlsx content:**
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| # | Global Variables | | | | | |
+| | Variable | | | g_baseUrl | string | https://example.com |
+| | Variable | | | g_timeout | number | 30000 |
+
+Variables in Common.rvl.xlsx are global by default - no need for the `Global` keyword. They are accessible from any RVL sheet or JavaScript code in the framework.
+
+---
+
+## Framework Configuration (Lib/LibFramework)
+
+Framework settings are stored in `Lib/LibFramework/`:
+
+```
+Lib/LibFramework/
+├── Framework.json            # Test cases, page objects, test sets structure
+├── Parameters.json           # Framework parameters with default values
+├── Spira.json                # Spira integration mappings (optional)
+└── LibFramework.js           # Framework library code
+```
+
+### Parameters.json
+
+Defines framework-wide parameters accessible in all test cases:
+
+```json
+{
+  "params": [
+    { "name": "Browser", "type": "browser", "defaultValue": "Selenium - Chrome" },
+    { "name": "EnvURL", "type": "string", "defaultValue": "https://dev.example.com" },
+    { "name": "Username", "type": "string", "defaultValue": "admin" },
+    { "name": "Password", "type": "password", "defaultValue": "encryptedValue==" }
+  ],
+  "configs": [
+    { "id": "default1", "name": "Default" },
+    { "id": "staging1", "name": "Staging", "values": { "EnvURL": "https://staging.example.com" } }
+  ]
+}
+```
+
+**Parameter types:** `string`, `number`, `boolean`, `password`, `select`, `browser`, `mobile`, `datacolumn`, `environment`.
+
+**Configurations:** Named sets of parameter overrides. Only parameters that differ from defaults are specified in the `values` object.
+
+**Accessing parameters:**
+
+In JavaScript:
+```javascript
+var url = Tester.GetParam("EnvURL");
+```
+
+In RVL (use `testparam` as ParamType):
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | Navigator | Open | url | testparam | EnvURL |
+
+### Framework.json
+
+Contains framework structure. Managed by Rapise IDE - typically not edited manually.
+
+```json
+{
+  "framework": { ... },      // Framework metadata and settings
+  "testcases": [             // List of test cases
+    { "id": "ABC123", "name": "LoginTest", "alias": "Login Test",
+      "sstest": "%WORKDIR%TestCases\\LoginTest\\Test.sstest",
+      "rep": "%WORKDIR%TestCases\\LoginTest\\Objects.js",
+      "libraries": ["Web"] }
+  ],
+  "pageobjects": {           // Page objects
+    "MyApp": { "id": "XYZ789", "js": "%WORKDIR%PageObjects\\MyApp\\MyApp.js",
+      "sstest": "%WORKDIR%PageObjects\\MyApp\\Test.sstest",
+      "rep": "%WORKDIR%PageObjects\\MyApp\\Objects.js",
+      "libraries": ["Web"] }
+  },
+  "testsets": [ ... ],       // Test sets grouping test cases with configs
+  "shared": [ ... ]          // Shared JavaScript files
+}
+```
+
+### Spira.json
+
+Maps framework elements to SpiraTest for CI/CD integration. Managed by Rapise IDE - typically not edited manually.
+
+```json
+{
+  "projectId": 9,            // Spira project ID
+  "testCasesFolderId": 755,  // Test cases folder in Spira
+  "testSetsFolderId": 351,   // Test sets folder in Spira
+  "testcases": [             // Rapise ID to Spira ID mappings
+    { "id": "ABC123", "spiraId": 7081 }
+  ],
+  "testsets": [              // Rapise ID to Spira ID mappings
+    { "id": "a448ba14", "spiraId": 1041 }
+  ]
+}
+```
+
+### Shared/Config.xlsx
+
+Excel file storing configuration values:
+
+| Key | Value |
+|-----|-------|
+| BaseUrl | https://example.com |
+| Username | testuser |
+| Password | (encrypted) |
+| Timeout | 30000 |
+
+Access in code:
+
+```javascript
+var url = Global.GetProperty("BaseUrl", "", "%WORKDIR%\\Shared\\Config.xlsx");
+var user = Global.GetProperty("Username", "", "%WORKDIR%\\Shared\\Config.xlsx");
+```
+
+---
+
+## AI Integration Files
+
+### Shared/AIExamples.txt (or AI/AIExamples.txt)
+
+Contains positive and negative examples for AI code generation. When generating code, the AI uses these examples to learn preferred patterns and avoid incorrect approaches.
+
+**Purpose:**
+- **Positive examples** (thumbs up): Correct code patterns the AI should follow
+- **Negative examples** (thumbs down): Incorrect approaches the AI should avoid
+
+**Format:**
+
+```
+Prompt: Write OS type to the report
+Correct: Tester.Message("OS Type: ", Global.GetOsType());
+
+Prompt: Wait 1 second
+Wrong: Sleep(1);
+
+Prompt: Wait 1 second
+Correct: Global.DoSleep(1000);
+```
+
+Examples are added via thumbs up/down buttons in the AI Panel, or manually edited. Rapise checks both `%WORKDIR%/AI` and `%WORKDIR%/Shared` folders.
+
+### Shared/AiPrompt.txt (or AI/AiPrompt.txt)
+
+Framework-specific instructions appended to every AI code generation request. Used to enforce conventions and provide guidance.
+
+```
+## Button Clicks
+Use MyApp.DoClickButton(name) for clicking buttons.
+CRITICAL: Do not click disabled buttons.
+
+## Form Fields
+Use MyApp.DoSetField(name, value) for text inputs.
+Use MyApp.DoSelectDropdown(name, option) for dropdowns.
+
+## Before Calculations
+Always press Clear button before starting a new calculation.
+```
+
+### ai.commands.json (per test case)
+
+Maps AI command prompts to their generated JavaScript code. Created automatically when AI commands are processed.
+
+```json
+{
+  "ABC1-DEF2-GH34": {
+    "prompt": "Click the Save button",
+    "code": [
+      "MyApp.DoClickButton(\"Save\");"
+    ]
+  }
+}
+```
+
+Once code is generated and cached, test execution does not require AI access.
+
+---
+
+## SeS() Object Access
+
+`SeS(objectId)` retrieves learned objects from Objects.js:
+
+```javascript
+// Standard action - logs to report, fails test on error
+SeS("SaveButton").DoClick();
+
+// Silent action (underscore prefix) - no report, no failure
+SeS("OptionalPopup")._DoClick();
+```
+
+### Underscore Convention
+
+For actions starting with `Do`:
+- `DoClick()` - Reports action, fails test if error
+- `_DoClick()` - Silent, returns false on error
+
+**Use underscore for:**
+- Optional elements that may not exist
+- Intermediate navigation steps
+- Cleanup actions
+
+**Use regular for:**
+- Critical test actions
+- Verifications
+- Final meaningful interactions
+
+---
+
+## Library Loading
+
+### g_load_libraries
+
+Specifies which libraries to load:
+
+```javascript
+// Single library
+g_load_libraries = ["Web"];
+
+// Multiple libraries
+g_load_libraries = ["Web", "DomSalesforce"];
+
+// Desktop application
+g_load_libraries = ["UIAutomation"];
+```
+
+Common libraries:
+- `Web` - Selenium/Chrome web testing
+- `UIAutomation` - Windows UI Automation
+- `DomSalesforce` - Salesforce Lightning components
+- `DomDynamicsCrm` - Microsoft Dynamics CRM
+- `Mobile` - Appium mobile testing
+
+---
+
+## File Reference Summary
+
+| File | Purpose |
+|------|---------|
+| `*.sstest` | Rapise project file (open in Rapise) |
+| `Main.js` | Test entry point, contains Test() function |
+| `Main.rvl.xlsx` | RVL script (spreadsheet-based test) |
+| `Objects.js` | Learned UI objects |
+| `User.js` | Custom JavaScript functions |
+| `Common.js` | Framework-wide shared functions |
+| `Lib/LibFramework/Parameters.json` | Framework parameters (environment, credentials) |
+| `Lib/LibFramework/Framework.json` | Framework structure (test cases, page objects) |
+| `Shared/Common.rvl.xlsx` | Global RVL variables and maps |
+| `ai.commands.json` | AI-generated code mappings |
+| `AiPrompt.txt` | AI guidance for code generation |
+| `AIExamples.txt` | Positive/negative examples for AI |
+
+---
+
+## Creating New Test Cases
+
+1. Create folder under `TestCases/`
+2. Copy `Test.sstest` template
+3. Create `Main.js` with `Test()` function
+4. Create `Objects.js` (or learn objects via Rapise)
+5. Optionally create `Main.rvl.xlsx` for RVL tests
+6. Add `User.js` for custom functions
+
+```javascript
+// Minimal Main.js
+function Test(params)
+{
+    Tester.Message("Starting test");
+    // Your test code here
+}
+
+g_load_libraries = ["Web"];
+```
+
+---
+
+## Best Practices
+
+1. **Organize by feature**: Group related test cases in subfolders
+2. **Use page objects**: Extract reusable UI patterns
+3. **Centralize config**: Use `Parameters.json` for environment-specific values, `Common.rvl.xlsx` for RVL global variables
+4. **Name objects descriptively**: `LoginButton` not `Button1`
+5. **Keep AI files updated**: Maintain AiPrompt.txt for accurate AI assistance
+6. **Use underscore for optional elements**: Prevent false test failures
