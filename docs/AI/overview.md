@@ -3,7 +3,7 @@
 <div class="ai-watermark">
 </div>
 
-Rapise 8.2 harnesses the power of Generative AI to streamline and optimize your test automation workflows. Designed with flexibility and extensibility in mind, our platform allows you to leverage AI features for your unique testing needs.
+Rapise harnesses the power of Generative AI to streamline and optimize your test automation workflows. Designed with flexibility and extensibility in mind, our platform allows you to leverage AI features for your unique testing needs.
 
 ## Key Benefits
 

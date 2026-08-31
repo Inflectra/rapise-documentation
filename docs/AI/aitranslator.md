@@ -70,6 +70,9 @@ AiTranslator generates [SmartActions](../Guide/web_smart_action.md)—test steps
 - **Readable**: Express intent in human-understandable terms
 - **Maintainable**: Update descriptions instead of brittle locators
 
+!!! tip "Applying Generated Objects"
+    When AiTranslator generates SmartActions, it also creates the underlying objects needed for automation. These proposed objects are saved to a `.jspatch` file, and when new objects are generated, Rapise automatically opens the file in the JSON Patch Editor for review. See [Applying Patches with the JSON Patch Editor](../Guide/web_smart_action.md#applying-patches-with-the-json-patch-editor) to learn how to apply these additions to your object repository.
+
 ## Best Practices
 
 1. **Write Clear Steps**: Be specific about what you want to happen
