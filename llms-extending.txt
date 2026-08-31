@@ -1,0 +1,577 @@
+# Extending Rapise
+
+This document covers two ways to extend Rapise functionality:
+1. **Page Objects** - High-level reusable actions (e.g., `MyApp.Launch()`, `MyApp.DoLogin()`)
+2. **Extension Libraries** - Custom control types for recording/playback (e.g., `DomMyAppGrid`)
+
+---
+
+## Page Objects
+
+Page objects provide high-level, reusable actions accessed as `PageObjectName.ActionName()` (e.g., `MyApp.DoLogin(user, pwd)`, `MyApp.DoClickButton("Save")`). They encapsulate complex UI interactions into simple method calls.
+
+### Structure
+
+```
+PageObjects/
+└── MyApp/
+    ├── Test.sstest           # Page object file
+    ├── Main.js               # Entry point
+    ├── MyApp.js              # Page object implementation
+    ├── Objects.js            # Learned objects
+    └── User.js               # Helper functions
+```
+
+### Implementation Pattern
+
+Functions starting with `Do` are auto-reported as actions. Returning `false` automatically fails the action (no `Tester.Assert` needed). Use underscore methods (`_DoClick`, `_DoSetText`) inside to avoid duplicate report entries.
+
+```javascript
+/**
+ * @PageObject MyApp - Common application actions
+ */
+SeSPageObject("MyApp");
+
+/**
+ * Clicks a button by name.
+ * @param name Button label
+ */
+function MyApp_DoClickButton(/**string*/ name)
+{
+    var xpath = "//button[@name='" + name + "']"
+        + "|//button[normalize-space(.)='" + name + "']";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;   // Shows "Save" instead of XPath in report
+        return obj._DoClick();    // Underscore: don't double-report
+    }
+    return false;  // Returning false fails the DoClickButton action
+}
+
+/**
+ * Sets a form field value.
+ * @param name Field label
+ * @param value Text to enter
+ */
+function MyApp_DoSetTextField(/**string*/ name, /**string*/ value)
+{
+    var xpath = "//input[@id=//label[normalize-space(.)='" + name + "']/@for]";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;
+        return obj._DoSetText(value);
+    }
+    return false;
+}
+```
+
+### Usage
+
+In JavaScript:
+```javascript
+MyApp.DoClickButton("Save");
+MyApp.DoSetTextField("Company", "Acme Corp");
+```
+
+In RVL:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | MyApp | DoClickButton | name | string | Save |
+| | Action | MyApp | DoSetTextField | name | string | Company |
+| | Param | | | value | string | Acme Corp |
+
+### Best Practices
+
+1. **Naming**: Use `PageObjectName_DoActionName` function pattern (e.g., `MyApp_DoLogin` becomes `MyApp.DoLogin()`)
+2. **Do prefix**: Functions starting with `Do` are auto-reported; returning `false` fails the action
+3. **Underscore methods**: Use `_DoClick()`, `_DoSetText()` inside to avoid duplicate report entries
+4. **JSDoc comments**: Add `@param` annotations for auto-completion
+5. **object_name**: Set before actions for readable reports
+6. **Multi-strategy XPaths**: Use `|` to join multiple locators
+7. **Configuration**: Read settings via `Tester.GetParam()` or `Global.GetProperty()`
+
+---
+
+## Extension Libraries (Custom Controls)
+
+Extension libraries add support for application-specific controls (grids, comboboxes, etc.) that can be learned and recorded. The library code runs during **playback** in the Rapise test engine context.
+
+### Library Structure
+
+```
+Lib/LibDomMyApp/
+├── LibDomMyApp.js            # Main library, plugin registration
+├── LibDomMyAppRules.js       # Control type rules (SeSRegisterRule)
+├── LibDomMyAppInfo.js        # Documentation metadata
+├── LibDomMyAppRecorder.js    # Recording hooks (optional)
+├── DomMyAppGrid.js           # Grid control behavior
+├── DomMyAppComboBox.js       # ComboBox control behavior
+└── ...                       # Additional control files
+```
+
+### Main Library File (LibDomMyApp.js)
+
+```javascript
+/**
+ * @fileOverview DomMyApp library - custom controls for MyApp
+ */
+
+DomMyAppPlugin = {
+    pluginId: "DomMyAppPlugin",
+    include: "Lib/LibDomMyApp/LibDomMyAppRecorder.js",
+    attachFunctionName: "DomMyAppPluginAttach",
+    
+    Init: function() {
+        return true;
+    }
+}
+
+eval(g_helper.IncludeOnce("Lib/LibDomMyApp/LibDomMyAppRules.js"));
+
+// Optional: XPath modification callback
+function DomMyApp_OnXPathNotFound(xpath) {
+    // Modify xpath to handle dynamic IDs
+    return xpath;
+}
+g_xpathNotFoundCallbacks.push(DomMyApp_OnXPathNotFound);
+
+// Optional: Web app profile for recording
+var DomMyApp_WebAppProfile = {
+    record: {
+        attributes: [
+            { name: "id", notEmpty: true, exclude: "\\d" },
+            { name: "name" },
+            { name: "aria-label" },
+            { name: "data-testid" }
+        ]
+    }
+}
+g_webAppProfile = DomMyApp_WebAppProfile;
+```
+
+### Rules File (LibDomMyAppRules.js)
+
+```javascript
+/**
+ * @fileOverview Control type rules for MyApp
+ */
+
+eval(g_helper.IncludeOnce('Lib/LibDomMyApp/DomMyAppGrid.js'));
+eval(g_helper.IncludeOnce('Lib/LibDomMyApp/DomMyAppComboBox.js'));
+
+/** @rule DomMyAppGrid */
+SeSRegisterRule({
+    rule_id: "DomMyAppGridRule",
+    object_type: "DomMyAppGrid",
+    object_flavor: "Grid",
+    extend_rule: "HTMLObject",
+    dont_hash: true,
+    behavior: ["DomMyAppGridBehavior"]
+});
+
+/** @rule DomMyAppComboBox */
+SeSRegisterRule({
+    rule_id: "DomMyAppComboBoxRule",
+    object_type: "DomMyAppComboBox",
+    object_flavor: "ComboBox",
+    extend_rule: "HTMLObject",
+    dont_hash: true,
+    behavior: ["DomMyAppComboBoxBehavior"]
+});
+```
+
+### Control Behavior File (DomMyAppComboBox.js)
+
+```javascript
+/** @behavior DomMyAppComboBox */
+SeSRegisterBehavior({
+    id: "DomMyAppComboBoxBehavior",
+    
+    actions: [
+        {
+            actionName: "SelectItem",
+            /** @action */
+            DoAction: DomMyAppComboBox_DoSelectItem
+        }
+    ],
+    
+    properties: {
+        // Define properties if needed
+    }
+});
+
+/**
+ * Selects an item from the combobox.
+ * @param item Item text or index
+ */
+function DomMyAppComboBox_DoSelectItem(/**string|number*/ item)
+{
+    // Open dropdown
+    var trigger = this._DoDOMQueryXPath(".//button[@aria-haspopup='true']");
+    if (trigger && trigger.length > 0) {
+        trigger[0]._DoClick();
+        Global.DoSleep(500);
+        
+        // Find and click item
+        var itemEl = this._DoDOMQueryXPath(".//li[@role='option' and contains(.,'" + item + "')]");
+        if (itemEl && itemEl.length > 0) {
+            itemEl[0]._DoClick();
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+### Info File (LibDomMyAppInfo.js)
+
+```javascript
+if (typeof(g_libInfo) == "undefined") g_libInfo = {};
+
+g_libInfo.DomMyAppComboBoxRuleInfo = {
+    _description: "MyApp ComboBox control behavior."
+}
+
+g_libInfo.DomMyAppComboBoxBehaviorInfo = {
+    _description: "Behavior for MyApp ComboBox controls.",
+    actions: {
+        SelectItem: {
+            _description: "Selects an item from the dropdown.",
+            item: {
+                description: "Item text or index to select.",
+                type: "string|number"
+            }
+        }
+    },
+    properties: {}
+}
+```
+
+### Recorder File (LibDomMyAppRecorder.js)
+
+The recorder file runs **inside the browser context** (not the Rapise test engine). It intercepts user actions during recording and maps them to custom control types and actions.
+
+Since it runs in the browser, you can use standard DOM APIs (`element.tagName`, `element.innerText`, `el.parentNode`, etc.) plus Rapise-provided helper functions.
+
+```javascript
+// Entry point - called by Rapise during recording
+function DomMyAppPluginAttach(browser, actionHolder)
+{
+    if(l2) Log2("DomMyApp Plugin Initializing");
+    
+    // Return codes
+    var R_NOT_OBJECT = 0;    // Element not recognized by this plugin
+    var R_ACTION_FOUND = 1;  // Object and action identified
+    var R_OBJECT_FOUND = 2;  // Object identified, but action unknown
+    
+    // Console fallback for browsers without console
+    if (typeof(console) == "undefined")
+    {
+        var console = {};
+        console.log = function(msg){};
+    }
+    
+    // Utility to clean object names (remove dynamic IDs)
+    function _normalizeObjectName(t)
+    {
+        t = t || "";
+        var re = new RegExp("_[0-9]+_", "ig");
+        t = t.replace(re, "_");
+        return t;
+    }
+    
+    //////////////////////////////////////////////////////////////////////
+    // Control detection functions
+    //////////////////////////////////////////////////////////////////////
+    
+    function IsDomMyAppGrid(evt, element, eventOpts, objName, description, flavor, items)
+    {
+        // Helper to extract cell info from clicked element
+        function _getCell(el)
+        {
+            var cell = { row: 0, col: 0 };
+            var cellEl = __hasParentWithTag(el, "td");
+            if (cellEl)
+            {
+                // Get column index and name from header
+                var colNum = __doDOMQueryXPath(cellEl, "count(./preceding-sibling::td)", true);
+                var colEl = __doDOMQueryXPath(root, ".//thead/tr/th[" + (colNum + 1) + "]");
+                if (colEl && colEl.length > 0)
+                    cell.col = colEl[0].innerText;
+                else
+                    cell.col = colNum;
+                
+                // Get row identifier (cell text or row index)
+                cell.row = cellEl.innerText;
+                if (!cell.row)
+                {
+                    var rowEl = __hasParentWithTag(el, "tr");
+                    cell.row = __doDOMQueryXPath(rowEl, "count(./preceding-sibling::tr)", true);
+                }
+            }
+            return cell;
+        }
+        
+        var rvalue = { root: null, result: null, rcode: R_NOT_OBJECT };
+        
+        var root = __hasParentWithAttr(element, 'class', /myapp-grid/ig);
+        if (!root) return rvalue;
+        
+        var res = {
+            cancel: false,
+            object_flavor: 'Grid',
+            object_name: 'Grid',
+            object_type: 'DomMyAppGrid',
+            description: 'Grid action',
+            locator_data: { xpath: SeS_GenerateXPath(root) }
+        };
+        
+        rvalue.result = res;
+        rvalue.root = root;
+        rvalue.rcode = R_OBJECT_FOUND;
+        
+        // Learning mode - return object info and bounding rect
+        if (evt == "resolveElementDescriptor")
+        {
+            res.rect = __getElementRect(root);
+            res.action = undefined;
+            return rvalue;
+        }
+        
+        // Handle Click event
+        if (evt == "Click")
+        {
+            var cell = _getCell(element);
+            if (cell)
+            {
+                var descr = "Click on '" + cell.row + "' in column '" + cell.col + "'";
+                res.action = {
+                    name: "ClickCell",
+                    description: descr,
+                    params: [cell.row, cell.col]
+                };
+            }
+            rvalue.rcode = R_ACTION_FOUND;
+        }
+        
+        return rvalue;
+    }
+    
+    //////////////////////////////////////////////////////////////////////
+    // Main entry point - Rapise calls this for every user action
+    //////////////////////////////////////////////////////////////////////
+    
+    actionHolder.OnActionRecorded = function(evt, element, eventOpts, objName, description, flavor, items)
+    {
+        if (!element) return false;
+        
+        function _checkDomMyAppControls()
+        {
+            var r = manageExceptions(IsDomMyAppGrid)(evt, element, eventOpts, objName, description, flavor, items);
+            if (r.rcode == R_OBJECT_FOUND || r.rcode == R_ACTION_FOUND)
+                return r.result;
+            
+            // Add more control checks here...
+            // var r = manageExceptions(IsDomMyAppComboBox)(evt, element, ...);
+            // if (r.rcode == R_OBJECT_FOUND || r.rcode == R_ACTION_FOUND)
+            //     return r.result;
+        }
+        
+        // Debug mode vs production mode
+        if (typeof(g_debug) != "undefined" && g_debug)
+        {
+            return _checkDomMyAppControls();
+        }
+        else
+        {
+            try
+            {
+                return _checkDomMyAppControls();
+            }
+            catch(exc)
+            {
+                PrintException("DomMyApp Plugin exception", exc);
+            }
+        }
+        return false;
+    }
+    
+    //#region Debug Functions
+    function PrintException(title, exc)
+    {
+        Log("************** " + title + " *********************\n");
+        var vDebug = "";
+        for (var prop in exc)
+        {
+            vDebug += "    [" + prop + "]:" + exc[prop] + "\n";
+        }
+        if (exc && exc.message)
+        {
+            vDebug += "    [message]:" + exc.message + "\n";
+        }
+        if (exc && exc.stack)
+        {
+            vDebug += "    [stack]:" + exc.stack + "\n";
+        }
+        Log(vDebug);
+        Log('**********************************************************');
+    }
+
+    function manageExceptions(func)
+    {
+        var orignal = func;
+        var decorated = function()
+        {
+            function functionName(fn)
+            {
+                var name = /\W*function\s+([\w\$]+)\(/.exec(fn);
+                if (!name) return 'No name';
+                return name[1];
+            }
+            var funcName = functionName(orignal.toString());
+            
+            if (typeof(g_debug) != "undefined" && g_debug)
+            {
+                if(l3) Log3("Trying:" + funcName);
+                return orignal.apply(this, arguments);
+            }
+            else
+            {
+                try
+                {
+                    return orignal.apply(this, arguments);
+                }
+                catch(exception)
+                {
+                    if (!exception.stack)
+                        Log("*** Exception in " + funcName + " ***\n");
+                    throw exception;
+                }
+            }
+        }
+        return decorated;
+    }
+    //#endregion
+}
+```
+
+**Recorder Structure Summary:**
+
+1. **Entry function**: `DomMyAppPluginAttach(browser, actionHolder)` - name must match `attachFunctionName` in main library
+2. **Return codes**: `R_NOT_OBJECT`, `R_ACTION_FOUND`, `R_OBJECT_FOUND`
+3. **Control detection functions**: `IsDomMyAppXxx()` - one per control type, with nested `_getCell()` style helpers
+4. **Main handler**: `actionHolder.OnActionRecorded` - entry point called by Rapise
+5. **Debug functions**: `PrintException`, `manageExceptions` - for error handling
+
+**Rapise Helper Functions (Browser Context):**
+
+| Function | Description |
+|----------|-------------|
+| `__hasParentWithAttr(el, attr, regex)` | Finds ancestor element with attribute matching regex pattern |
+| `__hasParentWithTag(el, tagName)` | Finds ancestor element with specified tag name |
+| `__hasParentWithAttrPierceShadowDom(el, attr, regex)` | Same as `__hasParentWithAttr`, but crosses Shadow DOM boundaries |
+| `__doDOMQueryXPath(root, xpath, singleValue)` | Executes XPath query; returns array of elements or single numeric value if `singleValue=true` |
+| `__getAttribute(el, name)` | Gets element attribute value (returns empty string if not found) |
+| `__hasAttribute(el, name)` | Returns true if element has the specified attribute |
+| `__getElementRect(el)` | Gets element bounding rectangle `{x, y, w, h, cx, cy}` |
+| `__getInnerText(el)` | Cross-browser way to get element's inner text |
+| `__isElementVisible(el)` | Checks if element is visible (not `display:none`, `visibility:hidden`, or `opacity:0`) |
+| `SeS_GenerateXPath(el)` | Generates XPath locator for element using configured attributes |
+| `Log(msg)` | Logging (also `Log1`, `Log2`, `Log3` for different verbosity levels controlled by `l1`, `l2`, `l3` flags) |
+
+**Event Types:**
+
+| Event | Description |
+|-------|-------------|
+| `"Click"` | Mouse click on element |
+| `"SetText"` | Text input (`eventOpts` contains the entered text) |
+| `"Select"` | Selection from dropdown (`eventOpts` contains selected value) |
+| `"resolveElementDescriptor"` | Learning mode - return object info and rect, set `action = undefined` |
+
+**Return Object Structure:**
+
+```javascript
+{
+    cancel: false,              // true to suppress default recording
+    object_flavor: 'Grid',      // Control category (Grid, Button, Edit, ComboBox, List, etc.)
+    object_name: 'MyGrid',      // Display name in object repository
+    object_type: 'DomMyAppGrid', // Must match SeSRegisterRule object_type
+    description: 'Grid action', // Action description for report
+    locator_data: {
+        xpath: "//div[@class='myapp-grid']"
+    },
+    rect: { x, y, w, h },       // For resolveElementDescriptor only
+    action: {                   // Omit or set undefined for Learn-only
+        name: "ClickCell",      // Action method name
+        description: "Click cell",
+        params: [0, "Column1"]  // Parameters passed to the action
+    }
+}
+```
+
+### Loading the Library
+
+Add to `g_load_libraries` in Main.js:
+
+```javascript
+g_load_libraries = ["Web", "DomMyApp"];
+```
+
+---
+
+## Existing Extension Libraries
+
+Rapise includes several built-in extension libraries:
+
+| Library | Purpose |
+|---------|---------|
+| `DomSalesforce` | Salesforce Lightning controls |
+| `DomDynamicsCrm` | Microsoft Dynamics 365 controls |
+| `DomDynamicsNAV` | Dynamics NAV/Business Central controls |
+| `DomDynamicsAX` | Dynamics AX controls |
+
+---
+
+## When to Use Which Approach
+
+| Scenario | Approach |
+|----------|----------|
+| Reusable high-level actions | Page Object |
+| Click button by name, fill forms | Page Object |
+| Application-specific workflows | Page Object |
+| Custom control types for recording | Extension Library |
+| Complex grid/table interactions | Extension Library |
+| Application-wide element identification | Extension Library |
+
+**Page Objects** are simpler and sufficient for most automation needs. **Extension Libraries** require deeper knowledge of Rapise internals and are mainly for supporting custom UI frameworks.
+
+---
+
+## Key Functions
+
+### Page Objects
+
+| Function | Description |
+|----------|-------------|
+| `SeSPageObject("Name")` | Registers page object, enables `Name.ActionName()` syntax (e.g., `MyApp.DoLogin()`) |
+| `Navigator.SeSFind(xpath)` | Finds element, fails test if not found |
+| `Navigator.Find(xpath)` | Finds element, returns null if not found |
+| `Navigator.DoWaitFor(xpath, timeout)` | Waits for element |
+| `obj._DoDOMQueryXPath(relXpath)` | Finds descendants (xpath must start with `.`) |
+| `obj.DoClick()` | Clicks element |
+| `obj._DoClick()` | Silent click (no report) |
+| `obj.DoSetText(text)` | Sets text value |
+| `obj.object_name = "Name"` | Sets display name for reports |
+
+### Extension Libraries (Playback - Rapise Engine Context)
+
+These functions are used in behavior files (e.g., `DomMyAppComboBox.js`) during **playback**. They run in the Rapise test engine, not in the browser.
+
+| Function | Description |
+|----------|-------------|
+| `this._DoDOMQueryXPath(xpath)` | Finds child elements (xpath must start with `.`) |
+| `this.GetText()` | Gets element text |
+| `this._DoDOMGetAttribute(name)` | Gets DOM attribute |
+
+*Note: Functions like `SeSRegisterRule`, `SeSRegisterBehavior`, and `g_helper.IncludeOnce` are part of the Rapise Engine architecture. They are shown in the library examples above for understanding structure, but users don't call them directly in test code.*
