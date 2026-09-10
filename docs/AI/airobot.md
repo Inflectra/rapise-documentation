@@ -78,7 +78,7 @@ AiRobot.DoWebBrowser("Navigate to the Books page and click on Edit for the book 
 ### Interact with Desktop Application
 
 ```javascript
-AiRobot.DoDesktop("Open Calculator, compute 25 * 4, and tell me the result");
+AiRobot.DoFullScreen("Open Calculator, compute 25 * 4, and tell me the result");
 ```
 
 ### Interact with Specific Window
