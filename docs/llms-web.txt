@@ -1,0 +1,489 @@
+# Rapise Web Testing API
+
+This document covers web automation using Selenium WebDriver in Rapise.
+
+## Important: API Context
+
+Rapise test code runs in a **test engine context**, NOT inside a browser. You cannot use browser DOM APIs directly:
+
+```javascript
+// WRONG - browser DOM APIs don't work
+var text = element.textContent;           // ERROR
+var attr = element.getAttribute("href");  // ERROR
+
+// CORRECT - use Rapise wrapper methods
+var text = element.GetText();
+var attr = element._DoDOMGetAttribute("href");
+
+// CORRECT - use WebDriver.ExecuteScript for raw browser JS
+var checked = WebDriver.ExecuteScript("return arguments[0].checked", obj.element.e);
+```
+
+---
+
+## Navigator - Finding Elements
+
+### Navigator.SeSFind(locator)
+
+Finds element with multiple retry attempts. **Fails the test** if not found.
+
+```javascript
+var btn = Navigator.SeSFind("//button[@id='save']");
+btn.DoClick();
+```
+
+### Navigator.Find(locator)
+
+Single attempt to find element. Returns `null` if not found (no test failure).
+
+```javascript
+var popup = Navigator.Find("//div[@class='popup']");
+if (popup) {
+    popup.DoClick();
+}
+```
+
+### Navigator.DoWaitFor(locator, timeout)
+
+Polls for element until found or timeout. Returns element or `null`.
+
+```javascript
+var spinner = Navigator.DoWaitFor("//div[@class='loading']", 10000);
+```
+
+---
+
+## Navigator - Object State Checks
+
+These methods check object state without failing the test. They accept either an object ID from the repository or an XPath (detected by leading `.` or `/`).
+
+### Navigator.CheckObjectExists(xpathOrObjId)
+
+Checks if object is found on the screen. Returns `true` if exists, `false` otherwise.
+
+```javascript
+var exists = Navigator.CheckObjectExists("//button[@name='Next']");
+Tester.Assert("Next button exists", exists);
+
+// Or with object ID from repository
+var exists = Navigator.CheckObjectExists("LoginButton");
+```
+
+### Navigator.CheckObjectVisible(xpathOrObjId)
+
+Checks if object is visible on the screen (exists and not hidden). Returns `true` if visible, `false` otherwise.
+
+```javascript
+var visible = Navigator.CheckObjectVisible("//div[@class='modal']");
+Tester.Assert("Modal is visible", visible);
+```
+
+### Navigator.CheckObjectEnabled(xpathOrObjId)
+
+Checks if object is enabled (exists and not disabled). Returns `true` if enabled, `false` otherwise.
+
+```javascript
+var enabled = Navigator.CheckObjectEnabled("//button[@id='submit']");
+Tester.Assert("Submit button is enabled", enabled);
+```
+
+---
+
+## Locator Syntax
+
+Rapise supports multiple locator strategies with extensions for iframes, Shadow DOM, and visibility filtering.
+
+### XPath (default)
+
+```javascript
+Navigator.SeSFind("//button[@name='Submit']");
+Navigator.SeSFind("//input[@type='text' and @placeholder='Search']");
+Navigator.SeSFind("//div[contains(@class,'active')]//span[text()='OK']");
+```
+
+### CSS Selector
+
+Prefix with `css=`:
+
+```javascript
+Navigator.SeSFind("css=button.primary:visible");
+Navigator.SeSFind("css=input[data-testid='email']");
+```
+
+### Iframe Boundary
+
+Use `@@@` to cross into iframe:
+
+```javascript
+Navigator.SeSFind("//iframe[@id='editor']@@@//input[@name='content']");
+```
+
+### Shadow DOM Piercing
+
+Rapise supports Shadow DOM in two ways:
+
+**1. Automatic Piercing (Rapise 8.2+)**
+
+CSS selectors automatically pierce open Shadow DOM boundaries - no special syntax needed:
+
+```javascript
+// These work even if the input is inside a shadow root
+Navigator.SeSFind("css=input[id='editField']");
+Navigator.SeSFind("css=guid-generator input");
+Navigator.SeSFind("css=guid-generator > input");
+```
+
+**2. Explicit Boundary Crossing (`@#@`)**
+
+For explicit shadow root traversal, use the `@#@` delimiter. The first part locates the shadow host (XPath or CSS), the second part (CSS only) finds elements inside:
+
+```javascript
+// XPath to shadow host, then CSS inside shadow DOM
+Navigator.SeSFind("//guid-generator@#@css=input");
+
+// CSS for both parts
+Navigator.SeSFind("css=guid-generator@#@css=input:first-of-type");
+```
+
+Note: XPath doesn't work inside shadow roots - always use CSS after `@#@`.
+
+### Visibility Pseudo-Classes
+
+Rapise extends CSS with `:visible` and `:hidden` pseudo-classes (similar to jQuery):
+
+```javascript
+// Click only the visible Submit button (ignore hidden duplicates)
+Navigator.SeSFind("css=button.btn-submit:visible");
+
+// Select visible dropdown items after hover
+Navigator.SeSFind("css=.dropdown-menu li:visible");
+
+// Find the active/visible tab panel
+Navigator.SeSFind("css=.tab-pane:visible");
+
+// Verify loading spinner is hidden
+Navigator.SeSFind("css=.loading-spinner:hidden");
+```
+
+An element is **hidden** if:
+- `display: none`
+- `visibility: hidden`  
+- `opacity: 0`
+
+An element is **visible** if none of the above apply.
+
+Use cases:
+- Dropdowns, tooltips, popups that appear on hover/click
+- Tab interfaces where only one panel is visible
+- Modal dialogs and backdrop elements
+- Loading indicators and progress overlays
+
+---
+
+## Element Actions
+
+Once you have an element, use these methods:
+
+### Mouse Actions
+
+```javascript
+obj.DoClick();           // Click (smart - waits for element, auto-scrolls)
+obj.DoClick(10, 5);      // Click at offset (x=10, y=5) from top-left
+obj.DoDblClick();        // Double click
+obj.DoDblClick(10, 5);   // Double click at offset
+obj.DoRClick();          // Right click (context menu)
+obj.DoRClick(10, 5);     // Right click at offset
+obj.DoLClick();          // Direct click via JavaScript (bypasses visibility checks)
+obj.DoMouseMove();       // Hover over element (move mouse to center)
+obj.DoMouseMove(10, 5);  // Hover at specific offset
+```
+
+### Text Input
+
+```javascript
+obj.DoSetText("Hello");      // Clear and type text
+obj.DoSendKeys("text");      // Send keystrokes (for file inputs, special keys)
+obj.DoSelect("Option 1");    // Select dropdown option by visible text
+```
+
+### Reading Values
+
+```javascript
+var text = obj.GetText();    // Get visible text content
+var tag = obj.GetTag();      // Get HTML tag name ("input", "div", etc.)
+var width = obj.GetWidth();  // Get element width in pixels
+```
+
+### Visibility
+
+```javascript
+obj.DoEnsureVisible();       // Scroll element into viewport
+```
+
+---
+
+## Underscore Prefix Convention
+
+Every action has an underscore variant that:
+- Does NOT write to test report
+- Does NOT fail test on error
+
+```javascript
+// Standard - reports action, fails test if button not found
+SeS("SaveButton").DoClick();
+
+// Silent - no report entry, returns false if fails
+SeS("OptionalPopup")._DoClick();
+```
+
+**Best practice**: Use underscore for intermediate steps, regular for final meaningful actions:
+
+```javascript
+// Intermediate navigation (underscore)
+obj._DoEnsureVisible();
+obj._DoMouseMove();
+
+// Final action (regular - reported)
+obj.DoClick();
+```
+
+---
+
+## DOM Query Methods
+
+### obj._DoDOMGetAttribute(attrName)
+
+Read DOM attribute value:
+
+```javascript
+var href = link._DoDOMGetAttribute("href");
+var title = span._DoDOMGetAttribute("title");
+var dataId = div._DoDOMGetAttribute("data-id");
+```
+
+### obj._DoDOMQueryXPath(relativeXpath)
+
+Find descendant elements using relative XPath (must start with `.`):
+
+```javascript
+var table = Navigator.SeSFind("//table[@id='results']");
+var rows = table._DoDOMQueryXPath(".//tr");
+if (rows && rows.length) {
+    rows[0].DoClick();
+}
+
+// Find buttons inside a container
+var container = Navigator.SeSFind("//div[@class='toolbar']");
+var buttons = container._DoDOMQueryXPath(".//button");
+```
+
+---
+
+## WebDriver Object
+
+Low-level Selenium WebDriver access.
+
+### WebDriver.ExecuteScript(script, ...args)
+
+Execute JavaScript in browser context:
+
+```javascript
+// Check checkbox state
+var isChecked = WebDriver.ExecuteScript("return arguments[0].checked", obj.element.e);
+
+// Scroll to bottom of page
+WebDriver.ExecuteScript("window.scrollTo(0, document.body.scrollHeight)");
+
+// Get computed style
+var color = WebDriver.ExecuteScript(
+    "return window.getComputedStyle(arguments[0]).color", 
+    obj.element.e
+);
+```
+
+### WebDriver.Actions()
+
+Build action chains:
+
+```javascript
+// Press Enter key
+WebDriver.Actions().SendKeys('\uE007').Perform();
+
+// Press Tab
+WebDriver.Actions().SendKeys('\uE004').Perform();
+
+// Press Escape
+WebDriver.Actions().SendKeys('\uE00C').Perform();
+```
+
+### WebDriver.autoWait
+
+Controls automatic page-load waiting. Disable for actions that shouldn't wait:
+
+```javascript
+// File upload pattern
+var aw = WebDriver.autoWait;
+WebDriver.autoWait = false;
+fileInput.DoSendKeys(Global.GetFullPath("Data\\file.pdf"));
+WebDriver.autoWait = aw;
+```
+
+---
+
+## Page Object Pattern
+
+Organize reusable actions in page objects.
+
+**Naming convention**: Functions starting with `Do` are reported as actions. When `DoClickButton` returns `false`, Rapise treats it as a failed action automatically.
+
+**Underscore usage**: Use `_DoClick()` and `_DoSetText()` inside page object methods to avoid duplicate report entries - the outer `DoClickButton` is already reported.
+
+```javascript
+// In PageObjects/MyApp/MyApp.js
+
+SeSPageObject("MyApp");
+
+// DoClickButton - reported action, failure auto-detected via return value
+function MyApp_DoClickButton(/**string*/ name)
+{
+    var xpath = "//button[@name='" + name + "']"
+        + "|//button[normalize-space(.)='" + name + "']";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;  // Shows "Save" instead of XPath in report
+        return obj._DoClick();   // Underscore: don't double-report
+    }
+    return false;  // Returning false fails the DoClickButton action
+}
+
+// DoSetField - same pattern
+function MyApp_DoSetField(/**string*/ name, /**string*/ value)
+{
+    var labelCond = "normalize-space(.)='" + name + "' or normalize-space(.)='*" + name + "'";
+    var xpath = "//input[@id=//label[" + labelCond + "]/@for]";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;
+        return obj._DoSetText(value);
+    }
+    return false;
+}
+```
+
+Usage in tests:
+
+```javascript
+MyApp.DoClickButton("Save");    // Report shows: MyApp.DoClickButton("Save") - Pass/Fail
+MyApp.DoSetField("Username", "john");
+```
+
+---
+
+## Object Repository (SeS)
+
+Learned objects are stored in `Objects.js` and accessed via `SeS()`:
+
+```javascript
+// Objects.js contains learned object definitions
+saved_script_objects = {
+    "LoginButton": {
+        "object_type": "HTMLObject",
+        "xpath": "//button[@id='login']",
+        // ... other properties
+    }
+};
+
+// Usage in test
+SeS("LoginButton").DoClick();
+SeS("UsernameField").DoSetText("admin");
+```
+
+---
+
+## Retry/Wait Patterns
+
+### Custom Auto-Wait Pattern
+
+```javascript
+function CustomAutoWait(fn) {
+    for (var i = 0; i < 10; i++) {  // 10 attempts
+        var result = fn();
+        if (result) return result;
+        Global.DoSleep(500);  // Wait between attempts
+    }
+    return null;
+}
+
+// Usage: wait for dynamic content
+CustomAutoWait(function() {
+    var el = Navigator.Find("//div[@class='loaded']");
+    return el && el.GetText() === "Ready";
+});
+```
+
+### Verify with Retry
+
+```javascript
+function VerifyField(name, expected) {
+    var xpath = "//span[@data-field='" + name + "']";
+    var actual = "";
+    
+    CustomAutoWait(function() {
+        var obj = Navigator.Find(xpath);
+        if (obj) {
+            actual = obj.GetText();
+            return actual === expected;
+        }
+        return false;
+    });
+    
+    Tester.AssertEqual("Field " + name, expected, actual);
+}
+```
+
+---
+
+## Keyboard Constants
+
+For `WebDriver.Actions().SendKeys()`:
+
+| Key | Code |
+|-----|------|
+| Enter | `'\uE007'` |
+| Tab | `'\uE004'` |
+| Escape | `'\uE00C'` |
+| Backspace | `'\uE003'` |
+| Arrow Up | `'\uE013'` |
+| Arrow Down | `'\uE015'` |
+
+---
+
+## Common Mistakes
+
+| ❌ Wrong | ✅ Correct | Why |
+|----------|-----------|-----|
+| `element.click()` | `obj.DoClick()` | Browser DOM APIs don't work in Rapise context |
+| `element.textContent` | `obj.GetText()` | Use Rapise wrapper methods |
+| `element.getAttribute("href")` | `obj._DoDOMGetAttribute("href")` | DOM access via wrappers |
+| `Sleep(1000)` | `Global.DoSleep(1000)` | `Global` object required |
+| `obj._DoDOMQueryXPath("//button")` | `obj._DoDOMQueryXPath(".//button")` | Relative XPath must start with `.` |
+| `Navigator.SeSFind()` for optional elements | `Navigator.Find()` | `SeSFind` fails test; `Find` returns null |
+| `Tester.Assert()` in `Do`-prefixed functions | Return `false` | `Do` functions auto-report; `false` = failure |
+| `obj.DoClick()` inside page object methods | `obj._DoClick()` | Underscore avoids duplicate reporting |
+
+---
+
+## Best Practices
+
+1. **Set object_name** before actions for readable reports
+2. **Use _DoEnsureVisible()** before clicking off-screen elements
+3. **Use Navigator.Find** for optional elements, **Navigator.SeSFind** for required
+4. **Disable WebDriver.autoWait** for file uploads and stable-page actions
+5. **Use relative XPath starting with `.`** in _DoDOMQueryXPath
+6. **Prefer multi-strategy XPaths** joined with `|` for robustness:
+
+```javascript
+var xpath = "//button[@name='" + name + "']"
+    + "|//button[text()='" + name + "']"
+    + "|//button[@title='" + name + "']";
+```

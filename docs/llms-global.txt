@@ -1,0 +1,320 @@
+# Rapise Global Objects and Tester API
+
+This document covers the `Global` and `Tester` objects - always available in any Rapise test without recording or learning.
+
+## Global Object
+
+Utility functions not tied to a specific UI object.
+
+### Global.DoSleep(ms)
+
+Pauses test execution for specified milliseconds.
+
+```javascript
+Global.DoSleep(1000);  // Wait 1 second
+Global.DoSleep(500);   // Wait 500ms
+```
+
+### Global.GetProperty(name, defaultValue, configPath)
+
+Reads a property value from configuration file.
+
+```javascript
+// Read from default Config.json in test folder
+var url = Global.GetProperty("BaseUrl", "http://localhost");
+
+// Read from specific Excel config file
+var user = Global.GetProperty("Username", "", "%WORKDIR%\\Shared\\Config.xlsx");
+```
+
+### Global.SetProperty(name, value, configPath)
+
+Writes a property value to configuration file.
+
+```javascript
+Global.SetProperty("LastRunDate", new Date().toISOString());
+Global.SetProperty("Token", token, "%WORKDIR%\\Shared\\Config.xlsx");
+```
+
+### Global.DoEncrypt(plainText)
+
+Encrypts text for secure storage (e.g., passwords in config files).
+
+```javascript
+var encrypted = Global.DoEncrypt("myPassword123");
+// Returns something like: "RkdINXpxNHVKM2FnZnk="
+```
+
+### Global.DoDecrypt(encryptedText)
+
+Decrypts previously encrypted text.
+
+```javascript
+var password = Global.DoDecrypt("RkdINXpxNHVKM2FnZnk=");
+// Returns: "myPassword123"
+```
+
+### Global.GetFullPath(relativePath)
+
+Converts relative path to absolute using test's working directory.
+
+```javascript
+var fullPath = Global.GetFullPath("Data\\input.xlsx");
+// Returns: "C:\Tests\MyTest\Data\input.xlsx"
+```
+
+### Global.DoLaunch(cmdLine, wrkDir)
+
+Launches an external application.
+
+```javascript
+Global.DoLaunch("notepad.exe");
+Global.DoLaunch("chrome.exe https://example.com", "C:\\Program Files\\Google\\Chrome");
+```
+
+### Global.DoWaitFor(objectId, timeout, pollInterval)
+
+Waits for a learned object to become available.
+
+```javascript
+Global.DoWaitFor("LoginButton", 10000);  // Wait up to 10 seconds
+```
+
+---
+
+## Tester Object
+
+Assertions and reporting functions. All assertions write to the test report.
+
+### Tester.Assert(message, condition)
+
+Basic assertion - checks if condition is true.
+
+```javascript
+Tester.Assert("User is logged in", isLoggedIn);
+Tester.Assert("Count is positive", count > 0);
+```
+
+### Tester.AssertEqual(message, expected, actual)
+
+Compares two values for equality.
+
+```javascript
+Tester.AssertEqual("Page title matches", "Home", pageTitle);
+Tester.AssertEqual("Item count", 5, items.length);
+```
+
+### Tester.AssertContains(message, str, substr)
+
+Checks if string contains a substring.
+
+```javascript
+Tester.AssertContains("Error message shown", errorText, "invalid");
+```
+
+### Tester.Message(text)
+
+Writes informational message to report (not pass/fail).
+
+```javascript
+Tester.Message("Starting login sequence");
+Tester.Message("Found " + count + " items");
+```
+
+---
+
+## Soft Assertions
+
+Soft assertions record failures but don't stop test execution. Use for multiple verifications where you want all results.
+
+### Tester.SoftAssert(message, condition)
+
+```javascript
+Tester.SoftAssert("Field A valid", fieldA !== "");
+Tester.SoftAssert("Field B valid", fieldB !== "");
+Tester.SoftAssert("Field C valid", fieldC !== "");
+// Test continues even if some fail
+```
+
+### Tester.SoftAssertEqual(message, expected, actual)
+
+```javascript
+Tester.SoftAssertEqual("Name", "John", actualName);
+Tester.SoftAssertEqual("Age", 30, actualAge);
+```
+
+### Tester.SoftAssertAll(message)
+
+Fails the test if any previous soft assertions failed.
+
+```javascript
+Tester.SoftAssert("Check 1", cond1);
+Tester.SoftAssert("Check 2", cond2);
+Tester.SoftAssertAll("All validations passed");  // Fails if any above failed
+```
+
+---
+
+## Report Control
+
+### Tester.SuppressReport(flag)
+
+Temporarily suppresses report output. Useful for hiding sensitive data like passwords.
+
+```javascript
+// Hide password entry from report
+Tester.SuppressReport(true);
+SeS("PasswordField").DoSetText(password);
+Tester.SuppressReport(false);
+
+// Alternative: use underscore prefix (also hides from report)
+SeS("PasswordField")._DoSetText(password);
+```
+
+### Tester.SetReportAttribute(name, value)
+
+Sets persistent attribute for subsequent report entries.
+
+```javascript
+Tester.SetReportAttribute("Module", "Checkout");
+// All subsequent entries will have Module=Checkout
+```
+
+---
+
+## Additional Tester Assertions
+
+| Method | Description |
+|--------|-------------|
+| `Tester.AssertFalse(msg, val)` | Checks val is false |
+| `Tester.AssertNull(msg, val)` | Checks val is null |
+| `Tester.AssertNotNull(msg, val)` | Checks val is not null |
+| `Tester.AssertGreater(msg, n1, n2)` | Checks n1 > n2 |
+| `Tester.AssertLess(msg, n1, n2)` | Checks n1 < n2 |
+| `Tester.AssertStartsWith(msg, str, prefix)` | Checks str starts with prefix |
+| `Tester.AssertEndsWith(msg, str, suffix)` | Checks str ends with suffix |
+
+## Additional Tester Soft Assertions
+
+| Method | Description |
+|--------|-------------|
+| `Tester.SoftAssertFalse(msg, val)` | Checks val is false |
+| `Tester.SoftAssertNull(msg, val)` | Checks val is null |
+| `Tester.SoftAssertNotNull(msg, val)` | Checks val is not null |
+| `Tester.SoftAssertGreater(msg, n1, n2)` | Checks n1 > n2 |
+| `Tester.SoftAssertLess(msg, n1, n2)` | Checks n1 < n2 |
+| `Tester.SoftAssertStartsWith(msg, str, prefix)` | Checks str starts with prefix |
+| `Tester.SoftAssertEndsWith(msg, str, suffix)` | Checks str ends with suffix |
+
+---
+
+## Spreadsheet Object
+
+Read and write Excel (.xls, .xlsx) and CSV (.csv, .txt) files. Essential for data-driven testing.
+
+### Spreadsheet.DoAttach(fileName, sheetName)
+
+Loads a spreadsheet file.
+
+```javascript
+// Load Excel file (first sheet)
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\TestData.xlsx");
+
+// Load specific sheet
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\TestData.xlsx", "Users");
+
+// Load CSV file
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\input.csv");
+```
+
+### Spreadsheet.GetCell(columnId, rowId)
+
+Gets cell value. Column can be index (0-based) or name. Row is 0-based index.
+
+```javascript
+// By column index and row index
+var value = Spreadsheet.GetCell(0, 1);  // First column, second row
+
+// By column name and row index (row 0 contains headers)
+var username = Spreadsheet.GetCell("Username", 1);
+var password = Spreadsheet.GetCell("Password", 1);
+```
+
+### Spreadsheet.GetRowCount()
+
+Returns total row count including header row.
+
+```javascript
+var rowCount = Spreadsheet.GetRowCount();
+// Iterate data rows (skip header at row 0)
+for (var i = 1; i < rowCount; i++) {
+    var user = Spreadsheet.GetCell("Username", i);
+    var pass = Spreadsheet.GetCell("Password", i);
+    // ... use data
+}
+```
+
+### Spreadsheet.DoSequential() / GetEOF()
+
+Iterate rows using cursor. First row (headers) is skipped automatically.
+
+```javascript
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\TestData.xlsx");
+while (!Spreadsheet.GetEOF()) {
+    var user = Spreadsheet.GetCell("Username");  // Gets from current row
+    var pass = Spreadsheet.GetCell("Password");
+    
+    // Use data...
+    Login(user, pass);
+    
+    Spreadsheet.DoSequential();  // Move to next row
+}
+```
+
+### Spreadsheet.SetCell(value, columnId, rowId) / DoSave()
+
+Write values and save changes.
+
+```javascript
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\Results.xlsx");
+Spreadsheet.SetCell("PASS", "Status", 1);
+Spreadsheet.SetCell(new Date().toString(), "Timestamp", 1);
+Spreadsheet.DoSave();
+```
+
+### Quick Reference
+
+| Method | Description |
+|--------|-------------|
+| `DoAttach(file, sheet)` | Load spreadsheet |
+| `GetCell(col, row)` | Get cell value |
+| `SetCell(val, col, row)` | Set cell value |
+| `GetRowCount()` | Total rows (including header) |
+| `GetColumnCount()` | Total columns |
+| `DoSequential()` | Move to next row |
+| `GetEOF()` | True if past last row |
+| `DoSave(file)` | Save changes |
+
+---
+
+## Example: Complete Test Flow
+
+```javascript
+function Test(params)
+{
+    var config = Global.GetProperty("TestConfig", "default");
+    
+    Tester.Message("Starting registration with config: " + config);
+    
+    var username = "user_" + Date.now();
+    SeS("UsernameField").DoSetText(username);
+    SeS("PasswordField").DoSetText(Global.DoDecrypt(encryptedPwd));
+    SeS("SubmitButton").DoClick();
+    
+    Global.DoSleep(2000);  // Wait for response
+    
+    // Verify
+    var welcomeText = SeS("WelcomeMessage").GetText();
+    Tester.AssertContains("Welcome message shown", welcomeText, username);
+}
+```

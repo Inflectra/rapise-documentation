@@ -1,0 +1,340 @@
+# Rapise Visual Language (RVL)
+
+RVL is a spreadsheet-based test scripting language. Tests are written in Excel files (`.rvl.xlsx`) with a structured 7-column format.
+
+## RVL Structure
+
+Every RVL script has exactly 7 columns:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+
+- **Flow**: Control flow keywords (If, ElseIf, Else, Loop, End, Map, #, /*, */, ?, And, Or)
+- **Type**: Row type (Action, Variable, Param, Condition, Assert, Rows, Range, Database)
+- **Object**: Object ID or map name
+- **Action**: Method to call or condition type
+- **ParamName**: Parameter name
+- **ParamType**: Data type (string, number, boolean, variable, expression)
+- **ParamValue**: Parameter value
+
+---
+
+## Comments
+
+Single-line comment (# in Flow column):
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| # | This is a comment | | | | | |
+
+Multi-line comment:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| /* | Start of multi-line comment | | | | | |
+| | Line 2 of comment | | | | | |
+| */ | | | | | | |
+
+---
+
+## Actions
+
+Call an object method. Every action stores its return value in the built-in `LastResult` variable, which can be used by the next action.
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | LoginButton | DoClick | | | |
+
+Action with parameters:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | UsernameField | DoSetText | txt | string | admin |
+
+Action with multiple parameters (additional params on Param rows):
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | Global | DoLaunch | cmdLine | string | notepad.exe |
+| | Param | | | wrkDir | string | C:\Temp |
+
+Using LastResult from previous action:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | MyField | GetText | | | |
+| | Action | Tester | Message | message | variable | LastResult |
+
+### Conditional Action
+
+`?` in Flow column - action only runs if object exists:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| ? | Action | OptionalPopup | DoClick | | | |
+
+---
+
+## Variables
+
+### Local Variable
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Variable | | | myVar | string | Hello |
+
+### Global Variable (with default)
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Variable | | Global | myGlobal | | |
+| | Param | | | defaultValue | string | DefaultText |
+
+### Using Variables
+
+Reference variables with `variable` as ParamType:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | TextField | DoSetText | txt | variable | myVar |
+
+---
+
+## Conditions (If/ElseIf/Else)
+
+### Simple If
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | variable | status |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | active |
+| # | Actions when status equals "active" | | | | | |
+| | Action | ActivePanel | DoClick | | | |
+| End | of If | | | | | |
+
+### If-Else
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | number | count |
+| | Condition | | param1 > param2 | | | |
+| | Param | | | param2 | number | 0 |
+| # | Count is positive | | | | | |
+| | Action | Tester | Message | message | string | Has items |
+| Else | | | | | | |
+| # | Count is zero or negative | | | | | |
+| | Action | Tester | Message | message | string | No items |
+| End | of Else | | | | | |
+
+### If-ElseIf
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | variable | mode |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | create |
+| # | Create mode | | | | | |
+| ElseIf | Param | | | param1 | variable | mode |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | edit |
+| # | Edit mode | | | | | |
+| End | of ElseIf | | | | | |
+
+### Condition Operators
+
+**Binary conditions:**
+- `param1 == param2` - equals
+- `param1 != param2` - not equals
+- `param1 > param2` - greater than
+- `param1 >= param2` - greater or equal
+- `param1 < param2` - less than
+- `param1 <= param2` - less or equal
+- `param1 contains param2` - substring check
+
+**Unary conditions:**
+- `param1 IsTrue` - checks if true
+- `param1 IsFalse` - checks if false
+- `param1 IsNull` - checks if null
+- `param1 IsNotNull` - checks if not null
+- `param1 IsSet` - checks if has a value (not null/empty/0/false)
+- `param1 IsNotSet` - checks if empty/null/0/false
+
+### And/Or Conditions
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | variable | a |
+| | Condition | | param1 > param2 | | | |
+| | Param | | | param2 | number | 0 |
+| And | Param | | | param1 | variable | b |
+| | Condition | | param1 < param2 | | | |
+| | Param | | | param2 | number | 100 |
+| # | Both conditions true | | | | | |
+| End | of If | | | | | |
+
+---
+
+## Loops
+
+### Loop Through Map
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Map | MyData | | | | |
+| # | Loop body - runs once per row | | | | | |
+| | Action | Tester | Message | message | MyData | Name |
+| End | of Loop | | | | | |
+
+### Loop with Counter (for i = 1 to 10)
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Variable | i | | from | number | 1 |
+| | Param | | | to | number | 10 |
+| # | Loop body - i goes from 1 to 10 | | | | | |
+| End | of Loop | | | | | |
+
+### While Loop (with condition)
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Param | | | param1 | variable | counter |
+| | Condition | | param1 < param2 | | | |
+| | Param | | | param2 | number | 5 |
+| # | Loop while counter < 5 | | | | | |
+| End | of Loop | | | | | |
+
+---
+
+## Maps (Data Tables)
+
+### Inline Map
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Map | Rows | TestData | | | | |
+| | Username | Password | Expected | | | |
+| | admin | admin123 | success | | | |
+| | user | user456 | success | | | |
+| | invalid | wrong | failure | | | |
+| End | of Map | | | | | |
+
+### Map from Excel File
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Map | Range | TestData | | fileName | string | %WORKDIR%\Data.xlsx |
+| | Param | | | sheetName | string | Sheet1 |
+| End | of Map | | | | | |
+
+### Using Map Data in Loop
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Map | TestData | | | | |
+| | Action | UsernameField | DoSetText | txt | TestData | Username |
+| | Action | PasswordField | DoSetText | txt | TestData | Password |
+| | Action | LoginButton | DoClick | | | |
+| End | of Loop | | | | | |
+
+---
+
+## Assertions
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Assert | | | message | string | Values match |
+| | Param | | | param1 | variable | actual |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | expected |
+
+---
+
+## Calling JavaScript Functions
+
+Define functions in `User.js`, call them from RVL via `Functions` object:
+
+```javascript
+// In User.js
+function CalculateTotal(price, qty) {
+    return price * qty;
+}
+```
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | Functions | CalculateTotal | price | number | 10 |
+| | Param | | | qty | number | 5 |
+
+Result is stored in `LastResult` variable.
+
+---
+
+## RVL-JavaScript Interop
+
+### Running RVL from JavaScript
+
+```javascript
+// In Main.js
+function Test(params)
+{
+    RVL.DoPlayScript("Main.rvl.xlsx");
+}
+
+// Run specific sheet
+RVL.DoPlayScript("Main.rvl.xlsx", "LoginSheet");
+```
+
+### Passing Parameters
+
+```javascript
+// Pass params to RVL
+RVL.DoPlayScript("Main.rvl.xlsx", "TestSheet", {
+    username: "admin",
+    environment: "staging"
+});
+```
+
+Access in RVL using Global variables.
+
+---
+
+## ParamType Reference
+
+| ParamType | Description | Example |
+|-----------|-------------|---------|
+| string | Text value | Hello World |
+| number | Numeric value | 42 |
+| boolean | true/false | true |
+| variable | Reference to variable | myVar |
+| expression | JavaScript expression | price * 1.1 |
+| *MapName* | Value from map column | TestData |
+
+---
+
+## Common Patterns
+
+### Data-Driven Login Test
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Map | Rows | Logins | | | | |
+| | User | Pass | Expected | | | |
+| | admin | pwd1 | success | | | |
+| | guest | pwd2 | failure | | | |
+| End | of Map | | | | | |
+| Loop | Map | Logins | | | | |
+| | Action | UsernameField | DoSetText | txt | Logins | User |
+| | Action | PasswordField | DoSetText | txt | Logins | Pass |
+| | Action | LoginButton | DoClick | | | |
+| | Action | Global | DoSleep | millis | number | 2000 |
+| # | Verify result | | | | | |
+| End | of Loop | | | | | |
+
+### Conditional Cleanup
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| ? | Action | ClosePopup | DoClick | | | |
+| ? | Action | CancelDialog | DoClick | | | |

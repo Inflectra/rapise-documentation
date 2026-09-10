@@ -1,0 +1,2361 @@
+# Rapise
+
+> This is the combined full documentation. Individual sections available at llms-*.txt
+
+
+> Rapise is an automated software testing tool for desktop, web, mobile, and API testing. It uses RVL (Rapise Visual Language) and JavaScript for test automation.
+
+Rapise documentation is organized into sections for different aspects of the tool.
+
+## LLM-Optimized Documentation
+
+- [llms-global.txt](llms-global.txt): Global utilities and Tester assertions
+- [llms-web.txt](llms-web.txt): Web testing with Selenium/WebDriver
+- [llms-rvl.txt](llms-rvl.txt): RVL (Rapise Visual Language) syntax and concepts
+- [llms-framework.txt](llms-framework.txt): Test framework structure and files
+- [llms-extending.txt](llms-extending.txt): Creating page objects and extension libraries
+
+## Full Documentation
+
+- Documentation: https://rapisedoc.inflectra.com/
+- Getting Started: https://rapisedoc.inflectra.com/Intro/overview/
+- User Guide: https://rapisedoc.inflectra.com/Guide/
+- RVL Reference: https://rapisedoc.inflectra.com/RVL/
+- API Reference: https://rapisedoc.inflectra.com/Libraries/
+- AI Features: https://rapisedoc.inflectra.com/AI/
+
+## Quick Reference
+
+### Object Interaction Pattern
+
+```javascript
+// Standard action (logs to report, fails test on error)
+SeS("ObjectId").DoClick();
+
+// Silent action (no report, no test failure on error)
+SeS("ObjectId")._DoClick();
+```
+
+### Common Global Functions
+
+```javascript
+Global.DoSleep(1000);                    // Pause 1 second
+Global.GetProperty("key", "default");    // Read config value
+Tester.Assert("message", condition);     // Assert with report
+Tester.Message("info");                  // Log to report
+```
+
+### RVL Structure
+
+RVL scripts are Excel spreadsheets with 7 columns:
+Flow | Type | Object | Action | ParamName | ParamType | ParamValue
+
+### Web Element Discovery
+
+```javascript
+Navigator.SeSFind("//button[@id='save']");     // XPath, retries, fails test
+Navigator.Find("//button[@id='save']");        // XPath, single attempt, returns null
+Navigator.DoWaitFor("//input", 5000);          // Wait up to 5s for element
+```
+
+================================================================================
+
+# Rapise Global Objects and Tester API
+
+This document covers the `Global` and `Tester` objects - always available in any Rapise test without recording or learning.
+
+## Global Object
+
+Utility functions not tied to a specific UI object.
+
+### Global.DoSleep(ms)
+
+Pauses test execution for specified milliseconds.
+
+```javascript
+Global.DoSleep(1000);  // Wait 1 second
+Global.DoSleep(500);   // Wait 500ms
+```
+
+### Global.GetProperty(name, defaultValue, configPath)
+
+Reads a property value from configuration file.
+
+```javascript
+// Read from default Config.json in test folder
+var url = Global.GetProperty("BaseUrl", "http://localhost");
+
+// Read from specific Excel config file
+var user = Global.GetProperty("Username", "", "%WORKDIR%\\Shared\\Config.xlsx");
+```
+
+### Global.SetProperty(name, value, configPath)
+
+Writes a property value to configuration file.
+
+```javascript
+Global.SetProperty("LastRunDate", new Date().toISOString());
+Global.SetProperty("Token", token, "%WORKDIR%\\Shared\\Config.xlsx");
+```
+
+### Global.DoEncrypt(plainText)
+
+Encrypts text for secure storage (e.g., passwords in config files).
+
+```javascript
+var encrypted = Global.DoEncrypt("myPassword123");
+// Returns something like: "RkdINXpxNHVKM2FnZnk="
+```
+
+### Global.DoDecrypt(encryptedText)
+
+Decrypts previously encrypted text.
+
+```javascript
+var password = Global.DoDecrypt("RkdINXpxNHVKM2FnZnk=");
+// Returns: "myPassword123"
+```
+
+### Global.GetFullPath(relativePath)
+
+Converts relative path to absolute using test's working directory.
+
+```javascript
+var fullPath = Global.GetFullPath("Data\\input.xlsx");
+// Returns: "C:\Tests\MyTest\Data\input.xlsx"
+```
+
+### Global.DoLaunch(cmdLine, wrkDir)
+
+Launches an external application.
+
+```javascript
+Global.DoLaunch("notepad.exe");
+Global.DoLaunch("chrome.exe https://example.com", "C:\\Program Files\\Google\\Chrome");
+```
+
+### Global.DoWaitFor(objectId, timeout, pollInterval)
+
+Waits for a learned object to become available.
+
+```javascript
+Global.DoWaitFor("LoginButton", 10000);  // Wait up to 10 seconds
+```
+
+---
+
+## Tester Object
+
+Assertions and reporting functions. All assertions write to the test report.
+
+### Tester.Assert(message, condition)
+
+Basic assertion - checks if condition is true.
+
+```javascript
+Tester.Assert("User is logged in", isLoggedIn);
+Tester.Assert("Count is positive", count > 0);
+```
+
+### Tester.AssertEqual(message, expected, actual)
+
+Compares two values for equality.
+
+```javascript
+Tester.AssertEqual("Page title matches", "Home", pageTitle);
+Tester.AssertEqual("Item count", 5, items.length);
+```
+
+### Tester.AssertContains(message, str, substr)
+
+Checks if string contains a substring.
+
+```javascript
+Tester.AssertContains("Error message shown", errorText, "invalid");
+```
+
+### Tester.Message(text)
+
+Writes informational message to report (not pass/fail).
+
+```javascript
+Tester.Message("Starting login sequence");
+Tester.Message("Found " + count + " items");
+```
+
+---
+
+## Soft Assertions
+
+Soft assertions record failures but don't stop test execution. Use for multiple verifications where you want all results.
+
+### Tester.SoftAssert(message, condition)
+
+```javascript
+Tester.SoftAssert("Field A valid", fieldA !== "");
+Tester.SoftAssert("Field B valid", fieldB !== "");
+Tester.SoftAssert("Field C valid", fieldC !== "");
+// Test continues even if some fail
+```
+
+### Tester.SoftAssertEqual(message, expected, actual)
+
+```javascript
+Tester.SoftAssertEqual("Name", "John", actualName);
+Tester.SoftAssertEqual("Age", 30, actualAge);
+```
+
+### Tester.SoftAssertAll(message)
+
+Fails the test if any previous soft assertions failed.
+
+```javascript
+Tester.SoftAssert("Check 1", cond1);
+Tester.SoftAssert("Check 2", cond2);
+Tester.SoftAssertAll("All validations passed");  // Fails if any above failed
+```
+
+---
+
+## Report Control
+
+### Tester.SuppressReport(flag)
+
+Temporarily suppresses report output. Useful for hiding sensitive data like passwords.
+
+```javascript
+// Hide password entry from report
+Tester.SuppressReport(true);
+SeS("PasswordField").DoSetText(password);
+Tester.SuppressReport(false);
+
+// Alternative: use underscore prefix (also hides from report)
+SeS("PasswordField")._DoSetText(password);
+```
+
+### Tester.SetReportAttribute(name, value)
+
+Sets persistent attribute for subsequent report entries.
+
+```javascript
+Tester.SetReportAttribute("Module", "Checkout");
+// All subsequent entries will have Module=Checkout
+```
+
+---
+
+## Additional Tester Assertions
+
+| Method | Description |
+|--------|-------------|
+| `Tester.AssertFalse(msg, val)` | Checks val is false |
+| `Tester.AssertNull(msg, val)` | Checks val is null |
+| `Tester.AssertNotNull(msg, val)` | Checks val is not null |
+| `Tester.AssertGreater(msg, n1, n2)` | Checks n1 > n2 |
+| `Tester.AssertLess(msg, n1, n2)` | Checks n1 < n2 |
+| `Tester.AssertStartsWith(msg, str, prefix)` | Checks str starts with prefix |
+| `Tester.AssertEndsWith(msg, str, suffix)` | Checks str ends with suffix |
+
+## Additional Tester Soft Assertions
+
+| Method | Description |
+|--------|-------------|
+| `Tester.SoftAssertFalse(msg, val)` | Checks val is false |
+| `Tester.SoftAssertNull(msg, val)` | Checks val is null |
+| `Tester.SoftAssertNotNull(msg, val)` | Checks val is not null |
+| `Tester.SoftAssertGreater(msg, n1, n2)` | Checks n1 > n2 |
+| `Tester.SoftAssertLess(msg, n1, n2)` | Checks n1 < n2 |
+| `Tester.SoftAssertStartsWith(msg, str, prefix)` | Checks str starts with prefix |
+| `Tester.SoftAssertEndsWith(msg, str, suffix)` | Checks str ends with suffix |
+
+---
+
+## Spreadsheet Object
+
+Read and write Excel (.xls, .xlsx) and CSV (.csv, .txt) files. Essential for data-driven testing.
+
+### Spreadsheet.DoAttach(fileName, sheetName)
+
+Loads a spreadsheet file.
+
+```javascript
+// Load Excel file (first sheet)
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\TestData.xlsx");
+
+// Load specific sheet
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\TestData.xlsx", "Users");
+
+// Load CSV file
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\input.csv");
+```
+
+### Spreadsheet.GetCell(columnId, rowId)
+
+Gets cell value. Column can be index (0-based) or name. Row is 0-based index.
+
+```javascript
+// By column index and row index
+var value = Spreadsheet.GetCell(0, 1);  // First column, second row
+
+// By column name and row index (row 0 contains headers)
+var username = Spreadsheet.GetCell("Username", 1);
+var password = Spreadsheet.GetCell("Password", 1);
+```
+
+### Spreadsheet.GetRowCount()
+
+Returns total row count including header row.
+
+```javascript
+var rowCount = Spreadsheet.GetRowCount();
+// Iterate data rows (skip header at row 0)
+for (var i = 1; i < rowCount; i++) {
+    var user = Spreadsheet.GetCell("Username", i);
+    var pass = Spreadsheet.GetCell("Password", i);
+    // ... use data
+}
+```
+
+### Spreadsheet.DoSequential() / GetEOF()
+
+Iterate rows using cursor. First row (headers) is skipped automatically.
+
+```javascript
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\TestData.xlsx");
+while (!Spreadsheet.GetEOF()) {
+    var user = Spreadsheet.GetCell("Username");  // Gets from current row
+    var pass = Spreadsheet.GetCell("Password");
+    
+    // Use data...
+    Login(user, pass);
+    
+    Spreadsheet.DoSequential();  // Move to next row
+}
+```
+
+### Spreadsheet.SetCell(value, columnId, rowId) / DoSave()
+
+Write values and save changes.
+
+```javascript
+Spreadsheet.DoAttach("%WORKDIR%\\Data\\Results.xlsx");
+Spreadsheet.SetCell("PASS", "Status", 1);
+Spreadsheet.SetCell(new Date().toString(), "Timestamp", 1);
+Spreadsheet.DoSave();
+```
+
+### Quick Reference
+
+| Method | Description |
+|--------|-------------|
+| `DoAttach(file, sheet)` | Load spreadsheet |
+| `GetCell(col, row)` | Get cell value |
+| `SetCell(val, col, row)` | Set cell value |
+| `GetRowCount()` | Total rows (including header) |
+| `GetColumnCount()` | Total columns |
+| `DoSequential()` | Move to next row |
+| `GetEOF()` | True if past last row |
+| `DoSave(file)` | Save changes |
+
+---
+
+## Example: Complete Test Flow
+
+```javascript
+function Test(params)
+{
+    var config = Global.GetProperty("TestConfig", "default");
+    
+    Tester.Message("Starting registration with config: " + config);
+    
+    var username = "user_" + Date.now();
+    SeS("UsernameField").DoSetText(username);
+    SeS("PasswordField").DoSetText(Global.DoDecrypt(encryptedPwd));
+    SeS("SubmitButton").DoClick();
+    
+    Global.DoSleep(2000);  // Wait for response
+    
+    // Verify
+    var welcomeText = SeS("WelcomeMessage").GetText();
+    Tester.AssertContains("Welcome message shown", welcomeText, username);
+}
+```
+
+================================================================================
+
+# Rapise Web Testing API
+
+This document covers web automation using Selenium WebDriver in Rapise.
+
+## Important: API Context
+
+Rapise test code runs in a **test engine context**, NOT inside a browser. You cannot use browser DOM APIs directly:
+
+```javascript
+// WRONG - browser DOM APIs don't work
+var text = element.textContent;           // ERROR
+var attr = element.getAttribute("href");  // ERROR
+
+// CORRECT - use Rapise wrapper methods
+var text = element.GetText();
+var attr = element._DoDOMGetAttribute("href");
+
+// CORRECT - use WebDriver.ExecuteScript for raw browser JS
+var checked = WebDriver.ExecuteScript("return arguments[0].checked", obj.element.e);
+```
+
+---
+
+## Navigator - Finding Elements
+
+### Navigator.SeSFind(locator)
+
+Finds element with multiple retry attempts. **Fails the test** if not found.
+
+```javascript
+var btn = Navigator.SeSFind("//button[@id='save']");
+btn.DoClick();
+```
+
+### Navigator.Find(locator)
+
+Single attempt to find element. Returns `null` if not found (no test failure).
+
+```javascript
+var popup = Navigator.Find("//div[@class='popup']");
+if (popup) {
+    popup.DoClick();
+}
+```
+
+### Navigator.DoWaitFor(locator, timeout)
+
+Polls for element until found or timeout. Returns element or `null`.
+
+```javascript
+var spinner = Navigator.DoWaitFor("//div[@class='loading']", 10000);
+```
+
+---
+
+## Navigator - Object State Checks
+
+These methods check object state without failing the test. They accept either an object ID from the repository or an XPath (detected by leading `.` or `/`).
+
+### Navigator.CheckObjectExists(xpathOrObjId)
+
+Checks if object is found on the screen. Returns `true` if exists, `false` otherwise.
+
+```javascript
+var exists = Navigator.CheckObjectExists("//button[@name='Next']");
+Tester.Assert("Next button exists", exists);
+
+// Or with object ID from repository
+var exists = Navigator.CheckObjectExists("LoginButton");
+```
+
+### Navigator.CheckObjectVisible(xpathOrObjId)
+
+Checks if object is visible on the screen (exists and not hidden). Returns `true` if visible, `false` otherwise.
+
+```javascript
+var visible = Navigator.CheckObjectVisible("//div[@class='modal']");
+Tester.Assert("Modal is visible", visible);
+```
+
+### Navigator.CheckObjectEnabled(xpathOrObjId)
+
+Checks if object is enabled (exists and not disabled). Returns `true` if enabled, `false` otherwise.
+
+```javascript
+var enabled = Navigator.CheckObjectEnabled("//button[@id='submit']");
+Tester.Assert("Submit button is enabled", enabled);
+```
+
+---
+
+## Locator Syntax
+
+Rapise supports multiple locator strategies with extensions for iframes, Shadow DOM, and visibility filtering.
+
+### XPath (default)
+
+```javascript
+Navigator.SeSFind("//button[@name='Submit']");
+Navigator.SeSFind("//input[@type='text' and @placeholder='Search']");
+Navigator.SeSFind("//div[contains(@class,'active')]//span[text()='OK']");
+```
+
+### CSS Selector
+
+Prefix with `css=`:
+
+```javascript
+Navigator.SeSFind("css=button.primary:visible");
+Navigator.SeSFind("css=input[data-testid='email']");
+```
+
+### Iframe Boundary
+
+Use `@@@` to cross into iframe:
+
+```javascript
+Navigator.SeSFind("//iframe[@id='editor']@@@//input[@name='content']");
+```
+
+### Shadow DOM Piercing
+
+Rapise supports Shadow DOM in two ways:
+
+**1. Automatic Piercing (Rapise 8.2+)**
+
+CSS selectors automatically pierce open Shadow DOM boundaries - no special syntax needed:
+
+```javascript
+// These work even if the input is inside a shadow root
+Navigator.SeSFind("css=input[id='editField']");
+Navigator.SeSFind("css=guid-generator input");
+Navigator.SeSFind("css=guid-generator > input");
+```
+
+**2. Explicit Boundary Crossing (`@#@`)**
+
+For explicit shadow root traversal, use the `@#@` delimiter. The first part locates the shadow host (XPath or CSS), the second part (CSS only) finds elements inside:
+
+```javascript
+// XPath to shadow host, then CSS inside shadow DOM
+Navigator.SeSFind("//guid-generator@#@css=input");
+
+// CSS for both parts
+Navigator.SeSFind("css=guid-generator@#@css=input:first-of-type");
+```
+
+Note: XPath doesn't work inside shadow roots - always use CSS after `@#@`.
+
+### Visibility Pseudo-Classes
+
+Rapise extends CSS with `:visible` and `:hidden` pseudo-classes (similar to jQuery):
+
+```javascript
+// Click only the visible Submit button (ignore hidden duplicates)
+Navigator.SeSFind("css=button.btn-submit:visible");
+
+// Select visible dropdown items after hover
+Navigator.SeSFind("css=.dropdown-menu li:visible");
+
+// Find the active/visible tab panel
+Navigator.SeSFind("css=.tab-pane:visible");
+
+// Verify loading spinner is hidden
+Navigator.SeSFind("css=.loading-spinner:hidden");
+```
+
+An element is **hidden** if:
+- `display: none`
+- `visibility: hidden`  
+- `opacity: 0`
+
+An element is **visible** if none of the above apply.
+
+Use cases:
+- Dropdowns, tooltips, popups that appear on hover/click
+- Tab interfaces where only one panel is visible
+- Modal dialogs and backdrop elements
+- Loading indicators and progress overlays
+
+---
+
+## Element Actions
+
+Once you have an element, use these methods:
+
+### Mouse Actions
+
+```javascript
+obj.DoClick();           // Click (smart - waits for element, auto-scrolls)
+obj.DoClick(10, 5);      // Click at offset (x=10, y=5) from top-left
+obj.DoDblClick();        // Double click
+obj.DoDblClick(10, 5);   // Double click at offset
+obj.DoRClick();          // Right click (context menu)
+obj.DoRClick(10, 5);     // Right click at offset
+obj.DoLClick();          // Direct click via JavaScript (bypasses visibility checks)
+obj.DoMouseMove();       // Hover over element (move mouse to center)
+obj.DoMouseMove(10, 5);  // Hover at specific offset
+```
+
+### Text Input
+
+```javascript
+obj.DoSetText("Hello");      // Clear and type text
+obj.DoSendKeys("text");      // Send keystrokes (for file inputs, special keys)
+obj.DoSelect("Option 1");    // Select dropdown option by visible text
+```
+
+### Reading Values
+
+```javascript
+var text = obj.GetText();    // Get visible text content
+var tag = obj.GetTag();      // Get HTML tag name ("input", "div", etc.)
+var width = obj.GetWidth();  // Get element width in pixels
+```
+
+### Visibility
+
+```javascript
+obj.DoEnsureVisible();       // Scroll element into viewport
+```
+
+---
+
+## Underscore Prefix Convention
+
+Every action has an underscore variant that:
+- Does NOT write to test report
+- Does NOT fail test on error
+
+```javascript
+// Standard - reports action, fails test if button not found
+SeS("SaveButton").DoClick();
+
+// Silent - no report entry, returns false if fails
+SeS("OptionalPopup")._DoClick();
+```
+
+**Best practice**: Use underscore for intermediate steps, regular for final meaningful actions:
+
+```javascript
+// Intermediate navigation (underscore)
+obj._DoEnsureVisible();
+obj._DoMouseMove();
+
+// Final action (regular - reported)
+obj.DoClick();
+```
+
+---
+
+## DOM Query Methods
+
+### obj._DoDOMGetAttribute(attrName)
+
+Read DOM attribute value:
+
+```javascript
+var href = link._DoDOMGetAttribute("href");
+var title = span._DoDOMGetAttribute("title");
+var dataId = div._DoDOMGetAttribute("data-id");
+```
+
+### obj._DoDOMQueryXPath(relativeXpath)
+
+Find descendant elements using relative XPath (must start with `.`):
+
+```javascript
+var table = Navigator.SeSFind("//table[@id='results']");
+var rows = table._DoDOMQueryXPath(".//tr");
+if (rows && rows.length) {
+    rows[0].DoClick();
+}
+
+// Find buttons inside a container
+var container = Navigator.SeSFind("//div[@class='toolbar']");
+var buttons = container._DoDOMQueryXPath(".//button");
+```
+
+---
+
+## WebDriver Object
+
+Low-level Selenium WebDriver access.
+
+### WebDriver.ExecuteScript(script, ...args)
+
+Execute JavaScript in browser context:
+
+```javascript
+// Check checkbox state
+var isChecked = WebDriver.ExecuteScript("return arguments[0].checked", obj.element.e);
+
+// Scroll to bottom of page
+WebDriver.ExecuteScript("window.scrollTo(0, document.body.scrollHeight)");
+
+// Get computed style
+var color = WebDriver.ExecuteScript(
+    "return window.getComputedStyle(arguments[0]).color", 
+    obj.element.e
+);
+```
+
+### WebDriver.Actions()
+
+Build action chains:
+
+```javascript
+// Press Enter key
+WebDriver.Actions().SendKeys('\uE007').Perform();
+
+// Press Tab
+WebDriver.Actions().SendKeys('\uE004').Perform();
+
+// Press Escape
+WebDriver.Actions().SendKeys('\uE00C').Perform();
+```
+
+### WebDriver.autoWait
+
+Controls automatic page-load waiting. Disable for actions that shouldn't wait:
+
+```javascript
+// File upload pattern
+var aw = WebDriver.autoWait;
+WebDriver.autoWait = false;
+fileInput.DoSendKeys(Global.GetFullPath("Data\\file.pdf"));
+WebDriver.autoWait = aw;
+```
+
+---
+
+## Page Object Pattern
+
+Organize reusable actions in page objects.
+
+**Naming convention**: Functions starting with `Do` are reported as actions. When `DoClickButton` returns `false`, Rapise treats it as a failed action automatically.
+
+**Underscore usage**: Use `_DoClick()` and `_DoSetText()` inside page object methods to avoid duplicate report entries - the outer `DoClickButton` is already reported.
+
+```javascript
+// In PageObjects/MyApp/MyApp.js
+
+SeSPageObject("MyApp");
+
+// DoClickButton - reported action, failure auto-detected via return value
+function MyApp_DoClickButton(/**string*/ name)
+{
+    var xpath = "//button[@name='" + name + "']"
+        + "|//button[normalize-space(.)='" + name + "']";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;  // Shows "Save" instead of XPath in report
+        return obj._DoClick();   // Underscore: don't double-report
+    }
+    return false;  // Returning false fails the DoClickButton action
+}
+
+// DoSetField - same pattern
+function MyApp_DoSetField(/**string*/ name, /**string*/ value)
+{
+    var labelCond = "normalize-space(.)='" + name + "' or normalize-space(.)='*" + name + "'";
+    var xpath = "//input[@id=//label[" + labelCond + "]/@for]";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;
+        return obj._DoSetText(value);
+    }
+    return false;
+}
+```
+
+Usage in tests:
+
+```javascript
+MyApp.DoClickButton("Save");    // Report shows: MyApp.DoClickButton("Save") - Pass/Fail
+MyApp.DoSetField("Username", "john");
+```
+
+---
+
+## Object Repository (SeS)
+
+Learned objects are stored in `Objects.js` and accessed via `SeS()`:
+
+```javascript
+// Objects.js contains learned object definitions
+saved_script_objects = {
+    "LoginButton": {
+        "object_type": "HTMLObject",
+        "xpath": "//button[@id='login']",
+        // ... other properties
+    }
+};
+
+// Usage in test
+SeS("LoginButton").DoClick();
+SeS("UsernameField").DoSetText("admin");
+```
+
+---
+
+## Retry/Wait Patterns
+
+### Custom Auto-Wait Pattern
+
+```javascript
+function CustomAutoWait(fn) {
+    for (var i = 0; i < 10; i++) {  // 10 attempts
+        var result = fn();
+        if (result) return result;
+        Global.DoSleep(500);  // Wait between attempts
+    }
+    return null;
+}
+
+// Usage: wait for dynamic content
+CustomAutoWait(function() {
+    var el = Navigator.Find("//div[@class='loaded']");
+    return el && el.GetText() === "Ready";
+});
+```
+
+### Verify with Retry
+
+```javascript
+function VerifyField(name, expected) {
+    var xpath = "//span[@data-field='" + name + "']";
+    var actual = "";
+    
+    CustomAutoWait(function() {
+        var obj = Navigator.Find(xpath);
+        if (obj) {
+            actual = obj.GetText();
+            return actual === expected;
+        }
+        return false;
+    });
+    
+    Tester.AssertEqual("Field " + name, expected, actual);
+}
+```
+
+---
+
+## Keyboard Constants
+
+For `WebDriver.Actions().SendKeys()`:
+
+| Key | Code |
+|-----|------|
+| Enter | `'\uE007'` |
+| Tab | `'\uE004'` |
+| Escape | `'\uE00C'` |
+| Backspace | `'\uE003'` |
+| Arrow Up | `'\uE013'` |
+| Arrow Down | `'\uE015'` |
+
+---
+
+## Common Mistakes
+
+| ❌ Wrong | ✅ Correct | Why |
+|----------|-----------|-----|
+| `element.click()` | `obj.DoClick()` | Browser DOM APIs don't work in Rapise context |
+| `element.textContent` | `obj.GetText()` | Use Rapise wrapper methods |
+| `element.getAttribute("href")` | `obj._DoDOMGetAttribute("href")` | DOM access via wrappers |
+| `Sleep(1000)` | `Global.DoSleep(1000)` | `Global` object required |
+| `obj._DoDOMQueryXPath("//button")` | `obj._DoDOMQueryXPath(".//button")` | Relative XPath must start with `.` |
+| `Navigator.SeSFind()` for optional elements | `Navigator.Find()` | `SeSFind` fails test; `Find` returns null |
+| `Tester.Assert()` in `Do`-prefixed functions | Return `false` | `Do` functions auto-report; `false` = failure |
+| `obj.DoClick()` inside page object methods | `obj._DoClick()` | Underscore avoids duplicate reporting |
+
+---
+
+## Best Practices
+
+1. **Set object_name** before actions for readable reports
+2. **Use _DoEnsureVisible()** before clicking off-screen elements
+3. **Use Navigator.Find** for optional elements, **Navigator.SeSFind** for required
+4. **Disable WebDriver.autoWait** for file uploads and stable-page actions
+5. **Use relative XPath starting with `.`** in _DoDOMQueryXPath
+6. **Prefer multi-strategy XPaths** joined with `|` for robustness:
+
+```javascript
+var xpath = "//button[@name='" + name + "']"
+    + "|//button[text()='" + name + "']"
+    + "|//button[@title='" + name + "']";
+```
+
+================================================================================
+
+# Rapise Visual Language (RVL)
+
+RVL is a spreadsheet-based test scripting language. Tests are written in Excel files (`.rvl.xlsx`) with a structured 7-column format.
+
+## RVL Structure
+
+Every RVL script has exactly 7 columns:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+
+- **Flow**: Control flow keywords (If, ElseIf, Else, Loop, End, Map, #, /*, */, ?, And, Or)
+- **Type**: Row type (Action, Variable, Param, Condition, Assert, Rows, Range, Database)
+- **Object**: Object ID or map name
+- **Action**: Method to call or condition type
+- **ParamName**: Parameter name
+- **ParamType**: Data type (string, number, boolean, variable, expression)
+- **ParamValue**: Parameter value
+
+---
+
+## Comments
+
+Single-line comment (# in Flow column):
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| # | This is a comment | | | | | |
+
+Multi-line comment:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| /* | Start of multi-line comment | | | | | |
+| | Line 2 of comment | | | | | |
+| */ | | | | | | |
+
+---
+
+## Actions
+
+Call an object method. Every action stores its return value in the built-in `LastResult` variable, which can be used by the next action.
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | LoginButton | DoClick | | | |
+
+Action with parameters:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | UsernameField | DoSetText | txt | string | admin |
+
+Action with multiple parameters (additional params on Param rows):
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | Global | DoLaunch | cmdLine | string | notepad.exe |
+| | Param | | | wrkDir | string | C:\Temp |
+
+Using LastResult from previous action:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | MyField | GetText | | | |
+| | Action | Tester | Message | message | variable | LastResult |
+
+### Conditional Action
+
+`?` in Flow column - action only runs if object exists:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| ? | Action | OptionalPopup | DoClick | | | |
+
+---
+
+## Variables
+
+### Local Variable
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Variable | | | myVar | string | Hello |
+
+### Global Variable (with default)
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Variable | | Global | myGlobal | | |
+| | Param | | | defaultValue | string | DefaultText |
+
+### Using Variables
+
+Reference variables with `variable` as ParamType:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | TextField | DoSetText | txt | variable | myVar |
+
+---
+
+## Conditions (If/ElseIf/Else)
+
+### Simple If
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | variable | status |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | active |
+| # | Actions when status equals "active" | | | | | |
+| | Action | ActivePanel | DoClick | | | |
+| End | of If | | | | | |
+
+### If-Else
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | number | count |
+| | Condition | | param1 > param2 | | | |
+| | Param | | | param2 | number | 0 |
+| # | Count is positive | | | | | |
+| | Action | Tester | Message | message | string | Has items |
+| Else | | | | | | |
+| # | Count is zero or negative | | | | | |
+| | Action | Tester | Message | message | string | No items |
+| End | of Else | | | | | |
+
+### If-ElseIf
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | variable | mode |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | create |
+| # | Create mode | | | | | |
+| ElseIf | Param | | | param1 | variable | mode |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | edit |
+| # | Edit mode | | | | | |
+| End | of ElseIf | | | | | |
+
+### Condition Operators
+
+**Binary conditions:**
+- `param1 == param2` - equals
+- `param1 != param2` - not equals
+- `param1 > param2` - greater than
+- `param1 >= param2` - greater or equal
+- `param1 < param2` - less than
+- `param1 <= param2` - less or equal
+- `param1 contains param2` - substring check
+
+**Unary conditions:**
+- `param1 IsTrue` - checks if true
+- `param1 IsFalse` - checks if false
+- `param1 IsNull` - checks if null
+- `param1 IsNotNull` - checks if not null
+- `param1 IsSet` - checks if has a value (not null/empty/0/false)
+- `param1 IsNotSet` - checks if empty/null/0/false
+
+### And/Or Conditions
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| If | Param | | | param1 | variable | a |
+| | Condition | | param1 > param2 | | | |
+| | Param | | | param2 | number | 0 |
+| And | Param | | | param1 | variable | b |
+| | Condition | | param1 < param2 | | | |
+| | Param | | | param2 | number | 100 |
+| # | Both conditions true | | | | | |
+| End | of If | | | | | |
+
+---
+
+## Loops
+
+### Loop Through Map
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Map | MyData | | | | |
+| # | Loop body - runs once per row | | | | | |
+| | Action | Tester | Message | message | MyData | Name |
+| End | of Loop | | | | | |
+
+### Loop with Counter (for i = 1 to 10)
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Variable | i | | from | number | 1 |
+| | Param | | | to | number | 10 |
+| # | Loop body - i goes from 1 to 10 | | | | | |
+| End | of Loop | | | | | |
+
+### While Loop (with condition)
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Param | | | param1 | variable | counter |
+| | Condition | | param1 < param2 | | | |
+| | Param | | | param2 | number | 5 |
+| # | Loop while counter < 5 | | | | | |
+| End | of Loop | | | | | |
+
+---
+
+## Maps (Data Tables)
+
+### Inline Map
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Map | Rows | TestData | | | | |
+| | Username | Password | Expected | | | |
+| | admin | admin123 | success | | | |
+| | user | user456 | success | | | |
+| | invalid | wrong | failure | | | |
+| End | of Map | | | | | |
+
+### Map from Excel File
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Map | Range | TestData | | fileName | string | %WORKDIR%\Data.xlsx |
+| | Param | | | sheetName | string | Sheet1 |
+| End | of Map | | | | | |
+
+### Using Map Data in Loop
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Loop | Map | TestData | | | | |
+| | Action | UsernameField | DoSetText | txt | TestData | Username |
+| | Action | PasswordField | DoSetText | txt | TestData | Password |
+| | Action | LoginButton | DoClick | | | |
+| End | of Loop | | | | | |
+
+---
+
+## Assertions
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Assert | | | message | string | Values match |
+| | Param | | | param1 | variable | actual |
+| | Condition | | param1 == param2 | | | |
+| | Param | | | param2 | string | expected |
+
+---
+
+## Calling JavaScript Functions
+
+Define functions in `User.js`, call them from RVL via `Functions` object:
+
+```javascript
+// In User.js
+function CalculateTotal(price, qty) {
+    return price * qty;
+}
+```
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | Functions | CalculateTotal | price | number | 10 |
+| | Param | | | qty | number | 5 |
+
+Result is stored in `LastResult` variable.
+
+---
+
+## RVL-JavaScript Interop
+
+### Running RVL from JavaScript
+
+```javascript
+// In Main.js
+function Test(params)
+{
+    RVL.DoPlayScript("Main.rvl.xlsx");
+}
+
+// Run specific sheet
+RVL.DoPlayScript("Main.rvl.xlsx", "LoginSheet");
+```
+
+### Passing Parameters
+
+```javascript
+// Pass params to RVL
+RVL.DoPlayScript("Main.rvl.xlsx", "TestSheet", {
+    username: "admin",
+    environment: "staging"
+});
+```
+
+Access in RVL using Global variables.
+
+---
+
+## ParamType Reference
+
+| ParamType | Description | Example |
+|-----------|-------------|---------|
+| string | Text value | Hello World |
+| number | Numeric value | 42 |
+| boolean | true/false | true |
+| variable | Reference to variable | myVar |
+| expression | JavaScript expression | price * 1.1 |
+| *MapName* | Value from map column | TestData |
+
+---
+
+## Common Patterns
+
+### Data-Driven Login Test
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Map | Rows | Logins | | | | |
+| | User | Pass | Expected | | | |
+| | admin | pwd1 | success | | | |
+| | guest | pwd2 | failure | | | |
+| End | of Map | | | | | |
+| Loop | Map | Logins | | | | |
+| | Action | UsernameField | DoSetText | txt | Logins | User |
+| | Action | PasswordField | DoSetText | txt | Logins | Pass |
+| | Action | LoginButton | DoClick | | | |
+| | Action | Global | DoSleep | millis | number | 2000 |
+| # | Verify result | | | | | |
+| End | of Loop | | | | | |
+
+### Conditional Cleanup
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| ? | Action | ClosePopup | DoClick | | | |
+| ? | Action | CancelDialog | DoClick | | | |
+
+================================================================================
+
+# Rapise Test Framework Structure
+
+This document describes the file and folder structure of Rapise test frameworks.
+
+## Framework Root Structure
+
+```
+MyFramework/
+├── Framework.sstest          # Main framework file (open this in Rapise)
+├── Main.js                   # Framework entry point
+├── Objects.js                # Framework-level learned objects
+├── Common.js                 # Shared utility functions
+├── TestCases/                # Test case folders
+├── PageObjects/              # Page object modules
+├── Lib/LibFramework/         # Framework configuration (Parameters.json, Framework.json)
+├── Shared/                   # Shared config and data (Common.rvl.xlsx)
+├── AI/                       # AI-related files
+├── Profiles/                 # Browser/device profiles
+└── Reports/                  # Execution reports
+```
+
+---
+
+## Test Case Structure
+
+Each test case is a folder containing:
+
+```
+TestCases/
+└── Login Test/
+    ├── Test.sstest           # Test case file
+    ├── Main.js               # Test entry point
+    ├── Main.rvl.xlsx         # RVL script (if using RVL)
+    ├── Objects.js            # Test-specific learned objects
+    ├── User.js               # Custom JavaScript functions
+    ├── ai.commands.json      # AI-generated command mappings
+    └── Reports/              # Test execution reports
+```
+
+### Main.js
+
+Entry point that Rapise calls when executing the test:
+
+```javascript
+function Test(params)
+{
+    // For RVL-based tests
+    RVL.DoPlayScript("Main.rvl.xlsx", Tester.GetParam("sheetName", "RVL"));
+}
+
+// Libraries to load (comma-separated)
+g_load_libraries = ["Web"];
+```
+
+### Objects.js
+
+Contains learned UI objects:
+
+```javascript
+saved_script_objects = {
+    "LoginButton": {
+        "version": 0,
+        "object_type": "HTMLObject",
+        "object_name": "Login Button",
+        "object_library": "Chrome HTML",
+        "xpath": "//button[@id='login']",
+        "title": "Login Page",
+        "url": "https://example.com/login"
+    },
+    "UsernameField": {
+        "version": 0,
+        "object_type": "HTMLObject",
+        "object_name": "Username",
+        "xpath": "//input[@name='username']"
+    }
+};
+```
+
+Access objects in tests:
+
+```javascript
+SeS("LoginButton").DoClick();
+SeS("UsernameField").DoSetText("admin");
+```
+
+### User.js
+
+Custom functions available in both JavaScript and RVL:
+
+```javascript
+function Login(username, password) {
+    SeS("UsernameField").DoSetText(username);
+    SeS("PasswordField").DoSetText(password);
+    SeS("LoginButton").DoClick();
+    Global.DoSleep(2000);
+}
+
+function VerifyLoggedIn() {
+    var welcome = SeS("WelcomeMessage");
+    return welcome && welcome.GetText().indexOf("Welcome") >= 0;
+}
+```
+
+---
+
+## Page Objects
+
+Reusable UI component modules:
+
+```
+PageObjects/
+└── MyApp/
+    ├── Test.sstest           # Page object file
+    ├── Main.js               # Entry point (for testing page object)
+    ├── MyApp.js              # Page object implementation
+    ├── Objects.js            # Learned objects for this page
+    └── User.js               # Helper functions
+```
+
+### Page Object Implementation (MyApp.js)
+
+Functions starting with `Do` are auto-reported as actions. Returning `false` automatically fails the action (no `Tester.Assert` needed). Use underscore methods (`_DoClick`, `_DoSetText`) inside to avoid duplicate report entries.
+
+```javascript
+SeSPageObject("MyApp");
+
+/**
+ * Logs into the application
+ * @param username User name
+ * @param password User password
+ */
+function MyApp_DoLogin(/**string*/ username, /**string*/ password)
+{
+    // Underscore methods: don't double-report since DoLogin is already reported
+    SeS("UsernameField")._DoSetText(username);
+    SeS("PasswordField")._DoSetText(password);
+    SeS("LoginButton")._DoClick();
+    Global.DoSleep(2000);
+    return true;
+}
+
+/**
+ * Clicks a button by name
+ * @param name Button label or name attribute
+ */
+function MyApp_DoClickButton(/**string*/ name)
+{
+    var xpath = "//button[@name='" + name + "']"
+        + "|//button[normalize-space(.)='" + name + "']";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;  // Shows "Save" instead of XPath in report
+        return obj._DoClick();   // Underscore: don't double-report
+    }
+    return false;  // Returning false fails the DoClickButton action
+}
+```
+
+Usage in tests:
+
+```javascript
+MyApp.DoLogin("admin", "password123");
+MyApp.DoClickButton("Save");
+```
+
+### RVL-Based Page Objects
+
+Page objects can also be created using RVL instead of JavaScript. RVL is recommended for straightforward scenarios involving UI interactions. JavaScript is better for complex logic, loops, data manipulation, or web service interactions.
+
+**Folder structure:**
+
+```
+PageObjects/
+└── App/
+    ├── Test.sstest           # Page object file
+    ├── Main.js               # Entry point
+    ├── Main.rvl.xlsx         # RVL actions (sheets = actions)
+    ├── App.js                # Auto-generated JS wrapper
+    ├── Objects.js            # Learned objects
+    └── User.js               # Helper functions
+```
+
+**Key difference from JS-based:** In RVL mode, each **sheet** (except `RVL` and `PageObject`) becomes an action. The sheet name is the action name.
+
+**Main.rvl.xlsx sheets:**
+
+| Sheet | Purpose |
+|-------|---------|
+| `RVL` | Default sheet, typically empty or contains internal tests (required) |
+| `PageObject` | Contains action description shown in tooltips (required) |
+| `DoLogin` | Example action sheet - becomes `App.DoLogin()` |
+| `DoLogout` | Example action sheet - becomes `App.DoLogout()` |
+| `DoNavigate` | Example action sheet - becomes `App.DoNavigate()` |
+
+Users can define as many action sheets as needed with different names. The `RVL` and `PageObject` sheets are always required. Every other sheet defines an action of the Page Object.
+
+**Action Parameters in RVL:**
+
+Define parameters in the sheet name using signatures:
+
+```
+DoLogin(/**string*/usr, /**string*/pwd)
+DoAdd(name=Jim, age=41)
+```
+
+Supported parameter types: `string`, `number`, `boolean`, `object`.
+
+**Inside an RVL action sheet:**
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| # | DoLogin description | | | | | |
+| | Variable | | | usr | string | TBD |
+| | Variable | | | pwd | string | TBD |
+| | Variable | | | ReturnValue | | |
+| # | Action steps below | | | | | |
+| | Action | UsernameField | DoSetText | txt | variable | usr |
+| | Action | PasswordField | DoSetText | txt | variable | pwd |
+| | Action | LoginButton | DoClick | | | |
+
+Variables before `ReturnValue` are parameters. Assign `ReturnValue` during execution to return a value.
+
+**Auto-generated wrapper (App.js):**
+
+Rapise auto-generates JavaScript wrappers for RVL actions:
+
+```javascript
+//<autogenerated> - Don't edit!
+function App_DoLogin(/**string*/usr, /**string*/pwd)
+{
+    var res = SeSPageObjectRvlInvoke(
+        this,
+        __dirname+"\\Test.sstest",
+        __dirname+"\\Main.rvl.xlsx",
+        "DoLogin",
+        { usr: usr, pwd: pwd }
+    );
+    return res;
+}
+global.App_DoLogin = App_DoLogin;
+
+SeSPageObject("App");
+```
+
+**Usage (same as JS-based):**
+
+```javascript
+// In JavaScript
+App.DoLogin("admin", "password123");
+```
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | App | DoLogin | usr | string | admin |
+| | Param | | | pwd | string | password123 |
+
+---
+
+## Shared Configuration
+
+### Shared/Common.rvl.xlsx
+
+Special workbook for framework-wide RVL definitions. All variables, maps, and repositories declared here are automatically available in every RVL sheet across the entire framework.
+
+**Key characteristics:**
+- One per framework, located in `Shared/` folder
+- All sheets are treated as preambles (no actions, only definitions)
+- Variables, maps, and repositories become globally available
+- Create via Object tree → Shared → New Common.rvl.xlsx
+
+**Example Common.rvl.xlsx content:**
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| # | Global Variables | | | | | |
+| | Variable | | | g_baseUrl | string | https://example.com |
+| | Variable | | | g_timeout | number | 30000 |
+
+Variables in Common.rvl.xlsx are global by default - no need for the `Global` keyword. They are accessible from any RVL sheet or JavaScript code in the framework.
+
+---
+
+## Framework Configuration (Lib/LibFramework)
+
+Framework settings are stored in `Lib/LibFramework/`:
+
+```
+Lib/LibFramework/
+├── Framework.json            # Test cases, page objects, test sets structure
+├── Parameters.json           # Framework parameters with default values
+├── Spira.json                # Spira integration mappings (optional)
+└── LibFramework.js           # Framework library code
+```
+
+### Parameters.json
+
+Defines framework-wide parameters accessible in all test cases:
+
+```json
+{
+  "params": [
+    { "name": "Browser", "type": "browser", "defaultValue": "Selenium - Chrome" },
+    { "name": "EnvURL", "type": "string", "defaultValue": "https://dev.example.com" },
+    { "name": "Username", "type": "string", "defaultValue": "admin" },
+    { "name": "Password", "type": "password", "defaultValue": "encryptedValue==" }
+  ],
+  "configs": [
+    { "id": "default1", "name": "Default" },
+    { "id": "staging1", "name": "Staging", "values": { "EnvURL": "https://staging.example.com" } }
+  ]
+}
+```
+
+**Parameter types:** `string`, `number`, `boolean`, `password`, `select`, `browser`, `mobile`, `datacolumn`, `environment`.
+
+**Configurations:** Named sets of parameter overrides. Only parameters that differ from defaults are specified in the `values` object.
+
+**Accessing parameters:**
+
+In JavaScript:
+```javascript
+var url = Tester.GetParam("EnvURL");
+```
+
+In RVL (use `testparam` as ParamType):
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | Navigator | Open | url | testparam | EnvURL |
+
+### Framework.json
+
+Contains framework structure. Managed by Rapise IDE - typically not edited manually.
+
+```json
+{
+  "framework": { ... },      // Framework metadata and settings
+  "testcases": [             // List of test cases
+    { "id": "ABC123", "name": "LoginTest", "alias": "Login Test",
+      "sstest": "%WORKDIR%TestCases\\LoginTest\\Test.sstest",
+      "rep": "%WORKDIR%TestCases\\LoginTest\\Objects.js",
+      "libraries": ["Web"] }
+  ],
+  "pageobjects": {           // Page objects
+    "MyApp": { "id": "XYZ789", "js": "%WORKDIR%PageObjects\\MyApp\\MyApp.js",
+      "sstest": "%WORKDIR%PageObjects\\MyApp\\Test.sstest",
+      "rep": "%WORKDIR%PageObjects\\MyApp\\Objects.js",
+      "libraries": ["Web"] }
+  },
+  "testsets": [ ... ],       // Test sets grouping test cases with configs
+  "shared": [ ... ]          // Shared JavaScript files
+}
+```
+
+### Spira.json
+
+Maps framework elements to SpiraTest for CI/CD integration. Managed by Rapise IDE - typically not edited manually.
+
+```json
+{
+  "projectId": 9,            // Spira project ID
+  "testCasesFolderId": 755,  // Test cases folder in Spira
+  "testSetsFolderId": 351,   // Test sets folder in Spira
+  "testcases": [             // Rapise ID to Spira ID mappings
+    { "id": "ABC123", "spiraId": 7081 }
+  ],
+  "testsets": [              // Rapise ID to Spira ID mappings
+    { "id": "a448ba14", "spiraId": 1041 }
+  ]
+}
+```
+
+### Shared/Config.xlsx
+
+Excel file storing configuration values:
+
+| Key | Value |
+|-----|-------|
+| BaseUrl | https://example.com |
+| Username | testuser |
+| Password | (encrypted) |
+| Timeout | 30000 |
+
+Access in code:
+
+```javascript
+var url = Global.GetProperty("BaseUrl", "", "%WORKDIR%\\Shared\\Config.xlsx");
+var user = Global.GetProperty("Username", "", "%WORKDIR%\\Shared\\Config.xlsx");
+```
+
+---
+
+## AI Integration Files
+
+### Shared/AIExamples.txt (or AI/AIExamples.txt)
+
+Contains positive and negative examples for AI code generation. When generating code, the AI uses these examples to learn preferred patterns and avoid incorrect approaches.
+
+**Purpose:**
+- **Positive examples** (thumbs up): Correct code patterns the AI should follow
+- **Negative examples** (thumbs down): Incorrect approaches the AI should avoid
+
+**Format:**
+
+```
+Prompt: Write OS type to the report
+Correct: Tester.Message("OS Type: ", Global.GetOsType());
+
+Prompt: Wait 1 second
+Wrong: Sleep(1);
+
+Prompt: Wait 1 second
+Correct: Global.DoSleep(1000);
+```
+
+Examples are added via thumbs up/down buttons in the AI Panel, or manually edited. Rapise checks both `%WORKDIR%/AI` and `%WORKDIR%/Shared` folders.
+
+### Shared/AiPrompt.txt (or AI/AiPrompt.txt)
+
+Framework-specific instructions appended to every AI code generation request. Used to enforce conventions and provide guidance.
+
+```
+## Button Clicks
+Use MyApp.DoClickButton(name) for clicking buttons.
+CRITICAL: Do not click disabled buttons.
+
+## Form Fields
+Use MyApp.DoSetField(name, value) for text inputs.
+Use MyApp.DoSelectDropdown(name, option) for dropdowns.
+
+## Before Calculations
+Always press Clear button before starting a new calculation.
+```
+
+### ai.commands.json (per test case)
+
+Maps AI command prompts to their generated JavaScript code. Created automatically when AI commands are processed.
+
+```json
+{
+  "ABC1-DEF2-GH34": {
+    "prompt": "Click the Save button",
+    "code": [
+      "MyApp.DoClickButton(\"Save\");"
+    ]
+  }
+}
+```
+
+Once code is generated and cached, test execution does not require AI access.
+
+---
+
+## SeS() Object Access
+
+`SeS(objectId)` retrieves learned objects from Objects.js:
+
+```javascript
+// Standard action - logs to report, fails test on error
+SeS("SaveButton").DoClick();
+
+// Silent action (underscore prefix) - no report, no failure
+SeS("OptionalPopup")._DoClick();
+```
+
+### Underscore Convention
+
+For actions starting with `Do`:
+- `DoClick()` - Reports action, fails test if error
+- `_DoClick()` - Silent, returns false on error
+
+**Use underscore for:**
+- Optional elements that may not exist
+- Intermediate navigation steps
+- Cleanup actions
+
+**Use regular for:**
+- Critical test actions
+- Verifications
+- Final meaningful interactions
+
+---
+
+## Library Loading
+
+### g_load_libraries
+
+Specifies which libraries to load:
+
+```javascript
+// Single library
+g_load_libraries = ["Web"];
+
+// Multiple libraries
+g_load_libraries = ["Web", "DomSalesforce"];
+
+// Desktop application
+g_load_libraries = ["UIAutomation"];
+```
+
+Common libraries:
+- `Web` - Selenium/Chrome web testing
+- `UIAutomation` - Windows UI Automation
+- `DomSalesforce` - Salesforce Lightning components
+- `DomDynamicsCrm` - Microsoft Dynamics CRM
+- `Mobile` - Appium mobile testing
+
+---
+
+## File Reference Summary
+
+| File | Purpose |
+|------|---------|
+| `*.sstest` | Rapise project file (open in Rapise) |
+| `Main.js` | Test entry point, contains Test() function |
+| `Main.rvl.xlsx` | RVL script (spreadsheet-based test) |
+| `Objects.js` | Learned UI objects |
+| `User.js` | Custom JavaScript functions |
+| `Common.js` | Framework-wide shared functions |
+| `Lib/LibFramework/Parameters.json` | Framework parameters (environment, credentials) |
+| `Lib/LibFramework/Framework.json` | Framework structure (test cases, page objects) |
+| `Shared/Common.rvl.xlsx` | Global RVL variables and maps |
+| `ai.commands.json` | AI-generated code mappings |
+| `AiPrompt.txt` | AI guidance for code generation |
+| `AIExamples.txt` | Positive/negative examples for AI |
+
+---
+
+## Creating New Test Cases
+
+1. Create folder under `TestCases/`
+2. Copy `Test.sstest` template
+3. Create `Main.js` with `Test()` function
+4. Create `Objects.js` (or learn objects via Rapise)
+5. Optionally create `Main.rvl.xlsx` for RVL tests
+6. Add `User.js` for custom functions
+
+```javascript
+// Minimal Main.js
+function Test(params)
+{
+    Tester.Message("Starting test");
+    // Your test code here
+}
+
+g_load_libraries = ["Web"];
+```
+
+---
+
+## Best Practices
+
+1. **Organize by feature**: Group related test cases in subfolders
+2. **Use page objects**: Extract reusable UI patterns
+3. **Centralize config**: Use `Parameters.json` for environment-specific values, `Common.rvl.xlsx` for RVL global variables
+4. **Name objects descriptively**: `LoginButton` not `Button1`
+5. **Keep AI files updated**: Maintain AiPrompt.txt for accurate AI assistance
+6. **Use underscore for optional elements**: Prevent false test failures
+
+================================================================================
+
+# Extending Rapise
+
+This document covers two ways to extend Rapise functionality:
+1. **Page Objects** - High-level reusable actions (e.g., `MyApp.Launch()`, `MyApp.DoLogin()`)
+2. **Extension Libraries** - Custom control types for recording/playback (e.g., `DomMyAppGrid`)
+
+---
+
+## Page Objects
+
+Page objects provide high-level, reusable actions accessed as `PageObjectName.ActionName()` (e.g., `MyApp.DoLogin(user, pwd)`, `MyApp.DoClickButton("Save")`). They encapsulate complex UI interactions into simple method calls.
+
+### Structure
+
+```
+PageObjects/
+└── MyApp/
+    ├── Test.sstest           # Page object file
+    ├── Main.js               # Entry point
+    ├── MyApp.js              # Page object implementation
+    ├── Objects.js            # Learned objects
+    └── User.js               # Helper functions
+```
+
+### Implementation Pattern
+
+Functions starting with `Do` are auto-reported as actions. Returning `false` automatically fails the action (no `Tester.Assert` needed). Use underscore methods (`_DoClick`, `_DoSetText`) inside to avoid duplicate report entries.
+
+```javascript
+/**
+ * @PageObject MyApp - Common application actions
+ */
+SeSPageObject("MyApp");
+
+/**
+ * Clicks a button by name.
+ * @param name Button label
+ */
+function MyApp_DoClickButton(/**string*/ name)
+{
+    var xpath = "//button[@name='" + name + "']"
+        + "|//button[normalize-space(.)='" + name + "']";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;   // Shows "Save" instead of XPath in report
+        return obj._DoClick();    // Underscore: don't double-report
+    }
+    return false;  // Returning false fails the DoClickButton action
+}
+
+/**
+ * Sets a form field value.
+ * @param name Field label
+ * @param value Text to enter
+ */
+function MyApp_DoSetTextField(/**string*/ name, /**string*/ value)
+{
+    var xpath = "//input[@id=//label[normalize-space(.)='" + name + "']/@for]";
+    var obj = Navigator.SeSFind(xpath);
+    if (obj) {
+        obj.object_name = name;
+        return obj._DoSetText(value);
+    }
+    return false;
+}
+```
+
+### Usage
+
+In JavaScript:
+```javascript
+MyApp.DoClickButton("Save");
+MyApp.DoSetTextField("Company", "Acme Corp");
+```
+
+In RVL:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | MyApp | DoClickButton | name | string | Save |
+| | Action | MyApp | DoSetTextField | name | string | Company |
+| | Param | | | value | string | Acme Corp |
+
+### Best Practices
+
+1. **Naming**: Use `PageObjectName_DoActionName` function pattern (e.g., `MyApp_DoLogin` becomes `MyApp.DoLogin()`)
+2. **Do prefix**: Functions starting with `Do` are auto-reported; returning `false` fails the action
+3. **Underscore methods**: Use `_DoClick()`, `_DoSetText()` inside to avoid duplicate report entries
+4. **JSDoc comments**: Add `@param` annotations for auto-completion
+5. **object_name**: Set before actions for readable reports
+6. **Multi-strategy XPaths**: Use `|` to join multiple locators
+7. **Configuration**: Read settings via `Tester.GetParam()` or `Global.GetProperty()`
+
+---
+
+## Extension Libraries (Custom Controls)
+
+Extension libraries add support for application-specific controls (grids, comboboxes, etc.) that can be learned and recorded. The library code runs during **playback** in the Rapise test engine context.
+
+### Library Structure
+
+```
+Lib/LibDomMyApp/
+├── LibDomMyApp.js            # Main library, plugin registration
+├── LibDomMyAppRules.js       # Control type rules (SeSRegisterRule)
+├── LibDomMyAppInfo.js        # Documentation metadata
+├── LibDomMyAppRecorder.js    # Recording hooks (optional)
+├── DomMyAppGrid.js           # Grid control behavior
+├── DomMyAppComboBox.js       # ComboBox control behavior
+└── ...                       # Additional control files
+```
+
+### Main Library File (LibDomMyApp.js)
+
+```javascript
+/**
+ * @fileOverview DomMyApp library - custom controls for MyApp
+ */
+
+DomMyAppPlugin = {
+    pluginId: "DomMyAppPlugin",
+    include: "Lib/LibDomMyApp/LibDomMyAppRecorder.js",
+    attachFunctionName: "DomMyAppPluginAttach",
+    
+    Init: function() {
+        return true;
+    }
+}
+
+eval(g_helper.IncludeOnce("Lib/LibDomMyApp/LibDomMyAppRules.js"));
+
+// Optional: XPath modification callback
+function DomMyApp_OnXPathNotFound(xpath) {
+    // Modify xpath to handle dynamic IDs
+    return xpath;
+}
+g_xpathNotFoundCallbacks.push(DomMyApp_OnXPathNotFound);
+
+// Optional: Web app profile for recording
+var DomMyApp_WebAppProfile = {
+    record: {
+        attributes: [
+            { name: "id", notEmpty: true, exclude: "\\d" },
+            { name: "name" },
+            { name: "aria-label" },
+            { name: "data-testid" }
+        ]
+    }
+}
+g_webAppProfile = DomMyApp_WebAppProfile;
+```
+
+### Rules File (LibDomMyAppRules.js)
+
+```javascript
+/**
+ * @fileOverview Control type rules for MyApp
+ */
+
+eval(g_helper.IncludeOnce('Lib/LibDomMyApp/DomMyAppGrid.js'));
+eval(g_helper.IncludeOnce('Lib/LibDomMyApp/DomMyAppComboBox.js'));
+
+/** @rule DomMyAppGrid */
+SeSRegisterRule({
+    rule_id: "DomMyAppGridRule",
+    object_type: "DomMyAppGrid",
+    object_flavor: "Grid",
+    extend_rule: "HTMLObject",
+    dont_hash: true,
+    behavior: ["DomMyAppGridBehavior"]
+});
+
+/** @rule DomMyAppComboBox */
+SeSRegisterRule({
+    rule_id: "DomMyAppComboBoxRule",
+    object_type: "DomMyAppComboBox",
+    object_flavor: "ComboBox",
+    extend_rule: "HTMLObject",
+    dont_hash: true,
+    behavior: ["DomMyAppComboBoxBehavior"]
+});
+```
+
+### Control Behavior File (DomMyAppComboBox.js)
+
+```javascript
+/** @behavior DomMyAppComboBox */
+SeSRegisterBehavior({
+    id: "DomMyAppComboBoxBehavior",
+    
+    actions: [
+        {
+            actionName: "SelectItem",
+            /** @action */
+            DoAction: DomMyAppComboBox_DoSelectItem
+        }
+    ],
+    
+    properties: {
+        // Define properties if needed
+    }
+});
+
+/**
+ * Selects an item from the combobox.
+ * @param item Item text or index
+ */
+function DomMyAppComboBox_DoSelectItem(/**string|number*/ item)
+{
+    // Open dropdown
+    var trigger = this._DoDOMQueryXPath(".//button[@aria-haspopup='true']");
+    if (trigger && trigger.length > 0) {
+        trigger[0]._DoClick();
+        Global.DoSleep(500);
+        
+        // Find and click item
+        var itemEl = this._DoDOMQueryXPath(".//li[@role='option' and contains(.,'" + item + "')]");
+        if (itemEl && itemEl.length > 0) {
+            itemEl[0]._DoClick();
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+### Info File (LibDomMyAppInfo.js)
+
+```javascript
+if (typeof(g_libInfo) == "undefined") g_libInfo = {};
+
+g_libInfo.DomMyAppComboBoxRuleInfo = {
+    _description: "MyApp ComboBox control behavior."
+}
+
+g_libInfo.DomMyAppComboBoxBehaviorInfo = {
+    _description: "Behavior for MyApp ComboBox controls.",
+    actions: {
+        SelectItem: {
+            _description: "Selects an item from the dropdown.",
+            item: {
+                description: "Item text or index to select.",
+                type: "string|number"
+            }
+        }
+    },
+    properties: {}
+}
+```
+
+### Recorder File (LibDomMyAppRecorder.js)
+
+The recorder file runs **inside the browser context** (not the Rapise test engine). It intercepts user actions during recording and maps them to custom control types and actions.
+
+Since it runs in the browser, you can use standard DOM APIs (`element.tagName`, `element.innerText`, `el.parentNode`, etc.) plus Rapise-provided helper functions.
+
+```javascript
+// Entry point - called by Rapise during recording
+function DomMyAppPluginAttach(browser, actionHolder)
+{
+    if(l2) Log2("DomMyApp Plugin Initializing");
+    
+    // Return codes
+    var R_NOT_OBJECT = 0;    // Element not recognized by this plugin
+    var R_ACTION_FOUND = 1;  // Object and action identified
+    var R_OBJECT_FOUND = 2;  // Object identified, but action unknown
+    
+    // Console fallback for browsers without console
+    if (typeof(console) == "undefined")
+    {
+        var console = {};
+        console.log = function(msg){};
+    }
+    
+    // Utility to clean object names (remove dynamic IDs)
+    function _normalizeObjectName(t)
+    {
+        t = t || "";
+        var re = new RegExp("_[0-9]+_", "ig");
+        t = t.replace(re, "_");
+        return t;
+    }
+    
+    //////////////////////////////////////////////////////////////////////
+    // Control detection functions
+    //////////////////////////////////////////////////////////////////////
+    
+    function IsDomMyAppGrid(evt, element, eventOpts, objName, description, flavor, items)
+    {
+        // Helper to extract cell info from clicked element
+        function _getCell(el)
+        {
+            var cell = { row: 0, col: 0 };
+            var cellEl = __hasParentWithTag(el, "td");
+            if (cellEl)
+            {
+                // Get column index and name from header
+                var colNum = __doDOMQueryXPath(cellEl, "count(./preceding-sibling::td)", true);
+                var colEl = __doDOMQueryXPath(root, ".//thead/tr/th[" + (colNum + 1) + "]");
+                if (colEl && colEl.length > 0)
+                    cell.col = colEl[0].innerText;
+                else
+                    cell.col = colNum;
+                
+                // Get row identifier (cell text or row index)
+                cell.row = cellEl.innerText;
+                if (!cell.row)
+                {
+                    var rowEl = __hasParentWithTag(el, "tr");
+                    cell.row = __doDOMQueryXPath(rowEl, "count(./preceding-sibling::tr)", true);
+                }
+            }
+            return cell;
+        }
+        
+        var rvalue = { root: null, result: null, rcode: R_NOT_OBJECT };
+        
+        var root = __hasParentWithAttr(element, 'class', /myapp-grid/ig);
+        if (!root) return rvalue;
+        
+        var res = {
+            cancel: false,
+            object_flavor: 'Grid',
+            object_name: 'Grid',
+            object_type: 'DomMyAppGrid',
+            description: 'Grid action',
+            locator_data: { xpath: SeS_GenerateXPath(root) }
+        };
+        
+        rvalue.result = res;
+        rvalue.root = root;
+        rvalue.rcode = R_OBJECT_FOUND;
+        
+        // Learning mode - return object info and bounding rect
+        if (evt == "resolveElementDescriptor")
+        {
+            res.rect = __getElementRect(root);
+            res.action = undefined;
+            return rvalue;
+        }
+        
+        // Handle Click event
+        if (evt == "Click")
+        {
+            var cell = _getCell(element);
+            if (cell)
+            {
+                var descr = "Click on '" + cell.row + "' in column '" + cell.col + "'";
+                res.action = {
+                    name: "ClickCell",
+                    description: descr,
+                    params: [cell.row, cell.col]
+                };
+            }
+            rvalue.rcode = R_ACTION_FOUND;
+        }
+        
+        return rvalue;
+    }
+    
+    //////////////////////////////////////////////////////////////////////
+    // Main entry point - Rapise calls this for every user action
+    //////////////////////////////////////////////////////////////////////
+    
+    actionHolder.OnActionRecorded = function(evt, element, eventOpts, objName, description, flavor, items)
+    {
+        if (!element) return false;
+        
+        function _checkDomMyAppControls()
+        {
+            var r = manageExceptions(IsDomMyAppGrid)(evt, element, eventOpts, objName, description, flavor, items);
+            if (r.rcode == R_OBJECT_FOUND || r.rcode == R_ACTION_FOUND)
+                return r.result;
+            
+            // Add more control checks here...
+            // var r = manageExceptions(IsDomMyAppComboBox)(evt, element, ...);
+            // if (r.rcode == R_OBJECT_FOUND || r.rcode == R_ACTION_FOUND)
+            //     return r.result;
+        }
+        
+        // Debug mode vs production mode
+        if (typeof(g_debug) != "undefined" && g_debug)
+        {
+            return _checkDomMyAppControls();
+        }
+        else
+        {
+            try
+            {
+                return _checkDomMyAppControls();
+            }
+            catch(exc)
+            {
+                PrintException("DomMyApp Plugin exception", exc);
+            }
+        }
+        return false;
+    }
+    
+    //#region Debug Functions
+    function PrintException(title, exc)
+    {
+        Log("************** " + title + " *********************\n");
+        var vDebug = "";
+        for (var prop in exc)
+        {
+            vDebug += "    [" + prop + "]:" + exc[prop] + "\n";
+        }
+        if (exc && exc.message)
+        {
+            vDebug += "    [message]:" + exc.message + "\n";
+        }
+        if (exc && exc.stack)
+        {
+            vDebug += "    [stack]:" + exc.stack + "\n";
+        }
+        Log(vDebug);
+        Log('**********************************************************');
+    }
+
+    function manageExceptions(func)
+    {
+        var orignal = func;
+        var decorated = function()
+        {
+            function functionName(fn)
+            {
+                var name = /\W*function\s+([\w\$]+)\(/.exec(fn);
+                if (!name) return 'No name';
+                return name[1];
+            }
+            var funcName = functionName(orignal.toString());
+            
+            if (typeof(g_debug) != "undefined" && g_debug)
+            {
+                if(l3) Log3("Trying:" + funcName);
+                return orignal.apply(this, arguments);
+            }
+            else
+            {
+                try
+                {
+                    return orignal.apply(this, arguments);
+                }
+                catch(exception)
+                {
+                    if (!exception.stack)
+                        Log("*** Exception in " + funcName + " ***\n");
+                    throw exception;
+                }
+            }
+        }
+        return decorated;
+    }
+    //#endregion
+}
+```
+
+**Recorder Structure Summary:**
+
+1. **Entry function**: `DomMyAppPluginAttach(browser, actionHolder)` - name must match `attachFunctionName` in main library
+2. **Return codes**: `R_NOT_OBJECT`, `R_ACTION_FOUND`, `R_OBJECT_FOUND`
+3. **Control detection functions**: `IsDomMyAppXxx()` - one per control type, with nested `_getCell()` style helpers
+4. **Main handler**: `actionHolder.OnActionRecorded` - entry point called by Rapise
+5. **Debug functions**: `PrintException`, `manageExceptions` - for error handling
+
+**Rapise Helper Functions (Browser Context):**
+
+| Function | Description |
+|----------|-------------|
+| `__hasParentWithAttr(el, attr, regex)` | Finds ancestor element with attribute matching regex pattern |
+| `__hasParentWithTag(el, tagName)` | Finds ancestor element with specified tag name |
+| `__hasParentWithAttrPierceShadowDom(el, attr, regex)` | Same as `__hasParentWithAttr`, but crosses Shadow DOM boundaries |
+| `__doDOMQueryXPath(root, xpath, singleValue)` | Executes XPath query; returns array of elements or single numeric value if `singleValue=true` |
+| `__getAttribute(el, name)` | Gets element attribute value (returns empty string if not found) |
+| `__hasAttribute(el, name)` | Returns true if element has the specified attribute |
+| `__getElementRect(el)` | Gets element bounding rectangle `{x, y, w, h, cx, cy}` |
+| `__getInnerText(el)` | Cross-browser way to get element's inner text |
+| `__isElementVisible(el)` | Checks if element is visible (not `display:none`, `visibility:hidden`, or `opacity:0`) |
+| `SeS_GenerateXPath(el)` | Generates XPath locator for element using configured attributes |
+| `Log(msg)` | Logging (also `Log1`, `Log2`, `Log3` for different verbosity levels controlled by `l1`, `l2`, `l3` flags) |
+
+**Event Types:**
+
+| Event | Description |
+|-------|-------------|
+| `"Click"` | Mouse click on element |
+| `"SetText"` | Text input (`eventOpts` contains the entered text) |
+| `"Select"` | Selection from dropdown (`eventOpts` contains selected value) |
+| `"resolveElementDescriptor"` | Learning mode - return object info and rect, set `action = undefined` |
+
+**Return Object Structure:**
+
+```javascript
+{
+    cancel: false,              // true to suppress default recording
+    object_flavor: 'Grid',      // Control category (Grid, Button, Edit, ComboBox, List, etc.)
+    object_name: 'MyGrid',      // Display name in object repository
+    object_type: 'DomMyAppGrid', // Must match SeSRegisterRule object_type
+    description: 'Grid action', // Action description for report
+    locator_data: {
+        xpath: "//div[@class='myapp-grid']"
+    },
+    rect: { x, y, w, h },       // For resolveElementDescriptor only
+    action: {                   // Omit or set undefined for Learn-only
+        name: "ClickCell",      // Action method name
+        description: "Click cell",
+        params: [0, "Column1"]  // Parameters passed to the action
+    }
+}
+```
+
+### Loading the Library
+
+Add to `g_load_libraries` in Main.js:
+
+```javascript
+g_load_libraries = ["Web", "DomMyApp"];
+```
+
+---
+
+## Existing Extension Libraries
+
+Rapise includes several built-in extension libraries:
+
+| Library | Purpose |
+|---------|---------|
+| `DomSalesforce` | Salesforce Lightning controls |
+| `DomDynamicsCrm` | Microsoft Dynamics 365 controls |
+| `DomDynamicsNAV` | Dynamics NAV/Business Central controls |
+| `DomDynamicsAX` | Dynamics AX controls |
+
+---
+
+## When to Use Which Approach
+
+| Scenario | Approach |
+|----------|----------|
+| Reusable high-level actions | Page Object |
+| Click button by name, fill forms | Page Object |
+| Application-specific workflows | Page Object |
+| Custom control types for recording | Extension Library |
+| Complex grid/table interactions | Extension Library |
+| Application-wide element identification | Extension Library |
+
+**Page Objects** are simpler and sufficient for most automation needs. **Extension Libraries** require deeper knowledge of Rapise internals and are mainly for supporting custom UI frameworks.
+
+---
+
+## Key Functions
+
+### Page Objects
+
+| Function | Description |
+|----------|-------------|
+| `SeSPageObject("Name")` | Registers page object, enables `Name.ActionName()` syntax (e.g., `MyApp.DoLogin()`) |
+| `Navigator.SeSFind(xpath)` | Finds element, fails test if not found |
+| `Navigator.Find(xpath)` | Finds element, returns null if not found |
+| `Navigator.DoWaitFor(xpath, timeout)` | Waits for element |
+| `obj._DoDOMQueryXPath(relXpath)` | Finds descendants (xpath must start with `.`) |
+| `obj.DoClick()` | Clicks element |
+| `obj._DoClick()` | Silent click (no report) |
+| `obj.DoSetText(text)` | Sets text value |
+| `obj.object_name = "Name"` | Sets display name for reports |
+
+### Extension Libraries (Playback - Rapise Engine Context)
+
+These functions are used in behavior files (e.g., `DomMyAppComboBox.js`) during **playback**. They run in the Rapise test engine, not in the browser.
+
+| Function | Description |
+|----------|-------------|
+| `this._DoDOMQueryXPath(xpath)` | Finds child elements (xpath must start with `.`) |
+| `this.GetText()` | Gets element text |
+| `this._DoDOMGetAttribute(name)` | Gets DOM attribute |
+
+*Note: Functions like `SeSRegisterRule`, `SeSRegisterBehavior`, and `g_helper.IncludeOnce` are part of the Rapise Engine architecture. They are shown in the library examples above for understanding structure, but users don't call them directly in test code.*
+
+---
+Generated: 2026-08-21 16:22:09
