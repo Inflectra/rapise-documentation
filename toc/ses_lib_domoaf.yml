@@ -1,9 +1,8 @@
-- 'Global Object':
-
-    - 'EBS': 'Libraries/EBS.md'
 
 - 'DomOAF':
     - 'DomOAF Objects': 'Libraries/ses_lib_domoaf.md'
+
+    - 'EBS': 'Libraries/EBS.md'
 
     - 'DomOafDatePicker': 'Libraries/DomOafDatePicker.md'
 

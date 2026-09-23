@@ -1,8 +1,8 @@
 
-
-
 - 'DomSalesforce':
     - 'DomSalesforce Objects': 'Libraries/ses_lib_salesforce.md'
+
+    - 'Sfdc': 'Libraries/Sfdc.md'
 
     - 'DomLightningComboBox': 'Libraries/DomLightningComboBox.md'
 

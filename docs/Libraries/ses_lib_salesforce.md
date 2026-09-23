@@ -1,5 +1,10 @@
 
 
+# Global
+
+- [Sfdc](Sfdc.md)
+
+
 
 # DomSalesforce
 

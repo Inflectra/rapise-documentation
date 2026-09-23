@@ -1,8 +1,8 @@
 
-
-
 - 'OracleForms':
     - 'OracleForms Objects': 'Libraries/ses_lib_oracleforms.md'
+    
+    - 'OracleForms': 'Libraries/OracleForms.md'
 
     - 'LWCheckbox': 'Libraries/LWCheckbox.md'
 
