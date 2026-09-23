@@ -2,7 +2,7 @@ Summary: Oracle E-Business Suite (EBS) helpers for Rapise.
 
 # EBS
 
-Oracle E-Business Suite (EBS) helpers for Rapise.Provides:- Login to and logout from an EBS instance- Navigation to a function through the tree of the Navigator page- Waiting for OAF pages to settle after a server round-trip- Label/title based access to OAF fields, combo boxes and buttonsAll of these act on the web part of EBS, the Oracle Application Framework (OAF) pagesrendered in the browser. EBS also has a Java part: opening a Forms based function makesthe browser download a `.jnlp` file, and the window that opens from it is a Javaapplication rather than a page, so none of the actions here reach into it.`EBS.DoRunJWS` is the handover point between the two. It launches that downloaded fileand waits for the Forms window to come up; from then on the window is driven through the`OracleForms` object of the `OracleForms` library, and the actions here continue to applyto the browser.Requires the `DomOAF` library to be loaded, plus `OracleForms` if the Java part is used.
+Oracle E-Business Suite (EBS) helpers for Rapise.Provides:- Login to and logout from an EBS instance- Navigation to a function through the tree of the Navigator page- Waiting for OAF pages to settle after a server round-trip- Label/title based access to OAF fields, combo boxes and buttonsAll of these act on the web part of EBS, the Oracle Application Framework (OAF) pagesrendered in the browser. EBS also has a Java part: opening a Forms based function makesthe browser download a `.jnlp` file, and the window that opens from it is a Javaapplication rather than a page, so none of the actions here reach into it.In EBS.DoLogin, any parameter left empty is resolved in this order: the `DOM OAF` libraryconfiguration parameter (`EBS URL`, `EBS User Name`, `EBS Password`, `EBS Language`),environment variable (`EBS_URL`, `EBS_USERNAME`, `EBS_PASSWORD`, `EBS_LANGUAGE`),test parameter, then `Shared\Config.xlsx` (keys `EbsUrl`, `EbsUserName`,`EbsPassword`, `EbsLanguage`). If URL, user name or password are still unknown,Rapise prompts for them and saves the answer into `Shared\Config.xlsx`. The languageis never prompted for.`EBS.DoRunJWS` is the handover point between the two. It launches that downloaded fileand waits for the Forms window to come up; from then on the window is driven through the`OracleForms` object of the `OracleForms` library, and the actions here continue to applyto the browser.Requires the `DomOAF` library to be loaded, plus `OracleForms` if the Java part is used.
 
 
 
@@ -46,9 +46,6 @@ or by the visible label text in the same row. |
 
 Click a button identified by its `title` attribute or visible text.
 
-Works on the web (OAF) interface. Buttons of a Forms window are clicked through the
-`OracleForms` object instead.
-
 Examples:
 ```javascript
 EBS.DoClickButton("Go");
@@ -81,9 +78,6 @@ boolean: true if the button was found and clicked, otherwise false.
 
 Click the `Select` button associated with a specific field label. Such buttons open
 a list of values (LOV) window for the field.
-
-Works on the web (OAF) interface. The LOV of a Forms field is opened through the
-`OracleForms` object instead.
 
 Examples:
 ```javascript
@@ -119,14 +113,6 @@ Open the Oracle E-Business Suite login page and sign in. A browser is launched i
 none is open yet, and the call returns once the OAF page that follows the login
 has finished loading.
 
-Any parameter left empty is resolved in this order: the `DOM OAF` library
-configuration parameter (`EBS URL`, `EBS User Name`, `EBS Password`, `EBS Language`),
-environment variable (`EBS_URL`, `EBS_USERNAME`, `EBS_PASSWORD`, `EBS_LANGUAGE`),
-test parameter, then `Shared\Config.xlsx` (keys `EbsUrl`, `EbsUserName`,
-`EbsPassword`, `EbsLanguage`). If URL, user name or password are still unknown,
-Rapise prompts for them and saves the answer into `Shared\Config.xlsx`. The language
-is never prompted for.
-
 The URL may be given at any level of detail. A bare host, a context root or a
 `/OA_HTML` path is completed to the login page `<root>/OA_HTML/AppsLogin`, while a
 URL that already names a page below `OA_HTML` is used as is, query string included.
@@ -140,22 +126,16 @@ Credentials are typed with reporting suppressed, so they do not appear in the re
 
 Examples:
 ```javascript
-// All four open http://apps.example.com:8000/OA_HTML/AppsLogin
-EBS.DoLogin("http://apps.example.com:8000/OA_HTML/AppsLogin", "OPERATIONS", "welcome");
-EBS.DoLogin("apps.example.com:8000", "OPERATIONS", "welcome");
-EBS.DoLogin("http://apps.example.com:8000", "OPERATIONS", "welcome");
-EBS.DoLogin("http://apps.example.com:8000/OA_HTML", "OPERATIONS", "welcome");
-// All four open <instance>/OA_HTML/RF.jsp?function_id=ASN_DASHBOARDPG
-EBS.DoLogin("http://apps.example.com:8000/OA_HTML/RF.jsp?function_id=ASN_DASHBOARDPG", "OPERATIONS", "welcome");
-EBS.DoLogin("function_id=ASN_DASHBOARDPG", "OPERATIONS", "welcome");
-EBS.DoLogin("?function_id=ASN_DASHBOARDPG", "OPERATIONS");
-EBS.DoLogin("ASN_DASHBOARDPG", "OPERATIONS", "welcome");
-// An OAFunc endpoint goes to OA.jsp instead
-EBS.DoLogin("OAFunc=OANEWHOMEPAGE", "OPERATIONS", "welcome");
-// Pick a language on the login form
-EBS.DoLogin("http://apps.example.com:8000/OA_HTML/AppsLogin", "OPERATIONS", "welcome", "English");
 // Take everything from the environment, test parameters or Shared\Config.xlsx
 EBS.DoLogin();
+// Derive URL from function id and use password from the environment
+EBS.DoLogin("ASN_DASHBOARDPG", "OPERATIONS");
+// Use relative URL and username
+EBS.DoLogin("/OA_HTML/AppsLogin", "OPERATIONS");
+// An OAFunc endpoint goes to OA.jsp instead
+EBS.DoLogin("OAFunc=OANEWHOMEPAGE", "OPERATIONS", "welcome");
+// Full version, with password and language selection
+EBS.DoLogin("/OA_HTML/AppsLogin", "OPERATIONS", "welcome", "English");
 ```
 
 ```javascript
@@ -187,14 +167,6 @@ boolean: true if the login sequence completed, false if a setting was left unset
 #### DoLogout
 
 Log out from Oracle E-Business Suite and wait for the page that follows to load.
-
-The global `Logout` link is clicked when the current page has one. Otherwise the
-logout page `<root>/OA_HTML/OALogout.jsp` is opened directly, its address derived
-from the URL the browser is currently at.
-
-Where the logout leads depends on the instance - usually back to the login page, but
-an instance using single sign-on may end up elsewhere. The action does not check, so
-assert on whatever the instance under test is expected to show.
 
 Examples:
 ```javascript
@@ -228,7 +200,6 @@ expanded one by one and the last one is clicked.
 
 Examples:
 ```javascript
-EBS.DoNavigate("Application Developer;Other");
 EBS.DoNavigate("Application Developer;Flexfield;Descriptive");
 // A node label containing a semicolon needs a different separator
 EBS.DoNavigate("Receivables, Vision Operations|Setup|Print", "|");
@@ -309,9 +280,6 @@ boolean: true once the Oracle Forms window is open and idle. The action fails wh
 Select an option in a combo box (`select` element) identified by its `title` attribute
 or by the visible label text in the same row.
 
-Works on the web (OAF) interface. Combo boxes of a Forms window are handled through
-the `OracleForms` object instead.
-
 Examples:
 ```javascript
 EBS.DoSetCombo("Operating Unit", "Vision Operations");
@@ -344,9 +312,6 @@ boolean: true if the combo box was found and the option was selected, otherwise 
 #### DoSetField
 
 Set text in an input field identified by its `title` attribute.
-
-Works on the web (OAF) interface. Fields of a Forms window are set through the
-`OracleForms` object instead.
 
 Examples:
 ```javascript
