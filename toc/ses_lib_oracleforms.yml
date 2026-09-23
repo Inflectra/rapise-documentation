@@ -4,10 +4,6 @@
 - 'OracleForms':
     - 'OracleForms Objects': 'Libraries/ses_lib_oracleforms.md'
 
-    - 'OracleForms': 'Libraries/OracleForms.md'
-
-    - 'GlassMouseGrabProvider$Proxy': 'Libraries/GlassMouseGrabProvider$Proxy.md'
-
     - 'LWCheckbox': 'Libraries/LWCheckbox.md'
 
     - 'LWTextComponent': 'Libraries/LWTextComponent.md'
@@ -18,11 +14,15 @@
 
     - 'OracleEnhLabledIconButton': 'Libraries/OracleEnhLabledIconButton.md'
 
+    - 'OracleFormsExtFrame': 'Libraries/OracleFormsExtFrame.md'
+
     - 'OracleFormsMenuBar': 'Libraries/OracleFormsMenuBar.md'
 
     - 'OracleFormsObject': 'Libraries/OracleFormsObject.md'
 
     - 'OracleFormsTable': 'Libraries/OracleFormsTable.md'
+
+    - 'OracleFormsVTList': 'Libraries/OracleFormsVTList.md'
 
     - 'OraclePushButton': 'Libraries/OraclePushButton.md'
 
