@@ -39,9 +39,11 @@ Extends [SeSSimulatedObject](SeSSimulatedObject.md)
 |  **Action** | **Description** | 
 | ----------- | --------------- |
 |  [DoGetValue](#dogetvalue) | Sets value of the table cell. |
+|  [DoLOVSelect](#dolovselect) | Opens LOV (List of Values) for the specified cell and selects a value. |
 |  [DoPress](#dopress) | Click the cell. |
 |  [DoSetFocus](#dosetfocus) | Sets keyboard input focus to the table cell. |
 |  [DoSetValue](#dosetvalue) | Sets value of the table cell. |
+|  [DoShowLOV](#doshowlov) | Opens the List of Values (LOV) dialog for the specified cell. |
 
 
 
@@ -166,6 +168,36 @@ boolean: 'true' if success, 'false' otherwise.
 
 <a name="see.also.oracleformstable.dogetvalue"></a>
 
+<a name="DoLOVSelect"></a>    
+#### DoLOVSelect
+
+Opens LOV (List of Values) for the specified cell and selects a value.
+
+```javascript
+SeS('SomeOracleFormsTable').DoLOVSelect(row, col, value, lovFilter)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| row | number |  Table row index |
+| col | string \| number |  Table column caption or index |
+| value | string \| number |  LOV item text or index to select |
+| lovFilter | string |  LOV filter value<br>Optional, Default: "%". |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+<a name="see.also.oracleformstable.dolovselect"></a>
+
 <a name="DoPress"></a>    
 #### DoPress
 
@@ -250,6 +282,34 @@ boolean: 'true' if success, 'false' otherwise.
 
 
 <a name="see.also.oracleformstable.dosetvalue"></a>
+
+<a name="DoShowLOV"></a>    
+#### DoShowLOV
+
+Opens the List of Values (LOV) dialog for the specified cell.
+
+```javascript
+SeS('SomeOracleFormsTable').DoShowLOV(row, col)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| row | number |  Table row index |
+| col | string \| number |  Table column caption or index |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if success, 'false' otherwise.
+
+
+
+<a name="see.also.oracleformstable.doshowlov"></a>
 
   
 

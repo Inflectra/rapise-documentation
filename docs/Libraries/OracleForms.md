@@ -25,6 +25,10 @@ OracleForms Global Helper Object.
 |  [GetNotificationMessage](#getnotificationmessage) | Get message of currently displayed notification window. |
 |  [GetNotificationTitle](#getnotificationtitle) | Get title of currently displayed notification window. |
 |  [GetStatusMessage](#getstatusmessage) | Get status bar message. |
+|  [GetVisibleDialogInfo](#getvisibledialoginfo) | Get information about any visible dialog window (ChoiceBox or FWindow). |
+|  [GetVisibleDialogMessage](#getvisibledialogmessage) | Get the message of any visible dialog window (ChoiceBox or FWindow). |
+|  [GetVisibleDialogTitle](#getvisibledialogtitle) | Get the title of any visible dialog window (ChoiceBox or FWindow). |
+|  [HasVisibleErrorDialog](#hasvisibleerrordialog) | Quickly check if an error dialog (ChoiceBox with title "Error") is currently visible. |
 
 
 
@@ -41,7 +45,7 @@ OracleForms Global Helper Object.
 Select LOV (List of Values) Value.
 
 ```javascript
-OracleForms.DoLOVSelect(txtOrInd, timeout)
+OracleForms.DoLOVSelect(txtOrInd, lovFilterText, timeout)
 ```
 
 
@@ -50,6 +54,7 @@ OracleForms.DoLOVSelect(txtOrInd, timeout)
 |  **Name** | **Type** | **Description** |
 | ---------- | -------- | --------------- |
 | txtOrInd | string \| number |  LOV item text or Index. |
+| lovFilterText | string |  Default filter value.<br>Optional, Default: "%". |
 | timeout | number |  Maximum time to wait (milliseconds).<br>Optional, Default: "3000". |
 
 
@@ -204,6 +209,91 @@ status bar message text.
 
 
 <a name="see.also.oracleforms.getstatusmessage"></a>
+
+<a name="GetVisibleDialogInfo"></a>    
+#### GetVisibleDialogInfo
+
+Get information about any visible dialog window (ChoiceBox or FWindow).
+Returns an object with type, title, and message properties, or null if no dialog.
+This is much faster than searching through the component tree.
+
+```javascript
+OracleForms.GetVisibleDialogInfo()
+```
+
+
+
+
+**Returns:**
+
+[Object](Object.md) | <br>[null](null.md): Dialog info object {type, title, message} or null.
+
+
+
+<a name="see.also.oracleforms.getvisibledialoginfo"></a>
+
+<a name="GetVisibleDialogMessage"></a>    
+#### GetVisibleDialogMessage
+
+Get the message of any visible dialog window (ChoiceBox or FWindow).
+This is much faster than searching through the component tree.
+
+```javascript
+OracleForms.GetVisibleDialogMessage()
+```
+
+
+
+
+**Returns:**
+
+string | <br>[null](null.md): Dialog message or null if no dialog visible.
+
+
+
+<a name="see.also.oracleforms.getvisibledialogmessage"></a>
+
+<a name="GetVisibleDialogTitle"></a>    
+#### GetVisibleDialogTitle
+
+Get the title of any visible dialog window (ChoiceBox or FWindow).
+This is much faster than searching through the component tree.
+
+```javascript
+OracleForms.GetVisibleDialogTitle()
+```
+
+
+
+
+**Returns:**
+
+string | <br>[null](null.md): Dialog title or null if no dialog visible.
+
+
+
+<a name="see.also.oracleforms.getvisibledialogtitle"></a>
+
+<a name="HasVisibleErrorDialog"></a>    
+#### HasVisibleErrorDialog
+
+Quickly check if an error dialog (ChoiceBox with title "Error") is currently visible.
+This is much faster than searching through the component tree.
+
+```javascript
+OracleForms.HasVisibleErrorDialog()
+```
+
+
+
+
+**Returns:**
+
+true if an error dialog is visible, false otherwise.
+
+
+
+<a name="see.also.oracleforms.hasvisibleerrordialog"></a>
 
   
 
