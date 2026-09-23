@@ -6,6 +6,10 @@ For upcoming webinars, please check the [Events page](https://www.inflectra.com/
 
 ### Season 2026
 
+- [Rapise 9.1](https://youtu.be/bQW9yloG0Y0)
+- [How Rapise 9.1’s AI Translator Turns Manual Tests into Automated Scripts](https://youtu.be/k-YIwlMcQLI)
+- [How Rapise 9.0 AI Self-Heals Automation (Webinar Session 1)](https://youtu.be/PjZb1b8SYJo)
+- [Rapise 9.0 AI Self-Healing Walkthrough (Webinar Session 2)](https://youtu.be/j4eyFHHKGHQ)
 - [Rapise 9.0](https://youtu.be/-0DPfqTjPt8)
 - [AI-based self-healing for Web tests](https://youtu.be/Rj5cq2IG37A)
 
@@ -117,6 +121,7 @@ For upcoming webinars, please check the [Events page](https://www.inflectra.com/
 
 ### Highlights
 
+- [Rapise 9.1](https://youtu.be/bQW9yloG0Y0)
 - [Rapise 9.0](https://youtu.be/-0DPfqTjPt8)
 - [Rapise 8.6](https://youtu.be/LmMxUHEG_Po)
 - [Rapise 8.5](https://youtu.be/T5yxsvYyrGM)
