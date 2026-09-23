@@ -369,7 +369,6 @@ nav:
         #farpoint
         #vsflexgrid
         #java
-        #oracleforms
         #swt
         #qt
     - 'Web':
@@ -393,6 +392,9 @@ nav:
         #domdynamicsnav
         #dynamics365
         #dynamicscrm
+    - 'EBS (Oracle E-Business Suite)':
+        #domoaf
+        #oracleforms
     - 'Salesforce':
         #salesforce
     - 'SAP':

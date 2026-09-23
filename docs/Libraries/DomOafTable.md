@@ -1,0 +1,269 @@
+Summary: This behavior pattern implements standard behavior for Oracle Application Framework (OAF) Table control.
+
+# DomOafTable
+
+This behavior pattern implements standard behavior for Oracle Application Framework (OAF) Table control.
+ 
+Extends [HTMLObject](HTMLObject.md)
+
+Extends [SeSSimulatedObject](SeSSimulatedObject.md)
+
+
+
+
+
+**Behavior Pattern: DomOafTableBehavior**
+
+
+<!-- ============================== property summary ========================== -->
+
+
+
+### Property Summary
+| **Property** | **Description** | **Getter** | **Setter** |
+| ------------ | --------------- | ---------- | ---------- |
+| [Cell](#cell) | Text of the specified cell. | GetCell |  |
+| [ColumnCount](#columncount) | Number of columns in the grid. | GetColumnCount |  |
+| [ColumnIndex](#columnindex) | Index of a column with given name. | GetColumnIndex |  |
+| [ColumnName](#columnname) | Caption of a column. | GetColumnName |  |
+| [RowCount](#rowcount) | Number of rows in the grid. | GetRowCount |  |
+| [SelectedRow](#selectedrow) | Returns the currently selected row index (0-based). | GetSelectedRow |  |
+
+
+
+<!-- ============================== action summary ========================== -->
+
+
+
+### Action Summary
+|  **Action** | **Description** | 
+| ----------- | --------------- |
+|  [DoClickCell](#doclickcell) | Clicks the specified cell. |
+|  [DoClickText](#doclicktext) | Clicks on a specific text inside the grid. |
+|  [DoSelectRow](#doselectrow) | Selects a row by clicking its radio button. |
+
+
+
+<!-- ============================== property detail ========================== -->
+
+### Property Detail
+
+<a name="Cell"></a>
+#### Cell
+
+Text of the specified cell.
+
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |  
+| row | number \| string | Zero-based index of a row or cell text. |
+| col | string \| number | Name of a column or zero-based column index. |
+
+
+
+
+Type: string
+
+
+Accessors: GetCell
+
+```javascript
+value = SeS('SomeDomOafTable').GetCell()
+```
+
+
+<a name="ColumnCount"></a>
+#### ColumnCount
+
+Number of columns in the grid.
+
+
+
+Type: number
+
+
+Accessors: GetColumnCount
+
+```javascript
+value = SeS('SomeDomOafTable').GetColumnCount()
+```
+
+
+<a name="ColumnIndex"></a>
+#### ColumnIndex
+
+Index of a column with given name.
+
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |  
+| columnName | string | Column name. |
+
+
+
+
+Type: number
+
+
+Accessors: GetColumnIndex
+
+```javascript
+value = SeS('SomeDomOafTable').GetColumnIndex()
+```
+
+
+<a name="ColumnName"></a>
+#### ColumnName
+
+Caption of a column.
+
+**Getter Parameters:**
+
+| **Name** | **Type** | **Description** |
+| -------- | -------- | --------------- |  
+| columnIndex | number | Zero-based index of the column. |
+
+
+
+
+Type: string
+
+
+Accessors: GetColumnName
+
+```javascript
+value = SeS('SomeDomOafTable').GetColumnName()
+```
+
+
+<a name="RowCount"></a>
+#### RowCount
+
+Number of rows in the grid.
+
+
+
+Type: number
+
+
+Accessors: GetRowCount
+
+```javascript
+value = SeS('SomeDomOafTable').GetRowCount()
+```
+
+
+<a name="SelectedRow"></a>
+#### SelectedRow
+
+Returns the currently selected row index (0-based). Returns -1 if no row is selected.
+
+
+
+Type: number
+
+
+Accessors: GetSelectedRow
+
+```javascript
+value = SeS('SomeDomOafTable').GetSelectedRow()
+```
+
+
+
+
+<!-- ============================== action detail ========================== -->
+
+### Action Detail
+
+<a name="DoClickCell"></a>    
+#### DoClickCell
+
+Clicks the specified cell.
+
+```javascript
+SeS('SomeDomOafTable').DoClickCell(row, col, clickType, xOffset, yOffset)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| row | number \| string |  Zero-based index if the row or text of a cell in the specified column. |
+| col | string \| number |  Zero-based index of the column or column name. |
+| clickType | string |  Type of click, can be one of "L" - left click, "LD" - double left click, "R" - right click, "RD" - double right click, "M" - middle click, "MD" - double middle click, "N" - don't click Possible values: "L", "LD", "R", "RD", "M", "MD", "N"<br>Optional, Default: "L". |
+| xOffset | number |  X offset to click within node. Default is a center.<br>Optional. |
+| yOffset | number |  Y offset to click within node. Default is a center.<br>Optional. |
+
+
+
+
+**Returns:**
+
+boolean: 'true' if successful, 'false' otherwise
+
+
+
+<a name="see.also.domoaftable.doclickcell"></a>
+
+<a name="DoClickText"></a>    
+#### DoClickText
+
+Clicks on a specific text inside the grid.
+
+```javascript
+SeS('SomeDomOafTable').DoClickText(text, index)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| text | string |  Text to search in the grid. |
+| index | number |  Index in the array if the text found several times.<br>Optional. |
+
+
+
+
+**Returns:**
+
+'true' if successful, 'false' otherwise
+
+
+
+<a name="see.also.domoaftable.doclicktext"></a>
+
+<a name="DoSelectRow"></a>    
+#### DoSelectRow
+
+Selects a row by clicking its radio button.
+
+```javascript
+SeS('SomeDomOafTable').DoSelectRow(row, col)
+```
+
+
+**Parameters:**
+
+|  **Name** | **Type** | **Description** |
+| ---------- | -------- | --------------- |
+| row | number \| string |  Row identifier: zero-based row index (number) or cell text to find the row (string). |
+| col | string \| number |  Optional. Column name or index to use when searching by text. Default is 0 (first column).<br>Optional. |
+
+
+
+
+**Returns:**
+
+boolean: true if selection successful, false otherwise.
+
+
+
+<a name="see.also.domoaftable.doselectrow"></a>
+
+  
+

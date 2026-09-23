@@ -1,6 +1,10 @@
 # Global
 
+- [AiRobot](AiRobot.md)
+
 - [AiTester](AiTester.md)
+
+- [AiTranslator](AiTranslator.md)
 
 - [Android](Android.md)
 
