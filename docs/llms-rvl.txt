@@ -10,8 +10,8 @@ Every RVL script has exactly 7 columns:
 |------|------|--------|--------|-----------|-----------|------------|
 
 - **Flow**: Control flow keywords (If, ElseIf, Else, Loop, End, Map, #, /*, */, ?, And, Or)
-- **Type**: Row type (Action, Variable, Param, Condition, Assert, Rows, Range, Database)
-- **Object**: Object ID or map name
+- **Type**: Row type (Action, AI, Variable, Param, Condition, Assert, Rows, Range, Database)
+- **Object**: Object ID, map name or AI step description
 - **Action**: Method to call or condition type
 - **ParamName**: Parameter name
 - **ParamType**: Data type (string, number, boolean, variable, expression)
@@ -72,6 +72,59 @@ Using LastResult from previous action:
 | Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
 |------|------|--------|--------|-----------|-----------|------------|
 | ? | Action | OptionalPopup | DoClick | | | |
+
+---
+
+## AI Steps
+
+An AI step is a test step described in natural language, Rapise performs it with AI at runtime. The description goes to the Object column. Rapise stores a unique step ID in ParamValue of AI rows: leave it empty when adding a step and do not change it in existing steps.
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | AI | Open the Books page. | | | | |
+| | AI | Check that the book list is displayed. | | | | |
+
+### Parameterized AI Step
+
+The description references parameters with `{paramName}`. Each parameter has a Param row right after the AI row. Every `{paramName}` needs a Param row and every Param row must be referenced in the description, otherwise it is ignored.
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | AI | Log in as {username}/{password}. | | | | |
+| | Param | | | username | string | librarian |
+| | Param | | | password | string | librarian |
+
+A parameter may take its value from a variable (`variable` ParamType) or from a map column (map name as ParamType, see [Maps](#maps-data-tables)):
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | AI | Check that the table has {count} books. | | | | |
+| | Param | | | count | variable | BookCount |
+
+### Saving the Result of an AI Step
+
+Like an action, an AI step stores its result in `LastResult`. To keep it, assign `LastResult` to a variable right after the step:
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | AI | Get the number of books in the table. | | | | |
+| | Variable | | | BookCount | variable | LastResult |
+
+### AI Steps with Map Data
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| Map | Rows | Users | | | | |
+| | username | password | | | | |
+| | librarian | librarian | | | | |
+| | borrower | borrower | | | | |
+| End | of Map | | | | | |
+| Loop | Map | Users | | | | |
+| | AI | Log in as {username}/{password}. | | | | |
+| | Param | | | username | Users | username |
+| | Param | | | password | Users | password |
+| | AI | Log out. | | | | |
+| End | of Loop | | | | | |
 
 ---
 
