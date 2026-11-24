@@ -17,6 +17,7 @@ from datetime import datetime
 LLMS_FILES = [
     "llms-global.txt",
     "llms-web.txt", 
+    "llms-mobile.txt",
     "llms-rvl.txt",
     "llms-framework.txt",
     "llms-extending.txt",
