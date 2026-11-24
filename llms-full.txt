@@ -11,6 +11,7 @@ Rapise documentation is organized into sections for different aspects of the too
 
 - [llms-global.txt](llms-global.txt): Global utilities and Tester assertions
 - [llms-web.txt](llms-web.txt): Web testing with Selenium/WebDriver
+- [llms-mobile.txt](llms-mobile.txt): Native Android and iOS testing with Appium
 - [llms-rvl.txt](llms-rvl.txt): RVL (Rapise Visual Language) syntax and concepts
 - [llms-framework.txt](llms-framework.txt): Test framework structure and files
 - [llms-extending.txt](llms-extending.txt): Creating page objects and extension libraries
@@ -872,6 +873,192 @@ var xpath = "//button[@name='" + name + "']"
     + "|//button[text()='" + name + "']"
     + "|//button[@title='" + name + "']";
 ```
+
+================================================================================
+
+# Rapise Native Mobile Testing API
+
+> Use this reference to generate Rapise JavaScript for native Android and iOS apps under Appium. For browser tests, record in a desktop browser with Selenium and use the [Rapise Web Testing API](llms-web.txt).
+
+## Required Context for App-Specific Code
+
+1. Identify the platform and the action or verification the test needs.
+2. Open Mobile Spy, get a snapshot of the relevant screen, and choose **Spy > Page Source**. Provide the XML fragment containing the target, its container, and the nodes that distinguish it from similar targets.
+3. For lookup or traversal under a learned element, provide the Rapise object ID and identify its exact node in the XML. In Recording mode, use **Learn Object** to add a stable container to the Object Tree if needed.
+
+The native XML fragment is required when generating app-specific locators or traversal. Ask for it when it is missing. Use the actual tags, attribute values, and parent-child relationships shown in the fragment. Use Mobile Spy’s **Test Locator** to verify that the resulting full XPath selects the intended element. [Mobile Spy](https://rapisedoc.inflectra.com/Guide/object_spy_mobile/)
+
+## Choose a Lookup Method
+
+Select the Rapise Mobile Profile for the target app and device. Rapise test code uses native element wrappers such as `AndroidObject` and `iOSObject`. Use their getters and actions in the Rapise test engine. Use the Appium hierarchy to write native XPath expressions. [Mobile Profiles](https://rapisedoc.inflectra.com/Guide/mobile_settings_dialog/)
+
+| Need | Rapise API |
+| --- | --- |
+| Get an element already in the Object Tree | `SeS("ObjectId")` |
+| Find a dynamic element inside a learned container | `root.DoFindByXPath(suffix)` |
+| Walk a known parent, child, or sibling relationship | `GetParent()`, `GetChildAt(index)`, `GetNextSibling()`, `GetPrevSibling()` |
+| Find a native element without a learned object | `AppiumDriver.SeSFind(selector, objectType, selectorType, objectName)` |
+
+Prefer a scoped XPath lookup when the XML provides a stable ID or a label that uniquely identifies the target within its container. A row may be identified by the label of a descendant and tapped at the row level. Use tree traversal for structural relationships and use a child index when its position is part of the test. Learn the stable container for repeating items and resolve individual items at runtime.
+
+### Scoped Native XPath
+
+`DoFindByXPath(suffix)` appends the suffix to the current element's XPath. Begin the suffix with `/` for a direct child or `//` for a descendant. For scoped lookup and tree navigation, configure the learned root to resolve by a unique XPath. If an accessibility or iOS locator takes precedence, use the XPath locator for that root. For roots obtained with `AppiumDriver.SeSFind`, pass `"xpath"` as the selector type.
+
+```javascript
+var form = SeS("LoginForm");
+var button = form && form.DoFindByXPath("//android.widget.Button[@content-desc='Sign in']");
+if (button) {
+    button.DoClick();
+}
+```
+
+`DoFindByXPath` is available in Rapise 6.6+. Guard the result before calling element methods. Use `_DoFindByXPath()` for an intermediate lookup inside a Page Object action or when probing for an optional element.
+
+### Native Lookup Without a Learned Object
+
+`AppiumDriver.SeSFind()` returns a Rapise object or `null` after the configured lookup attempts. Pass `"android"` or `"ios"` explicitly because `objectType` defaults to `"web"`. `selectorType` defaults to `"xpath"`. Other useful native selector types include `"acc"` for accessibility IDs and `"id"` for Android resource IDs. The optional `objectName` is used in the report. Requires Rapise 8.1+.
+
+```javascript
+var button = AppiumDriver.SeSFind("com.example.library:id/sign_in", "android", "id", "Sign in");
+var search = AppiumDriver.SeSFind("CatalogSearch", "ios", "acc", "Catalog search");
+```
+
+## Native Element Reference
+
+### Tree Navigation
+
+| Method | Result |
+| --- | --- |
+| `GetChildCount()` | Number of direct children. A negative result indicates that the element could not be resolved. |
+| `GetChildAt(index)` | Child Rapise object or `null`. The first child is index `0`. |
+| `GetParent()` | Parent Rapise object when found. |
+| `GetNextSibling()` | Next sibling Rapise object when found. |
+| `GetPrevSibling()` | Previous sibling Rapise object when found. |
+
+Guard the result of each step before reading a property or calling an action. Child indices are 0-based in JavaScript. XPath positional predicates are 1-based. A scrollable list may expose only items currently loaded in the native hierarchy, so `GetChildCount()` is not necessarily the total item count. Resolve the container and target again after a change to the list or screen.
+
+```javascript
+var list = SeS("BookList");
+var rows = list && list.GetChildAt(0); // Inner ViewGroup in the Android example below.
+var index = 1; // Second direct child of the inner ViewGroup.
+var item = rows && index >= 0 && index < rows.GetChildCount()
+    ? rows.GetChildAt(index) : null;
+if (item) {
+    item.DoClick();
+}
+```
+
+### Reading Properties
+
+Use `obj.GetProperty(name)` for a named property exposed by the native driver. For state properties returned as strings, compare with `"true"` or `"false"` explicitly. For example, `obj.GetProperty("enabled") === "true"`. The string `"false"` is truthy in JavaScript.
+
+| Platform | Common attributes to look for in Mobile Spy XML |
+| --- | --- |
+| Android | `resource-id`, `content-desc`, `text`, `class`, `package`, `index`, `bounds`, `enabled`, `clickable`, `long-clickable`, `scrollable`, `checkable`, `checked`, `focusable`, `focused`, `selected`, `password` |
+| iOS | `name`, `label`, `value`, `type`, `enabled`, `visible`, `x`, `y`, `width`, `height` |
+
+Use `GetText()`, `GetName()`, and `GetClass()` for common reads. iOS also exposes `GetLabel()`. Use `GetProperty("label")` or `GetProperty("value")` when you need the specific iOS attribute observed in the XML. `GetX()`, `GetY()`, `GetWidth()`, and `GetHeight()` expose element geometry.
+
+### Element Actions and Scrolling
+
+| Action | Usage |
+| --- | --- |
+| `obj.DoClick()` or `obj.DoAction()` | Tap an element. `DoClick(x, y)` accepts optional offsets within the element in supported Rapise versions. |
+| `obj.DoClear()` and `obj.DoSendKeys(keys)` | Clear and type into an editable element. Learned `AndroidEditBox` and `iOSEditBox` objects also expose `DoSetText(text)`. |
+| `obj.DoLongPress()` | Long-press an element. |
+| `container.DoEnsureVisible(text)` | Android. Pass the child text to the scrollable container. Look up the target again after scrolling. |
+| `element.DoEnsureVisible()` | iOS. Call on the target element if it can already be found in the hierarchy. |
+
+Use `Android.DoPressBack()` for Android Back and `Android.DoSwipe(endX, endY, startX, startY, duration, touchCount)` for a device swipe. The swipe duration is in seconds. A learned `iOSScrollView` provides actions such as `DoScrollDown()` and `DoScrollUp()` when a target has yet to appear in the hierarchy.
+
+Use ordinary `Do...` actions directly in tests to report the step. Inside a reported Page Object action, use underscore variants for intermediate lookup and interaction, and return the action result or `false` on failure. This keeps the report focused on the Page Object action. [Rapise Page Objects](llms-extending.txt)
+
+## Worked Android Example - Open a Book by Title
+
+The following example uses a simplified Mobile Spy fragment. Learn the `ScrollView` with resource ID `com.example.library:id/book_list` as `BookList`. Set the root's XPath locator to `//android.widget.ScrollView[@resource-id='com.example.library:id/book_list']`.
+
+```xml
+<android.widget.ScrollView resource-id="com.example.library:id/book_list" scrollable="true">
+  <android.view.ViewGroup>
+    <android.view.ViewGroup resource-id="com.example.library:id/book_row" clickable="true">
+      <android.widget.TextView resource-id="com.example.library:id/book_title" text="Pride and Prejudice" />
+    </android.view.ViewGroup>
+    <android.view.ViewGroup resource-id="com.example.library:id/book_row" clickable="true">
+      <android.widget.TextView resource-id="com.example.library:id/book_title" text="Alice's Adventures in Wonderland" />
+    </android.view.ViewGroup>
+  </android.view.ViewGroup>
+</android.widget.ScrollView>
+```
+
+In AI Code Assistant, provide this guide, the XML fragment, and the learned root ID. Ask for a `ListHelper_DoOpenBook` action that takes the root object ID and a book title, finds the row containing that title, and returns the result of tapping the row. In this example, the title identifies a single loaded row.
+
+```javascript
+// In PageObjects/ListHelper/ListHelper.js
+SeSPageObject("ListHelper");
+
+function ListHelper_DoOpenBook(/**objectId*/ objectId, /**string*/ title)
+{
+    var list = SeS(objectId);
+    if (!list) {
+        return false;
+    }
+
+    var rowXPath = "//android.view.ViewGroup[@resource-id='com.example.library:id/book_row']"
+        + "[.//android.widget.TextView[@resource-id='com.example.library:id/book_title'"
+        + " and @text=" + ListHelperXPathLiteral(title) + "]]";
+    var row = list._DoFindByXPath(rowXPath);
+    return row ? row._DoClick() : false;
+}
+
+// XPath 1.0 literals cannot escape their quote delimiter.
+function ListHelperXPathLiteral(value)
+{
+    if (value.indexOf("'") < 0) {
+        return "'" + value + "'";
+    }
+    if (value.indexOf('"') < 0) {
+        return '"' + value + '"';
+    }
+    return "concat('" + value.split("'").join("', \"'\", '") + "')";
+}
+```
+
+The initial `//` appends a descendant step to the learned root XPath. The `.//` inside the predicate is XPath syntax for searching within each candidate row. If the target is outside the current Android hierarchy, use `DoEnsureVisible(title)` on the scrollable container where supported, then resolve the row again.
+
+Call `ListHelper.DoOpenBook("BookList", "Alice's Adventures in Wonderland");` from JavaScript, or use this RVL action.
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+| --- | --- | --- | --- | --- | --- | --- |
+| | Action | ListHelper | DoOpenBook | objectId | objectid | BookList |
+| | Param | | | title | string | Alice's Adventures in Wonderland |
+
+## Compact iOS Example
+
+Given this Mobile Spy fragment, learn the toolbar as `CatalogToolbar` with the XPath `//XCUIElementTypeToolbar[@name='CatalogToolbar']`. The button lookup uses the observed `name`. Use `@label` when the XML shows a suitable label.
+
+```xml
+<XCUIElementTypeToolbar name="CatalogToolbar">
+  <XCUIElementTypeButton name="AddBook" label="Add book" />
+</XCUIElementTypeToolbar>
+```
+
+```javascript
+var toolbar = SeS("CatalogToolbar");
+var addBook = toolbar && toolbar.DoFindByXPath("//XCUIElementTypeButton[@name='AddBook']");
+if (addBook) {
+    addBook.DoClick();
+}
+```
+
+## References
+
+- [AndroidObject API](https://rapisedoc.inflectra.com/Libraries/AndroidObject/)
+- [iOSObject API](https://rapisedoc.inflectra.com/Libraries/iOSObject/)
+- [Android device API](https://rapisedoc.inflectra.com/Libraries/Android/) and [iOS device API](https://rapisedoc.inflectra.com/Libraries/iOS/)
+- [AppiumDriver API](https://rapisedoc.inflectra.com/Libraries/AppiumDriver/)
+- [Mobile XPath syntax](https://inflectra.com/Support/KnowledgeBase/KB990.aspx)
+- [Handling complex mobile UI hierarchies with Page Objects](https://www.inflectra.com/Support/KnowledgeBase/KB997.aspx)
 
 ================================================================================
 
@@ -2358,4 +2545,4 @@ These functions are used in behavior files (e.g., `DomMyAppComboBox.js`) during 
 *Note: Functions like `SeSRegisterRule`, `SeSRegisterBehavior`, and `g_helper.IncludeOnce` are part of the Rapise Engine architecture. They are shown in the library examples above for understanding structure, but users don't call them directly in test code.*
 
 ---
-Generated: 2026-08-21 16:22:09
+Generated: 2026-11-24 11:25:05
