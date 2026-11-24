@@ -281,6 +281,16 @@ Reference variables with `variable` as ParamType:
 | | Param | | | sheetName | string | Sheet1 |
 | End | of Map | | | | | |
 
+### Advancing a Map Manually
+
+Call `DoSequential` on a defined map to advance its active row by one. The action takes no parameters.
+
+| Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
+|------|------|--------|--------|-----------|-----------|------------|
+| | Action | TestData | DoSequential | | | |
+
+`DoSequential` returns `true` when it advances to the next row. If the active row is already the last row in the range, it returns `false` and moves back to the first row in the range. It also returns `false` if no spreadsheet is attached.
+
 ### Using Map Data in Loop
 
 | Flow | Type | Object | Action | ParamName | ParamType | ParamValue |
