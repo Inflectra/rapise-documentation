@@ -13182,10 +13182,9 @@
 <li>Mobile tests,</li>
 <li>REST/SOAP API tests.</li>
 </ol>
-<p>To mark a test case as ready for parallel execution, set the custom property <ins class="critic">Ready for parallel run</ins> in the test case details.</p>
-<p><img alt="Test Case Properties" src="/Guide/img/test-case-custom-properties.png" width="360"/></p>
-<p>If all test cases included in a test set have this property, and the test set is configured for parallel execution, RapiseLauncher will execute the test cases in parallel.</p>
-<p>To configure the test set, use the custom properties <ins class="critic">Run tests in parallel</ins> and <ins class="critic">Max parallel tests</ins> (where 0 means no limit).</p>
+<p>To run a test set in parallel, enable <ins class="critic">Run tests in parallel</ins> on the test set. Use <ins class="critic">Max parallel tests</ins> to limit how many tests run at once. A value of <code>0</code> means no limit.</p>
+<p>Starting with Rapise 8.4, the <strong>Mark Ready for Parallel Run</strong> action and its corresponding <ins class="critic">Ready for parallel run</ins> test case property are optional. RapiseLauncher may log a warning for an unmarked test case and still include it in the parallel run.</p>
+<p><img alt="Optional Ready for parallel run property in the test case details" src="/Guide/img/test-case-custom-properties.png" width="360"/></p>
 <p>Since Rapise 7.2, RapiseLauncher can run configurations (see the Input Data Table section below) in parallel. This feature is controlled via the <ins class="critic">Unroll input data for parallel execution</ins> custom property of a test set. See the <a href="https://youtu.be/bNoWZjOE3hQ">Parallel Execution Webinar</a> for more details.</p>
 <h3 id="input-data-table">Input Data Table<a class="headerlink" href="#input-data-table" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
@@ -13464,7 +13463,7 @@ Repository.json
 </li>
 <li>Test Cases<ul>
 <li>Flaky (boolean, default is false)</li>
-<li>Ready for parallel run (boolean, default is false, requires Rapise 7.1+)</li>
+<li>Ready for parallel run (boolean, default is false, available since Rapise 7.1, optional since Rapise 8.4)</li>
 </ul>
 </li>
 <li>Test Sets<ul>
