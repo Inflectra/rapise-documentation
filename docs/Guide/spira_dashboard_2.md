@@ -52,13 +52,11 @@ Since Rapise 7.1, RapiseLauncher is able to perform parallel runs for these type
 2. Mobile tests,
 3. REST/SOAP API tests.
 
-To mark a test case as ready for parallel execution, set the custom property {++Ready for parallel run++} in the test case details.
+To run a test set in parallel, enable {++Run tests in parallel++} on the test set. Use {++Max parallel tests++} to limit how many tests run at once. A value of `0` means no limit.
 
-<img alt="Test Case Properties" src="/Guide/img/test-case-custom-properties.png" width="360"/>
+Starting with Rapise 8.4, the **Mark Ready for Parallel Run** action and its corresponding {++Ready for parallel run++} test case property are optional. RapiseLauncher may log a warning for an unmarked test case and still include it in the parallel run.
 
-If all test cases included in a test set have this property, and the test set is configured for parallel execution, RapiseLauncher will execute the test cases in parallel.
-
-To configure the test set, use the custom properties {++Run tests in parallel++} and {++Max parallel tests++} (where 0 means no limit).
+<img alt="Optional Ready for parallel run property in the test case details" src="/Guide/img/test-case-custom-properties.png" width="360"/>
 
 Since Rapise 7.2, RapiseLauncher can run configurations (see the Input Data Table section below) in parallel. This feature is controlled via the {++Unroll input data for parallel execution++} custom property of a test set. See the [Parallel Execution Webinar](https://youtu.be/bNoWZjOE3hQ) for more details.
 
@@ -418,7 +416,7 @@ Click the `Create Custom Properties for Rapise` button to add the following cust
 	- Tag (string, empty by default, requires Rapise 7.1+)
 - Test Cases
 	- Flaky (boolean, default is false)
-	- Ready for parallel run (boolean, default is false, requires Rapise 7.1+)
+	- Ready for parallel run (boolean, default is false, available since Rapise 7.1, optional since Rapise 8.4)
 - Test Sets
 	- Max rerun attempts (integer, default is 0)
 	- Do not rerun if N tests failed (integer, default is 0)
