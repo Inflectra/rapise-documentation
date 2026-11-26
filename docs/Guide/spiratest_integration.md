@@ -523,7 +523,7 @@ The panel has the following options:
 
 - **Polling Frequency** - The frequency in minutes at which the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 5 minutes and should be sufficient for most installations. Note that tests will still be executed at their scheduled time; this simply determines how often the program communicates with the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.
 - **Read Ahead** - How far in advance (in minutes) the program should read the schedule for the Automation host. Tests that are scheduled further in advance will not appear as a pending test on the status screen.
-- **Connection Timeout** - A request to Spira is considered failed after the specified time. Requires Rapise 8.1+. <a class="headerlink" href="#connection-timeout" title="Permanent link">¶</a>
+- **Connection Timeout** - A request to Spira is considered failed after the specified time. Requires Rapise 8.1+.
 - **Automatically run tests that are overdue** - When this is checked, any tests pulled from the SpiraTest server that have a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this option enabled, they will be executed as soon as the poll is complete.
 - **Run in load-balancing mode (adv. users)** - When this is checked, test sets are executed in [load balancing mode](#load-balancing-mode).
 

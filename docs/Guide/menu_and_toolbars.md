@@ -268,7 +268,7 @@ The **Report** menu is available anytime a report (`.trp`) file is visible in th
 *   **Collapse** - Collapses the report to show only the top level. What is visible will depend on how the report is sorted.
 *   **Expand** - Expands all report rows.
 *   **Images** - Toggles between hiding and revealing images.
-*   **Export to HTML** - Saves the report as an [HTML document](automated_reporting.md#export_as_html_dialog).
+*   **Export to HTML** - Saves the report as an [HTML document](automated_reporting.md#export-as-html-dialog).
 *   **Export to Excel** - Saves the report as an Excel file.
 *   **Export to PDF** - Saves the report as an Acrobat PDF file.
 *   **Export to XPS** - Saves the report as an [XML Paper Specification](https://en.wikipedia.org/wiki/Open_XML_Paper_Specification) file.

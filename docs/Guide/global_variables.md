@@ -42,7 +42,7 @@ var g_myGlobalVar = 5;
 ### Using SeSOnTestInit
 > **Note:** This is an older way of defining local variables. Since Rapise 3, a new way is preferred.
 
-Define your global variables in [SeSOnTestInit()](understanding_the_script.md#sesontestinig). Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample `SeSOnTestInit()` below.
+Define your global variables in [SeSOnTestInit()](understanding_the_script.md#sesontestinit). Because Rapise uses JavaScript, you can initialize global variables inside of functions. See the sample `SeSOnTestInit()` below.
 
 ```javascript
 SeSOnTestInit(function () {

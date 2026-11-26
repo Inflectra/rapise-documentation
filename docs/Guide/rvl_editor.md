@@ -109,7 +109,7 @@ Moreover, a code is defined for each state name, so it can be re-mapped in the i
 
 ![States](./img/rvl_dropdowns_xls_stateCodes.png)
 
-Dropdown values are defined in the file `Dropdowns.xlsx`, which can be added to the test using the [Create/Spreadsheet...](test_files_dialog.md#context-menu-folder) menu item.
+Dropdown values are defined in the file `Dropdowns.xlsx`, which can be added to the test using the [Create/Spreadsheet...](test_files_dialog.md#folder-context-menu) menu item.
 
 The full key to find a matching dropdown is `objectid`.`method`.`paramName`. If not found, it will check the `method.paramName` and `paramName` columns:
 

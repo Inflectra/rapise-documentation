@@ -132,8 +132,8 @@ This node displays shared assets, including common JavaScript files (`*.js`), Ob
 - **New Text File...** - Creates and adds a `.txt` file.
 - **New JSON File...** - Creates and adds a `.json` file.
 - **New File...** - Creates and adds another type of file.
-- **New Dropdowns.xlsx** - Creates [Dropdowns.xlsx](./Frameworks/frameworks.md#dropdownsxlsx). This item is only visible if `Dropdowns.xlsx` does not yet exist.
-- **New Common.rvl.xlsx** - Creates [Common.rvl.xlsx](../RVL/Sheets.md#common-rvl-xlsx). This item is only visible if `Common.rvl.xlsx` does not yet exist.
+- **New Dropdowns.xlsx** - Creates [Dropdowns.xlsx](../Intro/framework.md#dropdownsxlsx). This item is only visible if `Dropdowns.xlsx` does not yet exist.
+- **New Common.rvl.xlsx** - Creates [Common.rvl.xlsx](../RVL/Sheets.md#commonrvlxlsx). This item is only visible if `Common.rvl.xlsx` does not yet exist.
 - **Reveal In Explorer** - Opens the `Shared` folder in your file explorer.
 - **Import File** - Imports a file (usually a spreadsheet or text file).
 - **Reload** - Updates the shared files view.

@@ -13,7 +13,7 @@ A Framework in Rapise is a regular test (**Framework Root**) containing a number
 
 **Test Cases** are the final test scenarios, and **Common Features** are reusable parts shared between the test cases.
 
-When working with a framework, the `[%WORKDIR%`](../Guide/tests_and_sub_tests.md#workdir-and-frameworks) variable always points to the root test. This helps locate all common assets and files. For example, you can always call `Common Feature1.sstest` using the path `%WORKDIR%\Common Feature1\Common Feature1.sstest`. You can call it from any other test case, another common feature, a library, and so on.
+When working with a framework, the [`%WORKDIR%`](../Guide/tests_and_sub_tests.md#workdir-and-frameworks) variable always points to the root test. This helps locate all common assets and files. For example, you can always call `Common Feature1.sstest` using the path `%WORKDIR%\Common Feature1\Common Feature1.sstest`. You can call it from any other test case, another common feature, a library, and so on.
 
 The same is true for accessing common [config](../Libraries/Global.md#SetConfigPath) and data files. For example:
 
@@ -99,7 +99,7 @@ It is also explained in [this](https://youtu.be/GDbRA2WyQfQ?list=PL1GncVUgF5nsaw
 
 ### Data.xlsx
 
-It is typical to implement some test cases as [data-driven](../Intro/ddt.md). A framework is a great place for storing shared data files, which are usually `.xlsx` spreadsheets. Rapise has built-in capabilities for [creating](../Guide/test_files_dialog.md#context-menu-folder) and [editing](../Guide/spreadsheet_editor.md) these spreadsheets.
+It is typical to implement some test cases as [data-driven](../Intro/ddt.md). A framework is a great place for storing shared data files, which are usually `.xlsx` spreadsheets. Rapise has built-in capabilities for [creating](../Guide/test_files_dialog.md#folder-context-menu) and [editing](../Guide/spreadsheet_editor.md) these spreadsheets.
 
 ### Global Objects
 

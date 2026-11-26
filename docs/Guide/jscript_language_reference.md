@@ -53,7 +53,7 @@ function _NpmInit()
 }
 ```
 
-For example, you can call `_NpmInit` from the [SeSOnTestInit()](understanding_the_script.md#sesontestinig) function.
+For example, you can call `_NpmInit` from the [SeSOnTestInit()](understanding_the_script.md#sesontestinit) function.
 
 ## [Reference](http://jsdoc.inflectra.com/Default.aspx?href=html/js56jslrfJScriptLanguageReference.htm)
 

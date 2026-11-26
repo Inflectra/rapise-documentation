@@ -226,7 +226,7 @@ OracleForms.GetVisibleDialogInfo()
 
 **Returns:**
 
-[Object](Object.md) | <br>[null](null.md): Dialog info object {type, title, message} or null.
+object | <br>null: Dialog info object {type, title, message} or null.
 
 
 
@@ -247,7 +247,7 @@ OracleForms.GetVisibleDialogMessage()
 
 **Returns:**
 
-string | <br>[null](null.md): Dialog message or null if no dialog visible.
+string | <br>null: Dialog message or null if no dialog visible.
 
 
 
@@ -268,7 +268,7 @@ OracleForms.GetVisibleDialogTitle()
 
 **Returns:**
 
-string | <br>[null](null.md): Dialog title or null if no dialog visible.
+string | <br>null: Dialog title or null if no dialog visible.
 
 
 

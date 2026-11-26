@@ -7,4 +7,4 @@ We recommend following this algorithm. Some nodes are clickable. Click them to g
 ## See Also
 
 - [How-Tos](howtos.md)
-- [Automation Tips: Object is Not Found](../Intro/automation.md#object-is-not-found)
+- [Automation Tips: Object is Not Found](../Intro/automation.md#object-not-found)

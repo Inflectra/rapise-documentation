@@ -2,7 +2,7 @@
 
 A *Map* is an easy way to define tables of data. Items in the map may be accessed by name (if defined) or by index.
 
-The indexed dimensions in the map can also be iterated over using the [Loop][Loops.md] function, making it a useful feature for Data-Driven Testing.
+The indexed dimensions in the map can also be iterated over using the [Loop](Loops.md) function, making it a useful feature for Data-Driven Testing.
 
 === "Screenshot"
     ![Map](./img/Maps_MapSample.png)
@@ -71,7 +71,7 @@ These are maps declared in [Common Sheets](Sheets.md#common-sheets) or in [Commo
 |      | Sarah  | p2     |        |           |           |            |
 | End  | of Map |        |        |           |           |            |
 
-Any sheet in the workbook can now iterate `Logins` (e.g., via [Loop](Loops.md#map)) or reference its values directly.
+Any sheet in the workbook can now iterate `Logins` (e.g., via [Loop](Loops.md#loop-map)) or reference its values directly.
 
 
 ## Using Maps
@@ -94,7 +94,7 @@ Once a map is defined, it may be used as a regular [Object](../Libraries/Map.md)
 
 ### Reading in a Loop
 
-See the [Loops](Loops.md#Map) section for `Map` type loops.
+See the [Loops](Loops.md#loop-map) section for `Map` type loops.
 
 ## Map Types
 

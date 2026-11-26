@@ -8,7 +8,7 @@ Use the Settings Dialog to change test-specific settings.
 
 ## How to Open
 
-Use the `Test > Test Settings` [menu](menu_and_toolbars.md#Test) item to open the settings dialog window.
+Use the `Test > Test Settings` [menu](menu_and_toolbars.md#test) item to open the settings dialog window.
 
 Another way is to choose the root node in the [file view](test_files_dialog.md) to see test settings in the [property](properties.md) view.
 
