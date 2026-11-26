@@ -8,7 +8,7 @@ The **Manual Test Editor** allows you to create and edit manual test cases that 
 
 ## How to Open
 
-You can open the **Manual** toolbar by either clicking the **Manual Steps** icon on the main [Main Toolbar](menu_and_toolbars.md#main-toolbar) or clicking the **ManualSteps.rmt** file in the [Files](test_files_dialog.md) tab. The [Manual Toolbar](menu_and_toolbars.md#manual-toolbar) is displayed whenever the Manual Test Editor is open.
+You can open the Manual Test Editor with `View > Manual Steps` or `Tools > Manual Steps`, by clicking the **Manual Steps** icon on the [Main Toolbar](menu_and_toolbars.md#main-toolbar), or by clicking the **ManualSteps.rmt** file in the [Files](test_files_dialog.md) tab. The [Manual Toolbar](menu_and_toolbars.md#manual-toolbar) is displayed whenever the Manual Test Editor is open.
 
 ## Test Case Name/Description
 

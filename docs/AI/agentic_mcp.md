@@ -46,8 +46,9 @@ Provides tools for test management operations:
 Ensure you have an AI provider configured in [AI Dashboard Settings](ai_dashboard.md#settings). The agentic chat works with:
 
 - Inflectra.ai
-- Amazon Bedrock (Claude models)
-- OpenAI (GPT-4)
+- Amazon Bedrock (Anthropic Claude, Amazon Nova, Qwen and OpenAI models)
+- OpenAI
+- Azure OpenAI
 
 ### 2. Open Agentic Chat
 
@@ -86,10 +87,10 @@ The MCP agent workflow supports several configuration options:
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `servers` | Which MCP servers to enable | `["rapise"]` |
+| `servers` | Which MCP servers the agent uses; `["*"]` means all enabled servers | `["*"]` |
 | `plan_preview` | Show plan before execution | `true` |
 | `stop_on_error` | Stop if a tool fails | `true` |
-| `max_tool_calls_per_turn` | Limit tool calls per message | `20` |
+| `max_tool_calls_per_turn` | Limit tool calls per message | `100` |
 | `turn_timeout_ms` | Maximum time per turn | `600000` (10 min) |
 | `tool_call_timeout_ms` | Timeout per tool call | `60000` (1 min) |
 
@@ -142,7 +143,9 @@ Each MCP tool has an approval policy:
 - **ask**: Show in plan preview, wait for approval
 - **deny**: Never allow execution
 
-Configure policies based on the risk level of each operation.
+Configure policies based on the risk level of each operation. In the AI Dashboard, open **Settings** and the **MCP** tab, expand a server and choose `auto`, `ask` or `deny` for each tool in the **Approval** column. The switch next to a server turns it on or off. **Always Approve** in a plan preview sets the tools of that plan to `auto`.
+
+The policies are saved in `mcp-servers.json` (`autoApprove` and `disabledTools` lists of each server): `C:\ProgramData\Inflectra\Rapise\AI\mcp-servers.json`, or `AI\mcp-servers.json` in the framework when the server is defined there.
 
 ## Best Practices
 
@@ -157,7 +160,8 @@ Configure policies based on the risk level of each operation.
 ### "No MCP tools available"
 
 - Check that MCP servers are configured and running
-- Verify server connections in the MCP settings
+- In AI Dashboard **Settings** > **MCP**, check that the server is switched on and shows its number of tools (click the server to connect)
+- The Rapise MCP server needs the **MCP Server Port** set in [Rapise Settings](../Guide/options_dialog.md#mcp-server)
 - Ensure the AI provider is properly configured
 
 ### Tool calls timing out

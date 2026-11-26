@@ -2,7 +2,7 @@
 
 ## Overview
 
-AI capabilities have been integrated directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Additionally, the AI in Rapise is well-versed in Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise, specialized responses. In its initial release, Rapise's AI features include RVL and JavaScript code generation, along with data generation capabilities. Rapise 8.2 supports OpenAI and Azure OpenAI models, including multimodal ones that can accept image input. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.
+AI capabilities have been integrated directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Additionally, the AI in Rapise is well-versed in Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise, specialized responses. In its initial release, Rapise's AI features include RVL and JavaScript code generation, along with data generation capabilities. Rapise 8.2 supported OpenAI and Azure OpenAI models; later versions added [Amazon Bedrock](#amazon-bedrock) (8.3), [Google](#google) (8.4) and [Inflectra.ai](#inflectraai) (8.6). Multimodal models that accept image input are supported. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.
 
 A key feature of Rapise 8.2 is the [AI Command](ai_command.md), which translates human-readable test step descriptions into executable code using AI. Once code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command (including objects linked with the [Repository command](../RVL/Repository.md)).
 
@@ -33,7 +33,7 @@ The dashboard comprises three pages:
 
 ### Settings
 
-In its initial release (8.2), Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key). For [Azure OpenAI](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key), you also need to specify the endpoint URL.
+Choose the AI provider: [Inflectra.ai](#inflectraai), [Amazon Bedrock](#amazon-bedrock), [Azure](#azure), [OpenAI](#openai) or [Google](#google). The fields each provider needs are described below. For example, to use OpenAI models, you only need an [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key). For [Azure OpenAI](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key), you also need to specify the endpoint URL.
 
 === "Screenshot"
     ![Dashboard Settings](./img/ai_dashboard_settings.png){width="900px"}
@@ -912,6 +912,10 @@ The code will be inserted into the `AppHelper.js` file at the cursor's position.
 
 - **Iterate with prompts:** If the first result isn't perfect, continue the chat with follow-up prompts to refine the code.
 - **Use selected code as context:** Select code in the editor before writing a prompt. This allows you to ask the AI to perform actions on a specific block of code, such as `Refactor the selected code` or `Add comments to this function`.
+
+#### MCP Agent
+
+Rapise 9.1 and later. An AI agent that works by calling the tools of MCP servers: the Rapise MCP server (test cases, test runs, object repositories, Page Objects) and the Spira MCP server (test cases, test sets, requirements, releases, test runs). It shows its plan before it calls tools that need approval. See [Agentic Chat with MCP](agentic_mcp.md).
 
 ### Snapshots
 

@@ -20,7 +20,7 @@ Additionally, you can create exploratory manual tests, save them to SpiraTest, a
 
 ## Configuring SpiraTest
 
-Before you can use SpiraTest to manage your Rapise automated tests, you must perform some initial configuration. This section assumes that you already have a working installation of SpiraTest or SpiraTeam v4.2 or later. If not, please refer to the [SpiraTest Installation and Administration Guide](https://spiradoc.inflectra.com/Spira-Administration-Guide/Installing-SpiraPlan/) for details about installing SpiraTest.
+Before you can use SpiraTest to manage your Rapise automated tests, you must perform some initial configuration. This section assumes that you already have a working installation of SpiraTest, SpiraTeam or SpiraPlan, version 6.15.1.0 or later. If not, please refer to the [SpiraTest Installation and Administration Guide](https://spiradoc.inflectra.com/Spira-Administration-Guide/Installing-SpiraPlan/) for details about installing SpiraTest.
 
 ## Configuring the Rapise Automation Engine
 
@@ -84,9 +84,6 @@ Additionally, enter the:
 - **Default Repository Path**, the folder to use for local copies of SpiraTest repositories.
 
 - **Token**, the identifier of the current machine on which Rapise is installed. It must match the `Token` name of the corresponding [Automation Host](https://spiradoc.inflectra.com/Spira-User-Manual/Automation-Host-Management/) in SpiraTest.
-
-!!! note
-    You must be running SpiraTest / SpiraTeam v4.0 or later to use the integration with Rapise.
 
 ### Artifact Permissions
 

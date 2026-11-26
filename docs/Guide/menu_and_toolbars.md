@@ -148,6 +148,7 @@ The **View** menu contents depend on the active editor currently open in the [co
 
 *   **Start Page** - Opens the Rapise [Start Page](start_page.md).
 *   **Spira Dashboard** - Opens the [Spira Dashboard](spira_dashboard_2.md).
+*   **AI Dashboard** - Opens the [AI Dashboard](../AI/ai_dashboard.md): AI settings and chats.
 *   **RVL** - Opens the [RVL editor](rvl_editor.md).
 *   **Main** - Opens the primary [test script file](understanding_the_script.md) (normally `Main.js`).
 *   **User** - Opens the user functions [script file](understanding_the_script.md) containing any user-defined testing functions (called `User.js`).
@@ -160,9 +161,9 @@ The **View** menu contents depend on the active editor currently open in the [co
     *   **View > Show > Output** - Shows and highlights the [output view](output_view.md).
     *   **View > Show > Properties** - Shows and highlights the [Properties view](properties.md).
 
-*   **Manual Steps** - Opens manual test steps for a given step (if any). If no manual steps are defined yet, it creates new ones.
-*   **REST** - Finds and opens a [SOAP definition file](soap_definition_editor.md) in the [content view](content_view.md). If no `.soap` file is yet defined, nothing happens.
-*   **SOAP** - Finds and opens a [REST definition file](rest_definition_editor.md) in the [content view](content_view.md). If no `.rest` file is yet defined, nothing happens.
+*   **Manual Steps** - Opens the manual test steps of the current test in the [Manual Test Editor](manual_test_editor.md). If no manual steps are defined yet, it creates new ones.
+*   **REST** - Finds and opens a [REST definition file](rest_definition_editor.md) in the [content view](content_view.md). If no `.rest` file is yet defined, nothing happens.
+*   **SOAP** - Finds and opens a [SOAP definition file](soap_definition_editor.md) in the [content view](content_view.md). If no `.soap` file is yet defined, nothing happens.
 *   **View Manual Test in Spira**
     *   Manual: Opens the current test in the [Spira](spiratest_integration.md) web interface. Remember to use `File > Save to Spira` if you made any local changes to manual steps.
 
@@ -227,6 +228,7 @@ The **Tools** menu contents depend on the active editor currently open in the [c
 *   **Libraries** - This button opens the [Select an Application Dialog](select_an_application_to_record_dialog.md), allowing you to add or change the [libraries](recording_library.md) used to record the current test.
 *   **Npm Console** - Shows an `npm console` for the current testing [framework](../Intro/framework.md). This allows you to quickly install new packages or initialize using an existing `package.json`.
 *   **Web Services** - Allows you to add a new [web service](web_service_testing.md) definition to your Rapise test. Clicking this displays the [Add Web Service](dialog_add_web_service.md) dialog box.
+*   **Manual Steps** - Opens the [Manual Test Editor](manual_test_editor.md) with the manual steps of the current test, the same as `View > Manual Steps`.
 *   **Object Manager** - Opens the [Object Manager](object_manager.md) add-in, which is used to copy recorded objects between test scripts.
 *   **Chrome for Testing** - Opens the [Chrome for Testing dialog](setting_up_selenium.md#chrome-for-testing-dialog).
 *   **RPA Monitor** - Opens the [RPA Monitor](../Manuals/Rpa.md).
@@ -241,6 +243,7 @@ Provides access to all global settings and options in Rapise. Settings relevant 
 *   **Global** - Brings up the [Global Settings dialog](options_dialog.md), which lets you change any system-wide settings for Rapise.
 *   **SpiraTest** - Takes you to a dialog box that lets you change how Rapise is integrated with the [SpiraTest](spiratest_integration.md) test management system. It allows you to change the URL, username, and password used to connect.
 *   **Web Spy** - Displays the [Web Spy Settings](web_settings.md) dialog box, which allows you to change settings related to using the Web Spy to inspect DOM objects in web pages.
+*   **Browser** - Displays the [Browser Settings](browser_settings.md) dialog box with the profiles of the native (non-Selenium) web browser libraries.
 *   **Selenium** - Displays the [Selenium settings](selenium_settings_dialog.md) dialog box, which is used to edit the different Selenium web browser profiles that can be used by Rapise.
 *   **Mobile** - Displays the [Mobile Settings](mobile_settings_dialog.md) dialog box, which lets you configure the different mobile devices available for testing by Rapise.
 *   **Java** - Displays the [Install Java Access Bridge](java_awt_swing_testing.md) dialog box. Installing the Java Access Bridge allows Rapise to connect to Java AWT/Swing applications so that they can be tested.
