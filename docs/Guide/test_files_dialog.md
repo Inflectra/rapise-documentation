@@ -43,11 +43,9 @@ See [Adding Files from Test Folder](#adding-files-from-test-folder).
 
 ## Filtering
 
-The Object Tree has built-in filtering and display mode switches.
+The Test Files view has a built-in quick filter.
 
-![Filter](img/test_files_dialog_filter.png){width="241px"}
-
--   *Filter* - A quick filter to narrow down the range displayed in the object tree. Updates the tree while you type. To cancel filtering, simply remove everything from this input box, press the `X` icon, or press ++esc++ on your keyboard.
+-   *Filter* - A quick filter to narrow down the files displayed in the Test Files view. Updates the tree while you type. You may use wildcards: `*.js` shows all `.js` files, `Common*` finds `Common.js` and `Common.rvl.xlsx`, and `*omm*` finds all entries that contain `omm`. To cancel filtering, remove everything from the input box or click the `X` (Clear filter) button.
 
 ## Folder Node
 

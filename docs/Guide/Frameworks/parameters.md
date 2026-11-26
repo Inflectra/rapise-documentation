@@ -59,10 +59,10 @@ To select options for a `Multiselect Parameter`, double-click it in the `Paramet
 !!! important
     The purpose of multiselect parameters is to run test cases included in a test set with all possible parameter value combinations. For example, if you have just one multiselect parameter `MP1` with selected options `MP1O1` and `MP1O2`, RapiseLauncher will then run a test set twice: the first time with `MP1=MP1O1` and the second time with `MP1=MP1O2`. Another example: If you have `MP1` with selected values `[MP1O1, MP1O2]` and `MP2` with selected values `[MP2O1, MP2O2]`, RapiseLauncher will then run a test set 4 times with the following combinations:
     ```
-    MP1=MP1O1, MP2=MP1O1
-    MP1=MP1O1, MP2=MP1O2
-    MP1=MP1O2, MP2=MP1O1
-    MP1=MP1O2, MP2=MP1O2
+    MP1=MP1O1, MP2=MP2O1
+    MP1=MP1O1, MP2=MP2O2
+    MP1=MP1O2, MP2=MP2O1
+    MP1=MP1O2, MP2=MP2O2
     ```
 
 #### Browser Parameter
@@ -87,7 +87,7 @@ To define a datacolumn parameter, you need to have a [data file](#data-file-para
 
 ![Add Input Data File](./img/parameters_add_input_data_file.png){width="474px"}
 
-A `Data.csv` file will be added to the `Lib\LibFramework` folder of your framework. You can right-click it to edit.
+A `Data.csv` file will be added to the `Shared` folder of your framework. You can right-click it to edit.
 
 ![Edit Data File](./img/parameters_edit_data_file.png){width="535px"}
 
@@ -130,14 +130,14 @@ The purpose of the `Data File` parameter is to instruct RapiseLauncher to execut
     Additionally, we have two datacolumn parameters, `DC1` and `DC2`, which are linked to columns `C1` and `C2`, respectively. We also have two multiselect parameters, `MP1` with selected values `[MP1O1, MP1O2]` and `MP2` with selected values `[MP2O1, MP2O2]`. If our test set is configured accordingly, RapiseLauncher will execute it 8 times with the following parameter values:
 
     ```linenums="1" hl_lines="5-8"
-    DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP1O1
-    DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP1O2
-    DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O1
-    DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O2
-    DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP1O1
-    DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP1O2
-    DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP1O1
-    DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP1O2
+    DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP2O1
+    DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP2O2
+    DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP2O1
+    DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP2O2
+    DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP2O1
+    DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP2O2
+    DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP2O1
+    DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP2O2
     ```
 
     To explore a practical application of multiselect and datacolumn parameters, please refer to [this knowledge base article](https://www.inflectra.com/Support/KnowledgeBase/KB760.aspx) for a real-life example.

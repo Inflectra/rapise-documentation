@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The **Web Spy** is used to inspect web applications running on any of the supported web browsers (currently Internet Explorer, Firefox, and Chrome). It allows you to view the hierarchy of elements in the web browser **Document Object Model (DOM)**. Additionally, it simplifies the testing of dynamic, data-driven web applications by letting you test out dynamic [XPath](xpath.md) or [CSS](css.md) queries against the web page and verify that the returned elements match your expectations.
+The **Web Spy** is used to inspect web applications running on any of the supported web browsers. It allows you to view the hierarchy of elements in the web browser **Document Object Model (DOM)**. Additionally, it simplifies the testing of dynamic, data-driven web applications by letting you test out dynamic [XPath](xpath.md) or [CSS](css.md) queries against the web page and verify that the returned elements match your expectations.
 
 ![web_spy1](./img/web_spy1.png)
 

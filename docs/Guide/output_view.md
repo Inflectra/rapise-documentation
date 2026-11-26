@@ -8,7 +8,7 @@ The **Output** View displays Rapise output. The amount of output depends on the 
 
 ## How to Open
 
-The **Errors View** is hidden in the [Default Layout](restoring_the_default_layout.md). You can then show it using `View > Show > Output`.
+The **Output View** is hidden in the [Default Layout](restoring_the_default_layout.md). You can then show it using `View > Show > Output`.
 
 ## Writing to the Output View
 

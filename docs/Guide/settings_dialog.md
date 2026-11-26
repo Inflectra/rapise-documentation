@@ -24,8 +24,6 @@ Another way is to choose the root node in the [file view](test_files_dialog.md) 
   
     Usually, it is equal to `.` (the root test). For a sub-test, it is `../.`; for a sub-sub-test, it is `../../.`. This way, if you have a common scenario used across tests that refers to a data file using `%WORKDIR%\Data.xlsx`, then all sub-tests will be able to find it. This feature, together with the concept of [sub-tests](tests_and_sub_tests.md), helps to build test [frameworks](https://www.inflectra.com/support/knowledgebase/kb371.aspx).
 
-* **CommandLine** is a free-form text box. Use it to specify values for global variables (beginning with **g_**) that are passed to the [recorder](recording.md) and [player](playback.md). You can view which global variables are available in the source files (such as **Player.js**, **SeSCommon.js**, etc.).
-
 ## TestParams
 
 The TestParams section includes various custom test parameters:
@@ -42,8 +40,7 @@ There is a built-in set of test parameters for [cross-browser testing](cross_bro
 
 * **CacheObjects**: Remembers object locations and attempts to reuse them for improved speed. This is helpful for dialog-based applications.
 * **CommandInterval**: The time interval (in milliseconds) between script commands during script execution.
-* **
-* **IterationsCount**: Your test script will be executed this many times consecutively during [playback](playback.md).
+* **Iteration Count**: Your test script will be executed this many times consecutively during [playback](playback.md).
 * **JS Engine**: One of **Default**, **Node**, or **WScript**. **Default** means using the **JSEngineType** defined in the [Global Options](options_dialog.md#execution). Otherwise, use the [Node.js](jscript_language_reference.md) or [JScript/WScript](jscript_language_reference.md) engine, respectively.
 * **ObjectLookupAttemptInterval**: The time Rapise will wait between attempts to locate an object.
 * **ObjectLookupAttempts**: The number of times Rapise will attempt to locate an object.

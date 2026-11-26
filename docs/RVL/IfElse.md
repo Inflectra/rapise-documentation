@@ -32,9 +32,7 @@ The `If-Else` statement is similar to `If`, with one extension. It contains an a
 
 ## If-ElseIf
 
-`ElseIf` is a way to establish a chain of conditions. Each condition is evaluated only when the previous one is false.
-
-The `If-Else` statement is similar to `If`, with one extension. It contains an alternative `Else` section that is executed when the `If` condition is false:
+`ElseIf` is a way to establish a chain of conditions. Each condition is evaluated only when the previous one is false:
 
 | Flow   | Type        | ...           | Action                | ParamName  | ... |
 | ------ | ----------- | ------------- | --------------------- | ---------- | --- |

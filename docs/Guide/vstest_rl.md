@@ -113,7 +113,7 @@ Here we are creating a new pipeline. However, you may use an existing one and ju
 
 ![vstest_rl_pipeline_create_3_selectpipeline.png](./img/vstest_rl_pipeline_create_3_selectpipeline.png)
 
-**RapiseLauncher** requires a **Windows** host. You may use a [Microsoft-hosted agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml), or set up an agent on your own VM or physical Windows machine.
+The Windows **RapiseLauncher** used by this extension requires a **Windows** host. To run tests on Linux, macOS or Docker, use the Node.js RapiseLauncher described in [DevOps](../Intro/devops.md#linux-macos-docker). You may use a [Microsoft-hosted agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml), or set up an agent on your own VM or physical Windows machine.
 
 ![vstest_rl_pipeline_create_4_vmimage.png](./img/vstest_rl_pipeline_create_4_vmimage.png)
 

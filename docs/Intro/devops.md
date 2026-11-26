@@ -86,7 +86,7 @@ This creates a clear two-step workflow for automation:
 **How it Works:**
 
 *   If `RepositoryConnection.xml` **exists**, the parameters provided via `--set` will update the corresponding values within that file.
-*   If `RepositoryConnection.pod` **does not exist**, a new file will be created with the settings you provide.
+*   If `RepositoryConnection.xml` **does not exist**, a new file will be created with the settings you provide.
 
 **CI/CD Example:**
 

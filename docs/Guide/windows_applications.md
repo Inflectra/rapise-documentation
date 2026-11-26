@@ -47,7 +47,7 @@ In the [Samples index](sample_tests.md) of this manual, we provide a full list o
 
 ***a) Two Dialogs***
 
-This is a simple Win32 MFC application that uses the **Generic** library and lets you try some basic testing scenarios.
+This is a simple Win32 MFC application that lets you try some basic testing scenarios. The [Learn an Object](learn_object.md) tutorial records it with the **Auto** library setting, which uses the UIAutomation library.
 
 ![twodialogsempty](./img/windows_applications1.png)
 

@@ -88,7 +88,7 @@ RapiseLauncher will run the test set the same number of times as there are data 
 
 ### Test Matrix
 
-If a Test Set is configured to run the same Test Cases several times (each time with different input parameters), then you may view the Test Matrix based on the generated Test Runs. Let's look at an example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. The browser type is specified via an input parameter (see the Input Data Table section above for more details). Execution of the test set produces 4 x 2 = 10 test runs. After execution, find one of these test runs on the Test Runs page, right-click it, and choose the `Test Matrix` menu item. Then we see the matrix:
+If a Test Set is configured to run the same Test Cases several times (each time with different input parameters), then you may view the Test Matrix based on the generated Test Runs. Let's look at an example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. The browser type is specified via an input parameter (see the Input Data Table section above for more details). Execution of the test set produces 5 x 2 = 10 test runs. After execution, find one of these test runs on the Test Runs page, right-click it, and choose the `Test Matrix` menu item. Then we see the matrix:
 
 ![Test Matrix](./img/test_matrix.png)
 

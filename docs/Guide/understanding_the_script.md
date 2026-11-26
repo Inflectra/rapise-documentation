@@ -2,7 +2,7 @@
 
 ## Purpose
 
-When you [create a new test](create_a_new_test.md) in Rapise, four files are created:
+When you [create a new test](create_a_new_test.md) in Rapise, five files are created:
 
 - **&lt;TestName&gt;.sstest** – the test project file (e.g., MyTest.sstest)
 - **Main.js** – the main test script file, containing the test's entry point: the `Test` function.
@@ -44,9 +44,9 @@ g_load_libraries=["Web"]; // This script will load the Web library
 
 ```
 
-### Object.js
+### Objects.js
 
-`Object.js` is an object repository. Consider it a `JSON` definition assigned to the `saved_script_objects` variable.
+`Objects.js` is an object repository. Consider it a `JSON` definition assigned to the `saved_script_objects` variable.
 
 ```javascript
 var saved_script_objects = 

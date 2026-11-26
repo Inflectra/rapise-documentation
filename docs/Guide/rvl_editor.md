@@ -168,7 +168,7 @@ Anything typed into the **Type** cell of the commented line is expanded to fill 
 *   **Rename...** - Changes the sheet tab name.
 *   **Remove Sheet '`<sheet name>`'** - Deletes the sheet from the workbook.
 *   **Copy RVL DoPlaySheet** - Copies the call statement for the selected sheet for inserting into another RVL sheet in the same workbook.
-*   **Copy RVL DoPlaySheet** - Copy call statement for the selected sheet for inserting into the other RVL workbook.
+*   **Copy RVL DoPlayScript** - Copies the call statement for the selected sheet for inserting into another RVL workbook.
 *   **Copy RVL.DoPlayScript(...)** - Copies JavaScript code to execute this sheet (call sheet from JavaScript).
 
 ## Functions Object
@@ -267,18 +267,6 @@ However, if you hold the ++shift++ key while performing the same action, the cal
 ![TestCase Shift+Drag&Drop](./img/rvl_editor_testcase_shift_drag.png)
 
 Short names are useful when all test cases have unique names. This usually entails longer naming conventions; for example, instead of `Invoices/Create`, a test case should be named `Invoices/Create new Invoice` to avoid collisions with other test cases like `Orders/Create`.
-
-## Drag&Drop for DoPlayTest
-
-When you drag and drop a [test case](./Frameworks/frameworks.md#test-cases) into the RVL, it generates a `RVL.DoPlayTest` call. This call references the test case using an absolute path starting from the framework root, represented by `%WORKDIR%`.
-
-![Drag&Drop TestCase](./img/rvl_editor_testcase_drag.png)
-
-However, if you hold the ++shift++ key while performing the same action, the same call is created with the test alias name (short name) instead:
-
-![Shift+Drag&Drop TestCase](./img/rvl_editor_testcase_shift_drag.png)
-
-Short names are particularly useful when each test case has a unique name. In such cases, longer naming conventions can be used to differentiate test cases; for example, using `Invoices/Create new Invoice` instead of `Invoices/Create` to avoid collisions with other test cases like `Orders/Create`.
 
 ## See Also
 

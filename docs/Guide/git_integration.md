@@ -149,13 +149,13 @@ This is the recommended and most convenient way. It is described in [Spira Dashb
 
     ![](./img/git_integration_git_custom_properties.png){width="832px"}
 
-In this case, you need to add custom fields to the Test Set definition in **Spira**:
+With earlier versions of Rapise, or to keep the properties in **Spira** itself, add custom fields to the Test Set definition in **Spira**:
 
 ![Spira TS Fields](./img/git_integration_git_tsprops.png)
 
 - **GitUrl** - Git remote repository URL. E.g., `https://github.com/Inflectra/rapise-samples`.
 - **GitUser** - optional. Needed when the repository is protected and requires an authentication.
-- **GitPassword** - optional. Username for authentication.
+- **GitPassword** - optional. Password for authentication.
 - **GitBranch** - optional. Links the test case to a specific branch instead of the default `master` branch.
 - **GitRoot** - optional. Target folder for checkout. If empty or not specified, the default Rapise Launcher temp folder is used.
 

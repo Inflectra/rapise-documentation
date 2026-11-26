@@ -112,7 +112,7 @@ If no proxy is specified, Rapise uses the operating system's settings. Proxies c
 
 *   **ShowCommonFileAliases**: This is a legacy setting, not needed since Rapise 6.0.
 *   **ShowDashboardOnStartUp**: If **True**, the [Spira Dashboard](spira_dashboard_2.md) opens automatically when Rapise is opened.
-*   **ShowStartPageOnStartUp**: If **True**, the [Start Page](start_page.md) opens automatically when Rapise is opened.
+*   **ShowStartPageOnStartup**: If **True**, the [Start Page](start_page.md) opens automatically when Rapise is opened.
 *   **Spira Integration**: Enables all dialogs and menus for [SpiraTest Integration](spiratest_integration.md).
 *   **Temp Folder**: The default folder for temporary tests.
 *   **Test Auto Upgrade**: If set to **True**, each opened `.sstest` file is automatically upgraded to the latest format.

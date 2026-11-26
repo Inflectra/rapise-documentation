@@ -1050,7 +1050,7 @@ When you work with AI in Rapise, it creates a set of folders in the root framewo
 
 - Root Framework Folder
     - **AI** - root folder for AI-related files.
-        - **commands** - cache for AI Commands, containing generated JavaScript code. This folder must be stored along with the framework; do not delete it. **[Deprecated]**
+        - **commands** - cache for AI Commands, containing generated JavaScript code. Used by Rapise 8.2. **[Deprecated]** since 8.3, which keeps the code in `ai.commands.json` files instead. Rapise still loads code from this folder, so keep it if the framework has tests created with Rapise 8.2.
         - **messages** - archive of AI chat messages.
         - **sessions** - high-level information about AI chat sessions (name, ID, timestamp).
         - **options.json** - local [options](#settings) that override the global ones stored in `C:\ProgramData\Inflectra\Rapise\AI\options.json`. 

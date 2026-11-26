@@ -12,7 +12,7 @@ Rapise provides out-of-the-box support for testing Salesforce.com and includes [
 
 **Salesforce.com** is completely web-based, and you use a web browser to access its user interface. Therefore, when recording a test using Rapise, you use the same web browser libraries that are used for other web tests:
 
--   Most of the Salesforce.com user interface will be tested using the **standard browser library** for your web browser of choice (e.g., Internet Explorer HTML, Firefox HTML, and Chrome HTML).
+-   Most of the Salesforce.com user interface will be tested using the **standard browser library** for your web browser of choice (the **Web** library used with your Selenium browser profile).
 -   In addition, there are special controls inside Salesforce.com that Rapise has specialized support for. For that reason, you'll also see the DomSalesforce library added to your test alongside the browser library. This **DomSalesforce** library adds additional rules that identify certain Salesforce.com objects (e.g., the main Grid) to make testing easier.
 
 When you record your first test, you'll see the following library selection code generated automatically by Rapise:
@@ -21,7 +21,7 @@ When you record your first test, you'll see the following library selection code
 g_load_libraries=["Web", "DomSalesforce"];
 ```
 
-If the **DomSalesforce** library is not listed in your test, you will need to [manually add it](change_the_libraries_being_use.md) using the `[ ] Libraries` button on the tool menu.
+If the **DomSalesforce** library is not listed in your test, you will need to [manually add it](change_the_libraries_being_use.md) using the `Tools > Libraries` menu item.
 
 ## Tips for Interacting with Objects
 

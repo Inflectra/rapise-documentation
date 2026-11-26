@@ -68,7 +68,7 @@ Or with parameters:
 	</tr>
 </table>
 
-For example, if you want to pass a parameter, you must mention it in the `AI` command text in curly braces (e.g., **{param1}**) and then define a parameter with the same name but without curly braces (**param1**).
+Since Rapise 9.0, parameters can be passed to an `AI` command: mention the parameter in the `AI` command text in curly braces (e.g., **{param1}**) and then define a parameter with the same name but without curly braces (**param1**).
 
 `AI` command parameters represent dynamic values that may vary during execution. This allows the generated code to remain intact while the values may be different.
 
@@ -257,7 +257,7 @@ Once this positive example is registered, the code generation for similar cases 
 
 AI prompt comments start with `##` and are passed directly to the `AI` command prompt. Such comments help clarify details that may assist the AI in interpreting commands.
 
-For example, this testing framework has page objects `POAPI` and `POCommon`. Each has a `DoLogin` command: `POPAPI.DoLogin` and `POCommon.DoLogin`. It is up to the AI to choose which one to use when generating code. In this example, it preferred to use the API:
+For example, this testing framework has page objects `POAPI` and `POCommon`. Each has a `DoLogin` command: `POAPI.DoLogin` and `POCommon.DoLogin`. It is up to the AI to choose which one to use when generating code. In this example, it preferred to use the API:
 
 ![Login with POAPI](img/AI_login_poapi.png)
 
