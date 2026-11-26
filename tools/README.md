@@ -22,3 +22,20 @@ Generates the list of broken links to console.
 ## liblist.py
 
 Generates list of library links for `../docs/Guide/recording_library.md`
+
+## llms_sections.py
+
+MkDocs hook, registered under `hooks:` in `../mkdocs_template.yml`. Every build (`build.cmd`, `buildlocal.cmd`, `publish.cmd`, `serve.cmd`) writes `llms-sections.json` to the site root, so it is published at https://rapisedoc.inflectra.com/llms-sections.json. Rapise searches it to answer questions about Rapise from the documentation.
+
+The file holds every page cut at its headings, in navigation order. Each section has:
+
+| Field | Meaning |
+|---|---|
+| `location` | Source path without `.md`, plus `#<heading id>` for all but a page's first section: `AI/ai_dashboard#how-to-open` |
+| `url` | The section on the site |
+| `path` | Navigation titles, then the headings above it: `["AI", "AI Dashboard", "How to Open"]` |
+| `level` | Heading level (1-6). The sections after it with a higher level are its subsections |
+| `title` | Heading text |
+| `text` | Markdown of the section without its heading. Images become `(image: <alt text>)` (alt texts that are file names are dropped), admonitions and content tabs become plain paragraphs (a `Screenshot`/`Transcript` tab pair becomes the image and `Screenshot description:`), links to other pages point to their `location` |
+
+The build log says how many sections were written and how many links point to a missing page or anchor; `mkdocs build -v` lists those links.

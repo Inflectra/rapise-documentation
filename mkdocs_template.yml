@@ -9,6 +9,8 @@ hide_site_name: True
 plugins:
   - search:
       separator: '[\s\(\)\,\-]+'
+hooks:
+  - tools/llms_sections.py
 
 markdown_extensions:
   - attr_list
